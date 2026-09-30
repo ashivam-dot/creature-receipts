@@ -2,7 +2,7 @@
 
 The channel runs in the cloud on free tiers, without you or this Mac. This list keeps only what needs you:
 your phone, your card, or a sign-in. Owner: aksha.shivam18@gmail.com (Chrome Profile 5). Setup started
-2026-09-30; Day 0 is 2026-10-03.
+2026-09-30; Day 0 is 2026-10-01.
 
 ## Needed from you
 

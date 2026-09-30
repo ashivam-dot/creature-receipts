@@ -1,6 +1,6 @@
 # 100-day plan
 
-Day 0 is 2026-10-03 (the first two Shorts go out that day); Day 100 is 2027-01-11. Production runs around the
+Day 0 is 2026-10-01 (the first two Shorts go out that day); Day 100 is 2027-01-09. Production runs around the
 clock and keeps up to two weeks of finished Shorts ready; publishing follows `auto.PACE`: 2 a day from Day 0,
 3 from Day 15, 4 from Day 30, and 5 from Day 50. Every step past 2 is earned by the last 10 Shorts keeping 90% of
 the engaged views per Short and of the engaged share of the 10 before them, and a 30% fall in engaged views per

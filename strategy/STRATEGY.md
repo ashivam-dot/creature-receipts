@@ -10,7 +10,7 @@ Last revised 2026-09-30 (Day -3). Evidence for each choice comes from this chann
 ## Goal and honest odds
 
 - **Owner's goals:** YouTube Partner Program (YPP) approval on Shorts as fast as possible, and as many
-  subscribers as possible by Day 100. Day 0 is 2026-10-03 and Day 100 is 2027-01-11.
+  subscribers as possible by Day 100. Day 0 is 2026-10-01 and Day 100 is 2027-01-09.
 - **What YPP takes:** 1,000 subscribers plus 10 million engaged Shorts views in 90 days. From 2027-02-01 new
   applicants need 20 million (`research/channel/pipeline-fit-and-policy.md`, section 6). Review takes about a month
   and YouTube hasn't said which bar applies to applications still pending on Feb 1, so we apply the day Studio

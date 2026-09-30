@@ -5,7 +5,7 @@ stories of strange animals, extreme biology, and deep-sea life, every claim back
 told by an AI narrator over openly licensed photos, English, US audience, owned by aksha.shivam18@gmail.com.
 Goal: YouTube Partner Program approval on Shorts as fast as possible (1,000 subscribers and 10M engaged Shorts
 views in 90 days, applied for by mid-December 2026 and no later than 2027-01-31, before the bar doubles to 20M on
-2027-02-01), and as many subscribers as possible by Day 100 (2027-01-11); steer by the base and stretch cases in
+2027-02-01), and as many subscribers as possible by Day 100 (2027-01-09); steer by the base and stretch cases in
 `strategy/PLAN-100.md`. Only with original, accurate Shorts, never with tactics that risk the channel. Space
 belongs to the sister channel Universe Receipts; don't make space Shorts here.
 The channel runs itself in the cloud: the `studio` GitHub Actions workflow runs `ytc auto` four times a day,
@@ -14,7 +14,7 @@ routine does, and for an agent working on the channel interactively: checking ru
 improving the pipeline or the strategy. Publishing runs at the cadence in `strategy/PLAN-100.md`. Nobody
 answers questions during a session; make the best decision and record it.
 
-Day number: `N = (today in IST - 2026-10-03)` in days.
+Day number: `N = (today in IST - 2026-10-01)` in days.
 Root: `/Users/ashivam/Desktop/YouTube-Channel-2/studio`. Pipeline commands run from `pipeline/` with `uv run --no-sync ytc ...`.
 Keep `--no-sync`: without it, every `uv run` re-checks a GitHub-hosted dependency and waits on other runs,
 which can stall a command for minutes.

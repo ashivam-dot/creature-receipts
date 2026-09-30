@@ -40,7 +40,7 @@ REPORTS = ROOT / "reports"
 ANALYTICS = ROOT / "analytics"
 IST = ZoneInfo("Asia/Kolkata")
 ET = ZoneInfo("America/New_York")
-DAY_ZERO = date(2026, 10, 3)
+DAY_ZERO = date(2026, 10, 1)
 # Two weeks at 3 a day, so the channel keeps publishing through two weeks without any language model. Shorts
 # made further ahead would miss what the newest analytics teach.
 INVENTORY_TARGET = 42
