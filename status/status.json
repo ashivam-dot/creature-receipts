@@ -1,28 +1,28 @@
 {
-  "updated_at": "2026-09-30T13:37:44+05:30",
+  "updated_at": "2026-09-30T13:51:12+05:30",
   "day": -3,
   "result": "ok",
   "run": {
     "host": "github-actions",
-    "id": "36687669054",
-    "number": "1",
+    "id": "36689093681",
+    "number": "2",
     "trigger": "workflow_dispatch",
-    "started_at": "2026-09-30T13:37:01+05:30",
-    "started_at_utc": "2026-09-30T08:07:01+00:00",
-    "seconds": 43
+    "started_at": "2026-09-30T13:51:02+05:30",
+    "started_at_utc": "2026-09-30T08:21:02+00:00",
+    "seconds": 10
   },
   "stages": [
     {
       "name": "sync",
       "ok": true,
       "detail": "0 posts",
-      "seconds": 0.4
+      "seconds": 0.6
     },
     {
       "name": "playlists",
       "ok": true,
       "detail": "nothing new",
-      "seconds": 0.5
+      "seconds": 0.3
     },
     {
       "name": "on youtube",
@@ -33,44 +33,14 @@
     {
       "name": "collect",
       "ok": true,
-      "detail": "nothing in the cloud",
-      "seconds": 1.0
+      "detail": "ep001 unfinished (RuntimeError: Gemini gemini-3.8-flash 403: Your project has been denied access. Please contact support.); ep002 unfinished (HTTPError: 429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?format=json&formatversion=2&action=query&prop=extracts%7Cinfo&explaintext=1&inprop=url&titles=Cher+Ami&redirects=1); ep003 unfinished (HTTPError: 429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?format=json&formatversion=2&action=query&titles=Axolotl&redirects=1)",
+      "seconds": 8.4
     },
     {
       "name": "buffer channel",
       "ok": true,
       "detail": "connected",
       "seconds": 0.2
-    },
-    {
-      "name": "publish",
-      "ok": true,
-      "detail": "",
-      "seconds": 0.0
-    },
-    {
-      "name": "deploy",
-      "ok": true,
-      "detail": "",
-      "seconds": 2.6
-    },
-    {
-      "name": "start ep001",
-      "ok": true,
-      "detail": "Winnipeg (bear) (1914): the real bear behind Winnie-the-Pooh was a black bear cub bought for $20 at an Ontario train stop, who sailed for England with Canadian troops on October 3",
-      "seconds": 0.7
-    },
-    {
-      "name": "start ep002",
-      "ok": true,
-      "detail": "Cher Ami (1918): the famous pigeon story says he was shot and lost a leg flying for the Lost Battalion on October 4, but the Signal Corps record puts his wounds weeks later",
-      "seconds": 0.5
-    },
-    {
-      "name": "start ep003",
-      "ok": true,
-      "detail": "Axolotl: it can regrow limbs and even parts of its heart and brain, yet only about 50 to 1,000 adults are left in the wild",
-      "seconds": 0.5
     },
     {
       "name": "publish",
@@ -87,50 +57,43 @@
     "in_buffer": 0,
     "waiting": 0,
     "target": 42,
-    "making": [],
-    "remote": [
+    "making": [
       "ep001",
       "ep002",
       "ep003"
-    ]
+    ],
+    "remote": []
   },
   "queue": [],
   "waiting": [],
-  "made": [],
-  "spawned": [
+  "made": [
     {
       "id": "ep001",
+      "outcome": "unfinished",
       "topic": "Winnipeg (bear) (1914): the real bear behind Winnie-the-Pooh was a black bear cub bought for $20 at an Ontario train stop, who sailed for England with Canadian troops on October 3",
-      "call_id": "fc-01M3RNNVW6N38K1QRV4SV0FXR9"
+      "reason": "RuntimeError: Gemini gemini-3.8-flash 403: Your project has been denied access. Please contact support.",
+      "quota": false,
+      "overloaded": false
     },
     {
       "id": "ep002",
+      "outcome": "unfinished",
       "topic": "Cher Ami (1918): the famous pigeon story says he was shot and lost a leg flying for the Lost Battalion on October 4, but the Signal Corps record puts his wounds weeks later",
-      "call_id": "fc-01M3RNNWBRN3F5WYKHQ26VYGFD"
+      "reason": "HTTPError: 429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?format=json&formatversion=2&action=query&prop=extracts%7Cinfo&explaintext=1&inprop=url&titles=Cher+Ami&redirects=1",
+      "quota": false,
+      "overloaded": false
     },
     {
       "id": "ep003",
+      "outcome": "unfinished",
       "topic": "Axolotl: it can regrow limbs and even parts of its heart and brain, yet only about 50 to 1,000 adults are left in the wild",
-      "call_id": "fc-01M3RNNWT8G8WANGJ1BP4Y36MJ"
+      "reason": "HTTPError: 429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?format=json&formatversion=2&action=query&titles=Axolotl&redirects=1",
+      "quota": false,
+      "overloaded": false
     }
   ],
-  "in_cloud": [
-    {
-      "id": "ep001",
-      "topic": "Winnipeg (bear) (1914): the real bear behind Winnie-the-Pooh was a black bear cub bought for $20 at an Ontario train stop, who sailed for England with Canadian troops on October 3",
-      "spawned_at": "2026-09-30T13:37:43+05:30"
-    },
-    {
-      "id": "ep002",
-      "topic": "Cher Ami (1918): the famous pigeon story says he was shot and lost a leg flying for the Lost Battalion on October 4, but the Signal Corps record puts his wounds weeks later",
-      "spawned_at": "2026-09-30T13:37:44+05:30"
-    },
-    {
-      "id": "ep003",
-      "topic": "Axolotl: it can regrow limbs and even parts of its heart and brain, yet only about 50 to 1,000 adults are left in the wild",
-      "spawned_at": "2026-09-30T13:37:44+05:30"
-    }
-  ],
+  "spawned": [],
+  "in_cloud": [],
   "published": [],
   "live": 0,
   "failed_posts": [],
@@ -145,19 +108,14 @@
     "runner": 0
   },
   "daily_done": null,
-  "minutes_this_month": 2.7240818522,
+  "minutes_this_month": 4.161037525866666,
   "minutes_budget": 2000,
   "modal_cost": {
     "metered": 0.87,
     "billed": 0.0
   },
   "modal_credit": 30.0,
-  "capacity": {
-    "cloud": 226,
-    "runner": 6,
-    "runner_minutes": 120,
-    "modal_credit_left": 27.13
-  },
+  "capacity": null,
   "made_here": 0,
   "open_topics": 111,
   "parked_topics": 0
