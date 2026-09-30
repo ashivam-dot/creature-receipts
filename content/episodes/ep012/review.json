@@ -1,0 +1,151 @@
+{
+  "rounds": [
+    {
+      "at": "2026-09-30T23:40:44+05:30",
+      "check": {
+        "duration": 45.5,
+        "words": 105,
+        "integrated_lufs": -14.1,
+        "true_peak_dbfs": -2.0,
+        "warnings": [],
+        "speech_differences": [
+          "'subastian' heard as 'sue bastian' after 'remotely operated vehicle'"
+        ],
+        "speech_error": null,
+        "sources": [
+          "Wikimedia Commons",
+          "iNaturalist",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons"
+        ]
+      },
+      "scores": {
+        "hook": 4,
+        "clarity": 5,
+        "payoff": 4,
+        "visuals": 4,
+        "loop": 5
+      },
+      "notes": {
+        "hook": "Strong opening line and visual, though slightly abstract.",
+        "clarity": "Very clear narrative progression; easy to follow.",
+        "payoff": "The revelation of the first live footage is a satisfying conclusion.",
+        "visuals": "High quality, though some beats use static images with minimal movement.",
+        "loop": "The loop is perfectly executed with mirroring text and visuals."
+      },
+      "frames": [],
+      "speech": [
+        {
+          "beat": 4,
+          "word": "SuBastian",
+          "respelling": "su bas tee an"
+        }
+      ],
+      "rewrite": [],
+      "better_than_last": "First Short produced; establishes a high baseline for quality.",
+      "judge": "gemma-4-31b-it",
+      "passed": true
+    },
+    {
+      "at": "2026-10-01T00:13:51+05:30",
+      "check": {
+        "duration": 45.33,
+        "words": 105,
+        "integrated_lufs": -14.1,
+        "true_peak_dbfs": -1.9,
+        "warnings": [],
+        "speech_differences": [],
+        "speech_error": null,
+        "sources": [
+          "Wikimedia Commons",
+          "iNaturalist",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons"
+        ]
+      },
+      "scores": {
+        "hook": 4,
+        "clarity": 5,
+        "payoff": 4,
+        "visuals": 3,
+        "loop": 5
+      },
+      "notes": {
+        "hook": "Strong opening premise with the 'ghost' metaphor.",
+        "clarity": "Easy to follow, logical progression from mystery to discovery.",
+        "payoff": "The reveal of the first live footage is a satisfying conclusion.",
+        "visuals": "The juvenile squid image in beat 5 is not a colossal squid; it looks like a glass squid or similar species.",
+        "loop": "The transition from beat 7 back to beat 1 is seamless."
+      },
+      "frames": [
+        {
+          "beat": 5,
+          "problem": "The image shows a translucent glass squid, not a colossal squid juvenile."
+        }
+      ],
+      "speech": [],
+      "rewrite": [],
+      "better_than_last": "First video, setting a high bar for narrative structure and looping.",
+      "judge": "gemma-4-31b-it",
+      "passed": false
+    },
+    {
+      "at": "2026-10-01T00:46:59+05:30",
+      "check": {
+        "duration": 45.33,
+        "words": 105,
+        "integrated_lufs": -14.1,
+        "true_peak_dbfs": -1.8,
+        "warnings": [],
+        "speech_differences": [],
+        "speech_error": null,
+        "sources": [
+          "Wikimedia Commons",
+          "iNaturalist",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons"
+        ]
+      },
+      "scores": {
+        "hook": 4,
+        "clarity": 5,
+        "payoff": 4,
+        "visuals": 3,
+        "loop": 5
+      },
+      "notes": {
+        "hook": "Strong opening statement with high stakes.",
+        "clarity": "Clear, linear narrative with one idea per beat.",
+        "payoff": "The reveal of the first live footage is a satisfying conclusion.",
+        "visuals": "Some frames feel like generic AI art or stock photos rather than striking wildlife footage.",
+        "loop": "Seamless transition from the end back to the beginning."
+      },
+      "frames": [
+        {
+          "beat": 1,
+          "problem": "The image looks like AI-generated art rather than a real animal or high-quality illustration."
+        },
+        {
+          "beat": 6,
+          "problem": "The visuals are abstract and cluttered, making it hard to identify the subject."
+        }
+      ],
+      "speech": [],
+      "rewrite": [],
+      "better_than_last": "This is the first Short, setting a solid baseline for pacing and looping.",
+      "judge": "gemma-4-31b-it",
+      "passed": false
+    }
+  ],
+  "best_round": 1,
+  "kept_round": 1
+}

@@ -1,0 +1,284 @@
+{
+  "viable": true,
+  "reason": "The story offers a compelling irony—killing the oldest animal to prove its age—supported by multiple detailed sources with over 15 consistent claims.",
+  "story": "In 2006, researchers from Bangor University were dredging the seafloor off Northern Iceland for a climate study. They collected an ordinary-looking ocean quahog clam and threw it in the freezer with the rest of their samples. They didn't know they had just killed a world record holder. Only after they sliced the shell open to count its growth rings did the truth emerge: the clam, nicknamed 'Ming,' had been alive since 1499. Born during the Ming Dynasty, it had survived 507 years on the cold ocean floor, outlasting the Renaissance, the Industrial Revolution, and both World Wars. Initially, scientists miscounted and thought it was 405, but revised the age in 2013 using carbon-14 dating and cross-matching patterns. While the discovery provided a 500-year 'tape recording' of ocean temperatures, the irony remains: Ming only became a household name because scientists accidentally ended its five-century-long life to study it.",
+  "angle": "Scientists accidentally killed the world's oldest individual animal while trying to figure out how old it was.",
+  "claims": [
+    {
+      "claim": "The clam Ming belonged to the species Arctica islandica, also known as the ocean quahog.",
+      "sources": [
+        "S1",
+        "S4",
+        "S5",
+        "S7"
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim": "The clam was dredged off the northern coast of Iceland in 2006.",
+      "sources": [
+        "S1",
+        "S3",
+        "S5",
+        "S6",
+        "S7"
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim": "Ming was determined to be 507 years old at the time of its death.",
+      "sources": [
+        "S1",
+        "S3",
+        "S5",
+        "S7"
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim": "The clam was killed when it was frozen aboard the research vessel before its age was known.",
+      "sources": [
+        "S1",
+        "S3",
+        "S5",
+        "S7"
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim": "Researchers from Bangor University in Wales conducted the discovery and analysis.",
+      "sources": [
+        "S1",
+        "S2",
+        "S4",
+        "S5",
+        "S6"
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim": "The first age estimate announced in 2007 was 405 years.",
+      "sources": [
+        "S1",
+        "S2",
+        "S3",
+        "S5",
+        "S6",
+        "S7"
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim": "The age was calculated by counting annual growth rings in the shell, similar to tree rings.",
+      "sources": [
+        "S1",
+        "S2",
+        "S3",
+        "S4",
+        "S5",
+        "S6",
+        "S7"
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim": "The clam was born around 1499, during the Ming dynasty in China.",
+      "sources": [
+        "S1",
+        "S3",
+        "S5",
+        "S7"
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim": "Carbon-14 dating was used to verify the 507-year age estimate.",
+      "sources": [
+        "S1",
+        "S3",
+        "S5",
+        "S7"
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim": "Ming's shell measured approximately 87 millimeters (3.4 inches) across.",
+      "sources": [
+        "S1",
+        "S5",
+        "S6"
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim": "The nickname 'Ming' was coined by Sunday Times journalists.",
+      "sources": [
+        "S1",
+        "S5",
+        "S6"
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim": "The clam is considered the oldest non-colonial animal ever precisely aged.",
+      "sources": [
+        "S1",
+        "S3",
+        "S4",
+        "S5"
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim": "The initial miscount occurred because growth rings were compressed and difficult to distinguish at the shell's edge.",
+      "sources": [
+        "S3",
+        "S5",
+        "S7"
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim": "Ocean quahogs have exceptionally low metabolic rates which contribute to their long lives.",
+      "sources": [
+        "S4",
+        "S5",
+        "S7"
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim": "The species is used as a 'climate archive' to reconstruct past ocean temperatures.",
+      "sources": [
+        "S2",
+        "S3",
+        "S4",
+        "S5",
+        "S7"
+      ],
+      "confidence": "high"
+    }
+  ],
+  "disputed": [
+    "The method of death: While some early reports suggest opening the shell killed it, later sources clarify it was frozen to death on the ship prior to any analysis. The script should emphasize it died during the collection/preservation process.",
+    "Sex of the clam: One Icelandic name 'Hafrún' is female, but researchers officially recorded its reproductive state as 'spent' and its sex as unknown."
+  ],
+  "visuals": [
+    {
+      "subject": "Living ocean quahog clam underwater",
+      "queries": [
+        "Arctica islandica living",
+        "Arctica islandica seabed"
+      ]
+    },
+    {
+      "subject": "Close-up of the annual growth rings on a shell cross-section",
+      "queries": [
+        "Arctica islandica growth rings",
+        "mollusk shell cross section microscope"
+      ]
+    },
+    {
+      "subject": "Map of the northern coast of Iceland",
+      "queries": [
+        "Iceland north coast map",
+        "Iceland bathymetry map"
+      ]
+    },
+    {
+      "subject": "Bangor University School of Ocean Sciences",
+      "queries": [
+        "Bangor University School of Ocean Sciences",
+        "Menai Bridge marine biology"
+      ]
+    },
+    {
+      "subject": "Portrait of Leonardo da Vinci to represent the 1490s",
+      "queries": [
+        "Leonardo da Vinci portrait",
+        "15th century explorer illustration"
+      ]
+    },
+    {
+      "subject": "Ming Dynasty period artifacts",
+      "queries": [
+        "Ming Dynasty porcelain",
+        "Ming Dynasty emperor portrait"
+      ]
+    },
+    {
+      "subject": "A scientific dredge used for seafloor sampling",
+      "queries": [
+        "benthic dredge",
+        "scientific ocean sampling equipment"
+      ]
+    },
+    {
+      "subject": "Microscopic view of bivalve shell bands",
+      "queries": [
+        "sclerochronology shell bands",
+        "shell growth increments microscope"
+      ]
+    },
+    {
+      "subject": "Scientific illustration of Arctica islandica from the 19th century",
+      "queries": [
+        "Arctica islandica Biodiversity Heritage Library",
+        "Cyprina islandica plate"
+      ]
+    },
+    {
+      "subject": "A researcher using a diamond saw to cut a shell",
+      "queries": [
+        "shell sectioning diamond saw",
+        "laboratory shell analysis"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "label": "S1",
+      "url": "https://en.wikipedia.org/wiki/Ming_(clam)",
+      "title": "Ming (clam)",
+      "site": "wikipedia.org"
+    },
+    {
+      "label": "S2",
+      "url": "http://news.bbc.co.uk/2/hi/science/nature/7066389.stm",
+      "title": "Ming the clam is oldest mollusc",
+      "site": "bbc.co.uk"
+    },
+    {
+      "label": "S3",
+      "url": "https://scienceblog.com/b-in-2006-researchers-dredged-a-clam-off-the-coast-of-iceland-and-prised-it-open-to-count-its-growth-rings-and-only-afterwards-worked-out-what-they-had-done-the-animal-had-been-alive-since-1499-the-ol/",
+      "title": "In 2006 researchers dredging off Iceland pulled up an ocean quahog clam and froze it with the rest of their samples, unaware that it had been alive since about 1499. Its tightly packed shell rings were eventually counted at 507—making “Ming” the oldest accurately aged non-colonial animal ever recorded, killed before anyone realised it had lived through five centuries of history.",
+      "site": "scienceblog.com"
+    },
+    {
+      "label": "S4",
+      "url": "https://www.americanoceans.org/facts/oldest-clam/",
+      "title": "Oldest Clam Ever Recorded",
+      "site": "americanoceans.org"
+    },
+    {
+      "label": "S5",
+      "url": "https://www.missedhistory.com/article/ming-clam-507-years-oldest-animal-killed",
+      "title": "Scientists Accidentally Killed the World's Oldest Animal While Counting Its Rings | Missed History",
+      "site": "missedhistory.com"
+    },
+    {
+      "label": "S6",
+      "url": "https://web.archive.org/web/20080503222950/http://www.telegraph.co.uk/news/uknews/1567562/Clam,-405,-is-oldest-animal-ever.html",
+      "title": "Clam, 405, is oldest animal ever",
+      "site": "telegraph.co.uk"
+    },
+    {
+      "label": "S7",
+      "url": "http://sciencenordic.com/new-record-world%E2%80%99s-oldest-animal-507-years-old",
+      "title": "New record: World’s oldest animal is 507 years old",
+      "site": "sciencenordic.com"
+    }
+  ],
+  "topic": "Ming (clam) (2006): a clam dredged off Iceland turned out to be 507 years old",
+  "series": "Nature's Record Breakers"
+}

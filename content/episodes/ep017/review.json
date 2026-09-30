@@ -1,0 +1,153 @@
+{
+  "rounds": [
+    {
+      "at": "2026-09-30T23:02:44+05:30",
+      "check": {
+        "duration": 45.03,
+        "words": 107,
+        "integrated_lufs": -14.1,
+        "true_peak_dbfs": -1.8,
+        "warnings": [],
+        "speech_differences": [
+          "'us' heard as 'a' after 'almost always spit'"
+        ],
+        "speech_error": null,
+        "sources": [
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons"
+        ]
+      },
+      "scores": {
+        "hook": 4,
+        "clarity": 5,
+        "payoff": 4,
+        "visuals": 3,
+        "loop": 5
+      },
+      "notes": {
+        "hook": "Clear, counter-intuitive statement that challenges common beliefs.",
+        "clarity": "The logic flows well and each beat presents a single, clear idea.",
+        "payoff": "The explanation of blubber vs. bone provides a satisfying answer to the hook.",
+        "visuals": "Beat 5 is a complex anatomical diagram that is too small and cluttered for a mobile screen.",
+        "loop": "The transition from the final sentence back to the start is seamless."
+      },
+      "frames": [
+        {
+          "beat": 5,
+          "problem": "mostly text/too complex; anatomical diagram is not striking or clear at phone size"
+        }
+      ],
+      "speech": [
+        {
+          "beat": 6,
+          "word": "us",
+          "respelling": "us"
+        }
+      ],
+      "rewrite": [],
+      "better_than_last": "The narrative structure is tighter than ep008, leading more logically from a myth to a biological explanation.",
+      "judge": "gemma-4-31b-it",
+      "passed": false
+    },
+    {
+      "at": "2026-09-30T23:34:28+05:30",
+      "check": {
+        "duration": 45.03,
+        "words": 107,
+        "integrated_lufs": -14.1,
+        "true_peak_dbfs": -2.0,
+        "warnings": [],
+        "speech_differences": [
+          "'us' heard as 'a' after 'almost always spit'"
+        ],
+        "speech_error": null,
+        "sources": [
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons"
+        ]
+      },
+      "scores": {
+        "hook": 3,
+        "clarity": 5,
+        "payoff": 4,
+        "visuals": 4,
+        "loop": 5
+      },
+      "notes": {
+        "hook": "Too generic; needs a stronger claim or a surprising fact immediately to stop the swipe.",
+        "clarity": "Each beat presents a single, easy-to-follow idea.",
+        "payoff": "The explanation of why they spit humans out (blubber) is a satisfying payoff.",
+        "visuals": "Clear and relevant, though a bit reliant on static images/diagrams.",
+        "loop": "Perfectly seamless transition from the end back to the start."
+      },
+      "frames": [],
+      "speech": [
+        {
+          "beat": 6,
+          "word": "us",
+          "respelling": "us"
+        }
+      ],
+      "rewrite": [
+        "Beat 1: Great white sharks don't actually want to eat you."
+      ],
+      "better_than_last": "The loop is more naturally integrated than in the salamander episode.",
+      "judge": "gemma-4-31b-it",
+      "passed": false
+    },
+    {
+      "at": "2026-10-01T00:03:15+05:30",
+      "check": {
+        "duration": 45.03,
+        "words": 109,
+        "integrated_lufs": -14.1,
+        "true_peak_dbfs": -1.9,
+        "warnings": [],
+        "speech_differences": [
+          "'us' heard as 'a' after 'almost always spit'"
+        ],
+        "speech_error": null,
+        "sources": [
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons"
+        ]
+      },
+      "scores": {
+        "hook": 4,
+        "clarity": 5,
+        "payoff": 4,
+        "visuals": 4,
+        "loop": 5
+      },
+      "notes": {
+        "hook": "Direct and counterintuitive, though slightly generic.",
+        "clarity": "Very easy to follow with a logical progression of ideas.",
+        "payoff": "Explains the 'why' (blubber vs bone) which satisfies the initial premise.",
+        "visuals": "Clear and relevant, including good anatomical diagrams.",
+        "loop": "The final line perfectly mirrors the first for a seamless loop."
+      },
+      "frames": [],
+      "speech": [],
+      "rewrite": [],
+      "better_than_last": "The pacing is tighter and the thematic loop is more cohesive than the previous episodes.",
+      "judge": "gemma-4-31b-it",
+      "passed": true
+    }
+  ],
+  "best_round": 3
+}

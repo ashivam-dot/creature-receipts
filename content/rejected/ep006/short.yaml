@@ -1,0 +1,158 @@
+id: ep006
+title: 'Sperm Whale: The Loudest Animal on Earth'
+series: Nature's Record Breakers
+description: The sperm whale produces the loudest clicks on Earth at 236 decibels and has the largest brain of any known animal.
+  Its single S-shaped blowhole sits asymmetrically on the left side of its head.
+sources:
+- https://en.wikipedia.org/wiki/Sperm_whale
+- http://www.nmfs.noaa.gov/pr/species/mammals/cetaceans/spermwhale.htm
+- https://animaldiversity.org/accounts/Physeter_catodon/
+- https://web.archive.org/web/20031106044251/http://news.nationalgeographic.com/news/2003/11/1103_031103_tvspermwhale.html
+hashtags:
+- '#animals'
+- '#spermwhale'
+- '#deepsea'
+tags:
+- sperm whale
+- loudest animal
+- spermaceti
+- deep sea
+- echolocation
+- marine biology
+- ocean records
+voice:
+  voice: af_heart
+  speed: 1.05
+beats:
+- text: The sperm whale's head is filled with wax.
+  emphasis:
+  - filled with wax
+  sfx: whoosh
+  visual:
+    source: url
+    url: https://inaturalist-open-data.s3.amazonaws.com/photos/542160818/original.jpg
+    credit:
+      source: iNaturalist
+      title: Sperm Whale (Physeter macrocephalus)
+      credit: (c) Daniel Benák, some rights reserved (CC BY)
+      license: CC BY 4.0
+      url: https://www.inaturalist.org/observations/300883241
+    fallbacks:
+    - color
+    motion: pan_right
+    focus_x: 0.49
+    focus_y: 0.42
+    box:
+    - 0.12
+    - 0.24
+    - 0.94
+    - 0.65
+- text: That waxy substance is called spermaceti, and by reflecting sound, it helps the sperm whale become the loudest animal
+    on Earth.
+  emphasis:
+  - spermaceti
+  - loudest animal on Earth
+  visual:
+    source: url
+    url: https://thumb.wikimedia.org/wikipedia/commons/thumb/8/83/Museo_del_Mare_%28Milazzo%29_03_11_2024_05.jpg/3840px-Museo_del_Mare_%28Milazzo%29_03_11_2024_05.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
+    credit:
+      source: Wikimedia Commons
+      title: Museo del Mare (Milazzo) 03 11 2024 05.jpg
+      credit: Effems
+      license: CC0
+      url: https://commons.wikimedia.org/wiki/File:Museo_del_Mare_(Milazzo)_03_11_2024_05.jpg
+    fallbacks:
+    - color
+    motion: pan_left
+    focus_x: 0.5
+    focus_y: 0.5
+- text: Its clicks reach 236 decibels underwater. No other animal on the planet comes anywhere close to producing that sound.
+  emphasis:
+  - 236 decibels
+  visual:
+    source: card
+    card:
+      kind: fact
+      big: 236 dB
+      small: source level underwater
+    motion: zoom_in
+- text: The whale fires those clicks while diving to 7,380 feet in the deep open ocean.
+  emphasis:
+  - 7,380 feet
+  sfx: whoosh
+  visual:
+    source: url
+    url: https://thumb.wikimedia.org/wikipedia/commons/thumb/2/21/Sperm_Whale_diving._%2852629871553%29.jpg/1920px-Sperm_Whale_diving._%2852629871553%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
+    credit:
+      source: Wikimedia Commons
+      title: Sperm Whale diving. (52629871553).jpg
+      credit: Bernard Spragg. NZ from Christchurch, New Zealand
+      license: Public domain
+      url: https://commons.wikimedia.org/wiki/File:Sperm_Whale_diving._(52629871553).jpg
+    fallbacks:
+    - card
+    - color
+    motion: pan_left
+    focus_x: 0.5
+    focus_y: 0.5
+    box:
+    - 0.08
+    - 0.28
+    - 0.89
+    - 0.85
+    card:
+      kind: fact
+      big: 7,380 feet
+      small: diving depth
+- text: It also has the largest brain of any known animal, whether modern or extinct.
+  emphasis:
+  - largest brain
+  sfx: riser
+  visual:
+    source: url
+    url: https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5d/Rotated_De_l%27histoire_naturelle_des_c%C3%A9tac%C3%A9s_%28...%29Cuvier_Fr%C3%A9d%C3%A9ric_bpt6k9651093m_49.jpg/1280px-Rotated_De_l%27histoire_naturelle_des_c%C3%A9tac%C3%A9s_%28...%29Cuvier_Fr%C3%A9d%C3%A9ric_bpt6k9651093m_49.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
+    credit:
+      source: Wikimedia Commons
+      title: Rotated De l'histoire naturelle des cétacés (...)Cuvier Frédéric bpt6k9651093m 49.jpg
+      credit: M. F. Cuvier
+      license: CC0
+      url: https://commons.wikimedia.org/wiki/File:Rotated_De_l%27histoire_naturelle_des_c%C3%A9tac%C3%A9s_(...)Cuvier_Fr%C3%A9d%C3%A9ric_bpt6k9651093m_49.jpg
+    fallbacks:
+    - color
+    motion: pan_right
+    focus_x: 0.5
+    focus_y: 0.5
+    box:
+    - 0.13
+    - 0.39
+    - 0.87
+    - 0.67
+- text: But to surface for air, it has a unique S-shaped blowhole on the left side of its head.
+  emphasis:
+  - S-shaped blowhole
+  - left side
+  sfx: pop
+  pause_after: 0.4
+  visual:
+    source: url
+    url: https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3d/Sperm_whale_blowhole_Vincze.jpg/1920px-Sperm_whale_blowhole_Vincze.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
+    credit:
+      source: Wikimedia Commons
+      title: Sperm whale blowhole Vincze.jpg
+      credit: Vilmos Vincze
+      license: CC BY 2.0
+      url: https://commons.wikimedia.org/wiki/File:Sperm_whale_blowhole_Vincze.jpg
+    fallbacks:
+    - color
+    motion: pan_left
+    focus_x: 0.5
+    focus_y: 0.5
+- text: That's why the loudest animal on Earth fills its head with wax.
+  emphasis:
+  - fills its head with wax
+  visual:
+    reuse: 1
+    motion: zoom_out
+    focus_x: 0.49
+    focus_y: 0.42
+hook_text: 236 DECIBELS

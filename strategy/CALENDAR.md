@@ -57,7 +57,7 @@ text. Space topics belong to the sister channel Universe Receipts and never go h
 ### Deep Sea Files
 
 - Giant squid (2004): nobody photographed a live one in its habitat until September 30, 2004, and its eyes reach at least 27 cm across — dropped (ep019)
-- Colossal squid (2025): it has the largest eyes of any animal known to have existed, and was first filmed alive in its habitat on March 9, 2025 — making (ep012)
+- Colossal squid (2025): it has the largest eyes of any animal known to have existed, and was first filmed alive in its habitat on March 9, 2025 — done (ep012)
 - Anglerfish: the tiny male latches onto a far larger female and can fuse into her body — making (ep023)
 - Goblin shark: its jaws launch forward out of its head, from a lineage about 125 million years old
 - Cookiecutter shark: in the 1980s about 30 US Navy submarines were damaged by its bites
@@ -96,8 +96,8 @@ text. Space topics belong to the sister channel Universe Receipts and never go h
 - Platypus (1799): the first scientists to examine one thought it was a fake sewn together from several animals, and it glows under ultraviolet light — parked (ep016)
 - Horseshoe crab: it isn't a crab but a closer relative of spiders, and its blue blood is used to test for bacterial toxins
 - Carcinisation (1916): evolution has turned non-crabs into crab shapes at least five separate times
-- Narwhal: the "horn" is a spiral left canine tooth up to 3 meters long, packed with millions of nerve endings
-- Kiwi (bird): its egg can weigh 20% of the mother, and its closest relative is the extinct elephant bird of Madagascar, not the moa — making (ep021)
+- Narwhal: the "horn" is a spiral left canine tooth up to 3 meters long, packed with millions of nerve endings — making (ep024)
+- Kiwi (bird): its egg can weigh 20% of the mother, and its closest relative is the extinct elephant bird of Madagascar, not the moa — dropped (ep021)
 - Tuatara (2009): it isn't a lizard but the last of an ancient order, and a male named Henry became a father at 111
 - Sloth: its fur grows algae that feed moths found nowhere else, and it climbs down about once a week to use the bathroom
 - Clownfish: when the group's female disappears, the breeding male changes sex and takes her place
@@ -116,7 +116,7 @@ text. Space topics belong to the sister channel Universe Receipts and never go h
 
 - Greenland shark: the longest-lived vertebrate known, at least 272 years, and it doesn't mature until about 150
 - Blue whale: the largest animal ever known, with a heart that weighed 180 kg
-- Sperm whale: the loudest animal on Earth, at 236 decibels, with the largest brain of any animal — making (ep006)
+- Sperm whale: the loudest animal on Earth, at 236 decibels, with the largest brain of any animal — parked (ep006)
 - Peregrine falcon (2005): a falcon was recorded diving at 389 km/h, though radar has never confirmed speeds like that
 - Jonathan (tortoise) (1832): the oldest known living land animal, and an 1886 photo shows him on Saint Helena
 - Lion's mane jellyfish (1865): its longest known tentacles, 36.6 meters, were longer than a blue whale
@@ -131,13 +131,13 @@ text. Space topics belong to the sister channel Universe Receipts and never go h
 - Snowy albatross: the longest wingspan of any living bird, up to 3.7 meters, and it can glide for hours without flapping
 - Bar-tailed godwit (2022): a young tagged godwit flew at least 13,560 km nonstop from Alaska to Tasmania in 11 days
 - Rüppell's vulture (1973): the highest-flying bird, confirmed at 11,300 meters when one hit a jetliner's engine
-- Ming (clam) (2006): a clam dredged off Iceland turned out to be 507 years old — making (ep013)
+- Ming (clam) (2006): a clam dredged off Iceland turned out to be 507 years old — done (ep013)
 - Emperor penguin (1994): one penguin dived to 564 meters on a dive lasting 21.8 minutes
 - Leatherback sea turtle: the largest living turtle dives as deep as 1,280 meters
 
 ### Animal Myths, Busted
 
-- Great white shark: the "Jaws" man-eater normally doesn't hunt people, and most bites come from curiosity or mistaken identity — making (ep017)
+- Great white shark: the "Jaws" man-eater normally doesn't hunt people, and most bites come from curiosity or mistaken identity — done (ep017)
 - Bat: no species of bat is truly blind
 - Camel: the hump stores fat, not water
 - Opiliones: the "daddy longlegs is the most venomous animal" story is an urban legend; harvestmen have no venom glands at all

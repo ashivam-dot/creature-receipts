@@ -1,0 +1,208 @@
+{
+  "viable": true,
+  "reason": "The provided sources sufficiently support a surprising 45-second story with at least 10 multi-source claims about anglerfish sexual parasitism and extreme biology.",
+  "story": "In the dark, lonely depths of the ocean, finding a mate is nearly impossible. For deep-sea anglerfish, evolution solved this with extreme romance: sexual parasitism. When a tiny male anglerfish finally finds a massive female, which can be up to sixty times his size, he bites into her skin with tiny translucent fangs. This love nip becomes permanent. Over time, his head dissolves, his internal organs shrivel away except for his testes, and his blood vessels fuse completely with hers. He transforms into a permanent appendage, existing only to provide on-demand sperm. Scientists discovered that these fish pull this off by possessing a severe form of natural immunodeficiency, missing the adaptive immune genes that would normally cause a human body to reject foreign tissue. It is a biological merger so extreme that it completely defies the rules of transplantation.",
+  "angle": "A tiny male anglerfish permanently fuses into the body of a female, merging their bloodstreams and dissolving his own organs.",
+  "claims": [
+    {
+      "claim": "Deep-sea anglerfish females can be significantly larger than males, sometimes orders of magnitude larger or up to 60 times their size.",
+      "sources": [
+        "S1",
+        "S3"
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim": "When a male anglerfish encounters a female, he latches onto her using his teeth.",
+      "sources": [
+        "S2",
+        "S3",
+        "S6",
+        "S7"
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim": "Over time, the attached male physically fuses with the female, merging their blood vessels and skin.",
+      "sources": [
+        "S2",
+        "S3",
+        "S6"
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim": "The male loses his internal organs, except for his testes, becoming essentially a sexual parasite.",
+      "sources": [
+        "S2",
+        "S3",
+        "S7"
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim": "The loss of adaptive immunity in these anglerfish prevents their bodies from rejecting the male as foreign tissue.",
+      "sources": [
+        "S3",
+        "S6"
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim": "Anglerfish are named for their bioluminescent lure or fishing rod-like appendage on their heads used by females to attract prey.",
+      "sources": [
+        "S1",
+        "S2",
+        "S3",
+        "S6",
+        "S7"
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim": "Anglerfish can stretch their jaws and stomachs to swallow prey up to twice their own size.",
+      "sources": [
+        "S1",
+        "S2",
+        "S7"
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim": "Male Photocorynus spiniceps were measured to be 6.2-7.3 mm at maturity and were at one time claimed to be the smallest vertebrate known.",
+      "sources": [
+        "S1",
+        "S5"
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim": "There are more than 200 species of anglerfish.",
+      "sources": [
+        "S2",
+        "S7"
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim": "Male anglerfish may lose their vision and ability to move after attaching to a female.",
+      "sources": [
+        "S2",
+        "S7"
+      ],
+      "confidence": "high"
+    }
+  ],
+  "disputed": [
+    "Whether Photocorynus spiniceps is definitively the smallest vertebrate known is subject to debate regarding measurement criteria and whether parasitic males count, so scripts should note it was at one time claimed as the smallest vertebrate or frame it through the lens of ongoing size debates."
+  ],
+  "visuals": [
+    {
+      "subject": "Deep-sea anglerfish female with attached male",
+      "queries": [
+        "Ceratias holboelli",
+        "Ceratiidae",
+        "Melanocetus johnsonii"
+      ]
+    },
+    {
+      "subject": "Bioluminescent esca and illicium of an anglerfish",
+      "queries": [
+        "Melanocetus",
+        "Ceratioidei lure",
+        "Gigantactis"
+      ]
+    },
+    {
+      "subject": "Scientific illustration of deep-sea anglerfish anatomy",
+      "queries": [
+        "Biodiversity Heritage Library Lophiiformes",
+        "Ceratiidae illustration"
+      ]
+    },
+    {
+      "subject": "Shallow water frogfish camouflage",
+      "queries": [
+        "Antennarius commerson",
+        "Antennariidae",
+        "Frogfish camouflage"
+      ]
+    },
+    {
+      "subject": "Monkfish or goosefish bottom dweller",
+      "queries": [
+        "Lophius piscatorius",
+        "Lophiidae",
+        "Monkfish"
+      ]
+    },
+    {
+      "subject": "Sea toad or coffinfish",
+      "queries": [
+        "Chaunax",
+        "Chaunacops coloratus",
+        "Chaunacidae"
+      ]
+    },
+    {
+      "subject": "ROV exploration in the deep ocean",
+      "queries": [
+        "NOAA Okeanos Explorer ROV",
+        "Deep Discoverer ROV"
+      ]
+    },
+    {
+      "subject": "Batfish bottom dweller",
+      "queries": [
+        "Ogcocephalidae",
+        "Halieutaea"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "label": "S1",
+      "url": "https://en.wikipedia.org/wiki/Anglerfish",
+      "title": "Anglerfish",
+      "site": "wikipedia.org"
+    },
+    {
+      "label": "S2",
+      "url": "https://www.nationalgeographic.com/animals/fish/facts/anglerfish",
+      "title": "Anglerfish | National Geographic",
+      "site": "nationalgeographic.com"
+    },
+    {
+      "label": "S3",
+      "url": "https://www.smithsonianmag.com/smart-news/Anglerfish-Drop-Their-Immune-Defenses-to-Find-Love-180975458/",
+      "title": "Anglerfish Drop Their Immune Defenses to Find Love",
+      "site": "smithsonianmag.com"
+    },
+    {
+      "label": "S4",
+      "url": "https://www.fisheries.noaa.gov/science-blog/mysterious-identity-bright-red-sea-toad",
+      "title": "The Mysterious Identity of the Bright-Red Sea Toad",
+      "site": "noaa.gov"
+    },
+    {
+      "label": "S5",
+      "url": "https://news.bbc.co.uk/2/hi/science/nature/4666736.stm",
+      "title": "Smallest fish compete for honours",
+      "site": "bbc.co.uk"
+    },
+    {
+      "label": "S6",
+      "url": "https://yibs.yale.edu/news/sea-love-behind-unusual-sexual-parasitism-deep-water-anglerfish",
+      "title": "Sea of love: Behind the unusual sexual parasitism of deep-water anglerfish",
+      "site": "yale.edu"
+    },
+    {
+      "label": "S7",
+      "url": "https://utmsi.utexas.edu/science-and-the-sea/radio-program/bright-lure/",
+      "title": "Bright Lure - Marine Science Institute. The University of Texas at Austin.",
+      "site": "utexas.edu"
+    }
+  ],
+  "topic": "Anglerfish: the tiny male latches onto a far larger female and can fuse into her body",
+  "series": "Deep Sea Files"
+}

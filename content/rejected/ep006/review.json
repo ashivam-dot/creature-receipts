@@ -1,0 +1,145 @@
+{
+  "rounds": [
+    {
+      "at": "2026-09-30T22:58:37+05:30",
+      "check": {
+        "duration": 41.17,
+        "words": 107,
+        "integrated_lufs": -14.1,
+        "true_peak_dbfs": -1.2,
+        "warnings": [],
+        "speech_differences": [],
+        "speech_error": null,
+        "sources": [
+          "iNaturalist",
+          "Wikimedia Commons",
+          "designed card",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "iNaturalist"
+        ]
+      },
+      "scores": {
+        "hook": 4,
+        "clarity": 4,
+        "payoff": 3,
+        "visuals": 3,
+        "loop": 4
+      },
+      "notes": {
+        "hook": "Strong opening statement about wax in the head.",
+        "clarity": "Generally clear, though the transition to the blowhole feels abrupt.",
+        "payoff": "The blowhole detail is interesting but doesn't feel like a climax or a payoff to the 'loudest' setup.",
+        "visuals": "The brain image is a human brain, not a sperm whale brain.",
+        "loop": "The last line leads back to the first fairly well."
+      },
+      "frames": [
+        {
+          "beat": 5,
+          "problem": "The image shows a human brain, not a sperm whale brain."
+        }
+      ],
+      "speech": [],
+      "rewrite": [
+        "Beat 6: But here's a detail that helps it survive: its blowhole is a single S-shaped opening on the left side of its head.",
+        "Beat 7: That's why the loudest animal on Earth fills its head with wax."
+      ],
+      "better_than_last": "This episode has a more intriguing hook than the previous two.",
+      "judge": "gemma-4-31b-it",
+      "passed": false
+    },
+    {
+      "at": "2026-09-30T23:04:52+05:30",
+      "check": {
+        "duration": 41.07,
+        "words": 108,
+        "integrated_lufs": -14.1,
+        "true_peak_dbfs": -1.5,
+        "warnings": [],
+        "speech_differences": [],
+        "speech_error": null,
+        "sources": [
+          "iNaturalist",
+          "Wikimedia Commons",
+          "designed card",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "iNaturalist"
+        ]
+      },
+      "scores": {
+        "hook": 5,
+        "clarity": 3,
+        "payoff": 3,
+        "visuals": 5,
+        "loop": 5
+      },
+      "notes": {
+        "hook": "The wax hook is strange and immediate.",
+        "clarity": "The connection between the wax, the sound, and the blowhole is not explained; it's just a list of facts.",
+        "payoff": "The end doesn't resolve why the wax makes it loud or how the blowhole helps it survive.",
+        "visuals": "High quality and relevant imagery.",
+        "loop": "The transition from the end back to the start is seamless."
+      },
+      "frames": [],
+      "speech": [],
+      "rewrite": [
+        "Beat 2: \"That waxy substance is called spermaceti, and by reflecting sound, it helps the sperm whale become the loudest animal on Earth.\"",
+        "Beat 6: \"But to surface for air, it has a unique S-shaped blowhole on the left side of its head.\""
+      ],
+      "better_than_last": "Stronger hook than the salamander or pigeon episodes.",
+      "judge": "gemma-4-31b-it",
+      "passed": false
+    },
+    {
+      "at": "2026-09-30T23:13:51+05:30",
+      "check": {
+        "duration": 41.05,
+        "words": 107,
+        "integrated_lufs": -14.1,
+        "true_peak_dbfs": -1.4,
+        "warnings": [],
+        "speech_differences": [],
+        "speech_error": null,
+        "sources": [
+          "iNaturalist",
+          "Wikimedia Commons",
+          "designed card",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "iNaturalist"
+        ]
+      },
+      "scores": {
+        "hook": 4,
+        "clarity": 3,
+        "payoff": 2,
+        "visuals": 4,
+        "loop": 5
+      },
+      "notes": {
+        "hook": "The 'head filled with wax' is a strong, curious opening.",
+        "clarity": "The connection between the blowhole (Beat 6) and the wax (Beat 7) is nonexistent or logically flawed.",
+        "payoff": "There is no twist or surprise; the blowhole fact feels like a random tangent before the loop.",
+        "visuals": "Images are high quality and relevant, though the skeleton is a bit sterile.",
+        "loop": "The loop is technically seamless, returning perfectly to the start."
+      },
+      "frames": [],
+      "speech": [],
+      "rewrite": [
+        "Beat 6: 'Its brain is so huge that its blowhole is pushed to the left side of its head.'",
+        "Beat 7: 'And that's why the loudest animal on Earth fills its head with wax.'"
+      ],
+      "better_than_last": "The hook is more visceral and intriguing than the previous two episodes.",
+      "judge": "gemma-4-31b-it",
+      "passed": false
+    }
+  ],
+  "best_round": 2,
+  "verdict": "rejected",
+  "reason": "low scores: clarity, payoff",
+  "rejected_at": "2026-09-30T23:13:51+05:30"
+}
