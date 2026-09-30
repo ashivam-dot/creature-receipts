@@ -18,8 +18,8 @@ text. Space topics belong to the sister channel Universe Receipts and never go h
 
 | Date | Story | Series |
 |---|---|---|
-| Oct 3 | Winnipeg (bear) (1914): the real bear behind Winnie-the-Pooh was a black bear cub bought for $20 at an Ontario train stop, who sailed for England with Canadian troops on October 3 — making (ep001) | Animal Myths, Busted |
-| Oct 4 | Cher Ami (1918): the famous pigeon story says he was shot and lost a leg flying for the Lost Battalion on October 4, but the Signal Corps record puts his wounds weeks later — making (ep002) | Animal Myths, Busted |
+| Oct 3 | Winnipeg (bear) (1914): the real bear behind Winnie-the-Pooh was a black bear cub bought for $20 at an Ontario train stop, who sailed for England with Canadian troops on October 3 — parked (ep001) | Animal Myths, Busted |
+| Oct 4 | Cher Ami (1918): the famous pigeon story says he was shot and lost a leg flying for the Lost Battalion on October 4, but the Signal Corps record puts his wounds weeks later — parked (ep002) | Animal Myths, Busted |
 | Oct 18 | G.I. Joe (pigeon) (1943): his message reached the air base 20 minutes before bombers took off to hit a village British troops had just taken, saving over 100 men | Built Different |
 | Oct 20 | Second voyage of HMS Beagle (1835): only after sailing from the Galápagos on October 20 did Darwin notice the mockingbirds differed from island to island | Evolution Got Weird |
 | Oct 26 | Paul the Octopus (2010): picked the winner of all seven of Germany's 2010 World Cup matches by choosing between two food boxes | Animal Myths, Busted |
@@ -37,7 +37,7 @@ text. Space topics belong to the sister channel Universe Receipts and never go h
 
 ### Built Different
 
-- Axolotl: it can regrow limbs and even parts of its heart and brain, yet only about 50 to 1,000 adults are left in the wild — making (ep003)
+- Axolotl: it can regrow limbs and even parts of its heart and brain, yet only about 50 to 1,000 adults are left in the wild — parked (ep003)
 - Tardigrade (1773): named "little water bear" in 1773, a dried-out one can survive from −272 °C to 149 °C, at least briefly
 - Octopus: three hearts, blue copper-based blood, and two-thirds of its 500 million neurons in its arms
 - Wombat: it leaves cube-shaped droppings, and the shape keeps them from rolling off the spots it marks
@@ -93,7 +93,7 @@ text. Space topics belong to the sister channel Universe Receipts and never go h
 
 ### Evolution Got Weird
 
-- Platypus (1799): the first scientists to examine one thought it was a fake sewn together from several animals, and it glows under ultraviolet light
+- Platypus (1799): the first scientists to examine one thought it was a fake sewn together from several animals, and it glows under ultraviolet light — making (ep005)
 - Horseshoe crab: it isn't a crab but a closer relative of spiders, and its blue blood is used to test for bacterial toxins
 - Carcinisation (1916): evolution has turned non-crabs into crab shapes at least five separate times
 - Narwhal: the "horn" is a spiral left canine tooth up to 3 meters long, packed with millions of nerve endings
@@ -116,7 +116,7 @@ text. Space topics belong to the sister channel Universe Receipts and never go h
 
 - Greenland shark: the longest-lived vertebrate known, at least 272 years, and it doesn't mature until about 150
 - Blue whale: the largest animal ever known, with a heart that weighed 180 kg
-- Sperm whale: the loudest animal on Earth, at 236 decibels, with the largest brain of any animal
+- Sperm whale: the loudest animal on Earth, at 236 decibels, with the largest brain of any animal — making (ep006)
 - Peregrine falcon (2005): a falcon was recorded diving at 389 km/h, though radar has never confirmed speeds like that
 - Jonathan (tortoise) (1832): the oldest known living land animal, and an 1886 photo shows him on Saint Helena
 - Lion's mane jellyfish (1865): its longest known tentacles, 36.6 meters, were longer than a blue whale

@@ -1,28 +1,28 @@
 {
-  "updated_at": "2026-09-30T19:20:39+05:30",
+  "updated_at": "2026-09-30T20:01:10+05:30",
   "day": -3,
   "result": "ok",
   "run": {
     "host": "github-actions",
-    "id": "36724447315",
-    "number": "3",
-    "trigger": "schedule",
-    "started_at": "2026-09-30T19:20:18+05:30",
-    "started_at_utc": "2026-09-30T13:50:18+00:00",
-    "seconds": 21
+    "id": "36729555974",
+    "number": "4",
+    "trigger": "workflow_dispatch",
+    "started_at": "2026-09-30T20:00:56+05:30",
+    "started_at_utc": "2026-09-30T14:30:56+00:00",
+    "seconds": 15
   },
   "stages": [
     {
       "name": "sync",
       "ok": true,
       "detail": "0 posts",
-      "seconds": 0.4
+      "seconds": 0.3
     },
     {
       "name": "playlists",
       "ok": true,
       "detail": "nothing new",
-      "seconds": 0.7
+      "seconds": 0.6
     },
     {
       "name": "on youtube",
@@ -34,13 +34,13 @@
       "name": "collect",
       "ok": true,
       "detail": "ep001 unfinished (RuntimeError: Gemini gemini-3.8-flash 403: Your project has been denied access. Please contact support.); ep002 unfinished (RuntimeError: Gemini gemini-3.8-flash 403: Your project has been denied access. Please contact support.); ep003 unfinished (RuntimeError: Gemini gemini-3.5-flash-lite 403: Your project has been denied access. Please contact support.); ep004 unfinished (RuntimeError: Gemini gemini-3.8-flash 403: Your project has been denied access. Please contact support.)",
-      "seconds": 14.8
+      "seconds": 10.1
     },
     {
       "name": "buffer channel",
       "ok": true,
       "detail": "connected",
-      "seconds": 0.4
+      "seconds": 0.2
     },
     {
       "name": "publish",
@@ -52,31 +52,25 @@
       "name": "deploy",
       "ok": true,
       "detail": "",
-      "seconds": 1.8
-    },
-    {
-      "name": "start ep001",
-      "ok": true,
-      "detail": "Winnipeg (bear) (1914): the real bear behind Winnie-the-Pooh was a black bear cub bought for $20 at an Ontario train stop, who sailed for England with Canadian troops on October 3",
-      "seconds": 0.4
-    },
-    {
-      "name": "start ep002",
-      "ok": true,
-      "detail": "Cher Ami (1918): the famous pigeon story says he was shot and lost a leg flying for the Lost Battalion on October 4, but the Signal Corps record puts his wounds weeks later",
-      "seconds": 0.4
-    },
-    {
-      "name": "start ep003",
-      "ok": true,
-      "detail": "Axolotl: it can regrow limbs and even parts of its heart and brain, yet only about 50 to 1,000 adults are left in the wild",
-      "seconds": 0.3
+      "seconds": 1.6
     },
     {
       "name": "start ep004",
       "ok": true,
       "detail": "Giant squid (2004): nobody photographed a live one in its habitat until September 30, 2004, and its eyes reach at least 27 cm across",
-      "seconds": 0.4
+      "seconds": 0.2
+    },
+    {
+      "name": "start ep005",
+      "ok": true,
+      "detail": "Platypus (1799): the first scientists to examine one thought it was a fake sewn together from several animals, and it glows under ultraviolet light",
+      "seconds": 0.1
+    },
+    {
+      "name": "start ep006",
+      "ok": true,
+      "detail": "Sperm whale: the loudest animal on Earth, at 236 decibels, with the largest brain of any animal",
+      "seconds": 0.1
     },
     {
       "name": "publish",
@@ -95,10 +89,9 @@
     "target": 42,
     "making": [],
     "remote": [
-      "ep001",
-      "ep002",
-      "ep003",
-      "ep004"
+      "ep004",
+      "ep005",
+      "ep006"
     ]
   },
   "queue": [],
@@ -139,46 +132,36 @@
   ],
   "spawned": [
     {
-      "id": "ep001",
-      "topic": "Winnipeg (bear) (1914): the real bear behind Winnie-the-Pooh was a black bear cub bought for $20 at an Ontario train stop, who sailed for England with Canadian troops on October 3",
-      "call_id": "fc-01M3S99R8X7GPNR2R6R2Q115AW"
-    },
-    {
-      "id": "ep002",
-      "topic": "Cher Ami (1918): the famous pigeon story says he was shot and lost a leg flying for the Lost Battalion on October 4, but the Signal Corps record puts his wounds weeks later",
-      "call_id": "fc-01M3S99RMMTQ2582V4AFBAWCSH"
-    },
-    {
-      "id": "ep003",
-      "topic": "Axolotl: it can regrow limbs and even parts of its heart and brain, yet only about 50 to 1,000 adults are left in the wild",
-      "call_id": "fc-01M3S99RZGGPQJBG3T2X2YDVKZ"
-    },
-    {
       "id": "ep004",
       "topic": "Giant squid (2004): nobody photographed a live one in its habitat until September 30, 2004, and its eyes reach at least 27 cm across",
-      "call_id": "fc-01M3S99SARSN8CSVY9JX3FH1FC"
+      "call_id": "fc-01M3SBKZBQKDYQDM90M21V7D5R"
+    },
+    {
+      "id": "ep005",
+      "topic": "Platypus (1799): the first scientists to examine one thought it was a fake sewn together from several animals, and it glows under ultraviolet light",
+      "call_id": "fc-01M3SBKZGY84FK30SBV7RTZ606"
+    },
+    {
+      "id": "ep006",
+      "topic": "Sperm whale: the loudest animal on Earth, at 236 decibels, with the largest brain of any animal",
+      "call_id": "fc-01M3SBKZNHC34Y8HS7NT4SX161"
     }
   ],
   "in_cloud": [
     {
-      "id": "ep001",
-      "topic": "Winnipeg (bear) (1914): the real bear behind Winnie-the-Pooh was a black bear cub bought for $20 at an Ontario train stop, who sailed for England with Canadian troops on October 3",
-      "spawned_at": "2026-09-30T19:20:38+05:30"
-    },
-    {
-      "id": "ep002",
-      "topic": "Cher Ami (1918): the famous pigeon story says he was shot and lost a leg flying for the Lost Battalion on October 4, but the Signal Corps record puts his wounds weeks later",
-      "spawned_at": "2026-09-30T19:20:38+05:30"
-    },
-    {
-      "id": "ep003",
-      "topic": "Axolotl: it can regrow limbs and even parts of its heart and brain, yet only about 50 to 1,000 adults are left in the wild",
-      "spawned_at": "2026-09-30T19:20:39+05:30"
-    },
-    {
       "id": "ep004",
       "topic": "Giant squid (2004): nobody photographed a live one in its habitat until September 30, 2004, and its eyes reach at least 27 cm across",
-      "spawned_at": "2026-09-30T19:20:39+05:30"
+      "spawned_at": "2026-09-30T20:01:10+05:30"
+    },
+    {
+      "id": "ep005",
+      "topic": "Platypus (1799): the first scientists to examine one thought it was a fake sewn together from several animals, and it glows under ultraviolet light",
+      "spawned_at": "2026-09-30T20:01:10+05:30"
+    },
+    {
+      "id": "ep006",
+      "topic": "Sperm whale: the loudest animal on Earth, at 236 decibels, with the largest brain of any animal",
+      "spawned_at": "2026-09-30T20:01:10+05:30"
     }
   ],
   "published": [],
@@ -195,10 +178,10 @@
     "runner": 0
   },
   "daily_done": "2026-09-30",
-  "minutes_this_month": 6.353330792816667,
+  "minutes_this_month": 8.24561136645,
   "minutes_budget": 2000,
   "modal_cost": {
-    "metered": 1.21,
+    "metered": 1.22,
     "billed": 0.0
   },
   "modal_credit": 30.0,
@@ -206,9 +189,9 @@
     "cloud": 223,
     "runner": 6,
     "runner_minutes": 120,
-    "modal_credit_left": 26.79
+    "modal_credit_left": 26.78
   },
   "made_here": 0,
-  "open_topics": 110,
-  "parked_topics": 0
+  "open_topics": 108,
+  "parked_topics": 3
 }
