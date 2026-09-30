@@ -29,7 +29,7 @@ Two optional steps help, in order of value:
   and the GitHub repository's secrets.
 - **Modal:** shares Universe Receipts' workspace (akshshivam5), its card, its $0 spend limit, and its $30 a
   month of credit. Nothing new to pay or watch.
-- **Cloud studio:** private repository <https://github.com/ashivam-dot/creature-receipts>; Modal runs it four
+- **Cloud studio:** public repository (no secrets in it) <https://github.com/ashivam-dot/creature-receipts>; Modal runs it four
   times a day, GitHub's `studio` workflow is the backup, and `watchdog` checks every 3 hours.
 
 ## Optional extras that add reach

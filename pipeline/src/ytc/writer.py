@@ -38,6 +38,9 @@ SAME_SCRIPT = 0.25
 # A hook whose first this-many words match a recent hook's opens on a template.
 SAME_OPENING = 4
 RECENT = 40
+# Rewrites of a draft that breaks the script rules before the Short is given up; each starts from the draft with
+# the fewest problems so far, since a weaker backup model can make a fix worse.
+FIX_ROUNDS = 3
 SFX = ["none", "whoosh", "pop", "riser"]
 CARD_KINDS = ["none", "dateline", "fact", "quote"]
 # The longest a title card's lines may be, in characters, so they stay large on a phone.
@@ -327,11 +330,15 @@ def problems(script: dict, research: dict) -> list[str]:
     if not 6 <= len(beats) <= 9:
         found.append(f"Use 6 to 9 beats (you have {len(beats)}).")
     if not 105 <= total <= 135:
-        found.append(f"Use 105 to 135 spoken words in total (you have {total}).")
+        per_beat = ", ".join(f"beat {n}: {word_count(b['text'])}" for n, b in enumerate(beats, start=1))
+        change = f"add at least {105 - total}" if total < 105 else f"cut at least {total - 135}"
+        found.append(f"Use 105 to 135 spoken words in total (you have {total}): {change} words, aiming for about "
+                     f"120, by lengthening or trimming the middle beats rather than the hook. Words now: {per_beat}.")
     if beats:
         hook = spoken(beats[0]["text"])
         if word_count(hook) > 12:
-            found.append(f"The hook (beat 1) must be 12 words or fewer (it has {word_count(hook)}).")
+            found.append(f"The hook (beat 1) must be 12 words or fewer (it has {word_count(hook)}: \"{hook}\"); "
+                         f"cut at least {word_count(hook) - 12} words and keep its meaning.")
         if re.match(r"\s*(did you know|hey|hi|welcome)", hook, re.I) or "creature receipts" in hook.lower():
             found.append("The hook must open inside the story: no 'Did you know', greeting, or channel name.")
         if re.search(DANGLING_END, spoken(beats[-1]["text"]), re.I):
@@ -379,7 +386,7 @@ def _claims_listing(research: dict) -> str:
 
 def write_script(research: dict, episode_id: str, feedback: list[str] | None = None, draft: dict | None = None) -> dict:
     """A script that meets the rules, from the research alone. With a reviewer's feedback on a rendered draft,
-    a revision of that draft. Raises if two rewrites can't fix it."""
+    a revision of that draft. Raises if FIX_ROUNDS rewrites can't fix it."""
     structure = (draft or {}).get("structure") if (draft or {}).get("structure") in STRUCTURES else None
     structure = structure or choose_structure(recent_scripts(research.get("topic")))
     prompt = PROMPT.format(
@@ -405,18 +412,22 @@ def write_script(research: dict, episode_id: str, feedback: list[str] | None = N
             "Your draft:\n" + json.dumps(draft, indent=1)
         )
     script = llm.generate(prompt, schema=SCRIPT_SCHEMA, purpose=f"{episode_id} script" + (" revision" if feedback else ""))
-    for attempt in range(2):
+    best = None
+    for attempt in range(FIX_ROUNDS + 1):
         script = normalize(script, research) | {"structure": structure}
         issues = problems(script, research)
         if not issues:
             return script
+        if best is None or len(issues) <= len(best[1]):
+            best = (script, issues)
+        if attempt == FIX_ROUNDS:
+            break
         log.info("%s script needs fixes: %s", episode_id, issues)
+        script, issues = best
         script = llm.generate(
             prompt + "\n\nYour draft broke these rules:\n" + "\n".join(f"- {i}" for i in issues)
-            + "\n\nFix every one and return the whole episode again. Your draft:\n" + json.dumps(script, indent=1),
+            + "\n\nFix every one, change nothing else, and return the whole episode again. Your draft:\n"
+            + json.dumps(script, indent=1),
             schema=SCRIPT_SCHEMA, purpose=f"{episode_id} script fix {attempt + 1}",
         )
-    script = normalize(script, research) | {"structure": structure}
-    if issues := problems(script, research):
-        raise RuntimeError(f"{episode_id} script still breaks the rules: {issues}")
-    return script
+    raise RuntimeError(f"{episode_id} script still breaks the rules: {best[1]}")
