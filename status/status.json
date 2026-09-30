@@ -1,28 +1,34 @@
 {
-  "updated_at": "2026-09-30T13:51:12+05:30",
+  "updated_at": "2026-09-30T17:05:52+05:30",
   "day": -3,
-  "result": "ok",
+  "result": "failed",
   "run": {
-    "host": "github-actions",
-    "id": "36689093681",
-    "number": "2",
-    "trigger": "workflow_dispatch",
-    "started_at": "2026-09-30T13:51:02+05:30",
-    "started_at_utc": "2026-09-30T08:21:02+00:00",
-    "seconds": 10
+    "host": "modal",
+    "id": "ta-01M3S1HD5DTBRCAPRPK1P2R2PR",
+    "number": null,
+    "trigger": "schedule",
+    "started_at": "2026-09-30T17:05:11+05:30",
+    "started_at_utc": "2026-09-30T11:35:11+00:00",
+    "seconds": 41
   },
   "stages": [
+    {
+      "name": "deploy",
+      "ok": true,
+      "detail": "",
+      "seconds": 3.0
+    },
     {
       "name": "sync",
       "ok": true,
       "detail": "0 posts",
-      "seconds": 0.6
+      "seconds": 0.7
     },
     {
       "name": "playlists",
       "ok": true,
       "detail": "nothing new",
-      "seconds": 0.3
+      "seconds": 1.0
     },
     {
       "name": "on youtube",
@@ -33,14 +39,83 @@
     {
       "name": "collect",
       "ok": true,
-      "detail": "ep001 unfinished (RuntimeError: Gemini gemini-3.8-flash 403: Your project has been denied access. Please contact support.); ep002 unfinished (HTTPError: 429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?format=json&formatversion=2&action=query&prop=extracts%7Cinfo&explaintext=1&inprop=url&titles=Cher+Ami&redirects=1); ep003 unfinished (HTTPError: 429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?format=json&formatversion=2&action=query&titles=Axolotl&redirects=1)",
-      "seconds": 8.4
+      "detail": "nothing in the cloud",
+      "seconds": 0.3
+    },
+    {
+      "name": "analytics",
+      "ok": true,
+      "detail": "0 subscribers",
+      "seconds": 2.3
+    },
+    {
+      "name": "learnings",
+      "ok": false,
+      "detail": "",
+      "error": "RuntimeError: Gemini gemini-3.8-flash 403: Your project has been denied access. Please contact support.",
+      "seconds": 0.4
+    },
+    {
+      "name": "breakouts",
+      "ok": true,
+      "detail": "none",
+      "seconds": 0.0
+    },
+    {
+      "name": "timely topics",
+      "ok": false,
+      "detail": "",
+      "error": "RuntimeError: Gemini gemini-3.8-flash 403: Your project has been denied access. Please contact support.",
+      "seconds": 12.9
+    },
+    {
+      "name": "new topics",
+      "ok": false,
+      "detail": "",
+      "error": "RuntimeError: Gemini gemini-3.8-flash 403: Your project has been denied access. Please contact support.",
+      "seconds": 13.0
+    },
+    {
+      "name": "report",
+      "ok": true,
+      "detail": "day--03.md",
+      "seconds": 0.0
     },
     {
       "name": "buffer channel",
       "ok": true,
       "detail": "connected",
-      "seconds": 0.2
+      "seconds": 0.3
+    },
+    {
+      "name": "publish",
+      "ok": true,
+      "detail": "",
+      "seconds": 0.0
+    },
+    {
+      "name": "start ep001",
+      "ok": true,
+      "detail": "Winnipeg (bear) (1914): the real bear behind Winnie-the-Pooh was a black bear cub bought for $20 at an Ontario train stop, who sailed for England with Canadian troops on October 3",
+      "seconds": 1.8
+    },
+    {
+      "name": "start ep002",
+      "ok": true,
+      "detail": "Cher Ami (1918): the famous pigeon story says he was shot and lost a leg flying for the Lost Battalion on October 4, but the Signal Corps record puts his wounds weeks later",
+      "seconds": 1.5
+    },
+    {
+      "name": "start ep003",
+      "ok": true,
+      "detail": "Axolotl: it can regrow limbs and even parts of its heart and brain, yet only about 50 to 1,000 adults are left in the wild",
+      "seconds": 1.0
+    },
+    {
+      "name": "start ep004",
+      "ok": true,
+      "detail": "Giant squid (2004): nobody photographed a live one in its habitat until September 30, 2004, and its eyes reach at least 27 cm across",
+      "seconds": 1.5
     },
     {
       "name": "publish",
@@ -49,7 +124,11 @@
       "seconds": 0.0
     }
   ],
-  "errors": [],
+  "errors": [
+    "learnings: RuntimeError: Gemini gemini-3.8-flash 403: Your project has been denied access. Please contact support.",
+    "timely topics: RuntimeError: Gemini gemini-3.8-flash 403: Your project has been denied access. Please contact support.",
+    "new topics: RuntimeError: Gemini gemini-3.8-flash 403: Your project has been denied access. Please contact support."
+  ],
   "owner_action": [],
   "notes": [],
   "inventory": {
@@ -57,43 +136,61 @@
     "in_buffer": 0,
     "waiting": 0,
     "target": 42,
-    "making": [
+    "making": [],
+    "remote": [
       "ep001",
       "ep002",
-      "ep003"
-    ],
-    "remote": []
+      "ep003",
+      "ep004"
+    ]
   },
   "queue": [],
   "waiting": [],
-  "made": [
+  "made": [],
+  "spawned": [
     {
       "id": "ep001",
-      "outcome": "unfinished",
       "topic": "Winnipeg (bear) (1914): the real bear behind Winnie-the-Pooh was a black bear cub bought for $20 at an Ontario train stop, who sailed for England with Canadian troops on October 3",
-      "reason": "RuntimeError: Gemini gemini-3.8-flash 403: Your project has been denied access. Please contact support.",
-      "quota": false,
-      "overloaded": false
+      "call_id": "fc-01M3S1JW790C33772VA4Y0NQ0X"
     },
     {
       "id": "ep002",
-      "outcome": "unfinished",
       "topic": "Cher Ami (1918): the famous pigeon story says he was shot and lost a leg flying for the Lost Battalion on October 4, but the Signal Corps record puts his wounds weeks later",
-      "reason": "HTTPError: 429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?format=json&formatversion=2&action=query&prop=extracts%7Cinfo&explaintext=1&inprop=url&titles=Cher+Ami&redirects=1",
-      "quota": false,
-      "overloaded": false
+      "call_id": "fc-01M3S1JXM7FBZPS0MA1SXPM7B1"
     },
     {
       "id": "ep003",
-      "outcome": "unfinished",
       "topic": "Axolotl: it can regrow limbs and even parts of its heart and brain, yet only about 50 to 1,000 adults are left in the wild",
-      "reason": "HTTPError: 429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?format=json&formatversion=2&action=query&titles=Axolotl&redirects=1",
-      "quota": false,
-      "overloaded": false
+      "call_id": "fc-01M3S1JYJR38VD6R9SNK0JDEGS"
+    },
+    {
+      "id": "ep004",
+      "topic": "Giant squid (2004): nobody photographed a live one in its habitat until September 30, 2004, and its eyes reach at least 27 cm across",
+      "call_id": "fc-01M3S1K008YATWM1KQSZ00Q1SN"
     }
   ],
-  "spawned": [],
-  "in_cloud": [],
+  "in_cloud": [
+    {
+      "id": "ep001",
+      "topic": "Winnipeg (bear) (1914): the real bear behind Winnie-the-Pooh was a black bear cub bought for $20 at an Ontario train stop, who sailed for England with Canadian troops on October 3",
+      "spawned_at": "2026-09-30T17:05:48+05:30"
+    },
+    {
+      "id": "ep002",
+      "topic": "Cher Ami (1918): the famous pigeon story says he was shot and lost a leg flying for the Lost Battalion on October 4, but the Signal Corps record puts his wounds weeks later",
+      "spawned_at": "2026-09-30T17:05:50+05:30"
+    },
+    {
+      "id": "ep003",
+      "topic": "Axolotl: it can regrow limbs and even parts of its heart and brain, yet only about 50 to 1,000 adults are left in the wild",
+      "spawned_at": "2026-09-30T17:05:51+05:30"
+    },
+    {
+      "id": "ep004",
+      "topic": "Giant squid (2004): nobody photographed a live one in its habitat until September 30, 2004, and its eyes reach at least 27 cm across",
+      "spawned_at": "2026-09-30T17:05:52+05:30"
+    }
+  ],
   "published": [],
   "live": 0,
   "failed_posts": [],
@@ -107,16 +204,21 @@
     "modal": 0,
     "runner": 0
   },
-  "daily_done": null,
-  "minutes_this_month": 4.161037525866666,
+  "daily_done": "2026-09-30",
+  "minutes_this_month": 4.0,
   "minutes_budget": 2000,
   "modal_cost": {
-    "metered": 0.87,
+    "metered": 0.76,
     "billed": 0.0
   },
   "modal_credit": 30.0,
-  "capacity": null,
+  "capacity": {
+    "cloud": 226,
+    "runner": 0,
+    "runner_minutes": 0,
+    "modal_credit_left": 27.24
+  },
   "made_here": 0,
-  "open_topics": 111,
+  "open_topics": 110,
   "parked_topics": 0
 }

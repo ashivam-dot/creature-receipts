@@ -56,7 +56,7 @@ text. Space topics belong to the sister channel Universe Receipts and never go h
 
 ### Deep Sea Files
 
-- Giant squid (2004): nobody photographed a live one in its habitat until September 30, 2004, and its eyes reach at least 27 cm across
+- Giant squid (2004): nobody photographed a live one in its habitat until September 30, 2004, and its eyes reach at least 27 cm across — making (ep004)
 - Colossal squid (2025): it has the largest eyes of any animal known to have existed, and was first filmed alive in its habitat on March 9, 2025
 - Anglerfish: the tiny male latches onto a far larger female and can fuse into her body
 - Goblin shark: its jaws launch forward out of its head, from a lineage about 125 million years old
