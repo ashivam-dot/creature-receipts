@@ -124,6 +124,7 @@ def spec_from(script: dict, visuals: list[dict], research: dict, episode_id: str
         "tags": script["tags"],
         "voice": VOICE,
         "beats": beats,
+        "depth_motion": True,
     }
     if script.get("hook_text"):
         spec["hook_text"] = script["hook_text"]

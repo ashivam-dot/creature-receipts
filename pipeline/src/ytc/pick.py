@@ -44,7 +44,7 @@ MOTIONS_TALL = ("pan_up", "pan_down")
 MOTIONS_SQUARE = ("zoom_in", "zoom_out")
 # What a visual keeps of its candidate (the rest is bytes or only used while picking).
 KEPT = ("key", "origin", "file", "title", "width", "height", "license", "license_url", "artist", "date", "year", "page",
-        "route", "original", "source_name", "match", "historical")
+        "route", "original", "source_name", "match", "historical", "kind", "duration")
 
 PICK_SCHEMA = {
     "type": "object",
@@ -76,7 +76,8 @@ framed print over a dimmed copy of itself, and a long beat may cut to a close-up
 Candidates are labelled like [B3-2] (found for beat 3) or [P4] (found for the story in general), each with its
 file title, date, and how it was found ("subject" means it is the named subject's own picture on Wikidata).
 Any candidate may be used for any beat, but each only once. Beat 1 is the hook: its picture has to stop someone
-scrolling, so give it the most striking picture of the story's own subject.
+scrolling, so give it the most striking picture of the story's own subject, and one that can fill a phone
+screen: footage, a tall picture, or a wide one at least 1000 px tall with the subject large in it.
 
 For every beat:
 - ranked: up to 3 labels, best first. Prefer, in this order: a real photo of the exact species, behavior,
@@ -89,6 +90,11 @@ For every beat:
   scene, dead or injured animals, blood, predation close-ups, animal cruelty, human corpses, wounds, gore,
   nudity, a large watermark, a diagram whose labels are small or not in English, or a page of text unless the
   line is about that document. Leave ranked empty when nothing qualifies.
+  Candidates marked VIDEO are real moving footage (you see its first frame). Moving footage holds viewers far
+  better than a still, so for a line about the living animal (how it looks, moves, hunts, or lives) rank footage
+  of that exact species first, and give the hook footage when there is some. Only when the frame clearly shows the
+  line's species: stock titles are loose, so judge by the frame, and a similar-looking species is wrong. Footage
+  never stands in for a historical scene, a named person, or a document.
   An animal the line only compares the subject to ("a duck's bill on a beaver's body", "as big as a bus") is
   not what the line is about: show the story's own subject, never the animal or thing it is compared to.
 - fit: how well your first choice fits its line: "exact" (it shows what the line names), "close" (the same
@@ -248,7 +254,9 @@ def _ask(beats: list[dict], numbers: list[int], per_beat: dict[int, list[dict]],
     def show(label: str, candidate: dict) -> None:
         labels[label] = candidate
         date = candidate.get("date") or (str(candidate["year"]) if candidate.get("year") else "undated")
-        parts.append(f"[{label}] {candidate['title']} | {date} | {candidate.get('route', 'search')}")
+        moving = f" | VIDEO {round(candidate.get('duration') or 0)} s, first frame shown" if candidate.get("kind") == "video" else ""
+        size = f" | {candidate['width']}x{candidate['height']}" if candidate.get("width") and candidate.get("height") else ""
+        parts.append(f"[{label}] {candidate['title']} | {date} | {candidate.get('route', 'search')}{size}{moving}")
         parts.append(candidate["image"])
 
     for n in numbers:
@@ -341,8 +349,10 @@ def _topic_articles(research: dict) -> list[str]:
 def picture_visual(candidate: dict, number: int, previous: str | None, pick: dict | None = None, card: dict | None = None) -> dict:
     """The spec's visual for a candidate: fetched by URL, with its credit; the model's framing if it gave one."""
     pick = pick or {}
+    # Footage moves by itself; a camera move over it only costs render time.
+    motion = "none" if candidate.get("kind") == "video" else _motion(candidate, previous, number)
     visual = {"source": "url", "url": sources.full_url(candidate), "credit": _credit(candidate),
-              "fallbacks": ["card", "color"] if card else ["color"], "motion": _motion(candidate, previous, number),
+              "fallbacks": ["card", "color"] if card else ["color"], "motion": motion,
               "focus_x": round(min(max(float(pick.get("focus_x", 0.5)), 0), 1), 2),
               "focus_y": round(min(max(float(pick.get("focus_y", 0.5)), 0), 1), 2)}
     if box := _box(pick.get("box")):

@@ -53,7 +53,7 @@ outbox = modal.Volume.from_name("creature-receipts-outbox", create_if_missing=Tr
 # What a studio worker needs besides the image. Read from the deploying machine's environment (the Actions
 # secrets, or pipeline/.env on the Mac), so rotating a key in GitHub reaches the workers on the next deploy.
 STUDIO_ENV = ("YTC_CURSOR_API_KEY", "YTC_CURSOR_MODEL", "YTC_LLM_FIRST", "YTC_GEMINI_API_KEY", "YTC_MISTRAL_API_KEY",
-              "YTC_OPENROUTER_API_KEY", "CLOUDINARY_URL", "YTC_CONTACT")
+              "YTC_OPENROUTER_API_KEY", "CLOUDINARY_URL", "YTC_CONTACT", "PEXELS_API_KEY", "PIXABAY_API_KEY")
 studio_secret = modal.Secret.from_dict({k: v for k in STUDIO_ENV if (v := os.environ.get(k))})
 # Image sources throttle downloads that carry no contact details (visuals._user_agent).
 render_secret = modal.Secret.from_dict({k: v for k in ("YTC_CONTACT",) if (v := os.environ.get(k))})

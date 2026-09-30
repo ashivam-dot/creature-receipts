@@ -6,12 +6,14 @@ in the 1870s"). Keyword searches, the topic article's own pictures, and other op
 Wellcome Collection, the Met, the Art Institute of Chicago) fill in around them.
 
 Every candidate carries what the credit line and the license check need, and only openly licensed pictures
-come back: public domain, CC0, or CC BY (with credit).
+come back: public domain, CC0, or CC BY (with credit). Moving footage of each beat's subject comes from Pexels and
+Pixabay, when their keys are set.
 """
 
 from __future__ import annotations
 
 import logging
+import os
 import re
 import threading
 import time
@@ -440,6 +442,95 @@ def inaturalist(name: str, limit: int = 16) -> list[dict]:
     return out[:limit]
 
 
+PEXELS_VIDEOS = "https://api.pexels.com/videos/search"
+PIXABAY_VIDEOS = "https://pixabay.com/api/videos/"
+# A clip shorter than this can't cover a beat without looping, and a loop reads as a glitch.
+CLIP_MIN_SECONDS = 6
+CLIP_MAX_SECONDS = 90
+# The frame is 1080 wide: a portrait clip under 720 wide, or a landscape one under 1080 tall (cropped to 608 wide),
+# looks soft on a phone.
+CLIP_MIN_PORTRAIT_WIDTH = 720
+CLIP_MIN_LANDSCAPE_HEIGHT = 1080
+STOCK_PER_SEARCH = 12
+
+
+def _clip_ok(width: int, height: int) -> bool:
+    return width >= CLIP_MIN_PORTRAIT_WIDTH if height > width else height >= CLIP_MIN_LANDSCAPE_HEIGHT
+
+
+def _smallest_sharp(files: list[tuple[int, int, str]]) -> tuple[int, int, str] | None:
+    """The smallest rendition that is still sharp enough: the download is the renderer's biggest wait."""
+    ok = [f for f in files if f[0] and f[1] and f[2] and _clip_ok(f[0], f[1])]
+    return min(ok, key=lambda f: f[0] * f[1]) if ok else None
+
+
+def _slug_title(url: str) -> str:
+    slug = urllib.parse.urlparse(url).path.rstrip("/").rsplit("/", 1)[-1]
+    return re.sub(r"-?\d+$", "", slug).replace("-", " ").strip().capitalize() or "Stock video"
+
+
+def pexels_videos(query: str, limit: int = STOCK_PER_SEARCH) -> list[dict]:
+    """Footage from Pexels (free for commercial use, no attribution required; we credit anyway)."""
+    key = os.environ.get("PEXELS_API_KEY")
+    if not key:
+        return []
+    try:
+        found = _get(PEXELS_VIDEOS, headers={"Authorization": key},
+                     params={"query": query, "per_page": limit, "size": "medium"}).json()
+    except Exception as err:
+        log.info("Pexels search failed for %r: %s", query, err)
+        return []
+    out = []
+    for video in found.get("videos", []):
+        seconds = video.get("duration") or 0
+        best = _smallest_sharp([(f.get("width") or 0, f.get("height") or 0, f.get("link") or "")
+                                for f in video.get("video_files", []) if f.get("file_type") == "video/mp4"])
+        if not best or not CLIP_MIN_SECONDS <= seconds <= CLIP_MAX_SECONDS or not video.get("image"):
+            continue
+        out.append({
+            "key": f"pexels:{video['id']}", "origin": "pexels", "kind": "video", "title": _slug_title(video.get("url", "")),
+            "thumb": video["image"], "original": best[2], "width": best[0], "height": best[1], "duration": seconds,
+            "license": "Pexels License", "license_url": "https://www.pexels.com/license/",
+            "artist": (video.get("user") or {}).get("name"), "date": "", "year": None, "page": video.get("url"),
+            "route": "stock", "source_name": "Pexels",
+        })
+    return out
+
+
+def pixabay_videos(query: str, limit: int = STOCK_PER_SEARCH) -> list[dict]:
+    """Footage from Pixabay (Pixabay Content License: commercial use, no attribution required)."""
+    key = os.environ.get("PIXABAY_API_KEY")
+    if not key:
+        return []
+    try:
+        found = _get(PIXABAY_VIDEOS, params={"key": key, "q": query[:100], "per_page": max(limit, 3),
+                                             "safesearch": "true", "video_type": "film"}).json()
+    except Exception as err:
+        log.info("Pixabay search failed for %r: %s", query, err)
+        return []
+    out = []
+    for hit in found.get("hits", []):
+        renditions = hit.get("videos") or {}
+        best = _smallest_sharp([(r.get("width") or 0, r.get("height") or 0, r.get("url") or "") for r in renditions.values()])
+        thumb = next((r.get("thumbnail") for r in renditions.values() if r.get("thumbnail")), None)
+        seconds = hit.get("duration") or 0
+        if not best or not thumb or not CLIP_MIN_SECONDS <= seconds <= CLIP_MAX_SECONDS:
+            continue
+        out.append({
+            "key": f"pixabay:{hit['id']}", "origin": "pixabay", "kind": "video",
+            "title": (hit.get("tags") or "stock video").capitalize(), "thumb": thumb, "original": best[2],
+            "width": best[0], "height": best[1], "duration": seconds,
+            "license": "Pixabay Content License", "license_url": "https://pixabay.com/service/license-summary/",
+            "artist": hit.get("user"), "date": "", "year": None, "page": hit.get("pageURL"),
+            "route": "stock", "source_name": "Pixabay",
+        })
+    return out
+
+
+def stock_videos(query: str) -> list[dict]:
+    return pexels_videos(query) + pixabay_videos(query)
+
+
 def _run(tasks: list[tuple]) -> list[list[dict]]:
     """Run (function, *args) tasks, WORKERS at a time, keeping their order."""
     with ThreadPoolExecutor(WORKERS) as pool:
@@ -472,6 +563,7 @@ def gather(beats: list[dict], numbers: list[int], topic_titles: list[str], gener
         owners.append(owner)
 
     pairs: list[tuple[str, int]] = []
+    footage_for: set[str] = set()
     for n in numbers:
         beat = beats[n - 1]
         year = beat_year(beat)
@@ -494,6 +586,10 @@ def gather(beats: list[dict], numbers: list[int], topic_titles: list[str], gener
             add(n, commons_files, files, "subject")
         for query in (beat.get("queries") or [])[:3]:
             add(n, commons_search, query, "search", 15)
+        for title in (beat.get("subjects") or [])[:1]:
+            if title not in footage_for:
+                footage_for.add(title)
+                add(n, stock_videos, re.sub(r"\s*\(.*?\)", "", title))
     periods = period_categories(pairs) if pairs else {}
     for n in numbers:
         beat = beats[n - 1]
@@ -504,6 +600,9 @@ def gather(beats: list[dict], numbers: list[int], topic_titles: list[str], gener
     for title in topic_titles[:2]:
         if article := articles.get(title):
             add(0, article_media, article["title"])
+    for title in topic_titles[:1]:
+        if title not in footage_for:
+            add(0, stock_videos, re.sub(r"\s*\(.*?\)", "", title))
     for query in general[:8]:
         add(0, commons_search, query, "search", 12)
 
@@ -512,7 +611,7 @@ def gather(beats: list[dict], numbers: list[int], topic_titles: list[str], gener
     per_beat: dict[int, list[dict]] = {n: [] for n in numbers}
     pool: list[dict] = []
     # Entity routes before keyword searches, so a file both found stays tagged with the stronger route.
-    order = {"subject": 0, "article": 1, "taxon": 2, "category": 2, "depicts": 3, "period": 4, "search": 5}
+    order = {"subject": 0, "article": 1, "taxon": 2, "category": 2, "depicts": 3, "period": 4, "stock": 5, "search": 5}
     ranked = sorted(zip(owners, results), key=lambda pair: min((order.get(c["route"], 9) for c in pair[1]), default=9))
     for owner, found in ranked:
         for candidate in found:

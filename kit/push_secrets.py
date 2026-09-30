@@ -21,7 +21,8 @@ ENV = ROOT / "pipeline" / ".env"
 # The secrets .github/workflows/*.yml read. YTC_NTFY_TOPIC is also set by pipeline/modal_secret.py.
 FROM_ENV = ("YTC_CONTACT", "BUFFER_API_KEY", "BUFFER_YOUTUBE_CHANNEL_ID", "CLOUDINARY_URL", "MODAL_TOKEN_ID",
             "MODAL_TOKEN_SECRET", "YTC_GEMINI_API_KEY", "YTC_MISTRAL_API_KEY", "YTC_OPENROUTER_API_KEY",
-            "YTC_CURSOR_API_KEY", "YTC_NTFY_TOPIC", "BUFFER_TIKTOK_CHANNEL_ID", "BUFFER_INSTAGRAM_CHANNEL_ID")
+            "YTC_CURSOR_API_KEY", "YTC_NTFY_TOPIC", "BUFFER_TIKTOK_CHANNEL_ID", "BUFFER_INSTAGRAM_CHANNEL_ID",
+            "PEXELS_API_KEY", "PIXABAY_API_KEY")
 FROM_FILES = {"YTC_GOOGLE_CLIENT": "secrets/client_secret.json", "YTC_GOOGLE_TOKEN": "secrets/token.json"}
 # Actions variables (not secret). YTC_MODAL_CREDIT tells the backup how much Modal credit the month has.
 VARIABLES = {"YTC_MODAL_CREDIT": "1", "YTC_LLM_FIRST": None, "YTC_CURSOR_MODEL": None}

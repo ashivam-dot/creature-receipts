@@ -397,9 +397,13 @@ def _url(beat: Beat, out: Path) -> Asset:
     visual = beat.visual
     if not visual.url:
         raise LookupError("visual.url is required for source 'url'")
-    path = _download_image(visual.url, out.with_suffix(".jpg"), URL_MIN_SIDE)
     credit = {k: v for k, v in visual.credit.items() if v}
-    return Asset(path, "image", credit, (credit.get("source") or "url", visual.credit.get("url") or visual.url))
+    key = (credit.get("source") or "url", visual.credit.get("url") or visual.url)
+    suffix = Path(urllib.parse.urlparse(visual.url).path).suffix.lower()
+    if suffix in _VIDEO_SUFFIXES:
+        return Asset(_download(visual.url, out.with_suffix(suffix)), "video", credit, key)
+    path = _download_image(visual.url, out.with_suffix(".jpg"), URL_MIN_SIDE)
+    return Asset(path, "image", credit, key)
 
 
 def _fresh(beat: Beat, out: Path, base_dir: Path, used: set, rng: random.Random, seconds: float) -> Asset:
