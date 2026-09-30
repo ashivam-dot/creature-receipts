@@ -357,7 +357,8 @@ def assess(data: dict) -> list[tuple[str, str]]:
                                  + "; ".join(f"{m['id']}: {m.get('reason')}" for m in rejected)[:300]))
     minutes = max(gh["minutes"], status.get("minutes_this_month", 0))
     # Making Shorts on the runner is paced to reach about 1,800 by the month's end.
-    if minutes > MINUTES_LIMIT * 0.95:
+    metered = status.get("minutes_budget", MINUTES_LIMIT) is not None
+    if metered and minutes > MINUTES_LIMIT * 0.95:
         problems.append(("warn", f"GitHub Actions minutes this month: about {minutes:.0f} of {MINUTES_LIMIT}."))
     buf = data.get("buffer") or {}
     if buf.get("error"):

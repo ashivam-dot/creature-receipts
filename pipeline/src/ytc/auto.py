@@ -57,8 +57,9 @@ MODAL_PER_SHORT = 0.12
 MODAL_RESERVE = 2.0 if MODAL_CREDIT >= 10 else 0.0
 # Set in Modal's containers: this run is cloud.studio_run, which starts workers but makes no Short itself.
 ON_MODAL = bool(os.environ.get("YTC_ON_MODAL"))
-# GitHub's free plan gives private repositories 2,000 Actions minutes a month. The reserve keeps the runs that
-# only sync, collect and publish (about 2 minutes each) going to the end of the month.
+# GitHub's free plan gives private repositories 2,000 Actions minutes a month; public ones aren't metered
+# (minutes_budget). The reserve keeps the runs that only sync, collect and publish (about 2 minutes each) going
+# to the end of the month.
 MONTH_MINUTES = 2000
 MINUTES_RESERVE = 250
 # About what one Short made on the runner takes: research, image picks, and reviews waiting on the language model
@@ -616,9 +617,34 @@ def month_minutes() -> float:
     return total
 
 
+def repo_is_public() -> bool:
+    """Whether this runner's repository is public, where GitHub doesn't meter standard runners. Unknown counts
+    as private, so the monthly budget stays on."""
+    if not (repo := os.environ.get("GITHUB_REPOSITORY")):
+        return False
+    try:
+        event = json.loads(Path(os.environ.get("GITHUB_EVENT_PATH", "")).read_text(encoding="utf-8"))
+        if isinstance(private := (event.get("repository") or {}).get("private"), bool):
+            return not private
+    except (OSError, ValueError):
+        pass
+    try:
+        response = requests.get(f"https://api.github.com/repos/{repo}", timeout=15)
+        return response.ok and response.json().get("private") is False
+    except (requests.RequestException, ValueError):
+        return False
+
+
+def minutes_budget() -> int | None:
+    """The month's Actions minutes, or None when they're free."""
+    return None if os.environ.get("GITHUB_ACTIONS") and repo_is_public() else MONTH_MINUTES
+
+
 def runner_minutes_allowed() -> float:
     """Minutes this run may spend making Shorts on the runner: the month's use follows a straight line to the
     budget, so making Shorts here can't use up the minutes in the first week and stop the channel for the rest."""
+    if minutes_budget() is None:
+        return float(PRODUCE_MINUTES)
     now = _now().astimezone(timezone.utc)
     elapsed = (now.day - 1 + (now.hour + now.minute / 60) / 24) / calendar.monthrange(now.year, now.month)[1]
     line = (MONTH_MINUTES - MINUTES_RESERVE) * elapsed + RUNNER_MINUTES_PER_SHORT
@@ -1510,7 +1536,7 @@ def write_status(run: Run, result: str) -> dict:
         "renders": run.renders,
         "daily_done": state.get("daily_done"),
         "minutes_this_month": month_minutes() + (run.minutes() + 2 if os.environ.get("GITHUB_ACTIONS") else 0),
-        "minutes_budget": MONTH_MINUTES,
+        "minutes_budget": minutes_budget(),
         "modal_cost": _modal_cost(),
         "modal_credit": MODAL_CREDIT,
         "capacity": run.capacity,
