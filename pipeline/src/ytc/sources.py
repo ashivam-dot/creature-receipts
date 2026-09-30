@@ -454,6 +454,21 @@ CLIP_MIN_LANDSCAPE_HEIGHT = 1080
 STOCK_PER_SEARCH = 12
 
 
+# Stock search matches any one word ("Great white shark" finds the Great Wall; "Giant squid" finds squid in a
+# wok), so a clip is kept only when every word of the name is in its tags or title, and never with these.
+_OFF_TOPIC = frozenset({"food", "cooking", "cook", "kitchen", "dish", "meal", "seafood", "restaurant", "market", "dead",
+                        "death", "fishing", "fisherman", "catch", "hunting", "blood", "toy", "cartoon", "animation",
+                        "3d", "render", "illustration", "costume", "carousel", "festival", "statue", "sculpture"})
+_NAME_STOP = frozenset({"the", "of", "and", "a", "an", "common", "species"})
+
+
+def _names_it(query: str, text: str) -> bool:
+    words = set(re.findall(r"[a-z0-9]+", text.lower()))
+    wanted = [w for w in re.findall(r"[a-z0-9]+", query.lower()) if w not in _NAME_STOP]
+    stems = {w.rstrip("s") for w in words}
+    return bool(wanted) and all(w in words or w.rstrip("s") in stems for w in wanted) and not words & _OFF_TOPIC
+
+
 def _clip_ok(width: int, height: int) -> bool:
     return width >= CLIP_MIN_PORTRAIT_WIDTH if height > width else height >= CLIP_MIN_LANDSCAPE_HEIGHT
 
@@ -487,6 +502,8 @@ def pexels_videos(query: str, limit: int = STOCK_PER_SEARCH) -> list[dict]:
                                 for f in video.get("video_files", []) if f.get("file_type") == "video/mp4"])
         if not best or not CLIP_MIN_SECONDS <= seconds <= CLIP_MAX_SECONDS or not video.get("image"):
             continue
+        if not _names_it(query, _slug_title(video.get("url", "")) + " " + " ".join(video.get("tags") or [])):
+            continue
         out.append({
             "key": f"pexels:{video['id']}", "origin": "pexels", "kind": "video", "title": _slug_title(video.get("url", "")),
             "thumb": video["image"], "original": best[2], "width": best[0], "height": best[1], "duration": seconds,
@@ -515,6 +532,8 @@ def pixabay_videos(query: str, limit: int = STOCK_PER_SEARCH) -> list[dict]:
         thumb = next((r.get("thumbnail") for r in renditions.values() if r.get("thumbnail")), None)
         seconds = hit.get("duration") or 0
         if not best or not thumb or not CLIP_MIN_SECONDS <= seconds <= CLIP_MAX_SECONDS:
+            continue
+        if not _names_it(query, hit.get("tags") or ""):
             continue
         out.append({
             "key": f"pixabay:{hit['id']}", "origin": "pixabay", "kind": "video",

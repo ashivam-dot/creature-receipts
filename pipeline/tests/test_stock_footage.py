@@ -33,6 +33,16 @@ def test_no_key_no_search(monkeypatch):
     assert sources.stock_videos("Octopus") == []
 
 
+def test_stock_clips_must_name_the_animal_and_stay_on_topic():
+    assert sources._names_it("Axolotl", "Animal, axolotl, nature")
+    assert sources._names_it("Great white shark", "shark, great white, ocean")
+    assert not sources._names_it("Great white shark", "Great wall, wall, ruins")
+    assert not sources._names_it("Giant squid", "Cooking, wok, squid, kitchen")
+    assert not sources._names_it("Giant squid", "giant, squid, seafood, market")
+    assert not sources._names_it("Sperm whale", "Whale shark, blue whale")
+    assert sources._names_it("Jellyfish", "jellyfish, tentacles")
+
+
 def test_landscape_needs_1080_tall():
     assert not sources._clip_ok(1280, 720)
     assert sources._clip_ok(1920, 1080)
