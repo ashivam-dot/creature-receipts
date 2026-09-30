@@ -1,34 +1,34 @@
 {
-  "updated_at": "2026-09-30T21:16:28+05:30",
+  "updated_at": "2026-09-30T21:21:15+05:30",
   "day": -1,
   "result": "ok",
   "run": {
     "host": "modal",
-    "id": "ta-01M3SFWX8VC4BPARB5MKHFTGCR",
+    "id": "ta-01M3SG687XD16CE3C4KWYMF85R",
     "number": null,
     "trigger": "manual",
-    "started_at": "2026-09-30T21:16:05+05:30",
-    "started_at_utc": "2026-09-30T15:46:05+00:00",
-    "seconds": 23
+    "started_at": "2026-09-30T21:21:08+05:30",
+    "started_at_utc": "2026-09-30T15:51:08+00:00",
+    "seconds": 7
   },
   "stages": [
     {
       "name": "deploy",
       "ok": true,
       "detail": "",
-      "seconds": 2.0
+      "seconds": 1.2
     },
     {
       "name": "sync",
       "ok": true,
       "detail": "0 posts",
-      "seconds": 0.7
+      "seconds": 0.3
     },
     {
       "name": "playlists",
       "ok": true,
       "detail": "nothing new",
-      "seconds": 1.0
+      "seconds": 0.6
     },
     {
       "name": "on youtube",
@@ -39,8 +39,8 @@
     {
       "name": "collect",
       "ok": true,
-      "detail": "ep005 rejected (low scores: visuals; 2 frame problems); ep007 still working (1.2 h); ep008 still working (1.2 h); ep009 still working (1.2 h)",
-      "seconds": 8.4
+      "detail": "ep006 still working (0.1 h); ep007 still working (1.3 h); ep008 still working (1.3 h); ep009 still working (1.3 h); ep010 still working (0.1 h); ep011 still working (0.1 h); ep012 still working (0.1 h)",
+      "seconds": 0.8
     },
     {
       "name": "buffer channel",
@@ -55,28 +55,28 @@
       "seconds": 0.0
     },
     {
-      "name": "start ep006",
+      "name": "start ep013",
       "ok": true,
-      "detail": "Sperm whale: the loudest animal on Earth, at 236 decibels, with the largest brain of any animal",
-      "seconds": 0.7
+      "detail": "Ming (clam) (2006): a clam dredged off Iceland turned out to be 507 years old",
+      "seconds": 0.4
     },
     {
-      "name": "start ep010",
+      "name": "start ep014",
       "ok": true,
-      "detail": "Narwhal: the \"horn\" is a spiral left canine tooth up to 3 meters long, packed with millions of nerve endings",
-      "seconds": 0.6
+      "detail": "Hippopotamus: hippo \"blood sweat\" is neither blood nor sweat but a natural red sunscreen",
+      "seconds": 0.2
     },
     {
-      "name": "start ep011",
+      "name": "start ep015",
       "ok": true,
-      "detail": "Coelacanth (1938): a fish thought extinct for 66 million years turned up in a South African fisherman's catch on December 22, 1938",
-      "seconds": 0.9
+      "detail": "Tardigrade (1773): named \"little water bear\" in 1773, a dried-out one can survive from −272 °C to 149 °C, at least briefly",
+      "seconds": 0.2
     },
     {
-      "name": "start ep012",
+      "name": "start ep016",
       "ok": true,
-      "detail": "Colossal squid (2025): it has the largest eyes of any animal known to have existed, and was first filmed alive in its habitat on March 9, 2025",
-      "seconds": 0.6
+      "detail": "Platypus (1799): the first scientists to examine one thought it was a fake sewn together from several animals, and it glows under ultraviolet light",
+      "seconds": 0.2
     },
     {
       "name": "publish",
@@ -101,39 +101,36 @@
       "ep009",
       "ep010",
       "ep011",
-      "ep012"
+      "ep012",
+      "ep013",
+      "ep014",
+      "ep015",
+      "ep016"
     ]
   },
   "queue": [],
   "waiting": [],
-  "made": [
-    {
-      "id": "ep005",
-      "outcome": "rejected",
-      "topic": "Platypus (1799): the first scientists to examine one thought it was a fake sewn together from several animals, and it glows under ultraviolet light",
-      "reason": "low scores: visuals; 2 frame problems"
-    }
-  ],
+  "made": [],
   "spawned": [
     {
-      "id": "ep006",
-      "topic": "Sperm whale: the loudest animal on Earth, at 236 decibels, with the largest brain of any animal",
-      "call_id": "fc-01M3SFXSFT7CFHGTV7WH14WJ9K"
+      "id": "ep013",
+      "topic": "Ming (clam) (2006): a clam dredged off Iceland turned out to be 507 years old",
+      "call_id": "fc-01M3SG6KHVB0JM6PH4NKND0REA"
     },
     {
-      "id": "ep010",
-      "topic": "Narwhal: the \"horn\" is a spiral left canine tooth up to 3 meters long, packed with millions of nerve endings",
-      "call_id": "fc-01M3SFXT29KDZBSGQ1KYCQZXJS"
+      "id": "ep014",
+      "topic": "Hippopotamus: hippo \"blood sweat\" is neither blood nor sweat but a natural red sunscreen",
+      "call_id": "fc-01M3SG6KQ74V94GNXCQN7WPWJS"
     },
     {
-      "id": "ep011",
-      "topic": "Coelacanth (1938): a fish thought extinct for 66 million years turned up in a South African fisherman's catch on December 22, 1938",
-      "call_id": "fc-01M3SFXTXB0ZM39Y90FSDCCE27"
+      "id": "ep015",
+      "topic": "Tardigrade (1773): named \"little water bear\" in 1773, a dried-out one can survive from −272 °C to 149 °C, at least briefly",
+      "call_id": "fc-01M3SG6KX5PYWPNTVXA4AYHW61"
     },
     {
-      "id": "ep012",
-      "topic": "Colossal squid (2025): it has the largest eyes of any animal known to have existed, and was first filmed alive in its habitat on March 9, 2025",
-      "call_id": "fc-01M3SFXVH5Z3HMKQEX4VPG5FPA"
+      "id": "ep016",
+      "topic": "Platypus (1799): the first scientists to examine one thought it was a fake sewn together from several animals, and it glows under ultraviolet light",
+      "call_id": "fc-01M3SG6M2JNZPHA9MS0P80HH6J"
     }
   ],
   "in_cloud": [
@@ -171,6 +168,26 @@
       "id": "ep012",
       "topic": "Colossal squid (2025): it has the largest eyes of any animal known to have existed, and was first filmed alive in its habitat on March 9, 2025",
       "spawned_at": "2026-09-30T21:16:28+05:30"
+    },
+    {
+      "id": "ep013",
+      "topic": "Ming (clam) (2006): a clam dredged off Iceland turned out to be 507 years old",
+      "spawned_at": "2026-09-30T21:21:15+05:30"
+    },
+    {
+      "id": "ep014",
+      "topic": "Hippopotamus: hippo \"blood sweat\" is neither blood nor sweat but a natural red sunscreen",
+      "spawned_at": "2026-09-30T21:21:15+05:30"
+    },
+    {
+      "id": "ep015",
+      "topic": "Tardigrade (1773): named \"little water bear\" in 1773, a dried-out one can survive from −272 °C to 149 °C, at least briefly",
+      "spawned_at": "2026-09-30T21:21:15+05:30"
+    },
+    {
+      "id": "ep016",
+      "topic": "Platypus (1799): the first scientists to examine one thought it was a fake sewn together from several animals, and it glows under ultraviolet light",
+      "spawned_at": "2026-09-30T21:21:15+05:30"
     }
   ],
   "published": [],
@@ -178,33 +195,29 @@
   "failed_posts": [],
   "not_live": [],
   "llm": {
-    "calls": 8,
-    "by_model": {
-      "gemini-3-flash-preview": 3,
-      "gemini-3.5-flash-lite": 2,
-      "gemma-4-31b-it": 3
-    },
+    "calls": 0,
+    "by_model": {},
     "out_of_quota": []
   },
   "renders": {
-    "modal": 3,
+    "modal": 0,
     "runner": 0
   },
   "daily_done": "2026-09-30",
   "minutes_this_month": 12.0,
   "minutes_budget": 2000,
   "modal_cost": {
-    "metered": 1.71,
+    "metered": 1.81,
     "billed": 0.0
   },
   "modal_credit": 30.0,
   "capacity": {
-    "cloud": 216,
+    "cloud": 211,
     "runner": 0,
     "runner_minutes": 0,
-    "modal_credit_left": 25.93
+    "modal_credit_left": 25.35
   },
   "made_here": 0,
-  "open_topics": 105,
-  "parked_topics": 2
+  "open_topics": 103,
+  "parked_topics": 0
 }

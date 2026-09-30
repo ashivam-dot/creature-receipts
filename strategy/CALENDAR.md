@@ -38,7 +38,7 @@ text. Space topics belong to the sister channel Universe Receipts and never go h
 ### Built Different
 
 - Axolotl: it can regrow limbs and even parts of its heart and brain, yet only about 50 to 1,000 adults are left in the wild — making (ep009)
-- Tardigrade (1773): named "little water bear" in 1773, a dried-out one can survive from −272 °C to 149 °C, at least briefly
+- Tardigrade (1773): named "little water bear" in 1773, a dried-out one can survive from −272 °C to 149 °C, at least briefly — making (ep015)
 - Octopus: three hearts, blue copper-based blood, and two-thirds of its 500 million neurons in its arms
 - Wombat: it leaves cube-shaped droppings, and the shape keeps them from rolling off the spots it marks
 - Mantis shrimp: its club strikes at 23 meters a second, so fast that collapsing cavitation bubbles hit the prey a second time
@@ -93,7 +93,7 @@ text. Space topics belong to the sister channel Universe Receipts and never go h
 
 ### Evolution Got Weird
 
-- Platypus (1799): the first scientists to examine one thought it was a fake sewn together from several animals, and it glows under ultraviolet light
+- Platypus (1799): the first scientists to examine one thought it was a fake sewn together from several animals, and it glows under ultraviolet light — making (ep016)
 - Horseshoe crab: it isn't a crab but a closer relative of spiders, and its blue blood is used to test for bacterial toxins
 - Carcinisation (1916): evolution has turned non-crabs into crab shapes at least five separate times
 - Narwhal: the "horn" is a spiral left canine tooth up to 3 meters long, packed with millions of nerve endings — making (ep010)
@@ -131,7 +131,7 @@ text. Space topics belong to the sister channel Universe Receipts and never go h
 - Snowy albatross: the longest wingspan of any living bird, up to 3.7 meters, and it can glide for hours without flapping
 - Bar-tailed godwit (2022): a young tagged godwit flew at least 13,560 km nonstop from Alaska to Tasmania in 11 days
 - Rüppell's vulture (1973): the highest-flying bird, confirmed at 11,300 meters when one hit a jetliner's engine
-- Ming (clam) (2006): a clam dredged off Iceland turned out to be 507 years old
+- Ming (clam) (2006): a clam dredged off Iceland turned out to be 507 years old — making (ep013)
 - Emperor penguin (1994): one penguin dived to 564 meters on a dive lasting 21.8 minutes
 - Leatherback sea turtle: the largest living turtle dives as deep as 1,280 meters
 
@@ -149,6 +149,6 @@ text. Space topics belong to the sister channel Universe Receipts and never go h
 - Common ostrich: ostriches don't bury their heads in the sand, a myth that likely goes back to Pliny the Elder
 - Mayfly: the "one-day" insect can spend several years living underwater before it grows wings
 - Virginia opossum: the claim that one eats 5,000 ticks a season is a misconception, but it really is naturally resistant to rabies
-- Hippopotamus: hippo "blood sweat" is neither blood nor sweat but a natural red sunscreen
+- Hippopotamus: hippo "blood sweat" is neither blood nor sweat but a natural red sunscreen — making (ep014)
 - Elephants' graveyard: there's no place where old elephants go to die; it's a legend
 - Shark cartilage (1992): sharks do get cancer, and the myth that they don't was spread by a 1992 book
