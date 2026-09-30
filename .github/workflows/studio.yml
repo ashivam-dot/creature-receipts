@@ -51,6 +51,9 @@ jobs:
       MODAL_TOKEN_ID: ${{ secrets.MODAL_TOKEN_ID }}
       MODAL_TOKEN_SECRET: ${{ secrets.MODAL_TOKEN_SECRET }}
       YTC_CONTACT: ${{ secrets.YTC_CONTACT }}
+      # Stock footage for living-animal beats (sources.stock_videos); a missing key skips that source.
+      PEXELS_API_KEY: ${{ secrets.PEXELS_API_KEY }}
+      PIXABAY_API_KEY: ${{ secrets.PIXABAY_API_KEY }}
       # Modal's monthly credit in dollars: 1 on the card-free Starter plan, 30 once a card is on file.
       YTC_MODAL_CREDIT: ${{ vars.YTC_MODAL_CREDIT }}
       HF_HOME: ${{ github.workspace }}/.cache/huggingface
