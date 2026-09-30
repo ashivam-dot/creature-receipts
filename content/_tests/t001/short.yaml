@@ -1,0 +1,25 @@
+id: t001
+title: The Sun is losing 4 million tons every second
+description: |
+  Every second the Sun turns about four million tons of its own mass into energy, and it still has fuel for billions of years.
+hashtags: ["#space", "#sun", "#science"]
+tags: [sun, fusion, space facts, astronomy]
+voice:
+  voice: af_heart
+  speed: 1.05
+beats:
+  - text: Every second, the Sun destroys four million tons of itself.
+    emphasis: [four million]
+    sfx: whoosh
+    visual: {source: nasa, query: solar flare sun, fallbacks: [color], motion: zoom_in}
+  - text: That missing mass becomes the light that reaches your eyes eight minutes later.
+    emphasis: [light, eight minutes]
+    sfx: whoosh
+    visual: {source: nasa, query: sunrise from space station, fallbacks: [color], motion: pan_right}
+  - text: And it has enough fuel to keep burning for another five billion years.
+    emphasis: [five billion]
+    sfx: riser
+    visual: {source: nasa, query: sun ultraviolet SDO, fallbacks: [color], motion: zoom_out}
+  - text: Follow for one space fact every day.
+    sfx: pop
+    visual: {source: color, color: "#0B1D3A", motion: none}

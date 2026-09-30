@@ -1,0 +1,33 @@
+id: t002
+title: The city that tried to cure a dancing plague with more dancing
+description: |
+  In July 1518, people in Strasbourg began dancing uncontrollably for days. The city's answer made it worse.
+hashtags: ["#history", "#strangehistory", "#weirdhistory"]
+tags: [dancing plague, 1518, strasbourg, history facts]
+voice:
+  voice: af_heart
+  speed: 1.05
+beats:
+  - text: In the summer of 1518, a woman stepped into a street in Strasbourg and started dancing.
+    emphasis: ["1518", dancing]
+    sfx: whoosh
+    visual: {source: commons, query: dancing mania Hondius engraving, fallbacks: [aic, color], motion: zoom_in}
+  - text: She didn't stop. For days.
+    emphasis: [days]
+    sfx: pop
+    visual: {source: commons, query: Strasbourg 16th century view, fallbacks: [color], motion: pan_right}
+  - text: Within weeks, dozens of people had joined her.
+    emphasis: [dozens]
+    sfx: whoosh
+    visual: {source: met, query: peasants dancing, fallbacks: [aic, commons, color], motion: zoom_out}
+  - text: So the city's leaders tried a cure. More dancing.
+    emphasis: [more dancing]
+    sfx: riser
+    visual: {source: aic, query: musicians playing, fallbacks: [met, commons, color], motion: pan_left}
+  - text: They hired musicians and built a stage, so the dancers could dance it out. It only made things worse.
+    emphasis: [worse]
+    sfx: whoosh
+    visual: {source: commons, query: medieval musicians manuscript, fallbacks: [met, color], motion: zoom_in}
+  - text: Historians still argue about the cause. And it all started with one woman, in one street.
+    emphasis: [one woman]
+    visual: {source: commons, query: dancing mania Hondius engraving, fallbacks: [color], motion: zoom_out}

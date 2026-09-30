@@ -1,0 +1,67 @@
+name: selftest
+
+# Re-renders an existing Short on the runner and checks it, the way the studio makes Shorts once Modal's
+# monthly credit is used up. It fetches the images again, so it also tests the image sources from GitHub's
+# network. Nothing is committed or published. Run it after changing the renderer or its dependencies.
+on:
+  workflow_dispatch:
+    inputs:
+      episode:
+        description: "Episode to render again (epNNN)"
+        default: "ep001"
+
+permissions:
+  contents: read
+
+jobs:
+  render:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 60
+    env:
+      YTC_CONTACT: ${{ secrets.YTC_CONTACT }}
+      HF_HOME: ${{ github.workspace }}/.cache/huggingface
+      PYTHONUNBUFFERED: "1"
+      EPISODE: ${{ inputs.episode }}
+    steps:
+      - name: Check the input
+        run: |
+          if ! [[ "$EPISODE" =~ ^ep[0-9]{3}$ ]]; then echo "episode must look like ep016"; exit 1; fi
+
+      - uses: actions/checkout@v7
+
+      - uses: astral-sh/setup-uv@v10.2.0
+        with:
+          working-directory: pipeline
+          enable-cache: true
+          # Relative to working-directory.
+          cache-dependency-glob: uv.lock
+
+      - name: Restore the environment
+        uses: actions/cache@v6
+        with:
+          path: pipeline/.venv
+          key: venv-${{ runner.os }}-${{ hashFiles('pipeline/uv.lock') }}
+
+      - name: Restore voice and speech models
+        uses: actions/cache@v6
+        with:
+          path: .cache/huggingface
+          key: models-v1
+
+      - name: Install
+        working-directory: pipeline
+        run: uv sync --frozen
+
+      - name: Render on the runner
+        working-directory: pipeline
+        run: |
+          start=$(date +%s)
+          uv run --no-sync ytc make "../content/episodes/$EPISODE/short.yaml" --where local
+          echo "render took $(( $(date +%s) - start )) s on $(nproc) CPUs"
+
+      - name: Check
+        working-directory: pipeline
+        run: |
+          start=$(date +%s)
+          uv run --no-sync ytc check "../content/episodes/$EPISODE/$EPISODE.mp4"
+          echo "check took $(( $(date +%s) - start )) s"

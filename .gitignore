@@ -1,0 +1,14 @@
+.env
+.venv/
+.cache/
+__pycache__/
+.scratch/
+.wrangler/
+secrets/
+logs/
+monitor/out/
+content/**/work/*
+!content/**/work/manifest.json
+!content/**/work/speech.json
+*.mp4
+*.wav

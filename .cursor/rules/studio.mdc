@@ -1,0 +1,17 @@
+---
+description: Working on the Creature Receipts studio
+alwaysApply: true
+---
+# Working on this channel
+
+- Read `CHANNEL.md` (hard rules, decision log) and `PLAYBOOK.md` before changing anything. Record every
+  decision, with its reason, in `CHANNEL.md`'s decision log.
+- `pipeline/.env` and `secrets/` hold the keys. They're git-ignored. Never print, `cat`, `grep`, commit, or
+  paste their values. Set a key with `python3 kit/setkey.py NAME` after the owner copies it.
+- Never automate YouTube's website. Publishing goes only through Buffer, and the YouTube API is only for
+  analytics and playlists. Never buy, trade, or fake views, subscribers, or engagement.
+- The owner signs in himself. Never type or store passwords, SMS codes, or card details.
+- Open pages in the owner's own Chrome profile (named in `CHANNEL.md`) with
+  `open -na "Google Chrome" --args --profile-directory="<dir>" "<url>"`, never with bare `open`.
+- After changing code, strategy, or rules: commit and push. The next cloud run uses them, and a code change
+  redeploys the Modal app.
