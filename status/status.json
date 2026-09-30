@@ -1,22 +1,22 @@
 {
-  "updated_at": "2026-09-30T20:03:06+05:30",
+  "updated_at": "2026-09-30T20:58:43+05:30",
   "day": -3,
   "result": "ok",
   "run": {
     "host": "github-actions",
-    "id": "36729864190",
-    "number": "5",
+    "id": "36736906892",
+    "number": "6",
     "trigger": "workflow_dispatch",
-    "started_at": "2026-09-30T20:02:59+05:30",
-    "started_at_utc": "2026-09-30T14:32:59+00:00",
-    "seconds": 7
+    "started_at": "2026-09-30T20:58:31+05:30",
+    "started_at_utc": "2026-09-30T15:28:31+00:00",
+    "seconds": 12
   },
   "stages": [
     {
       "name": "sync",
       "ok": true,
       "detail": "0 posts",
-      "seconds": 0.4
+      "seconds": 0.3
     },
     {
       "name": "playlists",
@@ -33,32 +33,20 @@
     {
       "name": "collect",
       "ok": true,
-      "detail": "ep004 still working (0.0 h); ep005 still working (0.0 h); ep006 still working (0.0 h)",
-      "seconds": 1.0
+      "detail": "ep004 unfinished (RuntimeError: ep004 script still breaks the rules: ['Use 105 to 135 spoken words in total (you have 103).']); ep005 still working (1.0 h); ep006 unfinished (RuntimeError: ep006 script still breaks the rules: ['Use 105 to 135 spoken words in total (you have 103).', 'The hook (beat 1) must be 12 words or fewer (it has 13).']); ep007 still working (0.9 h); ep008 still working (0.9 h); ep009 still working (0.9 h)",
+      "seconds": 11.2
     },
     {
-      "name": "deploy",
+      "name": "buffer channel",
+      "ok": true,
+      "detail": "connected",
+      "seconds": 0.2
+    },
+    {
+      "name": "publish",
       "ok": true,
       "detail": "",
-      "seconds": 2.9
-    },
-    {
-      "name": "start ep007",
-      "ok": true,
-      "detail": "Winnipeg (bear) (1914): the real bear behind Winnie-the-Pooh was a black bear cub bought for $20 at an Ontario train stop, who sailed for England with Canadian troops on October 3",
-      "seconds": 0.4
-    },
-    {
-      "name": "start ep008",
-      "ok": true,
-      "detail": "Cher Ami (1918): the famous pigeon story says he was shot and lost a leg flying for the Lost Battalion on October 4, but the Signal Corps record puts his wounds weeks later",
-      "seconds": 0.3
-    },
-    {
-      "name": "start ep009",
-      "ok": true,
-      "detail": "Axolotl: it can regrow limbs and even parts of its heart and brain, yet only about 50 to 1,000 adults are left in the wild",
-      "seconds": 0.2
+      "seconds": 0.0
     }
   ],
   "errors": [],
@@ -69,11 +57,12 @@
     "in_buffer": 0,
     "waiting": 0,
     "target": 42,
-    "making": [],
-    "remote": [
+    "making": [
       "ep004",
+      "ep006"
+    ],
+    "remote": [
       "ep005",
-      "ep006",
       "ep007",
       "ep008",
       "ep009"
@@ -81,38 +70,29 @@
   },
   "queue": [],
   "waiting": [],
-  "made": [],
-  "spawned": [
-    {
-      "id": "ep007",
-      "topic": "Winnipeg (bear) (1914): the real bear behind Winnie-the-Pooh was a black bear cub bought for $20 at an Ontario train stop, who sailed for England with Canadian troops on October 3",
-      "call_id": "fc-01M3SBQG30WXZ35GE29PY44W5Q"
-    },
-    {
-      "id": "ep008",
-      "topic": "Cher Ami (1918): the famous pigeon story says he was shot and lost a leg flying for the Lost Battalion on October 4, but the Signal Corps record puts his wounds weeks later",
-      "call_id": "fc-01M3SBQGATBZ7MJSZBK8HJBDDY"
-    },
-    {
-      "id": "ep009",
-      "topic": "Axolotl: it can regrow limbs and even parts of its heart and brain, yet only about 50 to 1,000 adults are left in the wild",
-      "call_id": "fc-01M3SBQGJS525HV0BMPPPD38FT"
-    }
-  ],
-  "in_cloud": [
+  "made": [
     {
       "id": "ep004",
+      "outcome": "unfinished",
       "topic": "Giant squid (2004): nobody photographed a live one in its habitat until September 30, 2004, and its eyes reach at least 27 cm across",
-      "spawned_at": "2026-09-30T20:01:10+05:30"
-    },
-    {
-      "id": "ep005",
-      "topic": "Platypus (1799): the first scientists to examine one thought it was a fake sewn together from several animals, and it glows under ultraviolet light",
-      "spawned_at": "2026-09-30T20:01:10+05:30"
+      "reason": "RuntimeError: ep004 script still breaks the rules: ['Use 105 to 135 spoken words in total (you have 103).']",
+      "quota": false,
+      "overloaded": false
     },
     {
       "id": "ep006",
+      "outcome": "unfinished",
       "topic": "Sperm whale: the loudest animal on Earth, at 236 decibels, with the largest brain of any animal",
+      "reason": "RuntimeError: ep006 script still breaks the rules: ['Use 105 to 135 spoken words in total (you have 103).', 'The hook (beat 1) must be 12 words or fewer (it has 13).']",
+      "quota": false,
+      "overloaded": false
+    }
+  ],
+  "spawned": [],
+  "in_cloud": [
+    {
+      "id": "ep005",
+      "topic": "Platypus (1799): the first scientists to examine one thought it was a fake sewn together from several animals, and it glows under ultraviolet light",
       "spawned_at": "2026-09-30T20:01:10+05:30"
     },
     {
@@ -136,8 +116,11 @@
   "failed_posts": [],
   "not_live": [],
   "llm": {
-    "calls": 0,
-    "by_model": {},
+    "calls": 8,
+    "by_model": {
+      "gemini-3-flash-preview": 1,
+      "gemini-3.5-flash-lite": 7
+    },
     "out_of_quota": []
   },
   "renders": {
@@ -145,19 +128,14 @@
     "runner": 0
   },
   "daily_done": "2026-09-30",
-  "minutes_this_month": 10.116792796833334,
+  "minutes_this_month": 12.20668962735,
   "minutes_budget": 2000,
   "modal_cost": {
-    "metered": 1.22,
+    "metered": 1.63,
     "billed": 0.0
   },
   "modal_credit": 30.0,
-  "capacity": {
-    "cloud": 220,
-    "runner": 6,
-    "runner_minutes": 120,
-    "modal_credit_left": 26.42
-  },
+  "capacity": null,
   "made_here": 0,
   "open_topics": 108,
   "parked_topics": 0
