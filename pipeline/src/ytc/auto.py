@@ -186,7 +186,7 @@ def _owner_action_for(run: Run, err: Exception) -> None:
     if "invalid_grant" in text or "Not signed in" in text:
         run.owner_action.append("YouTube sign-in expired: on the Mac run `uv run --no-sync ytc auth` in pipeline/, "
                                 "then update the YTC_GOOGLE_TOKEN secret (see OWNER-CHECKLIST.md).")
-    elif "API key not valid" in text or "API_KEY_INVALID" in text:
+    elif "API key not valid" in text or "API_KEY_INVALID" in text or "Gemini refused the key" in text:
         run.owner_action.append("The Gemini API key was rejected: make a new key in AI Studio (signed in as aksha.shivam18@gmail.com) "
                                 "and update the YTC_GEMINI_API_KEY secret.")
     elif "Unauthorized" in text and "buffer" in text.lower():

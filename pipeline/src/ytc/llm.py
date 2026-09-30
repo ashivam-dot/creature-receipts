@@ -103,6 +103,9 @@ OVERLOAD_WAIT = 1500
 CURSOR_FALLBACK = True
 
 _spent: set[str] = set()
+# Set when Gemini refuses the key itself (401/403, or an invalid key): every Gemini model is out for the process,
+# and the ladder goes on to the other providers.
+_key_refused = ""
 _resting: dict[str, float] = {}
 _last_call: dict[str, float] = {}
 _pace_lock = threading.Lock()
@@ -261,7 +264,7 @@ def generate(
     give_up = time.monotonic() + OVERLOAD_WAIT
     while True:
         for model in models:
-            if model in _spent or _resting.get(model, 0) > time.monotonic():
+            if _out(model) or _resting.get(model, 0) > time.monotonic():
                 continue
             try:
                 answer = _ask_backup(model, body, schema, purpose) if ":" in model else _ask(model, body, schema, purpose)
@@ -275,8 +278,9 @@ def generate(
                 return answer
         if not cursor_first and CURSOR_FALLBACK and (answer := _cursor(prompt, schema, thinking, purpose)) is not _NO_ANSWER:
             return answer
-        if all(model in _spent for model in models):
-            raise OutOfQuota(f"no model in {models} has free quota left today")
+        if all(_out(model) for model in models):
+            refused = f"; Gemini refused the key: {_key_refused}" if _key_refused else ""
+            raise OutOfQuota(f"no model in {models} has free quota left today{refused}")
         if time.monotonic() > give_up:
             raise Overloaded(f"every model in {models} with quota left stayed overloaded for {OVERLOAD_WAIT // 60} minutes")
         log.warning("every model with quota left is overloaded; trying the ladder again in %ds", LADDER_PAUSE)
@@ -285,9 +289,13 @@ def generate(
             _resting.pop(model, None)
 
 
+def _out(model: str) -> bool:
+    return model in _spent or (bool(_key_refused) and ":" not in model)
+
+
 def gemini_spent() -> bool:
     """Every Flash model (the review needs one while plenty of Shorts are ready) has run out of today's quota."""
-    return all(model in _spent for model in FLASH)
+    return all(_out(model) for model in FLASH)
 
 
 def answered_by() -> str:
@@ -309,6 +317,7 @@ def _cursor(prompt, schema, thinking, purpose):
 
 
 def _ask(model: str, body: dict, schema: dict | None, purpose: str):
+    global _key_refused
     if model.startswith("gemma"):  # Gemma takes no thinking level but "high" (400: not supported)
         config = {k: v for k, v in body["generationConfig"].items() if k != "thinkingConfig"}
         body = {**body, "generationConfig": config}
@@ -377,6 +386,10 @@ def _ask(model: str, body: dict, schema: dict | None, purpose: str):
             log.info("%s rate-limited; waiting %.0fs", model, delay)
             time.sleep(min(delay, 70))
             continue
+        if response.status_code in (401, 403) or error.get("status") == "UNAUTHENTICATED" or "API_KEY_INVALID" in str(error):
+            _key_refused = f"{response.status_code} {error.get('message', '')[:160]}"
+            log.error("Gemini refused the key (%s); using the other providers", _key_refused)
+            return _NO_ANSWER
         if response.status_code == 404 or (response.status_code == 400 and model.startswith("gemma")):
             log.warning("%s is not available: %s", model, error.get("message", "")[:120])
             _spent.add(model)
