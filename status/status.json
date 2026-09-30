@@ -1,28 +1,28 @@
 {
-  "updated_at": "2026-09-30T22:26:19+05:30",
+  "updated_at": "2026-09-30T23:05:50+05:30",
   "day": -1,
   "result": "ok",
   "run": {
     "host": "modal",
-    "id": "ta-01M3SKWE0P9KEM0J68AKE40RQR",
+    "id": "ta-01M3SP4MCJMXJXBP16F448Y3HR",
     "number": null,
-    "trigger": "manual",
-    "started_at": "2026-09-30T22:25:42+05:30",
-    "started_at_utc": "2026-09-30T16:55:42+00:00",
-    "seconds": 37
+    "trigger": "schedule",
+    "started_at": "2026-09-30T23:05:10+05:30",
+    "started_at_utc": "2026-09-30T17:35:10+00:00",
+    "seconds": 40
   },
   "stages": [
     {
       "name": "deploy",
       "ok": true,
       "detail": "",
-      "seconds": 1.5
+      "seconds": 5.4
     },
     {
       "name": "sync",
       "ok": true,
-      "detail": "0 posts",
-      "seconds": 0.5
+      "detail": "2 posts",
+      "seconds": 0.7
     },
     {
       "name": "playlists",
@@ -39,86 +39,90 @@
     {
       "name": "collect",
       "ok": true,
-      "detail": "ep006 unfinished (Overloaded: every model in ('ovh:Qwen3.5-397B-A17B', 'ovh:Qwen3.8-27B', 'ovh:Qwen3.6-27B') with quota left stayed overloaded for 25 minutes); ep007 rejected (low scores: visuals; 3 frame problems); ep008 ready; ep009 ready; ep010 rejected (research: only 0 claims have two different sites); ep011 still working (1.2 h); ep012 still working (1.2 h); ep013 still working (1.1 h); ep014 rejected (research: only 0 claims have two different sites); ep015 still working (1.1 h); ep016 still working (1.1 h)",
-      "seconds": 18.6
+      "detail": "ep006 still working (0.7 h); ep011 ready; ep012 still working (1.8 h); ep013 still working (1.7 h); ep015 rejected; ep016 rejected (low scores: visuals); ep017 still working (0.7 h); ep018 ready; ep019 rejected (research: The sources do not mention that the giant squid's eyes reach at least 27 cm across, making it impossible to reach the required number of supported claims.)",
+      "seconds": 19.0
     },
     {
       "name": "buffer channel",
       "ok": true,
       "detail": "connected",
-      "seconds": 0.3
+      "seconds": 0.5
+    },
+    {
+      "name": "preflight ep009",
+      "ok": true,
+      "detail": "video downloads whole (17 MB in 1 s)",
+      "seconds": 0.9
     },
     {
       "name": "publish",
       "ok": true,
       "detail": "",
-      "seconds": 2.9
+      "seconds": 2.7
     },
     {
-      "name": "schedule ep008",
+      "name": "schedule ep018",
       "ok": true,
-      "detail": "2026-10-04T19:00:00-04:00",
-      "seconds": 1.1
+      "detail": "2026-10-01T19:00:00-04:00",
+      "seconds": 1.4
     },
     {
-      "name": "schedule ep009",
+      "name": "schedule ep011",
       "ok": true,
-      "detail": "2026-09-30T19:00:00-04:00",
+      "detail": "2026-10-02T19:00:00-04:00",
+      "seconds": 0.9
+    },
+    {
+      "name": "start ep020",
+      "ok": true,
+      "detail": "Winnipeg (bear) (1914): the real bear behind Winnie-the-Pooh was a black bear cub bought for $20 at an Ontario train stop, who sailed for England with Canadian troops on October 3",
+      "seconds": 1.4
+    },
+    {
+      "name": "start ep021",
+      "ok": true,
+      "detail": "Narwhal: the \"horn\" is a spiral left canine tooth up to 3 meters long, packed with millions of nerve endings- Kiwi (bird): its egg can weigh 20% of the mother, and its closest relative is the extinct elephant bird of Madagascar, not the moa",
       "seconds": 1.3
     },
     {
-      "name": "start ep006",
+      "name": "start ep022",
       "ok": true,
-      "detail": "Sperm whale: the loudest animal on Earth, at 236 decibels, with the largest brain of any animal",
+      "detail": "Octopus: three hearts, blue copper-based blood, and two-thirds of its 500 million neurons in its arms",
       "seconds": 0.7
     },
     {
-      "name": "start ep017",
+      "name": "start ep023",
       "ok": true,
-      "detail": "Great white shark: the \"Jaws\" man-eater normally doesn't hunt people, and most bites come from curiosity or mistaken identity",
-      "seconds": 0.6
-    },
-    {
-      "name": "start ep018",
-      "ok": true,
-      "detail": "Dire wolf (2025): the \"dire wolf\" pups announced in 2025 were gray wolves with 20 edits to 14 genes",
-      "seconds": 0.8
-    },
-    {
-      "name": "start ep019",
-      "ok": true,
-      "detail": "Giant squid (2004): nobody photographed a live one in its habitat until September 30, 2004, and its eyes reach at least 27 cm across",
-      "seconds": 0.6
+      "detail": "Anglerfish: the tiny male latches onto a far larger female and can fuse into her body",
+      "seconds": 1.2
     },
     {
       "name": "publish",
       "ok": true,
       "detail": "",
-      "seconds": 0.0
+      "seconds": 0.1
     }
   ],
   "errors": [],
   "owner_action": [],
   "notes": [
-    "ep006 stopped on Gemini's free tier being overloaded; it resumes in a later run",
-    "only 2 Shorts made and unposted; scheduling 1 a day"
+    "only 4 Shorts made and unposted; scheduling 1 a day"
   ],
   "inventory": {
-    "total": 2,
-    "in_buffer": 2,
+    "total": 4,
+    "in_buffer": 4,
     "waiting": 0,
     "target": 42,
     "making": [],
     "remote": [
       "ep006",
-      "ep011",
       "ep012",
       "ep013",
-      "ep015",
-      "ep016",
       "ep017",
-      "ep018",
-      "ep019"
+      "ep020",
+      "ep021",
+      "ep022",
+      "ep023"
     ]
   },
   "queue": [
@@ -126,6 +130,16 @@
       "id": "ep009",
       "title": "The Smiling Salamander That Can Regrow Its Brain",
       "due_at": "2026-09-30T19:00:00-04:00"
+    },
+    {
+      "id": "ep018",
+      "title": "The Truth Behind the 2025 Dire Wolf Pups",
+      "due_at": "2026-10-01T19:00:00-04:00"
+    },
+    {
+      "id": "ep011",
+      "title": "The 66-Million-Year-Old Fish That Came Back",
+      "due_at": "2026-10-02T19:00:00-04:00"
     },
     {
       "id": "ep008",
@@ -136,24 +150,10 @@
   "waiting": [],
   "made": [
     {
-      "id": "ep006",
-      "outcome": "unfinished",
-      "topic": "Sperm whale: the loudest animal on Earth, at 236 decibels, with the largest brain of any animal",
-      "reason": "Overloaded: every model in ('ovh:Qwen3.5-397B-A17B', 'ovh:Qwen3.8-27B', 'ovh:Qwen3.6-27B') with quota left stayed overloaded for 25 minutes",
-      "quota": false,
-      "overloaded": true
-    },
-    {
-      "id": "ep007",
-      "outcome": "rejected",
-      "topic": "Winnipeg (bear) (1914): the real bear behind Winnie-the-Pooh was a black bear cub bought for $20 at an Ontario train stop, who sailed for England with Canadian troops on October 3",
-      "reason": "low scores: visuals; 3 frame problems"
-    },
-    {
-      "id": "ep008",
+      "id": "ep011",
       "outcome": "ready",
-      "topic": "Cher Ami (1918): the famous pigeon story says he was shot and lost a leg flying for the Lost Battalion on October 4, but the Signal Corps record puts his wounds weeks later",
-      "title": "Cher Ami's True WWI Mission",
+      "topic": "Coelacanth (1938): a fish thought extinct for 66 million years turned up in a South African fisherman's catch on December 22, 1938",
+      "title": "The 66-Million-Year-Old Fish That Came Back",
       "scores": {
         "hook": 4,
         "clarity": 5,
@@ -161,55 +161,61 @@
         "visuals": 4,
         "loop": 5
       },
-      "media_url": "https://res.cloudinary.com/uj4a07e7/video/upload/v1790785527/creaturereceipts/ep008-981824ad.mp4"
+      "media_url": "https://res.cloudinary.com/uj4a07e7/video/upload/v1790789307/creaturereceipts/ep011-3eaf50a8.mp4"
     },
     {
-      "id": "ep009",
+      "id": "ep015",
+      "outcome": "rejected",
+      "topic": "Tardigrade (1773): named \"little water bear\" in 1773, a dried-out one can survive from −272 °C to 149 °C, at least briefly",
+      "reason": ""
+    },
+    {
+      "id": "ep016",
+      "outcome": "rejected",
+      "topic": "Platypus (1799): the first scientists to examine one thought it was a fake sewn together from several animals, and it glows under ultraviolet light",
+      "reason": "low scores: visuals"
+    },
+    {
+      "id": "ep018",
       "outcome": "ready",
-      "topic": "Axolotl: it can regrow limbs and even parts of its heart and brain, yet only about 50 to 1,000 adults are left in the wild",
-      "title": "The Smiling Salamander That Can Regrow Its Brain",
+      "topic": "Dire wolf (2025): the \"dire wolf\" pups announced in 2025 were gray wolves with 20 edits to 14 genes",
+      "title": "The Truth Behind the 2025 Dire Wolf Pups",
       "scores": {
         "hook": 4,
         "clarity": 5,
         "payoff": 4,
-        "visuals": 4,
+        "visuals": 5,
         "loop": 5
       },
-      "media_url": "https://res.cloudinary.com/uj4a07e7/video/upload/v1790785028/creaturereceipts/ep009-452cfe3d.mp4"
+      "media_url": "https://res.cloudinary.com/uj4a07e7/video/upload/v1790789591/creaturereceipts/ep018-4d1360d9.mp4"
     },
     {
-      "id": "ep010",
+      "id": "ep019",
       "outcome": "rejected",
-      "topic": "Narwhal: the \"horn\" is a spiral left canine tooth up to 3 meters long, packed with millions of nerve endings",
-      "reason": "research: only 0 claims have two different sites"
-    },
-    {
-      "id": "ep014",
-      "outcome": "rejected",
-      "topic": "Hippopotamus: hippo \"blood sweat\" is neither blood nor sweat but a natural red sunscreen",
-      "reason": "research: only 0 claims have two different sites"
+      "topic": "Giant squid (2004): nobody photographed a live one in its habitat until September 30, 2004, and its eyes reach at least 27 cm across",
+      "reason": "research: The sources do not mention that the giant squid's eyes reach at least 27 cm across, making it impossible to reach the required number of supported claims."
     }
   ],
   "spawned": [
     {
-      "id": "ep006",
-      "topic": "Sperm whale: the loudest animal on Earth, at 236 decibels, with the largest brain of any animal",
-      "call_id": "fc-01M3SKXNYNT3GK48SMDSA9H3CS"
+      "id": "ep020",
+      "topic": "Winnipeg (bear) (1914): the real bear behind Winnie-the-Pooh was a black bear cub bought for $20 at an Ontario train stop, who sailed for England with Canadian troops on October 3",
+      "call_id": "fc-01M3SP5ZY34KN5JMPATFQQ5AQF"
     },
     {
-      "id": "ep017",
-      "topic": "Great white shark: the \"Jaws\" man-eater normally doesn't hunt people, and most bites come from curiosity or mistaken identity",
-      "call_id": "fc-01M3SKXPK371A1SJTX7JSF6XRM"
+      "id": "ep021",
+      "topic": "Narwhal: the \"horn\" is a spiral left canine tooth up to 3 meters long, packed with millions of nerve endings- Kiwi (bird): its egg can weigh 20% of the mother, and its closest relative is the extinct elephant bird of Madagascar, not the moa",
+      "call_id": "fc-01M3SP616WKWDW2VBN0K4SCM54"
     },
     {
-      "id": "ep018",
-      "topic": "Dire wolf (2025): the \"dire wolf\" pups announced in 2025 were gray wolves with 20 edits to 14 genes",
-      "call_id": "fc-01M3SKXQBQKEACY03G38NH0D5G"
+      "id": "ep022",
+      "topic": "Octopus: three hearts, blue copper-based blood, and two-thirds of its 500 million neurons in its arms",
+      "call_id": "fc-01M3SP61XB5C6CZ5T2N46YHMGX"
     },
     {
-      "id": "ep019",
-      "topic": "Giant squid (2004): nobody photographed a live one in its habitat until September 30, 2004, and its eyes reach at least 27 cm across",
-      "call_id": "fc-01M3SKXQXVMQM9HQ0VE7R66M17"
+      "id": "ep023",
+      "topic": "Anglerfish: the tiny male latches onto a far larger female and can fuse into her body",
+      "call_id": "fc-01M3SP6344MM31S4QPEA6W40CB"
     }
   ],
   "in_cloud": [
@@ -217,11 +223,6 @@
       "id": "ep006",
       "topic": "Sperm whale: the loudest animal on Earth, at 236 decibels, with the largest brain of any animal",
       "spawned_at": "2026-09-30T22:26:17+05:30"
-    },
-    {
-      "id": "ep011",
-      "topic": "Coelacanth (1938): a fish thought extinct for 66 million years turned up in a South African fisherman's catch on December 22, 1938",
-      "spawned_at": "2026-09-30T21:16:27+05:30"
     },
     {
       "id": "ep012",
@@ -234,74 +235,74 @@
       "spawned_at": "2026-09-30T21:21:15+05:30"
     },
     {
-      "id": "ep015",
-      "topic": "Tardigrade (1773): named \"little water bear\" in 1773, a dried-out one can survive from −272 °C to 149 °C, at least briefly",
-      "spawned_at": "2026-09-30T21:21:15+05:30"
-    },
-    {
-      "id": "ep016",
-      "topic": "Platypus (1799): the first scientists to examine one thought it was a fake sewn together from several animals, and it glows under ultraviolet light",
-      "spawned_at": "2026-09-30T21:21:15+05:30"
-    },
-    {
       "id": "ep017",
       "topic": "Great white shark: the \"Jaws\" man-eater normally doesn't hunt people, and most bites come from curiosity or mistaken identity",
       "spawned_at": "2026-09-30T22:26:17+05:30"
     },
     {
-      "id": "ep018",
-      "topic": "Dire wolf (2025): the \"dire wolf\" pups announced in 2025 were gray wolves with 20 edits to 14 genes",
-      "spawned_at": "2026-09-30T22:26:18+05:30"
+      "id": "ep020",
+      "topic": "Winnipeg (bear) (1914): the real bear behind Winnie-the-Pooh was a black bear cub bought for $20 at an Ontario train stop, who sailed for England with Canadian troops on October 3",
+      "spawned_at": "2026-09-30T23:05:46+05:30"
     },
     {
-      "id": "ep019",
-      "topic": "Giant squid (2004): nobody photographed a live one in its habitat until September 30, 2004, and its eyes reach at least 27 cm across",
-      "spawned_at": "2026-09-30T22:26:19+05:30"
+      "id": "ep021",
+      "topic": "Narwhal: the \"horn\" is a spiral left canine tooth up to 3 meters long, packed with millions of nerve endings- Kiwi (bird): its egg can weigh 20% of the mother, and its closest relative is the extinct elephant bird of Madagascar, not the moa",
+      "spawned_at": "2026-09-30T23:05:48+05:30"
+    },
+    {
+      "id": "ep022",
+      "topic": "Octopus: three hearts, blue copper-based blood, and two-thirds of its 500 million neurons in its arms",
+      "spawned_at": "2026-09-30T23:05:48+05:30"
+    },
+    {
+      "id": "ep023",
+      "topic": "Anglerfish: the tiny male latches onto a far larger female and can fuse into her body",
+      "spawned_at": "2026-09-30T23:05:49+05:30"
     }
   ],
   "published": [
     {
-      "id": "ep008",
-      "title": "Cher Ami's True WWI Mission",
-      "due_at": "2026-10-04T19:00:00-04:00"
+      "id": "ep018",
+      "title": "The Truth Behind the 2025 Dire Wolf Pups",
+      "due_at": "2026-10-01T19:00:00-04:00"
     },
     {
-      "id": "ep009",
-      "title": "The Smiling Salamander That Can Regrow Its Brain",
-      "due_at": "2026-09-30T19:00:00-04:00"
+      "id": "ep011",
+      "title": "The 66-Million-Year-Old Fish That Came Back",
+      "due_at": "2026-10-02T19:00:00-04:00"
     }
   ],
   "live": 0,
   "failed_posts": [],
   "not_live": [],
   "llm": {
-    "calls": 33,
+    "calls": 37,
     "by_model": {
-      "ovh:Qwen3.8-27B": 2,
-      "gemini-3.5-flash-lite": 22,
-      "gemma-4-31b-it": 9
+      "gemini-3-flash-preview": 2,
+      "gemini-3.5-flash-lite": 25,
+      "gemma-4-31b-it": 10
     },
     "out_of_quota": []
   },
   "renders": {
-    "modal": 9,
+    "modal": 10,
     "runner": 0
   },
   "daily_done": "2026-09-30",
   "minutes_this_month": 12.0,
   "minutes_budget": 2000,
   "modal_cost": {
-    "metered": 2.59,
+    "metered": 3.01,
     "billed": 0.0
   },
   "modal_credit": 30.0,
   "capacity": {
-    "cloud": 206,
+    "cloud": 204,
     "runner": 0,
     "runner_minutes": 0,
-    "modal_credit_left": 24.82
+    "modal_credit_left": 24.51
   },
   "made_here": 0,
-  "open_topics": 100,
-  "parked_topics": 1
+  "open_topics": 97,
+  "parked_topics": 2
 }

@@ -1,0 +1,159 @@
+{
+  "rounds": [
+    {
+      "at": "2026-09-30T21:58:25+05:30",
+      "check": {
+        "duration": 47.87,
+        "words": 109,
+        "integrated_lufs": -14.1,
+        "true_peak_dbfs": -1.9,
+        "warnings": [],
+        "speech_differences": [
+          "'naturalists' heard as 'naturalist is' after 'description in the'"
+        ],
+        "speech_error": null,
+        "sources": [
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons"
+        ]
+      },
+      "scores": {
+        "hook": 5,
+        "clarity": 4,
+        "payoff": 4,
+        "visuals": 3,
+        "loop": 5
+      },
+      "notes": {
+        "hook": "Strong opening claim that immediately grabs attention.",
+        "clarity": "Clear narrative arc, though some beats pack a lot of information.",
+        "payoff": "The transition from 'hoax' to 'biological marvel' is satisfying.",
+        "visuals": "Heavy reliance on old sketches and blurry crops; needs more high-quality footage.",
+        "loop": "Perfectly seamless loop using the repeated first sentence."
+      },
+      "frames": [
+        {
+          "beat": 4,
+          "problem": "The close-up is very blurry."
+        },
+        {
+          "beat": 5,
+          "problem": "The image is a general animal chart with too many distracting elements; subject not clear at phone size."
+        }
+      ],
+      "speech": [],
+      "rewrite": [],
+      "better_than_last": "This is the first Short, establishing a strong baseline for narrative structure and looping.",
+      "judge": "gemma-4-31b-it",
+      "passed": false
+    },
+    {
+      "at": "2026-09-30T22:28:59+05:30",
+      "check": {
+        "duration": 47.87,
+        "words": 109,
+        "integrated_lufs": -14.1,
+        "true_peak_dbfs": -1.8,
+        "warnings": [],
+        "speech_differences": [
+          "'naturalists' heard as 'naturalist is' after 'description in the'"
+        ],
+        "speech_error": null,
+        "sources": [
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons"
+        ]
+      },
+      "scores": {
+        "hook": 5,
+        "clarity": 4,
+        "payoff": 4,
+        "visuals": 3,
+        "loop": 5
+      },
+      "notes": {
+        "hook": "Strong opening claim that grabs attention immediately.",
+        "clarity": "The story flows well, though some beats pack multiple facts.",
+        "payoff": "The progression from 'fake' to 'bio-fluorescent' is a satisfying escalation.",
+        "visuals": "Too many static archival drawings; lacks actual footage of the animal.",
+        "loop": "Perfectly mirrored start and end for a seamless loop."
+      },
+      "frames": [
+        {
+          "beat": 5,
+          "problem": "The top image shows an Echidna, not a Platypus."
+        }
+      ],
+      "speech": [],
+      "rewrite": [],
+      "better_than_last": "First Short evaluated.",
+      "judge": "gemma-4-31b-it",
+      "passed": false
+    },
+    {
+      "at": "2026-09-30T22:45:10+05:30",
+      "check": {
+        "duration": 47.87,
+        "words": 109,
+        "integrated_lufs": -14.1,
+        "true_peak_dbfs": -1.9,
+        "warnings": [],
+        "speech_differences": [
+          "'naturalists' heard as 'naturalist is' after 'description in the'"
+        ],
+        "speech_error": null,
+        "sources": [
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons"
+        ]
+      },
+      "scores": {
+        "hook": 5,
+        "clarity": 5,
+        "payoff": 4,
+        "visuals": 3,
+        "loop": 5
+      },
+      "notes": {
+        "hook": "Starting with a 'fake animal' hook is strong and immediate.",
+        "clarity": "The story progresses logically from doubt to discovery to strange facts.",
+        "payoff": "The UV glow is a surprising and visually distinct payoff, though less narrative than the 'fake' setup.",
+        "visuals": "Beat 5 shows an echidna in the top half, which is the wrong species.",
+        "loop": "The repeat of the first line at the end creates a perfect loop."
+      },
+      "frames": [
+        {
+          "beat": 5,
+          "problem": "The top image is an echidna, not a platypus."
+        }
+      ],
+      "speech": [],
+      "rewrite": [],
+      "better_than_last": "This is the first Short in the series.",
+      "judge": "gemma-4-31b-it",
+      "passed": false
+    }
+  ],
+  "best_round": 3,
+  "verdict": "rejected",
+  "reason": "low scores: visuals",
+  "rejected_at": "2026-09-30T22:45:10+05:30"
+}

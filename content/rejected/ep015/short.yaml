@@ -1,0 +1,144 @@
+id: ep015
+title: The Moon's Toughest Hitchhikers
+series: Built Different
+description: Discover how tiny water bears named in 1773 survived extreme temperatures, the vacuum of space, and a lunar crash.
+sources:
+- https://en.wikipedia.org/wiki/Tardigrade
+- https://www.theguardian.com/science/2021/mar/20/tardigrades-natures-great-survivors
+- https://www.smithsonianmag.com/smart-news/how-are-tardigrades-so-indestructible-scientists-finally-have-explanation-180983613/
+- https://animaldiversity.org/accounts/Tardigrada/
+- https://serc.carleton.edu/microbelife/topics/tardigrade/index.html
+- https://biology.mit.edu/unusual-labmates-meet-tardigrades-the-crafters-of-natures-ultimate-survival-kit/
+- https://publicdomainreview.org/collection/tardigrade/
+hashtags:
+- '#animals'
+- '#tardigrade'
+- '#space'
+tags:
+- tardigrade
+- water bear
+- extreme biology
+- space survival
+- Beresheet
+voice:
+  voice: af_heart
+  speed: 1.05
+beats:
+- text: A microscopic water bear can survive a high-speed crash into the Moon.
+  emphasis:
+  - water bear
+  - Moon
+  visual:
+    source: url
+    url: https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d5/Beresheet_Crash_Site_Spotted_LRO_01.png/960px-Beresheet_Crash_Site_Spotted_LRO_01.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
+    credit:
+      source: Wikimedia Commons
+      title: Beresheet Crash Site Spotted LRO 01.png
+      credit: NASA/GSFC/Arizona State University
+      license: Public domain
+      url: https://commons.wikimedia.org/wiki/File:Beresheet_Crash_Site_Spotted_LRO_01.png
+    fallbacks:
+    - color
+    motion: zoom_out
+    focus_x: 0.5
+    focus_y: 0.5
+- text: First officially described back in 1773 by zoologist Johann [Goeze](/ɡˈOzˈi/), these tiny creatures were named little
+    water bears.
+  emphasis:
+  - Johann Goeze
+  - little water bears
+  sfx: whoosh
+  visual:
+    source: url
+    url: https://upload.wikimedia.org/wikipedia/commons/b/ba/Johann_August_Ephraim_Goeze1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    credit:
+      source: Wikimedia Commons
+      title: Johann August Ephraim Goeze1.jpg
+      credit: Unidentified painter
+      license: Public domain
+      url: https://commons.wikimedia.org/wiki/File:Johann_August_Ephraim_Goeze1.jpg
+    fallbacks:
+    - card
+    - color
+    motion: pan_up
+    focus_x: 0.45
+    focus_y: 0.4
+    box:
+    - 0.3
+    - 0.1
+    - 0.65
+    - 0.75
+    card:
+      kind: dateline
+      big: '1773'
+      small: Germany
+- text: They possess eight legs and typically measure less than a single millimeter in length.
+  emphasis:
+  - eight legs
+  - millimeter in length
+  visual:
+    source: url
+    url: https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cd/SEM_image_of_Milnesium_tardigradum_in_active_state_-_journal.pone.0045682.g001-2.png/1280px-SEM_image_of_Milnesium_tardigradum_in_active_state_-_journal.pone.0045682.g001-2.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
+    credit:
+      source: Wikimedia Commons
+      title: SEM image of Milnesium tardigradum in active state - journal.pone.0045682.g001-2.png
+      credit: Schokraie E, Warnken U, Hotz-Wagenblatt A, Grohme MA, Hengherr S, et al. (2012)
+      license: CC BY 2.5
+      url: https://commons.wikimedia.org/wiki/File:SEM_image_of_Milnesium_tardigradum_in_active_state_-_journal.pone.0045682.g001-2.png
+    fallbacks:
+    - color
+    motion: pan_right
+    focus_x: 0.5
+    focus_y: 0.5
+- text: When environmental conditions turn harsh, they roll into a tight ball called a [tun](/tˈun/) and completely dry out.
+  emphasis:
+  - tun
+  - dry out
+  sfx: riser
+  visual:
+    source: card
+    card:
+      kind: fact
+      big: TUN STATE
+      small: Dehydrated ball
+    motion: zoom_in
+- text: Inside this glass-like slumber, they can survive temperatures near absolute zero and up to one hundred fifty degrees
+    Celsius.
+  emphasis:
+  - absolute zero
+  - one hundred fifty degrees
+  sfx: pop
+  pause_after: 0.4
+  visual:
+    reuse: 3
+    motion: zoom_out
+    focus_x: 0.5
+    focus_y: 0.5
+- text: They are remarkably the only known animals to successfully endure the harsh vacuum of outer space.
+  emphasis:
+  - vacuum of outer space
+  visual:
+    source: url
+    url: https://thumb.wikimedia.org/wikipedia/commons/thumb/9/96/ISS-59_Waxing_Crescent_Moon_just_above_Earth%27s_limb_%281%29.jpg/3840px-ISS-59_Waxing_Crescent_Moon_just_above_Earth%27s_limb_%281%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
+    credit:
+      source: Wikimedia Commons
+      title: ISS-59 Waxing Crescent Moon just above Earth's limb (1).jpg
+      credit: NASA
+      license: Public domain
+      url: https://commons.wikimedia.org/wiki/File:ISS-59_Waxing_Crescent_Moon_just_above_Earth%27s_limb_(1).jpg
+    fallbacks:
+    - color
+    motion: pan_left
+    focus_x: 0.5
+    focus_y: 0.5
+- text: That is exactly how a microscopic water bear survived a high-speed crash into the Moon.
+  emphasis:
+  - water bear
+  - crash into the Moon
+  sfx: whoosh
+  visual:
+    reuse: 1
+    motion: zoom_in
+    focus_x: 0.5
+    focus_y: 0.5
+hook_text: CRASHING ON THE MOON

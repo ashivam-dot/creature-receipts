@@ -1,0 +1,213 @@
+{
+  "viable": false,
+  "reason": "The sources do not mention that the giant squid's eyes reach at least 27 cm across, making it impossible to reach the required number of supported claims.",
+  "story": "For centuries, the giant squid was known only from dead specimens and sailors' tales. That changed on September 30, 2004, when Japanese zoologist Tsunemi Kubodera and Kyoichi Mori achieved the first-ever photographs of a live giant squid in the wild. By tracking sperm whales near the Ogasawara Islands, the researchers deployed a specialized camera system with baited lines 900 meters down. At 9:15 a.m., an eight-meter giant squid struck the bait. Rather than acting as a sluggish drifter, the squid aggressively enveloped its prey in a ball of tentacles like a python. It became hooked on the line and fought for over four hours. Eventually, the squid severed its own tentacle and escaped into the dark depths. When hauled aboard, the severed appendage still gripped the boat deck and researchers' fingers with its living suckers, proving the elusive deep-sea monster was finally caught on camera.",
+  "angle": "A giant squid fought for four hours against a camera trap, tore off its own tentacle, and left behind an appendage that was still aggressively grabbing the researchers' fingers on the boat.",
+  "claims": [
+    {
+      "claim": "Tsunemi Kubodera and Kyoichi Mori photographed a live giant squid in the wild for the first time on September 30, 2004.",
+      "sources": [
+        "S1",
+        "S2",
+        "S3",
+        "S4"
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim": "The historic sighting took place off Japan's Ogasawara Islands.",
+      "sources": [
+        "S1",
+        "S2",
+        "S3",
+        "S4"
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim": "The camera system was deployed at a depth of 900 meters.",
+      "sources": [
+        "S1",
+        "S2",
+        "S4",
+        "S5"
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim": "The researchers used sperm whale migration and feeding paths to locate the target area.",
+      "sources": [
+        "S1",
+        "S3",
+        "S4"
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim": "The baited line included hooks, a digital camera, and bait consisting of cuttlefish or squid and shrimp.",
+      "sources": [
+        "S1",
+        "S3",
+        "S4",
+        "S5"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "claim": "The camera was programmed to take a picture every 30 seconds.",
+      "sources": [
+        "S1",
+        "S3"
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim": "The squid attacked the bait aggressively, coiling its tentacles like a python.",
+      "sources": [
+        "S2",
+        "S3",
+        "S4",
+        "S5"
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim": "The squid spent over 4 hours trying to escape after becoming snagged on a hook.",
+      "sources": [
+        "S1",
+        "S3",
+        "S4",
+        "S5"
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim": "The squid severed its tentacle to escape, leaving behind a 5.5-meter portion.",
+      "sources": [
+        "S3",
+        "S5"
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim": "The severed tentacle was still functioning and gripped the boat deck and fingers when hauled aboard.",
+      "sources": [
+        "S4",
+        "S5"
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim": "Researchers used DNA from the salvaged tentacle to confirm the animal was Architeuthis.",
+      "sources": [
+        "S3",
+        "S4"
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim": "The photographed giant squid was estimated to be at least 8 meters long.",
+      "sources": [
+        "S2",
+        "S3",
+        "S4"
+      ],
+      "confidence": "high"
+    }
+  ],
+  "disputed": [
+    "Exact image count varies slightly across sources between more than 500 images and 600 photos; scripts should use general terms like photo sequence or hundreds of photos."
+  ],
+  "visuals": [
+    {
+      "subject": "Tsunemi Kubodera",
+      "queries": [
+        "Tsunemi Kubodera",
+        "National Museum of Nature and Science Tokyo"
+      ]
+    },
+    {
+      "subject": "Ogasawara Islands",
+      "queries": [
+        "Ogasawara Islands",
+        "Bonin Islands landscape"
+      ]
+    },
+    {
+      "subject": "Sperm whale",
+      "queries": [
+        "Physeter macrocephalus",
+        "Sperm whale underwater"
+      ]
+    },
+    {
+      "subject": "Scientific illustration of giant squid",
+      "queries": [
+        "Architeuthis illustration",
+        "Giant squid biodiversity heritage library"
+      ]
+    },
+    {
+      "subject": "Deep sea environment",
+      "queries": [
+        "Deep sea hydrothermal vent NOAA",
+        "Bathypelagic zone"
+      ]
+    },
+    {
+      "subject": "Research vessel at sea",
+      "queries": [
+        "Research vessel oceanography",
+        "Scientific research ship"
+      ]
+    },
+    {
+      "subject": "Cephalopod anatomy diagram",
+      "queries": [
+        "Squid anatomy diagram",
+        "Cephalopod tentacles suckers"
+      ]
+    },
+    {
+      "subject": "Submersible or underwater camera rig",
+      "queries": [
+        "Deep sea camera rig",
+        "Oceanographic research equipment"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "label": "S1",
+      "url": "https://en.wikipedia.org/wiki/Tsunemi_Kubodera",
+      "title": "Tsunemi Kubodera",
+      "site": "wikipedia.org"
+    },
+    {
+      "label": "S2",
+      "url": "https://web.archive.org/web/20051013055139/http://news.nationalgeographic.com/news/2005/09/0927_050927_giant_squid.html",
+      "title": "Holy Squid! Photos Offer First Glimpse of Live Deep-Sea Giant",
+      "site": "nationalgeographic.com"
+    },
+    {
+      "label": "S3",
+      "url": "https://www.scientificamerican.com/article/live-giant-squid-photogra/",
+      "title": "Live Giant Squid Photographed for First Time",
+      "site": "scientificamerican.com"
+    },
+    {
+      "label": "S4",
+      "url": "https://www.sciencenews.org/article/baited-camera-snaps-first-live-giant-squid",
+      "title": "Baited camera snaps first live giant squid",
+      "site": "sciencenews.org"
+    },
+    {
+      "label": "S5",
+      "url": "https://news.bbc.co.uk/2/hi/science/nature/4288772.stm",
+      "title": "Live giant squid caught on camera",
+      "site": "bbc.co.uk"
+    }
+  ],
+  "topic": "Giant squid (2004): nobody photographed a live one in its habitat until September 30, 2004, and its eyes reach at least 27 cm across",
+  "series": "Deep Sea Files"
+}

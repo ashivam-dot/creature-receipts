@@ -1,0 +1,191 @@
+{
+  "rounds": [
+    {
+      "at": "2026-09-30T21:51:22+05:30",
+      "check": {
+        "duration": 45.99,
+        "words": 112,
+        "integrated_lufs": -14.1,
+        "true_peak_dbfs": -1.8,
+        "warnings": [],
+        "speech_differences": [
+          "'goeze' heard as 'goes' after 'by zoologist johann'",
+          "'tun' heard as 'ton' after 'ball called a'"
+        ],
+        "speech_error": null,
+        "sources": [
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons"
+        ]
+      },
+      "scores": {
+        "hook": 4,
+        "clarity": 5,
+        "payoff": 4,
+        "visuals": 2,
+        "loop": 5
+      },
+      "notes": {
+        "hook": "Strong opening premise, though the visual is a bit generic.",
+        "clarity": "Very easy to follow; one clear idea per beat.",
+        "payoff": "The circular narrative satisfies the hook, confirming the survival.",
+        "visuals": "Poor quality; uses a photo of a museum exhibit (Beat 1, 7) and a scientific diagram with labels (Beat 4, 5) which are not striking.",
+        "loop": "Excellent seamless transition back to the start."
+      },
+      "frames": [
+        {
+          "beat": 1,
+          "problem": "The image is of a museum exhibit/model, not a real lunar crash or actual animal; lacks impact."
+        },
+        {
+          "beat": 4,
+          "problem": "Uses a labeled scientific diagram with text and markers, which is not visually striking for a Short."
+        },
+        {
+          "beat": 5,
+          "problem": "Same labeled scientific diagram as Beat 4; not visually striking."
+        }
+      ],
+      "speech": [
+        {
+          "beat": 2,
+          "word": "Goeze",
+          "respelling": "goe ze"
+        },
+        {
+          "beat": 4,
+          "word": "tun",
+          "respelling": "toon"
+        }
+      ],
+      "rewrite": [],
+      "better_than_last": "First Short; establishes a strong structural template for looping narratives.",
+      "judge": "gemma-4-31b-it",
+      "passed": false
+    },
+    {
+      "at": "2026-09-30T22:17:09+05:30",
+      "check": {
+        "duration": 45.93,
+        "words": 112,
+        "integrated_lufs": -14.1,
+        "true_peak_dbfs": -1.8,
+        "warnings": [],
+        "speech_differences": [
+          "'goeze' heard as 'gozzi' after 'by zoologist johann'",
+          "'tun' heard as 'tune' after 'ball called a'"
+        ],
+        "speech_error": null,
+        "sources": [
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "designed card",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons"
+        ]
+      },
+      "scores": {
+        "hook": 4,
+        "clarity": 5,
+        "payoff": 4,
+        "visuals": 2,
+        "loop": 5
+      },
+      "notes": {
+        "hook": "Strong opening claim that captures attention immediately.",
+        "clarity": "The narrative flows logically from the species introduction to its extreme abilities.",
+        "payoff": "Connecting the biological traits to the lunar crash provides a satisfying conclusion.",
+        "visuals": "The first image is a museum exhibit with Hebrew text and a model, not an actual moon landing or a striking animal shot.",
+        "loop": "The last sentence leads perfectly back into the first for a seamless loop."
+      },
+      "frames": [
+        {
+          "beat": 1,
+          "problem": "The image shows a museum exhibit with unrelated text and a model, which is not visually striking or on-topic for a high-speed crash."
+        }
+      ],
+      "speech": [
+        {
+          "beat": 2,
+          "word": "Goeze",
+          "respelling": "go ze"
+        },
+        {
+          "beat": 4,
+          "word": "tun",
+          "respelling": "toon"
+        }
+      ],
+      "rewrite": [],
+      "better_than_last": "This is the first Short, setting a high bar for narrative structure and looping.",
+      "judge": "gemma-4-31b-it",
+      "passed": false
+    },
+    {
+      "at": "2026-09-30T22:28:13+05:30",
+      "check": {
+        "duration": 45.93,
+        "words": 112,
+        "integrated_lufs": -14.1,
+        "true_peak_dbfs": -1.9,
+        "warnings": [],
+        "speech_differences": [
+          "'goeze' heard as 'gozzi' after 'by zoologist johann'",
+          "'tun' heard as 'tune' after 'ball called a'"
+        ],
+        "speech_error": null,
+        "sources": [
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "designed card",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons"
+        ]
+      },
+      "scores": {
+        "hook": 5,
+        "clarity": 5,
+        "payoff": 4,
+        "visuals": 5,
+        "loop": 5
+      },
+      "notes": {
+        "hook": "Strong, counter-intuitive opening statement.",
+        "clarity": "Clear, logical progression from the animal's identity to its special abilities.",
+        "payoff": "The lunar crash is the payoff, though it's a repetition of the hook.",
+        "visuals": "High-quality imagery that matches the script well.",
+        "loop": "Perfect seamless loop returning to the first line."
+      },
+      "frames": [],
+      "speech": [
+        {
+          "beat": 2,
+          "word": "Goeze",
+          "respelling": "go-zeh"
+        },
+        {
+          "beat": 4,
+          "word": "tun",
+          "respelling": "tun"
+        }
+      ],
+      "rewrite": [],
+      "better_than_last": "First video, setting a high quality bar for future content.",
+      "judge": "gemma-4-31b-it",
+      "passed": false
+    }
+  ],
+  "best_round": 3,
+  "verdict": "rejected",
+  "reason": "failed the quality gate",
+  "rejected_at": "2026-09-30T22:28:13+05:30"
+}

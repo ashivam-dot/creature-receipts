@@ -1,0 +1,161 @@
+{
+  "rounds": [
+    {
+      "at": "2026-09-30T21:56:24+05:30",
+      "check": {
+        "duration": 50.23,
+        "words": 105,
+        "integrated_lufs": -14.1,
+        "true_peak_dbfs": -1.6,
+        "warnings": [],
+        "speech_differences": [
+          "'courtenay latimer' heard as 'curtnail adamer' after 'museum curator marjorie'"
+        ],
+        "speech_error": null,
+        "sources": [
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons"
+        ]
+      },
+      "scores": {
+        "hook": 5,
+        "clarity": 4,
+        "payoff": 4,
+        "visuals": 3,
+        "loop": 5
+      },
+      "notes": {
+        "hook": "Strong opening statement and visual.",
+        "clarity": "The flow of information is logical and easy to follow.",
+        "payoff": "The twist about land-animal relation provides a good conclusion.",
+        "visuals": "Beat 3's scientific diagram is far too complex for a phone screen; it's mostly labels and clutter.",
+        "loop": "The final line leads perfectly back into the first."
+      },
+      "frames": [
+        {
+          "beat": 3,
+          "problem": "The frame is a highly complex anatomical diagram with tiny text labels that are unreadable on mobile devices."
+        }
+      ],
+      "speech": [
+        {
+          "beat": 2,
+          "word": "Courtenay-Latimer",
+          "respelling": "core ten ay la tee mer"
+        }
+      ],
+      "rewrite": [],
+      "better_than_last": "First Short evaluated.",
+      "judge": "gemma-4-31b-it",
+      "passed": false
+    },
+    {
+      "at": "2026-09-30T22:27:18+05:30",
+      "check": {
+        "duration": 50.53,
+        "words": 105,
+        "integrated_lufs": -14.1,
+        "true_peak_dbfs": -1.7,
+        "warnings": [],
+        "speech_differences": [
+          "'courtenay' heard as 'cortenae' after 'museum curator marjorie'"
+        ],
+        "speech_error": null,
+        "sources": [
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons"
+        ]
+      },
+      "scores": {
+        "hook": 5,
+        "clarity": 4,
+        "payoff": 3,
+        "visuals": 3,
+        "loop": 5
+      },
+      "notes": {
+        "hook": "Strong opening statement about extinction and time.",
+        "clarity": "Generally clear, though the transition to the notochord is a bit abrupt.",
+        "payoff": "The ending repeats the hook without adding a final surprising revelation or twist.",
+        "visuals": "Beat 3 is a complex anatomical diagram with labels that are unreadable on a phone screen.",
+        "loop": "Perfect seamless loop back to the start."
+      },
+      "frames": [
+        {
+          "beat": 3,
+          "problem": "mostly text; labels are too small to be readable on mobile"
+        }
+      ],
+      "speech": [
+        {
+          "beat": 2,
+          "word": "Courtenay-Latimer",
+          "respelling": "kort uh nay lay tee mer"
+        }
+      ],
+      "rewrite": [
+        "Beat 6: Scientists thought they had officially declared this prehistoric creature extinct for 66 million years."
+      ],
+      "better_than_last": "This is the first Short, so there is no previous one to compare it to.",
+      "judge": "gemma-4-31b-it",
+      "passed": false
+    },
+    {
+      "at": "2026-09-30T22:58:27+05:30",
+      "check": {
+        "duration": 50.23,
+        "words": 105,
+        "integrated_lufs": -14.1,
+        "true_peak_dbfs": -1.6,
+        "warnings": [],
+        "speech_differences": [
+          "'courtenay latimer' heard as 'curtnail adamer' after 'museum curator marjorie'"
+        ],
+        "speech_error": null,
+        "sources": [
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons"
+        ]
+      },
+      "scores": {
+        "hook": 4,
+        "clarity": 5,
+        "payoff": 4,
+        "visuals": 4,
+        "loop": 5
+      },
+      "notes": {
+        "hook": "Strong premise that immediately grabs attention.",
+        "clarity": "The narrative flow is logical and easy to follow.",
+        "payoff": "The revelation of its relation to land animals provides a satisfying conclusion.",
+        "visuals": "Images are relevant and high quality, though some are a bit dark.",
+        "loop": "The transition from the end back to the beginning is seamless."
+      },
+      "frames": [],
+      "speech": [
+        {
+          "beat": 2,
+          "word": "Courtenay-Latimer",
+          "respelling": "core tuh nay la tie mer"
+        }
+      ],
+      "rewrite": [],
+      "better_than_last": "This is the first Short, so it sets a high standard for subsequent videos.",
+      "judge": "gemma-4-31b-it",
+      "passed": true
+    }
+  ],
+  "best_round": 3
+}
