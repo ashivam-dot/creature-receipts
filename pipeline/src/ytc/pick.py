@@ -89,6 +89,8 @@ For every beat:
   scene, dead or injured animals, blood, predation close-ups, animal cruelty, human corpses, wounds, gore,
   nudity, a large watermark, a diagram whose labels are small or not in English, or a page of text unless the
   line is about that document. Leave ranked empty when nothing qualifies.
+  An animal the line only compares the subject to ("a duck's bill on a beaver's body", "as big as a bus") is
+  not what the line is about: show the story's own subject, never the animal or thing it is compared to.
 - fit: how well your first choice fits its line: "exact" (it shows what the line names), "close" (the same
   species or subject from another angle or moment), "scene" (it only sets the scene), or "none".
 - shows: what your first choice actually shows, as a short caption.
@@ -113,7 +115,8 @@ species (a similar-looking one counts as different), person, or place than the l
 zoo photo for a line about the wild and does more than set the scene; it shows a dead or injured animal, blood, a
 predation close-up, animal cruelty, human corpses, wounds, gore, or nudity; it has a large watermark; it is
 mostly text though the line isn't about a document; it is a diagram whose labels are small or not in English; or
-it is too damaged or blurry to make out. A picture that sets the scene (the habitat, the ship, the scientist) is
+it is too damaged or blurry to make out; or it shows an animal the line only compares the subject to (a duck
+for "a duck's bill on a beaver's body") instead of the subject. A picture that sets the scene (the habitat, the ship, the scientist) is
 ok, and so are a scientific illustration or plate of the right species, and a museum specimen, fossil, or
 skeleton when the line is about it.
 Give the problem in a few words, or "" when it is ok.
@@ -496,6 +499,14 @@ def unchanged(old_script: dict, old_visuals: list[dict], new_script: dict, skip:
     return keep
 
 
+_BINOMIAL = re.compile(r"\b([A-Z][a-z]{2,}) ([a-z]{3,})\b")
+
+
+def _species(title: str) -> set[str]:
+    """Latin binomials in a file title ("Mallard (Anas platyrhynchos)" -> {"anas platyrhynchos"})."""
+    return {f"{g} {s}".lower() for g, s in _BINOMIAL.findall(title) if s not in {"and", "the", "from", "with", "des", "del"}}
+
+
 def replace(script: dict, research: dict, episode_id: str, visuals: list[dict], numbers: list[int], why: str = "") -> list[dict]:
     """New pictures for these beats after the review: the next ranked alternate, else a card or an earlier picture.
 
@@ -515,7 +526,10 @@ def replace(script: dict, research: dict, episode_id: str, visuals: list[dict], 
         old = visuals[n - 1]
         beat = beats[n - 1]
         previous = visuals[n - 2].get("motion") if n > 1 else None
-        alternates = [a for a in old.get("_alternates", []) if a["key"] not in in_use | rejected]
+        # A frame flagged as the wrong animal usually has alternates of that same animal.
+        wrong = _species(old.get("_choice", {}).get("title", ""))
+        alternates = [a for a in old.get("_alternates", [])
+                      if a["key"] not in in_use | rejected and not (wrong and wrong & _species(a.get("title", "")))]
         if alternates and old.get("source") != "card":
             new = picture_visual(alternates[0], n, previous, None, _card(beat))
             new["_alternates"] = alternates[1:]

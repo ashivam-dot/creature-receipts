@@ -56,7 +56,7 @@ text. Space topics belong to the sister channel Universe Receipts and never go h
 
 ### Deep Sea Files
 
-- Giant squid (2004): nobody photographed a live one in its habitat until September 30, 2004, and its eyes reach at least 27 cm across — parked (ep004)
+- Giant squid (2004): nobody photographed a live one in its habitat until September 30, 2004, and its eyes reach at least 27 cm across
 - Colossal squid (2025): it has the largest eyes of any animal known to have existed, and was first filmed alive in its habitat on March 9, 2025 — making (ep012)
 - Anglerfish: the tiny male latches onto a far larger female and can fuse into her body
 - Goblin shark: its jaws launch forward out of its head, from a lineage about 125 million years old
@@ -93,7 +93,7 @@ text. Space topics belong to the sister channel Universe Receipts and never go h
 
 ### Evolution Got Weird
 
-- Platypus (1799): the first scientists to examine one thought it was a fake sewn together from several animals, and it glows under ultraviolet light — parked (ep005)
+- Platypus (1799): the first scientists to examine one thought it was a fake sewn together from several animals, and it glows under ultraviolet light
 - Horseshoe crab: it isn't a crab but a closer relative of spiders, and its blue blood is used to test for bacterial toxins
 - Carcinisation (1916): evolution has turned non-crabs into crab shapes at least five separate times
 - Narwhal: the "horn" is a spiral left canine tooth up to 3 meters long, packed with millions of nerve endings — making (ep010)
