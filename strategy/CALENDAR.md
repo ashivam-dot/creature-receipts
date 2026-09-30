@@ -96,7 +96,8 @@ text. Space topics belong to the sister channel Universe Receipts and never go h
 - Platypus (1799): the first scientists to examine one thought it was a fake sewn together from several animals, and it glows under ultraviolet light — parked (ep016)
 - Horseshoe crab: it isn't a crab but a closer relative of spiders, and its blue blood is used to test for bacterial toxins
 - Carcinisation (1916): evolution has turned non-crabs into crab shapes at least five separate times
-- Narwhal: the "horn" is a spiral left canine tooth up to 3 meters long, packed with millions of nerve endings- Kiwi (bird): its egg can weigh 20% of the mother, and its closest relative is the extinct elephant bird of Madagascar, not the moa — making (ep021)
+- Narwhal: the "horn" is a spiral left canine tooth up to 3 meters long, packed with millions of nerve endings
+- Kiwi (bird): its egg can weigh 20% of the mother, and its closest relative is the extinct elephant bird of Madagascar, not the moa — making (ep021)
 - Tuatara (2009): it isn't a lizard but the last of an ancient order, and a male named Henry became a father at 111
 - Sloth: its fur grows algae that feed moths found nowhere else, and it climbs down about once a week to use the bathroom
 - Clownfish: when the group's female disappears, the breeding male changes sex and takes her place
@@ -148,5 +149,6 @@ text. Space topics belong to the sister channel Universe Receipts and never go h
 - Common ostrich: ostriches don't bury their heads in the sand, a myth that likely goes back to Pliny the Elder
 - Mayfly: the "one-day" insect can spend several years living underwater before it grows wings
 - Virginia opossum: the claim that one eats 5,000 ticks a season is a misconception, but it really is naturally resistant to rabies
-- Hippopotamus: hippo "blood sweat" is neither blood nor sweat but a natural red sunscreen- Elephants' graveyard: there's no place where old elephants go to die; it's a legend
+- Hippopotamus: hippo "blood sweat" is neither blood nor sweat but a natural red sunscreen
+- Elephants' graveyard: there's no place where old elephants go to die; it's a legend
 - Shark cartilage (1992): sharks do get cancer, and the myth that they don't was spread by a 1992 book
