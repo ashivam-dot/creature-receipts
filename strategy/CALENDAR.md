@@ -56,8 +56,8 @@ text. Space topics belong to the sister channel Universe Receipts and never go h
 
 ### Deep Sea Files
 
-- Giant squid (2004): nobody photographed a live one in its habitat until September 30, 2004, and its eyes reach at least 27 cm across — making (ep004)
-- Colossal squid (2025): it has the largest eyes of any animal known to have existed, and was first filmed alive in its habitat on March 9, 2025
+- Giant squid (2004): nobody photographed a live one in its habitat until September 30, 2004, and its eyes reach at least 27 cm across — parked (ep004)
+- Colossal squid (2025): it has the largest eyes of any animal known to have existed, and was first filmed alive in its habitat on March 9, 2025 — making (ep012)
 - Anglerfish: the tiny male latches onto a far larger female and can fuse into her body
 - Goblin shark: its jaws launch forward out of its head, from a lineage about 125 million years old
 - Cookiecutter shark: in the 1980s about 30 US Navy submarines were damaged by its bites
@@ -74,7 +74,7 @@ text. Space topics belong to the sister channel Universe Receipts and never go h
 
 ### Back From Extinction
 
-- Coelacanth (1938): a fish thought extinct for 66 million years turned up in a South African fisherman's catch on December 22, 1938
+- Coelacanth (1938): a fish thought extinct for 66 million years turned up in a South African fisherman's catch on December 22, 1938 — making (ep011)
 - Pyrenean ibex (2003): the first animal ever brought back from extinction by cloning lived only minutes
 - Przewalski's horse (2020): extinct in the wild after 1969, it now has a clone named Kurt, born in 2020 from a long-dead stallion's DNA
 - Black-footed ferret (1981): declared extinct in 1979, found in Wyoming in 1981, and every ferret alive today descends from just 7 animals
@@ -93,10 +93,10 @@ text. Space topics belong to the sister channel Universe Receipts and never go h
 
 ### Evolution Got Weird
 
-- Platypus (1799): the first scientists to examine one thought it was a fake sewn together from several animals, and it glows under ultraviolet light — making (ep005)
+- Platypus (1799): the first scientists to examine one thought it was a fake sewn together from several animals, and it glows under ultraviolet light — parked (ep005)
 - Horseshoe crab: it isn't a crab but a closer relative of spiders, and its blue blood is used to test for bacterial toxins
 - Carcinisation (1916): evolution has turned non-crabs into crab shapes at least five separate times
-- Narwhal: the "horn" is a spiral left canine tooth up to 3 meters long, packed with millions of nerve endings
+- Narwhal: the "horn" is a spiral left canine tooth up to 3 meters long, packed with millions of nerve endings — making (ep010)
 - Kiwi (bird): its egg can weigh 20% of the mother, and its closest relative is the extinct elephant bird of Madagascar, not the moa
 - Tuatara (2009): it isn't a lizard but the last of an ancient order, and a male named Henry became a father at 111
 - Sloth: its fur grows algae that feed moths found nowhere else, and it climbs down about once a week to use the bathroom

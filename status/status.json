@@ -1,28 +1,34 @@
 {
-  "updated_at": "2026-09-30T20:58:43+05:30",
-  "day": -3,
+  "updated_at": "2026-09-30T21:16:28+05:30",
+  "day": -1,
   "result": "ok",
   "run": {
-    "host": "github-actions",
-    "id": "36736906892",
-    "number": "6",
-    "trigger": "workflow_dispatch",
-    "started_at": "2026-09-30T20:58:31+05:30",
-    "started_at_utc": "2026-09-30T15:28:31+00:00",
-    "seconds": 12
+    "host": "modal",
+    "id": "ta-01M3SFWX8VC4BPARB5MKHFTGCR",
+    "number": null,
+    "trigger": "manual",
+    "started_at": "2026-09-30T21:16:05+05:30",
+    "started_at_utc": "2026-09-30T15:46:05+00:00",
+    "seconds": 23
   },
   "stages": [
+    {
+      "name": "deploy",
+      "ok": true,
+      "detail": "",
+      "seconds": 2.0
+    },
     {
       "name": "sync",
       "ok": true,
       "detail": "0 posts",
-      "seconds": 0.3
+      "seconds": 0.7
     },
     {
       "name": "playlists",
       "ok": true,
       "detail": "nothing new",
-      "seconds": 0.5
+      "seconds": 1.0
     },
     {
       "name": "on youtube",
@@ -33,14 +39,44 @@
     {
       "name": "collect",
       "ok": true,
-      "detail": "ep004 unfinished (RuntimeError: ep004 script still breaks the rules: ['Use 105 to 135 spoken words in total (you have 103).']); ep005 still working (1.0 h); ep006 unfinished (RuntimeError: ep006 script still breaks the rules: ['Use 105 to 135 spoken words in total (you have 103).', 'The hook (beat 1) must be 12 words or fewer (it has 13).']); ep007 still working (0.9 h); ep008 still working (0.9 h); ep009 still working (0.9 h)",
-      "seconds": 11.2
+      "detail": "ep005 rejected (low scores: visuals; 2 frame problems); ep007 still working (1.2 h); ep008 still working (1.2 h); ep009 still working (1.2 h)",
+      "seconds": 8.4
     },
     {
       "name": "buffer channel",
       "ok": true,
       "detail": "connected",
       "seconds": 0.2
+    },
+    {
+      "name": "publish",
+      "ok": true,
+      "detail": "",
+      "seconds": 0.0
+    },
+    {
+      "name": "start ep006",
+      "ok": true,
+      "detail": "Sperm whale: the loudest animal on Earth, at 236 decibels, with the largest brain of any animal",
+      "seconds": 0.7
+    },
+    {
+      "name": "start ep010",
+      "ok": true,
+      "detail": "Narwhal: the \"horn\" is a spiral left canine tooth up to 3 meters long, packed with millions of nerve endings",
+      "seconds": 0.6
+    },
+    {
+      "name": "start ep011",
+      "ok": true,
+      "detail": "Coelacanth (1938): a fish thought extinct for 66 million years turned up in a South African fisherman's catch on December 22, 1938",
+      "seconds": 0.9
+    },
+    {
+      "name": "start ep012",
+      "ok": true,
+      "detail": "Colossal squid (2025): it has the largest eyes of any animal known to have existed, and was first filmed alive in its habitat on March 9, 2025",
+      "seconds": 0.6
     },
     {
       "name": "publish",
@@ -57,43 +93,54 @@
     "in_buffer": 0,
     "waiting": 0,
     "target": 42,
-    "making": [
-      "ep004",
-      "ep006"
-    ],
+    "making": [],
     "remote": [
-      "ep005",
+      "ep006",
       "ep007",
       "ep008",
-      "ep009"
+      "ep009",
+      "ep010",
+      "ep011",
+      "ep012"
     ]
   },
   "queue": [],
   "waiting": [],
   "made": [
     {
-      "id": "ep004",
-      "outcome": "unfinished",
-      "topic": "Giant squid (2004): nobody photographed a live one in its habitat until September 30, 2004, and its eyes reach at least 27 cm across",
-      "reason": "RuntimeError: ep004 script still breaks the rules: ['Use 105 to 135 spoken words in total (you have 103).']",
-      "quota": false,
-      "overloaded": false
-    },
-    {
-      "id": "ep006",
-      "outcome": "unfinished",
-      "topic": "Sperm whale: the loudest animal on Earth, at 236 decibels, with the largest brain of any animal",
-      "reason": "RuntimeError: ep006 script still breaks the rules: ['Use 105 to 135 spoken words in total (you have 103).', 'The hook (beat 1) must be 12 words or fewer (it has 13).']",
-      "quota": false,
-      "overloaded": false
+      "id": "ep005",
+      "outcome": "rejected",
+      "topic": "Platypus (1799): the first scientists to examine one thought it was a fake sewn together from several animals, and it glows under ultraviolet light",
+      "reason": "low scores: visuals; 2 frame problems"
     }
   ],
-  "spawned": [],
+  "spawned": [
+    {
+      "id": "ep006",
+      "topic": "Sperm whale: the loudest animal on Earth, at 236 decibels, with the largest brain of any animal",
+      "call_id": "fc-01M3SFXSFT7CFHGTV7WH14WJ9K"
+    },
+    {
+      "id": "ep010",
+      "topic": "Narwhal: the \"horn\" is a spiral left canine tooth up to 3 meters long, packed with millions of nerve endings",
+      "call_id": "fc-01M3SFXT29KDZBSGQ1KYCQZXJS"
+    },
+    {
+      "id": "ep011",
+      "topic": "Coelacanth (1938): a fish thought extinct for 66 million years turned up in a South African fisherman's catch on December 22, 1938",
+      "call_id": "fc-01M3SFXTXB0ZM39Y90FSDCCE27"
+    },
+    {
+      "id": "ep012",
+      "topic": "Colossal squid (2025): it has the largest eyes of any animal known to have existed, and was first filmed alive in its habitat on March 9, 2025",
+      "call_id": "fc-01M3SFXVH5Z3HMKQEX4VPG5FPA"
+    }
+  ],
   "in_cloud": [
     {
-      "id": "ep005",
-      "topic": "Platypus (1799): the first scientists to examine one thought it was a fake sewn together from several animals, and it glows under ultraviolet light",
-      "spawned_at": "2026-09-30T20:01:10+05:30"
+      "id": "ep006",
+      "topic": "Sperm whale: the loudest animal on Earth, at 236 decibels, with the largest brain of any animal",
+      "spawned_at": "2026-09-30T21:16:26+05:30"
     },
     {
       "id": "ep007",
@@ -109,6 +156,21 @@
       "id": "ep009",
       "topic": "Axolotl: it can regrow limbs and even parts of its heart and brain, yet only about 50 to 1,000 adults are left in the wild",
       "spawned_at": "2026-09-30T20:03:06+05:30"
+    },
+    {
+      "id": "ep010",
+      "topic": "Narwhal: the \"horn\" is a spiral left canine tooth up to 3 meters long, packed with millions of nerve endings",
+      "spawned_at": "2026-09-30T21:16:27+05:30"
+    },
+    {
+      "id": "ep011",
+      "topic": "Coelacanth (1938): a fish thought extinct for 66 million years turned up in a South African fisherman's catch on December 22, 1938",
+      "spawned_at": "2026-09-30T21:16:27+05:30"
+    },
+    {
+      "id": "ep012",
+      "topic": "Colossal squid (2025): it has the largest eyes of any animal known to have existed, and was first filmed alive in its habitat on March 9, 2025",
+      "spawned_at": "2026-09-30T21:16:28+05:30"
     }
   ],
   "published": [],
@@ -118,25 +180,31 @@
   "llm": {
     "calls": 8,
     "by_model": {
-      "gemini-3-flash-preview": 1,
-      "gemini-3.5-flash-lite": 7
+      "gemini-3-flash-preview": 3,
+      "gemini-3.5-flash-lite": 2,
+      "gemma-4-31b-it": 3
     },
     "out_of_quota": []
   },
   "renders": {
-    "modal": 0,
+    "modal": 3,
     "runner": 0
   },
   "daily_done": "2026-09-30",
-  "minutes_this_month": 12.20668962735,
+  "minutes_this_month": 12.0,
   "minutes_budget": 2000,
   "modal_cost": {
-    "metered": 1.63,
+    "metered": 1.71,
     "billed": 0.0
   },
   "modal_credit": 30.0,
-  "capacity": null,
+  "capacity": {
+    "cloud": 216,
+    "runner": 0,
+    "runner_minutes": 0,
+    "modal_credit_left": 25.93
+  },
   "made_here": 0,
-  "open_topics": 108,
-  "parked_topics": 0
+  "open_topics": 105,
+  "parked_topics": 2
 }

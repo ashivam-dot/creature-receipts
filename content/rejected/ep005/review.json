@@ -1,0 +1,164 @@
+{
+  "rounds": [
+    {
+      "at": "2026-09-30T20:55:31+05:30",
+      "check": {
+        "duration": 44.4,
+        "words": 107,
+        "integrated_lufs": -14.1,
+        "true_peak_dbfs": -1.8,
+        "warnings": [],
+        "speech_differences": [
+          "'s' heard as 'is' after 'stitched a duck'"
+        ],
+        "speech_error": null,
+        "sources": [
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Bio_diversity via Openverse",
+          "designed card",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "designed card",
+          "Wikimedia Commons"
+        ]
+      },
+      "scores": {
+        "hook": 5,
+        "clarity": 5,
+        "payoff": 4,
+        "visuals": 3,
+        "loop": 5
+      },
+      "notes": {
+        "hook": "Strong, bizarre image and immediate curiosity about the scissors.",
+        "clarity": "Very clear narrative arc and progression of ideas.",
+        "payoff": "The reveal of the platypus's biological absurdity justifies the original confusion.",
+        "visuals": "Beat 3 is completely off-topic; it shows ducks instead of a beaver-like body or the animal in question.",
+        "loop": "The final sentence leads perfectly back into the first beat's action."
+      },
+      "frames": [
+        {
+          "beat": 3,
+          "problem": "Shows ducks; doesn't illustrate the 'beaver-like body' or the platypus hoax mentioned in the script."
+        }
+      ],
+      "speech": [],
+      "rewrite": [],
+      "better_than_last": "First Short evaluated.",
+      "judge": "gemma-4-31b-it",
+      "passed": false
+    },
+    {
+      "at": "2026-09-30T21:10:34+05:30",
+      "check": {
+        "duration": 44.4,
+        "words": 107,
+        "integrated_lufs": -14.1,
+        "true_peak_dbfs": -1.9,
+        "warnings": [],
+        "speech_differences": [
+          "'s' heard as 'is' after 'stitched a duck'"
+        ],
+        "speech_error": null,
+        "sources": [
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "iNaturalist",
+          "Bio_diversity via Openverse",
+          "designed card",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "designed card",
+          "Wikimedia Commons"
+        ]
+      },
+      "scores": {
+        "hook": 5,
+        "clarity": 4,
+        "payoff": 4,
+        "visuals": 3,
+        "loop": 5
+      },
+      "notes": {
+        "hook": "Strong curiosity gap with the scissors claim.",
+        "clarity": "The flow from the hoax to the biology is clear, though the transition to monotremes is a bit abrupt.",
+        "payoff": "The biological weirdness justifies the initial confusion well.",
+        "visuals": "The duck image in beat 3 is out of place and contradicts the 'beaver-like' description visually.",
+        "loop": "Perfectly seamless transition back to the start."
+      },
+      "frames": [
+        {
+          "beat": 3,
+          "problem": "Shows a mallard duck instead of a beaver-like body, making the 'beaver-like' caption confusing."
+        }
+      ],
+      "speech": [],
+      "rewrite": [
+        "Beat 3: He thought someone had stitched a duck's beak onto a beaver's body."
+      ],
+      "better_than_last": "This is the first Short, establishing a strong template for storytelling and looping.",
+      "judge": "gemma-4-31b-it",
+      "passed": false
+    },
+    {
+      "at": "2026-09-30T21:14:00+05:30",
+      "check": {
+        "duration": 44.4,
+        "words": 107,
+        "integrated_lufs": -14.1,
+        "true_peak_dbfs": -2.0,
+        "warnings": [],
+        "speech_differences": [
+          "'s' heard as 'is' after 'stitched a duck'"
+        ],
+        "speech_error": null,
+        "sources": [
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "iNaturalist",
+          "Bio_diversity via Openverse",
+          "designed card",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "designed card",
+          "Wikimedia Commons"
+        ]
+      },
+      "scores": {
+        "hook": 5,
+        "clarity": 5,
+        "payoff": 4,
+        "visuals": 3,
+        "loop": 5
+      },
+      "notes": {
+        "hook": "The 'scissor test' on an animal is a strong, curiosity-inducing start.",
+        "clarity": "The story progresses logically from the hoax suspicion to the biological reality.",
+        "payoff": "The list of strange traits justifies the initial confusion and makes the 'scissors' conclusion satisfying.",
+        "visuals": "Beat 3 shows ducks instead of a beaver-like body, and Beat 6 uses the same illustration as Beat 4.",
+        "loop": "Perfectly loops back to the first line using the repetition of the scissor action."
+      },
+      "frames": [
+        {
+          "beat": 3,
+          "problem": "Shows ducks; should show a beaver or a 'beaver-like body' as mentioned in the script."
+        },
+        {
+          "beat": 6,
+          "problem": "Duplicate image from beat 4."
+        }
+      ],
+      "speech": [],
+      "rewrite": [],
+      "better_than_last": "This is the first Short, establishing a strong baseline for narrative structure and looping.",
+      "judge": "gemma-4-31b-it",
+      "passed": false
+    }
+  ],
+  "best_round": 1,
+  "verdict": "rejected",
+  "reason": "low scores: visuals; 2 frame problems",
+  "rejected_at": "2026-09-30T21:14:00+05:30"
+}
