@@ -4,7 +4,7 @@ channel's Cursor key) when none of those can answer. YTC_LLM_FIRST=cursor puts C
 
 Gemini answers in about 15 seconds and Cursor in 2 to 5 minutes, which is most of what a Short costs on the runner.
 
-Each Gemini model has its own free quota on the AI Studio project of aksha.shivam18@gmail.com (Flash models: 5 requests a minute
+Each Gemini model has its own free quota on the AI Studio project `creature-receipts` (on akshshivam5@gmail.com) (Flash models: 5 requests a minute
 and 20 a day; Flash Lite: 15 a minute and 500 a day), so a run steps down a ladder as models run out. Everything
 starts on Flash but the picture checks, which start on Flash Lite; once Flash is spent, the review waits for its
 reset while plenty of Shorts are ready (studio.review), and the rest goes on with the models below it.
@@ -125,7 +125,7 @@ def _key() -> str:
     # Not GEMINI_API_KEY: on the owner's Mac that name holds an unrelated work key.
     if key := os.environ.get("YTC_GEMINI_API_KEY"):
         return key
-    raise RuntimeError("YTC_GEMINI_API_KEY is not set (AI Studio key on aksha.shivam18@gmail.com)")
+    raise RuntimeError("YTC_GEMINI_API_KEY is not set (AI Studio key from the creature-receipts project on akshshivam5@gmail.com)")
 
 
 def _media_part(media: Path | bytes) -> dict:
