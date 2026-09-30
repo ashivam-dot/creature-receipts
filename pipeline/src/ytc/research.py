@@ -275,12 +275,17 @@ def research(topic: str, series: str) -> dict:
     by_label = {s.label: s for s in sources}
     kept = []
     for claim in found.get("claims", []):
-        labels = [label for label in dict.fromkeys(claim["sources"]) if label in by_label]
+        # Backup models cite as "[S1]", "S1, S3", or "S1 (Wikipedia)".
+        cited = re.findall(r"S\d+", " ".join(claim["sources"]).upper())
+        labels = [label for label in dict.fromkeys(cited) if label in by_label]
         if len({by_label[label].site for label in labels}) >= 2:
             kept.append({**claim, "sources": labels})
     dropped = len(found.get("claims", [])) - len(kept)
     if dropped:
         log.info("dropped %d claims without two different sites", dropped)
+    if not kept and len(found.get("claims", [])) >= 8:
+        # Every claim lost its citations: the answer is malformed, not the topic weak. A later run asks again.
+        raise RuntimeError(f"research answer cited no usable sources ({llm.answered_by()}); asking again next run")
     found["claims"] = kept
     if found.get("viable") and len(kept) < 8:
         found["viable"] = False
