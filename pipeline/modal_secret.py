@@ -23,7 +23,7 @@ REPO = "ashivam-dot/creature-receipts"
 SECRET = "creature-receipts-studio"
 FROM_ENV = ("YTC_CONTACT", "BUFFER_API_KEY", "BUFFER_YOUTUBE_CHANNEL_ID", "CLOUDINARY_URL", "YTC_GEMINI_API_KEY",
             "YTC_MISTRAL_API_KEY", "YTC_OPENROUTER_API_KEY", "YTC_CURSOR_API_KEY", "YTC_NTFY_TOPIC",
-            "BUFFER_TIKTOK_CHANNEL_ID", "BUFFER_INSTAGRAM_CHANNEL_ID")
+            "BUFFER_TIKTOK_CHANNEL_ID", "BUFFER_INSTAGRAM_CHANNEL_ID", "PEXELS_API_KEY", "PIXABAY_API_KEY")
 # Modal's monthly credit (auto.MODAL_CREDIT) when YTC_MODAL_CREDIT isn't in pipeline/.env: the Starter plan's $1.
 # With a card on file it's $30; set YTC_MODAL_CREDIT=30 then.
 MODAL_CREDIT = "1"
