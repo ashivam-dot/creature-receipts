@@ -22,7 +22,9 @@ Two optional steps help, in order of value:
 - **Google Cloud:** project `shorts-studio-two`, YouTube Data and Analytics APIs, OAuth app "Creature Receipts
   tools" in production (home page and privacy policy on GitHub Pages), signed in as the channel for stats and
   playlists.
-- **Gemini, Buffer, Cloudinary:** accounts on your Google address (Buffer by email: use **Forgot password** at
+- **Gemini:** a free key from the AI Studio project `creature-receipts` on akshshivam5@gmail.com, because
+  Google restricts the Gemini API on aksha.shivam18 until billing is set up.
+- **Buffer, Cloudinary:** accounts on your Google address (Buffer by email: use **Forgot password** at
   <https://login.buffer.com> if you ever want to sign in yourself). Keys in `pipeline/.env`, the Modal secret,
   and the GitHub repository's secrets.
 - **Modal:** shares Universe Receipts' workspace (akshshivam5), its card, its $0 spend limit, and its $30 a
