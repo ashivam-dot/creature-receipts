@@ -1,0 +1,44 @@
+name: scout
+
+# Once a day, looks for free models and open-source projects that could make the studio better (monitor/scout.py)
+# and sends what's new to the owner's phone through ntfy. Read-only: it changes nothing.
+on:
+  schedule:
+    - cron: "20 3 * * *"
+  workflow_dispatch:
+
+concurrency:
+  group: scout
+  cancel-in-progress: false
+
+permissions:
+  contents: read
+
+jobs:
+  scout:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v7
+
+      # What was already reported, so each find reaches the phone once.
+      - name: Restore what was already seen
+        uses: actions/cache/restore@v6
+        with:
+          path: monitor/out/scout.json
+          key: scout-${{ github.run_id }}
+          restore-keys: scout-
+
+      - name: Look
+        env:
+          GH_TOKEN: ${{ github.token }}
+          YTC_GEMINI_API_KEY: ${{ secrets.YTC_GEMINI_API_KEY }}
+          YTC_NTFY_TOPIC: ${{ secrets.YTC_NTFY_TOPIC }}
+        run: python3 monitor/scout.py
+
+      - name: Remember what was seen
+        if: always()
+        uses: actions/cache/save@v6
+        with:
+          path: monitor/out/scout.json
+          key: scout-${{ github.run_id }}
