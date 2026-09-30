@@ -1,0 +1,124 @@
+id: ep007
+title: The Real Bear Behind Winnie-the-Pooh
+series: Animal Myths, Busted
+description: Discover the true story of Winnipeg, the real black bear cub bought by a Canadian veterinarian who inspired Winnie-the-Pooh.
+sources:
+- https://en.wikipedia.org/wiki/Winnipeg_(bear)
+- https://www.history.com/articles/the-true-story-of-the-real-life-winnie-the-pooh
+- https://www.cbc.ca/archives/winnie-the-pooh-s-canadian-connection-1.4771902
+- https://funfactz.com/history/winnie-the-pooh-real-bear-harry-colebourn-winnipeg
+- https://behindeveryday.com/bear-behind-the-bear/
+- https://www.bbc.co.uk/news/education-34844669
+- https://www.bbc.com/news/uk-england-wiltshire-46894312
+hashtags:
+- '#animals'
+- '#history'
+- '#bears'
+tags:
+- Winnie the Pooh
+- black bear
+- World War I
+- Harry Colebourn
+- London Zoo
+voice:
+  voice: af_heart
+  speed: 1.05
+beats:
+- text: Winnie-the-Pooh was bought for twenty dollars at a Canadian train stop.
+  emphasis:
+  - twenty dollars
+  - train stop
+  sfx: whoosh
+  visual:
+    source: url
+    url: https://thumb.wikimedia.org/wikipedia/commons/thumb/7/70/William_H._Wright_with_Ben.jpg/1920px-William_H._Wright_with_Ben.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
+    credit:
+      source: Wikimedia Commons
+      title: William H. Wright with Ben.jpg
+      credit: Wright, William H. (William Henry), 1856-1934
+      license: No restrictions
+      url: https://commons.wikimedia.org/wiki/File:William_H._Wright_with_Ben.jpg
+    fallbacks:
+    - card
+    - color
+    motion: pan_down
+    focus_x: 0.5
+    focus_y: 0.5
+    card:
+      kind: dateline
+      big: August 1914
+      small: White River, Ontario
+- text: In August 1914, Canadian veterinarian Lieutenant Harry [Colebourn](/kˈOlbˈɔɹn/) purchased an orphaned black bear cub.
+  emphasis:
+  - Harry Colebourn
+  - orphaned black bear
+  visual:
+    source: url
+    url: https://upload.wikimedia.org/wikipedia/commons/5/55/Winnie_The_Pet.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    credit:
+      source: Wikimedia Commons
+      title: Winnie The Pet.jpg
+      credit: Unknown, Colebourn Collection
+      license: Public domain
+      url: https://commons.wikimedia.org/wiki/File:Winnie_The_Pet.jpg
+    fallbacks:
+    - color
+    motion: pan_up
+    focus_x: 0.5
+    focus_y: 0.5
+- text: He named her Winnipeg after his hometown, and she became the official mascot of the Canadian Army Veterinary Corps.
+  emphasis:
+  - Winnipeg
+  - official mascot
+  sfx: riser
+  visual:
+    reuse: 2
+    motion: zoom_in
+    focus_x: 0.5
+    focus_y: 0.5
+- text: The bear sailed across the Atlantic aboard the S.S. Manitou in October 1914 with troops heading to England.
+  emphasis:
+  - S.S. Manitou
+  - October 1914
+  sfx: whoosh
+  visual:
+    source: card
+    card:
+      kind: dateline
+      big: October 1914
+      small: Atlantic Ocean
+    motion: zoom_in
+- text: After living with the troops at Salisbury Plain, [Colebourn](/kˈOlbˈɔɹn/) left Winnie safely at the London Zoo.
+  emphasis:
+  - Salisbury Plain
+  - London Zoo
+  visual:
+    source: card
+    card:
+      kind: fact
+      big: Salisbury Plain
+      small: ''
+    motion: zoom_in
+- text: There, a young boy named Christopher Robin [Milne](/mˈɪln/) fell in love with the gentle bear.
+  emphasis:
+  - Christopher Robin Milne
+  - gentle bear
+  sfx: pop
+  pause_after: 0.4
+  visual:
+    source: card
+    card:
+      kind: fact
+      big: Christopher Robin Milne
+      small: ''
+    motion: zoom_in
+- text: He renamed his own teddy bear in her honor, directly inspiring Winnie-the-Pooh.
+  emphasis:
+  - teddy bear
+  - Winnie-the-Pooh
+  sfx: pop
+  visual:
+    reuse: 1
+    motion: zoom_out
+    focus_x: 0.5
+    focus_y: 0.5

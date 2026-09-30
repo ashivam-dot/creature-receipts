@@ -1,34 +1,34 @@
 {
-  "updated_at": "2026-09-30T21:21:15+05:30",
+  "updated_at": "2026-09-30T22:26:19+05:30",
   "day": -1,
   "result": "ok",
   "run": {
     "host": "modal",
-    "id": "ta-01M3SG687XD16CE3C4KWYMF85R",
+    "id": "ta-01M3SKWE0P9KEM0J68AKE40RQR",
     "number": null,
     "trigger": "manual",
-    "started_at": "2026-09-30T21:21:08+05:30",
-    "started_at_utc": "2026-09-30T15:51:08+00:00",
-    "seconds": 7
+    "started_at": "2026-09-30T22:25:42+05:30",
+    "started_at_utc": "2026-09-30T16:55:42+00:00",
+    "seconds": 37
   },
   "stages": [
     {
       "name": "deploy",
       "ok": true,
       "detail": "",
-      "seconds": 1.2
+      "seconds": 1.5
     },
     {
       "name": "sync",
       "ok": true,
       "detail": "0 posts",
-      "seconds": 0.3
+      "seconds": 0.5
     },
     {
       "name": "playlists",
       "ok": true,
       "detail": "nothing new",
-      "seconds": 0.6
+      "seconds": 0.7
     },
     {
       "name": "on youtube",
@@ -39,44 +39,56 @@
     {
       "name": "collect",
       "ok": true,
-      "detail": "ep006 still working (0.1 h); ep007 still working (1.3 h); ep008 still working (1.3 h); ep009 still working (1.3 h); ep010 still working (0.1 h); ep011 still working (0.1 h); ep012 still working (0.1 h)",
-      "seconds": 0.8
+      "detail": "ep006 unfinished (Overloaded: every model in ('ovh:Qwen3.5-397B-A17B', 'ovh:Qwen3.8-27B', 'ovh:Qwen3.6-27B') with quota left stayed overloaded for 25 minutes); ep007 rejected (low scores: visuals; 3 frame problems); ep008 ready; ep009 ready; ep010 rejected (research: only 0 claims have two different sites); ep011 still working (1.2 h); ep012 still working (1.2 h); ep013 still working (1.1 h); ep014 rejected (research: only 0 claims have two different sites); ep015 still working (1.1 h); ep016 still working (1.1 h)",
+      "seconds": 18.6
     },
     {
       "name": "buffer channel",
       "ok": true,
       "detail": "connected",
-      "seconds": 0.2
+      "seconds": 0.3
     },
     {
       "name": "publish",
       "ok": true,
       "detail": "",
-      "seconds": 0.0
+      "seconds": 2.9
     },
     {
-      "name": "start ep013",
+      "name": "schedule ep008",
       "ok": true,
-      "detail": "Ming (clam) (2006): a clam dredged off Iceland turned out to be 507 years old",
-      "seconds": 0.4
+      "detail": "2026-10-04T19:00:00-04:00",
+      "seconds": 1.1
     },
     {
-      "name": "start ep014",
+      "name": "schedule ep009",
       "ok": true,
-      "detail": "Hippopotamus: hippo \"blood sweat\" is neither blood nor sweat but a natural red sunscreen",
-      "seconds": 0.2
+      "detail": "2026-09-30T19:00:00-04:00",
+      "seconds": 1.3
     },
     {
-      "name": "start ep015",
+      "name": "start ep006",
       "ok": true,
-      "detail": "Tardigrade (1773): named \"little water bear\" in 1773, a dried-out one can survive from −272 °C to 149 °C, at least briefly",
-      "seconds": 0.2
+      "detail": "Sperm whale: the loudest animal on Earth, at 236 decibels, with the largest brain of any animal",
+      "seconds": 0.7
     },
     {
-      "name": "start ep016",
+      "name": "start ep017",
       "ok": true,
-      "detail": "Platypus (1799): the first scientists to examine one thought it was a fake sewn together from several animals, and it glows under ultraviolet light",
-      "seconds": 0.2
+      "detail": "Great white shark: the \"Jaws\" man-eater normally doesn't hunt people, and most bites come from curiosity or mistaken identity",
+      "seconds": 0.6
+    },
+    {
+      "name": "start ep018",
+      "ok": true,
+      "detail": "Dire wolf (2025): the \"dire wolf\" pups announced in 2025 were gray wolves with 20 edits to 14 genes",
+      "seconds": 0.8
+    },
+    {
+      "name": "start ep019",
+      "ok": true,
+      "detail": "Giant squid (2004): nobody photographed a live one in its habitat until September 30, 2004, and its eyes reach at least 27 cm across",
+      "seconds": 0.6
     },
     {
       "name": "publish",
@@ -87,77 +99,124 @@
   ],
   "errors": [],
   "owner_action": [],
-  "notes": [],
+  "notes": [
+    "ep006 stopped on Gemini's free tier being overloaded; it resumes in a later run",
+    "only 2 Shorts made and unposted; scheduling 1 a day"
+  ],
   "inventory": {
-    "total": 0,
-    "in_buffer": 0,
+    "total": 2,
+    "in_buffer": 2,
     "waiting": 0,
     "target": 42,
     "making": [],
     "remote": [
       "ep006",
-      "ep007",
-      "ep008",
-      "ep009",
-      "ep010",
       "ep011",
       "ep012",
       "ep013",
-      "ep014",
       "ep015",
-      "ep016"
+      "ep016",
+      "ep017",
+      "ep018",
+      "ep019"
     ]
   },
-  "queue": [],
-  "waiting": [],
-  "made": [],
-  "spawned": [
+  "queue": [
     {
-      "id": "ep013",
-      "topic": "Ming (clam) (2006): a clam dredged off Iceland turned out to be 507 years old",
-      "call_id": "fc-01M3SG6KHVB0JM6PH4NKND0REA"
+      "id": "ep009",
+      "title": "The Smiling Salamander That Can Regrow Its Brain",
+      "due_at": "2026-09-30T19:00:00-04:00"
+    },
+    {
+      "id": "ep008",
+      "title": "Cher Ami's True WWI Mission",
+      "due_at": "2026-10-04T19:00:00-04:00"
+    }
+  ],
+  "waiting": [],
+  "made": [
+    {
+      "id": "ep006",
+      "outcome": "unfinished",
+      "topic": "Sperm whale: the loudest animal on Earth, at 236 decibels, with the largest brain of any animal",
+      "reason": "Overloaded: every model in ('ovh:Qwen3.5-397B-A17B', 'ovh:Qwen3.8-27B', 'ovh:Qwen3.6-27B') with quota left stayed overloaded for 25 minutes",
+      "quota": false,
+      "overloaded": true
+    },
+    {
+      "id": "ep007",
+      "outcome": "rejected",
+      "topic": "Winnipeg (bear) (1914): the real bear behind Winnie-the-Pooh was a black bear cub bought for $20 at an Ontario train stop, who sailed for England with Canadian troops on October 3",
+      "reason": "low scores: visuals; 3 frame problems"
+    },
+    {
+      "id": "ep008",
+      "outcome": "ready",
+      "topic": "Cher Ami (1918): the famous pigeon story says he was shot and lost a leg flying for the Lost Battalion on October 4, but the Signal Corps record puts his wounds weeks later",
+      "title": "Cher Ami's True WWI Mission",
+      "scores": {
+        "hook": 4,
+        "clarity": 5,
+        "payoff": 4,
+        "visuals": 4,
+        "loop": 5
+      },
+      "media_url": "https://res.cloudinary.com/uj4a07e7/video/upload/v1790785527/creaturereceipts/ep008-981824ad.mp4"
+    },
+    {
+      "id": "ep009",
+      "outcome": "ready",
+      "topic": "Axolotl: it can regrow limbs and even parts of its heart and brain, yet only about 50 to 1,000 adults are left in the wild",
+      "title": "The Smiling Salamander That Can Regrow Its Brain",
+      "scores": {
+        "hook": 4,
+        "clarity": 5,
+        "payoff": 4,
+        "visuals": 4,
+        "loop": 5
+      },
+      "media_url": "https://res.cloudinary.com/uj4a07e7/video/upload/v1790785028/creaturereceipts/ep009-452cfe3d.mp4"
+    },
+    {
+      "id": "ep010",
+      "outcome": "rejected",
+      "topic": "Narwhal: the \"horn\" is a spiral left canine tooth up to 3 meters long, packed with millions of nerve endings",
+      "reason": "research: only 0 claims have two different sites"
     },
     {
       "id": "ep014",
+      "outcome": "rejected",
       "topic": "Hippopotamus: hippo \"blood sweat\" is neither blood nor sweat but a natural red sunscreen",
-      "call_id": "fc-01M3SG6KQ74V94GNXCQN7WPWJS"
+      "reason": "research: only 0 claims have two different sites"
+    }
+  ],
+  "spawned": [
+    {
+      "id": "ep006",
+      "topic": "Sperm whale: the loudest animal on Earth, at 236 decibels, with the largest brain of any animal",
+      "call_id": "fc-01M3SKXNYNT3GK48SMDSA9H3CS"
     },
     {
-      "id": "ep015",
-      "topic": "Tardigrade (1773): named \"little water bear\" in 1773, a dried-out one can survive from −272 °C to 149 °C, at least briefly",
-      "call_id": "fc-01M3SG6KX5PYWPNTVXA4AYHW61"
+      "id": "ep017",
+      "topic": "Great white shark: the \"Jaws\" man-eater normally doesn't hunt people, and most bites come from curiosity or mistaken identity",
+      "call_id": "fc-01M3SKXPK371A1SJTX7JSF6XRM"
     },
     {
-      "id": "ep016",
-      "topic": "Platypus (1799): the first scientists to examine one thought it was a fake sewn together from several animals, and it glows under ultraviolet light",
-      "call_id": "fc-01M3SG6M2JNZPHA9MS0P80HH6J"
+      "id": "ep018",
+      "topic": "Dire wolf (2025): the \"dire wolf\" pups announced in 2025 were gray wolves with 20 edits to 14 genes",
+      "call_id": "fc-01M3SKXQBQKEACY03G38NH0D5G"
+    },
+    {
+      "id": "ep019",
+      "topic": "Giant squid (2004): nobody photographed a live one in its habitat until September 30, 2004, and its eyes reach at least 27 cm across",
+      "call_id": "fc-01M3SKXQXVMQM9HQ0VE7R66M17"
     }
   ],
   "in_cloud": [
     {
       "id": "ep006",
       "topic": "Sperm whale: the loudest animal on Earth, at 236 decibels, with the largest brain of any animal",
-      "spawned_at": "2026-09-30T21:16:26+05:30"
-    },
-    {
-      "id": "ep007",
-      "topic": "Winnipeg (bear) (1914): the real bear behind Winnie-the-Pooh was a black bear cub bought for $20 at an Ontario train stop, who sailed for England with Canadian troops on October 3",
-      "spawned_at": "2026-09-30T20:03:05+05:30"
-    },
-    {
-      "id": "ep008",
-      "topic": "Cher Ami (1918): the famous pigeon story says he was shot and lost a leg flying for the Lost Battalion on October 4, but the Signal Corps record puts his wounds weeks later",
-      "spawned_at": "2026-09-30T20:03:06+05:30"
-    },
-    {
-      "id": "ep009",
-      "topic": "Axolotl: it can regrow limbs and even parts of its heart and brain, yet only about 50 to 1,000 adults are left in the wild",
-      "spawned_at": "2026-09-30T20:03:06+05:30"
-    },
-    {
-      "id": "ep010",
-      "topic": "Narwhal: the \"horn\" is a spiral left canine tooth up to 3 meters long, packed with millions of nerve endings",
-      "spawned_at": "2026-09-30T21:16:27+05:30"
+      "spawned_at": "2026-09-30T22:26:17+05:30"
     },
     {
       "id": "ep011",
@@ -175,11 +234,6 @@
       "spawned_at": "2026-09-30T21:21:15+05:30"
     },
     {
-      "id": "ep014",
-      "topic": "Hippopotamus: hippo \"blood sweat\" is neither blood nor sweat but a natural red sunscreen",
-      "spawned_at": "2026-09-30T21:21:15+05:30"
-    },
-    {
       "id": "ep015",
       "topic": "Tardigrade (1773): named \"little water bear\" in 1773, a dried-out one can survive from −272 °C to 149 °C, at least briefly",
       "spawned_at": "2026-09-30T21:21:15+05:30"
@@ -188,36 +242,66 @@
       "id": "ep016",
       "topic": "Platypus (1799): the first scientists to examine one thought it was a fake sewn together from several animals, and it glows under ultraviolet light",
       "spawned_at": "2026-09-30T21:21:15+05:30"
+    },
+    {
+      "id": "ep017",
+      "topic": "Great white shark: the \"Jaws\" man-eater normally doesn't hunt people, and most bites come from curiosity or mistaken identity",
+      "spawned_at": "2026-09-30T22:26:17+05:30"
+    },
+    {
+      "id": "ep018",
+      "topic": "Dire wolf (2025): the \"dire wolf\" pups announced in 2025 were gray wolves with 20 edits to 14 genes",
+      "spawned_at": "2026-09-30T22:26:18+05:30"
+    },
+    {
+      "id": "ep019",
+      "topic": "Giant squid (2004): nobody photographed a live one in its habitat until September 30, 2004, and its eyes reach at least 27 cm across",
+      "spawned_at": "2026-09-30T22:26:19+05:30"
     }
   ],
-  "published": [],
+  "published": [
+    {
+      "id": "ep008",
+      "title": "Cher Ami's True WWI Mission",
+      "due_at": "2026-10-04T19:00:00-04:00"
+    },
+    {
+      "id": "ep009",
+      "title": "The Smiling Salamander That Can Regrow Its Brain",
+      "due_at": "2026-09-30T19:00:00-04:00"
+    }
+  ],
   "live": 0,
   "failed_posts": [],
   "not_live": [],
   "llm": {
-    "calls": 0,
-    "by_model": {},
+    "calls": 33,
+    "by_model": {
+      "ovh:Qwen3.8-27B": 2,
+      "gemini-3.5-flash-lite": 22,
+      "gemma-4-31b-it": 9
+    },
     "out_of_quota": []
   },
   "renders": {
-    "modal": 0,
+    "modal": 9,
     "runner": 0
   },
   "daily_done": "2026-09-30",
   "minutes_this_month": 12.0,
   "minutes_budget": 2000,
   "modal_cost": {
-    "metered": 1.81,
+    "metered": 2.59,
     "billed": 0.0
   },
   "modal_credit": 30.0,
   "capacity": {
-    "cloud": 211,
+    "cloud": 206,
     "runner": 0,
     "runner_minutes": 0,
-    "modal_credit_left": 25.35
+    "modal_credit_left": 24.82
   },
   "made_here": 0,
-  "open_topics": 103,
-  "parked_topics": 0
+  "open_topics": 100,
+  "parked_topics": 1
 }

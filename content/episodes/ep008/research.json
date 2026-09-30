@@ -1,0 +1,247 @@
+{
+  "viable": true,
+  "reason": "The sources provide enough verified details to build a surprising 45-second story with 12 atomic claims supported by multiple sites.",
+  "story": "During World War I on October 4, 1918, the American Lost Battalion was trapped in France's Argonne Forest and accidentally bombarded by friendly fire. Major Charles Whittlesey wrote a desperate plea for help and had pigeon handler Omer Richards release Cher Ami, a British-bred homing pigeon. As the bird took flight, German troops opened fire. Cher Ami was shot through the breast and had a leg nearly severed by a bullet or shrapnel, leaving the message tube hanging by a single tendon. Miraculously, the wounded bird took to the sky again, flying 25 miles back to headquarters in just 25 minutes. His flight stopped the friendly fire and helped save the 194 surviving men. Though popular legend claims he lost an eye and flew on October 4, official records and modern DNA analysis reveal he was biologically male and might actually have been wounded later in October.",
+  "angle": "The most famous pigeon of World War I—credited with saving the Lost Battalion after being shot through the breast and losing a leg—may have had his most famous heroic flight credited to him by mistake, according to military historians.",
+  "claims": [
+    {
+      "claim": "Cher Ami was a homing pigeon deployed by the U.S. Army Signal Corps during World War I.",
+      "sources": [
+        "S1",
+        "S2",
+        "S4",
+        "S5",
+        "S6"
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim": "On October 4, 1918, the Lost Battalion of the 77th Infantry Division was trapped and suffering from American friendly fire in the Argonne Forest.",
+      "sources": [
+        "S1",
+        "S2",
+        "S3",
+        "S4",
+        "S5",
+        "S6",
+        "S7"
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim": "Major Charles Whittlesey wrote the message asking to stop the friendly fire barrage.",
+      "sources": [
+        "S1",
+        "S2",
+        "S3",
+        "S4",
+        "S5",
+        "S6",
+        "S7"
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim": "Private Omer Richards released Cher Ami after another pigeon escaped when a shell startled them.",
+      "sources": [
+        "S1",
+        "S4",
+        "S7"
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim": "Cher Ami flew 25 miles in approximately 25 minutes back to division headquarters at Rampont.",
+      "sources": [
+        "S1",
+        "S2",
+        "S4",
+        "S5",
+        "S6",
+        "S7"
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim": "During the flight, Cher Ami was shot in the chest and had a leg nearly severed, with the message hanging by tendons.",
+      "sources": [
+        "S1",
+        "S2",
+        "S3",
+        "S4",
+        "S5",
+        "S6"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "claim": "Only 194 men walked out of the forest alive when the Lost Battalion was rescued.",
+      "sources": [
+        "S1",
+        "S2",
+        "S5",
+        "S6"
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim": "Cher Ami was awarded the French Croix de Guerre with a palm oak leaf cluster.",
+      "sources": [
+        "S1",
+        "S2",
+        "S4",
+        "S5",
+        "S6"
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim": "Cher Ami died on June 13, 1919, in Fort Monmouth, New Jersey, from the effects of his battle wounds.",
+      "sources": [
+        "S1",
+        "S2",
+        "S4",
+        "S5",
+        "S6"
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim": "Following his death, Cher Ami's taxidermied remains were placed on display at the Smithsonian Institution.",
+      "sources": [
+        "S1",
+        "S2",
+        "S3",
+        "S4",
+        "S5",
+        "S6"
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim": "While early Signal Corps records listed Cher Ami as a hen, a 2021 DNA analysis proved the bird was male.",
+      "sources": [
+        "S1",
+        "S3",
+        "S5"
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim": "Smithsonian curator Frank Blazich notes that official records suggest Cher Ami's actual wounding may have occurred later in October, creating historical uncertainty about the Lost Battalion connection.",
+      "sources": [
+        "S1",
+        "S2"
+      ],
+      "confidence": "medium"
+    }
+  ],
+  "disputed": [
+    "Whether Cher Ami actually flew for the Lost Battalion on October 4 or was wounded on October 21/27 from Grandpré. The script should attribute the Lost Battalion flight as popular legend or official Army promotion: \"according to popular legend\" or \"historians note official records point to a different date.\"",
+    "Whether Cher Ami was blinded in one eye. Photographs from 1919 show no evidence of an eye injury, so the script should leave out the eye injury claim."
+  ],
+  "visuals": [
+    {
+      "subject": "Columba livia",
+      "queries": [
+        "Columba livia",
+        "Rock pigeon wild type"
+      ]
+    },
+    {
+      "subject": "Smithsonian National Museum of Natural History",
+      "queries": [
+        "National Museum of Natural History Washington",
+        "Smithsonian Institution building exterior"
+      ]
+    },
+    {
+      "subject": "Meuse-Argonne Offensive terrain",
+      "queries": [
+        "Argonne Forest France WWI",
+        "Meuse-Argonne battlefield landscape"
+      ]
+    },
+    {
+      "subject": "World War I carrier pigeon message capsule",
+      "queries": [
+        "WWI pigeon message capsule",
+        "Carrier pigeon message holder"
+      ]
+    },
+    {
+      "subject": "General John J. Pershing",
+      "queries": [
+        "John J. Pershing WWI",
+        "General Pershing portrait"
+      ]
+    },
+    {
+      "subject": "Croix de Guerre medal",
+      "queries": [
+        "Croix de Guerre WWI medal",
+        "French Croix de Guerre palm"
+      ]
+    },
+    {
+      "subject": "Fort Monmouth New Jersey",
+      "queries": [
+        "Fort Monmouth historic buildings",
+        "Camp Alfred Vail WWI"
+      ]
+    },
+    {
+      "subject": "National Museum of American History",
+      "queries": [
+        "National Museum of American History interior",
+        "Price of Freedom exhibition Smithsonian"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "label": "S1",
+      "url": "https://en.wikipedia.org/wiki/Cher_Ami",
+      "title": "Cher Ami",
+      "site": "wikipedia.org"
+    },
+    {
+      "label": "S2",
+      "url": "https://www.smithsonianmag.com/smithsonian-institution/cher-ami-the-iconic-world-war-i-carrier-pigeon-makes-his-debut-at-carnegie-hall-180983212/",
+      "title": "Cher Ami, the Iconic World War I Carrier Pigeon, Makes His Debut at Carnegie Hall",
+      "site": "smithsonianmag.com"
+    },
+    {
+      "label": "S3",
+      "url": "https://web.archive.org/web/20210715194650/https://americanhistory.si.edu/blog/cher-ami",
+      "title": "He? She? Or just plain Cher Ami? Solving a century-old pigeon mystery",
+      "site": "si.edu"
+    },
+    {
+      "label": "S4",
+      "url": "https://www.military.com/daily-news/investigations-and-features/2026/02/06/how-wounded-pigeon-named-cher-ami-saved-lost-battalion-friendly-fire-wwi.html",
+      "title": "How a Wounded Pigeon Named Cher Ami Saved the Lost Battalion in WWI",
+      "site": "military.com"
+    },
+    {
+      "label": "S5",
+      "url": "https://www.thenmusa.org/biographies/cher-ami/",
+      "title": "Cher Ami",
+      "site": "thenmusa.org"
+    },
+    {
+      "label": "S6",
+      "url": "https://www.missedhistory.com/article/cher-ami-and-the-lost-battalion",
+      "title": "The Pigeons Who Won Medals: Cher Ami and the Lost Battalion | Missed History",
+      "site": "missedhistory.com"
+    },
+    {
+      "label": "S7",
+      "url": "https://www.historyhit.com/pigeon-hero-cher-ami-and-the-lost-battalion/",
+      "title": "Cher Ami: The Pigeon Hero that Saved the Lost Battalion",
+      "site": "historyhit.com"
+    }
+  ],
+  "topic": "Cher Ami (1918): the famous pigeon story says he was shot and lost a leg flying for the Lost Battalion on October 4, but the Signal Corps record puts his wounds weeks later",
+  "series": "Animal Myths, Busted"
+}

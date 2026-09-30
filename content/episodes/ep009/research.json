@@ -1,0 +1,218 @@
+{
+  "viable": true,
+  "reason": "The sources provide enough multi-sourced facts to support a surprising Short on the axolotl.",
+  "story": "The axolotl is a real-life superhero of the animal kingdom. This smiling Mexican salamander possesses the astonishing ability to completely regrow severed limbs, its tail, and even parts of its heart and brain. Yet while millions thrive in labs and home aquariums worldwide, their wild ancestors face a heartbreaking crisis. Native only to the shrinking water channels of Lake Xochimilco in Mexico City, wild axolotls have suffered a staggering population crash due to urban expansion, pollution, and invasive fish like tilapia that eat their eggs. Surveys indicate that only about 50 to 1,000 adult axolotls remain in the wild, leaving this iconic, forever-young amphibian critically endangered. Conservationists are now fighting to restore their natural wetland habitats and testing whether captive-bred individuals can successfully make a comeback in the wild.",
+  "angle": "An animal that can regrow its own brain and heart is critically endangered in the wild, with as few as 50 adults left.",
+  "claims": [
+    {
+      "claim": "The axolotl is native to the freshwater lakes and wetlands of Xochimilco and Chalco in the Valley of Mexico.",
+      "sources": [
+        "S1",
+        "S2"
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim": "Wild axolotls have a decreasing population estimated at around 50 to 1,000 adult individuals.",
+      "sources": [
+        "S1",
+        "S2"
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim": "The International Union for Conservation of Nature lists the axolotl as critically endangered.",
+      "sources": [
+        "S1",
+        "S2"
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim": "Axolotls are capable of tissue regeneration, including regrowing entire limbs, tails, tissues of the eye and heart, and parts of their brains.",
+      "sources": [
+        "S1",
+        "S2"
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim": "Axolotls exhibit neoteny, reaching sexual maturity without undergoing metamorphosis and keeping their external gills for their entire lives.",
+      "sources": [
+        "S1",
+        "S2"
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim": "Adult axolotls range in length from 15 to 45 cm, with a size close to 23 cm being most common.",
+      "sources": [
+        "S1",
+        "S2"
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim": "Wild axolotls have a life expectancy of between 10 and 15 years.",
+      "sources": [
+        "S1",
+        "S2"
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim": "Introduced invasive fish species such as tilapia and carp threaten wild axolotls by eating their young and competing for food.",
+      "sources": [
+        "S1",
+        "S2"
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim": "Nearly all modern laboratory and pet axolotls can be traced back to a shipment sent from Mexico City to Paris in 1864.",
+      "sources": [
+        "S1",
+        "S4"
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim": "The axolotl features on the reverse side of Mexico's 50-peso banknote released in 2021.",
+      "sources": [
+        "S1",
+        "S2"
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim": "Metamorphosis can be artificially induced in axolotls through the administration of thyroid hormones or iodine.",
+      "sources": [
+        "S1",
+        "S2"
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim": "The axolotl is named after Xolotl, the Aztec god of fire, lightning, and twins.",
+      "sources": [
+        "S1",
+        "S4"
+      ],
+      "confidence": "high"
+    }
+  ],
+  "disputed": [
+    "Exact wild population numbers vary slightly across different survey estimates, ranging from an estimated 50 up to 1,200 individuals depending on the survey year and methodology. Scripts should use the broad documented range of 50 to 1,000 or cite specific survey ranges when attributed."
+  ],
+  "visuals": [
+    {
+      "subject": "Wild type axolotl",
+      "queries": [
+        "Ambystoma mexicanum wild type",
+        "Axolotl natural color morph"
+      ]
+    },
+    {
+      "subject": "External gills closeup",
+      "queries": [
+        "Ambystoma mexicanum gills",
+        "Axolotl external gills fimbriae"
+      ]
+    },
+    {
+      "subject": "Lake Xochimilco canals",
+      "queries": [
+        "Xochimilco canals Mexico City",
+        "Lake Xochimilco trajineras"
+      ]
+    },
+    {
+      "subject": "Mexican 50 peso banknote",
+      "queries": [
+        "Mexican 50 peso note axolotl",
+        "Banco de Mexico 50 pesos axolotl"
+      ]
+    },
+    {
+      "subject": "Leucistic axolotl color morph",
+      "queries": [
+        "Ambystoma mexicanum leucistic",
+        "White axolotl pink gills"
+      ]
+    },
+    {
+      "subject": "Albino axolotl",
+      "queries": [
+        "Ambystoma mexicanum albino",
+        "Albinistic axolotl red eyes"
+      ]
+    },
+    {
+      "subject": "Tiger salamander relative",
+      "queries": [
+        "Ambystoma tigrinum",
+        "Eastern tiger salamander"
+      ]
+    },
+    {
+      "subject": "Scientific illustration of axolotl",
+      "queries": [
+        "Biodiversity Heritage Library Ambystoma mexicanum",
+        "Siredon axolotl illustration"
+      ]
+    },
+    {
+      "subject": "Diego Rivera mural featuring axolotls",
+      "queries": [
+        "Agua el origen de la vida Diego Rivera",
+        "Carccamo de Dolores mural"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "label": "S1",
+      "url": "https://en.wikipedia.org/wiki/Axolotl",
+      "title": "Axolotl",
+      "site": "wikipedia.org"
+    },
+    {
+      "label": "S2",
+      "url": "https://www.nhm.ac.uk/discover/axolotls-amphibians-that-never-grow-up.html",
+      "title": "Axolotls: Meet the amphibians that never grow up | Natural History Museum",
+      "site": "nhm.ac.uk"
+    },
+    {
+      "label": "S3",
+      "url": "https://amphibiansoftheworld.amnh.org/Amphibia/Caudata/Ambystomatidae/Ambystoma/Ambystoma-mexicanum",
+      "title": "Ambystoma mexicanum (Shaw and Nodder, 1798)",
+      "site": "amnh.org"
+    },
+    {
+      "label": "S4",
+      "url": "https://animaldiversity.org/accounts/Ambystoma_mexicanum/",
+      "title": "Ambystoma mexicanum",
+      "site": "animaldiversity.org"
+    },
+    {
+      "label": "S5",
+      "url": "http://news.bbc.co.uk/earth/hi/earth_news/newsid_8220000/8220636.stm",
+      "title": "Axolotl verges on wild extinction",
+      "site": "bbc.co.uk"
+    },
+    {
+      "label": "S6",
+      "url": "https://www.npr.org/2025/05/06/nx-s1-5383896/good-news-for-the-adorable-axolotl-ones-born-in-captivity-could-survive-in-the-wild",
+      "title": "Good news for the adorable axolotl — ones born in captivity could survive in the wild",
+      "site": "npr.org"
+    },
+    {
+      "label": "S7",
+      "url": "https://web.archive.org/web/20160325151819/https://www.nytimes.com/2012/10/31/world/americas/struggle-of-axolotls-mexicos-mythical-salamander.html",
+      "title": "Axolotls, Mexico’s Mythical Salamander, Struggle in the Wild",
+      "site": "nytimes.com"
+    }
+  ],
+  "topic": "Axolotl: it can regrow limbs and even parts of its heart and brain, yet only about 50 to 1,000 adults are left in the wild",
+  "series": "Built Different"
+}

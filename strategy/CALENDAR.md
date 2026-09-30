@@ -18,8 +18,8 @@ text. Space topics belong to the sister channel Universe Receipts and never go h
 
 | Date | Story | Series |
 |---|---|---|
-| Oct 3 | Winnipeg (bear) (1914): the real bear behind Winnie-the-Pooh was a black bear cub bought for $20 at an Ontario train stop, who sailed for England with Canadian troops on October 3 — making (ep007) | Animal Myths, Busted |
-| Oct 4 | Cher Ami (1918): the famous pigeon story says he was shot and lost a leg flying for the Lost Battalion on October 4, but the Signal Corps record puts his wounds weeks later — making (ep008) | Animal Myths, Busted |
+| Oct 3 | Winnipeg (bear) (1914): the real bear behind Winnie-the-Pooh was a black bear cub bought for $20 at an Ontario train stop, who sailed for England with Canadian troops on October 3 — parked (ep007) | Animal Myths, Busted |
+| Oct 4 | Cher Ami (1918): the famous pigeon story says he was shot and lost a leg flying for the Lost Battalion on October 4, but the Signal Corps record puts his wounds weeks later — done (ep008) | Animal Myths, Busted |
 | Oct 18 | G.I. Joe (pigeon) (1943): his message reached the air base 20 minutes before bombers took off to hit a village British troops had just taken, saving over 100 men | Built Different |
 | Oct 20 | Second voyage of HMS Beagle (1835): only after sailing from the Galápagos on October 20 did Darwin notice the mockingbirds differed from island to island | Evolution Got Weird |
 | Oct 26 | Paul the Octopus (2010): picked the winner of all seven of Germany's 2010 World Cup matches by choosing between two food boxes | Animal Myths, Busted |
@@ -37,7 +37,7 @@ text. Space topics belong to the sister channel Universe Receipts and never go h
 
 ### Built Different
 
-- Axolotl: it can regrow limbs and even parts of its heart and brain, yet only about 50 to 1,000 adults are left in the wild — making (ep009)
+- Axolotl: it can regrow limbs and even parts of its heart and brain, yet only about 50 to 1,000 adults are left in the wild — done (ep009)
 - Tardigrade (1773): named "little water bear" in 1773, a dried-out one can survive from −272 °C to 149 °C, at least briefly — making (ep015)
 - Octopus: three hearts, blue copper-based blood, and two-thirds of its 500 million neurons in its arms
 - Wombat: it leaves cube-shaped droppings, and the shape keeps them from rolling off the spots it marks
@@ -56,7 +56,7 @@ text. Space topics belong to the sister channel Universe Receipts and never go h
 
 ### Deep Sea Files
 
-- Giant squid (2004): nobody photographed a live one in its habitat until September 30, 2004, and its eyes reach at least 27 cm across
+- Giant squid (2004): nobody photographed a live one in its habitat until September 30, 2004, and its eyes reach at least 27 cm across — making (ep019)
 - Colossal squid (2025): it has the largest eyes of any animal known to have existed, and was first filmed alive in its habitat on March 9, 2025 — making (ep012)
 - Anglerfish: the tiny male latches onto a far larger female and can fuse into her body
 - Goblin shark: its jaws launch forward out of its head, from a lineage about 125 million years old
@@ -78,7 +78,7 @@ text. Space topics belong to the sister channel Universe Receipts and never go h
 - Pyrenean ibex (2003): the first animal ever brought back from extinction by cloning lived only minutes
 - Przewalski's horse (2020): extinct in the wild after 1969, it now has a clone named Kurt, born in 2020 from a long-dead stallion's DNA
 - Black-footed ferret (1981): declared extinct in 1979, found in Wyoming in 1981, and every ferret alive today descends from just 7 animals
-- Dire wolf (2025): the "dire wolf" pups announced in 2025 were gray wolves with 20 edits to 14 genes
+- Dire wolf (2025): the "dire wolf" pups announced in 2025 were gray wolves with 20 edits to 14 genes — making (ep018)
 - Dryococelus (2001): the "tree lobster" was wiped out by rats from a 1918 shipwreck, then found in 2001 as 24 insects on a sea stack called Ball's Pyramid
 - Megachile pluto (1981): the world's largest bee, with a 63.5 mm wingspan, was lost to science until 1981 and first filmed alive in 2019
 - Fernandina Island Galápagos tortoise (2019): known from one specimen collected in 1906, until a single female was found alive in 2019
@@ -96,7 +96,7 @@ text. Space topics belong to the sister channel Universe Receipts and never go h
 - Platypus (1799): the first scientists to examine one thought it was a fake sewn together from several animals, and it glows under ultraviolet light — making (ep016)
 - Horseshoe crab: it isn't a crab but a closer relative of spiders, and its blue blood is used to test for bacterial toxins
 - Carcinisation (1916): evolution has turned non-crabs into crab shapes at least five separate times
-- Narwhal: the "horn" is a spiral left canine tooth up to 3 meters long, packed with millions of nerve endings — making (ep010)
+- Narwhal: the "horn" is a spiral left canine tooth up to 3 meters long, packed with millions of nerve endings — dropped (ep010)
 - Kiwi (bird): its egg can weigh 20% of the mother, and its closest relative is the extinct elephant bird of Madagascar, not the moa
 - Tuatara (2009): it isn't a lizard but the last of an ancient order, and a male named Henry became a father at 111
 - Sloth: its fur grows algae that feed moths found nowhere else, and it climbs down about once a week to use the bathroom
@@ -137,7 +137,7 @@ text. Space topics belong to the sister channel Universe Receipts and never go h
 
 ### Animal Myths, Busted
 
-- Great white shark: the "Jaws" man-eater normally doesn't hunt people, and most bites come from curiosity or mistaken identity
+- Great white shark: the "Jaws" man-eater normally doesn't hunt people, and most bites come from curiosity or mistaken identity — making (ep017)
 - Bat: no species of bat is truly blind
 - Camel: the hump stores fat, not water
 - Opiliones: the "daddy longlegs is the most venomous animal" story is an urban legend; harvestmen have no venom glands at all
@@ -149,6 +149,6 @@ text. Space topics belong to the sister channel Universe Receipts and never go h
 - Common ostrich: ostriches don't bury their heads in the sand, a myth that likely goes back to Pliny the Elder
 - Mayfly: the "one-day" insect can spend several years living underwater before it grows wings
 - Virginia opossum: the claim that one eats 5,000 ticks a season is a misconception, but it really is naturally resistant to rabies
-- Hippopotamus: hippo "blood sweat" is neither blood nor sweat but a natural red sunscreen — making (ep014)
+- Hippopotamus: hippo "blood sweat" is neither blood nor sweat but a natural red sunscreen — dropped (ep014)
 - Elephants' graveyard: there's no place where old elephants go to die; it's a legend
 - Shark cartilage (1992): sharks do get cancer, and the myth that they don't was spread by a 1992 book

@@ -1,0 +1,180 @@
+{
+  "rounds": [
+    {
+      "at": "2026-09-30T20:51:29+05:30",
+      "check": {
+        "duration": 54.22,
+        "words": 130,
+        "integrated_lufs": -14.0,
+        "true_peak_dbfs": -1.9,
+        "warnings": [],
+        "speech_differences": [
+          "'4th' heard as '4' after 'misidentified on october'",
+          "'cher' heard as 'sher' after 'that dangerous flight'",
+          "'blazich' heard as 'blasich' after 'smithsonian curator frank'"
+        ],
+        "speech_error": null,
+        "sources": [
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Flickr via Openverse",
+          "Wikimedia Commons"
+        ]
+      },
+      "scores": {
+        "hook": 4,
+        "clarity": 4,
+        "payoff": 3,
+        "visuals": 3,
+        "loop": 5
+      },
+      "notes": {
+        "hook": "Strong starting claim that challenges a known history story.",
+        "clarity": "The narrative flow is easy to follow and chronological.",
+        "payoff": "The 'myth' is never fully explained; we get a date correction and a gender correction, but not a core debunking.",
+        "visuals": "Some frames are generic museum shots or blurry motion shots that aren't striking.",
+        "loop": "The final sentence leads perfectly back into the first."
+      },
+      "frames": [
+        {
+          "beat": 5,
+          "problem": "The image is extremely blurry motion blur and not clear at phone size."
+        },
+        {
+          "beat": 7,
+          "problem": "Generic wide shot of a museum lobby/screen; not striking or on-topic for a bird story."
+        },
+        {
+          "beat": 8,
+          "problem": "Generic exterior shot of a museum building; not visually engaging."
+        }
+      ],
+      "speech": [
+        {
+          "beat": 7,
+          "word": "Blazich",
+          "respelling": "blay zick"
+        }
+      ],
+      "rewrite": [
+        "Beat 7: Instead of 'official records suggest the actual wounding happened later', use 'official records show the wounding happened on a different mission entirely' to sharpen the payoff.",
+        "Beat 9: Instead of 'happened differently', use 'was actually a different bird' to provide a definitive answer to the hook."
+      ],
+      "better_than_last": "N/A - first Short.",
+      "judge": "gemma-4-31b-it",
+      "passed": false
+    },
+    {
+      "at": "2026-09-30T21:22:14+05:30",
+      "check": {
+        "duration": 54.77,
+        "words": 134,
+        "integrated_lufs": -14.0,
+        "true_peak_dbfs": -1.8,
+        "warnings": [],
+        "speech_differences": [
+          "'4th' heard as '4' after 'misidentified on october'",
+          "'cher' heard as 'sher' after 'that dangerous flight'",
+          "'blazich' heard as 'blasich' after 'smithsonian curator frank'"
+        ],
+        "speech_error": null,
+        "sources": [
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "designed card",
+          "Wikimedia Commons"
+        ]
+      },
+      "scores": {
+        "hook": 4,
+        "clarity": 4,
+        "payoff": 5,
+        "visuals": 4,
+        "loop": 4
+      },
+      "notes": {
+        "hook": "Strong opening that challenges a known historical 'fact'.",
+        "clarity": "Easy to follow chronological narrative leading to a twist.",
+        "payoff": "The reveal that the famous mission may have been another bird is a great payoff.",
+        "visuals": "Archival photos and museum footage fit the theme well.",
+        "loop": "Ends on a note that circles back to the 'myth' mentioned in beat 1."
+      },
+      "frames": [],
+      "speech": [
+        {
+          "beat": 7,
+          "word": "Blazich",
+          "respelling": "blay zich"
+        }
+      ],
+      "rewrite": [],
+      "better_than_last": "This is the first Short, establishing a high quality bar for narrative structure and historical intrigue.",
+      "judge": "gemma-4-31b-it",
+      "passed": false
+    },
+    {
+      "at": "2026-09-30T21:55:26+05:30",
+      "check": {
+        "duration": 54.95,
+        "words": 134,
+        "integrated_lufs": -14.1,
+        "true_peak_dbfs": -1.9,
+        "warnings": [],
+        "speech_differences": [
+          "'4th' heard as '4' after 'misidentified on october'",
+          "'cher' heard as 'sher' after 'that dangerous flight'",
+          "'blazich' heard as 'blaesich' after 'smithsonian curator frank'"
+        ],
+        "speech_error": null,
+        "sources": [
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "designed card",
+          "Wikimedia Commons"
+        ]
+      },
+      "scores": {
+        "hook": 4,
+        "clarity": 5,
+        "payoff": 4,
+        "visuals": 4,
+        "loop": 5
+      },
+      "notes": {
+        "hook": "Strong, challenging a known hero story.",
+        "clarity": "Narrative flow is logical and easy to follow.",
+        "payoff": "Good twist based on archival evidence and DNA.",
+        "visuals": "Clean archival images and appropriate title cards.",
+        "loop": "The transition from the final line back to the first is seamless."
+      },
+      "frames": [],
+      "speech": [
+        {
+          "beat": 7,
+          "word": "Blazich",
+          "respelling": "blay zick"
+        }
+      ],
+      "rewrite": [],
+      "better_than_last": "First short produced; establishes a strong standard for archival storytelling.",
+      "judge": "gemma-4-31b-it",
+      "passed": true
+    }
+  ],
+  "best_round": 3
+}

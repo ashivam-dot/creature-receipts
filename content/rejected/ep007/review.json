@@ -1,0 +1,211 @@
+{
+  "rounds": [
+    {
+      "at": "2026-09-30T20:51:16+05:30",
+      "check": {
+        "duration": 43.26,
+        "words": 105,
+        "integrated_lufs": -14.1,
+        "true_peak_dbfs": -1.6,
+        "warnings": [],
+        "speech_differences": [
+          "'colebourn' heard as 'colborne' after 'veterinarian lieutenant harry'",
+          "'colebourn' heard as 'colborne' after 'at salisbury plain'",
+          "'milne' heard as 'milney' after 'named christopher robin'"
+        ],
+        "speech_error": null,
+        "sources": [
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "designed card",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons"
+        ]
+      },
+      "scores": {
+        "hook": 4,
+        "clarity": 5,
+        "payoff": 5,
+        "visuals": 2,
+        "loop": 4
+      },
+      "notes": {
+        "hook": "Strong connection to a globally known character.",
+        "clarity": "Simple chronological narrative, easy to follow.",
+        "payoff": "The connection between the real bear and the toy bear is a satisfying conclusion.",
+        "visuals": "Too many frames are just scans of old text/maps which are unreadable and boring on mobile.",
+        "loop": "The loop is decent, though a slightly more active bridge would be better."
+      },
+      "frames": [
+        {
+          "beat": 3,
+          "problem": "Off-topic; shows a horse and a gas-masked soldier instead of Winnie the bear or the Veterinary Corps."
+        },
+        {
+          "beat": 5,
+          "problem": "Mostly text; it's a scan of an old book page with a small map, hard to see on phone."
+        },
+        {
+          "beat": 6,
+          "problem": "Mostly text; repeat of the boring book scan from beat 5."
+        }
+      ],
+      "speech": [
+        {
+          "beat": 2,
+          "word": "Colebourn",
+          "respelling": "kohl born"
+        },
+        {
+          "beat": 5,
+          "word": "Colebourn",
+          "respelling": "kohl born"
+        },
+        {
+          "beat": 6,
+          "word": "Milne",
+          "respelling": "miln"
+        }
+      ],
+      "rewrite": [],
+      "better_than_last": "First Short produced; sets a strong narrative standard but needs visual improvement.",
+      "judge": "gemma-4-31b-it",
+      "passed": false
+    },
+    {
+      "at": "2026-09-30T21:21:35+05:30",
+      "check": {
+        "duration": 43.42,
+        "words": 105,
+        "integrated_lufs": -14.1,
+        "true_peak_dbfs": -1.7,
+        "warnings": [],
+        "speech_differences": [
+          "'colebourn' heard as 'colborne' after 'veterinarian lieutenant harry'",
+          "'colebourn' heard as 'cole bourne' after 'at salisbury plain'"
+        ],
+        "speech_error": null,
+        "sources": [
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "designed card",
+          "designed card",
+          "designed card",
+          "Wikimedia Commons"
+        ]
+      },
+      "scores": {
+        "hook": 4,
+        "clarity": 5,
+        "payoff": 5,
+        "visuals": 3,
+        "loop": 4
+      },
+      "notes": {
+        "hook": "Strong opening linking a famous character to a surprising real-life origin.",
+        "clarity": "The narrative flow is simple and easy to follow.",
+        "payoff": "The connection to Christopher Robin and the renaming of the teddy bear is a satisfying conclusion.",
+        "visuals": "Too many text-only title cards (beats 4, 5, 6) which kill the visual momentum.",
+        "loop": "The end connects well back to the beginning, though not a perfectly seamless sentence loop."
+      },
+      "frames": [
+        {
+          "beat": 4,
+          "problem": "Mostly text"
+        },
+        {
+          "beat": 5,
+          "problem": "Mostly text"
+        },
+        {
+          "beat": 6,
+          "problem": "Mostly text"
+        }
+      ],
+      "speech": [],
+      "rewrite": [],
+      "better_than_last": "First Short evaluated.",
+      "judge": "gemma-4-31b-it",
+      "passed": false
+    },
+    {
+      "at": "2026-09-30T21:56:11+05:30",
+      "check": {
+        "duration": 43.42,
+        "words": 105,
+        "integrated_lufs": -14.1,
+        "true_peak_dbfs": -1.9,
+        "warnings": [],
+        "speech_differences": [
+          "'colebourn' heard as 'colborne' after 'veterinarian lieutenant harry'",
+          "'plain colebourn' heard as 'plane cole bourne' after 'troops at salisbury'"
+        ],
+        "speech_error": null,
+        "sources": [
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "designed card",
+          "designed card",
+          "designed card",
+          "Wikimedia Commons"
+        ]
+      },
+      "scores": {
+        "hook": 4,
+        "clarity": 5,
+        "payoff": 4,
+        "visuals": 3,
+        "loop": 4
+      },
+      "notes": {
+        "hook": "Strong opening connecting a famous character to a surprising real-life purchase.",
+        "clarity": "The narrative is linear and easy to follow.",
+        "payoff": "Clear connection made between the real bear and the literary character.",
+        "visuals": "Too many static text cards in a row (Beats 4, 5, 6), which slows the momentum.",
+        "loop": "The loop is functional, though not a perfect seamless sentence bridge."
+      },
+      "frames": [
+        {
+          "beat": 4,
+          "problem": "Mostly text; fails to show the S.S. Manitou or the journey described."
+        },
+        {
+          "beat": 5,
+          "problem": "Mostly text; fails to show Salisbury Plain or the London Zoo."
+        },
+        {
+          "beat": 6,
+          "problem": "Mostly text; fails to show Christopher Robin or the interaction."
+        }
+      ],
+      "speech": [
+        {
+          "beat": 2,
+          "word": "Colebourn",
+          "respelling": "kohl burn"
+        },
+        {
+          "beat": 5,
+          "word": "Colebourn",
+          "respelling": "kohl burn"
+        }
+      ],
+      "rewrite": [
+        "Beat 4: Replace the text card with footage or an image of a 1914 troop ship or the Atlantic Ocean.",
+        "Beat 5: Replace the text card with an archival image of Salisbury Plain or the London Zoo.",
+        "Beat 6: Replace the text card with a photo of the real Christopher Robin Milne."
+      ],
+      "better_than_last": "This is the first Short, establishing a strong baseline for storytelling and pacing.",
+      "judge": "gemma-4-31b-it",
+      "passed": false
+    }
+  ],
+  "best_round": 2,
+  "verdict": "rejected",
+  "reason": "low scores: visuals; 3 frame problems",
+  "rejected_at": "2026-09-30T21:56:11+05:30"
+}

@@ -1,0 +1,157 @@
+{
+  "rounds": [
+    {
+      "at": "2026-09-30T20:47:57+05:30",
+      "check": {
+        "duration": 46.33,
+        "words": 109,
+        "integrated_lufs": -14.0,
+        "true_peak_dbfs": -1.8,
+        "warnings": [],
+        "speech_differences": [
+          "'xochimilco' heard as 'zachimilco' after 'channels of lake'"
+        ],
+        "speech_error": null,
+        "sources": [
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "designed card",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons"
+        ]
+      },
+      "scores": {
+        "hook": 4,
+        "clarity": 3,
+        "payoff": 4,
+        "visuals": 5,
+        "loop": 5
+      },
+      "notes": {
+        "hook": "Strong hook about brain regeneration and extinction risk.",
+        "clarity": "Beat 6 is grammatically incorrect and confusing: 'Introduced invasive fish like tilapia eat their eggs'.",
+        "payoff": "The contrast between their biological 'immortality' and their real-world fragility is a satisfying payoff.",
+        "visuals": "High quality, relevant images that match the beats perfectly.",
+        "loop": "The transition from the final line back to the first is seamless."
+      },
+      "frames": [],
+      "speech": [
+        {
+          "beat": 5,
+          "word": "Xochimilco",
+          "respelling": "so chi mil ko"
+        }
+      ],
+      "rewrite": [
+        "Beat 6: Invasive fish like tilapia were introduced and eat their eggs, adding to pollution and urban pressure."
+      ],
+      "better_than_last": "This is the first Short in the series.",
+      "judge": "gemma-4-31b-it",
+      "passed": false
+    },
+    {
+      "at": "2026-09-30T21:18:28+05:30",
+      "check": {
+        "duration": 46.85,
+        "words": 111,
+        "integrated_lufs": -14.0,
+        "true_peak_dbfs": -1.8,
+        "warnings": [],
+        "speech_differences": [
+          "'xochimilco' heard as 'zachimilco' after 'channels of lake'"
+        ],
+        "speech_error": null,
+        "sources": [
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "designed card",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons"
+        ]
+      },
+      "scores": {
+        "hook": 5,
+        "clarity": 4,
+        "payoff": 4,
+        "visuals": 4,
+        "loop": 5
+      },
+      "notes": {
+        "hook": "Strong opening statement that immediately presents a contradiction.",
+        "clarity": "Easy to follow, though the jump to the 1864 shipment is slightly abrupt.",
+        "payoff": "The contrast between the laboratory success and the wild extinction is a poignant payoff.",
+        "visuals": "Images are clear and relevant, though beat 3's illustration is a bit dark.",
+        "loop": "The final line leads perfectly back into the first."
+      },
+      "frames": [],
+      "speech": [
+        {
+          "beat": 5,
+          "word": "Xochimilco",
+          "respelling": "zo chi mil ko"
+        }
+      ],
+      "rewrite": [],
+      "better_than_last": "This is the first Short in the series, setting a high bar for quality.",
+      "judge": "gemma-4-31b-it",
+      "passed": false
+    },
+    {
+      "at": "2026-09-30T21:47:07+05:30",
+      "check": {
+        "duration": 47.15,
+        "words": 111,
+        "integrated_lufs": -14.0,
+        "true_peak_dbfs": -2.0,
+        "warnings": [],
+        "speech_differences": [
+          "'xochimilco' heard as 'zocai milco' after 'channels of lake'"
+        ],
+        "speech_error": null,
+        "sources": [
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "designed card",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons"
+        ]
+      },
+      "scores": {
+        "hook": 4,
+        "clarity": 5,
+        "payoff": 4,
+        "visuals": 4,
+        "loop": 5
+      },
+      "notes": {
+        "hook": "The brain regeneration claim is a strong curiosity gap.",
+        "clarity": "Clear progression from biology to history to conservation.",
+        "payoff": "The shift from 'immortal' biology to actual extinction is a poignant twist.",
+        "visuals": "All images are relevant and clear, though some have a slightly dated 'photo' style.",
+        "loop": "Seamlessly connects the final sentence back to the first."
+      },
+      "frames": [],
+      "speech": [
+        {
+          "beat": 5,
+          "word": "Xochimilco",
+          "respelling": "so chi mil co"
+        }
+      ],
+      "rewrite": [],
+      "better_than_last": "This is the first Short in the series.",
+      "judge": "gemma-4-31b-it",
+      "passed": true
+    }
+  ],
+  "best_round": 2
+}
