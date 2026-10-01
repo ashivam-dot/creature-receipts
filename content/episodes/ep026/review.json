@@ -1,0 +1,144 @@
+{
+  "rounds": [
+    {
+      "at": "2026-10-01T11:46:38+05:30",
+      "check": {
+        "duration": 31.19,
+        "words": 79,
+        "integrated_lufs": -14.2,
+        "true_peak_dbfs": -1.8,
+        "warnings": [],
+        "speech_differences": [
+          "'8th' heard as '8' after 'wisconsin on october'"
+        ],
+        "speech_error": null,
+        "sources": [
+          "Wikimedia Commons",
+          "designed card",
+          "Wikimedia Commons",
+          "designed card",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons"
+        ]
+      },
+      "scores": {
+        "hook": 4,
+        "clarity": 5,
+        "payoff": 5,
+        "visuals": 4,
+        "loop": 5
+      },
+      "notes": {
+        "hook": "Strong opening with a high death toll and dramatic imagery.",
+        "clarity": "Each beat focuses on one clear fact, building the narrative logically.",
+        "payoff": "The comparison to the Great Chicago Fire provides a satisfying historical irony.",
+        "visuals": "Images are generally appropriate, though Beat 6's modern church photo feels slightly disconnected.",
+        "loop": "The final line transitions seamlessly back to the opening statement."
+      },
+      "frames": [
+        {
+          "beat": 6,
+          "problem": "The image is a modern color photograph of a church, which contrasts sharply with the historical atmosphere of the other frames."
+        }
+      ],
+      "speech": [],
+      "rewrite": [],
+      "better_than_last": "This is the first Short, establishing a high standard for narrative structure and looping.",
+      "judge": "gemma-4-31b-it",
+      "passed": false
+    },
+    {
+      "at": "2026-10-01T12:17:09+05:30",
+      "check": {
+        "duration": 31.19,
+        "words": 79,
+        "integrated_lufs": -14.2,
+        "true_peak_dbfs": -1.8,
+        "warnings": [],
+        "speech_differences": [
+          "'8th' heard as '8' after 'wisconsin on october'"
+        ],
+        "speech_error": null,
+        "sources": [
+          "Wikimedia Commons",
+          "designed card",
+          "Wikimedia Commons",
+          "designed card",
+          "Wikimedia Commons",
+          "Art Institute of Chicago (CC0)",
+          "Wikimedia Commons"
+        ]
+      },
+      "scores": {
+        "hook": 5,
+        "clarity": 5,
+        "payoff": 5,
+        "visuals": 4,
+        "loop": 4
+      },
+      "notes": {
+        "hook": "Strong opening with a high casualty count to grab attention immediately.",
+        "clarity": "The narrative flow is logical, moving from conditions to the event and then the historical context.",
+        "payoff": "The reveal that the Great Chicago Fire overshadowed a far deadlier event is a satisfying twist.",
+        "visuals": "Frames are generally strong and on-topic, though beat 6's image is a very thin strip.",
+        "loop": "The transition from 'shadow' back to 'vanished' works well, though could be tightened."
+      },
+      "frames": [
+        {
+          "beat": 6,
+          "problem": "The image is an extremely narrow panorama that loses impact and detail on a phone screen."
+        }
+      ],
+      "speech": [],
+      "rewrite": [],
+      "better_than_last": "First Short analyzed; sets a high standard for hook and payoff.",
+      "judge": "gemma-4-31b-it",
+      "passed": false
+    },
+    {
+      "at": "2026-10-01T12:45:03+05:30",
+      "check": {
+        "duration": 31.19,
+        "words": 79,
+        "integrated_lufs": -14.2,
+        "true_peak_dbfs": -1.8,
+        "warnings": [],
+        "speech_differences": [
+          "'8th' heard as '8' after 'wisconsin on october'"
+        ],
+        "speech_error": null,
+        "sources": [
+          "Wikimedia Commons",
+          "designed card",
+          "Wikimedia Commons",
+          "designed card",
+          "Wikimedia Commons",
+          "Art Institute of Chicago (CC0)",
+          "Wikimedia Commons"
+        ]
+      },
+      "scores": {
+        "hook": 5,
+        "clarity": 5,
+        "payoff": 5,
+        "visuals": 5,
+        "loop": 4
+      },
+      "notes": {
+        "hook": "The high death toll and immediate visual of chaos create a strong stop.",
+        "clarity": "Each beat delivers one clear, escalating fact.",
+        "payoff": "The irony of the more famous Chicago fire overshadowing a deadlier tragedy is a great twist.",
+        "visuals": "Strong historical imagery and clean title cards.",
+        "loop": "The transition from 'shadow' back to 'vanished' is logically sound, though slightly abrupt."
+      },
+      "frames": [],
+      "speech": [],
+      "rewrite": [],
+      "better_than_last": "First Short evaluated.",
+      "judge": "gemma-4-31b-it",
+      "passed": true
+    }
+  ],
+  "best_round": 3
+}

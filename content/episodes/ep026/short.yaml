@@ -1,0 +1,151 @@
+id: ep026
+title: Why History Forgot America's Deadliest Wildfire 😳
+series: The Last Hours
+description: Discover the true story of the 1871 Peshtigo fire, the deadliest wildfire in American history that was overshadowed
+  by the Great Chicago Fire.
+sources:
+- https://en.wikipedia.org/wiki/Peshtigo_fire
+- https://www.missedhistory.com/article/peshtigo-fire-1871-deadliest-wildfire-america
+- https://climatology.nelson.wisc.edu/wisconsin-peshtigo-fire/
+- https://en.wikipedia.org/wiki/Great_Fires_of_1871
+- https://www.history.com/articles/peshtigo-fire-america-deadliest-wildfire
+- http://www.smithsonianmag.com/history/what-or-who-caused-the-great-chicago-fire-61481977/
+hashtags:
+- '#history'
+- '#peshtigo'
+- '#wildfire'
+tags:
+- Peshtigo fire
+- 1871 disaster
+- American history
+- Great Chicago Fire
+- Wisconsin history
+voice:
+  engine: gemini
+  voice: Charon
+  direction: 'Read the transcript below aloud as a gripping true-story narrator on a viral YouTube Short: fast and urgent,
+    about 170 words a minute, with only tiny pauses, a low, intense voice and rising tension that hits the last line hard.
+    Speak only the transcript.'
+beats:
+- text: Up to twenty-five hundred people vanished in a single fiery night.
+  emphasis:
+  - twenty-five hundred people
+  - fiery night
+  visual:
+    source: url
+    url: https://upload.wikimedia.org/wikipedia/commons/9/94/Illustration_-_Peshtigo_Fire_in_WI%2C_10-8-1871_%2822139919004%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    credit:
+      source: Wikimedia Commons
+      title: Illustration - Peshtigo Fire in WI, 10-8-1871 (22139919004).jpg
+      credit: U.S. Forest Service- Pacific Northwest Region
+      license: Public domain
+      url: https://commons.wikimedia.org/wiki/File:Illustration_-_Peshtigo_Fire_in_WI,_10-8-1871_(22139919004).jpg
+    fallbacks:
+    - color
+    motion: pan_right
+    focus_x: 0.5
+    focus_y: 0.5
+- text: Severe drought gripped Wisconsin on October eighth, eighteen seventy one.
+  emphasis:
+  - Severe drought
+  - October eighth
+  sfx: whoosh
+  visual:
+    source: card
+    card:
+      kind: dateline
+      big: October 8, 1871
+      small: Wisconsin
+    motion: zoom_in
+- text: A cold front created winds reaching one hundred ten miles per hour.
+  emphasis:
+  - cold front
+  - one hundred ten miles per hour
+  sfx: whoosh
+  visual:
+    source: url
+    url: https://thumb.wikimedia.org/wikipedia/commons/thumb/3/37/Lick_Fire_on_the_Umatilla_National_Forest_burning_at_night.jpg/3840px-Lick_Fire_on_the_Umatilla_National_Forest_burning_at_night.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
+    credit:
+      source: Wikimedia Commons
+      title: Lick Fire on the Umatilla National Forest burning at night.jpg
+      credit: U.S. Forest Service- Pacific Northwest Region
+      license: Public domain
+      url: https://commons.wikimedia.org/wiki/File:Lick_Fire_on_the_Umatilla_National_Forest_burning_at_night.jpg
+    fallbacks:
+    - card
+    - color
+    motion: pan_right
+    focus_x: 0.5
+    focus_y: 0.5
+    card:
+      kind: fact
+      big: 110 mph
+      small: Wind speed
+- text: The blaze reached two thousand degrees Fahrenheit and vaporized entire forests.
+  emphasis:
+  - two thousand degrees
+  - vaporized entire forests
+  sfx: riser
+  visual:
+    source: card
+    card:
+      kind: fact
+      big: 2,000°F
+      small: Temperature
+    motion: zoom_in
+- text: Father Peter Pernin survived by immersing himself in the freezing river.
+  emphasis:
+  - Father Peter Pernin
+  - freezing river
+  visual:
+    source: url
+    url: https://upload.wikimedia.org/wikipedia/commons/1/13/Title_page_of_Pernin%2C_The_Finger_of_God_is_there%21.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    credit:
+      source: Wikimedia Commons
+      title: Title page of Pernin, The Finger of God is there!.jpg
+      credit: Peter Pernin
+      license: Public domain
+      url: https://commons.wikimedia.org/wiki/File:Title_page_of_Pernin,_The_Finger_of_God_is_there!.jpg
+    fallbacks:
+    - color
+    motion: pan_right
+    focus_x: 0.3
+    focus_y: 0.45
+    box:
+    - 0.1
+    - 0.2
+    - 0.5
+    - 0.85
+- text: This remains the deadliest wildfire in all of American history.
+  emphasis:
+  - deadliest wildfire
+  - American history
+  sfx: pop
+  pause_after: 0.4
+  visual:
+    source: url
+    url: https://www.artic.edu/iiif/2/9dc693e8-c887-690b-91f3-3719730b4efa/full/1686,/0/default.jpg
+    credit:
+      source: Art Institute of Chicago (CC0)
+      title: Cemetery, Cathcart's Hill
+      credit: 'Roger Fenton
+
+        English, 1819–1869'
+      license: CC0
+      url: https://www.artic.edu/artworks/123412
+    fallbacks:
+    - color
+    motion: pan_left
+    focus_x: 0.5
+    focus_y: 0.5
+- text: Chicago erupted four hundred miles south that same night, casting these victims into shadow.
+  emphasis:
+  - Chicago erupted
+  sfx: whoosh
+  visual:
+    reuse: 1
+    motion: zoom_out
+    focus_x: 0.5
+    focus_y: 0.5
+depth_motion: true
+hook_text: 2,500 LIVES LOST

@@ -20,7 +20,7 @@ event is told for its gore. Space topics belong to the sister channel Universe R
 | Date | Story | Series |
 |---|---|---|
 | Oct 5 | R101 (1930): Britain's giant airship crashed in France on its first overseas flight, after it was sent off on schedule with the air minister aboard — done (ep025) | Warnings Ignored |
-| Oct 8 | Peshtigo fire (1871): the deadliest wildfire in American history burned the same night as the Great Chicago Fire, and was nearly forgotten because of it — making (ep026) | The Last Hours |
+| Oct 8 | Peshtigo fire (1871): the deadliest wildfire in American history burned the same night as the Great Chicago Fire, and was nearly forgotten because of it — done (ep026) | The Last Hours |
 | Oct 8 | Great Chicago Fire (1871): Mrs. O'Leary's cow took the blame, but the reporter who spread the story later admitted he made it up — done (ep027) | The Last Hours |
 | Oct 17 | London Beer Flood (1814): a vat burst at a brewery and a wave of more than a million liters of beer swept through a poor London parish | The Last Hours |
 | Oct 24 | Eruption of Mount Vesuvius in 79 AD: a charcoal inscription found at Pompeii in 2018 suggests the eruption came in autumn, not on August 24 as long believed | The Last Hours |
@@ -43,14 +43,14 @@ event is told for its gore. Space topics belong to the sister channel Universe R
 - MV Wilhelm Gustloff (1945): its sinking in the Baltic was the deadliest loss of a single ship in history
 - SS Eastland (1915): it rolled over while still tied to its Chicago dock, and 844 people died in water about 20 feet deep
 - Great Fire of London (1666): only a handful of deaths were recorded, though the true toll is unknown
-- Radium Girls (1917): factory workers painted watch dials with self-glowing paint and pointed the brushes with their lips, later seeing their own jaws glow in the dark — making (ep033)
-- 1945 Empire State Building B-25 crash (1945): a lost bomber crashed into the 79th floor of the skyscraper, and an elevator operator fell 75 floors and survived
+- Radium Girls (1917): factory workers painted watch dials with self-glowing paint and pointed the brushes with their lips, later seeing their own jaws glow in the dark — parked (ep033)
+- 1945 Empire State Building B-25 crash (1945): a lost bomber crashed into the 79th floor of the skyscraper, and an elevator operator fell 75 floors and survived — making (ep038)
 - Battle of the Little Bighorn (1876): Custer split his forces and rode directly into the largest Native American encampment ever gathered on the plains
 - Battle of the Alamo (1836): a small band of Texian defenders held out for 13 days before a dawn assault overwhelmed the mission walls
 - Burning of Washington (1814): British troops ate the dinner President Madison had left behind before burning the White House, right as a freak tornado struck the city
 - Battle of Agincourt (1415): outnumbered English archers stood in thick mud as heavily armored French knights charged and sank into the muck
-- 1900 Galveston hurricane (1900): forecasters dismissed warnings from Cuba, leaving the deadliest natural disaster in US history to strike an unprepared island — making (ep035)
-- Battle of Saragarhi (1897): twenty-one soldiers fought ten thousand tribesmen to the last man, signaling updates until the final seconds
+- 1900 Galveston hurricane (1900): forecasters dismissed warnings from Cuba, leaving the deadliest natural disaster in US history to strike an unprepared island — done (ep035)
+- Battle of Saragarhi (1897): twenty-one soldiers fought ten thousand tribesmen to the last man, signaling updates until the final seconds — making (ep040)
 - Port Chicago disaster (1944): untested munitions were loaded by untrained men in a race against time, causing the largest US home-front disaster of WWII
 - Victoria Hall disaster (1883): hundreds of children rushed for free toys through a door that opened inward, trapping them as the crush grew
 - Burning of Smyrna (1922): a cosmopolitan Mediterranean haven went up in flames days after foreign armies retreated, trapping refugees on the quay
@@ -82,20 +82,20 @@ event is told for its gore. Space topics belong to the sister channel Universe R
 - Lady Franklin Bay Expedition (1884): only a handful of the 25 men were alive when the rescuers reached them
 - Jeannette expedition (1881): a ship sent to find an open sea at the North Pole was crushed by ice instead
 - 1924 British Mount Everest expedition: George Mallory's body was found 75 years later, and nobody knows if he reached the top
-- Amundsen's South Pole expedition (1910): a secret race to the pole succeeded because the leader ate his own sled dogs to survive
+- Amundsen's South Pole expedition (1910): a secret race to the pole succeeded because the leader ate his own sled dogs to survive — making (ep037)
 - Great Fire of 1910 (1910): hurricane-force winds turned a scattering of forest fires into a single monster that swallowed towns in minutes
 
 ### Fallen Empires
 
 - Fall of Constantinople (1453): by one account, the city fell through a small gate someone left open
 - Sack of Rome (410): the first time in 800 years that a foreign enemy took the city of Rome
-- Late Bronze Age collapse: around 1177 BC, nearly every great civilization of the eastern Mediterranean fell within a few decades — making (ep029)
+- Late Bronze Age collapse: around 1177 BC, nearly every great civilization of the eastern Mediterranean fell within a few decades — parked (ep029)
 - Fall of Tenochtitlan (1521): smallpox killed huge numbers of the city's people before and during the siege
 - Battle of the Teutoburg Forest (9 AD): three Roman legions were wiped out, and Augustus is said to have cried "Varus, give me back my legions!"
 - Siege of Baghdad (1258): accounts say the Tigris ran black with ink from the books thrown into it
 - Third Punic War (146 BC): Rome destroyed Carthage, but the story that it salted the earth appears to be a modern invention
 - Library of Alexandria: it wasn't lost in one great fire, but declined over centuries
-- Reichstag fire (1933): the German parliament building burned just weeks after Hitler took power, instantly triggering emergency decrees that ended democracy — making (ep036)
+- Reichstag fire (1933): the German parliament building burned just weeks after Hitler took power, instantly triggering emergency decrees that ended democracy — parked (ep036)
 
 ### Warnings Ignored
 
@@ -110,7 +110,7 @@ event is told for its gore. Space topics belong to the sister channel Universe R
 - Vasa (ship) (1628): the warship sank on its maiden voyage, less than a mile out, after failing a stability test before it sailed
 - Knickerbocker Storm (1922): the roof of Washington's Knickerbocker Theatre collapsed under the snow during a film
 - Battle of Isandlwana (1879): British commanders refused to form defensive laagers, mocking reports of Zulu forces until thousands appeared over the ridge — making (ep034)
-- Mongol invasions of Japan (1281): the invasion fleet was destroyed by a legendary typhoon known as the kamikaze, saving Japan from conquest
+- Mongol invasions of Japan (1281): the invasion fleet was destroyed by a legendary typhoon known as the kamikaze, saving Japan from conquest — making (ep039)
 - Fetterman Fight (1866): a cocky commander vowed to ride through the entire Sioux nation with eighty men, and none returned
 
 ### Sole Survivors

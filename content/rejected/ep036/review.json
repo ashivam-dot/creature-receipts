@@ -1,0 +1,160 @@
+{
+  "rounds": [
+    {
+      "at": "2026-10-01T12:40:29+05:30",
+      "check": {
+        "duration": 24.0,
+        "words": 82,
+        "integrated_lufs": -14.2,
+        "true_peak_dbfs": -1.6,
+        "warnings": [],
+        "speech_differences": [],
+        "speech_error": null,
+        "sources": [
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons"
+        ]
+      },
+      "scores": {
+        "hook": 3,
+        "clarity": 4,
+        "payoff": 3,
+        "visuals": 3,
+        "loop": 3
+      },
+      "notes": {
+        "hook": "Opening premise is standard for history content.",
+        "clarity": "The progression of political events is easy to follow.",
+        "payoff": "The ending summarizes the impact without a final twist.",
+        "visuals": "Archival images fit the tone but include a text-heavy frame.",
+        "loop": "Verbal transition is functional but lacks a seamless audio link."
+      },
+      "frames": [
+        {
+          "beat": 5,
+          "problem": "Frame is mostly text, making it difficult to scan on mobile."
+        }
+      ],
+      "speech": [],
+      "rewrite": [
+        "Beat 1: The world believes the Nazis burned the Reichstag themselves to seize power.",
+        "Beat 7: One arsonist's fire ended German democracy because..."
+      ],
+      "better_than_last": "This entry maintains a more consistently grave tone compared to the lighter O'Leary cow story.",
+      "judge": "gemini-3-flash-preview",
+      "passed": false
+    },
+    {
+      "at": "2026-10-01T12:45:57+05:30",
+      "check": {
+        "duration": 27.1,
+        "words": 81,
+        "integrated_lufs": -14.5,
+        "true_peak_dbfs": -1.8,
+        "warnings": [],
+        "speech_differences": [
+          "'van' heard as 'von' after 'police arrested marinus'"
+        ],
+        "speech_error": null,
+        "sources": [
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons"
+        ]
+      },
+      "scores": {
+        "hook": 4,
+        "clarity": 4,
+        "payoff": 4,
+        "visuals": 3,
+        "loop": 4
+      },
+      "notes": {
+        "hook": "Strong contrarian premise grabs attention immediately.",
+        "clarity": "Clear, logical narrative progression in one listen.",
+        "payoff": "Historical irony resolves the opening premise well.",
+        "visuals": "Repetitive building shot and text-heavy document reduce visual appeal.",
+        "loop": "Final phrase transitions seamlessly into the first beat."
+      },
+      "frames": [
+        {
+          "beat": 2,
+          "problem": "the same picture as another beat"
+        },
+        {
+          "beat": 5,
+          "problem": "mostly text"
+        }
+      ],
+      "speech": [],
+      "rewrite": [],
+      "better_than_last": "Reframes a widespread historical myth with greater narrative restraint than recent tragedy shorts.",
+      "judge": "gemini-3.8-flash",
+      "passed": false
+    },
+    {
+      "at": "2026-10-01T12:47:41+05:30",
+      "check": {
+        "duration": 27.1,
+        "words": 81,
+        "integrated_lufs": -14.5,
+        "true_peak_dbfs": -1.8,
+        "warnings": [],
+        "speech_differences": [
+          "'van' heard as 'von' after 'police arrested marinus'"
+        ],
+        "speech_error": null,
+        "sources": [
+          "Wikimedia Commons",
+          "designed card",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons"
+        ]
+      },
+      "scores": {
+        "hook": 3,
+        "clarity": 4,
+        "payoff": 3,
+        "visuals": 3,
+        "loop": 4
+      },
+      "notes": {
+        "hook": "Presents a familiar historical debate, but lacks an immediate dramatic hook.",
+        "clarity": "The sequence of events and political fallout flows logically.",
+        "payoff": "The twist is subdued since the lone arsonist fact is revealed early.",
+        "visuals": "Historic imagery fits well, though beat 5 has a visible archival watermark.",
+        "loop": "The final clause connects smoothly into the opening sentence."
+      },
+      "frames": [
+        {
+          "beat": 5,
+          "problem": "Archive watermark visible in the lower-left corner."
+        }
+      ],
+      "speech": [],
+      "rewrite": [
+        "Beat 1: The world still blames the Nazis for burning their own parliament to seize power.",
+        "Beat 4: Hitler blamed Communists, yet the evidence proved the arsonist acted entirely alone."
+      ],
+      "better_than_last": "Integrates an exceptionally tight narrative sentence loop compared to recent episodes.",
+      "judge": "gemini-3.8-flash",
+      "passed": false
+    }
+  ],
+  "best_round": 2,
+  "verdict": "rejected",
+  "reason": "low scores: hook, payoff, visuals",
+  "rejected_at": "2026-10-01T12:47:41+05:30"
+}

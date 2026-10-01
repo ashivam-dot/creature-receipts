@@ -1,0 +1,166 @@
+id: ep036
+title: Did the Nazis Really Burn the Reichstag? 🤯
+series: Fallen Empires
+description: The Reichstag fire of 1933 triggered an emergency decree that ended German democracy for twelve years.
+sources:
+- https://en.wikipedia.org/wiki/Reichstag_fire
+- https://en.wikipedia.org/wiki/Reichstag_Fire_Decree
+- https://www.smithsonianmag.com/history/true-story-reichstag-fire-and-nazis-rise-power-180962240/
+- https://www.history.com/articles/reichstag-fire
+- https://encyclopedia.ushmm.org/content/en/article/the-reichstag-fire
+- https://www.theguardian.com/secondworldwar/story/0,,2239610,00.html?gusrc=rss&feed=networkfront
+hashtags:
+- '#history'
+- '#reichstag'
+- '#hitler'
+tags:
+- Reichstag fire
+- Adolf Hitler
+- '1933'
+- German history
+- Weimar Republic
+- Marinus van der Lubbe
+voice:
+  engine: gemini
+  voice: Charon
+  direction: 'Read the transcript below aloud as a gripping true-story narrator on a viral YouTube Short: fast and urgent,
+    about 170 words a minute, with only tiny pauses, a low, intense voice and rising tension that hits the last line hard.
+    Speak only the transcript.'
+beats:
+- text: The world believes the Nazis burned the Reichstag themselves to seize power.
+  emphasis:
+  - Nazis burned
+  - seize power
+  visual:
+    source: url
+    url: https://thumb.wikimedia.org/wikipedia/commons/thumb/2/20/Reichstagsbrand.jpg/1920px-Reichstagsbrand.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
+    credit:
+      source: Wikimedia Commons
+      title: Reichstagsbrand.jpg
+      credit: Unknown authorUnknown author
+      license: Public domain
+      url: https://commons.wikimedia.org/wiki/File:Reichstagsbrand.jpg
+    fallbacks:
+    - color
+    motion: zoom_out
+    focus_x: 0.45
+    focus_y: 0.35
+- text: On February 27, 1933, the German parliament building was engulfed in flames.
+  emphasis:
+  - engulfed in flames
+  sfx: whoosh
+  visual:
+    source: card
+    card:
+      kind: dateline
+      big: February 27, 1933
+      small: Berlin, Germany
+    motion: zoom_in
+- text: Police arrested Marinus van der Lubbe, a lone laborer caught inside.
+  emphasis:
+  - Marinus van der Lubbe
+  - caught inside
+  visual:
+    source: url
+    url: https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f4/MarinusvanderLubbe4.jpg/1280px-MarinusvanderLubbe4.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
+    credit:
+      source: Wikimedia Commons
+      title: MarinusvanderLubbe4.jpg
+      credit: Unknown photographer
+      license: Public domain
+      url: https://commons.wikimedia.org/wiki/File:MarinusvanderLubbe4.jpg
+    fallbacks:
+    - color
+    motion: zoom_out
+    focus_x: 0.68
+    focus_y: 0.45
+    box:
+    - 0.58
+    - 0.26
+    - 0.76
+    - 0.56
+- text: Hitler immediately claimed a Communist plot, though evidence suggests the arsonist acted alone.
+  emphasis:
+  - Communist plot
+  - acted alone
+  sfx: whoosh
+  visual:
+    source: url
+    url: https://upload.wikimedia.org/wikipedia/commons/0/08/Adolf_Hitler_1933.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    credit:
+      source: Wikimedia Commons
+      title: Adolf Hitler 1933.jpg
+      credit: Heinrich Hoffmann
+      license: CC0
+      url: https://commons.wikimedia.org/wiki/File:Adolf_Hitler_1933.jpg
+    fallbacks:
+    - color
+    motion: pan_up
+    focus_x: 0.5
+    focus_y: 0.35
+    box:
+    - 0.28
+    - 0.18
+    - 0.72
+    - 0.52
+- text: This chaos allowed the Nazis to suspend every constitutional right in Germany.
+  emphasis:
+  - suspend every
+  - constitutional right
+  visual:
+    source: url
+    url: https://upload.wikimedia.org/wikipedia/commons/5/50/3_1_0_17_11933_11_1_32677_REICHSTAGSBRAND_Reichstag_Fire_German_Parliament_Berlin_1933-02-27_Crowd_of_onlookers_viewing_the_aftermath_of_the_fire._News_photo_February_1933._Narodowe_Archiwum_Cyfrowe_PDM.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    credit:
+      source: Wikimedia Commons
+      title: 3 1 0 17 11933 11 1 32677 REICHSTAGSBRAND Reichstag Fire German Parliament Berlin 1933-02-27 Crowd of onlookers
+        viewing the aftermath of the fire. News photo February 1933. Narodowe Archiwum Cyfrowe PDM.jpg
+      credit: Press photograph by an unidentified photographer, distributed through a news agency. For details, see the catalogue
+        comments for the image file in the Narodowe Archiwum Cyfrowe (National Digital Archi
+      license: Public domain
+      url: https://commons.wikimedia.org/wiki/File:3_1_0_17_11933_11_1_32677_REICHSTAGSBRAND_Reichstag_Fire_German_Parliament_Berlin_1933-02-27_Crowd_of_onlookers_viewing_the_aftermath_of_the_fire._News_photo_February_1933._Narodowe_Archiwum_Cyfrowe_PDM.jpg
+    fallbacks:
+    - card
+    - color
+    motion: pan_right
+    focus_x: 0.5
+    focus_y: 0.5
+    card:
+      kind: fact
+      big: DECREE
+      small: All rights suspended
+- text: Their emergency decree was never repealed, remaining law for twelve years.
+  emphasis:
+  - never repealed
+  - twelve years
+  sfx: riser
+  visual:
+    source: url
+    url: https://thumb.wikimedia.org/wikipedia/commons/thumb/6/61/Paul_von_Hindenburg_%281914%29_von_Nicola_Perscheid_%28cropped%29.jpg/1920px-Paul_von_Hindenburg_%281914%29_von_Nicola_Perscheid_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
+    credit:
+      source: Wikimedia Commons
+      title: Paul von Hindenburg (1914) von Nicola Perscheid (cropped).jpg
+      credit: Nicola Perscheid / Adam Cuerden
+      license: Public domain
+      url: https://commons.wikimedia.org/wiki/File:Paul_von_Hindenburg_(1914)_von_Nicola_Perscheid_(cropped).jpg
+    fallbacks:
+    - color
+    motion: pan_up
+    focus_x: 0.5
+    focus_y: 0.25
+    box:
+    - 0.3
+    - 0.15
+    - 0.7
+    - 0.45
+- text: One arsonist's fire ended German democracy, yet the world believes.
+  emphasis:
+  - ended German democracy
+  sfx: pop
+  pause_after: 0.4
+  visual:
+    reuse: 1
+    motion: zoom_in
+    focus_x: 0.45
+    focus_y: 0.35
+depth_motion: true
+hook_text: THE TRUE ARSONIST

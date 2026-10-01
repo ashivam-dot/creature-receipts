@@ -1,0 +1,180 @@
+id: ep033
+title: Why Did the Radium Girls Glow in the Dark? 🤯
+series: The Last Hours
+description: In 1917, factory workers were told to lick radioactive paintbrushes while their bosses wore lead masks and used
+  tongs.
+sources:
+- https://en.wikipedia.org/wiki/Radium_Girls
+- https://www.npr.org/2014/12/28/373510029/saved-by-a-bad-taste-one-of-the-last-radium-girls-dies-at-107
+- https://www.nytimes.com/library/national/science/100698sci-radium.html
+- https://www.historynet.com/radium-girls-vs-us-radium/
+- https://en.wikipedia.org/wiki/Radium_dial
+- https://web.archive.org/web/20081027220359/http://www.time.com/time/magazine/article/0,9171,731868,00.html
+- https://www.latimes.com/archives/la-xpm-1988-01-09-ca-8748-story.html
+hashtags:
+- '#history'
+- '#radiumgirls'
+- '#1920s'
+tags:
+- Radium Girls
+- occupational health
+- Grace Fryer
+- United States Radium Corporation
+- industrial history
+- 1928 lawsuit
+voice:
+  engine: gemini
+  voice: Charon
+  direction: 'Read the transcript below aloud as a gripping true-story narrator on a viral YouTube Short: fast and urgent,
+    about 170 words a minute, with only tiny pauses, a low, intense voice and rising tension that hits the last line hard.
+    Speak only the transcript.'
+beats:
+- text: Many believe the Radium Girls didn't know the paint was toxic.
+  emphasis:
+  - believe
+  - toxic
+  visual:
+    source: url
+    url: https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e8/171122-ingersoll-radiolite-ad.jpg/960px-171122-ingersoll-radiolite-ad.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
+    credit:
+      source: Wikimedia Commons
+      title: 171122-ingersoll-radiolite-ad.jpg
+      credit: Unknown author
+      license: Public domain
+      url: https://commons.wikimedia.org/wiki/File:171122-ingersoll-radiolite-ad.jpg
+    fallbacks:
+    - color
+    motion: zoom_out
+    focus_x: 0.24
+    focus_y: 0.53
+    box:
+    - 0.08
+    - 0.34
+    - 0.41
+    - 0.72
+- text: In 1917, young factory workers painted glowing watch dials for pennies.
+  emphasis:
+  - young factory
+  - watch dials
+  sfx: whoosh
+  visual:
+    source: url
+    url: https://upload.wikimedia.org/wikipedia/commons/8/8a/All_women_or_girls_using_radium_paint_with_no_protection_or_warnings_in_1922%2C_from-_USRadiumGirls-Argonne1%2Cca1922-23-150dpi_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    credit:
+      source: Wikimedia Commons
+      title: All women or girls using radium paint with no protection or warnings in 1922, from- USRadiumGirls-Argonne1,ca1922-23-150dpi
+        (cropped).jpg
+      credit: Unknown authorUnknown author
+      license: Public domain
+      url: https://commons.wikimedia.org/wiki/File:All_women_or_girls_using_radium_paint_with_no_protection_or_warnings_in_1922,_from-_USRadiumGirls-Argonne1,ca1922-23-150dpi_(cropped).jpg
+    fallbacks:
+    - card
+    - color
+    motion: pan_left
+    focus_x: 0.5
+    focus_y: 0.5
+    card:
+      kind: dateline
+      big: '1917'
+      small: Orange, New Jersey
+- text: To keep brushes sharp, supervisors told them to use their lips.
+  emphasis:
+  - keep brushes
+  - lips
+  visual:
+    reuse: 2
+    motion: zoom_in
+    focus_x: 0.5
+    focus_y: 0.5
+- text: Management insisted the luminous paint was as safe as medicine.
+  emphasis:
+  - insisted
+  - safe
+  visual:
+    source: card
+    card:
+      kind: fact
+      big: HARMLESS
+      small: Company promise
+    motion: zoom_in
+- text: While the girls licked brushes, the plant owners wore lead masks.
+  emphasis:
+  - licked
+  - lead masks
+  sfx: whoosh
+  visual:
+    source: url
+    url: https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6e/Marie_et_Pierre_Curie.jpg/1280px-Marie_et_Pierre_Curie.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
+    credit:
+      source: Wikimedia Commons
+      title: Marie et Pierre Curie.jpg
+      credit: Unknown authorUnknown author
+      license: Public domain
+      url: https://commons.wikimedia.org/wiki/File:Marie_et_Pierre_Curie.jpg
+    fallbacks:
+    - color
+    motion: zoom_out
+    focus_x: 0.5
+    focus_y: 0.5
+- text: Executives used tongs for the radium the girls put in their mouths.
+  emphasis:
+  - tongs
+  - mouths
+  sfx: pop
+  pause_after: 0.4
+  visual:
+    source: url
+    url: https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f3/Tiegelzange.jpg/960px-Tiegelzange.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
+    credit:
+      source: Wikimedia Commons
+      title: Tiegelzange.jpg
+      credit: Gmhofmann at German Wikipedia
+      license: Public domain
+      url: https://commons.wikimedia.org/wiki/File:Tiegelzange.jpg
+    fallbacks:
+    - color
+    motion: pan_up
+    focus_x: 0.5
+    focus_y: 0.5
+- text: In 1928, Grace Fryer sued to expose this deadly corporate deception.
+  emphasis:
+  - Grace Fryer
+  - deception
+  sfx: riser
+  visual:
+    source: url
+    url: https://upload.wikimedia.org/wikipedia/commons/3/36/Grace_Fryer.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    credit:
+      source: Wikimedia Commons
+      title: Grace Fryer.jpg
+      credit: Unknown authorUnknown author
+      license: Public domain
+      url: https://commons.wikimedia.org/wiki/File:Grace_Fryer.jpg
+    fallbacks:
+    - card
+    - color
+    motion: pan_down
+    focus_x: 0.5
+    focus_y: 0.4
+    box:
+    - 0.2
+    - 0.1
+    - 0.8
+    - 0.6
+    card:
+      kind: dateline
+      big: '1928'
+      small: New Jersey Court
+- text: The world finally realized why dial painters were told to lick.
+  emphasis:
+  - world
+  - lick
+  sfx: pop
+  pause_after: 0.4
+  visual:
+    reuse: 1
+    motion: zoom_in
+    focus_x: 0.24
+    focus_y: 0.53
+depth_motion: true
+hook_text: THE LICKED PAINT TRAP

@@ -1,0 +1,159 @@
+{
+  "rounds": [
+    {
+      "at": "2026-10-01T12:39:56+05:30",
+      "check": {
+        "duration": 26.67,
+        "words": 88,
+        "integrated_lufs": -14.2,
+        "true_peak_dbfs": -1.8,
+        "warnings": [],
+        "speech_differences": [
+          "'believe' heard as 'believed' after 'many'"
+        ],
+        "speech_error": null,
+        "sources": [
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "designed card",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons"
+        ]
+      },
+      "scores": {
+        "hook": 4,
+        "clarity": 4,
+        "payoff": 4,
+        "visuals": 3,
+        "loop": 4
+      },
+      "notes": {
+        "hook": "Successfully subverts common knowledge to grab attention.",
+        "clarity": "Narrative progression is logical and easy to follow.",
+        "payoff": "The safety contrast creates a strong emotional impact.",
+        "visuals": "Historical inaccuracies in key frames detract from authenticity.",
+        "loop": "The concluding phrase transitions naturally back to the introduction."
+      },
+      "frames": [
+        {
+          "beat": 3,
+          "problem": "Large duster brushes are incorrect for dial painting."
+        },
+        {
+          "beat": 5,
+          "problem": "Depicts Marie Curie instead of factory owners."
+        }
+      ],
+      "speech": [],
+      "rewrite": [],
+      "better_than_last": "Utilizes a more compelling myth-busting hook than the previous airship episode.",
+      "judge": "gemini-3-flash-preview",
+      "passed": false
+    },
+    {
+      "at": "2026-10-01T12:41:22+05:30",
+      "check": {
+        "duration": 26.67,
+        "words": 88,
+        "integrated_lufs": -14.2,
+        "true_peak_dbfs": -1.8,
+        "warnings": [],
+        "speech_differences": [
+          "'believe' heard as 'believed' after 'many'"
+        ],
+        "speech_error": null,
+        "sources": [
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "designed card",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons"
+        ]
+      },
+      "scores": {
+        "hook": 4,
+        "clarity": 4,
+        "payoff": 4,
+        "visuals": 3,
+        "loop": 4
+      },
+      "notes": {
+        "hook": "Strong thematic start but phrasing is slightly passive for a split-second grab.",
+        "clarity": "Logical progression from the work task to the corporate deception.",
+        "payoff": "The contrast between the girls' licking and owners' protection is effective.",
+        "visuals": "Uses a famous photo of the Curies to represent malicious factory owners.",
+        "loop": "Phrasing allows for a smooth thematic transition back to the start."
+      },
+      "frames": [
+        {
+          "beat": 5,
+          "problem": "The image shows scientists Marie and Pierre Curie, not the factory owners."
+        }
+      ],
+      "speech": [],
+      "rewrite": [],
+      "better_than_last": "It achieves a similar level of narrative irony as the Hiroshima survivor episode.",
+      "judge": "gemini-3-flash-preview",
+      "passed": false
+    },
+    {
+      "at": "2026-10-01T12:43:52+05:30",
+      "check": {
+        "duration": 26.67,
+        "words": 88,
+        "integrated_lufs": -14.2,
+        "true_peak_dbfs": -1.8,
+        "warnings": [],
+        "speech_differences": [
+          "'believe' heard as 'believed' after 'many'"
+        ],
+        "speech_error": null,
+        "sources": [
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "designed card",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons"
+        ]
+      },
+      "scores": {
+        "hook": 4,
+        "clarity": 4,
+        "payoff": 4,
+        "visuals": 3,
+        "loop": 4
+      },
+      "notes": {
+        "hook": "Immediately challenges common historical knowledge.",
+        "clarity": "Narrative arc is simple and logical.",
+        "payoff": "Irony of safety equipment is powerful.",
+        "visuals": "Beat 5 shows the wrong historical figures.",
+        "loop": "Seamless thematic return to the start."
+      },
+      "frames": [
+        {
+          "beat": 5,
+          "problem": "Shows Marie and Pierre Curie instead of owners."
+        }
+      ],
+      "speech": [],
+      "rewrite": [],
+      "better_than_last": "Offers a more concise reveal of negligence than ep025.",
+      "judge": "gemini-3-flash-preview",
+      "passed": false
+    }
+  ],
+  "best_round": 2,
+  "verdict": "rejected",
+  "reason": "low scores: visuals",
+  "rejected_at": "2026-10-01T12:43:52+05:30"
+}

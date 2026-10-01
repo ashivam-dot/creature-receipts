@@ -1,0 +1,195 @@
+{
+  "rounds": [
+    {
+      "at": "2026-10-01T11:52:02+05:30",
+      "check": {
+        "duration": 31.73,
+        "words": 78,
+        "integrated_lufs": -14.6,
+        "true_peak_dbfs": -1.7,
+        "warnings": [],
+        "speech_differences": [
+          "'ammurapi' heard as 'amorapi' after 'the region king'"
+        ],
+        "speech_error": null,
+        "sources": [
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "designed card",
+          "Wikimedia Commons"
+        ]
+      },
+      "scores": {
+        "hook": 5,
+        "clarity": 3,
+        "payoff": 4,
+        "visuals": 2,
+        "loop": 5
+      },
+      "notes": {
+        "hook": "The opening claim is an immediate attention-grabber.",
+        "clarity": "The connection between palace economies, drought, and the misdated sites is jumpy and not explicitly linked.",
+        "payoff": "The statistical debunking provides a strong punchline to the initial hook.",
+        "visuals": "Beat 2 shows a modern house instead of a Bronze Age palace, which is a glaring anachronism.",
+        "loop": "The identical phrasing in beat 1 and 6 creates a perfect loop."
+      },
+      "frames": [
+        {
+          "beat": 2,
+          "problem": "The image shows a modern residential building, not a Bronze Age palace."
+        }
+      ],
+      "speech": [
+        {
+          "beat": 4,
+          "word": "Ammurapi",
+          "respelling": "ah moo rah pee"
+        }
+      ],
+      "rewrite": [
+        "Beat 2: \"These civilizations relied on centralized palaces to manage their wealth.\"",
+        "Beat 3: \"But a severe multi-decade mega-drought crippled these systems.\"",
+        "Beat 4: \"Even King Ammurapi of Ugarit wrote desperate letters of burning cities.\"",
+        "Beat 5: \"Yet modern research shows sixty-one percent of these destruction sites were actually misdated.\""
+      ],
+      "better_than_last": "This is the first Short in the series.",
+      "judge": "gemma-4-31b-it",
+      "passed": false
+    },
+    {
+      "at": "2026-10-01T12:28:57+05:30",
+      "check": {
+        "duration": 24.89,
+        "words": 71,
+        "integrated_lufs": -14.1,
+        "true_peak_dbfs": -1.8,
+        "warnings": [],
+        "speech_differences": [
+          "'ammurapi' heard as 'amorapi' after 'systems even king'"
+        ],
+        "speech_error": null,
+        "sources": [
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons"
+        ]
+      },
+      "scores": {
+        "hook": 4,
+        "clarity": 3,
+        "payoff": 4,
+        "visuals": 2,
+        "loop": 5
+      },
+      "notes": {
+        "hook": "Strong counter-intuitive claim to grab attention.",
+        "clarity": "The connection between the drought and the 'myth' of collapse is slightly disjointed.",
+        "payoff": "Good twist revealing the statistical misdating of the event.",
+        "visuals": "Several frames are completely anachronistic or irrelevant (modern house, cave with tourists).",
+        "loop": "Perfect seamless loop of the first and last lines."
+      },
+      "frames": [
+        {
+          "beat": 2,
+          "problem": "Shows a modern Turkish-style house, not an ancient Bronze Age palace."
+        },
+        {
+          "beat": 3,
+          "problem": "Shows a modern cave tour with people in high-visibility vests, completely unrelated to drought."
+        },
+        {
+          "beat": 5,
+          "problem": "Map is too small and complex for mobile screens; markers are indistinct."
+        }
+      ],
+      "speech": [
+        {
+          "beat": 4,
+          "word": "Ammurapi",
+          "respelling": "am mu ra pi"
+        }
+      ],
+      "rewrite": [
+        "Beat 2: These ancient civilizations relied on centralized palaces to manage their wealth.",
+        "Beat 3: A severe multi-decade drought crippled their delicate trading systems."
+      ],
+      "better_than_last": "First Short produced, no previous comparison.",
+      "judge": "gemma-4-31b-it",
+      "passed": false
+    },
+    {
+      "at": "2026-10-01T12:34:10+05:30",
+      "check": {
+        "duration": 24.26,
+        "words": 72,
+        "integrated_lufs": -14.2,
+        "true_peak_dbfs": -1.8,
+        "warnings": [],
+        "speech_differences": [
+          "'ammurapi' heard as 'amurapi' after 'entire region king'"
+        ],
+        "speech_error": null,
+        "sources": [
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons"
+        ]
+      },
+      "scores": {
+        "hook": 4,
+        "clarity": 3,
+        "payoff": 4,
+        "visuals": 2,
+        "loop": 5
+      },
+      "notes": {
+        "hook": "Strong provocative claim to start.",
+        "clarity": "The logic jumps from palaces to drought to the 'myth' without explaining the connection clearly.",
+        "payoff": "The revelation that most destructions were misdated effectively challenges the hook.",
+        "visuals": "Multiple frames are wildly incorrect or irrelevant to the Bronze Age.",
+        "loop": "Perfect repetition of the first line."
+      },
+      "frames": [
+        {
+          "beat": 2,
+          "problem": "Shows a modern house with a tiled roof, not an ancient palace."
+        },
+        {
+          "beat": 3,
+          "problem": "Shows a cave/stalactites; while used for paleoclimate data, it's not an intuitive visual for 'drought' for a general viewer."
+        },
+        {
+          "beat": 5,
+          "problem": "Shows a map of Alexander's Empire (approx 323 BC), which is hundreds of years after the Bronze Age Collapse (approx 1177 BC)."
+        }
+      ],
+      "speech": [
+        {
+          "beat": 4,
+          "word": "Ammurapi",
+          "respelling": "am moo rah pee"
+        }
+      ],
+      "rewrite": [
+        "Beat 2: These ancient civilizations relied on vast palace complexes to store and manage their wealth.",
+        "Beat 3: But a multi-decade drought destabilized their trade and sparked widespread chaos.",
+        "Beat 5: Yet modern research shows sixty-one percent of these supposed destruction sites were actually misdated."
+      ],
+      "better_than_last": "This is the first Short in the series.",
+      "judge": "gemma-4-31b-it",
+      "passed": false
+    }
+  ],
+  "best_round": 1,
+  "verdict": "rejected",
+  "reason": "low scores: clarity, visuals; 3 frame problems",
+  "rejected_at": "2026-10-01T12:34:10+05:30"
+}

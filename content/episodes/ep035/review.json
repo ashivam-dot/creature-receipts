@@ -1,0 +1,52 @@
+{
+  "rounds": [
+    {
+      "at": "2026-10-01T12:50:18+05:30",
+      "check": {
+        "duration": 27.6,
+        "words": 84,
+        "integrated_lufs": -14.5,
+        "true_peak_dbfs": -1.7,
+        "warnings": [],
+        "speech_differences": [
+          "'s' heard as 'is' after 'galveston'",
+          "'cline' heard as 'klein' after 'weather chief isaac'",
+          "'8' heard as '8th' after 'panic on september'",
+          "'s' heard as 'is' after 'perished in america'"
+        ],
+        "speech_error": null,
+        "sources": [
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "designed card",
+          "designed card",
+          "Wikimedia Commons"
+        ]
+      },
+      "scores": {
+        "hook": 4,
+        "clarity": 4,
+        "payoff": 4,
+        "visuals": 4,
+        "loop": 4
+      },
+      "notes": {
+        "hook": "Strong irony in the 'impossible' claim immediately grabs attention.",
+        "clarity": "Narrative flows logically from false security to systemic failure.",
+        "payoff": "Reveal regarding professional jealousy provides a compelling human cause.",
+        "visuals": "Era-appropriate portraits and maps maintain high historical immersion.",
+        "loop": "Seamlessly transitions the final thought back to the opening promise."
+      },
+      "frames": [],
+      "speech": [],
+      "rewrite": [],
+      "better_than_last": "Provides a more nuanced look at human error than recent disaster-focused shorts.",
+      "judge": "gemini-3-flash-preview",
+      "passed": true
+    }
+  ],
+  "best_round": 1
+}
