@@ -114,21 +114,19 @@ beats:
   pause_after: 0.4
   visual:
     source: url
-    url: https://www.artic.edu/iiif/2/bf4873e2-88da-d396-cc90-75c2bc5f7191/full/1686,/0/default.jpg
+    url: https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f3/Le_Tour_du_monde%2C_nouvelle_s%C3%A9rie-19-p095.jpg/1280px-Le_Tour_du_monde%2C_nouvelle_s%C3%A9rie-19-p095.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
     credit:
-      source: Art Institute of Chicago (CC0)
-      title: God Shiva Seated in Loving Embrace with Goddess Uma on the Bull Nandi
-      credit: 'India
-
-        Madhya Pradesh'
-      license: CC0
-      url: https://www.artic.edu/artworks/86961
+      source: Wikimedia Commons
+      title: Le Tour du monde, nouvelle série-19-p095.jpg
+      credit: Le Tour du monde
+      license: Public domain
+      url: https://commons.wikimedia.org/wiki/File:Le_Tour_du_monde,_nouvelle_s%C3%A9rie-19-p095.jpg
     fallbacks:
     - card
     - color
-    motion: pan_down
-    focus_x: 0.5
-    focus_y: 0.5
+    motion: pan_right
+    focus_x: 0.45
+    focus_y: 0.55
     card:
       kind: fact
       big: Butchers' Shop
@@ -157,33 +155,28 @@ beats:
       kind: dateline
       big: December 14, 1911
       small: The South Pole
-- text: Only eleven dogs survived the ninety-nine-day journey.
+- text: He won the race but sacrificed forty-one dogs.
   emphasis:
-  - eleven dogs
-  - survived
+  - won the race
+  - sacrificed
   visual:
     source: url
-    url: https://live.staticflickr.com/4894/46321961462_11132a7d0f_b.jpg
+    url: https://upload.wikimedia.org/wikipedia/commons/c/c9/Amundsen%27s_expedition_at_the_South_Pole_-_LOC_3c01002u.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
     credit:
-      source: Flickr via Openverse
-      title: ANTARCTIC EXPEDITION by ROALD AMUNDSEN, HOBART HARBOUR, TASMANIA - March 1912
-      credit: Aussie~mobs
+      source: Wikimedia Commons
+      title: Amundsen's expedition at the South Pole - LOC 3c01002u.jpg
+      credit: Unknown authorUnknown author
       license: Public domain
-      url: https://www.flickr.com/photos/70994841@N07/46321961462
+      url: https://commons.wikimedia.org/wiki/File:Amundsen%27s_expedition_at_the_South_Pole_-_LOC_3c01002u.jpg
     fallbacks:
-    - card
     - color
     motion: pan_right
     focus_x: 0.5
     focus_y: 0.5
-    card:
-      kind: fact
-      big: 11 Dogs
-      small: Out of 52 that started
-- text: The world still thought they were sailing for the North Pole.
+- text: While he stood at the South Pole, the world still thought he was...
   emphasis:
-  - world
-  - North Pole
+  - South Pole
+  - thought
   visual:
     reuse: 1
     motion: zoom_out

@@ -46,6 +46,69 @@
       "better_than_last": "This script achieves a significantly more seamless loop than ep035 by ending on the exact premise that started the story.",
       "judge": "gemini-3-flash-preview",
       "passed": false
+    },
+    {
+      "at": "2026-10-01T23:09:23+05:30",
+      "check": {
+        "duration": 19.67,
+        "words": 81,
+        "integrated_lufs": -14.5,
+        "true_peak_dbfs": -1.8,
+        "warnings": [],
+        "speech_differences": [
+          "'amundsen slaughtered his own dogs to feed the survivors' heard as '(nothing)' after 'out of food'"
+        ],
+        "speech_error": null,
+        "sources": [
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Art Institute of Chicago (CC0)",
+          "Wikimedia Commons",
+          "designed card",
+          "Wikimedia Commons"
+        ]
+      },
+      "scores": {
+        "hook": 4,
+        "clarity": 4,
+        "payoff": 3,
+        "visuals": 2,
+        "loop": 4
+      },
+      "notes": {
+        "hook": "The deception provides a solid hook.",
+        "clarity": "Timeline is clear and logical.",
+        "payoff": "Conclusion repeats the hook without escalation.",
+        "visuals": "Beat five uses an irrelevant image.",
+        "loop": "Seamless transition back to start."
+      },
+      "frames": [
+        {
+          "beat": 5,
+          "problem": "Incorrect image of a stone carving."
+        }
+      ],
+      "speech": [
+        {
+          "beat": 1,
+          "word": "Amundsen",
+          "respelling": "ah mun sen"
+        },
+        {
+          "beat": 5,
+          "word": "Amundsen",
+          "respelling": "ah mun sen"
+        }
+      ],
+      "rewrite": [
+        "Beat 7: He won the race but sacrificed forty-one dogs.",
+        "Beat 8: While he stood at the South Pole, the world still thought he was..."
+      ],
+      "better_than_last": "Stronger focus on a central mystery than the Galveston hurricane short.",
+      "judge": "gemini-3-flash-preview",
+      "passed": false
     }
   ],
   "best_round": 1
