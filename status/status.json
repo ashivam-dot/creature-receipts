@@ -1,205 +1,167 @@
 {
-  "updated_at": "2026-10-01T09:13:21+05:30",
+  "updated_at": "2026-10-01T10:47:08+05:30",
   "day": 0,
   "result": "ok",
   "run": {
-    "host": "modal",
-    "id": "ta-01M3TRXWZWCENXBKY23VF0N1CR",
-    "number": null,
-    "trigger": "manual",
-    "started_at": "2026-10-01T09:13:08+05:30",
-    "started_at_utc": "2026-10-01T03:43:08+00:00",
-    "seconds": 14
+    "host": "github-actions",
+    "id": "36818968770",
+    "number": "9",
+    "trigger": "workflow_dispatch",
+    "started_at": "2026-10-01T10:46:49+05:30",
+    "started_at_utc": "2026-10-01T05:16:49+00:00",
+    "seconds": 19
   },
   "stages": [
     {
-      "name": "deploy",
-      "ok": true,
-      "detail": "",
-      "seconds": 1.8
-    },
-    {
       "name": "sync",
       "ok": true,
-      "detail": "7 posts",
-      "seconds": 0.5
+      "detail": "0 posts",
+      "seconds": 0.2
     },
     {
       "name": "playlists",
       "ok": true,
       "detail": "nothing new",
-      "seconds": 1.0
+      "seconds": 0.5
     },
     {
       "name": "languages",
       "ok": true,
       "detail": "every live Short is in English",
-      "seconds": 0.1
+      "seconds": 0.0
     },
     {
       "name": "on youtube",
       "ok": true,
       "detail": "every Short sent is public",
-      "seconds": 0.1
+      "seconds": 0.0
     },
     {
       "name": "short reviews",
       "ok": true,
       "detail": "no checkpoint due",
-      "seconds": 0.1
+      "seconds": 0.0
     },
     {
       "name": "collect",
       "ok": true,
       "detail": "nothing in the cloud",
-      "seconds": 0.4
+      "seconds": 0.3
     },
     {
       "name": "buffer channel",
       "ok": true,
       "detail": "connected",
+      "seconds": 0.1
+    },
+    {
+      "name": "publish",
+      "ok": true,
+      "detail": "",
+      "seconds": 0.0
+    },
+    {
+      "name": "deploy",
+      "ok": true,
+      "detail": "",
+      "seconds": 1.1
+    },
+    {
+      "name": "start ep025",
+      "ok": true,
+      "detail": "R101 (1930): Britain's giant airship crashed in France on its first overseas flight, after it was sent off on schedule with the air minister aboard",
       "seconds": 0.2
     },
     {
-      "name": "preflight ep012",
+      "name": "start ep026",
       "ok": true,
-      "detail": "video still hosted",
-      "seconds": 0.6
+      "detail": "Peshtigo fire (1871): the deadliest wildfire in American history burned the same night as the Great Chicago Fire, and was nearly forgotten because of it",
+      "seconds": 0.1
     },
     {
-      "name": "preflight ep018",
+      "name": "start ep027",
       "ok": true,
-      "detail": "video still hosted",
-      "seconds": 0.5
+      "detail": "Great Chicago Fire (1871): Mrs. O'Leary's cow took the blame, but the reporter who spread the story later admitted he made it up",
+      "seconds": 0.1
+    },
+    {
+      "name": "start ep028",
+      "ok": true,
+      "detail": "Pompeii: the famous body casts are plaster poured into hollows the victims left in the ash, a technique begun by Giuseppe Fiorelli in 1863",
+      "seconds": 0.2
     },
     {
       "name": "publish",
       "ok": true,
       "detail": "",
-      "seconds": 0.1
-    },
-    {
-      "name": "start ep020",
-      "ok": true,
-      "detail": "Winnipeg (bear) (1914): the real bear behind Winnie-the-Pooh was a black bear cub bought for $20 at an Ontario train stop, who sailed for England with Canadian troops on October 3",
-      "seconds": 0.8
-    },
-    {
-      "name": "start ep022",
-      "ok": true,
-      "detail": "Octopus: three hearts, blue copper-based blood, and two-thirds of its 500 million neurons in its arms",
-      "seconds": 1.0
-    },
-    {
-      "name": "start ep023",
-      "ok": true,
-      "detail": "Anglerfish: the tiny male latches onto a far larger female and can fuse into her body",
-      "seconds": 0.5
-    },
-    {
-      "name": "start ep024",
-      "ok": true,
-      "detail": "Narwhal: the \"horn\" is a spiral left canine tooth up to 3 meters long, packed with millions of nerve endings",
-      "seconds": 0.5
-    },
-    {
-      "name": "publish",
-      "ok": true,
-      "detail": "",
-      "seconds": 0.1
+      "seconds": 0.0
     }
   ],
   "errors": [],
   "owner_action": [],
   "notes": [],
   "inventory": {
-    "total": 5,
-    "in_buffer": 5,
+    "total": 0,
+    "in_buffer": 0,
     "waiting": 0,
     "target": 42,
     "making": [],
     "remote": [
-      "ep020",
-      "ep022",
-      "ep023",
-      "ep024"
+      "ep025",
+      "ep026",
+      "ep027",
+      "ep028"
     ]
   },
-  "queue": [
-    {
-      "id": "ep018",
-      "title": "The Truth Behind the 2025 Dire Wolf Pups",
-      "due_at": "2026-10-01T19:00:00-04:00"
-    },
-    {
-      "id": "ep012",
-      "title": "First live footage of the colossal squid",
-      "due_at": "2026-10-01T21:30:00-04:00"
-    },
-    {
-      "id": "ep011",
-      "title": "The 66-Million-Year-Old Fish That Came Back",
-      "due_at": "2026-10-02T19:00:00-04:00"
-    },
-    {
-      "id": "ep017",
-      "title": "Why Great White Sharks Rarely Eat Humans",
-      "due_at": "2026-10-02T21:30:00-04:00"
-    },
-    {
-      "id": "ep008",
-      "title": "Cher Ami's True WWI Mission",
-      "due_at": "2026-10-04T19:00:00-04:00"
-    }
-  ],
+  "queue": [],
   "waiting": [],
   "made": [],
   "spawned": [
     {
-      "id": "ep020",
-      "topic": "Winnipeg (bear) (1914): the real bear behind Winnie-the-Pooh was a black bear cub bought for $20 at an Ontario train stop, who sailed for England with Canadian troops on October 3",
-      "call_id": "fc-01M3TRYEDD8CBZ4T5EZSBYGNX4"
+      "id": "ep025",
+      "topic": "R101 (1930): Britain's giant airship crashed in France on its first overseas flight, after it was sent off on schedule with the air minister aboard",
+      "call_id": "fc-01M3TYA71VBANPWZ1PSFKX2ZE4"
     },
     {
-      "id": "ep022",
-      "topic": "Octopus: three hearts, blue copper-based blood, and two-thirds of its 500 million neurons in its arms",
-      "call_id": "fc-01M3TRYFCVBGRKB5Q1QC7VE0RG"
+      "id": "ep026",
+      "topic": "Peshtigo fire (1871): the deadliest wildfire in American history burned the same night as the Great Chicago Fire, and was nearly forgotten because of it",
+      "call_id": "fc-01M3TYA76PWVJ0XYQXF570T70Y"
     },
     {
-      "id": "ep023",
-      "topic": "Anglerfish: the tiny male latches onto a far larger female and can fuse into her body",
-      "call_id": "fc-01M3TRYFWZRFMRCFV5DQRN9TF8"
+      "id": "ep027",
+      "topic": "Great Chicago Fire (1871): Mrs. O'Leary's cow took the blame, but the reporter who spread the story later admitted he made it up",
+      "call_id": "fc-01M3TYA7AN4D2089PWW1JV3SC2"
     },
     {
-      "id": "ep024",
-      "topic": "Narwhal: the \"horn\" is a spiral left canine tooth up to 3 meters long, packed with millions of nerve endings",
-      "call_id": "fc-01M3TRYGCW2G3246T6VSSR7DS0"
+      "id": "ep028",
+      "topic": "Pompeii: the famous body casts are plaster poured into hollows the victims left in the ash, a technique begun by Giuseppe Fiorelli in 1863",
+      "call_id": "fc-01M3TYA7FNZE7B8ANYTQ44BCH8"
     }
   ],
   "in_cloud": [
     {
-      "id": "ep020",
-      "topic": "Winnipeg (bear) (1914): the real bear behind Winnie-the-Pooh was a black bear cub bought for $20 at an Ontario train stop, who sailed for England with Canadian troops on October 3",
-      "spawned_at": "2026-10-01T09:13:19+05:30"
+      "id": "ep025",
+      "topic": "R101 (1930): Britain's giant airship crashed in France on its first overseas flight, after it was sent off on schedule with the air minister aboard",
+      "spawned_at": "2026-10-01T10:47:08+05:30"
     },
     {
-      "id": "ep022",
-      "topic": "Octopus: three hearts, blue copper-based blood, and two-thirds of its 500 million neurons in its arms",
-      "spawned_at": "2026-10-01T09:13:20+05:30"
+      "id": "ep026",
+      "topic": "Peshtigo fire (1871): the deadliest wildfire in American history burned the same night as the Great Chicago Fire, and was nearly forgotten because of it",
+      "spawned_at": "2026-10-01T10:47:08+05:30"
     },
     {
-      "id": "ep023",
-      "topic": "Anglerfish: the tiny male latches onto a far larger female and can fuse into her body",
-      "spawned_at": "2026-10-01T09:13:21+05:30"
+      "id": "ep027",
+      "topic": "Great Chicago Fire (1871): Mrs. O'Leary's cow took the blame, but the reporter who spread the story later admitted he made it up",
+      "spawned_at": "2026-10-01T10:47:08+05:30"
     },
     {
-      "id": "ep024",
-      "topic": "Narwhal: the \"horn\" is a spiral left canine tooth up to 3 meters long, packed with millions of nerve endings",
-      "spawned_at": "2026-10-01T09:13:21+05:30"
+      "id": "ep028",
+      "topic": "Pompeii: the famous body casts are plaster poured into hollows the victims left in the ash, a technique begun by Giuseppe Fiorelli in 1863",
+      "spawned_at": "2026-10-01T10:47:08+05:30"
     }
   ],
   "published": [],
-  "live": 2,
+  "live": 0,
   "failed_posts": [],
   "not_live": [],
   "llm": {
@@ -212,20 +174,20 @@
     "runner": 0
   },
   "daily_done": "2026-09-30",
-  "minutes_this_month": 0.0,
-  "minutes_budget": 2000,
+  "minutes_this_month": 2.324489859733333,
+  "minutes_budget": null,
   "modal_cost": {
-    "metered": 0.01,
+    "metered": 0.33,
     "billed": 0.0
   },
   "modal_credit": 30.0,
   "capacity": {
-    "cloud": 233,
-    "runner": 0,
-    "runner_minutes": 0,
-    "modal_credit_left": 27.99
+    "cloud": 230,
+    "runner": 6,
+    "runner_minutes": 120,
+    "modal_credit_left": 27.67
   },
   "made_here": 0,
-  "open_topics": 98,
-  "parked_topics": 3
+  "open_topics": 58,
+  "parked_topics": 0
 }

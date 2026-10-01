@@ -19,9 +19,9 @@ event is told for its gore. Space topics belong to the sister channel Universe R
 
 | Date | Story | Series |
 |---|---|---|
-| Oct 5 | R101 (1930): Britain's giant airship crashed in France on its first overseas flight, after it was sent off on schedule with the air minister aboard | Warnings Ignored |
-| Oct 8 | Peshtigo fire (1871): the deadliest wildfire in American history burned the same night as the Great Chicago Fire, and was nearly forgotten because of it | The Last Hours |
-| Oct 8 | Great Chicago Fire (1871): Mrs. O'Leary's cow took the blame, but the reporter who spread the story later admitted he made it up | The Last Hours |
+| Oct 5 | R101 (1930): Britain's giant airship crashed in France on its first overseas flight, after it was sent off on schedule with the air minister aboard — making (ep025) | Warnings Ignored |
+| Oct 8 | Peshtigo fire (1871): the deadliest wildfire in American history burned the same night as the Great Chicago Fire, and was nearly forgotten because of it — making (ep026) | The Last Hours |
+| Oct 8 | Great Chicago Fire (1871): Mrs. O'Leary's cow took the blame, but the reporter who spread the story later admitted he made it up — making (ep027) | The Last Hours |
 | Oct 17 | London Beer Flood (1814): a vat burst at a brewery and a wave of more than a million liters of beer swept through a poor London parish | The Last Hours |
 | Oct 24 | Eruption of Mount Vesuvius in 79 AD: a charcoal inscription found at Pompeii in 2018 suggests the eruption came in autumn, not on August 24 as long believed | The Last Hours |
 | Oct 25 | Charge of the Light Brigade (1854): a misread order sent the light cavalry straight down a valley ringed with Russian guns | Warnings Ignored |
@@ -46,7 +46,7 @@ event is told for its gore. Space topics belong to the sister channel Universe R
 
 ### Lost Cities
 
-- Pompeii: the famous body casts are plaster poured into hollows the victims left in the ash, a technique begun by Giuseppe Fiorelli in 1863
+- Pompeii: the famous body casts are plaster poured into hollows the victims left in the ash, a technique begun by Giuseppe Fiorelli in 1863 — making (ep028)
 - Herculaneum: for centuries it was thought its people escaped, until hundreds of skeletons were found in the boathouses by the shore in the 1980s
 - Akrotiri (prehistoric city): a Bronze Age town buried by the Minoan eruption where almost no bodies have been found, as if its people had warning
 - Helike: a Greek city that sank in a single night in 373 BC, after an earthquake and a wave
