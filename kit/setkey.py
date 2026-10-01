@@ -121,7 +121,7 @@ def modal_profiles(text: str) -> list[dict]:
     for line in text.splitlines():
         line = line.strip()
         if line.startswith("[") and line.endswith("]"):
-            profiles.append({})
+            profiles.append({"_name": line[1:-1].strip()})
         elif "=" in line and profiles and not line.startswith("#"):
             key, value = (part.strip() for part in line.split("=", 1))
             value = value.strip("'\"")
@@ -129,13 +129,19 @@ def modal_profiles(text: str) -> list[dict]:
     return profiles
 
 
-def set_modal() -> None:
+def set_modal(profile: str | None = None) -> None:
+    """The named profile's token, or the active one's: each channel can have its own Modal workspace."""
     config = Path.home() / ".modal.toml"
     if not config.exists():
         raise SystemExit("setkey: ~/.modal.toml is missing; run `uv run --no-sync modal token new` in pipeline/ first")
     profiles = modal_profiles(config.read_text(encoding="utf-8"))
-    chosen = next((p for p in profiles if p.get("active") is True), None)
-    chosen = chosen or next((p for p in profiles if p.get("token_id")), None)
+    if profile:
+        chosen = next((p for p in profiles if p["_name"] == profile), None)
+        if not chosen:
+            raise SystemExit(f"setkey: no Modal profile {profile!r} in ~/.modal.toml")
+    else:
+        chosen = next((p for p in profiles if p.get("active") is True), None)
+        chosen = chosen or next((p for p in profiles if p.get("token_id")), None)
     if not chosen or not chosen.get("token_id") or not chosen.get("token_secret"):
         raise SystemExit("setkey: no Modal token in ~/.modal.toml; run `uv run --no-sync modal token new` again")
     write_value("MODAL_TOKEN_ID", chosen["token_id"])
@@ -182,6 +188,7 @@ def main() -> None:
     parser.add_argument("name", nargs="?", help="the variable to set from the clipboard")
     parser.add_argument("--force", action="store_true", help="save it even if it doesn't look like that service's keys")
     parser.add_argument("--modal", action="store_true", help="copy the Modal token from ~/.modal.toml")
+    parser.add_argument("--modal-profile", help="with --modal: the ~/.modal.toml profile to copy (default: the active one)")
     parser.add_argument("--google-client", type=Path, help="the downloaded OAuth client JSON")
     parser.add_argument("--set", dest="plain", help="NAME=value for a setting that isn't secret")
     parser.add_argument("--list", action="store_true", help="show which names are set")
@@ -189,7 +196,7 @@ def main() -> None:
     if args.list:
         show()
     elif args.modal:
-        set_modal()
+        set_modal(args.modal_profile)
     elif args.google_client:
         set_google_client(args.google_client)
     elif args.plain:
