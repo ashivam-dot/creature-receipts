@@ -1,28 +1,34 @@
 {
-  "updated_at": "2026-10-01T10:47:08+05:30",
+  "updated_at": "2026-10-01T11:05:17+05:30",
   "day": 0,
   "result": "ok",
   "run": {
-    "host": "github-actions",
-    "id": "36818968770",
-    "number": "9",
-    "trigger": "workflow_dispatch",
-    "started_at": "2026-10-01T10:46:49+05:30",
-    "started_at_utc": "2026-10-01T05:16:49+00:00",
-    "seconds": 19
+    "host": "modal",
+    "id": "ta-01M3TZAYDT0W0S9G911B1APN3R",
+    "number": null,
+    "trigger": "schedule",
+    "started_at": "2026-10-01T11:05:05+05:30",
+    "started_at_utc": "2026-10-01T05:35:05+00:00",
+    "seconds": 11
   },
   "stages": [
+    {
+      "name": "deploy",
+      "ok": true,
+      "detail": "",
+      "seconds": 1.3
+    },
     {
       "name": "sync",
       "ok": true,
       "detail": "0 posts",
-      "seconds": 0.2
+      "seconds": 0.4
     },
     {
       "name": "playlists",
       "ok": true,
       "detail": "nothing new",
-      "seconds": 0.5
+      "seconds": 0.7
     },
     {
       "name": "languages",
@@ -45,8 +51,8 @@
     {
       "name": "collect",
       "ok": true,
-      "detail": "nothing in the cloud",
-      "seconds": 0.3
+      "detail": "ep025 still working (0.3 h); ep026 still working (0.3 h); ep027 still working (0.3 h); ep028 still working (0.3 h)",
+      "seconds": 0.9
     },
     {
       "name": "buffer channel",
@@ -61,33 +67,27 @@
       "seconds": 0.0
     },
     {
-      "name": "deploy",
+      "name": "start ep029",
       "ok": true,
-      "detail": "",
-      "seconds": 1.1
+      "detail": "Late Bronze Age collapse: around 1177 BC, nearly every great civilization of the eastern Mediterranean fell within a few decades",
+      "seconds": 0.4
     },
     {
-      "name": "start ep025",
+      "name": "start ep030",
       "ok": true,
-      "detail": "R101 (1930): Britain's giant airship crashed in France on its first overseas flight, after it was sent off on schedule with the air minister aboard",
+      "detail": "Franklin's lost expedition (1845): 129 men vanished in the Arctic, and their two ships were only found in 2014 and 2016",
       "seconds": 0.2
     },
     {
-      "name": "start ep026",
+      "name": "start ep031",
       "ok": true,
-      "detail": "Peshtigo fire (1871): the deadliest wildfire in American history burned the same night as the Great Chicago Fire, and was nearly forgotten because of it",
+      "detail": "Tsutomu Yamaguchi (1945): the only person Japan officially recognized as surviving both atomic bombings",
       "seconds": 0.1
     },
     {
-      "name": "start ep027",
+      "name": "start ep032",
       "ok": true,
-      "detail": "Great Chicago Fire (1871): Mrs. O'Leary's cow took the blame, but the reporter who spread the story later admitted he made it up",
-      "seconds": 0.1
-    },
-    {
-      "name": "start ep028",
-      "ok": true,
-      "detail": "Pompeii: the famous body casts are plaster poured into hollows the victims left in the ash, a technique begun by Giuseppe Fiorelli in 1863",
+      "detail": "Triangle Shirtwaist Factory fire (1911): a stairway door was locked, and 146 garment workers died",
       "seconds": 0.2
     },
     {
@@ -110,7 +110,11 @@
       "ep025",
       "ep026",
       "ep027",
-      "ep028"
+      "ep028",
+      "ep029",
+      "ep030",
+      "ep031",
+      "ep032"
     ]
   },
   "queue": [],
@@ -118,24 +122,24 @@
   "made": [],
   "spawned": [
     {
-      "id": "ep025",
-      "topic": "R101 (1930): Britain's giant airship crashed in France on its first overseas flight, after it was sent off on schedule with the air minister aboard",
-      "call_id": "fc-01M3TYA71VBANPWZ1PSFKX2ZE4"
+      "id": "ep029",
+      "topic": "Late Bronze Age collapse: around 1177 BC, nearly every great civilization of the eastern Mediterranean fell within a few decades",
+      "call_id": "fc-01M3TZBE62KGGR0YJHTD9151AR"
     },
     {
-      "id": "ep026",
-      "topic": "Peshtigo fire (1871): the deadliest wildfire in American history burned the same night as the Great Chicago Fire, and was nearly forgotten because of it",
-      "call_id": "fc-01M3TYA76PWVJ0XYQXF570T70Y"
+      "id": "ep030",
+      "topic": "Franklin's lost expedition (1845): 129 men vanished in the Arctic, and their two ships were only found in 2014 and 2016",
+      "call_id": "fc-01M3TZBECYF0S76AKA2D6KDMYK"
     },
     {
-      "id": "ep027",
-      "topic": "Great Chicago Fire (1871): Mrs. O'Leary's cow took the blame, but the reporter who spread the story later admitted he made it up",
-      "call_id": "fc-01M3TYA7AN4D2089PWW1JV3SC2"
+      "id": "ep031",
+      "topic": "Tsutomu Yamaguchi (1945): the only person Japan officially recognized as surviving both atomic bombings",
+      "call_id": "fc-01M3TZBEHY8CT3EB5C19MPQA7Q"
     },
     {
-      "id": "ep028",
-      "topic": "Pompeii: the famous body casts are plaster poured into hollows the victims left in the ash, a technique begun by Giuseppe Fiorelli in 1863",
-      "call_id": "fc-01M3TYA7FNZE7B8ANYTQ44BCH8"
+      "id": "ep032",
+      "topic": "Triangle Shirtwaist Factory fire (1911): a stairway door was locked, and 146 garment workers died",
+      "call_id": "fc-01M3TZBEPY5F8REBT23WHS511B"
     }
   ],
   "in_cloud": [
@@ -158,6 +162,26 @@
       "id": "ep028",
       "topic": "Pompeii: the famous body casts are plaster poured into hollows the victims left in the ash, a technique begun by Giuseppe Fiorelli in 1863",
       "spawned_at": "2026-10-01T10:47:08+05:30"
+    },
+    {
+      "id": "ep029",
+      "topic": "Late Bronze Age collapse: around 1177 BC, nearly every great civilization of the eastern Mediterranean fell within a few decades",
+      "spawned_at": "2026-10-01T11:05:16+05:30"
+    },
+    {
+      "id": "ep030",
+      "topic": "Franklin's lost expedition (1845): 129 men vanished in the Arctic, and their two ships were only found in 2014 and 2016",
+      "spawned_at": "2026-10-01T11:05:16+05:30"
+    },
+    {
+      "id": "ep031",
+      "topic": "Tsutomu Yamaguchi (1945): the only person Japan officially recognized as surviving both atomic bombings",
+      "spawned_at": "2026-10-01T11:05:17+05:30"
+    },
+    {
+      "id": "ep032",
+      "topic": "Triangle Shirtwaist Factory fire (1911): a stairway door was locked, and 146 garment workers died",
+      "spawned_at": "2026-10-01T11:05:17+05:30"
     }
   ],
   "published": [],
@@ -174,20 +198,20 @@
     "runner": 0
   },
   "daily_done": "2026-09-30",
-  "minutes_this_month": 2.324489859733333,
-  "minutes_budget": null,
+  "minutes_this_month": 2.0,
+  "minutes_budget": 2000,
   "modal_cost": {
-    "metered": 0.33,
+    "metered": 0.69,
     "billed": 0.0
   },
   "modal_credit": 30.0,
   "capacity": {
-    "cloud": 230,
-    "runner": 6,
-    "runner_minutes": 120,
-    "modal_credit_left": 27.67
+    "cloud": 223,
+    "runner": 0,
+    "runner_minutes": 0,
+    "modal_credit_left": 26.83
   },
   "made_here": 0,
-  "open_topics": 58,
+  "open_topics": 54,
   "parked_topics": 0
 }

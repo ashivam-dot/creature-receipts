@@ -60,7 +60,7 @@ event is told for its gore. Space topics belong to the sister channel Universe R
 
 ### Doomed Expeditions
 
-- Franklin's lost expedition (1845): 129 men vanished in the Arctic, and their two ships were only found in 2014 and 2016
+- Franklin's lost expedition (1845): 129 men vanished in the Arctic, and their two ships were only found in 2014 and 2016 — making (ep030)
 - Terra Nova expedition (1912): Scott's last three men died in their tent about 11 miles from a supply depot
 - Andrée's Arctic balloon expedition (1897): their camp was found 33 years later, with film that could still be developed
 - Burke and Wills expedition (1861): they staggered back to their base camp hours after the party waiting for them had left
@@ -73,7 +73,7 @@ event is told for its gore. Space topics belong to the sister channel Universe R
 
 - Fall of Constantinople (1453): by one account, the city fell through a small gate someone left open
 - Sack of Rome (410): the first time in 800 years that a foreign enemy took the city of Rome
-- Late Bronze Age collapse: around 1177 BC, nearly every great civilization of the eastern Mediterranean fell within a few decades
+- Late Bronze Age collapse: around 1177 BC, nearly every great civilization of the eastern Mediterranean fell within a few decades — making (ep029)
 - Fall of Tenochtitlan (1521): smallpox killed huge numbers of the city's people before and during the siege
 - Battle of the Teutoburg Forest (9 AD): three Roman legions were wiped out, and Augustus is said to have cried "Varus, give me back my legions!"
 - Siege of Baghdad (1258): accounts say the Tigris ran black with ink from the books thrown into it
@@ -88,7 +88,7 @@ event is told for its gore. Space topics belong to the sister channel Universe R
 - Johnstown Flood (1889): the dam that failed belonged to a fishing club of Pittsburgh's richest men
 - Great Molasses Flood (1919): the leaking tank had been painted brown to hide the leaks
 - Sultana (steamboat) (1865): a boat built for a few hundred carried over 2,000 people, most of them freed Union prisoners, when its patched boiler exploded
-- Triangle Shirtwaist Factory fire (1911): a stairway door was locked, and 146 garment workers died
+- Triangle Shirtwaist Factory fire (1911): a stairway door was locked, and 146 garment workers died — making (ep032)
 - Iroquois Theatre fire (1903): advertised as "absolutely fireproof", it burned five weeks after opening
 - Vasa (ship) (1628): the warship sank on its maiden voyage, less than a mile out, after failing a stability test before it sailed
 - Knickerbocker Storm (1922): the roof of Washington's Knickerbocker Theatre collapsed under the snow during a film
@@ -96,7 +96,7 @@ event is told for its gore. Space topics belong to the sister channel Universe R
 ### Sole Survivors
 
 - Violet Jessop: a stewardess who survived the Titanic, the Britannic's sinking, and the Olympic's collision
-- Tsutomu Yamaguchi (1945): the only person Japan officially recognized as surviving both atomic bombings
+- Tsutomu Yamaguchi (1945): the only person Japan officially recognized as surviving both atomic bombings — making (ep031)
 - Ludger Sylbaris (1902): one of the very few survivors of Mount Pelée's eruption, saved by the thick walls of his jail cell
 - Charles Joughin (1912): the Titanic's chief baker survived a long time in the freezing water, and credited the whisky he had drunk
 - Arthur John Priest: the "unsinkable stoker" survived the Titanic, the Britannic, and other sinkings
