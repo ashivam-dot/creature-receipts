@@ -8,6 +8,7 @@ import io
 import json
 import logging
 import os
+import re
 import time
 import unicodedata
 from dataclasses import dataclass
@@ -46,6 +47,12 @@ TAKES = 3
 SPEECH_CLEAR = 0.9
 # A beat's picture comes in this long before its first word.
 CUT_LEAD = 0.08
+# An English Short reads with this Kokoro voice when every Gemini TTS model is out of quota, so posting doesn't stop.
+KOKORO_FALLBACK, KOKORO_FALLBACK_SPEED = "af_heart", 1.1
+_OVERRIDE = re.compile(r"\[([^\]]+)\]\(/[^)]*/\)")
+# More letters than this heard outside the script is speech Gemini added; it's cut, EXTRA_MARGIN seconds from the
+# script's first and last words.
+EXTRA_LETTERS, EXTRA_MARGIN = 6, 0.12
 
 
 @dataclass
@@ -251,6 +258,13 @@ def _align(tokens: list[tuple[str, int]], heard: list[tuple[str, float, float]])
     return words, [f / max(t, 1) for f, t in zip(found, total)]
 
 
+def _outside(words: list[Word], heard: list[tuple[str, float, float]]) -> tuple[int, int]:
+    """Letters Whisper heard before the script's first word and after its last, when more than EXTRA_LETTERS."""
+    before = sum(len(_letters(t)) for t, _, end in heard if end <= words[0].start - 0.1)
+    after = sum(len(_letters(t)) for t, start, _ in heard if start >= words[-1].end + 0.1)
+    return (before if before > EXTRA_LETTERS else 0), (after if after > EXTRA_LETTERS else 0)
+
+
 def speech_report(coverage: list[float]) -> dict:
     """What check.speech reports, from how much of each line Whisper heard in a Gemini take."""
     return {"coverage": [round(c, 3) for c in coverage],
@@ -261,8 +275,10 @@ def speech_report(coverage: list[float]) -> dict:
 def _gemini(spec: ShortSpec, out_dir: Path) -> Narration:
     """The best of up to TAKES readings. The chosen take is kept (take.wav) and used again while the script and
     voice stay the same, so re-rendering the pictures doesn't change the performance."""
-    script = "\n".join(beat.text for beat in spec.beats)
-    tokens = [(text, index) for index, beat in enumerate(spec.beats) for text in beat.text.split()]
+    # Gemini would read a Kokoro [word](/phonemes/) override aloud; it says the plain word.
+    lines = [_OVERRIDE.sub(r"\1", beat.text) for beat in spec.beats]
+    script = "\n".join(lines)
+    tokens = [(text, index) for index, line in enumerate(lines) for text in line.split()]
     language = WHISPER_LANGUAGE.get(spec.voice.lang_code, "en")
     out_dir.mkdir(parents=True, exist_ok=True)
     wav_path, take_path, take_json = out_dir / "narration.wav", out_dir / "take.wav", out_dir / "take.json"
@@ -285,10 +301,21 @@ def _gemini(spec: ShortSpec, out_dir: Path) -> Narration:
                     raise
                 log.warning("%s: no take %d (%s); keeping the best so far", spec.id, take, error)
                 break
-        head, tail = _speech_bounds(raw)
-        audio = np.concatenate([np.zeros(int(lead_in * SAMPLE_RATE), dtype=np.float32), raw[head:tail]])
-        sf.write(wav_path, audio, SAMPLE_RATE)
-        words, coverage = _align(tokens, _heard(wav_path, language))
+        for _ in range(2):
+            head, tail = _speech_bounds(raw)
+            audio = np.concatenate([np.zeros(int(lead_in * SAMPLE_RATE), dtype=np.float32), raw[head:tail]])
+            sf.write(wav_path, audio, SAMPLE_RATE)
+            heard = _heard(wav_path, language)
+            words, coverage = _align(tokens, heard)
+            before, after = _outside(words, heard)
+            if not (before or after):
+                break
+            # Gemini sometimes reads the direction aloud too; the script's own reading is kept.
+            log.warning("%s take %d: cutting %d letters of speech before the script and %d after", spec.id, take,
+                        before, after)
+            start = head + int(max(words[0].start - lead_in - EXTRA_MARGIN, 0) * SAMPLE_RATE) if before else 0
+            end = head + int((words[-1].end - lead_in + EXTRA_MARGIN) * SAMPLE_RATE) if after else len(raw)
+            raw = raw[start:end]
         log.info("%s take %d (%s): Whisper heard %s of each line", spec.id, take, served or "model not recorded",
                  " ".join(f"{c:.0%}" for c in coverage))
         if best is None or min(coverage) > min(best[3]):
@@ -313,7 +340,14 @@ def _gemini(spec: ShortSpec, out_dir: Path) -> Narration:
 
 def synthesize(spec: ShortSpec, out_dir: Path) -> Narration:
     if spec.voice.engine == "gemini":
-        return _gemini(spec, out_dir)
+        try:
+            return _gemini(spec, out_dir)
+        except (RuntimeError, requests.RequestException) as error:
+            if spec.voice.lang_code not in ("a", "b"):
+                raise
+            log.warning("%s: no Gemini take (%s); reading it with Kokoro %s instead", spec.id, error, KOKORO_FALLBACK)
+            voice = Voice(voice=KOKORO_FALLBACK, speed=KOKORO_FALLBACK_SPEED, lang_code="a", lead_in=spec.voice.lead_in)
+            return synthesize(spec.model_copy(update={"voice": voice}), out_dir)
     if spec.voice.engine != "kokoro":
         raise ValueError(f"unsupported TTS engine: {spec.voice.engine}")
     pipeline = _pipeline(spec.voice.lang_code)

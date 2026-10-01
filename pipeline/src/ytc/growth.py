@@ -177,7 +177,7 @@ TOPICS_SCHEMA = {
 
 _CHANNEL = ("History's Last Hours is a YouTube Shorts channel of true, sourced stories of history's tragedies (lost "
             "cities, doomed voyages and expeditions, fallen empires, ignored warnings, and the few who survived) for a "
-            "US audience, 20 to 35 seconds each, told with period pictures and every claim backed by two reputable "
+            "US audience, 17 to 35 seconds each, told with period pictures and every claim backed by two reputable "
             "sources. Series: " + "; ".join(SERIES) + ".")
 _RULES = ("Each must be a real event at least 75 years old with a human story and a genuinely surprising, "
           "well-documented detail, and name the exact title of an existing English Wikipedia article about it (the "

@@ -36,8 +36,8 @@ STRUCTURES = {
 }
 # The breakout history Shorts of 2026 run 17 to 27 seconds (research-competitors.json, 2026-10-01): short enough
 # to be watched to the end and replayed, which is what the Shorts feed rewards.
-BEATS = (5, 7)
-WORDS = (55, 75)
+BEATS = (6, 8)
+WORDS = (70, 90)
 # Two scripts sharing this share of their three-word phrases read as the same script with the nouns swapped.
 SAME_SCRIPT = 0.25
 # A hook whose first this-many words match a recent hook's opens on a template.

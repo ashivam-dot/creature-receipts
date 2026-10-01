@@ -31,7 +31,12 @@ REJECTED = ROOT / "content" / "rejected"
 # Episodes from the channel's first niche (animals, until 2026-10-01): kept for their numbers, never published.
 SHELVED = ROOT / "content" / "shelved"
 IST = ZoneInfo("Asia/Kolkata")
-VOICE = {"voice": "af_heart", "speed": 1.05}
+# Gemini Charon read a 79-word test script in 21 s with every line as clear to Whisper as Kokoro's 31 s read
+# (voice-samples/, 2026-10-01). tts.synthesize falls back to Kokoro when Gemini is out of quota.
+VOICE = {"engine": "gemini", "voice": "Charon", "direction": (
+    "Read the transcript below aloud as a gripping true-story narrator on a viral YouTube Short: fast and urgent, "
+    "about 170 words a minute, with only tiny pauses, a low, intense voice and rising tension that hits the last "
+    "line hard. Speak only the transcript.")}
 GATE = ["hook", "clarity", "payoff", "visuals", "loop"]
 PASS_SCORE = 4
 FIX_ROUNDS = 2
@@ -57,7 +62,7 @@ REVIEW_SCHEMA = {
 
 REVIEW_PROMPT = """You are the quality gate for History's Last Hours, a YouTube Shorts channel of true, sourced
 stories of history's tragedies (lost cities, doomed voyages and expeditions, fallen empires, ignored warnings, and
-the few who survived), each told through the people in it, gravely and without gore, in 20 to 35 seconds. Judge
+the few who survived), each told through the people in it, gravely and without gore, in 17 to 35 seconds. Judge
 this rendered Short as a demanding editor would. Below are the script with each beat's timing,
 one frame from the middle of each shot (what viewers see, captions included; a long beat can cut to a close-up,
 so it has two), and the automatic checks.
@@ -77,7 +82,7 @@ Also:
   a correctly spoken name, not a skipped short word), give the beat, the word exactly as written in the
   beat, and a respelling in plain lowercase words that a text-to-speech voice would read correctly
   (Formosus: "for moe sus").
-- rewrite: if hook, clarity, payoff, or loop is under 4, or the duration is outside 20-35 s, up to 4 concrete
+- rewrite: if hook, clarity, payoff, or loop is under 4, or the duration is outside 17-35 s, up to 4 concrete
   changes (which beat, what to say instead), using only facts already in the script. Otherwise empty.
 - better_than_last: one sentence on what this Short does better than the recent ones listed, or "" if nothing.
 

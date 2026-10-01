@@ -419,7 +419,7 @@ def add_topics(run: Run, backlog_count: int = 4) -> list[str]:
     prompt = (
         "You find topics for History's Last Hours, a YouTube Shorts channel of true, sourced stories of history's "
         "tragedies (lost cities, doomed voyages and expeditions, fallen empires, ignored warnings, and the few who "
-        "survived) for a US audience (20 to 35 seconds each, told with period pictures, every claim sourced). "
+        "survived) for a US audience (17 to 35 seconds each, told with period pictures, every claim sourced). "
         "Series: " + "; ".join(SERIES) + ".\n\n"
         f"Suggest {backlog_count + 3} new backlog topics and 2 anniversaries dated between "
         f"{(today + timedelta(days=21)).strftime('%b %d')} and {(today + timedelta(days=56)).strftime('%b %d')}. Each must be a "

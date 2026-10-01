@@ -3,7 +3,7 @@
 Channel: **History's Last Hours** (@HistorysLastHours), true stories of history's tragedies (lost cities, doomed
 voyages and expeditions, fallen empires, ignored warnings, and the few who survived), in American English for a
 US audience. Every claim has at least two reputable sites behind it. Promise: the human story of one real
-disaster in 20 to 35 seconds, told with weight and sourced. Only events at least 75 years old. Space belongs to
+disaster in 17 to 35 seconds, told with weight and sourced. Only events at least 75 years old. Space belongs to
 the sister channel Universe Receipts: no space topics here.
 
 Before writing, read `strategy/LEARNINGS.md`: what's working on this channel, what isn't, and the numbers
@@ -21,7 +21,7 @@ Folder: `content/episodes/<id>/` (ids are `ep001`, `ep002`, ...).
 
 ## Script rules
 
-- **Length:** 55–75 spoken words (about 20–30 seconds), 5–7 beats, one short sentence per beat. The
+- **Length:** 70–90 spoken words (about 17–25 seconds in the fast Gemini Charon read), 6–8 beats, one short sentence per beat. The
   breakout history Shorts of 2026 run 17–27 seconds; a Short watched to the end and replayed is the one the
   feed pushes. Cut every word that doesn't move the story.
 - **Hook (beat 1):** 12 words or fewer, literally true and concrete, opening inside the moment of the story
@@ -203,4 +203,4 @@ wrong, write it as `[word](/phonemes/)` using that alphabet, re-render, and note
 spellings of a correctly spoken name and skipped short words are normal. It also writes one frame per beat to
 `content/episodes/<id>/work/frames/`. Look at every frame. If an image is wrong, off-topic, low quality, or has
 distracting burned-in text, change that beat's `query` or `source` and re-render; a changed visual is fetched
-again automatically. Aim for 20–30 seconds.
+again automatically. Aim for 17–27 seconds.

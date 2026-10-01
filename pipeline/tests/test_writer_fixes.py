@@ -40,6 +40,6 @@ def test_gives_up_after_the_fix_rounds_with_the_best_problems(drafts):
 
 def test_word_count_problem_says_how_many_words_to_add(monkeypatch):
     monkeypatch.setattr(writer, "recent_scripts", lambda topic: [])
-    beats = [{"text": " ".join(["word"] * 8)} for _ in range(5)]
+    beats = [{"text": " ".join(["word"] * 9)} for _ in range(6)]
     found = writer.problems({"beats": beats}, RESEARCH)
-    assert any("add at least 15 words" in f and "beat 5: 8" in f for f in found)
+    assert any("add at least 16 words" in f and "beat 6: 9" in f for f in found)

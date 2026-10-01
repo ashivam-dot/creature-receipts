@@ -20,7 +20,7 @@ _ROMAN = re.compile(r"\b[IVX]{2,}\b")
 _WAR = re.compile(r"\bWar (I{1,2})\b")
 ASR_MODEL = "small.en"
 # Seconds a finished Short may run (writer.WORDS sets the script length that lands inside it).
-DURATION = (20, 35)
+DURATION = (17, 35)
 
 
 def check(video: Path) -> dict:
