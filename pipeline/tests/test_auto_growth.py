@@ -189,6 +189,48 @@ def test_timely_short_is_scheduled_first_with_an_extra_slot(monkeypatch):
     assert scheduled[0][1] < max(queued_at)
 
 
+def _anniversary_run(monkeypatch, others):
+    now = datetime.now(publish.AUDIENCE_TZ)
+    monkeypatch.setattr(publish, "posts", lambda since=None, channel_id=None: [])
+    scheduled = []
+    monkeypatch.setattr(publish, "schedule", lambda path, when: scheduled.append((path.parent.name, when)) or {"due_at": when.isoformat()})
+    monkeypatch.setattr(auto, "slots_per_day", lambda today=None: 3)
+
+    def ep(episode_id, at=None):
+        return {"id": episode_id, "folder": auto.EPISODES / episode_id, "state": "waiting", "title": episode_id,
+                "series": episode_id, "record": None, "held": {}, "topic": {"at": at} if at else {}, "remote": None}
+
+    day = (now + timedelta(days=4)).date()
+    eps = [ep("ep100", day.isoformat())] + [ep(f"ep{101 + i}") for i in range(others)]
+    monkeypatch.setattr(auto, "episodes", lambda: eps)
+    auto.publish_waiting(auto.Run("test"))
+    return day, dict(scheduled)
+
+
+def test_anniversary_short_waits_only_when_other_shorts_fill_the_days(monkeypatch):
+    day, scheduled = _anniversary_run(monkeypatch, others=1)
+    assert scheduled["ep100"].date() < day
+    day, scheduled = _anniversary_run(monkeypatch, others=12)
+    assert scheduled["ep100"].date() == day
+
+
+def test_booked_anniversary_short_is_released_when_days_before_it_would_be_empty(monkeypatch, tmp_path):
+    day = (datetime.now(publish.AUDIENCE_TZ) + timedelta(days=4)).date()
+    due = datetime.combine(day, publish.SLOTS[0], publish.AUDIENCE_TZ)
+    folder = tmp_path / "ep100"
+    folder.mkdir()
+    (folder / "publish.json").write_text("{}")
+    record = {"title": "R101", "buffer_post_id": "p1", "due_at": due.isoformat(), "media_url": "https://cdn/ep100.mp4"}
+    eps = [{"id": "ep100", "folder": folder, "state": "scheduled", "series": "s", "record": record, "topic": {"at": day.isoformat()}}]
+    monkeypatch.setattr(auto, "episodes", lambda: eps)
+    monkeypatch.setattr(auto, "slots_per_day", lambda today=None: 3)
+    deleted = []
+    monkeypatch.setattr(publish, "delete_post", deleted.append)
+    auto.release_anniversaries(auto.Run("test"))
+    assert deleted == ["p1"] and not (folder / "publish.json").exists()
+    assert json.loads((folder / "hold.json").read_text())["media_url"] == "https://cdn/ep100.mp4"
+
+
 def _record_ep(episode_id, due, **extra):
     record = {"id": episode_id, "media_url": f"https://cdn/{episode_id}.mp4", "due_at": due.isoformat(), "media_bytes": 20_000_000,
               "status": "scheduled", **extra}

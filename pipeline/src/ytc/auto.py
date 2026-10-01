@@ -1128,6 +1128,38 @@ def slots_per_day(today: date | None = None) -> int:
     return min(len(SLOTS), planned, UNPROVEN_PACE)
 
 
+def _worth_holding(day: date, supply: int, slots: int, today: date) -> bool:
+    """Whether a Short waits for its anniversary: only while the other Shorts made fill every slot until then, as an
+    empty day costs a young channel more than missing the date."""
+    return supply - 1 >= (day - today).days * slots
+
+
+def release_anniversaries(run: Run) -> None:
+    """Back to waiting with each Short booked on its anniversary that is no longer worth holding for, so this run's
+    publish puts it in the next free slot. Once moved off its date it isn't touched again."""
+    from .publish import AUDIENCE_TZ, delete_post
+
+    eps = episodes()
+    today = datetime.now(AUDIENCE_TZ)
+    supply = sum(1 for e in eps if e["state"] in ("scheduled", "waiting"))
+    slots = slots_per_day()
+    for e in eps:
+        record, at = e["record"], (e["topic"] or {}).get("at")
+        if e["state"] != "scheduled" or not at or not record.get("due_at"):
+            continue
+        due = datetime.fromisoformat(record["due_at"]).astimezone(AUDIENCE_TZ)
+        day = date.fromisoformat(at)
+        if due.date() != day or due - today < timedelta(days=1) or _worth_holding(day, supply, slots, today.date()):
+            continue
+        with run.stage(f"release {e['id']}") as entry:
+            keep = ("media_public_id", "media_url", "media_bytes", "hosted_at", "retries", "crossposts")
+            held = {"id": e["id"], "title": record["title"], "series": e["series"], **{k: record[k] for k in keep if k in record}}
+            delete_post(record["buffer_post_id"])
+            (e["folder"] / "hold.json").write_text(json.dumps(held, indent=2), encoding="utf-8")
+            (e["folder"] / "publish.json").unlink()
+            entry["detail"] = f"off its {day:%b %d} anniversary slot: too few other Shorts to fill the days before it"
+
+
 def publish_waiting(run: Run) -> None:
     from .publish import AUDIENCE_TZ, BUFFER_QUEUE_LIMIT, SLOTS, next_slots, posts, schedule
 
@@ -1153,9 +1185,12 @@ def publish_waiting(run: Run) -> None:
     last_series = by_post.get(last["id"], {}).get("series") if last else None
     today = datetime.now(AUDIENCE_TZ)
 
+    supply = len(queued) + len(waiting)
+
     def anniversary(e):
         at = (e.get("held") or {}).get("anniversary") or (e.get("topic") or {}).get("at")
-        return date.fromisoformat(at) if at else None
+        day = date.fromisoformat(at) if at else None
+        return day if day and _worth_holding(day, supply, slots, today.date()) else None
 
     def timely(e):
         return bool((e.get("topic") or {}).get("timely"))
@@ -1745,6 +1780,7 @@ def main(produce_count: int | None = None, publish: bool = True, daily_mode: str
         repair_posts(run, requeue=can_post)
         preflight_posts(run)
     if can_post and not buffer_busy():
+        release_anniversaries(run)
         with run.stage("publish"):
             publish_waiting(run)
     inv = inventory()
