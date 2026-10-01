@@ -1,0 +1,142 @@
+id: ep025
+title: Why Did Britain's Giant R101 Airship Crash? ⚠️
+series: Warnings Ignored
+description: The tragic story of the R101, Britain's giant imperial airship that crashed in France on its maiden voyage in
+  1930.
+sources:
+- https://en.wikipedia.org/wiki/R101
+- https://collections.rafmuseum.org.uk/story/memorial-of-a-disaster/
+- https://aviationjeta.com/r101-airship-disaster-5-october-1930/
+- https://migflug.com/afterburner/r101-airship-disaster-1930-britain/
+- https://web.archive.org/web/20090830231632/http://www.aht.ndirect.co.uk/airships/r101/R101%20Passenger%20%20Crew%20List.htm
+- https://en.wikipedia.org/wiki/Imperial_Airship_Scheme
+hashtags:
+- '#history'
+- '#r101'
+- '#airship'
+tags:
+- r101 crash
+- british airship
+- aviation history
+- disaster
+- air minister lord thomson
+- 1930 airship
+voice:
+  engine: gemini
+  voice: Charon
+  direction: 'Read the transcript below aloud as a gripping true-story narrator on a viral YouTube Short: fast and urgent,
+    about 170 words a minute, with only tiny pauses, a low, intense voice and rising tension that hits the last line hard.
+    Speak only the transcript.'
+beats:
+- text: A rushed political deadline forced the world's largest airship skyward.
+  emphasis:
+  - world's largest airship
+  visual:
+    source: url
+    url: https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0b/R101.jpg/1920px-R101.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
+    credit:
+      source: Wikimedia Commons
+      title: R101.jpg
+      credit: U.K. Government
+      license: Public domain
+      url: https://commons.wikimedia.org/wiki/File:R101.jpg
+    fallbacks:
+    - color
+    motion: pan_down
+    focus_x: 0.55
+    focus_y: 0.45
+- text: In October 1930, Britain's R101 departed for India on its maiden voyage.
+  emphasis:
+  - R101 departed
+  sfx: whoosh
+  visual:
+    source: card
+    card:
+      kind: dateline
+      big: October 4, 1930
+      small: Cardington, England
+    motion: zoom_in
+- text: To boost lift, designers had hastily sliced in an extra gas cell.
+  emphasis:
+  - extra gas cell
+  visual:
+    source: url
+    url: https://upload.wikimedia.org/wikipedia/commons/a/af/R101-framework.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    credit:
+      source: Wikimedia Commons
+      title: R101-framework.jpg
+      credit: no author credited
+      license: No restrictions
+      url: https://commons.wikimedia.org/wiki/File:R101-framework.jpg
+    fallbacks:
+    - color
+    motion: pan_right
+    focus_x: 0.5
+    focus_y: 0.5
+- text: Air Minister Lord [Thomson](/tˈɑmsˈʌn/) boarded despite storm warnings and missed trials.
+  emphasis:
+  - Lord Thomson boarded
+  visual:
+    source: url
+    url: https://upload.wikimedia.org/wikipedia/commons/c/c4/Christopher_Birdwood_Thomson%2C_1st_Baron_Thomson%2C_in_1926.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    credit:
+      source: Wikimedia Commons
+      title: Christopher Birdwood Thomson, 1st Baron Thomson, in 1926.jpg
+      credit: Bassano Ltd
+      license: Public domain
+      url: https://commons.wikimedia.org/wiki/File:Christopher_Birdwood_Thomson,_1st_Baron_Thomson,_in_1926.jpg
+    fallbacks:
+    - color
+    motion: pan_up
+    focus_x: 0.5
+    focus_y: 0.4
+- text: Gales over France forced the giant into two steep, fatal dives.
+  emphasis:
+  - fatal dives
+  sfx: whoosh
+  visual:
+    source: url
+    url: https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f4/R101_wreckage.jpg/960px-R101_wreckage.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
+    credit:
+      source: Wikimedia Commons
+      title: R101 wreckage.jpg
+      credit: Unknown author
+      license: Public domain
+      url: https://commons.wikimedia.org/wiki/File:R101_wreckage.jpg
+    fallbacks:
+    - color
+    motion: pan_right
+    focus_x: 0.5
+    focus_y: 0.5
+- text: The hydrogen ignited instantly, killing forty-eight people inside the blazing hull.
+  emphasis:
+  - ignited instantly
+  - killing forty-eight
+  sfx: riser
+  visual:
+    source: card
+    card:
+      kind: fact
+      big: 48 Dead
+      small: From 54 people on board
+    motion: zoom_in
+- text: The only survivors were engineers riding in external engine cars.
+  emphasis:
+  - external engine cars
+  sfx: pop
+  pause_after: 0.4
+  visual:
+    reuse: 5
+    motion: zoom_out
+    focus_x: 0.5
+    focus_y: 0.5
+- text: Yet the empire demanded a triumph, ignoring every warning.
+  emphasis:
+  - ignoring every warning
+  visual:
+    reuse: 1
+    motion: zoom_out
+    focus_x: 0.55
+    focus_y: 0.45
+depth_motion: true
+hook_text: RUSHED TO FLY

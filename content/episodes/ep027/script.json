@@ -1,0 +1,223 @@
+{
+  "hooks": [
+    {
+      "style": "contradiction",
+      "text": "The most famous cow in history never kicked that lantern."
+    },
+    {
+      "style": "statement",
+      "text": "In October 1871, a raging inferno destroyed the city of Chicago."
+    },
+    {
+      "style": "question",
+      "text": "Who really burned down the entire city of Chicago in 1871?"
+    }
+  ],
+  "hook_style": "contradiction",
+  "structure": "story",
+  "title": "Why Chicago Took 126 Years to Clear O'Leary's Cow 😳",
+  "description": "The Great Chicago Fire of 1871 was blamed on Mrs. O'Leary's cow, but the real story was a complete fabrication.",
+  "hashtags": [
+    "#history",
+    "#chicagofire",
+    "#greatchicagofire"
+  ],
+  "tags": [
+    "chicago fire",
+    "oleary cow",
+    "catherine oleary",
+    "michael ahern",
+    "chicago history",
+    "1871 fire"
+  ],
+  "beats": [
+    {
+      "text": "The most famous cow in history never kicked that lantern.",
+      "emphasis": [
+        "famous cow",
+        "never kicked"
+      ],
+      "sfx": "none",
+      "pause_after": 0.12,
+      "claims": [
+        3,
+        9
+      ],
+      "visual": "Nineteenth-century illustration of a cow knocking over a lantern, 1871",
+      "subjects": [
+        "Great Chicago Fire",
+        "Catherine O'Leary"
+      ],
+      "year": 1871,
+      "queries": [
+        "Great Chicago Fire cow cartoon",
+        "Mrs O'Leary cow lantern caricature 1871"
+      ],
+      "card": {
+        "kind": "none",
+        "big": "",
+        "small": ""
+      }
+    },
+    {
+      "text": "On October 8, 1871, a devastating fire broke out on DeKoven Street.",
+      "emphasis": [
+        "October 8, 1871",
+        "DeKoven Street"
+      ],
+      "sfx": "whoosh",
+      "pause_after": 0.12,
+      "claims": [
+        1
+      ],
+      "visual": "Lithograph depicting the Great Chicago Fire in full blaze, 1871",
+      "subjects": [
+        "Great Chicago Fire"
+      ],
+      "year": 1871,
+      "queries": [
+        "Great Chicago Fire 1871 lithograph",
+        "John R. Chapin Chicago fire engraving"
+      ],
+      "card": {
+        "kind": "dateline",
+        "big": "October 8, 1871",
+        "small": "Chicago, Illinois"
+      }
+    },
+    {
+      "text": "Fueled by severe drought, the Great Chicago Fire killed about 300 people.",
+      "emphasis": [
+        "severe drought",
+        "300 people"
+      ],
+      "sfx": "none",
+      "pause_after": 0.12,
+      "claims": [
+        7,
+        8
+      ],
+      "visual": "Photograph of ruins of the Cook County Courthouse after the fire, 1871",
+      "subjects": [
+        "Great Chicago Fire"
+      ],
+      "year": 1871,
+      "queries": [
+        "Chicago Courthouse ruins 1871 photograph",
+        "Cook County Courthouse after fire 1871"
+      ],
+      "card": {
+        "kind": "fact",
+        "big": "300",
+        "small": "estimated deaths"
+      }
+    },
+    {
+      "text": "Seeking a scapegoat, journalist Michael Ahern blamed Irish immigrant Catherine O’Leary.",
+      "emphasis": [
+        "Michael Ahern",
+        "Catherine O’Leary"
+      ],
+      "sfx": "whoosh",
+      "pause_after": 0.12,
+      "claims": [
+        3,
+        6
+      ],
+      "visual": "Photograph of Catherine O'Leary, nineteenth century",
+      "subjects": [
+        "Catherine O'Leary"
+      ],
+      "year": 1871,
+      "queries": [
+        "Catherine O'Leary photograph",
+        "Catherine O'Leary portrait 1871"
+      ],
+      "card": {
+        "kind": "none",
+        "big": "",
+        "small": ""
+      }
+    },
+    {
+      "text": "He claimed her cow kicked a lantern, but O’Leary was asleep in bed.",
+      "emphasis": [
+        "asleep in bed"
+      ],
+      "sfx": "none",
+      "pause_after": 0.12,
+      "claims": [
+        3,
+        4
+      ],
+      "visual": "Photograph of the O'Leary family cottage surviving the fire, 1871",
+      "subjects": [
+        "Catherine O'Leary"
+      ],
+      "year": 1871,
+      "queries": [
+        "DeKoven Street Chicago 1871",
+        "Mrs O'Leary cottage DeKoven Street"
+      ],
+      "card": {
+        "kind": "none",
+        "big": "",
+        "small": ""
+      }
+    },
+    {
+      "text": "Ahern later admitted he fabricated the entire story for a colorful headline.",
+      "emphasis": [
+        "fabricated the entire story"
+      ],
+      "sfx": "riser",
+      "pause_after": 0.4,
+      "claims": [
+        5
+      ],
+      "visual": "Newspaper illustration of refugees escaping the Great Chicago Fire, 1871",
+      "subjects": [
+        "Great Chicago Fire"
+      ],
+      "year": 1893,
+      "queries": [
+        "Chicago fire refugees Lake Michigan 1871",
+        "Great Chicago Fire refugees lakefront illustration"
+      ],
+      "card": {
+        "kind": "quote",
+        "big": "fabricated",
+        "small": "Michael Ahern"
+      }
+    },
+    {
+      "text": "Chicago took 126 years to officially clear her name.",
+      "emphasis": [
+        "126 years",
+        "clear her name"
+      ],
+      "sfx": "pop",
+      "pause_after": 0.4,
+      "claims": [
+        10
+      ],
+      "visual": "Photograph of the Chicago Fire Academy built on the O'Leary barn site, 2021",
+      "subjects": [
+        "Catherine O'Leary"
+      ],
+      "year": 1997,
+      "queries": [
+        "Chicago Fire Academy DeKoven Street",
+        "Chicago Fire Department Academy building"
+      ],
+      "card": {
+        "kind": "fact",
+        "big": "126 YEARS",
+        "small": "to exonerate Mrs. O'Leary"
+      }
+    }
+  ],
+  "hook_text": "THE 126-YEAR LIE",
+  "loop": true,
+  "better_than_last": "Resolved the dangling word issue by making the final beat a complete, grammatical sentence that flows into the contradiction hook."
+}

@@ -19,9 +19,9 @@ event is told for its gore. Space topics belong to the sister channel Universe R
 
 | Date | Story | Series |
 |---|---|---|
-| Oct 5 | R101 (1930): Britain's giant airship crashed in France on its first overseas flight, after it was sent off on schedule with the air minister aboard — making (ep025) | Warnings Ignored |
+| Oct 5 | R101 (1930): Britain's giant airship crashed in France on its first overseas flight, after it was sent off on schedule with the air minister aboard — done (ep025) | Warnings Ignored |
 | Oct 8 | Peshtigo fire (1871): the deadliest wildfire in American history burned the same night as the Great Chicago Fire, and was nearly forgotten because of it — making (ep026) | The Last Hours |
-| Oct 8 | Great Chicago Fire (1871): Mrs. O'Leary's cow took the blame, but the reporter who spread the story later admitted he made it up — making (ep027) | The Last Hours |
+| Oct 8 | Great Chicago Fire (1871): Mrs. O'Leary's cow took the blame, but the reporter who spread the story later admitted he made it up — done (ep027) | The Last Hours |
 | Oct 17 | London Beer Flood (1814): a vat burst at a brewery and a wave of more than a million liters of beer swept through a poor London parish | The Last Hours |
 | Oct 24 | Eruption of Mount Vesuvius in 79 AD: a charcoal inscription found at Pompeii in 2018 suggests the eruption came in autumn, not on August 24 as long believed | The Last Hours |
 | Oct 25 | Charge of the Light Brigade (1854): a misread order sent the light cavalry straight down a valley ringed with Russian guns | Warnings Ignored |
@@ -43,13 +43,13 @@ event is told for its gore. Space topics belong to the sister channel Universe R
 - MV Wilhelm Gustloff (1945): its sinking in the Baltic was the deadliest loss of a single ship in history
 - SS Eastland (1915): it rolled over while still tied to its Chicago dock, and 844 people died in water about 20 feet deep
 - Great Fire of London (1666): only a handful of deaths were recorded, though the true toll is unknown
-- Radium Girls (1917): factory workers painted watch dials with self-glowing paint and pointed the brushes with their lips, later seeing their own jaws glow in the dark
+- Radium Girls (1917): factory workers painted watch dials with self-glowing paint and pointed the brushes with their lips, later seeing their own jaws glow in the dark — making (ep033)
 - 1945 Empire State Building B-25 crash (1945): a lost bomber crashed into the 79th floor of the skyscraper, and an elevator operator fell 75 floors and survived
 - Battle of the Little Bighorn (1876): Custer split his forces and rode directly into the largest Native American encampment ever gathered on the plains
 - Battle of the Alamo (1836): a small band of Texian defenders held out for 13 days before a dawn assault overwhelmed the mission walls
 - Burning of Washington (1814): British troops ate the dinner President Madison had left behind before burning the White House, right as a freak tornado struck the city
 - Battle of Agincourt (1415): outnumbered English archers stood in thick mud as heavily armored French knights charged and sank into the muck
-- 1900 Galveston hurricane (1900): forecasters dismissed warnings from Cuba, leaving the deadliest natural disaster in US history to strike an unprepared island
+- 1900 Galveston hurricane (1900): forecasters dismissed warnings from Cuba, leaving the deadliest natural disaster in US history to strike an unprepared island — making (ep035)
 - Battle of Saragarhi (1897): twenty-one soldiers fought ten thousand tribesmen to the last man, signaling updates until the final seconds
 - Port Chicago disaster (1944): untested munitions were loaded by untrained men in a race against time, causing the largest US home-front disaster of WWII
 - Victoria Hall disaster (1883): hundreds of children rushed for free toys through a door that opened inward, trapping them as the crush grew
@@ -60,7 +60,7 @@ event is told for its gore. Space topics belong to the sister channel Universe R
 
 ### Lost Cities
 
-- Pompeii: the famous body casts are plaster poured into hollows the victims left in the ash, a technique begun by Giuseppe Fiorelli in 1863 — making (ep028)
+- Pompeii: the famous body casts are plaster poured into hollows the victims left in the ash, a technique begun by Giuseppe Fiorelli in 1863 — parked (ep028)
 - Herculaneum: for centuries it was thought its people escaped, until hundreds of skeletons were found in the boathouses by the shore in the 1980s
 - Akrotiri (prehistoric city): a Bronze Age town buried by the Minoan eruption where almost no bodies have been found, as if its people had warning
 - Helike: a Greek city that sank in a single night in 373 BC, after an earthquake and a wave
@@ -74,7 +74,7 @@ event is told for its gore. Space topics belong to the sister channel Universe R
 
 ### Doomed Expeditions
 
-- Franklin's lost expedition (1845): 129 men vanished in the Arctic, and their two ships were only found in 2014 and 2016 — making (ep030)
+- Franklin's lost expedition (1845): 129 men vanished in the Arctic, and their two ships were only found in 2014 and 2016 — parked (ep030)
 - Terra Nova expedition (1912): Scott's last three men died in their tent about 11 miles from a supply depot
 - Andrée's Arctic balloon expedition (1897): their camp was found 33 years later, with film that could still be developed
 - Burke and Wills expedition (1861): they staggered back to their base camp hours after the party waiting for them had left
@@ -95,7 +95,7 @@ event is told for its gore. Space topics belong to the sister channel Universe R
 - Siege of Baghdad (1258): accounts say the Tigris ran black with ink from the books thrown into it
 - Third Punic War (146 BC): Rome destroyed Carthage, but the story that it salted the earth appears to be a modern invention
 - Library of Alexandria: it wasn't lost in one great fire, but declined over centuries
-- Reichstag fire (1933): the German parliament building burned just weeks after Hitler took power, instantly triggering emergency decrees that ended democracy
+- Reichstag fire (1933): the German parliament building burned just weeks after Hitler took power, instantly triggering emergency decrees that ended democracy — making (ep036)
 
 ### Warnings Ignored
 
@@ -105,18 +105,18 @@ event is told for its gore. Space topics belong to the sister channel Universe R
 - Johnstown Flood (1889): the dam that failed belonged to a fishing club of Pittsburgh's richest men
 - Great Molasses Flood (1919): the leaking tank had been painted brown to hide the leaks
 - Sultana (steamboat) (1865): a boat built for a few hundred carried over 2,000 people, most of them freed Union prisoners, when its patched boiler exploded
-- Triangle Shirtwaist Factory fire (1911): a stairway door was locked, and 146 garment workers died — making (ep032)
+- Triangle Shirtwaist Factory fire (1911): a stairway door was locked, and 146 garment workers died — parked (ep032)
 - Iroquois Theatre fire (1903): advertised as "absolutely fireproof", it burned five weeks after opening
 - Vasa (ship) (1628): the warship sank on its maiden voyage, less than a mile out, after failing a stability test before it sailed
 - Knickerbocker Storm (1922): the roof of Washington's Knickerbocker Theatre collapsed under the snow during a film
-- Battle of Isandlwana (1879): British commanders refused to form defensive laagers, mocking reports of Zulu forces until thousands appeared over the ridge
+- Battle of Isandlwana (1879): British commanders refused to form defensive laagers, mocking reports of Zulu forces until thousands appeared over the ridge — making (ep034)
 - Mongol invasions of Japan (1281): the invasion fleet was destroyed by a legendary typhoon known as the kamikaze, saving Japan from conquest
 - Fetterman Fight (1866): a cocky commander vowed to ride through the entire Sioux nation with eighty men, and none returned
 
 ### Sole Survivors
 
 - Violet Jessop: a stewardess who survived the Titanic, the Britannic's sinking, and the Olympic's collision
-- Tsutomu Yamaguchi (1945): the only person Japan officially recognized as surviving both atomic bombings — making (ep031)
+- Tsutomu Yamaguchi (1945): the only person Japan officially recognized as surviving both atomic bombings — done (ep031)
 - Ludger Sylbaris (1902): one of the very few survivors of Mount Pelée's eruption, saved by the thick walls of his jail cell
 - Charles Joughin (1912): the Titanic's chief baker survived a long time in the freezing water, and credited the whisky he had drunk
 - Arthur John Priest: the "unsinkable stoker" survived the Titanic, the Britannic, and other sinkings

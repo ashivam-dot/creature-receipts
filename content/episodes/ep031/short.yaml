@@ -1,0 +1,154 @@
+id: ep031
+title: How Did One Man Survive Both Atomic Bombs? 🤯
+series: Sole Survivors
+description: Tsutomu Yamaguchi is the only person officially recognized as surviving both atomic bombings in 1945. This is
+  the story of his survival in Hiroshima and Nagasaki.
+sources:
+- https://en.wikipedia.org/wiki/Tsutomu_Yamaguchi
+- https://www.missedhistory.com/article/tsutomu-yamaguchi-double-atomic-bomb
+- https://news.bbc.co.uk/2/hi/asia-pacific/8443295.stm
+- https://web.archive.org/web/20100107034232/http://www.nytimes.com/2010/01/07/world/asia/07yamaguchi.html
+- https://www.theguardian.com/world/2009/mar/25/hiroshima-nagasaki-survivor-japan
+- https://www.independent.co.uk/news/world/asia/how-i-survived-hiroshima-ndash-and-then-nagasaki-1654294.html
+- https://www.npr.org/sections/krulwich/2012/07/17/156915881/if-you-are-hit-by-two-atomic-bombs-should-you-have-kids#:~:text=destroy%20a%20whole%20city?',two%20girls,%20Naoko%20and%20Toshiko.
+hashtags:
+- '#history'
+- '#hiroshima'
+- '#nagasaki'
+tags:
+- Tsutomu Yamaguchi
+- atomic bomb
+- WWII
+- Japan
+- survival
+- hibakusha
+voice:
+  engine: gemini
+  voice: Charon
+  direction: 'Read the transcript below aloud as a gripping true-story narrator on a viral YouTube Short: fast and urgent,
+    about 170 words a minute, with only tiny pauses, a low, intense voice and rising tension that hits the last line hard.
+    Speak only the transcript.'
+beats:
+- text: Tsutomu Yamaguchi was explaining the Hiroshima blast when the second bomb struck.
+  emphasis:
+  - explaining
+  - second bomb struck
+  visual:
+    source: card
+    card:
+      kind: fact
+      big: explaining
+      small: ''
+    motion: zoom_in
+- text: Days earlier, the naval engineer was finishing a business trip in Hiroshima.
+  emphasis:
+  - naval engineer
+  - Hiroshima
+  visual:
+    source: url
+    url: https://upload.wikimedia.org/wikipedia/commons/2/26/Employees_of_the_Mitsubishi_Heavy_Industries_193707.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    credit:
+      source: Wikimedia Commons
+      title: Employees of the Mitsubishi Heavy Industries 193707.jpg
+      credit: Unknown authorUnknown author
+      license: Public domain
+      url: https://commons.wikimedia.org/wiki/File:Employees_of_the_Mitsubishi_Heavy_Industries_193707.jpg
+    fallbacks:
+    - color
+    motion: pan_left
+    focus_x: 0.5
+    focus_y: 0.6
+- text: At 8:15 a.m., the first atomic bomb detonated three kilometers away.
+  emphasis:
+  - 8:15 a.m.
+  - three kilometers
+  sfx: whoosh
+  visual:
+    source: url
+    url: https://thumb.wikimedia.org/wikipedia/commons/thumb/5/54/Atomic_bombing_of_Japan.jpg/3840px-Atomic_bombing_of_Japan.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
+    credit:
+      source: Wikimedia Commons
+      title: Atomic bombing of Japan.jpg
+      credit: George R. Caron / Charles Levy
+      license: Public domain
+      url: https://commons.wikimedia.org/wiki/File:Atomic_bombing_of_Japan.jpg
+    fallbacks:
+    - color
+    motion: pan_right
+    focus_x: 0.5
+    focus_y: 0.5
+- text: Yamaguchi survived the heat and fled to the safety of Nagasaki.
+  emphasis:
+  - survived
+  - Nagasaki
+  visual:
+    source: url
+    url: https://thumb.wikimedia.org/wikipedia/commons/thumb/6/64/018_Hiroshima-Japan_2008-10.jpg/1920px-018_Hiroshima-Japan_2008-10.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
+    credit:
+      source: Wikimedia Commons
+      title: 018 Hiroshima-Japan 2008-10.jpg
+      credit: RuinDig/Yuki Uchida
+      license: CC BY 4.0
+      url: https://commons.wikimedia.org/wiki/File:018_Hiroshima-Japan_2008-10.jpg
+    fallbacks:
+    - color
+    motion: pan_left
+    focus_x: 0.5
+    focus_y: 0.4
+- text: Bandaged and shaking, he reported for work on August 9.
+  emphasis:
+  - Bandaged
+  - August 9
+  sfx: whoosh
+  visual:
+    source: url
+    url: https://thumb.wikimedia.org/wikipedia/commons/thumb/f/ff/Catholic_cathedral_in_Nagasaki_HD-SN-99-02902.JPEG/1920px-Catholic_cathedral_in_Nagasaki_HD-SN-99-02902.JPEG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
+    credit:
+      source: Wikimedia Commons
+      title: Catholic cathedral in Nagasaki HD-SN-99-02902.JPEG
+      credit: US Army Corps of Engineers
+      license: Public domain
+      url: https://commons.wikimedia.org/wiki/File:Catholic_cathedral_in_Nagasaki_HD-SN-99-02902.JPEG
+    fallbacks:
+    - color
+    motion: pan_down
+    focus_x: 0.5
+    focus_y: 0.5
+- text: His supervisor laughed, asking how one bomb could destroy a city.
+  emphasis:
+  - supervisor laughed
+  - destroy a city
+  sfx: riser
+  visual:
+    reuse: 5
+    motion: zoom_in
+    focus_x: 0.5
+    focus_y: 0.5
+- text: Suddenly, the second blast erupted three kilometers from his office.
+  emphasis:
+  - Suddenly
+  - three kilometers
+  sfx: pop
+  pause_after: 0.4
+  visual:
+    source: url
+    url: https://thumb.wikimedia.org/wikipedia/commons/thumb/2/29/Atomic_Cloud_Rises_Over_Nagasaki%2C_Japan_-_NARA_-_535795.tif/lossy-page1-1920px-Atomic_Cloud_Rises_Over_Nagasaki%2C_Japan_-_NARA_-_535795.tif.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
+    credit:
+      source: Wikimedia Commons
+      title: Atomic Cloud Rises Over Nagasaki, Japan - NARA - 535795.tif
+      credit: Charles Levy
+      license: Public domain
+      url: https://commons.wikimedia.org/wiki/File:Atomic_Cloud_Rises_Over_Nagasaki,_Japan_-_NARA_-_535795.tif
+    fallbacks:
+    - color
+    motion: pan_down
+    focus_x: 0.5
+    focus_y: 0.5
+- text: He was forced to start his story over.
+  emphasis:
+  - story over
+  visual:
+    reuse: 1
+    motion: zoom_out
+depth_motion: true
+hook_text: TWO GROUND ZEROS

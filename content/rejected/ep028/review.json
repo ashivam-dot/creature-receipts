@@ -1,0 +1,178 @@
+{
+  "rounds": [
+    {
+      "at": "2026-10-01T10:57:54+05:30",
+      "check": {
+        "duration": 38.13,
+        "words": 80,
+        "integrated_lufs": -14.1,
+        "true_peak_dbfs": -1.6,
+        "warnings": [
+          "duration 38.13 s is outside 17-35 s"
+        ],
+        "speech_differences": [
+          "'preserved' heard as 'preserve' after 'volcanic ash cavities'"
+        ],
+        "speech_error": null,
+        "sources": [
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wellcome Collection",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons"
+        ]
+      },
+      "scores": {
+        "hook": 3,
+        "clarity": 4,
+        "payoff": 3,
+        "visuals": 3,
+        "loop": 4
+      },
+      "notes": {
+        "hook": "Starting with the year and the process is slow; the hook is in the title but not the first sentence.",
+        "clarity": "The sequence of events is clear and easy to follow.",
+        "payoff": "The revelation that they are bones is a good fact, but it's introduced too early to feel like a twist.",
+        "visuals": "Beats 3 and 4 show general ruins and empty rooms rather than the 'hollow voids' or the filling process mentioned.",
+        "loop": "The transition from the last line back to the first is logically sound."
+      },
+      "frames": [
+        {
+          "beat": 3,
+          "problem": "Shows general ruins; does not illustrate 'hollow voids' or the victims."
+        },
+        {
+          "beat": 4,
+          "problem": "Shows an empty room; does not illustrate the act of filling spaces with plaster."
+        }
+      ],
+      "speech": [],
+      "rewrite": [
+        "Beat 1: What's really inside Pompeii's famous body casts?",
+        "Beat 8: Buried beneath volcanic ash, liquid plaster revealed...",
+        "Beat 7: Remove this beat entirely to reduce duration to under 35s.",
+        "The render ran 38.13 s; it must be 17-35 s."
+      ],
+      "better_than_last": "This is the first Short, so there is no previous version to compare against.",
+      "judge": "gemma-4-31b-it",
+      "passed": false
+    },
+    {
+      "at": "2026-10-01T11:06:04+05:30",
+      "check": {
+        "duration": 36.0,
+        "words": 80,
+        "integrated_lufs": -14.7,
+        "true_peak_dbfs": -1.8,
+        "warnings": [
+          "duration 36.0 s is outside 17-35 s"
+        ],
+        "speech_differences": [
+          "'a' heard as '(nothing)' after 'empty spaces over'"
+        ],
+        "speech_error": null,
+        "sources": [
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wellcome Collection",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons"
+        ]
+      },
+      "scores": {
+        "hook": 4,
+        "clarity": 4,
+        "payoff": 4,
+        "visuals": 3,
+        "loop": 5
+      },
+      "notes": {
+        "hook": "The question is strong, though the image is a general landscape rather than something more intriguing.",
+        "clarity": "The sequence of events is easy to follow.",
+        "payoff": "The reveal that they contain real bones is a satisfying answer to the hook.",
+        "visuals": "Several frames are generic ruins and do not visually represent the specific concepts being discussed (voids, plastering).",
+        "loop": "The transition from the final line back to the first is seamless."
+      },
+      "frames": [
+        {
+          "beat": 3,
+          "problem": "Shows generic ruins instead of the 'hollow voids' described in the speech."
+        },
+        {
+          "beat": 4,
+          "problem": "Shows a general drawing of a street/building rather than the process of creating casts."
+        }
+      ],
+      "speech": [],
+      "rewrite": [
+        "Beat 7: Buried beneath heavy volcanic ash, liquid plaster finally revealed... what's",
+        "The render ran 36.0 s; it must be 17-35 s."
+      ],
+      "better_than_last": "This is the first Short in the series.",
+      "judge": "gemma-4-31b-it",
+      "passed": false
+    },
+    {
+      "at": "2026-10-01T11:12:22+05:30",
+      "check": {
+        "duration": 26.67,
+        "words": 76,
+        "integrated_lufs": -14.3,
+        "true_peak_dbfs": -1.8,
+        "warnings": [],
+        "speech_differences": [
+          "'casts' heard as 'castes' after 'is famous body'",
+          "'casts' heard as 'castes' after 'is famous body'"
+        ],
+        "speech_error": null,
+        "sources": [
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wellcome Collection",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons"
+        ]
+      },
+      "scores": {
+        "hook": 4,
+        "clarity": 4,
+        "payoff": 4,
+        "visuals": 3,
+        "loop": 5
+      },
+      "notes": {
+        "hook": "A strong, curiosity-driven question that targets a well-known subject.",
+        "clarity": "The process from eruption to casts is explained logically and simply.",
+        "payoff": "The reveal that original bones remain inside is a satisfying answer to the hook.",
+        "visuals": "Several frames are generic ruins and don't specifically show 'voids' or the casting process.",
+        "loop": "The transition from the final sentence back to the first is seamless."
+      },
+      "frames": [
+        {
+          "beat": 3,
+          "problem": "The image shows general ruins of a house, not the 'hollow voids' mentioned in the script."
+        },
+        {
+          "beat": 4,
+          "problem": "The image shows a room with frescoes, not the archaeologist or the act of filling spaces."
+        }
+      ],
+      "speech": [],
+      "rewrite": [],
+      "better_than_last": "This is the first Short, establishing a high standard for pacing and looping.",
+      "judge": "gemma-4-31b-it",
+      "passed": false
+    }
+  ],
+  "best_round": 2,
+  "verdict": "rejected",
+  "reason": "low scores: visuals; 2 frame problems",
+  "rejected_at": "2026-10-01T11:12:22+05:30"
+}

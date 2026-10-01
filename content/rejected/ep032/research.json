@@ -1,0 +1,241 @@
+{
+  "viable": true,
+  "reason": "The sources reliably support a shocking 45-second story with well over 10 rigorously multi-sourced claims.",
+  "story": "On March 25, 1911, a routine Saturday shift at the Triangle Shirtwaist Factory in Manhattan turned into a horrifying inferno. When a discarded match ignited a pile of fabric scraps on the eighth floor, flames raced through the crowded sweatshop within minutes. While workers on the tenth floor escaped to the roof, hundreds trapped on the ninth floor faced a nightmare. Stairwell doors had been deliberately locked from the outside by management to prevent unauthorized breaks and theft. With no functioning fire alarm and an inadequate fire escape that quickly collapsed under the heat, desperate workers had nowhere to go. Sixty-two people plunged to their deaths from the upper windows before crowds of horrified onlookers. In total, 146 garment workers perished, transforming public outrage into the historic safety legislation that reshaped American labor rights forever.",
+  "angle": "Stairwell doors were kept deliberately locked during working hours to stop employees from taking breaks or stealing, trapping frantic workers inside the burning building.",
+  "claims": [
+    {
+      "claim": "The Triangle Shirtwaist Factory fire occurred on Saturday, March 25, 1911.",
+      "sources": [
+        "S1",
+        "S2",
+        "S4",
+        "S5",
+        "S6",
+        "S7"
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim": "The disaster resulted in the deaths of 146 garment workers.",
+      "sources": [
+        "S1",
+        "S2",
+        "S4",
+        "S5",
+        "S6",
+        "S7"
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim": "The factory was located on the top three floors (8th, 9th, and 10th) of the Asch Building in Manhattan.",
+      "sources": [
+        "S1",
+        "S2",
+        "S4",
+        "S5"
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim": "The factory was owned by Isaac Harris and Max Blanck.",
+      "sources": [
+        "S1",
+        "S2",
+        "S4",
+        "S6"
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim": "The fire started in a scrap bin filled with fabric cuttings, likely ignited by a discarded match or cigarette.",
+      "sources": [
+        "S1",
+        "S2",
+        "S4",
+        "S5"
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim": "Exit doors to the stairwells were locked by management to prevent theft and unauthorized breaks.",
+      "sources": [
+        "S1",
+        "S2",
+        "S4",
+        "S5",
+        "S6",
+        "S7"
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim": "The building's flimsy fire escape collapsed under extreme heat and weight, plunging victims nearly 100 feet to their deaths.",
+      "sources": [
+        "S1",
+        "S2",
+        "S5",
+        "S6",
+        "S7"
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim": "A large crowd of bystanders watched as 62 people jumped or fell from the burning building to the pavement below.",
+      "sources": [
+        "S1",
+        "S2",
+        "S5",
+        "S6"
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim": "The factory lacked an audible internal fire alarm system and automatic sprinklers.",
+      "sources": [
+        "S1",
+        "S5",
+        "S7"
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim": "Fire department ladders could only reach up to the sixth floor.",
+      "sources": [
+        "S1",
+        "S2",
+        "S4",
+        "S5"
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim": "Owners Max Blanck and Isaac Harris were indicted on manslaughter charges but were acquitted at trial.",
+      "sources": [
+        "S1",
+        "S2",
+        "S4"
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim": "The tragedy spurred major legislative investigations, resulting in dozens of new state laws regulating factory safety and labor standards.",
+      "sources": [
+        "S1",
+        "S2",
+        "S4",
+        "S5",
+        "S6"
+      ],
+      "confidence": "high"
+    }
+  ],
+  "disputed": [
+    "The exact ignition source of the fire; while generally attributed to a discarded cigarette or match in a scrap bin, alternative theories suggested an unextinguished match or sewing machine engines, which a script should attribute as investigators' conclusions rather than absolute fact."
+  ],
+  "visuals": [
+    {
+      "subject": "Asch Building exterior on Washington Place",
+      "queries": [
+        "Brown Building Washington Place New York City",
+        "Asch Building Manhattan historic photograph"
+      ]
+    },
+    {
+      "subject": "Greenwich Village street scene from the era",
+      "queries": [
+        "Greenwich Village New York 1910s street",
+        "Washington Square Park New York 1911"
+      ]
+    },
+    {
+      "subject": "Period garment factory sweatshop interior",
+      "queries": [
+        "Garment workers sewing machines 1910s",
+        "Triangle Shirtwaist Factory interior historical"
+      ]
+    },
+    {
+      "subject": "Newspaper front page reporting the tragedy",
+      "queries": [
+        "New York Times front page Triangle fire 1911",
+        "Newspaper headline industrial disaster 1911"
+      ]
+    },
+    {
+      "subject": "Crowds and aftermath outside the burned building",
+      "queries": [
+        "Triangle Shirtwaist Factory fire aftermath crowd",
+        "Asch Building fire damage 1911"
+      ]
+    },
+    {
+      "subject": "Labor protest march in New York City",
+      "queries": [
+        "International Ladies Garment Workers Union march New York",
+        "Labor protest Fifth Avenue New York 1911"
+      ]
+    },
+    {
+      "subject": "Portrait of labor reformer Frances Perkins",
+      "queries": [
+        "Frances Perkins portrait young",
+        "Frances Perkins Secretary of Labor historical"
+      ]
+    },
+    {
+      "subject": "Modern memorial ribbon at the Brown Building",
+      "queries": [
+        "Triangle Fire Memorial Brown Building New York",
+        "Triangle Shirtwaist Factory fire memorial steel ribbon"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "label": "S1",
+      "url": "https://en.wikipedia.org/wiki/Triangle_Shirtwaist_Factory_fire",
+      "title": "Triangle Shirtwaist Factory fire",
+      "site": "wikipedia.org"
+    },
+    {
+      "label": "S2",
+      "url": "https://www.history.com/articles/triangle-shirtwaist-fire",
+      "title": "Triangle Shirtwaist Factory Fire - Significance, Causes | HISTORY",
+      "site": "history.com"
+    },
+    {
+      "label": "S3",
+      "url": "https://web.archive.org/web/20130213005925/http://www.authentichistory.com/1898-1913/2-progressivism/3-laborreform/3-trianglefire/victim_list.html",
+      "title": "The Triangle Shirtwaist Factory Fire, 1911: List of Victims",
+      "site": "authentichistory.com"
+    },
+    {
+      "label": "S4",
+      "url": "https://web.archive.org/web/20210308122951/https://www.nationalgeographic.com/history/article/triangle-shirtwaist-factory-fire-transformed-protections-american-workers",
+      "title": "How the Triangle Shirtwaist Factory Fire transformed worker protections",
+      "site": "nationalgeographic.com"
+    },
+    {
+      "label": "S5",
+      "url": "https://www.nps.gov/places/triangle-shirtwaist-factory-brown-building.htm",
+      "title": "Triangle Shirtwaist Factory (Brown Building) (U.S. National Park Service)",
+      "site": "nps.gov"
+    },
+    {
+      "label": "S6",
+      "url": "https://web.archive.org/web/20170320111038/http://www.pbs.org/wgbh/americanexperience/features/introduction/triangle-intro/",
+      "title": "WGBH American Experience . Triangle Fire | PBS",
+      "site": "pbs.org"
+    },
+    {
+      "label": "S7",
+      "url": "http://cityroom.blogs.nytimes.com/2011/03/19/in-a-tragedy-a-mission-to-remember/?scp=5&sq=triangle&st=cse/",
+      "title": "In a Tragedy, a Mission to Remember",
+      "site": "nytimes.com"
+    }
+  ],
+  "topic": "Triangle Shirtwaist Factory fire (1911): a stairway door was locked, and 146 garment workers died",
+  "series": "Warnings Ignored"
+}

@@ -1,0 +1,166 @@
+{
+  "rounds": [
+    {
+      "at": "2026-10-01T11:36:41+05:30",
+      "check": {
+        "duration": 28.68,
+        "words": 70,
+        "integrated_lufs": -14.4,
+        "true_peak_dbfs": -1.7,
+        "warnings": [],
+        "speech_differences": [],
+        "speech_error": null,
+        "sources": [
+          "Wikimedia Commons",
+          "designed card",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons"
+        ]
+      },
+      "scores": {
+        "hook": 4,
+        "clarity": 5,
+        "payoff": 3,
+        "visuals": 3,
+        "loop": 5
+      },
+      "notes": {
+        "hook": "Strong opening premise that creates immediate curiosity.",
+        "clarity": "The story is told simply and logically, easy to follow.",
+        "payoff": "The ending repeats the hook without adding a new twist or emotional punch.",
+        "visuals": "Beat 4 and 5 images are generic or off-topic (modern building, random newspaper).",
+        "loop": "The final sentence connects perfectly back to the first."
+      },
+      "frames": [
+        {
+          "beat": 4,
+          "problem": "The image shows a modern building with cars, not the 1911 factory fire."
+        },
+        {
+          "beat": 5,
+          "problem": "The image is a generic old newspaper page that doesn't relate to the tragedy described."
+        }
+      ],
+      "speech": [],
+      "rewrite": [
+        "Beat 7: Workers were trapped because the owners locked the doors to keep them from taking breaks."
+      ],
+      "better_than_last": "This is the first Short in the series.",
+      "judge": "gemma-4-31b-it",
+      "passed": false
+    },
+    {
+      "at": "2026-10-01T12:00:23+05:30",
+      "check": {
+        "duration": 21.9,
+        "words": 75,
+        "integrated_lufs": -14.2,
+        "true_peak_dbfs": -1.7,
+        "warnings": [],
+        "speech_differences": [
+          "'stairwell' heard as 'sterile'",
+          "'25' heard as '25th' after 'breaks on march'",
+          "'deaths' heard as 'desks' after 'plunged to their'"
+        ],
+        "speech_error": null,
+        "sources": [
+          "Wikimedia Commons",
+          "designed card",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "designed card",
+          "Wikimedia Commons",
+          "Wikimedia Commons"
+        ]
+      },
+      "scores": {
+        "hook": 4,
+        "clarity": 4,
+        "payoff": 3,
+        "visuals": 3,
+        "loop": 5
+      },
+      "notes": {
+        "hook": "Strong, mysterious opening that immediately creates a question.",
+        "clarity": "The narrative flow is logical and easy to follow.",
+        "payoff": "The ending just repeats the hook rather than adding a new layer or resolution.",
+        "visuals": "Beat 4 uses a generic interior shot instead of showing a fire escape or the building exterior.",
+        "loop": "The final sentence leads perfectly back into the first."
+      },
+      "frames": [
+        {
+          "beat": 4,
+          "problem": "The image shows a crowded room, but the script mentions a collapsing fire escape; the visual is not on-topic."
+        }
+      ],
+      "speech": [
+        {
+          "beat": 1,
+          "word": "Stairwell",
+          "respelling": "stair well"
+        },
+        {
+          "beat": 5,
+          "word": "deaths",
+          "respelling": "deths"
+        }
+      ],
+      "rewrite": [
+        "Beat 6: Change to '146 perished, sparking a revolution in factory safety laws' to provide a payoff beyond just a body count."
+      ],
+      "better_than_last": "N/A",
+      "judge": "gemma-4-31b-it",
+      "passed": false
+    },
+    {
+      "at": "2026-10-01T12:04:06+05:30",
+      "check": {
+        "duration": 29.23,
+        "words": 75,
+        "integrated_lufs": -14.3,
+        "true_peak_dbfs": -1.7,
+        "warnings": [],
+        "speech_differences": [],
+        "speech_error": null,
+        "sources": [
+          "Wikimedia Commons",
+          "designed card",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "designed card",
+          "Wikimedia Commons",
+          "Wikimedia Commons"
+        ]
+      },
+      "scores": {
+        "hook": 5,
+        "clarity": 4,
+        "payoff": 3,
+        "visuals": 4,
+        "loop": 5
+      },
+      "notes": {
+        "hook": "Strong, immediate mystery about locked doors.",
+        "clarity": "Easy to follow, though beat 7 repeats information from beat 1.",
+        "payoff": "The ending is a loop back to the hook rather than a new revelation.",
+        "visuals": "Historical images are striking and appropriate.",
+        "loop": "Perfect seamless loop."
+      },
+      "frames": [],
+      "speech": [],
+      "rewrite": [
+        "Beat 7: Change to 'The tragedy happened because owners locked the doors to stop breaks' to avoid exact repetition of beat 1."
+      ],
+      "better_than_last": "First Short, no previous comparison.",
+      "judge": "gemma-4-31b-it",
+      "passed": false
+    }
+  ],
+  "best_round": 3,
+  "verdict": "rejected",
+  "reason": "low scores: payoff",
+  "rejected_at": "2026-10-01T12:04:06+05:30"
+}

@@ -1,0 +1,148 @@
+id: ep030
+title: Why Were HMS Terror's Hatches Closed When Found? 😳
+series: Doomed Expeditions
+description: Discover the chilling mystery of Sir John Franklin's lost 1845 Arctic expedition and the pristine wreck of HMS
+  Terror.
+sources:
+- https://en.wikipedia.org/wiki/Franklin%27s_lost_expedition
+- https://www.theguardian.com/world/2016/sep/12/hms-terror-wreck-found-arctic-nearly-170-years-northwest-passage-attempt
+- https://www.historyextra.com/period/victorian/franklin-expedition-canadian-artic-1845/
+- https://web.archive.org/web/20150331205033/http://www.pbs.org/wgbh/nova/arctic/note-transcript.html
+- https://www.livescience.com/63704-franklin-expedition-artifacts-recovered.html
+hashtags:
+- '#history'
+- '#shipwreck'
+- '#arctic'
+tags:
+- Franklin expedition
+- HMS Terror
+- HMS Erebus
+- Arctic exploration
+- shipwreck mystery
+- Northwest Passage
+voice:
+  engine: gemini
+  voice: Charon
+  direction: 'Read the transcript below aloud as a gripping true-story narrator on a viral YouTube Short: fast and urgent,
+    about 170 words a minute, with only tiny pauses, a low, intense voice and rising tension that hits the last line hard.
+    Speak only the transcript.'
+beats:
+- text: HMS Terror was found with its hatches closed and anchor deployed.
+  emphasis:
+  - hatches closed
+  - anchor deployed
+  visual:
+    source: url
+    url: https://thumb.wikimedia.org/wikipedia/commons/thumb/0/02/Hms_terror_1837.jpg/960px-Hms_terror_1837.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
+    credit:
+      source: Wikimedia Commons
+      title: Hms terror 1837.jpg
+      credit: George Back
+      license: Public domain
+      url: https://commons.wikimedia.org/wiki/File:Hms_terror_1837.jpg
+    fallbacks:
+    - color
+    motion: pan_right
+    focus_x: 0.5
+    focus_y: 0.5
+- text: Sir John Franklin departed England in May 1845 with 129 officers and men.
+  emphasis:
+  - 129 officers and men
+  sfx: whoosh
+  visual:
+    source: url
+    url: https://upload.wikimedia.org/wikipedia/commons/f/f0/John_Franklin.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    credit:
+      source: Wikimedia Commons
+      title: John Franklin.jpg
+      credit: Unknown authorUnknown author
+      license: Public domain
+      url: https://commons.wikimedia.org/wiki/File:John_Franklin.jpg
+    fallbacks:
+    - card
+    - color
+    motion: pan_up
+    focus_x: 0.5
+    focus_y: 0.5
+    card:
+      kind: dateline
+      big: May 1845
+      small: England
+- text: Both ships became icebound in Victoria Strait near King William Island in September 1846.
+  emphasis:
+  - icebound in Victoria Strait
+  visual:
+    source: url
+    url: https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e8/Wfm_king_william_island.png/960px-Wfm_king_william_island.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
+    credit:
+      source: Wikimedia Commons
+      title: Wfm king william island.png
+      credit: Unknown author
+      license: Public domain
+      url: https://commons.wikimedia.org/wiki/File:Wfm_king_william_island.png
+    fallbacks:
+    - card
+    - color
+    motion: pan_right
+    focus_x: 0.5
+    focus_y: 0.5
+    card:
+      kind: dateline
+      big: September 1846
+      small: Victoria Strait
+- text: A total of 105 surviving souls set out to march toward Back's Fish River on April 26, 1848.
+  emphasis:
+  - 105 surviving souls
+  sfx: riser
+  visual:
+    source: url
+    url: https://upload.wikimedia.org/wikipedia/commons/e/e1/Gordon_1907_Round_about_the_North_Pole_0327_Discovery_of_the_Cairn.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    credit:
+      source: Wikimedia Commons
+      title: Gordon 1907 Round about the North Pole 0327 Discovery of the Cairn.jpg
+      credit: 'Book author: William John Gordon.'
+      license: Public domain
+      url: https://commons.wikimedia.org/wiki/File:Gordon_1907_Round_about_the_North_Pole_0327_Discovery_of_the_Cairn.jpg
+    fallbacks:
+    - card
+    - color
+    motion: pan_left
+    focus_x: 0.5
+    focus_y: 0.5
+    card:
+      kind: fact
+      big: '105'
+      small: Survivors marching south
+- text: Parks Canada found the HMS Erebus in 2014, confirming the crew left in an orderly fashion.
+  emphasis:
+  - orderly fashion
+  sfx: pop
+  visual:
+    source: url
+    url: https://thumb.wikimedia.org/wikipedia/commons/thumb/5/54/The_Forks_sign.jpg/3840px-The_Forks_sign.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
+    credit:
+      source: Wikimedia Commons
+      title: The Forks sign.jpg
+      credit: Samsmachado
+      license: CC BY 3.0
+      url: https://commons.wikimedia.org/wiki/File:The_Forks_sign.jpg
+    fallbacks:
+    - card
+    - color
+    motion: pan_right
+    focus_x: 0.5
+    focus_y: 0.5
+    card:
+      kind: dateline
+      big: '2014'
+      small: Queen Maud Gulf
+- text: This explains why the HMS Terror was found with its hatches closed and anchor deployed.
+  emphasis:
+  - hatches closed
+  visual:
+    reuse: 1
+    motion: zoom_out
+    focus_x: 0.5
+    focus_y: 0.5
+depth_motion: true
+hook_text: PRISTINE WRECK FOUND

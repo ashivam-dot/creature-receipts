@@ -1,0 +1,180 @@
+{
+  "rounds": [
+    {
+      "at": "2026-10-01T11:36:32+05:30",
+      "check": {
+        "duration": 36.8,
+        "words": 82,
+        "integrated_lufs": -14.4,
+        "true_peak_dbfs": -1.8,
+        "warnings": [
+          "duration 36.8 s is outside 17-35 s"
+        ],
+        "speech_differences": [
+          "'back is' heard as 'bax' after 'to march toward'"
+        ],
+        "speech_error": null,
+        "sources": [
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons"
+        ]
+      },
+      "scores": {
+        "hook": 4,
+        "clarity": 3,
+        "payoff": 2,
+        "visuals": 2,
+        "loop": 5
+      },
+      "notes": {
+        "hook": "The mystery of the hatches is an intriguing start.",
+        "clarity": "The jump from the march to the 2014 discovery is too abrupt; the 'mystery' isn't explained.",
+        "payoff": "The hook asks why the hatches were closed, but the script never answers the question.",
+        "visuals": "Beat 5 is a picture of a park sign, which is boring and irrelevant to the ship wreck.",
+        "loop": "The loop is technically perfect."
+      },
+      "frames": [
+        {
+          "beat": 5,
+          "problem": "mostly text, off-topic (it's a park sign, not the wreck or the search)"
+        }
+      ],
+      "speech": [
+        {
+          "beat": 4,
+          "word": "Back's",
+          "respelling": "baks"
+        }
+      ],
+      "rewrite": [
+        "Beat 5: Instead of just mentioning the search, explain that the closed hatches suggest the crew abandoned ship in an orderly fashion.",
+        "Beat 6: HMS Terror was found with its hatches closed and anchor deployed.",
+        "The render ran 36.8 s; it must be 17-35 s."
+      ],
+      "better_than_last": "",
+      "judge": "gemma-4-31b-it",
+      "passed": false
+    },
+    {
+      "at": "2026-10-01T11:57:13+05:30",
+      "check": {
+        "duration": 28.1,
+        "words": 83,
+        "integrated_lufs": -14.1,
+        "true_peak_dbfs": -1.6,
+        "warnings": [],
+        "speech_differences": [
+          "'back is' heard as 'bax' after 'to march toward'"
+        ],
+        "speech_error": null,
+        "sources": [
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons"
+        ]
+      },
+      "scores": {
+        "hook": 4,
+        "clarity": 3,
+        "payoff": 2,
+        "visuals": 3,
+        "loop": 5
+      },
+      "notes": {
+        "hook": "Strong mystery regarding the state of the wreck.",
+        "clarity": "The transition from the expedition's start to the wreck discovery is disjointed; the connection between Erebus and Terror is not explicitly stated.",
+        "payoff": "The 'payoff' is just a repetition of the hook. There is no explanation of why the hatches were closed, which leaves the viewer unsatisfied.",
+        "visuals": "Beat 1 and 6 show an painting of ships in a sunny harbor, not a 'pristine wreck' in the Arctic.",
+        "loop": "Seamless repetition of the first line."
+      },
+      "frames": [
+        {
+          "beat": 1,
+          "problem": "Painting shows ships in a tropical/sunny harbor, not an Arctic wreck."
+        },
+        {
+          "beat": 5,
+          "problem": "Image is a dramatic painting of a ship in a storm, not a photo of the 2014 discovery of the HMS Erebus."
+        }
+      ],
+      "speech": [
+        {
+          "beat": 4,
+          "word": "Back's",
+          "respelling": "bax"
+        }
+      ],
+      "rewrite": [
+        "Beat 5: 'Parks Canada found the HMS Erebus in 2014, confirming the crew left in an orderly fashion.'",
+        "Beat 6: 'This explains why the HMS Terror was found with its hatches closed and anchor deployed.'"
+      ],
+      "better_than_last": "",
+      "judge": "gemma-4-31b-it",
+      "passed": false
+    },
+    {
+      "at": "2026-10-01T12:05:44+05:30",
+      "check": {
+        "duration": 33.5,
+        "words": 87,
+        "integrated_lufs": -14.4,
+        "true_peak_dbfs": -1.7,
+        "warnings": [],
+        "speech_differences": [
+          "'back is' heard as 'bax' after 'to march toward'"
+        ],
+        "speech_error": null,
+        "sources": [
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons"
+        ]
+      },
+      "scores": {
+        "hook": 4,
+        "clarity": 4,
+        "payoff": 4,
+        "visuals": 2,
+        "loop": 5
+      },
+      "notes": {
+        "hook": "Strong mystery setup with the hatches.",
+        "clarity": "Easy to follow narrative flow.",
+        "payoff": "Connects the orderly departure to the state of the wreck.",
+        "visuals": "Beat 5 shows a random park sign instead of a ship or archaeological site.",
+        "loop": "The repetition of the first line at the end creates a perfect loop."
+      },
+      "frames": [
+        {
+          "beat": 5,
+          "problem": "Off-topic; shows a sign for 'The Forks' National Historic Site instead of HMS Erebus or an Arctic discovery."
+        }
+      ],
+      "speech": [
+        {
+          "beat": 4,
+          "word": "Back's",
+          "respelling": "bax"
+        }
+      ],
+      "rewrite": [],
+      "better_than_last": "First Short: established a strong loop and a clear mystery-payoff structure.",
+      "judge": "gemma-4-31b-it",
+      "passed": false
+    }
+  ],
+  "best_round": 3,
+  "verdict": "rejected",
+  "reason": "low scores: visuals",
+  "rejected_at": "2026-10-01T12:05:44+05:30"
+}
