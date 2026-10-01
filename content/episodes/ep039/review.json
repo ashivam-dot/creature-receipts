@@ -1,0 +1,67 @@
+{
+  "rounds": [
+    {
+      "at": "2026-10-01T17:21:18+05:30",
+      "check": {
+        "duration": 36.47,
+        "words": 75,
+        "integrated_lufs": -14.2,
+        "true_peak_dbfs": -1.7,
+        "warnings": [
+          "duration 36.47 s is outside 17-35 s"
+        ],
+        "speech_differences": [
+          "'(nothing)' heard as 'allowed as a gripping true story narrator on a viral youtube short fast and urgent about 170 words a minute with only tiny pauses a low intense voice and rising tension that hits the last line hard speak only the transcript'",
+          "'envoys' heard as 'on voice' after 'beheading of mongol'",
+          "'15' heard as '15th' after 'chains on august'",
+          "'typhoon' heard as 'extra typhoons' after '15 a monster'",
+          "'chained' heard as 'chain' after 'drowned when the'"
+        ],
+        "speech_error": null,
+        "sources": [
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons"
+        ]
+      },
+      "scores": {
+        "hook": 3,
+        "clarity": 4,
+        "payoff": 4,
+        "visuals": 3,
+        "loop": 4
+      },
+      "notes": {
+        "hook": "Good scale setup, but voice prompt leakage bloats beat 1 timing.",
+        "clarity": "Straightforward, single-idea historical progression.",
+        "payoff": "Lashing ships together creates effective historical irony.",
+        "visuals": "Modern site photos and museum cases weaken visual immersion.",
+        "loop": "Ending phrasing flows naturally back into the hook."
+      },
+      "frames": [
+        {
+          "beat": 3,
+          "problem": "Modern park display with concrete posts rather than ancient walls."
+        },
+        {
+          "beat": 7,
+          "problem": "Museum exhibit case instead of dramatic naval disaster artwork."
+        }
+      ],
+      "speech": [],
+      "rewrite": [
+        "Beat 1: Re-record to remove TTS system prompt audio at start.",
+        "Beat 8: Change to 'Fourteen thousand ships sailed to conquer Japan.' to cut duration under 35s."
+      ],
+      "better_than_last": "Clearer cause-and-effect storytelling than the Galveston episode.",
+      "judge": "gemini-3.6-flash",
+      "passed": false
+    }
+  ],
+  "best_round": 1
+}

@@ -1,0 +1,52 @@
+{
+  "rounds": [
+    {
+      "at": "2026-10-01T17:15:01+05:30",
+      "check": {
+        "duration": 26.27,
+        "words": 81,
+        "integrated_lufs": -14.2,
+        "true_peak_dbfs": -1.8,
+        "warnings": [],
+        "speech_differences": [],
+        "speech_error": null,
+        "sources": [
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Art Institute of Chicago (CC0)",
+          "Wikimedia Commons",
+          "Flickr via Openverse",
+          "Wikimedia Commons"
+        ]
+      },
+      "scores": {
+        "hook": 4,
+        "clarity": 5,
+        "payoff": 5,
+        "visuals": 2,
+        "loop": 5
+      },
+      "notes": {
+        "hook": "Starting with a high-stakes lie about the world's last frontiers is a strong way to stop a swipe.",
+        "clarity": "The chronological progression from the deception to the survival choice is very easy to follow.",
+        "payoff": "The revelation of the ruthless survival tactics creates a heavy, memorable conclusion.",
+        "visuals": "The image for beat 5 is a major error, showing an ancient stone relief instead of the expedition.",
+        "loop": "The script ends exactly where it begins, creating a perfectly seamless narrative circle."
+      },
+      "frames": [
+        {
+          "beat": 5,
+          "problem": "off-topic; shows an ancient stone relief carving rather than anything related to Amundsen, dogs, or Antarctica."
+        }
+      ],
+      "speech": [],
+      "rewrite": [],
+      "better_than_last": "This script achieves a significantly more seamless loop than ep035 by ending on the exact premise that started the story.",
+      "judge": "gemini-3-flash-preview",
+      "passed": false
+    }
+  ],
+  "best_round": 1
+}
