@@ -43,7 +43,11 @@ RESULTS = (
     "work/manifest.json",
     "work/narration.wav",
     "work/speech.json",
+    "work/take.wav",
+    "work/take.json",
 )
+# The Gemini take a render chose goes back with the next render, so a remake keeps the performance (tts._gemini).
+TAKE = ("work/take.wav", "work/take.json")
 
 # render.py finds its fonts relative to its own file, so the source keeps the pipeline/ layout. Modal's
 # automatic source mount would put ytc at /root/ytc instead, shadowing that copy.
@@ -55,8 +59,8 @@ outbox = modal.Volume.from_name("creature-receipts-outbox", create_if_missing=Tr
 STUDIO_ENV = ("YTC_CURSOR_API_KEY", "YTC_CURSOR_MODEL", "YTC_LLM_FIRST", "YTC_GEMINI_API_KEY", "YTC_MISTRAL_API_KEY",
               "YTC_OPENROUTER_API_KEY", "CLOUDINARY_URL", "YTC_CONTACT", "PEXELS_API_KEY", "PIXABAY_API_KEY")
 studio_secret = modal.Secret.from_dict({k: v for k in STUDIO_ENV if (v := os.environ.get(k))})
-# Image sources throttle downloads that carry no contact details (visuals._user_agent).
-render_secret = modal.Secret.from_dict({k: v for k in ("YTC_CONTACT",) if (v := os.environ.get(k))})
+# Image sources throttle downloads that carry no contact details (visuals._user_agent); the narration is Gemini TTS.
+render_secret = modal.Secret.from_dict({k: v for k in ("YTC_CONTACT", "YTC_GEMINI_API_KEY") if (v := os.environ.get(k))})
 # Everything a studio run uses, the deploy key it pushes with included; made from the Mac (OWNER-CHECKLIST.md).
 run_secret = modal.Secret.from_name("creature-receipts-studio")
 
@@ -117,7 +121,7 @@ def rank_pictures(texts: list[str], images: list[bytes]) -> dict:
 
 def _is_input(relative: Path, final: str) -> bool:
     if relative.parts[0] == "work":
-        return len(relative.parts) > 2 and relative.parts[1] == "assets"
+        return (len(relative.parts) > 2 and relative.parts[1] == "assets") or relative.as_posix() in TAKE
     return relative.as_posix() != final
 
 
