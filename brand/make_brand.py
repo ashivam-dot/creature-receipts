@@ -24,11 +24,11 @@ ANTON = FONTS / "Anton-Regular.ttf"
 MONTSERRAT_XB = FONTS / "Montserrat-ExtraBold.ttf"
 MONTSERRAT_BLACK = FONTS / "Montserrat-Black.ttf"
 
-ABYSS = (5, 24, 36)
-TEAL = (0, 96, 108)
-LIME = (190, 255, 60)
+ABYSS = (14, 11, 9)
+TEAL = (78, 34, 18)
+LIME = (222, 172, 84)
 WHITE = (255, 255, 255)
-MIST = (168, 222, 214)
+MIST = (226, 206, 170)
 
 COMMONS_API = "https://commons.wikimedia.org/w/api.php"
 USER_AGENT = f"HistorysLastHoursBrand/1.0 ({os.environ.get('YTC_CONTACT') or 'aksha.shivam18@gmail.com'})"
@@ -37,13 +37,11 @@ OPEN_LICENSES = re.compile(r"^(public domain|pd\b.*|cc0.*|cc by \d(\.\d)?|no res
 
 # name: (Commons file title, download width, display title, author as the source credits it)
 PICTURES = {
-    "humpback": ("File:Humpback Whale Underwater (37209287981).jpg", 3072,
-                 "Humpback whale underwater, Hawaiian Islands Humpback Whale National Marine Sanctuary (2010)",
-                 "NOAA National Marine Sanctuaries"),
-    "mantis": ("File:Mantis shrimp (Odontodactylus scyllarus).jpg", 2400,
-               "Peacock mantis shrimp (Odontodactylus scyllarus)", "prilfish from Vienna, Austria"),
-    "dumbo": ("File:Dumbo-hires.jpg", 1920, "Dumbo octopus (Grimpoteuthis), NOAA Okeanos Explorer",
-              "NOAA Okeanos Explorer Program"),
+    "pompeii": ("File:Karl Brullov - The Last Day of Pompeii - Google Art Project.jpg", 3072,
+                "The Last Day of Pompeii, Karl Bryullov (1830-1833)", "Karl Bryullov"),
+    "titanic": ("File:Stöwer Titanic.jpg", 2400, "Der Untergang der Titanic, Willy Stöwer (1912)", "Willy Stöwer"),
+    "hindenburg": ("File:Hindenburg burning.jpg", 2400, "The Hindenburg burning at Lakehurst, New Jersey (1937)",
+                   "U.S. Navy"),
 }
 
 
@@ -74,74 +72,41 @@ def _fetch_picture(name: str, title: str, width: int, cache: Path) -> tuple[Imag
     return Image.open(path).convert("RGB"), json.loads(meta_path.read_text(encoding="utf-8"))
 
 
-def _zigzag(x0: float, x1: float, y: float, tooth: float, down: bool = True) -> list[tuple[float, float]]:
-    """Points of a torn-paper zigzag running from x1 back to x0 along y."""
-    count = max(2, round((x1 - x0) / tooth))
-    step = (x1 - x0) / count
-    depth = step * 0.55 * (1 if down else -1)
-    points = []
-    for i in range(count, -1, -1):
-        points.append((x0 + i * step, y))
-        if i:
-            points.append((x0 + (i - 0.5) * step, y + depth))
-    return points
-
-
-def _bezier(p0, p1, p2, p3, n: int = 24) -> list[tuple[float, float]]:
-    t = np.linspace(0, 1, n)[:, None]
-    pts = (1 - t) ** 3 * p0 + 3 * (1 - t) ** 2 * t * p1 + 3 * (1 - t) * t ** 2 * p2 + t ** 3 * p3
-    return [tuple(p) for p in pts]
-
-
-def _fluke(cx: float, cy: float, half_w: float) -> list[tuple[float, float]]:
-    """Outline of a whale's tail fluke rising out of the water, centered on (cx, cy)."""
-    P = lambda x, y: np.array([x, y], float)  # noqa: E731  unit coordinates, y down
-    right = [P(0.26, 1.0)]
-    right += _bezier(P(0.26, 1.0), P(0.17, 0.80), P(0.14, 0.60), P(0.15, 0.42))
-    right += _bezier(P(0.15, 0.42), P(0.50, 0.42), P(0.92, 0.20), P(1.0, -0.36))
-    right += _bezier(P(1.0, -0.36), P(0.78, -0.40), P(0.30, -0.28), P(0.0, -0.02))
-    left = [P(-x, y) for x, y in reversed(right)]
-    return [(cx + x * half_w, cy + y * half_w) for x, y in [*right, *left]]
-
-
 def _mark(size: int) -> Image.Image:
-    """The receipt mark on a transparent square: a white receipt with a torn bottom holding a whale's tail."""
+    """The mark on a transparent square: an hourglass in gold with almost all of its sand run out."""
     layer = Image.new("RGBA", (size, size), (0, 0, 0, 0))
     draw = ImageDraw.Draw(layer)
-    cx = size / 2
-    w, h = size * 0.54, size * 0.68
-    left, right, top = cx - w / 2, cx + w / 2, size * 0.5 - h / 2 - size * 0.015
-    bottom = top + h
-    tooth = w / 7
-    corner = size * 0.045
-    outline = [(left, bottom), (left, top + corner)]
-    outline += [(left + corner * (1 - np.cos(a)), top + corner * (1 - np.sin(a))) for a in np.linspace(0, np.pi / 2, 12)]
-    outline += [(right - corner * (1 - np.cos(a)), top + corner * (1 - np.sin(a))) for a in np.linspace(np.pi / 2, 0, 12)]
-    outline += [(right, bottom)]
-    outline += _zigzag(left, right, bottom, tooth)
-    draw.polygon(outline, fill=WHITE)
-
-    fluke_w = w * 0.40
-    fluke_cy = top + h * 0.36
-    draw.polygon(_fluke(cx, fluke_cy, fluke_w), fill=ABYSS)
-    # A wave for the tail to dive into, with a white gap so the two shapes stay separate when tiny.
-    bar_h = size * 0.042
-    water_y = fluke_cy + fluke_w * 0.98
-    wave_x = np.linspace(cx - w * 0.38, cx + w * 0.38, 80)
-    crest = water_y + np.sin((wave_x - cx) / (w * 0.76) * 4 * np.pi) * size * 0.012
-    gap = size * 0.02
-    halo = [*zip(wave_x, crest - gap), *zip(wave_x[::-1], crest[::-1] + bar_h + gap)]
-    draw.polygon(halo, fill=WHITE)
-    draw.polygon([*zip(wave_x, crest), *zip(wave_x[::-1], crest[::-1] + bar_h)], fill=ABYSS)
-    for end in (0, -1):
-        draw.ellipse([wave_x[end] - bar_h / 2, crest[end], wave_x[end] + bar_h / 2, crest[end] + bar_h], fill=ABYSS)
-    y = water_y + bar_h + size * 0.05
-    lime_w = w * 0.44
-    draw.rounded_rectangle([cx - lime_w / 2, y, cx + lime_w / 2, y + bar_h], radius=bar_h / 2, fill=LIME)
+    cx, cy = size / 2, size / 2
+    w, h = size * 0.46, size * 0.64
+    top, bottom = cy - h / 2, cy + h / 2
+    bar_h, neck, wall = size * 0.05, size * 0.07, size * 0.03
+    for y in (top, bottom - bar_h):
+        draw.rounded_rectangle([cx - w * 0.62, y, cx + w * 0.62, y + bar_h], radius=bar_h / 2, fill=LIME)
+    glass_top, glass_bottom = top + bar_h, bottom - bar_h
+    half = w / 2
+    outer = [(cx - half, glass_top), (cx + half, glass_top), (cx + neck, cy), (cx + half, glass_bottom),
+             (cx - half, glass_bottom), (cx - neck, cy)]
+    draw.polygon(outer, fill=LIME)
+    inner_half = half - wall
+    inner = [(cx - inner_half, glass_top + wall * 0.6), (cx + inner_half, glass_top + wall * 0.6), (cx + neck * 0.3, cy),
+             (cx + inner_half, glass_bottom - wall * 0.6), (cx - inner_half, glass_bottom - wall * 0.6),
+             (cx - neck * 0.3, cy)]
+    draw.polygon(inner, fill=ABYSS)
+    # The last of the sand in the top bulb, a thin falling stream, and the pile below.
+    chamber = cy - (glass_top + wall * 0.6)
+    sand_top = cy - chamber * 0.3
+    sand_half = (inner_half - neck * 0.3) * 0.3 + neck * 0.3
+    draw.polygon([(cx - sand_half, sand_top), (cx + sand_half, sand_top), (cx + neck * 0.3, cy), (cx - neck * 0.3, cy)],
+                 fill=WHITE)
+    pile_base = glass_bottom - wall * 0.6
+    pile_top = pile_base - chamber * 0.5
+    draw.rectangle([cx - size * 0.007, cy, cx + size * 0.007, pile_top + 2], fill=WHITE)
+    pile_half = inner_half * 0.9
+    draw.polygon([(cx - pile_half, pile_base), (cx + pile_half, pile_base), (cx, pile_top)], fill=WHITE)
     return layer
 
 
-def _badge(size: int, tilt: float = -8) -> Image.Image:
+def _badge(size: int, tilt: float = 0) -> Image.Image:
     """The circular badge used for the avatar and watermark, drawn 4x and scaled down for clean edges."""
     big = size * 4
     yy, xx = np.mgrid[0:big, 0:big].astype(np.float32)
@@ -214,25 +179,25 @@ def make_banner(out: Path, cache: Path) -> list[dict]:
     for name, (*_, label, author) in PICTURES.items():
         pictures[name][1].update(label=label, author=author)
 
-    center = _cover(pictures["humpback"][0], w, h, (0.5, 0.5))
+    center = _cover(pictures["pompeii"][0], w, h, (0.5, 0.42))
     arr = np.asarray(center, np.float32)
-    # Shift the tropical blue toward deep teal so the whole banner shares one ocean palette.
+    # Shift the painting toward ember and sepia so the whole banner shares one palette.
     lum = arr @ np.array([0.30, 0.50, 0.20], np.float32)
-    teal = np.array([20, 150, 160], np.float32) * (lum[..., None] / 120)
-    arr = arr * 0.35 + teal * 0.65
+    ember = np.array([170, 96, 48], np.float32) * (lum[..., None] / 120)
+    arr = arr * 0.35 + ember * 0.65
     yy, xx = np.mgrid[0:h, 0:w].astype(np.float32)
-    # Darken toward the middle so the name reads, keeping the whale visible at the edges.
+    # Darken toward the middle so the name reads, keeping the painting visible at the edges.
     focus = np.exp(-(((xx - w / 2) / (safe_w * 0.62)) ** 2 + ((yy - h / 2) / (safe_h * 0.95)) ** 2))
     shade = 0.78 - 0.50 * focus
     abyss = np.array(ABYSS, np.float32)
     arr = arr * shade[..., None] + abyss * (1 - shade[..., None])
     banner = Image.fromarray(np.clip(arr, 0, 255).astype(np.uint8), "RGB")
 
-    # The side pictures stop just outside the mobile crop, so phones see only the name on the ocean.
+    # The side pictures stop just outside the mobile crop, so phones see only the name on the painting.
     side_w = (w - safe_w) // 2 - 10
     panels = {
-        "left": _band(pictures["mantis"][0], side_w, h, (0.465, 0.5), 1000, (12, 9, 7), band_top=460),
-        "right": _band(pictures["dumbo"][0], side_w, h, (0.765, 0.48), 700, (3, 5, 9)),
+        "left": _band(pictures["titanic"][0], side_w, h, (0.5, 0.5), 1000, ABYSS, band_top=300),
+        "right": _band(pictures["hindenburg"][0], side_w, h, (0.5, 0.45), 1000, ABYSS, band_top=300),
     }
     for side, panel in panels.items():
         mask = _torn_mask(side_w, h, side)
@@ -242,11 +207,11 @@ def make_banner(out: Path, cache: Path) -> list[dict]:
         banner.paste(panel, (x, 0), mask)
 
     draw = ImageDraw.Draw(banner)
-    title_font = ImageFont.truetype(str(ANTON), 188)
+    title_font = ImageFont.truetype(str(ANTON), 168)
     tag_font = ImageFont.truetype(str(MONTSERRAT_BLACK), 56)
     small_font = ImageFont.truetype(str(MONTSERRAT_XB), 30)
-    words = [("CREATURE", WHITE), ("RECEIPTS", LIME)]
-    tagline = "ANIMAL STORIES. WITH RECEIPTS."
+    words = [("HISTORY'S", WHITE), ("LAST HOURS", LIME)]
+    tagline = "THE FINAL MOMENTS OF HISTORY'S TRAGEDIES"
     small = "NEW SHORTS EVERY DAY  ·  EVERY CLAIM SOURCED"
 
     word_gap = 38
@@ -278,8 +243,8 @@ def make_banner(out: Path, cache: Path) -> list[dict]:
 def write_credits(credits: list[dict]) -> str:
     lines = ["# Banner image credits", "",
              "Pictures from Wikimedia Commons, checked through the Commons API to be public domain, CC0, or CC BY "
-             "(no share-alike, no NonCommercial). The mantis shrimp and octopus photos were cropped; the whale photo "
-             "was cropped, tinted, and darkened. The avatar and watermark are original drawings.", ""]
+             "(no share-alike, no NonCommercial). The Titanic painting and Hindenburg photo were cropped; the Pompeii "
+             "painting was cropped, tinted, and darkened. The avatar and watermark are original drawings.", ""]
     for c in credits:
         license_text = f"[{c['license']}]({c['license_url']})" if c.get("license_url") else c["license"]
         lines += [f"- **{c['label']}**", f"  - File: {c['title']}", f"  - Author: {c['author']}",
