@@ -1,34 +1,34 @@
 {
-  "updated_at": "2026-10-01T09:09:05+05:30",
+  "updated_at": "2026-10-01T09:13:21+05:30",
   "day": 0,
   "result": "ok",
   "run": {
     "host": "modal",
-    "id": "ta-01M3TRNNVRJ7HTF4YPKG2Q678R",
+    "id": "ta-01M3TRXWZWCENXBKY23VF0N1CR",
     "number": null,
     "trigger": "manual",
-    "started_at": "2026-10-01T09:08:41+05:30",
-    "started_at_utc": "2026-10-01T03:38:41+00:00",
-    "seconds": 24
+    "started_at": "2026-10-01T09:13:08+05:30",
+    "started_at_utc": "2026-10-01T03:43:08+00:00",
+    "seconds": 14
   },
   "stages": [
     {
       "name": "deploy",
       "ok": true,
       "detail": "",
-      "seconds": 2.8
+      "seconds": 1.8
     },
     {
       "name": "sync",
       "ok": true,
       "detail": "7 posts",
-      "seconds": 1.0
+      "seconds": 0.5
     },
     {
       "name": "playlists",
       "ok": true,
-      "detail": "added ep009 to 'Built Different'; created playlist \"Nature's Record Breakers\"; added ep013 to \"Nature's Record Breakers\"",
-      "seconds": 2.7
+      "detail": "nothing new",
+      "seconds": 1.0
     },
     {
       "name": "languages",
@@ -46,59 +46,84 @@
       "name": "short reviews",
       "ok": true,
       "detail": "no checkpoint due",
-      "seconds": 0.2
+      "seconds": 0.1
     },
     {
       "name": "collect",
       "ok": true,
-      "detail": "ep020 unfinished (Overloaded: every model in ('gemini-3.8-flash', 'gemini-3.7-flash', 'gemini-3.6-flash', 'gemini-3.5-flash', 'gemini-3-flash-preview', 'gemini-flash-latest', 'ovh:Qwen3.5-397B-A17B') with quota left stayed overloaded for 25 minutes); ep022 unfinished (Overloaded: every model in ('gemini-3.8-flash', 'gemini-3.7-flash', 'gemini-3.6-flash', 'gemini-3.5-flash', 'gemini-3-flash-preview', 'gemini-flash-latest', 'ovh:Qwen3.5-397B-A17B') with quota left stayed overloaded for 25 minutes); ep023 unfinished (Overloaded: every model in ('gemini-3.8-flash', 'gemini-3.7-flash', 'gemini-3.6-",
-      "seconds": 12.1
+      "detail": "nothing in the cloud",
+      "seconds": 0.4
     },
     {
       "name": "buffer channel",
       "ok": true,
       "detail": "connected",
-      "seconds": 0.4
+      "seconds": 0.2
     },
     {
       "name": "preflight ep012",
       "ok": true,
-      "detail": "video downloads whole (14 MB in 1 s)",
-      "seconds": 1.4
+      "detail": "video still hosted",
+      "seconds": 0.6
     },
     {
       "name": "preflight ep018",
       "ok": true,
       "detail": "video still hosted",
-      "seconds": 0.8
+      "seconds": 0.5
     },
     {
       "name": "publish",
       "ok": true,
       "detail": "",
-      "seconds": 0.2
+      "seconds": 0.1
+    },
+    {
+      "name": "start ep020",
+      "ok": true,
+      "detail": "Winnipeg (bear) (1914): the real bear behind Winnie-the-Pooh was a black bear cub bought for $20 at an Ontario train stop, who sailed for England with Canadian troops on October 3",
+      "seconds": 0.8
+    },
+    {
+      "name": "start ep022",
+      "ok": true,
+      "detail": "Octopus: three hearts, blue copper-based blood, and two-thirds of its 500 million neurons in its arms",
+      "seconds": 1.0
+    },
+    {
+      "name": "start ep023",
+      "ok": true,
+      "detail": "Anglerfish: the tiny male latches onto a far larger female and can fuse into her body",
+      "seconds": 0.5
+    },
+    {
+      "name": "start ep024",
+      "ok": true,
+      "detail": "Narwhal: the \"horn\" is a spiral left canine tooth up to 3 meters long, packed with millions of nerve endings",
+      "seconds": 0.5
+    },
+    {
+      "name": "publish",
+      "ok": true,
+      "detail": "",
+      "seconds": 0.1
     }
   ],
   "errors": [],
   "owner_action": [],
-  "notes": [
-    "ep020 stopped on Gemini's free tier being overloaded; it resumes in a later run",
-    "ep022 stopped on Gemini's free tier being overloaded; it resumes in a later run",
-    "ep023 stopped on Gemini's free tier being overloaded; it resumes in a later run",
-    "ep024 stopped on Gemini's free tier being overloaded; it resumes in a later run"
-  ],
+  "notes": [],
   "inventory": {
     "total": 5,
     "in_buffer": 5,
     "waiting": 0,
     "target": 42,
-    "making": [
+    "making": [],
+    "remote": [
       "ep020",
       "ep022",
       "ep023",
       "ep024"
-    ],
-    "remote": []
+    ]
   },
   "queue": [
     {
@@ -128,71 +153,78 @@
     }
   ],
   "waiting": [],
-  "made": [
+  "made": [],
+  "spawned": [
     {
       "id": "ep020",
-      "outcome": "unfinished",
       "topic": "Winnipeg (bear) (1914): the real bear behind Winnie-the-Pooh was a black bear cub bought for $20 at an Ontario train stop, who sailed for England with Canadian troops on October 3",
-      "reason": "Overloaded: every model in ('gemini-3.8-flash', 'gemini-3.7-flash', 'gemini-3.6-flash', 'gemini-3.5-flash', 'gemini-3-flash-preview', 'gemini-flash-latest', 'ovh:Qwen3.5-397B-A17B') with quota left stayed overloaded for 25 minutes",
-      "quota": false,
-      "overloaded": true
+      "call_id": "fc-01M3TRYEDD8CBZ4T5EZSBYGNX4"
     },
     {
       "id": "ep022",
-      "outcome": "unfinished",
       "topic": "Octopus: three hearts, blue copper-based blood, and two-thirds of its 500 million neurons in its arms",
-      "reason": "Overloaded: every model in ('gemini-3.8-flash', 'gemini-3.7-flash', 'gemini-3.6-flash', 'gemini-3.5-flash', 'gemini-3-flash-preview', 'gemini-flash-latest', 'ovh:Qwen3.5-397B-A17B') with quota left stayed overloaded for 25 minutes",
-      "quota": false,
-      "overloaded": true
+      "call_id": "fc-01M3TRYFCVBGRKB5Q1QC7VE0RG"
     },
     {
       "id": "ep023",
-      "outcome": "unfinished",
       "topic": "Anglerfish: the tiny male latches onto a far larger female and can fuse into her body",
-      "reason": "Overloaded: every model in ('gemini-3.8-flash', 'gemini-3.7-flash', 'gemini-3.6-flash', 'gemini-3.5-flash', 'gemini-3-flash-preview', 'gemini-flash-latest', 'ovh:Qwen3.5-397B-A17B') with quota left stayed overloaded for 25 minutes",
-      "quota": false,
-      "overloaded": true
+      "call_id": "fc-01M3TRYFWZRFMRCFV5DQRN9TF8"
     },
     {
       "id": "ep024",
-      "outcome": "unfinished",
       "topic": "Narwhal: the \"horn\" is a spiral left canine tooth up to 3 meters long, packed with millions of nerve endings",
-      "reason": "Overloaded: every model in ('gemini-3.8-flash', 'gemini-3.7-flash', 'gemini-3.6-flash', 'gemini-3.5-flash', 'gemini-3-flash-preview', 'gemini-flash-latest', 'ovh:Qwen3.5-397B-A17B') with quota left stayed overloaded for 25 minutes",
-      "quota": false,
-      "overloaded": true
+      "call_id": "fc-01M3TRYGCW2G3246T6VSSR7DS0"
     }
   ],
-  "spawned": [],
-  "in_cloud": [],
+  "in_cloud": [
+    {
+      "id": "ep020",
+      "topic": "Winnipeg (bear) (1914): the real bear behind Winnie-the-Pooh was a black bear cub bought for $20 at an Ontario train stop, who sailed for England with Canadian troops on October 3",
+      "spawned_at": "2026-10-01T09:13:19+05:30"
+    },
+    {
+      "id": "ep022",
+      "topic": "Octopus: three hearts, blue copper-based blood, and two-thirds of its 500 million neurons in its arms",
+      "spawned_at": "2026-10-01T09:13:20+05:30"
+    },
+    {
+      "id": "ep023",
+      "topic": "Anglerfish: the tiny male latches onto a far larger female and can fuse into her body",
+      "spawned_at": "2026-10-01T09:13:21+05:30"
+    },
+    {
+      "id": "ep024",
+      "topic": "Narwhal: the \"horn\" is a spiral left canine tooth up to 3 meters long, packed with millions of nerve endings",
+      "spawned_at": "2026-10-01T09:13:21+05:30"
+    }
+  ],
   "published": [],
   "live": 2,
   "failed_posts": [],
   "not_live": [],
   "llm": {
-    "calls": 14,
-    "by_model": {
-      "gemini-3.6-flash": 1,
-      "gemini-3-flash-preview": 2,
-      "gemini-3.5-flash-lite": 8,
-      "gemini-3.8-flash": 1,
-      "gemini-3.5-flash": 1,
-      "gemini-3.7-flash": 1
-    },
+    "calls": 0,
+    "by_model": {},
     "out_of_quota": []
   },
   "renders": {
-    "modal": 6,
+    "modal": 0,
     "runner": 0
   },
   "daily_done": "2026-09-30",
   "minutes_this_month": 0.0,
   "minutes_budget": 2000,
   "modal_cost": {
-    "metered": 0.08,
+    "metered": 0.01,
     "billed": 0.0
   },
   "modal_credit": 30.0,
-  "capacity": null,
+  "capacity": {
+    "cloud": 233,
+    "runner": 0,
+    "runner_minutes": 0,
+    "modal_credit_left": 27.99
+  },
   "made_here": 0,
   "open_topics": 98,
   "parked_topics": 3
