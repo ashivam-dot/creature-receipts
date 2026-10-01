@@ -28,6 +28,7 @@ CHANNEL_COPY = ROOT / "brand" / "CHANNEL-COPY.md"
 # force-ssl covers playlists now and comment moderation later, so the owner consents once.
 MANAGE_SCOPE = "https://www.googleapis.com/auth/youtube.force-ssl"
 SCOPES = [MANAGE_SCOPE, "https://www.googleapis.com/auth/yt-analytics.readonly"]
+LANGUAGE = "en"
 RETENTION_POINTS = (0.0, 0.05, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1.0)
 CHANNEL_BROWSER = "chrome-profile-1"
 VIDEO_METRICS = (
@@ -222,6 +223,31 @@ def file_into_playlists(content_dir: Path) -> list[str]:
         data.playlistItems().insert(part="snippet", body=body).execute()
         members[playlist].add(video_id)
         changes.append(f"added {record['id']} to {series!r}")
+    return changes
+
+
+def fix_languages(content_dir: Path) -> list[str]:
+    """Set each live Short's title and audio language to English where YouTube has another: the upload sets none,
+    and YouTube guessed French for ep013 (2026-10-01), which points its first test at the wrong viewers."""
+    wanted = {}
+    for record_path in sorted(content_dir.glob("*/publish.json")):
+        record = json.loads(record_path.read_text(encoding="utf-8"))
+        if record.get("status") == "sent" and (found := re.search(r"(?:shorts/|v=|youtu\.be/)([\w-]{11})", record.get("youtube_url") or "")):
+            wanted[found.group(1)] = record["id"]
+    if not wanted:
+        return []
+    data = build("youtube", "v3", credentials=_credentials(), cache_discovery=False)
+    changes = []
+    ids = list(wanted)
+    for start in range(0, len(ids), 50):
+        for item in data.videos().list(part="snippet", id=",".join(ids[start:start + 50])).execute()["items"]:
+            snippet = item["snippet"]
+            if snippet.get("defaultLanguage") == LANGUAGE and snippet.get("defaultAudioLanguage") == LANGUAGE:
+                continue
+            body = {key: snippet[key] for key in ("title", "description", "categoryId", "tags") if key in snippet}
+            body.update(defaultLanguage=LANGUAGE, defaultAudioLanguage=LANGUAGE)
+            data.videos().update(part="snippet", body={"id": item["id"], "snippet": body}).execute()
+            changes.append(f"{wanted[item['id']]} language {snippet.get('defaultLanguage')}/{snippet.get('defaultAudioLanguage')} -> {LANGUAGE}")
     return changes
 
 

@@ -1574,6 +1574,10 @@ def main(produce_count: int | None = None, publish: bool = True, daily_mode: str
         from .youtube import file_into_playlists
 
         entry["detail"] = "; ".join(file_into_playlists(EPISODES))[:300] or "nothing new"
+    with run.stage("languages") as entry:
+        from .youtube import fix_languages
+
+        entry["detail"] = "; ".join(fix_languages(EPISODES))[:300] or "every live Short is in English"
     with run.stage("on youtube") as entry:
         from .youtube import check_live
 
