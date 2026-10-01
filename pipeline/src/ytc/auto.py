@@ -1206,6 +1206,91 @@ def crosspost_scheduled(run: Run) -> None:
 # --- daily routine ---------------------------------------------------------------------------------------
 
 
+# A Short joins the learning log's scoreboard after this long: a day gives the first verdict on a Short, and at two
+# a day, waiting longer means the lesson reaches Shorts made days later.
+LEARN_FROM_HOURS = 24
+# This many Shorts in a row not shown at 24 hours is a hold on the channel, not on any one Short.
+NOT_SHOWN_STREAK = 3
+
+
+def review_shorts(run: Run) -> list[str]:
+    """Take each live Short's due checkpoint (review.CHECKPOINTS), tell the owner how it's doing, and feed any
+    diagnosis into strategy/LEARNINGS.md so the next scripts apply it."""
+    from . import review
+    from .youtube import save_stats, short_numbers
+
+    eps = episodes()
+    live = _by_video([e for e in eps if e["state"] == "live"])
+    now = _now()
+    todo = []
+    for video_id, e in live.items():
+        sent = e["record"].get("sent_at") or e["record"].get("due_at")
+        perf = _json(e["folder"] / "performance.json", {})
+        if sent and (checkpoint := review.due(datetime.fromisoformat(sent), now, set(perf))):
+            todo.append((video_id, e, checkpoint, perf))
+    if not todo:
+        return []
+    numbers = short_numbers([t[0] for t in todo])
+    channel = _json(ROOT / "kit" / "channel.json", {}).get("name", "the channel")
+    topic = os.environ.get("YTC_NTFY_TOPIC")
+    done, diagnosed = [], False
+    for video_id, e, checkpoint, perf in todo:
+        if video_id not in numbers:
+            continue
+        hours = (now - datetime.fromisoformat(numbers[video_id]["published"])).total_seconds() / 3600
+        s = review.summary(numbers[video_id], hours)
+        peers = [p[str(checkpoint)]["numbers"] for other in eps if other["id"] != e["id"]
+                 and (p := _json(other["folder"] / "performance.json", {})) and str(checkpoint) in p]
+        entry = {"taken_at": now.isoformat(timespec="seconds"), "numbers": s,
+                 "verdict": review.verdict(s, [p["views"] for p in peers])}
+        if checkpoint >= 24 and s["views"] >= review.DIAGNOSE_VIEWS:
+            try:
+                entry["diagnosis"] = review.diagnose(channel, e["id"], review.script_text(e["folder"]), s, peers[-10:])
+                diagnosed = True
+            except Exception as err:
+                log.warning("couldn't diagnose %s: %s", e["id"], err)
+        perf[str(checkpoint)] = entry
+        _write_json(e["folder"] / "performance.json", perf)
+        if topic:
+            review.push(topic, f"{channel}: {e['id']} at {checkpoint} hours",
+                        review.message(channel, e["id"], e["title"] or "", checkpoint, entry))
+        done.append(f"{e['id']} at {checkpoint} h: {entry['verdict']}")
+    day_old = [p["24"] for e in sorted(eps, key=lambda e: e["id"]) if (p := _json(e["folder"] / "performance.json", {})) and "24" in p]
+    if len(day_old) >= NOT_SHOWN_STREAK and all(d["verdict"].startswith("not shown") for d in day_old[-NOT_SHOWN_STREAK:]):
+        run.owner_action.append(
+            f"YouTube hasn't shown the last {NOT_SHOWN_STREAK} Shorts in the Shorts feed after a day each, so the hold is on "
+            "the channel, not the scripts. Verify the channel's phone number at youtube.com/verify (the one trust step "
+            "it lacks), and check YouTube Studio for any notice.")
+    if diagnosed:
+        learned = update_learnings(run, _json(save_stats(ANALYTICS), {}))
+        done.append(f"learnings: {learned['log']}")
+    return done
+
+
+def _reviews(eps: list[dict], count: int = 10) -> list[dict]:
+    """The latest diagnosis of each of the newest reviewed Shorts, for the learning log."""
+    out = []
+    for e in sorted(eps, key=lambda e: e["id"]):
+        perf = _json(e["folder"] / "performance.json", {})
+        if latest := [perf[c] for c in sorted(perf, key=int) if perf[c].get("diagnosis")]:
+            out.append({"short": e["id"], "title": e["title"], "verdict": latest[-1]["verdict"], **latest[-1]["diagnosis"]})
+    return out[-count:]
+
+
+def _sister_rules() -> str:
+    """The other channel's proven rules, from its public repo: the same studio on another niche, so its rules are
+    hypotheses here, not rules."""
+    repo = _json(ROOT / "kit" / "channel.json", {}).get("sister_repo")
+    if not repo:
+        return ""
+    try:
+        response = requests.get(f"https://raw.githubusercontent.com/{repo}/main/strategy/LEARNINGS.md", timeout=20)
+        response.raise_for_status()
+        return _section(response.text, "## Rules we've proven")
+    except (requests.RequestException, ValueError):
+        return ""
+
+
 def _video_rows(analytics: dict, eps: list[dict]) -> list[dict]:
     by_video = _by_video(eps)
     rows = []
@@ -1255,7 +1340,9 @@ def _section(text: str, heading: str) -> str:
 
 def update_learnings(run: Run, analytics: dict) -> dict:
     eps = episodes()
-    rows = [r for r in _video_rows(analytics, eps) if r["hours"] >= 48]
+    rows = [r for r in _video_rows(analytics, eps) if r["hours"] >= LEARN_FROM_HOURS]
+    reviews = _reviews(eps)
+    sister = _sister_rules()
     text = LEARNINGS.read_text(encoding="utf-8")
     recent = rows[-10:]
     medians = {"engaged_share": _median(r["engaged_share"] for r in recent), "avg_viewed": _median(r["avg_viewed"] for r in recent),
@@ -1270,7 +1357,12 @@ def update_learnings(run: Run, analytics: dict) -> dict:
         "them; drop hypotheses the data contradicts; keep the rest. Rules and hypotheses must be concrete enough "
         "for a scriptwriter to apply. log: one line on what changed today and why. summary: 2 sentences on what the "
         "numbers say for tomorrow's scripts.\n\nCurrent file:\n" + text.split("## Scoreboard")[0]
-        + "\n\nShorts with 48+ hours of data:\n" + json.dumps(rows, indent=1) + "\n\nMedians of the last 10: " + json.dumps(medians),
+        + f"\n\nShorts with {LEARN_FROM_HOURS}+ hours of data:\n" + json.dumps(rows, indent=1) + "\n\nMedians of the last 10: " + json.dumps(medians)
+        + "\n\nEach reviewed Short's diagnosis (review.py). Turn each change_next into a hypothesis unless a rule or "
+        "hypothesis already covers it, and count a review as evidence for or against the ones it touches:\n"
+        + (json.dumps(reviews, indent=1) if reviews else "none yet")
+        + ("\n\nRules the sister channel (the same studio on another niche) has proven. Keep any that would carry "
+           "over as hypotheses here until this channel's numbers show them:\n" + sister if sister else ""),
         schema=LEARN_SCHEMA, purpose="learnings",
     )
     reasons = {r["short"]: r["reason"] for r in answer["reasons"]}
@@ -1583,6 +1675,8 @@ def main(produce_count: int | None = None, publish: bool = True, daily_mode: str
 
         run.not_live = check_live(EPISODES)
         entry["detail"] = "; ".join(f"{p['id']}: {p['problem']}" for p in run.not_live)[:300] or "every Short sent is public"
+    with run.stage("short reviews") as entry:
+        entry["detail"] = "; ".join(review_shorts(run))[:600] or "no checkpoint due"
     if inventory()["remote"] or os.environ.get("MODAL_TOKEN_ID") or ON_MODAL:
         with run.stage("collect") as entry:
             entry["detail"] = collect(run)

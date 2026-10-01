@@ -6,7 +6,7 @@ channel's recent median on the numbers below.
 
 ## What to beat
 
-Recompute daily from `analytics/<date>.json`, over Shorts with 48+ hours of data (medians of the last 10).
+Recompute daily and after each Short's 24- and 72-hour reviews, over Shorts with 24+ hours of data (medians of the last 10).
 
 | Measure | Where it comes from | Channel median | Target |
 |---|---|---|---|
@@ -18,7 +18,7 @@ Recompute daily from `analytics/<date>.json`, over Shorts with 48+ hours of data
 
 ## Rules we've proven
 
-A rule needs at least two Shorts with 48+ hours of data showing the same effect. Once proven, also copy it
+A rule needs at least two Shorts with 24+ hours of data showing the same effect. Once proven, also copy it
 into `strategy/SCRIPT-RULES.md`, then cite the evidence here.
 
 - None yet.
@@ -33,7 +33,7 @@ into `strategy/SCRIPT-RULES.md`, then cite the evidence here.
 
 ## Scoreboard
 
-One row per live Short once it has 48+ hours of data. Hook style is statement, question, number, or
+One row per live Short once it has 24+ hours of data. Hook style is statement, question, number, or
 contradiction.
 
 | Short | Series | Hook style | Views | Engaged share | Avg % viewed | Watching at 10% | Subs gained | Likely reason |

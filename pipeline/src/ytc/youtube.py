@@ -171,6 +171,38 @@ def stats(days: int = 28) -> dict:
     }
 
 
+def short_numbers(video_ids: list[str]) -> dict[str, dict]:
+    """Each Short's numbers now: views, likes and comments as of this minute, and what YouTube Analytics has so
+    far (it lags a day or two) on watching, retention, and where the views came from."""
+    if not video_ids:
+        return {}
+    creds = _credentials()
+    data = build("youtube", "v3", credentials=creds, cache_discovery=False)
+    analytics = build("youtubeAnalytics", "v2", credentials=creds, cache_discovery=False)
+    out = {}
+    for start in range(0, len(video_ids), 50):
+        for video in data.videos().list(part="snippet,statistics", id=",".join(video_ids[start:start + 50])).execute()["items"]:
+            published = datetime.fromisoformat(video["snippet"]["publishedAt"].replace("Z", "+00:00"))
+            window = {"startDate": published.date().isoformat(), "endDate": date.today().isoformat()}
+            try:
+                rows = _query(analytics, metrics=VIDEO_METRICS, filters=f"video=={video['id']}", **window)
+                sources = _query(analytics, metrics="views", dimensions="insightTrafficSourceType",
+                                 filters=f"video=={video['id']}", **window)
+            except HttpError:
+                rows, sources = [], []
+            stats = video["statistics"]
+            out[video["id"]] = {
+                "published": published.isoformat(),
+                "views": int(stats.get("viewCount", 0)),
+                "likes": int(stats.get("likeCount", 0)),
+                "comments": int(stats.get("commentCount", 0)),
+                "analytics": rows[0] if rows else {},
+                "sources": {row["insightTrafficSourceType"]: row["views"] for row in sources},
+                "retention": _retention(analytics, video["id"], window) if rows else [],
+            }
+    return out
+
+
 def _pages(method, **params) -> list[dict]:
     items, token = [], None
     while True:
