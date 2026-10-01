@@ -43,6 +43,20 @@ event is told for its gore. Space topics belong to the sister channel Universe R
 - MV Wilhelm Gustloff (1945): its sinking in the Baltic was the deadliest loss of a single ship in history
 - SS Eastland (1915): it rolled over while still tied to its Chicago dock, and 844 people died in water about 20 feet deep
 - Great Fire of London (1666): only a handful of deaths were recorded, though the true toll is unknown
+- Radium Girls (1917): factory workers painted watch dials with self-glowing paint and pointed the brushes with their lips, later seeing their own jaws glow in the dark
+- 1945 Empire State Building B-25 crash (1945): a lost bomber crashed into the 79th floor of the skyscraper, and an elevator operator fell 75 floors and survived
+- Battle of the Little Bighorn (1876): Custer split his forces and rode directly into the largest Native American encampment ever gathered on the plains
+- Battle of the Alamo (1836): a small band of Texian defenders held out for 13 days before a dawn assault overwhelmed the mission walls
+- Burning of Washington (1814): British troops ate the dinner President Madison had left behind before burning the White House, right as a freak tornado struck the city
+- Battle of Agincourt (1415): outnumbered English archers stood in thick mud as heavily armored French knights charged and sank into the muck
+- 1900 Galveston hurricane (1900): forecasters dismissed warnings from Cuba, leaving the deadliest natural disaster in US history to strike an unprepared island
+- Battle of Saragarhi (1897): twenty-one soldiers fought ten thousand tribesmen to the last man, signaling updates until the final seconds
+- Port Chicago disaster (1944): untested munitions were loaded by untrained men in a race against time, causing the largest US home-front disaster of WWII
+- Victoria Hall disaster (1883): hundreds of children rushed for free toys through a door that opened inward, trapping them as the crush grew
+- Burning of Smyrna (1922): a cosmopolitan Mediterranean haven went up in flames days after foreign armies retreated, trapping refugees on the quay
+- Wanggongchang Explosion (1626): a massive unexplained blast rocked Beijing, stripping people of their clothes and leaving a silent void
+- Great Blizzard of 1888 (1888): commuters stepped into mild spring weather before a sudden whiteout froze New York City in its tracks
+- Great Siege of Malta (1565): a handful of knights held off an invading armada against impossible odds, surviving until relief finally arrived
 
 ### Lost Cities
 
@@ -68,6 +82,8 @@ event is told for its gore. Space topics belong to the sister channel Universe R
 - Lady Franklin Bay Expedition (1884): only a handful of the 25 men were alive when the rescuers reached them
 - Jeannette expedition (1881): a ship sent to find an open sea at the North Pole was crushed by ice instead
 - 1924 British Mount Everest expedition: George Mallory's body was found 75 years later, and nobody knows if he reached the top
+- Amundsen's South Pole expedition (1910): a secret race to the pole succeeded because the leader ate his own sled dogs to survive
+- Great Fire of 1910 (1910): hurricane-force winds turned a scattering of forest fires into a single monster that swallowed towns in minutes
 
 ### Fallen Empires
 
@@ -79,6 +95,7 @@ event is told for its gore. Space topics belong to the sister channel Universe R
 - Siege of Baghdad (1258): accounts say the Tigris ran black with ink from the books thrown into it
 - Third Punic War (146 BC): Rome destroyed Carthage, but the story that it salted the earth appears to be a modern invention
 - Library of Alexandria: it wasn't lost in one great fire, but declined over centuries
+- Reichstag fire (1933): the German parliament building burned just weeks after Hitler took power, instantly triggering emergency decrees that ended democracy
 
 ### Warnings Ignored
 
@@ -92,6 +109,9 @@ event is told for its gore. Space topics belong to the sister channel Universe R
 - Iroquois Theatre fire (1903): advertised as "absolutely fireproof", it burned five weeks after opening
 - Vasa (ship) (1628): the warship sank on its maiden voyage, less than a mile out, after failing a stability test before it sailed
 - Knickerbocker Storm (1922): the roof of Washington's Knickerbocker Theatre collapsed under the snow during a film
+- Battle of Isandlwana (1879): British commanders refused to form defensive laagers, mocking reports of Zulu forces until thousands appeared over the ridge
+- Mongol invasions of Japan (1281): the invasion fleet was destroyed by a legendary typhoon known as the kamikaze, saving Japan from conquest
+- Fetterman Fight (1866): a cocky commander vowed to ride through the entire Sioux nation with eighty men, and none returned
 
 ### Sole Survivors
 
@@ -101,3 +121,4 @@ event is told for its gore. Space topics belong to the sister channel Universe R
 - Charles Joughin (1912): the Titanic's chief baker survived a long time in the freezing water, and credited the whisky he had drunk
 - Arthur John Priest: the "unsinkable stoker" survived the Titanic, the Britannic, and other sinkings
 - Poon Lim (1942): a ship's steward survived 133 days alone on a raft in the Atlantic
+- Antoine de Saint-Exupéry (1935): the author of The Little Prince crashed in the Sahara and nearly died of thirst before a Bedouin saved him

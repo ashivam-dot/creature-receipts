@@ -362,7 +362,10 @@ def urgent(topics: list[dict], today: date) -> list[dict]:
 
 def choose_topics(count: int, eps: list[dict]) -> list[dict]:
     """Fresh timely topics first, then anniversaries within a week, then the backlog (with timely topics past
-    TIMELY_DAYS), rotating series and taking each series' most widely known topic first."""
+    TIMELY_DAYS), strongest story first (stories.priority: its story score scaled by Wikipedia readers), never two
+    of one series in a row."""
+    from . import stories
+
     today = _now().date()
     open_topics = [t for t in calendar_topics(today) if _available(t, today)]
     fresh = urgent(open_topics, today)
@@ -372,13 +375,12 @@ def choose_topics(count: int, eps: list[dict]) -> list[dict]:
     recent = [e["series"] for e in sorted(eps, key=lambda e: e["id"], reverse=True) if e["series"]]
     backlog = [t for t in open_topics if t["kind"] == "backlog" or (t["kind"] == "timely" and t not in fresh)]
     readers = demand(backlog) if len(chosen) < count and backlog else {}
+    scores = stories.topic_scores()
     while len(chosen) < count and backlog:
         used = [t["series"] for t in reversed(chosen)] + recent
-        # The series used longest ago (or never) goes next.
-        def staleness(t):
-            return used.index(t["series"]) if t["series"] in used else len(used) + 1
-        best = max(backlog, key=lambda t: (staleness(t) if t["series"] != (used[0] if used else None) else -1,
-                                           readers.get(t["topic"], 0)))
+        last = used[0] if used else None
+        best = max(backlog, key=lambda t: (t["series"] != last,
+                                           stories.priority(t["topic"], scores, readers.get(t["topic"], 0))))
         chosen.append(best)
         backlog.remove(best)
     return chosen
@@ -444,14 +446,8 @@ def add_topics(run: Run, backlog_count: int = 4) -> list[str]:
 
     lines = CALENDAR.read_text(encoding="utf-8").splitlines()
     for item in [i for i in answer.get("backlog", []) if fresh(i)][:backlog_count]:
-        heading = f"### {item['series']}"
-        if heading not in lines:
+        if not insert_backlog(lines, item["series"], item["topic"]):
             continue
-        start = lines.index(heading)
-        end = next((i for i in range(start + 1, len(lines)) if lines[i].startswith("#")), len(lines))
-        while end > start + 1 and not lines[end - 1].strip():
-            end -= 1
-        lines.insert(end, f"- {item['topic']}")
         known_words.append(_key_words(item["topic"]))
         added.append(f"{item['topic']} ({item['series']})")
     for item in [i for i in answer.get("anniversaries", []) if fresh(i) and _next_date(i["date"], today)][:1]:
@@ -471,6 +467,55 @@ def add_topics(run: Run, backlog_count: int = 4) -> list[str]:
         lines.insert(position, f"| {item['date']} | {item['topic']} | {item['series']} |")
         added.append(f"{item['date']}: {item['topic']} (anniversary)")
     CALENDAR.write_text("\n".join(lines) + "\n", encoding="utf-8")
+    return added
+
+
+def insert_backlog(lines: list[str], series: str, topic: str) -> bool:
+    """Add a topic line at the end of its series' backlog section; False when the calendar has no such section."""
+    heading = f"### {series}"
+    if heading not in lines:
+        return False
+    start = lines.index(heading)
+    end = next((i for i in range(start + 1, len(lines)) if lines[i].startswith("#")), len(lines))
+    while end > start + 1 and not lines[end - 1].strip():
+        end -= 1
+    lines.insert(end, f"- {topic}")
+    return True
+
+
+def add_stories(run: Run, today: date | None = None) -> list[str]:
+    """The strongest stories in the pool of real tragedies (stories.py): the pool is harvested again every
+    stories.FRESH_DAYS, and each day the most-read unscored candidates are scored and the best added."""
+    from . import stories
+
+    today = today or _now().date()
+    data = stories._load()
+    harvested = data.get("harvested", "1970-01-01")
+    if (today - date.fromisoformat(harvested)).days >= stories.FRESH_DAYS:
+        stories.harvest(data, today)
+        data["harvested"] = today.isoformat()
+        stories._save(data)
+    topics = calendar_topics(today)
+    known = [t["topic"] for t in topics] + [e["title"] or "" for e in episodes()]
+    kept = []
+    for _ in range(stories.DAILY_BATCHES):
+        batch = stories.score(data, SERIES, known + [s["topic"] for s in kept])
+        if not batch and not any("score" not in c and c.get("readers") for c in data.get("candidates", {}).values()):
+            break
+        kept += batch
+    known_words = [_key_words(k) for k in known]
+    lines = CALENDAR.read_text(encoding="utf-8").splitlines()
+    added = []
+    for story in sorted(kept, key=lambda s: -s["score"]):
+        if _repeats(story["topic"], known_words) or not insert_backlog(lines, story["series"], story["topic"]):
+            continue
+        known_words.append(_key_words(story["topic"]))
+        data.setdefault("topics", {})[story["topic"]] = {
+            "score": story["score"], "readers": story["readers"], "wikipedia": story["wikipedia"], "why": story["why"]}
+        added.append(f"{story['topic']} ({story['series']}, story {story['score']}/10, "
+                     f"{story['readers']:,} readers a year)")
+    CALENDAR.write_text("\n".join(lines) + "\n", encoding="utf-8")
+    stories._save(data)
     return added
 
 
@@ -1531,6 +1576,10 @@ def daily(run: Run, state: dict | None = None) -> None:
         timely = add_timely(run)
         added += timely
         entry["detail"] = f"{len(timely)} added"
+    with run.stage("strongest stories") as entry:
+        strongest = add_stories(run)
+        added += strongest
+        entry["detail"] = f"{len(strongest)} added"
     with run.stage("new topics") as entry:
         backlog = add_topics(run)
         added += backlog
