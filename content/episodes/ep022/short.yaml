@@ -1,8 +1,7 @@
 id: ep022
-title: Why an Octopus Has Three Hearts and Blue Blood
+title: The Animal with Three Hearts and Blue Blood
 series: Built Different
-description: Discover how the octopus runs three hearts, blue copper-based blood, and five hundred million neurons distributed
-  through its arms.
+description: The octopus is a biological marvel with three hearts, blue blood, and a mind distributed throughout its arms.
 sources:
 - https://en.wikipedia.org/wiki/Octopus
 - http://www.livescience.com/55478-octopus-facts.html
@@ -18,7 +17,7 @@ tags:
 - octopus
 - cephalopod
 - marine biology
-- animals
+- nature
 - ocean
 voice:
   voice: af_heart
@@ -28,119 +27,115 @@ beats:
   emphasis:
   - three beating hearts
   - blue copper-based blood
+  visual:
+    source: url
+    url: https://thumb.wikimedia.org/wikipedia/commons/thumb/3/32/Octopus_vulgaris_Merculiano.jpg/1280px-Octopus_vulgaris_Merculiano.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
+    credit:
+      source: Wikimedia Commons
+      title: Octopus vulgaris Merculiano.jpg
+      credit: Comingio Merculiano (1845-1915) in Jatta Giuseppe (1860-1903)
+      license: Public domain
+      url: https://commons.wikimedia.org/wiki/File:Octopus_vulgaris_Merculiano.jpg
+    fallbacks:
+    - color
+    motion: zoom_out
+    focus_x: 0.5
+    focus_y: 0.5
+- text: Stepping up from a single heart, this creature lacks bones entirely and can squeeze through gaps the size of a coin.
+  emphasis:
+  - lacks bones
+  - size of a coin
   sfx: whoosh
   visual:
     source: url
-    url: https://inaturalist-open-data.s3.amazonaws.com/photos/540103051/original.jpg
-    credit:
-      source: iNaturalist
-      title: Common Octopus (Octopus vulgaris)
-      credit: (c) Golfopolikayak, some rights reserved (CC BY)
-      license: CC BY 4.0
-      url: https://www.inaturalist.org/observations/299781028
-    fallbacks:
-    - color
-    motion: pan_right
-    focus_x: 0.5
-    focus_y: 0.5
-- text: Stepping up in scale from single-heart creatures, this soft-bodied marine genius lacks bones entirely to squeeze through
-    tiny gaps.
-  emphasis:
-  - stepping up
-  - lacks bones entirely
-  visual:
-    source: url
-    url: https://thumb.wikimedia.org/wikipedia/commons/thumb/4/44/Enteroctopus_dofleini_in_aquarium_crop.jpg/960px-Enteroctopus_dofleini_in_aquarium_crop.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
+    url: https://thumb.wikimedia.org/wikipedia/commons/thumb/5/52/Enteroctopus_dofleini_in_aquarium_rotated.jpg/1920px-Enteroctopus_dofleini_in_aquarium_rotated.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
     credit:
       source: Wikimedia Commons
-      title: Enteroctopus dofleini in aquarium crop.jpg
-      credit: 'Enteroctopus_dofleini_in_aquarium.jpg: Bachrach44
-
-        derivative work: The High Fin Sperm Whale'
-      license: Public domain
-      url: https://commons.wikimedia.org/wiki/File:Enteroctopus_dofleini_in_aquarium_crop.jpg
+      title: Enteroctopus dofleini in aquarium rotated.jpg
+      credit: User:Bachrach44
+      license: CC0
+      url: https://commons.wikimedia.org/wiki/File:Enteroctopus_dofleini_in_aquarium_rotated.jpg
+    fallbacks:
+    - color
+    motion: pan_left
+    focus_x: 0.5
+    focus_y: 0.5
+- text: Moving up the ladder of complexity, the entire animal possesses around five hundred million total neurons.
+  emphasis:
+  - ladder of complexity
+  - five hundred million
+  visual:
+    source: url
+    url: https://upload.wikimedia.org/wikipedia/commons/d/dc/PLoSBiol4.e126.Fig6fNeuron.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    credit:
+      source: Wikimedia Commons
+      title: PLoSBiol4.e126.Fig6fNeuron.jpg
+      credit: Wei-Chung Allen Lee, Hayden Huang, Guoping Feng, Joshua R. Sanes, Emery N. Brown, Peter T. So, Elly Nedivi
+      license: CC BY 2.5
+      url: https://commons.wikimedia.org/wiki/File:PLoSBiol4.e126.Fig6fNeuron.jpg
+    fallbacks:
+    - card
+    - color
+    motion: zoom_out
+    focus_x: 0.5
+    focus_y: 0.5
+    card:
+      kind: fact
+      big: 500 MILLION
+      small: Total neurons
+- text: Climbing to the peak of biological weirdness, two-thirds of those cells live directly inside its eight arms.
+  emphasis:
+  - peak
+  - inside its eight arms
+  sfx: riser
+  visual:
+    source: url
+    url: https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c3/Img_octopus_arm_and_suckers_057513.jpg/1920px-Img_octopus_arm_and_suckers_057513.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
+    credit:
+      source: Wikimedia Commons
+      title: Img octopus arm and suckers 057513.jpg
+      credit: Henryhartley
+      license: CC BY 3.0
+      url: https://commons.wikimedia.org/wiki/File:Img_octopus_arm_and_suckers_057513.jpg
     fallbacks:
     - color
     motion: pan_up
     focus_x: 0.5
     focus_y: 0.5
-- text: Climbing higher along the biological scale, the entire animal possesses around five hundred million total neural connections.
+- text: Because each arm contains more neurons than many small mammals, it can taste, touch, and move without the central
+    brain.
   emphasis:
-  - climbing higher
-  - five hundred million
+  - taste, touch, and move
+  - without the central brain
   visual:
     source: url
-    url: https://thumb.wikimedia.org/wikipedia/commons/thumb/b/be/The_Cephalopoda_%28Plate_LXXVI%29_%286140286962%29.jpg/1280px-The_Cephalopoda_%28Plate_LXXVI%29_%286140286962%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
+    url: https://cdn.pixabay.com/video/2023/02/27/152482-802877601_large.mp4
     credit:
-      source: Wikimedia Commons
-      title: The Cephalopoda (Plate LXXVI) (6140286962).jpg
-      credit: Chun, Carl
-      license: CC BY 2.0
-      url: https://commons.wikimedia.org/wiki/File:The_Cephalopoda_(Plate_LXXVI)_(6140286962).jpg
+      source: Pixabay
+      title: Octopus, underwater, sea, coconut octopus, ocean, nature, animal
+      credit: mr-sragenesia
+      license: Pixabay Content License
+      url: https://pixabay.com/videos/id-152482/
     fallbacks:
     - color
-    motion: pan_down
+    motion: none
     focus_x: 0.5
     focus_y: 0.5
-- text: Reaching the absolute peak of the scale, two-thirds of those massive neurological counts live directly inside its
-    eight arms.
+- text: This decentralized mind lets veined octopuses walk their arms to collect discarded coconut shells for portable shelter.
   emphasis:
-  - absolute peak
-  - two-thirds
-  sfx: riser
-  visual:
-    source: url
-    url: https://thumb.wikimedia.org/wikipedia/commons/thumb/9/98/%D0%A0%D1%83%D0%BA%D0%B0_%D0%BC%D0%BE%D1%80%D1%81%D0%BA%D0%BE%D0%B3%D0%BE_%D0%BF%D1%80%D0%B8%D0%BC%D0%B0%D1%82%D0%B0.jpg/3840px-%D0%A0%D1%83%D0%BA%D0%B0_%D0%BC%D0%BE%D1%80%D1%81%D0%BA%D0%BE%D0%B3%D0%BE_%D0%BF%D1%80%D0%B8%D0%BC%D0%B0%D1%82%D0%B0.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
-    credit:
-      source: Wikimedia Commons
-      title: Рука морского примата.jpg
-      credit: Андрей Биксалеев
-      license: CC BY 4.0
-      url: https://commons.wikimedia.org/wiki/File:%D0%A0%D1%83%D0%BA%D0%B0_%D0%BC%D0%BE%D1%80%D1%81%D0%BA%D0%BE%D0%B3%D0%BE_%D0%BF%D1%80%D0%B8%D0%BC%D0%B0%D1%82%D0%B0.jpg
-    fallbacks:
-    - card
-    - color
-    motion: pan_left
-    focus_x: 0.5
-    focus_y: 0.5
-    card:
-      kind: fact
-      big: Two-Thirds
-      small: Neurons in arms
-- text: Each arm operates with semi-independence, tasting and touching without waiting for commands from the central brain.
-  emphasis:
-  - semi-independence
-  - tasting and touching
+  - decentralized mind
+  - coconut shells
   sfx: pop
-  visual:
-    source: url
-    url: https://thumb.wikimedia.org/wikipedia/commons/thumb/6/62/Coconut_octopus_%28Amphioctopus_marginatus%29_%2842825525034%29.jpg/1920px-Coconut_octopus_%28Amphioctopus_marginatus%29_%2842825525034%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
-    credit:
-      source: Wikimedia Commons
-      title: Coconut octopus (Amphioctopus marginatus) (42825525034).jpg
-      credit: Rickard Zerpe
-      license: CC BY 2.0
-      url: https://commons.wikimedia.org/wiki/File:Coconut_octopus_(Amphioctopus_marginatus)_(42825525034).jpg
-    fallbacks:
-    - color
-    motion: pan_right
-    focus_x: 0.5
-    focus_y: 0.5
-- text: Some clever individuals even collect discarded coconut shells for portable shelter across the ocean floor.
-  emphasis:
-  - clever individuals
-  - discarded coconut shells
-  sfx: whoosh
   pause_after: 0.4
   visual:
     source: url
-    url: https://upload.wikimedia.org/wikipedia/commons/a/ac/Octopus_marginatus.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    url: https://inaturalist-open-data.s3.amazonaws.com/photos/732942715/original.jpg
     credit:
-      source: Wikimedia Commons
-      title: Octopus marginatus.JPG
-      credit: Jens Petersen
-      license: CC BY 2.5
-      url: https://commons.wikimedia.org/wiki/File:Octopus_marginatus.JPG
+      source: iNaturalist
+      title: Coconut Octopus (Amphioctopus marginatus)
+      credit: (c) Ben Costamagna, some rights reserved (CC BY)
+      license: CC BY 4.0
+      url: https://www.inaturalist.org/observations/399485295
     fallbacks:
     - color
     motion: pan_left
@@ -150,9 +145,10 @@ beats:
   emphasis:
   - three beating hearts
   - blue copper-based blood
+  sfx: whoosh
   visual:
     reuse: 1
-    motion: zoom_out
+    motion: zoom_in
     focus_x: 0.5
     focus_y: 0.5
 depth_motion: true

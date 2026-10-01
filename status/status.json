@@ -1,143 +1,106 @@
 {
-  "updated_at": "2026-10-01T05:05:45+05:30",
+  "updated_at": "2026-10-01T09:09:05+05:30",
   "day": 0,
-  "result": "degraded",
+  "result": "ok",
   "run": {
     "host": "modal",
-    "id": "ta-01M3TAQWXXNYD6J8RZSVQEKXZR",
+    "id": "ta-01M3TRNNVRJ7HTF4YPKG2Q678R",
     "number": null,
-    "trigger": "schedule",
-    "started_at": "2026-10-01T05:05:10+05:30",
-    "started_at_utc": "2026-09-30T23:35:10+00:00",
-    "seconds": 36
+    "trigger": "manual",
+    "started_at": "2026-10-01T09:08:41+05:30",
+    "started_at_utc": "2026-10-01T03:38:41+00:00",
+    "seconds": 24
   },
   "stages": [
     {
       "name": "deploy",
       "ok": true,
       "detail": "",
-      "seconds": 1.8
+      "seconds": 2.8
     },
     {
       "name": "sync",
       "ok": true,
-      "detail": "4 posts",
-      "seconds": 0.4
+      "detail": "7 posts",
+      "seconds": 1.0
     },
     {
       "name": "playlists",
-      "ok": false,
-      "detail": "",
-      "error": "HttpError: <HttpError 409 when requesting https://youtube.googleapis.com/youtube/v3/playlistItems?part=snippet&alt=json returned \"The operation was aborted.\". Details: \"[{'domain': 'youtube.CoreErrorDomain', 'reason': 'SERVICE_UNAVAILABLE'}]\">",
-      "seconds": 1.5
+      "ok": true,
+      "detail": "added ep009 to 'Built Different'; created playlist \"Nature's Record Breakers\"; added ep013 to \"Nature's Record Breakers\"",
+      "seconds": 2.7
+    },
+    {
+      "name": "languages",
+      "ok": true,
+      "detail": "every live Short is in English",
+      "seconds": 0.1
     },
     {
       "name": "on youtube",
       "ok": true,
       "detail": "every Short sent is public",
-      "seconds": 0.0
+      "seconds": 0.1
+    },
+    {
+      "name": "short reviews",
+      "ok": true,
+      "detail": "no checkpoint due",
+      "seconds": 0.2
     },
     {
       "name": "collect",
       "ok": true,
-      "detail": "ep006 rejected (low scores: clarity, payoff); ep012 ready; ep013 ready; ep017 ready; ep020 unfinished (OutOfQuota: no model in ('gemini-3.8-flash', 'gemini-3.7-flash', 'gemini-3.6-flash', 'gemini-3.5-flash', 'gemini-3-flash-preview', 'gemini-flash-latest', 'ovh:Qwen3.5-397B-A17B') has free quota left today); ep021 rejected (research: fewer than two readable sources); ep022 unfinished (Overloaded: every model in ('gemini-3.8-flash', 'gemini-3.7-flash', 'gemini-3.6-flash', 'gemini-3.5-flash', 'gemini-3-flash-preview', 'gemini-flash-latest', 'ovh:Qwen3.5-397B-A17B') with quota left stayed overloa",
-      "seconds": 18.0
+      "detail": "ep020 unfinished (Overloaded: every model in ('gemini-3.8-flash', 'gemini-3.7-flash', 'gemini-3.6-flash', 'gemini-3.5-flash', 'gemini-3-flash-preview', 'gemini-flash-latest', 'ovh:Qwen3.5-397B-A17B') with quota left stayed overloaded for 25 minutes); ep022 unfinished (Overloaded: every model in ('gemini-3.8-flash', 'gemini-3.7-flash', 'gemini-3.6-flash', 'gemini-3.5-flash', 'gemini-3-flash-preview', 'gemini-flash-latest', 'ovh:Qwen3.5-397B-A17B') with quota left stayed overloaded for 25 minutes); ep023 unfinished (Overloaded: every model in ('gemini-3.8-flash', 'gemini-3.7-flash', 'gemini-3.6-",
+      "seconds": 12.1
     },
     {
       "name": "buffer channel",
       "ok": true,
       "detail": "connected",
-      "seconds": 0.2
+      "seconds": 0.4
+    },
+    {
+      "name": "preflight ep012",
+      "ok": true,
+      "detail": "video downloads whole (14 MB in 1 s)",
+      "seconds": 1.4
     },
     {
       "name": "preflight ep018",
       "ok": true,
-      "detail": "video downloads whole (16 MB in 0 s)",
-      "seconds": 0.4
-    },
-    {
-      "name": "publish",
-      "ok": true,
-      "detail": "",
-      "seconds": 2.5
-    },
-    {
-      "name": "schedule ep013",
-      "ok": true,
-      "detail": "2026-09-30T21:30:00-04:00",
-      "seconds": 0.7
-    },
-    {
-      "name": "schedule ep012",
-      "ok": true,
-      "detail": "2026-10-01T21:30:00-04:00",
-      "seconds": 0.7
-    },
-    {
-      "name": "schedule ep017",
-      "ok": true,
-      "detail": "2026-10-02T21:30:00-04:00",
+      "detail": "video still hosted",
       "seconds": 0.8
     },
     {
-      "name": "start ep020",
-      "ok": true,
-      "detail": "Winnipeg (bear) (1914): the real bear behind Winnie-the-Pooh was a black bear cub bought for $20 at an Ontario train stop, who sailed for England with Canadian troops on October 3",
-      "seconds": 0.4
-    },
-    {
-      "name": "start ep022",
-      "ok": true,
-      "detail": "Octopus: three hearts, blue copper-based blood, and two-thirds of its 500 million neurons in its arms",
-      "seconds": 0.3
-    },
-    {
-      "name": "start ep023",
-      "ok": true,
-      "detail": "Anglerfish: the tiny male latches onto a far larger female and can fuse into her body",
-      "seconds": 0.3
-    },
-    {
-      "name": "start ep024",
-      "ok": true,
-      "detail": "Narwhal: the \"horn\" is a spiral left canine tooth up to 3 meters long, packed with millions of nerve endings",
-      "seconds": 0.3
-    },
-    {
       "name": "publish",
       "ok": true,
       "detail": "",
-      "seconds": 0.1
+      "seconds": 0.2
     }
   ],
-  "errors": [
-    "playlists: HttpError: <HttpError 409 when requesting https://youtube.googleapis.com/youtube/v3/playlistItems?part=snippet&alt=json returned \"The operation was aborted.\". Details: \"[{'domain': 'youtube.CoreErrorDomain', 'reason': 'SERVICE_UNAVAILABLE'}]\">"
-  ],
+  "errors": [],
   "owner_action": [],
   "notes": [
-    "ep020 stopped on Gemini's free quota; it resumes in a later run",
+    "ep020 stopped on Gemini's free tier being overloaded; it resumes in a later run",
     "ep022 stopped on Gemini's free tier being overloaded; it resumes in a later run",
-    "ep023 stopped on Gemini's free tier being overloaded; it resumes in a later run"
+    "ep023 stopped on Gemini's free tier being overloaded; it resumes in a later run",
+    "ep024 stopped on Gemini's free tier being overloaded; it resumes in a later run"
   ],
   "inventory": {
-    "total": 6,
-    "in_buffer": 6,
+    "total": 5,
+    "in_buffer": 5,
     "waiting": 0,
     "target": 42,
-    "making": [],
-    "remote": [
+    "making": [
       "ep020",
       "ep022",
       "ep023",
       "ep024"
-    ]
+    ],
+    "remote": []
   },
   "queue": [
-    {
-      "id": "ep013",
-      "title": "Scientists killed the oldest clam by accident",
-      "due_at": "2026-09-30T21:30:00-04:00"
-    },
     {
       "id": "ep018",
       "title": "The Truth Behind the 2025 Dire Wolf Pups",
@@ -167,66 +130,12 @@
   "waiting": [],
   "made": [
     {
-      "id": "ep006",
-      "outcome": "rejected",
-      "topic": "Sperm whale: the loudest animal on Earth, at 236 decibels, with the largest brain of any animal",
-      "reason": "low scores: clarity, payoff"
-    },
-    {
-      "id": "ep012",
-      "outcome": "ready",
-      "topic": "Colossal squid (2025): it has the largest eyes of any animal known to have existed, and was first filmed alive in its habitat on March 9, 2025",
-      "title": "First live footage of the colossal squid",
-      "scores": {
-        "hook": 4,
-        "clarity": 5,
-        "payoff": 4,
-        "visuals": 4,
-        "loop": 5
-      },
-      "media_url": "https://res.cloudinary.com/uj4a07e7/video/upload/v1790795823/creaturereceipts/ep012-42ca39b9.mp4"
-    },
-    {
-      "id": "ep013",
-      "outcome": "ready",
-      "topic": "Ming (clam) (2006): a clam dredged off Iceland turned out to be 507 years old",
-      "title": "Scientists killed the oldest clam by accident",
-      "scores": {
-        "hook": 5,
-        "clarity": 5,
-        "payoff": 4,
-        "visuals": 4,
-        "loop": 5
-      },
-      "media_url": "https://res.cloudinary.com/uj4a07e7/video/upload/v1790792006/creaturereceipts/ep013-426c45f4.mp4"
-    },
-    {
-      "id": "ep017",
-      "outcome": "ready",
-      "topic": "Great white shark: the \"Jaws\" man-eater normally doesn't hunt people, and most bites come from curiosity or mistaken identity",
-      "title": "Why Great White Sharks Rarely Eat Humans",
-      "scores": {
-        "hook": 4,
-        "clarity": 5,
-        "payoff": 4,
-        "visuals": 4,
-        "loop": 5
-      },
-      "media_url": "https://res.cloudinary.com/uj4a07e7/video/upload/v1790793195/creaturereceipts/ep017-5883b505.mp4"
-    },
-    {
       "id": "ep020",
       "outcome": "unfinished",
       "topic": "Winnipeg (bear) (1914): the real bear behind Winnie-the-Pooh was a black bear cub bought for $20 at an Ontario train stop, who sailed for England with Canadian troops on October 3",
-      "reason": "OutOfQuota: no model in ('gemini-3.8-flash', 'gemini-3.7-flash', 'gemini-3.6-flash', 'gemini-3.5-flash', 'gemini-3-flash-preview', 'gemini-flash-latest', 'ovh:Qwen3.5-397B-A17B') has free quota left today",
-      "quota": true,
-      "overloaded": false
-    },
-    {
-      "id": "ep021",
-      "outcome": "rejected",
-      "topic": "Narwhal: the \"horn\" is a spiral left canine tooth up to 3 meters long, packed with millions of nerve endings- Kiwi (bird): its egg can weigh 20% of the mother, and its closest relative is the extinct elephant bird of Madagascar, not the moa",
-      "reason": "research: fewer than two readable sources"
+      "reason": "Overloaded: every model in ('gemini-3.8-flash', 'gemini-3.7-flash', 'gemini-3.6-flash', 'gemini-3.5-flash', 'gemini-3-flash-preview', 'gemini-flash-latest', 'ovh:Qwen3.5-397B-A17B') with quota left stayed overloaded for 25 minutes",
+      "quota": false,
+      "overloaded": true
     },
     {
       "id": "ep022",
@@ -243,99 +152,47 @@
       "reason": "Overloaded: every model in ('gemini-3.8-flash', 'gemini-3.7-flash', 'gemini-3.6-flash', 'gemini-3.5-flash', 'gemini-3-flash-preview', 'gemini-flash-latest', 'ovh:Qwen3.5-397B-A17B') with quota left stayed overloaded for 25 minutes",
       "quota": false,
       "overloaded": true
-    }
-  ],
-  "spawned": [
-    {
-      "id": "ep020",
-      "topic": "Winnipeg (bear) (1914): the real bear behind Winnie-the-Pooh was a black bear cub bought for $20 at an Ontario train stop, who sailed for England with Canadian troops on October 3",
-      "call_id": "fc-01M3TAS3HKH8GDPP3T9MW9TMEC"
-    },
-    {
-      "id": "ep022",
-      "topic": "Octopus: three hearts, blue copper-based blood, and two-thirds of its 500 million neurons in its arms",
-      "call_id": "fc-01M3TAS3V2JF8Q68S10F1RGKM4"
-    },
-    {
-      "id": "ep023",
-      "topic": "Anglerfish: the tiny male latches onto a far larger female and can fuse into her body",
-      "call_id": "fc-01M3TAS441MV0SADPEVTJGN1W3"
     },
     {
       "id": "ep024",
+      "outcome": "unfinished",
       "topic": "Narwhal: the \"horn\" is a spiral left canine tooth up to 3 meters long, packed with millions of nerve endings",
-      "call_id": "fc-01M3TAS4CGTR2A2TT52R9WM51H"
+      "reason": "Overloaded: every model in ('gemini-3.8-flash', 'gemini-3.7-flash', 'gemini-3.6-flash', 'gemini-3.5-flash', 'gemini-3-flash-preview', 'gemini-flash-latest', 'ovh:Qwen3.5-397B-A17B') with quota left stayed overloaded for 25 minutes",
+      "quota": false,
+      "overloaded": true
     }
   ],
-  "in_cloud": [
-    {
-      "id": "ep020",
-      "topic": "Winnipeg (bear) (1914): the real bear behind Winnie-the-Pooh was a black bear cub bought for $20 at an Ontario train stop, who sailed for England with Canadian troops on October 3",
-      "spawned_at": "2026-10-01T05:05:44+05:30"
-    },
-    {
-      "id": "ep022",
-      "topic": "Octopus: three hearts, blue copper-based blood, and two-thirds of its 500 million neurons in its arms",
-      "spawned_at": "2026-10-01T05:05:44+05:30"
-    },
-    {
-      "id": "ep023",
-      "topic": "Anglerfish: the tiny male latches onto a far larger female and can fuse into her body",
-      "spawned_at": "2026-10-01T05:05:45+05:30"
-    },
-    {
-      "id": "ep024",
-      "topic": "Narwhal: the \"horn\" is a spiral left canine tooth up to 3 meters long, packed with millions of nerve endings",
-      "spawned_at": "2026-10-01T05:05:45+05:30"
-    }
-  ],
-  "published": [
-    {
-      "id": "ep013",
-      "title": "Scientists killed the oldest clam by accident",
-      "due_at": "2026-09-30T21:30:00-04:00"
-    },
-    {
-      "id": "ep012",
-      "title": "First live footage of the colossal squid",
-      "due_at": "2026-10-01T21:30:00-04:00"
-    },
-    {
-      "id": "ep017",
-      "title": "Why Great White Sharks Rarely Eat Humans",
-      "due_at": "2026-10-02T21:30:00-04:00"
-    }
-  ],
-  "live": 1,
+  "spawned": [],
+  "in_cloud": [],
+  "published": [],
+  "live": 2,
   "failed_posts": [],
   "not_live": [],
   "llm": {
-    "calls": 56,
+    "calls": 14,
     "by_model": {
-      "gemini-3.5-flash-lite": 45,
-      "gemma-4-31b-it": 10,
-      "gemini-3-flash-preview": 1
+      "gemini-3.6-flash": 1,
+      "gemini-3-flash-preview": 2,
+      "gemini-3.5-flash-lite": 8,
+      "gemini-3.8-flash": 1,
+      "gemini-3.5-flash": 1,
+      "gemini-3.7-flash": 1
     },
     "out_of_quota": []
   },
   "renders": {
-    "modal": 13,
+    "modal": 6,
     "runner": 0
   },
   "daily_done": "2026-09-30",
-  "minutes_this_month": 12.0,
+  "minutes_this_month": 0.0,
   "minutes_budget": 2000,
   "modal_cost": {
-    "metered": 3.44,
+    "metered": 0.08,
     "billed": 0.0
   },
   "modal_credit": 30.0,
-  "capacity": {
-    "cloud": 204,
-    "runner": 0,
-    "runner_minutes": 0,
-    "modal_credit_left": 24.56
-  },
+  "capacity": null,
   "made_here": 0,
   "open_topics": 98,
   "parked_topics": 3

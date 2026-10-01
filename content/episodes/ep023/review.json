@@ -1,0 +1,64 @@
+{
+  "rounds": [
+    {
+      "at": "2026-10-01T05:07:57+05:30",
+      "check": {
+        "duration": 45.9,
+        "words": 120,
+        "integrated_lufs": -14.1,
+        "true_peak_dbfs": -1.9,
+        "warnings": [],
+        "speech_differences": [],
+        "speech_error": null,
+        "sources": [
+          "Wikimedia Commons",
+          "designed card",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons"
+        ]
+      },
+      "scores": {
+        "hook": 4,
+        "clarity": 3,
+        "payoff": 3,
+        "visuals": 2,
+        "loop": 2
+      },
+      "notes": {
+        "hook": "Strong biological premise that catches attention quickly.",
+        "clarity": "Template phrases like 'moving up the ladder' muddle the narrative focus.",
+        "payoff": "Ends abruptly on blood vessels without explaining why organ loss is necessary.",
+        "visuals": "Multiple consecutive static sketches fail to show male attachment or fusion.",
+        "loop": "Repeating beat 1 verbatim in beat 8 breaks the natural loop flow."
+      },
+      "frames": [
+        {
+          "beat": 3,
+          "problem": "blurry split composition with awkward white borders"
+        },
+        {
+          "beat": 6,
+          "problem": "subject cropped out or missing, shows solitary female instead of male latching"
+        },
+        {
+          "beat": 7,
+          "problem": "shows solitary female instead of male-female fusion"
+        }
+      ],
+      "speech": [],
+      "rewrite": [
+        "Beat 2: In the pitch-black deep sea, finding a mate is nearly impossible.",
+        "Beat 7: His eyes and internal organs slowly wither away until only his reproductive organs remain.",
+        "Beat 8: Leaving him entirely dependent on her blood supply, which is why..."
+      ],
+      "better_than_last": "",
+      "judge": "gemini-3.8-flash",
+      "passed": false
+    }
+  ],
+  "best_round": 1
+}

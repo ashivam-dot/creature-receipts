@@ -1,0 +1,53 @@
+{
+  "rounds": [
+    {
+      "at": "2026-10-01T05:10:33+05:30",
+      "check": {
+        "duration": 48.29,
+        "words": 108,
+        "integrated_lufs": -14.1,
+        "true_peak_dbfs": -1.8,
+        "warnings": [],
+        "speech_differences": [],
+        "speech_error": null,
+        "sources": [
+          "iNaturalist",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "iNaturalist"
+        ]
+      },
+      "scores": {
+        "hook": 3,
+        "clarity": 4,
+        "payoff": 3,
+        "visuals": 3,
+        "loop": 4
+      },
+      "notes": {
+        "hook": "Opening fact about three hearts and blue blood grabs attention quickly.",
+        "clarity": "Explains nervous system distribution clearly in logical steps.",
+        "payoff": "Coconut shell tool use offers a light surprise ending.",
+        "visuals": "Images are mostly clear, though beat 3 uses an old illustration.",
+        "loop": "Final sentence flows directly back into the opening statement."
+      },
+      "frames": [
+        {
+          "beat": 3,
+          "problem": "Uses an anatomical illustration rather than live footage or photography"
+        }
+      ],
+      "speech": [],
+      "rewrite": [
+        "Beat 6: Connect coconut shell usage directly back to arm intelligence for a stronger payoff."
+      ],
+      "better_than_last": "Maintains a tighter single-subject narrative focus than recent comparison shorts.",
+      "judge": "gemini-3.6-flash",
+      "passed": false
+    }
+  ],
+  "best_round": 1
+}
