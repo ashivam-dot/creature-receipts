@@ -29,8 +29,10 @@ Every Short is researched from museums, archives, historians, and official inqui
 
 Subscribe for a new story from history every day. For space, visit our sister channel, Universe Receipts.
 
-Channel art: The Last Day of Pompeii by Karl Bryullov, Der Untergang der Titanic by Willy Stöwer, and a U.S. Navy photo of the Hindenburg (all public domain).
+Banner: paintings by Karl Bryullov and Willy Stöwer, U.S. Navy photo (public domain).
 ```
+
+The description must stay under YouTube's 1,000-character limit.
 
 ## Channel keywords (Settings, Channel, Basic info)
 
