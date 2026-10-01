@@ -465,7 +465,7 @@ def _description(spec: ShortSpec, manifest: dict, links: bool) -> str:
         blocks.append("Sources:\n" + "\n".join(f"- {s}" for s in sources))
     if credits := _image_credits(manifest, links):
         blocks.append("Images:\n" + "\n".join(credits))
-    blocks.append("Researched and written by Creature Receipts. Narrated with a synthetic voice.")
+    blocks.append("Researched and written by History's Last Hours. Narrated with a synthetic voice.")
     blocks.append(" ".join(spec.hashtags[:3]))
     return _youtube_text("\n\n".join(b for b in blocks if b))
 
@@ -576,7 +576,7 @@ def caption(spec: ShortSpec) -> str:
     blocks = [spec.title.strip(), re.sub(r"https?://\S+", "", spec.description).strip()]
     if spec.sources:
         blocks.append("Sources: " + ", ".join(dict.fromkeys(_domain(s) for s in spec.sources)))
-    blocks.append("Researched and written by Creature Receipts. Narrated with a synthetic voice.")
+    blocks.append("Researched and written by History's Last Hours. Narrated with a synthetic voice.")
     tail = " ".join(tags)
     text = "\n\n".join(b for b in blocks if b)
     return text[: CAPTION_CHARS - len(tail) - 2].rstrip() + ("\n\n" + tail if tail else "")

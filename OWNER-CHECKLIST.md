@@ -16,10 +16,10 @@ Two optional steps help, in order of value:
 
 ## Done by the agent (2026-09-30)
 
-- **Channel:** Creature Receipts (@CreatureReceipts), the YouTube channel of aksha.shivam18@gmail.com, with
+- **Channel:** History's Last Hours (@HistorysLastHours), the YouTube channel of aksha.shivam18@gmail.com, with
   picture, banner, watermark, description, keywords, country India, and "not made for kids". Your work
   account was never used.
-- **Google Cloud:** project `shorts-studio-two`, YouTube Data and Analytics APIs, OAuth app "Creature Receipts
+- **Google Cloud:** project `shorts-studio-two`, YouTube Data and Analytics APIs, OAuth app "History's Last Hours
   tools" in production (home page and privacy policy on GitHub Pages), signed in as the channel for stats and
   playlists.
 - **Gemini:** a free key from the AI Studio project `creature-receipts` on akshshivam5@gmail.com, because

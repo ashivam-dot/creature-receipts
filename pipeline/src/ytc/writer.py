@@ -15,12 +15,12 @@ log = logging.getLogger(__name__)
 
 ROOT = Path(__file__).resolve().parents[3]
 SERIES = (
-    "Built Different",
-    "Deep Sea Files",
-    "Back From Extinction",
-    "Evolution Got Weird",
-    "Nature's Record Breakers",
-    "Animal Myths, Busted",
+    "The Last Hours",
+    "Lost Cities",
+    "Doomed Expeditions",
+    "Fallen Empires",
+    "Warnings Ignored",
+    "Sole Survivors",
 )
 HOOK_STYLES = ["statement", "question", "number", "contradiction"]
 # Shapes an episode can take. The writer is given the one the recent episodes used least, so the channel never
@@ -28,11 +28,16 @@ HOOK_STYLES = ["statement", "question", "number", "contradiction"]
 STRUCTURES = {
     "story": "hook, context, 2 or 3 escalating beats, then a twist or payoff near the end",
     "myth_vs_fact": "open on what most people believe, then the evidence that overturns it beat by beat, ending on the true fact",
-    "scale_ladder": "start from something familiar, then 3 to 5 steps of comparison up (or down) to the astonishing true "
-                    "size, speed, age, or number",
+    "countdown": "open on the last ordinary moment before it happened, then step forward through the signs and hours "
+                 "in time order, each closer, until the moment it struck and what was left",
     "mystery": "open on something that made no sense, give the clues in the order they were found, then the answer",
-    "record": "open on the record itself, then what it beat, the trick or cost behind it, and the surprise nobody expected",
+    "warning": "open on the disaster, then the warning someone gave, who heard it and why it was ignored, and end on "
+               "the price of ignoring it",
 }
+# The breakout history Shorts of 2026 run 17 to 27 seconds (research-competitors.json, 2026-10-01): short enough
+# to be watched to the end and replayed, which is what the Shorts feed rewards.
+BEATS = (5, 7)
+WORDS = (55, 75)
 # Two scripts sharing this share of their three-word phrases read as the same script with the nouns swapped.
 SAME_SCRIPT = 0.25
 # A hook whose first this-many words match a recent hook's opens on a template.
@@ -98,11 +103,12 @@ SCRIPT_SCHEMA = {
                  "better_than_last"],
 }
 
-PROMPT = """You write Shorts for Creature Receipts (@CreatureReceipts): true, surprising, sourced stories of strange
-animals, extreme biology, and deep-sea life, in American English for a US audience. Promise: one true,
-jaw-dropping animal story in under a minute, with receipts. Every Short tells a real story (a discovery, an
-experiment, a record, a scientist's surprise), never a list of animal facts. No gore, predation close-ups, dead
-animals, or animal cruelty, and never health advice.
+PROMPT = """You write Shorts for History's Last Hours (@HistorysLastHours): true, sourced stories of history's
+tragedies (lost cities, doomed voyages and expeditions, fallen empires, ignored warnings, and the few who
+survived), in American English for a US audience. Promise: the human story of one real disaster in under a
+minute, told with weight and sourced. Tell it through the people in it: what they saw, decided, and could not
+know. Grave and vivid, never gleeful: no gore, no lingering on bodies or suffering, no jokes about the dead, no
+"they deserved it", and no blame beyond what the sources state. Only events at least 75 years old.
 
 Episode {id}, series "{series}". Topic: {topic}
 Structure: {structure} ({structure_how}). Set structure to "{structure}".
@@ -133,34 +139,33 @@ Visual ideas:
 Write the episode:
 - hooks: three candidate first lines in different styles, each 12 words or fewer, opening inside the story
   on its most surprising true fact. Use the strongest as beat 1 and name its style in hook_style.
-- beats: 6 to 9 beats and 105 to 135 spoken words in total, one or two short sentences each. Follow the
+- beats: {beats_min} to {beats_max} beats and {words_min} to {words_max} spoken words in total, one short sentence each. Follow the
   structure above, and end with a last beat that loops back to beat 1. The twist is the claim a curious viewer is least likely to know already; for a famous subject, build
   the Short around its least-known true detail instead of retelling the familiar story in order.
 - The loop: the last beat is a complete, grammatical sentence on its own that echoes beat 1's image or question,
-  so replaying beat 1 feels like the natural next line (a last beat "Scientists had declared it extinct for 66
-  million years." before a first beat "In 1938, a fisherman hauled up a fish that was supposed to be a fossil.").
+  so replaying beat 1 feels like the natural next line (a last beat "Nobody in the city looked up at the mountain
+  that morning." before a first beat "At noon, the mountain above Pompeii split open.").
   Never end on a dangling
   word such as "because", "when", "until", or "that". Set loop to true when it loops.
 - Each beat: claims lists the numbers of the claims it states (the last beat may reuse the hook's);
   emphasis has 1 or 2 words or short phrases copied exactly from that beat's text; sfx is "whoosh" on up to 3
   scene changes, "pop" on up to 2 punchlines, "riser" once just before the twist, otherwise "none";
   pause_after is 0.12, or 0.4 after a punchline.
-- Each beat's picture: visual describes the ideal picture the way a field guide, NOAA, or iNaturalist would
-  caption the photo (species, behavior, place, year), in 15 words or fewer ("peacock mantis shrimp on a reef,
-  Philippines"; "coelacanth swimming off Sodwana Bay, South Africa, 2000"; "NOAA ROV image of a vampire squid,
-  Gulf of Mexico"; "Biodiversity Heritage Library plate of a giant squid, 1879"); subjects lists 0 to 3 exact
-  English Wikipedia article titles for the species, scientists, places, or events that picture shows, most
-  specific first ("Peacock mantis shrimp", "Mantis shrimp", "Coelacanth", "Marjorie Courtenay-Latimer"); year
-  is when the beat takes place (0 if it has no time); queries gives 2 or 3 Wikimedia Commons searches for it,
-  naming the exact species (common or scientific name).
+- Each beat's picture: visual describes the ideal picture the way a museum or archive would caption it (subject,
+  kind of picture, year), in 15 words or fewer ("painting of the eruption of Vesuvius, 1822"; "photograph of RMS
+  Titanic leaving Southampton, 1912"; "fresco from the Villa of the Mysteries, Pompeii"; "engraving of the 1755
+  Lisbon earthquake and tsunami"); subjects lists 0 to 3 exact English Wikipedia article titles for the people,
+  places, ships, buildings, objects, or events that picture shows, most specific first ("Sinking of the Titanic",
+  "Titanic", "Edward Smith (sea captain)"); year is when the beat takes place (0 if it has no time); queries
+  gives 2 or 3 Wikimedia Commons searches for it, naming the exact subject.
 - Each beat's card: a title card shown instead when no picture fits. kind "dateline" (big: the date, like
-  "December 1938"; small: the place or expedition), "fact" (big: a number or a fact of 1 to 3 words from the line,
-  like "50 mph punch"; small: a few words explaining it), or "quote" (big: words quoted in the claims, exactly; small:
+  "April 15, 1912"; small: the place or ship), "fact" (big: a number or a fact of 1 to 3 words from the line,
+  like "18 minutes"; small: a few words explaining it), or "quote" (big: words quoted in the claims, exactly; small:
   who said or wrote them). Use only that beat's text and claims. Use kind "none", with big and small empty, when
   the beat has no date, number, or quote worth a card.
 - hook_text: 2 to 6 words on screen over beat 1 that add to the spoken hook without repeating it or giving away
-  the payoff ("A FOSSIL THAT SWAM").
-- title, description, hashtags, tags: per the metadata rules. The first hashtag is #animals.
+  the payoff ("THE KEY NOBODY HAD").
+- title, description, hashtags, tags: per the metadata rules. The first hashtag is #history.
 - better_than_last: one sentence naming the learning or improvement this episode applies, and where.
 """
 
@@ -278,7 +283,7 @@ def normalize(script: dict, research: dict | None = None) -> dict:
     """Fix the mechanical slips (hashtag case, stray emphasis, too many sound effects or tags, a long
     description, missing picture searches, a card or on-screen hook that breaks the rules) without another call."""
     tags = [re.sub(r"[^a-z0-9]", "", t.lower()) for t in script.get("hashtags", [])]
-    tags = list(dict.fromkeys(["animals"] + [t for t in tags if t and t != "animals"]))
+    tags = list(dict.fromkeys(["history"] + [t for t in tags if t and t != "history"]))
     if len(tags) >= 3:
         script["hashtags"] = [f"#{t}" for t in tags[:3]]
     script["tags"] = list(dict.fromkeys(t.strip() for t in script.get("tags", []) if isinstance(t, str) and t.strip()))[:8]
@@ -327,19 +332,19 @@ def problems(script: dict, research: dict) -> list[str]:
     found = []
     beats = script.get("beats", [])
     total = sum(word_count(b["text"]) for b in beats)
-    if not 6 <= len(beats) <= 9:
-        found.append(f"Use 6 to 9 beats (you have {len(beats)}).")
-    if not 105 <= total <= 135:
+    if not BEATS[0] <= len(beats) <= BEATS[1]:
+        found.append(f"Use {BEATS[0]} to {BEATS[1]} beats (you have {len(beats)}).")
+    if not WORDS[0] <= total <= WORDS[1]:
         per_beat = ", ".join(f"beat {n}: {word_count(b['text'])}" for n, b in enumerate(beats, start=1))
-        change = f"add at least {105 - total}" if total < 105 else f"cut at least {total - 135}"
-        found.append(f"Use 105 to 135 spoken words in total (you have {total}): {change} words, aiming for about "
-                     f"120, by lengthening or trimming the middle beats rather than the hook. Words now: {per_beat}.")
+        change = f"add at least {WORDS[0] - total}" if total < WORDS[0] else f"cut at least {total - WORDS[1]}"
+        found.append(f"Use {WORDS[0]} to {WORDS[1]} spoken words in total (you have {total}): {change} words, aiming for "
+                     f"about {sum(WORDS) // 2}, by lengthening or trimming the middle beats rather than the hook. Words now: {per_beat}.")
     if beats:
         hook = spoken(beats[0]["text"])
         if word_count(hook) > 12:
             found.append(f"The hook (beat 1) must be 12 words or fewer (it has {word_count(hook)}: \"{hook}\"); "
                          f"cut at least {word_count(hook) - 12} words and keep its meaning.")
-        if re.match(r"\s*(did you know|hey|hi|welcome)", hook, re.I) or "creature receipts" in hook.lower():
+        if re.match(r"\s*(did you know|hey|hi|welcome)", hook, re.I) or "history's last hours" in hook.lower():
             found.append("The hook must open inside the story: no 'Did you know', greeting, or channel name.")
         if re.search(DANGLING_END, spoken(beats[-1]["text"]), re.I):
             found.append("The last beat must be a complete sentence that echoes beat 1, not end on a dangling word "
@@ -347,11 +352,13 @@ def problems(script: dict, research: dict) -> list[str]:
     title = script.get("title", "")
     if len(title) > 60:
         found.append(f"The title must be 60 characters or fewer (it has {len(title)}).")
-    if _EMOJI.search(title) or len([w for w in re.findall(r"\b[A-Z]{2,}\b", title) if w not in ("US", "UK", "USA", "TV")]) > 1:
-        found.append("The title may have at most one word in capitals and no emojis.")
+    emojis = _EMOJI.findall(title)
+    if len(emojis) > 1 or (emojis and _EMOJI.search(title.rstrip()[-2:]) is None) \
+            or len([w for w in re.findall(r"\b[A-Z]{2,}\b", title) if w not in ("US", "UK", "USA", "TV")]) > 1:
+        found.append("The title may have at most one word in capitals and at most one emoji, at the very end.")
     tags = script.get("hashtags", [])
-    if len(tags) != 3 or (tags and tags[0] != "#animals") or any(not re.fullmatch(r"#[a-z0-9]+", t) for t in tags):
-        found.append("Give exactly 3 lowercase hashtags with no spaces, the first being #animals.")
+    if len(tags) != 3 or (tags and tags[0] != "#history") or any(not re.fullmatch(r"#[a-z0-9]+", t) for t in tags):
+        found.append("Give exactly 3 lowercase hashtags with no spaces, the first being #history.")
     if not 4 <= len(script.get("tags", [])) <= 8:
         found.append("Give 4 to 8 tags.")
     if len(re.findall(r"[.!?](\s|$)", script.get("description", "").strip())) > 2:
@@ -395,6 +402,7 @@ def write_script(research: dict, episode_id: str, feedback: list[str] | None = N
         topic=research["topic"],
         structure=structure,
         structure_how=STRUCTURES[structure],
+        beats_min=BEATS[0], beats_max=BEATS[1], words_min=WORDS[0], words_max=WORDS[1],
         rules=_rules(),
         learnings=_learnings(),
         exemplars=exemplars(),

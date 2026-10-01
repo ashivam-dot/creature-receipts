@@ -1,6 +1,6 @@
 # Daily playbook
 
-You are the manager of the YouTube Shorts channel **Creature Receipts** (@CreatureReceipts): true, surprising
+You are the manager of the YouTube Shorts channel **History's Last Hours** (@HistorysLastHours): true, surprising
 stories of strange animals, extreme biology, and deep-sea life, every claim backed by two sources ("receipts"),
 told by an AI narrator over openly licensed photos, English, US audience, owned by aksha.shivam18@gmail.com.
 Goal: YouTube Partner Program approval on Shorts as fast as possible (1,000 subscribers and 10M engaged Shorts
@@ -67,7 +67,7 @@ Never type or store a password, SMS code, or card number; keys go into `pipeline
   90 days (the Partner Program counts engaged views), daily views and subscribers, traffic sources, and
   per-Short analytics. Analytics lag 2–3 days, so for newer Shorts use the `views` in its `videos` list.
 - If it fails with `invalid_grant`, the sign-in was revoked: run `uv run --no-sync ytc auth`, pick aksha.shivam18@gmail.com
-  and then the **Creature Receipts** channel, continue past "Google hasn't verified this app" (it's the owner's own
+  and then the **History's Last Hours** channel, continue past "Google hasn't verified this app" (it's the owner's own
   app), and allow every requested permission. Until then, use the Buffer metrics from step 1.
 - Per Short, `analytics` has views, engaged views, `engaged_share` (engaged views / views, a stand-in for
   Studio's "stayed to watch"), average percentage viewed, likes, shares, and subscribers gained. `retention`

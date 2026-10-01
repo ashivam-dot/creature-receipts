@@ -227,7 +227,7 @@ def _alert(message: str) -> None:
     """Push to the owner's phone through ntfy, as monitor/monitor.py does; a run that can't save stops the channel."""
     if topic := os.environ.get("YTC_NTFY_TOPIC"):
         request = urllib.request.Request(f"https://ntfy.sh/{topic}", data=message.encode("utf-8"), method="POST",
-                                         headers={"Title": "Creature Receipts needs attention", "Priority": "high", "Tags": "warning"})
+                                         headers={"Title": "History's Last Hours needs attention", "Priority": "high", "Tags": "warning"})
         try:
             urllib.request.urlopen(request, timeout=30).read()
         except Exception as err:
@@ -245,7 +245,7 @@ def _checkout() -> None:
     done = subprocess.run(["git", "clone", "-q", "--depth", "20", REPO_URL, str(CHECKOUT)], capture_output=True, text=True)
     if done.returncode:
         raise RuntimeError(f"couldn't clone the repo: {done.stderr.strip()[:400]}")
-    _git("config", "user.name", "Creature Receipts studio")
+    _git("config", "user.name", "History's Last Hours studio")
     _git("config", "user.email", "studio@creature-receipts.invalid")
     # A run that couldn't save would repeat its work (start workers, schedule posts) on the next run's clone.
     if (done := _git("push", "--dry-run", "-q", "origin", "HEAD")).returncode:

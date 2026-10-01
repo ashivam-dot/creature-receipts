@@ -1,9 +1,9 @@
-# Creature Receipts: channel copy
+# History's Last Hours: channel copy
 
 ## Identity
 
-- **Name:** Creature Receipts
-- **Handle:** @CreatureReceipts (fallbacks in order: @CreatureReceiptsTV, @TheCreatureReceipts)
+- **Name:** History's Last Hours
+- **Handle:** @HistorysLastHours (fallbacks in order: @HistorysLastHoursTV, @TheHistorysLastHours)
 - **Tagline:** Animal stories. With receipts.
 - **Sister channel:** Universe Receipts (space)
 - **Picture:** `brand/out/avatar-800.png`
@@ -15,7 +15,7 @@
 ```text
 True animal stories that sound made up, in under a minute, and every claim comes with receipts.
 
-The peacock mantis shrimp throws a punch at about 51 miles per hour. The coelacanth, a fish scientists thought died out with the dinosaurs, was pulled alive from the sea off South Africa in 1938. Creature Receipts tells the true stories of strange animals, extreme biology, and deep-sea life, and backs every one with proof.
+The peacock mantis shrimp throws a punch at about 51 miles per hour. The coelacanth, a fish scientists thought died out with the dinosaurs, was pulled alive from the sea off South Africa in 1938. History's Last Hours tells the true stories of strange animals, extreme biology, and deep-sea life, and backs every one with proof.
 
 Our series:
 - Built Different
@@ -35,13 +35,13 @@ Channel art: NOAA public-domain photos (humpback whale, dumbo octopus) and a pea
 ## Channel keywords (Settings, Channel, Basic info)
 
 ```text
-animals, "animal facts", "animal shorts", "weird animals", "strange animals", "deep sea", "deep sea creatures", "ocean facts", "marine biology", biology, evolution, "extinct animals", "nature facts", wildlife, "science facts", "animal myths", "creature receipts"
+animals, "animal facts", "animal shorts", "weird animals", "strange animals", "deep sea", "deep sea creatures", "ocean facts", "marine biology", biology, evolution, "extinct animals", "nature facts", wildlife, "science facts", "animal myths", "history's last hours"
 ```
 
 ## Default upload tags
 
 ```text
-animals, animal facts, weird animals, deep sea, ocean, marine biology, nature, science, animal shorts, creature receipts
+animals, animal facts, weird animals, deep sea, ocean, marine biology, nature, science, animal shorts, history's last hours
 ```
 
 ## Series and playlists
@@ -66,7 +66,7 @@ animals, animal facts, weird animals, deep sea, ocean, marine biology, nature, s
    Each receipt ends with its source, for example "Source: Patek et al., Nature, 2004."
 4. **The promise (35 to 42 s):** Voiceover: "True animal stories that sound made up. Every one with receipts."
    The six series names tear off the receipt one by one.
-5. **Close (42 to 45 s):** The avatar fills the screen: "Creature Receipts. Subscribe." Small line: "Sister channel of
+5. **Close (42 to 45 s):** The avatar fills the screen: "History's Last Hours. Subscribe." Small line: "Sister channel of
    Universe Receipts."
 
 ## Voice of the channel

@@ -29,7 +29,7 @@ RANK_SIDE = 240
 # A beat whose best candidate matches worse than this (0 to 1) also gets candidates from other archives.
 WEAK_MATCH = 0.3
 # A picture that is probably a modern color photo counts for this much in a beat set before MODERN_BEFORE.
-MODERN_BEFORE = 0
+MODERN_BEFORE = 1945
 MODERN_FACTOR = 0.35
 MODERN_BELOW = 0.3
 # Found through the beat's own subject, a candidate is more likely to be the right thing than a keyword hit.
@@ -69,7 +69,7 @@ PICK_SCHEMA = {
     "required": ["picks"],
 }
 
-PICK_PROMPT = """You choose the pictures for a Creature Receipts animal Short. While each beat of narration plays,
+PICK_PROMPT = """You choose the pictures for a History's Last Hours history Short. While each beat of narration plays,
 its picture is on a vertical phone screen: a tall picture fills the screen, a wide one is shown whole as a
 framed print over a dimmed copy of itself, and a long beat may cut to a close-up of part of the picture.
 
@@ -80,25 +80,23 @@ scrolling, so give it the most striking picture of the story's own subject, and 
 screen: footage, a tall picture, or a wide one at least 1000 px tall with the subject large in it.
 
 For every beat:
-- ranked: up to 3 labels, best first. Prefer, in this order: a real photo of the exact species, behavior,
-  person, place, or event the line names (in the wild when the line is about the wild); the same species from
-  another angle or moment; a picture that sets the scene (its habitat, the expedition's ship or ROV, the
-  scientist) without contradicting the line. A scientific illustration or Biodiversity Heritage Library plate
-  suits a historical line or a species rarely photographed; a museum specimen, fossil, or skeleton suits a line
-  about it. Never: an unrelated or wrong picture (a similar-looking but different species is wrong; so is an
-  illustration passed off as a photo), a captive or zoo photo for a line about the wild unless it only sets the
-  scene, dead or injured animals, blood, predation close-ups, animal cruelty, human corpses, wounds, gore,
+- ranked: up to 3 labels, best first. Prefer, in this order: the actual person, place, ship, building,
+  object, document, or event the line names, pictured at the time (a period photograph, painting, engraving,
+  or newspaper page); the same subject or place at another moment; its ruins, wreck, or artifacts as they are
+  today when the line is about what was found or what remains; a period picture that sets the scene without
+  contradicting the line. A later painting of the event is fine when no picture from the time exists. Never: an
+  unrelated or anachronistic picture (a modern photo, modern clothes, or a modern vehicle for a historical line),
+  a different ship, city, or person than the line names, corpses, remains shown as gore, wounds, executions,
   nudity, a large watermark, a diagram whose labels are small or not in English, or a page of text unless the
   line is about that document. Leave ranked empty when nothing qualifies.
-  Candidates marked VIDEO are real moving footage (you see its first frame). Moving footage holds viewers far
-  better than a still, so for a line about the living animal (how it looks, moves, hunts, or lives) rank footage
-  of that exact species first, and give the hook footage when there is some. Only when the frame clearly shows the
-  line's species: stock titles are loose, so judge by the frame, and a similar-looking species is wrong. Footage
-  never stands in for a historical scene, a named person, or a document.
-  An animal the line only compares the subject to ("a duck's bill on a beaver's body", "as big as a bus") is
-  not what the line is about: show the story's own subject, never the animal or thing it is compared to.
+  Candidates marked VIDEO are modern stock footage (you see its first frame). Use footage only where the line is
+  about a place as it is today (the ruins of Pompeii, Vesuvius now) or where moving atmosphere fits without
+  contradicting it (a dark sea, falling ash, flames, a storm), and judge by the frame, since stock titles are
+  loose. Footage never stands in for a historical scene, a named ship or person, or a document.
+  Something the line only compares the subject to ("as tall as a ten-story building") is not what the line is
+  about: show the story's own subject, never the thing it is compared to.
 - fit: how well your first choice fits its line: "exact" (it shows what the line names), "close" (the same
-  species or subject from another angle or moment), "scene" (it only sets the scene), or "none".
+  subject or place at another moment), "scene" (it only sets the scene), or "none".
 - shows: what your first choice actually shows, as a short caption.
 - focus_x, focus_y (0 = left or top edge, 1 = right or bottom): the center of the subject in your first choice.
 - box: [left, top, right, bottom], each 0 to 1, around the part of your first choice that shows exactly what the
@@ -115,16 +113,15 @@ VERIFY_SCHEMA = {
     "required": ["checks"],
 }
 
-VERIFY_PROMPT = """Check the pictures chosen for an animal Short before it is made. Each beat below has its line of
+VERIFY_PROMPT = """Check the pictures chosen for a history Short before it is made. Each beat below has its line of
 narration and the picture chosen for it. Mark a picture not ok only for a clear problem: it shows a different
-species (a similar-looking one counts as different), person, or place than the line is about; it is a captive or
-zoo photo for a line about the wild and does more than set the scene; it shows a dead or injured animal, blood, a
-predation close-up, animal cruelty, human corpses, wounds, gore, or nudity; it has a large watermark; it is
-mostly text though the line isn't about a document; it is a diagram whose labels are small or not in English; or
-it is too damaged or blurry to make out; or it shows an animal the line only compares the subject to (a duck
-for "a duck's bill on a beaver's body") instead of the subject. A picture that sets the scene (the habitat, the ship, the scientist) is
-ok, and so are a scientific illustration or plate of the right species, and a museum specimen, fossil, or
-skeleton when the line is about it.
+person, ship, city, or thing than the line is about; it is from the wrong period (a modern photo, modern clothes,
+or a modern vehicle for a historical line, unless the line is about what remains today); it shows corpses,
+remains shown as gore, wounds, executions, or nudity; it has a large watermark; it is mostly text though the line
+isn't about a document; it is a diagram whose labels are small or not in English; it is too damaged or blurry to
+make out; or it shows something the line only compares the subject to instead of the subject. A period picture
+or a later painting that sets the scene is ok, and so are ruins, a wreck, or artifacts when the line is about
+what was found or what remains.
 Give the problem in a few words, or "" when it is ok.
 
 Story: {story}

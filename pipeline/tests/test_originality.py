@@ -3,7 +3,7 @@ from ytc import writer
 
 def test_structure_rotates_to_the_least_used():
     recent = [{"structure": "story"}, {"structure": "myth_vs_fact"}, {"structure": "story"}]
-    assert writer.choose_structure(recent) == "scale_ladder"
+    assert writer.choose_structure(recent) == "countdown"
     assert writer.choose_structure([]) == "story"
 
 

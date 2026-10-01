@@ -132,7 +132,7 @@ jobs:
           EVENT: ${{ github.event_name }}
           RUN_NUMBER: ${{ github.run_number }}
         run: |
-          git config user.name "Creature Receipts studio"
+          git config user.name "History's Last Hours studio"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           for path in content strategy reports analytics status; do
             if [ -e "$path" ]; then git add -A "$path"; fi

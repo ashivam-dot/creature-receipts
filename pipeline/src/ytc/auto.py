@@ -90,12 +90,12 @@ MAX_SPAWNS = 3
 # stopping) is parked and comes back once after this many days; a second rejection drops it.
 PARK_DAYS = 14
 SERIES = [
-    "Built Different",
-    "Deep Sea Files",
-    "Back From Extinction",
-    "Evolution Got Weird",
-    "Nature's Record Breakers",
-    "Animal Myths, Busted",
+    "The Last Hours",
+    "Lost Cities",
+    "Doomed Expeditions",
+    "Fallen Empires",
+    "Warnings Ignored",
+    "Sole Survivors",
 ]
 MONTHS = {m: i for i, m in enumerate(["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"], start=1)}
 STATUS_MARK = re.compile(r"\s+—\s+(making|done|dropped|parked)\s+\((ep\d{3})\)\s*$")
@@ -417,21 +417,20 @@ def add_topics(run: Run, backlog_count: int = 4) -> list[str]:
     today = _now().date()
     series_counts = {s: sum(1 for t in topics if t["kind"] == "backlog" and t["series"] == s and not t["status"]) for s in SERIES}
     prompt = (
-        "You find topics for Creature Receipts, a YouTube Shorts channel of true, surprising stories of strange "
-        "animals, extreme biology, and deep-sea life for a US audience (under a minute each, told with openly "
-        "licensed photos, every claim sourced). Series: " + "; ".join(SERIES) + ".\n\n"
+        "You find topics for History's Last Hours, a YouTube Shorts channel of true, sourced stories of history's "
+        "tragedies (lost cities, doomed voyages and expeditions, fallen empires, ignored warnings, and the few who "
+        "survived) for a US audience (20 to 35 seconds each, told with period pictures, every claim sourced). "
+        "Series: " + "; ".join(SERIES) + ".\n\n"
         f"Suggest {backlog_count + 3} new backlog topics and 2 anniversaries dated between "
         f"{(today + timedelta(days=21)).strftime('%b %d')} and {(today + timedelta(days=56)).strftime('%b %d')}. Each must be a "
-        "true story (a discovery, an experiment, a record, a scientist's surprise; never a generic facts list) "
-        "with a genuinely surprising fact, well documented by reputable sources, with an English Wikipedia "
-        "article (give its exact title), and with openly licensed photos of the living species likely on "
-        "Wikimedia Commons or iNaturalist (NOAA, USFWS, or USGS public-domain photos, Biodiversity Heritage "
-        "Library plates, museum collections). No hoaxes or cryptids presented as true, no gore, predation, "
-        "dead-animal, or animal-cruelty stories, no health advice, no living private people, no topics already "
-        "listed below or close variants. "
+        "real event at least 75 years old with a human story and a genuinely surprising detail, well documented by "
+        "reputable sources, with an English Wikipedia article (give its exact title), and with period pictures "
+        "likely on Wikimedia Commons (photographs, paintings, engravings, newspaper pages, ruins). No legends "
+        "presented as true, nothing told for its gore, no living private people, no topics already listed below "
+        "or close variants. "
         "Favor series with few open topics. Write each topic as a short line naming the story, the year, and the "
-        "twist, like: \"The coelacanth rediscovery (1938): a fish known only from fossils turned up in a fishing "
-        "net\". Dates look like "
+        "twist, like: \"Sinking of the Titanic (1912): the lookouts had no binoculars, because the key to their "
+        "locker left the ship\". Dates look like "
         "\"Oct 7\".\n\n"
         f"Open topics per series: {json.dumps(series_counts)}\n\nAlready listed or made:\n" + "\n".join(f"- {k}" for k in known)
     )
@@ -527,8 +526,8 @@ def _known_topics(topics: list[dict], eps: list[dict]) -> list[str]:
 
 
 def add_timely(run: Run) -> list[str]:
-    """Up to TREND_PER_DAY topics a day that are timely now: animal and biology articles trending on English
-    Wikipedia and nature news, picked by the language model and checked like any other topic."""
+    """Up to TREND_PER_DAY topics a day that are timely now: history and disaster articles trending on English
+    Wikipedia and archaeology news, picked by the language model and checked like any other topic."""
     from xml.etree.ElementTree import ParseError
 
     from . import growth
@@ -541,18 +540,18 @@ def add_timely(run: Run) -> list[str]:
         return []
     trending, news = [], []
     try:
-        trending = growth.trending_animals()
+        trending = growth.trending_history()
     except (requests.RequestException, ValueError, KeyError) as err:
         log.warning("couldn't read Wikipedia's most-read articles: %s", err)
     try:
-        news = growth.fetch_nature_news()
+        news = growth.fetch_history_news()
     except (requests.RequestException, ParseError) as err:
-        log.warning("couldn't read the nature news feeds: %s", err)
+        log.warning("couldn't read the history news feeds: %s", err)
     known = _known_topics(topics, episodes())
     picks = growth.pick_timely(trending, news, known, room)
     rows = _verified(picks, [_key_words(k) for k in known], room)
     _write_timely(rows)
-    log.info("timely topics: %d trending animal articles, %d nature news items, %d added", len(trending), len(news), len(rows))
+    log.info("timely topics: %d trending history articles, %d history news items, %d added", len(trending), len(news), len(rows))
     return [f"{r['topic']} ({r['series']}; timely: {r['why']})" for r in rows]
 
 
@@ -919,7 +918,7 @@ def check_channel(run: Run) -> bool:
             run.owner_action.append(
                 f"Buffer's YouTube channel is {entry['detail']}, so no Short goes out until it's fixed: in Chrome's "
                 "aksha.shivam18@gmail.com profile open https://publish.buffer.com, go to Settings > Channels, and "
-                "reconnect or unpause Creature Receipts.")
+                "reconnect or unpause History's Last Hours.")
             return False
     return True
 
@@ -1043,10 +1042,11 @@ def per_day(stock: int, slots: int) -> int:
 # (day, Shorts a day) from that day on (decision 2026-09-30, research/growth-playbook-2026.md, upgrade 4): YouTube
 # gives no boost for volume, new channels do best at 1 to 3 a day, and more than 5 looks mass-produced. Every step
 # past BASE_PACE is earned: the last 10 Shorts must keep 90% of the engaged views per Short and of the engaged share
-# of the 10 before them. Without 20 Shorts of numbers, the pace stops at UNPROVEN_PACE.
-PACE = ((1, 2), (15, 3), (30, 4), (50, 5))
-BASE_PACE = 2
-UNPROVEN_PACE = 3
+# of the 10 before them. Without 20 Shorts of numbers, the pace stops at UNPROVEN_PACE. Raised on 2026-10-01: the
+# young history channels with 20k+ views on nearly every Short post 2 to 5 a day (research/competitors-2026-10-01.json).
+PACE = ((1, 3), (15, 4), (30, 5))
+BASE_PACE = 3
+UNPROVEN_PACE = 4
 # The last 10 Shorts falling this far below the 10 before them in engaged views per Short drops back to BASE_PACE.
 PACE_DROP = 0.7
 
@@ -1350,8 +1350,8 @@ def update_learnings(run: Run, analytics: dict) -> dict:
                "subs_per_1000": _median((r["subs"] or 0) * 1000 / r["views"] for r in recent if r["views"]),
                "likes_per_100": _median(r["likes"] * 100 / r["views"] for r in recent if r["views"])}
     answer = llm.generate(
-        "You keep the learning log of Creature Receipts, a Shorts channel of true, sourced stories of strange "
-        "animals, extreme biology, and deep-sea life. From the numbers "
+        "You keep the learning log of History's Last Hours, a Shorts channel of true, sourced stories of history's "
+        "tragedies. From the numbers "
         "below, explain each Short's result in a few words (hook, topic, pacing, visuals, loop), judged against the "
         "channel medians. Promote a hypothesis to a rule only when 2 or more Shorts show the same effect, and cite "
         "them; drop hypotheses the data contradicts; keep the rest. Rules and hypotheses must be concrete enough "
@@ -1499,8 +1499,8 @@ def weekly_review(run: Run, analytics: dict, learned: dict | None) -> Path:
     path = REPORTS / f"week-{week:02d}.md"
     rows = _video_rows(analytics, episodes()) if analytics else []
     text = llm.generate(
-        f"Write the week {week} review for Creature Receipts, a Shorts channel of true, sourced stories of strange "
-        "animals, extreme biology, and deep-sea life, in plain "
+        f"Write the week {week} review for History's Last Hours, a Shorts channel of true, sourced stories of history's "
+        "tragedies, in plain "
         "Markdown with these sections: Trend (views and subscribers), Top 3 and bottom 3 Shorts and why, What "
         "we learned, Next week's single experiment (one change, how we'll measure it). Be specific and brief. "
         "Use only these numbers:\n" + json.dumps({"rows": rows, "channel": analytics.get("channel"), "daily": analytics.get("daily"),

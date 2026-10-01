@@ -443,7 +443,7 @@ def dashboard(data: dict, problems: list[tuple[str, str]]) -> str:
     headline = {"ok": "All good", "warn": "Working, with warnings", "alert": "Needs attention"}[level]
     e = html.escape
     parts = [f"""<!doctype html><html><head><meta charset="utf-8"><meta http-equiv="refresh" content="300">
-<title>Creature Receipts monitor</title><style>
+<title>History's Last Hours monitor</title><style>
 body{{font:14px -apple-system,system-ui,sans-serif;background:#0f1216;color:#e6e6e6;margin:24px;max-width:1200px}}
 h1{{margin:0 0 4px}} h2{{margin:28px 0 8px;font-size:16px;color:#9fb3c8;text-transform:uppercase;letter-spacing:.05em}}
 .badge{{display:inline-block;padding:6px 12px;border-radius:14px;font-weight:600}}
@@ -454,7 +454,7 @@ th{{color:#8a9bb0;font-weight:500}} a{{color:#7cc4ff}} .grid{{display:grid;grid-
 .muted{{color:#8a9bb0}} pre{{white-space:pre-wrap;background:#161b22;padding:12px;border-radius:10px;border:1px solid #232a33}}
 .sheet img{{max-width:100%;border-radius:6px}} .sheets{{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}}
 </style></head><body>
-<h1>Creature Receipts monitor</h1>
+<h1>History's Last Hours monitor</h1>
 <div class="muted">Checked {dt.datetime.now(IST):%a %b %d %H:%M} IST · Day {status.get('day', '–')} of 100 ·
 next studio run about {next_cron(dt.datetime.now(UTC)).astimezone(IST):%H:%M} IST · refreshes every 15 min</div>
 <p><span class="badge {level}">{headline}</span></p>"""]
@@ -561,14 +561,14 @@ def notify(problems: list[tuple[str, str]]) -> None:
         if re.sub(r"\d+", "#", message) not in seen and level == "alert":
             if sys.platform == "darwin":
                 text = message.replace('"', "'")[:230]
-                subprocess.run(["osascript", "-e", f'display notification "{text}" with title "Creature Receipts" subtitle "Needs attention" sound name "Basso"'],
+                subprocess.run(["osascript", "-e", f'display notification "{text}" with title "History\'s Last Hours" subtitle "Needs attention" sound name "Basso"'],
                                capture_output=True)
             if topic:
                 push(topic, message)
     seen_path.write_text(json.dumps(sorted(current)))
 
 
-def push(topic: str, message: str, title: str = "Creature Receipts needs attention", priority: int = 4,
+def push(topic: str, message: str, title: str = "History's Last Hours needs attention", priority: int = 4,
          tags: tuple[str, ...] = ("warning",), actions: list[dict] | None = None) -> bool:
     # JSON, so a title needn't be Latin-1 as a header must.
     body = {"topic": topic, "title": title, "message": message, "priority": priority, "tags": list(tags)}
@@ -696,7 +696,7 @@ def collect() -> dict:
 def summary(data: dict, problems: list[tuple[str, str]]) -> str:
     status = (data.get("github") or {}).get("status") or {}
     inv = status.get("inventory", {})
-    lines = [f"Creature Receipts, {dt.datetime.now(IST):%a %b %d %H:%M} IST, day {status.get('day', '–')}",
+    lines = [f"History's Last Hours, {dt.datetime.now(IST):%a %b %d %H:%M} IST, day {status.get('day', '–')}",
              f"  last studio run: {status.get('result', '–')} ({_ago(status.get('updated_at'))}), "
              f"made {', '.join(m['id'] + ' ' + m['outcome'] for m in status.get('made', [])) or 'nothing'}",
              f"  ready: {inv.get('total', '–')}/{inv.get('target', 21)} ({inv.get('in_buffer', '–')} in Buffer, {inv.get('waiting', '–')} waiting, "

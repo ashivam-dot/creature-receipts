@@ -19,15 +19,15 @@ Intro.
 
 | Date | Story | Series |
 |---|---|---|
-| Oct 25 | Coelacanth (1938): a fish known only from fossils turned up alive | Back From Extinction |
+| Oct 25 | Coelacanth (1938): a fish known only from fossils turned up alive | Doomed Expeditions |
 
 ## Backlog
 
-### Deep Sea Files
+### Lost Cities
 
 - Vampire squid (1903): it turns itself inside out instead of fleeing
 
-### Nature's Record Breakers
+### Warnings Ignored
 
 - Peacock mantis shrimp: a punch as fast as a bullet
 """
@@ -53,7 +53,7 @@ def studio(tmp_path, monkeypatch):
 
 
 def _rows(n=1, why="Nature news: hydrothermal vents"):
-    return [{"topic": f"Hydrothermal vent (1977): story number {i} about life without sunlight", "series": "Deep Sea Files", "why": why}
+    return [{"topic": f"Hydrothermal vent (1977): story number {i} about life without sunlight", "series": "Lost Cities", "why": why}
             for i in range(n)]
 
 
@@ -61,18 +61,18 @@ def test_insert_timely_creates_the_section_at_the_top(studio):
     lines = auto.insert_timely(CALENDAR.splitlines(), _rows(), date(2026, 10, 20))
     text = "\n".join(lines)
     assert text.index("## Timely") < text.index("## Anniversaries")
-    assert "| 2026-10-20 | Hydrothermal vent (1977): story number 0 about life without sunlight | Deep Sea Files | Nature news: hydrothermal vents |" in lines
+    assert "| 2026-10-20 | Hydrothermal vent (1977): story number 0 about life without sunlight | Lost Cities | Nature news: hydrothermal vents |" in lines
     # A second insert goes into the same table, after the first row.
-    again = auto.insert_timely(lines, [{"topic": "A | piped topic", "series": "Nature's Record Breakers", "why": "x"}], date(2026, 10, 21))
+    again = auto.insert_timely(lines, [{"topic": "A | piped topic", "series": "Warnings Ignored", "why": "x"}], date(2026, 10, 21))
     assert sum(line.startswith("## Timely") for line in again) == 1
-    assert again.index("| 2026-10-21 | A / piped topic | Nature's Record Breakers | x |") == lines.index(
+    assert again.index("| 2026-10-21 | A / piped topic | Warnings Ignored | x |") == lines.index(
         next(line for line in lines if line.startswith("| 2026-10-20"))) + 1
 
 
 def test_timely_topics_are_parsed_marked_and_chosen_first(studio):
     auto.CALENDAR.write_text("\n".join(auto.insert_timely(CALENDAR.splitlines(), _rows(), date(2026, 10, 19))) + "\n")
     stale = auto.insert_timely(auto.CALENDAR.read_text().splitlines(),
-                               [{"topic": "Axolotl (1864): the salamander that never grows up", "series": "Evolution Got Weird", "why": "old news"}],
+                               [{"topic": "Axolotl (1864): the salamander that never grows up", "series": "Fallen Empires", "why": "old news"}],
                                date(2026, 10, 10))
     auto.CALENDAR.write_text("\n".join(stale) + "\n")
     topics = auto.calendar_topics(NOW.date())
@@ -94,13 +94,13 @@ def test_timely_topics_are_parsed_marked_and_chosen_first(studio):
 def test_verified_needs_a_series_a_real_article_and_something_new(studio):
     known = [auto._key_words("Vampire squid (1903): it turns itself inside out instead of fleeing")]
     items = [
-        {"topic": "Vampire squid (1903): it turns itself inside out instead of fleeing, again", "series": "Deep Sea Files",
+        {"topic": "Vampire squid (1903): it turns itself inside out instead of fleeing, again", "series": "Lost Cities",
          "wikipedia": "Vampire squid"},
-        {"topic": "Something (2026): with no article", "series": "Deep Sea Files", "wikipedia": "Made Up Article"},
+        {"topic": "Something (2026): with no article", "series": "Lost Cities", "wikipedia": "Made Up Article"},
         {"topic": "Moon (2026): a series that doesn't exist", "series": "Cooking", "wikipedia": "Moon"},
-        {"topic": "It was filmed alive for the first time in 2012, 630 meters down", "series": "Deep Sea Files",
+        {"topic": "It was filmed alive for the first time in 2012, 630 meters down", "series": "Lost Cities",
          "wikipedia": "giant squid", "why": "Nature news"},
-        {"topic": "Tardigrade (1702): dried out for decades, then alive again", "series": "Built Different", "wikipedia": "Tardigrade"},
+        {"topic": "Tardigrade (1702): dried out for decades, then alive again", "series": "The Last Hours", "wikipedia": "Tardigrade"},
     ]
     rows = auto._verified(items, known, limit=5)
     assert [r["topic"] for r in rows] == ["Giant squid: It was filmed alive for the first time in 2012, 630 meters down",
@@ -109,14 +109,14 @@ def test_verified_needs_a_series_a_real_article_and_something_new(studio):
 
 
 def test_add_timely_caps_topics_a_day(studio, monkeypatch):
-    monkeypatch.setattr(growth, "trending_animals", lambda: [{"title": "Tardigrade", "views": 90_000,
+    monkeypatch.setattr(growth, "trending_history", lambda: [{"title": "Tardigrade", "views": 90_000,
                                                               "description": "Phylum of microscopic animals"}])
-    monkeypatch.setattr(growth, "fetch_nature_news", lambda: [])
+    monkeypatch.setattr(growth, "fetch_history_news", lambda: [])
     asked = []
 
     def pick(trending, news, known, limit):
         asked.append(limit)
-        return [{"topic": t, "series": "Built Different", "wikipedia": w, "why": "trending"} for t, w in (
+        return [{"topic": t, "series": "The Last Hours", "wikipedia": w, "why": "trending"} for t, w in (
             ("Tardigrade (1702): dried out for decades, then alive again", "Tardigrade"),
             ("Pistol shrimp (2001): a snap that flashes light", "Alpheidae"),
             ("Wood frog (1982): it freezes solid every winter", "Wood frog"))]
@@ -126,7 +126,7 @@ def test_add_timely_caps_topics_a_day(studio, monkeypatch):
     assert auto.add_timely(auto.Run("test")) == [] and asked == [auto.TREND_PER_DAY]
 
 
-def _episode(root, episode_id, video, series="Built Different", state="sent", extra=None):
+def _episode(root, episode_id, video, series="The Last Hours", state="sent", extra=None):
     folder = root / "content" / "episodes" / episode_id
     folder.mkdir(parents=True)
     (folder / "short.yaml").write_text(yaml.safe_dump({"id": episode_id, "title": f"Title of {episode_id}", "series": series,
@@ -159,9 +159,9 @@ def test_breakout_queues_follow_ups_once(studio, monkeypatch):
     state = {}
     lines = auto.breakout_topics(auto.Run("test"), state)
     assert len(lines) == 1 and "ep007" in lines[0] and "11.2x" in lines[0]
-    assert calls[0]["series"] == "Built Different" and calls[0]["hook"] == "A shrimp punched through aquarium glass."
+    assert calls[0]["series"] == "The Last Hours" and calls[0]["hook"] == "A shrimp punched through aquarium glass."
     follow = [t for t in auto.calendar_topics(NOW.date()) if t["kind"] == "timely"]
-    assert len(follow) == auto.FOLLOW_UPS and all(t["series"] == "Built Different" and t["why"].startswith("Follow-up to ep007")
+    assert len(follow) == auto.FOLLOW_UPS and all(t["series"] == "The Last Hours" and t["why"].startswith("Follow-up to ep007")
                                                   for t in follow)
     assert json.loads((studio / "status" / "state.json").read_text())["breakouts"]["hitVIDEO001"]["added"] == 2
     # The same Short doesn't trigger again, and follow-ups don't count against the day's trending topics.
@@ -178,7 +178,7 @@ def test_timely_short_is_scheduled_first_with_an_extra_slot(monkeypatch):
     monkeypatch.setattr(auto, "slots_per_day", lambda today=None: 3)
 
     def ep(episode_id, timely, score):
-        return {"id": episode_id, "folder": auto.EPISODES / episode_id, "state": "waiting", "title": episode_id, "series": "Nature's Record Breakers",
+        return {"id": episode_id, "folder": auto.EPISODES / episode_id, "state": "waiting", "title": episode_id, "series": "Warnings Ignored",
                 "record": None, "held": {"scores": {"hook": score}}, "topic": {"timely": True} if timely else {}, "remote": None}
 
     monkeypatch.setattr(auto, "episodes", lambda: [ep("ep001", False, 9), ep("ep002", True, 1), ep("ep003", False, 8)])

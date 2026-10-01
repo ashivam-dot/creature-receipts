@@ -27,7 +27,10 @@ into `strategy/SCRIPT-RULES.md`, then cite the evidence here.
 
 - Put the strongest surprise in the first 2 seconds, then give context. It was the first rule proven on
   Days of Odd, the channel this studio was built for.
-- Cut each Short to 45–59 seconds (vidIQ: that length reaches 1M views more often).
+- Cut each Short to 20–30 seconds. In a YouTube Data API pull of 2026-10-01 (`research-competitors.json`),
+  the young history channels with 20k+ views on nearly every upload ran 17–27 seconds (History Timelines,
+  median 85k over its last 20; Xiulia, median 220k), against the 35–58 seconds this channel used.
+- Title as a question the Short answers, with one emoji at the end ("Why…", "How…"), as those channels do.
 - Write a last line that flows straight into the first line, so viewers rewatch and average percentage
   viewed rises.
 
@@ -42,3 +45,5 @@ contradiction.
 ## Log
 
 - Day 0: the studio is set up. Nothing to learn from yet.
+- 2026-10-01: the channel moved from animals to historical tragedies as History's Last Hours. Its two animal
+  Shorts (1 view each, never shown in the Shorts feed) were made private, and their numbers don't count here.

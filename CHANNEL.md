@@ -1,6 +1,6 @@
-# Creature Receipts: source of truth
+# History's Last Hours: source of truth
 
-- **Channel:** Creature Receipts (@CreatureReceipts), <https://www.youtube.com/@CreatureReceipts>, the YouTube
+- **Channel:** History's Last Hours (@HistorysLastHours), <https://www.youtube.com/@HistorysLastHours>, the YouTube
   channel of the Google account aksha.shivam18@gmail.com (not a Brand Account; the name shows only on YouTube).
   Channel ID `UC6e6OB3iw3yp8JnnBYxLItA`. Buffer channel ID `6abcba6dea19ca0bde30177e`. Created 2026-09-30.
 - **Niche:** true stories of strange animals, extreme biology, and deep-sea life, every claim backed by sources
@@ -12,7 +12,7 @@
   channel country is India. Chrome profile: Profile 5. Never use the owner's work account or its Chrome
   profile for anything on this channel.
 - **Accounts (on aksha.shivam18@gmail.com unless noted, created 2026-09-30):** Google Cloud project
-  `shorts-studio-two` (YouTube Data and Analytics APIs, OAuth app "Creature Receipts tools" in production,
+  `shorts-studio-two` (YouTube Data and Analytics APIs, OAuth app "History's Last Hours tools" in production,
   unverified, Desktop client); a Gemini key from the AI Studio project `creature-receipts` on akshshivam5@gmail.com (see the decisions log); Buffer (free, email sign-up); Cloudinary (free,
   cloud `uj4a07e7`); Modal: Universe Receipts' workspace `akshshivam5`, shared; GitHub `ashivam-dot`. Public repository <https://github.com/ashivam-dot/creature-receipts> (secrets only in Modal and Actions secrets). App home page and privacy policy on GitHub
   Pages: <https://ashivam-dot.github.io/creature-receipts-site/>. Modal app: `creature-receipts`.
@@ -83,7 +83,7 @@ Start here: `PLAYBOOK.md` (the daily routine), `strategy/STRATEGY.md`, `strategy
 |---|---|---|
 | 2026-09-30 | Built the studio from Universe Receipts' code (a `git archive` of its main branch), with its content, status, analytics, and reports emptied | That studio already runs a channel unattended on free tiers; its decision log and `reference/days-of-odd/CHANNEL.md` explain the design |
 | 2026-09-30 | Niche: true stories of strange animals, extreme biology, and deep-sea life, English, US audience | Six candidate niches were measured against the pipeline, not just ranked by demand (`research/channel/pipeline-fit-and-policy.md`): the median topic had 99 usable openly licensed pictures for animals, 89 for disasters, 50 for the deep ocean, 43 for archaeology, 10 for aviation, and 6 for frauds. The market report's first pick, failure analysis, was rejected: too few free pictures, and a feed of accidents is the "off-putting" content the July 2026 monetization update names. Animals are also evergreen, safe for advertisers, and don't overlap Universe Receipts. Animal-fact Shorts convert viewers to subscribers poorly (`research/channel/niche-market.md`, section 3), so every Short is a sourced story in a named series |
-| 2026-09-30 | Name: Creature Receipts (@CreatureReceipts) | A sister brand to Universe Receipts: "receipts" means every claim is backed by sources listed in the description, which is also the defense against the inauthentic-content review. The handle returned 404 on YouTube before it was claimed |
+| 2026-09-30 | Name: History's Last Hours (@HistorysLastHours) | A sister brand to Universe Receipts: "receipts" means every claim is backed by sources listed in the description, which is also the defense against the inauthentic-content review. The handle returned 404 on YouTube before it was claimed |
 | 2026-09-30 | Six series: Built Different, Deep Sea Files, Back From Extinction, Evolution Got Weird, Nature's Record Breakers, Animal Myths, Busted | They cover the animal hooks that travel (impossible bodies, the deep sea, rediscoveries, strange evolution, records with numbers, myth-busting); promises in `strategy/STRATEGY.md` |
 | 2026-09-30 | Day 0 is 2026-10-01 (Day 100 is 2027-01-09); first hashtag `#animals`; the calendar seeded with 14 anniversaries (Oct 3 to Nov 28) and about 100 backlog topics, each starting with an English Wikipedia title checked against Wikipedia's API | Three days to set up and fill the inventory before the first post, and still about 70 days to reach YPP's 10M-view bar before a mid-December application, ahead of the 20M bar from 2027-02-01 |
 | 2026-09-30 | Pictures: iNaturalist added as a source for any subject Wikidata marks as a taxon (curated photos, then most-voted research-grade observations, CC0 and CC BY only); a picture may be reused at most once per Short. Built here and ported to Universe Receipts | Universe Receipts' reviews rejected Shorts for repeating one photo when a subject had few pictures; living species are this channel's subjects, and one mantis-shrimp beat got 32 usable iNaturalist photos in testing |

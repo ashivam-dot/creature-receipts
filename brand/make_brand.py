@@ -1,4 +1,4 @@
-"""Build the Creature Receipts brand kit: avatar, banner, watermark, and the banner credits.
+"""Build the History's Last Hours brand kit: avatar, banner, watermark, and the banner credits.
 
 Run from the pipeline project so its dependencies are available:
     cd pipeline && uv run --no-sync python ../brand/make_brand.py
@@ -31,7 +31,7 @@ WHITE = (255, 255, 255)
 MIST = (168, 222, 214)
 
 COMMONS_API = "https://commons.wikimedia.org/w/api.php"
-USER_AGENT = f"CreatureReceiptsBrand/1.0 ({os.environ.get('YTC_CONTACT') or 'aksha.shivam18@gmail.com'})"
+USER_AGENT = f"HistorysLastHoursBrand/1.0 ({os.environ.get('YTC_CONTACT') or 'aksha.shivam18@gmail.com'})"
 # Commons licenses that allow commercial reuse without share-alike or NonCommercial terms.
 OPEN_LICENSES = re.compile(r"^(public domain|pd\b.*|cc0.*|cc by \d(\.\d)?|no restrictions)$", re.I)
 
@@ -251,7 +251,7 @@ def make_banner(out: Path, cache: Path) -> list[dict]:
 
     word_gap = 38
     widths = [draw.textlength(word, font=title_font) for word, _ in words]
-    _, t_top, _, t_bottom = draw.textbbox((0, 0), "CREATURE RECEIPTS", font=title_font)
+    _, t_top, _, t_bottom = draw.textbbox((0, 0), "HISTORY'S LAST HOURS", font=title_font)
     _, g_top, _, g_bottom = draw.textbbox((0, 0), tagline, font=tag_font)
     _, s_top, _, s_bottom = draw.textbbox((0, 0), small, font=small_font)
     gap_title, gap_tag = 34, 30

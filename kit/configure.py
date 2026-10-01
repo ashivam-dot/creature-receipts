@@ -34,7 +34,7 @@ SKIP_PREFIXES = ("content/episodes/", "content/rejected/")
 # Documents whose launch-date mentions follow --day-zero.
 DATED = ("PLAYBOOK.md", "CHANNEL.md", "OWNER-CHECKLIST.md", "strategy/PLAN-100.md", "strategy/STRATEGY.md")
 
-NAME = re.compile(r"[A-Za-z0-9][A-Za-z0-9 &.-]{1,38}[A-Za-z0-9.]")
+NAME = re.compile(r"[A-Za-z0-9][A-Za-z0-9 &.'-]{1,38}[A-Za-z0-9.]")
 HANDLE = re.compile(r"[A-Za-z0-9._-]{3,30}")
 USER = re.compile(r"[A-Za-z0-9](?:[A-Za-z0-9-]{0,37}[A-Za-z0-9])?")
 SLUG = re.compile(r"[a-z0-9][a-z0-9-]{1,38}[a-z0-9]")
@@ -191,7 +191,7 @@ def set_day_zero(text: str, rel: str, old: str, new: str) -> str:
 
 
 def validate(new: dict) -> None:
-    checks = [("name", NAME, "letters, digits, spaces, '&', '.', or '-', 3 to 40 characters"),
+    checks = [("name", NAME, "letters, digits, spaces, '&', '.', \"'\", or '-', 3 to 40 characters"),
               ("handle", HANDLE, "3 to 30 letters, digits, '.', '_', or '-' (no @)"),
               ("slug", SLUG, "lowercase letters, digits, and dashes"),
               ("email", EMAIL, "an email address"),

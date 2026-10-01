@@ -91,7 +91,7 @@ CHECKS = {"openrouter": openrouter_free, "gemini": gemini_models, "repos": risin
 
 
 def push(topic: str, message: str) -> None:
-    body = {"topic": topic, "title": "Creature Receipts scout: new free tools", "message": message[:3900],
+    body = {"topic": topic, "title": "History's Last Hours scout: new free tools", "message": message[:3900],
             "priority": 3, "tags": ["mag"]}
     request = urllib.request.Request("https://ntfy.sh/", data=json.dumps(body).encode("utf-8"), method="POST",
                                      headers={"Content-Type": "application/json"})

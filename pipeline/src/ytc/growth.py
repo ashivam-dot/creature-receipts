@@ -1,5 +1,5 @@
-"""Timely topics for the calendar (auto.add_timely): the animal and biology articles English Wikipedia's readers
-flocked to in the last two days, nature and biology news, and follow-ups to a Short that broke out.
+"""Timely topics for the calendar (auto.add_timely): the history and disaster articles English Wikipedia's readers
+flocked to in the last two days, archaeology and history news, and follow-ups to a Short that broke out.
 
 The fetchers are keyless public feeds; the pure functions under them take what the feeds return, so they can be
 checked offline.
@@ -24,28 +24,25 @@ log = logging.getLogger(__name__)
 
 WIKI_TOP = "https://wikimedia.org/api/rest_v1/metrics/pageviews/top/en.wikipedia/all-access/{day:%Y/%m/%d}"
 WIKI_API = "https://en.wikipedia.org/w/api.php"
-# Free, keyless nature and biology news feeds, checked 2026-09-30 (all 200 RSS 2.0, updated daily). NOAA Ocean
-# Exploration and National Geographic publish no working RSS feed.
-NATURE_FEEDS = (
-    "https://www.sciencedaily.com/rss/plants_animals.xml",
-    "https://www.sciencedaily.com/rss/plants_animals/marine_biology.xml",
-    "https://phys.org/rss-feed/biology-news/zoology/",
-    "https://www.livescience.com/feeds/tag/animals",
-    "https://www.sciencenews.org/topic/animals/feed",
+# Free, keyless archaeology and history news feeds, checked 2026-10-01 (all 200 RSS 2.0, updated daily).
+HISTORY_FEEDS = (
+    "https://www.sciencedaily.com/rss/fossils_ruins/archaeology.xml",
+    "https://phys.org/rss-feed/science-news/archaeology/",
+    "https://www.livescience.com/feeds/tag/archaeology",
+    "https://www.livescience.com/feeds/tag/history",
+    "https://www.archaeology.org/feed",
 )
 NEWS_KEEP = 40
-# A cheap first pass over Wikipedia's short descriptions ("Species of cephalopod", "Genus of lobe-finned fish",
-# "American marine biologist"); the language model makes the real call on what's left.
-ANIMAL_WORDS = re.compile(
-    r"\b(species|subspecies|genus|genera|family of|order of|class of|phylum|taxon|animals?|mammals?|birds?|fish|"
-    r"fishes|sharks?|rays?|whales?|dolphins?|porpoises?|cetaceans?|seals?|reptiles?|snakes?|lizards?|turtles?|"
-    r"tortoises?|crocodil\w*|amphibians?|frogs?|toads?|salamanders?|insects?|beetles?|butterfl\w+|moths?|bees?|"
-    r"wasps?|ants?|spiders?|arachnids?|scorpions?|crustaceans?|crabs?|shrimps?|lobsters?|molluscs?|mollusks?|"
-    r"cephalopods?|octop\w+|squids?|snails?|slugs?|jellyfish|cnidarians?|corals?|sponges?|worms?|tardigrades?|"
-    r"primates?|apes?|monkeys?|lemurs?|bats?|rodents?|marsupials?|parrots?|owls?|penguins?|dinosaurs?|"
-    r"pterosaurs?|fossils?|extinct|zoolog\w*|biolog\w*|naturalists?|entomolog\w*|ornitholog\w*|herpetolog\w*|"
-    r"ichthyolog\w*|primatolog\w*|paleontolog\w*|palaeontolog\w*|evolution\w*|wildlife|deep[- ]sea|"
-    r"marine (?:animal|biolog\w*|life|mammal|species|invertebrate)s?)\b", re.I)
+# A cheap first pass over Wikipedia's short descriptions ("1912 sinking of a British passenger liner", "Ancient
+# Roman city near Naples", "Volcanic eruption in 79 AD"); the language model makes the real call on what's left.
+HISTORY_WORDS = re.compile(
+    r"\b(disasters?|sinking|shipwrecks?|wrecks?|eruptions?|earthquakes?|tsunamis?|floods?|fires?|explosions?|"
+    r"famines?|plagues?|epidemics?|pandemics?|massacres?|sieges?|sacks?|battles?|wars?|invasions?|collapses?|"
+    r"dam (?:failure|collapse)s?|derailments?|crash(?:es)?|"
+    r"expeditions?|explorers?|voyages?|liners?|steamships?|steamboats?|airships?|ships?|whaleships?|"
+    r"ancient|medieval|bronze age|iron age|empires?|dynast\w*|kingdoms?|pharaohs?|emperors?|kings?|queens?|"
+    r"archaeolog\w*|ruins?|lost city|ancient city|abandoned|settlements?|colon(?:y|ies)|survivors?|"
+    r"\d{1,2}(?:st|nd|rd|th)[- ]century|(?:1[0-8]|[1-9])\d\d|19[0-4]\d)\b", re.I)
 # Articles that are never a story: the front page, search, and project pages.
 NOT_ARTICLES = re.compile(r"^(Main Page|-|Undefined)$|^(Special|Wikipedia|File|Portal|Help|Template|Category|Talk|User):")
 TRENDING_KEEP = 15
@@ -114,24 +111,24 @@ def descriptions(titles: list[str]) -> dict[str, str]:
     return found
 
 
-def animal_articles(views: dict[str, int], described: dict[str, str], keep: int = TRENDING_KEEP) -> list[dict]:
-    """The trending articles whose short description sounds like animals or biology, most read first."""
+def history_articles(views: dict[str, int], described: dict[str, str], keep: int = TRENDING_KEEP) -> list[dict]:
+    """The trending articles whose short description sounds like history or a disaster, most read first."""
     hits = [{"title": t, "views": v, "description": described[t]} for t, v in views.items()
-            if ANIMAL_WORDS.search(described.get(t, ""))]
+            if HISTORY_WORDS.search(described.get(t, ""))]
     return sorted(hits, key=lambda h: -h["views"])[:keep]
 
 
-def trending_animals(days: int = 2, pool: int = 300) -> list[dict]:
-    """Animal and biology articles among the `pool` most-read English Wikipedia articles of the last `days` days."""
+def trending_history(days: int = 2, pool: int = 300) -> list[dict]:
+    """History and disaster articles among the `pool` most-read English Wikipedia articles of the last `days` days."""
     views = top_articles(days)
     titles = [t for t, _ in sorted(views.items(), key=lambda kv: -kv[1])[:pool]]
-    return animal_articles({t: views[t] for t in titles}, descriptions(titles))
+    return history_articles({t: views[t] for t in titles}, descriptions(titles))
 
 
-# --- nature news ------------------------------------------------------------------------------------------------
+# --- history news ------------------------------------------------------------------------------------------------
 
 
-def nature_news(xml_text: str, now: datetime, hours: int = 48) -> list[dict]:
+def history_news(xml_text: str, now: datetime, hours: int = 48) -> list[dict]:
     """The items of one RSS feed published within `hours` before `now`: {"title", "link", "published",
     "summary"}, newest first."""
     items = []
@@ -150,19 +147,19 @@ def nature_news(xml_text: str, now: datetime, hours: int = 48) -> list[dict]:
     return sorted(items, key=lambda i: i["published"], reverse=True)
 
 
-def fetch_nature_news(hours: int = 48) -> list[dict]:
-    """The recent items of every NATURE_FEEDS feed that answers, newest first, without repeated titles; raises
+def fetch_history_news(hours: int = 48) -> list[dict]:
+    """The recent items of every HISTORY_FEEDS feed that answers, newest first, without repeated titles; raises
     only when no feed answers."""
     now, items, failures = datetime.now(timezone.utc), [], []
-    for url in NATURE_FEEDS:
+    for url in HISTORY_FEEDS:
         try:
             response = requests.get(url, headers=_headers(), timeout=20)
             response.raise_for_status()
-            items += nature_news(response.text, now, hours)
+            items += history_news(response.text, now, hours)
         except (requests.RequestException, ElementTree.ParseError) as err:
-            log.info("nature feed %s failed: %s", url, err)
+            log.info("history feed %s failed: %s", url, err)
             failures.append(err)
-    if len(failures) == len(NATURE_FEEDS):
+    if len(failures) == len(HISTORY_FEEDS):
         raise failures[-1]
     unique = {i["title"].lower(): i for i in sorted(items, key=lambda i: i["published"])}
     return sorted(unique.values(), key=lambda i: i["published"], reverse=True)[:NEWS_KEEP]
@@ -178,16 +175,17 @@ TOPICS_SCHEMA = {
     "required": ["topics"],
 }
 
-_CHANNEL = ("Creature Receipts is a YouTube Shorts channel of true, surprising stories of strange animals, extreme "
-            "biology, and deep-sea life for a US audience (under a minute each, told with openly licensed photos, "
-            "every claim backed by two reputable sources). Series: " + "; ".join(SERIES) + ".")
-_RULES = ("Each must be a real story (a discovery, an experiment, a record, a scientist's surprise; not a facts list) "
-          "with a genuinely surprising, well-documented fact, and name the exact title of an existing English "
-          "Wikipedia article about its subject (the species, scientist, or event itself, not a news story). Start "
-          "the topic line with that exact title, then the year and the twist, like: \"Coelacanth (1938): a fish "
-          "known only from fossils turned up in a fishing net\". No hoaxes, cryptids, or speculation presented as "
-          "fact, no gore, predation, dead-animal, or animal-cruelty stories, no health advice, no living private "
-          "people, and nothing already listed below or a close variant.")
+_CHANNEL = ("History's Last Hours is a YouTube Shorts channel of true, sourced stories of history's tragedies (lost "
+            "cities, doomed voyages and expeditions, fallen empires, ignored warnings, and the few who survived) for a "
+            "US audience, 20 to 35 seconds each, told with period pictures and every claim backed by two reputable "
+            "sources. Series: " + "; ".join(SERIES) + ".")
+_RULES = ("Each must be a real event at least 75 years old with a human story and a genuinely surprising, "
+          "well-documented detail, and name the exact title of an existing English Wikipedia article about it (the "
+          "event, place, ship, or person itself, not a news story). Start the topic line with that exact title, then "
+          "the year and the twist, like: \"Sinking of the Titanic (1912): the lookouts had no binoculars, because the "
+          "key to their locker left the ship\". No legends or speculation presented as fact, nothing told for its "
+          "gore, no events with living victims' families still in the news, no living private people, and nothing "
+          "already listed below or a close variant.")
 
 
 def pick_timely(trending: list[dict], news: list[dict], known: list[str], limit: int) -> list[dict]:
@@ -196,14 +194,14 @@ def pick_timely(trending: list[dict], news: list[dict], known: list[str], limit:
     if not (trending or news) or limit <= 0:
         return []
     prompt = (
-        f"{_CHANNEL}\n\nThese animal and biology subjects are in the news or trending on Wikipedia in the last two days. Pick at "
+        f"{_CHANNEL}\n\nThese history subjects are in the news or trending on Wikipedia in the last two days. Pick at "
         f"most {limit} that make a strong Short right now: people are already curious about the subject, and it has "
-        "a documented story worth a minute. Skip routine items (personnel news, event notices, photo captions) and "
+        "a documented tragedy or near-tragedy worth telling. A new archaeological find is a way into the old story behind it. Skip routine items (personnel news, event notices, photo captions) and "
         "anything whose facts are still unconfirmed; tell the documented background, not guesses about the news. "
         f"{_RULES} why: one short line saying what makes it timely (the trend or the news item). Return an empty "
         "list if nothing fits.\n\nTrending on English Wikipedia (views in a day):\n"
         + "\n".join(f"- {t['title']} ({t['views']:,}): {t['description']}" for t in trending)
-        + "\n\nNature and biology news:\n" + "\n".join(f"- {n['title']} ({n['published'][:10]}): {n['summary'][:240]}" for n in news)
+        + "\n\nArchaeology and history news:\n" + "\n".join(f"- {n['title']} ({n['published'][:10]}): {n['summary'][:240]}" for n in news)
         + "\n\nAlready listed or made:\n" + "\n".join(f"- {k}" for k in known)
     )
     answer = llm.generate(prompt, schema=TOPICS_SCHEMA, models=llm.BROAD, purpose="timely topics")
@@ -275,7 +273,7 @@ def propose_followups(short: dict, known: list[str], count: int = 2) -> list[dic
         f"{_CHANNEL}\n\nThis Short in the series \"{short['series']}\" is breaking out, far above the channel's usual "
         f"views:\n{json.dumps({k: short.get(k) for k in ('title', 'topic', 'hook')}, ensure_ascii=False)}\n\n"
         f"Suggest {count + 2} follow-up topics for the same series that the same viewers will want next: the same "
-        "subject from a different angle, a related species or discovery, or the rest of the story. Each must stand on "
+        "event from another person's eyes, a similar disaster elsewhere, or the rest of the story. Each must stand on "
         f"its own as a Short. {_RULES}\n\nAlready listed or made:\n" + "\n".join(f"- {k}" for k in known)
     )
     answer = llm.generate(prompt, schema=FOLLOW_SCHEMA, models=llm.BROAD, purpose="breakout follow-ups")

@@ -19,6 +19,8 @@ _OVERRIDE = re.compile(r"\[([^\]]+)\]\(/[^)]*/\)")
 _ROMAN = re.compile(r"\b[IVX]{2,}\b")
 _WAR = re.compile(r"\bWar (I{1,2})\b")
 ASR_MODEL = "small.en"
+# Seconds a finished Short may run (writer.WORDS sets the script length that lands inside it).
+DURATION = (20, 35)
 
 
 def check(video: Path) -> dict:
@@ -133,8 +135,8 @@ def _ordinal(numeral: re.Match) -> str:
 def _warnings(duration: float, integrated: float | None, true_peak: float | None, beats: list[dict]) -> list[str]:
     """The quality gate's measurable rules (PLAYBOOK.md step 6), plus beats that fell back to a placeholder."""
     found = []
-    if not 35 <= duration <= 58:
-        found.append(f"duration {duration} s is outside 35-58 s")
+    if not DURATION[0] <= duration <= DURATION[1]:
+        found.append(f"duration {duration} s is outside {DURATION[0]}-{DURATION[1]} s")
     if integrated is None or abs(integrated + 14) > 1:
         found.append(f"loudness {integrated} LUFS is outside -14 +/- 1")
     if true_peak is None or true_peak > -1:

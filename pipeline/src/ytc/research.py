@@ -22,13 +22,14 @@ WIKI_API = "https://en.wikipedia.org/w/api.php"
 BROWSER_UA = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0 Safari/537.36"
 # Reputable sites per the script rules, read first. Other sites are read after these.
 TRUSTED = (
-    "nationalgeographic.com", "smithsonianmag.com", "si.edu", "nationalzoo.si.edu", "nhm.ac.uk", "amnh.org",
-    "mbari.org", "oceanexplorer.noaa.gov", "noaa.gov", "fws.gov", "usgs.gov", "iucnredlist.org", "nature.com",
-    "science.org", "scientificamerican.com", "newscientist.com", "sciencenews.org", "livescience.com", "phys.org",
-    "sciencedaily.com", "discovermagazine.com", "audubon.org", "allaboutbirds.org", "oceana.org", "wwf.org",
-    "worldwildlife.org", "britannica.com", "ucmp.berkeley.edu", "animaldiversity.org", "eol.org",
-    "biodiversitylibrary.org", "inaturalist.org", "bbc.co.uk", "bbc.com", "npr.org", "pbs.org", "nytimes.com",
-    "theguardian.com", "washingtonpost.com", "theatlantic.com", "newyorker.com", "abc.net.au",
+    "britannica.com", "smithsonianmag.com", "si.edu", "history.com", "nationalgeographic.com", "bbc.co.uk",
+    "bbc.com", "loc.gov", "archives.gov", "nps.gov", "nationalarchives.gov.uk", "npr.org", "pbs.org",
+    "nytimes.com", "theguardian.com", "washingtonpost.com", "time.com", "historyextra.com", "atlasobscura.com",
+    "livescience.com", "newyorker.com", "theatlantic.com", "telegraph.co.uk", "independent.co.uk", "latimes.com",
+    "rmg.co.uk", "britishmuseum.org", "metmuseum.org", "historic-uk.com", "history.state.gov",
+    "thecanadianencyclopedia.ca", "historylink.org", "encyclopedia.com", "worldhistory.org", "historynet.com",
+    "pompeiisites.org", "encyclopedia-titanica.org", "usgs.gov", "volcano.si.edu", "noaa.gov",
+    "archaeology.org", "nature.com", "science.org", "scientificamerican.com", "abc.net.au",
     "museum", ".edu", ".gov", ".ac.uk",
 )
 SKIP = (
@@ -100,7 +101,7 @@ def _articles(topic: str, results: list[str]) -> list[str]:
     if titles := _existing(from_results)[:2]:
         return titles
     guess = llm.generate(
-        f"An animal Short will tell this story: {topic}\n\nName the one or two English Wikipedia articles that "
+        f"A history Short will tell this story: {topic}\n\nName the one or two English Wikipedia articles that "
         "tell this specific story in the most detail, best first, with their exact titles.",
         schema={"type": "object", "properties": {"titles": {"type": "array", "items": {"type": "string"}}}, "required": ["titles"]},
         models=llm.LIGHT, purpose="name Wikipedia articles",
@@ -231,9 +232,10 @@ RESEARCH_SCHEMA = {
     "required": ["viable", "reason", "story", "angle", "claims", "disputed", "visuals"],
 }
 
-PROMPT = """You research stories for Creature Receipts, a YouTube Shorts channel of true, surprising stories of
-strange animals, extreme biology, and deep-sea life for a US audience, where every claim comes with receipts.
-Each Short tells a real story (a discovery, an experiment, a record, a scientist's surprise), not a facts list.
+PROMPT = """You research stories for History's Last Hours, a YouTube Shorts channel of true, sourced stories of
+history's tragedies (lost cities, doomed voyages and expeditions, fallen empires, ignored warnings, and the few
+who survived) for a US audience. Each Short tells the human story of one real disaster: who was there, what they
+saw and decided, what they could not know, and the detail most people have never heard.
 
 Topic: {topic}
 Series: {series}
@@ -252,12 +254,11 @@ Return:
   their wording differs). Leave out anything only one site states, and legends presented as fact.
 - disputed: details the sources disagree on or treat as legend, and how a script should handle each
   (leave out, or attribute: "according to one account").
-- visuals: 8 to 14 things a viewer could see (field photos of the living species, underwater or ROV frames,
-  museum specimens, fossils, or skeletons when the story is about them, scientific illustrations and
-  Biodiversity Heritage Library plates, the scientists and places involved, and simple diagrams), never
-  carcasses or injured animals, blood, or predation close-ups, each
-  with 2 or 3 Wikimedia Commons search queries naming the exact species or subject ("Odontodactylus scyllarus",
-  "Latimeria chalumnae Sodwana Bay", "Vampyroteuthis infernalis NOAA"), not generic words.
+- visuals: 8 to 14 things a viewer could see (period photographs, paintings, engravings, and newspaper
+  front pages of the event; the people involved; the ship, building, or city before and after; ruins and
+  artifacts as they are today; maps), never corpses, wounds, or remains shown as gore, each with 2 or 3
+  Wikimedia Commons search queries naming the exact subject ("RMS Titanic departing Southampton",
+  "Karl Bryullov Last Day of Pompeii", "Lisbon earthquake 1755 engraving"), not generic words.
 
 Sources:
 {sources}

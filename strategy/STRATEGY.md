@@ -1,4 +1,4 @@
-# Creature Receipts: strategy
+# History's Last Hours: strategy
 
 Last revised 2026-09-30 (Day -3). Evidence for each choice comes from this channel's research in
 `research/channel/`: niche fit, picture depth, and policy in

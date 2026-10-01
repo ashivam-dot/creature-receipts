@@ -28,6 +28,8 @@ log = logging.getLogger(__name__)
 ROOT = Path(__file__).resolve().parents[3]
 EPISODES = ROOT / "content" / "episodes"
 REJECTED = ROOT / "content" / "rejected"
+# Episodes from the channel's first niche (animals, until 2026-10-01): kept for their numbers, never published.
+SHELVED = ROOT / "content" / "shelved"
 IST = ZoneInfo("Asia/Kolkata")
 VOICE = {"voice": "af_heart", "speed": 1.05}
 GATE = ["hook", "clarity", "payoff", "visuals", "loop"]
@@ -53,9 +55,10 @@ REVIEW_SCHEMA = {
     "required": ["scores", "notes", "frames", "speech", "rewrite", "better_than_last"],
 }
 
-REVIEW_PROMPT = """You are the quality gate for Creature Receipts, a YouTube Shorts channel of true, surprising
-stories of strange animals, extreme biology, and deep-sea life, each a real story (not a facts list) backed by
-sources. Judge this rendered Short as a demanding editor would. Below are the script with each beat's timing,
+REVIEW_PROMPT = """You are the quality gate for History's Last Hours, a YouTube Shorts channel of true, sourced
+stories of history's tragedies (lost cities, doomed voyages and expeditions, fallen empires, ignored warnings, and
+the few who survived), each told through the people in it, gravely and without gore, in 20 to 35 seconds. Judge
+this rendered Short as a demanding editor would. Below are the script with each beat's timing,
 one frame from the middle of each shot (what viewers see, captions included; a long beat can cut to a close-up,
 so it has two), and the automatic checks.
 
@@ -67,14 +70,14 @@ Score 1 to 5 (5 excellent, 4 good enough to publish, 3 or lower must be fixed), 
 - loop: does the last line run straight into the first, so a replay feels seamless?
 
 Also:
-- frames: each beat whose frame has a problem (off-topic, the wrong species, a dead or injured animal, gore, nudity, a big watermark,
+- frames: each beat whose frame has a problem (off-topic, anachronistic, the wrong ship, city, or person, corpses or gore, nudity, a big watermark,
   mostly text, the subject cropped out, blurry, or the same picture as another beat), with the problem.
   Leave out beats that are fine. {loop_note}
 - speech: the recognizer's differences are listed. For each real mispronunciation (not another spelling of
   a correctly spoken name, not a skipped short word), give the beat, the word exactly as written in the
   beat, and a respelling in plain lowercase words that a text-to-speech voice would read correctly
   (Formosus: "for moe sus").
-- rewrite: if hook, clarity, payoff, or loop is under 4, or the duration is outside 35-58 s, up to 4 concrete
+- rewrite: if hook, clarity, payoff, or loop is under 4, or the duration is outside 20-35 s, up to 4 concrete
   changes (which beat, what to say instead), using only facts already in the script. Otherwise empty.
 - better_than_last: one sentence on what this Short does better than the recent ones listed, or "" if nothing.
 
@@ -92,7 +95,7 @@ def _read(path: Path):
 
 
 def next_id() -> str:
-    numbers = [int(p.name[2:]) for folder in (EPISODES, REJECTED) if folder.exists()
+    numbers = [int(p.name[2:]) for folder in (EPISODES, REJECTED, SHELVED) if folder.exists()
                for p in folder.glob("ep[0-9][0-9][0-9]") if p.is_dir()]
     return f"ep{max(numbers, default=0) + 1:03d}"
 
@@ -328,7 +331,7 @@ def reject(folder: Path, reason: str) -> Path:
 
 def produce(topic: str, series: str, episode_id: str | None = None, *, at: str | None = None) -> dict:
     """Make one Short (or finish a half-made one) and host it. Returns what happened, for the run's status."""
-    from .check import check
+    from .check import DURATION, check
     from .publish import hold
 
     episode_id = episode_id or next_id()
@@ -406,9 +409,10 @@ def produce(topic: str, series: str, episode_id: str | None = None, *, at: str |
 
         story = ("hook", "clarity", "payoff", "loop")
         rewrite = verdict["rewrite"] or [f"{k}: {verdict['notes'][k]}" for k in story if verdict["scores"][k] < PASS_SCORE]
-        if any(verdict["scores"][k] < PASS_SCORE for k in story) or not 35 <= result["duration"] <= 58:
-            if not 35 <= result["duration"] <= 58:
-                rewrite.append(f"The render ran {result['duration']} s; it must be 35-58 s.")
+        low, high = DURATION
+        if any(verdict["scores"][k] < PASS_SCORE for k in story) or not low <= result["duration"] <= high:
+            if not low <= result["duration"] <= high:
+                rewrite.append(f"The render ran {result['duration']} s; it must be {low}-{high} s.")
             old_script, script = script, writer.write_script(research, episode_id, feedback=rewrite, draft=script)
             # Beats the rewrite left alone keep their pictures, unless the reviewer flagged them.
             kept = pick.unchanged(old_script, visuals, script, skip={f["beat"] for f in verdict["frames"]})

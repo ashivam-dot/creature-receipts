@@ -15,14 +15,14 @@ def test_merge_top_drops_non_articles_and_keeps_best_day():
     assert views == {"Coelacanth": 80_000, "Tardigrade": 30_000}
 
 
-def test_animal_articles_keeps_animal_descriptions_most_read_first():
-    views = {"Pac (wrestler)": 800_000, "Coelacanth": 50_000, "Tardigrade": 90_000, "Sylvia Earle": 20_000,
-             "Lizzie Borden": 300_000, "Worms, Germany": 40_000, "United States Marine Corps": 60_000}
-    described = {"Pac (wrestler)": "English professional wrestler (1986–2026)", "Coelacanth": "Order of lobe-finned fish",
-                 "Tardigrade": "Phylum of microscopic animals", "Sylvia Earle": "American marine biologist (born 1935)",
-                 "Lizzie Borden": "American woman acquitted of murder", "Worms, Germany": "City in Rhineland-Palatinate",
-                 "United States Marine Corps": "Maritime land force branch of the US Armed Forces"}
-    assert [a["title"] for a in growth.animal_articles(views, described)] == ["Tardigrade", "Coelacanth", "Sylvia Earle"]
+def test_history_articles_keeps_history_descriptions_most_read_first():
+    views = {"Pac (wrestler)": 800_000, "Pompeii": 50_000, "Sinking of the Titanic": 90_000, "Johnstown Flood": 20_000,
+             "Taylor Swift": 300_000, "Worms, Germany": 40_000, "Nvidia": 60_000}
+    described = {"Pac (wrestler)": "English professional wrestler (born 1986)", "Pompeii": "Ancient Roman city near Naples",
+                 "Sinking of the Titanic": "1912 sinking of a British passenger liner",
+                 "Johnstown Flood": "Dam failure in Pennsylvania, United States", "Taylor Swift": "American singer-songwriter (born 1989)",
+                 "Worms, Germany": "City in Rhineland-Palatinate", "Nvidia": "American technology company"}
+    assert [a["title"] for a in growth.history_articles(views, described)] == ["Sinking of the Titanic", "Pompeii", "Johnstown Flood"]
 
 
 FEED = """<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"><channel><title>ScienceDaily: Plants &amp; Animals</title>
@@ -37,8 +37,8 @@ FEED = """<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"><channel><tit
 </channel></rss>"""
 
 
-def test_nature_news_keeps_recent_items_newest_first_in_utc():
-    items = growth.nature_news(FEED, NOW, hours=48)
+def test_history_news_keeps_recent_items_newest_first_in_utc():
+    items = growth.history_news(FEED, NOW, hours=48)
     assert [i["title"] for i in items] == ["Octopus Arms Taste What They Touch", "New Anglerfish Filmed at 2,000 Meters"]
     assert items[0]["summary"] == "Each sucker on an octopus arm carries chemical receptors, researchers found"
     assert items[0]["published"] == "2026-10-20T03:31:56+00:00"
