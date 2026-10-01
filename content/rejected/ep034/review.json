@@ -1,0 +1,193 @@
+{
+  "rounds": [
+    {
+      "at": "2026-10-01T12:42:43+05:30",
+      "check": {
+        "duration": 39.43,
+        "words": 80,
+        "integrated_lufs": -14.3,
+        "true_peak_dbfs": -1.7,
+        "warnings": [
+          "duration 39.43 s is outside 17-35 s"
+        ],
+        "speech_differences": [
+          "'(nothing)' heard as 'read the transcript below allowed as a gripping true story narrator on a viral youtube short fast and urgent about 170 words a minute with only tiny pauses a low intense voice and rising tension that hits the last line hard speak only the transcript'",
+          "'chelmsford' heard as 'chelsford' after '22 1879 lord'",
+          "'defensive' heard as 'offensive' after 'warnings and refused'"
+        ],
+        "speech_error": null,
+        "sources": [
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons"
+        ]
+      },
+      "scores": {
+        "hook": 4,
+        "clarity": 4,
+        "payoff": 3,
+        "visuals": 2,
+        "loop": 3
+      },
+      "notes": {
+        "hook": "Strong dramatic premise grabs attention quickly.",
+        "clarity": "Narrative flow is easy to comprehend.",
+        "payoff": "Eclipse reveal provides a decent twist.",
+        "visuals": "Multiple frames contain off-topic imagery.",
+        "loop": "Ending connects adequately back to start."
+      },
+      "frames": [
+        {
+          "beat": 4,
+          "problem": "Shows bayonet practice at Aldershot instead of front line warnings."
+        },
+        {
+          "beat": 7,
+          "problem": "Shows desert sunflowers instead of the Isandlwana battlefield."
+        }
+      ],
+      "speech": [
+        {
+          "beat": 3,
+          "word": "Chelmsford",
+          "respelling": "chemz ferd"
+        }
+      ],
+      "rewrite": [
+        "Beat 8: Cut beat 8 entirely to bring total duration within 17 to 35 seconds.",
+        "The render ran 39.43 s; it must be 17-35 s."
+      ],
+      "better_than_last": "Features a more compelling climatic twist than episode 025.",
+      "judge": "gemini-3.6-flash",
+      "passed": false
+    },
+    {
+      "at": "2026-10-01T12:50:46+05:30",
+      "check": {
+        "duration": 39.53,
+        "words": 75,
+        "integrated_lufs": -14.3,
+        "true_peak_dbfs": -1.6,
+        "warnings": [
+          "duration 39.53 s is outside 17-35 s"
+        ],
+        "speech_differences": [
+          "'(nothing)' heard as 'read the transcript below aloud as a gripping true story narrator on a viral youtube short fast and urgent about 170 words a minute with only tiny pauses a low intense voice and rising tension that hits the last line hard speak only the transcript'",
+          "'22' heard as '22nd' after 'fortified on january'",
+          "'(nothing)' heard as 'is' after 'officers mocked zulu'"
+        ],
+        "speech_error": null,
+        "sources": [
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "designed card",
+          "Wikimedia Commons"
+        ]
+      },
+      "scores": {
+        "hook": 4,
+        "clarity": 2,
+        "payoff": 4,
+        "visuals": 2,
+        "loop": 4
+      },
+      "notes": {
+        "hook": "The opening line creates immediate stakes and curiosity.",
+        "clarity": "Audio includes the narrator reading the prompt instructions aloud.",
+        "payoff": "The solar eclipse fact provides a high-quality historical twist.",
+        "visuals": "Beat 4 reuses the same subject as beat 3.",
+        "loop": "Thematic and grammatical flow back to the start is perfect."
+      },
+      "frames": [
+        {
+          "beat": 4,
+          "problem": "Uses a portrait of the same person from beat 3."
+        }
+      ],
+      "speech": [
+        {
+          "beat": 3,
+          "word": "Chelmsford",
+          "respelling": "chelmz furd"
+        }
+      ],
+      "rewrite": [
+        "Beat 1: Twenty thousand Zulu warriors sat in silence just over the ridge.",
+        "Beat 3: Lord Chelmsford left thirteen hundred men unprotected.",
+        "Beat 4: Officers mocked Zulu strength, refusing to form defensive circles.",
+        "Beat 7: Commanders were unaware of the massive force nearby.",
+        "The render ran 39.53 s; it must be 17-35 s."
+      ],
+      "better_than_last": "The inclusion of the solar eclipse provides a more dramatic environmental payoff than ep025.",
+      "judge": "gemini-3-flash-preview",
+      "passed": false
+    },
+    {
+      "at": "2026-10-01T12:58:54+05:30",
+      "check": {
+        "duration": 42.77,
+        "words": 71,
+        "integrated_lufs": -14.2,
+        "true_peak_dbfs": -1.5,
+        "warnings": [
+          "duration 42.77 s is outside 17-35 s"
+        ],
+        "speech_differences": [
+          "'(nothing)' heard as 'read the transcript below allowed as a gripping true story narrator on a viral youtube short fast and urgent about 170 words a minute with only tiny pauses a low intense voice and rising tension that hits the last line hard speak only the transcript'",
+          "'(nothing)' heard as 'is' after 'officers mocked zulu'"
+        ],
+        "speech_error": null,
+        "sources": [
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "designed card",
+          "Wikimedia Commons"
+        ]
+      },
+      "scores": {
+        "hook": 4,
+        "clarity": 4,
+        "payoff": 3,
+        "visuals": 3,
+        "loop": 3
+      },
+      "notes": {
+        "hook": "Effective hook that creates immediate tactical tension.",
+        "clarity": "Simple narrative progression that is easy to follow.",
+        "payoff": "The eclipse twist provides decent payoff but lacks strong impact.",
+        "visuals": "Reused portrait in beat 4 reduces visual engagement.",
+        "loop": "Smooth transition back to the opening line, though slightly repetitive."
+      },
+      "frames": [
+        {
+          "beat": 4,
+          "problem": "Repeats the portrait from beat 3 without visual variation."
+        }
+      ],
+      "speech": [],
+      "rewrite": [
+        "Beat 1: Trim voiceover delivery time to bring total duration under 35 seconds.",
+        "Beat 4: Cut beat 4 to eliminate pacing bloat and redundant visuals.",
+        "Beat 7: Change to 'While twenty thousand Zulu warriors...' to create a tighter seamless loop."
+      ],
+      "better_than_last": "This episode incorporates a unique atmospheric event into the tactical narrative better than recent entries.",
+      "judge": "gemini-3.6-flash",
+      "passed": false
+    }
+  ],
+  "best_round": 3,
+  "verdict": "rejected",
+  "reason": "low scores: payoff, visuals, loop; duration 42.77 s is outside 17-35 s",
+  "rejected_at": "2026-10-01T12:58:54+05:30"
+}

@@ -15,6 +15,13 @@ exact title of its English Wikipedia article (checked with the API: it exists, i
 disambiguation page). Only events at least 75 years old, so no living families are retold for views; no
 event is told for its gore. Space topics belong to the sister channel Universe Receipts and never go here.
 
+## Timely (news, trending, and breakout follow-ups: made and posted first)
+
+| Added | Story | Series | Why |
+|---|---|---|---|
+| 2026-10-01 | Nasca culture (c. 500 AD): they carved the world-famous Nazca Lines but triggered their own collapse by clearing the Huarango trees that held the desert floor in place — making (ep041) | Fallen Empires | New archaeological news regarding the Wari conquest of the Nasca is currently trending. |
+| 2026-10-01 | New Fire ceremony (1507): the Aztecs believed the world would end every 52 years unless they sacrificed a heart to relight the sun while the entire empire waited in total darkness — making (ep042) | Fallen Empires | The Aztec cosmological concept 'Nahui Ollin' is currently trending on Wikipedia. |
+
 ## Anniversaries (publish on the date, 7 p.m. Eastern)
 
 | Date | Story | Series |
@@ -26,6 +33,7 @@ event is told for its gore. Space topics belong to the sister channel Universe R
 | Oct 24 | Eruption of Mount Vesuvius in 79 AD: a charcoal inscription found at Pompeii in 2018 suggests the eruption came in autumn, not on August 24 as long believed | The Last Hours |
 | Oct 25 | Charge of the Light Brigade (1854): a misread order sent the light cavalry straight down a valley ringed with Russian guns | Warnings Ignored |
 | Nov 1 | 1755 Lisbon earthquake: it struck on All Saints' Day, when the churches were full, and people who fled to the open waterfront were hit by a tsunami | The Last Hours |
+| Nov 12 | Nevado del Ruiz eruption (1985): warning signs were ignored for weeks before a lahar buried the town of Armero in the middle of the night | Warnings Ignored |
 | Nov 20 | Essex (whaleship) (1820): after a sperm whale sank the ship, the crew steered away from the nearest islands for fear of cannibals | Sole Survivors |
 | Nov 25 | White Ship (1120): its sinking drowned the king of England's only legitimate son, and the fight over his throne became a civil war | Fallen Empires |
 | Nov 28 | Cocoanut Grove fire (1942): hundreds died in a Boston nightclub whose main exit was a revolving door and whose other doors were locked or hidden | Warnings Ignored |
@@ -57,6 +65,12 @@ event is told for its gore. Space topics belong to the sister channel Universe R
 - Wanggongchang Explosion (1626): a massive unexplained blast rocked Beijing, stripping people of their clothes and leaving a silent void
 - Great Blizzard of 1888 (1888): commuters stepped into mild spring weather before a sudden whiteout froze New York City in its tracks
 - Great Siege of Malta (1565): a handful of knights held off an invading armada against impossible odds, surviving until relief finally arrived
+- Schoolhouse Blizzard (1888): a warm morning lured children to school without coats before a wall of ice struck at recess
+- Battle of Myeongnyang (1597): Admiral Yi defeated 133 Japanese warships with only 13 vessels by using a whirlpool-filled strait
+- Quintinshill rail disaster (1915): two signalmen changing shifts late forgot a train on the main line, causing the UK's deadliest rail crash
+- Siege of Sidney Street (1911): Winston Churchill personally oversaw the gunfight and ordered firefighters not to save the burning building
+- Gresford disaster (1934): hundreds of miners died because they had swapped shifts to see a football match, putting extra men in the pit
+- Sinking of the SS Arctic (1854): the ship collided in fog and the officers took the lifeboats first, leaving the passengers behind
 
 ### Lost Cities
 
@@ -71,6 +85,7 @@ event is told for its gore. Space topics belong to the sister channel Universe R
 - Roanoke Colony (1590): the only clue the vanished colonists left was the word "CROATOAN" carved into a post
 - Ani: the "city of 1,001 churches" lies abandoned on the border of Turkey and Armenia
 - Pavlopetri: one of the oldest known submerged towns lies a few meters under the sea off Greece
+- Unyu (c. 1300): the medieval city in Myanmar was abandoned after a Mongol invasion, leaving behind thousands of pagodas overgrown by jungle
 
 ### Doomed Expeditions
 
@@ -84,6 +99,7 @@ event is told for its gore. Space topics belong to the sister channel Universe R
 - 1924 British Mount Everest expedition: George Mallory's body was found 75 years later, and nobody knows if he reached the top
 - Amundsen's South Pole expedition (1910): a secret race to the pole succeeded because the leader ate his own sled dogs to survive — making (ep037)
 - Great Fire of 1910 (1910): hurricane-force winds turned a scattering of forest fires into a single monster that swallowed towns in minutes
+- Voyage of the James Caird (1916): to save his crew, Shackleton navigated 800 miles of the world's deadliest ocean in a 22-foot lifeboat
 
 ### Fallen Empires
 
@@ -96,6 +112,7 @@ event is told for its gore. Space topics belong to the sister channel Universe R
 - Third Punic War (146 BC): Rome destroyed Carthage, but the story that it salted the earth appears to be a modern invention
 - Library of Alexandria: it wasn't lost in one great fire, but declined over centuries
 - Reichstag fire (1933): the German parliament building burned just weeks after Hitler took power, instantly triggering emergency decrees that ended democracy — parked (ep036)
+- Ashanti Empire (1900): the Golden Stool was demanded by the British governor who did not know he was asking to sit on a sacred spirit shrine, sparking an uprising
 
 ### Warnings Ignored
 
@@ -109,9 +126,11 @@ event is told for its gore. Space topics belong to the sister channel Universe R
 - Iroquois Theatre fire (1903): advertised as "absolutely fireproof", it burned five weeks after opening
 - Vasa (ship) (1628): the warship sank on its maiden voyage, less than a mile out, after failing a stability test before it sailed
 - Knickerbocker Storm (1922): the roof of Washington's Knickerbocker Theatre collapsed under the snow during a film
-- Battle of Isandlwana (1879): British commanders refused to form defensive laagers, mocking reports of Zulu forces until thousands appeared over the ridge — making (ep034)
+- Battle of Isandlwana (1879): British commanders refused to form defensive laagers, mocking reports of Zulu forces until thousands appeared over the ridge — parked (ep034)
 - Mongol invasions of Japan (1281): the invasion fleet was destroyed by a legendary typhoon known as the kamikaze, saving Japan from conquest — making (ep039)
 - Fetterman Fight (1866): a cocky commander vowed to ride through the entire Sioux nation with eighty men, and none returned
+- Battle of Cartagena de Indias (1741): Admiral Vernon was so certain of victory he minted medals celebrating the win while his fleet was being destroyed
+- Whydah Gally (1717): a pirate slave ship sank in a violent nor'easter right off Cape Cod, carrying a fortune in stolen treasure that lay buried for centuries
 
 ### Sole Survivors
 

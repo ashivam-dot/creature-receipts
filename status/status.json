@@ -1,34 +1,34 @@
 {
-  "updated_at": "2026-10-01T12:58:51+05:30",
+  "updated_at": "2026-10-01T17:08:30+05:30",
   "day": 0,
   "result": "ok",
   "run": {
     "host": "modal",
-    "id": "ta-01M3V5S9QGZTDY9BGM7156CCTR",
+    "id": "ta-01M3VKY4SZDS7D4BK61DW8364R",
     "number": null,
     "trigger": "schedule",
-    "started_at": "2026-10-01T12:57:57+05:30",
-    "started_at_utc": "2026-10-01T07:27:57+00:00",
-    "seconds": 54
+    "started_at": "2026-10-01T17:05:06+05:30",
+    "started_at_utc": "2026-10-01T11:35:06+00:00",
+    "seconds": 203
   },
   "stages": [
     {
       "name": "deploy",
       "ok": true,
       "detail": "",
-      "seconds": 3.2
+      "seconds": 1.2
     },
     {
       "name": "sync",
       "ok": true,
-      "detail": "3 posts",
-      "seconds": 1.3
+      "detail": "5 posts",
+      "seconds": 0.5
     },
     {
       "name": "playlists",
       "ok": true,
       "detail": "nothing new",
-      "seconds": 0.9
+      "seconds": 0.7
     },
     {
       "name": "languages",
@@ -51,86 +51,110 @@
     {
       "name": "collect",
       "ok": true,
-      "detail": "ep026 ready; ep029 rejected (low scores: clarity, visuals; 3 frame problems); ep033 rejected (low scores: visuals); ep034 still working (0.5 h); ep035 ready; ep036 rejected (low scores: hook, payoff, visuals)",
-      "seconds": 26.8
+      "detail": "ep034 rejected (low scores: payoff, visuals, loop; duration 42.77 s is outside 17-35 s); ep037 unfinished (Overloaded: every model in ('gemini-3.8-flash', 'gemini-3.7-flash', 'gemini-3.6-flash', 'gemini-3.5-flash', 'gemini-3-flash-preview', 'gemini-flash-latest', 'ovh:Qwen3.5-397B-A17B') with quota left stayed overloaded for 25 minutes); ep038 unfinished (OutOfQuota: no model in ('gemini-3.8-flash', 'gemini-3.7-flash', 'gemini-3.6-flash', 'gemini-3.5-flash', 'gemini-3-flash-preview', 'gemini-flash-latest', 'ovh:Qwen3.5-397B-A17B') has free quota left today); ep039 unfinished (OutOfQuota: no mo",
+      "seconds": 11.8
+    },
+    {
+      "name": "analytics",
+      "ok": true,
+      "detail": "0 subscribers",
+      "seconds": 1.3
+    },
+    {
+      "name": "learnings",
+      "ok": true,
+      "detail": "Initialized the learning log with preliminary research hypotheses; no performance data available yet.",
+      "seconds": 43.4
+    },
+    {
+      "name": "breakouts",
+      "ok": true,
+      "detail": "none",
+      "seconds": 0.1
+    },
+    {
+      "name": "timely topics",
+      "ok": true,
+      "detail": "2 added",
+      "seconds": 62.2
+    },
+    {
+      "name": "strongest stories",
+      "ok": true,
+      "detail": "7 added",
+      "seconds": 63.3
+    },
+    {
+      "name": "new topics",
+      "ok": true,
+      "detail": "5 added",
+      "seconds": 14.8
+    },
+    {
+      "name": "report",
+      "ok": true,
+      "detail": "day-000.md",
+      "seconds": 0.1
     },
     {
       "name": "buffer channel",
       "ok": true,
       "detail": "connected",
-      "seconds": 0.4
+      "seconds": 0.2
+    },
+    {
+      "name": "preflight ep025",
+      "ok": true,
+      "detail": "video downloads whole (12 MB in 0 s)",
+      "seconds": 0.3
     },
     {
       "name": "preflight ep031",
       "ok": true,
-      "detail": "video downloads whole (14 MB in 2 s)",
-      "seconds": 2.1
-    },
-    {
-      "name": "release ep025",
-      "ok": true,
-      "detail": "off its Oct 05 anniversary slot: too few other Shorts to fill the days before it",
-      "seconds": 0.9
-    },
-    {
-      "name": "release ep027",
-      "ok": true,
-      "detail": "off its Oct 08 anniversary slot: too few other Shorts to fill the days before it",
-      "seconds": 0.8
+      "detail": "video still hosted",
+      "seconds": 0.2
     },
     {
       "name": "publish",
       "ok": true,
       "detail": "",
-      "seconds": 5.0
-    },
-    {
-      "name": "schedule ep025",
-      "ok": true,
-      "detail": "2026-10-02T19:00:00-04:00",
-      "seconds": 1.0
-    },
-    {
-      "name": "schedule ep026",
-      "ok": true,
-      "detail": "2026-10-03T19:00:00-04:00",
-      "seconds": 1.1
-    },
-    {
-      "name": "schedule ep027",
-      "ok": true,
-      "detail": "2026-10-04T19:00:00-04:00",
-      "seconds": 1.1
-    },
-    {
-      "name": "schedule ep035",
-      "ok": true,
-      "detail": "2026-10-05T19:00:00-04:00",
-      "seconds": 1.3
+      "seconds": 0.1
     },
     {
       "name": "start ep037",
       "ok": true,
       "detail": "Amundsen's South Pole expedition (1910): a secret race to the pole succeeded because the leader ate his own sled dogs to survive",
-      "seconds": 1.0
+      "seconds": 0.3
     },
     {
       "name": "start ep038",
       "ok": true,
       "detail": "1945 Empire State Building B-25 crash (1945): a lost bomber crashed into the 79th floor of the skyscraper, and an elevator operator fell 75 floors and survived",
-      "seconds": 2.2
+      "seconds": 0.2
     },
     {
       "name": "start ep039",
       "ok": true,
       "detail": "Mongol invasions of Japan (1281): the invasion fleet was destroyed by a legendary typhoon known as the kamikaze, saving Japan from conquest",
-      "seconds": 2.2
+      "seconds": 0.2
     },
     {
       "name": "start ep040",
       "ok": true,
       "detail": "Battle of Saragarhi (1897): twenty-one soldiers fought ten thousand tribesmen to the last man, signaling updates until the final seconds",
-      "seconds": 1.1
+      "seconds": 0.3
+    },
+    {
+      "name": "start ep041",
+      "ok": true,
+      "detail": "Nasca culture (c. 500 AD): they carved the world-famous Nazca Lines but triggered their own collapse by clearing the Huarango trees that held the desert floor in place",
+      "seconds": 0.2
+    },
+    {
+      "name": "start ep042",
+      "ok": true,
+      "detail": "New Fire ceremony (1507): the Aztecs believed the world would end every 52 years unless they sacrificed a heart to relight the sun while the entire empire waited in total darkness",
+      "seconds": 0.2
     },
     {
       "name": "publish",
@@ -142,7 +166,10 @@
   "errors": [],
   "owner_action": [],
   "notes": [
-    "only 5 Shorts made and unposted; scheduling 1 a day"
+    "ep037 stopped on Gemini's free tier being overloaded; it resumes in a later run",
+    "ep038 stopped on Gemini's free quota; it resumes in a later run",
+    "ep039 stopped on Gemini's free quota; it resumes in a later run",
+    "ep040 stopped on Gemini's free quota; it resumes in a later run"
   ],
   "inventory": {
     "total": 5,
@@ -151,11 +178,12 @@
     "target": 42,
     "making": [],
     "remote": [
-      "ep034",
       "ep037",
       "ep038",
       "ep039",
-      "ep040"
+      "ep040",
+      "ep041",
+      "ep042"
     ]
   },
   "queue": [
@@ -188,157 +216,148 @@
   "waiting": [],
   "made": [
     {
-      "id": "ep026",
-      "outcome": "ready",
-      "topic": "Peshtigo fire (1871): the deadliest wildfire in American history burned the same night as the Great Chicago Fire, and was nearly forgotten because of it",
-      "title": "Why History Forgot America's Deadliest Wildfire 😳",
-      "scores": {
-        "hook": 5,
-        "clarity": 5,
-        "payoff": 5,
-        "visuals": 5,
-        "loop": 4
-      },
-      "media_url": "https://res.cloudinary.com/uj4a07e7/video/upload/v1790838903/creaturereceipts/ep026-391e3019.mp4"
-    },
-    {
-      "id": "ep029",
+      "id": "ep034",
       "outcome": "rejected",
-      "topic": "Late Bronze Age collapse: around 1177 BC, nearly every great civilization of the eastern Mediterranean fell within a few decades",
-      "reason": "low scores: clarity, visuals; 3 frame problems"
+      "topic": "Battle of Isandlwana (1879): British commanders refused to form defensive laagers, mocking reports of Zulu forces until thousands appeared over the ridge",
+      "reason": "low scores: payoff, visuals, loop; duration 42.77 s is outside 17-35 s"
     },
     {
-      "id": "ep033",
-      "outcome": "rejected",
-      "topic": "Radium Girls (1917): factory workers painted watch dials with self-glowing paint and pointed the brushes with their lips, later seeing their own jaws glow in the dark",
-      "reason": "low scores: visuals"
+      "id": "ep037",
+      "outcome": "unfinished",
+      "topic": "Amundsen's South Pole expedition (1910): a secret race to the pole succeeded because the leader ate his own sled dogs to survive",
+      "reason": "Overloaded: every model in ('gemini-3.8-flash', 'gemini-3.7-flash', 'gemini-3.6-flash', 'gemini-3.5-flash', 'gemini-3-flash-preview', 'gemini-flash-latest', 'ovh:Qwen3.5-397B-A17B') with quota left stayed overloaded for 25 minutes",
+      "quota": false,
+      "overloaded": true
     },
     {
-      "id": "ep035",
-      "outcome": "ready",
-      "topic": "1900 Galveston hurricane (1900): forecasters dismissed warnings from Cuba, leaving the deadliest natural disaster in US history to strike an unprepared island",
-      "title": "Why Did the US Ignore the 1900 Galveston Hurricane? ⚠️",
-      "scores": {
-        "hook": 4,
-        "clarity": 4,
-        "payoff": 4,
-        "visuals": 4,
-        "loop": 4
-      },
-      "media_url": "https://res.cloudinary.com/uj4a07e7/video/upload/v1790839219/creaturereceipts/ep035-f4ba222a.mp4"
+      "id": "ep038",
+      "outcome": "unfinished",
+      "topic": "1945 Empire State Building B-25 crash (1945): a lost bomber crashed into the 79th floor of the skyscraper, and an elevator operator fell 75 floors and survived",
+      "reason": "OutOfQuota: no model in ('gemini-3.8-flash', 'gemini-3.7-flash', 'gemini-3.6-flash', 'gemini-3.5-flash', 'gemini-3-flash-preview', 'gemini-flash-latest', 'ovh:Qwen3.5-397B-A17B') has free quota left today",
+      "quota": true,
+      "overloaded": false
     },
     {
-      "id": "ep036",
-      "outcome": "rejected",
-      "topic": "Reichstag fire (1933): the German parliament building burned just weeks after Hitler took power, instantly triggering emergency decrees that ended democracy",
-      "reason": "low scores: hook, payoff, visuals"
+      "id": "ep039",
+      "outcome": "unfinished",
+      "topic": "Mongol invasions of Japan (1281): the invasion fleet was destroyed by a legendary typhoon known as the kamikaze, saving Japan from conquest",
+      "reason": "OutOfQuota: no model in ('gemini-3.8-flash', 'gemini-3.7-flash', 'gemini-3.6-flash', 'gemini-3.5-flash', 'gemini-3-flash-preview', 'gemini-flash-latest', 'ovh:Qwen3.5-397B-A17B') has free quota left today",
+      "quota": true,
+      "overloaded": false
+    },
+    {
+      "id": "ep040",
+      "outcome": "unfinished",
+      "topic": "Battle of Saragarhi (1897): twenty-one soldiers fought ten thousand tribesmen to the last man, signaling updates until the final seconds",
+      "reason": "OutOfQuota: no model in ('gemini-3.8-flash', 'gemini-3.7-flash', 'gemini-3.6-flash', 'gemini-3.5-flash', 'gemini-3-flash-preview', 'gemini-flash-latest', 'ovh:Qwen3.5-397B-A17B') has free quota left today",
+      "quota": true,
+      "overloaded": false
     }
   ],
   "spawned": [
     {
       "id": "ep037",
       "topic": "Amundsen's South Pole expedition (1910): a secret race to the pole succeeded because the leader ate his own sled dogs to survive",
-      "call_id": "fc-01M3V5V7Y5EA34QZ8N0JGDX7X5"
+      "call_id": "fc-01M3VM4F9WQMN5B648VBT7XJJY"
     },
     {
       "id": "ep038",
       "topic": "1945 Empire State Building B-25 crash (1945): a lost bomber crashed into the 79th floor of the skyscraper, and an elevator operator fell 75 floors and survived",
-      "call_id": "fc-01M3V5VA1M8X7Q2ZQ46JNHFN39"
+      "call_id": "fc-01M3VM4FH858XCMV694188641J"
     },
     {
       "id": "ep039",
       "topic": "Mongol invasions of Japan (1281): the invasion fleet was destroyed by a legendary typhoon known as the kamikaze, saving Japan from conquest",
-      "call_id": "fc-01M3V5VC5F9MK8C9ZJ3CCA2A71"
+      "call_id": "fc-01M3VM4FR3FZX62TM177GWMBFS"
     },
     {
       "id": "ep040",
       "topic": "Battle of Saragarhi (1897): twenty-one soldiers fought ten thousand tribesmen to the last man, signaling updates until the final seconds",
-      "call_id": "fc-01M3V5VD6S8E24MKTX0VGQ9EKG"
+      "call_id": "fc-01M3VM4G20NX8TQJM14B76FW0D"
+    },
+    {
+      "id": "ep041",
+      "topic": "Nasca culture (c. 500 AD): they carved the world-famous Nazca Lines but triggered their own collapse by clearing the Huarango trees that held the desert floor in place",
+      "call_id": "fc-01M3VM4G8HPQXBQ4KDHN01K0DV"
+    },
+    {
+      "id": "ep042",
+      "topic": "New Fire ceremony (1507): the Aztecs believed the world would end every 52 years unless they sacrificed a heart to relight the sun while the entire empire waited in total darkness",
+      "call_id": "fc-01M3VM4GGAPVRQ4GY9DANFGYJK"
     }
   ],
   "in_cloud": [
     {
-      "id": "ep034",
-      "topic": "Battle of Isandlwana (1879): British commanders refused to form defensive laagers, mocking reports of Zulu forces until thousands appeared over the ridge",
-      "spawned_at": "2026-10-01T12:30:40+05:30"
-    },
-    {
       "id": "ep037",
       "topic": "Amundsen's South Pole expedition (1910): a secret race to the pole succeeded because the leader ate his own sled dogs to survive",
-      "spawned_at": "2026-10-01T12:58:46+05:30"
+      "spawned_at": "2026-10-01T17:08:28+05:30"
     },
     {
       "id": "ep038",
       "topic": "1945 Empire State Building B-25 crash (1945): a lost bomber crashed into the 79th floor of the skyscraper, and an elevator operator fell 75 floors and survived",
-      "spawned_at": "2026-10-01T12:58:48+05:30"
+      "spawned_at": "2026-10-01T17:08:28+05:30"
     },
     {
       "id": "ep039",
       "topic": "Mongol invasions of Japan (1281): the invasion fleet was destroyed by a legendary typhoon known as the kamikaze, saving Japan from conquest",
-      "spawned_at": "2026-10-01T12:58:50+05:30"
+      "spawned_at": "2026-10-01T17:08:29+05:30"
     },
     {
       "id": "ep040",
       "topic": "Battle of Saragarhi (1897): twenty-one soldiers fought ten thousand tribesmen to the last man, signaling updates until the final seconds",
-      "spawned_at": "2026-10-01T12:58:51+05:30"
+      "spawned_at": "2026-10-01T17:08:29+05:30"
+    },
+    {
+      "id": "ep041",
+      "topic": "Nasca culture (c. 500 AD): they carved the world-famous Nazca Lines but triggered their own collapse by clearing the Huarango trees that held the desert floor in place",
+      "spawned_at": "2026-10-01T17:08:29+05:30"
+    },
+    {
+      "id": "ep042",
+      "topic": "New Fire ceremony (1507): the Aztecs believed the world would end every 52 years unless they sacrificed a heart to relight the sun while the entire empire waited in total darkness",
+      "spawned_at": "2026-10-01T17:08:29+05:30"
     }
   ],
-  "published": [
-    {
-      "id": "ep025",
-      "title": "Why Did Britain's Giant R101 Airship Crash? ⚠️",
-      "due_at": "2026-10-02T19:00:00-04:00"
-    },
-    {
-      "id": "ep026",
-      "title": "Why History Forgot America's Deadliest Wildfire 😳",
-      "due_at": "2026-10-03T19:00:00-04:00"
-    },
-    {
-      "id": "ep027",
-      "title": "Why Chicago Took 126 Years to Clear O'Leary's Cow 😳",
-      "due_at": "2026-10-04T19:00:00-04:00"
-    },
-    {
-      "id": "ep035",
-      "title": "Why Did the US Ignore the 1900 Galveston Hurricane? ⚠️",
-      "due_at": "2026-10-05T19:00:00-04:00"
-    }
-  ],
+  "published": [],
   "live": 0,
   "failed_posts": [],
   "not_live": [],
   "llm": {
-    "calls": 46,
+    "calls": 38,
     "by_model": {
-      "gemini-3.5-flash-lite": 23,
-      "gemma-4-31b-it": 6,
-      "gemini-3.6-flash": 1,
-      "gemini-3-flash-preview": 13,
+      "gemini-3.6-flash": 6,
+      "gemini-3-flash-preview": 8,
+      "gemini-3.5-flash-lite": 22,
       "gemini-3.5-flash": 1,
-      "gemini-3.8-flash": 2
+      "gemini-3.7-flash": 1
     },
-    "out_of_quota": []
+    "out_of_quota": [
+      "gemini-3-flash-preview",
+      "gemini-3.5-flash",
+      "gemini-3.6-flash",
+      "gemini-3.7-flash",
+      "gemini-flash-latest"
+    ]
   },
   "renders": {
-    "modal": 13,
+    "modal": 7,
     "runner": 0
   },
-  "daily_done": "2026-09-30",
+  "daily_done": "2026-10-01",
   "minutes_this_month": 2.0,
   "minutes_budget": 2000,
   "modal_cost": {
-    "metered": 1.83,
+    "metered": 1.98,
     "billed": 0.0
   },
   "modal_credit": 30.0,
   "capacity": {
-    "cloud": 217,
+    "cloud": 216,
     "runner": 0,
     "runner_minutes": 0,
-    "modal_credit_left": 26.06
+    "modal_credit_left": 26.02
   },
   "made_here": 0,
-  "open_topics": 67,
-  "parked_topics": 6
+  "open_topics": 79,
+  "parked_topics": 7
 }
