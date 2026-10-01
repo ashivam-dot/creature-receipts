@@ -51,6 +51,8 @@ jobs:
       MODAL_TOKEN_ID: ${{ secrets.MODAL_TOKEN_ID }}
       MODAL_TOKEN_SECRET: ${{ secrets.MODAL_TOKEN_SECRET }}
       YTC_CONTACT: ${{ secrets.YTC_CONTACT }}
+      # Each Short's 6, 24 and 72 hour review goes to the owner's phone (review.py).
+      YTC_NTFY_TOPIC: ${{ secrets.YTC_NTFY_TOPIC }}
       # Stock footage for living-animal beats (sources.stock_videos); a missing key skips that source.
       PEXELS_API_KEY: ${{ secrets.PEXELS_API_KEY }}
       PIXABAY_API_KEY: ${{ secrets.PIXABAY_API_KEY }}
