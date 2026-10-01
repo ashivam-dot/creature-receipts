@@ -78,10 +78,14 @@ def summary(numbers: dict, hours: float) -> dict:
     }
 
 
+def _count(n: int, word: str) -> str:
+    return f"{n:,} {word}" + ("" if n == 1 else "s")
+
+
 def verdict(s: dict, peer_views: list[int]) -> str:
     if s["views"] < NOT_SHOWN_VIEWS:
         where = ", ".join(f"{k.lower().replace('_', ' ')} {v}" for k, v in s["sources"].items()) or "no source data yet"
-        return (f"not shown yet: {s['views']} views in {s['hours']:.0f} hours ({where}). YouTube hasn't tested it in "
+        return (f"not shown yet: {_count(s['views'], 'view')} in {s['hours']:.0f} hours ({where}). YouTube hasn't tested it in "
                 "the Shorts feed, so this says nothing about the script")
     if len(peer_views) >= MIN_PEERS:
         median = statistics.median(peer_views)
@@ -116,7 +120,8 @@ def diagnose(channel: str, short_id: str, script: dict, s: dict, peers: list[dic
 
 def message(channel: str, short_id: str, title: str, checkpoint: int, entry: dict) -> str:
     s = entry["numbers"]
-    lines = [f"{short_id} \"{title}\" at {checkpoint} h: {s['views']} views, {s['likes']} likes, {s['comments']} comments.",
+    lines = [f"{short_id} \"{title}\" at {checkpoint} h: {_count(s['views'], 'view')}, {_count(s['likes'], 'like')}, "
+             f"{_count(s['comments'], 'comment')}.",
              entry["verdict"] + "."]
     if s.get("avg_viewed") is not None:
         lines.append(f"Watched {s['avg_viewed']:.0f}% on average" + (f"; {s['watching_at_5'] * 100:.0f}% still there after the first second or two"
