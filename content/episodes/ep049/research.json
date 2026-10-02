@@ -1,0 +1,276 @@
+{
+  "viable": true,
+  "reason": "The sources support 15 claims with at least two independent sites, though the specific 'dinner' detail is limited to one site and moved to disputed.",
+  "story": "In August 1814, a foreign power captured the United States capital. Following a humiliating defeat at the Battle of Bladensburg, where the American militia fled in panic, President James Madison narrowly escaped capture. As British Redcoats marched into Washington, government clerks desperately stuffed the Declaration of Independence and the Constitution into linen sacks, carting them to a secret cellar in Virginia. At the White House, the First Lady’s enslaved attendant, Paul Jennings, helped save a famous portrait of George Washington just minutes before the invaders arrived. The British, led by General Robert Ross and Admiral George Cockburn, torched the White House and the Capitol, fueled by 3,000 volumes from the Library of Congress. The city seemed doomed until the sky turned black. A devastating storm—so powerful it was described as divine intervention—tore through the city, its torrential rains finally extinguishing the inferno that threatened to leave the young nation in ashes.",
+  "angle": "A massive, 'divine' storm—not the American military—finally stopped the British from burning the rest of the nation's capital to the ground.",
+  "claims": [
+    {
+      "claim": "British forces captured and burned Washington, D.C. in August 1814.",
+      "sources": [
+        "S1",
+        "S2",
+        "S3",
+        "S5",
+        "S6"
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim": "The invasion force was led by Major-General Robert Ross and Rear-Admiral George Cockburn.",
+      "sources": [
+        "S1",
+        "S2",
+        "S6"
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim": "The attack was retaliation for the American burning of York (present-day Toronto) in Canada.",
+      "sources": [
+        "S1",
+        "S3",
+        "S6"
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim": "The British force consisted of battle-hardened veterans of the Napoleonic Wars.",
+      "sources": [
+        "S1",
+        "S2"
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim": "American militia forces were swiftly defeated and fled at the Battle of Bladensburg on August 24, 1814.",
+      "sources": [
+        "S1",
+        "S2",
+        "S5"
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim": "President James Madison narrow escaped capture during the battle after nearly riding into British lines.",
+      "sources": [
+        "S1",
+        "S2"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "claim": "Government clerks saved the Declaration of Independence and the Constitution by packing them into linen bags.",
+      "sources": [
+        "S2",
+        "S5"
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim": "First Lady Dolley Madison and enslaved attendant Paul Jennings helped save a portrait of George Washington from the White House.",
+      "sources": [
+        "S1",
+        "S7"
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim": "British troops set fire to the White House and the United States Capitol.",
+      "sources": [
+        "S1",
+        "S2",
+        "S3",
+        "S5",
+        "S6"
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim": "The 3,000-volume collection of the Library of Congress was destroyed in the fire.",
+      "sources": [
+        "S1",
+        "S6"
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim": "British Admiral George Cockburn looted a government ledger from 1810 from the Capitol.",
+      "sources": [
+        "S1",
+        "S3",
+        "S4"
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim": "A massive, devastating storm struck the city on August 25, helping to put out the fires.",
+      "sources": [
+        "S1",
+        "S5"
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim": "The Patent Office was the only major government building in Washington spared from destruction.",
+      "sources": [
+        "S1",
+        "S5"
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim": "General Ross ordered his troops to spare private property, focusing the destruction on public buildings.",
+      "sources": [
+        "S1",
+        "S6"
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim": "Following the fires, Congress convened in the Post and Patent Office building.",
+      "sources": [
+        "S1",
+        "S5"
+      ],
+      "confidence": "high"
+    }
+  ],
+  "disputed": [
+    "The tornado detail is only mentioned in Wikipedia; the script should use 'devastating storm' as described by other sources.",
+    "The story of British troops eating the President's dinner appears only in Wikipedia; it should be omitted or described as a British report.",
+    "The legend of Dolley Madison personally cutting the portrait from its frame is contradicted by Paul Jennings' memoir; the script should attribute the physical removal to staff.",
+    "The intent of the British retreat is debated; while some say the storm forced it, others argue the occupation was always meant to be a short raid."
+  ],
+  "visuals": [
+    {
+      "subject": "The Burning of Washington",
+      "queries": [
+        "Burning of the City of Washington August 24 1814 engraving",
+        "The Taking of the City of Washington 1814 print"
+      ]
+    },
+    {
+      "subject": "The Lansdowne Portrait of George Washington",
+      "queries": [
+        "Gilbert Stuart George Washington Lansdowne portrait",
+        "George Washington East Room portrait White House"
+      ]
+    },
+    {
+      "subject": "Major-General Robert Ross",
+      "queries": [
+        "Major General Robert Ross portrait",
+        "Major-General Robert Ross monument St Paul's Cathedral"
+      ]
+    },
+    {
+      "subject": "Rear-Admiral George Cockburn",
+      "queries": [
+        "Sir George Cockburn 10th Baronet portrait",
+        "Rear Admiral George Cockburn engraving"
+      ]
+    },
+    {
+      "subject": "The White House after the burning",
+      "queries": [
+        "George Munger The President's House after the fire 1814",
+        "White House ruins 1814 watercolor"
+      ]
+    },
+    {
+      "subject": "The U.S. Capitol after the burning",
+      "queries": [
+        "George Munger The United States Capitol after the fire 1814",
+        "US Capitol ruins 1814 watercolor"
+      ]
+    },
+    {
+      "subject": "The Battle of Bladensburg",
+      "queries": [
+        "The Battle of Bladensburg 1814 illustration",
+        "Battle of Bladensburg 1814 painting"
+      ]
+    },
+    {
+      "subject": "Paul Jennings",
+      "queries": [
+        "Paul Jennings daguerreotype",
+        "Paul Jennings enslaved attendant portrait"
+      ]
+    },
+    {
+      "subject": "The Declaration of Independence",
+      "queries": [
+        "United States Declaration of Independence parchment",
+        "Declaration of Independence original document"
+      ]
+    },
+    {
+      "subject": "Looted 1810 Receipt Book",
+      "queries": [
+        "Receipt book for the United States for the year 1810",
+        "Admiral Cockburn 1810 ledger Library of Congress"
+      ]
+    },
+    {
+      "subject": "The Old Patent Office Building",
+      "queries": [
+        "Old Patent Office Building Washington DC",
+        "National Portrait Gallery Washington DC exterior"
+      ]
+    },
+    {
+      "subject": "Congreve Rockets",
+      "queries": [
+        "Congreve rocket 1812 illustration",
+        "British Congreve rockets War of 1812"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "label": "S1",
+      "url": "https://en.wikipedia.org/wiki/Burning_of_Washington",
+      "title": "Burning of Washington",
+      "site": "wikipedia.org"
+    },
+    {
+      "label": "S2",
+      "url": "https://www.history.com/news/the-british-burn-washington-d-c-200-years-ago",
+      "title": "When the British Burned Washington, D.C. | HISTORY",
+      "site": "history.com"
+    },
+    {
+      "label": "S3",
+      "url": "https://www.bbc.co.uk/news/blogs-magazine-monitor-28833238",
+      "title": "The odd objects looted from Washington DC in 1814",
+      "site": "bbc.co.uk"
+    },
+    {
+      "label": "S4",
+      "url": "https://web.archive.org/web/20180413043354/https://www.loc.gov/item/2013656773/",
+      "title": "An account of the receipts and expenditures of the United States for the year 1810.",
+      "site": "loc.gov"
+    },
+    {
+      "label": "S5",
+      "url": "https://prologue.blogs.archives.gov/2014/08/18/the-burning-of-washington/",
+      "title": "The burning of Washington",
+      "site": "archives.gov"
+    },
+    {
+      "label": "S6",
+      "url": "https://www.nps.gov/people/robert-ross.htm",
+      "title": "Robert Ross (U.S. National Park Service)",
+      "site": "nps.gov"
+    },
+    {
+      "label": "S7",
+      "url": "https://www.npr.org/sections/thetwo-way/2009/08/descendants_of_the_slave_who_s.html",
+      "title": "Descendants Of A Slave See The Painting He Saved",
+      "site": "npr.org"
+    }
+  ],
+  "topic": "Burning of Washington (1814): British troops ate the dinner President Madison had left behind before burning the White House, right as a freak tornado struck the city",
+  "series": "The Last Hours"
+}
