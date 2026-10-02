@@ -29,6 +29,10 @@ into `strategy/SCRIPT-RULES.md`, then cite the evidence here.
 - Cut each Short to 17–27 seconds to match top-performing competitors.
 - Title as a question the Short answers, with one emoji at the end.
 - Write a last line that flows straight into the first line to encourage seamless rewatching.
+- End on a line that makes viewers want to answer or rewatch, not a passive closing statement: Universe Receipts'
+  best Short so far (689 views, 3.8 likes per 100) drew 1 comment because it closed on a statement (2026-10-02).
+- Choose topics whose key moments have strong period pictures: weak visuals caused 7 of the 8 latest history
+  rejections, and each rejection spends a day's free model quota (2026-10-02).
 
 ## Scoreboard
 
