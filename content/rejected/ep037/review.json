@@ -109,7 +109,59 @@
       "better_than_last": "Stronger focus on a central mystery than the Galveston hurricane short.",
       "judge": "gemini-3-flash-preview",
       "passed": false
+    },
+    {
+      "at": "2026-10-02T05:14:41+05:30",
+      "check": {
+        "duration": 23.99,
+        "words": 84,
+        "integrated_lufs": -14.3,
+        "true_peak_dbfs": -1.8,
+        "warnings": [],
+        "speech_differences": [
+          "'dogs' heard as 'dayogs' after 'slaughtered his own'"
+        ],
+        "speech_error": null,
+        "sources": [
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons"
+        ]
+      },
+      "scores": {
+        "hook": 4,
+        "clarity": 4,
+        "payoff": 4,
+        "visuals": 3,
+        "loop": 4
+      },
+      "notes": {
+        "hook": "The initial premise creates immediate curiosity regarding his deception.",
+        "clarity": "The timeline and sequence of events are straightforward and accessible.",
+        "payoff": "The conclusion effectively resolves the secret Antarctic shift.",
+        "visuals": "Historical images work well, though one frame uses modern color media.",
+        "loop": "The trailing phrase completes smoothly into the opening beat."
+      },
+      "frames": [
+        {
+          "beat": 4,
+          "problem": "anachronistic modern color photograph"
+        }
+      ],
+      "speech": [],
+      "rewrite": [],
+      "better_than_last": "Stronger seamless audio loop mechanics than recent episodes.",
+      "judge": "gemini-3.6-flash",
+      "passed": false
     }
   ],
-  "best_round": 1
+  "best_round": 3,
+  "verdict": "rejected",
+  "reason": "low scores: visuals",
+  "rejected_at": "2026-10-02T05:14:41+05:30"
 }

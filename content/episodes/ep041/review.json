@@ -1,0 +1,63 @@
+{
+  "rounds": [
+    {
+      "at": "2026-10-02T05:08:06+05:30",
+      "check": {
+        "duration": 24.89,
+        "words": 84,
+        "integrated_lufs": -14.2,
+        "true_peak_dbfs": -1.6,
+        "warnings": [],
+        "speech_differences": [
+          "'huarango' heard as 'guarango' after 'removing deep rooted'",
+          "'an' heard as 'in' after 'rooted huarango trees'"
+        ],
+        "speech_error": null,
+        "sources": [
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "designed card",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons"
+        ]
+      },
+      "scores": {
+        "hook": 3,
+        "clarity": 4,
+        "payoff": 3,
+        "visuals": 3,
+        "loop": 3
+      },
+      "notes": {
+        "hook": "The premise is intriguing but lacks immediate dramatic tension.",
+        "clarity": "Explains the ecological chain reaction clearly in simple terms.",
+        "payoff": "The reveal of environmental self-destruction is clear but predictable.",
+        "visuals": "Images mostly fit, but beat 6 shows pottery rather than aqueducts.",
+        "loop": "The transition back to beat 1 works decently but feels slightly abrupt."
+      },
+      "frames": [
+        {
+          "beat": 6,
+          "problem": "Shows a ceramic vessel instead of irrigation aqueducts or a dry landscape."
+        }
+      ],
+      "speech": [
+        {
+          "beat": 3,
+          "word": "Huarango",
+          "respelling": "war ran go"
+        }
+      ],
+      "rewrite": [
+        "Beat 1: The Nazca destroyed their ecosystem by clearing trees to carve giant lines.",
+        "Beat 6: Their aqueducts dried up, collapsing the civilization into desert."
+      ],
+      "better_than_last": "It presents a clearer cause-and-effect narrative than the Galveston hurricane episode.",
+      "judge": "gemini-3.6-flash",
+      "passed": false
+    }
+  ],
+  "best_round": 1
+}

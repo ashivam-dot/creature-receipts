@@ -20,7 +20,7 @@ event is told for its gore. Space topics belong to the sister channel Universe R
 | Added | Story | Series | Why |
 |---|---|---|---|
 | 2026-10-01 | Nasca culture (c. 500 AD): they carved the world-famous Nazca Lines but triggered their own collapse by clearing the Huarango trees that held the desert floor in place — making (ep041) | Fallen Empires | New archaeological news regarding the Wari conquest of the Nasca is currently trending. |
-| 2026-10-01 | New Fire ceremony (1507): the Aztecs believed the world would end every 52 years unless they sacrificed a heart to relight the sun while the entire empire waited in total darkness — making (ep042) | Fallen Empires | The Aztec cosmological concept 'Nahui Ollin' is currently trending on Wikipedia. |
+| 2026-10-01 | New Fire ceremony (1507): the Aztecs believed the world would end every 52 years unless they sacrificed a heart to relight the sun while the entire empire waited in total darkness — done (ep042) | Fallen Empires | The Aztec cosmological concept 'Nahui Ollin' is currently trending on Wikipedia. |
 
 ## Anniversaries (publish on the date, 7 p.m. Eastern)
 
@@ -52,8 +52,8 @@ event is told for its gore. Space topics belong to the sister channel Universe R
 - SS Eastland (1915): it rolled over while still tied to its Chicago dock, and 844 people died in water about 20 feet deep
 - Great Fire of London (1666): only a handful of deaths were recorded, though the true toll is unknown
 - Radium Girls (1917): factory workers painted watch dials with self-glowing paint and pointed the brushes with their lips, later seeing their own jaws glow in the dark — parked (ep033)
-- 1945 Empire State Building B-25 crash (1945): a lost bomber crashed into the 79th floor of the skyscraper, and an elevator operator fell 75 floors and survived — making (ep038)
-- Battle of the Little Bighorn (1876): Custer split his forces and rode directly into the largest Native American encampment ever gathered on the plains
+- 1945 Empire State Building B-25 crash (1945): a lost bomber crashed into the 79th floor of the skyscraper, and an elevator operator fell 75 floors and survived — done (ep038)
+- Battle of the Little Bighorn (1876): Custer split his forces and rode directly into the largest Native American encampment ever gathered on the plains — making (ep043)
 - Battle of the Alamo (1836): a small band of Texian defenders held out for 13 days before a dawn assault overwhelmed the mission walls
 - Burning of Washington (1814): British troops ate the dinner President Madison had left behind before burning the White House, right as a freak tornado struck the city
 - Battle of Agincourt (1415): outnumbered English archers stood in thick mud as heavily armored French knights charged and sank into the muck
@@ -97,7 +97,7 @@ event is told for its gore. Space topics belong to the sister channel Universe R
 - Lady Franklin Bay Expedition (1884): only a handful of the 25 men were alive when the rescuers reached them
 - Jeannette expedition (1881): a ship sent to find an open sea at the North Pole was crushed by ice instead
 - 1924 British Mount Everest expedition: George Mallory's body was found 75 years later, and nobody knows if he reached the top
-- Amundsen's South Pole expedition (1910): a secret race to the pole succeeded because the leader ate his own sled dogs to survive — making (ep037)
+- Amundsen's South Pole expedition (1910): a secret race to the pole succeeded because the leader ate his own sled dogs to survive — parked (ep037)
 - Great Fire of 1910 (1910): hurricane-force winds turned a scattering of forest fires into a single monster that swallowed towns in minutes
 - Voyage of the James Caird (1916): to save his crew, Shackleton navigated 800 miles of the world's deadliest ocean in a 22-foot lifeboat
 

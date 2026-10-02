@@ -1,35 +1,34 @@
 {
-  "updated_at": "2026-10-02T05:05:51+05:30",
+  "updated_at": "2026-10-02T11:05:53+05:30",
   "day": 1,
-  "result": "degraded",
+  "result": "ok",
   "run": {
     "host": "modal",
-    "id": "ta-01M3WX4GG539RQNJ3J0165QDTR",
+    "id": "ta-01M3XHQPRZAE6Y2QEPFV2B14CR",
     "number": null,
     "trigger": "schedule",
-    "started_at": "2026-10-02T05:05:10+05:30",
-    "started_at_utc": "2026-10-01T23:35:10+00:00",
-    "seconds": 41
+    "started_at": "2026-10-02T11:05:09+05:30",
+    "started_at_utc": "2026-10-02T05:35:09+00:00",
+    "seconds": 44
   },
   "stages": [
     {
       "name": "deploy",
       "ok": true,
       "detail": "",
-      "seconds": 3.5
+      "seconds": 2.2
     },
     {
       "name": "sync",
       "ok": true,
       "detail": "5 posts",
-      "seconds": 0.5
+      "seconds": 0.7
     },
     {
       "name": "playlists",
-      "ok": false,
-      "detail": "",
-      "error": "HttpError: <HttpError 409 when requesting https://youtube.googleapis.com/youtube/v3/playlistItems?part=snippet&alt=json returned \"The operation was aborted.\". Details: \"[{'domain': 'youtube.CoreErrorDomain', 'reason': 'SERVICE_UNAVAILABLE'}]\">",
-      "seconds": 1.8
+      "ok": true,
+      "detail": "added ep031 to 'Sole Survivors'",
+      "seconds": 1.2
     },
     {
       "name": "languages",
@@ -41,61 +40,61 @@
       "name": "on youtube",
       "ok": true,
       "detail": "every Short sent is public",
-      "seconds": 0.0
+      "seconds": 0.1
     },
     {
       "name": "short reviews",
       "ok": true,
-      "detail": "no checkpoint due",
-      "seconds": 0.2
+      "detail": "ep031 at 6 h: not shown yet: 2 views in 6 hours (no source data yet). YouTube hasn't tested it in the Shorts feed, so this says nothing about the script",
+      "seconds": 0.6
     },
     {
       "name": "collect",
       "ok": true,
-      "detail": "ep037 unfinished (OutOfQuota: no model in ('gemini-3.8-flash', 'gemini-3.7-flash', 'gemini-3.6-flash', 'gemini-3.5-flash', 'gemini-3-flash-preview', 'gemini-flash-latest', 'ovh:Qwen3.5-397B-A17B') has free quota left today); ep038 unfinished (Overloaded: every model in ('gemini-3.8-flash', 'gemini-3.7-flash', 'gemini-3.6-flash', 'gemini-3.5-flash', 'gemini-3-flash-preview', 'gemini-flash-latest', 'ovh:Qwen3.5-397B-A17B') with quota left stayed overloaded for 25 minutes); ep039 unfinished (Overloaded: every model in ('gemini-3.8-flash', 'gemini-3.7-flash', 'gemini-3.6-flash', 'gemini-3.5-flash'",
-      "seconds": 19.6
+      "detail": "ep037 rejected (low scores: visuals); ep038 ready; ep039 unfinished (OutOfQuota: no model in ('gemini-3.8-flash', 'gemini-3.7-flash', 'gemini-3.6-flash', 'gemini-3.5-flash', 'gemini-3-flash-preview', 'gemini-flash-latest', 'ovh:Qwen3.5-397B-A17B') has free quota left today); ep040 unfinished (OutOfQuota: no model in ('gemini-3.8-flash', 'gemini-3.7-flash', 'gemini-3.6-flash', 'gemini-3.5-flash', 'gemini-3-flash-preview', 'gemini-flash-latest', 'ovh:Qwen3.5-397B-A17B') has free quota left today); ep041 unfinished (Overloaded: every model in ('gemini-3.8-flash', 'gemini-3.7-flash', 'gemini-3.6-f",
+      "seconds": 18.5
     },
     {
       "name": "buffer channel",
       "ok": true,
       "detail": "connected",
-      "seconds": 0.4
+      "seconds": 0.2
     },
     {
       "name": "preflight ep025",
       "ok": true,
       "detail": "video still hosted",
-      "seconds": 0.5
+      "seconds": 0.7
     },
     {
       "name": "publish",
       "ok": true,
       "detail": "",
-      "seconds": 0.1
+      "seconds": 2.1
     },
     {
-      "name": "start ep037",
+      "name": "schedule ep042",
       "ok": true,
-      "detail": "Amundsen's South Pole expedition (1910): a secret race to the pole succeeded because the leader ate his own sled dogs to survive",
-      "seconds": 1.3
+      "detail": "2026-10-02T12:30:00-04:00",
+      "seconds": 0.8
     },
     {
-      "name": "start ep038",
+      "name": "schedule ep038",
       "ok": true,
-      "detail": "1945 Empire State Building B-25 crash (1945): a lost bomber crashed into the 79th floor of the skyscraper, and an elevator operator fell 75 floors and survived",
-      "seconds": 1.0
+      "detail": "2026-10-03T21:30:00-04:00",
+      "seconds": 0.9
     },
     {
       "name": "start ep039",
       "ok": true,
       "detail": "Mongol invasions of Japan (1281): the invasion fleet was destroyed by a legendary typhoon known as the kamikaze, saving Japan from conquest",
-      "seconds": 0.6
+      "seconds": 1.2
     },
     {
       "name": "start ep040",
       "ok": true,
       "detail": "Battle of Saragarhi (1897): twenty-one soldiers fought ten thousand tribesmen to the last man, signaling updates until the final seconds",
-      "seconds": 0.6
+      "seconds": 0.7
     },
     {
       "name": "start ep041",
@@ -104,10 +103,10 @@
       "seconds": 0.6
     },
     {
-      "name": "start ep042",
+      "name": "start ep043",
       "ok": true,
-      "detail": "New Fire ceremony (1507): the Aztecs believed the world would end every 52 years unless they sacrificed a heart to relight the sun while the entire empire waited in total darkness",
-      "seconds": 1.0
+      "detail": "Battle of the Little Bighorn (1876): Custer split his forces and rode directly into the largest Native American encampment ever gathered on the plains",
+      "seconds": 1.3
     },
     {
       "name": "publish",
@@ -116,34 +115,33 @@
       "seconds": 0.2
     }
   ],
-  "errors": [
-    "playlists: HttpError: <HttpError 409 when requesting https://youtube.googleapis.com/youtube/v3/playlistItems?part=snippet&alt=json returned \"The operation was aborted.\". Details: \"[{'domain': 'youtube.CoreErrorDomain', 'reason': 'SERVICE_UNAVAILABLE'}]\">"
-  ],
+  "errors": [],
   "owner_action": [],
   "notes": [
-    "ep037 stopped on Gemini's free quota; it resumes in a later run",
-    "ep038 stopped on Gemini's free tier being overloaded; it resumes in a later run",
-    "ep039 stopped on Gemini's free tier being overloaded; it resumes in a later run",
+    "ep039 stopped on Gemini's free quota; it resumes in a later run",
     "ep040 stopped on Gemini's free quota; it resumes in a later run",
     "ep041 stopped on Gemini's free tier being overloaded; it resumes in a later run",
-    "ep042 stopped on Gemini's free quota; it resumes in a later run"
+    "only 6 Shorts made and unposted; scheduling 2 a day"
   ],
   "inventory": {
-    "total": 4,
-    "in_buffer": 4,
+    "total": 6,
+    "in_buffer": 6,
     "waiting": 0,
     "target": 42,
     "making": [],
     "remote": [
-      "ep037",
-      "ep038",
       "ep039",
       "ep040",
       "ep041",
-      "ep042"
+      "ep043"
     ]
   },
   "queue": [
+    {
+      "id": "ep042",
+      "title": "Why Did the Aztecs Put Out Every Fire in 1507? 😳",
+      "due_at": "2026-10-02T12:30:00-04:00"
+    },
     {
       "id": "ep025",
       "title": "Why Did Britain's Giant R101 Airship Crash? ⚠️",
@@ -153,6 +151,11 @@
       "id": "ep026",
       "title": "Why History Forgot America's Deadliest Wildfire 😳",
       "due_at": "2026-10-03T19:00:00-04:00"
+    },
+    {
+      "id": "ep038",
+      "title": "The B-25 That Struck the Empire State Building 🤯",
+      "due_at": "2026-10-03T21:30:00-04:00"
     },
     {
       "id": "ep027",
@@ -169,27 +172,31 @@
   "made": [
     {
       "id": "ep037",
-      "outcome": "unfinished",
+      "outcome": "rejected",
       "topic": "Amundsen's South Pole expedition (1910): a secret race to the pole succeeded because the leader ate his own sled dogs to survive",
-      "reason": "OutOfQuota: no model in ('gemini-3.8-flash', 'gemini-3.7-flash', 'gemini-3.6-flash', 'gemini-3.5-flash', 'gemini-3-flash-preview', 'gemini-flash-latest', 'ovh:Qwen3.5-397B-A17B') has free quota left today",
-      "quota": true,
-      "overloaded": false
+      "reason": "low scores: visuals"
     },
     {
       "id": "ep038",
-      "outcome": "unfinished",
+      "outcome": "ready",
       "topic": "1945 Empire State Building B-25 crash (1945): a lost bomber crashed into the 79th floor of the skyscraper, and an elevator operator fell 75 floors and survived",
-      "reason": "Overloaded: every model in ('gemini-3.8-flash', 'gemini-3.7-flash', 'gemini-3.6-flash', 'gemini-3.5-flash', 'gemini-3-flash-preview', 'gemini-flash-latest', 'ovh:Qwen3.5-397B-A17B') with quota left stayed overloaded for 25 minutes",
-      "quota": false,
-      "overloaded": true
+      "title": "The B-25 That Struck the Empire State Building 🤯",
+      "scores": {
+        "hook": 4,
+        "clarity": 4,
+        "payoff": 4,
+        "visuals": 4,
+        "loop": 4
+      },
+      "media_url": "https://res.cloudinary.com/uj4a07e7/video/upload/v1790897969/creaturereceipts/ep038-4804183b.mp4"
     },
     {
       "id": "ep039",
       "outcome": "unfinished",
       "topic": "Mongol invasions of Japan (1281): the invasion fleet was destroyed by a legendary typhoon known as the kamikaze, saving Japan from conquest",
-      "reason": "Overloaded: every model in ('gemini-3.8-flash', 'gemini-3.7-flash', 'gemini-3.6-flash', 'gemini-3.5-flash', 'gemini-3-flash-preview', 'gemini-flash-latest', 'ovh:Qwen3.5-397B-A17B') with quota left stayed overloaded for 25 minutes",
-      "quota": false,
-      "overloaded": true
+      "reason": "OutOfQuota: no model in ('gemini-3.8-flash', 'gemini-3.7-flash', 'gemini-3.6-flash', 'gemini-3.5-flash', 'gemini-3-flash-preview', 'gemini-flash-latest', 'ovh:Qwen3.5-397B-A17B') has free quota left today",
+      "quota": true,
+      "overloaded": false
     },
     {
       "id": "ep040",
@@ -209,108 +216,110 @@
     },
     {
       "id": "ep042",
-      "outcome": "unfinished",
+      "outcome": "ready",
       "topic": "New Fire ceremony (1507): the Aztecs believed the world would end every 52 years unless they sacrificed a heart to relight the sun while the entire empire waited in total darkness",
-      "reason": "OutOfQuota: no model in ('gemini-3.8-flash', 'gemini-3.7-flash', 'gemini-3.6-flash', 'gemini-3.5-flash', 'gemini-3-flash-preview', 'gemini-flash-latest', 'ovh:Qwen3.5-397B-A17B') has free quota left today",
-      "quota": true,
-      "overloaded": false
+      "title": "Why Did the Aztecs Put Out Every Fire in 1507? 😳",
+      "scores": {
+        "hook": 5,
+        "clarity": 5,
+        "payoff": 4,
+        "visuals": 5,
+        "loop": 5
+      },
+      "media_url": "https://res.cloudinary.com/uj4a07e7/video/upload/v1790897864/creaturereceipts/ep042-fc2baa5e.mp4"
     }
   ],
   "spawned": [
     {
-      "id": "ep037",
-      "topic": "Amundsen's South Pole expedition (1910): a secret race to the pole succeeded because the leader ate his own sled dogs to survive",
-      "call_id": "fc-01M3WX5X4QNSRW1N4RPRW9XXP2"
-    },
-    {
-      "id": "ep038",
-      "topic": "1945 Empire State Building B-25 crash (1945): a lost bomber crashed into the 79th floor of the skyscraper, and an elevator operator fell 75 floors and survived",
-      "call_id": "fc-01M3WX5Y4JB6CJ76VPQ64ZZ5W9"
-    },
-    {
       "id": "ep039",
       "topic": "Mongol invasions of Japan (1281): the invasion fleet was destroyed by a legendary typhoon known as the kamikaze, saving Japan from conquest",
-      "call_id": "fc-01M3WX5YQK3RXR5DWVJNYRHEG8"
+      "call_id": "fc-01M3XHS6CA7R6KVX7XANCBBHW6"
     },
     {
       "id": "ep040",
       "topic": "Battle of Saragarhi (1897): twenty-one soldiers fought ten thousand tribesmen to the last man, signaling updates until the final seconds",
-      "call_id": "fc-01M3WX5ZBJ92A6RNBC1YV6WGN6"
+      "call_id": "fc-01M3XHS70EV4NGWMWY9QE4ZTJQ"
     },
     {
       "id": "ep041",
       "topic": "Nasca culture (c. 500 AD): they carved the world-famous Nazca Lines but triggered their own collapse by clearing the Huarango trees that held the desert floor in place",
-      "call_id": "fc-01M3WX5ZYQ8KNSR2XFFMRCS3KV"
+      "call_id": "fc-01M3XHS7MV493VYAJZA1MK5ZF2"
     },
     {
-      "id": "ep042",
-      "topic": "New Fire ceremony (1507): the Aztecs believed the world would end every 52 years unless they sacrificed a heart to relight the sun while the entire empire waited in total darkness",
-      "call_id": "fc-01M3WX60Y0XHFWABTHQDQ9H445"
+      "id": "ep043",
+      "topic": "Battle of the Little Bighorn (1876): Custer split his forces and rode directly into the largest Native American encampment ever gathered on the plains",
+      "call_id": "fc-01M3XHS8X2D3N1XWDBTEXJYCF0"
     }
   ],
   "in_cloud": [
     {
-      "id": "ep037",
-      "topic": "Amundsen's South Pole expedition (1910): a secret race to the pole succeeded because the leader ate his own sled dogs to survive",
-      "spawned_at": "2026-10-02T05:05:47+05:30"
-    },
-    {
-      "id": "ep038",
-      "topic": "1945 Empire State Building B-25 crash (1945): a lost bomber crashed into the 79th floor of the skyscraper, and an elevator operator fell 75 floors and survived",
-      "spawned_at": "2026-10-02T05:05:48+05:30"
-    },
-    {
       "id": "ep039",
       "topic": "Mongol invasions of Japan (1281): the invasion fleet was destroyed by a legendary typhoon known as the kamikaze, saving Japan from conquest",
-      "spawned_at": "2026-10-02T05:05:48+05:30"
+      "spawned_at": "2026-10-02T11:05:50+05:30"
     },
     {
       "id": "ep040",
       "topic": "Battle of Saragarhi (1897): twenty-one soldiers fought ten thousand tribesmen to the last man, signaling updates until the final seconds",
-      "spawned_at": "2026-10-02T05:05:49+05:30"
+      "spawned_at": "2026-10-02T11:05:51+05:30"
     },
     {
       "id": "ep041",
       "topic": "Nasca culture (c. 500 AD): they carved the world-famous Nazca Lines but triggered their own collapse by clearing the Huarango trees that held the desert floor in place",
-      "spawned_at": "2026-10-02T05:05:50+05:30"
+      "spawned_at": "2026-10-02T11:05:52+05:30"
     },
     {
-      "id": "ep042",
-      "topic": "New Fire ceremony (1507): the Aztecs believed the world would end every 52 years unless they sacrificed a heart to relight the sun while the entire empire waited in total darkness",
-      "spawned_at": "2026-10-02T05:05:51+05:30"
+      "id": "ep043",
+      "topic": "Battle of the Little Bighorn (1876): Custer split his forces and rode directly into the largest Native American encampment ever gathered on the plains",
+      "spawned_at": "2026-10-02T11:05:53+05:30"
     }
   ],
-  "published": [],
+  "published": [
+    {
+      "id": "ep042",
+      "title": "Why Did the Aztecs Put Out Every Fire in 1507? 😳",
+      "due_at": "2026-10-02T12:30:00-04:00"
+    },
+    {
+      "id": "ep038",
+      "title": "The B-25 That Struck the Empire State Building 🤯",
+      "due_at": "2026-10-03T21:30:00-04:00"
+    }
+  ],
   "live": 1,
   "failed_posts": [],
   "not_live": [],
   "llm": {
-    "calls": 4,
+    "calls": 17,
     "by_model": {
-      "gemini-3-flash-preview": 1,
-      "gemini-3.5-flash-lite": 3
+      "gemini-3.6-flash": 3,
+      "gemini-3.7-flash": 2,
+      "gemini-3-flash-preview": 2,
+      "gemini-flash-latest": 1,
+      "gemini-3.1-flash-lite": 1,
+      "gemini-flash-lite-latest": 1,
+      "gemini-3.5-flash-lite": 7
     },
     "out_of_quota": []
   },
   "renders": {
-    "modal": 7,
+    "modal": 9,
     "runner": 0
   },
   "daily_done": "2026-10-01",
   "minutes_this_month": 2.0,
   "minutes_budget": 2000,
   "modal_cost": {
-    "metered": 2.62,
+    "metered": 2.98,
     "billed": 0.0
   },
   "modal_credit": 30.0,
   "capacity": {
-    "cloud": 211,
+    "cloud": 208,
     "runner": 0,
     "runner_minutes": 0,
-    "modal_credit_left": 25.38
+    "modal_credit_left": 25.02
   },
   "made_here": 0,
-  "open_topics": 79,
-  "parked_topics": 7
+  "open_topics": 78,
+  "parked_topics": 8
 }

@@ -1,0 +1,46 @@
+{
+  "rounds": [
+    {
+      "at": "2026-10-02T05:07:43+05:30",
+      "check": {
+        "duration": 22.73,
+        "words": 81,
+        "integrated_lufs": -14.1,
+        "true_peak_dbfs": -1.7,
+        "warnings": [],
+        "speech_differences": [],
+        "speech_error": null,
+        "sources": [
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons"
+        ]
+      },
+      "scores": {
+        "hook": 5,
+        "clarity": 5,
+        "payoff": 4,
+        "visuals": 5,
+        "loop": 5
+      },
+      "notes": {
+        "hook": "The stark paradox of plunging an empire into darkness to keep the world alive immediately halts scrolling.",
+        "clarity": "The sequence of events during the New Fire Ceremony is logically organized and effortlessly clear.",
+        "payoff": "The horrifying yet awe-inspiring method of relighting the empire via a chest-lit spark pays off the opening mystery.",
+        "visuals": "Authentic codex illustrations, period artifacts, and relevant astronomical imagery create a vivid atmosphere.",
+        "loop": "The final line mirrors the opening hook to create a clean, natural loop back to the start."
+      },
+      "frames": [],
+      "speech": [],
+      "rewrite": [],
+      "better_than_last": "It achieves a richer atmosphere by weaving authentic Aztec codex art and artifacts directly into the ritual narrative.",
+      "judge": "gemini-3.7-flash",
+      "passed": true
+    }
+  ],
+  "best_round": 1
+}

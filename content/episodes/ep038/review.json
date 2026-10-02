@@ -1,0 +1,50 @@
+{
+  "rounds": [
+    {
+      "at": "2026-10-02T05:09:27+05:30",
+      "check": {
+        "duration": 26.25,
+        "words": 89,
+        "integrated_lufs": -14.4,
+        "true_peak_dbfs": -1.8,
+        "warnings": [],
+        "speech_differences": [
+          "'s' heard as 'is' after 'm new york'",
+          "'cables' heard as 'cable' after 'evacuate her the'"
+        ],
+        "speech_error": null,
+        "sources": [
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons"
+        ]
+      },
+      "scores": {
+        "hook": 4,
+        "clarity": 4,
+        "payoff": 4,
+        "visuals": 4,
+        "loop": 4
+      },
+      "notes": {
+        "hook": "Sets atmospheric tension effectively in the opening seconds.",
+        "clarity": "Chronological progression makes the event simple to follow.",
+        "payoff": "The miraculous elevator survival delivers a strong resolution.",
+        "visuals": "Historical photographs directly align with the voiceover narrative.",
+        "loop": "Final phrase links seamlessly into the opening line."
+      },
+      "frames": [],
+      "speech": [],
+      "rewrite": [],
+      "better_than_last": "It delivers a clearer narrative focus and stronger survival payoff than ep035.",
+      "judge": "gemini-3.6-flash",
+      "passed": true
+    }
+  ],
+  "best_round": 1
+}

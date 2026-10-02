@@ -61,6 +61,64 @@
       "better_than_last": "Clearer cause-and-effect storytelling than the Galveston episode.",
       "judge": "gemini-3.6-flash",
       "passed": false
+    },
+    {
+      "at": "2026-10-02T05:09:17+05:30",
+      "check": {
+        "duration": 36.73,
+        "words": 75,
+        "integrated_lufs": -14.2,
+        "true_peak_dbfs": -1.5,
+        "warnings": [
+          "duration 36.73 s is outside 17-35 s"
+        ],
+        "speech_differences": [
+          "'(nothing)' heard as 'allowed as a gripping true story narrator on a viral youtube short fast and urgent about 170 words a minute with only tiny pauses a low intense voice and rising tension that hits the last line hard speak only the transcript'",
+          "'sailed' heard as 'sail' after '4000 ships'",
+          "'15' heard as '15th' after 'chains on august'",
+          "'(nothing)' heard as 'the' after 'monster typhoon smashed'",
+          "'chained' heard as 'chain' after 'drowned when the'"
+        ],
+        "speech_error": null,
+        "sources": [
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons"
+        ]
+      },
+      "scores": {
+        "hook": 3,
+        "clarity": 4,
+        "payoff": 4,
+        "visuals": 3,
+        "loop": 3
+      },
+      "notes": {
+        "hook": "Strong historical premise, but pacing is slowed by narration overhead.",
+        "clarity": "Narrative sequence is clear and easy to follow.",
+        "payoff": "The sudden destruction of the armada lands well.",
+        "visuals": "Period scrolls fit the tone, but modern artifacts feel out of place.",
+        "loop": "Closing phrasing creates a repetitive transition back into the start."
+      },
+      "frames": [
+        {
+          "beat": 7,
+          "problem": "blurry museum display case breaks historical immersion"
+        }
+      ],
+      "speech": [],
+      "rewrite": [
+        "Beat 1: Four thousand Mongol ships invaded Japan.",
+        "Beat 8: Four thousand ships sailed to their doom before..."
+      ],
+      "better_than_last": "It utilizes cohesive period art scrolls to capture authentic medieval warfare better than recent episodes.",
+      "judge": "gemini-3.7-flash",
+      "passed": false
     }
   ],
   "best_round": 1

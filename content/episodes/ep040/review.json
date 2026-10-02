@@ -1,0 +1,77 @@
+{
+  "rounds": [
+    {
+      "at": "2026-10-02T05:09:36+05:30",
+      "check": {
+        "duration": 49.53,
+        "words": 83,
+        "integrated_lufs": -14.4,
+        "true_peak_dbfs": -1.6,
+        "warnings": [
+          "duration 49.53 s is outside 17-35 s"
+        ],
+        "speech_differences": [
+          "'(nothing)' heard as 'read the transcript below aloud as a gripping true story narrator on a viral youtube short fast and urgent about 170 words a minute with only tiny pauses a low intense voice and rising tension that hits the last line hard speak only the transcript'",
+          "'faced' heard as 'face' after '21 soldiers'",
+          "'0' heard as '(nothing)' after 'alone at 9'",
+          "'ishar' heard as 'eshar' after 'saragarhi outpost havildar'",
+          "'sepoy' heard as 'seapoy' after 'to surrounding bushes'",
+          "'signaller' heard as 'signaler' after 'the breach the'"
+        ],
+        "speech_error": null,
+        "sources": [
+          "Wikimedia Commons",
+          "designed card",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Art Institute of Chicago (CC0)",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons"
+        ]
+      },
+      "scores": {
+        "hook": 4,
+        "clarity": 4,
+        "payoff": 3,
+        "visuals": 3,
+        "loop": 4
+      },
+      "notes": {
+        "hook": "The massive odds provide immediate interest.",
+        "clarity": "Narrative events follow a clear chronological order.",
+        "payoff": "The conclusion is touching but lacks a sharp twist.",
+        "visuals": "Historic images are effective, though some are abstract.",
+        "loop": "The concluding line flows naturally back to the intro."
+      },
+      "frames": [
+        {
+          "beat": 6,
+          "problem": "The image shows swords instead of the communication equipment discussed."
+        }
+      ],
+      "speech": [
+        {
+          "beat": 3,
+          "word": "Ishar",
+          "respelling": "ee shar"
+        },
+        {
+          "beat": 5,
+          "word": "Sepoy",
+          "respelling": "see poy"
+        }
+      ],
+      "rewrite": [
+        "Beat 1: Twenty-one Sikh soldiers stood against ten thousand.",
+        "Beat 2: In 1897, Saragarhi outpost was attacked.",
+        "Beat 5: Gurmukh Singh signaled updates as the walls fell.",
+        "Beat 7: Every man perished in history's greatest stand."
+      ],
+      "better_than_last": "This story offers a more compelling human hero than the Galveston weather disaster.",
+      "judge": "gemini-3-flash-preview",
+      "passed": false
+    }
+  ],
+  "best_round": 1
+}

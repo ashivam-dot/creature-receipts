@@ -26,10 +26,10 @@ voice:
     about 170 words a minute, with only tiny pauses, a low, intense voice and rising tension that hits the last line hard.
     Speak only the transcript.'
 beats:
-- text: The Nazca carved giant lines by clearing the trees holding their desert.
+- text: The Nazca destroyed their ecosystem by clearing trees to carve giant lines.
   emphasis:
-  - giant lines
-  - clearing the trees
+  - destroyed their ecosystem
+  - clearing trees
   visual:
     source: url
     url: https://thumb.wikimedia.org/wikipedia/commons/thumb/0/08/Nasca_-_Triangulos_-_panoramio.jpg/3840px-Nasca_-_Triangulos_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
@@ -117,35 +117,35 @@ beats:
     motion: pan_right
     focus_x: 0.5
     focus_y: 0.5
-- text: Their sophisticated irrigation aqueducts dried up as the civilization collapsed into a barren desert.
+- text: Their aqueducts dried up, collapsing the civilization into desert.
   emphasis:
-  - irrigation aqueducts
-  - barren desert
+  - aqueducts dried up
+  - collapsing
   sfx: pop
   pause_after: 0.4
   visual:
     source: url
-    url: https://upload.wikimedia.org/wikipedia/commons/8/8b/Zoomorphic_Spouted_Vessel_LACMA_M.73.48.47.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    url: https://thumb.wikimedia.org/wikipedia/commons/thumb/3/38/Subjects_with_heads_in_Paracas_and_Nasca_cultures.jpg/3840px-Subjects_with_heads_in_Paracas_and_Nasca_cultures.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
     credit:
       source: Wikimedia Commons
-      title: Zoomorphic Spouted Vessel LACMA M.73.48.47.jpg
-      credit: Unknown author
-      license: Public domain
-      url: https://commons.wikimedia.org/wiki/File:Zoomorphic_Spouted_Vessel_LACMA_M.73.48.47.jpg
+      title: Subjects with heads in Paracas and Nasca cultures.jpg
+      credit: Vicpeters
+      license: CC BY 4.0
+      url: https://commons.wikimedia.org/wiki/File:Subjects_with_heads_in_Paracas_and_Nasca_cultures.jpg
     fallbacks:
     - card
     - color
-    motion: pan_up
+    motion: pan_left
     focus_x: 0.5
     focus_y: 0.5
     card:
       kind: fact
       big: 750 AD
       small: Complete collapse
-- text: The Nazca carved giant lines by clearing the trees holding their desert.
+- text: The Nazca destroyed their ecosystem by clearing trees to carve giant lines.
   emphasis:
-  - giant lines
-  - clearing the trees
+  - destroyed their ecosystem
+  - clearing trees
   visual:
     reuse: 1
     motion: zoom_out
