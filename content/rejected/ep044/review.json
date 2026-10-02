@@ -1,0 +1,174 @@
+{
+  "rounds": [
+    {
+      "at": "2026-10-02T17:29:36+05:30",
+      "check": {
+        "duration": 25.96,
+        "words": 60,
+        "integrated_lufs": -14.4,
+        "true_peak_dbfs": -1.8,
+        "warnings": [],
+        "speech_differences": [
+          "'grandnieces' heard as 'grannieses' after 'only on his'",
+          "'reiner' heard as 'rienner' after 'american diplomat herbert'"
+        ],
+        "speech_error": null,
+        "sources": [
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Flickr via Openverse",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons"
+        ]
+      },
+      "scores": {
+        "hook": 4,
+        "clarity": 4,
+        "payoff": 4,
+        "visuals": 4,
+        "loop": 3
+      },
+      "notes": {
+        "hook": "Strongly debunks a common historical myth immediately.",
+        "clarity": "Logical sequence following the timeline of events clearly.",
+        "payoff": "Excellent introduction of the diplomat who stopped the assassin.",
+        "visuals": "Highly accurate archival footage and clean layouts.",
+        "loop": "The final line does not transition smoothly into the start."
+      },
+      "frames": [],
+      "speech": [
+        {
+          "beat": 4,
+          "word": "grandnieces",
+          "respelling": "grand neeces"
+        },
+        {
+          "beat": 6,
+          "word": "Reiner",
+          "respelling": "rye ner"
+        }
+      ],
+      "rewrite": [
+        "Beat 6: American diplomat Herbert Reiner tackled the assassin, yet even now..."
+      ],
+      "better_than_last": "This episode has a tighter historical focus and more direct narrative momentum than the previous ones.",
+      "judge": "gemini-3.5-flash",
+      "passed": false
+    },
+    {
+      "at": "2026-10-02T17:38:33+05:30",
+      "check": {
+        "duration": 25.7,
+        "words": 60,
+        "integrated_lufs": -14.4,
+        "true_peak_dbfs": -1.7,
+        "warnings": [],
+        "speech_differences": [
+          "'reiner' heard as 'rienner' after 'american diplomat herbert'",
+          "'yet' heard as 'and' after 'tackled the assassin'"
+        ],
+        "speech_error": null,
+        "sources": [
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Flickr via Openverse",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons"
+        ]
+      },
+      "scores": {
+        "hook": 3,
+        "clarity": 4,
+        "payoff": 2,
+        "visuals": 5,
+        "loop": 2
+      },
+      "notes": {
+        "hook": "Starting with a date and a generic statement is less arresting than the specific danger of the recent bombing.",
+        "clarity": "The narrative flows well until the final beat, which introduces an unexplained 'myth' that adds confusion.",
+        "payoff": "The 'myth' mentioned in the final beat has no explanation, leaving the viewer without a satisfying conclusion.",
+        "visuals": "Outstanding accuracy, featuring the specific Beretta M1934 used and the actual site of the assassination.",
+        "loop": "The final sentence is an open-ended teaser that does not connect back to the start of the script."
+      },
+      "frames": [],
+      "speech": [
+        {
+          "beat": 1,
+          "word": "Mahatma",
+          "respelling": "muh haht muh"
+        },
+        {
+          "beat": 6,
+          "word": "Reiner",
+          "respelling": "rye ner"
+        }
+      ],
+      "rewrite": [
+        "Beat 1: Ten days after a bomb exploded in his garden, Gandhi walked to his death.",
+        "Beat 6: An American diplomat tackled the killer, but the tragedy began because..."
+      ],
+      "better_than_last": "This Short uses the specific historical murder weapon and the actual site of the tragedy to ground the story visually better than the fog-obscured skyscraper in ep038.",
+      "judge": "gemini-3-flash-preview",
+      "passed": false
+    },
+    {
+      "at": "2026-10-02T17:43:17+05:30",
+      "check": {
+        "duration": 27.07,
+        "words": 67,
+        "integrated_lufs": -14.4,
+        "true_peak_dbfs": -1.8,
+        "warnings": [],
+        "speech_differences": [],
+        "speech_error": null,
+        "sources": [
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Flickr via Openverse",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons"
+        ]
+      },
+      "scores": {
+        "hook": 4,
+        "clarity": 4,
+        "payoff": 3,
+        "visuals": 4,
+        "loop": 4
+      },
+      "notes": {
+        "hook": "Strong survival versus death contrast.",
+        "clarity": "Simple chronological storytelling.",
+        "payoff": "Ending lacks a significant surprise.",
+        "visuals": "Accurate archival photos throughout.",
+        "loop": "Seamless verbal transition between beats."
+      },
+      "frames": [],
+      "speech": [
+        {
+          "beat": 1,
+          "word": "Gandhi",
+          "respelling": "gon dee"
+        },
+        {
+          "beat": 2,
+          "word": "pacifist",
+          "respelling": "pass ih fist"
+        }
+      ],
+      "rewrite": [
+        "Beat 5: Gandhi walked calmly toward his killer, refusing all protection."
+      ],
+      "better_than_last": "The use of specific historical artifacts like the handgun adds better context than the generic fog used previously.",
+      "judge": "gemini-3-flash-preview",
+      "passed": false
+    }
+  ],
+  "best_round": 1,
+  "verdict": "rejected",
+  "reason": "low scores: payoff",
+  "rejected_at": "2026-10-02T17:43:17+05:30"
+}

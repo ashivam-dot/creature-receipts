@@ -1,0 +1,148 @@
+id: ep041
+title: Why Did the Nazca Cut Down Their Own Desert? 🗿
+series: Fallen Empires
+description: Discover the tragic mystery of the Nazca civilization, whose reliance on agriculture and clearing of native trees
+  led to their sudden collapse.
+sources:
+- https://en.wikipedia.org/wiki/Nazca_culture
+- http://news.bbc.co.uk/earth/hi/earth_news/newsid_8334000/8334257.stm
+- https://en.wikipedia.org/wiki/Nazca_lines
+- https://www.smithsonianmag.com/smart-news/scientists-identify-exotic-birds-depicted-perus-mysterious-nazca-lines-180972469/
+- https://web.archive.org/web/20190928050205/https://www.nationalgeographic.com/history/archaeology/nasca-lines/
+hashtags:
+- '#history'
+- '#historyfriendcheckcodelayoutoutputjsonformatverificationkeylistmatchruleblockstatussetfinalcorrectoutputexactlythistemplatehistory'
+- '#nazca'
+tags:
+- Nazca Lines
+- ancient Peru
+- Huarango trees
+- collapse
+- archaeology
+voice:
+  engine: kokoro
+  voice: am_fenrir
+  speed: 1.15
+beats:
+- text: Before their civilization collapsed, the Nazca cut down their own desert defense.
+  emphasis:
+  - collapsed
+  - desert defense
+  visual:
+    source: url
+    url: https://thumb.wikimedia.org/wikipedia/commons/thumb/0/08/Nasca_-_Triangulos_-_panoramio.jpg/3840px-Nasca_-_Triangulos_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
+    credit:
+      source: Wikimedia Commons
+      title: Nasca - Triangulos - panoramio.jpg
+      credit: Pavel Špindler
+      license: CC BY 3.0
+      url: https://commons.wikimedia.org/wiki/File:Nasca_-_Triangulos_-_panoramio.jpg
+    fallbacks:
+    - color
+    motion: pan_right
+    focus_x: 0.5
+    focus_y: 0.5
+- text: Intricate geoglyphs of animals stretched across more than 1,300 kilometers of dry plateau.
+  emphasis:
+  - Intricate geoglyphs
+  - 1,300 kilometers
+  sfx: whoosh
+  visual:
+    source: url
+    url: https://thumb.wikimedia.org/wikipedia/commons/thumb/8/84/Nazca_Lines_Hummingbird.jpg/1920px-Nazca_Lines_Hummingbird.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
+    credit:
+      source: Wikimedia Commons
+      title: Nazca Lines Hummingbird.jpg
+      credit: Unukorno
+      license: CC BY 3.0
+      url: https://commons.wikimedia.org/wiki/File:Nazca_Lines_Hummingbird.jpg
+    fallbacks:
+    - card
+    - color
+    motion: pan_left
+    focus_x: 0.5
+    focus_y: 0.5
+    card:
+      kind: fact
+      big: 1,300 km
+      small: Total length of lines
+- text: Expanding agriculture drove them to clear the deep-rooted Huarango trees.
+  emphasis:
+  - agriculture
+  - Huarango trees
+  visual:
+    source: url
+    url: https://inaturalist-open-data.s3.amazonaws.com/photos/408669460/original.jpeg
+    credit:
+      source: iNaturalist
+      title: kiawe (Neltuma pallida)
+      credit: (c) Liam Gerry, some rights reserved (CC BY)
+      license: CC BY 4.0
+      url: https://www.inaturalist.org/observations/230177551
+    fallbacks:
+    - color
+    motion: pan_down
+    focus_x: 0.5
+    focus_y: 0.4
+- text: An El Niño event around 500 AD unleashed torrential coastal flooding.
+  emphasis:
+  - El Niño
+  - flooding
+  sfx: whoosh
+  visual:
+    source: card
+    card:
+      kind: dateline
+      big: 500 AD
+      small: El Niño flooding
+    motion: zoom_in
+- text: Without root systems, the unprotected soil washed away into deep river channels.
+  emphasis:
+  - unprotected soil
+  - washed away
+  sfx: riser
+  visual:
+    source: url
+    url: https://upload.wikimedia.org/wikipedia/commons/1/12/Puquios_aqueduct_Nazca_Peru.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    credit:
+      source: Wikimedia Commons
+      title: Puquios aqueduct Nazca Peru.JPG
+      credit: Ab5602 (talk)
+      license: Public domain
+      url: https://commons.wikimedia.org/wiki/File:Puquios_aqueduct_Nazca_Peru.JPG
+    fallbacks:
+    - color
+    motion: pan_right
+    focus_x: 0.5
+    focus_y: 0.5
+- text: Floods destroyed their canals, leaving future generations to wonder...
+  emphasis:
+  - destroyed their canals
+  - wonder
+  sfx: pop
+  pause_after: 0.4
+  visual:
+    source: url
+    url: https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8d/Gold_Headband_Mask%2C_100_BC_-_550_AD%2C_Nazca_-_Houston_Museum_of_Natural_Science_-_DSC02147.JPG/3840px-Gold_Headband_Mask%2C_100_BC_-_550_AD%2C_Nazca_-_Houston_Museum_of_Natural_Science_-_DSC02147.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
+    credit:
+      source: Wikimedia Commons
+      title: Gold Headband Mask, 100 BC - 550 AD, Nazca - Houston Museum of Natural Science - DSC02147.JPG
+      credit: Daderot
+      license: CC0
+      url: https://commons.wikimedia.org/wiki/File:Gold_Headband_Mask,_100_BC_-_550_AD,_Nazca_-_Houston_Museum_of_Natural_Science_-_DSC02147.JPG
+    fallbacks:
+    - color
+    motion: pan_left
+    focus_x: 0.5
+    focus_y: 0.5
+- text: Why the Nazca destroyed their own ecosystem.
+  emphasis:
+  - destroyed
+  - ecosystem
+  visual:
+    reuse: 1
+    motion: zoom_out
+    focus_x: 0.5
+    focus_y: 0.5
+depth_motion: true
+hook_text: THE SELF-INFLICTED DOOM

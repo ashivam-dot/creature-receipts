@@ -1,0 +1,92 @@
+{
+  "rounds": [
+    {
+      "at": "2026-10-02T17:37:38+05:30",
+      "check": {
+        "duration": 28.47,
+        "words": 63,
+        "integrated_lufs": -14.4,
+        "true_peak_dbfs": -1.8,
+        "warnings": [],
+        "speech_differences": [],
+        "speech_error": null,
+        "sources": [
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons"
+        ]
+      },
+      "scores": {
+        "hook": 3,
+        "clarity": 4,
+        "payoff": 3,
+        "visuals": 4,
+        "loop": 3
+      },
+      "notes": {
+        "hook": "The opening uses a standard myth-busting approach but lacks an immediate, high-tension grab.",
+        "clarity": "The chronological progression from the stockbroker's success to the final failure is very easy to follow.",
+        "payoff": "The tragic irony of the invasion date provides a strong emotional resolution to the narrative.",
+        "visuals": "Archival images are highly relevant and remain clear even at mobile screen dimensions.",
+        "loop": "Ending on the secrecy of the list creates a logical bridge back to the opening statement."
+      },
+      "frames": [],
+      "speech": [],
+      "rewrite": [
+        "Beat 1: Nicholas Winton is a hero for the 669 children he saved, but his biggest rescue failed.",
+        "Beat 7: For fifty years, he kept the tragedy so secret that even his wife never saw the list."
+      ],
+      "better_than_last": "This entry uses a personal secret to provide a more intimate emotional arc than the previous disaster-focused shorts.",
+      "judge": "gemini-3-flash-preview",
+      "passed": false
+    },
+    {
+      "at": "2026-10-02T17:55:21+05:30",
+      "check": {
+        "duration": 27.32,
+        "words": 67,
+        "integrated_lufs": -14.4,
+        "true_peak_dbfs": -1.8,
+        "warnings": [],
+        "speech_differences": [
+          "'borders' heard as 'border' after 'poland and the'"
+        ],
+        "speech_error": null,
+        "sources": [
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons"
+        ]
+      },
+      "scores": {
+        "hook": 4,
+        "clarity": 4,
+        "payoff": 4,
+        "visuals": 4,
+        "loop": 4
+      },
+      "notes": {
+        "hook": "Strong historical misconception creates immediate interest.",
+        "clarity": "Narrative follows a clear chronological flow.",
+        "payoff": "The tragic outcome provides an emotional payoff.",
+        "visuals": "Archival photographs and documents match the narrative beats.",
+        "loop": "The closing mention of the list leads directly into the hook."
+      },
+      "frames": [],
+      "speech": [],
+      "rewrite": [],
+      "better_than_last": "Provides a more poignant emotional core using specific historical documentation.",
+      "judge": "gemini-3.7-flash",
+      "passed": true
+    }
+  ],
+  "best_round": 2
+}

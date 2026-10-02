@@ -1,0 +1,145 @@
+{
+  "rounds": [
+    {
+      "at": "2026-10-02T17:26:10+05:30",
+      "check": {
+        "duration": 31.53,
+        "words": 79,
+        "integrated_lufs": -14.4,
+        "true_peak_dbfs": -1.7,
+        "warnings": [],
+        "speech_differences": [
+          "'(nothing)' heard as 'for' after 'within an hour'"
+        ],
+        "speech_error": null,
+        "sources": [
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "designed card",
+          "Wikimedia Commons",
+          "Wikimedia Commons"
+        ]
+      },
+      "scores": {
+        "hook": 4,
+        "clarity": 3,
+        "payoff": 4,
+        "visuals": 3,
+        "loop": 4
+      },
+      "notes": {
+        "hook": "Intriguing premonition hook works well.",
+        "clarity": "Showing General Crook while saying Custer's name is confusing.",
+        "payoff": "Prophecy fulfillment is a satisfying ending.",
+        "visuals": "The map in beat 5 is in Hungarian.",
+        "loop": "Excellent flow from end to start."
+      },
+      "frames": [
+        {
+          "beat": 5,
+          "problem": "The map contains Hungarian text instead of English."
+        }
+      ],
+      "speech": [],
+      "rewrite": [
+        "Beat 4: He ignored them, unaware General Crook had already retreated."
+      ],
+      "better_than_last": "This episode has a more compelling and mystical hook compared to the dry weather warnings in the Galveston short.",
+      "judge": "gemini-3.5-flash",
+      "passed": false
+    },
+    {
+      "at": "2026-10-02T17:30:06+05:30",
+      "check": {
+        "duration": 26.57,
+        "words": 71,
+        "integrated_lufs": -14.3,
+        "true_peak_dbfs": -1.9,
+        "warnings": [],
+        "speech_differences": [],
+        "speech_error": null,
+        "sources": [
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons"
+        ]
+      },
+      "scores": {
+        "hook": 5,
+        "clarity": 5,
+        "payoff": 4,
+        "visuals": 4,
+        "loop": 4
+      },
+      "notes": {
+        "hook": "The hook is compelling, drawing the viewer in with the mystery of a prophetic vision.",
+        "clarity": "The narrative flows perfectly chronologically, making it very easy to follow.",
+        "payoff": "The tragic fulfillment of Sitting Bull's vision delivers a satisfying and somber ending.",
+        "visuals": "Excellent and highly authentic historical photos are used throughout the video.",
+        "loop": "The transition works well, although repeating 'Sitting Bull' back-to-back is slightly noticeable."
+      },
+      "frames": [
+        {
+          "beat": 6,
+          "problem": "The frame shows an aftermath telegram reporting on the disaster rather than Custer's actual final written dispatch to Benteen."
+        }
+      ],
+      "speech": [],
+      "rewrite": [],
+      "better_than_last": "This Short uses exceptionally accurate historical portraits of key figures like General Crook and the scout Curley, making the visuals feel much more authentic than the generic illustrations in previous episodes.",
+      "judge": "gemini-3.5-flash",
+      "passed": false
+    },
+    {
+      "at": "2026-10-02T17:31:55+05:30",
+      "check": {
+        "duration": 26.59,
+        "words": 71,
+        "integrated_lufs": -14.3,
+        "true_peak_dbfs": -1.8,
+        "warnings": [],
+        "speech_differences": [],
+        "speech_error": null,
+        "sources": [
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "designed card",
+          "Wikimedia Commons",
+          "Wikimedia Commons"
+        ]
+      },
+      "scores": {
+        "hook": 4,
+        "clarity": 4,
+        "payoff": 4,
+        "visuals": 4,
+        "loop": 4
+      },
+      "notes": {
+        "hook": "Engaging hook with a prophetic premise that immediately draws the viewer in.",
+        "clarity": "Chronological flow makes the sequence of events and decisions clear.",
+        "payoff": "The tragic confirmation of the opening vision delivers a solid thematic payoff.",
+        "visuals": "Appropriate historical portraits and maps maintain the grave, authentic tone.",
+        "loop": "Seamless transition from the tragic outcome back to the initial prophetic vision."
+      },
+      "frames": [],
+      "speech": [],
+      "rewrite": [],
+      "better_than_last": "This episode matches the narrative pull of recent top shorts by focusing on a compelling prophetic warning.",
+      "judge": "gemini-3.5-flash",
+      "passed": true
+    }
+  ],
+  "best_round": 2
+}

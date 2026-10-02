@@ -1,46 +1,46 @@
 {
-  "updated_at": "2026-10-02T17:20:07+05:30",
+  "updated_at": "2026-10-02T23:05:56+05:30",
   "day": 1,
   "result": "ok",
   "run": {
     "host": "modal",
-    "id": "ta-01M3Y6AWV3HBWQW4GNR75QVK8R",
+    "id": "ta-01M3YTY2ANWTWQH0KJ5ZH6V28R",
     "number": null,
     "trigger": "schedule",
-    "started_at": "2026-10-02T17:05:09+05:30",
-    "started_at_utc": "2026-10-02T11:35:09+00:00",
-    "seconds": 898
+    "started_at": "2026-10-02T23:05:07+05:30",
+    "started_at_utc": "2026-10-02T17:35:07+00:00",
+    "seconds": 49
   },
   "stages": [
     {
       "name": "deploy",
       "ok": true,
       "detail": "",
-      "seconds": 1.8
+      "seconds": 2.7
     },
     {
       "name": "sync",
       "ok": true,
       "detail": "7 posts",
-      "seconds": 0.4
+      "seconds": 0.5
     },
     {
       "name": "playlists",
       "ok": true,
-      "detail": "nothing new",
-      "seconds": 1.2
+      "detail": "created playlist 'Fallen Empires'; added ep042 to 'Fallen Empires'",
+      "seconds": 1.3
     },
     {
       "name": "languages",
       "ok": true,
       "detail": "every live Short is in English",
-      "seconds": 0.2
+      "seconds": 0.1
     },
     {
       "name": "on youtube",
       "ok": true,
       "detail": "every Short sent is public",
-      "seconds": 0.2
+      "seconds": 0.1
     },
     {
       "name": "short reviews",
@@ -51,56 +51,14 @@
     {
       "name": "collect",
       "ok": true,
-      "detail": "ep039 rejected (low scores: hook, clarity, payoff, visuals, loop; duration 37.53 s is outside 17-35 s); ep040 unfinished (OutOfQuota: no model in ('gemini-3.8-flash', 'gemini-3.7-flash', 'gemini-3.6-flash', 'gemini-3.5-flash', 'gemini-3-flash-preview', 'gemini-flash-latest', 'ovh:Qwen3.5-397B-A17B') has free quota left today); ep041 unfinished (OutOfQuota: no model in ('gemini-3.8-flash', 'gemini-3.7-flash', 'gemini-3.6-flash', 'gemini-3.5-flash', 'gemini-3-flash-preview', 'gemini-flash-latest', 'ovh:Qwen3.5-397B-A17B') has free quota left today); ep043 unfinished (Overloaded: every model in (",
-      "seconds": 9.4
-    },
-    {
-      "name": "analytics",
-      "ok": true,
-      "detail": "0 subscribers",
-      "seconds": 1.1
-    },
-    {
-      "name": "learnings",
-      "ok": true,
-      "detail": "Maintained existing hypotheses without promotion as initial Shorts (X8MhmozMp0o, zX1VUGHLb0o) lack sufficient view volume and retention telemetry.",
-      "seconds": 226.9
-    },
-    {
-      "name": "breakouts",
-      "ok": true,
-      "detail": "none",
-      "seconds": 0.1
-    },
-    {
-      "name": "timely topics",
-      "ok": true,
-      "detail": "2 added",
-      "seconds": 331.7
-    },
-    {
-      "name": "strongest stories",
-      "ok": true,
-      "detail": "26 added",
-      "seconds": 279.6
-    },
-    {
-      "name": "new topics",
-      "ok": true,
-      "detail": "5 added",
-      "seconds": 39.0
-    },
-    {
-      "name": "report",
-      "ok": true,
-      "detail": "day-001.md",
-      "seconds": 0.1
+      "detail": "ep040 rejected (low scores: visuals); ep041 rejected (low scores: payoff, loop); ep043 ready; ep044 rejected (low scores: payoff); ep045 ready",
+      "seconds": 13.1
     },
     {
       "name": "buffer channel",
       "ok": true,
       "detail": "connected",
-      "seconds": 0.3
+      "seconds": 0.2
     },
     {
       "name": "preflight ep025",
@@ -111,49 +69,55 @@
     {
       "name": "preflight ep026",
       "ok": true,
-      "detail": "video downloads whole (11 MB in 0 s)",
+      "detail": "video still hosted",
       "seconds": 0.3
     },
     {
-      "name": "preflight ep042",
+      "name": "preflight ep038",
       "ok": true,
-      "detail": "video downloads whole (10 MB in 0 s)",
-      "seconds": 0.5
+      "detail": "video downloads whole (12 MB in 0 s)",
+      "seconds": 0.7
     },
     {
       "name": "publish",
       "ok": true,
       "detail": "",
-      "seconds": 0.1
+      "seconds": 2.4
     },
     {
-      "name": "start ep040",
+      "name": "schedule ep045",
       "ok": true,
-      "detail": "Battle of Saragarhi (1897): twenty-one soldiers fought ten thousand tribesmen to the last man, signaling updates until the final seconds",
+      "detail": "2026-10-02T21:30:00-04:00",
+      "seconds": 1.0
+    },
+    {
+      "name": "schedule ep043",
+      "ok": true,
+      "detail": "2026-10-04T21:30:00-04:00",
+      "seconds": 1.0
+    },
+    {
+      "name": "start ep046",
+      "ok": true,
+      "detail": "Voyage of the James Caird (1916): to save his crew, Shackleton navigated 800 miles of the world's deadliest ocean in a 22-foot lifeboat",
+      "seconds": 0.5
+    },
+    {
+      "name": "start ep047",
+      "ok": true,
+      "detail": "Battle of the Alamo (1836): a small band of Texian defenders held out for 13 days before a dawn assault overwhelmed the mission walls",
       "seconds": 0.4
     },
     {
-      "name": "start ep041",
+      "name": "start ep048",
       "ok": true,
-      "detail": "Nasca culture (c. 500 AD): they carved the world-famous Nazca Lines but triggered their own collapse by clearing the Huarango trees that held the desert floor in place",
+      "detail": "Antoine de Saint-Exupéry (1935): the author of The Little Prince crashed in the Sahara and nearly died of thirst before a Bedouin saved him",
       "seconds": 0.4
     },
     {
-      "name": "start ep043",
+      "name": "start ep049",
       "ok": true,
-      "detail": "Battle of the Little Bighorn (1876): Custer split his forces and rode directly into the largest Native American encampment ever gathered on the plains",
-      "seconds": 0.4
-    },
-    {
-      "name": "start ep044",
-      "ok": true,
-      "detail": "Assassination of Mahatma Gandhi (1948): Gandhi had survived five prior attempts and a bombing ten days earlier, yet strictly refused armed guards on his way to his final prayer meeting",
-      "seconds": 0.4
-    },
-    {
-      "name": "start ep045",
-      "ok": true,
-      "detail": "Nicholas Winton (1939): his largest rescue train of 250 children was scheduled to leave Prague on September 1, 1939—the exact day Germany invaded Poland, halting the departure",
+      "detail": "Burning of Washington (1814): British troops ate the dinner President Madison had left behind before burning the White House, right as a freak tornado struck the city",
       "seconds": 0.4
     },
     {
@@ -166,34 +130,31 @@
   "errors": [],
   "owner_action": [],
   "notes": [
-    "ep040 stopped on Gemini's free quota; it resumes in a later run",
-    "ep041 stopped on Gemini's free quota; it resumes in a later run",
-    "ep043 stopped on Gemini's free tier being overloaded; it resumes in a later run"
+    "only 7 Shorts made and unposted; scheduling 2 a day"
   ],
   "inventory": {
-    "total": 6,
-    "in_buffer": 6,
+    "total": 7,
+    "in_buffer": 7,
     "waiting": 0,
     "target": 42,
     "making": [],
     "remote": [
-      "ep040",
-      "ep041",
-      "ep043",
-      "ep044",
-      "ep045"
+      "ep046",
+      "ep047",
+      "ep048",
+      "ep049"
     ]
   },
   "queue": [
     {
-      "id": "ep042",
-      "title": "Why Did the Aztecs Put Out Every Fire in 1507? 😳",
-      "due_at": "2026-10-02T12:30:00-04:00"
-    },
-    {
       "id": "ep025",
       "title": "Why Did Britain's Giant R101 Airship Crash? ⚠️",
       "due_at": "2026-10-02T19:00:00-04:00"
+    },
+    {
+      "id": "ep045",
+      "title": "Why Nicholas Winton’s Largest Rescue Train Never Left 💔",
+      "due_at": "2026-10-02T21:30:00-04:00"
     },
     {
       "id": "ep026",
@@ -211,6 +172,11 @@
       "due_at": "2026-10-04T19:00:00-04:00"
     },
     {
+      "id": "ep043",
+      "title": "Why Did Custer Ignore the Warnings at Little Bighorn? ⚠️",
+      "due_at": "2026-10-04T21:30:00-04:00"
+    },
+    {
       "id": "ep035",
       "title": "Why Did the US Ignore the 1900 Galveston Hurricane? ⚠️",
       "due_at": "2026-10-05T19:00:00-04:00"
@@ -219,124 +185,140 @@
   "waiting": [],
   "made": [
     {
-      "id": "ep039",
-      "outcome": "rejected",
-      "topic": "Mongol invasions of Japan (1281): the invasion fleet was destroyed by a legendary typhoon known as the kamikaze, saving Japan from conquest",
-      "reason": "low scores: hook, clarity, payoff, visuals, loop; duration 37.53 s is outside 17-35 s"
-    },
-    {
       "id": "ep040",
-      "outcome": "unfinished",
+      "outcome": "rejected",
       "topic": "Battle of Saragarhi (1897): twenty-one soldiers fought ten thousand tribesmen to the last man, signaling updates until the final seconds",
-      "reason": "OutOfQuota: no model in ('gemini-3.8-flash', 'gemini-3.7-flash', 'gemini-3.6-flash', 'gemini-3.5-flash', 'gemini-3-flash-preview', 'gemini-flash-latest', 'ovh:Qwen3.5-397B-A17B') has free quota left today",
-      "quota": true,
-      "overloaded": false
+      "reason": "low scores: visuals"
     },
     {
       "id": "ep041",
-      "outcome": "unfinished",
+      "outcome": "rejected",
       "topic": "Nasca culture (c. 500 AD): they carved the world-famous Nazca Lines but triggered their own collapse by clearing the Huarango trees that held the desert floor in place",
-      "reason": "OutOfQuota: no model in ('gemini-3.8-flash', 'gemini-3.7-flash', 'gemini-3.6-flash', 'gemini-3.5-flash', 'gemini-3-flash-preview', 'gemini-flash-latest', 'ovh:Qwen3.5-397B-A17B') has free quota left today",
-      "quota": true,
-      "overloaded": false
+      "reason": "low scores: payoff, loop"
     },
     {
       "id": "ep043",
-      "outcome": "unfinished",
+      "outcome": "ready",
       "topic": "Battle of the Little Bighorn (1876): Custer split his forces and rode directly into the largest Native American encampment ever gathered on the plains",
-      "reason": "Overloaded: every model in ('gemini-3.8-flash', 'gemini-3.7-flash', 'gemini-3.6-flash', 'gemini-3.5-flash', 'gemini-3-flash-preview', 'gemini-flash-latest', 'ovh:Qwen3.5-397B-A17B') with quota left stayed overloaded for 25 minutes",
-      "quota": false,
-      "overloaded": true
+      "title": "Why Did Custer Ignore the Warnings at Little Bighorn? ⚠️",
+      "scores": {
+        "hook": 4,
+        "clarity": 4,
+        "payoff": 4,
+        "visuals": 4,
+        "loop": 4
+      },
+      "media_url": "https://res.cloudinary.com/uj4a07e7/video/upload/v1790942516/creaturereceipts/ep043-a8d88292.mp4"
+    },
+    {
+      "id": "ep044",
+      "outcome": "rejected",
+      "topic": "Assassination of Mahatma Gandhi (1948): Gandhi had survived five prior attempts and a bombing ten days earlier, yet strictly refused armed guards on his way to his final prayer meeting",
+      "reason": "low scores: payoff"
+    },
+    {
+      "id": "ep045",
+      "outcome": "ready",
+      "topic": "Nicholas Winton (1939): his largest rescue train of 250 children was scheduled to leave Prague on September 1, 1939—the exact day Germany invaded Poland, halting the departure",
+      "title": "Why Nicholas Winton’s Largest Rescue Train Never Left 💔",
+      "scores": {
+        "hook": 4,
+        "clarity": 4,
+        "payoff": 4,
+        "visuals": 4,
+        "loop": 4
+      },
+      "media_url": "https://res.cloudinary.com/uj4a07e7/video/upload/v1790943922/creaturereceipts/ep045-e5733c81.mp4"
     }
   ],
   "spawned": [
     {
-      "id": "ep040",
-      "topic": "Battle of Saragarhi (1897): twenty-one soldiers fought ten thousand tribesmen to the last man, signaling updates until the final seconds",
-      "call_id": "fc-01M3Y76F1C3NJSWD4WR3RES9W1"
+      "id": "ep046",
+      "topic": "Voyage of the James Caird (1916): to save his crew, Shackleton navigated 800 miles of the world's deadliest ocean in a 22-foot lifeboat",
+      "call_id": "fc-01M3YTZP5EWZQFMRQRPSFAGAG7"
     },
     {
-      "id": "ep041",
-      "topic": "Nasca culture (c. 500 AD): they carved the world-famous Nazca Lines but triggered their own collapse by clearing the Huarango trees that held the desert floor in place",
-      "call_id": "fc-01M3Y76FF9J13B499857WV9A23"
+      "id": "ep047",
+      "topic": "Battle of the Alamo (1836): a small band of Texian defenders held out for 13 days before a dawn assault overwhelmed the mission walls",
+      "call_id": "fc-01M3YTZPHK477Q0FGZATTR9YFC"
     },
     {
-      "id": "ep043",
-      "topic": "Battle of the Little Bighorn (1876): Custer split his forces and rode directly into the largest Native American encampment ever gathered on the plains",
-      "call_id": "fc-01M3Y76FTVBTQXJPVA881W1T0E"
+      "id": "ep048",
+      "topic": "Antoine de Saint-Exupéry (1935): the author of The Little Prince crashed in the Sahara and nearly died of thirst before a Bedouin saved him",
+      "call_id": "fc-01M3YTZPY10005WQ0QG4RF7EBH"
     },
     {
-      "id": "ep044",
-      "topic": "Assassination of Mahatma Gandhi (1948): Gandhi had survived five prior attempts and a bombing ten days earlier, yet strictly refused armed guards on his way to his final prayer meeting",
-      "call_id": "fc-01M3Y76G75AD9B9E3BCS2K133E"
-    },
-    {
-      "id": "ep045",
-      "topic": "Nicholas Winton (1939): his largest rescue train of 250 children was scheduled to leave Prague on September 1, 1939—the exact day Germany invaded Poland, halting the departure",
-      "call_id": "fc-01M3Y76GKTXBSE4Q17X52Q830B"
+      "id": "ep049",
+      "topic": "Burning of Washington (1814): British troops ate the dinner President Madison had left behind before burning the White House, right as a freak tornado struck the city",
+      "call_id": "fc-01M3YTZQA0N2JE31S54HXPJAEF"
     }
   ],
   "in_cloud": [
     {
-      "id": "ep040",
-      "topic": "Battle of Saragarhi (1897): twenty-one soldiers fought ten thousand tribesmen to the last man, signaling updates until the final seconds",
-      "spawned_at": "2026-10-02T17:20:05+05:30"
+      "id": "ep046",
+      "topic": "Voyage of the James Caird (1916): to save his crew, Shackleton navigated 800 miles of the world's deadliest ocean in a 22-foot lifeboat",
+      "spawned_at": "2026-10-02T23:05:55+05:30"
     },
     {
-      "id": "ep041",
-      "topic": "Nasca culture (c. 500 AD): they carved the world-famous Nazca Lines but triggered their own collapse by clearing the Huarango trees that held the desert floor in place",
-      "spawned_at": "2026-10-02T17:20:06+05:30"
+      "id": "ep047",
+      "topic": "Battle of the Alamo (1836): a small band of Texian defenders held out for 13 days before a dawn assault overwhelmed the mission walls",
+      "spawned_at": "2026-10-02T23:05:55+05:30"
+    },
+    {
+      "id": "ep048",
+      "topic": "Antoine de Saint-Exupéry (1935): the author of The Little Prince crashed in the Sahara and nearly died of thirst before a Bedouin saved him",
+      "spawned_at": "2026-10-02T23:05:55+05:30"
+    },
+    {
+      "id": "ep049",
+      "topic": "Burning of Washington (1814): British troops ate the dinner President Madison had left behind before burning the White House, right as a freak tornado struck the city",
+      "spawned_at": "2026-10-02T23:05:56+05:30"
+    }
+  ],
+  "published": [
+    {
+      "id": "ep045",
+      "title": "Why Nicholas Winton’s Largest Rescue Train Never Left 💔",
+      "due_at": "2026-10-02T21:30:00-04:00"
     },
     {
       "id": "ep043",
-      "topic": "Battle of the Little Bighorn (1876): Custer split his forces and rode directly into the largest Native American encampment ever gathered on the plains",
-      "spawned_at": "2026-10-02T17:20:06+05:30"
-    },
-    {
-      "id": "ep044",
-      "topic": "Assassination of Mahatma Gandhi (1948): Gandhi had survived five prior attempts and a bombing ten days earlier, yet strictly refused armed guards on his way to his final prayer meeting",
-      "spawned_at": "2026-10-02T17:20:06+05:30"
-    },
-    {
-      "id": "ep045",
-      "topic": "Nicholas Winton (1939): his largest rescue train of 250 children was scheduled to leave Prague on September 1, 1939—the exact day Germany invaded Poland, halting the departure",
-      "spawned_at": "2026-10-02T17:20:07+05:30"
+      "title": "Why Did Custer Ignore the Warnings at Little Bighorn? ⚠️",
+      "due_at": "2026-10-04T21:30:00-04:00"
     }
   ],
-  "published": [],
-  "live": 1,
+  "live": 2,
   "failed_posts": [],
   "not_live": [],
   "llm": {
-    "calls": 15,
+    "calls": 34,
     "by_model": {
+      "gemini-3.5-flash": 16,
+      "gemini-3.5-flash-lite": 8,
       "gemini-3.7-flash": 2,
-      "gemini-3-flash-preview": 6,
-      "gemini-3.8-flash": 2,
-      "gemini-3.5-flash": 2,
-      "gemini-3.5-flash-lite": 3
+      "gemini-3-flash-preview": 8
     },
     "out_of_quota": []
   },
   "renders": {
-    "modal": 5,
+    "modal": 11,
     "runner": 0
   },
   "daily_done": "2026-10-02",
   "minutes_this_month": 2.0,
   "minutes_budget": 2000,
   "modal_cost": {
-    "metered": 3.18,
+    "metered": 3.57,
     "billed": 0.0
   },
   "modal_credit": 30.0,
   "capacity": {
-    "cloud": 206,
+    "cloud": 203,
     "runner": 0,
     "runner_minutes": 0,
-    "modal_credit_left": 24.82
+    "modal_credit_left": 24.43
   },
   "made_here": 0,
-  "open_topics": 109,
-  "parked_topics": 9
+  "open_topics": 105,
+  "parked_topics": 12
 }

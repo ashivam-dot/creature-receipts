@@ -1,0 +1,302 @@
+{
+  "viable": true,
+  "reason": "The sources provide over 20 well-supported, dramatic claims detailing the exact timeline, eyewitness actions, and historical aftermath of Gandhi's assassination.",
+  "story": "On January 30, 1948, Mahatma Gandhi walked out to his evening prayer meeting at Birla House in New Delhi. At 78 years old, and having survived a bombing just ten days prior, he refused armed protection, leaning instead on his young grandnieces, whom he called his \"walking sticks.\" Suddenly, Nathuram Godse, a Hindu nationalist from Pune, stepped out of the crowd. Godse bowed in reverence, then drew a Beretta pistol and fired three point-blank shots into Gandhi's chest and stomach. As Gandhi fell, gasping \"He Ram,\" the crowd stood paralyzed. It was a newly arrived American vice-consul, Herbert Reiner Jr., who broke the spell by tackling Godse. A Royal Indian Air Force sergeant wrenched the gun away, and police saved Godse from a lynching. Carried inside, Gandhi died shortly after. That night, Prime Minister Nehru announced to a grieving nation, \"The light has gone out of our lives.\"",
+  "angle": "As the crowd stood paralyzed in shock after Mahatma Gandhi was shot, it was a newly arrived 32-year-old American vice-consul who broke the spell by lunging forward and tackling the armed assassin.",
+  "claims": [
+    {
+      "claim": "Mahatma Gandhi was assassinated on January 30, 1948, in the gardens of Birla House in New Delhi.",
+      "sources": [
+        "S1",
+        "S2",
+        "S3",
+        "S4"
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim": "Gandhi was 78 years old at the time of his death.",
+      "sources": [
+        "S1",
+        "S3",
+        "S4"
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim": "The assassin was Nathuram Godse, a Hindu nationalist originally from Pune.",
+      "sources": [
+        "S1",
+        "S3",
+        "S4"
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim": "Godse fired three bullets at point-blank range into Gandhi's chest and stomach.",
+      "sources": [
+        "S1",
+        "S2",
+        "S3",
+        "S4"
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim": "The shooting took place as Gandhi was walking to his daily evening prayer meeting.",
+      "sources": [
+        "S1",
+        "S2",
+        "S3",
+        "S4"
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim": "During the walk, Gandhi was leaning on the shoulders of his grandnieces, whom he referred to as his walking sticks.",
+      "sources": [
+        "S1",
+        "S2",
+        "S3",
+        "S4",
+        "S5"
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim": "As he fell to the ground, Gandhi uttered his final words, 'He Ram' ('Oh God').",
+      "sources": [
+        "S1",
+        "S2"
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim": "The shooting occurred at approximately 5:15 p.m. or 5:17 p.m.",
+      "sources": [
+        "S1",
+        "S2",
+        "S3"
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim": "While the crowd was paralyzed with shock, newly arrived American vice-consul Herbert Reiner Jr. seized the assassin by the shoulders.",
+      "sources": [
+        "S1",
+        "S3",
+        "S6"
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim": "A Royal Indian Air Force flight sergeant wrenched the Beretta pistol away from the assassin.",
+      "sources": [
+        "S1",
+        "S3",
+        "S4"
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim": "Ten days prior to the assassination, conspirators had made an unsuccessful bomb or grenade attack against Gandhi at Birla House.",
+      "sources": [
+        "S1",
+        "S2",
+        "S3"
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim": "Prime Minister Jawaharlal Nehru announced Gandhi's death over the radio, stating that the light had gone out of their lives.",
+      "sources": [
+        "S1",
+        "S2",
+        "S3"
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim": "Godse was an editor and journalist associated with the right-wing Hindu Mahasabha and the RSS.",
+      "sources": [
+        "S1",
+        "S2"
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim": "Immediately after the shooting, an angry crowd fell upon and beat Godse before police took custody of him.",
+      "sources": [
+        "S1",
+        "S3",
+        "S4"
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim": "Following his arrest, Godse told reporters that he was not sorry for what he had done.",
+      "sources": [
+        "S2",
+        "S3",
+        "S4"
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim": "Godse and his co-conspirator Narayan Apte were sentenced to death and hanged on November 15, 1949, at Ambala prison.",
+      "sources": [
+        "S1",
+        "S2"
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim": "Gandhi had survived an earlier assassination attempt on June 25, 1934, in Pune when a bomb was thrown.",
+      "sources": [
+        "S1",
+        "S3"
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim": "The news of the assassination sparked violent riots in Bombay, leaving fifteen people dead.",
+      "sources": [
+        "S2",
+        "S3"
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim": "After being shot, Gandhi was carried back into Birla House, where he died shortly after.",
+      "sources": [
+        "S1",
+        "S3",
+        "S4"
+      ],
+      "confidence": "high"
+    }
+  ],
+  "disputed": [
+    "Whether Gandhi died instantly or 30 minutes later: S2 states he was dead within seconds at 5:17 p.m., while S1, S3, and S4 state he died about 30 minutes later after being carried inside. A script should state that accounts differ on whether he died instantly or within thirty minutes.",
+    "Whether Godse fired a fourth shot: S4 reports Godse fired a fourth shot to kill himself, but was stopped, while S3 reports his pistol still had four undischarged cartridges when snatched. A script should leave out the detail of a fourth shot.",
+    "Whether Godse surrendered voluntarily or was tackled: S1 notes conflicting reports of Godse calling for the police versus being wrestled down by witnesses and beaten. A script should attribute both possibilities or focus on the widely reported struggle."
+  ],
+  "visuals": [
+    {
+      "subject": "Mahatma Gandhi in his late years, wearing his traditional shawl",
+      "queries": [
+        "Mahatma Gandhi 1940s",
+        "Mohandas K. Gandhi portrait"
+      ]
+    },
+    {
+      "subject": "Birla House, the mansion in New Delhi where Gandhi stayed",
+      "queries": [
+        "Birla House New Delhi",
+        "Gandhi Smriti external view"
+      ]
+    },
+    {
+      "subject": "The stone footsteps and path leading to the prayer lawn at Birla House",
+      "queries": [
+        "Gandhi Smriti footsteps",
+        "Birla House garden steps"
+      ]
+    },
+    {
+      "subject": "Nathuram Godse, the assassin",
+      "queries": [
+        "Nathuram Godse photo",
+        "Nathuram Godse"
+      ]
+    },
+    {
+      "subject": "A vintage Italian Beretta M1934 semi-automatic pistol",
+      "queries": [
+        "Beretta M1934",
+        "Beretta Model 1934 pistol"
+      ]
+    },
+    {
+      "subject": "American Embassy in New Delhi in the 1940s",
+      "queries": [
+        "Bahawalpur House New Delhi",
+        "US Embassy New Delhi historical"
+      ]
+    },
+    {
+      "subject": "Newspaper front page from January 31, 1948, announcing Gandhi's assassination",
+      "queries": [
+        "The New York Times January 31 1948",
+        "1948 newspaper Gandhi death"
+      ]
+    },
+    {
+      "subject": "Jawaharlal Nehru delivering his radio broadcast address",
+      "queries": [
+        "Jawaharlal Nehru speaking",
+        "Jawaharlal Nehru 1948"
+      ]
+    },
+    {
+      "subject": "The massive funeral procession of Mahatma Gandhi in New Delhi",
+      "queries": [
+        "Gandhi funeral procession 1948",
+        "Gandhi cremation crowd 1948"
+      ]
+    },
+    {
+      "subject": "The Raj Ghat memorial site on the banks of the Jumna River today",
+      "queries": [
+        "Raj Ghat memorial",
+        "Raj Ghat New Delhi"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "label": "S1",
+      "url": "https://en.wikipedia.org/wiki/Assassination_of_Mahatma_Gandhi",
+      "title": "Assassination of Mahatma Gandhi",
+      "site": "wikipedia.org"
+    },
+    {
+      "label": "S2",
+      "url": "https://www.history.com/articles/gandhi-assassination",
+      "title": "Assassination of Gandhi - Background, Facts & Reaction | HISTORY",
+      "site": "history.com"
+    },
+    {
+      "label": "S3",
+      "url": "https://web.archive.org/web/20170207115225/http://www.nytimes.com/learning/general/onthisday/big/0130.html",
+      "title": "Gandhi Is Killed By A Hindu; India Shaken, World Mourns; 15 Die In Rioting In Bombay Three Shots Fired",
+      "site": "nytimes.com"
+    },
+    {
+      "label": "S4",
+      "url": "https://www.theguardian.com/world/1948/jan/31/india.fromthearchive",
+      "title": "Assassination of Mr Gandhi",
+      "site": "theguardian.com"
+    },
+    {
+      "label": "S5",
+      "url": "https://www.independent.co.uk/arts-entertainment/books/features/thrill-of-the-chaste-the-truth-about-gandhi-s-sex-life-b1912595.html",
+      "title": "The truth about Gandhi's sex life",
+      "site": "independent.co.uk"
+    },
+    {
+      "label": "S6",
+      "url": "https://www.latimes.com/archives/la-xpm-2000-may-26-me-34297-story.html",
+      "title": "Herbert Reiner Jr.; Captured Gandhi's Killer",
+      "site": "latimes.com"
+    },
+    {
+      "label": "S7",
+      "url": "https://web.archive.org/web/20210224155925/https://trove.nla.gov.au/newspaper/article/2736489",
+      "title": "GANDHI CREMATED AT PYRE ON JUMNA RIVER - Wave of Violence Develops Against Hindu Communists NEW DELHI, Sunday. - The Canberra Times (ACT : 1926 - 1995) - 2 Feb 1948",
+      "site": "nla.gov.au"
+    }
+  ],
+  "topic": "Assassination of Mahatma Gandhi (1948): Gandhi had survived five prior attempts and a bombing ten days earlier, yet strictly refused armed guards on his way to his final prayer meeting",
+  "series": "The Last Hours"
+}

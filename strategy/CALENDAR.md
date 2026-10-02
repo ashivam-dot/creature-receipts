@@ -19,10 +19,10 @@ event is told for its gore. Space topics belong to the sister channel Universe R
 
 | Added | Story | Series | Why |
 |---|---|---|---|
-| 2026-10-01 | Nasca culture (c. 500 AD): they carved the world-famous Nazca Lines but triggered their own collapse by clearing the Huarango trees that held the desert floor in place — making (ep041) | Fallen Empires | New archaeological news regarding the Wari conquest of the Nasca is currently trending. |
+| 2026-10-01 | Nasca culture (c. 500 AD): they carved the world-famous Nazca Lines but triggered their own collapse by clearing the Huarango trees that held the desert floor in place — parked (ep041) | Fallen Empires | New archaeological news regarding the Wari conquest of the Nasca is currently trending. |
 | 2026-10-01 | New Fire ceremony (1507): the Aztecs believed the world would end every 52 years unless they sacrificed a heart to relight the sun while the entire empire waited in total darkness — done (ep042) | Fallen Empires | The Aztec cosmological concept 'Nahui Ollin' is currently trending on Wikipedia. |
-| 2026-10-02 | Assassination of Mahatma Gandhi (1948): Gandhi had survived five prior attempts and a bombing ten days earlier, yet strictly refused armed guards on his way to his final prayer meeting — making (ep044) | The Last Hours | Mahatma Gandhi is trending on Wikipedia around the October 2 anniversary of his birth. |
-| 2026-10-02 | Nicholas Winton (1939): his largest rescue train of 250 children was scheduled to leave Prague on September 1, 1939—the exact day Germany invaded Poland, halting the departure — making (ep045) | The Last Hours | Nicholas Winton is currently trending on English Wikipedia with nearly 30,000 daily pageviews. |
+| 2026-10-02 | Assassination of Mahatma Gandhi (1948): Gandhi had survived five prior attempts and a bombing ten days earlier, yet strictly refused armed guards on his way to his final prayer meeting — parked (ep044) | The Last Hours | Mahatma Gandhi is trending on Wikipedia around the October 2 anniversary of his birth. |
+| 2026-10-02 | Nicholas Winton (1939): his largest rescue train of 250 children was scheduled to leave Prague on September 1, 1939—the exact day Germany invaded Poland, halting the departure — done (ep045) | The Last Hours | Nicholas Winton is currently trending on English Wikipedia with nearly 30,000 daily pageviews. |
 
 ## Anniversaries (publish on the date, 7 p.m. Eastern)
 
@@ -56,12 +56,12 @@ event is told for its gore. Space topics belong to the sister channel Universe R
 - Great Fire of London (1666): only a handful of deaths were recorded, though the true toll is unknown
 - Radium Girls (1917): factory workers painted watch dials with self-glowing paint and pointed the brushes with their lips, later seeing their own jaws glow in the dark — parked (ep033)
 - 1945 Empire State Building B-25 crash (1945): a lost bomber crashed into the 79th floor of the skyscraper, and an elevator operator fell 75 floors and survived — done (ep038)
-- Battle of the Little Bighorn (1876): Custer split his forces and rode directly into the largest Native American encampment ever gathered on the plains — making (ep043)
-- Battle of the Alamo (1836): a small band of Texian defenders held out for 13 days before a dawn assault overwhelmed the mission walls
-- Burning of Washington (1814): British troops ate the dinner President Madison had left behind before burning the White House, right as a freak tornado struck the city
+- Battle of the Little Bighorn (1876): Custer split his forces and rode directly into the largest Native American encampment ever gathered on the plains — done (ep043)
+- Battle of the Alamo (1836): a small band of Texian defenders held out for 13 days before a dawn assault overwhelmed the mission walls — making (ep047)
+- Burning of Washington (1814): British troops ate the dinner President Madison had left behind before burning the White House, right as a freak tornado struck the city — making (ep049)
 - Battle of Agincourt (1415): outnumbered English archers stood in thick mud as heavily armored French knights charged and sank into the muck
 - 1900 Galveston hurricane (1900): forecasters dismissed warnings from Cuba, leaving the deadliest natural disaster in US history to strike an unprepared island — done (ep035)
-- Battle of Saragarhi (1897): twenty-one soldiers fought ten thousand tribesmen to the last man, signaling updates until the final seconds — making (ep040)
+- Battle of Saragarhi (1897): twenty-one soldiers fought ten thousand tribesmen to the last man, signaling updates until the final seconds — parked (ep040)
 - Port Chicago disaster (1944): untested munitions were loaded by untrained men in a race against time, causing the largest US home-front disaster of WWII
 - Victoria Hall disaster (1883): hundreds of children rushed for free toys through a door that opened inward, trapping them as the crush grew
 - Burning of Smyrna (1922): a cosmopolitan Mediterranean haven went up in flames days after foreign armies retreated, trapping refugees on the quay
@@ -119,7 +119,7 @@ event is told for its gore. Space topics belong to the sister channel Universe R
 - 1924 British Mount Everest expedition: George Mallory's body was found 75 years later, and nobody knows if he reached the top
 - Amundsen's South Pole expedition (1910): a secret race to the pole succeeded because the leader ate his own sled dogs to survive — parked (ep037)
 - Great Fire of 1910 (1910): hurricane-force winds turned a scattering of forest fires into a single monster that swallowed towns in minutes
-- Voyage of the James Caird (1916): to save his crew, Shackleton navigated 800 miles of the world's deadliest ocean in a 22-foot lifeboat
+- Voyage of the James Caird (1916): to save his crew, Shackleton navigated 800 miles of the world's deadliest ocean in a 22-foot lifeboat — making (ep046)
 - Julian's Persian expedition (363): the Roman Emperor burned his own supply fleet to force his men to advance, only to realize they were starving in a desert wasteland
 - Ross Sea party (1914): the team spent two years dying of scurvy to lay supply depots for Shackleton, never knowing his ship had been crushed on the other side of the continent
 - Vandino and Ugolino Vivaldi (1291): two brothers sailed into the Atlantic 200 years before Columbus and were never seen again, sparking a 150-year search
@@ -171,6 +171,6 @@ event is told for its gore. Space topics belong to the sister channel Universe R
 - Charles Joughin (1912): the Titanic's chief baker survived a long time in the freezing water, and credited the whisky he had drunk
 - Arthur John Priest: the "unsinkable stoker" survived the Titanic, the Britannic, and other sinkings
 - Poon Lim (1942): a ship's steward survived 133 days alone on a raft in the Atlantic
-- Antoine de Saint-Exupéry (1935): the author of The Little Prince crashed in the Sahara and nearly died of thirst before a Bedouin saved him
+- Antoine de Saint-Exupéry (1935): the author of The Little Prince crashed in the Sahara and nearly died of thirst before a Bedouin saved him — making (ep048)
 - Ada Blackjack (1921): the female Robinson Crusoe survived two years alone on a desolate Arctic island after the rest of her expedition died, with only the team's cat for company
 - Escape from HMS Perseus (1941): John Capes became the only man to escape from the sunken submarine, swimming 170 feet to the surface without a breathing apparatus
