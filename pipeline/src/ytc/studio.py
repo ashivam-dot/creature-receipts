@@ -31,12 +31,10 @@ REJECTED = ROOT / "content" / "rejected"
 # Episodes from the channel's first niche (animals, until 2026-10-01): kept for their numbers, never published.
 SHELVED = ROOT / "content" / "shelved"
 IST = ZoneInfo("Asia/Kolkata")
-# Gemini Charon read a 79-word test script in 21 s with every line as clear to Whisper as Kokoro's 31 s read
-# (voice-samples/, 2026-10-01). tts.synthesize falls back to Kokoro when Gemini is out of quota.
-VOICE = {"engine": "gemini", "voice": "Charon", "direction": (
-    "Read the transcript below aloud as a gripping true-story narrator on a viral YouTube Short: fast and urgent, "
-    "about 170 words a minute, with only tiny pauses, a low, intense voice and rising tension that hits the last "
-    "line hard. Speak only the transcript.")}
+# Kokoro am_fenrir scored 4.51 and 4.49 predicted naturalness (UTMOS22) on two scripts, against 3.80 for the
+# Gemini Charon "fast and urgent" read (245 words a minute) and 4.2-4.3 for the best warm Gemini voices
+# (voice-samples/, 2026-10-02). It also has no daily quota and never reads its direction aloud.
+VOICE = {"engine": "kokoro", "voice": "am_fenrir", "speed": 1.15}
 GATE = ["hook", "clarity", "payoff", "visuals", "loop"]
 PASS_SCORE = 4
 FIX_ROUNDS = 2

@@ -21,7 +21,7 @@ Folder: `content/episodes/<id>/` (ids are `ep001`, `ep002`, ...).
 
 ## Script rules
 
-- **Length:** 70–90 spoken words (about 17–25 seconds in the fast Gemini Charon read), 6–8 beats, one short sentence per beat. The
+- **Length:** 55–72 spoken words (about 22–31 seconds in the Kokoro am_fenrir read at 1.15x), 6–8 beats, one short sentence per beat. The
   breakout history Shorts of 2026 run 17–27 seconds; a Short watched to the end and replayed is the one the
   feed pushes. Cut every word that doesn't move the story.
 - **Hook (beat 1):** 12 words or fewer, literally true and concrete, opening inside the moment of the story

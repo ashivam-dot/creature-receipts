@@ -36,8 +36,10 @@ STRUCTURES = {
 }
 # The breakout history Shorts of 2026 run 17 to 27 seconds (research-competitors.json, 2026-10-01): short enough
 # to be watched to the end and replayed, which is what the Shorts feed rewards.
+# Kokoro am_fenrir at 1.15x, with the pauses between beats, reads 130-150 words a minute (79 words took 34-37 s
+# on 2026-10-02), so 72 words stay inside 35 seconds.
 BEATS = (6, 8)
-WORDS = (70, 90)
+WORDS = (55, 72)
 # Two scripts sharing this share of their three-word phrases read as the same script with the nouns swapped.
 SAME_SCRIPT = 0.25
 # A hook whose first this-many words match a recent hook's opens on a template.

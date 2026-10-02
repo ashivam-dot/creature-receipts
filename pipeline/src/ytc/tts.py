@@ -48,7 +48,7 @@ SPEECH_CLEAR = 0.9
 # A beat's picture comes in this long before its first word.
 CUT_LEAD = 0.08
 # An English Short reads with this Kokoro voice when every Gemini TTS model is out of quota, so posting doesn't stop.
-KOKORO_FALLBACK, KOKORO_FALLBACK_SPEED = "af_heart", 1.1
+KOKORO_FALLBACK, KOKORO_FALLBACK_SPEED = "am_fenrir", 1.15
 _OVERRIDE = re.compile(r"\[([^\]]+)\]\(/[^)]*/\)")
 # More letters than this heard outside the script is speech Gemini added; it's cut, EXTRA_MARGIN seconds from the
 # script's first and last words.
