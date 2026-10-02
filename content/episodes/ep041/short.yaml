@@ -1,33 +1,35 @@
 id: ep041
-title: Why Did the Nazca Civilization Cut Down Its Own Desert? 🗿
+title: Why Did the Nazca Cut Down Their Own Desert? 🗿
 series: Fallen Empires
 description: Discover the tragic mystery of the Nazca civilization, whose reliance on agriculture and clearing of native trees
-  led to their sudden collapse after ancient floods.
+  led to their sudden collapse.
 sources:
+- https://en.wikipedia.org/wiki/Nazca_culture
+- http://news.bbc.co.uk/earth/hi/earth_news/newsid_8334000/8334257.stm
 - https://en.wikipedia.org/wiki/Nazca_lines
 - https://www.smithsonianmag.com/smart-news/scientists-identify-exotic-birds-depicted-perus-mysterious-nazca-lines-180972469/
 - https://web.archive.org/web/20190928050205/https://www.nationalgeographic.com/history/archaeology/nasca-lines/
-- https://en.wikipedia.org/wiki/Nazca_culture
-- http://news.bbc.co.uk/earth/hi/earth_news/newsid_8334000/8334257.stm
 hashtags:
 - '#history'
+- '#historyfriendcheckcodelayoutoutputjsonformatverificationkeylistmatchruleblockstatussetfinalcorrectoutputexactlythistemplatehistory'
 - '#nazca'
-- '#ancientcivilizations'
 tags:
 - Nazca Lines
 - ancient Peru
-- desert collapse
 - Huarango trees
+- collapse
 - archaeology
 voice:
-  engine: kokoro
-  voice: am_fenrir
-  speed: 1.15
+  engine: gemini
+  voice: Charon
+  direction: 'Read the transcript below aloud as a gripping true-story narrator on a viral YouTube Short: fast and urgent,
+    about 170 words a minute, with only tiny pauses, a low, intense voice and rising tension that hits the last line hard.
+    Speak only the transcript.'
 beats:
-- text: The Nazca destroyed their ecosystem by clearing trees to carve giant lines.
+- text: Before their civilization collapsed, the Nazca cut down their own desert defense.
   emphasis:
-  - destroyed their ecosystem
-  - clearing trees
+  - collapsed
+  - desert defense
   visual:
     source: url
     url: https://thumb.wikimedia.org/wikipedia/commons/thumb/0/08/Nasca_-_Triangulos_-_panoramio.jpg/3840px-Nasca_-_Triangulos_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
@@ -66,29 +68,29 @@ beats:
       kind: fact
       big: 1,300 km
       small: Total length of lines
-- text: Expanding maize and cotton agriculture required removing deep-rooted Huarango trees.
+- text: Expanding agriculture drove them to clear the deep-rooted Huarango trees.
   emphasis:
-  - maize and cotton
+  - agriculture
   - Huarango trees
   visual:
     source: url
-    url: https://upload.wikimedia.org/wikipedia/commons/f/fd/Starr_050924-4469_Prosopis_pallida.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    url: https://inaturalist-open-data.s3.amazonaws.com/photos/408669460/original.jpeg
     credit:
-      source: Wikimedia Commons
-      title: Starr 050924-4469 Prosopis pallida.jpg
-      credit: Forest & Kim Starr
-      license: CC BY 3.0
-      url: https://commons.wikimedia.org/wiki/File:Starr_050924-4469_Prosopis_pallida.jpg
+      source: iNaturalist
+      title: kiawe (Neltuma pallida)
+      credit: (c) Liam Gerry, some rights reserved (CC BY)
+      license: CC BY 4.0
+      url: https://www.inaturalist.org/observations/230177551
     fallbacks:
     - color
-    motion: pan_right
+    motion: pan_down
     focus_x: 0.5
-    focus_y: 0.5
+    focus_y: 0.4
 - text: An El Niño event around 500 AD unleashed torrential coastal flooding.
   emphasis:
-  - El Niño event
-  - torrential coastal flooding
-  sfx: riser
+  - El Niño
+  - flooding
+  sfx: whoosh
   visual:
     source: card
     card:
@@ -100,7 +102,7 @@ beats:
   emphasis:
   - unprotected soil
   - washed away
-  sfx: whoosh
+  sfx: riser
   visual:
     source: url
     url: https://upload.wikimedia.org/wikipedia/commons/1/12/Puquios_aqueduct_Nazca_Peru.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
@@ -115,39 +117,34 @@ beats:
     motion: pan_right
     focus_x: 0.5
     focus_y: 0.5
-- text: Their aqueducts dried up, collapsing the civilization into desert.
+- text: Floods destroyed their canals, leaving future generations to wonder...
   emphasis:
-  - aqueducts dried up
-  - collapsing
+  - destroyed their canals
+  - wonder
   sfx: pop
   pause_after: 0.4
   visual:
     source: url
-    url: https://thumb.wikimedia.org/wikipedia/commons/thumb/3/38/Subjects_with_heads_in_Paracas_and_Nasca_cultures.jpg/3840px-Subjects_with_heads_in_Paracas_and_Nasca_cultures.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
+    url: https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8d/Gold_Headband_Mask%2C_100_BC_-_550_AD%2C_Nazca_-_Houston_Museum_of_Natural_Science_-_DSC02147.JPG/3840px-Gold_Headband_Mask%2C_100_BC_-_550_AD%2C_Nazca_-_Houston_Museum_of_Natural_Science_-_DSC02147.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
     credit:
       source: Wikimedia Commons
-      title: Subjects with heads in Paracas and Nasca cultures.jpg
-      credit: Vicpeters
-      license: CC BY 4.0
-      url: https://commons.wikimedia.org/wiki/File:Subjects_with_heads_in_Paracas_and_Nasca_cultures.jpg
+      title: Gold Headband Mask, 100 BC - 550 AD, Nazca - Houston Museum of Natural Science - DSC02147.JPG
+      credit: Daderot
+      license: CC0
+      url: https://commons.wikimedia.org/wiki/File:Gold_Headband_Mask,_100_BC_-_550_AD,_Nazca_-_Houston_Museum_of_Natural_Science_-_DSC02147.JPG
     fallbacks:
-    - card
     - color
     motion: pan_left
     focus_x: 0.5
     focus_y: 0.5
-    card:
-      kind: fact
-      big: 750 AD
-      small: Complete collapse
-- text: The Nazca destroyed their ecosystem by clearing trees to carve giant lines.
+- text: Why the Nazca destroyed their own ecosystem.
   emphasis:
-  - destroyed their ecosystem
-  - clearing trees
+  - destroyed
+  - ecosystem
   visual:
     reuse: 1
     motion: zoom_out
     focus_x: 0.5
     focus_y: 0.5
 depth_motion: true
-hook_text: THE TREES THAT DOOMED AN EMPIRE
+hook_text: THE SELF-INFLICTED DOOM

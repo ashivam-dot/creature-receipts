@@ -21,6 +21,8 @@ event is told for its gore. Space topics belong to the sister channel Universe R
 |---|---|---|---|
 | 2026-10-01 | Nasca culture (c. 500 AD): they carved the world-famous Nazca Lines but triggered their own collapse by clearing the Huarango trees that held the desert floor in place — making (ep041) | Fallen Empires | New archaeological news regarding the Wari conquest of the Nasca is currently trending. |
 | 2026-10-01 | New Fire ceremony (1507): the Aztecs believed the world would end every 52 years unless they sacrificed a heart to relight the sun while the entire empire waited in total darkness — done (ep042) | Fallen Empires | The Aztec cosmological concept 'Nahui Ollin' is currently trending on Wikipedia. |
+| 2026-10-02 | Assassination of Mahatma Gandhi (1948): Gandhi had survived five prior attempts and a bombing ten days earlier, yet strictly refused armed guards on his way to his final prayer meeting — making (ep044) | The Last Hours | Mahatma Gandhi is trending on Wikipedia around the October 2 anniversary of his birth. |
+| 2026-10-02 | Nicholas Winton (1939): his largest rescue train of 250 children was scheduled to leave Prague on September 1, 1939—the exact day Germany invaded Poland, halting the departure — making (ep045) | The Last Hours | Nicholas Winton is currently trending on English Wikipedia with nearly 30,000 daily pageviews. |
 
 ## Anniversaries (publish on the date, 7 p.m. Eastern)
 
@@ -32,6 +34,7 @@ event is told for its gore. Space topics belong to the sister channel Universe R
 | Oct 17 | London Beer Flood (1814): a vat burst at a brewery and a wave of more than a million liters of beer swept through a poor London parish | The Last Hours |
 | Oct 24 | Eruption of Mount Vesuvius in 79 AD: a charcoal inscription found at Pompeii in 2018 suggests the eruption came in autumn, not on August 24 as long believed | The Last Hours |
 | Oct 25 | Charge of the Light Brigade (1854): a misread order sent the light cavalry straight down a valley ringed with Russian guns | Warnings Ignored |
+| Oct 29 | Wall Street Crash of 1929 (1929): the market collapse on Black Tuesday was predicted one month earlier by a financial expert who warned that a terrific crash was coming | Warnings Ignored |
 | Nov 1 | 1755 Lisbon earthquake: it struck on All Saints' Day, when the churches were full, and people who fled to the open waterfront were hit by a tsunami | The Last Hours |
 | Nov 12 | Nevado del Ruiz eruption (1985): warning signs were ignored for weeks before a lahar buried the town of Armero in the middle of the night | Warnings Ignored |
 | Nov 20 | Essex (whaleship) (1820): after a sperm whale sank the ship, the crew steered away from the nearest islands for fear of cannibals | Sole Survivors |
@@ -71,6 +74,22 @@ event is told for its gore. Space topics belong to the sister channel Universe R
 - Siege of Sidney Street (1911): Winston Churchill personally oversaw the gunfight and ordered firefighters not to save the burning building
 - Gresford disaster (1934): hundreds of miners died because they had swapped shifts to see a football match, putting extra men in the pit
 - Sinking of the SS Arctic (1854): the ship collided in fog and the officers took the lifeboats first, leaving the passengers behind
+- 1868 Arica earthquake (1868): a massive tsunami carried the USS Wateree two miles inland and left it sitting perfectly upright in the middle of the desert
+- 1944 Bombay explosion (1944): the blast was so powerful it rained gold bars over the city, with one crashing through a citizen's roof over a mile away
+- Tauredunum event (563): a mountain collapse into Lake Geneva created a massive inland tsunami that swept over the city walls of Geneva miles away
+- Brescia explosion (1769): lightning struck a church bastion storing 90 tons of gunpowder, causing a blast that leveled one-sixth of the city
+- Armagh rail disaster (1889): a train stalled on a hill, and when the crew uncoupled the rear carriages, they rolled backward into an oncoming train full of children
+- Siege of Compiègne (1430): Joan of Arc was captured by her enemies because her own side raised the drawbridge too early, trapping her outside the city gates
+- Siege of Turin (1706): soldier Pietro Micca saved the city by lighting a short fuse to blow up a French tunnel, knowing he would not have time to escape
+- 1896 Sanriku earthquake (1896): the quake was so faint that villagers stayed on the beach to celebrate a festival, unaware a 125-foot tsunami was seconds away
+- Opening of the Liverpool and Manchester Railway (1830): at the world's first modern rail launch, a politician was crushed by a locomotive while trying to shake hands with the Duke of Wellington
+- Kronan (ship) (1676): Sweden's giant warship capsized and blew up during a basic turn because the admiral insisted on keeping the gun ports open in a gale
+- Bombing of Prague (1945): US pilots mistook the city for Dresden because of a navigation error, bombing the historic capital while aiming for a target 75 miles away
+- Versailles rail accident (1842): the carriages were locked from the outside to prevent fare evasion, trapping hundreds of passengers when the train caught fire
+- 226 BC Rhodes earthquake (226 BC): it toppled the Colossus of Rhodes, one of the Seven Wonders, which then lay in pieces on the ground for 800 years
+- Great Dayton Flood (1913): industrialist John Patterson saved thousands by turning his cash register factory into a 24-hour shipyard to build rescue boats
+- 1944 Tōnankai earthquake (1944): the Japanese government suppressed news of the disaster and its 1,200 victims to keep wartime factory production secrets
+- 1944 San Juan earthquake (1944): the disaster that killed 10,000 people is primarily remembered because the fundraiser for the victims is where Juan and Eva Perón first met
 
 ### Lost Cities
 
@@ -86,6 +105,7 @@ event is told for its gore. Space topics belong to the sister channel Universe R
 - Ani: the "city of 1,001 churches" lies abandoned on the border of Turkey and Armenia
 - Pavlopetri: one of the oldest known submerged towns lies a few meters under the sea off Greece
 - Unyu (c. 1300): the medieval city in Myanmar was abandoned after a Mongol invasion, leaving behind thousands of pagodas overgrown by jungle
+- Timgad (100 AD): this Roman city was abandoned in the 7th century and buried by the Sahara’s sands, leaving it perfectly preserved for over 1,000 years
 
 ### Doomed Expeditions
 
@@ -100,6 +120,10 @@ event is told for its gore. Space topics belong to the sister channel Universe R
 - Amundsen's South Pole expedition (1910): a secret race to the pole succeeded because the leader ate his own sled dogs to survive — parked (ep037)
 - Great Fire of 1910 (1910): hurricane-force winds turned a scattering of forest fires into a single monster that swallowed towns in minutes
 - Voyage of the James Caird (1916): to save his crew, Shackleton navigated 800 miles of the world's deadliest ocean in a 22-foot lifeboat
+- Julian's Persian expedition (363): the Roman Emperor burned his own supply fleet to force his men to advance, only to realize they were starving in a desert wasteland
+- Ross Sea party (1914): the team spent two years dying of scurvy to lay supply depots for Shackleton, never knowing his ship had been crushed on the other side of the continent
+- Vandino and Ugolino Vivaldi (1291): two brothers sailed into the Atlantic 200 years before Columbus and were never seen again, sparking a 150-year search
+- Great Northern Expedition (1741): explorer Vitus Bering died of scurvy on a frozen, desolate island just months after finally proving Asia and America were separate
 
 ### Fallen Empires
 
@@ -113,6 +137,9 @@ event is told for its gore. Space topics belong to the sister channel Universe R
 - Library of Alexandria: it wasn't lost in one great fire, but declined over centuries
 - Reichstag fire (1933): the German parliament building burned just weeks after Hitler took power, instantly triggering emergency decrees that ended democracy — parked (ep036)
 - Ashanti Empire (1900): the Golden Stool was demanded by the British governor who did not know he was asking to sit on a sacred spirit shrine, sparking an uprising
+- Siege of the Sogdian Rock (327 BC): Alexander the Great's soldiers used iron tent pegs as pitons to scale a 'vertical' cliff at night to capture an unreachable fortress
+- Siege of Kamakura (1333): the commander threw his golden sword into the sea as an offering, and the tide instantly receded to reveal a path past the city’s sea walls
+- Fall of the Qing Dynasty (1912): the last Emperor of China, once worshipped as a living god, ended his life as a quiet citizen working as a gardener in his former palace
 
 ### Warnings Ignored
 
@@ -127,10 +154,14 @@ event is told for its gore. Space topics belong to the sister channel Universe R
 - Vasa (ship) (1628): the warship sank on its maiden voyage, less than a mile out, after failing a stability test before it sailed
 - Knickerbocker Storm (1922): the roof of Washington's Knickerbocker Theatre collapsed under the snow during a film
 - Battle of Isandlwana (1879): British commanders refused to form defensive laagers, mocking reports of Zulu forces until thousands appeared over the ridge — parked (ep034)
-- Mongol invasions of Japan (1281): the invasion fleet was destroyed by a legendary typhoon known as the kamikaze, saving Japan from conquest — making (ep039)
+- Mongol invasions of Japan (1281): the invasion fleet was destroyed by a legendary typhoon known as the kamikaze, saving Japan from conquest — parked (ep039)
 - Fetterman Fight (1866): a cocky commander vowed to ride through the entire Sioux nation with eighty men, and none returned
 - Battle of Cartagena de Indias (1741): Admiral Vernon was so certain of victory he minted medals celebrating the win while his fleet was being destroyed
 - Whydah Gally (1717): a pirate slave ship sank in a violent nor'easter right off Cape Cod, carrying a fortune in stolen treasure that lay buried for centuries
+- Saint-Michel-de-Maurienne derailment (1917): a commander forced a driver at gunpoint to overload a train with 1,000 soldiers, causing it to lose its brakes on a mountain
+- West Loch disaster (1944): a massive explosion at Pearl Harbor killed 163 men just before a secret invasion, but the tragedy was kept classified for decades
+- Great Plague of Marseille (1720): city officials ignored a plague warning on a merchant ship because they didn't want to delay its cargo of silk for a local fair
+- Manchurian plague (1910): a doctor's warning that the plague was airborne was mocked by a colleague who refused to wear a mask and died of the infection days later
 
 ### Sole Survivors
 
@@ -141,3 +172,5 @@ event is told for its gore. Space topics belong to the sister channel Universe R
 - Arthur John Priest: the "unsinkable stoker" survived the Titanic, the Britannic, and other sinkings
 - Poon Lim (1942): a ship's steward survived 133 days alone on a raft in the Atlantic
 - Antoine de Saint-Exupéry (1935): the author of The Little Prince crashed in the Sahara and nearly died of thirst before a Bedouin saved him
+- Ada Blackjack (1921): the female Robinson Crusoe survived two years alone on a desolate Arctic island after the rest of her expedition died, with only the team's cat for company
+- Escape from HMS Perseus (1941): John Capes became the only man to escape from the sunken submarine, swimming 170 feet to the surface without a breathing apparatus

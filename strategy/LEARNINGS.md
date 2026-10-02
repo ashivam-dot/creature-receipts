@@ -13,8 +13,8 @@ Recompute daily and after each Short's 24- and 72-hour reviews, over Shorts with
 | Engaged share (stand-in for Studio's "stayed to watch") | `analytics.engaged_share` | not enough data yet | 70%+; under 60% rarely takes off |
 | Average percentage viewed | `analytics.averageViewPercentage` | not enough data yet | 80%+ (loops can push it past 100%) |
 | Still watching at 10% of the Short | `retention` point nearest `at: 0.1` | not enough data yet | rising week over week |
-| Subscribers per 1,000 views | `subscribersGained` / `views` | not enough data yet | 2+ |
-| Likes per 100 views | `likes` / `views` | not enough data yet | 4+ |
+| Subscribers per 1,000 views | `subscribersGained` / `views` | 0.0 | 2+ |
+| Likes per 100 views | `likes` / `views` | 0.0 | 4+ |
 
 ## Rules we've proven
 
@@ -29,10 +29,8 @@ into `strategy/SCRIPT-RULES.md`, then cite the evidence here.
 - Cut each Short to 17–27 seconds to match top-performing competitors.
 - Title as a question the Short answers, with one emoji at the end.
 - Write a last line that flows straight into the first line to encourage seamless rewatching.
-- End on a line that makes viewers want to answer or rewatch, not a passive closing statement: Universe Receipts'
-  best Short so far (689 views, 3.8 likes per 100) drew 1 comment because it closed on a statement (2026-10-02).
-- Choose topics whose key moments have strong period pictures: weak visuals caused 7 of the 8 latest history
-  rejections, and each rejection spends a day's free model quota (2026-10-02).
+- End on a line that makes viewers want to answer or rewatch, not a passive closing statement: Universe Receipts' best Short so far (689 views, 3.8 likes per 100) drew 1 comment because it closed on a statement (2026-10-02).
+- Choose topics whose key moments have strong period pictures: weak visuals caused 7 of the 8 latest history rejections, and each rejection spends a day's free model quota (2026-10-02).
 
 ## Scoreboard
 
@@ -41,6 +39,8 @@ contradiction.
 
 | Short | Series | Hook style | Views | Engaged share | Avg % viewed | Watching at 10% | Subs gained | Likely reason |
 |---|---|---|---|---|---|---|---|---|
+| X8MhmozMp0o | ? | –, story | 3 | – | – | – | – | 3 views and 0 likes at channel median; off-genre biology topic with a non-question title failed to attract initial search or feed engagement. |
+| zX1VUGHLb0o | ? | –, story | 3 | – | – | – | – | 3 views and 0 likes at channel median; historical accident premise lacked an urgent 2-second hook and question-style title to drive algorithmic pickup. |
 
 ## Log
 
@@ -48,3 +48,4 @@ contradiction.
 - 2026-10-01: the channel moved from animals to historical tragedies as History's Last Hours. Its two animal
   Shorts (1 view each, never shown in the Shorts feed) were made private, and their numbers don't count here.
 - 2026-10-01: Initialized the learning log with preliminary research hypotheses; no performance data available yet.
+- 2026-10-02: Maintained existing hypotheses without promotion as initial Shorts (X8MhmozMp0o, zX1VUGHLb0o) lack sufficient view volume and retention telemetry.

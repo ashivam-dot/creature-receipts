@@ -119,7 +119,68 @@
       "better_than_last": "It utilizes cohesive period art scrolls to capture authentic medieval warfare better than recent episodes.",
       "judge": "gemini-3.7-flash",
       "passed": false
+    },
+    {
+      "at": "2026-10-02T11:08:40+05:30",
+      "check": {
+        "duration": 37.53,
+        "words": 70,
+        "integrated_lufs": -14.2,
+        "true_peak_dbfs": -1.6,
+        "warnings": [
+          "duration 37.53 s is outside 17-35 s"
+        ],
+        "speech_differences": [
+          "'(nothing)' heard as 'allowed as a gripping true story narrator on a viral youtube short fast and urgent about 170 words a minute with only tiny pauses a low intense voice and rising tension that hits the last line hard speak only the transcript'",
+          "'in' heard as 'and' after '7 weeks samurai'",
+          "'chained' heard as 'chain' after 'fleet the mongols'",
+          "'15' heard as '15th' after 'suddenly on august'"
+        ],
+        "speech_error": null,
+        "sources": [
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons"
+        ]
+      },
+      "scores": {
+        "hook": 2,
+        "clarity": 3,
+        "payoff": 3,
+        "visuals": 3,
+        "loop": 3
+      },
+      "notes": {
+        "hook": "TTS read prompt directions, delaying the actual start by 15 seconds.",
+        "clarity": "The core invasion story is chronologically clear and easy to follow.",
+        "payoff": "Chaining ships together creates an ironic turn when the storm hits.",
+        "visuals": "Period scrolls look authentic, but the museum display lacks impact.",
+        "loop": "Closing sentence transitions reasonably well back to the opening statement."
+      },
+      "frames": [
+        {
+          "beat": 7,
+          "problem": "Museum exhibit display case does not convey drowning or disaster."
+        }
+      ],
+      "speech": [],
+      "rewrite": [
+        "Beat 1: Remove prompt instructions from audio so narrator speaks only 'Four thousand Mongol ships invaded Japan.'",
+        "Beat 6: 'On August 15, a monster typhoon struck the armada.'",
+        "Beat 8: 'Where four thousand ships met their doom.'"
+      ],
+      "better_than_last": "",
+      "judge": "gemini-3.8-flash",
+      "passed": false
     }
   ],
-  "best_round": 1
+  "best_round": 1,
+  "verdict": "rejected",
+  "reason": "low scores: hook, clarity, payoff, visuals, loop; duration 37.53 s is outside 17-35 s",
+  "rejected_at": "2026-10-02T11:08:40+05:30"
 }
