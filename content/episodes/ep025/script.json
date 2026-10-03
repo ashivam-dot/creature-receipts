@@ -2,21 +2,17 @@
   "hooks": [
     {
       "style": "statement",
-      "text": "A rushed political deadline forced the world's largest airship skyward."
-    },
-    {
-      "style": "contradiction",
-      "text": "Britain's proudest new flying machine was actually an untested deathtrap."
+      "text": "Six survived the R101 crash. Two escaped from inside the burning airship."
     },
     {
       "style": "question",
-      "text": "Why did Britain's Air Minister board an untested giant airship?"
+      "text": "How did two people escape from inside the R101?"
     }
   ],
   "hook_style": "statement",
   "structure": "story",
-  "title": "Why Did Britain's Giant R101 Airship Crash? ⚠️",
-  "description": "The tragic story of the R101, Britain's giant imperial airship that crashed in France on its maiden voyage in 1930.",
+  "title": "R101 Disaster: Six Survived, Two Escaped From Inside",
+  "description": "In 1930, R101 crashed near Beauvais on its first flight to India. Four survivors escaped external engine cars; Harry Leech and Arthur Disley came from inside the airship. The precise trigger of the first dive remains disputed.",
   "hashtags": [
     "#history",
     "#r101",
@@ -32,24 +28,24 @@
   ],
   "beats": [
     {
-      "text": "A rushed political deadline forced the world's largest airship skyward.",
+      "text": "Six survived the R101 crash. Two escaped from inside the burning airship.",
       "emphasis": [
-        "world's largest airship"
+        "Two escaped from inside"
       ],
       "sfx": "none",
       "pause_after": 0.12,
       "claims": [
-        1,
-        4
+        7,
+        8,
+        9
       ],
-      "visual": "photograph of the R101 airship at its mooring mast, 1930",
+      "visual": "Wreckage of the R101 on a hillside near Beauvais",
       "subjects": [
         "R101"
       ],
       "year": 1930,
       "queries": [
-        "R101 airship",
-        "R101 Cardington"
+        "R101 1930"
       ],
       "card": {
         "kind": "none",
@@ -58,49 +54,48 @@
       }
     },
     {
-      "text": "In October 1930, Britain's R101 departed for India on its maiden voyage.",
+      "text": "In 1930, R101 left England for India with Britain's Air Minister aboard.",
       "emphasis": [
-        "R101 departed"
+        "Air Minister aboard"
       ],
-      "sfx": "whoosh",
+      "sfx": "none",
       "pause_after": 0.12,
       "claims": [
         1,
-        2
+        4
       ],
-      "visual": "photograph of R101 airship flying over London, 1930",
+      "visual": "R101 near its mooring mast at Cardington, 1929; representative archival photograph",
       "subjects": [
-        "R101"
+        "R101",
+        "Lord Thomson"
       ],
       "year": 1930,
       "queries": [
-        "R101 over London",
-        "R101 flying"
+        "R101 1930"
       ],
       "card": {
-        "kind": "dateline",
-        "big": "October 4, 1930",
-        "small": "Cardington, England"
+        "kind": "none",
+        "big": "",
+        "small": ""
       }
     },
     {
-      "text": "To boost lift, designers had hastily sliced in an extra gas cell.",
+      "text": "After its final refit, it flew just seventeen hours of trials, without a full-speed test.",
       "emphasis": [
-        "extra gas cell"
+        "without a full-speed test"
       ],
       "sfx": "none",
       "pause_after": 0.12,
       "claims": [
         3
       ],
-      "visual": "photograph of the interior structure of R101 showing gasbag, 1929",
+      "visual": "Interior framework and gasbag of the R101 airship",
       "subjects": [
         "R101"
       ],
       "year": 1930,
       "queries": [
-        "R101 interior",
-        "R101 frame"
+        "R101 1930"
       ],
       "card": {
         "kind": "none",
@@ -109,48 +104,22 @@
       }
     },
     {
-      "text": "Air Minister Lord [Thomson](/tˈɑmsˈʌn/) boarded despite storm warnings and missed trials.",
+      "text": "In rain and wind over northern France, it twice dived.",
       "emphasis": [
-        "Lord Thomson boarded"
-      ],
-      "sfx": "none",
-      "pause_after": 0.12,
-      "claims": [
-        4
-      ],
-      "visual": "portrait photograph of Christopher Thomson, 1st Baron Thomson, 1929",
-      "subjects": [
-        "Christopher Thomson, 1st Baron Thomson"
-      ],
-      "year": 1930,
-      "queries": [
-        "Lord Thomson Baron Thomson",
-        "Christopher Thomson 1930"
-      ],
-      "card": {
-        "kind": "none",
-        "big": "",
-        "small": ""
-      }
-    },
-    {
-      "text": "Gales over France forced the giant into two steep, fatal dives.",
-      "emphasis": [
-        "fatal dives"
+        "twice dived"
       ],
       "sfx": "whoosh",
       "pause_after": 0.12,
       "claims": [
         6
       ],
-      "visual": "photograph of the metal wreckage of R101 on a hillside near Beauvais, 1930",
+      "visual": "R101 near its mooring mast at Cardington, 1929; representative archival photograph",
       "subjects": [
         "R101"
       ],
       "year": 1930,
       "queries": [
-        "R101 crash wreckage Beauvais",
-        "R101 crash 1930"
+        "R101 1930"
       ],
       "card": {
         "kind": "none",
@@ -159,10 +128,9 @@
       }
     },
     {
-      "text": "The hydrogen ignited instantly, killing forty-eight people inside the blazing hull.",
+      "text": "It struck the ground, caught fire, and forty-eight people died.",
       "emphasis": [
-        "ignited instantly",
-        "killing forty-eight"
+        "forty-eight people died"
       ],
       "sfx": "riser",
       "pause_after": 0.12,
@@ -170,40 +138,13 @@
         7,
         8
       ],
-      "visual": "photograph of the burned skeleton of the R101 airship, 1930",
+      "visual": "Wreckage of the R101 on a hillside near Beauvais",
       "subjects": [
         "R101"
       ],
       "year": 1930,
       "queries": [
-        "R101 wreckage Beauvais",
-        "R101 crash"
-      ],
-      "card": {
-        "kind": "fact",
-        "big": "48 Dead",
-        "small": "From 54 people on board"
-      }
-    },
-    {
-      "text": "The only survivors were engineers riding in external engine cars.",
-      "emphasis": [
-        "external engine cars"
-      ],
-      "sfx": "pop",
-      "pause_after": 0.4,
-      "claims": [
-        8,
-        9
-      ],
-      "visual": "photograph of an engine car suspended below an airship, 1930",
-      "subjects": [
-        "R101"
-      ],
-      "year": 1930,
-      "queries": [
-        "R101 engine car",
-        "R101 engine"
+        "R101 1930"
       ],
       "card": {
         "kind": "none",
@@ -212,26 +153,47 @@
       }
     },
     {
-      "text": "Yet the empire demanded a triumph, ignoring every warning.",
+      "text": "Four engineers escaped external engine cars. The other two came from inside the hull.",
       "emphasis": [
-        "ignoring every warning"
+        "other two came from inside"
       ],
       "sfx": "none",
       "pause_after": 0.12,
       "claims": [
-        1,
-        4,
-        12
+        8,
+        9
       ],
-      "visual": "photograph of the Royal Air Force ensign from R101 displayed in Cardington Church, 1930",
+      "visual": "Designed fact card about survivor locations",
       "subjects": [
-        "R101",
-        "St Mary's Church, Cardington"
+        "R101 survivors"
       ],
       "year": 1930,
       "queries": [
-        "R101 ensign Cardington",
-        "Cardington Church R101 memorial"
+        "R101 survivors"
+      ],
+      "card": {
+        "kind": "fact",
+        "big": "4 + 2",
+        "small": "Four in engine cars. Two inside the hull."
+      }
+    },
+    {
+      "text": "Exactly what triggered its first dive remains disputed.",
+      "emphasis": [
+        "remains disputed"
+      ],
+      "sfx": "none",
+      "pause_after": 0.25,
+      "claims": [
+        14
+      ],
+      "visual": "R101 near its mooring mast at Cardington, 1929; representative archival photograph",
+      "subjects": [
+        "R101"
+      ],
+      "year": 1930,
+      "queries": [
+        "R101 1930"
       ],
       "card": {
         "kind": "none",
@@ -240,7 +202,7 @@
       }
     }
   ],
-  "hook_text": "RUSHED TO FLY",
-  "loop": true,
-  "better_than_last": "Shortened the total word count to 85 words and structured the final beat to loop seamlessly into the first beat for higher retention."
+  "hook_text": "SIX SURVIVED",
+  "loop": false,
+  "better_than_last": "Opens on archival wreckage and the verified six-survivor account; removes the standalone date card and contested single-cause language."
 }

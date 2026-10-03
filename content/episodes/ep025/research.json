@@ -1,12 +1,13 @@
 {
   "viable": true,
   "reason": "The provided sources contain rich, multi-site verified facts to support a compelling 45-second story on the R101 disaster and its political context.",
-  "story": "In October 1930, Great Britain launched the R101, the world's largest flying craft, on a maiden overseas flight from Cardington to India. Designed by the British government to showcase imperial aviation, the giant hydrogen-filled airship suffered from excessive weight, structural leaks, and untested design changes. Despite missing full-speed trials and facing severe weather warnings, political pressure pushed the ship to depart on schedule with Secretary of State for Air Lord Thomson on board. Flying into heavy rain and strong gales over northern France, the airship plunged into two steep dives near Beauvais before slamming into a hillside. The impact ignited its hydrogen gas, creating a fierce inferno. Out of 54 people on board, 48 perished, including Lord Thomson and the airship's chief engineers. The tragedy permanently ended Britain's airship development program, and its sister ship, the R100, was scrapped soon after.",
-  "angle": "Rushed into a severe storm to meet political deadlines, Britain's giant airship R101 crashed on its maiden overseas flight with the Air Minister aboard, killing 48 people and destroying Britain's airship program in a single night.",
+  "story": "R101 departed Cardington for India on 4 October 1930 after a final refit and a curtailed 17-hour trial without a full-speed test. In rain and wind near Beauvais, it dived twice, hit the ground and caught fire. Forty-eight people died. Six survived: four engineers escaped external engine cars; foreman engineer Harry Leech and wireless operator Arthur Disley escaped from inside the ship. The precise trigger of the first dive remains debated.",
+  "angle": "Six survived R101’s fatal first flight to India, including two who escaped from inside its burning hull; the exact trigger of its first dive remains disputed.",
   "claims": [
     {
       "claim": "R101 departed Cardington on the evening of October 4, 1930, bound for Karachi on its maiden overseas flight.",
       "sources": [
+        "S8",
         "S1",
         "S3",
         "S5",
@@ -25,18 +26,16 @@
       "confidence": "high"
     },
     {
-      "claim": "To increase its lifting capacity, R101 was lengthened by adding an extra gas cell bay prior to its final flight.",
+      "claim": "R101 was lengthened with an extra gas cell bay. After the final refit it made a shortened 17-hour trial without a full-speed run.",
       "sources": [
-        "S1",
-        "S2",
-        "S5",
-        "S6"
+        "S8"
       ],
       "confidence": "high"
     },
     {
       "claim": "Air Minister Lord Thomson was on board as a passenger for the flight to India.",
       "sources": [
+        "S8",
         "S1",
         "S3",
         "S5",
@@ -58,6 +57,7 @@
     {
       "claim": "In the early hours of October 5, 1930, R101 entered two steep dives and crashed near Beauvais, France.",
       "sources": [
+        "S8",
         "S1",
         "S3",
         "S5",
@@ -68,6 +68,7 @@
     {
       "claim": "Upon impact, the airship's hydrogen gas ignited, causing an immediate, catastrophic fire.",
       "sources": [
+        "S8",
         "S1",
         "S3",
         "S5",
@@ -78,6 +79,8 @@
     {
       "claim": "Out of 54 people on board the airship, 48 were killed and only six survived.",
       "sources": [
+        "S8",
+        "S11",
         "S1",
         "S3",
         "S5",
@@ -87,11 +90,10 @@
       "confidence": "high"
     },
     {
-      "claim": "Four of the six survivors were engineers located in external engine cars outside the main hull.",
+      "claim": "Four of the six eventual survivors escaped from external engine cars. Leech and Disley escaped from within the hull.",
       "sources": [
-        "S1",
-        "S5",
-        "S7"
+        "S8",
+        "S11"
       ],
       "confidence": "high"
     },
@@ -133,11 +135,20 @@
         "S4"
       ],
       "confidence": "high"
+    },
+    {
+      "claim": "The precise trigger of R101’s first dive is disputed; the official inquiry considered evidence, while later researchers have offered other explanations.",
+      "sources": [
+        "S8",
+        "S12"
+      ],
+      "confidence": "high"
     }
   ],
   "disputed": [
-    "The exact sequence of events causing the forward dive remains debated, with theories attributing it to forward cover failure, torn gasbags, or atmospheric pressure errors affecting altimeters; scripts should attribute specific theories to official inquiry findings.",
-    "The exact cause of the ignition after impact was not definitively proven; scripts should present the fire as occurring immediately upon impact without stating a specific spark source as settled fact."
+    "The first dive’s precise trigger remains disputed. Do not claim political pressure, weather, a gasbag failure, or a control cable failure alone caused the crash.",
+    "The ignition source after ground impact was not definitively proven. Say the fire followed impact, without assigning a spark source.",
+    "The Trust describes seven people initially escaping; rigger Samuel Church died of injuries days later, leaving six survivors."
   ],
   "visuals": [
     {
@@ -246,6 +257,36 @@
       "url": "https://web.archive.org/web/20090830231632/http://www.aht.ndirect.co.uk/airships/r101/R101%20Passenger%20%20Crew%20List.htm",
       "title": "AHT",
       "site": "ndirect.co.uk"
+    },
+    {
+      "label": "S8",
+      "url": "https://airshipsonline.com/airships/r-101/",
+      "title": "R.101",
+      "site": "airshipsonline.com"
+    },
+    {
+      "label": "S9",
+      "url": "https://airshipsonline.com/people/harry-leech/",
+      "title": "Harry Leech",
+      "site": "airshipsonline.com"
+    },
+    {
+      "label": "S10",
+      "url": "https://airshipsonline.com/people/arthur-disley/",
+      "title": "Arthur Disley",
+      "site": "airshipsonline.com"
+    },
+    {
+      "label": "S11",
+      "url": "https://www.genuki.org.uk/big/Indexes/R101Survivors",
+      "title": "R101 Survivors (information supplied by Airship Heritage Trust)",
+      "site": "genuki.org.uk"
+    },
+    {
+      "label": "S12",
+      "url": "https://airshipsonline.com/library/r-101-public-inquiry-document/",
+      "title": "R.101 Public Inquiry Document, March 1931",
+      "site": "airshipsonline.com"
     }
   ],
   "topic": "R101 (1930): Britain's giant airship crashed in France on its first overseas flight, after it was sent off on schedule with the air minister aboard",
