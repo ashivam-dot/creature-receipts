@@ -160,6 +160,14 @@ def github() -> dict:
         analytics = json.loads(repo_file(f"analytics/{names[-1]}")) if names else {}
     except (RuntimeError, ValueError):
         analytics = {}
+    try:
+        scheduling_hold = json.loads(repo_file("status/scheduling_hold.json"))
+    except (RuntimeError, ValueError):
+        scheduling_hold = None
+    try:
+        private_videos = json.loads(repo_file("status/private_videos.json"))
+    except (RuntimeError, ValueError):
+        private_videos = {}
     month = dt.datetime.now(UTC).strftime("%Y-%m")
     job_times(runs, month)
     minutes = 0
@@ -169,7 +177,8 @@ def github() -> dict:
             minutes += int((ended - started).total_seconds() // 60) + 1
     return {"runs": runs, "workflow_state": workflow.get("state"), "status": status, "history": history,
             "report": report, "report_name": report_name, "minutes": minutes,
-            "youtube_channel": analytics.get("channel") or {}, "analytics_date": analytics.get("date")}
+            "youtube_channel": analytics.get("channel") or {}, "analytics_date": analytics.get("date"),
+            "scheduling_hold": scheduling_hold, "private_videos": private_videos}
 
 
 def buffer(env: dict) -> dict:
@@ -294,6 +303,12 @@ def assess(data: dict) -> list[tuple[str, str]]:
         problems.append(("alert", f"Can't read the studio's status from GitHub: {data.get('github_error')}"))
         return problems
     status, runs = gh["status"], gh["runs"]
+    scheduling_hold = gh.get("scheduling_hold")
+    private_records = (gh.get("private_videos") or {}).get("videos") or []
+    private_ids = {v["youtube_video_id"] for v in private_records
+                   if v.get("privacy_status") == "private" and v.get("youtube_video_id")}
+    private_episodes = {v["episode_id"] for v in private_records
+                        if v.get("privacy_status") == "private" and v.get("episode_id")}
     if gh["workflow_state"] != "active":
         problems.append(("warn", f"The studio's backup workflow on GitHub is {gh['workflow_state']}, so nothing takes over if "
                                  f"Modal's runs stop (gh workflow enable {WORKFLOW} --repo {REPO})."))
@@ -335,7 +350,10 @@ def assess(data: dict) -> list[tuple[str, str]]:
            "on its share of the Actions minutes. A card on Modal (OWNER-CHECKLIST.md) lifts this."
            if room and not room.get("cloud") and status.get("modal_credit", 1) < 10 else "")
     total = inv.get("total", 0)
-    if total < 3:
+    if scheduling_hold:
+        problems.append(("warn", "New scheduling is paused for editorial review: "
+                         + scheduling_hold.get("reason", "release checks are pending")))
+    elif total < 3:
         ready, left = ("1 Short is", "in 1 day") if total == 1 else (f"{total} Shorts are", f"in {total} days" if total else "today")
         problems.append(("alert", f"Only {ready} ready; at one a day the channel runs dry {left}.{why}"))
     elif total < INVENTORY_LOW:
@@ -345,6 +363,8 @@ def assess(data: dict) -> list[tuple[str, str]]:
     for post in status.get("failed_posts", []):
         problems.append(("alert", f"Buffer failed to publish {post['id']}: {post.get('error')}"))
     for short in status.get("not_live", []):
+        if short.get("id") in private_episodes:
+            continue
         problems.append(("alert", f"{short['id']} went out through Buffer but isn't public on YouTube: {short['problem']}"))
     for job in status.get("in_cloud", []):
         started = _parse_time(job.get("spawned_at"))
@@ -380,7 +400,8 @@ def assess(data: dict) -> list[tuple[str, str]]:
                 problems.append(("alert", f"Buffer couldn't publish a post due {_when(post.get('dueAt'))} IST: {why}"))
         due = sorted(_parse_time(p["dueAt"]) for p in buf["scheduled"] if p.get("dueAt"))
         if not due:
-            problems.append(("alert", "Buffer has nothing scheduled: no Shorts will go out."))
+            if not scheduling_hold:
+                problems.append(("alert", "Buffer has nothing scheduled: no Shorts will go out."))
         # The longest gap between slots at the pace the stock allows (auto.per_day): 16 h at 3 a day, 18 at 2, 24 at 1.
         elif due[0] - now > dt.timedelta(hours={3: 16, 2: 18, 1: 24}[max(1, min(3, total // 3))] + 1):
             problems.append(("warn", f"Nothing publishes until {due[0].astimezone(IST):%a %H:%M} IST."))
@@ -388,11 +409,14 @@ def assess(data: dict) -> list[tuple[str, str]]:
     if isinstance(feed, list) and feed:
         newest = max(_parse_time(v["published"]) for v in feed)
         if now - newest > dt.timedelta(hours=26):
-            problems.append(("alert", f"No new Short on YouTube since {newest.astimezone(IST):%a %b %d %H:%M} IST."))
+            level = "warn" if scheduling_hold else "alert"
+            problems.append((level, f"No new Short on YouTube since {newest.astimezone(IST):%a %b %d %H:%M} IST."))
         public = {v["id"] for v in feed}
         for post in buf.get("sent", []):
             sent, link = _parse_time(post.get("sentAt")), post.get("externalLink") or ""
             video = re.search(r"(?:shorts/|v=|youtu\.be/)([\w-]{11})", link)
+            if video and video.group(1) in private_ids:
+                continue
             if sent and now - sent > dt.timedelta(hours=3) and not (video and video.group(1) in public):
                 title = (post.get("metadata") or {}).get("title") or (post.get("text") or "")[:50]
                 problems.append(("alert", f'"{title}" went to YouTube {sent.astimezone(IST):%a %H:%M} IST but isn\'t on '
