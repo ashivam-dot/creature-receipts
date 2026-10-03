@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+import hashlib
 import json
 import logging
 import random
@@ -292,9 +293,12 @@ def make_short(spec_path: Path, out: Path | None = None) -> Path:
         "-pix_fmt", "yuv420p", "-r", str(FPS), *BT709,
         "-c:a", "aac", "-b:a", "192k", "-ar", "48000", "-movflags", "+faststart", "-shortest", out,
     )
+    with out.open("rb") as rendered:
+        video_sha256 = hashlib.file_digest(rendered, "sha256").hexdigest()
     manifest = {
         "id": spec.id,
         "duration": round(total, 3),
+        "video_sha256": video_sha256,
         "beats": [
             {"start": round(s, 3), "end": round(e, 3), "text": beat.text, "asset": asset.credit, "shots": shots}
             for beat, (s, e), asset, shots in zip(spec.beats, narration.beat_spans, assets, beat_shots)

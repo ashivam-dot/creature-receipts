@@ -213,6 +213,8 @@ def episodes() -> list[dict]:
             state = "editorial_hold"
         elif record:
             state = "live" if record["status"] == "sent" else "error" if record["status"] == "error" else "scheduled"
+        elif held and held.get("superseded"):
+            state = "superseded"
         elif held:
             state = "waiting"
         elif remote:
@@ -988,7 +990,7 @@ def repair_posts(run: Run, requeue: bool = True) -> None:
     send a post Buffer couldn't publish back to waiting, up to RETRIES times (not while `requeue` is off: a post
     that failed on a disconnected channel would only fail again), once cloud.slot_watch has stopped sending it
     again."""
-    from .publish import delete_post, edit_post, hosted_bytes, shrink_hosted, unhost_video
+    from .publish import MEDIA_BINDING_FIELDS, delete_post, edit_post, hosted_bytes, shrink_hosted, unhost_video
     from .render import MAX_UPLOAD_MB
     from .spec import ShortSpec
 
@@ -1025,7 +1027,8 @@ def repair_posts(run: Run, requeue: bool = True) -> None:
                 held = {"id": e["id"], "title": record["title"], "series": e["series"], "media_public_id": public_id,
                         "media_url": url, "media_bytes": hosted_bytes(url), "hosted_at": _now().isoformat(timespec="seconds"),
                         "retries": record["retries"], "failed": record.get("error"),
-                        **({"crossposts": record["crossposts"]} if record.get("crossposts") else {})}
+                        **({"crossposts": record["crossposts"]} if record.get("crossposts") else {}),
+                        **{k: record[k] for k in MEDIA_BINDING_FIELDS if k in record}}
                 (e["folder"] / "hold.json").write_text(json.dumps(held, indent=2), encoding="utf-8")
                 delete_post(record["buffer_post_id"])
                 path.unlink()
@@ -1038,7 +1041,7 @@ def preflight_posts(run: Run) -> None:
     """Check each post due within PREFLIGHT_HOURS as it will go out: Buffer still has it, scheduled and public, with
     a title and description YouTube takes and the video its record hosts, and that video downloads whole. What a
     run can fix it fixes; anything else fails the stage, which the monitor raises as an alert."""
-    from .publish import buffer_busy, description, edit_post, fetch_video, hosted_bytes, post, youtube_problems
+    from .publish import MEDIA_BINDING_FIELDS, buffer_busy, description, edit_post, fetch_video, hosted_bytes, post, youtube_problems
     from .spec import ShortSpec
 
     soon = _now() + timedelta(hours=PREFLIGHT_HOURS)
@@ -1052,7 +1055,7 @@ def preflight_posts(run: Run) -> None:
             path = e["folder"] / "publish.json"
             found = post(record["buffer_post_id"])
             if found is None:
-                keep = ("media_public_id", "media_url", "media_bytes", "hosted_at", "retries", "crossposts")
+                keep = ("media_public_id", "media_url", "media_bytes", "hosted_at", "retries", "crossposts") + MEDIA_BINDING_FIELDS
                 held = {"id": e["id"], "title": record["title"], "series": e["series"],
                         **{k: record[k] for k in keep if k in record}}
                 (e["folder"] / "hold.json").write_text(json.dumps(held, indent=2), encoding="utf-8")
@@ -1144,7 +1147,7 @@ def _worth_holding(day: date, supply: int, slots: int, today: date) -> bool:
 def release_anniversaries(run: Run) -> None:
     """Back to waiting with each Short booked on its anniversary that is no longer worth holding for, so this run's
     publish puts it in the next free slot. Once moved off its date it isn't touched again."""
-    from .publish import AUDIENCE_TZ, delete_post
+    from .publish import AUDIENCE_TZ, MEDIA_BINDING_FIELDS, delete_post
 
     eps = episodes()
     today = datetime.now(AUDIENCE_TZ)
@@ -1159,7 +1162,7 @@ def release_anniversaries(run: Run) -> None:
         if due.date() != day or due - today < timedelta(days=1) or _worth_holding(day, supply, slots, today.date()):
             continue
         with run.stage(f"release {e['id']}") as entry:
-            keep = ("media_public_id", "media_url", "media_bytes", "hosted_at", "retries", "crossposts")
+            keep = ("media_public_id", "media_url", "media_bytes", "hosted_at", "retries", "crossposts") + MEDIA_BINDING_FIELDS
             held = {"id": e["id"], "title": record["title"], "series": e["series"], **{k: record[k] for k in keep if k in record}}
             delete_post(record["buffer_post_id"])
             (e["folder"] / "hold.json").write_text(json.dumps(held, indent=2), encoding="utf-8")
@@ -1534,7 +1537,8 @@ def write_report(run: Run, analytics: dict, learned: dict | None, topics_added: 
     channel = analytics.get("channel", {}) if analytics else {}
     week_views = sum(d.get("views", 0) for d in (analytics.get("daily") or [])[-7:]) if analytics else None
     engaged90 = (analytics.get("last_90_days") or {}).get("engagedViews") if analytics else None
-    made = [e for e in eps if e["held"] and datetime.fromisoformat(e["held"]["hosted_at"]) >= since]
+    made = [e for e in eps if e["state"] == "waiting" and e["held"].get("hosted_at")
+            and datetime.fromisoformat(e["held"]["hosted_at"]) >= since]
     rejected = [p for p in (ROOT / "content" / "rejected").glob("ep*/review.json")
                 if (_json(p) or {}).get("rejected_at", "") >= since.isoformat()]
 

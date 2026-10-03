@@ -52,6 +52,7 @@ CROSSPOST_ENV = {"tiktok": "BUFFER_TIKTOK_CHANNEL_ID", "instagram": "BUFFER_INST
 # works best with a few relevant ones.
 CAPTION_CHARS = 2200
 CAPTION_HASHTAGS = 5
+MEDIA_BINDING_FIELDS = ("media_sha256", "spec_sha256", "manifest_sha256")
 
 
 class NotFound(RuntimeError):
@@ -486,6 +487,49 @@ def next_slots(count: int, taken: set[datetime], start: datetime | None = None, 
     return found
 
 
+def _sha256(path: Path) -> str:
+    digest = hashlib.sha256()
+    with path.open("rb") as source:
+        for chunk in iter(lambda: source.read(1 << 20), b""):
+            digest.update(chunk)
+    return digest.hexdigest()
+
+
+def _stamp_manifest_media(folder: Path, episode_id: str) -> None:
+    """Save the rendered file's digest in the manifest that survives worker handoff."""
+    path = folder / "work" / "manifest.json"
+    manifest = json.loads(path.read_text(encoding="utf-8"))
+    digest = _sha256(folder / f"{episode_id}.mp4")
+    if manifest.get("video_sha256") != digest:
+        manifest["video_sha256"] = digest
+        path.write_text(json.dumps(manifest, indent=2), encoding="utf-8")
+
+
+def media_binding(spec_path: Path, episode_id: str) -> dict[str, str]:
+    """The rendered video, spec, and manifest digests, including after worker handoff omits the MP4."""
+    folder = spec_path.parent
+    video = folder / f"{episode_id}.mp4"
+    manifest_path = folder / "work" / "manifest.json"
+    if video.exists():
+        media_hash = _sha256(video)
+    else:
+        media_hash = json.loads(manifest_path.read_text(encoding="utf-8")).get("video_sha256")
+    if not media_hash:
+        raise RuntimeError(f"{episode_id} has no local video or render hash in its manifest; cannot verify hosted media")
+    return {"media_sha256": media_hash, "spec_sha256": _sha256(spec_path),
+            "manifest_sha256": _sha256(manifest_path)}
+
+
+def _validate_hold(held: dict, episode_id: str, binding: dict[str, str] | None = None) -> None:
+    if held.get("superseded"):
+        raise RuntimeError(f"{episode_id} has a superseded hosted video; host the repaired render before scheduling")
+    if any(not held.get(field) for field in MEDIA_BINDING_FIELDS):
+        raise RuntimeError(f"{episode_id} has an unbound hosted video; host the current render before scheduling")
+    if binding is not None and any(held[field] != binding[field] for field in MEDIA_BINDING_FIELDS):
+        raise RuntimeError(f"{episode_id} hosted video is stale relative to its local media, spec, or manifest; "
+                           "host the repaired render before scheduling")
+
+
 def schedule(spec_path: Path, when: datetime | None = None) -> dict:
     spec_path = spec_path.resolve()
     if SCHEDULING_HOLD.exists():
@@ -499,9 +543,16 @@ def schedule(spec_path: Path, when: datetime | None = None) -> dict:
         existing = json.loads(record_path.read_text(encoding="utf-8"))
         raise RuntimeError(f"{spec.id} is already scheduled as Buffer post {existing['buffer_post_id']}")
     video = folder / f"{spec.id}.mp4"
-    manifest = json.loads((folder / "work" / "manifest.json").read_text(encoding="utf-8"))
     held_path = folder / "hold.json"
     held = json.loads(held_path.read_text(encoding="utf-8")) if held_path.exists() else None
+    if held is not None:
+        _validate_hold(held, spec.id)
+    if held is None:
+        _stamp_manifest_media(folder, spec.id)
+    binding = media_binding(spec_path, spec.id)
+    if held is not None:
+        _validate_hold(held, spec.id, binding)
+    manifest = json.loads((folder / "work" / "manifest.json").read_text(encoding="utf-8"))
 
     text = description(spec, manifest)
     recent = posts(since=datetime.now(AUDIENCE_TZ) - timedelta(days=30))
@@ -513,7 +564,7 @@ def schedule(spec_path: Path, when: datetime | None = None) -> dict:
                      and p["status"] not in ("error", "draft")), None):
         log.warning("%s is already Buffer post %s; recording it instead of posting it again", spec.id, twin["id"])
         return _record(folder, spec, twin, held["media_public_id"] if held else f"creaturereceipts/{spec.id}",
-                       held["media_url"] if held else None)
+                       held["media_url"] if held else None, binding)
     queued = [p for p in recent if p["status"] not in ("sent", "error", "draft")]
     if len(queued) >= BUFFER_QUEUE_LIMIT:
         raise RuntimeError(f"Buffer queue is full ({len(queued)} scheduled)")
@@ -546,7 +597,7 @@ def schedule(spec_path: Path, when: datetime | None = None) -> dict:
             unhost_video(public_id)
         raise RuntimeError(f"Buffer rejected {spec.id}: {result.get('message')}")
     record = _record(folder, spec, result["post"] | {"dueAt": when.isoformat()}, public_id, media_url,
-                     {k: held[k] for k in ("media_bytes", "retries", "crossposts") if k in (held or {})})
+                     {**binding, **{k: held[k] for k in ("media_bytes", "retries", "crossposts") if k in (held or {})}})
     log.info("scheduled %s for %s", spec.id, when.isoformat())
     return record
 
@@ -627,8 +678,10 @@ def hold(spec_path: Path, extra: dict | None = None) -> dict:
     spec_path = spec_path.resolve()
     spec = ShortSpec.load(spec_path)
     video = spec_path.parent / f"{spec.id}.mp4"
+    _stamp_manifest_media(spec_path.parent, spec.id)
+    binding = media_binding(spec_path, spec.id)
     # Named after the file, so a second render of the same episode can't replace the video a record points to.
-    public_id = f"creaturereceipts/{spec.id}-{hashlib.sha1(video.read_bytes()).hexdigest()[:8]}"
+    public_id = f"creaturereceipts/{spec.id}-{binding['media_sha256'][:8]}"
     record = {
         "id": spec.id,
         "title": spec.title,
@@ -637,7 +690,10 @@ def hold(spec_path: Path, extra: dict | None = None) -> dict:
         "media_url": host_video(video, public_id),
         "hosted_at": datetime.now(AUDIENCE_TZ).isoformat(timespec="seconds"),
         **(extra or {}),
+        **binding,
     }
+    if media_binding(spec_path, spec.id) != binding:
+        raise RuntimeError(f"{spec.id} changed while its video was being hosted; hold was not saved")
     (spec_path.parent / "hold.json").write_text(json.dumps(record, indent=2), encoding="utf-8")
     return record
 
