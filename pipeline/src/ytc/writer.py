@@ -127,7 +127,9 @@ Recent episodes, for format and tone only. Don't reuse their wording or structur
 
 {exemplars}
 
-Research. The numbered claims are the only facts you may state; say nothing beyond them.
+Research. The numbered claims are the only facts you may state; say nothing beyond them. Read the
+source quotes beside each claim. Preserve their qualifications and uncertainty. Do not strengthen an
+association into a cause, turn a survivor into the only survivor, or present a disputed account as fact.
 
 Story: {story}
 Most surprising fact: {angle}
@@ -390,7 +392,12 @@ def problems(script: dict, research: dict) -> list[str]:
 
 
 def _claims_listing(research: dict) -> str:
-    return "\n".join(f"{n}. {c['claim']} ({c['confidence']})" for n, c in enumerate(research["claims"], start=1))
+    lines = []
+    for number, claim in enumerate(research["claims"], start=1):
+        lines.append(f"{number}. {claim['claim']} ({claim['confidence']})")
+        for evidence in claim.get("evidence", []):
+            lines.append(f"   [{evidence['source']}] {evidence['quote'][:240]}")
+    return "\n".join(lines)
 
 
 def write_script(research: dict, episode_id: str, feedback: list[str] | None = None, draft: dict | None = None) -> dict:
