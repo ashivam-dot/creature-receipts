@@ -12,10 +12,12 @@ import io
 import json
 import logging
 import os
+import shlex
 import shutil
 import subprocess
 import sys
 import tarfile
+import tempfile
 import time
 import urllib.request
 from datetime import datetime, timezone
@@ -324,7 +326,50 @@ WATCH_SCHEDULE = "5,20,40 " + ",".join(str(h) for h in sorted({slot.hour for slo
 watch_state = modal.Dict.from_name("creature-receipts-slot-watch", create_if_missing=True)
 
 
-@app.function(image=image, cpu=0.25, memory=512, timeout=600, secrets=[run_secret], max_containers=1,
+def _refresh_slot_hold() -> bool:
+    """Read the current editorial lock through the deploy key; fail closed on any read error."""
+    from .publish import SCHEDULING_HOLD
+
+    try:
+        with tempfile.TemporaryDirectory(prefix="history-slot-hold-") as directory:
+            root = Path(directory)
+            key, known_hosts, repo = root / "deploy_key", root / "known_hosts", root / "repo"
+            key.write_text(os.environ["YTC_DEPLOY_KEY"].strip() + "\n", encoding="utf-8")
+            key.chmod(0o600)
+            known_hosts.write_text(GITHUB_HOST_KEY + "\n", encoding="utf-8")
+            ssh = (f"ssh -i {shlex.quote(str(key))} -o IdentitiesOnly=yes -o StrictHostKeyChecking=yes "
+                   f"-o UserKnownHostsFile={shlex.quote(str(known_hosts))}")
+            env = {**os.environ, "GIT_SSH_COMMAND": ssh, "GIT_TERMINAL_PROMPT": "0"}
+            clone = subprocess.run(["git", "clone", "--quiet", "--depth", "1", "--branch", "main",
+                                    "--no-checkout", REPO_URL, str(repo)], env=env, capture_output=True,
+                                   text=True, timeout=60)
+            if clone.returncode:
+                raise RuntimeError("authenticated repository clone failed")
+            target = "status/scheduling_hold.json"
+            listing = subprocess.run(["git", "-C", str(repo), "ls-tree", "--name-only", "HEAD", target],
+                                     capture_output=True, text=True, timeout=15)
+            if listing.returncode:
+                raise RuntimeError("editorial hold tree read failed")
+            if not listing.stdout.strip():
+                SCHEDULING_HOLD.unlink(missing_ok=True)
+                return False
+            blob = subprocess.run(["git", "-C", str(repo), "show", f"HEAD:{target}"],
+                                  capture_output=True, text=True, timeout=15)
+            if blob.returncode:
+                raise RuntimeError("editorial hold file read failed")
+            hold = json.loads(blob.stdout)
+            if not isinstance(hold, dict) or not hold.get("reason"):
+                raise ValueError("editorial hold file is invalid")
+    except (OSError, subprocess.SubprocessError, KeyError, ValueError, RuntimeError) as err:
+        SCHEDULING_HOLD.parent.mkdir(parents=True, exist_ok=True)
+        SCHEDULING_HOLD.write_text(json.dumps({"reason": "Could not verify the current editorial hold"}))
+        raise RuntimeError("Could not verify the current editorial hold; Buffer resends remain paused") from err
+    SCHEDULING_HOLD.parent.mkdir(parents=True, exist_ok=True)
+    SCHEDULING_HOLD.write_text(json.dumps(hold))
+    return True
+
+
+@app.function(image=run_image, cpu=0.25, memory=512, timeout=600, secrets=[run_secret], max_containers=1,
               schedule=modal.Cron(WATCH_SCHEDULE, timezone=AUDIENCE_TZ.key))
 def slot_watch() -> list[str]:
     """Send each post Buffer just failed again (publish.resend_failed). It changes Buffer only: the post keeps its
@@ -332,6 +377,18 @@ def slot_watch() -> list[str]:
     from . import publish
 
     logging.basicConfig(level=logging.INFO, format="%(asctime)s %(levelname)s %(name)s: %(message)s", datefmt="%H:%M:%S")
+    try:
+        held = _refresh_slot_hold()
+    except RuntimeError as err:
+        logging.warning("%s", err)
+        if not watch_state.get("hold_read_alerted"):
+            _alert(str(err))
+            watch_state["hold_read_alerted"] = True
+        return []
+    watch_state["hold_read_alerted"] = False
+    if held:
+        logging.info("Editorial scheduling hold is active; Buffer resends are paused")
+        return []
     if not os.environ.get("BUFFER_ORG_ID") and (org := watch_state.get("organization")):
         os.environ["BUFFER_ORG_ID"] = org
     try:

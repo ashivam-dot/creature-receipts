@@ -399,11 +399,15 @@ def assess(data: dict) -> list[tuple[str, str]]:
             else:
                 problems.append(("alert", f"Buffer couldn't publish a post due {_when(post.get('dueAt'))} IST: {why}"))
         due = sorted(_parse_time(p["dueAt"]) for p in buf["scheduled"] if p.get("dueAt"))
+        if scheduling_hold and scheduling_hold.get("block_existing_queue") and buf["scheduled"]:
+            problems.append(("alert", f"Editorial hold requires an empty Buffer queue, but {len(buf['scheduled'])} post(s) "
+                                     "are scheduled. Pause the YouTube queue in Buffer now, then remove the posts; "
+                                     "the hold does not stop posts already queued in Buffer."))
         if not due:
             if not scheduling_hold:
                 problems.append(("alert", "Buffer has nothing scheduled: no Shorts will go out."))
         # The longest gap between slots at the pace the stock allows (auto.per_day): 16 h at 3 a day, 18 at 2, 24 at 1.
-        elif due[0] - now > dt.timedelta(hours={3: 16, 2: 18, 1: 24}[max(1, min(3, total // 3))] + 1):
+        elif not scheduling_hold and due[0] - now > dt.timedelta(hours={3: 16, 2: 18, 1: 24}[max(1, min(3, total // 3))] + 1):
             problems.append(("warn", f"Nothing publishes until {due[0].astimezone(IST):%a %H:%M} IST."))
     feed = data.get("feed")
     if isinstance(feed, list) and feed:

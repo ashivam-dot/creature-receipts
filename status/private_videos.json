@@ -1,11 +1,12 @@
 {
-  "checked_at_utc": "2026-10-03T16:04:28Z",
-  "verification": "Owned YouTube Data API videos.list(part=status,snippet): all five IDs returned privacyStatus=private.",
+  "checked_at_utc": "2026-10-03T16:55:32+00:00",
+  "verification": "Owned YouTube Data API videos.list(part=status): all six uploaded IDs returned privacyStatus=private. channels.list(part=statistics) returned videoCount=0.",
   "videos": [
     {"episode_id": "ep009", "youtube_video_id": "X8MhmozMp0o", "privacy_status": "private", "reason": "shelved earlier animal-channel upload"},
     {"episode_id": "ep013", "youtube_video_id": "zX1VUGHLb0o", "privacy_status": "private", "reason": "shelved earlier animal-channel upload"},
     {"episode_id": "ep025", "youtube_video_id": "qtmFWWw0npA", "privacy_status": "private", "reason": "historical correction hold; withdrawal.json"},
     {"episode_id": "ep031", "youtube_video_id": "jl-V7yPkbkU", "privacy_status": "private", "reason": "historical correction hold; withdrawal.json"},
-    {"episode_id": "ep042", "youtube_video_id": "Jts8c-u_96U", "privacy_status": "private", "reason": "historical correction hold; withdrawal.json"}
+    {"episode_id": "ep042", "youtube_video_id": "Jts8c-u_96U", "privacy_status": "private", "reason": "historical correction hold; withdrawal.json"},
+    {"episode_id": "ep045", "youtube_video_id": "v4rp0oWvgSI", "privacy_status": "private", "reason": "unsupported fate claim and off-event visuals; withdrawal.json"}
   ]
 }

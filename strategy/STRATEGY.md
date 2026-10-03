@@ -4,7 +4,7 @@ Updated 2026-10-03 after the live-channel audit. This is the current plan for `@
 
 ## Current evidence
 
-The owned YouTube API showed one public Short, eight channel views and zero subscribers at the latest authenticated read. Five prior uploads are private; three were withdrawn after factual or image-source errors. The channel has no useful Shorts-feed sample or retention curve. We cannot infer audience preference, posting time, or reach suppression from these numbers. The public Winton Short has a description clarification while a replacement is being rebuilt. New scheduling is held in `status/scheduling_hold.json`.
+The owned YouTube API showed **zero public Shorts, 10 channel views and zero subscribers** at the 2026-10-03 22:27 IST read. All six uploaded videos are private. Winton was withdrawn after its public narration stated an unverified survival count for the cancelled 250-child train; the five earlier private uploads include three with factual or image-source errors. The channel has no useful Shorts-feed sample or retention curve. We cannot infer audience preference, posting time, or reach suppression from these numbers. New scheduling is held in `status/scheduling_hold.json`, and the Buffer queue was empty at the last direct read.
 
 ## Editorial promise
 

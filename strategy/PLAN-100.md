@@ -1,10 +1,10 @@
 # History's Last Hours: 100-day operating plan
 
-Day 0 is 2026-10-01; Day 100 is 2027-01-09. The goal is 100,000 subscribers and millions of engaged views. These are targets, not a forecast. This plan starts from the 2026-10-03 owned-channel read: one public Short, eight channel views, zero subscribers, and no useful feed-retention sample.
+Day 0 is 2026-10-01; Day 100 is 2027-01-09. The goal is 100,000 subscribers and millions of engaged views. These are targets, not a forecast. The 2026-10-03 22:27 IST owned-channel read showed zero public Shorts, 10 channel views, zero subscribers, and no useful feed-retention sample. All six earlier uploads are private pending correction or remain shelved.
 
 ## Now: repair and relaunch
 
-- Keep the channel scheduling hold while inaccurate or mismatched hosted drafts remain. Withdrawn public versions stay private. Rebuild the Winton public Short and the held R101, Yamaguchi, New Fire, Peshtigo, Chicago, Galveston, Empire State, Little Bighorn and Alamo drafts against checked sources.
+- Keep the channel scheduling hold while inaccurate or mismatched hosted drafts remain. Withdrawn versions stay private. Review the corrected local Winton draft and the held R101, Yamaguchi, New Fire, Peshtigo, Chicago, Galveston, Empire State, Little Bighorn and Alamo drafts against checked sources.
 - For each candidate, retain a claim map, image identity and rights receipt, final media hash, full decode/audio/speech report, full-video review and independent QA outcome. A corrected local render is a draft until those checks pass.
 - Make a four-Short pilot batch from different angles: Winton rescue, R101 survival, Yamaguchi survivor, and Chicago legend. Use an event-specific first frame and at least one meaningful visual change, such as a route map, document reveal or timeline. Release only reviewed candidates, at most one per day, with a day between the first few pilots when practical.
 - Verify the exact Buffer asset and due time before every post, then verify the owned YouTube ID, visibility and description after it goes live. Keep the cloud workflow and watchdog active; a stopped provider must surface an alert rather than silently reuse old media.

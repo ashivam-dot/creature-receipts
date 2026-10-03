@@ -271,6 +271,7 @@ def test_caption_and_metadata():
 
 
 def test_crosspost_is_off_by_default_and_never_fails_the_run(studio, monkeypatch):
+    monkeypatch.setattr(publish, "SCHEDULING_HOLD", studio / "no-channel-hold.json")
     monkeypatch.delenv("BUFFER_TIKTOK_CHANNEL_ID", raising=False)
     monkeypatch.delenv("BUFFER_INSTAGRAM_CHANNEL_ID", raising=False)
     assert publish.crosspost_channels() == {}

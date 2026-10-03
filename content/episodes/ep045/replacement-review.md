@@ -1,6 +1,12 @@
 # ep045 private replacement review — 2026-10-03
 
-This review applies to the local `ep045-replacement-private.mp4`, SHA-256 `f89475bf5bea7dc7000b5c664be40892c6bac17cb1768d0f8dcd80d0918b597f`. The MP4 is ignored by Git and remains in the isolated worktree. The currently public video `v4rp0oWvgSI`, its visibility, `publish.json`, and `public_clarification.json` were not changed. No replacement was uploaded or scheduled.
+**Status update, 22:27 IST:** The earlier public upload was made private after
+the unqualified survival claim about the cancelled transport was checked
+against the Winton family source. See [withdrawal.json](withdrawal.json).
+The replacement remains an unhosted local draft under full editorial review.
+The statements below describe the earlier private-render check.
+
+This review applies to the local `ep045-replacement-private.mp4`, SHA-256 `f89475bf5bea7dc7000b5c664be40892c6bac17cb1768d0f8dcd80d0918b597f`. The MP4 is ignored by Git and remains in the isolated worktree. At the time of this render check, the then-public video `v4rp0oWvgSI`, its visibility, `publish.json`, and `public_clarification.json` were not changed. No replacement was uploaded or scheduled.
 
 ## Editorial and provenance
 

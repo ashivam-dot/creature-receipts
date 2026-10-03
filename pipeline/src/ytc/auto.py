@@ -1258,10 +1258,12 @@ def crosspost_scheduled(run: Run) -> None:
     (publish.CROSSPOST_ENV) too, due at the same time, as far as each channel's Buffer queue has room. Off by
     default. What goes wrong is logged in the stage's detail and the Short's publish.json; it never fails the run.
     About 1 request per channel per run plus one per post, well within Buffer's 250 a day."""
-    from .publish import AUDIENCE_TZ, BUFFER_QUEUE_LIMIT, BufferBusy, caption, crosspost, crosspost_channels, posts
+    from .publish import AUDIENCE_TZ, BUFFER_QUEUE_LIMIT, SCHEDULING_HOLD, BufferBusy, caption, crosspost, crosspost_channels, posts
     from .render import MAX_UPLOAD_MB
     from .spec import ShortSpec
 
+    if SCHEDULING_HOLD.exists():
+        return
     limit = MAX_UPLOAD_MB * 1_000_000
     for service, channel_id in crosspost_channels().items():
         if not crosspost_due(episodes(), service, _now(), 1, limit):

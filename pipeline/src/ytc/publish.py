@@ -65,6 +65,14 @@ def _env(name: str) -> str:
     raise RuntimeError(f"{name} is not set in pipeline/.env (see kit/ACCOUNTS.md)")
 
 
+def _require_scheduling_open(spec_path: Path | None = None) -> None:
+    """Apply editorial locks before any Buffer mutation that creates a due post."""
+    if SCHEDULING_HOLD.exists():
+        raise RuntimeError("New scheduling is on editorial hold; remove status/scheduling_hold.json only after review")
+    if spec_path is not None and (spec_path.parent / "editorial_hold.json").exists():
+        raise RuntimeError(f"{spec_path.parent.name} is on editorial hold; remove editorial_hold.json after repair and review")
+
+
 class BufferBusy(RuntimeError):
     """Buffer refused a request for its API limit: 100 requests in 15 minutes and 250 a day, for everything that
     uses the key (the studio's runs and both monitors)."""
@@ -354,6 +362,7 @@ def failures(found: list[dict], now: datetime) -> list[dict]:
 def resend(found: dict, when: datetime) -> dict:
     """Put a post Buffer failed (as post() returns it) back in the queue under the same id, due `when`. Buffer
     checks an edit as a whole post, so it repeats the video and YouTube details Buffer already has."""
+    _require_scheduling_open()
     mutation = """
     mutation Resend($input: EditPostInput!) {
       editPost(input: $input) {
@@ -374,6 +383,8 @@ def resend_failed(now: datetime | None = None) -> list[dict]:
     """Send each post Buffer failed within RESEND_WINDOW again, RESEND_DELAY from now (cloud.slot_watch). Its video
     is downloaded first: a link that doesn't download would only fail again, and the download leaves the file in
     the CDN's cache just before Buffer fetches it. One {"id", "title", "sent", "note"} per failed post."""
+    if SCHEDULING_HOLD.exists():
+        return []
     now = now or datetime.now(timezone.utc)
     failed = failures(posts(since=now - RESEND_WINDOW), now)
     if not failed:
@@ -532,10 +543,7 @@ def _validate_hold(held: dict, episode_id: str, binding: dict[str, str] | None =
 
 def schedule(spec_path: Path, when: datetime | None = None) -> dict:
     spec_path = spec_path.resolve()
-    if SCHEDULING_HOLD.exists():
-        raise RuntimeError("New scheduling is on editorial hold; remove status/scheduling_hold.json only after review")
-    if (spec_path.parent / "editorial_hold.json").exists():
-        raise RuntimeError(f"{spec_path.parent.name} is on editorial hold; remove editorial_hold.json after repair and review")
+    _require_scheduling_open(spec_path)
     spec = ShortSpec.load(spec_path)
     folder = spec_path.parent
     record_path = folder / "publish.json"
@@ -649,6 +657,8 @@ def _crosspost_metadata(service: str, spec: ShortSpec) -> dict:
 def crosspost(spec_path: Path, service: str, channel_id: str, media_url: str, when: datetime) -> dict:
     """Schedule a Short natively on a TikTok or Instagram channel in Buffer, the same video file as its YouTube
     post (no watermark), due `when`: {"id", "status", "due_at"}."""
+    spec_path = spec_path.resolve()
+    _require_scheduling_open(spec_path)
     spec = ShortSpec.load(spec_path)
     mutation = """
     mutation Create($input: CreatePostInput!) {
