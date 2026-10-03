@@ -1,22 +1,18 @@
 {
   "hooks": [
     {
-      "style": "contradiction",
-      "text": "Many believe Nicholas Winton rescued every child on his list."
+      "style": "statement",
+      "text": "A rescue train planned for 250 children never left Prague."
     },
     {
       "style": "question",
-      "text": "Did Nicholas Winton's famous rescue trains save every child in Prague?"
-    },
-    {
-      "style": "statement",
-      "text": "Nicholas Winton's largest rescue train never left the station."
+      "text": "Why did the planned 250-child rescue train never leave Prague?"
     }
   ],
-  "hook_style": "contradiction",
-  "structure": "myth_vs_fact",
-  "title": "Why Nicholas Winton’s Largest Rescue Train Never Left 💔",
-  "description": "The tragic story of Nicholas Winton's final Kindertransport train and the day the borders closed on 250 children.",
+  "hook_style": "statement",
+  "structure": "story",
+  "title": "The Winton Rescue Train That Never Left Prague",
+  "description": "Nicholas Winton and his team helped 669 children reach Britain, but their planned transport for 250 children was cancelled on 1 September 1939 as Germany invaded Poland. Winton’s scrapbook helped bring the rescue story to public attention in 1988. Visual context: Winton portrait, 1938; Prague Main Station aerial, 1931, labeled as a location view; Winton memorial at Prague station, photographed in 2015. No scene depicts the cancelled train or its children.",
   "hashtags": [
     "#history",
     "#nicholaswinton",
@@ -32,25 +28,23 @@
   ],
   "beats": [
     {
-      "text": "Many believe Nicholas Winton rescued every child on his list.",
+      "text": "A rescue train planned for 250 children never left Prague.",
       "emphasis": [
-        "rescued",
-        "list"
+        "250 children",
+        "never left Prague"
       ],
       "sfx": "none",
       "pause_after": 0.12,
       "claims": [
-        6,
-        11
+        1
       ],
-      "visual": "photograph of young Nicholas Winton in 1938",
+      "visual": "Nicholas Winton in 1938; cropped to Winton, not an identified child on the cancelled transport",
       "subjects": [
         "Nicholas Winton"
       ],
       "year": 1938,
       "queries": [
-        "Nicholas Winton 1930s",
-        "Nicholas Winton youth"
+        "Nicholas Winton 1938"
       ],
       "card": {
         "kind": "none",
@@ -59,101 +53,47 @@
       }
     },
     {
-      "text": "He was a hero for the 669 children he saved.",
+      "text": "Nicholas Winton and his team had already helped 669 children reach Britain.",
       "emphasis": [
-        "hero",
-        "669"
-      ],
-      "sfx": "whoosh",
-      "pause_after": 0.12,
-      "claims": [
-        6
-      ],
-      "visual": "photograph of children on a Kindertransport train",
-      "subjects": [
-        "Kindertransport"
-      ],
-      "year": 1939,
-      "queries": [
-        "Kindertransport children train",
-        "Refugees Czechoslovakia 1939"
-      ],
-      "card": {
-        "kind": "fact",
-        "big": "669",
-        "small": "children saved"
-      }
-    },
-    {
-      "text": "But his biggest rescue mission in Prague failed.",
-      "emphasis": [
-        "biggest",
-        "failed"
+        "669 children"
       ],
       "sfx": "none",
       "pause_after": 0.12,
       "claims": [
-        8
+        2,
+        3
       ],
-      "visual": "photograph of Prague Main railway station entrance, 1939",
-      "subjects": [
-        "Praha hlavní nádraží"
-      ],
-      "year": 1939,
-      "queries": [
-        "Prague Main station historical",
-        "Prague Wilson station 1939"
-      ],
-      "card": {
-        "kind": "none",
-        "big": "",
-        "small": ""
-      }
-    },
-    {
-      "text": "The final train was scheduled for September 1, 1939.",
-      "emphasis": [
-        "September 1, 1939"
-      ],
-      "sfx": "none",
-      "pause_after": 0.12,
-      "claims": [
-        8
-      ],
-      "visual": "close-up of the names in Winton's scrapbook",
+      "visual": "designed fact or dateline card",
       "subjects": [
         "Nicholas Winton"
       ],
       "year": 1939,
       "queries": [
-        "Nicholas Winton scrapbook",
-        "Nicholas Winton document"
+        "Nicholas Winton Kindertransport"
       ],
       "card": {
-        "kind": "dateline",
-        "big": "September 1, 1939",
-        "small": "Prague Station"
+        "kind": "fact",
+        "big": "669",
+        "small": "children reached Britain"
       }
     },
     {
-      "text": "That morning, Germany invaded Poland and the borders slammed shut.",
+      "text": "Their largest planned transport was set to leave Prague in early September.",
       "emphasis": [
-        "invaded Poland",
-        "slammed shut"
+        "largest planned transport"
       ],
-      "sfx": "whoosh",
+      "sfx": "none",
       "pause_after": 0.12,
       "claims": [
-        9
+        4
       ],
-      "visual": "photograph of German tanks entering Poland, September 1939",
+      "visual": "Prague Main Station in a 1931 aerial photo, visibly labeled PRAGUE · 1931 PHOTO; location context, not footage of the cancelled 1939 train",
       "subjects": [
-        "Invasion of Poland"
+        "Prague Main Station"
       ],
-      "year": 1939,
+      "year": 1931,
       "queries": [
-        "Invasion of Poland September 1939",
-        "Wehrmacht 1939"
+        "Prague station 1931"
       ],
       "card": {
         "kind": "none",
@@ -162,51 +102,72 @@
       }
     },
     {
-      "text": "Almost none of those final 250 children survived the war.",
+      "text": "On the scheduled day, Germany invaded Poland. The transport was cancelled.",
       "emphasis": [
-        "none",
-        "survived"
+        "Germany invaded Poland",
+        "transport was cancelled"
       ],
       "sfx": "riser",
       "pause_after": 0.12,
       "claims": [
-        10
+        5
       ],
-      "visual": "photograph of empty train tracks at dusk",
+      "visual": "designed fact or dateline card",
       "subjects": [
-        "The Holocaust"
+        "Germany invasion of Poland"
       ],
-      "year": 1945,
+      "year": 1939,
       "queries": [
-        "empty railway tracks historical",
-        "railway tracks old"
+        "Nicholas Winton Kindertransport"
       ],
       "card": {
-        "kind": "none",
-        "big": "",
-        "small": ""
+        "kind": "dateline",
+        "big": "1 SEP 1939",
+        "small": "Germany invades Poland; planned train cancelled"
       }
     },
     {
-      "text": "For fifty years, even his wife never saw the list.",
+      "text": "Nearly fifty years later, a scrapbook helped bring the rescue work into public view.",
       "emphasis": [
-        "fifty years",
-        "wife"
+        "scrapbook",
+        "public view"
       ],
-      "sfx": "pop",
-      "pause_after": 0.4,
+      "sfx": "none",
+      "pause_after": 0.12,
       "claims": [
-        11,
-        12
+        6
       ],
-      "visual": "photograph of Nicholas Winton as an old man in 1988",
+      "visual": "1938 Nicholas Winton portrait reused as subject image, not 1988 footage",
       "subjects": [
         "Nicholas Winton"
       ],
       "year": 1988,
       "queries": [
-        "Nicholas Winton 1988",
-        "Nicholas Winton and Grete Winton"
+        "Nicholas Winton 1938"
+      ],
+      "card": {
+        "kind": "none",
+        "big": "",
+        "small": ""
+      }
+    },
+    {
+      "text": "A memorial at Prague station now honors Winton and the children he helped save.",
+      "emphasis": [
+        "memorial at Prague station"
+      ],
+      "sfx": "none",
+      "pause_after": 0.25,
+      "claims": [
+        7
+      ],
+      "visual": "2015 photograph of Winton memorial at Prague Main Station, cropped to show the complete statue",
+      "subjects": [
+        "Nicholas Winton"
+      ],
+      "year": 2009,
+      "queries": [
+        "Nicholas Winton memorial Prague"
       ],
       "card": {
         "kind": "none",
@@ -215,7 +176,7 @@
       }
     }
   ],
-  "hook_text": "THE MISSING LIST",
-  "loop": true,
-  "better_than_last": "Applied the reviewer's focus on the 669 successes versus the 250 failures and adjusted the secret reveal to emphasize the tragedy's depth."
+  "hook_text": "TRAIN NEVER LEFT",
+  "loop": false,
+  "better_than_last": "Leads with the 250-child stakes, removes the unsourced myth and secret claims, replaces unrelated Stockholm and Polish tank imagery with sourced subject/location/memorial visuals and factual cards."
 }

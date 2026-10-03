@@ -1,15 +1,19 @@
 id: ep045
-title: Why Nicholas Winton’s Largest Rescue Train Never Left 💔
+title: The Winton Rescue Train That Never Left Prague
 series: The Last Hours
-description: The tragic story of Nicholas Winton's final Kindertransport train and the day the borders closed on 250 children.
+description: 'Nicholas Winton and his team helped 669 children reach Britain, but their planned transport for 250
+  children was cancelled on 1 September 1939 as Germany invaded Poland. Winton’s scrapbook helped bring the rescue
+  story to public attention in 1988. Visual context: Winton portrait, 1938; Prague Main Station aerial, 1931, labeled
+  as a location view; Winton memorial at Prague station, photographed in 2015. No scene depicts the cancelled train
+  or its children.'
 sources:
-- https://en.wikipedia.org/wiki/Winton_Train
-- https://news.bbc.co.uk/2/hi/uk_news/8227929.stm
-- https://web.archive.org/web/20090908114502/http://www.telegraph.co.uk/news/newstopics/world-war-2/6138441/Sir-Nicholas-Winton-the-British-Schindler-meets-the-Holocaust-survivors-he-helped-save.html
 - https://encyclopedia.ushmm.org/content/en/article/nicholas-winton-and-the-rescue-of-children-from-czechoslovakia-1938-1939
-- https://holocaust.today/the-victims/jewish-victims/righteous-among-the-nations/nicholas-winton/
 - https://www.nicholaswinton.com/exhibition/kindertransport
-- https://www.trains.com/trn/railroads/history/wintons-train-remembering-a-holocaust-hero/
+- https://www.nicholaswinton.com/exhibition/recognition-1988
+- https://news.bbc.co.uk/2/hi/uk_news/8227929.stm
+- https://commons.wikimedia.org/wiki/File:Praha_hlavn%C3%AD_n%C3%A1dra%C5%BE%C3%AD,_Winton%C5%AFv_pomn%C3%ADk_a_zavazadlov%C3%BD_voz%C3%ADk_(01).jpg
+- https://commons.wikimedia.org/wiki/File:Nicholas_Winton_(1909-2015)_in_1938_by_the_Associated_Press.jpg
+- https://commons.wikimedia.org/wiki/File:Praha_hlavn%C3%AD_n%C3%A1dra%C5%BE%C3%AD_1931.jpg
 hashtags:
 - '#history'
 - '#nicholaswinton'
@@ -26,13 +30,13 @@ voice:
   voice: am_fenrir
   speed: 1.15
 beats:
-- text: Many believe Nicholas Winton rescued every child on his list.
+- text: A rescue train planned for 250 children never left Prague.
   emphasis:
-  - rescued
-  - list
+  - 250 children
+  - never left Prague
   visual:
     source: url
-    url: https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a2/Nicholas_Winton_%281909-2015%29_in_1938_by_the_Associated_Press.jpg/960px-Nicholas_Winton_%281909-2015%29_in_1938_by_the_Associated_Press.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
+    url: https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a2/Nicholas_Winton_%281909-2015%29_in_1938_by_the_Associated_Press.jpg/960px-Nicholas_Winton_%281909-2015%29_in_1938_by_the_Associated_Press.jpg
     credit:
       source: Wikimedia Commons
       title: Nicholas Winton (1909-2015) in 1938 by the Associated Press.jpg
@@ -41,126 +45,84 @@ beats:
       url: https://commons.wikimedia.org/wiki/File:Nicholas_Winton_(1909-2015)_in_1938_by_the_Associated_Press.jpg
     fallbacks:
     - color
-    motion: zoom_out
-    focus_x: 0.65
-    focus_y: 0.45
-    box:
-    - 0.48
-    - 0.05
-    - 0.98
-    - 0.98
-- text: He was a hero for the 669 children he saved.
-  emphasis:
-  - hero
-  - '669'
-  sfx: whoosh
-  visual:
-    source: url
-    url: https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c6/Judiska_barn_fr%C3%A5n_Nazi-Tyskland_som_kommer_till_Stockholm_1939.jpg/960px-Judiska_barn_fr%C3%A5n_Nazi-Tyskland_som_kommer_till_Stockholm_1939.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
-    credit:
-      source: Wikimedia Commons
-      title: Judiska barn från Nazi-Tyskland som kommer till Stockholm 1939.jpg
-      credit: 'Fotograf: Okänd (Aftonbladet). Stadsmuseet i Stockholm'
-      license: CC BY 4.0
-      url: https://commons.wikimedia.org/wiki/File:Judiska_barn_fr%C3%A5n_Nazi-Tyskland_som_kommer_till_Stockholm_1939.jpg
-    fallbacks:
-    - card
-    - color
     motion: zoom_in
-    focus_x: 0.5
-    focus_y: 0.5
+    focus_x: 0.65
+    focus_y: 0.38
+    crop:
+    - 0.48
+    - 0.0
+    - 1.0
+    - 1.0
+- text: Nicholas Winton and his team had already helped 669 children reach Britain.
+  emphasis:
+  - 669 children
+  visual:
+    source: card
     card:
       kind: fact
       big: '669'
-      small: children saved
-- text: But his biggest rescue mission in Prague failed.
+      small: children reached Britain
+    motion: zoom_in
+- text: Their largest planned transport was set to leave Prague in early September.
   emphasis:
-  - biggest
-  - failed
+  - largest planned transport
   visual:
-    source: url
-    url: https://thumb.wikimedia.org/wikipedia/commons/thumb/6/62/Praha_hlavn%C3%AD_n%C3%A1dra%C5%BE%C3%AD_1931.jpg/1920px-Praha_hlavn%C3%AD_n%C3%A1dra%C5%BE%C3%AD_1931.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
+    source: file
+    path: assets/prague-station-1931-labeled.jpg
     credit:
-      source: Wikimedia Commons
-      title: Praha hlavní nádraží 1931.jpg
+      source: Wikimedia Commons derivative
+      title: Praha hlavní nádraží 1931.jpg; labeled location image
       credit: Walter Mittelholzer
       license: Public domain
       url: https://commons.wikimedia.org/wiki/File:Praha_hlavn%C3%AD_n%C3%A1dra%C5%BE%C3%AD_1931.jpg
-    fallbacks:
-    - color
-    motion: zoom_out
+    motion: pan_down
     focus_x: 0.5
-    focus_y: 0.5
-- text: The final train was scheduled for September 1, 1939.
+    focus_y: 0.48
+- text: On the scheduled day, Germany invaded Poland. The transport was cancelled.
   emphasis:
-  - September 1, 1939
+  - Germany invaded Poland
+  - transport was cancelled
   visual:
-    source: url
-    url: https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f2/1939_issued_Identity_Document_for_travelling_to_the_UK%2C_used_by_a_child_on_the_Kindertransport.jpg/1280px-1939_issued_Identity_Document_for_travelling_to_the_UK%2C_used_by_a_child_on_the_Kindertransport.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
-    credit:
-      source: Wikimedia Commons
-      title: 1939 issued Identity Document for travelling to the UK, used by a child on the Kindertransport.jpg
-      credit: United Kingdom Government
-      license: Public domain
-      url: https://commons.wikimedia.org/wiki/File:1939_issued_Identity_Document_for_travelling_to_the_UK,_used_by_a_child_on_the_Kindertransport.jpg
-    fallbacks:
-    - card
-    - color
-    motion: pan_left
-    focus_x: 0.5
-    focus_y: 0.5
+    source: card
     card:
       kind: dateline
-      big: September 1, 1939
-      small: Prague Station
-- text: That morning, Germany invaded Poland and the borders slammed shut.
-  emphasis:
-  - invaded Poland
-  - slammed shut
-  sfx: whoosh
-  visual:
-    source: url
-    url: https://thumb.wikimedia.org/wikipedia/commons/thumb/8/87/Pol5.jpg/960px-Pol5.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
-    credit:
-      source: Wikimedia Commons
-      title: Pol5.jpg
-      credit: AnonymousUnknown author
-      license: Public domain
-      url: https://commons.wikimedia.org/wiki/File:Pol5.jpg
-    fallbacks:
-    - color
-    motion: pan_right
-    focus_x: 0.5
-    focus_y: 0.5
-- text: Almost none of those final 250 children survived the war.
-  emphasis:
-  - none
-  - survived
+      big: 1 SEP 1939
+      small: Germany invades Poland; planned train cancelled
+    motion: zoom_in
   sfx: riser
-  visual:
-    source: url
-    url: https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b4/O%C5%9Bwi%C4%99cim_%2833621909%29.jpeg/1920px-O%C5%9Bwi%C4%99cim_%2833621909%29.jpeg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
-    credit:
-      source: Wikimedia Commons
-      title: Oświęcim (33621909).jpeg
-      credit: Greg
-      license: CC BY 3.0
-      url: https://commons.wikimedia.org/wiki/File:O%C5%9Bwi%C4%99cim_(33621909).jpeg
-    fallbacks:
-    - color
-    motion: pan_left
-    focus_x: 0.5
-    focus_y: 0.5
-- text: For fifty years, even his wife never saw the list.
+- text: Nearly fifty years later, a scrapbook helped bring the rescue work into public view.
   emphasis:
-  - fifty years
-  - wife
-  sfx: pop
-  pause_after: 0.4
+  - scrapbook
+  - public view
   visual:
     reuse: 1
-    motion: zoom_in
-    focus_x: 0.65
-    focus_y: 0.45
-depth_motion: true
-hook_text: THE MISSING LIST
+    motion: zoom_out
+    focus_x: 0.58
+    focus_y: 0.42
+- text: A memorial at Prague station now honors Winton and the children he helped save.
+  emphasis:
+  - memorial at Prague station
+  visual:
+    source: url
+    url: https://upload.wikimedia.org/wikipedia/commons/1/11/Praha_hlavn%C3%AD_n%C3%A1dra%C5%BE%C3%AD%2C_Winton%C5%AFv_pomn%C3%ADk_a_zavazadlov%C3%BD_voz%C3%ADk_%2801%29.jpg
+    credit:
+      source: Wikimedia Commons
+      title: Praha hlavní nádraží, Wintonův pomník a zavazadlový vozík (01).jpg
+      credit: ŠJů; sculpture by Flor Kent
+      license: CC BY 4.0
+      url: https://commons.wikimedia.org/wiki/File:Praha_hlavn%C3%AD_n%C3%A1dra%C5%BE%C3%AD,_Winton%C5%AFv_pomn%C3%ADk_a_zavazadlov%C3%BD_voz%C3%ADk_(01).jpg
+    fallbacks:
+    - color
+    motion: pan_up
+    focus_x: 0.5
+    focus_y: 0.5
+    crop:
+    - 0.55
+    - 0.28
+    - 0.71
+    - 0.75
+  pause_after: 0.25
+depth_motion: false
+hook_text: TRAIN NEVER LEFT
+captions:
+  hook_y: 0.39

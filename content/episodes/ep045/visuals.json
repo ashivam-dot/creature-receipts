@@ -1,7 +1,7 @@
 [
   {
     "source": "url",
-    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a2/Nicholas_Winton_%281909-2015%29_in_1938_by_the_Associated_Press.jpg/960px-Nicholas_Winton_%281909-2015%29_in_1938_by_the_Associated_Press.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a2/Nicholas_Winton_%281909-2015%29_in_1938_by_the_Associated_Press.jpg/960px-Nicholas_Winton_%281909-2015%29_in_1938_by_the_Associated_Press.jpg",
     "credit": {
       "source": "Wikimedia Commons",
       "title": "Nicholas Winton (1909-2015) in 1938 by the Associated Press.jpg",
@@ -12,15 +12,9 @@
     "fallbacks": [
       "color"
     ],
-    "motion": "zoom_out",
+    "motion": "zoom_in",
     "focus_x": 0.65,
-    "focus_y": 0.45,
-    "box": [
-      0.48,
-      0.05,
-      0.98,
-      0.98
-    ],
+    "focus_y": 0.38,
     "_choice": {
       "key": "commons:File:Nicholas Winton (1909-2015) in 1938 by the Associated Press.jpg",
       "origin": "commons",
@@ -40,353 +34,77 @@
       "match": 0.265
     },
     "_fit": "exact",
-    "_shows": "Nicholas Winton in 1938",
-    "_alternates": []
-  },
-  {
-    "source": "url",
-    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c6/Judiska_barn_fr%C3%A5n_Nazi-Tyskland_som_kommer_till_Stockholm_1939.jpg/960px-Judiska_barn_fr%C3%A5n_Nazi-Tyskland_som_kommer_till_Stockholm_1939.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "credit": {
-      "source": "Wikimedia Commons",
-      "title": "Judiska barn från Nazi-Tyskland som kommer till Stockholm 1939.jpg",
-      "credit": "Fotograf: Okänd (Aftonbladet). Stadsmuseet i Stockholm",
-      "license": "CC BY 4.0",
-      "url": "https://commons.wikimedia.org/wiki/File:Judiska_barn_fr%C3%A5n_Nazi-Tyskland_som_kommer_till_Stockholm_1939.jpg"
-    },
-    "fallbacks": [
-      "card",
-      "color"
-    ],
-    "motion": "zoom_in",
-    "focus_x": 0.5,
-    "focus_y": 0.5,
-    "card": {
-      "kind": "fact",
-      "big": "669",
-      "small": "children saved"
-    },
-    "_choice": {
-      "key": "commons:File:Judiska barn från Nazi-Tyskland som kommer till Stockholm 1939.jpg",
-      "origin": "commons",
-      "file": "File:Judiska barn från Nazi-Tyskland som kommer till Stockholm 1939.jpg",
-      "title": "Judiska barn från Nazi-Tyskland som kommer till Stockholm 1939.jpg",
-      "width": 1200,
-      "height": 1103,
-      "license": "CC BY 4.0",
-      "license_url": "https://creativecommons.org/licenses/by/4.0",
-      "artist": "Fotograf: Okänd (Aftonbladet). Stadsmuseet i Stockholm",
-      "date": "1939",
-      "year": 1939,
-      "page": "https://commons.wikimedia.org/wiki/File:Judiska_barn_fr%C3%A5n_Nazi-Tyskland_som_kommer_till_Stockholm_1939.jpg",
-      "route": "category",
-      "original": "https://upload.wikimedia.org/wikipedia/commons/c/c6/Judiska_barn_fr%C3%A5n_Nazi-Tyskland_som_kommer_till_Stockholm_1939.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-      "historical": 0.977,
-      "match": 0.001
-    },
-    "_fit": "exact",
-    "_shows": "Children arriving on Kindertransport",
-    "_alternates": [
-      {
-        "key": "commons:File:Kindertransport-arrive-uk.jpg",
-        "origin": "commons",
-        "file": "File:Kindertransport-arrive-uk.jpg",
-        "title": "Kindertransport-arrive-uk.jpg",
-        "width": 937,
-        "height": 1200,
-        "license": "Public domain",
-        "license_url": null,
-        "artist": "Wide World Photo",
-        "date": "December 12, 1938",
-        "year": 1938,
-        "page": "https://commons.wikimedia.org/wiki/File:Kindertransport-arrive-uk.jpg",
-        "route": "category",
-        "original": "https://upload.wikimedia.org/wikipedia/commons/b/b8/Kindertransport-arrive-uk.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "historical": 0.955,
-        "match": 0.253,
-        "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b8/Kindertransport-arrive-uk.jpg/500px-Kindertransport-arrive-uk.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
-      }
+    "_shows": "Nicholas Winton in 1938; cropped to Winton, not an identified child on the cancelled transport",
+    "_alternates": [],
+    "crop": [
+      0.48,
+      0.0,
+      1.0,
+      1.0
     ]
   },
   {
-    "source": "url",
-    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/62/Praha_hlavn%C3%AD_n%C3%A1dra%C5%BE%C3%AD_1931.jpg/1920px-Praha_hlavn%C3%AD_n%C3%A1dra%C5%BE%C3%AD_1931.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "source": "card",
+    "card": {
+      "kind": "fact",
+      "big": "669",
+      "small": "children reached Britain"
+    },
+    "motion": "zoom_in"
+  },
+  {
+    "source": "file",
+    "path": "assets/prague-station-1931-labeled.jpg",
     "credit": {
-      "source": "Wikimedia Commons",
-      "title": "Praha hlavní nádraží 1931.jpg",
+      "source": "Wikimedia Commons derivative",
+      "title": "Praha hlavní nádraží 1931.jpg; labeled location image",
       "credit": "Walter Mittelholzer",
       "license": "Public domain",
       "url": "https://commons.wikimedia.org/wiki/File:Praha_hlavn%C3%AD_n%C3%A1dra%C5%BE%C3%AD_1931.jpg"
     },
-    "fallbacks": [
-      "color"
-    ],
-    "motion": "zoom_out",
+    "motion": "pan_down",
     "focus_x": 0.5,
-    "focus_y": 0.5,
-    "_choice": {
-      "key": "commons:File:Praha hlavní nádraží 1931.jpg",
-      "origin": "commons",
-      "file": "File:Praha hlavní nádraží 1931.jpg",
-      "title": "Praha hlavní nádraží 1931.jpg",
-      "width": 2204,
-      "height": 2738,
-      "license": "Public domain",
-      "license_url": null,
-      "artist": "Walter Mittelholzer",
-      "date": "1931",
-      "year": 1931,
-      "page": "https://commons.wikimedia.org/wiki/File:Praha_hlavn%C3%AD_n%C3%A1dra%C5%BE%C3%AD_1931.jpg",
-      "route": "period",
-      "original": "https://upload.wikimedia.org/wikipedia/commons/6/62/Praha_hlavn%C3%AD_n%C3%A1dra%C5%BE%C3%AD_1931.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-      "historical": 0.375,
-      "match": 0.162
-    },
-    "_fit": "exact",
-    "_shows": "Prague Main Railway Station in 1931",
-    "_alternates": [
-      {
-        "key": "commons:File:The Wilson Railway Station, Prague.jpg",
-        "origin": "commons",
-        "file": "File:The Wilson Railway Station, Prague.jpg",
-        "title": "The Wilson Railway Station, Prague.jpg",
-        "width": 2127,
-        "height": 2848,
-        "license": "Public domain",
-        "license_url": null,
-        "artist": "Unknown authorUnknown author",
-        "date": "1924",
-        "year": 1924,
-        "page": "https://commons.wikimedia.org/wiki/File:The_Wilson_Railway_Station,_Prague.jpg",
-        "route": "search",
-        "original": "https://upload.wikimedia.org/wikipedia/commons/c/cb/The_Wilson_Railway_Station%2C_Prague.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "historical": 0.966,
-        "match": 0.64,
-        "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cb/The_Wilson_Railway_Station%2C_Prague.jpg/500px-The_Wilson_Railway_Station%2C_Prague.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
-      },
-      {
-        "key": "commons:File:Wilsonovo nádraží a Vrchlického sady, 1936.jpg",
-        "origin": "commons",
-        "file": "File:Wilsonovo nádraží a Vrchlického sady, 1936.jpg",
-        "title": "Wilsonovo nádraží a Vrchlického sady, 1936.jpg",
-        "width": 1024,
-        "height": 652,
-        "license": "Public domain",
-        "license_url": null,
-        "artist": "unknown",
-        "date": "1936",
-        "year": 1936,
-        "page": "https://commons.wikimedia.org/wiki/File:Wilsonovo_n%C3%A1dra%C5%BE%C3%AD_a_Vrchlick%C3%A9ho_sady,_1936.jpg",
-        "route": "period",
-        "original": "https://upload.wikimedia.org/wikipedia/commons/3/31/Wilsonovo_n%C3%A1dra%C5%BE%C3%AD_a_Vrchlick%C3%A9ho_sady%2C_1936.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "historical": 0.96,
-        "match": 0.918,
-        "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/31/Wilsonovo_n%C3%A1dra%C5%BE%C3%AD_a_Vrchlick%C3%A9ho_sady%2C_1936.jpg/500px-Wilsonovo_n%C3%A1dra%C5%BE%C3%AD_a_Vrchlick%C3%A9ho_sady%2C_1936.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
-      }
-    ]
+    "focus_y": 0.48,
+    "_shows": "Prague Main Station in a 1931 aerial photo, visibly labeled PRAGUE · 1931 PHOTO; location context, not footage of the cancelled 1939 train"
   },
   {
-    "source": "url",
-    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f2/1939_issued_Identity_Document_for_travelling_to_the_UK%2C_used_by_a_child_on_the_Kindertransport.jpg/1280px-1939_issued_Identity_Document_for_travelling_to_the_UK%2C_used_by_a_child_on_the_Kindertransport.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "credit": {
-      "source": "Wikimedia Commons",
-      "title": "1939 issued Identity Document for travelling to the UK, used by a child on the Kindertransport.jpg",
-      "credit": "United Kingdom Government",
-      "license": "Public domain",
-      "url": "https://commons.wikimedia.org/wiki/File:1939_issued_Identity_Document_for_travelling_to_the_UK,_used_by_a_child_on_the_Kindertransport.jpg"
-    },
-    "fallbacks": [
-      "card",
-      "color"
-    ],
-    "motion": "pan_left",
-    "focus_x": 0.5,
-    "focus_y": 0.5,
+    "source": "card",
     "card": {
       "kind": "dateline",
-      "big": "September 1, 1939",
-      "small": "Prague Station"
+      "big": "1 SEP 1939",
+      "small": "Germany invades Poland; planned train cancelled"
     },
-    "_choice": {
-      "key": "commons:File:1939 issued Identity Document for travelling to the UK, used by a child on the Kindertransport.jpg",
-      "origin": "commons",
-      "file": "File:1939 issued Identity Document for travelling to the UK, used by a child on the Kindertransport.jpg",
-      "title": "1939 issued Identity Document for travelling to the UK, used by a child on the Kindertransport.jpg",
-      "width": 1759,
-      "height": 1128,
-      "license": "Public domain",
-      "license_url": null,
-      "artist": "United Kingdom Government",
-      "date": "2019-12-18",
-      "year": 2019,
-      "page": "https://commons.wikimedia.org/wiki/File:1939_issued_Identity_Document_for_travelling_to_the_UK,_used_by_a_child_on_the_Kindertransport.jpg",
-      "route": "category",
-      "original": "https://upload.wikimedia.org/wikipedia/commons/f/f2/1939_issued_Identity_Document_for_travelling_to_the_UK%2C_used_by_a_child_on_the_Kindertransport.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-      "historical": 0.999,
-      "match": 0.0
-    },
-    "_fit": "close",
-    "_shows": "Identity document with personal details of a child",
-    "_alternates": [
-      {
-        "key": "commons:File:Kindertransporte Helga Wertheimer 1939.jpg",
-        "origin": "commons",
-        "file": "File:Kindertransporte Helga Wertheimer 1939.jpg",
-        "title": "Kindertransporte Helga Wertheimer 1939.jpg",
-        "width": 1381,
-        "height": 886,
-        "license": "Public domain",
-        "license_url": null,
-        "artist": "Unknown authorUnknown author",
-        "date": "1939",
-        "year": 1939,
-        "page": "https://commons.wikimedia.org/wiki/File:Kindertransporte_Helga_Wertheimer_1939.jpg",
-        "route": "category",
-        "original": "https://upload.wikimedia.org/wikipedia/commons/3/39/Kindertransporte_Helga_Wertheimer_1939.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "historical": 0.997,
-        "match": 0.0,
-        "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/39/Kindertransporte_Helga_Wertheimer_1939.jpg/500px-Kindertransporte_Helga_Wertheimer_1939.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
-      }
-    ]
-  },
-  {
-    "source": "url",
-    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/87/Pol5.jpg/960px-Pol5.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "credit": {
-      "source": "Wikimedia Commons",
-      "title": "Pol5.jpg",
-      "credit": "AnonymousUnknown author",
-      "license": "Public domain",
-      "url": "https://commons.wikimedia.org/wiki/File:Pol5.jpg"
-    },
-    "fallbacks": [
-      "color"
-    ],
-    "motion": "pan_right",
-    "focus_x": 0.5,
-    "focus_y": 0.5,
-    "_choice": {
-      "key": "commons:File:Pol5.jpg",
-      "origin": "commons",
-      "file": "File:Pol5.jpg",
-      "title": "Pol5.jpg",
-      "width": 1200,
-      "height": 805,
-      "license": "Public domain",
-      "license_url": null,
-      "artist": "AnonymousUnknown author",
-      "date": "1939",
-      "year": 1939,
-      "page": "https://commons.wikimedia.org/wiki/File:Pol5.jpg",
-      "route": "category",
-      "original": "https://upload.wikimedia.org/wikipedia/commons/8/87/Pol5.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-      "historical": 0.812,
-      "match": 0.393
-    },
-    "_fit": "exact",
-    "_shows": "German invasion of Poland in September 1939",
-    "_alternates": [
-      {
-        "key": "commons:File:The Nazi-soviet Invasion of Poland, 1939 HU106374.jpg",
-        "origin": "commons",
-        "file": "File:The Nazi-soviet Invasion of Poland, 1939 HU106374.jpg",
-        "title": "The Nazi-soviet Invasion of Poland, 1939 HU106374.jpg",
-        "width": 2379,
-        "height": 1772,
-        "license": "Public domain",
-        "license_url": null,
-        "artist": "Associated Press photographer",
-        "date": "5 September 1939 (Second World War)",
-        "year": 1939,
-        "page": "https://commons.wikimedia.org/wiki/File:The_Nazi-soviet_Invasion_of_Poland,_1939_HU106374.jpg",
-        "route": "search",
-        "original": "https://upload.wikimedia.org/wikipedia/commons/1/1e/The_Nazi-soviet_Invasion_of_Poland%2C_1939_HU106374.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "historical": 0.767,
-        "match": 0.178,
-        "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1e/The_Nazi-soviet_Invasion_of_Poland%2C_1939_HU106374.jpg/500px-The_Nazi-soviet_Invasion_of_Poland%2C_1939_HU106374.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
-      },
-      {
-        "key": "commons:File:The German-soviet Invasion of Poland, 1939 HU106367.jpg",
-        "origin": "commons",
-        "file": "File:The German-soviet Invasion of Poland, 1939 HU106367.jpg",
-        "title": "The German-soviet Invasion of Poland, 1939 HU106367.jpg",
-        "width": 800,
-        "height": 584,
-        "license": "Public domain",
-        "license_url": null,
-        "artist": "Planet News photographer",
-        "date": "20 September 1939 (Second World War)",
-        "year": 1939,
-        "page": "https://commons.wikimedia.org/wiki/File:The_German-soviet_Invasion_of_Poland,_1939_HU106367.jpg",
-        "route": "search",
-        "original": "https://upload.wikimedia.org/wikipedia/commons/1/1c/The_German-soviet_Invasion_of_Poland%2C_1939_HU106367.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "historical": 0.908,
-        "match": 0.561,
-        "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1c/The_German-soviet_Invasion_of_Poland%2C_1939_HU106367.jpg/500px-The_German-soviet_Invasion_of_Poland%2C_1939_HU106367.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
-      }
-    ]
-  },
-  {
-    "source": "url",
-    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b4/O%C5%9Bwi%C4%99cim_%2833621909%29.jpeg/1920px-O%C5%9Bwi%C4%99cim_%2833621909%29.jpeg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "credit": {
-      "source": "Wikimedia Commons",
-      "title": "Oświęcim (33621909).jpeg",
-      "credit": "Greg",
-      "license": "CC BY 3.0",
-      "url": "https://commons.wikimedia.org/wiki/File:O%C5%9Bwi%C4%99cim_(33621909).jpeg"
-    },
-    "fallbacks": [
-      "color"
-    ],
-    "motion": "pan_left",
-    "focus_x": 0.5,
-    "focus_y": 0.5,
-    "_choice": {
-      "key": "commons:File:Oświęcim (33621909).jpeg",
-      "origin": "commons",
-      "file": "File:Oświęcim (33621909).jpeg",
-      "title": "Oświęcim (33621909).jpeg",
-      "width": 2048,
-      "height": 1365,
-      "license": "CC BY 3.0",
-      "license_url": "https://creativecommons.org/licenses/by/3.0",
-      "artist": "Greg",
-      "date": "12 August 2010, 20:09:05 (UTC)",
-      "year": 2010,
-      "page": "https://commons.wikimedia.org/wiki/File:O%C5%9Bwi%C4%99cim_(33621909).jpeg",
-      "route": "depicts",
-      "original": "https://upload.wikimedia.org/wikipedia/commons/b/b4/O%C5%9Bwi%C4%99cim_%2833621909%29.jpeg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-      "historical": 0.413,
-      "match": 0.052
-    },
-    "_fit": "scene",
-    "_shows": "Railway tracks at Auschwitz-Birkenau",
-    "_alternates": [
-      {
-        "key": "commons:File:Extermination Camp of Auschwitz-Birkenau, Poland (74214844).jpg",
-        "origin": "commons",
-        "file": "File:Extermination Camp of Auschwitz-Birkenau, Poland (74214844).jpg",
-        "title": "Extermination Camp of Auschwitz-Birkenau, Poland (74214844).jpg",
-        "width": 2048,
-        "height": 1536,
-        "license": "CC BY 2.0",
-        "license_url": "https://creativecommons.org/licenses/by/2.0",
-        "artist": "Emmanuel DYAN from Paris, France",
-        "date": "2004-10-24 16:45",
-        "year": 2004,
-        "page": "https://commons.wikimedia.org/wiki/File:Extermination_Camp_of_Auschwitz-Birkenau,_Poland_(74214844).jpg",
-        "route": "depicts",
-        "original": "https://upload.wikimedia.org/wikipedia/commons/e/e9/Extermination_Camp_of_Auschwitz-Birkenau%2C_Poland_%2874214844%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "historical": 0.0,
-        "match": 0.0,
-        "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e9/Extermination_Camp_of_Auschwitz-Birkenau%2C_Poland_%2874214844%29.jpg/500px-Extermination_Camp_of_Auschwitz-Birkenau%2C_Poland_%2874214844%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
-      }
-    ]
+    "motion": "zoom_in"
   },
   {
     "reuse": 1,
-    "motion": "zoom_in",
-    "focus_x": 0.65,
-    "focus_y": 0.45
+    "motion": "zoom_out",
+    "focus_x": 0.58,
+    "focus_y": 0.42,
+    "_shows": "1938 Nicholas Winton portrait reused as subject image, not 1988 footage"
+  },
+  {
+    "source": "url",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/1/11/Praha_hlavn%C3%AD_n%C3%A1dra%C5%BE%C3%AD%2C_Winton%C5%AFv_pomn%C3%ADk_a_zavazadlov%C3%BD_voz%C3%ADk_%2801%29.jpg",
+    "credit": {
+      "source": "Wikimedia Commons",
+      "title": "Praha hlavní nádraží, Wintonův pomník a zavazadlový vozík (01).jpg",
+      "credit": "ŠJů; sculpture by Flor Kent",
+      "license": "CC BY 4.0",
+      "url": "https://commons.wikimedia.org/wiki/File:Praha_hlavn%C3%AD_n%C3%A1dra%C5%BE%C3%AD,_Winton%C5%AFv_pomn%C3%ADk_a_zavazadlov%C3%BD_voz%C3%ADk_(01).jpg"
+    },
+    "fallbacks": [
+      "color"
+    ],
+    "motion": "pan_up",
+    "focus_x": 0.5,
+    "focus_y": 0.5,
+    "crop": [
+      0.55,
+      0.28,
+      0.71,
+      0.75
+    ],
+    "_shows": "2015 photograph of Winton memorial at Prague Main Station, cropped to show the complete statue"
   }
 ]
