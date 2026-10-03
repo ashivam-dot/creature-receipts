@@ -2,7 +2,7 @@
 
 ## Exact private media
 
-- Local, unhosted file: [ep027-rights-candidate.mp4](ep027-rights-candidate.mp4). MP4 files are ignored by Git; the file is present in this isolated worktree for review.
+- Local, unhosted file: [ep027-rights-candidate.mp4](ep027-rights-candidate.mp4). MP4 files are ignored by Git; the file is present in this isolated worktree for review and its exact bytes have an independently verified [private Modal backup](private-modal-backup.json).
 - SHA-256: `551a99ab4c3dea20de9b9fbf50c0816e33620fe9ea66f3aec5d8b1317baea436`, also recorded in `work/manifest.json` and `hold.json`.
 - 25.167 seconds; 11,282,901 bytes; H.264, 1080 × 1920, 30 fps; AAC, 48 kHz stereo. FFmpeg decoded the complete video and audio without an error.
 - `ytc.check` measured −14.4 LUFS integrated and −1.7 dBFS true peak, 62 spoken words and no automated warning. Its seven beat frames are in [sheet.jpg](sheet.jpg). At 0.1 and 1.5 seconds, the cow illustration and “THE COW STORY” are visible; the final “EXONERATED / Chicago City Council · 1997” card is legible at 540 × 960.
@@ -20,6 +20,6 @@ The [Currier & Ives fire lithograph](https://commons.wikimedia.org/wiki/File:Chi
 
 ## Release state and remaining gate
 
-The candidate has **not** been hosted, uploaded, scheduled or published. The existing Cloudinary `hold.json` URL still serves the withdrawn 11,937,837-byte MP4 (SHA-256 `59fbb6b0defe6c907f4dac75f34571e92ffe5dd642925bec8202cb5b6d2ee7c9`), which does not match this candidate and must never be reused. The per-episode editorial hold remains.
+The candidate has **not** been hosted on a public CDN, uploaded to YouTube, scheduled or published. It was copied only to the private Modal volume for preservation. The existing Cloudinary `hold.json` URL still serves the withdrawn 11,937,837-byte MP4 (SHA-256 `59fbb6b0defe6c907f4dac75f34571e92ffe5dd642925bec8202cb5b6d2ee7c9`), which does not match this candidate and must never be reused. The per-episode editorial hold remains.
 
 An independent reviewer still needs to listen to the complete **exact-hash** MP4 and watch it in motion at phone size, particularly O’Leary and Ahern, the “boasted” qualification, the three uses of the same legend art, and the music/caption transitions. After approval, any hosted copy needs a byte-for-byte hash match and fresh scheduling review under the channel hold.
