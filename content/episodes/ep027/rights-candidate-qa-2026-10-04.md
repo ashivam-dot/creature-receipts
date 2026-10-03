@@ -7,6 +7,7 @@
 - 25.167 seconds; 11,282,901 bytes; H.264, 1080 × 1920, 30 fps; AAC, 48 kHz stereo. FFmpeg decoded the complete video and audio without an error.
 - `ytc.check` measured −14.4 LUFS integrated and −1.7 dBFS true peak, 62 spoken words and no automated warning. Its seven beat frames are in [sheet.jpg](sheet.jpg). At 0.1 and 1.5 seconds, the cow illustration and “THE COW STORY” are visible; the final “EXONERATED / Chicago City Council · 1997” card is legible at 540 × 960.
 - `small.en` on the **finished MP4** heard all seven claim beats, including “no proven cause,” “no proof against her,” “Ahern boasted,” and the 1997 exoneration. It missed unstressed “the” and “a” and normalized two possessive endings as “is”; no factual phrase was missing. This machine check does not judge pronunciation, music, pacing or full-motion playback.
+- A separate [blind audio-only Gemini screen](independent-audio-screen.json) of the same finished MP4 transcribed all seven material statements without a supplied script. It reported no uncertain words, glitches, pronunciation concerns or music masking, and heard sound effects between some sentences. It dropped a few unstressed articles. This is supporting machine evidence, not native listening or release approval.
 
 ## Source and rights recheck
 

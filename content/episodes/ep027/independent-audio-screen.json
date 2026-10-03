@@ -1,0 +1,20 @@
+{
+  "kind": "independent_model_audio_screen_v1",
+  "status": "non_authorizing; native listening and full-motion release review pending",
+  "video_sha256": "551a99ab4c3dea20de9b9fbf50c0816e33620fe9ea66f3aec5d8b1317baea436",
+  "audio_input": "mono 24 kHz MP3 extracted from exact finished MP4; no script supplied",
+  "audio_input_sha256": "6c56034108f1ecfd4eec8ea5795424b325c282454e4b6f81613f5f5e89d6eeda",
+  "model": "gemini-3.5-flash",
+  "provider_response_sha256": "bf1510039caa59e67453839252da13f7859a4853b2355933b9d6d4f376cb41c5",
+  "model_findings": {
+    "verbatim_transcript": "Chicago blamed a cow for fire with no proven cause. 1871, flames began near Catherine O'Leary's barn. Fire left 100,000 people homeless. O'Leary swore she was asleep when it began. The official inquiry found no proof against her. Years later, Michael Ahern boasted that he and others invented the cow story. Chicago's council exonerated her in 1997.",
+    "uncertain_words": [],
+    "audible_glitches": [],
+    "pronunciation_concerns": [],
+    "music_masks_speech": false,
+    "delivery_assessment": "The speaker delivers the text clearly and at a steady pace, with sound effects between some sentences.",
+    "complete_audio_reviewed": true
+  },
+  "limits": "A model screen can miss pronunciation, mix, pacing, or playback defects. It is not native human listening or publication approval.",
+  "checked_at_utc": "2026-10-03T20:49:25+00:00"
+}
