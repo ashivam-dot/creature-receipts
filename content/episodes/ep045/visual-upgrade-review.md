@@ -21,3 +21,5 @@ The source is the [Wikimedia Commons 1938 Winton photograph](https://commons.wik
 | Focused tests | `test_visual_provenance.py`, `test_editorial_hold.py`, `test_history_cards.py`: 7 passed |
 
 The private MP4 is available in this worktree for full-motion playback and native listening. A reviewer still needs to hear the opening distinction between “planned” and “plan,” assess the delivery and music, review the whole video on a phone, and make an independent editorial decision before any release action.
+
+The exact MP4 also has a [private Modal volume backup](private-modal-backup.json), verified by a SHA-256 check inside the mounted volume. That backup does not host or authorize the video for publication.
