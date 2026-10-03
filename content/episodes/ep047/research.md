@@ -40,12 +40,14 @@ Story (corrected 2026-10-03): During the Alamo’s 13-day siege, Travis asked fo
 | 17 | 6 | The battle at San Jacinto lasted less than 20 minutes. | S8 | high |
 | 18 | - | Santa Anna was captured the day after the Battle of San Jacinto. | S1, S4 | high |
 | 19 | - | The Alamo was originally established as a Spanish mission around 1718. | S2, S3, S5 | high |
+| 20 | 1 | The Texas State Historical Association lists 189 defenders officially, while noting ongoing research may raise the final count as high as 257. “Nearly 200” refers to the official list, not a settled final total. | S7 | high for official count; final total disputed |
+| 21 | 4 | About 1,800 Mexican assault troops advanced into range at the Alamo on March 6, 1836. | S7 | high |
 
 ## Disputed or left out
 
 - The story of Travis drawing a line in the sand is considered legend and lacks primary source evidence; a script should attribute this to tradition or leave it out.
 - Accounts of David Crockett's death vary between him dying in combat or being among a small group executed after surrendering; a script should state that historians disagree.
-- The exact number of Texian defenders varies between 182 and 257; a script should use 'nearly 200'.
+- The Texas State Historical Association gives 189 on its current official list and says the final total may rise to 257. The existing narration's “nearly 200” refers to the official list; do not present it as an exact final total.
 - Specific details of Jim Bowie's death are conflicting, with some saying he died fighting from his bed and others saying he was bayoneted while unconscious; a script should attribute these as 'conflicting accounts'.
 
 ## Images
