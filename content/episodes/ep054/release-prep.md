@@ -2,15 +2,15 @@
 
 **Status:** Local and private. `ep054.mp4` is ignored by Git; no Cloudinary URL, Buffer post or YouTube upload exists for this package. `editorial_hold.json` and the channel-wide `status/scheduling_hold.json` both block scheduling. The withdrawn `ep045` upload `v4rp0oWvgSI` and its historical records remain private and intact.
 
-The [source cut and QA](../ep045/rights-clear-review.md) are bound to the exact same MP4 bytes. The copied `ep054.mp4` is 11,768,073 bytes, SHA-256 `c1da9edb41de6b002d0b28b952bffd1d48e0020d29c10be2acb8140ebaf65549`. Its package bindings are:
+The new `ep054.mp4` preserves the [ep045 rights-clear narration](../ep045/rights-clear-review.md) while replacing the station view with a verified [2017 CC0 aerial](assets/prague-station-2017-crop.source.json). It is 14,809,197 bytes, SHA-256 `6b43913005bbb9fade2e1f82ef5396a512c35a572004c1345b59da3f282bade0`. The old cut remains private and is a different file. This package’s bindings are:
 
 | Field | SHA-256 |
 |---|---|
-| `media_sha256` | `c1da9edb41de6b002d0b28b952bffd1d48e0020d29c10be2acb8140ebaf65549` |
-| `spec_sha256` (`short.yaml`) | `b22e80cd740771c666ea0c6431ea14169f5bb9607d242782f89b1f4713014e12` |
-| `manifest_sha256` (`work/manifest.json`) | `0a4e76658a043c62fcd8e863181406a9f2c560ae01dc7292102f26c20fdf8bef` |
+| `media_sha256` | `6b43913005bbb9fade2e1f82ef5396a512c35a572004c1345b59da3f282bade0` |
+| `spec_sha256` (`short.yaml`) | `e1a7737123095c158a439022120c466216932d8edaa911705ab1f17b06dfaeae` |
+| `manifest_sha256` (`work/manifest.json`) | `56368b218731be96c899b94f2ff20321984b1f38289a7618c068ba2941c08f5c` |
 
-`short.yaml` and the manifest both identify `ep054`; the package contains the local Winton and station derivatives, provenance receipt, research, script, visuals, narration and review frames. Manifest asset paths are relative to this package. The generated 1,997-byte description includes all three image credits and direct CC license/source links. `media_binding()` returns the three hashes above; the package has no inherited `publish.json`, `hold.json`, `withdrawal.json`, or `remote.json`. The scheduling guard was directly checked and rejected this package under the current hold.
+`short.yaml` and the manifest both identify `ep054`; the package contains the local Winton and station derivatives, provenance receipt, research, script, visuals, narration and review frames. Manifest asset paths are relative to this package. The generated 2,029-byte description includes all three image credits, direct CC BY license links, and the CC0 image source page. `media_binding()` returns the three hashes above; the package has no inherited `publish.json`, `hold.json`, `withdrawal.json`, or `remote.json`. The scheduling guard was directly checked and rejected this package under the current hold.
 
 **Earliest configured evening slot:** Sunday **4 October 2026, 04:30 IST** (Saturday 3 October, 19:00 US Eastern). The next is 07:00 IST (21:30 Eastern). Use the first only if exact-media native listening, phone playback, independent editorial signoff, hosted hash, queue inspection and controlled scheduling can finish by 04:00 IST. Otherwise use the next available reviewed slot; neither time is booked. Recheck the remote `main` tree for an `ep054` collision before integration, and read back the Buffer post's media URL, channel, title, description and due time before any public send. Keep the old Winton video private.
 
@@ -29,9 +29,10 @@ From the candidate worktree root:
 ```sh
 shasum -a 256 content/episodes/ep054/ep054.mp4 content/episodes/ep054/short.yaml content/episodes/ep054/work/manifest.json
 ffprobe -v error -show_entries format=duration,size -show_entries stream=codec_name,width,height,r_frame_rate -of json content/episodes/ep054/ep054.mp4
-cat content/episodes/ep045/assets/winton-2007-portrait-cover.source.json
+cat content/episodes/ep054/assets/winton-2007-portrait-cover.source.json
+cat content/episodes/ep054/assets/prague-station-2017-crop.source.json
 cat content/episodes/ep045/rights-clear-review.md
-cat content/episodes/ep045/narration-rights-clear-audio-screen.json
+cat content/episodes/ep054/post-rerender-audio-screen.json
 ```
 
-Play `content/episodes/ep054/ep054.mp4` from start to finish with sound and at phone size. Inspect `content/episodes/ep054/rights-clear-opening.jpg`, `rights-clear-sweep.jpg`, and `sheet.jpg` alongside the moving video. The audio-only model screen is a receipt, not a substitute for independent human listening.
+Play `content/episodes/ep054/ep054.mp4` from start to finish with sound and at phone size. Inspect `content/episodes/ep054/rights-clear-opening.jpg`, `rights-clear-sweep.jpg`, and `sheet.jpg` alongside the moving video. The machine audio screen is a receipt, not a substitute for independent human listening. The prior ep045 video screen is historical evidence and does not bind this render.

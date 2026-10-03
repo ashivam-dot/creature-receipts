@@ -1,0 +1,29 @@
+{
+  "kind": "independent_full_video_model_screen_v1",
+  "status": "superseded historical screen for the prior rights-clear cut; non-authorizing",
+  "model": "gemini-3.1-flash-lite",
+  "video_sha256": "c1da9edb41de6b002d0b28b952bffd1d48e0020d29c10be2acb8140ebaf65549",
+  "provider_response_sha256": "b4f5b3632040cb5acd360030c70d3988ec84f13361b62c60ff4f4689110599ef",
+  "model_findings": {
+    "full_video_reviewed": true,
+    "audible_transcript": "A train meant to rescue 250 children never left Prague. 669 children reached Britain. Nicholas Winton and his team had already helped 669 children reach Britain. Their largest planned transport was set to leave Prague in early September. On the scheduled day, Germany invaded Poland; the transport was cancelled. Nearly 50 years later, a scrapbook helped bring the rescue work into public view. A memorial at Prague station now honors Winton and the children he helped save.",
+    "visual_sequence": [
+      "0:00 - 0:04: Portrait of Nicholas Winton.",
+      "0:04 - 0:09: Text on black background.",
+      "0:09 - 0:13: Aerial view of a train station.",
+      "0:13 - 0:18: Text on black background.",
+      "0:18 - 0:24: Portrait of Nicholas Winton.",
+      "0:24 - 0:29: Statue of Nicholas Winton with children."
+    ],
+    "caption_or_crop_defects": [],
+    "audio_or_sync_defects": [],
+    "context_or_false_impression_risks": [],
+    "release_blockers": [],
+    "confidence": "high"
+  },
+  "usage": {
+    "promptTokenCount": 2794,
+    "candidatesTokenCount": 313,
+    "totalTokenCount": 3107
+  }
+}

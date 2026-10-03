@@ -1,0 +1,17 @@
+{
+  "kind": "post_rerender_exact_media_audio_screen_v1",
+  "status": "non-authorizing; native human listening and phone playback remain pending",
+  "video_sha256": "6b43913005bbb9fade2e1f82ef5396a512c35a572004c1345b59da3f282bade0",
+  "audio_input": "finished MP4 audio downmixed to 16 kHz mono PCM WAV for independent ASR",
+  "audio_input_sha256": "3a837c3ad70f067da86c5b854c349f7fa65f78c43c647a10365dd4c46f21f593",
+  "asr": "faster-whisper small.en, CPU int8, beam 5, no script prompt",
+  "asr_transcript": "A train meant to rescue 250 children never left Prague. Nicholas Winton and his team had already helped 669 children reach Britain. Their largest planned transport was set to leave Prague in early September. On the scheduled day Germany invaded Poland, the transport was cancelled. Nearly 50 years later, a scrapbook helped bring the rescue work into public view. A memorial at Prague Station now honors Winton and the children he helped save.",
+  "asr_result": "Six complete narration beats; no omitted or extra words, and both Prague mentions were recognized. Punctuation and case vary from script only.",
+  "decoded_audio_pcm_sha256": "60b3d6a1e5706f544cbeb11bbe02efa1961ec5affd1619bfef12c1d8ebfab331",
+  "decoded_audio_matches_ep045_rights_clear_cut": true,
+  "full_ffmpeg_audio_video_decode": "passed; 883 video frames, no decode errors",
+  "integrated_loudness_lufs": -14.3,
+  "loudness_range_lu": 3.0,
+  "true_peak_dbfs": -1.7,
+  "limits": "ASR, waveform equality, and acoustic metrics cannot substitute for native human listening or full-motion phone review."
+}
