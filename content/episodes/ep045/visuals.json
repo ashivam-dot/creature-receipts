@@ -1,20 +1,16 @@
 [
   {
-    "source": "url",
-    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a2/Nicholas_Winton_%281909-2015%29_in_1938_by_the_Associated_Press.jpg/960px-Nicholas_Winton_%281909-2015%29_in_1938_by_the_Associated_Press.jpg",
+    "source": "file",
     "credit": {
-      "source": "Wikimedia Commons",
-      "title": "Nicholas Winton (1909-2015) in 1938 by the Associated Press.jpg",
-      "credit": "AnonymousUnknown author",
+      "source": "Wikimedia Commons derivative",
+      "title": "Nicholas Winton (1909-2015) in 1938 by the Associated Press.jpg; Winton-only cover crop",
+      "credit": "Anonymous / unknown author",
       "license": "Public domain",
       "url": "https://commons.wikimedia.org/wiki/File:Nicholas_Winton_(1909-2015)_in_1938_by_the_Associated_Press.jpg"
     },
-    "fallbacks": [
-      "color"
-    ],
     "motion": "zoom_in",
-    "focus_x": 0.65,
-    "focus_y": 0.38,
+    "focus_x": 0.5,
+    "focus_y": 0.42,
     "_choice": {
       "key": "commons:File:Nicholas Winton (1909-2015) in 1938 by the Associated Press.jpg",
       "origin": "commons",
@@ -34,14 +30,10 @@
       "match": 0.265
     },
     "_fit": "exact",
-    "_shows": "Nicholas Winton in 1938; cropped to Winton, not an identified child on the cancelled transport",
+    "_shows": "Nicholas Winton in 1938; close Winton-only crop from the Commons original, with visible date label; no child from the cancelled transport is depicted",
     "_alternates": [],
-    "crop": [
-      0.48,
-      0.0,
-      1.0,
-      1.0
-    ]
+    "path": "assets/winton-1938-portrait-cover.jpg",
+    "label": "WINTON • 1938 PHOTO"
   },
   {
     "source": "card",
@@ -81,7 +73,8 @@
     "motion": "zoom_out",
     "focus_x": 0.58,
     "focus_y": 0.42,
-    "_shows": "1938 Nicholas Winton portrait reused as subject image, not 1988 footage"
+    "_shows": "1938 Nicholas Winton portrait reused with visible date label; not 1988 footage",
+    "label": "WINTON • 1938 PHOTO"
   },
   {
     "source": "url",

@@ -372,12 +372,12 @@ def _ai(prompt: str, out: Path, seed: int) -> Asset:
     return Asset(path, "image", {"source": "AI generated", "model": model, "prompt": prompt, "seed": seed})
 
 
-def _file(path_text: str, out: Path, base_dir: Path) -> Asset:
+def _file(path_text: str, out: Path, base_dir: Path, credit: dict | None = None) -> Asset:
     src = (base_dir / path_text).expanduser().resolve()
     kind: Literal["video", "image"] = "video" if src.suffix.lower() in _VIDEO_SUFFIXES else "image"
     dest = out.with_suffix(src.suffix.lower())
     shutil.copyfile(src, dest)
-    return Asset(dest, kind, {"source": "local file", "path": str(src)})
+    return Asset(dest, kind, {**(credit or {"source": "local file"}), "path": str(src)})
 
 
 def _gradient(hex_color: str, out: Path) -> Asset:
@@ -436,7 +436,7 @@ def _fresh(beat: Beat, out: Path, base_dir: Path, used: set, rng: random.Random,
                 case "file":
                     if not visual.path:
                         raise LookupError("visual.path is required for source 'file'")
-                    return _file(visual.path, out, base_dir)
+                    return _file(visual.path, out, base_dir, visual.credit)
                 case "color":
                     return _gradient(visual.color, out)
         except (requests.RequestException, LookupError, RuntimeError, KeyError, OSError, ValueError) as exc:

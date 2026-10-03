@@ -1,5 +1,7 @@
 # ep045 private replacement review — 2026-10-03
 
+**Later visual candidate:** `visual-upgrade-review.md` records a newer local MP4 with a source-labeled full-frame Winton portrait and a different media hash. The checks below apply only to the earlier replacement named here.
+
 **Status update, 22:27 IST:** The earlier public upload was made private after
 the unqualified survival claim about the cancelled transport was checked
 against the Winton family source. See [withdrawal.json](withdrawal.json).

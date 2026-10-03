@@ -1,5 +1,5 @@
 id: ep045
-title: The Winton Rescue Train That Never Left Prague
+title: Winton's Rescue Train for 250 Children Never Left Prague
 series: The Last Hours
 description: 'Nicholas Winton and his team helped 669 children reach Britain, but their planned transport for 250
   children was cancelled on 1 September 1939 as Germany invaded Poland. Winton’s scrapbook helped bring the rescue
@@ -35,24 +35,19 @@ beats:
   - 250 children
   - never left Prague
   visual:
-    source: url
-    url: https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a2/Nicholas_Winton_%281909-2015%29_in_1938_by_the_Associated_Press.jpg/960px-Nicholas_Winton_%281909-2015%29_in_1938_by_the_Associated_Press.jpg
+    source: file
+    path: assets/winton-1938-portrait-cover.jpg
     credit:
-      source: Wikimedia Commons
-      title: Nicholas Winton (1909-2015) in 1938 by the Associated Press.jpg
-      credit: AnonymousUnknown author
+      source: Wikimedia Commons derivative
+      title: Nicholas Winton (1909-2015) in 1938 by the Associated Press.jpg; Winton-only cover crop
+      credit: Anonymous / unknown author
       license: Public domain
       url: https://commons.wikimedia.org/wiki/File:Nicholas_Winton_(1909-2015)_in_1938_by_the_Associated_Press.jpg
-    fallbacks:
-    - color
     motion: zoom_in
-    focus_x: 0.65
-    focus_y: 0.38
-    crop:
-    - 0.48
-    - 0.0
-    - 1.0
-    - 1.0
+    focus_x: 0.5
+    focus_y: 0.42
+    label: WINTON • 1938 PHOTO
+  caption_y: 0.68
 - text: Nicholas Winton and his team had already helped 669 children reach Britain.
   emphasis:
   - 669 children
@@ -99,6 +94,7 @@ beats:
     motion: zoom_out
     focus_x: 0.58
     focus_y: 0.42
+    label: WINTON • 1938 PHOTO
 - text: A memorial at Prague station now honors Winton and the children he helped save.
   emphasis:
   - memorial at Prague station
@@ -125,4 +121,4 @@ beats:
 depth_motion: false
 hook_text: TRAIN NEVER LEFT
 captions:
-  hook_y: 0.39
+  hook_y: 0.49

@@ -3,6 +3,7 @@ from pathlib import Path
 from ytc.captions import write_ass
 from ytc.spec import CaptionStyle, ShortSpec
 from ytc.tts import Word
+from ytc.visuals import _file
 
 
 def test_reconstruction_label_is_burned_in_for_its_beat(tmp_path):
@@ -17,3 +18,13 @@ def test_reconstruction_label_is_burned_in_for_its_beat(tmp_path):
     ass = out.read_text()
     assert "Dialogue: 1,0:00:00.08,0:00:03.30,Provenance" in ass
     assert "TENOCHTITLAN • 2023 RECONSTRUCTION" in ass
+
+
+def test_local_derivative_keeps_source_credit_in_manifest_asset(tmp_path):
+    source = tmp_path / "portrait.jpg"
+    source.write_bytes(b"image bytes")
+    credit = {"source": "Wikimedia Commons derivative", "title": "1938 portrait",
+              "license": "Public domain", "url": "https://commons.wikimedia.org/wiki/File:Portrait.jpg"}
+    asset = _file("portrait.jpg", tmp_path / "beat00", tmp_path, credit)
+    assert {key: asset.credit[key] for key in credit} == credit
+    assert asset.credit["path"] == str(source)
