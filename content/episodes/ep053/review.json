@@ -1,0 +1,94 @@
+{
+  "rounds": [
+    {
+      "at": "2026-10-03T17:20:01+05:30",
+      "check": {
+        "duration": 24.53,
+        "words": 64,
+        "integrated_lufs": -14.4,
+        "true_peak_dbfs": -1.9,
+        "warnings": [],
+        "speech_differences": [],
+        "speech_error": null,
+        "sources": [
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons"
+        ]
+      },
+      "scores": {
+        "hook": 4,
+        "clarity": 4,
+        "payoff": 4,
+        "visuals": 3,
+        "loop": 4
+      },
+      "notes": {
+        "hook": "The immediate mention of a mass disappearance creates strong curiosity.",
+        "clarity": "Narrative follows a clear timeline from orders to the final discovery.",
+        "payoff": "The irony of the commander's specific boast provides a solid conclusion.",
+        "visuals": "Illustrations are thematic but some frames are too cluttered for mobile.",
+        "loop": "Phrasing creates a seamless transition from the conclusion back to the start."
+      },
+      "frames": [
+        {
+          "beat": 2,
+          "problem": "Subject is too small within a text-heavy book page."
+        },
+        {
+          "beat": 5,
+          "problem": "Map is cluttered with small text and uses German spelling Massaker."
+        }
+      ],
+      "speech": [],
+      "rewrite": [],
+      "better_than_last": "This Short matches the narrative quality of the Alamo episode by tying the closing irony directly to the hook.",
+      "judge": "gemini-3-flash-preview",
+      "passed": false
+    },
+    {
+      "at": "2026-10-03T17:22:19+05:30",
+      "check": {
+        "duration": 24.53,
+        "words": 64,
+        "integrated_lufs": -14.3,
+        "true_peak_dbfs": -1.8,
+        "warnings": [],
+        "speech_differences": [],
+        "speech_error": null,
+        "sources": [
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons"
+        ]
+      },
+      "scores": {
+        "hook": 5,
+        "clarity": 5,
+        "payoff": 4,
+        "visuals": 5,
+        "loop": 5
+      },
+      "notes": {
+        "hook": "The mystery of eighty men vanishing instantly is a compelling reason to stay.",
+        "clarity": "The timeline is clear and the cause of the disaster is explained simply.",
+        "payoff": "The irony of his specific boast about eighty men is a solid historical punchline.",
+        "visuals": "The use of authentic 19th-century portraits and detailed sketches creates a grave, historical atmosphere.",
+        "loop": "The transition from the final word back to the opening ridge is perfectly seamless."
+      },
+      "frames": [],
+      "speech": [],
+      "rewrite": [],
+      "better_than_last": "This Short uses the specific irony of Fetterman's own words to create a stronger payoff than the Custer or Winton episodes.",
+      "judge": "gemini-3-flash-preview",
+      "passed": true
+    }
+  ],
+  "best_round": 2
+}

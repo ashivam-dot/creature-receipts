@@ -1,0 +1,264 @@
+{
+  "viable": true,
+  "reason": "The sources support a compelling 45-second story with 14 atomic claims that each appear in at least two independent publication sites.",
+  "story": "In September 1944, British Field Marshal Bernard Montgomery launched Operation Market Garden, a bold plan to end World War II before Christmas. The strategy relied on dropping over 30,000 Allied paratroopers into the Netherlands to capture key bridges along a narrow corridor, allowing armored ground forces to cross the Rhine into Germany. Despite intelligence warnings that elite German SS panzer divisions were refitting near the objective, Allied commanders pressed forward. Major General Roy Urquhart's British 1st Airborne Division was dropped up to eight miles away from their main target, the road bridge at Arnhem. As bad weather delayed reinforcements and radio communications broke down, Lieutenant Colonel John Frost's small force reached the bridge but was cut off. Facing heavy armor and overwhelming German attacks, the isolated paratroopers held out for days before being overwhelmed, leading to the failure of the operation.",
+  "angle": "Allied commanders launched history's largest airborne operation despite intelligence warnings of German panzers at Arnhem, dropping paratroopers eight miles from their target onto elite armored forces.",
+  "claims": [
+    {
+      "claim": "Operation Market Garden was an Allied military operation launched in September 1944 in the German-occupied Netherlands.",
+      "sources": [
+        "S1",
+        "S3",
+        "S4",
+        "S6",
+        "S7"
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim": "British Field Marshal Bernard Law Montgomery conceived and proposed the operation.",
+      "sources": [
+        "S1",
+        "S3",
+        "S6",
+        "S7"
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim": "The operation's goal was to secure key Dutch bridges and open an Allied invasion route across the Rhine into Germany.",
+      "sources": [
+        "S1",
+        "S3",
+        "S4",
+        "S6",
+        "S7"
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim": "The plan combined an airborne assault ('Market') to capture bridges with an armored ground advance ('Garden') to relieve them.",
+      "sources": [
+        "S1",
+        "S3",
+        "S6",
+        "S7"
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim": "Major General Roy Urquhart commanded the British 1st Airborne Division at Arnhem.",
+      "sources": [
+        "S2",
+        "S3",
+        "S6",
+        "S7"
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim": "Allied commanders, including Lieutenant General Frederick Browning, proceeded with the operation despite receiving intelligence reports that German SS panzer divisions were near Arnhem.",
+      "sources": [
+        "S1",
+        "S3",
+        "S6"
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim": "British airborne forces were dropped up to eight miles away from their primary objective, the Arnhem road bridge.",
+      "sources": [
+        "S2",
+        "S3",
+        "S6",
+        "S7"
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim": "Due to a shortage of transport aircraft, Allied airborne troops had to be delivered over three successive days rather than in a single lift.",
+      "sources": [
+        "S1",
+        "S3",
+        "S6"
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim": "Adverse weather conditions, including thick fog and low clouds, severely delayed reinforcement drops and resupply flights.",
+      "sources": [
+        "S1",
+        "S3"
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim": "British airborne troops suffered severe radio communication breakdowns during the battle.",
+      "sources": [
+        "S1",
+        "S3",
+        "S6"
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim": "Lieutenant Colonel John Frost led elements of the 2nd Parachute Battalion to reach and capture the northern end of the Arnhem road bridge.",
+      "sources": [
+        "S1",
+        "S3",
+        "S7"
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim": "Ground forces from British XXX Corps were forced to advance along a single narrow highway bordered by low flood plains.",
+      "sources": [
+        "S1",
+        "S3",
+        "S6"
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim": "The small British force defending the northern end of the Arnhem bridge was overwhelmed after holding out for several days.",
+      "sources": [
+        "S2",
+        "S3"
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim": "Operation Market Garden failed in its primary objective to hold the bridge over the Rhine at Arnhem.",
+      "sources": [
+        "S1",
+        "S3",
+        "S5",
+        "S6"
+      ],
+      "confidence": "high"
+    }
+  ],
+  "disputed": [
+    "Whether aerial reconnaissance photos specifically verified operational SS Panther tanks at Arnhem prior to the drop; script should attribute as 'according to intelligence reports'.",
+    "German casualty counts at Arnhem range between 3,300 and 8,000; script should attribute as 'estimates range from 3,300 to 8,000 German casualties'.",
+    "Allegations that a traitor in the Dutch resistance warned the Germans; script should leave out or attribute as 'according to one counterintelligence officer'."
+  ],
+  "visuals": [
+    {
+      "subject": "Field Marshal Bernard Montgomery",
+      "queries": [
+        "Field Marshal Bernard Montgomery 1944 portrait",
+        "Bernard Montgomery portrait 1944"
+      ]
+    },
+    {
+      "subject": "Major-General Roy Urquhart",
+      "queries": [
+        "Roy Urquhart portrait 1944",
+        "Major General Roy Urquhart Arnhem"
+      ]
+    },
+    {
+      "subject": "Lieutenant General Frederick Browning",
+      "queries": [
+        "Frederick Browning 1944 portrait",
+        "Lieutenant General Frederick Browning portrait"
+      ]
+    },
+    {
+      "subject": "Lieutenant Colonel John Frost",
+      "queries": [
+        "John Frost 2nd Parachute Battalion",
+        "John Frost Arnhem portrait"
+      ]
+    },
+    {
+      "subject": "C-47 Dakota transports dropping paratroopers",
+      "queries": [
+        "C-47 Dakota dropping paratroopers Operation Market Garden",
+        "C-47 transport aircraft Market Garden 1944"
+      ]
+    },
+    {
+      "subject": "Airspeed Horsa gliders on Dutch landing zones",
+      "queries": [
+        "Airspeed Horsa gliders Netherlands 1944",
+        "Horsa gliders landing zone Arnhem 1944"
+      ]
+    },
+    {
+      "subject": "Map of Operation Market Garden airborne corridor",
+      "queries": [
+        "Operation Market Garden map 1944",
+        "Map of Operation Market Garden airborne corridor"
+      ]
+    },
+    {
+      "subject": "Arnhem road bridge across the Lower Rhine in 1944",
+      "queries": [
+        "Arnhem road bridge September 1944",
+        "Arnhem bridge Lower Rhine 1944"
+      ]
+    },
+    {
+      "subject": "Hotel Hartenstein in Oosterbeek",
+      "queries": [
+        "Hotel Hartenstein Oosterbeek headquarters 1944",
+        "Hotel Hartenstein Airborne Museum Oosterbeek"
+      ]
+    },
+    {
+      "subject": "German armored vehicles during the Battle of Arnhem",
+      "queries": [
+        "German armor Arnhem September 1944",
+        "German tanks Arnhem 1944"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "label": "S1",
+      "url": "https://en.wikipedia.org/wiki/Operation_Market_Garden",
+      "title": "Operation Market Garden",
+      "site": "wikipedia.org"
+    },
+    {
+      "label": "S2",
+      "url": "https://en.wikipedia.org/wiki/Battle_of_Arnhem",
+      "title": "Battle of Arnhem",
+      "site": "wikipedia.org"
+    },
+    {
+      "label": "S3",
+      "url": "https://web.archive.org/web/20201231233825/https://www.history.com/news/operation-market-garden-failure-allies",
+      "title": "The Allies Hoped Operation Market Garden Would End WWII. Here's What Went Wrong",
+      "site": "history.com"
+    },
+    {
+      "label": "S4",
+      "url": "https://www.bbc.co.uk/history/ww2peopleswar/stories/61/a5887461.shtml",
+      "title": "“We took you forever into our hearts”",
+      "site": "bbc.co.uk"
+    },
+    {
+      "label": "S5",
+      "url": "https://www.bbc.com/news/uk-49771180",
+      "title": "Battle of Arnhem: Mass parachute drop marks WW2 assault",
+      "site": "bbc.com"
+    },
+    {
+      "label": "S6",
+      "url": "https://www.historyextra.com/period/second-world-war/why-arnhem-operation-market-garden-fail-disaster-ww2-anthony-beevor/",
+      "title": "Why Operation Market Garden, the Allies' battle for Arnhem, was a disaster in the planning",
+      "site": "historyextra.com"
+    },
+    {
+      "label": "S7",
+      "url": "https://www.historynet.com/operation-market-garden-last-stand-at-an-anhem-schoolhouse/",
+      "title": "Operation Market Garden: Last Stand at an Arnhem Schoolhouse",
+      "site": "historynet.com"
+    }
+  ],
+  "topic": "Operation Market Garden (1944): commanders dismissed aerial reconnaissance photos showing German panzers waiting at Arnhem, ordering the intelligence officer who raised the alarm on sudden medical leave",
+  "series": "Warnings Ignored"
+}

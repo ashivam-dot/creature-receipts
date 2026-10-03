@@ -1,0 +1,168 @@
+id: ep052
+title: Why Did the Port Chicago Pier Suddenly Vaporize? 🤯
+series: The Last Hours
+description: The Port Chicago disaster of 1944 remains America's worst World War II home-front tragedy.
+sources:
+- https://en.wikipedia.org/wiki/Port_Chicago_disaster
+- https://www.smithsonianmag.com/history/deadly-world-war-ii-explosion-sparked-black-soldiers-fight-equal-treatment-180980545/
+- https://www.latimes.com/archives/la-xpm-2003-jun-21-me-meeks21-story.html
+- https://web.archive.org/web/20090509055514/http://www.doi.gov/ocl/2006/HR3111_092707.htm
+hashtags:
+- '#history'
+- '#portchicago'
+- '#worldwar2'
+tags:
+- port chicago
+- ww2 history
+- naval history
+- military history
+- world war ii
+- port chicago 50
+voice:
+  engine: kokoro
+  voice: am_fenrir
+  speed: 1.15
+beats:
+- text: Why did Port Chicago suddenly vaporize in 1944?
+  emphasis:
+  - Port Chicago
+  - vaporize
+  visual:
+    source: url
+    url: https://thumb.wikimedia.org/wikipedia/commons/thumb/1/17/Portchicago.jpg/3840px-Portchicago.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
+    credit:
+      source: Wikimedia Commons
+      title: Portchicago.jpg
+      credit: Mare Island Navy Yard
+      license: Public domain
+      url: https://commons.wikimedia.org/wiki/File:Portchicago.jpg
+    fallbacks:
+    - card
+    - color
+    motion: pan_right
+    focus_x: 0.5
+    focus_y: 0.6
+    card:
+      kind: dateline
+      big: JULY 17, 1944
+      small: PORT CHICAGO, CALIFORNIA
+- text: Instruments registered an earthquake, yet no enemy planes had attacked.
+  emphasis:
+  - earthquake
+  - no enemy planes
+  sfx: whoosh
+  visual:
+    source: card
+    card:
+      kind: fact
+      big: 3.4 MAGNITUDE
+      small: REGISTERED SHOCK
+    motion: zoom_in
+- text: Investigators discovered officers were betting on ammunition loading speeds.
+  emphasis:
+  - betting
+  - loading speeds
+  visual:
+    source: url
+    url: https://upload.wikimedia.org/wikipedia/commons/8/89/Port_Chicago_Naval_Magazine_National_Memorial_POCH_0004.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    credit:
+      source: Wikimedia Commons
+      title: Port Chicago Naval Magazine National Memorial POCH 0004.jpg
+      credit: National Park Service Digital Image Archives
+      license: Public domain
+      url: https://commons.wikimedia.org/wiki/File:Port_Chicago_Naval_Magazine_National_Memorial_POCH_0004.jpg
+    fallbacks:
+    - color
+    motion: zoom_out
+    focus_x: 0.5
+    focus_y: 0.5
+- text: The loaders were segregated Black sailors with zero explosives training.
+  emphasis:
+  - Black sailors
+  - zero explosives training
+  sfx: whoosh
+  visual:
+    source: url
+    url: https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a3/A_Company_of_Negro_recruits_which_has_been_entered_in_the_%22Hall_of_Fame%22_at_the_Great_Lakes%2C_Illinois_Naval_Training..._-_NARA_-_520605.tif/lossy-page1-1920px-A_Company_of_Negro_recruits_which_has_been_entered_in_the_%22Hall_of_Fame%22_at_the_Great_Lakes%2C_Illinois_Naval_Training..._-_NARA_-_520605.tif.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
+    credit:
+      source: Wikimedia Commons
+      title: A Company of Negro recruits which has been entered in the "Hall of Fame" at the Great Lakes, Illinois Naval Training...
+        - NARA - 520605.tif
+      credit: Unknown authorUnknown author or not provided
+      license: Public domain
+      url: https://commons.wikimedia.org/wiki/File:A_Company_of_Negro_recruits_which_has_been_entered_in_the_%22Hall_of_Fame%22_at_the_Great_Lakes,_Illinois_Naval_Training..._-_NARA_-_520605.tif
+    fallbacks:
+    - card
+    - color
+    motion: pan_left
+    focus_x: 0.5
+    focus_y: 0.6
+    card:
+      kind: fact
+      big: ZERO
+      small: EXPLOSIVES TRAINING
+- text: The preventable blast killed 320 men, yet survivors refused to return.
+  emphasis:
+  - killed 320
+  - refused to return
+  sfx: riser
+  visual:
+    source: url
+    url: https://thumb.wikimedia.org/wikipedia/commons/thumb/8/81/Quinault_victory.JPG/960px-Quinault_victory.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
+    credit:
+      source: Wikimedia Commons
+      title: Quinault victory.JPG
+      credit: United States Department of Defense
+      license: Public domain
+      url: https://commons.wikimedia.org/wiki/File:Quinault_victory.JPG
+    fallbacks:
+    - card
+    - color
+    motion: pan_right
+    focus_x: 0.45
+    focus_y: 0.5
+    box:
+    - 0.17
+    - 0.4
+    - 0.57
+    - 0.54
+    card:
+      kind: fact
+      big: 320 KILLED
+      small: IN AN INSTANT
+- text: The Navy threatened these traumatized men with execution by firing squad.
+  emphasis:
+  - execution
+  - firing squad
+  sfx: pop
+  pause_after: 0.4
+  visual:
+    source: url
+    url: https://upload.wikimedia.org/wikipedia/commons/3/38/80-G-47284_%2821276887068%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    credit:
+      source: Wikimedia Commons
+      title: 80-G-47284 (21276887068).jpg
+      credit: National Museum of the U.S. Navy
+      license: Public domain
+      url: https://commons.wikimedia.org/wiki/File:80-G-47284_(21276887068).jpg
+    fallbacks:
+    - card
+    - color
+    motion: zoom_in
+    focus_x: 0.5
+    focus_y: 0.5
+    card:
+      kind: quote
+      big: EXECUTION BY FIRING SQUAD
+      small: ADMIRAL CARLETON WRIGHT
+- text: Their fight exposed the deadly gamble that destroyed the base.
+  emphasis:
+  - deadly gamble
+  - destroyed
+  visual:
+    reuse: 1
+    motion: zoom_out
+    focus_x: 0.5
+    focus_y: 0.6
+depth_motion: true
+hook_text: THE SUDDEN VAPORIZATION

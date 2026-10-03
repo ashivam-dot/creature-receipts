@@ -1,0 +1,150 @@
+{
+  "rounds": [
+    {
+      "at": "2026-10-03T17:24:28+05:30",
+      "check": {
+        "duration": 32.4,
+        "words": 69,
+        "integrated_lufs": -14.4,
+        "true_peak_dbfs": -1.6,
+        "warnings": [],
+        "speech_differences": [],
+        "speech_error": null,
+        "sources": [
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons"
+        ]
+      },
+      "scores": {
+        "hook": 4,
+        "clarity": 5,
+        "payoff": 4,
+        "visuals": 2,
+        "loop": 4
+      },
+      "notes": {
+        "hook": "The mysterious vaporization framing grabs attention immediately, though a direct question is slightly standard.",
+        "clarity": "The chain of events from the blast to the officer bets and aftermath is exceptionally clear.",
+        "payoff": "Uncovering officer negligence and the unjust court-martial threats delivers a powerful historical punch.",
+        "visuals": "Severely undermined by displaying a famous medal ceremony during a narration about execution threats.",
+        "loop": "Connecting the deadly gamble that destroyed the base back to the opening question creates a natural replay."
+      },
+      "frames": [
+        {
+          "beat": 2,
+          "problem": "Shows a modern marine acoustic sub-bottom profile rather than a 1944 earthquake seismogram."
+        },
+        {
+          "beat": 6,
+          "problem": "Shows Admiral Nimitz awarding Doris Miller the Navy Cross, completely contradicting a threat of execution."
+        }
+      ],
+      "speech": [],
+      "rewrite": [],
+      "better_than_last": "It tackles a powerful, lesser-known home-front civil rights tragedy with clear moral stakes rather than a familiar battlefield legend.",
+      "judge": "gemini-flash-latest",
+      "passed": false
+    },
+    {
+      "at": "2026-10-03T17:27:38+05:30",
+      "check": {
+        "duration": 32.4,
+        "words": 69,
+        "integrated_lufs": -14.4,
+        "true_peak_dbfs": -1.9,
+        "warnings": [],
+        "speech_differences": [],
+        "speech_error": null,
+        "sources": [
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons"
+        ]
+      },
+      "scores": {
+        "hook": 4,
+        "clarity": 4,
+        "payoff": 4,
+        "visuals": 3,
+        "loop": 4
+      },
+      "notes": {
+        "hook": "Engaging question creates immediate interest.",
+        "clarity": "Logical narrative flow across all beats.",
+        "payoff": "Strong reveal regarding officer misconduct and mutiny.",
+        "visuals": "Relevant historical photos, though beat 2 uses modern equipment.",
+        "loop": "Transitions cleanly back to the opening sentence."
+      },
+      "frames": [
+        {
+          "beat": 2,
+          "problem": "Anachronistic modern seismograph display."
+        }
+      ],
+      "speech": [],
+      "rewrite": [],
+      "better_than_last": "Provides a sharper narrative focus and tension than recent episodes.",
+      "judge": "gemini-3.6-flash",
+      "passed": false
+    },
+    {
+      "at": "2026-10-03T17:32:41+05:30",
+      "check": {
+        "duration": 32.4,
+        "words": 69,
+        "integrated_lufs": -14.4,
+        "true_peak_dbfs": -1.8,
+        "warnings": [],
+        "speech_differences": [],
+        "speech_error": null,
+        "sources": [
+          "Wikimedia Commons",
+          "designed card",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons"
+        ]
+      },
+      "scores": {
+        "hook": 4,
+        "clarity": 4,
+        "payoff": 4,
+        "visuals": 3,
+        "loop": 4
+      },
+      "notes": {
+        "hook": "Strong opening question sets an intriguing mystery immediately.",
+        "clarity": "Logical narrative progression through the causes and aftermath.",
+        "payoff": "The revelation of officer betting and subsequent mutiny trial lands well.",
+        "visuals": "Beat 6 uses a photo of Doris Miller receiving a medal, which contradicts the narration.",
+        "loop": "Last line connects smoothly back to the opening question."
+      },
+      "frames": [
+        {
+          "beat": 6,
+          "problem": "Shows Doris Miller receiving the Navy Cross rather than Port Chicago mutiny defendants or relevant court martial imagery."
+        }
+      ],
+      "speech": [],
+      "rewrite": [],
+      "better_than_last": "Maintains tighter focus on human injustice and systemic negligence throughout the narrative.",
+      "judge": "gemini-3.7-flash",
+      "passed": false
+    }
+  ],
+  "best_round": 2,
+  "verdict": "rejected",
+  "reason": "low scores: visuals",
+  "rejected_at": "2026-10-03T17:32:41+05:30"
+}

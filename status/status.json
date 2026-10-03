@@ -1,34 +1,34 @@
 {
-  "updated_at": "2026-10-03T17:11:39+05:30",
-  "day": 2,
+  "updated_at": "2026-10-04T05:05:24+05:30",
+  "day": 3,
   "result": "ok",
   "run": {
     "host": "modal",
-    "id": "ta-01M40RQJNFZS4QVE3YW4FM9FHR",
+    "id": "ta-01M421XXRCKKKBM1899F1DQ5FR",
     "number": null,
     "trigger": "schedule",
-    "started_at": "2026-10-03T17:05:07+05:30",
-    "started_at_utc": "2026-10-03T11:35:07+00:00",
-    "seconds": 391
+    "started_at": "2026-10-04T05:05:05+05:30",
+    "started_at_utc": "2026-10-03T23:35:05+00:00",
+    "seconds": 20
   },
   "stages": [
     {
       "name": "deploy",
       "ok": true,
       "detail": "",
-      "seconds": 1.6
+      "seconds": 1.9
     },
     {
       "name": "sync",
       "ok": true,
-      "detail": "10 posts",
-      "seconds": 0.7
+      "detail": "5 posts",
+      "seconds": 0.9
     },
     {
       "name": "playlists",
       "ok": true,
-      "detail": "added ep045 to 'The Last Hours'",
-      "seconds": 1.7
+      "detail": "added ep054 to 'The Last Hours'",
+      "seconds": 1.1
     },
     {
       "name": "languages",
@@ -40,281 +40,233 @@
       "name": "on youtube",
       "ok": true,
       "detail": "every Short sent is public",
-      "seconds": 0.1
+      "seconds": 0.0
     },
     {
       "name": "short reviews",
       "ok": true,
-      "detail": "ep045 at 6 h: not shown yet: 4 views in 10 hours (no source data yet). YouTube hasn't tested it in the Shorts feed, so this says nothing about the script",
-      "seconds": 0.9
+      "detail": "no checkpoint due",
+      "seconds": 0.1
     },
     {
       "name": "collect",
       "ok": true,
-      "detail": "ep046 rejected (low scores: payoff, visuals, loop; 2 frame problems); ep048 rejected (low scores: visuals); ep049 rejected (low scores: visuals); ep050 unfinished (Overloaded: every model in ('gemini-3.8-flash', 'gemini-3.7-flash', 'gemini-3.6-flash', 'gemini-3.5-flash', 'gemini-3-flash-preview', 'gemini-flash-latest', 'ovh:Qwen3.5-397B-A17B') with quota left stayed overloaded for 25 minutes)",
-      "seconds": 10.3
-    },
-    {
-      "name": "analytics",
-      "ok": true,
-      "detail": "0 subscribers",
-      "seconds": 2.1
-    },
-    {
-      "name": "learnings",
-      "ok": true,
-      "detail": "Established baseline medians across initial 3 Shorts; kept existing hypotheses pending deeper retention metrics.",
-      "seconds": 5.3
-    },
-    {
-      "name": "breakouts",
-      "ok": true,
-      "detail": "none",
-      "seconds": 0.2
-    },
-    {
-      "name": "timely topics",
-      "ok": true,
-      "detail": "1 added",
-      "seconds": 23.5
-    },
-    {
-      "name": "strongest stories",
-      "ok": true,
-      "detail": "18 added",
-      "seconds": 150.2
-    },
-    {
-      "name": "new topics",
-      "ok": true,
-      "detail": "5 added",
-      "seconds": 174.4
-    },
-    {
-      "name": "report",
-      "ok": true,
-      "detail": "day-002.md",
-      "seconds": 0.2
+      "detail": "ep050 ready; ep051 ready; ep052 rejected (low scores: visuals); ep053 ready",
+      "seconds": 8.3
     },
     {
       "name": "buffer channel",
       "ok": true,
       "detail": "connected",
+      "seconds": 0.1
+    },
+    {
+      "name": "publish",
+      "ok": true,
+      "detail": "",
+      "seconds": 0.0
+    },
+    {
+      "name": "start ep055",
+      "ok": true,
+      "detail": "Battle of Cartagena de Indias (1741): Admiral Vernon was so certain of victory he minted medals celebrating the win while his fleet was being destroyed",
+      "seconds": 0.5
+    },
+    {
+      "name": "start ep056",
+      "ok": true,
+      "detail": "Victoria Hall disaster (1883): hundreds of children rushed for free toys through a door that opened inward, trapping them as the crush grew",
+      "seconds": 0.5
+    },
+    {
+      "name": "start ep057",
+      "ok": true,
+      "detail": "Saint-Michel-de-Maurienne derailment (1917): a commander forced a driver at gunpoint to overload a train with 1,000 soldiers, causing it to lose its brakes on a mountain",
       "seconds": 0.4
     },
     {
-      "name": "preflight ep026",
+      "name": "start ep058",
       "ok": true,
-      "detail": "video still hosted",
-      "seconds": 0.7
-    },
-    {
-      "name": "preflight ep027",
-      "ok": true,
-      "detail": "video downloads whole (12 MB in 1 s)",
-      "seconds": 0.9
-    },
-    {
-      "name": "preflight ep038",
-      "ok": true,
-      "detail": "video still hosted",
-      "seconds": 0.7
+      "detail": "Burning of Smyrna (1922): a cosmopolitan Mediterranean haven went up in flames days after foreign armies retreated, trapping refugees on the quay",
+      "seconds": 0.5
     },
     {
       "name": "publish",
       "ok": true,
       "detail": "",
-      "seconds": 0.1
-    },
-    {
-      "name": "start ep050",
-      "ok": true,
-      "detail": "Great Fire of 1910 (1910): hurricane-force winds turned a scattering of forest fires into a single monster that swallowed towns in minutes",
-      "seconds": 1.0
-    },
-    {
-      "name": "start ep051",
-      "ok": true,
-      "detail": "Operation Market Garden (1944): commanders dismissed aerial reconnaissance photos showing German panzers waiting at Arnhem, ordering the intelligence officer who raised the alarm on sudden medical leave",
-      "seconds": 0.9
-    },
-    {
-      "name": "start ep052",
-      "ok": true,
-      "detail": "Port Chicago disaster (1944): untested munitions were loaded by untrained men in a race against time, causing the largest US home-front disaster of WWII",
-      "seconds": 0.8
-    },
-    {
-      "name": "start ep053",
-      "ok": true,
-      "detail": "Fetterman Fight (1866): a cocky commander vowed to ride through the entire Sioux nation with eighty men, and none returned",
-      "seconds": 0.7
-    },
-    {
-      "name": "publish",
-      "ok": true,
-      "detail": "",
-      "seconds": 0.1
+      "seconds": 0.0
     }
   ],
   "errors": [],
   "owner_action": [],
   "notes": [
-    "ep050 stopped on Gemini's free tier being overloaded; it resumes in a later run"
+    "new scheduling on editorial hold; production continues",
+    "new scheduling on editorial hold; production continues"
   ],
   "inventory": {
-    "total": 6,
-    "in_buffer": 6,
-    "waiting": 0,
-    "target": 42,
+    "total": 3,
+    "in_buffer": 0,
+    "waiting": 3,
+    "target": 14,
     "making": [],
     "remote": [
-      "ep050",
-      "ep051",
-      "ep052",
-      "ep053"
+      "ep055",
+      "ep056",
+      "ep057",
+      "ep058"
     ]
   },
-  "queue": [
-    {
-      "id": "ep026",
-      "title": "Why History Forgot America's Deadliest Wildfire 😳",
-      "due_at": "2026-10-03T19:00:00-04:00"
-    },
-    {
-      "id": "ep038",
-      "title": "The B-25 That Struck the Empire State Building 🤯",
-      "due_at": "2026-10-03T21:30:00-04:00"
-    },
-    {
-      "id": "ep027",
-      "title": "Why Chicago Took 126 Years to Clear O'Leary's Cow 😳",
-      "due_at": "2026-10-04T19:00:00-04:00"
-    },
-    {
-      "id": "ep043",
-      "title": "Why Did Custer Ignore the Warnings at Little Bighorn? ⚠️",
-      "due_at": "2026-10-04T21:30:00-04:00"
-    },
-    {
-      "id": "ep035",
-      "title": "Why Did the US Ignore the 1900 Galveston Hurricane? ⚠️",
-      "due_at": "2026-10-05T19:00:00-04:00"
-    },
-    {
-      "id": "ep047",
-      "title": "Why Did the Battle of the Alamo Last Only 90 Minutes?",
-      "due_at": "2026-10-05T21:30:00-04:00"
-    }
-  ],
-  "waiting": [],
-  "made": [
-    {
-      "id": "ep046",
-      "outcome": "rejected",
-      "topic": "Voyage of the James Caird (1916): to save his crew, Shackleton navigated 800 miles of the world's deadliest ocean in a 22-foot lifeboat",
-      "reason": "low scores: payoff, visuals, loop; 2 frame problems"
-    },
-    {
-      "id": "ep048",
-      "outcome": "rejected",
-      "topic": "Antoine de Saint-Exupéry (1935): the author of The Little Prince crashed in the Sahara and nearly died of thirst before a Bedouin saved him",
-      "reason": "low scores: visuals"
-    },
-    {
-      "id": "ep049",
-      "outcome": "rejected",
-      "topic": "Burning of Washington (1814): British troops ate the dinner President Madison had left behind before burning the White House, right as a freak tornado struck the city",
-      "reason": "low scores: visuals"
-    },
+  "queue": [],
+  "waiting": [
     {
       "id": "ep050",
-      "outcome": "unfinished",
+      "title": "Why Did a 1910 Idaho Ranger Draw His Gun? ⚠️",
+      "series": "Doomed Expeditions",
+      "score": 25
+    },
+    {
+      "id": "ep051",
+      "title": "Why Did Allies Ignore Arnhem's Panzer Warnings? ⚠️",
+      "series": "Warnings Ignored",
+      "score": 25
+    },
+    {
+      "id": "ep053",
+      "title": "Why Did 80 Soldiers Vanish at the Fetterman Fight? 🤯",
+      "series": "Warnings Ignored",
+      "score": 24
+    }
+  ],
+  "made": [
+    {
+      "id": "ep050",
+      "outcome": "ready",
       "topic": "Great Fire of 1910 (1910): hurricane-force winds turned a scattering of forest fires into a single monster that swallowed towns in minutes",
-      "reason": "Overloaded: every model in ('gemini-3.8-flash', 'gemini-3.7-flash', 'gemini-3.6-flash', 'gemini-3.5-flash', 'gemini-3-flash-preview', 'gemini-flash-latest', 'ovh:Qwen3.5-397B-A17B') with quota left stayed overloaded for 25 minutes",
-      "quota": false,
-      "overloaded": true
+      "title": "Why Did a 1910 Idaho Ranger Draw His Gun? ⚠️",
+      "scores": {
+        "hook": 5,
+        "clarity": 5,
+        "payoff": 5,
+        "visuals": 5,
+        "loop": 5
+      },
+      "media_url": "https://res.cloudinary.com/uj4a07e7/video/upload/v1791028097/creaturereceipts/ep050-3007d0ae.mp4"
+    },
+    {
+      "id": "ep051",
+      "outcome": "ready",
+      "topic": "Operation Market Garden (1944): commanders dismissed aerial reconnaissance photos showing German panzers waiting at Arnhem, ordering the intelligence officer who raised the alarm on sudden medical leave",
+      "title": "Why Did Allies Ignore Arnhem's Panzer Warnings? ⚠️",
+      "scores": {
+        "hook": 5,
+        "clarity": 5,
+        "payoff": 5,
+        "visuals": 5,
+        "loop": 5
+      },
+      "media_url": "https://res.cloudinary.com/uj4a07e7/video/upload/v1791028318/creaturereceipts/ep051-eb05d869.mp4"
+    },
+    {
+      "id": "ep052",
+      "outcome": "rejected",
+      "topic": "Port Chicago disaster (1944): untested munitions were loaded by untrained men in a race against time, causing the largest US home-front disaster of WWII",
+      "reason": "low scores: visuals"
+    },
+    {
+      "id": "ep053",
+      "outcome": "ready",
+      "topic": "Fetterman Fight (1866): a cocky commander vowed to ride through the entire Sioux nation with eighty men, and none returned",
+      "title": "Why Did 80 Soldiers Vanish at the Fetterman Fight? 🤯",
+      "scores": {
+        "hook": 5,
+        "clarity": 5,
+        "payoff": 4,
+        "visuals": 5,
+        "loop": 5
+      },
+      "media_url": "https://res.cloudinary.com/uj4a07e7/video/upload/v1791028340/creaturereceipts/ep053-ad13ee0a.mp4"
     }
   ],
   "spawned": [
     {
-      "id": "ep050",
-      "topic": "Great Fire of 1910 (1910): hurricane-force winds turned a scattering of forest fires into a single monster that swallowed towns in minutes",
-      "call_id": "fc-01M40S3MGHP9FE74SW89PBBYS0"
+      "id": "ep055",
+      "topic": "Battle of Cartagena de Indias (1741): Admiral Vernon was so certain of victory he minted medals celebrating the win while his fleet was being destroyed",
+      "call_id": "fc-01M421YKX9ETD5VARE25J6YZEQ"
     },
     {
-      "id": "ep051",
-      "topic": "Operation Market Garden (1944): commanders dismissed aerial reconnaissance photos showing German panzers waiting at Arnhem, ordering the intelligence officer who raised the alarm on sudden medical leave",
-      "call_id": "fc-01M40S3NDQ2T3MBGNGZ6FRAK1X"
+      "id": "ep056",
+      "topic": "Victoria Hall disaster (1883): hundreds of children rushed for free toys through a door that opened inward, trapping them as the crush grew",
+      "call_id": "fc-01M421YMBB6TX7XX7GYR07TEGB"
     },
     {
-      "id": "ep052",
-      "topic": "Port Chicago disaster (1944): untested munitions were loaded by untrained men in a race against time, causing the largest US home-front disaster of WWII",
-      "call_id": "fc-01M40S3P6WF55DE5G5Q7SFR61V"
+      "id": "ep057",
+      "topic": "Saint-Michel-de-Maurienne derailment (1917): a commander forced a driver at gunpoint to overload a train with 1,000 soldiers, causing it to lose its brakes on a mountain",
+      "call_id": "fc-01M421YMRNZN36M4QBNVRAEQZ3"
     },
     {
-      "id": "ep053",
-      "topic": "Fetterman Fight (1866): a cocky commander vowed to ride through the entire Sioux nation with eighty men, and none returned",
-      "call_id": "fc-01M40S3PXAA89N0K112ESXNQ3G"
+      "id": "ep058",
+      "topic": "Burning of Smyrna (1922): a cosmopolitan Mediterranean haven went up in flames days after foreign armies retreated, trapping refugees on the quay",
+      "call_id": "fc-01M421YN71MB4WKPCFF0SXK258"
     }
   ],
   "in_cloud": [
     {
-      "id": "ep050",
-      "topic": "Great Fire of 1910 (1910): hurricane-force winds turned a scattering of forest fires into a single monster that swallowed towns in minutes",
-      "spawned_at": "2026-10-03T17:11:36+05:30"
+      "id": "ep055",
+      "topic": "Battle of Cartagena de Indias (1741): Admiral Vernon was so certain of victory he minted medals celebrating the win while his fleet was being destroyed",
+      "spawned_at": "2026-10-04T05:05:23+05:30"
     },
     {
-      "id": "ep051",
-      "topic": "Operation Market Garden (1944): commanders dismissed aerial reconnaissance photos showing German panzers waiting at Arnhem, ordering the intelligence officer who raised the alarm on sudden medical leave",
-      "spawned_at": "2026-10-03T17:11:37+05:30"
+      "id": "ep056",
+      "topic": "Victoria Hall disaster (1883): hundreds of children rushed for free toys through a door that opened inward, trapping them as the crush grew",
+      "spawned_at": "2026-10-04T05:05:23+05:30"
     },
     {
-      "id": "ep052",
-      "topic": "Port Chicago disaster (1944): untested munitions were loaded by untrained men in a race against time, causing the largest US home-front disaster of WWII",
-      "spawned_at": "2026-10-03T17:11:37+05:30"
+      "id": "ep057",
+      "topic": "Saint-Michel-de-Maurienne derailment (1917): a commander forced a driver at gunpoint to overload a train with 1,000 soldiers, causing it to lose its brakes on a mountain",
+      "spawned_at": "2026-10-04T05:05:24+05:30"
     },
     {
-      "id": "ep053",
-      "topic": "Fetterman Fight (1866): a cocky commander vowed to ride through the entire Sioux nation with eighty men, and none returned",
-      "spawned_at": "2026-10-03T17:11:38+05:30"
+      "id": "ep058",
+      "topic": "Burning of Smyrna (1922): a cosmopolitan Mediterranean haven went up in flames days after foreign armies retreated, trapping refugees on the quay",
+      "spawned_at": "2026-10-04T05:05:24+05:30"
     }
   ],
   "published": [],
-  "live": 4,
+  "live": 1,
   "failed_posts": [],
   "not_live": [],
   "llm": {
-    "calls": 18,
+    "calls": 24,
     "by_model": {
-      "gemini-3.8-flash": 3,
-      "gemini-3.7-flash": 2,
-      "gemini-3.6-flash": 4,
-      "gemini-3-flash-preview": 3,
-      "gemini-3.5-flash": 2,
-      "gemini-3.5-flash-lite": 4
+      "gemini-3.8-flash": 2,
+      "gemini-3.5-flash": 10,
+      "gemini-3.5-flash-lite": 4,
+      "gemini-3.6-flash": 2,
+      "gemini-flash-latest": 1,
+      "gemini-3.7-flash": 1,
+      "gemini-3-flash-preview": 4
     },
     "out_of_quota": []
   },
   "renders": {
-    "modal": 5,
+    "modal": 9,
     "runner": 0
   },
   "daily_done": "2026-10-03",
   "minutes_this_month": 2.0,
   "minutes_budget": 2000,
   "modal_cost": {
-    "metered": 4.42,
+    "metered": 4.69,
     "billed": 0.0
   },
   "modal_credit": 30.0,
   "capacity": {
-    "cloud": 196,
+    "cloud": 194,
     "runner": 0,
     "runner_minutes": 0,
-    "modal_credit_left": 23.58
+    "modal_credit_left": 23.31
   },
   "made_here": 0,
-  "open_topics": 125,
-  "parked_topics": 15
+  "open_topics": 121,
+  "parked_topics": 16
 }

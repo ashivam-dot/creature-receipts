@@ -1,5 +1,5 @@
 id: ep050
-title: How One Ranger Saved 40 Men at Gunpoint? ⚠️
+title: Why Did a 1910 Idaho Ranger Draw His Gun? ⚠️
 series: Doomed Expeditions
 description: In 1910, Ranger Ed Pulaski led his crew into an abandoned mine to survive a massive three-million-acre firestorm.
 sources:
@@ -11,8 +11,8 @@ sources:
 - https://web.archive.org/web/20090428133332/http://www.popularmechanics.com/science/earth/4219853.html?page=2
 hashtags:
 - '#history'
-- '#thebigburn'
-- '#wildfire'
+- '#historywildfire'
+- '#idaho'
 tags:
 - Great Fire of 1910
 - Ed Pulaski
@@ -101,28 +101,33 @@ beats:
     motion: pan_left
     focus_x: 0.5
     focus_y: 0.5
-- text: He drew his pistol to prevent them from fleeing into the flames.
+- text: He drew his pistol, forcing them to stay until the firestorm passed.
   emphasis:
   - pistol
-  - flames
+  - firestorm
   sfx: riser
   visual:
     source: url
-    url: https://live.staticflickr.com/65535/51316878232_3e906cc793_b.jpg
+    url: https://upload.wikimedia.org/wikipedia/commons/3/3f/Pulaski_Tunnel_entrance%2C_1910.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
     credit:
-      source: Flickr via Openverse
-      title: 20210715-FS-Mt Hood-Forest Service Trail crew member in Wilderness along Pacific Crest Trail - 01
-      credit: Forest Service Pacific Northwest Region
+      source: Wikimedia Commons
+      title: Pulaski Tunnel entrance, 1910.jpg
+      credit: United States Forest Service
       license: Public domain
-      url: https://www.flickr.com/photos/135886671@N08/51316878232
+      url: https://commons.wikimedia.org/wiki/File:Pulaski_Tunnel_entrance,_1910.jpg
     fallbacks:
     - color
-    motion: pan_right
-    focus_x: 0.5
-    focus_y: 0.5
-- text: Wildland firefighters still carry the tool named for the ranger who saved forty men.
+    motion: pan_down
+    focus_x: 0.51
+    focus_y: 0.38
+    box:
+    - 0.31
+    - 0.22
+    - 0.75
+    - 0.58
+- text: Today, wildland firefighters still honor his legacy with the tool named for him.
   emphasis:
-  - forty men
+  - legacy
   - tool
   sfx: pop
   pause_after: 0.4
@@ -130,3 +135,4 @@ beats:
     reuse: 1
     motion: zoom_out
 depth_motion: true
+hook_text: 40 LIVES AT GUNPOINT

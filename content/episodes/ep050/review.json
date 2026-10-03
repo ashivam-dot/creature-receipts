@@ -1,0 +1,97 @@
+{
+  "rounds": [
+    {
+      "at": "2026-10-03T17:13:37+05:30",
+      "check": {
+        "duration": 26.75,
+        "words": 69,
+        "integrated_lufs": -14.4,
+        "true_peak_dbfs": -1.7,
+        "warnings": [],
+        "speech_differences": [
+          "'panicked' heard as 'panic' after 'pulaski forced his'"
+        ],
+        "speech_error": null,
+        "sources": [
+          "designed card",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Flickr via Openverse",
+          "designed card"
+        ]
+      },
+      "scores": {
+        "hook": 4,
+        "clarity": 4,
+        "payoff": 3,
+        "visuals": 3,
+        "loop": 3
+      },
+      "notes": {
+        "hook": "High-stakes premise grabs attention immediately.",
+        "clarity": "Straightforward chronological progression.",
+        "payoff": "The tool connection is interesting but survival resolution feels abrupt.",
+        "visuals": "Modern photo in beat 5 conflicts with the historical 1910 setting.",
+        "loop": "Repetition of saved forty men across the seam feels awkward."
+      },
+      "frames": [
+        {
+          "beat": 5,
+          "problem": "Anachronistic modern photo showing a person in casual hiking gear instead of the 1910 historical fire."
+        }
+      ],
+      "speech": [],
+      "rewrite": [
+        "Beat 5: He drew his pistol, forcing them to stay until the firestorm passed.",
+        "Beat 6: Today, wildland firefighters still honor his legacy with the tool named for him."
+      ],
+      "better_than_last": "Connects historical survival directly to an iconic tool still used today.",
+      "judge": "gemini-3.8-flash",
+      "passed": false
+    },
+    {
+      "at": "2026-10-03T17:18:17+05:30",
+      "check": {
+        "duration": 27.1,
+        "words": 68,
+        "integrated_lufs": -14.4,
+        "true_peak_dbfs": -1.8,
+        "warnings": [],
+        "speech_differences": [
+          "'panicked' heard as 'panic' after 'pulaski forced his'"
+        ],
+        "speech_error": null,
+        "sources": [
+          "designed card",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "designed card"
+        ]
+      },
+      "scores": {
+        "hook": 5,
+        "clarity": 5,
+        "payoff": 5,
+        "visuals": 5,
+        "loop": 5
+      },
+      "notes": {
+        "hook": "Holding forty men at gunpoint to save them is an instantly gripping, high-stakes paradox.",
+        "clarity": "The narrative flows perfectly from the scale of the fire to the escape in the mine.",
+        "payoff": "The explanation of why he drew his gun, followed by the Pulaski tool legacy, is highly satisfying.",
+        "visuals": "The use of actual 1910 archival photos, including the exact Nicholson mine portal, is outstanding.",
+        "loop": "Ending on 'the tool named for him' leads seamlessly back into his name in the first beat."
+      },
+      "frames": [],
+      "speech": [],
+      "rewrite": [],
+      "better_than_last": "This Short excels by using highly specific, authentic archival photos of the exact mine tunnel where the drama took place, anchoring the historical reality better than more generic archival shots.",
+      "judge": "gemini-3.5-flash",
+      "passed": true
+    }
+  ],
+  "best_round": 2
+}
