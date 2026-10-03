@@ -212,7 +212,7 @@ def make_banner(out: Path, cache: Path) -> list[dict]:
     small_font = ImageFont.truetype(str(MONTSERRAT_XB), 30)
     words = [("HISTORY'S", WHITE), ("LAST HOURS", LIME)]
     tagline = "THE FINAL MOMENTS OF HISTORY'S TRAGEDIES"
-    small = "NEW SHORTS EVERY DAY  ·  EVERY CLAIM SOURCED"
+    small = "DOCUMENTED STORIES  ·  ARCHIVAL ART  ·  NO GORE"
 
     word_gap = 38
     widths = [draw.textlength(word, font=title_font) for word, _ in words]
