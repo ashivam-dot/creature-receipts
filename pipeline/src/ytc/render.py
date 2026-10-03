@@ -234,7 +234,7 @@ def make_short(spec_path: Path, out: Path | None = None) -> Path:
     if total > MAX_SHORT_SECONDS:
         raise ValueError(f"{spec.id} runs {total:.1f}s; a Short can be at most {MAX_SHORT_SECONDS}s")
 
-    used = visuals.cached_keys(spec.beats, assets_dir)
+    used = visuals.cached_keys(spec.beats, assets_dir, base)
     boundaries = [0, *(round(end * FPS) for _, end in narration.beat_spans[:-1]), round(total * FPS)]
     assets, rngs, clips = [], [], []
     for i, beat in enumerate(spec.beats):

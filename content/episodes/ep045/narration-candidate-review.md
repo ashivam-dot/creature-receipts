@@ -11,12 +11,15 @@ Beat 1 now says: “A train meant to rescue 250 children never left Prague.” T
 | Check | Result |
 |---|---|
 | Private local MP4 | `ep045-narration-candidate-private.mp4` (ignored by Git); SHA-256 `f96d9c2165120e668a97a0dbdacda64c1bb7a808f073aeb5b39190f688968161`; 10,231,331 bytes |
-| Spec and manifest | `short.yaml` SHA-256 `30793c9182ef3de39e825437f70643818d202c04cc8fd8e1d77e120fda3a0d10`; `work/manifest.json` SHA-256 `50c1fcbc31938f83f0bc0b17052ec05498234edd8e76986f16f65b43c538bb84`, with matching MP4 hash |
+| Spec and manifest | `short.yaml` SHA-256 `30793c9182ef3de39e825437f70643818d202c04cc8fd8e1d77e120fda3a0d10`; `work/manifest.json` SHA-256 `b82ccc6bedaa70659d46e1b5771a36875ba561d1647a00bf1c0e6fa7e026ff6b`, with matching MP4 hash and all three image credits |
 | Streams and decode | H.264 1080 × 1920 at 30 fps, AAC; 29.457 seconds; full FFmpeg video and audio decode completed without errors |
 | Audio | 73 spoken words; −14.3 LUFS integrated; −1.9 dBFS true peak; automated warnings `[]`; narration WAV SHA-256 `f13a6064700b5ee4dbb9c2f0c293ac71d90fddb9cd42cd5e487a7075e2ee6c67` |
 | Narration WAV ASR | `small.en` heard the new first line exactly. It heard “that proc” for “Prague” in the final memorial line, leaving one `speech.differences` item in `work/speech.json`. |
 | Finished MP4 ASR | The same `small.en` settings heard every scripted word, including “Prague station”; zero differences. This does not substitute for native listening. |
+| Independent audio-only screen | [Gemini 3.5 Flash receipt](narration-candidate-audio-screen.json) transcribed every scripted word from the finished MP4's audio without a supplied script. It reported no uncertain words, audible glitches, pronunciation concerns, or music masking. This is a model screen, not native listening. |
 | Visual review | [Phone-size opening comparison](narration-candidate-opening.jpg) at 0.1, 1.5, 2.2, and 3.5 seconds, all seven shot midpoints in the refreshed [sheet](sheet.jpg), and one frame per second through the full MP4 inspected. The date label, hook, and captions remain readable without collisions or blank frames. The 250 count is visible by 1.5 seconds. |
-| Focused tests | `test_visual_provenance.py`, `test_history_cards.py`, `test_short_reviews.py`: 10 passed |
+| Focused tests | `test_visual_provenance.py`, `test_history_cards.py`, `test_short_reviews.py`: 11 passed |
 
 The target opening ambiguity is resolved in both machine transcripts. The WAV-only final-word difference still needs a native ear check, along with full-motion phone playback, music/delivery review, and independent editorial signoff before this candidate could replace the held draft.
+
+**Provenance correction:** A stale renderer cache sidecar had reduced the 1931 Prague station derivative to “local file” in the manifest, leaving it out of the generated image-credit block. The cache now checks the current source file and uses the visual's declared credit. The corrected manifest and 2,021-byte description include Walter Mittelholzer, the Commons source URL, and the public-domain label. This changed metadata only; the MP4 hash above is unchanged. The 1938 portrait's Commons record uses `PD-US-not renewed` and says it appears to be an Associated Press newsreel still. The original publication and renewal history were not independently established in this review, so its public-use rights remain an explicit editorial check.

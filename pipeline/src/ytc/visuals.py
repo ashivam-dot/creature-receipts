@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import base64
+import hashlib
 import html
 import io
 import json
@@ -448,7 +449,7 @@ def _search_view(visual: dict) -> dict:
     return {k: v for k, v in visual.items() if k not in _RENDER_ONLY}
 
 
-def _cached(beat: Beat, out: Path) -> Asset | None:
+def _cached(beat: Beat, out: Path, base_dir: Path) -> Asset | None:
     """The beat's earlier download, if its search settings haven't changed since."""
     sidecar = out.with_suffix(".json")
     if not sidecar.exists():
@@ -460,14 +461,26 @@ def _cached(beat: Beat, out: Path) -> Asset | None:
         path = out.parent / path.name
     if _search_view(cached["visual"]) != _search_view(beat.visual.model_dump()) or not path.exists():
         return None
-    return Asset(path, cached["kind"], cached["credit"], tuple(cached["key"]) if cached.get("key") else None)
+    credit = cached["credit"]
+    if beat.visual.source == "file":
+        if not beat.visual.path:
+            return None
+        source = (base_dir / beat.visual.path).expanduser().resolve()
+        if not source.is_file():
+            return None
+        with source.open("rb") as current, path.open("rb") as prior:
+            if hashlib.file_digest(current, "sha256").digest() != hashlib.file_digest(prior, "sha256").digest():
+                return None
+        # Old sidecars can hold an obsolete credit or a path from another worktree.
+        credit = {**(beat.visual.credit or {"source": "local file"}), "path": str(source)}
+    return Asset(path, cached["kind"], credit, tuple(cached["key"]) if cached.get("key") else None)
 
 
-def cached_keys(beats: list[Beat], out_dir: Path) -> set[tuple[str, str]]:
+def cached_keys(beats: list[Beat], out_dir: Path, base_dir: Path) -> set[tuple[str, str]]:
     """Images that beats will keep from earlier renders, so a re-fetched beat can't take one of them."""
     keys = set()
     for index, beat in enumerate(beats):
-        asset = None if beat.visual.reuse else _cached(beat, out_dir / f"beat{index:02d}")
+        asset = None if beat.visual.reuse else _cached(beat, out_dir / f"beat{index:02d}", base_dir)
         if asset and asset.key:
             keys.add(asset.key)
     return keys
@@ -485,7 +498,7 @@ def fetch(
     """Return the beat's asset, reusing the cached download while the beat's search settings are unchanged."""
     out = out_dir / f"beat{index:02d}"
     wanted = beat.visual.model_dump()
-    cached = _cached(beat, out)
+    cached = _cached(beat, out, base_dir)
     if cached:
         if cached.key:
             used.add(cached.key)
