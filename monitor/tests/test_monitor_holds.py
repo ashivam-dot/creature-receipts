@@ -101,3 +101,26 @@ def test_strict_hold_exempts_only_explicit_approved_buffer_post():
     assert ("alert", "Editorial hold permits only Buffer post approved-post, but 1 other post(s) are scheduled. "
             "Pause the YouTube queue in Buffer now, then remove the posts; "
             "the hold does not stop posts already queued in Buffer.") in assess(data)
+
+
+def test_approved_sent_post_alerts_when_public_feed_is_still_empty():
+    now = dt.datetime.now(dt.timezone.utc)
+    data = {
+        "github": {
+            "status": {"inventory": {"total": 0}}, "runs": [],
+            "history": [{"result": "ok", "started_at_utc": now.isoformat(), "seconds": 1}],
+            "workflow_state": "active", "minutes": 0,
+            "scheduling_hold": {"reason": "Other releases paused", "block_existing_queue": True,
+                                "approved_buffer_post_id": "approved-post"},
+        },
+        "buffer": {
+            "scheduled": [], "errors": [],
+            "sent": [{"id": "approved-post", "sentAt": (now - dt.timedelta(minutes=100)).isoformat(),
+                      "externalLink": "https://www.youtube.com/shorts/ABCDEFGHIJK",
+                      "metadata": {"title": "Reviewed first release"}}],
+            "channel": {"isDisconnected": False, "isLocked": False, "isQueuePaused": False},
+        },
+        "feed": [],
+    }
+    assert any(level == "alert" and "Reviewed first release" in message
+               for level, message in assess(data))

@@ -415,18 +415,21 @@ def assess(data: dict) -> list[tuple[str, str]]:
         elif not scheduling_hold and due[0] - now > dt.timedelta(hours={3: 16, 2: 18, 1: 24}[max(1, min(3, total // 3))] + 1):
             problems.append(("warn", f"Nothing publishes until {due[0].astimezone(IST):%a %H:%M} IST."))
     feed = data.get("feed")
-    if isinstance(feed, list) and feed:
-        newest = max(_parse_time(v["published"]) for v in feed)
-        if now - newest > dt.timedelta(hours=26):
-            level = "warn" if scheduling_hold else "alert"
-            problems.append((level, f"No new Short on YouTube since {newest.astimezone(IST):%a %b %d %H:%M} IST."))
+    if isinstance(feed, list):
+        if feed:
+            newest = max(_parse_time(v["published"]) for v in feed)
+            if now - newest > dt.timedelta(hours=26):
+                level = "warn" if scheduling_hold else "alert"
+                problems.append((level, f"No new Short on YouTube since {newest.astimezone(IST):%a %b %d %H:%M} IST."))
         public = {v["id"] for v in feed}
         for post in buf.get("sent", []):
             sent, link = _parse_time(post.get("sentAt")), post.get("externalLink") or ""
             video = re.search(r"(?:shorts/|v=|youtu\.be/)([\w-]{11})", link)
             if video and video.group(1) in private_ids:
                 continue
-            if sent and now - sent > dt.timedelta(hours=3) and not (video and video.group(1) in public):
+            approved_id = scheduling_hold.get("approved_buffer_post_id") if isinstance(scheduling_hold, dict) else None
+            wait = dt.timedelta(minutes=90) if post.get("id") == approved_id else dt.timedelta(hours=3)
+            if sent and now - sent > wait and not (video and video.group(1) in public):
                 title = (post.get("metadata") or {}).get("title") or (post.get("text") or "")[:50]
                 problems.append(("alert", f'"{title}" went to YouTube {sent.astimezone(IST):%a %H:%M} IST but isn\'t on '
                                           f"the channel's public feed: {link or 'Buffer has no YouTube link for it'}"))
