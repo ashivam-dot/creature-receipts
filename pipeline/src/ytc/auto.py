@@ -996,8 +996,9 @@ def repair_posts(run: Run, requeue: bool = True) -> None:
 
     for e in episodes():
         name = "publish.json" if e["record"] else "hold.json"
-        record = e["record"] or e["held"]
+        record = e["record"] or e["held"] or {}
         path = e["folder"] / name
+        bound = any(record.get(field) for field in MEDIA_BINDING_FIELDS)
         if e["state"] in ("scheduled", "waiting") and record.get("media_url") and "media_bytes" not in record:
             try:
                 record["media_bytes"] = hosted_bytes(record["media_url"])
@@ -1006,6 +1007,9 @@ def repair_posts(run: Run, requeue: bool = True) -> None:
                 continue
             if record["media_bytes"] > MAX_UPLOAD_MB * 1_000_000:
                 with run.stage(f"shrink {e['id']}'s video") as entry:
+                    if bound:
+                        raise RuntimeError("automatic shrink would change bound media; render a smaller video, "
+                                           "review it, and rehost")
                     old = record["media_public_id"]
                     record["media_public_id"], record["media_url"] = shrink_hosted(old, record["media_url"])
                     if e["state"] == "scheduled":
@@ -1019,10 +1023,15 @@ def repair_posts(run: Run, requeue: bool = True) -> None:
             path.write_text(json.dumps(record, indent=2), encoding="utf-8")
         elif e["state"] == "error" and requeue and record.get("retries", 0) < RETRIES and not _resending(record):
             with run.stage(f"requeue {e['id']}") as entry:
+                if bound:
+                    size = hosted_bytes(record["media_url"])
+                    if size > MAX_UPLOAD_MB * 1_000_000:
+                        raise RuntimeError("requeue would require shrinking bound media; render a smaller video, "
+                                           "review it, and rehost")
                 record["retries"] = record.get("retries", 0) + 1
                 path.write_text(json.dumps(record, indent=2), encoding="utf-8")
                 old = record["media_public_id"]
-                smaller = shrink_hosted(old, record["media_url"])
+                smaller = None if bound else shrink_hosted(old, record["media_url"])
                 public_id, url = smaller or (old, record["media_url"])
                 held = {"id": e["id"], "title": record["title"], "series": e["series"], "media_public_id": public_id,
                         "media_url": url, "media_bytes": hosted_bytes(url), "hosted_at": _now().isoformat(timespec="seconds"),

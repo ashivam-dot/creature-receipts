@@ -105,13 +105,52 @@ def test_failed_post_requeue_preserves_binding(episode, monkeypatch):
     record = {**held, "status": "error", "buffer_post_id": "p1", "error": "Buffer failed"}
     (episode / "publish.json").write_text(json.dumps(record))
     monkeypatch.setattr(auto, "EPISODES", episode.parent)
-    monkeypatch.setattr(publish, "shrink_hosted", lambda *args: None)
+    monkeypatch.setattr(publish, "shrink_hosted", lambda *args: pytest.fail("bound media must not be re-encoded"))
     monkeypatch.setattr(publish, "hosted_bytes", lambda url: 123)
     monkeypatch.setattr(publish, "delete_post", lambda post_id: None)
     auto.repair_posts(auto.Run("test"))
     requeued = json.loads((episode / "hold.json").read_text())
     assert {k: requeued[k] for k in publish.MEDIA_BINDING_FIELDS} == {k: held[k] for k in publish.MEDIA_BINDING_FIELDS}
     assert not (episode / "publish.json").exists()
+
+
+@pytest.mark.parametrize("state", ["waiting", "scheduled"])
+def test_oversize_bound_media_is_not_shrunk(episode, monkeypatch, state):
+    held = _hosted(episode)
+    if state == "scheduled":
+        (episode / "hold.json").unlink()
+        record = {**held, "status": "scheduled", "buffer_post_id": "p1"}
+        path = episode / "publish.json"
+    else:
+        record = held
+        path = episode / "hold.json"
+    path.write_text(json.dumps(record))
+    monkeypatch.setattr(auto, "EPISODES", episode.parent)
+    monkeypatch.setattr(publish, "hosted_bytes", lambda url: 41_000_000)
+    monkeypatch.setattr(publish, "shrink_hosted", lambda *args: pytest.fail("bound media must not be re-encoded"))
+    monkeypatch.setattr(publish, "edit_post", lambda *args: pytest.fail("Buffer must not be edited"))
+    monkeypatch.setattr(publish, "unhost_video", lambda *args: pytest.fail("hosted media must not be removed"))
+    run = auto.Run("test")
+    auto.repair_posts(run)
+    assert "automatic shrink would change bound media" in run.errors[0]
+    assert json.loads(path.read_text()) == record
+
+
+def test_oversize_failed_bound_post_is_not_requeued_or_shrunk(episode, monkeypatch):
+    held = _hosted(episode)
+    (episode / "hold.json").unlink()
+    record = {**held, "status": "error", "buffer_post_id": "p1", "error": "Buffer failed"}
+    path = episode / "publish.json"
+    path.write_text(json.dumps(record))
+    monkeypatch.setattr(auto, "EPISODES", episode.parent)
+    monkeypatch.setattr(publish, "hosted_bytes", lambda url: 41_000_000)
+    monkeypatch.setattr(publish, "shrink_hosted", lambda *args: pytest.fail("bound media must not be re-encoded"))
+    monkeypatch.setattr(publish, "delete_post", lambda *args: pytest.fail("Buffer post must not be deleted"))
+    run = auto.Run("test")
+    auto.repair_posts(run)
+    assert "requeue would require shrinking bound media" in run.errors[0]
+    assert json.loads(path.read_text()) == record
+    assert not (episode / "hold.json").exists()
 
 
 def test_missing_buffer_post_returns_bound_hold(episode, monkeypatch):
