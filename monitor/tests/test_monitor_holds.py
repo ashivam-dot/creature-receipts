@@ -124,3 +124,28 @@ def test_approved_sent_post_alerts_when_public_feed_is_still_empty():
     }
     assert any(level == "alert" and "Reviewed first release" in message
                for level, message in assess(data))
+
+
+def test_approved_post_still_queued_after_slot_alerts_only_with_fresh_buffer_read():
+    now = dt.datetime.now(dt.timezone.utc)
+    due = now - dt.timedelta(hours=1)
+    data = {
+        "github": {
+            "status": {"inventory": {"total": 0}}, "runs": [],
+            "history": [{"result": "ok", "started_at_utc": now.isoformat(), "seconds": 1}],
+            "workflow_state": "active", "minutes": 0,
+            "scheduling_hold": {"reason": "Other releases paused", "block_existing_queue": True,
+                                "approved_buffer_post_id": "approved-post"},
+        },
+        "buffer": {
+            "checked_at": (due + dt.timedelta(minutes=20)).isoformat(),
+            "scheduled": [{"id": "approved-post", "dueAt": due.isoformat()}],
+            "sent": [], "errors": [],
+            "channel": {"isDisconnected": False, "isLocked": False, "isQueuePaused": False},
+        },
+    }
+    assert not any("approved-post is still awaiting send" in message for _, message in assess(data))
+
+    data["buffer"]["checked_at"] = now.isoformat()
+    assert any(level == "alert" and "approved-post is still awaiting send" in message
+               for level, message in assess(data))

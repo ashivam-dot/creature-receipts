@@ -52,6 +52,9 @@ DIGEST_HOUR = 8
 BUFFER_EVERY = dt.timedelta(hours=2)
 # The studio sends a post Buffer failed again while its due time is this recent (publish.RESEND_WINDOW).
 RESEND_WINDOW = dt.timedelta(hours=1)
+# A held channel may exempt one reviewed Buffer post from the empty-queue alert. A post that remains queued well
+# after its slot still needs an alert, even though no automatic retry is allowed under the hold.
+APPROVED_POST_LATE_GRACE = dt.timedelta(minutes=30)
 # The Studio app opens this link itself. No button for Buffer: its app claims none of Buffer's web links, and its
 # bufferapp:// scheme goes nowhere when ntfy opens it.
 STUDIO_URL = f"https://studio.youtube.com/channel/{CHANNEL_ID}/analytics/tab-overview/period-default"
@@ -408,6 +411,12 @@ def assess(data: dict) -> list[tuple[str, str]]:
                      f"Editorial hold requires an empty Buffer queue, but {len(unexpected)} post(s) ")
             problems.append(("alert", intro + "are scheduled. Pause the YouTube queue in Buffer now, then remove "
                                      "the posts; the hold does not stop posts already queued in Buffer."))
+        for post in buf["scheduled"]:
+            due_at = _parse_time(post.get("dueAt"))
+            if approved_id and post.get("id") == approved_id and due_at and read - due_at > APPROVED_POST_LATE_GRACE:
+                problems.append(("alert", f"Approved Buffer post {approved_id} is still awaiting send more than "
+                                          f"30 minutes after its {_when(post['dueAt'])} IST slot. Check Buffer and "
+                                          "YouTube before any retry; keep the editorial hold."))
         if not due:
             if not scheduling_hold:
                 problems.append(("alert", "Buffer has nothing scheduled: no Shorts will go out."))
