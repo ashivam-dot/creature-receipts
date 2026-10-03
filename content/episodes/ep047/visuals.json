@@ -3,8 +3,8 @@
     "source": "card",
     "card": {
       "kind": "fact",
-      "big": "200 men",
-      "small": ""
+      "big": "NEARLY 200",
+      "small": "NO QUARTER GIVEN"
     },
     "motion": "zoom_in",
     "_rejected": [
@@ -53,8 +53,9 @@
       "match": 0.647
     },
     "_fit": "close",
-    "_shows": "Portrait of William Barret Travis in military uniform",
-    "_alternates": []
+    "_shows": "Henry McArdle’s posthumous painting of William Barret Travis, painted before 1908",
+    "_alternates": [],
+    "label": "TRAVIS • LATER PORTRAIT"
   },
   {
     "source": "url",
@@ -97,7 +98,7 @@
       "match": 0.499
     },
     "_fit": "exact",
-    "_shows": "Original manuscript of Travis Victory or Death letter",
+    "_shows": "Original February 24, 1836 Travis appeal letter, not an image of the March 1 Gonzales arrivals",
     "_alternates": [
       {
         "key": "commons:File:Frances (Appleton) Longfellow to Nathan Appleton, 18 July 1841 (49419538-ed45-4e70-89be-d2e5b4ec35c9).jpg",
@@ -137,17 +138,34 @@
         "match": 0.346,
         "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2c/Frances_%28Appleton%29_Longfellow_to_Nathan_Appleton%2C_18_July_1841_%28ce31f5d3-d9d1-4704-9386-3549fdacbd71%29.jpg/500px-Frances_%28Appleton%29_Longfellow_to_Nathan_Appleton%2C_18_July_1841_%28ce31f5d3-d9d1-4704-9386-3549fdacbd71%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
       }
-    ]
+    ],
+    "label": "TRAVIS APPEAL • FEB 24, 1836"
   },
   {
-    "reuse": 3,
-    "motion": "zoom_in",
+    "source": "url",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/d/de/FalloftheAlamo.jpg",
+    "credit": {
+      "source": "Wikimedia Commons",
+      "title": "FalloftheAlamo.jpg",
+      "credit": "Robert Jenkins Onderdonk",
+      "license": "Public domain",
+      "url": "https://commons.wikimedia.org/wiki/File:FalloftheAlamo.jpg"
+    },
+    "fallbacks": [
+      "card",
+      "color"
+    ],
+    "motion": "pan_right",
     "focus_x": 0.5,
     "focus_y": 0.5,
-    "_rejected": [
-      "commons:File:FalloftheAlamo.jpg",
-      "wellcome:a7aajrxt"
-    ]
+    "label": "ALAMO ASSAULT • C. 1903 PAINTING",
+    "card": {
+      "kind": "dateline",
+      "big": "MARCH 6, 1836",
+      "small": "The final assault"
+    },
+    "_shows": "Robert Jenkins Onderdonk’s circa 1903 painted reconstruction of the Alamo assault, not a contemporary eyewitness image",
+    "_fit": "scene"
   },
   {
     "source": "url",
@@ -168,7 +186,7 @@
     "focus_y": 0.5,
     "card": {
       "kind": "fact",
-      "big": "90 MINUTES",
+      "big": "NO MORE THAN 90 MIN",
       "small": "The Final Battle"
     },
     "_choice": {
@@ -190,7 +208,7 @@
       "match": 0.999
     },
     "_fit": "exact",
-    "_shows": "19th century engraving of the Alamo mission ruins",
+    "_shows": "1854 painting of the Alamo church ruins, made after the 1836 battle",
     "_alternates": [
       {
         "key": "commons:File:1854 Alamo.jpg",
@@ -211,7 +229,8 @@
         "match": 0.989,
         "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dd/1854_Alamo.jpg/500px-1854_Alamo.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
       }
-    ]
+    ],
+    "label": "ALAMO RUINS • 1854 PAINTING"
   },
   {
     "source": "url",
@@ -232,7 +251,7 @@
     "focus_y": 0.5,
     "card": {
       "kind": "fact",
-      "big": "18 MINUTES",
+      "big": "UNDER 20 MIN",
       "small": "Battle of San Jacinto"
     },
     "_choice": {
@@ -254,7 +273,7 @@
       "match": 0.811
     },
     "_fit": "exact",
-    "_shows": "Painting of the Battle of San Jacinto with Texian charge",
+    "_shows": "Henry Arthur McArdle’s 1898 painting of the 1836 Battle of San Jacinto",
     "_alternates": [
       {
         "key": "commons:File:The Battle of San Jacinto (1901).jpg",
@@ -294,7 +313,8 @@
         "match": 0.545,
         "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8b/The_Battle_of_San_Jacinto_%281895%29.jpg/500px-The_Battle_of_San_Jacinto_%281895%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
       }
-    ]
+    ],
+    "label": "SAN JACINTO • 1898 PAINTING"
   },
   {
     "reuse": 1,

@@ -1,8 +1,8 @@
 # ep038 research: The B-25 That Struck the Empire State Building 🤯 (The Last Hours)
 
-Researched 2026-10-02 by the cloud studio (gemini-3.6-flash) from the sources below, read in full by the studio. Only claims backed by two or more independent sites were allowed into the script.
+Originally researched 2026-10-02 by the cloud studio (gemini-3.6-flash). This file also records the 2026-10-03 editorial correction, which uses the directly checked NYC Municipal Archives and NPR accounts for the revised script.
 
-Story: On July 28, 1945, Lieutenant Colonel William F. Smith Jr. piloted a B-25 Mitchell bomber through thick fog toward Newark Airport. Disoriented over Midtown Manhattan, Smith narrowly missed the Chrysler Building before turning right and crashing into the north face of the Empire State Building between the 78th and 80th floors at over 200 miles per hour. The blast tore an 18-by-20-foot hole, killing 14 people—three aviators and eleven office workers. Raging fuel fires erupted, while one engine plummeted down an elevator shaft, severing the lift cables. Rescue workers placed injured 19-year-old elevator operator Betty Lou Oliver into another elevator car to evacuate her, but the damaged cables snapped, plunging her 75 stories into the subbasement. Miraculously, a cushion of air trapped in the shaft saved her life despite severe fractures. Firefighters controlled the blaze in 40 minutes, and the building reopened less than 48 hours later.
+Story (corrected 2026-10-03): On July 28, 1945, Lieutenant Colonel William F. Smith Jr. flew a B-25 toward Newark in heavy fog. The aircraft struck the Empire State Building at more than 200 miles per hour, damaging the 78th and 79th floors. One engine fell down an elevator shaft. Elevator operator Betty Lou Oliver survived a 75-floor elevator plunge but suffered serious fractures. The checked institutional archive documents her survival without establishing an air-cushion mechanism. Contemporary accounts differ on the exact sequence of her rescue and fall.
 
 ## Sources
 
@@ -28,9 +28,9 @@ Story: On July 28, 1945, Lieutenant Colonel William F. Smith Jr. piloted a B-25 
 | 6 | - | The collision tore an 18-by-20-foot hole in the building structure. | S1, S3, S6, S7 | high |
 | 7 | - | The crash killed 14 people, consisting of three crewmen on the aircraft and eleven civilians in the building. | S1, S2, S3, S6, S7 | high |
 | 8 | - | One engine shot completely through the building and landed on a roof a block away on 33rd Street. | S1, S3, S6, S7 | high |
-| 9 | 4, 6 | The other engine and landing gear fell down an elevator shaft, severing lifting cables. | S1, S3, S6, S7 | high |
-| 10 | 5, 6, 7, 8 | Elevator operator Betty Lou Oliver survived a 75-story fall inside an elevator car after the cables severed. | S1, S2, S3, S6, S7 | high |
-| 11 | 7 | A softening cushion of air created by the falling car in the shaft enabled Oliver to survive the fall. | S1, S7 | high |
+| 9 | 4 | One engine fell down an elevator shaft; the exact relation to the elevator cable failure is not established here. | S6 | high for engine fall; cable sequence disputed |
+| 10 | 5, 6, 7, 8 | Elevator operator Betty Lou Oliver survived a 75-floor fall inside an elevator car; the rescue and cable sequence differs across accounts. | S2, S6 | high for survival and fall; sequence disputed |
+| 11 | - | Air-cushion mechanism is not established by the checked institutional archive or NPR account; omit it from the script. | S6, S2 | unsupported |
 | 12 | - | Oliver suffered a broken pelvis, back, and neck from the crash landing in the subbasement. | S1, S2, S7 | high |
 | 13 | - | New York firefighters brought the high-altitude structural fire under control within 40 minutes. | S1, S3, S6, S7 | high |
 | 14 | - | Office worker Therese Fortier Willig threw her rings out a 79th-floor window while trapped by fire. | S2, S3, S7 | high |
@@ -45,20 +45,20 @@ Story: On July 28, 1945, Lieutenant Colonel William F. Smith Jr. piloted a B-25 
 
 ## Images
 
-- Beat 1: De heren Hans Martin van de KLM en Fisher kijken uit over New York vanaf het Emp, Bestanddeelnr 254-2286.jpg (CC0, judged scene), https://commons.wikimedia.org/wiki/File:De_heren_Hans_Martin_van_de_KLM_en_Fisher_kijken_uit_over_New_York_vanaf_het_Emp,_Bestanddeelnr_254-2286.jpg
-- Beat 2: North American Aviation's B-25 medium bomber, Inglewood, Calif. (LOC).jpg (Public domain, judged exact), https://commons.wikimedia.org/wiki/File:North_American_Aviation%27s_B-25_medium_bomber,_Inglewood,_Calif._(LOC).jpg
+- Beat 1: Smoke arising from Empire State Building after crash (1945 INP press photo).jpg (Public domain; actual July 28, 1945 crash aftermath, labeled on screen), https://commons.wikimedia.org/wiki/File:Smoke_arising_from_Empire_State_Building_after_crash_(1945_INP_press_photo).jpg. The removed fog-view photograph was taken in 1946, after the crash.
+- Beat 2: North American Aviation's B-25 medium bomber, Inglewood, Calif.jpg (Public domain; larger cropped 1942 representative aircraft-type photograph, labeled as such), https://commons.wikimedia.org/wiki/File:North_American_Aviation%27s_B-25_medium_bomber,_Inglewood,_Calif.jpg
 - Beat 3: Empire State Building on fire 1945 by INP.jpg (Public domain, judged exact), https://commons.wikimedia.org/wiki/File:Empire_State_Building_on_fire_1945_by_INP.jpg
 - Beat 4: beat 3's picture again, no better picture was found.
-- Beat 5: Removing casualty from Empire State Building (1945 INP press photo).jpg (Public domain, judged close), https://commons.wikimedia.org/wiki/File:Removing_casualty_from_Empire_State_Building_(1945_INP_press_photo).jpg
-- Beat 6: Bomber Crashed into Empire State Building 1945.jpg (Public domain, judged exact), https://commons.wikimedia.org/wiki/File:Bomber_Crashed_into_Empire_State_Building_1945.jpg
-- Beat 7: beat 6's picture again, no better picture was found.
+- Beat 5: Removing casualty from Empire State Building (1945 INP press photo).jpg (Public domain; the person is unidentified in Commons metadata and labeled as unidentified on screen), https://commons.wikimedia.org/wiki/File:Removing_casualty_from_Empire_State_Building_(1945_INP_press_photo).jpg
+- Beat 6: Bomber Crashed into Empire State Building 1945.jpg (Public domain; labeled building wreckage, not an elevator-car photo), https://commons.wikimedia.org/wiki/File:Bomber_Crashed_into_Empire_State_Building_1945.jpg
+- Beat 7: reuse labeled building wreckage from beat 6.
 - Beat 8: beat 1's picture again, for the loop.
 
 ## Render log
 
 - Render 1: 26.25 s, 89 words, -14.4 LUFS, -1.8 dBFS true peak, warnings: none; speech differences: 's' heard as 'is' after 'm new york'; 'cables' heard as 'cable' after 'evacuate her the'. Scores hook 4, clarity 4, payoff 4, visuals 4, loop 4. Passed.
 
-## Quality gate (cloud studio, 2026-10-02)
+## Superseded quality gate for the held original (cloud studio, 2026-10-02)
 
 | Hook | Clarity | Payoff | Visuals | Loop |
 |---|---|---|---|---|
@@ -71,3 +71,9 @@ Story: On July 28, 1945, Lieutenant Colonel William F. Smith Jr. piloted a B-25 
 - Loop: Final phrase links seamlessly into the opening line.
 
 Better than the last: It delivers a clearer narrative focus and stronger survival payoff than ep035.
+
+## Editorial correction receipt (2026-10-03)
+
+The held episode remains under `editorial_hold.json`, and its original hosted record is retained only as an audit artifact. NYC Municipal Archives cites the contemporary Fire Department report and confirms the B-25 struck the 78th/79th floors at more than 200 mph, an engine fell down an elevator shaft, and Betty Lou Oliver survived a 75-floor elevator plunge. The archive does **not** give an air-cushion mechanism. NPR reports her injuries and cable damage but differs from the earlier script on the exact elevator sequence. The replacement avoids that sequence and the mechanism.
+
+The opening is now an actual July 28, 1945 crash aftermath photograph. Commons dates the discarded fog-view photo to 1946. The representative 1942 B-25 photo and the unidentified injured woman in the rescue photo carry visible labels; neither is presented as Smith's aircraft or Oliver. Sources directly checked: [NYC Municipal Archives](https://www.archives.nyc/blog/2019/10/18/the-empire-state-plane-crash-july-28-1945), [NPR](https://www.npr.org/2008/07/28/130328215/empire-state-building-the-day-a-bomber-crashed-into-the-79th-floor), [Commons crash photo](https://commons.wikimedia.org/wiki/File:Smoke_arising_from_Empire_State_Building_after_crash_(1945_INP_press_photo).jpg), [Commons 1946 fog photo](https://commons.wikimedia.org/wiki/File:De_heren_Hans_Martin_van_de_KLM_en_Fisher_kijken_uit_over_New_York_vanaf_het_Emp,_Bestanddeelnr_254-2286.jpg), and [Commons rescue photo](https://commons.wikimedia.org/wiki/File:Removing_casualty_from_Empire_State_Building_(1945_INP_press_photo).jpg). The old render log and scores above do not approve the replacement.

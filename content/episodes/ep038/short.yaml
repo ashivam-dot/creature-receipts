@@ -1,15 +1,13 @@
 id: ep038
 title: The B-25 That Struck the Empire State Building 🤯
 series: The Last Hours
-description: In 1945, a lost US Army bomber crashed into the Empire State Building, leading to one of history's most miraculous
-  survival stories.
+description: On July 28, 1945, a B-25 struck the Empire State Building in fog. Elevator operator Betty Lou Oliver
+  survived a 75-floor plunge. Records confirm the survival but do not establish why the fall was survivable. Archival
+  crash photos and a labeled representative aircraft image illustrate the account.
 sources:
-- https://en.wikipedia.org/wiki/1945_Empire_State_Building_B-25_crash
+- https://www.archives.nyc/blog/2019/10/18/the-empire-state-plane-crash-july-28-1945
 - https://www.npr.org/2008/07/28/130328215/empire-state-building-the-day-a-bomber-crashed-into-the-79th-floor
 - https://web.archive.org/web/20170729060821/http://www.nytimes.com/1995/07/28/nyregion/flaming-horror-79th-floor-50-years-ago-today-fog-plane-hit-world-s-tallest.html
-- https://web.archive.org/web/20040715113106/http://www.eng.uab.edu/cee/faculty/ndelatte/case_studies_project/Bomber.htm
-- https://www.archives.nyc/blog/2019/10/18/the-empire-state-plane-crash-july-28-1945
-- https://rarehistoricalphotos.com/empire-state-building-plane-crash/
 hashtags:
 - '#history'
 - '#newyork'
@@ -24,9 +22,9 @@ tags:
 voice:
   engine: gemini
   voice: Charon
-  direction: 'Read the transcript below aloud as a gripping true-story narrator on a viral YouTube Short: fast and urgent,
-    about 170 words a minute, with only tiny pauses, a low, intense voice and rising tension that hits the last line hard.
-    Speak only the transcript.'
+  direction: 'Read the transcript below aloud as a gripping true-story narrator on a viral YouTube Short: fast and
+    urgent, about 170 words a minute, with only tiny pauses, a low, intense voice and rising tension that hits the
+    last line hard. Speak only the transcript.'
 beats:
 - text: Shortly before 10 a.m., New York’s tallest skyscraper vanished into fog.
   emphasis:
@@ -34,30 +32,36 @@ beats:
   - fog
   visual:
     source: url
-    url: https://upload.wikimedia.org/wikipedia/commons/8/85/De_heren_Hans_Martin_van_de_KLM_en_Fisher_kijken_uit_over_New_York_vanaf_het_Emp%2C_Bestanddeelnr_254-2286.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    url: https://upload.wikimedia.org/wikipedia/commons/8/88/Smoke_arising_from_Empire_State_Building_after_crash_%281945_INP_press_photo%29.jpg
     credit:
       source: Wikimedia Commons
-      title: De heren Hans Martin van de KLM en Fisher kijken uit over New York vanaf het Emp, Bestanddeelnr 254-2286.jpg
-      credit: Willem van de Poll
-      license: CC0
-      url: https://commons.wikimedia.org/wiki/File:De_heren_Hans_Martin_van_de_KLM_en_Fisher_kijken_uit_over_New_York_vanaf_het_Emp,_Bestanddeelnr_254-2286.jpg
+      title: Smoke arising from Empire State Building after crash (1945 INP press photo).jpg
+      credit: International News Photos
+      license: Public domain
+      url: https://commons.wikimedia.org/wiki/File:Smoke_arising_from_Empire_State_Building_after_crash_(1945_INP_press_photo).jpg
     fallbacks:
+    - card
     - color
     motion: zoom_out
     focus_x: 0.5
     focus_y: 0.5
-- text: Colonel William Smith steered his B-25 bomber toward Midtown Manhattan.
+    label: EMPIRE STATE CRASH • JUL 28, 1945
+    card:
+      kind: dateline
+      big: JULY 28, 1945
+      small: Empire State Building
+- text: Colonel William Smith steered his B-25 bomber toward Newark.
   emphasis:
   - B-25 bomber
   visual:
     source: url
-    url: https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1f/North_American_Aviation%27s_B-25_medium_bomber%2C_Inglewood%2C_Calif._%28LOC%29.jpg/960px-North_American_Aviation%27s_B-25_medium_bomber%2C_Inglewood%2C_Calif._%28LOC%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
+    url: https://upload.wikimedia.org/wikipedia/commons/2/22/North_American_Aviation%27s_B-25_medium_bomber%2C_Inglewood%2C_Calif.jpg
     credit:
       source: Wikimedia Commons
-      title: North American Aviation's B-25 medium bomber, Inglewood, Calif. (LOC).jpg
+      title: North American Aviation's B-25 medium bomber, Inglewood, Calif.jpg
       credit: Mark Sherwood
       license: Public domain
-      url: https://commons.wikimedia.org/wiki/File:North_American_Aviation%27s_B-25_medium_bomber,_Inglewood,_Calif._(LOC).jpg
+      url: https://commons.wikimedia.org/wiki/File:North_American_Aviation%27s_B-25_medium_bomber,_Inglewood,_Calif.jpg
     fallbacks:
     - card
     - color
@@ -68,9 +72,11 @@ beats:
       kind: dateline
       big: July 28, 1945
       small: New York City
-- text: Flying at 200 miles per hour, the plane struck the 79th floor.
+    label: B-25 TYPE • 1942 PHOTO
+- text: At more than 200 miles per hour, it struck the 78th and 79th floors.
   emphasis:
-  - 79th floor
+  - 200 miles per hour
+  - 78th and 79th floors
   sfx: whoosh
   visual:
     source: url
@@ -91,17 +97,20 @@ beats:
       kind: fact
       big: 200 MPH
       small: B-25 Impact
-- text: One engine plummeted down a shaft, severing the heavy elevator cables.
+    label: CRASH AFTERMATH • JUL 28, 1945
+- text: One engine fell down an elevator shaft amid the wreckage.
   emphasis:
-  - severing
+  - engine
+  - elevator shaft
   visual:
     reuse: 3
     motion: zoom_in
     focus_x: 0.5
     focus_y: 0.5
-- text: Rescuers placed injured operator Betty Lou Oliver into a car to evacuate her.
+    label: CRASH AFTERMATH • JUL 28, 1945
+- text: Among the injured was elevator operator Betty Lou Oliver.
   emphasis:
-  - evacuate
+  - Betty Lou Oliver
   visual:
     source: url
     url: https://thumb.wikimedia.org/wikipedia/commons/thumb/6/69/Removing_casualty_from_Empire_State_Building_%281945_INP_press_photo%29.jpg/960px-Removing_casualty_from_Empire_State_Building_%281945_INP_press_photo%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
@@ -116,9 +125,10 @@ beats:
     motion: pan_right
     focus_x: 0.5
     focus_y: 0.5
-- text: The cables snapped, plunging her 75 stories into the subbasement.
+    label: UNIDENTIFIED CRASH CASUALTY
+- text: Her elevator plunged 75 floors into the subbasement.
   emphasis:
-  - 75 stories
+  - 75 floors
   sfx: riser
   visual:
     source: url
@@ -139,9 +149,10 @@ beats:
       kind: fact
       big: 75 STORIES
       small: The Plunge
-- text: A cushion of trapped air saved her life from the impossible fall.
+    label: BUILDING WRECKAGE • 1945
+- text: She survived, though her pelvis, back, and neck were broken.
   emphasis:
-  - saved her life
+  - She survived
   sfx: pop
   pause_after: 0.4
   visual:
@@ -149,6 +160,7 @@ beats:
     motion: zoom_out
     focus_x: 0.5
     focus_y: 0.5
+    label: BUILDING WRECKAGE • 1945
 - text: She survived the morning the tallest skyscraper vanished into fog.
   emphasis:
   - survived
@@ -157,5 +169,6 @@ beats:
     motion: zoom_in
     focus_x: 0.5
     focus_y: 0.5
+    label: EMPIRE STATE CRASH • JUL 28, 1945
 depth_motion: true
 hook_text: THE FOG-BOUND FLIGHT

@@ -1,7 +1,7 @@
 {
   "viable": true,
   "reason": "The provided sources contain more than 10 double-sourced facts supporting a compelling, fast-paced story with a remarkable central twist.",
-  "story": "On July 28, 1945, Lieutenant Colonel William F. Smith Jr. piloted a B-25 Mitchell bomber through thick fog toward Newark Airport. Disoriented over Midtown Manhattan, Smith narrowly missed the Chrysler Building before turning right and crashing into the north face of the Empire State Building between the 78th and 80th floors at over 200 miles per hour. The blast tore an 18-by-20-foot hole, killing 14 people—three aviators and eleven office workers. Raging fuel fires erupted, while one engine plummeted down an elevator shaft, severing the lift cables. Rescue workers placed injured 19-year-old elevator operator Betty Lou Oliver into another elevator car to evacuate her, but the damaged cables snapped, plunging her 75 stories into the subbasement. Miraculously, a cushion of air trapped in the shaft saved her life despite severe fractures. Firefighters controlled the blaze in 40 minutes, and the building reopened less than 48 hours later.",
+  "story": "On July 28, 1945, Lieutenant Colonel William F. Smith Jr. flew a B-25 toward Newark in heavy fog. The aircraft struck the Empire State Building at more than 200 miles per hour, damaging the 78th and 79th floors. One engine fell down an elevator shaft. Elevator operator Betty Lou Oliver survived a 75-floor elevator plunge but suffered serious fractures. The checked institutional archive documents her survival without establishing an air-cushion mechanism. Contemporary accounts differ on the exact sequence of her rescue and fall.",
   "angle": "Elevator operator Betty Lou Oliver survived a 75-story plunge into the basement after severed cables sent her elevator falling from the 80th floor.",
   "claims": [
     {
@@ -92,17 +92,17 @@
       "confidence": "high"
     },
     {
-      "claim": "The other engine and landing gear fell down an elevator shaft, severing lifting cables.",
+      "claim": "One engine fell down an elevator shaft; the precise relation to elevator cable failure is disputed across accounts.",
       "sources": [
         "S1",
         "S3",
         "S6",
         "S7"
       ],
-      "confidence": "high"
+      "confidence": "high for engine fall; cable sequence disputed"
     },
     {
-      "claim": "Elevator operator Betty Lou Oliver survived a 75-story fall inside an elevator car after the cables severed.",
+      "claim": "Elevator operator Betty Lou Oliver survived a 75-floor fall inside an elevator car; accounts differ on the rescue and cable sequence.",
       "sources": [
         "S1",
         "S2",
@@ -110,15 +110,15 @@
         "S6",
         "S7"
       ],
-      "confidence": "high"
+      "confidence": "high for survival and fall; sequence disputed"
     },
     {
-      "claim": "A softening cushion of air created by the falling car in the shaft enabled Oliver to survive the fall.",
+      "claim": "An air-cushion explanation for Oliver’s survival appears in weaker secondary retellings but is not established by the checked NYC archive or NPR reporting; do not state it as fact.",
       "sources": [
-        "S1",
-        "S7"
+        "S6",
+        "S2"
       ],
-      "confidence": "high"
+      "confidence": "unsupported"
     },
     {
       "claim": "Oliver suffered a broken pelvis, back, and neck from the crash landing in the subbasement.",
@@ -171,7 +171,8 @@
   "disputed": [
     "The exact time of impact varies across sources (S1 and S7 cite 9:40 a.m., S3 and S6 cite approximately 9:50 a.m.); scripts should use a general phrase like 'shortly before 10:00 a.m.'",
     "The estimated speed of the bomber differs slightly (S3 and S7 cite 200 mph, S5 estimates 400 kph / 250 mph); scripts should state 'over 200 miles per hour.'",
-    "Impact location details vary slightly (S1 and S7 cite 78th to 80th floors, S2 and S5 cite the 79th floor, S3 and S6 cite 78th and 79th floors); scripts should describe the impact across floors 78 to 80."
+    "Impact location details vary slightly (S1 and S7 cite 78th to 80th floors, S2 and S5 cite the 79th floor, S3 and S6 cite 78th and 79th floors); scripts should describe the impact across floors 78 to 80.",
+    "The air-cushion explanation is not established by NYC Municipal Archives or NPR and must not be narrated as cause. Sources also differ on whether Oliver was already in the elevator or placed there after initial injury; avoid a specific transfer sequence."
   ],
   "visuals": [
     {
@@ -290,5 +291,21 @@
     }
   ],
   "topic": "1945 Empire State Building B-25 crash (1945): a lost bomber crashed into the 79th floor of the skyscraper, and an elevator operator fell 75 floors and survived",
-  "series": "The Last Hours"
+  "series": "The Last Hours",
+  "editorial_correction_2026_10_03": {
+    "status": "private replacement draft; editorial hold remains",
+    "corrections": [
+      "Removed definitive trapped-air cause and ambiguous rescue sequence.",
+      "Replaced 1946 unrelated fog view with a documented July 28, 1945 crash photograph.",
+      "Labeled representative B-25 and unidentified rescue casualty to avoid asserting identities.",
+      "Replaced the tiny bordered B-25 print with a larger crop of the same 1942 aircraft photograph for phone legibility."
+    ],
+    "sources": [
+      "https://www.archives.nyc/blog/2019/10/18/the-empire-state-plane-crash-july-28-1945",
+      "https://www.npr.org/2008/07/28/130328215/empire-state-building-the-day-a-bomber-crashed-into-the-79th-floor",
+      "https://commons.wikimedia.org/wiki/File:Smoke_arising_from_Empire_State_Building_after_crash_(1945_INP_press_photo).jpg",
+      "https://commons.wikimedia.org/wiki/File:Removing_casualty_from_Empire_State_Building_(1945_INP_press_photo).jpg",
+      "https://commons.wikimedia.org/wiki/File:North_American_Aviation%27s_B-25_medium_bomber,_Inglewood,_Calif.jpg"
+    ]
+  }
 }

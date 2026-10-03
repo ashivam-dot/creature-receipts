@@ -1,7 +1,7 @@
 {
   "viable": true,
   "reason": "The sources provide over 20 cross-referenced facts detailing the 13-day siege, the rapid 90-minute final massacre, and the specific names of survivors and commanders.",
-  "story": "In February 1836, nearly 200 Texian volunteers were trapped inside the crumbling Alamo mission. For 13 days, they watched as a blood-red flag—a signal of 'no quarter'—waved from a nearby cathedral, promising that no prisoners would be taken. Under freezing rain and a constant artillery barrage, the defenders, including Jim Bowie and Davy Crockett, sent desperate couriers to beg for reinforcements that never arrived. In the early hours of March 6, the Mexican Army launched a silent dawn assault. The carnage was swift; the battle was over in just 90 minutes. William B. Travis fell at the north wall, and a bedridden Bowie was killed in his room. Only a few women, children, and a slave were spared to spread the terrifying news. Though Santa Anna burned the bodies of the fallen on massive pyres, their death galvanized an army that would win independence just six weeks later.",
+  "story": "During the Alamo’s 13-day siege, Travis asked for aid. Thirty-two men from Gonzales entered on March 1, but the fort still needed far more support. Around dawn on March 6, about 1,800 Mexican attackers advanced on the damaged walls. The final assault lasted no more than 90 minutes. On April 21, the Texian army defeated Santa Anna at San Jacinto in less than 20 minutes.",
   "angle": "The legendary 13-day stand ended in a brutal massacre that lasted only 90 minutes, leaving nearly every defender dead before the sun was fully up.",
   "claims": [
     {
@@ -77,7 +77,7 @@
       "confidence": "high"
     },
     {
-      "claim": "Thirty-two reinforcements from Gonzales successfully entered the Alamo on March 1.",
+      "claim": "Thirty-two reinforcements from Gonzales entered the Alamo on March 1; further relief was still needed.",
       "sources": [
         "S1",
         "S2",
@@ -97,9 +97,8 @@
       "confidence": "high"
     },
     {
-      "claim": "The actual fighting during the final assault lasted approximately 90 minutes.",
+      "claim": "The final assault lasted no more than 90 minutes, after a 13-day siege.",
       "sources": [
-        "S4",
         "S7"
       ],
       "confidence": "high"
@@ -163,10 +162,9 @@
       "confidence": "high"
     },
     {
-      "claim": "The battle at San Jacinto lasted only 18 minutes.",
+      "claim": "The Battle of San Jacinto lasted less than 20 minutes.",
       "sources": [
-        "S1",
-        "S4"
+        "S8"
       ],
       "confidence": "high"
     },
@@ -322,8 +320,29 @@
       "url": "https://www.tshaonline.org/handbook/entries/alamo-battle-of-the",
       "title": "The Battle of the Alamo: A Historical Overview",
       "site": "tshaonline.org"
+    },
+    {
+      "label": "S8",
+      "url": "https://www.tsl.texas.gov/treasures/republic/san-jacinto.html",
+      "title": "The Battle of San Jacinto",
+      "site": "tsl.texas.gov"
     }
   ],
   "topic": "Battle of the Alamo (1836): a small band of Texian defenders held out for 13 days before a dawn assault overwhelmed the mission walls",
-  "series": "The Last Hours"
+  "series": "The Last Hours",
+  "editorial_correction_2026_10_03": {
+    "status": "private replacement draft; editorial hold remains",
+    "corrections": [
+      "Beat 3 names the 32 Gonzales reinforcements and says more were needed.",
+      "Final assault is stated as no more than 90 minutes, rather than exactly 90; San Jacinto is less than 20 minutes per Texas State Library.",
+      "The assault now shows a circa 1903 painted reconstruction instead of the Travis letter; later paintings are labeled on screen."
+    ],
+    "sources": [
+      "https://www.tshaonline.org/handbook/entries/alamo-battle-of-the",
+      "https://www.tsl.texas.gov/treasures/republic/alamo-01",
+      "https://www.tsl.texas.gov/treasures/republic/san-jacinto.html",
+      "https://commons.wikimedia.org/wiki/File:FalloftheAlamo.jpg",
+      "https://commons.wikimedia.org/wiki/File:Sam_Houston_at_San_Jacinto.jpg"
+    ]
+  }
 }

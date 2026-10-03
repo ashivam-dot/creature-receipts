@@ -1,16 +1,13 @@
 id: ep047
-title: Why Did the Battle of the Alamo Last Only 90 Minutes?
+title: How Did the Alamo Fall in About 90 Minutes?
 series: The Last Hours
-description: The 13-day siege of the Alamo ended in a brutal dawn assault that lasted only 90 minutes. Nearly every defender
-  fell before the sun rose over the mission walls.
+description: Thirty-two men from Gonzales reached the Alamo during its 13-day siege. On March 6, 1836, about 1,800
+  Mexican troops stormed its damaged defenses; the final assault lasted no more than 90 minutes. Later paintings
+  in the video are labeled as later depictions.
 sources:
-- https://en.wikipedia.org/wiki/Battle_of_the_Alamo
-- https://en.wikipedia.org/wiki/Siege_of_the_Alamo
-- https://www.worldhistory.org/Siege_of_the_Alamo/
-- https://www.tsl.texas.gov/treasures/republic/alamo-01
-- https://www.history.com/articles/alamo
 - https://www.tshaonline.org/handbook/entries/alamo-battle-of-the
-- https://thisdayofhistory.com/2026/03/06/march-6-1836-the-fall-of-the-alamo/
+- https://www.tsl.texas.gov/treasures/republic/alamo-01
+- https://www.tsl.texas.gov/treasures/republic/san-jacinto.html
 hashtags:
 - '#history'
 - '#thealamo'
@@ -35,8 +32,8 @@ beats:
     source: card
     card:
       kind: fact
-      big: 200 men
-      small: ''
+      big: NEARLY 200
+      small: NO QUARTER GIVEN
     motion: zoom_in
 - text: In 1836, William Travis answered surrender demands with cannon fire.
   emphasis:
@@ -62,10 +59,11 @@ beats:
       kind: dateline
       big: '1836'
       small: San Antonio, Texas
-- text: For 13 days, they waited for reinforcements that never came.
+    label: TRAVIS • LATER PORTRAIT
+- text: Travis pleaded for help. Thirty-two men from Gonzales arrived, but he still needed more.
   emphasis:
-  - 13 days
-  - never came
+  - Thirty-two men
+  - still needed more
   visual:
     source: url
     url: https://upload.wikimedia.org/wikipedia/commons/c/c2/Travis_letter_page_1_adj.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
@@ -85,20 +83,36 @@ beats:
       kind: fact
       big: 13 DAYS
       small: Under Siege
-- text: At dawn on March 6, thousands of troops breached the walls.
+    label: TRAVIS APPEAL • FEB 24, 1836
+- text: At dawn, about 1,800 attackers breached the crumbling walls.
   emphasis:
-  - dawn
-  - breached
+  - 1,800 attackers
+  - crumbling walls
   sfx: whoosh
   visual:
-    reuse: 3
-    motion: zoom_in
+    source: url
+    url: https://upload.wikimedia.org/wikipedia/commons/d/de/FalloftheAlamo.jpg
+    credit:
+      source: Wikimedia Commons
+      title: FalloftheAlamo.jpg
+      credit: Robert Jenkins Onderdonk
+      license: Public domain
+      url: https://commons.wikimedia.org/wiki/File:FalloftheAlamo.jpg
+    fallbacks:
+    - card
+    - color
+    motion: pan_right
     focus_x: 0.5
     focus_y: 0.5
-- text: The final massacre was over in only 90 minutes.
+    label: ALAMO ASSAULT • C. 1903 PAINTING
+    card:
+      kind: dateline
+      big: MARCH 6, 1836
+      small: The final assault
+- text: Within ninety minutes, the final assault was over.
   emphasis:
-  - massacre
-  - 90 minutes
+  - ninety minutes
+  - final assault
   sfx: riser
   pause_after: 0.4
   visual:
@@ -118,12 +132,13 @@ beats:
     focus_y: 0.5
     card:
       kind: fact
-      big: 90 MINUTES
+      big: NO MORE THAN 90 MIN
       small: The Final Battle
-- text: Six weeks later, the Texian army won in 18 minutes.
+    label: ALAMO RUINS • 1854 PAINTING
+- text: On April 21, Texian troops won at San Jacinto in under twenty minutes.
   emphasis:
-  - 18 minutes
-  - Texian army
+  - San Jacinto
+  - under twenty minutes
   sfx: pop
   pause_after: 0.4
   visual:
@@ -143,8 +158,9 @@ beats:
     focus_y: 0.5
     card:
       kind: fact
-      big: 18 MINUTES
+      big: UNDER 20 MIN
       small: Battle of San Jacinto
+    label: SAN JACINTO • 1898 PAINTING
 - text: They remembered the men who faced that blood-red flag.
   emphasis:
   - remembered
@@ -153,4 +169,4 @@ beats:
     reuse: 1
     motion: zoom_out
 depth_motion: true
-hook_text: NO QUARTER GIVEN
+hook_text: ''
