@@ -27,6 +27,20 @@ def test_channel_hold_blocks_direct_schedule_before_external_calls(tmp_path, mon
         publish.schedule(tmp_path / "short.yaml")
 
 
+def test_channel_hold_blocks_queued_post_edits_and_automatic_repairs(tmp_path, monkeypatch):
+    marker = tmp_path / "scheduling_hold.json"
+    marker.write_text('{"reason":"editorial review"}')
+    monkeypatch.setattr(publish, "SCHEDULING_HOLD", marker)
+    monkeypatch.setattr(publish, "_buffer", lambda *args: pytest.fail("Buffer should not be mutated"))
+    monkeypatch.setattr(auto, "episodes", lambda: pytest.fail("inventory should not be queried"))
+
+    with pytest.raises(RuntimeError, match="New scheduling is on editorial hold"):
+        publish.edit_post("queued-post", None, "https://cdn/video.mp4")
+    run = auto.Run("test")
+    auto.repair_posts(run)
+    auto.preflight_posts(run)
+
+
 def test_channel_hold_stops_watchdog_resends_before_buffer_read(tmp_path, monkeypatch):
     marker = tmp_path / "scheduling_hold.json"
     marker.write_text('{}')

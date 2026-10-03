@@ -325,6 +325,7 @@ def post(post_id: str) -> dict | None:
 def edit_post(post_id: str, spec: ShortSpec, media_url: str, text: str | None = None) -> None:
     """Point a queued Buffer post at media_url, and at text when given. Buffer wants the YouTube details with any
     edit."""
+    _require_scheduling_open()
     mutation = """
     mutation Edit($input: EditPostInput!) {
       editPost(input: $input) {

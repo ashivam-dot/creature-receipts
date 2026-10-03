@@ -990,10 +990,12 @@ def repair_posts(run: Run, requeue: bool = True) -> None:
     send a post Buffer couldn't publish back to waiting, up to RETRIES times (not while `requeue` is off: a post
     that failed on a disconnected channel would only fail again), once cloud.slot_watch has stopped sending it
     again."""
-    from .publish import MEDIA_BINDING_FIELDS, delete_post, edit_post, hosted_bytes, shrink_hosted, unhost_video
+    from .publish import MEDIA_BINDING_FIELDS, SCHEDULING_HOLD, delete_post, edit_post, hosted_bytes, shrink_hosted, unhost_video
     from .render import MAX_UPLOAD_MB
     from .spec import ShortSpec
 
+    if SCHEDULING_HOLD.exists():
+        return
     for e in episodes():
         name = "publish.json" if e["record"] else "hold.json"
         record = e["record"] or e["held"] or {}
@@ -1050,9 +1052,11 @@ def preflight_posts(run: Run) -> None:
     """Check each post due within PREFLIGHT_HOURS as it will go out: Buffer still has it, scheduled and public, with
     a title and description YouTube takes and the video its record hosts, and that video downloads whole. What a
     run can fix it fixes; anything else fails the stage, which the monitor raises as an alert."""
-    from .publish import MEDIA_BINDING_FIELDS, buffer_busy, description, edit_post, fetch_video, hosted_bytes, post, youtube_problems
+    from .publish import MEDIA_BINDING_FIELDS, SCHEDULING_HOLD, buffer_busy, description, edit_post, fetch_video, hosted_bytes, post, youtube_problems
     from .spec import ShortSpec
 
+    if SCHEDULING_HOLD.exists():
+        return
     soon = _now() + timedelta(hours=PREFLIGHT_HOURS)
     for e in episodes():
         if buffer_busy():
