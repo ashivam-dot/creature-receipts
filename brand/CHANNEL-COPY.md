@@ -13,9 +13,9 @@
 ## Channel description (paste as is)
 
 ```text
-The final moments of history's greatest tragedies, in under 30 seconds, and every claim sourced.
+History's Last Hours tells documented stories of disasters, rescues and survival in short, carefully sourced films.
 
-The Titanic's lookouts had no binoculars because the key to their locker left the ship in Southampton. Pompeii had felt earthquakes for years before Vesuvius buried it. History's Last Hours tells the true stories of shipwrecks, eruptions, lost cities, doomed expeditions, and the warnings nobody heeded, told through the people who lived them.
+We follow what people knew, what happened next, and where the record is uncertain. Period photographs and illustrations are credited; later reconstructions are identified as such. Sources and image credits appear with each Short.
 
 Our series:
 - The Last Hours
@@ -25,9 +25,7 @@ Our series:
 - Warnings Ignored
 - Sole Survivors
 
-Every Short is researched from museums, archives, historians, and official inquiries, and its sources are listed in its description. Told with respect for the people who lived through these events; no gore.
-
-Subscribe for a new story from history every day. For space, visit our sister channel, Universe Receipts.
+We treat the people in these events with respect; no gore. New stories follow source and visual review. Subscribe for more documented history. For space, visit our sister channel, Universe Receipts.
 
 Banner: paintings by Karl Bryullov and Willy Stöwer, U.S. Navy photo (public domain).
 ```
