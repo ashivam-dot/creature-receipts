@@ -1,15 +1,12 @@
 id: ep026
-title: Why History Forgot America's Deadliest Wildfire 😳
+title: 'Peshtigo: The Fire Chicago Overshadowed'
 series: The Last Hours
-description: Discover the true story of the 1871 Peshtigo fire, the deadliest wildfire in American history that was overshadowed
-  by the Great Chicago Fire.
+description: On October 8–9, 1871, southwest winds drove a firestorm through Peshtigo, Wisconsin, killing an estimated 1,200–2,500
+  people. The Great Chicago Fire burned the same night and drew much of the nation’s attention.
 sources:
-- https://en.wikipedia.org/wiki/Peshtigo_fire
-- https://www.missedhistory.com/article/peshtigo-fire-1871-deadliest-wildfire-america
 - https://climatology.nelson.wisc.edu/wisconsin-peshtigo-fire/
-- https://en.wikipedia.org/wiki/Great_Fires_of_1871
-- https://www.history.com/articles/peshtigo-fire-america-deadliest-wildfire
-- http://www.smithsonianmag.com/history/what-or-who-caused-the-great-chicago-fire-61481977/
+- https://peshtigofiremuseum.com/fire/chapter-3/
+- https://www.weather.gov/grb/peshtigofire
 hashtags:
 - '#history'
 - '#peshtigo'
@@ -21,34 +18,31 @@ tags:
 - Great Chicago Fire
 - Wisconsin history
 voice:
-  engine: gemini
-  voice: Charon
-  direction: 'Read the transcript below aloud as a gripping true-story narrator on a viral YouTube Short: fast and urgent,
-    about 170 words a minute, with only tiny pauses, a low, intense voice and rising tension that hits the last line hard.
-    Speak only the transcript.'
+  engine: kokoro
+  voice: am_fenrir
+  speed: 1.15
 beats:
-- text: Up to twenty-five hundred people vanished in a single fiery night.
+- text: Up to twenty-five hundred people died in the Peshtigo Fire.
   emphasis:
-  - twenty-five hundred people
-  - fiery night
+  - twenty-five hundred
   visual:
     source: url
-    url: https://upload.wikimedia.org/wikipedia/commons/9/94/Illustration_-_Peshtigo_Fire_in_WI%2C_10-8-1871_%2822139919004%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    url: https://upload.wikimedia.org/wikipedia/commons/0/0b/Bird%27s_eye_view_of_Peshtigo%2C_Wisconsin_Sept._1871._LOC_93681235.jpg
     credit:
-      source: Wikimedia Commons
-      title: Illustration - Peshtigo Fire in WI, 10-8-1871 (22139919004).jpg
-      credit: U.S. Forest Service- Pacific Northwest Region
+      source: Wikimedia Commons / Library of Congress
+      title: Bird's eye view of Peshtigo, Wisconsin Sept. 1871. LOC 93681235.jpg
+      credit: T.M. Fowler & Co.; Charles Shober & Co.; Chicago Lithographing Co.
       license: Public domain
-      url: https://commons.wikimedia.org/wiki/File:Illustration_-_Peshtigo_Fire_in_WI,_10-8-1871_(22139919004).jpg
+      url: https://commons.wikimedia.org/wiki/File:Bird's_eye_view_of_Peshtigo,_Wisconsin_Sept._1871._LOC_93681235.jpg
     fallbacks:
+    - card
     - color
     motion: pan_right
     focus_x: 0.5
     focus_y: 0.5
-- text: Severe drought gripped Wisconsin on October eighth, eighteen seventy one.
+- text: 'October eighth, eighteen seventy-one: Wisconsin''s forests were dry.'
   emphasis:
-  - Severe drought
-  - October eighth
+  - forests were dry
   sfx: whoosh
   visual:
     source: card
@@ -57,95 +51,84 @@ beats:
       big: October 8, 1871
       small: Wisconsin
     motion: zoom_in
-- text: A cold front created winds reaching one hundred ten miles per hour.
+- text: Strong southwest winds fanned smoldering fires across Wisconsin.
   emphasis:
-  - cold front
-  - one hundred ten miles per hour
+  - southwest winds
   sfx: whoosh
   visual:
     source: url
-    url: https://thumb.wikimedia.org/wikipedia/commons/thumb/3/37/Lick_Fire_on_the_Umatilla_National_Forest_burning_at_night.jpg/3840px-Lick_Fire_on_the_Umatilla_National_Forest_burning_at_night.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
+    url: https://upload.wikimedia.org/wikipedia/commons/e/e6/1871-peshtigo-fire-historical-events-u2.jpg
     credit:
       source: Wikimedia Commons
-      title: Lick Fire on the Umatilla National Forest burning at night.jpg
-      credit: U.S. Forest Service- Pacific Northwest Region
+      title: 1871-peshtigo-fire-historical-events-u2.jpg
+      credit: Unknown artist; contemporary American newspaper
       license: Public domain
-      url: https://commons.wikimedia.org/wiki/File:Lick_Fire_on_the_Umatilla_National_Forest_burning_at_night.jpg
+      url: https://commons.wikimedia.org/wiki/File:1871-peshtigo-fire-historical-events-u2.jpg
     fallbacks:
     - card
     - color
     motion: pan_right
     focus_x: 0.5
     focus_y: 0.5
-    card:
-      kind: fact
-      big: 110 mph
-      small: Wind speed
-- text: The blaze reached two thousand degrees Fahrenheit and vaporized entire forests.
+- text: A firestorm swallowed Peshtigo in less than two hours.
   emphasis:
-  - two thousand degrees
-  - vaporized entire forests
+  - less than two hours
   sfx: riser
   visual:
     source: card
     card:
       kind: fact
-      big: 2,000°F
-      small: Temperature
+      big: UNDER 2 HOURS
+      small: Peshtigo consumed
     motion: zoom_in
-- text: Father Peter Pernin survived by immersing himself in the freezing river.
+- text: Father Peter Pernin survived by sheltering in the river.
   emphasis:
-  - Father Peter Pernin
-  - freezing river
+  - Peter Pernin
   visual:
     source: url
-    url: https://upload.wikimedia.org/wikipedia/commons/1/13/Title_page_of_Pernin%2C_The_Finger_of_God_is_there%21.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    url: https://upload.wikimedia.org/wikipedia/commons/d/d4/The_Peshtigo_Fire_showing_people_seeking_refuge_in_the_Peshtigo_River.jpg
     credit:
       source: Wikimedia Commons
-      title: Title page of Pernin, The Finger of God is there!.jpg
-      credit: Peter Pernin
+      title: The Peshtigo Fire showing people seeking refuge in the Peshtigo River.jpg
+      credit: G. J. Tisdale; Harper’s Weekly, 1871
       license: Public domain
-      url: https://commons.wikimedia.org/wiki/File:Title_page_of_Pernin,_The_Finger_of_God_is_there!.jpg
+      url: https://commons.wikimedia.org/wiki/File:The_Peshtigo_Fire_showing_people_seeking_refuge_in_the_Peshtigo_River.jpg
     fallbacks:
-    - color
-    motion: pan_right
-    focus_x: 0.3
-    focus_y: 0.45
-    box:
-    - 0.1
-    - 0.2
-    - 0.5
-    - 0.85
-- text: This remains the deadliest wildfire in all of American history.
-  emphasis:
-  - deadliest wildfire
-  - American history
-  sfx: pop
-  pause_after: 0.4
-  visual:
-    source: url
-    url: https://www.artic.edu/iiif/2/9dc693e8-c887-690b-91f3-3719730b4efa/full/1686,/0/default.jpg
-    credit:
-      source: Art Institute of Chicago (CC0)
-      title: Cemetery, Cathcart's Hill
-      credit: 'Roger Fenton
-
-        English, 1819–1869'
-      license: CC0
-      url: https://www.artic.edu/artworks/123412
-    fallbacks:
+    - card
     - color
     motion: pan_left
     focus_x: 0.5
     focus_y: 0.5
-- text: Chicago erupted four hundred miles south that same night, casting these victims into shadow.
+- text: Only two buildings remained. It became America's deadliest wildfire.
   emphasis:
-  - Chicago erupted
-  sfx: whoosh
+  - Only two buildings
   visual:
-    reuse: 1
-    motion: zoom_out
+    source: card
+    card:
+      kind: fact
+      big: TWO BUILDINGS
+      small: Left standing in Peshtigo
+    motion: zoom_in
+- text: Chicago burned that same night and took the headlines.
+  emphasis:
+  - took the headlines
+  sfx: whoosh
+  pause_after: 0.4
+  visual:
+    source: url
+    url: https://upload.wikimedia.org/wikipedia/commons/a/a0/The_Great_fire_at_Chicago._Scene_in_Wells_Street_-_the_terrified_populace_in_front_of_the_Briggs_House%2C_which_has_just_caught_fire_-_from_a_sketch_by_our_special_artist._LCCN94501371.jpg
+    credit:
+      source: Wikimedia Commons
+      title: The Great fire at Chicago. Scene in Wells Street - the terrified populace in front of the Briggs House, which
+        has just caught fire - from a sketch by our special artist. LCCN94501371.jpg
+      credit: Library of Congress; 1871 wood engraving
+      license: Public domain
+      url: https://commons.wikimedia.org/wiki/File:The_Great_fire_at_Chicago._Scene_in_Wells_Street_-_the_terrified_populace_in_front_of_the_Briggs_House,_which_has_just_caught_fire_-_from_a_sketch_by_our_special_artist._LCCN94501371.jpg
+    fallbacks:
+    - card
+    - color
+    motion: pan_down
     focus_x: 0.5
     focus_y: 0.5
 depth_motion: true
-hook_text: 2,500 LIVES LOST
+hook_text: PESHTIGO BEFORE THE FIRE

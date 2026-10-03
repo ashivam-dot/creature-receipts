@@ -1,224 +1,145 @@
 {
   "viable": true,
-  "reason": "The provided sources contain ample verified facts to support a compelling 45-second script about the Peshtigo Fire.",
-  "story": "On the night of October 8, 1871, a booming Wisconsin lumber town called Peshtigo vanished in less than two hours. Following a severe summer drought and rampant land-clearing slash fires, an eastward-moving cold front brought hurricane-force winds that turned small fires into a monstrous firestorm. Generating temperatures of 2,000 degrees Fahrenheit and fierce updrafts, the blaze vaporized entire forests and caused buildings to literally explode. Hundreds of desperate residents plunged into the frigid Peshtigo River to escape the wall of flame, while others succumbed to smoke, drowning, or hypothermia. Between 1,200 and 2,500 people lost their lives, making it the deadliest wildfire in American history. Yet because the Great Chicago Fire erupted four hundred miles south on that exact same night, the apocalyptic inferno at Peshtigo was cast into historical shadow and largely forgotten.",
-  "angle": "It is the deadliest wildfire in American history, killing up to 2,500 people—at least five times the death toll of the Great Chicago Fire—yet it was almost entirely forgotten because it happened on the exact same night.",
+  "reason": "Direct Wisconsin State Climatology Office, Peshtigo Fire Museum, and National Weather Service hosted receipts support all seven spoken beats; a fresh render and human review remain required.",
+  "story": "On October 8–9, 1871, dry conditions and strong southwest winds fanned smoldering fires in northeastern Wisconsin. A firestorm consumed Peshtigo in less than two hours. Father Peter Pernin survived after taking refuge in the river, as described in his own account quoted by the local fire museum. Only two buildings remained. The Wisconsin State Climatology Office estimates 1,200–2,500 deaths and calls it the deadliest wildfire in U.S. history. The Great Chicago Fire burned on the same night and received far more lasting attention.",
+  "angle": "The deadliest wildfire in U.S. history consumed Peshtigo in less than two hours while Chicago burned that same night.",
   "claims": [
     {
-      "claim": "The Peshtigo Fire occurred on October 8, 1871.",
+      "claim": "The Wisconsin State Climatology Office estimates 1,200–2,500 deaths in the Peshtigo Fire.",
+      "sources": [
+        "S1"
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim": "The Peshtigo Fire occurred October 8–9, 1871, after a warm, dry period that reduced moisture in dead logs, branches, and brush.",
+      "sources": [
+        "S1"
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim": "A pressure difference generated strong southwest winds that fanned smoldering fires across Wisconsin and Michigan by evening.",
+      "sources": [
+        "S1"
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim": "A firestorm formed, and Peshtigo was consumed in less than two hours.",
+      "sources": [
+        "S1"
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim": "Father Peter Pernin survived after taking refuge in the river; his eyewitness account describes being in the river for a long time.",
+      "sources": [
+        "S2"
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim": "Only two buildings remained standing in Peshtigo after the fire.",
       "sources": [
         "S1",
+        "S2"
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim": "The Wisconsin State Climatology Office calls the Peshtigo Fire the deadliest wildfire in U.S. history.",
+      "sources": [
+        "S1"
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim": "The Great Chicago Fire burned the same night; a contemporary retrospective hosted by NWS says Chicago continued to attract headlines while Peshtigo received little notice outside the region.",
+      "sources": [
         "S2",
-        "S4",
-        "S5",
-        "S7"
-      ],
-      "confidence": "high"
-    },
-    {
-      "claim": "Peshtigo, Wisconsin had a pre-fire population of approximately 1,700 to 2,000 residents.",
-      "sources": [
-        "S1",
-        "S5",
-        "S7"
-      ],
-      "confidence": "high"
-    },
-    {
-      "claim": "The fire burned approximately 1.2 million acres of land.",
-      "sources": [
-        "S1",
-        "S4",
-        "S5",
-        "S7"
-      ],
-      "confidence": "high"
-    },
-    {
-      "claim": "The Peshtigo Fire is the deadliest wildfire in recorded American history.",
-      "sources": [
-        "S1",
-        "S4",
-        "S5",
-        "S7"
-      ],
-      "confidence": "high"
-    },
-    {
-      "claim": "The death toll is estimated between 1,500 and 2,500 people.",
-      "sources": [
-        "S1",
-        "S5",
-        "S7"
-      ],
-      "confidence": "medium"
-    },
-    {
-      "claim": "The Great Chicago Fire occurred on the exact same night, killing roughly 300 people and overshadowing Peshtigo in the national press.",
-      "sources": [
-        "S1",
-        "S3",
-        "S5"
-      ],
-      "confidence": "high"
-    },
-    {
-      "claim": "An eastward-moving cold front and pressure gradient created strong winds that merged slash-and-burn land management fires.",
-      "sources": [
-        "S1",
-        "S2",
-        "S4",
-        "S7"
-      ],
-      "confidence": "high"
-    },
-    {
-      "claim": "The firestorm reached temperatures of at least 2,000 degrees Fahrenheit and wind speeds of 110 miles per hour.",
-      "sources": [
-        "S1",
-        "S5"
-      ],
-      "confidence": "high"
-    },
-    {
-      "claim": "Many citizens sought refuge by immersing themselves in the Peshtigo River, where some tragically drowned or succumbed to hypothermia.",
-      "sources": [
-        "S1",
-        "S4",
-        "S5"
-      ],
-      "confidence": "high"
-    },
-    {
-      "claim": "An accurate death toll has never been definitively determined because all local records and many victims were completely reduced to ash.",
-      "sources": [
-        "S1",
-        "S5"
-      ],
-      "confidence": "high"
-    },
-    {
-      "claim": "Father Peter Pernin was a Catholic priest who survived the disaster by entering the river and later published a detailed eyewitness account.",
-      "sources": [
-        "S1",
-        "S5"
-      ],
-      "confidence": "high"
-    },
-    {
-      "claim": "In Door County, the community of Williamsonville was struck by a fire whirl, leaving only a handful of survivors from its residents.",
-      "sources": [
-        "S1",
-        "S2",
-        "S7"
+        "S3"
       ],
       "confidence": "high"
     }
   ],
   "disputed": [
-    "The exact death toll varies between estimates of 1,200 and 2,500 due to destroyed local records; scripts should attribute this as a range according to historical estimates.",
-    "A long-running speculation suggests the fires were ignited by fragments of Biela's Comet, but modern science and experts dispute this as unproven legend or hypothesis; scripts should present it only as speculation or leave it out."
+    "Neither the Wisconsin State Climatology Office nor the checked local sources establish the old spoken 110 mph wind or 2,000°F temperature. Both figures and their visual cards were removed.",
+    "The old narration said the river was freezing and Chicago was 400 miles south; these precise descriptions are not needed and have been removed.",
+    "The death toll is an estimate ranging from 1,200 to 2,500, not an exact count; the hook says “up to.”",
+    "The National Weather Service page republishes a Green Bay Press-Gazette retrospective with permission. Its Chicago-headlines observation is attributed to that retrospective, not independent NWS meteorological research."
   ],
   "visuals": [
     {
-      "subject": "Map of the Door Peninsula and Wisconsin showing the Peshtigo fire region",
+      "subject": "September 1871 Library of Congress bird’s-eye lithograph of Peshtigo before the fire",
       "queries": [
-        "Wisconsin map 1871",
-        "Door Peninsula map vintage"
+        "Peshtigo Wisconsin September 1871 bird eye view",
+        "LOC 93681235"
       ]
     },
     {
-      "subject": "Nineteenth-century lumber mill town and forest clearing operations",
+      "subject": "Designed October 8, 1871 dateline card",
       "queries": [
-        "19th century lumber camp Wisconsin",
-        "Logging Michigan 19th century"
+        "Peshtigo Wisconsin 1871",
+        "Wisconsin forests 1871"
       ]
     },
     {
-      "subject": "Father Peter Pernin, Catholic priest and eyewitness to the Peshtigo fire",
+      "subject": "Wood engraving of the 1871 Peshtigo Fire from a contemporary newspaper",
       "queries": [
-        "Catholic priest 19th century portrait",
-        "Father Peter Pernin"
+        "Peshtigo Fire 1871 engraving",
+        "1871 Peshtigo fire wood engraving"
       ]
     },
     {
-      "subject": "Newspaper front page from October 1871 covering the Great Chicago and Midwestern fires",
+      "subject": "Designed card: Peshtigo consumed in less than two hours",
       "queries": [
-        "Chicago Tribune front page October 1871",
-        "New York Herald October 10 1871"
+        "Peshtigo Fire 1871",
+        "Peshtigo firestorm"
       ]
     },
     {
-      "subject": "Historical engraving of a raging nineteenth-century forest firestorm",
+      "subject": "1871 Harper’s Weekly engraving of people sheltering in the Peshtigo River",
       "queries": [
-        "Great Peshtigo Fire engraving",
-        "Forest fire 19th century illustration"
+        "Peshtigo River fire 1871 engraving",
+        "Peter Pernin Peshtigo River"
       ]
     },
     {
-      "subject": "Remnants of the Peshtigo Fire Cemetery entered into the National Register of Historic Places",
+      "subject": "Designed fact card: only two buildings remained",
       "queries": [
-        "Peshtigo Fire Cemetery",
-        "Peshtigo Fire Museum"
+        "Peshtigo aftermath 1871",
+        "Peshtigo two buildings"
       ]
     },
     {
-      "subject": "Tornado Memorial County Park commemorating the Williamsonville fire whirl tragedy",
+      "subject": "1871 wood engraving of the Great Chicago Fire on Wells Street",
       "queries": [
-        "Tornado Memorial County Park Door County"
-      ]
-    },
-    {
-      "subject": "The National Shrine of Our Lady of Good Help in Champion, Wisconsin",
-      "queries": [
-        "National Shrine of Our Lady of Good Help Champion Wisconsin"
+        "Great Chicago Fire 1871 Wells Street engraving",
+        "Chicago Fire 1871 engraving"
       ]
     }
   ],
   "sources": [
     {
       "label": "S1",
-      "url": "https://en.wikipedia.org/wiki/Peshtigo_fire",
-      "title": "Peshtigo fire",
-      "site": "wikipedia.org"
-    },
-    {
-      "label": "S2",
-      "url": "https://en.wikipedia.org/wiki/Great_Fires_of_1871",
-      "title": "Great Fires of 1871",
-      "site": "wikipedia.org"
-    },
-    {
-      "label": "S3",
-      "url": "http://www.smithsonianmag.com/history/what-or-who-caused-the-great-chicago-fire-61481977/",
-      "title": "What (or Who) Caused the Great Chicago Fire?",
-      "site": "smithsonianmag.com"
-    },
-    {
-      "label": "S4",
-      "url": "https://www.history.com/articles/peshtigo-fire-america-deadliest-wildfire",
-      "title": "How the 1871 Peshtigo Fire Became America’s Deadliest Wildfire | HISTORY",
-      "site": "history.com"
-    },
-    {
-      "label": "S5",
-      "url": "https://www.missedhistory.com/article/peshtigo-fire-1871-deadliest-wildfire-america",
-      "title": "The Deadliest Wildfire in American History Happened the Same Night as the Great Chicago Fire | Missed History",
-      "site": "missedhistory.com"
-    },
-    {
-      "label": "S6",
-      "url": "https://www.nps.gov/jofl/faqs.htm",
-      "title": "Frequently Asked Questions - Johnstown Flood National Memorial (U.S. National Park Service)",
-      "site": "nps.gov"
-    },
-    {
-      "label": "S7",
       "url": "https://climatology.nelson.wisc.edu/wisconsin-peshtigo-fire/",
       "title": "The Peshtigo Fire: America’s Deadliest Wildfire",
       "site": "wisc.edu"
+    },
+    {
+      "label": "S2",
+      "url": "https://peshtigofiremuseum.com/fire/chapter-3/",
+      "title": "After the Fire",
+      "site": "peshtigofiremuseum.com"
+    },
+    {
+      "label": "S3",
+      "url": "https://www.weather.gov/grb/peshtigofire",
+      "title": "The Peshtigo Fire (Kim Estep, Green Bay Press-Gazette, reprinted with permission)",
+      "site": "weather.gov"
     }
   ],
-  "topic": "Peshtigo fire (1871): the deadliest wildfire in American history burned the same night as the Great Chicago Fire, and was nearly forgotten because of it",
+  "topic": "Peshtigo fire (1871): the deadliest U.S. wildfire burned the same night as the Great Chicago Fire",
   "series": "The Last Hours"
 }
