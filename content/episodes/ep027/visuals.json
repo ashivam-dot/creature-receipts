@@ -1,20 +1,23 @@
 [
   {
-    "source": "url",
-    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/69/View_of_a_drawing%29_%22The_Innocent_Cause-_or_the_Origin_of_Chicago_Fire%22_%28showing_Mrs._O%27Leary_and_her_cows%29_%28NYPL_b11707459-G90F182_013ZF%29.tiff/lossy-page1-1920px-View_of_a_drawing%29_%22The_Innocent_Cause-_or_the_Origin_of_Chicago_Fire%22_%28showing_Mrs._O%27Leary_and_her_cows%29_%28NYPL_b11707459-G90F182_013ZF%29.tiff.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "source": "file",
+    "path": "assets/innocent-cause-nypl-left-half.jpg",
     "credit": {
-      "source": "NYPL Digital Collections / Wikimedia Commons",
-      "title": "The Innocent Cause: or the Origin of Chicago Fire (stereograph)",
+      "source": "NYPL Digital Collections / Wikimedia Commons derivative",
+      "title": "The Innocent Cause: or the Origin of Chicago Fire (stereograph, one half)",
       "credit": "Copelin & Hine; scan by NYPL",
-      "license": "Public domain (US)",
-      "url": "https://digitalcollections.nypl.org/items/8e370600-c53b-012f-ff21-58d385a7bc34"
+      "license": "Public domain",
+      "url": "https://commons.wikimedia.org/wiki/File:View_of_a_drawing)_%22The_Innocent_Cause-_or_the_Origin_of_Chicago_Fire%22_(showing_Mrs._O%27Leary_and_her_cows)_(NYPL_b11707459-G90F182_013ZF).tiff"
     },
-    "fallbacks": [
-      "color"
-    ],
     "motion": "pan_right",
-    "focus_x": 0.5,
+    "focus_x": 0.3,
     "focus_y": 0.5,
+    "crop": [
+      0.1839,
+      0.107,
+      0.9066,
+      1.0
+    ],
     "_choice": {
       "key": "commons:File:View of a drawing) \"The Innocent Cause- or the Origin of Chicago Fire\" (showing Mrs. O'Leary and her cows) (NYPL b11707459-G90F182 013ZF).tiff",
       "origin": "commons",
@@ -24,25 +27,18 @@
       "height": 1962,
       "license": "Public domain",
       "license_url": null,
-      "artist": "Scan by NYPL",
-      "date": "1871",
+      "artist": "Copelin & Hine; scan by NYPL",
+      "date": "1871 (NYPL catalog); card printed with an 1872 copyright notice",
       "year": 1871,
       "page": "https://commons.wikimedia.org/wiki/File:View_of_a_drawing)_%22The_Innocent_Cause-_or_the_Origin_of_Chicago_Fire%22_(showing_Mrs._O%27Leary_and_her_cows)_(NYPL_b11707459-G90F182_013ZF).tiff",
-      "route": "category",
-      "original": "https://upload.wikimedia.org/wikipedia/commons/6/69/View_of_a_drawing%29_%22The_Innocent_Cause-_or_the_Origin_of_Chicago_Fire%22_%28showing_Mrs._O%27Leary_and_her_cows%29_%28NYPL_b11707459-G90F182_013ZF%29.tiff?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-      "historical": 0.99,
-      "match": 0.0
+      "route": "manual rights review",
+      "original": "https://upload.wikimedia.org/wikipedia/commons/6/69/View_of_a_drawing%29_%22The_Innocent_Cause-_or_the_Origin_of_Chicago_Fire%22_%28showing_Mrs._O%27Leary_and_her_cows%29_%28NYPL_b11707459-G90F182_013ZF%29.tiff",
+      "institution_record": "https://digitalcollections.nypl.org/items/510d47e0-5e56-a3d9-e040-e00a18064a99"
     },
-    "_fit": "illustrative period art; cropped to one stereograph view",
-    "_shows": "The cow legend in a period stereograph; not evidence of the fire cause or a portrait of Catherine O’Leary",
+    "_fit": "illustrative period art; one stereograph half, cropped to the cows",
+    "_shows": "The cow legend in a period stereograph caricature; not evidence of the fire cause or a portrait of Catherine O’Leary",
     "_alternates": [],
-    "crop": [
-      0.05,
-      0.2,
-      0.5,
-      0.85
-    ],
-    "_provenance_note": "NYPL catalogs this stereograph as issued in 1871; the photographed card carries an 1872 copyright notice. NYPL says the item is public domain under US law."
+    "_provenance_note": "assets/innocent-cause-nypl-left-half.source.json"
   },
   {
     "source": "url",
@@ -128,60 +124,67 @@
     ]
   },
   {
-    "source": "url",
-    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3f/West_entrance_to_Court_House._%2821462112062%29.jpg/960px-West_entrance_to_Court_House._%2821462112062%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "source": "file",
+    "path": "assets/chicago-ruins-1871-clark-nby1495.jpg",
     "credit": {
-      "source": "Wikimedia Commons",
-      "title": "West entrance to Court House. (21462112062).jpg",
-      "credit": "SMU Central University Libraries",
-      "license": "No restrictions",
-      "url": "https://commons.wikimedia.org/wiki/File:West_entrance_to_Court_House._(21462112062).jpg"
+      "source": "Newberry Library / Wikimedia Commons",
+      "title": "Chicago Fire of 1871: From Michigan Ave. Hotel North from Congress St.",
+      "credit": "C. R. Clark; Newberry Library",
+      "license": "Public domain",
+      "url": "https://commons.wikimedia.org/wiki/File:Chicago_Fire_of_1871,_From_Michigan_Ave._Hotel_North_from_Congress_St._(NBY_1495).jpg"
     },
-    "fallbacks": [
-      "card",
-      "color"
-    ],
+    "label": "RUINS • 1871 PHOTO",
     "motion": "pan_right",
     "focus_x": 0.5,
     "focus_y": 0.5,
+    "crop": [
+      0.22,
+      0.28,
+      0.75,
+      0.95
+    ],
     "_choice": {
-      "key": "commons:File:West entrance to Court House. (21462112062).jpg",
+      "key": "commons:File:Chicago Fire of 1871, From Michigan Ave. Hotel North from Congress St. (NBY 1495).jpg",
       "origin": "commons",
-      "file": "File:West entrance to Court House. (21462112062).jpg",
-      "title": "West entrance to Court House. (21462112062).jpg",
-      "width": 1000,
-      "height": 518,
-      "license": "No restrictions",
-      "license_url": "https://www.flickr.com/commons/usage/",
-      "artist": "SMU Central University Libraries",
-      "date": "Taken in 1871",
+      "file": "File:Chicago Fire of 1871, From Michigan Ave. Hotel North from Congress St. (NBY 1495).jpg",
+      "title": "Chicago Fire of 1871, From Michigan Ave. Hotel North from Congress St. (NBY 1495).jpg",
+      "width": 3498,
+      "height": 3600,
+      "license": "Public domain",
+      "license_url": null,
+      "artist": "Clark, C. R. (Charles R.)",
+      "date": "1871",
       "year": 1871,
-      "page": "https://commons.wikimedia.org/wiki/File:West_entrance_to_Court_House._(21462112062).jpg",
-      "route": "search",
-      "original": "https://upload.wikimedia.org/wikipedia/commons/3/3f/West_entrance_to_Court_House._%2821462112062%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-      "historical": 0.999,
-      "match": 0.269
+      "page": "https://commons.wikimedia.org/wiki/File:Chicago_Fire_of_1871,_From_Michigan_Ave._Hotel_North_from_Congress_St._(NBY_1495).jpg",
+      "route": "manual rights review",
+      "original": "https://upload.wikimedia.org/wikipedia/commons/0/0f/Chicago_Fire_of_1871%2C_From_Michigan_Ave._Hotel_North_from_Congress_St._%28NBY_1495%29.jpg",
+      "institution_record": "https://collections.carli.illinois.edu/digital/collection/nby_chicago/id/1495"
     },
-    "_fit": "exact",
-    "_shows": "Stereograph of the ruined west entrance of the Cook County Courthouse",
-    "_alternates": []
+    "_fit": "exact: an 1871 photograph of burned Chicago blocks",
+    "_shows": "C. R. Clark's 1871 photograph north from Congress Street: gutted churches and buildings across the burned district",
+    "_alternates": [],
+    "_provenance_note": "assets/chicago-ruins-1871-clark-nby1495.source.json"
   },
   {
-    "source": "url",
-    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/69/View_of_a_drawing%29_%22The_Innocent_Cause-_or_the_Origin_of_Chicago_Fire%22_%28showing_Mrs._O%27Leary_and_her_cows%29_%28NYPL_b11707459-G90F182_013ZF%29.tiff/lossy-page1-1920px-View_of_a_drawing%29_%22The_Innocent_Cause-_or_the_Origin_of_Chicago_Fire%22_%28showing_Mrs._O%27Leary_and_her_cows%29_%28NYPL_b11707459-G90F182_013ZF%29.tiff.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "source": "file",
+    "path": "assets/innocent-cause-nypl-left-half.jpg",
     "credit": {
-      "source": "Wikimedia Commons",
-      "title": "View of a drawing) \"The Innocent Cause- or the Origin of Chicago Fire\" (showing Mrs. O'Leary and her cows) (NYPL b11707459-G90F182 013ZF).tiff",
-      "credit": "Scan by NYPL",
+      "source": "NYPL Digital Collections / Wikimedia Commons derivative",
+      "title": "The Innocent Cause: or the Origin of Chicago Fire (stereograph, one half)",
+      "credit": "Copelin & Hine; scan by NYPL",
       "license": "Public domain",
       "url": "https://commons.wikimedia.org/wiki/File:View_of_a_drawing)_%22The_Innocent_Cause-_or_the_Origin_of_Chicago_Fire%22_(showing_Mrs._O%27Leary_and_her_cows)_(NYPL_b11707459-G90F182_013ZF).tiff"
     },
-    "fallbacks": [
-      "color"
-    ],
+    "label": "LEGEND ILLUSTRATION",
     "motion": "pan_left",
-    "focus_x": 0.5,
+    "focus_x": 0.6,
     "focus_y": 0.5,
+    "crop": [
+      0.4673,
+      0.107,
+      1.0,
+      1.0
+    ],
     "_choice": {
       "key": "commons:File:View of a drawing) \"The Innocent Cause- or the Origin of Chicago Fire\" (showing Mrs. O'Leary and her cows) (NYPL b11707459-G90F182 013ZF).tiff",
       "origin": "commons",
@@ -191,19 +194,18 @@
       "height": 1962,
       "license": "Public domain",
       "license_url": null,
-      "artist": "Scan by NYPL",
-      "date": "1871",
+      "artist": "Copelin & Hine; scan by NYPL",
+      "date": "1871 (NYPL catalog); card printed with an 1872 copyright notice",
       "year": 1871,
       "page": "https://commons.wikimedia.org/wiki/File:View_of_a_drawing)_%22The_Innocent_Cause-_or_the_Origin_of_Chicago_Fire%22_(showing_Mrs._O%27Leary_and_her_cows)_(NYPL_b11707459-G90F182_013ZF).tiff",
-      "route": "category",
-      "original": "https://upload.wikimedia.org/wikipedia/commons/6/69/View_of_a_drawing%29_%22The_Innocent_Cause-_or_the_Origin_of_Chicago_Fire%22_%28showing_Mrs._O%27Leary_and_her_cows%29_%28NYPL_b11707459-G90F182_013ZF%29.tiff?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-      "historical": 0.99,
-      "match": 0.0
+      "route": "manual rights review",
+      "original": "https://upload.wikimedia.org/wikipedia/commons/6/69/View_of_a_drawing%29_%22The_Innocent_Cause-_or_the_Origin_of_Chicago_Fire%22_%28showing_Mrs._O%27Leary_and_her_cows%29_%28NYPL_b11707459-G90F182_013ZF%29.tiff",
+      "institution_record": "https://digitalcollections.nypl.org/items/510d47e0-5e56-a3d9-e040-e00a18064a99"
     },
-    "_fit": "exact",
-    "_shows": "The Innocent Cause or the Origin of Chicago Fire illustration",
+    "_fit": "illustrative period art; same stereograph half, cropped to the woman the legend blamed",
+    "_shows": "The caricature's sprawled milkmaid figure, labeled LEGEND ILLUSTRATION; not a portrait of Catherine O’Leary",
     "_alternates": [],
-    "label": "LEGEND ILLUSTRATION"
+    "_provenance_note": "assets/innocent-cause-nypl-left-half.source.json"
   },
   {
     "source": "card",

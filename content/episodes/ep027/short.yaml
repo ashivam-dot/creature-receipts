@@ -9,6 +9,7 @@ sources:
 - https://greatchicagofire.org/ruined-city/
 - https://cdn-web-main.bibliocms.com/wp-content/uploads/sites/3/2014/09/counciljournal10281997.pdf
 - https://www.chipublib.org/blogs/post/whodunit-the-mystery-of-mrs-olearys-cow/
+- https://www.dnainfo.com/chicago/20151006/downtown/5-things-you-probably-didnt-know-about-great-chicago-fire/
 hashtags:
 - '#history'
 - '#chicagofire'
@@ -29,24 +30,22 @@ beats:
   emphasis:
   - no proven cause
   visual:
-    source: url
-    url: https://thumb.wikimedia.org/wikipedia/commons/thumb/6/69/View_of_a_drawing%29_%22The_Innocent_Cause-_or_the_Origin_of_Chicago_Fire%22_%28showing_Mrs._O%27Leary_and_her_cows%29_%28NYPL_b11707459-G90F182_013ZF%29.tiff/lossy-page1-1920px-View_of_a_drawing%29_%22The_Innocent_Cause-_or_the_Origin_of_Chicago_Fire%22_%28showing_Mrs._O%27Leary_and_her_cows%29_%28NYPL_b11707459-G90F182_013ZF%29.tiff.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
+    source: file
+    path: assets/innocent-cause-nypl-left-half.jpg
     credit:
-      source: NYPL Digital Collections / Wikimedia Commons
-      title: 'The Innocent Cause: or the Origin of Chicago Fire (stereograph)'
+      source: NYPL Digital Collections / Wikimedia Commons derivative
+      title: 'The Innocent Cause: or the Origin of Chicago Fire (stereograph, one half)'
       credit: Copelin & Hine; scan by NYPL
-      license: Public domain (US)
-      url: https://digitalcollections.nypl.org/items/8e370600-c53b-012f-ff21-58d385a7bc34
-    fallbacks:
-    - color
+      license: Public domain
+      url: https://commons.wikimedia.org/wiki/File:View_of_a_drawing)_%22The_Innocent_Cause-_or_the_Origin_of_Chicago_Fire%22_(showing_Mrs._O%27Leary_and_her_cows)_(NYPL_b11707459-G90F182_013ZF).tiff
     motion: pan_right
-    focus_x: 0.5
+    focus_x: 0.3
     focus_y: 0.5
     crop:
-    - 0.05
-    - 0.20
-    - 0.50
-    - 0.85
+    - 0.1839
+    - 0.107
+    - 0.9066
+    - 1.0
 - text: In 1871, flames began near Catherine O’Leary’s barn.
   emphasis:
   - Catherine O’Leary’s barn
@@ -74,39 +73,44 @@ beats:
   emphasis:
   - hundred thousand
   visual:
-    source: url
-    url: https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3f/West_entrance_to_Court_House._%2821462112062%29.jpg/960px-West_entrance_to_Court_House._%2821462112062%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
+    source: file
+    path: assets/chicago-ruins-1871-clark-nby1495.jpg
     credit:
-      source: Wikimedia Commons
-      title: West entrance to Court House. (21462112062).jpg
-      credit: SMU Central University Libraries
-      license: No restrictions
-      url: https://commons.wikimedia.org/wiki/File:West_entrance_to_Court_House._(21462112062).jpg
-    fallbacks:
-    - card
-    - color
+      source: Newberry Library / Wikimedia Commons
+      title: 'Chicago Fire of 1871: From Michigan Ave. Hotel North from Congress St.'
+      credit: C. R. Clark; Newberry Library
+      license: Public domain
+      url: https://commons.wikimedia.org/wiki/File:Chicago_Fire_of_1871,_From_Michigan_Ave._Hotel_North_from_Congress_St._(NBY_1495).jpg
+    label: RUINS • 1871 PHOTO
     motion: pan_right
     focus_x: 0.5
     focus_y: 0.5
+    crop:
+    - 0.22
+    - 0.28
+    - 0.75
+    - 0.95
 - text: O’Leary swore she was asleep when it began.
   emphasis:
   - asleep
   visual:
-    source: url
-    url: https://thumb.wikimedia.org/wikipedia/commons/thumb/6/69/View_of_a_drawing%29_%22The_Innocent_Cause-_or_the_Origin_of_Chicago_Fire%22_%28showing_Mrs._O%27Leary_and_her_cows%29_%28NYPL_b11707459-G90F182_013ZF%29.tiff/lossy-page1-1920px-View_of_a_drawing%29_%22The_Innocent_Cause-_or_the_Origin_of_Chicago_Fire%22_%28showing_Mrs._O%27Leary_and_her_cows%29_%28NYPL_b11707459-G90F182_013ZF%29.tiff.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
+    source: file
+    path: assets/innocent-cause-nypl-left-half.jpg
     credit:
-      source: Wikimedia Commons
-      title: View of a drawing) "The Innocent Cause- or the Origin of Chicago Fire" (showing Mrs. O'Leary and her cows) (NYPL
-        b11707459-G90F182 013ZF).tiff
-      credit: Scan by NYPL
+      source: NYPL Digital Collections / Wikimedia Commons derivative
+      title: 'The Innocent Cause: or the Origin of Chicago Fire (stereograph, one half)'
+      credit: Copelin & Hine; scan by NYPL
       license: Public domain
       url: https://commons.wikimedia.org/wiki/File:View_of_a_drawing)_%22The_Innocent_Cause-_or_the_Origin_of_Chicago_Fire%22_(showing_Mrs._O%27Leary_and_her_cows)_(NYPL_b11707459-G90F182_013ZF).tiff
-    fallbacks:
-    - color
     label: LEGEND ILLUSTRATION
     motion: pan_left
-    focus_x: 0.5
+    focus_x: 0.6
     focus_y: 0.5
+    crop:
+    - 0.4673
+    - 0.107
+    - 1.0
+    - 1.0
 - text: The official inquiry found no proof against her.
   emphasis:
   - no proof
@@ -117,7 +121,7 @@ beats:
       big: NO PROOF
       small: 1871 official inquiry
     motion: zoom_in
-- text: Years later, Michael Ahern boasted that he and others invented the cow story.
+- text: Forty years later, reporter Michael Ahern boasted that he and others invented the cow story.
   emphasis:
   - Ahern boasted
   - he and others
@@ -128,10 +132,10 @@ beats:
     motion: zoom_out
     focus_x: 0.5
     focus_y: 0.5
-- text: Chicago’s council exonerated her in 1997.
+- text: In 1997, Chicago’s council exonerated her and her cow.
   emphasis:
   - exonerated
-  - '1997'
+  - her cow
   sfx: pop
   pause_after: 0.4
   visual:
