@@ -32,17 +32,24 @@ beats:
   - fog
   visual:
     source: url
-    url: https://upload.wikimedia.org/wikipedia/commons/8/88/Smoke_arising_from_Empire_State_Building_after_crash_%281945_INP_press_photo%29.jpg
+    url: https://upload.wikimedia.org/wikipedia/commons/7/71/Empire_State_Building_on_fire_1945_by_INP.jpg
     credit:
       source: Wikimedia Commons
-      title: Smoke arising from Empire State Building after crash (1945 INP press photo).jpg
+      title: Empire State Building on fire 1945 by INP.jpg
       credit: International News Photos
       license: Public domain
-      url: https://commons.wikimedia.org/wiki/File:Smoke_arising_from_Empire_State_Building_after_crash_(1945_INP_press_photo).jpg
+      url: https://commons.wikimedia.org/wiki/File:Empire_State_Building_on_fire_1945_by_INP.jpg
     fallbacks:
     - card
     - color
     motion: zoom_out
+    camera_move:
+    - 1.1
+    - 1.12
+    - 0.5
+    - 0.5
+    - 0.75
+    - 0.1
     focus_x: 0.5
     focus_y: 0.5
     label: EMPIRE STATE CRASH • JUL 28, 1945
@@ -66,6 +73,13 @@ beats:
     - card
     - color
     motion: pan_left
+    camera_move:
+    - 1.12
+    - 1.12
+    - 0.85
+    - 0.15
+    - 0.5
+    - 0.5
     focus_x: 0.5
     focus_y: 0.5
     card:
@@ -80,34 +94,48 @@ beats:
   sfx: whoosh
   visual:
     source: url
-    url: https://thumb.wikimedia.org/wikipedia/commons/thumb/7/71/Empire_State_Building_on_fire_1945_by_INP.jpg/1920px-Empire_State_Building_on_fire_1945_by_INP.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
+    url: https://upload.wikimedia.org/wikipedia/commons/0/05/After_Army_bomber_rammed_Empire_State_Building_%281945_INP_press_photo%29.jpg
     credit:
       source: Wikimedia Commons
-      title: Empire State Building on fire 1945 by INP.jpg
-      credit: International News Photos
+      title: After Army bomber rammed Empire State Building (1945 INP press photo).jpg
+      credit: International News Photo
       license: Public domain
-      url: https://commons.wikimedia.org/wiki/File:Empire_State_Building_on_fire_1945_by_INP.jpg
+      url: https://commons.wikimedia.org/wiki/File:After_Army_bomber_rammed_Empire_State_Building_(1945_INP_press_photo).jpg
     fallbacks:
     - card
     - color
     motion: pan_down
+    camera_move:
+    - 1.0
+    - 1.12
+    - 0.5
+    - 0.5
+    - 0.62
+    - 0.18
     focus_x: 0.5
     focus_y: 0.5
     card:
       kind: fact
       big: 200 MPH
       small: B-25 Impact
-    label: CRASH AFTERMATH • JUL 28, 1945
+    label: INTERIOR WRECKAGE • JUL 28, 1945
 - text: One engine fell down an elevator shaft amid the wreckage.
   emphasis:
   - engine
   - elevator shaft
   visual:
     reuse: 3
-    motion: zoom_in
+    motion: pan_down
+    camera_move:
+    - 1.12
+    - 1.12
+    - 0.5
+    - 0.5
+    - 0.08
+    - 0.92
     focus_x: 0.5
     focus_y: 0.5
-    label: CRASH AFTERMATH • JUL 28, 1945
+    label: INTERIOR WRECKAGE • JUL 28, 1945
 - text: Among the injured was elevator operator Betty Lou Oliver.
   emphasis:
   - Betty Lou Oliver
@@ -123,6 +151,13 @@ beats:
     fallbacks:
     - color
     motion: pan_right
+    camera_move:
+    - 1.1
+    - 1.12
+    - 0.18
+    - 0.82
+    - 0.5
+    - 0.5
     focus_x: 0.5
     focus_y: 0.5
     label: UNIDENTIFIED CRASH CASUALTY
@@ -143,6 +178,13 @@ beats:
     - card
     - color
     motion: zoom_in
+    camera_move:
+    - 1.12
+    - 1.12
+    - 0.5
+    - 0.5
+    - 0.08
+    - 0.92
     focus_x: 0.5
     focus_y: 0.5
     card:
@@ -158,6 +200,13 @@ beats:
   visual:
     reuse: 6
     motion: zoom_out
+    camera_move:
+    - 1.12
+    - 1.0
+    - 0.5
+    - 0.5
+    - 0.72
+    - 0.5
     focus_x: 0.5
     focus_y: 0.5
     label: BUILDING WRECKAGE • 1945

@@ -39,6 +39,10 @@ class Visual(_Model):
     card: Card | None = None
     color: str = "#101820"
     motion: Motion = "zoom_in"
+    # Optional authored camera path for an event whose action has a meaningful direction. Values are
+    # [start zoom, end zoom, start x, end x, start y, end y]; x/y run 0 to 1 across the overscan room.
+    # The named motion remains as a readable fallback for older renderers and stock-video visuals.
+    camera_move: list[float] = []
     # Which part of the image the vertical crop keeps: 0 is the left or top edge, 1 the right or bottom.
     focus_x: float = Field(0.5, ge=0, le=1)
     focus_y: float = Field(0.5, ge=0, le=1)
@@ -57,6 +61,12 @@ class Visual(_Model):
             b = getattr(self, name)
             if b and not (len(b) == 4 and 0 <= b[0] < b[2] <= 1 and 0 <= b[1] < b[3] <= 1):
                 raise ValueError(f"visual.{name} must be [left, top, right, bottom] within 0 to 1, got {b}")
+        if self.camera_move:
+            if len(self.camera_move) != 6:
+                raise ValueError("visual.camera_move must contain [z0, z1, x0, x1, y0, y1]")
+            z0, z1, *positions = self.camera_move
+            if not (1 <= z0 <= 1.12 and 1 <= z1 <= 1.12 and all(0 <= value <= 1 for value in positions)):
+                raise ValueError("visual.camera_move zooms must be 1 to 1.12 and x/y positions must be 0 to 1")
         return self
 
 

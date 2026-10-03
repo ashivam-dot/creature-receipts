@@ -114,6 +114,9 @@ def _plan(index: int, beat: Beat, asset: visuals.Asset, start: int, end: int, wo
         plate = plates.designed(visual.card, seed=f"{index}:{visual.card.big}")
         return [{"kind": "designed", "plate": plate, "move": MOVES["zoom_in"], "frames": end - start}]
     if visual.reuse and first_plate:
+        if visual.camera_move:
+            return [{"kind": first_plate["kind"], "plate": first_plate["plate"], "frames": end - start,
+                     "move": tuple(visual.camera_move)}]
         # The loop line returns to the hook's first framing, ending where the Short begins.
         z0, _, x0, _, y0, _ = first_plate["move"]
         return [{"kind": first_plate["kind"], "plate": first_plate["plate"], "frames": end - start,
@@ -124,7 +127,8 @@ def _plan(index: int, beat: Beat, asset: visuals.Asset, start: int, end: int, wo
     focus = (visual.focus_x, visual.focus_y)
     kind = plates.layout(image)
     wide = plates.cover(image, focus) if kind == "cover" else plates.card(image, focus, plates.tilt_for(index))
-    wide_move = MOVES[visual.motion if kind == "cover" else ("zoom_in" if index % 2 == 0 else "zoom_out")]
+    default_motion = visual.motion if kind == "cover" else ("zoom_in" if index % 2 == 0 else "zoom_out")
+    wide_move = tuple(visual.camera_move) if visual.camera_move else MOVES[default_motion]
     close = None
     if visual.box and seconds >= DETAIL_SECONDS:
         close = ("detail", plates.detail(image, visual.box))
@@ -266,7 +270,8 @@ def make_short(spec_path: Path, out: Path | None = None) -> Path:
                 _still_clip(shot["plate"], shot["frames"], shot["move"], clip)
             clips.append(clip)
             made.append({"start": round(at / FPS, 3), "end": round((at + shot["frames"]) / FPS, 3), "kind": shot["kind"],
-                         "motion": "depth" if deep else "camera"})
+                         "motion": "depth" if deep else "camera",
+                         "camera_move": [round(value, 4) for value in shot["move"]]})
             at += shot["frames"]
         beat_shots.append(made)
     first_shots.clear()
