@@ -1,10 +1,10 @@
-"""Research a topic from pages we actually read: its Wikipedia articles, the pages they cite, and web search
-results. Gemini builds the claims table from those texts alone, and every claim needs two different sites."""
+"""Research from fetched pages. Keep a claim only with two independently matched source quotes."""
 
 from __future__ import annotations
 
 import logging
 import re
+import unicodedata
 import urllib.parse
 from dataclasses import dataclass
 
@@ -214,9 +214,12 @@ RESEARCH_SCHEMA = {
                 "properties": {
                     "claim": {"type": "string"},
                     "sources": {"type": "array", "items": {"type": "string"}},
+                    "evidence": {"type": "array", "items": {"type": "object", "properties": {
+                        "source": {"type": "string"}, "quote": {"type": "string"}},
+                        "required": ["source", "quote"]}},
                     "confidence": {"type": "string", "enum": ["high", "medium"]},
                 },
-                "required": ["claim", "sources", "confidence"],
+                "required": ["claim", "sources", "evidence", "confidence"],
             },
         },
         "disputed": {"type": "array", "items": {"type": "string"}},
@@ -241,8 +244,10 @@ Topic: {topic}
 Series: {series}
 
 The sources below are the only ones you may use. Do not add anything you know from elsewhere. A claim
-counts only if at least two sources from different sites state it; cite every source that states it by its
-label. Wikipedia is one site.
+counts only if at least two sources from different sites state it. For each claim, include `sources` and
+`evidence`: at least two source labels with a short, exact quote copied verbatim from each labelled source
+text. Quotes are checked against the fetched page text; paraphrases and invented quotes are rejected.
+If a claim has no matching quotes from two different sites, omit it. Wikipedia is one site.
 
 Return:
 - viable: false if these sources can't support a surprising 45-second story with at least 10 claims that
@@ -250,8 +255,8 @@ Return:
 - story: the true story in about 150 plain words.
 - angle: the single most surprising true fact, the one a viewer would stop scrolling for.
 - claims: 12 to 24 short, atomic facts a script could use (who, what, when, where, numbers, outcomes, the
-  twist), each with its source labels and confidence (high when the sources agree plainly, medium when
-  their wording differs). Leave out anything only one site states, and legends presented as fact.
+  twist), each with its source labels, evidence quotes, and confidence (high when the sources agree plainly,
+  medium when their wording differs). Leave out anything only one site states, and legends presented as fact.
 - disputed: details the sources disagree on or treat as legend, and how a script should handle each
   (leave out, or attribute: "according to one account").
 - visuals: 8 to 14 things a viewer could see (period photographs, paintings, engravings, and newspaper
@@ -265,8 +270,32 @@ Sources:
 """
 
 
+def _quote_key(text: str) -> str:
+    """Keep words and numbers while tolerating page whitespace and typographic punctuation."""
+    normalized = unicodedata.normalize("NFKC", text).casefold()
+    return " ".join("".join(char if char.isalnum() else " " for char in normalized).split())
+
+
+def _matched_evidence(claim: dict, by_label: dict[str, Source]) -> list[dict]:
+    """Reject source labels that the model listed without quoting the fetched text."""
+    cited = set(re.findall(r"S\d+", " ".join(claim.get("sources", [])).upper()))
+    verified = []
+    for item in claim.get("evidence", []):
+        label = re.search(r"S\d+", str(item.get("source", "")).upper())
+        label = label.group() if label else None
+        source = by_label.get(label)
+        quote = str(item.get("quote", "")).strip()
+        key = _quote_key(quote)
+        if label not in cited or not source or len(key) < 20 or len(key.split()) < 4:
+            continue
+        if key not in _quote_key(source.text) or any(e["source"] == label for e in verified):
+            continue
+        verified.append({"source": label, "quote": quote})
+    return verified
+
+
 def research(topic: str, series: str) -> dict:
-    """The claims table for a topic, with only two-site claims kept, plus the sources it cites."""
+    """The claims table with exact evidence from at least two distinct fetched sites."""
     sources = gather(topic)
     if len(sources) < 2:
         return {"viable": False, "reason": "fewer than two readable sources", "claims": [], "sources": []}
@@ -276,21 +305,20 @@ def research(topic: str, series: str) -> dict:
     by_label = {s.label: s for s in sources}
     kept = []
     for claim in found.get("claims", []):
-        # Backup models cite as "[S1]", "S1, S3", or "S1 (Wikipedia)".
-        cited = re.findall(r"S\d+", " ".join(claim["sources"]).upper())
-        labels = [label for label in dict.fromkeys(cited) if label in by_label]
+        evidence = _matched_evidence(claim, by_label)
+        labels = [item["source"] for item in evidence]
         if len({by_label[label].site for label in labels}) >= 2:
-            kept.append({**claim, "sources": labels})
+            kept.append({**claim, "sources": labels, "evidence": evidence})
     dropped = len(found.get("claims", [])) - len(kept)
     if dropped:
-        log.info("dropped %d claims without two different sites", dropped)
+        log.info("dropped %d claims without matched quotes from two different sites", dropped)
     if not kept and len(found.get("claims", [])) >= 8:
         # Every claim lost its citations: the answer is malformed, not the topic weak. A later run asks again.
-        raise RuntimeError(f"research answer cited no usable sources ({llm.answered_by()}); asking again next run")
+        raise RuntimeError(f"research answer supplied no usable two-site quotes ({llm.answered_by()}); asking again next run")
     found["claims"] = kept
     if found.get("viable") and len(kept) < 8:
         found["viable"] = False
-        found["reason"] = f"only {len(kept)} claims have two different sites"
+        found["reason"] = f"only {len(kept)} claims have verified quotes from two different sites"
     found["sources"] = [{"label": s.label, "url": s.url, "title": s.title, "site": s.site} for s in sources]
     found["topic"], found["series"] = topic, series
     return found
