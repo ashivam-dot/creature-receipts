@@ -30,18 +30,23 @@ beats:
   - no proven cause
   visual:
     source: url
-    url: https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3f/Mrs_OLeary%27s_cow.jpg/1920px-Mrs_OLeary%27s_cow.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
+    url: https://thumb.wikimedia.org/wikipedia/commons/thumb/6/69/View_of_a_drawing%29_%22The_Innocent_Cause-_or_the_Origin_of_Chicago_Fire%22_%28showing_Mrs._O%27Leary_and_her_cows%29_%28NYPL_b11707459-G90F182_013ZF%29.tiff/lossy-page1-1920px-View_of_a_drawing%29_%22The_Innocent_Cause-_or_the_Origin_of_Chicago_Fire%22_%28showing_Mrs._O%27Leary_and_her_cows%29_%28NYPL_b11707459-G90F182_013ZF%29.tiff.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
     credit:
-      source: Wikimedia Commons
-      title: Mrs OLeary's cow.jpg
-      credit: AnonymousUnknown author
-      license: Public domain
-      url: https://commons.wikimedia.org/wiki/File:Mrs_OLeary%27s_cow.jpg
+      source: NYPL Digital Collections / Wikimedia Commons
+      title: 'The Innocent Cause: or the Origin of Chicago Fire (stereograph)'
+      credit: Copelin & Hine; scan by NYPL
+      license: Public domain (US)
+      url: https://digitalcollections.nypl.org/items/8e370600-c53b-012f-ff21-58d385a7bc34
     fallbacks:
     - color
     motion: pan_right
     focus_x: 0.5
     focus_y: 0.5
+    crop:
+    - 0.05
+    - 0.20
+    - 0.50
+    - 0.85
 - text: In 1871, flames began near Catherine O’Leary’s barn.
   emphasis:
   - Catherine O’Leary’s barn
@@ -98,6 +103,7 @@ beats:
       url: https://commons.wikimedia.org/wiki/File:View_of_a_drawing)_%22The_Innocent_Cause-_or_the_Origin_of_Chicago_Fire%22_(showing_Mrs._O%27Leary_and_her_cows)_(NYPL_b11707459-G90F182_013ZF).tiff
     fallbacks:
     - color
+    label: LEGEND ILLUSTRATION
     motion: pan_left
     focus_x: 0.5
     focus_y: 0.5

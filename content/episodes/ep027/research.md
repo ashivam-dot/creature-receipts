@@ -25,7 +25,11 @@
 
 ## Visual evidence and limits
 
-The opening cow picture and beat 4 caricature are period illustrations of the **legend**, not evidence of the fire’s cause or portraits of Catherine O’Leary. The 1871 blaze and ruins are archival imagery. Designed cards present the inquiry and council findings; the cow image returns during Ahern’s attributed boast. Wikimedia Commons pages and license metadata accompany each source image in `visuals.json`. The corrected render and contact sheet require fresh review before release.
+The opening now uses a cropped half of [NYPL's *The Innocent Cause* stereograph](https://digitalcollections.nypl.org/items/8e370600-c53b-012f-ff21-58d385a7bc34), also listed on [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:View_of_a_drawing%29_%22The_Innocent_Cause-_or_the_Origin_of_Chicago_Fire%22_%28showing_Mrs._O%27Leary_and_her_cows%29_%28NYPL_b11707459-G90F182_013ZF%29.tiff). NYPL identifies Copelin & Hine, catalogs it as issued in 1871, and says it believes the item is public domain under US law. The card itself carries an 1872 copyright notice, so the package calls it **period legend art** without assigning an exact year. Beat 4 shows the full stereograph with a visible “LEGEND ILLUSTRATION” label. Beat 6 returns to the opening crop during Ahern’s attributed boast. These pictures illustrate the **legend**; they are neither evidence of the fire’s cause nor portraits of Catherine O’Leary.
+
+The prior hook image, [*Mrs OLeary's cow.jpg*](https://commons.wikimedia.org/wiki/File:Mrs_OLeary%27s_cow.jpg), was removed. Its Commons metadata calls the proposed *Harper's Magazine* 1871 source “dubious” because the image was not found in the relevant issues and links a Bettmann/Getty copy. That record did not establish a sufficiently clear original source for public use. The 1871 Currier & Ives blaze image is an illustration; the courthouse ruins are a period stereograph from SMU's collection marked “No restrictions” on Commons. The designed cards present the inquiry and council findings. The selected image pages and license metadata are recorded in `visuals.json`.
+
+The new exact render and contact sheet are documented in [rights-candidate-qa-2026-10-04.md](rights-candidate-qa-2026-10-04.md); this source and rights review does not remove the editorial hold.
 
 ## Human review still required
 

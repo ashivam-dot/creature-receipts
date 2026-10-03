@@ -1,24 +1,33 @@
 {
   "id": "ep027",
   "duration": 25.168,
+  "video_sha256": "551a99ab4c3dea20de9b9fbf50c0816e33620fe9ea66f3aec5d8b1317baea436",
   "beats": [
     {
       "start": 0.08,
       "end": 3.366,
       "text": "Chicago blamed a cow for a fire with no proven cause.",
       "asset": {
-        "source": "Wikimedia Commons",
-        "title": "Mrs OLeary's cow.jpg",
-        "credit": "AnonymousUnknown author",
-        "license": "Public domain",
-        "url": "https://commons.wikimedia.org/wiki/File:Mrs_OLeary%27s_cow.jpg"
+        "source": "NYPL Digital Collections / Wikimedia Commons",
+        "title": "The Innocent Cause: or the Origin of Chicago Fire (stereograph)",
+        "credit": "Copelin & Hine; scan by NYPL",
+        "license": "Public domain (US)",
+        "url": "https://digitalcollections.nypl.org/items/8e370600-c53b-012f-ff21-58d385a7bc34"
       },
       "shots": [
         {
           "start": 0.0,
           "end": 3.367,
           "kind": "card",
-          "motion": "camera"
+          "motion": "camera",
+          "camera_move": [
+            1.0,
+            1.08,
+            0.5,
+            0.5,
+            0.5,
+            0.5
+          ]
         }
       ]
     },
@@ -38,13 +47,29 @@
           "start": 3.367,
           "end": 5.733,
           "kind": "card",
-          "motion": "camera"
+          "motion": "camera",
+          "camera_move": [
+            1.08,
+            1.0,
+            0.5,
+            0.5,
+            0.5,
+            0.5
+          ]
         },
         {
           "start": 5.733,
           "end": 7.633,
           "kind": "detail",
-          "motion": "depth"
+          "motion": "depth",
+          "camera_move": [
+            1.02,
+            1.09,
+            0.5,
+            0.5,
+            0.45,
+            0.5
+          ]
         }
       ]
     },
@@ -64,7 +89,15 @@
           "start": 7.633,
           "end": 10.667,
           "kind": "card",
-          "motion": "camera"
+          "motion": "camera",
+          "camera_move": [
+            1.0,
+            1.08,
+            0.5,
+            0.5,
+            0.5,
+            0.5
+          ]
         }
       ]
     },
@@ -84,7 +117,15 @@
           "start": 10.667,
           "end": 13.2,
           "kind": "card",
-          "motion": "camera"
+          "motion": "camera",
+          "camera_move": [
+            1.08,
+            1.0,
+            0.5,
+            0.5,
+            0.5,
+            0.5
+          ]
         }
       ]
     },
@@ -100,7 +141,15 @@
           "start": 13.2,
           "end": 16.2,
           "kind": "designed",
-          "motion": "camera"
+          "motion": "camera",
+          "camera_move": [
+            1.0,
+            1.08,
+            0.5,
+            0.5,
+            0.5,
+            0.5
+          ]
         }
       ]
     },
@@ -109,18 +158,26 @@
       "end": 21.121,
       "text": "Years later, Michael Ahern boasted that he and others invented the cow story.",
       "asset": {
-        "source": "Wikimedia Commons",
-        "title": "Mrs OLeary's cow.jpg",
-        "credit": "AnonymousUnknown author",
-        "license": "Public domain",
-        "url": "https://commons.wikimedia.org/wiki/File:Mrs_OLeary%27s_cow.jpg"
+        "source": "NYPL Digital Collections / Wikimedia Commons",
+        "title": "The Innocent Cause: or the Origin of Chicago Fire (stereograph)",
+        "credit": "Copelin & Hine; scan by NYPL",
+        "license": "Public domain (US)",
+        "url": "https://digitalcollections.nypl.org/items/8e370600-c53b-012f-ff21-58d385a7bc34"
       },
       "shots": [
         {
           "start": 16.2,
           "end": 21.133,
           "kind": "card",
-          "motion": "camera"
+          "motion": "camera",
+          "camera_move": [
+            1.07,
+            1.0,
+            0.5,
+            0.5,
+            0.5,
+            0.5
+          ]
         }
       ]
     },
@@ -136,7 +193,15 @@
           "start": 21.133,
           "end": 25.167,
           "kind": "designed",
-          "motion": "camera"
+          "motion": "camera",
+          "camera_move": [
+            1.0,
+            1.08,
+            0.5,
+            0.5,
+            0.5,
+            0.5
+          ]
         }
       ]
     }
