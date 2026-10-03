@@ -1,259 +1,150 @@
 {
   "viable": true,
-  "reason": "The provided sources contain multiple cross-verified claims across different sites that support a narrative revealing how the famous myth of Mrs. O'Leary's cow was fabricated.",
-  "story": "On October 8, 1871, a devastating blaze broke out on DeKoven Street in Chicago. Driven by severe drought and high winds, the Great Chicago Fire destroyed thousands of buildings, killed nearly 300 people, and left 100,000 homeless. Looking for a simple culprit, reporter Michael Ahern published a story claiming an Irish immigrant woman named Catherine O'Leary started the disaster when her cow kicked over a lantern in her barn. Rooted in widespread anti-Irish prejudice, the nation eagerly embraced the narrative. In reality, Catherine O'Leary was asleep in bed when the fire started, and the official investigation found no proof of her guilt. Decades later, Ahern publicly admitted he had fabricated the cow story for colorful news copy. Harassed and shamed, O'Leary spent her remaining years as a recluse until her death in 1895. It took until 1997 for the Chicago City Council to formally exonerate her.",
-  "angle": "A reporter invented the famous story that Mrs. O'Leary's cow started the Great Chicago Fire, and even after he admitted making it up, Chicago took 126 years to formally exonerate her.",
+  "reason": "The Chicago Fire history project directly supports the inquiry, O’Leary testimony, and attributed later boast; the council record supports the 1997 exoneration.",
+  "story": "The Great Chicago Fire began near the O’Leary barn on October 8, 1871, and left about 100,000 homeless. Catherine O’Leary testified she was asleep; the official inquiry found no proof against her. The exact cause remains unknown. Forty years later, Michael Ahern boasted that he and two others invented the cow story, though the authorship of his later account is disputed. Chicago’s council exonerated O’Leary in 1997.",
+  "angle": "The cow story survived even though the 1871 inquiry found no proof against O’Leary and its supposed inventor’s later account is disputed.",
   "claims": [
     {
-      "claim": "The Great Chicago Fire began on the evening of October 8, 1871, in a barn on DeKoven Street.",
+      "claim": "The fire began on October 8, 1871, near the O’Leary barn.",
       "sources": [
         "S1",
-        "S2",
-        "S3",
-        "S5",
-        "S6"
+        "S2"
       ],
       "confidence": "high"
     },
     {
-      "claim": "The property where the fire originated belonged to Irish immigrants Patrick and Catherine O'Leary.",
+      "claim": "The fire left about 100,000 Chicagoans homeless.",
       "sources": [
-        "S1",
-        "S2",
-        "S3",
-        "S5",
-        "S7"
+        "S3"
       ],
       "confidence": "high"
     },
     {
-      "claim": "Journalist Michael Ahern published the story claiming the fire was started when a cow kicked over a lantern.",
+      "claim": "The cow story blamed a cow for a fire whose exact cause remains unproved.",
       "sources": [
         "S1",
-        "S2",
-        "S3",
+        "S2"
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim": "Catherine O’Leary testified under oath that she was in bed when the fire began.",
+      "sources": [
+        "S1"
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim": "The official inquiry found no proof of Catherine O’Leary’s guilt.",
+      "sources": [
+        "S1"
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim": "Forty years later, Michael Ahern boasted that he and two others invented the cow story; authorship of his account is disputed.",
+      "sources": [
+        "S1"
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim": "Chicago City Council exonerated Catherine O’Leary in 1997.",
+      "sources": [
         "S4",
-        "S5",
-        "S6",
-        "S7"
-      ],
-      "confidence": "high"
-    },
-    {
-      "claim": "Catherine O'Leary testified under oath that she was asleep in bed when the fire broke out.",
-      "sources": [
-        "S3",
-        "S4",
-        "S7"
-      ],
-      "confidence": "high"
-    },
-    {
-      "claim": "Michael Ahern later admitted publicly that he had fabricated the cow and lantern story.",
-      "sources": [
-        "S1",
-        "S2",
-        "S3",
-        "S4",
-        "S5",
-        "S6",
-        "S7"
-      ],
-      "confidence": "high"
-    },
-    {
-      "claim": "Anti-Irish sentiment in 1870s America contributed to Catherine O'Leary being singled out as a scapegoat.",
-      "sources": [
-        "S1",
-        "S2",
-        "S3",
-        "S4",
-        "S7"
-      ],
-      "confidence": "high"
-    },
-    {
-      "claim": "The Great Chicago Fire killed approximately 300 people and left around 100,000 residents homeless.",
-      "sources": [
-        "S2",
-        "S3",
-        "S5",
-        "S6"
-      ],
-      "confidence": "high"
-    },
-    {
-      "claim": "Severe drought during the summer and autumn of 1871 made Chicago's predominantly wooden construction extremely flammable.",
-      "sources": [
-        "S2",
-        "S3",
         "S5"
       ],
-      "confidence": "high"
-    },
-    {
-      "claim": "The official 1871 inquiry into the fire concluded that the exact cause could not be determined.",
-      "sources": [
-        "S1",
-        "S2",
-        "S3",
-        "S4",
-        "S5",
-        "S6",
-        "S7"
-      ],
-      "confidence": "high"
-    },
-    {
-      "claim": "In 1997, 126 years after the fire, the Chicago City Council passed a resolution formally exonerating Catherine O'Leary.",
-      "sources": [
-        "S1",
-        "S2",
-        "S3",
-        "S4",
-        "S6"
-      ],
-      "confidence": "high"
-    },
-    {
-      "claim": "Historians have proposed neighbor Daniel Peg Leg Sullivan as a possible alternative cause for starting the fire.",
-      "sources": [
-        "S2",
-        "S3",
-        "S4",
-        "S5",
-        "S6",
-        "S7"
-      ],
       "confidence": "medium"
-    },
-    {
-      "claim": "Due to persistent harassment and scapegoating, Catherine O'Leary lived as a recluse until her death in 1895.",
-      "sources": [
-        "S1",
-        "S2",
-        "S3",
-        "S5",
-        "S6",
-        "S7"
-      ],
-      "confidence": "high"
     }
   ],
   "disputed": [
-    "The exact year and circumstances of reporter Michael Ahern's confession vary across sources (cited as 1893, 1911, or 1921, with some claiming it was ghostwritten) — script should attribute as 'according to later accounts' or leave out specific dates.",
-    "The true origin of the fire is unproven (theories include neighbor Daniel Peg Leg Sullivan, men gambling in the barn, or a meteor shower) — script should state that the official cause remains undetermined.",
-    "The name of O'Leary's cow (Daisy, Madeline, or Gwendolyn) is folklore — script should leave it out or label as legend."
+    "Ahern’s later boast is documented, but another writer claimed to have ghostwritten the account, and others have been credited with originating the legend. Do not state that Ahern alone invented it as fact.",
+    "The exact cause of the 1871 fire has never been proved. Do not state that the cow could not have been involved.",
+    "The City Council journal and Chicago Public Library page returned HTTP 202 with no body on this local verification pass; the existing 2026-10-03 audit records review of the 1997 council journal. Reopen the original resolution before release if possible."
   ],
   "visuals": [
     {
-      "subject": "Map of the area destroyed by the Great Chicago Fire of 1871",
+      "subject": "Period illustration of the Mrs. O’Leary cow legend, presented as folklore.",
       "queries": [
-        "Great Chicago Fire map 1871",
-        "Chicago fire map 1871 lithograph"
+        "Mrs O Leary cow Chicago Fire illustration",
+        "Chicago fire cow legend 1871"
       ]
     },
     {
-      "subject": "The O'Leary family cottage on DeKoven Street after surviving the fire",
+      "subject": "1871 Currier and Ives lithograph of Chicago in flames.",
       "queries": [
-        "DeKoven Street Chicago 1871",
-        "Mrs O'Leary cottage DeKoven Street"
+        "Chicago in Flames Currier Ives 1871",
+        "Great Chicago Fire 1871 lithograph"
       ]
     },
     {
-      "subject": "Portrait of Catherine O'Leary",
+      "subject": "1871 stereograph of the ruined Cook County Courthouse.",
       "queries": [
-        "Catherine O'Leary portrait 1871",
-        "Catherine O'Leary photograph"
+        "Chicago courthouse ruins 1871",
+        "Great Chicago Fire ruins photograph"
       ]
     },
     {
-      "subject": "Engraving depicting the Great Chicago Fire in full blaze",
+      "subject": "Period caricature of the O’Leary legend, used as symbolic art rather than a portrait.",
       "queries": [
-        "John R. Chapin Chicago fire engraving",
-        "Great Chicago Fire 1871 lithograph Currier Ives"
+        "Mrs O Leary cow period caricature",
+        "Chicago Fire Innocent Cause illustration"
       ]
     },
     {
-      "subject": "Ruins of the Cook County Courthouse following the 1871 fire",
+      "subject": "Designed fact card quoting the inquiry’s conclusion.",
       "queries": [
-        "Chicago Courthouse ruins 1871 photograph",
-        "Chicago Cook County Courthouse after fire 1871"
+        "Chicago Fire 1871 inquiry O Leary",
+        "Chicago Fire official inquiry 1871"
       ]
     },
     {
-      "subject": "Ruins of the Chicago Waterworks pump station after the fire",
+      "subject": "Return to the cow illustration while narration attributes Ahern’s disputed boast.",
       "queries": [
-        "Chicago Water Tower 1871 fire ruins",
-        "Chicago Waterworks 1871 photograph"
+        "Michael Ahern Chicago Fire cow story",
+        "Mrs O Leary cow Chicago Fire illustration"
       ]
     },
     {
-      "subject": "Illustration of Chicago refugees escaping into Lake Michigan",
+      "subject": "Designed card for the Chicago City Council resolution.",
       "queries": [
-        "Chicago fire refugees Lake Michigan 1871",
-        "Great Chicago Fire refugees lakefront illustration"
-      ]
-    },
-    {
-      "subject": "Nineteenth-century caricature or cartoon depicting Mrs. O'Leary and her cow",
-      "queries": [
-        "Mrs O'Leary cow lantern caricature 1871",
-        "Great Chicago Fire cow cartoon"
-      ]
-    },
-    {
-      "subject": "The Chicago Fire Academy built on the former site of the O'Leary barn",
-      "queries": [
-        "Chicago Fire Academy DeKoven Street",
-        "Chicago Fire Department Academy building"
+        "Chicago City Council O Leary exonerated 1997",
+        "1997 O Leary cow resolution"
       ]
     }
   ],
   "sources": [
     {
       "label": "S1",
-      "url": "https://en.wikipedia.org/wiki/Catherine_O%27Leary",
-      "title": "Catherine O'Leary",
-      "site": "wikipedia.org"
+      "url": "https://greatchicagofire.org/oleary-legend/",
+      "title": "The O'Leary Legend",
+      "site": "Chicago Fire history project"
     },
     {
       "label": "S2",
-      "url": "https://www.missedhistory.com/article/chicago-great-fire-1871-olearys-cow",
-      "title": "When Chicago Burned: The Legend of Mrs. O'Leary's Cow | Missed History",
-      "site": "missedhistory.com"
+      "url": "https://greatchicagofire.org/great-conflagration/",
+      "title": "The Great Conflagration",
+      "site": "Chicago Fire history project"
     },
     {
       "label": "S3",
-      "url": "https://historycollection.com/the-great-fire-of-chicago/",
-      "title": "The Reporter Who Invented Mrs. O'Leary's Cow Later Admitted He Lied",
-      "site": "historycollection.com"
+      "url": "https://greatchicagofire.org/ruined-city/",
+      "title": "The Ruined City",
+      "site": "Chicago Fire history project"
     },
     {
       "label": "S4",
-      "url": "https://researchtoolbench.com/research-briefs/mrs-oleary-cow-chicago-fire-myth/",
-      "title": "Did Mrs. O'Leary's Cow Really Start the Great Chicago Fire?",
-      "site": "researchtoolbench.com"
+      "url": "https://www.chipublib.org/wp-content/uploads/sites/3/2014/09/counciljournal10281997.pdf",
+      "title": "Chicago City Council Journal, October 28, 1997",
+      "site": "Chicago City Council"
     },
     {
       "label": "S5",
-      "url": "https://deadlycurious.com/articles/great-chicago-fire-1871/",
-      "title": "Great Chicago Fire 1871: The Cow Story Was Invented | DeadlyCurious",
-      "site": "deadlycurious.com"
-    },
-    {
-      "label": "S6",
-      "url": "https://actuallyhappened.net/chicago-fire-oleary-cow-myth-exoneration/",
-      "title": "A Reporter Made Up the Cow Story. Chicago Believed It for 126 Years Anyway.",
-      "site": "actuallyhappened.net"
-    },
-    {
-      "label": "S7",
-      "url": "https://greatchicagofire.org/oleary-legend/",
-      "title": "The O'Leary Legend",
-      "site": "greatchicagofire.org"
+      "url": "https://www.chipublib.org/blogs/post/whodunit-the-mystery-of-mrs-olearys-cow/",
+      "title": "Whodunit? The Mystery of Mrs. O’Leary’s Cow",
+      "site": "Chicago Public Library"
     }
   ],
-  "topic": "Great Chicago Fire (1871): Mrs. O'Leary's cow took the blame, but the reporter who spread the story later admitted he made it up",
+  "topic": "Great Chicago Fire (1871): the O’Leary cow legend, an inconclusive inquiry, and 1997 exoneration",
   "series": "The Last Hours"
 }

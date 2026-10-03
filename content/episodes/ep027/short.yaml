@@ -1,15 +1,14 @@
 id: ep027
-title: Why Chicago Took 126 Years to Clear O'Leary's Cow 😳
+title: Chicago's Cow Was Cleared 126 Years After the Fire
 series: The Last Hours
-description: The Great Chicago Fire of 1871 was blamed on Mrs. O'Leary's cow, but the real story was a complete fabrication.
+description: The cause of the 1871 Great Chicago Fire remains unknown. Catherine O'Leary was exonerated in 1997, and the famous
+  cow story has a disputed history.
 sources:
-- https://en.wikipedia.org/wiki/Catherine_O%27Leary
-- https://www.missedhistory.com/article/chicago-great-fire-1871-olearys-cow
-- https://historycollection.com/the-great-fire-of-chicago/
-- https://researchtoolbench.com/research-briefs/mrs-oleary-cow-chicago-fire-myth/
-- https://deadlycurious.com/articles/great-chicago-fire-1871/
-- https://actuallyhappened.net/chicago-fire-oleary-cow-myth-exoneration/
 - https://greatchicagofire.org/oleary-legend/
+- https://greatchicagofire.org/great-conflagration/
+- https://greatchicagofire.org/ruined-city/
+- https://www.chipublib.org/wp-content/uploads/sites/3/2014/09/counciljournal10281997.pdf
+- https://www.chipublib.org/blogs/post/whodunit-the-mystery-of-mrs-olearys-cow/
 hashtags:
 - '#history'
 - '#chicagofire'
@@ -22,16 +21,13 @@ tags:
 - chicago history
 - 1871 fire
 voice:
-  engine: gemini
-  voice: Charon
-  direction: 'Read the transcript below aloud as a gripping true-story narrator on a viral YouTube Short: fast and urgent,
-    about 170 words a minute, with only tiny pauses, a low, intense voice and rising tension that hits the last line hard.
-    Speak only the transcript.'
+  engine: kokoro
+  voice: am_fenrir
+  speed: 1.15
 beats:
-- text: The most famous cow in history never kicked that lantern.
+- text: Chicago blamed a cow for a fire with no proven cause.
   emphasis:
-  - famous cow
-  - never kicked
+  - no proven cause
   visual:
     source: url
     url: https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3f/Mrs_OLeary%27s_cow.jpg/1920px-Mrs_OLeary%27s_cow.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
@@ -46,10 +42,9 @@ beats:
     motion: pan_right
     focus_x: 0.5
     focus_y: 0.5
-- text: On October 8, 1871, a devastating fire broke out on DeKoven Street.
+- text: In 1871, flames began near Catherine O’Leary’s barn.
   emphasis:
-  - October 8, 1871
-  - DeKoven Street
+  - Catherine O’Leary’s barn
   sfx: whoosh
   visual:
     source: url
@@ -70,10 +65,9 @@ beats:
       kind: dateline
       big: October 8, 1871
       small: Chicago, Illinois
-- text: Fueled by severe drought, the Great Chicago Fire killed about 300 people.
+- text: The fire left a hundred thousand people homeless.
   emphasis:
-  - severe drought
-  - 300 people
+  - hundred thousand
   visual:
     source: url
     url: https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3f/West_entrance_to_Court_House._%2821462112062%29.jpg/960px-West_entrance_to_Court_House._%2821462112062%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
@@ -89,15 +83,9 @@ beats:
     motion: pan_right
     focus_x: 0.5
     focus_y: 0.5
-    card:
-      kind: fact
-      big: '300'
-      small: estimated deaths
-- text: Seeking a scapegoat, journalist Michael Ahern blamed Irish immigrant Catherine O’Leary.
+- text: O’Leary swore she was asleep when it began.
   emphasis:
-  - Michael Ahern
-  - Catherine O’Leary
-  sfx: whoosh
+  - asleep
   visual:
     source: url
     url: https://thumb.wikimedia.org/wikipedia/commons/thumb/6/69/View_of_a_drawing%29_%22The_Innocent_Cause-_or_the_Origin_of_Chicago_Fire%22_%28showing_Mrs._O%27Leary_and_her_cows%29_%28NYPL_b11707459-G90F182_013ZF%29.tiff/lossy-page1-1920px-View_of_a_drawing%29_%22The_Innocent_Cause-_or_the_Origin_of_Chicago_Fire%22_%28showing_Mrs._O%27Leary_and_her_cows%29_%28NYPL_b11707459-G90F182_013ZF%29.tiff.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
@@ -113,48 +101,39 @@ beats:
     motion: pan_left
     focus_x: 0.5
     focus_y: 0.5
-- text: He claimed her cow kicked a lantern, but O’Leary was asleep in bed.
+- text: The official inquiry found no proof against her.
   emphasis:
-  - asleep in bed
+  - no proof
   visual:
-    reuse: 4
-    motion: zoom_in
-    focus_x: 0.5
-    focus_y: 0.5
-- text: Ahern later admitted he fabricated the entire story for a colorful headline.
-  emphasis:
-  - fabricated the entire story
-  sfx: riser
-  pause_after: 0.4
-  visual:
-    source: url
-    url: https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e8/Chicago-fire1.jpg/960px-Chicago-fire1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
-    credit:
-      source: Wikimedia Commons
-      title: Chicago-fire1.jpg
-      credit: John R. Chapin, died 1907
-      license: Public domain
-      url: https://commons.wikimedia.org/wiki/File:Chicago-fire1.jpg
-    fallbacks:
-    - card
-    - color
-    motion: pan_left
-    focus_x: 0.5
-    focus_y: 0.5
+    source: card
     card:
-      kind: quote
-      big: fabricated
-      small: Michael Ahern
-- text: Chicago took 126 years to officially clear her name.
+      kind: fact
+      big: NO PROOF
+      small: 1871 official inquiry
+    motion: zoom_in
+- text: Years later, Michael Ahern boasted that he and others invented the cow story.
   emphasis:
-  - 126 years
-  - clear her name
-  sfx: pop
-  pause_after: 0.4
+  - Ahern boasted
+  - he and others
+  sfx: riser
+  pause_after: 0.35
   visual:
     reuse: 1
     motion: zoom_out
     focus_x: 0.5
     focus_y: 0.5
+- text: Chicago’s council exonerated her in 1997.
+  emphasis:
+  - exonerated
+  - '1997'
+  sfx: pop
+  pause_after: 0.4
+  visual:
+    source: card
+    card:
+      kind: fact
+      big: EXONERATED
+      small: Chicago City Council · 1997
+    motion: zoom_in
 depth_motion: true
-hook_text: THE 126-YEAR LIE
+hook_text: THE COW STORY

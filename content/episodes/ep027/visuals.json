@@ -137,11 +137,6 @@
     "motion": "pan_right",
     "focus_x": 0.5,
     "focus_y": 0.5,
-    "card": {
-      "kind": "fact",
-      "big": "300",
-      "small": "estimated deaths"
-    },
     "_choice": {
       "key": "commons:File:West entrance to Court House. (21462112062).jpg",
       "origin": "commons",
@@ -203,58 +198,27 @@
     "_alternates": []
   },
   {
-    "reuse": 4,
-    "motion": "zoom_in",
-    "focus_x": 0.5,
-    "focus_y": 0.5
-  },
-  {
-    "source": "url",
-    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e8/Chicago-fire1.jpg/960px-Chicago-fire1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "credit": {
-      "source": "Wikimedia Commons",
-      "title": "Chicago-fire1.jpg",
-      "credit": "John R. Chapin, died 1907",
-      "license": "Public domain",
-      "url": "https://commons.wikimedia.org/wiki/File:Chicago-fire1.jpg"
-    },
-    "fallbacks": [
-      "card",
-      "color"
-    ],
-    "motion": "pan_left",
-    "focus_x": 0.5,
-    "focus_y": 0.5,
+    "source": "card",
     "card": {
-      "kind": "quote",
-      "big": "fabricated",
-      "small": "Michael Ahern"
+      "kind": "fact",
+      "big": "NO PROOF",
+      "small": "1871 official inquiry"
     },
-    "_choice": {
-      "key": "commons:File:Chicago-fire1.jpg",
-      "origin": "commons",
-      "file": "File:Chicago-fire1.jpg",
-      "title": "Chicago-fire1.jpg",
-      "width": 1103,
-      "height": 732,
-      "license": "Public domain",
-      "license_url": null,
-      "artist": "John R. Chapin, died 1907",
-      "date": "1871",
-      "year": 1871,
-      "page": "https://commons.wikimedia.org/wiki/File:Chicago-fire1.jpg",
-      "route": "subject",
-      "original": "https://upload.wikimedia.org/wikipedia/commons/e/e8/Chicago-fire1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-      "historical": 1.0,
-      "match": 0.76
-    },
-    "_fit": "close",
-    "_alternates": []
+    "motion": "zoom_in"
   },
   {
     "reuse": 1,
     "motion": "zoom_out",
     "focus_x": 0.5,
     "focus_y": 0.5
+  },
+  {
+    "source": "card",
+    "card": {
+      "kind": "fact",
+      "big": "EXONERATED",
+      "small": "Chicago City Council · 1997"
+    },
+    "motion": "zoom_in"
   }
 ]

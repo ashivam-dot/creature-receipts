@@ -2,21 +2,13 @@
   "hooks": [
     {
       "style": "statement",
-      "text": "Galveston’s weather chief Isaac Cline promised that a major hurricane was impossible."
-    },
-    {
-      "style": "number",
-      "text": "8,000 people died because one bureaucrat refused to listen to experts."
-    },
-    {
-      "style": "contradiction",
-      "text": "The US government banned the word hurricane while a monster storm approached."
+      "text": "Galveston’s weather chief raised hurricane flags the day before disaster."
     }
   ],
   "hook_style": "statement",
-  "structure": "myth_vs_fact",
-  "title": "Why Did the US Ignore the 1900 Galveston Hurricane? ⚠️",
-  "description": "The 1900 Galveston hurricane remains the deadliest natural disaster in US history, fueled by a fatal refusal to listen to expert warnings.",
+  "structure": "story",
+  "title": "The Galveston Warning Before America's Deadliest Storm",
+  "description": "Isaac Cline raised hurricane flags and warned Galveston residents before the 1900 storm. Its surge overwhelmed the low island and killed more than 8,000 people.",
   "hashtags": [
     "#history",
     "#galveston",
@@ -32,50 +24,23 @@
   ],
   "beats": [
     {
-      "text": "Galveston’s weather chief Isaac Cline promised that a major hurricane was impossible.",
+      "text": "Galveston’s weather chief raised hurricane flags the day before disaster.",
       "emphasis": [
-        "promised",
-        "impossible"
+        "hurricane flags"
       ],
       "sfx": "none",
       "pause_after": 0.12,
       "claims": [
-        3
+        1
       ],
-      "visual": "Portrait of meteorologist Isaac Cline, about 1900.",
+      "visual": "Period photograph of Isaac Cline.",
       "subjects": [
         "Isaac Cline"
       ],
       "year": 1900,
       "queries": [
-        "Isaac Cline portrait",
-        "Isaac Cline"
-      ],
-      "card": {
-        "kind": "quote",
-        "big": "Impossible",
-        "small": "Isaac Cline"
-      }
-    },
-    {
-      "text": "The city felt safe, expecting the storm to curve toward Florida.",
-      "emphasis": [
-        "felt safe",
-        "Florida"
-      ],
-      "sfx": "none",
-      "pause_after": 0.12,
-      "claims": [
-        7
-      ],
-      "visual": "Street view of the Strand in Galveston before the 1900 storm.",
-      "subjects": [
-        "The Strand (Galveston)"
-      ],
-      "year": 1900,
-      "queries": [
-        "Galveston Texas 1900 street view",
-        "The Strand (Galveston)"
+        "Isaac Cline young National Archives",
+        "Isaac Cline portrait 1900"
       ],
       "card": {
         "kind": "none",
@@ -84,24 +49,49 @@
       }
     },
     {
-      "text": "Expert Cuban meteorologists knew the monster was heading straight for Texas.",
+      "text": "Earlier federal warnings had pointed toward Florida and the eastern Gulf.",
       "emphasis": [
-        "Cuban meteorologists",
-        "Texas"
+        "Florida",
+        "eastern Gulf"
+      ],
+      "sfx": "none",
+      "pause_after": 0.12,
+      "claims": [
+        2
+      ],
+      "visual": "Designed card for the earlier federal warnings that pointed east.",
+      "subjects": [
+        "Galveston"
+      ],
+      "year": 1900,
+      "queries": [
+        "Galveston Strand before 1900 hurricane",
+        "Galveston Texas 1890 street photograph"
+      ],
+      "card": {
+        "kind": "fact",
+        "big": "EARLIER WARNING",
+        "small": "Florida + eastern Gulf"
+      }
+    },
+    {
+      "text": "The weather service says Isaac Cline urged residents to move to higher ground.",
+      "emphasis": [
+        "move to higher ground"
       ],
       "sfx": "whoosh",
       "pause_after": 0.12,
       "claims": [
-        7
+        3
       ],
-      "visual": "Belen Observatory in Havana, Cuba, around 1900.",
+      "visual": "Return to Isaac Cline’s portrait while attributing the weather service’s account.",
       "subjects": [
-        "1900 Galveston hurricane"
+        "Isaac Cline"
       ],
       "year": 1900,
       "queries": [
-        "Belen Observatory Havana 1900",
-        "1900 Galveston hurricane"
+        "Isaac Cline young National Archives",
+        "Isaac Cline weather bureau Galveston"
       ],
       "card": {
         "kind": "none",
@@ -110,76 +100,23 @@
       }
     },
     {
-      "text": "Willis Moore blocked their warnings out of professional jealousy.",
+      "text": "On September eighth, a fifteen-foot surge swallowed Galveston.",
       "emphasis": [
-        "blocked",
-        "jealousy"
-      ],
-      "sfx": "none",
-      "pause_after": 0.12,
-      "claims": [
-        5
-      ],
-      "visual": "Willis L. Moore, Director of the US Weather Bureau.",
-      "subjects": [
-        "Willis L. Moore"
-      ],
-      "year": 1900,
-      "queries": [
-        "Willis L. Moore meteorologist",
-        "Willis L. Moore"
-      ],
-      "card": {
-        "kind": "none",
-        "big": "",
-        "small": ""
-      }
-    },
-    {
-      "text": "Moore even banned the word hurricane to avoid a panic.",
-      "emphasis": [
-        "banned",
-        "hurricane"
+        "fifteen-foot surge"
       ],
       "sfx": "riser",
       "pause_after": 0.12,
       "claims": [
-        6
+        4
       ],
-      "visual": "Weather map showing the path of the 1900 Galveston hurricane.",
+      "visual": "Contemporary 1900 lithograph imagining the devastating surge; an illustration, not a photograph.",
       "subjects": [
         "1900 Galveston hurricane"
       ],
       "year": 1900,
       "queries": [
-        "1900 Galveston hurricane track map",
-        "1900 Galveston hurricane"
-      ],
-      "card": {
-        "kind": "none",
-        "big": "",
-        "small": ""
-      }
-    },
-    {
-      "text": "On September 8, 1900, a fifteen-foot surge swallowed the city.",
-      "emphasis": [
-        "fifteen-foot",
-        "swallowed"
-      ],
-      "sfx": "none",
-      "pause_after": 0.12,
-      "claims": [
-        9
-      ],
-      "visual": "A 1900 illustration of the storm surge overrunning the city of Galveston.",
-      "subjects": [
-        "1900 Galveston hurricane"
-      ],
-      "year": 1900,
-      "queries": [
-        "1900 Galveston hurricane illustration",
-        "1900 Galveston hurricane"
+        "Galveston awful calamity gulf tidal wave 1900",
+        "1900 Galveston hurricane illustration"
       ],
       "card": {
         "kind": "dateline",
@@ -188,60 +125,84 @@
       }
     },
     {
-      "text": "At least 8,000 people perished in America’s deadliest natural disaster.",
+      "text": "The island’s highest ground was just eight point seven feet above sea level.",
       "emphasis": [
-        "8,000",
-        "deadliest"
-      ],
-      "sfx": "pop",
-      "pause_after": 0.4,
-      "claims": [
-        1,
-        2
-      ],
-      "visual": "Wreckage and debris in Galveston after the 1900 hurricane.",
-      "subjects": [
-        "1900 Galveston hurricane"
-      ],
-      "year": 1900,
-      "queries": [
-        "1900 Galveston hurricane wreckage",
-        "1900 Galveston hurricane"
-      ],
-      "card": {
-        "kind": "fact",
-        "big": "8,000 Dead",
-        "small": "U.S. Deadliest Disaster"
-      }
-    },
-    {
-      "text": "Many died believing the man who promised a hurricane was impossible.",
-      "emphasis": [
-        "believing",
-        "impossible"
+        "eight point seven feet"
       ],
       "sfx": "none",
       "pause_after": 0.12,
       "claims": [
-        3
+        5
       ],
-      "visual": "Portrait of Isaac Cline in later years.",
+      "visual": "Designed elevation card with NOAA’s 8.7-foot figure.",
       "subjects": [
-        "Isaac Cline"
+        "Galveston"
       ],
       "year": 1900,
       "queries": [
-        "Isaac Cline old",
-        "Isaac Cline"
+        "Galveston island 1900 elevation 8.7 feet",
+        "Galveston 1900 hurricane highest ground"
+      ],
+      "card": {
+        "kind": "fact",
+        "big": "8.7 FEET",
+        "small": "highest ground in 1900"
+      }
+    },
+    {
+      "text": "More than eight thousand died, including Cline’s pregnant wife.",
+      "emphasis": [
+        "eight thousand",
+        "pregnant wife"
+      ],
+      "sfx": "none",
+      "pause_after": 0.12,
+      "claims": [
+        6,
+        7
+      ],
+      "visual": "Photograph of damage to St. Patrick’s Church after the hurricane.",
+      "subjects": [
+        "1900 Galveston hurricane"
+      ],
+      "year": 1900,
+      "queries": [
+        "St Patricks Church Galveston hurricane 1900",
+        "Galveston storm ruins 1900"
       ],
       "card": {
         "kind": "none",
         "big": "",
         "small": ""
       }
+    },
+    {
+      "text": "It remains America’s deadliest natural disaster.",
+      "emphasis": [
+        "deadliest natural disaster"
+      ],
+      "sfx": "pop",
+      "pause_after": 0.4,
+      "claims": [
+        8
+      ],
+      "visual": "Designed fact card with NOAA’s historical ranking.",
+      "subjects": [
+        "1900 Galveston hurricane"
+      ],
+      "year": 1900,
+      "queries": [
+        "1900 Galveston deadliest natural disaster NOAA",
+        "Galveston hurricane fatalities 1900"
+      ],
+      "card": {
+        "kind": "fact",
+        "big": "DEADLIEST",
+        "small": "U.S. natural disaster"
+      }
     }
   ],
-  "hook_text": "THE IMPOSSIBLE STORM",
+  "hook_text": "THE WARNING CAME",
   "loop": true,
-  "better_than_last": "Applied the myth_vs_fact structure to highlight how professional jealousy led to the suppression of vital hurricane warnings."
+  "better_than_last": "The opening now states Cline’s documented warnings; speculative blame and the misleading “Impossible” quote are gone."
 }
