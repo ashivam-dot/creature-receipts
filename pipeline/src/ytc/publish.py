@@ -585,6 +585,8 @@ def verify_hosted_media(media_url: str, expected_sha256: str) -> None:
 def _validate_hold(held: dict, episode_id: str, binding: dict[str, str] | None = None) -> None:
     if held.get("superseded"):
         raise RuntimeError(f"{episode_id} has a superseded hosted video; host the repaired render before scheduling")
+    if not held.get("media_public_id") or not held.get("media_url"):
+        raise RuntimeError(f"{episode_id} has an incomplete hosted video record; host the current render before scheduling")
     if any(not held.get(field) for field in MEDIA_BINDING_FIELDS):
         raise RuntimeError(f"{episode_id} has an unbound hosted video; host the current render before scheduling")
     if binding is not None and any(held[field] != binding[field] for field in MEDIA_BINDING_FIELDS):
@@ -614,9 +616,9 @@ def schedule(spec_path: Path, when: datetime | None = None, *, reviewed_release:
     _require_scheduling_open(spec_path, exact_media_release=reviewed_release)
     if held is not None:
         _validate_hold(held, spec.id, binding)
-    if reviewed_release:
+    if held is not None:
         verify_hosted_media(held["media_url"], binding["media_sha256"])
-        _require_scheduling_open(spec_path, exact_media_release=True)
+        _require_scheduling_open(spec_path, exact_media_release=reviewed_release)
     manifest = json.loads((folder / "work" / "manifest.json").read_text(encoding="utf-8"))
 
     text = description(spec, manifest)

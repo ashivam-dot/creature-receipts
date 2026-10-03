@@ -57,6 +57,41 @@ def test_legacy_unbound_hold_is_rejected_before_buffer(episode, monkeypatch):
         publish.schedule(episode / "short.yaml")
 
 
+@pytest.mark.parametrize("missing", ["media_public_id", "media_url"])
+def test_incomplete_hosted_record_is_rejected_before_buffer(episode, monkeypatch, missing):
+    held = _hosted(episode)
+    held.pop(missing)
+    (episode / "hold.json").write_text(json.dumps(held))
+    monkeypatch.setattr(publish, "posts", lambda **kwargs: pytest.fail("Buffer was contacted"))
+    with pytest.raises(RuntimeError, match="incomplete hosted video record"):
+        publish.schedule(episode / "short.yaml")
+
+
+def test_ordinary_hold_checks_hosted_bytes_before_buffer(episode, monkeypatch):
+    _hosted(episode)
+
+    class DifferentVideo:
+        headers = {"content-type": "video/mp4", "content-length": "15"}
+
+        def __enter__(self):
+            return self
+
+        def __exit__(self, *args):
+            return False
+
+        def raise_for_status(self):
+            pass
+
+        def iter_content(self, size):
+            return iter((b"different video",))
+
+    monkeypatch.setattr(publish.requests, "get", lambda *args, **kwargs: DifferentVideo())
+    monkeypatch.setattr(publish, "posts", lambda **kwargs: pytest.fail("Buffer was contacted"))
+    with pytest.raises(RuntimeError, match="Hosted video differs from the reviewed media hash"):
+        publish.schedule(episode / "short.yaml")
+    assert (episode / "hold.json").exists() and not (episode / "publish.json").exists()
+
+
 def test_superseded_hold_is_out_of_inventory_and_cannot_schedule(episode, monkeypatch):
     held = _hosted(episode)
     held["superseded"] = True
@@ -75,12 +110,15 @@ def test_scheduling_bound_hold_carries_binding_to_publish_record(episode, monkey
     held = _hosted(episode)
     # Worker handoff keeps the manifest and hold, but deliberately omits the MP4.
     (episode / "ep026.mp4").unlink()
+    verified = []
+    monkeypatch.setattr(publish, "verify_hosted_media", lambda url, digest: verified.append((url, digest)))
     monkeypatch.setattr(publish, "posts", lambda **kwargs: [])
     monkeypatch.setattr(publish, "youtube_channel_id", lambda: "youtube")
     monkeypatch.setattr(publish, "_buffer", lambda query, variables: {"createPost": {
         "__typename": "PostActionSuccess", "post": {"id": "p1", "status": "scheduled"}}})
     when = datetime.now(publish.AUDIENCE_TZ) + timedelta(days=1)
     record = publish.schedule(episode / "short.yaml", when)
+    assert verified == [(held["media_url"], held["media_sha256"])]
     assert record["media_url"] == held["media_url"]
     assert {k: record[k] for k in publish.MEDIA_BINDING_FIELDS} == {k: held[k] for k in publish.MEDIA_BINDING_FIELDS}
     assert not (episode / "hold.json").exists()
