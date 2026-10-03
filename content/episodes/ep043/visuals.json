@@ -212,7 +212,7 @@
       "match": 0.523
     },
     "_fit": "exact",
-    "_shows": "Portrait of Crow scout Curley",
+    "_shows": "Later portrait of Curley, a Crow scout; not a photograph of the scouting event",
     "_alternates": [
       {
         "key": "commons:File:Curly cabinet card by DF Bary c1885.jpg",
@@ -255,87 +255,14 @@
     ]
   },
   {
-    "source": "url",
-    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/12/George_Crook_-_Brady-Handy.jpg/1920px-George_Crook_-_Brady-Handy.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "credit": {
-      "source": "Wikimedia Commons",
-      "title": "George Crook - Brady-Handy.jpg",
-      "credit": "Mathew Benjamin Brady / Levin Corbin Handy",
-      "license": "Public domain",
-      "url": "https://commons.wikimedia.org/wiki/File:George_Crook_-_Brady-Handy.jpg"
+    "source": "card",
+    "card": {
+      "kind": "fact",
+      "big": "ATTACKED",
+      "small": "Feared the village would scatter"
     },
-    "fallbacks": [
-      "color"
-    ],
-    "motion": "pan_up",
-    "focus_x": 0.48,
-    "focus_y": 0.28,
-    "box": [
-      0.22,
-      0.08,
-      0.72,
-      0.52
-    ],
-    "_choice": {
-      "key": "commons:File:George Crook - Brady-Handy.jpg",
-      "origin": "commons",
-      "file": "File:George Crook - Brady-Handy.jpg",
-      "title": "George Crook - Brady-Handy.jpg",
-      "width": 3024,
-      "height": 3976,
-      "license": "Public domain",
-      "license_url": null,
-      "artist": "Mathew Benjamin Brady / Levin Corbin Handy",
-      "date": "between 1870 and 1880date QS:P,+1850-00-00T00:00:00Z/7,P1319",
-      "year": 1870,
-      "page": "https://commons.wikimedia.org/wiki/File:George_Crook_-_Brady-Handy.jpg",
-      "route": "subject",
-      "original": "https://upload.wikimedia.org/wikipedia/commons/1/12/George_Crook_-_Brady-Handy.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-      "historical": 0.999,
-      "match": 0.937
-    },
-    "_fit": "exact",
-    "_shows": "General George Crook in military uniform",
-    "_alternates": [
-      {
-        "key": "commons:File:Gen. George Crook (4209431376).jpg",
-        "origin": "commons",
-        "file": "File:Gen. George Crook (4209431376).jpg",
-        "title": "Gen. George Crook (4209431376).jpg",
-        "width": 2305,
-        "height": 3000,
-        "license": "Public domain",
-        "license_url": null,
-        "artist": "The U.S. National Archives",
-        "date": "1863-01-01 00:00",
-        "year": 1863,
-        "page": "https://commons.wikimedia.org/wiki/File:Gen._George_Crook_(4209431376).jpg",
-        "route": "category",
-        "original": "https://upload.wikimedia.org/wikipedia/commons/5/51/Gen._George_Crook_%284209431376%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "historical": 0.996,
-        "match": 0.931,
-        "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/51/Gen._George_Crook_%284209431376%29.jpg/500px-Gen._George_Crook_%284209431376%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
-      },
-      {
-        "key": "commons:File:General George Crook (4190094715).jpg",
-        "origin": "commons",
-        "file": "File:General George Crook (4190094715).jpg",
-        "title": "General George Crook (4190094715).jpg",
-        "width": 2369,
-        "height": 3000,
-        "license": "Public domain",
-        "license_url": null,
-        "artist": "The U.S. National Archives",
-        "date": "1863-01-01 00:00",
-        "year": 1863,
-        "page": "https://commons.wikimedia.org/wiki/File:General_George_Crook_(4190094715).jpg",
-        "route": "category",
-        "original": "https://upload.wikimedia.org/wikipedia/commons/c/ca/General_George_Crook_%284190094715%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "historical": 1.0,
-        "match": 0.871,
-        "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/ca/General_George_Crook_%284190094715%29.jpg/500px-General_George_Crook_%284190094715%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
-      }
-    ]
+    "motion": "zoom_in",
+    "_shows": "Designed immediate-attack card; no photograph of Crook shown"
   },
   {
     "source": "url",
@@ -372,20 +299,31 @@
       "match": 0.389
     },
     "_fit": "close",
-    "_shows": "Historical map showing Custer's route to the Little Bighorn",
+    "_shows": "Map of Custer’s route to Little Bighorn, not battalion positions",
     "_alternates": []
   },
   {
     "source": "card",
     "card": {
       "kind": "quote",
-      "big": "Come on, Big Village",
-      "small": "George Custer"
+      "big": "Come On. Big Village. Be quick. Bring Packs.",
+      "small": "W. W. Cooke, for Custer"
     },
     "motion": "zoom_in",
     "_rejected": [
       "commons:File:First Report of the Battle of the Little Bighorn, from General Alfred H. Terry in Montana, to Assistant Adjutant General R. C. Drum in Chicago - NARA - 301976 (page 13).jpg"
-    ]
+    ],
+    "_shows": "Designed excerpt of Cooke’s actual message; no archival document photograph claimed"
+  },
+  {
+    "source": "card",
+    "card": {
+      "kind": "fact",
+      "big": "FORCED BACK",
+      "small": "Benteen followed Weir north"
+    },
+    "motion": "zoom_in",
+    "_shows": "Designed card for Weir/Benteen movement and repulse"
   },
   {
     "source": "url",
@@ -413,7 +351,7 @@
     "card": {
       "kind": "fact",
       "big": "210",
-      "small": "Men Fallen"
+      "small": "Men in Custer’s battalion"
     },
     "_choice": {
       "key": "commons:File:Custer Monument on Last Stand Hill After its Completion (1f50cb51d68b4015a1a61c673c88179b).tif",
@@ -434,7 +372,7 @@
       "match": 0.632
     },
     "_fit": "exact",
-    "_shows": "Newly completed Custer Monument on Last Stand Hill, circa 1881",
+    "_shows": "7th Cavalry memorial on Last Stand Hill, photographed after the battle",
     "_alternates": [
       {
         "key": "commons:File:Custer Memorial (d113a7ea4a504f27ad7d3fe24b4b831b).tif",
@@ -475,11 +413,5 @@
         "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/15/Little_Bighorn_memorial_obelisk.jpg/500px-Little_Bighorn_memorial_obelisk.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
       }
     ]
-  },
-  {
-    "reuse": 1,
-    "motion": "zoom_out",
-    "focus_x": 0.51,
-    "focus_y": 0.31
   }
 ]

@@ -2,21 +2,21 @@
   "hooks": [
     {
       "style": "statement",
-      "text": "Sitting Bull saw soldiers falling before they even arrived."
+      "text": "Sitting Bull's reported vision showed soldiers falling into his camp."
     },
     {
       "style": "contradiction",
-      "text": "Custer rode into a trap his scouts begged him to avoid."
+      "text": "Benteen did move toward Custer; warriors forced him back."
     },
     {
       "style": "number",
-      "text": "210 men were lost because a commander ignored a vision."
+      "text": "Custer led 210 men away from the rest of his cavalry."
     }
   ],
   "hook_style": "statement",
-  "structure": "warning",
-  "title": "Why Did Custer Ignore the Warnings at Little Bighorn? ⚠️",
-  "description": "George Custer's 7th Cavalry was annihilated after he ignored warnings from his scouts. Here is how Sitting Bull's vision of falling soldiers came true.",
+  "structure": "story",
+  "title": "Custer Split His Cavalry at Little Bighorn. Then What?",
+  "description": "In June 1876, Custer divided his cavalry near the Little Bighorn. Reno's attack failed, Benteen's effort to reach Custer was driven back, and all 210 men in Custer's battalion were killed.",
   "hashtags": [
     "#history",
     "#littlebighorn",
@@ -32,16 +32,16 @@
   ],
   "beats": [
     {
-      "text": "Sitting Bull saw soldiers falling before they even arrived.",
+      "text": "Sitting Bull's reported vision showed soldiers falling into his camp.",
       "emphasis": [
-        "falling"
+        "reported vision"
       ],
       "sfx": "none",
       "pause_after": 0.12,
       "claims": [
-        3
+        1
       ],
-      "visual": "Portrait of Sitting Bull, Lakota spiritual leader, 1885",
+      "visual": "Archival portrait of Sitting Bull, made after the battle",
       "subjects": [
         "Sitting Bull"
       ],
@@ -57,17 +57,16 @@
       }
     },
     {
-      "text": "In June 1876, George Custer approached the Little Bighorn.",
+      "text": "June 1876: Custer approached Little Bighorn.",
       "emphasis": [
         "Little Bighorn"
       ],
       "sfx": "whoosh",
       "pause_after": 0.12,
       "claims": [
-        1,
-        5
+        2
       ],
-      "visual": "George Armstrong Custer in cavalry uniform, Civil War photograph",
+      "visual": "Archival portrait of George Armstrong Custer",
       "subjects": [
         "George Armstrong Custer"
       ],
@@ -83,23 +82,23 @@
       }
     },
     {
-      "text": "His scouts warned him the village was too massive.",
+      "text": "Crow scouts located the enormous village.",
       "emphasis": [
-        "too massive"
+        "enormous village"
       ],
       "sfx": "none",
       "pause_after": 0.12,
       "claims": [
-        9
+        3
       ],
-      "visual": "Portrait of Crow scout Curley, 1876",
+      "visual": "Archival portrait of Crow scout Curley; representative scout image",
       "subjects": [
         "Curley (scout)"
       ],
       "year": 1876,
       "queries": [
-        "Crow scout Curley",
-        "Crow people"
+        "Curley Crow scout",
+        "Crow scouts Little Bighorn"
       ],
       "card": {
         "kind": "none",
@@ -108,48 +107,49 @@
       }
     },
     {
-      "text": "He ignored them, unaware General Crook had already retreated.",
+      "text": "Fearing it would scatter, Custer attacked.",
       "emphasis": [
-        "ignored"
+        "attacked"
       ],
       "sfx": "none",
       "pause_after": 0.12,
       "claims": [
         4
       ],
-      "visual": "General George Crook in military uniform, 1870s",
+      "visual": "Designed card: Custer orders immediate attack after fearing dispersal",
       "subjects": [
-        "George Crook"
+        "Battle of the Little Bighorn"
       ],
       "year": 1876,
       "queries": [
-        "General George Crook",
-        "Battle of the Rosebud"
+        "Little Bighorn village June 1876",
+        "Custer immediate attack"
       ],
       "card": {
-        "kind": "none",
-        "big": "",
-        "small": ""
+        "kind": "fact",
+        "big": "ATTACKED",
+        "small": "Feared the village would scatter"
       }
     },
     {
-      "text": "Custer split his force to stop them escaping.",
+      "text": "He split his cavalry. Reno's attack failed.",
       "emphasis": [
-        "split his force"
+        "split his cavalry"
       ],
       "sfx": "whoosh",
       "pause_after": 0.12,
       "claims": [
+        5,
         6
       ],
-      "visual": "Military map showing troop movements at the Little Bighorn",
+      "visual": "Map of Custer’s approach route, not a tactical map of the split",
       "subjects": [
         "Battle of the Little Bighorn"
       ],
       "year": 1876,
       "queries": [
         "Battle of the Little Bighorn map",
-        "Custer's Last Stand map"
+        "Custer 7th Cavalry route"
       ],
       "card": {
         "kind": "none",
@@ -158,47 +158,71 @@
       }
     },
     {
-      "text": "His final note begged for help that never arrived.",
+      "text": "Custer sent Benteen: 'Come On. Big Village. Be quick. Bring Packs.'",
       "emphasis": [
-        "final note"
+        "Bring Packs"
       ],
       "sfx": "riser",
-      "pause_after": 0.4,
+      "pause_after": 0.12,
       "claims": [
-        9,
-        10
+        7
       ],
-      "visual": "Photograph of the original handwritten note from Custer to Benteen",
+      "visual": "Designed excerpt card of W. W. Cooke’s message for Custer",
       "subjects": [
         "George Armstrong Custer"
       ],
       "year": 1876,
       "queries": [
-        "Custer message to Benteen",
-        "Little Bighorn note"
+        "Custer Benteen message Cooke",
+        "Custer last message"
       ],
       "card": {
         "kind": "quote",
-        "big": "Come on, Big Village",
-        "small": "George Custer"
+        "big": "Come On. Big Village. Be quick. Bring Packs.",
+        "small": "W. W. Cooke, for Custer"
       }
     },
     {
-      "text": "Over 200 men were wiped out in an hour.",
+      "text": "Benteen followed Weir north, but warriors forced them back.",
       "emphasis": [
-        "wiped out"
+        "forced them back"
       ],
-      "sfx": "pop",
+      "sfx": "none",
       "pause_after": 0.12,
       "claims": [
-        11,
-        14
+        8
       ],
-      "visual": "Last Stand Hill memorial obelisk at Little Bighorn Battlefield",
+      "visual": "Designed card: Benteen and Weir’s movement north was repelled",
+      "subjects": [
+        "Frederick Benteen",
+        "Thomas Weir"
+      ],
+      "year": 1876,
+      "queries": [
+        "Weir Point Little Bighorn",
+        "Benteen Weir Point"
+      ],
+      "card": {
+        "kind": "fact",
+        "big": "FORCED BACK",
+        "small": "Benteen followed Weir north"
+      }
+    },
+    {
+      "text": "All 210 in Custer's battalion were killed.",
+      "emphasis": [
+        "All 210"
+      ],
+      "sfx": "none",
+      "pause_after": 0.4,
+      "claims": [
+        9
+      ],
+      "visual": "Historic photograph of the 7th Cavalry monument on Last Stand Hill",
       "subjects": [
         "Battle of the Little Bighorn"
       ],
-      "year": 0,
+      "year": 1876,
       "queries": [
         "Last Stand Hill memorial",
         "7th Cavalry Memorial"
@@ -206,36 +230,11 @@
       "card": {
         "kind": "fact",
         "big": "210",
-        "small": "Men Fallen"
-      }
-    },
-    {
-      "text": "Sitting Bull's vision of falling soldiers had come true.",
-      "emphasis": [
-        "vision"
-      ],
-      "sfx": "none",
-      "pause_after": 0.12,
-      "claims": [
-        3
-      ],
-      "visual": "Sitting Bull standing with a pipe, archive photograph, 1881",
-      "subjects": [
-        "Sitting Bull"
-      ],
-      "year": 1876,
-      "queries": [
-        "Sitting Bull standing photograph",
-        "Sitting Bull"
-      ],
-      "card": {
-        "kind": "none",
-        "big": "",
-        "small": ""
+        "small": "Men in Custer’s battalion"
       }
     }
   ],
-  "hook_text": "THE PROPHETIC VISION",
-  "loop": true,
-  "better_than_last": "Adjusted spoken length down to 71 words to fit safely within the target limit, and integrated the reviewer's exact text for Beat 4 while ensuring the loop remains grammatically sound."
+  "hook_text": "BEFORE THE BATTLE",
+  "loop": false,
+  "better_than_last": "Replaced unsupported scout defiance, one-hour timing, and absent-relief claims with the NPS battle sequence and a correctly attributed dispatch."
 }

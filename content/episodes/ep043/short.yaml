@@ -1,15 +1,17 @@
 id: ep043
-title: Why Did Custer Ignore the Warnings at Little Bighorn? ⚠️
+title: Custer Split His Cavalry at Little Bighorn. Then What?
 series: The Last Hours
-description: George Custer's 7th Cavalry was annihilated after he ignored warnings from his scouts. Here is how Sitting Bull's
-  vision of falling soldiers came true.
+description: In June 1876, Custer divided his cavalry near the Little Bighorn. Reno's attack failed, Benteen's effort to reach
+  Custer was driven back, and all 210 men in Custer's battalion were killed.
 sources:
-- https://en.wikipedia.org/wiki/Battle_of_the_Little_Bighorn
-- http://blogs.loc.gov/law/2020/06/the-battle-of-greasy-grass
+- https://www.nps.gov/libi/learn/historyculture/battle-story.htm
+- https://blogs.loc.gov/law/2020/06/the-battle-of-greasy-grass/
 - https://www.nps.gov/libi/learn/a-chronology-of-the-battle-of-the-little-bighorn.htm
-- https://npshistory.com/publications/libi/index.htm
-- https://www.history.com/articles/little-bighorn-battle-facts-causes
-- http://www.bbc.co.uk/programmes/b0112xfd
+- https://www.nps.gov/libi/learn/historyculture/major-marcus-reno.htm
+- https://www.nps.gov/libi/learn/historyculture/lt-col-custer-s-battalion.htm
+- https://www.nps.gov/libi/learn/historyculture/reno-s-battalion.htm
+- https://www.nps.gov/libi/learn/historyculture/custer-s-last-message.htm
+- https://www.nps.gov/libi/learn/historyculture/benteen-s-battalion.htm
 hashtags:
 - '#history'
 - '#littlebighorn'
@@ -26,9 +28,9 @@ voice:
   voice: am_fenrir
   speed: 1.15
 beats:
-- text: Sitting Bull saw soldiers falling before they even arrived.
+- text: Sitting Bull's reported vision showed soldiers falling into his camp.
   emphasis:
-  - falling
+  - reported vision
   visual:
     source: url
     url: https://thumb.wikimedia.org/wikipedia/commons/thumb/5/57/En-chief-sitting-bull.jpg/1920px-En-chief-sitting-bull.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
@@ -48,7 +50,7 @@ beats:
     - 0.18
     - 0.82
     - 0.85
-- text: In June 1876, George Custer approached the Little Bighorn.
+- text: 'June 1876: Custer approached Little Bighorn.'
   emphasis:
   - Little Bighorn
   sfx: whoosh
@@ -76,9 +78,9 @@ beats:
       kind: dateline
       big: June 1876
       small: Montana Territory
-- text: His scouts warned him the village was too massive.
+- text: Crow scouts located the enormous village.
   emphasis:
-  - too massive
+  - enormous village
   visual:
     source: url
     url: https://thumb.wikimedia.org/wikipedia/commons/thumb/6/68/Portrait_of_Curley%2C_A_Crow_Indian_Scout_with_the_Seventh_Cavalry_at_the_Battle_of_the_Little_Bighorn_-_NARA_-_533090.jpg/1920px-Portrait_of_Curley%2C_A_Crow_Indian_Scout_with_the_Seventh_Cavalry_at_the_Battle_of_the_Little_Bighorn_-_NARA_-_533090.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
@@ -99,31 +101,19 @@ beats:
     - 0.15
     - 0.78
     - 0.78
-- text: He ignored them, unaware General Crook had already retreated.
+- text: Fearing it would scatter, Custer attacked.
   emphasis:
-  - ignored
+  - attacked
   visual:
-    source: url
-    url: https://thumb.wikimedia.org/wikipedia/commons/thumb/1/12/George_Crook_-_Brady-Handy.jpg/1920px-George_Crook_-_Brady-Handy.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
-    credit:
-      source: Wikimedia Commons
-      title: George Crook - Brady-Handy.jpg
-      credit: Mathew Benjamin Brady / Levin Corbin Handy
-      license: Public domain
-      url: https://commons.wikimedia.org/wiki/File:George_Crook_-_Brady-Handy.jpg
-    fallbacks:
-    - color
-    motion: pan_up
-    focus_x: 0.48
-    focus_y: 0.28
-    box:
-    - 0.22
-    - 0.08
-    - 0.72
-    - 0.52
-- text: Custer split his force to stop them escaping.
+    source: card
+    card:
+      kind: fact
+      big: ATTACKED
+      small: Feared the village would scatter
+    motion: zoom_in
+- text: He split his cavalry. Reno's attack failed.
   emphasis:
-  - split his force
+  - split his cavalry
   sfx: whoosh
   visual:
     source: url
@@ -139,22 +129,31 @@ beats:
     motion: pan_right
     focus_x: 0.5
     focus_y: 0.5
-- text: His final note begged for help that never arrived.
+- text: 'Custer sent Benteen: ''Come On. Big Village. Be quick. Bring Packs.'''
   emphasis:
-  - final note
+  - Bring Packs
   sfx: riser
-  pause_after: 0.4
   visual:
     source: card
     card:
       kind: quote
-      big: Come on, Big Village
-      small: George Custer
+      big: Come On. Big Village. Be quick. Bring Packs.
+      small: W. W. Cooke, for Custer
     motion: zoom_in
-- text: Over 200 men were wiped out in an hour.
+- text: Benteen followed Weir north, but warriors forced them back.
   emphasis:
-  - wiped out
-  sfx: pop
+  - forced them back
+  visual:
+    source: card
+    card:
+      kind: fact
+      big: FORCED BACK
+      small: Benteen followed Weir north
+    motion: zoom_in
+- text: All 210 in Custer's battalion were killed.
+  emphasis:
+  - All 210
+  pause_after: 0.4
   visual:
     source: url
     url: https://thumb.wikimedia.org/wikipedia/commons/thumb/8/80/Custer_Monument_on_Last_Stand_Hill_After_its_Completion_%281f50cb51d68b4015a1a61c673c88179b%29.tif/lossy-page1-1920px-Custer_Monument_on_Last_Stand_Hill_After_its_Completion_%281f50cb51d68b4015a1a61c673c88179b%29.tif.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
@@ -178,14 +177,6 @@ beats:
     card:
       kind: fact
       big: '210'
-      small: Men Fallen
-- text: Sitting Bull's vision of falling soldiers had come true.
-  emphasis:
-  - vision
-  visual:
-    reuse: 1
-    motion: zoom_out
-    focus_x: 0.51
-    focus_y: 0.31
+      small: Men in Custer’s battalion
 depth_motion: true
-hook_text: THE PROPHETIC VISION
+hook_text: BEFORE THE BATTLE
