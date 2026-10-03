@@ -1,6 +1,6 @@
 # ep027 Chicago phone-visuals candidate QA — 2026-10-04 IST
 
-**Status:** Private local candidate only. The ep027 editorial hold stays in place. Nothing was hosted, uploaded, scheduled or published. The earlier private candidate (SHA-256 `551a99ab4c3dea20de9b9fbf50c0816e33620fe9ea66f3aec5d8b1317baea436`) and its receipts in [rights-candidate-qa-2026-10-04.md](rights-candidate-qa-2026-10-04.md) are unchanged. That file stays in the `audit/ep027-image-rights-20261004` worktree and is untouched. Its audio and video screens do not apply to this new file.
+**Status:** Private review candidate. The ep027 editorial hold stays in place. The exact MP4 now has a [stable local copy and separate private Modal backup](phone-visuals-preservation-9477f4cc.json). No public media URL, YouTube upload, Buffer schedule or publication was created. The earlier private candidate (SHA-256 `551a99ab4c3dea20de9b9fbf50c0816e33620fe9ea66f3aec5d8b1317baea436`) and its receipts in [rights-candidate-qa-2026-10-04.md](rights-candidate-qa-2026-10-04.md) are unchanged. That file stays in the `audit/ep027-image-rights-20261004` worktree and is untouched. Its audio and video screens do not apply to this new file.
 
 ## What changed and why
 
@@ -20,7 +20,7 @@ The legend asset is a derivative of one stereo half: cropped inside the printed 
 
 | Check | Result |
 |---|---|
-| File | `ep027-phone-visuals-candidate.mp4` in this worktree's episode folder (ignored by Git; not hosted) |
+| File | `ep027-phone-visuals-candidate.mp4` in this worktree's episode folder (ignored by Git; not hosted), with a [separately verified stable local copy and private Modal backup](phone-visuals-preservation-9477f4cc.json) |
 | SHA-256 | `9477f4ccd2e38841f05b5ea30e4741c72eca9f33e3b4fb2963bd8e727743dfd5`, also in `work/manifest.json` |
 | Streams | H.264 1080 × 1920, 30 fps; AAC 48 kHz stereo; 26.9 s; 12,447,751 bytes |
 | Decode | Full FFmpeg decode of video and audio, no errors |
