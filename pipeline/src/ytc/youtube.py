@@ -231,6 +231,8 @@ def file_into_playlists(content_dir: Path) -> list[str]:
     members: dict[str, set[str]] = {}
     changes = []
     for record_path in sorted(content_dir.glob("*/publish.json")):
+        if (record_path.parent / "withdrawal.json").exists():
+            continue
         record = json.loads(record_path.read_text(encoding="utf-8"))
         found = re.search(r"(?:shorts/|v=|youtu\.be/)([\w-]{11})", record.get("youtube_url") or "")
         series = ShortSpec.load(record_path.parent / "short.yaml").series
@@ -263,6 +265,8 @@ def fix_languages(content_dir: Path) -> list[str]:
     and YouTube guessed French for ep013 (2026-10-01), which points its first test at the wrong viewers."""
     wanted = {}
     for record_path in sorted(content_dir.glob("*/publish.json")):
+        if (record_path.parent / "withdrawal.json").exists():
+            continue
         record = json.loads(record_path.read_text(encoding="utf-8"))
         if record.get("status") == "sent" and (found := re.search(r"(?:shorts/|v=|youtu\.be/)([\w-]{11})", record.get("youtube_url") or "")):
             wanted[found.group(1)] = record["id"]
@@ -288,6 +292,8 @@ def check_live(content_dir: Path) -> list[dict]:
     {"id", "problem"}, with YouTube's reason when it gives one."""
     now, problems, wanted = datetime.now(timezone.utc), [], {}
     for record_path in sorted(content_dir.glob("*/publish.json")):
+        if (record_path.parent / "withdrawal.json").exists():
+            continue
         record = json.loads(record_path.read_text(encoding="utf-8"))
         if record.get("status") != "sent" or not record.get("sent_at"):
             continue

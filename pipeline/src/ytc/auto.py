@@ -203,9 +203,12 @@ def episodes() -> list[dict]:
     for folder in sorted(EPISODES.glob("ep[0-9][0-9][0-9]")):
         record, held, topic = _json(folder / "publish.json"), _json(folder / "hold.json"), _json(folder / "topic.json")
         editorial_hold = _json(folder / "editorial_hold.json")
+        withdrawal = _json(folder / "withdrawal.json")
         remote = _json(folder / "remote.json")
         spec = yaml.safe_load((folder / "short.yaml").read_text(encoding="utf-8")) if (folder / "short.yaml").exists() else {}
-        if editorial_hold is not None and (not record or record.get("status") != "sent"):
+        if withdrawal is not None and record and record.get("status") == "sent":
+            state = "withdrawn"
+        elif editorial_hold is not None and (not record or record.get("status") != "sent"):
             # A queued Buffer post must be removed separately; this lock keeps the studio from scheduling it again.
             state = "editorial_hold"
         elif record:
@@ -220,7 +223,7 @@ def episodes() -> list[dict]:
             state = "unfinished"
         out.append({"id": folder.name, "folder": folder, "state": state, "title": spec.get("title"),
                     "series": spec.get("series") or (topic or {}).get("series"), "record": record, "held": held, "topic": topic,
-                    "remote": remote, "editorial_hold": editorial_hold})
+                    "remote": remote, "editorial_hold": editorial_hold, "withdrawal": withdrawal})
     return out
 
 
