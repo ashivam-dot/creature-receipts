@@ -1,6 +1,9 @@
-from datetime import datetime
+from datetime import datetime, timedelta, timezone
+import hashlib
+import json
 from pathlib import Path
 import subprocess
+from types import SimpleNamespace
 
 import pytest
 
@@ -77,6 +80,131 @@ def test_episode_hold_blocks_direct_crosspost_before_buffer_call(tmp_path, monke
     with pytest.raises(RuntimeError, match="ep026 is on editorial hold"):
         publish.crosspost(episode / "short.yaml", "tiktok", "channel", "https://cdn/video.mp4",
                           datetime.now(publish.AUDIENCE_TZ))
+
+
+def test_exact_media_release_only_opens_one_direct_schedule(tmp_path, monkeypatch):
+    marker = tmp_path / "scheduling_hold.json"
+    monkeypatch.setattr(publish, "SCHEDULING_HOLD", marker)
+    episode = tmp_path / "ep054"
+    (episode / "work").mkdir(parents=True)
+    spec = episode / "short.yaml"
+    spec.write_text("id: ep054\n")
+    video = episode / "ep054.mp4"
+    video.write_bytes(b"reviewed media")
+    (episode / "work" / "manifest.json").write_text(json.dumps(
+        {"id": "ep054", "video_sha256": publish._sha256(video)}))
+    monkeypatch.setattr(publish.ShortSpec, "load", lambda path: SimpleNamespace(id="ep054"))
+    binding = publish.media_binding(spec, "ep054")
+    allowed = {"episode_id": "ep054", **binding,
+               "expires_at_utc": (datetime.now(timezone.utc) + timedelta(hours=2)).isoformat()}
+    marker.write_text(json.dumps({"reason": "Editorial review", "block_existing_queue": True,
+                                  "release_allowlist": allowed}))
+
+    publish._require_scheduling_open(spec, exact_media_release=True)
+    (episode / "hold.json").write_text(json.dumps({**binding, "media_url": "https://cdn.example/ep054.mp4",
+                                                   "media_public_id": "creaturereceipts/ep054"}))
+    monkeypatch.setattr(publish, "description", lambda *args: "test description")
+    monkeypatch.setattr(publish, "posts", lambda **kwargs: pytest.fail("direct schedule reached Buffer read"))
+    monkeypatch.setattr(publish, "verify_hosted_media", lambda url, digest: None)
+    with pytest.raises(RuntimeError, match="New scheduling is on editorial hold"):
+        publish.schedule(spec)
+    with pytest.raises(pytest.fail.Exception, match="direct schedule reached Buffer read"):
+        publish.schedule(spec, reviewed_release=True)
+    monkeypatch.setattr(auto, "episodes", lambda: pytest.fail("auto inventory should not be queried"))
+    run = auto.Run("test")
+    auto.publish_waiting(run)
+    assert "production continues" in run.notes[-1]
+    with pytest.raises(RuntimeError, match="New scheduling is on editorial hold"):
+        publish._require_scheduling_open(spec)
+    with pytest.raises(RuntimeError, match="New scheduling is on editorial hold"):
+        publish._require_scheduling_open()
+
+    for field in publish.MEDIA_BINDING_FIELDS:
+        changed = dict(allowed, **{field: "0" * 64})
+        marker.write_text(json.dumps({"release_allowlist": changed}))
+        with pytest.raises(RuntimeError, match="New scheduling is on editorial hold"):
+            publish._require_scheduling_open(spec, exact_media_release=True)
+    marker.write_text(json.dumps({"release_allowlist": allowed}))
+    (episode / "ep054.mp4").write_bytes(b"changed media")
+    with pytest.raises(RuntimeError, match="New scheduling is on editorial hold"):
+        publish._require_scheduling_open(spec, exact_media_release=True)
+    (episode / "ep054.mp4").unlink()
+    with pytest.raises(RuntimeError, match="New scheduling is on editorial hold"):
+        publish._require_scheduling_open(spec, exact_media_release=True)
+
+
+def test_exact_media_release_requires_expiry_and_respects_episode_hold(tmp_path, monkeypatch):
+    marker = tmp_path / "scheduling_hold.json"
+    monkeypatch.setattr(publish, "SCHEDULING_HOLD", marker)
+    episode = tmp_path / "ep054"
+    (episode / "work").mkdir(parents=True)
+    spec = episode / "short.yaml"
+    spec.write_text("id: ep054\n")
+    (episode / "ep054.mp4").write_bytes(b"reviewed media")
+    (episode / "work" / "manifest.json").write_text('{"id":"ep054"}')
+    monkeypatch.setattr(publish.ShortSpec, "load", lambda path: SimpleNamespace(id="ep054"))
+    binding = publish.media_binding(spec, "ep054")
+    for expiry in ((datetime.now(timezone.utc) - timedelta(seconds=1)).isoformat(),
+                   datetime.now(timezone.utc).replace(tzinfo=None).isoformat(), "invalid"):
+        marker.write_text(json.dumps({"release_allowlist": {"episode_id": "ep054", **binding,
+                                                           "expires_at_utc": expiry}}))
+        with pytest.raises(RuntimeError, match="New scheduling is on editorial hold"):
+            publish._require_scheduling_open(spec, exact_media_release=True)
+    marker.write_text(json.dumps({"release_allowlist": {"episode_id": "ep054", **binding,
+                                                       "expires_at_utc": (datetime.now(timezone.utc) + timedelta(hours=2)).isoformat()}}))
+    (episode / "editorial_hold.json").write_text('{}')
+    with pytest.raises(RuntimeError, match="ep054 is on editorial hold"):
+        publish._require_scheduling_open(spec, exact_media_release=True)
+
+
+def test_hosted_bytes_are_checked_before_reviewed_release_reads_buffer(tmp_path, monkeypatch):
+    marker = tmp_path / "scheduling_hold.json"
+    monkeypatch.setattr(publish, "SCHEDULING_HOLD", marker)
+    episode = tmp_path / "ep054"
+    (episode / "work").mkdir(parents=True)
+    spec = episode / "short.yaml"
+    spec.write_text("id: ep054\n")
+    video = episode / "ep054.mp4"
+    video.write_bytes(b"reviewed media")
+    (episode / "work" / "manifest.json").write_text(json.dumps(
+        {"id": "ep054", "video_sha256": publish._sha256(video)}))
+    monkeypatch.setattr(publish.ShortSpec, "load", lambda path: SimpleNamespace(id="ep054"))
+    binding = publish.media_binding(spec, "ep054")
+    marker.write_text(json.dumps({"release_allowlist": {"episode_id": "ep054", **binding,
+                         "expires_at_utc": (datetime.now(timezone.utc) + timedelta(hours=2)).isoformat()}}))
+    monkeypatch.setattr(publish, "posts", lambda **kwargs: pytest.fail("Buffer must not be read"))
+    monkeypatch.setattr(publish, "host_video", lambda *args: pytest.fail("Must not host in-line"))
+    with pytest.raises(RuntimeError, match="pre-hosted"):
+        publish.schedule(spec, reviewed_release=True)
+    (episode / "hold.json").write_text(json.dumps({**binding, "media_url": "https://cdn.example/ep054.mp4",
+                                                   "media_public_id": "creaturereceipts/ep054"}))
+    monkeypatch.setattr(publish, "verify_hosted_media", lambda url, digest: (_ for _ in ()).throw(
+        RuntimeError("Hosted video differs from the reviewed media hash")))
+    with pytest.raises(RuntimeError, match="Hosted video differs"):
+        publish.schedule(spec, reviewed_release=True)
+
+
+def test_verify_hosted_media_hashes_downloaded_bytes(monkeypatch):
+    class Response:
+        headers = {"content-type": "video/mp4", "content-length": "14"}
+
+        def __enter__(self):
+            return self
+
+        def __exit__(self, *args):
+            return False
+
+        def raise_for_status(self):
+            pass
+
+        def iter_content(self, size):
+            return iter((b"reviewed ", b"media"))
+
+    monkeypatch.setattr(publish.requests, "get", lambda *args, **kwargs: Response())
+    digest = hashlib.sha256(b"reviewed media").hexdigest()
+    publish.verify_hosted_media("https://cdn.example/ep054.mp4", digest)
+    with pytest.raises(RuntimeError, match="differs from the reviewed media hash"):
+        publish.verify_hosted_media("https://cdn.example/ep054.mp4", "0" * 64)
 
 
 def _git(repo: Path, *args: str) -> None:

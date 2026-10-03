@@ -399,10 +399,15 @@ def assess(data: dict) -> list[tuple[str, str]]:
             else:
                 problems.append(("alert", f"Buffer couldn't publish a post due {_when(post.get('dueAt'))} IST: {why}"))
         due = sorted(_parse_time(p["dueAt"]) for p in buf["scheduled"] if p.get("dueAt"))
-        if scheduling_hold and scheduling_hold.get("block_existing_queue") and buf["scheduled"]:
-            problems.append(("alert", f"Editorial hold requires an empty Buffer queue, but {len(buf['scheduled'])} post(s) "
-                                     "are scheduled. Pause the YouTube queue in Buffer now, then remove the posts; "
-                                     "the hold does not stop posts already queued in Buffer."))
+        approved_id = scheduling_hold.get("approved_buffer_post_id") if isinstance(scheduling_hold, dict) else None
+        unexpected = [p for p in buf["scheduled"] if not isinstance(approved_id, str)
+                      or not approved_id or p.get("id") != approved_id]
+        if scheduling_hold and scheduling_hold.get("block_existing_queue") and unexpected:
+            intro = (f"Editorial hold permits only Buffer post {approved_id}, but {len(unexpected)} other post(s) "
+                     if isinstance(approved_id, str) and approved_id else
+                     f"Editorial hold requires an empty Buffer queue, but {len(unexpected)} post(s) ")
+            problems.append(("alert", intro + "are scheduled. Pause the YouTube queue in Buffer now, then remove "
+                                     "the posts; the hold does not stop posts already queued in Buffer."))
         if not due:
             if not scheduling_hold:
                 problems.append(("alert", "Buffer has nothing scheduled: no Shorts will go out."))

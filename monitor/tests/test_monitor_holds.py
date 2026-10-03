@@ -78,3 +78,26 @@ def test_strict_editorial_hold_alerts_if_buffer_queue_is_not_empty():
     assert ("alert", "Editorial hold requires an empty Buffer queue, but 1 post(s) are scheduled. "
             "Pause the YouTube queue in Buffer now, then remove the posts; "
             "the hold does not stop posts already queued in Buffer.") in problems
+
+
+def test_strict_hold_exempts_only_explicit_approved_buffer_post():
+    now = dt.datetime.now(dt.timezone.utc)
+    data = {
+        "github": {
+            "status": {"inventory": {"total": 0}}, "runs": [],
+            "history": [{"result": "ok", "started_at_utc": now.isoformat(), "seconds": 1}],
+            "workflow_state": "active", "minutes": 0,
+            "scheduling_hold": {"reason": "Review pending", "block_existing_queue": True,
+                                "approved_buffer_post_id": "approved-post"},
+        },
+        "buffer": {
+            "scheduled": [{"id": "approved-post", "dueAt": (now + dt.timedelta(hours=2)).isoformat()}],
+            "sent": [], "channel": {"isDisconnected": False, "isLocked": False, "isQueuePaused": False},
+        },
+    }
+    assert not any("Editorial hold requires an empty Buffer queue" in message for _, message in assess(data))
+
+    data["buffer"]["scheduled"].append({"id": "unexpected-post", "dueAt": (now + dt.timedelta(hours=3)).isoformat()})
+    assert ("alert", "Editorial hold permits only Buffer post approved-post, but 1 other post(s) are scheduled. "
+            "Pause the YouTube queue in Buffer now, then remove the posts; "
+            "the hold does not stop posts already queued in Buffer.") in assess(data)

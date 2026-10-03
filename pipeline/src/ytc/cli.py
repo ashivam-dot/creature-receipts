@@ -47,6 +47,8 @@ def main() -> None:
     publish = commands.add_parser("publish", help="schedule a rendered Short on YouTube through Buffer")
     publish.add_argument("spec", type=Path)
     publish.add_argument("--at", type=datetime.fromisoformat, help="ISO time with offset; default is the next free slot")
+    publish.add_argument("--reviewed-release", action="store_true",
+                         help="use the exact-media channel-hold allowlist for a pre-hosted, reviewed release")
     commands.add_parser("sync", help="refresh publish records from Buffer and free hosted media of live posts")
     commands.add_parser("channels", help="list the channels connected to Buffer")
     commands.add_parser("auth", help="one-time sign-in for YouTube analytics and playlists")
@@ -108,7 +110,7 @@ def _run(args: argparse.Namespace) -> None:
     elif args.command == "publish":
         from .publish import schedule
 
-        print(json.dumps(schedule(args.spec, args.at), indent=2))
+        print(json.dumps(schedule(args.spec, args.at, reviewed_release=args.reviewed_release), indent=2))
     elif args.command == "sync":
         from .publish import sync
 

@@ -2,6 +2,7 @@ import json
 from pathlib import Path
 
 from ytc.captions import write_ass
+from ytc.publish import _image_credits
 from ytc.spec import Beat, CaptionStyle, ShortSpec, Visual
 from ytc.tts import Word
 from ytc.visuals import _cached, _file
@@ -50,3 +51,13 @@ def test_cached_local_derivative_uses_current_credit_and_source(tmp_path):
     assert asset.credit == {**credit, "path": str(source)}
     source.write_bytes(b"changed image")
     assert _cached(beat, out, tmp_path) is None
+
+
+def test_cc_by_image_credit_links_the_license_and_original():
+    manifest = {"beats": [{"asset": {"source": "Wikimedia Commons derivative", "title": "Winton crop.jpg",
+                                   "credit": "Hynek Moravec", "license": "CC BY 3.0",
+                                   "url": "https://commons.wikimedia.org/wiki/File:Winton_Nicholas_4637.jpg"}}]}
+    line = _image_credits(manifest, links=True)[0]
+    assert "Hynek Moravec" in line
+    assert "https://creativecommons.org/licenses/by/3.0/" in line
+    assert "https://commons.wikimedia.org/wiki/File:Winton_Nicholas_4637.jpg" in line

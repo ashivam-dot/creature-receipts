@@ -65,12 +65,42 @@ def _env(name: str) -> str:
     raise RuntimeError(f"{name} is not set in pipeline/.env (see kit/ACCOUNTS.md)")
 
 
-def _require_scheduling_open(spec_path: Path | None = None) -> None:
-    """Apply editorial locks before any Buffer mutation that creates a due post."""
-    if SCHEDULING_HOLD.exists():
-        raise RuntimeError("New scheduling is on editorial hold; remove status/scheduling_hold.json only after review")
+def _require_scheduling_open(spec_path: Path | None = None, *, exact_media_release: bool = False) -> None:
+    """Apply editorial locks before any Buffer mutation that creates a due post.
+
+    A channel hold may authorize one direct YouTube schedule by exact local media binding. The
+    automatic scheduler, crossposts, queued edits, and resends never use this exception.
+    """
+    if exact_media_release and not SCHEDULING_HOLD.exists():
+        raise RuntimeError("Exact-media release requires the active channel scheduling hold")
     if spec_path is not None and (spec_path.parent / "editorial_hold.json").exists():
         raise RuntimeError(f"{spec_path.parent.name} is on editorial hold; remove editorial_hold.json after repair and review")
+    if SCHEDULING_HOLD.exists():
+        blocked = "New scheduling is on editorial hold; remove status/scheduling_hold.json only after review"
+        if not exact_media_release or spec_path is None:
+            raise RuntimeError(blocked)
+        try:
+            hold = json.loads(SCHEDULING_HOLD.read_text(encoding="utf-8"))
+            allowed = hold.get("release_allowlist") if isinstance(hold, dict) else None
+            if not isinstance(allowed, dict):
+                raise ValueError("missing release allowlist")
+            expiry = datetime.fromisoformat(allowed["expires_at_utc"])
+            if expiry.tzinfo is None or expiry.utcoffset() != timedelta(0) or datetime.now(timezone.utc) >= expiry:
+                raise ValueError("release allowlist expired or is not UTC")
+            episode_id = spec_path.parent.name
+            if allowed.get("episode_id") != episode_id or ShortSpec.load(spec_path).id != episode_id:
+                raise ValueError("episode ID mismatch")
+            manifest = json.loads((spec_path.parent / "work" / "manifest.json").read_text(encoding="utf-8"))
+            if manifest.get("id") != episode_id:
+                raise ValueError("manifest ID mismatch")
+            if not (spec_path.parent / f"{episode_id}.mp4").is_file():
+                raise ValueError("reviewed media file is missing")
+            binding = media_binding(spec_path, episode_id)
+            if any(not re.fullmatch(r"[0-9a-f]{64}", str(allowed.get(field, "")))
+                   or allowed[field] != binding[field] for field in MEDIA_BINDING_FIELDS):
+                raise ValueError("media binding mismatch")
+        except (KeyError, ValueError, TypeError, OSError, json.JSONDecodeError) as exc:
+            raise RuntimeError(blocked) from exc
 
 
 class BufferBusy(RuntimeError):
@@ -459,7 +489,10 @@ def _image_credits(manifest: dict, links: bool) -> list[str]:
         title = title.replace('"', "'")
         source = asset["source"].removesuffix(" (CC0)")
         rights = asset.get("license") or ("CC0" if "CC0" in asset["source"] else "public domain")
-        parts = [f'"{title}"', _clean_credit(asset.get("credit")), rights, source, asset.get("url") if links else None]
+        cc_by = re.fullmatch(r"CC BY (\d(?:\.\d)?)", rights, flags=re.I)
+        license_url = f"https://creativecommons.org/licenses/by/{cc_by.group(1)}/" if cc_by and links else None
+        parts = [f'"{title}"', _clean_credit(asset.get("credit")), rights, license_url,
+                 source, asset.get("url") if links else None]
         lines.append("- " + ", ".join(p for p in parts if p))
     return lines
 
@@ -532,6 +565,23 @@ def media_binding(spec_path: Path, episode_id: str) -> dict[str, str]:
             "manifest_sha256": _sha256(manifest_path)}
 
 
+def verify_hosted_media(media_url: str, expected_sha256: str) -> None:
+    """Read the public asset Buffer will fetch and compare every byte to the reviewed render."""
+    digest = hashlib.sha256()
+    with requests.get(media_url, stream=True, timeout=(15, 60)) as response:
+        response.raise_for_status()
+        kind = response.headers.get("content-type", "")
+        expected_bytes = int(response.headers.get("content-length") or 0)
+        got = 0
+        for chunk in response.iter_content(1 << 20):
+            got += len(chunk)
+            digest.update(chunk)
+    if not kind.startswith("video/") or not got or (expected_bytes and got != expected_bytes):
+        raise RuntimeError(f"Hosted video is incomplete or not video: {kind}, {got} of {expected_bytes} bytes")
+    if digest.hexdigest() != expected_sha256:
+        raise RuntimeError("Hosted video differs from the reviewed media hash; Buffer scheduling blocked")
+
+
 def _validate_hold(held: dict, episode_id: str, binding: dict[str, str] | None = None) -> None:
     if held.get("superseded"):
         raise RuntimeError(f"{episode_id} has a superseded hosted video; host the repaired render before scheduling")
@@ -542,9 +592,9 @@ def _validate_hold(held: dict, episode_id: str, binding: dict[str, str] | None =
                            "host the repaired render before scheduling")
 
 
-def schedule(spec_path: Path, when: datetime | None = None) -> dict:
+def schedule(spec_path: Path, when: datetime | None = None, *, reviewed_release: bool = False) -> dict:
     spec_path = spec_path.resolve()
-    _require_scheduling_open(spec_path)
+    _require_scheduling_open(spec_path, exact_media_release=reviewed_release)
     spec = ShortSpec.load(spec_path)
     folder = spec_path.parent
     record_path = folder / "publish.json"
@@ -554,13 +604,19 @@ def schedule(spec_path: Path, when: datetime | None = None) -> dict:
     video = folder / f"{spec.id}.mp4"
     held_path = folder / "hold.json"
     held = json.loads(held_path.read_text(encoding="utf-8")) if held_path.exists() else None
+    if reviewed_release and (not held or not held.get("media_url") or not held.get("media_public_id")):
+        raise RuntimeError(f"{spec.id} reviewed release requires a pre-hosted, bound hold.json")
     if held is not None:
         _validate_hold(held, spec.id)
     if held is None:
         _stamp_manifest_media(folder, spec.id)
     binding = media_binding(spec_path, spec.id)
+    _require_scheduling_open(spec_path, exact_media_release=reviewed_release)
     if held is not None:
         _validate_hold(held, spec.id, binding)
+    if reviewed_release:
+        verify_hosted_media(held["media_url"], binding["media_sha256"])
+        _require_scheduling_open(spec_path, exact_media_release=True)
     manifest = json.loads((folder / "work" / "manifest.json").read_text(encoding="utf-8"))
 
     text = description(spec, manifest)
@@ -571,6 +627,8 @@ def schedule(spec_path: Path, when: datetime | None = None) -> dict:
     lead = text.split("\n\n", 1)[0]
     if twin := next((p for p in recent if (p.get("text") or "").split("\n\n", 1)[0] == lead
                      and p["status"] not in ("error", "draft")), None):
+        if reviewed_release:
+            raise RuntimeError(f"Existing Buffer post {twin['id']} matches {spec.id}; inspect it before a reviewed release")
         log.warning("%s is already Buffer post %s; recording it instead of posting it again", spec.id, twin["id"])
         return _record(folder, spec, twin, held["media_public_id"] if held else f"creaturereceipts/{spec.id}",
                        held["media_url"] if held else None, binding)
