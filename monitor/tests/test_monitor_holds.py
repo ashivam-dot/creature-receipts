@@ -2,7 +2,53 @@
 
 import datetime as dt
 
-from monitor.monitor import assess
+from monitor.monitor import _read_buffer, assess
+
+
+def test_watchdog_never_reads_posts_for_an_unbound_youtube_destination(monkeypatch):
+    calls = []
+
+    def fake_buffer(_key, query, variables=None):
+        calls.append((query, variables))
+        if "organizations" in query:
+            return {"account": {"organizations": [{"id": "org"}]}}
+        if "channels(input" in query:
+            return {"channels": [{"id": "other", "service": "youtube"},
+                                 {"id": "wanted", "service": "instagram"}]}
+        raise AssertionError("watchdog read a post queue without the bound YouTube channel")
+
+    monkeypatch.setattr("monitor.monitor._buffer", fake_buffer)
+    missing = _read_buffer("test-key", {}, None)
+    assert missing["binding_error"] and not calls
+    wrong = _read_buffer("test-key", {"BUFFER_YOUTUBE_CHANNEL_ID": "wanted"}, None)
+    assert wrong["binding_error"] and len(calls) == 2
+
+    channels = [{"id": "other", "service": "youtube"},
+                {"id": "wanted", "service": "youtube"}]
+
+    def exact_buffer(_key, query, variables=None):
+        if "organizations" in query:
+            return {"account": {"organizations": [{"id": "org"}]}}
+        if "channels(input" in query:
+            return {"channels": channels}
+        assert variables["input"]["filter"]["channelIds"] == ["wanted"]
+        return {"posts": {"edges": [], "pageInfo": {"hasNextPage": False}}}
+
+    monkeypatch.setattr("monitor.monitor._buffer", exact_buffer)
+    exact = _read_buffer("test-key", {"BUFFER_YOUTUBE_CHANNEL_ID": "wanted"}, None)
+    assert exact["channel"]["id"] == "wanted" and exact["scheduled"] == []
+
+
+def test_watchdog_alerts_on_buffer_destination_binding_error():
+    now = dt.datetime.now(dt.timezone.utc)
+    data = {
+        "github": {"status": {"inventory": {"total": 0}}, "runs": [],
+                   "history": [{"result": "ok", "started_at_utc": now.isoformat(), "seconds": 1}],
+                   "workflow_state": "active", "minutes": 0},
+        "buffer": {"error": "configured Buffer YouTube destination is missing or mismatched",
+                   "binding_error": True},
+    }
+    assert ("alert", "Can't read Buffer: configured Buffer YouTube destination is missing or mismatched") in assess(data)
 
 
 def test_private_sent_posts_and_editorial_pause_do_not_raise_false_delivery_alerts():

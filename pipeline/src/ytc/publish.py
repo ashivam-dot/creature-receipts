@@ -164,19 +164,19 @@ def channels() -> list[dict]:
 
 
 def youtube_channel_id() -> str:
-    if channel := os.environ.get("BUFFER_YOUTUBE_CHANNEL_ID"):
-        return channel
-    for channel in channels():
-        if channel["service"] == "youtube" and not channel["isDisconnected"]:
-            return channel["id"]
-    raise RuntimeError("No connected YouTube channel in Buffer")
+    """Use only the configured, verified YouTube destination."""
+    return channel()["id"]
 
 
 def channel() -> dict:
     """The YouTube channel as Buffer has it. Disconnected, locked, or a paused queue each stop every post."""
-    found = channels()
-    wanted = os.environ.get("BUFFER_YOUTUBE_CHANNEL_ID")
-    return next((c for c in found if c["id"] == wanted), None) or next(c for c in found if c["service"] == "youtube")
+    wanted = os.environ.get("BUFFER_YOUTUBE_CHANNEL_ID", "").strip()
+    if not wanted:
+        raise RuntimeError("BUFFER_YOUTUBE_CHANNEL_ID is required for this channel")
+    matched = next((item for item in channels() if item["id"] == wanted), None)
+    if matched is None or matched.get("service") != "youtube":
+        raise RuntimeError("Configured Buffer YouTube channel is missing or has the wrong service")
+    return matched
 
 
 def posts(since: datetime | None = None, channel_id: str | None = None) -> list[dict]:

@@ -195,8 +195,9 @@ def buffer(env: dict) -> dict:
     if kept.get("next_read") and now < dt.datetime.fromisoformat(kept["next_read"]):
         return kept
     try:
-        found = _read_buffer(key, env, kept.get("org")) | {"checked_at": now.isoformat(),
-                                                             "next_read": (now + BUFFER_EVERY).isoformat()}
+        found = _read_buffer(key, env, kept.get("org"))
+        interval = dt.timedelta(minutes=15) if found.get("binding_error") else BUFFER_EVERY
+        found |= {"checked_at": now.isoformat(), "next_read": (now + interval).isoformat()}
     except urllib.error.HTTPError as err:
         if err.code != 429:
             raise
@@ -213,16 +214,20 @@ def _read_buffer(key: str, env: dict, org: str | None) -> dict:
         edges { node { id status dueAt sentAt externalLink text error { message }
                        metadata { ... on YoutubePostMetadata { title } } } }
         pageInfo { hasNextPage endCursor } } }"""
+    wanted = str(env.get("BUFFER_YOUTUBE_CHANNEL_ID") or "").strip()
+    if not wanted:
+        return {"error": "configured BUFFER_YOUTUBE_CHANNEL_ID is missing", "binding_error": True}
     org = org or _buffer(key, "query { account { organizations { id } } }")["account"]["organizations"][0]["id"]
     channels = _buffer(key, """query Channels($input: ChannelsInput!) {
       channels(input: $input) { id service isDisconnected isLocked isQueuePaused } }""",
                        {"input": {"organizationId": org}})["channels"]
-    youtube = next((c for c in channels if c["id"] == env.get("BUFFER_YOUTUBE_CHANNEL_ID")), None) \
-        or next((c for c in channels if c["service"] == "youtube"), None)
+    youtube = next((c for c in channels if c["id"] == wanted), None)
+    if youtube is None or youtube.get("service") != "youtube":
+        return {"error": "configured Buffer YouTube destination is missing or mismatched",
+                "binding_error": True, "org": org}
     now = dt.datetime.now(UTC)
     filters = {"startDate": (now - dt.timedelta(days=3)).isoformat(), "endDate": (now + dt.timedelta(days=365)).isoformat()}
-    if channel := env.get("BUFFER_YOUTUBE_CHANNEL_ID"):
-        filters["channelIds"] = [channel]
+    filters["channelIds"] = [wanted]
     variables = {"input": {"organizationId": org, "filter": filters}, "after": None}
     posts = []
     while True:
@@ -385,7 +390,8 @@ def assess(data: dict) -> list[tuple[str, str]]:
         problems.append(("warn", f"GitHub Actions minutes this month: about {minutes:.0f} of {MINUTES_LIMIT}."))
     buf = data.get("buffer") or {}
     if buf.get("error"):
-        problems.append(("warn", f"Can't read Buffer: {buf['error']}"))
+        problems.append(("alert" if buf.get("binding_error") else "warn",
+                         f"Can't read Buffer: {buf['error']}"))
     elif "scheduled" in buf:
         channel = buf.get("channel") or {}
         wrong = [name for flag, name in (("isDisconnected", "disconnected"), ("isLocked", "locked"),
