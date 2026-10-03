@@ -1,6 +1,6 @@
 # ep025 private replacement review — 2026-10-03
 
-This review applies to the locally rendered replacement `ep025-replacement-private.mp4`, SHA-256 `4c329bfc954293da18534a6471acbda1ca7d348fc0983ae129b4f51239801b29`. The MP4 is ignored by Git and remains only in this isolated worktree. The original YouTube upload remains private under `withdrawal.json`; this review does not authorize reupload or scheduling.
+This review applies to the locally rendered replacement `ep025-replacement-private.mp4`, SHA-256 `4c329bfc954293da18534a6471acbda1ca7d348fc0983ae129b4f51239801b29`. The MP4 is ignored by Git; the exact bytes were copied into the main checkout for review. The original YouTube upload remains private under `withdrawal.json`; this review does not authorize reupload or scheduling.
 
 ## Source and editorial review
 
@@ -18,7 +18,7 @@ This review applies to the locally rendered replacement `ep025-replacement-priva
 | True peak | -1.8 dBFS |
 | Pipeline warnings | None |
 | Speech recognition | Full narration transcribed; zero word differences against the script, recorded in `work/speech.json` |
-| Visual review | Frames at 0.20, 1.00 and 3.00 seconds, plus one middle frame of each beat, checked for legibility, image/story fit and placeholders. The archival wreckage opening and the revised “4 + 2” card are readable; no blank or generated placeholder appeared. |
+| Visual review | Frames at 0.20, 1.00 and 3.00 seconds, plus one middle frame of each beat, checked for legibility, image/story fit and placeholders. The archival wreckage opening and the revised “4 + 2” card are readable; no blank or generated placeholder appeared. The main checkout's `sheet.jpg` now contains the seven replacement beat frames. |
 | Focused tests | `test_editorial_withdrawal.py`, `test_editorial_hold.py`, and `test_history_cards.py`: 6 passed |
 
 Speech recognition is a machine check; no native listening check is claimed. The 1929 Cardington image represents R101 and is not footage of the last flight. The March 1931 inquiry PDF was downloaded and its official cover verified, but the scan is image-only and was not text-audited; the scripted points are supported by the directly read Airship Heritage Trust pages.
