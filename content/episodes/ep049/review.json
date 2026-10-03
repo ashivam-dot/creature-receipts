@@ -1,0 +1,60 @@
+{
+  "rounds": [
+    {
+      "at": "2026-10-03T05:07:34+05:30",
+      "check": {
+        "duration": 30.1,
+        "words": 66,
+        "integrated_lufs": -14.4,
+        "true_peak_dbfs": -1.8,
+        "warnings": [],
+        "speech_differences": [
+          "'attendant' heard as 'tenant' after 'in a panic'",
+          "'s' heard as 'is' after 'save george washington'",
+          "'capital' heard as 'capitol' after 'storm struck the'"
+        ],
+        "speech_error": null,
+        "sources": [
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons"
+        ]
+      },
+      "scores": {
+        "hook": 3,
+        "clarity": 3,
+        "payoff": 3,
+        "visuals": 3,
+        "loop": 2
+      },
+      "notes": {
+        "hook": "Lacks urgency and feels like a standard textbook opening.",
+        "clarity": "Narrative flow is mostly clear until the confusing concluding loop line.",
+        "payoff": "The storm resolves the crisis, though the title spoils the twist early.",
+        "visuals": "Period-accurate archival illustrations support the historical narrative well.",
+        "loop": "The final sentence contradicts chronology by claiming destruction ended when troops entered."
+      },
+      "frames": [],
+      "speech": [
+        {
+          "beat": 3,
+          "word": "Attendant",
+          "respelling": "uh ten dunt"
+        }
+      ],
+      "rewrite": [
+        "Beat 1: British invaders set Washington ablaze in August 1814.",
+        "Beat 8: Only nature could halt the rampage ignited when..."
+      ],
+      "better_than_last": "",
+      "judge": "gemini-3.8-flash",
+      "passed": false
+    }
+  ],
+  "best_round": 1
+}

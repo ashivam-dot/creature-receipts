@@ -1,0 +1,99 @@
+{
+  "rounds": [
+    {
+      "at": "2026-10-03T05:09:39+05:30",
+      "check": {
+        "duration": 27.27,
+        "words": 62,
+        "integrated_lufs": -14.3,
+        "true_peak_dbfs": -1.8,
+        "warnings": [],
+        "speech_differences": [
+          "'worsley' heard as 'worsely' after 'frank'"
+        ],
+        "speech_error": null,
+        "sources": [
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "designed card",
+          "Wikimedia Commons"
+        ]
+      },
+      "scores": {
+        "hook": 4,
+        "clarity": 4,
+        "payoff": 4,
+        "visuals": 3,
+        "loop": 4
+      },
+      "notes": {
+        "hook": "Strong opening hook establishing immediate stakes and navigational difficulty.",
+        "clarity": "Chronological progression remains easy to follow on a single viewing.",
+        "payoff": "Satisfying confirmation of total survival tied back to the opening.",
+        "visuals": "Archival imagery is authentic though beat 3 uses modern indoor museum footage.",
+        "loop": "Last line flows smoothly into the opening beat naming the navigator."
+      },
+      "frames": [],
+      "speech": [],
+      "rewrite": [],
+      "better_than_last": "Features a tighter narrative structure with clearer character stakes than recent episodes.",
+      "judge": "gemini-3.7-flash",
+      "passed": false
+    },
+    {
+      "at": "2026-10-03T05:11:43+05:30",
+      "check": {
+        "duration": 27.27,
+        "words": 62,
+        "integrated_lufs": -14.3,
+        "true_peak_dbfs": -1.9,
+        "warnings": [],
+        "speech_differences": [
+          "'worsley' heard as 'grossly' after 'frank'"
+        ],
+        "speech_error": null,
+        "sources": [
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "designed card",
+          "Wikimedia Commons"
+        ]
+      },
+      "scores": {
+        "hook": 4,
+        "clarity": 3,
+        "payoff": 4,
+        "visuals": 4,
+        "loop": 4
+      },
+      "notes": {
+        "hook": "Strong historical hook that immediately sets up an impressive feat.",
+        "clarity": "The random confession about Shackleton's sailing skills disrupts the narrative flow.",
+        "payoff": "Successfully loops back to resolve how the navigator saved the entire crew.",
+        "visuals": "Excellent use of clear, highly relevant archival photographs.",
+        "loop": "Perfect verbal transition back to the first line."
+      },
+      "frames": [],
+      "speech": [
+        {
+          "beat": 1,
+          "word": "Worsley",
+          "respelling": "werz lee"
+        }
+      ],
+      "rewrite": [
+        "Beat 4: Replace 'Shackleton confessed he actually knew nothing about sailing.' with 'Shackleton relied entirely on Worsley's navigation.'"
+      ],
+      "better_than_last": "This episode features a much tighter narrative loop than Nicholas Winton’s rescue story.",
+      "judge": "gemini-3.5-flash",
+      "passed": false
+    }
+  ],
+  "best_round": 1
+}

@@ -2,21 +2,21 @@
   "hooks": [
     {
       "style": "statement",
-      "text": "Frank Worsley navigated 800 miles with only four sun sightings."
+      "text": "In 1915, pack ice crushed the expedition ship Endurance."
     },
     {
       "style": "question",
-      "text": "Can a navigator guide a lifeboat using only four sun sightings?"
+      "text": "How did 28 men survive on the world's deadliest ocean?"
     },
     {
       "style": "number",
-      "text": "Four fleeting sun sightings saved 28 stranded men."
+      "text": "Four sun sightings saved 28 men from the Antarctic ice."
     }
   ],
   "hook_style": "statement",
   "structure": "countdown",
-  "title": "How Did Shackleton's Crew Survive the Deadliest Ocean? ⛵",
-  "description": "In 1916, Sir Ernest Shackleton launched a desperate 800-mile rescue mission in a tiny 22-foot lifeboat. This is the unbelievable story of the Voyage of the James Caird.",
+  "title": "How Did Shackleton's Crew Survive the Deadliest Ocean? ⚓",
+  "description": "In 1916, Sir Ernest Shackleton launched a desperate 800-mile rescue mission in a tiny 22-foot lifeboat. This is the incredible story of survival and the James Caird.",
   "hashtags": [
     "#history",
     "#shackleton",
@@ -28,29 +28,54 @@
     "endurance",
     "frank worsley",
     "antarctica",
-    "survival story"
+    "doomed expeditions"
   ],
   "beats": [
     {
-      "text": "Frank Worsley navigated 800 miles with only four sun sightings.",
+      "text": "In 1915, pack ice crushed the expedition ship Endurance.",
       "emphasis": [
-        "800 miles",
-        "four sun sightings"
+        "pack ice",
+        "Endurance"
       ],
       "sfx": "none",
       "pause_after": 0.12,
       "claims": [
-        5,
-        12
+        1
       ],
-      "visual": "photograph of Frank Worsley, captain and navigator of the Endurance",
+      "visual": "photograph of the Endurance trapped in pack ice, 1915",
       "subjects": [
-        "Frank Worsley"
+        "Endurance (1912 ship)"
+      ],
+      "year": 1915,
+      "queries": [
+        "Endurance trapped in pack ice",
+        "Frank Hurley Endurance ice"
+      ],
+      "card": {
+        "kind": "dateline",
+        "big": "1915",
+        "small": "The Weddell Sea"
+      }
+    },
+    {
+      "text": "Twenty-eight men were stranded on the drifting Antarctic ice.",
+      "emphasis": [
+        "Twenty-eight men",
+        "stranded"
+      ],
+      "sfx": "whoosh",
+      "pause_after": 0.12,
+      "claims": [
+        2
+      ],
+      "visual": "photograph of crew members at Patience Camp on ice floe, 1916",
+      "subjects": [
+        "Imperial Trans-Antarctic Expedition"
       ],
       "year": 1916,
       "queries": [
-        "Frank Worsley",
-        "Frank Worsley portrait"
+        "Patience Camp Endurance",
+        "Shackleton crew ice camp"
       ],
       "card": {
         "kind": "none",
@@ -59,37 +84,9 @@
       }
     },
     {
-      "text": "In 1916, 28 men were stranded on Elephant Island.",
+      "text": "Carpenter Harry McNish sealed a 22-foot lifeboat with seal blood.",
       "emphasis": [
-        "28 men",
-        "Elephant Island"
-      ],
-      "sfx": "whoosh",
-      "pause_after": 0.12,
-      "claims": [
-        2,
-        3
-      ],
-      "visual": "photograph of the Endurance crew stranded on the Antarctic ice",
-      "subjects": [
-        "Imperial Trans-Antarctic Expedition",
-        "Elephant Island"
-      ],
-      "year": 1916,
-      "queries": [
-        "Patience Camp Endurance",
-        "Elephant Island 1916"
-      ],
-      "card": {
-        "kind": "dateline",
-        "big": "1916",
-        "small": "Elephant Island"
-      }
-    },
-    {
-      "text": "Harry McNish sealed their 22-foot lifeboat with seal blood.",
-      "emphasis": [
-        "22-foot lifeboat",
+        "22-foot",
         "seal blood"
       ],
       "sfx": "none",
@@ -99,7 +96,7 @@
         8,
         9
       ],
-      "visual": "photograph of launching the James Caird from Elephant Island",
+      "visual": "photograph of the James Caird being launched from Elephant Island, 1916",
       "subjects": [
         "James Caird (lifeboat)",
         "Harry McNish"
@@ -112,118 +109,118 @@
       "card": {
         "kind": "fact",
         "big": "Seal Blood",
-        "small": "used to seal the lifeboat"
+        "small": "used as sealant"
       }
     },
     {
-      "text": "Shackleton confessed he actually knew nothing about sailing.",
+      "text": "Shackleton relied entirely on Worsley's navigation.",
       "emphasis": [
-        "nothing",
-        "sailing"
+        "entirely",
+        "navigation"
       ],
-      "sfx": "riser",
+      "sfx": "none",
       "pause_after": 0.12,
       "claims": [
-        10
+        10,
+        12
       ],
-      "visual": "photograph of Sir Ernest Shackleton in Antarctic gear",
+      "visual": "photograph of Captain Frank Worsley, navigator of the Endurance",
       "subjects": [
+        "Frank Worsley",
         "Ernest Shackleton"
       ],
       "year": 1916,
       "queries": [
-        "Ernest Shackleton portrait",
-        "Ernest Shackleton 1916"
+        "Frank Worsley portrait",
+        "Captain Frank Worsley"
       ],
       "card": {
-        "kind": "quote",
-        "big": "nothing about sailing",
-        "small": "Ernest Shackleton"
+        "kind": "none",
+        "big": "",
+        "small": ""
       }
     },
     {
-      "text": "For 17 days, freezing spray threatened to capsize the craft.",
+      "text": "They faced 800 miles of the world's deadliest ocean.",
       "emphasis": [
-        "17 days",
-        "capsize"
+        "800 miles",
+        "deadliest"
+      ],
+      "sfx": "riser",
+      "pause_after": 0.12,
+      "claims": [
+        5
+      ],
+      "visual": "map showing the 800-mile route from Elephant Island to South Georgia",
+      "subjects": [
+        "Voyage of the James Caird",
+        "Southern Ocean"
+      ],
+      "year": 1916,
+      "queries": [
+        "Voyage of the James Caird map",
+        "Shackleton South Georgia map"
+      ],
+      "card": {
+        "kind": "none",
+        "big": "",
+        "small": ""
+      }
+    },
+    {
+      "text": "Worsley found land using only four fleeting sun sightings.",
+      "emphasis": [
+        "four",
+        "sun sightings"
       ],
       "sfx": "pop",
       "pause_after": 0.4,
       "claims": [
-        13,
-        14
+        12
       ],
-      "visual": "photograph of the James Caird navigating the Southern Ocean",
+      "visual": "photograph of the James Caird lifeboat today at Dulwich College",
       "subjects": [
-        "Voyage of the James Caird",
         "James Caird (lifeboat)"
       ],
-      "year": 1916,
+      "year": 2024,
       "queries": [
-        "James Caird",
-        "Voyage of the James Caird"
+        "James Caird Dulwich College",
+        "James Caird boat"
       ],
       "card": {
-        "kind": "fact",
-        "big": "17 Days",
-        "small": "in the Southern Ocean"
+        "kind": "none",
+        "big": "",
+        "small": ""
       }
     },
     {
-      "text": "Three men then hiked 36 hours for help.",
+      "text": "Every single man survived because the ice crushed the ship Endurance.",
       "emphasis": [
-        "36 hours",
-        "help"
-      ],
-      "sfx": "whoosh",
-      "pause_after": 0.12,
-      "claims": [
-        15,
-        16
-      ],
-      "visual": "photograph of the mountainous terrain of South Georgia",
-      "subjects": [
-        "South Georgia"
-      ],
-      "year": 1916,
-      "queries": [
-        "South Georgia Island",
-        "Stromness South Georgia"
-      ],
-      "card": {
-        "kind": "fact",
-        "big": "36 Hours",
-        "small": "continuous hiking"
-      }
-    },
-    {
-      "text": "All 28 men survived because of one navigator.",
-      "emphasis": [
-        "All 28 men",
-        "one navigator"
+        "Every single man",
+        "survived"
       ],
       "sfx": "none",
       "pause_after": 0.12,
       "claims": [
         17
       ],
-      "visual": "photograph of the James Caird lifeboat preserved at Dulwich College",
+      "visual": "photograph of the rescued crew of the Endurance expedition, 1916",
       "subjects": [
-        "James Caird (lifeboat)"
+        "Imperial Trans-Antarctic Expedition"
       ],
-      "year": 2020,
+      "year": 1916,
       "queries": [
-        "James Caird Dulwich College",
-        "James Caird boat"
+        "Shackleton crew rescued",
+        "Endurance crew 1916"
       ],
       "card": {
         "kind": "fact",
-        "big": "28",
-        "small": "survived the expedition"
+        "big": "28/28",
+        "small": "men survived"
       }
     }
   ],
-  "hook_text": "800 MILE RESCUE",
+  "hook_text": "800 MILE RESCUE MISSION",
   "loop": true,
-  "better_than_last": "Tested a highly engaging countdown structure centered on Frank Worsley's incredible navigation feat to drive replayability."
+  "better_than_last": "Applied reviewer feedback to emphasize Shackleton's reliance on his navigator while maintaining a seamless loop."
 }

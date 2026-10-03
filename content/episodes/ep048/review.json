@@ -1,0 +1,109 @@
+{
+  "rounds": [
+    {
+      "at": "2026-10-03T05:07:31+05:30",
+      "check": {
+        "duration": 25.06,
+        "words": 69,
+        "integrated_lufs": -14.4,
+        "true_peak_dbfs": -1.6,
+        "warnings": [],
+        "speech_differences": [
+          "'andre prevot' heard as 'andrei prevat' after 'dark he and'"
+        ],
+        "speech_error": null,
+        "sources": [
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "designed card",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons"
+        ]
+      },
+      "scores": {
+        "hook": 3,
+        "clarity": 5,
+        "payoff": 4,
+        "visuals": 3,
+        "loop": 3
+      },
+      "notes": {
+        "hook": "Starting with a calm date and a peaceful flight lacks the immediate danger needed to stop the scroll.",
+        "clarity": "The narrative arc from the nighttime crash to the rescue is clear and effortless to follow.",
+        "payoff": "Connecting the desert survival ordeal to the origins of The Little Prince provides a great literary payoff.",
+        "visuals": "The desert frame contains modern tire tracks, and the book representation looks like an amateur cosplay photo.",
+        "loop": "Repeating the word 'soared' in both beat 7 and beat 1 creates a repetitive echo rather than a natural loop."
+      },
+      "frames": [
+        {
+          "beat": 4,
+          "problem": "Clear modern tire tracks in the sand dunes are anachronistic for a 1935 survival trek."
+        },
+        {
+          "beat": 6,
+          "problem": "The image shows a child in a costume standing on a grassy countryside hill instead of a desert setting."
+        }
+      ],
+      "speech": [
+        {
+          "beat": 3,
+          "word": "Prévot",
+          "respelling": "pray voh"
+        }
+      ],
+      "rewrite": [
+        "Beat 1: Antoine de Saint-Exupéry was soaring above the Libyan desert when disaster struck.",
+        "Beat 7: The pilot survived the sands, but his story began when..."
+      ],
+      "better_than_last": "It connects historical survival directly to the creation of a beloved literary classic rather than ending purely in grim defeat.",
+      "judge": "gemini-3.8-flash",
+      "passed": false
+    },
+    {
+      "at": "2026-10-03T05:17:14+05:30",
+      "check": {
+        "duration": 24.6,
+        "words": 67,
+        "integrated_lufs": -14.4,
+        "true_peak_dbfs": -1.6,
+        "warnings": [],
+        "speech_differences": [],
+        "speech_error": null,
+        "sources": [
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "designed card",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons"
+        ]
+      },
+      "scores": {
+        "hook": 3,
+        "clarity": 4,
+        "payoff": 4,
+        "visuals": 4,
+        "loop": 3
+      },
+      "notes": {
+        "hook": "Intriguing hook, but could make the connection to the literary classic more immediate.",
+        "clarity": "Highly clear, chronological sequence that is very easy for a viewer to follow.",
+        "payoff": "Strong payoff linking his survival directly to the creation of the famous book.",
+        "visuals": "Excellent and relevant historical images that match the narration perfectly.",
+        "loop": "Decent flow, but the transition back to the start feels slightly disjointed."
+      },
+      "frames": [],
+      "speech": [],
+      "rewrite": [
+        "Beat 7: Change to 'Before creating his legendary masterpiece, our pilot...'"
+      ],
+      "better_than_last": "This episode features a much more personal, character-driven story than the collective survival focus of episode 42.",
+      "judge": "gemini-3.5-flash",
+      "passed": false
+    }
+  ],
+  "best_round": 2
+}

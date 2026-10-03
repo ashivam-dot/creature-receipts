@@ -1,119 +1,119 @@
 {
-  "updated_at": "2026-10-03T05:05:25+05:30",
+  "updated_at": "2026-10-03T11:05:39+05:30",
   "day": 2,
   "result": "degraded",
   "run": {
     "host": "modal",
-    "id": "ta-01M3ZFH6VP25QNBB3Y39X7ER5R",
+    "id": "ta-01M4044D8SGGFHGJ8F6PR6JZ1R",
     "number": null,
     "trigger": "schedule",
-    "started_at": "2026-10-03T05:05:05+05:30",
-    "started_at_utc": "2026-10-02T23:35:05+00:00",
-    "seconds": 20
+    "started_at": "2026-10-03T11:05:08+05:30",
+    "started_at_utc": "2026-10-03T05:35:08+00:00",
+    "seconds": 31
   },
   "stages": [
     {
       "name": "deploy",
       "ok": true,
       "detail": "",
-      "seconds": 1.1
+      "seconds": 1.5
     },
     {
       "name": "sync",
       "ok": true,
       "detail": "9 posts",
-      "seconds": 0.3
+      "seconds": 0.5
     },
     {
       "name": "playlists",
       "ok": false,
       "detail": "",
       "error": "HttpError: <HttpError 409 when requesting https://youtube.googleapis.com/youtube/v3/playlistItems?part=snippet&alt=json returned \"The operation was aborted.\". Details: \"[{'domain': 'youtube.CoreErrorDomain', 'reason': 'SERVICE_UNAVAILABLE'}]\">",
-      "seconds": 1.4
+      "seconds": 3.0
     },
     {
       "name": "languages",
       "ok": true,
-      "detail": "ep025 language en/nl -> en",
-      "seconds": 0.3
+      "detail": "ep045 language sv/en -> en",
+      "seconds": 0.5
     },
     {
       "name": "on youtube",
       "ok": true,
       "detail": "every Short sent is public",
-      "seconds": 0.1
+      "seconds": 0.2
     },
     {
       "name": "short reviews",
       "ok": true,
-      "detail": "ep031 at 24 h: not shown yet: 9 views in 24 hours (no source data yet). YouTube hasn't tested it in the Shorts feed, so this says nothing about the script; ep042 at 6 h: not shown yet: 4 views in 7 hours (no source data yet). YouTube hasn't tested it in the Shorts feed, so this says nothing about the script",
-      "seconds": 0.7
+      "detail": "ep025 at 6 h: not shown yet: 4 views in 7 hours (no source data yet). YouTube hasn't tested it in the Shorts feed, so this says nothing about the script",
+      "seconds": 0.9
     },
     {
       "name": "collect",
       "ok": true,
-      "detail": "ep046 unfinished (Overloaded: every model in ('gemini-3.8-flash', 'gemini-3.7-flash', 'gemini-3.6-flash', 'gemini-3.5-flash', 'gemini-3-flash-preview', 'gemini-flash-latest', 'ovh:Qwen3.5-397B-A17B') with quota left stayed overloaded for 25 minutes); ep047 unfinished (Overloaded: every model in ('gemini-3.8-flash', 'gemini-3.7-flash', 'gemini-3.6-flash', 'gemini-3.5-flash', 'gemini-3-flash-preview', 'gemini-flash-latest', 'ovh:Qwen3.5-397B-A17B') with quota left stayed overloaded for 25 minutes); ep048 unfinished (Overloaded: every model in ('gemini-3.8-flash', 'gemini-3.7-flash', 'gemini-3.6-",
-      "seconds": 8.2
+      "detail": "ep046 unfinished (Overloaded: every model in ('gemini-3.8-flash', 'gemini-3.7-flash', 'gemini-3.6-flash', 'gemini-3.5-flash', 'gemini-3-flash-preview', 'gemini-flash-latest', 'ovh:Qwen3.5-397B-A17B') with quota left stayed overloaded for 25 minutes); ep047 ready; ep048 unfinished (OutOfQuota: no model in ('gemini-3.8-flash', 'gemini-3.7-flash', 'gemini-3.6-flash', 'gemini-3.5-flash', 'gemini-3-flash-preview', 'gemini-flash-latest', 'ovh:Qwen3.5-397B-A17B') has free quota left today); ep049 unfinished (Overloaded: every model in ('gemini-3.8-flash', 'gemini-3.7-flash', 'gemini-3.6-flash', 'gemi",
+      "seconds": 10.9
     },
     {
       "name": "buffer channel",
       "ok": true,
       "detail": "connected",
-      "seconds": 0.1
+      "seconds": 0.2
     },
     {
       "name": "preflight ep026",
       "ok": true,
       "detail": "video still hosted",
-      "seconds": 0.2
+      "seconds": 0.6
     },
     {
       "name": "preflight ep038",
       "ok": true,
       "detail": "video still hosted",
-      "seconds": 0.2
-    },
-    {
-      "name": "preflight ep045",
-      "ok": true,
-      "detail": "video downloads whole (11 MB in 0 s)",
-      "seconds": 0.3
+      "seconds": 0.5
     },
     {
       "name": "publish",
       "ok": true,
       "detail": "",
-      "seconds": 0.1
+      "seconds": 1.3
+    },
+    {
+      "name": "schedule ep047",
+      "ok": true,
+      "detail": "2026-10-05T21:30:00-04:00",
+      "seconds": 0.9
     },
     {
       "name": "start ep046",
       "ok": true,
       "detail": "Voyage of the James Caird (1916): to save his crew, Shackleton navigated 800 miles of the world's deadliest ocean in a 22-foot lifeboat",
-      "seconds": 0.5
-    },
-    {
-      "name": "start ep047",
-      "ok": true,
-      "detail": "Battle of the Alamo (1836): a small band of Texian defenders held out for 13 days before a dawn assault overwhelmed the mission walls",
-      "seconds": 0.2
+      "seconds": 0.7
     },
     {
       "name": "start ep048",
       "ok": true,
       "detail": "Antoine de Saint-Exupéry (1935): the author of The Little Prince crashed in the Sahara and nearly died of thirst before a Bedouin saved him",
-      "seconds": 0.2
+      "seconds": 0.9
     },
     {
       "name": "start ep049",
       "ok": true,
       "detail": "Burning of Washington (1814): British troops ate the dinner President Madison had left behind before burning the White House, right as a freak tornado struck the city",
-      "seconds": 0.3
+      "seconds": 0.6
+    },
+    {
+      "name": "start ep050",
+      "ok": true,
+      "detail": "Great Fire of 1910 (1910): hurricane-force winds turned a scattering of forest fires into a single monster that swallowed towns in minutes",
+      "seconds": 0.5
     },
     {
       "name": "publish",
       "ok": true,
       "detail": "",
-      "seconds": 0.1
+      "seconds": 0.2
     }
   ],
   "errors": [
@@ -122,9 +122,9 @@
   "owner_action": [],
   "notes": [
     "ep046 stopped on Gemini's free tier being overloaded; it resumes in a later run",
-    "ep047 stopped on Gemini's free tier being overloaded; it resumes in a later run",
-    "ep048 stopped on Gemini's free tier being overloaded; it resumes in a later run",
-    "ep049 stopped on Gemini's free tier being overloaded; it resumes in a later run"
+    "ep048 stopped on Gemini's free quota; it resumes in a later run",
+    "ep049 stopped on Gemini's free tier being overloaded; it resumes in a later run",
+    "only 6 Shorts made and unposted; scheduling 2 a day"
   ],
   "inventory": {
     "total": 6,
@@ -134,17 +134,12 @@
     "making": [],
     "remote": [
       "ep046",
-      "ep047",
       "ep048",
-      "ep049"
+      "ep049",
+      "ep050"
     ]
   },
   "queue": [
-    {
-      "id": "ep045",
-      "title": "Why Nicholas Winton’s Largest Rescue Train Never Left 💔",
-      "due_at": "2026-10-02T21:30:00-04:00"
-    },
     {
       "id": "ep026",
       "title": "Why History Forgot America's Deadliest Wildfire 😳",
@@ -169,6 +164,11 @@
       "id": "ep035",
       "title": "Why Did the US Ignore the 1900 Galveston Hurricane? ⚠️",
       "due_at": "2026-10-05T19:00:00-04:00"
+    },
+    {
+      "id": "ep047",
+      "title": "Why Did the Battle of the Alamo Last Only 90 Minutes?",
+      "due_at": "2026-10-05T21:30:00-04:00"
     }
   ],
   "waiting": [],
@@ -183,19 +183,25 @@
     },
     {
       "id": "ep047",
-      "outcome": "unfinished",
+      "outcome": "ready",
       "topic": "Battle of the Alamo (1836): a small band of Texian defenders held out for 13 days before a dawn assault overwhelmed the mission walls",
-      "reason": "Overloaded: every model in ('gemini-3.8-flash', 'gemini-3.7-flash', 'gemini-3.6-flash', 'gemini-3.5-flash', 'gemini-3-flash-preview', 'gemini-flash-latest', 'ovh:Qwen3.5-397B-A17B') with quota left stayed overloaded for 25 minutes",
-      "quota": false,
-      "overloaded": true
+      "title": "Why Did the Battle of the Alamo Last Only 90 Minutes?",
+      "scores": {
+        "hook": 5,
+        "clarity": 5,
+        "payoff": 5,
+        "visuals": 4,
+        "loop": 5
+      },
+      "media_url": "https://res.cloudinary.com/uj4a07e7/video/upload/v1790984389/creaturereceipts/ep047-fea29f5a.mp4"
     },
     {
       "id": "ep048",
       "outcome": "unfinished",
       "topic": "Antoine de Saint-Exupéry (1935): the author of The Little Prince crashed in the Sahara and nearly died of thirst before a Bedouin saved him",
-      "reason": "Overloaded: every model in ('gemini-3.8-flash', 'gemini-3.7-flash', 'gemini-3.6-flash', 'gemini-3.5-flash', 'gemini-3-flash-preview', 'gemini-flash-latest', 'ovh:Qwen3.5-397B-A17B') with quota left stayed overloaded for 25 minutes",
-      "quota": false,
-      "overloaded": true
+      "reason": "OutOfQuota: no model in ('gemini-3.8-flash', 'gemini-3.7-flash', 'gemini-3.6-flash', 'gemini-3.5-flash', 'gemini-3-flash-preview', 'gemini-flash-latest', 'ovh:Qwen3.5-397B-A17B') has free quota left today",
+      "quota": true,
+      "overloaded": false
     },
     {
       "id": "ep049",
@@ -210,78 +216,88 @@
     {
       "id": "ep046",
       "topic": "Voyage of the James Caird (1916): to save his crew, Shackleton navigated 800 miles of the world's deadliest ocean in a 22-foot lifeboat",
-      "call_id": "fc-01M3ZFHXSXQ2R61HZRF733V7CX"
-    },
-    {
-      "id": "ep047",
-      "topic": "Battle of the Alamo (1836): a small band of Texian defenders held out for 13 days before a dawn assault overwhelmed the mission walls",
-      "call_id": "fc-01M3ZFHY1CP7A5Z224X6EC1YZ0"
+      "call_id": "fc-01M4045FV62RVQV7YQZNJSRAB9"
     },
     {
       "id": "ep048",
       "topic": "Antoine de Saint-Exupéry (1935): the author of The Little Prince crashed in the Sahara and nearly died of thirst before a Bedouin saved him",
-      "call_id": "fc-01M3ZFHY8R1DHAC0GMAMXR105E"
+      "call_id": "fc-01M4045GS0BYHY5PMVCQ3B8GDF"
     },
     {
       "id": "ep049",
       "topic": "Burning of Washington (1814): British troops ate the dinner President Madison had left behind before burning the White House, right as a freak tornado struck the city",
-      "call_id": "fc-01M3ZFHYHHN9S71815Q79QQE0Y"
+      "call_id": "fc-01M4045HCJB5WNTW61C8TKSF40"
+    },
+    {
+      "id": "ep050",
+      "topic": "Great Fire of 1910 (1910): hurricane-force winds turned a scattering of forest fires into a single monster that swallowed towns in minutes",
+      "call_id": "fc-01M4045HXJQTS57PRV1J89P3P9"
     }
   ],
   "in_cloud": [
     {
       "id": "ep046",
       "topic": "Voyage of the James Caird (1916): to save his crew, Shackleton navigated 800 miles of the world's deadliest ocean in a 22-foot lifeboat",
-      "spawned_at": "2026-10-03T05:05:24+05:30"
-    },
-    {
-      "id": "ep047",
-      "topic": "Battle of the Alamo (1836): a small band of Texian defenders held out for 13 days before a dawn assault overwhelmed the mission walls",
-      "spawned_at": "2026-10-03T05:05:24+05:30"
+      "spawned_at": "2026-10-03T11:05:36+05:30"
     },
     {
       "id": "ep048",
       "topic": "Antoine de Saint-Exupéry (1935): the author of The Little Prince crashed in the Sahara and nearly died of thirst before a Bedouin saved him",
-      "spawned_at": "2026-10-03T05:05:24+05:30"
+      "spawned_at": "2026-10-03T11:05:37+05:30"
     },
     {
       "id": "ep049",
       "topic": "Burning of Washington (1814): British troops ate the dinner President Madison had left behind before burning the White House, right as a freak tornado struck the city",
-      "spawned_at": "2026-10-03T05:05:25+05:30"
+      "spawned_at": "2026-10-03T11:05:38+05:30"
+    },
+    {
+      "id": "ep050",
+      "topic": "Great Fire of 1910 (1910): hurricane-force winds turned a scattering of forest fires into a single monster that swallowed towns in minutes",
+      "spawned_at": "2026-10-03T11:05:39+05:30"
     }
   ],
-  "published": [],
-  "live": 3,
+  "published": [
+    {
+      "id": "ep047",
+      "title": "Why Did the Battle of the Alamo Last Only 90 Minutes?",
+      "due_at": "2026-10-05T21:30:00-04:00"
+    }
+  ],
+  "live": 4,
   "failed_posts": [],
   "not_live": [],
   "llm": {
-    "calls": 16,
+    "calls": 20,
     "by_model": {
-      "gemini-3.5-flash": 3,
-      "gemini-3-flash-preview": 6,
-      "gemini-3.5-flash-lite": 7
+      "gemini-3.7-flash": 2,
+      "gemini-3.5-flash": 2,
+      "gemini-3-flash-preview": 3,
+      "gemini-3.1-flash-lite": 4,
+      "gemini-3.6-flash": 2,
+      "gemini-3.8-flash": 2,
+      "gemini-3.5-flash-lite": 5
     },
     "out_of_quota": []
   },
   "renders": {
-    "modal": 4,
+    "modal": 11,
     "runner": 0
   },
   "daily_done": "2026-10-02",
   "minutes_this_month": 2.0,
   "minutes_budget": 2000,
   "modal_cost": {
-    "metered": 3.76,
+    "metered": 4.24,
     "billed": 0.0
   },
   "modal_credit": 30.0,
   "capacity": {
-    "cloud": 202,
+    "cloud": 197,
     "runner": 0,
     "runner_minutes": 0,
-    "modal_credit_left": 24.24
+    "modal_credit_left": 23.76
   },
   "made_here": 0,
-  "open_topics": 105,
+  "open_topics": 104,
   "parked_topics": 12
 }

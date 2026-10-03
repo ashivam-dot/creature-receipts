@@ -1,41 +1,16 @@
 [
   {
-    "source": "url",
-    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/de/FalloftheAlamo.jpg/1920px-FalloftheAlamo.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "credit": {
-      "source": "Wikimedia Commons",
-      "title": "FalloftheAlamo.jpg",
-      "credit": "Robert Jenkins Onderdonk",
-      "license": "Public domain",
-      "url": "https://commons.wikimedia.org/wiki/File:FalloftheAlamo.jpg"
+    "source": "card",
+    "card": {
+      "kind": "fact",
+      "big": "200 men",
+      "small": ""
     },
-    "fallbacks": [
-      "color"
-    ],
-    "motion": "pan_right",
-    "focus_x": 0.5,
-    "focus_y": 0.5,
-    "_choice": {
-      "key": "commons:File:FalloftheAlamo.jpg",
-      "origin": "commons",
-      "file": "File:FalloftheAlamo.jpg",
-      "title": "FalloftheAlamo.jpg",
-      "width": 2400,
-      "height": 1600,
-      "license": "Public domain",
-      "license_url": null,
-      "artist": "Robert Jenkins Onderdonk",
-      "date": "circa 1903date QS:P571,+1903-00-00T00:00:00Z/9,P1480,Q572790",
-      "year": 1903,
-      "page": "https://commons.wikimedia.org/wiki/File:FalloftheAlamo.jpg",
-      "route": "subject",
-      "original": "https://upload.wikimedia.org/wikipedia/commons/d/de/FalloftheAlamo.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-      "historical": 0.992,
-      "match": 0.004
-    },
-    "_fit": "exact",
-    "_shows": "Painting of the Alamo battle and defense",
-    "_alternates": []
+    "motion": "zoom_in",
+    "_rejected": [
+      "commons:File:FalloftheAlamo.jpg",
+      "wellcome:a7aajrxt"
+    ]
   },
   {
     "source": "url",
@@ -165,41 +140,14 @@
     ]
   },
   {
-    "source": "url",
-    "url": "https://iiif.wellcomecollection.org/image/V0048273/full/!1920,1920/0/default.jpg",
-    "credit": {
-      "source": "Wellcome Collection",
-      "title": "The battle of Fleurus. Coloured wood engraving.",
-      "credit": "Wellcome Collection",
-      "license": "Public domain",
-      "url": "https://wellcomecollection.org/works/hxbt7snt"
-    },
-    "fallbacks": [
-      "color"
-    ],
-    "motion": "pan_left",
+    "reuse": 3,
+    "motion": "zoom_in",
     "focus_x": 0.5,
     "focus_y": 0.5,
-    "_choice": {
-      "key": "wellcome:a7aajrxt",
-      "origin": "wellcome",
-      "title": "The battle of Fleurus. Coloured wood engraving.",
-      "width": 1920,
-      "height": 1368,
-      "license": "Public domain",
-      "license_url": "https://creativecommons.org/share-your-work/public-domain/pdm/",
-      "artist": "Wellcome Collection",
-      "date": "",
-      "year": null,
-      "page": "https://wellcomecollection.org/works/hxbt7snt",
-      "route": "wellcome",
-      "original": "https://iiif.wellcomecollection.org/image/V0048273/full/!1920,1920/0/default.jpg",
-      "source_name": "Wellcome Collection",
-      "historical": 0.999,
-      "match": 0.013
-    },
-    "_fit": "close",
-    "_alternates": []
+    "_rejected": [
+      "commons:File:FalloftheAlamo.jpg",
+      "wellcome:a7aajrxt"
+    ]
   },
   {
     "source": "url",
@@ -350,8 +298,6 @@
   },
   {
     "reuse": 1,
-    "motion": "zoom_out",
-    "focus_x": 0.5,
-    "focus_y": 0.5
+    "motion": "zoom_out"
   }
 ]

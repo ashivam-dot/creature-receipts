@@ -1,8 +1,8 @@
 id: ep048
-title: How the Sahara Created The Little Prince? 🏜️
+title: How Did the Sahara Create The Little Prince? 🏜️
 series: Sole Survivors
-description: Before writing his masterpiece, Antoine de Saint-Exupéry nearly died of thirst in the Libyan desert after a high-speed
-  crash.
+description: Before writing his masterpiece, Antoine de Saint-Exupéry nearly died of thirst in the Libyan desert after a 1935
+  plane crash.
 sources:
 - https://en.wikipedia.org/wiki/Antoine_de_Saint-Exup%C3%A9ry
 - https://en.wikipedia.org/wiki/Wind,_Sand_and_Stars
@@ -10,23 +10,23 @@ sources:
 hashtags:
 - '#history'
 - '#littleprince'
-- '#survival'
+- '#aviation'
 tags:
 - Antoine de Saint-Exupéry
 - The Little Prince
 - Sahara
 - Aviation
-- Bedouin
-- Survival Story
+- André Prévot
+- Sole Survivors
 voice:
   engine: kokoro
   voice: am_fenrir
   speed: 1.15
 beats:
-- text: In December 1935, Antoine de Saint-Exupéry soared above the Libyan desert.
+- text: Antoine de Saint-Exupéry soared above the Libyan desert before disaster struck.
   emphasis:
   - soared
-  - Libyan desert
+  - disaster
   visual:
     source: url
     url: https://thumb.wikimedia.org/wikipedia/commons/thumb/7/72/Antoine_de_Saint-Euxpery_%281920%29.jpg/960px-Antoine_de_Saint-Euxpery_%281920%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
@@ -41,14 +41,19 @@ beats:
     - color
     motion: pan_down
     focus_x: 0.5
-    focus_y: 0.5
+    focus_y: 0.35
+    box:
+    - 0.25
+    - 0.05
+    - 0.75
+    - 0.75
     card:
       kind: dateline
       big: DECEMBER 1935
       small: THE LIBYAN SAHARA
-- text: At midnight, his plane clipped a plateau in the dark.
+- text: At midnight, his racing plane clipped a dark plateau.
   emphasis:
-  - clipped
+  - midnight
   - plateau
   sfx: whoosh
   visual:
@@ -65,9 +70,9 @@ beats:
     motion: pan_left
     focus_x: 0.5
     focus_y: 0.5
-- text: He and André Prévot had only a pint of coffee.
+- text: They survived but had only a pint of coffee.
   emphasis:
-  - André Prévot
+  - survived
   - pint
   pause_after: 0.4
   visual:
@@ -75,48 +80,49 @@ beats:
     card:
       kind: fact
       big: 1 PINT
-      small: of coffee remaining
+      small: of coffee
     motion: zoom_in
-- text: They wandered for four days through heat and hallucinations.
+- text: For four days, they walked through heat and hallucinations.
   emphasis:
   - four days
   - hallucinations
   sfx: riser
   visual:
     source: url
-    url: https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bd/Morocco_-_Marrakech_to_Sahara_%2831053290370%29.jpg/1920px-Morocco_-_Marrakech_to_Sahara_%2831053290370%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
+    url: https://upload.wikimedia.org/wikipedia/commons/a/a6/Sand_dunes%2C_Remote_view_of_Dakhla_Oasis_2%2C_Egypt.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
     credit:
       source: Wikimedia Commons
-      title: Morocco - Marrakech to Sahara (31053290370).jpg
-      credit: Visions of Domino
-      license: CC BY 2.0
-      url: https://commons.wikimedia.org/wiki/File:Morocco_-_Marrakech_to_Sahara_(31053290370).jpg
+      title: Sand dunes, Remote view of Dakhla Oasis 2, Egypt.jpg
+      credit: Vyacheslav Argenberg
+      license: CC BY 4.0
+      url: https://commons.wikimedia.org/wiki/File:Sand_dunes,_Remote_view_of_Dakhla_Oasis_2,_Egypt.jpg
     fallbacks:
     - color
     motion: pan_left
     focus_x: 0.5
     focus_y: 0.5
-- text: A Bedouin traveler saved them with a gift of water.
+- text: A Bedouin traveler found them just as hope faded.
   emphasis:
   - Bedouin
-  - water
+  - hope faded
   sfx: pop
   pause_after: 0.4
   visual:
     source: url
-    url: https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d5/BASA-3K-7-350-1-Sahara.jpg/3840px-BASA-3K-7-350-1-Sahara.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
+    url: https://thumb.wikimedia.org/wikipedia/commons/thumb/6/63/Bedouin_life_in_Trans-Jordan._Semi_Bedouin_types_of_Es_Salt._Young_man_and_mother_at_hot_springs_of_Zerka_Ma%27in_LOC_matpc.15669.jpg/1920px-Bedouin_life_in_Trans-Jordan._Semi_Bedouin_types_of_Es_Salt._Young_man_and_mother_at_hot_springs_of_Zerka_Ma%27in_LOC_matpc.15669.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
     credit:
       source: Wikimedia Commons
-      title: BASA-3K-7-350-1-Sahara.jpg
-      credit: Unknown authorUnknown author
+      title: Bedouin life in Trans-Jordan. Semi Bedouin types of Es Salt. Young man and mother at hot springs of Zerka Ma'in
+        LOC matpc.15669.jpg
+      credit: Matson Collection
       license: Public domain
-      url: https://commons.wikimedia.org/wiki/File:BASA-3K-7-350-1-Sahara.jpg
+      url: https://commons.wikimedia.org/wiki/File:Bedouin_life_in_Trans-Jordan._Semi_Bedouin_types_of_Es_Salt._Young_man_and_mother_at_hot_springs_of_Zerka_Ma%27in_LOC_matpc.15669.jpg
     fallbacks:
     - color
-    motion: pan_right
+    motion: pan_down
     focus_x: 0.5
     focus_y: 0.5
-- text: This miracle inspired the setting of The Little Prince.
+- text: This ordeal inspired the desert world of The Little Prince.
   emphasis:
   - The Little Prince
   visual:
@@ -138,15 +144,15 @@ beats:
       kind: quote
       big: THE LITTLE PRINCE
       small: published 1943
-- text: The pilot had survived the sands where he first soared.
+- text: Before creating his legendary masterpiece, our pilot soared above these dunes.
   emphasis:
-  - survived
-  - sands
+  - masterpiece
+  - soared
   sfx: whoosh
   visual:
     reuse: 1
     motion: zoom_out
     focus_x: 0.5
-    focus_y: 0.5
+    focus_y: 0.35
 depth_motion: true
-hook_text: LOST IN THE SAHARA
+hook_text: 4 DAYS OF THIRST

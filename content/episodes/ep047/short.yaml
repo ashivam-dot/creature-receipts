@@ -32,19 +32,12 @@ beats:
   - 200 men
   - blood-red flag
   visual:
-    source: url
-    url: https://thumb.wikimedia.org/wikipedia/commons/thumb/d/de/FalloftheAlamo.jpg/1920px-FalloftheAlamo.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
-    credit:
-      source: Wikimedia Commons
-      title: FalloftheAlamo.jpg
-      credit: Robert Jenkins Onderdonk
-      license: Public domain
-      url: https://commons.wikimedia.org/wiki/File:FalloftheAlamo.jpg
-    fallbacks:
-    - color
-    motion: pan_right
-    focus_x: 0.5
-    focus_y: 0.5
+    source: card
+    card:
+      kind: fact
+      big: 200 men
+      small: ''
+    motion: zoom_in
 - text: In 1836, William Travis answered surrender demands with cannon fire.
   emphasis:
   - William Travis
@@ -98,17 +91,8 @@ beats:
   - breached
   sfx: whoosh
   visual:
-    source: url
-    url: https://iiif.wellcomecollection.org/image/V0048273/full/!1920,1920/0/default.jpg
-    credit:
-      source: Wellcome Collection
-      title: The battle of Fleurus. Coloured wood engraving.
-      credit: Wellcome Collection
-      license: Public domain
-      url: https://wellcomecollection.org/works/hxbt7snt
-    fallbacks:
-    - color
-    motion: pan_left
+    reuse: 3
+    motion: zoom_in
     focus_x: 0.5
     focus_y: 0.5
 - text: The final massacre was over in only 90 minutes.
@@ -168,7 +152,5 @@ beats:
   visual:
     reuse: 1
     motion: zoom_out
-    focus_x: 0.5
-    focus_y: 0.5
 depth_motion: true
 hook_text: NO QUARTER GIVEN

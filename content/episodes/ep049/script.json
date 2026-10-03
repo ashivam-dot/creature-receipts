@@ -2,7 +2,7 @@
   "hooks": [
     {
       "style": "statement",
-      "text": "In August 1814, British forces marched into Washington D.C."
+      "text": "British invaders set Washington ablaze in August 1814."
     },
     {
       "style": "question",
@@ -10,7 +10,7 @@
     },
     {
       "style": "contradiction",
-      "text": "American soldiers did not stop the British from burning Washington."
+      "text": "The American military did not save the capital from burning."
     }
   ],
   "hook_style": "statement",
@@ -28,13 +28,15 @@
     "white house",
     "storm",
     "james madison",
-    "robert ross"
+    "robert ross",
+    "paul jennings"
   ],
   "beats": [
     {
-      "text": "In August 1814, British forces marched into Washington D.C.",
+      "text": "British invaders set Washington ablaze in August 1814.",
       "emphasis": [
-        "marched"
+        "ablaze",
+        "August 1814"
       ],
       "sfx": "none",
       "pause_after": 0.12,
@@ -49,7 +51,7 @@
       "year": 1814,
       "queries": [
         "Burning of Washington 1814 engraving",
-        "Washington DC 1814"
+        "Washington DC 1814 fire"
       ],
       "card": {
         "kind": "dateline",
@@ -58,7 +60,7 @@
       }
     },
     {
-      "text": "On August 24, American militia forces fled in a panic.",
+      "text": "Hours earlier, American militia fled at the Battle of Bladensburg.",
       "emphasis": [
         "fled"
       ],
@@ -79,12 +81,38 @@
       ],
       "card": {
         "kind": "dateline",
-        "big": "August 24",
+        "big": "August 24, 1814",
         "small": "Bladensburg"
       }
     },
     {
-      "text": "Attendant Paul Jennings helped save George Washington’s portrait.",
+      "text": "Clerks packed the Declaration of Independence into linen sacks.",
+      "emphasis": [
+        "linen sacks"
+      ],
+      "sfx": "none",
+      "pause_after": 0.12,
+      "claims": [
+        7
+      ],
+      "visual": "parchment of the United States Declaration of Independence",
+      "subjects": [
+        "United States Declaration of Independence",
+        "United States Capitol"
+      ],
+      "year": 1814,
+      "queries": [
+        "Declaration of Independence original document",
+        "1814 archives"
+      ],
+      "card": {
+        "kind": "fact",
+        "big": "Declaration",
+        "small": "Saved in linen bags"
+      }
+    },
+    {
+      "text": "Attendant Paul Jennings saved the President’s portrait from flames.",
       "emphasis": [
         "Paul Jennings"
       ],
@@ -96,7 +124,6 @@
       "visual": "portrait of Paul Jennings, enslaved attendant",
       "subjects": [
         "Paul Jennings",
-        "Lansdowne Portrait",
         "George Washington"
       ],
       "year": 1814,
@@ -111,11 +138,11 @@
       }
     },
     {
-      "text": "Major-General Robert Ross ordered the White House torched.",
+      "text": "Major-General Robert Ross then ordered the public buildings torched.",
       "emphasis": [
         "torched"
       ],
-      "sfx": "whoosh",
+      "sfx": "riser",
       "pause_after": 0.12,
       "claims": [
         2,
@@ -134,39 +161,13 @@
       "card": {
         "kind": "fact",
         "big": "Robert Ross",
-        "small": "Major-General"
+        "small": "British Major-General"
       }
     },
     {
-      "text": "The Library of Congress burned as the sky darkened.",
+      "text": "Suddenly, a devastating storm struck the burning capital.",
       "emphasis": [
-        "burned"
-      ],
-      "sfx": "riser",
-      "pause_after": 0.12,
-      "claims": [
-        10
-      ],
-      "visual": "watercolor of the United States Capitol ruins, 1814",
-      "subjects": [
-        "United States Capitol",
-        "Library of Congress"
-      ],
-      "year": 1814,
-      "queries": [
-        "US Capitol ruins 1814 watercolor",
-        "Library of Congress fire 1814"
-      ],
-      "card": {
-        "kind": "fact",
-        "big": "3,000 volumes",
-        "small": "Library of Congress"
-      }
-    },
-    {
-      "text": "Suddenly, a devastating storm struck the capital.",
-      "emphasis": [
-        "devastating storm"
+        "storm"
       ],
       "sfx": "pop",
       "pause_after": 0.4,
@@ -180,17 +181,17 @@
       ],
       "year": 1814,
       "queries": [
-        "storm over city painting 19th century",
+        "19th century storm painting",
         "dark storm clouds landscape"
       ],
       "card": {
-        "kind": "fact",
-        "big": "Sudden storm",
-        "small": "Extinguished the fires"
+        "kind": "none",
+        "big": "",
+        "small": ""
       }
     },
     {
-      "text": "Torrential rains extinguished the flames.",
+      "text": "Torrential rains extinguished the flames before nightfall.",
       "emphasis": [
         "extinguished"
       ],
@@ -216,9 +217,9 @@
       }
     },
     {
-      "text": "Destruction finally ended as British forces marched into Washington D.C.",
+      "text": "Only nature could halt the rampage once those troops arrived.",
       "emphasis": [
-        "finally ended"
+        "nature"
       ],
       "sfx": "none",
       "pause_after": 0.12,
@@ -244,5 +245,5 @@
   ],
   "hook_text": "STORM SAVES CAPITAL",
   "loop": true,
-  "better_than_last": "Applied the countdown structure to build tension until the natural intervention, and used a specific loop phrase to ensure a seamless replay."
+  "better_than_last": "Resolved the dangling ending of the final beat into a complete grammatical sentence to ensure a seamless replay into the hook."
 }

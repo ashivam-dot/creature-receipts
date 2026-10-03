@@ -21,14 +21,16 @@ tags:
 - storm
 - james madison
 - robert ross
+- paul jennings
 voice:
   engine: kokoro
   voice: am_fenrir
   speed: 1.15
 beats:
-- text: In August 1814, British forces marched into Washington D.C.
+- text: British invaders set Washington ablaze in August 1814.
   emphasis:
-  - marched
+  - ablaze
+  - August 1814
   visual:
     source: url
     url: https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e2/Capture_and_burning_of_Washington_by_the_British%2C_in_1814_LCCN96519729.jpg/3840px-Capture_and_burning_of_Washington_by_the_British%2C_in_1814_LCCN96519729.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
@@ -48,7 +50,7 @@ beats:
       kind: dateline
       big: August 1814
       small: Washington D.C.
-- text: On August 24, American militia forces fled in a panic.
+- text: Hours earlier, American militia fled at the Battle of Bladensburg.
   emphasis:
   - fled
   sfx: whoosh
@@ -69,126 +71,125 @@ beats:
     focus_y: 0.5
     card:
       kind: dateline
-      big: August 24
+      big: August 24, 1814
       small: Bladensburg
-- text: Attendant Paul Jennings helped save George Washington’s portrait.
+- text: Clerks packed the Declaration of Independence into linen sacks.
   emphasis:
-  - Paul Jennings
+  - linen sacks
   visual:
     source: url
-    url: https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1e/Portrait_of_George_Washington_LCCN2003680524.jpg/1920px-Portrait_of_George_Washington_LCCN2003680524.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
+    url: https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bd/Engrossed_Declaration_of_Independence%2C_front.jpg/1920px-Engrossed_Declaration_of_Independence%2C_front.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
     credit:
       source: Wikimedia Commons
-      title: Portrait of George Washington LCCN2003680524.jpg
-      credit: Popular Graphic Arts
+      title: Engrossed Declaration of Independence, front.jpg
+      credit: Second Continental Congress
       license: Public domain
-      url: https://commons.wikimedia.org/wiki/File:Portrait_of_George_Washington_LCCN2003680524.jpg
+      url: https://commons.wikimedia.org/wiki/File:Engrossed_Declaration_of_Independence,_front.jpg
     fallbacks:
     - card
     - color
-    motion: pan_down
+    motion: zoom_out
     focus_x: 0.5
     focus_y: 0.5
     card:
       kind: fact
-      big: Paul Jennings
-      small: Enslaved attendant
-- text: Major-General Robert Ross ordered the White House torched.
+      big: Declaration
+      small: Saved in linen bags
+- text: Attendant Paul Jennings saved the President’s portrait from flames.
   emphasis:
-  - torched
-  sfx: whoosh
+  - Paul Jennings
   visual:
     source: url
-    url: https://upload.wikimedia.org/wikipedia/commons/3/3a/Portrait_of_Robert_Ross.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    url: https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9a/Portrait_de_G._Washington%2C_en_buste%2C_de_profil_dirig%C3%A9_%C3%A0_droite_dans_une_bordure_ovale_-_estampe_-_btv1b8412911v.jpg/1920px-Portrait_de_G._Washington%2C_en_buste%2C_de_profil_dirig%C3%A9_%C3%A0_droite_dans_une_bordure_ovale_-_estampe_-_btv1b8412911v.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
     credit:
       source: Wikimedia Commons
-      title: Portrait of Robert Ross.jpg
-      credit: Unknown authorUnknown author
+      title: Portrait de G. Washington, en buste, de profil dirigé à droite dans une bordure ovale - estampe - btv1b8412911v.jpg
+      credit: Unknown author
       license: Public domain
-      url: https://commons.wikimedia.org/wiki/File:Portrait_of_Robert_Ross.jpg
+      url: https://commons.wikimedia.org/wiki/File:Portrait_de_G._Washington,_en_buste,_de_profil_dirig%C3%A9_%C3%A0_droite_dans_une_bordure_ovale_-_estampe_-_btv1b8412911v.jpg
     fallbacks:
     - card
     - color
     motion: pan_up
     focus_x: 0.5
-    focus_y: 0.4
+    focus_y: 0.3
     box:
-    - 0.2
-    - 0.1
-    - 0.8
-    - 0.9
+    - 0.35
+    - 0.15
+    - 0.65
+    - 0.6
     card:
       kind: fact
-      big: Robert Ross
-      small: Major-General
-- text: The Library of Congress burned as the sky darkened.
+      big: Paul Jennings
+      small: Enslaved attendant
+- text: Major-General Robert Ross then ordered the public buildings torched.
   emphasis:
-  - burned
+  - torched
   sfx: riser
   visual:
     source: url
-    url: https://thumb.wikimedia.org/wikipedia/commons/thumb/3/37/George-Munger_US-Capitol-1814.jpg/960px-George-Munger_US-Capitol-1814.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
+    url: https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fc/Major-General_Robert_Ross.jpg/1280px-Major-General_Robert_Ross.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
     credit:
       source: Wikimedia Commons
-      title: George-Munger US-Capitol-1814.jpg
-      credit: George Munger
+      title: Major-General Robert Ross.jpg
+      credit: Unknown authorUnknown author
       license: Public domain
-      url: https://commons.wikimedia.org/wiki/File:George-Munger_US-Capitol-1814.jpg
+      url: https://commons.wikimedia.org/wiki/File:Major-General_Robert_Ross.jpg
     fallbacks:
     - card
     - color
-    motion: pan_right
+    motion: pan_down
     focus_x: 0.5
-    focus_y: 0.5
+    focus_y: 0.3
+    box:
+    - 0.3
+    - 0.1
+    - 0.7
+    - 0.5
     card:
       kind: fact
-      big: 3,000 volumes
-      small: Library of Congress
-- text: Suddenly, a devastating storm struck the capital.
+      big: Robert Ross
+      small: British Major-General
+- text: Suddenly, a devastating storm struck the burning capital.
   emphasis:
-  - devastating storm
+  - storm
   sfx: pop
   pause_after: 0.4
   visual:
     source: url
-    url: https://upload.wikimedia.org/wikipedia/commons/a/aa/Brooklyn_Museum_-_Stormy_Sky_over_Landscape_with_Distant_Church_-_Jean-Michel_Cels.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    url: https://iiif.wellcomecollection.org/image/L0086166/full/!1920,1920/0/default.jpg
     credit:
-      source: Wikimedia Commons
-      title: Brooklyn Museum - Stormy Sky over Landscape with Distant Church - Jean-Michel Cels.jpg
-      credit: Jean-Michel Cels
-      license: Public domain
-      url: https://commons.wikimedia.org/wiki/File:Brooklyn_Museum_-_Stormy_Sky_over_Landscape_with_Distant_Church_-_Jean-Michel_Cels.jpg
+      source: Wellcome Collection
+      title: A storm at sea. Engraving.
+      credit: Wellcome Collection
+      license: CC BY 4.0
+      url: https://wellcomecollection.org/works/wbym3dau
     fallbacks:
-    - card
     - color
     motion: pan_left
     focus_x: 0.5
     focus_y: 0.5
-    card:
-      kind: fact
-      big: Sudden storm
-      small: Extinguished the fires
-- text: Torrential rains extinguished the flames.
+- text: Torrential rains extinguished the flames before nightfall.
   emphasis:
   - extinguished
   sfx: whoosh
   visual:
     source: url
-    url: https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c2/The_President%27s_House_by_George_Munger%2C_1814-1815_-_Crop.jpg/1920px-The_President%27s_House_by_George_Munger%2C_1814-1815_-_Crop.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
+    url: https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0c/U.S._Capitol_after_burning_by_the_British_LCCN2004662324.tif/lossy-page1-3840px-U.S._Capitol_after_burning_by_the_British_LCCN2004662324.tif.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
     credit:
       source: Wikimedia Commons
-      title: The President's House by George Munger, 1814-1815 - Crop.jpg
-      credit: George Munger
+      title: U.S. Capitol after burning by the British LCCN2004662324.tif
+      credit: Munger, George, 1781-1825, artist
       license: Public domain
-      url: https://commons.wikimedia.org/wiki/File:The_President%27s_House_by_George_Munger,_1814-1815_-_Crop.jpg
+      url: https://commons.wikimedia.org/wiki/File:U.S._Capitol_after_burning_by_the_British_LCCN2004662324.tif
     fallbacks:
     - color
     motion: pan_right
     focus_x: 0.5
-    focus_y: 0.5
-- text: Destruction finally ended as British forces marched into Washington D.C.
+    focus_y: 0.6
+- text: Only nature could halt the rampage once those troops arrived.
   emphasis:
-  - finally ended
+  - nature
   visual:
     reuse: 1
     motion: zoom_in
