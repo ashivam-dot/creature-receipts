@@ -32,11 +32,12 @@ NIGHT = (16, 22, 29)
 # shown whole as a card.
 COVER_RATIO = 0.8
 COVER_MIN_HEIGHT = 1200
-# The card's picture: its widest, its tallest, and where its middle sits, so it clears the captions (at 60% of
-# the height) even at the camera's closest.
+# The card's picture: its widest, its tallest, and a common lower edge above the captions (at 60% of the
+# height). Anchoring the lower edge gives short landscape prints useful screen space instead of leaving them
+# stranded near the top.
 CARD_WIDTH = 1030
 CARD_HEIGHT = 920
-CARD_CENTER_Y = 0.36
+CARD_BOTTOM_Y = 0.54
 # A designed card's text sits a little higher, and never reaches below this.
 TEXT_CENTER_Y = 0.33
 TEXT_BOTTOM = 0.52
@@ -83,9 +84,11 @@ def cover(image: Image.Image, focus: tuple[float, float] = (0.5, 0.5)) -> Image.
 
 def _backdrop(image: Image.Image, focus: tuple[float, float]) -> Image.Image:
     small = _crop_to(image.convert("RGB"), PW / PH, *focus).resize((PW // 4, PH // 4), Image.Resampling.BILINEAR)
-    small = small.filter(ImageFilter.GaussianBlur(9))
+    # Keep the source recognizable around the print. The old blur and 42% brightness made most of the frame
+    # look empty on a phone, especially for landscape archive photographs.
+    small = small.filter(ImageFilter.GaussianBlur(3))
     small = ImageEnhance.Color(small).enhance(0.6)
-    small = ImageEnhance.Brightness(small).enhance(0.42)
+    small = ImageEnhance.Brightness(small).enhance(0.66)
     return small.resize((PW, PH), Image.Resampling.BICUBIC)
 
 
@@ -105,7 +108,7 @@ def card(image: Image.Image, focus: tuple[float, float] = (0.5, 0.5), tilt: floa
     mask = framed.getchannel("A").point(lambda a: int(a * 0.6))
     shadow.paste((0, 0, 0, 255), (60, 74), mask)
     shadow = shadow.filter(ImageFilter.GaussianBlur(22))
-    cx, cy = PW // 2, round(PH * CARD_CENTER_Y)
+    cx, cy = PW // 2, round(PH * CARD_BOTTOM_Y - framed.height / 2)
     plate = plate.convert("RGBA")
     plate.alpha_composite(shadow, (cx - shadow.width // 2, cy - shadow.height // 2))
     plate.alpha_composite(framed, (cx - framed.width // 2, cy - framed.height // 2))
@@ -150,7 +153,7 @@ def _night(seed: str) -> Image.Image:
     plate = Image.blend(base, grain, 0.035)
     vignette = Image.new("L", (PW, PH), 0)
     draw = ImageDraw.Draw(vignette)
-    cx, cy = PW / 2 + rng.uniform(-40, 40), PH * CARD_CENTER_Y
+    cx, cy = PW / 2 + rng.uniform(-40, 40), PH * 0.36
     for step in range(40):
         r = max(PW, PH) * (1 - step / 40)
         draw.ellipse((cx - r, cy - r * 1.2, cx + r, cy + r * 1.2), fill=int(150 * step / 40))

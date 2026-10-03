@@ -74,7 +74,9 @@ Score 1 to 5 (5 excellent, 4 good enough to publish, 3 or lower must be fixed), 
 
 Also:
 - frames: each beat whose frame has a problem (off-topic, anachronistic, the wrong ship, city, or person, corpses or gore, nudity, a big watermark,
-  mostly text, the subject cropped out, blurry, or the same picture as another beat), with the problem.
+  mostly text, the subject cropped out, blurry, the same picture as another beat, or a print too small to read at phone size), with the problem.
+  Use the image title and date listed beside each beat to check what the image actually depicts. A modern photo of
+  another historical event is not an archive photo of this event; flag it when the narration presents it as such.
   Leave out beats that are fine. {loop_note}
 - speech: the recognizer's differences are listed. For each real mispronunciation (not another spelling of
   a correctly spoken name, not a skipped short word), give the beat, the word exactly as written in the
@@ -198,6 +200,10 @@ def review(folder: Path, script: dict, result: dict, episode_id: str, visuals: l
         parts.append(f"On-screen text over beat 1: \"{script['hook_text']}\"")
     for i, (beat, frame) in enumerate(zip(manifest["beats"], result["beats"]), start=1):
         parts.append(f"\nBeat {i} ({beat['start']:.1f}-{beat['end']:.1f} s): \"{beat['text']}\"")
+        visual = visuals[i - 1]
+        if choice := visual.get("_choice"):
+            parts.append(f"Image: {choice.get('title', 'untitled')}; recorded date: {choice.get('date') or 'unknown'}; "
+                         f"fit: {visual.get('_fit', 'unrated')}; actually shows: {visual.get('_shows') or 'not recorded'}")
         parts += [Path(f) for f in frame.get("frames", [frame["frame"]]) if Path(f).exists()]
     speech = result.get("speech", {})
     parts.append(
