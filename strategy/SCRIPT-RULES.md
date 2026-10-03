@@ -49,10 +49,12 @@ Folder: `content/episodes/<id>/` (ids are `ep001`, `ep002`, ...).
 - **On-screen hook:** `hook_text` is 2–6 words shown over beat 1 from its first frame. It adds to the spoken
   hook (a time, a number, the stakes) without repeating it or giving away the payoff: "18 MINUTES TO SINK",
   "THE KEY NOBODY HAD".
-- **Truth:** every claim must be supported by at least two independent reputable sources (museums, national
-  archives, universities, the Smithsonian, Britannica, established history publications such as History
+- **Truth:** every claim must carry exact quotes matched against the fetched text of at least two independent
+  reputable sources (museums, national archives, universities, the Smithsonian, Britannica, established history publications such as History
   Extra or World History Encyclopedia, peer-reviewed journals, established newspapers). Disputed details and
-  legends are left out or attributed ("according to one account", "historians think"). Never invent quotes,
+  legends are left out or attributed ("according to one account", "historians think"). The script must preserve
+  a source's uncertainty; it cannot strengthen correlation into cause or describe a survivor as the only one
+  without evidence. Never invent quotes,
   numbers, names, or dates. Death tolls are stated as the sources give them, with "about", "at least", or
   "estimated" kept, and a range when they disagree.
 - **Tone:** grave, vivid, human. Tell it through the people in it: what they saw, decided, and could not
