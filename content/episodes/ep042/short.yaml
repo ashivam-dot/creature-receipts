@@ -1,8 +1,8 @@
 id: ep042
 title: Why Did the Aztecs Put Out Every Fire in 1507? 😳
 series: Fallen Empires
-description: In 1507, the Aztec Empire extinguished every flame in Tenochtitlan and waited in darkness for a new fire to be
-  lit inside a human sacrifice.
+description: At the 1507 New Fire Ceremony, hearths went dark for one night in a ritual repeated every 52 years.
+  The video uses a labeled 2023 Tenochtitlan reconstruction and a labeled 1945 Diego Rivera mural as illustrations.
 sources:
 - https://en.wikipedia.org/wiki/New_Fire_ceremony
 - https://www.worldhistory.org/article/866/the-aztec-new-fire-ceremony/
@@ -23,13 +23,13 @@ tags:
 voice:
   engine: gemini
   voice: Charon
-  direction: 'Read the transcript below aloud as a gripping true-story narrator on a viral YouTube Short: fast and urgent,
-    about 170 words a minute, with only tiny pauses, a low, intense voice and rising tension that hits the last line hard.
-    Speak only the transcript.'
+  direction: 'Read the transcript below aloud as a gripping true-story narrator on a viral YouTube Short: fast and
+    urgent, about 170 words a minute, with only tiny pauses, a low, intense voice and rising tension that hits the
+    last line hard. Speak only the transcript.'
 beats:
-- text: To keep the world alive, the empire plunged itself into total darkness.
+- text: To keep the world alive, the empire went dark for one night.
   emphasis:
-  - total darkness
+  - one night
   visual:
     source: url
     url: https://thumb.wikimedia.org/wikipedia/commons/thumb/0/07/Vista_completa_de_Tenochtitl%C3%A1n.jpg/1280px-Vista_completa_de_Tenochtitl%C3%A1n.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
@@ -44,9 +44,10 @@ beats:
     motion: pan_right
     focus_x: 0.5
     focus_y: 0.5
-- text: Every hearth fire across the Aztec realm was extinguished before midnight.
+    label: TENOCHTITLAN • 2023 RECONSTRUCTION
+- text: Every fifty-two years, hearth fires across the Aztec realm were extinguished before midnight.
   emphasis:
-  - hearth fire
+  - Every fifty-two years
   - extinguished
   sfx: whoosh
   visual:
@@ -85,6 +86,7 @@ beats:
     motion: pan_right
     focus_x: 0.5
     focus_y: 0.5
+    label: DIEGO RIVERA MURAL • 1945
 - text: High atop the Hill of the Star, priests watched the Pleiades.
   emphasis:
   - Hill of the Star
@@ -158,13 +160,15 @@ beats:
       kind: fact
       big: '1507'
       small: The final ceremony
-- text: To keep the world alive, the empire plunged itself into total darkness.
+    label: MOCTEZUMA II • LATER PORTRAIT
+- text: To keep the world alive, the empire went dark for one night.
   emphasis:
-  - empire plunged
+  - one night
   visual:
     reuse: 1
     motion: zoom_out
     focus_x: 0.5
     focus_y: 0.5
+    label: TENOCHTITLAN • 2023 RECONSTRUCTION
 depth_motion: true
-hook_text: 52 YEARS OF DARKNESS
+hook_text: ONE NIGHT, EVERY 52 YEARS

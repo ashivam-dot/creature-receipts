@@ -1,8 +1,8 @@
 id: ep031
 title: How Did One Man Survive Both Atomic Bombs? 🤯
 series: Sole Survivors
-description: Tsutomu Yamaguchi is the only person officially recognized as surviving both atomic bombings in 1945. This is
-  the story of his survival in Hiroshima and Nagasaki.
+description: Tsutomu Yamaguchi survived the Hiroshima and Nagasaki atomic bombings in 1945. Japan later officially
+  recognized him as a survivor of both. Archival blast photographs and labeled location cards illustrate the account.
 sources:
 - https://en.wikipedia.org/wiki/Tsutomu_Yamaguchi
 - https://www.missedhistory.com/article/tsutomu-yamaguchi-double-atomic-bomb
@@ -25,39 +25,40 @@ tags:
 voice:
   engine: gemini
   voice: Charon
-  direction: 'Read the transcript below aloud as a gripping true-story narrator on a viral YouTube Short: fast and urgent,
-    about 170 words a minute, with only tiny pauses, a low, intense voice and rising tension that hits the last line hard.
-    Speak only the transcript.'
+  direction: 'Read the transcript below aloud as a gripping true-story narrator on a viral YouTube Short: fast and
+    urgent, about 170 words a minute, with only tiny pauses, a low, intense voice and rising tension that hits the
+    last line hard. Speak only the transcript.'
 beats:
 - text: Tsutomu Yamaguchi was explaining the Hiroshima blast when the second bomb struck.
   emphasis:
   - explaining
   - second bomb struck
   visual:
-    source: card
-    card:
-      kind: fact
-      big: explaining
-      small: ''
-    motion: zoom_in
+    source: url
+    url: https://thumb.wikimedia.org/wikipedia/commons/thumb/2/29/Atomic_Cloud_Rises_Over_Nagasaki%2C_Japan_-_NARA_-_535795.tif/lossy-page1-1920px-Atomic_Cloud_Rises_Over_Nagasaki%2C_Japan_-_NARA_-_535795.tif.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
+    credit:
+      source: Wikimedia Commons
+      title: Atomic Cloud Rises Over Nagasaki, Japan - NARA - 535795.tif
+      credit: Charles Levy
+      license: Public domain
+      url: https://commons.wikimedia.org/wiki/File:Atomic_Cloud_Rises_Over_Nagasaki,_Japan_-_NARA_-_535795.tif
+    fallbacks:
+    - color
+    motion: pan_down
+    focus_x: 0.5
+    focus_y: 0.5
+    label: NAGASAKI • AUG 9, 1945
 - text: Days earlier, the naval engineer was finishing a business trip in Hiroshima.
   emphasis:
   - naval engineer
   - Hiroshima
   visual:
-    source: url
-    url: https://upload.wikimedia.org/wikipedia/commons/2/26/Employees_of_the_Mitsubishi_Heavy_Industries_193707.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
-    credit:
-      source: Wikimedia Commons
-      title: Employees of the Mitsubishi Heavy Industries 193707.jpg
-      credit: Unknown authorUnknown author
-      license: Public domain
-      url: https://commons.wikimedia.org/wiki/File:Employees_of_the_Mitsubishi_Heavy_Industries_193707.jpg
-    fallbacks:
-    - color
-    motion: pan_left
-    focus_x: 0.5
-    focus_y: 0.6
+    source: card
+    card:
+      kind: dateline
+      big: HIROSHIMA
+      small: August 1945
+    motion: zoom_in
 - text: At 8:15 a.m., the first atomic bomb detonated three kilometers away.
   emphasis:
   - 8:15 a.m.
@@ -77,7 +78,7 @@ beats:
     motion: pan_right
     focus_x: 0.5
     focus_y: 0.5
-- text: Yamaguchi survived the heat and fled to the safety of Nagasaki.
+- text: Yamaguchi survived the heat and returned home to Nagasaki.
   emphasis:
   - survived
   - Nagasaki
@@ -95,25 +96,19 @@ beats:
     motion: pan_left
     focus_x: 0.5
     focus_y: 0.4
+    label: HIROSHIMA MEMORIAL • MODERN PHOTO
 - text: Bandaged and shaking, he reported for work on August 9.
   emphasis:
   - Bandaged
   - August 9
   sfx: whoosh
   visual:
-    source: url
-    url: https://thumb.wikimedia.org/wikipedia/commons/thumb/f/ff/Catholic_cathedral_in_Nagasaki_HD-SN-99-02902.JPEG/1920px-Catholic_cathedral_in_Nagasaki_HD-SN-99-02902.JPEG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
-    credit:
-      source: Wikimedia Commons
-      title: Catholic cathedral in Nagasaki HD-SN-99-02902.JPEG
-      credit: US Army Corps of Engineers
-      license: Public domain
-      url: https://commons.wikimedia.org/wiki/File:Catholic_cathedral_in_Nagasaki_HD-SN-99-02902.JPEG
-    fallbacks:
-    - color
-    motion: pan_down
-    focus_x: 0.5
-    focus_y: 0.5
+    source: card
+    card:
+      kind: dateline
+      big: NAGASAKI
+      small: Mitsubishi office • August 9
+    motion: zoom_in
 - text: His supervisor laughed, asking how one bomb could destroy a city.
   emphasis:
   - supervisor laughed
@@ -144,6 +139,7 @@ beats:
     motion: pan_down
     focus_x: 0.5
     focus_y: 0.5
+    label: NAGASAKI • AUG 9, 1945
 - text: He was forced to start his story over.
   emphasis:
   - story over
@@ -151,4 +147,4 @@ beats:
     reuse: 1
     motion: zoom_out
 depth_motion: true
-hook_text: TWO GROUND ZEROS
+hook_text: TWO BLASTS, ONE SURVIVOR

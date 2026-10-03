@@ -1,0 +1,37 @@
+{
+  "episode_id": "ep042",
+  "status": "private replacement preview; editorial hold remains",
+  "source_base_commit": "0f487e9603453774e24218cfd644b0fe0c0f46e6",
+  "preview_sha256": "ff019fe2f05f504d2b14c2b24bb82d5d2cf864a15a8ed8d984e1fb9eab955ccd",
+  "preview_bytes": 12477029,
+  "video": {
+    "width": 1080,
+    "height": 1920,
+    "duration_seconds": 24.17,
+    "integrated_lufs": -14.3,
+    "true_peak_dbfs": -1.9,
+    "warnings": []
+  },
+  "speech_alignment": {
+    "coverage": [
+      1.0,
+      0.897,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "differences": [
+      "beat 2: the recognizer heard only 90% of the line"
+    ]
+  },
+  "visual_review": "Frame sheet and first video frame inspected; factual hook and on-screen provenance labels visible.",
+  "native_listening": "pending; no native listening approval claimed",
+  "withdrawal": {
+    "privacy_status": "private",
+    "replacement_status": "pending source, visual, voice and final MP4 review"
+  },
+  "publication": "No upload, scheduling, or hold clearance performed.",
+  "independent_asr": "Full narration recognized the intended beat 2 line exactly; no transcript differences. The beat-alignment coverage signal remains 0.897."
+}

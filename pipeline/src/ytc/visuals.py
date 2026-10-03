@@ -41,7 +41,7 @@ _GENERIC = frozenset(
     "of old over the under with century drawing engraving etching illustration image lithograph painting "
     "photo photograph picture portrait print scene view woodcut".split()
 )
-_RENDER_ONLY = ("motion", "focus_x", "focus_y", "reuse", "box", "crop", "card")
+_RENDER_ONLY = ("motion", "focus_x", "focus_y", "reuse", "box", "crop", "card", "label")
 # A picture the picker chose by looking at it may be smaller than MIN_SIDE: it's then shown whole, as a card.
 URL_MIN_SIDE = 600
 

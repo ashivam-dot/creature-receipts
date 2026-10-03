@@ -2,7 +2,7 @@
 
 Researched 2026-10-01 by the cloud studio (gemini-3-flash-preview, gemini-3.5-flash-lite, gemma-4-31b-it) from the sources below, read in full by the studio. Only claims backed by two or more independent sites were allowed into the script.
 
-Story: In August 1945, naval engineer Tsutomu Yamaguchi was finishing a business trip in Hiroshima when a flash blinded him. The world's first atomic bomb, Little Boy, detonated just three kilometers away, rupturing his eardrums and searing his skin. Miraculously, he survived and fled to the only place he felt safe: his hometown of Nagasaki. Three days later, wrapped in bandages and shaking with fever, he reported to his office at Mitsubishi. As he described the 'single bomb' that had evaporated Hiroshima, his supervisor scoffed, calling him crazy. At that exact moment, the second atomic bomb, Fat Man, exploded outside the window. Again, Yamaguchi was three kilometers from ground zero. Again, he survived. He became the only person officially recognized by Japan to have survived both attacks, living until age 93 to testify that such horror must never happen a third time.
+Story (original research draft; corrected rendering below): In August 1945, naval engineer Tsutomu Yamaguchi was finishing a business trip in Hiroshima when a flash blinded him. The world's first atomic bomb, Little Boy, detonated just three kilometers away, rupturing his eardrums and searing his skin. Miraculously, he survived and fled to the only place he felt safe: his hometown of Nagasaki. Three days later, wrapped in bandages and shaking with fever, he reported to his office at Mitsubishi. As he described the 'single bomb' that had evaporated Hiroshima, his supervisor scoffed, calling him crazy. At that exact moment, the second atomic bomb, Fat Man, exploded outside the window. Again, Yamaguchi was three kilometers from ground zero. Again, he survived. He became the only person officially recognized by Japan to have survived both attacks, living until age 93 to testify that such horror must never happen a third time.
 
 ## Sources
 
@@ -47,21 +47,21 @@ Story: In August 1945, naval engineer Tsutomu Yamaguchi was finishing a business
 
 ## Images
 
-- Beat 1: a designed fact card, "explaining"
-- Beat 2: Employees of the Mitsubishi Heavy Industries 193707.jpg (Public domain, judged scene), https://commons.wikimedia.org/wiki/File:Employees_of_the_Mitsubishi_Heavy_Industries_193707.jpg
+- Beat 1: corrected to the identified 1945 Nagasaki atomic-cloud photograph; on-screen label states city and date.
+- Beat 2: corrected to a designed `HIROSHIMA / August 1945` location card. The original 1937 employee photo identifies Yoshitoshi Sone and Jirō Horikoshi, not Yamaguchi.
 - Beat 3: Atomic bombing of Japan.jpg (Public domain, judged exact), https://commons.wikimedia.org/wiki/File:Atomic_bombing_of_Japan.jpg
-- Beat 4: 018 Hiroshima-Japan 2008-10.jpg (CC BY 4.0, judged close), https://commons.wikimedia.org/wiki/File:018_Hiroshima-Japan_2008-10.jpg
-- Beat 5: Catholic cathedral in Nagasaki HD-SN-99-02902.JPEG (Public domain, judged scene), https://commons.wikimedia.org/wiki/File:Catholic_cathedral_in_Nagasaki_HD-SN-99-02902.JPEG
-- Beat 6: beat 5's picture again, no better picture was found.
+- Beat 4: 018 Hiroshima-Japan 2008-10.jpg (CC BY 4.0, modern memorial photograph; labeled `HIROSHIMA MEMORIAL • MODERN PHOTO`), https://commons.wikimedia.org/wiki/File:018_Hiroshima-Japan_2008-10.jpg
+- Beat 5: corrected to a designed `NAGASAKI / Mitsubishi office • August 9` location card; the prior post-blast cathedral ruins were chronologically misleading before the blast.
+- Beat 6: reuse the Nagasaki office location card; no supervisor is depicted.
 - Beat 7: Atomic Cloud Rises Over Nagasaki, Japan - NARA - 535795.tif (Public domain, judged exact), https://commons.wikimedia.org/wiki/File:Atomic_Cloud_Rises_Over_Nagasaki,_Japan_-_NARA_-_535795.tif
-- Beat 8: beat 1's picture again, for the loop.
+- Beat 8: reuse the identified Nagasaki atomic-cloud photograph for the loop.
 
 ## Render log
 
 - Render 1: 32.53 s, 85 words, -14.8 LUFS, -1.8 dBFS true peak, warnings: none; speech differences: '8 15' heard as '8.15' after 'in hiroshima at'; '9' heard as '9th' after 'work on august'. Scores hook 5, clarity 5, payoff 5, visuals 3, loop 5. Fixes asked: The image shows a woman at a typewriter, but the audio describes a male supervisor.
 - Render 2: 32.53 s, 85 words, -14.8 LUFS, -1.8 dBFS true peak, warnings: none; speech differences: '8 15' heard as '8.15' after 'in hiroshima at'; '9' heard as '9th' after 'work on august'. Scores hook 5, clarity 5, payoff 5, visuals 5, loop 5. Passed.
 
-## Quality gate (cloud studio, 2026-10-01)
+## Superseded quality gate for the withdrawn upload (cloud studio, 2026-10-01)
 
 | Hook | Clarity | Payoff | Visuals | Loop |
 |---|---|---|---|---|
@@ -74,3 +74,9 @@ Story: In August 1945, naval engineer Tsutomu Yamaguchi was finishing a business
 - Loop: The final line perfectly bridges back to the first.
 
 Better than the last: This is the first Short in the series.
+
+## Editorial correction receipt (2026-10-03)
+
+The public upload `jl-V7yPkbkU` remains private under `withdrawal.json`. The old `TWO GROUND ZEROS` overlay was false: ground zero is the detonation point; HISTORY places Yamaguchi less than two miles from each explosion, and the BBC confirms he survived both. The replacement hook is `TWO BLASTS, ONE SURVIVOR`; the old alternate script hook asking how he survived “ground zero” was also removed. The opening uses the identified Nagasaki atomic-cloud photograph; the 1937 photo of other Mitsubishi employees was removed. Date/place cards stand in for any unverified portrait or office photo. Beat 4's present-day Hiroshima memorial photograph is labeled as modern. Narration now says he “returned home to Nagasaki,” avoiding the suggestion that Nagasaki was safe.
+
+Sources checked against the correction: [HISTORY account](https://www.history.com/articles/the-man-who-survived-two-atomic-bombs), [BBC recognition report](https://news.bbc.co.uk/2/hi/asia-pacific/8443295.stm), [Commons metadata for the removed employee photo](https://commons.wikimedia.org/wiki/File:Employees_of_the_Mitsubishi_Heavy_Industries_193707.jpg), [Commons metadata for the Nagasaki cloud photograph](https://commons.wikimedia.org/wiki/File:Atomic_Cloud_Rises_Over_Nagasaki,_Japan_-_NARA_-_535795.tif), and the [live-video audit](../../../research/channel/live-video-audit-2026-10-03.md). The previous render log and scores above document the withdrawn version only; they do not approve this replacement.

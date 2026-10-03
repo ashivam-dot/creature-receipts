@@ -154,6 +154,7 @@ def write_ass(
     fonts_dir: Path,
     hook: tuple[str, float] | None = None,
     beat_y: dict[int, float] | None = None,
+    visual_labels: list[tuple[float, float, str]] | None = None,
 ) -> None:
     """Captions, and the hook's on-screen text (its words, and when it leaves) if there is one. `beat_y` moves
     the captions of the beats it names to another height (a fraction of the frame)."""
@@ -172,6 +173,8 @@ def write_ass(
         # BorderStyle 3 draws a box in the outline color behind each line.
         f"Style: Hook,{style.hook_font},{style.hook_size},{highlight},{highlight},&H38000000,&H00000000,"
         f"0,0,0,0,100,100,{hook_spacing},0,3,18,0,8,60,60,0,1\n\n"
+        f"Style: Provenance,{style.font},48,{primary},{primary},&H50000000,&H00000000,"
+        f"0,0,0,0,100,100,0,0,3,12,0,8,60,60,0,1\n\n"
         "[Events]\nFormat: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text\n"
     )
     font = _measure_font(fonts_dir / style.font_file, style.size)
@@ -210,6 +213,11 @@ def write_ass(
             )
     if hook and hook[0].strip():
         events.append(_hook_event(hook[0], hook[1], fonts_dir, style))
+    for start, end, label in visual_labels or []:
+        safe = _display(label, True)
+        if safe:
+            events.append(f"Dialogue: 1,{_ass_time(start)},{_ass_time(end)},Provenance,,0,0,0,,"
+                          f"{{\\an8\\pos({WIDTH // 2},{int(HEIGHT * 0.43)})}}{safe}")
     path.write_text(header + "\n".join(events) + "\n", encoding="utf-8")
 
 

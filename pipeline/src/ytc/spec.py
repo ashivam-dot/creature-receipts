@@ -34,6 +34,8 @@ class Visual(_Model):
     url: str | None = None
     # For a "url" picture: source, title, credit (the author), license, and url (the picture's page).
     credit: dict[str, str | None] = {}
+    # Short, visible provenance note for a reconstruction, later artwork, or illustrative image.
+    label: str = ""
     card: Card | None = None
     color: str = "#101820"
     motion: Motion = "zoom_in"

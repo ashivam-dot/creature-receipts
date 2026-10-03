@@ -2,7 +2,7 @@
 
 Researched 2026-10-02 by the cloud studio (gemini-3.7-flash) from the sources below, read in full by the studio. Only claims backed by two or more independent sites were allowed into the script.
 
-Story: In 1507, the Aztec Empire stood on the brink of total destruction—or so they believed. Every 52 years, their calendar cycles aligned, and they feared the sun would never rise again. To prevent cosmic extinction, every fire in the empire was extinguished. Tenochtitlan fell into absolute darkness. Families huddled on rooftops, watching the stars in terror. Parents painted their children’s faces and kept them awake, fearing that if the ritual failed, they would turn into mice or be devoured by star-demons called Tzitzimime. High atop the Hill of the Star, priests watched the Pleiades. At midnight, they cut open a captive’s chest. In the open wound, they used a wooden drill to spark a new flame. If it didn't light, the world ended. The fire caught. From that single chest, runners carried torches across the valley, relighting a whole civilization. It was the last time they would ever perform it.
+Story (original research draft; corrected rendering below): In 1507, the Aztec Empire stood on the brink of total destruction—or so they believed. Every 52 years, their calendar cycles aligned, and they feared the sun would never rise again. To prevent cosmic extinction, every fire in the empire was extinguished. Tenochtitlan fell into absolute darkness. Families huddled on rooftops, watching the stars in terror. Parents painted their children’s faces and kept them awake, fearing that if the ritual failed, they would turn into mice or be devoured by star-demons called Tzitzimime. High atop the Hill of the Star, priests watched the Pleiades. At midnight, they cut open a captive’s chest. In the open wound, they used a wooden drill to spark a new flame. If it didn't light, the world ended. The fire caught. From that single chest, runners carried torches across the valley, relighting a whole civilization. It was the last time they would ever perform it.
 
 ## Sources
 
@@ -18,7 +18,7 @@ Story: In 1507, the Aztec Empire stood on the brink of total destruction—or so
 
 | # | Beats | Claim | Sources | Confidence |
 |---|---|---|---|---|
-| 1 | - | The New Fire Ceremony occurred once every 52 years to prevent the end of the world. | S1, S2, S3, S4, S5 | high |
+| 1 | 1, 2, 7 | The New Fire Ceremony occurred once every 52 years to prevent the end of the world. | S1, S2, S3, S4, S5 | high |
 | 2 | - | The ritual took place when the 260-day sacred calendar and 365-day solar calendar aligned. | S1, S2, S3 | high |
 | 3 | 1, 2, 7 | Every fire in the Aztec realm was extinguished before the ceremony began. | S1, S2, S3, S4 | high |
 | 4 | - | Citizens destroyed old household items like hearth stones, pottery, and clothing to signify renewal. | S1, S2, S3, S4 | high |
@@ -44,19 +44,19 @@ Story: In 1507, the Aztec Empire stood on the brink of total destruction—or so
 
 ## Images
 
-- Beat 1: Vista completa de Tenochtitlán.jpg (CC BY 4.0, judged exact), https://commons.wikimedia.org/wiki/File:Vista_completa_de_Tenochtitl%C3%A1n.jpg
+- Beat 1: Vista completa de Tenochtitlán.jpg (CC BY 4.0, 2023 digital reconstruction by Thomas Kole; labeled on screen), https://commons.wikimedia.org/wiki/File:Vista_completa_de_Tenochtitl%C3%A1n.jpg
 - Beat 2: Codex Borbonicus (p. 34).jpg (Public domain, judged exact), https://commons.wikimedia.org/wiki/File:Codex_Borbonicus_(p._34).jpg
-- Beat 3: Murales Rivera - Markt in Tlatelolco 3.jpg (Public domain, judged scene), https://commons.wikimedia.org/wiki/File:Murales_Rivera_-_Markt_in_Tlatelolco_3.jpg
+- Beat 3: Murales Rivera - Markt in Tlatelolco 3.jpg (Public domain, Diego Rivera mural from 1945; labeled illustration, not the 1507 ceremony), https://commons.wikimedia.org/wiki/File:Murales_Rivera_-_Markt_in_Tlatelolco_3.jpg
 - Beat 4: Plejades.jpg (CC BY 4.0, judged exact), https://commons.wikimedia.org/wiki/File:Plejades.jpg
 - Beat 5: Mask of Quetzalcoatl at the British Museum 001.jpg (CC BY 2.5, judged close), https://commons.wikimedia.org/wiki/File:Mask_of_Quetzalcoatl_at_the_British_Museum_001.jpg
-- Beat 6: Moctezuma Xocoyotzin.png (Public domain, judged close), https://commons.wikimedia.org/wiki/File:Moctezuma_Xocoyotzin.png
-- Beat 7: beat 1's picture again, for the loop.
+- Beat 6: Moctezuma Xocoyotzin.png (Public domain, late 17th-century artistic portrait; labeled on screen), https://commons.wikimedia.org/wiki/File:Moctezuma_Xocoyotzin.png
+- Beat 7: beat 1's labeled 2023 reconstruction again, for the loop.
 
 ## Render log
 
 - Render 1: 22.73 s, 81 words, -14.1 LUFS, -1.7 dBFS true peak, warnings: none; speech differences: none. Scores hook 5, clarity 5, payoff 4, visuals 5, loop 5. Passed.
 
-## Quality gate (cloud studio, 2026-10-02)
+## Superseded quality gate for the withdrawn upload (cloud studio, 2026-10-02)
 
 | Hook | Clarity | Payoff | Visuals | Loop |
 |---|---|---|---|---|
@@ -69,3 +69,9 @@ Story: In 1507, the Aztec Empire stood on the brink of total destruction—or so
 - Loop: The final line mirrors the opening hook to create a clean, natural loop back to the start.
 
 Better than the last: It achieves a richer atmosphere by weaving authentic Aztec codex art and artifacts directly into the ritual narrative.
+
+## Editorial correction receipt (2026-10-03)
+
+The public upload `Jts8c-u_96U` remains private under `withdrawal.json`. The old `52 YEARS OF DARKNESS` overlay conflated the 52-year ritual cycle with the duration of darkness. World History Encyclopedia describes the ceremony as recurring every 52 years, with hearths extinguished for the ceremonial night. The replacement hook is `ONE NIGHT, EVERY 52 YEARS`; the opening and closing narration now say “for one night,” and beat 2 states the 52-year recurrence.
+
+The opening and closing image is Thomas Kole's 2023 digital reconstruction of Tenochtitlan, labeled `TENOCHTITLAN • 2023 RECONSTRUCTION` on screen. Beat 3's Diego Rivera mural was made in 1945 and depicts Tlatelolco market; its label says `DIEGO RIVERA MURAL • 1945`. Neither is archival documentation of the 1507 ceremony. Beat 6 additionally labels the later artistic portrait of Moctezuma II. Sources checked: [World History Encyclopedia](https://www.worldhistory.org/article/866/the-aztec-new-fire-ceremony/), [Commons reconstruction metadata](https://commons.wikimedia.org/wiki/File:Vista_completa_de_Tenochtitl%C3%A1n.jpg), [Commons mural metadata](https://commons.wikimedia.org/wiki/File:Murales_Rivera_-_Markt_in_Tlatelolco_3.jpg), and the [live-video audit](../../../research/channel/live-video-audit-2026-10-03.md). The earlier render log and scores above apply only to the withdrawn version.

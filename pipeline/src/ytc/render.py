@@ -276,7 +276,10 @@ def make_short(spec_path: Path, out: Path | None = None) -> Path:
     ass = work / "captions.ass"
     hook = (spec.hook_text, narration.beat_spans[0][1]) if spec.hook_text else None
     beat_y = {i: beat.caption_y for i, beat in enumerate(spec.beats) if beat.caption_y is not None}
-    captions.write_ass(narration.words, spec.captions, ass, total, emphasis, FONTS_DIR, hook=hook, beat_y=beat_y)
+    visual_labels = [(boundaries[i] / FPS, boundaries[i + 1] / FPS, beat.visual.label)
+                     for i, beat in enumerate(spec.beats) if beat.visual.label]
+    captions.write_ass(narration.words, spec.captions, ass, total, emphasis, FONTS_DIR, hook=hook, beat_y=beat_y,
+                       visual_labels=visual_labels)
     captions.write_srt(narration.words, work / "captions.srt")
 
     out = (out or base / f"{spec.id}.mp4").resolve()
