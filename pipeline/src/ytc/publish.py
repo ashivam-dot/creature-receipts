@@ -487,6 +487,8 @@ def next_slots(count: int, taken: set[datetime], start: datetime | None = None, 
 
 def schedule(spec_path: Path, when: datetime | None = None) -> dict:
     spec_path = spec_path.resolve()
+    if (spec_path.parent / "editorial_hold.json").exists():
+        raise RuntimeError(f"{spec_path.parent.name} is on editorial hold; remove editorial_hold.json after repair and review")
     spec = ShortSpec.load(spec_path)
     folder = spec_path.parent
     record_path = folder / "publish.json"
