@@ -1297,6 +1297,10 @@ def crosspost_scheduled(run: Run) -> None:
 # A Short joins the learning log's scoreboard after this long: a day gives the first verdict on a Short, and at two
 # a day, waiting longer means the lesson reaches Shorts made days later.
 LEARN_FROM_HOURS = 24
+# Fewer views than this cannot support a useful comparison of hooks, pictures,
+# or retention; the first few channel-page visits are especially misleading.
+LEARN_MIN_VIEWS = 100
+LEARN_MIN_SHORTS = 3
 # This many Shorts in a row not shown at 24 hours is a hold on the channel, not on any one Short.
 NOT_SHOWN_STREAK = 3
 
@@ -1385,6 +1389,10 @@ def _video_rows(analytics: dict, eps: list[dict]) -> list[dict]:
     now = datetime.now(IST)
     for video in analytics.get("videos", []):
         e = by_video.get(video["id"])
+        # The channel's two pre-rebrand animal Shorts and any unknown/private
+        # uploads are retained in platform totals, not used to teach this niche.
+        if e is None or e["state"] != "live":
+            continue
         published = datetime.fromisoformat(video["published"].replace("Z", "+00:00"))
         a = video.get("analytics") or {}
         at10 = min(video.get("retention") or [], key=lambda p: abs(p["at"] - 0.1), default=None)
@@ -1428,7 +1436,12 @@ def _section(text: str, heading: str) -> str:
 
 def update_learnings(run: Run, analytics: dict) -> dict:
     eps = episodes()
-    rows = [r for r in _video_rows(analytics, eps) if r["hours"] >= LEARN_FROM_HOURS]
+    rows = [r for r in _video_rows(analytics, eps)
+            if r["hours"] >= LEARN_FROM_HOURS and r["views"] >= LEARN_MIN_VIEWS]
+    if len(rows) < LEARN_MIN_SHORTS:
+        message = (f"Only {len(rows)} live history Shorts have {LEARN_FROM_HOURS}+ hours and "
+                   f"{LEARN_MIN_VIEWS}+ views; keep the current hypotheses pending.")
+        return {"rows": rows, "medians": {}, "summary": message, "log": message}
     reviews = _reviews(eps)
     sister = _sister_rules()
     text = LEARNINGS.read_text(encoding="utf-8")

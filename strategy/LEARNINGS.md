@@ -10,11 +10,11 @@ Recompute daily and after each Short's 24- and 72-hour reviews, over Shorts with
 
 | Measure | Where it comes from | Channel median | Target |
 |---|---|---|---|
-| Engaged share (stand-in for Studio's "stayed to watch") | `analytics.engaged_share` | 67% | 70%+; under 60% rarely takes off |
-| Average percentage viewed | `analytics.averageViewPercentage` | 82.8% | 80%+ (loops can push it past 100%) |
+| Engaged share (stand-in for Studio's "stayed to watch") | `analytics.engaged_share` | not enough data yet | Track after three history Shorts each pass 100 views |
+| Average percentage viewed | `analytics.averageViewPercentage` | not enough data yet | Track after three history Shorts each pass 100 views |
 | Still watching at 10% of the Short | `retention` point nearest `at: 0.1` | not enough data yet | rising week over week |
-| Subscribers per 1,000 views | `subscribersGained` / `views` | 0.0 | 2+ |
-| Likes per 100 views | `likes` / `views` | 0.0 | 4+ |
+| Subscribers per 1,000 views | `subscribersGained` / `views` | not enough data yet | Track after three history Shorts each pass 100 views |
+| Likes per 100 views | `likes` / `views` | not enough data yet | Track after three history Shorts each pass 100 views |
 
 ## Rules we've proven
 
@@ -39,9 +39,8 @@ contradiction.
 
 | Short | Series | Hook style | Views | Engaged share | Avg % viewed | Watching at 10% | Subs gained | Likely reason |
 |---|---|---|---|---|---|---|---|---|
-| X8MhmozMp0o | ? | –, story | 3 | 67% | 91.1% | – | 0 | Topic curiosity and tight pacing drove above-median retention (91.1% vs 82.8% median), though views remain low. |
-| ep031 | Sole Survivors | statement, story | 10 | – | – | – | – | Strong question hook and dramatic tragedy topic generated highest view count (10), but retention metrics are still populating. |
-| zX1VUGHLb0o | ? | –, story | 3 | 67% | 74.6% | – | 0 | Irony hook matched median engagement (66.7%), but below-median retention (74.6%) suggests mid-video pacing slackened or loop failed. |
+
+No Short has enough views yet for a useful comparison. The two pre-rebrand animal Shorts are excluded from this history channel's learning set.
 
 ## Log
 
@@ -51,3 +50,4 @@ contradiction.
 - 2026-10-01: Initialized the learning log with preliminary research hypotheses; no performance data available yet.
 - 2026-10-02: Maintained existing hypotheses without promotion as initial Shorts (X8MhmozMp0o, zX1VUGHLb0o) lack sufficient view volume and retention telemetry.
 - 2026-10-03: Established baseline medians across initial 3 Shorts; kept existing hypotheses pending deeper retention metrics.
+- 2026-10-03 editorial correction: the earlier baseline mixed two private pre-rebrand animal Shorts with a handful of history views, then assigned causes to differences of only a few plays. Those medians and causal explanations are withdrawn. Keep every growth idea as a hypothesis until the history Shorts have a meaningful sample.

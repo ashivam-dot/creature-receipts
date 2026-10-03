@@ -95,3 +95,20 @@ def test_a_seen_short_is_diagnosed_and_feeds_the_learnings(studio, monkeypatch):
     assert learned and done[-1] == "learnings: added a hypothesis"
     assert "Next Shorts: Open on the number." in pushed[0][1]
     assert auto._reviews(auto.episodes())[0]["change_next"] == "Open on the number."
+
+
+def test_learning_excludes_old_niche_and_waits_for_real_view_sample(studio, monkeypatch):
+    episodes, _ = studio
+    _live(episodes, "ep025", "aaaaaaaaaaa", 30)
+    live = auto.episodes()[0]
+    private = {**live, "state": "private", "record": {"youtube_url": "https://www.youtube.com/shorts/bbbbbbbbbbb"}}
+    videos = [{"id": video_id, "title": "Short", "published": (NOW - timedelta(hours=30)).isoformat(),
+               "views": views, "likes": 0, "comments": 0, "analytics": {}, "retention": []}
+              for video_id, views in (("aaaaaaaaaaa", 9), ("bbbbbbbbbbb", 1000), ("ccccccccccc", 1000))]
+    snapshot = {"videos": videos}
+    rows = auto._video_rows(snapshot, [live, private])
+    assert [(r["short"], r["views"]) for r in rows] == [("ep025", 9)]
+    monkeypatch.setattr(auto, "episodes", lambda: [live, private])
+    monkeypatch.setattr(auto.llm, "generate", lambda *a, **kw: pytest.fail("insufficient data must not teach the model"))
+    result = auto.update_learnings(auto.Run("test"), snapshot)
+    assert result["rows"] == [] and "hypotheses pending" in result["summary"]
