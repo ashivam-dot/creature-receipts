@@ -27,4 +27,4 @@ This review applies to the local `ep045-replacement-private.mp4`, SHA-256 `f8947
 | Visual review | Opening at 0–3 seconds, seven per-shot review frames, and one frame each second across the 29-second video examined. Winton's face is unobscured at 0 seconds and in the refreshed tracked `sheet.jpg`; the station date label, fact/date cards, and complete memorial statue remain readable. No blank or generated placeholder appears. Contact sheets are in ignored `work/replacement-contact-sheet.jpg` and `work/sweep-sheet-1.jpg` / `work/sweep-sheet-2.jpg`. |
 | Focused tests | `test_editorial_hold.py`, `test_history_cards.py`, `test_short_reviews.py`: 11 passed |
 
-This is a machine speech check plus a sampled visual sweep, not native playback or a human listening check. The draft is ready for that final review before a publication decision. The old public upload remains unchanged.
+This is a machine speech check plus a sampled visual sweep, not native playback or a human listening check. The draft is ready for that final review before a publication decision. The earlier upload is now private, as the status update and withdrawal receipt record.

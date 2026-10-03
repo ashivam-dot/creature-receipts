@@ -62,6 +62,6 @@ The two 403s do not prove deletion/private status, but the six sent records shou
 
 ## Actions taken after audit
 
-On 2026-10-03, the agent verified the exact six video IDs against the authenticated owned YouTube channel. ep009 and ep013 were private already. ep025, ep031, and ep042 were switched from public to private through the YouTube Data API; each change was read back and recorded in the episode's `withdrawal.json`. ep045 remains public. Its description now explicitly says the Stockholm arrivals photo is not Winton's Prague-to-Britain group and that the displayed 7TP is a Polish tank. The exact description hash and time are in `public_clarification.json`.
+On 2026-10-03, the agent verified the exact six video IDs against the authenticated owned YouTube channel. ep009 and ep013 were private already. ep025, ep031, and ep042 were switched from public to private through the YouTube Data API; each change was read back and recorded in the episode's `withdrawal.json`. At that first audit ep045 remained public, with a description clarification recorded in `public_clarification.json`. A later source review found that its narrated survival count exceeded the evidence, so ep045 was also made private; see `content/episodes/ep045/withdrawal.json`. A new owned API read at 22:40 IST found zero public videos.
 
 This is a factual correction hold, not a performance judgment. The withdrawn versions cannot be replaced in place on YouTube. Corrected source, visual, voice and MP4 evidence are required before any new upload.

@@ -43,3 +43,14 @@ key before attempting a failed-post resend. It pauses if the clone or hold read
 fails. This watcher protection takes effect only after the updated Modal app
 is deployed. The refreshed `analytics/2026-10-03.json` snapshot was taken at
 16:57:09 UTC and contains no Winton per-video retention row.
+
+## Deployment verification — 2026-10-03 22:40 IST
+
+The updated `creature-receipts` Modal app was deployed from commit `4a8dd6d`
+in the History channel's configured workspace. A direct remote `slot_watch`
+call returned an empty resend list, and its persisted `hold_read_alerted`
+value was `false`, confirming that it successfully read the current hold.
+The owned YouTube API again returned `private` for `v4rp0oWvgSI` and zero
+public videos. A fresh direct Buffer read returned six sent and zero scheduled
+posts. The hold still cannot cancel a post added manually in Buffer; the
+watchdog alerts if such a post appears.

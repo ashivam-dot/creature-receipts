@@ -1,6 +1,6 @@
 # ep045 Winton private replacement receipts — 2026-10-03
 
-The current public video `v4rp0oWvgSI` stays public, with its separate `public_clarification.json` unchanged. This replacement is a local draft. The old opening (“Many believe”) had no documented audience belief to rebut; the old ending overstated secrecy and Grete Winton's knowledge. The old Stockholm arrivals photograph depicted children from Nazi Germany arriving in Sweden, not Winton's Prague-to-Britain group. The old `Pol5.jpg` showed a Polish 7TP tank, not a German invading tank. Both off-event images are removed.
+The earlier upload `v4rp0oWvgSI` was made private on 2026-10-03 after its survival-count claim exceeded the cited evidence; see `withdrawal.json`. Its earlier `public_clarification.json` remains as a historical record. This replacement is a local draft. The old opening (“Many believe”) had no documented audience belief to rebut; the old ending overstated secrecy and Grete Winton's knowledge. The old Stockholm arrivals photograph depicted children from Nazi Germany arriving in Sweden, not Winton's Prague-to-Britain group. The old `Pol5.jpg` showed a Polish 7TP tank, not a German invading tank. Both off-event images are removed.
 
 ## Direct institutional and family sources
 
