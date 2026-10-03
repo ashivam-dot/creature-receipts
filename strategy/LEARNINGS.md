@@ -10,8 +10,8 @@ Recompute daily and after each Short's 24- and 72-hour reviews, over Shorts with
 
 | Measure | Where it comes from | Channel median | Target |
 |---|---|---|---|
-| Engaged share (stand-in for Studio's "stayed to watch") | `analytics.engaged_share` | not enough data yet | 70%+; under 60% rarely takes off |
-| Average percentage viewed | `analytics.averageViewPercentage` | not enough data yet | 80%+ (loops can push it past 100%) |
+| Engaged share (stand-in for Studio's "stayed to watch") | `analytics.engaged_share` | 67% | 70%+; under 60% rarely takes off |
+| Average percentage viewed | `analytics.averageViewPercentage` | 82.8% | 80%+ (loops can push it past 100%) |
 | Still watching at 10% of the Short | `retention` point nearest `at: 0.1` | not enough data yet | rising week over week |
 | Subscribers per 1,000 views | `subscribersGained` / `views` | 0.0 | 2+ |
 | Likes per 100 views | `likes` / `views` | 0.0 | 4+ |
@@ -29,8 +29,8 @@ into `strategy/SCRIPT-RULES.md`, then cite the evidence here.
 - Cut each Short to 17–27 seconds to match top-performing competitors.
 - Title as a question the Short answers, with one emoji at the end.
 - Write a last line that flows straight into the first line to encourage seamless rewatching.
-- End on a line that makes viewers want to answer or rewatch, not a passive closing statement: Universe Receipts' best Short so far (689 views, 3.8 likes per 100) drew 1 comment because it closed on a statement (2026-10-02).
-- Choose topics whose key moments have strong period pictures: weak visuals caused 7 of the 8 latest history rejections, and each rejection spends a day's free model quota (2026-10-02).
+- End on a line that makes viewers want to answer or rewatch, not a passive closing statement.
+- Choose topics whose key moments have strong period pictures to prevent visual drop-off.
 
 ## Scoreboard
 
@@ -39,8 +39,9 @@ contradiction.
 
 | Short | Series | Hook style | Views | Engaged share | Avg % viewed | Watching at 10% | Subs gained | Likely reason |
 |---|---|---|---|---|---|---|---|---|
-| X8MhmozMp0o | ? | –, story | 3 | – | – | – | – | 3 views and 0 likes at channel median; off-genre biology topic with a non-question title failed to attract initial search or feed engagement. |
-| zX1VUGHLb0o | ? | –, story | 3 | – | – | – | – | 3 views and 0 likes at channel median; historical accident premise lacked an urgent 2-second hook and question-style title to drive algorithmic pickup. |
+| X8MhmozMp0o | ? | –, story | 3 | 67% | 91.1% | – | 0 | Topic curiosity and tight pacing drove above-median retention (91.1% vs 82.8% median), though views remain low. |
+| ep031 | Sole Survivors | statement, story | 10 | – | – | – | – | Strong question hook and dramatic tragedy topic generated highest view count (10), but retention metrics are still populating. |
+| zX1VUGHLb0o | ? | –, story | 3 | 67% | 74.6% | – | 0 | Irony hook matched median engagement (66.7%), but below-median retention (74.6%) suggests mid-video pacing slackened or loop failed. |
 
 ## Log
 
@@ -49,3 +50,4 @@ contradiction.
   Shorts (1 view each, never shown in the Shorts feed) were made private, and their numbers don't count here.
 - 2026-10-01: Initialized the learning log with preliminary research hypotheses; no performance data available yet.
 - 2026-10-02: Maintained existing hypotheses without promotion as initial Shorts (X8MhmozMp0o, zX1VUGHLb0o) lack sufficient view volume and retention telemetry.
+- 2026-10-03: Established baseline medians across initial 3 Shorts; kept existing hypotheses pending deeper retention metrics.

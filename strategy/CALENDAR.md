@@ -23,6 +23,7 @@ event is told for its gore. Space topics belong to the sister channel Universe R
 | 2026-10-01 | New Fire ceremony (1507): the Aztecs believed the world would end every 52 years unless they sacrificed a heart to relight the sun while the entire empire waited in total darkness — done (ep042) | Fallen Empires | The Aztec cosmological concept 'Nahui Ollin' is currently trending on Wikipedia. |
 | 2026-10-02 | Assassination of Mahatma Gandhi (1948): Gandhi had survived five prior attempts and a bombing ten days earlier, yet strictly refused armed guards on his way to his final prayer meeting — parked (ep044) | The Last Hours | Mahatma Gandhi is trending on Wikipedia around the October 2 anniversary of his birth. |
 | 2026-10-02 | Nicholas Winton (1939): his largest rescue train of 250 children was scheduled to leave Prague on September 1, 1939—the exact day Germany invaded Poland, halting the departure — done (ep045) | The Last Hours | Nicholas Winton is currently trending on English Wikipedia with nearly 30,000 daily pageviews. |
+| 2026-10-03 | Operation Market Garden (1944): commanders dismissed aerial reconnaissance photos showing German panzers waiting at Arnhem, ordering the intelligence officer who raised the alarm on sudden medical leave — making (ep051) | Warnings Ignored | Bernard Montgomery is trending on Wikipedia with over 53,000 daily views. |
 
 ## Anniversaries (publish on the date, 7 p.m. Eastern)
 
@@ -36,6 +37,7 @@ event is told for its gore. Space topics belong to the sister channel Universe R
 | Oct 25 | Charge of the Light Brigade (1854): a misread order sent the light cavalry straight down a valley ringed with Russian guns | Warnings Ignored |
 | Oct 29 | Wall Street Crash of 1929 (1929): the market collapse on Black Tuesday was predicted one month earlier by a financial expert who warned that a terrific crash was coming | Warnings Ignored |
 | Nov 1 | 1755 Lisbon earthquake: it struck on All Saints' Day, when the churches were full, and people who fled to the open waterfront were hit by a tsunami | The Last Hours |
+| Nov 9 | Great Lakes Storm of 1913 (1913): captains ignored the new "White Flag" weather warnings and sailed into the Freshwater Fury, a storm that sank a record 12 ships and killed over 250 people | Warnings Ignored |
 | Nov 12 | Nevado del Ruiz eruption (1985): warning signs were ignored for weeks before a lahar buried the town of Armero in the middle of the night | Warnings Ignored |
 | Nov 20 | Essex (whaleship) (1820): after a sperm whale sank the ship, the crew steered away from the nearest islands for fear of cannibals | Sole Survivors |
 | Nov 25 | White Ship (1120): its sinking drowned the king of England's only legitimate son, and the fight over his throne became a civil war | Fallen Empires |
@@ -58,11 +60,11 @@ event is told for its gore. Space topics belong to the sister channel Universe R
 - 1945 Empire State Building B-25 crash (1945): a lost bomber crashed into the 79th floor of the skyscraper, and an elevator operator fell 75 floors and survived — done (ep038)
 - Battle of the Little Bighorn (1876): Custer split his forces and rode directly into the largest Native American encampment ever gathered on the plains — done (ep043)
 - Battle of the Alamo (1836): a small band of Texian defenders held out for 13 days before a dawn assault overwhelmed the mission walls — done (ep047)
-- Burning of Washington (1814): British troops ate the dinner President Madison had left behind before burning the White House, right as a freak tornado struck the city — making (ep049)
+- Burning of Washington (1814): British troops ate the dinner President Madison had left behind before burning the White House, right as a freak tornado struck the city — parked (ep049)
 - Battle of Agincourt (1415): outnumbered English archers stood in thick mud as heavily armored French knights charged and sank into the muck
 - 1900 Galveston hurricane (1900): forecasters dismissed warnings from Cuba, leaving the deadliest natural disaster in US history to strike an unprepared island — done (ep035)
 - Battle of Saragarhi (1897): twenty-one soldiers fought ten thousand tribesmen to the last man, signaling updates until the final seconds — parked (ep040)
-- Port Chicago disaster (1944): untested munitions were loaded by untrained men in a race against time, causing the largest US home-front disaster of WWII
+- Port Chicago disaster (1944): untested munitions were loaded by untrained men in a race against time, causing the largest US home-front disaster of WWII — making (ep052)
 - Victoria Hall disaster (1883): hundreds of children rushed for free toys through a door that opened inward, trapping them as the crush grew
 - Burning of Smyrna (1922): a cosmopolitan Mediterranean haven went up in flames days after foreign armies retreated, trapping refugees on the quay
 - Wanggongchang Explosion (1626): a massive unexplained blast rocked Beijing, stripping people of their clothes and leaving a silent void
@@ -90,6 +92,16 @@ event is told for its gore. Space topics belong to the sister channel Universe R
 - Great Dayton Flood (1913): industrialist John Patterson saved thousands by turning his cash register factory into a 24-hour shipyard to build rescue boats
 - 1944 Tōnankai earthquake (1944): the Japanese government suppressed news of the disaster and its 1,200 victims to keep wartime factory production secrets
 - 1944 San Juan earthquake (1944): the disaster that killed 10,000 people is primarily remembered because the fundraiser for the victims is where Juan and Eva Perón first met
+- Gillingham Fair fire disaster (1929): a crowd cheered during a rescue demonstration, believing the screams from a burning wooden house were part of the act
+- 1746 Lima–Callao earthquake (1746): a catastrophic tsunami completely leveled the port city of Callao, sweeping a Spanish warship over the city walls into the desert
+- 115 Antioch earthquake (115): Roman Emperor Trajan had to crawl out of a collapsing palace window and shelter in an open circus to survive a quake that leveled Antioch
+- Richmond Theatre fire (1811): a stage backdrop caught fire during a crowded play, killing dozens including the sitting Governor of Virginia who died trying to rescue his daughter
+- Hightstown rail accident (1833): a train derailed with tycoon Cornelius Vanderbilt aboard, while former President John Quincy Adams watched from the train right behind it
+- Gasconade Bridge train disaster (1855): an inaugural train carrying over 600 VIPs collapsed through a temporary wooden bridge, killing the city's elite
+- Convoy HX 84 (1940): an armed passenger liner charged a German battleship alone to buy time for 37 merchant ships to escape
+- DeWitt Clinton locomotive (1831): on one of America's first passenger train rides, burning wood sparks set riders' clothes on fire, forcing them to beat out flames with umbrellas
+- First Battle of Porto (1809): thousands of fleeing civilians surged onto a pontoon bridge that collapsed under their weight, drowning them in the river below
+- Dee Bridge disaster (1847): famous engineer Robert Stephenson's cast-iron bridge snapped under a passenger train, exposing a fatal flaw in Victorian design
 
 ### Lost Cities
 
@@ -106,6 +118,8 @@ event is told for its gore. Space topics belong to the sister channel Universe R
 - Pavlopetri: one of the oldest known submerged towns lies a few meters under the sea off Greece
 - Unyu (c. 1300): the medieval city in Myanmar was abandoned after a Mongol invasion, leaving behind thousands of pagodas overgrown by jungle
 - Timgad (100 AD): this Roman city was abandoned in the 7th century and buried by the Sahara’s sands, leaving it perfectly preserved for over 1,000 years
+- Fall of Teotihuacan (c. 750 AD): the massive city was burned and abandoned not by invaders, but seemingly by its own citizens who rose up and systematically destroyed the homes of the ruling elite
+- Discovery of Skara Brae (c. 3180 BC): this Neolithic village was perfectly preserved under sand dunes for 5,000 years until a massive storm in 1850 stripped the earth away and revealed it to a local laird
 
 ### Doomed Expeditions
 
@@ -119,11 +133,14 @@ event is told for its gore. Space topics belong to the sister channel Universe R
 - 1924 British Mount Everest expedition: George Mallory's body was found 75 years later, and nobody knows if he reached the top
 - Amundsen's South Pole expedition (1910): a secret race to the pole succeeded because the leader ate his own sled dogs to survive — parked (ep037)
 - Great Fire of 1910 (1910): hurricane-force winds turned a scattering of forest fires into a single monster that swallowed towns in minutes — making (ep050)
-- Voyage of the James Caird (1916): to save his crew, Shackleton navigated 800 miles of the world's deadliest ocean in a 22-foot lifeboat — making (ep046)
+- Voyage of the James Caird (1916): to save his crew, Shackleton navigated 800 miles of the world's deadliest ocean in a 22-foot lifeboat — parked (ep046)
 - Julian's Persian expedition (363): the Roman Emperor burned his own supply fleet to force his men to advance, only to realize they were starving in a desert wasteland
 - Ross Sea party (1914): the team spent two years dying of scurvy to lay supply depots for Shackleton, never knowing his ship had been crushed on the other side of the continent
 - Vandino and Ugolino Vivaldi (1291): two brothers sailed into the Atlantic 200 years before Columbus and were never seen again, sparking a 150-year search
 - Great Northern Expedition (1741): explorer Vitus Bering died of scurvy on a frozen, desolate island just months after finally proving Asia and America were separate
+- Denmark expedition (1907): dying of starvation in an Arctic cave, Jørgen Brønlund pinned his diary and maps to his coat before freezing to death
+- Japanese Antarctic Expedition (1910): mocked for sailing in a tiny wooden ship, the crew braved Antarctic ice and returned home without losing a single man
+- Crocker Land Expedition (1913): an Arctic team spent four years stranded after launching an expedition to explore an island that was actually a mirage
 
 ### Fallen Empires
 
@@ -140,6 +157,8 @@ event is told for its gore. Space topics belong to the sister channel Universe R
 - Siege of the Sogdian Rock (327 BC): Alexander the Great's soldiers used iron tent pegs as pitons to scale a 'vertical' cliff at night to capture an unreachable fortress
 - Siege of Kamakura (1333): the commander threw his golden sword into the sea as an offering, and the tide instantly receded to reveal a path past the city’s sea walls
 - Fall of the Qing Dynasty (1912): the last Emperor of China, once worshipped as a living god, ended his life as a quiet citizen working as a gardener in his former palace
+- Fall of Krak des Chevaliers (1271): the impregnable Crusader stronghold finally surrendered after the Mamluk Sultan tricked the garrison with a forged letter from their commander
+- Battle of Sarmizegetusa (106): the Dacian king diverted a river to hide his empire's gold beneath the riverbed, but a prisoner betrayed the location to Rome
 
 ### Warnings Ignored
 
@@ -155,13 +174,14 @@ event is told for its gore. Space topics belong to the sister channel Universe R
 - Knickerbocker Storm (1922): the roof of Washington's Knickerbocker Theatre collapsed under the snow during a film
 - Battle of Isandlwana (1879): British commanders refused to form defensive laagers, mocking reports of Zulu forces until thousands appeared over the ridge — parked (ep034)
 - Mongol invasions of Japan (1281): the invasion fleet was destroyed by a legendary typhoon known as the kamikaze, saving Japan from conquest — parked (ep039)
-- Fetterman Fight (1866): a cocky commander vowed to ride through the entire Sioux nation with eighty men, and none returned
+- Fetterman Fight (1866): a cocky commander vowed to ride through the entire Sioux nation with eighty men, and none returned — making (ep053)
 - Battle of Cartagena de Indias (1741): Admiral Vernon was so certain of victory he minted medals celebrating the win while his fleet was being destroyed
 - Whydah Gally (1717): a pirate slave ship sank in a violent nor'easter right off Cape Cod, carrying a fortune in stolen treasure that lay buried for centuries
 - Saint-Michel-de-Maurienne derailment (1917): a commander forced a driver at gunpoint to overload a train with 1,000 soldiers, causing it to lose its brakes on a mountain
 - West Loch disaster (1944): a massive explosion at Pearl Harbor killed 163 men just before a secret invasion, but the tragedy was kept classified for decades
 - Great Plague of Marseille (1720): city officials ignored a plague warning on a merchant ship because they didn't want to delay its cargo of silk for a local fair
 - Manchurian plague (1910): a doctor's warning that the plague was airborne was mocked by a colleague who refused to wear a mask and died of the infection days later
+- Siege of Svetigrad (1448): an impregnable mountain fortress fell after defenders refused to drink from their only water well because a dead dog was thrown inside
 
 ### Sole Survivors
 
@@ -171,6 +191,10 @@ event is told for its gore. Space topics belong to the sister channel Universe R
 - Charles Joughin (1912): the Titanic's chief baker survived a long time in the freezing water, and credited the whisky he had drunk
 - Arthur John Priest: the "unsinkable stoker" survived the Titanic, the Britannic, and other sinkings
 - Poon Lim (1942): a ship's steward survived 133 days alone on a raft in the Atlantic
-- Antoine de Saint-Exupéry (1935): the author of The Little Prince crashed in the Sahara and nearly died of thirst before a Bedouin saved him — making (ep048)
+- Antoine de Saint-Exupéry (1935): the author of The Little Prince crashed in the Sahara and nearly died of thirst before a Bedouin saved him — parked (ep048)
 - Ada Blackjack (1921): the female Robinson Crusoe survived two years alone on a desolate Arctic island after the rest of her expedition died, with only the team's cat for company
 - Escape from HMS Perseus (1941): John Capes became the only man to escape from the sunken submarine, swimming 170 feet to the surface without a breathing apparatus
+- Darr Mine disaster (1907): dozens of miners skipped their shift to celebrate St. Nicholas Day, unwittingly surviving America's worst coal mine explosion hours later
+- Siege of Arrah (1857): 62 defenders held off thousands of rebels from inside a tiny fortified billiard house for eight days
+- Survival of Alexander Selkirk (1704): the real Robinson Crusoe lived alone on an island for 4 years because he refused to stay on a ship he correctly predicted was unseaworthy and would sink
+- Survival of Jan Baalsrud (1943): after his sabotage mission failed, he survived the Arctic for months and amputated nine of his own toes with a pocketknife to stop gangrene from killing him

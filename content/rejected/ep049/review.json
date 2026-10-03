@@ -1,0 +1,184 @@
+{
+  "rounds": [
+    {
+      "at": "2026-10-03T05:07:34+05:30",
+      "check": {
+        "duration": 30.1,
+        "words": 66,
+        "integrated_lufs": -14.4,
+        "true_peak_dbfs": -1.8,
+        "warnings": [],
+        "speech_differences": [
+          "'attendant' heard as 'tenant' after 'in a panic'",
+          "'s' heard as 'is' after 'save george washington'",
+          "'capital' heard as 'capitol' after 'storm struck the'"
+        ],
+        "speech_error": null,
+        "sources": [
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons"
+        ]
+      },
+      "scores": {
+        "hook": 3,
+        "clarity": 3,
+        "payoff": 3,
+        "visuals": 3,
+        "loop": 2
+      },
+      "notes": {
+        "hook": "Lacks urgency and feels like a standard textbook opening.",
+        "clarity": "Narrative flow is mostly clear until the confusing concluding loop line.",
+        "payoff": "The storm resolves the crisis, though the title spoils the twist early.",
+        "visuals": "Period-accurate archival illustrations support the historical narrative well.",
+        "loop": "The final sentence contradicts chronology by claiming destruction ended when troops entered."
+      },
+      "frames": [],
+      "speech": [
+        {
+          "beat": 3,
+          "word": "Attendant",
+          "respelling": "uh ten dunt"
+        }
+      ],
+      "rewrite": [
+        "Beat 1: British invaders set Washington ablaze in August 1814.",
+        "Beat 8: Only nature could halt the rampage ignited when..."
+      ],
+      "better_than_last": "",
+      "judge": "gemini-3.8-flash",
+      "passed": false
+    },
+    {
+      "at": "2026-10-03T11:08:29+05:30",
+      "check": {
+        "duration": 31.33,
+        "words": 70,
+        "integrated_lufs": -14.3,
+        "true_peak_dbfs": -1.7,
+        "warnings": [],
+        "speech_differences": [
+          "'attendant' heard as 'lieutenant' after 'into linen sacks'",
+          "'s' heard as 'is' after 'saved the president'",
+          "'(nothing)' heard as 'all' after 'flames before nightfall'"
+        ],
+        "speech_error": null,
+        "sources": [
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wellcome Collection",
+          "Wikimedia Commons",
+          "Wikimedia Commons"
+        ]
+      },
+      "scores": {
+        "hook": 3,
+        "clarity": 4,
+        "payoff": 4,
+        "visuals": 3,
+        "loop": 3
+      },
+      "notes": {
+        "hook": "The opening statement is informative but lacks urgency to stop scrollers.",
+        "clarity": "The sequence of events is straightforward and easy to follow.",
+        "payoff": "The sudden weather turnaround delivers on the setup effectively.",
+        "visuals": "Several historic prints work well, but the storm shot is geographically inaccurate.",
+        "loop": "The transition back to the opening line feels abrupt rather than cyclical."
+      },
+      "frames": [
+        {
+          "beat": 6,
+          "problem": "shows an ocean lighthouse and rocky coastal shipwreck rather than Washington D.C."
+        }
+      ],
+      "speech": [
+        {
+          "beat": 4,
+          "word": "Attendant",
+          "respelling": "uh ten dunt"
+        }
+      ],
+      "rewrite": [
+        "Beat 1: British invaders torched Washington in 1814—until the sky intervened.",
+        "Beat 8: No army stopped the destruction; only the skies could."
+      ],
+      "better_than_last": "It anchors the national crisis around recognizable human actions like saving the presidential portrait.",
+      "judge": "gemini-3.8-flash",
+      "passed": false
+    },
+    {
+      "at": "2026-10-03T11:14:05+05:30",
+      "check": {
+        "duration": 31.87,
+        "words": 70,
+        "integrated_lufs": -14.3,
+        "true_peak_dbfs": -1.9,
+        "warnings": [],
+        "speech_differences": [
+          "'attendant' heard as 'lieutenant' after 'into linen sacks'",
+          "'s' heard as 'is' after 'saved the president'"
+        ],
+        "speech_error": null,
+        "sources": [
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons"
+        ]
+      },
+      "scores": {
+        "hook": 5,
+        "clarity": 5,
+        "payoff": 4,
+        "visuals": 3,
+        "loop": 5
+      },
+      "notes": {
+        "hook": "Compelling title and visual of the capital under threat immediately grabs attention.",
+        "clarity": "The sequence of events from the retreat to the preservation of artifacts is easy to follow.",
+        "payoff": "The irony of nature stopping a military invasion provides a solid historical conclusion.",
+        "visuals": "Beat 6 fails to illustrate the 'devastating storm,' instead reusing the portrait of the General.",
+        "loop": "The final phrase ties directly back into the 'sky intervened' hook for a smooth transition."
+      },
+      "frames": [
+        {
+          "beat": 6,
+          "problem": "The visual remains a portrait of Robert Ross, which does not illustrate the devastating storm mentioned in the speech."
+        }
+      ],
+      "speech": [
+        {
+          "beat": 4,
+          "word": "attendant",
+          "respelling": "uh ten dunt"
+        },
+        {
+          "beat": 4,
+          "word": "President's",
+          "respelling": "prez ih dents"
+        }
+      ],
+      "rewrite": [],
+      "better_than_last": "This script matches the high narrative clarity of the Alamo episode while introducing a unique environmental twist not seen in the recent war-focused shorts.",
+      "judge": "gemini-3-flash-preview",
+      "passed": false
+    }
+  ],
+  "best_round": 3,
+  "verdict": "rejected",
+  "reason": "low scores: visuals",
+  "rejected_at": "2026-10-03T11:14:05+05:30"
+}

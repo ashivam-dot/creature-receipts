@@ -1,0 +1,132 @@
+id: ep050
+title: How One Ranger Saved 40 Men at Gunpoint? ⚠️
+series: Doomed Expeditions
+description: In 1910, Ranger Ed Pulaski led his crew into an abandoned mine to survive a massive three-million-acre firestorm.
+sources:
+- https://en.wikipedia.org/wiki/Great_Fire_of_1910
+- https://www.missedhistory.com/article/1910-big-blowup-idaho-wildfire
+- https://todayinconservation.com/2017/08/august-20-the-great-fire-1910/
+- https://web.archive.org/web/20131023060745/http://library.thinkquest.org/C0119184/english/historical_fires_1910.shtml
+- https://web.archive.org/web/20001031083216/http://www.idahoforests.org/fires.htm
+- https://web.archive.org/web/20090428133332/http://www.popularmechanics.com/science/earth/4219853.html?page=2
+hashtags:
+- '#history'
+- '#thebigburn'
+- '#wildfire'
+tags:
+- Great Fire of 1910
+- Ed Pulaski
+- Idaho history
+- Forest Service
+- Pulaski tool
+- Big Burn
+voice:
+  engine: kokoro
+  voice: am_fenrir
+  speed: 1.15
+beats:
+- text: Ranger Ed Pulaski saved forty men by holding them at gunpoint.
+  emphasis:
+  - forty men
+  - gunpoint
+  visual:
+    source: card
+    card:
+      kind: fact
+      big: 40 MEN
+      small: SAVED AT GUNPOINT
+    motion: zoom_in
+- text: In 1910, hurricane winds whipped Idaho into a three-million-acre firestorm.
+  emphasis:
+  - three-million-acre
+  - firestorm
+  sfx: whoosh
+  visual:
+    source: url
+    url: https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b7/Aftermath_of_the_1910_Fires_%284929786873%29.jpg/3840px-Aftermath_of_the_1910_Fires_%284929786873%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
+    credit:
+      source: Wikimedia Commons
+      title: Aftermath of the 1910 Fires (4929786873).jpg
+      credit: Forest Service - Northern Region
+      license: Public domain
+      url: https://commons.wikimedia.org/wiki/File:Aftermath_of_the_1910_Fires_(4929786873).jpg
+    fallbacks:
+    - card
+    - color
+    motion: zoom_out
+    focus_x: 0.5
+    focus_y: 0.5
+    card:
+      kind: dateline
+      big: AUGUST 1910
+      small: NORTHERN IDAHO
+- text: Smoke blinded ships in the Pacific and turned midday into night.
+  emphasis:
+  - blinded ships
+  - midday
+  visual:
+    source: url
+    url: https://upload.wikimedia.org/wikipedia/commons/9/9d/Fire_in_Electra%2C_Texas_%287223829928%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    credit:
+      source: Wikimedia Commons
+      title: Fire in Electra, Texas (7223829928).jpg
+      credit: SMU Central University Libraries
+      license: No restrictions
+      url: https://commons.wikimedia.org/wiki/File:Fire_in_Electra,_Texas_(7223829928).jpg
+    fallbacks:
+    - card
+    - color
+    motion: pan_down
+    focus_x: 0.5
+    focus_y: 0.5
+    card:
+      kind: fact
+      big: 500 MILES
+      small: OUT AT SEA
+- text: Trapped, Pulaski forced his panicked crew into an abandoned mine tunnel.
+  emphasis:
+  - mine tunnel
+  sfx: whoosh
+  visual:
+    source: url
+    url: https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c3/Pulaski_Tunnel_after_1910_fire.jpg/960px-Pulaski_Tunnel_after_1910_fire.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
+    credit:
+      source: Wikimedia Commons
+      title: Pulaski Tunnel after 1910 fire.jpg
+      credit: United States Forest Service
+      license: Public domain
+      url: https://commons.wikimedia.org/wiki/File:Pulaski_Tunnel_after_1910_fire.jpg
+    fallbacks:
+    - color
+    motion: pan_left
+    focus_x: 0.5
+    focus_y: 0.5
+- text: He drew his pistol to prevent them from fleeing into the flames.
+  emphasis:
+  - pistol
+  - flames
+  sfx: riser
+  visual:
+    source: url
+    url: https://live.staticflickr.com/65535/51316878232_3e906cc793_b.jpg
+    credit:
+      source: Flickr via Openverse
+      title: 20210715-FS-Mt Hood-Forest Service Trail crew member in Wilderness along Pacific Crest Trail - 01
+      credit: Forest Service Pacific Northwest Region
+      license: Public domain
+      url: https://www.flickr.com/photos/135886671@N08/51316878232
+    fallbacks:
+    - color
+    motion: pan_right
+    focus_x: 0.5
+    focus_y: 0.5
+- text: Wildland firefighters still carry the tool named for the ranger who saved forty men.
+  emphasis:
+  - forty men
+  - tool
+  sfx: pop
+  pause_after: 0.4
+  visual:
+    reuse: 1
+    motion: zoom_out
+depth_motion: true

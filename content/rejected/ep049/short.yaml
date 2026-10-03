@@ -1,0 +1,190 @@
+id: ep049
+title: How a Freak Storm Saved Washington D.C. in 1814 ⛈️
+series: The Last Hours
+description: British forces captured and burned the United States capital in 1814, but an unexpected force of nature stopped
+  the destruction.
+sources:
+- https://en.wikipedia.org/wiki/Burning_of_Washington
+- https://www.history.com/news/the-british-burn-washington-d-c-200-years-ago
+- https://www.bbc.co.uk/news/blogs-magazine-monitor-28833238
+- https://prologue.blogs.archives.gov/2014/08/18/the-burning-of-washington/
+- https://www.nps.gov/people/robert-ross.htm
+- https://www.npr.org/sections/thetwo-way/2009/08/descendants_of_the_slave_who_s.html
+hashtags:
+- '#history'
+- '#warof1812'
+- '#washingtondc'
+tags:
+- burning of washington
+- '1814'
+- white house
+- storm
+- james madison
+- robert ross
+- paul jennings
+voice:
+  engine: kokoro
+  voice: am_fenrir
+  speed: 1.15
+beats:
+- text: British invaders torched Washington in 1814—until the sky intervened.
+  emphasis:
+  - torched
+  - '1814'
+  visual:
+    source: url
+    url: https://thumb.wikimedia.org/wikipedia/commons/thumb/9/92/Capture_of_the_city_of_Washington_LCCN2007683564_%28cropped%29.tif/lossy-page1-3840px-Capture_of_the_city_of_Washington_LCCN2007683564_%28cropped%29.tif.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
+    credit:
+      source: Wikimedia Commons
+      title: Capture of the city of Washington LCCN2007683564 (cropped).tif
+      credit: Cundee, J. (James), publisher
+      license: Public domain
+      url: https://commons.wikimedia.org/wiki/File:Capture_of_the_city_of_Washington_LCCN2007683564_(cropped).tif
+    fallbacks:
+    - card
+    - color
+    motion: pan_right
+    focus_x: 0.5
+    focus_y: 0.5
+    card:
+      kind: dateline
+      big: August 1814
+      small: Washington D.C.
+- text: Hours earlier, American militia fled at the Battle of Bladensburg.
+  emphasis:
+  - fled
+  sfx: whoosh
+  visual:
+    source: url
+    url: https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8d/The_Final_Stand_at_Bladensburg%2C_Maryland%2C_24_August_1814.png/960px-The_Final_Stand_at_Bladensburg%2C_Maryland%2C_24_August_1814.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
+    credit:
+      source: Wikimedia Commons
+      title: The Final Stand at Bladensburg, Maryland, 24 August 1814.png
+      credit: 'Colonel Charles Waterhouse, U.S. Marines #Marine Corps Art Collection)'
+      license: Public domain
+      url: https://commons.wikimedia.org/wiki/File:The_Final_Stand_at_Bladensburg,_Maryland,_24_August_1814.png
+    fallbacks:
+    - card
+    - color
+    motion: pan_left
+    focus_x: 0.5
+    focus_y: 0.5
+    card:
+      kind: dateline
+      big: August 24, 1814
+      small: Bladensburg
+- text: Clerks packed the Declaration of Independence into linen sacks.
+  emphasis:
+  - linen sacks
+  visual:
+    source: url
+    url: https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bd/Engrossed_Declaration_of_Independence%2C_front.jpg/1920px-Engrossed_Declaration_of_Independence%2C_front.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
+    credit:
+      source: Wikimedia Commons
+      title: Engrossed Declaration of Independence, front.jpg
+      credit: Second Continental Congress
+      license: Public domain
+      url: https://commons.wikimedia.org/wiki/File:Engrossed_Declaration_of_Independence,_front.jpg
+    fallbacks:
+    - card
+    - color
+    motion: zoom_out
+    focus_x: 0.5
+    focus_y: 0.5
+    card:
+      kind: fact
+      big: Declaration
+      small: Saved in linen bags
+- text: Attendant Paul Jennings saved the President’s portrait from flames.
+  emphasis:
+  - Paul Jennings
+  visual:
+    source: url
+    url: https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9a/Portrait_de_G._Washington%2C_en_buste%2C_de_profil_dirig%C3%A9_%C3%A0_droite_dans_une_bordure_ovale_-_estampe_-_btv1b8412911v.jpg/1920px-Portrait_de_G._Washington%2C_en_buste%2C_de_profil_dirig%C3%A9_%C3%A0_droite_dans_une_bordure_ovale_-_estampe_-_btv1b8412911v.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
+    credit:
+      source: Wikimedia Commons
+      title: Portrait de G. Washington, en buste, de profil dirigé à droite dans une bordure ovale - estampe - btv1b8412911v.jpg
+      credit: Unknown author
+      license: Public domain
+      url: https://commons.wikimedia.org/wiki/File:Portrait_de_G._Washington,_en_buste,_de_profil_dirig%C3%A9_%C3%A0_droite_dans_une_bordure_ovale_-_estampe_-_btv1b8412911v.jpg
+    fallbacks:
+    - card
+    - color
+    motion: pan_up
+    focus_x: 0.5
+    focus_y: 0.3
+    box:
+    - 0.35
+    - 0.15
+    - 0.65
+    - 0.6
+    card:
+      kind: fact
+      big: Paul Jennings
+      small: Enslaved attendant
+- text: Major-General Robert Ross then ordered the public buildings torched.
+  emphasis:
+  - torched
+  sfx: riser
+  visual:
+    source: url
+    url: https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fc/Major-General_Robert_Ross.jpg/1280px-Major-General_Robert_Ross.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
+    credit:
+      source: Wikimedia Commons
+      title: Major-General Robert Ross.jpg
+      credit: Unknown authorUnknown author
+      license: Public domain
+      url: https://commons.wikimedia.org/wiki/File:Major-General_Robert_Ross.jpg
+    fallbacks:
+    - card
+    - color
+    motion: pan_down
+    focus_x: 0.5
+    focus_y: 0.3
+    box:
+    - 0.3
+    - 0.1
+    - 0.7
+    - 0.5
+    card:
+      kind: fact
+      big: Robert Ross
+      small: British Major-General
+- text: Suddenly, a devastating storm struck the burning capital.
+  emphasis:
+  - storm
+  sfx: pop
+  pause_after: 0.4
+  visual:
+    reuse: 5
+    motion: zoom_in
+    focus_x: 0.5
+    focus_y: 0.3
+- text: Torrential rains extinguished the flames before nightfall.
+  emphasis:
+  - extinguished
+  sfx: whoosh
+  visual:
+    source: url
+    url: https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0c/U.S._Capitol_after_burning_by_the_British_LCCN2004662324.tif/lossy-page1-3840px-U.S._Capitol_after_burning_by_the_British_LCCN2004662324.tif.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
+    credit:
+      source: Wikimedia Commons
+      title: U.S. Capitol after burning by the British LCCN2004662324.tif
+      credit: Munger, George, 1781-1825, artist
+      license: Public domain
+      url: https://commons.wikimedia.org/wiki/File:U.S._Capitol_after_burning_by_the_British_LCCN2004662324.tif
+    fallbacks:
+    - color
+    motion: pan_right
+    focus_x: 0.5
+    focus_y: 0.6
+- text: No army stopped the destruction; only the skies could.
+  emphasis:
+  - only the skies
+  visual:
+    reuse: 1
+    motion: zoom_out
+    focus_x: 0.5
+    focus_y: 0.5
+depth_motion: true
+hook_text: STORM SAVES CAPITAL

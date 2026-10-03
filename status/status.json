@@ -1,130 +1,166 @@
 {
-  "updated_at": "2026-10-03T11:05:39+05:30",
+  "updated_at": "2026-10-03T17:11:39+05:30",
   "day": 2,
-  "result": "degraded",
+  "result": "ok",
   "run": {
     "host": "modal",
-    "id": "ta-01M4044D8SGGFHGJ8F6PR6JZ1R",
+    "id": "ta-01M40RQJNFZS4QVE3YW4FM9FHR",
     "number": null,
     "trigger": "schedule",
-    "started_at": "2026-10-03T11:05:08+05:30",
-    "started_at_utc": "2026-10-03T05:35:08+00:00",
-    "seconds": 31
+    "started_at": "2026-10-03T17:05:07+05:30",
+    "started_at_utc": "2026-10-03T11:35:07+00:00",
+    "seconds": 391
   },
   "stages": [
     {
       "name": "deploy",
       "ok": true,
       "detail": "",
-      "seconds": 1.5
+      "seconds": 1.6
     },
     {
       "name": "sync",
       "ok": true,
-      "detail": "9 posts",
-      "seconds": 0.5
+      "detail": "10 posts",
+      "seconds": 0.7
     },
     {
       "name": "playlists",
-      "ok": false,
-      "detail": "",
-      "error": "HttpError: <HttpError 409 when requesting https://youtube.googleapis.com/youtube/v3/playlistItems?part=snippet&alt=json returned \"The operation was aborted.\". Details: \"[{'domain': 'youtube.CoreErrorDomain', 'reason': 'SERVICE_UNAVAILABLE'}]\">",
-      "seconds": 3.0
+      "ok": true,
+      "detail": "added ep045 to 'The Last Hours'",
+      "seconds": 1.7
     },
     {
       "name": "languages",
       "ok": true,
-      "detail": "ep045 language sv/en -> en",
-      "seconds": 0.5
+      "detail": "every live Short is in English",
+      "seconds": 0.1
     },
     {
       "name": "on youtube",
       "ok": true,
       "detail": "every Short sent is public",
-      "seconds": 0.2
+      "seconds": 0.1
     },
     {
       "name": "short reviews",
       "ok": true,
-      "detail": "ep025 at 6 h: not shown yet: 4 views in 7 hours (no source data yet). YouTube hasn't tested it in the Shorts feed, so this says nothing about the script",
+      "detail": "ep045 at 6 h: not shown yet: 4 views in 10 hours (no source data yet). YouTube hasn't tested it in the Shorts feed, so this says nothing about the script",
       "seconds": 0.9
     },
     {
       "name": "collect",
       "ok": true,
-      "detail": "ep046 unfinished (Overloaded: every model in ('gemini-3.8-flash', 'gemini-3.7-flash', 'gemini-3.6-flash', 'gemini-3.5-flash', 'gemini-3-flash-preview', 'gemini-flash-latest', 'ovh:Qwen3.5-397B-A17B') with quota left stayed overloaded for 25 minutes); ep047 ready; ep048 unfinished (OutOfQuota: no model in ('gemini-3.8-flash', 'gemini-3.7-flash', 'gemini-3.6-flash', 'gemini-3.5-flash', 'gemini-3-flash-preview', 'gemini-flash-latest', 'ovh:Qwen3.5-397B-A17B') has free quota left today); ep049 unfinished (Overloaded: every model in ('gemini-3.8-flash', 'gemini-3.7-flash', 'gemini-3.6-flash', 'gemi",
-      "seconds": 10.9
+      "detail": "ep046 rejected (low scores: payoff, visuals, loop; 2 frame problems); ep048 rejected (low scores: visuals); ep049 rejected (low scores: visuals); ep050 unfinished (Overloaded: every model in ('gemini-3.8-flash', 'gemini-3.7-flash', 'gemini-3.6-flash', 'gemini-3.5-flash', 'gemini-3-flash-preview', 'gemini-flash-latest', 'ovh:Qwen3.5-397B-A17B') with quota left stayed overloaded for 25 minutes)",
+      "seconds": 10.3
+    },
+    {
+      "name": "analytics",
+      "ok": true,
+      "detail": "0 subscribers",
+      "seconds": 2.1
+    },
+    {
+      "name": "learnings",
+      "ok": true,
+      "detail": "Established baseline medians across initial 3 Shorts; kept existing hypotheses pending deeper retention metrics.",
+      "seconds": 5.3
+    },
+    {
+      "name": "breakouts",
+      "ok": true,
+      "detail": "none",
+      "seconds": 0.2
+    },
+    {
+      "name": "timely topics",
+      "ok": true,
+      "detail": "1 added",
+      "seconds": 23.5
+    },
+    {
+      "name": "strongest stories",
+      "ok": true,
+      "detail": "18 added",
+      "seconds": 150.2
+    },
+    {
+      "name": "new topics",
+      "ok": true,
+      "detail": "5 added",
+      "seconds": 174.4
+    },
+    {
+      "name": "report",
+      "ok": true,
+      "detail": "day-002.md",
+      "seconds": 0.2
     },
     {
       "name": "buffer channel",
       "ok": true,
       "detail": "connected",
-      "seconds": 0.2
+      "seconds": 0.4
     },
     {
       "name": "preflight ep026",
       "ok": true,
       "detail": "video still hosted",
-      "seconds": 0.6
+      "seconds": 0.7
+    },
+    {
+      "name": "preflight ep027",
+      "ok": true,
+      "detail": "video downloads whole (12 MB in 1 s)",
+      "seconds": 0.9
     },
     {
       "name": "preflight ep038",
       "ok": true,
       "detail": "video still hosted",
-      "seconds": 0.5
+      "seconds": 0.7
     },
     {
       "name": "publish",
       "ok": true,
       "detail": "",
-      "seconds": 1.3
-    },
-    {
-      "name": "schedule ep047",
-      "ok": true,
-      "detail": "2026-10-05T21:30:00-04:00",
-      "seconds": 0.9
-    },
-    {
-      "name": "start ep046",
-      "ok": true,
-      "detail": "Voyage of the James Caird (1916): to save his crew, Shackleton navigated 800 miles of the world's deadliest ocean in a 22-foot lifeboat",
-      "seconds": 0.7
-    },
-    {
-      "name": "start ep048",
-      "ok": true,
-      "detail": "Antoine de Saint-Exupéry (1935): the author of The Little Prince crashed in the Sahara and nearly died of thirst before a Bedouin saved him",
-      "seconds": 0.9
-    },
-    {
-      "name": "start ep049",
-      "ok": true,
-      "detail": "Burning of Washington (1814): British troops ate the dinner President Madison had left behind before burning the White House, right as a freak tornado struck the city",
-      "seconds": 0.6
+      "seconds": 0.1
     },
     {
       "name": "start ep050",
       "ok": true,
       "detail": "Great Fire of 1910 (1910): hurricane-force winds turned a scattering of forest fires into a single monster that swallowed towns in minutes",
-      "seconds": 0.5
+      "seconds": 1.0
+    },
+    {
+      "name": "start ep051",
+      "ok": true,
+      "detail": "Operation Market Garden (1944): commanders dismissed aerial reconnaissance photos showing German panzers waiting at Arnhem, ordering the intelligence officer who raised the alarm on sudden medical leave",
+      "seconds": 0.9
+    },
+    {
+      "name": "start ep052",
+      "ok": true,
+      "detail": "Port Chicago disaster (1944): untested munitions were loaded by untrained men in a race against time, causing the largest US home-front disaster of WWII",
+      "seconds": 0.8
+    },
+    {
+      "name": "start ep053",
+      "ok": true,
+      "detail": "Fetterman Fight (1866): a cocky commander vowed to ride through the entire Sioux nation with eighty men, and none returned",
+      "seconds": 0.7
     },
     {
       "name": "publish",
       "ok": true,
       "detail": "",
-      "seconds": 0.2
+      "seconds": 0.1
     }
   ],
-  "errors": [
-    "playlists: HttpError: <HttpError 409 when requesting https://youtube.googleapis.com/youtube/v3/playlistItems?part=snippet&alt=json returned \"The operation was aborted.\". Details: \"[{'domain': 'youtube.CoreErrorDomain', 'reason': 'SERVICE_UNAVAILABLE'}]\">"
-  ],
+  "errors": [],
   "owner_action": [],
   "notes": [
-    "ep046 stopped on Gemini's free tier being overloaded; it resumes in a later run",
-    "ep048 stopped on Gemini's free quota; it resumes in a later run",
-    "ep049 stopped on Gemini's free tier being overloaded; it resumes in a later run",
-    "only 6 Shorts made and unposted; scheduling 2 a day"
+    "ep050 stopped on Gemini's free tier being overloaded; it resumes in a later run"
   ],
   "inventory": {
     "total": 6,
@@ -133,10 +169,10 @@
     "target": 42,
     "making": [],
     "remote": [
-      "ep046",
-      "ep048",
-      "ep049",
-      "ep050"
+      "ep050",
+      "ep051",
+      "ep052",
+      "ep053"
     ]
   },
   "queue": [
@@ -175,38 +211,26 @@
   "made": [
     {
       "id": "ep046",
-      "outcome": "unfinished",
+      "outcome": "rejected",
       "topic": "Voyage of the James Caird (1916): to save his crew, Shackleton navigated 800 miles of the world's deadliest ocean in a 22-foot lifeboat",
-      "reason": "Overloaded: every model in ('gemini-3.8-flash', 'gemini-3.7-flash', 'gemini-3.6-flash', 'gemini-3.5-flash', 'gemini-3-flash-preview', 'gemini-flash-latest', 'ovh:Qwen3.5-397B-A17B') with quota left stayed overloaded for 25 minutes",
-      "quota": false,
-      "overloaded": true
-    },
-    {
-      "id": "ep047",
-      "outcome": "ready",
-      "topic": "Battle of the Alamo (1836): a small band of Texian defenders held out for 13 days before a dawn assault overwhelmed the mission walls",
-      "title": "Why Did the Battle of the Alamo Last Only 90 Minutes?",
-      "scores": {
-        "hook": 5,
-        "clarity": 5,
-        "payoff": 5,
-        "visuals": 4,
-        "loop": 5
-      },
-      "media_url": "https://res.cloudinary.com/uj4a07e7/video/upload/v1790984389/creaturereceipts/ep047-fea29f5a.mp4"
+      "reason": "low scores: payoff, visuals, loop; 2 frame problems"
     },
     {
       "id": "ep048",
-      "outcome": "unfinished",
+      "outcome": "rejected",
       "topic": "Antoine de Saint-Exupéry (1935): the author of The Little Prince crashed in the Sahara and nearly died of thirst before a Bedouin saved him",
-      "reason": "OutOfQuota: no model in ('gemini-3.8-flash', 'gemini-3.7-flash', 'gemini-3.6-flash', 'gemini-3.5-flash', 'gemini-3-flash-preview', 'gemini-flash-latest', 'ovh:Qwen3.5-397B-A17B') has free quota left today",
-      "quota": true,
-      "overloaded": false
+      "reason": "low scores: visuals"
     },
     {
       "id": "ep049",
-      "outcome": "unfinished",
+      "outcome": "rejected",
       "topic": "Burning of Washington (1814): British troops ate the dinner President Madison had left behind before burning the White House, right as a freak tornado struck the city",
+      "reason": "low scores: visuals"
+    },
+    {
+      "id": "ep050",
+      "outcome": "unfinished",
+      "topic": "Great Fire of 1910 (1910): hurricane-force winds turned a scattering of forest fires into a single monster that swallowed towns in minutes",
       "reason": "Overloaded: every model in ('gemini-3.8-flash', 'gemini-3.7-flash', 'gemini-3.6-flash', 'gemini-3.5-flash', 'gemini-3-flash-preview', 'gemini-flash-latest', 'ovh:Qwen3.5-397B-A17B') with quota left stayed overloaded for 25 minutes",
       "quota": false,
       "overloaded": true
@@ -214,90 +238,83 @@
   ],
   "spawned": [
     {
-      "id": "ep046",
-      "topic": "Voyage of the James Caird (1916): to save his crew, Shackleton navigated 800 miles of the world's deadliest ocean in a 22-foot lifeboat",
-      "call_id": "fc-01M4045FV62RVQV7YQZNJSRAB9"
-    },
-    {
-      "id": "ep048",
-      "topic": "Antoine de Saint-Exupéry (1935): the author of The Little Prince crashed in the Sahara and nearly died of thirst before a Bedouin saved him",
-      "call_id": "fc-01M4045GS0BYHY5PMVCQ3B8GDF"
-    },
-    {
-      "id": "ep049",
-      "topic": "Burning of Washington (1814): British troops ate the dinner President Madison had left behind before burning the White House, right as a freak tornado struck the city",
-      "call_id": "fc-01M4045HCJB5WNTW61C8TKSF40"
-    },
-    {
       "id": "ep050",
       "topic": "Great Fire of 1910 (1910): hurricane-force winds turned a scattering of forest fires into a single monster that swallowed towns in minutes",
-      "call_id": "fc-01M4045HXJQTS57PRV1J89P3P9"
+      "call_id": "fc-01M40S3MGHP9FE74SW89PBBYS0"
+    },
+    {
+      "id": "ep051",
+      "topic": "Operation Market Garden (1944): commanders dismissed aerial reconnaissance photos showing German panzers waiting at Arnhem, ordering the intelligence officer who raised the alarm on sudden medical leave",
+      "call_id": "fc-01M40S3NDQ2T3MBGNGZ6FRAK1X"
+    },
+    {
+      "id": "ep052",
+      "topic": "Port Chicago disaster (1944): untested munitions were loaded by untrained men in a race against time, causing the largest US home-front disaster of WWII",
+      "call_id": "fc-01M40S3P6WF55DE5G5Q7SFR61V"
+    },
+    {
+      "id": "ep053",
+      "topic": "Fetterman Fight (1866): a cocky commander vowed to ride through the entire Sioux nation with eighty men, and none returned",
+      "call_id": "fc-01M40S3PXAA89N0K112ESXNQ3G"
     }
   ],
   "in_cloud": [
     {
-      "id": "ep046",
-      "topic": "Voyage of the James Caird (1916): to save his crew, Shackleton navigated 800 miles of the world's deadliest ocean in a 22-foot lifeboat",
-      "spawned_at": "2026-10-03T11:05:36+05:30"
-    },
-    {
-      "id": "ep048",
-      "topic": "Antoine de Saint-Exupéry (1935): the author of The Little Prince crashed in the Sahara and nearly died of thirst before a Bedouin saved him",
-      "spawned_at": "2026-10-03T11:05:37+05:30"
-    },
-    {
-      "id": "ep049",
-      "topic": "Burning of Washington (1814): British troops ate the dinner President Madison had left behind before burning the White House, right as a freak tornado struck the city",
-      "spawned_at": "2026-10-03T11:05:38+05:30"
-    },
-    {
       "id": "ep050",
       "topic": "Great Fire of 1910 (1910): hurricane-force winds turned a scattering of forest fires into a single monster that swallowed towns in minutes",
-      "spawned_at": "2026-10-03T11:05:39+05:30"
-    }
-  ],
-  "published": [
+      "spawned_at": "2026-10-03T17:11:36+05:30"
+    },
     {
-      "id": "ep047",
-      "title": "Why Did the Battle of the Alamo Last Only 90 Minutes?",
-      "due_at": "2026-10-05T21:30:00-04:00"
+      "id": "ep051",
+      "topic": "Operation Market Garden (1944): commanders dismissed aerial reconnaissance photos showing German panzers waiting at Arnhem, ordering the intelligence officer who raised the alarm on sudden medical leave",
+      "spawned_at": "2026-10-03T17:11:37+05:30"
+    },
+    {
+      "id": "ep052",
+      "topic": "Port Chicago disaster (1944): untested munitions were loaded by untrained men in a race against time, causing the largest US home-front disaster of WWII",
+      "spawned_at": "2026-10-03T17:11:37+05:30"
+    },
+    {
+      "id": "ep053",
+      "topic": "Fetterman Fight (1866): a cocky commander vowed to ride through the entire Sioux nation with eighty men, and none returned",
+      "spawned_at": "2026-10-03T17:11:38+05:30"
     }
   ],
+  "published": [],
   "live": 4,
   "failed_posts": [],
   "not_live": [],
   "llm": {
-    "calls": 20,
+    "calls": 18,
     "by_model": {
+      "gemini-3.8-flash": 3,
       "gemini-3.7-flash": 2,
-      "gemini-3.5-flash": 2,
+      "gemini-3.6-flash": 4,
       "gemini-3-flash-preview": 3,
-      "gemini-3.1-flash-lite": 4,
-      "gemini-3.6-flash": 2,
-      "gemini-3.8-flash": 2,
-      "gemini-3.5-flash-lite": 5
+      "gemini-3.5-flash": 2,
+      "gemini-3.5-flash-lite": 4
     },
     "out_of_quota": []
   },
   "renders": {
-    "modal": 11,
+    "modal": 5,
     "runner": 0
   },
-  "daily_done": "2026-10-02",
+  "daily_done": "2026-10-03",
   "minutes_this_month": 2.0,
   "minutes_budget": 2000,
   "modal_cost": {
-    "metered": 4.24,
+    "metered": 4.42,
     "billed": 0.0
   },
   "modal_credit": 30.0,
   "capacity": {
-    "cloud": 197,
+    "cloud": 196,
     "runner": 0,
     "runner_minutes": 0,
-    "modal_credit_left": 23.76
+    "modal_credit_left": 23.58
   },
   "made_here": 0,
-  "open_topics": 104,
-  "parked_topics": 12
+  "open_topics": 125,
+  "parked_topics": 15
 }
