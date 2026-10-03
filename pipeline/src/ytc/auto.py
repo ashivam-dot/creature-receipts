@@ -43,7 +43,7 @@ ET = ZoneInfo("America/New_York")
 DAY_ZERO = date(2026, 10, 1)
 # Two weeks at 3 a day, so the channel keeps publishing through two weeks without any language model. Shorts
 # made further ahead would miss what the newest analytics teach.
-INVENTORY_TARGET = 42
+INVENTORY_DAYS = 14
 BATCH = 4
 # After Gemini's free quotas reset (00:05 Pacific: 12:35 IST in summer time, 13:35 in winter), so the routine's
 # learnings and new topics come before production uses the day's quota; the first run after is 17:05 IST.
@@ -234,7 +234,7 @@ def inventory(eps: list[dict] | None = None) -> dict:
     scheduled = [e for e in eps if e["state"] == "scheduled"]
     waiting = [e for e in eps if e["state"] == "waiting"]
     return {"total": len(scheduled) + len(waiting), "in_buffer": len(scheduled), "waiting": len(waiting),
-            "target": INVENTORY_TARGET, "making": [e["id"] for e in eps if e["state"] == "making"],
+            "target": INVENTORY_DAYS * slots_per_day(), "making": [e["id"] for e in eps if e["state"] == "making"],
             "remote": [e["id"] for e in eps if e["state"] == "remote"]}
 
 
@@ -1103,14 +1103,12 @@ def per_day(stock: int, slots: int) -> int:
     return max(1, min(slots, stock // 3))
 
 
-# (day, Shorts a day) from that day on (decision 2026-09-30, research/growth-playbook-2026.md, upgrade 4): YouTube
-# gives no boost for volume, new channels do best at 1 to 3 a day, and more than 5 looks mass-produced. Every step
-# past BASE_PACE is earned: the last 10 Shorts must keep 90% of the engaged views per Short and of the engaged share
-# of the 10 before them. Without 20 Shorts of numbers, the pace stops at UNPROVEN_PACE. Raised on 2026-10-01: the
-# young history channels with 20k+ views on nearly every Short post 2 to 5 a day (research/competitors-2026-10-01.json).
-PACE = ((1, 3), (15, 4), (30, 5))
-BASE_PACE = 3
-UNPROVEN_PACE = 4
+# The first relaunch batch is a quality and format test. New slots are earned from at least 20 comparable Shorts
+# with enough engaged views to distinguish a trend from a handful of channel-page visits. See strategy/STRATEGY.md.
+PACE = ((1, 1), (15, 2), (30, 3))
+BASE_PACE = 1
+CAUTION_PACE = 2
+PACE_MIN_ENGAGED = 100
 # The last 10 Shorts falling this far below the 10 before them in engaged views per Short drops back to BASE_PACE.
 PACE_DROP = 0.7
 
@@ -1137,14 +1135,14 @@ def slots_per_day(today: date | None = None) -> int:
         log.warning("couldn't read engagement for the posting pace (%s); posting %d a day", err, BASE_PACE)
         return BASE_PACE
     if len(engaged) < 20:
-        return min(len(SLOTS), planned, UNPROVEN_PACE)
+        return BASE_PACE
     recent, before = _median(engaged[-10:]), _median(engaged[-20:-10])
     recent_share, before_share = _median(share[-10:]), _median(share[-20:-10])
-    if not before or recent < PACE_DROP * before:
+    if before < PACE_MIN_ENGAGED or recent < PACE_MIN_ENGAGED or recent < PACE_DROP * before:
         return BASE_PACE
     if recent >= 0.9 * before and recent_share and before_share and recent_share >= 0.9 * before_share:
         return min(len(SLOTS), planned)
-    return min(len(SLOTS), planned, UNPROVEN_PACE)
+    return min(len(SLOTS), planned, CAUTION_PACE)
 
 
 def _worth_holding(day: date, supply: int, slots: int, today: date) -> bool:
@@ -1557,7 +1555,7 @@ def write_report(run: Run, analytics: dict, learned: dict | None, topics_added: 
 
     lines = [f"# Day {day}: {today.isoformat()}", "", "## Summary", ""]
     summary = [f"{len(went_live)} Short(s) went live in the last 24 hours; {len(queue)} are scheduled in Buffer and "
-               f"{len(waiting)} wait for a slot (target {INVENTORY_TARGET})."]
+               f"{len(waiting)} wait for a slot (target {inventory(eps)['target']})."]
     if channel:
         summary.append(f"The channel has {channel.get('subscribers', 0)} subscribers and {channel.get('views', 0)} views.")
     if learned:
@@ -1823,7 +1821,7 @@ def main(produce_count: int | None = None, publish: bool = True, daily_mode: str
     inv = inventory()
     if produce_count is None:
         # Shorts still being made in the cloud count as made, or every run would start another batch.
-        want = INVENTORY_TARGET - inv["total"] - len(inv["remote"])
+        want = inv["target"] - inv["total"] - len(inv["remote"])
         # Every half-made Short that can go on does, not just a batch: after Gemini's reset most only need the review
         # they waited for, and the day's Flash quota covers far more reviews than a batch.
         batch = max(BATCH, len(_resumable(episodes())))
