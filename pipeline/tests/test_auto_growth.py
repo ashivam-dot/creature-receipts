@@ -169,7 +169,8 @@ def test_breakout_queues_follow_ups_once(studio, monkeypatch):
     assert sum(1 for t in auto.calendar_topics(NOW.date()) if t["kind"] == "timely" and not t["why"].startswith("Follow-up")) == 0
 
 
-def test_timely_short_is_scheduled_first_with_an_extra_slot(monkeypatch):
+def test_timely_short_is_scheduled_first_with_an_extra_slot(monkeypatch, tmp_path):
+    monkeypatch.setattr(publish, "SCHEDULING_HOLD", tmp_path / "no-hold.json")
     queued_at = publish.next_slots(9, set(), per_day=3)
     monkeypatch.setattr(publish, "posts", lambda since=None, channel_id=None: [
         {"id": f"q{i}", "status": "scheduled", "dueAt": when.isoformat()} for i, when in enumerate(queued_at)])
@@ -189,7 +190,8 @@ def test_timely_short_is_scheduled_first_with_an_extra_slot(monkeypatch):
     assert scheduled[0][1] < max(queued_at)
 
 
-def _anniversary_run(monkeypatch, others):
+def _anniversary_run(monkeypatch, tmp_path, others):
+    monkeypatch.setattr(publish, "SCHEDULING_HOLD", tmp_path / "no-hold.json")
     now = datetime.now(publish.AUDIENCE_TZ)
     monkeypatch.setattr(publish, "posts", lambda since=None, channel_id=None: [])
     scheduled = []
@@ -207,10 +209,10 @@ def _anniversary_run(monkeypatch, others):
     return day, dict(scheduled)
 
 
-def test_anniversary_short_waits_only_when_other_shorts_fill_the_days(monkeypatch):
-    day, scheduled = _anniversary_run(monkeypatch, others=1)
+def test_anniversary_short_waits_only_when_other_shorts_fill_the_days(monkeypatch, tmp_path):
+    day, scheduled = _anniversary_run(monkeypatch, tmp_path, others=1)
     assert scheduled["ep100"].date() < day
-    day, scheduled = _anniversary_run(monkeypatch, others=12)
+    day, scheduled = _anniversary_run(monkeypatch, tmp_path, others=12)
     assert scheduled["ep100"].date() == day
 
 

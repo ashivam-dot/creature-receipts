@@ -20,11 +20,12 @@ def test_editorial_hold_excludes_waiting_episode_from_inventory_and_scheduling(t
     auto.publish_waiting(auto.Run("test"))
 
 
-def test_editorial_hold_blocks_direct_schedule_before_external_calls(tmp_path):
+def test_editorial_hold_blocks_direct_schedule_before_external_calls(tmp_path, monkeypatch):
     folder = tmp_path / "ep026"
     folder.mkdir()
     spec = folder / "short.yaml"
     (folder / "editorial_hold.json").write_text("{}")
+    monkeypatch.setattr(publish, "SCHEDULING_HOLD", tmp_path / "no-channel-hold.json")
     with pytest.raises(RuntimeError, match="editorial hold"):
         publish.schedule(spec)
 

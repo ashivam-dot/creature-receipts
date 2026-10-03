@@ -29,6 +29,7 @@ from .spec import ShortSpec
 log = logging.getLogger(__name__)
 
 BUFFER_API = "https://api.buffer.com"
+SCHEDULING_HOLD = Path(__file__).resolve().parents[3] / "status" / "scheduling_hold.json"
 AUDIENCE_TZ = ZoneInfo("America/New_York")
 # Best first: a day that posts fewer Shorts than there are slots keeps the first ones (auto.slots_per_day). Buffer's
 # 2026 data (1.8M videos) puts Shorts' peak at 6-11 p.m. and the weekday 12-5 p.m. stretch lowest, so the first two
@@ -487,6 +488,8 @@ def next_slots(count: int, taken: set[datetime], start: datetime | None = None, 
 
 def schedule(spec_path: Path, when: datetime | None = None) -> dict:
     spec_path = spec_path.resolve()
+    if SCHEDULING_HOLD.exists():
+        raise RuntimeError("New scheduling is on editorial hold; remove status/scheduling_hold.json only after review")
     if (spec_path.parent / "editorial_hold.json").exists():
         raise RuntimeError(f"{spec_path.parent.name} is on editorial hold; remove editorial_hold.json after repair and review")
     spec = ShortSpec.load(spec_path)

@@ -1165,7 +1165,11 @@ def release_anniversaries(run: Run) -> None:
 
 
 def publish_waiting(run: Run) -> None:
-    from .publish import AUDIENCE_TZ, BUFFER_QUEUE_LIMIT, SLOTS, next_slots, posts, schedule
+    from .publish import AUDIENCE_TZ, BUFFER_QUEUE_LIMIT, SCHEDULING_HOLD, SLOTS, next_slots, posts, schedule
+
+    if SCHEDULING_HOLD.exists():
+        run.notes.append("new scheduling on editorial hold; production continues")
+        return
 
     eps = episodes()
     waiting = [e for e in eps if e["state"] == "waiting"]
