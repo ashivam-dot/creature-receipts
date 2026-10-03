@@ -1,6 +1,6 @@
 # ep054 held first-release package — Winton
 
-**Status:** Local and private. `ep054.mp4` is ignored by Git; no Cloudinary URL, Buffer post or YouTube upload exists for this package. `editorial_hold.json` and the channel-wide `status/scheduling_hold.json` both block scheduling. The withdrawn `ep045` upload `v4rp0oWvgSI` and its historical records remain private and intact.
+**Status:** Held and private. `ep054.mp4` is ignored by Git and backed up in a [private Modal volume](private-modal-backup.json), with the stored bytes independently hashed. No Cloudinary URL, Buffer post or YouTube upload exists for this package. `editorial_hold.json` and the channel-wide `status/scheduling_hold.json` both block scheduling. The withdrawn `ep045` upload `v4rp0oWvgSI` and its historical records remain private and intact.
 
 The new `ep054.mp4` preserves the [ep045 rights-clear narration](../ep045/rights-clear-review.md) while replacing the station view with a verified [2017 CC0 aerial](assets/prague-station-2017-crop.source.json). It is 14,809,197 bytes, SHA-256 `6b43913005bbb9fade2e1f82ef5396a512c35a572004c1345b59da3f282bade0`. The old cut remains private and is a different file. This package’s bindings are:
 
