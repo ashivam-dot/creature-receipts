@@ -1,0 +1,26 @@
+{
+  "kind": "agent_owner_machine_release_decision_v1",
+  "episode_id": "ep054",
+  "decision": "approve_one_controlled_youtube_schedule",
+  "decided_at_utc": "2026-10-03T19:32:46Z",
+  "media_sha256": "6b43913005bbb9fade2e1f82ef5396a512c35a572004c1345b59da3f282bade0",
+  "spec_sha256": "9fa74905e2ce409432414129569f8342031168b4b9e4ae9109f26396d7f221fa",
+  "manifest_sha256": "1aa5e5747175c772987ebf10eb32964efd4f9562edf4bc9ead77f02e9d2dd1fa",
+  "basis": [
+    "Independent agent rechecked the spoken claims against the USHMM and Nicholas Winton family sources.",
+    "Commons authorship and CC BY/CC0 rights were checked; the generated credit discloses the memorial crop.",
+    "The exact MP4 fully decoded, its 883 frames were screened for blank frames and unexpected cuts, and its date/context labels remained visible.",
+    "Fresh unprompted ASR recognized all six narration beats. The decoded audio matches a prior cut independently screened by an audio-only model, and measured loudness/peak are within target."
+  ],
+  "limitations": [
+    "No native human listening occurred.",
+    "No full-motion phone playback occurred; visual inspection used decoded frames and contact sheets.",
+    "Machine checks may miss delivery, music, or motion defects. This is an explicit agent-owned editorial risk decision under the owner's delegated publishing instruction."
+  ],
+  "release_conditions": [
+    "Keep the channel-wide hold active and allowlist only this exact episode and binding for a short window.",
+    "Host the exact MP4, download the hosted URL, and compare every byte by SHA-256 before creating a Buffer post.",
+    "Read back Buffer channel, title, text, media URL, and due time; cancel the new post if any field differs.",
+    "Keep the withdrawn ep045 upload private and remove the allowlist after the single schedule."
+  ]
+}
