@@ -6,7 +6,7 @@ The seven revised spoken beats map to the direct receipts in [research.md](resea
 
 ## Private render
 
-- Local, unhosted draft: [ep026-revised-private-draft.mp4](ep026-revised-private-draft.mp4). Git ignores MP4 files; this file remains in the isolated worktree for review. It has not been uploaded, scheduled, or published.
+- Local, unhosted draft: [ep026-revised-private-draft.mp4](ep026-revised-private-draft.mp4). Git ignores MP4 files; the exact bytes were copied from the isolated worktree into this checkout for review. It has not been uploaded, scheduled, or published.
 - SHA-256: c9c1237ee6f6215570d066f793d1cd8e3caa80c8de0881e6788aa9e4650331e7.
 - Rendered from the revised short.yaml using the pipeline's current Kokoro am_fenrir voice at speed 1.15. Seven beats, 62 spoken words, 27.06 seconds.
 - Video: H.264, 1080 × 1920, 30 fps, yuv420p. Audio: AAC, 48 kHz stereo. File size: 11.89 MB.
