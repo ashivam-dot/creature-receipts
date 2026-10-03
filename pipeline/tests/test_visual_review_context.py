@@ -25,3 +25,15 @@ def test_review_receives_image_date_and_actual_subject(tmp_path, monkeypatch):
     assert "2021-07-16" in prompt
     assert "A modern wildfire" in prompt
     assert "A modern photo of" in prompt and "historical event" in prompt
+
+
+def test_final_review_cannot_host_flagged_picture_or_speech():
+    verdict = {"scores": {key: 5 for key in studio.GATE}, "judge": "gemini",
+               "frames": [{"beat": 3, "problem": "2021 fire photo used for an 1871 event"}],
+               "speech": []}
+    assert not studio._passes({"warnings": []}, verdict, final=True)
+    verdict["frames"] = []
+    verdict["speech"] = [{"beat": 3, "word": "Peshtigo", "respelling": "pesh tee go"}]
+    assert not studio._passes({"warnings": []}, verdict, final=True)
+    verdict["speech"] = []
+    assert studio._passes({"warnings": []}, verdict, final=True)

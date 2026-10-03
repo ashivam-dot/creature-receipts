@@ -236,10 +236,9 @@ def review(folder: Path, script: dict, result: dict, episode_id: str, visuals: l
 def _passes(result: dict, verdict: dict, final: bool) -> bool:
     if result["warnings"] or any(verdict["scores"][k] < PASS_SCORE for k in GATE):
         return False
-    if final and ":" not in verdict.get("judge", ""):
-        # With every score 4 or more the reviewer already judged the visuals good enough to publish; public-domain
-        # archives rarely have a picture that shows exactly what every one of nine lines says.
-        return len(verdict["frames"]) <= 2 and len(verdict["speech"]) <= 1
+    # A final-round score cannot waive an identified wrong image or pronunciation.
+    # If a source-matched picture is unavailable, the editor can use a clearly
+    # labelled card; the issue must be resolved before hosting the episode.
     return not verdict["frames"] and not verdict["speech"]
 
 
@@ -411,7 +410,8 @@ def produce(topic: str, series: str, episode_id: str | None = None, *, at: str |
             low = [k for k in GATE if verdict["scores"][k] < PASS_SCORE]
             reason = "; ".join(filter(None, [
                 f"low scores: {', '.join(low)}" if low else "", "; ".join(result["warnings"]),
-                f"{len(verdict['frames'])} frame problems" if len(verdict["frames"]) > 1 else ""]))
+                f"{len(verdict['frames'])} frame problems" if verdict["frames"] else "",
+                f"{len(verdict['speech'])} speech problems" if verdict["speech"] else ""]))
             shutil.rmtree(folder / BEST, ignore_errors=True)
             reject(folder, reason or "failed the quality gate")
             return {"id": episode_id, "outcome": "rejected", "topic": meta["topic"], "reason": reason}
