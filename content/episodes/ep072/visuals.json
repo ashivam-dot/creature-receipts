@@ -38,42 +38,16 @@
     "_alternates": []
   },
   {
-    "source": "url",
-    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/66/Stickstoffabrik_Oppau.jpg/1280px-Stickstoffabrik_Oppau.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "credit": {
-      "source": "Wikimedia Commons",
-      "title": "Stickstoffabrik Oppau.jpg",
-      "credit": "Rijksmuseum",
-      "license": "CC0",
-      "url": "https://commons.wikimedia.org/wiki/File:Stickstoffabrik_Oppau.jpg"
+    "source": "card",
+    "card": {
+      "kind": "fact",
+      "big": "thousands of times",
+      "small": ""
     },
-    "fallbacks": [
-      "color"
-    ],
-    "motion": "pan_left",
-    "focus_x": 0.5,
-    "focus_y": 0.5,
-    "_choice": {
-      "key": "commons:File:Stickstoffabrik Oppau.jpg",
-      "origin": "commons",
-      "file": "File:Stickstoffabrik Oppau.jpg",
-      "title": "Stickstoffabrik Oppau.jpg",
-      "width": 1369,
-      "height": 887,
-      "license": "CC0",
-      "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
-      "artist": "Rijksmuseum",
-      "date": "2021-05-14",
-      "year": 2021,
-      "page": "https://commons.wikimedia.org/wiki/File:Stickstoffabrik_Oppau.jpg",
-      "route": "category",
-      "original": "https://upload.wikimedia.org/wikipedia/commons/6/66/Stickstoffabrik_Oppau.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-      "historical": 0.991,
-      "match": 0.937
-    },
-    "_fit": "exact",
-    "_shows": "BASF chemical plant silos in Oppau",
-    "_alternates": []
+    "motion": "zoom_in",
+    "_rejected": [
+      "commons:File:Stickstoffabrik Oppau.jpg"
+    ]
   },
   {
     "source": "url",

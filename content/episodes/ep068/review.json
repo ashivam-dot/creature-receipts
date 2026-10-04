@@ -1,0 +1,115 @@
+{
+  "rounds": [
+    {
+      "at": "2026-10-04T23:09:47+05:30",
+      "check": {
+        "duration": 29.4,
+        "words": 68,
+        "integrated_lufs": -14.4,
+        "true_peak_dbfs": -1.8,
+        "warnings": [],
+        "speech_differences": [
+          "'a' heard as '(nothing)'",
+          "'s' heard as '(nothing)' after 'flew over beijing'",
+          "'a' heard as '(nothing)' after 'of the capital'",
+          "'heir' heard as 'air' after 'but his infant'",
+          "base.en: 'ton' heard as 'tonne' after 'a 3'",
+          "base.en: 's' heard as '(nothing)' after 'flew over beijing'",
+          "base.en: 'wanggongchang' heard as 'wangongchang' after '1626 the imperial'",
+          "base.en: 'tianqi' heard as 'tianki' after 'their clothes the'",
+          "base.en: 'heir' heard as 'air' after 'but his infant'"
+        ],
+        "speech_error": null,
+        "sources": [
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "designed card",
+          "designed card",
+          "Wikimedia Commons",
+          "Wikimedia Commons"
+        ],
+        "speech_verification": {
+          "heard": "Three-ton stone lion flew over Beijing city walls. In 1626, the imperial Wang Gongchang gunpowder armory suddenly exploded. The blast instantly flattened two square kilometers of the capital. Mushroom cloud rose and about 20,000 people perished. Strangely, the violent shockwave stripped many victims of their clothes. The Tianqi emperor fled his breakfast but his infant air died. No one ever explained what launched the massive stone guardian.",
+          "model": "small.en",
+          "media_sha256": "012c1b8560f0dca3ea06872f0b3d00befea5957321ba050dc5092f0aa6a5023c",
+          "primary_differences": [
+            "'a' heard as '(nothing)'",
+            "'s' heard as '(nothing)' after 'flew over beijing'",
+            "'a' heard as '(nothing)' after 'of the capital'",
+            "'heir' heard as 'air' after 'but his infant'"
+          ],
+          "differences": [
+            "'a' heard as '(nothing)'",
+            "'s' heard as '(nothing)' after 'flew over beijing'",
+            "'a' heard as '(nothing)' after 'of the capital'",
+            "'heir' heard as 'air' after 'but his infant'",
+            "base.en: 'ton' heard as 'tonne' after 'a 3'",
+            "base.en: 's' heard as '(nothing)' after 'flew over beijing'",
+            "base.en: 'wanggongchang' heard as 'wangongchang' after '1626 the imperial'",
+            "base.en: 'tianqi' heard as 'tianki' after 'their clothes the'",
+            "base.en: 'heir' heard as 'air' after 'but his infant'"
+          ],
+          "corroboration": {
+            "model": "base.en",
+            "heard": "3-tonne stone lion flew over Beijing city walls. In 1626, the Imperial Wangongchang gunpowder armory suddenly exploded. The blast instantly flattened two square kilometers of the capital. Mushroom cloud rose and about 20,000 people perished. Strangely, the violent shockwave stripped many victims of their clothes. The tianki emperor fled his breakfast, but his infant air died. No one ever explained what launched the massive stone guardian.",
+            "differences": [
+              "'a' heard as '(nothing)'",
+              "'ton' heard as 'tonne' after 'a 3'",
+              "'s' heard as '(nothing)' after 'flew over beijing'",
+              "'wanggongchang' heard as 'wangongchang' after '1626 the imperial'",
+              "'a' heard as '(nothing)' after 'of the capital'",
+              "'tianqi' heard as 'tianki' after 'their clothes the'",
+              "'heir' heard as 'air' after 'but his infant'"
+            ],
+            "resolved": []
+          }
+        }
+      },
+      "media_sha256": "012c1b8560f0dca3ea06872f0b3d00befea5957321ba050dc5092f0aa6a5023c",
+      "scores": {
+        "hook": 4,
+        "clarity": 4,
+        "payoff": 3,
+        "visuals": 3,
+        "loop": 3
+      },
+      "notes": {
+        "hook": "Opening line captures interest immediately.",
+        "clarity": "Core narrative is simple and easy to follow.",
+        "payoff": "Ending ties back to mystery but lacks a strong twist.",
+        "visuals": "Multiple frames use irrelevant Western artwork.",
+        "loop": "Flows back to start with slight verbal repetition."
+      },
+      "frames": [
+        {
+          "beat": 2,
+          "problem": "Map text is unreadable at phone size."
+        },
+        {
+          "beat": 3,
+          "problem": "Anachronistic European print depicting a different event."
+        },
+        {
+          "beat": 6,
+          "problem": "European print does not represent the Chinese emperor."
+        }
+      ],
+      "speech": [
+        {
+          "beat": 6,
+          "word": "Tianqi",
+          "respelling": "tee en chee"
+        }
+      ],
+      "rewrite": [
+        "Beat 6: 'The emperor survived, but the blast killed his infant heir.'",
+        "Beat 7: 'No one explained what launched that massive stone guardian.'"
+      ],
+      "better_than_last": "Stronger central mystery and immediate visual hook than ep054.",
+      "judge": "gemini-3.6-flash",
+      "passed": false
+    }
+  ],
+  "best_round": 1
+}

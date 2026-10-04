@@ -1,0 +1,68 @@
+{
+  "rounds": [
+    {
+      "at": "2026-10-04T23:09:59+05:30",
+      "check": {
+        "duration": 29.43,
+        "words": 70,
+        "integrated_lufs": -14.4,
+        "true_peak_dbfs": -1.7,
+        "warnings": [],
+        "speech_differences": [
+          "'the' heard as '(nothing)' after 'arrived in september'"
+        ],
+        "speech_error": null,
+        "sources": [
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "designed card",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons"
+        ],
+        "speech_verification": {
+          "heard": "Jean de Valette fired the heads of prisoners from his cannons. In 1565, 40,000 Ottoman soldiers arrived to conquer Malta. Grand Master Valette ordered his men to poison their own wells. When Fort Saint Elmo fell, invaders floated decapitated knights across the bay. Valette retaliated by beheading his prisoners and firing them back. The few survivors held until relief arrived in September. conflict began when the massive armada arrived",
+          "model": "small.en",
+          "media_sha256": "bd560c692dedf5c27a1c6843cc698d83fb04fa1bcfeb4b41463ca8056a00e432",
+          "primary_differences": [
+            "'the' heard as '(nothing)' after 'arrived in september'"
+          ],
+          "differences": [
+            "'the' heard as '(nothing)' after 'arrived in september'"
+          ],
+          "corroboration": {
+            "model": "base.en",
+            "heard": "Jean de Valette fired the heads of prisoners from his cannons. In 1565, 40,000 Ottoman soldiers arrived to conquer Malta. Grand Master Valette ordered his men to poison their own wells. When Fort St. Elmo fell, invaders floated decapitated knights across the bay. Valette retaliated by beheading his prisoners and firing them back. The few survivors held until relief arrived in September. Conflict began when the massive Armada arrived.",
+            "differences": [
+              "'the' heard as '(nothing)' after 'arrived in september'"
+            ],
+            "resolved": []
+          }
+        }
+      },
+      "media_sha256": "bd560c692dedf5c27a1c6843cc698d83fb04fa1bcfeb4b41463ca8056a00e432",
+      "scores": {
+        "hook": 4,
+        "clarity": 4,
+        "payoff": 4,
+        "visuals": 4,
+        "loop": 4
+      },
+      "notes": {
+        "hook": "Shocking historical detail is an effective attention grabber.",
+        "clarity": "Narrative arc from arrival to retaliation is logical.",
+        "payoff": "Symmetry between the setup and retaliation is satisfying.",
+        "visuals": "Consistent period-appropriate imagery enhances the atmosphere.",
+        "loop": "Last line resets the chronological context effectively."
+      },
+      "frames": [],
+      "speech": [],
+      "rewrite": [],
+      "better_than_last": "More cohesive narrative structure than the Prague rescue episode.",
+      "judge": "gemini-3-flash-preview",
+      "passed": false
+    }
+  ],
+  "best_round": 1
+}

@@ -1,7 +1,7 @@
 {
   "id": "ep068",
-  "duration": 29.412,
-  "video_sha256": "148e2dbbde614ccac8f096793b8364bbd9701ec1efa4cf8c97d6a6230c204f06",
+  "duration": 28.691,
+  "video_sha256": "e7d33b535c07597fbe18f7b9ee23fc454a957c00766eaa197906e0ae3edb544d",
   "beats": [
     {
       "start": 0.08,
@@ -37,24 +37,38 @@
       "text": "In 1626, the imperial Wanggongchang gunpowder armory suddenly exploded.",
       "asset": {
         "source": "Wikimedia Commons",
-        "title": "Paradigma XV Provinciarum et CLV Urbium Capitalium Sinensis Imperij.jpg",
-        "credit": "Fran\u00e7ois de Louvemont",
+        "title": "John-Speed-The-Kingdome-of-China-1626-2544.jpg",
+        "credit": "John Speed",
         "license": "Public domain",
-        "url": "https://commons.wikimedia.org/wiki/File:Paradigma_XV_Provinciarum_et_CLV_Urbium_Capitalium_Sinensis_Imperij.jpg"
+        "url": "https://commons.wikimedia.org/wiki/File:John-Speed-The-Kingdome-of-China-1626-2544.jpg"
       },
       "shots": [
         {
           "start": 3.4,
+          "end": 5.7,
+          "kind": "card",
+          "motion": "camera",
+          "camera_move": [
+            1.08,
+            1.0,
+            0.5,
+            0.5,
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "start": 5.7,
           "end": 9.233,
-          "kind": "cover",
+          "kind": "detail",
           "motion": "depth",
           "camera_move": [
-            1.1,
-            1.1,
+            1.02,
+            1.09,
             0.5,
             0.5,
-            0.85,
-            0.15
+            0.45,
+            0.5
           ]
         }
       ]
@@ -65,10 +79,10 @@
       "text": "The blast instantly flattened two square kilometers of the capital.",
       "asset": {
         "source": "Wikimedia Commons",
-        "title": "Polvertoren van Rijnberk vliegt de lucht in - Explosion Pulverturm Rheinberg (1698)-CN.jpg",
-        "credit": "Polvertoren_van_Rijnberk_vliegt_de_lucht_in_-_Explosion_Pulverturm_Rheinberg_(1698).jpg: Casper Luycken & Jan Luycken\nderivative work: ka\u0281stn Disk/Cat",
+        "title": "John-Speed-The-Kingdome-of-China-1626-2544.jpg",
+        "credit": "John Speed",
         "license": "Public domain",
-        "url": "https://commons.wikimedia.org/wiki/File:Polvertoren_van_Rijnberk_vliegt_de_lucht_in_-_Explosion_Pulverturm_Rheinberg_(1698)-CN.jpg"
+        "url": "https://commons.wikimedia.org/wiki/File:John-Speed-The-Kingdome-of-China-1626-2544.jpg"
       },
       "shots": [
         {
@@ -77,7 +91,7 @@
           "kind": "card",
           "motion": "camera",
           "camera_move": [
-            1.0,
+            1.12,
             1.08,
             0.5,
             0.5,
@@ -137,36 +151,50 @@
     },
     {
       "start": 21.647,
-      "end": 25.517,
-      "text": "The Tianqi Emperor fled his breakfast, but his infant heir died.",
+      "end": 25.092,
+      "text": "The emperor survived, but the blast killed his infant heir.",
       "asset": {
         "source": "Wikimedia Commons",
-        "title": "Polvertoren van Rijnberk vliegt de lucht in - Explosion Pulverturm Rheinberg (1698)-CN.jpg",
-        "credit": "Polvertoren_van_Rijnberk_vliegt_de_lucht_in_-_Explosion_Pulverturm_Rheinberg_(1698).jpg: Casper Luycken & Jan Luycken\nderivative work: ka\u0281stn Disk/Cat",
+        "title": "Portrait assis de l'empereur Tianqi.jpg",
+        "credit": "Unknown authorUnknown author",
         "license": "Public domain",
-        "url": "https://commons.wikimedia.org/wiki/File:Polvertoren_van_Rijnberk_vliegt_de_lucht_in_-_Explosion_Pulverturm_Rheinberg_(1698)-CN.jpg"
+        "url": "https://commons.wikimedia.org/wiki/File:Portrait_assis_de_l%27empereur_Tianqi.jpg"
       },
       "shots": [
         {
           "start": 21.633,
-          "end": 25.533,
-          "kind": "card",
-          "motion": "camera",
+          "end": 23.867,
+          "kind": "cover",
+          "motion": "depth",
           "camera_move": [
-            1.07,
-            1.0,
+            1.1,
+            1.1,
             0.5,
             0.5,
+            0.85,
+            0.15
+          ]
+        },
+        {
+          "start": 23.867,
+          "end": 25.1,
+          "kind": "detail",
+          "motion": "depth",
+          "camera_move": [
+            1.02,
+            1.09,
             0.5,
+            0.5,
+            0.45,
             0.5
           ]
         }
       ]
     },
     {
-      "start": 25.517,
-      "end": 29.062,
-      "text": "No one ever explained what launched the massive stone guardian.",
+      "start": 25.092,
+      "end": 28.341,
+      "text": "No one explained what launched that massive stone guardian.",
       "asset": {
         "source": "Wikimedia Commons",
         "title": "Chinese guardian lion, Da'an Temple (Changsha).jpg",
@@ -176,8 +204,8 @@
       },
       "shots": [
         {
-          "start": 25.533,
-          "end": 29.4,
+          "start": 25.1,
+          "end": 28.7,
           "kind": "cover",
           "motion": "depth",
           "camera_move": [
@@ -431,107 +459,97 @@
     {
       "text": "The",
       "start": 21.797,
-      "end": 21.872
+      "end": 21.922
     },
     {
-      "text": "Tianqi",
-      "start": 21.872,
-      "end": 22.272
+      "text": "emperor",
+      "start": 21.922,
+      "end": 22.247
     },
     {
-      "text": "Emperor",
-      "start": 22.272,
-      "end": 22.572
-    },
-    {
-      "text": "fled",
-      "start": 22.572,
-      "end": 22.784
-    },
-    {
-      "text": "his",
-      "start": 22.784,
-      "end": 22.947
-    },
-    {
-      "text": "breakfast,",
-      "start": 22.947,
-      "end": 23.522
+      "text": "survived,",
+      "start": 22.247,
+      "end": 22.809
     },
     {
       "text": "but",
-      "start": 23.522,
-      "end": 23.659
-    },
-    {
-      "text": "his",
-      "start": 23.659,
-      "end": 23.859
-    },
-    {
-      "text": "infant",
-      "start": 23.859,
-      "end": 24.272
-    },
-    {
-      "text": "heir",
-      "start": 24.272,
-      "end": 24.522
-    },
-    {
-      "text": "died.",
-      "start": 24.522,
-      "end": 25.297
-    },
-    {
-      "text": "No",
-      "start": 25.667,
-      "end": 25.829
-    },
-    {
-      "text": "one",
-      "start": 25.829,
-      "end": 25.992
-    },
-    {
-      "text": "ever",
-      "start": 25.992,
-      "end": 26.217
-    },
-    {
-      "text": "explained",
-      "start": 26.217,
-      "end": 26.792
-    },
-    {
-      "text": "what",
-      "start": 26.792,
-      "end": 26.942
-    },
-    {
-      "text": "launched",
-      "start": 26.942,
-      "end": 27.279
+      "start": 22.809,
+      "end": 22.934
     },
     {
       "text": "the",
-      "start": 27.279,
-      "end": 27.367
+      "start": 22.934,
+      "end": 23.022
+    },
+    {
+      "text": "blast",
+      "start": 23.022,
+      "end": 23.422
+    },
+    {
+      "text": "killed",
+      "start": 23.422,
+      "end": 23.709
+    },
+    {
+      "text": "his",
+      "start": 23.709,
+      "end": 23.872
+    },
+    {
+      "text": "infant",
+      "start": 23.872,
+      "end": 24.197
+    },
+    {
+      "text": "heir.",
+      "start": 24.197,
+      "end": 24.872
+    },
+    {
+      "text": "No",
+      "start": 25.242,
+      "end": 25.404
+    },
+    {
+      "text": "one",
+      "start": 25.404,
+      "end": 25.529
+    },
+    {
+      "text": "explained",
+      "start": 25.529,
+      "end": 26.017
+    },
+    {
+      "text": "what",
+      "start": 26.017,
+      "end": 26.167
+    },
+    {
+      "text": "launched",
+      "start": 26.167,
+      "end": 26.504
+    },
+    {
+      "text": "that",
+      "start": 26.504,
+      "end": 26.667
     },
     {
       "text": "massive",
-      "start": 27.367,
-      "end": 27.767
+      "start": 26.667,
+      "end": 27.067
     },
     {
       "text": "stone",
-      "start": 27.767,
-      "end": 28.117
+      "start": 27.067,
+      "end": 27.392
     },
     {
       "text": "guardian.",
-      "start": 28.117,
-      "end": 29.017
+      "start": 27.392,
+      "end": 28.292
     }
   ]
 }

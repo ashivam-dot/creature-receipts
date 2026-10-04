@@ -1,0 +1,58 @@
+{
+  "rounds": [
+    {
+      "at": "2026-10-04T23:10:20+05:30",
+      "check": {
+        "duration": 26.19,
+        "words": 66,
+        "integrated_lufs": -14.5,
+        "true_peak_dbfs": -1.8,
+        "warnings": [],
+        "speech_differences": [],
+        "speech_error": null,
+        "sources": [
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons"
+        ],
+        "speech_verification": {
+          "heard": "workers used explosives to break up fertilizer they believed was safe. The procedure had been applied thousands of times prior without incident. On the morning of September 21, 1921, the stockpile detonated. The blast created a crater 90 meters wide and 20 meters deep. More than 500 people lost their lives in the disaster. 80% of the town was destroyed while workers used explosives.",
+          "model": "small.en",
+          "media_sha256": "91e4e255fa132b0791b53440cbdb58f98d957f438a9a920b74122fe0d7d1eedf",
+          "primary_differences": [],
+          "differences": []
+        }
+      },
+      "media_sha256": "91e4e255fa132b0791b53440cbdb58f98d957f438a9a920b74122fe0d7d1eedf",
+      "scores": {
+        "hook": 4,
+        "clarity": 5,
+        "payoff": 4,
+        "visuals": 3,
+        "loop": 5
+      },
+      "notes": {
+        "hook": "The irony of using explosives on a substance 'believed was safe' is a solid hook, though slightly dry.",
+        "clarity": "The script avoids technical jargon and follows a clear, tragic timeline that is very easy to follow.",
+        "payoff": "The reveal of the massive 90-meter crater and the high death toll provides a strong sense of tragedy.",
+        "visuals": "Most archival photos are excellent, but the inclusion of a modern 2021 photo for a 1921 story is a significant error.",
+        "loop": "The repetition of the 'workers used explosives' phrase creates a perfectly seamless and natural transition."
+      },
+      "frames": [
+        {
+          "beat": 2,
+          "problem": "The image is a modern photo from 2021, which is anachronistic for a story set in 1921."
+        }
+      ],
+      "speech": [],
+      "rewrite": [],
+      "better_than_last": "The narrative loop is significantly more polished and seamless than the ending of the recent Fetterman Fight episode.",
+      "judge": "gemini-3-flash-preview",
+      "passed": false
+    }
+  ],
+  "best_round": 1
+}

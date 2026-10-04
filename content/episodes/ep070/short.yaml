@@ -1,5 +1,5 @@
 id: ep070
-title: Why Did a Mild Spring Morning Bring a Fatal Blizzard? ❄️
+title: How Did an 1888 Spring Morning Freeze New York? ❄️
 series: The Last Hours
 description: Commuters stepped into unseasonably mild spring weather just hours before a sudden whiteout blizzard froze New
   York City in its tracks in March 1888.
@@ -25,7 +25,7 @@ voice:
   voice: am_fenrir
   speed: 1.15
 beats:
-- text: Commuters stepped into mild spring weather hours before a blinding whiteout.
+- text: In March 1888, mild spring weather instantly became a blinding whiteout.
   emphasis:
   - mild spring weather
   - blinding whiteout
@@ -42,50 +42,51 @@ beats:
     - color
     motion: pan_down
     focus_x: 0.5
-    focus_y: 0.5
-- text: On March 11, 1888, a brutal nor'easter struck.
+    focus_y: 0.4
+- text: At midnight, a brutal nor'easter struck New York City.
   emphasis:
-  - March 11, 1888
   - nor'easter
+  - New York City
   sfx: whoosh
   visual:
     source: url
-    url: https://thumb.wikimedia.org/wikipedia/commons/thumb/1/18/Blizzard_of_March_1888_-_The_Mammoth_Drift%2C_near_Cemetery_%282576211546%29.jpg/960px-Blizzard_of_March_1888_-_The_Mammoth_Drift%2C_near_Cemetery_%282576211546%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
+    url: https://upload.wikimedia.org/wikipedia/commons/3/30/Brooklyn_Museum_-_Blizzard_of_March_1888%2C_Brooklyn_-_Breading_G._Way_-_overall.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
     credit:
       source: Wikimedia Commons
-      title: Blizzard of March 1888 - The Mammoth Drift, near Cemetery (2576211546).jpg
-      credit: Keene Public Library and the Historical Society of Cheshire County from USA
+      title: Brooklyn Museum - Blizzard of March 1888, Brooklyn - Breading G. Way - overall.jpg
+      credit: Breading G. Way
       license: Public domain
-      url: https://commons.wikimedia.org/wiki/File:Blizzard_of_March_1888_-_The_Mammoth_Drift,_near_Cemetery_(2576211546).jpg
+      url: https://commons.wikimedia.org/wiki/File:Brooklyn_Museum_-_Blizzard_of_March_1888,_Brooklyn_-_Breading_G._Way_-_overall.jpg
     fallbacks:
     - card
     - color
     motion: pan_left
     focus_x: 0.5
-    focus_y: 0.5
+    focus_y: 0.4
     card:
       kind: dateline
       big: March 11, 1888
       small: New York City
-- text: Temperatures plunged rapidly as rain turned to snow after midnight.
+- text: Temperatures plunged rapidly as rain turned to snow.
   emphasis:
   - Temperatures plunged
-  - after midnight
+  - rain turned to snow
   sfx: riser
   visual:
     source: url
-    url: https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6b/New_York_City._Blizzard_of_1888-_street_scene_during_blizzard_LCCN2007678801.jpg/1280px-New_York_City._Blizzard_of_1888-_street_scene_during_blizzard_LCCN2007678801.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
+    url: https://thumb.wikimedia.org/wikipedia/commons/thumb/8/85/The_great_storm_of_March_12th-13th_-_scene_in_Printing-House_Square%2C_New_York_City%2C_showing_the_terrible_force_of_the_blizzard_%28People_being_blown_over_by_the_wind_in_blizzard%3B_masthead_LCCN99614084.tif/lossy-page1-960px-thumbnail.tif.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
     credit:
       source: Wikimedia Commons
-      title: New York City. Blizzard of 1888- street scene during blizzard LCCN2007678801.jpg
+      title: The great storm of March 12th-13th - scene in Printing-House Square, New York City, showing the terrible force
+        of the blizzard (People being blown over by the wind in blizzard; masthead LCCN99614084.tif
       credit: Miscellaneous Items in High Demand, PPOC, Library of Congress
       license: Public domain
-      url: https://commons.wikimedia.org/wiki/File:New_York_City._Blizzard_of_1888-_street_scene_during_blizzard_LCCN2007678801.jpg
+      url: https://commons.wikimedia.org/wiki/File:The_great_storm_of_March_12th-13th_-_scene_in_Printing-House_Square,_New_York_City,_showing_the_terrible_force_of_the_blizzard_(People_being_blown_over_by_the_wind_in_blizzard;_masthead_LCCN99614084.tif
     fallbacks:
     - color
-    motion: zoom_out
+    motion: pan_down
     focus_x: 0.5
-    focus_y: 0.5
+    focus_y: 0.65
 - text: Winds whipped towering snowdrifts up to fifty feet high.
   emphasis:
   - fifty feet high
@@ -114,13 +115,28 @@ beats:
   - trapped
   - elevated trains
   visual:
-    reuse: 4
-    motion: zoom_in
-    focus_x: 0.5
-    focus_y: 0.5
-- text: Two hundred people died before normal life resumed.
+    source: url
+    url: https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5f/%28King1893NYC%29_pg047_THE_BLIZZARD_OF_MARCH_1888_%28PHOTO_BY_LANGILL%29.jpg/1920px-%28King1893NYC%29_pg047_THE_BLIZZARD_OF_MARCH_1888_%28PHOTO_BY_LANGILL%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
+    credit:
+      source: Wikimedia Commons
+      title: (King1893NYC) pg047 THE BLIZZARD OF MARCH 1888 (PHOTO BY LANGILL).jpg
+      credit: Unknown author
+      license: Public domain
+      url: https://commons.wikimedia.org/wiki/File:(King1893NYC)_pg047_THE_BLIZZARD_OF_MARCH_1888_(PHOTO_BY_LANGILL).jpg
+    fallbacks:
+    - color
+    motion: zoom_out
+    focus_x: 0.85
+    focus_y: 0.45
+    box:
+    - 0.73
+    - 0.34
+    - 0.98
+    - 0.58
+- text: Over two hundred people froze to death before normal life resumed.
   emphasis:
-  - Two hundred people died
+  - two hundred
+  - froze to death
   sfx: pop
   pause_after: 0.4
   visual:
@@ -130,7 +146,7 @@ beats:
       big: 200 Deaths
       small: New York City alone
     motion: zoom_in
-- text: Commuters stepped into mild spring weather hours before a blinding whiteout.
+- text: In March 1888, mild spring weather instantly became a blinding whiteout.
   emphasis:
   - mild spring weather
   - blinding whiteout
@@ -139,5 +155,6 @@ beats:
     reuse: 1
     motion: zoom_out
     focus_x: 0.5
-    focus_y: 0.5
+    focus_y: 0.4
 depth_motion: true
+hook_text: FROZEN IN SPRING

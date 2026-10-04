@@ -1,0 +1,143 @@
+id: ep070
+title: Why Did a Mild Spring Morning Bring a Fatal Blizzard? ❄️
+series: The Last Hours
+description: Commuters stepped into unseasonably mild spring weather just hours before a sudden whiteout blizzard froze New
+  York City in its tracks in March 1888.
+sources:
+- https://en.wikipedia.org/wiki/Great_Blizzard_of_1888
+- https://historysnacks.io/event/2J7OCMV8/the-great-blizzard-of-1888-began-along-the-eastern-united-states-eventually/
+- https://newyorkexplained.com/history/gilded-age/the-blizzard-of-1888/
+- https://web.archive.org/web/20070324154647/http://www.crh.noaa.gov/mkx/climate/big.php
+- https://www.history.com/this-day-in-history/March-11/great-blizzard-of-88-hits-east-coast
+hashtags:
+- '#history'
+- '#blizzard'
+- '#newyork'
+tags:
+- Great Blizzard of 1888
+- New York City
+- blizzard
+- weather history
+- '1888'
+- winter storm
+voice:
+  engine: kokoro
+  voice: am_fenrir
+  speed: 1.15
+beats:
+- text: Commuters stepped into mild spring weather hours before a blinding whiteout.
+  emphasis:
+  - mild spring weather
+  - blinding whiteout
+  visual:
+    source: url
+    url: https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f7/A_view_toward_Wall_Street_during_the_Great_Blizzard_of_1888.jpg/1280px-A_view_toward_Wall_Street_during_the_Great_Blizzard_of_1888.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
+    credit:
+      source: Wikimedia Commons
+      title: A view toward Wall Street during the Great Blizzard of 1888.jpg
+      credit: Brown Brothers
+      license: Public domain
+      url: https://commons.wikimedia.org/wiki/File:A_view_toward_Wall_Street_during_the_Great_Blizzard_of_1888.jpg
+    fallbacks:
+    - color
+    motion: pan_down
+    focus_x: 0.5
+    focus_y: 0.5
+- text: On March 11, 1888, a brutal nor'easter struck.
+  emphasis:
+  - March 11, 1888
+  - nor'easter
+  sfx: whoosh
+  visual:
+    source: url
+    url: https://thumb.wikimedia.org/wikipedia/commons/thumb/1/18/Blizzard_of_March_1888_-_The_Mammoth_Drift%2C_near_Cemetery_%282576211546%29.jpg/960px-Blizzard_of_March_1888_-_The_Mammoth_Drift%2C_near_Cemetery_%282576211546%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
+    credit:
+      source: Wikimedia Commons
+      title: Blizzard of March 1888 - The Mammoth Drift, near Cemetery (2576211546).jpg
+      credit: Keene Public Library and the Historical Society of Cheshire County from USA
+      license: Public domain
+      url: https://commons.wikimedia.org/wiki/File:Blizzard_of_March_1888_-_The_Mammoth_Drift,_near_Cemetery_(2576211546).jpg
+    fallbacks:
+    - card
+    - color
+    motion: pan_left
+    focus_x: 0.5
+    focus_y: 0.5
+    card:
+      kind: dateline
+      big: March 11, 1888
+      small: New York City
+- text: Temperatures plunged rapidly as rain turned to snow after midnight.
+  emphasis:
+  - Temperatures plunged
+  - after midnight
+  sfx: riser
+  visual:
+    source: url
+    url: https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6b/New_York_City._Blizzard_of_1888-_street_scene_during_blizzard_LCCN2007678801.jpg/1280px-New_York_City._Blizzard_of_1888-_street_scene_during_blizzard_LCCN2007678801.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
+    credit:
+      source: Wikimedia Commons
+      title: New York City. Blizzard of 1888- street scene during blizzard LCCN2007678801.jpg
+      credit: Miscellaneous Items in High Demand, PPOC, Library of Congress
+      license: Public domain
+      url: https://commons.wikimedia.org/wiki/File:New_York_City._Blizzard_of_1888-_street_scene_during_blizzard_LCCN2007678801.jpg
+    fallbacks:
+    - color
+    motion: zoom_out
+    focus_x: 0.5
+    focus_y: 0.5
+- text: Winds whipped towering snowdrifts up to fifty feet high.
+  emphasis:
+  - fifty feet high
+  sfx: whoosh
+  visual:
+    source: url
+    url: https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1d/Blizzard_of_March_1888_-_Banner_snow_drift_at_residence_of_Deacon_Z.K._Graves_%284382430724%29.jpg/960px-Blizzard_of_March_1888_-_Banner_snow_drift_at_residence_of_Deacon_Z.K._Graves_%284382430724%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
+    credit:
+      source: Wikimedia Commons
+      title: Blizzard of March 1888 - Banner snow drift at residence of Deacon Z.K. Graves (4382430724).jpg
+      credit: Keene Public Library and the Historical Society of Cheshire County from USA
+      license: Public domain
+      url: https://commons.wikimedia.org/wiki/File:Blizzard_of_March_1888_-_Banner_snow_drift_at_residence_of_Deacon_Z.K._Graves_(4382430724).jpg
+    fallbacks:
+    - card
+    - color
+    motion: pan_left
+    focus_x: 0.5
+    focus_y: 0.5
+    card:
+      kind: fact
+      big: 50 Feet
+      small: Snowdrift height
+- text: Thousands of passengers remained trapped on frozen elevated trains.
+  emphasis:
+  - trapped
+  - elevated trains
+  visual:
+    reuse: 4
+    motion: zoom_in
+    focus_x: 0.5
+    focus_y: 0.5
+- text: Two hundred people died before normal life resumed.
+  emphasis:
+  - Two hundred people died
+  sfx: pop
+  pause_after: 0.4
+  visual:
+    source: card
+    card:
+      kind: fact
+      big: 200 Deaths
+      small: New York City alone
+    motion: zoom_in
+- text: Commuters stepped into mild spring weather hours before a blinding whiteout.
+  emphasis:
+  - mild spring weather
+  - blinding whiteout
+  sfx: whoosh
+  visual:
+    reuse: 1
+    motion: zoom_out
+    focus_x: 0.5
+    focus_y: 0.5
+depth_motion: true

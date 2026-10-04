@@ -1,0 +1,92 @@
+{
+  "rounds": [
+    {
+      "at": "2026-10-04T23:08:42+05:30",
+      "check": {
+        "duration": 27.47,
+        "words": 71,
+        "integrated_lufs": -14.3,
+        "true_peak_dbfs": -1.8,
+        "warnings": [],
+        "speech_differences": [
+          "'hid' heard as 'hit' after 'signalmen'",
+          "'travelling' heard as 'traveling' after 'an express train'",
+          "base.en: 'signalmen hid' heard as 'signal men hit'",
+          "base.en: 'travelling' heard as 'traveling' after 'an express train'",
+          "base.en: 'a' heard as 'to' after 'crash signalmen left'"
+        ],
+        "speech_error": null,
+        "sources": [
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons"
+        ],
+        "speech_verification": {
+          "heard": "Signalmen hit a passenger train on the main line and forgot. On May 22, 1915, a troop train carrying soldiers slammed into the stalled service. An express train traveling in the opposite direction immediately plowed into the wreckage. Gas from the wooden carriages ignited, starting a massive fire that burned until morning. Over 200 people died in Britain's worst ever rail crash. Signalmen left a train on the main line.",
+          "model": "small.en",
+          "media_sha256": "b32c23a8aef4a3afaa997007b5203276c11a8ba3e28fa7754d4c3895065e95a6",
+          "primary_differences": [
+            "'hid' heard as 'hit' after 'signalmen'",
+            "'travelling' heard as 'traveling' after 'an express train'"
+          ],
+          "differences": [
+            "'hid' heard as 'hit' after 'signalmen'",
+            "'travelling' heard as 'traveling' after 'an express train'",
+            "base.en: 'signalmen hid' heard as 'signal men hit'",
+            "base.en: 'travelling' heard as 'traveling' after 'an express train'",
+            "base.en: 'a' heard as 'to' after 'crash signalmen left'"
+          ],
+          "corroboration": {
+            "model": "base.en",
+            "heard": "Signal men hit a passenger train on the main line and forgot. On May 22, 1915, a troop train carrying soldiers slammed into the stalled service. An express train traveling in the opposite direction immediately plowed into the wreckage. Gas from the wooden carriages ignited, starting a massive fire that burned until morning. Over 200 people died in Britain's worst ever rail crash. signal men left to train on the main line.",
+            "differences": [
+              "'signalmen hid' heard as 'signal men hit'",
+              "'travelling' heard as 'traveling' after 'an express train'",
+              "'a' heard as 'to' after 'crash signalmen left'"
+            ],
+            "resolved": []
+          }
+        }
+      },
+      "media_sha256": "b32c23a8aef4a3afaa997007b5203276c11a8ba3e28fa7754d4c3895065e95a6",
+      "scores": {
+        "hook": 4,
+        "clarity": 5,
+        "payoff": 4,
+        "visuals": 3,
+        "loop": 3
+      },
+      "notes": {
+        "hook": "The hook is historically dramatic, though the use of the word 'hid' is slightly confusing.",
+        "clarity": "The progression of the three-train collision is exceptionally clear and easy to follow.",
+        "payoff": "The massive scale of the disaster and the compounding series of crashes provides a solid payoff.",
+        "visuals": "Beats 3 and 4 use a photo of a Swiss rail accident from the late 19th century instead of the actual 1915 disaster.",
+        "loop": "The transition from Beat 6 back to Beat 1 is highly repetitive, repeating the word 'signalmen' and 'main line' immediately."
+      },
+      "frames": [
+        {
+          "beat": 3,
+          "problem": "The image depicts an unrelated Swiss railway accident near Seebach from the 19th century, not the 1915 Quintinshill rail disaster in Scotland."
+        },
+        {
+          "beat": 4,
+          "problem": "The image is the same anachronistic Swiss railway accident photo from Beat 3, which is historically inaccurate for this event."
+        }
+      ],
+      "speech": [],
+      "rewrite": [
+        "Beat 6: Change 'Signalmen left a train on the main line.' to 'The catastrophe happened because...'"
+      ],
+      "better_than_last": "This script lays out a much clearer, more direct chronological chain of cause-and-effect events than the military strategy discussions in the Arnhem episode.",
+      "judge": "gemini-3.5-flash",
+      "passed": false
+    }
+  ],
+  "best_round": 1,
+  "verdict": "rejected",
+  "reason": "visual plan: only 2 original art beats; 3 are needed for 6 beats",
+  "rejected_at": "2026-10-04T23:10:42+05:30"
+}

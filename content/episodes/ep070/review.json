@@ -1,0 +1,62 @@
+{
+  "rounds": [
+    {
+      "at": "2026-10-04T23:09:28+05:30",
+      "check": {
+        "duration": 28.43,
+        "words": 66,
+        "integrated_lufs": -14.3,
+        "true_peak_dbfs": -1.8,
+        "warnings": [],
+        "speech_differences": [],
+        "speech_error": null,
+        "sources": [
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "designed card",
+          "Wikimedia Commons"
+        ],
+        "speech_verification": {
+          "heard": "Commuters stepped into mild spring weather hours before a blinding whiteout. On March 11, 1888, a brutal nor'easter struck. Temperatures plunged rapidly as rain turned to snow after midnight. Winds whipped towering snowdrifts up to 50 feet high. Thousands of passengers remained trapped on frozen elevated trains. Two hundred people died before normal life resumed. Commuters stepped into mild spring weather hours before a blinding whiteout.",
+          "model": "small.en",
+          "media_sha256": "2594102bbf33e8babb94ce8e29a789a5f94e58440ff9b513cb1ad811048d9972",
+          "primary_differences": [],
+          "differences": []
+        }
+      },
+      "media_sha256": "2594102bbf33e8babb94ce8e29a789a5f94e58440ff9b513cb1ad811048d9972",
+      "scores": {
+        "hook": 3,
+        "clarity": 4,
+        "payoff": 3,
+        "visuals": 2,
+        "loop": 4
+      },
+      "notes": {
+        "hook": "The contrast is good but the delivery is slightly slow to capture immediate attention.",
+        "clarity": "Very easy to follow chronological story of a sudden storm.",
+        "payoff": "The ending details a tragic but expected historical death toll.",
+        "visuals": "Beat 5's image is off-topic as it shows a rural home instead of a train.",
+        "loop": "Seamless transition from the resumption of normal life back to the spring morning."
+      },
+      "frames": [
+        {
+          "beat": 5,
+          "problem": "The image shows a rural house with a horse carriage, which does not match the narration about passengers trapped on elevated trains."
+        }
+      ],
+      "speech": [],
+      "rewrite": [
+        "Beat 1: In March 1888, mild spring weather instantly became a blinding whiteout.",
+        "Beat 6: Over two hundred people froze to death before normal life resumed."
+      ],
+      "better_than_last": "This episode has a cleaner narrative structure and smoother looping than episode 54.",
+      "judge": "gemini-3.5-flash",
+      "passed": false
+    }
+  ],
+  "best_round": 1
+}
