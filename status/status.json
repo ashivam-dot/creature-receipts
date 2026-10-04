@@ -1,39 +1,81 @@
 {
-  "updated_at": "2026-10-04T14:09:01+05:30",
+  "updated_at": "2026-10-04T14:51:33+05:30",
   "day": 3,
   "result": "ok",
   "run": {
     "host": "github-actions",
-    "id": "37189563979",
-    "number": "30",
+    "id": "37191632389",
+    "number": "31",
     "trigger": "workflow_dispatch",
-    "started_at": "2026-10-04T14:08:57+05:30",
-    "started_at_utc": "2026-10-04T08:38:57+00:00",
-    "seconds": 4
+    "started_at": "2026-10-04T14:47:11+05:30",
+    "started_at_utc": "2026-10-04T09:17:11+00:00",
+    "seconds": 263
   },
   "stages": [
     {
       "name": "collect",
       "ok": true,
-      "detail": "ep064 unfinished (final audio on editorial speech hold)",
-      "seconds": 3.5
+      "detail": "nothing in the cloud",
+      "seconds": 0.7
+    },
+    {
+      "name": "timely topics",
+      "ok": true,
+      "detail": "0 added",
+      "seconds": 60.5
+    },
+    {
+      "name": "sourced accident topics",
+      "ok": true,
+      "detail": "1 added",
+      "seconds": 0.1
+    },
+    {
+      "name": "strongest stories",
+      "ok": true,
+      "detail": "12 added",
+      "seconds": 164.8
+    },
+    {
+      "name": "new topics",
+      "ok": true,
+      "detail": "5 added",
+      "seconds": 25.4
+    },
+    {
+      "name": "report",
+      "ok": true,
+      "detail": "day-003.md",
+      "seconds": 0.2
+    },
+    {
+      "name": "deploy",
+      "ok": true,
+      "detail": "",
+      "seconds": 2.0
+    },
+    {
+      "name": "start ep065",
+      "ok": true,
+      "detail": "Quebec Bridge collapse (1907): engineers measured a lower-chord bend before it fell; the inquiry found defective design",
+      "seconds": 1.0
     }
   ],
   "errors": [],
-  "owner_action": [
-    "ep064 final speech review: listen to Modal volume creature-receipts-outbox:drafts/speech-review/ep064-7ee8c3c2079c790ff2a9cf08e54fef891f6166902551266b10ff6d136f5798ef.mp4 against script.json and review.json (SHA-256 7ee8c3c2079c790ff2a9cf08e54fef891f6166902551266b10ff6d136f5798ef); repair any error and rerun final-media checks before clearing editorial_hold.json."
-  ],
+  "owner_action": [],
   "notes": [
     "draft-only producer: no Buffer, Cloudinary, or Google publisher access"
   ],
   "inventory": {
-    "total": 3,
+    "total": 4,
     "in_buffer": 0,
     "waiting": 3,
-    "drafts": 0,
+    "drafts": 1,
     "target": 14,
     "making": [],
-    "remote": []
+    "remote": [
+      "ep065"
+    ]
   },
   "queue": [],
   "waiting": [
@@ -56,46 +98,52 @@
       "score": 24
     }
   ],
-  "made": [
+  "made": [],
+  "spawned": [
     {
-      "id": "ep064",
-      "outcome": "unfinished",
-      "topic": "Battle of Agincourt (1415): outnumbered English archers stood in thick mud as heavily armored French knights charged and sank into the muck",
-      "reason": "final audio on editorial speech hold",
-      "speech_review": true,
-      "media_sha256": "7ee8c3c2079c790ff2a9cf08e54fef891f6166902551266b10ff6d136f5798ef",
-      "speech_review_path": "drafts/speech-review/ep064-7ee8c3c2079c790ff2a9cf08e54fef891f6166902551266b10ff6d136f5798ef.mp4"
+      "id": "ep065",
+      "topic": "Quebec Bridge collapse (1907): engineers measured a lower-chord bend before it fell; the inquiry found defective design",
+      "call_id": "fc-01M433FXP1Z2YTW9GZPJP38T6F"
     }
   ],
-  "spawned": [],
-  "in_cloud": [],
+  "in_cloud": [
+    {
+      "id": "ep065",
+      "topic": "Quebec Bridge collapse (1907): engineers measured a lower-chord bend before it fell; the inquiry found defective design",
+      "spawned_at": "2026-10-04T14:51:33+05:30"
+    }
+  ],
   "published": [],
   "live": 1,
   "failed_posts": [],
   "not_live": [],
   "llm": {
-    "calls": 3,
+    "calls": 5,
     "by_model": {
-      "gemini-3.8-flash": 1,
-      "gemini-3.5-flash-lite": 1,
-      "gemini-3.7-flash": 1
+      "gemini-3.7-flash": 1,
+      "gemini-3.5-flash": 4
     },
     "out_of_quota": []
   },
   "renders": {
-    "modal": 1,
+    "modal": 0,
     "runner": 0
   },
   "daily_done": "2026-10-04",
-  "minutes_this_month": 30.06845950475,
+  "minutes_this_month": 36.3764905708,
   "minutes_budget": null,
   "modal_cost": {
-    "metered": 5.22,
+    "metered": 5.21,
     "billed": 0.0
   },
   "modal_credit": 30.0,
-  "capacity": null,
+  "capacity": {
+    "cloud": 189,
+    "runner": 0,
+    "runner_minutes": 0,
+    "modal_credit_left": 22.79
+  },
   "made_here": 0,
-  "open_topics": 142,
+  "open_topics": 159,
   "parked_topics": 17
 }

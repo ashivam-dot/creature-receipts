@@ -40,6 +40,7 @@ event is told for its gore. Space topics belong to the sister channel Universe R
 | Oct 29 | Wall Street Crash of 1929 (1929): the market collapse on Black Tuesday was predicted one month earlier by a financial expert who warned that a terrific crash was coming | Warnings Ignored |
 | Nov 1 | 1755 Lisbon earthquake: it struck on All Saints' Day, when the churches were full, and people who fled to the open waterfront were hit by a tsunami | The Last Hours |
 | Nov 9 | Great Lakes Storm of 1913 (1913): captains ignored the new "White Flag" weather warnings and sailed into the Freshwater Fury, a storm that sank a record 12 ships and killed over 250 people | Warnings Ignored |
+| Nov 9 | Great Boston Fire of 1872 (Nov 9): the fire department's horses were all sick with a flu epidemic, forcing firefighters to pull the heavy steam engines to the fire by hand | Warnings Ignored |
 | Nov 12 | Nevado del Ruiz eruption (1985): warning signs were ignored for weeks before a lahar buried the town of Armero in the middle of the night | Warnings Ignored |
 | Nov 18 | 1755 Cape Ann earthquake (Nov 18): the strongest earthquake in Massachusetts history struck so hard it bent the grasshopper weathercock on top of Boston's Faneuil Hall | The Last Hours |
 | Nov 20 | Essex (whaleship) (1820): after a sperm whale sank the ship, the crew steered away from the nearest islands for fear of cannibals | Sole Survivors |
@@ -118,6 +119,14 @@ event is told for its gore. Space topics belong to the sister channel Universe R
 - Tradeston Flour Mills explosion (1872): a massive blast leveled the mill and killed 18 people, proving for the first time that ordinary flour dust can be as explosive as gunpowder
 - Tacoma streetcar disaster (1900): a speeding trolley packed with holiday travelers plunged into a gulch after the driver jumped to safety
 - Nowy Dwór Mazowiecki train disaster (1949): the communist government successfully wiped the country's deadliest rail crash from the news for over 40 years
+- Paris Metro train fire (1903): dozens of passengers refused to evacuate a smoky underground station because they demanded refunds for their tickets, only to be suffocated moments later
+- 1864 Washington Arsenal explosion (1864): twenty-one young women making wartime ammunition were burned alive when a spark ignited the room and their bulky hoop skirts blocked the narrow exit doors
+- Karlslust dance hall fire (1947): during the freezing aftermath of WWII, firefighters trying to save a burning dance hall found their water hoses completely frozen solid
+- New Australasian Gold Mine disaster (1882): trapped in a flooded mine, 22 men spent their final hours scratching farewell notes to their families on the inside of a tin matchbox
+- Siege of Tyana (272): Roman Emperor Aurelian vowed to not leave a single dog alive in the city, but after taking it, he ordered his troops to only slaughter actual dogs
+- Battle of Mytilene (406 BC): after winning a crucial naval victory, six Athenian generals were executed by their own city because a storm prevented them from rescuing shipwrecked survivors
+- Earthquake Synod (1382): when a violent earthquake interrupted a trial to condemn a religious reformer, both the prosecutors and the accused claimed God sent the quake to support them
+- Siege of Pembroke (1648): an impregnable fortress was forced to surrender after a defector revealed the exact location of the secret underground pipe supplying all their water
 
 ### Lost Cities
 
@@ -137,6 +146,7 @@ event is told for its gore. Space topics belong to the sister channel Universe R
 - Fall of Teotihuacan (c. 750 AD): the massive city was burned and abandoned not by invaders, but seemingly by its own citizens who rose up and systematically destroyed the homes of the ruling elite
 - Discovery of Skara Brae (c. 3180 BC): this Neolithic village was perfectly preserved under sand dunes for 5,000 years until a massive storm in 1850 stripped the earth away and revealed it to a local laird
 - Great Zimbabwe (c. 11th–15th centuries): colonial explorers refused to believe the massive granite walls were built by Africans, insisting for decades that the city must have been built by the Queen of Sheba
+- Sybaris (510 BC): the city famous for its luxury was completely erased from the earth when victorious rivals diverted a whole river to run over its ruins
 
 ### Doomed Expeditions
 
@@ -162,6 +172,7 @@ event is told for its gore. Space topics belong to the sister channel Universe R
 - Qurnah disaster (1855): a massive convoy of 235 crates of ancient Nineveh treasures was lost in the Tigris river after an attack, where they remain buried under silt today
 - Sinking of the Antarctic (1903): after their ship was crushed by ice, three separated groups survived the winter and reunited on the exact same day
 - Polaris expedition (1871): the mission to the North Pole failed when its commander died mysteriously, and a 20th-century autopsy revealed he had been poisoned with arsenic by his own crew
+- French Antarctic Expedition (1772): the explorer rushed back to France claiming he found a lush southern paradise, only to be disgraced when his next voyage revealed it was a desolate, frozen rock
 
 ### Fallen Empires
 
@@ -184,6 +195,8 @@ event is told for its gore. Space topics belong to the sister channel Universe R
 - Siege of Larache (1689): after surrendering on the promise of safe passage, 1,600 Spanish soldiers were enslaved and forced to build the Sultan's imperial palace
 - Siege of Shushtar (641): the city's impregnable walls were bypassed when a defector led the invading army into the heart of the city through the secret sewer tunnels
 - Fall of Angkor (c. 1431): the world's largest pre-industrial city collapsed not just from war, but because its massive water network failed during decades of extreme drought and floods
+- Siege of the Atuatuci (57 BC): after pretending to surrender and disarm, the tribe launched a surprise night attack, prompting Julius Caesar to sell all 53,000 survivors into slavery
+- Karakorum (1388): the capital of the massive Mongol Empire was completely demolished by Chinese forces, and its stone ruins were carried away to build a nearby Buddhist monastery
 
 ### Warnings Ignored
 
@@ -209,6 +222,9 @@ event is told for its gore. Space topics belong to the sister channel Universe R
 - Siege of Svetigrad (1448): an impregnable mountain fortress fell after defenders refused to drink from their only water well because a dead dog was thrown inside
 - Norwalk rail accident (1853): a train carrying 48 people plunged into a river after the engineer missed a red signal while the bridge was open
 - Siege of Sahyun Castle (1188): the 'impenetrable' fortress fell in just two days because the defenders left a single narrow stone bridge uncut
+- Quebec Bridge collapse (1907): engineers measured a lower-chord bend before it fell; the inquiry found defective design — making (ep065)
+- Rockslide of Elm (1881): villagers ignored cracks in the mountain and gathered on their balconies to watch the slate collapse, only for the landslide to cross the valley and bury them
+- Battle of Singara (344): Roman soldiers ignored their generals' orders to stay alert, celebrating their victory inside the enemy camp until they were slaughtered in their sleep
 
 ### Sole Survivors
 
@@ -227,3 +243,5 @@ event is told for its gore. Space topics belong to the sister channel Universe R
 - Survival of Jan Baalsrud (1943): after his sabotage mission failed, he survived the Arctic for months and amputated nine of his own toes with a pocketknife to stop gangrene from killing him
 - 1867 Virgin Islands earthquake and tsunami (1867): a massive wave carried the USS Monongahela over the rooftops of the town before the receding water pulled it safely back into the harbor
 - Hugh Glass (1823): after being mauled by a grizzly and left for dead in a shallow grave, he crawled 200 miles to safety but chose to forgive the men who abandoned him
+- Sinking of the Titanic (1912): the only Japanese survivor, Masabumi Hosono, was publicly shamed and lost his government job in Japan for not dying honorably with the other passengers
+- 1842 retreat from Kabul (1842): surgeon William Brydon was the only member of a 16,000-strong British army column to reach safety, surviving a sword cut because he stuffed a magazine into his hat for warmth
