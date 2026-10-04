@@ -30,6 +30,8 @@ The [four-phone-crop preview](previews/mann-gulch-scene-options-2026-10-04.jpg) 
 
 The expanded bounded intake passed a local live check at `2026-10-04T13:56:45Z`: four source pages and six exact JPEGs fetched, Mann Gulch `technical_preflight_pass`, Oppau `original_report_missing`, `eligible_for_selection=0`, and `release_enabled=false`. The three focused intake tests passed. This is a freshness and byte-integrity result, not a source-claim or final-art verdict.
 
+[Cloud preflight run 37207502857](https://github.com/ashivam-dot/creature-receipts/actions/runs/37207502857) passed on input commit `6a2b3d0` at `2026-10-04T13:58:07Z`. Its downloaded JSON artifact has SHA-256 `4b097404d63c482197b4df9d654dcdd63b0a10e79e7de84ac9c6813c4c728f00` and independently records four Mann Gulch image checks, two Oppau image checks, one technical pass, zero eligible candidates, and `release_enabled=false`. The workflow refreshed the existing producer supply issue; it did not render, schedule, or upload a video.
+
 ## Remaining review and release limits
 
 The official [1993 Forest Service PDF](https://www.fs.usda.gov/rm/pubs_int/int_gtr299.pdf) returned HTTP 403 from this environment, and the `fireleadership.gov` copies timed out during TLS handshakes. The Commons file records and downloaded exact images were inspected, but those government-hosted copies were not. The 1949 primary report scan is hosted by Internet Archive; its PDF metadata names the U.S. Forest Service as author, but the original agency-hosted report was not located. The investigation photograph's creator is unknown. Resolve that photo's provenance or replace it before claiming the full art set is rights-cleared.
