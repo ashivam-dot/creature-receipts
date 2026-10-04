@@ -8,6 +8,8 @@
     python3 pipeline/modal_secret.py modal    # explicitly rebuild the Modal secret after reviewing the key list
 """
 
+from __future__ import annotations
+
 import json
 import os
 import secrets as tokens
