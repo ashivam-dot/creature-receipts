@@ -1,14 +1,15 @@
 """Run the studio on Modal's monthly credit instead of on a laptop or an Actions runner.
 
 `studio_run` is the studio itself: four times a day it runs `ytc auto` on a fresh clone of the repo and pushes
-what changed. `studio_episode` makes a whole Short (research to hosting) from a snapshot of the repo, so a run can
+what changed. `studio_episode` makes a reviewed draft from a snapshot of the repo, so a run can
 start several and exit instead of waiting; the next run collects what they left in the results volume.
-`render_episode` renders one spec. `slot_watch` sends a post Buffer just failed again, minutes after its slot.
+`render_episode` renders one spec.
 """
 
 from __future__ import annotations
 
 import io
+import hashlib
 import json
 import logging
 import os
@@ -59,7 +60,10 @@ outbox = modal.Volume.from_name("creature-receipts-outbox", create_if_missing=Tr
 # What a studio worker needs besides the image. Read from the deploying machine's environment (the Actions
 # secrets, or pipeline/.env on the Mac), so rotating a key in GitHub reaches the workers on the next deploy.
 STUDIO_ENV = ("YTC_CURSOR_API_KEY", "YTC_CURSOR_MODEL", "YTC_LLM_FIRST", "YTC_GEMINI_API_KEY", "YTC_MISTRAL_API_KEY",
-              "YTC_OPENROUTER_API_KEY", "CLOUDINARY_URL", "YTC_CONTACT", "PEXELS_API_KEY", "PIXABAY_API_KEY")
+              "YTC_OPENROUTER_API_KEY", "YTC_CONTACT", "PEXELS_API_KEY", "PIXABAY_API_KEY")
+PUBLISHER_ENV = ("BUFFER_API_KEY", "BUFFER_YOUTUBE_CHANNEL_ID", "BUFFER_INSTAGRAM_CHANNEL_ID",
+                 "BUFFER_TIKTOK_CHANNEL_ID", "BUFFER_ORG_ID", "CLOUDINARY_URL", "YTC_GOOGLE_CLIENT",
+                 "YTC_GOOGLE_TOKEN", "YTC_AUTONOMOUS_RELEASE")
 studio_secret = modal.Secret.from_dict({k: v for k in STUDIO_ENV if (v := os.environ.get(k))})
 # Image sources throttle downloads that carry no contact details (visuals._user_agent); the narration is Gemini TTS.
 render_secret = modal.Secret.from_dict({k: v for k in ("YTC_CONTACT", "YTC_GEMINI_API_KEY") if (v := os.environ.get(k))})
@@ -182,13 +186,14 @@ def context_bundle(root: Path, episode_id: str) -> bytes:
 # reserves. Its memory also holds the Cursor SDK's Node bridge (about 190 MB).
 @app.function(image=image, cpu=0.25, memory=1536, timeout=4 * 3600, volumes={"/outbox": outbox}, secrets=[studio_secret])
 def studio_episode(context: bytes, job: dict) -> dict:
-    """Make one Short from its topic, host it, and leave its folder in the outbox for the next studio run."""
+    """Make one draft and retain its exact render in the private outbox volume."""
     from . import llm, studio
 
     logging.basicConfig(level=logging.INFO, format="%(asctime)s %(levelname)s %(name)s: %(message)s", datefmt="%H:%M:%S")
     for noisy in ("httpx", "urllib3", "trafilatura", "primp"):
         logging.getLogger(noisy).setLevel(logging.WARNING)
     _unpack(context, REMOTE_ROOT)
+    os.environ["YTC_DRAFT_ONLY"] = "1"
     episode_id = job["id"]
     llm.CURSOR_FALLBACK = job.get("cursor", True)
     studio.LAST_RESORT = job.get("last_resort", False)
@@ -203,6 +208,17 @@ def studio_episode(context: bytes, job: dict) -> dict:
     outcome["llm_calls"] = [{"model": c["model"], "purpose": c["purpose"]} for c in llm.calls]
     outcome["stopped_at"] = datetime.now(timezone.utc).isoformat(timespec="seconds")
     folder = next((f for f in (studio.EPISODES / episode_id, studio.REJECTED / episode_id) if f.exists()), None)
+    if outcome["outcome"] == "ready" and folder is not None:
+        draft = json.loads((folder / "draft.json").read_text(encoding="utf-8"))
+        media = folder / f"{episode_id}.mp4"
+        destination = Path("/outbox", draft["modal_path"])
+        destination.parent.mkdir(exist_ok=True)
+        if not destination.exists():
+            shutil.copyfile(media, destination)
+        with destination.open("rb") as saved:
+            digest = hashlib.file_digest(saved, "sha256").hexdigest()
+        if digest != draft["media_sha256"]:
+            raise RuntimeError(f"saved draft media differs from reviewed render: {episode_id}")
     names = _episode_files(REMOTE_ROOT, folder) if folder else []
     # Named for this start, so a worker that was given up on can't have its files taken for a later one's.
     key = job.get("key", episode_id)
@@ -256,10 +272,6 @@ def _checkout() -> None:
     # A run that couldn't save would repeat its work (start workers, schedule posts) on the next run's clone.
     if (done := _git("push", "--dry-run", "-q", "origin", "HEAD")).returncode:
         raise RuntimeError(f"the deploy key can't push to the repo: {done.stderr.strip()[:400]}")
-    secrets = CHECKOUT / "secrets"
-    secrets.mkdir(exist_ok=True)
-    (secrets / "client_secret.json").write_text(os.environ["YTC_GOOGLE_CLIENT"], encoding="utf-8")
-    (secrets / "token.json").write_text(os.environ["YTC_GOOGLE_TOKEN"], encoding="utf-8")
 
 
 def _save(message: str) -> str:
@@ -300,8 +312,9 @@ def studio_run(trigger: str = "schedule", args: list[str] | None = None) -> dict
     except Exception as err:
         _alert(f"The studio's run on Modal couldn't start: {err}"[:900])
         raise
-    env = {**os.environ, "PYTHONPATH": str(CHECKOUT / "pipeline" / "src"), "PYTHONUNBUFFERED": "1"}
-    command = [sys.executable, "-c", "import ytc; ytc.main()", "auto", "--trigger", trigger, *(args or [])]
+    env = {k: v for k, v in os.environ.items() if k not in PUBLISHER_ENV}
+    env.update({"PYTHONPATH": str(CHECKOUT / "pipeline" / "src"), "PYTHONUNBUFFERED": "1"})
+    command = [sys.executable, "-c", "import ytc; ytc.main()", "auto", "--draft-only", "--trigger", trigger, *(args or [])]
     try:
         code = subprocess.run(command, cwd=CHECKOUT / "pipeline", env=env, timeout=RUN_MINUTES * 60).returncode
     except subprocess.TimeoutExpired:
@@ -369,43 +382,10 @@ def _refresh_slot_hold() -> bool:
     return True
 
 
-@app.function(image=run_image, cpu=0.25, memory=512, timeout=600, secrets=[run_secret], max_containers=1,
-              schedule=modal.Cron(WATCH_SCHEDULE, timezone=AUDIENCE_TZ.key))
+@app.function(image=run_image, cpu=0.25, memory=512, timeout=600, max_containers=1)
 def slot_watch() -> list[str]:
-    """Send each post Buffer just failed again (publish.resend_failed). It changes Buffer only: the post keeps its
-    id, so the next studio run's sync records how it went."""
-    from . import publish
-
-    logging.basicConfig(level=logging.INFO, format="%(asctime)s %(levelname)s %(name)s: %(message)s", datefmt="%H:%M:%S")
-    try:
-        held = _refresh_slot_hold()
-    except RuntimeError as err:
-        logging.warning("%s", err)
-        if not watch_state.get("hold_read_alerted"):
-            _alert(str(err))
-            watch_state["hold_read_alerted"] = True
-        return []
-    watch_state["hold_read_alerted"] = False
-    if held:
-        logging.info("Editorial scheduling hold is active; Buffer resends are paused")
-        return []
-    if not os.environ.get("BUFFER_ORG_ID") and (org := watch_state.get("organization")):
-        os.environ["BUFFER_ORG_ID"] = org
-    try:
-        results = publish.resend_failed()
-        watch_state["organization"] = publish.organization_id()
-    except publish.BufferBusy as err:
-        logging.warning("%s; the next check tries again", err)
-        return []
-    lines = [f'"{r["title"]}" {"sent" if r["sent"] else "not sent"} again: {r["note"]}' for r in results]
-    for line in lines:
-        logging.info(line)
-    stuck = [(r, line) for r, line in zip(results, lines) if not r["sent"] and not watch_state.get(f"alerted:{r['id']}")]
-    if stuck:
-        _alert("Buffer failed a Short, and it couldn't be sent again: " + "; ".join(line for _, line in stuck)[:800])
-        for r, _ in stuck:
-            watch_state[f"alerted:{r['id']}"] = datetime.now(timezone.utc).isoformat(timespec="seconds")
-    return lines
+    """Legacy entrypoint retained inert for older callers; producer never retries publisher posts."""
+    return []
 
 
 def deploy() -> None:
@@ -456,6 +436,8 @@ def sweep(keep: set[str], days: float = 1) -> int:
     removed = 0
     for entry in outbox.listdir("/"):
         name = entry.path.rsplit("/", 1)[-1]
+        if name == "drafts":
+            continue
         if name.rsplit(".", 1)[0] not in keep and entry.mtime < cutoff:
             outbox.remove_file(entry.path)
             removed += 1

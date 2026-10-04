@@ -57,6 +57,7 @@ def main() -> None:
     auto = commands.add_parser("auto", help="one unattended studio run: sync, daily routine, produce, publish")
     auto.add_argument("--produce", type=int, help="make this many Shorts (default: whatever keeps a week waiting)")
     auto.add_argument("--no-publish", action="store_true", help="don't schedule anything in Buffer")
+    auto.add_argument("--draft-only", action="store_true", help="produce reviewed drafts without publisher access")
     auto.add_argument("--daily", choices=("auto", "yes", "no"), default="auto", help="the once-a-day routine")
     auto.add_argument("--trigger", default="manual")
     produce = commands.add_parser("produce", help="research, write, render, review, and host one Short")
@@ -134,7 +135,8 @@ def _run(args: argparse.Namespace) -> None:
     elif args.command == "auto":
         from .auto import main as run_studio
 
-        raise SystemExit(run_studio(args.produce, not args.no_publish, args.daily, args.trigger))
+        raise SystemExit(run_studio(args.produce, not args.no_publish, args.daily, args.trigger,
+                                    draft_only=args.draft_only))
     elif args.command == "produce":
         from .studio import produce
 

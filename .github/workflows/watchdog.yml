@@ -1,6 +1,6 @@
 name: watchdog
 
-# Checks the studio, Buffer, Cloudinary, and the channel's public feed every 3 hours (monitor/monitor.py) and
+# Checks the studio and the channel's public feed every 3 hours (monitor/monitor.py) and
 # pushes each new alert to the owner's phone through ntfy (the YTC_NTFY_TOPIC secret), plus the day's summary on
 # its first check after 08:00 IST; running it by hand sends the summary now. It runs here rather than on Modal so
 # it keeps watching when Modal is what stopped. Read-only: it changes nothing.
@@ -39,9 +39,7 @@ jobs:
       - name: Check
         env:
           GH_TOKEN: ${{ github.token }}
-          BUFFER_API_KEY: ${{ secrets.BUFFER_API_KEY }}
-          BUFFER_YOUTUBE_CHANNEL_ID: ${{ secrets.BUFFER_YOUTUBE_CHANNEL_ID }}
-          CLOUDINARY_URL: ${{ secrets.CLOUDINARY_URL }}
+          YTC_PUBLIC_MONITOR_ONLY: "1"
           YTC_NTFY_TOPIC: ${{ secrets.YTC_NTFY_TOPIC }}
           YTC_DIGEST_NOW: ${{ github.event_name == 'workflow_dispatch' }}
         run: python3 monitor/monitor.py

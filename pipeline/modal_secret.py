@@ -2,7 +2,7 @@
 
 1. A deploy key that can push to ashivam-dot/creature-receipts and nothing else (secrets/modal_deploy_key, git-ignored).
 2. An ntfy topic for alerts on the owner's phone (YTC_NTFY_TOPIC in pipeline/.env and a GitHub secret).
-3. The Modal secret `creature-receipts-studio`: the keys in pipeline/.env, YouTube's sign-in, and the deploy key.
+3. The Modal secret `creature-receipts-studio`: draft-production keys and the deploy key.
 
     python3 pipeline/modal_secret.py          # all three; what already exists is kept
     python3 pipeline/modal_secret.py modal    # only rebuild the Modal secret, after changing a key in pipeline/.env
@@ -21,9 +21,9 @@ ENV = ROOT / "pipeline" / ".env"
 KEY = ROOT / "secrets" / "modal_deploy_key"
 REPO = "ashivam-dot/creature-receipts"
 SECRET = "creature-receipts-studio"
-FROM_ENV = ("YTC_CONTACT", "BUFFER_API_KEY", "BUFFER_YOUTUBE_CHANNEL_ID", "CLOUDINARY_URL", "YTC_GEMINI_API_KEY",
+FROM_ENV = ("YTC_CONTACT", "YTC_GEMINI_API_KEY",
             "YTC_MISTRAL_API_KEY", "YTC_OPENROUTER_API_KEY", "YTC_CURSOR_API_KEY", "YTC_NTFY_TOPIC",
-            "BUFFER_TIKTOK_CHANNEL_ID", "BUFFER_INSTAGRAM_CHANNEL_ID", "PEXELS_API_KEY", "PIXABAY_API_KEY")
+            "PEXELS_API_KEY", "PIXABAY_API_KEY")
 # Modal's monthly credit (auto.MODAL_CREDIT) when YTC_MODAL_CREDIT isn't in pipeline/.env: the Starter plan's $1.
 # With a card on file it's $30; set YTC_MODAL_CREDIT=30 then.
 MODAL_CREDIT = "1"
@@ -72,10 +72,11 @@ def modal_secret() -> None:
     values = env_values()
     payload = {k: values[k] for k in FROM_ENV if values.get(k)}
     payload |= {"YTC_MODAL_CREDIT": values.get("YTC_MODAL_CREDIT") or MODAL_CREDIT,
-                "YTC_GOOGLE_CLIENT": (ROOT / "secrets" / "client_secret.json").read_text(encoding="utf-8"),
-                "YTC_GOOGLE_TOKEN": (ROOT / "secrets" / "token.json").read_text(encoding="utf-8"),
                 "YTC_DEPLOY_KEY": KEY.read_text(encoding="utf-8")}
-    env = {**os.environ, **{k: v for k, v in values.items() if k.startswith("MODAL_")}}
+    env = {k: v for k, v in os.environ.items() if not (
+        k.startswith("BUFFER_") or k in ("CLOUDINARY_URL", "YTC_GOOGLE_CLIENT", "YTC_GOOGLE_TOKEN",
+                                       "YTC_AUTONOMOUS_RELEASE"))}
+    env.update({k: v for k, v in values.items() if k.startswith("MODAL_")})
     fd, path = tempfile.mkstemp(suffix=".json")
     try:
         with os.fdopen(fd, "w", encoding="utf-8") as fh:

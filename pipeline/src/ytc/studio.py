@@ -299,6 +299,23 @@ renders: list[str] = []
 CPU_LOCK = threading.Lock()
 
 
+def record_draft(spec_path: Path, episode_id: str, title: str, series: str, scores: dict, anniversary: str | None) -> dict:
+    """Bind the reviewed render without giving the producer a publishing destination."""
+    from .publish import _stamp_manifest_media, media_binding
+
+    folder = spec_path.parent
+    _stamp_manifest_media(folder, episode_id)
+    binding = media_binding(spec_path, episode_id)
+    draft = {"id": episode_id, "title": title, "series": series, "scores": scores,
+             "anniversary": anniversary, **binding, "modal_volume": "creature-receipts-outbox",
+             "modal_path": f"drafts/{episode_id}-{binding['media_sha256']}.mp4"}
+    _write(folder / "draft.json", draft)
+    (folder / "hold.json").unlink(missing_ok=True)
+    (folder / "release_certificate.json").unlink(missing_ok=True)
+    (folder / "independent_review.json").unlink(missing_ok=True)
+    return draft
+
+
 def _render(spec_path: Path) -> Path:
     """On Modal when it's set up and working (or when this is a Modal worker), otherwise on this machine."""
     if (os.environ.get("MODAL_TOKEN_ID") or os.environ.get("YTC_ON_MODAL")) and os.environ.get("YTC_RENDER_HERE") != "1":
@@ -468,6 +485,11 @@ def produce(topic: str, series: str, episode_id: str | None = None, *, at: str |
     shutil.rmtree(folder / BEST, ignore_errors=True)
     verdict = notes["rounds"][notes.get("kept_round", len(notes["rounds"])) - 1]
     write_research_md(folder, research, script, visuals, notes, episode_id)
+    if os.environ.get("YTC_DRAFT_ONLY") == "1":
+        draft = record_draft(spec_path, episode_id, script["title"], meta["series"], verdict["scores"], meta.get("at"))
+        log.info("%s reviewed draft retained for independent handoff", episode_id)
+        return {"id": episode_id, "outcome": "ready", "topic": meta["topic"], "title": script["title"],
+                "scores": verdict["scores"], "draft": draft["modal_path"], "renders": len(notes["rounds"])}
     held = hold(spec_path, {"scores": verdict["scores"], "anniversary": meta.get("at")})
     if int(episode_id.removeprefix("ep")) >= 63:
         # A producing run cannot approve its own render. Any earlier approval covered older bytes.

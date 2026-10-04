@@ -1,8 +1,7 @@
 name: studio
 
 # The studio's backup. Modal runs the studio four times a day (cloud.studio_run: 11:05, 17:05, 23:05, and 05:05
-# IST): each run syncs Buffer, collects Shorts that Modal workers finished, does the daily routine once a day,
-# starts workers when fewer than two weeks' worth of Shorts are ready, and schedules finished ones into Buffer.
+# IST): each run collects finished drafts, refreshes topics, and starts draft workers.
 # This schedule is 2 hours behind Modal's, and a scheduled run does nothing unless Modal's last run failed or is
 # over 8 hours old (.github/backup_gate.py). Started by hand, it always runs.
 on:
@@ -11,13 +10,9 @@ on:
   workflow_dispatch:
     inputs:
       produce:
-        description: "Shorts to make (empty: whatever keeps a week waiting)"
+        description: "Drafts to make (empty: maintain the draft target)"
         required: false
         default: ""
-      publish:
-        description: "Schedule finished Shorts into Buffer"
-        type: boolean
-        default: true
       daily:
         description: "Daily routine (auto: once a day, in the first run after 14:00 IST)"
         type: choice
@@ -45,12 +40,6 @@ jobs:
       YTC_GEMINI_API_KEY: ${{ secrets.YTC_GEMINI_API_KEY }}
       YTC_MISTRAL_API_KEY: ${{ secrets.YTC_MISTRAL_API_KEY }}
       YTC_OPENROUTER_API_KEY: ${{ secrets.YTC_OPENROUTER_API_KEY }}
-      BUFFER_API_KEY: ${{ secrets.BUFFER_API_KEY }}
-      BUFFER_YOUTUBE_CHANNEL_ID: ${{ secrets.BUFFER_YOUTUBE_CHANNEL_ID }}
-      BUFFER_INSTAGRAM_CHANNEL_ID: ${{ secrets.BUFFER_INSTAGRAM_CHANNEL_ID }}
-      # Remains empty unless the disabled release policy is separately reviewed and activated.
-      YTC_AUTONOMOUS_RELEASE: ${{ vars.YTC_AUTONOMOUS_RELEASE }}
-      CLOUDINARY_URL: ${{ secrets.CLOUDINARY_URL }}
       MODAL_TOKEN_ID: ${{ secrets.MODAL_TOKEN_ID }}
       MODAL_TOKEN_SECRET: ${{ secrets.MODAL_TOKEN_SECRET }}
       YTC_CONTACT: ${{ secrets.YTC_CONTACT }}
@@ -65,7 +54,7 @@ jobs:
       PYTHONUNBUFFERED: "1"
     steps:
       # The branch's latest commit, not the one this run was triggered on: a run that waited for the one before it
-      # must start from the state that run saved, or it would collect and publish the same Shorts again.
+      # must start from the state that run saved, or it could collect the same draft again.
       - uses: actions/checkout@v7
         with:
           ref: ${{ github.ref }}
@@ -103,31 +92,19 @@ jobs:
         working-directory: pipeline
         run: uv sync --frozen
 
-      - name: Google sign-in files
-        if: steps.gate.outputs.skip != 'true'
-        env:
-          YTC_GOOGLE_CLIENT: ${{ secrets.YTC_GOOGLE_CLIENT }}
-          YTC_GOOGLE_TOKEN: ${{ secrets.YTC_GOOGLE_TOKEN }}
-        run: >-
-          python3 -c "import os, pathlib; d = pathlib.Path('secrets'); d.mkdir(exist_ok=True);
-          (d / 'client_secret.json').write_text(os.environ['YTC_GOOGLE_CLIENT']);
-          (d / 'token.json').write_text(os.environ['YTC_GOOGLE_TOKEN'])"
-
       - name: Studio run
         if: steps.gate.outputs.skip != 'true'
         working-directory: pipeline
-        # Only making Shorts on the runner (when Modal can't be deployed) comes near this.
+        # Draft workers run on Modal; this step collects them and refreshes topics.
         timeout-minutes: 170
         env:
           EVENT: ${{ github.event_name }}
           PRODUCE: ${{ inputs.produce }}
-          PUBLISH: ${{ inputs.publish }}
           DAILY: ${{ inputs.daily }}
         run: |
           args=(--trigger "$EVENT" --daily "${DAILY:-auto}")
           if [ -n "$PRODUCE" ]; then args+=(--produce "$PRODUCE"); fi
-          if [ "$PUBLISH" = "false" ]; then args+=(--no-publish); fi
-          uv run --no-sync ytc auto "${args[@]}"
+          uv run --no-sync ytc auto --draft-only "${args[@]}"
 
       - name: Save the channel's state
         if: always() && steps.gate.outputs.skip != 'true'

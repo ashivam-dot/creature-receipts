@@ -202,6 +202,7 @@ def episodes() -> list[dict]:
     out = []
     for folder in sorted(EPISODES.glob("ep[0-9][0-9][0-9]")):
         record, held, topic = _json(folder / "publish.json"), _json(folder / "hold.json"), _json(folder / "topic.json")
+        draft = _json(folder / "draft.json")
         editorial_hold_path = folder / "editorial_hold.json"
         editorial_hold = _json(editorial_hold_path)
         withdrawal = _json(folder / "withdrawal.json")
@@ -221,6 +222,8 @@ def episodes() -> list[dict]:
             state = "superseded"
         elif held:
             state = "waiting"
+        elif draft:
+            state = "draft"
         elif topic:
             state = "making"
         else:
@@ -235,7 +238,9 @@ def inventory(eps: list[dict] | None = None) -> dict:
     eps = eps if eps is not None else episodes()
     scheduled = [e for e in eps if e["state"] == "scheduled"]
     waiting = [e for e in eps if e["state"] == "waiting"]
-    return {"total": len(scheduled) + len(waiting), "in_buffer": len(scheduled), "waiting": len(waiting),
+    drafts = [e for e in eps if e["state"] == "draft"]
+    return {"total": len(scheduled) + len(waiting) + len(drafts), "in_buffer": len(scheduled), "waiting": len(waiting),
+            "drafts": len(drafts),
             "target": INVENTORY_DAYS * slots_per_day(), "making": [e["id"] for e in eps if e["state"] == "making"],
             "remote": [e["id"] for e in eps if e["state"] == "remote"]}
 
@@ -939,9 +944,11 @@ def _produce_here(run: Run, jobs: list[dict], minutes: float) -> None:
     studio.renders.clear()
 
 
-def produce(run: Run, count: int) -> None:
+def produce(run: Run, count: int, *, cloud_only: bool = False) -> None:
     """Start up to `count` Shorts: Modal workers while this month's credit lasts, then on this runner."""
     room = run.capacity = capacity()
+    if cloud_only:
+        room = run.capacity = {**room, "runner": 0, "runner_minutes": 0}
     jobs = _jobs(min(count, room["cloud"] + room["runner"]))
     if len(jobs) < count:
         run.notes.append(f"room for {len(jobs)} of the {count} Shorts wanted: Modal's credit covers {room['cloud']}, "
@@ -1684,15 +1691,16 @@ def weekly_review(run: Run, analytics: dict, learned: dict | None) -> Path:
     return path
 
 
-def daily(run: Run, state: dict | None = None) -> None:
-    from .youtube import save_stats
-
+def daily(run: Run, state: dict | None = None, *, draft_only: bool = False) -> None:
     state = state if state is not None else _json(STATUS / "state.json", {})
     analytics, learned, added, broke = {}, None, [], []
-    with run.stage("analytics") as entry:
-        path = save_stats(ANALYTICS)
-        analytics = _json(path, {})
-        entry["detail"] = f"{analytics.get('channel', {}).get('subscribers')} subscribers"
+    if not draft_only:
+        from .youtube import save_stats
+
+        with run.stage("analytics") as entry:
+            path = save_stats(ANALYTICS)
+            analytics = _json(path, {})
+            entry["detail"] = f"{analytics.get('channel', {}).get('subscribers')} subscribers"
     if analytics:
         with run.stage("learnings") as entry:
             learned = update_learnings(run, analytics)
@@ -1846,14 +1854,62 @@ def _automatic_production_paused(run: Run) -> bool:
     return not active
 
 
-def main(produce_count: int | None = None, publish: bool = True, daily_mode: str = "auto", trigger: str = "manual") -> int:
+def _draft_main(produce_count: int | None, daily_mode: str, trigger: str) -> int:
+    """Scheduled producer run with no publisher credentials or publishing calls."""
+    from .cloud import PUBLISHER_ENV
+
+    for key in PUBLISHER_ENV:
+        os.environ.pop(key, None)
+    os.environ["YTC_DRAFT_ONLY"] = "1"
+    run = Run(trigger)
+    STATUS.mkdir(parents=True, exist_ok=True)
+    state = _json(STATUS / "state.json", {})
+    if ON_MODAL:
+        from . import cloud
+
+        with run.stage("deploy"):
+            cloud.deploy()
+    if inventory()["remote"] or os.environ.get("MODAL_TOKEN_ID") or ON_MODAL:
+        with run.stage("collect") as entry:
+            entry["detail"] = collect(run)
+    today = _now().date().isoformat()
+    due = state.get("daily_done") != today and _now().hour >= DAILY_FROM_HOUR
+    if daily_mode == "yes" or (daily_mode == "auto" and due):
+        daily(run, state, draft_only=True)
+        if all(s["ok"] for s in run.stages if s["name"] == "report"):
+            state["daily_done"] = today
+            _write_json(STATUS / "state.json", state)
+    inv = inventory()
+    if produce_count is None:
+        want = inv["target"] - inv["total"] - len(inv["remote"])
+        batch = max(BATCH, len(_resumable(episodes())))
+        produce_count = min(batch, want) if want > 0 and (want >= BATCH or inv["making"]) else 0
+        today_date = _now().date()
+        timely = len(urgent([t for t in calendar_topics(today_date) if _available(t, today_date)], today_date))
+        if timely:
+            produce_count = max(produce_count, len(_resumable(episodes())) + timely)
+    if produce_count > 0:
+        produce(run, produce_count, cloud_only=True)
+    run.notes.append("draft-only producer: no Buffer, Cloudinary, or Google publisher access")
+    inv = inventory()
+    _session_note(run, inv)
+    failed = [stage for stage in run.stages if not stage["ok"]]
+    result = "failed" if len(failed) >= 3 else "degraded" if failed else "ok"
+    write_status(run, result)
+    return 1 if result == "failed" else 0
+
+
+def main(produce_count: int | None = None, publish: bool = True, daily_mode: str = "auto", trigger: str = "manual",
+         *, draft_only: bool = False) -> int:
+    if draft_only:
+        return _draft_main(produce_count, daily_mode, trigger)
     from .publish import buffer_busy, sync
 
     run = Run(trigger)
     STATUS.mkdir(parents=True, exist_ok=True)
     state = _json(STATUS / "state.json", {})
     if ON_MODAL:
-        # The app's scheduled checks (cloud.slot_watch) run the code last deployed, not this clone's.
+        # The app's worker code runs the version last deployed, not this clone's.
         from . import cloud
 
         with run.stage("deploy"):

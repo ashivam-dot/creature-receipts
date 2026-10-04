@@ -1,10 +1,9 @@
 """Watch the cloud studio. Read-only: it never changes the channel, the repo, or Buffer.
 
-It pulls the studio's status, run history, and latest report from GitHub, checks Buffer's queue, Cloudinary's
-usage, and the channel's public feed, then writes monitor/out/dashboard.html and reports each new alert: every
-15 minutes on the owner's Mac (launchd, see monitor/install.py) as a macOS notification, and every 3 hours on
-GitHub (.github/workflows/watchdog.yml) as a push to the owner's phone through ntfy. The watchdog also sends the
-phone a summary of the day each morning.
+It pulls the studio's status, run history, and latest report from GitHub and checks the channel's public feed.
+The owner's Mac may also check Buffer and Cloudinary with local credentials. The GitHub watchdog runs in
+public-only mode without those credentials and pushes alerts to the owner's phone through ntfy. It also sends
+the day's summary each morning.
 
     /usr/bin/python3 monitor/monitor.py            # refresh, print a summary
     /usr/bin/python3 monitor/monitor.py --open     # refresh and open the dashboard
@@ -357,7 +356,7 @@ def assess(data: dict) -> list[tuple[str, str]]:
     why = (" The studio is making what its free budgets allow: Modal's monthly credit is used up and the runner is "
            "on its share of the Actions minutes. A card on Modal (OWNER-CHECKLIST.md) lifts this."
            if room and not room.get("cloud") and status.get("modal_credit", 1) < 10 else "")
-    total = inv.get("total", 0)
+    total = max(0, inv.get("total", 0) - inv.get("drafts", 0))
     if scheduling_hold:
         problems.append(("warn", "New scheduling is paused for editorial review: "
                          + scheduling_hold.get("reason", "release checks are pending")))
@@ -389,6 +388,8 @@ def assess(data: dict) -> list[tuple[str, str]]:
     if metered and minutes > MINUTES_LIMIT * 0.95:
         problems.append(("warn", f"GitHub Actions minutes this month: about {minutes:.0f} of {MINUTES_LIMIT}."))
     buf = data.get("buffer") or {}
+    if buf.get("unavailable"):
+        problems.append(("warn", "Publisher queue and storage are checked by the separate control workflow; this watcher verifies public activity only."))
     if buf.get("error"):
         problems.append(("alert" if buf.get("binding_error") else "warn",
                          f"Can't read Buffer: {buf['error']}"))
@@ -430,7 +431,9 @@ def assess(data: dict) -> list[tuple[str, str]]:
         elif not scheduling_hold and due[0] - now > dt.timedelta(hours={3: 16, 2: 18, 1: 24}[max(1, min(3, total // 3))] + 1):
             problems.append(("warn", f"Nothing publishes until {due[0].astimezone(IST):%a %H:%M} IST."))
     feed = data.get("feed")
-    if isinstance(feed, list):
+    if not isinstance(feed, list):
+        problems.append(("alert", f"Can't verify the channel's public feed: {(feed or {}).get('error', 'no response')}"))
+    else:
         if feed:
             newest = max(_parse_time(v["published"]) for v in feed)
             if now - newest > dt.timedelta(hours=26):
@@ -517,8 +520,8 @@ next studio run about {next_cron(dt.datetime.now(UTC)).astimezone(IST):%H:%M} IS
     cld = data.get("cloudinary") or {}
     llm = status.get("llm", {})
     parts.append(f"""<h2>At a glance</h2><div class="grid">
-<div class="card"><div class="muted">Shorts ready</div><div class="big">{inv.get('total', '–')} / {inv.get('target', 21)}</div>
-<div class="muted">{inv.get('in_buffer', '–')} in Buffer · {inv.get('waiting', '–')} waiting · {len(inv.get('remote', []))} being made in the cloud · {len(inv.get('making', []))} half-made</div></div>
+<div class="card"><div class="muted">Publisher-ready Shorts</div><div class="big">{max(0, inv.get('total', 0) - inv.get('drafts', 0))} / {inv.get('target', 21)}</div>
+<div class="muted">{inv.get('drafts', 0)} private drafts · {inv.get('in_buffer', '–')} in Buffer · {inv.get('waiting', '–')} waiting · {len(inv.get('remote', []))} being made in the cloud · {len(inv.get('making', []))} half-made</div></div>
 <div class="card"><div class="muted">Live on YouTube</div><div class="big">{status.get('live', '–')}</div>
 <div class="muted">latest: {e(feed[0]['title'][:40]) if feed else '–'} ({_ago(feed[0]['published']) if feed else '–'})</div></div>
 <div class="card"><div class="muted">Last studio run</div><div class="big">{e(status.get('result', '–'))}</div>
@@ -728,12 +731,17 @@ def send_digest(data: dict, problems: list[tuple[str, str]], force: bool = False
 
 def collect() -> dict:
     data: dict = {"checked_at": dt.datetime.now(UTC).isoformat()}
-    env = _env()
+    public_only = os.environ.get("YTC_PUBLIC_MONITOR_ONLY") == "1"
+    env = {} if public_only else _env()
     try:
         data["github"] = github()
     except Exception as err:
         data["github_error"] = str(err)
-    for name, fn in (("buffer", lambda: buffer(env)), ("cloudinary", lambda: cloudinary(env)), ("feed", youtube_feed)):
+    checks = (("feed", youtube_feed),) if public_only else (
+        ("buffer", lambda: buffer(env)), ("cloudinary", lambda: cloudinary(env)), ("feed", youtube_feed))
+    if public_only:
+        data["buffer"] = data["cloudinary"] = {"unavailable": "publisher checks run in control"}
+    for name, fn in checks:
         try:
             data[name] = fn()
         except Exception as err:
@@ -750,7 +758,8 @@ def summary(data: dict, problems: list[tuple[str, str]]) -> str:
     lines = [f"History's Last Hours, {dt.datetime.now(IST):%a %b %d %H:%M} IST, day {status.get('day', '–')}",
              f"  last studio run: {status.get('result', '–')} ({_ago(status.get('updated_at'))}), "
              f"made {', '.join(m['id'] + ' ' + m['outcome'] for m in status.get('made', [])) or 'nothing'}",
-             f"  ready: {inv.get('total', '–')}/{inv.get('target', 21)} ({inv.get('in_buffer', '–')} in Buffer, {inv.get('waiting', '–')} waiting, "
+             f"  publisher-ready: {max(0, inv.get('total', 0) - inv.get('drafts', 0))}/{inv.get('target', 21)} "
+             f"({inv.get('drafts', 0)} private drafts, {inv.get('in_buffer', '–')} in Buffer, {inv.get('waiting', '–')} waiting, "
              f"{len(inv.get('remote', []))} being made on Modal)",
              f"  live Shorts: {status.get('live', '–')}"]
     runs = (data.get("github") or {}).get("runs", [])
