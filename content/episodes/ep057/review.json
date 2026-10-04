@@ -1,0 +1,55 @@
+{
+  "rounds": [
+    {
+      "at": "2026-10-04T05:23:42+05:30",
+      "check": {
+        "duration": 30.23,
+        "words": 70,
+        "integrated_lufs": -14.4,
+        "true_peak_dbfs": -1.8,
+        "warnings": [],
+        "speech_differences": [],
+        "speech_error": null,
+        "sources": [
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons"
+        ]
+      },
+      "scores": {
+        "hook": 4,
+        "clarity": 4,
+        "payoff": 4,
+        "visuals": 2,
+        "loop": 4
+      },
+      "notes": {
+        "hook": "The focus on secrecy and disaster scale is effective.",
+        "clarity": "Narrative progression is linear and easy to follow.",
+        "payoff": "The officer abandonment provides a solid narrative resolution.",
+        "visuals": "Anachronistic imagery and duplicate frames significantly lower the quality.",
+        "loop": "The 90-year timeframe connects perfectly to the hook."
+      },
+      "frames": [
+        {
+          "beat": 5,
+          "problem": "Photo dated 1930 is anachronistic for a 1917 event."
+        },
+        {
+          "beat": 6,
+          "problem": "Duplicate of beat five frame and anachronistic for the event."
+        }
+      ],
+      "speech": [],
+      "rewrite": [],
+      "better_than_last": "The narrative mystery is stronger than the Prague train story.",
+      "judge": "gemini-3-flash-preview",
+      "passed": false
+    }
+  ],
+  "best_round": 1
+}

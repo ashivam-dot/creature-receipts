@@ -1,0 +1,61 @@
+{
+  "rounds": [
+    {
+      "at": "2026-10-04T05:12:17+05:30",
+      "check": {
+        "duration": 30.55,
+        "words": 62,
+        "integrated_lufs": -14.4,
+        "true_peak_dbfs": -1.8,
+        "warnings": [],
+        "speech_differences": [
+          "'asa' heard as 'sad' after 'maintained strict neutrality'"
+        ],
+        "speech_error": null,
+        "sources": [
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons"
+        ]
+      },
+      "scores": {
+        "hook": 3,
+        "clarity": 4,
+        "payoff": 4,
+        "visuals": 4,
+        "loop": 4
+      },
+      "notes": {
+        "hook": "The opening statement is factual but lacks immediate emotional urgency.",
+        "clarity": "Narrative sequence is logical and easy to follow.",
+        "payoff": "Contrast between official inaction and individual heroism is effective.",
+        "visuals": "Archival photos are highly relevant and well-synchronized.",
+        "loop": "Visual and verbal repetition provides a smooth transition."
+      },
+      "frames": [
+        {
+          "beat": 4,
+          "problem": "The map text and quarter labels are too small for mobile viewing."
+        }
+      ],
+      "speech": [
+        {
+          "beat": 6,
+          "word": "Asa",
+          "respelling": "ay suh"
+        }
+      ],
+      "rewrite": [
+        "Beat 1: While Smyrna burned, foreign warships stood by and refused to take on refugees."
+      ],
+      "better_than_last": "This script uses much more specific and dated archival imagery compared to the Prague rescue episode.",
+      "judge": "gemini-3-flash-preview",
+      "passed": false
+    }
+  ],
+  "best_round": 1
+}

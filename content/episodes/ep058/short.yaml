@@ -1,0 +1,133 @@
+id: ep058
+title: Why Did Warships Watch Smyrna Burn? 🤯
+series: The Last Hours
+description: In September 1922, the Great Fire of Smyrna destroyed the city's Christian quarters while foreign warships anchored
+  in the harbor maintained strict neutrality.
+sources:
+- https://en.wikipedia.org/wiki/Burning_of_Smyrna
+- https://neareastrelief.org/dispatches/the-smyrna-catastrophe/
+- https://www.theguardian.com/world/2022/nov/30/the-destruction-of-smyrna-archive-1922
+- https://www.ilholocaustmuseum.org/events/the-great-fire-of-smyrna-the-genocide-of-greeks-in-asia-minor-remembered-100th-anniversary-commemoration/
+hashtags:
+- '#history'
+- '#smyrna'
+- '#1922'
+tags:
+- smyrna
+- '1922'
+- asa jennings
+- great fire of smyrna
+- history
+- disaster
+voice:
+  engine: kokoro
+  voice: am_fenrir
+  speed: 1.15
+beats:
+- text: While Smyrna burned, foreign warships stood by and refused the refugees.
+  emphasis:
+  - foreign warships
+  - refused
+  visual:
+    source: url
+    url: https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3a/USS_Litchfield_at_Smyrna.jpg/1920px-USS_Litchfield_at_Smyrna.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
+    credit:
+      source: Wikimedia Commons
+      title: USS Litchfield at Smyrna.jpg
+      credit: International Newsreel
+      license: Public domain
+      url: https://commons.wikimedia.org/wiki/File:USS_Litchfield_at_Smyrna.jpg
+    fallbacks:
+    - card
+    - color
+    motion: pan_right
+    focus_x: 0.5
+    focus_y: 0.5
+    card:
+      kind: fact
+      big: Strict Neutrality
+      small: Warships in Harbor
+- text: Many believed these neutral vessels would offer a safe haven.
+  emphasis:
+  - safe haven
+  sfx: whoosh
+  visual:
+    source: url
+    url: https://upload.wikimedia.org/wikipedia/commons/1/14/S.L.Cassar%2C_Refugees_from_Smyrna%2C_1922.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    credit:
+      source: Wikimedia Commons
+      title: S.L.Cassar, Refugees from Smyrna, 1922.jpg
+      credit: The card comes from a small collection from a Royal Marine who seems to have been involved in the conflict area
+        in 1922 and was stationed in Malta.He may have been Joe Smith of Berkhamsted Herts. It w
+      license: Public domain
+      url: https://commons.wikimedia.org/wiki/File:S.L.Cassar,_Refugees_from_Smyrna,_1922.jpg
+    fallbacks:
+    - color
+    motion: pan_left
+    focus_x: 0.5
+    focus_y: 0.5
+- text: Witness Minnie Mills saw a Turkish officer start the first fires.
+  emphasis:
+  - Turkish officer
+  - first fires
+  visual:
+    reuse: 2
+    motion: zoom_in
+    focus_x: 0.5
+    focus_y: 0.5
+- text: The blaze consumed Christian districts but spared the Turkish quarter.
+  emphasis:
+  - spared
+  sfx: pop
+  pause_after: 0.4
+  visual:
+    source: url
+    url: https://upload.wikimedia.org/wikipedia/commons/6/66/Smyrna-burn-13t14d-quay-buildings-1922.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    credit:
+      source: Wikimedia Commons
+      title: Smyrna-burn-13t14d-quay-buildings-1922.jpg
+      credit: Unknown authorUnknown author
+      license: Public domain
+      url: https://commons.wikimedia.org/wiki/File:Smyrna-burn-13t14d-quay-buildings-1922.jpg
+    fallbacks:
+    - card
+    - color
+    motion: pan_left
+    focus_x: 0.5
+    focus_y: 0.5
+    card:
+      kind: fact
+      big: Spared
+      small: Turkish Quarter
+- text: American worker Asa Jennings finally forced a rescue of 200,000 survivors.
+  emphasis:
+  - 200,000 survivors
+  sfx: riser
+  visual:
+    source: url
+    url: https://upload.wikimedia.org/wikipedia/commons/8/81/Asa-jennings.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    credit:
+      source: Wikimedia Commons
+      title: Asa-jennings.jpg
+      credit: Unknown authorUnknown author
+      license: Public domain
+      url: https://commons.wikimedia.org/wiki/File:Asa-jennings.jpg
+    fallbacks:
+    - card
+    - color
+    motion: pan_down
+    focus_x: 0.5
+    focus_y: 0.35
+    card:
+      kind: fact
+      big: 200,000
+      small: Refugees Saved
+- text: This ended three thousand years of Greek life while Smyrna burned.
+  emphasis:
+  - three thousand years
+  visual:
+    reuse: 1
+    motion: zoom_out
+    focus_x: 0.5
+    focus_y: 0.5
+depth_motion: true

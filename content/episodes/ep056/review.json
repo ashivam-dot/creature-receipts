@@ -1,0 +1,97 @@
+{
+  "rounds": [
+    {
+      "at": "2026-10-04T05:13:23+05:30",
+      "check": {
+        "duration": 30.1,
+        "words": 69,
+        "integrated_lufs": -14.3,
+        "true_peak_dbfs": -1.8,
+        "warnings": [],
+        "speech_differences": [],
+        "speech_error": null,
+        "sources": [
+          "Wikimedia Commons",
+          "designed card",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons"
+        ]
+      },
+      "scores": {
+        "hook": 4,
+        "clarity": 5,
+        "payoff": 5,
+        "visuals": 4,
+        "loop": 5
+      },
+      "notes": {
+        "hook": "A solid opening that challenges the viewer's assumption about a common object.",
+        "clarity": "The narrative flow from the event to the mechanical cause to the modern solution is perfect.",
+        "payoff": "Connecting a ubiquitous safety feature to a specific tragic toy rush is a powerful reveal.",
+        "visuals": "Excellent use of archival diagrams and engravings, though one modern frame is slightly generic.",
+        "loop": "The repetition of 'convenience' creates a perfectly seamless transition back to the start."
+      },
+      "frames": [
+        {
+          "beat": 5,
+          "problem": "Showing a peaceful modern park is off-topic and diminishes the gravity of the narration regarding the suffocating children."
+        }
+      ],
+      "speech": [],
+      "rewrite": [],
+      "better_than_last": "This episode effectively uses archival diagrams and engravings to make the specific mechanics of a historical tragedy easy to visualize.",
+      "judge": "gemini-3-flash-preview",
+      "passed": false
+    },
+    {
+      "at": "2026-10-04T05:14:53+05:30",
+      "check": {
+        "duration": 30.1,
+        "words": 69,
+        "integrated_lufs": -14.3,
+        "true_peak_dbfs": -1.8,
+        "warnings": [],
+        "speech_differences": [],
+        "speech_error": null,
+        "sources": [
+          "Wikimedia Commons",
+          "designed card",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons"
+        ]
+      },
+      "scores": {
+        "hook": 4,
+        "clarity": 5,
+        "payoff": 5,
+        "visuals": 4,
+        "loop": 5
+      },
+      "notes": {
+        "hook": "It is an interesting premise, though slightly less gripping than a mystery or direct threat.",
+        "clarity": "The sequence of events from the promise of toys to the design of the door is perfectly clear.",
+        "payoff": "Connecting a common modern safety feature to this specific, horrific tragedy is a powerful reveal.",
+        "visuals": "Most frames are excellent archival matches, but beat 5 is a generic park photo that lacks impact.",
+        "loop": "The final word 'convenience' flows perfectly back into the start of the first sentence."
+      },
+      "frames": [
+        {
+          "beat": 5,
+          "problem": "The image of modern trees in Mowbray Park is off-topic and fails to visualize the tragedy of the stairwell crush."
+        }
+      ],
+      "speech": [],
+      "rewrite": [],
+      "better_than_last": "The use of the original 1883 architectural diagram to explain the door's failure provides a level of technical evidence that makes the tragedy more visceral.",
+      "judge": "gemini-3-flash-preview",
+      "passed": false
+    }
+  ],
+  "best_round": 1
+}

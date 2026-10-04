@@ -1,0 +1,170 @@
+id: ep055
+title: Why Did the British Mint Medals for a Defeat? 🤯
+series: Warnings Ignored
+description: In 1741, Admiral Vernon was so certain of victory at Cartagena that London minted medals for it, only to face
+  a catastrophic disaster.
+sources:
+- https://en.wikipedia.org/wiki/Edward_Vernon
+- https://www.masshist.org/collection-guides/view/fao0018
+- https://en.wikipedia.org/wiki/Battle_of_Cartagena_de_Indias
+- https://webhispania.info/vernons-coins-the-english-victory-that-never-happened-at-cartagena-de-indias/
+- https://www.historic-uk.com/HistoryUK/HistoryofBritain/Battle-Of-Cartagena/
+hashtags:
+- '#history'
+- '#cartagena'
+- '#royalnavy'
+tags:
+- Battle of Cartagena de Indias
+- Admiral Vernon
+- Blas de Lezo
+- War of Jenkins Ear
+- British History
+- Naval Warfare
+voice:
+  engine: kokoro
+  voice: am_fenrir
+  speed: 1.15
+beats:
+- text: Admiral Vernon minted medals celebrating a victory that never happened.
+  emphasis:
+  - never happened
+  visual:
+    source: url
+    url: https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e1/Charles_Philips_%281708-1747%29_-_Admiral_Edward_%27Grog%27_Vernon_%281684%E2%80%931757%29_-_653149_-_National_Trust.jpg/960px-Charles_Philips_%281708-1747%29_-_Admiral_Edward_%27Grog%27_Vernon_%281684%E2%80%931757%29_-_653149_-_National_Trust.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
+    credit:
+      source: Wikimedia Commons
+      title: Charles Philips (1708-1747) - Admiral Edward 'Grog' Vernon (1684–1757) - 653149 - National Trust.jpg
+      credit: Charles Philips
+      license: Public domain
+      url: https://commons.wikimedia.org/wiki/File:Charles_Philips_(1708-1747)_-_Admiral_Edward_%27Grog%27_Vernon_(1684%E2%80%931757)_-_653149_-_National_Trust.jpg
+    fallbacks:
+    - card
+    - color
+    motion: zoom_out
+    focus_x: 0.45
+    focus_y: 0.18
+    card:
+      kind: fact
+      big: ADMIRAL VERNON
+      small: VICTORY MEDALS
+- text: In 1741, London minted coins showing the Spanish commander kneeling in surrender.
+  emphasis:
+  - kneeling
+  sfx: whoosh
+  visual:
+    source: url
+    url: https://upload.wikimedia.org/wikipedia/commons/e/e0/Medalla_Lezo_y_Vernon.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    credit:
+      source: Wikimedia Commons
+      title: Medalla Lezo y Vernon.jpg
+      credit: Avieso
+      license: Public domain
+      url: https://commons.wikimedia.org/wiki/File:Medalla_Lezo_y_Vernon.jpg
+    fallbacks:
+    - card
+    - color
+    motion: zoom_in
+    focus_x: 0.5
+    focus_y: 0.5
+    card:
+      kind: dateline
+      big: '1741'
+      small: LONDON, ENGLAND
+- text: But the defender, Blas de Lezo, outmaneuvered the massive British fleet.
+  emphasis:
+  - outmaneuvered
+  visual:
+    source: url
+    url: https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5b/Don_Blas_de_Lezo_-Museo_Naval-.jpg/1280px-Don_Blas_de_Lezo_-Museo_Naval-.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
+    credit:
+      source: Wikimedia Commons
+      title: Don Blas de Lezo -Museo Naval-.jpg
+      credit: Unidentified painter
+      license: Public domain
+      url: https://commons.wikimedia.org/wiki/File:Don_Blas_de_Lezo_-Museo_Naval-.jpg
+    fallbacks:
+    - color
+    motion: pan_down
+    focus_x: 0.47
+    focus_y: 0.22
+    box:
+    - 0.39
+    - 0.12
+    - 0.54
+    - 0.32
+- text: Night assault failed when scaling ladders were ten feet too short.
+  emphasis:
+  - ten feet too short
+  sfx: riser
+  pause_after: 0.4
+  visual:
+    source: url
+    url: https://upload.wikimedia.org/wikipedia/commons/9/9a/William_Gooch%27s_American_Marines_in_the_attack_on_Fort_San_Lazaro_at_Cartagena_in_1741.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    credit:
+      source: Wikimedia Commons
+      title: William Gooch's American Marines in the attack on Fort San Lazaro at Cartagena in 1741.jpg
+      credit: Arman Manookian
+      license: Public domain
+      url: https://commons.wikimedia.org/wiki/File:William_Gooch%27s_American_Marines_in_the_attack_on_Fort_San_Lazaro_at_Cartagena_in_1741.jpg
+    fallbacks:
+    - color
+    motion: pan_left
+    focus_x: 0.5
+    focus_y: 0.4
+    box:
+    - 0.2
+    - 0.2
+    - 0.7
+    - 0.6
+- text: Disease killed over 9,000 men during the sixty-seven-day siege.
+  emphasis:
+  - 9,000 men
+  sfx: whoosh
+  visual:
+    source: url
+    url: https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0e/Attack_of_the_English_at_Cartagena_de_Indias%2C_1741.png/960px-Attack_of_the_English_at_Cartagena_de_Indias%2C_1741.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
+    credit:
+      source: Wikimedia Commons
+      title: Attack of the English at Cartagena de Indias, 1741.png
+      credit: Josep Serra i Porsón
+      license: Public domain
+      url: https://commons.wikimedia.org/wiki/File:Attack_of_the_English_at_Cartagena_de_Indias,_1741.png
+    fallbacks:
+    - card
+    - color
+    motion: pan_down
+    focus_x: 0.5
+    focus_y: 0.5
+    card:
+      kind: fact
+      big: 9,000 DEAD
+      small: FROM DISEASE
+- text: The humiliation eventually collapsed the British government.
+  emphasis:
+  - collapsed
+  sfx: pop
+  pause_after: 0.4
+  visual:
+    source: url
+    url: https://thumb.wikimedia.org/wikipedia/commons/thumb/8/82/Retuched_Painting_of_Robert_Walpole.jpg/960px-Retuched_Painting_of_Robert_Walpole.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
+    credit:
+      source: Wikimedia Commons
+      title: Retuched Painting of Robert Walpole.jpg
+      credit: Jean-Baptiste van Loo
+      license: Public domain
+      url: https://commons.wikimedia.org/wiki/File:Retuched_Painting_of_Robert_Walpole.jpg
+    fallbacks:
+    - color
+    motion: pan_up
+    focus_x: 0.45
+    focus_y: 0.15
+- text: Those medals remained, celebrating a victory that never happened.
+  emphasis:
+  - never happened
+  visual:
+    reuse: 1
+    motion: zoom_in
+    focus_x: 0.45
+    focus_y: 0.18
+depth_motion: true
+hook_text: PREMATURE VICTORY COINS

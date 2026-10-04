@@ -1,0 +1,162 @@
+id: ep056
+title: How an 1883 Child Disaster Created Emergency Doors 🤯
+series: The Last Hours
+description: In 1883, a rush for free toys at Victoria Hall in Sunderland turned fatal when an inward-opening door was bolted
+  nearly shut. The tragedy killed 183 children and permanently changed emergency exit design worldwide.
+sources:
+- https://en.wikipedia.org/wiki/Victoria_Hall_disaster
+- https://www.smithsonianmag.com/smart-news/183-children-died-in-a-stampede-for-toys-in-1883-173637/
+- https://deadlycurious.com/articles/victoria-hall-disaster-1883/
+- https://www.bbc.co.uk/news/articles/cmjvzyxvp0po
+- https://wp.sunderland.ac.uk/seagullcity/victoria-hall-disaster/
+hashtags:
+- '#history'
+- '#victoriahall'
+- '#sunderland'
+tags:
+- victoria hall disaster
+- sunderland
+- push bar emergency doors
+- 1883 tragedy
+- disaster history
+- the last hours
+voice:
+  engine: kokoro
+  voice: am_fenrir
+  speed: 1.15
+beats:
+- text: Emergency push-bar doors were not designed for simple convenience.
+  emphasis:
+  - Emergency push-bar doors
+  - simple convenience
+  visual:
+    source: url
+    url: https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d2/Victoria_Hall_Memorial.png/1280px-Victoria_Hall_Memorial.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
+    credit:
+      source: Wikimedia Commons
+      title: Victoria Hall Memorial.png
+      credit: Barliner
+      license: CC BY 2.5
+      url: https://commons.wikimedia.org/wiki/File:Victoria_Hall_Memorial.png
+    fallbacks:
+    - color
+    motion: pan_down
+    focus_x: 0.5
+    focus_y: 0.45
+    box:
+    - 0.35
+    - 0.43
+    - 0.65
+    - 0.73
+- text: In 1883, over eleven hundred children packed Victoria Hall in Sunderland.
+  emphasis:
+  - '1883'
+  - Victoria Hall
+  sfx: whoosh
+  visual:
+    source: card
+    card:
+      kind: dateline
+      big: June 16, 1883
+      small: Victoria Hall, Sunderland
+    motion: zoom_in
+- text: Free toys were promised, triggering a rush down the stairs.
+  emphasis:
+  - Free toys
+  - rush
+  visual:
+    source: url
+    url: https://upload.wikimedia.org/wikipedia/commons/4/47/Victoria_Hall_crush.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    credit:
+      source: Wikimedia Commons
+      title: Victoria Hall crush.jpg
+      credit: G. Julien
+      license: Public domain
+      url: https://commons.wikimedia.org/wiki/File:Victoria_Hall_crush.jpg
+    fallbacks:
+    - color
+    motion: pan_right
+    focus_x: 0.6
+    focus_y: 0.5
+    box:
+    - 0.3
+    - 0.1
+    - 0.95
+    - 0.9
+- text: At the bottom, an inward door was bolted open one child wide.
+  emphasis:
+  - inward door
+  - one child wide
+  sfx: riser
+  visual:
+    source: url
+    url: https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3a/Plan_of_Victoria_Hall%2C_Sunderland.webp/1920px-Plan_of_Victoria_Hall%2C_Sunderland.webp?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
+    credit:
+      source: Wikimedia Commons
+      title: Plan of Victoria Hall, Sunderland.webp
+      credit: Unknown authorUnknown author
+      license: Public domain
+      url: https://commons.wikimedia.org/wiki/File:Plan_of_Victoria_Hall,_Sunderland.webp
+    fallbacks:
+    - color
+    motion: pan_up
+    focus_x: 0.5
+    focus_y: 0.75
+    box:
+    - 0.02
+    - 0.52
+    - 0.98
+    - 0.98
+- text: Trapped against it, 183 children suffocated in the stairs.
+  emphasis:
+  - 183 children
+  - suffocated
+  visual:
+    source: url
+    url: https://upload.wikimedia.org/wikipedia/commons/e/ed/Trees_in_Mowbary_Park_2_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    credit:
+      source: Wikimedia Commons
+      title: Trees in Mowbary Park 2 - panoramio.jpg
+      credit: somaliayaswan
+      license: CC BY 3.0
+      url: https://commons.wikimedia.org/wiki/File:Trees_in_Mowbary_Park_2_-_panoramio.jpg
+    fallbacks:
+    - card
+    - color
+    motion: pan_right
+    focus_x: 0.5
+    focus_y: 0.5
+    card:
+      kind: fact
+      big: 183 children
+      small: lives lost
+- text: The disaster forced new laws creating push-bar emergency exits.
+  emphasis:
+  - new laws
+  - push-bar emergency exits
+  sfx: whoosh
+  visual:
+    source: url
+    url: https://upload.wikimedia.org/wikipedia/commons/3/37/Emergency_Exit_Doors_%2849399118683%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    credit:
+      source: Wikimedia Commons
+      title: Emergency Exit Doors (49399118683).jpg
+      credit: Mike Mozart from Funny YouTube, USA
+      license: CC BY 2.0
+      url: https://commons.wikimedia.org/wiki/File:Emergency_Exit_Doors_(49399118683).jpg
+    fallbacks:
+    - color
+    motion: pan_left
+    focus_x: 0.5
+    focus_y: 0.5
+- text: Public safety doors were born from disaster, not convenience.
+  emphasis:
+  - born from disaster
+  - not convenience
+  visual:
+    reuse: 1
+    motion: zoom_out
+    focus_x: 0.5
+    focus_y: 0.45
+depth_motion: true
+hook_text: THE DOOR THAT CHANGED SAFETY

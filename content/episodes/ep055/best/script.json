@@ -1,0 +1,216 @@
+{
+  "hooks": [
+    {
+      "style": "statement",
+      "text": "Admiral Vernon minted medals celebrating a victory that never happened."
+    },
+    {
+      "style": "question",
+      "text": "Why did London celebrate a victory while its fleet was being destroyed?"
+    },
+    {
+      "style": "contradiction",
+      "text": "Admiral Vernon celebrated a triumph while his men were dying in disgrace."
+    }
+  ],
+  "hook_style": "statement",
+  "structure": "myth_vs_fact",
+  "title": "Why Did the British Mint Medals for a Defeat? 🤯",
+  "description": "In 1741, Admiral Vernon was so certain of victory at Cartagena that London minted medals for it, only to face a catastrophic disaster.",
+  "hashtags": [
+    "#history",
+    "#cartagena",
+    "#royalnavy"
+  ],
+  "tags": [
+    "Battle of Cartagena de Indias",
+    "Admiral Vernon",
+    "Blas de Lezo",
+    "War of Jenkins Ear",
+    "British History",
+    "Naval Warfare"
+  ],
+  "beats": [
+    {
+      "text": "Admiral Vernon minted medals celebrating a victory that never happened.",
+      "emphasis": [
+        "never happened"
+      ],
+      "sfx": "none",
+      "pause_after": 0.12,
+      "claims": [
+        5
+      ],
+      "visual": "oil painting portrait of Admiral Edward Vernon, 1740",
+      "subjects": [
+        "Edward Vernon"
+      ],
+      "year": 1741,
+      "queries": [
+        "Admiral Edward Vernon portrait",
+        "Edward Vernon Royal Navy oil painting"
+      ],
+      "card": {
+        "kind": "fact",
+        "big": "ADMIRAL VERNON",
+        "small": "VICTORY MEDALS"
+      }
+    },
+    {
+      "text": "In 1741, London minted coins showing the Spanish commander kneeling in surrender.",
+      "emphasis": [
+        "kneeling"
+      ],
+      "sfx": "whoosh",
+      "pause_after": 0.12,
+      "claims": [
+        6
+      ],
+      "visual": "1741 bronze medal showing Blas de Lezo kneeling before Vernon",
+      "subjects": [
+        "Battle of Cartagena de Indias"
+      ],
+      "year": 1741,
+      "queries": [
+        "Admiral Vernon Cartagena medal kneeling",
+        "The pride of Spain humiliated medal"
+      ],
+      "card": {
+        "kind": "dateline",
+        "big": "1741",
+        "small": "LONDON, ENGLAND"
+      }
+    },
+    {
+      "text": "But the defender, Blas de Lezo, outmaneuvered the massive British fleet.",
+      "emphasis": [
+        "outmaneuvered"
+      ],
+      "sfx": "none",
+      "pause_after": 0.12,
+      "claims": [
+        3,
+        8
+      ],
+      "visual": "portrait painting of Admiral Blas de Lezo, 18th century",
+      "subjects": [
+        "Blas de Lezo"
+      ],
+      "year": 1741,
+      "queries": [
+        "Blas de Lezo portrait",
+        "Admiral Blas de Lezo painting"
+      ],
+      "card": {
+        "kind": "none",
+        "big": "",
+        "small": ""
+      }
+    },
+    {
+      "text": "Night assault failed when scaling ladders were ten feet too short.",
+      "emphasis": [
+        "ten feet too short"
+      ],
+      "sfx": "riser",
+      "pause_after": 0.4,
+      "claims": [
+        7
+      ],
+      "visual": "engraving of the attack on Fort San Felipe de Barajas, 1741",
+      "subjects": [
+        "Castillo San Felipe de Barajas"
+      ],
+      "year": 1741,
+      "queries": [
+        "Castillo San Felipe de Barajas Cartagena",
+        "Fort San Lazaro Cartagena 1741"
+      ],
+      "card": {
+        "kind": "none",
+        "big": "",
+        "small": ""
+      }
+    },
+    {
+      "text": "Disease killed over 9,000 men during the sixty-seven-day siege.",
+      "emphasis": [
+        "9,000 men"
+      ],
+      "sfx": "whoosh",
+      "pause_after": 0.12,
+      "claims": [
+        10,
+        11
+      ],
+      "visual": "engraving of 18th century British ships in a tropical harbor",
+      "subjects": [
+        "Ship of the line"
+      ],
+      "year": 1741,
+      "queries": [
+        "British ship of the line 18th century engraving",
+        "18th century naval fleet Cartagena"
+      ],
+      "card": {
+        "kind": "fact",
+        "big": "9,000 DEAD",
+        "small": "FROM DISEASE"
+      }
+    },
+    {
+      "text": "The humiliation eventually collapsed the British government.",
+      "emphasis": [
+        "collapsed"
+      ],
+      "sfx": "pop",
+      "pause_after": 0.4,
+      "claims": [
+        13
+      ],
+      "visual": "portrait of Prime Minister Robert Walpole, oil painting",
+      "subjects": [
+        "Robert Walpole"
+      ],
+      "year": 1742,
+      "queries": [
+        "Robert Walpole portrait",
+        "Prime Minister Robert Walpole painting"
+      ],
+      "card": {
+        "kind": "none",
+        "big": "",
+        "small": ""
+      }
+    },
+    {
+      "text": "Those medals remained, celebrating a victory that never happened.",
+      "emphasis": [
+        "never happened"
+      ],
+      "sfx": "none",
+      "pause_after": 0.12,
+      "claims": [
+        5,
+        6
+      ],
+      "visual": "close up of the reverse of the 1741 Vernon medal",
+      "subjects": [
+        "Battle of Cartagena de Indias"
+      ],
+      "year": 1741,
+      "queries": [
+        "Admiral Vernon Cartagena medal",
+        "victory medal 1741 collection"
+      ],
+      "card": {
+        "kind": "none",
+        "big": "",
+        "small": ""
+      }
+    }
+  ],
+  "hook_text": "PREMATURE VICTORY COINS",
+  "loop": true,
+  "better_than_last": "This script uses the myth_vs_fact structure to build tension before revealing the technical failure of the scaling ladders."
+}

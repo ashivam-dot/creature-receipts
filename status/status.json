@@ -1,34 +1,28 @@
 {
-  "updated_at": "2026-10-04T05:05:24+05:30",
+  "updated_at": "2026-10-04T06:12:20+05:30",
   "day": 3,
   "result": "ok",
   "run": {
-    "host": "modal",
-    "id": "ta-01M421XXRCKKKBM1899F1DQ5FR",
-    "number": null,
-    "trigger": "schedule",
-    "started_at": "2026-10-04T05:05:05+05:30",
-    "started_at_utc": "2026-10-03T23:35:05+00:00",
-    "seconds": 20
+    "host": "github-actions",
+    "id": "37165712575",
+    "number": "20",
+    "trigger": "workflow_dispatch",
+    "started_at": "2026-10-04T06:12:05+05:30",
+    "started_at_utc": "2026-10-04T00:42:05+00:00",
+    "seconds": 14
   },
   "stages": [
-    {
-      "name": "deploy",
-      "ok": true,
-      "detail": "",
-      "seconds": 1.9
-    },
     {
       "name": "sync",
       "ok": true,
       "detail": "5 posts",
-      "seconds": 0.9
+      "seconds": 1.1
     },
     {
       "name": "playlists",
       "ok": true,
-      "detail": "added ep054 to 'The Last Hours'",
-      "seconds": 1.1
+      "detail": "nothing new",
+      "seconds": 0.5
     },
     {
       "name": "languages",
@@ -40,7 +34,7 @@
       "name": "on youtube",
       "ok": true,
       "detail": "every Short sent is public",
-      "seconds": 0.0
+      "seconds": 0.1
     },
     {
       "name": "short reviews",
@@ -51,70 +45,28 @@
     {
       "name": "collect",
       "ok": true,
-      "detail": "ep050 ready; ep051 ready; ep052 rejected (low scores: visuals); ep053 ready",
-      "seconds": 8.3
-    },
-    {
-      "name": "buffer channel",
-      "ok": true,
-      "detail": "connected",
-      "seconds": 0.1
-    },
-    {
-      "name": "publish",
-      "ok": true,
-      "detail": "",
-      "seconds": 0.0
-    },
-    {
-      "name": "start ep055",
-      "ok": true,
-      "detail": "Battle of Cartagena de Indias (1741): Admiral Vernon was so certain of victory he minted medals celebrating the win while his fleet was being destroyed",
-      "seconds": 0.5
-    },
-    {
-      "name": "start ep056",
-      "ok": true,
-      "detail": "Victoria Hall disaster (1883): hundreds of children rushed for free toys through a door that opened inward, trapping them as the crush grew",
-      "seconds": 0.5
-    },
-    {
-      "name": "start ep057",
-      "ok": true,
-      "detail": "Saint-Michel-de-Maurienne derailment (1917): a commander forced a driver at gunpoint to overload a train with 1,000 soldiers, causing it to lose its brakes on a mountain",
-      "seconds": 0.4
-    },
-    {
-      "name": "start ep058",
-      "ok": true,
-      "detail": "Burning of Smyrna (1922): a cosmopolitan Mediterranean haven went up in flames days after foreign armies retreated, trapping refugees on the quay",
-      "seconds": 0.5
-    },
-    {
-      "name": "publish",
-      "ok": true,
-      "detail": "",
-      "seconds": 0.0
+      "detail": "ep055 unfinished (OutOfQuota: no model in ('gemini-3.8-flash', 'gemini-3.7-flash', 'gemini-3.6-flash', 'gemini-3.5-flash', 'gemini-3-flash-preview', 'gemini-flash-latest', 'ovh:Qwen3.5-397B-A17B') has free quota left today); ep056 unfinished (Overloaded: every model in ('gemini-3.8-flash', 'gemini-3.7-flash', 'gemini-3.6-flash', 'gemini-3.5-flash', 'gemini-3-flash-preview', 'gemini-flash-latest', 'ovh:Qwen3.5-397B-A17B') with quota left stayed overloaded for 25 minutes); ep057 unfinished (OutOfQuota: no model in ('gemini-3.8-flash', 'gemini-3.7-flash', 'gemini-3.6-flash', 'gemini-3.5-flash', '",
+      "seconds": 12.0
     }
   ],
   "errors": [],
   "owner_action": [],
   "notes": [
-    "new scheduling on editorial hold; production continues",
-    "new scheduling on editorial hold; production continues"
+    "ep055 stopped on Gemini's free quota; it resumes in a later run",
+    "ep056 stopped on Gemini's free tier being overloaded; it resumes in a later run",
+    "ep057 stopped on Gemini's free quota; it resumes in a later run",
+    "ep058 stopped on Gemini's free tier being overloaded; it resumes in a later run"
   ],
   "inventory": {
     "total": 3,
     "in_buffer": 0,
     "waiting": 3,
     "target": 14,
-    "making": [],
-    "remote": [
+    "making": [
       "ep055",
-      "ep056",
-      "ep057",
       "ep058"
-    ]
+    ],
+    "remote": []
   },
   "queue": [],
   "waiting": [
@@ -139,98 +91,40 @@
   ],
   "made": [
     {
-      "id": "ep050",
-      "outcome": "ready",
-      "topic": "Great Fire of 1910 (1910): hurricane-force winds turned a scattering of forest fires into a single monster that swallowed towns in minutes",
-      "title": "Why Did a 1910 Idaho Ranger Draw His Gun? ⚠️",
-      "scores": {
-        "hook": 5,
-        "clarity": 5,
-        "payoff": 5,
-        "visuals": 5,
-        "loop": 5
-      },
-      "media_url": "https://res.cloudinary.com/uj4a07e7/video/upload/v1791028097/creaturereceipts/ep050-3007d0ae.mp4"
-    },
-    {
-      "id": "ep051",
-      "outcome": "ready",
-      "topic": "Operation Market Garden (1944): commanders dismissed aerial reconnaissance photos showing German panzers waiting at Arnhem, ordering the intelligence officer who raised the alarm on sudden medical leave",
-      "title": "Why Did Allies Ignore Arnhem's Panzer Warnings? ⚠️",
-      "scores": {
-        "hook": 5,
-        "clarity": 5,
-        "payoff": 5,
-        "visuals": 5,
-        "loop": 5
-      },
-      "media_url": "https://res.cloudinary.com/uj4a07e7/video/upload/v1791028318/creaturereceipts/ep051-eb05d869.mp4"
-    },
-    {
-      "id": "ep052",
-      "outcome": "rejected",
-      "topic": "Port Chicago disaster (1944): untested munitions were loaded by untrained men in a race against time, causing the largest US home-front disaster of WWII",
-      "reason": "low scores: visuals"
-    },
-    {
-      "id": "ep053",
-      "outcome": "ready",
-      "topic": "Fetterman Fight (1866): a cocky commander vowed to ride through the entire Sioux nation with eighty men, and none returned",
-      "title": "Why Did 80 Soldiers Vanish at the Fetterman Fight? 🤯",
-      "scores": {
-        "hook": 5,
-        "clarity": 5,
-        "payoff": 4,
-        "visuals": 5,
-        "loop": 5
-      },
-      "media_url": "https://res.cloudinary.com/uj4a07e7/video/upload/v1791028340/creaturereceipts/ep053-ad13ee0a.mp4"
-    }
-  ],
-  "spawned": [
-    {
       "id": "ep055",
+      "outcome": "unfinished",
       "topic": "Battle of Cartagena de Indias (1741): Admiral Vernon was so certain of victory he minted medals celebrating the win while his fleet was being destroyed",
-      "call_id": "fc-01M421YKX9ETD5VARE25J6YZEQ"
+      "reason": "OutOfQuota: no model in ('gemini-3.8-flash', 'gemini-3.7-flash', 'gemini-3.6-flash', 'gemini-3.5-flash', 'gemini-3-flash-preview', 'gemini-flash-latest', 'ovh:Qwen3.5-397B-A17B') has free quota left today",
+      "quota": true,
+      "overloaded": false
     },
     {
       "id": "ep056",
+      "outcome": "unfinished",
       "topic": "Victoria Hall disaster (1883): hundreds of children rushed for free toys through a door that opened inward, trapping them as the crush grew",
-      "call_id": "fc-01M421YMBB6TX7XX7GYR07TEGB"
+      "reason": "Overloaded: every model in ('gemini-3.8-flash', 'gemini-3.7-flash', 'gemini-3.6-flash', 'gemini-3.5-flash', 'gemini-3-flash-preview', 'gemini-flash-latest', 'ovh:Qwen3.5-397B-A17B') with quota left stayed overloaded for 25 minutes",
+      "quota": false,
+      "overloaded": true
     },
     {
       "id": "ep057",
+      "outcome": "unfinished",
       "topic": "Saint-Michel-de-Maurienne derailment (1917): a commander forced a driver at gunpoint to overload a train with 1,000 soldiers, causing it to lose its brakes on a mountain",
-      "call_id": "fc-01M421YMRNZN36M4QBNVRAEQZ3"
+      "reason": "OutOfQuota: no model in ('gemini-3.8-flash', 'gemini-3.7-flash', 'gemini-3.6-flash', 'gemini-3.5-flash', 'gemini-3-flash-preview', 'gemini-flash-latest', 'ovh:Qwen3.5-397B-A17B') has free quota left today",
+      "quota": true,
+      "overloaded": false
     },
     {
       "id": "ep058",
+      "outcome": "unfinished",
       "topic": "Burning of Smyrna (1922): a cosmopolitan Mediterranean haven went up in flames days after foreign armies retreated, trapping refugees on the quay",
-      "call_id": "fc-01M421YN71MB4WKPCFF0SXK258"
+      "reason": "Overloaded: every model in ('gemini-3.8-flash', 'gemini-3.7-flash', 'gemini-3.6-flash', 'gemini-3.5-flash', 'gemini-3-flash-preview', 'gemini-flash-latest', 'ovh:Qwen3.5-397B-A17B') with quota left stayed overloaded for 25 minutes",
+      "quota": false,
+      "overloaded": true
     }
   ],
-  "in_cloud": [
-    {
-      "id": "ep055",
-      "topic": "Battle of Cartagena de Indias (1741): Admiral Vernon was so certain of victory he minted medals celebrating the win while his fleet was being destroyed",
-      "spawned_at": "2026-10-04T05:05:23+05:30"
-    },
-    {
-      "id": "ep056",
-      "topic": "Victoria Hall disaster (1883): hundreds of children rushed for free toys through a door that opened inward, trapping them as the crush grew",
-      "spawned_at": "2026-10-04T05:05:23+05:30"
-    },
-    {
-      "id": "ep057",
-      "topic": "Saint-Michel-de-Maurienne derailment (1917): a commander forced a driver at gunpoint to overload a train with 1,000 soldiers, causing it to lose its brakes on a mountain",
-      "spawned_at": "2026-10-04T05:05:24+05:30"
-    },
-    {
-      "id": "ep058",
-      "topic": "Burning of Smyrna (1922): a cosmopolitan Mediterranean haven went up in flames days after foreign armies retreated, trapping refugees on the quay",
-      "spawned_at": "2026-10-04T05:05:24+05:30"
-    }
-  ],
+  "spawned": [],
+  "in_cloud": [],
   "published": [],
   "live": 1,
   "failed_posts": [],
@@ -238,13 +132,11 @@
   "llm": {
     "calls": 24,
     "by_model": {
+      "gemini-3-flash-preview": 11,
+      "gemini-3.5-flash-lite": 7,
       "gemini-3.8-flash": 2,
-      "gemini-3.5-flash": 10,
-      "gemini-3.5-flash-lite": 4,
       "gemini-3.6-flash": 2,
-      "gemini-flash-latest": 1,
-      "gemini-3.7-flash": 1,
-      "gemini-3-flash-preview": 4
+      "gemini-3.5-flash": 2
     },
     "out_of_quota": []
   },
@@ -253,19 +145,14 @@
     "runner": 0
   },
   "daily_done": "2026-10-03",
-  "minutes_this_month": 2.0,
-  "minutes_budget": 2000,
+  "minutes_this_month": 4.240658893833334,
+  "minutes_budget": null,
   "modal_cost": {
-    "metered": 4.69,
+    "metered": 4.99,
     "billed": 0.0
   },
   "modal_credit": 30.0,
-  "capacity": {
-    "cloud": 194,
-    "runner": 0,
-    "runner_minutes": 0,
-    "modal_credit_left": 23.31
-  },
+  "capacity": null,
   "made_here": 0,
   "open_topics": 121,
   "parked_topics": 16

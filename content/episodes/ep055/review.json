@@ -1,0 +1,54 @@
+{
+  "rounds": [
+    {
+      "at": "2026-10-04T05:12:38+05:30",
+      "check": {
+        "duration": 31.23,
+        "words": 69,
+        "integrated_lufs": -14.3,
+        "true_peak_dbfs": -1.8,
+        "warnings": [],
+        "speech_differences": [
+          "'lezo' heard as 'lizzo' after 'defender blas de'"
+        ],
+        "speech_error": null,
+        "sources": [
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons"
+        ]
+      },
+      "scores": {
+        "hook": 5,
+        "clarity": 5,
+        "payoff": 5,
+        "visuals": 5,
+        "loop": 5
+      },
+      "notes": {
+        "hook": "The historical irony of minting medals for a victory that never happened is a compelling hook.",
+        "clarity": "The sequence from the hubris of the medals to the specific details of the defeat is easy to follow.",
+        "payoff": "The devastating reality of 9,000 deaths contrasted with the celebratory coins provides a strong payoff.",
+        "visuals": "All frames are historically accurate and clearly depict the people and events mentioned.",
+        "loop": "Ending and beginning with the same phrase creates a smooth and satisfying narrative circle."
+      },
+      "frames": [],
+      "speech": [
+        {
+          "beat": 3,
+          "word": "Lezo",
+          "respelling": "lay zo"
+        }
+      ],
+      "rewrite": [],
+      "better_than_last": "This short improves on the payoff of episode 53 by creating a more poignant contrast between British hubris and the actual tragedy.",
+      "judge": "gemini-3-flash-preview",
+      "passed": false
+    }
+  ],
+  "best_round": 1
+}
