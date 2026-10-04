@@ -1,8 +1,8 @@
 {
   "viable": true,
-  "reason": "The sources provide 14 overlapping, high-confidence historical claims about the structural defects and ignored warnings leading to the Quebec Bridge disaster.",
-  "story": "In 1907, the ambitious Quebec Bridge was set to become the world's longest cantilever span. But behind the scenes, a fatal error was mounting. Designing engineer Peter Szlapka underestimated the bridge's dead weight, and consulting engineer Theodore Cooper approved the flawed plans without verifying the calculations. As construction progressed, the lower chords began to buckle under the immense weight. By August 27, 1907, inspectors measured a significant bend in the lower chord. Although workers and on-site engineers grew deeply alarmed, headquarters dismissed the danger, believing the bends had always been there. On August 29, Cooper finally realized the crisis and sent a telegram to halt work, but it was too late. At 5:30 PM, the bridge collapsed into the St. Lawrence River. A royal commission later ruled that while the structural collapse could not have been prevented after August 27, the tragic loss of human lives could have been entirely avoided with better judgment.",
-  "angle": "The most shocking aspect of the tragedy is that while engineers measured the structural failure occurring in the lower chords days before the collapse, they failed to evacuate the site, sending a warning telegram that arrived too late to save the workers.",
+  "reason": "The Royal Commission report and a separately written engineering history support the retained claims; see the linked scan for exact finding (j) wording.",
+  "story": "On August 27, 1907, the bend in lower chord 9-L of the unfinished Quebec Bridge was found to have greatly increased. Bridge staff measured deflections and discussed their danger. On August 29, the bridge collapsed over the St. Lawrence River. The Royal Commission found that defective lower-chord design caused the collapse. It did not believe action after August 27 could have prevented the fall, but said better judgment by those responsible might have prevented the loss of life.",
+  "angle": "The inquiry distinguished the doomed structure from the lives that might have been saved; show the reported warning, the collapse, and the commission’s conditional finding without inventing a stop-order counterfactual.",
   "claims": [
     {
       "claim": "The Quebec Bridge collapse resulted from the failure of the lower chords in the anchor arm near the main pier.",
@@ -131,7 +131,7 @@
       "confidence": "high"
     },
     {
-      "claim": "The collapse of the bridge could not have been prevented by any action taken after August 27, 1907.",
+      "claim": "The Royal Commission did not believe any action after August 27, 1907, could have prevented the fall of the bridge.",
       "sources": [
         "S1",
         "S2"
@@ -198,6 +198,96 @@
         {
           "source": "S2",
           "quote": "confidence that was placed in his judgment"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim": "On August 27, 1907, the bend in lower chord 9-L was found to have greatly increased.",
+      "sources": [
+        "S1",
+        "S2"
+      ],
+      "evidence": [
+        {
+          "source": "S1",
+          "quote": "The bend in chord 9-L anchor arm was discovered about 9.30 a.m., August 27, to have greatly increased"
+        },
+        {
+          "source": "S2",
+          "quote": "Between August 7 and August 27, 1907, there were many letters, telegrams, and telephone calls between McLure, Cooper, Szlapka, and Deans regarding the increased bending of the web plates of the lower chord."
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim": "Bridge staff measured the deflection of the suspicious lower chords.",
+      "sources": [
+        "S1",
+        "S2"
+      ],
+      "evidence": [
+        {
+          "source": "S1",
+          "quote": "This measurement, which was made by Birks, McLure and myself, showed the extent of the deflections"
+        },
+        {
+          "source": "S2",
+          "quote": "Only a little over a week ago, I measured one rib of the 9-L chord of the anchor arm here shown, and it was only ¾ inch out of line. Now it is 2¼ inches."
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim": "The unfinished Quebec Bridge collapsed over the St. Lawrence River on August 29, 1907.",
+      "sources": [
+        "S1",
+        "S2"
+      ],
+      "evidence": [
+        {
+          "source": "S1",
+          "quote": "in the course of construction over the St. Lawrence Eiver, near the City of Quebec, in the Province of Quebec, on the 29th August, 1907"
+        },
+        {
+          "source": "S2",
+          "quote": "At that time, the bridge collapsed into the St. Lawrence River, killing 75 men."
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim": "The Royal Commission said the loss of life on August 29, 1907, might have been prevented by better judgment by those in charge.",
+      "sources": [
+        "S1",
+        "S2"
+      ],
+      "evidence": [
+        {
+          "source": "S1",
+          "quote": "The lose of life on August 29, 1907, might have been prevented"
+        },
+        {
+          "source": "S2",
+          "quote": "The loss of life on August 29, 1907, might have been prevented by the exercise of better judgment"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim": "Some workers considered the bending critical, while Superintendent Birks believed there was no danger and that the bend had always been present.",
+      "sources": [
+        "S1",
+        "S2"
+      ],
+      "evidence": [
+        {
+          "source": "S1",
+          "quote": "Mr. Birks expressed himself definitely as being of opinion that there was no danger, and endeavoured to persuade me that the bend had always been in the chord. Mr. Yenser and I were uneasy"
+        },
+        {
+          "source": "S2",
+          "quote": "Some of the Phoenix Bridge men on the job, including Yenser, the foreman, believed the situation was critical. Birks, the Superintendent, continued to believe the bend was in the member from the beginning."
         }
       ],
       "confidence": "high"
@@ -283,7 +373,8 @@
       "label": "S1",
       "url": "https://archive.org/download/reportandplansa01schngoog/reportandplansa01schngoog_djvu.txt",
       "title": "reportandplansa01schngoog_djvu.txt",
-      "site": "archive.org"
+      "site": "archive.org",
+      "scan_url": "https://archive.org/download/reportandplansa01schngoog/reportandplansa01schngoog.pdf#page=16"
     },
     {
       "label": "S2",

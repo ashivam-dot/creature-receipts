@@ -1,114 +1,118 @@
 id: ep065
-title: Why Did Engineers Ignore This Bending Steel? ⚠️
+title: Could Quebec Bridge Workers Have Been Saved? ⚠️
 series: Warnings Ignored
-description: In 1907, inspectors on the Quebec Bridge measured a bending steel chord days before its collapse, but work continued
-  until the disaster struck.
+description: Quebec Bridge staff measured a growing bend before the 1907 collapse. The Royal Commission did not believe the
+  bridge could be saved after August 27, but said better judgment might have prevented the loss of life.
 sources:
 - https://archive.org/download/reportandplansa01schngoog/reportandplansa01schngoog_djvu.txt
 - https://www.structuremag.org/article/quebec-bridge-the-first-failure-1907/
 hashtags:
 - '#history'
 - '#quebecbridge'
-- '#disaster'
+- '#engineeringhistory'
 tags:
-- quebec bridge
-- bridge collapse
-- engineering disaster
-- theodore cooper
-- peter szlapka
-- '1907'
+- Quebec Bridge
+- 1907 bridge collapse
+- Royal Commission
+- lower chord
+- engineering failure
+- St. Lawrence River
 voice:
   engine: kokoro
   voice: am_fenrir
   speed: 1.15
 beats:
-- text: In 1907, inspectors measured a bending steel chord on the Quebec Bridge.
+- text: Quebec Bridge staff measured a growing bend. Two days later, it fell.
   emphasis:
-  - bending steel chord
-  - Quebec Bridge
+  - growing bend
+  - Two days later
   visual:
-    source: url
-    url: https://upload.wikimedia.org/wikipedia/commons/2/27/Quebec_bridge_%28HS85-10-18815%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source: file
+    path: art/construction-anchor.jpg
     credit:
       source: Wikimedia Commons
-      title: Quebec bridge (HS85-10-18815).jpg
+      title: File:Quebec bridge (HS85-10-18815).jpg
       credit: F. E. Cudworth
       license: Public domain
       url: https://commons.wikimedia.org/wiki/File:Quebec_bridge_(HS85-10-18815).jpg
-    fallbacks:
-    - card
-    - color
+    fallbacks: []
     motion: pan_right
-    focus_x: 0.5
-    focus_y: 0.4
-    card:
-      kind: dateline
-      big: August 1907
-      small: Quebec Bridge
-- text: Designing engineer Peter Szlapka drafted the lower chords with a defective design.
+- text: On August 27, chord 9-L’s bend had grown.
   emphasis:
-  - Peter Szlapka
-  - defective design
-  sfx: whoosh
+  - August 27
   visual:
-    reuse: 1
+    source: file
+    path: art/lower-chord-schematic.png
+    credit:
+      source: Royal Commission report / authored graphic
+      title: authored approximate structural schematic from report finding (a) and printed page 86
+      credit: Royal Commission on the Quebec Bridge; editorial graphic
+      license: Public domain (1908 Royal Commission report); authored overlay
+      url: https://archive.org/download/reportandplansa01schngoog/reportandplansa01schngoog.pdf#page=93
+    fallbacks: []
     motion: zoom_in
-    focus_x: 0.5
-    focus_y: 0.4
-- text: Consulting engineer Theodore Cooper officially approved these flawed plans.
+- text: Some called it critical. The superintendent disagreed.
   emphasis:
-  - Theodore Cooper
-  - officially approved
+  - critical
   visual:
-    source: card
-    card:
-      kind: fact
-      big: Theodore Cooper
-      small: ''
-    motion: zoom_in
-- text: Officials placed complete confidence in Cooper's judgment.
+    source: file
+    path: art/construction-span.jpg
+    credit:
+      source: Wikimedia Commons
+      title: File:Quebec bridge view No 48 (HS85-10-18817).jpg
+      credit: F. E. Cudworth
+      license: Public domain
+      url: https://commons.wikimedia.org/wiki/File:Quebec_bridge_view_No_48_(HS85-10-18817).jpg
+    fallbacks: []
+    motion: pan_left
+- text: On August 29, the unfinished bridge collapsed.
   emphasis:
-  - complete confidence
+  - collapsed
   visual:
-    source: card
-    card:
-      kind: fact
-      big: complete confidence
-      small: ''
-    motion: zoom_in
-- text: But contemporary professional knowledge of steel columns under load was inadequate.
+    source: file
+    path: art/collapse-1907.jpg
+    credit:
+      source: Wikimedia Commons
+      title: File:Pont de Quebec 1907.jpg
+      credit: Neurdein
+      license: Public domain
+      url: https://commons.wikimedia.org/wiki/File:Pont_de_Quebec_1907.jpg
+    fallbacks: []
+    motion: none
+- text: A royal commission found the failed lower chords were defectively designed.
   emphasis:
-  - knowledge
-  - inadequate
-  sfx: riser
+  - defectively designed
   visual:
-    source: card
-    card:
-      kind: fact
-      big: knowledge
-      small: ''
-    motion: zoom_in
-- text: By August 27, no action could prevent the structural collapse.
+    source: file
+    path: art/report-design.png
+    credit:
+      source: Royal Commission report / authored graphic
+      title: authored graphic with facsimile crop of report printed page 9 finding (a)
+      credit: Royal Commission on the Quebec Bridge; editorial graphic
+      license: Public domain (1908 Royal Commission report); authored overlay
+      url: https://archive.org/download/reportandplansa01schngoog/reportandplansa01schngoog.pdf#page=16
+    fallbacks: []
+    motion: none
+- text: It did not believe the bridge could be saved after August 27.
   emphasis:
-  - no action
-  - structural collapse
-  sfx: whoosh
+  - could be saved
   visual:
-    source: card
-    card:
-      kind: dateline
-      big: August 27, 1907
-      small: Quebec Bridge
-    motion: zoom_in
-- text: Yet better judgment could have saved human lives on the site.
+    source: file
+    path: art/report-judgment.png
+    credit:
+      source: Royal Commission report / authored graphic
+      title: authored graphic with facsimile crop of report printed page 9 findings (i) and (j)
+      credit: Royal Commission on the Quebec Bridge; editorial graphic
+      license: Public domain (1908 Royal Commission report); authored overlay
+      url: https://archive.org/download/reportandplansa01schngoog/reportandplansa01schngoog.pdf#page=16
+    fallbacks: []
+    motion: none
+- text: But better judgment, it said, might have prevented the loss of life.
   emphasis:
-  - better judgment
-  - human lives
-  sfx: pop
-  pause_after: 0.4
+  - might have prevented
+  pause_after: 0.35
   visual:
     reuse: 1
     motion: zoom_out
-    focus_x: 0.5
-    focus_y: 0.4
 depth_motion: true
+hook_text: 1907 UNDER CONSTRUCTION

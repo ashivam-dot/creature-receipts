@@ -392,6 +392,29 @@ def reject(folder: Path, reason: str) -> Path:
     return target
 
 
+def _visual_plan_problem(visuals: list[dict]) -> str | None:
+    """Stop an art-poor plan before paying to render a Short it cannot pass."""
+    cards = [n for n, visual in enumerate(visuals, 1) if visual.get("source") == "card"]
+    if 1 in cards:
+        return "the hook has a title card"
+    if len(cards) > 2:
+        return f"{len(cards)} title cards exceed the two-card limit"
+    original_art = sum(bool(visual.get("source") and visual.get("source") not in {"card", "color"}
+                            and not visual.get("reuse")) for visual in visuals)
+    minimum = 3 if len(visuals) >= 6 else 2 if len(visuals) >= 4 else 1
+    if original_art < minimum:
+        return f"only {original_art} original art beats; {minimum} are needed for {len(visuals)} beats"
+    return None
+
+
+def _reject_visual_plan(folder: Path, meta: dict, visuals: list[dict]) -> dict | None:
+    if problem := _visual_plan_problem(visuals):
+        reason = f"visual plan: {problem}"
+        reject(folder, reason)
+        return {"id": folder.name, "outcome": "rejected", "topic": meta["topic"], "reason": reason}
+    return None
+
+
 def produce(topic: str, series: str, episode_id: str | None = None, *, at: str | None = None) -> dict:
     """Make one Short (or finish a half-made one) and host it. Returns what happened, for the run's status."""
     from .check import DURATION, check
@@ -439,6 +462,8 @@ def produce(topic: str, series: str, episode_id: str | None = None, *, at: str |
     if visuals is None:
         visuals = pick.pick(script, research, episode_id)
         _write(folder / "visuals.json", visuals)
+    if blocked := _reject_visual_plan(folder, meta, visuals):
+        return blocked
 
     notes = _read(folder / "review.json") or {"rounds": []}
     spec_path = _save_spec(folder, spec_from(script, visuals, research, episode_id))
@@ -521,6 +546,8 @@ def produce(topic: str, series: str, episode_id: str | None = None, *, at: str |
                 return _hold_speech_review(folder, meta, media_sha256, result, len(notes["rounds"]))
         _write(folder / "script.json", script)
         _write(folder / "visuals.json", visuals)
+        if blocked := _reject_visual_plan(folder, meta, visuals):
+            return blocked
         spec_path = _save_spec(folder, spec_from(script, visuals, research, episode_id))
 
     shutil.rmtree(folder / BEST, ignore_errors=True)

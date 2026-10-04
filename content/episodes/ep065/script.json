@@ -2,80 +2,79 @@
   "hooks": [
     {
       "style": "statement",
-      "text": "In 1907, inspectors measured a bending steel chord on the Quebec Bridge."
+      "text": "Quebec Bridge staff measured a growing bend. Two days later, it fell."
     },
     {
       "style": "question",
-      "text": "Why did engineers ignore the bending steel on a massive bridge?"
+      "text": "What did a growing bend mean for the Quebec Bridge?"
     },
     {
       "style": "contradiction",
-      "text": "A giant bridge was built even as its steel chords bent."
+      "text": "The commission doubted the bridge could be saved. Lives might have been."
     }
   ],
   "hook_style": "statement",
-  "structure": "story",
-  "title": "Why Did Engineers Ignore This Bending Steel? ⚠️",
-  "description": "In 1907, inspectors on the Quebec Bridge measured a bending steel chord days before its collapse, but work continued until the disaster struck.",
+  "structure": "warning",
+  "title": "Could Quebec Bridge Workers Have Been Saved? ⚠️",
+  "description": "Quebec Bridge staff measured a growing bend before the 1907 collapse. The Royal Commission did not believe the bridge could be saved after August 27, but said better judgment might have prevented the loss of life.",
   "hashtags": [
     "#history",
     "#quebecbridge",
-    "#disaster"
+    "#engineeringhistory"
   ],
   "tags": [
-    "quebec bridge",
-    "bridge collapse",
-    "engineering disaster",
-    "theodore cooper",
-    "peter szlapka",
-    "1907"
+    "Quebec Bridge",
+    "1907 bridge collapse",
+    "Royal Commission",
+    "lower chord",
+    "engineering failure",
+    "St. Lawrence River"
   ],
   "beats": [
     {
-      "text": "In 1907, inspectors measured a bending steel chord on the Quebec Bridge.",
+      "text": "Quebec Bridge staff measured a growing bend. Two days later, it fell.",
       "emphasis": [
-        "bending steel chord",
-        "Quebec Bridge"
+        "growing bend",
+        "Two days later"
       ],
       "sfx": "none",
       "pause_after": 0.12,
       "claims": [
-        1,
-        8
+        12,
+        13,
+        14
       ],
-      "visual": "photograph of the Quebec Bridge under construction, 1907",
+      "visual": "Quebec Bridge construction photograph, 1907",
       "subjects": [
         "Quebec Bridge"
       ],
       "year": 1907,
       "queries": [
-        "Quebec Bridge construction 1907",
-        "Quebec Bridge 1907"
+        "Quebec Bridge 1907",
+        "Quebec Bridge"
       ],
       "card": {
-        "kind": "dateline",
-        "big": "August 1907",
-        "small": "Quebec Bridge"
+        "kind": "none",
+        "big": "",
+        "small": ""
       }
     },
     {
-      "text": "Designing engineer Peter Szlapka drafted the lower chords with a defective design.",
+      "text": "On August 27, chord 9-L’s bend had grown.",
       "emphasis": [
-        "Peter Szlapka",
-        "defective design"
+        "August 27"
       ],
-      "sfx": "whoosh",
+      "sfx": "none",
       "pause_after": 0.12,
       "claims": [
-        2,
-        3
+        12
       ],
-      "visual": "portrait of designing engineer Peter Szlapka",
+      "visual": "approximate south anchor arm lower chord location in Quebec Bridge, schematic",
       "subjects": [],
       "year": 1907,
       "queries": [
-        "Peter Szlapka",
-        "Quebec Bridge design drawing"
+        "Quebec Bridge 1907",
+        "approximate south anchor arm lower chord location in Quebec Bridge, schematic"
       ],
       "card": {
         "kind": "none",
@@ -84,49 +83,23 @@
       }
     },
     {
-      "text": "Consulting engineer Theodore Cooper officially approved these flawed plans.",
+      "text": "Some called it critical. The superintendent disagreed.",
       "emphasis": [
-        "Theodore Cooper",
-        "officially approved"
+        "critical"
       ],
       "sfx": "none",
       "pause_after": 0.12,
       "claims": [
-        4
+        16
       ],
-      "visual": "portrait of consulting engineer Theodore Cooper",
-      "subjects": [
-        "Theodore Cooper"
-      ],
-      "year": 1907,
-      "queries": [
-        "Theodore Cooper engineer",
-        "Theodore Cooper portrait"
-      ],
-      "card": {
-        "kind": "none",
-        "big": "",
-        "small": ""
-      }
-    },
-    {
-      "text": "Officials placed complete confidence in Cooper's judgment.",
-      "emphasis": [
-        "complete confidence"
-      ],
-      "sfx": "none",
-      "pause_after": 0.12,
-      "claims": [
-        11
-      ],
-      "visual": "photograph of bridge construction workers and officials, 1907",
+      "visual": "Quebec Bridge construction photograph, 1907, wider view",
       "subjects": [
         "Quebec Bridge"
       ],
       "year": 1907,
       "queries": [
-        "Quebec Bridge construction 1907",
-        "Quebec Bridge before collapse"
+        "Quebec Bridge 1907",
+        "Quebec Bridge"
       ],
       "card": {
         "kind": "none",
@@ -135,24 +108,23 @@
       }
     },
     {
-      "text": "But contemporary professional knowledge of steel columns under load was inadequate.",
+      "text": "On August 29, the unfinished bridge collapsed.",
       "emphasis": [
-        "knowledge",
-        "inadequate"
+        "collapsed"
       ],
-      "sfx": "riser",
+      "sfx": "none",
       "pause_after": 0.12,
       "claims": [
-        9
+        14
       ],
-      "visual": "technical drawing of the Quebec Bridge cantilever design",
+      "visual": "1907 Quebec Bridge collapse wreckage photograph",
       "subjects": [
         "Quebec Bridge"
       ],
       "year": 1907,
       "queries": [
-        "Quebec Bridge design drawing",
-        "Quebec Bridge cantilever diagram"
+        "Quebec Bridge 1907",
+        "Quebec Bridge"
       ],
       "card": {
         "kind": "none",
@@ -161,52 +133,70 @@
       }
     },
     {
-      "text": "By August 27, no action could prevent the structural collapse.",
+      "text": "A royal commission found the failed lower chords were defectively designed.",
       "emphasis": [
-        "no action",
-        "structural collapse"
+        "defectively designed"
       ],
-      "sfx": "whoosh",
+      "sfx": "none",
       "pause_after": 0.12,
       "claims": [
         1,
-        8
+        2
       ],
-      "visual": "photograph of the collapsed ruins of the Quebec Bridge in the river, 1907",
-      "subjects": [
-        "Quebec Bridge"
-      ],
-      "year": 1907,
+      "visual": "Royal Commission report finding (a), printed page 9",
+      "subjects": [],
+      "year": 1908,
       "queries": [
-        "Quebec Bridge collapse 1907",
-        "Quebec Bridge ruins 1907"
+        "Quebec Bridge 1907",
+        "Royal Commission report finding (a), printed page 9"
       ],
       "card": {
-        "kind": "dateline",
-        "big": "August 27, 1907",
-        "small": "Quebec Bridge"
+        "kind": "none",
+        "big": "",
+        "small": ""
       }
     },
     {
-      "text": "Yet better judgment could have saved human lives on the site.",
+      "text": "It did not believe the bridge could be saved after August 27.",
       "emphasis": [
-        "better judgment",
-        "human lives"
+        "could be saved"
       ],
-      "sfx": "pop",
-      "pause_after": 0.4,
+      "sfx": "none",
+      "pause_after": 0.12,
       "claims": [
-        5,
         8
       ],
-      "visual": "photograph of a newspaper front page reporting the 1907 disaster",
+      "visual": "Royal Commission report findings (i) and (j), printed page 9",
+      "subjects": [],
+      "year": 1908,
+      "queries": [
+        "Quebec Bridge 1907",
+        "Royal Commission report findings (i) and (j), printed page 9"
+      ],
+      "card": {
+        "kind": "none",
+        "big": "",
+        "small": ""
+      }
+    },
+    {
+      "text": "But better judgment, it said, might have prevented the loss of life.",
+      "emphasis": [
+        "might have prevented"
+      ],
+      "sfx": "none",
+      "pause_after": 0.35,
+      "claims": [
+        15
+      ],
+      "visual": "Quebec Bridge construction photograph, 1907, return to opening",
       "subjects": [
         "Quebec Bridge"
       ],
-      "year": 1907,
+      "year": 1908,
       "queries": [
-        "Quebec Bridge disaster newspaper 1907",
-        "Quebec Bridge collapse headline"
+        "Quebec Bridge 1907",
+        "Quebec Bridge"
       ],
       "card": {
         "kind": "none",
@@ -215,7 +205,7 @@
       }
     }
   ],
-  "hook_text": "",
+  "hook_text": "1907 UNDER CONSTRUCTION",
   "loop": true,
-  "better_than_last": "Implemented a highly precise loop flow where the final line directly prompts the context of the opening hook, maximizing rewatch rate."
+  "better_than_last": "Uses a measured structural warning and the commission’s distinction between a doomed bridge and preventable loss of life, with exact archival visuals."
 }
