@@ -41,6 +41,7 @@ event is told for its gore. Space topics belong to the sister channel Universe R
 | Nov 1 | 1755 Lisbon earthquake: it struck on All Saints' Day, when the churches were full, and people who fled to the open waterfront were hit by a tsunami | The Last Hours |
 | Nov 9 | Great Lakes Storm of 1913 (1913): captains ignored the new "White Flag" weather warnings and sailed into the Freshwater Fury, a storm that sank a record 12 ships and killed over 250 people | Warnings Ignored |
 | Nov 12 | Nevado del Ruiz eruption (1985): warning signs were ignored for weeks before a lahar buried the town of Armero in the middle of the night | Warnings Ignored |
+| Nov 18 | 1755 Cape Ann earthquake (Nov 18): the strongest earthquake in Massachusetts history struck so hard it bent the grasshopper weathercock on top of Boston's Faneuil Hall | The Last Hours |
 | Nov 20 | Essex (whaleship) (1820): after a sperm whale sank the ship, the crew steered away from the nearest islands for fear of cannibals | Sole Survivors |
 | Nov 25 | White Ship (1120): its sinking drowned the king of England's only legitimate son, and the fight over his throne became a civil war | Fallen Empires |
 | Nov 28 | Cocoanut Grove fire (1942): hundreds died in a Boston nightclub whose main exit was a revolving door and whose other doors were locked or hidden | Warnings Ignored |
@@ -104,6 +105,19 @@ event is told for its gore. Space topics belong to the sister channel Universe R
 - DeWitt Clinton locomotive (1831): on one of America's first passenger train rides, burning wood sparks set riders' clothes on fire, forcing them to beat out flames with umbrellas
 - First Battle of Porto (1809): thousands of fleeing civilians surged onto a pontoon bridge that collapsed under their weight, drowning them in the river below
 - Dee Bridge disaster (1847): famous engineer Robert Stephenson's cast-iron bridge snapped under a passenger train, exposing a fatal flaw in Victorian design
+- Texas City disaster (1947): a fire aboard the Grandcamp preceded its 9:12 explosion, and another ship exploded the next day
+- Siege of Ichijōdani Castle (1573): the conqueror Nobunaga had the skulls of the defeated lords lacquered in gold to use as drinking cups
+- Death of Pyrrhus of Epirus (272 BC): the legendary general was killed in a street fight when an old woman threw a roof tile from her balcony
+- Leiden gunpowder disaster (1807): the heart of the city was leveled when a barge crew cooked a meal over an open flame right next to 17 tons of black powder
+- Siege of Shigisan (1577): the defeated lord chose to blow himself up along with a legendary tea kettle rather than let his rival capture the treasure
+- Siege of Pilėnai (1336): four thousand defenders burned their fortress and themselves alive rather than submit to the Teutonic Knights
+- Abergele rail disaster (1868): runaway wagons of paraffin oil struck a passenger train, creating a fire so hot the victims could not be identified
+- Battle of the Saw (238 BC): forty thousand rebels were trapped in a canyon and forced into cannibalism while the enemy waited for them to starve
+- Fall of Arsuf (1265): after the Crusaders surrendered for a promise of safety, the Sultan forced them to dismantle their own fortress stone by stone before enslaving them
+- Battle of Montevideo (1807): British troops only found the breach in the city walls because the defenders had unsuccessfully tried to hide it with white bags of flour
+- Tradeston Flour Mills explosion (1872): a massive blast leveled the mill and killed 18 people, proving for the first time that ordinary flour dust can be as explosive as gunpowder
+- Tacoma streetcar disaster (1900): a speeding trolley packed with holiday travelers plunged into a gulch after the driver jumped to safety
+- Nowy Dwór Mazowiecki train disaster (1949): the communist government successfully wiped the country's deadliest rail crash from the news for over 40 years
 
 ### Lost Cities
 
@@ -122,6 +136,7 @@ event is told for its gore. Space topics belong to the sister channel Universe R
 - Timgad (100 AD): this Roman city was abandoned in the 7th century and buried by the Sahara’s sands, leaving it perfectly preserved for over 1,000 years
 - Fall of Teotihuacan (c. 750 AD): the massive city was burned and abandoned not by invaders, but seemingly by its own citizens who rose up and systematically destroyed the homes of the ruling elite
 - Discovery of Skara Brae (c. 3180 BC): this Neolithic village was perfectly preserved under sand dunes for 5,000 years until a massive storm in 1850 stripped the earth away and revealed it to a local laird
+- Great Zimbabwe (c. 11th–15th centuries): colonial explorers refused to believe the massive granite walls were built by Africans, insisting for decades that the city must have been built by the Queen of Sheba
 
 ### Doomed Expeditions
 
@@ -143,6 +158,10 @@ event is told for its gore. Space topics belong to the sister channel Universe R
 - Denmark expedition (1907): dying of starvation in an Arctic cave, Jørgen Brønlund pinned his diary and maps to his coat before freezing to death
 - Japanese Antarctic Expedition (1910): mocked for sailing in a tiny wooden ship, the crew braved Antarctic ice and returned home without losing a single man
 - Crocker Land Expedition (1913): an Arctic team spent four years stranded after launching an expedition to explore an island that was actually a mirage
+- Spanish ship San Telmo (1819): the 644 men on board likely became the first humans to reach Antarctica, but they died on the ice years before the continent was officially discovered
+- Qurnah disaster (1855): a massive convoy of 235 crates of ancient Nineveh treasures was lost in the Tigris river after an attack, where they remain buried under silt today
+- Sinking of the Antarctic (1903): after their ship was crushed by ice, three separated groups survived the winter and reunited on the exact same day
+- Polaris expedition (1871): the mission to the North Pole failed when its commander died mysteriously, and a 20th-century autopsy revealed he had been poisoned with arsenic by his own crew
 
 ### Fallen Empires
 
@@ -161,6 +180,10 @@ event is told for its gore. Space topics belong to the sister channel Universe R
 - Fall of the Qing Dynasty (1912): the last Emperor of China, once worshipped as a living god, ended his life as a quiet citizen working as a gardener in his former palace
 - Fall of Krak des Chevaliers (1271): the impregnable Crusader stronghold finally surrendered after the Mamluk Sultan tricked the garrison with a forged letter from their commander
 - Battle of Sarmizegetusa (106): the Dacian king diverted a river to hide his empire's gold beneath the riverbed, but a prisoner betrayed the location to Rome
+- Execution of Emperor Maximilian (1867): the ruler of Mexico refused a chance to escape in disguise because he would not abandon his loyal generals
+- Siege of Larache (1689): after surrendering on the promise of safe passage, 1,600 Spanish soldiers were enslaved and forced to build the Sultan's imperial palace
+- Siege of Shushtar (641): the city's impregnable walls were bypassed when a defector led the invading army into the heart of the city through the secret sewer tunnels
+- Fall of Angkor (c. 1431): the world's largest pre-industrial city collapsed not just from war, but because its massive water network failed during decades of extreme drought and floods
 
 ### Warnings Ignored
 
@@ -184,6 +207,8 @@ event is told for its gore. Space topics belong to the sister channel Universe R
 - Great Plague of Marseille (1720): city officials ignored a plague warning on a merchant ship because they didn't want to delay its cargo of silk for a local fair
 - Manchurian plague (1910): a doctor's warning that the plague was airborne was mocked by a colleague who refused to wear a mask and died of the infection days later
 - Siege of Svetigrad (1448): an impregnable mountain fortress fell after defenders refused to drink from their only water well because a dead dog was thrown inside
+- Norwalk rail accident (1853): a train carrying 48 people plunged into a river after the engineer missed a red signal while the bridge was open
+- Siege of Sahyun Castle (1188): the 'impenetrable' fortress fell in just two days because the defenders left a single narrow stone bridge uncut
 
 ### Sole Survivors
 
@@ -200,3 +225,5 @@ event is told for its gore. Space topics belong to the sister channel Universe R
 - Siege of Arrah (1857): 62 defenders held off thousands of rebels from inside a tiny fortified billiard house for eight days
 - Survival of Alexander Selkirk (1704): the real Robinson Crusoe lived alone on an island for 4 years because he refused to stay on a ship he correctly predicted was unseaworthy and would sink
 - Survival of Jan Baalsrud (1943): after his sabotage mission failed, he survived the Arctic for months and amputated nine of his own toes with a pocketknife to stop gangrene from killing him
+- 1867 Virgin Islands earthquake and tsunami (1867): a massive wave carried the USS Monongahela over the rooftops of the town before the receding water pulled it safely back into the harbor
+- Hugh Glass (1823): after being mauled by a grizzly and left for dead in a shallow grave, he crawled 200 miles to safety but chose to forgive the men who abandoned him
