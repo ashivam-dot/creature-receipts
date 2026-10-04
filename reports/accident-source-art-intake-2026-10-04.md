@@ -4,6 +4,8 @@ The new daily intake reads at most two unused leads from the four-entry checked 
 
 The 2026-10-04 local live check fetched both pinned pages for each lead, found the exact event phrases in readable text, read live Wikimedia Commons metadata, and downloaded four pinned JPEGs. Each downloaded byte sequence matched its SHA-256 in `strategy/ACCIDENT-INTAKE.json`. Commons currently reports each of these images as public domain, not copyrighted, with no attribution requirement. The image descriptions name the relevant disaster or location. I inspected the images themselves and restricted their possible use to the scenes in the manifest; this is a preflight scene note, **not** independent final-art approval.
 
+[GitHub cloud dry run 37203448517](https://github.com/ashivam-dot/creature-receipts/actions/runs/37203448517) checked the same branch in 11 seconds on 2026-10-04. Its 14-day artifact records two unused leads, one technical pass (Mann Gulch), one original-report hold (Oppau), and zero candidates eligible for producer selection. The render job was skipped. No draft, schedule, or upload was made.
+
 | Lead | Source result | Exact art preflight | Selection result |
 |---|---|---|---|
 | Oppau, 1921 | The Norwegian Defence Research Establishment study and French ARIA page are live. The study is original *retrospective technical research*, not a contemporary inquiry into the 1921 accident. | A 1921 published view of the ruins and a 1921 postcard of damaged plant equipment; both may illustrate aftermath only. | Held as `original_report_missing`; full art plan and independent review absent. |
