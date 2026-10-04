@@ -262,7 +262,8 @@ def make_short(spec_path: Path, out: Path | None = None) -> Path:
         at, made = start, []
         for k, shot in enumerate(shots):
             clip = work / f"clip{i:02d}_{k}.mp4"
-            deep = spec.depth_motion and shot["kind"] in ("cover", "detail")
+            deep = (spec.depth_motion and beat.visual.depth_motion is not False
+                    and shot["kind"] in ("cover", "detail"))
             if deep:
                 depth.still_clip(shot["plate"], shot["frames"], shot["move"], clip, (W, H), FPS, TO_BT709,
                                  INTERMEDIATE, drift_sign=1 if (i + k) % 2 else -1)

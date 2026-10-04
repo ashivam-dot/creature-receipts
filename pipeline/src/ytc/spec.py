@@ -39,6 +39,8 @@ class Visual(_Model):
     card: Card | None = None
     color: str = "#101820"
     motion: Motion = "zoom_in"
+    # Disable depth displacement for labeled graphics whose text must stay inside the phone frame.
+    depth_motion: bool | None = None
     # Optional authored camera path for an event whose action has a meaningful direction. Values are
     # [start zoom, end zoom, start x, end x, start y, end y]; x/y run 0 to 1 across the overscan room.
     # The named motion remains as a readable fallback for older renderers and stock-video visuals.

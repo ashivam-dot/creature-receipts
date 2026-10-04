@@ -51,9 +51,7 @@ beats:
       license: Public domain (1908 Royal Commission report); authored overlay
       url: https://archive.org/download/reportandplansa01schngoog/reportandplansa01schngoog.pdf#page=93
     fallbacks: []
-    motion: none
-    camera_move: [1.0, 1.0, 0.5, 0.5, 0.5, 0.5]
-    depth_motion: false
+    motion: zoom_in
 - text: Some called it critical. The superintendent saw no danger.
   emphasis:
   - critical

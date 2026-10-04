@@ -1,0 +1,219 @@
+{
+  "hooks": [
+    {
+      "style": "statement",
+      "text": "Staff measured a growing bend. Two days later, the Quebec Bridge fell."
+    },
+    {
+      "style": "question",
+      "text": "What happened after Quebec Bridge staff measured a growing bend?"
+    },
+    {
+      "style": "contradiction",
+      "text": "The bridge might have been doomed. The loss of life might have been prevented."
+    }
+  ],
+  "hook_style": "statement",
+  "structure": "warning",
+  "title": "The Bend Measured Before Quebec Bridge Fell",
+  "description": "Quebec Bridge staff measured an enlarging lower-chord bend before the 1907 collapse. The Royal Commission did not believe action after August 27 could have prevented the fall, but found better judgment might have prevented the loss of life.",
+  "hashtags": [
+    "#history",
+    "#quebecbridge",
+    "#engineering"
+  ],
+  "tags": [
+    "Quebec Bridge",
+    "1907 collapse",
+    "engineering failure",
+    "Royal Commission",
+    "St. Lawrence River"
+  ],
+  "beats": [
+    {
+      "text": "Staff measured a growing bend. Two days later, the Quebec Bridge fell.",
+      "emphasis": [
+        "growing bend",
+        "the Quebec Bridge fell"
+      ],
+      "sfx": "none",
+      "pause_after": 0.12,
+      "claims": [
+        12,
+        13,
+        14
+      ],
+      "visual": "photograph of the Quebec Bridge under construction, 1907",
+      "subjects": [
+        "Quebec Bridge"
+      ],
+      "year": 1907,
+      "queries": [
+        "Quebec Bridge 1907",
+        "Quebec Bridge"
+      ],
+      "card": {
+        "kind": "none",
+        "big": "",
+        "small": ""
+      }
+    },
+    {
+      "text": "On August 27, steel member 9-L bent farther.",
+      "emphasis": [
+        "August 27",
+        "9-L"
+      ],
+      "sfx": "none",
+      "pause_after": 0.12,
+      "claims": [
+        12
+      ],
+      "visual": "technical drawing of the Quebec Bridge anchor arm, 1907",
+      "subjects": [
+        "Quebec Bridge"
+      ],
+      "year": 1907,
+      "queries": [
+        "Quebec Bridge design",
+        "Quebec Bridge drawing"
+      ],
+      "card": {
+        "kind": "none",
+        "big": "",
+        "small": ""
+      }
+    },
+    {
+      "text": "Some called it critical. The superintendent saw no danger.",
+      "emphasis": [
+        "critical",
+        "no danger"
+      ],
+      "sfx": "none",
+      "pause_after": 0.12,
+      "claims": [
+        16
+      ],
+      "visual": "1907 construction photograph cropped on the main pier and landward anchor arm; illustrative bridge context, not a photograph of the discussion",
+      "subjects": [
+        "Quebec Bridge"
+      ],
+      "year": 1907,
+      "queries": [
+        "Quebec Bridge construction 1907",
+        "Quebec Bridge workers"
+      ],
+      "card": {
+        "kind": "none",
+        "big": "",
+        "small": ""
+      }
+    },
+    {
+      "text": "On August 29, the unfinished bridge collapsed.",
+      "emphasis": [
+        "collapsed"
+      ],
+      "sfx": "none",
+      "pause_after": 0.12,
+      "claims": [
+        14
+      ],
+      "visual": "photograph of the collapsed Quebec Bridge ruins in the river, 1907",
+      "subjects": [
+        "Quebec Bridge"
+      ],
+      "year": 1907,
+      "queries": [
+        "Quebec Bridge collapse 1907",
+        "Quebec Bridge ruins"
+      ],
+      "card": {
+        "kind": "none",
+        "big": "",
+        "small": ""
+      }
+    },
+    {
+      "text": "The commission found the lower members were defectively designed.",
+      "emphasis": [
+        "defectively designed"
+      ],
+      "sfx": "none",
+      "pause_after": 0.12,
+      "claims": [
+        1,
+        2
+      ],
+      "visual": "Fred C. Würtele photograph of Quebec Bridge collapse wreckage, September 1907; illustrative aftermath, not an identified failed chord",
+      "subjects": [
+        "Quebec Bridge wreckage"
+      ],
+      "year": 1907,
+      "queries": [
+        "Quebec Bridge damaged steel",
+        "Quebec Bridge lower chord"
+      ],
+      "card": {
+        "kind": "none",
+        "big": "",
+        "small": ""
+      }
+    },
+    {
+      "text": "It did not believe the fall preventable after August 27.",
+      "emphasis": [
+        "did not believe",
+        "fall preventable"
+      ],
+      "sfx": "none",
+      "pause_after": 0.12,
+      "claims": [
+        8
+      ],
+      "visual": "The wreckage photographed after the 1907 Quebec Bridge collapse, reproduced in Royal Commission report Appendix 19 figure 20",
+      "subjects": [],
+      "year": 1907,
+      "queries": [
+        "Quebec Bridge Royal Commission",
+        "Quebec Bridge report"
+      ],
+      "card": {
+        "kind": "none",
+        "big": "",
+        "small": ""
+      }
+    },
+    {
+      "text": "Yet it said better judgment might have prevented the loss of life. The bend had been measured.",
+      "emphasis": [
+        "might have prevented",
+        "bend had been measured"
+      ],
+      "sfx": "none",
+      "pause_after": 0.35,
+      "claims": [
+        15,
+        13
+      ],
+      "visual": "Quebec Bridge construction photograph, 1907, returning to the opening measured bend",
+      "subjects": [
+        "Quebec Bridge"
+      ],
+      "year": 1907,
+      "queries": [
+        "Quebec Bridge disaster memorial",
+        "Quebec Bridge plaque"
+      ],
+      "card": {
+        "kind": "none",
+        "big": "",
+        "small": ""
+      }
+    }
+  ],
+  "hook_text": "",
+  "loop": true,
+  "better_than_last": "The exact 1907 sources stay pinned, beat 3 has a distinct photographic composition, and the commission’s qualified human-loss finding ends by echoing the measured bend."
+}
