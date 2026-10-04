@@ -1,5 +1,5 @@
-"""Inspect a rendered Short: stream facts, loudness, per-beat assets, one review frame per beat, and what the
-narration sounds like to a speech recognizer."""
+"""Inspect a rendered Short: stream facts, full decode, loudness, per-beat assets, review frames, and what the
+finished video's audio track sounds like to a speech recognizer."""
 
 from __future__ import annotations
 
@@ -31,11 +31,12 @@ def check(video: Path) -> dict:
 
     info = subprocess.run([ff.exe(), "-hide_banner", "-i", str(video)], capture_output=True, text=True).stderr
     streams = [line.strip() for line in info.splitlines() if "Stream #" in line]
-    loud = subprocess.run(
-        [ff.exe(), "-hide_banner", "-nostats", "-i", str(video), "-af", "ebur128=peak=true", "-f", "null", "-"],
+    decoded = subprocess.run(
+        [ff.exe(), "-hide_banner", "-nostats", "-xerror", "-i", str(video), "-af", "ebur128=peak=true", "-f", "null", "-"],
         capture_output=True,
         text=True,
-    ).stderr
+    )
+    loud = decoded.stderr
     summary = loud[loud.rfind("Summary:") :]
     lufs, peak = _LUFS.search(summary), _PEAK.search(summary)
 
@@ -64,6 +65,9 @@ def check(video: Path) -> dict:
     duration = round(ff.duration(video), 2)
     integrated = float(lufs.group(1)) if lufs else None
     true_peak = float(peak.group(1)) if peak else None
+    warnings = _warnings(duration, integrated, true_peak, beats)
+    if decoded.returncode:
+        warnings.append(f"full audio/video decode failed (ffmpeg exit {decoded.returncode})")
     return {
         "video": str(video),
         "duration": duration,
@@ -71,8 +75,10 @@ def check(video: Path) -> dict:
         "streams": streams,
         "integrated_lufs": integrated,
         "true_peak_dbfs": true_peak,
-        "warnings": _warnings(duration, integrated, true_peak, beats),
-        "speech": _saved_speech(work) or speech(work / "narration.wav", manifest["beats"]),
+        "warnings": warnings,
+        # The mixed, encoded file is what Buffer receives. A clean narration WAV cannot
+        # prove that its final AAC track is complete or intelligible under the music.
+        "speech": speech(video, manifest["beats"]),
         "beats": beats,
     }
 
@@ -83,15 +89,7 @@ def write_speech(work: Path) -> None:
     (work / "speech.json").write_text(json.dumps(speech(work / "narration.wav", beats), indent=2), encoding="utf-8")
 
 
-def _saved_speech(work: Path) -> dict | None:
-    saved, narration = work / "speech.json", work / "narration.wav"
-    # A later render on this Mac rewrites the narration and leaves the cloud's check stale.
-    if saved.exists() and narration.exists() and saved.stat().st_mtime >= narration.stat().st_mtime:
-        return json.loads(saved.read_text(encoding="utf-8"))
-    return None
-
-
-def speech(narration: Path, beats: list[dict]) -> dict:
+def speech(media: Path, beats: list[dict]) -> dict:
     """Where a speech recognizer heard something other than the script: a mispronounced, skipped, or extra word."""
     try:
         from faster_whisper import WhisperModel
@@ -99,7 +97,7 @@ def speech(narration: Path, beats: list[dict]) -> dict:
 
         model = WhisperModel(ASR_MODEL, device="cpu", compute_type="int8")
         segments, _ = model.transcribe(
-            str(narration), language="en", temperature=0.0, condition_on_previous_text=False
+            str(media), language="en", temperature=0.0, condition_on_previous_text=False
         )
         heard_text = " ".join(segment.text.strip() for segment in segments)
     except Exception as error:  # the rest of the check is still worth having

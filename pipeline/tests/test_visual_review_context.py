@@ -31,9 +31,21 @@ def test_final_review_cannot_host_flagged_picture_or_speech():
     verdict = {"scores": {key: 5 for key in studio.GATE}, "judge": "gemini",
                "frames": [{"beat": 3, "problem": "2021 fire photo used for an 1871 event"}],
                "speech": []}
-    assert not studio._passes({"warnings": []}, verdict, final=True)
+    exact = {"warnings": [], "speech": {"differences": []}}
+    assert not studio._passes(exact, verdict, final=True)
     verdict["frames"] = []
     verdict["speech"] = [{"beat": 3, "word": "Peshtigo", "respelling": "pesh tee go"}]
-    assert not studio._passes({"warnings": []}, verdict, final=True)
+    assert not studio._passes(exact, verdict, final=True)
     verdict["speech"] = []
-    assert studio._passes({"warnings": []}, verdict, final=True)
+    assert studio._passes(exact, verdict, final=True)
+    assert not studio._passes({"warnings": []}, verdict, final=True)
+    assert not studio._passes({"warnings": [], "speech": {"error": "ASR failed"}}, verdict, final=True)
+    assert not studio._passes({"warnings": [], "speech": {"differences": ["missing word"]}}, verdict, final=True)
+
+
+def test_best_round_cannot_restore_a_failed_final_media_speech_check():
+    round_ = {"scores": {key: 5 for key in studio.GATE}, "frames": [], "speech": [],
+              "check": {"warnings": [], "speech_differences": ["missing word"], "speech_error": None}}
+    assert not studio._standing(round_)[0]
+    round_["check"]["speech_differences"] = []
+    assert studio._standing(round_)[0]
