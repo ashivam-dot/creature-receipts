@@ -1,0 +1,329 @@
+{
+  "viable": true,
+  "reason": "The sources provide 15 highly detailed, mutually verified claims about the disaster, including the key warning signs, the shocking cover-up, and the legal aftermath.",
+  "story": "On January 15, 1919, an unseasonably warm winter day descended on Boston’s North End. Standing fifty feet tall above the neighborhood was a steel holding tank containing 2.3 million gallons of molasses. But the tank was a ticking time bomb. Built quickly and poorly maintained, it leaked so continuously that local children regularly collected the dripping syrup. Rather than fixing the structure, the United States Industrial Alcohol Company painted the tank dark brown to hide the leaking stains from public view.\n\nAt midday, the tank ruptured with a sound like a thunderclap. A torrent of sticky molasses surged through the streets at thirty-five miles per hour, destroying buildings and tearing the local firehouse from its foundation. Twenty-one people were killed, and 150 were injured. Though the company claimed anarchists blew it up, they were found negligent, yet no individuals faced criminal charges. For decades, the sweet scent of molasses lingered on hot days.",
+  "angle": "Rather than fixing the structural leaks of a massive 50-foot tank holding 2.3 million gallons of molasses, the company simply painted the entire tank brown to hide the leaking syrup from public view.",
+  "claims": [
+    {
+      "claim": "The disaster took place in the North End neighborhood of Boston.",
+      "sources": [
+        "S1",
+        "S2"
+      ],
+      "evidence": [
+        {
+          "source": "S1",
+          "quote": "in the North End neighborhood of Boston"
+        },
+        {
+          "source": "S2",
+          "quote": "in Boston’s North End"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim": "The holding tank was filled with 2.3 million gallons of molasses.",
+      "sources": [
+        "S1",
+        "S5"
+      ],
+      "evidence": [
+        {
+          "source": "S1",
+          "quote": "filled with 2.3 million U.S. gallons (8,700 cubic meters) of molasses"
+        },
+        {
+          "source": "S5",
+          "quote": "2.3 million gallons of molasses"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim": "The wave of molasses traveled at an estimated speed of 35 miles per hour.",
+      "sources": [
+        "S1",
+        "S5"
+      ],
+      "evidence": [
+        {
+          "source": "S1",
+          "quote": "rushed through the streets at an estimated 35 miles per hour"
+        },
+        {
+          "source": "S5",
+          "quote": "moved at an estimated 35 miles per hour"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim": "The storage tank stood 50 feet tall.",
+      "sources": [
+        "S1",
+        "S2"
+      ],
+      "evidence": [
+        {
+          "source": "S1",
+          "quote": "molasses tank stood 50 feet (15 meters) tall"
+        },
+        {
+          "source": "S2",
+          "quote": "50ft-tall steel holding tank"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim": "The tank was owned by the United States Industrial Alcohol Company.",
+      "sources": [
+        "S2",
+        "S5"
+      ],
+      "evidence": [
+        {
+          "source": "S2",
+          "quote": "Owned by the United States Industrial Alcohol Company"
+        },
+        {
+          "source": "S5",
+          "quote": "lawsuit against the United States Industrial Alcohol Company"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim": "Because the tank leaked constantly, the company painted it brown to hide the leakage.",
+      "sources": [
+        "S1",
+        "S5"
+      ],
+      "evidence": [
+        {
+          "source": "S1",
+          "quote": "the tank leaked so badly that it was painted brown to hide the leakage"
+        },
+        {
+          "source": "S5",
+          "quote": "painted the tank brown to hide the leaks rather than fix them"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim": "The wave tore the Engine 31 firehouse from its foundation.",
+      "sources": [
+        "S2",
+        "S3"
+      ],
+      "evidence": [
+        {
+          "source": "S2",
+          "quote": "firehouse was knocked off its foundation"
+        },
+        {
+          "source": "S3",
+          "quote": "tore Engine 31 firehouse from its foundation"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim": "The company claimed that the tank had been blown up by anarchists.",
+      "sources": [
+        "S1",
+        "S5"
+      ],
+      "evidence": [
+        {
+          "source": "S1",
+          "quote": "claimed that the tank had been blown up by anarchists"
+        },
+        {
+          "source": "S5",
+          "quote": "suggesting that anarchists had sabotaged the tank"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim": "119 residents filed a class-action lawsuit against the company.",
+      "sources": [
+        "S1",
+        "S5"
+      ],
+      "evidence": [
+        {
+          "source": "S1",
+          "quote": "119 residents brought a class-action lawsuit"
+        },
+        {
+          "source": "S5",
+          "quote": "119 residents filed a class action lawsuit"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim": "No individuals were ever criminally charged for the disaster.",
+      "sources": [
+        "S5",
+        "S6"
+      ],
+      "evidence": [
+        {
+          "source": "S5",
+          "quote": "No individuals were ever criminally charged."
+        },
+        {
+          "source": "S6",
+          "quote": "failing to file any criminal charges"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim": "For decades after the flood, the area still smelled of molasses on hot days.",
+      "sources": [
+        "S1",
+        "S7"
+      ],
+      "evidence": [
+        {
+          "source": "S1",
+          "quote": "area still smelled of molasses on hot summer days"
+        },
+        {
+          "source": "S7",
+          "quote": "still smell molasses on hot days in the North End"
+        }
+      ],
+      "confidence": "high"
+    }
+  ],
+  "disputed": [
+    "The height of the molasses wave: S1 and S3 state the peak was 25 feet (7.5 meters) high, while S2, S5, and S7 state it was 15 feet high. A script should state the peak wave height was between 15 and 25 feet.",
+    "The year the tank was built: S2 and S7 state the tank was built in 1915, while S6 states it was built in 1914. A script should generalize this to 'built in the mid-1910s'.",
+    "The payout amount of the lawsuit: S1 and S2 state the company paid $628,000 in damages, S6 states it paid $600,000, and S7 states 'around a million dollars' was paid. A script should state the payout was over $600,000."
+  ],
+  "visuals": [
+    {
+      "subject": "Map of Boston's North End from the early 20th century",
+      "queries": [
+        "Map of Boston 1919",
+        "Boston North End map"
+      ]
+    },
+    {
+      "subject": "Structural wreckage and damage to the Boston Elevated Railway after the flood",
+      "queries": [
+        "Boston Molasses Flood damage elevated railway",
+        "Atlantic Avenue Elevated aftermath"
+      ]
+    },
+    {
+      "subject": "The aftermath and ruins of the Great Molasses Flood",
+      "queries": [
+        "Great Molasses Flood aftermath",
+        "Boston Molasses Disaster wreckage"
+      ]
+    },
+    {
+      "subject": "The destroyed Engine 31 firehouse structure",
+      "queries": [
+        "Engine 31 Boston Molasses Flood",
+        "Wrecked firehouse Boston 1919"
+      ]
+    },
+    {
+      "subject": "Crowds of onlookers gathered at the disaster scene on Commercial Street",
+      "queries": [
+        "Boston Molasses Flood crowds",
+        "Commercial Street Molasses Flood"
+      ]
+    },
+    {
+      "subject": "Cleanup crews washing away the molasses in the North End",
+      "queries": [
+        "Boston Molasses Flood cleanup",
+        "Washing molasses Boston 1919"
+      ]
+    },
+    {
+      "subject": "Langone Park today, located over the site of the former tank",
+      "queries": [
+        "Langone Park baseball field",
+        "Langone Park Boston"
+      ]
+    },
+    {
+      "subject": "The Bostonian Society commemorative plaque marking the disaster",
+      "queries": [
+        "Boston Molasses Flood plaque",
+        "Bostonian Society plaque molasses"
+      ]
+    },
+    {
+      "subject": "A ship delivering cargo in Boston Harbor in 1919",
+      "queries": [
+        "Boston Harbor 1919 ship",
+        "Boston Harbor docks 1910s"
+      ]
+    },
+    {
+      "subject": "The training ship USS Nantucket docked at Boston Harbor",
+      "queries": [
+        "USS Nantucket ship",
+        "USS Nantucket Massachusetts"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "label": "S1",
+      "url": "https://en.wikipedia.org/wiki/Great_Molasses_Flood",
+      "title": "Great Molasses Flood",
+      "site": "wikipedia.org"
+    },
+    {
+      "label": "S2",
+      "url": "https://www.theguardian.com/us-news/2019/jan/13/the-great-boston-molasses-flood-why-it-matters-modern-regulation",
+      "title": "The Great Boston Molasses Flood: why the strange disaster matters today",
+      "site": "theguardian.com"
+    },
+    {
+      "label": "S3",
+      "url": "https://www.scientificamerican.com/article/molasses-flood-physics-science/",
+      "title": "The Science of the Great Molasses Flood",
+      "site": "scientificamerican.com"
+    },
+    {
+      "label": "S4",
+      "url": "https://blogs.umb.edu/fiskecenter/2019/01/14/results-of-geophysical-survey-at-langone-park-100-years-since-the-great-molasses-flood/",
+      "title": "Results of Geophysical survey at Langone Park: 100 Years since the Great Molasses Flood",
+      "site": "umb.edu"
+    },
+    {
+      "label": "S5",
+      "url": "https://historydecoded.co.uk/articles/molasses-flood",
+      "title": "The Great Molasses Flood: Boston 1919 | History Decoded",
+      "site": "historydecoded.co.uk"
+    },
+    {
+      "label": "S6",
+      "url": "https://werehistory.org/preventing-another-boston-molasses-disaster/",
+      "title": "Preventing Another Boston Molasses Disaster",
+      "site": "werehistory.org"
+    },
+    {
+      "label": "S7",
+      "url": "https://historicalsnaps.com/2026/01/07/the-great-molasses-flood-of-1919/",
+      "title": "The Great Molasses Flood of 1919 - Historical Snapshots",
+      "site": "historicalsnaps.com"
+    }
+  ],
+  "topic": "Great Molasses Flood (1919): the leaking tank had been painted brown to hide the leaks",
+  "series": "Warnings Ignored"
+}

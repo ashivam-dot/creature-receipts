@@ -1,0 +1,137 @@
+id: ep068
+title: Why Did a 1626 Explosion Strip Beijing's Citizens? 🤯
+series: The Last Hours
+description: In 1626, the mysterious Wanggongchang Explosion devastated Beijing, flattening two square kilometers and leaving
+  survivors stripped of their clothes.
+sources:
+- https://en.wikipedia.org/wiki/Wanggongchang_Explosion
+- https://thechinaproject.com/2022/06/01/a-17th-century-mushroom-cloud-the-wanggongchang-explosion/
+- https://www.theworldofchinese.com/2022/10/the-blast-that-nearly-destroyed-beijing/
+- https://grokipedia.com/page/Wanggongchang_Explosion
+- https://deadlycurious.com/articles/wanggongchang-explosion-1626/
+hashtags:
+- '#history'
+- '#wanggongchang'
+- '#beijing'
+tags:
+- wanggongchang explosion
+- beijing history
+- ming dynasty
+- unexplained explosion
+- ancient mysteries
+- tianqi emperor
+voice:
+  engine: kokoro
+  voice: am_fenrir
+  speed: 1.15
+beats:
+- text: A three-ton stone lion flew over Beijing’s city walls.
+  emphasis:
+  - three-ton stone lion
+  - city walls
+  sfx: whoosh
+  visual:
+    source: url
+    url: https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b1/Chinese_guardian_lion%2C_Da%27an_Temple_%28Changsha%29.jpg/1920px-Chinese_guardian_lion%2C_Da%27an_Temple_%28Changsha%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
+    credit:
+      source: Wikimedia Commons
+      title: Chinese guardian lion, Da'an Temple (Changsha).jpg
+      credit: Huangdan2060
+      license: CC BY 3.0
+      url: https://commons.wikimedia.org/wiki/File:Chinese_guardian_lion,_Da%27an_Temple_(Changsha).jpg
+    fallbacks:
+    - card
+    - color
+    motion: pan_down
+    focus_x: 0.5
+    focus_y: 0.5
+    card:
+      kind: fact
+      big: 3 Tons
+      small: Stone lion thrown
+- text: In 1626, the imperial Wanggongchang gunpowder armory suddenly exploded.
+  emphasis:
+  - Wanggongchang
+  - exploded
+  visual:
+    source: url
+    url: https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ad/Paradigma_XV_Provinciarum_et_CLV_Urbium_Capitalium_Sinensis_Imperij.jpg/1920px-Paradigma_XV_Provinciarum_et_CLV_Urbium_Capitalium_Sinensis_Imperij.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
+    credit:
+      source: Wikimedia Commons
+      title: Paradigma XV Provinciarum et CLV Urbium Capitalium Sinensis Imperij.jpg
+      credit: François de Louvemont
+      license: Public domain
+      url: https://commons.wikimedia.org/wiki/File:Paradigma_XV_Provinciarum_et_CLV_Urbium_Capitalium_Sinensis_Imperij.jpg
+    fallbacks:
+    - color
+    motion: pan_up
+    focus_x: 0.5
+    focus_y: 0.5
+- text: The blast instantly flattened two square kilometers of the capital.
+  emphasis:
+  - flattened
+  - two square kilometers
+  sfx: whoosh
+  visual:
+    source: url
+    url: https://upload.wikimedia.org/wikipedia/commons/2/2a/Polvertoren_van_Rijnberk_vliegt_de_lucht_in_-_Explosion_Pulverturm_Rheinberg_%281698%29-CN.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    credit:
+      source: Wikimedia Commons
+      title: Polvertoren van Rijnberk vliegt de lucht in - Explosion Pulverturm Rheinberg (1698)-CN.jpg
+      credit: 'Polvertoren_van_Rijnberk_vliegt_de_lucht_in_-_Explosion_Pulverturm_Rheinberg_(1698).jpg: Casper Luycken & Jan
+        Luycken
+
+        derivative work: kaʁstn Disk/Cat'
+      license: Public domain
+      url: https://commons.wikimedia.org/wiki/File:Polvertoren_van_Rijnberk_vliegt_de_lucht_in_-_Explosion_Pulverturm_Rheinberg_(1698)-CN.jpg
+    fallbacks:
+    - color
+    motion: pan_right
+    focus_x: 0.5
+    focus_y: 0.5
+- text: A mushroom cloud rose, and about 20,000 people perished.
+  emphasis:
+  - mushroom cloud
+  - 20,000 people
+  sfx: riser
+  visual:
+    source: card
+    card:
+      kind: fact
+      big: 20,000
+      small: Estimated deaths
+    motion: zoom_in
+- text: Strangely, the violent shockwave stripped many victims of their clothes.
+  emphasis:
+  - stripped
+  - their clothes
+  pause_after: 0.4
+  visual:
+    source: card
+    card:
+      kind: fact
+      big: Stripped Naked
+      small: Bizarre blast effect
+    motion: zoom_in
+- text: The Tianqi Emperor fled his breakfast, but his infant heir died.
+  emphasis:
+  - emperor fled
+  - infant heir
+  visual:
+    reuse: 3
+    motion: zoom_out
+    focus_x: 0.5
+    focus_y: 0.5
+- text: No one ever explained what launched the massive stone guardian.
+  emphasis:
+  - No one ever explained
+  - stone guardian
+  sfx: pop
+  pause_after: 0.4
+  visual:
+    reuse: 1
+    motion: zoom_out
+    focus_x: 0.5
+    focus_y: 0.5
+depth_motion: true
+hook_text: 3-TON LION THROWN

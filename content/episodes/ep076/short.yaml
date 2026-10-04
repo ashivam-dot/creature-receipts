@@ -1,0 +1,130 @@
+id: ep076
+title: Britain's Worst Rail Disaster Started With a Shift Change ⚠️
+series: The Last Hours
+description: On May 22, 1915, signalmen forgot a stationary train on the main line at Quintinshill, triggering a catastrophic
+  multi-train collision and fire.
+sources:
+- https://en.wikipedia.org/wiki/Quintinshill_rail_disaster
+- https://www.theguardian.com/world/2001/may/18/transport.uk
+- https://www.bbc.co.uk/programmes/p02rnx3m
+hashtags:
+- '#history'
+- '#railway'
+- '#scotland'
+tags:
+- Quintinshill rail disaster
+- '1915'
+- train crash
+- World War One
+- British history
+voice:
+  engine: kokoro
+  voice: am_fenrir
+  speed: 1.15
+beats:
+- text: Signalmen hid a passenger train on the main line and forgot.
+  emphasis:
+  - hid a passenger train
+  - forgot
+  visual:
+    source: url
+    url: https://upload.wikimedia.org/wikipedia/commons/0/09/Electric_signal_frame%2C_Blackfriars_Junction%2C_Southern_Railway_%28CJ_Allen%2C_Steel_Highway%2C_1928%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    credit:
+      source: Wikimedia Commons
+      title: Electric signal frame, Blackfriars Junction, Southern Railway (CJ Allen, Steel Highway, 1928).jpg
+      credit: Andy Dingley (scanner)
+      license: Public domain
+      url: https://commons.wikimedia.org/wiki/File:Electric_signal_frame,_Blackfriars_Junction,_Southern_Railway_(CJ_Allen,_Steel_Highway,_1928).jpg
+    fallbacks:
+    - color
+    motion: pan_right
+    focus_x: 0.5
+    focus_y: 0.5
+- text: On May 22, 1915, a troop train carrying soldiers slammed into the stalled service.
+  emphasis:
+  - May 22, 1915
+  - troop train
+  sfx: whoosh
+  visual:
+    source: url
+    url: https://upload.wikimedia.org/wikipedia/commons/4/49/A_company_of_the_British_infantry_on_the_march_%28Photo_24-263%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    credit:
+      source: Wikimedia Commons
+      title: A company of the British infantry on the march (Photo 24-263).jpg
+      credit: H. D. Girdwood
+      license: Public domain
+      url: https://commons.wikimedia.org/wiki/File:A_company_of_the_British_infantry_on_the_march_(Photo_24-263).jpg
+    fallbacks:
+    - card
+    - color
+    motion: pan_left
+    focus_x: 0.5
+    focus_y: 0.5
+    card:
+      kind: dateline
+      big: May 22, 1915
+      small: Quintinshill, Scotland
+- text: An express train travelling in the opposite direction immediately ploughed into the wreckage.
+  emphasis:
+  - express train
+  - ploughed into the wreckage
+  sfx: riser
+  visual:
+    source: url
+    url: https://thumb.wikimedia.org/wikipedia/commons/thumb/5/55/CalamitasSeebach-18840713i.jpg/3840px-CalamitasSeebach-18840713i.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
+    credit:
+      source: Wikimedia Commons
+      title: CalamitasSeebach-18840713i.jpg
+      credit: Unknown authorUnknown author
+      license: Public domain
+      url: https://commons.wikimedia.org/wiki/File:CalamitasSeebach-18840713i.jpg
+    fallbacks:
+    - color
+    motion: pan_right
+    focus_x: 0.5
+    focus_y: 0.5
+- text: Gas from the wooden carriages ignited, starting a massive fire that burned until morning.
+  emphasis:
+  - massive fire
+  - burned until morning
+  sfx: pop
+  pause_after: 0.4
+  visual:
+    reuse: 3
+    motion: zoom_in
+    focus_x: 0.5
+    focus_y: 0.5
+- text: Over two hundred people died in Britain's worst ever rail crash.
+  emphasis:
+  - Over two hundred people
+  - worst ever rail crash
+  visual:
+    source: url
+    url: https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d8/Funeral_procession_for_victims_of_the_Gretna_rail_disaster%2C_1915.jpg/1920px-Funeral_procession_for_victims_of_the_Gretna_rail_disaster%2C_1915.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
+    credit:
+      source: Wikimedia Commons
+      title: Funeral procession for victims of the Gretna rail disaster, 1915.jpg
+      credit: A photograph which appeared in the Edinburgh Evening News
+      license: Public domain
+      url: https://commons.wikimedia.org/wiki/File:Funeral_procession_for_victims_of_the_Gretna_rail_disaster,_1915.jpg
+    fallbacks:
+    - card
+    - color
+    motion: pan_right
+    focus_x: 0.5
+    focus_y: 0.5
+    card:
+      kind: fact
+      big: '227'
+      small: official death toll
+- text: Signalmen left a train on the main line.
+  emphasis:
+  - left a train
+  - main line
+  visual:
+    reuse: 1
+    motion: zoom_out
+    focus_x: 0.5
+    focus_y: 0.5
+depth_motion: true
+hook_text: THE SHIFT CHANGE

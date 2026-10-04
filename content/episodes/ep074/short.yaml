@@ -1,0 +1,138 @@
+id: ep074
+title: Why Did One Firefighter Start a Second Fire? 😳
+series: The Last Hours
+description: On August 5, 1949, fifteen smokejumpers faced a sudden blow-up on the Mann Gulch fire in Montana's Helena National
+  Forest.
+sources:
+- https://archive.org/download/nfsl_2_43087/p17053coll2_43087_djvu.txt
+- https://foresthistory.org/research-explore/us-forest-service-history/policy-and-law/fire-u-s-forest-service/famous-fires/mann-gulch-fire-1949/
+hashtags:
+- '#history'
+- '#wildfire'
+- '#montana'
+tags:
+- Mann Gulch fire
+- smokejumpers
+- Montana
+- '1949'
+- Wag Dodge
+voice:
+  engine: kokoro
+  voice: am_fenrir
+  speed: 1.15
+beats:
+- text: Foreman Wag Dodge survived a raging wildfire by starting his own.
+  emphasis:
+  - starting his own
+  sfx: whoosh
+  visual:
+    source: url
+    url: https://thumb.wikimedia.org/wikipedia/commons/thumb/2/21/Smokejumpers-_In_Action_-_Montana_-_DPLA_-_bb073d5dacc2d4d1d11271e1240a3ac6.jpg/3840px-Smokejumpers-_In_Action_-_Montana_-_DPLA_-_bb073d5dacc2d4d1d11271e1240a3ac6.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
+    credit:
+      source: Wikimedia Commons
+      title: Smokejumpers- In Action - Montana - DPLA - bb073d5dacc2d4d1d11271e1240a3ac6.jpg
+      credit: Department of Agriculture. Forest Service. 7/1/1905
+      license: Public domain
+      url: https://commons.wikimedia.org/wiki/File:Smokejumpers-_In_Action_-_Montana_-_DPLA_-_bb073d5dacc2d4d1d11271e1240a3ac6.jpg
+    fallbacks:
+    - color
+    motion: pan_right
+    focus_x: 0.5
+    focus_y: 0.45
+    box:
+    - 0.35
+    - 0.2
+    - 0.65
+    - 0.55
+- text: The fire was reported on August 5, 1949.
+  emphasis:
+  - August 5, 1949
+  visual:
+    source: card
+    card:
+      kind: dateline
+      big: August 5, 1949
+      small: Helena National Forest
+    motion: zoom_in
+- text: Fifteen smokejumpers arrived to combat the blaze.
+  emphasis:
+  - fifteen smokejumpers
+  visual:
+    source: url
+    url: https://thumb.wikimedia.org/wikipedia/commons/thumb/6/63/Smokejumper_trainees_%2823735091831%29.jpg/960px-Smokejumper_trainees_%2823735091831%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
+    credit:
+      source: Wikimedia Commons
+      title: Smokejumper trainees (23735091831).jpg
+      credit: U.S. Forest Service- Pacific Northwest Region
+      license: Public domain
+      url: https://commons.wikimedia.org/wiki/File:Smokejumper_trainees_(23735091831).jpg
+    fallbacks:
+    - color
+    motion: pan_right
+    focus_x: 0.5
+    focus_y: 0.5
+- text: High winds suddenly expanded the fire and cut their route.
+  emphasis:
+  - suddenly expanded
+  sfx: whoosh
+  visual:
+    source: url
+    url: https://upload.wikimedia.org/wikipedia/commons/4/49/Pyrocumulus_Cloud_Station_Fire_08312009_Aerial_View.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    credit:
+      source: Wikimedia Commons
+      title: Pyrocumulus Cloud Station Fire 08312009 Aerial View.jpg
+      credit: Gayle Jones as Rdhettinger
+      license: Public domain
+      url: https://commons.wikimedia.org/wiki/File:Pyrocumulus_Cloud_Station_Fire_08312009_Aerial_View.jpg
+    fallbacks:
+    - color
+    motion: pan_up
+    focus_x: 0.5
+    focus_y: 0.5
+- text: Dodge stepped into his burn area and lay down quietly.
+  emphasis:
+  - burn area
+  sfx: riser
+  pause_after: 0.4
+  visual:
+    source: url
+    url: https://thumb.wikimedia.org/wikipedia/commons/thumb/3/38/Looking_east_at_Mann_Gulch_5.1.13_%288902730917%29.jpg/1280px-Looking_east_at_Mann_Gulch_5.1.13_%288902730917%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
+    credit:
+      source: Wikimedia Commons
+      title: Looking east at Mann Gulch 5.1.13 (8902730917).jpg
+      credit: Forest Service Northern Region from Missoula, MT, USA
+      license: Public domain
+      url: https://commons.wikimedia.org/wiki/File:Looking_east_at_Mann_Gulch_5.1.13_(8902730917).jpg
+    fallbacks:
+    - color
+    motion: pan_right
+    focus_x: 0.5
+    focus_y: 0.5
+- text: His fleeing crew ran past him and were overtaken by flames.
+  emphasis:
+  - overtaken by flames
+  sfx: pop
+  visual:
+    source: url
+    url: https://upload.wikimedia.org/wikipedia/commons/e/e1/MannGulchFire.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    credit:
+      source: Wikimedia Commons
+      title: MannGulchFire.jpg
+      credit: Unknown authorUnknown author
+      license: Public domain
+      url: https://commons.wikimedia.org/wiki/File:MannGulchFire.jpg
+    fallbacks:
+    - color
+    motion: zoom_in
+    focus_x: 0.5
+    focus_y: 0.5
+- text: Foreman Wag Dodge survived a raging wildfire by starting his own.
+  emphasis:
+  - survived a raging wildfire
+  visual:
+    reuse: 1
+    motion: zoom_out
+    focus_x: 0.5
+    focus_y: 0.45
+depth_motion: true
+hook_text: STARTING FIRE TO SURVIVE

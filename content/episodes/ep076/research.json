@@ -1,0 +1,315 @@
+{
+  "viable": true,
+  "reason": "The provided sources fully support a surprising 45-second story with at least 10 multiply-sourced claims.",
+  "story": "On May 22, 1915, two signalmen changing shifts late at Quintinshill box in Scotland hid a local passenger train on the main southbound line. Distracted by a newspaper and paperwork, they forgot it was there. Minutes later, a troop train carrying 500 soldiers from the Royal Scots to Gallipoli slammed into the stationary local service at full speed. Before survivors could escape, a northbound express train ploughed into the wreckage. Obsolete wooden carriages equipped with gas lighting ruptured, igniting a horrific inferno that burned for nearly a day. Over 200 people died, making it Britain's deadliest rail disaster.",
+  "angle": "Two signalmen hid a passenger train on the main line during a late shift change, forgot about it entirely, and allowed a troop train to thunder straight into it at 80 miles per hour.",
+  "claims": [
+    {
+      "claim": "The Quintinshill rail disaster occurred on 22 May 1915.",
+      "sources": [
+        "S1",
+        "S2"
+      ],
+      "evidence": [
+        {
+          "source": "S1",
+          "quote": "The Quintinshill rail disaster was a multi-train rail crash which occurred on 22 May 1915 outside the Quintinshill signal box near Gretna Green in Dumfriesshire, Scotland."
+        },
+        {
+          "source": "S2",
+          "quote": "The Quintinshill Rail disaster occurred on the 22nd of May, 1915 near Gretna Green in Dumfriesshire."
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim": "It remains the worst rail disaster in British history.",
+      "sources": [
+        "S1",
+        "S2"
+      ],
+      "evidence": [
+        {
+          "source": "S1",
+          "quote": "It resulted in the deaths of over 200 people and remains the worst rail disaster in British history."
+        },
+        {
+          "source": "S2",
+          "quote": "It remains the worst UK rail crash in terms of loss of life."
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim": "The crash involved a troop train colliding with a stationary local passenger train.",
+      "sources": [
+        "S1",
+        "S2"
+      ],
+      "evidence": [
+        {
+          "source": "S1",
+          "quote": "The first collision occurred when a southbound troop train travelling from Larbert to Liverpool collided with the stationary local train."
+        },
+        {
+          "source": "S2",
+          "quote": "Five trains were involved: a troop train collided with a stationary local train and the disaster was compounded when, moments later, a northbound express train thundered into the wreckage"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim": "A northbound express train struck the wreckage a minute later.",
+      "sources": [
+        "S1",
+        "S3"
+      ],
+      "evidence": [
+        {
+          "source": "S1",
+          "quote": "A minute later the wreckage was struck by a northbound sleeping car express train travelling from London Euston to Glasgow Central."
+        },
+        {
+          "source": "S3",
+          "quote": "Barely 30 seconds after the initial impact, an express train travelling in the opposite direction ploughed into the mass of wreckage at nearly 50mph."
+        }
+      ],
+      "confidence": "medium"
+    },
+    {
+      "claim": "Gas from the lighting system ignited, starting a massive fire.",
+      "sources": [
+        "S1",
+        "S2"
+      ],
+      "evidence": [
+        {
+          "source": "S1",
+          "quote": "Gas from the Pintsch gas lighting system of the old wooden carriages of the troop train ignited, starting a fire which soon engulfed all five trains."
+        },
+        {
+          "source": "S2",
+          "quote": "The gas tanks on the troop train ruptured, causing a fire so hot it buckled the steel carriages of the express."
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim": "The soldiers on the troop train were primarily from the 1/7th Battalion of the Royal Scots heading for Gallipoli.",
+      "sources": [
+        "S1",
+        "S2"
+      ],
+      "evidence": [
+        {
+          "source": "S1",
+          "quote": "Those killed were mainly Territorial soldiers from the 1/7th (Leith) Battalion, the Royal Scots heading for Gallipoli."
+        },
+        {
+          "source": "S2",
+          "quote": "The 7th Royal Scots – who were travelling aboard the troop train – accounted for 216 of those killed. The battalion had been en-route from Larbert to Liverpool, and then on to join the conflict at Gallipoli."
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim": "The official death toll was over 200 people (around 226 to 227).",
+      "sources": [
+        "S1",
+        "S2"
+      ],
+      "evidence": [
+        {
+          "source": "S1",
+          "quote": "The official death toll was 227 (215 soldiers, nine other passengers and three railway employees)"
+        },
+        {
+          "source": "S2",
+          "quote": "Estimates of the dead are put at around 230, with 246 injured."
+        }
+      ],
+      "confidence": "medium"
+    },
+    {
+      "claim": "The disaster was caused by the neglect of rules by two signalmen, George Meakin and James Tinsley.",
+      "sources": [
+        "S1",
+        "S2"
+      ],
+      "evidence": [
+        {
+          "source": "S1",
+          "quote": "An official inquiry, completed on 17 June 1915 for the Board of Trade, found the cause of the collision to be neglect of the rules by two signalmen."
+        },
+        {
+          "source": "S2",
+          "quote": "After a series of investigations, including a fatal accident inquiry and a coroner’s inquest, the negligence of two local signalmen, James Tinsley and George Meakin was held to blame for the disaster."
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim": "The signalmen had shunted the northbound local train onto the southbound main line and then forgot about it.",
+      "sources": [
+        "S1",
+        "S3"
+      ],
+      "evidence": [
+        {
+          "source": "S1",
+          "quote": "With the northbound loop occupied, the northbound local train had been reversed onto the southbound line to allow passage of two late-running northbound sleepers. Its presence was then overlooked, and the southbound troop train was cleared for passage."
+        },
+        {
+          "source": "S3",
+          "quote": "a couple of signalmen simply forgot they had left a train standing on the main line."
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim": "The fire burned until the morning of the next day.",
+      "sources": [
+        "S1",
+        "S2"
+      ],
+      "evidence": [
+        {
+          "source": "S1",
+          "quote": "the fire was not extinguished until the morning of the next day, despite the best efforts of railway staff and the Carlisle fire brigade."
+        },
+        {
+          "source": "S2",
+          "quote": "It was not until the following day that the blaze was fully put out."
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim": "Peter Stoddart was among the survivors of the troop train.",
+      "sources": [
+        "S1",
+        "S3"
+      ],
+      "evidence": [
+        {
+          "source": "S1",
+          "quote": "The last known survivor of the accident, Peter Stoddart, was interviewed near Wisbech by Michael Simkins in around 1985."
+        },
+        {
+          "source": "S3",
+          "quote": "\"Dear Sir, I am a survivor of the train smash at Quintinshill and am willing to assist you in any way I can. Yours faithfully: Peter Stoddart.\""
+        }
+      ],
+      "confidence": "high"
+    }
+  ],
+  "disputed": [
+    "Whether the signalman James Tinsley suffered from epilepsy which contributed to his forgetfulness (noted in police/Crown records and modern documentaries, but not standard in the Board of Trade inquiry report; attribute or leave out)",
+    "Allegations of mercy killings or officers shooting trapped men in the fire (mentioned in survivor recollections and press reports, but never formally documented or officially recorded; attribute as 'according to some accounts')",
+    "The precise final casualty numbers, which vary slightly between sources (e.g., 227 official vs. 230 estimated; use approximate terms)"
+  ],
+  "visuals": [
+    {
+      "subject": "Caledonian Railway steam locomotive period photograph",
+      "queries": [
+        "Caledonian Railway steam locomotive",
+        "Caledonian Railway engine"
+      ]
+    },
+    {
+      "subject": "Gretna Green railway station historical image",
+      "queries": [
+        "Gretna railway station",
+        "Gretna Green old station"
+      ]
+    },
+    {
+      "subject": "Rosebank Cemetery Edinburgh war memorial",
+      "queries": [
+        "Rosebank Cemetery Edinburgh",
+        "Rosebank Cemetery war memorial"
+      ]
+    },
+    {
+      "subject": "Vintage British railway signal box interior",
+      "queries": [
+        "Victorian railway signal box interior",
+        "British railway signal box levers"
+      ]
+    },
+    {
+      "subject": "World War One British soldiers marching",
+      "queries": [
+        "British infantry World War One marching",
+        "Territorial force World War One soldiers"
+      ]
+    },
+    {
+      "subject": "Newspaper front page reporting a historical disaster",
+      "queries": [
+        "Vintage newspaper front page 1915",
+        "British newspaper World War One"
+      ]
+    },
+    {
+      "subject": "Railway accident wreckage historical photograph",
+      "queries": [
+        "Railway crash wreckage 1915",
+        "Train accident historical photograph"
+      ]
+    },
+    {
+      "subject": "Map of Scottish Borders and Gretna railway lines",
+      "queries": [
+        "Gretna Green map historical",
+        "Caledonian Main Line map"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "label": "S1",
+      "url": "https://en.wikipedia.org/wiki/Quintinshill_rail_disaster",
+      "title": "Quintinshill rail disaster",
+      "site": "wikipedia.org"
+    },
+    {
+      "label": "S2",
+      "url": "https://www.bbc.co.uk/programmes/p02rnx3m",
+      "title": "BBC - World War One At Home, Gretna, Scotland: The Quintinshill Rail Disaster",
+      "site": "bbc.co.uk"
+    },
+    {
+      "label": "S3",
+      "url": "https://www.theguardian.com/world/2001/may/18/transport.uk",
+      "title": "Michael Simkins on a 1915 train crash",
+      "site": "theguardian.com"
+    },
+    {
+      "label": "S4",
+      "url": "https://www.nrscotland.gov.uk/learning-and-events/first-world-war/quintinshill-disaster-22-may-1915/",
+      "title": "Quintinshill Disaster 22 May 1915",
+      "site": "nrscotland.gov.uk"
+    },
+    {
+      "label": "S5",
+      "url": "https://www.railmagazine.com/trains/heritage/quintinshill-britain-s-worst-rail-disaster",
+      "title": "Quintinshill: Britain’s worst rail disaster",
+      "site": "railmagazine.com"
+    },
+    {
+      "label": "S6",
+      "url": "https://wondrousstories.com/quintinshill-rail-disaster/",
+      "title": "Quintinshill Disaster: Britain's Worst Rail Crash (1915)",
+      "site": "wondrousstories.com"
+    },
+    {
+      "label": "S7",
+      "url": "https://www.railwaysarchive.co.uk/docsummary.php?docID=158",
+      "title": "Accident Returns: Extract for Accident at Quintinshill, Gretna on 22 May 1915",
+      "site": "railwaysarchive.co.uk"
+    }
+  ],
+  "topic": "Quintinshill rail disaster (1915): two signalmen changing shifts late forgot a train on the main line, causing the UK's deadliest rail crash",
+  "series": "The Last Hours"
+}

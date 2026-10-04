@@ -182,10 +182,10 @@ event is told for its gore. Space topics belong to the sister channel Universe R
 - Sack of Rome (410): the first time in 800 years that a foreign enemy took the city of Rome
 - Late Bronze Age collapse: around 1177 BC, nearly every great civilization of the eastern Mediterranean fell within a few decades — parked (ep029)
 - Fall of Tenochtitlan (1521): smallpox killed huge numbers of the city's people before and during the siege
-- Battle of the Teutoburg Forest (9 AD): three Roman legions were wiped out, and Augustus is said to have cried "Varus, give me back my legions!" — making (ep075)
+- Battle of the Teutoburg Forest (9 AD): three Roman legions were wiped out, and Augustus is said to have cried "Varus, give me back my legions!" — dropped (ep075)
 - Siege of Baghdad (1258): accounts say the Tigris ran black with ink from the books thrown into it
 - Third Punic War (146 BC): Rome destroyed Carthage, but the story that it salted the earth appears to be a modern invention
-- Library of Alexandria: it wasn't lost in one great fire, but declined over centuries — making (ep071)
+- Library of Alexandria: it wasn't lost in one great fire, but declined over centuries — dropped (ep071)
 - Reichstag fire (1933): the German parliament building burned just weeks after Hitler took power, instantly triggering emergency decrees that ended democracy — parked (ep036)
 - Ashanti Empire (1900): the Golden Stool was demanded by the British governor who did not know he was asking to sit on a sacred spirit shrine, sparking an uprising
 - Siege of the Sogdian Rock (327 BC): Alexander the Great's soldiers used iron tent pegs as pitons to scale a 'vertical' cliff at night to capture an unreachable fortress

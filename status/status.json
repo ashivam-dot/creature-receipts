@@ -1,58 +1,82 @@
 {
-  "updated_at": "2026-10-04T21:02:43+05:30",
+  "updated_at": "2026-10-04T23:05:58+05:30",
   "day": 3,
   "result": "ok",
   "run": {
-    "host": "github-actions",
-    "id": "37213359729",
-    "number": "47",
-    "trigger": "workflow_dispatch",
-    "started_at": "2026-10-04T21:02:29+05:30",
-    "started_at_utc": "2026-10-04T15:32:29+00:00",
-    "seconds": 14
+    "host": "modal",
+    "id": "ta-01M43ZQFYDFGFGVZWJC4S3R13R",
+    "number": null,
+    "trigger": "schedule",
+    "started_at": "2026-10-04T23:05:10+05:30",
+    "started_at_utc": "2026-10-04T17:35:10+00:00",
+    "seconds": 48
   },
   "stages": [
-    {
-      "name": "collect",
-      "ok": true,
-      "detail": "ep066 unfinished (OutOfQuota: no model in ('gemini-3.8-flash', 'gemini-3.7-flash', 'gemini-3.6-flash', 'gemini-3.5-flash', 'gemini-3-flash-preview', 'gemini-flash-latest', 'ovh:Qwen3.5-397B-A17B') has free quota left today); ep068 still working (0.1 h); ep069 unfinished (VisualCheckFailed: ep069 beat 2: no verified alternative (Shows a map instead of the attack)); ep070 still working (0.2 h); ep071 still working (0.2 h); ep072 still working (0.1 h); ep073 still working (0.1 h); ep074 unfinished (RuntimeError: a checked accident source is unavailable; research cannot substitute another page)",
-      "seconds": 7.4
-    },
     {
       "name": "deploy",
       "ok": true,
       "detail": "",
-      "seconds": 0.9
+      "seconds": 2.0
+    },
+    {
+      "name": "collect",
+      "ok": true,
+      "detail": "ep066 unfinished (OutOfQuota: no model in ('gemini-3.8-flash', 'gemini-3.7-flash', 'gemini-3.6-flash', 'gemini-3.5-flash', 'gemini-3-flash-preview', 'gemini-flash-latest', 'ovh:Qwen3.5-397B-A17B') has free quota left today); ep068 unfinished (OutOfQuota: no model in ('gemini-3.8-flash', 'gemini-3.7-flash', 'gemini-3.6-flash', 'gemini-3.5-flash', 'gemini-3-flash-preview', 'gemini-flash-latest', 'ovh:Qwen3.5-397B-A17B') has free quota left today); ep070 unfinished (Overloaded: every model in ('gemini-3.8-flash', 'gemini-3.7-flash', 'gemini-3.6-flash', 'gemini-3.5-flash', 'gemini-3-flash-preview'",
+      "seconds": 25.3
     },
     {
       "name": "start ep066",
       "ok": true,
       "detail": "Great Siege of Malta (1565): a handful of knights held off an invading armada against impossible odds, surviving until relief finally arrived",
-      "seconds": 0.6
+      "seconds": 2.1
+    },
+    {
+      "name": "start ep068",
+      "ok": true,
+      "detail": "Wanggongchang Explosion (1626): a massive unexplained blast rocked Beijing, stripping people of their clothes and leaving a silent void",
+      "seconds": 2.1
+    },
+    {
+      "name": "start ep070",
+      "ok": true,
+      "detail": "Great Blizzard of 1888 (1888): commuters stepped into mild spring weather before a sudden whiteout froze New York City in its tracks",
+      "seconds": 1.4
+    },
+    {
+      "name": "start ep072",
+      "ok": true,
+      "detail": "Oppau explosion (1921): a routine blast to break up caked fertilizer preceded a stockpile detonation",
+      "seconds": 1.5
+    },
+    {
+      "name": "start ep073",
+      "ok": true,
+      "detail": "Great Molasses Flood (1919): the leaking tank had been painted brown to hide the leaks",
+      "seconds": 1.4
     },
     {
       "name": "start ep074",
       "ok": true,
       "detail": "Mann Gulch fire (1949): foreman Wag Dodge set an escape fire as his crew fled the advancing wildfire",
-      "seconds": 0.5
-    },
-    {
-      "name": "start ep075",
-      "ok": true,
-      "detail": "Battle of the Teutoburg Forest (9 AD): three Roman legions were wiped out, and Augustus is said to have cried \"Varus, give me back my legions!\"",
-      "seconds": 0.5
+      "seconds": 1.5
     },
     {
       "name": "start ep076",
       "ok": true,
       "detail": "Quintinshill rail disaster (1915): two signalmen changing shifts late forgot a train on the main line, causing the UK's deadliest rail crash",
-      "seconds": 0.5
+      "seconds": 1.4
     }
   ],
   "errors": [],
   "owner_action": [],
   "notes": [
     "ep066 stopped on Gemini's free quota; it resumes in a later run",
+    "ep068 stopped on Gemini's free quota; it resumes in a later run",
+    "ep070 stopped on Gemini's free tier being overloaded; it resumes in a later run",
+    "ep072 stopped on Gemini's free tier being overloaded; it resumes in a later run",
+    "ep073 stopped on Gemini's free quota; it resumes in a later run",
+    "ep074 stopped on Gemini's free quota; it resumes in a later run",
+    "ep076 stopped on Gemini's free quota; it resumes in a later run",
     "draft-only producer: no Buffer, Cloudinary, or Google publisher access"
   ],
   "inventory": {
@@ -66,11 +90,9 @@
       "ep066",
       "ep068",
       "ep070",
-      "ep071",
       "ep072",
       "ep073",
       "ep074",
-      "ep075",
       "ep076"
     ]
   },
@@ -105,19 +127,63 @@
       "overloaded": false
     },
     {
-      "id": "ep069",
+      "id": "ep068",
       "outcome": "unfinished",
-      "topic": "Hugh Glass (1823): after being mauled by a grizzly and left for dead in a shallow grave, he crawled 200 miles to safety but chose to forgive the men who abandoned him",
-      "reason": "VisualCheckFailed: ep069 beat 2: no verified alternative (Shows a map instead of the attack)",
+      "topic": "Wanggongchang Explosion (1626): a massive unexplained blast rocked Beijing, stripping people of their clothes and leaving a silent void",
+      "reason": "OutOfQuota: no model in ('gemini-3.8-flash', 'gemini-3.7-flash', 'gemini-3.6-flash', 'gemini-3.5-flash', 'gemini-3-flash-preview', 'gemini-flash-latest', 'ovh:Qwen3.5-397B-A17B') has free quota left today",
+      "quota": true,
+      "overloaded": false
+    },
+    {
+      "id": "ep070",
+      "outcome": "unfinished",
+      "topic": "Great Blizzard of 1888 (1888): commuters stepped into mild spring weather before a sudden whiteout froze New York City in its tracks",
+      "reason": "Overloaded: every model in ('gemini-3.8-flash', 'gemini-3.7-flash', 'gemini-3.6-flash', 'gemini-3.5-flash', 'gemini-3-flash-preview', 'gemini-flash-latest', 'ovh:Qwen3.5-397B-A17B') with quota left stayed overloaded for 25 minutes",
       "quota": false,
+      "overloaded": true
+    },
+    {
+      "id": "ep071",
+      "outcome": "rejected",
+      "topic": "Library of Alexandria: it wasn't lost in one great fire, but declined over centuries",
+      "reason": "research: only 7 claims have verified quotes from two different sites"
+    },
+    {
+      "id": "ep072",
+      "outcome": "unfinished",
+      "topic": "Oppau explosion (1921): a routine blast to break up caked fertilizer preceded a stockpile detonation",
+      "reason": "Overloaded: every model in ('gemini-3.8-flash', 'gemini-3.7-flash', 'gemini-3.6-flash', 'gemini-3.5-flash', 'gemini-3-flash-preview', 'gemini-flash-latest', 'ovh:Qwen3.5-397B-A17B') with quota left stayed overloaded for 25 minutes",
+      "quota": false,
+      "overloaded": true
+    },
+    {
+      "id": "ep073",
+      "outcome": "unfinished",
+      "topic": "Great Molasses Flood (1919): the leaking tank had been painted brown to hide the leaks",
+      "reason": "OutOfQuota: no model in ('gemini-3.8-flash', 'gemini-3.7-flash', 'gemini-3.6-flash', 'gemini-3.5-flash', 'gemini-3-flash-preview', 'gemini-flash-latest', 'ovh:Qwen3.5-397B-A17B') has free quota left today",
+      "quota": true,
       "overloaded": false
     },
     {
       "id": "ep074",
       "outcome": "unfinished",
       "topic": "Mann Gulch fire (1949): foreman Wag Dodge set an escape fire as his crew fled the advancing wildfire",
-      "reason": "RuntimeError: a checked accident source is unavailable; research cannot substitute another page",
-      "quota": false,
+      "reason": "OutOfQuota: no model in ('gemini-3.8-flash', 'gemini-3.7-flash', 'gemini-3.6-flash', 'gemini-3.5-flash', 'gemini-3-flash-preview', 'gemini-flash-latest', 'ovh:Qwen3.5-397B-A17B') has free quota left today",
+      "quota": true,
+      "overloaded": false
+    },
+    {
+      "id": "ep075",
+      "outcome": "rejected",
+      "topic": "Battle of the Teutoburg Forest (9 AD): three Roman legions were wiped out, and Augustus is said to have cried \"Varus, give me back my legions!\"",
+      "reason": "research: only 7 claims have verified quotes from two different sites"
+    },
+    {
+      "id": "ep076",
+      "outcome": "unfinished",
+      "topic": "Quintinshill rail disaster (1915): two signalmen changing shifts late forgot a train on the main line, causing the UK's deadliest rail crash",
+      "reason": "OutOfQuota: no model in ('gemini-3.8-flash', 'gemini-3.7-flash', 'gemini-3.6-flash', 'gemini-3.5-flash', 'gemini-3-flash-preview', 'gemini-flash-latest', 'ovh:Qwen3.5-397B-A17B') has free quota left today",
+      "quota": true,
       "overloaded": false
     }
   ],
@@ -125,69 +191,74 @@
     {
       "id": "ep066",
       "topic": "Great Siege of Malta (1565): a handful of knights held off an invading armada against impossible odds, surviving until relief finally arrived",
-      "call_id": "fc-01M43RQFY0QW4M2VBHDKV5WF83"
+      "call_id": "fc-01M43ZRXXDF4QMB9GSQ8P230VM"
+    },
+    {
+      "id": "ep068",
+      "topic": "Wanggongchang Explosion (1626): a massive unexplained blast rocked Beijing, stripping people of their clothes and leaving a silent void",
+      "call_id": "fc-01M43ZRZZVNB63SV9F2A9TR057"
+    },
+    {
+      "id": "ep070",
+      "topic": "Great Blizzard of 1888 (1888): commuters stepped into mild spring weather before a sudden whiteout froze New York City in its tracks",
+      "call_id": "fc-01M43ZS1CAG1V45TM7G0PWPS55"
+    },
+    {
+      "id": "ep072",
+      "topic": "Oppau explosion (1921): a routine blast to break up caked fertilizer preceded a stockpile detonation",
+      "call_id": "fc-01M43ZS2TNSZ51YR2EX4ZCQVTT"
+    },
+    {
+      "id": "ep073",
+      "topic": "Great Molasses Flood (1919): the leaking tank had been painted brown to hide the leaks",
+      "call_id": "fc-01M43ZS47THCXNTAPJ1B51ECPA"
     },
     {
       "id": "ep074",
       "topic": "Mann Gulch fire (1949): foreman Wag Dodge set an escape fire as his crew fled the advancing wildfire",
-      "call_id": "fc-01M43RQGEQWX3KG0RM5N2Z4QWV"
-    },
-    {
-      "id": "ep075",
-      "topic": "Battle of the Teutoburg Forest (9 AD): three Roman legions were wiped out, and Augustus is said to have cried \"Varus, give me back my legions!\"",
-      "call_id": "fc-01M43RQGXV5KARDK4CW92N2F5K"
+      "call_id": "fc-01M43ZS5N62NAFWSFZND7AFFFG"
     },
     {
       "id": "ep076",
       "topic": "Quintinshill rail disaster (1915): two signalmen changing shifts late forgot a train on the main line, causing the UK's deadliest rail crash",
-      "call_id": "fc-01M43RQHEDAD1V37E8J85WJN06"
+      "call_id": "fc-01M43ZS7004666FYWMNJWZ42A0"
     }
   ],
   "in_cloud": [
     {
       "id": "ep066",
       "topic": "Great Siege of Malta (1565): a handful of knights held off an invading armada against impossible odds, surviving until relief finally arrived",
-      "spawned_at": "2026-10-04T21:02:41+05:30"
+      "spawned_at": "2026-10-04T23:05:48+05:30"
     },
     {
       "id": "ep068",
       "topic": "Wanggongchang Explosion (1626): a massive unexplained blast rocked Beijing, stripping people of their clothes and leaving a silent void",
-      "spawned_at": "2026-10-04T20:54:30+05:30"
+      "spawned_at": "2026-10-04T23:05:50+05:30"
     },
     {
       "id": "ep070",
       "topic": "Great Blizzard of 1888 (1888): commuters stepped into mild spring weather before a sudden whiteout froze New York City in its tracks",
-      "spawned_at": "2026-10-04T20:49:37+05:30"
-    },
-    {
-      "id": "ep071",
-      "topic": "Library of Alexandria: it wasn't lost in one great fire, but declined over centuries",
-      "spawned_at": "2026-10-04T20:49:38+05:30"
+      "spawned_at": "2026-10-04T23:05:52+05:30"
     },
     {
       "id": "ep072",
       "topic": "Oppau explosion (1921): a routine blast to break up caked fertilizer preceded a stockpile detonation",
-      "spawned_at": "2026-10-04T20:54:31+05:30"
+      "spawned_at": "2026-10-04T23:05:53+05:30"
     },
     {
       "id": "ep073",
       "topic": "Great Molasses Flood (1919): the leaking tank had been painted brown to hide the leaks",
-      "spawned_at": "2026-10-04T20:54:32+05:30"
+      "spawned_at": "2026-10-04T23:05:55+05:30"
     },
     {
       "id": "ep074",
       "topic": "Mann Gulch fire (1949): foreman Wag Dodge set an escape fire as his crew fled the advancing wildfire",
-      "spawned_at": "2026-10-04T21:02:42+05:30"
-    },
-    {
-      "id": "ep075",
-      "topic": "Battle of the Teutoburg Forest (9 AD): three Roman legions were wiped out, and Augustus is said to have cried \"Varus, give me back my legions!\"",
-      "spawned_at": "2026-10-04T21:02:42+05:30"
+      "spawned_at": "2026-10-04T23:05:56+05:30"
     },
     {
       "id": "ep076",
       "topic": "Quintinshill rail disaster (1915): two signalmen changing shifts late forgot a train on the main line, causing the UK's deadliest rail crash",
-      "spawned_at": "2026-10-04T21:02:43+05:30"
+      "spawned_at": "2026-10-04T23:05:58+05:30"
     }
   ],
   "published": [],
@@ -195,33 +266,31 @@
   "failed_posts": [],
   "not_live": [],
   "llm": {
-    "calls": 11,
+    "calls": 31,
     "by_model": {
-      "gemini-3.5-flash": 2,
-      "gemini-3.5-flash-lite": 6,
-      "gemini-3.7-flash": 1,
-      "gemini-3.6-flash": 1,
+      "gemini-3.5-flash-lite": 29,
+      "gemini-3.5-flash": 1,
       "gemini-3-flash-preview": 1
     },
     "out_of_quota": []
   },
   "renders": {
-    "modal": 2,
+    "modal": 7,
     "runner": 0
   },
   "daily_done": "2026-10-04",
-  "minutes_this_month": 68.22790821988333,
-  "minutes_budget": null,
+  "minutes_this_month": 68.0,
+  "minutes_budget": 2000,
   "modal_cost": {
-    "metered": 5.62,
+    "metered": 5.76,
     "billed": 0.0
   },
   "modal_credit": 30.0,
   "capacity": {
-    "cloud": 181,
+    "cloud": 185,
     "runner": 0,
     "runner_minutes": 0,
-    "modal_credit_left": 21.78
+    "modal_credit_left": 22.24
   },
   "made_here": 0,
   "open_topics": 150,
