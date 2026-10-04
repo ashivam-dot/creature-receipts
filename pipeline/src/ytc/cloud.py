@@ -37,6 +37,7 @@ REMOTE_EPISODE = Path("/root/episode")
 # studio.py puts the repo root three folders above its own file: /root, with /root/pipeline/src/ytc/studio.py.
 REMOTE_ROOT = REMOTE_PIPELINE.parent
 APP_NAME = "creature-receipts"
+DEPLOY_WORKSPACE = "aksha-shivam18"
 OUTBOX_VOLUME = "creature-receipts-outbox"
 # Episode folders the writer and reviewer learn from; older ones stay out of the snapshot to keep it small.
 CONTEXT_EPISODES = 40
@@ -431,6 +432,13 @@ def slot_watch() -> list[str]:
 
 def deploy() -> None:
     """Publish this code as the app the studio's runs and workers run in (works from inside a run on Modal too)."""
+    try:
+        workspace = modal.Workspace.from_context().hydrate()
+        name = workspace.name
+    except Exception as exc:
+        raise RuntimeError("Modal deploy workspace could not be verified") from exc
+    if name != DEPLOY_WORKSPACE:
+        raise RuntimeError("Modal deploy workspace differs from pinned producer workspace")
     with modal.enable_output():
         app.deploy(name=APP_NAME)
 

@@ -3,6 +3,7 @@
 import hashlib
 import importlib.util
 import json
+from contextlib import nullcontext
 from pathlib import Path
 from types import SimpleNamespace
 
@@ -29,6 +30,27 @@ def test_publisher_credentials_are_absent_from_producer_mappings():
     verify = _load(ROOT / "kit" / "verify.py", "producer_setup_gate_test")
     assert not set(push.FROM_ENV) & set(cloud.PUBLISHER_ENV)
     assert not set(verify.REQUIRED_ENV) & set(cloud.PUBLISHER_ENV)
+
+
+@pytest.mark.parametrize("workspace_name", ["akshshivam5", None, cloud.DEPLOY_WORKSPACE])
+def test_modal_deploy_requires_pinned_producer_workspace(monkeypatch, workspace_name):
+    deployed = []
+
+    def workspace():
+        if workspace_name is None:
+            raise RuntimeError("workspace context unavailable")
+        return SimpleNamespace(hydrate=lambda: SimpleNamespace(name=workspace_name))
+
+    monkeypatch.setattr(cloud.modal.Workspace, "from_context", workspace)
+    monkeypatch.setattr(cloud.modal, "enable_output", nullcontext)
+    monkeypatch.setattr(cloud, "app", SimpleNamespace(deploy=lambda *, name: deployed.append(name)))
+    if workspace_name == cloud.DEPLOY_WORKSPACE:
+        cloud.deploy()
+        assert deployed == [cloud.APP_NAME]
+    else:
+        with pytest.raises(RuntimeError, match="Modal deploy workspace"):
+            cloud.deploy()
+        assert deployed == []
 
 
 def _load(path: Path, name: str):
