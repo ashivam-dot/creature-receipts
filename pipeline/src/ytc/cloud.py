@@ -69,8 +69,9 @@ PUBLISHER_ENV = ("BUFFER_API_KEY", "BUFFER_YOUTUBE_CHANNEL_ID", "BUFFER_INSTAGRA
 studio_secret = modal.Secret.from_dict({k: v for k in STUDIO_ENV if (v := os.environ.get(k))})
 # Image sources throttle downloads that carry no contact details (visuals._user_agent); the narration is Gemini TTS.
 render_secret = modal.Secret.from_dict({k: v for k in ("YTC_CONTACT", "YTC_GEMINI_API_KEY") if (v := os.environ.get(k))})
-# Everything a studio run uses, the deploy key it pushes with included; made from the Mac (OWNER-CHECKLIST.md).
-run_secret = modal.Secret.from_name("creature-receipts-studio")
+# Producer-only run credentials and a write key for saving drafts. Publisher
+# credentials live only in the separate independent control repository.
+run_secret = modal.Secret.from_name("creature-receipts-producer-only-20261004")
 
 
 def _image(*apt: str) -> modal.Image:
