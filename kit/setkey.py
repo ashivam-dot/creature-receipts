@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Put a key into pipeline/.env without it passing through the chat or the terminal.
 
-    python3 kit/setkey.py BUFFER_API_KEY            # the value is on the clipboard: copied in the browser
+    python3 kit/setkey.py YTC_GEMINI_API_KEY         # the value is on the clipboard: copied in the browser
     python3 kit/setkey.py --modal                   # MODAL_TOKEN_ID and _SECRET from ~/.modal.toml
     python3 kit/setkey.py --google-client ~/Downloads/client_secret_....json
     python3 kit/setkey.py --set YTC_MODAL_CREDIT=30  # settings that aren't secret
@@ -31,8 +31,6 @@ SECRETS = ROOT / "secrets"
 # What each service's keys look like, to catch copying the wrong thing (a URL, a label, half a key).
 SHAPES = {
     "YTC_GEMINI_API_KEY": r"AIza[0-9A-Za-z_-]{35}|AQ\.[0-9A-Za-z_-]{30,}",
-    "CLOUDINARY_URL": r"cloudinary://\d+:[^@\s]+@[A-Za-z0-9_-]+",
-    "BUFFER_API_KEY": r"\S{20,}",
     "MODAL_TOKEN_ID": r"ak-[A-Za-z0-9]+",
     "MODAL_TOKEN_SECRET": r"as-[A-Za-z0-9]+",
     "YTC_MISTRAL_API_KEY": r"[A-Za-z0-9]{24,64}",
@@ -42,10 +40,9 @@ SHAPES = {
     "PIXABAY_API_KEY": r"\S{20,}",
     "CLOUDFLARE_API_TOKEN": r"\S{20,}",
 }
-REQUIRED = ("YTC_CONTACT", "BUFFER_API_KEY", "BUFFER_YOUTUBE_CHANNEL_ID", "CLOUDINARY_URL", "MODAL_TOKEN_ID",
-            "MODAL_TOKEN_SECRET", "YTC_GEMINI_API_KEY")
+REQUIRED = ("YTC_CONTACT", "MODAL_TOKEN_ID", "MODAL_TOKEN_SECRET", "YTC_GEMINI_API_KEY")
 OPTIONAL = ("YTC_MODAL_CREDIT", "YTC_NTFY_TOPIC", "YTC_MISTRAL_API_KEY", "YTC_OPENROUTER_API_KEY", "YTC_CURSOR_API_KEY",
-            "BUFFER_TIKTOK_CHANNEL_ID", "BUFFER_INSTAGRAM_CHANNEL_ID")
+            "PEXELS_API_KEY", "PIXABAY_API_KEY")
 NAME = re.compile(r"[A-Z][A-Z0-9_]{2,60}")
 
 

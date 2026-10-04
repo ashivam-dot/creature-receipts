@@ -1,11 +1,12 @@
 #!/usr/bin/env python3
-"""Copy the studio's keys into the GitHub repository's Actions secrets and variables, which the backup
-studio runs and the watchdog read. Values go to `gh` on stdin; only names are printed.
+"""Copy draft-production keys into the producer repository's Actions secrets and variables.
+Values go to `gh` on stdin; only names are printed. Publisher keys belong to the separate control repository.
 
     python3 kit/push_secrets.py            # the repository in kit/channel.json
     python3 kit/push_secrets.py --dry-run  # list what would be set
 
-Run it again after changing a key (after `python3 pipeline/modal_secret.py modal`, which updates Modal's copy).
+Run it again after changing a draft key. Rebuild Modal's copy separately with
+`python3 pipeline/modal_secret.py modal` after reviewing the key list.
 """
 
 from __future__ import annotations
@@ -19,11 +20,10 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 ENV = ROOT / "pipeline" / ".env"
 # The secrets .github/workflows/*.yml read. YTC_NTFY_TOPIC is also set by pipeline/modal_secret.py.
-FROM_ENV = ("YTC_CONTACT", "BUFFER_API_KEY", "BUFFER_YOUTUBE_CHANNEL_ID", "CLOUDINARY_URL", "MODAL_TOKEN_ID",
+FROM_ENV = ("YTC_CONTACT", "MODAL_TOKEN_ID",
             "MODAL_TOKEN_SECRET", "YTC_GEMINI_API_KEY", "YTC_MISTRAL_API_KEY", "YTC_OPENROUTER_API_KEY",
-            "YTC_CURSOR_API_KEY", "YTC_NTFY_TOPIC", "BUFFER_TIKTOK_CHANNEL_ID", "BUFFER_INSTAGRAM_CHANNEL_ID",
+            "YTC_CURSOR_API_KEY", "YTC_NTFY_TOPIC",
             "PEXELS_API_KEY", "PIXABAY_API_KEY")
-FROM_FILES = {"YTC_GOOGLE_CLIENT": "secrets/client_secret.json", "YTC_GOOGLE_TOKEN": "secrets/token.json"}
 # Actions variables (not secret). YTC_MODAL_CREDIT tells the backup how much Modal credit the month has.
 VARIABLES = {"YTC_MODAL_CREDIT": "1", "YTC_LLM_FIRST": None, "YTC_CURSOR_MODEL": None}
 
@@ -46,12 +46,8 @@ def main() -> None:
     repo = args.repo or json.loads((ROOT / "kit" / "channel.json").read_text(encoding="utf-8"))["repo"]
     values = env_values()
     secrets = {name: values[name] for name in FROM_ENV if values.get(name)}
-    for name, rel in FROM_FILES.items():
-        path = ROOT / rel
-        if path.exists():
-            secrets[name] = path.read_text(encoding="utf-8")
     variables = {name: values.get(name) or default for name, default in VARIABLES.items() if values.get(name) or default}
-    missing = [n for n in list(FROM_ENV) + list(FROM_FILES) if n not in secrets]
+    missing = [n for n in FROM_ENV if n not in secrets]
 
     for name, value in secrets.items():
         if not args.dry_run:
@@ -67,7 +63,7 @@ def main() -> None:
     print(f"{verb} secrets on {repo}: {', '.join(sorted(secrets)) or 'none'}")
     print(f"{verb} variables: {', '.join(f'{k}={v}' for k, v in sorted(variables.items())) or 'none'}")
     if missing:
-        print(f"not set (not in pipeline/.env or secrets/ yet): {', '.join(missing)}")
+        print(f"not set (not in pipeline/.env yet): {', '.join(missing)}")
 
 
 if __name__ == "__main__":

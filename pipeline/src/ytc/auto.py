@@ -1880,7 +1880,11 @@ def _draft_main(produce_count: int | None, daily_mode: str, trigger: str) -> int
             state["daily_done"] = today
             _write_json(STATUS / "state.json", state)
     inv = inventory()
-    if produce_count is None:
+    # Match the main runner's editorial pause. A scheduled run cannot bypass it
+    # with --produce; an explicit manual trial keeps its existing narrow exception.
+    if (produce_count is None or trigger == "schedule") and _automatic_production_paused(run):
+        produce_count = 0
+    elif produce_count is None:
         want = inv["target"] - inv["total"] - len(inv["remote"])
         batch = max(BATCH, len(_resumable(episodes())))
         produce_count = min(batch, want) if want > 0 and (want >= BATCH or inv["making"]) else 0
@@ -1888,6 +1892,11 @@ def _draft_main(produce_count: int | None, daily_mode: str, trigger: str) -> int
         timely = len(urgent([t for t in calendar_topics(today_date) if _available(t, today_date)], today_date))
         if timely:
             produce_count = max(produce_count, len(_resumable(episodes())) + timely)
+        stored = datetime.fromisoformat(state["gemini_quota_until"]) if state.get("gemini_quota_until") else None
+        quota_until = run.quota_until or (stored if stored and _now() < stored else None)
+        if produce_count and quota_until and inv["total"] >= CURSOR_BELOW:
+            run.notes.append(f"Gemini's Flash quota is spent until {quota_until:%H:%M} IST: new Shorts are drafted on the "
+                             "backup models, and each waits for a Flash review after the reset")
     if produce_count > 0:
         produce(run, produce_count, cloud_only=True)
     run.notes.append("draft-only producer: no Buffer, Cloudinary, or Google publisher access")

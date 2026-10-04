@@ -44,8 +44,7 @@ RULES_SECTIONS = ("## Script rules", "## Metadata rules", "## Visual rules", "##
 STATUS_MARK = re.compile(r"\s+—\s+(making|done|dropped|parked)\s+\((ep\d{3})\)\s*$")
 MONTHS = ("Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec")
 MIN_TOPICS, MIN_PER_SERIES = 40, 3
-REQUIRED_ENV = ("YTC_CONTACT", "BUFFER_API_KEY", "BUFFER_YOUTUBE_CHANNEL_ID", "CLOUDINARY_URL", "MODAL_TOKEN_ID",
-                "MODAL_TOKEN_SECRET", "YTC_GEMINI_API_KEY")
+REQUIRED_ENV = ("YTC_CONTACT", "MODAL_TOKEN_ID", "MODAL_TOKEN_SECRET", "YTC_GEMINI_API_KEY")
 NOT_SECRET = {"YTC_CONTACT", "BUFFER_YOUTUBE_CHANNEL_ID", "BUFFER_TIKTOK_CHANNEL_ID", "BUFFER_INSTAGRAM_CHANNEL_ID",
               "YTC_MODAL_CREDIT", "YTC_LLM_FIRST", "YTC_CURSOR_MODEL",
               "YTC_DESCRIPTION_LINKS", "YTC_IMAGE_PROVIDER", "BUFFER_ORG_ID", "YTC_CHROME_PROFILE"}
@@ -268,9 +267,6 @@ def check_predeploy(report: Report, state: dict) -> None:
     for name in REQUIRED_ENV:
         if not values.get(name):
             report.problem(f"{name} isn't set in pipeline/.env (kit/ACCOUNTS.md)")
-    for name, how in (("client_secret.json", "kit/ACCOUNTS.md, step 3"), ("token.json", "`uv run --no-sync ytc auth` in pipeline/")):
-        if not (ROOT / "secrets" / name).exists():
-            report.problem(f"secrets/{name} is missing ({how})")
     remote = subprocess.run(["git", "remote", "get-url", "origin"], cwd=ROOT, capture_output=True, text=True)
     if remote.returncode == 0 and state["repo"].lower() not in remote.stdout.lower():
         report.problem(f"the git remote ({remote.stdout.strip()}) isn't {state['repo']}; fix it or re-run kit/configure.py --github")

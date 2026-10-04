@@ -6,6 +6,9 @@ check each step before moving on. Everything here is on a free plan.
 
 Commands that start with `uv run` go in `pipeline/` and need `uv sync` to have finished.
 
+For History's Last Hours, the producer uses draft-production keys only. The Google OAuth, Buffer, and
+Cloudinary publisher setup below is legacy reference; configure those only in the separate control repository.
+
 | # | Account | Gives the studio | Owner's part |
 |---|---|---|---|
 | 1 | Google (personal) | the identity behind everything | two-step verification on |
@@ -69,8 +72,8 @@ uploads from an unaudited API project are locked to private, so publishing goes 
    such as `Default` or `Profile 2`): `python3 kit/setkey.py --set "YTC_CHROME_PROFILE=<directory>"`.
    Then, in `pipeline/`, run `uv run --no-sync ytc auth`. In the browser he picks his account, then **the new
    channel** (not his personal one), continues past the unverified-app warning, and allows every
-   permission it asks for. That writes `secrets/token.json`. If the studio later reports `invalid_grant`,
-   repeat this step and run `python3 pipeline/modal_secret.py modal` and `python3 kit/push_secrets.py`.
+   permission it asks for. That writes `secrets/token.json`. Publisher sign-in is now managed by the
+   separate control repository; do not copy its Google token into this producer.
 7. Give the studio the channel's ID (the monitor reads the channel's public feed with it). In `pipeline/`:
 
    ```bash
@@ -124,7 +127,7 @@ capped at 40 MB. Hosted copies are deleted two days after a Short goes live.
 
 ## 8. ntfy on his phone
 
-After `python3 pipeline/modal_secret.py` has made the topic (Phase 5): he installs **ntfy** (App Store or
+After `python3 pipeline/modal_secret.py setup` has made the topic (Phase 5): he installs **ntfy** (App Store or
 Google Play), taps **+**, and enters the topic from the `YTC_NTFY_TOPIC` line of `pipeline/.env` on the
 default server. On Android, also allow notifications and turn off battery optimization for ntfy. It
 rings when something needs attention, and sends a summary every morning (after 08:00 IST).
@@ -151,10 +154,11 @@ Cloudflare Pages for free: `npx wrangler login`, then
 ## Where each key lives, once set up
 
 1. `pipeline/.env` and `secrets/` on this Mac. Both are git-ignored.
-2. The Modal secret `<slug>-studio`, which Modal's runs read. `python3 pipeline/modal_secret.py modal`
-   rebuilds it.
+2. The Modal secret `<slug>-studio`, which Modal's runs read. First run
+   `python3 pipeline/modal_secret.py setup` for the deploy key and ntfy topic. Rebuild the
+   draft-only secret explicitly with `python3 pipeline/modal_secret.py modal`.
 3. The repository's Actions secrets, which GitHub's backup runs and the watchdog read.
    `python3 kit/push_secrets.py` sets them.
 
-A changed key goes in all three: `kit/setkey.py`, then `pipeline/modal_secret.py modal`, then
-`kit/push_secrets.py`.
+A changed draft key goes in all three: `kit/setkey.py`, then `pipeline/modal_secret.py modal`, then
+`kit/push_secrets.py`. Buffer, Cloudinary, and Google publisher keys are managed in the separate control repository.

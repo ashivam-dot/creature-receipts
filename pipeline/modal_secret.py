@@ -4,8 +4,8 @@
 2. An ntfy topic for alerts on the owner's phone (YTC_NTFY_TOPIC in pipeline/.env and a GitHub secret).
 3. The Modal secret `creature-receipts-studio`: draft-production keys and the deploy key.
 
-    python3 pipeline/modal_secret.py          # all three; what already exists is kept
-    python3 pipeline/modal_secret.py modal    # only rebuild the Modal secret, after changing a key in pipeline/.env
+    python3 pipeline/modal_secret.py setup    # deploy key and ntfy topic only
+    python3 pipeline/modal_secret.py modal    # explicitly rebuild the Modal secret after reviewing the key list
 """
 
 import json
@@ -89,8 +89,17 @@ def modal_secret() -> None:
     print(f"Modal secret {SECRET}: {', '.join(sorted(payload))}" + (f" (missing: {', '.join(missing)})" if missing else ""))
 
 
-if __name__ == "__main__":
-    if sys.argv[1:] != ["modal"]:
+def main(argv: list[str] | None = None) -> None:
+    command = sys.argv[1:] if argv is None else argv
+    if command == ["setup"]:
         deploy_key()
         ntfy_topic()
-    modal_secret()
+        print("To rebuild the draft-only Modal secret, run: python3 pipeline/modal_secret.py modal")
+    elif command == ["modal"]:
+        modal_secret()
+    else:
+        raise SystemExit("usage: python3 pipeline/modal_secret.py {setup|modal}")
+
+
+if __name__ == "__main__":
+    main()

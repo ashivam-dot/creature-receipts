@@ -140,7 +140,7 @@ under Customization; open `brand/out/` for him.
    quality gate's scores and notes). Then open `ep001.mp4` for the owner.
 3. If the scores are under 4 or the owner doesn't like it, improve the prompts and rules (not the checks),
    delete the episode folder, and make it again. **The owner approves the first Short.** Anything left in
-   `content/episodes/` gets scheduled by the first cloud run.
+   `content/episodes/` stays in the draft inventory for independent review.
 
 **Gate 4:** the first Short passes the gate (every score 4 or more, and no `ytc check` warnings), and the
 owner has approved it.
@@ -150,16 +150,17 @@ owner has approved it.
 1. In `~/youtube-studio`: `git init -b main`, `git add -A`, then run `python3 kit/verify.py --stage predeploy`
    and fix anything it reports. After that, `git commit -m "Studio setup"` and
    `gh repo create <github-user>/<repo> --private --source . --push`.
-2. `python3 pipeline/modal_secret.py` adds a deploy key to the repository (the only thing Modal's runs
-   can push to), makes the ntfy alert topic, and builds the Modal secret. Then run
+2. `python3 pipeline/modal_secret.py setup` adds a deploy key to the repository (the only thing Modal's runs
+   can push to) and makes the ntfy alert topic. Then explicitly run
+   `python3 pipeline/modal_secret.py modal` to rebuild the draft-only Modal secret, followed by
    `python3 kit/push_secrets.py` for GitHub's Actions secrets and variables.
 3. The owner installs **ntfy** on his phone and subscribes to the topic on the `YTC_NTFY_TOPIC` line of
    `pipeline/.env`. Tell him the topic name once, on screen. Anyone who knows it can read the alerts.
 4. First cloud run: `gh workflow run studio --repo <github-user>/<repo> -f produce=3 -f daily=no`. It
-   deploys the Modal app (with its schedule: four runs a day), starts three Shorts on Modal, and schedules
-   ep001 into Buffer. Follow it with `gh run watch`, then `git pull` and read `status/status.json`.
+   deploys the Modal app (with its schedule: four runs a day) and starts three draft workers on Modal.
+   Follow it with `gh run watch`, then `git pull` and read `status/status.json`.
 5. About an hour later, run it again (`-f produce=0`) or wait for the next scheduled run. It collects the
-   finished Shorts and schedules them. Check the queue in Buffer and in `status/status.json`.
+   finished drafts. Check `content/episodes/` and `status/status.json` for their review records.
 6. `gh workflow run watchdog --repo <github-user>/<repo>` sends the day's summary to the owner's phone.
 7. With the owner, finish the YouTube Studio settings from `kit/ACCOUNTS.md` (under "Channel settings").
 

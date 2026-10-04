@@ -70,13 +70,12 @@ When Studio's **Earn** tab says you're eligible (1,000 subscribers and 10 millio
 
 ## If a key changes
 
-A key lives in three places: `pipeline/.env` on this Mac, the Modal secret `creature-receipts-studio` (which
-Modal's runs use), and the repository's Actions secrets (GitHub's backup runs and the watchdog). To change
-one: `python3 kit/setkey.py NAME`, then `python3 pipeline/modal_secret.py modal`, then
-`python3 kit/push_secrets.py`.
+A draft-production key lives in `pipeline/.env` on this Mac, the Modal secret `creature-receipts-studio`,
+and this repository's Actions secrets. Change it with `python3 kit/setkey.py NAME`, then explicitly rebuild
+the Modal secret with `python3 pipeline/modal_secret.py modal`, then run `python3 kit/push_secrets.py`.
+Publisher credentials are managed in the separate control repository.
 
-- **YouTube sign-in** (the studio's playlists and stats fail with `invalid_grant`): in `pipeline/`, run
-  `uv run --no-sync ytc auth`, choose aksha.shivam18@gmail.com, and update the other two places as above.
+- **YouTube sign-in:** renew it in the separate control repository. Do not add its OAuth files to the producer.
 - **Modal token** (this Mac and GitHub's backup use it; runs on Modal don't need one): it's Universe
   Receipts' workspace token. After `uv run --no-sync modal token new` in `pipeline/`, run
   `python3 kit/setkey.py --modal` and `python3 kit/push_secrets.py` in both studios.

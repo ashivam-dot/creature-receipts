@@ -240,9 +240,9 @@ Working with it:
 - **Modal's credit:** `YTC_MODAL_CREDIT` says how much the plan includes ($1 without a card, $30 with one; keep the spend
   limit at $0). It's in the Modal secret for Modal's runs and an Actions
   variable for the backup.
-- **Keys:** Modal's runs read the Modal secret `creature-receipts-studio`, which `python3 pipeline/modal_secret.py
-  modal` rebuilds from `pipeline/.env` and `secrets/`; the backup and the watchdog read the Actions secrets;
-  workers get theirs from the run that deploys them. A changed key goes in all three.
+- **Keys:** Modal's producer runs read the draft-only secret `creature-receipts-studio`. Explicitly rebuild it
+  with `python3 pipeline/modal_secret.py modal`; `kit/push_secrets.py` seeds only draft-production Actions
+  secrets. Publisher credentials stay in the separate control repository.
 
 ## Never
 
