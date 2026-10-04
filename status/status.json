@@ -1,88 +1,34 @@
 {
-  "updated_at": "2026-10-04T11:05:12+05:30",
+  "updated_at": "2026-10-04T11:48:00+05:30",
   "day": 3,
   "result": "ok",
   "run": {
-    "host": "modal",
-    "id": "ta-01M42PH4G7CTM1MT30XYEA8A2R",
-    "number": null,
-    "trigger": "schedule",
-    "started_at": "2026-10-04T11:05:06+05:30",
-    "started_at_utc": "2026-10-04T05:35:06+00:00",
-    "seconds": 5
+    "host": "github-actions",
+    "id": "37182373150",
+    "number": "23",
+    "trigger": "workflow_dispatch",
+    "started_at": "2026-10-04T11:47:58+05:30",
+    "started_at_utc": "2026-10-04T06:17:58+00:00",
+    "seconds": 1
   },
   "stages": [
-    {
-      "name": "deploy",
-      "ok": true,
-      "detail": "",
-      "seconds": 1.2
-    },
-    {
-      "name": "sync",
-      "ok": true,
-      "detail": "5 posts",
-      "seconds": 0.5
-    },
-    {
-      "name": "playlists",
-      "ok": true,
-      "detail": "nothing new",
-      "seconds": 0.6
-    },
-    {
-      "name": "languages",
-      "ok": true,
-      "detail": "every live Short is in English",
-      "seconds": 0.1
-    },
-    {
-      "name": "on youtube",
-      "ok": true,
-      "detail": "every Short sent is public",
-      "seconds": 0.1
-    },
-    {
-      "name": "short reviews",
-      "ok": true,
-      "detail": "no checkpoint due",
-      "seconds": 0.2
-    },
     {
       "name": "collect",
       "ok": true,
       "detail": "nothing in the cloud",
-      "seconds": 0.4
-    },
-    {
-      "name": "buffer channel",
-      "ok": true,
-      "detail": "connected",
-      "seconds": 0.1
-    },
-    {
-      "name": "publish",
-      "ok": true,
-      "detail": "",
       "seconds": 0.6
-    },
-    {
-      "name": "autonomous release policy",
-      "ok": true,
-      "detail": "disabled",
-      "seconds": 0.0
     }
   ],
   "errors": [],
   "owner_action": [],
   "notes": [
-    "new scheduling on editorial hold; automatic production pauses while release is inactive",
-    "automatic production paused: channel scheduling hold is active and autonomous release is disabled"
+    "draft-only producer: no Buffer, Cloudinary, or Google publisher access"
   ],
   "inventory": {
     "total": 3,
     "in_buffer": 0,
     "waiting": 3,
+    "drafts": 0,
     "target": 14,
     "making": [],
     "remote": []
@@ -125,8 +71,8 @@
     "runner": 0
   },
   "daily_done": "2026-10-03",
-  "minutes_this_month": 8.0,
-  "minutes_budget": 2000,
+  "minutes_this_month": 10.022812394266666,
+  "minutes_budget": null,
   "modal_cost": {
     "metered": 5.09,
     "billed": 0.0
