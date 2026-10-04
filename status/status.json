@@ -1,22 +1,34 @@
 {
-  "updated_at": "2026-10-04T15:06:38+05:30",
+  "updated_at": "2026-10-04T15:21:47+05:30",
   "day": 3,
   "result": "ok",
   "run": {
     "host": "github-actions",
-    "id": "37192673010",
-    "number": "32",
+    "id": "37193459378",
+    "number": "33",
     "trigger": "workflow_dispatch",
-    "started_at": "2026-10-04T15:06:34+05:30",
-    "started_at_utc": "2026-10-04T09:36:34+00:00",
-    "seconds": 4
+    "started_at": "2026-10-04T15:21:40+05:30",
+    "started_at_utc": "2026-10-04T09:51:40+00:00",
+    "seconds": 7
   },
   "stages": [
     {
       "name": "collect",
       "ok": true,
-      "detail": "ep065 unfinished (VisualCheckFailed: ep065 beat 2: no verified alternative (shows a different bridge))",
-      "seconds": 3.2
+      "detail": "nothing in the cloud",
+      "seconds": 0.9
+    },
+    {
+      "name": "deploy",
+      "ok": true,
+      "detail": "",
+      "seconds": 2.1
+    },
+    {
+      "name": "start ep065",
+      "ok": true,
+      "detail": "Quebec Bridge collapse (1907): engineers measured a lower-chord bend before it fell; the inquiry found defective design",
+      "seconds": 1.4
     }
   ],
   "errors": [],
@@ -30,10 +42,10 @@
     "waiting": 3,
     "drafts": 1,
     "target": 14,
-    "making": [
+    "making": [],
+    "remote": [
       "ep065"
-    ],
-    "remote": []
+    ]
   },
   "queue": [],
   "waiting": [
@@ -56,43 +68,48 @@
       "score": 24
     }
   ],
-  "made": [
+  "made": [],
+  "spawned": [
     {
       "id": "ep065",
-      "outcome": "unfinished",
       "topic": "Quebec Bridge collapse (1907): engineers measured a lower-chord bend before it fell; the inquiry found defective design",
-      "reason": "VisualCheckFailed: ep065 beat 2: no verified alternative (shows a different bridge)",
-      "quota": false,
-      "overloaded": false
+      "call_id": "fc-01M43577HM508VEWFCJT3ATPQ9"
     }
   ],
-  "spawned": [],
-  "in_cloud": [],
+  "in_cloud": [
+    {
+      "id": "ep065",
+      "topic": "Quebec Bridge collapse (1907): engineers measured a lower-chord bend before it fell; the inquiry found defective design",
+      "spawned_at": "2026-10-04T15:21:45+05:30"
+    }
+  ],
   "published": [],
   "live": 1,
   "failed_posts": [],
   "not_live": [],
   "llm": {
-    "calls": 9,
-    "by_model": {
-      "gemini-3.5-flash": 7,
-      "gemini-3.5-flash-lite": 2
-    },
+    "calls": 0,
+    "by_model": {},
     "out_of_quota": []
   },
   "renders": {
-    "modal": 1,
+    "modal": 0,
     "runner": 0
   },
   "daily_done": "2026-10-04",
-  "minutes_this_month": 38.066301168866666,
+  "minutes_this_month": 40.1231982035,
   "minutes_budget": null,
   "modal_cost": {
     "metered": 5.26,
     "billed": 0.0
   },
   "modal_credit": 30.0,
-  "capacity": null,
+  "capacity": {
+    "cloud": 189,
+    "runner": 0,
+    "runner_minutes": 0,
+    "modal_credit_left": 22.74
+  },
   "made_here": 0,
   "open_topics": 159,
   "parked_topics": 17
