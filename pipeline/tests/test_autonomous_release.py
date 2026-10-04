@@ -13,6 +13,15 @@ from ytc import auto, publish, release
 from ytc.spec import ShortSpec
 
 
+def test_tracked_history_policy_is_youtube_only_and_review_key_is_pinned():
+    config = json.loads(release.POLICY_PATH.read_text(encoding="utf-8"))
+    assert config["enabled"] is False
+    assert config["require_instagram"] is False
+    raw = base64.b64decode(release.REVIEW_PUBLIC_KEY_PATH.read_text(encoding="ascii").strip(), validate=True)
+    assert len(raw) == 32
+    assert hashlib.sha256(raw).hexdigest() == "addacbb4908dc8bda614ce5b301aa8fdb41f726283001030652e97ab5cb89a1e"
+
+
 @pytest.fixture
 def draft(tmp_path, monkeypatch):
     folder = tmp_path / "ep063"

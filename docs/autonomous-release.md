@@ -1,7 +1,9 @@
 # Autonomous exact-media release (dormant)
 
-The tracked `status/autonomous_release_policy.json` has `enabled: false`. The existing
-`status/scheduling_hold.json` remains in force. These changes do not schedule anything.
+The tracked `status/autonomous_release_policy.json` has `enabled: false` and
+`require_instagram: false`. The existing `status/scheduling_hold.json` remains
+in force. The reviewed destination is YouTube only. These changes do not
+schedule anything.
 
 The release path can run only after a later reviewed change sets `enabled` to `true`
 and the automation environment sets `YTC_AUTONOMOUS_RELEASE=1`. Its episode floor
@@ -27,15 +29,22 @@ platform schedules. These checks establish traceability and machine-checked righ
 metadata. The independent reviewer supplies the factual, visual and listening
 judgment that the producer's automated scores and contact sheet cannot establish.
 
-The signing gate remains unconfigured: `kit/independent-review.pub` has no trusted
-key and there is no independent signer. The producer's deploy key can push this
-repository, so a signing workflow and secret in this repository would not create
-an independent trust boundary. A separate control repository or service must own
-the review code and private key, and the producer must not be able to change its
-protected workflow, key, or approval policy. Before activation, pin the trusted
-reviewer's base64 raw Ed25519 public key in a reviewed commit, define a separate
-review and signing process, and isolate the publishing credentials or deployment
-from producer-controlled changes. The external signer must serialize the review
+The trusted Ed25519 public key is pinned in `kit/independent-review.pub`. Its
+private half is held by the separate private
+`ashivam-dot/history-last-hours-control` repository, whose manual signer remains
+disabled. That control repository also has a dormant YouTube-only publisher and
+no Buffer credential. Its owner-only private repository blocks the producer's
+deploy key, but GitHub's current private-repository plan does not permit
+required reviewer or branch protection rules. The existing producer runners
+still hold the old Buffer credential, so actual publisher credential isolation
+has not been achieved. The producer also holds the current Cloudinary write
+credential; the control publisher must copy exact reviewed bytes to a distinct
+control-owned media account so the producer cannot replace or delete the video
+between review and Buffer fetch. Do not enable either release policy until the
+old publisher credentials are removed and revoked from producer environments,
+an independent approval boundary exists, and the control publisher is verified
+end to end.
+The external signer must serialize the review
 without its `signature` using sorted keys, `(',', ':')` separators, UTF-8, and no ASCII
 escaping, prefix those bytes with `history-last-hours-independent-review-v1` and
 a zero byte, then base64-encode an Ed25519 signature of the result. The signed review
@@ -46,40 +55,21 @@ review, failed check, changed file or media URL, or invalid signature keeps the
 draft held. This path cannot publish unattended until the independent control
 boundary and review handoff exist.
 
-When active, the hold allows only this certificate-scoped path to create a YouTube
-post. The policy must explicitly set `require_instagram` to `true` or `false`.
-With `true`, both Buffer channels must be connected, unlocked, and unpaused before
-YouTube scheduling; the run pairs a Reel for the same video and due time while the
-slot is more than 30 minutes ahead. With `false`, certified YouTube scheduling can
-proceed without Instagram. If a History Instagram channel is connected later, set
-its exact `BUFFER_INSTAGRAM_CHANNEL_ID` and the run can add a Reel to a certified
-scheduled or live YouTube post within the retry window. The configured Instagram
-ID must resolve to an Instagram destination in the same Buffer organization as
-the verified History YouTube channel. An unrelated channel, including Mool's
-Instagram, is never selected automatically. A wrong optional Instagram ID is
-reported without holding the YouTube release.
+The intended independent release destination is YouTube only. The separate
+control publisher has no Instagram operation. The legacy producer release code
+still contains optional Instagram behavior, so it must remain dormant and must
+not receive an Instagram destination setting for this channel. An episode-level
+editorial hold still blocks release. New due times must be timezone-aware,
+more than 30 minutes ahead, and no more than 30 days ahead.
 
-If the YouTube slot passes before Instagram accepts the Reel, the next run selects
-a fresh Instagram slot within seven days of the YouTube slot. Existing matching
-posts are searched across Buffer's complete history and reconciled only
-when their text and hosted video URL match. A failed Instagram attempt remains
-retryable, including after YouTube is live; the hosted media is retained while no
-Instagram post is recorded. A matching Buffer error post stops for review. New due
-times must be timezone-aware, more than 30 minutes ahead, and no more than 30 days
-ahead. With optional Instagram, a newly connected account skips new Reels for
-YouTube slots older than seven days, but still reconciles an already accepted Reel.
-With required Instagram, a retry beyond seven days stops for review.
-An episode-level editorial hold still blocks release.
-
-The tracked policy still has `require_instagram: true`, so activation requires a
-connected History Instagram channel and a `BUFFER_INSTAGRAM_CHANNEL_ID` in the
-studio runner. Neither was present in the October 4 read-only audit. A later
-reviewed policy change may set `require_instagram: false` for YouTube-only release.
-For Modal, put `YTC_AUTONOMOUS_RELEASE=1` in the `creature-receipts-studio` secret
-only after that review. Add the exact History Instagram ID there if the account is
-connected. The GitHub backup workflow maps the ID from its
-`BUFFER_INSTAGRAM_CHANNEL_ID` repository secret and the flag from its
-`YTC_AUTONOMOUS_RELEASE` repository variable; both are currently unset. Enable the
-flag on one studio executor at a time. Buffer's current
-create-post mutation has no idempotency key in this client, so two simultaneous
-executors could race between checking for an existing post and creating one.
+The tracked policy chooses YouTube-only release because History has no connected
+Instagram destination. The control repository pins the verified History Buffer
+organization and YouTube channel IDs. Its publisher still requires a new
+control-owned Buffer credential, a separate Cloudinary account and credential,
+an enforced independent approval boundary, and a tested handoff back to the
+producer before activation. Do not set
+`YTC_AUTONOMOUS_RELEASE=1` in Modal or GitHub; the producer's own scheduling path
+must stay dormant while the separate publisher boundary is built. Buffer's
+create-post mutation has no idempotency key in this client, so the control
+publisher serializes its workflow and reconciles complete post history before
+any retry.
