@@ -1,0 +1,127 @@
+id: ep065
+title: Why Did the Quebec Bridge Collapse in 1907? ⚠️
+series: Warnings Ignored
+description: The Quebec Bridge collapsed in 1907 after staff measured a growing bend. The inquiry found that while the structure
+  was already doomed, better judgment could have saved the lives lost.
+sources:
+- https://archive.org/download/reportandplansa01schngoog/reportandplansa01schngoog_djvu.txt
+- https://www.structuremag.org/article/quebec-bridge-the-first-failure-1907/
+hashtags:
+- '#history'
+- '#quebecbridge'
+- '#engineering'
+tags:
+- Quebec Bridge
+- 1907 collapse
+- engineering failure
+- Royal Commission
+- St. Lawrence River
+voice:
+  engine: kokoro
+  voice: am_fenrir
+  speed: 1.15
+beats:
+- text: Two days after staff measured a growing bend, the Quebec Bridge collapsed.
+  emphasis:
+  - growing bend
+  - collapsed
+  visual:
+    source: url
+    url: https://upload.wikimedia.org/wikipedia/commons/2/27/Quebec_bridge_%28HS85-10-18815%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    credit:
+      source: Wikimedia Commons
+      title: Quebec bridge (HS85-10-18815).jpg
+      credit: F. E. Cudworth
+      license: Public domain
+      url: https://commons.wikimedia.org/wiki/File:Quebec_bridge_(HS85-10-18815).jpg
+    fallbacks:
+    - color
+    motion: pan_right
+    focus_x: 0.55
+    focus_y: 0.4
+    box:
+    - 0.06
+    - 0.16
+    - 1.0
+    - 0.66
+- text: On August 27, chord 9-L’s bend had grown.
+  emphasis:
+  - August 27
+  - bend
+  visual:
+    reuse: 1
+    motion: zoom_in
+    focus_x: 0.55
+    focus_y: 0.4
+- text: Some workers called it critical, but the superintendent disagreed.
+  emphasis:
+  - critical
+  - disagreed
+  visual:
+    source: url
+    url: https://thumb.wikimedia.org/wikipedia/commons/thumb/3/35/Quebec_bridge_view_No_48_%28HS85-10-18817%29.jpg/1920px-Quebec_bridge_view_No_48_%28HS85-10-18817%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
+    credit:
+      source: Wikimedia Commons
+      title: Quebec bridge view No 48 (HS85-10-18817).jpg
+      credit: F. E. Cudworth
+      license: Public domain
+      url: https://commons.wikimedia.org/wiki/File:Quebec_bridge_view_No_48_(HS85-10-18817).jpg
+    fallbacks:
+    - color
+    motion: pan_right
+    focus_x: 0.52
+    focus_y: 0.5
+    box:
+    - 0.14
+    - 0.36
+    - 0.91
+    - 0.7
+- text: On August 29, the massive steel structure fell.
+  emphasis:
+  - structure fell
+  visual:
+    source: url
+    url: https://upload.wikimedia.org/wikipedia/commons/9/9f/Collapse_of_the_centre_span_of_the_Quebec_Bridge.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    credit:
+      source: Wikimedia Commons
+      title: Collapse of the centre span of the Quebec Bridge.jpg
+      credit: A. A. Chesterfield / Library and Archives Canada /
+      license: Public domain
+      url: https://commons.wikimedia.org/wiki/File:Collapse_of_the_centre_span_of_the_Quebec_Bridge.jpg
+    fallbacks:
+    - color
+    motion: pan_left
+    focus_x: 0.52
+    focus_y: 0.55
+    box:
+    - 0.32
+    - 0.45
+    - 0.72
+    - 0.6
+- text: A royal commission found the failed lower chords were defectively designed.
+  emphasis:
+  - defectively designed
+  visual:
+    reuse: 4
+    motion: zoom_in
+    focus_x: 0.52
+    focus_y: 0.55
+- text: It did not believe the bridge could be saved after August 27.
+  emphasis:
+  - could be saved
+  visual:
+    reuse: 3
+    motion: zoom_out
+    focus_x: 0.52
+    focus_y: 0.5
+- text: Better judgment, the commission found, could have spared the lives lost.
+  emphasis:
+  - spared
+  - lives lost
+  pause_after: 0.35
+  visual:
+    reuse: 1
+    motion: zoom_out
+    focus_x: 0.55
+    focus_y: 0.4
+depth_motion: true
