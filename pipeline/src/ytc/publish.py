@@ -65,18 +65,24 @@ def _env(name: str) -> str:
     raise RuntimeError(f"{name} is not set in pipeline/.env (see kit/ACCOUNTS.md)")
 
 
-def _require_scheduling_open(spec_path: Path | None = None, *, exact_media_release: bool = False) -> None:
+def _require_scheduling_open(spec_path: Path | None = None, *, exact_media_release: bool = False,
+                             autonomous_release: bool = False) -> None:
     """Apply editorial locks before any Buffer mutation that creates a due post.
 
-    A channel hold may authorize one direct YouTube schedule by exact local media binding. The
-    automatic scheduler, crossposts, queued edits, and resends never use this exception.
+    A channel hold may authorize one direct YouTube schedule by exact local media binding.
+    A separate policy may authorize certified new drafts on YouTube and Instagram.
+    Ordinary scheduling, queued edits, and resends never use these exceptions.
     """
-    if exact_media_release and not SCHEDULING_HOLD.exists():
+    if (exact_media_release or autonomous_release) and not SCHEDULING_HOLD.exists():
         raise RuntimeError("Exact-media release requires the active channel scheduling hold")
     if spec_path is not None and (spec_path.parent / "editorial_hold.json").exists():
         raise RuntimeError(f"{spec_path.parent.name} is on editorial hold; remove editorial_hold.json after repair and review")
     if SCHEDULING_HOLD.exists():
         blocked = "New scheduling is on editorial hold; remove status/scheduling_hold.json only after review"
+        if autonomous_release and spec_path is not None:
+            from .release import validate
+            validate(spec_path)
+            return
         if not exact_media_release or spec_path is None:
             raise RuntimeError(blocked)
         try:
@@ -594,9 +600,10 @@ def _validate_hold(held: dict, episode_id: str, binding: dict[str, str] | None =
                            "host the repaired render before scheduling")
 
 
-def schedule(spec_path: Path, when: datetime | None = None, *, reviewed_release: bool = False) -> dict:
+def schedule(spec_path: Path, when: datetime | None = None, *, reviewed_release: bool = False,
+             autonomous_release: bool = False) -> dict:
     spec_path = spec_path.resolve()
-    _require_scheduling_open(spec_path, exact_media_release=reviewed_release)
+    _require_scheduling_open(spec_path, exact_media_release=reviewed_release, autonomous_release=autonomous_release)
     spec = ShortSpec.load(spec_path)
     folder = spec_path.parent
     record_path = folder / "publish.json"
@@ -606,31 +613,42 @@ def schedule(spec_path: Path, when: datetime | None = None, *, reviewed_release:
     video = folder / f"{spec.id}.mp4"
     held_path = folder / "hold.json"
     held = json.loads(held_path.read_text(encoding="utf-8")) if held_path.exists() else None
-    if reviewed_release and (not held or not held.get("media_url") or not held.get("media_public_id")):
+    if (reviewed_release or autonomous_release) and (not held or not held.get("media_url") or not held.get("media_public_id")):
         raise RuntimeError(f"{spec.id} reviewed release requires a pre-hosted, bound hold.json")
     if held is not None:
         _validate_hold(held, spec.id)
     if held is None:
         _stamp_manifest_media(folder, spec.id)
     binding = media_binding(spec_path, spec.id)
-    _require_scheduling_open(spec_path, exact_media_release=reviewed_release)
+    _require_scheduling_open(spec_path, exact_media_release=reviewed_release, autonomous_release=autonomous_release)
     if held is not None:
         _validate_hold(held, spec.id, binding)
     if held is not None:
         verify_hosted_media(held["media_url"], binding["media_sha256"])
-        _require_scheduling_open(spec_path, exact_media_release=reviewed_release)
+        _require_scheduling_open(spec_path, exact_media_release=reviewed_release, autonomous_release=autonomous_release)
     manifest = json.loads((folder / "work" / "manifest.json").read_text(encoding="utf-8"))
 
     text = description(spec, manifest)
-    recent = posts(since=datetime.now(AUDIENCE_TZ) - timedelta(days=30))
+    recent_start = (datetime.fromisoformat(json.loads((folder / "topic.json").read_text(encoding="utf-8"))["started_at"])
+                    - timedelta(days=1)) if autonomous_release else datetime.now(AUDIENCE_TZ) - timedelta(days=30)
+    recent = posts(since=recent_start)
     # A run that stopped after Buffer took the post, before its record was saved, would otherwise post it twice.
     # Matched on the Short's own description, which leads the text: the credits after it are laid out by whichever
     # version of this code posted it.
     lead = text.split("\n\n", 1)[0]
-    if twin := next((p for p in recent if (p.get("text") or "").split("\n\n", 1)[0] == lead
-                     and p["status"] not in ("error", "draft")), None):
+    matches = [p for p in recent if p.get("text") == text] if autonomous_release else [
+        p for p in recent if (p.get("text") or "").split("\n\n", 1)[0] == lead]
+    if autonomous_release and len(matches) > 1:
+        raise RuntimeError(f"Multiple Buffer posts match {spec.id}; inspect before autonomous release")
+    if autonomous_release and matches and matches[0]["status"] in ("error", "draft"):
+        raise RuntimeError(f"Matching Buffer post {matches[0]['id']} is {matches[0]['status']}; inspect it")
+    if twin := next((p for p in matches if p["status"] not in ("error", "draft")), None):
         if reviewed_release:
             raise RuntimeError(f"Existing Buffer post {twin['id']} matches {spec.id}; inspect it before a reviewed release")
+        if autonomous_release:
+            remote = post(twin["id"])
+            if not remote or remote.get("video") != held["media_url"] or remote.get("text") != text:
+                raise RuntimeError(f"Existing Buffer post {twin['id']} has unverified media or text")
         log.warning("%s is already Buffer post %s; recording it instead of posting it again", spec.id, twin["id"])
         return _record(folder, spec, twin, held["media_public_id"] if held else f"creaturereceipts/{spec.id}",
                        held["media_url"] if held else None, binding)
@@ -660,6 +678,7 @@ def schedule(spec_path: Path, when: datetime | None = None, *, reviewed_release:
         "assets": [{"video": {"url": media_url}}],
         "metadata": _metadata(spec),
     }
+    _require_scheduling_open(spec_path, exact_media_release=reviewed_release, autonomous_release=autonomous_release)
     result = _buffer(mutation, {"input": payload})["createPost"]
     if result["__typename"] != "PostActionSuccess":
         if not held:
@@ -715,11 +734,18 @@ def _crosspost_metadata(service: str, spec: ShortSpec) -> dict:
     raise ValueError(f"no cross-posting to {service}")
 
 
-def crosspost(spec_path: Path, service: str, channel_id: str, media_url: str, when: datetime) -> dict:
+def crosspost(spec_path: Path, service: str, channel_id: str, media_url: str, when: datetime,
+              *, autonomous_release: bool = False) -> dict:
     """Schedule a Short natively on a TikTok or Instagram channel in Buffer, the same video file as its YouTube
     post (no watermark), due `when`: {"id", "status", "due_at"}."""
     spec_path = spec_path.resolve()
-    _require_scheduling_open(spec_path)
+    _require_scheduling_open(spec_path, autonomous_release=autonomous_release)
+    if autonomous_release:
+        if service != "instagram":
+            raise RuntimeError("autonomous release supports Instagram only")
+        from .release import instagram_channel_id, validate
+        if channel_id != instagram_channel_id() or media_url != validate(spec_path, hosted=True)["media_url"]:
+            raise RuntimeError("Instagram destination or media differs from the release certificate")
     spec = ShortSpec.load(spec_path)
     mutation = """
     mutation Create($input: CreatePostInput!) {
@@ -738,6 +764,7 @@ def crosspost(spec_path: Path, service: str, channel_id: str, media_url: str, wh
         "assets": [{"video": {"url": media_url}}],
         "metadata": _crosspost_metadata(service, spec),
     }
+    _require_scheduling_open(spec_path, autonomous_release=autonomous_release)
     result = _buffer(mutation, {"input": payload})["createPost"]
     if result["__typename"] != "PostActionSuccess":
         raise RuntimeError(f"Buffer rejected the {service} post of {spec.id}: {result.get('message')}")

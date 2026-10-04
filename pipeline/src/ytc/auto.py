@@ -1193,7 +1193,8 @@ def publish_waiting(run: Run) -> None:
     from .publish import AUDIENCE_TZ, BUFFER_QUEUE_LIMIT, SCHEDULING_HOLD, SLOTS, next_slots, posts, schedule
 
     if SCHEDULING_HOLD.exists():
-        run.notes.append("new scheduling on editorial hold; production continues")
+        from .release import schedule_waiting
+        schedule_waiting(run)
         return
 
     eps = episodes()

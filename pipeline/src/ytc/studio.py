@@ -7,6 +7,7 @@ episode up where it left off.
 
 from __future__ import annotations
 
+import hashlib
 import json
 import logging
 import os
@@ -396,7 +397,10 @@ def produce(topic: str, series: str, episode_id: str | None = None, *, at: str |
         verdict = review(folder, script, result, episode_id, visuals)
         final = len(notes["rounds"]) >= FIX_ROUNDS
         passed = _passes(result, verdict, final)
-        notes["rounds"].append({"at": datetime.now(IST).isoformat(timespec="seconds"), "check": _summary(result), **verdict,
+        with video.open("rb") as rendered:
+            media_sha256 = hashlib.file_digest(rendered, "sha256").hexdigest()
+        notes["rounds"].append({"at": datetime.now(IST).isoformat(timespec="seconds"), "check": _summary(result),
+                                "media_sha256": media_sha256, **verdict,
                                 "passed": passed})
         best = notes.get("best_round")
         if best is None or not (folder / BEST).exists() or _standing(notes["rounds"][-1]) > _standing(notes["rounds"][best - 1]):
@@ -455,6 +459,13 @@ def produce(topic: str, series: str, episode_id: str | None = None, *, at: str |
     verdict = notes["rounds"][notes.get("kept_round", len(notes["rounds"])) - 1]
     write_research_md(folder, research, script, visuals, notes, episode_id)
     held = hold(spec_path, {"scores": verdict["scores"], "anniversary": meta.get("at")})
+    if int(episode_id.removeprefix("ep")) >= 63:
+        from .release import certify
+        try:
+            certify(folder)
+        except Exception as err:
+            (folder / "release_certificate.json").unlink(missing_ok=True)
+            log.warning("%s has no autonomous release certificate: %s", episode_id, err)
     return {"id": episode_id, "outcome": "ready", "topic": meta["topic"], "title": script["title"],
             "scores": verdict["scores"], "media_url": held["media_url"], "renders": len(notes["rounds"])}
 
