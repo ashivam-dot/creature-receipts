@@ -1,22 +1,52 @@
 {
-  "updated_at": "2026-10-04T17:24:19+05:30",
+  "updated_at": "2026-10-04T20:14:14+05:30",
   "day": 3,
   "result": "ok",
   "run": {
     "host": "github-actions",
-    "id": "37200260167",
-    "number": "42",
+    "id": "37210307222",
+    "number": "43",
     "trigger": "workflow_dispatch",
-    "started_at": "2026-10-04T17:24:15+05:30",
-    "started_at_utc": "2026-10-04T11:54:15+00:00",
-    "seconds": 4
+    "started_at": "2026-10-04T20:14:00+05:30",
+    "started_at_utc": "2026-10-04T14:44:00+00:00",
+    "seconds": 14
   },
   "stages": [
     {
       "name": "collect",
       "ok": true,
-      "detail": "ep065 ready",
-      "seconds": 3.1
+      "detail": "nothing in the cloud",
+      "seconds": 4.6
+    },
+    {
+      "name": "deploy",
+      "ok": true,
+      "detail": "",
+      "seconds": 2.4
+    },
+    {
+      "name": "start ep066",
+      "ok": true,
+      "detail": "Great Siege of Malta (1565): a handful of knights held off an invading armada against impossible odds, surviving until relief finally arrived",
+      "seconds": 1.4
+    },
+    {
+      "name": "start ep067",
+      "ok": true,
+      "detail": "Sinking of the Titanic (1912): the only Japanese survivor, Masabumi Hosono, was publicly shamed and lost his government job in Japan for not dying honorably with the other passengers",
+      "seconds": 0.7
+    },
+    {
+      "name": "start ep068",
+      "ok": true,
+      "detail": "Wanggongchang Explosion (1626): a massive unexplained blast rocked Beijing, stripping people of their clothes and leaving a silent void",
+      "seconds": 0.7
+    },
+    {
+      "name": "start ep069",
+      "ok": true,
+      "detail": "Hugh Glass (1823): after being mauled by a grizzly and left for dead in a shallow grave, he crawled 200 miles to safety but chose to forgive the men who abandoned him",
+      "seconds": 1.2
     }
   ],
   "errors": [],
@@ -31,7 +61,12 @@
     "drafts": 0,
     "target": 14,
     "making": [],
-    "remote": []
+    "remote": [
+      "ep066",
+      "ep067",
+      "ep068",
+      "ep069"
+    ]
   },
   "queue": [],
   "waiting": [
@@ -54,49 +89,79 @@
       "score": 24
     }
   ],
-  "made": [
+  "made": [],
+  "spawned": [
     {
-      "id": "ep065",
-      "outcome": "ready",
-      "topic": "Quebec Bridge collapse (1907): engineers measured a lower-chord bend before it fell; the inquiry found defective design",
-      "title": "The Bend Measured Before Quebec Bridge Fell",
-      "scores": {
-        "hook": 4,
-        "clarity": 4,
-        "payoff": 4,
-        "visuals": 4,
-        "loop": 4
-      },
-      "draft": "drafts/ep065-a9db4b64870336122c7b00a7c6a0a584d503bb4d7636bc4175569997d3975bb1.mp4"
+      "id": "ep066",
+      "topic": "Great Siege of Malta (1565): a handful of knights held off an invading armada against impossible odds, surviving until relief finally arrived",
+      "call_id": "fc-01M43NYP1XJBJAM3VBNT2WJSH8"
+    },
+    {
+      "id": "ep067",
+      "topic": "Sinking of the Titanic (1912): the only Japanese survivor, Masabumi Hosono, was publicly shamed and lost his government job in Japan for not dying honorably with the other passengers",
+      "call_id": "fc-01M43NYPQG9XE5HHW6P9YFVHXN"
+    },
+    {
+      "id": "ep068",
+      "topic": "Wanggongchang Explosion (1626): a massive unexplained blast rocked Beijing, stripping people of their clothes and leaving a silent void",
+      "call_id": "fc-01M43NYQDG4WW0SEDKTZ4KXWHC"
+    },
+    {
+      "id": "ep069",
+      "topic": "Hugh Glass (1823): after being mauled by a grizzly and left for dead in a shallow grave, he crawled 200 miles to safety but chose to forgive the men who abandoned him",
+      "call_id": "fc-01M43NYRMAP3B6A93WKXV7RETP"
     }
   ],
-  "spawned": [],
-  "in_cloud": [],
+  "in_cloud": [
+    {
+      "id": "ep066",
+      "topic": "Great Siege of Malta (1565): a handful of knights held off an invading armada against impossible odds, surviving until relief finally arrived",
+      "spawned_at": "2026-10-04T20:14:11+05:30"
+    },
+    {
+      "id": "ep067",
+      "topic": "Sinking of the Titanic (1912): the only Japanese survivor, Masabumi Hosono, was publicly shamed and lost his government job in Japan for not dying honorably with the other passengers",
+      "spawned_at": "2026-10-04T20:14:12+05:30"
+    },
+    {
+      "id": "ep068",
+      "topic": "Wanggongchang Explosion (1626): a massive unexplained blast rocked Beijing, stripping people of their clothes and leaving a silent void",
+      "spawned_at": "2026-10-04T20:14:12+05:30"
+    },
+    {
+      "id": "ep069",
+      "topic": "Hugh Glass (1823): after being mauled by a grizzly and left for dead in a shallow grave, he crawled 200 miles to safety but chose to forgive the men who abandoned him",
+      "spawned_at": "2026-10-04T20:14:14+05:30"
+    }
+  ],
   "published": [],
   "live": 1,
   "failed_posts": [],
   "not_live": [],
   "llm": {
-    "calls": 1,
-    "by_model": {
-      "gemini-3.7-flash": 1
-    },
+    "calls": 0,
+    "by_model": {},
     "out_of_quota": []
   },
   "renders": {
-    "modal": 1,
+    "modal": 0,
     "runner": 0
   },
   "daily_done": "2026-10-04",
-  "minutes_this_month": 58.065446621300005,
+  "minutes_this_month": 60.23372056083333,
   "minutes_budget": null,
   "modal_cost": {
-    "metered": 5.19,
+    "metered": 5.2,
     "billed": 0.0
   },
   "modal_credit": 30.0,
-  "capacity": null,
+  "capacity": {
+    "cloud": 190,
+    "runner": 0,
+    "runner_minutes": 0,
+    "modal_credit_left": 22.8
+  },
   "made_here": 0,
-  "open_topics": 159,
+  "open_topics": 155,
   "parked_topics": 17
 }

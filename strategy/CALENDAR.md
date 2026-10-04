@@ -71,9 +71,9 @@ event is told for its gore. Space topics belong to the sister channel Universe R
 - Port Chicago disaster (1944): untested munitions were loaded by untrained men in a race against time, causing the largest US home-front disaster of WWII — parked (ep052)
 - Victoria Hall disaster (1883): a floor bolt narrowed a swing door at the lower landing as children left a performance for prizes — making (ep056)
 - Burning of Smyrna (1922): the fire engulfed the city as refugees crowded the quay; its origin and foreign naval response require careful source review — making (ep058)
-- Wanggongchang Explosion (1626): a massive unexplained blast rocked Beijing, stripping people of their clothes and leaving a silent void
+- Wanggongchang Explosion (1626): a massive unexplained blast rocked Beijing, stripping people of their clothes and leaving a silent void — making (ep068)
 - Great Blizzard of 1888 (1888): commuters stepped into mild spring weather before a sudden whiteout froze New York City in its tracks
-- Great Siege of Malta (1565): a handful of knights held off an invading armada against impossible odds, surviving until relief finally arrived
+- Great Siege of Malta (1565): a handful of knights held off an invading armada against impossible odds, surviving until relief finally arrived — making (ep066)
 - Schoolhouse Blizzard (1888): a warm morning lured children to school without coats before a wall of ice struck at recess — making (ep060)
 - Battle of Myeongnyang (1597): Admiral Yi defeated 133 Japanese warships with only 13 vessels by using a whirlpool-filled strait — dropped (ep062)
 - Quintinshill rail disaster (1915): two signalmen changing shifts late forgot a train on the main line, causing the UK's deadliest rail crash
@@ -242,6 +242,6 @@ event is told for its gore. Space topics belong to the sister channel Universe R
 - Survival of Alexander Selkirk (1704): the real Robinson Crusoe lived alone on an island for 4 years because he refused to stay on a ship he correctly predicted was unseaworthy and would sink
 - Survival of Jan Baalsrud (1943): after his sabotage mission failed, he survived the Arctic for months and amputated nine of his own toes with a pocketknife to stop gangrene from killing him
 - 1867 Virgin Islands earthquake and tsunami (1867): a massive wave carried the USS Monongahela over the rooftops of the town before the receding water pulled it safely back into the harbor
-- Hugh Glass (1823): after being mauled by a grizzly and left for dead in a shallow grave, he crawled 200 miles to safety but chose to forgive the men who abandoned him
-- Sinking of the Titanic (1912): the only Japanese survivor, Masabumi Hosono, was publicly shamed and lost his government job in Japan for not dying honorably with the other passengers
+- Hugh Glass (1823): after being mauled by a grizzly and left for dead in a shallow grave, he crawled 200 miles to safety but chose to forgive the men who abandoned him — making (ep069)
+- Sinking of the Titanic (1912): the only Japanese survivor, Masabumi Hosono, was publicly shamed and lost his government job in Japan for not dying honorably with the other passengers — making (ep067)
 - 1842 retreat from Kabul (1842): surgeon William Brydon was the only member of a 16,000-strong British army column to reach safety, surviving a sword cut because he stuffed a magazine into his hat for warmth
