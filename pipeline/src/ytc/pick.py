@@ -122,6 +122,8 @@ isn't about a document; it is a diagram whose labels are small or not in English
 make out; or it shows something the line only compares the subject to instead of the subject. A period picture
 or a later painting that sets the scene is ok, and so are ruins, a wreck, or artifacts when the line is about
 what was found or what remains.
+Do not treat a generic building, document, weapon, or person as a match to a named school, ship, accident,
+location, or person. A scene from a different event is also a mismatch, even when it is from the same century.
 Give the problem in a few words, or "" when it is ok.
 
 Story: {story}
@@ -278,8 +280,12 @@ def _ask(beats: list[dict], numbers: list[int], per_beat: dict[int, list[dict]],
     return labels, picks
 
 
+class VisualCheckFailed(RuntimeError):
+    """An image could not be cleared for this historical story."""
+
+
 def _verify(beats: list[dict], chosen: dict[int, dict], story: str, purpose: str) -> dict[int, str]:
-    """Beats whose chosen picture has a clear problem, with the problem; {} when the check itself fails."""
+    """Return image problems, and hold the draft if the check is unavailable or incomplete."""
     if not chosen:
         return {}
     parts: list = [VERIFY_PROMPT.format(story=story)]
@@ -287,13 +293,61 @@ def _verify(beats: list[dict], chosen: dict[int, dict], story: str, purpose: str
         parts += [f"\nBeat {n}: \"{beats[n - 1]['text']}\" (picture: {candidate['title']})", candidate["image"]]
     try:
         answer = llm.generate(parts, schema=VERIFY_SCHEMA, models=llm.LIGHT, purpose=purpose)
-    except Exception as err:  # the reviewer still looks at every frame after the render
-        log.warning("%s failed (%s); keeping the picks unchecked", purpose, err)
-        return {}
-    flagged = {c["beat"]: c.get("problem") or "flagged" for c in answer.get("checks", []) if not c.get("ok") and c.get("beat") in chosen}
+    except Exception as err:
+        raise VisualCheckFailed(f"{purpose}: image verification unavailable ({type(err).__name__})") from err
+    checks = answer.get("checks") if isinstance(answer, dict) else None
+    if (not isinstance(checks, list) or len(checks) != len(chosen)
+            or any(not isinstance(c, dict) or type(c.get("beat")) is not int
+                   or type(c.get("ok")) is not bool for c in checks)
+            or {c["beat"] for c in checks} != set(chosen)):
+        raise VisualCheckFailed(f"{purpose}: image verification omitted or repeated a beat")
+    flagged = {c["beat"]: c.get("problem") or "flagged" for c in checks if not c["ok"]}
     if flagged:
         log.info("%s: %s", purpose, flagged)
     return flagged
+
+
+_PRESENT_DAY = re.compile(
+    r"\b(?:today|now|modern-day|present-day|still stands?|as it stands|remains today|"
+    r"excavat(?:ion|ed|ions)|archaeologists?|artifacts?|wreckage|ruins)\b", re.I)
+
+
+def _period_problems(beats: list[dict], chosen: dict[int, dict]) -> dict[int, str]:
+    """Keep a modern-looking image out of a historical beat even if a model calls it a match."""
+    years = [year for beat in beats if (year := _year(beat))]
+    story_year = min(years) if years else None
+    if story_year is None or story_year >= MODERN_BEFORE:
+        return {}
+    return {n: "modern-looking image for a historical scene"
+            for n, candidate in chosen.items()
+            if candidate.get("historical", 1.0) < MODERN_BELOW
+            and not _PRESENT_DAY.search(beats[n - 1].get("text", ""))}
+
+
+def _verified_choices(beats: list[dict], chosen: dict[int, tuple], used: set[str], story: str,
+                      episode_id: str) -> dict[int, tuple]:
+    """Allow one alternate, then verify the replacement before spending on narration or render."""
+    originals = {n: item[0] for n, item in chosen.items()}
+    flagged = {**_verify(beats, originals, story, f"{episode_id} image check"),
+               **_period_problems(beats, originals)}
+    replacements: dict[int, dict] = {}
+    for n, problem in flagged.items():
+        candidate, alternatives, pick = chosen[n]
+        alternate = next((a for a in alternatives if a["key"] not in used), None)
+        if alternate is None:
+            raise VisualCheckFailed(f"{episode_id} beat {n}: no verified alternative ({problem})")
+        used.discard(candidate["key"])
+        used.add(alternate["key"])
+        chosen[n] = (alternate, [a for a in alternatives if a is not alternate],
+                     {**pick, "fit": "close", "box": [], "shows": ""})
+        replacements[n] = alternate
+    if replacements:
+        second = {**_verify(beats, replacements, story, f"{episode_id} replacement image check"),
+                  **_period_problems(beats, replacements)}
+        if second:
+            n = min(second)
+            raise VisualCheckFailed(f"{episode_id} beat {n}: replacement image failed ({second[n]})")
+    return chosen
 
 
 def _motion(candidate: dict, previous: str | None, number: int) -> str:
@@ -434,17 +488,7 @@ def pick(script: dict, research: dict, episode_id: str, keep: dict[int, dict] | 
         shown, pool_shown = board.shown()
         labels, picks = _ask(beats, numbers, shown, pool_shown, story, f"{episode_id} images")
         chosen = _assign(numbers, labels, picks, used)
-        flagged = _verify(beats, {n: c[0] for n, c in chosen.items()}, story, f"{episode_id} image check")
-        for n, problem in flagged.items():
-            # The next choice not taken by another beat, unchecked; the reviewer sees every frame after the render.
-            alternates = [c for c in chosen[n][1] if c["key"] not in used]
-            if alternates:
-                used.discard(chosen[n][0]["key"])
-                chosen[n] = (alternates[0], alternates[1:], {**picks.get(n, {}), "fit": "close", "box": [], "shows": ""})
-                used.add(alternates[0]["key"])
-            else:
-                used.discard(chosen[n][0]["key"])
-                del chosen[n]
+        chosen = _verified_choices(beats, chosen, used, story, episode_id)
         previous = None
         for n in range(1, last + 1):
             if n in keep or (loop and n == last):
