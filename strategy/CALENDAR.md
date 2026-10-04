@@ -72,8 +72,8 @@ event is told for its gore. Space topics belong to the sister channel Universe R
 - Wanggongchang Explosion (1626): a massive unexplained blast rocked Beijing, stripping people of their clothes and leaving a silent void
 - Great Blizzard of 1888 (1888): commuters stepped into mild spring weather before a sudden whiteout froze New York City in its tracks
 - Great Siege of Malta (1565): a handful of knights held off an invading armada against impossible odds, surviving until relief finally arrived
-- Schoolhouse Blizzard (1888): a warm morning lured children to school without coats before a wall of ice struck at recess
-- Battle of Myeongnyang (1597): Admiral Yi defeated 133 Japanese warships with only 13 vessels by using a whirlpool-filled strait
+- Schoolhouse Blizzard (1888): a warm morning lured children to school without coats before a wall of ice struck at recess — making (ep060)
+- Battle of Myeongnyang (1597): Admiral Yi defeated 133 Japanese warships with only 13 vessels by using a whirlpool-filled strait — making (ep062)
 - Quintinshill rail disaster (1915): two signalmen changing shifts late forgot a train on the main line, causing the UK's deadliest rail crash
 - Siege of Sidney Street (1911): Winston Churchill personally oversaw the gunfight and ordered firefighters not to save the burning building
 - Gresford disaster (1934): hundreds of miners died because they had swapped shifts to see a football match, putting extra men in the pit
@@ -115,7 +115,7 @@ event is told for its gore. Space topics belong to the sister channel Universe R
 - Port Royal (1692): an earthquake sent much of the pirate haven called "the wickedest city on Earth" into the sea
 - Dunwich: once one of England's major ports, the medieval town has been taken by the sea, church by church
 - Saint-Pierre, Martinique (1902): the "Paris of the Caribbean" was wiped out in minutes by Mount Pelée
-- Roanoke Colony (1590): the only clue the vanished colonists left was the word "CROATOAN" carved into a post
+- Roanoke Colony (1590): the only clue the vanished colonists left was the word "CROATOAN" carved into a post — making (ep059)
 - Ani: the "city of 1,001 churches" lies abandoned on the border of Turkey and Armenia
 - Pavlopetri: one of the oldest known submerged towns lies a few meters under the sea off Greece
 - Unyu (c. 1300): the medieval city in Myanmar was abandoned after a Mongol invasion, leaving behind thousands of pagodas overgrown by jungle
@@ -146,7 +146,7 @@ event is told for its gore. Space topics belong to the sister channel Universe R
 
 ### Fallen Empires
 
-- Fall of Constantinople (1453): by one account, the city fell through a small gate someone left open
+- Fall of Constantinople (1453): by one account, the city fell through a small gate someone left open — making (ep061)
 - Sack of Rome (410): the first time in 800 years that a foreign enemy took the city of Rome
 - Late Bronze Age collapse: around 1177 BC, nearly every great civilization of the eastern Mediterranean fell within a few decades — parked (ep029)
 - Fall of Tenochtitlan (1521): smallpox killed huge numbers of the city's people before and during the siege
