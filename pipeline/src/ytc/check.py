@@ -19,6 +19,12 @@ _OVERRIDE = re.compile(r"\[([^\]]+)\]\(/[^)]*/\)")
 # Single letters are left alone: "X-ray", "V-2".
 _ROMAN = re.compile(r"\b[IVX]{2,}\b")
 _WAR = re.compile(r"\bWar (I{1,2})\b")
+# Whisper may spell the same spoken word in British English, and it often
+# writes Henry the Fifth as Henry V. Keep these equivalences exact: a changed
+# number, person, or other content word must still hold the final video.
+_HENRY_FIFTH = re.compile(r"\bHenry\s+V\b(?![-\w])", re.I)
+_SPELLING_VARIANT = re.compile(r"\b(?:armoured|ploughed)\b", re.I)
+_SAME_SPOKEN_WORD = {"armoured": "armored", "ploughed": "plowed"}
 ASR_MODEL = "small.en"
 # A different English Whisper checkpoint checks only disputed final MP4 audio. It is
 # small enough for the studio worker; neither checkpoint alone can waive a changed
@@ -114,7 +120,7 @@ def speech(media: Path, beats: list[dict]) -> dict:
     # Whisper's own normalizer, so "four million" in the script matches "4 million" in the transcript.
     normalize = EnglishTextNormalizer({})
     script, clock_spans = _script_context(beats, normalize)
-    heard = _words(normalize(_numerals(heard_text)))
+    heard = _words(normalize(_numerals(_speech_equivalents(heard_text))))
     primary = _differences(script, heard)
     result = {"heard": heard_text, "model": ASR_MODEL, "media_sha256": media_sha256,
               "primary_differences": [issue["message"] for issue in primary],
@@ -127,7 +133,7 @@ def speech(media: Path, beats: list[dict]) -> dict:
         result["corroboration"] = {"model": CORROBORATING_ASR_MODEL,
                                    "error": f"{type(error).__name__}: {error}", "resolved": []}
         return result
-    second = _differences(script, _words(normalize(_numerals(second_text))))
+    second = _differences(script, _words(normalize(_numerals(_speech_equivalents(second_text)))))
     resolved, unresolved = _reconcile(primary, second, len(script), clock_spans)
     result["corroboration"] = {"model": CORROBORATING_ASR_MODEL, "heard": second_text,
                                "differences": [issue["message"] for issue in second], "resolved": resolved}
@@ -159,10 +165,10 @@ def _differences(script: list[str], heard: list[str]) -> list[dict]:
 
 def _script_context(beats: list[dict], normalize) -> tuple[list[str], set[tuple[int, int]]]:
     scripted_text = " ".join(_OVERRIDE.sub(r"\1", beat["text"]) for beat in beats)
-    script = _words(normalize(scripted_text))
+    script = _words(normalize(_speech_equivalents(scripted_text)))
     clock_spans = set()
     for match in _CLOCK_TIME.finditer(scripted_text):
-        start = len(_words(normalize(scripted_text[:match.start()])))
+        start = len(_words(normalize(_speech_equivalents(scripted_text[:match.start()]))))
         if script[start:start + 2] == [match.group(1), match.group(2)]:
             clock_spans.add((start, start + 2))
     return script, clock_spans
@@ -251,12 +257,12 @@ def speech_verified(speech_result: dict | None, media_sha256: str | None = None,
 
         normalize = EnglishTextNormalizer({})
         script, clock_spans = _script_context(beats, normalize)
-        actual_primary = _differences(script, _words(normalize(_numerals(speech_result["heard"]))))
+        actual_primary = _differences(script, _words(normalize(_numerals(_speech_equivalents(speech_result["heard"])))))
         if primary != [issue["message"] for issue in actual_primary]:
             return False
         if not primary:
             return True
-        actual_second = _differences(script, _words(normalize(_numerals(corroboration["heard"]))))
+        actual_second = _differences(script, _words(normalize(_numerals(_speech_equivalents(corroboration["heard"])))))
         resolved, unresolved = _reconcile(actual_primary, actual_second, len(script), clock_spans)
         return (corroboration["differences"] == [issue["message"] for issue in actual_second]
                 and corroboration["resolved"] == resolved and speech_result["differences"] == unresolved)
@@ -270,6 +276,12 @@ def _messages(items) -> bool:
 
 def _words(text: str) -> list[str]:
     return [word for word in text.split() if any(char.isalnum() for char in word)]
+
+
+def _speech_equivalents(text: str) -> str:
+    """Canonicalize only known ways ASR writes the same spoken ep064 words."""
+    text = _HENRY_FIFTH.sub("Henry the Fifth", text)
+    return _SPELLING_VARIANT.sub(lambda match: _SAME_SPOKEN_WORD[match.group().casefold()], text)
 
 
 def _numerals(text: str) -> str:

@@ -75,6 +75,28 @@ def test_clean_primary_audio_does_not_load_second_model(video, monkeypatch):
     assert checker.speech_verified(result, result["media_sha256"], beats)
 
 
+def test_ep064_equivalent_spellings_and_henry_numeral_clear_without_second_model(video, monkeypatch):
+    beats = [{"text": line} for line in (
+        "How did armored French knights drown in the mud at Agincourt?",
+        "In 1415, King Henry the Fifth faced a much larger French army.",
+        "Heavy rain had turned the freshly plowed battlefield into thick mud.",
+        "Armored French fighters struggled as they advanced through the mud.",
+    )]
+    heard = ("How did armoured French knights drown in the mud at Agincourt? "
+             "In 1415, King Henry V faced a much larger French army. "
+             "Heavy rain had turned the freshly ploughed battlefield into thick mud. "
+             "Armoured French fighters struggled as they advanced through the mud.")
+    result = _speech(video, beats, heard, OSError("second model should not run"), monkeypatch)
+
+    assert result["primary_differences"] == result["differences"] == []
+    assert "corroboration" not in result
+    assert checker.speech_verified(result, result["media_sha256"], beats)
+
+    altered = copy.deepcopy(result)
+    altered["heard"] = heard.replace("Henry V", "Henry VI")
+    assert not checker.speech_verified(altered, result["media_sha256"], beats)
+
+
 @pytest.mark.parametrize("scripted,small", [
     ("The SS Grandcamp exploded.", "The SS Grandchamp exploded."),
     ("The ammonium nitrate burned.", "The ammonium nitrite burned."),
@@ -86,6 +108,11 @@ def test_clean_primary_audio_does_not_load_second_model(video, monkeypatch):
     ("The ship carried coal and iron.", "The ship carried coal or iron."),
     ("The crew stayed in the port.", "The crew stayed port."),
     ("The crew stayed in port.", "The crew stayed in port you all."),
+    ("King Henry the Fifth faced the French army.", "King Henry VI faced the French army."),
+    ("King Henry the Fifth faced the French army.", "King Henry IV faced the French army."),
+    ("Armored French knights advanced.", "Unarmored French knights advanced."),
+    ("The freshly plowed battlefield trapped knights.", "The freshly flooded battlefield trapped knights."),
+    ("Armored French knights advanced.", "Armoured English knights advanced."),
 ])
 def test_names_sources_numbers_and_negation_stay_blocked_even_when_base_matches(
         video, monkeypatch, scripted, small):
