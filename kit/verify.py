@@ -154,6 +154,8 @@ def check_configured(report: Report, state: dict) -> None:
 def check_adapted(report: Report, state: dict) -> None:
     if state.get("channel_id", configure.NO_CHANNEL_ID) == configure.NO_CHANNEL_ID:
         report.problem("no channel ID yet: `python3 kit/configure.py --channel-id UC...` (kit/ACCOUNTS.md, step 3)")
+    # "history Short" is normal wording for this channel, but residue in a copied kit.
+    residue = tuple(r for r in RESIDUE if r != "history Short" or state.get("hashtag") != "history")
     for path in configure.text_files():
         rel = path.relative_to(ROOT).as_posix()
         text = path.read_text(encoding="utf-8")
@@ -161,7 +163,7 @@ def check_adapted(report: Report, state: dict) -> None:
             if "NICHE:" in line:
                 report.problem(f"{rel}:{number}: NICHE marker; rewrite this for the niche, then delete the marker "
                                "(kit/NICHE-ADAPTATION.md)")
-            if rel.startswith(RESIDUE_IN) and (hit := next((r for r in RESIDUE if r in line), None)):
+            if rel.startswith(RESIDUE_IN) and (hit := next((r for r in residue if r in line), None)):
                 report.problem(f"{rel}:{number}: still says {hit!r} (the channel this kit came from)")
     headings, topics, dates = calendar(read("strategy/CALENDAR.md"))
     total = sum(len(t) for t in topics.values())
