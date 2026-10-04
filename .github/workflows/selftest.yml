@@ -1,6 +1,6 @@
 name: selftest
 
-# Re-renders an existing Short on the runner and checks it, the way the studio makes Shorts once Modal's
+# Re-renders a tracked Short on the runner and checks it, the way the studio makes Shorts once Modal's
 # monthly credit is used up. It fetches the images again, so it also tests the image sources from GitHub's
 # network. Nothing is committed or published. Run it after changing the renderer or its dependencies.
 on:
@@ -8,7 +8,7 @@ on:
     inputs:
       episode:
         description: "Episode to render again (epNNN)"
-        default: "ep001"
+        default: "ep054"
 
 permissions:
   contents: read
@@ -28,6 +28,13 @@ jobs:
           if ! [[ "$EPISODE" =~ ^ep[0-9]{3}$ ]]; then echo "episode must look like ep016"; exit 1; fi
 
       - uses: actions/checkout@v7
+
+      - name: Check the fixture
+        run: |
+          if [ ! -f "content/episodes/$EPISODE/short.yaml" ]; then
+            echo "content/episodes/$EPISODE/short.yaml is absent; choose a tracked episode"
+            exit 1
+          fi
 
       - uses: astral-sh/setup-uv@v10.2.0
         with:
@@ -63,5 +70,16 @@ jobs:
         working-directory: pipeline
         run: |
           start=$(date +%s)
-          uv run --no-sync ytc check "../content/episodes/$EPISODE/$EPISODE.mp4"
+          set -o pipefail
+          uv run --no-sync ytc check "../content/episodes/$EPISODE/$EPISODE.mp4" | tee /tmp/history-selftest-check.json
+          python3 - <<'PY'
+          import json
+          from pathlib import Path
+
+          result = json.loads(Path('/tmp/history-selftest-check.json').read_text())
+          speech = result.get('speech') or {}
+          if result.get('warnings') or speech.get('error') or speech.get('differences') != []:
+              raise SystemExit('Finished-media check has decode/loudness warnings or speech errors/differences')
+          print('Finished-media checks passed')
+          PY
           echo "check took $(( $(date +%s) - start )) s"

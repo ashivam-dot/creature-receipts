@@ -236,6 +236,11 @@ def review(folder: Path, script: dict, result: dict, episode_id: str, visuals: l
 def _passes(result: dict, verdict: dict, final: bool) -> bool:
     if result["warnings"] or any(verdict["scores"][k] < PASS_SCORE for k in GATE):
         return False
+    speech = result.get("speech")
+    if not isinstance(speech, dict) or speech.get("error") or speech.get("differences") != []:
+        # A judge may suggest a pronunciation fix, but cannot clear a failed or
+        # mismatched recognition of the exact encoded video being hosted.
+        return False
     # A final-round score cannot waive an identified wrong image or pronunciation.
     # If a source-matched picture is unavailable, the editor can use a clearly
     # labelled card; the issue must be resolved before hosting the episode.
@@ -252,7 +257,10 @@ _BEST_FILES = ("script.json", "visuals.json", "short.yaml", "sheet.jpg", "work/m
 def _standing(round_: dict) -> tuple:
     """How good a reviewed round is: passing by the final rule first, then its lowest score, total, and frames."""
     scores = round_["scores"]
-    passes = _passes({"warnings": round_["check"]["warnings"]}, round_, final=True)
+    check = round_["check"]
+    passes = _passes({"warnings": check["warnings"], "speech": {
+        "differences": check.get("speech_differences"), "error": check.get("speech_error")
+    }}, round_, final=True)
     return (passes, min(scores.values()), sum(scores.values()), -len(round_["frames"]), -len(round_["speech"]))
 
 
