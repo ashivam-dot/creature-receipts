@@ -1,52 +1,34 @@
 {
-  "updated_at": "2026-10-04T12:42:17+05:30",
+  "updated_at": "2026-10-04T12:55:35+05:30",
   "day": 3,
   "result": "ok",
   "run": {
     "host": "github-actions",
-    "id": "37184733771",
-    "number": "24",
+    "id": "37185696426",
+    "number": "25",
     "trigger": "workflow_dispatch",
-    "started_at": "2026-10-04T12:35:51+05:30",
-    "started_at_utc": "2026-10-04T07:05:51+00:00",
-    "seconds": 385
+    "started_at": "2026-10-04T12:55:21+05:30",
+    "started_at_utc": "2026-10-04T07:25:21+00:00",
+    "seconds": 14
   },
   "stages": [
     {
       "name": "collect",
       "ok": true,
       "detail": "nothing in the cloud",
-      "seconds": 0.7
+      "seconds": 0.5
     },
     {
-      "name": "timely topics",
+      "name": "deploy",
       "ok": true,
-      "detail": "0 added",
-      "seconds": 94.0
+      "detail": "",
+      "seconds": 1.1
     },
     {
-      "name": "sourced accident topics",
+      "name": "start ep063",
       "ok": true,
-      "detail": "1 added",
-      "seconds": 0.1
-    },
-    {
-      "name": "strongest stories",
-      "ok": true,
-      "detail": "21 added",
-      "seconds": 261.2
-    },
-    {
-      "name": "new topics",
-      "ok": true,
-      "detail": "5 added",
-      "seconds": 28.6
-    },
-    {
-      "name": "report",
-      "ok": true,
-      "detail": "day-003.md",
-      "seconds": 0.2
+      "detail": "Texas City disaster (1947): a fire aboard the Grandcamp preceded its 9:12 explosion, and another ship exploded the next day",
+      "seconds": 0.9
     }
   ],
   "errors": [],
@@ -61,7 +43,9 @@
     "drafts": 0,
     "target": 14,
     "making": [],
-    "remote": []
+    "remote": [
+      "ep063"
+    ]
   },
   "queue": [],
   "waiting": [
@@ -85,18 +69,27 @@
     }
   ],
   "made": [],
-  "spawned": [],
-  "in_cloud": [],
+  "spawned": [
+    {
+      "id": "ep063",
+      "topic": "Texas City disaster (1947): a fire aboard the Grandcamp preceded its 9:12 explosion, and another ship exploded the next day",
+      "call_id": "fc-01M42WVJMP0WAGH0E321HCZSJE"
+    }
+  ],
+  "in_cloud": [
+    {
+      "id": "ep063",
+      "topic": "Texas City disaster (1947): a fire aboard the Grandcamp preceded its 9:12 explosion, and another ship exploded the next day",
+      "spawned_at": "2026-10-04T12:55:35+05:30"
+    }
+  ],
   "published": [],
   "live": 1,
   "failed_posts": [],
   "not_live": [],
   "llm": {
-    "calls": 5,
-    "by_model": {
-      "gemini-3.6-flash": 1,
-      "gemini-3-flash-preview": 4
-    },
+    "calls": 0,
+    "by_model": {},
     "out_of_quota": []
   },
   "renders": {
@@ -104,15 +97,20 @@
     "runner": 0
   },
   "daily_done": "2026-10-04",
-  "minutes_this_month": 18.4235376907,
+  "minutes_this_month": 20.22693088005,
   "minutes_budget": null,
   "modal_cost": {
     "metered": 5.09,
     "billed": 0.0
   },
   "modal_credit": 30.0,
-  "capacity": null,
+  "capacity": {
+    "cloud": 190,
+    "runner": 0,
+    "runner_minutes": 0,
+    "modal_credit_left": 22.91
+  },
   "made_here": 0,
-  "open_topics": 144,
+  "open_topics": 143,
   "parked_topics": 16
 }
