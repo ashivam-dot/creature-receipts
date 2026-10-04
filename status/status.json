@@ -1,27 +1,34 @@
 {
-  "updated_at": "2026-10-04T15:59:35+05:30",
+  "updated_at": "2026-10-04T17:05:17+05:30",
   "day": 3,
   "result": "ok",
   "run": {
-    "host": "github-actions",
-    "id": "37195506427",
-    "number": "36",
-    "trigger": "workflow_dispatch",
-    "started_at": "2026-10-04T15:59:32+05:30",
-    "started_at_utc": "2026-10-04T10:29:32+00:00",
-    "seconds": 4
+    "host": "modal",
+    "id": "ta-01M43B49E2P9990PMJNKPCKRQR",
+    "number": null,
+    "trigger": "schedule",
+    "started_at": "2026-10-04T17:05:10+05:30",
+    "started_at_utc": "2026-10-04T11:35:10+00:00",
+    "seconds": 6
   },
   "stages": [
     {
+      "name": "deploy",
+      "ok": true,
+      "detail": "",
+      "seconds": 2.2
+    },
+    {
       "name": "collect",
       "ok": true,
-      "detail": "ep065 unfinished (VisualCheckFailed: ep065 beat 5: no verified alternative (modern-looking image for a historical scene))",
-      "seconds": 2.7
+      "detail": "nothing in the cloud",
+      "seconds": 0.7
     }
   ],
   "errors": [],
   "owner_action": [],
   "notes": [
+    "automatic production paused: channel scheduling hold is active and autonomous release is disabled",
     "draft-only producer: no Buffer, Cloudinary, or Google publisher access"
   ],
   "inventory": {
@@ -54,16 +61,7 @@
       "score": 24
     }
   ],
-  "made": [
-    {
-      "id": "ep065",
-      "outcome": "unfinished",
-      "topic": "Quebec Bridge collapse (1907): engineers measured a lower-chord bend before it fell; the inquiry found defective design",
-      "reason": "VisualCheckFailed: ep065 beat 5: no verified alternative (modern-looking image for a historical scene)",
-      "quota": false,
-      "overloaded": false
-    }
-  ],
+  "made": [],
   "spawned": [],
   "in_cloud": [],
   "published": [],
@@ -71,23 +69,19 @@
   "failed_posts": [],
   "not_live": [],
   "llm": {
-    "calls": 4,
-    "by_model": {
-      "gemini-3.7-flash": 1,
-      "gemini-3.5-flash": 2,
-      "gemini-3.5-flash-lite": 1
-    },
+    "calls": 0,
+    "by_model": {},
     "out_of_quota": []
   },
   "renders": {
-    "modal": 1,
+    "modal": 0,
     "runner": 0
   },
   "daily_done": "2026-10-04",
-  "minutes_this_month": 46.0592949533,
-  "minutes_budget": null,
+  "minutes_this_month": 46.0,
+  "minutes_budget": 2000,
   "modal_cost": {
-    "metered": 5.11,
+    "metered": 5.17,
     "billed": 0.0
   },
   "modal_credit": 30.0,
