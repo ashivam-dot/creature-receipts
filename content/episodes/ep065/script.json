@@ -2,21 +2,21 @@
   "hooks": [
     {
       "style": "statement",
-      "text": "Two days after staff measured a growing bend, the Quebec Bridge collapsed."
+      "text": "Staff measured a growing bend. Two days later, the Quebec Bridge fell."
     },
     {
       "style": "question",
-      "text": "Why did the Quebec Bridge collapse after staff measured a growing bend?"
+      "text": "What happened after Quebec Bridge staff measured a growing bend?"
     },
     {
       "style": "contradiction",
-      "text": "The Quebec Bridge was doomed. Its workers' lives might have been spared."
+      "text": "The bridge might have been doomed. The loss of life might have been prevented."
     }
   ],
   "hook_style": "statement",
   "structure": "warning",
-  "title": "Why Did the Quebec Bridge Collapse in 1907? ⚠️",
-  "description": "The Quebec Bridge collapsed in 1907 after staff measured a growing bend. The Royal Commission did not believe the fall could have been prevented after August 27, but said better judgment might have prevented the loss of life.",
+  "title": "The Bend Measured Before Quebec Bridge Fell",
+  "description": "Quebec Bridge staff measured an enlarging lower-chord bend before the 1907 collapse. The Royal Commission did not believe action after August 27 could have prevented the fall, but found better judgment might have prevented the loss of life.",
   "hashtags": [
     "#history",
     "#quebecbridge",
@@ -31,10 +31,10 @@
   ],
   "beats": [
     {
-      "text": "Two days after staff measured a growing bend, the Quebec Bridge collapsed.",
+      "text": "Staff measured a growing bend. Two days later, the Quebec Bridge fell.",
       "emphasis": [
         "growing bend",
-        "collapsed"
+        "the Quebec Bridge fell"
       ],
       "sfx": "none",
       "pause_after": 0.12,
@@ -59,10 +59,10 @@
       }
     },
     {
-      "text": "On August 27, chord 9-L’s bend had grown.",
+      "text": "On August 27, steel member 9-L bent farther.",
       "emphasis": [
         "August 27",
-        "bend"
+        "9-L"
       ],
       "sfx": "none",
       "pause_after": 0.12,
@@ -85,17 +85,17 @@
       }
     },
     {
-      "text": "Some workers called it critical, but the superintendent disagreed.",
+      "text": "Some called it critical. The superintendent saw no danger.",
       "emphasis": [
         "critical",
-        "disagreed"
+        "no danger"
       ],
       "sfx": "none",
       "pause_after": 0.12,
       "claims": [
         16
       ],
-      "visual": "photograph of workers on the Quebec Bridge, 1907",
+      "visual": "1907 construction photograph cropped on the main pier and landward anchor arm; illustrative bridge context, not a photograph of the discussion",
       "subjects": [
         "Quebec Bridge"
       ],
@@ -111,9 +111,9 @@
       }
     },
     {
-      "text": "On August 29, the massive steel structure fell.",
+      "text": "On August 29, the unfinished bridge collapsed.",
       "emphasis": [
-        "structure fell"
+        "collapsed"
       ],
       "sfx": "none",
       "pause_after": 0.12,
@@ -136,7 +136,7 @@
       }
     },
     {
-      "text": "A royal commission found the failed lower chords were defectively designed.",
+      "text": "The commission found the lower members were defectively designed.",
       "emphasis": [
         "defectively designed"
       ],
@@ -162,18 +162,19 @@
       }
     },
     {
-      "text": "It did not believe the bridge could be saved after August 27.",
+      "text": "It did not believe the fall preventable after August 27.",
       "emphasis": [
-        "could be saved"
+        "did not believe",
+        "fall preventable"
       ],
       "sfx": "none",
       "pause_after": 0.12,
       "claims": [
         8
       ],
-      "visual": "enlarged excerpt of 1908 Royal Commission finding (i), printed page 9",
+      "visual": "The wreckage photographed after the 1907 Quebec Bridge collapse, reproduced in Royal Commission report Appendix 19 figure 20",
       "subjects": [],
-      "year": 1908,
+      "year": 1907,
       "queries": [
         "Quebec Bridge Royal Commission",
         "Quebec Bridge report"
@@ -185,17 +186,19 @@
       }
     },
     {
-      "text": "Better judgment, the commission found, might have prevented the loss of life.",
+      "text": "Seventy-five workers died. Better judgment, the commission said, might have saved lives. The bend had been measured.",
       "emphasis": [
-        "might have prevented",
-        "loss of life"
+        "Seventy-five workers died",
+        "bend had been measured"
       ],
       "sfx": "none",
       "pause_after": 0.35,
       "claims": [
-        15
+        17,
+        15,
+        13
       ],
-      "visual": "Quebec Bridge construction photograph, 1907, return to opening",
+      "visual": "Quebec Bridge construction photograph, 1907, returning to the opening measured bend",
       "subjects": [
         "Quebec Bridge"
       ],
@@ -213,5 +216,5 @@
   ],
   "hook_text": "",
   "loop": true,
-  "better_than_last": "Corrected Beat 7 to be a complete sentence that avoids ending on a dangling word, while preserving the reviewer's desired phrasing and establishing a seamless loop back to Beat 1."
+  "better_than_last": "The exact 1907 sources stay pinned, beat 3 has a distinct photographic composition, and the commission’s qualified human-loss finding ends by echoing the measured bend."
 }

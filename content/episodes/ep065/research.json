@@ -291,6 +291,24 @@
         }
       ],
       "confidence": "high"
+    },
+    {
+      "claim": "The 1907 Quebec Bridge collapse killed 75 workers.",
+      "sources": [
+        "S2",
+        "S3"
+      ],
+      "evidence": [
+        {
+          "source": "S2",
+          "quote": "At that time, the bridge collapsed into the St. Lawrence River, killing 75 men."
+        },
+        {
+          "source": "S3",
+          "quote": "In 1907, 75 workers were killed and 11 injured when the bridge, the design of which was later determined to be insufficient to support its own weight, completely collapsed."
+        }
+      ],
+      "confidence": "high"
     }
   ],
   "disputed": [
@@ -381,6 +399,12 @@
       "url": "https://www.structuremag.org/article/quebec-bridge-the-first-failure-1907/",
       "title": "Quebec Bridge, The First Failure, 1907",
       "site": "structuremag.org"
+    },
+    {
+      "label": "S3",
+      "url": "https://ottawacitizen.com/news/world/the-five-worst-bridge-collapses-in-canadian-history",
+      "title": "The five worst bridge collapses in Canadian history",
+      "site": "ottawacitizen.com"
     }
   ],
   "topic": "Quebec Bridge collapse (1907): engineers measured a lower-chord bend before it fell; the inquiry found defective design",

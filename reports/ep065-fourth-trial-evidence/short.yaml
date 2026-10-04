@@ -1,0 +1,121 @@
+id: ep065
+title: The Bend Measured Before Quebec Bridge Fell
+series: Warnings Ignored
+description: Quebec Bridge staff measured an enlarging lower-chord bend before the 1907 collapse. The Royal Commission did
+  not believe action after August 27 could have prevented the fall, but found better judgment might have prevented the loss
+  of life.
+sources:
+- https://archive.org/download/reportandplansa01schngoog/reportandplansa01schngoog_djvu.txt
+- https://www.structuremag.org/article/quebec-bridge-the-first-failure-1907/
+hashtags:
+- '#history'
+- '#quebecbridge'
+- '#engineering'
+tags:
+- Quebec Bridge
+- 1907 collapse
+- engineering failure
+- Royal Commission
+- St. Lawrence River
+voice:
+  engine: kokoro
+  voice: am_fenrir
+  speed: 1.15
+beats:
+- text: Staff measured a growing bend. Two days later, the Quebec Bridge fell.
+  emphasis:
+  - growing bend
+  - the Quebec Bridge fell
+  visual:
+    source: file
+    path: art/construction-anchor.jpg
+    credit:
+      source: Wikimedia Commons
+      title: File:Quebec bridge (HS85-10-18815).jpg
+      credit: F. E. Cudworth
+      license: Public domain
+      url: https://commons.wikimedia.org/wiki/File:Quebec_bridge_(HS85-10-18815).jpg
+    fallbacks: []
+    motion: pan_right
+- text: On August 27, steel member 9-L bent farther.
+  emphasis:
+  - August 27
+  - 9-L
+  visual:
+    source: file
+    path: art/lower-chord-schematic.png
+    credit:
+      source: Royal Commission report / authored graphic
+      title: authored approximate structural schematic from report finding (a) and printed page 86
+      credit: Royal Commission on the Quebec Bridge; editorial graphic
+      license: Public domain (1908 Royal Commission report); authored overlay
+      url: https://archive.org/download/reportandplansa01schngoog/reportandplansa01schngoog.pdf#page=93
+    fallbacks: []
+    motion: zoom_in
+- text: Some called it critical. The superintendent saw no danger.
+  emphasis:
+  - critical
+  - no danger
+  visual:
+    source: file
+    path: art/construction-pier-detail.jpg
+    credit:
+      source: Wikimedia Commons / British Library
+      title: Quebec bridge view No 48 (HS85-10-18817), cropped landward-arm detail
+      credit: F. E. Cudworth
+      license: Public domain
+      url: https://commons.wikimedia.org/wiki/File:Quebec_bridge_view_No_48_(HS85-10-18817).jpg
+    fallbacks: []
+    motion: zoom_in
+- text: On August 29, the unfinished bridge collapsed.
+  emphasis:
+  - collapsed
+  visual:
+    source: file
+    path: art/collapse-1907.jpg
+    credit:
+      source: Wikimedia Commons
+      title: File:Pont de Quebec 1907.jpg
+      credit: Neurdein
+      license: Public domain
+      url: https://commons.wikimedia.org/wiki/File:Pont_de_Quebec_1907.jpg
+    fallbacks: []
+    motion: none
+- text: The commission found the lower members were defectively designed.
+  emphasis:
+  - defectively designed
+  visual:
+    source: file
+    path: art/aftermath-wurtele-1907.jpg
+    credit:
+      source: Wikimedia Commons / BAnQ
+      title: Vestiges du pont de Quebec en 1907
+      credit: Fred C. Würtele / BAnQ, September 1907
+      license: Public domain (PD-old-70-1923)
+      url: https://commons.wikimedia.org/wiki/File:Vestiges_du_pont_de_Quebec_en_1907.jpg
+    fallbacks: []
+    motion: none
+- text: It did not believe the fall preventable after August 27.
+  emphasis:
+  - did not believe
+  - fall preventable
+  visual:
+    source: file
+    path: art/commission-wreckage-1907.jpg
+    credit:
+      source: Royal Commission report, Appendix 19 figure 20 / Wikimedia Commons
+      title: The wreckage, 1907
+      credit: Royal Commission Quebec Bridge Inquiry, 1908
+      license: Public domain (PD-Canada)
+      url: https://commons.wikimedia.org/wiki/File:Quebec_Bridge_Collapse_of_1907.jpg
+    fallbacks: []
+    motion: none
+- text: Yet it said better judgment might have prevented the loss of life. The bend had been measured.
+  emphasis:
+  - might have prevented
+  - bend had been measured
+  pause_after: 0.35
+  visual:
+    reuse: 1
+    motion: zoom_out
+depth_motion: true

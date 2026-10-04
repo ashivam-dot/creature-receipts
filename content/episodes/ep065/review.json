@@ -1,89 +1,53 @@
 {
   "rounds": [
     {
-      "at": "2026-10-04T15:52:16+05:30",
+      "at": "2026-10-04T17:16:14+05:30",
       "check": {
-        "duration": 28.43,
+        "duration": 29.77,
         "words": 72,
-        "integrated_lufs": -14.3,
+        "integrated_lufs": -14.4,
         "true_peak_dbfs": -1.8,
         "warnings": [],
-        "speech_differences": [
-          "'chord' heard as 'cord' after 'on august 27'",
-          "'s' heard as 'is' after 'chord 9 l'",
-          "'chords' heard as 'cords' after 'the failed lower'",
-          "base.en: 'chord' heard as 'cord' after 'on august 27'",
-          "base.en: 'chords' heard as 'cords' after 'the failed lower'"
-        ],
+        "speech_differences": [],
         "speech_error": null,
         "sources": [
           "Wikimedia Commons",
           "Royal Commission report / authored graphic",
-          "Wikimedia Commons",
+          "Wikimedia Commons / British Library",
           "Wikimedia Commons",
           "Wikimedia Commons / BAnQ",
-          "Royal Commission report / authored graphic",
+          "Royal Commission report, Appendix 19 figure 20 / Wikimedia Commons",
           "Wikimedia Commons"
         ],
         "speech_verification": {
-          "heard": "Two days after staff measured a growing bend, the Quebec Bridge collapsed. On August 27, Cord 9L's bend had grown. Some workers called it critical, but the superintendent disagreed. On August 29, the massive steel structure fell. A royal commission found the failed lower cords were defectively designed. It did not believe the bridge could be saved after August 27. Better judgment the commission found might have prevented the loss of life.",
+          "heard": "Staff measured a growing bend, two days later the Quebec Bridge fell. On August 27, steel member 9L bent farther. Some called it critical, the superintendent saw no danger. On August 29, the unfinished bridge collapsed. The commission found the lower members were defectively designed. It did not believe the fall preventable after August 27. 75 workers died, better judgment the commission said might have saved lives, the bend had been measured.",
           "model": "small.en",
-          "media_sha256": "275e16639c09e88cd72ae9f173202a83d7a0c73d0ddc7cfa5a1fcc25b8cdb45a",
-          "primary_differences": [
-            "'chord' heard as 'cord' after 'on august 27'",
-            "'s' heard as 'is' after 'chord 9 l'",
-            "'chords' heard as 'cords' after 'the failed lower'"
-          ],
-          "differences": [
-            "'chord' heard as 'cord' after 'on august 27'",
-            "'s' heard as 'is' after 'chord 9 l'",
-            "'chords' heard as 'cords' after 'the failed lower'",
-            "base.en: 'chord' heard as 'cord' after 'on august 27'",
-            "base.en: 'chords' heard as 'cords' after 'the failed lower'"
-          ],
-          "corroboration": {
-            "model": "base.en",
-            "heard": "Two days after staff measured a growing bend, the Quebec Bridge collapsed. On August 27, Cord 9 Ls Bend had grown. Some workers called it critical, but the superintendent disagreed. On August 29, the massive steel structure fell. A royal commission found the failed lower cords were defectively designed. It did not believe the bridge could be saved after August 27. Better judgment the commission found might have prevented the loss of life.",
-            "differences": [
-              "'chord' heard as 'cord' after 'on august 27'",
-              "'chords' heard as 'cords' after 'the failed lower'"
-            ],
-            "resolved": []
-          }
+          "media_sha256": "a9db4b64870336122c7b00a7c6a0a584d503bb4d7636bc4175569997d3975bb1",
+          "primary_differences": [],
+          "differences": []
         }
       },
-      "media_sha256": "275e16639c09e88cd72ae9f173202a83d7a0c73d0ddc7cfa5a1fcc25b8cdb45a",
+      "media_sha256": "a9db4b64870336122c7b00a7c6a0a584d503bb4d7636bc4175569997d3975bb1",
       "scores": {
         "hook": 4,
         "clarity": 4,
-        "payoff": 3,
-        "visuals": 3,
-        "loop": 3
+        "payoff": 4,
+        "visuals": 4,
+        "loop": 4
       },
       "notes": {
-        "hook": "Direct opening sets up the tragedy quickly.",
-        "clarity": "Chronology of the structural failure is simple to follow.",
-        "payoff": "The tragic bureaucratic oversight lands, but feels slightly academic.",
-        "visuals": "Beat 3 duplicates Beat 1, and Beat 6 is text-heavy.",
-        "loop": "Last sentence connects back reasonably, though not completely seamless."
+        "hook": "Strong statement immediately establishes the disaster and human error.",
+        "clarity": "The sequence of events and engineering failure are easy to follow.",
+        "payoff": "The tragedy of preventable death despite inevitable structural failure lands well.",
+        "visuals": "Effective mix of archival collapse photos and a clear structural diagram.",
+        "loop": "The final line seamlessly loops back into the opening premise."
       },
-      "frames": [
-        {
-          "beat": 3,
-          "problem": "the same picture as another beat"
-        },
-        {
-          "beat": 6,
-          "problem": "mostly text"
-        }
-      ],
+      "frames": [],
       "speech": [],
-      "rewrite": [
-        "Beat 7: 'Better judgment could have saved seventy-five workers, two days before the fall.'"
-      ],
-      "better_than_last": "Integrates clear structural diagrams directly supporting the narrative tension.",
+      "rewrite": [],
+      "better_than_last": "Integrates a clear technical diagram to make structural failure immediately understandable compared to pure photo sequences.",
       "judge": "gemini-3.7-flash",
-      "passed": false
+      "passed": true
     }
   ],
   "best_round": 1

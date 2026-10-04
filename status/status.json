@@ -1,41 +1,34 @@
 {
-  "updated_at": "2026-10-04T17:05:17+05:30",
+  "updated_at": "2026-10-04T17:24:19+05:30",
   "day": 3,
   "result": "ok",
   "run": {
-    "host": "modal",
-    "id": "ta-01M43B49E2P9990PMJNKPCKRQR",
-    "number": null,
-    "trigger": "schedule",
-    "started_at": "2026-10-04T17:05:10+05:30",
-    "started_at_utc": "2026-10-04T11:35:10+00:00",
-    "seconds": 6
+    "host": "github-actions",
+    "id": "37200260167",
+    "number": "42",
+    "trigger": "workflow_dispatch",
+    "started_at": "2026-10-04T17:24:15+05:30",
+    "started_at_utc": "2026-10-04T11:54:15+00:00",
+    "seconds": 4
   },
   "stages": [
     {
-      "name": "deploy",
-      "ok": true,
-      "detail": "",
-      "seconds": 2.2
-    },
-    {
       "name": "collect",
       "ok": true,
-      "detail": "nothing in the cloud",
-      "seconds": 0.7
+      "detail": "ep065 ready",
+      "seconds": 3.1
     }
   ],
   "errors": [],
   "owner_action": [],
   "notes": [
-    "automatic production paused: channel scheduling hold is active and autonomous release is disabled",
     "draft-only producer: no Buffer, Cloudinary, or Google publisher access"
   ],
   "inventory": {
-    "total": 4,
+    "total": 3,
     "in_buffer": 0,
     "waiting": 3,
-    "drafts": 1,
+    "drafts": 0,
     "target": 14,
     "making": [],
     "remote": []
@@ -61,7 +54,22 @@
       "score": 24
     }
   ],
-  "made": [],
+  "made": [
+    {
+      "id": "ep065",
+      "outcome": "ready",
+      "topic": "Quebec Bridge collapse (1907): engineers measured a lower-chord bend before it fell; the inquiry found defective design",
+      "title": "The Bend Measured Before Quebec Bridge Fell",
+      "scores": {
+        "hook": 4,
+        "clarity": 4,
+        "payoff": 4,
+        "visuals": 4,
+        "loop": 4
+      },
+      "draft": "drafts/ep065-a9db4b64870336122c7b00a7c6a0a584d503bb4d7636bc4175569997d3975bb1.mp4"
+    }
+  ],
   "spawned": [],
   "in_cloud": [],
   "published": [],
@@ -69,24 +77,26 @@
   "failed_posts": [],
   "not_live": [],
   "llm": {
-    "calls": 0,
-    "by_model": {},
+    "calls": 1,
+    "by_model": {
+      "gemini-3.7-flash": 1
+    },
     "out_of_quota": []
   },
   "renders": {
-    "modal": 0,
+    "modal": 1,
     "runner": 0
   },
   "daily_done": "2026-10-04",
-  "minutes_this_month": 46.0,
-  "minutes_budget": 2000,
+  "minutes_this_month": 58.065446621300005,
+  "minutes_budget": null,
   "modal_cost": {
-    "metered": 5.17,
+    "metered": 5.19,
     "billed": 0.0
   },
   "modal_credit": 30.0,
   "capacity": null,
   "made_here": 0,
   "open_topics": 159,
-  "parked_topics": 18
+  "parked_topics": 17
 }
