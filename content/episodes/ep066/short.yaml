@@ -1,0 +1,173 @@
+id: ep066
+title: How the Knights of Malta Defied an EMPIRE 🛡️
+series: The Last Hours
+description: In 1565, a tiny force of knights held off 40,000 Ottoman soldiers in one of history's most brutal sieges. Discover
+  how Jean de Valette survived impossible odds.
+sources:
+- https://en.wikipedia.org/wiki/Great_Siege_of_Malta
+- https://www.historyisnowmagazine.com/blog/2026/5/2/the-great-siege-of-malta-1565-what-really-happened-when-500-knights-took-on-an-empire
+- https://www.newworldencyclopedia.org/entry/Siege_of_Malta_(1565)
+- https://www.historyextra.com/period/tudor/great-siege-malta-1565-crusaders-last-stand-when-what/
+hashtags:
+- '#history'
+- '#malta'
+- '#knights'
+tags:
+- Great Siege of Malta
+- Jean de Valette
+- Ottoman Empire
+- '1565'
+- Knights Hospitaller
+- Naval History
+- Military History
+voice:
+  engine: kokoro
+  voice: am_fenrir
+  speed: 1.15
+beats:
+- text: Jean de Valette fired the heads of prisoners from his cannons.
+  emphasis:
+  - fired the heads
+  - cannons
+  visual:
+    source: url
+    url: https://thumb.wikimedia.org/wikipedia/commons/thumb/0/07/Portrait_de_Jean_de_la_Valette%2C_de_profil_dirig%C3%A9_vers_la_gauche_-_estampe_-_btv1b84006234.jpg/1920px-Portrait_de_Jean_de_la_Valette%2C_de_profil_dirig%C3%A9_vers_la_gauche_-_estampe_-_btv1b84006234.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
+    credit:
+      source: Wikimedia Commons
+      title: Portrait de Jean de la Valette, de profil dirigé vers la gauche - estampe - btv1b84006234.jpg
+      credit: Unknown author
+      license: Public domain
+      url: https://commons.wikimedia.org/wiki/File:Portrait_de_Jean_de_la_Valette,_de_profil_dirig%C3%A9_vers_la_gauche_-_estampe_-_btv1b84006234.jpg
+    fallbacks:
+    - card
+    - color
+    motion: pan_down
+    focus_x: 0.35
+    focus_y: 0.32
+    box:
+    - 0.22
+    - 0.1
+    - 0.62
+    - 0.55
+    card:
+      kind: fact
+      big: HEADS FIRED
+      small: FROM CANNONS
+- text: In 1565, 40,000 Ottoman soldiers arrived to conquer Malta.
+  emphasis:
+  - 40,000
+  - Malta
+  sfx: whoosh
+  visual:
+    source: url
+    url: https://thumb.wikimedia.org/wikipedia/commons/thumb/4/47/UBBasel_Map_1565_Kartenslg_AA_82.tif/lossy-page1-3840px-UBBasel_Map_1565_Kartenslg_AA_82.tif.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
+    credit:
+      source: Wikimedia Commons
+      title: UBBasel Map 1565 Kartenslg AA 82.tif
+      credit: anonymous
+      license: Public domain
+      url: https://commons.wikimedia.org/wiki/File:UBBasel_Map_1565_Kartenslg_AA_82.tif
+    fallbacks:
+    - card
+    - color
+    motion: pan_left
+    focus_x: 0.5
+    focus_y: 0.5
+    card:
+      kind: dateline
+      big: '1565'
+      small: MALTA
+- text: Grand Master Valette ordered his men to poison their own wells.
+  emphasis:
+  - poison
+  - wells
+  visual:
+    source: card
+    card:
+      kind: fact
+      big: BITTER HERBS
+      small: WELLS POISONED
+    motion: zoom_in
+- text: When Fort Saint Elmo fell, invaders floated decapitated knights across the bay.
+  emphasis:
+  - Fort Saint Elmo
+  - floated
+  sfx: riser
+  visual:
+    source: url
+    url: https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d6/The_Siege_of_Malta-_Capture_of_St_Elmo%2C_23_June_1565_RMG_BHC0254.tiff/lossy-page1-3840px-The_Siege_of_Malta-_Capture_of_St_Elmo%2C_23_June_1565_RMG_BHC0254.tiff.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
+    credit:
+      source: Wikimedia Commons
+      title: The Siege of Malta- Capture of St Elmo, 23 June 1565 RMG BHC0254.tiff
+      credit: Matteo Perez d'Aleccio
+      license: Public domain
+      url: https://commons.wikimedia.org/wiki/File:The_Siege_of_Malta-_Capture_of_St_Elmo,_23_June_1565_RMG_BHC0254.tiff
+    fallbacks:
+    - card
+    - color
+    motion: pan_left
+    focus_x: 0.25
+    focus_y: 0.35
+    box:
+    - 0.05
+    - 0.15
+    - 0.35
+    - 0.65
+    card:
+      kind: fact
+      big: FORT ST. ELMO
+      small: FELL JUNE 23
+- text: Valette retaliated by beheading his prisoners and firing them back.
+  emphasis:
+  - beheading
+  - firing them back
+  sfx: pop
+  pause_after: 0.4
+  visual:
+    source: url
+    url: https://thumb.wikimedia.org/wikipedia/commons/thumb/7/78/Batterie_alle_poste_di_Castiglia_e_d%27Alemagna._09.07._1565.png/1280px-Batterie_alle_poste_di_Castiglia_e_d%27Alemagna._09.07._1565.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
+    credit:
+      source: Wikimedia Commons
+      title: Batterie alle poste di Castiglia e d'Alemagna. 09.07. 1565.png
+      credit: Mattia Perez d'Aleccio
+      license: Public domain
+      url: https://commons.wikimedia.org/wiki/File:Batterie_alle_poste_di_Castiglia_e_d%27Alemagna._09.07._1565.png
+    fallbacks:
+    - card
+    - color
+    motion: pan_right
+    focus_x: 0.5
+    focus_y: 0.5
+    card:
+      kind: fact
+      big: RETALIATION
+      small: IN CANNONBALLS
+- text: The few survivors held until relief arrived in September.
+  emphasis:
+  - survivors
+  - September
+  sfx: whoosh
+  visual:
+    source: url
+    url: https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d7/The_Siege_of_Malta-_Flight_of_the_Turks%2C_13_September_1565_RMG_BHC0258.tiff/lossy-page1-3840px-The_Siege_of_Malta-_Flight_of_the_Turks%2C_13_September_1565_RMG_BHC0258.tiff.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
+    credit:
+      source: Wikimedia Commons
+      title: The Siege of Malta- Flight of the Turks, 13 September 1565 RMG BHC0258.tiff
+      credit: Matteo Perez d'Aleccio
+      license: Public domain
+      url: https://commons.wikimedia.org/wiki/File:The_Siege_of_Malta-_Flight_of_the_Turks,_13_September_1565_RMG_BHC0258.tiff
+    fallbacks:
+    - color
+    motion: pan_left
+    focus_x: 0.5
+    focus_y: 0.5
+- text: The conflict began when the massive armada arrived.
+  emphasis:
+  - massive armada
+  visual:
+    reuse: 1
+    motion: zoom_out
+    focus_x: 0.35
+    focus_y: 0.32
+depth_motion: true
+hook_text: CANNONS LOADED WITH HEADS

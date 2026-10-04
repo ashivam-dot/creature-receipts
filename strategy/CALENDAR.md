@@ -76,7 +76,7 @@ event is told for its gore. Space topics belong to the sister channel Universe R
 - Great Siege of Malta (1565): a handful of knights held off an invading armada against impossible odds, surviving until relief finally arrived — making (ep066)
 - Schoolhouse Blizzard (1888): a warm morning lured children to school without coats before a wall of ice struck at recess — making (ep060)
 - Battle of Myeongnyang (1597): Admiral Yi defeated 133 Japanese warships with only 13 vessels by using a whirlpool-filled strait — dropped (ep062)
-- Quintinshill rail disaster (1915): two signalmen changing shifts late forgot a train on the main line, causing the UK's deadliest rail crash
+- Quintinshill rail disaster (1915): two signalmen changing shifts late forgot a train on the main line, causing the UK's deadliest rail crash — making (ep076)
 - Siege of Sidney Street (1911): Winston Churchill personally oversaw the gunfight and ordered firefighters not to save the burning building
 - Gresford disaster (1934): hundreds of miners died because they had swapped shifts to see a football match, putting extra men in the pit
 - Sinking of the SS Arctic (1854): the ship collided in fog and the officers took the lifeboats first, leaving the passengers behind
@@ -182,7 +182,7 @@ event is told for its gore. Space topics belong to the sister channel Universe R
 - Sack of Rome (410): the first time in 800 years that a foreign enemy took the city of Rome
 - Late Bronze Age collapse: around 1177 BC, nearly every great civilization of the eastern Mediterranean fell within a few decades — parked (ep029)
 - Fall of Tenochtitlan (1521): smallpox killed huge numbers of the city's people before and during the siege
-- Battle of the Teutoburg Forest (9 AD): three Roman legions were wiped out, and Augustus is said to have cried "Varus, give me back my legions!"
+- Battle of the Teutoburg Forest (9 AD): three Roman legions were wiped out, and Augustus is said to have cried "Varus, give me back my legions!" — making (ep075)
 - Siege of Baghdad (1258): accounts say the Tigris ran black with ink from the books thrown into it
 - Third Punic War (146 BC): Rome destroyed Carthage, but the story that it salted the earth appears to be a modern invention
 - Library of Alexandria: it wasn't lost in one great fire, but declined over centuries — making (ep071)
@@ -244,6 +244,6 @@ event is told for its gore. Space topics belong to the sister channel Universe R
 - Survival of Alexander Selkirk (1704): the real Robinson Crusoe lived alone on an island for 4 years because he refused to stay on a ship he correctly predicted was unseaworthy and would sink
 - Survival of Jan Baalsrud (1943): after his sabotage mission failed, he survived the Arctic for months and amputated nine of his own toes with a pocketknife to stop gangrene from killing him
 - 1867 Virgin Islands earthquake and tsunami (1867): a massive wave carried the USS Monongahela over the rooftops of the town before the receding water pulled it safely back into the harbor
-- Hugh Glass (1823): after being mauled by a grizzly and left for dead in a shallow grave, he crawled 200 miles to safety but chose to forgive the men who abandoned him — making (ep069)
+- Hugh Glass (1823): after being mauled by a grizzly and left for dead in a shallow grave, he crawled 200 miles to safety but chose to forgive the men who abandoned him — parked (ep069)
 - Sinking of the Titanic (1912): the only Japanese survivor, Masabumi Hosono, was publicly shamed and lost his government job in Japan for not dying honorably with the other passengers — parked (ep067)
 - 1842 retreat from Kabul (1842): surgeon William Brydon was the only member of a 16,000-strong British army column to reach safety, surviving a sword cut because he stuffed a magazine into his hat for warmth
