@@ -408,7 +408,22 @@ def _visual_plan_problem(visuals: list[dict]) -> str | None:
 
 
 def _reject_visual_plan(folder: Path, meta: dict, visuals: list[dict]) -> dict | None:
-    if problem := _visual_plan_problem(visuals):
+    problem = _visual_plan_problem(visuals)
+    # A researched episode may pin its dated/licensed art. Review rewrites can still ask the
+    # picker for replacements; reject an unreviewed URL before spending another render on it.
+    if not problem and (approved := meta.get("approved_art_sha256")):
+        for number, visual in enumerate(visuals, 1):
+            if visual.get("reuse") or visual.get("source") == "card":
+                continue
+            path = visual.get("path") if visual.get("source") == "file" else None
+            if path not in approved:
+                problem = f"beat {number} uses art outside the approved source set"
+                break
+            asset = folder / path
+            if not asset.is_file() or hashlib.sha256(asset.read_bytes()).hexdigest() != approved[path]:
+                problem = f"beat {number} approved art hash changed or is missing"
+                break
+    if problem:
         reason = f"visual plan: {problem}"
         reject(folder, reason)
         return {"id": folder.name, "outcome": "rejected", "topic": meta["topic"], "reason": reason}

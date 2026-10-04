@@ -1,0 +1,13 @@
+# ep065 third private trial preflight — 2026-10-04
+
+The second worker trial was rejected and preserved in `content/rejected/ep065`. This separate `content/episodes/ep065` working folder remains under `editorial_hold.json` until manual dispatch. No release flag or publishing destination is present.
+
+The 72-word script keeps the Royal Commission's separate conclusions: it did not believe action after August 27 could prevent the **fall**, while better judgment **might** have prevented the **loss of life**. The final beat and description use “might,” matching finding (j) in the printed page 9 scan. The measured chord 9-L bend is bound to research claims 12–13, collapse to 14, design to 1–2, the fall finding to 8, and loss of life to 15. `writer.problems()` returns no issues.
+
+The seven-beat plan has six distinct original art beats: two F. E. Cudworth 1907 construction photographs, an authored approximate lower-chord schematic, Neurdein's 1907 wreck photograph, a distinct Fred C. Würtele September 1907 aftermath photograph, and one Royal Commission finding graphic. Beat 7 returns to the opening photograph. The Würtele original is [on Commons](https://commons.wikimedia.org/wiki/File:Vestiges_du_pont_de_Quebec_en_1907.jpg) with a public-domain `PD-old-70-1923` tag; [BAnQ accession 3109849](https://numerique.banq.qc.ca/patrimoine/details/52327/3109849) identifies Würtele and dates the collapse wreckage photograph September 1907. It is aftermath, not evidence of the pre-collapse bend or an identified chord. The separate rights/date/hashes ledger is `content/episodes/ep065/art/provenance.json`.
+
+The remaining report visual now enlarges a short exact facsimile phrase and the commission's qualified wording. The approximate schematic has a larger bridge drawing and labels. Both were inspected at 360×640; one report graphic remains. The failed draft's text-heavy design report graphic is no longer in the visual plan.
+
+The exact Modal context bundle was unpacked locally and checked: seven cached beats, all six approved art hashes present and matching, no external visual URL, valid `ShortSpec`, and no writer or visual-plan preflight issue. An episode-scoped `approved_art_sha256` guard rejects any revised visual outside this rights/date-checked local set before rendering. One regression test checks that an unapproved 1916 URL or changed approved file is rejected. Full pipeline suite: **238 passed**.
+
+The next run is a draft-only manual trial of ep065. Its worker and every final media byte still require independent review. The active channel scheduling hold remains in force.
