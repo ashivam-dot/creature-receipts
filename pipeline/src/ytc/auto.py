@@ -945,12 +945,24 @@ def _produce_here(run: Run, jobs: list[dict], minutes: float) -> None:
     studio.renders.clear()
 
 
-def produce(run: Run, count: int, *, cloud_only: bool = False) -> None:
+def produce(run: Run, count: int, *, cloud_only: bool = False, episode_id: str | None = None) -> None:
     """Start up to `count` Shorts: Modal workers while this month's credit lasts, then on this runner."""
     room = run.capacity = capacity()
     if cloud_only:
         room = run.capacity = {**room, "runner": 0, "runner_minutes": 0}
-    jobs = _jobs(min(count, room["cloud"] + room["runner"]))
+    if episode_id:
+        if room["cloud"] < 1:
+            raise RuntimeError(f"targeted draft {episode_id} has no cloud capacity")
+        episode = next((e for e in episodes() if e["id"] == episode_id), None)
+        if (not episode or episode["state"] != "making" or
+                (episode["folder"] / "editorial_hold.json").exists()):
+            raise RuntimeError(f"targeted draft {episode_id} is not an unheld unfinished episode")
+        if episode["topic"].get("spawns", 0) >= MAX_SPAWNS:
+            raise RuntimeError(f"targeted draft {episode_id} has reached the worker limit")
+        jobs = [{"id": episode_id, "topic": episode["topic"]["topic"],
+                 "series": episode["topic"]["series"], "at": episode["topic"].get("at")}]
+    else:
+        jobs = _jobs(min(count, room["cloud"] + room["runner"]))
     if len(jobs) < count:
         run.notes.append(f"room for {len(jobs)} of the {count} Shorts wanted: Modal's credit covers {room['cloud']}, "
                          f"this run's share of the Actions minutes {room['runner']}")
@@ -1866,7 +1878,7 @@ def _automatic_production_paused(run: Run) -> bool:
     return not active
 
 
-def _draft_main(produce_count: int | None, daily_mode: str, trigger: str) -> int:
+def _draft_main(produce_count: int | None, daily_mode: str, trigger: str, target_episode: str | None = None) -> int:
     """Scheduled producer run with no publisher credentials or publishing calls."""
     from .cloud import PUBLISHER_ENV
 
@@ -1910,7 +1922,10 @@ def _draft_main(produce_count: int | None, daily_mode: str, trigger: str) -> int
             run.notes.append(f"Gemini's Flash quota is spent until {quota_until:%H:%M} IST: new Shorts are drafted on the "
                              "backup models, and each waits for a Flash review after the reset")
     if produce_count > 0:
-        produce(run, produce_count, cloud_only=True)
+        if target_episode:
+            produce(run, produce_count, cloud_only=True, episode_id=target_episode)
+        else:
+            produce(run, produce_count, cloud_only=True)
     run.notes.append("draft-only producer: no Buffer, Cloudinary, or Google publisher access")
     inv = inventory()
     _session_note(run, inv)
@@ -1921,9 +1936,12 @@ def _draft_main(produce_count: int | None, daily_mode: str, trigger: str) -> int
 
 
 def main(produce_count: int | None = None, publish: bool = True, daily_mode: str = "auto", trigger: str = "manual",
-         *, draft_only: bool = False) -> int:
+         *, draft_only: bool = False, target_episode: str | None = None) -> int:
+    if target_episode and (not re.fullmatch(r"ep\d{3}", target_episode) or not draft_only
+                           or produce_count != 1 or trigger == "schedule"):
+        raise ValueError("--episode requires a draft-only manual run with --produce 1 and an epNNN id")
     if draft_only:
-        return _draft_main(produce_count, daily_mode, trigger)
+        return _draft_main(produce_count, daily_mode, trigger, target_episode)
     from .publish import buffer_busy, sync
 
     run = Run(trigger)

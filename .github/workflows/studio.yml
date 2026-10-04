@@ -13,6 +13,10 @@ on:
         description: "Drafts to make (empty: maintain the draft target)"
         required: false
         default: ""
+      episode:
+        description: "Optional unheld epNNN to retry alone with produce=1"
+        required: false
+        default: ""
       daily:
         description: "Daily routine (auto: once a day, in the first run after 14:00 IST)"
         type: choice
@@ -100,10 +104,12 @@ jobs:
         env:
           EVENT: ${{ github.event_name }}
           PRODUCE: ${{ inputs.produce }}
+          EPISODE: ${{ inputs.episode }}
           DAILY: ${{ inputs.daily }}
         run: |
           args=(--trigger "$EVENT" --daily "${DAILY:-auto}")
           if [ -n "$PRODUCE" ]; then args+=(--produce "$PRODUCE"); fi
+          if [ -n "$EPISODE" ]; then args+=(--episode "$EPISODE"); fi
           uv run --no-sync ytc auto --draft-only "${args[@]}"
 
       - name: Save the channel's state
