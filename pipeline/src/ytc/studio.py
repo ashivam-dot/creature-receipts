@@ -430,6 +430,23 @@ def _reject_visual_plan(folder: Path, meta: dict, visuals: list[dict]) -> dict |
     return None
 
 
+def _pinned_rewrite_problem(before: dict, after: dict) -> str | None:
+    """A story rewrite may keep curated pictures only when each beat still names its old event."""
+    old, new = before.get("beats", []), after.get("beats", [])
+    if len(old) != len(new):
+        return "changed the beat count of the approved visual plan"
+    for number, (was, now) in enumerate(zip(old, new), 1):
+        if not set(was.get("claims", [])) & set(now.get("claims", [])):
+            return f"beat {number} no longer cites an original visual claim"
+        if was.get("year") != now.get("year"):
+            return f"beat {number} changed the approved visual year"
+        original = set(was.get("subjects", []))
+        revised = set(now.get("subjects", []))
+        if original and revised and not original & revised:
+            return f"beat {number} changed the approved visual subject"
+    return None
+
+
 def produce(topic: str, series: str, episode_id: str | None = None, *, at: str | None = None) -> dict:
     """Make one Short (or finish a half-made one) and host it. Returns what happened, for the run's status."""
     from .check import DURATION, check
@@ -540,15 +557,31 @@ def produce(topic: str, series: str, episode_id: str | None = None, *, at: str |
         if any(verdict["scores"][k] < PASS_SCORE for k in story) or not low <= result["duration"] <= high:
             if not low <= result["duration"] <= high:
                 rewrite.append(f"The render ran {result['duration']} s; it must be {low}-{high} s.")
+            if meta.get("approved_art_sha256"):
+                rewrite.append("Keep the exact beat count, original claims, visual subjects, and years in their numbered beats; "
+                               "only revise the wording. These dated images are already approved and cannot be replaced.")
             old_script, script = script, writer.write_script(research, episode_id, feedback=rewrite, draft=script)
-            # Beats the rewrite left alone keep their pictures, unless the reviewer flagged them.
-            kept = pick.unchanged(old_script, visuals, script, skip={f["beat"] for f in verdict["frames"]})
-            visuals = pick.pick(script, research, episode_id, keep=kept)
+            if meta.get("approved_art_sha256"):
+                if problem := _pinned_rewrite_problem(old_script, script):
+                    reason = f"pinned script revision needs editorial review: {problem}"
+                    notes["revision_hold"] = reason
+                    _write(folder / "review.json", notes)
+                    return {"id": episode_id, "outcome": "unfinished", "topic": meta["topic"], "reason": reason}
+                # The visual event mapping survived. Keep its dated and hash-pinned art.
+            else:
+                # Beats the rewrite left alone keep their pictures, unless the reviewer flagged them.
+                kept = pick.unchanged(old_script, visuals, script, skip={f["beat"] for f in verdict["frames"]})
+                visuals = pick.pick(script, research, episode_id, keep=kept)
         else:
             before_script = json.dumps(script, sort_keys=True)
             bad = sorted({f["beat"] for f in verdict["frames"] if 1 <= f["beat"] <= len(script["beats"])})
             bad += [n for n, b in enumerate(result["beats"], 1) if b["source"] == "generated gradient" and n not in bad]
             if bad:
+                if meta.get("approved_art_sha256"):
+                    reason = f"pinned visual plan needs editorial review: beat(s) {', '.join(map(str, bad))}"
+                    notes["revision_hold"] = reason
+                    _write(folder / "review.json", notes)
+                    return {"id": episode_id, "outcome": "unfinished", "topic": meta["topic"], "reason": reason}
                 why = "Avoid: " + "; ".join(f"beat {f['beat']}: {f['problem']}" for f in verdict["frames"])
                 visuals = pick.replace(script, research, episode_id, visuals, bad, why)
             for fix in verdict["speech"][:3]:
