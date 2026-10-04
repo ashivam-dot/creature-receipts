@@ -79,7 +79,7 @@ event is told for its gore. Space topics belong to the sister channel Universe R
 - Gresford disaster (1934): hundreds of miners died because they had swapped shifts to see a football match, putting extra men in the pit
 - Sinking of the SS Arctic (1854): the ship collided in fog and the officers took the lifeboats first, leaving the passengers behind
 - 1868 Arica earthquake (1868): a massive tsunami carried the USS Wateree two miles inland and left it sitting perfectly upright in the middle of the desert
-- 1944 Bombay explosion (1944): the blast was so powerful it rained gold bars over the city, with one crashing through a citizen's roof over a mile away
+- 1944 Bombay Docks explosion (1944): a fire aboard the *Fort Stikine* preceded two blasts at Victoria Dock; India observes April 14 as Fire Services Day to remember the firefighters who died — research lead only; ignition, death toll and image rights need review
 - Tauredunum event (563): a mountain collapse into Lake Geneva created a massive inland tsunami that swept over the city walls of Geneva miles away
 - Brescia explosion (1769): lightning struck a church bastion storing 90 tons of gunpowder, causing a blast that leveled one-sixth of the city
 - Armagh rail disaster (1889): a train stalled on a hill, and when the crew uncoupled the rear carriages, they rolled backward into an oncoming train full of children
