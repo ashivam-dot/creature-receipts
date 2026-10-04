@@ -1,7 +1,8 @@
-"""Find the strongest stories among thousands of real tragedies: harvest the events Wikipedia's disaster lists link
-to, keep those at least 75 years old, rank them by how many people read about them in the last year (proven
-demand), and have a language model score the most-read ones for story power. The best go into the calendar's
-backlog, and choose_topics takes the highest scores first."""
+"""Find story leads from Wikipedia lists, readers, and a separate checked accident pool.
+
+The general pool still asks a model to score the most-read leads. The small
+accident pool can outrank readership after its source pair has been checked.
+"""
 
 from __future__ import annotations
 
@@ -212,9 +213,14 @@ def score(data: dict, series: list[str], known: list[str]) -> list[dict]:
 
 
 def priority(topic: str, data: dict, readers: int = 0) -> float:
-    """How strongly a backlog topic should go first: its story score, scaled by how widely it's read."""
+    """Backlog order from story score and readership, or a checked editorial lead."""
     known = data.get("topics", {}).get(topic, {})
-    return known.get("score", DEFAULT_SCORE) * math.log10(max(known.get("readers", readers), 0) + 10)
+    demand = known.get("score", DEFAULT_SCORE) * math.log10(max(known.get("readers", readers), 0) + 10)
+    # An editor checked these accident leads against an original study/report and
+    # an independent account. Their low Wikipedia readership must not bury them.
+    if known.get("candidate_id") and len(known.get("source_urls", [])) >= 2:
+        return max(demand, known.get("editorial_priority", 0))
+    return demand
 
 
 def topic_scores() -> dict:

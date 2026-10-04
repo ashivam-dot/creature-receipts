@@ -7,7 +7,7 @@ from types import SimpleNamespace
 
 import pytest
 
-from ytc import auto, cloud, publish
+from ytc import auto, cloud, publish, release, youtube
 
 
 def test_channel_hold_stops_automatic_scheduling_without_buffer_call(tmp_path, monkeypatch):
@@ -19,7 +19,59 @@ def test_channel_hold_stops_automatic_scheduling_without_buffer_call(tmp_path, m
 
     run = auto.Run("test")
     auto.publish_waiting(run)
-    assert "production continues" in run.notes[-1]
+    assert "automatic production pauses" in run.notes[-1]
+
+
+@pytest.mark.parametrize("has_hold,policy_active,requested,trigger,expected", [
+    (True, False, None, "schedule", None),
+    (True, False, 2, "manual", 2),
+    (True, False, 2, "schedule", None),
+    (True, True, None, "schedule", 4),
+    (False, False, None, "schedule", 4),
+])
+def test_automatic_production_pause_keeps_run_services_and_manual_trials(
+        tmp_path, monkeypatch, has_hold, policy_active, requested, trigger, expected):
+    marker = tmp_path / "scheduling_hold.json"
+    if has_hold:
+        marker.write_text('{"reason":"editorial review"}')
+    config = tmp_path / "autonomous_release_policy.json"
+    config.write_text(json.dumps({"version": 1, "enabled": policy_active, "min_episode_id": "ep063",
+                                  "started_after_utc": "2026-10-05T00:00:00+00:00", "require_instagram": True}))
+    monkeypatch.setattr(publish, "SCHEDULING_HOLD", marker)
+    monkeypatch.setattr(release, "POLICY_PATH", config)
+    monkeypatch.setenv("YTC_AUTONOMOUS_RELEASE", "1" if policy_active else "0")
+    monkeypatch.setattr(auto, "STATUS", tmp_path / "status")
+    monkeypatch.setattr(auto, "EPISODES", tmp_path / "episodes")
+    monkeypatch.setattr(auto, "ON_MODAL", False)
+    monkeypatch.delenv("MODAL_TOKEN_ID", raising=False)
+    calls = []
+    run_seen = []
+    monkeypatch.setattr(publish, "sync", lambda folder: calls.append("sync") or [])
+    monkeypatch.setattr(publish, "buffer_busy", lambda: None)
+    monkeypatch.setattr(youtube, "file_into_playlists", lambda folder: [])
+    monkeypatch.setattr(youtube, "fix_languages", lambda folder: [])
+    monkeypatch.setattr(youtube, "check_live", lambda folder: [])
+    monkeypatch.setattr(auto, "review_shorts", lambda run: [])
+    monkeypatch.setattr(auto, "inventory", lambda eps=None: {"target": 12, "total": 0, "remote": ["ep090"], "making": []})
+    monkeypatch.setattr(auto, "episodes", lambda: [])
+    monkeypatch.setattr(auto, "calendar_topics", lambda today=None: [])
+    monkeypatch.setattr(auto, "collect", lambda run: calls.append("collect") or "collected")
+    monkeypatch.setattr(auto, "daily", lambda run, state: calls.append("daily"))
+    monkeypatch.setattr(auto, "check_channel", lambda run: True)
+    monkeypatch.setattr(auto, "repair_posts", lambda run, requeue=True: calls.append("repair"))
+    monkeypatch.setattr(auto, "preflight_posts", lambda run: calls.append("preflight"))
+    monkeypatch.setattr(auto, "release_anniversaries", lambda run: calls.append("release anniversaries"))
+    monkeypatch.setattr(auto, "publish_waiting", lambda run: calls.append("publish waiting"))
+    monkeypatch.setattr(auto, "crosspost_scheduled", lambda run: calls.append("crosspost"))
+    monkeypatch.setattr(auto, "produce", lambda run, count: calls.append(("produce", count)))
+    monkeypatch.setattr(auto, "_session_note", lambda run, inv: calls.append("session note"))
+    monkeypatch.setattr(auto, "write_status", lambda run, result: run_seen.append(run) or {})
+
+    assert auto.main(requested, daily_mode="yes", trigger=trigger) == 0
+    assert {"sync", "collect", "daily", "repair", "preflight", "publish waiting", "crosspost", "session note"} <= set(calls)
+    assert [call for call in calls if isinstance(call, tuple)] == ([ ("produce", expected) ] if expected else [])
+    if has_hold and not policy_active and (requested is None or trigger == "schedule"):
+        assert any("automatic production paused" in note for note in run_seen[0].notes)
 
 
 def test_channel_hold_blocks_direct_schedule_before_external_calls(tmp_path, monkeypatch):
@@ -113,7 +165,7 @@ def test_exact_media_release_only_opens_one_direct_schedule(tmp_path, monkeypatc
     monkeypatch.setattr(auto, "episodes", lambda: pytest.fail("auto inventory should not be queried"))
     run = auto.Run("test")
     auto.publish_waiting(run)
-    assert "production continues" in run.notes[-1]
+    assert "automatic production pauses" in run.notes[-1]
     with pytest.raises(RuntimeError, match="New scheduling is on editorial hold"):
         publish._require_scheduling_open(spec)
     with pytest.raises(RuntimeError, match="New scheduling is on editorial hold"):

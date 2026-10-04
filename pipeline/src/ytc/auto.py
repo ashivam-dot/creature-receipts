@@ -373,8 +373,8 @@ def urgent(topics: list[dict], today: date) -> list[dict]:
 
 def choose_topics(count: int, eps: list[dict]) -> list[dict]:
     """Fresh timely topics first, then anniversaries within a week, then the backlog (with timely topics past
-    TIMELY_DAYS), strongest story first (stories.priority: its story score scaled by Wikipedia readers), never two
-    of one series in a row."""
+    TIMELY_DAYS). Rank the backlog by story score/readers or checked editorial priority, never two of one series
+    in a row."""
     from . import stories
 
     today = _now().date()
@@ -494,6 +494,45 @@ def insert_backlog(lines: list[str], series: str, topic: str) -> bool:
     return True
 
 
+def add_accident_topics(run: Run) -> list[str]:
+    """Add one checked accident lead at a time, with its original and independent sources.
+
+    A lead remains an ordinary unapproved draft topic: research must read its
+    listed pages and still find two matched quotes for each factual claim.
+    """
+    from . import accidents, stories
+
+    today = _now().date()
+    data = stories._load()
+    topics = calendar_topics(today)
+    records = data.setdefault("topics", {})
+    # Let the current accident lead finish or be dropped before adding another.
+    pool_topics = {row["topic"] for row in accidents.load(today)}
+    if any(t["topic"] in pool_topics and t["status"] not in ("done", "dropped") for t in topics):
+        return []
+    known = [t["topic"] for t in topics] + list(records)
+    for base in (EPISODES, REJECTED, ROOT / "content" / "shelved"):
+        for path in base.glob("ep[0-9][0-9][0-9]/topic.json"):
+            meta = _json(path, {})
+            if meta.get("topic"):
+                known.append(meta["topic"])
+    used_ids = {record["candidate_id"] for record in records.values() if record.get("candidate_id")}
+    candidate = accidents.next_candidate(known, used_ids, today)
+    if not candidate:
+        return []
+    lines = CALENDAR.read_text(encoding="utf-8").splitlines()
+    if not insert_backlog(lines, candidate["series"], candidate["topic"]):
+        return []
+    records[candidate["topic"]] = {
+        "candidate_id": candidate["id"], "score": 8, "readers": 0, "editorial_priority": 36,
+        "source_urls": [source["url"] for source in candidate["sources"]],
+        "checked_at": candidate["checked_at"], "why": "Source-checked accident research lead",
+    }
+    CALENDAR.write_text("\n".join(lines) + "\n", encoding="utf-8")
+    stories._save(data)
+    return [f"{candidate['topic']} ({candidate['series']}, source-checked research lead)"]
+
+
 def add_stories(run: Run, today: date | None = None) -> list[str]:
     """The strongest stories in the pool of real tragedies (stories.py): the pool is harvested again every
     stories.FRESH_DAYS, and each day the most-read unscored candidates are scored and the best added."""
@@ -524,7 +563,7 @@ def add_stories(run: Run, today: date | None = None) -> list[str]:
         data.setdefault("topics", {})[story["topic"]] = {
             "score": story["score"], "readers": story["readers"], "wikipedia": story["wikipedia"], "why": story["why"]}
         added.append(f"{story['topic']} ({story['series']}, story {story['score']}/10, "
-                     f"{story['readers']:,} readers a year)")
+                     f"{story['readers']:,} readers in {stories.READ_DAYS} days)")
     CALENDAR.write_text("\n".join(lines) + "\n", encoding="utf-8")
     stories._save(data)
     return added
@@ -769,7 +808,7 @@ def _resumable(eps: list[dict]) -> list[dict]:
 
 def _jobs(count: int) -> list[dict]:
     """Half-made episodes first (_resumable), then new topics from the calendar, each with its folder and topic.json."""
-    from . import studio
+    from . import accidents, studio
 
     eps = episodes()
     resumable = {e["id"] for e in _resumable(eps)}
@@ -790,6 +829,10 @@ def _jobs(count: int) -> list[dict]:
         at = topic["date"].isoformat() if topic["kind"] == "anniversary" and topic.get("date") else None
         meta = {"topic": topic["topic"], "series": topic["series"], "at": at,
                 "started_at": _now().isoformat(timespec="seconds"), "attempts": 0}
+        if candidate := accidents.by_topic(topic["topic"], today):
+            meta["candidate_id"] = candidate["id"]
+            meta["research_sources"] = candidate["sources"]
+            meta["research_cautions"] = candidate["cautions"]
         if topic in urgent([topic], today):
             meta["timely"] = True
         if topic["status"] == "parked":
@@ -1661,6 +1704,10 @@ def daily(run: Run, state: dict | None = None) -> None:
         timely = add_timely(run)
         added += timely
         entry["detail"] = f"{len(timely)} added"
+    with run.stage("sourced accident topics") as entry:
+        accidents = add_accident_topics(run)
+        added += accidents
+        entry["detail"] = f"{len(accidents)} added"
     with run.stage("strongest stories") as entry:
         strongest = add_stories(run)
         added += strongest
@@ -1781,6 +1828,24 @@ def write_status(run: Run, result: str) -> dict:
     return status
 
 
+def _automatic_production_paused(run: Run) -> bool:
+    """A channel hold also pauses drafting until the full release policy is active."""
+    from .publish import SCHEDULING_HOLD
+
+    if not SCHEDULING_HOLD.exists():
+        return False
+    from .release import policy
+
+    try:
+        active = policy() is not None
+    except (OSError, RuntimeError, ValueError, KeyError, TypeError) as err:
+        run.notes.append(f"automatic production paused: autonomous release policy could not be validated ({err})")
+        return True
+    if not active:
+        run.notes.append("automatic production paused: channel scheduling hold is active and autonomous release is disabled")
+    return not active
+
+
 def main(produce_count: int | None = None, publish: bool = True, daily_mode: str = "auto", trigger: str = "manual") -> int:
     from .publish import buffer_busy, sync
 
@@ -1834,7 +1899,11 @@ def main(produce_count: int | None = None, publish: bool = True, daily_mode: str
         with run.stage("publish"):
             publish_waiting(run)
     inv = inventory()
-    if produce_count is None:
+    # An explicit manual --produce trial is bounded by its requested count. Scheduled
+    # runs, including one accidentally given --produce, honor the editorial pause.
+    if (produce_count is None or trigger == "schedule") and _automatic_production_paused(run):
+        produce_count = 0
+    elif produce_count is None:
         # Shorts still being made in the cloud count as made, or every run would start another batch.
         want = inv["target"] - inv["total"] - len(inv["remote"])
         # Every half-made Short that can go on does, not just a batch: after Gemini's reset most only need the review

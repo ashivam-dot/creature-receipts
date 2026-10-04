@@ -52,6 +52,7 @@ class Source:
     url: str
     title: str
     text: str
+    full_text: str | None = None  # When the prompt contains focused excerpts, verify quotes against the full page.
 
     @property
     def site(self) -> str:
@@ -151,11 +152,15 @@ def _read(url: str) -> tuple[str, str] | None:
     try:
         response = requests.get(url, headers={"User-Agent": BROWSER_UA, "Accept-Language": "en-US,en;q=0.9"},
                                 timeout=25, stream=True)
-        if response.status_code != 200 or "html" not in response.headers.get("content-type", ""):
+        kind = response.headers.get("content-type", "").lower()
+        if response.status_code != 200 or not ("html" in kind or ("text/plain" in kind and url.endswith(".txt"))):
             return None
-        html = response.raw.read(3_000_000, decode_content=True).decode(response.encoding or "utf-8", errors="replace")
+        body = response.raw.read(3_000_000, decode_content=True).decode(response.encoding or "utf-8", errors="replace")
     except (requests.RequestException, OSError, ValueError):
         return None
+    if "text/plain" in kind:
+        return url.rsplit("/", 1)[-1], body
+    html = body
     text = trafilatura.extract(html, url=url, include_comments=False, include_tables=False, favor_recall=True)
     if not text:
         return None
@@ -168,8 +173,46 @@ def _key_terms(titles: list[str], topic: str) -> list[str]:
     return list(dict.fromkeys(w.lower() for w in words))[:8]
 
 
-def gather(topic: str) -> list[Source]:
-    """Read up to MAX_SOURCES texts: the Wikipedia articles first, then cited and searched pages."""
+def _focused_text(text: str, terms: list[str]) -> str:
+    """Keep exact OCR passages around checked terms within one source's prompt budget."""
+    if not terms:
+        return text[:SOURCE_CHARS]
+    spans = [(0, min(1_500, len(text)))]
+    found = False
+    for term in terms:
+        if match := re.search(re.escape(term), text, re.I):
+            found = True
+            spans.append((max(0, match.start() - 2_000), min(len(text), match.end() + 4_000)))
+    if not found:
+        return text[:SOURCE_CHARS]
+    merged: list[list[int]] = []
+    for start, end in sorted(spans):
+        if merged and start <= merged[-1][1]:
+            merged[-1][1] = max(merged[-1][1], end)
+        else:
+            merged.append([start, end])
+    return "\n[...]\n".join(text[start:end] for start, end in merged)[:SOURCE_CHARS]
+
+
+def gather(topic: str, source_plan: list[dict] | None = None) -> list[Source]:
+    """Read checked pages only for a curated lead; otherwise search as before."""
+    if source_plan:
+        sources = []
+        subject_terms = [word.casefold() for word in re.findall(r"[A-Za-z]{4,}", topic.split(":", 1)[0])
+                         if word.casefold() not in {"collapse", "explosion", "disaster", "fire"}]
+        for item in source_plan:
+            url = item["url"]
+            read = _read(url)
+            if not read:
+                log.warning("checked accident source could not be read: %s", url)
+                continue
+            title, text = read
+            if len(text.split()) < MIN_WORDS or (subject_terms and not all(term in text.casefold() for term in subject_terms)):
+                log.warning("checked accident source lacks readable event text: %s", url)
+                continue
+            sources.append(Source(f"S{len(sources) + 1}", url, title,
+                                  _focused_text(text, item.get("focus", [])), full_text=text))
+        return sources
     sources: list[Source] = []
     results = _search(re.sub(r"[():\"“”]", " ", topic))
     titles = _articles(topic, results)
@@ -242,6 +285,8 @@ saw and decided, what they could not know, and the detail most people have never
 
 Topic: {topic}
 Series: {series}
+Source-audit cautions (keep their uncertainty; do not add them as claims without quotes):
+{cautions}
 
 The sources below are the only ones you may use. Do not add anything you know from elsewhere. A claim
 counts only if at least two sources from different sites state it. For each claim, include `sources` and
@@ -288,20 +333,23 @@ def _matched_evidence(claim: dict, by_label: dict[str, Source]) -> list[dict]:
         key = _quote_key(quote)
         if label not in cited or not source or len(key) < 20 or len(key.split()) < 4:
             continue
-        if key not in _quote_key(source.text) or any(e["source"] == label for e in verified):
+        if key not in _quote_key(source.full_text or source.text) or any(e["source"] == label for e in verified):
             continue
         verified.append({"source": label, "quote": quote})
     return verified
 
 
-def research(topic: str, series: str) -> dict:
+def research(topic: str, series: str, source_plan: list[dict] | None = None, cautions: list[str] | None = None) -> dict:
     """The claims table with exact evidence from at least two distinct fetched sites."""
-    sources = gather(topic)
+    sources = gather(topic, source_plan) if source_plan else gather(topic)
+    if source_plan and len(sources) != len(source_plan):
+        raise RuntimeError("a checked accident source is unavailable; research cannot substitute another page")
     if len(sources) < 2:
         return {"viable": False, "reason": "fewer than two readable sources", "claims": [], "sources": []}
     listing = "\n\n".join(f"[{s.label}] {s.title} ({s.url})\n{s.text}" for s in sources)
-    found = llm.generate(PROMPT.format(topic=topic, series=series, sources=listing), schema=RESEARCH_SCHEMA,
-                         models=llm.BROAD, purpose="research")
+    caution_text = "\n".join(f"- {item}" for item in cautions) if cautions else "None supplied."
+    found = llm.generate(PROMPT.format(topic=topic, series=series, cautions=caution_text, sources=listing),
+                         schema=RESEARCH_SCHEMA, models=llm.BROAD, purpose="research")
     by_label = {s.label: s for s in sources}
     kept = []
     for claim in found.get("claims", []):

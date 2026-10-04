@@ -274,7 +274,7 @@ def schedule_waiting(run) -> None:
         config = policy()
         entry["detail"] = "active" if config else "disabled"
     if not run.stages[-1]["ok"] or config is None:
-        run.notes.append("new scheduling on editorial hold; production continues")
+        run.notes.append("new scheduling on editorial hold; automatic production pauses while release is inactive")
         return
     from . import auto
     from .publish import AUDIENCE_TZ, BUFFER_QUEUE_LIMIT, caption, next_slots, posts

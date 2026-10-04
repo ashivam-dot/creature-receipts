@@ -1,0 +1,104 @@
+[
+  {
+    "id": "quebec-bridge-1907",
+    "order": 2,
+    "year": 1907,
+    "series": "Warnings Ignored",
+    "topic": "Quebec Bridge collapse (1907): engineers measured a lower-chord bend before it fell; the inquiry found defective design",
+    "aliases": ["Quebec Bridge"],
+    "checked_at": "2026-10-04",
+    "sources": [
+      {
+        "role": "primary",
+        "institution": "Royal Commission on Quebec Bridge Inquiry (1908)",
+        "url": "https://archive.org/download/reportandplansa01schngoog/reportandplansa01schngoog_djvu.txt",
+        "focus": ["The collapse of the Quebec bridge resulted", "The bend in chord 9-L anchor arm was discovered"]
+      },
+      {
+        "role": "independent",
+        "institution": "STRUCTURE Magazine, Frank Griggs Jr.",
+        "url": "https://www.structuremag.org/article/quebec-bridge-the-first-failure-1907/"
+      }
+    ],
+    "cautions": [
+      "The commission said the collapse could not have been prevented after August 27; distinguish that from preventing loss of life.",
+      "Do not blame one engineer for all design and judgment failures."
+    ]
+  },
+  {
+    "id": "oppau-1921",
+    "order": 3,
+    "year": 1921,
+    "series": "The Last Hours",
+    "topic": "Oppau explosion (1921): a routine blast to break up caked fertilizer preceded a stockpile detonation",
+    "aliases": ["Oppau explosion", "Oppau"],
+    "checked_at": "2026-10-04",
+    "sources": [
+      {
+        "role": "primary",
+        "institution": "Norwegian Defence Research Establishment (2016 original technical reassessment)",
+        "url": "https://www.ffi.no/en/publications-archive/a-factual-clarification-and-chemical-technical-reassessment-of-the-1921-oppau-explosion-disaster-the-unforeseen-explosivity-of-porous-ammonium-sulfate-nitrate-fertilizer"
+      },
+      {
+        "role": "independent",
+        "institution": "French Ministry of Environment ARIA accident record",
+        "url": "https://www.aria.developpement-durable.gouv.fr/fiche_detaillee/14373/"
+      }
+    ],
+    "cautions": [
+      "The original technical study calls the precise cause incompletely understood; do not state a sole settled cause.",
+      "The French official record is a later accident summary, not the 1925 inquiry itself."
+    ]
+  },
+  {
+    "id": "texas-city-1947",
+    "order": 1,
+    "year": 1947,
+    "series": "The Last Hours",
+    "topic": "Texas City disaster (1947): a fire aboard the Grandcamp preceded its 9:12 explosion, and another ship exploded the next day",
+    "aliases": ["Texas City disaster", "Grandcamp"],
+    "checked_at": "2026-10-04",
+    "sources": [
+      {
+        "role": "primary",
+        "institution": "Texas Fire Prevention and Engineering Bureau / National Board of Fire Underwriters (1947)",
+        "url": "https://www.local1259iaff.org/report.htm"
+      },
+      {
+        "role": "independent",
+        "institution": "Texas State Historical Association",
+        "url": "https://www.tshaonline.org/handbook/entries/texas-city-disaster"
+      }
+    ],
+    "cautions": [
+      "Do not assert a single ignition source or blame one person; distinguish the Grandcamp and High Flyer explosions.",
+      "The 1947 report's online photographs are not assumed reusable without an image-specific rights check."
+    ]
+  },
+  {
+    "id": "mann-gulch-1949",
+    "order": 4,
+    "year": 1949,
+    "series": "The Last Hours",
+    "topic": "Mann Gulch fire (1949): foreman Wag Dodge set an escape fire as his crew fled the advancing wildfire",
+    "aliases": ["Mann Gulch"],
+    "checked_at": "2026-10-04",
+    "sources": [
+      {
+        "role": "primary",
+        "institution": "U.S. Forest Service Board of Review (1949)",
+        "url": "https://archive.org/download/nfsl_2_43087/p17053coll2_43087_djvu.txt",
+        "focus": ["route towards the river was cut off", "Dodge's decision, after contacting Harrison and rejoining his crew"]
+      },
+      {
+        "role": "independent",
+        "institution": "Forest History Society",
+        "url": "https://foresthistory.org/research-explore/us-forest-service-history/policy-and-law/fire-u-s-forest-service/famous-fires/mann-gulch-fire-1949/"
+      }
+    ],
+    "cautions": [
+      "The Board concluded the escape fire did not impede the crew; a relative argued otherwise. The Board found it inconclusive how many men understood Dodge's directions.",
+      "Do not portray the firefighters who died as ignoring a simple rescue instruction."
+    ]
+  }
+]

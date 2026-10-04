@@ -367,8 +367,18 @@ def produce(topic: str, series: str, episode_id: str | None = None, *, at: str |
         return {"id": episode_id, "outcome": "rejected", "topic": meta["topic"], "reason": "too many attempts"}
 
     research = _read(folder / "research.json")
+    source_plan = meta.get("research_sources")
+    if meta.get("candidate_id"):
+        if not source_plan:
+            raise RuntimeError(f"{episode_id} is a checked accident lead without its source plan")
+        if research is not None and {s["url"] for s in research.get("sources", [])} != {s["url"] for s in source_plan}:
+            raise RuntimeError(f"{episode_id} has cached research from a different source plan")
     if research is None:
-        research = do_research(meta["topic"], meta["series"])
+        if source_plan:
+            research = do_research(meta["topic"], meta["series"],
+                                   source_plan=source_plan, cautions=meta.get("research_cautions"))
+        else:
+            research = do_research(meta["topic"], meta["series"])
         _write(folder / "research.json", research)
     if not research.get("viable"):
         reason = f"research: {research.get('reason')}"
