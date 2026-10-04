@@ -35,12 +35,18 @@ def isolated(tmp_path, monkeypatch):
     candidates.write_text(accidents.CANDIDATES.read_text(encoding="utf-8"), encoding="utf-8")
     status = tmp_path / "status"
     status.mkdir()
+    selection_policy = status / "accident_selection_policy.json"
+    selection_policy.write_text(json.dumps({"version": 1, "enabled": True,
+                                            "approved_candidate_ids": [row["id"] for row in accidents.load(TODAY)],
+                                            "held_topics": {row["topic"]: row["id"]
+                                                            for row in accidents.load(TODAY)}}))
     episodes = tmp_path / "content" / "episodes"
     rejected = tmp_path / "content" / "rejected"
     shelved = tmp_path / "content" / "shelved"
     for folder in (episodes, rejected, shelved):
         folder.mkdir(parents=True)
     monkeypatch.setattr(accidents, "CANDIDATES", candidates)
+    monkeypatch.setattr(accidents, "SELECTION_POLICY", selection_policy)
     monkeypatch.setattr(auto, "CALENDAR", calendar)
     monkeypatch.setattr(auto, "EPISODES", episodes)
     monkeypatch.setattr(auto, "REJECTED", rejected)
@@ -116,6 +122,43 @@ def test_episode_receives_exact_checked_sources_and_studio_passes_them(isolated,
     assert result["outcome"] == "rejected"
     assert seen == {"topic": candidate["topic"], "series": candidate["series"],
                     "source_plan": candidate["sources"], "cautions": candidate["cautions"]}
+
+
+def test_checked_lead_cannot_enter_producer_jobs_while_selection_policy_is_closed(isolated):
+    auto.add_accident_topics(auto.Run("test"))
+    accidents.SELECTION_POLICY.write_text(json.dumps({"version": 1, "enabled": False,
+                                                      "approved_candidate_ids": []}))
+    assert auto._jobs(1) == []
+    assert not list(auto.EPISODES.glob("ep*/topic.json"))
+
+
+def test_saved_checked_lead_cannot_become_generic_if_source_pool_disappears(isolated):
+    auto.add_accident_topics(auto.Run("test"))
+    accidents.CANDIDATES.write_text("[]")
+    assert auto._jobs(1) == []
+    assert not list(auto.EPISODES.glob("ep*/topic.json"))
+
+
+def test_existing_checked_draft_cannot_resume_after_selection_closes(isolated, monkeypatch):
+    candidate = accidents.load(TODAY)[0]
+    folder = auto.EPISODES / "ep099"
+    folder.mkdir()
+    episode = {"id": "ep099", "folder": folder, "state": "making",
+               "topic": {"topic": candidate["topic"], "series": candidate["series"],
+                         "candidate_id": candidate["id"], "spawns": 0}}
+    policy = json.loads(accidents.SELECTION_POLICY.read_text())
+    policy["enabled"] = False
+    policy["approved_candidate_ids"] = []
+    accidents.SELECTION_POLICY.write_text(json.dumps(policy))
+    monkeypatch.setattr(auto, "episodes", lambda: [episode])
+    monkeypatch.setattr(auto, "_resumable", lambda _: [episode])
+    monkeypatch.setattr(auto, "choose_topics", lambda *_: [])
+    assert auto._jobs(1) == []
+    policy["enabled"] = True
+    policy["approved_candidate_ids"] = [candidate["id"]]
+    accidents.SELECTION_POLICY.write_text(json.dumps(policy))
+    accidents.CANDIDATES.write_text("[]")
+    assert auto._jobs(1) == []
 
 
 def test_episode_cannot_resume_without_its_checked_source_plan(isolated):

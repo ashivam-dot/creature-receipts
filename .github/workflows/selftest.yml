@@ -9,12 +9,32 @@ on:
       episode:
         description: "Episode to render again (epNNN)"
         default: "ep054"
+      supply_intake:
+        description: "Cloud-test the bounded source/art intake instead of rendering"
+        type: boolean
+        default: false
 
 permissions:
   contents: read
 
 jobs:
+  supply_intake:
+    if: inputs.supply_intake == true
+    runs-on: ubuntu-24.04
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+        with:
+          persist-credentials: false
+      - run: python3 monitor/accident_intake.py --report /tmp/history-accident-intake.json --issue-body /tmp/history-accident-intake-issue.md
+      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
+        with:
+          name: history-accident-intake-cloud-test-${{ github.run_id }}
+          path: /tmp/history-accident-intake.json
+          retention-days: 14
+
   render:
+    if: inputs.supply_intake != true
     runs-on: ubuntu-24.04
     timeout-minutes: 60
     env:

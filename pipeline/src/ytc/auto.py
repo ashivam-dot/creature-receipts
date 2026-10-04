@@ -814,12 +814,22 @@ def _resumable(eps: list[dict]) -> list[dict]:
 
 def _jobs(count: int) -> list[dict]:
     """Half-made episodes first (_resumable), then new topics from the calendar, each with its folder and topic.json."""
-    from . import accidents, studio
+    from . import accidents, stories, studio
 
     eps = episodes()
     resumable = {e["id"] for e in _resumable(eps)}
     half_made = []
     for e in [e for e in eps if e["state"] == "making"]:
+        candidate_id = (e["topic"].get("candidate_id") or
+                        accidents.held_candidate_id(e["topic"].get("topic", "")))
+        if candidate_id:
+            candidate = accidents.by_topic(e["topic"].get("topic", ""))
+            if not candidate or candidate["id"] != candidate_id:
+                log.info("checked accident draft %s lost its exact source plan", candidate_id)
+                continue
+        if candidate_id and not accidents.selection_allowed(candidate_id):
+            log.info("held checked accident draft %s cannot resume", candidate_id)
+            continue
         if (e["folder"] / "editorial_hold.json").exists():
             continue
         if e["topic"].get("spawns", 0) >= MAX_SPAWNS:
@@ -830,12 +840,26 @@ def _jobs(count: int) -> list[dict]:
     jobs = [{"id": e["id"], "topic": e["topic"]["topic"], "series": e["topic"]["series"], "at": e["topic"].get("at")}
             for e in half_made[:count]]
     today = _now().date()
+    tracked = stories._load().get("topics", {})
+    tracked = tracked if isinstance(tracked, dict) else {}
     for topic in choose_topics(count - len(jobs), eps):
+        candidate = accidents.by_topic(topic["topic"], today)
+        record = tracked.get(topic["topic"], {})
+        tracked_id = record.get("candidate_id") if isinstance(record, dict) else None
+        held_id = accidents.held_candidate_id(topic["topic"])
+        if (tracked_id and (not candidate or candidate["id"] != tracked_id)) or \
+                (held_id and (not candidate or candidate["id"] != held_id)):
+            log.info("checked accident lead %s has no matching source plan", tracked_id or held_id)
+            continue
+        candidate_id = tracked_id or held_id or (candidate["id"] if candidate else None)
+        if candidate_id and not accidents.selection_allowed(candidate_id):
+            log.info("checked accident lead %s is held before producer selection", candidate_id)
+            continue
         episode_id = studio.next_id()
         at = topic["date"].isoformat() if topic["kind"] == "anniversary" and topic.get("date") else None
         meta = {"topic": topic["topic"], "series": topic["series"], "at": at,
                 "started_at": _now().isoformat(timespec="seconds"), "attempts": 0}
-        if candidate := accidents.by_topic(topic["topic"], today):
+        if candidate:
             meta["candidate_id"] = candidate["id"]
             meta["research_sources"] = candidate["sources"]
             meta["research_cautions"] = candidate["cautions"]
