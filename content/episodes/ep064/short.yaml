@@ -1,0 +1,149 @@
+id: ep064
+title: How Did Mud Trap French Knights at Agincourt?
+series: The Last Hours
+description: Heavy rain turned Agincourt's plowed battlefield into thick mud. Some armored French knights drowned there as
+  Henry V's outnumbered army won.
+sources:
+- https://en.wikipedia.org/wiki/Battle_of_Agincourt
+- https://asaphistory.com/2019/11/27/agincourt/
+- https://www.spottinghistory.com/view/3106/battle-of-agincourt-memorial/
+hashtags:
+- '#history'
+- '#agincourt'
+- '#knights'
+tags:
+- battle of agincourt
+- king henry v
+- middle ages
+- '1415'
+- france
+- medieval warfare
+voice:
+  engine: kokoro
+  voice: am_fenrir
+  speed: 1.15
+beats:
+- text: How did armored French knights drown in the mud at Agincourt?
+  emphasis:
+  - drown
+  - Agincourt
+  visual:
+    source: url
+    url: https://thumb.wikimedia.org/wikipedia/commons/thumb/9/93/Battle_of_Agincourt%2C_from_%27Vigils_of_Charles_VII%27.jpg/1280px-Battle_of_Agincourt%2C_from_%27Vigils_of_Charles_VII%27.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
+    credit:
+      source: Wikimedia Commons
+      title: Battle of Agincourt, from 'Vigils of Charles VII'.jpg
+      credit: AnonymousUnknown author
+      license: Public domain
+      url: https://commons.wikimedia.org/wiki/File:Battle_of_Agincourt,_from_%27Vigils_of_Charles_VII%27.jpg
+    fallbacks:
+    - color
+    motion: pan_right
+    focus_x: 0.52
+    focus_y: 0.48
+- text: In 1415, King Henry the Fifth faced a much larger French army.
+  emphasis:
+  - '1415'
+  - larger French army
+  sfx: whoosh
+  visual:
+    source: url
+    url: https://thumb.wikimedia.org/wikipedia/commons/thumb/1/18/King_Henry_V_from_NPG.jpg/1920px-King_Henry_V_from_NPG.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
+    credit:
+      source: Wikimedia Commons
+      title: King Henry V from NPG.jpg
+      credit: anonymous
+      license: Public domain
+      url: https://commons.wikimedia.org/wiki/File:King_Henry_V_from_NPG.jpg
+    fallbacks:
+    - card
+    - color
+    motion: pan_up
+    focus_x: 0.45
+    focus_y: 0.35
+    box:
+    - 0.2
+    - 0.15
+    - 0.7
+    - 0.5
+    card:
+      kind: dateline
+      big: '1415'
+      small: AGINCOURT, FRANCE
+- text: Heavy rain had turned the freshly plowed battlefield into thick mud.
+  emphasis:
+  - heavy rain
+  - thick mud
+  visual:
+    source: card
+    card:
+      kind: fact
+      big: HEAVY RAIN
+      small: THICK MUD
+    motion: zoom_in
+- text: English archers planted wooden stakes to stop the French cavalry.
+  emphasis:
+  - archers
+  - wooden stakes
+  visual:
+    source: url
+    url: https://upload.wikimedia.org/wikipedia/commons/1/19/The_Battle_of_Agincourt.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    credit:
+      source: Wikimedia Commons
+      title: The Battle of Agincourt.jpg
+      credit: old
+      license: Public domain
+      url: https://commons.wikimedia.org/wiki/File:The_Battle_of_Agincourt.jpg
+    fallbacks:
+    - color
+    motion: pan_up
+    focus_x: 0.35
+    focus_y: 0.45
+    box:
+    - 0.03
+    - 0.25
+    - 0.55
+    - 0.7
+- text: Armored French fighters struggled as they advanced through the mud.
+  emphasis:
+  - armored fighters
+  - mud
+  sfx: riser
+  visual:
+    source: url
+    url: https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b9/Battle_of_Agincourt%2C_St._Alban%27s_Chronicle_by_Thomas_Walsingham.jpg/1280px-Battle_of_Agincourt%2C_St._Alban%27s_Chronicle_by_Thomas_Walsingham.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
+    credit:
+      source: Wikimedia Commons
+      title: Battle of Agincourt, St. Alban's Chronicle by Thomas Walsingham.jpg
+      credit: Unknown - Ms 6 f.243 Battle of Agincourt, 1415, English with Flemish illuminations, from the 'St. Alban's Chronicle'
+        by Thomas Walsingham (vellum), English School, (15th century)
+      license: Public domain
+      url: https://commons.wikimedia.org/wiki/File:Battle_of_Agincourt,_St._Alban%27s_Chronicle_by_Thomas_Walsingham.jpg
+    fallbacks:
+    - card
+    - color
+    motion: zoom_out
+    focus_x: 0.7
+    focus_y: 0.65
+    box:
+    - 0.45
+    - 0.35
+    - 0.95
+    - 0.95
+    card:
+      kind: fact
+      big: ARMOR AND MUD
+      small: A DEADLY TRAP
+- text: Some drowned in the mud; about six thousand French fighters died overall.
+  emphasis:
+  - drowned
+  - six thousand
+  sfx: pop
+  pause_after: 0.4
+  visual:
+    reuse: 1
+    motion: zoom_out
+    focus_x: 0.52
+    focus_y: 0.48
+depth_motion: true
+hook_text: TRAPPED BY MUD

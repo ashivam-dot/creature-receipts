@@ -1,0 +1,78 @@
+{
+  "rounds": [
+    {
+      "at": "2026-10-04T14:06:00+05:30",
+      "check": {
+        "duration": 24.57,
+        "words": 66,
+        "integrated_lufs": -14.4,
+        "true_peak_dbfs": -1.8,
+        "warnings": [],
+        "speech_differences": [
+          "'armored' heard as 'armoured' after 'how did'",
+          "'the 5th' heard as 'v' after '1415 king henry'",
+          "'plowed' heard as 'ploughed' after 'turned the freshly'",
+          "'armored' heard as 'armoured' after 'the french cavalry'",
+          "base.en: 'the 5th' heard as 'v' after '1415 king henry'"
+        ],
+        "speech_error": null,
+        "sources": [
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "designed card",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons"
+        ],
+        "speech_verification": {
+          "heard": "How did armoured French knights drown in the mud at Agincourt? In 1415, King Henry V faced a much larger French army. Heavy rain had turned the freshly ploughed battlefield into thick mud. English archers planted wooden stakes to stop the French cavalry. Armoured French fighters struggled as they advanced through the mud. Some drowned in the mud, about 6,000 French fighters died overall.",
+          "model": "small.en",
+          "media_sha256": "7ee8c3c2079c790ff2a9cf08e54fef891f6166902551266b10ff6d136f5798ef",
+          "primary_differences": [
+            "'armored' heard as 'armoured' after 'how did'",
+            "'the 5th' heard as 'v' after '1415 king henry'",
+            "'plowed' heard as 'ploughed' after 'turned the freshly'",
+            "'armored' heard as 'armoured' after 'the french cavalry'"
+          ],
+          "differences": [
+            "'armored' heard as 'armoured' after 'how did'",
+            "'the 5th' heard as 'v' after '1415 king henry'",
+            "'plowed' heard as 'ploughed' after 'turned the freshly'",
+            "'armored' heard as 'armoured' after 'the french cavalry'",
+            "base.en: 'the 5th' heard as 'v' after '1415 king henry'"
+          ],
+          "corroboration": {
+            "model": "base.en",
+            "heard": "How did armored French knights drown in the mud at Agincourt? In 1415, King Henry V faced a much larger French army. Heavy rain had turned the freshly plowed battlefield into thick mud. English archers planted wooden stakes to stop the French cavalry. Armored French fighters struggled as they advanced through the mud. Some drowned in the mud, about 6,000 French fighters died overall.",
+            "differences": [
+              "'the 5th' heard as 'v' after '1415 king henry'"
+            ],
+            "resolved": []
+          }
+        }
+      },
+      "media_sha256": "7ee8c3c2079c790ff2a9cf08e54fef891f6166902551266b10ff6d136f5798ef",
+      "scores": {
+        "hook": 5,
+        "clarity": 5,
+        "payoff": 4,
+        "visuals": 5,
+        "loop": 5
+      },
+      "notes": {
+        "hook": "Drowning in mud while wearing full knight armor is an immediately gripping, bizarre historical premise.",
+        "clarity": "The sequence from rain and plowed ground to archer stakes and bogged-down knights is clear and logical.",
+        "payoff": "Provides the grim conclusion and scale of disaster answering the opening question.",
+        "visuals": "Uses accurate, high-quality period manuscript illuminations and portraiture throughout.",
+        "loop": "The final death toll transitions smoothly back into the opening question on replay."
+      },
+      "frames": [],
+      "speech": [],
+      "rewrite": [],
+      "better_than_last": "Maintains excellent visual authenticity with authentic medieval manuscript illuminations that directly illustrate each beat.",
+      "judge": "gemini-3.7-flash",
+      "passed": false
+    }
+  ],
+  "best_round": 1
+}
