@@ -4,6 +4,7 @@ version = "0.1.0"
 description = "Script-to-Short production pipeline for the channel"
 requires-python = ">=3.12,<3.13"
 dependencies = [
+    "cryptography>=50.0.1",
     "cursor-sdk>=1.0.32",
     "ddgs>=9.16",
     "en-core-web-sm",

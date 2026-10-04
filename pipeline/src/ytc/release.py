@@ -1,12 +1,13 @@
-"""Dormant, exact-media release gate for newly produced History Shorts.
+"""Dormant, exact-media release gate for independently reviewed History Shorts.
 
-The policy file is deliberately absent from the repository. A certificate records what the
-studio checked; every release rechecks its inputs and the hosted bytes before Buffer is touched.
-This is a mechanical provenance and rights gate, not an independent historical fact check.
+The tracked policy is disabled. A signed review from outside production and a certificate
+bind the reviewed media and inputs; every release rechecks them before Buffer is touched.
 """
 
 from __future__ import annotations
 
+import base64
+import binascii
 import hashlib
 import json
 import os
@@ -15,14 +16,22 @@ from datetime import datetime, timedelta, timezone
 from pathlib import Path
 from urllib.parse import urlparse
 
+from cryptography.exceptions import InvalidSignature
+from cryptography.hazmat.primitives.asymmetric.ed25519 import Ed25519PublicKey
+
 from . import publish
 from .research import site
 from .spec import ShortSpec
 
 ROOT = Path(__file__).resolve().parents[3]
 POLICY_PATH = ROOT / "status" / "autonomous_release_policy.json"
+REVIEW_PUBLIC_KEY_PATH = ROOT / "kit" / "independent-review.pub"
+INDEPENDENT_REVIEW = "independent_review.json"
+REVIEW_SIGNING_CONTEXT = b"history-last-hours-independent-review-v1\0"
 CERTIFICATE = "release_certificate.json"
+CERTIFICATE_VERSION = 2
 FILES = ("short.yaml", "script.json", "research.json", "review.json", "work/manifest.json")
+REVIEW_CHECKS = ("claim_sources", "visual_identity_rights", "full_video_audio")
 _HASH = re.compile(r"[0-9a-f]{64}\Z")
 _EPISODE = re.compile(r"ep(\d{3,})\Z")
 _CC_BY = re.compile(r"CC BY (?:2\.0|2\.5|3\.0|4\.0)(?: [a-z]{2})?\Z", re.I)
@@ -49,10 +58,10 @@ def _hash(path: Path) -> str:
         return hashlib.file_digest(stream, "sha256").hexdigest()
 
 
-def _utc(value: str) -> datetime:
+def _utc(value: str, label: str = "release cutoff") -> datetime:
     parsed = datetime.fromisoformat(value)
     if parsed.tzinfo is None or parsed.utcoffset() != timedelta(0):
-        raise RuntimeError("release cutoff must have a UTC offset")
+        raise RuntimeError(f"{label} must have a UTC offset")
     return parsed
 
 
@@ -157,8 +166,52 @@ def _review(folder: Path, media_sha256: str) -> dict:
     return {"round": kept, "scores": round_["scores"], "speech_differences": [], "warnings": []}
 
 
+def _review_subject(folder: Path, record: dict, media_sha256: str, files: dict[str, str]) -> dict:
+    return {"id": folder.name, "media_sha256": media_sha256,
+            "media_url": record["media_url"], "media_public_id": record["media_public_id"],
+            "files": files}
+
+
+def _independent_review(folder: Path, subject: dict) -> dict:
+    """Verify a separate reviewer's signed approval of this exact media and its source files."""
+    try:
+        key_bytes = base64.b64decode(REVIEW_PUBLIC_KEY_PATH.read_text(encoding="utf-8").strip(), validate=True)
+        if len(key_bytes) != 32:
+            raise ValueError("Ed25519 public keys contain 32 bytes")
+        key = Ed25519PublicKey.from_public_bytes(key_bytes)
+    except (OSError, ValueError, binascii.Error) as exc:
+        raise RuntimeError("trusted independent reviewer public key is missing or invalid") from exc
+    try:
+        review = _json(folder / INDEPENDENT_REVIEW)
+    except FileNotFoundError as exc:
+        raise RuntimeError("signed independent review is missing") from exc
+    if set(review) != {"version", "subject", "reviewer_key_sha256", "reviewed_at_utc", "decision", "checks", "signature"}:
+        raise RuntimeError("independent review fields are incomplete or unexpected")
+    fingerprint = hashlib.sha256(key_bytes).hexdigest()
+    if (type(review["version"]) is not int or review["version"] != 1 or review["subject"] != subject or
+        review["reviewer_key_sha256"] != fingerprint or review["decision"] != "approved" or
+        not isinstance(review["checks"], dict) or set(review["checks"]) != set(REVIEW_CHECKS) or
+        any(review["checks"][name] is not True for name in REVIEW_CHECKS)):
+        raise RuntimeError("independent review does not approve this exact candidate")
+    try:
+        reviewed_at = _utc(review["reviewed_at_utc"], "independent review time")
+    except (TypeError, ValueError) as exc:
+        raise RuntimeError("independent review time is invalid") from exc
+    if reviewed_at > datetime.now(timezone.utc) + timedelta(minutes=5):
+        raise RuntimeError("independent review time is in the future")
+    try:
+        signature = base64.b64decode(review["signature"], validate=True)
+        signed = {name: value for name, value in review.items() if name != "signature"}
+        message = json.dumps(signed, sort_keys=True, separators=(",", ":"), ensure_ascii=False,
+                             allow_nan=False).encode("utf-8")
+        key.verify(signature, REVIEW_SIGNING_CONTEXT + message)
+    except (TypeError, ValueError, binascii.Error, InvalidSignature) as exc:
+        raise RuntimeError("independent review signature is invalid") from exc
+    return {"reviewer_key_sha256": fingerprint, "reviewed_at_utc": review["reviewed_at_utc"]}
+
+
 def certify(folder: Path) -> dict:
-    """Save a certificate after a new draft has passed review and its MP4 has been hosted."""
+    """Save a certificate only after separate signed QA of the exact hosted MP4."""
     folder = folder.resolve()
     match = _EPISODE.fullmatch(folder.name)
     if not match or int(match.group(1)) < FIRST_ELIGIBLE_EPISODE:
@@ -167,22 +220,32 @@ def certify(folder: Path) -> dict:
     spec = ShortSpec.load(folder / "short.yaml")
     if spec.id != folder.name or held.get("id") != spec.id:
         raise RuntimeError("episode identity disagrees")
+    if held.get("superseded"):
+        raise RuntimeError("superseded hosted media cannot receive a release certificate")
     media = folder / f"{spec.id}.mp4"
-    media_sha256 = _hash(media)
+    binding = publish.media_binding(folder / "short.yaml", spec.id)
+    media_sha256 = binding["media_sha256"]
+    if not _HASH.fullmatch(str(media_sha256)):
+        raise RuntimeError("rendered MP4 hash is invalid")
+    if media.exists() and _hash(media) != media_sha256:
+        raise RuntimeError("local MP4 differs from the hosted media binding")
     if _json(folder / "work" / "manifest.json").get("video_sha256") != media_sha256:
         raise RuntimeError("manifest render hash differs from the reviewed MP4")
-    binding = publish.media_binding(folder / "short.yaml", spec.id)
     if binding["media_sha256"] != media_sha256 or any(held.get(k) != v for k, v in binding.items()):
         raise RuntimeError("hosted hold does not bind to the reviewed MP4")
     if not held.get("media_url") or not held.get("media_public_id"):
         raise RuntimeError("hosted media is missing")
     claims, assets = _sources_and_rights(folder)
     reviewed = _review(folder, media_sha256)
-    certificate = {"version": 1, "id": spec.id, "issued_at_utc": datetime.now(timezone.utc).isoformat(),
+    files = {name: _hash(folder / name) for name in FILES}
+    independent = _independent_review(folder, _review_subject(folder, held, media_sha256, files))
+    publish.verify_hosted_media(held["media_url"], media_sha256)
+    certificate = {"version": CERTIFICATE_VERSION, "id": spec.id, "issued_at_utc": datetime.now(timezone.utc).isoformat(),
                    "media_sha256": media_sha256, "media_url": held["media_url"],
                    "media_public_id": held["media_public_id"],
-                   "files": {name: _hash(folder / name) for name in FILES},
-                   "claims": claims, "assets": assets, "review": reviewed}
+                   "files": files, "claims": claims, "assets": assets, "review": reviewed,
+                   "independent_review_sha256": _hash(folder / INDEPENDENT_REVIEW),
+                   "independent_review": independent}
     (folder / CERTIFICATE).write_text(json.dumps(certificate, indent=2) + "\n", encoding="utf-8")
     return certificate
 
@@ -197,13 +260,13 @@ def validate(spec_path: Path, *, hosted: bool = False) -> dict:
         raise RuntimeError(f"{folder.name} is on editorial hold")
     _new_draft(folder, config)
     certificate = _json(folder / CERTIFICATE)
-    if certificate.get("version") != 1 or certificate.get("id") != folder.name:
+    if certificate.get("version") != CERTIFICATE_VERSION or certificate.get("id") != folder.name:
         raise RuntimeError("release certificate identity is invalid")
-    if any(not _HASH.fullmatch(str(value)) or _hash(folder / name) != value
-           for name, value in certificate.get("files", {}).items()):
-        raise RuntimeError("release certificate files changed")
-    if set(certificate.get("files", {})) != set(FILES):
+    files = certificate.get("files")
+    if not isinstance(files, dict) or set(files) != set(FILES):
         raise RuntimeError("release certificate file list is incomplete")
+    if any(not _HASH.fullmatch(str(files[name])) or _hash(folder / name) != files[name] for name in FILES):
+        raise RuntimeError("release certificate files changed")
     binding = publish.media_binding(spec_path, folder.name)
     if _json(folder / "work" / "manifest.json").get("video_sha256") != certificate.get("media_sha256"):
         raise RuntimeError("manifest render hash differs from the release certificate")
@@ -221,10 +284,18 @@ def validate(spec_path: Path, *, hosted: bool = False) -> dict:
         raise RuntimeError("final-media review certificate changed")
     record_path = folder / ("publish.json" if (folder / "publish.json").exists() else "hold.json")
     record = _json(record_path)
+    if record.get("superseded"):
+        raise RuntimeError("superseded hosted media cannot be released")
     if record.get("media_url") != certificate.get("media_url") or record.get("media_public_id") != certificate.get("media_public_id"):
         raise RuntimeError("hosted record differs from the certified media")
     if any(record.get(key) != binding[key] for key in publish.MEDIA_BINDING_FIELDS):
         raise RuntimeError("hosted record has a stale media binding")
+    review_path = folder / INDEPENDENT_REVIEW
+    if not review_path.exists() or certificate.get("independent_review_sha256") != _hash(review_path):
+        raise RuntimeError("signed independent review differs from the release certificate")
+    independent = _independent_review(folder, _review_subject(folder, certificate, certificate["media_sha256"], files))
+    if independent != certificate.get("independent_review"):
+        raise RuntimeError("independent review certificate changed")
     if hosted:
         publish.verify_hosted_media(certificate["media_url"], certificate["media_sha256"])
     return certificate
@@ -306,6 +377,12 @@ def schedule_waiting(run) -> None:
         if not run.stages[-1]["ok"]:
             instagram = None
     eps = auto.episodes()
+    for episode in eps:
+        folder = episode["folder"]
+        if episode["state"] == "waiting" and (folder / INDEPENDENT_REVIEW).exists() and not (folder / CERTIFICATE).exists():
+            with run.stage(f"certify independent review of {episode['id']}") as entry:
+                cert = certify(folder)
+                entry["detail"] = cert["media_sha256"]
     missing = [e["id"] for e in eps if e["state"] == "waiting" and not (e["folder"] / CERTIFICATE).exists()]
     if missing:
         run.notes.append(f"uncertified waiting drafts remain held: {', '.join(missing)}")

@@ -470,12 +470,10 @@ def produce(topic: str, series: str, episode_id: str | None = None, *, at: str |
     write_research_md(folder, research, script, visuals, notes, episode_id)
     held = hold(spec_path, {"scores": verdict["scores"], "anniversary": meta.get("at")})
     if int(episode_id.removeprefix("ep")) >= 63:
-        from .release import certify
-        try:
-            certify(folder)
-        except Exception as err:
-            (folder / "release_certificate.json").unlink(missing_ok=True)
-            log.warning("%s has no autonomous release certificate: %s", episode_id, err)
+        # A producing run cannot approve its own render. Any earlier approval covered older bytes.
+        (folder / "release_certificate.json").unlink(missing_ok=True)
+        (folder / "independent_review.json").unlink(missing_ok=True)
+        log.info("%s hosted and held for independent exact-media review", episode_id)
     return {"id": episode_id, "outcome": "ready", "topic": meta["topic"], "title": script["title"],
             "scores": verdict["scores"], "media_url": held["media_url"], "renders": len(notes["rounds"])}
 

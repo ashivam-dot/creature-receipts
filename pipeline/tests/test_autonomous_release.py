@@ -1,17 +1,20 @@
 """The disabled-by-default release path binds new drafts to exact media and retries safely."""
 
+import base64
 import hashlib
 import json
 from datetime import datetime, timedelta, timezone
 
 import pytest
+from cryptography.hazmat.primitives import serialization
+from cryptography.hazmat.primitives.asymmetric.ed25519 import Ed25519PrivateKey
 
 from ytc import auto, publish, release
 from ytc.spec import ShortSpec
 
 
 @pytest.fixture
-def episode(tmp_path, monkeypatch):
+def draft(tmp_path, monkeypatch):
     folder = tmp_path / "ep063"
     (folder / "work").mkdir(parents=True)
     marker = tmp_path / "scheduling_hold.json"
@@ -51,9 +54,34 @@ def episode(tmp_path, monkeypatch):
     binding = publish.media_binding(folder / "short.yaml", "ep063")
     (folder / "hold.json").write_text(json.dumps({"id": "ep063", "title": "The Last Voyage",
         "media_url": "https://cdn.example/ep063.mp4", "media_public_id": "history/ep063", **binding}))
-    release.certify(folder)
     monkeypatch.setattr(publish, "verify_hosted_media", lambda url, digest: None)
     return folder
+
+
+def _sign_independent_review(folder, monkeypatch):
+    private = Ed25519PrivateKey.generate()
+    public = private.public_key().public_bytes(serialization.Encoding.Raw, serialization.PublicFormat.Raw)
+    key_path = folder.parent / "independent-review.pub"
+    key_path.write_text(base64.b64encode(public).decode("ascii"))
+    monkeypatch.setattr(release, "REVIEW_PUBLIC_KEY_PATH", key_path)
+    held = json.loads((folder / "hold.json").read_text())
+    files = {name: release._hash(folder / name) for name in release.FILES}
+    subject = release._review_subject(folder, held, held["media_sha256"], files)
+    review = {"version": 1, "subject": subject,
+              "reviewer_key_sha256": hashlib.sha256(public).hexdigest(),
+              "reviewed_at_utc": datetime.now(timezone.utc).isoformat(),
+              "decision": "approved", "checks": {name: True for name in release.REVIEW_CHECKS}}
+    message = json.dumps(review, sort_keys=True, separators=(",", ":"), ensure_ascii=False).encode()
+    review["signature"] = base64.b64encode(private.sign(release.REVIEW_SIGNING_CONTEXT + message)).decode("ascii")
+    (folder / release.INDEPENDENT_REVIEW).write_text(json.dumps(review))
+    return review
+
+
+@pytest.fixture
+def episode(draft, monkeypatch):
+    _sign_independent_review(draft, monkeypatch)
+    release.certify(draft)
+    return draft
 
 
 def _optional_instagram_policy():
@@ -76,6 +104,83 @@ def _capture_buffer_creates(monkeypatch):
     monkeypatch.setattr(publish, "next_slots", lambda count, taken, **kwargs:
                         [datetime.now(publish.AUDIENCE_TZ) + timedelta(days=1)])
     return payloads
+
+
+def test_unsigned_producer_draft_stays_held(draft, monkeypatch):
+    _optional_instagram_policy()
+    monkeypatch.setattr(auto, "EPISODES", draft.parent)
+    monkeypatch.delenv("BUFFER_INSTAGRAM_CHANNEL_ID")
+    monkeypatch.setattr(publish, "posts", lambda **kwargs: pytest.fail("Buffer posts were queried"))
+    monkeypatch.setattr(publish, "_buffer", lambda *args: pytest.fail("a post was created"))
+    run = auto.Run("test")
+    auto.publish_waiting(run)
+    assert run.errors == []
+    assert any("uncertified waiting drafts remain held: ep063" in note for note in run.notes)
+    assert not (draft / release.CERTIFICATE).exists()
+    assert not (draft / "publish.json").exists()
+
+
+def test_certify_requires_a_signed_independent_review(draft, monkeypatch):
+    _sign_independent_review(draft, monkeypatch)
+    (draft / release.INDEPENDENT_REVIEW).unlink()
+    with pytest.raises(RuntimeError, match="signed independent review is missing"):
+        release.certify(draft)
+    assert not (draft / release.CERTIFICATE).exists()
+
+
+def test_changed_or_untrusted_independent_signature_blocks_certification(draft, monkeypatch):
+    review = _sign_independent_review(draft, monkeypatch)
+    review["reviewed_at_utc"] = (datetime.now(timezone.utc) - timedelta(minutes=1)).isoformat()
+    (draft / release.INDEPENDENT_REVIEW).write_text(json.dumps(review))
+    with pytest.raises(RuntimeError, match="signature is invalid"):
+        release.certify(draft)
+    (draft.parent / "independent-review.pub").unlink()
+    with pytest.raises(RuntimeError, match="trusted independent reviewer public key"):
+        release.certify(draft)
+    assert not (draft / release.CERTIFICATE).exists()
+
+
+def test_signed_cloud_handoff_certifies_hosted_bytes_without_local_mp4(draft, monkeypatch):
+    _optional_instagram_policy()
+    _sign_independent_review(draft, monkeypatch)
+    (draft / "ep063.mp4").unlink()
+    monkeypatch.setattr(auto, "EPISODES", draft.parent)
+    monkeypatch.delenv("BUFFER_INSTAGRAM_CHANNEL_ID")
+    verified = []
+    monkeypatch.setattr(publish, "verify_hosted_media", lambda url, digest: verified.append((url, digest)))
+    payloads = _capture_buffer_creates(monkeypatch)
+    run = auto.Run("test")
+    auto.publish_waiting(run)
+    assert run.errors == []
+    assert [payload["channelId"] for payload in payloads] == ["yt"]
+    certificate = json.loads((draft / release.CERTIFICATE).read_text())
+    assert certificate["version"] == release.CERTIFICATE_VERSION == 2
+    assert certificate["independent_review"]["reviewer_key_sha256"]
+    assert verified and all(url == "https://cdn.example/ep063.mp4" and
+                            digest == certificate["media_sha256"] for url, digest in verified)
+
+
+def test_old_producer_certificate_cannot_authorize_release(episode):
+    certificate_path = episode / release.CERTIFICATE
+    certificate = json.loads(certificate_path.read_text())
+    certificate["version"] = 1
+    certificate_path.write_text(json.dumps(certificate))
+    with pytest.raises(RuntimeError, match="release certificate identity is invalid"):
+        release.validate(episode / "short.yaml")
+
+
+def test_release_rechecks_the_signed_review_and_trusted_key(episode):
+    review_path = episode / release.INDEPENDENT_REVIEW
+    original = review_path.read_text()
+    review = json.loads(original)
+    review["checks"]["full_video_audio"] = False
+    review_path.write_text(json.dumps(review))
+    with pytest.raises(RuntimeError, match="signed independent review differs"):
+        release.validate(episode / "short.yaml")
+    review_path.write_text(original)
+    release.REVIEW_PUBLIC_KEY_PATH.unlink()
+    with pytest.raises(RuntimeError, match="trusted independent reviewer public key"):
+        release.validate(episode / "short.yaml")
 
 
 def test_policy_is_dormant_without_both_switches(episode, monkeypatch):

@@ -8,16 +8,42 @@ and the automation environment sets `YTC_AUTONOMOUS_RELEASE=1`. Its episode floo
 cannot be below ep063, and a draft's `topic.started_at` must be on or after the policy's
 UTC cutoff. Existing ep050, ep051, and ep053 cannot enter this path.
 
-New studio drafts record the SHA-256 of the exact MP4 in each review round. After
-hosting, the studio writes `release_certificate.json` only when the kept round has
-clean full-decode, finished-MP4 transcription, and review results. The certificate
-binds the MP4, spec, manifest, script, research, review, hosted URL and public ID.
+New studio drafts record the SHA-256 of the exact MP4 in each review round and
+then wait in `hold.json`. Production cannot write its own release certificate.
+A reviewer outside production must check the complete hosted video and narration,
+cited claims, visual identity and rights. An external trusted signer must then
+provide `independent_review.json` for that exact candidate. The signed payload
+binds the MP4 hash, hosted URL and public ID, spec, manifest, script, research,
+review, and three explicit QA assertions. The studio must not receive the private key.
+
+On an active policy, a cloud run verifies the signature and hosted bytes before
+minting a version-2 `release_certificate.json`. Each release checks the signature,
+certificate and hosted bytes again; old producer-written certificates are rejected.
 It lists cited claims with evidence from two source sites and records image licenses
 and credit URLs. The gate rejects missing or changed evidence, ambiguous licenses,
 or a missing hosted copy. It verifies all hosted video bytes again before each
 platform schedules. These checks establish traceability and machine-checked rights
-metadata; they cannot prove the historical interpretation or legal status of a
-source independently.
+metadata. The independent reviewer supplies the factual, visual and listening
+judgment that the producer's automated scores and contact sheet cannot establish.
+
+The signing gate remains unconfigured: `kit/independent-review.pub` has no trusted
+key and there is no independent signer. The producer's deploy key can push this
+repository, so a signing workflow and secret in this repository would not create
+an independent trust boundary. A separate control repository or service must own
+the review code and private key, and the producer must not be able to change its
+protected workflow, key, or approval policy. Before activation, pin the trusted
+reviewer's base64 raw Ed25519 public key in a reviewed commit, define a separate
+review and signing process, and isolate the publishing credentials or deployment
+from producer-controlled changes. The external signer must serialize the review
+without its `signature` using sorted keys, `(',', ':')` separators, UTF-8, and no ASCII
+escaping, prefix those bytes with `history-last-hours-independent-review-v1` and
+a zero byte, then base64-encode an Ed25519 signature of the result. The signed review
+must have `version: 1`, the exact `subject` fields, `reviewer_key_sha256`, a UTC
+`reviewed_at_utc`, `decision: approved`, and true `claim_sources`,
+`visual_identity_rights`, and `full_video_audio` checks. A missing key, missing
+review, failed check, changed file or media URL, or invalid signature keeps the
+draft held. This path cannot publish unattended until the independent control
+boundary and review handoff exist.
 
 When active, the hold allows only this certificate-scoped path to create a YouTube
 post. The policy must explicitly set `require_instagram` to `true` or `false`.
