@@ -1,0 +1,90 @@
+{
+  "rounds": [
+    {
+      "at": "2026-10-04T15:52:16+05:30",
+      "check": {
+        "duration": 28.43,
+        "words": 72,
+        "integrated_lufs": -14.3,
+        "true_peak_dbfs": -1.8,
+        "warnings": [],
+        "speech_differences": [
+          "'chord' heard as 'cord' after 'on august 27'",
+          "'s' heard as 'is' after 'chord 9 l'",
+          "'chords' heard as 'cords' after 'the failed lower'",
+          "base.en: 'chord' heard as 'cord' after 'on august 27'",
+          "base.en: 'chords' heard as 'cords' after 'the failed lower'"
+        ],
+        "speech_error": null,
+        "sources": [
+          "Wikimedia Commons",
+          "Royal Commission report / authored graphic",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons / BAnQ",
+          "Royal Commission report / authored graphic",
+          "Wikimedia Commons"
+        ],
+        "speech_verification": {
+          "heard": "Two days after staff measured a growing bend, the Quebec Bridge collapsed. On August 27, Cord 9L's bend had grown. Some workers called it critical, but the superintendent disagreed. On August 29, the massive steel structure fell. A royal commission found the failed lower cords were defectively designed. It did not believe the bridge could be saved after August 27. Better judgment the commission found might have prevented the loss of life.",
+          "model": "small.en",
+          "media_sha256": "275e16639c09e88cd72ae9f173202a83d7a0c73d0ddc7cfa5a1fcc25b8cdb45a",
+          "primary_differences": [
+            "'chord' heard as 'cord' after 'on august 27'",
+            "'s' heard as 'is' after 'chord 9 l'",
+            "'chords' heard as 'cords' after 'the failed lower'"
+          ],
+          "differences": [
+            "'chord' heard as 'cord' after 'on august 27'",
+            "'s' heard as 'is' after 'chord 9 l'",
+            "'chords' heard as 'cords' after 'the failed lower'",
+            "base.en: 'chord' heard as 'cord' after 'on august 27'",
+            "base.en: 'chords' heard as 'cords' after 'the failed lower'"
+          ],
+          "corroboration": {
+            "model": "base.en",
+            "heard": "Two days after staff measured a growing bend, the Quebec Bridge collapsed. On August 27, Cord 9 Ls Bend had grown. Some workers called it critical, but the superintendent disagreed. On August 29, the massive steel structure fell. A royal commission found the failed lower cords were defectively designed. It did not believe the bridge could be saved after August 27. Better judgment the commission found might have prevented the loss of life.",
+            "differences": [
+              "'chord' heard as 'cord' after 'on august 27'",
+              "'chords' heard as 'cords' after 'the failed lower'"
+            ],
+            "resolved": []
+          }
+        }
+      },
+      "media_sha256": "275e16639c09e88cd72ae9f173202a83d7a0c73d0ddc7cfa5a1fcc25b8cdb45a",
+      "scores": {
+        "hook": 4,
+        "clarity": 4,
+        "payoff": 3,
+        "visuals": 3,
+        "loop": 3
+      },
+      "notes": {
+        "hook": "Direct opening sets up the tragedy quickly.",
+        "clarity": "Chronology of the structural failure is simple to follow.",
+        "payoff": "The tragic bureaucratic oversight lands, but feels slightly academic.",
+        "visuals": "Beat 3 duplicates Beat 1, and Beat 6 is text-heavy.",
+        "loop": "Last sentence connects back reasonably, though not completely seamless."
+      },
+      "frames": [
+        {
+          "beat": 3,
+          "problem": "the same picture as another beat"
+        },
+        {
+          "beat": 6,
+          "problem": "mostly text"
+        }
+      ],
+      "speech": [],
+      "rewrite": [
+        "Beat 7: 'Better judgment could have saved seventy-five workers, two days before the fall.'"
+      ],
+      "better_than_last": "Integrates clear structural diagrams directly supporting the narrative tension.",
+      "judge": "gemini-3.7-flash",
+      "passed": false
+    }
+  ],
+  "best_round": 1
+}
