@@ -53,6 +53,7 @@ def isolated(tmp_path, monkeypatch):
     monkeypatch.setattr(auto, "ROOT", tmp_path)
     monkeypatch.setattr(auto, "_now", lambda: datetime(2026, 10, 4, 12, tzinfo=auto.IST))
     monkeypatch.setattr(auto, "demand", lambda topics: {})
+    monkeypatch.setattr(auto, "ACCIDENT_LEADS_ACTIVE", 1)
     monkeypatch.setattr(stories, "STORIES", status / "stories.json")
     monkeypatch.setattr(studio, "EPISODES", episodes)
     monkeypatch.setattr(studio, "REJECTED", rejected)
@@ -102,6 +103,17 @@ def test_parked_accident_does_not_block_next_checked_lead(isolated):
     assert auto.add_accident_topics(run) == []
     records = stories._load()["topics"]
     assert records[accidents.load(TODAY)[1]["topic"]]["candidate_id"] == "quebec-bridge-1907"
+
+
+def test_lane_keeps_the_configured_number_of_leads_waiting(isolated, monkeypatch):
+    monkeypatch.setattr(auto, "ACCIDENT_LEADS_ACTIVE", 2)
+    run = auto.Run("test")
+    added = auto.add_accident_topics(run)
+    assert len(added) == 2 and "Texas City" in added[0] and "Quebec Bridge" in added[1]
+    assert auto.add_accident_topics(run) == []
+    first = next(t for t in auto.calendar_topics(TODAY) if t["topic"].startswith("Texas City"))
+    auto.mark_topic(first, "done", "ep100")
+    assert ["Oppau" in t for t in auto.add_accident_topics(run)] == [True]
 
 
 def test_episode_receives_exact_checked_sources_and_studio_passes_them(isolated, monkeypatch):

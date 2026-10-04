@@ -48,6 +48,8 @@ BATCH = 4
 # After Gemini's free quotas reset (00:05 Pacific: 12:35 IST in summer time, 13:35 in winter), so the routine's
 # learnings and new topics come before production uses the day's quota; the first run after is 17:05 IST.
 DAILY_FROM_HOUR = 14
+# Source-checked accident leads waiting in the calendar at once.
+ACCIDENT_LEADS_ACTIVE = 2
 # Modal's Starter plan includes $1 of compute a month, or $30 once a card is on file (set the YTC_MODAL_CREDIT
 # Actions variable to match). A Short made there costs about $0.10: a worker waiting on Gemini, and up to three renders.
 MODAL_CREDIT = float(os.environ.get("YTC_MODAL_CREDIT") or 1)
@@ -514,7 +516,8 @@ def add_accident_topics(run: Run) -> list[str]:
     # A parked lead cannot be retried for two weeks. Keep the source-checked
     # accident lane moving while that earlier draft waits for its retry date.
     pool_topics = {row["topic"] for row in accidents.load(today)}
-    if any(t["topic"] in pool_topics and t["status"] not in ("done", "dropped", "parked") for t in topics):
+    active = sum(t["topic"] in pool_topics and t["status"] not in ("done", "dropped", "parked") for t in topics)
+    if active >= ACCIDENT_LEADS_ACTIVE:
         return []
     known = [t["topic"] for t in topics] + list(records)
     for base in (EPISODES, REJECTED, ROOT / "content" / "shelved"):
@@ -523,20 +526,24 @@ def add_accident_topics(run: Run) -> list[str]:
             if meta.get("topic"):
                 known.append(meta["topic"])
     used_ids = {record["candidate_id"] for record in records.values() if record.get("candidate_id")}
-    candidate = accidents.next_candidate(known, used_ids, today)
-    if not candidate:
-        return []
     lines = CALENDAR.read_text(encoding="utf-8").splitlines()
-    if not insert_backlog(lines, candidate["series"], candidate["topic"]):
-        return []
-    records[candidate["topic"]] = {
-        "candidate_id": candidate["id"], "score": 8, "readers": 0, "editorial_priority": 36,
-        "source_urls": [source["url"] for source in candidate["sources"]],
-        "checked_at": candidate["checked_at"], "why": "Source-checked accident research lead",
-    }
-    CALENDAR.write_text("\n".join(lines) + "\n", encoding="utf-8")
-    stories._save(data)
-    return [f"{candidate['topic']} ({candidate['series']}, source-checked research lead)"]
+    added = []
+    while active + len(added) < ACCIDENT_LEADS_ACTIVE:
+        candidate = accidents.next_candidate(known, used_ids, today)
+        if not candidate or not insert_backlog(lines, candidate["series"], candidate["topic"]):
+            break
+        records[candidate["topic"]] = {
+            "candidate_id": candidate["id"], "score": 8, "readers": 0, "editorial_priority": 36,
+            "source_urls": [source["url"] for source in candidate["sources"]],
+            "checked_at": candidate["checked_at"], "why": "Source-checked accident research lead",
+        }
+        known.append(candidate["topic"])
+        used_ids.add(candidate["id"])
+        added.append(f"{candidate['topic']} ({candidate['series']}, source-checked research lead)")
+    if added:
+        CALENDAR.write_text("\n".join(lines) + "\n", encoding="utf-8")
+        stories._save(data)
+    return added
 
 
 def add_stories(run: Run, today: date | None = None) -> list[str]:

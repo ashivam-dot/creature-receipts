@@ -127,6 +127,8 @@ event is told for its gore. Space topics belong to the sister channel Universe R
 - Battle of Mytilene (406 BC): after winning a crucial naval victory, six Athenian generals were executed by their own city because a storm prevented them from rescuing shipwrecked survivors
 - Earthquake Synod (1382): when a violent earthquake interrupted a trial to condemn a religious reformer, both the prosecutors and the accused claimed God sent the quake to support them
 - Siege of Pembroke (1648): an impregnable fortress was forced to surrender after a defector revealed the exact location of the secret underground pipe supplying all their water
+- Oppau explosion (1921): a routine blast to break up caked fertilizer preceded a stockpile detonation
+- Mann Gulch fire (1949): foreman Wag Dodge set an escape fire as his crew fled the advancing wildfire
 
 ### Lost Cities
 
