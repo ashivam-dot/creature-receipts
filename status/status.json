@@ -1,22 +1,34 @@
 {
-  "updated_at": "2026-10-04T16:56:51+05:30",
+  "updated_at": "2026-10-04T17:13:31+05:30",
   "day": 3,
   "result": "ok",
   "run": {
     "host": "github-actions",
-    "id": "37198726271",
-    "number": "40",
+    "id": "37199660544",
+    "number": "41",
     "trigger": "workflow_dispatch",
-    "started_at": "2026-10-04T16:56:47+05:30",
-    "started_at_utc": "2026-10-04T11:26:47+00:00",
-    "seconds": 4
+    "started_at": "2026-10-04T17:13:24+05:30",
+    "started_at_utc": "2026-10-04T11:43:24+00:00",
+    "seconds": 7
   },
   "stages": [
     {
       "name": "collect",
       "ok": true,
-      "detail": "ep065 rejected (visual plan: beat 1 uses art outside the approved source set)",
-      "seconds": 3.3
+      "detail": "nothing in the cloud",
+      "seconds": 0.9
+    },
+    {
+      "name": "deploy",
+      "ok": true,
+      "detail": "",
+      "seconds": 1.8
+    },
+    {
+      "name": "start ep065",
+      "ok": true,
+      "detail": "Quebec Bridge collapse (1907): engineers measured a lower-chord bend before it fell; the inquiry found defective design",
+      "seconds": 1.3
     }
   ],
   "errors": [],
@@ -31,7 +43,9 @@
     "drafts": 0,
     "target": 14,
     "making": [],
-    "remote": []
+    "remote": [
+      "ep065"
+    ]
   },
   "queue": [],
   "waiting": [
@@ -54,43 +68,48 @@
       "score": 24
     }
   ],
-  "made": [
+  "made": [],
+  "spawned": [
     {
       "id": "ep065",
-      "outcome": "rejected",
       "topic": "Quebec Bridge collapse (1907): engineers measured a lower-chord bend before it fell; the inquiry found defective design",
-      "reason": "visual plan: beat 1 uses art outside the approved source set"
+      "call_id": "fc-01M43BKTHKG2WZCXPNCMYBRHG3"
     }
   ],
-  "spawned": [],
-  "in_cloud": [],
+  "in_cloud": [
+    {
+      "id": "ep065",
+      "topic": "Quebec Bridge collapse (1907): engineers measured a lower-chord bend before it fell; the inquiry found defective design",
+      "spawned_at": "2026-10-04T17:13:29+05:30"
+    }
+  ],
   "published": [],
   "live": 1,
   "failed_posts": [],
   "not_live": [],
   "llm": {
-    "calls": 4,
-    "by_model": {
-      "gemini-3.7-flash": 1,
-      "gemini-3.5-flash": 1,
-      "gemini-3-flash-preview": 1,
-      "gemini-3.5-flash-lite": 1
-    },
+    "calls": 0,
+    "by_model": {},
     "out_of_quota": []
   },
   "renders": {
-    "modal": 1,
+    "modal": 0,
     "runner": 0
   },
   "daily_done": "2026-10-04",
-  "minutes_this_month": 54.06133144881667,
+  "minutes_this_month": 56.12238248691666,
   "minutes_budget": null,
   "modal_cost": {
-    "metered": 5.18,
+    "metered": 5.16,
     "billed": 0.0
   },
   "modal_credit": 30.0,
-  "capacity": null,
+  "capacity": {
+    "cloud": 190,
+    "runner": 0,
+    "runner_minutes": 0,
+    "modal_credit_left": 22.84
+  },
   "made_here": 0,
   "open_topics": 159,
   "parked_topics": 18
