@@ -86,6 +86,17 @@ def test_accident_lead_is_repeat_safe_across_calendar_and_episode_history(isolat
     assert {r["candidate_id"] for r in records.values()} == {"texas-city-1947", "mann-gulch-1949"}
 
 
+def test_parked_accident_does_not_block_next_checked_lead(isolated):
+    run = auto.Run("test")
+    assert "Texas City" in auto.add_accident_topics(run)[0]
+    first = next(t for t in auto.calendar_topics(TODAY) if t["topic"].startswith("Texas City"))
+    auto.mark_topic(first, "parked", "ep063")
+    assert "Quebec Bridge" in auto.add_accident_topics(run)[0]
+    assert auto.add_accident_topics(run) == []
+    records = stories._load()["topics"]
+    assert records[accidents.load(TODAY)[1]["topic"]]["candidate_id"] == "quebec-bridge-1907"
+
+
 def test_episode_receives_exact_checked_sources_and_studio_passes_them(isolated, monkeypatch):
     candidate = accidents.load(TODAY)[0]
     auto.add_accident_topics(auto.Run("test"))

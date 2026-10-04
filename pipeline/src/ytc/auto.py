@@ -511,9 +511,10 @@ def add_accident_topics(run: Run) -> list[str]:
     data = stories._load()
     topics = calendar_topics(today)
     records = data.setdefault("topics", {})
-    # Let the current accident lead finish or be dropped before adding another.
+    # A parked lead cannot be retried for two weeks. Keep the source-checked
+    # accident lane moving while that earlier draft waits for its retry date.
     pool_topics = {row["topic"] for row in accidents.load(today)}
-    if any(t["topic"] in pool_topics and t["status"] not in ("done", "dropped") for t in topics):
+    if any(t["topic"] in pool_topics and t["status"] not in ("done", "dropped", "parked") for t in topics):
         return []
     known = [t["topic"] for t in topics] + list(records)
     for base in (EPISODES, REJECTED, ROOT / "content" / "shelved"):
