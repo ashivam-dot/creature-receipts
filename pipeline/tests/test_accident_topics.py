@@ -62,7 +62,8 @@ def isolated(tmp_path, monkeypatch):
 
 def test_accident_pool_needs_primary_and_independent_origins(isolated):
     rows = accidents.load(TODAY)
-    assert [row["id"] for row in rows] == ["texas-city-1947", "quebec-bridge-1907", "oppau-1921", "mann-gulch-1949"]
+    assert [row["id"] for row in rows][:4] == ["texas-city-1947", "quebec-bridge-1907", "oppau-1921", "mann-gulch-1949"]
+    assert len(rows) == len(json.loads(accidents.CANDIDATES.read_text(encoding="utf-8")))
     broken = copy.deepcopy(rows[0])
     broken["sources"][0]["url"] = "https://en.wikipedia.org/wiki/Texas_City_disaster"
     accidents.CANDIDATES.write_text(json.dumps([broken]), encoding="utf-8")

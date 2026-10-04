@@ -1,62 +1,14 @@
 [
   {
-    "id": "quebec-bridge-1907",
-    "order": 2,
-    "year": 1907,
-    "series": "Warnings Ignored",
-    "topic": "Quebec Bridge collapse (1907): engineers measured a lower-chord bend before it fell; the inquiry found defective design",
-    "aliases": ["Quebec Bridge"],
-    "checked_at": "2026-10-04",
-    "sources": [
-      {
-        "role": "primary",
-        "institution": "Royal Commission on Quebec Bridge Inquiry (1908)",
-        "url": "https://archive.org/download/reportandplansa01schngoog/reportandplansa01schngoog_djvu.txt",
-        "focus": ["The collapse of the Quebec bridge resulted", "The bend in chord 9-L anchor arm was discovered"]
-      },
-      {
-        "role": "independent",
-        "institution": "STRUCTURE Magazine, Frank Griggs Jr.",
-        "url": "https://www.structuremag.org/article/quebec-bridge-the-first-failure-1907/"
-      }
-    ],
-    "cautions": [
-      "The commission said the collapse could not have been prevented after August 27; distinguish that from preventing loss of life.",
-      "Do not blame one engineer for all design and judgment failures."
-    ]
-  },
-  {
-    "id": "oppau-1921",
-    "order": 3,
-    "year": 1921,
-    "series": "The Last Hours",
-    "topic": "Oppau explosion (1921): a routine blast to break up caked fertilizer preceded a stockpile detonation",
-    "aliases": ["Oppau explosion", "Oppau"],
-    "checked_at": "2026-10-04",
-    "sources": [
-      {
-        "role": "primary",
-        "institution": "Norwegian Defence Research Establishment (2016 original technical reassessment)",
-        "url": "https://www.ffi.no/en/publications-archive/a-factual-clarification-and-chemical-technical-reassessment-of-the-1921-oppau-explosion-disaster-the-unforeseen-explosivity-of-porous-ammonium-sulfate-nitrate-fertilizer"
-      },
-      {
-        "role": "independent",
-        "institution": "French Ministry of Environment ARIA accident record",
-        "url": "https://www.aria.developpement-durable.gouv.fr/fiche_detaillee/14373/"
-      }
-    ],
-    "cautions": [
-      "The original technical study calls the precise cause incompletely understood; do not state a sole settled cause.",
-      "The French official record is a later accident summary, not the 1925 inquiry itself."
-    ]
-  },
-  {
     "id": "texas-city-1947",
     "order": 1,
     "year": 1947,
     "series": "The Last Hours",
     "topic": "Texas City disaster (1947): a fire aboard the Grandcamp preceded its 9:12 explosion, and another ship exploded the next day",
-    "aliases": ["Texas City disaster", "Grandcamp"],
+    "aliases": [
+      "Texas City disaster",
+      "Grandcamp"
+    ],
     "checked_at": "2026-10-04",
     "sources": [
       {
@@ -76,19 +28,83 @@
     ]
   },
   {
+    "id": "quebec-bridge-1907",
+    "order": 2,
+    "year": 1907,
+    "series": "Warnings Ignored",
+    "topic": "Quebec Bridge collapse (1907): engineers measured a lower-chord bend before it fell; the inquiry found defective design",
+    "aliases": [
+      "Quebec Bridge"
+    ],
+    "checked_at": "2026-10-04",
+    "sources": [
+      {
+        "role": "primary",
+        "institution": "Royal Commission on Quebec Bridge Inquiry (1908)",
+        "url": "https://archive.org/download/reportandplansa01schngoog/reportandplansa01schngoog_djvu.txt",
+        "focus": [
+          "The collapse of the Quebec bridge resulted",
+          "The bend in chord 9-L anchor arm was discovered"
+        ]
+      },
+      {
+        "role": "independent",
+        "institution": "STRUCTURE Magazine, Frank Griggs Jr.",
+        "url": "https://www.structuremag.org/article/quebec-bridge-the-first-failure-1907/"
+      }
+    ],
+    "cautions": [
+      "The commission said the collapse could not have been prevented after August 27; distinguish that from preventing loss of life.",
+      "Do not blame one engineer for all design and judgment failures."
+    ]
+  },
+  {
+    "id": "oppau-1921",
+    "order": 3,
+    "year": 1921,
+    "series": "The Last Hours",
+    "topic": "Oppau explosion (1921): a routine blast to break up caked fertilizer preceded a stockpile detonation",
+    "aliases": [
+      "Oppau explosion",
+      "Oppau"
+    ],
+    "checked_at": "2026-10-04",
+    "sources": [
+      {
+        "role": "primary",
+        "institution": "Norwegian Defence Research Establishment (2016 original technical reassessment)",
+        "url": "https://www.ffi.no/en/publications-archive/a-factual-clarification-and-chemical-technical-reassessment-of-the-1921-oppau-explosion-disaster-the-unforeseen-explosivity-of-porous-ammonium-sulfate-nitrate-fertilizer"
+      },
+      {
+        "role": "independent",
+        "institution": "French Ministry of Environment ARIA accident record",
+        "url": "https://www.aria.developpement-durable.gouv.fr/fiche_detaillee/14373/"
+      }
+    ],
+    "cautions": [
+      "The original technical study calls the precise cause incompletely understood; do not state a sole settled cause.",
+      "The French official record is a later accident summary, not the 1925 inquiry itself."
+    ]
+  },
+  {
     "id": "mann-gulch-1949",
     "order": 4,
     "year": 1949,
     "series": "The Last Hours",
     "topic": "Mann Gulch fire (1949): foreman Wag Dodge set an escape fire as his crew fled the advancing wildfire",
-    "aliases": ["Mann Gulch"],
+    "aliases": [
+      "Mann Gulch"
+    ],
     "checked_at": "2026-10-04",
     "sources": [
       {
         "role": "primary",
         "institution": "U.S. Forest Service Board of Review (1949)",
         "url": "https://archive.org/download/nfsl_2_43087/p17053coll2_43087_djvu.txt",
-        "focus": ["route towards the river was cut off", "Dodge's decision, after contacting Harrison and rejoining his crew"]
+        "focus": [
+          "route towards the river was cut off",
+          "Dodge's decision, after contacting Harrison and rejoining his crew"
+        ]
       },
       {
         "role": "independent",
@@ -99,6 +115,1056 @@
     "cautions": [
       "The Board concluded the escape fire did not impede the crew; a relative argued otherwise. The Board found it inconclusive how many men understood Dodge's directions.",
       "Do not portray the firefighters who died as ignoring a simple rescue instruction."
+    ]
+  },
+  {
+    "id": "boston-molasses-1919",
+    "order": 10,
+    "year": 1919,
+    "series": "Warnings Ignored",
+    "topic": "Boston Molasses Flood (1919): a leaking 2.3-million-gallon tank burst at midday and a wave of molasses swept the North End",
+    "aliases": [
+      "Boston Molasses Flood",
+      "Great Molasses Flood"
+    ],
+    "checked_at": "2026-10-04",
+    "sources": [
+      {
+        "role": "primary",
+        "institution": "City of Boston (Boston.gov, City Archives)",
+        "url": "https://www.boston.gov/news/100-years-ago-today-molasses-crashes-through-bostons-north-end",
+        "focus": [
+          "Purity Distilling painted the tank brown, to disguise the oozing molasses",
+          "the molasses killed 21 people and injured 150"
+        ]
+      },
+      {
+        "role": "independent",
+        "institution": "HISTORY (A&E Networks)",
+        "url": "https://www.history.com/articles/the-great-molasses-flood-of-1919"
+      }
+    ],
+    "cautions": [
+      "Sources give the burst time as about 12:40 p.m. (HISTORY) or about 1 p.m. (Boston.gov); say 'around midday'.",
+      "Wave height is given variously (15 ft by HISTORY); do not state one exact height as fact. The 1925 auditor found negligence, not the anarchist bomb the owners claimed."
+    ]
+  },
+  {
+    "id": "eastland-1915",
+    "order": 11,
+    "year": 1915,
+    "series": "The Last Hours",
+    "topic": "Eastland disaster (1915): the crowded excursion steamer listed at its Chicago River wharf for minutes, then rolled onto its side",
+    "aliases": [
+      "Eastland disaster",
+      "Eastland"
+    ],
+    "checked_at": "2026-10-04",
+    "sources": [
+      {
+        "role": "primary",
+        "institution": "U.S. National Archives at Chicago (federal court case records)",
+        "url": "https://www.archives.gov/chicago/highlights/eastland",
+        "focus": [
+          "partially capsized in the Chicago River"
+        ]
+      },
+      {
+        "role": "independent",
+        "institution": "Eastland Disaster Historical Society",
+        "url": "https://eastlanddisaster.org/history/timeline",
+        "focus": [
+          "The angle of the list reaches 45 degrees"
+        ]
+      }
+    ],
+    "cautions": [
+      "The Society's minute-by-minute timeline is a reconstruction; present times as approximate.",
+      "Death toll is 844 per the Society; the National Archives says 'over 800'. Contemporary papers printed much higher early estimates."
+    ]
+  },
+  {
+    "id": "st-francis-dam-1928",
+    "order": 12,
+    "year": 1928,
+    "series": "Warnings Ignored",
+    "topic": "St. Francis Dam disaster (1928): engineers inspected a muddy leak that morning and judged it safe; the dam broke before midnight",
+    "aliases": [
+      "St. Francis Dam"
+    ],
+    "checked_at": "2026-10-04",
+    "sources": [
+      {
+        "role": "primary",
+        "institution": "Commission appointed by Governor C. C. Young (1928 report, CaltechAUTHORS)",
+        "url": "https://authors.library.caltech.edu/records/pf78d-gpy92",
+        "focus": [
+          "the failure of the St. Francis Dam on March 12, 1928"
+        ]
+      },
+      {
+        "role": "independent",
+        "institution": "Smithsonian Magazine",
+        "url": "https://www.smithsonianmag.com/history/occasions-i-envy-dead-st-francis-dam-disaster-180954543/",
+        "focus": [
+          "Less than an hour later, the dam broke."
+        ]
+      }
+    ],
+    "cautions": [
+      "Mulholland and Van Norman concluded the muddy water came from nearby road work; do not claim they saw the dam was failing.",
+      "Death toll estimates vary (often 'over 400'); avoid a single exact figure unless sourced."
+    ]
+  },
+  {
+    "id": "knickerbocker-theater-1922",
+    "order": 13,
+    "year": 1922,
+    "series": "The Last Hours",
+    "topic": "Knickerbocker Theater collapse (1922): record snow weighed on the flat roof during a 9 p.m. silent-film show until it caved in",
+    "aliases": [
+      "Knickerbocker Theater",
+      "Knickerbocker Theatre"
+    ],
+    "checked_at": "2026-10-04",
+    "sources": [
+      {
+        "role": "primary",
+        "institution": "Library of Congress, Chronicling America guide (quoting the Evening Star, Jan. 29, 1922)",
+        "url": "https://guides.loc.gov/chronicling-america-knickerbocker-theater-collapse/introduction",
+        "focus": [
+          "Beneath tons of steel and masonry scores of men women and children were buried."
+        ]
+      },
+      {
+        "role": "independent",
+        "institution": "Smithsonian Magazine",
+        "url": "https://www.smithsonianmag.com/history/when-a-winter-storm-triggered-one-of-the-deadliest-disasters-in-washington-dc-history-180979446/",
+        "focus": [
+          "the sound of sheets ripping"
+        ]
+      }
+    ],
+    "cautions": [
+      "98 killed and 133 injured per Smithsonian; audience size estimates varied widely in early reports.",
+      "No one was convicted; investigations blamed faulty construction. Do not single out the architect as legally guilty."
+    ]
+  },
+  {
+    "id": "new-london-school-1937",
+    "order": 14,
+    "year": 1937,
+    "series": "The Last Hours",
+    "topic": "New London School explosion (1937): leaked gas built up beneath the school until a shop-class sander ignited it near the end of the day",
+    "aliases": [
+      "New London School explosion",
+      "New London School"
+    ],
+    "checked_at": "2026-10-04",
+    "sources": [
+      {
+        "role": "primary",
+        "institution": "Texas State Library and Archives Commission",
+        "url": "https://www.tsl.texas.gov/lobbyexhibits/extraextra/newlondonschoolexplosion",
+        "focus": [
+          "ignited from a spark from a sander in a shop class"
+        ]
+      },
+      {
+        "role": "independent",
+        "institution": "Texas State Historical Association, Handbook of Texas",
+        "url": "https://www.tshaonline.org/handbook/entries/new-london-school-explosion"
+      }
+    ],
+    "cautions": [
+      "Death toll is usually given as about 298 (TSHA); the State Library says about 300 victims. Times differ by source (3:05 vs 3:17 p.m.).",
+      "The shop instructor did not know gas was present; do not imply he was at fault."
+    ]
+  },
+  {
+    "id": "port-chicago-1944",
+    "order": 15,
+    "year": 1944,
+    "series": "The Last Hours",
+    "topic": "Port Chicago explosion (1944): sailors pushed to compete on loading tonnage were working the pier when munitions detonated at about 10:18 p.m.",
+    "aliases": [
+      "Port Chicago explosion",
+      "Port Chicago"
+    ],
+    "checked_at": "2026-10-04",
+    "sources": [
+      {
+        "role": "primary",
+        "institution": "U.S. Navy Court of Inquiry, Findings of Fact (1944), HyperWar transcription",
+        "url": "https://ibiblio.org/hyperwar/USN/fac/PC/PC-Findings.html",
+        "focus": [
+          "the loading of explosives should never be a matter of competition",
+          "between 2218:47 and 2218:54-1/2 Pacific War Time, 17 July 1944"
+        ]
+      },
+      {
+        "role": "independent",
+        "institution": "U.S. Naval Institute, Naval History magazine",
+        "url": "https://www.usni.org/magazines/naval-history-magazine/2015/february/disaster-desegregation"
+      }
+    ],
+    "cautions": [
+      "The exact cause of the initial detonation was never established; the court only listed probable causes.",
+      "Do not echo the court's racist framing that blamed Black enlisted men; the 2024 exonerations concern the later mutiny convictions, not the blast cause."
+    ]
+  },
+  {
+    "id": "silvertown-1917",
+    "order": 16,
+    "year": 1917,
+    "series": "Warnings Ignored",
+    "topic": "Silvertown explosion (1917): a fire at a TNT works beside crowded terraces set off about 50 tons of explosive at 6.52 pm",
+    "aliases": [
+      "Silvertown explosion",
+      "Silvertown"
+    ],
+    "checked_at": "2026-10-04",
+    "sources": [
+      {
+        "role": "primary",
+        "institution": "Historic England (public body), Heritage Calling",
+        "url": "https://heritagecalling.com/2017/01/19/the-silvertown-tragedy-explosion-on-the-home-front/",
+        "focus": [
+          "it was manifestly very dangerous",
+          "ignited the 53 tons of TNT"
+        ]
+      },
+      {
+        "role": "independent",
+        "institution": "London Museum",
+        "url": "https://www.londonmuseum.org.uk/collections/london-stories/silvertown-1917-londons-largest-explosion/"
+      }
+    ],
+    "cautions": [
+      "Quantity is given as 50 tonnes (London Museum) or 53 tons (Historic England); say 'about 50 tons'.",
+      "The inquiry did not rule out sabotage but found a spark-started fire likely; the report stayed secret until the 1950s."
+    ]
+  },
+  {
+    "id": "iroquois-theater-1903",
+    "order": 17,
+    "year": 1903,
+    "series": "The Last Hours",
+    "topic": "Iroquois Theater fire (1903): an arc light ignited a curtain mid-matinee, the fire curtain jammed, and the crowd found exits barred",
+    "aliases": [
+      "Iroquois Theater",
+      "Iroquois Theatre"
+    ],
+    "checked_at": "2026-10-04",
+    "sources": [
+      {
+        "role": "primary",
+        "institution": "Library of Congress, Chronicling America guide",
+        "url": "https://guides.loc.gov/chronicling-america-iroquois-theater-fire/introduction",
+        "focus": [
+          "The asbestos curtain malfunctions and several doors are barred"
+        ]
+      },
+      {
+        "role": "independent",
+        "institution": "WTTW Chicago Stories",
+        "url": "https://www.wttw.com/chicago-stories/downtown-disasters/the-tragedy-of-the-iroquois-theater-fire",
+        "focus": [
+          "An arc light used to create the effect of moonlight sparked a fire"
+        ]
+      }
+    ],
+    "cautions": [
+      "Death toll is usually 602 (including later deaths); about 575 died on the day.",
+      "No one was ever convicted; do not state legal guilt for the owners."
+    ]
+  },
+  {
+    "id": "general-slocum-1904",
+    "order": 18,
+    "year": 1904,
+    "series": "The Last Hours",
+    "topic": "General Slocum fire (1904): the burning steamer kept running up the East River toward North Brother Island as faulty life preservers failed",
+    "aliases": [
+      "General Slocum"
+    ],
+    "checked_at": "2026-10-04",
+    "sources": [
+      {
+        "role": "primary",
+        "institution": "Library of Congress, Chronicling America guide",
+        "url": "https://guides.loc.gov/chronicling-america-slocum-steamboat-tragedy/introduction",
+        "focus": [
+          "faulty life preservers, inaccessible life boats"
+        ]
+      },
+      {
+        "role": "independent",
+        "institution": "Smithsonian Magazine",
+        "url": "https://www.smithsonianmag.com/history/a-spectacle-of-horror-the-burning-of-the-general-slocum-104712974/",
+        "focus": [
+          "Van Shaick made a run for North Brother Island, a mile away"
+        ]
+      }
+    ],
+    "cautions": [
+      "Death toll is usually 1,021; the federal commission counted differently. Say 'over 1,000'.",
+      "The ignition cause (a match or cigarette in packing hay) is a belief, not established fact."
+    ]
+  },
+  {
+    "id": "tay-bridge-1879",
+    "order": 19,
+    "year": 1879,
+    "series": "The Last Hours",
+    "topic": "Tay Bridge disaster (1879): in a gale a signalman watched the evening train cross until a bright flash and total darkness",
+    "aliases": [
+      "Tay Bridge"
+    ],
+    "checked_at": "2026-10-04",
+    "sources": [
+      {
+        "role": "primary",
+        "institution": "Board of Trade Court of Inquiry report (1880), The Railways Archive",
+        "url": "https://www.railwaysarchive.co.uk/docsummary.php?docID=107",
+        "focus": [
+          "being exactly 13 minutes after 7 o'clock",
+          "there was a sudden bright flash of light, and in an instant there was total darkness"
+        ]
+      },
+      {
+        "role": "independent",
+        "institution": "Science Museum Group",
+        "url": "https://collection.sciencemuseumgroup.org.uk/objects/co8057564/tay-bridge"
+      }
+    ],
+    "cautions": [
+      "The inquiry estimated 74 or 75 aboard; there were no survivors and not all bodies were recovered.",
+      "The observer in the inquiry's account was surfaceman John Watt in the signal cabin with signalman Barclay; do not misattribute."
+    ]
+  },
+  {
+    "id": "ashtabula-bridge-1876",
+    "order": 20,
+    "year": 1876,
+    "series": "The Last Hours",
+    "topic": "Ashtabula bridge disaster (1876): the iron bridge gave way under the Pacific Express in a snowstorm and the wreck caught fire",
+    "aliases": [
+      "Ashtabula bridge",
+      "Ashtabula"
+    ],
+    "checked_at": "2026-10-04",
+    "sources": [
+      {
+        "role": "primary",
+        "institution": "Rev. Stephen D. Peet, The Ashtabula Disaster (1877, contemporary account), Project Gutenberg",
+        "url": "https://gutenberg.org/files/47359/47359-h/47359-h.htm",
+        "focus": [
+          "but the Socrates reached the abutment and was safe",
+          "A few buckets of water thrown at this time, would have sufficed to have kept down the flame."
+        ]
+      },
+      {
+        "role": "independent",
+        "institution": "STRUCTURE Magazine",
+        "url": "https://www.structuremag.org/article/ashtabula-bridge-failure/"
+      }
+    ],
+    "cautions": [
+      "The primary is a contemporary book-length account, not the legislative inquiry; keep vivid quotes attributed to Peet.",
+      "Death toll is commonly given as about 80 (STRUCTURE); exact numbers are uncertain."
+    ]
+  },
+  {
+    "id": "great-sheffield-flood-1864",
+    "order": 21,
+    "year": 1864,
+    "series": "The Last Hours",
+    "topic": "Great Sheffield Flood (1864): on a stormy night a crack was found in the new Dale Dyke embankment shortly before it burst",
+    "aliases": [
+      "Great Sheffield Flood",
+      "Dale Dyke"
+    ],
+    "checked_at": "2026-10-04",
+    "sources": [
+      {
+        "role": "primary",
+        "institution": "Samuel Harrison, A Complete History of the Great Flood at Sheffield (1864), Internet Archive",
+        "url": "https://archive.org/download/acompletehistor00harrgoog/acompletehistor00harrgoog_djvu.txt",
+        "focus": [
+          "there was a crack in the embankment"
+        ]
+      },
+      {
+        "role": "independent",
+        "institution": "Sheffield Hallam University, Sheffield Flood Claims Archive",
+        "url": "https://sheffieldfloodclaimsarchive.shu.ac.uk/aboutFlood.cfm"
+      }
+    ],
+    "cautions": [
+      "240 reported deaths; the archive notes the true total may be higher.",
+      "The cause was disputed at the time (landslip vs. faulty construction); do not state a single settled cause."
+    ]
+  },
+  {
+    "id": "austin-dam-1911",
+    "order": 22,
+    "year": 1911,
+    "series": "Warnings Ignored",
+    "topic": "Austin Dam (1911): the leaking concrete dam stood full after rains, the mill would not lower it, and it burst that afternoon",
+    "aliases": [
+      "Austin Dam",
+      "Bayless Dam"
+    ],
+    "checked_at": "2026-10-04",
+    "sources": [
+      {
+        "role": "primary",
+        "institution": "U.S. National Weather Service, State College office",
+        "url": "https://www.weather.gov/ctp/2011-09-30-Remembering-Austin-Flood",
+        "focus": [
+          "The dam had problems from the start, actually flooding downstream in January 1910."
+        ]
+      },
+      {
+        "role": "independent",
+        "institution": "Association of State Dam Safety Officials, DamFailures.org",
+        "url": "https://damfailures.org/case-study/austin-bayless-dam-pennsylvania-1911",
+        "focus": [
+          "refused to open the outlet works and lower the reservoir"
+        ]
+      }
+    ],
+    "cautions": [
+      "Failure time is given as 2:00-2:15 pm (ASDSO) or 2:30 pm (NWS); say 'early afternoon'.",
+      "78 deaths is the commonly cited figure."
+    ]
+  },
+  {
+    "id": "cocoanut-grove-1942",
+    "order": 30,
+    "year": 1942,
+    "series": "The Last Hours",
+    "topic": "Cocoanut Grove (1942): a match lit to fix a basement light bulb, and minutes later the revolving door jams under the crowd",
+    "aliases": [
+      "Cocoanut Grove"
+    ],
+    "checked_at": "2026-10-04",
+    "sources": [
+      {
+        "role": "primary",
+        "institution": "Boston Fire Commissioner William Arthur Reilly, Report concerning the Cocoanut Grove fire (1944), full text on Internet Archive",
+        "url": "https://archive.org/download/reportconcerning00bost/reportconcerning00bost_djvu.txt"
+      },
+      {
+        "role": "independent",
+        "institution": "Boston Fire Historical Society",
+        "url": "https://bostonfirehistory.org/the-story-of-the-cocoanut-grove-fire/",
+        "focus": [
+          "the revolving door became jammed due to the crush of panicked patrons",
+          "the busboy lit a match in order to locate the socket for the light bulb"
+        ]
+      }
+    ],
+    "cautions": [
+      "Death toll: the Commissioner's report recorded 490 dead and 166 injured; the figure later recognized is 492. Say 'about 490'.",
+      "The busboy's match is the popular account; the cause was never conclusively proven (some blamed wiring). Do not state the busboy caused the fire as fact.",
+      "The report put the fire reaching the revolving door within two to four minutes of first appearing; do not invent a tighter timeline."
+    ]
+  },
+  {
+    "id": "collinwood-school-fire-1908",
+    "order": 31,
+    "year": 1908,
+    "series": "The Last Hours",
+    "topic": "Collinwood school fire (1908): a morning fire turns the main stairwell into a chimney and children pile up at the rear exit",
+    "aliases": [
+      "Collinwood school fire",
+      "Lake View School fire"
+    ],
+    "checked_at": "2026-10-04",
+    "sources": [
+      {
+        "role": "primary",
+        "institution": "Henry Neil, Complete Story of the Collinwood School Disaster (1908), contemporary account, full text on Internet Archive",
+        "url": "https://archive.org/download/completestoryofc00neil/completestoryofc00neil_djvu.txt"
+      },
+      {
+        "role": "independent",
+        "institution": "Smithsonian National Museum of American History",
+        "url": "https://americanhistory.si.edu/explore/stories/collinwood-school-disaster-influenced-fire-safety-protocols",
+        "focus": [
+          "the stairwell acted as a chimney",
+          "Many have mistakenly blamed the doors for opening inward, though they actually opened outward"
+        ]
+      }
+    ],
+    "cautions": [
+      "Toll: 172 children, two teachers and one rescuer died; contemporary papers printed lower, shifting counts.",
+      "The doors opened OUTWARD (verified by the inquest); do not repeat the inward-opening-door myth.",
+      "Blame of the janitor for a locked door is an allegation, not an established fact."
+    ]
+  },
+  {
+    "id": "monongah-1907",
+    "order": 32,
+    "year": 1907,
+    "series": "The Last Hours",
+    "topic": "Monongah (1907): the morning after a holiday, a runaway trip of loaded cars and then an explosion through mines No. 6 and 8",
+    "aliases": [
+      "Monongah"
+    ],
+    "checked_at": "2026-10-04",
+    "sources": [
+      {
+        "role": "primary",
+        "institution": "Fairmont Times, December 7, 1907, transcribed by West Virginia Department of Arts, Culture and History",
+        "url": "https://archive.wvculture.org/history/disasters/monongah04.html",
+        "focus": [
+          "a trip of loaded cars broke loose on the No. 6 slope",
+          "his watch was still ticking"
+        ]
+      },
+      {
+        "role": "independent",
+        "institution": "e-WV: The West Virginia Encyclopedia (West Virginia Humanities Council)",
+        "url": "https://www.wvencyclopedia.org/entries/1953",
+        "focus": [
+          "killed at least 361 men"
+        ]
+      }
+    ],
+    "cautions": [
+      "Official toll is 361/362; the next-day paper's '425' and later estimates near 500 are unverified. Say 'at least 361'.",
+      "The cause was never determined; the runaway cars are one theory, alongside blasting or an open-flame lamp igniting gas and dust.",
+      "Exact explosion time is 10:20 a.m. per the Fairmont Times; others say 'around 10'."
+    ]
+  },
+  {
+    "id": "cherry-mine-1909",
+    "order": 33,
+    "year": 1909,
+    "series": "The Last Hours",
+    "topic": "Cherry Mine (1909): a hay car parked under a kerosene torch, and rescuers who went down six times but not a seventh",
+    "aliases": [
+      "Cherry Mine"
+    ],
+    "checked_at": "2026-10-04",
+    "sources": [
+      {
+        "role": "primary",
+        "institution": "Thomas Hudson, Illinois State Inspector of Mines, Report on the Cherry Mine Disaster (Illinois Bureau of Labor Statistics, 1910), reproduced by the Samuel Gompers Papers, University of Maryland",
+        "url": "https://gompers.umd.edu/Cherry%20report.htm",
+        "focus": [
+          "blazing open torch"
+        ]
+      },
+      {
+        "role": "independent",
+        "institution": "Illinois Fire Service Institute Library, University of Illinois",
+        "url": "https://guides.library.illinois.edu/c.php?g=416856&p=2840930",
+        "focus": [
+          "the amateur rescuers were killed on the seventh trip down",
+          "twenty miners emerged alive, one week after the fire started"
+        ]
+      }
+    ],
+    "cautions": [
+      "Toll: 259 is the standard figure; the inspector's early tally listed 268 believed lost. Say '259'.",
+      "Oil dripping onto the hay is described as likely, not proven.",
+      "The twelve-man rescue party (not twelve deaths of strangers) died on its seventh descent; keep the count of trips as six successful plus a fatal seventh."
+    ]
+  },
+  {
+    "id": "senghenydd-1913",
+    "order": 34,
+    "year": 1913,
+    "series": "The Last Hours",
+    "topic": "Senghenydd (1913): ten past eight in the morning, a blast fires the cage up the Lancaster Shaft and the west side burns",
+    "aliases": [
+      "Senghenydd",
+      "Universal Colliery"
+    ],
+    "checked_at": "2026-10-04",
+    "sources": [
+      {
+        "role": "primary",
+        "institution": "UK Parliament, Hansard, House of Commons debate 'Mine and Railway Accidents', 12 February 1914",
+        "url": "https://api.parliament.uk/historic-hansard/commons/1914/feb/12/mine-and-railway-accidents",
+        "focus": [
+          "an explosion killing 439 men last year"
+        ]
+      },
+      {
+        "role": "independent",
+        "institution": "Amgueddfa Cymru - Museum Wales",
+        "url": "https://museum.wales/blog/1086/Miners-lives-at-5p-each-The-Government-Enquiry-into-the-1913-Senghenydd-mine-disaster/",
+        "focus": [
+          "sent the two-ton cage shooting up the Lancaster Shaft into the headgear",
+          "the west side was a raging inferno from which only a few escaped"
+        ]
+      }
+    ],
+    "cautions": [
+      "Toll is given as 439 miners, 440 including one rescuer; use 439 miners.",
+      "The inquiry could not determine the ignition source; electric signalling sparks are the leading theory, not fact.",
+      "Senghenydd had an earlier explosion in 1901 (81 killed); present it as background, not as a specific ignored warning."
+    ]
+  },
+  {
+    "id": "gresford-1934",
+    "order": 35,
+    "year": 1934,
+    "series": "The Last Hours",
+    "topic": "Gresford (1934): miners double up the Friday night shift to see Saturday's match, and at 2 a.m. the Dennis section explodes",
+    "aliases": [
+      "Gresford"
+    ],
+    "checked_at": "2026-10-04",
+    "sources": [
+      {
+        "role": "primary",
+        "institution": "UK Parliament, Hansard, House of Commons debate 'Gresford Colliery Explosion', 23 February 1937",
+        "url": "https://api.parliament.uk/historic-hansard/commons/1937/feb/23/gresford-colliery-explosion",
+        "focus": [
+          "two o'clock on 22nd September, in a section of the Gresford pit"
+        ]
+      },
+      {
+        "role": "independent",
+        "institution": "The National Archives (UK)",
+        "url": "https://www.nationalarchives.gov.uk/explore-the-collection/stories/emily-capper-and-the-1934-gresford-colliery-disaster/",
+        "focus": [
+          "many worked through the night or swapped shifts so they could make the game",
+          "Of the 266 victims, 254 were never recovered."
+        ]
+      }
+    ],
+    "cautions": [
+      "Toll: 261 miners died in the explosion; three rescuers, one surface worker and one later hospital death bring it to 266. Hansard uses 265.",
+      "The inquiry never established the cause; 'likely a spark igniting gas' is the National Archives' wording.",
+      "The football-shift detail is that 'many' miners swapped or doubled shifts; do not claim all victims did."
+    ]
+  },
+  {
+    "id": "pemberton-mill-1860",
+    "order": 36,
+    "year": 1860,
+    "series": "Warnings Ignored",
+    "topic": "Pemberton Mill (1860): hours after the mill falls on its workers, a rescuer's lantern breaks and sets the ruins on fire",
+    "aliases": [
+      "Pemberton Mill"
+    ],
+    "checked_at": "2026-10-04",
+    "sources": [
+      {
+        "role": "primary",
+        "institution": "An Authentic History of the Lawrence Calamity (1860), including the coroner's inquest testimony, full text on Internet Archive",
+        "url": "https://archive.org/download/authentichistory00dyer/authentichistory00dyer_djvu.txt"
+      },
+      {
+        "role": "independent",
+        "institution": "New England Historical Society",
+        "url": "https://newenglandhistoricalsociety.com/pemberton-mill-disaster/",
+        "focus": [
+          "Around 10 p.m. two men climbed through a crevice with lanterns to rescue a young woman",
+          "By midnight the screams of the trapped and burning victims fell silent.",
+          "told architect Charles Bigelow he thought the walls insufficient"
+        ]
+      }
+    ],
+    "cautions": [
+      "Death toll is uncertain: between about 90 and 145 depending on source. Do not give a single precise number.",
+      "Accounts differ on the fire's time (about 9:30 to 10 p.m.).",
+      "The warnings were pre-collapse doubts voiced by the repair overseer and brickwork superintendent, as later testified; the jury blamed defective cast-iron pillars."
+    ]
+  },
+  {
+    "id": "dutchmans-curve-1918",
+    "order": 37,
+    "year": 1918,
+    "series": "The Last Hours",
+    "topic": "Dutchman's Curve (1918): a late express and a local mistaking a switch engine for it, racing head-on along single track",
+    "aliases": [
+      "Dutchman's Curve",
+      "Great Train Wreck of 1918"
+    ],
+    "checked_at": "2026-10-04",
+    "sources": [
+      {
+        "role": "primary",
+        "institution": "Tennessee State Library and Archives, 'Disasters in Tennessee' exhibit quoting the Nashville Tennessean, July 10, 1918",
+        "url": "https://sharetngov.tnsosfiles.com/tsla/exhibits/disasters/trains.htm",
+        "focus": [
+          "it is assumed he never saw the warning"
+        ]
+      },
+      {
+        "role": "independent",
+        "institution": "Tennessee Encyclopedia (Tennessee Historical Society)",
+        "url": "https://tennesseeencyclopedia.net/entries/dutchmans-grade-railway-accident/",
+        "focus": [
+          "The engineer of No. 4 may have mistaken the smaller, switch engine for the express",
+          "the official Interstate Commerce Commission figure was 101 killed"
+        ]
+      }
+    ],
+    "cautions": [
+      "Official ICC toll is 101 killed; contemporary reports said up to 121. Say 'at least 101'.",
+      "Why No. 4 left the double track is not known; the switch-engine mix-up is a likely explanation, not a proven fact.",
+      "Speeds of about 50 mph each are approximate."
+    ]
+  },
+  {
+    "id": "malbone-street-1918",
+    "order": 38,
+    "year": 1918,
+    "series": "The Last Hours",
+    "topic": "Malbone Street (1918): a strike-breaking dispatcher takes a packed wooden train into a 6 mph curve at over 30",
+    "aliases": [
+      "Malbone Street"
+    ],
+    "checked_at": "2026-10-04",
+    "sources": [
+      {
+        "role": "primary",
+        "institution": "The New York Times, November 2, 1918, transcribed by nycsubway.org",
+        "url": "https://www.nycsubway.org/wiki/Malbone_Street_Wreck_(New_York_Times,_1918)",
+        "focus": [
+          "Dispatcher, as Strike Motorman, Sends Crowded Train to Doom"
+        ]
+      },
+      {
+        "role": "independent",
+        "institution": "PBS American Experience",
+        "url": "https://www.pbs.org/wgbh/americanexperience/features/nyunderground-death-beneath-streets/",
+        "focus": [
+          "The posted speed for the tunnel entrance was six miles per hour",
+          "witnesses estimated that Luciano's train entered the curve at over thirty"
+        ]
+      }
+    ],
+    "cautions": [
+      "Toll: at least 93 dead; contemporary counts ranged from 85 to about 100.",
+      "The 1918 NYT headline's '70 Miles an Hour' was an early exaggeration; use 'over 30 mph'.",
+      "Luciano and the BRT officials were all acquitted; do not imply anyone was convicted."
+    ]
+  },
+  {
+    "id": "quintinshill-1915",
+    "order": 39,
+    "year": 1915,
+    "series": "The Last Hours",
+    "topic": "Quintinshill (1915): a late shift change, a forgotten local train on the main line, and a troop train bound for Gallipoli",
+    "aliases": [
+      "Quintinshill"
+    ],
+    "checked_at": "2026-10-04",
+    "sources": [
+      {
+        "role": "primary",
+        "institution": "Board of Trade accident return extract (Lt. Col. E. Druitt, 1915), The Railways Archive",
+        "url": "https://www.railwaysarchive.co.uk/docsummary.php?docID=158",
+        "focus": [
+          "Tinsley to be preoccupied in writing up the Train Register Book"
+        ]
+      },
+      {
+        "role": "independent",
+        "institution": "The Royal Scots (The Royal Regiment) regimental museum and association",
+        "url": "https://www.theroyalscots.co.uk/quintinshill-train-crash/",
+        "focus": [
+          "lit by gas contained in a tank beneath them",
+          "Of the half-battalion on the train only sixty-two survived unscathed."
+        ]
+      }
+    ],
+    "cautions": [
+      "Toll is given variously as 226, 227 or 228; use 'more than 220' or the regiment's 216 Royal Scots plus 12 others.",
+      "Both signalmen were convicted of culpable homicide; keep the blame on rule breaches the inquiry named, not speculation.",
+      "The collision time is 6:49 a.m.; the express struck about a minute later."
+    ]
+  },
+  {
+    "id": "armagh-1889",
+    "order": 40,
+    "year": 1889,
+    "series": "The Last Hours",
+    "topic": "Armagh (1889): a Sunday school excursion stalls on the hill, is split in two, and ten locked carriages roll back",
+    "aliases": [
+      "Armagh"
+    ],
+    "checked_at": "2026-10-04",
+    "sources": [
+      {
+        "role": "primary",
+        "institution": "Board of Trade accident return extract (Major General Hutchinson, 1889), The Railways Archive",
+        "url": "https://www.railwaysarchive.co.uk/docsummary.php?docID=106",
+        "focus": [
+          "we'll all be killed",
+          "scotch the wheels with stones"
+        ]
+      },
+      {
+        "role": "independent",
+        "institution": "The Irish Times",
+        "url": "https://www.irishtimes.com/culture/heritage/a-runaway-disaster-1.1828748",
+        "focus": [
+          "The 10 cars ran two miles down the hill, accelerating to 40 miles per hour",
+          "The eventual death toll was 88, half of them children or teenagers."
+        ]
+      }
+    ],
+    "cautions": [
+      "Toll is given as 80 (Board of Trade extract) to 88-89 (later counts); say 'about 80 to 88'.",
+      "Carriage counts differ between sources (10 left behind per the Irish Times); avoid stating other splits.",
+      "The chief clerk Elliott was acquitted on retrial; do not call him guilty."
+    ]
+  },
+  {
+    "id": "princess-alice-1878",
+    "order": 50,
+    "year": 1878,
+    "series": "The Last Hours",
+    "topic": "Princess Alice (1878): a packed Thames pleasure steamer heading home in the evening hears its captain cry 'Where are you coming to?' before the collier Bywell Castle splits it in two",
+    "aliases": [
+      "Princess Alice",
+      "Bywell Castle"
+    ],
+    "checked_at": "2026-10-04",
+    "sources": [
+      {
+        "role": "primary",
+        "institution": "The Victorian Web (transcription of the 1878 coroner's verdict and Board of Trade findings as printed in the contemporary press)",
+        "url": "https://www.victorianweb.org/victorian/technology/shipwrecks/28h.html"
+      },
+      {
+        "role": "independent",
+        "institution": "Royal Museums Greenwich",
+        "url": "https://www.rmg.co.uk/stories/ocean/library-archive/drowning-sewage-sinking-princess-alice",
+        "focus": [
+          "the Princess Alice broke in two and sank"
+        ]
+      }
+    ],
+    "cautions": [
+      "No passenger list existed; deaths are usually given as about 600-700 (often 'around 650'), never an exact figure.",
+      "The coroner's jury blamed both ships; the Board of Trade blamed the Princess Alice alone. Do not present a single verdict as settled.",
+      "Accounts of the collision time vary between about 7.20 and 7.45pm."
+    ]
+  },
+  {
+    "id": "bethnal-green-1943",
+    "order": 51,
+    "year": 1943,
+    "series": "The Last Hours",
+    "topic": "Bethnal Green (1943): an air-raid siren, an unfamiliar rocket salvo, and a single fall on a dark wet stairway crush 173 people in seconds",
+    "aliases": [
+      "Bethnal Green"
+    ],
+    "checked_at": "2026-10-04",
+    "sources": [
+      {
+        "role": "primary",
+        "institution": "UK Parliament, Hansard (House of Commons statement on the Dunne inquiry, 19 January 1945)",
+        "url": "https://api.parliament.uk/historic-hansard/commons/1945/jan/19/shelter-accident-bethnal-green"
+      },
+      {
+        "role": "independent",
+        "institution": "BBC History, WW2 People's War",
+        "url": "https://www.bbc.co.uk/history/ww2peopleswar/stories/09/a795909.shtml",
+        "focus": [
+          "It is estimated that hundreds of people fell within just 15 seconds"
+        ]
+      }
+    ],
+    "cautions": [
+      "No bomb fell; the alarm came from a nearby British anti-aircraft rocket battery. Do not say the shelter was hit.",
+      "Use 173 dead (27 men, 84 women, 62 children); other wartime figures such as 178 were enemy propaganda or early estimates.",
+      "The official inquiry avoided the word 'panic' as the sole cause; keep wording to a crowd surge after the rocket salvo."
+    ]
+  },
+  {
+    "id": "dee-bridge-1847",
+    "order": 52,
+    "year": 1847,
+    "series": "The Last Hours",
+    "topic": "Dee Bridge (1847): hours after fresh ballast is laid, the last iron span gives way and the driver races his engine to the far bank as the carriages fall",
+    "aliases": [
+      "Dee Bridge"
+    ],
+    "checked_at": "2026-10-04",
+    "sources": [
+      {
+        "role": "primary",
+        "institution": "The Railways Archive (Report to the Commissioners of Railways by Mr Walker and Captain Simmons, 1847)",
+        "url": "https://www.railwaysarchive.co.uk/docsummary.php?docID=1806",
+        "focus": [
+          "he instantly put on his full steam"
+        ]
+      },
+      {
+        "role": "independent",
+        "institution": "National Transport Trust",
+        "url": "https://www.nationaltransporttrust.org.uk/heritage-sites/heritage-detail/dee-bridge-chester"
+      }
+    ],
+    "cautions": [
+      "Five people died (three passengers, the guard and the fireman); some accounts say four passengers. Do not inflate the toll.",
+      "Robert Stephenson argued a derailment broke the girder; eyewitnesses and the inquiry pointed to the girder failing first. Present Stephenson's view as disputed, not disproved by the script.",
+      "The bridge's height above the water is given variously (36 ft to the surface in the report, about 50 ft elsewhere)."
+    ]
+  },
+  {
+    "id": "holmfirth-flood-1852",
+    "order": 53,
+    "year": 1852,
+    "series": "Warnings Ignored",
+    "topic": "Holmfirth (1852): the defective, long-neglected Bilberry Reservoir dam gives way about an hour after midnight and a torrent sweeps down on a sleeping mill town",
+    "aliases": [
+      "Holmfirth",
+      "Bilberry Reservoir"
+    ],
+    "checked_at": "2026-10-04",
+    "sources": [
+      {
+        "role": "primary",
+        "institution": "UK Parliament, Hansard (House of Commons debate on the Holme Reservoirs Bill, 23 June 1853)",
+        "url": "https://api.parliament.uk/historic-hansard/commons/1853/jun/23/holme-reservoirs-no-2-bill"
+      },
+      {
+        "role": "independent",
+        "institution": "Huddersfield Hub (account by local historian Vincent Dorrington)",
+        "url": "https://huddersfieldhub.co.uk/local-historian-vincent-dorrington-tells-the-story-of-how-a-devastating-flood-tragically-claimed-the-lives-of-81-people-in-holmfirth/",
+        "focus": [
+          "an hour after midnight on the night of Thursday February 5 1852 the dam wall gave way"
+        ]
+      }
+    ],
+    "cautions": [
+      "Death toll is 81 by the usual count; a contemporary broadside claimed over 100. Use 81.",
+      "The 86 million gallons figure and the 'under 15 minutes' travel time are estimates; say 'about'.",
+      "The inquest found the reservoir defective and the Commissioners culpably negligent, but nobody was convicted; do not imply a criminal verdict."
+    ]
+  },
+  {
+    "id": "vestris-1928",
+    "order": 54,
+    "year": 1928,
+    "series": "The Last Hours",
+    "topic": "SS Vestris (1928): a listing liner waits until morning to send its SOS, gives the wrong position, and capsizes before rescue ships arrive",
+    "aliases": [
+      "Vestris"
+    ],
+    "checked_at": "2026-10-04",
+    "sources": [
+      {
+        "role": "primary",
+        "institution": "US District Court, S.D.N.Y., The Vestris, 60 F.2d 273 (1932), via Justia (archived copy)",
+        "url": "https://web.archive.org/web/2024/https://law.justia.com/cases/federal/district-courts/F2/60/273/1542609/"
+      },
+      {
+        "role": "independent",
+        "institution": "National Underwater and Marine Agency (NUMA)",
+        "url": "https://numa.net/2019/01/murphys-law-applied-to-loss-of-ss-vestris/"
+      }
+    ],
+    "cautions": [
+      "The court gives 110 lives lost from 325 aboard; other counts run from about 110 to 127. Say 'more than 100'.",
+      "The cause of the initial leak was disputed (coal port vs. broken scupper or pipe); do not state one as fact.",
+      "Captain Carey's reasons for delaying the SOS are unknown; motives such as avoiding salvage costs are speculation."
+    ]
+  },
+  {
+    "id": "hilda-1905",
+    "order": 55,
+    "year": 1905,
+    "series": "The Last Hours",
+    "topic": "SS Hilda (1905): blinded by snow outside Saint-Malo, a Channel steamer strikes the rocks at night and only six people survive by clinging to the rigging until dawn",
+    "aliases": [
+      "Hilda"
+    ],
+    "checked_at": "2026-10-04",
+    "sources": [
+      {
+        "role": "primary",
+        "institution": "Board of Trade formal investigation report, February 1906 (transcribed by Histomar)",
+        "url": "https://histomar.net/Hilda/htm/enquete.htm"
+      },
+      {
+        "role": "independent",
+        "institution": "Bateaux de Saint-Malo (Saint-Malo maritime history site)",
+        "url": "https://www.bateaux-de-saint-malo.com/en/fiche%20Hilda.htm"
+      }
+    ],
+    "cautions": [
+      "Death toll is usually given as 125; early official estimates said 128. Use 'about 125'.",
+      "Six survived: five Breton onion sellers ('Johnnies') and one seaman. Some died in the rigging before rescue.",
+      "Exact time of striking is given as around 11pm to midnight depending on source."
+    ]
+  },
+  {
+    "id": "glen-cinema-1929",
+    "order": 56,
+    "year": 1929,
+    "series": "The Last Hours",
+    "topic": "Paisley Cinema (1929): at a packed Hogmanay children's matinee in the Glen Cinema, smoke from a film canister and a cry of fire send hundreds rushing to a locked exit",
+    "aliases": [
+      "Paisley Cinema",
+      "Glen Cinema"
+    ],
+    "checked_at": "2026-10-04",
+    "sources": [
+      {
+        "role": "primary",
+        "institution": "UK Parliament, Hansard (Home Secretary's written answer on the Paisley cinema disaster, 23 January 1930)",
+        "url": "https://api.parliament.uk/historic-hansard/written_answers/1930/jan/23/cinematograph-films-fires"
+      },
+      {
+        "role": "independent",
+        "institution": "BBC News Scotland",
+        "url": "https://www.bbc.co.uk/news/uk-scotland-50502446",
+        "focus": [
+          "rushed for the padlocked exits"
+        ]
+      }
+    ],
+    "cautions": [
+      "There was no actual fire in the auditorium; a nitrate film canister smouldered and smoke caused the panic.",
+      "71 children died (69 at the scene, two later). Audience size is unknown, estimated 600-1,000.",
+      "Who padlocked the exit gates was never settled at the inquiry; do not blame a named person."
+    ]
+  },
+  {
+    "id": "ringtheater-1881",
+    "order": 57,
+    "year": 1881,
+    "series": "The Last Hours",
+    "topic": "Vienna Ring fire (1881): minutes before Offenbach's opera, gas lamps ignite the stage, the lights go out, and the audience is trapped in the dark behind inward-opening doors",
+    "aliases": [
+      "Vienna Ring fire",
+      "Ringtheater"
+    ],
+    "checked_at": "2026-10-04",
+    "sources": [
+      {
+        "role": "primary",
+        "institution": "The Spectator, 17 December 1881 (Spectator Archive)",
+        "url": "https://archive.spectator.co.uk/article/17th-december-1881/12/the-catastrophe-in-vienna",
+        "focus": [
+          "half the doors open inwards"
+        ]
+      },
+      {
+        "role": "independent",
+        "institution": "HISTORY (A&E Networks)",
+        "url": "https://www.history.com/this-day-in-history/december-8/theater-fire-kills-hundreds-in-vienna"
+      }
+    ],
+    "cautions": [
+      "The death toll is heavily disputed: the official count is about 384-386, contemporary press guessed up to 900, and HISTORY gives 620-850. Say 'hundreds' or 'at least 384'.",
+      "English sources spell it 'Ring Theatre' or 'Ring Theater'; the German name is Ringtheater.",
+      "Details of exactly how the gas ignited differ between accounts; keep it to gas lighting igniting the stage scenery."
     ]
   }
 ]
