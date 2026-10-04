@@ -49,7 +49,8 @@ class AccidentIntakeTest(unittest.TestCase):
              "art": [{"title": "one"}, {"title": "two"}]},
             {"id": "mann-gulch-1949", "primary_kind": "contemporaneous_board_report",
              "source_canaries": {"primary": ["one", "two"], "independent": ["three", "four"]},
-             "art": [{"title": "three"}, {"title": "four"}]},
+             "art": [{"title": "three"}, {"title": "four"},
+                     {"title": "five"}, {"title": "six"}]},
         ], "pool": [
             {"id": "oppau-1921", "aliases": ["Oppau"], "sources": []},
             {"id": "mann-gulch-1949", "aliases": ["Mann Gulch"],
@@ -63,6 +64,14 @@ class AccidentIntakeTest(unittest.TestCase):
         self.assertEqual(report["candidates"][1]["state"], "technical_preflight_pass")
         self.assertEqual(report["eligible_for_selection"], 0)
         self.assertFalse(report["release_enabled"])
+
+        payload["intake"][1]["art"].pop()
+        with patch.object(intake, "source_check", side_effect=lambda source, _: source), patch.object(
+            intake, "art_check", side_effect=lambda art: art):
+            short_art_report = intake.audit(payload)
+        self.assertEqual(short_art_report["candidates"][1]["state"], "preflight_failed")
+        self.assertIn("wrong number of distinct scenes", short_art_report["candidates"][1]["failure"])
+        payload["intake"][1]["art"].append({"title": "six"})
 
         payload["used_ids"] = []
         payload["known_titles"] = ["The Oppau disaster and Mann Gulch fire revisited"]
