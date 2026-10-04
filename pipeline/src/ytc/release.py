@@ -158,12 +158,17 @@ def _review(folder: Path, media_sha256: str) -> dict:
         raise RuntimeError("review has no kept round")
     round_ = rounds[kept - 1]
     check = round_["check"]
+    from .check import speech_verified
     from .studio import GATE, PASS_SCORE
     if (round_.get("media_sha256") != media_sha256 or round_.get("passed") is not True or
         check.get("warnings") != [] or check.get("speech_differences") != [] or check.get("speech_error") or
         round_.get("frames") != [] or round_.get("speech") != [] or
         any(round_["scores"].get(name, 0) < PASS_SCORE for name in GATE)):
         raise RuntimeError("the exact rendered MP4 has no clean final-media review")
+    if "speech_verification" in check:
+        beats = _json(folder / "work" / "manifest.json")["beats"]
+        if not speech_verified(check["speech_verification"], media_sha256, beats):
+            raise RuntimeError("the exact rendered MP4 has no clean final-media review")
     return {"round": kept, "scores": round_["scores"], "speech_differences": [], "warnings": []}
 
 

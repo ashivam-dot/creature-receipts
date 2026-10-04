@@ -1780,6 +1780,17 @@ def _modal_credit_spent() -> bool:
 def write_status(run: Run, result: str) -> dict:
     eps = episodes()
     inv = inventory(eps)
+    for episode in eps:
+        hold = episode.get("editorial_hold")
+        if not isinstance(hold, dict) or hold.get("schema") != "ytc.final-audio-speech-hold/v1":
+            continue
+        location = (f"Modal volume {hold['modal_volume']}:{hold['modal_path']}"
+                    if hold.get("modal_volume") and hold.get("modal_path") else
+                    f"content/episodes/{episode['id']}/{hold.get('media_file', episode['id'] + '.mp4')}")
+        run.owner_action.append(
+            f"{episode['id']} final speech review: listen to {location} against script.json and review.json "
+            f"(SHA-256 {hold.get('media_sha256', 'unknown')}); repair any error and rerun final-media checks "
+            "before clearing editorial_hold.json.")
     by_model: dict[str, int] = {}
     for call in llm.calls + run.worker_calls:
         by_model[call["model"]] = by_model.get(call["model"], 0) + 1

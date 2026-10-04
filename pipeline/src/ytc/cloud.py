@@ -13,6 +13,7 @@ import hashlib
 import json
 import logging
 import os
+import re
 import shlex
 import shutil
 import subprocess
@@ -36,6 +37,7 @@ REMOTE_EPISODE = Path("/root/episode")
 # studio.py puts the repo root three folders above its own file: /root, with /root/pipeline/src/ytc/studio.py.
 REMOTE_ROOT = REMOTE_PIPELINE.parent
 APP_NAME = "creature-receipts"
+OUTBOX_VOLUME = "creature-receipts-outbox"
 # Episode folders the writer and reviewer learn from; older ones stay out of the snapshot to keep it small.
 CONTEXT_EPISODES = 40
 # What comes back besides the Short itself: the review and credit files `ytc check` and `ytc publish` read.
@@ -56,7 +58,7 @@ TAKE = ("work/take.wav", "work/take.json")
 # automatic source mount would put ytc at /root/ytc instead, shadowing that copy.
 app = modal.App(APP_NAME, include_source=False)
 cache = modal.Volume.from_name("creature-receipts-cache", create_if_missing=True)
-outbox = modal.Volume.from_name("creature-receipts-outbox", create_if_missing=True)
+outbox = modal.Volume.from_name(OUTBOX_VOLUME, create_if_missing=True)
 # What a studio worker needs besides the image. Read from the deploying machine's environment (the Actions
 # secrets, or pipeline/.env on the Mac), so rotating a key in GitHub reaches the workers on the next deploy.
 STUDIO_ENV = ("YTC_CURSOR_API_KEY", "YTC_CURSOR_MODEL", "YTC_LLM_FIRST", "YTC_GEMINI_API_KEY", "YTC_MISTRAL_API_KEY",
@@ -170,6 +172,47 @@ def _episode_files(root: Path, folder: Path) -> list[str]:
     return [p.relative_to(root).as_posix() for p in sorted(folder.rglob("*")) if p.is_file() and _kept(p.relative_to(folder))]
 
 
+def _save_exact_media(media: Path, destination: Path, expected_sha256: str) -> None:
+    if not isinstance(expected_sha256, str) or not re.fullmatch(r"[0-9a-f]{64}", expected_sha256):
+        raise RuntimeError(f"reviewed media hash is missing or invalid: {media.name}")
+    with media.open("rb") as source:
+        if hashlib.file_digest(source, "sha256").hexdigest() != expected_sha256:
+            raise RuntimeError(f"local media differs from reviewed render: {media.name}")
+    destination.parent.mkdir(parents=True, exist_ok=True)
+    if destination.exists():
+        with destination.open("rb") as saved:
+            if hashlib.file_digest(saved, "sha256").hexdigest() == expected_sha256:
+                return
+    # A worker can stop during a copy. Stage and verify before replacing its
+    # destination, so a later worker can repair any incomplete prior copy.
+    with tempfile.NamedTemporaryFile(dir=destination.parent, prefix=".reviewed-media-", delete=False) as staged:
+        staged_path = Path(staged.name)
+    try:
+        shutil.copyfile(media, staged_path)
+        with staged_path.open("rb") as saved:
+            if hashlib.file_digest(saved, "sha256").hexdigest() != expected_sha256:
+                raise RuntimeError(f"saved media differs from reviewed render: {media.name}")
+        staged_path.replace(destination)
+    finally:
+        staged_path.unlink(missing_ok=True)
+
+
+def _retain_speech_review(folder: Path, outcome: dict, volume_root: Path) -> None:
+    """Keep a disputed final MP4 privately and return its location with the hold."""
+    hold_path = folder / "editorial_hold.json"
+    hold = json.loads(hold_path.read_text(encoding="utf-8"))
+    expected = outcome.get("media_sha256")
+    if (outcome.get("outcome") != "unfinished" or outcome.get("id") != folder.name
+            or hold.get("schema") != "ytc.final-audio-speech-hold/v1"
+            or hold.get("episode_id") != folder.name or hold.get("media_sha256") != expected):
+        raise RuntimeError(f"speech hold does not bind to reviewed media: {folder.name}")
+    relative = f"drafts/speech-review/{folder.name}-{expected}.mp4"
+    _save_exact_media(folder / f"{folder.name}.mp4", volume_root / relative, expected)
+    hold.update({"modal_volume": OUTBOX_VOLUME, "modal_path": relative})
+    hold_path.write_text(json.dumps(hold, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+    outcome["speech_review_path"] = relative
+
+
 def context_bundle(root: Path, episode_id: str) -> bytes:
     """strategy/ and the recent episodes a worker writes and judges against, laid out as in the repo."""
     episodes = root / "content" / "episodes"
@@ -212,13 +255,11 @@ def studio_episode(context: bytes, job: dict) -> dict:
         draft = json.loads((folder / "draft.json").read_text(encoding="utf-8"))
         media = folder / f"{episode_id}.mp4"
         destination = Path("/outbox", draft["modal_path"])
-        destination.parent.mkdir(exist_ok=True)
-        if not destination.exists():
-            shutil.copyfile(media, destination)
-        with destination.open("rb") as saved:
-            digest = hashlib.file_digest(saved, "sha256").hexdigest()
-        if digest != draft["media_sha256"]:
-            raise RuntimeError(f"saved draft media differs from reviewed render: {episode_id}")
+        _save_exact_media(media, destination, draft["media_sha256"])
+    if outcome.get("speech_review"):
+        if folder is None:
+            raise RuntimeError(f"speech review has no episode folder: {episode_id}")
+        _retain_speech_review(folder, outcome, Path("/outbox"))
     names = _episode_files(REMOTE_ROOT, folder) if folder else []
     # Named for this start, so a worker that was given up on can't have its files taken for a later one's.
     key = job.get("key", episode_id)

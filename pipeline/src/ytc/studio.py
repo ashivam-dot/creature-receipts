@@ -237,10 +237,11 @@ def review(folder: Path, script: dict, result: dict, episode_id: str, visuals: l
 def _passes(result: dict, verdict: dict, final: bool) -> bool:
     if result["warnings"] or any(verdict["scores"][k] < PASS_SCORE for k in GATE):
         return False
-    speech = result.get("speech")
-    if not isinstance(speech, dict) or speech.get("error") or speech.get("differences") != []:
+    from .check import speech_verified
+
+    if not speech_verified(result.get("speech"), result.get("media_sha256"), result.get("beats")):
         # A judge may suggest a pronunciation fix, but cannot clear a failed or
-        # mismatched recognition of the exact encoded video being hosted.
+        # unresolved recognition of the exact encoded video being hosted.
         return False
     # A final-round score cannot waive an identified wrong image or pronunciation.
     # If a source-matched picture is unavailable, the editor can use a clearly
@@ -259,9 +260,10 @@ def _standing(round_: dict) -> tuple:
     """How good a reviewed round is: passing by the final rule first, then its lowest score, total, and frames."""
     scores = round_["scores"]
     check = round_["check"]
-    passes = _passes({"warnings": check["warnings"], "speech": {
-        "differences": check.get("speech_differences"), "error": check.get("speech_error")
-    }}, round_, final=True)
+    speech = check.get("speech_verification") or {
+        "differences": check.get("speech_differences"), "error": check.get("speech_error")}
+    passes = _passes({"warnings": check["warnings"], "speech": speech,
+                      "media_sha256": round_.get("media_sha256")}, round_, final=True)
     return (passes, min(scores.values()), sum(scores.values()), -len(round_["frames"]), -len(round_["speech"]))
 
 
@@ -338,11 +340,38 @@ def _render(spec_path: Path) -> Path:
 
 
 def _summary(result: dict) -> dict:
-    return {k: result.get(k) for k in ("duration", "words", "integrated_lufs", "true_peak_dbfs", "warnings")} | {
+    summary = {k: result.get(k) for k in ("duration", "words", "integrated_lufs", "true_peak_dbfs", "warnings")} | {
         "speech_differences": result.get("speech", {}).get("differences"),
         "speech_error": result.get("speech", {}).get("error"),
         "sources": [b["source"] for b in result["beats"]],
     }
+    if isinstance(result.get("speech"), dict):
+        summary["speech_verification"] = result["speech"]
+    return summary
+
+
+def _speech_only_block(result: dict, verdict: dict) -> bool:
+    from .check import speech_verified
+
+    return (not speech_verified(result.get("speech"), result.get("media_sha256"), result.get("beats"))
+            and not result["warnings"] and not verdict["frames"]
+            and all(verdict["scores"][name] >= PASS_SCORE for name in GATE))
+
+
+def _hold_speech_review(folder: Path, meta: dict, media_sha256: str, result: dict, round_number: int) -> dict:
+    """Keep a disputed final video for exact-media review instead of deleting it."""
+    speech = result.get("speech") or {}
+    reason = "Exact final audio needs speech review; no further visual render can resolve the ASR disagreement"
+    _write(folder / "editorial_hold.json", {
+        "schema": "ytc.final-audio-speech-hold/v1", "episode_id": folder.name,
+        "reason": reason, "media_sha256": media_sha256, "review_round": round_number,
+        "media_file": f"{folder.name}.mp4",
+        "speech_differences": speech.get("differences", []), "speech_error": speech.get("error"),
+        "action": "Listen to the exact held MP4 against script.json and review.json; repair audible errors or seek independent audio adjudication. Clear the hold only after final-media checks pass.",
+    })
+    return {"id": folder.name, "outcome": "unfinished", "topic": meta["topic"],
+            "reason": "final audio on editorial speech hold", "speech_review": True,
+            "media_sha256": media_sha256}
 
 
 def reject(folder: Path, reason: str) -> Path:
@@ -423,9 +452,14 @@ def produce(topic: str, series: str, episode_id: str | None = None, *, at: str |
             contact_sheet(folder, frames)
         verdict = review(folder, script, result, episode_id, visuals)
         final = len(notes["rounds"]) >= FIX_ROUNDS
-        passed = _passes(result, verdict, final)
         with video.open("rb") as rendered:
             media_sha256 = hashlib.file_digest(rendered, "sha256").hexdigest()
+        result["media_sha256"] = media_sha256
+        passed = _passes(result, verdict, final)
+        previous = notes["rounds"][-1]["check"] if notes["rounds"] else None
+        repeated_speech = (previous is not None
+                           and previous.get("speech_differences") == result.get("speech", {}).get("differences")
+                           and previous.get("speech_error") == result.get("speech", {}).get("error"))
         notes["rounds"].append({"at": datetime.now(IST).isoformat(timespec="seconds"), "check": _summary(result),
                                 "media_sha256": media_sha256, **verdict,
                                 "passed": passed})
@@ -437,6 +471,9 @@ def produce(topic: str, series: str, episode_id: str | None = None, *, at: str |
         log.info("%s review %d: %s%s", episode_id, len(notes["rounds"]), verdict["scores"], " (passed)" if passed else "")
         if passed:
             break
+        if _speech_only_block(result, verdict) and (not verdict["speech"] or repeated_speech):
+            shutil.rmtree(folder / BEST, ignore_errors=True)
+            return _hold_speech_review(folder, meta, media_sha256, result, len(notes["rounds"]))
         if final:
             best = notes["best_round"]
             if best != len(notes["rounds"]) and _standing(notes["rounds"][best - 1])[0]:
@@ -468,6 +505,7 @@ def produce(topic: str, series: str, episode_id: str | None = None, *, at: str |
             kept = pick.unchanged(old_script, visuals, script, skip={f["beat"] for f in verdict["frames"]})
             visuals = pick.pick(script, research, episode_id, keep=kept)
         else:
+            before_script = json.dumps(script, sort_keys=True)
             bad = sorted({f["beat"] for f in verdict["frames"] if 1 <= f["beat"] <= len(script["beats"])})
             bad += [n for n, b in enumerate(result["beats"], 1) if b["source"] == "generated gradient" and n not in bad]
             if bad:
@@ -478,6 +516,9 @@ def produce(topic: str, series: str, episode_id: str | None = None, *, at: str |
                 if 1 <= n <= len(script["beats"]):
                     beat = script["beats"][n - 1]
                     beat["text"] = _override(beat["text"], fix["word"], fix["respelling"])
+            if _speech_only_block(result, verdict) and json.dumps(script, sort_keys=True) == before_script:
+                shutil.rmtree(folder / BEST, ignore_errors=True)
+                return _hold_speech_review(folder, meta, media_sha256, result, len(notes["rounds"]))
         _write(folder / "script.json", script)
         _write(folder / "visuals.json", visuals)
         spec_path = _save_spec(folder, spec_from(script, visuals, research, episode_id))
