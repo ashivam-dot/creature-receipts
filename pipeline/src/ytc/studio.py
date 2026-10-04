@@ -344,6 +344,8 @@ def produce(topic: str, series: str, episode_id: str | None = None, *, at: str |
 
     episode_id = episode_id or next_id()
     folder = EPISODES / episode_id
+    if (folder / "editorial_hold.json").exists():
+        raise RuntimeError(f"{episode_id} is on editorial hold; remove editorial_hold.json after repair and review")
     folder.mkdir(parents=True, exist_ok=True)
     meta = _read(folder / "topic.json") or {"topic": topic, "series": series, "at": at,
                                               "started_at": datetime.now(IST).isoformat(timespec="seconds"), "attempts": 0}

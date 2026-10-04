@@ -202,13 +202,17 @@ def episodes() -> list[dict]:
     out = []
     for folder in sorted(EPISODES.glob("ep[0-9][0-9][0-9]")):
         record, held, topic = _json(folder / "publish.json"), _json(folder / "hold.json"), _json(folder / "topic.json")
-        editorial_hold = _json(folder / "editorial_hold.json")
+        editorial_hold_path = folder / "editorial_hold.json"
+        editorial_hold = _json(editorial_hold_path)
         withdrawal = _json(folder / "withdrawal.json")
         remote = _json(folder / "remote.json")
         spec = yaml.safe_load((folder / "short.yaml").read_text(encoding="utf-8")) if (folder / "short.yaml").exists() else {}
         if withdrawal is not None and record and record.get("status") == "sent":
             state = "withdrawn"
-        elif editorial_hold is not None and (not record or record.get("status") != "sent"):
+        elif remote and not record:
+            # A hold added while a worker is running must not hide its result from collect().
+            state = "remote"
+        elif editorial_hold_path.exists() and (not record or record.get("status") != "sent"):
             # A queued Buffer post must be removed separately; this lock keeps the studio from scheduling it again.
             state = "editorial_hold"
         elif record:
@@ -217,8 +221,6 @@ def episodes() -> list[dict]:
             state = "superseded"
         elif held:
             state = "waiting"
-        elif remote:
-            state = "remote"
         elif topic:
             state = "making"
         else:
@@ -761,7 +763,8 @@ def _resumable(eps: list[dict]) -> list[dict]:
     """Half-made episodes that can go on now. One waiting for Flash's review is left until the reset, unless so few
     are ready that a backup model judges it (studio.review)."""
     few_ready = inventory(eps)["total"] < CURSOR_BELOW
-    return [e for e in eps if e["state"] == "making" and (few_ready or not _waiting(e["topic"]))]
+    return [e for e in eps if e["state"] == "making" and not (e["folder"] / "editorial_hold.json").exists()
+            and (few_ready or not _waiting(e["topic"]))]
 
 
 def _jobs(count: int) -> list[dict]:
@@ -772,6 +775,8 @@ def _jobs(count: int) -> list[dict]:
     resumable = {e["id"] for e in _resumable(eps)}
     half_made = []
     for e in [e for e in eps if e["state"] == "making"]:
+        if (e["folder"] / "editorial_hold.json").exists():
+            continue
         if e["topic"].get("spawns", 0) >= MAX_SPAWNS:
             studio.reject(e["folder"], f"its cloud worker stopped {MAX_SPAWNS} times without finishing")
             _finish_topic(e["id"], "rejected")
@@ -809,6 +814,9 @@ def _spawn(run: Run, jobs: list[dict]) -> list[dict]:
     cursor, last_resort = ready < CURSOR_BELOW, ready < LAST_RESORT_BELOW
     for job in jobs:
         folder = EPISODES / job["id"]
+        if (folder / "editorial_hold.json").exists():
+            run.notes.append(f"{job['id']} is on editorial hold; no worker started")
+            continue
         with run.stage(f"start {job['id']}") as entry:
             entry["detail"] = job["topic"]
             meta = _json(folder / "topic.json", {})
