@@ -8,7 +8,9 @@ that fails again, or whose research is too thin, is `— dropped`. The daily rou
 own (`auto.add_topics`).
 
 Each topic is one line naming the story, its year if it has one, and its twist, with an English Wikipedia
-article behind it. Every topic still has to pass the two-source rule.
+article behind it. Every topic still has to pass the two-source rule. The factual summaries for held ep055–ep058
+were corrected on 2026-10-04; their existing `topic.json`, scripts and visuals remain historical draft evidence.
+Do not remove an episode hold or reuse those saved drafts until each affected claim and image is rebuilt and reviewed.
 
 Seeded 2026-10-01, when the channel moved from animals to historical tragedies. Each line starts with the
 exact title of its English Wikipedia article (checked with the API: it exists, isn't a redirect or a
@@ -65,8 +67,8 @@ event is told for its gore. Space topics belong to the sister channel Universe R
 - 1900 Galveston hurricane (1900): forecasters dismissed warnings from Cuba, leaving the deadliest natural disaster in US history to strike an unprepared island — done (ep035)
 - Battle of Saragarhi (1897): twenty-one soldiers fought ten thousand tribesmen to the last man, signaling updates until the final seconds — parked (ep040)
 - Port Chicago disaster (1944): untested munitions were loaded by untrained men in a race against time, causing the largest US home-front disaster of WWII — parked (ep052)
-- Victoria Hall disaster (1883): hundreds of children rushed for free toys through a door that opened inward, trapping them as the crush grew — making (ep056)
-- Burning of Smyrna (1922): a cosmopolitan Mediterranean haven went up in flames days after foreign armies retreated, trapping refugees on the quay — making (ep058)
+- Victoria Hall disaster (1883): a floor bolt narrowed a swing door at the lower landing as children left a performance for prizes — making (ep056)
+- Burning of Smyrna (1922): the fire engulfed the city as refugees crowded the quay; its origin and foreign naval response require careful source review — making (ep058)
 - Wanggongchang Explosion (1626): a massive unexplained blast rocked Beijing, stripping people of their clothes and leaving a silent void
 - Great Blizzard of 1888 (1888): commuters stepped into mild spring weather before a sudden whiteout froze New York City in its tracks
 - Great Siege of Malta (1565): a handful of knights held off an invading armada against impossible odds, surviving until relief finally arrived
@@ -175,9 +177,9 @@ event is told for its gore. Space topics belong to the sister channel Universe R
 - Battle of Isandlwana (1879): British commanders refused to form defensive laagers, mocking reports of Zulu forces until thousands appeared over the ridge — parked (ep034)
 - Mongol invasions of Japan (1281): the invasion fleet was destroyed by a legendary typhoon known as the kamikaze, saving Japan from conquest — parked (ep039)
 - Fetterman Fight (1866): a cocky commander vowed to ride through the entire Sioux nation with eighty men, and none returned — done (ep053)
-- Battle of Cartagena de Indias (1741): Admiral Vernon was so certain of victory he minted medals celebrating the win while his fleet was being destroyed — making (ep055)
+- Battle of Cartagena de Indias (1741): English makers struck premature victory medals, but the British siege failed — making (ep055)
 - Whydah Gally (1717): a pirate slave ship sank in a violent nor'easter right off Cape Cod, carrying a fortune in stolen treasure that lay buried for centuries
-- Saint-Michel-de-Maurienne derailment (1917): a commander forced a driver at gunpoint to overload a train with 1,000 soldiers, causing it to lose its brakes on a mountain — making (ep057)
+- Saint-Michel-de-Maurienne derailment (1917): a wartime troop train derailed on an Alpine descent; the braking decisions and death toll require primary-source review — making (ep057)
 - West Loch disaster (1944): a massive explosion at Pearl Harbor killed 163 men just before a secret invasion, but the tragedy was kept classified for decades
 - Great Plague of Marseille (1720): city officials ignored a plague warning on a merchant ship because they didn't want to delay its cargo of silk for a local fair
 - Manchurian plague (1910): a doctor's warning that the plague was airborne was mocked by a colleague who refused to wear a mask and died of the infection days later
