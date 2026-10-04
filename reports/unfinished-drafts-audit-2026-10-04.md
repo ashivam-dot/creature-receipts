@@ -1,0 +1,19 @@
+# Private audit: ep055 Cartagena and ep058 Smyrna
+
+Read-only independent review, 2026-10-04, after [collection run 37165712575](https://github.com/ashivam-dot/creature-receipts/actions/runs/37165712575). Both workers returned `unfinished`; neither candidate is approved. This report does not render, host, schedule or release media. Episode-level `editorial_hold.json` files now block retries as well as release. The channel-wide scheduling hold remains active.
+
+## ep055 — Battle of Cartagena de Indias (1741)
+
+- **Medal attribution:** Current and `best` scripts say Admiral Vernon himself minted victory medals. The directly inspected [Massachusetts Historical Society collection guide](https://www.masshist.org/collection-guides/view/fao0018) attributes the medals to English toy and button makers and manufacturers after premature reports of a British victory. The hook and calendar wording require revision; do not substitute an unsupported personal order from Vernon.
+- **Death count:** A beat/card claims disease alone killed more than 9,000. The worker's research gives roughly 9,500–11,500 **total** fatalities, largely from disease; it does not support that disease-specific number. Omit or substantiate the narrower claim.
+- **Assault and art:** The ten-foot ladder shortfall needs a directly inspected source before narration. The selected [William Gooch's American Marines assault drawing](https://commons.wikimedia.org/wiki/File:William_Gooch%27s_American_Marines_in_the_attack_on_Fort_San_Lazaro_at_Cartagena_in_1741.jpg) is a **1920s Arman Manookian ink drawing** by its Commons metadata, not a contemporary 1741 engraving. It may be used only as a clearly labeled later interpretation after its item rights are checked.
+
+Revise the hook and affected beats, verify each claim against primary or scholarly records, and rerender with accurate image labels before independent final review.
+
+## ep058 — Burning of Smyrna (1922)
+
+- **Warships:** The current script opens with foreign warships refusing refugees; the `best` script says 200,000 were evacuated “while warships watched in harbor.” These blanket claims conflict with the selected [USS *Litchfield* image record](https://commons.wikimedia.org/wiki/File:USS_Litchfield_at_Smyrna.jpg), which identifies it as a ship that helped evacuate refugees. The [Guardian's reprint of 1922 reporting](https://www.theguardian.com/world/2022/nov/30/the-destruction-of-smyrna-archive-1922) distinguishes early ship actions from later assistance. Any account must distinguish dates, ships and actions rather than treating all warships as one actor.
+- **Fire origin and rescue:** The current script calls Minnie Mills's observation “the first fires”; the cited contemporary account says she saw an officer carrying petroleum near a house that then burned, without establishing the first ignition of the whole city. The draft also credits Asa Jennings alone with forcing a 200,000-person evacuation, although Jennings and Halsey Powell organized a wider flotilla. Recheck the number, roles and causal wording in direct records before using them.
+- **Visual identity:** Beat 3's current refugee-quay image and the `best` [burning-quay image](https://commons.wikimedia.org/wiki/File:Smyrna-burn-13t14d-quay-buildings-1922.jpg) do not depict the American Girls' College narrated there. Another `best` beat requests a photograph *of* a British battleship but selects [a fire photograph taken **from** HMS *Ajax*](https://commons.wikimedia.org/wiki/File:Smyrna_Fire_Sept_1922_from_HMS_Ajax.jpg). Relabel that vantage or choose an actual ship image.
+
+The underlying event and humanitarian disaster are real; these script and visual details are not ready for a public short. Keep the hold until the claim map, item-level rights, exact video, and independent review pass.
