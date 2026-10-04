@@ -1,22 +1,28 @@
 {
-  "updated_at": "2026-10-04T11:48:00+05:30",
+  "updated_at": "2026-10-04T11:49:50+05:30",
   "day": 3,
   "result": "ok",
   "run": {
-    "host": "github-actions",
-    "id": "37182373150",
-    "number": "23",
-    "trigger": "workflow_dispatch",
-    "started_at": "2026-10-04T11:47:58+05:30",
-    "started_at_utc": "2026-10-04T06:17:58+00:00",
-    "seconds": 1
+    "host": "modal",
+    "id": "ta-01M42S2Z2VTEA5K7C1K7E2X78R",
+    "number": null,
+    "trigger": "manual",
+    "started_at": "2026-10-04T11:49:48+05:30",
+    "started_at_utc": "2026-10-04T06:19:48+00:00",
+    "seconds": 2
   },
   "stages": [
+    {
+      "name": "deploy",
+      "ok": true,
+      "detail": "",
+      "seconds": 1.0
+    },
     {
       "name": "collect",
       "ok": true,
       "detail": "nothing in the cloud",
-      "seconds": 0.6
+      "seconds": 0.4
     }
   ],
   "errors": [],
@@ -71,8 +77,8 @@
     "runner": 0
   },
   "daily_done": "2026-10-03",
-  "minutes_this_month": 10.022812394266666,
-  "minutes_budget": null,
+  "minutes_this_month": 10.0,
+  "minutes_budget": 2000,
   "modal_cost": {
     "metered": 5.09,
     "billed": 0.0
