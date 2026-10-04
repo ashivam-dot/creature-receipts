@@ -70,3 +70,18 @@ def test_bad_or_missing_replacement_holds(monkeypatch):
         pick._verified_choices(BEATS, {1: (first, [second], {})}, {first["key"]}, "Story", "ep063")
     with pytest.raises(pick.VisualCheckFailed, match="no verified alternative"):
         pick._verified_choices(BEATS, {1: (first, [], {})}, {first["key"]}, "Story", "ep063")
+
+
+def test_later_beat_without_a_verified_picture_falls_back(monkeypatch):
+    beats = BEATS + [{"text": "The storm hit at noon.", "year": 1888}, {"text": "Rescuers searched for days.", "year": 1888}]
+    hook, good = candidate("schoolhouse", 1.0), candidate("rescuers", 1.0)
+    wrong, also_wrong, lone = candidate("wrong storm", 1.0), candidate("another storm", 1.0), candidate("lone", 1.0)
+    monkeypatch.setattr(pick, "_verify", lambda beats, selected, story, purpose:
+                        {n: "wrong event" for n in selected if n == 2})
+    chosen = {1: (hook, [], {}), 2: (wrong, [also_wrong], {}), 3: (good, [], {})}
+    result = pick._verified_choices(beats, chosen, {"schoolhouse", "wrong storm", "rescuers"}, "Story", "ep070")
+    assert sorted(result) == [1, 3]
+    monkeypatch.setattr(pick, "_verify", lambda beats, selected, story, purpose:
+                        {n: "wrong event" for n in selected if n == 3})
+    result = pick._verified_choices(beats, {1: (hook, [], {}), 3: (lone, [], {})}, {"schoolhouse", "lone"}, "Story", "ep070")
+    assert sorted(result) == [1]

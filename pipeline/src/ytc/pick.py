@@ -329,7 +329,10 @@ def _period_problems(beats: list[dict], chosen: dict[int, dict]) -> dict[int, st
 
 def _verified_choices(beats: list[dict], chosen: dict[int, tuple], used: set[str], story: str,
                       episode_id: str) -> dict[int, tuple]:
-    """Allow one alternate, then verify the replacement before spending on narration or render."""
+    """Allow one alternate, then verify the replacement before spending on narration or render.
+
+    A later beat whose pictures all fail is left without one, so it gets a card or an earlier verified picture
+    again; the visual plan check still limits cards and requires enough real art. The hook has no such fallback."""
     originals = {n: item[0] for n, item in chosen.items()}
     flagged = {**_verify(beats, originals, story, f"{episode_id} image check"),
                **_period_problems(beats, originals)}
@@ -338,7 +341,11 @@ def _verified_choices(beats: list[dict], chosen: dict[int, tuple], used: set[str
         candidate, alternatives, pick = chosen[n]
         alternate = next((a for a in alternatives if a["key"] not in used), None)
         if alternate is None:
-            raise VisualCheckFailed(f"{episode_id} beat {n}: no verified alternative ({problem})")
+            if n == 1:
+                raise VisualCheckFailed(f"{episode_id} beat {n}: no verified alternative ({problem})")
+            log.info("%s beat %d: no verified alternative (%s); using a fallback", episode_id, n, problem)
+            del chosen[n]
+            continue
         used.discard(candidate["key"])
         used.add(alternate["key"])
         chosen[n] = (alternate, [a for a in alternatives if a is not alternate],
@@ -347,9 +354,11 @@ def _verified_choices(beats: list[dict], chosen: dict[int, tuple], used: set[str
     if replacements:
         second = {**_verify(beats, replacements, story, f"{episode_id} replacement image check"),
                   **_period_problems(beats, replacements)}
-        if second:
-            n = min(second)
-            raise VisualCheckFailed(f"{episode_id} beat {n}: replacement image failed ({second[n]})")
+        for n, problem in sorted(second.items()):
+            if n == 1:
+                raise VisualCheckFailed(f"{episode_id} beat {n}: replacement image failed ({problem})")
+            log.info("%s beat %d: replacement image failed (%s); using a fallback", episode_id, n, problem)
+            del chosen[n]
     return chosen
 
 
