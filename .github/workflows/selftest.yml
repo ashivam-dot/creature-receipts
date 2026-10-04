@@ -70,5 +70,16 @@ jobs:
         working-directory: pipeline
         run: |
           start=$(date +%s)
-          uv run --no-sync ytc check "../content/episodes/$EPISODE/$EPISODE.mp4"
+          set -o pipefail
+          uv run --no-sync ytc check "../content/episodes/$EPISODE/$EPISODE.mp4" | tee /tmp/history-selftest-check.json
+          python3 - <<'PY'
+          import json
+          from pathlib import Path
+
+          result = json.loads(Path('/tmp/history-selftest-check.json').read_text())
+          speech = result.get('speech') or {}
+          if result.get('warnings') or speech.get('error') or speech.get('differences') != []:
+              raise SystemExit('Finished-media check has decode/loudness warnings or speech errors/differences')
+          print('Finished-media checks passed')
+          PY
           echo "check took $(( $(date +%s) - start )) s"
