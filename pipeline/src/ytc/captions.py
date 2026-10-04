@@ -54,6 +54,11 @@ def _display(text: str, uppercase: bool) -> str:
     return cleaned.upper() if uppercase else cleaned
 
 
+def _label_display(text: str) -> str:
+    """Keep a source label's meaningful punctuation while escaping ASS syntax."""
+    return text.strip().replace("{", "(").replace("}", ")").replace("\\", "").upper()
+
+
 def _key(text: str) -> str:
     return text.strip().strip(_STRIP + "!?").lower()
 
@@ -155,6 +160,7 @@ def write_ass(
     hook: tuple[str, float] | None = None,
     beat_y: dict[int, float] | None = None,
     visual_labels: list[tuple[float, float, str]] | None = None,
+    beat_ends: dict[int, float] | None = None,
 ) -> None:
     """Captions, and the hook's on-screen text (its words, and when it leaves) if there is one. `beat_y` moves
     the captions of the beats it names to another height (a fraction of the frame)."""
@@ -189,10 +195,13 @@ def write_ass(
     for ci, chunk in enumerate(chunks):
         y = int(HEIGHT * (beat_y or {}).get(chunk[0].beat, style.y))
         next_start = chunks[ci + 1][0].start if ci + 1 < len(chunks) else total
-        chunk_end = min(next_start, chunk[-1].end + 1.0, total)
+        beat_cut = (beat_ends or {}).get(chunk[0].beat, total)
+        chunk_end = min(next_start, chunk[-1].end + 1.0, total, beat_cut)
         scale = min(100, int(100 * max_width / width(chunk)))
         for wi, word in enumerate(chunk):
-            end = chunk[wi + 1].start if wi + 1 < len(chunk) else chunk_end
+            end = min(chunk[wi + 1].start, beat_cut) if wi + 1 < len(chunk) else chunk_end
+            if word.start >= end:
+                continue
             parts = []
             for wj, other in enumerate(chunk):
                 text = _display(other.text, style.uppercase)
@@ -214,16 +223,19 @@ def write_ass(
     if hook and hook[0].strip():
         events.append(_hook_event(hook[0], hook[1], fonts_dir, style))
     for start, end, label in visual_labels or []:
-        safe = _display(label, True)
+        safe = _label_display(label)
         if safe:
             events.append(f"Dialogue: 1,{_ass_time(start)},{_ass_time(end)},Provenance,,0,0,0,,"
                           f"{{\\an8\\pos({WIDTH // 2},{int(HEIGHT * 0.43)})}}{safe}")
     path.write_text(header + "\n".join(events) + "\n", encoding="utf-8")
 
 
-def write_srt(words: list[Word], path: Path, max_words: int = 7) -> None:
+def write_srt(words: list[Word], path: Path, max_words: int = 7,
+              beat_ends: dict[int, float] | None = None) -> None:
     cues = []
-    for index, chunk in enumerate(_chunks(words, max_words), start=1):
+    for chunk in _chunks(words, max_words):
         text = " ".join(w.text.strip() for w in chunk)
-        cues.append(f"{index}\n{_srt_time(chunk[0].start)} --> {_srt_time(chunk[-1].end)}\n{text}\n")
+        end = min(chunk[-1].end, (beat_ends or {}).get(chunk[0].beat, chunk[-1].end))
+        if chunk[0].start < end:
+            cues.append(f"{len(cues) + 1}\n{_srt_time(chunk[0].start)} --> {_srt_time(end)}\n{text}\n")
     path.write_text("\n".join(cues), encoding="utf-8")
