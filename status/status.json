@@ -1,52 +1,52 @@
 {
-  "updated_at": "2026-10-04T20:49:39+05:30",
+  "updated_at": "2026-10-04T20:54:33+05:30",
   "day": 3,
   "result": "ok",
   "run": {
     "host": "github-actions",
-    "id": "37212516414",
-    "number": "45",
-    "trigger": "workflow_dispatch",
-    "started_at": "2026-10-04T20:49:23+05:30",
-    "started_at_utc": "2026-10-04T15:19:23+00:00",
-    "seconds": 16
+    "id": "37212834676",
+    "number": "46",
+    "trigger": "schedule",
+    "started_at": "2026-10-04T20:54:18+05:30",
+    "started_at_utc": "2026-10-04T15:24:18+00:00",
+    "seconds": 14
   },
   "stages": [
     {
       "name": "collect",
       "ok": true,
-      "detail": "ep066 still working (0.0 h); ep067 unfinished (VisualCheckFailed: ep067 beat 5: no verified alternative (wrong date and publication)); ep068 still working (0.0 h); ep069 unfinished (VisualCheckFailed: ep069 beat 4: replacement image failed (modern-looking image for a historical scene))",
-      "seconds": 6.4
+      "detail": "ep066 still working (0.1 h); ep067 unfinished (VisualCheckFailed: ep067 beat 1: replacement image failed (Shows Nelle Snyder instead of Masabumi Hosono)); ep068 unfinished (VisualCheckFailed: ep068 beat 3: replacement image failed (wrong event and period, shows 19th-century Madrid)); ep069 still working (0.1 h); ep070 still working (0.1 h); ep071 still working (0.1 h)",
+      "seconds": 6.3
     },
     {
       "name": "deploy",
       "ok": true,
       "detail": "",
-      "seconds": 1.8
+      "seconds": 1.6
     },
     {
-      "name": "start ep067",
+      "name": "start ep068",
       "ok": true,
-      "detail": "Sinking of the Titanic (1912): the only Japanese survivor, Masabumi Hosono, was publicly shamed and lost his government job in Japan for not dying honorably with the other passengers",
-      "seconds": 1.1
+      "detail": "Wanggongchang Explosion (1626): a massive unexplained blast rocked Beijing, stripping people of their clothes and leaving a silent void",
+      "seconds": 0.7
     },
     {
-      "name": "start ep069",
+      "name": "start ep072",
       "ok": true,
-      "detail": "Hugh Glass (1823): after being mauled by a grizzly and left for dead in a shallow grave, he crawled 200 miles to safety but chose to forgive the men who abandoned him",
-      "seconds": 1.3
+      "detail": "Oppau explosion (1921): a routine blast to break up caked fertilizer preceded a stockpile detonation",
+      "seconds": 0.6
     },
     {
-      "name": "start ep070",
+      "name": "start ep073",
       "ok": true,
-      "detail": "Great Blizzard of 1888 (1888): commuters stepped into mild spring weather before a sudden whiteout froze New York City in its tracks",
-      "seconds": 1.2
+      "detail": "Great Molasses Flood (1919): the leaking tank had been painted brown to hide the leaks",
+      "seconds": 0.6
     },
     {
-      "name": "start ep071",
+      "name": "start ep074",
       "ok": true,
-      "detail": "Library of Alexandria: it wasn't lost in one great fire, but declined over centuries",
-      "seconds": 1.1
+      "detail": "Mann Gulch fire (1949): foreman Wag Dodge set an escape fire as his crew fled the advancing wildfire",
+      "seconds": 0.6
     }
   ],
   "errors": [],
@@ -63,11 +63,13 @@
     "making": [],
     "remote": [
       "ep066",
-      "ep067",
       "ep068",
       "ep069",
       "ep070",
-      "ep071"
+      "ep071",
+      "ep072",
+      "ep073",
+      "ep074"
     ]
   },
   "queue": [],
@@ -96,39 +98,39 @@
       "id": "ep067",
       "outcome": "unfinished",
       "topic": "Sinking of the Titanic (1912): the only Japanese survivor, Masabumi Hosono, was publicly shamed and lost his government job in Japan for not dying honorably with the other passengers",
-      "reason": "VisualCheckFailed: ep067 beat 5: no verified alternative (wrong date and publication)",
+      "reason": "VisualCheckFailed: ep067 beat 1: replacement image failed (Shows Nelle Snyder instead of Masabumi Hosono)",
       "quota": false,
       "overloaded": false
     },
     {
-      "id": "ep069",
+      "id": "ep068",
       "outcome": "unfinished",
-      "topic": "Hugh Glass (1823): after being mauled by a grizzly and left for dead in a shallow grave, he crawled 200 miles to safety but chose to forgive the men who abandoned him",
-      "reason": "VisualCheckFailed: ep069 beat 4: replacement image failed (modern-looking image for a historical scene)",
+      "topic": "Wanggongchang Explosion (1626): a massive unexplained blast rocked Beijing, stripping people of their clothes and leaving a silent void",
+      "reason": "VisualCheckFailed: ep068 beat 3: replacement image failed (wrong event and period, shows 19th-century Madrid)",
       "quota": false,
       "overloaded": false
     }
   ],
   "spawned": [
     {
-      "id": "ep067",
-      "topic": "Sinking of the Titanic (1912): the only Japanese survivor, Masabumi Hosono, was publicly shamed and lost his government job in Japan for not dying honorably with the other passengers",
-      "call_id": "fc-01M43QZG2T486WNX6SE4EZQXG7"
+      "id": "ep068",
+      "topic": "Wanggongchang Explosion (1626): a massive unexplained blast rocked Beijing, stripping people of their clothes and leaving a silent void",
+      "call_id": "fc-01M43R8GQFXA9R2CZTP3QZJ8TN"
     },
     {
-      "id": "ep069",
-      "topic": "Hugh Glass (1823): after being mauled by a grizzly and left for dead in a shallow grave, he crawled 200 miles to safety but chose to forgive the men who abandoned him",
-      "call_id": "fc-01M43QZHBWMK5MPC3P3B1WWH57"
+      "id": "ep072",
+      "topic": "Oppau explosion (1921): a routine blast to break up caked fertilizer preceded a stockpile detonation",
+      "call_id": "fc-01M43R8H9KR0VX70AD6DYNBB00"
     },
     {
-      "id": "ep070",
-      "topic": "Great Blizzard of 1888 (1888): commuters stepped into mild spring weather before a sudden whiteout froze New York City in its tracks",
-      "call_id": "fc-01M43QZJH4X9K0PX9B9TZ2E3NY"
+      "id": "ep073",
+      "topic": "Great Molasses Flood (1919): the leaking tank had been painted brown to hide the leaks",
+      "call_id": "fc-01M43R8HV777A9VT67FTWAH4MK"
     },
     {
-      "id": "ep071",
-      "topic": "Library of Alexandria: it wasn't lost in one great fire, but declined over centuries",
-      "call_id": "fc-01M43QZKKY4Z62KXATK0GH7F1D"
+      "id": "ep074",
+      "topic": "Mann Gulch fire (1949): foreman Wag Dodge set an escape fire as his crew fled the advancing wildfire",
+      "call_id": "fc-01M43R8JDE8ZM97ATD3FFM8Q3B"
     }
   ],
   "in_cloud": [
@@ -138,14 +140,9 @@
       "spawned_at": "2026-10-04T20:46:31+05:30"
     },
     {
-      "id": "ep067",
-      "topic": "Sinking of the Titanic (1912): the only Japanese survivor, Masabumi Hosono, was publicly shamed and lost his government job in Japan for not dying honorably with the other passengers",
-      "spawned_at": "2026-10-04T20:49:35+05:30"
-    },
-    {
       "id": "ep068",
       "topic": "Wanggongchang Explosion (1626): a massive unexplained blast rocked Beijing, stripping people of their clothes and leaving a silent void",
-      "spawned_at": "2026-10-04T20:46:32+05:30"
+      "spawned_at": "2026-10-04T20:54:30+05:30"
     },
     {
       "id": "ep069",
@@ -161,6 +158,21 @@
       "id": "ep071",
       "topic": "Library of Alexandria: it wasn't lost in one great fire, but declined over centuries",
       "spawned_at": "2026-10-04T20:49:38+05:30"
+    },
+    {
+      "id": "ep072",
+      "topic": "Oppau explosion (1921): a routine blast to break up caked fertilizer preceded a stockpile detonation",
+      "spawned_at": "2026-10-04T20:54:31+05:30"
+    },
+    {
+      "id": "ep073",
+      "topic": "Great Molasses Flood (1919): the leaking tank had been painted brown to hide the leaks",
+      "spawned_at": "2026-10-04T20:54:32+05:30"
+    },
+    {
+      "id": "ep074",
+      "topic": "Mann Gulch fire (1949): foreman Wag Dodge set an escape fire as his crew fled the advancing wildfire",
+      "spawned_at": "2026-10-04T20:54:32+05:30"
     }
   ],
   "published": [],
@@ -168,10 +180,11 @@
   "failed_posts": [],
   "not_live": [],
   "llm": {
-    "calls": 5,
+    "calls": 9,
     "by_model": {
-      "gemini-3.7-flash": 2,
-      "gemini-3.5-flash-lite": 3
+      "gemini-3.7-flash": 1,
+      "gemini-3.5-flash-lite": 7,
+      "gemini-3-flash-preview": 1
     },
     "out_of_quota": []
   },
@@ -180,20 +193,20 @@
     "runner": 0
   },
   "daily_done": "2026-10-04",
-  "minutes_this_month": 64.27026745848333,
+  "minutes_this_month": 66.23557285413334,
   "minutes_budget": null,
   "modal_cost": {
-    "metered": 5.31,
+    "metered": 5.45,
     "billed": 0.0
   },
   "modal_credit": 30.0,
   "capacity": {
-    "cloud": 187,
+    "cloud": 183,
     "runner": 0,
     "runner_minutes": 0,
-    "modal_credit_left": 22.45
+    "modal_credit_left": 22.07
   },
   "made_here": 0,
-  "open_topics": 153,
-  "parked_topics": 17
+  "open_topics": 152,
+  "parked_topics": 18
 }

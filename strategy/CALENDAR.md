@@ -127,8 +127,8 @@ event is told for its gore. Space topics belong to the sister channel Universe R
 - Battle of Mytilene (406 BC): after winning a crucial naval victory, six Athenian generals were executed by their own city because a storm prevented them from rescuing shipwrecked survivors
 - Earthquake Synod (1382): when a violent earthquake interrupted a trial to condemn a religious reformer, both the prosecutors and the accused claimed God sent the quake to support them
 - Siege of Pembroke (1648): an impregnable fortress was forced to surrender after a defector revealed the exact location of the secret underground pipe supplying all their water
-- Oppau explosion (1921): a routine blast to break up caked fertilizer preceded a stockpile detonation
-- Mann Gulch fire (1949): foreman Wag Dodge set an escape fire as his crew fled the advancing wildfire
+- Oppau explosion (1921): a routine blast to break up caked fertilizer preceded a stockpile detonation — making (ep072)
+- Mann Gulch fire (1949): foreman Wag Dodge set an escape fire as his crew fled the advancing wildfire — making (ep074)
 
 ### Lost Cities
 
@@ -206,7 +206,7 @@ event is told for its gore. Space topics belong to the sister channel Universe R
 - Tay Bridge disaster (1879): the bridge fell in a gale with a train on it, and the inquiry found it badly designed, built, and maintained
 - St. Francis Dam (1928): William Mulholland inspected a leak and judged the dam safe the day it collapsed
 - Johnstown Flood (1889): the dam that failed belonged to a fishing club of Pittsburgh's richest men
-- Great Molasses Flood (1919): the leaking tank had been painted brown to hide the leaks
+- Great Molasses Flood (1919): the leaking tank had been painted brown to hide the leaks — making (ep073)
 - Sultana (steamboat) (1865): a boat built for a few hundred carried over 2,000 people, most of them freed Union prisoners, when its patched boiler exploded
 - Triangle Shirtwaist Factory fire (1911): a stairway door was locked, and 146 garment workers died — parked (ep032)
 - Iroquois Theatre fire (1903): advertised as "absolutely fireproof", it burned five weeks after opening
@@ -245,5 +245,5 @@ event is told for its gore. Space topics belong to the sister channel Universe R
 - Survival of Jan Baalsrud (1943): after his sabotage mission failed, he survived the Arctic for months and amputated nine of his own toes with a pocketknife to stop gangrene from killing him
 - 1867 Virgin Islands earthquake and tsunami (1867): a massive wave carried the USS Monongahela over the rooftops of the town before the receding water pulled it safely back into the harbor
 - Hugh Glass (1823): after being mauled by a grizzly and left for dead in a shallow grave, he crawled 200 miles to safety but chose to forgive the men who abandoned him — making (ep069)
-- Sinking of the Titanic (1912): the only Japanese survivor, Masabumi Hosono, was publicly shamed and lost his government job in Japan for not dying honorably with the other passengers — making (ep067)
+- Sinking of the Titanic (1912): the only Japanese survivor, Masabumi Hosono, was publicly shamed and lost his government job in Japan for not dying honorably with the other passengers — parked (ep067)
 - 1842 retreat from Kabul (1842): surgeon William Brydon was the only member of a 16,000-strong British army column to reach safety, surviving a sword cut because he stuffed a magazine into his hat for warmth
