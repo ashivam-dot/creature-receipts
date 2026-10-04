@@ -2,7 +2,7 @@
 
 import hashlib
 import json
-from datetime import datetime, timedelta
+from datetime import datetime, timedelta, timezone
 
 import pytest
 
@@ -56,6 +56,28 @@ def episode(tmp_path, monkeypatch):
     return folder
 
 
+def _optional_instagram_policy():
+    config = release.POLICY_PATH
+    data = json.loads(config.read_text())
+    data["require_instagram"] = False
+    config.write_text(json.dumps(data))
+
+
+def _capture_buffer_creates(monkeypatch):
+    payloads = []
+
+    def create(query, variables):
+        payloads.append(variables["input"])
+        return {"createPost": {"__typename": "PostActionSuccess",
+                               "post": {"id": f"post-{len(payloads)}", "status": "scheduled"}}}
+
+    monkeypatch.setattr(publish, "posts", lambda **kwargs: [])
+    monkeypatch.setattr(publish, "_buffer", create)
+    monkeypatch.setattr(publish, "next_slots", lambda count, taken, **kwargs:
+                        [datetime.now(publish.AUDIENCE_TZ) + timedelta(days=1)])
+    return payloads
+
+
 def test_policy_is_dormant_without_both_switches(episode, monkeypatch):
     monkeypatch.delenv("YTC_AUTONOMOUS_RELEASE")
     assert release.policy() is None
@@ -69,13 +91,142 @@ def test_policy_is_dormant_without_both_switches(episode, monkeypatch):
     assert release.policy() is None
 
 
+@pytest.mark.parametrize("value", [None, "false", 0, 1])
+def test_policy_requires_an_explicit_boolean_instagram_choice(episode, value):
+    config = release.POLICY_PATH
+    data = json.loads(config.read_text())
+    data["require_instagram"] = value
+    config.write_text(json.dumps(data))
+    with pytest.raises(RuntimeError, match="explicitly choose"):
+        release.policy()
+
+
+def test_policy_rejects_an_omitted_instagram_choice(episode):
+    config = release.POLICY_PATH
+    data = json.loads(config.read_text())
+    del data["require_instagram"]
+    config.write_text(json.dumps(data))
+    with pytest.raises(RuntimeError, match="explicitly choose"):
+        release.policy()
+
+
+def test_optional_policy_keeps_episode_floor_and_start_cutoff(episode):
+    _optional_instagram_policy()
+    config = release.POLICY_PATH
+    data = json.loads(config.read_text())
+    data["min_episode_id"] = "ep050"
+    config.write_text(json.dumps(data))
+    with pytest.raises(RuntimeError, match="episode floor"):
+        release.validate(episode / "short.yaml")
+    data["min_episode_id"] = "ep063"
+    config.write_text(json.dumps(data))
+    (episode / "topic.json").write_text(json.dumps({"started_at": "2026-10-04T23:59:59+00:00"}))
+    with pytest.raises(RuntimeError, match="time cutoff"):
+        release.validate(episode / "short.yaml")
+
+
+def test_optional_youtube_release_is_idempotent_without_an_instagram_id(episode, monkeypatch):
+    _optional_instagram_policy()
+    monkeypatch.setattr(auto, "EPISODES", episode.parent)
+    monkeypatch.delenv("BUFFER_INSTAGRAM_CHANNEL_ID")
+    # An unrelated account in the organization's channel list is never selected by discovery.
+    monkeypatch.setattr(publish, "channels", lambda: [
+        {"id": "yt", "service": "youtube", "isDisconnected": False},
+        {"id": "mool-ig", "service": "instagram", "isDisconnected": False},
+    ])
+    payloads = _capture_buffer_creates(monkeypatch)
+    verified = []
+    monkeypatch.setattr(publish, "verify_hosted_media", lambda url, digest: verified.append((url, digest)))
+    first = auto.Run("test")
+    auto.publish_waiting(first)
+    second = auto.Run("test")
+    auto.publish_waiting(second)
+    assert first.errors == second.errors == []
+    assert [p["channelId"] for p in payloads] == ["yt"]
+    assert verified and all(url == "https://cdn.example/ep063.mp4" and
+                            digest == release._hash(episode / "ep063.mp4") for url, digest in verified)
+    record = json.loads((episode / "publish.json").read_text())
+    assert record["buffer_post_id"] == "post-1"
+    assert not record.get("crossposts")
+
+
+def test_optional_youtube_release_repairs_instagram_after_correct_account_connects(episode, monkeypatch):
+    _optional_instagram_policy()
+    monkeypatch.setattr(auto, "EPISODES", episode.parent)
+    monkeypatch.delenv("BUFFER_INSTAGRAM_CHANNEL_ID")
+    payloads = _capture_buffer_creates(monkeypatch)
+    youtube_only = auto.Run("test")
+    auto.publish_waiting(youtube_only)
+    assert youtube_only.errors == []
+    monkeypatch.setenv("BUFFER_INSTAGRAM_CHANNEL_ID", "history-ig")
+    monkeypatch.setattr(publish, "channels", lambda: [
+        {"id": "yt", "service": "youtube", "isDisconnected": False},
+        {"id": "mool-ig", "service": "instagram", "isDisconnected": False},
+        {"id": "history-ig", "service": "instagram", "isDisconnected": False},
+    ])
+    repair = auto.Run("test")
+    auto.publish_waiting(repair)
+    repeated = auto.Run("test")
+    auto.publish_waiting(repeated)
+    assert repair.errors == repeated.errors == []
+    assert [p["channelId"] for p in payloads] == ["yt", "history-ig"]
+    assert payloads[1]["assets"] == [{"video": {"url": "https://cdn.example/ep063.mp4"}}]
+    record = json.loads((episode / "publish.json").read_text())
+    assert record["crossposts"]["instagram"]["id"] == "post-2"
+
+
+def test_wrong_optional_instagram_id_does_not_block_youtube_or_use_mool(episode, monkeypatch):
+    _optional_instagram_policy()
+    monkeypatch.setattr(auto, "EPISODES", episode.parent)
+    monkeypatch.setenv("BUFFER_INSTAGRAM_CHANNEL_ID", "mool-ig")
+    monkeypatch.setattr(publish, "channels", lambda: [{"id": "yt", "service": "youtube"}])
+    payloads = _capture_buffer_creates(monkeypatch)
+    run = auto.Run("test")
+    auto.publish_waiting(run)
+    assert any("configured Instagram channel is missing" in error for error in run.errors)
+    assert [p["channelId"] for p in payloads] == ["yt"]
+
+
+def test_optional_policy_still_requires_the_exact_youtube_destination(episode, monkeypatch):
+    _optional_instagram_policy()
+    monkeypatch.setattr(auto, "EPISODES", episode.parent)
+    monkeypatch.setenv("BUFFER_YOUTUBE_CHANNEL_ID", "mool-yt")
+    monkeypatch.delenv("BUFFER_INSTAGRAM_CHANNEL_ID")
+    monkeypatch.setattr(publish, "posts", lambda **kwargs: pytest.fail("Buffer posts were queried"))
+    monkeypatch.setattr(publish, "_buffer", lambda *args: pytest.fail("a post was created"))
+    run = auto.Run("test")
+    auto.publish_waiting(run)
+    assert any("Configured Buffer YouTube channel is missing" in error for error in run.errors)
+    assert not (episode / "publish.json").exists()
+
+
+def test_optional_policy_waits_for_a_verified_youtube_destination_when_buffer_is_busy(episode, monkeypatch):
+    _optional_instagram_policy()
+    monkeypatch.setattr(auto, "EPISODES", episode.parent)
+    monkeypatch.delenv("BUFFER_INSTAGRAM_CHANNEL_ID")
+
+    def busy():
+        raise publish.BufferBusy(datetime.now(timezone.utc) + timedelta(minutes=15))
+
+    monkeypatch.setattr(publish, "channel", busy)
+    monkeypatch.setattr(publish, "posts", lambda **kwargs: pytest.fail("Buffer posts were queried"))
+    monkeypatch.setattr(publish, "_buffer", lambda *args: pytest.fail("a post was created"))
+    run = auto.Run("test")
+    auto.publish_waiting(run)
+    assert run.errors == []
+    assert not (episode / "publish.json").exists()
+
+
 @pytest.mark.parametrize("file,change", [
     ("ep063.mp4", b"another video"),
     ("short.yaml", b"id: ep063\ntitle: Rewritten\nbeats:\n  - text: The ship was lost.\n"),
     ("research.json", b"{}"),
     ("review.json", b"{}"),
 ])
-def test_changed_certified_input_blocks_buffer(episode, monkeypatch, file, change):
+@pytest.mark.parametrize("require_instagram", [True, False])
+def test_changed_certified_input_blocks_buffer(episode, monkeypatch, file, change, require_instagram):
+    if not require_instagram:
+        _optional_instagram_policy()
     (episode / file).write_bytes(change)
     monkeypatch.setattr(publish, "posts", lambda **kwargs: pytest.fail("Buffer was contacted"))
     with pytest.raises(RuntimeError):
@@ -194,7 +345,39 @@ def _youtube_record(episode, due):
     return record
 
 
-def test_live_youtube_post_retries_instagram_at_fresh_safe_slot(episode, monkeypatch):
+def test_optional_instagram_skips_a_new_reel_after_the_retry_window(episode, monkeypatch):
+    _optional_instagram_policy()
+    monkeypatch.setattr(auto, "EPISODES", episode.parent)
+    _youtube_record(episode, datetime.now(publish.AUDIENCE_TZ) - timedelta(days=8))
+    monkeypatch.setattr(publish, "posts", lambda **kwargs: [])
+    monkeypatch.setattr(publish, "_buffer", lambda *args: pytest.fail("an old Reel was created"))
+    run = auto.Run("test")
+    auto.publish_waiting(run)
+    assert run.errors == []
+    assert any("retry window elapsed" in stage["detail"] for stage in run.stages)
+    assert "instagram" not in json.loads((episode / "publish.json").read_text()).get("crossposts", {})
+
+
+def test_optional_instagram_can_adopt_an_old_accepted_reel(episode, monkeypatch):
+    _optional_instagram_policy()
+    monkeypatch.setattr(auto, "EPISODES", episode.parent)
+    original = datetime.now(publish.AUDIENCE_TZ) - timedelta(days=8)
+    _youtube_record(episode, original)
+    caption = publish.caption(ShortSpec.load(episode / "short.yaml"))
+    remote = {"id": "ig-accepted", "status": "sent", "text": caption, "dueAt": original.isoformat()}
+    monkeypatch.setattr(publish, "posts", lambda **kwargs: [remote] if kwargs.get("channel_id") == "ig" else [])
+    monkeypatch.setattr(publish, "post", lambda post_id: {**remote, "video": "https://cdn.example/ep063.mp4"})
+    monkeypatch.setattr(publish, "_buffer", lambda *args: pytest.fail("a duplicate Reel was created"))
+    run = auto.Run("test")
+    auto.publish_waiting(run)
+    assert run.errors == []
+    assert json.loads((episode / "publish.json").read_text())["crossposts"]["instagram"]["id"] == "ig-accepted"
+
+
+@pytest.mark.parametrize("require_instagram", [True, False])
+def test_live_youtube_post_retries_instagram_at_fresh_safe_slot(episode, monkeypatch, require_instagram):
+    if not require_instagram:
+        _optional_instagram_policy()
     monkeypatch.setattr(auto, "EPISODES", episode.parent)
     original = datetime.now(publish.AUDIENCE_TZ) - timedelta(hours=2)
     _youtube_record(episode, original)
