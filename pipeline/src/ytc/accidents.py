@@ -132,3 +132,14 @@ def selection_allowed(candidate_id: str) -> bool:
             value.get("enabled") is True and
             isinstance(value.get("approved_candidate_ids"), list) and
             candidate_id in value["approved_candidate_ids"])
+
+
+def held_candidate_id(topic: str) -> str | None:
+    """Recognize a checked lead even when its source pool is unavailable."""
+    try:
+        value = json.loads(SELECTION_POLICY.read_text(encoding="utf-8"))
+    except (OSError, ValueError):
+        return None
+    topics = value.get("held_topics") if isinstance(value, dict) else None
+    candidate_id = topics.get(topic) if isinstance(topics, dict) else None
+    return candidate_id if isinstance(candidate_id, str) else None
