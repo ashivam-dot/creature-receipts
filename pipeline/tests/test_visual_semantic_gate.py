@@ -27,6 +27,15 @@ def test_unavailable_or_incomplete_image_check_holds(monkeypatch):
         pick._verify(BEATS, chosen, "Schoolhouse Blizzard", "image check")
 
 
+def test_image_checker_preserves_resumable_quota_failure(monkeypatch):
+    def exhausted(*args, **kwargs):
+        raise pick.llm.OutOfQuota("free quota exhausted")
+
+    monkeypatch.setattr(pick.llm, "generate", exhausted)
+    with pytest.raises(pick.llm.OutOfQuota):
+        pick._verify(BEATS, {1: candidate("schoolhouse", 1.0)}, "Story", "image check")
+
+
 def test_modern_picture_is_flagged_for_old_event_but_not_present_day_remains():
     modern = {1: candidate("Nebraska State Capitol 2016", 0.0)}
     assert pick._period_problems(BEATS, modern) == {1: "modern-looking image for a historical scene"}

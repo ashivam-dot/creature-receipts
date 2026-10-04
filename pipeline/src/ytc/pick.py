@@ -293,6 +293,9 @@ def _verify(beats: list[dict], chosen: dict[int, dict], story: str, purpose: str
         parts += [f"\nBeat {n}: \"{beats[n - 1]['text']}\" (picture: {candidate['title']})", candidate["image"]]
     try:
         answer = llm.generate(parts, schema=VERIFY_SCHEMA, models=llm.LIGHT, purpose=purpose)
+    except (llm.OutOfQuota, llm.Overloaded):
+        # The studio records these as resumable after capacity returns.
+        raise
     except Exception as err:
         raise VisualCheckFailed(f"{purpose}: image verification unavailable ({type(err).__name__})") from err
     checks = answer.get("checks") if isinstance(answer, dict) else None
