@@ -14,7 +14,7 @@ The best repeatable angle is **what people knew at the time and what they did wi
 
 ## Documented accident lane
 
-Lesser-known transport, industrial, crowd and environmental accidents fit **Warnings Ignored** and **The Last Hours** when an inquiry or contemporary record establishes a concrete sequence. Select a case for its documented decision, warning, or mechanism and its usable event-specific visual record; do not rank tragedies or market an event as “hidden” or “the world's most dangerous” without evidence. The [sourced candidate slate](ACCIDENT-TOPIC-SLATE-2026-10-04.md) starts with Quebec Bridge, Oppau and Texas City. The [Quebec Bridge private pilot research](../reports/quebec-bridge-pilot-research-2026-10-04.md) has a claim-level script proposal; no accident pilot is approved or scheduled. Test two independently reviewed accident pilots after the first corrected release batch, then compare age-matched videos only when actual Shorts-feed exposure exists.
+Lesser-known transport, industrial, crowd and environmental accidents fit **Warnings Ignored** and **The Last Hours** when an inquiry or contemporary record establishes a concrete sequence. Select a case for its documented decision, warning, or mechanism and its usable event-specific visual record; do not rank tragedies or market an event as “hidden” or “the world's most dangerous” without evidence. The [sourced candidate slate](ACCIDENT-TOPIC-SLATE-2026-10-04.md) includes Texas City, Quebec Bridge, Oppau and Mann Gulch; Texas City is first in the bounded production trial because its checked source pair supports ten distinct claims. The [Quebec Bridge private pilot research](../reports/quebec-bridge-pilot-research-2026-10-04.md) has a claim-level script proposal; no accident pilot is approved or scheduled. Test two independently reviewed accident pilots after the first corrected release batch, then compare age-matched videos only when actual Shorts-feed exposure exists.
 
 ## Release contract
 
@@ -26,7 +26,7 @@ A candidate is ready to host and schedule only when all of these are true:
 4. A reviewer independent of the producing process signs the candidate or records the remaining holds. The hosted asset must be bound to the reviewed bytes. A superseded hosted draft can never enter Buffer.
 5. The owned YouTube and Buffer state is read back after any scheduling or privacy change. The cloud watchdog checks that the scheduled media, due time and channel still match the receipt.
 
-The channel-wide hold stays until there is a complete, reviewed release batch and the old hosted assets cannot be selected by the scheduler. Individual episode holds stay until their own repairs pass. An automated run may make drafts while either hold is active; it cannot treat a successful render as release approval.
+The channel-wide hold stays until there is a complete, reviewed release batch and the old hosted assets cannot be selected by the scheduler. Individual episode holds stay until their own repairs pass. Automatic draft production pauses while the channel hold and inactive release policy are both in force. An explicit bounded trial can make one private candidate for review; a successful render is not release approval.
 
 ## Format to test
 
@@ -46,4 +46,4 @@ The 100,000-subscriber target in 100 days is a stretch target. At an illustrativ
 
 ## Automation state
 
-Modal runs production in the cloud and GitHub Actions is a backup; GitHub's watchdog checks the service. This reduces dependence on the Mac, but it does not solve source judgment, independent QA, provider outages or Buffer quota limits. The scheduling hold and superseded-media check are required safeguards until those gaps are closed. `strategy/PLAN-100.md` tracks milestones and decision points.
+Modal runs the studio in the cloud and GitHub Actions is a backup; GitHub's watchdog checks the service. Automatic production is paused while release is inactive, so the current cloud schedule only syncs, checks, and collects. This reduces dependence on the Mac, but it does not solve source judgment, independent QA, provider outages or Buffer quota limits. The scheduling hold and superseded-media check are required safeguards until those gaps are closed. `strategy/PLAN-100.md` tracks milestones and decision points.
