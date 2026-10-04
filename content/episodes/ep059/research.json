@@ -1,0 +1,310 @@
+{
+  "viable": true,
+  "reason": "The sources provide 12 atomic claims verified across multiple sites, including details on the distress code, specific artifacts, and recent metalwork discoveries.",
+  "story": "In 1590, Governor John White returned to Roanoke Island to find his colony gone. The settlement was abandoned and fortified, with only the word 'CROATOAN' carved into a post. White had left 115 settlers behind three years earlier, including his granddaughter Virginia Dare, the first English child born in the New World. Crucially, the colonists had agreed on a secret signal: they were to carve a cross if they were leaving in distress. White found no such mark, suggesting a peaceful move. For centuries, the 'Lost Colony' was an American mystery, but modern archaeology on Hatteras Island (formerly Croatoan) has uncovered 16th-century English artifacts like a rapier hilt and a writing slate. Most tellingly, researchers discovered 'hammer scale'—waste from blacksmithing. Since local tribes lacked iron-forging technology, this industrial trash suggests the colonists did not vanish; they assimilated with their neighbors to survive.",
+  "angle": "The colonists had a secret distress code—a carved cross—that they never used, suggesting their disappearance was a planned move rather than a massacre.",
+  "claims": [
+    {
+      "claim": "John White returned to find the word 'CROATOAN' carved into a post at the abandoned settlement.",
+      "sources": [
+        "S1",
+        "S2"
+      ],
+      "evidence": [
+        {
+          "source": "S1",
+          "quote": "The word \"CROATOAN\" was found carved into the palisade"
+        },
+        {
+          "source": "S2",
+          "quote": "The only clue was the word \"Croatoan\" carved on a post"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim": "The 1587 colony consisted of approximately 115 men, women, and children.",
+      "sources": [
+        "S1",
+        "S2"
+      ],
+      "evidence": [
+        {
+          "source": "S1",
+          "quote": "Approximately 115 people agreed to join the colony"
+        },
+        {
+          "source": "S2",
+          "quote": "what happened to 115 men, women, and children"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim": "The colonists agreed to leave a carved cross if they were forced to depart in distress.",
+      "sources": [
+        "S1",
+        "S3"
+      ],
+      "evidence": [
+        {
+          "source": "S1",
+          "quote": "colonists would leave a \"secret token\" indicating their destination, or a cross pattée as a duress code"
+        },
+        {
+          "source": "S3",
+          "quote": "to write where they were going if they left, and to put a mark over the inscription if they'd left in a hurry"
+        }
+      ],
+      "confidence": "medium"
+    },
+    {
+      "claim": "No distress mark was found at the site, suggesting the colonists left peacefully.",
+      "sources": [
+        "S1",
+        "S3"
+      ],
+      "evidence": [
+        {
+          "source": "S1",
+          "quote": "White was certain these two inscriptions meant that the colonists had peacefully relocated"
+        },
+        {
+          "source": "S3",
+          "quote": "the absence of a mark means there had been no hurry"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim": "White's return to the colony was delayed for three years by the war with Spain.",
+      "sources": [
+        "S1",
+        "S2"
+      ],
+      "evidence": [
+        {
+          "source": "S1",
+          "quote": "The Anglo-Spanish War delayed his return to Roanoke until 1590"
+        },
+        {
+          "source": "S2",
+          "quote": "his return was delayed by the outbreak of war with Spain"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim": "Archaeologists discovered the hilt of a 16th-century English rapier on Hatteras Island.",
+      "sources": [
+        "S4",
+        "S6"
+      ],
+      "evidence": [
+        {
+          "source": "S4",
+          "quote": "part of the hilt of a rapier, a light sword of a type used in England in the late 16th century"
+        },
+        {
+          "source": "S6",
+          "quote": "artifacts found on Hatteras, including a rapier hilt"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim": "A fragment of a slate writing tablet with a letter 'M' was found at the Hatteras site.",
+      "sources": [
+        "S4",
+        "S6"
+      ],
+      "evidence": [
+        {
+          "source": "S4",
+          "quote": "small piece of slate that was used as a writing tablet, along with a lead pencil. A tiny letter \"M\" can just be made out"
+        },
+        {
+          "source": "S6",
+          "quote": "part of a slate writing tablet"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim": "Piles of 'hammer scale' iron flakes suggest Europeans were forging metal on Hatteras Island.",
+      "sources": [
+        "S3",
+        "S7"
+      ],
+      "evidence": [
+        {
+          "source": "S3",
+          "quote": "it would be great if the hammer scale could be dated"
+        },
+        {
+          "source": "S7",
+          "quote": "the real breakthrough was the hammer scale mixed in with 16th-century artifacts"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim": "Native American tribes in the region did not possess iron forging technology in the 16th century.",
+      "sources": [
+        "S4",
+        "S7"
+      ],
+      "evidence": [
+        {
+          "source": "S4",
+          "quote": "Native Americans lacked this technology"
+        },
+        {
+          "source": "S7",
+          "quote": "Indigenous people are not known to have used iron forging technology"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim": "A hidden fort symbol was discovered under a paper patch on a map drawn by John White.",
+      "sources": [
+        "S2",
+        "S4"
+      ],
+      "evidence": [
+        {
+          "source": "S2",
+          "quote": "discovery of a patch concealing the image of a fort on a map painted by John White"
+        },
+        {
+          "source": "S4",
+          "quote": "researchers discovered a tiny, four-pointed star hidden under a patch layered atop the map"
+        }
+      ],
+      "confidence": "high"
+    }
+  ],
+  "disputed": [
+    "The significance of the signet ring found on Hatteras: one account suggests it belonged to a Roanoke colonist, while another claims it was a mass-produced brass trade item from a later century.",
+    "Whether the colonists stayed together: some researchers believe they split between Hatteras and Site X, while others argue the evidence for European residence is still inconclusive."
+  ],
+  "visuals": [
+    {
+      "subject": "John White's Map of Virginia",
+      "queries": [
+        "John White La Virginea Pars map",
+        "Virginia 1585 map John White"
+      ]
+    },
+    {
+      "subject": "Sir Walter Raleigh",
+      "queries": [
+        "Sir Walter Raleigh portrait",
+        "Sir Walter Raleigh Hilliard miniature"
+      ]
+    },
+    {
+      "subject": "Roanoke Colony Palisade",
+      "queries": [
+        "Roanoke Colony reconstruction Fort Raleigh",
+        "Roanoke island fort earthwork"
+      ]
+    },
+    {
+      "subject": "Virginia Dare Memorial",
+      "queries": [
+        "Virginia Dare monument Fort Raleigh",
+        "Virginia Dare 1937 stamp"
+      ]
+    },
+    {
+      "subject": "Queen Elizabeth I",
+      "queries": [
+        "Queen Elizabeth I Armada Portrait",
+        "Queen Elizabeth I 1580s portrait"
+      ]
+    },
+    {
+      "subject": "Archaeological Signet Ring",
+      "queries": [
+        "Kendall ring prancing lion",
+        "Elizabethan signet ring Hatteras"
+      ]
+    },
+    {
+      "subject": "16th Century Rapier",
+      "queries": [
+        "16th century rapier hilt",
+        "Elizabethan sword hilt archaeology"
+      ]
+    },
+    {
+      "subject": "John White Watercolor",
+      "queries": [
+        "John White Secotan village watercolor",
+        "John White Native American drawing"
+      ]
+    },
+    {
+      "subject": "Hatteras Island",
+      "queries": [
+        "Hatteras Island Cape Creek site",
+        "Outer Banks North Carolina map 16th century"
+      ]
+    },
+    {
+      "subject": "Croatoan Post Carving",
+      "queries": [
+        "Croatoan carved post illustration",
+        "John White finding Croatoan carving"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "label": "S1",
+      "url": "https://en.wikipedia.org/wiki/Roanoke_Colony",
+      "title": "Roanoke Colony",
+      "site": "wikipedia.org"
+    },
+    {
+      "label": "S2",
+      "url": "http://www.smithsonianmag.com/history/mystery-roanoke-endures-yet-another-cruel-twist-180962837/",
+      "title": "The Mystery of Roanoke Endures Yet Another Cruel Twist",
+      "site": "smithsonianmag.com"
+    },
+    {
+      "label": "S3",
+      "url": "https://www.history.com/articles/lost-colony-roanoke-assimilation",
+      "title": "Did the Lost Colony of Roanoke Disappear or Just Assimilate? | HISTORY",
+      "site": "history.com"
+    },
+    {
+      "label": "S4",
+      "url": "https://www.nationalgeographic.com/culture/article/150807-lost-colony-roanoke-hatteras-outer-banks-archaeology",
+      "title": "We Finally Have Clues to How the Lost Roanoke Colony Vanished",
+      "site": "nationalgeographic.com"
+    },
+    {
+      "label": "S5",
+      "url": "https://www.nps.gov/articles/foracommemoration.htm",
+      "title": "Commemorating Fort Raleigh (U.S. National Park Service)",
+      "site": "nps.gov"
+    },
+    {
+      "label": "S6",
+      "url": "https://web.archive.org/web/20200905233346/https://www.nytimes.com/2020/09/01/us/Roanoke-lost-colony.html",
+      "title": "Roanoke’s ‘Lost Colony’ Was Never Lost, New Book Says",
+      "site": "nytimes.com"
+    },
+    {
+      "label": "S7",
+      "url": "https://www.livescience.com/archaeology/lost-colony-of-roanoke-may-have-assimilated-into-indigenous-society-archaeologist-claims-but-not-everyone-is-convinced",
+      "title": "'Lost Colony' of Roanoke may have assimilated into Indigenous society, archaeologist claims — but not everyone is convinced",
+      "site": "livescience.com"
+    }
+  ],
+  "topic": "Roanoke Colony (1590): the only clue the vanished colonists left was the word \"CROATOAN\" carved into a post",
+  "series": "Lost Cities"
+}

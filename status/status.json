@@ -1,34 +1,34 @@
 {
-  "updated_at": "2026-10-04T08:05:39+05:30",
+  "updated_at": "2026-10-04T09:56:51+05:30",
   "day": 3,
   "result": "ok",
   "run": {
     "host": "github-actions",
-    "id": "37171503019",
-    "number": "21",
-    "trigger": "schedule",
-    "started_at": "2026-10-04T08:05:29+05:30",
-    "started_at_utc": "2026-10-04T02:35:29+00:00",
-    "seconds": 9
+    "id": "37176987910",
+    "number": "22",
+    "trigger": "workflow_dispatch",
+    "started_at": "2026-10-04T09:56:40+05:30",
+    "started_at_utc": "2026-10-04T04:26:40+00:00",
+    "seconds": 10
   },
   "stages": [
     {
       "name": "sync",
       "ok": true,
       "detail": "5 posts",
-      "seconds": 0.4
+      "seconds": 0.5
     },
     {
       "name": "playlists",
       "ok": true,
       "detail": "nothing new",
-      "seconds": 0.7
+      "seconds": 0.6
     },
     {
       "name": "languages",
       "ok": true,
       "detail": "every live Short is in English",
-      "seconds": 0.2
+      "seconds": 0.1
     },
     {
       "name": "on youtube",
@@ -45,76 +45,28 @@
     {
       "name": "collect",
       "ok": true,
-      "detail": "nothing in the cloud",
-      "seconds": 0.8
-    },
-    {
-      "name": "buffer channel",
-      "ok": true,
-      "detail": "connected",
-      "seconds": 0.1
-    },
-    {
-      "name": "publish",
-      "ok": true,
-      "detail": "",
-      "seconds": 0.0
-    },
-    {
-      "name": "deploy",
-      "ok": true,
-      "detail": "",
-      "seconds": 1.3
-    },
-    {
-      "name": "start ep059",
-      "ok": true,
-      "detail": "Roanoke Colony (1590): the only clue the vanished colonists left was the word \"CROATOAN\" carved into a post",
-      "seconds": 0.9
-    },
-    {
-      "name": "start ep060",
-      "ok": true,
-      "detail": "Schoolhouse Blizzard (1888): a warm morning lured children to school without coats before a wall of ice struck at recess",
-      "seconds": 0.5
-    },
-    {
-      "name": "start ep061",
-      "ok": true,
-      "detail": "Fall of Constantinople (1453): by one account, the city fell through a small gate someone left open",
-      "seconds": 0.5
-    },
-    {
-      "name": "start ep062",
-      "ok": true,
-      "detail": "Battle of Myeongnyang (1597): Admiral Yi defeated 133 Japanese warships with only 13 vessels by using a whirlpool-filled strait",
-      "seconds": 0.5
-    },
-    {
-      "name": "publish",
-      "ok": true,
-      "detail": "",
-      "seconds": 0.0
+      "detail": "ep059 unfinished (OutOfQuota: no model in ('gemini-3.8-flash', 'gemini-3.7-flash', 'gemini-3.6-flash', 'gemini-3.5-flash', 'gemini-3-flash-preview', 'gemini-flash-latest', 'ovh:Qwen3.5-397B-A17B') has free quota left today); ep060 unfinished (OutOfQuota: no model in ('gemini-3.8-flash', 'gemini-3.7-flash', 'gemini-3.6-flash', 'gemini-3.5-flash', 'gemini-3-flash-preview', 'gemini-flash-latest', 'ovh:Qwen3.5-397B-A17B') has free quota left today); ep061 unfinished (OutOfQuota: no model in ('gemini-3.8-flash', 'gemini-3.7-flash', 'gemini-3.6-flash', 'gemini-3.5-flash', 'gemini-3-flash-preview', '",
+      "seconds": 8.2
     }
   ],
   "errors": [],
   "owner_action": [],
   "notes": [
-    "new scheduling on editorial hold; production continues",
-    "new scheduling on editorial hold; production continues"
+    "ep059 stopped on Gemini's free quota; it resumes in a later run",
+    "ep060 stopped on Gemini's free quota; it resumes in a later run",
+    "ep061 stopped on Gemini's free quota; it resumes in a later run"
   ],
   "inventory": {
     "total": 3,
     "in_buffer": 0,
     "waiting": 3,
     "target": 14,
-    "making": [],
-    "remote": [
+    "making": [
       "ep059",
       "ep060",
-      "ep061",
-      "ep062"
-    ]
+      "ep061"
+    ],
+    "remote": []
   },
   "queue": [],
   "waiting": [
@@ -137,78 +89,69 @@
       "score": 24
     }
   ],
-  "made": [],
-  "spawned": [
+  "made": [
     {
       "id": "ep059",
+      "outcome": "unfinished",
       "topic": "Roanoke Colony (1590): the only clue the vanished colonists left was the word \"CROATOAN\" carved into a post",
-      "call_id": "fc-01M42C8MCDH8M4BY8RXT3QMKWJ"
+      "reason": "OutOfQuota: no model in ('gemini-3.8-flash', 'gemini-3.7-flash', 'gemini-3.6-flash', 'gemini-3.5-flash', 'gemini-3-flash-preview', 'gemini-flash-latest', 'ovh:Qwen3.5-397B-A17B') has free quota left today",
+      "quota": true,
+      "overloaded": false
     },
     {
       "id": "ep060",
+      "outcome": "unfinished",
       "topic": "Schoolhouse Blizzard (1888): a warm morning lured children to school without coats before a wall of ice struck at recess",
-      "call_id": "fc-01M42C8MWAKQFWTTP3C2HY9ZGM"
+      "reason": "OutOfQuota: no model in ('gemini-3.8-flash', 'gemini-3.7-flash', 'gemini-3.6-flash', 'gemini-3.5-flash', 'gemini-3-flash-preview', 'gemini-flash-latest', 'ovh:Qwen3.5-397B-A17B') has free quota left today",
+      "quota": true,
+      "overloaded": false
     },
     {
       "id": "ep061",
+      "outcome": "unfinished",
       "topic": "Fall of Constantinople (1453): by one account, the city fell through a small gate someone left open",
-      "call_id": "fc-01M42C8NB771K77TAXW824C7Z9"
+      "reason": "OutOfQuota: no model in ('gemini-3.8-flash', 'gemini-3.7-flash', 'gemini-3.6-flash', 'gemini-3.5-flash', 'gemini-3-flash-preview', 'gemini-flash-latest', 'ovh:Qwen3.5-397B-A17B') has free quota left today",
+      "quota": true,
+      "overloaded": false
     },
     {
       "id": "ep062",
+      "outcome": "rejected",
       "topic": "Battle of Myeongnyang (1597): Admiral Yi defeated 133 Japanese warships with only 13 vessels by using a whirlpool-filled strait",
-      "call_id": "fc-01M42C8NV75CHA2XB0WCF6CYTK"
+      "reason": "research: only 7 claims have verified quotes from two different sites"
     }
   ],
-  "in_cloud": [
-    {
-      "id": "ep059",
-      "topic": "Roanoke Colony (1590): the only clue the vanished colonists left was the word \"CROATOAN\" carved into a post",
-      "spawned_at": "2026-10-04T08:05:37+05:30"
-    },
-    {
-      "id": "ep060",
-      "topic": "Schoolhouse Blizzard (1888): a warm morning lured children to school without coats before a wall of ice struck at recess",
-      "spawned_at": "2026-10-04T08:05:37+05:30"
-    },
-    {
-      "id": "ep061",
-      "topic": "Fall of Constantinople (1453): by one account, the city fell through a small gate someone left open",
-      "spawned_at": "2026-10-04T08:05:38+05:30"
-    },
-    {
-      "id": "ep062",
-      "topic": "Battle of Myeongnyang (1597): Admiral Yi defeated 133 Japanese warships with only 13 vessels by using a whirlpool-filled strait",
-      "spawned_at": "2026-10-04T08:05:38+05:30"
-    }
-  ],
+  "spawned": [],
+  "in_cloud": [],
   "published": [],
   "live": 1,
   "failed_posts": [],
   "not_live": [],
   "llm": {
-    "calls": 0,
-    "by_model": {},
+    "calls": 14,
+    "by_model": {
+      "gemini-3-flash-preview": 2,
+      "gemini-3.5-flash-lite": 6,
+      "gemini-3.5-flash": 3,
+      "gemini-3.1-flash-lite": 1,
+      "gemini-flash-lite-latest": 1,
+      "gemini-3.6-flash": 1
+    },
     "out_of_quota": []
   },
   "renders": {
-    "modal": 0,
+    "modal": 3,
     "runner": 0
   },
   "daily_done": "2026-10-03",
-  "minutes_this_month": 6.156069356616666,
+  "minutes_this_month": 8.174797746366666,
   "minutes_budget": null,
   "modal_cost": {
-    "metered": 4.98,
+    "metered": 5.09,
     "billed": 0.0
   },
   "modal_credit": 30.0,
-  "capacity": {
-    "cloud": 191,
-    "runner": 6,
-    "runner_minutes": 120,
-    "modal_credit_left": 23.02
-  },
+  "capacity": null,
   "made_here": 0,
   "open_topics": 117,
   "parked_topics": 16

@@ -1,0 +1,242 @@
+{
+  "viable": false,
+  "reason": "only 7 claims have verified quotes from two different sites",
+  "story": "In October 1597, Admiral Yi Sun-sin faced an impossible crisis during Japan's invasion of Korea. After his rival squandered the navy at Chilcheollyang, Yi was left with only 13 warships against a Japanese armada of over 130 vessels. King Seonjo urged Yi to abandon the navy, but Yi famously insisted he still had twelve ships and would fight. Choosing the narrow Myeongnyang Strait, Yi leveraged treacherous, reversing 10-knot tidal currents as a force multiplier. When the Japanese vanguard entered the narrow chokepoint, Yi's flagship held the line alone before the rest of his fleet joined. As the tide violently shifted, Japanese ships collided with each other while exposed to Korean cannon fire. Over 30 Japanese vessels were destroyed and commander Kurushima Michifusa was killed, forcing a retreat and saving Korea's western coast.",
+  "angle": "Admiral Yi Sun-sin defeated a 133-ship Japanese armada with just 13 Korean warships by trapping them in a narrow strait where reversing tidal currents caused the enemy ships to crash into each other.",
+  "claims": [
+    {
+      "claim": "Admiral Yi Sun-sin commanded a Joseon fleet of only 13 warships.",
+      "sources": [
+        "S1",
+        "S2"
+      ],
+      "evidence": [
+        {
+          "source": "S1",
+          "quote": "With only 13 ships remaining"
+        },
+        {
+          "source": "S2",
+          "quote": "fleet of just 13 warships"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim": "Prior to his reinstatement, Admiral Yi was tortured and demoted to a common soldier.",
+      "sources": [
+        "S1",
+        "S2"
+      ],
+      "evidence": [
+        {
+          "source": "S1",
+          "quote": "tortured and demoted to the rank of a common soldier"
+        },
+        {
+          "source": "S2",
+          "quote": "demoted to the rank of common soldier."
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim": "King Seonjo ordered the navy to be disbanded so sailors could join ground forces.",
+      "sources": [
+        "S1",
+        "S6"
+      ],
+      "evidence": [
+        {
+          "source": "S1",
+          "quote": "disband the navy and have its men join the ground forces"
+        },
+        {
+          "source": "S6",
+          "quote": "abolish the navy and join the ground forces"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim": "Admiral Yi insisted to the King that he still had twelve ships remaining.",
+      "sources": [
+        "S1",
+        "S2"
+      ],
+      "evidence": [
+        {
+          "source": "S1",
+          "quote": "this vassal still has twelve battleships"
+        },
+        {
+          "source": "S2",
+          "quote": "I still have twelve ships."
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim": "At least 31 Japanese warships were sunk or destroyed in the battle.",
+      "sources": [
+        "S1",
+        "S2"
+      ],
+      "evidence": [
+        {
+          "source": "S1",
+          "quote": "31 Japanese warships were sunk or crippled"
+        },
+        {
+          "source": "S2",
+          "quote": "at least 31 warships confirmed sunk"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim": "Japanese commander Tōdō Takatora was wounded during the fighting.",
+      "sources": [
+        "S1",
+        "S5"
+      ],
+      "evidence": [
+        {
+          "source": "S1",
+          "quote": "Tōdō Takatora, one of the commanders of the Japanese navy, was wounded"
+        },
+        {
+          "source": "S5",
+          "quote": "wounds to TÅdÅ Takatora himself"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim": "Tidal currents in the Myeongnyang Strait reverse direction in three-hour intervals.",
+      "sources": [
+        "S1",
+        "S3"
+      ],
+      "evidence": [
+        {
+          "source": "S1",
+          "quote": "in three-hour intervals."
+        },
+        {
+          "source": "S3",
+          "quote": "roughly every three hours"
+        }
+      ],
+      "confidence": "high"
+    }
+  ],
+  "disputed": [
+    "Iron ropes or chains stretched across the strait: S6 and S7 cite iron ropes/chains as historical fact, whereas S1 notes that Yi's war diary makes no mention of iron ropes. Scripts should leave this out or frame it as an unconfirmed legend.",
+    "Total Japanese fleet size: Korean combat counts list 120 to 133 ships, while total Japanese fleet sizes including support ships are cited as 330 (S1, S7) or over 300 (S2). Scripts should specify 133 combat warships to avoid confusion."
+  ],
+  "visuals": [
+    {
+      "subject": "Admiral Yi Sun-sin",
+      "queries": [
+        "Yi Sun-sin statue Gwanghwamun",
+        "Admiral Yi Sun-sin portrait"
+      ]
+    },
+    {
+      "subject": "Panokseon Korean Warship",
+      "queries": [
+        "Panokseon model",
+        "Panokseon warship drawing"
+      ]
+    },
+    {
+      "subject": "Myeongnyang Strait Uldolmok",
+      "queries": [
+        "Myeongnyang Strait",
+        "Uldolmok Strait bridge"
+      ]
+    },
+    {
+      "subject": "Japanese Sekibune Warship",
+      "queries": [
+        "Sekibune model",
+        "Sekibune Japanese ship"
+      ]
+    },
+    {
+      "subject": "Jindo Island",
+      "queries": [
+        "Jindo Island Korea map",
+        "Jindo Island landscape"
+      ]
+    },
+    {
+      "subject": "King Seonjo of Joseon",
+      "queries": [
+        "King Seonjo Joseon portrait",
+        "Joseon dynasty king painting"
+      ]
+    },
+    {
+      "subject": "Imjin War Naval Battle Artwork",
+      "queries": [
+        "Imjin War folding screen painting",
+        "Battle of Myeongnyang painting"
+      ]
+    },
+    {
+      "subject": "Geobukseon Turtle Ship",
+      "queries": [
+        "Geobukseon turtle ship model",
+        "Turtle ship replica Yeosu"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "label": "S1",
+      "url": "https://en.wikipedia.org/wiki/Battle_of_Myeongnyang",
+      "title": "Battle of Myeongnyang",
+      "site": "wikipedia.org"
+    },
+    {
+      "label": "S2",
+      "url": "https://coreaverse.com/2026/06/battle-of-myeongnyang-yi-sun-sins-miracle-at-sea.html",
+      "title": "Battle of Myeongnyang: Yi Sun-sin's Miracle at Sea - History of Korea",
+      "site": "coreaverse.com"
+    },
+    {
+      "label": "S3",
+      "url": "https://koreaatlas.com/battle-of-myeongnyang-yi-sun-sin-13-ships/",
+      "title": "Battle of Myeongnyang: 7 Facts About Yi Sun-sin's Miracle",
+      "site": "koreaatlas.com"
+    },
+    {
+      "label": "S4",
+      "url": "https://historysnacks.io/event/WMEhgos8/admiral-yi-sun-sin-defeats-the-japanese-in-the-battle-of-myeongnyang/",
+      "title": "Myeongnyang, 1597: Yi Sun-sin Beats 130 Ships",
+      "site": "historysnacks.io"
+    },
+    {
+      "label": "S5",
+      "url": "https://grokipedia.com/page/Battle_of_Myeongnyang",
+      "title": "Battle of Myeongnyang â Grokipedia",
+      "site": "grokipedia.com"
+    },
+    {
+      "label": "S6",
+      "url": "https://en-academic.com/dic.nsf/enwiki/846037",
+      "title": "Battle of Myeongnyang",
+      "site": "en-academic.com"
+    },
+    {
+      "label": "S7",
+      "url": "https://web.archive.org/web/20110928230153/http://www.koreanhero.net/en/TheMajorNavalBattles.htm",
+      "title": "Yi Sun-shin Home",
+      "site": "koreanhero.net"
+    }
+  ],
+  "topic": "Battle of Myeongnyang (1597): Admiral Yi defeated 133 Japanese warships with only 13 vessels by using a whirlpool-filled strait",
+  "series": "The Last Hours"
+}

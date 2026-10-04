@@ -73,7 +73,7 @@ event is told for its gore. Space topics belong to the sister channel Universe R
 - Great Blizzard of 1888 (1888): commuters stepped into mild spring weather before a sudden whiteout froze New York City in its tracks
 - Great Siege of Malta (1565): a handful of knights held off an invading armada against impossible odds, surviving until relief finally arrived
 - Schoolhouse Blizzard (1888): a warm morning lured children to school without coats before a wall of ice struck at recess — making (ep060)
-- Battle of Myeongnyang (1597): Admiral Yi defeated 133 Japanese warships with only 13 vessels by using a whirlpool-filled strait — making (ep062)
+- Battle of Myeongnyang (1597): Admiral Yi defeated 133 Japanese warships with only 13 vessels by using a whirlpool-filled strait — dropped (ep062)
 - Quintinshill rail disaster (1915): two signalmen changing shifts late forgot a train on the main line, causing the UK's deadliest rail crash
 - Siege of Sidney Street (1911): Winston Churchill personally oversaw the gunfight and ordered firefighters not to save the burning building
 - Gresford disaster (1934): hundreds of miners died because they had swapped shifts to see a football match, putting extra men in the pit

@@ -1,0 +1,182 @@
+id: ep061
+title: Why Did the Walls of Constantinople Finally Fail? 🤯
+series: Fallen Empires
+description: The Fall of Constantinople in 1453 marked the end of the Byzantine Empire after an overwhelming siege. Discover
+  how Sultan Mehmed II used warships and cannons to breach the legendary walls.
+sources:
+- https://en.wikipedia.org/wiki/Fall_of_Constantinople
+- https://www.worldhistory.org/Theodosian_Walls/
+- https://hispanatolia.com/en/the-mystery-of-the-kerkoporta-did-an-open-gate-cause-the-fall-of-constantinople/
+- https://web.archive.org/web/20200819143934/https://www.britannica.com/event/Fall-of-Constantinople-1453
+- https://web.archive.org/web/20190724153239/http://www.washingtonpost.com/wp-srv/style/longterm/books/chap1/constantinople.htm
+hashtags:
+- '#history'
+- '#constantinople'
+- '#byzantine'
+tags:
+- '1453'
+- Mehmed II
+- Constantine XI
+- Istanbul
+- Siege
+- Middle Ages
+- Empire
+voice:
+  engine: kokoro
+  voice: am_fenrir
+  speed: 1.15
+beats:
+- text: For 800 years, Constantinople’s massive walls remained impenetrable.
+  emphasis:
+  - massive walls
+  - impenetrable
+  visual:
+    source: url
+    url: https://thumb.wikimedia.org/wikipedia/commons/thumb/5/51/Walls_of_Constantinople_1.jpg/960px-Walls_of_Constantinople_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
+    credit:
+      source: Wikimedia Commons
+      title: Walls of Constantinople 1.jpg
+      credit: Unknown author
+      license: Public domain
+      url: https://commons.wikimedia.org/wiki/File:Walls_of_Constantinople_1.jpg
+    fallbacks:
+    - card
+    - color
+    motion: pan_right
+    focus_x: 0.5
+    focus_y: 0.5
+    card:
+      kind: fact
+      big: 800 YEARS
+      small: OF PROTECTION
+- text: By 1453, only 7,000 soldiers defended the aging capital.
+  emphasis:
+  - 7,000 soldiers
+  visual:
+    source: url
+    url: https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b6/Konstantinos_XI_Palaiologos_fresco_%28less_edited%29.jpg/960px-Konstantinos_XI_Palaiologos_fresco_%28less_edited%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
+    credit:
+      source: Wikimedia Commons
+      title: Konstantinos XI Palaiologos fresco (less edited).jpg
+      credit: ILoveHirasawaYui
+      license: CC0
+      url: https://commons.wikimedia.org/wiki/File:Konstantinos_XI_Palaiologos_fresco_(less_edited).jpg
+    fallbacks:
+    - card
+    - color
+    motion: zoom_in
+    focus_x: 0.5
+    focus_y: 0.35
+    box:
+    - 0.35
+    - 0.1
+    - 0.65
+    - 0.6
+    card:
+      kind: dateline
+      big: '1453'
+      small: CONSTANTINOPLE
+- text: Sultan Mehmed II massed 80,000 men and giant cannons.
+  emphasis:
+  - 80,000 men
+  - giant cannons
+  sfx: whoosh
+  visual:
+    source: url
+    url: https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6e/Bellini%2C_Gentile_-_Sultan_Mehmet_II.jpg/1920px-Bellini%2C_Gentile_-_Sultan_Mehmet_II.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
+    credit:
+      source: Wikimedia Commons
+      title: Bellini, Gentile - Sultan Mehmet II.jpg
+      credit: Gentile Bellini
+      license: Public domain
+      url: https://commons.wikimedia.org/wiki/File:Bellini,_Gentile_-_Sultan_Mehmet_II.jpg
+    fallbacks:
+    - card
+    - color
+    motion: pan_down
+    focus_x: 0.5
+    focus_y: 0.3
+    box:
+    - 0.35
+    - 0.05
+    - 0.65
+    - 0.6
+    card:
+      kind: fact
+      big: 80,000
+      small: ATTACKERS
+- text: He even dragged warships overland to bypass the harbor chain.
+  emphasis:
+  - warships overland
+  visual:
+    source: url
+    url: https://upload.wikimedia.org/wikipedia/commons/7/70/Kusatma_Zonaro.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    credit:
+      source: Wikimedia Commons
+      title: Kusatma Zonaro.jpg
+      credit: Fausto Zonaro
+      license: Public domain
+      url: https://commons.wikimedia.org/wiki/File:Kusatma_Zonaro.jpg
+    fallbacks:
+    - color
+    motion: pan_left
+    focus_x: 0.6
+    focus_y: 0.5
+    box:
+    - 0.45
+    - 0.3
+    - 0.75
+    - 0.45
+- text: On May 29, the final assault breached the battered defenses.
+  emphasis:
+  - final assault
+  sfx: riser
+  visual:
+    source: url
+    url: https://upload.wikimedia.org/wikipedia/commons/1/1c/Theophilos_Hatzimihail_Constantine_Palaeologus_1914.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    credit:
+      source: Wikimedia Commons
+      title: Theophilos Hatzimihail Constantine Palaeologus 1914.jpg
+      credit: Theophilos Chatzimichael
+      license: Public domain
+      url: https://commons.wikimedia.org/wiki/File:Theophilos_Hatzimihail_Constantine_Palaeologus_1914.jpg
+    fallbacks:
+    - card
+    - color
+    motion: zoom_out
+    focus_x: 0.5
+    focus_y: 0.5
+    card:
+      kind: dateline
+      big: MAY 29
+      small: THE FALL
+- text: One account blames an unlocked gate, but force won.
+  emphasis:
+  - unlocked gate
+  sfx: pop
+  pause_after: 0.4
+  visual:
+    source: url
+    url: https://thumb.wikimedia.org/wikipedia/commons/thumb/8/80/Caduta_di_Costantinopoli.jpg/960px-Caduta_di_Costantinopoli.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
+    credit:
+      source: Wikimedia Commons
+      title: Caduta di Costantinopoli.jpg
+      credit: Domenico Robusti
+      license: Public domain
+      url: https://commons.wikimedia.org/wiki/File:Caduta_di_Costantinopoli.jpg
+    fallbacks:
+    - color
+    motion: zoom_in
+    focus_x: 0.5
+    focus_y: 0.5
+- text: Constantine XI died fighting as those walls met their match.
+  emphasis:
+  - died fighting
+  sfx: whoosh
+  visual:
+    reuse: 1
+    motion: zoom_out
+    focus_x: 0.5
+    focus_y: 0.5
+depth_motion: true
+hook_text: 800 YEARS UNBROKEN
