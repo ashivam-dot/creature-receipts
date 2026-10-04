@@ -222,7 +222,7 @@ event is told for its gore. Space topics belong to the sister channel Universe R
 - Siege of Svetigrad (1448): an impregnable mountain fortress fell after defenders refused to drink from their only water well because a dead dog was thrown inside
 - Norwalk rail accident (1853): a train carrying 48 people plunged into a river after the engineer missed a red signal while the bridge was open
 - Siege of Sahyun Castle (1188): the 'impenetrable' fortress fell in just two days because the defenders left a single narrow stone bridge uncut
-- Quebec Bridge collapse (1907): engineers measured a lower-chord bend before it fell; the inquiry found defective design — parked (ep065)
+- Quebec Bridge collapse (1907): engineers measured a lower-chord bend before it fell; the inquiry found defective design — done (ep065)
 - Rockslide of Elm (1881): villagers ignored cracks in the mountain and gathered on their balconies to watch the slate collapse, only for the landslide to cross the valley and bury them
 - Battle of Singara (344): Roman soldiers ignored their generals' orders to stay alert, celebrating their victory inside the enemy camp until they were slaughtered in their sleep
 

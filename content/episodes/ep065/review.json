@@ -1,0 +1,54 @@
+{
+  "rounds": [
+    {
+      "at": "2026-10-04T17:16:14+05:30",
+      "check": {
+        "duration": 29.77,
+        "words": 72,
+        "integrated_lufs": -14.4,
+        "true_peak_dbfs": -1.8,
+        "warnings": [],
+        "speech_differences": [],
+        "speech_error": null,
+        "sources": [
+          "Wikimedia Commons",
+          "Royal Commission report / authored graphic",
+          "Wikimedia Commons / British Library",
+          "Wikimedia Commons",
+          "Wikimedia Commons / BAnQ",
+          "Royal Commission report, Appendix 19 figure 20 / Wikimedia Commons",
+          "Wikimedia Commons"
+        ],
+        "speech_verification": {
+          "heard": "Staff measured a growing bend, two days later the Quebec Bridge fell. On August 27, steel member 9L bent farther. Some called it critical, the superintendent saw no danger. On August 29, the unfinished bridge collapsed. The commission found the lower members were defectively designed. It did not believe the fall preventable after August 27. 75 workers died, better judgment the commission said might have saved lives, the bend had been measured.",
+          "model": "small.en",
+          "media_sha256": "a9db4b64870336122c7b00a7c6a0a584d503bb4d7636bc4175569997d3975bb1",
+          "primary_differences": [],
+          "differences": []
+        }
+      },
+      "media_sha256": "a9db4b64870336122c7b00a7c6a0a584d503bb4d7636bc4175569997d3975bb1",
+      "scores": {
+        "hook": 4,
+        "clarity": 4,
+        "payoff": 4,
+        "visuals": 4,
+        "loop": 4
+      },
+      "notes": {
+        "hook": "Strong statement immediately establishes the disaster and human error.",
+        "clarity": "The sequence of events and engineering failure are easy to follow.",
+        "payoff": "The tragedy of preventable death despite inevitable structural failure lands well.",
+        "visuals": "Effective mix of archival collapse photos and a clear structural diagram.",
+        "loop": "The final line seamlessly loops back into the opening premise."
+      },
+      "frames": [],
+      "speech": [],
+      "rewrite": [],
+      "better_than_last": "Integrates a clear technical diagram to make structural failure immediately understandable compared to pure photo sequences.",
+      "judge": "gemini-3.7-flash",
+      "passed": true
+    }
+  ],
+  "best_round": 1
+}
