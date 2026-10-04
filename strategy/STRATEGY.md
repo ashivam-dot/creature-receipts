@@ -1,16 +1,20 @@
 # History's Last Hours: editorial and growth strategy
 
-Updated 2026-10-03 after the live-channel audit. This is the current plan for `@HistorysLastHours`; older animal-channel assumptions in the first launch plan no longer apply. Episode writing rules remain in `strategy/SCRIPT-RULES.md`.
+Updated 2026-10-04 after the first corrected public pilot and the accident-lane research. This is the current plan for `@HistorysLastHours`; older animal-channel assumptions in the first launch plan no longer apply. Episode writing rules remain in `strategy/SCRIPT-RULES.md`.
 
 ## Current evidence
 
-The owned YouTube API showed **zero public Shorts, 10 channel views and zero subscribers** at the 2026-10-03 22:27 IST read. All six uploaded videos are private. Winton was withdrawn after its public narration stated an unverified survival count for the cancelled 250-child train; the five earlier private uploads include three with factual or image-source errors. The channel has no useful Shorts-feed sample or retention curve. We cannot infer audience preference, posting time, or reach suppression from these numbers. New scheduling is held in `status/scheduling_hold.json`, and the Buffer queue was empty at the last direct read.
+The owned YouTube API showed **zero public Shorts, 10 channel views and zero subscribers** at the 2026-10-03 22:27 IST read. All six uploaded videos were private then. Winton was withdrawn after its public narration stated an unverified survival count for the cancelled 250-child train; the five earlier private uploads include three with factual or image-source errors. The corrected ep054 was sent on 2026-10-04, so the channel now has one public pilot, but still no useful Shorts-feed sample or retention curve. We cannot infer audience preference, posting time, or reach suppression from these numbers. New scheduling is held in `status/scheduling_hold.json`, and the 2026-10-04 06:12 IST collection run read zero Buffer posts.
 
 ## Editorial promise
 
 Tell one documented turning point in the last hours of a disaster, rescue, siege, or expedition. Open with a specific person, choice, warning, or event; explain what happened next; end with the consequence or a well-supported correction to a famous myth. Use American English, a calm human tone, and no gore. The event must be at least 75 years old. The visual record is evidence: period photographs, documents, prints and maps take priority. A later reconstruction must say that it is a reconstruction.
 
 The best repeatable angle is **what people knew at the time and what they did with it**. It fits the existing channel name, supports the Warnings Ignored and Sole Survivors series, and is more distinctive than another list of tragedies. Do not force a villain or a neat single cause where historians disagree. The first four corrected pilots should test a rescue, a survivor, a disputed legend and a warning; the data, once there is enough of it, will decide which angle grows.
+
+## Documented accident lane
+
+Lesser-known transport, industrial, crowd and environmental accidents fit **Warnings Ignored** and **The Last Hours** when an inquiry or contemporary record establishes a concrete sequence. Select a case for its documented decision, warning, or mechanism and its usable event-specific visual record; do not rank tragedies or market an event as “hidden” or “the world's most dangerous” without evidence. The [sourced candidate slate](ACCIDENT-TOPIC-SLATE-2026-10-04.md) starts with Quebec Bridge, Oppau and Texas City. The [Quebec Bridge private pilot research](../reports/quebec-bridge-pilot-research-2026-10-04.md) has a claim-level script proposal; no accident pilot is approved or scheduled. Test two independently reviewed accident pilots after the first corrected release batch, then compare age-matched videos only when actual Shorts-feed exposure exists.
 
 ## Release contract
 
