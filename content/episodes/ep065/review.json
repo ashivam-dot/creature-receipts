@@ -1,0 +1,93 @@
+{
+  "rounds": [
+    {
+      "at": "2026-10-04T14:58:02+05:30",
+      "check": {
+        "duration": 31.63,
+        "words": 72,
+        "integrated_lufs": -14.3,
+        "true_peak_dbfs": -1.8,
+        "warnings": [],
+        "speech_differences": [
+          "'chord' heard as 'cord' after 'a bending steel'",
+          "'szlapka' heard as 'schlapka' after 'designing engineer peter'",
+          "'chords' heard as 'cords' after 'drafted the lower'",
+          "base.en: 'chord' heard as 'cord' after 'a bending steel'",
+          "base.en: 'szlapka' heard as 'schlapka' after 'designing engineer peter'",
+          "base.en: 'chords' heard as 'cords' after 'drafted the lower'"
+        ],
+        "speech_error": null,
+        "sources": [
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "designed card",
+          "designed card",
+          "designed card",
+          "designed card",
+          "Wikimedia Commons"
+        ],
+        "speech_verification": {
+          "heard": "In 1907, inspectors measured a bending steel cord on the Quebec bridge. Designing engineer Peter Schlapka drafted the lower cords with a defective design. Consulting engineer Theodore Cooper officially approved these flawed plans. Officials placed complete confidence in Cooper's judgment. But contemporary professional knowledge of steel columns under load was inadequate. By August 27, no action could prevent the structural collapse. — yet better judgment could have saved human lives on the site.",
+          "model": "small.en",
+          "media_sha256": "6239e0ef522d9448cf937e7ac3bd3c135dfeb473e21403439ee3bfad172f44b2",
+          "primary_differences": [
+            "'chord' heard as 'cord' after 'a bending steel'",
+            "'szlapka' heard as 'schlapka' after 'designing engineer peter'",
+            "'chords' heard as 'cords' after 'drafted the lower'"
+          ],
+          "differences": [
+            "'chord' heard as 'cord' after 'a bending steel'",
+            "'szlapka' heard as 'schlapka' after 'designing engineer peter'",
+            "'chords' heard as 'cords' after 'drafted the lower'",
+            "base.en: 'chord' heard as 'cord' after 'a bending steel'",
+            "base.en: 'szlapka' heard as 'schlapka' after 'designing engineer peter'",
+            "base.en: 'chords' heard as 'cords' after 'drafted the lower'"
+          ],
+          "corroboration": {
+            "model": "base.en",
+            "heard": "In 1907, inspectors measured a bending steel cord on the Quebec Bridge. Designing engineer Peter Schlapka drafted the lower cords with a defective design. Consulting engineer Theodore Cooper officially approved these flawed plans. Officials placed complete confidence in Cooper's judgment. But contemporary professional knowledge of steel columns under load was inadequate. By August 27, no action could prevent the structural collapse. yet better judgment could have saved human lives on the site.",
+            "differences": [
+              "'chord' heard as 'cord' after 'a bending steel'",
+              "'szlapka' heard as 'schlapka' after 'designing engineer peter'",
+              "'chords' heard as 'cords' after 'drafted the lower'"
+            ],
+            "resolved": []
+          }
+        }
+      },
+      "media_sha256": "6239e0ef522d9448cf937e7ac3bd3c135dfeb473e21403439ee3bfad172f44b2",
+      "scores": {
+        "hook": 3,
+        "clarity": 3,
+        "payoff": 3,
+        "visuals": 2,
+        "loop": 3
+      },
+      "notes": {
+        "hook": "The hook is too passive, stating that inspectors merely 'measured' the bend rather than emphasizing the impending danger.",
+        "clarity": "The narrative doesn't clearly connect why the warnings were ignored or how the design flaws led directly to the collapse.",
+        "payoff": "The ending feels abrupt and lacks a strong dramatic punch, mentioning saved lives without fully delivering on the tragedy's climax.",
+        "visuals": "Using four text-only title cards in a row is visually unengaging and lazy for a highly visual medium.",
+        "loop": "The transition from the final line back to the opening line is grammatically clunky and fails to create a seamless loop."
+      },
+      "frames": [],
+      "speech": [
+        {
+          "beat": 2,
+          "word": "Szlapka",
+          "respelling": "shlap kah"
+        }
+      ],
+      "rewrite": [
+        "Beat 1: In 1907, inspectors did nothing after measuring a bending steel chord on the Quebec Bridge.",
+        "Beat 4: Officials trusted Cooper completely, ignoring the pressure building on the inadequate steel columns.",
+        "Beat 6: By August twenty-seventh, no action could prevent the bridge's catastrophic collapse.",
+        "Beat 7: Many human lives would have been saved, if they hadn't ignored how..."
+      ],
+      "better_than_last": "This Short focuses on a compelling, slow-burn engineering disaster, though its heavy reliance on text cards makes it less visually engaging than the recent Arnhem episode.",
+      "judge": "gemini-3.5-flash",
+      "passed": false
+    }
+  ],
+  "best_round": 1
+}
