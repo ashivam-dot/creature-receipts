@@ -1,186 +1,59 @@
 {
   "rounds": [
     {
-      "at": "2026-10-04T15:24:37+05:30",
+      "at": "2026-10-04T16:53:25+05:30",
       "check": {
-        "duration": 26.97,
-        "words": 69,
-        "integrated_lufs": -14.3,
+        "duration": 28.5,
+        "words": 72,
+        "integrated_lufs": -14.4,
         "true_peak_dbfs": -1.8,
         "warnings": [],
-        "speech_differences": [
-          "'chord' heard as 'cord' after 'on august 27'",
-          "'s' heard as 'is' after 'chord 9 l'",
-          "'chords' heard as 'cords' after 'the failed lower'",
-          "base.en: 'chord' heard as 'cord' after 'on august 27'",
-          "base.en: 'l s' heard as 'else' after '27 chord 9'",
-          "base.en: 'chords' heard as 'cords' after 'the failed lower'"
-        ],
+        "speech_differences": [],
         "speech_error": null,
         "sources": [
           "Wikimedia Commons",
           "Royal Commission report / authored graphic",
+          "Wikimedia Commons / British Library",
           "Wikimedia Commons",
-          "Wikimedia Commons",
-          "Royal Commission report / authored graphic",
-          "Royal Commission report / authored graphic",
+          "Wikimedia Commons / BAnQ",
+          "Royal Commission report, Appendix 19 figure 20 / Wikimedia Commons",
           "Wikimedia Commons"
         ],
         "speech_verification": {
-          "heard": "Quebec bridge staff measured a growing bend, two days later it fell. On August 27, Cord 9L's bend had grown. Some called it critical, the superintendent disagreed. On August 29, the unfinished bridge collapsed. A royal commission found the failed lower cords were defectively designed. It did not believe the bridge could be saved after August 27. But better judgment, it said, might have prevented the loss of life.",
+          "heard": "Staff measured a growing bend, two days later the Quebec Bridge fell. On August 27, steel member 9L bent farther. Some called it critical, the superintendent saw no danger. On August 29, the unfinished bridge collapsed. The commission found the lower members were defectively designed. It did not believe the fall preventable after August 27. Yet it said better judgment might have prevented the loss of life, the bend had been measured.",
           "model": "small.en",
-          "media_sha256": "650b038f3964cae0d5cd80cfc1721ca0986cd9f3b34ce72dbd726f017244db79",
-          "primary_differences": [
-            "'chord' heard as 'cord' after 'on august 27'",
-            "'s' heard as 'is' after 'chord 9 l'",
-            "'chords' heard as 'cords' after 'the failed lower'"
-          ],
-          "differences": [
-            "'chord' heard as 'cord' after 'on august 27'",
-            "'s' heard as 'is' after 'chord 9 l'",
-            "'chords' heard as 'cords' after 'the failed lower'",
-            "base.en: 'chord' heard as 'cord' after 'on august 27'",
-            "base.en: 'l s' heard as 'else' after '27 chord 9'",
-            "base.en: 'chords' heard as 'cords' after 'the failed lower'"
-          ],
-          "corroboration": {
-            "model": "base.en",
-            "heard": "Quebec Bridge staff measured a growing bend two days later it fell. On August 27, Cord 9 else bend had grown. Some called it critical, the superintendent disagreed. On August 29, the unfinished bridge collapsed. A Royal Commission found the failed lower cords were defectively designed. It did not believe the bridge could be saved after August 27. But better judgment it said might have prevented the loss of life.",
-            "differences": [
-              "'chord' heard as 'cord' after 'on august 27'",
-              "'l s' heard as 'else' after '27 chord 9'",
-              "'chords' heard as 'cords' after 'the failed lower'"
-            ],
-            "resolved": []
-          }
+          "media_sha256": "e1846575ca82744a4a6508fa58b0e4a7e5b2f89c5194420d9e12609ae7ebddd2",
+          "primary_differences": [],
+          "differences": []
         }
       },
-      "media_sha256": "650b038f3964cae0d5cd80cfc1721ca0986cd9f3b34ce72dbd726f017244db79",
+      "media_sha256": "e1846575ca82744a4a6508fa58b0e4a7e5b2f89c5194420d9e12609ae7ebddd2",
       "scores": {
         "hook": 4,
         "clarity": 4,
         "payoff": 3,
-        "visuals": 3,
-        "loop": 3
-      },
-      "notes": {
-        "hook": "Strong factual tension established immediately within four seconds.",
-        "clarity": "Chronological progression is direct and simple to grasp.",
-        "payoff": "The ending delivers historical tragedy but lands somewhat dryly.",
-        "visuals": "Multiple document frames feature text too small for phone screens.",
-        "loop": "Closing phrase on casualties does not cleanly cycle back to the opening."
-      },
-      "frames": [
-        {
-          "beat": 3,
-          "problem": "Same picture as beat 1."
-        },
-        {
-          "beat": 5,
-          "problem": "Mostly text and print too small to read at phone size."
-        },
-        {
-          "beat": 6,
-          "problem": "Mostly text and print too small to read at phone size."
-        }
-      ],
-      "speech": [],
-      "rewrite": [
-        "Beat 7: 'Better judgment, the commission found, could have spared the lives lost when...'"
-      ],
-      "better_than_last": "Provides stronger historical continuity and direct primary source grounding than recent episodes.",
-      "judge": "gemini-3.8-flash",
-      "passed": false
-    },
-    {
-      "at": "2026-10-04T15:30:21+05:30",
-      "check": {
-        "duration": 28.07,
-        "words": 71,
-        "integrated_lufs": -14.3,
-        "true_peak_dbfs": -1.7,
-        "warnings": [],
-        "speech_differences": [
-          "'chord' heard as 'cord' after 'on august 27'",
-          "'s' heard as 'is' after 'chord 9 l'",
-          "'chords' heard as 'cords' after 'the failed lower'",
-          "base.en: 'chord' heard as 'cord' after 'on august 27'",
-          "base.en: 's' heard as 'is' after 'chord 9 l'",
-          "base.en: 'chords' heard as 'cords' after 'the failed lower'"
-        ],
-        "speech_error": null,
-        "sources": [
-          "Wikimedia Commons",
-          "Wikimedia Commons",
-          "Wikimedia Commons",
-          "Wikimedia Commons",
-          "Wikimedia Commons",
-          "Wikimedia Commons",
-          "Wikimedia Commons"
-        ],
-        "speech_verification": {
-          "heard": "Two days after staff measured a growing bend, the Quebec Bridge collapsed. On August 27, Cord 9L's bend had grown. Some workers called it critical, but the superintendent disagreed. On August 29, the massive steel structure fell. A royal commission found the failed lower cords were defectively designed. It did not believe the bridge could be saved after August 27. Better judgment the commission found could have spared the lives lost.",
-          "model": "small.en",
-          "media_sha256": "4b59fe1153196556c9db0fe249ee5a61c903a22fc291121fe865e9e91efbdf30",
-          "primary_differences": [
-            "'chord' heard as 'cord' after 'on august 27'",
-            "'s' heard as 'is' after 'chord 9 l'",
-            "'chords' heard as 'cords' after 'the failed lower'"
-          ],
-          "differences": [
-            "'chord' heard as 'cord' after 'on august 27'",
-            "'s' heard as 'is' after 'chord 9 l'",
-            "'chords' heard as 'cords' after 'the failed lower'",
-            "base.en: 'chord' heard as 'cord' after 'on august 27'",
-            "base.en: 's' heard as 'is' after 'chord 9 l'",
-            "base.en: 'chords' heard as 'cords' after 'the failed lower'"
-          ],
-          "corroboration": {
-            "model": "base.en",
-            "heard": "Two days after staff measured a growing bend, the Quebec Bridge collapsed. On August 27, Cord 9L's bend had grown. Some workers called it critical, but the superintendent disagreed. On August 29, the massive steel structure fell. A royal commission found the failed lower cords were defectively designed. It did not believe the bridge could be saved after August 27. Better judgment the commission found could have spared the lives lost.",
-            "differences": [
-              "'chord' heard as 'cord' after 'on august 27'",
-              "'s' heard as 'is' after 'chord 9 l'",
-              "'chords' heard as 'cords' after 'the failed lower'"
-            ],
-            "resolved": []
-          }
-        }
-      },
-      "media_sha256": "4b59fe1153196556c9db0fe249ee5a61c903a22fc291121fe865e9e91efbdf30",
-      "scores": {
-        "hook": 5,
-        "clarity": 5,
-        "payoff": 5,
-        "visuals": 2,
+        "visuals": 4,
         "loop": 4
       },
       "notes": {
-        "hook": "The specific detail of the 'growing bend' creates immediate tension and a countdown feel.",
-        "clarity": "The progression from the engineering failure to the human error is very easy to follow.",
-        "payoff": "The tragic conclusion—that the bridge was doomed but the people weren't—is a powerful ending.",
-        "visuals": "Beats 4 and 5 show the 1916 collapse of the center span, not the 1907 cantilever collapse described.",
-        "loop": "It is a logical transition, though not as punchy as a sentence completion loop."
+        "hook": "Clear premise establishing the impending structural failure.",
+        "clarity": "Logical chronological flow following the warning and collapse.",
+        "payoff": "The commission conclusion lands somewhat flatly without emphasizing the casualty scale.",
+        "visuals": "Relevant archival imagery combined with a helpful structural diagram.",
+        "loop": "Phrasing in beat seven circles cleanly back to the opening statement."
       },
-      "frames": [
-        {
-          "beat": 4,
-          "problem": "The image shows the 1916 collapse of the center span, but the narration describes the 1907 collapse of the main structure."
-        },
-        {
-          "beat": 5,
-          "problem": "The image shows the 1916 collapse of the center span, which is anachronistic to the 1907 event discussed."
-        }
-      ],
+      "frames": [],
       "speech": [],
-      "rewrite": [],
-      "better_than_last": "This script more effectively balances technical specifics like 'chord 9-L' with the human drama of the superintendent's disagreement than the Fetterman script.",
-      "judge": "gemini-3-flash-preview",
+      "rewrite": [
+        "Beat 7: 'Yet better judgment could have saved seventy-five lives after staff measured the fatal bend.'"
+      ],
+      "better_than_last": "Integrates a clear technical schematic to explain the failure point effectively.",
+      "judge": "gemini-3.7-flash",
       "passed": false
     }
   ],
   "best_round": 1,
   "verdict": "rejected",
-  "reason": "visual plan: only 2 original art beats; 3 are needed for 7 beats",
-  "rejected_at": "2026-10-04T15:30:21+05:30"
+  "reason": "visual plan: beat 1 uses art outside the approved source set",
+  "rejected_at": "2026-10-04T16:55:34+05:30"
 }
