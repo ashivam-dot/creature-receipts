@@ -30,6 +30,9 @@ _OPEN = {"CC0", "Public domain", "Pexels License", "Pixabay Content License"}
 _ORIGINAL = {"designed card", "AI generated"}
 FIRST_ELIGIBLE_EPISODE = 63  # ep062 and earlier existed when this gate was designed.
 FIRST_ELIGIBLE_START = datetime(2026, 10, 5, tzinfo=timezone.utc)
+MIN_POST_LEAD = timedelta(minutes=30)
+MAX_POST_HORIZON = timedelta(days=30)
+MAX_INSTAGRAM_RETRY = timedelta(days=7)
 
 
 def _json(path: Path) -> dict:
@@ -237,6 +240,33 @@ def instagram_channel_id() -> str:
     return wanted
 
 
+def _due(value: str | None, label: str) -> datetime:
+    """A timezone-aware Buffer due time; never let a naive or malformed time enter a mutation."""
+    try:
+        parsed = datetime.fromisoformat(value) if isinstance(value, str) else None
+    except ValueError:
+        parsed = None
+    if parsed is None or parsed.tzinfo is None or parsed.utcoffset() is None:
+        raise RuntimeError(f"{label} has no valid timezone-aware due time")
+    return parsed.astimezone(timezone.utc)
+
+
+def _instagram_due(youtube_due: datetime, posts: list[dict], now: datetime) -> datetime:
+    """Keep a future paired slot; after it passes, choose a fresh bounded Instagram slot."""
+    if youtube_due > now + MIN_POST_LEAD:
+        if youtube_due > now + MAX_POST_HORIZON:
+            raise RuntimeError("paired YouTube slot is too far in the future")
+        return youtube_due
+    if youtube_due < now - MAX_INSTAGRAM_RETRY:
+        raise RuntimeError("YouTube slot is too old for a fresh Instagram retry")
+    from .publish import next_slots
+    taken = {_due(p["dueAt"], "Instagram Buffer post") for p in posts if p.get("dueAt")}
+    fresh = _due(next_slots(1, taken, start=now)[0].isoformat(), "fresh Instagram slot")
+    if not now + MIN_POST_LEAD < fresh <= min(now + MAX_POST_HORIZON, youtube_due + MAX_INSTAGRAM_RETRY):
+        raise RuntimeError("fresh Instagram slot is outside the safe scheduling window")
+    return fresh
+
+
 def schedule_waiting(run) -> None:
     """Under the channel hold, release only certified future drafts to YouTube and Instagram."""
     config = None
@@ -250,14 +280,14 @@ def schedule_waiting(run) -> None:
     from .publish import AUDIENCE_TZ, BUFFER_QUEUE_LIMIT, caption, next_slots, posts
 
     instagram = None
+    instagram_room = False
     with run.stage("autonomous release destinations") as entry:
         instagram = instagram_channel_id()
         youtube = publish.channel()
         if any(youtube.get(flag) for flag in ("isDisconnected", "isLocked", "isQueuePaused")):
             raise RuntimeError("configured YouTube channel is disconnected, locked, or paused")
-        instagram_posts = posts(since=datetime.now(AUDIENCE_TZ) - timedelta(days=3), channel_id=instagram)
-        if len([p for p in instagram_posts if p["status"] not in ("sent", "error", "draft")]) >= BUFFER_QUEUE_LIMIT:
-            raise RuntimeError("Instagram Buffer queue is full")
+        instagram_posts = posts(channel_id=instagram)
+        instagram_room = len([p for p in instagram_posts if p["status"] not in ("sent", "error", "draft")]) < BUFFER_QUEUE_LIMIT
         entry["detail"] = "YouTube and Instagram connected"
     if not run.stages[-1]["ok"] or instagram is None:
         return
@@ -267,15 +297,17 @@ def schedule_waiting(run) -> None:
         run.notes.append(f"uncertified waiting drafts remain held: {', '.join(missing)}")
     # Pair one YouTube post with its Instagram Reel per run, keeping queue capacity predictable.
     waiting = [e for e in eps if e["state"] == "waiting" and (e["folder"] / CERTIFICATE).exists()][:1]
-    scheduled = [e for e in eps if e["state"] == "scheduled" and (e["folder"] / CERTIFICATE).exists()]
+    if not instagram_room and waiting:
+        run.notes.append("Instagram Buffer queue is full; certified drafts remain held")
+        waiting = []
+    scheduled = [e for e in eps if e["state"] in ("scheduled", "live") and (e["folder"] / CERTIFICATE).exists()
+                 and not ((e["record"].get("crossposts") or {}).get("instagram") or {}).get("id")]
     for e in waiting:
         with run.stage(f"release {e['id']} to YouTube") as entry:
             spec_path = e["folder"] / "short.yaml"
             validate(spec_path)
-            youtube_posts = posts(since=datetime.now(AUDIENCE_TZ) - timedelta(days=30))
-            if len([p for p in youtube_posts if p["status"] not in ("sent", "error", "draft")]) >= BUFFER_QUEUE_LIMIT:
-                raise RuntimeError("YouTube Buffer queue is full")
-            when = next_slots(1, {datetime.fromisoformat(p["dueAt"]).astimezone(AUDIENCE_TZ)
+            youtube_posts = posts()
+            when = next_slots(1, {_due(p["dueAt"], "YouTube Buffer post").astimezone(AUDIENCE_TZ)
                                   for p in youtube_posts if p.get("dueAt")})[0]
             record = publish.schedule(spec_path, when, autonomous_release=True)
             entry["detail"] = record["due_at"]
@@ -291,8 +323,7 @@ def schedule_waiting(run) -> None:
                 entry["detail"] = f"already recorded as {existing['id']}"
                 continue
             spec = ShortSpec.load(spec_path)
-            start = datetime.fromisoformat(_json(e["folder"] / "topic.json")["started_at"]) - timedelta(days=1)
-            recent = posts(since=start, channel_id=instagram)
+            recent = posts(channel_id=instagram)
             exact = [p for p in recent if p.get("text") == caption(spec)]
             if len(exact) > 1:
                 raise RuntimeError("multiple matching Instagram posts need inspection")
@@ -300,18 +331,22 @@ def schedule_waiting(run) -> None:
                 post = exact[0]
                 if post["status"] in ("error", "draft"):
                     raise RuntimeError(f"matching Instagram post {post['id']} is {post['status']}")
+                youtube_due = _due(record.get("due_at"), "YouTube post")
+                accepted_due = _due(post.get("dueAt"), "matching Instagram post")
+                if not youtube_due <= accepted_due <= youtube_due + MAX_INSTAGRAM_RETRY:
+                    raise RuntimeError(f"Instagram post {post['id']} has an unrelated due time")
                 remote = publish.post(post["id"])
                 if not remote or remote.get("video") != cert["media_url"] or remote.get("text") != caption(spec):
                     raise RuntimeError(f"Instagram post {post['id']} has unverified media or text")
                 publish.verify_hosted_media(cert["media_url"], cert["media_sha256"])
                 result = {"id": post["id"], "status": post["status"], "due_at": post.get("dueAt")}
             else:
-                if datetime.fromisoformat(record["due_at"]) <= datetime.now(AUDIENCE_TZ) + timedelta(minutes=30):
-                    raise RuntimeError("Instagram is too close to the YouTube slot; inspect the release")
                 if len([p for p in recent if p["status"] not in ("sent", "error", "draft")]) >= BUFFER_QUEUE_LIMIT:
                     raise RuntimeError("Instagram Buffer queue is full")
+                due = _instagram_due(_due(record.get("due_at"), "YouTube post"), recent,
+                                     datetime.now(timezone.utc))
                 result = publish.crosspost(spec_path, "instagram", instagram, cert["media_url"],
-                                           datetime.fromisoformat(record["due_at"]), autonomous_release=True)
+                                           due, autonomous_release=True)
             record.setdefault("crossposts", {})["instagram"] = result
             (e["folder"] / "publish.json").write_text(json.dumps(record, indent=2) + "\n", encoding="utf-8")
             entry["detail"] = f"Instagram post {result['id']}"

@@ -629,9 +629,7 @@ def schedule(spec_path: Path, when: datetime | None = None, *, reviewed_release:
     manifest = json.loads((folder / "work" / "manifest.json").read_text(encoding="utf-8"))
 
     text = description(spec, manifest)
-    recent_start = (datetime.fromisoformat(json.loads((folder / "topic.json").read_text(encoding="utf-8"))["started_at"])
-                    - timedelta(days=1)) if autonomous_release else datetime.now(AUDIENCE_TZ) - timedelta(days=30)
-    recent = posts(since=recent_start)
+    recent = posts() if autonomous_release else posts(since=datetime.now(AUDIENCE_TZ) - timedelta(days=30))
     # A run that stopped after Buffer took the post, before its record was saved, would otherwise post it twice.
     # Matched on the Short's own description, which leads the text: the credits after it are laid out by whichever
     # version of this code posted it.
@@ -678,6 +676,12 @@ def schedule(spec_path: Path, when: datetime | None = None, *, reviewed_release:
         "assets": [{"video": {"url": media_url}}],
         "metadata": _metadata(spec),
     }
+    if autonomous_release:
+        from .release import MAX_POST_HORIZON, MIN_POST_LEAD, _due
+        due = _due(when.isoformat(), "YouTube release slot")
+        now = datetime.now(timezone.utc)
+        if not now + MIN_POST_LEAD < due <= now + MAX_POST_HORIZON:
+            raise RuntimeError("YouTube release slot is outside the safe scheduling window")
     _require_scheduling_open(spec_path, exact_media_release=reviewed_release, autonomous_release=autonomous_release)
     result = _buffer(mutation, {"input": payload})["createPost"]
     if result["__typename"] != "PostActionSuccess":
@@ -743,9 +747,16 @@ def crosspost(spec_path: Path, service: str, channel_id: str, media_url: str, wh
     if autonomous_release:
         if service != "instagram":
             raise RuntimeError("autonomous release supports Instagram only")
-        from .release import instagram_channel_id, validate
+        from .release import MAX_INSTAGRAM_RETRY, MAX_POST_HORIZON, MIN_POST_LEAD, _due, instagram_channel_id, validate
         if channel_id != instagram_channel_id() or media_url != validate(spec_path, hosted=True)["media_url"]:
             raise RuntimeError("Instagram destination or media differs from the release certificate")
+        now = datetime.now(timezone.utc)
+        target = _due(when.isoformat(), "Instagram release slot")
+        youtube_due = _due(json.loads((spec_path.parent / "publish.json").read_text(encoding="utf-8")).get("due_at"),
+                           "YouTube post")
+        if not (now + MIN_POST_LEAD < target <= now + MAX_POST_HORIZON and
+                youtube_due <= target <= youtube_due + MAX_INSTAGRAM_RETRY):
+            raise RuntimeError("Instagram release slot is outside the safe scheduling window")
     spec = ShortSpec.load(spec_path)
     mutation = """
     mutation Create($input: CreatePostInput!) {
@@ -817,10 +828,23 @@ def sync(content_dir: Path) -> list[dict]:
         sent_at = record.get("sent_at")
         if record["status"] == "sent" and sent_at:
             if datetime.fromisoformat(sent_at) < datetime.now(AUDIENCE_TZ) - timedelta(days=2):
-                if record.get("media_url"):
-                    unhost_video(record["media_public_id"])
-                    record["media_url"] = None
-                _free_local(record_path.parent, record["id"])
+                # A certified Short may still need those exact bytes for an Instagram retry.
+                instagram = (record.get("crossposts") or {}).get("instagram")
+                certified = (record_path.parent / "release_certificate.json").exists()
+                instagram_due = None
+                if isinstance(instagram, dict) and instagram.get("id") and instagram.get("due_at"):
+                    try:
+                        instagram_due = datetime.fromisoformat(instagram["due_at"])
+                        if instagram_due.tzinfo is None:
+                            instagram_due = None
+                    except ValueError:
+                        pass
+                if not certified or (instagram_due is not None and
+                                     instagram_due < datetime.now(AUDIENCE_TZ) - timedelta(days=2)):
+                    if record.get("media_url"):
+                        unhost_video(record["media_public_id"])
+                        record["media_url"] = None
+                    _free_local(record_path.parent, record["id"])
         record_path.write_text(json.dumps(record, indent=2), encoding="utf-8")
         records.append(record)
     return records

@@ -47,6 +47,9 @@ jobs:
       YTC_OPENROUTER_API_KEY: ${{ secrets.YTC_OPENROUTER_API_KEY }}
       BUFFER_API_KEY: ${{ secrets.BUFFER_API_KEY }}
       BUFFER_YOUTUBE_CHANNEL_ID: ${{ secrets.BUFFER_YOUTUBE_CHANNEL_ID }}
+      BUFFER_INSTAGRAM_CHANNEL_ID: ${{ secrets.BUFFER_INSTAGRAM_CHANNEL_ID }}
+      # Remains empty unless the disabled release policy is separately reviewed and activated.
+      YTC_AUTONOMOUS_RELEASE: ${{ vars.YTC_AUTONOMOUS_RELEASE }}
       CLOUDINARY_URL: ${{ secrets.CLOUDINARY_URL }}
       MODAL_TOKEN_ID: ${{ secrets.MODAL_TOKEN_ID }}
       MODAL_TOKEN_SECRET: ${{ secrets.MODAL_TOKEN_SECRET }}

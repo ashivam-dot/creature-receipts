@@ -183,3 +183,127 @@ def test_interrupted_instagram_schedule_adopts_only_the_certified_remote_media(e
     auto.publish_waiting(second)
     assert second.errors == []
     assert json.loads((episode / "publish.json").read_text())["crossposts"]["instagram"]["id"] == "ig-post"
+
+
+def _youtube_record(episode, due):
+    held = json.loads((episode / "hold.json").read_text())
+    (episode / "hold.json").unlink()
+    record = {**held, "buffer_post_id": "yt-post", "status": "sent", "due_at": due.isoformat(),
+              "sent_at": due.isoformat()}
+    (episode / "publish.json").write_text(json.dumps(record))
+    return record
+
+
+def test_live_youtube_post_retries_instagram_at_fresh_safe_slot(episode, monkeypatch):
+    monkeypatch.setattr(auto, "EPISODES", episode.parent)
+    original = datetime.now(publish.AUDIENCE_TZ) - timedelta(hours=2)
+    _youtube_record(episode, original)
+    searches = []
+    monkeypatch.setattr(publish, "posts", lambda **kwargs: searches.append(kwargs) or [])
+    payloads = []
+
+    def create(query, variables):
+        payloads.append(variables["input"])
+        return {"createPost": {"__typename": "PostActionSuccess",
+                               "post": {"id": "ig-new", "status": "scheduled"}}}
+
+    monkeypatch.setattr(publish, "_buffer", create)
+    run = auto.Run("test")
+    auto.publish_waiting(run)
+    assert run.errors == []
+    assert len(payloads) == 1 and payloads[0]["channelId"] == "ig"
+    fresh = datetime.fromisoformat(payloads[0]["dueAt"])
+    now = datetime.now(publish.AUDIENCE_TZ)
+    assert now + timedelta(minutes=29) < fresh <= now + timedelta(days=30)
+    record = json.loads((episode / "publish.json").read_text())
+    assert record["due_at"] == original.isoformat()
+    assert record["crossposts"]["instagram"]["due_at"] == payloads[0]["dueAt"]
+    assert searches and all("since" not in search for search in searches)
+
+
+def test_live_youtube_post_adopts_accepted_instagram_post_after_due(episode, monkeypatch):
+    monkeypatch.setattr(auto, "EPISODES", episode.parent)
+    original = datetime.now(publish.AUDIENCE_TZ) - timedelta(hours=2)
+    _youtube_record(episode, original)
+    text = publish.caption(ShortSpec.load(episode / "short.yaml"))
+    remote = {"id": "ig-accepted", "status": "sent", "text": text, "dueAt": original.isoformat()}
+    monkeypatch.setattr(publish, "posts", lambda **kwargs: [remote] if kwargs.get("channel_id") == "ig" else [])
+    monkeypatch.setattr(publish, "post", lambda post_id: {**remote, "video": "https://cdn.example/ep063.mp4"})
+    monkeypatch.setattr(publish, "_buffer", lambda *args: pytest.fail("a duplicate was created"))
+    run = auto.Run("test")
+    auto.publish_waiting(run)
+    assert run.errors == []
+    assert json.loads((episode / "publish.json").read_text())["crossposts"]["instagram"]["id"] == "ig-accepted"
+
+
+def test_matching_instagram_post_with_unrelated_due_is_not_adopted(episode, monkeypatch):
+    monkeypatch.setattr(auto, "EPISODES", episode.parent)
+    original = datetime.now(publish.AUDIENCE_TZ) - timedelta(hours=2)
+    _youtube_record(episode, original)
+    text = publish.caption(ShortSpec.load(episode / "short.yaml"))
+    remote = {"id": "ig-other", "status": "sent", "text": text,
+              "dueAt": (original - timedelta(days=1)).isoformat()}
+    monkeypatch.setattr(publish, "posts", lambda **kwargs: [remote] if kwargs.get("channel_id") == "ig" else [])
+    monkeypatch.setattr(publish, "post", lambda post_id: {**remote, "video": "https://cdn.example/ep063.mp4"})
+    monkeypatch.setattr(publish, "_buffer", lambda *args: pytest.fail("a duplicate was created"))
+    run = auto.Run("test")
+    auto.publish_waiting(run)
+    assert any("unrelated due time" in error for error in run.errors)
+    assert "instagram" not in json.loads((episode / "publish.json").read_text()).get("crossposts", {})
+
+
+@pytest.mark.parametrize("due", [
+    (datetime.now(publish.AUDIENCE_TZ) - timedelta(days=8)).isoformat(),
+    (datetime.now(publish.AUDIENCE_TZ) + timedelta(days=31)).isoformat(),
+    "2026-10-06T12:00:00",
+])
+def test_instagram_retry_rejects_unbounded_or_naive_due(episode, monkeypatch, due):
+    monkeypatch.setattr(auto, "EPISODES", episode.parent)
+    _youtube_record(episode, datetime.now(publish.AUDIENCE_TZ))
+    record_path = episode / "publish.json"
+    record = json.loads(record_path.read_text())
+    record["due_at"] = due
+    record_path.write_text(json.dumps(record))
+    monkeypatch.setattr(publish, "posts", lambda **kwargs: [])
+    monkeypatch.setattr(publish, "_buffer", lambda *args: pytest.fail("an unsafe slot was scheduled"))
+    run = auto.Run("test")
+    auto.publish_waiting(run)
+    assert run.errors and "Instagram" in run.errors[-1]
+    assert "instagram" not in json.loads(record_path.read_text()).get("crossposts", {})
+
+
+def test_sync_keeps_certified_media_while_instagram_retry_is_pending(episode, monkeypatch):
+    _youtube_record(episode, datetime.now(publish.AUDIENCE_TZ) - timedelta(days=3))
+    monkeypatch.setattr(publish, "posts", lambda **kwargs: [])
+    monkeypatch.setattr(publish, "unhost_video", lambda *args: pytest.fail("certified media was unhosted"))
+    monkeypatch.setattr(publish, "_free_local", lambda *args: pytest.fail("certified media was removed"))
+    records = publish.sync(episode.parent)
+    assert records[0]["media_url"] == "https://cdn.example/ep063.mp4"
+
+
+def test_direct_instagram_release_rejects_unsafe_due(episode, monkeypatch):
+    original = datetime.now(publish.AUDIENCE_TZ) - timedelta(hours=1)
+    _youtube_record(episode, original)
+    monkeypatch.setattr(publish, "_buffer", lambda *args: pytest.fail("an unsafe slot was scheduled"))
+    for target in (datetime.now(publish.AUDIENCE_TZ) - timedelta(minutes=1),
+                   datetime.now(publish.AUDIENCE_TZ) + timedelta(days=31),
+                   datetime.now(publish.AUDIENCE_TZ).replace(tzinfo=None)):
+        with pytest.raises(RuntimeError, match="due time|safe scheduling window"):
+            publish.crosspost(episode / "short.yaml", "instagram", "ig", "https://cdn.example/ep063.mp4",
+                              target, autonomous_release=True)
+
+
+def test_recorded_instagram_post_is_skipped_after_media_cleanup(episode, monkeypatch):
+    monkeypatch.setattr(auto, "EPISODES", episode.parent)
+    old = datetime.now(publish.AUDIENCE_TZ) - timedelta(days=3)
+    record = _youtube_record(episode, old)
+    record["crossposts"] = {"instagram": {"id": "ig-sent", "status": "sent", "due_at": old.isoformat()}}
+    (episode / "publish.json").write_text(json.dumps(record))
+    monkeypatch.setattr(publish, "posts", lambda **kwargs: [])
+    monkeypatch.setattr(publish, "unhost_video", lambda *args: None)
+    monkeypatch.setattr(publish, "_free_local", lambda *args: None)
+    publish.sync(episode.parent)
+    assert json.loads((episode / "publish.json").read_text())["media_url"] is None
+    run = auto.Run("test")
+    auto.publish_waiting(run)
+    assert run.errors == []
