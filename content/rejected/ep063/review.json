@@ -1,0 +1,146 @@
+{
+  "rounds": [
+    {
+      "at": "2026-10-04T13:01:42+05:30",
+      "check": {
+        "duration": 30.03,
+        "words": 69,
+        "integrated_lufs": -14.4,
+        "true_peak_dbfs": -1.7,
+        "warnings": [],
+        "speech_differences": [
+          "'in' heard as '(nothing)' after 'municipal fire department'",
+          "'9 12' heard as '9.12' after 'nitrate cargo at'",
+          "'and' heard as 'in' after 'obliterating the docks'",
+          "'(nothing)' heard as 'you' after 'detonate a port'"
+        ],
+        "speech_error": null,
+        "sources": [
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "designed card",
+          "Wikimedia Commons"
+        ]
+      },
+      "media_sha256": "7720bc1b1918f739a4c41d1adbed6265826fa942b362579f53eeb0bd38c9559d",
+      "scores": {
+        "hook": 4,
+        "clarity": 4,
+        "payoff": 4,
+        "visuals": 4,
+        "loop": 4
+      },
+      "notes": {
+        "hook": "Strong opening premise grabs viewer attention immediately.",
+        "clarity": "Logical progression of events from fire to explosion.",
+        "payoff": "Chemical twist and second explosion provide solid payoff.",
+        "visuals": "Historical photo selection effectively supports the narration.",
+        "loop": "Ending line seamlessly connects back to the opening hook."
+      },
+      "frames": [],
+      "speech": [],
+      "rewrite": [],
+      "better_than_last": "Tighter story structure and clearer historical arc than ep054.",
+      "judge": "gemini-3.6-flash",
+      "passed": false
+    },
+    {
+      "at": "2026-10-04T13:03:41+05:30",
+      "check": {
+        "duration": 30.03,
+        "words": 69,
+        "integrated_lufs": -14.4,
+        "true_peak_dbfs": -1.8,
+        "warnings": [],
+        "speech_differences": [
+          "'in' heard as '(nothing)' after 'municipal fire department'",
+          "'9 12' heard as '9.12' after 'nitrate cargo at'",
+          "'and' heard as 'in' after 'obliterating the docks'",
+          "'(nothing)' heard as 'you' after 'detonate a port'"
+        ],
+        "speech_error": null,
+        "sources": [
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "designed card",
+          "Wikimedia Commons"
+        ]
+      },
+      "media_sha256": "542f76c8ac460dd8df3888cf7a0ef9a5c7a6378580b03fa8484e3df400373b0a",
+      "scores": {
+        "hook": 5,
+        "clarity": 5,
+        "payoff": 5,
+        "visuals": 5,
+        "loop": 5
+      },
+      "notes": {
+        "hook": "The opening line delivers an immediate, tragic hook that compels the viewer to stay.",
+        "clarity": "The narrative flows logically from the initial fire, the ship's cargo, the explosion, and the subsequent second blast.",
+        "payoff": "The final reveal that simple fertilizer caused the entire catastrophic chain of events is an excellent payoff.",
+        "visuals": "The archival photographs from the actual disaster site are powerful and highly relevant to the script.",
+        "loop": "The transition from 'detonate a port' back to 'A Texas City dock fire' is highly seamless and natural."
+      },
+      "frames": [],
+      "speech": [],
+      "rewrite": [],
+      "better_than_last": "This episode has a tighter payoff than ep053 by clearly explaining how a common material like fertilizer led to the total destruction of the fire department.",
+      "judge": "gemini-3.5-flash",
+      "passed": false
+    },
+    {
+      "at": "2026-10-04T13:05:10+05:30",
+      "check": {
+        "duration": 30.02,
+        "words": 69,
+        "integrated_lufs": -14.4,
+        "true_peak_dbfs": -1.7,
+        "warnings": [],
+        "speech_differences": [
+          "'in' heard as '(nothing)' after 'municipal fire department'",
+          "'9 12' heard as '9.12' after 'nitrate cargo at'",
+          "'and' heard as 'in' after 'obliterating the docks'",
+          "'(nothing)' heard as 'you' after 'detonate a port'"
+        ],
+        "speech_error": null,
+        "sources": [
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "designed card",
+          "Wikimedia Commons"
+        ]
+      },
+      "media_sha256": "9d721fcff9cdc1b423163f7e69aec8ca0a6b70c4fe63a73f4a5979ea047eba77",
+      "scores": {
+        "hook": 4,
+        "clarity": 4,
+        "payoff": 4,
+        "visuals": 4,
+        "loop": 4
+      },
+      "notes": {
+        "hook": "Intriguing hook detailing the complete loss of a municipal fire department.",
+        "clarity": "Clear and chronological progression of the double explosion.",
+        "payoff": "Tragic irony of fertilizer causing the devastation is well delivered.",
+        "visuals": "Excellent on-topic archival photos from the actual 1947 disaster.",
+        "loop": "Grammatically clean transition that flows smoothly back to the start."
+      },
+      "frames": [],
+      "speech": [],
+      "rewrite": [],
+      "better_than_last": "It matches the excellent pacing and archival accuracy of episode fifty-three.",
+      "judge": "gemini-3.5-flash",
+      "passed": false
+    }
+  ],
+  "best_round": 2,
+  "verdict": "rejected",
+  "reason": "failed the quality gate",
+  "rejected_at": "2026-10-04T13:05:10+05:30"
+}

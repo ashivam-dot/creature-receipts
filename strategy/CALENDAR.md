@@ -105,7 +105,7 @@ event is told for its gore. Space topics belong to the sister channel Universe R
 - DeWitt Clinton locomotive (1831): on one of America's first passenger train rides, burning wood sparks set riders' clothes on fire, forcing them to beat out flames with umbrellas
 - First Battle of Porto (1809): thousands of fleeing civilians surged onto a pontoon bridge that collapsed under their weight, drowning them in the river below
 - Dee Bridge disaster (1847): famous engineer Robert Stephenson's cast-iron bridge snapped under a passenger train, exposing a fatal flaw in Victorian design
-- Texas City disaster (1947): a fire aboard the Grandcamp preceded its 9:12 explosion, and another ship exploded the next day — making (ep063)
+- Texas City disaster (1947): a fire aboard the Grandcamp preceded its 9:12 explosion, and another ship exploded the next day — parked (ep063)
 - Siege of Ichijōdani Castle (1573): the conqueror Nobunaga had the skulls of the defeated lords lacquered in gold to use as drinking cups
 - Death of Pyrrhus of Epirus (272 BC): the legendary general was killed in a street fight when an old woman threw a roof tile from her balcony
 - Leiden gunpowder disaster (1807): the heart of the city was leveled when a barge crew cooked a meal over an open flame right next to 17 tons of black powder

@@ -1,0 +1,139 @@
+id: ep063
+title: What Erased Texas City's Fire Department in Seconds? ⚠️
+series: The Last Hours
+description: In 1947, the Texas City disaster unfolded when the freighter SS Grandcamp exploded with catastrophic force. A
+  second ship detonated hours later, devastating the port.
+sources:
+- https://www.local1259iaff.org/report.htm
+- https://www.tshaonline.org/handbook/entries/texas-city-disaster
+hashtags:
+- '#history'
+- '#texascity'
+- '#disaster'
+tags:
+- Texas City disaster
+- SS Grandcamp
+- SS High Flyer
+- 1947 disaster
+- maritime history
+- industrial disaster
+voice:
+  engine: kokoro
+  voice: am_fenrir
+  speed: 1.15
+beats:
+- text: A Texas City dock fire destroyed an entire municipal fire department.
+  emphasis:
+  - Texas City
+  - entire municipal fire department
+  visual:
+    source: url
+    url: https://upload.wikimedia.org/wikipedia/commons/8/8a/Txcitydisasterparkinglot.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    credit:
+      source: Wikimedia Commons
+      title: Txcitydisasterparkinglot.jpg
+      credit: University of Houston Digital Library
+      license: Public domain
+      url: https://commons.wikimedia.org/wiki/File:Txcitydisasterparkinglot.jpg
+    fallbacks:
+    - color
+    motion: pan_right
+    focus_x: 0.53
+    focus_y: 0.65
+    box:
+    - 0.38
+    - 0.55
+    - 0.73
+    - 0.82
+- text: In 1947, smoke rose from the French freighter SS Grandcamp.
+  emphasis:
+  - '1947'
+  - SS Grandcamp
+  sfx: whoosh
+  visual:
+    source: url
+    url: https://upload.wikimedia.org/wikipedia/commons/5/55/Txcitydisasterboat.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    credit:
+      source: Wikimedia Commons
+      title: Txcitydisasterboat.jpg
+      credit: Unknown author
+      license: Public domain
+      url: https://commons.wikimedia.org/wiki/File:Txcitydisasterboat.jpg
+    fallbacks:
+    - card
+    - color
+    motion: pan_left
+    focus_x: 0.38
+    focus_y: 0.42
+    box:
+    - 0.23
+    - 0.28
+    - 0.55
+    - 0.57
+    card:
+      kind: dateline
+      big: April 16, 1947
+      small: SS Grandcamp
+- text: Responders fought the blaze, unaware of its ammonium nitrate cargo.
+  emphasis:
+  - unaware
+  - ammonium nitrate
+  visual:
+    reuse: 2
+    motion: zoom_in
+    focus_x: 0.38
+    focus_y: 0.42
+- text: At 9:12 A.M., the ship detonated, obliterating the docks and every fire truck.
+  emphasis:
+  - 9:12 A.M.
+  - obliterating the docks
+  sfx: riser
+  visual:
+    source: url
+    url: https://upload.wikimedia.org/wikipedia/commons/7/74/Txcitydisaster5storybuilding.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    credit:
+      source: Wikimedia Commons
+      title: Txcitydisaster5storybuilding.jpg
+      credit: Unknown author
+      license: Public domain
+      url: https://commons.wikimedia.org/wiki/File:Txcitydisaster5storybuilding.jpg
+    fallbacks:
+    - card
+    - color
+    motion: pan_left
+    focus_x: 0.58
+    focus_y: 0.45
+    box:
+    - 0.35
+    - 0.18
+    - 0.98
+    - 0.62
+    card:
+      kind: fact
+      big: 9:12 AM
+      small: initial blast
+- text: Sixteen hours later, a second ammonium nitrate freighter, the SS High Flyer, exploded.
+  emphasis:
+  - Sixteen hours later
+  - SS High Flyer
+  sfx: whoosh
+  visual:
+    source: card
+    card:
+      kind: dateline
+      big: 1:10 AM
+      small: SS High Flyer
+    motion: zoom_in
+- text: No one on the pier realized that fertilizer could detonate a port.
+  emphasis:
+  - fertilizer
+  - detonate a port
+  sfx: pop
+  pause_after: 0.4
+  visual:
+    reuse: 1
+    motion: zoom_out
+    focus_x: 0.53
+    focus_y: 0.65
+depth_motion: true
+hook_text: THE ENTIRE DEPARTMENT LOST
