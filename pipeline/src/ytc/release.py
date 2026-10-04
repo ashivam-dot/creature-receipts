@@ -30,7 +30,8 @@ INDEPENDENT_REVIEW = "independent_review.json"
 REVIEW_SIGNING_CONTEXT = b"history-last-hours-independent-review-v1\0"
 CERTIFICATE = "release_certificate.json"
 CERTIFICATE_VERSION = 2
-FILES = ("short.yaml", "script.json", "research.json", "review.json", "work/manifest.json")
+FILES = ("topic.json", "short.yaml", "script.json", "research.json", "visuals.json",
+         "review.json", "work/manifest.json")
 REVIEW_CHECKS = ("claim_sources", "visual_identity_rights", "full_video_audio")
 _HASH = re.compile(r"[0-9a-f]{64}\Z")
 _EPISODE = re.compile(r"ep(\d{3,})\Z")

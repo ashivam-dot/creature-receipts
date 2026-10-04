@@ -35,6 +35,8 @@ def draft(tmp_path, monkeypatch):
     (folder / "short.yaml").write_text("id: ep063\ntitle: The Last Voyage\ndescription: A true story.\n"
                                       "beats:\n  - text: The ship was lost.\n")
     (folder / "script.json").write_text(json.dumps({"beats": [{"text": "The ship was lost.", "claims": [1]}]}))
+    (folder / "visuals.json").write_text(json.dumps([{"source": "url",
+        "url": "https://commons.example/image", "credit": {"license": "Public domain"}}]))
     (folder / "research.json").write_text(json.dumps({"viable": True,
         "sources": [{"label": "S1", "url": "https://museum.example/story"},
                     {"label": "S2", "url": "https://archive.example/story"}],
@@ -136,6 +138,18 @@ def test_changed_or_untrusted_independent_signature_blocks_certification(draft, 
         release.certify(draft)
     (draft.parent / "independent-review.pub").unlink()
     with pytest.raises(RuntimeError, match="trusted independent reviewer public key"):
+        release.certify(draft)
+    assert not (draft / release.CERTIFICATE).exists()
+
+
+@pytest.mark.parametrize("file,change", [
+    ("topic.json", {"started_at": "2026-10-06T00:00:00+00:00"}),
+    ("visuals.json", [{"source": "card", "card": {"kind": "fact", "big": "Changed image"}}]),
+])
+def test_independent_review_binds_topic_and_visual_selection(draft, monkeypatch, file, change):
+    _sign_independent_review(draft, monkeypatch)
+    (draft / file).write_text(json.dumps(change))
+    with pytest.raises(RuntimeError, match="does not approve this exact candidate"):
         release.certify(draft)
     assert not (draft / release.CERTIFICATE).exists()
 
@@ -326,8 +340,10 @@ def test_optional_policy_waits_for_a_verified_youtube_destination_when_buffer_is
 
 @pytest.mark.parametrize("file,change", [
     ("ep063.mp4", b"another video"),
+    ("topic.json", b'{"started_at":"2026-10-06T00:00:00+00:00"}'),
     ("short.yaml", b"id: ep063\ntitle: Rewritten\nbeats:\n  - text: The ship was lost.\n"),
     ("research.json", b"{}"),
+    ("visuals.json", b'[{"source":"card","card":{"kind":"fact","big":"Changed image"}}]'),
     ("review.json", b"{}"),
 ])
 @pytest.mark.parametrize("require_instagram", [True, False])

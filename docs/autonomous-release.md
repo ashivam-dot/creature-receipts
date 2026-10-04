@@ -13,8 +13,9 @@ then wait in `hold.json`. Production cannot write its own release certificate.
 A reviewer outside production must check the complete hosted video and narration,
 cited claims, visual identity and rights. An external trusted signer must then
 provide `independent_review.json` for that exact candidate. The signed payload
-binds the MP4 hash, hosted URL and public ID, spec, manifest, script, research,
-review, and three explicit QA assertions. The studio must not receive the private key.
+binds the MP4 hash, hosted URL and public ID, topic start time, spec, manifest,
+script, research, visual selections, review, and three explicit QA assertions.
+The studio must not receive the private key.
 
 On an active policy, a cloud run verifies the signature and hosted bytes before
 minting a version-2 `release_certificate.json`. Each release checks the signature,
