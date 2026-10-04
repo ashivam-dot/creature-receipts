@@ -1,52 +1,52 @@
 {
-  "updated_at": "2026-10-04T20:46:32+05:30",
+  "updated_at": "2026-10-04T20:49:39+05:30",
   "day": 3,
   "result": "ok",
   "run": {
     "host": "github-actions",
-    "id": "37212324889",
-    "number": "44",
+    "id": "37212516414",
+    "number": "45",
     "trigger": "workflow_dispatch",
-    "started_at": "2026-10-04T20:46:17+05:30",
-    "started_at_utc": "2026-10-04T15:16:17+00:00",
-    "seconds": 15
+    "started_at": "2026-10-04T20:49:23+05:30",
+    "started_at_utc": "2026-10-04T15:19:23+00:00",
+    "seconds": 16
   },
   "stages": [
     {
       "name": "collect",
       "ok": true,
-      "detail": "ep066 unfinished (VisualCheckFailed: ep066 beat 5: replacement image failed (Shows a different battle)); ep067 unfinished (VisualCheckFailed: ep067 beat 5: no verified alternative (unrelated newspaper article from 1907)); ep068 unfinished (VisualCheckFailed: ep068 beat 3: replacement image failed (wrong event, shows 1879 Madrid explosion)); ep069 unfinished (VisualCheckFailed: ep069 beat 4: replacement image failed (map of wrong states))",
-      "seconds": 10.0
+      "detail": "ep066 still working (0.0 h); ep067 unfinished (VisualCheckFailed: ep067 beat 5: no verified alternative (wrong date and publication)); ep068 still working (0.0 h); ep069 unfinished (VisualCheckFailed: ep069 beat 4: replacement image failed (modern-looking image for a historical scene))",
+      "seconds": 6.4
     },
     {
       "name": "deploy",
       "ok": true,
       "detail": "",
-      "seconds": 1.2
-    },
-    {
-      "name": "start ep066",
-      "ok": true,
-      "detail": "Great Siege of Malta (1565): a handful of knights held off an invading armada against impossible odds, surviving until relief finally arrived",
-      "seconds": 0.7
+      "seconds": 1.8
     },
     {
       "name": "start ep067",
       "ok": true,
       "detail": "Sinking of the Titanic (1912): the only Japanese survivor, Masabumi Hosono, was publicly shamed and lost his government job in Japan for not dying honorably with the other passengers",
-      "seconds": 0.5
-    },
-    {
-      "name": "start ep068",
-      "ok": true,
-      "detail": "Wanggongchang Explosion (1626): a massive unexplained blast rocked Beijing, stripping people of their clothes and leaving a silent void",
-      "seconds": 0.6
+      "seconds": 1.1
     },
     {
       "name": "start ep069",
       "ok": true,
       "detail": "Hugh Glass (1823): after being mauled by a grizzly and left for dead in a shallow grave, he crawled 200 miles to safety but chose to forgive the men who abandoned him",
-      "seconds": 0.5
+      "seconds": 1.3
+    },
+    {
+      "name": "start ep070",
+      "ok": true,
+      "detail": "Great Blizzard of 1888 (1888): commuters stepped into mild spring weather before a sudden whiteout froze New York City in its tracks",
+      "seconds": 1.2
+    },
+    {
+      "name": "start ep071",
+      "ok": true,
+      "detail": "Library of Alexandria: it wasn't lost in one great fire, but declined over centuries",
+      "seconds": 1.1
     }
   ],
   "errors": [],
@@ -65,7 +65,9 @@
       "ep066",
       "ep067",
       "ep068",
-      "ep069"
+      "ep069",
+      "ep070",
+      "ep071"
     ]
   },
   "queue": [],
@@ -91,26 +93,10 @@
   ],
   "made": [
     {
-      "id": "ep066",
-      "outcome": "unfinished",
-      "topic": "Great Siege of Malta (1565): a handful of knights held off an invading armada against impossible odds, surviving until relief finally arrived",
-      "reason": "VisualCheckFailed: ep066 beat 5: replacement image failed (Shows a different battle)",
-      "quota": false,
-      "overloaded": false
-    },
-    {
       "id": "ep067",
       "outcome": "unfinished",
       "topic": "Sinking of the Titanic (1912): the only Japanese survivor, Masabumi Hosono, was publicly shamed and lost his government job in Japan for not dying honorably with the other passengers",
-      "reason": "VisualCheckFailed: ep067 beat 5: no verified alternative (unrelated newspaper article from 1907)",
-      "quota": false,
-      "overloaded": false
-    },
-    {
-      "id": "ep068",
-      "outcome": "unfinished",
-      "topic": "Wanggongchang Explosion (1626): a massive unexplained blast rocked Beijing, stripping people of their clothes and leaving a silent void",
-      "reason": "VisualCheckFailed: ep068 beat 3: replacement image failed (wrong event, shows 1879 Madrid explosion)",
+      "reason": "VisualCheckFailed: ep067 beat 5: no verified alternative (wrong date and publication)",
       "quota": false,
       "overloaded": false
     },
@@ -118,31 +104,31 @@
       "id": "ep069",
       "outcome": "unfinished",
       "topic": "Hugh Glass (1823): after being mauled by a grizzly and left for dead in a shallow grave, he crawled 200 miles to safety but chose to forgive the men who abandoned him",
-      "reason": "VisualCheckFailed: ep069 beat 4: replacement image failed (map of wrong states)",
+      "reason": "VisualCheckFailed: ep069 beat 4: replacement image failed (modern-looking image for a historical scene)",
       "quota": false,
       "overloaded": false
     }
   ],
   "spawned": [
     {
-      "id": "ep066",
-      "topic": "Great Siege of Malta (1565): a handful of knights held off an invading armada against impossible odds, surviving until relief finally arrived",
-      "call_id": "fc-01M43QSW4Q3957D0HBPQFMJHD6"
-    },
-    {
       "id": "ep067",
       "topic": "Sinking of the Titanic (1912): the only Japanese survivor, Masabumi Hosono, was publicly shamed and lost his government job in Japan for not dying honorably with the other passengers",
-      "call_id": "fc-01M43QSWN7KHGWH0YZ1P8K7M8K"
-    },
-    {
-      "id": "ep068",
-      "topic": "Wanggongchang Explosion (1626): a massive unexplained blast rocked Beijing, stripping people of their clothes and leaving a silent void",
-      "call_id": "fc-01M43QSX76NAD4S8R0F1RH4ZXE"
+      "call_id": "fc-01M43QZG2T486WNX6SE4EZQXG7"
     },
     {
       "id": "ep069",
       "topic": "Hugh Glass (1823): after being mauled by a grizzly and left for dead in a shallow grave, he crawled 200 miles to safety but chose to forgive the men who abandoned him",
-      "call_id": "fc-01M43QSXPJ2YD10CAWEAX19GV6"
+      "call_id": "fc-01M43QZHBWMK5MPC3P3B1WWH57"
+    },
+    {
+      "id": "ep070",
+      "topic": "Great Blizzard of 1888 (1888): commuters stepped into mild spring weather before a sudden whiteout froze New York City in its tracks",
+      "call_id": "fc-01M43QZJH4X9K0PX9B9TZ2E3NY"
+    },
+    {
+      "id": "ep071",
+      "topic": "Library of Alexandria: it wasn't lost in one great fire, but declined over centuries",
+      "call_id": "fc-01M43QZKKY4Z62KXATK0GH7F1D"
     }
   ],
   "in_cloud": [
@@ -154,7 +140,7 @@
     {
       "id": "ep067",
       "topic": "Sinking of the Titanic (1912): the only Japanese survivor, Masabumi Hosono, was publicly shamed and lost his government job in Japan for not dying honorably with the other passengers",
-      "spawned_at": "2026-10-04T20:46:31+05:30"
+      "spawned_at": "2026-10-04T20:49:35+05:30"
     },
     {
       "id": "ep068",
@@ -164,7 +150,17 @@
     {
       "id": "ep069",
       "topic": "Hugh Glass (1823): after being mauled by a grizzly and left for dead in a shallow grave, he crawled 200 miles to safety but chose to forgive the men who abandoned him",
-      "spawned_at": "2026-10-04T20:46:32+05:30"
+      "spawned_at": "2026-10-04T20:49:36+05:30"
+    },
+    {
+      "id": "ep070",
+      "topic": "Great Blizzard of 1888 (1888): commuters stepped into mild spring weather before a sudden whiteout froze New York City in its tracks",
+      "spawned_at": "2026-10-04T20:49:37+05:30"
+    },
+    {
+      "id": "ep071",
+      "topic": "Library of Alexandria: it wasn't lost in one great fire, but declined over centuries",
+      "spawned_at": "2026-10-04T20:49:38+05:30"
     }
   ],
   "published": [],
@@ -172,11 +168,10 @@
   "failed_posts": [],
   "not_live": [],
   "llm": {
-    "calls": 20,
+    "calls": 5,
     "by_model": {
-      "gemini-3.5-flash": 4,
-      "gemini-3-flash-preview": 8,
-      "gemini-3.5-flash-lite": 8
+      "gemini-3.7-flash": 2,
+      "gemini-3.5-flash-lite": 3
     },
     "out_of_quota": []
   },
@@ -185,20 +180,20 @@
     "runner": 0
   },
   "daily_done": "2026-10-04",
-  "minutes_this_month": 62.25495676895,
+  "minutes_this_month": 64.27026745848333,
   "minutes_budget": null,
   "modal_cost": {
-    "metered": 5.27,
+    "metered": 5.31,
     "billed": 0.0
   },
   "modal_credit": 30.0,
   "capacity": {
-    "cloud": 189,
+    "cloud": 187,
     "runner": 0,
     "runner_minutes": 0,
-    "modal_credit_left": 22.73
+    "modal_credit_left": 22.45
   },
   "made_here": 0,
-  "open_topics": 155,
+  "open_topics": 153,
   "parked_topics": 17
 }

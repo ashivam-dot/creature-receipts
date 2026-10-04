@@ -72,7 +72,7 @@ event is told for its gore. Space topics belong to the sister channel Universe R
 - Victoria Hall disaster (1883): a floor bolt narrowed a swing door at the lower landing as children left a performance for prizes — making (ep056)
 - Burning of Smyrna (1922): the fire engulfed the city as refugees crowded the quay; its origin and foreign naval response require careful source review — making (ep058)
 - Wanggongchang Explosion (1626): a massive unexplained blast rocked Beijing, stripping people of their clothes and leaving a silent void — making (ep068)
-- Great Blizzard of 1888 (1888): commuters stepped into mild spring weather before a sudden whiteout froze New York City in its tracks
+- Great Blizzard of 1888 (1888): commuters stepped into mild spring weather before a sudden whiteout froze New York City in its tracks — making (ep070)
 - Great Siege of Malta (1565): a handful of knights held off an invading armada against impossible odds, surviving until relief finally arrived — making (ep066)
 - Schoolhouse Blizzard (1888): a warm morning lured children to school without coats before a wall of ice struck at recess — making (ep060)
 - Battle of Myeongnyang (1597): Admiral Yi defeated 133 Japanese warships with only 13 vessels by using a whirlpool-filled strait — dropped (ep062)
@@ -183,7 +183,7 @@ event is told for its gore. Space topics belong to the sister channel Universe R
 - Battle of the Teutoburg Forest (9 AD): three Roman legions were wiped out, and Augustus is said to have cried "Varus, give me back my legions!"
 - Siege of Baghdad (1258): accounts say the Tigris ran black with ink from the books thrown into it
 - Third Punic War (146 BC): Rome destroyed Carthage, but the story that it salted the earth appears to be a modern invention
-- Library of Alexandria: it wasn't lost in one great fire, but declined over centuries
+- Library of Alexandria: it wasn't lost in one great fire, but declined over centuries — making (ep071)
 - Reichstag fire (1933): the German parliament building burned just weeks after Hitler took power, instantly triggering emergency decrees that ended democracy — parked (ep036)
 - Ashanti Empire (1900): the Golden Stool was demanded by the British governor who did not know he was asking to sit on a sacred spirit shrine, sparking an uprising
 - Siege of the Sogdian Rock (327 BC): Alexander the Great's soldiers used iron tent pegs as pitons to scale a 'vertical' cliff at night to capture an unreachable fortress
