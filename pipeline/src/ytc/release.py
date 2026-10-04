@@ -29,7 +29,9 @@ _CC_BY = re.compile(r"CC BY (?:2\.0|2\.5|3\.0|4\.0)(?: [a-z]{2})?\Z", re.I)
 _OPEN = {"CC0", "Public domain", "Pexels License", "Pixabay Content License"}
 _ORIGINAL = {"designed card", "AI generated"}
 FIRST_ELIGIBLE_EPISODE = 63  # ep062 and earlier existed when this gate was designed.
-FIRST_ELIGIBLE_START = datetime(2026, 10, 5, tzinfo=timezone.utc)
+# ep063 does not exist yet. Allow new drafts made after this rollout on October 4
+# so a successful bounded trial can be released without an unnecessary day of delay.
+FIRST_ELIGIBLE_START = datetime(2026, 10, 4, 5, tzinfo=timezone.utc)
 MIN_POST_LEAD = timedelta(minutes=30)
 MAX_POST_HORIZON = timedelta(days=30)
 MAX_INSTAGRAM_RETRY = timedelta(days=7)

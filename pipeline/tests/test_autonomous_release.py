@@ -120,7 +120,9 @@ def test_optional_policy_keeps_episode_floor_and_start_cutoff(episode):
         release.validate(episode / "short.yaml")
     data["min_episode_id"] = "ep063"
     config.write_text(json.dumps(data))
-    (episode / "topic.json").write_text(json.dumps({"started_at": "2026-10-04T23:59:59+00:00"}))
+    data["started_after_utc"] = "2026-10-04T05:00:00+00:00"
+    config.write_text(json.dumps(data))
+    (episode / "topic.json").write_text(json.dumps({"started_at": "2026-10-04T04:59:59+00:00"}))
     with pytest.raises(RuntimeError, match="time cutoff"):
         release.validate(episode / "short.yaml")
 
