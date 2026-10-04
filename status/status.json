@@ -1,14 +1,14 @@
 {
-  "updated_at": "2026-10-04T10:18:07+05:30",
+  "updated_at": "2026-10-04T10:37:40+05:30",
   "day": 3,
   "result": "ok",
   "run": {
     "host": "modal",
-    "id": "ta-01M42KTVAS7MACEGXCMH186JRR",
+    "id": "ta-01M42MYJDAHP0XFWEJ5RHXAMCR",
     "number": null,
     "trigger": "schedule",
-    "started_at": "2026-10-04T10:18:01+05:30",
-    "started_at_utc": "2026-10-04T04:48:01+00:00",
+    "started_at": "2026-10-04T10:37:32+05:30",
+    "started_at_utc": "2026-10-04T05:07:32+00:00",
     "seconds": 7
   },
   "stages": [
@@ -22,7 +22,7 @@
       "name": "sync",
       "ok": true,
       "detail": "5 posts",
-      "seconds": 0.8
+      "seconds": 0.7
     },
     {
       "name": "playlists",
@@ -34,25 +34,25 @@
       "name": "languages",
       "ok": true,
       "detail": "every live Short is in English",
-      "seconds": 0.4
+      "seconds": 0.1
     },
     {
       "name": "on youtube",
       "ok": true,
       "detail": "every Short sent is public",
-      "seconds": 0.1
+      "seconds": 0.2
     },
     {
       "name": "short reviews",
       "ok": true,
-      "detail": "no checkpoint due",
-      "seconds": 0.3
+      "detail": "ep054 at 6 h: not shown yet: 6 views in 6 hours (no source data yet). YouTube hasn't tested it in the Shorts feed, so this says nothing about the script",
+      "seconds": 1.0
     },
     {
       "name": "collect",
       "ok": true,
       "detail": "nothing in the cloud",
-      "seconds": 0.6
+      "seconds": 0.7
     }
   ],
   "errors": [],
