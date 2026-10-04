@@ -1,0 +1,58 @@
+{
+  "version": 1,
+  "max_candidates_per_run": 2,
+  "candidates": [
+    {
+      "id": "oppau-1921",
+      "primary_kind": "retrospective_original_technical_study",
+      "source_canaries": {
+        "primary": ["ammonium sulfate nitrate", "unforeseen explosivity"],
+        "independent": ["sulfo-nitrate", "561 morts"]
+      },
+      "art": [
+        {
+          "title": "File:Oppau Explosion 1921.JPG",
+          "description_url": "https://commons.wikimedia.org/wiki/File:Oppau_Explosion_1921.JPG",
+          "download_url": "https://upload.wikimedia.org/wikipedia/commons/f/f0/Oppau_Explosion_1921.JPG",
+          "sha256": "ec2946a024ed5a519b1d3d9ebe0ec7f244396fe4211bc500e365b7a988202318",
+          "scene": "Contemporary published illustration of the Oppau plant ruins after the explosion; use only for aftermath, not the blast itself.",
+          "description_canary": "damage from the Oppau Explosion"
+        },
+        {
+          "title": "File:Oppau Explosion of 1921 (image 4).jpg",
+          "description_url": "https://commons.wikimedia.org/wiki/File:Oppau_Explosion_of_1921_(image_4).jpg",
+          "download_url": "https://upload.wikimedia.org/wikipedia/commons/5/5f/Oppau_Explosion_of_1921_%28image_4%29.jpg",
+          "sha256": "9ebda3bcbf3d336241c43448dfb3ccac69019de2b860c01fda25343f66d8dbf9",
+          "scene": "1921 postcard showing ruined Oppau plant equipment; use only for aftermath, not a preblast chemical process.",
+          "description_canary": "Postcard of the Oppau Explosion"
+        }
+      ]
+    },
+    {
+      "id": "mann-gulch-1949",
+      "primary_kind": "contemporaneous_board_report",
+      "source_canaries": {
+        "primary": ["Mann Gulch Fire", "Board of Review", "August 5, 1949"],
+        "independent": ["Mann Gulch Fire, 1949", "Dodge stopped to set a small escape fire"]
+      },
+      "art": [
+        {
+          "title": "File:MannGulchFire.jpg",
+          "description_url": "https://commons.wikimedia.org/wiki/File:MannGulchFire.jpg",
+          "download_url": "https://upload.wikimedia.org/wikipedia/commons/e/e1/MannGulchFire.jpg",
+          "sha256": "f7d731393700011e80b16ead89a4980a54db04ceb99142d6906818a93e063734",
+          "scene": "Investigation party at the burned Mann Gulch site; use as aftermath context, not footage of the crew during the fire.",
+          "description_canary": "Investigation party photo taken from the N slope of Mann Gulch"
+        },
+        {
+          "title": "File:Mann Gulch Fire, 1949. Dodge \"escape fire\" map.jpg",
+          "description_url": "https://commons.wikimedia.org/wiki/File:Mann_Gulch_Fire,_1949._Dodge_%22escape_fire%22_map.jpg",
+          "download_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2f/Mann_Gulch_Fire%2C_1949._Dodge_%22escape_fire%22_map.jpg/1280px-Mann_Gulch_Fire%2C_1949._Dodge_%22escape_fire%22_map.jpg",
+          "sha256": "6341aec7f1c9c7fc1efa66799f31f209653cc78da5398d4efbd1c9a436b8145a",
+          "scene": "Historical route diagram; use only as a labelled map of Dodge's escape fire and survivors' routes.",
+          "description_canary": "Shows routes that survivors took"
+        }
+      ]
+    }
+  ]
+}

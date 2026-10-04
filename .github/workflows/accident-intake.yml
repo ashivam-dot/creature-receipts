@@ -1,0 +1,49 @@
+name: History checked accident source and art intake
+
+on:
+  schedule:
+    - cron: '10 4 * * *'
+  workflow_dispatch:
+
+concurrency:
+  group: history-accident-intake
+  cancel-in-progress: false
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  preflight:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          persist-credentials: false
+      - name: Refresh two pinned source and art leads without admitting a draft
+        run: python3 monitor/accident_intake.py --report /tmp/history-accident-intake.json --issue-body /tmp/history-accident-intake-issue.md
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: history-accident-intake-${{ github.run_id }}
+          path: /tmp/history-accident-intake.json
+          retention-days: 14
+          if-no-files-found: ignore
+      - name: Maintain a durable owner supply alert
+        if: always()
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          if [ ! -s /tmp/history-accident-intake-issue.md ]; then
+            printf 'Bounded source/art intake failed before it could produce a report. Run: %s\nProducer selection and recurring release stay closed.\n' "$GITHUB_SERVER_URL/$GITHUB_REPOSITORY/actions/runs/$GITHUB_RUN_ID" > /tmp/history-accident-intake-issue.md
+          fi
+          title='[supply] Checked History accident lane needs independent source and art approval'
+          number=$(gh issue list --state open --limit 100 --json number,title --jq '.[] | select(.title=="[supply] Checked History accident lane needs independent source and art approval") | .number' | head -n 1)
+          if [ -n "$number" ]; then
+            gh issue edit "$number" --body-file /tmp/history-accident-intake-issue.md
+          else
+            gh issue create --title "$title" --body-file /tmp/history-accident-intake-issue.md
+          fi
+      - name: Require an audit record
+        run: test -s /tmp/history-accident-intake.json

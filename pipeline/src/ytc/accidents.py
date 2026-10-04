@@ -19,6 +19,7 @@ from .studio import ROOT
 log = logging.getLogger(__name__)
 
 CANDIDATES = ROOT / "strategy" / "ACCIDENT-CANDIDATES.json"
+SELECTION_POLICY = ROOT / "status" / "accident_selection_policy.json"
 SERIES = {"The Last Hours", "Warnings Ignored"}
 ROLES = {"primary", "independent"}
 DISALLOWED_SITES = {"wikipedia.org", "wikimedia.org", "wikidata.org"}
@@ -119,3 +120,15 @@ def next_candidate(known_topics: list[str], used_ids: set[str], today: date | No
 def by_topic(topic: str, today: date | None = None) -> dict | None:
     """Find only an exact pool topic when binding sources to an episode."""
     return next((row for row in load(today) if row["topic"] == topic), None)
+
+
+def selection_allowed(candidate_id: str) -> bool:
+    """Keep candidate leads out of producer jobs until separately approved."""
+    try:
+        value = json.loads(SELECTION_POLICY.read_text(encoding="utf-8"))
+    except (OSError, ValueError):
+        return False
+    return (isinstance(value, dict) and value.get("version") == 1 and
+            value.get("enabled") is True and
+            isinstance(value.get("approved_candidate_ids"), list) and
+            candidate_id in value["approved_candidate_ids"])

@@ -831,11 +831,15 @@ def _jobs(count: int) -> list[dict]:
             for e in half_made[:count]]
     today = _now().date()
     for topic in choose_topics(count - len(jobs), eps):
+        candidate = accidents.by_topic(topic["topic"], today)
+        if candidate and not accidents.selection_allowed(candidate["id"]):
+            log.info("checked accident lead %s is held before producer selection", candidate["id"])
+            continue
         episode_id = studio.next_id()
         at = topic["date"].isoformat() if topic["kind"] == "anniversary" and topic.get("date") else None
         meta = {"topic": topic["topic"], "series": topic["series"], "at": at,
                 "started_at": _now().isoformat(timespec="seconds"), "attempts": 0}
-        if candidate := accidents.by_topic(topic["topic"], today):
+        if candidate:
             meta["candidate_id"] = candidate["id"]
             meta["research_sources"] = candidate["sources"]
             meta["research_cautions"] = candidate["cautions"]
