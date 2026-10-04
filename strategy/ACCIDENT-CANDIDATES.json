@@ -119,7 +119,7 @@
   },
   {
     "id": "boston-molasses-1919",
-    "order": 10,
+    "order": 5,
     "year": 1919,
     "series": "Warnings Ignored",
     "topic": "Boston Molasses Flood (1919): a leaking 2.3-million-gallon tank burst at midday and a wave of molasses swept the North End",
@@ -151,7 +151,7 @@
   },
   {
     "id": "eastland-1915",
-    "order": 11,
+    "order": 6,
     "year": 1915,
     "series": "The Last Hours",
     "topic": "Eastland disaster (1915): the crowded excursion steamer listed at its Chicago River wharf for minutes, then rolled onto its side",
@@ -184,8 +184,39 @@
     ]
   },
   {
+    "id": "fidenae-27",
+    "order": 7,
+    "year": 27,
+    "series": "The Last Hours",
+    "topic": "Atilius's amphitheatre (AD 27): at Fidenae a cheaply built wooden arena packed with crowds starved of gladiator shows under Tiberius gives way, burying spectators and bystanders while families search the ruins day and night",
+    "aliases": [
+      "Fidenae"
+    ],
+    "checked_at": "2026-10-04",
+    "sources": [
+      {
+        "role": "primary",
+        "institution": "Perseus Digital Library, Tufts University (Tacitus, Annals 4.62, Church & Brodribb translation)",
+        "url": "https://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.02.0078:book=4:chapter=62",
+        "focus": [
+          "failed to lay a solid foundation"
+        ]
+      },
+      {
+        "role": "independent",
+        "institution": "Guinness World Records",
+        "url": "https://www.guinnessworldrecords.com/world-records/64249-worst-sporting-disaster"
+      }
+    ],
+    "cautions": [
+      "Tacitus gives 50,000 killed or maimed; Suetonius gives over 20,000 dead. Both are ancient figures that cannot be verified; say 'tens of thousands, by Roman accounts' rather than a precise toll.",
+      "The translation spells the town 'Fidena'; the modern name is Fidenae.",
+      "Tacitus blames Atilius's poor foundations and weak joints; the Senate later exiled him and imposed wealth and ground-testing rules (Annals 4.63)."
+    ]
+  },
+  {
     "id": "st-francis-dam-1928",
-    "order": 12,
+    "order": 8,
     "year": 1928,
     "series": "Warnings Ignored",
     "topic": "St. Francis Dam disaster (1928): engineers inspected a muddy leak that morning and judged it safe; the dam broke before midnight",
@@ -218,7 +249,7 @@
   },
   {
     "id": "knickerbocker-theater-1922",
-    "order": 13,
+    "order": 9,
     "year": 1922,
     "series": "The Last Hours",
     "topic": "Knickerbocker Theater collapse (1922): record snow weighed on the flat roof during a 9 p.m. silent-film show until it caved in",
@@ -251,8 +282,44 @@
     ]
   },
   {
+    "id": "vasa-1628",
+    "order": 10,
+    "year": 1628,
+    "series": "Warnings Ignored",
+    "topic": "Vasa (1628): a pre-launch test with thirty men running across the deck nearly capsized her at the quay, yet she sailed and sank about 1,300 metres into her maiden voyage",
+    "aliases": [
+      "Vasa",
+      "Wasa"
+    ],
+    "checked_at": "2026-10-04",
+    "sources": [
+      {
+        "role": "primary",
+        "institution": "Vasa Museum (Swedish National Maritime and Transport Museums), account of the 5 September 1628 inquest record held by Riksarkivet",
+        "url": "https://www.vasamuseet.se/en/explore/vasa-history/inquest",
+        "focus": [
+          "thirty men ran back and forth over the upper deck"
+        ]
+      },
+      {
+        "role": "independent",
+        "institution": "Carnegie Mellon University course page reproducing the case study 'The Vasa Capsizes'",
+        "url": "https://www.andrew.cmu.edu/course/67-325/vasa.html",
+        "focus": [
+          "After the third crossing they were stopped",
+          "His Royal Majesty had been at home"
+        ]
+      }
+    ],
+    "cautions": [
+      "The primary page is the Vasa Museum's summary of the surviving inquest transcript (the original is Swedish, in Riksarkivet), not a full English translation.",
+      "About 30 people died; the exact toll is not certain. Distance sailed is given as about 1,300 m (museum) or about 1,400 yards (case study).",
+      "No one was punished; blame effectively fell on the dead designer Henrik Hybertsson. Do not say the king was told of the stability test."
+    ]
+  },
+  {
     "id": "new-london-school-1937",
-    "order": 14,
+    "order": 11,
     "year": 1937,
     "series": "The Last Hours",
     "topic": "New London School explosion (1937): leaked gas built up beneath the school until a shop-class sander ignited it near the end of the day",
@@ -283,7 +350,7 @@
   },
   {
     "id": "port-chicago-1944",
-    "order": 15,
+    "order": 12,
     "year": 1944,
     "series": "The Last Hours",
     "topic": "Port Chicago explosion (1944): sailors pushed to compete on loading tonnage were working the pier when munitions detonated at about 10:18 p.m.",
@@ -314,8 +381,39 @@
     ]
   },
   {
+    "id": "fire-of-rome-64",
+    "order": 13,
+    "year": 64,
+    "series": "The Last Hours",
+    "topic": "Fire of Rome (AD 64): flames break out among shops of flammable goods beside the Circus and, driven by wind through narrow twisting lanes, outrun every effort to stop them as fleeing crowds are trapped",
+    "aliases": [
+      "Fire of Rome"
+    ],
+    "checked_at": "2026-10-04",
+    "sources": [
+      {
+        "role": "primary",
+        "institution": "LacusCurtius, University of Chicago (Tacitus, Annals 15.38-44, Loeb translation)",
+        "url": "https://penelope.uchicago.edu/thayer/e/roman/texts/tacitus/annals/15b*.html",
+        "focus": [
+          "swept the full length of the Circus"
+        ]
+      },
+      {
+        "role": "independent",
+        "institution": "HistoryExtra (BBC History Magazine)",
+        "url": "https://www.historyextra.com/period/roman/a-big-day-in-history-the-great-fire-of-rome/"
+      }
+    ],
+    "cautions": [
+      "Do not assert Nero started the fire; Tacitus says it is uncertain whether it was chance or the emperor's malice.",
+      "No reliable death toll exists; do not invent one.",
+      "Nero was at Antium when it began; the 'fiddling' story is later legend."
+    ]
+  },
+  {
     "id": "silvertown-1917",
-    "order": 16,
+    "order": 14,
     "year": 1917,
     "series": "Warnings Ignored",
     "topic": "Silvertown explosion (1917): a fire at a TNT works beside crowded terraces set off about 50 tons of explosive at 6.52 pm",
@@ -347,7 +445,7 @@
   },
   {
     "id": "iroquois-theater-1903",
-    "order": 17,
+    "order": 15,
     "year": 1903,
     "series": "The Last Hours",
     "topic": "Iroquois Theater fire (1903): an arc light ignited a curtain mid-matinee, the fire curtain jammed, and the crowd found exits barred",
@@ -380,8 +478,39 @@
     ]
   },
   {
+    "id": "mary-rose-1545",
+    "order": 16,
+    "year": 1545,
+    "series": "The Last Hours",
+    "topic": "Mary Rose (1545): a survivor said she heeled in the wind while turning and water poured through gun ports left open after firing, as Henry VIII watched",
+    "aliases": [
+      "Mary Rose"
+    ],
+    "checked_at": "2026-10-04",
+    "sources": [
+      {
+        "role": "primary",
+        "institution": "Calendar of State Papers, Spain, vol. 8: François van der Delft to Charles V, 24 July 1545 (reproduced by All About History)",
+        "url": "https://www.allabouthistory.co.uk/History/g8/Calendar-of-State-Papers-of-Spain",
+        "focus": [
+          "lowest row of gun ports on one side of the ship"
+        ]
+      },
+      {
+        "role": "independent",
+        "institution": "HistoryExtra (BBC History Magazine)",
+        "url": "https://www.historyextra.com/period/tudor/why-did-mary-rose-sink/"
+      }
+    ],
+    "cautions": [
+      "The cause is still debated (gust plus open gunports, overloading, crew indiscipline, a French claim of gunfire); present the survivor's account as one testimony.",
+      "Roughly 500 aboard and only about 25-30 survivors per van der Delft; later accounts (Hooker) give 700. The 'sort of knaves' line is a later Carew family account.",
+      "The calendar text spells the vice-admiral 'Garew'; he was Sir George Carew."
+    ]
+  },
+  {
     "id": "general-slocum-1904",
-    "order": 18,
+    "order": 17,
     "year": 1904,
     "series": "The Last Hours",
     "topic": "General Slocum fire (1904): the burning steamer kept running up the East River toward North Brother Island as faulty life preservers failed",
@@ -414,7 +543,7 @@
   },
   {
     "id": "tay-bridge-1879",
-    "order": 19,
+    "order": 18,
     "year": 1879,
     "series": "The Last Hours",
     "topic": "Tay Bridge disaster (1879): in a gale a signalman watched the evening train cross until a bright flash and total darkness",
@@ -441,6 +570,34 @@
     "cautions": [
       "The inquiry estimated 74 or 75 aboard; there were no survivors and not all bodies were recovered.",
       "The observer in the inquiry's account was surfaceman John Watt in the signal cabin with signalman Barclay; do not misattribute."
+    ]
+  },
+  {
+    "id": "white-ship-1120",
+    "order": 19,
+    "year": 1120,
+    "series": "The Last Hours",
+    "topic": "Barfleur (1120): the White Ship's drunken crew rows hard into the night to overtake King Henry's ship, strikes a rock, and heir William's escape boat is swamped when he turns back for his sister",
+    "aliases": [
+      "White Ship"
+    ],
+    "checked_at": "2026-10-04",
+    "sources": [
+      {
+        "role": "primary",
+        "institution": "Project Gutenberg (William of Malmesbury, Chronicle of the Kings of England, Giles translation)",
+        "url": "https://www.gutenberg.org/cache/epub/50778/pg50778-images.html"
+      },
+      {
+        "role": "independent",
+        "institution": "British Library, Medieval Manuscripts blog",
+        "url": "https://www.bl.uk/stories/blogs/posts/900-years-since-the-white-ship-disaster"
+      }
+    ],
+    "cautions": [
+      "About 300 aboard is an approximate chronicle figure.",
+      "The drunkenness and the race against the king's ship come from chroniclers writing years later; attribute them.",
+      "Malmesbury and Orderic Vitalis differ in details; the lone survivor (a butcher of Rouen in Orderic) clung to wreckage overnight."
     ]
   },
   {
@@ -507,8 +664,40 @@
     ]
   },
   {
-    "id": "austin-dam-1911",
+    "id": "great-fire-london-1666",
     "order": 22,
+    "year": 1666,
+    "series": "The Last Hours",
+    "topic": "Great Fire of London (1666): Pepys was woken at 3 a.m., saw the fire spread from a baker's in Pudding Lane, and found the Lord Mayor crying 'Lord! what can I do? I am spent'",
+    "aliases": [
+      "Great Fire of London"
+    ],
+    "checked_at": "2026-10-04",
+    "sources": [
+      {
+        "role": "primary",
+        "institution": "The Diary of Samuel Pepys, 2 September 1666 (pepysdiary.com)",
+        "url": "https://www.pepysdiary.com/diary/1666/09/02/",
+        "focus": [
+          "Jane called us up about three in the morning",
+          "Lord! what can I do? I am spent"
+        ]
+      },
+      {
+        "role": "independent",
+        "institution": "Historic UK",
+        "url": "https://www.historic-uk.com/HistoryUK/HistoryofEngland/The-Great-Fire-of-London/"
+      }
+    ],
+    "cautions": [
+      "Recorded deaths were very few but the real toll is unknown; do not state a death figure.",
+      "Pepys first thought the fire far off and went back to bed; the Pudding Lane origin came to him from the Lieutenant of the Tower later that morning.",
+      "The Lord Mayor's 'a woman might piss it out' line comes from the independent page's retelling, not from Pepys."
+    ]
+  },
+  {
+    "id": "austin-dam-1911",
+    "order": 23,
     "year": 1911,
     "series": "Warnings Ignored",
     "topic": "Austin Dam (1911): the leaking concrete dam stood full after rains, the mill would not lower it, and it burst that afternoon",
@@ -542,7 +731,7 @@
   },
   {
     "id": "cocoanut-grove-1942",
-    "order": 30,
+    "order": 24,
     "year": 1942,
     "series": "The Last Hours",
     "topic": "Cocoanut Grove (1942): a match lit to fix a basement light bulb, and minutes later the revolving door jams under the crowd",
@@ -573,8 +762,36 @@
     ]
   },
   {
+    "id": "bal-des-ardents-1393",
+    "order": 25,
+    "year": 1393,
+    "series": "The Last Hours",
+    "topic": "Charles VI's Paris dance (1393): at the Bal des Ardents a torch held too close ignites the flax-and-pitch wild-man costumes of the chained dancers, and the Duchess of Berry smothers the king under her gown",
+    "aliases": [
+      "Bal des Ardents"
+    ],
+    "checked_at": "2026-10-04",
+    "sources": [
+      {
+        "role": "primary",
+        "institution": "Internet Archive (Froissart, Chronicles, Book IV, Johnes translation, vol. 2)",
+        "url": "https://archive.org/stream/chroniclesofenglandjohnes2/chroniclesofenglandjohnes2_djvu.txt"
+      },
+      {
+        "role": "independent",
+        "institution": "Medievalists.net",
+        "url": "https://www.medievalists.net/2023/06/bal-des-ardents/"
+      }
+    ],
+    "cautions": [
+      "Froissart presents the Duke of Orleans's torch as a careless accident; do not call it deliberate (later rumours claimed so).",
+      "Four dancers died (some at the scene, others days later); Nantouillet survived by leaping into a tub of water.",
+      "Froissart's dates and some details differ from the Monk of Saint-Denis; keep to the core sequence."
+    ]
+  },
+  {
     "id": "collinwood-school-fire-1908",
-    "order": 31,
+    "order": 26,
     "year": 1908,
     "series": "The Last Hours",
     "topic": "Collinwood school fire (1908): a morning fire turns the main stairwell into a chimney and children pile up at the rear exit",
@@ -607,7 +824,7 @@
   },
   {
     "id": "monongah-1907",
-    "order": 32,
+    "order": 27,
     "year": 1907,
     "series": "The Last Hours",
     "topic": "Monongah (1907): the morning after a holiday, a runaway trip of loaded cars and then an explosion through mines No. 6 and 8",
@@ -641,8 +858,42 @@
     ]
   },
   {
+    "id": "scilly-naval-1707",
+    "order": 28,
+    "year": 1707,
+    "series": "The Last Hours",
+    "topic": "Scilly naval disaster (1707): believing the Channel was open, Shovell's flagship Association struck the rocks at night; a following admiral heard her distress gun, then saw no lights",
+    "aliases": [
+      "Scilly naval disaster",
+      "HMS Association",
+      "Cloudesley Shovell"
+    ],
+    "checked_at": "2026-10-04",
+    "sources": [
+      {
+        "role": "primary",
+        "institution": "J. H. Cooke, 'The Shipwreck of Sir Cloudesley Shovell' (1883), reproducing contemporary manuscripts, letters and logs (hosted by The Gunroom of HMS Surprise)",
+        "url": "https://www.hmssurprise.org/shipwreck-sir-cloudesley-shovell",
+        "focus": [
+          "heard one of his guns go off as a signal of distress",
+          "lifted the St. George over the reef into deep water"
+        ]
+      },
+      {
+        "role": "independent",
+        "institution": "BBC Travel",
+        "url": "https://www.bbc.com/travel/article/20210729-the-british-shipwreck-that-changed-the-world"
+      }
+    ],
+    "cautions": [
+      "Death toll estimates range from about 1,400 to 2,000; do not give one exact figure.",
+      "The hanged-sailor story and the woman who killed Shovell for his ring are legends; Cooke himself calls the hanging tale ridiculous.",
+      "Night of 22 October 1707 (Old Style). Navigational error involved latitude as well as longitude; avoid saying longitude alone caused it."
+    ]
+  },
+  {
     "id": "cherry-mine-1909",
-    "order": 33,
+    "order": 29,
     "year": 1909,
     "series": "The Last Hours",
     "topic": "Cherry Mine (1909): a hay car parked under a kerosene torch, and rescuers who went down six times but not a seventh",
@@ -677,7 +928,7 @@
   },
   {
     "id": "senghenydd-1913",
-    "order": 34,
+    "order": 30,
     "year": 1913,
     "series": "The Last Hours",
     "topic": "Senghenydd (1913): ten past eight in the morning, a blast fires the cage up the Lancaster Shaft and the west side burns",
@@ -712,8 +963,39 @@
     ]
   },
   {
+    "id": "london-bridge-1212",
+    "order": 31,
+    "year": 1212,
+    "series": "The Last Hours",
+    "topic": "London Bridge (1212): crowds pouring onto the bridge to fight or watch the Southwark blaze are trapped when the wind sets the far end alight, and the rescue boats they rush into sink",
+    "aliases": [
+      "London Bridge"
+    ],
+    "checked_at": "2026-10-04",
+    "sources": [
+      {
+        "role": "primary",
+        "institution": "Project Gutenberg (John Stow, A Survey of London, 1598/1603)",
+        "url": "https://www.gutenberg.org/cache/epub/42959/pg42959-images.html",
+        "focus": [
+          "the people thronging themselves between the two fires"
+        ]
+      },
+      {
+        "role": "independent",
+        "institution": "Historic UK",
+        "url": "https://www.historic-uk.com/HistoryUK/HistoryofEngland/Great-Fire-of-London-1212/"
+      }
+    ],
+    "cautions": [
+      "Stow's figure of about 3,000 dead is considered a large exaggeration by modern historians; say 'many' or attribute the number.",
+      "Stow wrote nearly 400 years after the event; the earliest record (Liber de Antiquis Legibus, 1274) is brief.",
+      "Sources give 10-12 July 1212."
+    ]
+  },
+  {
     "id": "gresford-1934",
-    "order": 35,
+    "order": 32,
     "year": 1934,
     "series": "The Last Hours",
     "topic": "Gresford (1934): miners double up the Friday night shift to see Saturday's match, and at 2 a.m. the Dennis section explodes",
@@ -748,7 +1030,7 @@
   },
   {
     "id": "pemberton-mill-1860",
-    "order": 36,
+    "order": 33,
     "year": 1860,
     "series": "Warnings Ignored",
     "topic": "Pemberton Mill (1860): hours after the mill falls on its workers, a rescuer's lantern breaks and sets the ruins on fire",
@@ -780,8 +1062,40 @@
     ]
   },
   {
+    "id": "royal-george-1782",
+    "order": 34,
+    "year": 1782,
+    "series": "The Last Hours",
+    "topic": "Royal George (1782): heeled at Spithead for a pipe repair while rum was loaded, she took water through open lower gunports and sank within minutes with hundreds of visitors aboard",
+    "aliases": [
+      "Royal George"
+    ],
+    "checked_at": "2026-10-04",
+    "sources": [
+      {
+        "role": "primary",
+        "institution": "James Ingram's survivor narrative, quoted in William Gates, The History of Portsmouth (1900), via History In Portsmouth",
+        "url": "https://historyinportsmouth.co.uk/events/royal-george.htm",
+        "focus": [
+          "Avast, Avast heeling"
+        ]
+      },
+      {
+        "role": "independent",
+        "institution": "Lloyd's Register Foundation Heritage & Education Centre",
+        "url": "https://heritage.lrfoundation.org.uk/stories/the-sinking-of-the-royal-george"
+      }
+    ],
+    "cautions": [
+      "Use the non-www host; www.historyinportsmouth.co.uk timed out in testing.",
+      "Ingram's account was published decades later; the story of a lieutenant rebuffing the carpenter is disputed. Say only that warnings to right the ship came too late.",
+      "Deaths were at least about 900 and uncertain; the court martial blamed decayed timbers, while modern analysis blames over-heeling.",
+      "Whether Kempenfelt was writing in his cabin (Cowper's poem) is questioned by recent research."
+    ]
+  },
+  {
     "id": "dutchmans-curve-1918",
-    "order": 37,
+    "order": 35,
     "year": 1918,
     "series": "The Last Hours",
     "topic": "Dutchman's Curve (1918): a late express and a local mistaking a switch engine for it, racing head-on along single track",
@@ -817,7 +1131,7 @@
   },
   {
     "id": "malbone-street-1918",
-    "order": 38,
+    "order": 36,
     "year": 1918,
     "series": "The Last Hours",
     "topic": "Malbone Street (1918): a strike-breaking dispatcher takes a packed wooden train into a 6 mph curve at over 30",
@@ -851,8 +1165,39 @@
     ]
   },
   {
+    "id": "carraia-bridge-1304",
+    "order": 37,
+    "year": 1304,
+    "series": "The Last Hours",
+    "topic": "Carraia Bridge (1304): Florentines crowd a wooden bridge on May Day to watch a staged Hell on the Arno that promised 'news of the other world', until it gives way and drops them into the river",
+    "aliases": [
+      "Carraia Bridge"
+    ],
+    "checked_at": "2026-10-04",
+    "sources": [
+      {
+        "role": "primary",
+        "institution": "Project Gutenberg (Giovanni Villani, Chronicle, Book VIII ch. 70, Selfe translation)",
+        "url": "https://www.gutenberg.org/cache/epub/33022/pg33022-images.html",
+        "focus": [
+          "whosoever desired news of the other world"
+        ]
+      },
+      {
+        "role": "independent",
+        "institution": "Florin.ms (Susan & Joanna Horner, Walks in Florence)",
+        "url": "https://www.florin.ms/hwalks33.html"
+      }
+    ],
+    "cautions": [
+      "Villani gives no death toll, only that many were killed, drowned and maimed; do not invent a number.",
+      "The link to the painter Buffalmacco comes from Vasari and is not reliable.",
+      "The independent page is a 19th-century guidebook; keep claims to what Villani states."
+    ]
+  },
+  {
     "id": "quintinshill-1915",
-    "order": 39,
+    "order": 38,
     "year": 1915,
     "series": "The Last Hours",
     "topic": "Quintinshill (1915): a late shift change, a forgotten local train on the main line, and a troop train bound for Gallipoli",
@@ -887,7 +1232,7 @@
   },
   {
     "id": "armagh-1889",
-    "order": 40,
+    "order": 39,
     "year": 1889,
     "series": "The Last Hours",
     "topic": "Armagh (1889): a Sunday school excursion stalls on the hill, is split in two, and ten locked carriages roll back",
@@ -922,8 +1267,42 @@
     ]
   },
   {
+    "id": "felling-colliery-1812",
+    "order": 40,
+    "year": 1812,
+    "series": "The Last Hours",
+    "topic": "Felling Colliery explosion (1812): at half past eleven the pit blew; by noon only 33 were brought up alive, and the last of 92 bodies was never found",
+    "aliases": [
+      "Felling Colliery",
+      "Felling"
+    ],
+    "checked_at": "2026-10-04",
+    "sources": [
+      {
+        "role": "primary",
+        "institution": "Rev. John Hodgson's 1813 account of the accident, transcribed by the Northern Mine Research Society",
+        "url": "https://nmrs.org.uk/mines-map/accidents-disasters/durham/felling-colliery-explosion-jarrow-1812/",
+        "focus": [
+          "tremendous explosion in this colliery",
+          "33 persons, all that survived this dreadful calamity",
+          "the body of number ninety-two has never yet been found"
+        ]
+      },
+      {
+        "role": "independent",
+        "institution": "Lancaster University, Letters and the Lamp project",
+        "url": "https://wp.lancs.ac.uk/lettersandthelamp/sections/the-industrial-revolution-coal-mining-and-the-felling-colliery-disaster/"
+      }
+    ],
+    "cautions": [
+      "92 died. Of the 33 brought up alive, three boys died within hours, so do not call all 33 survivors.",
+      "The mine was sealed and only reopened in July-September, with bodies recovered over months; avoid implying rescue continued underground that day.",
+      "Many victims were boys working as trappers and putters; ages are in Hodgson's list."
+    ]
+  },
+  {
     "id": "princess-alice-1878",
-    "order": 50,
+    "order": 41,
     "year": 1878,
     "series": "The Last Hours",
     "topic": "Princess Alice (1878): a packed Thames pleasure steamer heading home in the evening hears its captain cry 'Where are you coming to?' before the collier Bywell Castle splits it in two",
@@ -955,7 +1334,7 @@
   },
   {
     "id": "bethnal-green-1943",
-    "order": 51,
+    "order": 42,
     "year": 1943,
     "series": "The Last Hours",
     "topic": "Bethnal Green (1943): an air-raid siren, an unfamiliar rocket salvo, and a single fall on a dark wet stairway crush 173 people in seconds",
@@ -985,8 +1364,39 @@
     ]
   },
   {
+    "id": "viterbo-1277",
+    "order": 43,
+    "year": 1277,
+    "series": "The Last Hours",
+    "topic": "Viterbo (1277): Pope John XXI is crushed when the ceiling of the new private chamber hurriedly built for his studies collapses on him, and he dies days later",
+    "aliases": [
+      "Pope John XXI"
+    ],
+    "checked_at": "2026-10-04",
+    "sources": [
+      {
+        "role": "primary",
+        "institution": "Project Gutenberg (Giovanni Villani, Chronicle, Book VII, Selfe translation)",
+        "url": "https://www.gutenberg.org/cache/epub/33022/pg33022-images.html",
+        "focus": [
+          "sleeping in his room at Viterbo the ceiling fell down upon him"
+        ]
+      },
+      {
+        "role": "independent",
+        "institution": "The Past (Current Publishing)",
+        "url": "https://the-past.com/feature/viterbo-early-conclaves-and-a-papal-palace/"
+      }
+    ],
+    "cautions": [
+      "A single-victim accident; frame it as the pope's final days, not a mass tragedy.",
+      "Dates differ: most accounts put the collapse on 14 May and death on 20 May 1277; The Past puts the collapse on 20 May. Avoid exact day-counts.",
+      "Rumours that he died by sorcery are later monastic slanders."
+    ]
+  },
+  {
     "id": "dee-bridge-1847",
-    "order": 52,
+    "order": 44,
     "year": 1847,
     "series": "The Last Hours",
     "topic": "Dee Bridge (1847): hours after fresh ballast is laid, the last iron span gives way and the driver races his engine to the far bank as the carriages fall",
@@ -1017,7 +1427,7 @@
   },
   {
     "id": "holmfirth-flood-1852",
-    "order": 53,
+    "order": 45,
     "year": 1852,
     "series": "Warnings Ignored",
     "topic": "Holmfirth (1852): the defective, long-neglected Bilberry Reservoir dam gives way about an hour after midnight and a torrent sweeps down on a sleeping mill town",
@@ -1048,8 +1458,41 @@
     ]
   },
   {
+    "id": "london-beer-flood-1814",
+    "order": 46,
+    "year": 1814,
+    "series": "Warnings Ignored",
+    "topic": "Beer Flood (1814): an hour after a hoop slipped off a giant porter vat and a partner said no harm would follow, it burst and flooded the St Giles slum",
+    "aliases": [
+      "Beer Flood",
+      "London Beer Flood"
+    ],
+    "checked_at": "2026-10-04",
+    "sources": [
+      {
+        "role": "primary",
+        "institution": "Exeter Flying Post, 27 October 1814 (inquest testimony of storehouse clerk George Crick), transcribed by Ron Pattinson, Shut up about Barclay Perkins",
+        "url": "https://barclayperkins.blogspot.com/2024/06/1814-beer-flood.html",
+        "focus": [
+          "An hour before the accident a hoop was started",
+          "he said that no harm whatever would ensue"
+        ]
+      },
+      {
+        "role": "independent",
+        "institution": "The Independent",
+        "url": "https://www.independent.co.uk/life-style/food-and-drink/features/what-really-happened-in-the-london-beer-flood-200-years-ago-9796096.html"
+      }
+    ],
+    "cautions": [
+      "Eight people died. Beer volume figures vary widely; avoid precise gallon counts.",
+      "Crick said hoops burst two or three times a year without danger; the 'warning' is a slipped hoop, not an explicit prediction of disaster.",
+      "The inquest found death 'casually, accidentally and by misfortune'; stories of people drinking themselves to death are later embellishment."
+    ]
+  },
+  {
     "id": "vestris-1928",
-    "order": 54,
+    "order": 47,
     "year": 1928,
     "series": "The Last Hours",
     "topic": "SS Vestris (1928): a listing liner waits until morning to send its SOS, gives the wrong position, and capsizes before rescue ships arrive",
@@ -1077,7 +1520,7 @@
   },
   {
     "id": "hilda-1905",
-    "order": 55,
+    "order": 48,
     "year": 1905,
     "series": "The Last Hours",
     "topic": "SS Hilda (1905): blinded by snow outside Saint-Malo, a Channel steamer strikes the rocks at night and only six people survive by clinging to the rigging until dawn",
@@ -1104,8 +1547,39 @@
     ]
   },
   {
+    "id": "calne-978",
+    "order": 49,
+    "year": 978,
+    "series": "The Last Hours",
+    "topic": "Calne (978): England's leading councillors crash through the upper floor of the hall at Calne mid-meeting, while Archbishop Dunstan alone stays standing on a beam",
+    "aliases": [
+      "Calne"
+    ],
+    "checked_at": "2026-10-04",
+    "sources": [
+      {
+        "role": "primary",
+        "institution": "Project Gutenberg (The Anglo-Saxon Chronicle, Ingram translation)",
+        "url": "https://www.gutenberg.org/cache/epub/657/pg657-images.html",
+        "focus": [
+          "stood alone upon a beam"
+        ]
+      },
+      {
+        "role": "independent",
+        "institution": "British History Online (Victoria County History of Wiltshire, vol. 17)",
+        "url": "https://www.british-history.ac.uk/vch/wilts/vol17/pp34-41"
+      }
+    ],
+    "cautions": [
+      "No death toll is recorded; the Chronicle says only some were badly hurt and some did not survive.",
+      "Later hagiography casts Dunstan's survival as a miracle against his opponents; present that as a later interpretation.",
+      "Some scholars date the council to 977."
+    ]
+  },
+  {
     "id": "glen-cinema-1929",
-    "order": 56,
+    "order": 50,
     "year": 1929,
     "series": "The Last Hours",
     "topic": "Paisley Cinema (1929): at a packed Hogmanay children's matinee in the Glen Cinema, smoke from a film canister and a cry of fire send hundreds rushing to a locked exit",
@@ -1137,7 +1611,7 @@
   },
   {
     "id": "ringtheater-1881",
-    "order": 57,
+    "order": 51,
     "year": 1881,
     "series": "The Last Hours",
     "topic": "Vienna Ring fire (1881): minutes before Offenbach's opera, gas lamps ignite the stage, the lights go out, and the audience is trapped in the dark behind inward-opening doors",
@@ -1165,6 +1639,102 @@
       "The death toll is heavily disputed: the official count is about 384-386, contemporary press guessed up to 900, and HISTORY gives 620-850. Say 'hundreds' or 'at least 384'.",
       "English sources spell it 'Ring Theatre' or 'Ring Theater'; the German name is Ringtheater.",
       "Details of exactly how the gas ignited differ between accounts; keep it to gas lighting igniting the stage scenery."
+    ]
+  },
+  {
+    "id": "brunswick-theatre-1828",
+    "order": 52,
+    "year": 1828,
+    "series": "Warnings Ignored",
+    "topic": "Brunswick Theatre (1828): after repeated warnings about weights hung from its new iron roof, the roof fell in during a rehearsal three days after opening",
+    "aliases": [
+      "Brunswick Theatre",
+      "Royal Brunswick Theatre"
+    ],
+    "checked_at": "2026-10-04",
+    "sources": [
+      {
+        "role": "primary",
+        "institution": "All the Year Round (1868), conducted by Charles Dickens, retelling the inquest evidence (reproduced by An Engineer's Aspect)",
+        "url": "https://anengineersaspect.blogspot.com/2010/05/the-collapse-of-brunswick-theatre.html",
+        "focus": [
+          "Pulsford, employed to survey and measure the work",
+          "Does not this alarm you?"
+        ]
+      },
+      {
+        "role": "independent",
+        "institution": "Londonist",
+        "url": "https://londonist.com/london/history/london-s-forgotten-disasters-the-royal-brunswick-theatre-collapses"
+      }
+    ],
+    "cautions": [
+      "The primary is an 1868 retelling based on inquest testimony, not a same-day report; quote warnings as reported at the inquest.",
+      "Death toll is reported as 10 to 15 (13 is often given); do not state one exact number.",
+      "The inquest verdict blamed heavy weights hung from the roof; the proprietors were fined only nominal sums."
+    ]
+  },
+  {
+    "id": "huskisson-1830",
+    "order": 53,
+    "year": 1830,
+    "series": "The Last Hours",
+    "topic": "William Huskisson (1830): stepping down at Parkside to greet Wellington on the railway's opening day, he was run down by Rocket and died that evening",
+    "aliases": [
+      "William Huskisson",
+      "Huskisson"
+    ],
+    "checked_at": "2026-10-04",
+    "sources": [
+      {
+        "role": "primary",
+        "institution": "Science Museum Group: letter by William Scoresby, 21 September 1830",
+        "url": "https://collection.sciencemuseumgroup.org.uk/documents/aa110002997/letter-describing-the-opening-of-the-liverpool-manchester-railway-and-the-death-of-sir-william-huskisson-mp-after-being-run-down-by-the-rocket"
+      },
+      {
+        "role": "independent",
+        "institution": "The Gazette (official public record)",
+        "url": "https://www.thegazette.co.uk/all-notices/content/100741"
+      }
+    ],
+    "cautions": [
+      "Do not call him the first person ever killed by a train; say he was killed at the opening of the Liverpool and Manchester Railway.",
+      "He was carried to Eccles and died around 9 p.m. the same day; accounts differ on whether he clung to the carriage door or fell in its path.",
+      "Rocket was driven by Joseph Locke per the Gazette."
+    ]
+  },
+  {
+    "id": "yarmouth-bridge-1845",
+    "order": 54,
+    "year": 1845,
+    "series": "The Last Hours",
+    "topic": "Yarmouth suspension bridge (1845): crowds rushed to one side to watch a clown in a tub drawn by geese, rods gave way, and 79 people, mostly children, died",
+    "aliases": [
+      "Yarmouth suspension bridge",
+      "Great Yarmouth suspension bridge"
+    ],
+    "checked_at": "2026-10-04",
+    "sources": [
+      {
+        "role": "primary",
+        "institution": "Norwich Mercury, 10 May 1845, reprinted in F. D. Palmer, Yarmouth Notes 1830-1872 (Project Gutenberg)",
+        "url": "https://www.gutenberg.org/cache/epub/39920/pg39920-images.html",
+        "focus": [
+          "drawn by four geese",
+          "rods were observed to give way",
+          "defect in the joint or welding of the bar that first gave way"
+        ]
+      },
+      {
+        "role": "independent",
+        "institution": "BBC News",
+        "url": "https://www.bbc.co.uk/news/uk-england-norfolk-24240357"
+      }
+    ],
+    "cautions": [
+      "79 died including 59 children (BBC); the newspaper's same-night count was 75 bodies recovered.",
+      "The tub was actually towed by a hidden line from a boat; the geese were part of the act.",
+      "The jury blamed a defective weld and inferior iron and workmanship."
     ]
   }
 ]
