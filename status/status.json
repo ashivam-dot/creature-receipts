@@ -1,45 +1,39 @@
 {
-  "updated_at": "2026-10-05T11:05:27+05:30",
+  "updated_at": "2026-10-05T13:12:48+05:30",
   "day": 4,
   "result": "ok",
   "run": {
     "host": "modal",
-    "id": "ta-01M458XTQAK6CJXN34EAJ8DQAR",
+    "id": "ta-01M45G6BVQYHJF10HNAF0P67WR",
     "number": null,
-    "trigger": "schedule",
-    "started_at": "2026-10-05T11:05:06+05:30",
-    "started_at_utc": "2026-10-05T05:35:06+00:00",
-    "seconds": 21
+    "trigger": "manual",
+    "started_at": "2026-10-05T13:12:05+05:30",
+    "started_at_utc": "2026-10-05T07:42:05+00:00",
+    "seconds": 42
   },
   "stages": [
     {
       "name": "deploy",
       "ok": true,
       "detail": "",
-      "seconds": 1.3
+      "seconds": 25.6
     },
     {
       "name": "collect",
       "ok": true,
-      "detail": "ep068 unfinished (OutOfQuota: no model in ('gemini-3.8-flash', 'gemini-3.7-flash', 'gemini-3.6-flash', 'gemini-3.5-flash', 'gemini-3-flash-preview', 'gemini-flash-latest', 'ovh:Qwen3.5-397B-A17B') has free quota left today); ep070 ready; ep072 ready; ep073 unfinished (OutOfQuota: no model in ('gemini-3.8-flash', 'gemini-3.7-flash', 'gemini-3.6-flash', 'gemini-3.5-flash', 'gemini-3-flash-preview', 'gemini-flash-latest', 'ovh:Qwen3.5-397B-A17B') has free quota left today)",
-      "seconds": 8.7
+      "detail": "ep068 unfinished (final audio on editorial speech hold); ep073 rejected (1 frame problems); ep077 rejected (visual plan: only 2 original art beats; 3 are needed for 6 beats); ep078 unfinished (OutOfQuota: no model in ('gemini-3.8-flash', 'gemini-3.7-flash', 'gemini-3.6-flash', 'gemini-3.5-flash', 'gemini-3-flash-preview', 'gemini-flash-latest', 'ovh:Qwen3.5-397B-A17B') has free quota left today)",
+      "seconds": 7.9
     },
     {
-      "name": "start ep068",
+      "name": "start ep066",
       "ok": true,
-      "detail": "Wanggongchang Explosion (1626): a massive unexplained blast rocked Beijing, stripping people of their clothes and leaving a silent void",
+      "detail": "Great Siege of Malta (1565): a handful of knights held off an invading armada against impossible odds, surviving until relief finally arrived",
       "seconds": 0.7
     },
     {
-      "name": "start ep073",
+      "name": "start ep074",
       "ok": true,
-      "detail": "Great Molasses Flood (1919): the leaking tank had been painted brown to hide the leaks",
-      "seconds": 0.6
-    },
-    {
-      "name": "start ep077",
-      "ok": true,
-      "detail": "Vasa (ship) (1628): the warship sank on its maiden voyage, less than a mile out, after failing a stability test before it sailed",
+      "detail": "Mann Gulch fire (1949): foreman Wag Dodge set an escape fire as his crew fled the advancing wildfire",
       "seconds": 0.6
     },
     {
@@ -47,30 +41,34 @@
       "ok": true,
       "detail": "1883 eruption of Krakatoa: its final explosion was heard thousands of kilometers away, on Rodrigues island in the Indian Ocean",
       "seconds": 0.6
+    },
+    {
+      "name": "start ep079",
+      "ok": true,
+      "detail": "West Loch disaster (1944): a massive explosion at Pearl Harbor killed 163 men just before a secret invasion, but the tragedy was kept classified for decades",
+      "seconds": 0.6
     }
   ],
   "errors": [],
   "owner_action": [
-    "ep066 final speech review: listen to Modal volume creature-receipts-outbox:drafts/speech-review/ep066-bd560c692dedf5c27a1c6843cc698d83fb04fa1bcfeb4b41463ca8056a00e432.mp4 against script.json and review.json (SHA-256 bd560c692dedf5c27a1c6843cc698d83fb04fa1bcfeb4b41463ca8056a00e432); repair any error and rerun final-media checks before clearing editorial_hold.json.",
-    "ep074 final speech review: listen to Modal volume creature-receipts-outbox:drafts/speech-review/ep074-9cc4f21da592ea45675b5e4c2d5136b12a47bd7ce3671b8e3a378a281cff721f.mp4 against script.json and review.json (SHA-256 9cc4f21da592ea45675b5e4c2d5136b12a47bd7ce3671b8e3a378a281cff721f); repair any error and rerun final-media checks before clearing editorial_hold.json."
+    "ep068 final speech review: listen to Modal volume creature-receipts-outbox:drafts/speech-review/ep068-2628d60506feec0ee532b0c4c6d85aed45eae2b014f0450b27e3ff6ec3f24f23.mp4 against script.json and review.json (SHA-256 2628d60506feec0ee532b0c4c6d85aed45eae2b014f0450b27e3ff6ec3f24f23); repair any error and rerun final-media checks before clearing editorial_hold.json."
   ],
   "notes": [
-    "ep068 stopped on Gemini's free quota; it resumes in a later run",
-    "ep073 stopped on Gemini's free quota; it resumes in a later run",
+    "ep078 stopped on Gemini's free quota; it resumes in a later run",
     "draft-only producer: no Buffer, Cloudinary, or Google publisher access"
   ],
   "inventory": {
-    "total": 5,
+    "total": 2,
     "in_buffer": 0,
-    "waiting": 3,
+    "waiting": 0,
     "drafts": 2,
-    "target": 14,
+    "target": 9,
     "making": [],
     "remote": [
-      "ep068",
-      "ep073",
-      "ep077",
-      "ep078"
+      "ep066",
+      "ep074",
+      "ep078",
+      "ep079"
     ]
   },
   "queue": [],
@@ -99,42 +97,27 @@
       "id": "ep068",
       "outcome": "unfinished",
       "topic": "Wanggongchang Explosion (1626): a massive unexplained blast rocked Beijing, stripping people of their clothes and leaving a silent void",
-      "reason": "OutOfQuota: no model in ('gemini-3.8-flash', 'gemini-3.7-flash', 'gemini-3.6-flash', 'gemini-3.5-flash', 'gemini-3-flash-preview', 'gemini-flash-latest', 'ovh:Qwen3.5-397B-A17B') has free quota left today",
-      "quota": true,
-      "overloaded": false
-    },
-    {
-      "id": "ep070",
-      "outcome": "ready",
-      "topic": "Great Blizzard of 1888 (1888): commuters stepped into mild spring weather before a sudden whiteout froze New York City in its tracks",
-      "title": "How Did an 1888 Spring Morning Freeze New York? ❄️",
-      "scores": {
-        "hook": 4,
-        "clarity": 5,
-        "payoff": 5,
-        "visuals": 5,
-        "loop": 4
-      },
-      "draft": "drafts/ep070-0d54ccf0a4a951f0359577e6f6209500d185fca380bdc1a29692d78fb3c98b49.mp4"
-    },
-    {
-      "id": "ep072",
-      "outcome": "ready",
-      "topic": "Oppau explosion (1921): a routine blast to break up caked fertilizer preceded a stockpile detonation",
-      "title": "Why Did a Routine Fertilizer Blast Destroy Oppau? 💥",
-      "scores": {
-        "hook": 4,
-        "clarity": 5,
-        "payoff": 4,
-        "visuals": 5,
-        "loop": 5
-      },
-      "draft": "drafts/ep072-89a20c607f4152d517b992cd6d6ce61f3c91a1cde632ad657c4e4d5f8d1572ca.mp4"
+      "reason": "final audio on editorial speech hold",
+      "speech_review": true,
+      "media_sha256": "2628d60506feec0ee532b0c4c6d85aed45eae2b014f0450b27e3ff6ec3f24f23",
+      "speech_review_path": "drafts/speech-review/ep068-2628d60506feec0ee532b0c4c6d85aed45eae2b014f0450b27e3ff6ec3f24f23.mp4"
     },
     {
       "id": "ep073",
-      "outcome": "unfinished",
+      "outcome": "rejected",
       "topic": "Great Molasses Flood (1919): the leaking tank had been painted brown to hide the leaks",
+      "reason": "1 frame problems"
+    },
+    {
+      "id": "ep077",
+      "outcome": "rejected",
+      "topic": "Vasa (ship) (1628): the warship sank on its maiden voyage, less than a mile out, after failing a stability test before it sailed",
+      "reason": "visual plan: only 2 original art beats; 3 are needed for 6 beats"
+    },
+    {
+      "id": "ep078",
+      "outcome": "unfinished",
+      "topic": "1883 eruption of Krakatoa: its final explosion was heard thousands of kilometers away, on Rodrigues island in the Indian Ocean",
       "reason": "OutOfQuota: no model in ('gemini-3.8-flash', 'gemini-3.7-flash', 'gemini-3.6-flash', 'gemini-3.5-flash', 'gemini-3-flash-preview', 'gemini-flash-latest', 'ovh:Qwen3.5-397B-A17B') has free quota left today",
       "quota": true,
       "overloaded": false
@@ -142,46 +125,46 @@
   ],
   "spawned": [
     {
-      "id": "ep068",
-      "topic": "Wanggongchang Explosion (1626): a massive unexplained blast rocked Beijing, stripping people of their clothes and leaving a silent void",
-      "call_id": "fc-01M458YJAAS7A3RCTM5CPEHS8W"
+      "id": "ep066",
+      "topic": "Great Siege of Malta (1565): a handful of knights held off an invading armada against impossible odds, surviving until relief finally arrived",
+      "call_id": "fc-01M45G7RAH724CK8APMYG1V5Q5"
     },
     {
-      "id": "ep073",
-      "topic": "Great Molasses Flood (1919): the leaking tank had been painted brown to hide the leaks",
-      "call_id": "fc-01M458YJXQTY0CD4H2Z3N1FCNQ"
-    },
-    {
-      "id": "ep077",
-      "topic": "Vasa (ship) (1628): the warship sank on its maiden voyage, less than a mile out, after failing a stability test before it sailed",
-      "call_id": "fc-01M458YKH515MBKDAP51S1ZPY6"
+      "id": "ep074",
+      "topic": "Mann Gulch fire (1949): foreman Wag Dodge set an escape fire as his crew fled the advancing wildfire",
+      "call_id": "fc-01M45G7RY85C8WPTB6H4NRF8N0"
     },
     {
       "id": "ep078",
       "topic": "1883 eruption of Krakatoa: its final explosion was heard thousands of kilometers away, on Rodrigues island in the Indian Ocean",
-      "call_id": "fc-01M458YM3C4C4PMMTGDY87PSN0"
+      "call_id": "fc-01M45G7SHEGCXGSVQ5D63SAHNB"
+    },
+    {
+      "id": "ep079",
+      "topic": "West Loch disaster (1944): a massive explosion at Pearl Harbor killed 163 men just before a secret invasion, but the tragedy was kept classified for decades",
+      "call_id": "fc-01M45G7T40CWPCXB9VJW2C501X"
     }
   ],
   "in_cloud": [
     {
-      "id": "ep068",
-      "topic": "Wanggongchang Explosion (1626): a massive unexplained blast rocked Beijing, stripping people of their clothes and leaving a silent void",
-      "spawned_at": "2026-10-05T11:05:25+05:30"
+      "id": "ep066",
+      "topic": "Great Siege of Malta (1565): a handful of knights held off an invading armada against impossible odds, surviving until relief finally arrived",
+      "spawned_at": "2026-10-05T13:12:46+05:30"
     },
     {
-      "id": "ep073",
-      "topic": "Great Molasses Flood (1919): the leaking tank had been painted brown to hide the leaks",
-      "spawned_at": "2026-10-05T11:05:25+05:30"
-    },
-    {
-      "id": "ep077",
-      "topic": "Vasa (ship) (1628): the warship sank on its maiden voyage, less than a mile out, after failing a stability test before it sailed",
-      "spawned_at": "2026-10-05T11:05:26+05:30"
+      "id": "ep074",
+      "topic": "Mann Gulch fire (1949): foreman Wag Dodge set an escape fire as his crew fled the advancing wildfire",
+      "spawned_at": "2026-10-05T13:12:46+05:30"
     },
     {
       "id": "ep078",
       "topic": "1883 eruption of Krakatoa: its final explosion was heard thousands of kilometers away, on Rodrigues island in the Indian Ocean",
-      "spawned_at": "2026-10-05T11:05:26+05:30"
+      "spawned_at": "2026-10-05T13:12:47+05:30"
+    },
+    {
+      "id": "ep079",
+      "topic": "West Loch disaster (1944): a massive explosion at Pearl Harbor killed 163 men just before a secret invasion, but the tragedy was kept classified for decades",
+      "spawned_at": "2026-10-05T13:12:47+05:30"
     }
   ],
   "published": [],
@@ -189,36 +172,34 @@
   "failed_posts": [],
   "not_live": [],
   "llm": {
-    "calls": 9,
+    "calls": 13,
     "by_model": {
-      "gemini-3.5-flash": 2,
-      "gemini-3.8-flash": 1,
-      "gemini-3.6-flash": 2,
-      "gemini-3.5-flash-lite": 1,
-      "gemini-3-flash-preview": 2,
-      "gemini-3.7-flash": 1
+      "gemini-3.5-flash": 5,
+      "gemini-3-flash-preview": 1,
+      "gemini-3.5-flash-lite": 6,
+      "gemini-3.8-flash": 1
     },
     "out_of_quota": []
   },
   "renders": {
-    "modal": 8,
+    "modal": 4,
     "runner": 0
   },
   "daily_done": "2026-10-04",
   "minutes_this_month": 68.0,
   "minutes_budget": 2000,
   "modal_cost": {
-    "metered": 6.26,
+    "metered": 6.4,
     "billed": 0.0
   },
   "modal_credit": 30.0,
   "capacity": {
-    "cloud": 181,
+    "cloud": 180,
     "runner": 0,
     "runner_minutes": 0,
-    "modal_credit_left": 21.74
+    "modal_credit_left": 21.6
   },
   "made_here": 0,
-  "open_topics": 148,
-  "parked_topics": 20
+  "open_topics": 147,
+  "parked_topics": 22
 }

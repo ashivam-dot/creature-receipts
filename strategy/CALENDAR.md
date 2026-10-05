@@ -206,11 +206,11 @@ event is told for its gore. Space topics belong to the sister channel Universe R
 - Tay Bridge disaster (1879): the bridge fell in a gale with a train on it, and the inquiry found it badly designed, built, and maintained
 - St. Francis Dam (1928): William Mulholland inspected a leak and judged the dam safe the day it collapsed
 - Johnstown Flood (1889): the dam that failed belonged to a fishing club of Pittsburgh's richest men
-- Great Molasses Flood (1919): the leaking tank had been painted brown to hide the leaks — making (ep073)
+- Great Molasses Flood (1919): the leaking tank had been painted brown to hide the leaks — parked (ep073)
 - Sultana (steamboat) (1865): a boat built for a few hundred carried over 2,000 people, most of them freed Union prisoners, when its patched boiler exploded
 - Triangle Shirtwaist Factory fire (1911): a stairway door was locked, and 146 garment workers died — parked (ep032)
 - Iroquois Theatre fire (1903): advertised as "absolutely fireproof", it burned five weeks after opening
-- Vasa (ship) (1628): the warship sank on its maiden voyage, less than a mile out, after failing a stability test before it sailed — making (ep077)
+- Vasa (ship) (1628): the warship sank on its maiden voyage, less than a mile out, after failing a stability test before it sailed — parked (ep077)
 - Knickerbocker Storm (1922): the roof of Washington's Knickerbocker Theatre collapsed under the snow during a film
 - Battle of Isandlwana (1879): British commanders refused to form defensive laagers, mocking reports of Zulu forces until thousands appeared over the ridge — parked (ep034)
 - Mongol invasions of Japan (1281): the invasion fleet was destroyed by a legendary typhoon known as the kamikaze, saving Japan from conquest — parked (ep039)
@@ -218,7 +218,7 @@ event is told for its gore. Space topics belong to the sister channel Universe R
 - Battle of Cartagena de Indias (1741): English makers struck premature victory medals, but the British siege failed — making (ep055)
 - Whydah Gally (1717): a pirate slave ship sank in a violent nor'easter right off Cape Cod, carrying a fortune in stolen treasure that lay buried for centuries
 - Saint-Michel-de-Maurienne derailment (1917): a wartime troop train derailed on an Alpine descent; the braking decisions and death toll require primary-source review — making (ep057)
-- West Loch disaster (1944): a massive explosion at Pearl Harbor killed 163 men just before a secret invasion, but the tragedy was kept classified for decades
+- West Loch disaster (1944): a massive explosion at Pearl Harbor killed 163 men just before a secret invasion, but the tragedy was kept classified for decades — making (ep079)
 - Great Plague of Marseille (1720): city officials ignored a plague warning on a merchant ship because they didn't want to delay its cargo of silk for a local fair
 - Manchurian plague (1910): a doctor's warning that the plague was airborne was mocked by a colleague who refused to wear a mask and died of the infection days later
 - Siege of Svetigrad (1448): an impregnable mountain fortress fell after defenders refused to drink from their only water well because a dead dog was thrown inside
