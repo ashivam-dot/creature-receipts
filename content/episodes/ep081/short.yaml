@@ -1,0 +1,146 @@
+id: ep081
+title: Why Did the Titanic's Lookouts Have No Binoculars?
+series: The Last Hours
+description: A last-minute crew reshuffle left a vital piece of equipment locked away as the Titanic steamed toward its fate.
+sources:
+- https://en.wikipedia.org/wiki/David_Blair_(mariner)
+- https://sm4.global-aero.com/articles/little-things-matter-the-lost-key-of-the-titanic/
+- https://news.bbc.co.uk/2/hi/uk_news/england/wiltshire/6979508.stm
+- https://www.thevintagenews.com/2017/01/05/the-titanic-crew-had-no-binoculars-which-might-have-helped-them-spot-the-iceberg/
+hashtags:
+- '#history'
+- '#titanic'
+- '#shipwreck'
+tags:
+- Titanic
+- '1912'
+- David Blair
+- Frederick Fleet
+- maritime
+- shipwreck
+voice:
+  engine: kokoro
+  voice: am_fenrir
+  speed: 1.15
+beats:
+- text: The lookouts on the Titanic had no binoculars.
+  emphasis:
+  - no binoculars
+  visual:
+    source: url
+    url: https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fd/Titanic_Bridge_and_Crow%27s_Nest.jpg/1280px-Titanic_Bridge_and_Crow%27s_Nest.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
+    credit:
+      source: Wikimedia Commons
+      title: Titanic Bridge and Crow's Nest.jpg
+      credit: Francis Godolphin Osbourne Stuart
+      license: Public domain
+      url: https://commons.wikimedia.org/wiki/File:Titanic_Bridge_and_Crow%27s_Nest.jpg
+    fallbacks:
+    - color
+    motion: zoom_out
+    focus_x: 0.5
+    focus_y: 0.44
+- text: Many believe the ship sailed without them by mistake.
+  emphasis:
+  - by mistake
+  visual:
+    source: url
+    url: https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fd/RMS_Titanic_3.jpg/3840px-RMS_Titanic_3.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
+    credit:
+      source: Wikimedia Commons
+      title: RMS Titanic 3.jpg
+      credit: Francis Godolphin Osbourne Stuart
+      license: Public domain
+      url: https://commons.wikimedia.org/wiki/File:RMS_Titanic_3.jpg
+    fallbacks:
+    - color
+    motion: pan_left
+    focus_x: 0.5
+    focus_y: 0.5
+- text: But on the delivery trip, David Blair lent them his own pair.
+  emphasis:
+  - own pair
+  sfx: whoosh
+  visual:
+    source: url
+    url: https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f9/Titanic_Belfast_1912.jpg/960px-Titanic_Belfast_1912.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
+    credit:
+      source: Wikimedia Commons
+      title: Titanic Belfast 1912.jpg
+      credit: John Westbeech Kempster (1864–1947)
+      license: Public domain
+      url: https://commons.wikimedia.org/wiki/File:Titanic_Belfast_1912.jpg
+    fallbacks:
+    - color
+    motion: pan_right
+    focus_x: 0.5
+    focus_y: 0.5
+- text: A sudden officer reshuffle then forced Blair off the ship.
+  emphasis:
+  - officer reshuffle
+  visual:
+    source: url
+    url: https://upload.wikimedia.org/wikipedia/commons/0/07/David_Blair_ID_photograph.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    credit:
+      source: Wikimedia Commons
+      title: David Blair ID photograph.jpg
+      credit: Unknown authorUnknown author
+      license: Public domain
+      url: https://commons.wikimedia.org/wiki/File:David_Blair_ID_photograph.jpg
+    fallbacks:
+    - color
+    motion: zoom_in
+    focus_x: 0.5
+    focus_y: 0.5
+- text: Disappointed, he packed his bags and walked down the gangplank.
+  emphasis:
+  - walked down
+  sfx: riser
+  visual:
+    source: url
+    url: https://upload.wikimedia.org/wikipedia/commons/2/2a/Titanic_in_Southampton.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    credit:
+      source: Wikimedia Commons
+      title: Titanic in Southampton.jpg
+      credit: Unknown authorUnknown author
+      license: Public domain
+      url: https://commons.wikimedia.org/wiki/File:Titanic_in_Southampton.jpg
+    fallbacks:
+    - card
+    - color
+    motion: pan_right
+    focus_x: 0.5
+    focus_y: 0.5
+    card:
+      kind: dateline
+      big: April 9, 1912
+      small: Southampton
+- text: Lookout Frederick Fleet testified they would have spotted the iceberg sooner.
+  emphasis:
+  - iceberg sooner
+  visual:
+    source: url
+    url: https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3b/FrederickFleet.April1912.jpg/1920px-FrederickFleet.April1912.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
+    credit:
+      source: Wikimedia Commons
+      title: FrederickFleet.April1912.jpg
+      credit: Unknown authorUnknown author
+      license: Public domain
+      url: https://commons.wikimedia.org/wiki/File:FrederickFleet.April1912.jpg
+    fallbacks:
+    - color
+    motion: pan_left
+    focus_x: 0.5
+    focus_y: 0.5
+- text: With Blair reassigned, he inadvertently carried off the key.
+  emphasis:
+  - off the key
+  sfx: pop
+  pause_after: 0.4
+  visual:
+    reuse: 1
+    motion: zoom_in
+    focus_x: 0.5
+    focus_y: 0.44
+depth_motion: true
+hook_text: THE KEY IN HIS POCKET

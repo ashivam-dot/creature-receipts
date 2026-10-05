@@ -1,59 +1,103 @@
 {
-  "updated_at": "2026-10-05T13:35:55+05:30",
+  "updated_at": "2026-10-05T17:11:24+05:30",
   "day": 4,
   "result": "ok",
   "run": {
     "host": "modal",
-    "id": "ta-01M45HHD24J2GBEYXMC6YBR3QR",
+    "id": "ta-01M45XH1AVZYB3WRXE194V81AR",
     "number": null,
-    "trigger": "manual",
-    "started_at": "2026-10-05T13:35:36+05:30",
-    "started_at_utc": "2026-10-05T08:05:36+00:00",
-    "seconds": 19
+    "trigger": "schedule",
+    "started_at": "2026-10-05T17:05:12+05:30",
+    "started_at_utc": "2026-10-05T11:35:12+00:00",
+    "seconds": 372
   },
   "stages": [
     {
       "name": "deploy",
       "ok": true,
       "detail": "",
-      "seconds": 1.9
+      "seconds": 2.2
     },
     {
       "name": "collect",
       "ok": true,
-      "detail": "ep066 ready; ep074 rejected (speech: 'foreman' heard as 'borman'; 'route' heard as 'root' after 'and cut their'; 'escape' heard as 'escaped' after 'dodge lit an'; 'amid' heard as 'mid' after 'for his men'; base.en: 'foreman' heard as 'forman'; base.en: 'escape' heard as 'escaped' after 'dodge lit an'; base.en: 'amid' heard as 'mid' after 'for his men'); ep078 rejected (low scores: clarity, visuals; 1 frame problems); ep079 rejected (low scores: visuals; 1 frame problems)",
-      "seconds": 8.8
+      "detail": "ep080 unfinished (Overloaded: every model in ('gemini-3.8-flash', 'gemini-3.7-flash', 'gemini-3.6-flash', 'gemini-3.5-flash', 'gemini-3-flash-preview', 'gemini-flash-latest', 'ovh:Qwen3.5-397B-A17B') with quota left stayed overloaded for 25 minutes); ep081 unfinished (OutOfQuota: no model in ('gemini-3.8-flash', 'gemini-3.7-flash', 'gemini-3.6-flash', 'gemini-3.5-flash', 'gemini-3-flash-preview', 'gemini-flash-latest', 'ovh:Qwen3.5-397B-A17B') has free quota left today); ep082 unfinished (OutOfQuota: no model in ('gemini-3.8-flash', 'gemini-3.7-flash', 'gemini-3.6-flash', 'gemini-3.5-flash', '",
+      "seconds": 13.7
+    },
+    {
+      "name": "timely topics",
+      "ok": true,
+      "detail": "2 added",
+      "seconds": 183.6
+    },
+    {
+      "name": "sourced accident topics",
+      "ok": true,
+      "detail": "2 added",
+      "seconds": 0.1
+    },
+    {
+      "name": "strongest stories",
+      "ok": true,
+      "detail": "5 added",
+      "seconds": 140.6
+    },
+    {
+      "name": "new topics",
+      "ok": true,
+      "detail": "5 added",
+      "seconds": 16.5
+    },
+    {
+      "name": "report",
+      "ok": true,
+      "detail": "day-004.md",
+      "seconds": 0.4
     },
     {
       "name": "start ep080",
       "ok": true,
       "detail": "Siege of the Sogdian Rock (327 BC): Alexander the Great's soldiers used iron tent pegs as pitons to scale a 'vertical' cliff at night to capture an unreachable fortress",
-      "seconds": 0.7
+      "seconds": 2.1
     },
     {
       "name": "start ep081",
       "ok": true,
       "detail": "Sinking of the Titanic (1912): the lookouts had no binoculars, because the key to their locker left the ship with an officer removed before the voyage",
-      "seconds": 0.6
+      "seconds": 2.0
     },
     {
       "name": "start ep082",
       "ok": true,
       "detail": "Akrotiri (prehistoric city): a Bronze Age town buried by the Minoan eruption where almost no bodies have been found, as if its people had warning",
-      "seconds": 0.6
+      "seconds": 1.1
     },
     {
       "name": "start ep083",
       "ok": true,
       "detail": "1868 Arica earthquake (1868): a massive tsunami carried the USS Wateree two miles inland and left it sitting perfectly upright in the middle of the desert",
-      "seconds": 0.6
+      "seconds": 2.0
+    },
+    {
+      "name": "start ep084",
+      "ok": true,
+      "detail": "Lake Issyk-Kul (c. 1200): an ancient Silk Road trade hub vanished beneath rising waters, leaving centuries-old city ruins submerged off the shore",
+      "seconds": 1.9
+    },
+    {
+      "name": "start ep085",
+      "ok": true,
+      "detail": "Umm El Qa'ab (c. 2900 BC): early Egyptian pharaohs were entombed alongside dozens of household servants sacrificed simultaneously to serve in the afterlife",
+      "seconds": 2.0
     }
   ],
   "errors": [],
-  "owner_action": [
-    "ep068 final speech review: listen to Modal volume creature-receipts-outbox:drafts/speech-review/ep068-2628d60506feec0ee532b0c4c6d85aed45eae2b014f0450b27e3ff6ec3f24f23.mp4 against script.json and review.json (SHA-256 2628d60506feec0ee532b0c4c6d85aed45eae2b014f0450b27e3ff6ec3f24f23); repair any error and rerun final-media checks before clearing editorial_hold.json."
-  ],
+  "owner_action": [],
   "notes": [
+    "ep080 stopped on Gemini's free tier being overloaded; it resumes in a later run",
+    "ep081 stopped on Gemini's free quota; it resumes in a later run",
+    "ep082 stopped on Gemini's free quota; it resumes in a later run",
+    "ep083 stopped on Gemini's free quota; it resumes in a later run",
     "draft-only producer: no Buffer, Cloudinary, or Google publisher access"
   ],
   "inventory": {
@@ -67,7 +111,9 @@
       "ep080",
       "ep081",
       "ep082",
-      "ep083"
+      "ep083",
+      "ep084",
+      "ep085"
     ]
   },
   "queue": [],
@@ -93,81 +139,100 @@
   ],
   "made": [
     {
-      "id": "ep066",
-      "outcome": "ready",
-      "topic": "Great Siege of Malta (1565): a handful of knights held off an invading armada against impossible odds, surviving until relief finally arrived",
-      "title": "How the Knights of Malta Defied an EMPIRE 🛡️",
-      "scores": {
-        "hook": 5,
-        "clarity": 5,
-        "payoff": 4,
-        "visuals": 5,
-        "loop": 5,
-        "accuracy": 5
-      },
-      "draft": "drafts/ep066-d40a2910b1dd66fad76bea8ce15594542e018c63731487f52867e4a67bd5a108.mp4"
+      "id": "ep080",
+      "outcome": "unfinished",
+      "topic": "Siege of the Sogdian Rock (327 BC): Alexander the Great's soldiers used iron tent pegs as pitons to scale a 'vertical' cliff at night to capture an unreachable fortress",
+      "reason": "Overloaded: every model in ('gemini-3.8-flash', 'gemini-3.7-flash', 'gemini-3.6-flash', 'gemini-3.5-flash', 'gemini-3-flash-preview', 'gemini-flash-latest', 'ovh:Qwen3.5-397B-A17B') with quota left stayed overloaded for 25 minutes",
+      "quota": false,
+      "overloaded": true
     },
     {
-      "id": "ep074",
-      "outcome": "rejected",
-      "topic": "Mann Gulch fire (1949): foreman Wag Dodge set an escape fire as his crew fled the advancing wildfire",
-      "reason": "speech: 'foreman' heard as 'borman'; 'route' heard as 'root' after 'and cut their'; 'escape' heard as 'escaped' after 'dodge lit an'; 'amid' heard as 'mid' after 'for his men'; base.en: 'foreman' heard as 'forman'; base.en: 'escape' heard as 'escaped' after 'dodge lit an'; base.en: 'amid' heard as 'mid' after 'for his men'"
+      "id": "ep081",
+      "outcome": "unfinished",
+      "topic": "Sinking of the Titanic (1912): the lookouts had no binoculars, because the key to their locker left the ship with an officer removed before the voyage",
+      "reason": "OutOfQuota: no model in ('gemini-3.8-flash', 'gemini-3.7-flash', 'gemini-3.6-flash', 'gemini-3.5-flash', 'gemini-3-flash-preview', 'gemini-flash-latest', 'ovh:Qwen3.5-397B-A17B') has free quota left today",
+      "quota": true,
+      "overloaded": false
     },
     {
-      "id": "ep078",
-      "outcome": "rejected",
-      "topic": "1883 eruption of Krakatoa: its final explosion was heard thousands of kilometers away, on Rodrigues island in the Indian Ocean",
-      "reason": "low scores: clarity, visuals; 1 frame problems"
+      "id": "ep082",
+      "outcome": "unfinished",
+      "topic": "Akrotiri (prehistoric city): a Bronze Age town buried by the Minoan eruption where almost no bodies have been found, as if its people had warning",
+      "reason": "OutOfQuota: no model in ('gemini-3.8-flash', 'gemini-3.7-flash', 'gemini-3.6-flash', 'gemini-3.5-flash', 'gemini-3-flash-preview', 'gemini-flash-latest', 'ovh:Qwen3.5-397B-A17B') has free quota left today",
+      "quota": true,
+      "overloaded": false
     },
     {
-      "id": "ep079",
-      "outcome": "rejected",
-      "topic": "West Loch disaster (1944): a massive explosion at Pearl Harbor killed 163 men just before a secret invasion, but the tragedy was kept classified for decades",
-      "reason": "low scores: visuals; 1 frame problems"
+      "id": "ep083",
+      "outcome": "unfinished",
+      "topic": "1868 Arica earthquake (1868): a massive tsunami carried the USS Wateree two miles inland and left it sitting perfectly upright in the middle of the desert",
+      "reason": "OutOfQuota: no model in ('gemini-3.8-flash', 'gemini-3.7-flash', 'gemini-3.6-flash', 'gemini-3.5-flash', 'gemini-3-flash-preview', 'gemini-flash-latest', 'ovh:Qwen3.5-397B-A17B') has free quota left today",
+      "quota": true,
+      "overloaded": false
     }
   ],
   "spawned": [
     {
       "id": "ep080",
       "topic": "Siege of the Sogdian Rock (327 BC): Alexander the Great's soldiers used iron tent pegs as pitons to scale a 'vertical' cliff at night to capture an unreachable fortress",
-      "call_id": "fc-01M45HJ35TBSC23PEVED5S9XKT"
+      "call_id": "fc-01M45XWDX204R4Q613QK3ZQABJ"
     },
     {
       "id": "ep081",
       "topic": "Sinking of the Titanic (1912): the lookouts had no binoculars, because the key to their locker left the ship with an officer removed before the voyage",
-      "call_id": "fc-01M45HJ3QX1YA1TG45P02PRP52"
+      "call_id": "fc-01M45XWFV1N8BEKQWK0FPBBMFZ"
     },
     {
       "id": "ep082",
       "topic": "Akrotiri (prehistoric city): a Bronze Age town buried by the Minoan eruption where almost no bodies have been found, as if its people had warning",
-      "call_id": "fc-01M45HJ4A8ZCN0HZ47F5EWBQBC"
+      "call_id": "fc-01M45XWGYK6QAWBFFQWH02HWW5"
     },
     {
       "id": "ep083",
       "topic": "1868 Arica earthquake (1868): a massive tsunami carried the USS Wateree two miles inland and left it sitting perfectly upright in the middle of the desert",
-      "call_id": "fc-01M45HJ4WKH56SVS9J8MDVM34A"
+      "call_id": "fc-01M45XWJYJW7JBF6QT9GCZV647"
+    },
+    {
+      "id": "ep084",
+      "topic": "Lake Issyk-Kul (c. 1200): an ancient Silk Road trade hub vanished beneath rising waters, leaving centuries-old city ruins submerged off the shore",
+      "call_id": "fc-01M45XWMTM6P1QD9187Z9NF9KF"
+    },
+    {
+      "id": "ep085",
+      "topic": "Umm El Qa'ab (c. 2900 BC): early Egyptian pharaohs were entombed alongside dozens of household servants sacrificed simultaneously to serve in the afterlife",
+      "call_id": "fc-01M45XWPSK2Y9BGRZVDQKE2NKD"
     }
   ],
   "in_cloud": [
     {
       "id": "ep080",
       "topic": "Siege of the Sogdian Rock (327 BC): Alexander the Great's soldiers used iron tent pegs as pitons to scale a 'vertical' cliff at night to capture an unreachable fortress",
-      "spawned_at": "2026-10-05T13:35:53+05:30"
+      "spawned_at": "2026-10-05T17:11:15+05:30"
     },
     {
       "id": "ep081",
       "topic": "Sinking of the Titanic (1912): the lookouts had no binoculars, because the key to their locker left the ship with an officer removed before the voyage",
-      "spawned_at": "2026-10-05T13:35:54+05:30"
+      "spawned_at": "2026-10-05T17:11:17+05:30"
     },
     {
       "id": "ep082",
       "topic": "Akrotiri (prehistoric city): a Bronze Age town buried by the Minoan eruption where almost no bodies have been found, as if its people had warning",
-      "spawned_at": "2026-10-05T13:35:54+05:30"
+      "spawned_at": "2026-10-05T17:11:18+05:30"
     },
     {
       "id": "ep083",
       "topic": "1868 Arica earthquake (1868): a massive tsunami carried the USS Wateree two miles inland and left it sitting perfectly upright in the middle of the desert",
-      "spawned_at": "2026-10-05T13:35:55+05:30"
+      "spawned_at": "2026-10-05T17:11:20+05:30"
+    },
+    {
+      "id": "ep084",
+      "topic": "Lake Issyk-Kul (c. 1200): an ancient Silk Road trade hub vanished beneath rising waters, leaving centuries-old city ruins submerged off the shore",
+      "spawned_at": "2026-10-05T17:11:22+05:30"
+    },
+    {
+      "id": "ep085",
+      "topic": "Umm El Qa'ab (c. 2900 BC): early Egyptian pharaohs were entombed alongside dozens of household servants sacrificed simultaneously to serve in the afterlife",
+      "spawned_at": "2026-10-05T17:11:24+05:30"
     }
   ],
   "published": [],
@@ -175,34 +240,41 @@
   "failed_posts": [],
   "not_live": [],
   "llm": {
-    "calls": 32,
+    "calls": 49,
     "by_model": {
-      "gemini-3.5-flash": 18,
-      "gemini-3.5-flash-lite": 9,
-      "gemini-3.8-flash": 2,
-      "gemini-3.6-flash": 3
+      "gemini-3.6-flash": 4,
+      "gemini-3.5-flash": 2,
+      "gemini-3-flash-preview": 21,
+      "gemini-3.5-flash-lite": 21,
+      "gemini-3.7-flash": 1
     },
-    "out_of_quota": []
+    "out_of_quota": [
+      "gemini-3-flash-preview",
+      "gemini-3.5-flash",
+      "gemini-3.6-flash",
+      "gemini-3.7-flash",
+      "gemini-flash-latest"
+    ]
   },
   "renders": {
-    "modal": 10,
+    "modal": 9,
     "runner": 0
   },
-  "daily_done": "2026-10-04",
+  "daily_done": "2026-10-05",
   "minutes_this_month": 68.0,
   "minutes_budget": 2000,
   "modal_cost": {
-    "metered": 6.94,
+    "metered": 7.03,
     "billed": 0.0
   },
   "modal_credit": 30.0,
   "capacity": {
-    "cloud": 175,
+    "cloud": 174,
     "runner": 0,
     "runner_minutes": 0,
-    "modal_credit_left": 21.06
+    "modal_credit_left": 20.97
   },
   "made_here": 0,
-  "open_topics": 143,
+  "open_topics": 155,
   "parked_topics": 25
 }

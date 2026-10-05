@@ -1,0 +1,64 @@
+{
+  "rounds": [
+    {
+      "at": "2026-10-05T13:44:57+05:30",
+      "check": {
+        "duration": 28.03,
+        "words": 71,
+        "integrated_lufs": -14.5,
+        "true_peak_dbfs": -1.7,
+        "warnings": [],
+        "speech_differences": [],
+        "speech_error": null,
+        "sources": [
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "designed card",
+          "Wikimedia Commons",
+          "Wikimedia Commons"
+        ],
+        "speech_verification": {
+          "heard": "Defenders taunted Alexander that he needed winged soldiers to take their mountain. Most thought the Sogdian rock was impregnable in 327 B.C. Alexander promised a fortune to 300 volunteers to climb it. They hammered iron tent pegs into ice through the night. Thirty men fell into deep snow and were never found. At dawn survivors waved linen flags from the summit. The fortress surrendered to soldiers who did not need wings.",
+          "model": "small.en",
+          "media_sha256": "c927bb760ae9701def72f2149fae3afe76373052b5fdf6a6f439589b5f012c58",
+          "primary_differences": [],
+          "differences": []
+        }
+      },
+      "media_sha256": "c927bb760ae9701def72f2149fae3afe76373052b5fdf6a6f439589b5f012c58",
+      "scores": {
+        "hook": 5,
+        "clarity": 5,
+        "payoff": 4,
+        "visuals": 3,
+        "loop": 5,
+        "accuracy": 3
+      },
+      "notes": {
+        "hook": "The 'winged soldiers' taunt is a highly effective hook that immediately sets a challenge.",
+        "clarity": "The narrative is straightforward and follows a logical sequence from the taunt to the climb.",
+        "payoff": "The payoff is solid, although the surrender feels slightly rushed compared to the setup.",
+        "visuals": "Beat 6 shows iron tent pegs while the narration describes waving linen flags, which is a visual mismatch.",
+        "loop": "The loop is excellent, connecting the closing line perfectly back to the 'winged soldiers' hook.",
+        "accuracy": "Failed to include the required historical nuance regarding the muddled timeline and fortress name ambiguity."
+      },
+      "frames": [
+        {
+          "beat": 6,
+          "problem": "The image depicts iron tent pegs while the narration specifically mentions waving linen flags."
+        }
+      ],
+      "speech": [],
+      "rewrite": [
+        "Beat 2: Though the timeline is muddled, in 327 BC he reached this Sogdian fortress.",
+        "Beat 6: At dawn, survivors signaled from the summit that the impossible climb was over."
+      ],
+      "better_than_last": "The thematic symmetry between the hook and the loop is more refined than the recent episodes.",
+      "judge": "gemini-3-flash-preview",
+      "passed": false
+    }
+  ],
+  "best_round": 1
+}

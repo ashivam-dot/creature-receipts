@@ -26,6 +26,8 @@ event is told for its gore. Space topics belong to the sister channel Universe R
 | 2026-10-02 | Assassination of Mahatma Gandhi (1948): Gandhi had survived five prior attempts and a bombing ten days earlier, yet strictly refused armed guards on his way to his final prayer meeting — parked (ep044) | The Last Hours | Mahatma Gandhi is trending on Wikipedia around the October 2 anniversary of his birth. |
 | 2026-10-02 | Nicholas Winton (1939): his largest rescue train of 250 children was scheduled to leave Prague on September 1, 1939—the exact day Germany invaded Poland, halting the departure — done (ep045) | The Last Hours | Nicholas Winton is currently trending on English Wikipedia with nearly 30,000 daily pageviews. |
 | 2026-10-03 | Operation Market Garden (1944): commanders dismissed aerial reconnaissance photos showing German panzers waiting at Arnhem, ordering the intelligence officer who raised the alarm on sudden medical leave — done (ep051) | Warnings Ignored | Bernard Montgomery is trending on Wikipedia with over 53,000 daily views. |
+| 2026-10-05 | Lake Issyk-Kul (c. 1200): an ancient Silk Road trade hub vanished beneath rising waters, leaving centuries-old city ruins submerged off the shore — making (ep084) | Lost Cities | Trending in archaeology news following underwater dives exploring submerged Silk Road ruins in the lake. |
+| 2026-10-05 | Umm El Qa'ab (c. 2900 BC): early Egyptian pharaohs were entombed alongside dozens of household servants sacrificed simultaneously to serve in the afterlife — making (ep085) | Fallen Empires | In the news after forensic analysis confirmed retainer sacrifice in First Dynasty royal tombs. |
 
 ## Anniversaries (publish on the date, 7 p.m. Eastern)
 
@@ -37,6 +39,7 @@ event is told for its gore. Space topics belong to the sister channel Universe R
 | Oct 17 | London Beer Flood (1814): a vat burst at a brewery and a wave of more than a million liters of beer swept through a poor London parish | The Last Hours |
 | Oct 24 | Eruption of Mount Vesuvius in 79 AD: a charcoal inscription found at Pompeii in 2018 suggests the eruption came in autumn, not on August 24 as long believed | The Last Hours |
 | Oct 25 | Charge of the Light Brigade (1854): a misread order sent the light cavalry straight down a valley ringed with Russian guns | Warnings Ignored |
+| Oct 28 | Sinking of the SS Princess Sophia (1918): the steamer struck a reef in a blinding snowstorm and sat stranded for nearly 40 hours before sliding into the depths with all 343 passengers and crew | The Last Hours |
 | Oct 29 | Wall Street Crash of 1929 (1929): the market collapse on Black Tuesday was predicted one month earlier by a financial expert who warned that a terrific crash was coming | Warnings Ignored |
 | Nov 1 | 1755 Lisbon earthquake: it struck on All Saints' Day, when the churches were full, and people who fled to the open waterfront were hit by a tsunami | The Last Hours |
 | Nov 9 | Great Lakes Storm of 1913 (1913): captains ignored the new "White Flag" weather warnings and sailed into the Freshwater Fury, a storm that sank a record 12 ships and killed over 250 people | Warnings Ignored |
@@ -129,6 +132,12 @@ event is told for its gore. Space topics belong to the sister channel Universe R
 - Siege of Pembroke (1648): an impregnable fortress was forced to surrender after a defector revealed the exact location of the secret underground pipe supplying all their water
 - Oppau explosion (1921): a routine blast to break up caked fertilizer preceded a stockpile detonation — done (ep072)
 - Mann Gulch fire (1949): foreman Wag Dodge set an escape fire as his crew fled the advancing wildfire — parked (ep074)
+- Atilius's amphitheatre (AD 27): at Fidenae a cheaply built wooden arena packed with crowds starved of gladiator shows under Tiberius gives way, burying spectators and bystanders while families search the ruins day and night
+- New London School explosion (1937): leaked gas built up beneath the school until a shop-class sander ignited it near the end of the day
+- Siege of Laodicea (636): the besieging army pretended to retreat but hid in deep trenches dug overnight, capturing the city when citizens opened the gates to let their cattle graze
+- 1157 Hama earthquake (1157): a teacher who stepped out of his classroom returned to find his school collapsed and every student dead, with not a single parent left alive to claim them
+- Siege of Maiozamalcha (363): while the defenders mocked the Romans from their 'impregnable' walls, soldiers finished a secret tunnel and emerged directly into a kitchen inside the city
+- Sinking of the SS Persia (1915): the ocean liner sank in minutes after a torpedo struck, and the lone survivor among the ship's mail clerks clung to a floating crate for hours
 
 ### Lost Cities
 
@@ -175,6 +184,7 @@ event is told for its gore. Space topics belong to the sister channel Universe R
 - Sinking of the Antarctic (1903): after their ship was crushed by ice, three separated groups survived the winter and reunited on the exact same day
 - Polaris expedition (1871): the mission to the North Pole failed when its commander died mysteriously, and a 20th-century autopsy revealed he had been poisoned with arsenic by his own crew
 - French Antarctic Expedition (1772): the explorer rushed back to France claiming he found a lush southern paradise, only to be disgraced when his next voyage revealed it was a desolate, frozen rock
+- Bounty mutiny (1789): after casting the captain adrift, the mutineers sailed to Pitcairn Island and burned their own ship to the waterline so no one could ever escape
 
 ### Fallen Empires
 
@@ -199,6 +209,7 @@ event is told for its gore. Space topics belong to the sister channel Universe R
 - Fall of Angkor (c. 1431): the world's largest pre-industrial city collapsed not just from war, but because its massive water network failed during decades of extreme drought and floods
 - Siege of the Atuatuci (57 BC): after pretending to surrender and disarm, the tribe launched a surprise night attack, prompting Julius Caesar to sell all 53,000 survivors into slavery
 - Karakorum (1388): the capital of the massive Mongol Empire was completely demolished by Chinese forces, and its stone ruins were carried away to build a nearby Buddhist monastery
+- Battle of Pelusium (525 BC): the Persian king used cats and sacred animals as living shields against Egyptian archers who refused to risk harming them
 
 ### Warnings Ignored
 
@@ -227,6 +238,8 @@ event is told for its gore. Space topics belong to the sister channel Universe R
 - Quebec Bridge collapse (1907): engineers measured a lower-chord bend before it fell; the inquiry found defective design — done (ep065)
 - Rockslide of Elm (1881): villagers ignored cracks in the mountain and gathered on their balconies to watch the slate collapse, only for the landslide to cross the valley and bury them
 - Battle of Singara (344): Roman soldiers ignored their generals' orders to stay alert, celebrating their victory inside the enemy camp until they were slaughtered in their sleep
+- Great Revere train wreck of 1871 (1871): the railroad's superintendent had banned telegraph dispatching as 'too dangerous,' forcing trains to run blindly in a thick fog until they collided
+- Gas leak in Cleveland (1944): an underground gas main rupture caused a series of massive explosions that blew manhole covers into the air and leveled a neighborhood, after officials ignored warnings about the aging pipes
 
 ### Sole Survivors
 
@@ -247,3 +260,4 @@ event is told for its gore. Space topics belong to the sister channel Universe R
 - Hugh Glass (1823): after being mauled by a grizzly and left for dead in a shallow grave, he crawled 200 miles to safety but chose to forgive the men who abandoned him — parked (ep069)
 - Sinking of the Titanic (1912): the only Japanese survivor, Masabumi Hosono, was publicly shamed and lost his government job in Japan for not dying honorably with the other passengers — parked (ep067)
 - 1842 retreat from Kabul (1842): surgeon William Brydon was the only member of a 16,000-strong British army column to reach safety, surviving a sword cut because he stuffed a magazine into his hat for warmth
+- 1068 Near East earthquakes (1068): a massive quake completely leveled the ancient port city of Ayla, leaving a single boy as the sole survivor because he was out swimming

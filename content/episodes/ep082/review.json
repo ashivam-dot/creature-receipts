@@ -1,0 +1,205 @@
+{
+  "rounds": [
+    {
+      "at": "2026-10-05T13:50:44+05:30",
+      "check": {
+        "duration": 28.92,
+        "words": 68,
+        "integrated_lufs": -14.4,
+        "true_peak_dbfs": -1.8,
+        "warnings": [],
+        "speech_differences": [
+          "'spyridon marinatos' heard as 'spirit and maranatos' after 'tomb in 1967'",
+          "'preceding' heard as 'proceeding' after 'in the ruins'",
+          "base.en: 'akrotiri' heard as 'akritiri'",
+          "base.en: 'spyridon' heard as 'spirit and' after 'tomb in 1967'",
+          "base.en: 'preceding' heard as 'proceeding' after 'in the ruins'"
+        ],
+        "speech_error": null,
+        "sources": [
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Flickr via Openverse",
+          "Wikimedia Commons"
+        ],
+        "speech_verification": {
+          "heard": "Akrotiri is the Pompeii where nobody died. For centuries, many believed this buried city was a tomb. In 1967, Spirit and Maranatos began excavating the volcanic ash. He found three-story buildings and frescoes of swallows and red lilies. But unlike Pompeii, no human remains were found in the ruins. Proceeding earthquakes likely warned the population to pack and flee. Today, archaeologists find only a ghost town frozen in time.",
+          "model": "small.en",
+          "media_sha256": "520cde4e382d41d04e5e097bfeb546f6520f6fafcb10a62c8896769b3c6badfb",
+          "primary_differences": [
+            "'spyridon marinatos' heard as 'spirit and maranatos' after 'tomb in 1967'",
+            "'preceding' heard as 'proceeding' after 'in the ruins'"
+          ],
+          "differences": [
+            "'spyridon marinatos' heard as 'spirit and maranatos' after 'tomb in 1967'",
+            "'preceding' heard as 'proceeding' after 'in the ruins'",
+            "base.en: 'akrotiri' heard as 'akritiri'",
+            "base.en: 'spyridon' heard as 'spirit and' after 'tomb in 1967'",
+            "base.en: 'preceding' heard as 'proceeding' after 'in the ruins'"
+          ],
+          "corroboration": {
+            "model": "base.en",
+            "heard": "Akritiri is the Pompeii where nobody died. For centuries, many believed this buried city was a tomb. In 1967, Spirit and marinatos began excavating the volcanic ash. He found three-story buildings and frescoes of swallows and red lilies. But unlike Pompeii, no human remains were found in the ruins. Proceeding earthquakes likely warned the population to pack and flee. Today, archaeologists find only a ghost town frozen in time.",
+            "differences": [
+              "'akrotiri' heard as 'akritiri'",
+              "'spyridon' heard as 'spirit and' after 'tomb in 1967'",
+              "'preceding' heard as 'proceeding' after 'in the ruins'"
+            ],
+            "resolved": []
+          }
+        }
+      },
+      "media_sha256": "520cde4e382d41d04e5e097bfeb546f6520f6fafcb10a62c8896769b3c6badfb",
+      "scores": {
+        "hook": 5,
+        "clarity": 5,
+        "payoff": 4,
+        "visuals": 5,
+        "loop": 5,
+        "accuracy": 3
+      },
+      "notes": {
+        "hook": "Strong opening contrast that immediately raises a question for the viewer.",
+        "clarity": "The narrative flows logically from discovery to the specific mystery of the missing residents.",
+        "payoff": "Explaining the successful evacuation through earthquake warnings satisfies the hook.",
+        "visuals": "The frames use authentic site photos and frescoes that directly support the narration.",
+        "loop": "The transition from 'ghost town' back to 'Pompeii where nobody died' is seamless.",
+        "accuracy": "Beat 2 claims many believed it was a tomb, which is a strawman not supported by the research."
+      },
+      "frames": [],
+      "speech": [
+        {
+          "beat": 3,
+          "word": "Spyridon",
+          "respelling": "speer ee don"
+        },
+        {
+          "beat": 3,
+          "word": "Marinatos",
+          "respelling": "mah ree nah tos"
+        },
+        {
+          "beat": 6,
+          "word": "Preceding",
+          "respelling": "pree seed ing"
+        }
+      ],
+      "rewrite": [
+        "Beat 2: Catastrophic eruptions in the 16th century BC buried the city in ash."
+      ],
+      "better_than_last": "This Short has a much tighter loop than ep054 and a more focused visual narrative than ep053.",
+      "judge": "gemini-3-flash-preview",
+      "passed": false
+    },
+    {
+      "at": "2026-10-05T13:57:21+05:30",
+      "check": {
+        "duration": 30.35,
+        "words": 71,
+        "integrated_lufs": -14.4,
+        "true_peak_dbfs": -1.8,
+        "warnings": [],
+        "speech_differences": [
+          "'spyridon marinatos' heard as 'spiritan maranatos' after 'ash in 1967'",
+          "'preceding' heard as 'receding' after 'in the ruins'",
+          "'the' heard as '(nothing)' after 'pack and flee'",
+          "'(nothing)' heard as 'you' after 'frozen in time'",
+          "base.en: 'akrotiri' heard as 'akritiri'",
+          "base.en: 'spyridon marinatos' heard as 'spirit and maranatos' after 'ash in 1967'",
+          "base.en: 'preceding' heard as 'proceeding' after 'in the ruins'"
+        ],
+        "speech_error": null,
+        "sources": [
+          "Wikimedia Commons",
+          "designed card",
+          "designed card",
+          "Wikimedia Commons",
+          "Flickr via Openverse",
+          "Flickr via Openverse",
+          "Wikimedia Commons"
+        ],
+        "speech_verification": {
+          "heard": "Akrotiri is the Pompeii where nobody died. Catastrophic eruptions in the 16th century B.C. buried the city in ash. In 1967, Spiritan Maranatos began excavating the volcanic debris. He found three-story buildings and frescoes of swallows and red lilies. But unlike Pompeii, no human remains were found in the ruins. Receding earthquakes likely warned the population to pack and flee. People escaped, leaving behind a ghost town frozen in time. You",
+          "model": "small.en",
+          "media_sha256": "be60f90e883a81667c04304be64e491d16af6195e94dee4b2d17630ae46f6557",
+          "primary_differences": [
+            "'spyridon marinatos' heard as 'spiritan maranatos' after 'ash in 1967'",
+            "'preceding' heard as 'receding' after 'in the ruins'",
+            "'the' heard as '(nothing)' after 'pack and flee'",
+            "'(nothing)' heard as 'you' after 'frozen in time'"
+          ],
+          "differences": [
+            "'spyridon marinatos' heard as 'spiritan maranatos' after 'ash in 1967'",
+            "'preceding' heard as 'receding' after 'in the ruins'",
+            "'the' heard as '(nothing)' after 'pack and flee'",
+            "'(nothing)' heard as 'you' after 'frozen in time'",
+            "base.en: 'akrotiri' heard as 'akritiri'",
+            "base.en: 'spyridon marinatos' heard as 'spirit and maranatos' after 'ash in 1967'",
+            "base.en: 'preceding' heard as 'proceeding' after 'in the ruins'"
+          ],
+          "corroboration": {
+            "model": "base.en",
+            "heard": "Akritiri is the Pompeii where nobody died. Catastrophic eruptions in the 16th century BC buried the city in ash. In 1967, Spirit and Maranatos began excavating the volcanic debris. He found three story buildings and frescoes of swallows and red lilies. But unlike Pompeii, no human remains were found in the ruins. Proceeding earthquakes likely warned the population to pack and flee. People escaped, leaving behind a ghost town frozen in time. You",
+            "differences": [
+              "'akrotiri' heard as 'akritiri'",
+              "'spyridon marinatos' heard as 'spirit and maranatos' after 'ash in 1967'",
+              "'preceding' heard as 'proceeding' after 'in the ruins'",
+              "'the' heard as '(nothing)' after 'pack and flee'",
+              "'(nothing)' heard as 'you' after 'frozen in time'"
+            ],
+            "resolved": []
+          }
+        }
+      },
+      "media_sha256": "be60f90e883a81667c04304be64e491d16af6195e94dee4b2d17630ae46f6557",
+      "scores": {
+        "hook": 5,
+        "clarity": 5,
+        "payoff": 4,
+        "visuals": 3,
+        "loop": 5,
+        "accuracy": 3
+      },
+      "notes": {
+        "hook": "Compares Akrotiri directly to Pompeii with zero casualties to instantly grab attention.",
+        "clarity": "Follows a logical narrative flow from discovery to the explanation of why no bodies were found.",
+        "payoff": "Explaining that early earthquakes gave residents time to evacuate resolves the hook's premise neatly.",
+        "visuals": "Beats 5 and 6 display modern Santorini tourist buildings rather than ancient Minoan ruins.",
+        "loop": "Ending on 'frozen in time' connects seamlessly back into 'Akrotiri is the Pompeii where nobody died.'",
+        "accuracy": "Beat 2 presents the 16th century BC date as settled history despite the eruption timeline being contested."
+      },
+      "frames": [
+        {
+          "beat": 5,
+          "problem": "Shows modern Santorini architecture and paved walkways rather than the ancient ruins of Akrotiri."
+        },
+        {
+          "beat": 6,
+          "problem": "Reuses the modern Santorini photo which is anachronistic for Bronze Age evacuees."
+        }
+      ],
+      "speech": [
+        {
+          "beat": 3,
+          "word": "Spyridon",
+          "respelling": "speer ee don"
+        },
+        {
+          "beat": 6,
+          "word": "Preceding",
+          "respelling": "pree seed ing"
+        }
+      ],
+      "rewrite": [
+        "Beat 2: Change 'Catastrophic eruptions in the 16th century BC buried the city in ash.' to 'A catastrophic volcanic eruption buried the city in ash, though its exact date remains debated.'"
+      ],
+      "better_than_last": "It establishes a clear central mystery right in beat 1 without cluttering the narrative with secondary historical details.",
+      "judge": "gemini-3.6-flash",
+      "passed": false
+    }
+  ],
+  "best_round": 1
+}

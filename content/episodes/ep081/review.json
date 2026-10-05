@@ -1,0 +1,155 @@
+{
+  "rounds": [
+    {
+      "at": "2026-10-05T13:43:58+05:30",
+      "check": {
+        "duration": 26.36,
+        "words": 69,
+        "integrated_lufs": -14.4,
+        "true_peak_dbfs": -1.8,
+        "warnings": [],
+        "speech_differences": [
+          "base.en: 'believe' heard as 'believed' after 'no binoculars many'",
+          "base.en: 'reshuffle' heard as 'riesheffel' after 'last minute officer'"
+        ],
+        "speech_error": null,
+        "sources": [
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "designed card",
+          "Wikimedia Commons",
+          "Wikimedia Commons"
+        ],
+        "speech_verification": {
+          "heard": "lookouts on the Titanic had no binoculars. Many believe the ship sailed without them by mistake. But during the delivery voyage, the crew actually used them. A last-minute officer reshuffle forced David Blair off the ship. He accidentally kept a locker key in his uniform pocket. Frederick Fleet testified that binoculars would have spotted the iceberg sooner. Without that key, the lookouts on the Titanic had no binoculars.",
+          "model": "small.en",
+          "media_sha256": "f0a481a2d6c5a8c13333f2a4bf1ee9d01c26ee0dd1645035d524f882b9b2e735",
+          "primary_differences": [
+            "'the' heard as '(nothing)'"
+          ],
+          "differences": [
+            "base.en: 'believe' heard as 'believed' after 'no binoculars many'",
+            "base.en: 'reshuffle' heard as 'riesheffel' after 'last minute officer'"
+          ],
+          "corroboration": {
+            "model": "base.en",
+            "heard": "The lookouts on the Titanic had no binoculars. Many believed the ship sailed without them by mistake. But during the delivery voyage, the crew actually used them. The last-minute officer Riesheffel forced David Blair off the ship. He accidentally kept a locker key in his uniform pocket. Frederick Fleet testified that binoculars would have spotted the iceberg sooner. Without that key, the lookouts on the Titanic had no binoculars.",
+            "differences": [
+              "'believe' heard as 'believed' after 'no binoculars many'",
+              "'a' heard as 'the' after 'actually used them'",
+              "'reshuffle' heard as 'riesheffel' after 'last minute officer'"
+            ],
+            "resolved": [
+              "'the' heard as '(nothing)'"
+            ]
+          }
+        }
+      },
+      "media_sha256": "f0a481a2d6c5a8c13333f2a4bf1ee9d01c26ee0dd1645035d524f882b9b2e735",
+      "scores": {
+        "hook": 5,
+        "clarity": 5,
+        "payoff": 5,
+        "visuals": 5,
+        "loop": 5,
+        "accuracy": 3
+      },
+      "notes": {
+        "hook": "Strong hook that identifies the tragedy and the specific irony immediately.",
+        "clarity": "The narrative flow from the delivery voyage to the reshuffle is very clear.",
+        "payoff": "The reveal of the forgotten key as the cause for the lack of binoculars is a great payoff.",
+        "visuals": "Excellent use of archival photos, including the specific iceberg and David Blair.",
+        "loop": "Perfectly seamless repetition of the exact phrasing in the opening line.",
+        "accuracy": "Beat 2 uses a 'many believe' strawman not in the claims, and beat 7 overstates the key's role."
+      },
+      "frames": [],
+      "speech": [
+        {
+          "beat": 2,
+          "word": "believe",
+          "respelling": "bee leeve"
+        },
+        {
+          "beat": 4,
+          "word": "reshuffle",
+          "respelling": "ree shuff ul"
+        }
+      ],
+      "rewrite": [
+        "Beat 2: The lookouts were told they would have no binoculars for the voyage.",
+        "Beat 7: With Blair gone and the locker locked, the lookouts were left without binoculars."
+      ],
+      "better_than_last": "The visual connection to the specific iceberg and the officer involved is more direct than the imagery in ep054.",
+      "judge": "gemini-3-flash-preview",
+      "passed": false
+    },
+    {
+      "at": "2026-10-05T13:52:13+05:30",
+      "check": {
+        "duration": 25.67,
+        "words": 70,
+        "integrated_lufs": -14.3,
+        "true_peak_dbfs": -1.9,
+        "warnings": [],
+        "speech_differences": [],
+        "speech_error": null,
+        "sources": [
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons"
+        ],
+        "speech_verification": {
+          "heard": "lookouts on the Titanic had no binoculars. Lookouts were told they would have no binoculars for the voyage. During the delivery voyage, the crew actually used them. A last-minute officer reshuffle forced David Blair off the ship. He accidentally left with the locker key in his pocket. Lookout Frederick Fleet testified these would have spotted the iceberg sooner. With Blair gone and the locker locked, they had no binoculars.",
+          "model": "small.en",
+          "media_sha256": "ec86d5a5870918485fda20c3f84168a90e51a14c09f56f1fee6f7427e4e2ab0a",
+          "primary_differences": [
+            "'the' heard as '(nothing)'"
+          ],
+          "differences": [],
+          "corroboration": {
+            "model": "base.en",
+            "heard": "The lookouts on the Titanic had no binoculars. Lookouts were told they would have no binoculars for the voyage. During the delivery voyage, the crew actually used them. A last-minute officer reshuffle forced David Blair off the ship. He accidentally left with a locker key in his pocket. Lookout Frederick Fleet testified these would have spotted the iceberg sooner. With Blair gone and the locker locked, they had no binoculars.",
+            "differences": [
+              "'the' heard as 'a' after 'accidentally left with'"
+            ],
+            "resolved": [
+              "'the' heard as '(nothing)'"
+            ]
+          }
+        }
+      },
+      "media_sha256": "ec86d5a5870918485fda20c3f84168a90e51a14c09f56f1fee6f7427e4e2ab0a",
+      "scores": {
+        "hook": 5,
+        "clarity": 5,
+        "payoff": 4,
+        "visuals": 5,
+        "loop": 3,
+        "accuracy": 3
+      },
+      "notes": {
+        "hook": "Strong dramatic premise with an immediate text overlay that grabs attention.",
+        "clarity": "Clear, linear historical account that is easy to follow on one listen.",
+        "payoff": "Connecting a routine crew reassignment and missing key to the lookouts' situation pays off the hook.",
+        "visuals": "Archival photographs and inquiry sketches fit the narration accurately and read clearly.",
+        "loop": "Beat 7 ends with 'had no binoculars' which repeats Beat 1's phrase almost verbatim upon replay.",
+        "accuracy": "Beat 7 implies binoculars were locked inside the crow's nest locker, which sources do not support."
+      },
+      "frames": [],
+      "speech": [],
+      "rewrite": [
+        "Beat 7: Change to 'With Blair reassigned, he inadvertently carried off the key.'"
+      ],
+      "better_than_last": "It maintains a tighter narrative focus around David Blair and the lookouts than recent episodes.",
+      "judge": "gemini-3.6-flash",
+      "passed": false
+    }
+  ],
+  "best_round": 1
+}

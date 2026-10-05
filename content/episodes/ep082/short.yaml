@@ -1,0 +1,143 @@
+id: ep082
+title: Why Are There No Bodies in Akrotiri? 😳
+series: Lost Cities
+description: Explore the mystery of Akrotiri, a Bronze Age city buried by ash where the residents managed to escape before
+  disaster struck.
+sources:
+- https://akrotiri-museum.com/the-prehistoric-city-of-akrotiri/
+- https://culturalheritageonline.com/places/akrotiri-santorini/
+- https://www.ancienttravel.org/destinations/akrotiri/
+- https://daytripsfromsantorini.com/articles/akrotiri-archaeological-site
+- https://en.wikipedia.org/wiki/Akrotiri_(prehistoric_city)
+- https://mygreecetours.org/akrotiri-santorini/
+hashtags:
+- '#history'
+- '#akrotiri'
+- '#santorini'
+tags:
+- akrotiri
+- santorini
+- archaeology
+- minoan
+- volcano
+- lost city
+- bronze age
+voice:
+  engine: kokoro
+  voice: am_fenrir
+  speed: 1.15
+beats:
+- text: Akrotiri is the Pompeii where nobody died.
+  emphasis:
+  - nobody died
+  visual:
+    source: url
+    url: https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ae/Aerial_view_of_Tholos_Naftilos_in_Santorini%2C_Greece.jpg/3840px-Aerial_view_of_Tholos_Naftilos_in_Santorini%2C_Greece.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
+    credit:
+      source: Wikimedia Commons
+      title: Aerial view of Tholos Naftilos in Santorini, Greece.jpg
+      credit: dronepicr
+      license: CC BY 2.0
+      url: https://commons.wikimedia.org/wiki/File:Aerial_view_of_Tholos_Naftilos_in_Santorini,_Greece.jpg
+    fallbacks:
+    - color
+    motion: pan_right
+    focus_x: 0.5
+    focus_y: 0.45
+- text: Volcanic ash buried the city, though the exact date remains debated.
+  emphasis:
+  - exact date remains debated
+  visual:
+    source: url
+    url: https://www.artic.edu/iiif/2/8b8876a5-adc0-6176-474a-7c64ee350628/full/1686,/0/default.jpg
+    credit:
+      source: Art Institute of Chicago (CC0)
+      title: Eruption of Vesuvius
+      credit: 'Robert Bradstreet
+
+        British, n.d.'
+      license: CC0
+      url: https://www.artic.edu/artworks/86004
+    fallbacks:
+    - card
+    - color
+    motion: pan_left
+    focus_x: 0.5
+    focus_y: 0.5
+    card:
+      kind: dateline
+      big: 16th Century BC
+      small: Santorini, Greece
+- text: In 1967, Spyridon Marinatos began excavating the volcanic debris.
+  emphasis:
+  - Spyridon Marinatos
+  sfx: whoosh
+  visual:
+    source: card
+    card:
+      kind: dateline
+      big: '1967'
+      small: Akrotiri, Greece
+    motion: zoom_in
+- text: He found three-story buildings and colorful frescoes.
+  emphasis:
+  - three-story
+  - frescoes
+  sfx: riser
+  visual:
+    source: url
+    url: https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c8/Fresque_du_printemps%2C_Akrotiri%2C_Gr%C3%A8ce.jpg/1920px-Fresque_du_printemps%2C_Akrotiri%2C_Gr%C3%A8ce.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
+    credit:
+      source: Wikimedia Commons
+      title: Fresque du printemps, Akrotiri, Grèce.jpg
+      credit: Unknown authorUnknown author
+      license: Public domain
+      url: https://commons.wikimedia.org/wiki/File:Fresque_du_printemps,_Akrotiri,_Gr%C3%A8ce.jpg
+    fallbacks:
+    - color
+    motion: zoom_out
+    focus_x: 0.5
+    focus_y: 0.5
+- text: Unlike Pompeii, no human remains were found.
+  emphasis:
+  - no human remains
+  sfx: pop
+  pause_after: 0.4
+  visual:
+    source: url
+    url: https://live.staticflickr.com/65535/47650103701_c6b4e3450d_b.jpg
+    credit:
+      source: Flickr via Openverse
+      title: Anastasi Church - Santorini
+      credit: Jorge Lascar
+      license: CC BY 2.0
+      url: https://www.flickr.com/photos/8721758@N06/47650103701
+    fallbacks:
+    - card
+    - color
+    motion: pan_right
+    focus_x: 0.5
+    focus_y: 0.5
+    card:
+      kind: fact
+      big: Zero Remains
+      small: found in ruins
+- text: Preceding earthquakes likely warned the population to flee.
+  emphasis:
+  - warned the population
+  visual:
+    reuse: 5
+    motion: zoom_in
+    focus_x: 0.5
+    focus_y: 0.5
+- text: The people escaped, leaving behind a ghost town.
+  emphasis:
+  - ghost town
+  sfx: whoosh
+  visual:
+    reuse: 1
+    motion: zoom_out
+    focus_x: 0.5
+    focus_y: 0.45
+depth_motion: true
+hook_text: THE POMPEII WITHOUT BODIES

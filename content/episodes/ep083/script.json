@@ -1,0 +1,200 @@
+{
+  "hooks": [
+    {
+      "style": "statement",
+      "text": "You might think a tsunami destroys everything it touches."
+    },
+    {
+      "style": "question",
+      "text": "How did a Navy warship end up as a desert inn?"
+    },
+    {
+      "style": "contradiction",
+      "text": "A massive wave hit Arica, but it didn't sink this ship."
+    }
+  ],
+  "hook_style": "statement",
+  "structure": "myth_vs_fact",
+  "title": "Why Was a US Navy Ship Sitting in the Desert? 🤯",
+  "description": "In 1868, a massive tsunami in Arica carried the USS Wateree inland, leaving it perfectly upright in the Atacama desert.",
+  "hashtags": [
+    "#history",
+    "#tsunami",
+    "#shipwreck"
+  ],
+  "tags": [
+    "USS Wateree",
+    "Arica earthquake",
+    "tsunami",
+    "maritime history",
+    "Peru",
+    "US Navy"
+  ],
+  "beats": [
+    {
+      "text": "You might think a tsunami destroys everything it touches.",
+      "emphasis": [
+        "destroys everything"
+      ],
+      "sfx": "none",
+      "pause_after": 0.12,
+      "claims": [
+        3,
+        11
+      ],
+      "visual": "Engraving of a massive tsunami wave striking a coastal city, 19th century",
+      "subjects": [
+        "Tsunami",
+        "1868 Arica earthquake"
+      ],
+      "year": 1868,
+      "queries": [
+        "1868 Arica tsunami engraving",
+        "19th century tsunami illustration"
+      ],
+      "card": {
+        "kind": "none",
+        "big": "",
+        "small": ""
+      }
+    },
+    {
+      "text": "In 1868, a massive earthquake leveled the port of Arica, Peru.",
+      "emphasis": [
+        "Arica, Peru"
+      ],
+      "sfx": "whoosh",
+      "pause_after": 0.12,
+      "claims": [
+        1,
+        2,
+        4
+      ],
+      "visual": "Ruins of buildings in Arica after the 1868 earthquake",
+      "subjects": [
+        "1868 Arica earthquake",
+        "Arica"
+      ],
+      "year": 1868,
+      "queries": [
+        "1868 Arica earthquake ruins",
+        "Arica Peru 1868 photograph"
+      ],
+      "card": {
+        "kind": "dateline",
+        "big": "August 13, 1868",
+        "small": "Arica, Peru"
+      }
+    },
+    {
+      "text": "While other ships were crushed, the USS Wateree had a flat bottom.",
+      "emphasis": [
+        "flat bottom"
+      ],
+      "sfx": "none",
+      "pause_after": 0.12,
+      "claims": [
+        5,
+        10,
+        11
+      ],
+      "visual": "Illustration of the USS Wateree sidewheel gunboat at sea",
+      "subjects": [
+        "USS Wateree",
+        "Gunboat"
+      ],
+      "year": 1868,
+      "queries": [
+        "USS Wateree gunboat",
+        "USS Wateree 1863"
+      ],
+      "card": {
+        "kind": "none",
+        "big": "",
+        "small": ""
+      }
+    },
+    {
+      "text": "The fifty-foot wave carried the gunboat inland without tipping it over.",
+      "emphasis": [
+        "fifty-foot wave"
+      ],
+      "sfx": "riser",
+      "pause_after": 0.12,
+      "claims": [
+        9,
+        10
+      ],
+      "visual": "Illustration of a massive tsunami wave lifting ships in a harbor",
+      "subjects": [
+        "Tsunami",
+        "USS Wateree"
+      ],
+      "year": 1868,
+      "queries": [
+        "1868 Arica tsunami illustration",
+        "ship riding tsunami wave"
+      ],
+      "card": {
+        "kind": "none",
+        "big": "",
+        "small": ""
+      }
+    },
+    {
+      "text": "It sat perfectly upright, five hundred yards into the desert.",
+      "emphasis": [
+        "into the desert"
+      ],
+      "sfx": "none",
+      "pause_after": 0.4,
+      "claims": [
+        9,
+        10
+      ],
+      "visual": "Historic photograph of the USS Wateree sitting upright in the desert",
+      "subjects": [
+        "USS Wateree"
+      ],
+      "year": 1868,
+      "queries": [
+        "USS Wateree beached Arica 1868",
+        "USS Wateree photograph"
+      ],
+      "card": {
+        "kind": "none",
+        "big": "",
+        "small": ""
+      }
+    },
+    {
+      "text": "The Navy ship spent its final years serving as a desert inn.",
+      "emphasis": [
+        "desert inn"
+      ],
+      "sfx": "pop",
+      "pause_after": 0.12,
+      "claims": [
+        12,
+        13
+      ],
+      "visual": "Distant view of the USS Wateree hulk stranded on land",
+      "subjects": [
+        "USS Wateree"
+      ],
+      "year": 1870,
+      "queries": [
+        "USS Wateree 1868 ruins",
+        "Arica 1868 tsunami shipwreck"
+      ],
+      "card": {
+        "kind": "none",
+        "big": "",
+        "small": ""
+      }
+    }
+  ],
+  "hook_text": "SURVIVED THE WAVE",
+  "loop": true,
+  "better_than_last": "Used the myth_vs_fact structure to contrast the assumed destruction of a tsunami with the unique survival of the USS Wateree's flat-bottomed hull."
+}

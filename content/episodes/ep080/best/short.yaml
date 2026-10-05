@@ -1,0 +1,168 @@
+id: ep080
+title: How Did Alexander's Men Scale an Impregnable Mountain? 🤯
+series: Fallen Empires
+description: Alexander the Great captured the Sogdian Rock in 327 BC by sending elite climbers up a vertical cliff at night.
+sources:
+- https://en.wikipedia.org/wiki/Siege_of_the_Sogdian_Rock
+- https://www.thearchaeologist.org/blog/alexander-the-great-the-siege-and-conquest-of-the-rock-of-sogdiana-the-first-campaign-to-conquer-a-fortress-using-mountaineering-methods-in-world-history
+- https://alexander-the-great.org/alexanders-campaign/siege-of-sogdian-rock
+- https://www.livius.org/sources/content/arrian/anabasis/alexander-captures-the-sogdian-rock/
+- https://www.thecollector.com/sogdian-rock-siege-alexander-the-great/
+hashtags:
+- '#history'
+- '#alexanderthegreat'
+- '#siege'
+tags:
+- Sogdian Rock
+- Alexander the Great
+- Macedonian Empire
+- Ancient Warfare
+- Mountain Climbing
+- Fallen Empires
+voice:
+  engine: kokoro
+  voice: am_fenrir
+  speed: 1.15
+beats:
+- text: Defenders taunted Alexander that he needed winged soldiers to take their mountain.
+  emphasis:
+  - winged soldiers
+  - mountain
+  visual:
+    source: url
+    url: https://upload.wikimedia.org/wikipedia/commons/8/84/Alexander_the_Great_mosaic_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    credit:
+      source: Wikimedia Commons
+      title: Alexander the Great mosaic (cropped).jpg
+      credit: Unknown authorUnknown author
+      license: Public domain
+      url: https://commons.wikimedia.org/wiki/File:Alexander_the_Great_mosaic_(cropped).jpg
+    fallbacks:
+    - card
+    - color
+    motion: pan_down
+    focus_x: 0.55
+    focus_y: 0.35
+    box:
+    - 0.3
+    - 0.1
+    - 0.85
+    - 0.55
+    card:
+      kind: quote
+      big: men with wings
+      small: Sogdian defenders
+- text: Most thought the Sogdian Rock was impregnable in 327 BC.
+  emphasis:
+  - impregnable
+  sfx: whoosh
+  visual:
+    source: url
+    url: https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ed/Great_captains_-_a_course_of_six_lectures_showing_the_influence_on_the_art_of_war_of_the_campaigns_of_Alexander%2C_Hannibal%2C_C%C3%A6sar%2C_Gustavus_Adolphus%2C_Frederick%2C_and_Napoleon_%281889%29_%2814768082732%29.jpg/1920px-thumbnail.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
+    credit:
+      source: Wikimedia Commons
+      title: Great captains - a course of six lectures showing the influence on the art of war of the campaigns of Alexander,
+        Hannibal, Cæsar, Gustavus Adolphus, Frederick, and Napoleon (1889) (14768082732).jpg
+      credit: Internet Archive Book Images
+      license: No restrictions
+      url: https://commons.wikimedia.org/wiki/File:Great_captains_-_a_course_of_six_lectures_showing_the_influence_on_the_art_of_war_of_the_campaigns_of_Alexander,_Hannibal,_C%C3%A6sar,_Gustavus_Adolphus,_Frederick,_and_Napoleon_(1889)_(14768082732).jpg
+    fallbacks:
+    - card
+    - color
+    motion: pan_left
+    focus_x: 0.75
+    focus_y: 0.25
+    box:
+    - 0.65
+    - 0.1
+    - 0.85
+    - 0.4
+    card:
+      kind: dateline
+      big: 327 BC
+      small: Sogdian Rock
+- text: Alexander promised a fortune to 300 volunteers to climb it.
+  emphasis:
+  - fortune
+  - 300 volunteers
+  visual:
+    source: url
+    url: https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e1/Portrait_of_Alexander_the_Great_-_Getty_Museum_%2873.AA.27%29.jpg/1920px-Portrait_of_Alexander_the_Great_-_Getty_Museum_%2873.AA.27%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
+    credit:
+      source: Wikimedia Commons
+      title: Portrait of Alexander the Great - Getty Museum (73.AA.27).jpg
+      credit: J. Paul Getty Museum
+      license: CC0
+      url: https://commons.wikimedia.org/wiki/File:Portrait_of_Alexander_the_Great_-_Getty_Museum_(73.AA.27).jpg
+    fallbacks:
+    - card
+    - color
+    motion: zoom_out
+    focus_x: 0.5
+    focus_y: 0.4
+    box:
+    - 0.15
+    - 0.1
+    - 0.85
+    - 0.8
+    card:
+      kind: fact
+      big: 12 talents
+      small: Alexander's reward
+- text: They hammered iron tent pegs into ice through the night.
+  emphasis:
+  - iron tent pegs
+  sfx: whoosh
+  visual:
+    source: url
+    url: https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f7/Unidentified_object_%28iron%29_%28FindID_798824%29.jpg/3840px-Unidentified_object_%28iron%29_%28FindID_798824%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
+    credit:
+      source: Wikimedia Commons
+      title: Unidentified object (iron) (FindID 798824).jpg
+      credit: West Yorkshire Archaeology Advisory Service, Amy Downes, 2016-08-09 15:57:26
+      license: CC BY 2.0
+      url: https://commons.wikimedia.org/wiki/File:Unidentified_object_(iron)_(FindID_798824).jpg
+    fallbacks:
+    - card
+    - color
+    motion: pan_left
+    focus_x: 0.5
+    focus_y: 0.5
+    card:
+      kind: fact
+      big: iron tent pegs
+      small: the pitons used
+- text: Thirty men fell into deep snow and were never found.
+  emphasis:
+  - Thirty men
+  - never found
+  sfx: riser
+  visual:
+    source: card
+    card:
+      kind: fact
+      big: 30 soldiers
+      small: lost in the ascent
+    motion: zoom_in
+- text: At dawn, survivors waved linen flags from the summit.
+  emphasis:
+  - linen flags
+  - summit
+  sfx: pop
+  pause_after: 0.4
+  visual:
+    reuse: 4
+    motion: zoom_out
+    focus_x: 0.5
+    focus_y: 0.5
+- text: The fortress surrendered to soldiers who did not need wings.
+  emphasis:
+  - surrendered
+  - did not need wings
+  visual:
+    reuse: 1
+    motion: zoom_out
+    focus_x: 0.55
+    focus_y: 0.35
+depth_motion: true
+hook_text: SOLDIERS WITH WINGS
