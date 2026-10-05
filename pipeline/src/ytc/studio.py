@@ -38,8 +38,6 @@ IST = ZoneInfo("Asia/Kolkata")
 VOICE = {"engine": "kokoro", "voice": "am_fenrir", "speed": 1.15}
 GATE = ["hook", "clarity", "payoff", "visuals", "loop", "accuracy"]
 PASS_SCORE = 4
-# The recognizer drops or swaps a short word on clean narration; a judge who heard no error settles that many.
-MINOR_ASR_DIFFERENCES = 2
 FIX_ROUNDS = 2
 MAX_ATTEMPTS = 3
 # Set per job (auto.LAST_RESORT_BELOW) when so few Shorts are ready that the channel would soon post nothing.
@@ -254,10 +252,10 @@ def review(folder: Path, script: dict, result: dict, episode_id: str, visuals: l
 
 
 def _minor_asr_dispute(result: dict, verdict: dict) -> bool:
+    from .check import minor_differences
+
     speech = result.get("speech") or {}
-    differences = speech.get("differences")
-    return (not speech.get("error") and isinstance(differences, list)
-            and 0 < len(differences) <= MINOR_ASR_DIFFERENCES and not verdict["speech"])
+    return not speech.get("error") and minor_differences(speech.get("differences")) and not verdict["speech"]
 
 
 def _passes(result: dict, verdict: dict, final: bool) -> bool:

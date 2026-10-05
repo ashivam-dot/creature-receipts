@@ -141,6 +141,46 @@ def speech(media: Path, beats: list[dict]) -> dict:
     return result
 
 
+_FINDING = re.compile(r"""^(?:[\w.-]+: )?(['"])(.*?)\1 heard as (['"])(.*?)\3(?: after .*)?$""", re.S)
+_SMALL_WORDS = {"(nothing)", "a", "an", "the", "s", "of", "to", "in", "on", "at", "and", "his", "her", "its",
+                "their", "was", "is", "it", "that", "by", "for", "as", "from", "with"}
+MATERIAL_ASR_DIFFERENCES = 2
+MAX_ASR_DIFFERENCES = 8
+
+
+def _skeleton(text: str) -> str:
+    letters = re.sub(r"[^a-z]", "", text.lower())
+    return re.sub(r"(.)\1+", r"\1", re.sub(r"[aeiouy]", "", letters))
+
+
+def _asr_noise(finding: str) -> bool:
+    """A dropped or added short word, or the same word spelled another way: what recognizers mishear."""
+    match = _FINDING.match(finding)
+    if not match:
+        return False
+    wrote, heard = match[2], match[4]
+    if re.search(r"\d", wrote + heard):
+        return False
+    if all(word in _SMALL_WORDS for word in (wrote.split() + heard.split())):
+        return True
+    if len(wrote.split()) != 1 or len(heard.split()) != 1 or "(nothing)" in (wrote, heard):
+        return False
+    return (_skeleton(wrote) == _skeleton(heard) or
+            difflib.SequenceMatcher(a=wrote.lower(), b=heard.lower()).ratio() >= 0.85)
+
+
+def minor_differences(differences) -> bool:
+    """Few enough recognizer disagreements, almost all noise, for a judge who heard no error to settle."""
+    if not isinstance(differences, list) or not 0 < len(differences) <= MAX_ASR_DIFFERENCES:
+        return False
+    if not all(isinstance(d, str) for d in differences):
+        return False
+    material = [d for d in differences if not _asr_noise(d)]
+    # A misheard number may be a misspoken date or toll, which changes the story.
+    numbers = [m for m in map(_FINDING.match, material) if m and re.search(r"\d", m[2] + m[4])]
+    return not numbers and len(material) <= MATERIAL_ASR_DIFFERENCES
+
+
 def _transcribe(media: Path, model_name: str) -> str:
     from faster_whisper import WhisperModel
 
