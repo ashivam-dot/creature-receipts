@@ -1,0 +1,108 @@
+{
+  "rounds": [
+    {
+      "at": "2026-10-05T23:11:16+05:30",
+      "check": {
+        "duration": 32.23,
+        "words": 64,
+        "integrated_lufs": -14.3,
+        "true_peak_dbfs": -1.8,
+        "warnings": [],
+        "speech_differences": [
+          "'pharaoh djer' heard as 'farogirr' after 'were entombed around'",
+          "'umm el qa ab' heard as 'alqab' after 'royal cemetery of'",
+          "'abydos' heard as 'abidos' after 'qa ab near'",
+          "'perimortem' heard as 'paramortem' after 'skulls revealed fatal'",
+          "'replaced' heard as 'replace' after '2nd dynasty figurines'",
+          "'pharaoh djer' heard as 'ferroger' after 'retainers entombed around'",
+          "base.en: 'djer' heard as 'jar' after 'entombed around pharaoh'",
+          "base.en: 'el qa ab' heard as 'alcab' after 'cemetery of umm'",
+          "base.en: 'abydos' heard as 'abidos' after 'qa ab near'",
+          "base.en: 'petrie' heard as 'petri' after 'english archaeologist flinders'",
+          "base.en: 'perimortem' heard as 'paramordum' after 'skulls revealed fatal'",
+          "base.en: 'entombed' heard as 'and tuned' after 'replaced the retainers'",
+          "base.en: 'pharaoh djer' heard as 'farojur' after 'retainers entombed around'"
+        ],
+        "speech_error": null,
+        "sources": [
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "designed card",
+          "Wikimedia Commons",
+          "Wikimedia Commons"
+        ],
+        "speech_verification": {
+          "heard": "318 retainers were entombed around Farogirr. The royal cemetery of Um Alqab near Abidos held the earliest rulers. English archaeologist Flinders Petrie excavated these subsidiary graves. The tombs were sealed simultaneously, suggesting these retainers were sacrificed. Forensic re-examination of 46 skulls revealed fatal paramortem fractures. This brutal practice disappeared before the Second Dynasty. Figurines replace the retainers entombed around ferroger.",
+          "model": "small.en",
+          "media_sha256": "b83ea50d2bc42c79fcc8eb326d3d3ed387c629b934f2b5ed08095060daf908d3",
+          "primary_differences": [
+            "'pharaoh djer' heard as 'farogirr' after 'were entombed around'",
+            "'umm el qa ab' heard as 'alqab' after 'royal cemetery of'",
+            "'abydos' heard as 'abidos' after 'qa ab near'",
+            "'perimortem' heard as 'paramortem' after 'skulls revealed fatal'",
+            "'replaced' heard as 'replace' after '2nd dynasty figurines'",
+            "'pharaoh djer' heard as 'ferroger' after 'retainers entombed around'"
+          ],
+          "differences": [
+            "'pharaoh djer' heard as 'farogirr' after 'were entombed around'",
+            "'umm el qa ab' heard as 'alqab' after 'royal cemetery of'",
+            "'abydos' heard as 'abidos' after 'qa ab near'",
+            "'perimortem' heard as 'paramortem' after 'skulls revealed fatal'",
+            "'replaced' heard as 'replace' after '2nd dynasty figurines'",
+            "'pharaoh djer' heard as 'ferroger' after 'retainers entombed around'",
+            "base.en: 'djer' heard as 'jar' after 'entombed around pharaoh'",
+            "base.en: 'el qa ab' heard as 'alcab' after 'cemetery of umm'",
+            "base.en: 'abydos' heard as 'abidos' after 'qa ab near'",
+            "base.en: 'petrie' heard as 'petri' after 'english archaeologist flinders'",
+            "base.en: 'perimortem' heard as 'paramordum' after 'skulls revealed fatal'",
+            "base.en: 'entombed' heard as 'and tuned' after 'replaced the retainers'",
+            "base.en: 'pharaoh djer' heard as 'farojur' after 'retainers entombed around'"
+          ],
+          "corroboration": {
+            "model": "base.en",
+            "heard": "318 retainers were entombed around pharaoh jar. The royal cemetery of Umm alcab near abidos held the earliest rulers. English archaeologist Flinders Petri excavated these subsidiary graves. The tombs were sealed simultaneously, suggesting these retainers were sacrificed. Forensic reexamination of 46 skulls revealed fatal paramordum fractures. This brutal practice disappeared before the second dynasty. Figurines replaced the retainers and tuned around Farojur.",
+            "differences": [
+              "'djer' heard as 'jar' after 'entombed around pharaoh'",
+              "'el qa ab' heard as 'alcab' after 'cemetery of umm'",
+              "'abydos' heard as 'abidos' after 'qa ab near'",
+              "'petrie' heard as 'petri' after 'english archaeologist flinders'",
+              "'perimortem' heard as 'paramordum' after 'skulls revealed fatal'",
+              "'entombed' heard as 'and tuned' after 'replaced the retainers'",
+              "'pharaoh djer' heard as 'farojur' after 'retainers entombed around'"
+            ],
+            "resolved": []
+          }
+        }
+      },
+      "media_sha256": "b83ea50d2bc42c79fcc8eb326d3d3ed387c629b934f2b5ed08095060daf908d3",
+      "scores": {
+        "hook": 5,
+        "clarity": 5,
+        "payoff": 5,
+        "visuals": 5,
+        "loop": 5,
+        "accuracy": 5
+      },
+      "notes": {
+        "hook": "Strong, intriguing hook that immediately sets up the historic mystery with a specific count of retainers.",
+        "clarity": "Very clear chronological narrative that is easy to follow on a single listen.",
+        "payoff": "Excellent payoff explaining the physical evidence of sacrifice and its eventual transition to shabti figurines.",
+        "visuals": "Striking historical images, relevant artifacts, and a very clean, readable title card.",
+        "loop": "Flawless loop that connects the ending sentence back to the starting hook seamlessly.",
+        "accuracy": "All claims are perfectly supported and well-aligned with the historical consensus and archaeological disputes."
+      },
+      "frames": [],
+      "speech": [],
+      "rewrite": [],
+      "better_than_last": "This episode has a much tighter narrative structure and stronger visual flow than episode 054.",
+      "judge": "gemini-3.5-flash",
+      "passed": false
+    }
+  ],
+  "best_round": 1,
+  "verdict": "rejected",
+  "reason": "speech: 'pharaoh djer' heard as 'farogirr' after 'were entombed around'; 'umm el qa ab' heard as 'alqab' after 'royal cemetery of'; 'abydos' heard as 'abidos' after 'qa ab near'; 'perimortem' heard as 'paramortem' after 'skulls revealed fatal'; 'replaced' heard as 'replace' after '2nd dynasty figurines'; 'pharaoh djer' heard as 'ferroger' after 'retainers entombed around'; base.en: 'djer' heard as",
+  "rejected_at": "2026-10-05T23:11:16+05:30"
+}

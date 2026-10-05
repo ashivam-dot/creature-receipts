@@ -1,0 +1,151 @@
+{
+  "rounds": [
+    {
+      "at": "2026-10-05T13:44:57+05:30",
+      "check": {
+        "duration": 28.03,
+        "words": 71,
+        "integrated_lufs": -14.5,
+        "true_peak_dbfs": -1.7,
+        "warnings": [],
+        "speech_differences": [],
+        "speech_error": null,
+        "sources": [
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "designed card",
+          "Wikimedia Commons",
+          "Wikimedia Commons"
+        ],
+        "speech_verification": {
+          "heard": "Defenders taunted Alexander that he needed winged soldiers to take their mountain. Most thought the Sogdian rock was impregnable in 327 B.C. Alexander promised a fortune to 300 volunteers to climb it. They hammered iron tent pegs into ice through the night. Thirty men fell into deep snow and were never found. At dawn survivors waved linen flags from the summit. The fortress surrendered to soldiers who did not need wings.",
+          "model": "small.en",
+          "media_sha256": "c927bb760ae9701def72f2149fae3afe76373052b5fdf6a6f439589b5f012c58",
+          "primary_differences": [],
+          "differences": []
+        }
+      },
+      "media_sha256": "c927bb760ae9701def72f2149fae3afe76373052b5fdf6a6f439589b5f012c58",
+      "scores": {
+        "hook": 5,
+        "clarity": 5,
+        "payoff": 4,
+        "visuals": 3,
+        "loop": 5,
+        "accuracy": 3
+      },
+      "notes": {
+        "hook": "The 'winged soldiers' taunt is a highly effective hook that immediately sets a challenge.",
+        "clarity": "The narrative is straightforward and follows a logical sequence from the taunt to the climb.",
+        "payoff": "The payoff is solid, although the surrender feels slightly rushed compared to the setup.",
+        "visuals": "Beat 6 shows iron tent pegs while the narration describes waving linen flags, which is a visual mismatch.",
+        "loop": "The loop is excellent, connecting the closing line perfectly back to the 'winged soldiers' hook.",
+        "accuracy": "Failed to include the required historical nuance regarding the muddled timeline and fortress name ambiguity."
+      },
+      "frames": [
+        {
+          "beat": 6,
+          "problem": "The image depicts iron tent pegs while the narration specifically mentions waving linen flags."
+        }
+      ],
+      "speech": [],
+      "rewrite": [
+        "Beat 2: Though the timeline is muddled, in 327 BC he reached this Sogdian fortress.",
+        "Beat 6: At dawn, survivors signaled from the summit that the impossible climb was over."
+      ],
+      "better_than_last": "The thematic symmetry between the hook and the loop is more refined than the recent episodes.",
+      "judge": "gemini-3-flash-preview",
+      "passed": false
+    },
+    {
+      "at": "2026-10-05T23:08:13+05:30",
+      "check": {
+        "duration": 28.22,
+        "words": 72,
+        "integrated_lufs": -14.6,
+        "true_peak_dbfs": -1.6,
+        "warnings": [],
+        "speech_differences": [
+          "'they' heard as 'he' after 'to 300 volunteers'",
+          "base.en: 'sogdian' heard as 'sogdean' after 'he reached this'"
+        ],
+        "speech_error": null,
+        "sources": [
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "designed card",
+          "Wikimedia Commons",
+          "Wikimedia Commons"
+        ],
+        "speech_verification": {
+          "heard": "Defenders taunted Alexander that he needed winged soldiers to take their mountain. Though the timeline is muddled, in 327 B.C. he reached this Sogdian fortress. He offered 12 talents to 300 volunteers. He drove iron tent pegs into ice all night. 30 men fell and vanished in the snow. At dawn, survivors signaled from the summit that the impossible climb was over. The fortress surrendered to soldiers who did not need wings.",
+          "model": "small.en",
+          "media_sha256": "3a29a36189e16a3a9b26e7547c29bb3d7dc5e6011c39f4e94832ad5135b9fbb3",
+          "primary_differences": [
+            "'they' heard as 'he' after 'to 300 volunteers'"
+          ],
+          "differences": [
+            "'they' heard as 'he' after 'to 300 volunteers'",
+            "base.en: 'sogdian' heard as 'sogdean' after 'he reached this'"
+          ],
+          "corroboration": {
+            "model": "base.en",
+            "heard": "Defenders taunted Alexander that he needed winged soldiers to take their mountain. Though the timeline is muddled in 327 BC, he reached this sogdean fortress. He offered 12 talents to 300 volunteers. They drove iron tent pegs into ice all night. Thirty men fell and vanished in the snow. At dawn, survivors signaled from the summit that the impossible climb was over. The fortress surrendered to soldiers who did not need wings.",
+            "differences": [
+              "'sogdian' heard as 'sogdean' after 'he reached this'"
+            ],
+            "resolved": []
+          }
+        }
+      },
+      "media_sha256": "3a29a36189e16a3a9b26e7547c29bb3d7dc5e6011c39f4e94832ad5135b9fbb3",
+      "scores": {
+        "hook": 5,
+        "clarity": 5,
+        "payoff": 4,
+        "visuals": 3,
+        "loop": 4,
+        "accuracy": 3
+      },
+      "notes": {
+        "hook": "Opening with the enemy taunting Alexander about winged soldiers creates an immediate, compelling challenge.",
+        "clarity": "The progression from the dare to the night ascent and fortress surrender is effortless to follow.",
+        "payoff": "The poetic reversal of soldiers proving they did not need wings delivers satisfying historical irony.",
+        "visuals": "The campaign map in beat 2 is unreadable at phone scale, and Roman-era tent pegs are anachronistic.",
+        "loop": "Resolving with soldiers not needing wings circles smoothly back into the opening taunt about winged soldiers.",
+        "accuracy": "Beat 3 states 12 talents were offered to 300 volunteers, but the prize was strictly for the first man up."
+      },
+      "frames": [
+        {
+          "beat": 2,
+          "problem": "print too small to read at phone size"
+        },
+        {
+          "beat": 4,
+          "problem": "anachronistic (Roman tent pegs representing a 4th-century BC Macedonian campaign)"
+        }
+      ],
+      "speech": [
+        {
+          "beat": 2,
+          "word": "Sogdian",
+          "respelling": "sog dee un"
+        }
+      ],
+      "rewrite": [
+        "Beat 3: Change to 'He offered twelve talents to the first man up, assembling three hundred volunteers.'"
+      ],
+      "better_than_last": "It gracefully addresses conflicting historical dating directly in the script without stalling narrative pace.",
+      "judge": "gemini-3.8-flash",
+      "passed": false
+    }
+  ],
+  "best_round": 1,
+  "verdict": "rejected",
+  "reason": "visual plan: only 2 original art beats; 3 are needed for 7 beats",
+  "rejected_at": "2026-10-05T23:17:28+05:30"
+}

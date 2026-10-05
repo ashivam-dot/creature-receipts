@@ -199,7 +199,124 @@
       "better_than_last": "It establishes a clear central mystery right in beat 1 without cluttering the narrative with secondary historical details.",
       "judge": "gemini-3.6-flash",
       "passed": false
+    },
+    {
+      "at": "2026-10-05T23:10:39+05:30",
+      "check": {
+        "duration": 26.17,
+        "words": 57,
+        "integrated_lufs": -14.3,
+        "true_peak_dbfs": -1.8,
+        "warnings": [],
+        "speech_differences": [
+          "'spyridon marinatos' heard as 'spirit and maranatos' after 'debated in 1967'",
+          "'preceding' heard as 'proceeding' after 'remains were found'",
+          "'the' heard as '(nothing)' after 'population to flee'",
+          "base.en: 'akrotiri' heard as 'akritiri'",
+          "base.en: 'spyridon marinatos' heard as 'spirit and maranatos' after 'debated in 1967'",
+          "base.en: 'preceding' heard as 'proceeding' after 'remains were found'"
+        ],
+        "speech_error": null,
+        "sources": [
+          "Wikimedia Commons",
+          "Art Institute of Chicago (CC0)",
+          "designed card",
+          "Wikimedia Commons",
+          "Flickr via Openverse",
+          "Flickr via Openverse",
+          "Wikimedia Commons"
+        ],
+        "speech_verification": {
+          "heard": "Akrotiri is the Pompeii where nobody died. Volcanic ash buried the city, though the exact date remains debated. In 1967, Spirit and Maranatos began excavating the volcanic debris. He found three-story buildings and colorful frescoes. Unlike Pompeii, no human remains were found. Proceeding earthquakes likely warned the population to flee. People escaped leaving behind a ghost town.",
+          "model": "small.en",
+          "media_sha256": "7181e4dd0966adadf027e587ec4cc8b6586c8421dc3ce258dfcad630f647a405",
+          "primary_differences": [
+            "'spyridon marinatos' heard as 'spirit and maranatos' after 'debated in 1967'",
+            "'preceding' heard as 'proceeding' after 'remains were found'",
+            "'the' heard as '(nothing)' after 'population to flee'"
+          ],
+          "differences": [
+            "'spyridon marinatos' heard as 'spirit and maranatos' after 'debated in 1967'",
+            "'preceding' heard as 'proceeding' after 'remains were found'",
+            "'the' heard as '(nothing)' after 'population to flee'",
+            "base.en: 'akrotiri' heard as 'akritiri'",
+            "base.en: 'spyridon marinatos' heard as 'spirit and maranatos' after 'debated in 1967'",
+            "base.en: 'preceding' heard as 'proceeding' after 'remains were found'"
+          ],
+          "corroboration": {
+            "model": "base.en",
+            "heard": "Akritiri is the Pompeii where nobody died. Volcanic ash buried the city, though the exact date remains debated. In 1967, Spirit and Maranatos began excavating the volcanic debris. He found three story buildings and colorful frescoes. Unlike Pompeii, no human remains were found. Proceeding earthquakes likely warned the population to flee. people escaped leaving behind a ghost town",
+            "differences": [
+              "'akrotiri' heard as 'akritiri'",
+              "'spyridon marinatos' heard as 'spirit and maranatos' after 'debated in 1967'",
+              "'preceding' heard as 'proceeding' after 'remains were found'",
+              "'the' heard as '(nothing)' after 'population to flee'"
+            ],
+            "resolved": []
+          }
+        }
+      },
+      "media_sha256": "7181e4dd0966adadf027e587ec4cc8b6586c8421dc3ce258dfcad630f647a405",
+      "scores": {
+        "hook": 3,
+        "clarity": 5,
+        "payoff": 4,
+        "visuals": 3,
+        "loop": 5,
+        "accuracy": 5
+      },
+      "notes": {
+        "hook": "The hook and on-screen text give away the entire mystery immediately.",
+        "clarity": "The narrative is easy to follow and explains the Pompeii comparison well.",
+        "payoff": "The explanation of the evacuation provides a satisfying answer to the hook.",
+        "visuals": "Several frames use modern travel photos that clash with the Bronze Age history.",
+        "loop": "The mention of a ghost town flows perfectly back into the introduction of the city.",
+        "accuracy": "Every fact, including the dating debate and specific names, is supported by the claims."
+      },
+      "frames": [
+        {
+          "beat": 2,
+          "problem": "The image depicts the eruption of Mount Vesuvius, the wrong volcano for this event."
+        },
+        {
+          "beat": 5,
+          "problem": "Shows a modern Santorini church, which is anachronistic and off-topic for archaeological remains."
+        },
+        {
+          "beat": 6,
+          "problem": "Shows a modern Santorini church, which is anachronistic and off-topic for the subject of earthquakes."
+        }
+      ],
+      "speech": [
+        {
+          "beat": 3,
+          "word": "Spyridon",
+          "respelling": "spear ih dawn"
+        },
+        {
+          "beat": 3,
+          "word": "Marinatos",
+          "respelling": "mah ree nah toss"
+        },
+        {
+          "beat": 6,
+          "word": "Preceding",
+          "respelling": "pree seed ing"
+        }
+      ],
+      "rewrite": [
+        "Beat 1: Akrotiri is often called the Pompeii of the Aegean, but something is missing.",
+        "On-screen text: THE GHOST POMPEII",
+        "Beat 5: Use an image of the ash molds or ruins to show the absence of human remains.",
+        "Beat 6: Use an image of the excavated three-story buildings to show the abandoned city."
+      ],
+      "better_than_last": "This script handles the contested archaeological dating much more accurately than the recent 'Winton's Rescue Train' handled its timeline.",
+      "judge": "gemini-3-flash-preview",
+      "passed": false
     }
   ],
-  "best_round": 1
+  "best_round": 1,
+  "verdict": "rejected",
+  "reason": "low scores: hook, visuals; 3 frame problems; 3 speech problems",
+  "rejected_at": "2026-10-05T23:10:39+05:30"
 }

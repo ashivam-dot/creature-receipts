@@ -27,7 +27,7 @@ event is told for its gore. Space topics belong to the sister channel Universe R
 | 2026-10-02 | Nicholas Winton (1939): his largest rescue train of 250 children was scheduled to leave Prague on September 1, 1939—the exact day Germany invaded Poland, halting the departure — done (ep045) | The Last Hours | Nicholas Winton is currently trending on English Wikipedia with nearly 30,000 daily pageviews. |
 | 2026-10-03 | Operation Market Garden (1944): commanders dismissed aerial reconnaissance photos showing German panzers waiting at Arnhem, ordering the intelligence officer who raised the alarm on sudden medical leave — done (ep051) | Warnings Ignored | Bernard Montgomery is trending on Wikipedia with over 53,000 daily views. |
 | 2026-10-05 | Lake Issyk-Kul (c. 1200): an ancient Silk Road trade hub vanished beneath rising waters, leaving centuries-old city ruins submerged off the shore — parked (ep084) | Lost Cities | Trending in archaeology news following underwater dives exploring submerged Silk Road ruins in the lake. |
-| 2026-10-05 | Umm El Qa'ab (c. 2900 BC): early Egyptian pharaohs were entombed alongside dozens of household servants sacrificed simultaneously to serve in the afterlife — making (ep085) | Fallen Empires | In the news after forensic analysis confirmed retainer sacrifice in First Dynasty royal tombs. |
+| 2026-10-05 | Umm El Qa'ab (c. 2900 BC): early Egyptian pharaohs were entombed alongside dozens of household servants sacrificed simultaneously to serve in the afterlife — parked (ep085) | Fallen Empires | In the news after forensic analysis confirmed retainer sacrifice in First Dynasty royal tombs. |
 
 ## Anniversaries (publish on the date, 7 p.m. Eastern)
 
@@ -132,7 +132,7 @@ event is told for its gore. Space topics belong to the sister channel Universe R
 - Siege of Pembroke (1648): an impregnable fortress was forced to surrender after a defector revealed the exact location of the secret underground pipe supplying all their water
 - Oppau explosion (1921): a routine blast to break up caked fertilizer preceded a stockpile detonation — done (ep072)
 - Mann Gulch fire (1949): foreman Wag Dodge set an escape fire as his crew fled the advancing wildfire — parked (ep074)
-- Atilius's amphitheatre (AD 27): at Fidenae a cheaply built wooden arena packed with crowds starved of gladiator shows under Tiberius gives way, burying spectators and bystanders while families search the ruins day and night
+- Atilius's amphitheatre (AD 27): at Fidenae a cheaply built wooden arena packed with crowds starved of gladiator shows under Tiberius gives way, burying spectators and bystanders while families search the ruins day and night — making (ep087)
 - New London School explosion (1937): leaked gas built up beneath the school until a shop-class sander ignited it near the end of the day
 - Siege of Laodicea (636): the besieging army pretended to retreat but hid in deep trenches dug overnight, capturing the city when citizens opened the gates to let their cattle graze
 - 1157 Hama earthquake (1157): a teacher who stepped out of his classroom returned to find his school collapsed and every student dead, with not a single parent left alive to claim them
@@ -143,7 +143,7 @@ event is told for its gore. Space topics belong to the sister channel Universe R
 
 - Pompeii: the famous body casts are plaster poured into hollows the victims left in the ash, a technique begun by Giuseppe Fiorelli in 1863 — parked (ep028)
 - Herculaneum: for centuries it was thought its people escaped, until hundreds of skeletons were found in the boathouses by the shore in the 1980s
-- Akrotiri (prehistoric city): a Bronze Age town buried by the Minoan eruption where almost no bodies have been found, as if its people had warning — making (ep082)
+- Akrotiri (prehistoric city): a Bronze Age town buried by the Minoan eruption where almost no bodies have been found, as if its people had warning — parked (ep082)
 - Helike: a Greek city that sank in a single night in 373 BC, after an earthquake and a wave
 - Thonis-Heracleion: Egypt's great port vanished under the sea and was only found by divers in 2000
 - Port Royal (1692): an earthquake sent much of the pirate haven called "the wickedest city on Earth" into the sea
@@ -198,8 +198,8 @@ event is told for its gore. Space topics belong to the sister channel Universe R
 - Library of Alexandria: it wasn't lost in one great fire, but declined over centuries — dropped (ep071)
 - Reichstag fire (1933): the German parliament building burned just weeks after Hitler took power, instantly triggering emergency decrees that ended democracy — parked (ep036)
 - Ashanti Empire (1900): the Golden Stool was demanded by the British governor who did not know he was asking to sit on a sacred spirit shrine, sparking an uprising
-- Siege of the Sogdian Rock (327 BC): Alexander the Great's soldiers used iron tent pegs as pitons to scale a 'vertical' cliff at night to capture an unreachable fortress — making (ep080)
-- Siege of Kamakura (1333): the commander threw his golden sword into the sea as an offering, and the tide instantly receded to reveal a path past the city’s sea walls
+- Siege of the Sogdian Rock (327 BC): Alexander the Great's soldiers used iron tent pegs as pitons to scale a 'vertical' cliff at night to capture an unreachable fortress — parked (ep080)
+- Siege of Kamakura (1333): the commander threw his golden sword into the sea as an offering, and the tide instantly receded to reveal a path past the city’s sea walls — making (ep086)
 - Fall of the Qing Dynasty (1912): the last Emperor of China, once worshipped as a living god, ended his life as a quiet citizen working as a gardener in his former palace
 - Fall of Krak des Chevaliers (1271): the impregnable Crusader stronghold finally surrendered after the Mamluk Sultan tricked the garrison with a forged letter from their commander
 - Battle of Sarmizegetusa (106): the Dacian king diverted a river to hide his empire's gold beneath the riverbed, but a prisoner betrayed the location to Rome

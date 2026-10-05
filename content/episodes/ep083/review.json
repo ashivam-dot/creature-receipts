@@ -84,6 +84,99 @@
       "better_than_last": "This episode uses direct archival evidence of the vessel in situ, whereas the imagery in the Winton's Rescue Train episode was less specific to the event described.",
       "judge": "gemini-3-flash-preview",
       "passed": false
+    },
+    {
+      "at": "2026-10-05T23:07:42+05:30",
+      "check": {
+        "duration": 24.46,
+        "words": 62,
+        "integrated_lufs": -14.4,
+        "true_peak_dbfs": -1.7,
+        "warnings": [],
+        "speech_differences": [
+          "'arica' heard as 'erika' after 'the port of'",
+          "'wateree' heard as 'watery' after 'crushed the uss'",
+          "base.en: 'arica' heard as 'erika' after 'the port of'",
+          "base.en: 'wateree' heard as 'watery' after 'crushed the uss'"
+        ],
+        "speech_error": null,
+        "sources": [
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Flickr via Openverse",
+          "Wikimedia Commons"
+        ],
+        "speech_verification": {
+          "heard": "Most people think a tsunami destroys everything it touches. In 1868, a massive earthquake leveled the port of Erika, Peru. While other ships were crushed, the USS Watery had a flat bottom. The massive wave carried the gunboat inland without tipping it over. It sat perfectly upright, 500 yards into the desert. Most people think a tsunami destroys everything it touches.",
+          "model": "small.en",
+          "media_sha256": "6936fdcf48fc8057e2df3c6f31ff631c34e511cd5d63ba256c034d2fe19d8ad9",
+          "primary_differences": [
+            "'arica' heard as 'erika' after 'the port of'",
+            "'wateree' heard as 'watery' after 'crushed the uss'"
+          ],
+          "differences": [
+            "'arica' heard as 'erika' after 'the port of'",
+            "'wateree' heard as 'watery' after 'crushed the uss'",
+            "base.en: 'arica' heard as 'erika' after 'the port of'",
+            "base.en: 'wateree' heard as 'watery' after 'crushed the uss'"
+          ],
+          "corroboration": {
+            "model": "base.en",
+            "heard": "Most people think a tsunami destroys everything it touches. In 1868, a massive earthquake leveled the Port of Erika Peru. While other ships were crushed, the USS Watery had a flat bottom. The massive wave carried the gunboat inland without tipping it over. It sat perfectly upright, 500 yards into the desert. Most people think a tsunami destroys everything it touches.",
+            "differences": [
+              "'arica' heard as 'erika' after 'the port of'",
+              "'wateree' heard as 'watery' after 'crushed the uss'"
+            ],
+            "resolved": []
+          }
+        }
+      },
+      "media_sha256": "6936fdcf48fc8057e2df3c6f31ff631c34e511cd5d63ba256c034d2fe19d8ad9",
+      "scores": {
+        "hook": 2,
+        "clarity": 4,
+        "payoff": 2,
+        "visuals": 3,
+        "loop": 2,
+        "accuracy": 3
+      },
+      "notes": {
+        "hook": "Opens with a generic 'Most people think...' strawman forbidden by the guidelines instead of an immediate narrative hook.",
+        "clarity": "The core event is clear, though ending abruptly without resolving the ship's fate muddled the conclusion.",
+        "payoff": "Beat 6 fails to deliver the promised claims about the ship becoming an inland hospital and inn, simply repeating beat 1.",
+        "visuals": "Beats 4 and 5 reuse the exact same matted photograph rather than showing a distinct angle or the inland wreckage.",
+        "loop": "Repeating the first sentence verbatim as the final beat makes the loop jarring and breaks sentence flow.",
+        "accuracy": "Beat 6 cites research claims 12 and 13 (the vessel being sold and converted into an inn) but speaks none of those facts."
+      },
+      "frames": [
+        {
+          "beat": 5,
+          "problem": "the same picture as another beat (reuses the archival photo print shown in beat 4)"
+        }
+      ],
+      "speech": [
+        {
+          "beat": 2,
+          "word": "Arica",
+          "respelling": "ah ree kah"
+        },
+        {
+          "beat": 3,
+          "word": "Wateree",
+          "respelling": "wah ter ee"
+        }
+      ],
+      "rewrite": [
+        "Beat 1: Change to 'In 1868, a colossal tsunami threw an American gunboat into the driest desert on Earth.'",
+        "On-screen text: Replace 'SURVIVED THE WAVE' with 'STRANDED IN THE DESERT'.",
+        "Beat 5: Cut to a distinct image of the stranded hulk and say 'Deposited five hundred yards inland, its crew survived and ran an inn inside the hull...'",
+        "Beat 6: Change narration to '...nine years before another wave finally erased the ship that...'"
+      ],
+      "better_than_last": "",
+      "judge": "gemini-3.8-flash",
+      "passed": false
     }
   ],
   "best_round": 1
