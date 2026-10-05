@@ -109,7 +109,91 @@
       "better_than_last": "Stronger central mystery and immediate visual hook than ep054.",
       "judge": "gemini-3.6-flash",
       "passed": false
+    },
+    {
+      "at": "2026-10-05T05:08:11+05:30",
+      "check": {
+        "duration": 28.69,
+        "words": 66,
+        "integrated_lufs": -14.4,
+        "true_peak_dbfs": -1.8,
+        "warnings": [],
+        "speech_differences": [
+          "'a' heard as '(nothing)'",
+          "'s' heard as '(nothing)' after 'flew over beijing'",
+          "'a' heard as '(nothing)' after 'of the capital'",
+          "base.en: 'ton' heard as 'tonne' after 'a 3'",
+          "base.en: 's' heard as '(nothing)' after 'flew over beijing'",
+          "base.en: 'wanggongchang' heard as 'wangongchang' after '1626 the imperial'"
+        ],
+        "speech_error": null,
+        "sources": [
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "designed card",
+          "designed card",
+          "Wikimedia Commons",
+          "Wikimedia Commons"
+        ],
+        "speech_verification": {
+          "heard": "Three-ton stone lion flew over Beijing city walls. In 1626, the imperial Wang Gongchang gunpowder armory suddenly exploded. The blast instantly flattened two square kilometers of the capital. Mushroom cloud rose and about 20,000 people perished. Strangely, the violent shockwave stripped many victims of their clothes. The emperor survived but the blast killed his infant heir. No one explained what launched that massive stone guardian.",
+          "model": "small.en",
+          "media_sha256": "0505864f16e7f76bc15f3d2159bc7fbd713633ce669d000d94f02b1480be28d6",
+          "primary_differences": [
+            "'a' heard as '(nothing)'",
+            "'s' heard as '(nothing)' after 'flew over beijing'",
+            "'a' heard as '(nothing)' after 'of the capital'"
+          ],
+          "differences": [
+            "'a' heard as '(nothing)'",
+            "'s' heard as '(nothing)' after 'flew over beijing'",
+            "'a' heard as '(nothing)' after 'of the capital'",
+            "base.en: 'ton' heard as 'tonne' after 'a 3'",
+            "base.en: 's' heard as '(nothing)' after 'flew over beijing'",
+            "base.en: 'wanggongchang' heard as 'wangongchang' after '1626 the imperial'"
+          ],
+          "corroboration": {
+            "model": "base.en",
+            "heard": "3-tonne stone lion flew over Beijing city walls. In 1626, the Imperial Wangongchang gunpowder armory suddenly exploded. The blast instantly flattened two square kilometers of the capital. Mushroom cloud rose and about 20,000 people perished. Strangely, the violent shockwave stripped many victims of their clothes. The emperor survived, but the blast killed his infant heir. No one explained what launched that massive stone guardian.",
+            "differences": [
+              "'a' heard as '(nothing)'",
+              "'ton' heard as 'tonne' after 'a 3'",
+              "'s' heard as '(nothing)' after 'flew over beijing'",
+              "'wanggongchang' heard as 'wangongchang' after '1626 the imperial'",
+              "'a' heard as '(nothing)' after 'of the capital'"
+            ],
+            "resolved": []
+          }
+        }
+      },
+      "media_sha256": "0505864f16e7f76bc15f3d2159bc7fbd713633ce669d000d94f02b1480be28d6",
+      "scores": {
+        "hook": 4,
+        "clarity": 4,
+        "payoff": 4,
+        "visuals": 3,
+        "loop": 4
+      },
+      "notes": {
+        "hook": "Strong opener on the flying stone lion.",
+        "clarity": "Easy to follow chronological sequence.",
+        "payoff": "The clothes stripping effect is a strange, engaging twist.",
+        "visuals": "Reusing a broad map of China for local city damage fails to illustrate the event.",
+        "loop": "Clean connection from 'stone guardian' back to 'stone lion'."
+      },
+      "frames": [
+        {
+          "beat": 3,
+          "problem": "The map of China is too broad to depict the destruction of Beijing."
+        }
+      ],
+      "speech": [],
+      "rewrite": [],
+      "better_than_last": "The thematic connection between the start and end is much tighter than in the Fetterman Fight episode.",
+      "judge": "gemini-3.5-flash",
+      "passed": false
     }
   ],
-  "best_round": 1
+  "best_round": 2
 }

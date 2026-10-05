@@ -54,7 +54,7 @@ event is told for its gore. Space topics belong to the sister channel Universe R
 - Sinking of the Titanic (1912): the lookouts had no binoculars, because the key to their locker left the ship with an officer removed before the voyage
 - Sinking of the RMS Lusitania (1915): the liner sank in 18 minutes, after a German warning ran next to its own sailing notice in New York newspapers
 - Hindenburg disaster (1937): the airship burned in about half a minute, yet most of the people aboard survived
-- 1883 eruption of Krakatoa: its final explosion was heard thousands of kilometers away, on Rodrigues island in the Indian Ocean
+- 1883 eruption of Krakatoa: its final explosion was heard thousands of kilometers away, on Rodrigues island in the Indian Ocean — making (ep078)
 - 1906 San Francisco earthquake: the fires afterwards did more damage than the shaking
 - Halifax Explosion (1917): a burning munitions ship blew up in the harbor, the largest man-made explosion before the atomic bomb
 - MV Wilhelm Gustloff (1945): its sinking in the Baltic was the deadliest loss of a single ship in history
@@ -72,7 +72,7 @@ event is told for its gore. Space topics belong to the sister channel Universe R
 - Victoria Hall disaster (1883): a floor bolt narrowed a swing door at the lower landing as children left a performance for prizes — making (ep056)
 - Burning of Smyrna (1922): the fire engulfed the city as refugees crowded the quay; its origin and foreign naval response require careful source review — making (ep058)
 - Wanggongchang Explosion (1626): a massive unexplained blast rocked Beijing, stripping people of their clothes and leaving a silent void — making (ep068)
-- Great Blizzard of 1888 (1888): commuters stepped into mild spring weather before a sudden whiteout froze New York City in its tracks — making (ep070)
+- Great Blizzard of 1888 (1888): commuters stepped into mild spring weather before a sudden whiteout froze New York City in its tracks — done (ep070)
 - Great Siege of Malta (1565): a handful of knights held off an invading armada against impossible odds, surviving until relief finally arrived — making (ep066)
 - Schoolhouse Blizzard (1888): a warm morning lured children to school without coats before a wall of ice struck at recess — making (ep060)
 - Battle of Myeongnyang (1597): Admiral Yi defeated 133 Japanese warships with only 13 vessels by using a whirlpool-filled strait — dropped (ep062)
@@ -127,7 +127,7 @@ event is told for its gore. Space topics belong to the sister channel Universe R
 - Battle of Mytilene (406 BC): after winning a crucial naval victory, six Athenian generals were executed by their own city because a storm prevented them from rescuing shipwrecked survivors
 - Earthquake Synod (1382): when a violent earthquake interrupted a trial to condemn a religious reformer, both the prosecutors and the accused claimed God sent the quake to support them
 - Siege of Pembroke (1648): an impregnable fortress was forced to surrender after a defector revealed the exact location of the secret underground pipe supplying all their water
-- Oppau explosion (1921): a routine blast to break up caked fertilizer preceded a stockpile detonation — making (ep072)
+- Oppau explosion (1921): a routine blast to break up caked fertilizer preceded a stockpile detonation — done (ep072)
 - Mann Gulch fire (1949): foreman Wag Dodge set an escape fire as his crew fled the advancing wildfire — making (ep074)
 
 ### Lost Cities
@@ -210,7 +210,7 @@ event is told for its gore. Space topics belong to the sister channel Universe R
 - Sultana (steamboat) (1865): a boat built for a few hundred carried over 2,000 people, most of them freed Union prisoners, when its patched boiler exploded
 - Triangle Shirtwaist Factory fire (1911): a stairway door was locked, and 146 garment workers died — parked (ep032)
 - Iroquois Theatre fire (1903): advertised as "absolutely fireproof", it burned five weeks after opening
-- Vasa (ship) (1628): the warship sank on its maiden voyage, less than a mile out, after failing a stability test before it sailed
+- Vasa (ship) (1628): the warship sank on its maiden voyage, less than a mile out, after failing a stability test before it sailed — making (ep077)
 - Knickerbocker Storm (1922): the roof of Washington's Knickerbocker Theatre collapsed under the snow during a film
 - Battle of Isandlwana (1879): British commanders refused to form defensive laagers, mocking reports of Zulu forces until thousands appeared over the ridge — parked (ep034)
 - Mongol invasions of Japan (1281): the invasion fleet was destroyed by a legendary typhoon known as the kamikaze, saving Japan from conquest — parked (ep039)

@@ -52,7 +52,55 @@
       "better_than_last": "The narrative loop is significantly more polished and seamless than the ending of the recent Fetterman Fight episode.",
       "judge": "gemini-3-flash-preview",
       "passed": false
+    },
+    {
+      "at": "2026-10-05T05:07:44+05:30",
+      "check": {
+        "duration": 26.19,
+        "words": 66,
+        "integrated_lufs": -14.4,
+        "true_peak_dbfs": -1.7,
+        "warnings": [],
+        "speech_differences": [],
+        "speech_error": null,
+        "sources": [
+          "Wikimedia Commons",
+          "designed card",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons"
+        ],
+        "speech_verification": {
+          "heard": "workers used explosives to break up fertilizer they believed was safe. The procedure had been applied thousands of times prior without incident. On the morning of September 21, 1921, the stockpile detonated. The blast created a crater 90 meters wide and 20 meters deep. More than 500 people lost their lives in the disaster. 80% of the town was destroyed while workers used explosives.",
+          "model": "small.en",
+          "media_sha256": "89a20c607f4152d517b992cd6d6ce61f3c91a1cde632ad657c4e4d5f8d1572ca",
+          "primary_differences": [],
+          "differences": []
+        }
+      },
+      "media_sha256": "89a20c607f4152d517b992cd6d6ce61f3c91a1cde632ad657c4e4d5f8d1572ca",
+      "scores": {
+        "hook": 4,
+        "clarity": 5,
+        "payoff": 4,
+        "visuals": 5,
+        "loop": 5
+      },
+      "notes": {
+        "hook": "The counterintuitive premise of using explosives on safe fertilizer stops viewers immediately.",
+        "clarity": "The narrative progresses seamlessly from standard procedure to catastrophic blast and casualties.",
+        "payoff": "Revealing the massive crater and total town destruction pays off the initial premise effectively.",
+        "visuals": "Clear and relevant archival photographs document the site before and immediately after the explosion.",
+        "loop": "The end of beat 6 connects fluently into beat 1 to form a continuous sentence."
+      },
+      "frames": [],
+      "speech": [],
+      "rewrite": [],
+      "better_than_last": "This Short features exact, highly relevant period archival photos of the Oppau plant and crater across all frames.",
+      "judge": "gemini-3.6-flash",
+      "passed": true
     }
   ],
-  "best_round": 1
+  "best_round": 2
 }

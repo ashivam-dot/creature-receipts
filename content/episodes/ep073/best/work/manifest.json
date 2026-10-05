@@ -1,7 +1,7 @@
 {
   "id": "ep073",
   "duration": 25.749,
-  "video_sha256": "2b0f419b2a375f840a6d94094d70f186e0d8586ca73573c79cc9e8f5c9ebcb4b",
+  "video_sha256": "4e436b7653a247a2421fd2a22aec612f33f9714922e8f931ae9c40e891f72c83",
   "beats": [
     {
       "start": 0.08,
@@ -9,24 +9,38 @@
       "text": "A 50-foot steel tank in Boston was leaking 2,300,000 gallons.",
       "asset": {
         "source": "Wikimedia Commons",
-        "title": "Thebostonglobe - Jan16 1919 newspaper.jpg",
-        "credit": "The Boston Globe",
-        "license": "CC BY 2.0",
-        "url": "https://commons.wikimedia.org/wiki/File:Thebostonglobe_-_Jan16_1919_newspaper.jpg"
+        "title": "BostonMolassesDisaster.jpg",
+        "credit": "BPL",
+        "license": "Public domain",
+        "url": "https://commons.wikimedia.org/wiki/File:BostonMolassesDisaster.jpg"
       },
       "shots": [
         {
           "start": 0.0,
+          "end": 2.6,
+          "kind": "card",
+          "motion": "camera",
+          "camera_move": [
+            1.0,
+            1.08,
+            0.5,
+            0.5,
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "start": 2.6,
           "end": 5.4,
-          "kind": "cover",
+          "kind": "detail",
           "motion": "depth",
           "camera_move": [
-            1.1,
-            1.1,
+            1.09,
+            1.02,
             0.5,
             0.5,
-            0.15,
-            0.85
+            0.5,
+            0.45
           ]
         }
       ]
@@ -141,24 +155,24 @@
       "text": "No one was ever charged for the 50-foot steel tank leaking.",
       "asset": {
         "source": "Wikimedia Commons",
-        "title": "Thebostonglobe - Jan16 1919 newspaper.jpg",
-        "credit": "The Boston Globe",
-        "license": "CC BY 2.0",
-        "url": "https://commons.wikimedia.org/wiki/File:Thebostonglobe_-_Jan16_1919_newspaper.jpg"
+        "title": "BostonMolassesDisaster.jpg",
+        "credit": "BPL",
+        "license": "Public domain",
+        "url": "https://commons.wikimedia.org/wiki/File:BostonMolassesDisaster.jpg"
       },
       "shots": [
         {
           "start": 22.067,
           "end": 25.733,
-          "kind": "cover",
-          "motion": "depth",
+          "kind": "card",
+          "motion": "camera",
           "camera_move": [
-            1.12,
-            1.1,
+            1.07,
+            1.0,
             0.5,
             0.5,
-            0.15,
-            0.15
+            0.5,
+            0.5
           ]
         }
       ]

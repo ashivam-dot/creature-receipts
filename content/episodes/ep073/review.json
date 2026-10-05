@@ -1,0 +1,153 @@
+{
+  "rounds": [
+    {
+      "at": "2026-10-05T05:07:38+05:30",
+      "check": {
+        "duration": 25.73,
+        "words": 66,
+        "integrated_lufs": -14.4,
+        "true_peak_dbfs": -1.7,
+        "warnings": [],
+        "speech_differences": [
+          "'in' heard as '(nothing)' after 'leaking 2300000 gallons'",
+          "'a' heard as '(nothing)' after 'the north end'",
+          "base.en: 'it' heard as 'at' after 'had simply painted'"
+        ],
+        "speech_error": null,
+        "sources": [
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "designed card",
+          "Wikimedia Commons"
+        ],
+        "speech_verification": {
+          "heard": "A 50-foot steel tank in Boston was leaking 2,300,000 gallons. 1919, the owners ignored obvious structural cracks to save money. On a warm winter day, the structure ruptured in the north end. 35 mile per hour wave killed at least 21 people. To hide the leaks, the company had simply painted it brown. No one was ever charged for the 50-foot steel tank leaking.",
+          "model": "small.en",
+          "media_sha256": "28b4a8ae2c4bf7f0ea38c3ab22c3f5bf2a54a9305efe74c47ff30d4716bc2ade",
+          "primary_differences": [
+            "'in' heard as '(nothing)' after 'leaking 2300000 gallons'",
+            "'a' heard as '(nothing)' after 'the north end'"
+          ],
+          "differences": [
+            "'in' heard as '(nothing)' after 'leaking 2300000 gallons'",
+            "'a' heard as '(nothing)' after 'the north end'",
+            "base.en: 'it' heard as 'at' after 'had simply painted'"
+          ],
+          "corroboration": {
+            "model": "base.en",
+            "heard": "a 50-foot steel tank in Boston was leaking 2,300,000 gallons. 1919, the owners ignored obvious structural cracks to save money. On a warm winter day, the structure ruptured in the north end. 35 mile per hour wave killed at least 21 people. To hide the leaks, the company had simply painted at Brown. No one was ever charged for the 50-foot steel tank leaking.",
+            "differences": [
+              "'in' heard as '(nothing)' after 'leaking 2300000 gallons'",
+              "'a' heard as '(nothing)' after 'the north end'",
+              "'it' heard as 'at' after 'had simply painted'"
+            ],
+            "resolved": []
+          }
+        }
+      },
+      "media_sha256": "28b4a8ae2c4bf7f0ea38c3ab22c3f5bf2a54a9305efe74c47ff30d4716bc2ade",
+      "scores": {
+        "hook": 5,
+        "clarity": 4,
+        "payoff": 5,
+        "visuals": 3,
+        "loop": 4
+      },
+      "notes": {
+        "hook": "The scale of millions of gallons leaking from a massive tank grabs attention instantly.",
+        "clarity": "Easy to follow, though explicitly naming molasses in the voiceover would make the context even clearer.",
+        "payoff": "The reveal of painting the tank brown specifically to mask the leaks provides a stunning punchline.",
+        "visuals": "Archival disaster photos are excellent, but beat 2's newspaper ad is mostly unreadable small text.",
+        "loop": "Loops reasonably well into beat 1, though repeating '50-foot steel tank' back-to-back feels slightly redundant."
+      },
+      "frames": [
+        {
+          "beat": 2,
+          "problem": "mostly text and print is too small to read at phone size"
+        }
+      ],
+      "speech": [],
+      "rewrite": [],
+      "better_than_last": "The absurd cruelty of painting the tank brown provides a sharper, more punchy historical reveal than recent episodes.",
+      "judge": "gemini-3.7-flash",
+      "passed": false
+    },
+    {
+      "at": "2026-10-05T05:09:16+05:30",
+      "check": {
+        "duration": 25.73,
+        "words": 66,
+        "integrated_lufs": -14.4,
+        "true_peak_dbfs": -1.9,
+        "warnings": [],
+        "speech_differences": [
+          "'in' heard as '(nothing)' after 'leaking 2300000 gallons'",
+          "'a' heard as '(nothing)' after 'the north end'",
+          "base.en: 'it' heard as 'at' after 'had simply painted'"
+        ],
+        "speech_error": null,
+        "sources": [
+          "Wikimedia Commons",
+          "designed card",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "designed card",
+          "Wikimedia Commons"
+        ],
+        "speech_verification": {
+          "heard": "A 50-foot steel tank in Boston was leaking 2,300,000 gallons. 1919, the owners ignored obvious structural cracks to save money. On a warm winter day, the structure ruptured in the north end. 35 mile per hour wave killed at least 21 people. To hide the leaks, the company had simply painted it brown. No one was ever charged for the 50-foot steel tank leaking.",
+          "model": "small.en",
+          "media_sha256": "4e436b7653a247a2421fd2a22aec612f33f9714922e8f931ae9c40e891f72c83",
+          "primary_differences": [
+            "'in' heard as '(nothing)' after 'leaking 2300000 gallons'",
+            "'a' heard as '(nothing)' after 'the north end'"
+          ],
+          "differences": [
+            "'in' heard as '(nothing)' after 'leaking 2300000 gallons'",
+            "'a' heard as '(nothing)' after 'the north end'",
+            "base.en: 'it' heard as 'at' after 'had simply painted'"
+          ],
+          "corroboration": {
+            "model": "base.en",
+            "heard": "a 50-foot steel tank in Boston was leaking 2,300,000 gallons. 1919, the owners ignored obvious structural cracks to save money. On a warm winter day, the structure ruptured in the north end. 35-mile-per-hour wave killed at least 21 people. To hide the leaks, the company had simply painted at Brown. No one was ever charged for the 50-foot steel tank leaking.",
+            "differences": [
+              "'in' heard as '(nothing)' after 'leaking 2300000 gallons'",
+              "'a' heard as '(nothing)' after 'the north end'",
+              "'it' heard as 'at' after 'had simply painted'"
+            ],
+            "resolved": []
+          }
+        }
+      },
+      "media_sha256": "4e436b7653a247a2421fd2a22aec612f33f9714922e8f931ae9c40e891f72c83",
+      "scores": {
+        "hook": 4,
+        "clarity": 5,
+        "payoff": 5,
+        "visuals": 3,
+        "loop": 5
+      },
+      "notes": {
+        "hook": "The numerical scale of the leak is a strong opening, though the visual spoiler reduces the impact.",
+        "clarity": "The script follows a perfect chronological sequence that is very easy to follow.",
+        "payoff": "The detail regarding the brown paint is a haunting and high-quality historical irony.",
+        "visuals": "Using the wreckage photo for the opening beat spoils the disaster before the story even begins.",
+        "loop": "The final line flows grammatically and thematically back into the first sentence perfectly."
+      },
+      "frames": [
+        {
+          "beat": 1,
+          "problem": "The frame shows the wreckage after the disaster, which is anachronistic for the narration describing the tank while it was still standing."
+        }
+      ],
+      "speech": [],
+      "rewrite": [],
+      "better_than_last": "The reveal of the company's attempt to hide the cracks with brown paint provides a more powerful payoff than the mystery in episode 53.",
+      "judge": "gemini-3-flash-preview",
+      "passed": false
+    }
+  ],
+  "best_round": 2
+}

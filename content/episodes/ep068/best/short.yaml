@@ -55,16 +55,16 @@ beats:
   - exploded
   visual:
     source: url
-    url: https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ad/Paradigma_XV_Provinciarum_et_CLV_Urbium_Capitalium_Sinensis_Imperij.jpg/1920px-Paradigma_XV_Provinciarum_et_CLV_Urbium_Capitalium_Sinensis_Imperij.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
+    url: https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c7/John-Speed-The-Kingdome-of-China-1626-2544.jpg/1920px-John-Speed-The-Kingdome-of-China-1626-2544.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
     credit:
       source: Wikimedia Commons
-      title: Paradigma XV Provinciarum et CLV Urbium Capitalium Sinensis Imperij.jpg
-      credit: François de Louvemont
+      title: John-Speed-The-Kingdome-of-China-1626-2544.jpg
+      credit: John Speed
       license: Public domain
-      url: https://commons.wikimedia.org/wiki/File:Paradigma_XV_Provinciarum_et_CLV_Urbium_Capitalium_Sinensis_Imperij.jpg
+      url: https://commons.wikimedia.org/wiki/File:John-Speed-The-Kingdome-of-China-1626-2544.jpg
     fallbacks:
     - color
-    motion: pan_up
+    motion: zoom_in
     focus_x: 0.5
     focus_y: 0.5
 - text: The blast instantly flattened two square kilometers of the capital.
@@ -73,20 +73,8 @@ beats:
   - two square kilometers
   sfx: whoosh
   visual:
-    source: url
-    url: https://upload.wikimedia.org/wikipedia/commons/2/2a/Polvertoren_van_Rijnberk_vliegt_de_lucht_in_-_Explosion_Pulverturm_Rheinberg_%281698%29-CN.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
-    credit:
-      source: Wikimedia Commons
-      title: Polvertoren van Rijnberk vliegt de lucht in - Explosion Pulverturm Rheinberg (1698)-CN.jpg
-      credit: 'Polvertoren_van_Rijnberk_vliegt_de_lucht_in_-_Explosion_Pulverturm_Rheinberg_(1698).jpg: Casper Luycken & Jan
-        Luycken
-
-        derivative work: kaʁstn Disk/Cat'
-      license: Public domain
-      url: https://commons.wikimedia.org/wiki/File:Polvertoren_van_Rijnberk_vliegt_de_lucht_in_-_Explosion_Pulverturm_Rheinberg_(1698)-CN.jpg
-    fallbacks:
-    - color
-    motion: pan_right
+    reuse: 2
+    motion: zoom_out
     focus_x: 0.5
     focus_y: 0.5
 - text: A mushroom cloud rose, and about 20,000 people perished.
@@ -113,18 +101,32 @@ beats:
       big: Stripped Naked
       small: Bizarre blast effect
     motion: zoom_in
-- text: The Tianqi Emperor fled his breakfast, but his infant heir died.
+- text: The emperor survived, but the blast killed his infant heir.
   emphasis:
-  - emperor fled
+  - emperor survived
   - infant heir
   visual:
-    reuse: 3
-    motion: zoom_out
+    source: url
+    url: https://thumb.wikimedia.org/wikipedia/commons/thumb/6/61/Portrait_assis_de_l%27empereur_Tianqi.jpg/1920px-Portrait_assis_de_l%27empereur_Tianqi.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
+    credit:
+      source: Wikimedia Commons
+      title: Portrait assis de l'empereur Tianqi.jpg
+      credit: Unknown authorUnknown author
+      license: Public domain
+      url: https://commons.wikimedia.org/wiki/File:Portrait_assis_de_l%27empereur_Tianqi.jpg
+    fallbacks:
+    - color
+    motion: pan_up
     focus_x: 0.5
-    focus_y: 0.5
-- text: No one ever explained what launched the massive stone guardian.
+    focus_y: 0.35
+    box:
+    - 0.42
+    - 0.28
+    - 0.58
+    - 0.43
+- text: No one explained what launched that massive stone guardian.
   emphasis:
-  - No one ever explained
+  - No one explained
   - stone guardian
   sfx: pop
   pause_after: 0.4

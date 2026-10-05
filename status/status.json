@@ -1,28 +1,28 @@
 {
-  "updated_at": "2026-10-05T05:05:35+05:30",
+  "updated_at": "2026-10-05T11:05:27+05:30",
   "day": 4,
   "result": "ok",
   "run": {
     "host": "modal",
-    "id": "ta-01M44MAN6JHSDC1WMK0Y869C1R",
+    "id": "ta-01M458XTQAK6CJXN34EAJ8DQAR",
     "number": null,
     "trigger": "schedule",
-    "started_at": "2026-10-05T05:05:06+05:30",
-    "started_at_utc": "2026-10-04T23:35:06+00:00",
-    "seconds": 29
+    "started_at": "2026-10-05T11:05:06+05:30",
+    "started_at_utc": "2026-10-05T05:35:06+00:00",
+    "seconds": 21
   },
   "stages": [
     {
       "name": "deploy",
       "ok": true,
       "detail": "",
-      "seconds": 1.0
+      "seconds": 1.3
     },
     {
       "name": "collect",
       "ok": true,
-      "detail": "ep066 unfinished (final audio on editorial speech hold); ep068 unfinished (OutOfQuota: no model in ('gemini-3.8-flash', 'gemini-3.7-flash', 'gemini-3.6-flash', 'gemini-3.5-flash', 'gemini-3-flash-preview', 'gemini-flash-latest', 'ovh:Qwen3.5-397B-A17B') has free quota left today); ep070 unfinished (Overloaded: every model in ('gemini-3.8-flash', 'gemini-3.7-flash', 'gemini-3.6-flash', 'gemini-3.5-flash', 'gemini-3-flash-preview', 'gemini-flash-latest', 'ovh:Qwen3.5-397B-A17B') with quota left stayed overloaded for 25 minutes); ep072 unfinished (OutOfQuota: no model in ('gemini-3.8-flash', 'gem",
-      "seconds": 18.9
+      "detail": "ep068 unfinished (OutOfQuota: no model in ('gemini-3.8-flash', 'gemini-3.7-flash', 'gemini-3.6-flash', 'gemini-3.5-flash', 'gemini-3-flash-preview', 'gemini-flash-latest', 'ovh:Qwen3.5-397B-A17B') has free quota left today); ep070 ready; ep072 ready; ep073 unfinished (OutOfQuota: no model in ('gemini-3.8-flash', 'gemini-3.7-flash', 'gemini-3.6-flash', 'gemini-3.5-flash', 'gemini-3-flash-preview', 'gemini-flash-latest', 'ovh:Qwen3.5-397B-A17B') has free quota left today)",
+      "seconds": 8.7
     },
     {
       "name": "start ep068",
@@ -31,21 +31,21 @@
       "seconds": 0.7
     },
     {
-      "name": "start ep070",
-      "ok": true,
-      "detail": "Great Blizzard of 1888 (1888): commuters stepped into mild spring weather before a sudden whiteout froze New York City in its tracks",
-      "seconds": 0.6
-    },
-    {
-      "name": "start ep072",
-      "ok": true,
-      "detail": "Oppau explosion (1921): a routine blast to break up caked fertilizer preceded a stockpile detonation",
-      "seconds": 0.6
-    },
-    {
       "name": "start ep073",
       "ok": true,
       "detail": "Great Molasses Flood (1919): the leaking tank had been painted brown to hide the leaks",
+      "seconds": 0.6
+    },
+    {
+      "name": "start ep077",
+      "ok": true,
+      "detail": "Vasa (ship) (1628): the warship sank on its maiden voyage, less than a mile out, after failing a stability test before it sailed",
+      "seconds": 0.6
+    },
+    {
+      "name": "start ep078",
+      "ok": true,
+      "detail": "1883 eruption of Krakatoa: its final explosion was heard thousands of kilometers away, on Rodrigues island in the Indian Ocean",
       "seconds": 0.6
     }
   ],
@@ -56,23 +56,21 @@
   ],
   "notes": [
     "ep068 stopped on Gemini's free quota; it resumes in a later run",
-    "ep070 stopped on Gemini's free tier being overloaded; it resumes in a later run",
-    "ep072 stopped on Gemini's free quota; it resumes in a later run",
-    "ep073 stopped on Gemini's free tier being overloaded; it resumes in a later run",
+    "ep073 stopped on Gemini's free quota; it resumes in a later run",
     "draft-only producer: no Buffer, Cloudinary, or Google publisher access"
   ],
   "inventory": {
-    "total": 3,
+    "total": 5,
     "in_buffer": 0,
     "waiting": 3,
-    "drafts": 0,
+    "drafts": 2,
     "target": 14,
     "making": [],
     "remote": [
       "ep068",
-      "ep070",
-      "ep072",
-      "ep073"
+      "ep073",
+      "ep077",
+      "ep078"
     ]
   },
   "queue": [],
@@ -98,15 +96,6 @@
   ],
   "made": [
     {
-      "id": "ep066",
-      "outcome": "unfinished",
-      "topic": "Great Siege of Malta (1565): a handful of knights held off an invading armada against impossible odds, surviving until relief finally arrived",
-      "reason": "final audio on editorial speech hold",
-      "speech_review": true,
-      "media_sha256": "bd560c692dedf5c27a1c6843cc698d83fb04fa1bcfeb4b41463ca8056a00e432",
-      "speech_review_path": "drafts/speech-review/ep066-bd560c692dedf5c27a1c6843cc698d83fb04fa1bcfeb4b41463ca8056a00e432.mp4"
-    },
-    {
       "id": "ep068",
       "outcome": "unfinished",
       "topic": "Wanggongchang Explosion (1626): a massive unexplained blast rocked Beijing, stripping people of their clothes and leaving a silent void",
@@ -116,86 +105,83 @@
     },
     {
       "id": "ep070",
-      "outcome": "unfinished",
+      "outcome": "ready",
       "topic": "Great Blizzard of 1888 (1888): commuters stepped into mild spring weather before a sudden whiteout froze New York City in its tracks",
-      "reason": "Overloaded: every model in ('gemini-3.8-flash', 'gemini-3.7-flash', 'gemini-3.6-flash', 'gemini-3.5-flash', 'gemini-3-flash-preview', 'gemini-flash-latest', 'ovh:Qwen3.5-397B-A17B') with quota left stayed overloaded for 25 minutes",
-      "quota": false,
-      "overloaded": true
+      "title": "How Did an 1888 Spring Morning Freeze New York? ❄️",
+      "scores": {
+        "hook": 4,
+        "clarity": 5,
+        "payoff": 5,
+        "visuals": 5,
+        "loop": 4
+      },
+      "draft": "drafts/ep070-0d54ccf0a4a951f0359577e6f6209500d185fca380bdc1a29692d78fb3c98b49.mp4"
     },
     {
       "id": "ep072",
-      "outcome": "unfinished",
+      "outcome": "ready",
       "topic": "Oppau explosion (1921): a routine blast to break up caked fertilizer preceded a stockpile detonation",
-      "reason": "OutOfQuota: no model in ('gemini-3.8-flash', 'gemini-3.7-flash', 'gemini-3.6-flash', 'gemini-3.5-flash', 'gemini-3-flash-preview', 'gemini-flash-latest', 'ovh:Qwen3.5-397B-A17B') has free quota left today",
-      "quota": true,
-      "overloaded": false
+      "title": "Why Did a Routine Fertilizer Blast Destroy Oppau? 💥",
+      "scores": {
+        "hook": 4,
+        "clarity": 5,
+        "payoff": 4,
+        "visuals": 5,
+        "loop": 5
+      },
+      "draft": "drafts/ep072-89a20c607f4152d517b992cd6d6ce61f3c91a1cde632ad657c4e4d5f8d1572ca.mp4"
     },
     {
       "id": "ep073",
       "outcome": "unfinished",
       "topic": "Great Molasses Flood (1919): the leaking tank had been painted brown to hide the leaks",
-      "reason": "Overloaded: every model in ('gemini-3.8-flash', 'gemini-3.7-flash', 'gemini-3.6-flash', 'gemini-3.5-flash', 'gemini-3-flash-preview', 'gemini-flash-latest', 'ovh:Qwen3.5-397B-A17B') with quota left stayed overloaded for 25 minutes",
-      "quota": false,
-      "overloaded": true
-    },
-    {
-      "id": "ep074",
-      "outcome": "unfinished",
-      "topic": "Mann Gulch fire (1949): foreman Wag Dodge set an escape fire as his crew fled the advancing wildfire",
-      "reason": "final audio on editorial speech hold",
-      "speech_review": true,
-      "media_sha256": "9cc4f21da592ea45675b5e4c2d5136b12a47bd7ce3671b8e3a378a281cff721f",
-      "speech_review_path": "drafts/speech-review/ep074-9cc4f21da592ea45675b5e4c2d5136b12a47bd7ce3671b8e3a378a281cff721f.mp4"
-    },
-    {
-      "id": "ep076",
-      "outcome": "rejected",
-      "topic": "Quintinshill rail disaster (1915): two signalmen changing shifts late forgot a train on the main line, causing the UK's deadliest rail crash",
-      "reason": "visual plan: only 2 original art beats; 3 are needed for 6 beats"
+      "reason": "OutOfQuota: no model in ('gemini-3.8-flash', 'gemini-3.7-flash', 'gemini-3.6-flash', 'gemini-3.5-flash', 'gemini-3-flash-preview', 'gemini-flash-latest', 'ovh:Qwen3.5-397B-A17B') has free quota left today",
+      "quota": true,
+      "overloaded": false
     }
   ],
   "spawned": [
     {
       "id": "ep068",
       "topic": "Wanggongchang Explosion (1626): a massive unexplained blast rocked Beijing, stripping people of their clothes and leaving a silent void",
-      "call_id": "fc-01M44MBM53Y7S3HJTYS8PPN768"
-    },
-    {
-      "id": "ep070",
-      "topic": "Great Blizzard of 1888 (1888): commuters stepped into mild spring weather before a sudden whiteout froze New York City in its tracks",
-      "call_id": "fc-01M44MBMQSRMBTT3MNRNNM8BF6"
-    },
-    {
-      "id": "ep072",
-      "topic": "Oppau explosion (1921): a routine blast to break up caked fertilizer preceded a stockpile detonation",
-      "call_id": "fc-01M44MBN99VNBJF7MZ2E51NRHD"
+      "call_id": "fc-01M458YJAAS7A3RCTM5CPEHS8W"
     },
     {
       "id": "ep073",
       "topic": "Great Molasses Flood (1919): the leaking tank had been painted brown to hide the leaks",
-      "call_id": "fc-01M44MBNWFZJQXH32JVBPSCJ39"
+      "call_id": "fc-01M458YJXQTY0CD4H2Z3N1FCNQ"
+    },
+    {
+      "id": "ep077",
+      "topic": "Vasa (ship) (1628): the warship sank on its maiden voyage, less than a mile out, after failing a stability test before it sailed",
+      "call_id": "fc-01M458YKH515MBKDAP51S1ZPY6"
+    },
+    {
+      "id": "ep078",
+      "topic": "1883 eruption of Krakatoa: its final explosion was heard thousands of kilometers away, on Rodrigues island in the Indian Ocean",
+      "call_id": "fc-01M458YM3C4C4PMMTGDY87PSN0"
     }
   ],
   "in_cloud": [
     {
       "id": "ep068",
       "topic": "Wanggongchang Explosion (1626): a massive unexplained blast rocked Beijing, stripping people of their clothes and leaving a silent void",
-      "spawned_at": "2026-10-05T05:05:32+05:30"
-    },
-    {
-      "id": "ep070",
-      "topic": "Great Blizzard of 1888 (1888): commuters stepped into mild spring weather before a sudden whiteout froze New York City in its tracks",
-      "spawned_at": "2026-10-05T05:05:33+05:30"
-    },
-    {
-      "id": "ep072",
-      "topic": "Oppau explosion (1921): a routine blast to break up caked fertilizer preceded a stockpile detonation",
-      "spawned_at": "2026-10-05T05:05:33+05:30"
+      "spawned_at": "2026-10-05T11:05:25+05:30"
     },
     {
       "id": "ep073",
       "topic": "Great Molasses Flood (1919): the leaking tank had been painted brown to hide the leaks",
-      "spawned_at": "2026-10-05T05:05:34+05:30"
+      "spawned_at": "2026-10-05T11:05:25+05:30"
+    },
+    {
+      "id": "ep077",
+      "topic": "Vasa (ship) (1628): the warship sank on its maiden voyage, less than a mile out, after failing a stability test before it sailed",
+      "spawned_at": "2026-10-05T11:05:26+05:30"
+    },
+    {
+      "id": "ep078",
+      "topic": "1883 eruption of Krakatoa: its final explosion was heard thousands of kilometers away, on Rodrigues island in the Indian Ocean",
+      "spawned_at": "2026-10-05T11:05:26+05:30"
     }
   ],
   "published": [],
@@ -203,35 +189,36 @@
   "failed_posts": [],
   "not_live": [],
   "llm": {
-    "calls": 18,
+    "calls": 9,
     "by_model": {
-      "gemini-3-flash-preview": 5,
-      "gemini-3.6-flash": 1,
-      "gemini-3.5-flash": 5,
-      "gemini-3.5-flash-lite": 6,
+      "gemini-3.5-flash": 2,
+      "gemini-3.8-flash": 1,
+      "gemini-3.6-flash": 2,
+      "gemini-3.5-flash-lite": 1,
+      "gemini-3-flash-preview": 2,
       "gemini-3.7-flash": 1
     },
     "out_of_quota": []
   },
   "renders": {
-    "modal": 10,
+    "modal": 8,
     "runner": 0
   },
   "daily_done": "2026-10-04",
   "minutes_this_month": 68.0,
   "minutes_budget": 2000,
   "modal_cost": {
-    "metered": 6.09,
+    "metered": 6.26,
     "billed": 0.0
   },
   "modal_credit": 30.0,
   "capacity": {
-    "cloud": 182,
+    "cloud": 181,
     "runner": 0,
     "runner_minutes": 0,
-    "modal_credit_left": 21.91
+    "modal_credit_left": 21.74
   },
   "made_here": 0,
-  "open_topics": 150,
+  "open_topics": 148,
   "parked_topics": 20
 }
