@@ -2,7 +2,7 @@
   "hooks": [
     {
       "style": "statement",
-      "text": "Most people think a tsunami destroys everything it touches."
+      "text": "You might think a tsunami destroys everything it touches."
     },
     {
       "style": "question",
@@ -15,7 +15,7 @@
   ],
   "hook_style": "statement",
   "structure": "myth_vs_fact",
-  "title": "Why was a Navy Ship in the Arica Desert? 🤯",
+  "title": "Why Was a US Navy Ship Sitting in the Desert? 🤯",
   "description": "In 1868, a massive tsunami in Arica carried the USS Wateree inland, leaving it perfectly upright in the Atacama desert.",
   "hashtags": [
     "#history",
@@ -32,7 +32,7 @@
   ],
   "beats": [
     {
-      "text": "Most people think a tsunami destroys everything it touches.",
+      "text": "You might think a tsunami destroys everything it touches.",
       "emphasis": [
         "destroys everything"
       ],
@@ -115,9 +115,9 @@
       }
     },
     {
-      "text": "The massive wave carried the gunboat inland without tipping it over.",
+      "text": "The fifty-foot wave carried the gunboat inland without tipping it over.",
       "emphasis": [
-        "without tipping"
+        "fifty-foot wave"
       ],
       "sfx": "riser",
       "pause_after": 0.12,
@@ -168,9 +168,9 @@
       }
     },
     {
-      "text": "Most people think a tsunami destroys everything it touches.",
+      "text": "The Navy ship spent its final years serving as a desert inn.",
       "emphasis": [
-        "Most people"
+        "desert inn"
       ],
       "sfx": "pop",
       "pause_after": 0.12,
@@ -196,5 +196,5 @@
   ],
   "hook_text": "SURVIVED THE WAVE",
   "loop": true,
-  "better_than_last": "Fixed the emphasis constraint in the final beat by matching words explicitly contained within the exact beat text."
+  "better_than_last": "Used the myth_vs_fact structure to contrast the assumed destruction of a tsunami with the unique survival of the USS Wateree's flat-bottomed hull."
 }

@@ -1,0 +1,90 @@
+{
+  "rounds": [
+    {
+      "at": "2026-10-05T17:14:58+05:30",
+      "check": {
+        "duration": 24.23,
+        "words": 65,
+        "integrated_lufs": -14.4,
+        "true_peak_dbfs": -1.8,
+        "warnings": [],
+        "speech_differences": [
+          "'arica' heard as 'erika' after 'the port of'",
+          "'wateree' heard as 'watery' after 'crushed the uss'",
+          "base.en: 'arica' heard as 'erika' after 'the port of'",
+          "base.en: 'wateree' heard as 'watery' after 'crushed the uss'"
+        ],
+        "speech_error": null,
+        "sources": [
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Flickr via Openverse",
+          "Wikimedia Commons"
+        ],
+        "speech_verification": {
+          "heard": "You might think a tsunami destroys everything it touches. In 1868, a massive earthquake leveled the port of Erika, Peru. While other ships were crushed, the USS Watery had a flat bottom. The 50-foot wave carried the gunboat inland without tipping it over. It sat perfectly upright, 500 yards into the desert. The Navy ship spent its final years serving as a desert inn.",
+          "model": "small.en",
+          "media_sha256": "575c26f498fdefd5b021ca9aacba633dd67957b67e557c333d4cbf4ab9f610ac",
+          "primary_differences": [
+            "'arica' heard as 'erika' after 'the port of'",
+            "'wateree' heard as 'watery' after 'crushed the uss'"
+          ],
+          "differences": [
+            "'arica' heard as 'erika' after 'the port of'",
+            "'wateree' heard as 'watery' after 'crushed the uss'",
+            "base.en: 'arica' heard as 'erika' after 'the port of'",
+            "base.en: 'wateree' heard as 'watery' after 'crushed the uss'"
+          ],
+          "corroboration": {
+            "model": "base.en",
+            "heard": "You might think a tsunami destroys everything it touches. In 1868, a massive earthquake leveled the Port of Erika Peru. While other ships were crushed, the USS Watery had a flat bottom. The 50-foot wave carried the gunboat inland without tipping it over. It sat perfectly upright, 500 yards into the desert. The Navy ship spent its final years serving as a desert inn.",
+            "differences": [
+              "'arica' heard as 'erika' after 'the port of'",
+              "'wateree' heard as 'watery' after 'crushed the uss'"
+            ],
+            "resolved": []
+          }
+        }
+      },
+      "media_sha256": "575c26f498fdefd5b021ca9aacba633dd67957b67e557c333d4cbf4ab9f610ac",
+      "scores": {
+        "hook": 4,
+        "clarity": 5,
+        "payoff": 5,
+        "visuals": 5,
+        "loop": 4,
+        "accuracy": 3
+      },
+      "notes": {
+        "hook": "The hook effectively sets up a subversion of the viewer's expectations regarding tsunami damage.",
+        "clarity": "The narrative path from the natural disaster to the specific fate of the vessel is easy to follow.",
+        "payoff": "The irony of a Navy gunboat serving as an inn in the Atacama desert is a strong historical payoff.",
+        "visuals": "The use of actual archival photos of the ship in the sand makes the story feel incredibly real.",
+        "loop": "The transition from the final line back to the start is smooth, though not perfectly seamless.",
+        "accuracy": "The script claims a 'fifty-foot wave' in beat 4, but the research claims only describe the wave as gigantic or massive without a specific height."
+      },
+      "frames": [],
+      "speech": [
+        {
+          "beat": 2,
+          "word": "Arica",
+          "respelling": "uh ree kuh"
+        },
+        {
+          "beat": 3,
+          "word": "Wateree",
+          "respelling": "wah tuh ree"
+        }
+      ],
+      "rewrite": [
+        "Beat 4: The massive wave carried the gunboat inland without tipping it over."
+      ],
+      "better_than_last": "This episode uses direct archival evidence of the vessel in situ, whereas the imagery in the Winton's Rescue Train episode was less specific to the event described.",
+      "judge": "gemini-3-flash-preview",
+      "passed": false
+    }
+  ],
+  "best_round": 1
+}

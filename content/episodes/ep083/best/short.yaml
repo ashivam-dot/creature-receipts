@@ -1,5 +1,5 @@
 id: ep083
-title: Why was a Navy Ship in the Arica Desert? 🤯
+title: Why Was a US Navy Ship Sitting in the Desert? 🤯
 series: The Last Hours
 description: In 1868, a massive tsunami in Arica carried the USS Wateree inland, leaving it perfectly upright in the Atacama
   desert.
@@ -25,7 +25,7 @@ voice:
   voice: am_fenrir
   speed: 1.15
 beats:
-- text: Most people think a tsunami destroys everything it touches.
+- text: You might think a tsunami destroys everything it touches.
   emphasis:
   - destroys everything
   visual:
@@ -40,8 +40,13 @@ beats:
     fallbacks:
     - color
     motion: pan_right
-    focus_x: 0.5
-    focus_y: 0.5
+    focus_x: 0.65
+    focus_y: 0.42
+    box:
+    - 0.35
+    - 0.2
+    - 0.95
+    - 0.65
 - text: In 1868, a massive earthquake leveled the port of Arica, Peru.
   emphasis:
   - Arica, Peru
@@ -92,24 +97,29 @@ beats:
     - 0.44
     - 0.85
     - 0.69
-- text: The massive wave carried the gunboat inland without tipping it over.
+- text: The fifty-foot wave carried the gunboat inland without tipping it over.
   emphasis:
-  - without tipping
+  - fifty-foot wave
   sfx: riser
   visual:
     source: url
-    url: https://upload.wikimedia.org/wikipedia/commons/5/55/The_U.S.S._Wateree_%2814037445157%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    url: https://thumb.wikimedia.org/wikipedia/commons/thumb/0/09/Maremoto_de_Arica_1868.jpg/1920px-Maremoto_de_Arica_1868.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
     credit:
       source: Wikimedia Commons
-      title: The U.S.S. Wateree (14037445157).jpg
-      credit: USMC Archives from Quantico, USA
-      license: CC BY 2.0
-      url: https://commons.wikimedia.org/wiki/File:The_U.S.S._Wateree_(14037445157).jpg
+      title: Maremoto de Arica 1868.jpg
+      credit: Autor desconocido
+      license: Public domain
+      url: https://commons.wikimedia.org/wiki/File:Maremoto_de_Arica_1868.jpg
     fallbacks:
     - color
     motion: pan_left
     focus_x: 0.5
     focus_y: 0.5
+    box:
+    - 0.1
+    - 0.2
+    - 0.9
+    - 0.8
 - text: It sat perfectly upright, five hundred yards into the desert.
   emphasis:
   - into the desert
@@ -133,14 +143,14 @@ beats:
     - 0.4
     - 0.7
     - 0.6
-- text: Most people think a tsunami destroys everything it touches.
+- text: The Navy ship spent its final years serving as a desert inn.
   emphasis:
-  - Most people
+  - desert inn
   sfx: pop
   visual:
     reuse: 1
     motion: zoom_out
-    focus_x: 0.5
-    focus_y: 0.5
+    focus_x: 0.65
+    focus_y: 0.42
 depth_motion: true
 hook_text: SURVIVED THE WAVE

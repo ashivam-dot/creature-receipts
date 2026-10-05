@@ -1,0 +1,131 @@
+id: ep085
+title: Why Did Early Pharaohs Take Their Servants? 😳
+series: Fallen Empires
+description: Explore the First Dynasty royal tombs at Umm el-Qa'ab around 2900 BC, where early Egyptian pharaohs were entombed
+  alongside sacrificed household servants.
+sources:
+- https://grokipedia.com/page/Umm_El_Qa'ab
+- http://heritage-key.com/egypt/discovery-abydos-examining-work-penn-yale-ifa-joint-expedition
+- https://en.wikipedia.org/wiki/Umm_El_Qa%27ab
+- https://www.labrujulaverde.com/en/2026/10/egypts-earliest-kings-were-buried-among-hundreds-of-servants-forensics-finally-finds-signs-of-violent-deaths/
+- https://www.theguardian.com/science/2026/oct/05/skull-fractures-suggest-servants-of-egypts-ancient-kings-were-sacrificed
+- https://en.wikipedia.org/wiki/Ancient_Egyptian_retainer_sacrifices
+hashtags:
+- '#history'
+- '#egypt'
+- '#archaeology'
+tags:
+- Umm el-Qa'ab
+- First Dynasty
+- pharaohs
+- ancient Egypt
+- Flinders Petrie
+- burial
+voice:
+  engine: kokoro
+  voice: am_fenrir
+  speed: 1.15
+beats:
+- text: Three hundred eighteen retainers were entombed around Pharaoh Djer.
+  emphasis:
+  - Three hundred eighteen
+  - Pharaoh Djer
+  sfx: whoosh
+  visual:
+    source: url
+    url: https://upload.wikimedia.org/wikipedia/commons/3/3e/Djer_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    credit:
+      source: Wikimedia Commons
+      title: Djer 1.jpg
+      credit: Juan R. Lazaro
+      license: CC BY 2.0
+      url: https://commons.wikimedia.org/wiki/File:Djer_1.jpg
+    fallbacks:
+    - color
+    motion: pan_right
+    focus_x: 0.5
+    focus_y: 0.5
+    box:
+    - 0.1
+    - 0.1
+    - 0.9
+    - 0.9
+- text: The royal cemetery of Umm el-Qa'ab near Abydos held the earliest rulers.
+  emphasis:
+  - Umm el-Qa'ab
+  - earliest rulers
+  visual:
+    reuse: 1
+    motion: zoom_in
+    focus_x: 0.5
+    focus_y: 0.5
+- text: English archaeologist Flinders Petrie excavated these subsidiary graves.
+  emphasis:
+  - Flinders Petrie
+  - subsidiary graves
+  visual:
+    source: url
+    url: https://thumb.wikimedia.org/wikipedia/commons/thumb/a/aa/Petrie.jpg/1920px-Petrie.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
+    credit:
+      source: Wikimedia Commons
+      title: Petrie.jpg
+      credit: Unknown authorUnknown author
+      license: Public domain
+      url: https://commons.wikimedia.org/wiki/File:Petrie.jpg
+    fallbacks:
+    - color
+    motion: pan_down
+    focus_x: 0.5
+    focus_y: 0.5
+- text: The tombs were sealed simultaneously, suggesting these retainers were sacrificed.
+  emphasis:
+  - sealed simultaneously
+  - sacrificed
+  sfx: riser
+  visual:
+    reuse: 3
+    motion: zoom_in
+    focus_x: 0.5
+    focus_y: 0.5
+- text: Forensic re-examination of forty-six skulls revealed fatal perimortem fractures.
+  emphasis:
+  - forty-six skulls
+  - fatal perimortem fractures
+  sfx: pop
+  pause_after: 0.4
+  visual:
+    source: card
+    card:
+      kind: fact
+      big: forty-six skulls
+      small: ''
+    motion: zoom_in
+- text: This brutal practice disappeared before the Second Dynasty.
+  emphasis:
+  - disappeared
+  - Second Dynasty
+  visual:
+    source: url
+    url: https://upload.wikimedia.org/wikipedia/commons/2/24/Shabti_of_Itet-Nefer_LACMA_M.80.202.299.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    credit:
+      source: Wikimedia Commons
+      title: Shabti of Itet-Nefer LACMA M.80.202.299.jpg
+      credit: Unknown author
+      license: Public domain
+      url: https://commons.wikimedia.org/wiki/File:Shabti_of_Itet-Nefer_LACMA_M.80.202.299.jpg
+    fallbacks:
+    - color
+    motion: pan_up
+    focus_x: 0.5
+    focus_y: 0.5
+- text: Figurines replaced the retainers entombed around Pharaoh Djer.
+  emphasis:
+  - Figurines replaced
+  - Pharaoh Djer
+  visual:
+    reuse: 1
+    motion: zoom_out
+    focus_x: 0.5
+    focus_y: 0.5
+depth_motion: true
+hook_text: 318 RETAINERS ENTOMBED
