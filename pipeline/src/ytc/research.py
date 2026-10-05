@@ -44,6 +44,8 @@ WIKI_CHARS = 45_000
 SOURCE_CHARS = 16_000
 MAX_SOURCES = 7
 MIN_WORDS = 250
+# A 6-8 beat Short cites one or two claims a beat; eight sank stories whose seventh claim lacked a second site.
+MIN_CLAIMS = 6
 
 
 @dataclass
@@ -343,7 +345,9 @@ def research(topic: str, series: str, source_plan: list[dict] | None = None, cau
     """The claims table with exact evidence from at least two distinct fetched sites."""
     sources = gather(topic, source_plan) if source_plan else gather(topic)
     if source_plan and len(sources) != len(source_plan):
-        raise RuntimeError("a checked accident source is unavailable; research cannot substitute another page")
+        # A pinned page that won't load would sink the lead three runs later; the open search keeps the two-site rule.
+        log.warning("a checked source for %r is unavailable; researching from an open search instead", topic)
+        sources = gather(topic)
     if len(sources) < 2:
         return {"viable": False, "reason": "fewer than two readable sources", "claims": [], "sources": []}
     listing = "\n\n".join(f"[{s.label}] {s.title} ({s.url})\n{s.text}" for s in sources)
@@ -364,7 +368,7 @@ def research(topic: str, series: str, source_plan: list[dict] | None = None, cau
         # Every claim lost its citations: the answer is malformed, not the topic weak. A later run asks again.
         raise RuntimeError(f"research answer supplied no usable two-site quotes ({llm.answered_by()}); asking again next run")
     found["claims"] = kept
-    if found.get("viable") and len(kept) < 8:
+    if found.get("viable") and len(kept) < MIN_CLAIMS:
         found["viable"] = False
         found["reason"] = f"only {len(kept)} claims have verified quotes from two different sites"
     found["sources"] = [{"label": s.label, "url": s.url, "title": s.title, "site": s.site} for s in sources]

@@ -44,6 +44,10 @@ DAY_ZERO = date(2026, 10, 1)
 # Two weeks at 3 a day, so the channel keeps publishing through two weeks without any language model. Shorts
 # made further ahead would miss what the newest analytics teach.
 INVENTORY_DAYS = 14
+# Drafts the control repo can still release: it takes three a day, so a few days' worth keeps it fed.
+DRAFT_BUFFER_DAYS = 3
+# Episodes below this predate the control repo's release floor (its policy.json) and can never be released.
+RELEASE_FLOOR = 63
 BATCH = 4
 # After Gemini's free quotas reset (00:05 Pacific: 12:35 IST in summer time, 13:35 in winter), so the routine's
 # learnings and new topics come before production uses the day's quota; the first run after is 17:05 IST.
@@ -236,14 +240,25 @@ def episodes() -> list[dict]:
     return out
 
 
+def _fresh_draft(episode: dict, now: datetime | None = None) -> bool:
+    """The control repo releases drafts without telling the producer, so only recent drafts count as unposted."""
+    started = (episode.get("topic") or {}).get("started_at")
+    try:
+        when = datetime.fromisoformat(started)
+    except (TypeError, ValueError):
+        return True
+    return (now or datetime.now(IST)) - when <= timedelta(days=DRAFT_BUFFER_DAYS)
+
+
 def inventory(eps: list[dict] | None = None) -> dict:
     eps = eps if eps is not None else episodes()
     scheduled = [e for e in eps if e["state"] == "scheduled"]
-    waiting = [e for e in eps if e["state"] == "waiting"]
-    drafts = [e for e in eps if e["state"] == "draft"]
+    waiting = [e for e in eps if e["state"] == "waiting" and int(e["id"][2:]) >= RELEASE_FLOOR]
+    drafts = [e for e in eps if e["state"] == "draft" and _fresh_draft(e)]
+    days = DRAFT_BUFFER_DAYS if os.environ.get("YTC_DRAFT_ONLY") == "1" else INVENTORY_DAYS
     return {"total": len(scheduled) + len(waiting) + len(drafts), "in_buffer": len(scheduled), "waiting": len(waiting),
             "drafts": len(drafts),
-            "target": INVENTORY_DAYS * slots_per_day(), "making": [e["id"] for e in eps if e["state"] == "making"],
+            "target": days * slots_per_day(), "making": [e["id"] for e in eps if e["state"] == "making"],
             "remote": [e["id"] for e in eps if e["state"] == "remote"]}
 
 
@@ -1211,8 +1226,8 @@ def per_day(stock: int, slots: int) -> int:
 
 # The first relaunch batch is a quality and format test. New slots are earned from at least 20 comparable Shorts
 # with enough engaged views to distinguish a trend from a handful of channel-page visits. See strategy/STRATEGY.md.
-PACE = ((1, 1), (15, 2), (30, 3))
-BASE_PACE = 1
+PACE = ((1, 3),)
+BASE_PACE = 3
 CAUTION_PACE = 2
 PACE_MIN_ENGAGED = 100
 # The last 10 Shorts falling this far below the 10 before them in engaged views per Short drops back to BASE_PACE.

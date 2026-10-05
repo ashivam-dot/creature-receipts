@@ -225,21 +225,21 @@ def test_speech_only_review_stops_after_one_render_and_keeps_exact_video(
         "rewrite": [], "better_than_last": "", "judge": "test",
     })
 
+    monkeypatch.setenv("YTC_DRAFT_ONLY", "1")
+    monkeypatch.setattr(studio, "write_research_md", lambda *args: None)
+    monkeypatch.setattr(studio, "record_draft", lambda spec, episode, *args: {"modal_path": f"drafts/{episode}.mp4"})
     outcome = studio.produce("Ship story", "History", "ep064")
-    digest = hashlib.sha256(media_bytes).hexdigest()
-    hold = json.loads((folder / "editorial_hold.json").read_text())
-    review = json.loads((folder / "review.json").read_text())
-    assert outcome["outcome"] == "unfinished" and outcome["speech_review"] is True
-    assert outcome["media_sha256"] == hold["media_sha256"] == digest
-    assert (folder / "ep064.mp4").read_bytes() == media_bytes
     assert len(rendered) == 1
-    assert len(review["rounds"]) == (2 if prior_review else 1)
-    assert not (folder / "draft.json").exists() and not (folder / "hold.json").exists()
-    attempts = json.loads((folder / "topic.json").read_text())["attempts"]
-    with pytest.raises(RuntimeError, match="editorial hold"):
-        studio.produce("Ship story", "History", "ep064")
-    assert json.loads((folder / "topic.json").read_text())["attempts"] == attempts
-    assert len(rendered) == 1
+    assert not (folder / "editorial_hold.json").exists() and not (studio.EPISODES / "ep064" / "editorial_hold.json").exists()
+    if reviewer_fix:
+        # The judge confirms a mispronunciation the recognizer heard twice: the Short is rejected, never held.
+        assert outcome["outcome"] == "rejected" and outcome["reason"].startswith("speech:")
+        assert (tmp_path / "rejected" / "ep064").is_dir()
+    else:
+        # One dropped short word that the judge heard as correct speech passes without a person listening.
+        assert outcome["outcome"] == "ready"
+        review = json.loads((folder / "review.json").read_text())
+        assert review["rounds"][-1]["passed"] is True
 
 
 def test_cloud_keeps_held_media_byte_for_byte_in_private_outbox_and_collects_hold(tmp_path):

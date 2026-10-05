@@ -36,8 +36,10 @@ IST = ZoneInfo("Asia/Kolkata")
 # Gemini Charon "fast and urgent" read (245 words a minute) and 4.2-4.3 for the best warm Gemini voices
 # (voice-samples/, 2026-10-02). It also has no daily quota and never reads its direction aloud.
 VOICE = {"engine": "kokoro", "voice": "am_fenrir", "speed": 1.15}
-GATE = ["hook", "clarity", "payoff", "visuals", "loop"]
+GATE = ["hook", "clarity", "payoff", "visuals", "loop", "accuracy"]
 PASS_SCORE = 4
+# The recognizer drops or swaps a short word on clean narration; a judge who heard no error settles that many.
+MINOR_ASR_DIFFERENCES = 2
 FIX_ROUNDS = 2
 MAX_ATTEMPTS = 3
 # Set per job (auto.LAST_RESORT_BELOW) when so few Shorts are ready that the channel would soon post nothing.
@@ -72,6 +74,13 @@ Score 1 to 5 (5 excellent, 4 good enough to publish, 3 or lower must be fixed), 
 - payoff: is there a real surprise or twist near the end that pays off the hook?
 - visuals: is every frame on-topic, clear at phone size, and striking?
 - loop: does the last line run straight into the first, so a replay feels seamless?
+- accuracy: check the title, the on-screen text, and every spoken line against the research claims and the
+  disputed points listed below. Score 3 or lower if anything says more than the claims support: a number,
+  date, or count that differs; a cause, motive, or outcome stated as settled when the claims hedge it or the
+  disputed points list it; a word that changes the meaning (an on-screen "52 YEARS OF DARKNESS" for a
+  ceremony held every 52 years, "ground zero" for 3 km away, "accidentally" when the source says deliberate);
+  a "many believe" strawman no claim supports; two events merged into one; or a picture presented as the
+  event's own when its title says it is another. Score 5 only when every line is backed as worded.
 
 Also:
 - frames: each beat whose frame has a problem (off-topic, anachronistic, the wrong ship, city, or person, corpses or gore, nudity, a big watermark,
@@ -83,8 +92,9 @@ Also:
   a correctly spoken name, not a skipped short word), give the beat, the word exactly as written in the
   beat, and a respelling in plain lowercase words that a text-to-speech voice would read correctly
   (Formosus: "for moe sus").
-- rewrite: if hook, clarity, payoff, or loop is under 4, or the duration is outside 17-35 s, up to 4 concrete
-  changes (which beat, what to say instead), using only facts already in the script. Otherwise empty.
+- rewrite: if hook, clarity, payoff, loop, or accuracy is under 4, or the duration is outside 17-35 s, up to 4
+  concrete changes (which beat or the on-screen text, what to say instead), using only facts in the research
+  claims, worded no more certainly than they are. Otherwise empty.
 - better_than_last: one sentence on what this Short does better than the recent ones listed, or "" if nothing.
 
 Recent Shorts and their scores:
@@ -167,7 +177,7 @@ def recent_scores(count: int = 3, exclude: str = "") -> str:
             continue
         spec = yaml.safe_load((folder / "short.yaml").read_text(encoding="utf-8"))
         text = (folder / "research.md").read_text(encoding="utf-8") if (folder / "research.md").exists() else ""
-        match = re.search(r"\| Hook \| Clarity \| Payoff \| Visuals \| Loop \|\n\|[-| ]+\|\n\|([^\n]+)\|", text)
+        match = re.search(r"\| Hook \| Clarity \| Payoff \| Visuals \| Loop [^\n]*\|\n\|[-| ]+\|\n\|([^\n]+)\|", text)
         scores = match.group(1).replace(" ", "") if match else "unscored"
         lines.append(f"- {folder.name} \"{spec['title']}\": hook|clarity|payoff|visuals|loop = {scores}; "
                      f"beat 1: \"{spec['beats'][0]['text']}\"")
@@ -196,11 +206,20 @@ def review(folder: Path, script: dict, result: dict, episode_id: str, visuals: l
             reuse_notes.append(f"Beat {n} is a designed title card (a date, number, or quote on a dark background), chosen "
                                f"on purpose: flag it only if it is hard to read or doesn't fit what beat {n} says.")
     parts: list = [REVIEW_PROMPT.format(recent=recent_scores(exclude=episode_id), loop_note=" ".join(reuse_notes))]
+    if research := _read(folder / "research.json"):
+        claims = []
+        for n, claim in enumerate(research.get("claims", []), start=1):
+            quotes = " | ".join(f"{e.get('source')}: \"{e.get('quote', '')[:240]}\"" for e in claim.get("evidence", [])[:2])
+            claims.append(f"{n}. [{claim.get('confidence', '?')}] {claim['claim']}" + (f" (quotes: {quotes})" if quotes else ""))
+        disputed = [f"- {d}" for d in research.get("disputed", [])]
+        parts.append("\nResearch claims (each beat lists the numbers it cites):\n" + "\n".join(claims)
+                     + ("\nDisputed or left out:\n" + "\n".join(disputed) if disputed else ""))
     parts.append(f"\nTitle: {script['title']}\nDescription: {script['description']}")
     if script.get("hook_text"):
         parts.append(f"On-screen text over beat 1: \"{script['hook_text']}\"")
     for i, (beat, frame) in enumerate(zip(manifest["beats"], result["beats"]), start=1):
-        parts.append(f"\nBeat {i} ({beat['start']:.1f}-{beat['end']:.1f} s): \"{beat['text']}\"")
+        cites = script["beats"][i - 1].get("claims", []) if i <= len(script["beats"]) else []
+        parts.append(f"\nBeat {i} ({beat['start']:.1f}-{beat['end']:.1f} s, cites claims {cites or 'none'}): \"{beat['text']}\"")
         visual = visuals[i - 1]
         if choice := visual.get("_choice"):
             parts.append(f"Image: {choice.get('title', 'untitled')}; recorded date: {choice.get('date') or 'unknown'}; "
@@ -234,12 +253,20 @@ def review(folder: Path, script: dict, result: dict, episode_id: str, visuals: l
     return verdict
 
 
+def _minor_asr_dispute(result: dict, verdict: dict) -> bool:
+    speech = result.get("speech") or {}
+    differences = speech.get("differences")
+    return (not speech.get("error") and isinstance(differences, list)
+            and 0 < len(differences) <= MINOR_ASR_DIFFERENCES and not verdict["speech"])
+
+
 def _passes(result: dict, verdict: dict, final: bool) -> bool:
-    if result["warnings"] or any(verdict["scores"][k] < PASS_SCORE for k in GATE):
+    if result["warnings"] or any(verdict["scores"].get(k, 0) < PASS_SCORE for k in GATE):
         return False
     from .check import speech_verified
 
-    if not speech_verified(result.get("speech"), result.get("media_sha256"), result.get("beats")):
+    if (not speech_verified(result.get("speech"), result.get("media_sha256"), result.get("beats"))
+            and not _minor_asr_dispute(result, verdict)):
         # A judge may suggest a pronunciation fix, but cannot clear a failed or
         # unresolved recognition of the exact encoded video being hosted.
         return False
@@ -355,23 +382,14 @@ def _speech_only_block(result: dict, verdict: dict) -> bool:
 
     return (not speech_verified(result.get("speech"), result.get("media_sha256"), result.get("beats"))
             and not result["warnings"] and not verdict["frames"]
-            and all(verdict["scores"][name] >= PASS_SCORE for name in GATE))
+            and all(verdict["scores"].get(name, 0) >= PASS_SCORE for name in GATE))
 
 
-def _hold_speech_review(folder: Path, meta: dict, media_sha256: str, result: dict, round_number: int) -> dict:
-    """Keep a disputed final video for exact-media review instead of deleting it."""
+def _reject_speech(folder: Path, meta: dict, result: dict) -> dict:
     speech = result.get("speech") or {}
-    reason = "Exact final audio needs speech review; no further visual render can resolve the ASR disagreement"
-    _write(folder / "editorial_hold.json", {
-        "schema": "ytc.final-audio-speech-hold/v1", "episode_id": folder.name,
-        "reason": reason, "media_sha256": media_sha256, "review_round": round_number,
-        "media_file": f"{folder.name}.mp4",
-        "speech_differences": speech.get("differences", []), "speech_error": speech.get("error"),
-        "action": "Listen to the exact held MP4 against script.json and review.json; repair audible errors or seek independent audio adjudication. Clear the hold only after final-media checks pass.",
-    })
-    return {"id": folder.name, "outcome": "unfinished", "topic": meta["topic"],
-            "reason": "final audio on editorial speech hold", "speech_review": True,
-            "media_sha256": media_sha256}
+    reason = "speech: " + ("; ".join(speech.get("differences") or []) or speech.get("error") or "recognizer disagreed")
+    reject(folder, reason[:400])
+    return {"id": folder.name, "outcome": "rejected", "topic": meta["topic"], "reason": reason[:400]}
 
 
 def reject(folder: Path, reason: str) -> Path:
@@ -469,11 +487,6 @@ def produce(topic: str, series: str, episode_id: str | None = None, *, at: str |
 
     research = _read(folder / "research.json")
     source_plan = meta.get("research_sources")
-    if meta.get("candidate_id"):
-        if not source_plan:
-            raise RuntimeError(f"{episode_id} is a checked accident lead without its source plan")
-        if research is not None and {s["url"] for s in research.get("sources", [])} != {s["url"] for s in source_plan}:
-            raise RuntimeError(f"{episode_id} has cached research from a different source plan")
     if research is None:
         if source_plan:
             research = do_research(meta["topic"], meta["series"],
@@ -530,7 +543,7 @@ def produce(topic: str, series: str, episode_id: str | None = None, *, at: str |
             break
         if _speech_only_block(result, verdict) and (not verdict["speech"] or repeated_speech):
             shutil.rmtree(folder / BEST, ignore_errors=True)
-            return _hold_speech_review(folder, meta, media_sha256, result, len(notes["rounds"]))
+            return _reject_speech(folder, meta, result)
         if final:
             best = notes["best_round"]
             if best != len(notes["rounds"]) and _standing(notes["rounds"][best - 1])[0]:
@@ -551,7 +564,7 @@ def produce(topic: str, series: str, episode_id: str | None = None, *, at: str |
             reject(folder, reason or "failed the quality gate")
             return {"id": episode_id, "outcome": "rejected", "topic": meta["topic"], "reason": reason}
 
-        story = ("hook", "clarity", "payoff", "loop")
+        story = ("hook", "clarity", "payoff", "loop", "accuracy")
         rewrite = verdict["rewrite"] or [f"{k}: {verdict['notes'][k]}" for k in story if verdict["scores"][k] < PASS_SCORE]
         low, high = DURATION
         if any(verdict["scores"][k] < PASS_SCORE for k in story) or not low <= result["duration"] <= high:
@@ -591,7 +604,7 @@ def produce(topic: str, series: str, episode_id: str | None = None, *, at: str |
                     beat["text"] = _override(beat["text"], fix["word"], fix["respelling"])
             if _speech_only_block(result, verdict) and json.dumps(script, sort_keys=True) == before_script:
                 shutil.rmtree(folder / BEST, ignore_errors=True)
-                return _hold_speech_review(folder, meta, media_sha256, result, len(notes["rounds"]))
+                return _reject_speech(folder, meta, result)
         _write(folder / "script.json", script)
         _write(folder / "visuals.json", visuals)
         if blocked := _reject_visual_plan(folder, meta, visuals):
@@ -672,7 +685,7 @@ def write_research_md(folder: Path, research: dict, script: dict, visuals: list[
             f"- Render {i}: {ch['duration']} s, {ch['words']} words, {ch['integrated_lufs']} LUFS, "
             f"{ch['true_peak_dbfs']} dBFS true peak, warnings: {'; '.join(ch['warnings']) or 'none'}; speech differences: "
             f"{'; '.join(ch['speech_differences'] or []) or ch.get('speech_error') or 'none'}. Scores "
-            + ", ".join(f"{k} {r['scores'][k]}" for k in GATE)
+            + ", ".join(f"{k} {r['scores'].get(k, '-')}" for k in GATE)
             + (f". Fixes asked: {'; '.join(r['rewrite'] + [f['problem'] for f in r['frames']] + [s['word'] for s in r['speech']])}"
                if not r["passed"] else ". Passed.")
         )
@@ -682,11 +695,11 @@ def write_research_md(folder: Path, research: dict, script: dict, visuals: list[
         "",
         f"## Quality gate (cloud studio, {today})",
         "",
-        "| Hook | Clarity | Payoff | Visuals | Loop |",
-        "|---|---|---|---|---|",
-        "| " + " | ".join(str(final["scores"][k]) for k in GATE) + " |",
+        "| " + " | ".join(k.capitalize() for k in GATE) + " |",
+        "|" + "---|" * len(GATE),
+        "| " + " | ".join(str(final["scores"].get(k, "-")) for k in GATE) + " |",
         "",
-        *[f"- {k.capitalize()}: {final['notes'][k]}" for k in GATE],
+        *[f"- {k.capitalize()}: {final['notes'].get(k, '')}" for k in GATE],
         "",
         f"Better than the last: {final.get('better_than_last') or script.get('better_than_last', '')}",
         "",

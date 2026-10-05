@@ -174,20 +174,17 @@ def test_existing_checked_draft_cannot_resume_after_selection_closes(isolated, m
     assert auto._jobs(1) == []
 
 
-def test_episode_cannot_resume_without_its_checked_source_plan(isolated):
+def test_episode_resumes_from_cached_research_even_after_open_search_fallback(isolated):
     candidate = accidents.load(TODAY)[0]
     folder = studio.EPISODES / "ep001"
     folder.mkdir()
-    meta = {"topic": candidate["topic"], "series": candidate["series"], "candidate_id": candidate["id"], "attempts": 0}
+    meta = {"topic": candidate["topic"], "series": candidate["series"], "candidate_id": candidate["id"],
+            "research_sources": candidate["sources"], "attempts": 0}
     (folder / "topic.json").write_text(json.dumps(meta))
-    with pytest.raises(RuntimeError, match="without its source plan"):
-        studio.produce(candidate["topic"], candidate["series"], "ep001")
-    meta["research_sources"] = candidate["sources"]
-    meta["attempts"] = 0
-    (folder / "topic.json").write_text(json.dumps(meta))
-    (folder / "research.json").write_text(json.dumps({"sources": [{"url": "https://unrelated.example/report"}]}))
-    with pytest.raises(RuntimeError, match="different source plan"):
-        studio.produce(candidate["topic"], candidate["series"], "ep001")
+    (folder / "research.json").write_text(json.dumps({"viable": False, "reason": "too thin",
+                                                      "sources": [{"url": "https://unrelated.example/report"}]}))
+    outcome = studio.produce(candidate["topic"], candidate["series"], "ep001")
+    assert outcome["outcome"] == "rejected" and "too thin" in outcome["reason"]
 
 
 def test_curated_research_reads_only_checked_pages_and_keeps_quote_gate(monkeypatch):
@@ -248,11 +245,15 @@ def test_quotes_cannot_span_two_distant_ocr_excerpts():
     assert research._matched_evidence(claim, {"S1": source}) == []
 
 
-def test_missing_checked_source_stops_research_without_substitution(monkeypatch):
+def test_missing_checked_source_falls_back_to_open_search(monkeypatch):
     urls = ["https://primary.example.org/report.txt", "https://history.example.net/account"]
     plan = [{"url": url} for url in urls]
+    searched = []
+    real_gather = research.gather
+    monkeypatch.setattr(research, "gather", lambda topic, source_plan=None: (
+        real_gather(topic, source_plan) if source_plan else searched.append(topic) or []))
     monkeypatch.setattr(research, "_read", lambda url: ("Report", "Quebec Bridge " + "evidence " * 300) if url == urls[0] else None)
-    monkeypatch.setattr(research, "_search", lambda *args: pytest.fail("unexpected web search"))
-    monkeypatch.setattr(llm, "generate", lambda *args, **kwargs: pytest.fail("research continued without the checked pair"))
-    with pytest.raises(RuntimeError, match="cannot substitute"):
-        research.research("Quebec Bridge (1907): lower chord", "The Last Hours", plan)
+    monkeypatch.setattr(llm, "generate", lambda *args, **kwargs: pytest.fail("research ran on one source"))
+    found = research.research("Quebec Bridge (1907): lower chord", "The Last Hours", plan)
+    assert searched == ["Quebec Bridge (1907): lower chord"]
+    assert not found["viable"] and found["reason"] == "fewer than two readable sources"

@@ -40,12 +40,20 @@ def test_final_review_cannot_host_flagged_picture_or_speech():
     assert studio._passes(exact, verdict, final=True)
     assert not studio._passes({"warnings": []}, verdict, final=True)
     assert not studio._passes({"warnings": [], "speech": {"error": "ASR failed"}}, verdict, final=True)
+    # Up to two recognizer slips pass only when the judge heard no mispronunciation.
+    assert studio._passes({"warnings": [], "speech": {"differences": ["missing word"]}}, verdict, final=True)
+    many = {"warnings": [], "speech": {"differences": ["a", "b", "c"]}}
+    assert not studio._passes(many, verdict, final=True)
+    verdict["speech"] = [{"beat": 1, "word": "Peshtigo", "respelling": "pesh tee go"}]
     assert not studio._passes({"warnings": [], "speech": {"differences": ["missing word"]}}, verdict, final=True)
+    verdict["speech"] = []
+    verdict["scores"]["accuracy"] = 3
+    assert not studio._passes(exact, verdict, final=True)
 
 
 def test_best_round_cannot_restore_a_failed_final_media_speech_check():
     round_ = {"scores": {key: 5 for key in studio.GATE}, "frames": [], "speech": [],
-              "check": {"warnings": [], "speech_differences": ["missing word"], "speech_error": None}}
+              "check": {"warnings": [], "speech_differences": ["a", "b", "c"], "speech_error": None}}
     assert not studio._standing(round_)[0]
     round_["check"]["speech_differences"] = []
     assert studio._standing(round_)[0]

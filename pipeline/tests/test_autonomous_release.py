@@ -377,7 +377,7 @@ def test_source_rights_and_exact_mp4_review_are_required(episode):
     manifest.write_text(json.dumps(data))
     review = episode / "review.json"
     data = json.loads(review.read_text())
-    data["rounds"][0]["check"]["speech_differences"] = ["missing word"]
+    data["rounds"][0]["check"]["speech_differences"] = ["a", "b", "c"]
     review.write_text(json.dumps(data))
     with pytest.raises(RuntimeError, match="clean final-media review"):
         release._review(episode, hashlib.sha256((episode / "ep063.mp4").read_bytes()).hexdigest())
