@@ -3,9 +3,10 @@
 
     python3 monitor/scout.py
 
-Checks OpenRouter's free models, the Gemini models the channel's key can use, and new open-source projects that
-are taking off on GitHub in the studio's fields (voices, video, motion, depth). What it finds goes to the job's
-summary and, when YTC_NTFY_TOPIC is set, to the owner's phone in one message. It only reports: trying a find and
+Checks OpenRouter's free models, the Gemini models the channel's key can use, new open-source projects that
+are taking off on GitHub in the studio's fields (voices, video, motion, depth), and the models trending on the
+Hugging Face Hub for speech, image-to-video and pictures whose licence allows a monetized channel. What it finds
+goes to the job's summary and, when YTC_NTFY_TOPIC is set, to the owner's phone in one message. It only reports: trying a find and
 switching to it stays a reviewed change. Pexels isn't checked here because its site refuses scripted requests.
 
 The first run only records what already exists, so the phone hears about new things rather than the whole list.
@@ -31,6 +32,14 @@ NEW_REPO_DAYS = 45
 NEW_REPO_STARS = 300
 # Too little context for a research prompt with its sources (llm.BACKUPS takes 250,000).
 MIN_CONTEXT = 100_000
+# Hugging Face Hub tasks for the narrator, the motion and the pictures, and how many trending models to read in each.
+HF_TASKS = ("text-to-speech", "image-to-video", "text-to-image")
+HF_PER_TASK = 20
+# A licence label with one of these can't be used on a monetized channel (cc-by-nc-*, *-non-commercial-*,
+# *-research-*, Coqui's CPML); NONCOMMERCIAL_NAMES are whole labels. A model with no licence, or only "other"
+# without naming it, is skipped too: there is nothing to check its terms against.
+NONCOMMERCIAL = ("-nc", "noncommercial", "non-commercial", "non_commercial", "research", "coqui-public-model")
+NONCOMMERCIAL_NAMES = ("mrl", "cpml")
 
 
 def _get(url: str, headers: dict | None = None) -> dict:
@@ -87,7 +96,38 @@ def rising_repos() -> dict[str, str]:
     return found
 
 
-CHECKS = {"openrouter": openrouter_free, "gemini": gemini_models, "repos": rising_repos}
+def hf_licences(model: dict) -> list[str]:
+    """Every licence label a Hub model carries: its license: tags and its card's license and license_name."""
+    card = model.get("cardData") or {}
+    labels = [tag.removeprefix("license:") for tag in model.get("tags") or [] if tag.startswith("license:")]
+    for field in ("license", "license_name"):
+        value = card.get(field)
+        labels += value if isinstance(value, list) else [value] if value else []
+    return list(dict.fromkeys(str(label).strip().lower() for label in labels if str(label).strip()))
+
+
+def commercial(labels: list[str]) -> bool:
+    return set(labels) - {"other", "unknown"} != set() and not any(
+        label in NONCOMMERCIAL_NAMES or any(marker in label for marker in NONCOMMERCIAL) for label in labels)
+
+
+def hf_trending() -> dict[str, str]:
+    found = {}
+    for task in HF_TASKS:
+        query = urllib.parse.urlencode([("pipeline_tag", task), ("sort", "trendingScore"), ("limit", HF_PER_TASK),
+                                        *(("expand[]", field) for field in ("cardData", "tags", "likes", "trendingScore"))])
+        for model in _get(f"https://huggingface.co/api/models?{query}"):
+            labels = hf_licences(model)
+            # A quantized re-upload trends alongside the model it copies, which is reported in its own right.
+            if not commercial(labels) or (model.get("cardData") or {}).get("base_model_relation") == "quantized":
+                continue
+            found[f"hf:{model['id']}"] = (f"Trending on Hugging Face ({task}): {model['id']}, "
+                                          f"{model.get('likes', 0):,} likes, licence {' / '.join(labels)}. "
+                                          f"https://huggingface.co/{model['id']}")
+    return found
+
+
+CHECKS = {"openrouter": openrouter_free, "gemini": gemini_models, "repos": rising_repos, "huggingface": hf_trending}
 
 
 def push(topic: str, message: str) -> None:
