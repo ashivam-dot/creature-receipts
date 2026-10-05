@@ -303,3 +303,26 @@ def test_crosspost_is_off_by_default_and_never_fails_the_run(studio, monkeypatch
     # Nothing left to do: no request at all.
     auto.crosspost_scheduled(run)
     assert requests_made == ["tiktok-channel"]
+
+
+def test_backlog_generators_rest_while_the_calendar_is_deep(studio, monkeypatch):
+    """A deep backlog keeps the day's Flash requests for drafts; a shallow one is topped up as before."""
+    called = []
+    for name in ("add_timely", "add_accident_topics"):
+        monkeypatch.setattr(auto, name, lambda run: [])
+    monkeypatch.setattr(auto, "add_stories", lambda run: called.append("stories") or ["story"])
+    monkeypatch.setattr(auto, "add_topics", lambda run: called.append("topics") or ["topic"])
+    monkeypatch.setattr(auto, "write_report", lambda *args: studio / "report.md")
+    open_topics = [{"topic": f"t{i}", "status": None} for i in range(auto.OPEN_TOPICS_ENOUGH)]
+    monkeypatch.setattr(auto, "calendar_topics", lambda *args: open_topics)
+    run = auto.Run("test")
+    auto.daily(run, {}, draft_only=True)
+    assert called == [] and run.errors == []
+    details = {s["name"]: s["detail"] for s in run.stages}
+    assert details["strongest stories"] == details["new topics"] == f"skipped: {auto.OPEN_TOPICS_ENOUGH} open topics"
+
+    open_topics.pop()
+    run = auto.Run("test")
+    auto.daily(run, {}, draft_only=True)
+    assert called == ["stories", "topics"]
+    assert {s["name"]: s["detail"] for s in run.stages}["new topics"] == "1 added"

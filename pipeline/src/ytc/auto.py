@@ -54,6 +54,8 @@ BATCH = 4
 DAILY_FROM_HOUR = 14
 # Source-checked accident leads waiting in the calendar at once.
 ACCIDENT_LEADS_ACTIVE = 2
+# Open calendar topics that cover 20 days at 3 Shorts a day; the backlog generators skip a day above it.
+OPEN_TOPICS_ENOUGH = 60
 # Modal's Starter plan includes $1 of compute a month, or $30 once a card is on file (set the YTC_MODAL_CREDIT
 # Actions variable to match). A Short made there costs about $0.10: a worker waiting on Gemini, and up to three renders.
 MODAL_CREDIT = float(os.environ.get("YTC_MODAL_CREDIT") or 1)
@@ -1775,14 +1777,16 @@ def daily(run: Run, state: dict | None = None, *, draft_only: bool = False) -> N
         accidents = add_accident_topics(run)
         added += accidents
         entry["detail"] = f"{len(accidents)} added"
-    with run.stage("strongest stories") as entry:
-        strongest = add_stories(run)
-        added += strongest
-        entry["detail"] = f"{len(strongest)} added"
-    with run.stage("new topics") as entry:
-        backlog = add_topics(run)
-        added += backlog
-        entry["detail"] = f"{len(backlog)} added"
+    # Both backlog stages spend Flash requests that drafts need to finish, so they rest while the backlog is deep.
+    open_count = sum(1 for t in calendar_topics() if not t["status"])
+    for name, add in (("strongest stories", add_stories), ("new topics", add_topics)):
+        with run.stage(name) as entry:
+            if open_count >= OPEN_TOPICS_ENOUGH:
+                entry["detail"] = f"skipped: {open_count} open topics"
+                continue
+            found = add(run)
+            added += found
+            entry["detail"] = f"{len(found)} added"
     if _now().weekday() == 6 and analytics:
         with run.stage("weekly review") as entry:
             entry["detail"] = weekly_review(run, analytics, learned).name
