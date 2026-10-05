@@ -1,0 +1,248 @@
+{
+  "rounds": [
+    {
+      "at": "2026-10-05T13:18:26+05:30",
+      "check": {
+        "duration": 29.73,
+        "words": 65,
+        "integrated_lufs": -14.4,
+        "true_peak_dbfs": -1.9,
+        "warnings": [],
+        "speech_differences": [
+          "'rodrigues' heard as 'rodriguez' after 'indian ocean on'",
+          "base.en: 'across' heard as 'cross' after 'heard the rumble'",
+          "base.en: 'rodrigues' heard as 'rodriguez' after 'indian ocean on'"
+        ],
+        "speech_error": null,
+        "sources": [
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons"
+        ],
+        "speech_verification": {
+          "heard": "Most believe no sound can travel across an entire ocean. Yet on August 27, 1883, the volcano Krakatoa erupted. Its 40-meter tsunamis obliterated 165 coastal towns. The atmospheric shock waves circled the entire globe seven times. Spectacular crimson skies triggered false fire alarms in New York. Deep in the Australian outback, people heard the rumble. Across the Indian Ocean on Rodriguez, they heard the blast.",
+          "model": "small.en",
+          "media_sha256": "202003a226a2fa6155ad062215af67601ec277968ddcead89dbe4a2a1989bd4a",
+          "primary_differences": [
+            "'rodrigues' heard as 'rodriguez' after 'indian ocean on'"
+          ],
+          "differences": [
+            "'rodrigues' heard as 'rodriguez' after 'indian ocean on'",
+            "base.en: 'across' heard as 'cross' after 'heard the rumble'",
+            "base.en: 'rodrigues' heard as 'rodriguez' after 'indian ocean on'"
+          ],
+          "corroboration": {
+            "model": "base.en",
+            "heard": "Most believe no sound can travel across an entire ocean. Yet on August 27, 1883, the volcano Krakatoa erupted. Its 40-meter tsunamis obliterated 165 coastal towns. The atmospheric shock waves circled the entire globe seven times. Spectacular crimson skies triggered false fire alarms in New York. Deep in the Australian Outback, people heard the rumble. Cross the Indian Ocean on Rodriguez, they heard the blast.",
+            "differences": [
+              "'across' heard as 'cross' after 'heard the rumble'",
+              "'rodrigues' heard as 'rodriguez' after 'indian ocean on'"
+            ],
+            "resolved": []
+          }
+        }
+      },
+      "media_sha256": "202003a226a2fa6155ad062215af67601ec277968ddcead89dbe4a2a1989bd4a",
+      "scores": {
+        "hook": 5,
+        "clarity": 5,
+        "payoff": 5,
+        "visuals": 3,
+        "loop": 5,
+        "accuracy": 3
+      },
+      "notes": {
+        "hook": "The opening hook and title immediately grab attention with the concept of the earth's loudest sound.",
+        "clarity": "The narrative flows logically and is easy to follow on a single listen.",
+        "payoff": "The revelation of the sound being heard across the ocean in Rodrigues delivers on the hook's premise.",
+        "visuals": "Reusing the London twilight sky painting for the Australian outback in beat 6 is completely off-topic.",
+        "loop": "The transition from the final beat back to the first beat is seamless and natural.",
+        "accuracy": "Beat 1 contains an unsupported strawman ('Most believe'), and beat 6 doesn't use the required phrasing for the Australian distance."
+      },
+      "frames": [
+        {
+          "beat": 6,
+          "problem": "The visual shows a sketch of London twilight skies, which is completely off-topic for the Australian outback."
+        }
+      ],
+      "speech": [
+        {
+          "beat": 7,
+          "word": "Rodrigues",
+          "respelling": "rod reegs"
+        }
+      ],
+      "rewrite": [
+        "Beat 1: Change 'Most believe no sound can travel across an entire ocean.' to 'A single sound once traveled across an entire ocean.' to remove the unsupported 'Most believe' strawman.",
+        "Beat 6: Change 'Deep in the Australian outback, people heard the rumble.' to 'Thousands of kilometers away in central Australia, people heard the rumble.' to follow the disputed points guidelines."
+      ],
+      "better_than_last": "",
+      "judge": "gemini-3.5-flash",
+      "passed": false
+    },
+    {
+      "at": "2026-10-05T13:22:27+05:30",
+      "check": {
+        "duration": 31.03,
+        "words": 66,
+        "integrated_lufs": -14.4,
+        "true_peak_dbfs": -1.8,
+        "warnings": [],
+        "speech_differences": [
+          "'(nothing)' heard as 'across' after 'the rumble across'",
+          "'rodrigues' heard as 'rodriguez' after 'indian ocean on'",
+          "base.en: 'rodrigues' heard as 'rodriguez' after 'indian ocean on'"
+        ],
+        "speech_error": null,
+        "sources": [
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons"
+        ],
+        "speech_verification": {
+          "heard": "single sound once traveled across an entire ocean. Yet on August 27, 1883, the volcano Krakatoa erupted. Its 40-meter tsunamis obliterated 165 coastal towns. The atmospheric shock waves circled the entire globe seven times. Spectacular crimson skies triggered false fire alarms in New York. Thousands of kilometers away in central Australia, people heard the rumble. Across Across the Indian Ocean on Rodriguez, they heard the blast.",
+          "model": "small.en",
+          "media_sha256": "e947105617dc3e628c95728ab2c1439ac5482a7ec3c6062e495c09f930a333d5",
+          "primary_differences": [
+            "'a' heard as '(nothing)'",
+            "'(nothing)' heard as 'across' after 'the rumble across'",
+            "'rodrigues' heard as 'rodriguez' after 'indian ocean on'"
+          ],
+          "differences": [
+            "'(nothing)' heard as 'across' after 'the rumble across'",
+            "'rodrigues' heard as 'rodriguez' after 'indian ocean on'",
+            "base.en: 'rodrigues' heard as 'rodriguez' after 'indian ocean on'"
+          ],
+          "corroboration": {
+            "model": "base.en",
+            "heard": "a single sound once traveled across an entire ocean. Yet on August 27, 1883, the volcano Krakatoa erupted. Its 40-meter tsunamis obliterated 165 coastal towns. The atmospheric shock waves circled the entire globe seven times. Spectacular crimson skies triggered false fire alarms in New York. Thousands of kilometers away in central Australia, people heard the rumble. Across the Indian Ocean on Rodriguez, they heard the blast.",
+            "differences": [
+              "'rodrigues' heard as 'rodriguez' after 'indian ocean on'"
+            ],
+            "resolved": [
+              "'a' heard as '(nothing)'"
+            ]
+          }
+        }
+      },
+      "media_sha256": "e947105617dc3e628c95728ab2c1439ac5482a7ec3c6062e495c09f930a333d5",
+      "scores": {
+        "hook": 5,
+        "clarity": 5,
+        "payoff": 5,
+        "visuals": 4,
+        "loop": 5,
+        "accuracy": 5
+      },
+      "notes": {
+        "hook": "An intriguing and powerful opening statement that immediately captures attention with the concept of a sound crossing an ocean.",
+        "clarity": "The script progresses logically from the eruption and its atmospheric effects back to the sheer distance of the sound itself.",
+        "payoff": "The narrative delivers a satisfying payoff by revealing the specific places where this historic sound was actually heard.",
+        "visuals": "Most archival images are highly relevant and evocative, though the reuse of London sky sketches for Australia is a minor mismatch.",
+        "loop": "Perfect seamless transition from the final line back into the first beat.",
+        "accuracy": "Every fact, including the disputed distances and temperature details, complies perfectly with the research claims and guidelines."
+      },
+      "frames": [
+        {
+          "beat": 6,
+          "problem": "The image shows William Ascroft's pastel sketches of London's crimson skies, which does not fit the beat's focus on central Australia hearing the rumble."
+        }
+      ],
+      "speech": [],
+      "rewrite": [],
+      "better_than_last": "This script manages a cleaner thematic loop than episode 054, wrapping the global geographic effects of the eruption back into the primary auditory hook.",
+      "judge": "gemini-3.5-flash",
+      "passed": false
+    },
+    {
+      "at": "2026-10-05T13:24:40+05:30",
+      "check": {
+        "duration": 31.03,
+        "words": 66,
+        "integrated_lufs": -14.4,
+        "true_peak_dbfs": -1.8,
+        "warnings": [],
+        "speech_differences": [
+          "'a' heard as '(nothing)'",
+          "'rodrigues' heard as 'rodriguez' after 'indian ocean on'",
+          "base.en: 'rodrigues' heard as 'rodriguez' after 'indian ocean on'"
+        ],
+        "speech_error": null,
+        "sources": [
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons"
+        ],
+        "speech_verification": {
+          "heard": "single sound once traveled across an entire ocean. Yet on August 27, 1883, the volcano Krakatoa erupted. Its 40-meter tsunamis obliterated 165 coastal towns. The atmospheric shockwaves circled the entire globe seven times. Spectacular crimson skies triggered false fire alarms in New York. Thousands of kilometers away in central Australia, people heard the rumble. Across the Indian Ocean on Rodriguez, they heard the blast.",
+          "model": "small.en",
+          "media_sha256": "91905a12721cbe2be193504ea976c2a55924eddcfe391f3850efd349f378a452",
+          "primary_differences": [
+            "'a' heard as '(nothing)'",
+            "'rodrigues' heard as 'rodriguez' after 'indian ocean on'"
+          ],
+          "differences": [
+            "'a' heard as '(nothing)'",
+            "'rodrigues' heard as 'rodriguez' after 'indian ocean on'",
+            "base.en: 'rodrigues' heard as 'rodriguez' after 'indian ocean on'"
+          ],
+          "corroboration": {
+            "model": "base.en",
+            "heard": "single-sound once traveled across an entire ocean. Yet on August 27, 1883, the volcano Krakatoa erupted. Its 40 meter tsunamis obliterated 165 coastal towns. The atmospheric shock waves circled the entire globe seven times. Spectacular crimson skies triggered false fire alarms in New York. Thousands of kilometers away in central Australia, people heard the rumble. Across the Indian Ocean on Rodriguez, They heard the blast.",
+            "differences": [
+              "'a' heard as '(nothing)'",
+              "'rodrigues' heard as 'rodriguez' after 'indian ocean on'"
+            ],
+            "resolved": []
+          }
+        }
+      },
+      "media_sha256": "91905a12721cbe2be193504ea976c2a55924eddcfe391f3850efd349f378a452",
+      "scores": {
+        "hook": 5,
+        "clarity": 3,
+        "payoff": 4,
+        "visuals": 3,
+        "loop": 5,
+        "accuracy": 5
+      },
+      "notes": {
+        "hook": "Highly intriguing hook that immediately establishes a sense of wonder and scale.",
+        "clarity": "The transition word 'Yet' in beat 2 introduces a confusing contradiction, and jumping from sound to tsunamis/skies before returning to sound hurts narrative flow.",
+        "payoff": "Nicely resolves the hook by naming the specific island where the sound was heard across the ocean.",
+        "visuals": "Using a sketch of London's sunset sky in beat 6 does not match the text describing people hearing a rumble in central Australia.",
+        "loop": "Perfect, seamless loop that connects the final line back into the opening hook.",
+        "accuracy": "Excellently researched and worded, perfectly adhering to all claims and the disputed guidelines."
+      },
+      "frames": [
+        {
+          "beat": 6,
+          "problem": "The image depicts William Ascroft's sketches of London sunset skies, which is off-topic and does not fit the text about hearing a rumble in central Australia."
+        }
+      ],
+      "speech": [],
+      "rewrite": [
+        "In beat 2, change 'Yet, on August 27, 1883, the volcano Krakatoa erupted.' to 'On August 27, 1883, the volcano Krakatoa erupted.' to fix the confusing logical transition."
+      ],
+      "better_than_last": "This Short features a far stronger hook and more seamless loop than episode 54.",
+      "judge": "gemini-3.5-flash",
+      "passed": false
+    }
+  ],
+  "best_round": 2,
+  "verdict": "rejected",
+  "reason": "low scores: clarity, visuals; 1 frame problems",
+  "rejected_at": "2026-10-05T13:24:40+05:30"
+}

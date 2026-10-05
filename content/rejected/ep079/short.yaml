@@ -1,0 +1,180 @@
+id: ep079
+title: The Secret Pearl Harbor Disaster They Hid For Decades ⚠️
+series: Warnings Ignored
+description: On May 21, 1944, a massive explosion at Pearl Harbor's West Loch killed 163 men just before a secret invasion,
+  but the military kept the tragedy classified for decades.
+sources:
+- https://web.archive.org/web/20100411053913/http://www.nps.gov/archive/usar/scrs/scrs2z.htm
+- https://www.military.com/daily-news/investigations-and-features/2026/01/14/pearl-harbors-forgotten-1944-disaster-killed-least-163-men-and-reformed-navy-safety-measures.html
+- https://en.wikipedia.org/wiki/West_Loch_disaster
+- https://www.stripes.com/history/2024-05-22/west-loch-disaster-pearl-harbor-13939634.html
+hashtags:
+- '#history'
+- '#pearlharbor'
+- '#ww2'
+tags:
+- West Loch disaster
+- Pearl Harbor
+- World War II
+- military history
+- LST-353
+- US Navy
+voice:
+  engine: kokoro
+  voice: am_fenrir
+  speed: 1.15
+beats:
+- text: Twenty-nine invasion ships sat packed beam-to-beam in Pearl Harbor.
+  emphasis:
+  - packed beam-to-beam
+  - Pearl Harbor
+  visual:
+    source: url
+    url: https://upload.wikimedia.org/wikipedia/commons/b/b2/USS_LST-466_Cape_Sudest_New_Guinea_12_March_1944.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    credit:
+      source: Wikimedia Commons
+      title: USS LST-466 Cape Sudest New Guinea 12 March 1944.jpg
+      credit: US Navy
+      license: Public domain
+      url: https://commons.wikimedia.org/wiki/File:USS_LST-466_Cape_Sudest_New_Guinea_12_March_1944.jpg
+    fallbacks:
+    - color
+    motion: zoom_out
+    focus_x: 0.8
+    focus_y: 0.6
+    box:
+    - 0.2
+    - 0.45
+    - 1.0
+    - 0.75
+- text: High-octane gasoline sat on deck next to ammunition.
+  emphasis:
+  - High-octane gasoline
+  - ammunition
+  visual:
+    source: url
+    url: https://live.staticflickr.com/1490/26073291543_90c8780895_b.jpg
+    credit:
+      source: Flickr via Openverse
+      title: Invasion of Cape Gloucester 1944 085 of 91
+      credit: rich701
+      license: CC BY 2.0
+      url: https://www.flickr.com/photos/63490482@N03/26073291543
+    fallbacks:
+    - color
+    motion: pan_left
+    focus_x: 0.5
+    focus_y: 0.5
+- text: At 3:08 p.m., a blast ripped through LST-353.
+  emphasis:
+  - blast
+  - LST-353
+  sfx: whoosh
+  visual:
+    source: url
+    url: https://upload.wikimedia.org/wikipedia/commons/6/6c/USS_LST-480_3.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    credit:
+      source: Wikimedia Commons
+      title: USS LST-480 3.jpg
+      credit: SC 185701, Photograph from the Army Signal Corps Collection in the U.S. National Archives.
+      license: Public domain
+      url: https://commons.wikimedia.org/wiki/File:USS_LST-480_3.jpg
+    fallbacks:
+    - card
+    - color
+    motion: pan_right
+    focus_x: 0.65
+    focus_y: 0.35
+    box:
+    - 0.4
+    - 0.0
+    - 0.95
+    - 0.65
+    card:
+      kind: dateline
+      big: 3:08 PM
+      small: LST-353 Explodes
+- text: Fires jumped ship to ship, sinking six vessels.
+  emphasis:
+  - sinking
+  - six vessels
+  sfx: pop
+  pause_after: 0.4
+  visual:
+    source: url
+    url: https://upload.wikimedia.org/wikipedia/commons/3/31/USS_LST-480_fire2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    credit:
+      source: Wikimedia Commons
+      title: USS LST-480 fire2.jpg
+      credit: Official U.S. Navy Photograph, now in the collections of the National Archives.
+      license: Public domain
+      url: https://commons.wikimedia.org/wiki/File:USS_LST-480_fire2.jpg
+    fallbacks:
+    - color
+    motion: zoom_in
+    focus_x: 0.75
+    focus_y: 0.45
+    box:
+    - 0.4
+    - 0.1
+    - 0.95
+    - 0.6
+- text: Officially, 163 died—about a third of them Black segregated soldiers—but researchers estimate hundreds more.
+  emphasis:
+  - 163 died
+  - segregated soldiers
+  sfx: riser
+  visual:
+    source: url
+    url: https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1e/African-americans-wwii-015.jpg/1280px-African-americans-wwii-015.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
+    credit:
+      source: Wikimedia Commons
+      title: African-americans-wwii-015.jpg
+      credit: Lt. Schuman
+      license: Public domain
+      url: https://commons.wikimedia.org/wiki/File:African-americans-wwii-015.jpg
+    fallbacks:
+    - card
+    - color
+    motion: pan_right
+    focus_x: 0.45
+    focus_y: 0.52
+    card:
+      kind: fact
+      big: 163 Dead
+      small: official casualties
+- text: The military classified the tragedy until 1960.
+  emphasis:
+  - classified
+  - until 1960
+  sfx: whoosh
+  visual:
+    source: url
+    url: https://thumb.wikimedia.org/wikipedia/commons/thumb/9/91/DOD_Dir_5200.9_declassification.png/960px-DOD_Dir_5200.9_declassification.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
+    credit:
+      source: Wikimedia Commons
+      title: DOD Dir 5200.9 declassification.png
+      credit: Marine Corps School Quantico
+      license: Public domain
+      url: https://commons.wikimedia.org/wiki/File:DOD_Dir_5200.9_declassification.png
+    fallbacks:
+    - card
+    - color
+    motion: pan_left
+    focus_x: 0.4
+    focus_y: 0.78
+    card:
+      kind: fact
+      big: CLASSIFIED
+      small: kept secret until 1960
+- text: Today, only a single rusting bow still sits there.
+  emphasis:
+  - rusting bow
+  - sits there
+  visual:
+    reuse: 1
+    motion: zoom_in
+    focus_x: 0.8
+    focus_y: 0.6
+depth_motion: true
+hook_text: SECRET PEARL HARBOR BLAST

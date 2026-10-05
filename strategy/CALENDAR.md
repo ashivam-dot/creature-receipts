@@ -51,10 +51,10 @@ event is told for its gore. Space topics belong to the sister channel Universe R
 
 ### The Last Hours
 
-- Sinking of the Titanic (1912): the lookouts had no binoculars, because the key to their locker left the ship with an officer removed before the voyage
+- Sinking of the Titanic (1912): the lookouts had no binoculars, because the key to their locker left the ship with an officer removed before the voyage — making (ep081)
 - Sinking of the RMS Lusitania (1915): the liner sank in 18 minutes, after a German warning ran next to its own sailing notice in New York newspapers
 - Hindenburg disaster (1937): the airship burned in about half a minute, yet most of the people aboard survived
-- 1883 eruption of Krakatoa: its final explosion was heard thousands of kilometers away, on Rodrigues island in the Indian Ocean — making (ep078)
+- 1883 eruption of Krakatoa: its final explosion was heard thousands of kilometers away, on Rodrigues island in the Indian Ocean — parked (ep078)
 - 1906 San Francisco earthquake: the fires afterwards did more damage than the shaking
 - Halifax Explosion (1917): a burning munitions ship blew up in the harbor, the largest man-made explosion before the atomic bomb
 - MV Wilhelm Gustloff (1945): its sinking in the Baltic was the deadliest loss of a single ship in history
@@ -73,14 +73,14 @@ event is told for its gore. Space topics belong to the sister channel Universe R
 - Burning of Smyrna (1922): the fire engulfed the city as refugees crowded the quay; its origin and foreign naval response require careful source review — making (ep058)
 - Wanggongchang Explosion (1626): a massive unexplained blast rocked Beijing, stripping people of their clothes and leaving a silent void — making (ep068)
 - Great Blizzard of 1888 (1888): commuters stepped into mild spring weather before a sudden whiteout froze New York City in its tracks — done (ep070)
-- Great Siege of Malta (1565): a handful of knights held off an invading armada against impossible odds, surviving until relief finally arrived — making (ep066)
+- Great Siege of Malta (1565): a handful of knights held off an invading armada against impossible odds, surviving until relief finally arrived — done (ep066)
 - Schoolhouse Blizzard (1888): a warm morning lured children to school without coats before a wall of ice struck at recess — making (ep060)
 - Battle of Myeongnyang (1597): Admiral Yi defeated 133 Japanese warships with only 13 vessels by using a whirlpool-filled strait — dropped (ep062)
 - Quintinshill rail disaster (1915): two signalmen changing shifts late forgot a train on the main line, causing the UK's deadliest rail crash — parked (ep076)
 - Siege of Sidney Street (1911): Winston Churchill personally oversaw the gunfight and ordered firefighters not to save the burning building
 - Gresford disaster (1934): hundreds of miners died because they had swapped shifts to see a football match, putting extra men in the pit
 - Sinking of the SS Arctic (1854): the ship collided in fog and the officers took the lifeboats first, leaving the passengers behind
-- 1868 Arica earthquake (1868): a massive tsunami carried the USS Wateree two miles inland and left it sitting perfectly upright in the middle of the desert
+- 1868 Arica earthquake (1868): a massive tsunami carried the USS Wateree two miles inland and left it sitting perfectly upright in the middle of the desert — making (ep083)
 - 1944 Bombay Docks explosion (1944): a fire aboard the *Fort Stikine* preceded two blasts at Victoria Dock; India observes April 14 as Fire Services Day to remember the firefighters who died — research lead only; ignition, death toll and image rights need review
 - Tauredunum event (563): a mountain collapse into Lake Geneva created a massive inland tsunami that swept over the city walls of Geneva miles away
 - Brescia explosion (1769): lightning struck a church bastion storing 90 tons of gunpowder, causing a blast that leveled one-sixth of the city
@@ -128,13 +128,13 @@ event is told for its gore. Space topics belong to the sister channel Universe R
 - Earthquake Synod (1382): when a violent earthquake interrupted a trial to condemn a religious reformer, both the prosecutors and the accused claimed God sent the quake to support them
 - Siege of Pembroke (1648): an impregnable fortress was forced to surrender after a defector revealed the exact location of the secret underground pipe supplying all their water
 - Oppau explosion (1921): a routine blast to break up caked fertilizer preceded a stockpile detonation — done (ep072)
-- Mann Gulch fire (1949): foreman Wag Dodge set an escape fire as his crew fled the advancing wildfire — making (ep074)
+- Mann Gulch fire (1949): foreman Wag Dodge set an escape fire as his crew fled the advancing wildfire — parked (ep074)
 
 ### Lost Cities
 
 - Pompeii: the famous body casts are plaster poured into hollows the victims left in the ash, a technique begun by Giuseppe Fiorelli in 1863 — parked (ep028)
 - Herculaneum: for centuries it was thought its people escaped, until hundreds of skeletons were found in the boathouses by the shore in the 1980s
-- Akrotiri (prehistoric city): a Bronze Age town buried by the Minoan eruption where almost no bodies have been found, as if its people had warning
+- Akrotiri (prehistoric city): a Bronze Age town buried by the Minoan eruption where almost no bodies have been found, as if its people had warning — making (ep082)
 - Helike: a Greek city that sank in a single night in 373 BC, after an earthquake and a wave
 - Thonis-Heracleion: Egypt's great port vanished under the sea and was only found by divers in 2000
 - Port Royal (1692): an earthquake sent much of the pirate haven called "the wickedest city on Earth" into the sea
@@ -188,7 +188,7 @@ event is told for its gore. Space topics belong to the sister channel Universe R
 - Library of Alexandria: it wasn't lost in one great fire, but declined over centuries — dropped (ep071)
 - Reichstag fire (1933): the German parliament building burned just weeks after Hitler took power, instantly triggering emergency decrees that ended democracy — parked (ep036)
 - Ashanti Empire (1900): the Golden Stool was demanded by the British governor who did not know he was asking to sit on a sacred spirit shrine, sparking an uprising
-- Siege of the Sogdian Rock (327 BC): Alexander the Great's soldiers used iron tent pegs as pitons to scale a 'vertical' cliff at night to capture an unreachable fortress
+- Siege of the Sogdian Rock (327 BC): Alexander the Great's soldiers used iron tent pegs as pitons to scale a 'vertical' cliff at night to capture an unreachable fortress — making (ep080)
 - Siege of Kamakura (1333): the commander threw his golden sword into the sea as an offering, and the tide instantly receded to reveal a path past the city’s sea walls
 - Fall of the Qing Dynasty (1912): the last Emperor of China, once worshipped as a living god, ended his life as a quiet citizen working as a gardener in his former palace
 - Fall of Krak des Chevaliers (1271): the impregnable Crusader stronghold finally surrendered after the Mamluk Sultan tricked the garrison with a forged letter from their commander
@@ -218,7 +218,7 @@ event is told for its gore. Space topics belong to the sister channel Universe R
 - Battle of Cartagena de Indias (1741): English makers struck premature victory medals, but the British siege failed — making (ep055)
 - Whydah Gally (1717): a pirate slave ship sank in a violent nor'easter right off Cape Cod, carrying a fortune in stolen treasure that lay buried for centuries
 - Saint-Michel-de-Maurienne derailment (1917): a wartime troop train derailed on an Alpine descent; the braking decisions and death toll require primary-source review — making (ep057)
-- West Loch disaster (1944): a massive explosion at Pearl Harbor killed 163 men just before a secret invasion, but the tragedy was kept classified for decades — making (ep079)
+- West Loch disaster (1944): a massive explosion at Pearl Harbor killed 163 men just before a secret invasion, but the tragedy was kept classified for decades — parked (ep079)
 - Great Plague of Marseille (1720): city officials ignored a plague warning on a merchant ship because they didn't want to delay its cargo of silk for a local fair
 - Manchurian plague (1910): a doctor's warning that the plague was airborne was mocked by a colleague who refused to wear a mask and died of the infection days later
 - Siege of Svetigrad (1448): an impregnable mountain fortress fell after defenders refused to drink from their only water well because a dead dog was thrown inside

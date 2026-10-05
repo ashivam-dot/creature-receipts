@@ -1,5 +1,5 @@
 id: ep074
-title: Why Did One Firefighter Start a Second Fire? 😳
+title: Why Did One Firefighter Start a Second Fire? 🤯
 series: The Last Hours
 description: On August 5, 1949, fifteen smokejumpers faced a sudden blow-up on the Mann Gulch fire in Montana's Helena National
   Forest.
@@ -56,7 +56,7 @@ beats:
     motion: zoom_in
 - text: Fifteen smokejumpers arrived to combat the blaze.
   emphasis:
-  - fifteen smokejumpers
+  - Fifteen smokejumpers
   visual:
     source: url
     url: https://thumb.wikimedia.org/wikipedia/commons/thumb/6/63/Smokejumper_trainees_%2823735091831%29.jpg/960px-Smokejumper_trainees_%2823735091831%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
@@ -73,8 +73,8 @@ beats:
     focus_y: 0.5
 - text: High winds suddenly expanded the fire and cut their route.
   emphasis:
-  - suddenly expanded
-  sfx: whoosh
+  - cut their route
+  sfx: riser
   visual:
     source: url
     url: https://upload.wikimedia.org/wikipedia/commons/4/49/Pyrocumulus_Cloud_Station_Fire_08312009_Aerial_View.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
@@ -89,29 +89,26 @@ beats:
     motion: pan_up
     focus_x: 0.5
     focus_y: 0.5
-- text: Dodge stepped into his burn area and lay down quietly.
+- text: Dodge lit an escape fire, lay down in the burned grass, and called for his men.
   emphasis:
-  - burn area
-  sfx: riser
-  pause_after: 0.4
+  - escape fire
   visual:
     source: url
-    url: https://thumb.wikimedia.org/wikipedia/commons/thumb/3/38/Looking_east_at_Mann_Gulch_5.1.13_%288902730917%29.jpg/1280px-Looking_east_at_Mann_Gulch_5.1.13_%288902730917%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
+    url: https://thumb.wikimedia.org/wikipedia/commons/thumb/9/90/Looking_down_Mann_Gulch_on_left_%288902721589%29.jpg/1280px-Looking_down_Mann_Gulch_on_left_%288902721589%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
     credit:
       source: Wikimedia Commons
-      title: Looking east at Mann Gulch 5.1.13 (8902730917).jpg
+      title: Looking down Mann Gulch on left (8902721589).jpg
       credit: Forest Service Northern Region from Missoula, MT, USA
       license: Public domain
-      url: https://commons.wikimedia.org/wiki/File:Looking_east_at_Mann_Gulch_5.1.13_(8902730917).jpg
+      url: https://commons.wikimedia.org/wiki/File:Looking_down_Mann_Gulch_on_left_(8902721589).jpg
     fallbacks:
     - color
     motion: pan_right
     focus_x: 0.5
     focus_y: 0.5
-- text: His fleeing crew ran past him and were overtaken by flames.
+- text: Amid the roaring confusion, his crew kept running uphill.
   emphasis:
-  - overtaken by flames
-  sfx: pop
+  - running uphill
   visual:
     source: url
     url: https://upload.wikimedia.org/wikipedia/commons/e/e1/MannGulchFire.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
@@ -126,9 +123,11 @@ beats:
     motion: zoom_in
     focus_x: 0.5
     focus_y: 0.5
-- text: Foreman Wag Dodge survived a raging wildfire by starting his own.
+- text: Only two smokejumpers found shelter in the rocks.
   emphasis:
-  - survived a raging wildfire
+  - shelter in the rocks
+  sfx: pop
+  pause_after: 0.4
   visual:
     reuse: 1
     motion: zoom_out

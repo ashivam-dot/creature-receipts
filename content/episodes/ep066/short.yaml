@@ -53,10 +53,10 @@ beats:
       kind: fact
       big: HEADS FIRED
       small: FROM CANNONS
-- text: In 1565, 40,000 Ottoman soldiers arrived to conquer Malta.
+- text: In 1565, between twenty-three and forty-eight thousand Ottoman invaders arrived to conquer Malta.
   emphasis:
-  - 40,000
-  - Malta
+  - forty-eight thousand
+  - conquer Malta
   sfx: whoosh
   visual:
     source: url
@@ -77,21 +77,21 @@ beats:
       kind: dateline
       big: '1565'
       small: MALTA
-- text: Grand Master Valette ordered his men to poison their own wells.
+- text: To prepare, the Grand Master poisoned his own wells.
   emphasis:
-  - poison
+  - poisoned
   - wells
   visual:
     source: card
     card:
       kind: fact
-      big: BITTER HERBS
+      big: PREPARATION
       small: WELLS POISONED
     motion: zoom_in
-- text: When Fort Saint Elmo fell, invaders floated decapitated knights across the bay.
+- text: After Fort Saint Elmo fell, Ottomans floated decapitated knights across the harbor.
   emphasis:
   - Fort Saint Elmo
-  - floated
+  - decapitated knights
   sfx: riser
   visual:
     source: url
@@ -106,45 +106,45 @@ beats:
     - card
     - color
     motion: pan_left
-    focus_x: 0.25
-    focus_y: 0.35
-    box:
-    - 0.05
-    - 0.15
-    - 0.35
-    - 0.65
-    card:
-      kind: fact
-      big: FORT ST. ELMO
-      small: FELL JUNE 23
-- text: Valette retaliated by beheading his prisoners and firing them back.
-  emphasis:
-  - beheading
-  - firing them back
-  sfx: pop
-  pause_after: 0.4
-  visual:
-    source: url
-    url: https://thumb.wikimedia.org/wikipedia/commons/thumb/7/78/Batterie_alle_poste_di_Castiglia_e_d%27Alemagna._09.07._1565.png/1280px-Batterie_alle_poste_di_Castiglia_e_d%27Alemagna._09.07._1565.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
-    credit:
-      source: Wikimedia Commons
-      title: Batterie alle poste di Castiglia e d'Alemagna. 09.07. 1565.png
-      credit: Mattia Perez d'Aleccio
-      license: Public domain
-      url: https://commons.wikimedia.org/wiki/File:Batterie_alle_poste_di_Castiglia_e_d%27Alemagna._09.07._1565.png
-    fallbacks:
-    - card
-    - color
-    motion: pan_right
     focus_x: 0.5
     focus_y: 0.5
     card:
       kind: fact
+      big: FORT ST. ELMO
+      small: FELL JUNE 23
+- text: Valette retaliated by firing his prisoners' heads back.
+  emphasis:
+  - retaliated
+  - firing
+  sfx: pop
+  pause_after: 0.4
+  visual:
+    source: url
+    url: https://thumb.wikimedia.org/wikipedia/commons/thumb/4/44/Portret_van_Jean_Parisot_de_La_Valette%2C_Grootmeester_van_de_Maltheser_ridders%2C_RP-P-1964-510.jpg/1920px-Portret_van_Jean_Parisot_de_La_Valette%2C_Grootmeester_van_de_Maltheser_ridders%2C_RP-P-1964-510.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
+    credit:
+      source: Wikimedia Commons
+      title: Portret van Jean Parisot de La Valette, Grootmeester van de Maltheser ridders, RP-P-1964-510.jpg
+      credit: Rijksmuseum
+      license: CC0
+      url: https://commons.wikimedia.org/wiki/File:Portret_van_Jean_Parisot_de_La_Valette,_Grootmeester_van_de_Maltheser_ridders,_RP-P-1964-510.jpg
+    fallbacks:
+    - card
+    - color
+    motion: pan_down
+    focus_x: 0.58
+    focus_y: 0.35
+    box:
+    - 0.25
+    - 0.2
+    - 0.85
+    - 0.75
+    card:
+      kind: fact
       big: RETALIATION
       small: IN CANNONBALLS
-- text: The few survivors held until relief arrived in September.
+- text: The garrison held until relief arrived in September.
   emphasis:
-  - survivors
+  - held
   - September
   sfx: whoosh
   visual:
@@ -161,9 +161,9 @@ beats:
     motion: pan_left
     focus_x: 0.5
     focus_y: 0.5
-- text: The conflict began when the massive armada arrived.
+- text: But the brutal siege began when the enemy armada arrived.
   emphasis:
-  - massive armada
+  - armada arrived
   visual:
     reuse: 1
     motion: zoom_out

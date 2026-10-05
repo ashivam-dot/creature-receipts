@@ -62,7 +62,111 @@
       "better_than_last": "More cohesive narrative structure than the Prague rescue episode.",
       "judge": "gemini-3-flash-preview",
       "passed": false
+    },
+    {
+      "at": "2026-10-05T13:21:40+05:30",
+      "check": {
+        "duration": 29.43,
+        "words": 70,
+        "integrated_lufs": -14.4,
+        "true_peak_dbfs": -1.7,
+        "warnings": [],
+        "speech_differences": [],
+        "speech_error": null,
+        "sources": [
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "designed card",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons"
+        ],
+        "speech_verification": {
+          "heard": "Jean de Valette fired the heads of prisoners from his cannons. In 1565, 40,000 Ottoman soldiers arrived to conquer Malta. Grand Master Valette ordered his men to poison their own wells. When Fort Saint Elmo fell, invaders floated decapitated knights across the bay. Valette retaliated by beheading his prisoners and firing them back. The few survivors held until relief arrived in September. The conflict began when the massive armada arrived.",
+          "model": "small.en",
+          "media_sha256": "e40842d36205f46f4a16ef130ac7cb79077a0043ed6fd5456231172c8f80edb2",
+          "primary_differences": [],
+          "differences": []
+        }
+      },
+      "media_sha256": "e40842d36205f46f4a16ef130ac7cb79077a0043ed6fd5456231172c8f80edb2",
+      "scores": {
+        "hook": 5,
+        "clarity": 4,
+        "payoff": 5,
+        "visuals": 5,
+        "loop": 5,
+        "accuracy": 3
+      },
+      "notes": {
+        "hook": "An incredibly shocking and graphic hook that immediately stops the scroll.",
+        "clarity": "The narrative flows reasonably well, though the timeline jumps to prioritize the hook.",
+        "payoff": "The brutal provocation in beat 4 perfectly sets up and pays off the retaliation of the hook.",
+        "visuals": "Outstanding use of matching 16th-century historical paintings and engravings.",
+        "loop": "Perfect grammatical and visual transition from the final beat back into the hook.",
+        "accuracy": "Presents the disputed Ottoman troop count of 40,000 as a settled fact rather than acknowledging the range of estimates."
+      },
+      "frames": [],
+      "speech": [],
+      "rewrite": [
+        "Change Beat 2 to: 'In 1565, between twenty-three and forty-eight thousand Ottoman invaders arrived to conquer Malta.'"
+      ],
+      "better_than_last": "This Short delivers a much more visceral and direct payoff to its gruesome hook than the Fetterman Fight episode.",
+      "judge": "gemini-3.5-flash",
+      "passed": false
+    },
+    {
+      "at": "2026-10-05T13:26:40+05:30",
+      "check": {
+        "duration": 29.76,
+        "words": 71,
+        "integrated_lufs": -14.4,
+        "true_peak_dbfs": -1.8,
+        "warnings": [],
+        "speech_differences": [],
+        "speech_error": null,
+        "sources": [
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "designed card",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons"
+        ],
+        "speech_verification": {
+          "heard": "Jean de Valette fired the heads of prisoners from his cannons. In 1565, between 23 and 48 thousand Ottoman invaders arrived to conquer Malta. To prepare, the Grand Master poisoned his own wells. After Fort Saint Elmo fell, Ottomans floated decapitated knights across the harbor. Valette retaliated by firing his prisoners' heads back. The garrison held until relief arrived in September. But the brutal siege began when the enemy armada arrived.",
+          "model": "small.en",
+          "media_sha256": "d40a2910b1dd66fad76bea8ce15594542e018c63731487f52867e4a67bd5a108",
+          "primary_differences": [],
+          "differences": []
+        }
+      },
+      "media_sha256": "d40a2910b1dd66fad76bea8ce15594542e018c63731487f52867e4a67bd5a108",
+      "scores": {
+        "hook": 5,
+        "clarity": 5,
+        "payoff": 4,
+        "visuals": 5,
+        "loop": 5,
+        "accuracy": 5
+      },
+      "notes": {
+        "hook": "The graphic hook of decapitated heads fired from cannons immediately grabs attention.",
+        "clarity": "Chronology of the siege is easy to follow, detailing preparation, conflict, escalation, and relief.",
+        "payoff": "The setup of the conflict pays off well, though the hook reveals the peak of the violence early on.",
+        "visuals": "All frames are excellent, authentic historical images of high relevance and clarity.",
+        "loop": "The final line seamlessly loops back into the first line, creating a perpetual narrative cycle.",
+        "accuracy": "Perfect alignment with the claims, including the carefully balanced army size estimates from the disputed notes."
+      },
+      "frames": [],
+      "speech": [],
+      "rewrite": [],
+      "better_than_last": "This episode handles disputed historical numbers much more gracefully than previous ones by directly integrating the estimated range into the narration.",
+      "judge": "gemini-3.5-flash",
+      "passed": true
     }
   ],
-  "best_round": 1
+  "best_round": 3
 }

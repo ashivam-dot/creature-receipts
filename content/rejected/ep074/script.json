@@ -15,7 +15,7 @@
   ],
   "hook_style": "contradiction",
   "structure": "story",
-  "title": "Why Did One Firefighter Start a Second Fire? 😳",
+  "title": "Why Did One Firefighter Start a Second Fire? 🤯",
   "description": "On August 5, 1949, fifteen smokejumpers faced a sudden blow-up on the Mann Gulch fire in Montana's Helena National Forest.",
   "hashtags": [
     "#history",
@@ -84,7 +84,7 @@
     {
       "text": "Fifteen smokejumpers arrived to combat the blaze.",
       "emphasis": [
-        "fifteen smokejumpers"
+        "Fifteen smokejumpers"
       ],
       "sfx": "none",
       "pause_after": 0.12,
@@ -109,9 +109,9 @@
     {
       "text": "High winds suddenly expanded the fire and cut their route.",
       "emphasis": [
-        "suddenly expanded"
+        "cut their route"
       ],
-      "sfx": "whoosh",
+      "sfx": "riser",
       "pause_after": 0.12,
       "claims": [
         5
@@ -132,13 +132,14 @@
       }
     },
     {
-      "text": "Dodge stepped into his burn area and lay down quietly.",
+      "text": "Dodge lit an escape fire, lay down in the burned grass, and called for his men.",
       "emphasis": [
-        "burn area"
+        "escape fire"
       ],
-      "sfx": "riser",
-      "pause_after": 0.4,
+      "sfx": "none",
+      "pause_after": 0.12,
       "claims": [
+        6,
         7
       ],
       "visual": "photograph of rocky mountain ridge landscape, Montana",
@@ -157,14 +158,14 @@
       }
     },
     {
-      "text": "His fleeing crew ran past him and were overtaken by flames.",
+      "text": "Amid the roaring confusion, his crew kept running uphill.",
       "emphasis": [
-        "overtaken by flames"
+        "running uphill"
       ],
-      "sfx": "pop",
+      "sfx": "none",
       "pause_after": 0.12,
       "claims": [
-        4
+        7
       ],
       "visual": "photograph of historical wildfire report document",
       "subjects": [
@@ -182,15 +183,14 @@
       }
     },
     {
-      "text": "Foreman Wag Dodge survived a raging wildfire by starting his own.",
+      "text": "Only two smokejumpers found shelter in the rocks.",
       "emphasis": [
-        "survived a raging wildfire"
+        "shelter in the rocks"
       ],
-      "sfx": "none",
-      "pause_after": 0.12,
+      "sfx": "pop",
+      "pause_after": 0.4,
       "claims": [
-        4,
-        6
+        8
       ],
       "visual": "photograph of smokejumpers in Montana, 1949",
       "subjects": [
@@ -210,5 +210,5 @@
   ],
   "hook_text": "STARTING FIRE TO SURVIVE",
   "loop": true,
-  "better_than_last": "This version reduces the total spoken word count to 57 words by trimming unnecessary filler in the middle beats, perfectly fitting the 55-72 word constraint while maintaining narrative weight and a seamless loop."
+  "better_than_last": "Updated beat 5 per reviewer instructions to clearly depict Dodge igniting the escape fire and calling for his men, maintaining an exact 69-word rhythm that seamlessly loops."
 }

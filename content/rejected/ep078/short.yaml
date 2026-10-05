@@ -26,21 +26,21 @@ voice:
   voice: am_fenrir
   speed: 1.15
 beats:
-- text: Most believe no sound can travel across an entire ocean.
+- text: A single sound once traveled across an entire ocean.
   emphasis:
   - entire ocean
   visual:
     source: url
-    url: https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8b/Admiralty_Chart_No_748b_Indian_Ocean_northern_portion%2C_Published_1870.jpg/3840px-Admiralty_Chart_No_748b_Indian_Ocean_northern_portion%2C_Published_1870.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
+    url: https://thumb.wikimedia.org/wikipedia/commons/thumb/4/49/Krakatoa_eruption_lithograph.jpg/1920px-Krakatoa_eruption_lithograph.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
     credit:
       source: Wikimedia Commons
-      title: Admiralty Chart No 748b Indian Ocean northern portion, Published 1870.jpg
-      credit: United Kingdom Hydrographic Office
+      title: Krakatoa eruption lithograph.jpg
+      credit: 'Lithograph: Parker & Coward, Britain;'
       license: Public domain
-      url: https://commons.wikimedia.org/wiki/File:Admiralty_Chart_No_748b_Indian_Ocean_northern_portion,_Published_1870.jpg
+      url: https://commons.wikimedia.org/wiki/File:Krakatoa_eruption_lithograph.jpg
     fallbacks:
     - color
-    motion: pan_right
+    motion: pan_down
     focus_x: 0.5
     focus_y: 0.5
 - text: Yet, on August 27, 1883, the volcano Krakatoa erupted.
@@ -93,8 +93,17 @@ beats:
   emphasis:
   - seven times
   visual:
-    reuse: 3
-    motion: zoom_in
+    source: url
+    url: https://upload.wikimedia.org/wikipedia/commons/7/77/Royal_Society_1988_Krakatoa_Plate_VII.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    credit:
+      source: Wikimedia Commons
+      title: Royal Society 1988 Krakatoa Plate VII.png
+      credit: Royal Society (Great Britain). Krakatoa Committee; Symons, G. J. (George James), 1838-1900, ed;
+      license: Public domain
+      url: https://commons.wikimedia.org/wiki/File:Royal_Society_1988_Krakatoa_Plate_VII.png
+    fallbacks:
+    - color
+    motion: pan_up
     focus_x: 0.5
     focus_y: 0.5
 - text: Spectacular crimson skies triggered false fire alarms in New York.
@@ -120,7 +129,7 @@ beats:
       kind: fact
       big: New York
       small: False fire alarms
-- text: Deep in the Australian outback, people heard the rumble.
+- text: Thousands of kilometers away in central Australia, people heard the rumble.
   emphasis:
   - heard the rumble
   sfx: riser

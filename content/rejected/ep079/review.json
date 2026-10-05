@@ -1,0 +1,262 @@
+{
+  "rounds": [
+    {
+      "at": "2026-10-05T13:20:45+05:30",
+      "check": {
+        "duration": 31.16,
+        "words": 68,
+        "integrated_lufs": -14.4,
+        "true_peak_dbfs": -1.8,
+        "warnings": [],
+        "speech_differences": [
+          "'3 8' heard as '3.08' after 'mortar ammunition at'",
+          "'lst' heard as 'lsd' after 'blast ripped through'",
+          "base.en: 'octane' heard as 'octin' after 'pearl harbor high'",
+          "base.en: '3 8 p m' heard as '3.08 pm' after 'mortar ammunition at'",
+          "base.en: 'lst' heard as 'lsd' after 'blast ripped through'",
+          "base.en: 'fires' heard as 'buyers' after 'through lst 353'",
+          "base.en: 'yet' heard as 'it' after 'it until 1960'"
+        ],
+        "speech_error": null,
+        "sources": [
+          "Wikimedia Commons",
+          "Flickr via Openverse",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons"
+        ],
+        "speech_verification": {
+          "heard": "Twenty-nine secret invasion ships sat packed beam-to-beam at Pearl Harbor. High-octane gasoline sat on deck next to mortar ammunition. At 3.08 p.m., a sudden blast ripped through LSD-353. Fires jumped ship to ship, sinking six military vessels. About one-third of the 163 dead were black segregated soldiers. The military quickly classified the tragedy and buried it until 1960. Yet today, only a single rusting bow still sits there.",
+          "model": "small.en",
+          "media_sha256": "2d4ded2ca0df9e73648c6db204f9401e5b3d7f47d5dd5542bf7470cfeae7568c",
+          "primary_differences": [
+            "'3 8' heard as '3.08' after 'mortar ammunition at'",
+            "'lst' heard as 'lsd' after 'blast ripped through'"
+          ],
+          "differences": [
+            "'3 8' heard as '3.08' after 'mortar ammunition at'",
+            "'lst' heard as 'lsd' after 'blast ripped through'",
+            "base.en: 'octane' heard as 'octin' after 'pearl harbor high'",
+            "base.en: '3 8 p m' heard as '3.08 pm' after 'mortar ammunition at'",
+            "base.en: 'lst' heard as 'lsd' after 'blast ripped through'",
+            "base.en: 'fires' heard as 'buyers' after 'through lst 353'",
+            "base.en: 'yet' heard as 'it' after 'it until 1960'"
+          ],
+          "corroboration": {
+            "model": "base.en",
+            "heard": "29 secret invasion ships sat packed beam-to-beam at Pearl Harbor. High-octin gasoline sat on deck next to mortar ammunition. At 3.08 PM, a sudden blast ripped through LSD-353. Buyers jumped ship to ship, sinking six military vessels. About one-third of the 163 dead were black segregated soldiers. The military quickly classified the tragedy and buried it until 1960. It today, only a single rusting bow still sits there.",
+            "differences": [
+              "'octane' heard as 'octin' after 'pearl harbor high'",
+              "'3 8 p m' heard as '3.08 pm' after 'mortar ammunition at'",
+              "'lst' heard as 'lsd' after 'blast ripped through'",
+              "'fires' heard as 'buyers' after 'through lst 353'",
+              "'yet' heard as 'it' after 'it until 1960'"
+            ],
+            "resolved": []
+          }
+        }
+      },
+      "media_sha256": "2d4ded2ca0df9e73648c6db204f9401e5b3d7f47d5dd5542bf7470cfeae7568c",
+      "scores": {
+        "hook": 5,
+        "clarity": 5,
+        "payoff": 4,
+        "visuals": 3,
+        "loop": 4,
+        "accuracy": 3
+      },
+      "notes": {
+        "hook": "Strong hook that immediately sets up mystery with secret invasion ships at Pearl Harbor.",
+        "clarity": "Very easy to follow chronological story with one clear idea per beat.",
+        "payoff": "The decades of classification and the single rusting bow provide a solid historical payoff.",
+        "visuals": "Beat 5 uses a generic jungle combat photo which is off-topic for a naval port disaster in Hawaii.",
+        "loop": "The visual loop is seamless, though the verbal transition is slightly abrupt.",
+        "accuracy": "Fails to mention that the 163 deaths are the official toll and that researchers estimate much higher losses."
+      },
+      "frames": [
+        {
+          "beat": 5,
+          "problem": "The image shows soldiers in a jungle environment, which is off-topic and misleading for a naval harbor disaster in Pearl Harbor."
+        }
+      ],
+      "speech": [],
+      "rewrite": [
+        "Change Beat 5 to: \"Officially, 163 died—mostly Black segregated soldiers—but researchers estimate hundreds more.\""
+      ],
+      "better_than_last": "This Short features a far more gripping hook and better chronological flow than episode 054.",
+      "judge": "gemini-3.5-flash",
+      "passed": false
+    },
+    {
+      "at": "2026-10-05T13:25:14+05:30",
+      "check": {
+        "duration": 29.92,
+        "words": 59,
+        "integrated_lufs": -14.3,
+        "true_peak_dbfs": -1.6,
+        "warnings": [],
+        "speech_differences": [
+          "'3 8' heard as '3.08' after 'to ammunition at'",
+          "'lst' heard as 'lsd' after 'blast ripped through'",
+          "base.en: 'octane' heard as 'octin' after 'pearl harbor high'",
+          "base.en: '(nothing)' heard as '0' after 'ammunition at 3'",
+          "base.en: 'lst' heard as 'lsd' after 'blast ripped through'",
+          "base.en: 'fires' heard as 'buyers' after 'through lst 353'"
+        ],
+        "speech_error": null,
+        "sources": [
+          "Wikimedia Commons",
+          "Flickr via Openverse",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons"
+        ],
+        "speech_verification": {
+          "heard": "Twenty-nine invasion ships sat packed beam-to-beam in Pearl Harbor. High-octane gasoline sat on deck next to ammunition. At 3.08 p.m., a blast ripped through LSD-353. Fires jumped ship to ship, sinking six vessels. Officially, 163 died, mostly black segregated soldiers, but researchers estimate hundreds more. The military classified the tragedy until 1960. Today, only a single rusting bow still sits there.",
+          "model": "small.en",
+          "media_sha256": "c04b52fc22342a23709eecef24360659dc04365604c8967316876d32c4759c96",
+          "primary_differences": [
+            "'3 8' heard as '3.08' after 'to ammunition at'",
+            "'lst' heard as 'lsd' after 'blast ripped through'"
+          ],
+          "differences": [
+            "'3 8' heard as '3.08' after 'to ammunition at'",
+            "'lst' heard as 'lsd' after 'blast ripped through'",
+            "base.en: 'octane' heard as 'octin' after 'pearl harbor high'",
+            "base.en: '(nothing)' heard as '0' after 'ammunition at 3'",
+            "base.en: 'lst' heard as 'lsd' after 'blast ripped through'",
+            "base.en: 'fires' heard as 'buyers' after 'through lst 353'"
+          ],
+          "corroboration": {
+            "model": "base.en",
+            "heard": "29 invasion ships sat packed beam-to-beam in Pearl Harbor. High-octin gasoline sat on deck next to ammunition. At 3-0-8 p.m., a blast ripped through LSD-353. Buyers jumped ship to ship, sinking six vessels. Officially, 163 died, mostly black segregated soldiers, but researchers estimate hundreds more. The military classified the tragedy until 1960. Today, only a single rusting bow still sits there.",
+            "differences": [
+              "'octane' heard as 'octin' after 'pearl harbor high'",
+              "'(nothing)' heard as '0' after 'ammunition at 3'",
+              "'lst' heard as 'lsd' after 'blast ripped through'",
+              "'fires' heard as 'buyers' after 'through lst 353'"
+            ],
+            "resolved": []
+          }
+        }
+      },
+      "media_sha256": "c04b52fc22342a23709eecef24360659dc04365604c8967316876d32c4759c96",
+      "scores": {
+        "hook": 4,
+        "clarity": 5,
+        "payoff": 4,
+        "visuals": 5,
+        "loop": 5,
+        "accuracy": 3
+      },
+      "notes": {
+        "hook": "An informative but slightly slow opening; starting directly with the danger of the volatile cargo might hook viewers faster.",
+        "clarity": "Excellent chronological sequence that is exceptionally easy to follow on a single listen.",
+        "payoff": "The decades-long military cover-up provides a solid historical payoff to the hook.",
+        "visuals": "Outstanding archival photos that depict the actual ships, explosion, and troops involved.",
+        "loop": "Perfect seamless loop connecting the final rusting bow back to the initial twenty-nine ships.",
+        "accuracy": "Beat 5 states the casualties were 'mostly' Black segregated soldiers, but the historical sources state they made up about one-third of the victims."
+      },
+      "frames": [],
+      "speech": [],
+      "rewrite": [
+        "Change Beat 5 to: \"Officially, 163 died—about a third of them Black segregated soldiers—but researchers estimate hundreds more.\""
+      ],
+      "better_than_last": "This script maintains a much tighter historical focus and a clearer narrative arc than episode 054.",
+      "judge": "gemini-3.5-flash",
+      "passed": false
+    },
+    {
+      "at": "2026-10-05T13:28:11+05:30",
+      "check": {
+        "duration": 30.62,
+        "words": 63,
+        "integrated_lufs": -14.3,
+        "true_peak_dbfs": -1.9,
+        "warnings": [],
+        "speech_differences": [
+          "'3 8' heard as '3.08' after 'to ammunition at'",
+          "'lst' heard as 'lsd' after 'blast ripped through'",
+          "base.en: 'octane' heard as 'octin' after 'pearl harbor high'",
+          "base.en: '3 8 p m' heard as '3.08 pm' after 'to ammunition at'",
+          "base.en: 'lst' heard as 'lsd' after 'blast ripped through'",
+          "base.en: 'fires' heard as 'buyers' after 'through lst 353'"
+        ],
+        "speech_error": null,
+        "sources": [
+          "Wikimedia Commons",
+          "Flickr via Openverse",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons"
+        ],
+        "speech_verification": {
+          "heard": "Twenty-nine invasion ships sat packed beam-to-beam in Pearl Harbor. High-octane gasoline sat on deck next to ammunition. At 3.08 p.m., a blast ripped through LSD-353. Fires jumped ship to ship, sinking six vessels. Officially, 163 died, about a third of them black segregated soldiers, but researchers estimate hundreds more. The military classified the tragedy until 1960. Today, only a single rusting bow still sits there.",
+          "model": "small.en",
+          "media_sha256": "9a0c301b4428b856100478854d917291568881be0454ed2742ef7f3e4e08081c",
+          "primary_differences": [
+            "'3 8' heard as '3.08' after 'to ammunition at'",
+            "'lst' heard as 'lsd' after 'blast ripped through'"
+          ],
+          "differences": [
+            "'3 8' heard as '3.08' after 'to ammunition at'",
+            "'lst' heard as 'lsd' after 'blast ripped through'",
+            "base.en: 'octane' heard as 'octin' after 'pearl harbor high'",
+            "base.en: '3 8 p m' heard as '3.08 pm' after 'to ammunition at'",
+            "base.en: 'lst' heard as 'lsd' after 'blast ripped through'",
+            "base.en: 'fires' heard as 'buyers' after 'through lst 353'"
+          ],
+          "corroboration": {
+            "model": "base.en",
+            "heard": "29 invasion ships sat packed beam to beam in Pearl Harbor. High-octin gasoline sat on deck next to ammunition. At 3.08 PM, a blast ripped through LSD-353. Buyers jumped ship to ship, sinking six vessels. Officially, 163 died, about a third of them black segregated soldiers, but researchers estimate hundreds more. The military classified the tragedy until 1960. Today, only a single rusting bow still sits there.",
+            "differences": [
+              "'octane' heard as 'octin' after 'pearl harbor high'",
+              "'3 8 p m' heard as '3.08 pm' after 'to ammunition at'",
+              "'lst' heard as 'lsd' after 'blast ripped through'",
+              "'fires' heard as 'buyers' after 'through lst 353'"
+            ],
+            "resolved": []
+          }
+        }
+      },
+      "media_sha256": "9a0c301b4428b856100478854d917291568881be0454ed2742ef7f3e4e08081c",
+      "scores": {
+        "hook": 5,
+        "clarity": 5,
+        "payoff": 5,
+        "visuals": 3,
+        "loop": 4,
+        "accuracy": 5
+      },
+      "notes": {
+        "hook": "Strong curiosity created immediately with high-stakes setup and text overlay.",
+        "clarity": "Narrative flows logically from setup to explosion, secrecy, and modern remnant.",
+        "payoff": "The classification reveal and remaining visible wreckage deliver a satisfying payoff.",
+        "visuals": "Beat 5 uses a jungle combat photo unrelated to Pearl Harbor naval operations.",
+        "loop": "Beat 7 transitions cleanly back into the opening line.",
+        "accuracy": "Every line is strictly backed by research claims and handles disputed casualty numbers properly."
+      },
+      "frames": [
+        {
+          "beat": 5,
+          "problem": "Off-topic jungle combat scene that does not represent West Loch or LST operations."
+        }
+      ],
+      "speech": [],
+      "rewrite": [],
+      "better_than_last": "This Short accurately integrates disputed casualty figures into the script without overstating historical consensus.",
+      "judge": "gemini-3.6-flash",
+      "passed": false
+    }
+  ],
+  "best_round": 3,
+  "verdict": "rejected",
+  "reason": "low scores: visuals; 1 frame problems",
+  "rejected_at": "2026-10-05T13:28:11+05:30"
+}

@@ -1,0 +1,231 @@
+{
+  "rounds": [
+    {
+      "at": "2026-10-04T23:08:36+05:30",
+      "check": {
+        "duration": 26.33,
+        "words": 68,
+        "integrated_lufs": -14.4,
+        "true_peak_dbfs": -1.7,
+        "warnings": [],
+        "speech_differences": [
+          "'route' heard as 'root' after 'and cut their'",
+          "base.en: '(nothing)' heard as 'his' after 'by starting his'"
+        ],
+        "speech_error": null,
+        "sources": [
+          "Wikimedia Commons",
+          "designed card",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons"
+        ],
+        "speech_verification": {
+          "heard": "Foreman Wag Dodge survived a raging wildfire by starting his own. The fire was reported on August 5, 1949. Fifteen smokejumpers arrived to combat the blaze. High winds suddenly expanded the fire and cut their root. Dodge stepped into his burn area and lay down quietly. His fleeing crew ran past him and were overtaken by flames. Foreman Wag Dodge survived a raging wildfire by starting his own.",
+          "model": "small.en",
+          "media_sha256": "9cc4f21da592ea45675b5e4c2d5136b12a47bd7ce3671b8e3a378a281cff721f",
+          "primary_differences": [
+            "'route' heard as 'root' after 'and cut their'"
+          ],
+          "differences": [
+            "'route' heard as 'root' after 'and cut their'",
+            "base.en: '(nothing)' heard as 'his' after 'by starting his'"
+          ],
+          "corroboration": {
+            "model": "base.en",
+            "heard": "Foreman Wag Dodge survived a raging wildfire by starting his own. The fire was reported on August 5, 1949. 15 smoke jumpers arrived to combat the blaze. High winds suddenly expanded the fire and cut their route. Dodge stepped into his burn area and lay down quietly. His fleeing crew ran past him and were overtaken by flames. Foreman Wag Dodge survived a raging wildfire by starting his his own.",
+            "differences": [
+              "'(nothing)' heard as 'his' after 'by starting his'"
+            ],
+            "resolved": []
+          }
+        }
+      },
+      "media_sha256": "9cc4f21da592ea45675b5e4c2d5136b12a47bd7ce3671b8e3a378a281cff721f",
+      "scores": {
+        "hook": 5,
+        "clarity": 4,
+        "payoff": 5,
+        "visuals": 5,
+        "loop": 5
+      },
+      "notes": {
+        "hook": "The counterintuitive paradox of starting a fire to survive immediately hooks the viewer.",
+        "clarity": "The progression is straightforward, though explicitly mentioning the moment he lit the escape fire would make beat 5 clearer.",
+        "payoff": "The tragic contrast between Dodge surviving in his burned patch and his crew running into the flames delivers a powerful punch.",
+        "visuals": "Authentic archival imagery from smokejumpers and Mann Gulch keeps the visuals grounded and sharp.",
+        "loop": "The crew perishing in the flames transitions smoothly back into Dodge's survival method."
+      },
+      "frames": [],
+      "speech": [],
+      "rewrite": [],
+      "better_than_last": "The paradoxical hook immediately grabs attention and resolves with a poignant, historically grounded payoff.",
+      "judge": "gemini-3.7-flash",
+      "passed": false
+    },
+    {
+      "at": "2026-10-05T13:15:12+05:30",
+      "check": {
+        "duration": 26.33,
+        "words": 68,
+        "integrated_lufs": -14.3,
+        "true_peak_dbfs": -1.7,
+        "warnings": [],
+        "speech_differences": [
+          "'route' heard as 'root' after 'and cut their'",
+          "base.en: 'foreman' heard as 'forman'",
+          "base.en: 'lay' heard as 'laid' after 'burn area and'",
+          "base.en: 'foreman' heard as 'forman' after 'overtaken by flames'"
+        ],
+        "speech_error": null,
+        "sources": [
+          "Wikimedia Commons",
+          "designed card",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons"
+        ],
+        "speech_verification": {
+          "heard": "Foreman Wag Dodge survived a raging wildfire by starting his own. The fire was reported on August 5, 1949. Fifteen smokejumpers arrived to combat the blaze. High winds suddenly expanded the fire and cut their root. Dodge stepped into his burn area and lay down quietly. His fleeing crew ran past him and were overtaken by flames. Foreman Wag Dodge survived a raging wildfire by starting his own.",
+          "model": "small.en",
+          "media_sha256": "fbfa6b6784673e49349666ef2a0d0b5fedbe30dbb8ac3d8853d95f484bd7d2df",
+          "primary_differences": [
+            "'route' heard as 'root' after 'and cut their'"
+          ],
+          "differences": [
+            "'route' heard as 'root' after 'and cut their'",
+            "base.en: 'foreman' heard as 'forman'",
+            "base.en: 'lay' heard as 'laid' after 'burn area and'",
+            "base.en: 'foreman' heard as 'forman' after 'overtaken by flames'"
+          ],
+          "corroboration": {
+            "model": "base.en",
+            "heard": "Forman Wag Dodge survived a raging wildfire by starting his own. The fire was reported on August 5, 1949. 15 smoke jumpers arrived to combat the blaze. High winds suddenly expanded the fire and cut their route. Dodge stepped into his burn area and laid down quietly. His fleeing crew ran past him and were overtaken by flames. Forman Wag Dodge survived a raging wildfire by starting his own.",
+            "differences": [
+              "'foreman' heard as 'forman'",
+              "'lay' heard as 'laid' after 'burn area and'",
+              "'foreman' heard as 'forman' after 'overtaken by flames'"
+            ],
+            "resolved": []
+          }
+        }
+      },
+      "media_sha256": "fbfa6b6784673e49349666ef2a0d0b5fedbe30dbb8ac3d8853d95f484bd7d2df",
+      "scores": {
+        "hook": 5,
+        "clarity": 3,
+        "payoff": 4,
+        "visuals": 4,
+        "loop": 4,
+        "accuracy": 3
+      },
+      "notes": {
+        "hook": "Starting a fire to survive a fire is an immediate, gripping paradox.",
+        "clarity": "The script leaps from the wildfire advancing to Dodge lying in 'his burn area' without explaining that he just lit it.",
+        "payoff": "The tragic contrast between Dodge surviving in his burned patch and his crew running past him lands with weight.",
+        "visuals": "Effective use of historic smokejumper photos and authentic Mann Gulch imagery.",
+        "loop": "The tragedy of the overtaken crew circles back smoothly into Dodge's survival hook.",
+        "accuracy": "Beat 5 claims Dodge 'lay down quietly', directly contradicting Claim 7 which states he called out to his men to join him."
+      },
+      "frames": [],
+      "speech": [],
+      "rewrite": [
+        "Beat 5: Change to 'Dodge lit an escape fire, lay down in the burned grass, and called for his men.'"
+      ],
+      "better_than_last": "Features a sharper, more paradoxical survival hook than ep054.",
+      "judge": "gemini-3.8-flash",
+      "passed": false
+    },
+    {
+      "at": "2026-10-05T13:19:56+05:30",
+      "check": {
+        "duration": 25.9,
+        "words": 69,
+        "integrated_lufs": -14.3,
+        "true_peak_dbfs": -1.8,
+        "warnings": [],
+        "speech_differences": [
+          "'foreman' heard as 'borman'",
+          "'route' heard as 'root' after 'and cut their'",
+          "'escape' heard as 'escaped' after 'dodge lit an'",
+          "'amid' heard as 'mid' after 'for his men'",
+          "base.en: 'foreman' heard as 'forman'",
+          "base.en: 'escape' heard as 'escaped' after 'dodge lit an'",
+          "base.en: 'amid' heard as 'mid' after 'for his men'"
+        ],
+        "speech_error": null,
+        "sources": [
+          "Wikimedia Commons",
+          "designed card",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons"
+        ],
+        "speech_verification": {
+          "heard": "Borman Wag Dodge survived a raging wildfire by starting his own. The fire was reported on August 5, 1949. Fifteen smokejumpers arrived to combat the blaze. High winds suddenly expanded the fire and cut their root. Dodge lit an escaped fire, lay down in the burned grass and called for his men. Mid the roaring confusion, his crew kept running uphill. Only two smokejumpers found shelter in the rocks.",
+          "model": "small.en",
+          "media_sha256": "e85132633c7a07b613a6dbe1d4f41aac570d6e22e4458e0c2918c670152df840",
+          "primary_differences": [
+            "'foreman' heard as 'borman'",
+            "'route' heard as 'root' after 'and cut their'",
+            "'escape' heard as 'escaped' after 'dodge lit an'",
+            "'amid' heard as 'mid' after 'for his men'"
+          ],
+          "differences": [
+            "'foreman' heard as 'borman'",
+            "'route' heard as 'root' after 'and cut their'",
+            "'escape' heard as 'escaped' after 'dodge lit an'",
+            "'amid' heard as 'mid' after 'for his men'",
+            "base.en: 'foreman' heard as 'forman'",
+            "base.en: 'escape' heard as 'escaped' after 'dodge lit an'",
+            "base.en: 'amid' heard as 'mid' after 'for his men'"
+          ],
+          "corroboration": {
+            "model": "base.en",
+            "heard": "Forman Wag Dodge survived a raging wildfire by starting his own. The fire was reported on August 5, 1949. Fifteen smoke jumpers arrived to combat the blaze. High winds suddenly expanded the fire and cut their route. Dodge lit an escaped fire, lay down in the burned grass and called for his men. Mid the roaring confusion, his crew kept running uphill. Only two smoke jumpers found shelter in the the rocks.",
+            "differences": [
+              "'foreman' heard as 'forman'",
+              "'escape' heard as 'escaped' after 'dodge lit an'",
+              "'amid' heard as 'mid' after 'for his men'",
+              "'(nothing)' heard as 'the' after 'shelter in the'"
+            ],
+            "resolved": []
+          }
+        }
+      },
+      "media_sha256": "e85132633c7a07b613a6dbe1d4f41aac570d6e22e4458e0c2918c670152df840",
+      "scores": {
+        "hook": 5,
+        "clarity": 5,
+        "payoff": 4,
+        "visuals": 4,
+        "loop": 5,
+        "accuracy": 5
+      },
+      "notes": {
+        "hook": "Strong counter-intuitive premise that immediately grabs attention.",
+        "clarity": "Linear, easy-to-follow chronological sequence with one key idea per beat.",
+        "payoff": "Solid payoff showing the tragic outcome of the crew ignoring the escape fire.",
+        "visuals": "Evocative archival photos, though beat 4 uses a 2009 fire plume as a stand-in.",
+        "loop": "Seamless transition from the rocks survivors back to Dodge's unique survival method.",
+        "accuracy": "Completely aligned with claims, handles disputed points elegantly by saying 'shelter in the rocks'."
+      },
+      "frames": [],
+      "speech": [],
+      "rewrite": [],
+      "better_than_last": "This Short handles disputed historical details with exceptional care, such as describing the survivors' refuge generally as 'in the rocks' to avoid conflicting sources.",
+      "judge": "gemini-3.5-flash",
+      "passed": false
+    }
+  ],
+  "best_round": 3,
+  "verdict": "rejected",
+  "reason": "speech: 'foreman' heard as 'borman'; 'route' heard as 'root' after 'and cut their'; 'escape' heard as 'escaped' after 'dodge lit an'; 'amid' heard as 'mid' after 'for his men'; base.en: 'foreman' heard as 'forman'; base.en: 'escape' heard as 'escaped' after 'dodge lit an'; base.en: 'amid' heard as 'mid' after 'for his men'",
+  "rejected_at": "2026-10-05T13:19:56+05:30"
+}
