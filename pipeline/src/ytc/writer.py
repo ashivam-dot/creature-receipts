@@ -325,10 +325,14 @@ def normalize(script: dict, research: dict | None = None) -> dict:
     if not 2 <= len(words) <= 6 or len(hook_text) > 40 or _EMOJI.search(hook_text) or sum(w in hook for w in words) > 0.7 * len(words):
         hook_text = ""
     script["hook_text"] = hook_text
+    script["title"] = " ".join((script.get("title") or "").split())
     return script
 
 
 DANGLING_END = r"\b(because|when|until|that|and|but|so|as|while|after|before|if|since|which|with|of|to|the|a)\W*$"
+WEAK_OPENER = r"\s*(did you know|hey|hi|welcome|you might think|you'd think|imagine|what if|have you ever|most people|many (people )?believe|everyone (thinks|knows)|you won'?t believe|this is the story)\b"
+# YouTube limits how widely it recommends graphic Shorts, and the channel promises no gore.
+GRAPHIC = r"\b(behead\w*|decapitat\w*|sever(ed|ing)|heads of|corpses?|blood(y|ied)?|tortur\w*|mutilat\w*|impal\w*|flay\w*|skulls?|cannibal\w*|gore|gory)\b"
 
 
 def problems(script: dict, research: dict) -> list[str]:
@@ -348,8 +352,17 @@ def problems(script: dict, research: dict) -> list[str]:
         if word_count(hook) > 12:
             found.append(f"The hook (beat 1) must be 12 words or fewer (it has {word_count(hook)}: \"{hook}\"); "
                          f"cut at least {word_count(hook) - 12} words and keep its meaning.")
-        if re.match(r"\s*(did you know|hey|hi|welcome)", hook, re.I) or "history's last hours" in hook.lower():
-            found.append("The hook must open inside the story: no 'Did you know', greeting, or channel name.")
+        if re.match(WEAK_OPENER, hook, re.I) or "history's last hours" in hook.lower():
+            found.append("The hook must open inside the story on its most gripping true fact: no 'Did you know', "
+                         "'You might think', 'Imagine', 'What if', 'Many believe', greeting, or channel name.")
+        if not script.get("hook_text"):
+            found.append("Give hook_text: 2 to 6 words, 40 characters or fewer, no emoji, shown over beat 1 from its "
+                         "first frame. It must add a time, number, or the stakes rather than repeat the spoken hook's words.")
+        graphic = [part for part, text in (("hook", hook), ("hook_text", script.get("hook_text", "")),
+                                           ("title", script.get("title", ""))) if re.search(GRAPHIC, text, re.I)]
+        if graphic:
+            found.append(f"The {', '.join(graphic)} must not be graphic (no beheading, severed heads, corpses, blood, "
+                         "or torture): open on the people, the place, the stakes, or the decision instead.")
         if re.search(DANGLING_END, spoken(beats[-1]["text"]), re.I):
             found.append("The last beat must be a complete sentence that echoes beat 1, not end on a dangling word "
                          "such as 'because', 'when', 'until', or 'that'.")

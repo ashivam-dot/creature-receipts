@@ -67,7 +67,9 @@ one frame from the middle of each shot (what viewers see, captions included; a l
 so it has two), and the automatic checks.
 
 Score 1 to 5 (5 excellent, 4 good enough to publish, 3 or lower must be fixed), with a one-line note each:
-- hook: would a stranger stop swiping within the first 2 seconds?
+- hook: would a stranger stop swiping within the first 2 seconds? Score 3 or lower if the first line or the
+  on-screen text is slow or generic ("You might think...", "Imagine..."), gives the payoff away, or is graphic
+  (beheadings, severed heads, blood, torture): YouTube limits how widely it shows graphic Shorts.
 - clarity: can someone who knows nothing about it follow on one listen? One idea per beat.
 - payoff: is there a real surprise or twist near the end that pays off the hook?
 - visuals: is every frame on-topic, clear at phone size, and striking?

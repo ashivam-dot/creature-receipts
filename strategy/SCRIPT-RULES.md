@@ -26,7 +26,10 @@ Folder: `content/episodes/<id>/` (ids are `ep001`, `ep002`, ...).
   feed pushes. Cut every word that doesn't move the story.
 - **Hook (beat 1):** 12 words or fewer, literally true and concrete, opening inside the moment of the story
   on its most gripping fact: "The lookouts on the Titanic had no binoculars."; "At noon, the mountain above
-  Pompeii split open." No "Did you know", no greeting, no channel name, no question the Short can't answer.
+  Pompeii split open." No "Did you know", "You might think", "Imagine", "What if", or "Many believe", no
+  greeting, no channel name, no question the Short can't answer. Never graphic in the hook, the on-screen
+  hook, or the title (no beheadings, severed heads, corpses, blood, or torture): YouTube shows graphic Shorts
+  to fewer people, so open on the people, the place, the stakes, or the decision.
   Name the place, ship, or event in the hook or beat 2, so search and the first frame agree.
 - **Structure:** the writer is given one of five structures, the one the recent episodes used least:
   `story` (hook, context, 2–3 escalating beats, a twist), `myth_vs_fact` (what most people believe, then the
