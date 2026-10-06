@@ -1,74 +1,62 @@
 {
-  "updated_at": "2026-10-06T10:12:40+05:30",
+  "updated_at": "2026-10-06T10:32:07+05:30",
   "day": 5,
   "result": "ok",
   "run": {
     "host": "modal",
-    "id": "ta-01M47RA0XHZJHBBFG8925J6ECR",
+    "id": "ta-01M47SD348EQ3537CPH8FAXXFR",
     "number": null,
     "trigger": "manual",
-    "started_at": "2026-10-06T10:12:25+05:30",
-    "started_at_utc": "2026-10-06T04:42:25+00:00",
-    "seconds": 15
+    "started_at": "2026-10-06T10:31:38+05:30",
+    "started_at_utc": "2026-10-06T05:01:38+00:00",
+    "seconds": 29
   },
   "stages": [
     {
       "name": "deploy",
       "ok": true,
       "detail": "",
-      "seconds": 1.4
+      "seconds": 1.9
     },
     {
       "name": "collect",
       "ok": true,
-      "detail": "ep089 still working (0.9 h); ep091 unfinished (RuntimeError: research answer supplied no usable two-site quotes (gemini-3.5-flash-lite); asking again next run); ep092 still working (0.1 h); ep093 rejected (research: only 4 claims have verified quotes from two different sites); ep094 still working (0.1 h)",
-      "seconds": 5.3
+      "detail": "ep089 still working (1.3 h); ep091 rejected (research: only 2 claims have verified quotes from two different sites); ep092 still working (0.4 h); ep094 unfinished (OutOfQuota: no model in ('gemini-3.8-flash', 'gemini-3.7-flash', 'gemini-3.6-flash', 'gemini-3.5-flash', 'gemini-3-flash-preview', 'gemini-flash-latest', 'ovh:Qwen3.5-397B-A17B') has free quota left today); ep095 ready; ep096 still working (0.3 h); ep097 still working (0.3 h)",
+      "seconds": 10.8
     },
     {
-      "name": "start ep091",
+      "name": "start ep094",
       "ok": true,
-      "detail": "Julian's Persian expedition (363): the Roman Emperor burned his own supply fleet to force his men to advance, only to realize they were starving in a desert wasteland",
-      "seconds": 0.8
+      "detail": "Hindenburg disaster (1937): the airship burned in about half a minute, yet most of the people aboard survived",
+      "seconds": 1.5
     },
     {
-      "name": "start ep095",
+      "name": "start ep098",
       "ok": true,
-      "detail": "New London School explosion (1937): leaked gas built up beneath the school until a shop-class sander ignited it near the end of the day",
-      "seconds": 0.7
-    },
-    {
-      "name": "start ep096",
-      "ok": true,
-      "detail": "Herculaneum: for centuries it was thought its people escaped, until hundreds of skeletons were found in the boathouses by the shore in the 1980s",
-      "seconds": 0.9
-    },
-    {
-      "name": "start ep097",
-      "ok": true,
-      "detail": "Great Fire of London (1666): only a handful of deaths were recorded, though the true toll is unknown",
-      "seconds": 0.7
+      "detail": "Johnstown Flood (1889): the dam that failed belonged to a fishing club of Pittsburgh's richest men",
+      "seconds": 1.8
     }
   ],
   "errors": [],
   "owner_action": [],
   "notes": [
+    "ep094 stopped on Gemini's free quota; it resumes in a later run",
     "draft-only producer: no Buffer, Cloudinary, or Google publisher access"
   ],
   "inventory": {
-    "total": 2,
+    "total": 3,
     "in_buffer": 0,
     "waiting": 0,
-    "drafts": 2,
+    "drafts": 3,
     "target": 9,
     "making": [],
     "remote": [
       "ep089",
-      "ep091",
       "ep092",
       "ep094",
-      "ep095",
       "ep096",
-      "ep097"
+      "ep097",
+      "ep098"
     ]
   },
   "queue": [],
@@ -95,39 +83,44 @@
   "made": [
     {
       "id": "ep091",
-      "outcome": "unfinished",
+      "outcome": "rejected",
       "topic": "Julian's Persian expedition (363): the Roman Emperor burned his own supply fleet to force his men to advance, only to realize they were starving in a desert wasteland",
-      "reason": "RuntimeError: research answer supplied no usable two-site quotes (gemini-3.5-flash-lite); asking again next run",
-      "quota": false,
+      "reason": "research: only 2 claims have verified quotes from two different sites"
+    },
+    {
+      "id": "ep094",
+      "outcome": "unfinished",
+      "topic": "Hindenburg disaster (1937): the airship burned in about half a minute, yet most of the people aboard survived",
+      "reason": "OutOfQuota: no model in ('gemini-3.8-flash', 'gemini-3.7-flash', 'gemini-3.6-flash', 'gemini-3.5-flash', 'gemini-3-flash-preview', 'gemini-flash-latest', 'ovh:Qwen3.5-397B-A17B') has free quota left today",
+      "quota": true,
       "overloaded": false
     },
     {
-      "id": "ep093",
-      "outcome": "rejected",
-      "topic": "Bounty mutiny (1789): after casting the captain adrift, the mutineers sailed to Pitcairn Island and burned their own ship to the waterline so no one could ever escape",
-      "reason": "research: only 4 claims have verified quotes from two different sites"
+      "id": "ep095",
+      "outcome": "ready",
+      "topic": "New London School explosion (1937): leaked gas built up beneath the school until a shop-class sander ignited it near the end of the day",
+      "title": "Why Did a Wealthy Texas School Use Free Waste Gas? ⚠️",
+      "scores": {
+        "hook": 4,
+        "clarity": 5,
+        "payoff": 4,
+        "visuals": 5,
+        "loop": 5,
+        "accuracy": 5
+      },
+      "draft": "drafts/ep095-fba0b5d6923132c26826747d8ce7a1b4d6f92ee31f369b296783c6639117fb12.mp4"
     }
   ],
   "spawned": [
     {
-      "id": "ep091",
-      "topic": "Julian's Persian expedition (363): the Roman Emperor burned his own supply fleet to force his men to advance, only to realize they were starving in a desert wasteland",
-      "call_id": "fc-01M47RAM4YXQBV62KSJJ0V84SN"
+      "id": "ep094",
+      "topic": "Hindenburg disaster (1937): the airship burned in about half a minute, yet most of the people aboard survived",
+      "call_id": "fc-01M47SE7YFW5MV11WV7CVWSZ55"
     },
     {
-      "id": "ep095",
-      "topic": "New London School explosion (1937): leaked gas built up beneath the school until a shop-class sander ignited it near the end of the day",
-      "call_id": "fc-01M47RAMT8753VJNCV7EN8PRGR"
-    },
-    {
-      "id": "ep096",
-      "topic": "Herculaneum: for centuries it was thought its people escaped, until hundreds of skeletons were found in the boathouses by the shore in the 1980s",
-      "call_id": "fc-01M47RANPX6107WKN1FV12CJWY"
-    },
-    {
-      "id": "ep097",
-      "topic": "Great Fire of London (1666): only a handful of deaths were recorded, though the true toll is unknown",
-      "call_id": "fc-01M47RAPC4GTWHS7BMHF01D978"
+      "id": "ep098",
+      "topic": "Johnstown Flood (1889): the dam that failed belonged to a fishing club of Pittsburgh's richest men",
+      "call_id": "fc-01M47SE9NRSX09NKCPQA4HXSXM"
     }
   ],
   "in_cloud": [
@@ -137,11 +130,6 @@
       "spawned_at": "2026-10-06T09:16:25+05:30"
     },
     {
-      "id": "ep091",
-      "topic": "Julian's Persian expedition (363): the Roman Emperor burned his own supply fleet to force his men to advance, only to realize they were starving in a desert wasteland",
-      "spawned_at": "2026-10-06T10:12:37+05:30"
-    },
-    {
       "id": "ep092",
       "topic": "Tauredunum event (563): a mountain collapse into Lake Geneva created a massive inland tsunami that swept over the city walls of Geneva miles away",
       "spawned_at": "2026-10-06T10:08:07+05:30"
@@ -149,12 +137,7 @@
     {
       "id": "ep094",
       "topic": "Hindenburg disaster (1937): the airship burned in about half a minute, yet most of the people aboard survived",
-      "spawned_at": "2026-10-06T10:08:09+05:30"
-    },
-    {
-      "id": "ep095",
-      "topic": "New London School explosion (1937): leaked gas built up beneath the school until a shop-class sander ignited it near the end of the day",
-      "spawned_at": "2026-10-06T10:12:38+05:30"
+      "spawned_at": "2026-10-06T10:32:04+05:30"
     },
     {
       "id": "ep096",
@@ -165,6 +148,11 @@
       "id": "ep097",
       "topic": "Great Fire of London (1666): only a handful of deaths were recorded, though the true toll is unknown",
       "spawned_at": "2026-10-06T10:12:39+05:30"
+    },
+    {
+      "id": "ep098",
+      "topic": "Johnstown Flood (1889): the dam that failed belonged to a fishing club of Pittsburgh's richest men",
+      "spawned_at": "2026-10-06T10:32:06+05:30"
     }
   ],
   "published": [],
@@ -172,31 +160,32 @@
   "failed_posts": [],
   "not_live": [],
   "llm": {
-    "calls": 2,
+    "calls": 8,
     "by_model": {
-      "gemini-3.5-flash-lite": 2
+      "gemini-3.5-flash-lite": 7,
+      "gemma-4-31b-it": 1
     },
     "out_of_quota": []
   },
   "renders": {
-    "modal": 0,
+    "modal": 2,
     "runner": 0
   },
   "daily_done": "2026-10-05",
   "minutes_this_month": 68.0,
   "minutes_budget": 2000,
   "modal_cost": {
-    "metered": 8.25,
+    "metered": 8.48,
     "billed": 0.0
   },
   "modal_credit": 30.0,
   "capacity": {
-    "cloud": 161,
+    "cloud": 158,
     "runner": 0,
     "runner_minutes": 0,
-    "modal_credit_left": 19.39
+    "modal_credit_left": 19.04
   },
   "made_here": 0,
-  "open_topics": 145,
+  "open_topics": 144,
   "parked_topics": 32
 }

@@ -1,0 +1,56 @@
+{
+  "rounds": [
+    {
+      "at": "2026-10-06T10:30:57+05:30",
+      "check": {
+        "duration": 27.27,
+        "words": 68,
+        "integrated_lufs": -14.5,
+        "true_peak_dbfs": -1.8,
+        "warnings": [],
+        "speech_differences": [],
+        "speech_error": null,
+        "sources": [
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons"
+        ],
+        "speech_verification": {
+          "heard": "A wealthy Texas school chose free-waste gas to save money. Most people assume professionals inspected the gas system. Officials actually tapped a local residue line. Untreated gas carried no warning scent, hiding a leak beneath the floors. An electric sander then sparked the trapped fuel. Nearly 300 lives were lost, creating today's mercaptan laws. That tragedy happened because a wealthy Texas school chose free-waste gas.",
+          "model": "small.en",
+          "media_sha256": "fba0b5d6923132c26826747d8ce7a1b4d6f92ee31f369b296783c6639117fb12",
+          "primary_differences": [],
+          "differences": []
+        }
+      },
+      "media_sha256": "fba0b5d6923132c26826747d8ce7a1b4d6f92ee31f369b296783c6639117fb12",
+      "scores": {
+        "hook": 4,
+        "clarity": 5,
+        "payoff": 4,
+        "visuals": 5,
+        "loop": 5,
+        "accuracy": 5
+      },
+      "notes": {
+        "hook": "Clear and intriguing, though the text 'SAVING MONEY, LOSING LIVES' is a bit blunt.",
+        "clarity": "The narrative sequence is easy to follow and concise.",
+        "payoff": "Connecting the tragedy to the ubiquitous 'rotten egg' smell of modern gas is a strong payoff.",
+        "visuals": "Archive photos are highly relevant and clear.",
+        "loop": "The transition from the final line back to the first is seamless.",
+        "accuracy": "All claims are supported by the provided research and disputed points guidelines."
+      },
+      "frames": [],
+      "speech": [],
+      "rewrite": [],
+      "better_than_last": "The loop is more naturally integrated than in ep054, and the payoff is more tangible than in ep053.",
+      "judge": "gemma-4-31b-it",
+      "passed": true
+    }
+  ],
+  "best_round": 1
+}

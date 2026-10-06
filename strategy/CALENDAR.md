@@ -172,7 +172,7 @@ event is told for its gore. Space topics belong to the sister channel Universe R
 - Amundsen's South Pole expedition (1910): a secret race to the pole succeeded because the leader ate his own sled dogs to survive — parked (ep037)
 - Great Fire of 1910 (1910): hurricane-force winds turned a scattering of forest fires into a single monster that swallowed towns in minutes — done (ep050)
 - Voyage of the James Caird (1916): to save his crew, Shackleton navigated 800 miles of the world's deadliest ocean in a 22-foot lifeboat — parked (ep046)
-- Julian's Persian expedition (363): the Roman Emperor burned his own supply fleet to force his men to advance, only to realize they were starving in a desert wasteland — making (ep091)
+- Julian's Persian expedition (363): the Roman Emperor burned his own supply fleet to force his men to advance, only to realize they were starving in a desert wasteland — dropped (ep091)
 - Ross Sea party (1914): the team spent two years dying of scurvy to lay supply depots for Shackleton, never knowing his ship had been crushed on the other side of the continent
 - Vandino and Ugolino Vivaldi (1291): two brothers sailed into the Atlantic 200 years before Columbus and were never seen again, sparking a 150-year search
 - Great Northern Expedition (1741): explorer Vitus Bering died of scurvy on a frozen, desolate island just months after finally proving Asia and America were separate
@@ -216,7 +216,7 @@ event is told for its gore. Space topics belong to the sister channel Universe R
 - SS Californian (1912): it was close enough to see the Titanic's rockets, but its radio operator had gone to bed
 - Tay Bridge disaster (1879): the bridge fell in a gale with a train on it, and the inquiry found it badly designed, built, and maintained
 - St. Francis Dam (1928): William Mulholland inspected a leak and judged the dam safe the day it collapsed
-- Johnstown Flood (1889): the dam that failed belonged to a fishing club of Pittsburgh's richest men
+- Johnstown Flood (1889): the dam that failed belonged to a fishing club of Pittsburgh's richest men — making (ep098)
 - Great Molasses Flood (1919): the leaking tank had been painted brown to hide the leaks — parked (ep073)
 - Sultana (steamboat) (1865): a boat built for a few hundred carried over 2,000 people, most of them freed Union prisoners, when its patched boiler exploded
 - Triangle Shirtwaist Factory fire (1911): a stairway door was locked, and 146 garment workers died — parked (ep032)

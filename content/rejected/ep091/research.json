@@ -1,0 +1,146 @@
+{
+  "viable": false,
+  "reason": "only 2 claims have verified quotes from two different sites",
+  "story": "In 363 AD, Roman Emperor Julian invaded the Sasanian Empire with over sixty thousand men, pushing deep into enemy territory. After reaching the outskirts of Ctesiphon and deciding against a siege, Julian made a fateful gamble. Believing he could march through the interior and find abundant supplies, he burned his own immense river fleet of eleven hundred vessels and provisions. Instead, Sasanian King Shapur II used a scorched-earth strategy, leaving the Romans trapped in a scorching desert wasteland with dwindling rations. Forced to retreat northward while constantly harassed by enemy skirmishers, Julian was mortally wounded during a chaotic battle near Samarra on July 26, 363. His desperate successor, Jovian, had to surrender vast Roman territories and fortresses just to save the starving remnant of the army from total annihilation.",
+  "angle": "Roman Emperor Julian burned his own massive supply fleet of 1,100 ships to force an advance, only to realize his army was starving in a Persian desert wasteland.",
+  "claims": [
+    {
+      "claim": "Julian called a council of war and decided not to besiege Ctesiphon, marching into Persia's interior instead.",
+      "sources": [
+        "S1",
+        "S3"
+      ],
+      "evidence": [
+        {
+          "source": "S1",
+          "quote": "Julian called a council of war, at which it was decided not to besiege the city and march into Persia's interior instead"
+        },
+        {
+          "source": "S3",
+          "quote": "Julian refused to besiege the heavily fortified capital, instead opting for a deeper strike into Persian territory."
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim": "Jovian was elected as emperor after Julian's death.",
+      "sources": [
+        "S1",
+        "S2",
+        "S3"
+      ],
+      "evidence": [
+        {
+          "source": "S1",
+          "quote": "Exigency settled on Jovian, an obscure general of the Domestic Guard"
+        },
+        {
+          "source": "S2",
+          "quote": "Following Julian's death, the Romans elected Jovian as emperor."
+        },
+        {
+          "source": "S3",
+          "quote": "the army hastily elevated Jovian, who negotiated a humiliating peace"
+        }
+      ],
+      "confidence": "high"
+    }
+  ],
+  "disputed": [
+    "The exact date of Julian's death is given as July 26 in S1, but June 26 in S3; the script should follow S1 or use general terms to avoid a direct calendar contradiction.",
+    "Whether the Romans or Sasanians won the Battle of Samarra is treated differently by modern historians cited in the sources (Dignas and Winter state the Romans won, while Touraj Daryaee states the Sasanian forces won); the script should describe it as a bloody, indecisive clash."
+  ],
+  "visuals": [
+    {
+      "subject": "Roman Emperor Julian",
+      "queries": [
+        "Emperor Julian portrait painting",
+        "Roman Emperor Julian bust sculpture"
+      ]
+    },
+    {
+      "subject": "Sasanian King Shapur II",
+      "queries": [
+        "Shapur II Sasanian rock relief",
+        "Sasanian king crown coin Shapur"
+      ]
+    },
+    {
+      "subject": "Ancient Ctesiphon Arch",
+      "queries": [
+        "Taq-i Kisra Ctesiphon ruins today",
+        "Ctesiphon ancient ruins engraving"
+      ]
+    },
+    {
+      "subject": "Map of Roman Empire borders in 4th century",
+      "queries": [
+        "Roman Empire map 4th century Mesopotamia",
+        "Julian Persian expedition map"
+      ]
+    },
+    {
+      "subject": "Ancient Roman river fleet and galleys",
+      "queries": [
+        "Roman river warship engraving",
+        "Roman river fleet Danube model"
+      ]
+    },
+    {
+      "subject": "Mesopotamian desert wasteland",
+      "queries": [
+        "Mesopotamian desert landscape Iraq",
+        "Syrian desert wasteland photography"
+      ]
+    },
+    {
+      "subject": "Roman legionary armor and equipment",
+      "queries": [
+        "Roman legionary helmet and armor 4th century",
+        "Roman soldier reenactor 4th century"
+      ]
+    },
+    {
+      "subject": "Tigris River landscape",
+      "queries": [
+        "Tigris River Iraq landscape",
+        "Tigris river bank Samarra"
+      ]
+    },
+    {
+      "subject": "Emperor Jovian",
+      "queries": [
+        "Emperor Jovian coin",
+        "Emperor Jovian portrait"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "label": "S1",
+      "url": "https://en.wikipedia.org/wiki/Julian%27s_Persian_expedition",
+      "title": "Julian's Persian expedition",
+      "site": "wikipedia.org"
+    },
+    {
+      "label": "S2",
+      "url": "https://en.wikipedia.org/wiki/Battle_of_Samarra_(363)",
+      "title": "Battle of Samarra (363)",
+      "site": "wikipedia.org"
+    },
+    {
+      "label": "S3",
+      "url": "https://historiaromana.veertualia.com/julians-persian-gamble-the-philosopher-emperors-final-campaign-363-ad/",
+      "title": "Julian’s Persian Gamble: The Philosopher-Emperor's Final Campaign, 363 AD ~ HistoriaRomana",
+      "site": "veertualia.com"
+    },
+    {
+      "label": "S4",
+      "url": "http://www.iranicaonline.org/articles/sasanian-dynasty",
+      "title": "SASANIAN DYNASTY",
+      "site": "iranicaonline.org"
+    }
+  ],
+  "topic": "Julian's Persian expedition (363): the Roman Emperor burned his own supply fleet to force his men to advance, only to realize they were starving in a desert wasteland",
+  "series": "Doomed Expeditions"
+}

@@ -1,0 +1,143 @@
+id: ep094
+title: Why Did Most People Survive the Hindenburg Disaster? 😳
+series: The Last Hours
+description: Discover how most passengers and crew survived the legendary Hindenburg airship disaster in 1937.
+sources:
+- https://en.wikipedia.org/wiki/Hindenburg_disaster
+- https://www.worldhistory.org/article/2755/the-hindenburg-disaster/
+- https://web.archive.org/web/20170803055705/https://www.nytimes.com/2014/08/31/world/europe/werner-franz-survivor-of-the-hindenburgs-crew-dies-at-92.html?_r=0
+hashtags:
+- '#history'
+- '#hindenburg'
+- '#airship'
+tags:
+- Hindenburg
+- '1937'
+- airship
+- disaster
+- aviation history
+voice:
+  engine: kokoro
+  voice: am_fenrir
+  speed: 1.15
+beats:
+- text: The Hindenburg burned in thirty-two seconds, yet most people on board survived.
+  emphasis:
+  - burned in thirty-two seconds
+  - survived
+  visual:
+    source: url
+    url: https://upload.wikimedia.org/wikipedia/commons/3/35/Hindenburg_at_lakehurst.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    credit:
+      source: Wikimedia Commons
+      title: Hindenburg at lakehurst.jpg
+      credit: U.S. Department of the Navy. Bureau of Aeronautics. Naval Aircraft Factory, Philadelphia, Pennsylvania (USA).
+      license: Public domain
+      url: https://commons.wikimedia.org/wiki/File:Hindenburg_at_lakehurst.jpg
+    fallbacks:
+    - card
+    - color
+    motion: pan_right
+    focus_x: 0.5
+    focus_y: 0.5
+    card:
+      kind: fact
+      big: 32 SECONDS
+      small: THE ENTIRE DISASTER
+- text: Popular memory pictures a total loss of life.
+  emphasis:
+  - total loss of life
+  sfx: whoosh
+  visual:
+    source: url
+    url: https://upload.wikimedia.org/wikipedia/commons/8/84/Hindenburg_burning.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    credit:
+      source: Wikimedia Commons
+      title: Hindenburg burning.jpg
+      credit: Gus Pasquerella
+      license: Public domain
+      url: https://commons.wikimedia.org/wiki/File:Hindenburg_burning.jpg
+    fallbacks:
+    - color
+    motion: pan_left
+    focus_x: 0.5
+    focus_y: 0.5
+- text: Thirty-five individuals died among the ninety-seven on board.
+  emphasis:
+  - Thirty-five individuals
+  - ninety-seven on board
+  visual:
+    source: url
+    url: https://upload.wikimedia.org/wikipedia/commons/0/03/Hindenburg_disaster_%281%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    credit:
+      source: Wikimedia Commons
+      title: Hindenburg disaster (1).jpg
+      credit: Cofod, Arthur Jr
+      license: Public domain
+      url: https://commons.wikimedia.org/wiki/File:Hindenburg_disaster_(1).jpg
+    fallbacks:
+    - color
+    motion: pan_right
+    focus_x: 0.5
+    focus_y: 0.5
+- text: Cabin boy Werner Franz escaped after a burst water tank doused him.
+  emphasis:
+  - Werner Franz
+  - burst water tank
+  sfx: riser
+  pause_after: 0.4
+  visual:
+    source: card
+    card:
+      kind: fact
+      big: AGE 14
+      small: CABIN BOY SURVIVOR
+    motion: zoom_in
+- text: Captain Max Pruss also survived despite severe burns.
+  emphasis:
+  - Captain Max Pruss
+  - severe burns
+  visual:
+    source: url
+    url: https://upload.wikimedia.org/wikipedia/commons/5/59/Hindenburg_over_New_York_1937_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    credit:
+      source: Wikimedia Commons
+      title: Hindenburg over New York 1937 (cropped).jpg
+      credit: Associated Press
+      license: Public domain
+      url: https://commons.wikimedia.org/wiki/File:Hindenburg_over_New_York_1937_(cropped).jpg
+    fallbacks:
+    - color
+    motion: pan_right
+    focus_x: 0.5
+    focus_y: 0.5
+- text: Over sixty people were rescued alive from the wreckage.
+  emphasis:
+  - Over sixty people
+  - rescued alive
+  sfx: pop
+  visual:
+    source: url
+    url: https://thumb.wikimedia.org/wikipedia/commons/thumb/5/56/Hindenburg_disaster%2C_1937.jpg/1920px-Hindenburg_disaster%2C_1937.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
+    credit:
+      source: Wikimedia Commons
+      title: Hindenburg disaster, 1937.jpg
+      credit: Murray Becker / Associated Press
+      license: Public domain
+      url: https://commons.wikimedia.org/wiki/File:Hindenburg_disaster,_1937.jpg
+    fallbacks:
+    - color
+    motion: zoom_in
+    focus_x: 0.5
+    focus_y: 0.5
+- text: Most people on board survived when it burned.
+  emphasis:
+  - Most people
+  - survived
+  visual:
+    reuse: 1
+    motion: zoom_out
+    focus_x: 0.5
+    focus_y: 0.5
+depth_motion: true
+hook_text: MOST LIVED
