@@ -32,7 +32,9 @@ API = "https://generativelanguage.googleapis.com/v1beta/models"
 # Each ladder's Gemini models end with Google's alias for its newest model, so it still answers after the pinned
 # models retire. Gemma 4 (Apache-2.0) in the same project has its own free quota and reads images, but takes at
 # most 16,000 input tokens a minute, so it only answers prompts that small: scripts, picture checks, reviews.
-FLASH = ("gemini-3.8-flash", "gemini-3.7-flash", "gemini-3.6-flash", "gemini-3.5-flash", "gemini-3-flash-preview",
+# gemini-3.5-flash is left out: the channel's independent QA shares this project and pins it, so its daily quota
+# stays free for QA instead of being spent here first.
+FLASH = ("gemini-3.8-flash", "gemini-3.7-flash", "gemini-3.6-flash", "gemini-3-flash-preview",
          "gemini-flash-latest")
 FLASH_LITE = ("gemini-3.5-flash-lite", "gemini-3.1-flash-lite", "gemini-flash-lite-latest")
 # (The faster gemma-4-26b-a4b-it got simple facts wrong in testing.)
