@@ -1,0 +1,202 @@
+{
+  "viable": true,
+  "reason": "Both sources state each of 8 claims in their own words; single-source details were removed after independent QA.",
+  "story": "On 21 September 1921, workers at BASF's Oppau nitrogen fertilizer plant in Germany broke up a caked, hardened stockpile of ammonium sulfate nitrate with explosives, as they had done before. Hundreds of tons of the fertilizer exploded. More than five hundred people were killed and nearly two thousand more wounded, and the blast destroyed much of the town around the factory. Shortly before, a change to how the fertilizer was made had left it more explosive than anyone foresaw.",
+  "angle": "Workers used explosives to loosen a fertilizer pile everyone treated as safe, and a recent change in how it was made had turned it into a bomb.",
+  "claims": [
+    {
+      "claim": "The Oppau plant made nitrogen fertilizer.",
+      "sources": [
+        "S1",
+        "S2"
+      ],
+      "evidence": [
+        {
+          "source": "S1",
+          "quote": "The purpose of the chemical manufacturing at Oppau was the production of nitrogen fertilizers"
+        },
+        {
+          "source": "S2",
+          "quote": "Fabrication de produits azotés et d'engrais"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim": "The Oppau explosion happened on 21 September 1921.",
+      "sources": [
+        "S1",
+        "S2"
+      ],
+      "evidence": [
+        {
+          "source": "S1",
+          "quote": "On the morning of 21 September 1921, hundreds of tons of ammonium sulfate nitrate (ASN)"
+        },
+        {
+          "source": "S2",
+          "quote": "N° 14373 - 21/09/1921 - ALLEMAGNE - 00 - OPPAU"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim": "The stockpile exploded when workers broke up hardened, caked fertilizer with explosives.",
+      "sources": [
+        "S1",
+        "S2"
+      ],
+      "evidence": [
+        {
+          "source": "S1",
+          "quote": "decomposed explosively when piles of hardened fertilizer material were broken up with the help of explosives"
+        },
+        {
+          "source": "S2",
+          "quote": "l’accident fait suite à un tir d’explosif effectué dans le stock de sulfo-nitrate d’ammonium pour dérocher l’engrais pris en masse"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim": "Hundreds of tons of ammonium sulfate nitrate fertilizer exploded.",
+      "sources": [
+        "S1",
+        "S2"
+      ],
+      "evidence": [
+        {
+          "source": "S1",
+          "quote": "hundreds of tons of ammonium sulfate nitrate (ASN) fertilizer, kept in a storage silo at the Oppau factory site, decomposed explosively"
+        },
+        {
+          "source": "S2",
+          "quote": "une explosion détruit un bâtiment abritant 4 500 t de sulfo-nitrate d’ammonium 50-50"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim": "The explosion killed more than five hundred people.",
+      "sources": [
+        "S1",
+        "S2"
+      ],
+      "evidence": [
+        {
+          "source": "S1",
+          "quote": "killed more than five hundred people, wounded nearly two thousand more"
+        },
+        {
+          "source": "S2",
+          "quote": "Le bilan de la catastrophe est très lourd : 561 morts"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim": "Nearly two thousand more people were wounded.",
+      "sources": [
+        "S1",
+        "S2"
+      ],
+      "evidence": [
+        {
+          "source": "S1",
+          "quote": "killed more than five hundred people, wounded nearly two thousand more"
+        },
+        {
+          "source": "S2",
+          "quote": "561 morts, 1952 blessés et plus de 7 500 sans-abris"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim": "The blast destroyed much of the town around the factory, not only the plant.",
+      "sources": [
+        "S1",
+        "S2"
+      ],
+      "evidence": [
+        {
+          "source": "S1",
+          "quote": "destroyed a large part of the factory site and surrounding residential area"
+        },
+        {
+          "source": "S2",
+          "quote": "Près de 80 % des bâtiments de la ville d’Oppau sont détruits"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim": "A change to how the fertilizer was made, shortly before the accident, left it more explosive than anyone foresaw.",
+      "sources": [
+        "S1",
+        "S2"
+      ],
+      "evidence": [
+        {
+          "source": "S1",
+          "quote": "by the application of a new spray-drying procedure some time prior to the accident, constituted an unforeseen disaster in waiting"
+        },
+        {
+          "source": "S2",
+          "quote": "Quelques mois avant celui-ci, des modifications apportées au procédé de fabrication avait permis d’obtenir un engrais moins chargé en humidité (2 % au lieu de 3 à 4 %), avec une densité apparente plus faible, mais le rendant plus explosif"
+        }
+      ],
+      "confidence": "high"
+    }
+  ],
+  "disputed": [
+    "The precise technical cause and mechanism of the detonation are described with varying degrees of certainty; S1 notes the causes were never completely understood and re-evaluates the chemical properties, while S2 details an official 1925 inquiry conclusion regarding heterogeneous composition and mixture ratios. A script should attribute specific detailed findings to the subsequent official investigations or technical reassessments.",
+    "Crater size, the share of buildings destroyed, how often the procedure had been done, and the 1919 tests each appear on only one site: leave them out."
+  ],
+  "visuals": [
+    {
+      "subject": "Oppau factory ruins after the explosion",
+      "queries": [
+        "Oppau explosion 1921 ruins",
+        "Oppau explosion damage photograph"
+      ]
+    },
+    {
+      "subject": "Ludwigshafen cityscape or factory before the disaster",
+      "queries": [
+        "BASF Oppau factory 1910s",
+        "Ludwigshafen Rhine river historic"
+      ]
+    },
+    {
+      "subject": "Newspaper front page covering the Oppau disaster",
+      "queries": [
+        "Oppau explosion newspaper 1921",
+        "Explosion in Oppau headline"
+      ]
+    },
+    {
+      "subject": "Map of the region showing Ludwigshafen, Mannheim, and Heidelberg",
+      "queries": [
+        "Map of Ludwigshafen Mannheim 1920s",
+        "Rhine river map historic Germany"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "label": "S1",
+      "url": "https://www.ffi.no/en/publications-archive/a-factual-clarification-and-chemical-technical-reassessment-of-the-1921-oppau-explosion-disaster-the-unforeseen-explosivity-of-porous-ammonium-sulfate-nitrate-fertilizer",
+      "title": "A factual clarification and chemical-technical reassessment of the 1921 Oppau explosion disaster - the unforeseen explosivity of porous ammonium sulfate nitrate fertilizer",
+      "site": "ffi.no"
+    },
+    {
+      "label": "S2",
+      "url": "https://www.aria.developpement-durable.gouv.fr/fiche_detaillee/14373/",
+      "title": "Explosion d'une usine chimique - La référence du retour d'expérience sur accidents technologiques",
+      "site": "gouv.fr"
+    }
+  ],
+  "topic": "Oppau explosion (1921): a routine blast to break up caked fertilizer preceded a stockpile detonation",
+  "series": "The Last Hours"
+}
