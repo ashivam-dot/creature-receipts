@@ -48,10 +48,6 @@ SMALL_SIDE = 600
 WORKERS = 4
 PER_SEARCH = 30
 FORMATS = ("image/jpeg", "image/png", "image/tiff", "image/webp")
-# Flickr Commons scans marked "no known copyright restrictions" are public domain in the US only when published
-# before this year's cutoff (95 years), so they're accepted only with a date that old.
-NKCR = re.compile(r"no restrictions|no known copyright", re.I)
-NKCR_BEFORE = 1931
 # Openverse lets anonymous clients make about 20 requests a minute.
 OPENVERSE_GAP = 3.2
 _openverse_lock = threading.Lock()
@@ -75,10 +71,9 @@ def beat_year(beat: dict) -> int | None:
 
 
 def _license_ok(license_name: str, year: int | None) -> bool:
-    name = (license_name or "").strip()
-    if _COMMONS_OK.match(name):
-        return True
-    return bool(NKCR.search(name)) and year is not None and year < NKCR_BEFORE
+    # Flickr Commons' "no known copyright restrictions" isn't a license, and its date may not be a publication
+    # date, so the control's intake holds such a beat (ep090, 2026-10-06): only named open licenses count.
+    return bool(_COMMONS_OK.match((license_name or "").strip()))
 
 
 def _commons_candidate(page: dict, route: str) -> dict | None:
