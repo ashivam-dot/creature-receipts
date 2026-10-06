@@ -1887,7 +1887,7 @@ def write_status(run: Run, result: str) -> dict:
         "failed_posts": [{"id": e["id"], "error": e["record"].get("error")} for e in eps
                          if e["state"] == "error" and not _resending(e["record"])],
         "not_live": run.not_live,
-        "llm": {"calls": len(llm.calls) + len(run.worker_calls), "by_model": by_model, "out_of_quota": sorted(llm._spent)},
+        "llm": {"calls": len(llm.calls) + len(run.worker_calls), "by_model": by_model, "out_of_quota": sorted(llm._spent | {m for m in llm._day_spent if llm._out(m)})},
         "renders": run.renders,
         "daily_done": state.get("daily_done"),
         "minutes_this_month": month_minutes() + (run.minutes() + 2 if os.environ.get("GITHUB_ACTIONS") else 0),

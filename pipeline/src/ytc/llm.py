@@ -103,6 +103,10 @@ OVERLOAD_WAIT = 1500
 CURSOR_FALLBACK = True
 
 _spent: set[str] = set()
+# Gemini models that answered "out of today's free quota", until when (time.monotonic()). Spent Flash models have
+# answered again well inside the same Pacific day (2026-10-06), so a long worker asks again after DAY_RECHECK.
+_day_spent: dict[str, float] = {}
+DAY_RECHECK = 30 * 60
 # Set when Gemini refuses the key itself (401/403, or an invalid key): every Gemini model is out for the process,
 # and the ladder goes on to the other providers.
 _key_refused = ""
@@ -290,7 +294,8 @@ def generate(
 
 
 def _out(model: str) -> bool:
-    return model in _spent or (bool(_key_refused) and ":" not in model)
+    return (model in _spent or _day_spent.get(model, 0) > time.monotonic()
+            or (bool(_key_refused) and ":" not in model))
 
 
 def gemini_spent() -> bool:
@@ -377,7 +382,7 @@ def _ask(model: str, body: dict, schema: dict | None, purpose: str):
             kind, delay = _quota_kind(error)
             if kind == "day":
                 log.info("%s is out of today's free quota%s", model, _day_limit(error))
-                _spent.add(model)
+                _day_spent[model] = time.monotonic() + DAY_RECHECK
                 return _NO_ANSWER
             if (cap := _input_cap(error)) and _tokens(body, model) > cap * 0.8:
                 log.info("%s takes %d input tokens a minute, too few for this prompt", model, cap)
