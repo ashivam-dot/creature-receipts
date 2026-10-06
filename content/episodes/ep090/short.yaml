@@ -1,0 +1,164 @@
+id: ep090
+title: Why Did a Wealthy Texas School Use Free Waste Gas? ⚠️
+series: The Last Hours
+description: On March 18, 1937, a massive natural gas explosion destroyed the New London School in Texas, killing nearly 300
+  students and teachers and changing safety laws forever.
+sources:
+- https://en.wikipedia.org/wiki/New_London_School_explosion
+- https://response.restoration.noaa.gov/about/media/todays-responders-1937-texas-tragedy-still-carries-lessons-avoiding-disaster.html
+- https://www.tsl.texas.gov/lobbyexhibits/extraextra/newlondonschoolexplosion
+- https://aoghs.org/oil-almanac/new-london-texas-school-explosion/
+- https://www.kltv.com/story/25006091/a-look-back-80-years-after-the-new-london-school-explosion/
+- https://web.archive.org/web/20220210074027/https://gohmert.house.gov/news/documentsingle.aspx?DocumentID=211650
+hashtags:
+- '#history'
+- '#texas'
+- '#disaster'
+tags:
+- New London School
+- '1937'
+- Texas history
+- gas explosion
+- mercaptan
+voice:
+  engine: kokoro
+  voice: am_fenrir
+  speed: 1.15
+beats:
+- text: A wealthy Texas school chose free waste gas to save money.
+  emphasis:
+  - free waste gas
+  - save money
+  visual:
+    source: url
+    url: https://upload.wikimedia.org/wikipedia/commons/9/9c/New_London_School_before_explosion.webp?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    credit:
+      source: Wikimedia Commons
+      title: New London School before explosion.webp
+      credit: Unknown authorUnknown author
+      license: Public domain
+      url: https://commons.wikimedia.org/wiki/File:New_London_School_before_explosion.webp
+    fallbacks:
+    - color
+    motion: pan_right
+    focus_x: 0.5
+    focus_y: 0.5
+- text: Most people assume professionals inspected the gas system.
+  emphasis:
+  - most people assume
+  - professionals inspected
+  visual:
+    source: url
+    url: https://thumb.wikimedia.org/wikipedia/commons/thumb/6/65/Map_of_East_Texas_%28Kilgore%29_Oil_Field.png/1280px-Map_of_East_Texas_%28Kilgore%29_Oil_Field.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
+    credit:
+      source: Wikimedia Commons
+      title: Map of East Texas (Kilgore) Oil Field.png
+      credit: E.D. Ray
+      license: Public domain
+      url: https://commons.wikimedia.org/wiki/File:Map_of_East_Texas_(Kilgore)_Oil_Field.png
+    fallbacks:
+    - color
+    motion: zoom_in
+    focus_x: 0.5
+    focus_y: 0.5
+- text: Officials actually tapped a local residue line.
+  emphasis:
+  - tapped a local residue line
+  sfx: whoosh
+  visual:
+    source: url
+    url: https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9b/Oil_Field_Scene%2C_East_Texas_%287590755468%29.jpg/960px-Oil_Field_Scene%2C_East_Texas_%287590755468%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
+    credit:
+      source: Wikimedia Commons
+      title: Oil Field Scene, East Texas (7590755468).jpg
+      credit: SMU Central University Libraries
+      license: No restrictions
+      url: https://commons.wikimedia.org/wiki/File:Oil_Field_Scene,_East_Texas_(7590755468).jpg
+    fallbacks:
+    - color
+    motion: pan_right
+    focus_x: 0.5
+    focus_y: 0.5
+- text: Untreated gas carried no warning scent, hiding a leak beneath the floors.
+  emphasis:
+  - no warning scent
+  - hiding a leak
+  visual:
+    source: url
+    url: https://thumb.wikimedia.org/wikipedia/commons/thumb/1/13/INP_Photos_of_New_London_School_explosion_%281%29.jpg/1920px-INP_Photos_of_New_London_School_explosion_%281%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
+    credit:
+      source: Wikimedia Commons
+      title: INP Photos of New London School explosion (1).jpg
+      credit: International News Photos
+      license: Public domain
+      url: https://commons.wikimedia.org/wiki/File:INP_Photos_of_New_London_School_explosion_(1).jpg
+    fallbacks:
+    - card
+    - color
+    motion: pan_left
+    focus_x: 0.5
+    focus_y: 0.5
+    card:
+      kind: fact
+      big: ODORLESS
+      small: Unrefined natural gas
+- text: An electric sander then sparked the trapped fuel.
+  emphasis:
+  - electric sander
+  - sparked the trapped fuel
+  sfx: riser
+  visual:
+    source: url
+    url: https://upload.wikimedia.org/wikipedia/commons/3/3c/New_London_School_explosion.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    credit:
+      source: Wikimedia Commons
+      title: New London School explosion.jpg
+      credit: Unknown authorUnknown author
+      license: Public domain
+      url: https://commons.wikimedia.org/wiki/File:New_London_School_explosion.jpg
+    fallbacks:
+    - card
+    - color
+    motion: zoom_out
+    focus_x: 0.5
+    focus_y: 0.5
+    card:
+      kind: dateline
+      big: March 18, 1937
+      small: New London, Texas
+- text: Nearly three hundred lives were lost, creating today's mercaptan laws.
+  emphasis:
+  - nearly three hundred lives
+  - mercaptan laws
+  sfx: pop
+  pause_after: 0.4
+  visual:
+    source: url
+    url: https://upload.wikimedia.org/wikipedia/commons/0/0e/Cenotaph_top.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    credit:
+      source: Wikimedia Commons
+      title: Cenotaph top.jpg
+      credit: Lothar1976 (talk) (Uploads)
+      license: Public domain
+      url: https://commons.wikimedia.org/wiki/File:Cenotaph_top.jpg
+    fallbacks:
+    - card
+    - color
+    motion: pan_left
+    focus_x: 0.5
+    focus_y: 0.5
+    card:
+      kind: fact
+      big: '300'
+      small: Lives lost
+- text: That tragedy happened because a wealthy Texas school chose free waste gas.
+  emphasis:
+  - that tragedy
+  - free waste gas
+  visual:
+    reuse: 1
+    motion: zoom_out
+    focus_x: 0.5
+    focus_y: 0.5
+depth_motion: true
+hook_text: SAVING MONEY, LOSING LIVES

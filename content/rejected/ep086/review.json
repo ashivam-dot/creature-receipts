@@ -1,0 +1,290 @@
+{
+  "rounds": [
+    {
+      "at": "2026-10-06T09:19:44+05:30",
+      "check": {
+        "duration": 26.95,
+        "words": 66,
+        "integrated_lufs": -14.3,
+        "true_peak_dbfs": -1.7,
+        "warnings": [],
+        "speech_differences": [
+          "'an' heard as '(nothing)'",
+          "'yoshisada' heard as 'yashasada' after 'may 1333 nitta'",
+          "base.en: 'nitta yoshisada' heard as 'nita yashasada' after 'in may 1333'",
+          "base.en: 'kamakura' heard as 'kamekura' after 'nitta yoshisada besieged'",
+          "base.en: 'chronicles state' heard as 'chronicle stated' after 'of wooden shielding'"
+        ],
+        "speech_error": null,
+        "sources": [
+          "Wikimedia Commons",
+          "designed card",
+          "Wikimedia Commons",
+          "designed card",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wellcome Collection",
+          "Wikimedia Commons"
+        ],
+        "speech_verification": {
+          "heard": "Imperial commander threw his sword and made the tide vanish. In May 1333, Nitta Yashasada besieged Kamakura. Seven mountain passes contained guarded checkpoints. Western passes had rows of wooden shielding. Chronicles state he threw his sword and the sea parted. Analysis indicates he timed a low tide. Forces breached the capital ending Shogunate rule. An imperial commander threw his sword and made the tide vanish.",
+          "model": "small.en",
+          "media_sha256": "6bd5052e35680e4db5a36e2511869a8e9f3c4fdcb22da54c34aa481bbcec6d6b",
+          "primary_differences": [
+            "'an' heard as '(nothing)'",
+            "'yoshisada' heard as 'yashasada' after 'may 1333 nitta'"
+          ],
+          "differences": [
+            "'an' heard as '(nothing)'",
+            "'yoshisada' heard as 'yashasada' after 'may 1333 nitta'",
+            "base.en: 'nitta yoshisada' heard as 'nita yashasada' after 'in may 1333'",
+            "base.en: 'kamakura' heard as 'kamekura' after 'nitta yoshisada besieged'",
+            "base.en: 'chronicles state' heard as 'chronicle stated' after 'of wooden shielding'"
+          ],
+          "corroboration": {
+            "model": "base.en",
+            "heard": "Imperial commander threw his sword and made the tide vanish. In May 1333, Nita Yashasada besieged Kamekura. Seven mountain passes contained guarded checkpoints. Western passes had rows of wooden shielding. Chronicle stated he threw his sword and the sea parted. Analysis indicates he timed a low tide. Forces breached the capital, ending Shogunate rule. Imperial commander threw his sword and made the tide vanish.",
+            "differences": [
+              "'an' heard as '(nothing)'",
+              "'nitta yoshisada' heard as 'nita yashasada' after 'in may 1333'",
+              "'kamakura' heard as 'kamekura' after 'nitta yoshisada besieged'",
+              "'chronicles state' heard as 'chronicle stated' after 'of wooden shielding'",
+              "'an' heard as '(nothing)' after 'ending shogunate rule'"
+            ],
+            "resolved": []
+          }
+        }
+      },
+      "media_sha256": "6bd5052e35680e4db5a36e2511869a8e9f3c4fdcb22da54c34aa481bbcec6d6b",
+      "scores": {
+        "hook": 4,
+        "clarity": 3,
+        "payoff": 4,
+        "visuals": 3,
+        "loop": 2,
+        "accuracy": 3
+      },
+      "notes": {
+        "hook": "Intriguing premise that grabs attention immediately, though framed too definitively as fact.",
+        "clarity": "Confusing transition from mountain pass defenses to the sea without mentioning the coastal bypass around the promontory.",
+        "payoff": "The reveal of the calculated low tide grounding the myth provides a solid historical payoff.",
+        "visuals": "Beats 5 and 6 place a small manuscript page inside massive blank borders, making it unreadable on mobile.",
+        "loop": "Repeating the exact sentence from beat 1 in beat 8 causes an awkward duplicate when the Short replays.",
+        "accuracy": "Beats 1 and 8 state that the sword made the tide vanish as established fact, violating the guidance to attribute the miracle to legend."
+      },
+      "frames": [
+        {
+          "beat": 5,
+          "problem": "The historical manuscript image is floating inside large gray borders and is too small to see at phone size."
+        },
+        {
+          "beat": 6,
+          "problem": "The wide manuscript image is too small to decipher details at phone size."
+        }
+      ],
+      "speech": [
+        {
+          "beat": 2,
+          "word": "Yoshisada",
+          "respelling": "yoe she sah dah"
+        },
+        {
+          "beat": 2,
+          "word": "Kamakura",
+          "respelling": "kah mah koo rah"
+        }
+      ],
+      "rewrite": [
+        "Beat 1: Change to 'According to legend, an imperial commander cast his sword and made the tide vanish.'",
+        "Beat 4: Change to 'Blocked by wooden shields at the passes, he turned toward the coastal cape.'",
+        "Beat 8: Change to 'Centuries of samurai rule collapsed because...' to lead seamlessly into Beat 1."
+      ],
+      "better_than_last": "It grounds a mythical tale with historical analysis more effectively than earlier episodes.",
+      "judge": "gemini-3.8-flash",
+      "passed": false
+    },
+    {
+      "at": "2026-10-06T09:25:13+05:30",
+      "check": {
+        "duration": 28.2,
+        "words": 70,
+        "integrated_lufs": -14.3,
+        "true_peak_dbfs": -1.7,
+        "warnings": [],
+        "speech_differences": [
+          "'nitta yoshisada marched' heard as 'nidayasha sought a march' after 'passes protected kamakura'",
+          "base.en: 'nitta yoshisada' heard as 'nita yashasada' after 'passes protected kamakura'",
+          "base.en: 'blocked' heard as 'locked' after 'the shogunate capital'",
+          "base.en: '(nothing)' heard as 'century' after 'destroyed the regency'"
+        ],
+        "speech_error": null,
+        "sources": [
+          "Wikimedia Commons",
+          "designed card",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons"
+        ],
+        "speech_verification": {
+          "heard": "Legend says an Imperial commander cast his sword and the tide vanished. In May 1333, seven guarded passes protected Kamakura. Nidayasha sought a march to capture the shogunate capital. Blocked by wooden shields at the passes, he turned toward the coastal cape. Chronicles claimed a miracle but he timed an extreme low tide. Imperial forces stormed the city and destroyed the Regency. Centuries of samurai rule collapsed where the ocean vanished.",
+          "model": "small.en",
+          "media_sha256": "690d768a8da69139574b391e5d06141fc2c0d01df9a2156fa7947b336ff0399b",
+          "primary_differences": [
+            "'nitta yoshisada marched' heard as 'nidayasha sought a march' after 'passes protected kamakura'"
+          ],
+          "differences": [
+            "'nitta yoshisada marched' heard as 'nidayasha sought a march' after 'passes protected kamakura'",
+            "base.en: 'nitta yoshisada' heard as 'nita yashasada' after 'passes protected kamakura'",
+            "base.en: 'blocked' heard as 'locked' after 'the shogunate capital'",
+            "base.en: '(nothing)' heard as 'century' after 'destroyed the regency'"
+          ],
+          "corroboration": {
+            "model": "base.en",
+            "heard": "Legend says an Imperial commander cast his sword and the tide vanished. In May 1333, seven guarded passes protected Kamakura. Nita Yashasada marched to capture the shogunate capital. Locked by wooden shields at the passes, he turned toward the coastal cape. Chronicles claimed a miracle, but he timed an extreme low tide. Imperial forces stormed the city and destroyed the regency. century centuries of samurai rule collapsed where the ocean vanished",
+            "differences": [
+              "'nitta yoshisada' heard as 'nita yashasada' after 'passes protected kamakura'",
+              "'blocked' heard as 'locked' after 'the shogunate capital'",
+              "'(nothing)' heard as 'century' after 'destroyed the regency'"
+            ],
+            "resolved": []
+          }
+        }
+      },
+      "media_sha256": "690d768a8da69139574b391e5d06141fc2c0d01df9a2156fa7947b336ff0399b",
+      "scores": {
+        "hook": 5,
+        "clarity": 5,
+        "payoff": 5,
+        "visuals": 5,
+        "loop": 5,
+        "accuracy": 5
+      },
+      "notes": {
+        "hook": "Strong opening that introduces a specific historical mystery without being generic.",
+        "clarity": "The transition from the mountain passes to the coastal tactical pivot is very easy to follow.",
+        "payoff": "The explanation of the 'miracle' being a timed low tide is a great historical payoff.",
+        "visuals": "Excellent use of period-appropriate ukiyo-e prints and high-quality armor reconstructions.",
+        "loop": "The word 'vanished' creates a perfect thematic and verbal bridge back to the start.",
+        "accuracy": "Perfectly balanced the legendary account with the probable historical reality as required."
+      },
+      "frames": [],
+      "speech": [
+        {
+          "beat": 2,
+          "word": "Kamakura",
+          "respelling": "kah mah koo rah"
+        },
+        {
+          "beat": 3,
+          "word": "Yoshisada",
+          "respelling": "yo she sah dah"
+        }
+      ],
+      "rewrite": [],
+      "better_than_last": "This script handles the distinction between primary source legend and historical analysis much more effectively than the simpler narrative of the Winton rescue train.",
+      "judge": "gemini-3-flash-preview",
+      "passed": false
+    },
+    {
+      "at": "2026-10-06T09:28:05+05:30",
+      "check": {
+        "duration": 28.43,
+        "words": 70,
+        "integrated_lufs": -14.4,
+        "true_peak_dbfs": -1.8,
+        "warnings": [],
+        "speech_differences": [
+          "'nitta' heard as 'nida' after 'passes protected kamakura'",
+          "base.en: 'nitta' heard as 'nita' after 'passes protected kamakura'",
+          "base.en: 'blocked' heard as 'locked' after 'the shogunate capital'",
+          "base.en: 'centuries' heard as 'century is' after 'destroyed the regency'"
+        ],
+        "speech_error": null,
+        "sources": [
+          "Wikimedia Commons",
+          "designed card",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons"
+        ],
+        "speech_verification": {
+          "heard": "Legend says an Imperial commander cast his sword and the tide vanished. In May 1333, seven guarded passes protected Kamakura. Nida Yoshisada marched to capture the shogunate capital. Blocked by wooden shields at the passes, he turned toward the coastal cape. Chronicles claimed a miracle but he timed an extreme low tide. Imperial forces stormed the city and destroyed the Regency. Centuries of samurai rule collapsed where the ocean vanished.",
+          "model": "small.en",
+          "media_sha256": "bdaafd320941e3eb6ccbb9fecbc6abf25097e945ec55a91314577079531578dc",
+          "primary_differences": [
+            "'nitta' heard as 'nida' after 'passes protected kamakura'"
+          ],
+          "differences": [
+            "'nitta' heard as 'nida' after 'passes protected kamakura'",
+            "base.en: 'nitta' heard as 'nita' after 'passes protected kamakura'",
+            "base.en: 'blocked' heard as 'locked' after 'the shogunate capital'",
+            "base.en: 'centuries' heard as 'century is' after 'destroyed the regency'"
+          ],
+          "corroboration": {
+            "model": "base.en",
+            "heard": "Legend says an Imperial commander cast his sword and the tide vanished. In May 1333, seven guarded passes protected Kamakura. Nita Yoshisada marched to capture the Shogunate capital. Locked by wooden shields at the passes, he turned toward the coastal cape. Chronicles claimed a miracle, but he timed an extreme low tide. Imperial forces stormed the city and destroyed the Regency. century's of samurai rule collapsed where the ocean vanished",
+            "differences": [
+              "'nitta' heard as 'nita' after 'passes protected kamakura'",
+              "'blocked' heard as 'locked' after 'the shogunate capital'",
+              "'centuries' heard as 'century is' after 'destroyed the regency'"
+            ],
+            "resolved": []
+          }
+        }
+      },
+      "media_sha256": "bdaafd320941e3eb6ccbb9fecbc6abf25097e945ec55a91314577079531578dc",
+      "scores": {
+        "hook": 5,
+        "clarity": 5,
+        "payoff": 5,
+        "visuals": 3,
+        "loop": 5,
+        "accuracy": 3
+      },
+      "notes": {
+        "hook": "The hook uses legendary imagery to create immediate interest without being generic.",
+        "clarity": "The script clearly explains the transition from the tactical problem to the strategic solution.",
+        "payoff": "The historical explanation of the miracle provides a satisfying resolution to the hook.",
+        "visuals": "The video includes anachronistic photographs and a print of a different battle.",
+        "loop": "The mirrored use of the 'vanishing' tide creates a smooth and professional loop.",
+        "accuracy": "Beat 3 uses an image of the Battle of Hyogo to depict the Siege of Kamakura."
+      },
+      "frames": [
+        {
+          "beat": 3,
+          "problem": "The ukiyo-e print depicts the Battle of Hyogo, not the Siege of Kamakura."
+        },
+        {
+          "beat": 4,
+          "problem": "A photograph from 1935 is anachronistic for a 14th-century battle."
+        },
+        {
+          "beat": 6,
+          "problem": "A modern 2020 photograph is anachronistic for depicting 1333."
+        }
+      ],
+      "speech": [
+        {
+          "beat": 3,
+          "word": "Nitta",
+          "respelling": "nit tah"
+        }
+      ],
+      "rewrite": [
+        "Beat 3: Nitta Yoshisada led imperial forces to besiege and capture the capital.",
+        "Beat 4: Blocked by wooden shields at the mountain passes, he turned toward the sea."
+      ],
+      "better_than_last": "This Short handles the explanation of a 'miraculous' vanishing more effectively than the mystery in episode 053.",
+      "judge": "gemini-3-flash-preview",
+      "passed": false
+    }
+  ],
+  "best_round": 2,
+  "verdict": "rejected",
+  "reason": "low scores: visuals, accuracy; 3 frame problems; 1 speech problems",
+  "rejected_at": "2026-10-06T09:28:05+05:30"
+}

@@ -1,0 +1,256 @@
+{
+  "rounds": [
+    {
+      "at": "2026-10-06T09:48:35+05:30",
+      "check": {
+        "duration": 28.79,
+        "words": 67,
+        "integrated_lufs": -14.5,
+        "true_peak_dbfs": -1.8,
+        "warnings": [],
+        "speech_differences": [
+          "'oppau' heard as 'appel' after 'workers at the'",
+          "'a' heard as '(nothing)' after 'wounded nearly 2000'",
+          "'oppau' heard as 'appel' after 'workers at the'",
+          "base.en: 'oppau' heard as 'opel' after 'workers at the'"
+        ],
+        "speech_error": null,
+        "sources": [
+          "Wikimedia Commons",
+          "designed card",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "designed card",
+          "Wikimedia Commons"
+        ],
+        "speech_verification": {
+          "heard": "Workers at the Appel plant used dynamite to loosen their fertilizer. They believed the hardened nitrogen stockpile was safe and stable. On September 21, 1921, a routine blast triggered a massive detonation. The explosion killed over 500 people and wounded nearly 2,000. Manufacturing change had secretly turned the pile into a bomb. Unsuspecting workers at the Appel plant used dynamite to loosen their fertilizer.",
+          "model": "small.en",
+          "media_sha256": "68890d872096222ce9eb4308fe26a664615ec4b66610a36f89bc3911b42f0f21",
+          "primary_differences": [
+            "'oppau' heard as 'appel' after 'workers at the'",
+            "'a' heard as '(nothing)' after 'wounded nearly 2000'",
+            "'oppau' heard as 'appel' after 'workers at the'"
+          ],
+          "differences": [
+            "'oppau' heard as 'appel' after 'workers at the'",
+            "'a' heard as '(nothing)' after 'wounded nearly 2000'",
+            "'oppau' heard as 'appel' after 'workers at the'",
+            "base.en: 'oppau' heard as 'opel' after 'workers at the'"
+          ],
+          "corroboration": {
+            "model": "base.en",
+            "heard": "Workers at the Opel Plant used Dynamite to loosen their fertilizer. They believed the hardened nitrogen stockpile was safe and stable. On September 21, 1921, a routine blast triggered a massive detonation. The explosion killed over 500 people and wounded nearly 2,000. Manufacturing change had secretly turned the pile into a bomb. Unsuspecting workers at the Opel Plant used Dynamite to loosen their fertilizer.",
+            "differences": [
+              "'oppau' heard as 'opel' after 'workers at the'",
+              "'a' heard as '(nothing)' after 'wounded nearly 2000'",
+              "'oppau' heard as 'opel' after 'workers at the'"
+            ],
+            "resolved": []
+          }
+        }
+      },
+      "media_sha256": "68890d872096222ce9eb4308fe26a664615ec4b66610a36f89bc3911b42f0f21",
+      "scores": {
+        "hook": 4,
+        "clarity": 5,
+        "payoff": 4,
+        "visuals": 5,
+        "loop": 5,
+        "accuracy": 4
+      },
+      "notes": {
+        "hook": "Strong on-screen text and immediate stakes.",
+        "clarity": "Simple, linear progression of events.",
+        "payoff": "The reveal of the manufacturing change explains the 'hidden bomb' hook.",
+        "visuals": "High-quality archival images that fit the narrative perfectly.",
+        "loop": "Last line leads perfectly back into the first.",
+        "accuracy": "The word 'secretly' in beat 5 is not supported; claims say it was 'unforeseen' or a change happened, not that it was kept secret."
+      },
+      "frames": [],
+      "speech": [
+        {
+          "beat": 1,
+          "word": "Oppau",
+          "respelling": "oh po pow"
+        },
+        {
+          "beat": 6,
+          "word": "Oppau",
+          "respelling": "oh po pow"
+        }
+      ],
+      "rewrite": [
+        "Beat 5: A manufacturing change had unknowingly turned the pile into a bomb."
+      ],
+      "better_than_last": "Better loop integration than ep054 and a clearer hook than the typical 'Imagine...' starters.",
+      "judge": "gemma-4-31b-it",
+      "passed": false
+    },
+    {
+      "at": "2026-10-06T09:57:03+05:30",
+      "check": {
+        "duration": 29.33,
+        "words": 67,
+        "integrated_lufs": -14.5,
+        "true_peak_dbfs": -1.8,
+        "warnings": [],
+        "speech_differences": [
+          "'oppau' heard as 'opopow' after 'workers at the'",
+          "'a' heard as '(nothing)' after 'wounded nearly 2000'",
+          "'oppau' heard as 'opopow' after 'workers at the'",
+          "base.en: 'oppau' heard as 'opopow' after 'workers at the'"
+        ],
+        "speech_error": null,
+        "sources": [
+          "Wikimedia Commons",
+          "designed card",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "designed card",
+          "Wikimedia Commons"
+        ],
+        "speech_verification": {
+          "heard": "Workers at the Opopow plant used dynamite to loosen their fertilizer. They believed the hardened nitrogen stockpile was safe and stable. On September 21, 1921, a routine blast triggered a massive detonation. The explosion killed over 500 people and wounded nearly 2,000. Manufacturing change had secretly turned the pile into a bomb. Unsuspecting workers at the Opopow plant used dynamite to loosen their fertilizer.",
+          "model": "small.en",
+          "media_sha256": "af328b7f9f7f917c02420e670add018bcbb4f2b2f495898116acf3287aff1299",
+          "primary_differences": [
+            "'oppau' heard as 'opopow' after 'workers at the'",
+            "'a' heard as '(nothing)' after 'wounded nearly 2000'",
+            "'oppau' heard as 'opopow' after 'workers at the'"
+          ],
+          "differences": [
+            "'oppau' heard as 'opopow' after 'workers at the'",
+            "'a' heard as '(nothing)' after 'wounded nearly 2000'",
+            "'oppau' heard as 'opopow' after 'workers at the'",
+            "base.en: 'oppau' heard as 'opopow' after 'workers at the'"
+          ],
+          "corroboration": {
+            "model": "base.en",
+            "heard": "Workers at the Opopow plant used dynamite to loosen their fertilizer. They believed the hardened nitrogen stockpile was safe and stable. On September 21, 1921, a routine blast triggered a massive detonation. The explosion killed over 500 people and wounded nearly 2,000. Manufacturing change had secretly turned the pile into a bomb. Unsuspecting workers at the Opopow plant used dynamite to loosen their fertilizer.",
+            "differences": [
+              "'oppau' heard as 'opopow' after 'workers at the'",
+              "'a' heard as '(nothing)' after 'wounded nearly 2000'",
+              "'oppau' heard as 'opopow' after 'workers at the'"
+            ],
+            "resolved": []
+          }
+        }
+      },
+      "media_sha256": "af328b7f9f7f917c02420e670add018bcbb4f2b2f495898116acf3287aff1299",
+      "scores": {
+        "hook": 5,
+        "clarity": 5,
+        "payoff": 4,
+        "visuals": 5,
+        "loop": 5,
+        "accuracy": 3
+      },
+      "notes": {
+        "hook": "Strong, direct opening with an intriguing hook.",
+        "clarity": "Clear and easy to follow, one idea per beat.",
+        "payoff": "The twist about the manufacturing change is effective.",
+        "visuals": "Striking, period-appropriate images.",
+        "loop": "The loop is seamless.",
+        "accuracy": "The word 'secretly' in beat 5 is not supported by the research claims, which describe the change as 'unforeseen'."
+      },
+      "frames": [],
+      "speech": [],
+      "rewrite": [
+        "Beat 5: Change 'secretly turned the pile into a bomb' to 'turned the pile into an unforeseen bomb'"
+      ],
+      "better_than_last": "This Short has a more cohesive narrative structure and a stronger loop than previous examples.",
+      "judge": "gemma-4-31b-it",
+      "passed": false
+    },
+    {
+      "at": "2026-10-06T10:05:28+05:30",
+      "check": {
+        "duration": 28.97,
+        "words": 67,
+        "integrated_lufs": -14.5,
+        "true_peak_dbfs": -1.9,
+        "warnings": [],
+        "speech_differences": [
+          "'oppau' heard as 'appel' after 'workers at the'",
+          "'a' heard as '(nothing)' after 'wounded nearly 2000'",
+          "'oppau' heard as 'appel' after 'workers at the'",
+          "base.en: 'oppau' heard as 'opel' after 'workers at the'"
+        ],
+        "speech_error": null,
+        "sources": [
+          "Wikimedia Commons",
+          "designed card",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "designed card",
+          "Wikimedia Commons"
+        ],
+        "speech_verification": {
+          "heard": "Workers at the Appel plant used dynamite to loosen their fertilizer. They believed the hardened nitrogen stockpile was safe and stable. On September 21, 1921, a routine blast triggered a massive detonation. The explosion killed over 500 people and wounded nearly 2,000. Manufacturing change had turned the pile into an unforeseen bomb. Unsuspecting workers at the Appel plant used dynamite to loosen their fertilizer.",
+          "model": "small.en",
+          "media_sha256": "c3e4edbfcc45487255520ea155b7e784f7ed7a98bfa17fedba45f3c4bf9b580a",
+          "primary_differences": [
+            "'oppau' heard as 'appel' after 'workers at the'",
+            "'a' heard as '(nothing)' after 'wounded nearly 2000'",
+            "'oppau' heard as 'appel' after 'workers at the'"
+          ],
+          "differences": [
+            "'oppau' heard as 'appel' after 'workers at the'",
+            "'a' heard as '(nothing)' after 'wounded nearly 2000'",
+            "'oppau' heard as 'appel' after 'workers at the'",
+            "base.en: 'oppau' heard as 'opel' after 'workers at the'"
+          ],
+          "corroboration": {
+            "model": "base.en",
+            "heard": "Workers at the Opel Plant used dynamite to loosen their fertilizer. They believed the hardened nitrogen stockpile was safe and stable. On September 21, 1921, a routine blast triggered a massive detonation. The explosion killed over 500 people and wounded nearly 2,000. Manufacturing change had turned the pile into an unforeseen bomb. Unsuspecting workers at the Opel Plant used dynamite to loosen their fertilizer.",
+            "differences": [
+              "'oppau' heard as 'opel' after 'workers at the'",
+              "'a' heard as '(nothing)' after 'wounded nearly 2000'",
+              "'oppau' heard as 'opel' after 'workers at the'"
+            ],
+            "resolved": []
+          }
+        }
+      },
+      "media_sha256": "c3e4edbfcc45487255520ea155b7e784f7ed7a98bfa17fedba45f3c4bf9b580a",
+      "scores": {
+        "hook": 4,
+        "clarity": 5,
+        "payoff": 4,
+        "visuals": 5,
+        "loop": 5,
+        "accuracy": 5
+      },
+      "notes": {
+        "hook": "Strong start with 'A Hidden Bomb' and the immediate mention of dynamite.",
+        "clarity": "Clear linear progression from the routine action to the disaster and the hidden cause.",
+        "payoff": "The revelation that a manufacturing change created the bomb provides a satisfying explanation.",
+        "visuals": "Historical images are appropriate and striking.",
+        "loop": "The transition from the final line back to the first is seamless.",
+        "accuracy": "All claims are strictly supported by the provided research."
+      },
+      "frames": [],
+      "speech": [
+        {
+          "beat": 1,
+          "word": "Oppau",
+          "respelling": "oh ppow"
+        },
+        {
+          "beat": 6,
+          "word": "Oppau",
+          "respelling": "oh ppow"
+        }
+      ],
+      "rewrite": [],
+      "better_than_last": "This Short has a tighter loop and a more integrated payoff than the Winton rescue train episode.",
+      "judge": "gemma-4-31b-it",
+      "passed": false
+    }
+  ],
+  "best_round": 3,
+  "verdict": "rejected",
+  "reason": "2 speech problems",
+  "rejected_at": "2026-10-06T10:05:28+05:30"
+}

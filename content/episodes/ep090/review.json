@@ -1,0 +1,109 @@
+{
+  "rounds": [
+    {
+      "at": "2026-10-06T09:44:13+05:30",
+      "check": {
+        "duration": 27.27,
+        "words": 68,
+        "integrated_lufs": -14.5,
+        "true_peak_dbfs": -1.9,
+        "warnings": [],
+        "speech_differences": [],
+        "speech_error": null,
+        "sources": [
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons"
+        ],
+        "speech_verification": {
+          "heard": "A wealthy Texas school chose free-waste gas to save money. Most people assume professionals inspected the gas system. Officials actually tapped a local residue line. Untreated gas carried no warning scent, hiding a leak beneath the floors. An electric sander then sparked the trapped fuel. Nearly 300 lives were lost, creating today's mercaptan laws. That tragedy happened because a wealthy Texas school chose free-waste gas.",
+          "model": "small.en",
+          "media_sha256": "7fe4659b69fae2bda7b153405868c5f481a8df6a36f5536c01cc571011aecb65",
+          "primary_differences": [],
+          "differences": []
+        }
+      },
+      "media_sha256": "7fe4659b69fae2bda7b153405868c5f481a8df6a36f5536c01cc571011aecb65",
+      "scores": {
+        "hook": 3,
+        "clarity": 5,
+        "payoff": 4,
+        "visuals": 5,
+        "loop": 5,
+        "accuracy": 3
+      },
+      "notes": {
+        "hook": "The first line is a bit generic and the on-screen text mentions a specific dollar amount not found in research.",
+        "clarity": "Clear, one idea per beat.",
+        "payoff": "The link to modern gas safety laws provides a satisfying conclusion.",
+        "visuals": "Images are historically accurate and clear.",
+        "loop": "The transition from beat 7 back to beat 1 is seamless.",
+        "accuracy": "The on-screen text '$300 SAVED' is an invention not supported by the research claims."
+      },
+      "frames": [],
+      "speech": [],
+      "rewrite": [
+        "On-screen text over beat 1: change '$300 SAVED, 300 LIVES LOST' to 'SAVING MONEY, LOSING LIVES'"
+      ],
+      "better_than_last": "This Short has a stronger narrative structure and better loop than the Winton rescue train episode.",
+      "judge": "gemma-4-31b-it",
+      "passed": false
+    },
+    {
+      "at": "2026-10-06T09:48:37+05:30",
+      "check": {
+        "duration": 27.27,
+        "words": 68,
+        "integrated_lufs": -14.5,
+        "true_peak_dbfs": -1.9,
+        "warnings": [],
+        "speech_differences": [],
+        "speech_error": null,
+        "sources": [
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons"
+        ],
+        "speech_verification": {
+          "heard": "A wealthy Texas school chose free-waste gas to save money. Most people assume professionals inspected the gas system. Officials actually tapped a local residue line. Untreated gas carried no warning scent, hiding a leak beneath the floors. An electric sander then sparked the trapped fuel. Nearly 300 lives were lost, creating today's mercaptan laws. That tragedy happened because a wealthy Texas school chose free-waste gas.",
+          "model": "small.en",
+          "media_sha256": "3247e64d408bd0060b2ee875aa096c1ff1458517d0f225943fc6a90ccd745e16",
+          "primary_differences": [],
+          "differences": []
+        }
+      },
+      "media_sha256": "3247e64d408bd0060b2ee875aa096c1ff1458517d0f225943fc6a90ccd745e16",
+      "scores": {
+        "hook": 4,
+        "clarity": 5,
+        "payoff": 4,
+        "visuals": 5,
+        "loop": 5,
+        "accuracy": 5
+      },
+      "notes": {
+        "hook": "Strong, clear opening that immediately sets up the conflict.",
+        "clarity": "Simple, linear progression of events.",
+        "payoff": "The connection to modern gas safety laws provides a satisfying resolution.",
+        "visuals": "All images are high-quality and directly relevant.",
+        "loop": "The final line transitions perfectly back into the first.",
+        "accuracy": "All claims are accurately supported by the provided research."
+      },
+      "frames": [],
+      "speech": [],
+      "rewrite": [],
+      "better_than_last": "This Short creates a tighter narrative arc than ep054 by moving quickly from the cause to the consequence and the lasting legacy.",
+      "judge": "gemma-4-31b-it",
+      "passed": true
+    }
+  ],
+  "best_round": 2
+}
