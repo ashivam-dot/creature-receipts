@@ -54,7 +54,7 @@ event is told for its gore. Space topics belong to the sister channel Universe R
 
 ### The Last Hours
 
-- Sinking of the Titanic (1912): the lookouts had no binoculars, because the key to their locker left the ship with an officer removed before the voyage — making (ep081)
+- Sinking of the Titanic (1912): the lookouts had no binoculars, because the key to their locker left the ship with an officer removed before the voyage — parked (ep081)
 - Sinking of the RMS Lusitania (1915): the liner sank in 18 minutes, after a German warning ran next to its own sailing notice in New York newspapers
 - Hindenburg disaster (1937): the airship burned in about half a minute, yet most of the people aboard survived
 - 1883 eruption of Krakatoa: its final explosion was heard thousands of kilometers away, on Rodrigues island in the Indian Ocean — parked (ep078)
@@ -83,7 +83,7 @@ event is told for its gore. Space topics belong to the sister channel Universe R
 - Siege of Sidney Street (1911): Winston Churchill personally oversaw the gunfight and ordered firefighters not to save the burning building
 - Gresford disaster (1934): hundreds of miners died because they had swapped shifts to see a football match, putting extra men in the pit
 - Sinking of the SS Arctic (1854): the ship collided in fog and the officers took the lifeboats first, leaving the passengers behind
-- 1868 Arica earthquake (1868): a massive tsunami carried the USS Wateree two miles inland and left it sitting perfectly upright in the middle of the desert — making (ep083)
+- 1868 Arica earthquake (1868): a massive tsunami carried the USS Wateree two miles inland and left it sitting perfectly upright in the middle of the desert — parked (ep083)
 - 1944 Bombay Docks explosion (1944): a fire aboard the *Fort Stikine* preceded two blasts at Victoria Dock; India observes April 14 as Fire Services Day to remember the firefighters who died — research lead only; ignition, death toll and image rights need review
 - Tauredunum event (563): a mountain collapse into Lake Geneva created a massive inland tsunami that swept over the city walls of Geneva miles away
 - Brescia explosion (1769): lightning struck a church bastion storing 90 tons of gunpowder, causing a blast that leveled one-sixth of the city
@@ -132,8 +132,8 @@ event is told for its gore. Space topics belong to the sister channel Universe R
 - Siege of Pembroke (1648): an impregnable fortress was forced to surrender after a defector revealed the exact location of the secret underground pipe supplying all their water
 - Oppau explosion (1921): a routine blast to break up caked fertilizer preceded a stockpile detonation — done (ep072)
 - Mann Gulch fire (1949): foreman Wag Dodge set an escape fire as his crew fled the advancing wildfire — parked (ep074)
-- Atilius's amphitheatre (AD 27): at Fidenae a cheaply built wooden arena packed with crowds starved of gladiator shows under Tiberius gives way, burying spectators and bystanders while families search the ruins day and night — making (ep087)
-- New London School explosion (1937): leaked gas built up beneath the school until a shop-class sander ignited it near the end of the day
+- Atilius's amphitheatre (AD 27): at Fidenae a cheaply built wooden arena packed with crowds starved of gladiator shows under Tiberius gives way, burying spectators and bystanders while families search the ruins day and night — dropped (ep087)
+- New London School explosion (1937): leaked gas built up beneath the school until a shop-class sander ignited it near the end of the day — making (ep090)
 - Siege of Laodicea (636): the besieging army pretended to retreat but hid in deep trenches dug overnight, capturing the city when citizens opened the gates to let their cattle graze
 - 1157 Hama earthquake (1157): a teacher who stepped out of his classroom returned to find his school collapsed and every student dead, with not a single parent left alive to claim them
 - Siege of Maiozamalcha (363): while the defenders mocked the Romans from their 'impregnable' walls, soldiers finished a secret tunnel and emerged directly into a kitchen inside the city
@@ -200,7 +200,7 @@ event is told for its gore. Space topics belong to the sister channel Universe R
 - Ashanti Empire (1900): the Golden Stool was demanded by the British governor who did not know he was asking to sit on a sacred spirit shrine, sparking an uprising
 - Siege of the Sogdian Rock (327 BC): Alexander the Great's soldiers used iron tent pegs as pitons to scale a 'vertical' cliff at night to capture an unreachable fortress — parked (ep080)
 - Siege of Kamakura (1333): the commander threw his golden sword into the sea as an offering, and the tide instantly receded to reveal a path past the city’s sea walls — making (ep086)
-- Fall of the Qing Dynasty (1912): the last Emperor of China, once worshipped as a living god, ended his life as a quiet citizen working as a gardener in his former palace
+- Fall of the Qing Dynasty (1912): the last Emperor of China, once worshipped as a living god, ended his life as a quiet citizen working as a gardener in his former palace — making (ep089)
 - Fall of Krak des Chevaliers (1271): the impregnable Crusader stronghold finally surrendered after the Mamluk Sultan tricked the garrison with a forged letter from their commander
 - Battle of Sarmizegetusa (106): the Dacian king diverted a river to hide his empire's gold beneath the riverbed, but a prisoner betrayed the location to Rome
 - Execution of Emperor Maximilian (1867): the ruler of Mexico refused a chance to escape in disguise because he would not abandon his loyal generals

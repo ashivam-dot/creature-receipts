@@ -149,7 +149,89 @@
       "better_than_last": "It maintains a tighter narrative focus around David Blair and the lookouts than recent episodes.",
       "judge": "gemini-3.6-flash",
       "passed": false
+    },
+    {
+      "at": "2026-10-06T05:07:47+05:30",
+      "check": {
+        "duration": 24.59,
+        "words": 69,
+        "integrated_lufs": -14.3,
+        "true_peak_dbfs": -1.6,
+        "warnings": [],
+        "speech_differences": [
+          "'gangplank' heard as 'game plank' after 'walked down the'",
+          "base.en: 'believe' heard as 'believed' after 'no binoculars many'",
+          "base.en: 'reshuffle' heard as 'reshuffled' after 'a sudden officer'",
+          "base.en: 'gangplank' heard as 'game plank' after 'walked down the'"
+        ],
+        "speech_error": null,
+        "sources": [
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons"
+        ],
+        "speech_verification": {
+          "heard": "lookouts on the Titanic had no binoculars. Many believe the ship sailed without them by mistake. But on the delivery trip, David Blair lent them his own pair. A sudden officer reshuffle then forced Blair off the ship. Disappointed, he packed his bags and walked down the game plank. Lookout Frederick Fleet testified they would have spotted the iceberg sooner. With Blair reassigned, he inadvertently carried off the key.",
+          "model": "small.en",
+          "media_sha256": "4d4132bdf50cb8d3264e506b4996f81b5f9b5ea3ec5b5ca4f8127b021a77ab0f",
+          "primary_differences": [
+            "'the' heard as '(nothing)'",
+            "'gangplank' heard as 'game plank' after 'walked down the'"
+          ],
+          "differences": [
+            "'gangplank' heard as 'game plank' after 'walked down the'",
+            "base.en: 'believe' heard as 'believed' after 'no binoculars many'",
+            "base.en: 'reshuffle' heard as 'reshuffled' after 'a sudden officer'",
+            "base.en: 'gangplank' heard as 'game plank' after 'walked down the'"
+          ],
+          "corroboration": {
+            "model": "base.en",
+            "heard": "The lookouts on the Titanic had no binoculars. Many believed the ship sailed without them by mistake. But on the delivery trip, David Blair lent them his own pair. A sudden officer reshuffled, then forced Blair off the ship. Disappointed, he packed his bags and walked down the game plank. Lookout Frederick Fleet testified they would have spotted the iceberg sooner. With Blair reassigned, he inadvertently carried off the key.",
+            "differences": [
+              "'believe' heard as 'believed' after 'no binoculars many'",
+              "'reshuffle' heard as 'reshuffled' after 'a sudden officer'",
+              "'gangplank' heard as 'game plank' after 'walked down the'"
+            ],
+            "resolved": [
+              "'the' heard as '(nothing)'"
+            ]
+          }
+        }
+      },
+      "media_sha256": "4d4132bdf50cb8d3264e506b4996f81b5f9b5ea3ec5b5ca4f8127b021a77ab0f",
+      "scores": {
+        "hook": 4,
+        "clarity": 3,
+        "payoff": 3,
+        "visuals": 5,
+        "loop": 4,
+        "accuracy": 3
+      },
+      "notes": {
+        "hook": "Direct, intriguing opening statement supported by a crisp on-screen title.",
+        "clarity": "Introducing 'the key' in the final beat without explaining what it opened creates confusion.",
+        "payoff": "The reveal about Blair carrying off the locker key feels abrupt and lacks context.",
+        "visuals": "Every image is an authentic, perfectly framed archival photo from April 1912.",
+        "loop": "Beat 7 connects back to the opening line, though the key's role needs clearer phrasing.",
+        "accuracy": "Beat 2 relies on an unsupported 'many believe' strawman contrary to editorial rules."
+      },
+      "frames": [],
+      "speech": [],
+      "rewrite": [
+        "Beat 2: Change to 'Senior officers carried their own pairs, but the crow\\'s nest had none.'",
+        "Beat 7: Change to 'When Blair was reassigned, he inadvertently walked off with the crow\\'s nest locker key.'"
+      ],
+      "better_than_last": "Features exceptional archival photo matches with exact historical portraits and ship perspectives for every beat.",
+      "judge": "gemini-3.7-flash",
+      "passed": false
     }
   ],
-  "best_round": 1
+  "best_round": 1,
+  "verdict": "rejected",
+  "reason": "low scores: clarity, payoff, accuracy",
+  "rejected_at": "2026-10-06T05:07:47+05:30"
 }

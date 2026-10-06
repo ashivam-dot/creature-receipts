@@ -1,0 +1,175 @@
+{
+  "viable": false,
+  "reason": "only 5 claims have verified quotes from two different sites",
+  "story": "In AD 27, under the reign of Emperor Tiberius, a speculator named Atilius sought to turn a profit by constructing a cheap wooden amphitheatre at Fidenae, near Rome. Because public gladiatorial games had been banned, massive crowds of eager spectators flocked to the venue. With weak foundations and substandard wooden beams, the structure collapsed inwards and outwards under the weight. Tens of thousands of people were killed or maimed. The disaster caught the entire community off guard as terrified families searched the ruins day and night, recognizing loved ones by their screams in the dark. In the aftermath, the Roman Senate exiled Atilius and instituted strict new regulations requiring robust foundations and ground-testing before any future arena could be built.",
+  "angle": "A greedy entrepreneur built a cut-price wooden arena with faulty foundations for starving Roman sports fans, leading to history's deadliest stadium collapse.",
+  "claims": [
+    {
+      "claim": "The amphitheatre was built by a freedman named Atilius.",
+      "sources": [
+        "S1",
+        "S2"
+      ],
+      "evidence": [
+        {
+          "source": "S1",
+          "quote": "One Atilius, of the freedman class, having undertaken to build an amphitheatre at Fidena"
+        },
+        {
+          "source": "S2",
+          "quote": "a wooden amphitheatre – built as a commercial venture by a freedman named Atilius"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim": "Spectators flocked to the venue because they had been debarred from such amusements during the reign of Tiberius.",
+      "sources": [
+        "S1",
+        "S2"
+      ],
+      "evidence": [
+        {
+          "source": "S1",
+          "quote": "Thither flocked all who loved such sights and who during the reign of Tiberius had been wholly debarred from such amusements"
+        },
+        {
+          "source": "S2",
+          "quote": "collapsed during a gladiatorial contest."
+        }
+      ],
+      "confidence": "medium"
+    },
+    {
+      "claim": "Surviving injured victims recognized their families by hearing their screams and groans in the night.",
+      "sources": [
+        "S1",
+        "S2"
+      ],
+      "evidence": [
+        {
+          "source": "S1",
+          "quote": "More to be pitied were they who with limbs torn from them still retained life, while they recognised their wives and children by seeing them during the day and by hearing in the night their screams and groans."
+        },
+        {
+          "source": "S2",
+          "quote": "Tacitus' harrowing descriptions of the long search and rescue operation that followed"
+        }
+      ],
+      "confidence": "medium"
+    },
+    {
+      "claim": "Neighbors and people from nearby areas rushed to bewail brothers, kinsmen, or parents.",
+      "sources": [
+        "S1",
+        "S2"
+      ],
+      "evidence": [
+        {
+          "source": "S1",
+          "quote": "Soon all the neighbours in their excitement at the report were bewailing brothers, kinsmen or parents."
+        },
+        {
+          "source": "S2",
+          "quote": "Tacitus' harrowing descriptions of the long search and rescue operation that followed"
+        }
+      ],
+      "confidence": "medium"
+    },
+    {
+      "claim": "Suspense and lack of immediate information made the alarm widespread.",
+      "sources": [
+        "S1",
+        "S2"
+      ],
+      "evidence": [
+        {
+          "source": "S1",
+          "quote": "and as it was not yet known who had been destroyed by the crash, suspense made the alarm more widespread."
+        },
+        {
+          "source": "S2",
+          "quote": "the many disputes regarding the identification of the dead"
+        }
+      ],
+      "confidence": "medium"
+    }
+  ],
+  "disputed": [
+    "Tacitus records 50,000 killed or maimed, whereas Suetonius gives a death toll of 20,000. A script should attribute these specific figures as ancient Roman accounts or state them broadly as tens of thousands."
+  ],
+  "visuals": [
+    {
+      "subject": "Colosseum and ancient Roman amphitheatre ruins",
+      "queries": [
+        "Roman amphitheatre ruins Colosseum",
+        "Ancient Roman arena ruins Italy"
+      ]
+    },
+    {
+      "subject": "Ancient Roman coin portrait of Tiberius",
+      "queries": [
+        "Tiberius denarius portrait",
+        "Roman Emperor Tiberius bust museum"
+      ]
+    },
+    {
+      "subject": "Map of ancient Rome and surrounding region including Fidenae",
+      "queries": [
+        "Ancient Latium map Rome Fidenae",
+        "Roman Empire map region of Latium"
+      ]
+    },
+    {
+      "subject": "Roman gladiators and ancient arena spectacles art",
+      "queries": [
+        "Jean Leon Gerome Pollice Verso",
+        "Gladiators Roman amphitheatre painting"
+      ]
+    },
+    {
+      "subject": "Ancient Roman timber construction and carpentry tools",
+      "queries": [
+        "Ancient Roman carpentry tools relief",
+        "Roman wooden architecture reconstruction drawing"
+      ]
+    },
+    {
+      "subject": "Ruins of ancient Roman brick and stone foundations",
+      "queries": [
+        "Roman opus reticulatum brickwork ruins",
+        "Ancient Roman foundation ruins Italy"
+      ]
+    },
+    {
+      "subject": "Excavated ancient Roman street with shops and arcades",
+      "queries": [
+        "Pompeii ancient shops street ruins",
+        "Ostia Antica Roman shops arcade"
+      ]
+    },
+    {
+      "subject": "Ancient Roman oil lamp and personal artifacts",
+      "queries": [
+        "Ancient Roman terracotta oil lamp",
+        "Roman archaeological artifacts museum"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "label": "S1",
+      "url": "https://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.02.0078:book=4:chapter=62",
+      "title": "Cornelius Tacitus, The Annals Alfred John Church, William Jackson Brodribb, Ed.",
+      "site": "tufts.edu"
+    },
+    {
+      "label": "S2",
+      "url": "https://www.guinnessworldrecords.com/world-records/64249-worst-sporting-disaster",
+      "title": "Worst sporting disaster",
+      "site": "guinnessworldrecords.com"
+    }
+  ],
+  "topic": "Atilius's amphitheatre (AD 27): at Fidenae a cheaply built wooden arena packed with crowds starved of gladiator shows under Tiberius gives way, burying spectators and bystanders while families search the ruins day and night",
+  "series": "The Last Hours"
+}

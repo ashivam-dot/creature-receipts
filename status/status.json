@@ -1,72 +1,72 @@
 {
-  "updated_at": "2026-10-06T05:05:35+05:30",
+  "updated_at": "2026-10-06T09:16:27+05:30",
   "day": 5,
   "result": "ok",
   "run": {
     "host": "modal",
-    "id": "ta-01M476QBZ4NYER3PRV8CS1RSPR",
+    "id": "ta-01M47N2MB4QDFY65QS84FVN0GR",
     "number": null,
-    "trigger": "schedule",
-    "started_at": "2026-10-06T05:05:07+05:30",
-    "started_at_utc": "2026-10-05T23:35:07+00:00",
-    "seconds": 28
+    "trigger": "manual",
+    "started_at": "2026-10-06T09:15:58+05:30",
+    "started_at_utc": "2026-10-06T03:45:58+00:00",
+    "seconds": 29
   },
   "stages": [
     {
       "name": "deploy",
       "ok": true,
       "detail": "",
-      "seconds": 1.2
+      "seconds": 2.4
     },
     {
       "name": "collect",
       "ok": true,
-      "detail": "ep080 rejected (visual plan: only 2 original art beats; 3 are needed for 7 beats); ep081 unfinished (OutOfQuota: no model in ('gemini-3.8-flash', 'gemini-3.7-flash', 'gemini-3.6-flash', 'gemini-3.5-flash', 'gemini-3-flash-preview', 'gemini-flash-latest', 'ovh:Qwen3.5-397B-A17B') has free quota left today); ep082 rejected (low scores: hook, visuals; 3 frame problems; 3 speech problems); ep083 unfinished (RuntimeError: ep083 script still breaks the rules: [\"Give hook_text: 2 to 6 words, 40 characters or fewer, no emoji, shown over beat 1 from its first frame. It must add a time, number, or the s",
-      "seconds": 12.2
-    },
-    {
-      "name": "start ep081",
-      "ok": true,
-      "detail": "Sinking of the Titanic (1912): the lookouts had no binoculars, because the key to their locker left the ship with an officer removed before the voyage",
-      "seconds": 0.7
-    },
-    {
-      "name": "start ep083",
-      "ok": true,
-      "detail": "1868 Arica earthquake (1868): a massive tsunami carried the USS Wateree two miles inland and left it sitting perfectly upright in the middle of the desert",
-      "seconds": 0.7
+      "detail": "ep081 rejected (low scores: clarity, payoff, accuracy); ep083 rejected (low scores: hook, visuals, loop, accuracy; 1 frame problems; 1 speech problems); ep086 unfinished (OutOfQuota: no model in ('gemini-3.8-flash', 'gemini-3.7-flash', 'gemini-3.6-flash', 'gemini-3.5-flash', 'gemini-3-flash-preview', 'gemini-flash-latest', 'ovh:Qwen3.5-397B-A17B') has free quota left today); ep087 rejected (research: only 5 claims have verified quotes from two different sites)",
+      "seconds": 9.1
     },
     {
       "name": "start ep086",
       "ok": true,
       "detail": "Siege of Kamakura (1333): the commander threw his golden sword into the sea as an offering, and the tide instantly receded to reveal a path past the city’s sea walls",
-      "seconds": 0.6
+      "seconds": 0.9
     },
     {
-      "name": "start ep087",
+      "name": "start ep088",
       "ok": true,
-      "detail": "Atilius's amphitheatre (AD 27): at Fidenae a cheaply built wooden arena packed with crowds starved of gladiator shows under Tiberius gives way, burying spectators and bystanders while families search the ruins day and night",
+      "detail": "Oppau explosion (1921): a routine blast to break up caked fertilizer preceded a stockpile detonation",
+      "seconds": 0.8
+    },
+    {
+      "name": "start ep089",
+      "ok": true,
+      "detail": "Fall of the Qing Dynasty (1912): the last Emperor of China, once worshipped as a living god, ended his life as a quiet citizen working as a gardener in his former palace",
       "seconds": 0.9
+    },
+    {
+      "name": "start ep090",
+      "ok": true,
+      "detail": "New London School explosion (1937): leaked gas built up beneath the school until a shop-class sander ignited it near the end of the day",
+      "seconds": 1.1
     }
   ],
   "errors": [],
   "owner_action": [],
   "notes": [
-    "ep081 stopped on Gemini's free quota; it resumes in a later run",
+    "ep086 stopped on Gemini's free quota; it resumes in a later run",
     "draft-only producer: no Buffer, Cloudinary, or Google publisher access"
   ],
   "inventory": {
-    "total": 3,
+    "total": 2,
     "in_buffer": 0,
     "waiting": 0,
-    "drafts": 3,
+    "drafts": 2,
     "target": 9,
     "making": [],
     "remote": [
-      "ep081",
-      "ep083",
       "ep086",
-      "ep087"
+      "ep088",
+      "ep089",
+      "ep090"
     ]
   },
   "queue": [],
@@ -92,82 +92,74 @@
   ],
   "made": [
     {
-      "id": "ep080",
+      "id": "ep081",
       "outcome": "rejected",
-      "topic": "Siege of the Sogdian Rock (327 BC): Alexander the Great's soldiers used iron tent pegs as pitons to scale a 'vertical' cliff at night to capture an unreachable fortress",
-      "reason": "visual plan: only 2 original art beats; 3 are needed for 7 beats"
+      "topic": "Sinking of the Titanic (1912): the lookouts had no binoculars, because the key to their locker left the ship with an officer removed before the voyage",
+      "reason": "low scores: clarity, payoff, accuracy"
     },
     {
-      "id": "ep081",
+      "id": "ep083",
+      "outcome": "rejected",
+      "topic": "1868 Arica earthquake (1868): a massive tsunami carried the USS Wateree two miles inland and left it sitting perfectly upright in the middle of the desert",
+      "reason": "low scores: hook, visuals, loop, accuracy; 1 frame problems; 1 speech problems"
+    },
+    {
+      "id": "ep086",
       "outcome": "unfinished",
-      "topic": "Sinking of the Titanic (1912): the lookouts had no binoculars, because the key to their locker left the ship with an officer removed before the voyage",
+      "topic": "Siege of Kamakura (1333): the commander threw his golden sword into the sea as an offering, and the tide instantly receded to reveal a path past the city’s sea walls",
       "reason": "OutOfQuota: no model in ('gemini-3.8-flash', 'gemini-3.7-flash', 'gemini-3.6-flash', 'gemini-3.5-flash', 'gemini-3-flash-preview', 'gemini-flash-latest', 'ovh:Qwen3.5-397B-A17B') has free quota left today",
       "quota": true,
       "overloaded": false
     },
     {
-      "id": "ep082",
+      "id": "ep087",
       "outcome": "rejected",
-      "topic": "Akrotiri (prehistoric city): a Bronze Age town buried by the Minoan eruption where almost no bodies have been found, as if its people had warning",
-      "reason": "low scores: hook, visuals; 3 frame problems; 3 speech problems"
-    },
-    {
-      "id": "ep083",
-      "outcome": "unfinished",
-      "topic": "1868 Arica earthquake (1868): a massive tsunami carried the USS Wateree two miles inland and left it sitting perfectly upright in the middle of the desert",
-      "reason": "RuntimeError: ep083 script still breaks the rules: [\"Give hook_text: 2 to 6 words, 40 characters or fewer, no emoji, shown over beat 1 from its first frame. It must add a time, number, or the stakes rather than repeat the spoken hook's words.\"]",
-      "quota": false,
-      "overloaded": false
-    },
-    {
-      "id": "ep085",
-      "outcome": "rejected",
-      "topic": "Umm El Qa'ab (c. 2900 BC): early Egyptian pharaohs were entombed alongside dozens of household servants sacrificed simultaneously to serve in the afterlife",
-      "reason": "speech: 'pharaoh djer' heard as 'farogirr' after 'were entombed around'; 'umm el qa ab' heard as 'alqab' after 'royal cemetery of'; 'abydos' heard as 'abidos' after 'qa ab near'; 'perimortem' heard as 'paramortem' after 'skulls revealed fatal'; 'replaced' heard as 'replace' after '2nd dynasty figurines'; 'pharaoh djer' heard as 'ferroger' after 'retainers entombed around'; base.en: 'djer' heard as"
+      "topic": "Atilius's amphitheatre (AD 27): at Fidenae a cheaply built wooden arena packed with crowds starved of gladiator shows under Tiberius gives way, burying spectators and bystanders while families search the ruins day and night",
+      "reason": "research: only 5 claims have verified quotes from two different sites"
     }
   ],
   "spawned": [
     {
-      "id": "ep081",
-      "topic": "Sinking of the Titanic (1912): the lookouts had no binoculars, because the key to their locker left the ship with an officer removed before the voyage",
-      "call_id": "fc-01M476RAR3XC6QWHKQ4MMQ1QW6"
-    },
-    {
-      "id": "ep083",
-      "topic": "1868 Arica earthquake (1868): a massive tsunami carried the USS Wateree two miles inland and left it sitting perfectly upright in the middle of the desert",
-      "call_id": "fc-01M476RBDS2JSQH3Q3Y42TEXBH"
-    },
-    {
       "id": "ep086",
       "topic": "Siege of Kamakura (1333): the commander threw his golden sword into the sea as an offering, and the tide instantly receded to reveal a path past the city’s sea walls",
-      "call_id": "fc-01M476RC2A076HWCDQ7RG8DRDT"
+      "call_id": "fc-01M47N3NK14ZCFVQ15WZJWMJFJ"
     },
     {
-      "id": "ep087",
-      "topic": "Atilius's amphitheatre (AD 27): at Fidenae a cheaply built wooden arena packed with crowds starved of gladiator shows under Tiberius gives way, burying spectators and bystanders while families search the ruins day and night",
-      "call_id": "fc-01M476RCY22Y0010DS69R4JFQF"
+      "id": "ep088",
+      "topic": "Oppau explosion (1921): a routine blast to break up caked fertilizer preceded a stockpile detonation",
+      "call_id": "fc-01M47N3PAQ85JN1E07N0C1TNWP"
+    },
+    {
+      "id": "ep089",
+      "topic": "Fall of the Qing Dynasty (1912): the last Emperor of China, once worshipped as a living god, ended his life as a quiet citizen working as a gardener in his former palace",
+      "call_id": "fc-01M47N3Q63MYYWD451R1H0501X"
+    },
+    {
+      "id": "ep090",
+      "topic": "New London School explosion (1937): leaked gas built up beneath the school until a shop-class sander ignited it near the end of the day",
+      "call_id": "fc-01M47N3R8KFR06JBQYN1SFAK1G"
     }
   ],
   "in_cloud": [
     {
-      "id": "ep081",
-      "topic": "Sinking of the Titanic (1912): the lookouts had no binoculars, because the key to their locker left the ship with an officer removed before the voyage",
-      "spawned_at": "2026-10-06T05:05:32+05:30"
-    },
-    {
-      "id": "ep083",
-      "topic": "1868 Arica earthquake (1868): a massive tsunami carried the USS Wateree two miles inland and left it sitting perfectly upright in the middle of the desert",
-      "spawned_at": "2026-10-06T05:05:33+05:30"
-    },
-    {
       "id": "ep086",
       "topic": "Siege of Kamakura (1333): the commander threw his golden sword into the sea as an offering, and the tide instantly receded to reveal a path past the city’s sea walls",
-      "spawned_at": "2026-10-06T05:05:33+05:30"
+      "spawned_at": "2026-10-06T09:16:24+05:30"
     },
     {
-      "id": "ep087",
-      "topic": "Atilius's amphitheatre (AD 27): at Fidenae a cheaply built wooden arena packed with crowds starved of gladiator shows under Tiberius gives way, burying spectators and bystanders while families search the ruins day and night",
-      "spawned_at": "2026-10-06T05:05:34+05:30"
+      "id": "ep088",
+      "topic": "Oppau explosion (1921): a routine blast to break up caked fertilizer preceded a stockpile detonation",
+      "spawned_at": "2026-10-06T09:16:24+05:30"
+    },
+    {
+      "id": "ep089",
+      "topic": "Fall of the Qing Dynasty (1912): the last Emperor of China, once worshipped as a living god, ended his life as a quiet citizen working as a gardener in his former palace",
+      "spawned_at": "2026-10-06T09:16:25+05:30"
+    },
+    {
+      "id": "ep090",
+      "topic": "New London School explosion (1937): leaked gas built up beneath the school until a shop-class sander ignited it near the end of the day",
+      "spawned_at": "2026-10-06T09:16:26+05:30"
     }
   ],
   "published": [],
@@ -175,34 +167,33 @@
   "failed_posts": [],
   "not_live": [],
   "llm": {
-    "calls": 13,
+    "calls": 10,
     "by_model": {
-      "gemini-3.8-flash": 2,
-      "gemini-3.5-flash-lite": 7,
-      "gemini-3-flash-preview": 3,
-      "gemini-3.5-flash": 1
+      "gemini-3.7-flash": 1,
+      "gemini-3.6-flash": 1,
+      "gemini-3.5-flash-lite": 8
     },
     "out_of_quota": []
   },
   "renders": {
-    "modal": 5,
+    "modal": 3,
     "runner": 0
   },
   "daily_done": "2026-10-05",
   "minutes_this_month": 68.0,
   "minutes_budget": 2000,
   "modal_cost": {
-    "metered": 7.7,
+    "metered": 7.79,
     "billed": 0.0
   },
   "modal_credit": 30.0,
   "capacity": {
-    "cloud": 169,
+    "cloud": 168,
     "runner": 0,
     "runner_minutes": 0,
-    "modal_credit_left": 20.3
+    "modal_credit_left": 20.21
   },
   "made_here": 0,
-  "open_topics": 153,
-  "parked_topics": 29
+  "open_topics": 151,
+  "parked_topics": 31
 }

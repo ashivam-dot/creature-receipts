@@ -177,7 +177,94 @@
       "better_than_last": "",
       "judge": "gemini-3.8-flash",
       "passed": false
+    },
+    {
+      "at": "2026-10-06T05:09:58+05:30",
+      "check": {
+        "duration": 24.46,
+        "words": 62,
+        "integrated_lufs": -14.3,
+        "true_peak_dbfs": -1.8,
+        "warnings": [],
+        "speech_differences": [
+          "'arica' heard as 'erika' after 'the port of'",
+          "'wateree' heard as 'watery' after 'crushed the uss'",
+          "base.en: 'wateree' heard as 'watery' after 'crushed the uss'"
+        ],
+        "speech_error": null,
+        "sources": [
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Flickr via Openverse",
+          "Wikimedia Commons"
+        ],
+        "speech_verification": {
+          "heard": "Most people think a tsunami destroys everything it touches. In 1868, a massive earthquake leveled the port of Erika, Peru. While other ships were crushed, the USS Watery had a flat bottom. The massive wave carried the gunboat inland without tipping it over. It sat perfectly upright, 500 yards into the desert. Most people think a tsunami destroys everything it touches.",
+          "model": "small.en",
+          "media_sha256": "c6468595edced8aaece4521c05b3cbff646a2806c9c22998f19fb7e2beb03d28",
+          "primary_differences": [
+            "'arica' heard as 'erika' after 'the port of'",
+            "'wateree' heard as 'watery' after 'crushed the uss'"
+          ],
+          "differences": [
+            "'arica' heard as 'erika' after 'the port of'",
+            "'wateree' heard as 'watery' after 'crushed the uss'",
+            "base.en: 'wateree' heard as 'watery' after 'crushed the uss'"
+          ],
+          "corroboration": {
+            "model": "base.en",
+            "heard": "Most people think a tsunami destroys everything it touches. In 1868, a massive earthquake leveled the Port of Arica, Peru. While other ships were crushed, the USS Watery had a flat bottom. The massive wave carried the gunboat inland without tipping it over. It sat perfectly upright, 500 yards into the desert. Most people think a tsunami destroys everything it touches.",
+            "differences": [
+              "'wateree' heard as 'watery' after 'crushed the uss'"
+            ],
+            "resolved": []
+          }
+        }
+      },
+      "media_sha256": "c6468595edced8aaece4521c05b3cbff646a2806c9c22998f19fb7e2beb03d28",
+      "scores": {
+        "hook": 3,
+        "clarity": 5,
+        "payoff": 5,
+        "visuals": 3,
+        "loop": 3,
+        "accuracy": 3
+      },
+      "notes": {
+        "hook": "Starts with a generic strawman phrase ('Most people think...').",
+        "clarity": "The narrative arc is logical and easy to follow on a single listen.",
+        "payoff": "The image and detail of an intact gunboat resting in the desert pays off the setup well.",
+        "visuals": "Beat 5 reuses the exact same archival photograph shown in beat 4.",
+        "loop": "Beat 6 repeats beat 1 verbatim, causing an awkward duplicate line when the video replays.",
+        "accuracy": "Beat 1 uses an unsupported 'Most people think' strawman not grounded in the research claims."
+      },
+      "frames": [
+        {
+          "beat": 5,
+          "problem": "Uses the same picture as beat 4."
+        }
+      ],
+      "speech": [
+        {
+          "beat": 2,
+          "word": "Arica",
+          "respelling": "uh ree kuh"
+        }
+      ],
+      "rewrite": [
+        "Beat 1: Change to 'In 1868, a massive tsunami carried a U.S. Navy warship far inland without destroying it.'",
+        "Beat 5: Change to 'It landed upright, nearly five hundred yards into the desert.'",
+        "Beat 6: Change to 'The stranded gunboat was later used as an inn before another tsunami destroyed it.'"
+      ],
+      "better_than_last": "This Short makes excellent use of authentic 1868 archival photographs showing the actual stranded vessel.",
+      "judge": "gemini-3.6-flash",
+      "passed": false
     }
   ],
-  "best_round": 1
+  "best_round": 1,
+  "verdict": "rejected",
+  "reason": "low scores: hook, visuals, loop, accuracy; 1 frame problems; 1 speech problems",
+  "rejected_at": "2026-10-06T05:09:58+05:30"
 }
