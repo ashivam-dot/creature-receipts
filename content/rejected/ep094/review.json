@@ -1,0 +1,240 @@
+{
+  "rounds": [
+    {
+      "at": "2026-10-06T17:15:34+05:30",
+      "check": {
+        "duration": 26.7,
+        "words": 65,
+        "integrated_lufs": -14.4,
+        "true_peak_dbfs": -1.8,
+        "warnings": [],
+        "speech_differences": [],
+        "speech_error": null,
+        "sources": [
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "designed card",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons"
+        ],
+        "speech_verification": {
+          "heard": "The Hindenburg burned in 32 seconds, yet most people on board survived. Popular memory pictures a total loss of life. 35 individuals died among the 97 on board. Cabin boy Werner Franz escaped after a burst water tank doused him. Captain Max Pruss also survived despite severe burns. Over 60 people were rescued alive from the wreckage. Most people on board survived when it burned.",
+          "model": "small.en",
+          "media_sha256": "766f5622c6b7aca124637d0fa2f8e5e682ece70b7ca2e268ccf6ecf99ba9c277",
+          "primary_differences": [],
+          "differences": []
+        }
+      },
+      "media_sha256": "766f5622c6b7aca124637d0fa2f8e5e682ece70b7ca2e268ccf6ecf99ba9c277",
+      "scores": {
+        "hook": 3,
+        "clarity": 5,
+        "payoff": 3,
+        "visuals": 5,
+        "loop": 5,
+        "accuracy": 3
+      },
+      "notes": {
+        "hook": "The opening line and on-screen text reveal the survival twist immediately, spoiling the curiosity gap.",
+        "clarity": "The script clearly breaks down the survival rate and provides specific examples of those who lived.",
+        "payoff": "Because the survival outcome is stated in the first two seconds, the ending feels repetitive rather than surprising.",
+        "visuals": "Excellent use of distinct archival photos to illustrate the ship, the disaster, and the setting.",
+        "loop": "The transition from the final word back to the start of the hook is seamless and rhythmically consistent.",
+        "accuracy": "The script includes an unsupported strawman about popular memory and ignores the ground crew fatality mentioned in research."
+      },
+      "frames": [],
+      "speech": [],
+      "rewrite": [
+        "Beat 1: 'The Hindenburg was consumed by fire in just thirty-two seconds, but the tragedy isn\\'t what you think.'",
+        "Beat 2: 'While the footage is iconic, the survival rate of the 1937 disaster is often overlooked.'",
+        "Beat 7: 'Yet, most people on board survived.'",
+        "On-screen text (Beat 1): 'THE TRUTH'"
+      ],
+      "better_than_last": "This script utilizes specific survivor anecdotes like the cabin boy's water tank to humanize the data much better than the broader narrative in ep 053.",
+      "judge": "gemini-3-flash-preview",
+      "passed": false
+    },
+    {
+      "at": "2026-10-06T17:36:27+05:30",
+      "check": {
+        "duration": 29.03,
+        "words": 68,
+        "integrated_lufs": -14.4,
+        "true_peak_dbfs": -1.8,
+        "warnings": [],
+        "speech_differences": [
+          "base.en: 'franz' heard as 'france' after 'cabin boy werner'"
+        ],
+        "speech_error": null,
+        "sources": [
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "designed card",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons"
+        ],
+        "speech_verification": {
+          "heard": "Hindenburg burned in 32 seconds, yet most people survived. While the footage is iconic, the survival rate of the 1937 disaster is often overlooked. Thirty-five individuals died among the 97 on board. Cabin boy Werner Franz escaped after a burst water tank doused him. Captain Max Pruss also survived despite severe burns. Over 60 people were rescued alive from the wreckage. Yet most people on board survived.",
+          "model": "small.en",
+          "media_sha256": "a9dbd6f6c9797c6acfe0a1a8fe12376e0ffe2865b9c90ade9ab7b6572a5846b1",
+          "primary_differences": [
+            "'the' heard as '(nothing)'"
+          ],
+          "differences": [
+            "base.en: 'franz' heard as 'france' after 'cabin boy werner'"
+          ],
+          "corroboration": {
+            "model": "base.en",
+            "heard": "The Hindenburg burned in 32 seconds, yet most people survived. While the footage is iconic, the survival rate of the 1937 disaster is often overlooked. 35 individuals died among the 97 on board. Cabin boy Werner France escaped after a burst water tank doused him. Captain Max Pruss also survived despite severe burns. Over 60 people were rescued alive from the wreckage. Yet most people on board survived.",
+            "differences": [
+              "'franz' heard as 'france' after 'cabin boy werner'"
+            ],
+            "resolved": [
+              "'the' heard as '(nothing)'"
+            ]
+          }
+        }
+      },
+      "media_sha256": "a9dbd6f6c9797c6acfe0a1a8fe12376e0ffe2865b9c90ade9ab7b6572a5846b1",
+      "scores": {
+        "hook": 5,
+        "clarity": 5,
+        "payoff": 5,
+        "visuals": 5,
+        "loop": 5,
+        "accuracy": 5
+      },
+      "notes": {
+        "hook": "Immediately presents a startling, counter-intuitive fact about a well-known tragedy.",
+        "clarity": "The narrative is straightforward, focusing on the surprising number of survivors and specific lucky escapes.",
+        "payoff": "The specific story of the water tank provides a satisfying and memorable explanation for survival.",
+        "visuals": "The use of diverse archival images of the ship in different states maintains high visual interest.",
+        "loop": "The final sentence connects perfectly back to the opening hook regarding survival statistics.",
+        "accuracy": "Every claim, including the specific survival count and the cabin boy's age, is perfectly backed by research."
+      },
+      "frames": [],
+      "speech": [
+        {
+          "beat": 4,
+          "word": "Werner",
+          "respelling": "ver ner"
+        },
+        {
+          "beat": 4,
+          "word": "Franz",
+          "respelling": "frahnts"
+        },
+        {
+          "beat": 5,
+          "word": "Pruss",
+          "respelling": "prooss"
+        }
+      ],
+      "rewrite": [],
+      "better_than_last": "This episode provides a more satisfying and detailed resolution to its central mystery than the vanishings in episode 053.",
+      "judge": "gemini-3-flash-preview",
+      "passed": false
+    },
+    {
+      "at": "2026-10-06T17:39:01+05:30",
+      "check": {
+        "duration": 28.93,
+        "words": 68,
+        "integrated_lufs": -14.4,
+        "true_peak_dbfs": -1.8,
+        "warnings": [],
+        "speech_differences": [
+          "'the' heard as '(nothing)'",
+          "'werner' heard as 'wernher' after 'board cabin boy'",
+          "'pruss' heard as 'proust' after 'him captain max'",
+          "base.en: 'pruss' heard as 'prouss' after 'him captain max'"
+        ],
+        "speech_error": null,
+        "sources": [
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "designed card",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons"
+        ],
+        "speech_verification": {
+          "heard": "Hindenburg burned in 32 seconds, yet most people survived. While the footage is iconic, the survival rate of the 1937 disaster is often overlooked. Thirty-five individuals died among the 97 on board. Cabin boy Wernher Franz escaped after a burst water tank doused him. Captain Max Proust also survived despite severe burns. Over 60 people were rescued alive from the wreckage. Yet most people on board survived.",
+          "model": "small.en",
+          "media_sha256": "a1ff5457d579a66f010145e81932cb9ee68bed80a9fdbd9eddb95071d718c41c",
+          "primary_differences": [
+            "'the' heard as '(nothing)'",
+            "'werner' heard as 'wernher' after 'board cabin boy'",
+            "'pruss' heard as 'proust' after 'him captain max'"
+          ],
+          "differences": [
+            "'the' heard as '(nothing)'",
+            "'werner' heard as 'wernher' after 'board cabin boy'",
+            "'pruss' heard as 'proust' after 'him captain max'",
+            "base.en: 'pruss' heard as 'prouss' after 'him captain max'"
+          ],
+          "corroboration": {
+            "model": "base.en",
+            "heard": "Hindenburg burned in 32 seconds, yet most people survived. While the footage is iconic, the survival rate of the 1937 disaster is often overlooked. 35 individuals died among the 97 on board. Cabin boy Werner Franz escaped after a burst water tank doused him. Captain Max Prouss also survived despite severe burns. Over 60 people were rescued alive from the wreckage. Yet most people on board survived.",
+            "differences": [
+              "'the' heard as '(nothing)'",
+              "'pruss' heard as 'prouss' after 'him captain max'"
+            ],
+            "resolved": []
+          }
+        }
+      },
+      "media_sha256": "a1ff5457d579a66f010145e81932cb9ee68bed80a9fdbd9eddb95071d718c41c",
+      "scores": {
+        "hook": 3,
+        "clarity": 5,
+        "payoff": 3,
+        "visuals": 4,
+        "loop": 4,
+        "accuracy": 5
+      },
+      "notes": {
+        "hook": "Revealing the survival rate in the first line gives away the script's primary surprise.",
+        "clarity": "The narrative clearly transitions from the disaster timing to specific survival stories.",
+        "payoff": "The ending simply repeats the hook's revelation rather than providing a concluding twist.",
+        "visuals": "The images are all historically accurate and high quality, though they feel repetitive.",
+        "loop": "The loop is clean but the repetition of the exact same sentence feels redundant.",
+        "accuracy": "All statistics, names, and survival details are perfectly aligned with the research claims."
+      },
+      "frames": [],
+      "speech": [
+        {
+          "beat": 4,
+          "word": "Werner",
+          "respelling": "vair ner"
+        },
+        {
+          "beat": 4,
+          "word": "Franz",
+          "respelling": "frahnts"
+        },
+        {
+          "beat": 5,
+          "word": "Pruss",
+          "respelling": "proos"
+        }
+      ],
+      "rewrite": [
+        "Beat 1: The Hindenburg burned for thirty-two seconds before it hit the ground.",
+        "Beat 7: But the miracle is that most people on board survived."
+      ],
+      "better_than_last": "This Short effectively uses specific personal accounts, like the cabin boy's dousing, to anchor the survival statistics better than the broader overview in the Arnhem Short.",
+      "judge": "gemini-3-flash-preview",
+      "passed": false
+    }
+  ],
+  "best_round": 2,
+  "verdict": "rejected",
+  "reason": "low scores: hook, payoff; 3 speech problems",
+  "rejected_at": "2026-10-06T17:39:01+05:30"
+}

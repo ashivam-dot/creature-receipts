@@ -56,10 +56,10 @@ event is told for its gore. Space topics belong to the sister channel Universe R
 
 - Sinking of the Titanic (1912): the lookouts had no binoculars, because the key to their locker left the ship with an officer removed before the voyage — parked (ep081)
 - Sinking of the RMS Lusitania (1915): the liner sank in 18 minutes, after a German warning ran next to its own sailing notice in New York newspapers
-- Hindenburg disaster (1937): the airship burned in about half a minute, yet most of the people aboard survived — making (ep094)
+- Hindenburg disaster (1937): the airship burned in about half a minute, yet most of the people aboard survived — parked (ep094)
 - 1883 eruption of Krakatoa: its final explosion was heard thousands of kilometers away, on Rodrigues island in the Indian Ocean — parked (ep078)
 - 1906 San Francisco earthquake: the fires afterwards did more damage than the shaking
-- Halifax Explosion (1917): a burning munitions ship blew up in the harbor, the largest man-made explosion before the atomic bomb
+- Halifax Explosion (1917): a burning munitions ship blew up in the harbor, the largest man-made explosion before the atomic bomb — making (ep103)
 - MV Wilhelm Gustloff (1945): its sinking in the Baltic was the deadliest loss of a single ship in history
 - SS Eastland (1915): it rolled over while still tied to its Chicago dock, and 844 people died in water about 20 feet deep
 - Great Fire of London (1666): only a handful of deaths were recorded, though the true toll is unknown — parked (ep097)
@@ -86,7 +86,7 @@ event is told for its gore. Space topics belong to the sister channel Universe R
 - 1868 Arica earthquake (1868): a massive tsunami carried the USS Wateree two miles inland and left it sitting perfectly upright in the middle of the desert — parked (ep083)
 - 1944 Bombay Docks explosion (1944): a fire aboard the *Fort Stikine* preceded two blasts at Victoria Dock; India observes April 14 as Fire Services Day to remember the firefighters who died — research lead only; ignition, death toll and image rights need review
 - Tauredunum event (563): a mountain collapse into Lake Geneva created a massive inland tsunami that swept over the city walls of Geneva miles away — making (ep092)
-- Brescia explosion (1769): lightning struck a church bastion storing 90 tons of gunpowder, causing a blast that leveled one-sixth of the city — making (ep099)
+- Brescia explosion (1769): lightning struck a church bastion storing 90 tons of gunpowder, causing a blast that leveled one-sixth of the city — parked (ep099)
 - Armagh rail disaster (1889): a train stalled on a hill, and when the crew uncoupled the rear carriages, they rolled backward into an oncoming train full of children
 - Siege of Compiègne (1430): Joan of Arc was captured by her enemies because her own side raised the drawbridge too early, trapping her outside the city gates
 - Siege of Turin (1706): soldier Pietro Micca saved the city by lighting a short fuse to blow up a French tunnel, knowing he would not have time to escape
@@ -138,7 +138,7 @@ event is told for its gore. Space topics belong to the sister channel Universe R
 - 1157 Hama earthquake (1157): a teacher who stepped out of his classroom returned to find his school collapsed and every student dead, with not a single parent left alive to claim them
 - Siege of Maiozamalcha (363): while the defenders mocked the Romans from their 'impregnable' walls, soldiers finished a secret tunnel and emerged directly into a kitchen inside the city
 - Sinking of the SS Persia (1915): the ocean liner sank in minutes after a torpedo struck, and the lone survivor among the ship's mail clerks clung to a floating crate for hours
-- Fire of Rome (AD 64): flames break out among shops of flammable goods beside the Circus and, driven by wind through narrow twisting lanes, outrun every effort to stop them as fleeing crowds are trapped
+- Fire of Rome (AD 64): flames break out among shops of flammable goods beside the Circus and, driven by wind through narrow twisting lanes, outrun every effort to stop them as fleeing crowds are trapped — making (ep101)
 
 ### Lost Cities
 
@@ -190,7 +190,7 @@ event is told for its gore. Space topics belong to the sister channel Universe R
 ### Fallen Empires
 
 - Fall of Constantinople (1453): by one account, the city fell through a small gate someone left open — making (ep061)
-- Sack of Rome (410): the first time in 800 years that a foreign enemy took the city of Rome — making (ep100)
+- Sack of Rome (410): the first time in 800 years that a foreign enemy took the city of Rome — parked (ep100)
 - Late Bronze Age collapse: around 1177 BC, nearly every great civilization of the eastern Mediterranean fell within a few decades — parked (ep029)
 - Fall of Tenochtitlan (1521): smallpox killed huge numbers of the city's people before and during the siege
 - Battle of the Teutoburg Forest (9 AD): three Roman legions were wiped out, and Augustus is said to have cried "Varus, give me back my legions!" — dropped (ep075)
@@ -241,7 +241,7 @@ event is told for its gore. Space topics belong to the sister channel Universe R
 - Battle of Singara (344): Roman soldiers ignored their generals' orders to stay alert, celebrating their victory inside the enemy camp until they were slaughtered in their sleep
 - Great Revere train wreck of 1871 (1871): the railroad's superintendent had banned telegraph dispatching as 'too dangerous,' forcing trains to run blindly in a thick fog until they collided
 - Gas leak in Cleveland (1944): an underground gas main rupture caused a series of massive explosions that blew manhole covers into the air and leveled a neighborhood, after officials ignored warnings about the aging pipes
-- Silvertown explosion (1917): a fire at a TNT works beside crowded terraces set off about 50 tons of explosive at 6.52 pm
+- Silvertown explosion (1917): a fire at a TNT works beside crowded terraces set off about 50 tons of explosive at 6.52 pm — making (ep102)
 
 ### Sole Survivors
 

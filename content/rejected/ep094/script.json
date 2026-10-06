@@ -2,15 +2,15 @@
   "hooks": [
     {
       "style": "contradiction",
-      "text": "The Hindenburg burned in thirty seconds, yet most people on board survived."
-    },
-    {
-      "style": "number",
-      "text": "Thirty-five people died when the Hindenburg burned in nineteen thirty-seven."
+      "text": "The Hindenburg burned in thirty seconds, yet most people survived."
     },
     {
       "style": "statement",
-      "text": "The Hindenburg burst into flames near its stern at Lakehurst."
+      "text": "Thirty-five people died when the Hindenburg burned in nineteen thirty-seven."
+    },
+    {
+      "style": "question",
+      "text": "Did you know most people on the Hindenburg actually survived?"
     }
   ],
   "hook_style": "contradiction",
@@ -31,15 +31,14 @@
   ],
   "beats": [
     {
-      "text": "The Hindenburg burned in thirty-two seconds, yet most people on board survived.",
+      "text": "The Hindenburg burned in thirty-two seconds, yet most people survived.",
       "emphasis": [
-        "burned in thirty-two seconds",
-        "survived"
+        "thirty-two seconds",
+        "most people survived"
       ],
       "sfx": "none",
       "pause_after": 0.12,
       "claims": [
-        2,
         3
       ],
       "visual": "photograph of the Hindenburg airship in flight, 1936",
@@ -54,18 +53,19 @@
       "card": {
         "kind": "fact",
         "big": "32 SECONDS",
-        "small": "THE ENTIRE DISASTER"
+        "small": "TOTAL BURN TIME"
       }
     },
     {
-      "text": "Popular memory pictures a total loss of life.",
+      "text": "While the footage is iconic, the survival rate of the 1937 disaster is often overlooked.",
       "emphasis": [
-        "total loss of life"
+        "survival rate",
+        "1937 disaster"
       ],
       "sfx": "whoosh",
       "pause_after": 0.12,
       "claims": [
-        5
+        1
       ],
       "visual": "photograph of the Hindenburg disaster fire at Lakehurst, 1937",
       "subjects": [
@@ -77,9 +77,9 @@
         "Hindenburg airship crash Lakehurst"
       ],
       "card": {
-        "kind": "none",
-        "big": "",
-        "small": ""
+        "kind": "dateline",
+        "big": "MAY 6, 1937",
+        "small": "LAKEHURST, NEW JERSEY"
       }
     },
     {
@@ -109,7 +109,7 @@
       }
     },
     {
-      "text": "Cabin boy Werner Franz escaped after a burst water tank doused him.",
+      "text": "Cabin boy [Werner](/vˈɜɹnˈɜɹ/) [Franz](/fɹˈɑnts/) escaped after a burst water tank doused him.",
       "emphasis": [
         "Werner Franz",
         "burst water tank"
@@ -135,7 +135,7 @@
       }
     },
     {
-      "text": "Captain Max Pruss also survived despite severe burns.",
+      "text": "Captain Max [Pruss](/pɹˈus/) also survived despite severe burns.",
       "emphasis": [
         "Captain Max Pruss",
         "severe burns"
@@ -187,16 +187,15 @@
       }
     },
     {
-      "text": "Most people on board survived when it burned.",
+      "text": "Yet, most people on board survived.",
       "emphasis": [
-        "Most people",
+        "most people",
         "survived"
       ],
       "sfx": "none",
       "pause_after": 0.12,
       "claims": [
-        2,
-        3
+        2
       ],
       "visual": "photograph of Hindenburg airship in flight, 1936",
       "subjects": [
@@ -214,7 +213,7 @@
       }
     }
   ],
-  "hook_text": "MOST LIVED",
+  "hook_text": "THE TRUTH",
   "loop": true,
-  "better_than_last": "This episode applies the myth_vs_fact structure to a well-known disaster, leading with a sharp contradiction in the hook, trimming total spoken words to 63, and closing on a seamless loop."
+  "better_than_last": "This episode strictly fulfills the hook length requirement under 12 words while bringing total spoken words down to 60, perfectly fitting the pacing rules and reviewer feedback."
 }

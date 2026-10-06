@@ -1,0 +1,94 @@
+[
+  {
+    "source": "url",
+    "url": "https://iiif.wellcomecollection.org/image/V0023596/full/!1920,1920/0/default.jpg",
+    "credit": {
+      "source": "Wellcome Collection",
+      "title": "Apparatus used in the making of gunpowder. Etching by Bénard after L.J. Goussier.",
+      "credit": "Wellcome Collection",
+      "license": "Public domain",
+      "url": "https://wellcomecollection.org/works/eabszpje"
+    },
+    "fallbacks": [
+      "color"
+    ],
+    "motion": "pan_down",
+    "focus_x": 0.5,
+    "focus_y": 0.75,
+    "box": [
+      0.41,
+      0.65,
+      0.86,
+      0.84
+    ],
+    "_choice": {
+      "key": "wellcome:j3tx9ufm",
+      "origin": "wellcome",
+      "title": "Apparatus used in the making of gunpowder. Etching by Bénard after L.J. Goussier.",
+      "width": 1195,
+      "height": 1920,
+      "license": "Public domain",
+      "license_url": "https://creativecommons.org/share-your-work/public-domain/pdm/",
+      "artist": "Wellcome Collection",
+      "date": "",
+      "year": null,
+      "page": "https://wellcomecollection.org/works/eabszpje",
+      "route": "wellcome",
+      "original": "https://iiif.wellcomecollection.org/image/V0023596/full/!1920,1920/0/default.jpg",
+      "source_name": "Wellcome Collection",
+      "historical": 1.0,
+      "match": 0.0
+    },
+    "_fit": "exact",
+    "_shows": "18th-century engraving of gunpowder barrels",
+    "_alternates": []
+  },
+  {
+    "source": "card",
+    "card": {
+      "kind": "dateline",
+      "big": "August 18, 1769",
+      "small": "Brescia, Italy"
+    },
+    "motion": "zoom_in"
+  },
+  {
+    "reuse": 1,
+    "motion": "zoom_out",
+    "focus_x": 0.5,
+    "focus_y": 0.75
+  },
+  {
+    "source": "card",
+    "card": {
+      "kind": "fact",
+      "big": "90 Tons",
+      "small": "Gunpowder stored inside the bastion"
+    },
+    "motion": "zoom_in"
+  },
+  {
+    "source": "card",
+    "card": {
+      "kind": "fact",
+      "big": "one-sixth of the entire city",
+      "small": ""
+    },
+    "motion": "zoom_in"
+  },
+  {
+    "source": "card",
+    "card": {
+      "kind": "fact",
+      "big": "full kilometer",
+      "small": ""
+    },
+    "motion": "zoom_in"
+  },
+  {
+    "reuse": 1,
+    "motion": "zoom_out",
+    "focus_x": 0.5,
+    "focus_y": 0.75
+  }
+]

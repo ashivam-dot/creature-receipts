@@ -1,0 +1,209 @@
+{
+  "rounds": [
+    {
+      "at": "2026-10-06T17:35:06+05:30",
+      "check": {
+        "duration": 29.12,
+        "words": 68,
+        "integrated_lufs": -14.4,
+        "true_peak_dbfs": -1.6,
+        "warnings": [],
+        "speech_differences": [
+          "'a' heard as '(nothing)'",
+          "'tours' heard as 'tor' after 'chroniclers gregory of'",
+          "'avenches' heard as 'avinches' after 'and marius of'",
+          "'a' heard as '(nothing)' after 'avenches recorded it'",
+          "'tauredunum' heard as 'torajunum' after 'rock fall at'",
+          "'a' heard as '(nothing)' after 'over geneva walls'",
+          "base.en: 'tours' heard as 'tour' after 'chroniclers gregory of'",
+          "base.en: 'avenches' heard as 'avanches' after 'and marius of'",
+          "base.en: 'tauredunum' heard as 'torrejunum' after 'rock fall at'"
+        ],
+        "speech_error": null,
+        "sources": [
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "designed card",
+          "designed card",
+          "Wikimedia Commons",
+          "Art Institute of Chicago (CC0)",
+          "Wikimedia Commons"
+        ],
+        "speech_verification": {
+          "heard": "Mountain collapse on Lake Geneva sent a tsunami in 563. Historical records show no warning before the disaster struck. Chroniclers Gregory of Tor and Marius of Avinches recorded it. Massive rock fall at Torajunum triggered a delta collapse. The resulting wave reached Lausanne within 15 minutes. Within 70 minutes, the wave surged over Geneva walls. Mountain collapse on Lake Geneva sent a tsunami in 563.",
+          "model": "small.en",
+          "media_sha256": "c290670b19432defd8dc6eba96d2e37276c63d6f3a71f2afa78eddb18f6b2987",
+          "primary_differences": [
+            "'a' heard as '(nothing)'",
+            "'tours' heard as 'tor' after 'chroniclers gregory of'",
+            "'avenches' heard as 'avinches' after 'and marius of'",
+            "'a' heard as '(nothing)' after 'avenches recorded it'",
+            "'tauredunum' heard as 'torajunum' after 'rock fall at'",
+            "'a' heard as '(nothing)' after 'over geneva walls'"
+          ],
+          "differences": [
+            "'a' heard as '(nothing)'",
+            "'tours' heard as 'tor' after 'chroniclers gregory of'",
+            "'avenches' heard as 'avinches' after 'and marius of'",
+            "'a' heard as '(nothing)' after 'avenches recorded it'",
+            "'tauredunum' heard as 'torajunum' after 'rock fall at'",
+            "'a' heard as '(nothing)' after 'over geneva walls'",
+            "base.en: 'tours' heard as 'tour' after 'chroniclers gregory of'",
+            "base.en: 'avenches' heard as 'avanches' after 'and marius of'",
+            "base.en: 'tauredunum' heard as 'torrejunum' after 'rock fall at'"
+          ],
+          "corroboration": {
+            "model": "base.en",
+            "heard": "Mountain Collapse on Lake Geneva sent a tsunami in 563. Historical records show no warning before the disaster struck. Chroniclers Gregory of Tour and Marius of Avanches recorded it. Massive rock-fall at Torrejunum triggered a delta collapse. The resulting wave reached Lausanne within 15 minutes. Within 70 minutes, the wave surged over Geneva walls. Mountain Collapse on Lake Geneva sent a tsunami in 563.",
+            "differences": [
+              "'a' heard as '(nothing)'",
+              "'tours' heard as 'tour' after 'chroniclers gregory of'",
+              "'avenches' heard as 'avanches' after 'and marius of'",
+              "'a' heard as '(nothing)' after 'avenches recorded it'",
+              "'tauredunum' heard as 'torrejunum' after 'rock fall at'",
+              "'a' heard as '(nothing)' after 'over geneva walls'"
+            ],
+            "resolved": []
+          }
+        }
+      },
+      "media_sha256": "c290670b19432defd8dc6eba96d2e37276c63d6f3a71f2afa78eddb18f6b2987",
+      "scores": {
+        "hook": 5,
+        "clarity": 5,
+        "payoff": 5,
+        "visuals": 3,
+        "loop": 5,
+        "accuracy": 4
+      },
+      "notes": {
+        "hook": "Immediately establishes a high-stakes, specific historical event with the specific on-screen text 'ALPINE TSUNAMI'.",
+        "clarity": "The logical chain from the landslide to the sediment collapse and the resulting wave timeline is easy to follow.",
+        "payoff": "The surprising image of a mountain-triggered wave breaching landlocked city walls provides a strong conclusion.",
+        "visuals": "Beat 5 contains an archival color calibration strip and ruler at the bottom of the frame that is unprofessional.",
+        "loop": "The mention of the city walls in the final beat flows seamlessly back into the start of the mountain collapse.",
+        "accuracy": "The statement that records show 'no warning' is a reasonable inference but is not explicitly stated in the research."
+      },
+      "frames": [
+        {
+          "beat": 5,
+          "problem": "The image includes a technical color calibration strip and a ruler at the bottom, which is distracting."
+        }
+      ],
+      "speech": [
+        {
+          "beat": 3,
+          "word": "Tours",
+          "respelling": "toor"
+        },
+        {
+          "beat": 3,
+          "word": "Avenches",
+          "respelling": "ah vonsh"
+        },
+        {
+          "beat": 4,
+          "word": "Tauredunum",
+          "respelling": "taw reh doo num"
+        }
+      ],
+      "rewrite": [],
+      "better_than_last": "This Short explains a complex multi-stage geological event with significantly more clarity than the tactical summaries in the Fetterman or Arnhem episodes.",
+      "judge": "gemini-3-flash-preview",
+      "passed": false
+    },
+    {
+      "at": "2026-10-06T17:40:20+05:30",
+      "check": {
+        "duration": 29.0,
+        "words": 68,
+        "integrated_lufs": -14.4,
+        "true_peak_dbfs": -1.6,
+        "warnings": [],
+        "speech_differences": [
+          "'a' heard as '(nothing)'",
+          "'tours' heard as 'tor' after 'chroniclers gregory of'",
+          "'avenches' heard as 'avanche' after 'and marius of'",
+          "'a' heard as '(nothing)' after 'avenches recorded it'",
+          "'tauredunum' heard as 'toredunum' after 'rock fall at'",
+          "'a' heard as '(nothing)' after 'over geneva walls'",
+          "base.en: 'tours' heard as 'tor' after 'chroniclers gregory of'",
+          "base.en: 'avenches' heard as 'avanch' after 'and marius of'",
+          "base.en: 'tauredunum' heard as 'tor edunam' after 'rock fall at'"
+        ],
+        "speech_error": null,
+        "sources": [
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "designed card",
+          "designed card",
+          "Wikimedia Commons",
+          "Art Institute of Chicago (CC0)",
+          "Wikimedia Commons"
+        ],
+        "speech_verification": {
+          "heard": "Mountain Collapse on Lake Geneva sent a tsunami in 563. Historical records show no warning before the disaster struck. Chroniclers Gregory of Tor and Marius of Avanche recorded it. Massive rockfall at Toredunum triggered a delta collapse. The resulting wave reached Lausanne within 15 minutes. Within 70 minutes, the wave surged over Geneva walls. Mountain Collapse on Lake Geneva sent a tsunami in 563.",
+          "model": "small.en",
+          "media_sha256": "ee1dd168c1baac5844bda40981b2795211db4896d3a1c526ccffe9b8e0f9f551",
+          "primary_differences": [
+            "'a' heard as '(nothing)'",
+            "'tours' heard as 'tor' after 'chroniclers gregory of'",
+            "'avenches' heard as 'avanche' after 'and marius of'",
+            "'a' heard as '(nothing)' after 'avenches recorded it'",
+            "'tauredunum' heard as 'toredunum' after 'rock fall at'",
+            "'a' heard as '(nothing)' after 'over geneva walls'"
+          ],
+          "differences": [
+            "'a' heard as '(nothing)'",
+            "'tours' heard as 'tor' after 'chroniclers gregory of'",
+            "'avenches' heard as 'avanche' after 'and marius of'",
+            "'a' heard as '(nothing)' after 'avenches recorded it'",
+            "'tauredunum' heard as 'toredunum' after 'rock fall at'",
+            "'a' heard as '(nothing)' after 'over geneva walls'",
+            "base.en: 'tours' heard as 'tor' after 'chroniclers gregory of'",
+            "base.en: 'avenches' heard as 'avanch' after 'and marius of'",
+            "base.en: 'tauredunum' heard as 'tor edunam' after 'rock fall at'"
+          ],
+          "corroboration": {
+            "model": "base.en",
+            "heard": "Mountain Collapse on Lake Geneva sent a tsunami in 563. Historical records show no warning before the disaster struck. Chroniclers Gregory of Tor and Marius of Avanch recorded it. Massive rock-fall at Tor Edunam triggered a delta collapse. The resulting wave reached Lausanne within 15 minutes. Within 70 minutes, the wave surged over Geneva walls. Mountain Collapse on Lake Geneva sent a tsunami in 563.",
+            "differences": [
+              "'a' heard as '(nothing)'",
+              "'tours' heard as 'tor' after 'chroniclers gregory of'",
+              "'avenches' heard as 'avanch' after 'and marius of'",
+              "'a' heard as '(nothing)' after 'avenches recorded it'",
+              "'tauredunum' heard as 'tor edunam' after 'rock fall at'",
+              "'a' heard as '(nothing)' after 'over geneva walls'"
+            ],
+            "resolved": []
+          }
+        }
+      },
+      "media_sha256": "ee1dd168c1baac5844bda40981b2795211db4896d3a1c526ccffe9b8e0f9f551",
+      "scores": {
+        "hook": 5,
+        "clarity": 5,
+        "payoff": 4,
+        "visuals": 5,
+        "loop": 5,
+        "accuracy": 5
+      },
+      "notes": {
+        "hook": "Direct and specific, the concept of an Alpine tsunami is an immediate and effective draw.",
+        "clarity": "The chronological sequence from the initial collapse to the wave hitting the city is easy to follow.",
+        "payoff": "The specific detail of the wave overtopping the city walls provides a strong, grave historical climax.",
+        "visuals": "Excellent use of location-specific archival maps and woodcuts that maintain a consistent historical tone.",
+        "loop": "The identical start and end lines create a perfectly seamless transition for the replay.",
+        "accuracy": "Every claim, including the specific timing milestones and the delta collapse mechanism, is fully supported."
+      },
+      "frames": [],
+      "speech": [],
+      "rewrite": [],
+      "better_than_last": "This Short uses precise timing milestones (15 and 70 minutes) to create a more visceral sense of the disaster's progression than recent episodes.",
+      "judge": "gemini-3-flash-preview",
+      "passed": false
+    }
+  ],
+  "best_round": 2,
+  "speech_rewrite": true
+}

@@ -1,0 +1,163 @@
+{
+  "rounds": [
+    {
+      "at": "2026-10-06T17:16:09+05:30",
+      "check": {
+        "duration": 25.56,
+        "words": 67,
+        "integrated_lufs": -14.4,
+        "true_peak_dbfs": -1.7,
+        "warnings": [],
+        "speech_differences": [
+          "'24th' heard as '24' after 'blockade on august'",
+          "'(nothing)' heard as 'german' after 'was taken foreign'",
+          "base.en: 'honorius' heard as 'anorius' after 'breach rome emperor'",
+          "base.en: '24th' heard as '24' after 'blockade on august'"
+        ],
+        "speech_error": null,
+        "sources": [
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons"
+        ],
+        "speech_verification": {
+          "heard": "For 800 years, foreign armies failed to breach Rome. Emperor Honorius ruled safely from the distant city of Ravenna. Outside the walls, King Alaric tightened a starving blockade. On August 24, the Visigoths poured through the Salarian Gate. For three days, the conquerors pillaged the ancient capital. St. Jerome wrote that the world itself was taken. Foreign German armies had finally breached Rome after 800 years.",
+          "model": "small.en",
+          "media_sha256": "85eb4f821089c0902e0c5886740b7ede38adcae1c8ee516df0f133b87f59e2de",
+          "primary_differences": [
+            "'24th' heard as '24' after 'blockade on august'",
+            "'(nothing)' heard as 'german' after 'was taken foreign'"
+          ],
+          "differences": [
+            "'24th' heard as '24' after 'blockade on august'",
+            "'(nothing)' heard as 'german' after 'was taken foreign'",
+            "base.en: 'honorius' heard as 'anorius' after 'breach rome emperor'",
+            "base.en: '24th' heard as '24' after 'blockade on august'"
+          ],
+          "corroboration": {
+            "model": "base.en",
+            "heard": "For 800 years, foreign armies failed to breach Rome. Emperor Anorius ruled safely from the distant city of Ravenna. Outside the walls, King Alaric tightened a starving blockade. On August 24, the Visigoths poured through the Salarian Gate. For three days, the conquerors pillaged the ancient capital. St. Jerome wrote that the world itself was taken. Foreign armies had finally breached Rome after 800 years.",
+            "differences": [
+              "'honorius' heard as 'anorius' after 'breach rome emperor'",
+              "'24th' heard as '24' after 'blockade on august'"
+            ],
+            "resolved": []
+          }
+        }
+      },
+      "media_sha256": "85eb4f821089c0902e0c5886740b7ede38adcae1c8ee516df0f133b87f59e2de",
+      "scores": {
+        "hook": 4,
+        "clarity": 5,
+        "payoff": 4,
+        "visuals": 4,
+        "loop": 5,
+        "accuracy": 5
+      },
+      "notes": {
+        "hook": "Strong historical framing with clear high-stakes premise.",
+        "clarity": "Logical chronological progression and concise individual beats.",
+        "payoff": "The dramatic conclusion using Jerome's contemporary quote lands effectively.",
+        "visuals": "Historical engravings, diptychs, and paintings suit the subject matter well.",
+        "loop": "Beat 7 loops seamlessly back into the premise of Beat 1.",
+        "accuracy": "Every line directly reflects the verified research claims without exaggeration."
+      },
+      "frames": [],
+      "speech": [
+        {
+          "beat": 2,
+          "word": "Honorius",
+          "respelling": "ho nor ee us"
+        }
+      ],
+      "rewrite": [],
+      "better_than_last": "Features a much cleaner and more natural audio loop between the final and opening sentences.",
+      "judge": "gemini-3.7-flash",
+      "passed": false
+    },
+    {
+      "at": "2026-10-06T17:18:40+05:30",
+      "check": {
+        "duration": 25.83,
+        "words": 67,
+        "integrated_lufs": -14.5,
+        "true_peak_dbfs": -1.7,
+        "warnings": [],
+        "speech_differences": [
+          "'honorius' heard as 'ho norias' after 'breach rome emperor'",
+          "'24th' heard as '24' after 'blockade on august'",
+          "base.en: '24th' heard as '24' after 'blockade on august'"
+        ],
+        "speech_error": null,
+        "sources": [
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons"
+        ],
+        "speech_verification": {
+          "heard": "For 800 years, foreign armies failed to breach Rome. Emperor Ho Norias ruled safely from the distant city of Ravenna. Outside the walls, King Alaric tightened a starving blockade. On August 24, the Visigoths poured through the Salarian Gate. For three days, the conquerors pillaged the ancient capital. St. Jerome wrote that the world itself was taken. Foreign armies had finally breached Rome after 800 years.",
+          "model": "small.en",
+          "media_sha256": "758634a5da1e58f62c047895b28069a705c5358dea7f20f48f74dcb24c7c87ff",
+          "primary_differences": [
+            "'honorius' heard as 'ho norias' after 'breach rome emperor'",
+            "'24th' heard as '24' after 'blockade on august'"
+          ],
+          "differences": [
+            "'honorius' heard as 'ho norias' after 'breach rome emperor'",
+            "'24th' heard as '24' after 'blockade on august'",
+            "base.en: '24th' heard as '24' after 'blockade on august'"
+          ],
+          "corroboration": {
+            "model": "base.en",
+            "heard": "For 800 years, foreign armies failed to breach Rome. Emperor Honorius ruled safely from the distant city of Ravenna. Outside the walls, King Alaric tightened a starving blockade. On August 24, the Visigoths poured through the Salarian Gate. For three days, the conquerors pillaged the ancient capital. St. Jerome wrote that the world itself was taken. Foreign armies had finally breached Rome after 800 years.",
+            "differences": [
+              "'24th' heard as '24' after 'blockade on august'"
+            ],
+            "resolved": []
+          }
+        }
+      },
+      "media_sha256": "758634a5da1e58f62c047895b28069a705c5358dea7f20f48f74dcb24c7c87ff",
+      "scores": {
+        "hook": 5,
+        "clarity": 5,
+        "payoff": 4,
+        "visuals": 4,
+        "loop": 5,
+        "accuracy": 5
+      },
+      "notes": {
+        "hook": "Strong opening statement setting high historical stakes immediately.",
+        "clarity": "Clean, logical narrative that is effortless to follow.",
+        "payoff": "The historic quote from Jerome lands well, though the narrative arc is straightforward.",
+        "visuals": "Historic engravings and portraits are relevant and legible, though beats 4 and 5 both use 19th-century forum ruins.",
+        "loop": "Seamless grammatical transition connecting the final breach back to the unbroken streak.",
+        "accuracy": "Every date, name, and statement aligns directly with the research claims."
+      },
+      "frames": [],
+      "speech": [
+        {
+          "beat": 2,
+          "word": "Honorius",
+          "respelling": "hoh nor ee us"
+        }
+      ],
+      "rewrite": [],
+      "better_than_last": "The seamless circular phrasing between beat 7 and beat 1 creates a flawless infinite replay loop.",
+      "judge": "gemini-3.7-flash",
+      "passed": false
+    }
+  ],
+  "best_round": 2,
+  "verdict": "rejected",
+  "reason": "speech: 'honorius' heard as 'ho norias' after 'breach rome emperor'; '24th' heard as '24' after 'blockade on august'; base.en: '24th' heard as '24' after 'blockade on august'",
+  "rejected_at": "2026-10-06T17:18:40+05:30"
+}

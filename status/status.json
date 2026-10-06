@@ -1,90 +1,57 @@
 {
-  "updated_at": "2026-10-06T17:11:43+05:30",
+  "updated_at": "2026-10-06T23:05:31+05:30",
   "day": 5,
   "result": "ok",
   "run": {
     "host": "modal",
-    "id": "ta-01M48FXQEW4EXJFQ9DV28Z3H5R",
+    "id": "ta-01M494GXSWZFSEA541N02J9SQR",
     "number": null,
     "trigger": "schedule",
-    "started_at": "2026-10-06T17:05:15+05:30",
-    "started_at_utc": "2026-10-06T11:35:15+00:00",
-    "seconds": 388
+    "started_at": "2026-10-06T23:05:07+05:30",
+    "started_at_utc": "2026-10-06T17:35:07+00:00",
+    "seconds": 24
   },
   "stages": [
     {
       "name": "deploy",
       "ok": true,
       "detail": "",
-      "seconds": 3.1
+      "seconds": 1.2
     },
     {
       "name": "collect",
       "ok": true,
-      "detail": "ep092 unfinished (OutOfQuota: no model in ('gemini-3.8-flash', 'gemini-3.7-flash', 'gemini-3.6-flash', 'gemini-3-flash-preview', 'gemini-flash-latest', 'ovh:Qwen3.5-397B-A17B') has free quota left today); ep094 unfinished (OutOfQuota: no model in ('gemini-3.8-flash', 'gemini-3.7-flash', 'gemini-3.6-flash', 'gemini-3-flash-preview', 'gemini-flash-latest', 'ovh:Qwen3.5-397B-A17B') has free quota left today); ep099 unfinished (VisualCheckFailed: ep099 beat 1: replacement image failed (modern-looking image for a historical scene)); ep100 unfinished (OutOfQuota: no model in ('gemini-3.8-flash', 'ge",
-      "seconds": 17.8
-    },
-    {
-      "name": "timely topics",
-      "ok": true,
-      "detail": "0 added",
-      "seconds": 354.4
-    },
-    {
-      "name": "sourced accident topics",
-      "ok": true,
-      "detail": "2 added",
-      "seconds": 0.1
-    },
-    {
-      "name": "strongest stories",
-      "ok": true,
-      "detail": "skipped: 144 open topics",
-      "seconds": 0.0
-    },
-    {
-      "name": "new topics",
-      "ok": true,
-      "detail": "skipped: 144 open topics",
-      "seconds": 0.0
-    },
-    {
-      "name": "report",
-      "ok": true,
-      "detail": "day-005.md",
-      "seconds": 0.3
+      "detail": "ep092 unfinished (VisualCheckFailed: ep092 beat 1: replacement image failed (modern-looking image for a historical scene)); ep094 rejected (low scores: hook, payoff; 3 speech problems); ep099 rejected (visual plan: 4 title cards exceed the two-card limit); ep100 rejected (speech: 'honorius' heard as 'ho norias' after 'breach rome emperor'; '24th' heard as '24' after 'blockade on august'; base.en: '24th' heard as '24' after 'blockade on august')",
+      "seconds": 11.6
     },
     {
       "name": "start ep092",
       "ok": true,
       "detail": "Tauredunum event (563): a mountain collapse into Lake Geneva created a massive inland tsunami that swept over the city walls of Geneva miles away",
-      "seconds": 2.4
+      "seconds": 0.8
     },
     {
-      "name": "start ep094",
+      "name": "start ep101",
       "ok": true,
-      "detail": "Hindenburg disaster (1937): the airship burned in about half a minute, yet most of the people aboard survived",
-      "seconds": 2.7
+      "detail": "Fire of Rome (AD 64): flames break out among shops of flammable goods beside the Circus and, driven by wind through narrow twisting lanes, outrun every effort to stop them as fleeing crowds are trapped",
+      "seconds": 0.7
     },
     {
-      "name": "start ep099",
+      "name": "start ep102",
       "ok": true,
-      "detail": "Brescia explosion (1769): lightning struck a church bastion storing 90 tons of gunpowder, causing a blast that leveled one-sixth of the city",
-      "seconds": 1.4
+      "detail": "Silvertown explosion (1917): a fire at a TNT works beside crowded terraces set off about 50 tons of explosive at 6.52 pm",
+      "seconds": 0.7
     },
     {
-      "name": "start ep100",
+      "name": "start ep103",
       "ok": true,
-      "detail": "Sack of Rome (410): the first time in 800 years that a foreign enemy took the city of Rome",
-      "seconds": 2.7
+      "detail": "Halifax Explosion (1917): a burning munitions ship blew up in the harbor, the largest man-made explosion before the atomic bomb",
+      "seconds": 0.6
     }
   ],
   "errors": [],
   "owner_action": [],
   "notes": [
-    "ep092 stopped on Gemini's free quota; it resumes in a later run",
-    "ep094 stopped on Gemini's free quota; it resumes in a later run",
-    "ep100 stopped on Gemini's free quota; it resumes in a later run",
     "draft-only producer: no Buffer, Cloudinary, or Google publisher access"
   ],
   "inventory": {
@@ -96,9 +63,9 @@
     "making": [],
     "remote": [
       "ep092",
-      "ep094",
-      "ep099",
-      "ep100"
+      "ep101",
+      "ep102",
+      "ep103"
     ]
   },
   "queue": [],
@@ -127,77 +94,71 @@
       "id": "ep092",
       "outcome": "unfinished",
       "topic": "Tauredunum event (563): a mountain collapse into Lake Geneva created a massive inland tsunami that swept over the city walls of Geneva miles away",
-      "reason": "OutOfQuota: no model in ('gemini-3.8-flash', 'gemini-3.7-flash', 'gemini-3.6-flash', 'gemini-3-flash-preview', 'gemini-flash-latest', 'ovh:Qwen3.5-397B-A17B') has free quota left today",
-      "quota": true,
-      "overloaded": false
-    },
-    {
-      "id": "ep094",
-      "outcome": "unfinished",
-      "topic": "Hindenburg disaster (1937): the airship burned in about half a minute, yet most of the people aboard survived",
-      "reason": "OutOfQuota: no model in ('gemini-3.8-flash', 'gemini-3.7-flash', 'gemini-3.6-flash', 'gemini-3-flash-preview', 'gemini-flash-latest', 'ovh:Qwen3.5-397B-A17B') has free quota left today",
-      "quota": true,
-      "overloaded": false
-    },
-    {
-      "id": "ep099",
-      "outcome": "unfinished",
-      "topic": "Brescia explosion (1769): lightning struck a church bastion storing 90 tons of gunpowder, causing a blast that leveled one-sixth of the city",
-      "reason": "VisualCheckFailed: ep099 beat 1: replacement image failed (modern-looking image for a historical scene)",
+      "reason": "VisualCheckFailed: ep092 beat 1: replacement image failed (modern-looking image for a historical scene)",
       "quota": false,
       "overloaded": false
     },
     {
+      "id": "ep094",
+      "outcome": "rejected",
+      "topic": "Hindenburg disaster (1937): the airship burned in about half a minute, yet most of the people aboard survived",
+      "reason": "low scores: hook, payoff; 3 speech problems"
+    },
+    {
+      "id": "ep099",
+      "outcome": "rejected",
+      "topic": "Brescia explosion (1769): lightning struck a church bastion storing 90 tons of gunpowder, causing a blast that leveled one-sixth of the city",
+      "reason": "visual plan: 4 title cards exceed the two-card limit"
+    },
+    {
       "id": "ep100",
-      "outcome": "unfinished",
+      "outcome": "rejected",
       "topic": "Sack of Rome (410): the first time in 800 years that a foreign enemy took the city of Rome",
-      "reason": "OutOfQuota: no model in ('gemini-3.8-flash', 'gemini-3.7-flash', 'gemini-3.6-flash', 'gemini-3-flash-preview', 'gemini-flash-latest', 'ovh:Qwen3.5-397B-A17B') has free quota left today",
-      "quota": true,
-      "overloaded": false
+      "reason": "speech: 'honorius' heard as 'ho norias' after 'breach rome emperor'; '24th' heard as '24' after 'blockade on august'; base.en: '24th' heard as '24' after 'blockade on august'"
     }
   ],
   "spawned": [
     {
       "id": "ep092",
       "topic": "Tauredunum event (563): a mountain collapse into Lake Geneva created a massive inland tsunami that swept over the city walls of Geneva miles away",
-      "call_id": "fc-01M48G9S2MBX967HPRZSFGRSS5"
+      "call_id": "fc-01M494HRT7T27TRS6YHMRMRJJG"
     },
     {
-      "id": "ep094",
-      "topic": "Hindenburg disaster (1937): the airship burned in about half a minute, yet most of the people aboard survived",
-      "call_id": "fc-01M48G9VPA910RAFBKEZ8835X1"
+      "id": "ep101",
+      "topic": "Fire of Rome (AD 64): flames break out among shops of flammable goods beside the Circus and, driven by wind through narrow twisting lanes, outrun every effort to stop them as fleeing crowds are trapped",
+      "call_id": "fc-01M494HSF0B3PQ7DTQJ8DKYG6H"
     },
     {
-      "id": "ep099",
-      "topic": "Brescia explosion (1769): lightning struck a church bastion storing 90 tons of gunpowder, causing a blast that leveled one-sixth of the city",
-      "call_id": "fc-01M48G9X26V9JME9PKDGW3VCKM"
+      "id": "ep102",
+      "topic": "Silvertown explosion (1917): a fire at a TNT works beside crowded terraces set off about 50 tons of explosive at 6.52 pm",
+      "call_id": "fc-01M494HT4B6GTSPP8AQA6XDJCT"
     },
     {
-      "id": "ep100",
-      "topic": "Sack of Rome (410): the first time in 800 years that a foreign enemy took the city of Rome",
-      "call_id": "fc-01M48G9ZPKP3Y552N5Y80HKAC7"
+      "id": "ep103",
+      "topic": "Halifax Explosion (1917): a burning munitions ship blew up in the harbor, the largest man-made explosion before the atomic bomb",
+      "call_id": "fc-01M494HTPMRY13J387CTY620KS"
     }
   ],
   "in_cloud": [
     {
       "id": "ep092",
       "topic": "Tauredunum event (563): a mountain collapse into Lake Geneva created a massive inland tsunami that swept over the city walls of Geneva miles away",
-      "spawned_at": "2026-10-06T17:11:35+05:30"
+      "spawned_at": "2026-10-06T23:05:29+05:30"
     },
     {
-      "id": "ep094",
-      "topic": "Hindenburg disaster (1937): the airship burned in about half a minute, yet most of the people aboard survived",
-      "spawned_at": "2026-10-06T17:11:38+05:30"
+      "id": "ep101",
+      "topic": "Fire of Rome (AD 64): flames break out among shops of flammable goods beside the Circus and, driven by wind through narrow twisting lanes, outrun every effort to stop them as fleeing crowds are trapped",
+      "spawned_at": "2026-10-06T23:05:29+05:30"
     },
     {
-      "id": "ep099",
-      "topic": "Brescia explosion (1769): lightning struck a church bastion storing 90 tons of gunpowder, causing a blast that leveled one-sixth of the city",
-      "spawned_at": "2026-10-06T17:11:39+05:30"
+      "id": "ep102",
+      "topic": "Silvertown explosion (1917): a fire at a TNT works beside crowded terraces set off about 50 tons of explosive at 6.52 pm",
+      "spawned_at": "2026-10-06T23:05:30+05:30"
     },
     {
-      "id": "ep100",
-      "topic": "Sack of Rome (410): the first time in 800 years that a foreign enemy took the city of Rome",
-      "spawned_at": "2026-10-06T17:11:42+05:30"
+      "id": "ep103",
+      "topic": "Halifax Explosion (1917): a burning munitions ship blew up in the harbor, the largest man-made explosion before the atomic bomb",
+      "spawned_at": "2026-10-06T23:05:31+05:30"
     }
   ],
   "published": [],
@@ -205,31 +166,33 @@
   "failed_posts": [],
   "not_live": [],
   "llm": {
-    "calls": 13,
+    "calls": 18,
     "by_model": {
-      "gemini-3.5-flash-lite": 13
+      "gemini-3-flash-preview": 8,
+      "gemini-3.5-flash-lite": 8,
+      "gemini-3.7-flash": 2
     },
     "out_of_quota": []
   },
   "renders": {
-    "modal": 3,
+    "modal": 7,
     "runner": 0
   },
   "daily_done": "2026-10-06",
   "minutes_this_month": 68.0,
   "minutes_budget": 2000,
   "modal_cost": {
-    "metered": 8.92,
+    "metered": 9.24,
     "billed": 0.0
   },
   "modal_credit": 30.0,
   "capacity": {
-    "cloud": 158,
+    "cloud": 156,
     "runner": 0,
     "runner_minutes": 0,
-    "modal_credit_left": 19.08
+    "modal_credit_left": 18.76
   },
   "made_here": 0,
-  "open_topics": 144,
-  "parked_topics": 33
+  "open_topics": 141,
+  "parked_topics": 36
 }

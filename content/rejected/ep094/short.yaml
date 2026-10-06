@@ -21,19 +21,19 @@ voice:
   voice: am_fenrir
   speed: 1.15
 beats:
-- text: The Hindenburg burned in thirty-two seconds, yet most people on board survived.
+- text: The Hindenburg burned in thirty-two seconds, yet most people survived.
   emphasis:
-  - burned in thirty-two seconds
-  - survived
+  - thirty-two seconds
+  - most people survived
   visual:
     source: url
-    url: https://upload.wikimedia.org/wikipedia/commons/3/35/Hindenburg_at_lakehurst.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    url: https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1c/Hindenburg_disaster.jpg/1920px-Hindenburg_disaster.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
     credit:
       source: Wikimedia Commons
-      title: Hindenburg at lakehurst.jpg
-      credit: U.S. Department of the Navy. Bureau of Aeronautics. Naval Aircraft Factory, Philadelphia, Pennsylvania (USA).
+      title: Hindenburg disaster.jpg
+      credit: Sam Shere
       license: Public domain
-      url: https://commons.wikimedia.org/wiki/File:Hindenburg_at_lakehurst.jpg
+      url: https://commons.wikimedia.org/wiki/File:Hindenburg_disaster.jpg
     fallbacks:
     - card
     - color
@@ -43,25 +43,31 @@ beats:
     card:
       kind: fact
       big: 32 SECONDS
-      small: THE ENTIRE DISASTER
-- text: Popular memory pictures a total loss of life.
+      small: TOTAL BURN TIME
+- text: While the footage is iconic, the survival rate of the 1937 disaster is often overlooked.
   emphasis:
-  - total loss of life
+  - survival rate
+  - 1937 disaster
   sfx: whoosh
   visual:
     source: url
-    url: https://upload.wikimedia.org/wikipedia/commons/8/84/Hindenburg_burning.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    url: https://upload.wikimedia.org/wikipedia/commons/1/18/Hindenburg_burning%2C_1937.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
     credit:
       source: Wikimedia Commons
-      title: Hindenburg burning.jpg
-      credit: Gus Pasquerella
+      title: Hindenburg burning, 1937.jpg
+      credit: Gus Pasquarella
       license: Public domain
-      url: https://commons.wikimedia.org/wiki/File:Hindenburg_burning.jpg
+      url: https://commons.wikimedia.org/wiki/File:Hindenburg_burning,_1937.jpg
     fallbacks:
+    - card
     - color
     motion: pan_left
     focus_x: 0.5
     focus_y: 0.5
+    card:
+      kind: dateline
+      big: MAY 6, 1937
+      small: LAKEHURST, NEW JERSEY
 - text: Thirty-five individuals died among the ninety-seven on board.
   emphasis:
   - Thirty-five individuals
@@ -80,7 +86,7 @@ beats:
     motion: pan_right
     focus_x: 0.5
     focus_y: 0.5
-- text: Cabin boy Werner Franz escaped after a burst water tank doused him.
+- text: Cabin boy [Werner](/vˈɜɹnˈɜɹ/) [Franz](/fɹˈɑnts/) escaped after a burst water tank doused him.
   emphasis:
   - Werner Franz
   - burst water tank
@@ -93,7 +99,7 @@ beats:
       big: AGE 14
       small: CABIN BOY SURVIVOR
     motion: zoom_in
-- text: Captain Max Pruss also survived despite severe burns.
+- text: Captain Max [Pruss](/pɹˈus/) also survived despite severe burns.
   emphasis:
   - Captain Max Pruss
   - severe burns
@@ -130,9 +136,9 @@ beats:
     motion: zoom_in
     focus_x: 0.5
     focus_y: 0.5
-- text: Most people on board survived when it burned.
+- text: Yet, most people on board survived.
   emphasis:
-  - Most people
+  - most people
   - survived
   visual:
     reuse: 1
@@ -140,4 +146,4 @@ beats:
     focus_x: 0.5
     focus_y: 0.5
 depth_motion: true
-hook_text: MOST LIVED
+hook_text: THE TRUTH
