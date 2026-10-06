@@ -385,6 +385,16 @@ def _speech_only_block(result: dict, verdict: dict) -> bool:
             and all(verdict["scores"].get(name, 0) >= PASS_SCORE for name in GATE))
 
 
+_MISHEARD = re.compile(r"""^(?:[\w.-]+: )?'(.+?)' heard as '""")
+
+
+def _misheard(result: dict) -> list[str]:
+    """The script's words the speech recognizer heard as something else, in order, once each."""
+    found = [m.group(1) for d in (result.get("speech") or {}).get("differences") or []
+             if (m := _MISHEARD.match(str(d)))]
+    return list(dict.fromkeys(found))[:8]
+
+
 def _reject_speech(folder: Path, meta: dict, result: dict) -> dict:
     speech = result.get("speech") or {}
     reason = "speech: " + ("; ".join(speech.get("differences") or []) or speech.get("error") or "recognizer disagreed")
@@ -541,9 +551,19 @@ def produce(topic: str, series: str, episode_id: str | None = None, *, at: str |
         log.info("%s review %d: %s%s", episode_id, len(notes["rounds"]), verdict["scores"], " (passed)" if passed else "")
         if passed:
             break
+        speech_fix = []
         if _speech_only_block(result, verdict) and (not verdict["speech"] or repeated_speech):
-            shutil.rmtree(folder / BEST, ignore_errors=True)
-            return _reject_speech(folder, meta, result)
+            # A Short that passes on every score but whose rare names or jargon the recognizer mishears gets one
+            # plain-wording rewrite and render before it is rejected (ep085 scored 5 on everything).
+            misheard = _misheard(result)
+            if final or repeated_speech or notes.get("speech_rewrite") or not misheard:
+                shutil.rmtree(folder / BEST, ignore_errors=True)
+                return _reject_speech(folder, meta, result)
+            notes["speech_rewrite"] = True
+            _write(folder / "review.json", notes)
+            speech_fix = [f"A speech recognizer could not make out: {', '.join(misheard)}. Say each idea in plain, "
+                          "common English words instead of jargon or rare foreign terms, and name each hard proper "
+                          "noun at most once (or describe it, e.g. 'an early pharaoh'), keeping every fact and claim."]
         if final:
             best = notes["best_round"]
             if best != len(notes["rounds"]) and _standing(notes["rounds"][best - 1])[0]:
@@ -565,9 +585,11 @@ def produce(topic: str, series: str, episode_id: str | None = None, *, at: str |
             return {"id": episode_id, "outcome": "rejected", "topic": meta["topic"], "reason": reason}
 
         story = ("hook", "clarity", "payoff", "loop", "accuracy")
-        rewrite = verdict["rewrite"] or [f"{k}: {verdict['notes'][k]}" for k in story if verdict["scores"][k] < PASS_SCORE]
+        rewrite = (verdict["rewrite"] or [f"{k}: {verdict['notes'][k]}" for k in story if verdict["scores"][k] < PASS_SCORE]
+                   ) + speech_fix
         low, high = DURATION
-        if any(verdict["scores"][k] < PASS_SCORE for k in story) or not low <= result["duration"] <= high:
+        if (any(verdict["scores"][k] < PASS_SCORE for k in story) or not low <= result["duration"] <= high
+                or speech_fix):
             if not low <= result["duration"] <= high:
                 rewrite.append(f"The render ran {result['duration']} s; it must be {low}-{high} s.")
             if meta.get("approved_art_sha256"):

@@ -19,7 +19,7 @@ def _answer(cite, quotes=None):
         {"source": "S2", "quote": "The narwhal lives in Arctic waters and eats fish."},
     ]
     return {"viable": True, "reason": "ok", "story": "s", "angle": "a", "disputed": [], "visuals": [],
-            "claims": [{"claim": f"fact {i}", "sources": cite, "evidence": quotes, "confidence": "high"}
+            "claims": [{"claim": f"fact {'abcdefghij'[i]}", "sources": cite, "evidence": quotes, "confidence": "high"}
                        for i in range(10)]}
 
 

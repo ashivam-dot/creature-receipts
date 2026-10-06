@@ -469,6 +469,34 @@ def _fallback(beat: dict, visuals: list, number: int, cards_left: int) -> dict:
     return card_visual({"kind": "fact", "big": words[:28], "small": ""})
 
 
+def _spares_for_reuse(beats: list[dict], visuals: list, loop: bool) -> None:
+    """A beat left showing an earlier picture again takes a spare ranked alternate instead: its source beat's
+    first, else the nearest picked beat's. Repeats are marked down by the reviewer, and an art-poor plan (studio.
+    _visual_plan_problem) is rejected before it renders, though most of them had unused alternates."""
+    in_use = {v["_choice"]["key"] for v in visuals if v and v.get("_choice", {}).get("key")}
+    in_use |= {k for v in visuals if v for k in v.get("_rejected", [])}
+    for n, visual in enumerate(visuals, 1):
+        if not visual or not visual.get("reuse") or (loop and n == len(visuals)):
+            continue
+        donors = [visual["reuse"]] + sorted(range(1, len(visuals) + 1), key=lambda k: (abs(k - n), k))
+        for k in donors:
+            donor = visuals[k - 1]
+            if not donor or donor.get("reuse") or k == n:
+                continue
+            spare = next((a for a in donor.get("_alternates", []) if a.get("key") and a["key"] not in in_use), None)
+            if spare is None:
+                continue
+            donor["_alternates"] = [a for a in donor["_alternates"] if a is not spare]
+            previous = visuals[n - 2].get("motion") if n > 1 and visuals[n - 2] else None
+            new = picture_visual(spare, n, previous, None, _card(beats[n - 1]))
+            new["_fit"] = "alternate"
+            if visual.get("_rejected"):
+                new["_rejected"] = visual["_rejected"]
+            visuals[n - 1] = new
+            in_use.add(spare["key"])
+            break
+
+
 def _cards(visuals: list) -> int:
     return sum(1 for v in visuals if v and v.get("source") == "card")
 
@@ -517,6 +545,7 @@ def pick(script: dict, research: dict, episode_id: str, keep: dict[int, dict] | 
                 visual = _fallback(beat, visuals, n, MAX_CARDS - _cards(visuals))
             visuals[n - 1] = visual
             previous = visual.get("motion")
+        _spares_for_reuse(beats, visuals, loop)
     if loop:
         visuals[-1] = _loop_visual(visuals[0])
     log.info("%s: %s", episode_id, ", ".join(
@@ -605,6 +634,7 @@ def replace(script: dict, research: dict, episode_id: str, visuals: list[dict], 
                 new = _reuse_of(visuals, n) or new
         new["_rejected"] = sorted(set(old.get("_rejected", [])) | rejected)
         visuals[n - 1] = new
+    _spares_for_reuse(beats, visuals, loop)
     if loop:
         visuals[-1] = _loop_visual(visuals[0])
     log.info("%s: replaced beats %s (%s)", episode_id, numbers, why[:200])

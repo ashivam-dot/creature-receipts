@@ -294,7 +294,9 @@ The sources below are the only ones you may use. Do not add anything you know fr
 counts only if at least two sources from different sites state it. For each claim, include `sources` and
 `evidence`: at least two source labels with a short, exact quote copied verbatim from each labelled source
 text. Quotes are checked against the fetched page text; paraphrases and invented quotes are rejected.
-If a claim has no matching quotes from two different sites, omit it. Wikipedia is one site.
+Each quote on its own must state the whole claim, with every number, date, and name in it: never pair a
+quote of the detail with another site's sentence that only mentions the event. If a claim has no matching
+quotes from two different sites, omit it. Wikipedia is one site.
 
 Return:
 - viable: false if these sources can't support a surprising 45-second story with at least 10 claims that
@@ -323,9 +325,17 @@ def _quote_key(text: str) -> str:
     return " ".join("".join(char if char.isalnum() else " " for char in normalized).split())
 
 
+def _figures(text: str) -> set[str]:
+    """The numbers written in digits ("1,500", "21/09/1921" -> 1500, 21, 09, 1921), without leading zeros."""
+    return {n.lstrip("0") or "0" for n in re.findall(r"\d+", re.sub(r"(?<=\d)[,\u202f\u00a0 ](?=\d{3}\b)", "", text))}
+
+
 def _matched_evidence(claim: dict, by_label: dict[str, Source]) -> list[dict]:
-    """Reject source labels that the model listed without quoting the fetched text."""
+    """Reject source labels that the model listed without quoting the fetched text, and quotes that lack a figure
+    the claim states: independent QA judges each quote alone, and a second site's sentence about the event in
+    general doesn't confirm the crater's size or the year of a test."""
     cited = set(re.findall(r"S\d+", " ".join(claim.get("sources", [])).upper()))
+    figures = _figures(str(claim.get("claim", "")))
     verified = []
     for item in claim.get("evidence", []):
         label = re.search(r"S\d+", str(item.get("source", "")).upper())
@@ -336,6 +346,8 @@ def _matched_evidence(claim: dict, by_label: dict[str, Source]) -> list[dict]:
         if label not in cited or not source or len(key) < 20 or len(key.split()) < 4:
             continue
         if key not in _quote_key(source.full_text or source.text) or any(e["source"] == label for e in verified):
+            continue
+        if not figures <= _figures(quote):
             continue
         verified.append({"source": label, "quote": quote})
     return verified
