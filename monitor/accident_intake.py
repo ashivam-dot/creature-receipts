@@ -25,6 +25,7 @@ USER_AGENT = "HistoryAccidentIntake/1.0 (https://github.com/ashivam-dot/creature
 MAX_SOURCE_BYTES = 3_000_000
 MAX_IMAGE_BYTES = 12_000_000
 EXPECTED_IDS = {"oppau-1921", "mann-gulch-1949"}
+EXPECTED_ART_COUNTS = {"oppau-1921": 2, "mann-gulch-1949": 4}
 ISSUE_TITLE = "[supply] Checked History accident lane needs independent source and art approval"
 
 
@@ -189,7 +190,7 @@ def build_payload(root: Path = ROOT) -> dict:
 
 
 def audit(payload: dict) -> dict:
-    """At most two live leads, four source pages, and four exact images."""
+    """At most two live leads, four source pages, and six exact images."""
     intake = payload["intake"]
     pool = {row["id"]: row for row in payload["pool"]}
     require(len(intake) == 2 and {row["id"] for row in intake} == EXPECTED_IDS,
@@ -218,9 +219,9 @@ def audit(payload: dict) -> dict:
                     source, entry["source_canaries"][source["role"]]))
             require(len({urlsplit(item["url"]).hostname for item in result["sources"]}) == 2,
                     "source pair is no longer from distinct hosts")
-            require(len(entry["art"]) == 2 and
-                    len({item["title"] for item in entry["art"]}) == 2,
-                    "art preflight must pin two distinct scenes")
+            require(len(entry["art"]) == EXPECTED_ART_COUNTS[entry["id"]] and
+                    len({item["title"] for item in entry["art"]}) == len(entry["art"]),
+                    "art preflight has the wrong number of distinct scenes")
             for item in entry["art"]:
                 result["art"].append(art_check(item))
             result["state"] = "technical_preflight_pass"
@@ -228,8 +229,8 @@ def audit(payload: dict) -> dict:
                 result["state"] = "original_report_missing"
                 result["source_limit"] = "Primary is a retrospective technical study, not a contemporary inquiry."
             result["selection_hold"] = (
-                "Two checked images are not a finished visual plan; independent source, "
-                "scene, script, and exact-media review are still required.")
+                "Checked images are not a finished visual plan; independent source, "
+                "rights, scene, script, and exact-media review are still required.")
         except (IntakeError, KeyError, TypeError, ValueError) as exc:
             result["failure"] = str(exc)[:300]
         results.append(result)
