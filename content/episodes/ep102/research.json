@@ -1,0 +1,184 @@
+{
+  "viable": true,
+  "reason": "The provided sources contain sufficient overlapping facts, dates, and quotes to support a compelling and accurate Short.",
+  "story": "On January 19, 1917, at 6.52 pm, a catastrophic explosion tore through the Brunner Mond and Company TNT factory in Silvertown, East London. Driven by the desperate wartime demands of the First World War, the plant had been hastily converted to manufacture high explosives despite being located just yards from crowded residential terraces. A spark ignited the stockpile, triggering the detonation of about 50 tons of TNT. The monumental blast killed 73 people, injured hundreds, flattened surrounding streets, and damaged tens of thousands of properties across London, with shockwaves felt as far away as Norfolk and Southampton. Amid wartime censorship and fears of German sabotage, the official inquiry blamed negligence and an accidental spark, but kept its findings secret until the 1950s, leaving a community to rebuild in the shadow of a preventable disaster.",
+  "angle": "A chief chemist predicted the disaster beforehand, warning that the Ministry of Munitions considered the immense danger 'worth the risk' to produce wartime explosives.",
+  "claims": [
+    {
+      "claim": "The explosion killed 73 people.",
+      "sources": [
+        "S1",
+        "S2"
+      ],
+      "evidence": [
+        {
+          "source": "S1",
+          "quote": "On 19 January 1917 at 6.52 pm, a catastrophic explosion at the Brunner Mond and Company’s high explosive TNT factory in Silvertown, East London, killed 73 people and injured hundreds."
+        },
+        {
+          "source": "S2",
+          "quote": "On 19 January 1917 a fire at a docklands TNT refinery in Silvertown, east London caused London’s largest ever explosion, killing 73 people."
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim": "The factory involved was Brunner Mond and Company.",
+      "sources": [
+        "S1",
+        "S2"
+      ],
+      "evidence": [
+        {
+          "source": "S1",
+          "quote": "On 19 January 1917 at 6.52 pm, a catastrophic explosion at the Brunner Mond and Company’s high explosive TNT factory in Silvertown, East London, killed 73 people and injured hundreds."
+        },
+        {
+          "source": "S2",
+          "quote": "Just before 7pm on 19 January 1917, a fire started at Brunner Mond & Co, a factory refining TNT for use in the First World War (1914–1918)."
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim": "Over 1,700 men were employed on reconstruction and repairs following the disaster.",
+      "sources": [
+        "S1",
+        "S2"
+      ],
+      "evidence": [
+        {
+          "source": "S1",
+          "quote": "1,700 men were quickly employed on reconstruction."
+        },
+        {
+          "source": "S2",
+          "quote": "By mid-February 1917, more than 1,700 men were working to repair houses."
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim": "The inquiry report remained secret until the 1950s.",
+      "sources": [
+        "S1",
+        "S2"
+      ],
+      "evidence": [
+        {
+          "source": "S1",
+          "quote": "The report remained secret until the 1950s."
+        },
+        {
+          "source": "S2",
+          "quote": "It wasn’t until the 1950s that the inquiry report was released."
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim": "Shockwaves and sounds were reported far away, including in Norfolk.",
+      "sources": [
+        "S1",
+        "S2"
+      ],
+      "evidence": [
+        {
+          "source": "S1",
+          "quote": "The blast and its shock waves were heard and felt all over the city, and as far away as Salisbury in Wiltshire and King’s Lynn in Norfolk."
+        },
+        {
+          "source": "S2",
+          "quote": "Shockwaves were reported in Norfolk and Southampton."
+        }
+      ],
+      "confidence": "medium"
+    },
+    {
+      "claim": "The plant was ordered to begin producing TNT in 1915 due to wartime demands.",
+      "sources": [
+        "S1",
+        "S2"
+      ],
+      "evidence": [
+        {
+          "source": "S1",
+          "quote": "By spring 1915 the so-called ‘Shell Scandal’ (too few being produced and many failing to explode) led to the creation of the Ministry of Munitions."
+        },
+        {
+          "source": "S2",
+          "quote": "During the First World War, the government desperately needed explosives. In 1915, Brunner, Mond & Co’s chemical plant was ordered to begin producing trinitrotoluene – better known as TNT."
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim": "The government inquiry report did not rule out sabotage and the accident fueled speculation of a German attack.",
+      "sources": [
+        "S1",
+        "S2"
+      ],
+      "evidence": [
+        {
+          "source": "S1",
+          "quote": "A government report into the accident did not rule out sabotage. It was widely thought at the time that enemy agents were to blame..."
+        },
+        {
+          "source": "S2",
+          "quote": "The report wasn’t made public, fuelling speculation that this had been a German attack, not an accident."
+        }
+      ],
+      "confidence": "medium"
+    }
+  ],
+  "disputed": [
+    "Exact quantity of explosive: S1 states 53 tons while S2 states 50 tonnes. The script should use 'about 50 tons'.",
+    "Extent of property damage: S1 states up to 70,000 properties damaged, while S2 states 60,000 to 70,000. The script should attribute this as 'around 60,000 to 70,000 properties'."
+  ],
+  "visuals": [
+    {
+      "subject": "Silvertown explosion destruction and ruins",
+      "queries": [
+        "Silvertown explosion 1917 damage",
+        "Royal Victoria Dock 1917 explosion photograph"
+      ]
+    },
+    {
+      "subject": "First World War munitions factory workers",
+      "queries": [
+        "World War I munition factory workers",
+        "Brunner Mond chemical works engraving"
+      ]
+    },
+    {
+      "subject": "London docks in the early 20th century",
+      "queries": [
+        "Royal Victoria Dock London 1900s",
+        "River Thames London docks history"
+      ]
+    },
+    {
+      "subject": "First World War newspaper censorship and home front",
+      "queries": [
+        "First World War British newspaper censorship",
+        "World War I home front Britain poster"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "label": "S1",
+      "url": "https://heritagecalling.com/2017/01/19/the-silvertown-tragedy-explosion-on-the-home-front/",
+      "title": "The Silvertown Tragedy: Explosion on the Home Front",
+      "site": "heritagecalling.com"
+    },
+    {
+      "label": "S2",
+      "url": "https://www.londonmuseum.org.uk/collections/london-stories/silvertown-1917-londons-largest-explosion/",
+      "title": "Silvertown 1917: London’s largest explosion",
+      "site": "londonmuseum.org.uk"
+    }
+  ],
+  "topic": "Silvertown explosion (1917): a fire at a TNT works beside crowded terraces set off about 50 tons of explosive at 6.52 pm",
+  "series": "Warnings Ignored"
+}

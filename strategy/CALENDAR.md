@@ -138,7 +138,7 @@ event is told for its gore. Space topics belong to the sister channel Universe R
 - 1157 Hama earthquake (1157): a teacher who stepped out of his classroom returned to find his school collapsed and every student dead, with not a single parent left alive to claim them
 - Siege of Maiozamalcha (363): while the defenders mocked the Romans from their 'impregnable' walls, soldiers finished a secret tunnel and emerged directly into a kitchen inside the city
 - Sinking of the SS Persia (1915): the ocean liner sank in minutes after a torpedo struck, and the lone survivor among the ship's mail clerks clung to a floating crate for hours
-- Fire of Rome (AD 64): flames break out among shops of flammable goods beside the Circus and, driven by wind through narrow twisting lanes, outrun every effort to stop them as fleeing crowds are trapped — making (ep101)
+- Fire of Rome (AD 64): flames break out among shops of flammable goods beside the Circus and, driven by wind through narrow twisting lanes, outrun every effort to stop them as fleeing crowds are trapped — dropped (ep101)
 
 ### Lost Cities
 
@@ -157,7 +157,7 @@ event is told for its gore. Space topics belong to the sister channel Universe R
 - Timgad (100 AD): this Roman city was abandoned in the 7th century and buried by the Sahara’s sands, leaving it perfectly preserved for over 1,000 years
 - Fall of Teotihuacan (c. 750 AD): the massive city was burned and abandoned not by invaders, but seemingly by its own citizens who rose up and systematically destroyed the homes of the ruling elite
 - Discovery of Skara Brae (c. 3180 BC): this Neolithic village was perfectly preserved under sand dunes for 5,000 years until a massive storm in 1850 stripped the earth away and revealed it to a local laird
-- Great Zimbabwe (c. 11th–15th centuries): colonial explorers refused to believe the massive granite walls were built by Africans, insisting for decades that the city must have been built by the Queen of Sheba
+- Great Zimbabwe (c. 11th–15th centuries): colonial explorers refused to believe the massive granite walls were built by Africans, insisting for decades that the city must have been built by the Queen of Sheba — making (ep104)
 - Sybaris (510 BC): the city famous for its luxury was completely erased from the earth when victorious rivals diverted a whole river to run over its ruins
 
 ### Doomed Expeditions

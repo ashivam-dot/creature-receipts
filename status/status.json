@@ -1,57 +1,59 @@
 {
-  "updated_at": "2026-10-06T23:05:31+05:30",
-  "day": 5,
+  "updated_at": "2026-10-07T05:05:47+05:30",
+  "day": 6,
   "result": "ok",
   "run": {
     "host": "modal",
-    "id": "ta-01M494GXSWZFSEA541N02J9SQR",
+    "id": "ta-01M49S42G7H0AF5FHBA27YAZGR",
     "number": null,
     "trigger": "schedule",
-    "started_at": "2026-10-06T23:05:07+05:30",
-    "started_at_utc": "2026-10-06T17:35:07+00:00",
-    "seconds": 24
+    "started_at": "2026-10-07T05:05:11+05:30",
+    "started_at_utc": "2026-10-06T23:35:11+00:00",
+    "seconds": 36
   },
   "stages": [
     {
       "name": "deploy",
       "ok": true,
       "detail": "",
-      "seconds": 1.2
+      "seconds": 2.0
     },
     {
       "name": "collect",
       "ok": true,
-      "detail": "ep092 unfinished (VisualCheckFailed: ep092 beat 1: replacement image failed (modern-looking image for a historical scene)); ep094 rejected (low scores: hook, payoff; 3 speech problems); ep099 rejected (visual plan: 4 title cards exceed the two-card limit); ep100 rejected (speech: 'honorius' heard as 'ho norias' after 'breach rome emperor'; '24th' heard as '24' after 'blockade on august'; base.en: '24th' heard as '24' after 'blockade on august')",
-      "seconds": 11.6
+      "detail": "ep092 unfinished (OutOfQuota: no model in ('gemini-3.8-flash', 'gemini-3.7-flash', 'gemini-3.6-flash', 'gemini-3-flash-preview', 'gemini-flash-latest', 'ovh:Qwen3.5-397B-A17B') has free quota left today); ep101 rejected (research: only 3 claims have verified quotes from two different sites); ep102 unfinished (RuntimeError: ep102 script still breaks the rules: [\"Give hook_text: 2 to 6 words, 40 characters or fewer, no emoji, shown over beat 1 from its first frame. It must add a time, number, or the stakes rather than repeat the spoken hook's words.\"]); ep103 unfinished (OutOfQuota: no model in ",
+      "seconds": 13.9
     },
     {
       "name": "start ep092",
       "ok": true,
       "detail": "Tauredunum event (563): a mountain collapse into Lake Geneva created a massive inland tsunami that swept over the city walls of Geneva miles away",
-      "seconds": 0.8
-    },
-    {
-      "name": "start ep101",
-      "ok": true,
-      "detail": "Fire of Rome (AD 64): flames break out among shops of flammable goods beside the Circus and, driven by wind through narrow twisting lanes, outrun every effort to stop them as fleeing crowds are trapped",
-      "seconds": 0.7
+      "seconds": 2.5
     },
     {
       "name": "start ep102",
       "ok": true,
       "detail": "Silvertown explosion (1917): a fire at a TNT works beside crowded terraces set off about 50 tons of explosive at 6.52 pm",
-      "seconds": 0.7
+      "seconds": 1.9
     },
     {
       "name": "start ep103",
       "ok": true,
       "detail": "Halifax Explosion (1917): a burning munitions ship blew up in the harbor, the largest man-made explosion before the atomic bomb",
-      "seconds": 0.6
+      "seconds": 1.9
+    },
+    {
+      "name": "start ep104",
+      "ok": true,
+      "detail": "Great Zimbabwe (c. 11th–15th centuries): colonial explorers refused to believe the massive granite walls were built by Africans, insisting for decades that the city must have been built by the Queen of Sheba",
+      "seconds": 1.9
     }
   ],
   "errors": [],
   "owner_action": [],
   "notes": [
+    "ep092 stopped on Gemini's free quota; it resumes in a later run",
+    "ep103 stopped on Gemini's free quota; it resumes in a later run",
     "draft-only producer: no Buffer, Cloudinary, or Google publisher access"
   ],
   "inventory": {
@@ -63,9 +65,9 @@
     "making": [],
     "remote": [
       "ep092",
-      "ep101",
       "ep102",
-      "ep103"
+      "ep103",
+      "ep104"
     ]
   },
   "queue": [],
@@ -94,71 +96,75 @@
       "id": "ep092",
       "outcome": "unfinished",
       "topic": "Tauredunum event (563): a mountain collapse into Lake Geneva created a massive inland tsunami that swept over the city walls of Geneva miles away",
-      "reason": "VisualCheckFailed: ep092 beat 1: replacement image failed (modern-looking image for a historical scene)",
+      "reason": "OutOfQuota: no model in ('gemini-3.8-flash', 'gemini-3.7-flash', 'gemini-3.6-flash', 'gemini-3-flash-preview', 'gemini-flash-latest', 'ovh:Qwen3.5-397B-A17B') has free quota left today",
+      "quota": true,
+      "overloaded": false
+    },
+    {
+      "id": "ep101",
+      "outcome": "rejected",
+      "topic": "Fire of Rome (AD 64): flames break out among shops of flammable goods beside the Circus and, driven by wind through narrow twisting lanes, outrun every effort to stop them as fleeing crowds are trapped",
+      "reason": "research: only 3 claims have verified quotes from two different sites"
+    },
+    {
+      "id": "ep102",
+      "outcome": "unfinished",
+      "topic": "Silvertown explosion (1917): a fire at a TNT works beside crowded terraces set off about 50 tons of explosive at 6.52 pm",
+      "reason": "RuntimeError: ep102 script still breaks the rules: [\"Give hook_text: 2 to 6 words, 40 characters or fewer, no emoji, shown over beat 1 from its first frame. It must add a time, number, or the stakes rather than repeat the spoken hook's words.\"]",
       "quota": false,
       "overloaded": false
     },
     {
-      "id": "ep094",
-      "outcome": "rejected",
-      "topic": "Hindenburg disaster (1937): the airship burned in about half a minute, yet most of the people aboard survived",
-      "reason": "low scores: hook, payoff; 3 speech problems"
-    },
-    {
-      "id": "ep099",
-      "outcome": "rejected",
-      "topic": "Brescia explosion (1769): lightning struck a church bastion storing 90 tons of gunpowder, causing a blast that leveled one-sixth of the city",
-      "reason": "visual plan: 4 title cards exceed the two-card limit"
-    },
-    {
-      "id": "ep100",
-      "outcome": "rejected",
-      "topic": "Sack of Rome (410): the first time in 800 years that a foreign enemy took the city of Rome",
-      "reason": "speech: 'honorius' heard as 'ho norias' after 'breach rome emperor'; '24th' heard as '24' after 'blockade on august'; base.en: '24th' heard as '24' after 'blockade on august'"
+      "id": "ep103",
+      "outcome": "unfinished",
+      "topic": "Halifax Explosion (1917): a burning munitions ship blew up in the harbor, the largest man-made explosion before the atomic bomb",
+      "reason": "OutOfQuota: no model in ('gemini-3.8-flash', 'gemini-3.7-flash', 'gemini-3.6-flash', 'gemini-3-flash-preview', 'gemini-flash-latest', 'ovh:Qwen3.5-397B-A17B') has free quota left today",
+      "quota": true,
+      "overloaded": false
     }
   ],
   "spawned": [
     {
       "id": "ep092",
       "topic": "Tauredunum event (563): a mountain collapse into Lake Geneva created a massive inland tsunami that swept over the city walls of Geneva miles away",
-      "call_id": "fc-01M494HRT7T27TRS6YHMRMRJJG"
-    },
-    {
-      "id": "ep101",
-      "topic": "Fire of Rome (AD 64): flames break out among shops of flammable goods beside the Circus and, driven by wind through narrow twisting lanes, outrun every effort to stop them as fleeing crowds are trapped",
-      "call_id": "fc-01M494HSF0B3PQ7DTQJ8DKYG6H"
+      "call_id": "fc-01M49S5A3MMVHQT2KDFPSCF6T6"
     },
     {
       "id": "ep102",
       "topic": "Silvertown explosion (1917): a fire at a TNT works beside crowded terraces set off about 50 tons of explosive at 6.52 pm",
-      "call_id": "fc-01M494HT4B6GTSPP8AQA6XDJCT"
+      "call_id": "fc-01M49S5BZAKBP6KX56EMSC1BFS"
     },
     {
       "id": "ep103",
       "topic": "Halifax Explosion (1917): a burning munitions ship blew up in the harbor, the largest man-made explosion before the atomic bomb",
-      "call_id": "fc-01M494HTPMRY13J387CTY620KS"
+      "call_id": "fc-01M49S5DSVHM1YH5VPMVRDJP8V"
+    },
+    {
+      "id": "ep104",
+      "topic": "Great Zimbabwe (c. 11th–15th centuries): colonial explorers refused to believe the massive granite walls were built by Africans, insisting for decades that the city must have been built by the Queen of Sheba",
+      "call_id": "fc-01M49S5FKVME5C21RZT1ZGWMF1"
     }
   ],
   "in_cloud": [
     {
       "id": "ep092",
       "topic": "Tauredunum event (563): a mountain collapse into Lake Geneva created a massive inland tsunami that swept over the city walls of Geneva miles away",
-      "spawned_at": "2026-10-06T23:05:29+05:30"
-    },
-    {
-      "id": "ep101",
-      "topic": "Fire of Rome (AD 64): flames break out among shops of flammable goods beside the Circus and, driven by wind through narrow twisting lanes, outrun every effort to stop them as fleeing crowds are trapped",
-      "spawned_at": "2026-10-06T23:05:29+05:30"
+      "spawned_at": "2026-10-07T05:05:40+05:30"
     },
     {
       "id": "ep102",
       "topic": "Silvertown explosion (1917): a fire at a TNT works beside crowded terraces set off about 50 tons of explosive at 6.52 pm",
-      "spawned_at": "2026-10-06T23:05:30+05:30"
+      "spawned_at": "2026-10-07T05:05:42+05:30"
     },
     {
       "id": "ep103",
       "topic": "Halifax Explosion (1917): a burning munitions ship blew up in the harbor, the largest man-made explosion before the atomic bomb",
-      "spawned_at": "2026-10-06T23:05:31+05:30"
+      "spawned_at": "2026-10-07T05:05:44+05:30"
+    },
+    {
+      "id": "ep104",
+      "topic": "Great Zimbabwe (c. 11th–15th centuries): colonial explorers refused to believe the massive granite walls were built by Africans, insisting for decades that the city must have been built by the Queen of Sheba",
+      "spawned_at": "2026-10-07T05:05:46+05:30"
     }
   ],
   "published": [],
@@ -166,23 +172,22 @@
   "failed_posts": [],
   "not_live": [],
   "llm": {
-    "calls": 18,
+    "calls": 13,
     "by_model": {
-      "gemini-3-flash-preview": 8,
-      "gemini-3.5-flash-lite": 8,
-      "gemini-3.7-flash": 2
+      "gemini-3.5-flash-lite": 12,
+      "gemini-3-flash-preview": 1
     },
     "out_of_quota": []
   },
   "renders": {
-    "modal": 7,
+    "modal": 2,
     "runner": 0
   },
   "daily_done": "2026-10-06",
   "minutes_this_month": 68.0,
   "minutes_budget": 2000,
   "modal_cost": {
-    "metered": 9.24,
+    "metered": 9.23,
     "billed": 0.0
   },
   "modal_credit": 30.0,
@@ -190,9 +195,9 @@
     "cloud": 156,
     "runner": 0,
     "runner_minutes": 0,
-    "modal_credit_left": 18.76
+    "modal_credit_left": 18.77
   },
   "made_here": 0,
-  "open_topics": 141,
+  "open_topics": 140,
   "parked_topics": 36
 }

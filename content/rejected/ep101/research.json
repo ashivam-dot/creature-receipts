@@ -1,0 +1,134 @@
+{
+  "viable": false,
+  "reason": "only 3 claims have verified quotes from two different sites",
+  "story": "In July of AD 64, a catastrophic fire erupted among the flammable shops bordering the Circus Maximus in Rome. Fanned by fierce winds, the blaze tore uncontrollably through the city's narrow, twisting lanes. Terrified residents fled in panic while armed men blocked firefighting efforts, throwing torches and looting. Emperor Nero was miles away at Antium when the disaster struck, returning only when his own palace was threatened. Though he opened public spaces for the homeless and lowered grain prices, dark rumors quickly spread that the emperor had played his lyre and sang of the destruction of Troy while Rome burned. To deflect suspicion from himself, Nero directed public fury against the Christians, subjecting them to gruesome executions that ultimately sparked widespread popular compassion for the victims.",
+  "angle": "Armed gangs actively prevented citizens from putting out the raging fires and threw torches to spread the destruction further.",
+  "claims": [
+    {
+      "claim": "The fire started in shops packed with inflammable goods in the part of the Circus touching the Palatine and Caelian Hills.",
+      "sources": [
+        "S1",
+        "S2"
+      ],
+      "evidence": [
+        {
+          "source": "S1",
+          "quote": "It took its rise in the part of the Circus touching the Palatine and Caelian Hills; where, among the shops packed with inflammable goods, the conflagration broke out"
+        },
+        {
+          "source": "S2",
+          "quote": "Breaking out in shops selling inflammable goods, and fanned by the wind, the conflagration instantly grew and swept the whole length of the Circus"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim": "The fire was swift and unstoppable due to narrow, twisting lanes and the lack of obstructing stone walls.",
+      "sources": [
+        "S1",
+        "S2"
+      ],
+      "evidence": [
+        {
+          "source": "S1",
+          "quote": "the town being an easy prey owing to the narrow, twisting lanes and formless streets typical of old Rome."
+        },
+        {
+          "source": "S2",
+          "quote": "much of the city still consisted of ramshackle wooden buildings packed into narrow, winding lanes. It was the worst possible place for a fire to break out"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim": "Emperor Nero was staying in Antium when the fire began.",
+      "sources": [
+        "S1",
+        "S2"
+      ],
+      "evidence": [
+        {
+          "source": "S1",
+          "quote": "Nero, who at the time was staying in Antium, did not return to the capital until the fire was nearing the house by which he had connected the Palatine with the Gardens of Maecenas."
+        },
+        {
+          "source": "S2",
+          "quote": "The emperor, the 26-year-old Nero, was relaxing at his seaside villa in Antium. To popular grumbling, he returned to the city only when his own mansion was threatened."
+        }
+      ],
+      "confidence": "high"
+    }
+  ],
+  "disputed": [
+    "Whether the fire started by chance or by Nero's malice is uncertain and should be attributed according to accounts.",
+    "The story of Nero playing a lyre or singing on a stage while Rome burned is treated as a later rumor or legend.",
+    "Suetoruis's account of engines of war destroying granaries near the Golden House is a separate scurrilous claim and should be attributed or omitted."
+  ],
+  "visuals": [
+    {
+      "subject": "Circus Maximus ruins and site in Rome",
+      "queries": [
+        "Circus Maximus Rome ruins",
+        "Circus Maximus Rome engraving"
+      ]
+    },
+    {
+      "subject": "Ancient Rome map and city layout",
+      "queries": [
+        "Ancient Rome map Imperial Forum",
+        "Plan of ancient Rome"
+      ]
+    },
+    {
+      "subject": "Emperor Nero portrait sculpture",
+      "queries": [
+        "Nero Capitoline Museums",
+        "Bust of Emperor Nero"
+      ]
+    },
+    {
+      "subject": "Paintings depicting the Great Fire of Rome",
+      "queries": [
+        "The_Great_Fire_of_Rome_Hubert_Robert",
+        "Karl_Piloty_Nero_on_the_Ruins_of_Rome"
+      ]
+    },
+    {
+      "subject": "Ruins of the Palatine Hill in Rome",
+      "queries": [
+        "Palatine Hill Rome ruins",
+        "Palatine Hill ancient Rome"
+      ]
+    },
+    {
+      "subject": "Ruins of Roman temples",
+      "queries": [
+        "Roman Forum ruins columns",
+        "Temple of Jupiter Stator Rome"
+      ]
+    },
+    {
+      "subject": "Ancient Roman oil lamps and fire artifacts",
+      "queries": [
+        "Roman terracotta oil lamp",
+        "Roman archaeological artifacts fire"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "label": "S1",
+      "url": "https://penelope.uchicago.edu/thayer/e/roman/texts/tacitus/annals/15b*.html",
+      "title": "BookÂ XV (continued)",
+      "site": "uchicago.edu"
+    },
+    {
+      "label": "S2",
+      "url": "https://www.historyextra.com/period/roman/a-big-day-in-history-the-great-fire-of-rome/",
+      "title": "The Great Fire of Rome: what happened?",
+      "site": "historyextra.com"
+    }
+  ],
+  "topic": "Fire of Rome (AD 64): flames break out among shops of flammable goods beside the Circus and, driven by wind through narrow twisting lanes, outrun every effort to stop them as fleeing crowds are trapped",
+  "series": "The Last Hours"
+}
