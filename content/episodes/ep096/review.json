@@ -1,0 +1,209 @@
+{
+  "rounds": [
+    {
+      "at": "2026-10-06T10:37:16+05:30",
+      "check": {
+        "duration": 29.9,
+        "words": 69,
+        "integrated_lufs": -14.4,
+        "true_peak_dbfs": -1.8,
+        "warnings": [],
+        "speech_differences": [
+          "'a' heard as '(nothing)' after 'that never arrived'"
+        ],
+        "speech_error": null,
+        "sources": [
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons"
+        ],
+        "speech_verification": {
+          "heard": "For centuries, historians believed everyone in Herculaneum escaped the volcano. That comforting narrative shattered when archaeologists excavated the ancient shoreline. Three hundred skeletons were discovered huddled inside vaulted stone boathouses. Victims waited for rescue boats that never arrived. Superheated pyroclastic surge rushed down the mountain. Extreme thermal shock caused instant death for everyone by the shore. No one in the town knew the volcano was about to erupt.",
+          "model": "small.en",
+          "media_sha256": "d3a66467f87c240cfc6b12165920db585341e8ab8ecd6a8537994f2585146448",
+          "primary_differences": [
+            "'a' heard as '(nothing)' after 'that never arrived'"
+          ],
+          "differences": [
+            "'a' heard as '(nothing)' after 'that never arrived'"
+          ],
+          "corroboration": {
+            "model": "base.en",
+            "heard": "For centuries, historians believed everyone in herculaneum escaped the volcano. That comforting narrative shattered when archaeologists excavated the ancient shoreline. 300 skeletons were discovered huddled inside vaulted stone boathouses. Victims waited for rescue boats that never arrived. Superheated pyroclastic surge rushed down the mountain. Extreme thermal shock caused instant death for everyone by the shore. No one in the town knew the volcano was about to erupt.",
+            "differences": [
+              "'a' heard as '(nothing)' after 'that never arrived'"
+            ],
+            "resolved": []
+          }
+        }
+      },
+      "media_sha256": "d3a66467f87c240cfc6b12165920db585341e8ab8ecd6a8537994f2585146448",
+      "scores": {
+        "hook": 3,
+        "clarity": 5,
+        "payoff": 4,
+        "visuals": 4,
+        "loop": 3,
+        "accuracy": 2
+      },
+      "notes": {
+        "hook": "The first line is a bit slow and descriptive; it doesn't grab attention immediately.",
+        "clarity": "The narrative flow is simple and easy to follow.",
+        "payoff": "The revelation of the skeletons in the boathouses provides a solid payoff to the hook.",
+        "visuals": "The images are generally striking and relevant, though some are paintings.",
+        "loop": "The last line doesn't lead seamlessly back into the first line.",
+        "accuracy": "Beat 7 makes a claim that is not supported by the research provided, and it contradicts the logic of the story."
+      },
+      "frames": [],
+      "speech": [],
+      "rewrite": [
+        "Beat 1: '300 skeletons proved that everyone in Herculaneum didn't escape the volcano.'",
+        "Beat 7: 'For centuries, the world believed they had all gotten away.'",
+        "On-screen text Beat 7: 'FOR CENTURIES'"
+      ],
+      "better_than_last": "This Short has a clearer thematic arc and a more satisfying payoff than ep054.",
+      "judge": "gemma-4-31b-it",
+      "passed": false
+    },
+    {
+      "at": "2026-10-06T10:40:49+05:30",
+      "check": {
+        "duration": 27.05,
+        "words": 62,
+        "integrated_lufs": -14.4,
+        "true_peak_dbfs": -1.6,
+        "warnings": [],
+        "speech_differences": [
+          "'a' heard as '(nothing)' after 'that never arrived'"
+        ],
+        "speech_error": null,
+        "sources": [
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons"
+        ],
+        "speech_verification": {
+          "heard": "300 skeletons proved that everyone in Herculaneum didn't escape the volcano. That comforting narrative shattered when archaeologists excavated the ancient shoreline. Victims waited inside vaulted stone boathouses for rescue boats that never arrived. Superheated pyroclastic surge rushed down the mountain. Extreme thermal shock caused instant death for everyone by the shore. For centuries, the world believed they had all gotten away.",
+          "model": "small.en",
+          "media_sha256": "f5d064af047cea809f03ed29b64bce516728d7c13398f8a4676aa2bc09d506f6",
+          "primary_differences": [
+            "'a' heard as '(nothing)' after 'that never arrived'"
+          ],
+          "differences": [
+            "'a' heard as '(nothing)' after 'that never arrived'"
+          ],
+          "corroboration": {
+            "model": "base.en",
+            "heard": "300 skeletons proved that everyone in herculaneum didn't escape the volcano. That comforting narrative shattered when archaeologists excavated the ancient shoreline. Victims waited inside vaulted stone boathouses for rescue boats that never arrived. Superheated pyroclastic surge rushed down the mountain. Extreme thermal shock caused instant death for everyone by the shore. For centuries, the world believed they had all gotten away.",
+            "differences": [
+              "'a' heard as '(nothing)' after 'that never arrived'"
+            ],
+            "resolved": []
+          }
+        }
+      },
+      "media_sha256": "f5d064af047cea809f03ed29b64bce516728d7c13398f8a4676aa2bc09d506f6",
+      "scores": {
+        "hook": 4,
+        "clarity": 5,
+        "payoff": 4,
+        "visuals": 3,
+        "loop": 5,
+        "accuracy": 5
+      },
+      "notes": {
+        "hook": "Strong, specific opening with a number that challenges a common belief.",
+        "clarity": "The sequence of events is easy to follow, with one idea per beat.",
+        "payoff": "The transition from the 'comforting narrative' to the grim reality of the boathouses provides a good payoff.",
+        "visuals": "Beat 3 shows a generic road instead of the vaulted boathouses described in the narration.",
+        "loop": "The final line leads perfectly back into the first line of the script.",
+        "accuracy": "All claims regarding the number of skeletons and the cause of death are supported by the research."
+      },
+      "frames": [
+        {
+          "beat": 3,
+          "problem": "The image shows a road (Herculaneum Road), not the vaulted stone boathouses mentioned in the narration."
+        }
+      ],
+      "speech": [],
+      "rewrite": [
+        "Beat 3: Replace image of Herculaneum Road with a photo of the beachfront fornici (vaulted boathouses)."
+      ],
+      "better_than_last": "This Short has a much more cohesive loop and a stronger thematic payoff than the Winton rescue train script.",
+      "judge": "gemma-4-31b-it",
+      "passed": false
+    },
+    {
+      "at": "2026-10-06T10:43:01+05:30",
+      "check": {
+        "duration": 27.05,
+        "words": 62,
+        "integrated_lufs": -14.4,
+        "true_peak_dbfs": -1.8,
+        "warnings": [],
+        "speech_differences": [
+          "'a' heard as '(nothing)' after 'that never arrived'"
+        ],
+        "speech_error": null,
+        "sources": [
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons"
+        ],
+        "speech_verification": {
+          "heard": "300 skeletons proved that everyone in Herculaneum didn't escape the volcano. That comforting narrative shattered when archaeologists excavated the ancient shoreline. Victims waited inside vaulted stone boathouses for rescue boats that never arrived. Superheated pyroclastic surge rushed down the mountain. Extreme thermal shock caused instant death for everyone by the shore. For centuries, the world believed they had all gotten away.",
+          "model": "small.en",
+          "media_sha256": "45e20a93a6e41f4b5a7724a07ef2690952230a312ebce6f074eefeb55c5bd79a",
+          "primary_differences": [
+            "'a' heard as '(nothing)' after 'that never arrived'"
+          ],
+          "differences": [
+            "'a' heard as '(nothing)' after 'that never arrived'"
+          ],
+          "corroboration": {
+            "model": "base.en",
+            "heard": "300 skeletons proved that everyone in herculaneum didn't escape the volcano. That comforting narrative shattered when archaeologists excavated the ancient shoreline. Victims waited inside vaulted stone boathouses for rescue boats that never arrived. Superheated pyroclastic surge rushed down the mountain. Extreme thermal shock caused instant death for everyone by the shore. For centuries, the world believed they had all gotten away.",
+            "differences": [
+              "'a' heard as '(nothing)' after 'that never arrived'"
+            ],
+            "resolved": []
+          }
+        }
+      },
+      "media_sha256": "45e20a93a6e41f4b5a7724a07ef2690952230a312ebce6f074eefeb55c5bd79a",
+      "scores": {
+        "hook": 4,
+        "clarity": 5,
+        "payoff": 4,
+        "visuals": 5,
+        "loop": 5,
+        "accuracy": 5
+      },
+      "notes": {
+        "hook": "Strong start with a specific number of skeletons and a counter-intuitive claim.",
+        "clarity": "Clear progression from the misconception to the discovery and the cause of death.",
+        "payoff": "The irony of the 'comforting narrative' versus the brutal reality provides a good payoff.",
+        "visuals": "Paintings and modern photos are relevant and high quality.",
+        "loop": "Seamless transition from the final line back to the first.",
+        "accuracy": "All claims are supported by the provided research."
+      },
+      "frames": [],
+      "speech": [],
+      "rewrite": [],
+      "better_than_last": "This short has a more cohesive narrative arc and a stronger hook than ep054.",
+      "judge": "gemma-4-31b-it",
+      "passed": true
+    }
+  ],
+  "best_round": 3
+}

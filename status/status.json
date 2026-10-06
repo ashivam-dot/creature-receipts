@@ -1,62 +1,73 @@
 {
-  "updated_at": "2026-10-06T10:32:07+05:30",
+  "updated_at": "2026-10-06T11:05:54+05:30",
   "day": 5,
   "result": "ok",
   "run": {
     "host": "modal",
-    "id": "ta-01M47SD348EQ3537CPH8FAXXFR",
+    "id": "ta-01M47VAHPF943CXR4JJ70XW7ER",
     "number": null,
-    "trigger": "manual",
-    "started_at": "2026-10-06T10:31:38+05:30",
-    "started_at_utc": "2026-10-06T05:01:38+00:00",
-    "seconds": 29
+    "trigger": "schedule",
+    "started_at": "2026-10-06T11:05:09+05:30",
+    "started_at_utc": "2026-10-06T05:35:09+00:00",
+    "seconds": 45
   },
   "stages": [
     {
       "name": "deploy",
       "ok": true,
       "detail": "",
-      "seconds": 1.9
+      "seconds": 2.3
     },
     {
       "name": "collect",
       "ok": true,
-      "detail": "ep089 still working (1.3 h); ep091 rejected (research: only 2 claims have verified quotes from two different sites); ep092 still working (0.4 h); ep094 unfinished (OutOfQuota: no model in ('gemini-3.8-flash', 'gemini-3.7-flash', 'gemini-3.6-flash', 'gemini-3.5-flash', 'gemini-3-flash-preview', 'gemini-flash-latest', 'ovh:Qwen3.5-397B-A17B') has free quota left today); ep095 ready; ep096 still working (0.3 h); ep097 still working (0.3 h)",
-      "seconds": 10.8
+      "detail": "ep089 ready; ep092 unfinished (OutOfQuota: no model in ('gemini-3.8-flash', 'gemini-3.7-flash', 'gemini-3.6-flash', 'gemini-3.5-flash', 'gemini-3-flash-preview', 'gemini-flash-latest', 'ovh:Qwen3.5-397B-A17B') has free quota left today); ep094 unfinished (OutOfQuota: no model in ('gemini-3.8-flash', 'gemini-3.7-flash', 'gemini-3.6-flash', 'gemini-3.5-flash', 'gemini-3-flash-preview', 'gemini-flash-latest', 'ovh:Qwen3.5-397B-A17B') has free quota left today); ep096 ready; ep097 rejected (low scores: visuals; 2 frame problems); ep098 rejected (research: only 3 claims have verified quotes from tw",
+      "seconds": 16.7
+    },
+    {
+      "name": "start ep092",
+      "ok": true,
+      "detail": "Tauredunum event (563): a mountain collapse into Lake Geneva created a massive inland tsunami that swept over the city walls of Geneva miles away",
+      "seconds": 8.9
     },
     {
       "name": "start ep094",
       "ok": true,
       "detail": "Hindenburg disaster (1937): the airship burned in about half a minute, yet most of the people aboard survived",
-      "seconds": 1.5
+      "seconds": 2.0
     },
     {
-      "name": "start ep098",
+      "name": "start ep099",
       "ok": true,
-      "detail": "Johnstown Flood (1889): the dam that failed belonged to a fishing club of Pittsburgh's richest men",
-      "seconds": 1.8
+      "detail": "Brescia explosion (1769): lightning struck a church bastion storing 90 tons of gunpowder, causing a blast that leveled one-sixth of the city",
+      "seconds": 1.9
+    },
+    {
+      "name": "start ep100",
+      "ok": true,
+      "detail": "Sack of Rome (410): the first time in 800 years that a foreign enemy took the city of Rome",
+      "seconds": 2.0
     }
   ],
   "errors": [],
   "owner_action": [],
   "notes": [
+    "ep092 stopped on Gemini's free quota; it resumes in a later run",
     "ep094 stopped on Gemini's free quota; it resumes in a later run",
     "draft-only producer: no Buffer, Cloudinary, or Google publisher access"
   ],
   "inventory": {
-    "total": 3,
+    "total": 5,
     "in_buffer": 0,
     "waiting": 0,
-    "drafts": 3,
+    "drafts": 5,
     "target": 9,
     "making": [],
     "remote": [
-      "ep089",
       "ep092",
       "ep094",
-      "ep096",
-      "ep097",
-      "ep098"
+      "ep099",
+      "ep100"
     ]
   },
   "queue": [],
@@ -82,10 +93,27 @@
   ],
   "made": [
     {
-      "id": "ep091",
-      "outcome": "rejected",
-      "topic": "Julian's Persian expedition (363): the Roman Emperor burned his own supply fleet to force his men to advance, only to realize they were starving in a desert wasteland",
-      "reason": "research: only 2 claims have verified quotes from two different sites"
+      "id": "ep089",
+      "outcome": "ready",
+      "topic": "Fall of the Qing Dynasty (1912): the last Emperor of China, once worshipped as a living god, ended his life as a quiet citizen working as a gardener in his former palace",
+      "title": "Why the Last Emperor of China Became a Gardener 🌸",
+      "scores": {
+        "hook": 4,
+        "clarity": 5,
+        "payoff": 4,
+        "visuals": 5,
+        "loop": 5,
+        "accuracy": 5
+      },
+      "draft": "drafts/ep089-a6a90f678e2f017cf8df5ec0de74ef34f6dbd19fef5f3edca214c7cbcda72b97.mp4"
+    },
+    {
+      "id": "ep092",
+      "outcome": "unfinished",
+      "topic": "Tauredunum event (563): a mountain collapse into Lake Geneva created a massive inland tsunami that swept over the city walls of Geneva miles away",
+      "reason": "OutOfQuota: no model in ('gemini-3.8-flash', 'gemini-3.7-flash', 'gemini-3.6-flash', 'gemini-3.5-flash', 'gemini-3-flash-preview', 'gemini-flash-latest', 'ovh:Qwen3.5-397B-A17B') has free quota left today",
+      "quota": true,
+      "overloaded": false
     },
     {
       "id": "ep094",
@@ -96,10 +124,10 @@
       "overloaded": false
     },
     {
-      "id": "ep095",
+      "id": "ep096",
       "outcome": "ready",
-      "topic": "New London School explosion (1937): leaked gas built up beneath the school until a shop-class sander ignited it near the end of the day",
-      "title": "Why Did a Wealthy Texas School Use Free Waste Gas? ⚠️",
+      "topic": "Herculaneum: for centuries it was thought its people escaped, until hundreds of skeletons were found in the boathouses by the shore in the 1980s",
+      "title": "Why Did Everyone Think Herculaneum Escaped Vesuvius? 😳",
       "scores": {
         "hook": 4,
         "clarity": 5,
@@ -108,51 +136,63 @@
         "loop": 5,
         "accuracy": 5
       },
-      "draft": "drafts/ep095-fba0b5d6923132c26826747d8ce7a1b4d6f92ee31f369b296783c6639117fb12.mp4"
+      "draft": "drafts/ep096-45e20a93a6e41f4b5a7724a07ef2690952230a312ebce6f074eefeb55c5bd79a.mp4"
+    },
+    {
+      "id": "ep097",
+      "outcome": "rejected",
+      "topic": "Great Fire of London (1666): only a handful of deaths were recorded, though the true toll is unknown",
+      "reason": "low scores: visuals; 2 frame problems"
+    },
+    {
+      "id": "ep098",
+      "outcome": "rejected",
+      "topic": "Johnstown Flood (1889): the dam that failed belonged to a fishing club of Pittsburgh's richest men",
+      "reason": "research: only 3 claims have verified quotes from two different sites"
     }
   ],
   "spawned": [
     {
-      "id": "ep094",
-      "topic": "Hindenburg disaster (1937): the airship burned in about half a minute, yet most of the people aboard survived",
-      "call_id": "fc-01M47SE7YFW5MV11WV7CVWSZ55"
+      "id": "ep092",
+      "topic": "Tauredunum event (563): a mountain collapse into Lake Geneva created a massive inland tsunami that swept over the city walls of Geneva miles away",
+      "call_id": "fc-01M47VBZN1KYTPDVHJ8W2RE9BA"
     },
     {
-      "id": "ep098",
-      "topic": "Johnstown Flood (1889): the dam that failed belonged to a fishing club of Pittsburgh's richest men",
-      "call_id": "fc-01M47SE9NRSX09NKCPQA4HXSXM"
+      "id": "ep094",
+      "topic": "Hindenburg disaster (1937): the airship burned in about half a minute, yet most of the people aboard survived",
+      "call_id": "fc-01M47VC1N11S7FSDQWKC53R3QW"
+    },
+    {
+      "id": "ep099",
+      "topic": "Brescia explosion (1769): lightning struck a church bastion storing 90 tons of gunpowder, causing a blast that leveled one-sixth of the city",
+      "call_id": "fc-01M47VC3GBKQ9041CXYJNKT878"
+    },
+    {
+      "id": "ep100",
+      "topic": "Sack of Rome (410): the first time in 800 years that a foreign enemy took the city of Rome",
+      "call_id": "fc-01M47VC5F1J1BES46FMTC6DG97"
     }
   ],
   "in_cloud": [
     {
-      "id": "ep089",
-      "topic": "Fall of the Qing Dynasty (1912): the last Emperor of China, once worshipped as a living god, ended his life as a quiet citizen working as a gardener in his former palace",
-      "spawned_at": "2026-10-06T09:16:25+05:30"
-    },
-    {
       "id": "ep092",
       "topic": "Tauredunum event (563): a mountain collapse into Lake Geneva created a massive inland tsunami that swept over the city walls of Geneva miles away",
-      "spawned_at": "2026-10-06T10:08:07+05:30"
+      "spawned_at": "2026-10-06T11:05:47+05:30"
     },
     {
       "id": "ep094",
       "topic": "Hindenburg disaster (1937): the airship burned in about half a minute, yet most of the people aboard survived",
-      "spawned_at": "2026-10-06T10:32:04+05:30"
+      "spawned_at": "2026-10-06T11:05:49+05:30"
     },
     {
-      "id": "ep096",
-      "topic": "Herculaneum: for centuries it was thought its people escaped, until hundreds of skeletons were found in the boathouses by the shore in the 1980s",
-      "spawned_at": "2026-10-06T10:12:39+05:30"
+      "id": "ep099",
+      "topic": "Brescia explosion (1769): lightning struck a church bastion storing 90 tons of gunpowder, causing a blast that leveled one-sixth of the city",
+      "spawned_at": "2026-10-06T11:05:51+05:30"
     },
     {
-      "id": "ep097",
-      "topic": "Great Fire of London (1666): only a handful of deaths were recorded, though the true toll is unknown",
-      "spawned_at": "2026-10-06T10:12:39+05:30"
-    },
-    {
-      "id": "ep098",
-      "topic": "Johnstown Flood (1889): the dam that failed belonged to a fishing club of Pittsburgh's richest men",
-      "spawned_at": "2026-10-06T10:32:06+05:30"
+      "id": "ep100",
+      "topic": "Sack of Rome (410): the first time in 800 years that a foreign enemy took the city of Rome",
+      "spawned_at": "2026-10-06T11:05:53+05:30"
     }
   ],
   "published": [],
@@ -160,32 +200,34 @@
   "failed_posts": [],
   "not_live": [],
   "llm": {
-    "calls": 8,
+    "calls": 46,
     "by_model": {
-      "gemini-3.5-flash-lite": 7,
-      "gemma-4-31b-it": 1
+      "gemini-3-flash-preview": 3,
+      "gemini-3.5-flash-lite": 33,
+      "gemma-4-31b-it": 9,
+      "gemini-3.5-flash": 1
     },
     "out_of_quota": []
   },
   "renders": {
-    "modal": 2,
+    "modal": 11,
     "runner": 0
   },
   "daily_done": "2026-10-05",
   "minutes_this_month": 68.0,
   "minutes_budget": 2000,
   "modal_cost": {
-    "metered": 8.48,
+    "metered": 8.83,
     "billed": 0.0
   },
   "modal_credit": 30.0,
   "capacity": {
-    "cloud": 158,
+    "cloud": 159,
     "runner": 0,
     "runner_minutes": 0,
-    "modal_credit_left": 19.04
+    "modal_credit_left": 19.17
   },
   "made_here": 0,
-  "open_topics": 144,
-  "parked_topics": 32
+  "open_topics": 142,
+  "parked_topics": 33
 }

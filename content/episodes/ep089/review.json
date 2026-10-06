@@ -1,0 +1,228 @@
+{
+  "rounds": [
+    {
+      "at": "2026-10-06T10:23:47+05:30",
+      "check": {
+        "duration": 27.6,
+        "words": 67,
+        "integrated_lufs": -14.4,
+        "true_peak_dbfs": -1.7,
+        "warnings": [],
+        "speech_differences": [
+          "'puyi' heard as 'huyi' after 'faces lifelong imprisonment'",
+          "base.en: 'puyi' heard as 'hu yi' after 'faces lifelong imprisonment'"
+        ],
+        "speech_error": null,
+        "sources": [
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "designed card",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons"
+        ],
+        "speech_verification": {
+          "heard": "China's last emperor ended up as a quiet Beijing gardener. Most people assume a deposed monarch faces lifelong imprisonment. Huyi became emperor at the age of two in December 1908. The 1912 abdication established the Republic of China. Decades of war followed before the former ruler was released. The former emperor spent his final years tending plants. China's last emperor ended up as a quiet Beijing gardener.",
+          "model": "small.en",
+          "media_sha256": "d88a713dc4fcc08a972fd73429baa2c66f8de5f95a9daffba0cd0335dfe6d226",
+          "primary_differences": [
+            "'puyi' heard as 'huyi' after 'faces lifelong imprisonment'"
+          ],
+          "differences": [
+            "'puyi' heard as 'huyi' after 'faces lifelong imprisonment'",
+            "base.en: 'puyi' heard as 'hu yi' after 'faces lifelong imprisonment'"
+          ],
+          "corroboration": {
+            "model": "base.en",
+            "heard": "China's last emperor ended up as a quiet Beijing gardener. Most people assume a deposed monarch faces lifelong imprisonment. Hu Yi became emperor at the age of two in December 1908. The 1912 abdication established the Republic of China. Decades of war followed before the former ruler was released. The former emperor spent his final years tending plants. China's last emperor ended up as a quiet Beijing gardener.",
+            "differences": [
+              "'puyi' heard as 'hu yi' after 'faces lifelong imprisonment'"
+            ],
+            "resolved": []
+          }
+        }
+      },
+      "media_sha256": "d88a713dc4fcc08a972fd73429baa2c66f8de5f95a9daffba0cd0335dfe6d226",
+      "scores": {
+        "hook": 4,
+        "clarity": 5,
+        "payoff": 3,
+        "visuals": 3,
+        "loop": 5,
+        "accuracy": 4
+      },
+      "notes": {
+        "hook": "Direct and intriguing, though 'quiet Beijing gardener' is a bit mild.",
+        "clarity": "Simple narrative flow with one idea per beat.",
+        "payoff": "The ending is just a repetition of the hook; there is no real twist or surprise.",
+        "visuals": "Several frames are just generic views of the Forbidden City, not specific to the beats.",
+        "loop": "Seamlessly transitions from the last line back to the first.",
+        "accuracy": "Accurate, though it skips over the Soviet capture and trial mentioned in research."
+      },
+      "frames": [
+        {
+          "beat": 5,
+          "problem": "Generic image of the Forbidden City does not illustrate 'decades of war' or 'release'."
+        },
+        {
+          "beat": 6,
+          "problem": "Generic view of the Forbidden City does not illustrate 'tending plants'."
+        }
+      ],
+      "speech": [],
+      "rewrite": [
+        "Beat 5: 'After decades of war and a Soviet prison, he was released.'",
+        "Beat 6: 'He spent his final years as a gardener in a Beijing botanical garden.'",
+        "Beat 7: 'China's last emperor ended up as a quiet Beijing gardener.'"
+      ],
+      "better_than_last": "It has a more cohesive loop and a clearer, more focused narrative than the Winton rescue Short.",
+      "judge": "gemma-4-31b-it",
+      "passed": false
+    },
+    {
+      "at": "2026-10-06T10:31:50+05:30",
+      "check": {
+        "duration": 28.63,
+        "words": 72,
+        "integrated_lufs": -14.3,
+        "true_peak_dbfs": -1.9,
+        "warnings": [],
+        "speech_differences": [
+          "'puyi' heard as 'huyi' after 'faces lifelong imprisonment'"
+        ],
+        "speech_error": null,
+        "sources": [
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "designed card",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons"
+        ],
+        "speech_verification": {
+          "heard": "China's last emperor ended up as a quiet Beijing gardener. Most people assume a deposed monarch faces lifelong imprisonment. Huyi became emperor at the age of two in December 1908. The 1912 abdication established the Republic of China. After decades of war and a Soviet prison, he was released. He spent his final years as a gardener in a Beijing Botanical Garden. China's last emperor ended up as a quiet Beijing gardener.",
+          "model": "small.en",
+          "media_sha256": "dbcd8c508f13809aef933e1a7907836df22792b7e616dd472994eaf04607c4e9",
+          "primary_differences": [
+            "'puyi' heard as 'huyi' after 'faces lifelong imprisonment'"
+          ],
+          "differences": [
+            "'puyi' heard as 'huyi' after 'faces lifelong imprisonment'"
+          ],
+          "corroboration": {
+            "model": "base.en",
+            "heard": "China's last emperor ended up as a quiet Beijing gardener. Most people assume a deposed monarch faces lifelong imprisonment. Puyi became emperor at the age of two in December 1908. The 1912 abdication established the Republic of China. After decades of war and a Soviet prison, he was released. He spent his final years as a gardener in a Beijing botanical garden. China's last emperor ended up as a quiet Beijing gardener.",
+            "differences": [],
+            "resolved": []
+          }
+        }
+      },
+      "media_sha256": "dbcd8c508f13809aef933e1a7907836df22792b7e616dd472994eaf04607c4e9",
+      "scores": {
+        "hook": 4,
+        "clarity": 5,
+        "payoff": 4,
+        "visuals": 3,
+        "loop": 5,
+        "accuracy": 5
+      },
+      "notes": {
+        "hook": "Direct and intriguing contrast in the first line.",
+        "clarity": "Simple progression of events, easy to follow.",
+        "payoff": "The contrast between the imperial height and the gardener ending is satisfying.",
+        "visuals": "Beat 6 uses a photo of Puyi in full imperial regalia while the narration describes him as a gardener.",
+        "loop": "Perfectly seamless return to the start.",
+        "accuracy": "All claims are supported by the research."
+      },
+      "frames": [
+        {
+          "beat": 6,
+          "problem": "The image shows Puyi in imperial military dress (c. 1934-1935), which contradicts the narration describing him as a gardener in his final years."
+        }
+      ],
+      "speech": [
+        {
+          "beat": 5,
+          "word": "Puyi",
+          "respelling": "poo yee"
+        }
+      ],
+      "rewrite": [
+        "Beat 6: Replace the imperial regalia photo with an image of a botanical garden or a modest elderly man to match the gardener narration."
+      ],
+      "better_than_last": "Stronger thematic cohesion and a more seamless loop than ep054.",
+      "judge": "gemma-4-31b-it",
+      "passed": false
+    },
+    {
+      "at": "2026-10-06T10:35:33+05:30",
+      "check": {
+        "duration": 28.63,
+        "words": 72,
+        "integrated_lufs": -14.3,
+        "true_peak_dbfs": -1.7,
+        "warnings": [],
+        "speech_differences": [
+          "'puyi' heard as 'huyi' after 'faces lifelong imprisonment'",
+          "base.en: 'puyi' heard as 'hu yi' after 'faces lifelong imprisonment'"
+        ],
+        "speech_error": null,
+        "sources": [
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "designed card",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons"
+        ],
+        "speech_verification": {
+          "heard": "China's last emperor ended up as a quiet Beijing gardener. Most people assume a deposed monarch faces lifelong imprisonment. Huyi became emperor at the age of two in December 1908. The 1912 abdication established the Republic of China. After decades of war and a Soviet prison, he was released. He spent his final years as a gardener in a Beijing Botanical Garden. China's last emperor ended up as a quiet Beijing gardener.",
+          "model": "small.en",
+          "media_sha256": "a6a90f678e2f017cf8df5ec0de74ef34f6dbd19fef5f3edca214c7cbcda72b97",
+          "primary_differences": [
+            "'puyi' heard as 'huyi' after 'faces lifelong imprisonment'"
+          ],
+          "differences": [
+            "'puyi' heard as 'huyi' after 'faces lifelong imprisonment'",
+            "base.en: 'puyi' heard as 'hu yi' after 'faces lifelong imprisonment'"
+          ],
+          "corroboration": {
+            "model": "base.en",
+            "heard": "China's last emperor ended up as a quiet Beijing gardener. Most people assume a deposed monarch faces lifelong imprisonment. Hu Yi became emperor at the age of two in December 1908. The 1912 abdication established the Republic of China. After decades of war and a Soviet prison, he was released. He spent his final years as a gardener in a Beijing botanical garden. China's last emperor ended up as a quiet Beijing gardener.",
+            "differences": [
+              "'puyi' heard as 'hu yi' after 'faces lifelong imprisonment'"
+            ],
+            "resolved": []
+          }
+        }
+      },
+      "media_sha256": "a6a90f678e2f017cf8df5ec0de74ef34f6dbd19fef5f3edca214c7cbcda72b97",
+      "scores": {
+        "hook": 4,
+        "clarity": 5,
+        "payoff": 4,
+        "visuals": 5,
+        "loop": 5,
+        "accuracy": 5
+      },
+      "notes": {
+        "hook": "The hook is direct and intriguing, though slightly understated.",
+        "clarity": "The narrative arc is simple and easy to follow.",
+        "payoff": "The contrast between emperor and gardener provides a satisfying conclusion.",
+        "visuals": "The archival images are appropriate and high quality.",
+        "loop": "The transition from the final beat back to the start is seamless.",
+        "accuracy": "All claims are supported by the provided research."
+      },
+      "frames": [],
+      "speech": [],
+      "rewrite": [],
+      "better_than_last": "This short maintains a tighter narrative focus and stronger visual consistency than ep054.",
+      "judge": "gemma-4-31b-it",
+      "passed": true
+    }
+  ],
+  "best_round": 3
+}

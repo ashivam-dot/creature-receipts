@@ -62,7 +62,7 @@ event is told for its gore. Space topics belong to the sister channel Universe R
 - Halifax Explosion (1917): a burning munitions ship blew up in the harbor, the largest man-made explosion before the atomic bomb
 - MV Wilhelm Gustloff (1945): its sinking in the Baltic was the deadliest loss of a single ship in history
 - SS Eastland (1915): it rolled over while still tied to its Chicago dock, and 844 people died in water about 20 feet deep
-- Great Fire of London (1666): only a handful of deaths were recorded, though the true toll is unknown — making (ep097)
+- Great Fire of London (1666): only a handful of deaths were recorded, though the true toll is unknown — parked (ep097)
 - Radium Girls (1917): factory workers painted watch dials with self-glowing paint and pointed the brushes with their lips, later seeing their own jaws glow in the dark — parked (ep033)
 - 1945 Empire State Building B-25 crash (1945): a lost bomber crashed into the 79th floor of the skyscraper, and an elevator operator fell 75 floors and survived — done (ep038)
 - Battle of the Little Bighorn (1876): Custer split his forces and rode directly into the largest Native American encampment ever gathered on the plains — done (ep043)
@@ -86,7 +86,7 @@ event is told for its gore. Space topics belong to the sister channel Universe R
 - 1868 Arica earthquake (1868): a massive tsunami carried the USS Wateree two miles inland and left it sitting perfectly upright in the middle of the desert — parked (ep083)
 - 1944 Bombay Docks explosion (1944): a fire aboard the *Fort Stikine* preceded two blasts at Victoria Dock; India observes April 14 as Fire Services Day to remember the firefighters who died — research lead only; ignition, death toll and image rights need review
 - Tauredunum event (563): a mountain collapse into Lake Geneva created a massive inland tsunami that swept over the city walls of Geneva miles away — making (ep092)
-- Brescia explosion (1769): lightning struck a church bastion storing 90 tons of gunpowder, causing a blast that leveled one-sixth of the city
+- Brescia explosion (1769): lightning struck a church bastion storing 90 tons of gunpowder, causing a blast that leveled one-sixth of the city — making (ep099)
 - Armagh rail disaster (1889): a train stalled on a hill, and when the crew uncoupled the rear carriages, they rolled backward into an oncoming train full of children
 - Siege of Compiègne (1430): Joan of Arc was captured by her enemies because her own side raised the drawbridge too early, trapping her outside the city gates
 - Siege of Turin (1706): soldier Pietro Micca saved the city by lighting a short fuse to blow up a French tunnel, knowing he would not have time to escape
@@ -142,7 +142,7 @@ event is told for its gore. Space topics belong to the sister channel Universe R
 ### Lost Cities
 
 - Pompeii: the famous body casts are plaster poured into hollows the victims left in the ash, a technique begun by Giuseppe Fiorelli in 1863 — parked (ep028)
-- Herculaneum: for centuries it was thought its people escaped, until hundreds of skeletons were found in the boathouses by the shore in the 1980s — making (ep096)
+- Herculaneum: for centuries it was thought its people escaped, until hundreds of skeletons were found in the boathouses by the shore in the 1980s — done (ep096)
 - Akrotiri (prehistoric city): a Bronze Age town buried by the Minoan eruption where almost no bodies have been found, as if its people had warning — parked (ep082)
 - Helike: a Greek city that sank in a single night in 373 BC, after an earthquake and a wave
 - Thonis-Heracleion: Egypt's great port vanished under the sea and was only found by divers in 2000
@@ -189,7 +189,7 @@ event is told for its gore. Space topics belong to the sister channel Universe R
 ### Fallen Empires
 
 - Fall of Constantinople (1453): by one account, the city fell through a small gate someone left open — making (ep061)
-- Sack of Rome (410): the first time in 800 years that a foreign enemy took the city of Rome
+- Sack of Rome (410): the first time in 800 years that a foreign enemy took the city of Rome — making (ep100)
 - Late Bronze Age collapse: around 1177 BC, nearly every great civilization of the eastern Mediterranean fell within a few decades — parked (ep029)
 - Fall of Tenochtitlan (1521): smallpox killed huge numbers of the city's people before and during the siege
 - Battle of the Teutoburg Forest (9 AD): three Roman legions were wiped out, and Augustus is said to have cried "Varus, give me back my legions!" — dropped (ep075)
@@ -200,7 +200,7 @@ event is told for its gore. Space topics belong to the sister channel Universe R
 - Ashanti Empire (1900): the Golden Stool was demanded by the British governor who did not know he was asking to sit on a sacred spirit shrine, sparking an uprising
 - Siege of the Sogdian Rock (327 BC): Alexander the Great's soldiers used iron tent pegs as pitons to scale a 'vertical' cliff at night to capture an unreachable fortress — parked (ep080)
 - Siege of Kamakura (1333): the commander threw his golden sword into the sea as an offering, and the tide instantly receded to reveal a path past the city’s sea walls — parked (ep086)
-- Fall of the Qing Dynasty (1912): the last Emperor of China, once worshipped as a living god, ended his life as a quiet citizen working as a gardener in his former palace — making (ep089)
+- Fall of the Qing Dynasty (1912): the last Emperor of China, once worshipped as a living god, ended his life as a quiet citizen working as a gardener in his former palace — done (ep089)
 - Fall of Krak des Chevaliers (1271): the impregnable Crusader stronghold finally surrendered after the Mamluk Sultan tricked the garrison with a forged letter from their commander
 - Battle of Sarmizegetusa (106): the Dacian king diverted a river to hide his empire's gold beneath the riverbed, but a prisoner betrayed the location to Rome
 - Execution of Emperor Maximilian (1867): the ruler of Mexico refused a chance to escape in disguise because he would not abandon his loyal generals
@@ -216,7 +216,7 @@ event is told for its gore. Space topics belong to the sister channel Universe R
 - SS Californian (1912): it was close enough to see the Titanic's rockets, but its radio operator had gone to bed
 - Tay Bridge disaster (1879): the bridge fell in a gale with a train on it, and the inquiry found it badly designed, built, and maintained
 - St. Francis Dam (1928): William Mulholland inspected a leak and judged the dam safe the day it collapsed
-- Johnstown Flood (1889): the dam that failed belonged to a fishing club of Pittsburgh's richest men — making (ep098)
+- Johnstown Flood (1889): the dam that failed belonged to a fishing club of Pittsburgh's richest men — dropped (ep098)
 - Great Molasses Flood (1919): the leaking tank had been painted brown to hide the leaks — parked (ep073)
 - Sultana (steamboat) (1865): a boat built for a few hundred carried over 2,000 people, most of them freed Union prisoners, when its patched boiler exploded
 - Triangle Shirtwaist Factory fire (1911): a stairway door was locked, and 146 garment workers died — parked (ep032)

@@ -1,0 +1,180 @@
+id: ep092
+title: When a Swiss Mountain Created a Tsunami 🌊
+series: The Last Hours
+description: In 563 AD, a massive mountain collapse on Lake Geneva triggered a devastating inland tsunami that reached the
+  city walls of Geneva.
+sources:
+- https://en.wikipedia.org/wiki/Tauredunum_event
+- https://www.smithsonianmag.com/smart-news/evidence-discovered-of-an-ancient-tsunami-on-lake-geneva-101482306/
+- https://globalincidenttracker.com/history/563-tauredunum-event
+- http://www.latimes.com/news/science/sciencenow/la-sci-sn-lake-geneva-tsunami-20121029,0,709366.story?track=rss
+- https://www.swissinfo.ch/eng/sci-tech/science-saturday_archaeological-discovery-corroborates-lake-geneva-tsunami-research/45080718
+hashtags:
+- '#history'
+- '#tsunami'
+- '#switzerland'
+tags:
+- Tauredunum
+- Lake Geneva
+- tsunami
+- 563 AD
+- Alps
+- landslide
+voice:
+  engine: kokoro
+  voice: am_fenrir
+  speed: 1.15
+beats:
+- text: A mountain collapse on Lake Geneva sent a tsunami in 563.
+  emphasis:
+  - mountain collapse
+  - '563'
+  sfx: whoosh
+  visual:
+    source: url
+    url: https://upload.wikimedia.org/wikipedia/commons/2/27/Montreux_1_um_1900.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    credit:
+      source: Wikimedia Commons
+      title: Montreux 1 um 1900.jpg
+      credit: Unknown authorUnknown author
+      license: Public domain
+      url: https://commons.wikimedia.org/wiki/File:Montreux_1_um_1900.jpg
+    fallbacks:
+    - card
+    - color
+    motion: pan_right
+    focus_x: 0.52
+    focus_y: 0.28
+    box:
+    - 0.38
+    - 0.15
+    - 0.65
+    - 0.38
+    card:
+      kind: dateline
+      big: 563 AD
+      small: Lake Geneva
+- text: Historical records show no warning before the disaster struck.
+  emphasis:
+  - Historical records
+  - no warning
+  visual:
+    source: url
+    url: https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b9/Lacus_Lemannus._%28to_accompany%29_Atlas_minor_Gerardi_Mercatoris._%28IA_dr_lacus-lemannus-to-accompany-atlas-minor-gerardi-mercatoris-11201212%29.jpg/1280px-Lacus_Lemannus._%28to_accompany%29_Atlas_minor_Gerardi_Mercatoris._%28IA_dr_lacus-lemannus-to-accompany-atlas-minor-gerardi-mercatoris-11201212%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
+    credit:
+      source: Wikimedia Commons
+      title: Lacus Lemannus. (to accompany) Atlas minor Gerardi Mercatoris. (IA dr lacus-lemannus-to-accompany-atlas-minor-gerardi-mercatoris-11201212).jpg
+      credit: 'Mercator, Gerhard, 1512-1594
+
+        Hondius, Iodocus, 1563-1612
+
+        Nicolaus, Cornelius
+
+        Bottius, Adrianus'
+      license: Public domain
+      url: https://commons.wikimedia.org/wiki/File:Lacus_Lemannus._(to_accompany)_Atlas_minor_Gerardi_Mercatoris._(IA_dr_lacus-lemannus-to-accompany-atlas-minor-gerardi-mercatoris-11201212).jpg
+    fallbacks:
+    - color
+    motion: pan_left
+    focus_x: 0.53
+    focus_y: 0.5
+    box:
+    - 0.15
+    - 0.12
+    - 0.88
+    - 0.88
+- text: Chroniclers Gregory of Tours and Marius of Avenches recorded it.
+  emphasis:
+  - Gregory of Tours
+  - Marius of Avenches
+  visual:
+    source: card
+    card:
+      kind: quote
+      big: Gregory of Tours
+      small: Contemporary chronicler
+    motion: zoom_in
+- text: A massive rock fall at Tauredunum triggered a delta collapse.
+  emphasis:
+  - Tauredunum
+  - delta collapse
+  sfx: riser
+  visual:
+    source: card
+    card:
+      kind: fact
+      big: Tauredunum
+      small: Mountain collapse site
+    motion: zoom_in
+- text: The resulting wave reached Lausanne within fifteen minutes.
+  emphasis:
+  - Lausanne
+  - fifteen minutes
+  sfx: whoosh
+  visual:
+    source: url
+    url: https://upload.wikimedia.org/wikipedia/commons/1/12/Zentralbibliothek_Z%C3%BCrich_-_Prospect_der_Statt_Lausanne_-_991024768799705501.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    credit:
+      source: Wikimedia Commons
+      title: Zentralbibliothek Zürich - Prospect der Statt Lausanne - 991024768799705501.jpg
+      credit: Anonym/e Künstler/in
+      license: Public domain
+      url: https://commons.wikimedia.org/wiki/File:Zentralbibliothek_Z%C3%BCrich_-_Prospect_der_Statt_Lausanne_-_991024768799705501.jpg
+    fallbacks:
+    - card
+    - color
+    motion: pan_right
+    focus_x: 0.5
+    focus_y: 0.5
+    card:
+      kind: fact
+      big: 15 minutes
+      small: Wave reached Lausanne
+- text: Within seventy minutes, the wave surged over Geneva walls.
+  emphasis:
+  - seventy minutes
+  - Geneva walls
+  sfx: pop
+  pause_after: 0.4
+  visual:
+    source: url
+    url: https://www.artic.edu/iiif/2/346bc10b-b264-63e8-a666-5072800094bb/full/1686,/0/default.jpg
+    credit:
+      source: Art Institute of Chicago (CC0)
+      title: Geneva from Schedel Weltchronik (Schedel’s World History), Plate 22 from Woodcuts from Books of the 15th Century
+      credit: 'Michel Wolgemut (German, 1434/37–1519) and Wilhelm Pleydenwurff (German, c. 1460–1494)
+
+        printed and published by Anton Koberger (German, c. 1440/45–1513)
+
+        original text by Hartmann Schedel (German, 1440–1514)
+
+        portfolio text by Wilhelm Ludwig Schreiber (German, 1855–1932)'
+      license: CC0
+      url: https://www.artic.edu/artworks/129322
+    fallbacks:
+    - card
+    - color
+    motion: pan_up
+    focus_x: 0.5
+    focus_y: 0.72
+    box:
+    - 0.12
+    - 0.52
+    - 0.88
+    - 0.85
+    card:
+      kind: fact
+      big: 70 minutes
+      small: Reached Geneva
+- text: A mountain collapse on Lake Geneva sent a tsunami in 563.
+  emphasis:
+  - mountain collapse
+  - '563'
+  sfx: whoosh
+  visual:
+    reuse: 1
+    motion: zoom_out
+    focus_x: 0.52
+    focus_y: 0.28
+depth_motion: true
+hook_text: ALPINE TSUNAMI

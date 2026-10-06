@@ -1,0 +1,169 @@
+{
+  "viable": false,
+  "reason": "only 3 claims have verified quotes from two different sites",
+  "story": "On May 31, 1889, the South Fork Dam collapsed after days of torrential rain, unleashing millions of tons of water from Lake Conemaugh. The reservoir was owned by an exclusive club of Pittsburgh’s wealthiest industrialists, including Andrew Carnegie and Henry Clay Frick, who had altered the dam by lowering its crest and clogging its spillway with fish screens to retain their game fish. As a towering wall of water, debris, and barbed wire raced down the narrow valley at forty miles per hour, it obliterated the industrial town of Johnstown, killing over 2,200 people. At the town's stone bridge, trapped wreckage caught fire, creating a three-day inferno. Despite clear evidence of structural negligence, the club's elite members successfully shielded themselves in court, arguing the disaster was an Act of God, leaving victims with zero legal compensation.",
+  "angle": "Pittsburgh's richest men lowered a mountain dam and blocked its spillway with fish screens for a private resort lake—then escaped all legal liability when it burst and killed 2,200 people.",
+  "claims": [
+    {
+      "claim": "The club installed fish screens across the spillway that became clogged with debris.",
+      "sources": [
+        "S1",
+        "S7"
+      ],
+      "evidence": [
+        {
+          "source": "S1",
+          "quote": "To compound the problem, the club owners and managers had erected fish screens across the mouth of the spillway. Although that was intended to keep water from accumulating to the point of straining the dam, the spillway screens became clogged with debris, restricting the outflow of water."
+        },
+        {
+          "source": "S7",
+          "quote": "They also installed fish screens across the spillway to keep the club's stocked game fish from escaping downstream, screens that in practice trapped debris and reduced how much overflow water the spillway could actually pass during heavy rain."
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim": "Original discharge pipes at the base of the dam had been removed and sold for scrap before the club acquired it.",
+      "sources": [
+        "S1",
+        "S6"
+      ],
+      "evidence": [
+        {
+          "source": "S1",
+          "quote": "Before closing on Ruff's purchase, Congressman Reilly had had crucial discharge pipes removed and sold for their value as scrap metal."
+        },
+        {
+          "source": "S6",
+          "quote": "McCullough (1968, p. 55) states that although Congressman Reilly sold the property at a slight loss, he made up for it by first removing the old cast iron discharge pipes and selling them for scrap."
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim": "Neither the club nor its members were ever held legally liable for monetary damages or responsibility.",
+      "sources": [
+        "S1",
+        "S7"
+      ],
+      "evidence": [
+        {
+          "source": "S1",
+          "quote": "Despite some years of claims and litigation, the club and its members were never found to be liable for monetary damages."
+        },
+        {
+          "source": "S7",
+          "quote": "No one was held legally liable."
+        }
+      ],
+      "confidence": "high"
+    }
+  ],
+  "disputed": [
+    "Whether the South Fork Fishing and Hunting Club removed the discharge pipes themselves or if they were removed earlier by Congressman John Reilly as scrap. The script should attribute the removal according to the specific account or focus on the fact that they were missing."
+  ],
+  "visuals": [
+    {
+      "subject": "Johnstown Pennsylvania before the flood",
+      "queries": [
+        "Johnstown Pennsylvania 1889 engraving",
+        "Johnstown Pennsylvania 19th century photograph"
+      ]
+    },
+    {
+      "subject": "South Fork Dam ruins",
+      "queries": [
+        "South Fork Dam ruins 1889",
+        "Johnstown Flood dam breach aftermath"
+      ]
+    },
+    {
+      "subject": "Stone Bridge debris jam and fire",
+      "queries": [
+        "Johnstown Flood Stone Bridge debris 1889",
+        "Stone Bridge Johnstown Flood ruins"
+      ]
+    },
+    {
+      "subject": "Henry Clay Frick",
+      "queries": [
+        "Henry Clay Frick portrait",
+        "H.C. Frick photograph"
+      ]
+    },
+    {
+      "subject": "Andrew Carnegie",
+      "queries": [
+        "Andrew Carnegie portrait young",
+        "Andrew Carnegie photograph 1880s"
+      ]
+    },
+    {
+      "subject": "Clara Barton",
+      "queries": [
+        "Clara Barton American Red Cross portrait",
+        "Clara Barton 1880s photograph"
+      ]
+    },
+    {
+      "subject": "Lake Conemaugh and Club House",
+      "queries": [
+        "South Fork Fishing and Hunting Club clubhouse 1889",
+        "Lake Conemaugh resort Pennsylvania"
+      ]
+    },
+    {
+      "subject": "Johnstown Flood aftermath destruction",
+      "queries": [
+        "Johnstown Flood wreckage devastation 1889",
+        "Johnstown Flood aftermath ruins photograph"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "label": "S1",
+      "url": "https://en.wikipedia.org/wiki/South_Fork_Fishing_and_Hunting_Club",
+      "title": "South Fork Fishing and Hunting Club",
+      "site": "wikipedia.org"
+    },
+    {
+      "label": "S2",
+      "url": "https://en.wikipedia.org/wiki/Johnstown_Flood",
+      "title": "Johnstown Flood",
+      "site": "wikipedia.org"
+    },
+    {
+      "label": "S3",
+      "url": "https://airandspace.si.edu/stories/editorial/apollo-playlist-part-2-music-inside-apollo-musical-critique-outside-apollo",
+      "title": "Apollo Playlist Part 2: Music Inside Apollo, Musical Critique from Outside Apollo",
+      "site": "si.edu"
+    },
+    {
+      "label": "S4",
+      "url": "https://www.history.com/articles/how-americas-most-powerful-men-caused-americas-deadliest-flood",
+      "title": "How America’s Most Powerful Men Caused America’s Deadliest Flood | HISTORY",
+      "site": "history.com"
+    },
+    {
+      "label": "S5",
+      "url": "https://www.nps.gov/jofl/learn/historyculture/south-fork-fishing-and-hunting-club.htm",
+      "title": "South Fork Fishing and Hunting Club - Johnstown Flood National Memorial (U.S. National Park Service)",
+      "site": "nps.gov"
+    },
+    {
+      "label": "S6",
+      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4946313",
+      "title": "Dam-Breach hydrology of the Johnstown flood of 1889–challenging the findings of the 1891 investigation report",
+      "site": "nih.gov"
+    },
+    {
+      "label": "S7",
+      "url": "https://blog.historiqly.com/blog/disaster-johnstown-flood",
+      "title": "The Johnstown Flood of 1889: When a Rich Men's Dam Broke",
+      "site": "historiqly.com"
+    }
+  ],
+  "topic": "Johnstown Flood (1889): the dam that failed belonged to a fishing club of Pittsburgh's richest men",
+  "series": "Warnings Ignored"
+}

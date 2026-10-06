@@ -1,0 +1,238 @@
+{
+  "rounds": [
+    {
+      "at": "2026-10-06T10:25:39+05:30",
+      "check": {
+        "duration": 28.26,
+        "words": 67,
+        "integrated_lufs": -14.4,
+        "true_peak_dbfs": -1.8,
+        "warnings": [],
+        "speech_differences": [
+          "'ii' heard as 'the 2nd' after 'but king charles'",
+          "base.en: '(nothing)' heard as 'is' after 'destroyed a bakery'",
+          "base.en: 'pudding' heard as 'putting' after 'bakery spark on'",
+          "base.en: 'ii is' heard as 'eyes' after 'but king charles'"
+        ],
+        "speech_error": null,
+        "sources": [
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wellcome Collection",
+          "Wellcome Collection",
+          "Wikimedia Commons"
+        ],
+        "speech_verification": {
+          "heard": "Six recorded deaths remained the official toll for a city destroyed. A bakery spark on Pudding Lane ignited the 1666 firestorm. Thousands supposedly died as 13,000 houses turned to ash. But King Charles II's records tell a different story. They listed only six victims, including a terrified bakery maid. Intense heat likely cremated others before they were found. No other names were confirmed beyond those original six.",
+          "model": "small.en",
+          "media_sha256": "0e054f2763844294c31151e7caeec1126dafa0022d67cb5b0839f42131d4dc6d",
+          "primary_differences": [
+            "'ii' heard as 'the 2nd' after 'but king charles'"
+          ],
+          "differences": [
+            "'ii' heard as 'the 2nd' after 'but king charles'",
+            "base.en: '(nothing)' heard as 'is' after 'destroyed a bakery'",
+            "base.en: 'pudding' heard as 'putting' after 'bakery spark on'",
+            "base.en: 'ii is' heard as 'eyes' after 'but king charles'"
+          ],
+          "corroboration": {
+            "model": "base.en",
+            "heard": "Six recorded deaths remained the official toll for a city destroyed. Bakery's spark on putting lane ignited the 1666 firestorm. Thousands supposedly died as 13,000 houses turned to ash. But King Charles' eyes records tell a different story. They listed only six victims, including a terrified bakery maid. Intense heat likely cremated others before they were found. No other names were confirmed beyond those original six.",
+            "differences": [
+              "'a' heard as '(nothing)' after 'a city destroyed'",
+              "'(nothing)' heard as 'is' after 'destroyed a bakery'",
+              "'pudding' heard as 'putting' after 'bakery spark on'",
+              "'ii is' heard as 'eyes' after 'but king charles'"
+            ],
+            "resolved": []
+          }
+        }
+      },
+      "media_sha256": "0e054f2763844294c31151e7caeec1126dafa0022d67cb5b0839f42131d4dc6d",
+      "scores": {
+        "hook": 4,
+        "clarity": 5,
+        "payoff": 4,
+        "visuals": 3,
+        "loop": 4,
+        "accuracy": 5
+      },
+      "notes": {
+        "hook": "The hook is clear and intriguing, focusing on the low official death toll.",
+        "clarity": "The narrative is simple and easy to follow with one idea per beat.",
+        "payoff": "The explanation of cremation provides a logical reason for the discrepancy in death tolls.",
+        "visuals": "Beats 5 and 6 use generic bakery scenes instead of visuals related to the fire or its victims.",
+        "loop": "The transition from the end back to the start is logically consistent.",
+        "accuracy": "All claims are backed by the research provided."
+      },
+      "frames": [
+        {
+          "beat": 5,
+          "problem": "Off-topic; shows a generic bakery interior instead of something reflecting the disaster."
+        },
+        {
+          "beat": 6,
+          "problem": "Off-topic; shows a generic woodcut of a baker at an oven rather than the fire's heat/cremation."
+        }
+      ],
+      "speech": [
+        {
+          "beat": 2,
+          "word": "Pudding",
+          "respelling": "pood ding"
+        }
+      ],
+      "rewrite": [
+        "Beat 5: Replace the generic bakery image with a depiction of the fire's destruction to keep the mood grave.",
+        "Beat 6: Replace the generic bakery image with a visual of the ruins or intense flames to better illustrate cremation."
+      ],
+      "better_than_last": "This Short focuses on a specific, surprising statistic (the death toll) rather than a general overview of the event.",
+      "judge": "gemma-4-31b-it",
+      "passed": false
+    },
+    {
+      "at": "2026-10-06T10:29:59+05:30",
+      "check": {
+        "duration": 28.53,
+        "words": 67,
+        "integrated_lufs": -14.4,
+        "true_peak_dbfs": -1.9,
+        "warnings": [],
+        "speech_differences": [
+          "'pudding' heard as 'pu ding' after 'bakery spark on'",
+          "base.en: '(nothing)' heard as 'is' after 'destroyed a bakery'",
+          "base.en: 'pudding' heard as 'pooh ding' after 'bakery spark on'",
+          "base.en: 'ii is' heard as 'eyes' after 'but king charles'"
+        ],
+        "speech_error": null,
+        "sources": [
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons"
+        ],
+        "speech_verification": {
+          "heard": "Six recorded deaths remained the official toll for a city destroyed. A bakery spark on Pu Ding Lane ignited the 1666 firestorm. Thousands supposedly died as 13,000 houses turned to ash. But King Charles I.I.'s records tell a different story. They listed only six victims, including a terrified bakery maid. Intense heat likely cremated others before they were found. No other names were confirmed beyond those original six.",
+          "model": "small.en",
+          "media_sha256": "5618401440b81befaff4d6f192f3d3966ba31c38f0c21dbc6ab42fe820d8f159",
+          "primary_differences": [
+            "'pudding' heard as 'pu ding' after 'bakery spark on'"
+          ],
+          "differences": [
+            "'pudding' heard as 'pu ding' after 'bakery spark on'",
+            "base.en: '(nothing)' heard as 'is' after 'destroyed a bakery'",
+            "base.en: 'pudding' heard as 'pooh ding' after 'bakery spark on'",
+            "base.en: 'ii is' heard as 'eyes' after 'but king charles'"
+          ],
+          "corroboration": {
+            "model": "base.en",
+            "heard": "Six recorded deaths remained the official toll for a city destroyed. Bakery's spark on Pooh Ding Lane ignited the 1666 firestorm. Thousands supposedly died as 13,000 houses turned to ash. But King Charles' eyes records tell a different story. They listed only six victims, including a terrified bakery maid. Intense heat likely cremated others before they were found. No other names were confirmed beyond those original six.",
+            "differences": [
+              "'a' heard as '(nothing)' after 'a city destroyed'",
+              "'(nothing)' heard as 'is' after 'destroyed a bakery'",
+              "'pudding' heard as 'pooh ding' after 'bakery spark on'",
+              "'ii is' heard as 'eyes' after 'but king charles'"
+            ],
+            "resolved": []
+          }
+        }
+      },
+      "media_sha256": "5618401440b81befaff4d6f192f3d3966ba31c38f0c21dbc6ab42fe820d8f159",
+      "scores": {
+        "hook": 4,
+        "clarity": 5,
+        "payoff": 4,
+        "visuals": 5,
+        "loop": 5,
+        "accuracy": 5
+      },
+      "notes": {
+        "hook": "The hook is direct and intriguing, though slightly slow in delivery.",
+        "clarity": "The narrative flow is logical and easy to follow.",
+        "payoff": "The explanation of cremation as a likely cause for the low death toll provides a satisfying answer.",
+        "visuals": "All images are period-appropriate, clear, and relevant to the narration.",
+        "loop": "The final line leads naturally back to the first line for a seamless loop.",
+        "accuracy": "All claims are well-supported by the research provided, including the nuance of the official vs. likely toll."
+      },
+      "frames": [],
+      "speech": [],
+      "rewrite": [],
+      "better_than_last": "This Short maintains the high standard of recent episodes, offering a clear and focused mystery with a strong visual loop.",
+      "judge": "gemma-4-31b-it",
+      "passed": false
+    },
+    {
+      "at": "2026-10-06T10:35:36+05:30",
+      "check": {
+        "duration": 29.45,
+        "words": 72,
+        "integrated_lufs": -14.4,
+        "true_peak_dbfs": -1.8,
+        "warnings": [],
+        "speech_differences": [],
+        "speech_error": null,
+        "sources": [
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wellcome Collection",
+          "Wellcome Collection",
+          "Wikimedia Commons"
+        ],
+        "speech_verification": {
+          "heard": "Six recorded deaths remained the official toll for a destroyed capital. A spark on a narrow street ignited the massive firestorm. Thousands supposedly perished as 13,000 houses turned to ash. But the reigning monarch records tell a different story. Official lists named only six victims, including a frightened bakery worker. Intense heat likely destroyed others before anyone found their remains. No other names were confirmed beyond those original six recorded deaths.",
+          "model": "small.en",
+          "media_sha256": "fbf7d4493ec562f4975afc019210c394e5b2f03b1d78a595d32601f523038a4c",
+          "primary_differences": [],
+          "differences": []
+        }
+      },
+      "media_sha256": "fbf7d4493ec562f4975afc019210c394e5b2f03b1d78a595d32601f523038a4c",
+      "scores": {
+        "hook": 4,
+        "clarity": 5,
+        "payoff": 4,
+        "visuals": 3,
+        "loop": 5,
+        "accuracy": 5
+      },
+      "notes": {
+        "hook": "Strong contradiction between the massive fire and low death toll.",
+        "clarity": "Simple, linear narrative that is easy to follow.",
+        "payoff": "Explains the discrepancy through the high heat destroying remains.",
+        "visuals": "Beats 5 and 6 use generic bakery interiors rather than fire-related imagery.",
+        "loop": "Ends on 'recorded deaths' and loops back to 'Six recorded deaths'.",
+        "accuracy": "All claims are backed by the provided research."
+      },
+      "frames": [
+        {
+          "beat": 5,
+          "problem": "Generic bakery interior; does not reflect the tragedy or the specific bakery mentioned."
+        },
+        {
+          "beat": 6,
+          "problem": "Generic bakery interior; off-topic for a beat discussing intense heat and destroyed remains."
+        }
+      ],
+      "speech": [],
+      "rewrite": [
+        "Beat 5: Use an image of a burning building or a close-up of flames to better illustrate the danger the worker faced.",
+        "Beat 6: Replace the bakery interior with a depiction of charred ruins or an artist's rendering of the fire's heat."
+      ],
+      "better_than_last": "Creates a tighter loop and a more focused central mystery than the previous rescue train episode.",
+      "judge": "gemma-4-31b-it",
+      "passed": false
+    }
+  ],
+  "best_round": 2,
+  "speech_rewrite": true,
+  "verdict": "rejected",
+  "reason": "low scores: visuals; 2 frame problems",
+  "rejected_at": "2026-10-06T10:35:36+05:30"
+}
