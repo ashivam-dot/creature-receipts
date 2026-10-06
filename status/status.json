@@ -1,52 +1,52 @@
 {
-  "updated_at": "2026-10-06T10:08:10+05:30",
+  "updated_at": "2026-10-06T10:12:40+05:30",
   "day": 5,
   "result": "ok",
   "run": {
     "host": "modal",
-    "id": "ta-01M47R0YD032YG1EJJEBXMY63R",
+    "id": "ta-01M47RA0XHZJHBBFG8925J6ECR",
     "number": null,
     "trigger": "manual",
-    "started_at": "2026-10-06T10:07:32+05:30",
-    "started_at_utc": "2026-10-06T04:37:32+00:00",
-    "seconds": 38
+    "started_at": "2026-10-06T10:12:25+05:30",
+    "started_at_utc": "2026-10-06T04:42:25+00:00",
+    "seconds": 15
   },
   "stages": [
     {
       "name": "deploy",
       "ok": true,
       "detail": "",
-      "seconds": 2.3
+      "seconds": 1.4
     },
     {
       "name": "collect",
       "ok": true,
-      "detail": "ep086 rejected (low scores: visuals, accuracy; 3 frame problems; 1 speech problems); ep088 rejected (2 speech problems); ep089 still working (0.9 h); ep090 ready",
-      "seconds": 7.8
+      "detail": "ep089 still working (0.9 h); ep091 unfinished (RuntimeError: research answer supplied no usable two-site quotes (gemini-3.5-flash-lite); asking again next run); ep092 still working (0.1 h); ep093 rejected (research: only 4 claims have verified quotes from two different sites); ep094 still working (0.1 h)",
+      "seconds": 5.3
     },
     {
       "name": "start ep091",
       "ok": true,
       "detail": "Julian's Persian expedition (363): the Roman Emperor burned his own supply fleet to force his men to advance, only to realize they were starving in a desert wasteland",
-      "seconds": 1.4
+      "seconds": 0.8
     },
     {
-      "name": "start ep092",
+      "name": "start ep095",
       "ok": true,
-      "detail": "Tauredunum event (563): a mountain collapse into Lake Geneva created a massive inland tsunami that swept over the city walls of Geneva miles away",
-      "seconds": 1.0
+      "detail": "New London School explosion (1937): leaked gas built up beneath the school until a shop-class sander ignited it near the end of the day",
+      "seconds": 0.7
     },
     {
-      "name": "start ep093",
+      "name": "start ep096",
       "ok": true,
-      "detail": "Bounty mutiny (1789): after casting the captain adrift, the mutineers sailed to Pitcairn Island and burned their own ship to the waterline so no one could ever escape",
-      "seconds": 1.0
+      "detail": "Herculaneum: for centuries it was thought its people escaped, until hundreds of skeletons were found in the boathouses by the shore in the 1980s",
+      "seconds": 0.9
     },
     {
-      "name": "start ep094",
+      "name": "start ep097",
       "ok": true,
-      "detail": "Hindenburg disaster (1937): the airship burned in about half a minute, yet most of the people aboard survived",
-      "seconds": 1.0
+      "detail": "Great Fire of London (1666): only a handful of deaths were recorded, though the true toll is unknown",
+      "seconds": 0.7
     }
   ],
   "errors": [],
@@ -55,18 +55,20 @@
     "draft-only producer: no Buffer, Cloudinary, or Google publisher access"
   ],
   "inventory": {
-    "total": 3,
+    "total": 2,
     "in_buffer": 0,
     "waiting": 0,
-    "drafts": 3,
+    "drafts": 2,
     "target": 9,
     "making": [],
     "remote": [
       "ep089",
       "ep091",
       "ep092",
-      "ep093",
-      "ep094"
+      "ep094",
+      "ep095",
+      "ep096",
+      "ep097"
     ]
   },
   "queue": [],
@@ -92,53 +94,40 @@
   ],
   "made": [
     {
-      "id": "ep086",
-      "outcome": "rejected",
-      "topic": "Siege of Kamakura (1333): the commander threw his golden sword into the sea as an offering, and the tide instantly receded to reveal a path past the city’s sea walls",
-      "reason": "low scores: visuals, accuracy; 3 frame problems; 1 speech problems"
+      "id": "ep091",
+      "outcome": "unfinished",
+      "topic": "Julian's Persian expedition (363): the Roman Emperor burned his own supply fleet to force his men to advance, only to realize they were starving in a desert wasteland",
+      "reason": "RuntimeError: research answer supplied no usable two-site quotes (gemini-3.5-flash-lite); asking again next run",
+      "quota": false,
+      "overloaded": false
     },
     {
-      "id": "ep088",
+      "id": "ep093",
       "outcome": "rejected",
-      "topic": "Oppau explosion (1921): a routine blast to break up caked fertilizer preceded a stockpile detonation",
-      "reason": "2 speech problems"
-    },
-    {
-      "id": "ep090",
-      "outcome": "ready",
-      "topic": "New London School explosion (1937): leaked gas built up beneath the school until a shop-class sander ignited it near the end of the day",
-      "title": "Why Did a Wealthy Texas School Use Free Waste Gas? ⚠️",
-      "scores": {
-        "hook": 4,
-        "clarity": 5,
-        "payoff": 4,
-        "visuals": 5,
-        "loop": 5,
-        "accuracy": 5
-      },
-      "draft": "drafts/ep090-3247e64d408bd0060b2ee875aa096c1ff1458517d0f225943fc6a90ccd745e16.mp4"
+      "topic": "Bounty mutiny (1789): after casting the captain adrift, the mutineers sailed to Pitcairn Island and burned their own ship to the waterline so no one could ever escape",
+      "reason": "research: only 4 claims have verified quotes from two different sites"
     }
   ],
   "spawned": [
     {
       "id": "ep091",
       "topic": "Julian's Persian expedition (363): the Roman Emperor burned his own supply fleet to force his men to advance, only to realize they were starving in a desert wasteland",
-      "call_id": "fc-01M47R2BA9TKG9Y7Z8XNHCHEVN"
+      "call_id": "fc-01M47RAM4YXQBV62KSJJ0V84SN"
     },
     {
-      "id": "ep092",
-      "topic": "Tauredunum event (563): a mountain collapse into Lake Geneva created a massive inland tsunami that swept over the city walls of Geneva miles away",
-      "call_id": "fc-01M47R2CAH9VSEFXGWADJ3N97N"
+      "id": "ep095",
+      "topic": "New London School explosion (1937): leaked gas built up beneath the school until a shop-class sander ignited it near the end of the day",
+      "call_id": "fc-01M47RAMT8753VJNCV7EN8PRGR"
     },
     {
-      "id": "ep093",
-      "topic": "Bounty mutiny (1789): after casting the captain adrift, the mutineers sailed to Pitcairn Island and burned their own ship to the waterline so no one could ever escape",
-      "call_id": "fc-01M47R2D9N6W4G57XR9S598ZW2"
+      "id": "ep096",
+      "topic": "Herculaneum: for centuries it was thought its people escaped, until hundreds of skeletons were found in the boathouses by the shore in the 1980s",
+      "call_id": "fc-01M47RANPX6107WKN1FV12CJWY"
     },
     {
-      "id": "ep094",
-      "topic": "Hindenburg disaster (1937): the airship burned in about half a minute, yet most of the people aboard survived",
-      "call_id": "fc-01M47R2E7GRABMXTJCT1J15A7S"
+      "id": "ep097",
+      "topic": "Great Fire of London (1666): only a handful of deaths were recorded, though the true toll is unknown",
+      "call_id": "fc-01M47RAPC4GTWHS7BMHF01D978"
     }
   ],
   "in_cloud": [
@@ -150,7 +139,7 @@
     {
       "id": "ep091",
       "topic": "Julian's Persian expedition (363): the Roman Emperor burned his own supply fleet to force his men to advance, only to realize they were starving in a desert wasteland",
-      "spawned_at": "2026-10-06T10:08:06+05:30"
+      "spawned_at": "2026-10-06T10:12:37+05:30"
     },
     {
       "id": "ep092",
@@ -158,14 +147,24 @@
       "spawned_at": "2026-10-06T10:08:07+05:30"
     },
     {
-      "id": "ep093",
-      "topic": "Bounty mutiny (1789): after casting the captain adrift, the mutineers sailed to Pitcairn Island and burned their own ship to the waterline so no one could ever escape",
-      "spawned_at": "2026-10-06T10:08:08+05:30"
-    },
-    {
       "id": "ep094",
       "topic": "Hindenburg disaster (1937): the airship burned in about half a minute, yet most of the people aboard survived",
       "spawned_at": "2026-10-06T10:08:09+05:30"
+    },
+    {
+      "id": "ep095",
+      "topic": "New London School explosion (1937): leaked gas built up beneath the school until a shop-class sander ignited it near the end of the day",
+      "spawned_at": "2026-10-06T10:12:38+05:30"
+    },
+    {
+      "id": "ep096",
+      "topic": "Herculaneum: for centuries it was thought its people escaped, until hundreds of skeletons were found in the boathouses by the shore in the 1980s",
+      "spawned_at": "2026-10-06T10:12:39+05:30"
+    },
+    {
+      "id": "ep097",
+      "topic": "Great Fire of London (1666): only a handful of deaths were recorded, though the true toll is unknown",
+      "spawned_at": "2026-10-06T10:12:39+05:30"
     }
   ],
   "published": [],
@@ -173,35 +172,31 @@
   "failed_posts": [],
   "not_live": [],
   "llm": {
-    "calls": 28,
+    "calls": 2,
     "by_model": {
-      "gemini-3.8-flash": 2,
-      "gemini-3.5-flash": 3,
-      "gemini-3.5-flash-lite": 15,
-      "gemini-3-flash-preview": 3,
-      "gemma-4-31b-it": 5
+      "gemini-3.5-flash-lite": 2
     },
     "out_of_quota": []
   },
   "renders": {
-    "modal": 8,
+    "modal": 0,
     "runner": 0
   },
   "daily_done": "2026-10-05",
   "minutes_this_month": 68.0,
   "minutes_budget": 2000,
   "modal_cost": {
-    "metered": 8.15,
+    "metered": 8.25,
     "billed": 0.0
   },
   "modal_credit": 30.0,
   "capacity": {
-    "cloud": 164,
+    "cloud": 161,
     "runner": 0,
     "runner_minutes": 0,
-    "modal_credit_left": 19.72
+    "modal_credit_left": 19.39
   },
   "made_here": 0,
-  "open_topics": 147,
+  "open_topics": 145,
   "parked_topics": 32
 }

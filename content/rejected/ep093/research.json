@@ -1,0 +1,188 @@
+{
+  "viable": false,
+  "reason": "only 4 claims have verified quotes from two different sites",
+  "story": "In April 1789, a shocking mutiny erupted aboard the Royal Navy merchant ship HMS Bounty in the South Pacific Ocean. Disaffected crewmen led by acting-Lieutenant Fletcher Christian seized control from their commander, Lieutenant William Bligh. Rejecting strict discipline after a luxurious five-month layover in Tahiti, the mutineers cast Bligh and eighteen loyalists adrift in a 23-foot open launch with meager rations. Defying all odds, Bligh navigated the overloaded boat across 3,500 nautical miles of dangerous open ocean to reach safety in Timor 47 days later. Meanwhile, Christian sailed the Bounty to remote Pitcairn Island. To ensure no one could ever escape or reveal their hiding place, the mutineers deliberately burned their own warship to the waterline in January 1790, leaving the survivors completely stranded in paradise.",
+  "angle": "The mutineers sailed to a remote island and deliberately burned their own ship to the waterline so no one could ever escape.",
+  "claims": [
+    {
+      "claim": "The Mutiny on the Bounty occurred in the Pacific Ocean on 28 April 1789.",
+      "sources": [
+        "S1",
+        "S7"
+      ],
+      "evidence": [
+        {
+          "source": "S1",
+          "quote": "The Mutiny on the Bounty occurred in the Pacific Ocean on 28 April 1789."
+        },
+        {
+          "source": "S7",
+          "quote": "On 28 April 1789, master’s mate Fletcher Christian, along with 18 mutineers, took control of the Bounty and cast the captain, Lieutenant William Bligh, and 18 of his men adrift in the Pacific Ocean in a small boat."
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim": "Fletcher Christian led disaffected crewmen to seize control of the HMS Bounty from Lieutenant William Bligh.",
+      "sources": [
+        "S1",
+        "S7"
+      ],
+      "evidence": [
+        {
+          "source": "S1",
+          "quote": "Disaffected crewmen, led by acting-Lieutenant Fletcher Christian, seized control of the Royal Navy merchant ship HMS Bounty from its captain, Lieutenant William Bligh"
+        },
+        {
+          "source": "S7",
+          "quote": "In 1789, master’s mate Fletcher Christian led a notorious mutiny on the Bounty, a ship under the command of William Bligh."
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim": "Bligh and 18 loyalists were set adrift in the ship's open launch.",
+      "sources": [
+        "S1",
+        "S7"
+      ],
+      "evidence": [
+        {
+          "source": "S1",
+          "quote": "set him and 18 loyalists adrift in the ship's open launch."
+        },
+        {
+          "source": "S7",
+          "quote": "cast the captain, Lieutenant William Bligh, and 18 of his men adrift in the Pacific Ocean in a small boat."
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim": "Bligh and his men arrived at Kupang after 47 days.",
+      "sources": [
+        "S2",
+        "S3"
+      ],
+      "evidence": [
+        {
+          "source": "S2",
+          "quote": "He safely landed there 47 days later, having lost no men during the voyage except the one killed on Tofua."
+        },
+        {
+          "source": "S3",
+          "quote": "After 47 days they arrived and reported the mutiny to the Crown."
+        }
+      ],
+      "confidence": "high"
+    }
+  ],
+  "disputed": [
+    "Whether the burning of the ship was an agreed-upon precaution against discovery or an unauthorized act by Quintal should be attributed as according to conflicting accounts.",
+    "Whether Christian was driven purely by tyranny or personal abuse, or by a complex psychological breakdown and opium use, remains a subject of intense historical debate."
+  ],
+  "visuals": [
+    {
+      "subject": "The HMS Bounty ship",
+      "queries": [
+        "HMS Bounty painting 18th century",
+        "HMAV Bounty model engraving"
+      ]
+    },
+    {
+      "subject": "Lieutenant William Bligh",
+      "queries": [
+        "William Bligh portrait",
+        "Captain William Bligh oil painting"
+      ]
+    },
+    {
+      "subject": "Fletcher Christian",
+      "queries": [
+        "Fletcher Christian portrait",
+        "Fletcher Christian mutiny painting"
+      ]
+    },
+    {
+      "subject": "Tahiti landscape in the 18th century",
+      "queries": [
+        "Tahiti 18th century painting Webber",
+        "Matavai Bay Tahiti engraving"
+      ]
+    },
+    {
+      "subject": "Pitcairn Island scenery",
+      "queries": [
+        "Pitcairn Island landscape",
+        "Bounty Bay Pitcairn Island today"
+      ]
+    },
+    {
+      "subject": "Open boat voyage of Bligh",
+      "queries": [
+        "Bligh open boat painting",
+        "Bounty launch voyage engraving"
+      ]
+    },
+    {
+      "subject": "HMS Pandora wreck and expedition",
+      "queries": [
+        "HMS Pandora frigate painting",
+        "Great Barrier Reef map historical"
+      ]
+    },
+    {
+      "subject": "Old map of the South Pacific",
+      "queries": [
+        "South Pacific map 18th century",
+        "Tonga and Tahiti historical map"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "label": "S1",
+      "url": "https://en.wikipedia.org/wiki/Mutiny_on_the_Bounty",
+      "title": "Mutiny on the Bounty",
+      "site": "wikipedia.org"
+    },
+    {
+      "label": "S2",
+      "url": "https://en.wikipedia.org/wiki/HMS_Bounty",
+      "title": "HMS Bounty",
+      "site": "wikipedia.org"
+    },
+    {
+      "label": "S3",
+      "url": "https://www.nationalgeographic.com/history/article/the-real-story-behind-infamous-mutiny-hms-bounty",
+      "title": "The real story behind the infamous mutiny on the H.M.S. Bounty",
+      "site": "nationalgeographic.com"
+    },
+    {
+      "label": "S4",
+      "url": "https://www.bbc.co.uk/cult/classic/morecambe_wise/intro.shtml",
+      "title": "BBC - Cult - Classic TV",
+      "site": "bbc.co.uk"
+    },
+    {
+      "label": "S5",
+      "url": "https://www.telegraph.co.uk/news/worldnews/northamerica/usa/9644072/Sandys-Bounty-victim-was-descendent-of-man-who-led-famous-mutiny.html",
+      "title": "Sandy's Bounty victim was descendent of man who led famous mutiny",
+      "site": "telegraph.co.uk"
+    },
+    {
+      "label": "S6",
+      "url": "https://www.independent.co.uk/news/blighs-v-christians-the-209year-feud-1151674.html",
+      "title": "Blighs v Christians, the 209-year feud",
+      "site": "independent.co.uk"
+    },
+    {
+      "label": "S7",
+      "url": "https://www.rmg.co.uk/stories/maritime-history/mutiny-on-bounty",
+      "title": "Mutiny on the Bounty",
+      "site": "rmg.co.uk"
+    }
+  ],
+  "topic": "Bounty mutiny (1789): after casting the captain adrift, the mutineers sailed to Pitcairn Island and burned their own ship to the waterline so no one could ever escape",
+  "series": "Doomed Expeditions"
+}

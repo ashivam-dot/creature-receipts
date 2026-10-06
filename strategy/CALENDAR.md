@@ -62,7 +62,7 @@ event is told for its gore. Space topics belong to the sister channel Universe R
 - Halifax Explosion (1917): a burning munitions ship blew up in the harbor, the largest man-made explosion before the atomic bomb
 - MV Wilhelm Gustloff (1945): its sinking in the Baltic was the deadliest loss of a single ship in history
 - SS Eastland (1915): it rolled over while still tied to its Chicago dock, and 844 people died in water about 20 feet deep
-- Great Fire of London (1666): only a handful of deaths were recorded, though the true toll is unknown
+- Great Fire of London (1666): only a handful of deaths were recorded, though the true toll is unknown — making (ep097)
 - Radium Girls (1917): factory workers painted watch dials with self-glowing paint and pointed the brushes with their lips, later seeing their own jaws glow in the dark — parked (ep033)
 - 1945 Empire State Building B-25 crash (1945): a lost bomber crashed into the 79th floor of the skyscraper, and an elevator operator fell 75 floors and survived — done (ep038)
 - Battle of the Little Bighorn (1876): Custer split his forces and rode directly into the largest Native American encampment ever gathered on the plains — done (ep043)
@@ -142,7 +142,7 @@ event is told for its gore. Space topics belong to the sister channel Universe R
 ### Lost Cities
 
 - Pompeii: the famous body casts are plaster poured into hollows the victims left in the ash, a technique begun by Giuseppe Fiorelli in 1863 — parked (ep028)
-- Herculaneum: for centuries it was thought its people escaped, until hundreds of skeletons were found in the boathouses by the shore in the 1980s
+- Herculaneum: for centuries it was thought its people escaped, until hundreds of skeletons were found in the boathouses by the shore in the 1980s — making (ep096)
 - Akrotiri (prehistoric city): a Bronze Age town buried by the Minoan eruption where almost no bodies have been found, as if its people had warning — parked (ep082)
 - Helike: a Greek city that sank in a single night in 373 BC, after an earthquake and a wave
 - Thonis-Heracleion: Egypt's great port vanished under the sea and was only found by divers in 2000
@@ -184,7 +184,7 @@ event is told for its gore. Space topics belong to the sister channel Universe R
 - Sinking of the Antarctic (1903): after their ship was crushed by ice, three separated groups survived the winter and reunited on the exact same day
 - Polaris expedition (1871): the mission to the North Pole failed when its commander died mysteriously, and a 20th-century autopsy revealed he had been poisoned with arsenic by his own crew
 - French Antarctic Expedition (1772): the explorer rushed back to France claiming he found a lush southern paradise, only to be disgraced when his next voyage revealed it was a desolate, frozen rock
-- Bounty mutiny (1789): after casting the captain adrift, the mutineers sailed to Pitcairn Island and burned their own ship to the waterline so no one could ever escape — making (ep093)
+- Bounty mutiny (1789): after casting the captain adrift, the mutineers sailed to Pitcairn Island and burned their own ship to the waterline so no one could ever escape — dropped (ep093)
 
 ### Fallen Empires
 
