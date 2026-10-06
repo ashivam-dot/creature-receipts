@@ -1,0 +1,161 @@
+id: ep100
+title: Why Did Rome Fall for the First Time in 800 Years? 🏛️
+series: Fallen Empires
+description: Witness the final hours before the Visigoths breached the Salarian Gate in 410 AD.
+sources:
+- https://en.wikipedia.org/wiki/Sack_of_Rome_(410)
+- https://thisdayofhistory.com/2026/08/26/august-27-410-the-eternal-city-falls/
+- https://historysnacks.io/event/mZKXfONZ/the-visigoths-led-by-king-alaric-i-sack-rome-after-a-prolonged-siege-marking/
+- https://www.bbc.com/news/world-europe-11066461
+- https://www.worldhistory.org/article/1449/sack-of-rome-410-ce/
+- https://www.understandingitaly.com/sacking-of-rome.html
+hashtags:
+- '#history'
+- '#ancientrome'
+- '#fallenempires'
+tags:
+- Rome
+- Visigoths
+- Alaric
+- 410 AD
+- Roman Empire
+voice:
+  engine: kokoro
+  voice: am_fenrir
+  speed: 1.15
+beats:
+- text: For eight hundred years, foreign armies failed to breach Rome.
+  emphasis:
+  - eight hundred years
+  - failed to breach Rome
+  sfx: whoosh
+  visual:
+    source: url
+    url: https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cb/Roma.Porta_Latina_incisione_Rossini_02.jpg/960px-Roma.Porta_Latina_incisione_Rossini_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
+    credit:
+      source: Wikimedia Commons
+      title: Roma.Porta Latina incisione Rossini 02.jpg
+      credit: Unknown author
+      license: Public domain
+      url: https://commons.wikimedia.org/wiki/File:Roma.Porta_Latina_incisione_Rossini_02.jpg
+    fallbacks:
+    - color
+    motion: zoom_out
+    focus_x: 0.5
+    focus_y: 0.5
+- text: Emperor Honorius ruled safely from the distant city of Ravenna.
+  emphasis:
+  - Emperor Honorius
+  - Ravenna
+  visual:
+    source: url
+    url: https://upload.wikimedia.org/wikipedia/commons/9/95/Consular_diptych_Probus_406.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    credit:
+      source: Wikimedia Commons
+      title: Consular diptych Probus 406.jpg
+      credit: Unknown author
+      license: Public domain
+      url: https://commons.wikimedia.org/wiki/File:Consular_diptych_Probus_406.jpg
+    fallbacks:
+    - color
+    motion: pan_up
+    focus_x: 0.5
+    focus_y: 0.5
+- text: Outside the walls, King Alaric tightened a starving blockade.
+  emphasis:
+  - King Alaric
+  - starving blockade
+  sfx: riser
+  visual:
+    source: url
+    url: https://upload.wikimedia.org/wikipedia/commons/d/d9/02-ALARICO.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    credit:
+      source: Wikimedia Commons
+      title: 02-ALARICO.JPG
+      credit: Upload by Basilio
+      license: Public domain
+      url: https://commons.wikimedia.org/wiki/File:02-ALARICO.JPG
+    fallbacks:
+    - color
+    motion: pan_down
+    focus_x: 0.5
+    focus_y: 0.5
+- text: On August twenty-fourth, the Visigoths poured through the Salarian Gate.
+  emphasis:
+  - August twenty-fourth
+  - Salarian Gate
+  sfx: whoosh
+  visual:
+    source: url
+    url: https://thumb.wikimedia.org/wikipedia/commons/thumb/a/af/Roman_Forum_%28Hansen%29.jpg/1920px-Roman_Forum_%28Hansen%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
+    credit:
+      source: Wikimedia Commons
+      title: Roman Forum (Hansen).jpg
+      credit: Constantin Hansen
+      license: Public domain
+      url: https://commons.wikimedia.org/wiki/File:Roman_Forum_(Hansen).jpg
+    fallbacks:
+    - card
+    - color
+    motion: zoom_in
+    focus_x: 0.5
+    focus_y: 0.5
+    card:
+      kind: dateline
+      big: August 24, 410
+      small: The Salarian Gate
+- text: For three days, the conquerors pillaged the ancient capital.
+  emphasis:
+  - three days
+  - pillaged
+  sfx: pop
+  pause_after: 0.4
+  visual:
+    source: url
+    url: https://upload.wikimedia.org/wikipedia/commons/8/85/Wilhelm_Riedel_-_Forum_Romanum_%28Roman_Ruins%29_-_O_4260_-_National_Gallery_Prague.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    credit:
+      source: Wikimedia Commons
+      title: Wilhelm Riedel - Forum Romanum (Roman Ruins) - O 4260 - National Gallery Prague.jpg
+      credit: Wilhelm Riedel
+      license: Public domain
+      url: https://commons.wikimedia.org/wiki/File:Wilhelm_Riedel_-_Forum_Romanum_(Roman_Ruins)_-_O_4260_-_National_Gallery_Prague.jpg
+    fallbacks:
+    - color
+    motion: pan_right
+    focus_x: 0.5
+    focus_y: 0.5
+- text: Saint Jerome wrote that the world itself was taken.
+  emphasis:
+  - Saint Jerome
+  - world itself was taken
+  visual:
+    source: url
+    url: https://upload.wikimedia.org/wikipedia/commons/2/26/Domenico_ghirlandaio%2C_san_girolamo_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    credit:
+      source: Wikimedia Commons
+      title: Domenico ghirlandaio, san girolamo 01.jpg
+      credit: Domenico Ghirlandaio
+      license: Public domain
+      url: https://commons.wikimedia.org/wiki/File:Domenico_ghirlandaio,_san_girolamo_01.jpg
+    fallbacks:
+    - card
+    - color
+    motion: pan_up
+    focus_x: 0.5
+    focus_y: 0.5
+    card:
+      kind: quote
+      big: The city which had taken the whole world was itself taken.
+      small: Saint Jerome
+- text: Foreign armies had finally breached Rome after eight hundred years.
+  emphasis:
+  - breached Rome
+  - eight hundred years
+  sfx: whoosh
+  visual:
+    reuse: 1
+    motion: zoom_in
+    focus_x: 0.5
+    focus_y: 0.5
+depth_motion: true
+hook_text: 800 YEARS UNBEATEN

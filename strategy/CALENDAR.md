@@ -138,6 +138,7 @@ event is told for its gore. Space topics belong to the sister channel Universe R
 - 1157 Hama earthquake (1157): a teacher who stepped out of his classroom returned to find his school collapsed and every student dead, with not a single parent left alive to claim them
 - Siege of Maiozamalcha (363): while the defenders mocked the Romans from their 'impregnable' walls, soldiers finished a secret tunnel and emerged directly into a kitchen inside the city
 - Sinking of the SS Persia (1915): the ocean liner sank in minutes after a torpedo struck, and the lone survivor among the ship's mail clerks clung to a floating crate for hours
+- Fire of Rome (AD 64): flames break out among shops of flammable goods beside the Circus and, driven by wind through narrow twisting lanes, outrun every effort to stop them as fleeing crowds are trapped
 
 ### Lost Cities
 
@@ -240,6 +241,7 @@ event is told for its gore. Space topics belong to the sister channel Universe R
 - Battle of Singara (344): Roman soldiers ignored their generals' orders to stay alert, celebrating their victory inside the enemy camp until they were slaughtered in their sleep
 - Great Revere train wreck of 1871 (1871): the railroad's superintendent had banned telegraph dispatching as 'too dangerous,' forcing trains to run blindly in a thick fog until they collided
 - Gas leak in Cleveland (1944): an underground gas main rupture caused a series of massive explosions that blew manhole covers into the air and leveled a neighborhood, after officials ignored warnings about the aging pipes
+- Silvertown explosion (1917): a fire at a TNT works beside crowded terraces set off about 50 tons of explosive at 6.52 pm
 
 ### Sole Survivors
 
