@@ -1,0 +1,144 @@
+id: ep102
+title: Why Did the Silvertown Explosion Stay Secret for Decades?
+series: Warnings Ignored
+description: The 1917 Silvertown explosion was London's largest blast, caused by a fire at a crowded docklands TNT factory.
+sources:
+- https://heritagecalling.com/2017/01/19/the-silvertown-tragedy-explosion-on-the-home-front/
+- https://www.londonmuseum.org.uk/collections/london-stories/silvertown-1917-londons-largest-explosion/
+hashtags:
+- '#history'
+- '#silvertown'
+- '#london'
+tags:
+- silvertown
+- explosion
+- '1917'
+- london
+- history
+- tragedy
+voice:
+  engine: kokoro
+  voice: am_fenrir
+  speed: 1.15
+beats:
+- text: A strange orange light flickered over the East London docks.
+  emphasis:
+  - orange light
+  - East London
+  visual:
+    source: url
+    url: https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e9/The_Arms_Production_in_Britain_in_the_First_World_War_Q27880.jpg/1920px-The_Arms_Production_in_Britain_in_the_First_World_War_Q27880.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
+    credit:
+      source: Wikimedia Commons
+      title: The Arms Production in Britain in the First World War Q27880.jpg
+      credit: George P. Lewis
+      license: Public domain
+      url: https://commons.wikimedia.org/wiki/File:The_Arms_Production_in_Britain_in_the_First_World_War_Q27880.jpg
+    fallbacks:
+    - color
+    motion: pan_right
+    focus_x: 0.5
+    focus_y: 0.5
+- text: At 6.52 pm, shockwaves from Silvertown reached houses in Norfolk.
+  emphasis:
+  - 6.52 pm
+  - Norfolk
+  sfx: whoosh
+  visual:
+    source: url
+    url: https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a3/Map_of_Norfolk_%28Corbridge_1727%29.jpg/3840px-Map_of_Norfolk_%28Corbridge_1727%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
+    credit:
+      source: Wikimedia Commons
+      title: Map of Norfolk (Corbridge 1727).jpg
+      credit: James Corbridge
+      license: Public domain
+      url: https://commons.wikimedia.org/wiki/File:Map_of_Norfolk_(Corbridge_1727).jpg
+    fallbacks:
+    - color
+    motion: pan_left
+    focus_x: 0.5
+    focus_y: 0.5
+- text: Neighbors feared a German air raid or secret sabotage.
+  emphasis:
+  - air raid
+  - sabotage
+  visual:
+    source: url
+    url: https://upload.wikimedia.org/wikipedia/commons/1/1a/Gotha_RG_im_Flug.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    credit:
+      source: Wikimedia Commons
+      title: Gotha RG im Flug.jpg
+      credit: Unknown authorUnknown author
+      license: Public domain
+      url: https://commons.wikimedia.org/wiki/File:Gotha_RG_im_Flug.jpg
+    fallbacks:
+    - color
+    motion: pan_right
+    focus_x: 0.51
+    focus_y: 0.48
+    box:
+    - 0.29
+    - 0.13
+    - 0.73
+    - 0.84
+- text: Instead, 50 tons of TNT detonated in the crowded factory.
+  emphasis:
+  - 50 tons
+  - TNT
+  sfx: pop
+  pause_after: 0.4
+  visual:
+    source: card
+    card:
+      kind: fact
+      big: 50 TONS
+      small: of detonated TNT
+    motion: zoom_in
+- text: The government report into the 73 deaths stayed secret for decades.
+  emphasis:
+  - secret
+  - decades
+  sfx: riser
+  visual:
+    source: card
+    card:
+      kind: fact
+      big: 1950s
+      small: Report finally released
+    motion: zoom_in
+- text: It revealed officials ignored warnings because they deemed production worth the risk.
+  emphasis:
+  - ignored warnings
+  - worth the risk
+  sfx: pop
+  pause_after: 0.4
+  visual:
+    source: url
+    url: https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c2/MUNITIONS_PRODUCTION_ON_THE_HOME_FRONT%2C_1914-1918_Q110227.jpg/1280px-MUNITIONS_PRODUCTION_ON_THE_HOME_FRONT%2C_1914-1918_Q110227.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
+    credit:
+      source: Wikimedia Commons
+      title: MUNITIONS PRODUCTION ON THE HOME FRONT, 1914-1918 Q110227.jpg
+      credit: British official photographer
+      license: Public domain
+      url: https://commons.wikimedia.org/wiki/File:MUNITIONS_PRODUCTION_ON_THE_HOME_FRONT,_1914-1918_Q110227.jpg
+    fallbacks:
+    - color
+    motion: pan_left
+    focus_x: 0.65
+    focus_y: 0.55
+    box:
+    - 0.4
+    - 0.25
+    - 0.9
+    - 0.85
+- text: Witnesses never forgot how the orange light first appeared.
+  emphasis:
+  - orange light
+  sfx: whoosh
+  visual:
+    reuse: 1
+    motion: zoom_out
+    focus_x: 0.5
+    focus_y: 0.5
+depth_motion: true
+hook_text: THE SECRET EXPLOSION

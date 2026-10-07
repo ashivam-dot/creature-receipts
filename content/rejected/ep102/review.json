@@ -1,0 +1,149 @@
+{
+  "rounds": [
+    {
+      "at": "2026-10-07T17:27:50+05:30",
+      "check": {
+        "duration": 30.27,
+        "words": 71,
+        "integrated_lufs": -14.4,
+        "true_peak_dbfs": -1.7,
+        "warnings": [],
+        "speech_differences": [],
+        "speech_error": null,
+        "sources": [
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "designed card",
+          "designed card",
+          "Wikimedia Commons",
+          "Wikimedia Commons"
+        ],
+        "speech_verification": {
+          "heard": "A strange orange light flickered over the East London docks. At 6.52 pm, shockwaves from Silvertown reached houses in Norfolk. Neighbors feared a German air raid or secret sabotage. Instead, 50 tons of TNT detonated in the crowded factory. The government report into the 73 deaths stayed secret for decades. It revealed officials ignored warnings because they deemed production worth the risk. Witnesses never forgot how the orange light first appeared. You",
+          "model": "small.en",
+          "media_sha256": "461a3aeecd903901b315b0d6574434907745a11fa880dfa9d49bc0ec38a295e6",
+          "primary_differences": [
+            "'(nothing)' heard as 'you' after 'light 1st appeared'"
+          ],
+          "differences": [],
+          "corroboration": {
+            "model": "base.en",
+            "heard": "a strange orange light flickered over the East London docks. At 6.52 pm, shockwaves from Silvertown reached houses in Norfolk. Neighbors feared a German air raid or secret sabotage. Instead, 50 tons of TNT detonated in the crowded factory. The government report into the 73 deaths stayed secret for decades. It revealed officials ignored warnings because they deemed production worth the risk. Witnesses never forgot how the orange light first appeared.",
+            "differences": [],
+            "resolved": [
+              "'(nothing)' heard as 'you' after 'light 1st appeared'"
+            ]
+          }
+        }
+      },
+      "media_sha256": "461a3aeecd903901b315b0d6574434907745a11fa880dfa9d49bc0ec38a295e6",
+      "scores": {
+        "hook": 4,
+        "clarity": 5,
+        "payoff": 4,
+        "visuals": 3,
+        "loop": 5,
+        "accuracy": 5
+      },
+      "notes": {
+        "hook": "Sets an atmospheric, ominous tone immediately without giving away the story.",
+        "clarity": "Follows a clean, logical progression from the blast and panic to the hidden inquiry.",
+        "payoff": "The reveal of the government's calculated risk pays off the mystery behind the secrecy.",
+        "visuals": "The 16th-century antique map of Norfolk in beat 2 is jarringly anachronistic for a 1917 event.",
+        "loop": "The final phrase about the orange light loops effortlessly back into the opening line.",
+        "accuracy": "All facts, dates, and death counts precisely follow the documented research claims."
+      },
+      "frames": [
+        {
+          "beat": 2,
+          "problem": "anachronistic 1576 Renaissance map used to represent a 1917 First World War event"
+        }
+      ],
+      "speech": [],
+      "rewrite": [],
+      "better_than_last": "Maintains an exceptionally tight, seamless loop while cleanly tying the sensory details of the blast to the political cover-up.",
+      "judge": "gemini-3.7-flash",
+      "passed": false
+    },
+    {
+      "at": "2026-10-07T17:31:42+05:30",
+      "check": {
+        "duration": 30.27,
+        "words": 71,
+        "integrated_lufs": -14.4,
+        "true_peak_dbfs": -1.7,
+        "warnings": [],
+        "speech_differences": [
+          "base.en: 'deaths' heard as 'death' after 'into the 73'"
+        ],
+        "speech_error": null,
+        "sources": [
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "designed card",
+          "designed card",
+          "Wikimedia Commons",
+          "Wikimedia Commons"
+        ],
+        "speech_verification": {
+          "heard": "A strange orange light flickered over the East London docks. At 6.52 pm, shockwaves from Silvertown reached houses in Norfolk. Neighbors feared a German air raid or secret sabotage. Instead, 50 tons of TNT detonated in the crowded factory. The government report into the 73 deaths stayed secret for decades. It revealed officials ignored warnings because they deemed production worth the risk. Witnesses never forgot how the orange light first appeared. You",
+          "model": "small.en",
+          "media_sha256": "a37f94530d17869ea1c291fe7808c5096578908f5097492d7783cc217e3c6c7f",
+          "primary_differences": [
+            "'(nothing)' heard as 'you' after 'light 1st appeared'"
+          ],
+          "differences": [
+            "base.en: 'deaths' heard as 'death' after 'into the 73'"
+          ],
+          "corroboration": {
+            "model": "base.en",
+            "heard": "a strange orange light flickered over the East London docks. At 6.52 pm, shockwaves from Silvertown reached houses in Norfolk. Neighbors feared a German air raid or secret sabotage. Instead, 50 tons of TNT detonated in the crowded factory. The government report into the 73-death stayed secret for decades. It revealed officials ignored warnings because they deemed production worth the risk. Witnesses never forgot how the The orange light first appeared.",
+            "differences": [
+              "'deaths' heard as 'death' after 'into the 73'",
+              "'(nothing)' heard as 'the' after 'forgot how the'"
+            ],
+            "resolved": [
+              "'(nothing)' heard as 'you' after 'light 1st appeared'"
+            ]
+          }
+        }
+      },
+      "media_sha256": "a37f94530d17869ea1c291fe7808c5096578908f5097492d7783cc217e3c6c7f",
+      "scores": {
+        "hook": 4,
+        "clarity": 5,
+        "payoff": 5,
+        "visuals": 3,
+        "loop": 5,
+        "accuracy": 3
+      },
+      "notes": {
+        "hook": "Atmospheric and avoids generic tropes, though the setup is slightly slow to arrive at the event.",
+        "clarity": "The story flows logically from the initial incident to the government's long-term cover-up.",
+        "payoff": "The reveal of the secret 1950s report provides a satisfying and grave resolution to the story.",
+        "visuals": "Beat 2's 1727 map is anachronistic and distracting for a 20th-century historical event.",
+        "loop": "The repetition of the 'orange light' imagery creates a perfectly seamless loop back to the start.",
+        "accuracy": "The claim that the report 'revealed officials ignored warnings' goes beyond the provided research claims."
+      },
+      "frames": [
+        {
+          "beat": 2,
+          "problem": "The map is from 1727, making it anachronistic for a story set during the First World War."
+        }
+      ],
+      "speech": [],
+      "rewrite": [
+        "Beat 6: Change 'ignored warnings because they deemed production worth the risk' to 'were ordered to produce TNT despite the factory’s crowded docklands location.'"
+      ],
+      "better_than_last": "This Short provides a much stronger narrative payoff regarding the event's secrecy than the unresolved rescue premise of episode 054.",
+      "judge": "gemini-3-flash-preview",
+      "passed": false
+    }
+  ],
+  "best_round": 1,
+  "verdict": "rejected",
+  "reason": "its cloud worker stopped 3 times without finishing",
+  "rejected_at": "2026-10-07T23:05:37+05:30"
+}

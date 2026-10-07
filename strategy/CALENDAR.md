@@ -28,8 +28,8 @@ event is told for its gore. Space topics belong to the sister channel Universe R
 | 2026-10-03 | Operation Market Garden (1944): commanders dismissed aerial reconnaissance photos showing German panzers waiting at Arnhem, ordering the intelligence officer who raised the alarm on sudden medical leave — done (ep051) | Warnings Ignored | Bernard Montgomery is trending on Wikipedia with over 53,000 daily views. |
 | 2026-10-05 | Lake Issyk-Kul (c. 1200): an ancient Silk Road trade hub vanished beneath rising waters, leaving centuries-old city ruins submerged off the shore — parked (ep084) | Lost Cities | Trending in archaeology news following underwater dives exploring submerged Silk Road ruins in the lake. |
 | 2026-10-05 | Umm El Qa'ab (c. 2900 BC): early Egyptian pharaohs were entombed alongside dozens of household servants sacrificed simultaneously to serve in the afterlife — parked (ep085) | Fallen Empires | In the news after forensic analysis confirmed retainer sacrifice in First Dynasty royal tombs. |
-| 2026-10-07 | Lizzie Borden (1892): the entire household spent the days before the murders suffering from severe food poisoning because they were eating mutton left out in a 90-degree heatwave — making (ep105) | The Last Hours | Lizzie Borden is currently trending on Wikipedia with over 140,000 views in a single day. |
-| 2026-10-07 | Dust Bowl (1935): on Black Sunday, the air became so statically charged that it short-circuited car ignitions and knocked people to the ground with a single handshake — making (ep106) | Warnings Ignored | John Steinbeck, whose works defined the era's human tragedy, is currently trending on Wikipedia. |
+| 2026-10-07 | Lizzie Borden (1892): the entire household spent the days before the murders suffering from severe food poisoning because they were eating mutton left out in a 90-degree heatwave — parked (ep105) | The Last Hours | Lizzie Borden is currently trending on Wikipedia with over 140,000 views in a single day. |
+| 2026-10-07 | Dust Bowl (1935): on Black Sunday, the air became so statically charged that it short-circuited car ignitions and knocked people to the ground with a single handshake — done (ep106) | Warnings Ignored | John Steinbeck, whose works defined the era's human tragedy, is currently trending on Wikipedia. |
 
 ## Anniversaries (publish on the date, 7 p.m. Eastern)
 
@@ -61,7 +61,7 @@ event is told for its gore. Space topics belong to the sister channel Universe R
 - Hindenburg disaster (1937): the airship burned in about half a minute, yet most of the people aboard survived — parked (ep094)
 - 1883 eruption of Krakatoa: its final explosion was heard thousands of kilometers away, on Rodrigues island in the Indian Ocean — parked (ep078)
 - 1906 San Francisco earthquake: the fires afterwards did more damage than the shaking
-- Halifax Explosion (1917): a burning munitions ship blew up in the harbor, the largest man-made explosion before the atomic bomb — making (ep103)
+- Halifax Explosion (1917): a burning munitions ship blew up in the harbor, the largest man-made explosion before the atomic bomb — done (ep103)
 - MV Wilhelm Gustloff (1945): its sinking in the Baltic was the deadliest loss of a single ship in history
 - SS Eastland (1915): it rolled over while still tied to its Chicago dock, and 844 people died in water about 20 feet deep
 - Great Fire of London (1666): only a handful of deaths were recorded, though the true toll is unknown — parked (ep097)
@@ -82,7 +82,7 @@ event is told for its gore. Space topics belong to the sister channel Universe R
 - Schoolhouse Blizzard (1888): a warm morning lured children to school without coats before a wall of ice struck at recess — making (ep060)
 - Battle of Myeongnyang (1597): Admiral Yi defeated 133 Japanese warships with only 13 vessels by using a whirlpool-filled strait — dropped (ep062)
 - Quintinshill rail disaster (1915): two signalmen changing shifts late forgot a train on the main line, causing the UK's deadliest rail crash — parked (ep076)
-- Siege of Sidney Street (1911): Winston Churchill personally oversaw the gunfight and ordered firefighters not to save the burning building
+- Siege of Sidney Street (1911): Winston Churchill personally oversaw the gunfight and ordered firefighters not to save the burning building — making (ep109)
 - Gresford disaster (1934): hundreds of miners died because they had swapped shifts to see a football match, putting extra men in the pit
 - Sinking of the SS Arctic (1854): the ship collided in fog and the officers took the lifeboats first, leaving the passengers behind
 - 1868 Arica earthquake (1868): a massive tsunami carried the USS Wateree two miles inland and left it sitting perfectly upright in the middle of the desert — parked (ep083)
@@ -141,7 +141,7 @@ event is told for its gore. Space topics belong to the sister channel Universe R
 - Siege of Maiozamalcha (363): while the defenders mocked the Romans from their 'impregnable' walls, soldiers finished a secret tunnel and emerged directly into a kitchen inside the city
 - Sinking of the SS Persia (1915): the ocean liner sank in minutes after a torpedo struck, and the lone survivor among the ship's mail clerks clung to a floating crate for hours
 - Fire of Rome (AD 64): flames break out among shops of flammable goods beside the Circus and, driven by wind through narrow twisting lanes, outrun every effort to stop them as fleeing crowds are trapped — dropped (ep101)
-- Mary Rose (1545): a survivor said she heeled in the wind while turning and water poured through gun ports left open after firing, as Henry VIII watched
+- Mary Rose (1545): a survivor said she heeled in the wind while turning and water poured through gun ports left open after firing, as Henry VIII watched — making (ep107)
 
 ### Lost Cities
 
@@ -160,7 +160,7 @@ event is told for its gore. Space topics belong to the sister channel Universe R
 - Timgad (100 AD): this Roman city was abandoned in the 7th century and buried by the Sahara’s sands, leaving it perfectly preserved for over 1,000 years
 - Fall of Teotihuacan (c. 750 AD): the massive city was burned and abandoned not by invaders, but seemingly by its own citizens who rose up and systematically destroyed the homes of the ruling elite
 - Discovery of Skara Brae (c. 3180 BC): this Neolithic village was perfectly preserved under sand dunes for 5,000 years until a massive storm in 1850 stripped the earth away and revealed it to a local laird
-- Great Zimbabwe (c. 11th–15th centuries): colonial explorers refused to believe the massive granite walls were built by Africans, insisting for decades that the city must have been built by the Queen of Sheba — making (ep104)
+- Great Zimbabwe (c. 11th–15th centuries): colonial explorers refused to believe the massive granite walls were built by Africans, insisting for decades that the city must have been built by the Queen of Sheba — parked (ep104)
 - Sybaris (510 BC): the city famous for its luxury was completely erased from the earth when victorious rivals diverted a whole river to run over its ruins
 
 ### Doomed Expeditions
@@ -177,7 +177,7 @@ event is told for its gore. Space topics belong to the sister channel Universe R
 - Great Fire of 1910 (1910): hurricane-force winds turned a scattering of forest fires into a single monster that swallowed towns in minutes — done (ep050)
 - Voyage of the James Caird (1916): to save his crew, Shackleton navigated 800 miles of the world's deadliest ocean in a 22-foot lifeboat — parked (ep046)
 - Julian's Persian expedition (363): the Roman Emperor burned his own supply fleet to force his men to advance, only to realize they were starving in a desert wasteland — dropped (ep091)
-- Ross Sea party (1914): the team spent two years dying of scurvy to lay supply depots for Shackleton, never knowing his ship had been crushed on the other side of the continent
+- Ross Sea party (1914): the team spent two years dying of scurvy to lay supply depots for Shackleton, never knowing his ship had been crushed on the other side of the continent — making (ep110)
 - Vandino and Ugolino Vivaldi (1291): two brothers sailed into the Atlantic 200 years before Columbus and were never seen again, sparking a 150-year search
 - Great Northern Expedition (1741): explorer Vitus Bering died of scurvy on a frozen, desolate island just months after finally proving Asia and America were separate
 - Denmark expedition (1907): dying of starvation in an Arctic cave, Jørgen Brønlund pinned his diary and maps to his coat before freezing to death
@@ -217,7 +217,7 @@ event is told for its gore. Space topics belong to the sister channel Universe R
 
 ### Warnings Ignored
 
-- SS Californian (1912): it was close enough to see the Titanic's rockets, but its radio operator had gone to bed
+- SS Californian (1912): it was close enough to see the Titanic's rockets, but its radio operator had gone to bed — making (ep108)
 - Tay Bridge disaster (1879): the bridge fell in a gale with a train on it, and the inquiry found it badly designed, built, and maintained
 - St. Francis Dam (1928): William Mulholland inspected a leak and judged the dam safe the day it collapsed
 - Johnstown Flood (1889): the dam that failed belonged to a fishing club of Pittsburgh's richest men — dropped (ep098)
@@ -244,7 +244,7 @@ event is told for its gore. Space topics belong to the sister channel Universe R
 - Battle of Singara (344): Roman soldiers ignored their generals' orders to stay alert, celebrating their victory inside the enemy camp until they were slaughtered in their sleep
 - Great Revere train wreck of 1871 (1871): the railroad's superintendent had banned telegraph dispatching as 'too dangerous,' forcing trains to run blindly in a thick fog until they collided
 - Gas leak in Cleveland (1944): an underground gas main rupture caused a series of massive explosions that blew manhole covers into the air and leveled a neighborhood, after officials ignored warnings about the aging pipes
-- Silvertown explosion (1917): a fire at a TNT works beside crowded terraces set off about 50 tons of explosive at 6.52 pm — making (ep102)
+- Silvertown explosion (1917): a fire at a TNT works beside crowded terraces set off about 50 tons of explosive at 6.52 pm — parked (ep102)
 
 ### Sole Survivors
 

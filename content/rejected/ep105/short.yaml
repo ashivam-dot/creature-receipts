@@ -1,0 +1,167 @@
+id: ep105
+title: Why Was the Borden Family Ill Before the Murders? 😳
+series: The Last Hours
+description: Days before the 1892 murders, the Borden household suffered through a heatwave and severe food poisoning from
+  a rancid mutton roast.
+sources:
+- https://en.wikipedia.org/wiki/Lizzie_Borden
+- https://www.crimemuseum.org/crime-library/famous-murders/lizzie-borden/
+- https://www.encyclopedia.com/women/encyclopedias-almanacs-transcripts-and-maps/borden-lizzie-1860-1927
+- https://www.smithsonianmag.com/history/how-lizzie-borden-got-away-with-murder-180972707/
+hashtags:
+- '#history'
+- '#lizzieborden'
+- '#truecrime'
+tags:
+- Lizzie Borden
+- Fall River
+- '1892'
+- Andrew Borden
+- Abby Borden
+- Victorian Era
+- Mutton
+voice:
+  engine: kokoro
+  voice: am_fenrir
+  speed: 1.15
+beats:
+- text: The Borden family was violently ill before the murders began.
+  emphasis:
+  - violently ill
+  visual:
+    source: url
+    url: https://upload.wikimedia.org/wikipedia/commons/7/71/Lizzie_Borden_1890.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    credit:
+      source: Wikimedia Commons
+      title: Lizzie Borden 1890.jpg
+      credit: Unknown authorUnknown author
+      license: Public domain
+      url: https://commons.wikimedia.org/wiki/File:Lizzie_Borden_1890.jpg
+    fallbacks:
+    - color
+    motion: zoom_out
+    focus_x: 0.5
+    focus_y: 0.35
+    box:
+    - 0.3
+    - 0.1
+    - 0.7
+    - 0.5
+- text: A stifling heatwave trapped Fall River in August 1892.
+  emphasis:
+  - stifling heatwave
+  sfx: whoosh
+  visual:
+    source: url
+    url: https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0b/Troy_Mills_FR.jpg/960px-Troy_Mills_FR.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
+    credit:
+      source: Wikimedia Commons
+      title: Troy Mills FR.jpg
+      credit: Unknown authorUnknown author
+      license: Public domain
+      url: https://commons.wikimedia.org/wiki/File:Troy_Mills_FR.jpg
+    fallbacks:
+    - card
+    - color
+    motion: pan_left
+    focus_x: 0.5
+    focus_y: 0.5
+    card:
+      kind: dateline
+      big: August 1892
+      small: Fall River
+- text: The household kept eating mutton left on the stove.
+  emphasis:
+  - mutton
+  visual:
+    source: url
+    url: https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ae/Hanging_Stove_Drier_NGM-v31-p477-A.jpg/960px-Hanging_Stove_Drier_NGM-v31-p477-A.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
+    credit:
+      source: Wikimedia Commons
+      title: Hanging Stove Drier NGM-v31-p477-A.jpg
+      credit: Charles Martin.
+      license: Public domain
+      url: https://commons.wikimedia.org/wiki/File:Hanging_Stove_Drier_NGM-v31-p477-A.jpg
+    fallbacks:
+    - color
+    motion: pan_down
+    focus_x: 0.5
+    focus_y: 0.8
+    box:
+    - 0.05
+    - 0.7
+    - 0.65
+    - 0.98
+- text: Abby Borden feared the family was being poisoned.
+  emphasis:
+  - poisoned
+  sfx: riser
+  visual:
+    source: url
+    url: https://upload.wikimedia.org/wikipedia/commons/b/b5/Lizzie_borden.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    credit:
+      source: Wikimedia Commons
+      title: Lizzie borden.jpg
+      credit: AnonymousUnknown author
+      license: Public domain
+      url: https://commons.wikimedia.org/wiki/File:Lizzie_borden.jpg
+    fallbacks:
+    - color
+    motion: pan_up
+    focus_x: 0.5
+    focus_y: 0.5
+- text: On August 4, a killer struck Abby 19 times.
+  emphasis:
+  - 19 times
+  sfx: whoosh
+  visual:
+    source: card
+    card:
+      kind: fact
+      big: 19 blows
+      small: to Abby Borden
+    motion: zoom_in
+- text: Andrew was killed next with eleven blows.
+  emphasis:
+  - eleven blows
+  visual:
+    source: url
+    url: https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ea/Borden_House_92_Second_St_Fall_River_Massachusetts_1892.jpg/960px-Borden_House_92_Second_St_Fall_River_Massachusetts_1892.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
+    credit:
+      source: Wikimedia Commons
+      title: Borden House 92 Second St Fall River Massachusetts 1892.jpg
+      credit: 1892 image
+      license: Public domain
+      url: https://commons.wikimedia.org/wiki/File:Borden_House_92_Second_St_Fall_River_Massachusetts_1892.jpg
+    fallbacks:
+    - card
+    - color
+    motion: pan_left
+    focus_x: 0.5
+    focus_y: 0.5
+    card:
+      kind: fact
+      big: 11 blows
+      small: to Andrew Borden
+- text: Lizzie was later seen burning a dress in the kitchen.
+  emphasis:
+  - burning a dress
+  sfx: pop
+  pause_after: 0.4
+  visual:
+    source: card
+    card:
+      kind: fact
+      big: Burning dress
+      small: in the stove
+    motion: zoom_in
+- text: The family was violently ill.
+  emphasis:
+  - violently ill
+  visual:
+    reuse: 1
+    motion: zoom_in
+    focus_x: 0.5
+    focus_y: 0.35
+depth_motion: true
+hook_text: THEY WERE ALREADY SICK

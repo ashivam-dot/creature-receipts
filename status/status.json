@@ -1,95 +1,57 @@
 {
-  "updated_at": "2026-10-07T17:14:34+05:30",
+  "updated_at": "2026-10-07T23:05:41+05:30",
   "day": 6,
   "result": "ok",
   "run": {
     "host": "modal",
-    "id": "ta-01M4B2AJ3GDXV35BD16X0JJBTR",
+    "id": "ta-01M4BPXQKDT0NY6FE7XZEM7M3R",
     "number": null,
     "trigger": "schedule",
-    "started_at": "2026-10-07T17:05:14+05:30",
-    "started_at_utc": "2026-10-07T11:35:14+00:00",
-    "seconds": 561
+    "started_at": "2026-10-07T23:05:11+05:30",
+    "started_at_utc": "2026-10-07T17:35:11+00:00",
+    "seconds": 30
   },
   "stages": [
     {
       "name": "deploy",
       "ok": true,
       "detail": "",
-      "seconds": 1.5
+      "seconds": 1.1
     },
     {
       "name": "collect",
       "ok": true,
-      "detail": "ep092 rejected (low scores: hook, accuracy; 4 speech problems); ep102 unfinished (Overloaded: every model in ('gemini-3.8-flash', 'gemini-3.7-flash', 'gemini-3.6-flash', 'gemini-3-flash-preview', 'gemini-flash-latest', 'ovh:Qwen3.5-397B-A17B') with quota left stayed overloaded for 25 minutes); ep103 unfinished (Overloaded: every model in ('gemini-3.8-flash', 'gemini-3.7-flash', 'gemini-3.6-flash', 'gemini-3-flash-preview', 'gemini-flash-latest', 'ovh:Qwen3.5-397B-A17B') with quota left stayed overloaded for 25 minutes); ep104 unfinished (VisualCheckFailed: ep104 beat 1: replacement image faile",
-      "seconds": 10.2
+      "detail": "ep102 unfinished (VisualCheckFailed: ep102 beat 1: no verified alternative (Different event)); ep103 ready; ep104 unfinished (VisualCheckFailed: ep104 beat 1: replacement image failed (modern-looking image for a historical scene)); ep105 rejected (low scores: visuals; 1 frame problems); ep106 ready",
+      "seconds": 16.8
     },
     {
-      "name": "timely topics",
+      "name": "start ep107",
       "ok": true,
-      "detail": "2 added",
-      "seconds": 531.4
+      "detail": "Mary Rose (1545): a survivor said she heeled in the wind while turning and water poured through gun ports left open after firing, as Henry VIII watched",
+      "seconds": 0.8
     },
     {
-      "name": "sourced accident topics",
+      "name": "start ep108",
       "ok": true,
-      "detail": "1 added",
-      "seconds": 0.1
+      "detail": "SS Californian (1912): it was close enough to see the Titanic's rockets, but its radio operator had gone to bed",
+      "seconds": 0.6
     },
     {
-      "name": "strongest stories",
+      "name": "start ep109",
       "ok": true,
-      "detail": "skipped: 143 open topics",
-      "seconds": 0.0
+      "detail": "Siege of Sidney Street (1911): Winston Churchill personally oversaw the gunfight and ordered firefighters not to save the burning building",
+      "seconds": 0.6
     },
     {
-      "name": "new topics",
+      "name": "start ep110",
       "ok": true,
-      "detail": "skipped: 143 open topics",
-      "seconds": 0.0
-    },
-    {
-      "name": "report",
-      "ok": true,
-      "detail": "day-006.md",
-      "seconds": 0.4
-    },
-    {
-      "name": "start ep102",
-      "ok": true,
-      "detail": "Silvertown explosion (1917): a fire at a TNT works beside crowded terraces set off about 50 tons of explosive at 6.52 pm",
-      "seconds": 5.9
-    },
-    {
-      "name": "start ep103",
-      "ok": true,
-      "detail": "Halifax Explosion (1917): a burning munitions ship blew up in the harbor, the largest man-made explosion before the atomic bomb",
-      "seconds": 1.9
-    },
-    {
-      "name": "start ep104",
-      "ok": true,
-      "detail": "Great Zimbabwe (c. 11th–15th centuries): colonial explorers refused to believe the massive granite walls were built by Africans, insisting for decades that the city must have been built by the Queen of Sheba",
-      "seconds": 2.2
-    },
-    {
-      "name": "start ep105",
-      "ok": true,
-      "detail": "Lizzie Borden (1892): the entire household spent the days before the murders suffering from severe food poisoning because they were eating mutton left out in a 90-degree heatwave",
-      "seconds": 1.8
-    },
-    {
-      "name": "start ep106",
-      "ok": true,
-      "detail": "Dust Bowl (1935): on Black Sunday, the air became so statically charged that it short-circuited car ignitions and knocked people to the ground with a single handshake",
-      "seconds": 1.9
+      "detail": "Ross Sea party (1914): the team spent two years dying of scurvy to lay supply depots for Shackleton, never knowing his ship had been crushed on the other side of the continent",
+      "seconds": 0.7
     }
   ],
   "errors": [],
   "owner_action": [],
   "notes": [
-    "ep102 stopped on Gemini's free tier being overloaded; it resumes in a later run",
-    "ep103 stopped on Gemini's free tier being overloaded; it resumes in a later run",
     "draft-only producer: no Buffer, Cloudinary, or Google publisher access"
   ],
   "inventory": {
@@ -100,11 +62,10 @@
     "target": 9,
     "making": [],
     "remote": [
-      "ep102",
-      "ep103",
-      "ep104",
-      "ep105",
-      "ep106"
+      "ep107",
+      "ep108",
+      "ep109",
+      "ep110"
     ]
   },
   "queue": [],
@@ -130,26 +91,27 @@
   ],
   "made": [
     {
-      "id": "ep092",
-      "outcome": "rejected",
-      "topic": "Tauredunum event (563): a mountain collapse into Lake Geneva created a massive inland tsunami that swept over the city walls of Geneva miles away",
-      "reason": "low scores: hook, accuracy; 4 speech problems"
-    },
-    {
       "id": "ep102",
       "outcome": "unfinished",
       "topic": "Silvertown explosion (1917): a fire at a TNT works beside crowded terraces set off about 50 tons of explosive at 6.52 pm",
-      "reason": "Overloaded: every model in ('gemini-3.8-flash', 'gemini-3.7-flash', 'gemini-3.6-flash', 'gemini-3-flash-preview', 'gemini-flash-latest', 'ovh:Qwen3.5-397B-A17B') with quota left stayed overloaded for 25 minutes",
+      "reason": "VisualCheckFailed: ep102 beat 1: no verified alternative (Different event)",
       "quota": false,
-      "overloaded": true
+      "overloaded": false
     },
     {
       "id": "ep103",
-      "outcome": "unfinished",
+      "outcome": "ready",
       "topic": "Halifax Explosion (1917): a burning munitions ship blew up in the harbor, the largest man-made explosion before the atomic bomb",
-      "reason": "Overloaded: every model in ('gemini-3.8-flash', 'gemini-3.7-flash', 'gemini-3.6-flash', 'gemini-3-flash-preview', 'gemini-flash-latest', 'ovh:Qwen3.5-397B-A17B') with quota left stayed overloaded for 25 minutes",
-      "quota": false,
-      "overloaded": true
+      "title": "Why Did Hundreds Watch the Burning Ship in Halifax? 😳",
+      "scores": {
+        "hook": 5,
+        "clarity": 5,
+        "payoff": 5,
+        "visuals": 5,
+        "loop": 4,
+        "accuracy": 5
+      },
+      "draft": "drafts/ep103-aeecb48ff8cbc5eda19a395b515c10d4c54c15ce52a52d5e21c376ba6b9448e3.mp4"
     },
     {
       "id": "ep104",
@@ -158,60 +120,71 @@
       "reason": "VisualCheckFailed: ep104 beat 1: replacement image failed (modern-looking image for a historical scene)",
       "quota": false,
       "overloaded": false
+    },
+    {
+      "id": "ep105",
+      "outcome": "rejected",
+      "topic": "Lizzie Borden (1892): the entire household spent the days before the murders suffering from severe food poisoning because they were eating mutton left out in a 90-degree heatwave",
+      "reason": "low scores: visuals; 1 frame problems"
+    },
+    {
+      "id": "ep106",
+      "outcome": "ready",
+      "topic": "Dust Bowl (1935): on Black Sunday, the air became so statically charged that it short-circuited car ignitions and knocked people to the ground with a single handshake",
+      "title": "Why Did the Sky Turn Black on a Sunday in 1935? ⚠️",
+      "scores": {
+        "hook": 4,
+        "clarity": 5,
+        "payoff": 4,
+        "visuals": 5,
+        "loop": 5,
+        "accuracy": 5
+      },
+      "draft": "drafts/ep106-b89b4dbbaee0ff37804747c3b03ffaaab06e84179d733a848fc8b94a627e0f5c.mp4"
     }
   ],
   "spawned": [
     {
-      "id": "ep102",
-      "topic": "Silvertown explosion (1917): a fire at a TNT works beside crowded terraces set off about 50 tons of explosive at 6.52 pm",
-      "call_id": "fc-01M4B2VPV7N4WJFXB0ZK6HPT56"
+      "id": "ep107",
+      "topic": "Mary Rose (1545): a survivor said she heeled in the wind while turning and water poured through gun ports left open after firing, as Henry VIII watched",
+      "call_id": "fc-01M4BPYS5WR5FAB4YWG8HW95Y1"
     },
     {
-      "id": "ep103",
-      "topic": "Halifax Explosion (1917): a burning munitions ship blew up in the harbor, the largest man-made explosion before the atomic bomb",
-      "call_id": "fc-01M4B2VRNT6YRQAWQ1E5T0MZ5M"
+      "id": "ep108",
+      "topic": "SS Californian (1912): it was close enough to see the Titanic's rockets, but its radio operator had gone to bed",
+      "call_id": "fc-01M4BPYSS5SZXFVMHDYYP7QPCF"
     },
     {
-      "id": "ep104",
-      "topic": "Great Zimbabwe (c. 11th–15th centuries): colonial explorers refused to believe the massive granite walls were built by Africans, insisting for decades that the city must have been built by the Queen of Sheba",
-      "call_id": "fc-01M4B2VTT2CQH8JA0KF5111KR1"
+      "id": "ep109",
+      "topic": "Siege of Sidney Street (1911): Winston Churchill personally oversaw the gunfight and ordered firefighters not to save the burning building",
+      "call_id": "fc-01M4BPYTCAJF1NQGQ1Q6AZP6NF"
     },
     {
-      "id": "ep105",
-      "topic": "Lizzie Borden (1892): the entire household spent the days before the murders suffering from severe food poisoning because they were eating mutton left out in a 90-degree heatwave",
-      "call_id": "fc-01M4B2VWJMRWR25DTHJNEACAR5"
-    },
-    {
-      "id": "ep106",
-      "topic": "Dust Bowl (1935): on Black Sunday, the air became so statically charged that it short-circuited car ignitions and knocked people to the ground with a single handshake",
-      "call_id": "fc-01M4B2VYEKW9QR4EKTCW6P2HAK"
+      "id": "ep110",
+      "topic": "Ross Sea party (1914): the team spent two years dying of scurvy to lay supply depots for Shackleton, never knowing his ship had been crushed on the other side of the continent",
+      "call_id": "fc-01M4BPYV1WJAXHRHAND757XG4K"
     }
   ],
   "in_cloud": [
     {
-      "id": "ep102",
-      "topic": "Silvertown explosion (1917): a fire at a TNT works beside crowded terraces set off about 50 tons of explosive at 6.52 pm",
-      "spawned_at": "2026-10-07T17:14:26+05:30"
+      "id": "ep107",
+      "topic": "Mary Rose (1545): a survivor said she heeled in the wind while turning and water poured through gun ports left open after firing, as Henry VIII watched",
+      "spawned_at": "2026-10-07T23:05:38+05:30"
     },
     {
-      "id": "ep103",
-      "topic": "Halifax Explosion (1917): a burning munitions ship blew up in the harbor, the largest man-made explosion before the atomic bomb",
-      "spawned_at": "2026-10-07T17:14:28+05:30"
+      "id": "ep108",
+      "topic": "SS Californian (1912): it was close enough to see the Titanic's rockets, but its radio operator had gone to bed",
+      "spawned_at": "2026-10-07T23:05:39+05:30"
     },
     {
-      "id": "ep104",
-      "topic": "Great Zimbabwe (c. 11th–15th centuries): colonial explorers refused to believe the massive granite walls were built by Africans, insisting for decades that the city must have been built by the Queen of Sheba",
-      "spawned_at": "2026-10-07T17:14:30+05:30"
+      "id": "ep109",
+      "topic": "Siege of Sidney Street (1911): Winston Churchill personally oversaw the gunfight and ordered firefighters not to save the burning building",
+      "spawned_at": "2026-10-07T23:05:39+05:30"
     },
     {
-      "id": "ep105",
-      "topic": "Lizzie Borden (1892): the entire household spent the days before the murders suffering from severe food poisoning because they were eating mutton left out in a 90-degree heatwave",
-      "spawned_at": "2026-10-07T17:14:32+05:30"
-    },
-    {
-      "id": "ep106",
-      "topic": "Dust Bowl (1935): on Black Sunday, the air became so statically charged that it short-circuited car ignitions and knocked people to the ground with a single handshake",
-      "spawned_at": "2026-10-07T17:14:34+05:30"
+      "id": "ep110",
+      "topic": "Ross Sea party (1914): the team spent two years dying of scurvy to lay supply depots for Shackleton, never knowing his ship had been crushed on the other side of the continent",
+      "spawned_at": "2026-10-07T23:05:40+05:30"
     }
   ],
   "published": [],
@@ -219,33 +192,33 @@
   "failed_posts": [],
   "not_live": [],
   "llm": {
-    "calls": 13,
+    "calls": 28,
     "by_model": {
-      "gemini-3-flash-preview": 4,
-      "gemini-3.5-flash-lite": 8,
-      "gemini-3.6-flash": 1
+      "gemini-3.7-flash": 4,
+      "gemini-3-flash-preview": 16,
+      "gemini-3.5-flash-lite": 8
     },
     "out_of_quota": []
   },
   "renders": {
-    "modal": 4,
+    "modal": 7,
     "runner": 0
   },
   "daily_done": "2026-10-07",
   "minutes_this_month": 68.0,
   "minutes_budget": 2000,
   "modal_cost": {
-    "metered": 9.55,
+    "metered": 9.83,
     "billed": 0.0
   },
   "modal_credit": 30.0,
   "capacity": {
-    "cloud": 153,
+    "cloud": 151,
     "runner": 0,
     "runner_minutes": 0,
-    "modal_credit_left": 18.46
+    "modal_credit_left": 18.17
   },
   "made_here": 0,
-  "open_topics": 141,
-  "parked_topics": 37
+  "open_topics": 137,
+  "parked_topics": 40
 }

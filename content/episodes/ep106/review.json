@@ -1,0 +1,56 @@
+{
+  "rounds": [
+    {
+      "at": "2026-10-07T17:42:23+05:30",
+      "check": {
+        "duration": 25.33,
+        "words": 68,
+        "integrated_lufs": -14.4,
+        "true_peak_dbfs": -1.9,
+        "warnings": [],
+        "speech_differences": [],
+        "speech_error": null,
+        "sources": [
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons"
+        ],
+        "speech_verification": {
+          "heard": "April 14, 1935, dawned with a clear blue sky. By afternoon, birds and jackrabbits fled the Oklahoma plains. A wall of 300,000 tons of topsoil struck Oklahoma. It turned so black people could not see their hands. Families hung wet sheets and rubbed Vaseline in their nostrils. Woody Guthrie watched the dust turn day into total night. They waited in darkness for a clear blue sky.",
+          "model": "small.en",
+          "media_sha256": "b89b4dbbaee0ff37804747c3b03ffaaab06e84179d733a848fc8b94a627e0f5c",
+          "primary_differences": [],
+          "differences": []
+        }
+      },
+      "media_sha256": "b89b4dbbaee0ff37804747c3b03ffaaab06e84179d733a848fc8b94a627e0f5c",
+      "scores": {
+        "hook": 4,
+        "clarity": 5,
+        "payoff": 4,
+        "visuals": 5,
+        "loop": 5,
+        "accuracy": 5
+      },
+      "notes": {
+        "hook": "The contrast between the calm morning and impending disaster creates curiosity, supported well by the on-screen text.",
+        "clarity": "Chronological progression from clear morning to sudden blackout is effortless to follow in a single listen.",
+        "payoff": "Connecting the disaster to Woody Guthrie provides a solid historical anchor before closing into the loop.",
+        "visuals": "Exceptional archival photography from the exact date of the storm creates an authentic and atmospheric backdrop.",
+        "loop": "The final phrase 'for a clear blue sky' flows directly into the opening line with seamless poetic symmetry.",
+        "accuracy": "Every line is strictly supported by the research claims with zero exaggeration or disputed figures."
+      },
+      "frames": [],
+      "speech": [],
+      "rewrite": [],
+      "better_than_last": "Features exact-day archival photography of the approaching storm front that gives the script immediate historical authenticity.",
+      "judge": "gemini-3.7-flash",
+      "passed": true
+    }
+  ],
+  "best_round": 1
+}

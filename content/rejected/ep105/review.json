@@ -1,0 +1,273 @@
+{
+  "rounds": [
+    {
+      "at": "2026-10-07T17:23:36+05:30",
+      "check": {
+        "duration": 26.53,
+        "words": 71,
+        "integrated_lufs": -14.4,
+        "true_peak_dbfs": -1.8,
+        "warnings": [],
+        "speech_differences": [
+          "'a' heard as '(nothing)' after 'the murders began'",
+          "'the' heard as '(nothing)' after 'in the kitchen'",
+          "base.en: 'on' heard as 'when' after 'was being poisoned'",
+          "base.en: 'dress' heard as 'address' after 'seen burning a'"
+        ],
+        "speech_error": null,
+        "sources": [
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "designed card",
+          "designed card",
+          "Wikimedia Commons",
+          "Wikimedia Commons"
+        ],
+        "speech_verification": {
+          "heard": "The Borden family was violently ill before the murders began. 90-degree heatwave trapped Fall River in August 1892. The household kept eating a mutton roast left on the stove. Abby Borden feared the family was being poisoned. On August 4, a killer struck Abby 19 times. Andrew was killed next with a hatchet while napping. Lizzie was later seen burning a dress in the kitchen. Family was violently ill.",
+          "model": "small.en",
+          "media_sha256": "8616617dba275963464dd2f4ba8cbae4696453f4828d017be3c44294572591d2",
+          "primary_differences": [
+            "'a' heard as '(nothing)' after 'the murders began'",
+            "'the' heard as '(nothing)' after 'in the kitchen'"
+          ],
+          "differences": [
+            "'a' heard as '(nothing)' after 'the murders began'",
+            "'the' heard as '(nothing)' after 'in the kitchen'",
+            "base.en: 'on' heard as 'when' after 'was being poisoned'",
+            "base.en: 'dress' heard as 'address' after 'seen burning a'"
+          ],
+          "corroboration": {
+            "model": "base.en",
+            "heard": "The Borden family was violently ill before the murders began. 90-degree heatwave trapped Fall River in August 1892. The household kept eating a mutton roast left on the stove. Abby Borden feared the family was being poisoned. When August 4, a killer struck Abby 19 times. Andrew was killed next with a hatchet while napping. Lizzie was later seen burning a address in the kitchen. Family was violently ill.",
+            "differences": [
+              "'a' heard as '(nothing)' after 'the murders began'",
+              "'on' heard as 'when' after 'was being poisoned'",
+              "'dress' heard as 'address' after 'seen burning a'",
+              "'the' heard as '(nothing)' after 'in the kitchen'"
+            ],
+            "resolved": []
+          }
+        }
+      },
+      "media_sha256": "8616617dba275963464dd2f4ba8cbae4696453f4828d017be3c44294572591d2",
+      "scores": {
+        "hook": 5,
+        "clarity": 5,
+        "payoff": 4,
+        "visuals": 3,
+        "loop": 5,
+        "accuracy": 4
+      },
+      "notes": {
+        "hook": "Strong start that establishes the mystery immediately without being overly graphic.",
+        "clarity": "The sequence from the initial illness to the murders is very easy to follow.",
+        "payoff": "The context of the illness adds a layer of dread to the well-known murder story.",
+        "visuals": "The bright, colorful postcard in beat 7 is anachronistic and ruins the grave tone.",
+        "loop": "The verbal and visual transition from the final beat back to the first is seamless.",
+        "accuracy": "The term ninety-degree is not supported by the research claims, which only mention stifling heat."
+      },
+      "frames": [
+        {
+          "beat": 4,
+          "problem": "The stove pictured appears to be a later porcelain model (Universal brand) rather than a 1892 cast iron stove."
+        },
+        {
+          "beat": 7,
+          "problem": "The colorful mid-20th-century postcard is anachronistic and completely clashes with the grave tone of the story."
+        }
+      ],
+      "speech": [],
+      "rewrite": [
+        "Beat 2: Change 'A ninety-degree heatwave' to 'A stifling heatwave' to align with the wording of the research claims.",
+        "Beat 7: Replace the postcard image with an archival photo of the Borden kitchen or a period-appropriate Victorian stove."
+      ],
+      "better_than_last": "This Short provides better narrative context than the Winton episode, though it lacks the visual consistency of the Arnhem or Fetterman shorts.",
+      "judge": "gemini-3-flash-preview",
+      "passed": false
+    },
+    {
+      "at": "2026-10-07T17:26:59+05:30",
+      "check": {
+        "duration": 26.56,
+        "words": 71,
+        "integrated_lufs": -14.4,
+        "true_peak_dbfs": -1.8,
+        "warnings": [],
+        "speech_differences": [
+          "'a' heard as '(nothing)' after 'the murders began'",
+          "'the' heard as '(nothing)' after 'in the kitchen'",
+          "base.en: 'on' heard as 'when' after 'was being poisoned'",
+          "base.en: 'lizzie' heard as 'lizzy' after 'hatchet while napping'",
+          "base.en: 'dress' heard as 'address' after 'seen burning a'"
+        ],
+        "speech_error": null,
+        "sources": [
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "designed card",
+          "designed card",
+          "Wikimedia Commons",
+          "Wikimedia Commons"
+        ],
+        "speech_verification": {
+          "heard": "The Borden family was violently ill before the murders began. 90-degree heatwave trapped Fall River in August 1892. The household kept eating a mutton roast left on the stove. Abby Borden feared the family was being poisoned. On August 4, a killer struck Abby 19 times. Andrew was killed next with a hatchet while napping. Lizzie was later seen burning a dress in the kitchen. Family was violently ill.",
+          "model": "small.en",
+          "media_sha256": "278d9b5ce65d7c16120a8c22a33131559ec421d970d00174aa80dc31d9e893bb",
+          "primary_differences": [
+            "'a' heard as '(nothing)' after 'the murders began'",
+            "'the' heard as '(nothing)' after 'in the kitchen'"
+          ],
+          "differences": [
+            "'a' heard as '(nothing)' after 'the murders began'",
+            "'the' heard as '(nothing)' after 'in the kitchen'",
+            "base.en: 'on' heard as 'when' after 'was being poisoned'",
+            "base.en: 'lizzie' heard as 'lizzy' after 'hatchet while napping'",
+            "base.en: 'dress' heard as 'address' after 'seen burning a'"
+          ],
+          "corroboration": {
+            "model": "base.en",
+            "heard": "The Borden family was violently ill before the murders began. 90-degree heatwave trapped Fall River in August 1892. The household kept eating a mutton roast left on the stove. Abby Borden feared the family was being poisoned. When August 4, a killer struck Abby 19 times. Andrew was killed next with a hatchet while napping. Lizzy was later seen burning a address in the kitchen. Family was violently ill.",
+            "differences": [
+              "'a' heard as '(nothing)' after 'the murders began'",
+              "'on' heard as 'when' after 'was being poisoned'",
+              "'lizzie' heard as 'lizzy' after 'hatchet while napping'",
+              "'dress' heard as 'address' after 'seen burning a'",
+              "'the' heard as '(nothing)' after 'in the kitchen'"
+            ],
+            "resolved": []
+          }
+        }
+      },
+      "media_sha256": "278d9b5ce65d7c16120a8c22a33131559ec421d970d00174aa80dc31d9e893bb",
+      "scores": {
+        "hook": 4,
+        "clarity": 5,
+        "payoff": 4,
+        "visuals": 3,
+        "loop": 5,
+        "accuracy": 3
+      },
+      "notes": {
+        "hook": "The on-screen text and opening line immediately establish a dark, specific mystery.",
+        "clarity": "The narrative arc from the heatwave to the mutton to the murders is very easy to follow.",
+        "payoff": "Connecting the mundane detail of spoiled meat to a famous tragedy is a strong historical twist.",
+        "visuals": "Several images are either modern tourist photos or anachronistic in style for 1892.",
+        "loop": "The repetition of the first and last line creates a perfectly seamless replay loop.",
+        "accuracy": "The script includes a specific temperature and the detail of napping which are not in the research."
+      },
+      "frames": [
+        {
+          "beat": 4,
+          "problem": "Modern photo of a kitchen in England (Osterley House), not the Borden home or a period-accurate archive."
+        },
+        {
+          "beat": 7,
+          "problem": "Anachronistic mid-20th-century 'Large Letter' postcard style is inappropriate for a story set in 1892."
+        }
+      ],
+      "speech": [],
+      "rewrite": [
+        "Beat 2: Change 'ninety-degree heatwave' to 'stifling heatwave' to match research claim 2.",
+        "Beat 6: Change 'while napping' to 'with eleven blows' to match research claim 7 and the on-screen text."
+      ],
+      "better_than_last": "The focus on the pre-murder illness provides a much more specific and engaging hook than a general summary of the crime.",
+      "judge": "gemini-3-flash-preview",
+      "passed": false
+    },
+    {
+      "at": "2026-10-07T17:36:10+05:30",
+      "check": {
+        "duration": 25.37,
+        "words": 67,
+        "integrated_lufs": -14.4,
+        "true_peak_dbfs": -1.8,
+        "warnings": [],
+        "speech_differences": [
+          "'a' heard as '(nothing)' after 'the murders began'",
+          "'the' heard as '(nothing)' after 'in the kitchen'",
+          "base.en: 'abby' heard as 'abbey' after 'on the stove'",
+          "base.en: 'on' heard as 'when' after 'was being poisoned'",
+          "base.en: 'abby' heard as 'abbey' after 'a killer struck'",
+          "base.en: 'the' heard as 'then' after 'in the kitchen'"
+        ],
+        "speech_error": null,
+        "sources": [
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "designed card",
+          "Wikimedia Commons",
+          "designed card",
+          "Wikimedia Commons"
+        ],
+        "speech_verification": {
+          "heard": "The Borden family was violently ill before the murders began. Stifling heatwave trapped Fall River in August 1892. The household kept eating mutton left on the stove. Abby Borden feared the family was being poisoned. On August 4, a killer struck Abby 19 times. Andrew was killed next with 11 blows. Lizzie was later seen burning a dress in the kitchen. Family was violently ill.",
+          "model": "small.en",
+          "media_sha256": "714afa1050f71f32144a76ce8af8937bb4f99ea3bf886485f2cce5f98d1e9e32",
+          "primary_differences": [
+            "'a' heard as '(nothing)' after 'the murders began'",
+            "'the' heard as '(nothing)' after 'in the kitchen'"
+          ],
+          "differences": [
+            "'a' heard as '(nothing)' after 'the murders began'",
+            "'the' heard as '(nothing)' after 'in the kitchen'",
+            "base.en: 'abby' heard as 'abbey' after 'on the stove'",
+            "base.en: 'on' heard as 'when' after 'was being poisoned'",
+            "base.en: 'abby' heard as 'abbey' after 'a killer struck'",
+            "base.en: 'the' heard as 'then' after 'in the kitchen'"
+          ],
+          "corroboration": {
+            "model": "base.en",
+            "heard": "The Borden family was violently ill before the murders began. Stifling heatwave trapped Fall River in August 1892. The household kept eating mutton left on the stove. Abbey Borden feared the family was being poisoned. When August 4, a killer struck Abbey 19 times. Andrew was killed next with 11 blows. Lizzie was later seen burning a dress in the kitchen. Then, family was violently ill.",
+            "differences": [
+              "'a' heard as '(nothing)' after 'the murders began'",
+              "'abby' heard as 'abbey' after 'on the stove'",
+              "'on' heard as 'when' after 'was being poisoned'",
+              "'abby' heard as 'abbey' after 'a killer struck'",
+              "'the' heard as 'then' after 'in the kitchen'"
+            ],
+            "resolved": []
+          }
+        }
+      },
+      "media_sha256": "714afa1050f71f32144a76ce8af8937bb4f99ea3bf886485f2cce5f98d1e9e32",
+      "scores": {
+        "hook": 5,
+        "clarity": 5,
+        "payoff": 4,
+        "visuals": 3,
+        "loop": 5,
+        "accuracy": 5
+      },
+      "notes": {
+        "hook": "The focus on the pre-murder illness creates an immediate and effective curiosity gap.",
+        "clarity": "The narrative flow is excellent, moving clearly from environmental factors to specific victim details.",
+        "payoff": "The connection between the spoiled mutton and the suspicions of poisoning provides a satisfying historical context for the murders.",
+        "visuals": "Beat 4 incorrectly uses a portrait of Lizzie Borden while narrating specifically about Abby Borden.",
+        "loop": "The repetition of the family's illness creates a perfectly seamless and haunting loop back to the start.",
+        "accuracy": "Every detail, including the dates and specific blow counts, is accurately supported by the high-confidence research claims."
+      },
+      "frames": [
+        {
+          "beat": 4,
+          "problem": "The frame shows Lizzie Borden, but the narration refers to Abby Borden; the two women were distinct individuals and have separate archival photos."
+        }
+      ],
+      "speech": [],
+      "rewrite": [],
+      "better_than_last": "This Short features a much more effective and seamless narrative loop compared to the abrupt ending of the rescue train episode.",
+      "judge": "gemini-3-flash-preview",
+      "passed": false
+    }
+  ],
+  "best_round": 3,
+  "verdict": "rejected",
+  "reason": "low scores: visuals; 1 frame problems",
+  "rejected_at": "2026-10-07T17:36:10+05:30"
+}

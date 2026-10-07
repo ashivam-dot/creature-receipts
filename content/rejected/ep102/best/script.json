@@ -1,0 +1,227 @@
+{
+  "hooks": [
+    {
+      "style": "statement",
+      "text": "A strange orange light flickered over the East London docks."
+    },
+    {
+      "style": "question",
+      "text": "Why did a shockwave from London reach a town in Norfolk?"
+    },
+    {
+      "style": "number",
+      "text": "Fifty tons of TNT sat just yards from crowded London homes."
+    }
+  ],
+  "hook_style": "statement",
+  "structure": "mystery",
+  "title": "Why Did the Silvertown Explosion Stay Secret for Decades?",
+  "description": "The 1917 Silvertown explosion was London's largest blast, caused by a fire at a crowded docklands TNT factory.",
+  "hashtags": [
+    "#history",
+    "#silvertown",
+    "#london"
+  ],
+  "tags": [
+    "silvertown",
+    "explosion",
+    "1917",
+    "london",
+    "history",
+    "tragedy"
+  ],
+  "beats": [
+    {
+      "text": "A strange orange light flickered over the East London docks.",
+      "emphasis": [
+        "orange light",
+        "East London"
+      ],
+      "sfx": "none",
+      "pause_after": 0.12,
+      "claims": [
+        1,
+        2
+      ],
+      "visual": "Photograph of a fire at a factory in Silvertown, 1917",
+      "subjects": [
+        "Brunner Mond",
+        "Silvertown"
+      ],
+      "year": 1917,
+      "queries": [
+        "Silvertown explosion 1917 fire",
+        "Brunner Mond factory"
+      ],
+      "card": {
+        "kind": "none",
+        "big": "",
+        "small": ""
+      }
+    },
+    {
+      "text": "At 6.52 pm, shockwaves from Silvertown reached houses in Norfolk.",
+      "emphasis": [
+        "6.52 pm",
+        "Norfolk"
+      ],
+      "sfx": "whoosh",
+      "pause_after": 0.12,
+      "claims": [
+        1,
+        5
+      ],
+      "visual": "Vintage map showing the distance between London and Norfolk",
+      "subjects": [
+        "Silvertown",
+        "Norfolk"
+      ],
+      "year": 1917,
+      "queries": [
+        "map of East Anglia and London",
+        "King's Lynn Norfolk"
+      ],
+      "card": {
+        "kind": "none",
+        "big": "",
+        "small": ""
+      }
+    },
+    {
+      "text": "Neighbors feared a German air raid or secret sabotage.",
+      "emphasis": [
+        "air raid",
+        "sabotage"
+      ],
+      "sfx": "none",
+      "pause_after": 0.12,
+      "claims": [
+        7
+      ],
+      "visual": "Illustration of a Gotha G.IV German bomber over London, 1917",
+      "subjects": [
+        "Gotha G.IV",
+        "Sabotage"
+      ],
+      "year": 1917,
+      "queries": [
+        "German air raid London WWI",
+        "WWI sabotage poster"
+      ],
+      "card": {
+        "kind": "none",
+        "big": "",
+        "small": ""
+      }
+    },
+    {
+      "text": "Instead, 50 tons of TNT detonated in the crowded factory.",
+      "emphasis": [
+        "50 tons",
+        "TNT"
+      ],
+      "sfx": "pop",
+      "pause_after": 0.4,
+      "claims": [
+        1,
+        6
+      ],
+      "visual": "Photograph of the destruction caused by the Silvertown explosion, 1917",
+      "subjects": [
+        "Silvertown explosion"
+      ],
+      "year": 1917,
+      "queries": [
+        "Silvertown explosion damage",
+        "Royal Victoria Dock 1917"
+      ],
+      "card": {
+        "kind": "fact",
+        "big": "50 TONS",
+        "small": "of detonated TNT"
+      }
+    },
+    {
+      "text": "The government report into the 73 deaths stayed secret for decades.",
+      "emphasis": [
+        "secret",
+        "decades"
+      ],
+      "sfx": "riser",
+      "pause_after": 0.12,
+      "claims": [
+        1,
+        4
+      ],
+      "visual": "Photograph of an official government document with a TOP SECRET stamp",
+      "subjects": [
+        "National Archives (United Kingdom)",
+        "Official Secrets Act 1911"
+      ],
+      "year": 1950,
+      "queries": [
+        "top secret document",
+        "uk national archives document"
+      ],
+      "card": {
+        "kind": "fact",
+        "big": "1950s",
+        "small": "Report finally released"
+      }
+    },
+    {
+      "text": "It revealed officials ignored warnings because they deemed production worth the risk.",
+      "emphasis": [
+        "ignored warnings",
+        "worth the risk"
+      ],
+      "sfx": "pop",
+      "pause_after": 0.4,
+      "claims": [
+        6
+      ],
+      "visual": "Photograph of a First World War era chemist in a laboratory, 1915",
+      "subjects": [
+        "Ministry of Munitions"
+      ],
+      "year": 1917,
+      "queries": [
+        "WWI ammunition factory worker",
+        "WWI chemist laboratory"
+      ],
+      "card": {
+        "kind": "none",
+        "big": "",
+        "small": ""
+      }
+    },
+    {
+      "text": "Witnesses never forgot how the orange light first appeared.",
+      "emphasis": [
+        "orange light"
+      ],
+      "sfx": "whoosh",
+      "pause_after": 0.12,
+      "claims": [
+        1
+      ],
+      "visual": "Photograph of the Silvertown war memorial in Royal Victoria Gardens",
+      "subjects": [
+        "Royal Victoria Gardens"
+      ],
+      "year": 1917,
+      "queries": [
+        "Silvertown explosion memorial",
+        "Royal Victoria Gardens memorial"
+      ],
+      "card": {
+        "kind": "none",
+        "big": "",
+        "small": ""
+      }
+    }
+  ],
+  "hook_text": "THE SECRET EXPLOSION",
+  "loop": true,
+  "better_than_last": "Applied the 'mystery' structure by starting with a strange visual (orange light) and concluding with the hidden warnings revealed decades later."
+}

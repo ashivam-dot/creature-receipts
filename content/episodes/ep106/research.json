@@ -1,0 +1,275 @@
+{
+  "viable": true,
+  "reason": "14 distinct claims are supported by verbatim quotes from at least two different sites, providing sufficient detail for a 45-second story.",
+  "story": "On April 14, 1935, a day known as 'Black Sunday,' the Southern Plains experienced the most severe 'black blizzard' in American history. The morning dawned clear and warm, leading residents to believe the years of drought were easing. However, a massive cold front from Canada soon collided with warm air, whipping up a wall of dust that displaced 300,000 tons of topsoil. As the storm approached, the only warning was the crackle of static electricity and flocks of birds fleeing in terror. Day instantly became night; the dust was so thick that visibility dropped to where people could not see their own hands. Families huddled in darkness, hanging wet sheets over doorways and rubbing Vaseline in their nostrils to keep from suffocating. This catastrophic event, documented by a 22-year-old Woody Guthrie, permanently named the region the 'Dust Bowl' and forced millions to flee their buried farms for California.",
+  "angle": "On Black Sunday, a day that began with clear blue skies, a wall of 300,000 tons of topsoil turned day to total night, forcing survivors to rub Vaseline in their nostrils and hang wet sheets just to breathe the choking air.",
+  "claims": [
+    {
+      "claim": "The day of the storm initially began with clear and calm weather.",
+      "sources": [
+        "S4",
+        "S5"
+      ],
+      "evidence": [
+        {
+          "source": "S4",
+          "quote": "the skies finally cleared by the morning of April 14, 1935, and the winds died down"
+        },
+        {
+          "source": "S5",
+          "quote": "April 14, 1935, dawned clear across the plains."
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim": "The Black Sunday storm displaced an estimated 300,000 tons of topsoil.",
+      "sources": [
+        "S1",
+        "S4"
+      ],
+      "evidence": [
+        {
+          "source": "S1",
+          "quote": "It is estimated that 300,000 tons of topsoil were displaced from the prairie area."
+        },
+        {
+          "source": "S4",
+          "quote": "Later estimates placed the amount of displaced topsoil at 300,000 tons"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim": "Flocks of birds and other small animals fled in terror before the dust cloud arrived.",
+      "sources": [
+        "S3",
+        "S4"
+      ],
+      "evidence": [
+        {
+          "source": "S3",
+          "quote": "Birds, mice and jackrabbits fled for their lives; many didn’t make it."
+        },
+        {
+          "source": "S4",
+          "quote": "Birds, mice and jackrabbits fled for their lives; many didn’t make it."
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim": "The dust was so dense that people could not see their own hands in front of their faces.",
+      "sources": [
+        "S3",
+        "S4"
+      ],
+      "evidence": [
+        {
+          "source": "S3",
+          "quote": "It got so dark that you couldn’t see your hand before your face"
+        },
+        {
+          "source": "S4",
+          "quote": "you couldn’t see your hand before your face"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim": "Folksinger Woody Guthrie was 22 years old when he experienced Black Sunday.",
+      "sources": [
+        "S3",
+        "S4"
+      ],
+      "evidence": [
+        {
+          "source": "S3",
+          "quote": "Woody Guthrie, who weathered Black Sunday at the age of 22"
+        },
+        {
+          "source": "S4",
+          "quote": "Folksinger Woody Guthrie, then 22"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim": "Residents tried to protect themselves by putting Vaseline in their nostrils.",
+      "sources": [
+        "S4",
+        "S7"
+      ],
+      "evidence": [
+        {
+          "source": "S4",
+          "quote": "protect themselves by rubbing Vaseline into their nostrils"
+        },
+        {
+          "source": "S7",
+          "quote": "put Vaseline in their nostrils."
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim": "Families hung wet sheets over their doorways and windows to filter out the dust.",
+      "sources": [
+        "S4",
+        "S7"
+      ],
+      "evidence": [
+        {
+          "source": "S4",
+          "quote": "hanging wet sheets over their doorways."
+        },
+        {
+          "source": "S7",
+          "quote": "residents would hang wet sheets in the windows and doorways to catch the dust."
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim": "The Oklahoma and Texas panhandles were among the areas most severely affected.",
+      "sources": [
+        "S1",
+        "S7"
+      ],
+      "evidence": [
+        {
+          "source": "S1",
+          "quote": "conditions were the most severe in the Oklahoma and Texas panhandles"
+        },
+        {
+          "source": "S7",
+          "quote": "Particularly hard hit were western Kansas, eastern Colorado, northeastern New Mexico, and the Oklahoma and Texas panhandles."
+        }
+      ],
+      "confidence": "high"
+    }
+  ],
+  "disputed": [
+    "The total number of migrants who left the Plains (S2 states 3.5 million, while S7 states 2.5 million).",
+    "Whether Robert Geiger or his editor Edward Stanley primarily coined the term 'Dust Bowl'.",
+    "The exact degree of the temperature drop during the storm (S4 specifies 30 degrees, others just say it dropped)."
+  ],
+  "visuals": [
+    {
+      "subject": "Wall of dust approaching a town on Black Sunday",
+      "queries": [
+        "Black Sunday April 14 1935 dust storm",
+        "Black Sunday dust storm Amarillo"
+      ]
+    },
+    {
+      "subject": "Dorothea Lange's Migrant Mother photograph",
+      "queries": [
+        "Dorothea Lange Migrant Mother 1936",
+        "Florence Owens Thompson portrait"
+      ]
+    },
+    {
+      "subject": "Woody Guthrie with his guitar in the 1930s",
+      "queries": [
+        "Woody Guthrie 1943 guitar",
+        "Woody Guthrie Pampa Texas"
+      ]
+    },
+    {
+      "subject": "Map of the US Dust Bowl region",
+      "queries": [
+        "Dust Bowl map Oklahoma Texas panhandle",
+        "Great Plains Dust Bowl area map"
+      ]
+    },
+    {
+      "subject": "Farm equipment buried in dust drifts",
+      "queries": [
+        "Dust Bowl buried tractor",
+        "Dust Bowl buried machinery South Dakota"
+      ]
+    },
+    {
+      "subject": "A 'jalopy' car loaded with a family's possessions",
+      "queries": [
+        "Dust Bowl jalopy migrant car",
+        "Migrants heading to California 1930s car"
+      ]
+    },
+    {
+      "subject": "Dust storm over Boise City, Oklahoma",
+      "queries": [
+        "Dust storm Boise City 1935",
+        "Black Sunday Oklahoma dust cloud"
+      ]
+    },
+    {
+      "subject": "An abandoned farmhouse surrounded by sand-like dust",
+      "queries": [
+        "Dust Bowl abandoned house Oklahoma",
+        "Arthur Rothstein Dust Bowl farm"
+      ]
+    },
+    {
+      "subject": "Soil Conservation Service maps or researchers",
+      "queries": [
+        "Soil Conservation Service 1930s historical",
+        "Hugh Hammond Bennett soil conservation"
+      ]
+    },
+    {
+      "subject": "Children wearing dust masks or goggles",
+      "queries": [
+        "Dust Bowl children masks",
+        "Red Cross dust mask 1930s"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "label": "S1",
+      "url": "https://en.wikipedia.org/wiki/Black_Sunday_(storm)",
+      "title": "Black Sunday (storm)",
+      "site": "wikipedia.org"
+    },
+    {
+      "label": "S2",
+      "url": "https://en.wikipedia.org/wiki/Dust_Bowl",
+      "title": "Dust Bowl",
+      "site": "wikipedia.org"
+    },
+    {
+      "label": "S3",
+      "url": "https://www.smithsonianmag.com/smart-news/1000-mile-long-storm-showed-horror-life-dust-bowl-180962847/",
+      "title": "This 1000-Mile Long Storm Showed the Horror of Life in the Dust Bowl",
+      "site": "smithsonianmag.com"
+    },
+    {
+      "label": "S4",
+      "url": "https://www.history.com/articles/remembering-black-sunday",
+      "title": "What Happened on Black Sunday? | HISTORY",
+      "site": "history.com"
+    },
+    {
+      "label": "S5",
+      "url": "https://www.pbs.org/wgbh/americanexperience/features/dust-bowl-black-sunday/",
+      "title": "Black Sunday | American Experience | PBS",
+      "site": "pbs.org"
+    },
+    {
+      "label": "S6",
+      "url": "https://web.archive.org/web/20141108023023/http://www.washingtonpost.com/news/act-four/wp/2014/11/06/how-ken-burns-surprise-role-in-interstellar-explains-the-movie/",
+      "title": "How Ken Burns’ surprise role in ‘Interstellar’ explains the movie",
+      "site": "washingtonpost.com"
+    },
+    {
+      "label": "S7",
+      "url": "http://www.encyclopedia.com/article-1G2-3424800020/dust-bowl-1931-1939.html",
+      "title": "Dust Bowl 1931-1939 | Encyclopedia.com",
+      "site": "encyclopedia.com"
+    }
+  ],
+  "topic": "Dust Bowl (1935): on Black Sunday, the air became so statically charged that it short-circuited car ignitions and knocked people to the ground with a single handshake",
+  "series": "Warnings Ignored"
+}
