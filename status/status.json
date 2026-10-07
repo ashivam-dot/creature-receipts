@@ -1,52 +1,52 @@
 {
-  "updated_at": "2026-10-07T05:05:47+05:30",
+  "updated_at": "2026-10-07T11:05:52+05:30",
   "day": 6,
   "result": "ok",
   "run": {
     "host": "modal",
-    "id": "ta-01M49S42G7H0AF5FHBA27YAZGR",
+    "id": "ta-01M4ADQB04YN5EFANH3ZATZWVR",
     "number": null,
     "trigger": "schedule",
-    "started_at": "2026-10-07T05:05:11+05:30",
-    "started_at_utc": "2026-10-06T23:35:11+00:00",
-    "seconds": 36
+    "started_at": "2026-10-07T11:05:14+05:30",
+    "started_at_utc": "2026-10-07T05:35:14+00:00",
+    "seconds": 38
   },
   "stages": [
     {
       "name": "deploy",
       "ok": true,
       "detail": "",
-      "seconds": 2.0
+      "seconds": 2.7
     },
     {
       "name": "collect",
       "ok": true,
-      "detail": "ep092 unfinished (OutOfQuota: no model in ('gemini-3.8-flash', 'gemini-3.7-flash', 'gemini-3.6-flash', 'gemini-3-flash-preview', 'gemini-flash-latest', 'ovh:Qwen3.5-397B-A17B') has free quota left today); ep101 rejected (research: only 3 claims have verified quotes from two different sites); ep102 unfinished (RuntimeError: ep102 script still breaks the rules: [\"Give hook_text: 2 to 6 words, 40 characters or fewer, no emoji, shown over beat 1 from its first frame. It must add a time, number, or the stakes rather than repeat the spoken hook's words.\"]); ep103 unfinished (OutOfQuota: no model in ",
-      "seconds": 13.9
+      "detail": "ep092 unfinished (OutOfQuota: no model in ('gemini-3.8-flash', 'gemini-3.7-flash', 'gemini-3.6-flash', 'gemini-3-flash-preview', 'gemini-flash-latest', 'ovh:Qwen3.5-397B-A17B') has free quota left today); ep102 unfinished (VisualCheckFailed: ep102 beat 1: replacement image failed (wrong period photo from 1944 instead of 1917)); ep103 unfinished (OutOfQuota: no model in ('gemini-3.8-flash', 'gemini-3.7-flash', 'gemini-3.6-flash', 'gemini-3-flash-preview', 'gemini-flash-latest', 'ovh:Qwen3.5-397B-A17B') has free quota left today); ep104 unfinished (VisualCheckFailed: ep104 beat 1: replacement im",
+      "seconds": 14.3
     },
     {
       "name": "start ep092",
       "ok": true,
       "detail": "Tauredunum event (563): a mountain collapse into Lake Geneva created a massive inland tsunami that swept over the city walls of Geneva miles away",
-      "seconds": 2.5
+      "seconds": 2.4
     },
     {
       "name": "start ep102",
       "ok": true,
       "detail": "Silvertown explosion (1917): a fire at a TNT works beside crowded terraces set off about 50 tons of explosive at 6.52 pm",
-      "seconds": 1.9
+      "seconds": 2.3
     },
     {
       "name": "start ep103",
       "ok": true,
       "detail": "Halifax Explosion (1917): a burning munitions ship blew up in the harbor, the largest man-made explosion before the atomic bomb",
-      "seconds": 1.9
+      "seconds": 3.0
     },
     {
       "name": "start ep104",
       "ok": true,
       "detail": "Great Zimbabwe (c. 11th–15th centuries): colonial explorers refused to believe the massive granite walls were built by Africans, insisting for decades that the city must have been built by the Queen of Sheba",
-      "seconds": 1.9
+      "seconds": 2.4
     }
   ],
   "errors": [],
@@ -101,16 +101,10 @@
       "overloaded": false
     },
     {
-      "id": "ep101",
-      "outcome": "rejected",
-      "topic": "Fire of Rome (AD 64): flames break out among shops of flammable goods beside the Circus and, driven by wind through narrow twisting lanes, outrun every effort to stop them as fleeing crowds are trapped",
-      "reason": "research: only 3 claims have verified quotes from two different sites"
-    },
-    {
       "id": "ep102",
       "outcome": "unfinished",
       "topic": "Silvertown explosion (1917): a fire at a TNT works beside crowded terraces set off about 50 tons of explosive at 6.52 pm",
-      "reason": "RuntimeError: ep102 script still breaks the rules: [\"Give hook_text: 2 to 6 words, 40 characters or fewer, no emoji, shown over beat 1 from its first frame. It must add a time, number, or the stakes rather than repeat the spoken hook's words.\"]",
+      "reason": "VisualCheckFailed: ep102 beat 1: replacement image failed (wrong period photo from 1944 instead of 1917)",
       "quota": false,
       "overloaded": false
     },
@@ -121,50 +115,58 @@
       "reason": "OutOfQuota: no model in ('gemini-3.8-flash', 'gemini-3.7-flash', 'gemini-3.6-flash', 'gemini-3-flash-preview', 'gemini-flash-latest', 'ovh:Qwen3.5-397B-A17B') has free quota left today",
       "quota": true,
       "overloaded": false
+    },
+    {
+      "id": "ep104",
+      "outcome": "unfinished",
+      "topic": "Great Zimbabwe (c. 11th–15th centuries): colonial explorers refused to believe the massive granite walls were built by Africans, insisting for decades that the city must have been built by the Queen of Sheba",
+      "reason": "VisualCheckFailed: ep104 beat 1: replacement image failed (modern-looking image for a historical scene)",
+      "quota": false,
+      "overloaded": false
     }
   ],
   "spawned": [
     {
       "id": "ep092",
       "topic": "Tauredunum event (563): a mountain collapse into Lake Geneva created a massive inland tsunami that swept over the city walls of Geneva miles away",
-      "call_id": "fc-01M49S5A3MMVHQT2KDFPSCF6T6"
+      "call_id": "fc-01M4ADRJNQZGFPPJYRBFHPC1MX"
     },
     {
       "id": "ep102",
       "topic": "Silvertown explosion (1917): a fire at a TNT works beside crowded terraces set off about 50 tons of explosive at 6.52 pm",
-      "call_id": "fc-01M49S5BZAKBP6KX56EMSC1BFS"
+      "call_id": "fc-01M4ADRMX7G50RP1HBK6EYYG4S"
     },
     {
       "id": "ep103",
       "topic": "Halifax Explosion (1917): a burning munitions ship blew up in the harbor, the largest man-made explosion before the atomic bomb",
-      "call_id": "fc-01M49S5DSVHM1YH5VPMVRDJP8V"
+      "call_id": "fc-01M4ADRQVNKP16RZVYH5N0YQJA"
     },
     {
       "id": "ep104",
       "topic": "Great Zimbabwe (c. 11th–15th centuries): colonial explorers refused to believe the massive granite walls were built by Africans, insisting for decades that the city must have been built by the Queen of Sheba",
-      "call_id": "fc-01M49S5FKVME5C21RZT1ZGWMF1"
+      "call_id": "fc-01M4ADRT6Q14W6G570Y56QXQYC"
     }
   ],
   "in_cloud": [
     {
       "id": "ep092",
       "topic": "Tauredunum event (563): a mountain collapse into Lake Geneva created a massive inland tsunami that swept over the city walls of Geneva miles away",
-      "spawned_at": "2026-10-07T05:05:40+05:30"
+      "spawned_at": "2026-10-07T11:05:43+05:30"
     },
     {
       "id": "ep102",
       "topic": "Silvertown explosion (1917): a fire at a TNT works beside crowded terraces set off about 50 tons of explosive at 6.52 pm",
-      "spawned_at": "2026-10-07T05:05:42+05:30"
+      "spawned_at": "2026-10-07T11:05:46+05:30"
     },
     {
       "id": "ep103",
       "topic": "Halifax Explosion (1917): a burning munitions ship blew up in the harbor, the largest man-made explosion before the atomic bomb",
-      "spawned_at": "2026-10-07T05:05:44+05:30"
+      "spawned_at": "2026-10-07T11:05:49+05:30"
     },
     {
       "id": "ep104",
       "topic": "Great Zimbabwe (c. 11th–15th centuries): colonial explorers refused to believe the massive granite walls were built by Africans, insisting for decades that the city must have been built by the Queen of Sheba",
-      "spawned_at": "2026-10-07T05:05:46+05:30"
+      "spawned_at": "2026-10-07T11:05:51+05:30"
     }
   ],
   "published": [],
@@ -172,10 +174,10 @@
   "failed_posts": [],
   "not_live": [],
   "llm": {
-    "calls": 13,
+    "calls": 10,
     "by_model": {
-      "gemini-3.5-flash-lite": 12,
-      "gemini-3-flash-preview": 1
+      "gemini-3-flash-preview": 2,
+      "gemini-3.5-flash-lite": 8
     },
     "out_of_quota": []
   },
@@ -187,15 +189,15 @@
   "minutes_this_month": 68.0,
   "minutes_budget": 2000,
   "modal_cost": {
-    "metered": 9.23,
+    "metered": 9.38,
     "billed": 0.0
   },
   "modal_credit": 30.0,
   "capacity": {
-    "cloud": 156,
+    "cloud": 155,
     "runner": 0,
     "runner_minutes": 0,
-    "modal_credit_left": 18.77
+    "modal_credit_left": 18.62
   },
   "made_here": 0,
   "open_topics": 140,
