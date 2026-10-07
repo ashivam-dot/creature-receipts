@@ -28,6 +28,8 @@ event is told for its gore. Space topics belong to the sister channel Universe R
 | 2026-10-03 | Operation Market Garden (1944): commanders dismissed aerial reconnaissance photos showing German panzers waiting at Arnhem, ordering the intelligence officer who raised the alarm on sudden medical leave — done (ep051) | Warnings Ignored | Bernard Montgomery is trending on Wikipedia with over 53,000 daily views. |
 | 2026-10-05 | Lake Issyk-Kul (c. 1200): an ancient Silk Road trade hub vanished beneath rising waters, leaving centuries-old city ruins submerged off the shore — parked (ep084) | Lost Cities | Trending in archaeology news following underwater dives exploring submerged Silk Road ruins in the lake. |
 | 2026-10-05 | Umm El Qa'ab (c. 2900 BC): early Egyptian pharaohs were entombed alongside dozens of household servants sacrificed simultaneously to serve in the afterlife — parked (ep085) | Fallen Empires | In the news after forensic analysis confirmed retainer sacrifice in First Dynasty royal tombs. |
+| 2026-10-07 | Lizzie Borden (1892): the entire household spent the days before the murders suffering from severe food poisoning because they were eating mutton left out in a 90-degree heatwave — making (ep105) | The Last Hours | Lizzie Borden is currently trending on Wikipedia with over 140,000 views in a single day. |
+| 2026-10-07 | Dust Bowl (1935): on Black Sunday, the air became so statically charged that it short-circuited car ignitions and knocked people to the ground with a single handshake — making (ep106) | Warnings Ignored | John Steinbeck, whose works defined the era's human tragedy, is currently trending on Wikipedia. |
 
 ## Anniversaries (publish on the date, 7 p.m. Eastern)
 
@@ -85,7 +87,7 @@ event is told for its gore. Space topics belong to the sister channel Universe R
 - Sinking of the SS Arctic (1854): the ship collided in fog and the officers took the lifeboats first, leaving the passengers behind
 - 1868 Arica earthquake (1868): a massive tsunami carried the USS Wateree two miles inland and left it sitting perfectly upright in the middle of the desert — parked (ep083)
 - 1944 Bombay Docks explosion (1944): a fire aboard the *Fort Stikine* preceded two blasts at Victoria Dock; India observes April 14 as Fire Services Day to remember the firefighters who died — research lead only; ignition, death toll and image rights need review
-- Tauredunum event (563): a mountain collapse into Lake Geneva created a massive inland tsunami that swept over the city walls of Geneva miles away — making (ep092)
+- Tauredunum event (563): a mountain collapse into Lake Geneva created a massive inland tsunami that swept over the city walls of Geneva miles away — parked (ep092)
 - Brescia explosion (1769): lightning struck a church bastion storing 90 tons of gunpowder, causing a blast that leveled one-sixth of the city — parked (ep099)
 - Armagh rail disaster (1889): a train stalled on a hill, and when the crew uncoupled the rear carriages, they rolled backward into an oncoming train full of children
 - Siege of Compiègne (1430): Joan of Arc was captured by her enemies because her own side raised the drawbridge too early, trapping her outside the city gates
@@ -139,6 +141,7 @@ event is told for its gore. Space topics belong to the sister channel Universe R
 - Siege of Maiozamalcha (363): while the defenders mocked the Romans from their 'impregnable' walls, soldiers finished a secret tunnel and emerged directly into a kitchen inside the city
 - Sinking of the SS Persia (1915): the ocean liner sank in minutes after a torpedo struck, and the lone survivor among the ship's mail clerks clung to a floating crate for hours
 - Fire of Rome (AD 64): flames break out among shops of flammable goods beside the Circus and, driven by wind through narrow twisting lanes, outrun every effort to stop them as fleeing crowds are trapped — dropped (ep101)
+- Mary Rose (1545): a survivor said she heeled in the wind while turning and water poured through gun ports left open after firing, as Henry VIII watched
 
 ### Lost Cities
 

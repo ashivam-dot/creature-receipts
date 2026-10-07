@@ -1,59 +1,95 @@
 {
-  "updated_at": "2026-10-07T11:05:52+05:30",
+  "updated_at": "2026-10-07T17:14:34+05:30",
   "day": 6,
   "result": "ok",
   "run": {
     "host": "modal",
-    "id": "ta-01M4ADQB04YN5EFANH3ZATZWVR",
+    "id": "ta-01M4B2AJ3GDXV35BD16X0JJBTR",
     "number": null,
     "trigger": "schedule",
-    "started_at": "2026-10-07T11:05:14+05:30",
-    "started_at_utc": "2026-10-07T05:35:14+00:00",
-    "seconds": 38
+    "started_at": "2026-10-07T17:05:14+05:30",
+    "started_at_utc": "2026-10-07T11:35:14+00:00",
+    "seconds": 561
   },
   "stages": [
     {
       "name": "deploy",
       "ok": true,
       "detail": "",
-      "seconds": 2.7
+      "seconds": 1.5
     },
     {
       "name": "collect",
       "ok": true,
-      "detail": "ep092 unfinished (OutOfQuota: no model in ('gemini-3.8-flash', 'gemini-3.7-flash', 'gemini-3.6-flash', 'gemini-3-flash-preview', 'gemini-flash-latest', 'ovh:Qwen3.5-397B-A17B') has free quota left today); ep102 unfinished (VisualCheckFailed: ep102 beat 1: replacement image failed (wrong period photo from 1944 instead of 1917)); ep103 unfinished (OutOfQuota: no model in ('gemini-3.8-flash', 'gemini-3.7-flash', 'gemini-3.6-flash', 'gemini-3-flash-preview', 'gemini-flash-latest', 'ovh:Qwen3.5-397B-A17B') has free quota left today); ep104 unfinished (VisualCheckFailed: ep104 beat 1: replacement im",
-      "seconds": 14.3
+      "detail": "ep092 rejected (low scores: hook, accuracy; 4 speech problems); ep102 unfinished (Overloaded: every model in ('gemini-3.8-flash', 'gemini-3.7-flash', 'gemini-3.6-flash', 'gemini-3-flash-preview', 'gemini-flash-latest', 'ovh:Qwen3.5-397B-A17B') with quota left stayed overloaded for 25 minutes); ep103 unfinished (Overloaded: every model in ('gemini-3.8-flash', 'gemini-3.7-flash', 'gemini-3.6-flash', 'gemini-3-flash-preview', 'gemini-flash-latest', 'ovh:Qwen3.5-397B-A17B') with quota left stayed overloaded for 25 minutes); ep104 unfinished (VisualCheckFailed: ep104 beat 1: replacement image faile",
+      "seconds": 10.2
     },
     {
-      "name": "start ep092",
+      "name": "timely topics",
       "ok": true,
-      "detail": "Tauredunum event (563): a mountain collapse into Lake Geneva created a massive inland tsunami that swept over the city walls of Geneva miles away",
-      "seconds": 2.4
+      "detail": "2 added",
+      "seconds": 531.4
+    },
+    {
+      "name": "sourced accident topics",
+      "ok": true,
+      "detail": "1 added",
+      "seconds": 0.1
+    },
+    {
+      "name": "strongest stories",
+      "ok": true,
+      "detail": "skipped: 143 open topics",
+      "seconds": 0.0
+    },
+    {
+      "name": "new topics",
+      "ok": true,
+      "detail": "skipped: 143 open topics",
+      "seconds": 0.0
+    },
+    {
+      "name": "report",
+      "ok": true,
+      "detail": "day-006.md",
+      "seconds": 0.4
     },
     {
       "name": "start ep102",
       "ok": true,
       "detail": "Silvertown explosion (1917): a fire at a TNT works beside crowded terraces set off about 50 tons of explosive at 6.52 pm",
-      "seconds": 2.3
+      "seconds": 5.9
     },
     {
       "name": "start ep103",
       "ok": true,
       "detail": "Halifax Explosion (1917): a burning munitions ship blew up in the harbor, the largest man-made explosion before the atomic bomb",
-      "seconds": 3.0
+      "seconds": 1.9
     },
     {
       "name": "start ep104",
       "ok": true,
       "detail": "Great Zimbabwe (c. 11th–15th centuries): colonial explorers refused to believe the massive granite walls were built by Africans, insisting for decades that the city must have been built by the Queen of Sheba",
-      "seconds": 2.4
+      "seconds": 2.2
+    },
+    {
+      "name": "start ep105",
+      "ok": true,
+      "detail": "Lizzie Borden (1892): the entire household spent the days before the murders suffering from severe food poisoning because they were eating mutton left out in a 90-degree heatwave",
+      "seconds": 1.8
+    },
+    {
+      "name": "start ep106",
+      "ok": true,
+      "detail": "Dust Bowl (1935): on Black Sunday, the air became so statically charged that it short-circuited car ignitions and knocked people to the ground with a single handshake",
+      "seconds": 1.9
     }
   ],
   "errors": [],
   "owner_action": [],
   "notes": [
-    "ep092 stopped on Gemini's free quota; it resumes in a later run",
-    "ep103 stopped on Gemini's free quota; it resumes in a later run",
+    "ep102 stopped on Gemini's free tier being overloaded; it resumes in a later run",
+    "ep103 stopped on Gemini's free tier being overloaded; it resumes in a later run",
     "draft-only producer: no Buffer, Cloudinary, or Google publisher access"
   ],
   "inventory": {
@@ -64,10 +100,11 @@
     "target": 9,
     "making": [],
     "remote": [
-      "ep092",
       "ep102",
       "ep103",
-      "ep104"
+      "ep104",
+      "ep105",
+      "ep106"
     ]
   },
   "queue": [],
@@ -94,27 +131,25 @@
   "made": [
     {
       "id": "ep092",
-      "outcome": "unfinished",
+      "outcome": "rejected",
       "topic": "Tauredunum event (563): a mountain collapse into Lake Geneva created a massive inland tsunami that swept over the city walls of Geneva miles away",
-      "reason": "OutOfQuota: no model in ('gemini-3.8-flash', 'gemini-3.7-flash', 'gemini-3.6-flash', 'gemini-3-flash-preview', 'gemini-flash-latest', 'ovh:Qwen3.5-397B-A17B') has free quota left today",
-      "quota": true,
-      "overloaded": false
+      "reason": "low scores: hook, accuracy; 4 speech problems"
     },
     {
       "id": "ep102",
       "outcome": "unfinished",
       "topic": "Silvertown explosion (1917): a fire at a TNT works beside crowded terraces set off about 50 tons of explosive at 6.52 pm",
-      "reason": "VisualCheckFailed: ep102 beat 1: replacement image failed (wrong period photo from 1944 instead of 1917)",
+      "reason": "Overloaded: every model in ('gemini-3.8-flash', 'gemini-3.7-flash', 'gemini-3.6-flash', 'gemini-3-flash-preview', 'gemini-flash-latest', 'ovh:Qwen3.5-397B-A17B') with quota left stayed overloaded for 25 minutes",
       "quota": false,
-      "overloaded": false
+      "overloaded": true
     },
     {
       "id": "ep103",
       "outcome": "unfinished",
       "topic": "Halifax Explosion (1917): a burning munitions ship blew up in the harbor, the largest man-made explosion before the atomic bomb",
-      "reason": "OutOfQuota: no model in ('gemini-3.8-flash', 'gemini-3.7-flash', 'gemini-3.6-flash', 'gemini-3-flash-preview', 'gemini-flash-latest', 'ovh:Qwen3.5-397B-A17B') has free quota left today",
-      "quota": true,
-      "overloaded": false
+      "reason": "Overloaded: every model in ('gemini-3.8-flash', 'gemini-3.7-flash', 'gemini-3.6-flash', 'gemini-3-flash-preview', 'gemini-flash-latest', 'ovh:Qwen3.5-397B-A17B') with quota left stayed overloaded for 25 minutes",
+      "quota": false,
+      "overloaded": true
     },
     {
       "id": "ep104",
@@ -127,46 +162,56 @@
   ],
   "spawned": [
     {
-      "id": "ep092",
-      "topic": "Tauredunum event (563): a mountain collapse into Lake Geneva created a massive inland tsunami that swept over the city walls of Geneva miles away",
-      "call_id": "fc-01M4ADRJNQZGFPPJYRBFHPC1MX"
-    },
-    {
       "id": "ep102",
       "topic": "Silvertown explosion (1917): a fire at a TNT works beside crowded terraces set off about 50 tons of explosive at 6.52 pm",
-      "call_id": "fc-01M4ADRMX7G50RP1HBK6EYYG4S"
+      "call_id": "fc-01M4B2VPV7N4WJFXB0ZK6HPT56"
     },
     {
       "id": "ep103",
       "topic": "Halifax Explosion (1917): a burning munitions ship blew up in the harbor, the largest man-made explosion before the atomic bomb",
-      "call_id": "fc-01M4ADRQVNKP16RZVYH5N0YQJA"
+      "call_id": "fc-01M4B2VRNT6YRQAWQ1E5T0MZ5M"
     },
     {
       "id": "ep104",
       "topic": "Great Zimbabwe (c. 11th–15th centuries): colonial explorers refused to believe the massive granite walls were built by Africans, insisting for decades that the city must have been built by the Queen of Sheba",
-      "call_id": "fc-01M4ADRT6Q14W6G570Y56QXQYC"
+      "call_id": "fc-01M4B2VTT2CQH8JA0KF5111KR1"
+    },
+    {
+      "id": "ep105",
+      "topic": "Lizzie Borden (1892): the entire household spent the days before the murders suffering from severe food poisoning because they were eating mutton left out in a 90-degree heatwave",
+      "call_id": "fc-01M4B2VWJMRWR25DTHJNEACAR5"
+    },
+    {
+      "id": "ep106",
+      "topic": "Dust Bowl (1935): on Black Sunday, the air became so statically charged that it short-circuited car ignitions and knocked people to the ground with a single handshake",
+      "call_id": "fc-01M4B2VYEKW9QR4EKTCW6P2HAK"
     }
   ],
   "in_cloud": [
     {
-      "id": "ep092",
-      "topic": "Tauredunum event (563): a mountain collapse into Lake Geneva created a massive inland tsunami that swept over the city walls of Geneva miles away",
-      "spawned_at": "2026-10-07T11:05:43+05:30"
-    },
-    {
       "id": "ep102",
       "topic": "Silvertown explosion (1917): a fire at a TNT works beside crowded terraces set off about 50 tons of explosive at 6.52 pm",
-      "spawned_at": "2026-10-07T11:05:46+05:30"
+      "spawned_at": "2026-10-07T17:14:26+05:30"
     },
     {
       "id": "ep103",
       "topic": "Halifax Explosion (1917): a burning munitions ship blew up in the harbor, the largest man-made explosion before the atomic bomb",
-      "spawned_at": "2026-10-07T11:05:49+05:30"
+      "spawned_at": "2026-10-07T17:14:28+05:30"
     },
     {
       "id": "ep104",
       "topic": "Great Zimbabwe (c. 11th–15th centuries): colonial explorers refused to believe the massive granite walls were built by Africans, insisting for decades that the city must have been built by the Queen of Sheba",
-      "spawned_at": "2026-10-07T11:05:51+05:30"
+      "spawned_at": "2026-10-07T17:14:30+05:30"
+    },
+    {
+      "id": "ep105",
+      "topic": "Lizzie Borden (1892): the entire household spent the days before the murders suffering from severe food poisoning because they were eating mutton left out in a 90-degree heatwave",
+      "spawned_at": "2026-10-07T17:14:32+05:30"
+    },
+    {
+      "id": "ep106",
+      "topic": "Dust Bowl (1935): on Black Sunday, the air became so statically charged that it short-circuited car ignitions and knocked people to the ground with a single handshake",
+      "spawned_at": "2026-10-07T17:14:34+05:30"
     }
   ],
   "published": [],
@@ -174,32 +219,33 @@
   "failed_posts": [],
   "not_live": [],
   "llm": {
-    "calls": 10,
+    "calls": 13,
     "by_model": {
-      "gemini-3-flash-preview": 2,
-      "gemini-3.5-flash-lite": 8
+      "gemini-3-flash-preview": 4,
+      "gemini-3.5-flash-lite": 8,
+      "gemini-3.6-flash": 1
     },
     "out_of_quota": []
   },
   "renders": {
-    "modal": 2,
+    "modal": 4,
     "runner": 0
   },
-  "daily_done": "2026-10-06",
+  "daily_done": "2026-10-07",
   "minutes_this_month": 68.0,
   "minutes_budget": 2000,
   "modal_cost": {
-    "metered": 9.38,
+    "metered": 9.55,
     "billed": 0.0
   },
   "modal_credit": 30.0,
   "capacity": {
-    "cloud": 155,
+    "cloud": 153,
     "runner": 0,
     "runner_minutes": 0,
-    "modal_credit_left": 18.62
+    "modal_credit_left": 18.46
   },
   "made_here": 0,
-  "open_topics": 140,
-  "parked_topics": 36
+  "open_topics": 141,
+  "parked_topics": 37
 }

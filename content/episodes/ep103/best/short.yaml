@@ -1,5 +1,5 @@
 id: ep103
-title: Why Did Hundreds Watch the Burning Ship in Halifax? 😳
+title: Why Did Thousands Watch the Burning Ship in Halifax? 😳
 series: The Last Hours
 description: On December 6, 1917, the SS Mont-Blanc exploded in Halifax harbor after colliding with the SS Imo, causing the
   largest man-made blast before the atomic bomb.
@@ -25,10 +25,10 @@ voice:
   voice: am_fenrir
   speed: 1.15
 beats:
-- text: Hundreds watched the burning ship, unaware it was a munitions vessel.
+- text: Thousands stared at the burning ship, unaware it carried tons of explosives.
   emphasis:
   - burning ship
-  - munitions vessel
+  - tons of explosives
   visual:
     source: url
     url: https://thumb.wikimedia.org/wikipedia/commons/thumb/7/79/Halifax_Explosion_blast_cloud_restored.jpg/960px-Halifax_Explosion_blast_cloud_restored.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
@@ -43,32 +43,25 @@ beats:
     motion: pan_down
     focus_x: 0.5
     focus_y: 0.5
-- text: On December 6, 1917, the ship blew apart.
+- text: At nine oh four am, the ship blew apart.
   emphasis:
-  - December 6, 1917
+  - nine oh four am
   - blew apart
   sfx: whoosh
   visual:
     source: url
-    url: https://upload.wikimedia.org/wikipedia/commons/c/cd/Halifax_Explosion_Aftermath_LOC_2_-_restored.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    url: https://thumb.wikimedia.org/wikipedia/commons/thumb/b/be/Blast_cloud_from_the_Halifax_Explosion%2C_December_6%2C_1917.jpg/1280px-Blast_cloud_from_the_Halifax_Explosion%2C_December_6%2C_1917.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
     credit:
       source: Wikimedia Commons
-      title: Halifax Explosion Aftermath LOC 2 - restored.jpg
-      credit: 'derivative work:  — Mike.lifeguard | @en.wb
-
-        Halifax_Explosion_Aftermath_LOC_2.jpg: Unknown'
+      title: Blast cloud from the Halifax Explosion, December 6, 1917.jpg
+      credit: Unknown authorUnknown author
       license: Public domain
-      url: https://commons.wikimedia.org/wiki/File:Halifax_Explosion_Aftermath_LOC_2_-_restored.jpg
+      url: https://commons.wikimedia.org/wiki/File:Blast_cloud_from_the_Halifax_Explosion,_December_6,_1917.jpg
     fallbacks:
-    - card
     - color
     motion: pan_left
     focus_x: 0.5
     focus_y: 0.5
-    card:
-      kind: dateline
-      big: Dec 6, 1917
-      small: Halifax Harbor
 - text: Sparks from a collision had ignited deck benzol.
   emphasis:
   - Sparks
@@ -164,7 +157,7 @@ beats:
       kind: fact
       big: 2,000
       small: Lives lost
-- text: Hundreds watched the burning ship before the harbor vanished.
+- text: Thousands stared at the burning ship before the harbor vanished.
   emphasis:
   - burning ship
   - harbor vanished
@@ -174,4 +167,4 @@ beats:
     focus_x: 0.5
     focus_y: 0.5
 depth_motion: true
-hook_text: THE FATAL IGNITION
+hook_text: DECEMBER 6, 1917
