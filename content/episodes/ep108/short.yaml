@@ -1,0 +1,163 @@
+id: ep108
+title: Why Did the SS Californian Ignore Titanic's Rockets? 😳
+series: Warnings Ignored
+description: How the SS Californian sat within sight of the sinking Titanic while its wireless operator slept.
+sources:
+- https://en.wikipedia.org/wiki/SS_Californian
+- https://echoesofhistorypast.com/blog/californian-ship-watched-titanic-sink-captain-lord.html
+- https://en.wikipedia.org/wiki/Cyril_Furmstone_Evans
+- https://www.pbs.org/wnet/secrets/abandoning-titanic-promo/5432/
+- https://www.bbc.co.uk/news/uk-england-manchester-17678822
+- https://titanicsurvivors.com/sinking/ss-californian-titanic/
+hashtags:
+- '#history'
+- '#titanic'
+- '#shipwreck'
+tags:
+- SS Californian
+- Titanic
+- Stanley Lord
+- Cyril Evans
+- warnings ignored
+- maritime history
+voice:
+  engine: kokoro
+  voice: am_fenrir
+  speed: 1.15
+beats:
+- text: A sleeping radio operator missed the Titanic.
+  emphasis:
+  - sleeping radio operator
+  - Titanic
+  visual:
+    source: url
+    url: https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e8/Titanic%27s_Marconi_room_antique.jpg/960px-Titanic%27s_Marconi_room_antique.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
+    credit:
+      source: Wikimedia Commons
+      title: Titanic's Marconi room antique.jpg
+      credit: 'Titanic''s_Marconi_room.jpg: Cliff1066
+
+        derivative work: W.Rebel (talk)'
+      license: CC BY 2.0
+      url: https://commons.wikimedia.org/wiki/File:Titanic%27s_Marconi_room_antique.jpg
+    fallbacks:
+    - color
+    motion: pan_down
+    focus_x: 0.5
+    focus_y: 0.5
+- text: The SS Californian sat motionless in the ice.
+  emphasis:
+  - SS Californian
+  - motionless
+  sfx: whoosh
+  visual:
+    source: url
+    url: https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f2/Californian.jpg/960px-Californian.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
+    credit:
+      source: Wikimedia Commons
+      title: Californian.jpg
+      credit: Louis Ogden
+      license: Public domain
+      url: https://commons.wikimedia.org/wiki/File:Californian.jpg
+    fallbacks:
+    - color
+    motion: pan_left
+    focus_x: 0.5
+    focus_y: 0.5
+- text: Cyril Evans sent an ice warning earlier.
+  emphasis:
+  - Cyril Evans
+  - ice warning
+  visual:
+    source: url
+    url: https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f6/Iceberg_in_the_Atlantic_Ocean%2C_off_the_coast_of_Labrador_LCCN2012645604.tif/lossy-page1-1280px-Iceberg_in_the_Atlantic_Ocean%2C_off_the_coast_of_Labrador_LCCN2012645604.tif.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
+    credit:
+      source: Wikimedia Commons
+      title: Iceberg in the Atlantic Ocean, off the coast of Labrador LCCN2012645604.tif
+      credit: Pierce, William H., photographer; Bradford, William, 1823-1892.
+      license: Public domain
+      url: https://commons.wikimedia.org/wiki/File:Iceberg_in_the_Atlantic_Ocean,_off_the_coast_of_Labrador_LCCN2012645604.tif
+    fallbacks:
+    - color
+    motion: zoom_out
+    focus_x: 0.5
+    focus_y: 0.5
+- text: The Titanic operator told him to shut up.
+  emphasis:
+  - shut up
+  sfx: pop
+  pause_after: 0.4
+  visual:
+    source: card
+    card:
+      kind: quote
+      big: shut up
+      small: Titanic Operator
+    motion: zoom_in
+- text: Exhausted, Evans switched off his wireless and went to bed.
+  emphasis:
+  - switched off
+  - went to bed
+  sfx: riser
+  visual:
+    source: url
+    url: https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dd/Steamship_wireless_T_antenna.jpg/1280px-Steamship_wireless_T_antenna.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
+    credit:
+      source: Wikimedia Commons
+      title: Steamship wireless T antenna.jpg
+      credit: Charles R. Gibson
+      license: Public domain
+      url: https://commons.wikimedia.org/wiki/File:Steamship_wireless_T_antenna.jpg
+    fallbacks:
+    - color
+    motion: pan_right
+    focus_x: 0.5
+    focus_y: 0.5
+- text: Minutes later, white rockets arced into the night sky.
+  emphasis:
+  - white rockets
+  - night sky
+  sfx: whoosh
+  visual:
+    source: url
+    url: https://upload.wikimedia.org/wikipedia/commons/9/95/Titanic_sinking%2C_painting_by_Willy_St%C3%B6wer.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    credit:
+      source: Wikimedia Commons
+      title: Titanic sinking, painting by Willy Stöwer.jpg
+      credit: Willy Stöwer
+      license: Public domain
+      url: https://commons.wikimedia.org/wiki/File:Titanic_sinking,_painting_by_Willy_St%C3%B6wer.jpg
+    fallbacks:
+    - color
+    motion: pan_left
+    focus_x: 0.5
+    focus_y: 0.5
+- text: Captain Stanley Lord dismissed the flares.
+  emphasis:
+  - Stanley Lord
+  - dismissed
+  visual:
+    source: url
+    url: https://upload.wikimedia.org/wikipedia/commons/6/6e/St%C3%B6wer_Titanic.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    credit:
+      source: Wikimedia Commons
+      title: Stöwer Titanic.jpg
+      credit: Willy Stöwer
+      license: Public domain
+      url: https://commons.wikimedia.org/wiki/File:St%C3%B6wer_Titanic.jpg
+    fallbacks:
+    - color
+    motion: pan_right
+    focus_x: 0.5
+    focus_y: 0.5
+- text: Nobody woke the operator because a sleeping radio operator missed the Titanic.
+  emphasis:
+  - Nobody woke
+  - sleeping radio operator
+  visual:
+    reuse: 1
+    motion: zoom_out
+    focus_x: 0.5
+    focus_y: 0.5
+depth_motion: true
+hook_text: THE SHUT UP MESSAGE

@@ -177,7 +177,7 @@ event is told for its gore. Space topics belong to the sister channel Universe R
 - Great Fire of 1910 (1910): hurricane-force winds turned a scattering of forest fires into a single monster that swallowed towns in minutes — done (ep050)
 - Voyage of the James Caird (1916): to save his crew, Shackleton navigated 800 miles of the world's deadliest ocean in a 22-foot lifeboat — parked (ep046)
 - Julian's Persian expedition (363): the Roman Emperor burned his own supply fleet to force his men to advance, only to realize they were starving in a desert wasteland — dropped (ep091)
-- Ross Sea party (1914): the team spent two years dying of scurvy to lay supply depots for Shackleton, never knowing his ship had been crushed on the other side of the continent — making (ep110)
+- Ross Sea party (1914): the team spent two years dying of scurvy to lay supply depots for Shackleton, never knowing his ship had been crushed on the other side of the continent — dropped (ep110)
 - Vandino and Ugolino Vivaldi (1291): two brothers sailed into the Atlantic 200 years before Columbus and were never seen again, sparking a 150-year search
 - Great Northern Expedition (1741): explorer Vitus Bering died of scurvy on a frozen, desolate island just months after finally proving Asia and America were separate
 - Denmark expedition (1907): dying of starvation in an Arctic cave, Jørgen Brønlund pinned his diary and maps to his coat before freezing to death
@@ -197,7 +197,7 @@ event is told for its gore. Space topics belong to the sister channel Universe R
 - Late Bronze Age collapse: around 1177 BC, nearly every great civilization of the eastern Mediterranean fell within a few decades — parked (ep029)
 - Fall of Tenochtitlan (1521): smallpox killed huge numbers of the city's people before and during the siege
 - Battle of the Teutoburg Forest (9 AD): three Roman legions were wiped out, and Augustus is said to have cried "Varus, give me back my legions!" — dropped (ep075)
-- Siege of Baghdad (1258): accounts say the Tigris ran black with ink from the books thrown into it
+- Siege of Baghdad (1258): accounts say the Tigris ran black with ink from the books thrown into it — making (ep111)
 - Third Punic War (146 BC): Rome destroyed Carthage, but the story that it salted the earth appears to be a modern invention
 - Library of Alexandria: it wasn't lost in one great fire, but declined over centuries — dropped (ep071)
 - Reichstag fire (1933): the German parliament building burned just weeks after Hitler took power, instantly triggering emergency decrees that ended democracy — parked (ep036)

@@ -1,0 +1,133 @@
+id: ep107
+title: Why Did Henry VIII's Favorite Warship Sink? 😳
+series: The Last Hours
+description: Discover the mystery behind the sudden sinking of the Mary Rose in 1545 as King Henry VIII watched from shore.
+sources:
+- https://en.wikipedia.org/wiki/Mary_Rose
+- https://www.bbc.co.uk/news/uk-england-hampshire-22639505
+- https://www.historic-uk.com/HistoryUK/HistoryofEngland/The-Great-French-Armada-of-1545-The-Battle-of-The-Solent/
+- https://www.historyextra.com/period/tudor/why-did-mary-rose-sink/
+hashtags:
+- '#history'
+- '#maryrose'
+- '#shipwreck'
+tags:
+- Mary Rose
+- Henry VIII
+- Tudor navy
+- shipwreck
+- Battle of the Solent
+- history
+voice:
+  engine: kokoro
+  voice: am_fenrir
+  speed: 1.15
+beats:
+- text: King Henry VIII watched his favorite warship capsize in minutes.
+  emphasis:
+  - King Henry VIII
+  - capsize
+  visual:
+    source: url
+    url: https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c7/Hans_Holbein%2C_the_Younger%2C_Around_1497-1543_-_Portrait_of_Henry_VIII_of_England_-_Google_Art_Project.jpg/1920px-Hans_Holbein%2C_the_Younger%2C_Around_1497-1543_-_Portrait_of_Henry_VIII_of_England_-_Google_Art_Project.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
+    credit:
+      source: Wikimedia Commons
+      title: Hans Holbein, the Younger, Around 1497-1543 - Portrait of Henry VIII of England - Google Art Project.jpg
+      credit: Hans Holbein the Younger
+      license: Public domain
+      url: https://commons.wikimedia.org/wiki/File:Hans_Holbein,_the_Younger,_Around_1497-1543_-_Portrait_of_Henry_VIII_of_England_-_Google_Art_Project.jpg
+    fallbacks:
+    - color
+    motion: pan_down
+    focus_x: 0.5
+    focus_y: 0.35
+    box:
+    - 0.3
+    - 0.1
+    - 0.7
+    - 0.7
+- text: The Mary Rose sank during the Battle of the Solent.
+  emphasis:
+  - Battle of the Solent
+  sfx: whoosh
+  visual:
+    source: card
+    card:
+      kind: dateline
+      big: 19 July 1545
+      small: Battle of the Solent
+    motion: zoom_in
+- text: A survivor testified that the turning ship heeled in the wind.
+  emphasis:
+  - heeled in the wind
+  sfx: riser
+  visual:
+    source: url
+    url: https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d5/WP_Mary_Rose_Anthony_Roll.jpg/1280px-WP_Mary_Rose_Anthony_Roll.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
+    credit:
+      source: Wikimedia Commons
+      title: WP Mary Rose Anthony Roll.jpg
+      credit: de:Anthony Anthony (16. Jahrhundert)
+      license: Public domain
+      url: https://commons.wikimedia.org/wiki/File:WP_Mary_Rose_Anthony_Roll.jpg
+    fallbacks:
+    - color
+    motion: zoom_out
+    focus_x: 0.5
+    focus_y: 0.5
+- text: Water poured through lower gunports left open after firing.
+  emphasis:
+  - gunports left open
+  - after firing
+  sfx: pop
+  pause_after: 0.4
+  visual:
+    source: url
+    url: https://upload.wikimedia.org/wikipedia/commons/f/f7/Mary_Rose_Guns_ForeBronzeCulverin_RearWroughtIronCannon.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    credit:
+      source: Wikimedia Commons
+      title: Mary Rose Guns ForeBronzeCulverin RearWroughtIronCannon.png
+      credit: The Land
+      license: Public domain
+      url: https://commons.wikimedia.org/wiki/File:Mary_Rose_Guns_ForeBronzeCulverin_RearWroughtIronCannon.png
+    fallbacks:
+    - card
+    - color
+    motion: pan_left
+    focus_x: 0.5
+    focus_y: 0.5
+    card:
+      kind: fact
+      big: Open Gunports
+      small: Water rushed inside
+- text: Anti-boarding netting then trapped nearly five hundred men below.
+  emphasis:
+  - trapped
+  - five hundred men
+  sfx: whoosh
+  visual:
+    source: url
+    url: https://thumb.wikimedia.org/wikipedia/commons/thumb/d/da/7_inch_muzzle_loading_naval_canon.jpg/960px-7_inch_muzzle_loading_naval_canon.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
+    credit:
+      source: Wikimedia Commons
+      title: 7 inch muzzle loading naval canon.jpg
+      credit: Tmcb1971
+      license: CC0
+      url: https://commons.wikimedia.org/wiki/File:7_inch_muzzle_loading_naval_canon.jpg
+    fallbacks:
+    - color
+    motion: pan_right
+    focus_x: 0.5
+    focus_y: 0.5
+- text: Centuries later, the recovered wreck reveals why King Henry VIII watched his favorite warship capsize in minutes.
+  emphasis:
+  - recovered wreck
+  - capsize in minutes
+  sfx: whoosh
+  visual:
+    reuse: 1
+    motion: zoom_out
+    focus_x: 0.5
+    focus_y: 0.35
+depth_motion: true
+hook_text: WATCHED FROM SHORE

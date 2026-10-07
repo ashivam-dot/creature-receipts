@@ -1,57 +1,60 @@
 {
-  "updated_at": "2026-10-07T23:05:41+05:30",
-  "day": 6,
+  "updated_at": "2026-10-08T05:05:38+05:30",
+  "day": 7,
   "result": "ok",
   "run": {
     "host": "modal",
-    "id": "ta-01M4BPXQKDT0NY6FE7XZEM7M3R",
+    "id": "ta-01M4CBGV0NPARSXW8VCETTZ92R",
     "number": null,
     "trigger": "schedule",
-    "started_at": "2026-10-07T23:05:11+05:30",
-    "started_at_utc": "2026-10-07T17:35:11+00:00",
-    "seconds": 30
+    "started_at": "2026-10-08T05:05:09+05:30",
+    "started_at_utc": "2026-10-07T23:35:09+00:00",
+    "seconds": 29
   },
   "stages": [
     {
       "name": "deploy",
       "ok": true,
       "detail": "",
-      "seconds": 1.1
+      "seconds": 1.7
     },
     {
       "name": "collect",
       "ok": true,
-      "detail": "ep102 unfinished (VisualCheckFailed: ep102 beat 1: no verified alternative (Different event)); ep103 ready; ep104 unfinished (VisualCheckFailed: ep104 beat 1: replacement image failed (modern-looking image for a historical scene)); ep105 rejected (low scores: visuals; 1 frame problems); ep106 ready",
-      "seconds": 16.8
+      "detail": "ep107 unfinished (OutOfQuota: no model in ('gemini-3.8-flash', 'gemini-3.7-flash', 'gemini-3.6-flash', 'gemini-3-flash-preview', 'gemini-flash-latest', 'ovh:Qwen3.5-397B-A17B') has free quota left today); ep108 unfinished (Overloaded: every model in ('gemini-3.8-flash', 'gemini-3.7-flash', 'gemini-3.6-flash', 'gemini-3-flash-preview', 'gemini-flash-latest', 'ovh:Qwen3.5-397B-A17B') with quota left stayed overloaded for 25 minutes); ep109 unfinished (Overloaded: every model in ('gemini-3.8-flash', 'gemini-3.7-flash', 'gemini-3.6-flash', 'gemini-3-flash-preview', 'gemini-flash-latest', 'ovh:Qwen",
+      "seconds": 10.4
     },
     {
       "name": "start ep107",
       "ok": true,
       "detail": "Mary Rose (1545): a survivor said she heeled in the wind while turning and water poured through gun ports left open after firing, as Henry VIII watched",
-      "seconds": 0.8
+      "seconds": 1.7
     },
     {
       "name": "start ep108",
       "ok": true,
       "detail": "SS Californian (1912): it was close enough to see the Titanic's rockets, but its radio operator had gone to bed",
-      "seconds": 0.6
+      "seconds": 1.6
     },
     {
       "name": "start ep109",
       "ok": true,
       "detail": "Siege of Sidney Street (1911): Winston Churchill personally oversaw the gunfight and ordered firefighters not to save the burning building",
-      "seconds": 0.6
+      "seconds": 1.7
     },
     {
-      "name": "start ep110",
+      "name": "start ep111",
       "ok": true,
-      "detail": "Ross Sea party (1914): the team spent two years dying of scurvy to lay supply depots for Shackleton, never knowing his ship had been crushed on the other side of the continent",
-      "seconds": 0.7
+      "detail": "Siege of Baghdad (1258): accounts say the Tigris ran black with ink from the books thrown into it",
+      "seconds": 2.5
     }
   ],
   "errors": [],
   "owner_action": [],
   "notes": [
+    "ep107 stopped on Gemini's free quota; it resumes in a later run",
+    "ep108 stopped on Gemini's free tier being overloaded; it resumes in a later run",
+    "ep109 stopped on Gemini's free tier being overloaded; it resumes in a later run",
     "draft-only producer: no Buffer, Cloudinary, or Google publisher access"
   ],
   "inventory": {
@@ -65,7 +68,7 @@
       "ep107",
       "ep108",
       "ep109",
-      "ep110"
+      "ep111"
     ]
   },
   "queue": [],
@@ -91,100 +94,78 @@
   ],
   "made": [
     {
-      "id": "ep102",
+      "id": "ep107",
       "outcome": "unfinished",
-      "topic": "Silvertown explosion (1917): a fire at a TNT works beside crowded terraces set off about 50 tons of explosive at 6.52 pm",
-      "reason": "VisualCheckFailed: ep102 beat 1: no verified alternative (Different event)",
-      "quota": false,
+      "topic": "Mary Rose (1545): a survivor said she heeled in the wind while turning and water poured through gun ports left open after firing, as Henry VIII watched",
+      "reason": "OutOfQuota: no model in ('gemini-3.8-flash', 'gemini-3.7-flash', 'gemini-3.6-flash', 'gemini-3-flash-preview', 'gemini-flash-latest', 'ovh:Qwen3.5-397B-A17B') has free quota left today",
+      "quota": true,
       "overloaded": false
     },
     {
-      "id": "ep103",
-      "outcome": "ready",
-      "topic": "Halifax Explosion (1917): a burning munitions ship blew up in the harbor, the largest man-made explosion before the atomic bomb",
-      "title": "Why Did Hundreds Watch the Burning Ship in Halifax? 😳",
-      "scores": {
-        "hook": 5,
-        "clarity": 5,
-        "payoff": 5,
-        "visuals": 5,
-        "loop": 4,
-        "accuracy": 5
-      },
-      "draft": "drafts/ep103-aeecb48ff8cbc5eda19a395b515c10d4c54c15ce52a52d5e21c376ba6b9448e3.mp4"
-    },
-    {
-      "id": "ep104",
+      "id": "ep108",
       "outcome": "unfinished",
-      "topic": "Great Zimbabwe (c. 11th–15th centuries): colonial explorers refused to believe the massive granite walls were built by Africans, insisting for decades that the city must have been built by the Queen of Sheba",
-      "reason": "VisualCheckFailed: ep104 beat 1: replacement image failed (modern-looking image for a historical scene)",
+      "topic": "SS Californian (1912): it was close enough to see the Titanic's rockets, but its radio operator had gone to bed",
+      "reason": "Overloaded: every model in ('gemini-3.8-flash', 'gemini-3.7-flash', 'gemini-3.6-flash', 'gemini-3-flash-preview', 'gemini-flash-latest', 'ovh:Qwen3.5-397B-A17B') with quota left stayed overloaded for 25 minutes",
       "quota": false,
-      "overloaded": false
+      "overloaded": true
     },
     {
-      "id": "ep105",
+      "id": "ep109",
+      "outcome": "unfinished",
+      "topic": "Siege of Sidney Street (1911): Winston Churchill personally oversaw the gunfight and ordered firefighters not to save the burning building",
+      "reason": "Overloaded: every model in ('gemini-3.8-flash', 'gemini-3.7-flash', 'gemini-3.6-flash', 'gemini-3-flash-preview', 'gemini-flash-latest', 'ovh:Qwen3.5-397B-A17B') with quota left stayed overloaded for 25 minutes",
+      "quota": false,
+      "overloaded": true
+    },
+    {
+      "id": "ep110",
       "outcome": "rejected",
-      "topic": "Lizzie Borden (1892): the entire household spent the days before the murders suffering from severe food poisoning because they were eating mutton left out in a 90-degree heatwave",
-      "reason": "low scores: visuals; 1 frame problems"
-    },
-    {
-      "id": "ep106",
-      "outcome": "ready",
-      "topic": "Dust Bowl (1935): on Black Sunday, the air became so statically charged that it short-circuited car ignitions and knocked people to the ground with a single handshake",
-      "title": "Why Did the Sky Turn Black on a Sunday in 1935? ⚠️",
-      "scores": {
-        "hook": 4,
-        "clarity": 5,
-        "payoff": 4,
-        "visuals": 5,
-        "loop": 5,
-        "accuracy": 5
-      },
-      "draft": "drafts/ep106-b89b4dbbaee0ff37804747c3b03ffaaab06e84179d733a848fc8b94a627e0f5c.mp4"
+      "topic": "Ross Sea party (1914): the team spent two years dying of scurvy to lay supply depots for Shackleton, never knowing his ship had been crushed on the other side of the continent",
+      "reason": "research: only 3 claims have verified quotes from two different sites"
     }
   ],
   "spawned": [
     {
       "id": "ep107",
       "topic": "Mary Rose (1545): a survivor said she heeled in the wind while turning and water poured through gun ports left open after firing, as Henry VIII watched",
-      "call_id": "fc-01M4BPYS5WR5FAB4YWG8HW95Y1"
+      "call_id": "fc-01M4CBHQXN4GSEY4T8W5WPRGHY"
     },
     {
       "id": "ep108",
       "topic": "SS Californian (1912): it was close enough to see the Titanic's rockets, but its radio operator had gone to bed",
-      "call_id": "fc-01M4BPYSS5SZXFVMHDYYP7QPCF"
+      "call_id": "fc-01M4CBHSEEBHEP3ABKZG2PTJF2"
     },
     {
       "id": "ep109",
       "topic": "Siege of Sidney Street (1911): Winston Churchill personally oversaw the gunfight and ordered firefighters not to save the burning building",
-      "call_id": "fc-01M4BPYTCAJF1NQGQ1Q6AZP6NF"
+      "call_id": "fc-01M4CBHV32QJVRF8JTWRK2RQGM"
     },
     {
-      "id": "ep110",
-      "topic": "Ross Sea party (1914): the team spent two years dying of scurvy to lay supply depots for Shackleton, never knowing his ship had been crushed on the other side of the continent",
-      "call_id": "fc-01M4BPYV1WJAXHRHAND757XG4K"
+      "id": "ep111",
+      "topic": "Siege of Baghdad (1258): accounts say the Tigris ran black with ink from the books thrown into it",
+      "call_id": "fc-01M4CBHXJ3Z5NFHCGS7Y3HKBA7"
     }
   ],
   "in_cloud": [
     {
       "id": "ep107",
       "topic": "Mary Rose (1545): a survivor said she heeled in the wind while turning and water poured through gun ports left open after firing, as Henry VIII watched",
-      "spawned_at": "2026-10-07T23:05:38+05:30"
+      "spawned_at": "2026-10-08T05:05:31+05:30"
     },
     {
       "id": "ep108",
       "topic": "SS Californian (1912): it was close enough to see the Titanic's rockets, but its radio operator had gone to bed",
-      "spawned_at": "2026-10-07T23:05:39+05:30"
+      "spawned_at": "2026-10-08T05:05:33+05:30"
     },
     {
       "id": "ep109",
       "topic": "Siege of Sidney Street (1911): Winston Churchill personally oversaw the gunfight and ordered firefighters not to save the burning building",
-      "spawned_at": "2026-10-07T23:05:39+05:30"
+      "spawned_at": "2026-10-08T05:05:34+05:30"
     },
     {
-      "id": "ep110",
-      "topic": "Ross Sea party (1914): the team spent two years dying of scurvy to lay supply depots for Shackleton, never knowing his ship had been crushed on the other side of the continent",
-      "spawned_at": "2026-10-07T23:05:40+05:30"
+      "id": "ep111",
+      "topic": "Siege of Baghdad (1258): accounts say the Tigris ran black with ink from the books thrown into it",
+      "spawned_at": "2026-10-08T05:05:37+05:30"
     }
   ],
   "published": [],
@@ -192,33 +173,32 @@
   "failed_posts": [],
   "not_live": [],
   "llm": {
-    "calls": 28,
+    "calls": 19,
     "by_model": {
-      "gemini-3.7-flash": 4,
-      "gemini-3-flash-preview": 16,
-      "gemini-3.5-flash-lite": 8
+      "gemini-3.5-flash-lite": 18,
+      "gemini-3-flash-preview": 1
     },
     "out_of_quota": []
   },
   "renders": {
-    "modal": 7,
+    "modal": 3,
     "runner": 0
   },
   "daily_done": "2026-10-07",
   "minutes_this_month": 68.0,
   "minutes_budget": 2000,
   "modal_cost": {
-    "metered": 9.83,
+    "metered": 9.98,
     "billed": 0.0
   },
   "modal_credit": 30.0,
   "capacity": {
-    "cloud": 151,
+    "cloud": 150,
     "runner": 0,
     "runner_minutes": 0,
-    "modal_credit_left": 18.17
+    "modal_credit_left": 18.02
   },
   "made_here": 0,
-  "open_topics": 137,
+  "open_topics": 136,
   "parked_topics": 40
 }

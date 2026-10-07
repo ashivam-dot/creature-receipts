@@ -1,0 +1,178 @@
+id: ep109
+title: Why Did Churchill Let a London Building Burn? 😳
+series: The Last Hours
+description: In January 1911, Home Secretary Winston Churchill personally oversaw an armed siege in London's East End and
+  made the controversial decision to let a burning tenement turn to ash.
+sources:
+- https://web.archive.org/web/20160514185904/http://www.theguardian.com/century/1910-1919/Story/0,,126417,00.html
+- https://www.londonmuseum.org.uk/collections/london-stories/sidney-street-siege-east-end-shootout/
+- https://en.wikipedia.org/wiki/Siege_of_Sidney_Street
+- https://news.bbc.co.uk/today/hi/today/newsid_9278000/9278432.stm
+- https://web.archive.org/web/20160319080148/http://www.telegraph.co.uk/news/uknews/3081136/Tower-blocks-named-after-notorious-criminal-linked-to-police-killings.html
+hashtags:
+- '#history'
+- '#london'
+- '#churchill'
+tags:
+- Sidney Street
+- Winston Churchill
+- 1911 siege
+- London history
+- East End
+- firefighters
+voice:
+  engine: kokoro
+  voice: am_fenrir
+  speed: 1.15
+beats:
+- text: Winston Churchill personally directed a gunfight on the streets of London.
+  emphasis:
+  - Winston Churchill
+  - gunfight
+  sfx: whoosh
+  visual:
+    source: url
+    url: https://thumb.wikimedia.org/wikipedia/commons/thumb/0/02/Sir_Winston_Churchill_-_19086236948_%28restored%29.jpg/1920px-Sir_Winston_Churchill_-_19086236948_%28restored%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
+    credit:
+      source: Wikimedia Commons
+      title: Sir Winston Churchill - 19086236948 (restored).jpg
+      credit: Unknown author
+      license: Public domain
+      url: https://commons.wikimedia.org/wiki/File:Sir_Winston_Churchill_-_19086236948_(restored).jpg
+    fallbacks:
+    - color
+    motion: zoom_out
+    focus_x: 0.5
+    focus_y: 0.5
+- text: In January 1911, two armed revolutionaries held off police.
+  emphasis:
+  - January 1911
+  - armed revolutionaries
+  visual:
+    source: url
+    url: https://upload.wikimedia.org/wikipedia/commons/6/68/Siege_of_Sidney_Street_%E2%80%93_Churchill.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    credit:
+      source: Wikimedia Commons
+      title: Siege of Sidney Street – Churchill.jpg
+      credit: Unclear. There are six photographs on the page, and the newspaper states "Photographs by Illustrations Bureau,
+        Record Press and CN"
+      license: Public domain
+      url: https://commons.wikimedia.org/wiki/File:Siege_of_Sidney_Street_%E2%80%93_Churchill.jpg
+    fallbacks:
+    - card
+    - color
+    motion: pan_left
+    focus_x: 0.45
+    focus_y: 0.5
+    box:
+    - 0.35
+    - 0.1
+    - 0.5
+    - 0.8
+    card:
+      kind: dateline
+      big: January 1911
+      small: London East End
+- text: Modern automatic weapons easily outgunned the local force.
+  emphasis:
+  - automatic weapons
+  - outgunned
+  sfx: riser
+  visual:
+    source: url
+    url: https://thumb.wikimedia.org/wikipedia/commons/thumb/6/64/Siege_of_Sidney_Street_4e.JPG/1280px-Siege_of_Sidney_Street_4e.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
+    credit:
+      source: Wikimedia Commons
+      title: Siege of Sidney Street 4e.JPG
+      credit: Unclear. There are six photographs on the page, and the newspaper states "Photographs by Illustrations Bureau,
+        Record Press and CN"
+      license: Public domain
+      url: https://commons.wikimedia.org/wiki/File:Siege_of_Sidney_Street_4e.JPG
+    fallbacks:
+    - color
+    motion: zoom_out
+    focus_x: 0.5
+    focus_y: 0.5
+    box:
+    - 0.5
+    - 0.45
+    - 0.7
+    - 0.75
+- text: When the tenement caught fire, the Home Secretary blocked intervention.
+  emphasis:
+  - caught fire
+  - blocked intervention
+  sfx: whoosh
+  pause_after: 0.4
+  visual:
+    source: url
+    url: https://upload.wikimedia.org/wikipedia/commons/b/b1/Sidney_street_detectives.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    credit:
+      source: Wikimedia Commons
+      title: Sidney street detectives.jpg
+      credit: Unknown authorUnknown author
+      license: Public domain
+      url: https://commons.wikimedia.org/wiki/File:Sidney_street_detectives.jpg
+    fallbacks:
+    - card
+    - color
+    motion: pan_up
+    focus_x: 0.5
+    focus_y: 0.5
+    card:
+      kind: fact
+      big: Fire
+      small: Churchill stopped firefighters
+- text: Charred remains of two men were later recovered.
+  emphasis:
+  - Charred remains
+  - recovered
+  visual:
+    source: url
+    url: https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f8/Britain_Before_the_First_World_War_Q81835.jpg/960px-Britain_Before_the_First_World_War_Q81835.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
+    credit:
+      source: Wikimedia Commons
+      title: Britain Before the First World War Q81835.jpg
+      credit: Unknown authorUnknown author
+      license: Public domain
+      url: https://commons.wikimedia.org/wiki/File:Britain_Before_the_First_World_War_Q81835.jpg
+    fallbacks:
+    - color
+    motion: pan_down
+    focus_x: 0.5
+    focus_y: 0.5
+- text: An alleged ringleader named Peter vanished completely.
+  emphasis:
+  - Peter
+  - vanished completely
+  sfx: pop
+  visual:
+    source: url
+    url: https://upload.wikimedia.org/wikipedia/commons/0/0f/Peter_Piatkow_wanted_poster.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    credit:
+      source: Wikimedia Commons
+      title: Peter Piatkow wanted poster.jpg
+      credit: City of London Police
+      license: Public domain
+      url: https://commons.wikimedia.org/wiki/File:Peter_Piatkow_wanted_poster.jpg
+    fallbacks:
+    - color
+    motion: pan_up
+    focus_x: 0.5
+    focus_y: 0.5
+    box:
+    - 0.35
+    - 0.45
+    - 0.65
+    - 0.78
+- text: Nobody knows if he was inside while Winston Churchill directed the gunfight.
+  emphasis:
+  - Nobody knows
+  - Winston Churchill directed
+  visual:
+    reuse: 1
+    motion: zoom_in
+    focus_x: 0.5
+    focus_y: 0.5
+depth_motion: true
+hook_text: CHURCHILL AT WAR IN LONDON
