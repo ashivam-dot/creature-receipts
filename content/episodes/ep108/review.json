@@ -1,0 +1,92 @@
+{
+  "rounds": [
+    {
+      "at": "2026-10-08T05:10:32+05:30",
+      "check": {
+        "duration": 26.32,
+        "words": 67,
+        "integrated_lufs": -14.4,
+        "true_peak_dbfs": -1.7,
+        "warnings": [],
+        "speech_differences": [
+          "'a' heard as '(nothing)'",
+          "base.en: 'minutes' heard as 'in its' after 'went to bed'",
+          "base.en: 'arced' heard as 'arched' after 'later white rockets'"
+        ],
+        "speech_error": null,
+        "sources": [
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "designed card",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons"
+        ],
+        "speech_verification": {
+          "heard": "Sleeping radio operator missed the Titanic. The SS Californian sat motionless in the ice. Cyril Evans sent an ice warning earlier. The Titanic operator told him to shut up. Exhausted, Evans switched off his wireless and went to bed. Minutes later, white rockets arced into the night sky. Captain Stanley Lord dismissed the flares. Nobody woke the operator because a sleeping radio operator missed the Titanic.",
+          "model": "small.en",
+          "media_sha256": "a1a19e9c339821f91311978c35faf50f69e132fa69809a91fb8aab33098dc1b9",
+          "primary_differences": [
+            "'a' heard as '(nothing)'"
+          ],
+          "differences": [
+            "'a' heard as '(nothing)'",
+            "base.en: 'minutes' heard as 'in its' after 'went to bed'",
+            "base.en: 'arced' heard as 'arched' after 'later white rockets'"
+          ],
+          "corroboration": {
+            "model": "base.en",
+            "heard": "Sleeping radio operator missed the Titanic. The SS Californian sat motionless in the ice. Cyril Evans sent an ice warning earlier. The Titanic operator told him to shut up. Exhausted Evans switched off his wireless and went to bed. In its later white rockets arched into the night sky. Captain Stanley Lord dismissed the flares. Nobody woke the operator because a sleeping radio operator missed the Titanic.",
+            "differences": [
+              "'a' heard as '(nothing)'",
+              "'minutes' heard as 'in its' after 'went to bed'",
+              "'arced' heard as 'arched' after 'later white rockets'"
+            ],
+            "resolved": []
+          }
+        }
+      },
+      "media_sha256": "a1a19e9c339821f91311978c35faf50f69e132fa69809a91fb8aab33098dc1b9",
+      "scores": {
+        "hook": 4,
+        "clarity": 3,
+        "payoff": 3,
+        "visuals": 3,
+        "loop": 2,
+        "accuracy": 4
+      },
+      "notes": {
+        "hook": "Strong historical premise that grabs attention, though the title card text leans slightly clickbaity.",
+        "clarity": "The final beat introduces an illogical causal clause ('because...') that muddles the conclusion.",
+        "payoff": "The story cuts off without resolving the consequence or citing inquiry findings, leaving the dramatic tension unfulfilled.",
+        "visuals": "Beat 7 repeats the identical Willy Stower painting already shown in beat 6.",
+        "loop": "Connecting 'Nobody woke the operator because' into beat 1 creates a backwards, nonsensical causal loop.",
+        "accuracy": "Distress rockets fired over an hour after Evans slept, not 'minutes later' as implied by beat 6."
+      },
+      "frames": [
+        {
+          "beat": 7,
+          "problem": "The frame duplicates the exact same illustration used in beat 6 (Willy Stower's sinking painting)."
+        }
+      ],
+      "speech": [
+        {
+          "beat": 6,
+          "word": "arced",
+          "respelling": "arkt"
+        }
+      ],
+      "rewrite": [
+        "Beat 6: 'Past midnight, distress rockets arced into the night sky.'",
+        "Beat 7: 'Captain Stanley Lord dismissed the signals and let his ship drift.'",
+        "Beat 8: 'Inquiries concluded Californian could have saved hundreds, all while...'"
+      ],
+      "better_than_last": "",
+      "judge": "gemini-3.7-flash",
+      "passed": false
+    }
+  ],
+  "best_round": 1
+}

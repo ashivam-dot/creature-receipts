@@ -1,0 +1,189 @@
+{
+  "viable": false,
+  "reason": "The sources cannot support the story because Wikipedia is counted as a single site (S1 and S2), and the remaining independent sources (S3–S7) yield only five cross-site corroborated claims with exact verbatim quotes, falling well short of the required ten.",
+  "story": "For five centuries, Baghdad stood as the intellectual capital of the Islamic Golden Age. Established in 762 by Caliph al-Mansur, the city housed the legendary House of Wisdom, where master thinkers like al-Kindi harmonized classical philosophy and al-Khwarizmi helped pioneer algebra. However, in early 1258, a colossal Mongol army led by Hulagu Khan enveloped the metropolis. Facing internal political division and severe famine, the city crumbled within weeks. When the defenses collapsed, refugees succumbed to fatal pestilence in numbers so overwhelming that corpses were dumped directly into the Tigris River. Mongol forces sacked Baghdad's magnificent palaces and libraries, discarding centuries of irreplaceable scholarship. Popular lore claimed the Tigris ran black with ink from countless tossed volumes. Caliph al-Musta'sim was executed, ending the Abbasid Caliphate and devastating the greatest repository of ancient and medieval learning in the Islamic world.",
+  "angle": "So many refugees died of pestilence and devastation during the 1258 siege that the people of Baghdad could no longer bury their dead, dumping bodies en masse into the Tigris River alongside centuries of thrown manuscripts.",
+  "claims": [
+    {
+      "claim": "Baghdad was founded in 762 by the Abbasid Caliph al-Mansur.",
+      "sources": [
+        "S2",
+        "S3"
+      ],
+      "evidence": [
+        {
+          "source": "S2",
+          "quote": "Baghdad was founded in 762 by al-Mansur, the second caliph of the Abbasid dynasty, which had recently overthrown the empire of the Umayyads."
+        },
+        {
+          "source": "S3",
+          "quote": "Baghdad had been established in 762 by the Abbasid Caliph al-Mansur."
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim": "The word algorithm is derived from the name of the scholar al-Khwarizmi.",
+      "sources": [
+        "S1",
+        "S5"
+      ],
+      "evidence": [
+        {
+          "source": "S1",
+          "quote": "Muhammad ibn Musa al-Khwarizmi (d. 850) — Persian polymath head of the House of Wisdom, founder of Algebra, the word \"algorithm\" was named after him."
+        },
+        {
+          "source": "S5",
+          "quote": "There were the astronomer al-Khwarizmi (850), from whose name comes the word \"algorithm\";"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim": "The Arab philosopher al-Kindi reconciled the philosophical ideas of Aristotle and Plato.",
+      "sources": [
+        "S1",
+        "S5"
+      ],
+      "evidence": [
+        {
+          "source": "S1",
+          "quote": "Al-Kindi (d. 873) — considered to be among the first Arab philosophers, he combined the ideology of Aristotle and Plato."
+        },
+        {
+          "source": "S5",
+          "quote": "Of the role he played, it is enough to say that he was the creator of a doctrine that was to flourish in Arab philosophy, the idea of conciliation between the positions of Aristotle and Plato."
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim": "Accounts describe books from the libraries of Baghdad being cast into the Tigris River in quantities so immense that the river turned black with ink.",
+      "sources": [
+        "S1",
+        "S3"
+      ],
+      "evidence": [
+        {
+          "source": "S1",
+          "quote": "The books from Baghdad's libraries were thrown into the Tigris River in such quantities that the river was said to have run black with the ink from their pages."
+        },
+        {
+          "source": "S3",
+          "quote": "The books from Baghdad’s libraries were thrown into the Tigris River in such quantities that the river ran black with the ink from the books."
+        }
+      ],
+      "confidence": "medium"
+    }
+  ],
+  "disputed": [
+    "Accounts claiming the Tigris River ran black with ink from discarded books are treated by modern historians, such as Michal Biran, as a literary trope magnifying Mongol barbarity rather than a literal physical event; scripts should attribute this as 'according to traditional accounts' or note modern skepticism.",
+    "The total death toll of the siege ranges wildly from 200,000 to two million across different medieval chronicles and letters; scripts should frame casualty figures with attribution.",
+    "Whether the fatal epidemic during the siege was Yersinia pestis transmitted by Mongol supply lines or general siege-related diseases caused by overcrowding and famine is contested by modern researchers."
+  ],
+  "visuals": [
+    {
+      "subject": "14th-century Persian miniature of the Siege of Baghdad by Hulagu Khan",
+      "queries": [
+        "Hulagu siege of Baghdad Rashid al-Din",
+        "Diez Albums Hulagu Baghdad"
+      ]
+    },
+    {
+      "subject": "Historical plan of the Round City of Baghdad during the Abbasid Caliphate",
+      "queries": [
+        "Round city of Baghdad plan",
+        "Baghdad 762 map Abbasid"
+      ]
+    },
+    {
+      "subject": "Medieval manuscript depiction of scholars studying in an Abbasid library",
+      "queries": [
+        "Maqamat of al-Hariri Baghdad library",
+        "Yahya al-Wasiti library Maqamat"
+      ]
+    },
+    {
+      "subject": "Persian miniature of Caliph al-Musta'sim brought before Hulagu Khan",
+      "queries": [
+        "Al-Musta'sim Hulagu Rashid al-Din",
+        "Hulagu Khan and Caliph Mustasim"
+      ]
+    },
+    {
+      "subject": "Miniature portrait of the medieval polymath Nasir al-Din al-Tusi",
+      "queries": [
+        "Nasir al-Din al-Tusi miniature",
+        "Tusi observatory manuscript"
+      ]
+    },
+    {
+      "subject": "Early Islamic brass astrolabe from the Abbasid period",
+      "queries": [
+        "Abbasid astrolabe brass",
+        "Islamic brass astrolabe 9th century"
+      ]
+    },
+    {
+      "subject": "Ruins of the Ismaili fortress of Alamut taken by Hulagu before Baghdad",
+      "queries": [
+        "Alamut castle ruins Iran",
+        "Alamut fortress rock"
+      ]
+    },
+    {
+      "subject": "The Tigris River flowing through modern Baghdad",
+      "queries": [
+        "Tigris River Baghdad",
+        "Tigris river Iraq aerial"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "label": "S1",
+      "url": "https://en.wikipedia.org/wiki/House_of_Wisdom",
+      "title": "House of Wisdom",
+      "site": "wikipedia.org"
+    },
+    {
+      "label": "S2",
+      "url": "https://en.wikipedia.org/wiki/Siege_of_Baghdad",
+      "title": "Siege of Baghdad",
+      "site": "wikipedia.org"
+    },
+    {
+      "label": "S3",
+      "url": "https://web.archive.org/web/20160814182125/http://lostislamichistory.com/mongols/",
+      "title": "The Mongol Invasion and the Destruction of Baghdad",
+      "site": "lostislamichistory.com"
+    },
+    {
+      "label": "S4",
+      "url": "https://web.archive.org/web/20230326023107/https://www.academia.edu/45652201",
+      "title": "The house of wisdom (Bait Al-Hikmah): A sign of glorious period of Abbasids caliphate and development of science",
+      "site": "academia.edu"
+    },
+    {
+      "label": "S5",
+      "url": "http://www.fordham.edu/halsall/med/wiet.html",
+      "title": "Internet History Sourcebooks Project",
+      "site": "fordham.edu"
+    },
+    {
+      "label": "S6",
+      "url": "https://web.archive.org/web/20110430043328/https://faculty.washington.edu/modelski/CAWC.htm",
+      "title": "Central Asian world cities",
+      "site": "washington.edu"
+    },
+    {
+      "label": "S7",
+      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11949627",
+      "title": "Plague and the Mongol conquest of Baghdad (1258)? A reevaluation of the sources",
+      "site": "nih.gov"
+    }
+  ],
+  "topic": "Siege of Baghdad (1258): accounts say the Tigris ran black with ink from the books thrown into it",
+  "series": "Fallen Empires"
+}

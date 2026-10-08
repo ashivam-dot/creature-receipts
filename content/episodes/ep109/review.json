@@ -1,0 +1,69 @@
+{
+  "rounds": [
+    {
+      "at": "2026-10-08T05:13:24+05:30",
+      "check": {
+        "duration": 28.3,
+        "words": 65,
+        "integrated_lufs": -14.4,
+        "true_peak_dbfs": -1.8,
+        "warnings": [],
+        "speech_differences": [],
+        "speech_error": null,
+        "sources": [
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons"
+        ],
+        "speech_verification": {
+          "heard": "Winston Churchill personally directed a gunfight on the streets of London. In January 1911, two armed revolutionaries held off police. Modern automatic weapons easily outgunned the local force. When the tenement caught fire, the Home Secretary blocked intervention. Charred remains of two men were later recovered. An alleged ringleader named Peter vanished completely. Nobody knows if he was inside while Winston Churchill directed the gunfight.",
+          "model": "small.en",
+          "media_sha256": "470512f912630410e46f3b039ee105ad3c42b775e728172bb30bec23dcd48933",
+          "primary_differences": [],
+          "differences": []
+        }
+      },
+      "media_sha256": "470512f912630410e46f3b039ee105ad3c42b775e728172bb30bec23dcd48933",
+      "scores": {
+        "hook": 4,
+        "clarity": 5,
+        "payoff": 4,
+        "visuals": 3,
+        "loop": 3,
+        "accuracy": 3
+      },
+      "notes": {
+        "hook": "Strong dramatic premise, though framing Churchill's role as directing the shootout overstates settled consensus.",
+        "clarity": "The narrative progression is straightforward and simple to follow beat by beat.",
+        "payoff": "The unsolved disappearance of Peter the Painter delivers a solid historical mystery to end on.",
+        "visuals": "Using the famous 1941 portrait of an elderly Churchill for a 1911 event is jarringly anachronistic.",
+        "loop": "Repeating 'Winston Churchill directed the gunfight' across the seam creates an awkward, repetitive echo rather than a continuous loop.",
+        "accuracy": "Claims Churchill 'personally directed' the gunfight as settled fact, violating the guidance on his disputed level of command."
+      },
+      "frames": [
+        {
+          "beat": 1,
+          "problem": "Anachronistic; shows Churchill in December 1941 during WWII rather than 1911 when he was a 36-year-old Home Secretary."
+        },
+        {
+          "beat": 6,
+          "problem": "The wanted poster is mostly text with print far too small to read at phone size."
+        }
+      ],
+      "speech": [],
+      "rewrite": [
+        "Beat 1: change to 'Winston Churchill rushed to the front line of a gunfight on the streets of London.'",
+        "Beat 7: change to 'Nobody knows if he escaped the inferno before...' to loop seamlessly into Beat 1.",
+        "On-screen text over beat 1: change to 'CHURCHILL UNDER FIRE IN LONDON'."
+      ],
+      "better_than_last": "Maintains a faster, punchier tempo while keeping the historical conflict centered on a single location.",
+      "judge": "gemini-3.7-flash",
+      "passed": false
+    }
+  ],
+  "best_round": 1
+}

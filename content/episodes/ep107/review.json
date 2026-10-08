@@ -1,0 +1,181 @@
+{
+  "rounds": [
+    {
+      "at": "2026-10-08T05:09:09+05:30",
+      "check": {
+        "duration": 26.0,
+        "words": 66,
+        "integrated_lufs": -14.3,
+        "true_peak_dbfs": -1.9,
+        "warnings": [],
+        "speech_differences": [
+          "'viii' heard as 'the 8th' after 'king henry'",
+          "'mary' heard as 'merry' after 'in minutes the'",
+          "'heeled' heard as 'healed' after 'the turning ship'",
+          "'viii' heard as 'the 8th' after 'why king henry'",
+          "base.en: 'viii' heard as 'vii' after 'king henry'",
+          "base.en: 'heeled' heard as 'healed' after 'the turning ship'",
+          "base.en: 'viii' heard as 'vii' after 'why king henry'"
+        ],
+        "speech_error": null,
+        "sources": [
+          "Wikimedia Commons",
+          "designed card",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons"
+        ],
+        "speech_verification": {
+          "heard": "King Henry VIII watched his favorite warship capsize in minutes. The Merry Rose sank during the Battle of the Solent. A survivor testified that the turning ship healed in the wind. Water poured through lower gunports left open after firing. Anti-boarding netting then trapped nearly 500 men below. Centuries later, the recovered wreck reveals why King Henry VIII watched his favorite warship capsize in minutes.",
+          "model": "small.en",
+          "media_sha256": "9c261da71526b14249d633cf3f1bb683733451efeb6f138ff7fd59b3c6141cbf",
+          "primary_differences": [
+            "'viii' heard as 'the 8th' after 'king henry'",
+            "'mary' heard as 'merry' after 'in minutes the'",
+            "'heeled' heard as 'healed' after 'the turning ship'",
+            "'viii' heard as 'the 8th' after 'why king henry'"
+          ],
+          "differences": [
+            "'viii' heard as 'the 8th' after 'king henry'",
+            "'mary' heard as 'merry' after 'in minutes the'",
+            "'heeled' heard as 'healed' after 'the turning ship'",
+            "'viii' heard as 'the 8th' after 'why king henry'",
+            "base.en: 'viii' heard as 'vii' after 'king henry'",
+            "base.en: 'heeled' heard as 'healed' after 'the turning ship'",
+            "base.en: 'viii' heard as 'vii' after 'why king henry'"
+          ],
+          "corroboration": {
+            "model": "base.en",
+            "heard": "King Henry Vii watched his favorite warship capsize in minutes. Mary Rose sank during the Battle of the Solent. Survivor testified that the turning ship healed in the wind. Water poured through lower gunports left open after firing. Anti-boarding netting then trapped nearly 500 men below. Centuries later, the recovered wreck reveals why King Henry Vii watched his favorite warship capsize in minutes.",
+            "differences": [
+              "'viii' heard as 'vii' after 'king henry'",
+              "'the' heard as '(nothing)' after 'capsize in minutes'",
+              "'a' heard as '(nothing)' after 'of the solent'",
+              "'heeled' heard as 'healed' after 'the turning ship'",
+              "'viii' heard as 'vii' after 'why king henry'"
+            ],
+            "resolved": []
+          }
+        }
+      },
+      "media_sha256": "9c261da71526b14249d633cf3f1bb683733451efeb6f138ff7fd59b3c6141cbf",
+      "scores": {
+        "hook": 5,
+        "clarity": 5,
+        "payoff": 5,
+        "visuals": 3,
+        "loop": 5,
+        "accuracy": 5
+      },
+      "notes": {
+        "hook": "Strong, immediate historical hook featuring King Henry VIII watching his flagship capsize.",
+        "clarity": "Logical and effortless step-by-step narrative explaining the sequence of the disaster.",
+        "payoff": "The tragic irony of anti-boarding netting trapping the crew provides a memorable payoff.",
+        "visuals": "Beat 5 displays an anachronistic 19th-century coastal gun rather than Tudor netting or naval combat.",
+        "loop": "The final sentence connects smoothly into the starting line for a perfect loop.",
+        "accuracy": "Accurately attributes the cause to eyewitness survivor testimony without overstating disputed points."
+      },
+      "frames": [
+        {
+          "beat": 5,
+          "problem": "Anachronistic modern naval cannon image that is off-topic for Tudor anti-boarding netting."
+        }
+      ],
+      "speech": [],
+      "rewrite": [],
+      "better_than_last": "Unlike ep054, this Short completes a full narrative arc with a compelling historical payoff.",
+      "judge": "gemini-3.6-flash",
+      "passed": false
+    },
+    {
+      "at": "2026-10-08T05:10:46+05:30",
+      "check": {
+        "duration": 26.0,
+        "words": 66,
+        "integrated_lufs": -14.3,
+        "true_peak_dbfs": -1.9,
+        "warnings": [],
+        "speech_differences": [
+          "'viii' heard as 'the 8th' after 'king henry'",
+          "'mary' heard as 'merry' after 'in minutes the'",
+          "'heeled' heard as 'healed' after 'the turning ship'",
+          "'viii' heard as 'the 8th' after 'why king henry'",
+          "base.en: 'viii' heard as 'vii' after 'king henry'",
+          "base.en: 'heeled' heard as 'healed' after 'the turning ship'",
+          "base.en: 'viii' heard as 'vii' after 'why king henry'"
+        ],
+        "speech_error": null,
+        "sources": [
+          "Wikimedia Commons",
+          "designed card",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons",
+          "Wikimedia Commons"
+        ],
+        "speech_verification": {
+          "heard": "King Henry VIII watched his favorite warship capsize in minutes. The Merry Rose sank during the Battle of the Solent. A survivor testified that the turning ship healed in the wind. Water poured through lower gunports left open after firing. Anti-boarding netting then trapped nearly 500 men below. Centuries later, the recovered wreck reveals why King Henry VIII watched his favorite warship capsize in minutes.",
+          "model": "small.en",
+          "media_sha256": "0ad5008272a88fd692e5c9b35e9de80d220a7182371ad9f7edad9dfdda9d00ca",
+          "primary_differences": [
+            "'viii' heard as 'the 8th' after 'king henry'",
+            "'mary' heard as 'merry' after 'in minutes the'",
+            "'heeled' heard as 'healed' after 'the turning ship'",
+            "'viii' heard as 'the 8th' after 'why king henry'"
+          ],
+          "differences": [
+            "'viii' heard as 'the 8th' after 'king henry'",
+            "'mary' heard as 'merry' after 'in minutes the'",
+            "'heeled' heard as 'healed' after 'the turning ship'",
+            "'viii' heard as 'the 8th' after 'why king henry'",
+            "base.en: 'viii' heard as 'vii' after 'king henry'",
+            "base.en: 'heeled' heard as 'healed' after 'the turning ship'",
+            "base.en: 'viii' heard as 'vii' after 'why king henry'"
+          ],
+          "corroboration": {
+            "model": "base.en",
+            "heard": "King Henry Vii watched his favorite warship capsize in minutes. Mary Rose sank during the Battle of the Solent. Survivor testified that the turning ship healed in the wind. Water poured through lower gunports left open after firing. Anti-boarding netting then trapped nearly 500 men below. Centuries later, the recovered wreck reveals why King Henry Vii watched his favorite warship capsize in minutes.",
+            "differences": [
+              "'viii' heard as 'vii' after 'king henry'",
+              "'the' heard as '(nothing)' after 'capsize in minutes'",
+              "'a' heard as '(nothing)' after 'of the solent'",
+              "'heeled' heard as 'healed' after 'the turning ship'",
+              "'viii' heard as 'vii' after 'why king henry'"
+            ],
+            "resolved": []
+          }
+        }
+      },
+      "media_sha256": "0ad5008272a88fd692e5c9b35e9de80d220a7182371ad9f7edad9dfdda9d00ca",
+      "scores": {
+        "hook": 5,
+        "clarity": 5,
+        "payoff": 5,
+        "visuals": 4,
+        "loop": 5,
+        "accuracy": 5
+      },
+      "notes": {
+        "hook": "Strong hook that immediately establishes the stakes and high-profile witness without being graphic.",
+        "clarity": "The progression from the sinking's observation to the technical cause is very easy to follow.",
+        "payoff": "The specific detail about the anti-boarding netting creates a tragic and memorable resolution.",
+        "visuals": "Most images are historically accurate, but the depiction of the gun crew is from a different context.",
+        "loop": "The verbatim repetition of the hook at the end creates a perfectly seamless loop.",
+        "accuracy": "All claims, including the crew count and sinking cause, align with the provided research."
+      },
+      "frames": [
+        {
+          "beat": 5,
+          "problem": "The image depicts a Hanseatic gun from a late 19th-century illustration rather than the Mary Rose or the anti-boarding netting mentioned."
+        }
+      ],
+      "speech": [],
+      "rewrite": [],
+      "better_than_last": "The narrative loop is more precisely engineered than ep051, using identical phrasing for a seamless transition.",
+      "judge": "gemini-3-flash-preview",
+      "passed": false
+    }
+  ],
+  "best_round": 2
+}

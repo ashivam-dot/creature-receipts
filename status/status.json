@@ -1,52 +1,52 @@
 {
-  "updated_at": "2026-10-08T05:05:38+05:30",
+  "updated_at": "2026-10-08T11:05:43+05:30",
   "day": 7,
   "result": "ok",
   "run": {
     "host": "modal",
-    "id": "ta-01M4CBGV0NPARSXW8VCETTZ92R",
+    "id": "ta-01M4D040ASWK1Z7PKFJ7E27QNR",
     "number": null,
     "trigger": "schedule",
-    "started_at": "2026-10-08T05:05:09+05:30",
-    "started_at_utc": "2026-10-07T23:35:09+00:00",
-    "seconds": 29
+    "started_at": "2026-10-08T11:05:12+05:30",
+    "started_at_utc": "2026-10-08T05:35:12+00:00",
+    "seconds": 31
   },
   "stages": [
     {
       "name": "deploy",
       "ok": true,
       "detail": "",
-      "seconds": 1.7
+      "seconds": 1.8
     },
     {
       "name": "collect",
       "ok": true,
-      "detail": "ep107 unfinished (OutOfQuota: no model in ('gemini-3.8-flash', 'gemini-3.7-flash', 'gemini-3.6-flash', 'gemini-3-flash-preview', 'gemini-flash-latest', 'ovh:Qwen3.5-397B-A17B') has free quota left today); ep108 unfinished (Overloaded: every model in ('gemini-3.8-flash', 'gemini-3.7-flash', 'gemini-3.6-flash', 'gemini-3-flash-preview', 'gemini-flash-latest', 'ovh:Qwen3.5-397B-A17B') with quota left stayed overloaded for 25 minutes); ep109 unfinished (Overloaded: every model in ('gemini-3.8-flash', 'gemini-3.7-flash', 'gemini-3.6-flash', 'gemini-3-flash-preview', 'gemini-flash-latest', 'ovh:Qwen",
-      "seconds": 10.4
+      "detail": "ep107 unfinished (OutOfQuota: no model in ('gemini-3.8-flash', 'gemini-3.7-flash', 'gemini-3.6-flash', 'gemini-3-flash-preview', 'gemini-flash-latest', 'ovh:Qwen3.5-397B-A17B') has free quota left today); ep108 unfinished (Overloaded: every model in ('gemini-3.8-flash', 'gemini-3.7-flash', 'gemini-3.6-flash', 'gemini-3-flash-preview', 'gemini-flash-latest', 'ovh:Qwen3.5-397B-A17B') with quota left stayed overloaded for 25 minutes); ep109 unfinished (RuntimeError: ep109 script still breaks the rules: ['The hook (beat 1) must be 12 words or fewer (it has 15: \"Winston Churchill rushed to the fron",
+      "seconds": 12.9
     },
     {
       "name": "start ep107",
       "ok": true,
       "detail": "Mary Rose (1545): a survivor said she heeled in the wind while turning and water poured through gun ports left open after firing, as Henry VIII watched",
-      "seconds": 1.7
+      "seconds": 1.9
     },
     {
       "name": "start ep108",
       "ok": true,
       "detail": "SS Californian (1912): it was close enough to see the Titanic's rockets, but its radio operator had gone to bed",
-      "seconds": 1.6
+      "seconds": 1.8
     },
     {
       "name": "start ep109",
       "ok": true,
       "detail": "Siege of Sidney Street (1911): Winston Churchill personally oversaw the gunfight and ordered firefighters not to save the burning building",
-      "seconds": 1.7
+      "seconds": 1.5
     },
     {
-      "name": "start ep111",
+      "name": "start ep112",
       "ok": true,
-      "detail": "Siege of Baghdad (1258): accounts say the Tigris ran black with ink from the books thrown into it",
-      "seconds": 2.5
+      "detail": "Denmark expedition (1907): dying of starvation in an Arctic cave, Jørgen Brønlund pinned his diary and maps to his coat before freezing to death",
+      "seconds": 1.7
     }
   ],
   "errors": [],
@@ -54,7 +54,6 @@
   "notes": [
     "ep107 stopped on Gemini's free quota; it resumes in a later run",
     "ep108 stopped on Gemini's free tier being overloaded; it resumes in a later run",
-    "ep109 stopped on Gemini's free tier being overloaded; it resumes in a later run",
     "draft-only producer: no Buffer, Cloudinary, or Google publisher access"
   ],
   "inventory": {
@@ -68,7 +67,7 @@
       "ep107",
       "ep108",
       "ep109",
-      "ep111"
+      "ep112"
     ]
   },
   "queue": [],
@@ -113,59 +112,59 @@
       "id": "ep109",
       "outcome": "unfinished",
       "topic": "Siege of Sidney Street (1911): Winston Churchill personally oversaw the gunfight and ordered firefighters not to save the burning building",
-      "reason": "Overloaded: every model in ('gemini-3.8-flash', 'gemini-3.7-flash', 'gemini-3.6-flash', 'gemini-3-flash-preview', 'gemini-flash-latest', 'ovh:Qwen3.5-397B-A17B') with quota left stayed overloaded for 25 minutes",
+      "reason": "RuntimeError: ep109 script still breaks the rules: ['The hook (beat 1) must be 12 words or fewer (it has 15: \"Winston Churchill rushed to the front line of a gunfight on the streets of London.\"); cut at least 3 words and keep its meaning.']",
       "quota": false,
-      "overloaded": true
+      "overloaded": false
     },
     {
-      "id": "ep110",
+      "id": "ep111",
       "outcome": "rejected",
-      "topic": "Ross Sea party (1914): the team spent two years dying of scurvy to lay supply depots for Shackleton, never knowing his ship had been crushed on the other side of the continent",
-      "reason": "research: only 3 claims have verified quotes from two different sites"
+      "topic": "Siege of Baghdad (1258): accounts say the Tigris ran black with ink from the books thrown into it",
+      "reason": "research: The sources cannot support the story because Wikipedia is counted as a single site (S1 and S2), and the remaining independent sources (S3–S7) yield only five cross-site corroborated claims with exact verbatim quotes, falling well short of the required ten."
     }
   ],
   "spawned": [
     {
       "id": "ep107",
       "topic": "Mary Rose (1545): a survivor said she heeled in the wind while turning and water poured through gun ports left open after firing, as Henry VIII watched",
-      "call_id": "fc-01M4CBHQXN4GSEY4T8W5WPRGHY"
+      "call_id": "fc-01M4D0536D718SKNEV3BFZT2VX"
     },
     {
       "id": "ep108",
       "topic": "SS Californian (1912): it was close enough to see the Titanic's rockets, but its radio operator had gone to bed",
-      "call_id": "fc-01M4CBHSEEBHEP3ABKZG2PTJF2"
+      "call_id": "fc-01M4D054ZAAAD5H4MF3FFWH64Q"
     },
     {
       "id": "ep109",
       "topic": "Siege of Sidney Street (1911): Winston Churchill personally oversaw the gunfight and ordered firefighters not to save the burning building",
-      "call_id": "fc-01M4CBHV32QJVRF8JTWRK2RQGM"
+      "call_id": "fc-01M4D056E743G396Q1GW4FH7R6"
     },
     {
-      "id": "ep111",
-      "topic": "Siege of Baghdad (1258): accounts say the Tigris ran black with ink from the books thrown into it",
-      "call_id": "fc-01M4CBHXJ3Z5NFHCGS7Y3HKBA7"
+      "id": "ep112",
+      "topic": "Denmark expedition (1907): dying of starvation in an Arctic cave, Jørgen Brønlund pinned his diary and maps to his coat before freezing to death",
+      "call_id": "fc-01M4D0584T2SGSTS3Q1VAZJKBV"
     }
   ],
   "in_cloud": [
     {
       "id": "ep107",
       "topic": "Mary Rose (1545): a survivor said she heeled in the wind while turning and water poured through gun ports left open after firing, as Henry VIII watched",
-      "spawned_at": "2026-10-08T05:05:31+05:30"
+      "spawned_at": "2026-10-08T11:05:37+05:30"
     },
     {
       "id": "ep108",
       "topic": "SS Californian (1912): it was close enough to see the Titanic's rockets, but its radio operator had gone to bed",
-      "spawned_at": "2026-10-08T05:05:33+05:30"
+      "spawned_at": "2026-10-08T11:05:39+05:30"
     },
     {
       "id": "ep109",
       "topic": "Siege of Sidney Street (1911): Winston Churchill personally oversaw the gunfight and ordered firefighters not to save the burning building",
-      "spawned_at": "2026-10-08T05:05:34+05:30"
+      "spawned_at": "2026-10-08T11:05:40+05:30"
     },
     {
-      "id": "ep111",
-      "topic": "Siege of Baghdad (1258): accounts say the Tigris ran black with ink from the books thrown into it",
-      "spawned_at": "2026-10-08T05:05:37+05:30"
+      "id": "ep112",
+      "topic": "Denmark expedition (1907): dying of starvation in an Arctic cave, Jørgen Brønlund pinned his diary and maps to his coat before freezing to death",
+      "spawned_at": "2026-10-08T11:05:42+05:30"
     }
   ],
   "published": [],
@@ -173,32 +172,34 @@
   "failed_posts": [],
   "not_live": [],
   "llm": {
-    "calls": 19,
+    "calls": 12,
     "by_model": {
-      "gemini-3.5-flash-lite": 18,
-      "gemini-3-flash-preview": 1
+      "gemini-3.6-flash": 1,
+      "gemini-3-flash-preview": 3,
+      "gemini-3.7-flash": 3,
+      "gemini-3.5-flash-lite": 5
     },
     "out_of_quota": []
   },
   "renders": {
-    "modal": 3,
+    "modal": 6,
     "runner": 0
   },
   "daily_done": "2026-10-07",
   "minutes_this_month": 68.0,
   "minutes_budget": 2000,
   "modal_cost": {
-    "metered": 9.98,
+    "metered": 10.17,
     "billed": 0.0
   },
   "modal_credit": 30.0,
   "capacity": {
-    "cloud": 150,
+    "cloud": 148,
     "runner": 0,
     "runner_minutes": 0,
-    "modal_credit_left": 18.02
+    "modal_credit_left": 17.83
   },
   "made_here": 0,
-  "open_topics": 136,
+  "open_topics": 135,
   "parked_topics": 40
 }

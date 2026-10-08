@@ -1,8 +1,7 @@
 id: ep108
 title: Why Did the SS Californian Ignore Titanic's Rockets? 😳
 series: Warnings Ignored
-description: The SS Californian sat in an ice field just miles away from the Titanic as it sank, but its wireless operator
-  never heard the distress calls.
+description: How the SS Californian sat within sight of the sinking Titanic while its wireless operator slept.
 sources:
 - https://en.wikipedia.org/wiki/SS_Californian
 - https://echoesofhistorypast.com/blog/californian-ship-watched-titanic-sink-captain-lord.html
@@ -16,11 +15,11 @@ hashtags:
 - '#shipwreck'
 tags:
 - SS Californian
-- RMS Titanic
+- Titanic
 - Stanley Lord
 - Cyril Evans
-- Warnings Ignored
-- '1912'
+- warnings ignored
+- maritime history
 voice:
   engine: kokoro
   voice: am_fenrir
@@ -28,8 +27,8 @@ voice:
 beats:
 - text: A sleeping radio operator missed the Titanic.
   emphasis:
-  - sleeping
-  - missed
+  - sleeping radio operator
+  - Titanic
   visual:
     source: url
     url: https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e8/Titanic%27s_Marconi_room_antique.jpg/960px-Titanic%27s_Marconi_room_antique.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
@@ -48,8 +47,8 @@ beats:
     focus_y: 0.5
 - text: The SS Californian sat motionless in the ice.
   emphasis:
+  - SS Californian
   - motionless
-  - ice
   sfx: whoosh
   visual:
     source: url
@@ -83,58 +82,40 @@ beats:
     motion: zoom_out
     focus_x: 0.5
     focus_y: 0.5
-- text: Titanic's operator snapped at him to shut up.
+- text: The Titanic operator told him to shut up.
   emphasis:
   - shut up
   sfx: pop
   pause_after: 0.4
   visual:
-    source: url
-    url: https://upload.wikimedia.org/wikipedia/commons/0/00/Wireless_Operator_Sending_Messages_from_SS_Olympic_Radio_Station.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
-    credit:
-      source: Wikimedia Commons
-      title: Wireless Operator Sending Messages from SS Olympic Radio Station.jpg
-      credit: Sinking of the "Titanic," Most Appalling Ocean Horror  Jay Henry Mowbray, Ph.D., LL.D. The Minter Company, Harrisburg,
-        PA, 1912
-      license: Public domain
-      url: https://commons.wikimedia.org/wiki/File:Wireless_Operator_Sending_Messages_from_SS_Olympic_Radio_Station.jpg
-    fallbacks:
-    - card
-    - color
-    motion: pan_left
-    focus_x: 0.5
-    focus_y: 0.5
-    box:
-    - 0.35
-    - 0.4
-    - 0.67
-    - 0.9
+    source: card
     card:
       kind: quote
       big: shut up
       small: Titanic Operator
-- text: At eleven thirty, Evans switched off his wireless.
+    motion: zoom_in
+- text: Exhausted, Evans switched off his wireless and went to bed.
   emphasis:
   - switched off
-  - wireless
+  - went to bed
   sfx: riser
   visual:
     source: url
-    url: https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a7/B-57_Titanic_suite.jpg/3840px-B-57_Titanic_suite.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
+    url: https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dd/Steamship_wireless_T_antenna.jpg/1280px-Steamship_wireless_T_antenna.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
     credit:
       source: Wikimedia Commons
-      title: B-57 Titanic suite.jpg
-      credit: Robert Welch
+      title: Steamship wireless T antenna.jpg
+      credit: Charles R. Gibson
       license: Public domain
-      url: https://commons.wikimedia.org/wiki/File:B-57_Titanic_suite.jpg
+      url: https://commons.wikimedia.org/wiki/File:Steamship_wireless_T_antenna.jpg
     fallbacks:
     - color
     motion: pan_right
     focus_x: 0.5
     focus_y: 0.5
-- text: Past midnight, distress rockets arced into the night sky.
+- text: Minutes later, white rockets arced into the night sky.
   emphasis:
-  - distress rockets
+  - white rockets
   - night sky
   sfx: whoosh
   visual:
@@ -151,7 +132,7 @@ beats:
     motion: pan_left
     focus_x: 0.5
     focus_y: 0.5
-- text: Captain Stanley Lord dismissed the signals and let his ship drift.
+- text: Captain Stanley Lord dismissed the flares.
   emphasis:
   - Stanley Lord
   - dismissed
@@ -169,14 +150,14 @@ beats:
     motion: pan_right
     focus_x: 0.5
     focus_y: 0.5
-- text: The inquiry concluded the Californian could have saved hundreds.
+- text: Nobody woke the operator because a sleeping radio operator missed the Titanic.
   emphasis:
-  - saved
-  - hundreds
+  - Nobody woke
+  - sleeping radio operator
   visual:
     reuse: 1
     motion: zoom_out
     focus_x: 0.5
     focus_y: 0.5
 depth_motion: true
-hook_text: THE SLEEPING SHIP
+hook_text: THE SHUT UP MESSAGE

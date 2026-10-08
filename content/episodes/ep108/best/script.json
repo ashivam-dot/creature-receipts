@@ -5,18 +5,18 @@
       "text": "A sleeping radio operator missed the Titanic."
     },
     {
-      "style": "number",
-      "text": "Ten minutes before impact, the radio went silent."
+      "style": "question",
+      "text": "Why did the SS Californian ignore the rockets?"
     },
     {
-      "style": "question",
-      "text": "Why did a nearby ship ignore the Titanic's rockets?"
+      "style": "number",
+      "text": "Ten minutes before impact, the radio went silent."
     }
   ],
   "hook_style": "contradiction",
   "structure": "mystery",
   "title": "Why Did the SS Californian Ignore Titanic's Rockets? 😳",
-  "description": "The SS Californian sat in an ice field just miles away from the Titanic as it sank, but its wireless operator never heard the distress calls.",
+  "description": "How the SS Californian sat within sight of the sinking Titanic while its wireless operator slept.",
   "hashtags": [
     "#history",
     "#titanic",
@@ -24,18 +24,18 @@
   ],
   "tags": [
     "SS Californian",
-    "RMS Titanic",
+    "Titanic",
     "Stanley Lord",
     "Cyril Evans",
-    "Warnings Ignored",
-    "1912"
+    "warnings ignored",
+    "maritime history"
   ],
   "beats": [
     {
       "text": "A sleeping radio operator missed the Titanic.",
       "emphasis": [
-        "sleeping",
-        "missed"
+        "sleeping radio operator",
+        "Titanic"
       ],
       "sfx": "none",
       "pause_after": 0.12,
@@ -45,8 +45,7 @@
       ],
       "visual": "photograph of Marconi wireless telegraph room, 1912",
       "subjects": [
-        "Wireless telegraphy",
-        "Marconi Company"
+        "Wireless telegraphy"
       ],
       "year": 1912,
       "queries": [
@@ -62,8 +61,8 @@
     {
       "text": "The SS Californian sat motionless in the ice.",
       "emphasis": [
-        "motionless",
-        "ice"
+        "SS Californian",
+        "motionless"
       ],
       "sfx": "whoosh",
       "pause_after": 0.12,
@@ -78,7 +77,7 @@
       "year": 1912,
       "queries": [
         "SS Californian steamship 1912",
-        "North Atlantic ice field 1912"
+        "North Atlantic ice field April 1912"
       ],
       "card": {
         "kind": "none",
@@ -114,7 +113,7 @@
       }
     },
     {
-      "text": "Titanic's operator snapped at him to shut up.",
+      "text": "The Titanic operator told him to shut up.",
       "emphasis": [
         "shut up"
       ],
@@ -140,17 +139,17 @@
       }
     },
     {
-      "text": "At eleven thirty, Evans switched off his wireless.",
+      "text": "Exhausted, Evans switched off his wireless and went to bed.",
       "emphasis": [
         "switched off",
-        "wireless"
+        "went to bed"
       ],
       "sfx": "riser",
       "pause_after": 0.12,
       "claims": [
         6
       ],
-      "visual": "photograph of Marconi wireless equipment, 1912",
+      "visual": "photograph of ship cabin interior, 1912",
       "subjects": [
         "SS Californian"
       ],
@@ -166,9 +165,9 @@
       }
     },
     {
-      "text": "Past midnight, distress rockets arced into the night sky.",
+      "text": "Minutes later, white rockets arced into the night sky.",
       "emphasis": [
-        "distress rockets",
+        "white rockets",
         "night sky"
       ],
       "sfx": "whoosh",
@@ -183,7 +182,7 @@
       "year": 1912,
       "queries": [
         "Titanic distress rockets illustration",
-        "Titanic sinking rockets painting"
+        "RMS Titanic sinking rockets painting"
       ],
       "card": {
         "kind": "none",
@@ -192,7 +191,7 @@
       }
     },
     {
-      "text": "Captain Stanley Lord dismissed the signals and let his ship drift.",
+      "text": "Captain Stanley Lord dismissed the flares.",
       "emphasis": [
         "Stanley Lord",
         "dismissed"
@@ -220,15 +219,17 @@
       }
     },
     {
-      "text": "The inquiry concluded the Californian could have saved hundreds.",
+      "text": "Nobody woke the operator because a sleeping radio operator missed the Titanic.",
       "emphasis": [
-        "saved",
-        "hundreds"
+        "Nobody woke",
+        "sleeping radio operator"
       ],
       "sfx": "none",
       "pause_after": 0.12,
       "claims": [
-        10
+        3,
+        6,
+        9
       ],
       "visual": "photograph of SS Californian steamship, 1912",
       "subjects": [
@@ -240,13 +241,13 @@
         "SS Californian Leyland Line"
       ],
       "card": {
-        "kind": "fact",
-        "big": "HUNDREDS",
-        "small": "Could have been saved"
+        "kind": "none",
+        "big": "",
+        "small": ""
       }
     }
   ],
-  "hook_text": "THE SLEEPING SHIP",
+  "hook_text": "THE SHUT UP MESSAGE",
   "loop": true,
-  "better_than_last": "Applied reviewer's requested phrasing for beats 6, 7, and 8, and trimmed earlier beats to keep the total word count at 69 words."
+  "better_than_last": "Trimmed middle beats to achieve a total spoken word count of 65 words, perfectly fitting the 55-72 target range while maintaining the mystery structure and seamless loop."
 }
