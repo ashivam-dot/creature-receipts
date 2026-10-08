@@ -178,9 +178,27 @@ def park(ep: AtlasEpisode, folder: Path, video: Path, topic_id: str) -> dict:
     return record
 
 
-def ready() -> list[Path]:
+def _waiting() -> list[Path]:
     return sorted(p.parent for p in EPISODES.glob("atlas*/ready.json")
                   if EPISODE_ID.fullmatch(p.parent.name) and not (p.parent / "publish.json").exists())
+
+
+def _accepted(folder: Path) -> bool:
+    try:
+        record = json.loads((folder / "ready.json").read_text())
+        if record["id"] != folder.name or record["modal_volume"] != OUTBOX_VOLUME:
+            return False
+        if record.get("qa_sha256") != quality.digest(folder / "qa.json"):
+            return False
+        quality.verify(folder, record["media_sha256"])
+        return True
+    except (OSError, ValueError, KeyError, TypeError):
+        return False
+
+
+def ready() -> list[Path]:
+    """Only accepted inventory counts toward the reserve; legacy markers cannot hide starvation."""
+    return [folder for folder in _waiting() if _accepted(folder)]
 
 
 def published() -> dict:
@@ -275,8 +293,8 @@ def run(reserve: int = RESERVE, minutes: float = 40, max_failures: int = 2) -> d
     started = time.monotonic()
     synced = sync()
     # Upgrade old waiting videos through the same checks instead of grandfathering unverified media.
-    for folder in list(ready()):
-        if (folder / "qa.json").exists() and Dataset.load(folder / "data.json").source_response_sha256:
+    for folder in _waiting():
+        if _accepted(folder):
             continue
         topic = _topic_of(folder.name)
         if topic is None:

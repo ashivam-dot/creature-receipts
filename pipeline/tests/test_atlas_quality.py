@@ -68,6 +68,22 @@ def test_publisher_rejects_missing_source_provenance_even_if_artifact_hashes_mat
     with pytest.raises(ValueError, match='source-response'): quality.verify(tmp_path, 'abc')
 
 
+def test_legacy_or_changed_receipts_do_not_count_toward_producer_reserve(tmp_path, monkeypatch):
+    from ytc.atlas import pipeline
+    folder = tmp_path / 'atlas001'; folder.mkdir()
+    marker = {'id': folder.name, 'modal_volume': pipeline.OUTBOX_VOLUME, 'media_sha256': 'abc'}
+    quality.save(folder / 'ready.json', marker)
+    monkeypatch.setattr(pipeline, 'EPISODES', tmp_path)
+    assert pipeline._waiting() == [folder]
+    assert pipeline.ready() == []
+    receipt(folder)
+    marker['qa_sha256'] = quality.digest(folder / 'qa.json')
+    quality.save(folder / 'ready.json', marker)
+    assert pipeline.ready() == [folder]
+    (folder / 'atlas.yaml').write_text('changed')
+    assert pipeline.ready() == []
+
+
 def test_description_has_stable_identity_and_mixed_year_disclosure():
     from ytc.atlas.episode import AtlasEpisode
     from ytc.atlas.publish import description
