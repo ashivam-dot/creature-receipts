@@ -96,9 +96,9 @@ def make(topic: dict, episode_id: str) -> tuple[AtlasEpisode, Path, Dataset, Pat
     data_path = folder / "data.json"
     if data_path.exists():
         ds = Dataset.load(data_path)
-        if not ds.indicator and topic["dataset"].get("kind") == "worldbank":
-            ds.indicator = topic["dataset"]["indicator"]
-            ds.definition = writer.definition(topic["dataset"])
+        if not ds.source_response_sha256:
+            # Legacy snapshots did not retain response provenance. Fetch it, don't fabricate a hash.
+            ds = fetch(topic["dataset"])
             ds.save(data_path)
     else:
         ds = fetch(topic["dataset"])
@@ -259,7 +259,7 @@ def run(reserve: int = RESERVE, minutes: float = 40, max_failures: int = 2) -> d
     synced = sync()
     # Upgrade old waiting videos through the same checks instead of grandfathering unverified media.
     for folder in list(ready()):
-        if (folder / "qa.json").exists():
+        if (folder / "qa.json").exists() and Dataset.load(folder / "data.json").source_response_sha256:
             continue
         topic = _topic_of(folder.name)
         if topic is None:

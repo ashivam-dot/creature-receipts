@@ -132,7 +132,9 @@ def owid(slug: str, column: str, label: str, unit: str, source: str, min_year: i
         if code not in years or int(year) > years[code]:
             values[code], years[code], names[code] = float(value), int(year), row.get("entity") or row.get("Entity")
     return Dataset(label, unit, source, "CC BY 4.0", f"https://ourworldindata.org/grapher/{slug}",
-                   values, years, names, _now())
+                   values, years, names, _now(),
+                   source_response_sha256=hashlib.sha256(resp.content).hexdigest(),
+                   source_organization=source)
 
 
 def fetch(spec: dict) -> Dataset:
