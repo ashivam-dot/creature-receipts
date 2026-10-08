@@ -16,6 +16,8 @@ Atlas keeps its existing data-map niche and cloud-only producer/publisher split.
 
 Waiting legacy episodes are re-rendered through the new gate, never silently grandfathered. A failed migration retires its ready marker and reopens the topic; future IDs do not reuse retired/failed identifiers. IDs continue beyond atlas999. Transient source failures retain resumable state for up to three attempts. One failed publisher candidate does not hide later valid candidates.
 
+Legacy queued posts can receive an explicitly prepared, checked replacement under the same episode ID. The publisher verifies its new receipt and exact bytes, hosts a content-specific asset, checks the old post's title/media and future slot, edits the existing post, and confirms the new title/media/description/public setting at the same slot. It never edits a sent post or silently overrides an unexpected external change. An interrupted edit can recover the matching checked asset. The ledger retains the old title/media hash and the new QA binding.
+
 ## Learning
 
 Public RSS measurements preserve previous history and record immutable 24h/72h/7d checkpoints only when a fresh observation falls within the following 12-hour collection window. These are observed checkpoints, not exact historical counts. RSS only exposes recent uploads; unavailable later checkpoints remain missing. Topic steering uses six or more comparable early checkpoints and their recorded ages, not raw lifetime totals. Retention, shares and subscriber conversion remain explicitly unavailable until the channel has authenticated Analytics API access. Public views/likes are not substitutes.

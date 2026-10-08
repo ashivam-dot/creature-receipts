@@ -110,3 +110,48 @@ def _record(path: Path, ep: AtlasEpisode, post: dict, public_id: str, media_url:
               "youtube_url": post.get("externalLink")}
     path.write_text(json.dumps(record, indent=2), encoding="utf-8")
     return record
+
+
+def replace_queued(ep: AtlasEpisode, folder: Path, ds: Dataset, video: Path, record: dict) -> dict:
+    """Replace an exact queued legacy post only after checking its identity, slot and accepted media.
+
+    The new asset has a content-specific public ID. Repeating an interrupted edit recovers the same post.
+    """
+    from .receipt import digest
+    post_id = record["buffer_post_id"]
+    before = pub.post(post_id)
+    if before is None or before["status"] not in ("scheduled", "pending"):
+        raise RuntimeError("legacy replacement requires an existing queued post")
+    due = datetime.fromisoformat(before["dueAt"])
+    if due != datetime.fromisoformat(record["due_at"]):
+        raise RuntimeError("legacy post's scheduled slot changed")
+    title, text = pub._youtube_text(ep.title)[:TITLE_CHARS], description(ep, ds)
+    sha = digest(video)
+    public_id = f"atlasinnumbers/{ep.id}-qa-{sha[:12]}"
+    existing_url = before.get("video") or ""
+    recovered = (existing_url.startswith("https://res.cloudinary.com/") and
+                 existing_url.endswith(f"/{public_id}.mp4") and
+                 before.get("title") == title and before.get("text") == text)
+    media_url = existing_url if recovered else pub.host_video(video, public_id)
+    pub.fetch_video(media_url, expected_sha256=sha)
+    already = before.get("video") == media_url and before.get("title") == title and before.get("text") == text
+    if not already:
+        if due < datetime.now(pub.AUDIENCE_TZ) + MIN_LEAD:
+            raise RuntimeError("legacy post is too close to publication to edit safely")
+        if before.get("title") != record["title"] or before.get("video") != record.get("media_url"):
+            raise RuntimeError("legacy post's title/media identity changed")
+        mutation = """mutation Edit($input: EditPostInput!) {
+          editPost(input: $input) { __typename ... on MutationError { message } }
+        }"""
+        payload = {"id": post_id, "assets": [{"video": {"url": media_url}}], "text": text,
+                   "metadata": {"youtube": {"title": title, "categoryId": CATEGORY, "privacy": "public",
+                       "madeForKids": False, "notifySubscribers": True, "isAiGenerated": True, "embeddable": True}}}
+        result = pub._buffer(mutation, {"input": payload})["editPost"]
+        if result["__typename"] != "PostActionSuccess":
+            raise RuntimeError(f"Buffer rejected checked replacement: {result.get('message')}")
+    after = pub.post(post_id)
+    if (after is None or after.get("video") != media_url or after.get("title") != title or
+            after.get("text") != text or after.get("privacy") != "public" or
+            datetime.fromisoformat(after["dueAt"]) != due):
+        raise RuntimeError("checked replacement could not be confirmed at its original slot")
+    return _record(folder / "publish.json", ep, after, public_id, media_url)
