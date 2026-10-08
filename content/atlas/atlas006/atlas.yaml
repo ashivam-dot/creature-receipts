@@ -1,0 +1,57 @@
+id: atlas006
+title: Suriname is 94% forest while Qatar has 0%
+hook_text: MOSTLY TREES
+description: Discover which countries are mostly forest and which have almost none according to World Bank data.
+hashtags:
+- '#maps'
+- '#geography'
+- '#data'
+sources:
+- https://data.worldbank.org/indicator/AG.LND.FRST.ZS
+dataset:
+  kind: worldbank
+  indicator: AG.LND.FRST.ZS
+  label: Forest cover, share of land
+  unit: '%'
+  source: World Bank
+  min_year: 2019
+scale:
+  edges:
+  - 10.0
+  - 25.0
+  - 40.0
+  - 55.0
+  - 70.0
+  labels:
+  - <10%
+  - 10-25
+  - 25-40
+  - 40-55
+  - 55-70
+  - 70%+
+value_format: '{v:.0f}%'
+beats:
+- text: The world ranges from completely wooded lands to deserts with almost no trees.
+- text: Dark blue is lowest, through grey-gold, to bright yellow for highest across 207 countries with data in 2023.
+- text: Suriname reaches the world's highest share at 94%.
+  shot:
+    kind: country
+    iso: SUR
+- text: Qatar sits at the world's lowest share at 0%.
+  shot:
+    kind: country
+    iso: QAT
+- text: India stands at 25% and USA stands at 34%.
+  shot:
+    kind: group
+    isos:
+    - IND
+    - USA
+- text: This measures the share of total land area under natural or planted stands of trees of at least 5 meters
+    in situ.
+- text: So where is your country?
+  shot:
+    kind: card
+    lines:
+    - Where is your country?
+    - Forest cover, share of land (%)

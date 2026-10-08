@@ -34,10 +34,11 @@ rules from two Shorts each and ended up with rules that contradict each other; d
 
 ## Scoreboard
 
-One row per live Atlas Short once it has 24+ hours of data.
+Refreshed by every producer run (`atlas.stats`) from the channel's public feed. Views per hour is over the Short's whole life so far, so compare Shorts of similar age.
 
-| Short | Topic | Hook pattern | Views | Engaged share | Avg % viewed | Watching at 10% | Shares | Comments | Subs gained | Likely reason |
-|---|---|---|---|---|---|---|---|---|---|---|
+| Short | Topic | Published | Views | Likes | Views per hour |
+|---|---|---|---|---|---|
+
 
 ## Log
 

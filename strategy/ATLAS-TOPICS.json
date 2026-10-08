@@ -24,7 +24,7 @@
    "value_format": "{v:.0f} per 100",
    "source_url": "https://data.worldbank.org/indicator/IT.CEL.SETS.P2",
    "publisher_note": "World Telecommunication/ICT Indicators Database, International Telecommunication Union (ITU)",
-   "status": "ready:atlas001"
+   "status": "used:atlas001"
   },
   {
    "id": "t002",
@@ -50,7 +50,7 @@
    "value_format": "{v:.1f}%",
    "source_url": "https://data.worldbank.org/indicator/SP.POP.GROW",
    "publisher_note": "World Population Prospects, United Nations (UN), note: Derived from total population, publisher: UN Population Division;\nStatistical databases and publications from national statistical offices, Natio",
-   "status": "making:atlas002"
+   "status": "ready:atlas002"
   },
   {
    "id": "t003",
@@ -76,7 +76,7 @@
    "value_format": "{v:.1f}",
    "source_url": "https://data.worldbank.org/indicator/SP.DYN.TFRT.IN",
    "publisher_note": "World Population Prospects, United Nations (UN), publisher: UN Population Division;\nStatistical databases and publications from national statistical offices, National Statistical Offices (NSOs);\nDemog",
-   "status": "ready:atlas003"
+   "status": "used:atlas003"
   },
   {
    "id": "t004",
@@ -102,7 +102,7 @@
    "value_format": "{v:.0f} years",
    "source_url": "https://data.worldbank.org/indicator/SP.DYN.LE00.IN",
    "publisher_note": "World Population Prospects, United Nations (UN), uri: UN Population Division;\nStatistical databases and publications from national statistical offices, National Statistical Offices (NSOs), note: Deriv",
-   "status": "ready:atlas004"
+   "status": "used:atlas004"
   },
   {
    "id": "t005",
@@ -138,7 +138,7 @@
    "value_format": "{v:.0f}%",
    "source_url": "https://data.worldbank.org/indicator/SP.POP.65UP.TO.ZS",
    "publisher_note": "World Population Prospects, United Nations (UN), publisher: UN Population Division",
-   "status": "open"
+   "status": "failed:RuntimeError"
   },
   {
    "id": "t007",
@@ -164,7 +164,7 @@
    "value_format": "{v:.0f}%",
    "source_url": "https://data.worldbank.org/indicator/SP.URB.TOTL.IN.ZS",
    "publisher_note": "World Urbanization Prospects, United Nations (UN), uri: https://population",
-   "status": "open"
+   "status": "ready:atlas005"
   },
   {
    "id": "t008",
@@ -200,7 +200,7 @@
    "value_format": "{v:.0f}%",
    "source_url": "https://data.worldbank.org/indicator/AG.LND.FRST.ZS",
    "publisher_note": "FAOSTAT, Food and Agriculture Organization of the United Nations (FAO), uri: https://www",
-   "status": "open"
+   "status": "ready:atlas006"
   },
   {
    "id": "t009",
@@ -226,7 +226,7 @@
    "value_format": "{v:.0f}%",
    "source_url": "https://data.worldbank.org/indicator/IT.NET.USER.ZS",
    "publisher_note": "World Telecommunication/ICT Indicators Database, International Telecommunication Union (ITU), uri: https://datahub",
-   "status": "open"
+   "status": "ready:atlas007"
   },
   {
    "id": "t010",
