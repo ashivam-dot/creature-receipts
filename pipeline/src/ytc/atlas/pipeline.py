@@ -114,22 +114,39 @@ def make(topic: dict, episode_id: str) -> tuple[AtlasEpisode, Path, Dataset, Pat
         ep = writer.write({**topic, "definition_text": ds.definition or writer.definition(topic["dataset"])}, ds, episode_id,
                           series=topic.get("series", ""))
         ep.save(spec_path)
-    # Reused scripts are reviewed too; a resumed run cannot bypass the acceptance gate.
-    for attempt in range(3):
+    for media_attempt in range(2):
+        # Reused and speech-repaired scripts must pass the full factual gate too.
+        for attempt in range(3):
+            try:
+                quality.review(ep, ds, folder)
+                break
+            except ValueError as error:
+                if attempt == 2:
+                    raise
+                fixed_topic = {**topic, "angle": topic.get("angle", "") +
+                               "\nMandatory factual corrections from the reviewer: " + str(error),
+                               "definition_text": ds.definition or writer.definition(topic["dataset"])}
+                ep = writer.write(fixed_topic, ds, episode_id, series=topic.get("series", ""))
+                ep.save(spec_path)
+        video = render.render(ep, folder)
         try:
-            quality.review(ep, ds, folder)
-            break
+            quality.media(ep, folder, video)
         except ValueError as error:
-            if attempt == 2:
+            if media_attempt or not str(error).startswith("encoded speech material mismatch:"):
                 raise
+            quality.save(folder / "speech-repair.json", {"error": str(error),
+                         "rejected_script_sha256": quality.digest(spec_path),
+                         "rejected_media_sha256": quality.digest(video)})
             fixed_topic = {**topic, "angle": topic.get("angle", "") +
-                           "\nMandatory factual corrections from the reviewer: " + str(error),
-                           "definition_text": ds.definition or writer.definition(topic["dataset"])}
+                "\nThe encoded narration failed speech recognition: " + str(error) +
+                "\nUse simpler, clearly spoken wording. Replace a confusing country example with another "
+                "country from the supplied data supporting the same insight. Avoid the misheard name entirely; "
+                "do not invent phonetic spellings or change units, years or factual meaning.",
+                "definition_text": ds.definition or writer.definition(topic["dataset"])}
             ep = writer.write(fixed_topic, ds, episode_id, series=topic.get("series", ""))
             ep.save(spec_path)
-    video = render.render(ep, folder)
-    quality.media(ep, folder, video)
-    return ep, folder, ds, video
+            continue
+        return ep, folder, ds, video
 
 
 def _tidy(folder: Path) -> None:
