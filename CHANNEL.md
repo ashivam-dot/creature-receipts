@@ -1,6 +1,6 @@
 # Atlas in Numbers: source of truth
 
-- **Channel:** Atlas in Numbers (handle to claim: @atlasinnumbers; was History's Last Hours, @HistorysLastHours),
+- **Channel:** Atlas in Numbers (@atlasinnumbers; was History's Last Hours, @HistorysLastHours),
   the YouTube channel of the Google account aksha.shivam18@gmail.com. Channel ID `UC6e6OB3iw3yp8JnnBYxLItA`.
   Buffer channel ID `6abcba6dea19ca0bde30177e`. Created 2026-09-30; renamed 2026-10-08.
 - **Niche (from 2026-10-08):** one world map, one number. Each Short colours every country by one official dataset
@@ -123,6 +123,7 @@ Start here: `PLAYBOOK.md` (the daily routine), `strategy/STRATEGY.md`, `strategy
 
 | Date | Decision | Why |
 |---|---|---|
+| 2026-10-08 | The four public History's Last Hours Shorts (nsIV96pvg_0, fG5iWshCAOM, gbhhEU5wfZk, GeYxkROXScI) made private in Studio; `STRATEGY.md` and `LEARNINGS.md` reset for Atlas | Off-niche Shorts on a renamed channel confuse the feed's audience test; private (not deleted) keeps them recoverable |
 | 2026-10-08 | Channel 2 rebuilt as Atlas in Numbers: data-map Shorts, one a day, from public datasets, made by a new lane (`ytc.atlas`) and a Modal schedule that publishes through Buffer directly | History's Last Hours had 4 public Shorts and 37 views after 112 attempts; 68 drafts were rejected, most for pictures, and publishing had stopped on 2026-10-07 with the private control repo's Actions blocked by billing. Map Shorts need no found pictures (the map is drawn), every claim is a number checked against the downloaded data, and the niche is proven: GeoMaps' 54 Shorts have a median of 76K views (max 15M). Research: `../channel-review-2026-10-08/niche-research.md` on the Mac |
 | 2026-09-30 | Built the studio from Universe Receipts' code (a `git archive` of its main branch), with its content, status, analytics, and reports emptied | That studio already runs a channel unattended on free tiers; its decision log and `reference/days-of-odd/CHANNEL.md` explain the design |
 | 2026-09-30 | Niche: true stories of strange animals, extreme biology, and deep-sea life, English, US audience | Six candidate niches were measured against the pipeline, not just ranked by demand (`research/channel/pipeline-fit-and-policy.md`): the median topic had 99 usable openly licensed pictures for animals, 89 for disasters, 50 for the deep ocean, 43 for archaeology, 10 for aviation, and 6 for frauds. The market report's first pick, failure analysis, was rejected: too few free pictures, and a feed of accidents is the "off-putting" content the July 2026 monetization update names. Animals are also evergreen, safe for advertisers, and don't overlap Universe Receipts. Animal-fact Shorts convert viewers to subscribers poorly (`research/channel/niche-market.md`, section 3), so every Short is a sourced story in a named series |
