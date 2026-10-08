@@ -466,6 +466,22 @@ def atlas_topics_preview(add: int = 3) -> list[dict]:
     return topics.refill(cat, add=add)
 
 
+@app.function(image=image, cpu=1.0, memory=2048, timeout=1800, secrets=[run_secret])
+def atlas_audit(extra: list[dict] | None = None) -> dict:
+    """The data audit's verdict on each open catalogue topic (plus any `extra` topics): {topic id: suspects}."""
+    from .atlas import topics, writer
+    from .atlas.data import fetch
+
+    with urllib.request.urlopen("https://raw.githubusercontent.com/ashivam-dot/creature-receipts/main/strategy/"
+                                "ATLAS-TOPICS.json", timeout=30) as response:
+        cat = json.loads(response.read())
+    out = {}
+    for t in [t for t in cat["topics"] if t.get("status") == "open"] + (extra or []):
+        ds = fetch(t["dataset"])
+        out[t["id"]] = topics.audit_dataset(ds, t["dataset"].get("label", t["topic"]), writer.definition(t["dataset"]))
+    return out
+
+
 @app.function(image=image, cpu=4.0, memory=6144, timeout=3600, secrets=[run_secret], volumes={"/cache": cache})
 def atlas_preview(topic: dict, episode_id: str = "preview") -> tuple[str, bytes]:
     """Write and render one topic without publishing or saving anything: (atlas.yaml text, the MP4)."""

@@ -83,6 +83,37 @@ SPEC_SCHEMA = {
 }
 
 
+AUDIT = """You fact-check a data channel before it publishes. Below are the highest and lowest values a World Bank
+series reports. Official series sometimes carry broken values (a definition change, a unit slip, a survey that
+measured something else). Compare each value with what you know about that country.
+
+Indicator: {name}
+Definition: {note}
+Year: {year}
+Highest: {top}
+Lowest: {bottom}
+
+List every value that is very likely wrong or not comparable with the others (for example far from the country's
+widely reported figure). Return an empty list only if all of them are plausible."""
+
+AUDIT_SCHEMA = {"type": "object", "properties": {"suspect": {"type": "array", "items": {
+    "type": "object", "properties": {"country": {"type": "string"}, "why": {"type": "string"}},
+    "required": ["country", "why"]}}}, "required": ["suspect"]}
+
+
+def audit(name: str, note: str, year: int, top: str, bottom: str) -> list[dict]:
+    """Extreme values an independent check finds implausible: [{country, why}]."""
+    return llm.generate(AUDIT.format(name=name, note=note, year=year, top=top, bottom=bottom),
+                        schema=AUDIT_SCHEMA, temperature=0.0, purpose="atlas data audit")["suspect"]
+
+
+def audit_dataset(ds, name: str, note: str) -> list[dict]:
+    vals = drawable(ds)
+    ranked = sorted(vals.items(), key=lambda kv: kv[1], reverse=True)
+    wide = lambda rows: ", ".join(f"{ds.names.get(k, k)} {v:.3g}" for k, v in rows)  # noqa: E731
+    return audit(name, note, ds.year, wide(ranked[:8]), wide(ranked[-8:]))
+
+
 def indicators() -> list[dict]:
     """WDI indicators that are ratios and not on a no-go subject: [{id, name, note}]."""
     rows = requests.get(f"{WB_API}/source/2/indicators", params={"format": "json", "per_page": 3000},
@@ -167,6 +198,12 @@ def refill(catalogue: dict, stats: list[dict] | None = None, add: int = ADD) -> 
         ranked = sorted(vals.items(), key=lambda kv: kv[1], reverse=True)
         s = sorted(vals.values())
         fmt = lambda v: f"{v:.3g}"  # noqa: E731
+        top = ", ".join(f"{ds.names.get(k, k)} {fmt(v)}" for k, v in ranked[:5])
+        bottom = ", ".join(f"{ds.names.get(k, k)} {fmt(v)}" for k, v in ranked[-5:])
+        if suspect := audit_dataset(ds, ind["name"], ind["note"]):
+            log.info("skip %s, implausible values: %s", ind["id"],
+                     "; ".join(f"{s['country']}: {s['why']}" for s in suspect))
+            continue
         spec = None
         feedback = ""
         for _ in range(2):
@@ -174,8 +211,7 @@ def refill(catalogue: dict, stats: list[dict] | None = None, add: int = ADD) -> 
                 id=ind["id"], name=ind["name"], note=ind["note"], count=len(vals), year=ds.year,
                 min=fmt(s[0]), p10=fmt(_quantile(s, 0.1)), p25=fmt(_quantile(s, 0.25)), p50=fmt(statistics.median(s)),
                 p75=fmt(_quantile(s, 0.75)), p90=fmt(_quantile(s, 0.9)), max=fmt(s[-1]),
-                top=", ".join(f"{ds.names.get(k, k)} {fmt(v)}" for k, v in ranked[:5]),
-                bottom=", ".join(f"{ds.names.get(k, k)} {fmt(v)}" for k, v in ranked[-5:])) + feedback,
+                top=top, bottom=bottom) + feedback,
                 schema=SPEC_SCHEMA, temperature=0.5, purpose=f"atlas topic {ind['id']}")
             if not (found := check(answer, s)):
                 spec = answer

@@ -24,7 +24,7 @@ from pathlib import Path
 
 import requests
 
-from . import render, writer
+from . import render, topics, writer
 from .data import Dataset, fetch
 from .episode import AtlasEpisode
 
@@ -68,6 +68,10 @@ def next_id() -> str:
     return f"atlas{max(numbers, default=0) + 1:03d}"
 
 
+class Implausible(Exception):
+    """The independent audit found values in a dataset that are very likely wrong."""
+
+
 def pick() -> dict | None:
     return next((t for t in _catalogue()["topics"] if t.get("status") == "open"), None)
 
@@ -80,6 +84,9 @@ def make(topic: dict, episode_id: str) -> tuple[AtlasEpisode, Path, Dataset, Pat
         ds = Dataset.load(data_path)
     else:
         ds = fetch(topic["dataset"])
+        if suspect := topics.audit_dataset(ds, topic["dataset"].get("label", topic["topic"]),
+                                           writer.definition(topic["dataset"])):
+            raise Implausible("; ".join(f"{s['country']}: {s['why']}" for s in suspect))
         ds.save(data_path)
     spec_path = folder / "atlas.yaml"
     if spec_path.exists():
@@ -182,6 +189,11 @@ def make_next() -> dict:
     try:
         ep, folder, _, video = make(topic, episode_id)
         record = park(ep, folder, video, topic["id"])
+    except Implausible as err:
+        log.warning("%s: skipping topic %s, its data looks wrong: %s", episode_id, topic["id"], err)
+        _mark(topic["id"], "skipped:implausible")
+        shutil.rmtree(EPISODES / episode_id, ignore_errors=True)
+        return {"outcome": "skipped", "id": episode_id, "topic": topic["id"], "error": str(err)[:400]}
     except Exception as err:
         log.exception("%s failed", episode_id)
         _mark(topic["id"], f"failed:{type(err).__name__}")
@@ -199,7 +211,7 @@ def make_next() -> dict:
 def run(reserve: int = RESERVE, minutes: float = 40, max_failures: int = 2) -> dict:
     """One producer run: sync the publisher's posts, refresh their numbers, top up the topics, then render until
     `reserve` Shorts are waiting."""
-    from . import stats, topics
+    from . import stats
 
     started = time.monotonic()
     synced = sync()
@@ -211,14 +223,14 @@ def run(reserve: int = RESERVE, minutes: float = 40, max_failures: int = 2) -> d
             TOPICS.write_text(json.dumps(cat, indent=1, ensure_ascii=False) + "\n", encoding="utf-8")
     except Exception as err:  # a failed refill mustn't stop today's renders
         log.exception("topic refill failed: %s", err)
-    made, failed = [], []
+    made, failed, skipped = [], [], []
     while len(ready()) < reserve and time.monotonic() - started < minutes * 60 and len(failed) < max_failures:
         result = make_next()
         if result["outcome"] == "no_topics":
             break
-        (made if result["outcome"] == "ready" else failed).append(result)
+        {"ready": made, "skipped": skipped}.get(result["outcome"], failed).append(result)
     waiting = [p.name for p in ready()]
     outcome = "failed" if failed and not waiting else ("no_topics" if not waiting else "ok")
-    return {"outcome": outcome, "synced": synced, "made": made, "failed": failed, "waiting": waiting,
+    return {"outcome": outcome, "synced": synced, "made": made, "failed": failed, "skipped": skipped, "waiting": waiting,
             "new_topics": [t["id"] for t in added], "tracked": len(numbers),
             "open_topics": sum(t.get("status") == "open" for t in _catalogue()["topics"])}
