@@ -1,0 +1,156 @@
+{
+  "errors": [],
+  "claims": [
+    {
+      "surface": "title",
+      "text": "Forest cover across the world in 207 places",
+      "isos": [],
+      "support": "count: 207, universe: mapped countries and territories with data"
+    },
+    {
+      "surface": "hook",
+      "text": "THE WORLD'S GREENEST",
+      "isos": [],
+      "support": "indicator: AG.LND.FRST.ZS"
+    },
+    {
+      "surface": "description",
+      "text": "A look at the global distribution of forest cover based on World Bank data.",
+      "isos": [],
+      "support": "source: https://data.worldbank.org/indicator/AG.LND.FRST.ZS"
+    },
+    {
+      "surface": "beat_0",
+      "text": "Suriname leads the world with 94% of its land covered in forest.",
+      "isos": [
+        "SUR"
+      ],
+      "support": "SUR: 94.44758351333, display: 94%, rank: 1"
+    },
+    {
+      "surface": "beat_1",
+      "text": "Dark blue is the lowest coverage, shifting through grey-gold to bright yellow for the highest across 207 countries and territories.",
+      "isos": [],
+      "support": "count: 207"
+    },
+    {
+      "surface": "beat_2",
+      "text": "Forest area is the share of land under natural or planted trees at least 5 meters tall, excluding agriculture and urban parks.",
+      "isos": [],
+      "support": "definition: Forest area (% of land area) is the share of total land area that is under natural or planted stands of trees of at least 5 meters in situ, whether productive or not, and excludes tree stands in agricultural production systems (for example, in fruit plantations and agroforestry systems) and trees in urban parks and gardens."
+    },
+    {
+      "surface": "beat_3",
+      "text": "Suriname is at 94%, Gabon is at 91%, and Guyana is at 87%.",
+      "isos": [
+        "SUR",
+        "GAB",
+        "GUY"
+      ],
+      "support": "SUR: 94.44758351333 (display: 94%), GAB: 91.1823650405558 (display: 91%), GUY: 87.0878369802027 (display: 87%)"
+    },
+    {
+      "surface": "beat_4",
+      "text": "The USA is at 34%, India is at 25%, and Japan is at 68%.",
+      "isos": [
+        "USA",
+        "IND",
+        "JPN"
+      ],
+      "support": "USA: 33.8669264120375 (display: 34%), IND: 24.5390304689576 (display: 25%), JPN: 68.3957811364628 (display: 68%)"
+    },
+    {
+      "surface": "beat_5",
+      "text": "At the bottom, Kuwait, Mauritania, and Qatar all record 0%.",
+      "isos": [
+        "KWT",
+        "MRT",
+        "QAT"
+      ],
+      "support": "KWT: 0.350729517396184 (display: 0%), MRT: 0.287611138061512 (display: 0%), QAT: 0.0 (display: 0%)"
+    },
+    {
+      "surface": "beat_6",
+      "text": "So where does your country rank on the map?",
+      "isos": [],
+      "support": "universe: mapped countries and territories with data"
+    },
+    {
+      "surface": "card_6",
+      "text": "Where is your country? Data: World Bank 2021-2023",
+      "isos": [],
+      "support": "source: https://data.worldbank.org/indicator/AG.LND.FRST.ZS, year_label: latest available 2021–2023"
+    }
+  ],
+  "surface_checks": {
+    "title": {
+      "supported": true,
+      "reason": "Count matches the universe size of 207.",
+      "isos": []
+    },
+    "hook": {
+      "supported": true,
+      "reason": "Refers to the forest cover indicator.",
+      "isos": []
+    },
+    "description": {
+      "supported": true,
+      "reason": "Accurately references World Bank data source.",
+      "isos": []
+    },
+    "beat_0": {
+      "supported": true,
+      "reason": "Suriname value is 94.44% (displayed as 94%) and it ranks 1st.",
+      "isos": [
+        "SUR"
+      ]
+    },
+    "beat_1": {
+      "supported": true,
+      "reason": "Matches the 207 count and visual plans.",
+      "isos": []
+    },
+    "beat_2": {
+      "supported": true,
+      "reason": "Directly matches the provided definition.",
+      "isos": []
+    },
+    "beat_3": {
+      "supported": true,
+      "reason": "Suriname, Gabon, and Guyana values match the dataset.",
+      "isos": [
+        "SUR",
+        "GAB",
+        "GUY"
+      ]
+    },
+    "beat_4": {
+      "supported": true,
+      "reason": "USA, India, and Japan values match the dataset.",
+      "isos": [
+        "USA",
+        "IND",
+        "JPN"
+      ]
+    },
+    "beat_5": {
+      "supported": true,
+      "reason": "Kuwait, Mauritania, and Qatar round to 0% display values.",
+      "isos": [
+        "KWT",
+        "MRT",
+        "QAT"
+      ]
+    },
+    "beat_6": {
+      "supported": true,
+      "reason": "Consistent with map universe.",
+      "isos": []
+    },
+    "card_6": {
+      "supported": true,
+      "reason": "Matches World Bank source and year label range.",
+      "isos": []
+    }
+  }
+}

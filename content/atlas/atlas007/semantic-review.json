@@ -1,0 +1,108 @@
+{
+  "errors": [],
+  "claims": [
+    {
+      "surface": "title",
+      "text": "Internet usage across 186 places",
+      "isos": [],
+      "support": "The evidence lists 186 mapped countries and territories."
+    },
+    {
+      "surface": "beat_0",
+      "text": "143 out of 186 countries and territories have at least 50 percent internet usage.",
+      "isos": [],
+      "support": "The evidence states 143 entities are at or above the 50.0 threshold out of 186."
+    },
+    {
+      "surface": "beat_2",
+      "text": "South Sudan has the world's lowest usage at 7 percent.",
+      "isos": [
+        "SSD"
+      ],
+      "support": "The evidence shows South Sudan (SSD) at rank 186 with a value of 6.671% (displayed as 7%)."
+    },
+    {
+      "surface": "beat_3",
+      "text": "Kuwait reaches 100 percent, while Nigeria sits at 41 percent.",
+      "isos": [
+        "KWT",
+        "NGA"
+      ],
+      "support": "The evidence shows Kuwait (KWT) at 100% and Nigeria (NGA) at 41.21% (displayed as 41%)."
+    },
+    {
+      "surface": "beat_5",
+      "text": "Among these countries, India is at 70 percent and the USA is at 95 percent.",
+      "isos": [
+        "IND",
+        "USA"
+      ],
+      "support": "The evidence shows India (IND) at 70% and the USA (USA) at 94.69% (displayed as 95%)."
+    }
+  ],
+  "surface_checks": {
+    "title": {
+      "supported": true,
+      "reason": "Matches the count of 186 entities in the evidence.",
+      "isos": []
+    },
+    "hook": {
+      "supported": true,
+      "reason": "Accurate summary of the indicator.",
+      "isos": []
+    },
+    "description": {
+      "supported": true,
+      "reason": "Matches the definition provided in the evidence.",
+      "isos": []
+    },
+    "beat_0": {
+      "supported": true,
+      "reason": "Matches the evidence count of 143 out of 186.",
+      "isos": []
+    },
+    "beat_1": {
+      "supported": true,
+      "reason": "Describes the visual representation of the threshold.",
+      "isos": []
+    },
+    "beat_2": {
+      "supported": true,
+      "reason": "Matches the evidence for South Sudan.",
+      "isos": [
+        "SSD"
+      ]
+    },
+    "beat_3": {
+      "supported": true,
+      "reason": "Matches the evidence for Kuwait and Nigeria.",
+      "isos": [
+        "KWT",
+        "NGA"
+      ]
+    },
+    "beat_4": {
+      "supported": true,
+      "reason": "Matches the definition provided in the evidence.",
+      "isos": []
+    },
+    "beat_5": {
+      "supported": true,
+      "reason": "Matches the evidence for India and the USA.",
+      "isos": [
+        "IND",
+        "USA"
+      ]
+    },
+    "beat_6": {
+      "supported": true,
+      "reason": "Standard engagement question.",
+      "isos": []
+    },
+    "card_6": {
+      "supported": true,
+      "reason": "Matches the source attribution.",
+      "isos": []
+    }
+  }
+}

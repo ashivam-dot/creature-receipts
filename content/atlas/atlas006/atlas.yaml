@@ -1,7 +1,7 @@
 id: atlas006
-title: Suriname is 94% forest while Qatar has 0%
-hook_text: MOSTLY TREES
-description: Discover which countries are mostly forest and which have almost none according to World Bank data.
+title: Forest cover across the world in 207 places
+hook_text: THE WORLD'S GREENEST
+description: A look at the global distribution of forest cover based on World Bank data.
 hashtags:
 - '#maps'
 - '#geography'
@@ -31,27 +31,38 @@ scale:
   - 70%+
 value_format: '{v:.0f}%'
 beats:
-- text: The world ranges from completely wooded lands to deserts with almost no trees.
-- text: Dark blue is lowest, through grey-gold, to bright yellow for highest across 207 countries with data in 2023.
-- text: Suriname reaches the world's highest share at 94%.
+- text: Suriname leads the world with 94% of its land covered in forest.
   shot:
-    kind: country
-    iso: SUR
-- text: Qatar sits at the world's lowest share at 0%.
-  shot:
-    kind: country
-    iso: QAT
-- text: India stands at 25% and USA stands at 34%.
+    callouts:
+    - SUR
+- text: Dark blue is the lowest coverage, shifting through grey-gold to bright yellow for the highest across 207
+    countries and territories.
+- text: Forest area is the share of land under natural or planted trees at least 5 meters tall, excluding agriculture
+    and urban parks.
+- text: Suriname is at 94%, Gabon is at 91%, and Guyana is at 87%.
   shot:
     kind: group
     isos:
-    - IND
+    - SUR
+    - GAB
+    - GUY
+- text: The USA is at 34%, India is at 25%, and Japan is at 68%.
+  shot:
+    kind: rank
+    isos:
     - USA
-- text: This measures the share of total land area under natural or planted stands of trees of at least 5 meters
-    in situ.
-- text: So where is your country?
+    - IND
+    - JPN
+- text: At the bottom, Kuwait, Mauritania, and Qatar all record 0%.
+  shot:
+    kind: group
+    isos:
+    - KWT
+    - MRT
+    - QAT
+- text: So where does your country rank on the map?
   shot:
     kind: card
     lines:
     - Where is your country?
-    - Forest cover, share of land (%)
+    - 'Data: World Bank 2021-2023'

@@ -1,0 +1,63 @@
+id: atlas008
+title: Electricity access in 207 places and territories
+format: rank_ladder
+hook_text: ELECTRICITY ACCESS LEVELS
+description: Mapping electricity access across 207 countries and territories.
+hashtags:
+- '#maps'
+- '#geography'
+- '#data'
+sources:
+- https://data.worldbank.org/indicator/EG.ELC.ACCS.ZS
+dataset:
+  kind: worldbank
+  indicator: EG.ELC.ACCS.ZS
+  label: Share of people with electricity
+  unit: '%'
+  source: World Bank
+  min_year: 2019
+scale:
+  edges:
+  - 25.0
+  - 50.0
+  - 75.0
+  - 95.0
+  - 99.5
+  labels:
+  - <25%
+  - 25-50
+  - 50-75
+  - 75-95
+  - 95-99
+  - ~100%
+value_format: '{v:.0f}%'
+beats:
+- text: In 207 mapped countries and territories, electricity access varies from 5% to 100%.
+- text: On this map, dark blue is lowest, through grey-gold, to bright yellow for highest.
+- text: South Sudan has the world's lowest access at 5%, while Chad is at 13%.
+  shot:
+    kind: group
+    isos:
+    - SSD
+    - TCD
+- text: Nigeria is at 62%, and Pakistan is at 96%.
+  shot:
+    kind: group
+    isos:
+    - NGA
+    - PAK
+- text: Albania, Australia, and Canada all reach 100%.
+  shot:
+    kind: group
+    isos:
+    - ALB
+    - AUS
+    - CAN
+- text: Access to electricity is the percentage of population with access to electricity, collected from industry,
+    national surveys and international sources.
+- text: So where does your country rank?
+  shot:
+    kind: card
+    lines:
+    - Where is your country?
+    - Share of people with electricity (%), World Bank, 2024

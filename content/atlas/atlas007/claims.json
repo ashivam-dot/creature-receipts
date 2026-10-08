@@ -1,0 +1,1808 @@
+{
+  "version": 1,
+  "evidence": {
+    "version": 1,
+    "indicator": "IT.NET.USER.ZS",
+    "definition": "Internet users are individuals who have used the Internet (from any location) in the last 3 months. The Internet can be used via a computer, mobile phone, personal digital assistant, games machine, digital TV etc.",
+    "source": "https://data.worldbank.org/indicator/IT.NET.USER.ZS",
+    "source_response_sha256": "",
+    "source_organization": "",
+    "year_label": "latest available 2019–2025",
+    "universe": "mapped countries and territories with data",
+    "count": 186,
+    "threshold": 50.0,
+    "at_or_above": 143,
+    "entities": {
+      "AFG": {
+        "name": "Afghanistan",
+        "value": 16.09499931,
+        "display": "16%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 179
+      },
+      "ALB": {
+        "name": "Albania",
+        "value": 85.86389923,
+        "display": "86%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 77
+      },
+      "DZA": {
+        "name": "Algeria",
+        "value": 77.4178009,
+        "display": "77%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 102
+      },
+      "AND": {
+        "name": "Andorra",
+        "value": 94.39759827,
+        "display": "94%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 28
+      },
+      "AGO": {
+        "name": "Angola",
+        "value": 40.70479965,
+        "display": "41%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 154
+      },
+      "ATG": {
+        "name": "Antigua and Barbuda",
+        "value": 72.73040009,
+        "display": "73%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 115
+      },
+      "ARG": {
+        "name": "Argentina",
+        "value": 89.66715228,
+        "display": "90%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 57
+      },
+      "ARM": {
+        "name": "Armenia",
+        "value": 81.33930206,
+        "display": "81%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 96
+      },
+      "AUS": {
+        "name": "Australia",
+        "value": 96.13140106,
+        "display": "96%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 18
+      },
+      "AUT": {
+        "name": "Austria",
+        "value": 91.92573373,
+        "display": "92%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 45
+      },
+      "AZE": {
+        "name": "Azerbaijan",
+        "value": 90.80000181,
+        "display": "91%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 52
+      },
+      "BHS": {
+        "name": "Bahamas, The",
+        "value": 92.47270203,
+        "display": "92%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 41
+      },
+      "BHR": {
+        "name": "Bahrain",
+        "value": 100.0,
+        "display": "100%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 1
+      },
+      "BGD": {
+        "name": "Bangladesh",
+        "value": 53.42171316,
+        "display": "53%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 142
+      },
+      "BRB": {
+        "name": "Barbados",
+        "value": 70.36470032,
+        "display": "70%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 118
+      },
+      "BLR": {
+        "name": "Belarus",
+        "value": 94.26182128,
+        "display": "94%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 32
+      },
+      "BEL": {
+        "name": "Belgium",
+        "value": 95.77579144,
+        "display": "96%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 19
+      },
+      "BLZ": {
+        "name": "Belize",
+        "value": 80.00582262,
+        "display": "80%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 98
+      },
+      "BEN": {
+        "name": "Benin",
+        "value": 33.98379898,
+        "display": "34%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 160
+      },
+      "BTN": {
+        "name": "Bhutan",
+        "value": 91.27739716,
+        "display": "91%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 48
+      },
+      "BOL": {
+        "name": "Bolivia",
+        "value": 79.70469666,
+        "display": "80%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 99
+      },
+      "BIH": {
+        "name": "Bosnia and Herzegovina",
+        "value": 86.10091103,
+        "display": "86%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 76
+      },
+      "BWA": {
+        "name": "Botswana",
+        "value": 57.45950036,
+        "display": "57%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 138
+      },
+      "BRA": {
+        "name": "Brazil",
+        "value": 84.46347227,
+        "display": "84%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 81
+      },
+      "BRN": {
+        "name": "Brunei Darussalam",
+        "value": 96.29828801,
+        "display": "96%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 17
+      },
+      "BGR": {
+        "name": "Bulgaria",
+        "value": 82.438955,
+        "display": "82%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 89
+      },
+      "BFA": {
+        "name": "Burkina Faso",
+        "value": 28.25270081,
+        "display": "28%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 168
+      },
+      "BDI": {
+        "name": "Burundi",
+        "value": 8.595999718,
+        "display": "9%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 185
+      },
+      "CPV": {
+        "name": "Cabo Verde",
+        "value": 74.73519897,
+        "display": "75%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 109
+      },
+      "KHM": {
+        "name": "Cambodia",
+        "value": 68.47530365,
+        "display": "68%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 122
+      },
+      "CMR": {
+        "name": "Cameroon",
+        "value": 46.25880051,
+        "display": "46%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 148
+      },
+      "CAN": {
+        "name": "Canada",
+        "value": 94.353302,
+        "display": "94%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 31
+      },
+      "CAF": {
+        "name": "Central African Republic",
+        "value": 13.78250027,
+        "display": "14%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 182
+      },
+      "TCD": {
+        "name": "Chad",
+        "value": 12.62689972,
+        "display": "13%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 183
+      },
+      "CHL": {
+        "name": "Chile",
+        "value": 95.590243,
+        "display": "96%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 24
+      },
+      "CHN": {
+        "name": "China",
+        "value": 91.6,
+        "display": "92%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 46
+      },
+      "COL": {
+        "name": "Colombia",
+        "value": 79.34543299,
+        "display": "79%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 100
+      },
+      "COM": {
+        "name": "Comoros",
+        "value": 32.51750183,
+        "display": "33%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 162
+      },
+      "COD": {
+        "name": "Congo, Dem. Rep.",
+        "value": 19.67350006,
+        "display": "20%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 173
+      },
+      "COG": {
+        "name": "Congo, Rep.",
+        "value": 47.25159836,
+        "display": "47%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 146
+      },
+      "CRI": {
+        "name": "Costa Rica",
+        "value": 87.17019653,
+        "display": "87%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 73
+      },
+      "CIV": {
+        "name": "Cote d'Ivoire",
+        "value": 41.43219902,
+        "display": "41%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 152
+      },
+      "HRV": {
+        "name": "Croatia",
+        "value": 83.63240029,
+        "display": "84%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 85
+      },
+      "CUB": {
+        "name": "Cuba",
+        "value": 70.47699738,
+        "display": "70%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 117
+      },
+      "CYP": {
+        "name": "Cyprus",
+        "value": 89.60099246,
+        "display": "90%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 58
+      },
+      "CZE": {
+        "name": "Czechia",
+        "value": 87.68776014,
+        "display": "88%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 70
+      },
+      "DNK": {
+        "name": "Denmark",
+        "value": 99.76915157,
+        "display": "100%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 5
+      },
+      "DJI": {
+        "name": "Djibouti",
+        "value": 65.29889679,
+        "display": "65%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 129
+      },
+      "DMA": {
+        "name": "Dominica",
+        "value": 82.04689789,
+        "display": "82%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 91
+      },
+      "DOM": {
+        "name": "Dominican Republic",
+        "value": 91.0022446,
+        "display": "91%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 50
+      },
+      "ECU": {
+        "name": "Ecuador",
+        "value": 77.17273115,
+        "display": "77%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 104
+      },
+      "EGY": {
+        "name": "Egypt, Arab Rep.",
+        "value": 74.64839935,
+        "display": "75%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 111
+      },
+      "SLV": {
+        "name": "El Salvador",
+        "value": 66.47769928,
+        "display": "66%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 126
+      },
+      "GNQ": {
+        "name": "Equatorial Guinea",
+        "value": 63.29930115,
+        "display": "63%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 132
+      },
+      "ERI": {
+        "name": "Eritrea",
+        "value": 14.34939957,
+        "display": "14%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 181
+      },
+      "EST": {
+        "name": "Estonia",
+        "value": 92.23796204,
+        "display": "92%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 42
+      },
+      "SWZ": {
+        "name": "Eswatini",
+        "value": 63.40309906,
+        "display": "63%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 131
+      },
+      "ETH": {
+        "name": "Ethiopia",
+        "value": 21.94129944,
+        "display": "22%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 171
+      },
+      "FJI": {
+        "name": "Fiji",
+        "value": 74.7052002,
+        "display": "75%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 110
+      },
+      "FIN": {
+        "name": "Finland",
+        "value": 93.72405196,
+        "display": "94%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 35
+      },
+      "FRA": {
+        "name": "France",
+        "value": 88.65381638,
+        "display": "89%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 64
+      },
+      "GAB": {
+        "name": "Gabon",
+        "value": 68.72090149,
+        "display": "69%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 121
+      },
+      "GMB": {
+        "name": "Gambia, The",
+        "value": 49.49430084,
+        "display": "49%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 144
+      },
+      "GEO": {
+        "name": "Georgia",
+        "value": 83.79855689,
+        "display": "84%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 84
+      },
+      "DEU": {
+        "name": "Germany",
+        "value": 93.49999579,
+        "display": "93%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 37
+      },
+      "GHA": {
+        "name": "Ghana",
+        "value": 72.17569733,
+        "display": "72%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 116
+      },
+      "GRC": {
+        "name": "Greece",
+        "value": 86.26968886,
+        "display": "86%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 75
+      },
+      "GRD": {
+        "name": "Grenada",
+        "value": 70.16159821,
+        "display": "70%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 119
+      },
+      "GTM": {
+        "name": "Guatemala",
+        "value": 60.22140121,
+        "display": "60%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 134
+      },
+      "GIN": {
+        "name": "Guinea",
+        "value": 33.30469894,
+        "display": "33%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 161
+      },
+      "GNB": {
+        "name": "Guinea-Bissau",
+        "value": 29.77739906,
+        "display": "30%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 166
+      },
+      "GUY": {
+        "name": "Guyana",
+        "value": 83.00080109,
+        "display": "83%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 87
+      },
+      "HTI": {
+        "name": "Haiti",
+        "value": 47.8614006,
+        "display": "48%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 145
+      },
+      "HND": {
+        "name": "Honduras",
+        "value": 58.62269974,
+        "display": "59%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 137
+      },
+      "HKG": {
+        "name": "Hong Kong SAR, China",
+        "value": 95.75536971,
+        "display": "96%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 22
+      },
+      "HUN": {
+        "name": "Hungary",
+        "value": 93.77898628,
+        "display": "94%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 34
+      },
+      "ISL": {
+        "name": "Iceland",
+        "value": 98.209198,
+        "display": "98%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 9
+      },
+      "IND": {
+        "name": "India",
+        "value": 70.0,
+        "display": "70%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 120
+      },
+      "IDN": {
+        "name": "Indonesia",
+        "value": 72.78075544,
+        "display": "73%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 113
+      },
+      "IRN": {
+        "name": "Iran, Islamic Rep.",
+        "value": 85.3404007,
+        "display": "85%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 79
+      },
+      "IRQ": {
+        "name": "Iraq",
+        "value": 81.47450256,
+        "display": "81%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 95
+      },
+      "IRL": {
+        "name": "Ireland",
+        "value": 97.18769836,
+        "display": "97%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 15
+      },
+      "ISR": {
+        "name": "Israel",
+        "value": 88.18242225,
+        "display": "88%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 67
+      },
+      "ITA": {
+        "name": "Italy",
+        "value": 89.2207202,
+        "display": "89%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 61
+      },
+      "JAM": {
+        "name": "Jamaica",
+        "value": 90.10870361,
+        "display": "90%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 54
+      },
+      "JPN": {
+        "name": "Japan",
+        "value": 85.54153081,
+        "display": "86%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 78
+      },
+      "JOR": {
+        "name": "Jordan",
+        "value": 95.62244985,
+        "display": "96%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 23
+      },
+      "KAZ": {
+        "name": "Kazakhstan",
+        "value": 93.39167254,
+        "display": "93%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 38
+      },
+      "KEN": {
+        "name": "Kenya",
+        "value": 34.97622513,
+        "display": "35%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 159
+      },
+      "KIR": {
+        "name": "Kiribati",
+        "value": 89.44029999,
+        "display": "89%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 60
+      },
+      "KOR": {
+        "name": "Korea, Rep.",
+        "value": 97.89563777,
+        "display": "98%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 12
+      },
+      "KWT": {
+        "name": "Kuwait",
+        "value": 100.0,
+        "display": "100%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 1
+      },
+      "KGZ": {
+        "name": "Kyrgyz Republic",
+        "value": 92.0286026,
+        "display": "92%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 43
+      },
+      "LAO": {
+        "name": "Lao PDR",
+        "value": 65.59269714,
+        "display": "66%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 128
+      },
+      "LVA": {
+        "name": "Latvia",
+        "value": 92.70757011,
+        "display": "93%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 40
+      },
+      "LBN": {
+        "name": "Lebanon",
+        "value": 80.63400269,
+        "display": "81%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 97
+      },
+      "LSO": {
+        "name": "Lesotho",
+        "value": 51.79660034,
+        "display": "52%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 143
+      },
+      "LBR": {
+        "name": "Liberia",
+        "value": 32.23360062,
+        "display": "32%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 163
+      },
+      "LBY": {
+        "name": "Libya",
+        "value": 81.95449829,
+        "display": "82%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 93
+      },
+      "LIE": {
+        "name": "Liechtenstein",
+        "value": 98.2641983,
+        "display": "98%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 8
+      },
+      "LTU": {
+        "name": "Lithuania",
+        "value": 89.16116293,
+        "display": "89%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 62
+      },
+      "LUX": {
+        "name": "Luxembourg",
+        "value": 99.12902211,
+        "display": "99%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 6
+      },
+      "MDG": {
+        "name": "Madagascar",
+        "value": 18.67790031,
+        "display": "19%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 176
+      },
+      "MWI": {
+        "name": "Malawi",
+        "value": 18.96159935,
+        "display": "19%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 174
+      },
+      "MYS": {
+        "name": "Malaysia",
+        "value": 98.0206059,
+        "display": "98%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 11
+      },
+      "MLI": {
+        "name": "Mali",
+        "value": 36.80149841,
+        "display": "37%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 157
+      },
+      "MLT": {
+        "name": "Malta",
+        "value": 93.86029816,
+        "display": "94%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 33
+      },
+      "MHL": {
+        "name": "Marshall Islands",
+        "value": 65.915802,
+        "display": "66%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 127
+      },
+      "MRT": {
+        "name": "Mauritania",
+        "value": 45.77939987,
+        "display": "46%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 149
+      },
+      "MUS": {
+        "name": "Mauritius",
+        "value": 73.30793533,
+        "display": "73%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 112
+      },
+      "MEX": {
+        "name": "Mexico",
+        "value": 83.12233799,
+        "display": "83%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 86
+      },
+      "FSM": {
+        "name": "Micronesia, Fed. Sts.",
+        "value": 39.52360153,
+        "display": "40%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 155
+      },
+      "MDA": {
+        "name": "Moldova",
+        "value": 77.3687973,
+        "display": "77%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 103
+      },
+      "MNG": {
+        "name": "Mongolia",
+        "value": 85.12349701,
+        "display": "85%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 80
+      },
+      "MNE": {
+        "name": "Montenegro",
+        "value": 88.88258428,
+        "display": "89%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 63
+      },
+      "MAR": {
+        "name": "Morocco",
+        "value": 91.2,
+        "display": "91%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 49
+      },
+      "MOZ": {
+        "name": "Mozambique",
+        "value": 20.52729988,
+        "display": "21%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 172
+      },
+      "MMR": {
+        "name": "Myanmar",
+        "value": 45.4477005,
+        "display": "45%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 150
+      },
+      "NAM": {
+        "name": "Namibia",
+        "value": 64.87460327,
+        "display": "65%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 130
+      },
+      "NPL": {
+        "name": "Nepal",
+        "value": 46.32189941,
+        "display": "46%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 147
+      },
+      "NLD": {
+        "name": "Netherlands",
+        "value": 97.00679779,
+        "display": "97%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 16
+      },
+      "NZL": {
+        "name": "New Zealand",
+        "value": 93.51930237,
+        "display": "94%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 36
+      },
+      "NIC": {
+        "name": "Nicaragua",
+        "value": 61.39550018,
+        "display": "61%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 133
+      },
+      "NER": {
+        "name": "Niger",
+        "value": 15.55760002,
+        "display": "16%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 180
+      },
+      "NGA": {
+        "name": "Nigeria",
+        "value": 41.21139908,
+        "display": "41%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 153
+      },
+      "MKD": {
+        "name": "North Macedonia",
+        "value": 93.1,
+        "display": "93%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 39
+      },
+      "NOR": {
+        "name": "Norway",
+        "value": 99.0,
+        "display": "99%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 7
+      },
+      "OMN": {
+        "name": "Oman",
+        "value": 95.25174678,
+        "display": "95%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 26
+      },
+      "PAK": {
+        "name": "Pakistan",
+        "value": 57.253,
+        "display": "57%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 139
+      },
+      "PLW": {
+        "name": "Palau",
+        "value": 83.92549896,
+        "display": "84%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 83
+      },
+      "PAN": {
+        "name": "Panama",
+        "value": 72.77149963,
+        "display": "73%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 114
+      },
+      "PNG": {
+        "name": "Papua New Guinea",
+        "value": 18.81159973,
+        "display": "19%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 175
+      },
+      "PRY": {
+        "name": "Paraguay",
+        "value": 81.57806793,
+        "display": "82%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 94
+      },
+      "PER": {
+        "name": "Peru",
+        "value": 81.95705992,
+        "display": "82%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 92
+      },
+      "PHL": {
+        "name": "Philippines",
+        "value": 67.26300914,
+        "display": "67%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 125
+      },
+      "POL": {
+        "name": "Poland",
+        "value": 88.58496367,
+        "display": "89%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 65
+      },
+      "PRT": {
+        "name": "Portugal",
+        "value": 88.48704454,
+        "display": "88%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 66
+      },
+      "PRI": {
+        "name": "Puerto Rico (US)",
+        "value": 87.29178106,
+        "display": "87%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 72
+      },
+      "QAT": {
+        "name": "Qatar",
+        "value": 98.08540344,
+        "display": "98%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 10
+      },
+      "ROU": {
+        "name": "Romania",
+        "value": 91.29048551,
+        "display": "91%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 47
+      },
+      "RUS": {
+        "name": "Russian Federation",
+        "value": 94.36495368,
+        "display": "94%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 30
+      },
+      "RWA": {
+        "name": "Rwanda",
+        "value": 31.70330048,
+        "display": "32%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 164
+      },
+      "SMR": {
+        "name": "San Marino",
+        "value": 97.35220337,
+        "display": "97%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 13
+      },
+      "STP": {
+        "name": "Sao Tome and Principe",
+        "value": 59.11759949,
+        "display": "59%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 136
+      },
+      "SAU": {
+        "name": "Saudi Arabia",
+        "value": 100.0,
+        "display": "100%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 1
+      },
+      "SEN": {
+        "name": "Senegal",
+        "value": 60.11780167,
+        "display": "60%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 135
+      },
+      "SRB": {
+        "name": "Serbia",
+        "value": 87.69071294,
+        "display": "88%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 69
+      },
+      "SYC": {
+        "name": "Seychelles",
+        "value": 87.81800079,
+        "display": "88%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 68
+      },
+      "SLE": {
+        "name": "Sierra Leone",
+        "value": 25.10499954,
+        "display": "25%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 170
+      },
+      "SGP": {
+        "name": "Singapore",
+        "value": 94.37757178,
+        "display": "94%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 29
+      },
+      "SVK": {
+        "name": "Slovak Republic",
+        "value": 89.82507032,
+        "display": "90%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 55
+      },
+      "SVN": {
+        "name": "Slovenia",
+        "value": 90.76355487,
+        "display": "91%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 53
+      },
+      "SLB": {
+        "name": "Solomon Islands",
+        "value": 29.04070091,
+        "display": "29%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 167
+      },
+      "SOM": {
+        "name": "Somalia, Fed. Rep.",
+        "value": 27.94020081,
+        "display": "28%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 169
+      },
+      "ZAF": {
+        "name": "South Africa",
+        "value": 78.35759735,
+        "display": "78%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 101
+      },
+      "SSD": {
+        "name": "South Sudan",
+        "value": 6.671000004,
+        "display": "7%",
+        "year": 2019,
+        "unit": "%",
+        "rank": 186
+      },
+      "ESP": {
+        "name": "Spain",
+        "value": 95.7574516,
+        "display": "96%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 21
+      },
+      "LKA": {
+        "name": "Sri Lanka",
+        "value": 54.59,
+        "display": "55%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 141
+      },
+      "KNA": {
+        "name": "St. Kitts and Nevis",
+        "value": 76.88400269,
+        "display": "77%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 105
+      },
+      "LCA": {
+        "name": "St. Lucia",
+        "value": 68.20500183,
+        "display": "68%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 123
+      },
+      "VCT": {
+        "name": "St. Vincent and the Grenadines",
+        "value": 76.19010162,
+        "display": "76%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 108
+      },
+      "SUR": {
+        "name": "Suriname",
+        "value": 87.4,
+        "display": "87%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 71
+      },
+      "SWE": {
+        "name": "Sweden",
+        "value": 95.76629783,
+        "display": "96%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 20
+      },
+      "CHE": {
+        "name": "Switzerland",
+        "value": 97.32103855,
+        "display": "97%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 14
+      },
+      "TJK": {
+        "name": "Tajikistan",
+        "value": 55.79339981,
+        "display": "56%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 140
+      },
+      "TZA": {
+        "name": "Tanzania",
+        "value": 31.16209984,
+        "display": "31%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 165
+      },
+      "THA": {
+        "name": "Thailand",
+        "value": 90.86718789,
+        "display": "91%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 51
+      },
+      "TLS": {
+        "name": "Timor-Leste",
+        "value": 35.04199982,
+        "display": "35%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 158
+      },
+      "TGO": {
+        "name": "Togo",
+        "value": 39.48320007,
+        "display": "39%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 156
+      },
+      "TON": {
+        "name": "Tonga",
+        "value": 67.4417038,
+        "display": "67%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 124
+      },
+      "TTO": {
+        "name": "Trinidad and Tobago",
+        "value": 82.15989685,
+        "display": "82%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 90
+      },
+      "TUN": {
+        "name": "Tunisia",
+        "value": 76.5,
+        "display": "76%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 107
+      },
+      "TUR": {
+        "name": "Turkiye",
+        "value": 89.77024003,
+        "display": "90%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 56
+      },
+      "UGA": {
+        "name": "Uganda",
+        "value": 8.949831061,
+        "display": "9%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 184
+      },
+      "UKR": {
+        "name": "Ukraine",
+        "value": 82.47489929,
+        "display": "82%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 88
+      },
+      "ARE": {
+        "name": "United Arab Emirates",
+        "value": 100.0,
+        "display": "100%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 1
+      },
+      "GBR": {
+        "name": "United Kingdom",
+        "value": 95.4720993,
+        "display": "95%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 25
+      },
+      "USA": {
+        "name": "United States",
+        "value": 94.69380188,
+        "display": "95%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 27
+      },
+      "URY": {
+        "name": "Uruguay",
+        "value": 91.99109007,
+        "display": "92%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 44
+      },
+      "UZB": {
+        "name": "Uzbekistan",
+        "value": 89.50550079,
+        "display": "90%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 59
+      },
+      "VEN": {
+        "name": "Venezuela, RB",
+        "value": 76.67890167,
+        "display": "77%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 106
+      },
+      "VNM": {
+        "name": "Viet Nam",
+        "value": 84.15,
+        "display": "84%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 82
+      },
+      "PSE": {
+        "name": "West Bank and Gaza",
+        "value": 86.63765334,
+        "display": "87%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 74
+      },
+      "YEM": {
+        "name": "Yemen, Rep.",
+        "value": 17.49099922,
+        "display": "17%",
+        "year": 2019,
+        "unit": "%",
+        "rank": 177
+      },
+      "ZMB": {
+        "name": "Zambia",
+        "value": 17.10099983,
+        "display": "17%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 178
+      },
+      "ZWE": {
+        "name": "Zimbabwe",
+        "value": 41.64279938,
+        "display": "42%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 151
+      }
+    }
+  },
+  "review": {
+    "errors": [],
+    "claims": [
+      {
+        "surface": "title",
+        "text": "Internet usage across 186 places",
+        "isos": [],
+        "support": "The evidence lists 186 mapped countries and territories.",
+        "evidence": {}
+      },
+      {
+        "surface": "beat_0",
+        "text": "143 out of 186 countries and territories have at least 50 percent internet usage.",
+        "isos": [],
+        "support": "The evidence states 143 entities are at or above the 50.0 threshold out of 186.",
+        "evidence": {}
+      },
+      {
+        "surface": "beat_2",
+        "text": "South Sudan has the world's lowest usage at 7 percent.",
+        "isos": [
+          "SSD"
+        ],
+        "support": "The evidence shows South Sudan (SSD) at rank 186 with a value of 6.671% (displayed as 7%).",
+        "evidence": {
+          "SSD": {
+            "name": "South Sudan",
+            "value": 6.671000004,
+            "display": "7%",
+            "year": 2019,
+            "unit": "%",
+            "rank": 186
+          }
+        }
+      },
+      {
+        "surface": "beat_3",
+        "text": "Kuwait reaches 100 percent, while Nigeria sits at 41 percent.",
+        "isos": [
+          "KWT",
+          "NGA"
+        ],
+        "support": "The evidence shows Kuwait (KWT) at 100% and Nigeria (NGA) at 41.21% (displayed as 41%).",
+        "evidence": {
+          "KWT": {
+            "name": "Kuwait",
+            "value": 100.0,
+            "display": "100%",
+            "year": 2025,
+            "unit": "%",
+            "rank": 1
+          },
+          "NGA": {
+            "name": "Nigeria",
+            "value": 41.21139908,
+            "display": "41%",
+            "year": 2024,
+            "unit": "%",
+            "rank": 153
+          }
+        }
+      },
+      {
+        "surface": "beat_5",
+        "text": "Among these countries, India is at 70 percent and the USA is at 95 percent.",
+        "isos": [
+          "IND",
+          "USA"
+        ],
+        "support": "The evidence shows India (IND) at 70% and the USA (USA) at 94.69% (displayed as 95%).",
+        "evidence": {
+          "IND": {
+            "name": "India",
+            "value": 70.0,
+            "display": "70%",
+            "year": 2025,
+            "unit": "%",
+            "rank": 120
+          },
+          "USA": {
+            "name": "United States",
+            "value": 94.69380188,
+            "display": "95%",
+            "year": 2024,
+            "unit": "%",
+            "rank": 27
+          }
+        }
+      },
+      {
+        "surface": "title",
+        "text": "Internet usage across 186 places",
+        "isos": [],
+        "support": "Matches the count of 186 entities in the evidence.",
+        "method": "complete-surface-check",
+        "evidence": {}
+      },
+      {
+        "surface": "hook",
+        "text": "INTERNET USAGE MAPPED",
+        "isos": [],
+        "support": "Accurate summary of the indicator.",
+        "method": "complete-surface-check",
+        "evidence": {}
+      },
+      {
+        "surface": "description",
+        "text": "This map shows the share of people who have used the internet in the last 3 months.",
+        "isos": [],
+        "support": "Matches the definition provided in the evidence.",
+        "method": "complete-surface-check",
+        "evidence": {}
+      },
+      {
+        "surface": "beat_0",
+        "text": "143 out of 186 countries and territories have at least 50 percent internet usage.",
+        "isos": [],
+        "support": "Matches the evidence count of 143 out of 186.",
+        "method": "complete-surface-check",
+        "evidence": {}
+      },
+      {
+        "surface": "beat_1",
+        "text": "Yellow areas show 50 percent or more usage, while dark blue areas are below that.",
+        "isos": [],
+        "support": "Describes the visual representation of the threshold.",
+        "method": "complete-surface-check",
+        "evidence": {}
+      },
+      {
+        "surface": "beat_2",
+        "text": "South Sudan has the world's lowest usage at 7 percent.",
+        "isos": [
+          "SSD"
+        ],
+        "support": "Matches the evidence for South Sudan.",
+        "method": "complete-surface-check",
+        "evidence": {
+          "SSD": {
+            "name": "South Sudan",
+            "value": 6.671000004,
+            "display": "7%",
+            "year": 2019,
+            "unit": "%",
+            "rank": 186
+          }
+        }
+      },
+      {
+        "surface": "beat_3",
+        "text": "Kuwait reaches 100 percent, while Nigeria sits at 41 percent.",
+        "isos": [
+          "KWT",
+          "NGA"
+        ],
+        "support": "Matches the evidence for Kuwait and Nigeria.",
+        "method": "complete-surface-check",
+        "evidence": {
+          "KWT": {
+            "name": "Kuwait",
+            "value": 100.0,
+            "display": "100%",
+            "year": 2025,
+            "unit": "%",
+            "rank": 1
+          },
+          "NGA": {
+            "name": "Nigeria",
+            "value": 41.21139908,
+            "display": "41%",
+            "year": 2024,
+            "unit": "%",
+            "rank": 153
+          }
+        }
+      },
+      {
+        "surface": "beat_4",
+        "text": "The metric counts individuals who have used the internet from any location in the last 3 months.",
+        "isos": [],
+        "support": "Matches the definition provided in the evidence.",
+        "method": "complete-surface-check",
+        "evidence": {}
+      },
+      {
+        "surface": "beat_5",
+        "text": "Among these countries, India is at 70 percent and the USA is at 95 percent.",
+        "isos": [
+          "IND",
+          "USA"
+        ],
+        "support": "Matches the evidence for India and the USA.",
+        "method": "complete-surface-check",
+        "evidence": {
+          "IND": {
+            "name": "India",
+            "value": 70.0,
+            "display": "70%",
+            "year": 2025,
+            "unit": "%",
+            "rank": 120
+          },
+          "USA": {
+            "name": "United States",
+            "value": 94.69380188,
+            "display": "95%",
+            "year": 2024,
+            "unit": "%",
+            "rank": 27
+          }
+        }
+      },
+      {
+        "surface": "beat_6",
+        "text": "So where does your country rank?",
+        "isos": [],
+        "support": "Standard engagement question.",
+        "method": "complete-surface-check",
+        "evidence": {}
+      },
+      {
+        "surface": "card_6",
+        "text": [
+          "Where is your country?",
+          "Source: World Bank"
+        ],
+        "isos": [],
+        "support": "Matches the source attribution.",
+        "method": "complete-surface-check",
+        "evidence": {}
+      }
+    ],
+    "surface_checks": {
+      "title": {
+        "supported": true,
+        "reason": "Matches the count of 186 entities in the evidence.",
+        "isos": []
+      },
+      "hook": {
+        "supported": true,
+        "reason": "Accurate summary of the indicator.",
+        "isos": []
+      },
+      "description": {
+        "supported": true,
+        "reason": "Matches the definition provided in the evidence.",
+        "isos": []
+      },
+      "beat_0": {
+        "supported": true,
+        "reason": "Matches the evidence count of 143 out of 186.",
+        "isos": []
+      },
+      "beat_1": {
+        "supported": true,
+        "reason": "Describes the visual representation of the threshold.",
+        "isos": []
+      },
+      "beat_2": {
+        "supported": true,
+        "reason": "Matches the evidence for South Sudan.",
+        "isos": [
+          "SSD"
+        ]
+      },
+      "beat_3": {
+        "supported": true,
+        "reason": "Matches the evidence for Kuwait and Nigeria.",
+        "isos": [
+          "KWT",
+          "NGA"
+        ]
+      },
+      "beat_4": {
+        "supported": true,
+        "reason": "Matches the definition provided in the evidence.",
+        "isos": []
+      },
+      "beat_5": {
+        "supported": true,
+        "reason": "Matches the evidence for India and the USA.",
+        "isos": [
+          "IND",
+          "USA"
+        ]
+      },
+      "beat_6": {
+        "supported": true,
+        "reason": "Standard engagement question.",
+        "isos": []
+      },
+      "card_6": {
+        "supported": true,
+        "reason": "Matches the source attribution.",
+        "isos": []
+      }
+    },
+    "warnings": []
+  },
+  "script_sha256": "784d1537547cb156511991b3147701f8c400502f1cbc4cfb43e0fcb9016fecb8",
+  "data_sha256": "3465903684ad37bcaa6084908129a7cc0c62a17e650dfef0e8144530d0a2d7d8",
+  "reviewer_model": "gemini-3.1-flash-lite"
+}

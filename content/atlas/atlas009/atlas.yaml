@@ -1,0 +1,60 @@
+id: atlas009
+title: Mapping the world share of residents aged 65 or older
+hook_text: JAPAN'S AGING POPULATION
+description: A visualization of the percentage of the population aged 65 and over across 208 countries and territories
+  in 2025.
+hashtags:
+- '#maps'
+- '#geography'
+- '#data'
+sources:
+- https://data.worldbank.org/indicator/SP.POP.65UP.TO.ZS
+dataset:
+  kind: worldbank
+  indicator: SP.POP.65UP.TO.ZS
+  label: Share of people aged 65+
+  unit: '%'
+  source: World Bank
+  min_year: 2019
+scale:
+  edges:
+  - 5.0
+  - 10.0
+  - 15.0
+  - 20.0
+  - 25.0
+  labels:
+  - <5%
+  - 5-10
+  - 10-15
+  - 15-20
+  - 20-25
+  - 25%+
+value_format: '{v:.0f}%'
+beats:
+- text: In Japan, 30% of all residents are aged 65 or older.
+  shot:
+    callouts:
+    - JPN
+- text: Dark blue is lowest, grey-gold is middle, and bright yellow is highest. We have data for 208 countries and
+    territories.
+- text: Japan is the world's highest at 30%, while Qatar is the world's lowest at 2%.
+  shot:
+    kind: group
+    isos:
+    - JPN
+    - QAT
+- text: The USA sits at 18%, while India is currently at 7%.
+  shot:
+    kind: group
+    isos:
+    - USA
+    - IND
+- text: This measures the percentage of the total population aged 65 and above, counting all residents regardless
+    of legal status or citizenship.
+- text: So where does your country rank?
+  shot:
+    kind: card
+    lines:
+    - Where is your country?
+    - World Bank 2025 Data

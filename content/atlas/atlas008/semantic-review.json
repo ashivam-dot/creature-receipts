@@ -1,0 +1,118 @@
+{
+  "errors": [],
+  "claims": [
+    {
+      "surface": "title",
+      "text": "Electricity access in 207 places and territories",
+      "isos": [],
+      "support": "The evidence lists 207 mapped countries and territories."
+    },
+    {
+      "surface": "beat_0",
+      "text": "In 207 mapped countries and territories, electricity access varies from 5% to 100%.",
+      "isos": [],
+      "support": "The evidence shows South Sudan at 5% and many countries at 100%."
+    },
+    {
+      "surface": "beat_2",
+      "text": "South Sudan has the world's lowest access at 5%, while Chad is at 13%.",
+      "isos": [
+        "SSD",
+        "TCD"
+      ],
+      "support": "South Sudan is ranked 207th at 5.4% (displayed 5%) and Chad is ranked 206th at 13.4% (displayed 13%)."
+    },
+    {
+      "surface": "beat_3",
+      "text": "Nigeria is at 62%, and Pakistan is at 96%.",
+      "isos": [
+        "NGA",
+        "PAK"
+      ],
+      "support": "Nigeria is at 62.5% (displayed 62%) and Pakistan is at 95.7% (displayed 96%)."
+    },
+    {
+      "surface": "beat_4",
+      "text": "Albania, Australia, and Canada all reach 100%.",
+      "isos": [
+        "ALB",
+        "AUS",
+        "CAN"
+      ],
+      "support": "Albania, Australia, and Canada are all listed at 100.0%."
+    },
+    {
+      "surface": "beat_5",
+      "text": "Access to electricity is the percentage of population with access to electricity, collected from industry, national surveys and international sources.",
+      "isos": [],
+      "support": "This matches the provided definition."
+    }
+  ],
+  "surface_checks": {
+    "title": {
+      "supported": true,
+      "reason": "Matches the count of 207 entities in the evidence.",
+      "isos": []
+    },
+    "hook": {
+      "supported": true,
+      "reason": "Matches the topic of the evidence.",
+      "isos": []
+    },
+    "description": {
+      "supported": true,
+      "reason": "Matches the count of 207 entities in the evidence.",
+      "isos": []
+    },
+    "beat_0": {
+      "supported": true,
+      "reason": "Matches the range of values in the evidence.",
+      "isos": []
+    },
+    "beat_1": {
+      "supported": true,
+      "reason": "Describes the visual representation of the data.",
+      "isos": []
+    },
+    "beat_2": {
+      "supported": true,
+      "reason": "Matches the values for South Sudan and Chad.",
+      "isos": [
+        "SSD",
+        "TCD"
+      ]
+    },
+    "beat_3": {
+      "supported": true,
+      "reason": "Matches the values for Nigeria and Pakistan.",
+      "isos": [
+        "NGA",
+        "PAK"
+      ]
+    },
+    "beat_4": {
+      "supported": true,
+      "reason": "Matches the values for Albania, Australia, and Canada.",
+      "isos": [
+        "ALB",
+        "AUS",
+        "CAN"
+      ]
+    },
+    "beat_5": {
+      "supported": true,
+      "reason": "Matches the provided definition.",
+      "isos": []
+    },
+    "beat_6": {
+      "supported": true,
+      "reason": "General question.",
+      "isos": []
+    },
+    "card_6": {
+      "supported": true,
+      "reason": "Matches the source and indicator information.",
+      "isos": []
+    }
+  }
+}

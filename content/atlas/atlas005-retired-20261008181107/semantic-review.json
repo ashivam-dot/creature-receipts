@@ -1,0 +1,96 @@
+{
+  "errors": [
+    {
+      "surface": "beat_0",
+      "claim": "61 have fewer than 50 percent of people in cities",
+      "reason": "The evidence shows 208 total entities, with 147 at or above 50 percent. 208 - 147 = 61 entities are below 50 percent. This claim is correct.",
+      "severity": "info"
+    }
+  ],
+  "claims": [
+    {
+      "surface": "beat_0",
+      "text": "Among 208 entities, 61 have fewer than 50 percent of people in cities.",
+      "isos": [],
+      "support": "208 total entities, 147 at or above 50%, 208-147=61."
+    },
+    {
+      "surface": "beat_3",
+      "text": "Kuwait is 100 percent urban, while Papua N. Guinea is 16 percent.",
+      "isos": [
+        "KWT",
+        "PNG"
+      ],
+      "support": "KWT: 100%, PNG: 16%."
+    },
+    {
+      "surface": "beat_4",
+      "text": "Japan is 92 percent, China is 66 percent, and India is 36 percent.",
+      "isos": [
+        "JPN",
+        "CHN",
+        "IND"
+      ],
+      "support": "JPN: 92%, CHN: 66%, IND: 36%."
+    }
+  ],
+  "surface_checks": {
+    "title": {
+      "supported": true,
+      "reason": "Matches the universe count of 208.",
+      "isos": []
+    },
+    "hook": {
+      "supported": true,
+      "reason": "Reflects the focus on rural entities.",
+      "isos": []
+    },
+    "description": {
+      "supported": true,
+      "reason": "Matches the universe count and data source.",
+      "isos": []
+    },
+    "beat_0": {
+      "supported": true,
+      "reason": "Calculation 208 - 147 = 61 is correct.",
+      "isos": []
+    },
+    "beat_1": {
+      "supported": true,
+      "reason": "Describes the visual representation of the threshold.",
+      "isos": []
+    },
+    "beat_2": {
+      "supported": true,
+      "reason": "Matches the provided definition.",
+      "isos": []
+    },
+    "beat_3": {
+      "supported": true,
+      "reason": "Values match the evidence for KWT and PNG.",
+      "isos": [
+        "KWT",
+        "PNG"
+      ]
+    },
+    "beat_4": {
+      "supported": true,
+      "reason": "Values match the evidence for JPN, CHN, and IND.",
+      "isos": [
+        "JPN",
+        "CHN",
+        "IND"
+      ]
+    },
+    "beat_5": {
+      "supported": true,
+      "reason": "General question.",
+      "isos": []
+    },
+    "card_5": {
+      "supported": true,
+      "reason": "Matches the provided metadata.",
+      "isos": []
+    }
+  }
+}

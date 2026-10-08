@@ -1,0 +1,25 @@
+{
+  "duration": 36.63,
+  "integrated_lufs": -14.7,
+  "true_peak_dbfs": -1.3,
+  "speech": {
+    "heard": "Among 208 entities, 61 have fewer than 50% of people in cities. Yellow areas show entities at or above 50% urban while dark blue areas are mostly rural. Urban population refers to people living in urban areas as defined by national statistical offices. Among these entities, Kuwait is 100% urban while Papua and Guinea is 16%. Comparing urban shares, Japan is 92%, China is 66%, and India is 36%. So where does your country rank on this map?",
+    "model": "small.en",
+    "media_sha256": "e3334f3cf9f6711fab599aca7fe5b79a673d57977e292a1bf75242e3bcef74fc",
+    "primary_differences": [
+      "'n' heard as 'and' after 'urban while papua'"
+    ],
+    "differences": [
+      "'n' heard as 'and' after 'urban while papua'",
+      "base.en: 'n' heard as 'and' after 'urban while papua'"
+    ],
+    "corroboration": {
+      "model": "base.en",
+      "heard": "Among 208 entities, 61 have fewer than 50% of people in cities. Yellow areas show entities at or above 50% urban, while dark blue areas are mostly rural. Urban population refers to people living in urban areas as defined by national statistical offices. Among these entities, Kuwait is 100% urban, while Papua and Guinea is 16%. Comparing urban shares, Japan is 92 percent, China is 66 percent, and India is 36 percent. So where does your country rank on this map?",
+      "differences": [
+        "'n' heard as 'and' after 'urban while papua'"
+      ],
+      "resolved": []
+    }
+  }
+}

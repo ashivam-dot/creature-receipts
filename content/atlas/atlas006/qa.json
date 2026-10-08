@@ -1,0 +1,39 @@
+{
+  "version": 1,
+  "passed": true,
+  "checked_at": "2026-10-08T18:21:05.450329+00:00",
+  "quality_module_sha256": "650d112f3aff01e85a5035543f84c2bbcef432d2b29a3d2719af2d6487620fd8",
+  "media_sha256": "d2d3b04e22f314941b68a59914fd21ffbce2697b2587290a9bea0eb5fdd57705",
+  "script_sha256": "6ff30e316385e08f0467e437c3993c01cdeba523d5591805858256be7a9f7005",
+  "data_sha256": "e07cda74b4d58920ce1f79386b1cf37e5488d51d29dc136d7d005860a9aff0a3",
+  "claims_sha256": "8f9f4947aba33e0f3832ff2797874d543d016c55b0c80ebec46a8d98a3fb9dec",
+  "contact_sha256": "90b686e866a6ff1735a7e7f5a5d55de91774e30865c31d0e4734e36e01e032f9",
+  "duration": 44.57,
+  "integrated_lufs": -14.7,
+  "true_peak_dbfs": -1.3,
+  "speech": {
+    "heard": "Suriname leads the world with 94% of its land covered in forest. Dark blue is the lowest coverage, shifting through gray gold to bright yellow for the highest across 207 countries and territories. Forest area is the share of land under natural or planted trees at least 5 meters tall, excluding agriculture and urban parks. Suriname is at 94%, Gabon is at 91%, and Guyana is at 87%. The USA is at 34%, India is at 25%, and Japan is at 68%. At the bottom, Kuwait, Mauritania, and Qatar all record 0%. So where does your country rank on the map?",
+    "model": "small.en",
+    "media_sha256": "d2d3b04e22f314941b68a59914fd21ffbce2697b2587290a9bea0eb5fdd57705",
+    "primary_differences": [
+      "'grey' heard as 'gray' after 'coverage shifting through'"
+    ],
+    "differences": [
+      "'grey' heard as 'gray' after 'coverage shifting through'",
+      "base.en: 'grey' heard as 'gray' after 'coverage shifting through'"
+    ],
+    "corroboration": {
+      "model": "base.en",
+      "heard": "Suriname leads the world with 94% of its land covered in forest. Dark blue is the lowest coverage, shifting through gray gold to bright yellow for the highest across 207 countries and territories. Forest area is the share of land under natural or planted trees at least 5 meters tall, excluding agriculture and urban parks. Suriname is at 94%, Gabon is at 91%, and Guyana is at 87%. The USA is at 34%, India is at 25%, and Japan is at 68%. At the bottom, Kuwait, Mauritania, and Qatar all record 0%. So where does your country rank on the map?",
+      "differences": [
+        "'grey' heard as 'gray' after 'coverage shifting through'"
+      ],
+      "resolved": []
+    }
+  },
+  "warnings": [
+    "'grey' heard as 'gray' after 'coverage shifting through'",
+    "base.en: 'grey' heard as 'gray' after 'coverage shifting through'"
+  ],
+  "speech_policy": "material-hard-minor-spelling-warning"
+}

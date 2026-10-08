@@ -1,0 +1,48 @@
+id: atlas005
+title: Urban vs Rural Populations in 208 Entities
+format: rank_ladder
+hook_text: MOSTLY RURAL ENTITIES
+description: A look at global urbanization patterns across 208 countries and territories using 2025 World Bank data.
+hashtags:
+- '#maps'
+- '#geography'
+- '#data'
+sources:
+- https://data.worldbank.org/indicator/SP.URB.TOTL.IN.ZS
+dataset:
+  kind: worldbank
+  indicator: SP.URB.TOTL.IN.ZS
+  label: Share of people living in cities
+  unit: '%'
+  source: World Bank
+  min_year: 2019
+scale:
+  kind: threshold
+  at: 50.0
+  labels:
+  - Mostly urban
+  - Mostly rural
+value_format: '{v:.0f}%'
+beats:
+- text: Among 208 entities, 61 have fewer than 50 percent of people in cities.
+- text: Yellow areas show entities at or above 50 percent urban, while dark blue areas are mostly rural.
+- text: Urban population refers to people living in urban areas as defined by national statistical offices.
+- text: Among these entities, Kuwait is 100 percent urban, while Papua N. Guinea is 16 percent.
+  shot:
+    kind: group
+    isos:
+    - KWT
+    - PNG
+- text: Comparing urban shares, Japan is 92 percent, China is 66 percent, and India is 36 percent.
+  shot:
+    kind: rank
+    isos:
+    - JPN
+    - CHN
+    - IND
+- text: So where does your country rank on this map?
+  shot:
+    kind: card
+    lines:
+    - Where do you live?
+    - World Bank 2025 Data

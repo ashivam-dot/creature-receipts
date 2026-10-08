@@ -1,0 +1,107 @@
+{
+  "errors": [],
+  "claims": [
+    {
+      "surface": "beat_0",
+      "text": "In Japan, 30% of all residents are aged 65 or older.",
+      "isos": [
+        "JPN"
+      ],
+      "support": "29.9940966737423"
+    },
+    {
+      "surface": "beat_2",
+      "text": "Japan is the world's highest at 30%",
+      "isos": [
+        "JPN"
+      ],
+      "support": "29.9940966737423"
+    },
+    {
+      "surface": "beat_2",
+      "text": "Qatar is the world's lowest at 2%.",
+      "isos": [
+        "QAT"
+      ],
+      "support": "1.70081503237359"
+    },
+    {
+      "surface": "beat_3",
+      "text": "The USA sits at 18%",
+      "isos": [
+        "USA"
+      ],
+      "support": "18.387224828496"
+    },
+    {
+      "surface": "beat_3",
+      "text": "India is currently at 7%.",
+      "isos": [
+        "IND"
+      ],
+      "support": "7.37657146047502"
+    }
+  ],
+  "surface_checks": {
+    "title": {
+      "supported": true,
+      "reason": "The title accurately describes the indicator.",
+      "isos": []
+    },
+    "hook": {
+      "supported": true,
+      "reason": "Japan has the highest percentage of population aged 65 and above.",
+      "isos": [
+        "JPN"
+      ]
+    },
+    "description": {
+      "supported": true,
+      "reason": "The description matches the provided metadata.",
+      "isos": []
+    },
+    "beat_0": {
+      "supported": true,
+      "reason": "Japan value is 29.99%, rounded to 30%.",
+      "isos": [
+        "JPN"
+      ]
+    },
+    "beat_1": {
+      "supported": true,
+      "reason": "The count of 208 matches the metadata.",
+      "isos": []
+    },
+    "beat_2": {
+      "supported": true,
+      "reason": "Japan is rank 1 (highest) and Qatar is rank 208 (lowest).",
+      "isos": [
+        "JPN",
+        "QAT"
+      ]
+    },
+    "beat_3": {
+      "supported": true,
+      "reason": "USA value is 18.38% (18%) and India is 7.37% (7%).",
+      "isos": [
+        "USA",
+        "IND"
+      ]
+    },
+    "beat_4": {
+      "supported": true,
+      "reason": "The definition matches the provided metadata.",
+      "isos": []
+    },
+    "beat_5": {
+      "supported": true,
+      "reason": "This is a rhetorical question.",
+      "isos": []
+    },
+    "card_5": {
+      "supported": true,
+      "reason": "The card text matches the metadata.",
+      "isos": []
+    }
+  }
+}

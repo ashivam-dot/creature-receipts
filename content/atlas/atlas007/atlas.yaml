@@ -1,7 +1,7 @@
 id: atlas007
-title: 43 countries have most people offline in 2024
-hook_text: MOSTLY OFFLINE
-description: The countries where most people have never used the internet in 2024.
+title: Internet usage across 186 places
+hook_text: INTERNET USAGE MAPPED
+description: This map shows the share of people who have used the internet in the last 3 months.
 hashtags:
 - '#maps'
 - '#geography'
@@ -23,30 +23,28 @@ scale:
   - Most offline
 value_format: '{v:.0f}%'
 beats:
-- text: In 43 of 186 countries with data, most people have never used the internet.
-- text: Yellow is most online at or above 50, and dark blue is most offline.
-- text: South Sudan is the world's lowest at 7%, and Burundi is at 9%.
+- text: 143 out of 186 countries and territories have at least 50 percent internet usage.
+- text: Yellow areas show 50 percent or more usage, while dark blue areas are below that.
+- text: South Sudan has the world's lowest usage at 7 percent.
+  shot:
+    kind: country
+    iso: SSD
+- text: Kuwait reaches 100 percent, while Nigeria sits at 41 percent.
   shot:
     kind: group
     isos:
-    - SSD
-    - BDI
-- text: Among these countries, Afghanistan is at 16% and Niger is at 16%.
-  shot:
-    kind: group
-    isos:
-    - AFG
-    - NER
-- text: India sits at 70%, while USA stands at 95% among these countries.
+    - KWT
+    - NGA
+- text: The metric counts individuals who have used the internet from any location in the last 3 months.
+- text: Among these countries, India is at 70 percent and the USA is at 95 percent.
   shot:
     kind: group
     isos:
     - IND
     - USA
-- text: Internet users are individuals who have used the Internet from any location in the last 3 months.
-- text: So where is your country in this 2024 data?
+- text: So where does your country rank?
   shot:
     kind: card
     lines:
     - Where is your country?
-    - Share of people using the internet (%), World Bank, 2024
+    - 'Source: World Bank'
