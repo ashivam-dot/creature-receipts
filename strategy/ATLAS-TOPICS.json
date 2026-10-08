@@ -56,7 +56,7 @@
    "id": "t003",
    "topic": "Below replacement: the fertility map",
    "angle": "2.1 births keeps a population stable; most of the world is now below it.",
-   "format": "map_reveal",
+   "format": "rank_ladder",
    "dataset": {
     "kind": "worldbank",
     "indicator": "SP.DYN.TFRT.IN",
@@ -144,7 +144,7 @@
    "id": "t007",
    "topic": "Mostly city, or mostly countryside?",
    "angle": "Where the majority still lives outside cities.",
-   "format": "map_reveal",
+   "format": "rank_ladder",
    "dataset": {
     "kind": "worldbank",
     "indicator": "SP.URB.TOTL.IN.ZS",
@@ -232,7 +232,7 @@
    "id": "t010",
    "topic": "Lights on: access to electricity",
    "angle": "Where electricity is still not a given.",
-   "format": "map_reveal",
+   "format": "rank_ladder",
    "dataset": {
     "kind": "worldbank",
     "indicator": "EG.ELC.ACCS.ZS",
@@ -340,7 +340,7 @@
    "id": "t013",
    "topic": "Renewables: who's already there",
    "angle": "The surprising countries that already run mostly on renewables.",
-   "format": "map_reveal",
+   "format": "rank_ladder",
    "dataset": {
     "kind": "worldbank",
     "indicator": "EG.FEC.RNEW.ZS",
@@ -448,7 +448,7 @@
    "id": "t016",
    "topic": "Doctors per person",
    "angle": "From over 5 doctors per thousand people to almost none.",
-   "format": "map_reveal",
+   "format": "rank_ladder",
    "dataset": {
     "kind": "worldbank",
     "indicator": "SH.MED.PHYS.ZS",
@@ -556,7 +556,7 @@
    "id": "t019",
    "topic": "One city holds the country",
    "angle": "Countries where one city holds most of the urban population.",
-   "format": "map_reveal",
+   "format": "rank_ladder",
    "dataset": {
     "kind": "worldbank",
     "indicator": "EN.URB.LCTY.UR.ZS",
@@ -654,7 +654,7 @@
    "id": "t022",
    "topic": "Women at work",
    "angle": "Where most women work for pay, and where few do.",
-   "format": "map_reveal",
+   "format": "rank_ladder",
    "dataset": {
     "kind": "worldbank",
     "indicator": "SL.TLF.CACT.FE.ZS",
@@ -762,7 +762,7 @@
    "id": "t025",
    "topic": "Migrants: the share born abroad",
    "angle": "Countries where most residents were born somewhere else.",
-   "format": "map_reveal",
+   "format": "rank_ladder",
    "dataset": {
     "kind": "worldbank",
     "indicator": "SM.POP.TOTL.ZS",
@@ -870,7 +870,7 @@
    "id": "t029",
    "topic": "Farming's share of the economy",
    "angle": "Where farming is still a big part of the economy.",
-   "format": "map_reveal",
+   "format": "rank_ladder",
    "dataset": {
     "kind": "worldbank",
     "indicator": "NV.AGR.TOTL.ZS",
