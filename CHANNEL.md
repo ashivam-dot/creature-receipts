@@ -11,9 +11,11 @@
 - **Format:** YouTube Shorts, 30–45 seconds (75–120 words, 6–8 beats), three a day at 12:00, 16:00 and 19:00 ET. Map frames are drawn
   by `pipeline/src/ytc/atlas/` (Equal Earth projection, eased camera, value callouts, legend, source line on
   screen), narrated by Kokoro `am_fenrir`, captions in libass, a synthesized pad, -14 LUFS.
-- **Every number is checked:** the writer sees only a summary computed from the downloaded dataset
-  (`atlas/writer.facts`), and a draft that says any number not in that summary, or names a country without data,
-  is rewritten (3 tries) or dropped. The dataset snapshot is kept beside the script as `data.json`.
+- **Acceptance checks:** drafts bind metric definitions, entity values and reporting years to saved source data.
+  Complete semantic review checks titles, narration, descriptions and visual plans; final encoded video passes
+  decode, audio and speech checks. The publisher verifies artifact and media hashes before scheduling.
+  These checks reduce errors; probabilistic review cannot guarantee factual or visual correctness.
+  See [Atlas quality and learning](docs/ATLAS-QUALITY.md) for acceptance, recovery and measurement limits.
 - **Owner account:** aksha.shivam18@gmail.com (a personal Google account); channel country India. Chrome profile:
   Profile 5. Never use the owner's work account or its Chrome profile for anything on this channel.
 - **Accounts:** as before: Google Cloud project `shorts-studio-two`; Buffer; Cloudinary (cloud `uj4a07e7`); Modal

@@ -32,6 +32,18 @@ class ScaleSpec(_Model):
     edges: list[float] = []
     labels: list[str] = []
 
+    @model_validator(mode="after")
+    def _valid_scale(self):
+        import math
+        if not math.isfinite(self.at) or any(not math.isfinite(v) for v in self.edges):
+            raise ValueError("scale contains non-finite limits")
+        if self.kind == "bins" and (self.edges != sorted(set(self.edges)) or
+                                   self.labels and len(self.labels) != len(self.edges) + 1):
+            raise ValueError("bin limits must be unique/ascending with one label per bin")
+        if self.kind == "threshold" and self.labels and len(self.labels) != 2:
+            raise ValueError("a threshold has exactly two labels")
+        return self
+
 
 class Shot(_Model):
     kind: Literal["world", "country", "group", "region", "rank", "card"] = "world"

@@ -38,8 +38,9 @@ def description(ep: AtlasEpisode, ds: Dataset) -> str:
     sources = "\n".join(ep.sources) if ep.sources else ds.url
     blocks = [
         ep.description,
-        f"Data: {ds.label}, {ds.source}, {ds.year} ({ds.license}).\n{sources}\n{MAP_CREDIT}",
+        f"Data: {ds.label}, {ds.source}, {ds.year_label} ({ds.license}).\n{sources}\n{MAP_CREDIT}",
         "Script written with AI and checked number by number against the data. Narrated with a synthetic voice.",
+        f"Atlas episode: {ep.id}",
         " ".join(ep.hashtags[:3]),
     ]
     return pub._youtube_text("\n\n".join(b for b in blocks if b))
@@ -64,8 +65,8 @@ def schedule(ep: AtlasEpisode, folder: Path, ds: Dataset, video: Path) -> dict:
     text = description(ep, ds)
     title = pub._youtube_text(ep.title)[:TITLE_CHARS]
     recent = pub.posts(since=datetime.now(pub.AUDIENCE_TZ) - timedelta(days=30))
-    lead = text.split("\n\n", 1)[0]
-    twin = next((p for p in recent if (p.get("text") or "").split("\n\n", 1)[0] == lead
+    lead = f"Atlas episode: {ep.id}"
+    twin = next((p for p in recent if lead in (p.get("text") or "").splitlines()
                  and p["status"] not in ("error", "draft")), None)
     public_id = f"atlasinnumbers/{ep.id}"
     if twin:
@@ -75,7 +76,8 @@ def schedule(ep: AtlasEpisode, folder: Path, ds: Dataset, video: Path) -> dict:
              if p.get("dueAt") and p["status"] not in ("error", "draft")]
     when = next_slot(taken)
     media_url = pub.host_video(video, public_id)
-    pub.fetch_video(media_url)
+    from .receipt import digest
+    pub.fetch_video(media_url, expected_sha256=digest(video))
     mutation = """
     mutation Create($input: CreatePostInput!) {
       createPost(input: $input) {

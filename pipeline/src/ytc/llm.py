@@ -330,7 +330,7 @@ def _ask(model: str, body: dict, schema: dict | None, purpose: str):
         body = {**body, "generationConfig": config}
     failures = 0
     for _attempt in range(5):
-        if failures >= FAILURES_BEFORE_REST:
+        if failures >= (1 if purpose.startswith("atlas") else FAILURES_BEFORE_REST):
             log.warning("%s keeps failing; using the next model for %d minutes", model, REST_SECONDS // 60)
             _resting[model] = time.monotonic() + REST_SECONDS
             return _NO_ANSWER
@@ -338,7 +338,7 @@ def _ask(model: str, body: dict, schema: dict | None, purpose: str):
         started = time.monotonic()
         try:
             response = requests.post(
-                f"{API}/{model}:generateContent", headers={"x-goog-api-key": _key()}, json=body, timeout=(20, 300)
+                f"{API}/{model}:generateContent", headers={"x-goog-api-key": _key()}, json=body, timeout=(20, 90 if purpose.startswith("atlas") else 300)
             )
         except requests.RequestException as err:
             log.warning("%s: %s", model, err)
@@ -397,7 +397,8 @@ def _ask(model: str, body: dict, schema: dict | None, purpose: str):
             _key_refused = f"{response.status_code} {error.get('message', '')[:160]}"
             log.error("Gemini refused the key (%s); using the other providers", _key_refused)
             return _NO_ANSWER
-        if response.status_code == 404 or (response.status_code == 400 and model.startswith("gemma")):
+        if (response.status_code == 404 or (response.status_code == 400 and model.startswith("gemma"))
+                or (response.status_code == 400 and purpose.startswith("atlas") and error.get("status") == "INVALID_ARGUMENT")):
             log.warning("%s is not available: %s", model, error.get("message", "")[:120])
             _spent.add(model)
             return _NO_ANSWER
@@ -460,11 +461,11 @@ def _ask_backup(model: str, body: dict, schema: dict | None, purpose: str):
     if schema:
         request["response_format"] = {"type": "json_schema", "json_schema": {"name": "answer", "schema": schema}}
     failures = 0
-    while failures < FAILURES_BEFORE_REST:
+    while failures < (1 if purpose.startswith("atlas") else FAILURES_BEFORE_REST):
         _pace(model, spec["gap"])
         started = time.monotonic()
         try:
-            response = requests.post(f"{spec['url']}/chat/completions", headers=headers, json=request, timeout=(20, 600))
+            response = requests.post(f"{spec['url']}/chat/completions", headers=headers, json=request, timeout=(20, 120 if purpose.startswith("atlas") else 600))
         except requests.RequestException as err:
             log.warning("%s: %s", model, err)
             failures += 1

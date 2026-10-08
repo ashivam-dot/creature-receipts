@@ -17,7 +17,7 @@ import statistics
 import requests
 
 from .. import llm
-from .data import WB_API, fetch
+from .data import WB_API, fetch, get
 from .writer import MIN_COUNTRIES, drawable
 
 log = logging.getLogger(__name__)
@@ -104,7 +104,7 @@ AUDIT_SCHEMA = {"type": "object", "properties": {"suspect": {"type": "array", "i
 def audit(name: str, note: str, year: int, top: str, bottom: str) -> list[dict]:
     """Extreme values an independent check finds implausible: [{country, why}]."""
     return llm.generate(AUDIT.format(name=name, note=note, year=year, top=top, bottom=bottom),
-                        schema=AUDIT_SCHEMA, temperature=0.0, purpose="atlas data audit")["suspect"]
+                        schema=AUDIT_SCHEMA, temperature=0.0, models=llm.LIGHT, purpose="atlas data audit")["suspect"]
 
 
 def audit_dataset(ds, name: str, note: str) -> list[dict]:
@@ -116,7 +116,7 @@ def audit_dataset(ds, name: str, note: str) -> list[dict]:
 
 def indicators() -> list[dict]:
     """WDI indicators that are ratios and not on a no-go subject: [{id, name, note}]."""
-    rows = requests.get(f"{WB_API}/source/2/indicators", params={"format": "json", "per_page": 3000},
+    rows = get(f"{WB_API}/source/2/indicators", params={"format": "json", "per_page": 3000},
                         timeout=120).json()[1]
     out = []
     for r in rows:
@@ -159,13 +159,14 @@ def check(spec: dict, values: list[float]) -> list[str]:
 
 
 def _performance(stats: list[dict]) -> str:
-    seen = [s for s in stats if s.get("views") is not None]
-    if len(seen) < 3:
-        return ""
-    seen.sort(key=lambda s: s["views"], reverse=True)
-    best = "; ".join(f"{s['title']} ({s['views']} views)" for s in seen[:3])
-    worst = "; ".join(f"{s['title']} ({s['views']} views)" for s in seen[-3:])
-    return f"Past Shorts that did best: {best}. Did worst: {worst}. Lean towards what did best.\n"
+    seen = [s for s in stats if s.get("checkpoint_24h", {}).get("views_per_hour") is not None]
+    if len(seen) < 6:
+        return "No comparable 24-hour checkpoints yet; do not infer winning topics from lifetime views."
+    seen.sort(key=lambda s: s["checkpoint_24h"]["views_per_hour"], reverse=True)
+    show = lambda s: f"{s['title']} ({s['checkpoint_24h']['views_per_hour']} views/hour at age {s['checkpoint_24h']['hours']}h)"
+    best = "; ".join(show(s) for s in seen[:3])
+    worst = "; ".join(show(s) for s in seen[-3:])
+    return f"Comparable early checkpoints, observational not causal. Best: {best}. Worst: {worst}.\n"
 
 
 def refill(catalogue: dict, stats: list[dict] | None = None, add: int = ADD) -> list[dict]:
@@ -201,9 +202,8 @@ def refill(catalogue: dict, stats: list[dict] | None = None, add: int = ADD) -> 
         top = ", ".join(f"{ds.names.get(k, k)} {fmt(v)}" for k, v in ranked[:5])
         bottom = ", ".join(f"{ds.names.get(k, k)} {fmt(v)}" for k, v in ranked[-5:])
         if suspect := audit_dataset(ds, ind["name"], ind["note"]):
-            log.info("skip %s, implausible values: %s", ind["id"],
+            log.info("advisory anomaly warning for %s: %s", ind["id"],
                      "; ".join(f"{s['country']}: {s['why']}" for s in suspect))
-            continue
         spec = None
         feedback = ""
         for _ in range(2):

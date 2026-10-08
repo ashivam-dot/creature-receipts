@@ -11,7 +11,7 @@ import requests
 
 from .. import llm
 from . import geo
-from .data import Dataset
+from .data import Dataset, get
 from .draw import short_name
 from .episode import AtlasEpisode
 
@@ -31,7 +31,7 @@ surprise hidden in it. Every claim comes from the data below; the audience is cu
 TOPIC: {topic}
 ANGLE: {angle}
 FORMAT: {format}
-DATASET: {label} ({unit}), {source}, mostly {year}. {count} countries have data.
+DATASET: {label} ({unit}), {source}, {year}. {count} countries and territories have mapped data.
 {scale_note}
 OFFICIAL DEFINITION (the only allowed basis for any "why" or "what it measures" line):
 {definition}
@@ -42,7 +42,7 @@ DATA SUMMARY (values already rounded the way you may say them):
 Write {beats_min}-{beats_max} beats, {words_min}-{words_max} words in total, as JSON.
 Rules:
 - Beat 1 is the hook over the finished world map: a concrete, surprising claim in at most 14 words, phrased so it's
-  true by the data. No "Did you know", no "Most people think", no question as the first beat.
+  true by the data. Use the exact metric (subscriptions are not phones; basic water is not safe water). No "Did you know", no "Most people think", no question as the first beat.
 - Beat 2 says what the colours mean and one headline count from the summary.
 - The middle beats tour 3 or 4 countries that make the point (biggest, smallest, a surprise, and India or the USA
   when the data makes them interesting). Each tour beat names its country and says its value.
@@ -50,10 +50,12 @@ Rules:
   gives no reason, explain what is being counted instead. Never invent causes, history, or opinions.
 - The last beat is a short question to the viewer that loops back to the hook (e.g. "So where's your country?").
 - Write every number as digits exactly as in the summary ("178", "3.2", "1.15 billion"). Never write numbers as
-  words. Never round differently. Never add a number the summary doesn't contain. A country's value goes only in
+  words. Never round differently. Definition thresholds may quote the official definition exactly; never use
+  a definition threshold as a country's measured value. A country's value goes only in
   a beat whose isos include that country.
+- Put each country name directly before its own value; do not use shared lists followed by "respectively".
 - Say a negative value as a fall without the minus sign: "-1.8%" becomes "shrinking by 1.8%" or "down 1.8%".
-- The data is one year, so never claim a trend over time: no "every year", "each year", "always", "more than
+- These are latest available observations, not a time series. Never claim a trend over time: no "every year", "each year", "always", "more than
   ever", "for decades". "Shrinking by 1.8% a year" is fine; it states the rate.
 - The "why" line is plain English a 12-year-old follows; no jargon such as "exponential", "de facto", "per capita".
 - Plain spoken English, short sentences, no emojis, no hashtags in the beats, no politics or war.
@@ -61,6 +63,8 @@ Rules:
   chart of their values; the best way to show a top or bottom list), or "card" for the last beat only. Use "rank"
   for exactly one middle beat when the FORMAT is rank_ladder, and at most once otherwise. Use only ISO codes from
   the summary.
+- opening_options: propose 3 distinct factual openings, strongest first for clarity and curiosity, each with text
+  (at most 14 words) and hook_text (2-5 words). Preserve the exact metric and universe. Never optimize by overclaiming.
 - title: at most 60 characters, a concrete claim with a number, no clickbait punctuation, no emoji.
 - hook_text: 2-5 words in capitals shown on screen over beat 1, adding to (not repeating) the spoken hook.
 - card_lines: 2 short lines for the end card: a 2-4 word question, then the dataset label.
@@ -69,6 +73,8 @@ Rules:
 SCHEMA = {
     "type": "object",
     "properties": {
+        "opening_options": {"type": "array", "items": {"type": "object", "properties": {
+            "text": {"type": "string"}, "hook_text": {"type": "string"}}, "required": ["text", "hook_text"]}},
         "title": {"type": "string"},
         "hook_text": {"type": "string"},
         "description": {"type": "string"},
@@ -86,7 +92,7 @@ SCHEMA = {
             },
         },
     },
-    "required": ["title", "hook_text", "description", "card_lines", "beats"],
+    "required": ["title", "hook_text", "description", "card_lines", "beats", "opening_options"],
 }
 
 
@@ -94,7 +100,7 @@ def definition(ds_spec: dict) -> str:
     """The publisher's own note on what the indicator measures (World Bank `sourceNote`), or the topic's note."""
     if ds_spec.get("kind") == "worldbank":
         try:
-            meta = requests.get(f"https://api.worldbank.org/v2/indicator/{ds_spec['indicator']}",
+            meta = get(f"https://api.worldbank.org/v2/indicator/{ds_spec['indicator']}",
                                 params={"format": "json"}, timeout=60).json()[1][0]
             return (meta.get("sourceNote") or "").strip()[:1500]
         except Exception as err:
@@ -141,21 +147,21 @@ def facts(ds: Dataset, ep_scale: dict, fmt: str) -> tuple[str, set[str], dict[st
             else:
                 allowed.update(forms)
 
-    add(f"Countries with data on the map: {len(vals)}", len(vals))
-    add(f"Year: {ds.year}", ds.year)
+    add(f"Countries and territories with data on the map: {len(vals)}", len(vals))
+    add(f"Year: {ds.year_label}", *sorted(set(ds.years.values())))
     if ep_scale.get("kind") == "threshold":
         at = ep_scale["at"]
         above = [k for k, v in vals.items() if v >= at]
-        add(f"Countries at or above {at:g}: {len(above)} of {len(vals)}", len(above), at)
-        add(f"Countries below {at:g}: {len(vals) - len(above)}", len(vals) - len(above))
+        add(f"Countries/territories at or above {at:g}: {len(above)} of {len(vals)}", len(above), at)
+        add(f"Countries/territories below {at:g}: {len(vals) - len(above)}", len(vals) - len(above))
     median = statistics.median(vals.values())
     add(f"Median country: {_say(median, fmt)}", _say(median, fmt))
     lines.append(f"Top 12 of the {len(shown)} countries big enough to see on the map (iso, name, value):")
     for k, v in ranked[:12]:
-        add(f"  {k} {names[k]}: {_say(v, fmt)}", _say(v, fmt), iso=k)
+        add(f"  {k} {names[k]}: {_say(v, fmt)} (year {ds.years[k]})", _say(v, fmt), iso=k)
     lines.append("Bottom 8:")
     for k, v in ranked[-8:]:
-        add(f"  {k} {names[k]}: {_say(v, fmt)}", _say(v, fmt), iso=k)
+        add(f"  {k} {names[k]}: {_say(v, fmt)} (year {ds.years[k]})", _say(v, fmt), iso=k)
     every = sorted(vals.items(), key=lambda kv: kv[1], reverse=True)
     for label, (k, _) in (("highest", every[0]), ("lowest", every[-1])):
         if k in shown:
@@ -167,10 +173,14 @@ def facts(ds: Dataset, ep_scale: dict, fmt: str) -> tuple[str, set[str], dict[st
     for k in ("IND", "USA", "CHN", "GBR", "BRA", "NGA", "JPN", "DEU", "PAK", "IDN", "RUS", "AUS", "CAN", "MEX"):
         if k in shown:
             rank = 1 + [x for x, _ in ranked].index(k)
-            add(f"  {k} {names[k]}: {_say(vals[k], fmt)} (rank {rank})", _say(vals[k], fmt), rank, iso=k)
+            add(f"  {k} {names[k]}: {_say(vals[k], fmt)} (rank {rank}; year {ds.years[k]})", _say(vals[k], fmt), rank, iso=k)
     for n in range(1, 13):
         allowed.update(_forms(n))
     allowed.update({"100", "hundred", str(len(shown))})
+    # Measurement definitions can contain numeric thresholds (e.g. broadband's 256 kbit/s).
+    # Semantic review still binds their meaning; these are not country values.
+    for token in _NUMBER.findall(ds.definition or ""):
+        allowed.update(_forms(token))
     return "\n".join(lines), allowed, owners
 
 
@@ -264,7 +274,8 @@ def problems(draft: dict, allowed: set[str], owners: dict[str, set[str]], vals: 
         out.append("use the rank shot at most once")
     for i, b in enumerate(beats, 1):
         isos = b.get("isos", [])
-        out += [f"beat {i}: {p}" for p in number_problems(b["text"], allowed, owners, isos)]
+        out += [f"beat {i}: {p}" for p in number_problems(b["text"], allowed, owners,
+                    list(vals) if b["shot"] == "world" else isos)]
     out += [f"title: {p}" for p in number_problems(draft.get("title", ""), allowed, owners, used)]
     return out
 
@@ -286,11 +297,36 @@ def write(topic: dict, ds: Dataset, episode_id: str, series: str = "") -> AtlasE
     feedback = ""
     for attempt in range(1, TRIES + 1):
         prompt = PROMPT.format(topic=topic["topic"], angle=topic.get("angle", ""), format=topic.get("format", "map_reveal"),
-                               label=ds.label, unit=ds.unit, source=ds.source, year=ds.year, count=len(vals),
+                               label=ds.label, unit=ds.unit, source=ds.source, year=ds.year_label, count=len(vals),
                                scale_note=scale_note, definition=topic.get("definition_text", "") or "(none given)",
                                summary=summary, beats_min=BEATS[0], beats_max=BEATS[1], words_min=WORDS[0],
                                words_max=WORDS[1], feedback=feedback)
-        draft = llm.generate(prompt, schema=SCHEMA, temperature=0.7, purpose=f"atlas script {episode_id}")
+        draft = llm.generate(prompt, schema=SCHEMA, temperature=0.7,
+                             models=(*llm.FLASH_LITE, *llm.BACKUP_STRONG, *llm.FLASH),
+                             purpose=f"atlas script {episode_id}")
+        # Bind named country/value clauses to their world-shot callouts instead of wasting a rewrite.
+        for beat in draft.get("beats", []):
+            if beat["shot"] != "world":
+                continue
+            isos = beat.setdefault("isos", [])
+            for number in _NUMBER.findall(beat["text"]):
+                for iso in owners.get(number.replace(",", ""), set()):
+                    names = {ds.names.get(iso, ""), geo.world()[iso].name, short_name(geo.world()[iso].name)}
+                    if iso not in isos and any(name and re.search(r"\b" + re.escape(name) + r"\b", beat["text"], re.I) for name in names):
+                        isos.append(iso)
+        # A pair is a comparison, not a ranking. Repair structure without another model call.
+        for beat in draft.get("beats", []):
+            if beat["shot"] == "rank" and len(beat.get("isos", [])) == 2:
+                beat["shot"] = "group"
+        # Try the ranked factual openings against the same deterministic contract; render only one.
+        import copy
+        for option in draft.get("opening_options", [])[:3]:
+            candidate = copy.deepcopy(draft)
+            candidate["beats"][0]["text"] = option["text"]
+            candidate["hook_text"] = option["hook_text"]
+            if not problems(candidate, allowed, owners, shown):
+                draft = candidate
+                break
         found = problems(draft, allowed, owners, shown)
         if not found:
             return _episode(draft, topic, episode_id, series)
@@ -301,8 +337,13 @@ def write(topic: dict, ds: Dataset, episode_id: str, series: str = "") -> AtlasE
 
 
 def _episode(draft: dict, topic: dict, episode_id: str, series: str) -> AtlasEpisode:
+    # Aggregate totals cover World Bank countries AND territories; repair this terminology deterministically.
+    draft["title"] = re.sub(r"\bcountries\b", "places", draft["title"], flags=re.I)
+    draft["hook_text"] = re.sub(r"\bcountries\b", "PLACES", draft["hook_text"], flags=re.I)
+    draft["description"] = re.sub(r"\bcountries\b(?! and territories)", "countries and territories", draft["description"], flags=re.I)
     beats = []
     for b in draft["beats"]:
+        b["text"] = re.sub(r"\b(\d+) countries\b(?! and territories)", r"\1 countries and territories", b["text"], flags=re.I)
         isos = b.get("isos", [])
         if b["shot"] == "card":
             shot = {"kind": "card", "lines": [*draft["card_lines"][:2]]}

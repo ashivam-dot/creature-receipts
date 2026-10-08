@@ -80,11 +80,13 @@ def rank_rows(isos: list[str], ds: Dataset, ep: AtlasEpisode, scale: draw.Scale,
     picked = [i for i in isos if i in ds.values]
     n = len(picked)
     top, bottom = [k for k, _ in mapped[:n]], [k for k, _ in mapped[-n:]]
+    bottom_unique = n == len(mapped) or (n > 0 and mapped[-n-1][1] > mapped[-n][1])
+    top_unique = n == len(mapped) or (n > 0 and mapped[n-1][1] > mapped[n][1])
     if set(picked) == set(bottom) and set(picked) != set(top):
-        order, title = sorted(picked, key=lambda k: ds.values[k]), f"Lowest {n}"
+        order, title = sorted(picked, key=lambda k: ds.values[k]), f"Lowest {n}" if bottom_unique else ""
     else:
         order = sorted(picked, key=lambda k: ds.values[k], reverse=True)
-        title = f"Top {n}" if set(picked) == set(top) else ""
+        title = f"Top {n}" if set(picked) == set(top) and top_unique else ""
     rows = [(names.get(k, ds.names.get(k, k)), ep.value_text(ds.values[k]), ds.values[k], scale.color(ds.values[k]))
             for k in order]
     return title, rows
@@ -96,7 +98,7 @@ def _short_spec(ep: AtlasEpisode) -> ShortSpec:
 
 
 def _source_line(ds: Dataset) -> str:
-    return f"Data: {ds.source}, {ds.year} · {ds.license}"
+    return f"Data: {ds.source}, {ds.year_label} · {ds.license}"
 
 
 def _mix(narration: Path, total: float, cues: list[tuple[float, str]], out: Path, cache_dir: Path) -> None:
@@ -125,11 +127,23 @@ def render(ep: AtlasEpisode, folder: Path) -> Path:
     scale = draw.Scale(ep.scale.kind, at=ep.scale.at, edges=ep.scale.edges, labels=ep.scale.labels)
     colors = {iso: scale.color(v) for iso, v in ds.values.items()}
     names = {iso: draw.short_name(c.name) for iso, c in geo.world().items()}
+    if len(set(ds.years.values())) > 1:
+        names = {iso: f"{name} · {ds.years[iso]}" if iso in ds.years else name for iso, name in names.items()}
 
-    narr = tts.synthesize(_short_spec(ep), folder)
+    import torch
+    torch.set_num_threads(4)
+    speech_spec = _short_spec(ep)
+    narr = tts.synthesize(speech_spec, folder)
+    if not 30 <= narr.duration + 0.35 <= 45:
+        speed = min(1.22, max(0.95, VOICE.speed * narr.duration / 38))
+        speech_spec = speech_spec.model_copy(update={"voice": VOICE.model_copy(update={"speed": speed})})
+        narr = tts.synthesize(speech_spec, folder)
     total = narr.duration + 0.35
     plans = [_plan(b.shot) for b in ep.beats]
     spans = narr.beat_spans
+    import json
+    (folder / "timing.json").write_text(json.dumps({"duration": total, "beats": [
+        {"start": a, "end": b, "text": ep.beats[i].text} for i, (a, b) in enumerate(spans)]}, indent=2))
 
     def beat_at(t: float) -> int:
         for i, (_, end) in enumerate(spans):
@@ -173,58 +187,90 @@ def render(ep: AtlasEpisode, folder: Path) -> Path:
            "-f", "rawvideo", "-pix_fmt", "rgb24", "-s", f"{draw.W}x{draw.H}", "-r", str(FPS), "-i", "pipe:",
            "-i", str(mix),
            "-vf", f"ass={ff.filter_path(ass)}:fontsdir={ff.filter_path(FONTS)}",
-           "-c:v", "libx264", "-preset", "medium", "-crf", "19", "-pix_fmt", "yuv420p", "-r", str(FPS),
+           "-threads", "4", "-c:v", "libx264", "-preset", "medium", "-crf", "19", "-pix_fmt", "yuv420p", "-r", str(FPS),
            "-c:a", "aac", "-b:a", "192k", "-ar", "48000",
            "-movflags", "+faststart", "-shortest", str(out)]
-    proc = subprocess.Popen(cmd, stdin=subprocess.PIPE, stderr=subprocess.PIPE)
+    import tempfile
+    import time
+    encoder_errors = tempfile.TemporaryFile()
+    proc = subprocess.Popen(cmd, stdin=subprocess.PIPE, stderr=encoder_errors)
+    rendering_started = time.monotonic()
     source = _source_line(ds)
-    swatches = scale.swatches()
+    swatches = [*scale.swatches(), (draw.NO_DATA, "No data")]
     last_card = None
     ranks: dict[int, tuple] = {}
+    settled_layers: dict[int, Image.Image] = {}
     frames = int(total * FPS)
-    for f in range(frames):
-        t = f / FPS
-        i = beat_at(t)
-        start, end = spans[i]
-        plan, prev = plans[i], plans[i - 1] if i else plans[0]
-        local = t - start
-        if plan.card:
-            if last_card is None:
-                under = draw.overlay(draw.map_layer(prev.camera, colors, prev.highlight, prev.dim),
-                                     chip="", swatches=[], source="", callouts=[])
-                big, *small = plan.card
-                credit = f"{ds.source} · {ds.year} · {ds.license}"
-                small = [s for s in small if not (ds.source.lower() in s.lower() and str(ds.year) in s)]
-                if len(small) < 2:
-                    small.append(credit)
-                lines = [(big, 92, draw.HIGHLIGHT), ("", 30, draw.INK)] + [(s, 44, draw.INK) for s in small]
-                last_card = (under, draw.card(lines, under))
-            under, full = last_card
-            a = min(local / 0.35, 1.0)
-            frame = full if a >= 1 else Image.blend(under, full, a)
-        else:
-            arrive = draw.ease(local / FLY) if i and plan.camera != prev.camera else 1.0
-            cam = prev.camera.mix(plan.camera, arrive) if arrive < 1 else plan.camera
-            cam = cam.zoomed(1 + PUSH * min(local / max(end - start, 0.1), 1.0))
-            dim = plan.dim * arrive
-            layer = draw.map_layer(cam, colors, plan.highlight if arrive > 0.6 else set(), dim)
-            callouts = []
-            ready = local - (FLY if arrive < 1 or (i and plan.camera != prev.camera) else 0.1)
-            if plan.callouts and ready > 0:
-                for iso in plan.callouts:
-                    if iso in ds.values:
-                        x, y = draw.screen_point(cam, iso)
-                        callouts.append((x, y, names.get(iso, ds.names.get(iso, iso)), ep.value_text(ds.values[iso])))
-            frame = draw.overlay(layer, chip=ep.dataset.label, swatches=swatches, source=source, callouts=callouts,
-                                 callout_alpha=min(ready / CALLOUT_IN, 1.0) if callouts else 0.0)
-            if plan.rank:
-                if i not in ranks:
-                    ranks[i] = rank_rows(plan.rank, ds, ep, scale, names)
-                frame = draw.rank_panel(frame, *ranks[i], local)
-        proc.stdin.write(frame.tobytes())
+    try:
+        for f in range(frames):
+            if f and f % (FPS * 10) == 0:
+                log.info("%s: rendered %s/%s frames in %.0fs", ep.id, f, frames, time.monotonic() - rendering_started)
+            t = f / FPS
+            i = beat_at(t)
+            start, end = spans[i]
+            plan, prev = plans[i], plans[i - 1] if i else plans[0]
+            local = t - start
+            if plan.card:
+                if last_card is None:
+                    under = draw.overlay(draw.map_layer(prev.camera, colors, prev.highlight, prev.dim),
+                                         chip="", swatches=[], source="", callouts=[])
+                    big, *small = plan.card
+                    credit = f"{ds.source} · {ds.year_label} · {ds.license}"
+                    small = [s for s in small if not (ds.source.lower() in s.lower() and ds.year_label in s)]
+                    if len(small) < 2:
+                        small.append(credit)
+                    lines = [(big, 92, draw.HIGHLIGHT), ("", 30, draw.INK)] + [(s, 44, draw.INK) for s in small]
+                    last_card = (under, draw.card(lines, under))
+                under, full = last_card
+                a = min(local / 0.35, 1.0)
+                frame = full if a >= 1 else Image.blend(under, full, a)
+            else:
+                fly = min(FLY, max(0.15, (end - start) * 0.2))
+                arrive = draw.ease(local / fly) if i and plan.camera != prev.camera else 1.0
+                cam = prev.camera.mix(plan.camera, arrive) if arrive < 1 else plan.camera
+                push = 1 + PUSH * min(local / max(end - start, 0.1), 1.0)
+                cam = cam.zoomed(push)
+                dim = plan.dim * arrive
+                if arrive >= 1:
+                    # Rasterize settled geography once per shot; the subtle push is an affine camera transform.
+                    # Full vector drawing is retained during flights and for every new country view.
+                    if i not in settled_layers:
+                        settled_layers[i] = draw.map_layer(plan.camera, colors, plan.highlight, plan.dim).resize(
+                            (draw.W, draw.H), Image.LANCZOS)
+                    layer = draw.push_layer(settled_layers[i], push)
+                else:
+                    layer = draw.map_layer(cam, colors, plan.highlight if arrive > 0.6 else set(), dim)
+                callouts = []
+                ready = local - (fly if arrive < 1 or (i and plan.camera != prev.camera) else 0.1)
+                if plan.callouts and ready > 0:
+                    for iso in plan.callouts:
+                        if iso in ds.values:
+                            x, y = draw.screen_point(cam, iso)
+                            callouts.append((x, y, names.get(iso, ds.names.get(iso, iso)), ep.value_text(ds.values[iso])))
+                frame = draw.overlay(layer, chip=ep.dataset.label, swatches=swatches, source=source, callouts=callouts,
+                                     callout_alpha=min(ready / CALLOUT_IN, 1.0) if callouts else 0.0)
+                if plan.rank:
+                    if i not in ranks:
+                        ranks[i] = rank_rows(plan.rank, ds, ep, scale, names)
+                    frame = draw.rank_panel(frame, *ranks[i], local)
+            proc.stdin.write(frame.tobytes())
+    except Exception:
+        proc.kill()
+        proc.wait()
+        encoder_errors.close()
+        raise
     proc.stdin.close()
-    err = proc.stderr.read().decode(errors="replace")
-    if proc.wait() != 0:
+    try:
+        result = proc.wait(timeout=180)
+    except subprocess.TimeoutExpired:
+        proc.kill()
+        proc.wait()
+        encoder_errors.close()
+        raise RuntimeError("ffmpeg did not finish within 180 seconds after rendering")
+    encoder_errors.seek(0)
+    err = encoder_errors.read().decode(errors="replace")
+    encoder_errors.close()
+    if result != 0:
         raise RuntimeError(f"ffmpeg failed: {err[-2000:]}")
     log.info("%s: %.1f s rendered to %s", ep.id, total, out)
     return out

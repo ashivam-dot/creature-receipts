@@ -145,6 +145,40 @@ def _background() -> Image.Image:
     return Image.composite(Image.new("RGB", img.size, OCEAN_GLOW), img, glow)
 
 
+@cache
+def _hole_countries() -> set[str]:
+    """The asset preserves GeoJSON ring orientation: hole winding opposes its exterior."""
+    holes = set()
+    for iso, country in geo.world().items():
+        areas = [float(np.dot(r[:, 0], np.roll(r[:, 1], 1)) - np.dot(r[:, 1], np.roll(r[:, 0], 1))) for r in country.rings]
+        outer = max(areas, key=abs)
+        if any(a * outer < 0 for a in areas):
+            holes.add(iso)
+    return holes
+
+
+def _paint_with_holes(img, country, cam, fill, border):
+    rings = [(r, _to_px(cam, r)) for r in country.rings]
+    points = np.concatenate([p for _, p in rings])
+    x0, y0 = max(0, int(points[:, 0].min()) - border), max(0, int(points[:, 1].min()) - border)
+    x1, y1 = min(img.width, int(points[:, 0].max()) + border + 1), min(img.height, int(points[:, 1].max()) + border + 1)
+    if x1 <= x0 or y1 <= y0:
+        return
+    signed = lambda r: float(np.dot(r[:, 0], np.roll(r[:, 1], 1)) - np.dot(r[:, 1], np.roll(r[:, 0], 1)))
+    outer = signed(max(country.rings, key=geo._area))
+    mask = Image.new("L", (x1-x0, y1-y0), 0)
+    md = ImageDraw.Draw(mask)
+    for is_hole in (False, True):
+        for ring, pixels in rings:
+            if (signed(ring) * outer < 0) == is_hole:
+                md.polygon([tuple(p - [x0, y0]) for p in pixels], fill=0 if is_hole else 255)
+    img.paste(Image.new("RGB", mask.size, fill), (x0, y0), mask)
+    outline = ImageDraw.Draw(img)
+    for _, pixels in rings:
+        flat = [tuple(p) for p in pixels]
+        outline.line(flat + [flat[0]], fill=BORDER, width=border, joint="curve")
+
+
 def map_layer(cam: Camera, colors: dict[str, tuple], highlight: set[str], dim: float = 0.0) -> Image.Image:
     """The map at supersampled size: countries filled, thin ocean-coloured borders, highlighted ones outlined.
     `dim` fades every country that isn't highlighted towards the ocean."""
@@ -154,6 +188,7 @@ def map_layer(cam: Camera, colors: dict[str, tuple], highlight: set[str], dim: f
     world = geo.world()
     border = max(1, int(SS * min(2.5, 0.9 * WORLD.hw / cam.hw)))
     outlines = []
+    painted_holes = set()
     for iso, i, (x0, y0, x1, y1) in _ring_boxes():
         if x1 < view[0] or x0 > view[2] or y1 < view[1] or y0 > view[3]:
             continue
@@ -163,12 +198,28 @@ def map_layer(cam: Camera, colors: dict[str, tuple], highlight: set[str], dim: f
         fill = colors.get(iso, NO_DATA)
         if dim and iso not in highlight:
             fill = lerp_color(fill, OCEAN, dim)
-        d.polygon(flat, fill=fill, outline=BORDER, width=border)
+        if iso in _hole_countries():
+            if iso not in painted_holes:
+                _paint_with_holes(img, world[iso], cam, fill, border)
+                painted_holes.add(iso)
+        else:
+            d.polygon(flat, fill=fill, outline=BORDER, width=border)
         if iso in highlight:
             outlines.append(flat)
     for flat in outlines:
         d.line(flat + [flat[0]], fill=HIGHLIGHT, width=SS * 4, joint="curve")
     return img
+
+
+def push_layer(layer: Image.Image, factor: float) -> Image.Image:
+    """Apply a mild camera push about the map's center to a supersampled settled layer."""
+    if factor == 1:
+        return layer
+    cx, cy = layer.width / 2, layer.height * MAP_Y
+    inv = 1 / factor
+    return layer.transform(layer.size, Image.Transform.AFFINE,
+                           (inv, 0, cx * (1 - inv), 0, inv, cy * (1 - inv)),
+                           resample=Image.Resampling.BICUBIC)
 
 
 def text_center(d: ImageDraw.ImageDraw, xy: tuple, text: str, f: ImageFont.FreeTypeFont, fill=INK) -> None:
@@ -186,6 +237,10 @@ def overlay(img: Image.Image, *, chip: str, swatches: list[tuple[tuple, str]], s
     a = int(255 * chip_alpha)
     if chip and a:
         f = font("Montserrat-ExtraBold.ttf", 38)
+        chip_size = 38
+        while chip_size > 22 and d.textlength(chip.upper(), font=f) > W * 0.88:
+            chip_size -= 2
+            f = font("Montserrat-ExtraBold.ttf", chip_size)
         tw = d.textlength(chip.upper(), font=f)
         y = int(H * 0.268)
         d.rounded_rectangle((W / 2 - tw / 2 - 28, y - 34, W / 2 + tw / 2 + 28, y + 34), radius=34,
@@ -194,6 +249,13 @@ def overlay(img: Image.Image, *, chip: str, swatches: list[tuple[tuple, str]], s
         fs = font("Montserrat-ExtraBold.ttf", 30)
         items = [(c, label.upper()) for c, label in swatches if label]
         total = sum(40 + d.textlength(t, font=fs) for _, t in items) + 34 * max(len(items) - 1, 0)
+        legend_size = 30
+        while total > W * 0.88 and legend_size > 18:
+            legend_size -= 2
+            fs = font("Montserrat-ExtraBold.ttf", legend_size)
+            total = sum(40 + d.textlength(t, font=fs) for _, t in items) + 34 * max(len(items) - 1, 0)
+        if total > W * 0.94:
+            raise ValueError("legend labels cannot fit on screen")
         x = W / 2 - total / 2
         if items:
             d.rounded_rectangle((x - 22, y + 52, x + total + 22, y + 100), radius=24, fill=(9, 18, 36, int(a * 0.85)))
@@ -203,6 +265,12 @@ def overlay(img: Image.Image, *, chip: str, swatches: list[tuple[tuple, str]], s
             x += 40 + d.textlength(label, font=fs) + 34
     if source:
         fs = font("Montserrat-ExtraBold.ttf", 26)
+        source_size = 26
+        while source_size > 18 and d.textlength(source.upper(), font=fs) > W * 0.9:
+            source_size -= 2
+            fs = font("Montserrat-ExtraBold.ttf", source_size)
+        if d.textlength(source.upper(), font=fs) > W * 0.94:
+            raise ValueError("source credit cannot fit on screen")
         tw, y = d.textlength(source.upper(), font=fs), int(H * 0.655)
         d.rounded_rectangle((W / 2 - tw / 2 - 20, y - 22, W / 2 + tw / 2 + 20, y + 22), radius=22,
                             fill=(9, 18, 36, 200))
@@ -230,7 +298,7 @@ def rank_panel(img: Image.Image, title: str, rows: list[tuple[str, str, float, t
     layer = Image.new("RGBA", (W, H), (0, 0, 0, 0))
     d = ImageDraw.Draw(layer)
     a = int(255 * min(t / 0.25, 1.0))
-    x0, x1 = W * 0.07, W * 0.93
+    x0, x1 = W * 0.07, W * 0.88
     top, bottom = TOP - 10, BOTTOM + 10
     d.rounded_rectangle((x0 - 24, top, x1 + 24, bottom), radius=36, fill=(9, 18, 36, int(a * 0.9)),
                         outline=(40, 58, 92, a), width=3)
@@ -246,18 +314,32 @@ def rank_panel(img: Image.Image, title: str, rows: list[tuple[str, str, float, t
     fn, fv = font("Montserrat-ExtraBold.ttf", 34), font("Anton-Regular.ttf", 50)
     label_w = max((d.textlength(name.upper(), font=fn) for name, *_ in rows), default=0) + 28
     value_w = max((d.textlength(v, font=fv) for _, v, _, _ in rows), default=0) + 24
+    size = 34
+    while label_w + value_w > (x1 - x0) * 0.7 and size > 24:
+        size -= 2
+        fn = font("Montserrat-ExtraBold.ttf", size)
+        label_w = max((d.textlength(name.upper(), font=fn) for name, *_ in rows), default=0) + 28
     track = x1 - x0 - label_w - value_w
+    if track < 100:
+        raise ValueError("rank labels leave no readable bar area")
+    signed = any(v < 0 for _, _, v, _ in rows)
+    origin = x0 + label_w + (track / 2 if signed else 0)
+    if signed:
+        d.line((origin, y, origin, bottom - 20), fill=(*MUTED, a), width=3)
+        d.text((origin, y - 12), "0", font=fn, fill=(*MUTED, a), anchor="mm")
     for i, (name, value_text, value, color) in enumerate(rows):
         grow = ease((t - 0.2 - 0.12 * i) / 0.6)
         cy = y + pitch * (i + 0.5)
         d.text((x0 + label_w - 18, cy), name.upper(), font=fn, fill=(*INK, a), anchor="rm")
-        length = max(track * abs(value) / biggest, 12) * grow
-        bx = x0 + label_w
+        length = (track / (2 if signed else 1)) * abs(value) / biggest * grow
+        bx = origin - length if signed and value < 0 else origin
         if length > 0:
             d.rounded_rectangle((bx, cy - bar_h / 2, bx + length, cy + bar_h / 2), radius=int(bar_h / 3),
                                 fill=(*color, a))
         if grow >= 1:
-            d.text((bx + length + 16, cy), value_text, font=fv, fill=(*HIGHLIGHT, a), anchor="lm")
+            vx = x1 if signed else bx + length + 12
+            d.text((vx, cy), value_text, font=fv, fill=(*HIGHLIGHT, a),
+                   anchor="rm" if signed else "lm")
     return Image.alpha_composite(img, layer).convert("RGB")
 
 
@@ -269,7 +351,7 @@ def _layout(d: ImageDraw.ImageDraw, callouts: list[tuple[float, float, str, str]
     for x, y, name, value in callouts:
         bw = max(d.textlength(name.upper(), font=fn), d.textlength(value, font=fv)) + 52
         bh = 134
-        bx = min(max(x - bw / 2, 24), W - bw - 24)
+        bx = min(max(x - bw / 2, 24), W * 0.88 - bw)
         by = y - bh - 80 if y - bh - 80 >= TOP else y + 80
         placed.append([x, y, name, value, bx, min(max(by, TOP), BOTTOM - bh), bw, bh])
     placed.sort(key=lambda p: p[5])

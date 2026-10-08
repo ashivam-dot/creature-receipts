@@ -24,7 +24,7 @@ from pathlib import Path
 
 import requests
 
-from . import render, topics, writer
+from . import quality, render, topics, writer
 from .data import Dataset, fetch
 from .episode import AtlasEpisode
 
@@ -39,7 +39,7 @@ OUTBOX_VOLUME = "creature-receipts-outbox"
 RESERVE = 4
 PUBLISHED_URL = ("https://raw.githubusercontent.com/ashivam-dot/history-last-hours-control/main/"
                  "atlas/published.json")
-EPISODE_ID = re.compile(r"atlas\d{3}")
+EPISODE_ID = re.compile(r"atlas\d{3,}")
 
 
 def outbox() -> Path:
@@ -64,7 +64,7 @@ def _topic_of(episode_id: str) -> dict | None:
 
 
 def next_id() -> str:
-    numbers = [int(m.group(1)) for p in EPISODES.glob("atlas*") if (m := re.fullmatch(r"atlas(\d{3})", p.name))]
+    numbers = [int(m.group(1)) for p in EPISODES.glob("atlas*") if (m := re.match(r"atlas(\d{3,})(?:-|$)", p.name))]
     return f"atlas{max(numbers, default=0) + 1:03d}"
 
 
@@ -72,8 +72,22 @@ class Implausible(Exception):
     """The independent audit found values in a dataset that are very likely wrong."""
 
 
+def family(topic: dict) -> str:
+    indicator = topic["dataset"].get("indicator", "")
+    prefix = indicator.split(".")[0]
+    return {"SP": "population", "SH": "health", "IT": "technology", "AG": "nature", "EN": "nature",
+            "EG": "infrastructure", "ER": "nature", "SL": "work", "SE": "education"}.get(prefix, "economy")
+
+
 def pick() -> dict | None:
-    return next((t for t in _catalogue()["topics"] if t.get("status") == "open"), None)
+    catalogue = _catalogue()["topics"]
+    candidates = [t for t in catalogue if t.get("status") == "open"]
+    if not candidates:
+        return None
+    recent = sorted((t for t in catalogue if re.search(r"atlas\d{3,}$", t.get("status", ""))),
+                    key=lambda t: int(t["status"].split("atlas")[-1]), reverse=True)[:3]
+    # Balance topic families; this is editorial variety, not a claim of algorithmic advantage.
+    return min(candidates, key=lambda t: sum(family(old) == family(t) for old in recent))
 
 
 def make(topic: dict, episode_id: str) -> tuple[AtlasEpisode, Path, Dataset, Path]:
@@ -82,20 +96,39 @@ def make(topic: dict, episode_id: str) -> tuple[AtlasEpisode, Path, Dataset, Pat
     data_path = folder / "data.json"
     if data_path.exists():
         ds = Dataset.load(data_path)
+        if not ds.indicator and topic["dataset"].get("kind") == "worldbank":
+            ds.indicator = topic["dataset"]["indicator"]
+            ds.definition = writer.definition(topic["dataset"])
+            ds.save(data_path)
     else:
         ds = fetch(topic["dataset"])
-        if suspect := topics.audit_dataset(ds, topic["dataset"].get("label", topic["topic"]),
-                                           writer.definition(topic["dataset"])):
-            raise Implausible("; ".join(f"{s['country']}: {s['why']}" for s in suspect))
+        suspect = topics.audit_dataset(ds, topic["dataset"].get("label", topic["topic"]),
+                                       ds.definition or writer.definition(topic["dataset"]))
+        quality.save(folder / "dataset-audit.json", {"warnings": suspect,
+                     "policy": "model memory is advisory; unsupported suspicions cannot overrule official data"})
         ds.save(data_path)
     spec_path = folder / "atlas.yaml"
     if spec_path.exists():
         ep = AtlasEpisode.load(spec_path)
     else:
-        ep = writer.write({**topic, "definition_text": writer.definition(topic["dataset"])}, ds, episode_id,
+        ep = writer.write({**topic, "definition_text": ds.definition or writer.definition(topic["dataset"])}, ds, episode_id,
                           series=topic.get("series", ""))
         ep.save(spec_path)
+    # Reused scripts are reviewed too; a resumed run cannot bypass the acceptance gate.
+    for attempt in range(3):
+        try:
+            quality.review(ep, ds, folder)
+            break
+        except ValueError as error:
+            if attempt == 2:
+                raise
+            fixed_topic = {**topic, "angle": topic.get("angle", "") +
+                           "\nMandatory factual corrections from the reviewer: " + str(error),
+                           "definition_text": ds.definition or writer.definition(topic["dataset"])}
+            ep = writer.write(fixed_topic, ds, episode_id, series=topic.get("series", ""))
+            ep.save(spec_path)
     video = render.render(ep, folder)
+    quality.media(ep, folder, video)
     return ep, folder, ds, video
 
 
@@ -119,7 +152,8 @@ def park(ep: AtlasEpisode, folder: Path, video: Path, topic_id: str) -> dict:
     with target.open("rb") as fh:
         if hashlib.file_digest(fh, "sha256").hexdigest() != sha:
             raise RuntimeError(f"{ep.id}: the parked copy differs from the render")
-    record = {"id": ep.id, "title": ep.title, "topic": topic_id, "media_sha256": sha, "bytes": target.stat().st_size,
+    quality.verify(folder, sha)
+    record = {"qa_sha256": quality.digest(folder / "qa.json"), "id": ep.id, "title": ep.title, "topic": topic_id, "media_sha256": sha, "bytes": target.stat().st_size,
               "modal_volume": OUTBOX_VOLUME, "modal_path": rel,
               "rendered_at": datetime.now(timezone.utc).isoformat(timespec="seconds")}
     (folder / "ready.json").write_text(json.dumps(record, indent=2) + "\n", encoding="utf-8")
@@ -169,7 +203,7 @@ def _pending() -> tuple[str, dict] | None:
     """A Short that was started (topic marked making:<id>) but never parked."""
     for t in _catalogue()["topics"]:
         status = t.get("status", "")
-        if status.startswith("making:"):
+        if status.startswith(("making:", "retry:")):
             episode_id = status.split(":", 1)[1]
             if not (EPISODES / episode_id / "ready.json").exists():
                 return episode_id, t
@@ -196,6 +230,14 @@ def make_next() -> dict:
         return {"outcome": "skipped", "id": episode_id, "topic": topic["id"], "error": str(err)[:400]}
     except Exception as err:
         log.exception("%s failed", episode_id)
+        if isinstance(err, requests.RequestException):
+            cat = _catalogue()
+            saved_topic = next(t for t in cat["topics"] if t["id"] == topic["id"])
+            count = saved_topic.get("source_retries", 0) + 1
+            saved_topic.update(source_retries=count, status=f"retry:{episode_id}" if count < 3 else "failed:source")
+            TOPICS.write_text(json.dumps(cat, indent=1) + "\n")
+            if count < 3:
+                return {"outcome": "failed", "id": episode_id, "topic": topic["id"], "error": "transient source failure; retry retained"}
         _mark(topic["id"], f"failed:{type(err).__name__}")
         failed = EPISODES / episode_id
         if failed.exists():
@@ -215,6 +257,27 @@ def run(reserve: int = RESERVE, minutes: float = 40, max_failures: int = 2) -> d
 
     started = time.monotonic()
     synced = sync()
+    # Upgrade old waiting videos through the same checks instead of grandfathering unverified media.
+    for folder in list(ready()):
+        if (folder / "qa.json").exists():
+            continue
+        topic = _topic_of(folder.name)
+        if topic is None:
+            continue
+        try:
+            ep, upgraded, _, video = make(topic, folder.name)
+            park(ep, upgraded, video, topic["id"])
+        except Exception as error:
+            log.exception("legacy upgrade rejected %s", folder.name)
+            _mark(topic["id"], "open")
+            legacy_ready = folder / "ready.json"
+            if legacy_ready.exists():
+                (outbox() / json.loads(legacy_ready.read_text())["modal_path"]).unlink(missing_ok=True)
+                legacy_ready.unlink()
+            _tidy(folder)
+            folder.rename(folder.with_name(f"{folder.name}-retired-{datetime.now(timezone.utc):%Y%m%d%H%M%S}"))
+        if time.monotonic() - started > minutes * 30:
+            break
     numbers = stats.update(EPISODES, ROOT)
     added = []
     try:

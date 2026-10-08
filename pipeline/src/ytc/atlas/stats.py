@@ -27,7 +27,9 @@ BOARD_HEAD = ("| Short | Topic | Published | Views | Likes | Views per hour |\n"
 
 
 def feed() -> list[dict]:
-    root = ET.fromstring(requests.get(FEED, timeout=30).content)
+    response = requests.get(FEED, timeout=30)
+    response.raise_for_status()
+    root = ET.fromstring(response.content)
     out = []
     for e in root.findall("a:entry", NS):
         stats = e.find("media:group/media:community/media:statistics", NS)
@@ -54,11 +56,18 @@ def update(episodes: Path, root: Path) -> list[dict]:
     by_id = {v["video_id"]: v for v in videos}
     by_title = {v["title"].strip().lower(): v for v in videos}
     now = datetime.now(timezone.utc)
+    out = root / "analytics" / "atlas.json"
+    old = json.loads(out.read_text()) if out.exists() else {"shorts": []}
+    previous = {r["id"]: r for r in old.get("shorts", [])}
     rows = []
+    checkpoints = root / "analytics" / "atlas-checkpoints"
+    checkpoints.mkdir(parents=True, exist_ok=True)
     for path in sorted(episodes.glob("atlas*/publish.json")):
         record = json.loads(path.read_text(encoding="utf-8"))
         video = by_id.get(_video_id(record.get("youtube_url"))) or by_title.get((record.get("title") or "").strip().lower())
         if not video:
+            if path.parent.name in previous:
+                rows.append(previous[path.parent.name] | {"metric_stale": True})
             continue
         hours = max((now - datetime.fromisoformat(video["published"])).total_seconds() / 3600, 0.1)
         topic = ""
@@ -66,11 +75,19 @@ def update(episodes: Path, root: Path) -> list[dict]:
         if spec.exists():
             m = re.search(r"^format: (\S+)", spec.read_text(encoding="utf-8"), re.M)
             topic = m.group(1) if m else ""
-        rows.append({"id": path.parent.name, "title": record.get("title"), "video_id": video["video_id"],
+        row = {"id": path.parent.name, "title": record.get("title"), "video_id": video["video_id"],
                      "published": video["published"], "views": video["views"], "likes": video["likes"],
                      "format": topic or "map_reveal", "hours": round(hours, 1),
-                     "views_per_hour": round((video["views"] or 0) / hours, 1)})
-    out = root / "analytics" / "atlas.json"
+                     "views_per_hour": round(video["views"] / hours, 1) if video["views"] is not None else None,
+               "metric_stale": False, "analytics_status": "public-only; authenticated retention unavailable"}
+        for checkpoint in (24, 72, 168):
+            snap = checkpoints / f"{path.parent.name}-{checkpoint}h.json"
+            if checkpoint <= hours < checkpoint + 12 and not snap.exists():
+                snap.write_text(json.dumps(row | {"target_hours": checkpoint, "collected_at": now.isoformat()}, indent=2) + "\n")
+            if snap.exists():
+                snapshot = json.loads(snap.read_text())
+                row[f"checkpoint_{checkpoint}h"] = {k: snapshot.get(k) for k in ("views", "likes", "hours", "views_per_hour")}
+        rows.append(row)
     out.parent.mkdir(parents=True, exist_ok=True)
     out.write_text(json.dumps({"read_at": now.isoformat(timespec="seconds"), "shorts": rows}, indent=1) + "\n",
                    encoding="utf-8")

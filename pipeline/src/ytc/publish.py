@@ -256,7 +256,7 @@ def hosted_bytes(media_url: str) -> int:
     return int(head.headers.get("content-length", 0))
 
 
-def fetch_video(media_url: str, tries: int = 2) -> dict:
+def fetch_video(media_url: str, tries: int = 2, expected_sha256: str | None = None) -> dict:
     """Download a hosted video whole, as Buffer will when the post goes out: {"bytes", "seconds"}. Raises when it
     doesn't come back complete as a video."""
     for attempt in range(1, tries + 1):
@@ -266,10 +266,17 @@ def fetch_video(media_url: str, tries: int = 2) -> dict:
                 response.raise_for_status()
                 kind = response.headers.get("content-type", "")
                 expected = int(response.headers.get("content-length") or 0)
-                got = sum(len(chunk) for chunk in response.iter_content(1 << 20))
+                import hashlib
+                hashed = hashlib.sha256()
+                got = 0
+                for chunk in response.iter_content(1 << 20):
+                    got += len(chunk)
+                    hashed.update(chunk)
             if not kind.startswith("video/") or not got or (expected and got != expected):
                 raise RuntimeError(f"came back as {kind or 'no type'}, {got} of {expected} bytes")
-            return {"bytes": got, "seconds": round(time.monotonic() - started, 1)}
+            if expected_sha256 is not None and hashed.hexdigest() != expected_sha256:
+                raise RuntimeError("hosted bytes differ from the accepted video")
+            return {"bytes": got, "seconds": round(time.monotonic() - started, 1), "sha256": hashed.hexdigest()}
         except (requests.RequestException, RuntimeError) as err:
             if attempt == tries:
                 raise RuntimeError(f"couldn't download {media_url}: {err}") from err

@@ -494,6 +494,24 @@ def atlas_preview(topic: dict, episode_id: str = "preview") -> tuple[str, bytes]
     return (folder / "atlas.yaml").read_text(encoding="utf-8"), video.read_bytes()
 
 
+@app.function(image=image, cpu=4.0, memory=6144, timeout=3600, secrets=[run_secret], volumes={"/cache": cache})
+def atlas_quality_preview(topic: dict, episode_id: str = "quality-preview", llm_first: str = "") -> dict:
+    """Produce a fully checked private preview without changing the queue or production catalogue."""
+    from .atlas import pipeline
+    logging.basicConfig(level=logging.INFO)
+    if llm_first:
+        os.environ["YTC_LLM_FIRST"] = llm_first
+    pipeline.EPISODES = Path(tempfile.mkdtemp())
+    _, folder, _, video = pipeline.make(topic, episode_id)
+    cache.commit()
+    return {"artifacts": {name: (folder / name).read_text() for name in
+                          ("atlas.yaml", "data.json", "claims.json", "qa.json", "timing.json")},
+            "script": (folder / "atlas.yaml").read_text(),
+            "qa": json.loads((folder / "qa.json").read_text()),
+            "claims": json.loads((folder / "claims.json").read_text()),
+            "contact": (folder / "contact.jpg").read_bytes(), "video": video.read_bytes()}
+
+
 @app.function(image=run_image, cpu=4.0, memory=6144, timeout=3600, schedule=modal.Cron(ATLAS_SCHEDULE),
               secrets=[run_secret], volumes={"/cache": cache, "/outbox": outbox}, max_containers=1)
 def atlas_run(trigger: str = "schedule", args: list[str] | None = None) -> dict:

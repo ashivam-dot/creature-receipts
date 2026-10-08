@@ -2,8 +2,8 @@
  "topics": [
   {
    "id": "t001",
-   "topic": "Mobile phones outnumber people",
-   "angle": "Where SIM cards outnumber humans, and the giant country that doesn't.",
+   "topic": "Mobile subscriptions outnumber people",
+   "angle": "Where mobile subscriptions exceed population; subscriptions are not unique devices or users.",
    "format": "map_reveal",
    "dataset": {
     "kind": "worldbank",
@@ -28,8 +28,8 @@
   },
   {
    "id": "t002",
-   "topic": "The countries that are shrinking",
-   "angle": "Which countries now lose people every year.",
+   "topic": "Countries with falling populations",
+   "angle": "Which countries had negative population growth in the reported year.",
    "format": "map_reveal",
    "dataset": {
     "kind": "worldbank",
@@ -47,15 +47,15 @@
      "Shrinking"
     ]
    },
-   "value_format": "{v:.1f}%",
+   "value_format": "{v:.2f}%",
    "source_url": "https://data.worldbank.org/indicator/SP.POP.GROW",
    "publisher_note": "World Population Prospects, United Nations (UN), note: Derived from total population, publisher: UN Population Division;\nStatistical databases and publications from national statistical offices, Natio",
    "status": "ready:atlas002"
   },
   {
    "id": "t003",
-   "topic": "Below replacement: the fertility map",
-   "angle": "2.1 births keeps a population stable; most of the world is now below it.",
+   "topic": "Below the fertility benchmark",
+   "angle": "Where fertility is below the approximate 2.1 replacement benchmark; this does not prove immediate population decline.",
    "format": "rank_ladder",
    "dataset": {
     "kind": "worldbank",
@@ -106,8 +106,8 @@
   },
   {
    "id": "t005",
-   "topic": "The oldest countries on Earth",
-   "angle": "Where one in four people is over 65, and where almost no one is.",
+   "topic": "The oldest populations",
+   "angle": "Where at least one in four residents is aged 65 or older.",
    "format": "map_reveal",
    "dataset": {
     "kind": "worldbank",
@@ -138,7 +138,7 @@
    "value_format": "{v:.0f}%",
    "source_url": "https://data.worldbank.org/indicator/SP.POP.65UP.TO.ZS",
    "publisher_note": "World Population Prospects, United Nations (UN), publisher: UN Population Division",
-   "status": "failed:RuntimeError"
+   "status": "open"
   },
   {
    "id": "t007",
@@ -204,8 +204,8 @@
   },
   {
    "id": "t009",
-   "topic": "Who's still offline",
-   "angle": "The countries where most people have never used the internet.",
+   "topic": "Who is currently offline",
+   "angle": "Where fewer than half of residents use the internet during the source reference period; not whether they ever used it.",
    "format": "map_reveal",
    "dataset": {
     "kind": "worldbank",
@@ -302,8 +302,8 @@
   },
   {
    "id": "t012",
-   "topic": "Where money sent home runs the economy",
-   "angle": "Countries where money from workers abroad is a fifth of the economy.",
+   "topic": "Money sent home compared with GDP",
+   "angle": "Where personal remittances received are large relative to GDP; not their contribution to domestic output.",
    "format": "map_reveal",
    "dataset": {
     "kind": "worldbank",
@@ -338,8 +338,8 @@
   },
   {
    "id": "t013",
-   "topic": "Renewables: who's already there",
-   "angle": "The surprising countries that already run mostly on renewables.",
+   "topic": "Renewables in total energy use",
+   "angle": "Renewable share of total final energy consumption, including biomass where counted; not electricity generation.",
    "format": "rank_ladder",
    "dataset": {
     "kind": "worldbank",
@@ -482,8 +482,8 @@
   },
   {
    "id": "t017",
-   "topic": "Fast home internet",
-   "angle": "Home broadband is rare in most of the world, even where phones are everywhere.",
+   "topic": "Fixed broadband connections",
+   "angle": "Fixed broadband subscriptions per 100 residents; neither connection speed nor the share of connected households.",
    "format": "map_reveal",
    "dataset": {
     "kind": "worldbank",
@@ -518,8 +518,8 @@
   },
   {
    "id": "t018",
-   "topic": "Safe drinking water",
-   "angle": "Where clean water at home is still not universal.",
+   "topic": "Basic drinking-water access",
+   "angle": "Access to at least basic drinking-water services; this does not establish safe contamination-free water at home.",
    "format": "map_reveal",
    "dataset": {
     "kind": "worldbank",
@@ -554,8 +554,8 @@
   },
   {
    "id": "t019",
-   "topic": "One city holds the country",
-   "angle": "Countries where one city holds most of the urban population.",
+   "topic": "One city dominates urban population",
+   "angle": "Where the largest city contains more than half of urban residents, not necessarily half of all residents.",
    "format": "rank_ladder",
    "dataset": {
     "kind": "worldbank",
@@ -580,8 +580,8 @@
   },
   {
    "id": "t020",
-   "topic": "Cropland: where the land is ploughed",
-   "angle": "Countries where almost every field is cropland, and where almost none can be.",
+   "topic": "The arable-land map",
+   "angle": "Arable land as share of total land, including temporary fallow and pasture; not all cropland.",
    "format": "map_reveal",
    "dataset": {
     "kind": "worldbank",
@@ -652,8 +652,8 @@
   },
   {
    "id": "t022",
-   "topic": "Women at work",
-   "angle": "Where most women work for pay, and where few do.",
+   "topic": "Women in the labour force",
+   "angle": "Female labour-force participation among ages 15+, including employed and unemployed jobseekers; not paid employment alone.",
    "format": "rank_ladder",
    "dataset": {
     "kind": "worldbank",
@@ -688,8 +688,8 @@
   },
   {
    "id": "t023",
-   "topic": "Old-age dependency",
-   "angle": "How many retirees every 100 workers support.",
+   "topic": "The older-population ratio",
+   "angle": "People aged 65+ per 100 people aged 15–64; neither actual retirees nor actual workers.",
    "format": "map_reveal",
    "dataset": {
     "kind": "worldbank",
@@ -868,8 +868,8 @@
   },
   {
    "id": "t029",
-   "topic": "Farming's share of the economy",
-   "angle": "Where farming is still a big part of the economy.",
+   "topic": "Agriculture in the economy",
+   "angle": "Agriculture, forestry and fishing value added as share of GDP.",
    "format": "rank_ladder",
    "dataset": {
     "kind": "worldbank",
@@ -904,8 +904,8 @@
   },
   {
    "id": "t030",
-   "topic": "GDP per person",
-   "angle": "The size of the economy per person, and the extreme ends.",
+   "topic": "Economic output per person",
+   "angle": "GDP per person in current US dollars; not average wages or personal wealth.",
    "format": "map_reveal",
    "dataset": {
     "kind": "worldbank",
