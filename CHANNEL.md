@@ -105,6 +105,14 @@ Start here: `PLAYBOOK.md` (the daily routine), `strategy/STRATEGY.md`, `strategy
 - Every History workflow in that repo is disabled; it was made public on 2026-10-08 because GitHub refuses
   private-repo Actions minutes over a failed payment, and public repos run free.
 - A failed producer run, a run that can't save, or 36 hours with nothing due pushes an ntfy alert.
+- **Self-running, no Mac:** each producer run also (1) reads the channel's public RSS feed into
+  `analytics/atlas.json` and the `## Scoreboard` in `strategy/LEARNINGS.md` (`atlas.stats`), (2) tops the catalogue
+  back up by 10 topics when fewer than 12 are open, picked from World Bank indicators with data for enough countries
+  and steered by the scoreboard (`atlas.topics.refill`), and (3) audits each dataset's highest and lowest values with
+  an independent model call before writing; a topic whose data looks wrong is marked `skipped:implausible`.
+  The publisher retries a Buffer error twice, then records it, and writes `atlas/health.json`. Modal `atlas_watch`
+  (every 3 hours) alerts over ntfy when that file is over 5 hours old or reports errors or starvation.
+  `cloud.atlas_audit` and `cloud.atlas_topics_preview` check the catalogue and the topic generator without saving.
 - `ytc atlas --render <atlas.yaml>` re-renders a script as is; `cloud.atlas_preview` writes and renders one topic
   on Modal and returns it without saving anything.
 - Shots: `world`, `country`, `group`, `region`, `rank` (3–6 countries as animated bars; titled "Top N" or
