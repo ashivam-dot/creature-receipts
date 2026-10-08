@@ -53,6 +53,8 @@ Rules:
   words. Never round differently. Never add a number the summary doesn't contain. A country's value goes only in
   a beat whose isos include that country.
 - Say a negative value as a fall without the minus sign: "-1.8%" becomes "shrinking by 1.8%" or "down 1.8%".
+- The data is one year, so never claim a trend over time: no "every year", "each year", "always", "more than
+  ever", "for decades". "Shrinking by 1.8% a year" is fine; it states the rate.
 - The "why" line is plain English a 12-year-old follows; no jargon such as "exponential", "de facto", "per capita".
 - Plain spoken English, short sentences, no emojis, no hashtags in the beats, no politics or war.
 - Shots: "world" (whole map), "country" (iso), "group" (2-3 isos side by side), "rank" (3-6 isos shown as a bar
@@ -192,6 +194,7 @@ def _forms(n: float | int | str) -> set[str]:
 
 
 _WRONG_COLOUR = re.compile(r"\b(red|green|orange|purple|pink|brown|light blue)\b", re.I)
+_TREND = re.compile(r"\b(every (single )?year|each year|always|for decades|more than ever)\b", re.I)
 _NUMBER = re.compile(r"\d[\d,]*(?:\.\d+)?")
 _WORD_NUMBERS = re.compile(r"\b(two|three|four|five|six|seven|eight|nine|ten|eleven|twelve|twenty|thirty|forty|"
                            r"fifty|sixty|seventy|eighty|ninety|thousand|million|billion|percent)\b", re.I)
@@ -244,6 +247,8 @@ def problems(draft: dict, allowed: set[str], owners: dict[str, set[str]], vals: 
         used += isos
         if colour := _WRONG_COLOUR.search(b["text"]):
             out.append(f"beat {i}: the map has no {colour.group(0)}; name only yellow, dark blue, or grey")
+        if trend := _TREND.search(b["text"]):
+            out.append(f"beat {i}: '{trend.group(0)}' claims a trend, but the data is one year")
         if re.search(r"(?<![\w.])-\d", b["text"]):
             out.append(f"beat {i}: say a negative value as a fall ('down 1.8%'), without the minus sign")
         for iso in isos:
