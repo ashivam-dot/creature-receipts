@@ -193,8 +193,10 @@ def render(ep: AtlasEpisode, folder: Path) -> Path:
                 under = draw.overlay(draw.map_layer(prev.camera, colors, prev.highlight, prev.dim),
                                      chip="", swatches=[], source="", callouts=[])
                 big, *small = plan.card
+                credit = f"{ds.source} · {ds.year} · {ds.license}"
+                small = [s for s in small if not (ds.source.lower() in s.lower() and str(ds.year) in s)]
                 if len(small) < 2:
-                    small.append(f"{ds.source} · {ds.year} · {ds.license}")
+                    small.append(credit)
                 lines = [(big, 92, draw.HIGHLIGHT), ("", 30, draw.INK)] + [(s, 44, draw.INK) for s in small]
                 last_card = (under, draw.card(lines, under))
             under, full = last_card
