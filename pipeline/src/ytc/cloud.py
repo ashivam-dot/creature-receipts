@@ -532,6 +532,29 @@ def atlas_outbox_verify(records: list[dict]) -> list[dict]:
     return verified
 
 
+@app.function(image=image, cpu=0.25, memory=512, timeout=60, secrets=[run_secret])
+def atlas_metrics_probe() -> dict:
+    """Check public Data API access with this studio's existing Google key; never return credentials."""
+    import requests
+    key = os.environ.get("YTC_YOUTUBE_API_KEY") or os.environ.get("YTC_GEMINI_API_KEY")
+    if not key:
+        return {"available": False, "reason": "no studio Google API key"}
+    try:
+        response = requests.get("https://www.googleapis.com/youtube/v3/videos",
+            params={"part": "snippet,statistics", "id": "BCmvNfA7VnM", "key": key}, timeout=30)
+        data = response.json()
+    except (requests.RequestException, ValueError):
+        return {"available": False, "reason": "Data API network/response failure"}
+    if response.status_code != 200:
+        return {"available": False, "request_mode": "query-key", "status": response.status_code,
+                "reasons": [e.get("reason") for e in data.get("error", {}).get("errors", [])]}
+    from .atlas.stats import CHANNEL_ID
+    rows = [r for r in data.get("items", []) if r.get("snippet", {}).get("channelId") == CHANNEL_ID]
+    return {"available": bool(rows), "videos": [{"id": r["id"], "title": r["snippet"]["title"],
+        "published_at": r["snippet"]["publishedAt"], "statistics": r.get("statistics", {}),
+        "status": r.get("status", {})} for r in rows]}
+
+
 @app.function(image=run_image, cpu=4.0, memory=6144, timeout=3600, schedule=modal.Cron(ATLAS_SCHEDULE),
               secrets=[run_secret], volumes={"/cache": cache, "/outbox": outbox}, max_containers=1)
 def atlas_run(trigger: str = "schedule", args: list[str] | None = None) -> dict:

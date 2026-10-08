@@ -1,7 +1,7 @@
 """How each published Atlas Short is doing, from its public feed or isolated cloud snapshot, kept in
 analytics/atlas.json and in the scoreboard of strategy/LEARNINGS.md.
 
-The feed lists the channel's latest 15 videos with their view and like counts. A Short is matched to its episode
+The feed lists recent videos with views and a generic rating count, which is not treated as verified likes. A Short is matched to its episode
 through the YouTube link Buffer reported when it went out (publish.json `youtube_url`), or else by title.
 """
 
@@ -37,7 +37,8 @@ def _rss_feed() -> list[dict]:
         out.append({"video_id": e.findtext("yt:videoId", namespaces=NS), "title": e.findtext("a:title", namespaces=NS),
                     "published": e.findtext("a:published", namespaces=NS),
                     "views": int(stats.get("views")) if stats is not None else None,
-                    "likes": int(rating.get("count")) if rating is not None else None})
+                    "likes": None,
+                    "public_rating_count": int(rating.get("count")) if rating is not None and rating.get("count") else None})
     return out
 
 
@@ -99,6 +100,7 @@ def update(episodes: Path, root: Path) -> list[dict]:
             topic = m.group(1) if m else ""
         row = {"id": path.parent.name, "title": record.get("title"), "video_id": video["video_id"],
                      "published": video["published"], "views": video["views"], "likes": video["likes"],
+                     "public_rating_count": video.get("public_rating_count"),
                      "format": topic or "map_reveal", "hours": round(hours, 1),
                      "views_per_hour": round(video["views"] / hours, 1) if video["views"] is not None else None,
                "metric_stale": stale, "metric_observed_at": observed.isoformat(),

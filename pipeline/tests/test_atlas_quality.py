@@ -27,6 +27,29 @@ def test_small_article_noise_remains_visible_but_acceptable():
     assert quality.minor_speech_difference("'the' heard as '(nothing)' after 'in'", ds)
 
 
+def test_country_value_cannot_borrow_a_unit_denominator():
+    from ytc.atlas.episode import AtlasEpisode
+    ep = AtlasEpisode.model_validate({'id': 'atlas999', 'title': 'test', 'value_format': '{v:.0f} per 100',
+        'dataset': {'kind': 'worldbank', 'label': 'Broadband', 'source': 'WB'}, 'beats': [{'text': 'test'}]})
+    ds = Dataset('broadband', 'per 100', 'WB', 'CC BY', '', {'FRA': 49}, {'FRA': 2024}, names={'FRA': 'France'})
+    assert quality.entity_value_errors('France has 49 subscriptions per 100 people.', ep, ds) == []
+    assert quality.entity_value_errors('France has 100 subscriptions per 100 people.', ep, ds)
+
+
+def test_public_rating_count_is_not_presented_as_verified_likes(monkeypatch):
+    from ytc.atlas import stats
+    class Response:
+        content = b'''<feed xmlns="http://www.w3.org/2005/Atom" xmlns:yt="http://www.youtube.com/xml/schemas/2015" xmlns:media="http://search.yahoo.com/mrss/">
+        <entry><yt:videoId>abcdefghijk</yt:videoId><title>Test</title><published>2026-10-08T00:00:00Z</published>
+        <media:group><media:community><media:statistics views="63"/><media:starRating count="8" average="4"/></media:community></media:group></entry></feed>'''
+        def raise_for_status(self): pass
+    monkeypatch.setattr(stats.requests, 'get', lambda *a, **kw: Response())
+    row = stats.feed()[0]
+    assert row['views'] == 63
+    assert row['public_rating_count'] == 8
+    assert row['likes'] is None
+
+
 def test_definition_threshold_is_allowed_but_remains_separate_from_country_values():
     from ytc.atlas import writer
     ds = Dataset('broadband', 'per 100', 'WB', 'CC BY', '', {'USA': 35}, {'USA': 2024},

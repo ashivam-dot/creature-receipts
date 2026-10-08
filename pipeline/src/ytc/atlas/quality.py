@@ -97,7 +97,9 @@ def entity_value_errors(text: str, ep: AtlasEpisode, ds: Dataset) -> list[str]:
             token = number.group().replace(",", "").rstrip(".")
             if re.search(r"(?:per|every|each|in|year|rank|#|top)\s*$", context):
                 continue
-            expected = writer._forms(ep.value_text(ds.values[iso]))
+            displayed = writer._NUMBER.search(ep.value_text(ds.values[iso]))
+            # Unit denominators such as "per 100" are not this country's measured value.
+            expected = writer._forms(displayed.group()) if displayed else set()
             if token not in expected:
                 errors.append(f"{match.group()} value {token} does not match {ep.value_text(ds.values[iso])}")
             break
