@@ -512,6 +512,26 @@ def atlas_quality_preview(topic: dict, episode_id: str = "quality-preview", llm_
             "contact": (folder / "contact.jpg").read_bytes(), "video": video.read_bytes()}
 
 
+@app.function(image=image, cpu=0.25, memory=512, timeout=120, volumes={"/outbox": outbox})
+def atlas_outbox_verify(records: list[dict]) -> list[dict]:
+    """Read back parked Atlas media on the volume host; return hashes, never download URLs or secrets."""
+    import hashlib
+    import re
+    outbox.reload()
+    verified = []
+    for record in records:
+        path = record["path"]
+        if not re.fullmatch(r"atlas/atlas\d{3,}-[0-9a-f]{64}\.mp4", path):
+            raise ValueError("invalid Atlas outbox path")
+        media = Path("/outbox") / path
+        with media.open("rb") as fh:
+            sha = hashlib.file_digest(fh, "sha256").hexdigest()
+        if sha != record["sha256"]:
+            raise ValueError("parked Atlas media differs from its acceptance record")
+        verified.append({"path": path, "sha256": sha, "bytes": media.stat().st_size})
+    return verified
+
+
 @app.function(image=run_image, cpu=4.0, memory=6144, timeout=3600, schedule=modal.Cron(ATLAS_SCHEDULE),
               secrets=[run_secret], volumes={"/cache": cache, "/outbox": outbox}, max_containers=1)
 def atlas_run(trigger: str = "schedule", args: list[str] | None = None) -> dict:

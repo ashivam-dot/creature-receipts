@@ -11,6 +11,22 @@ def test_mixed_reporting_years_are_not_labelled_one_year():
     assert ds.year_label == '2024'
 
 
+@pytest.mark.parametrize('finding,previously_tolerated', [
+    ("'decreased' heard as 'increased' after 'population'", False),
+    ("'growing' heard as 'glowing' after 'population'", True),
+    ("'australia' heard as 'austria' after 'in'", True)])
+def test_fuzzy_asr_tolerance_never_accepts_changed_direction_words_or_country(finding, previously_tolerated):
+    from ytc import check
+    ds = Dataset('metric', '%', 'WB', 'CC BY', '', {'AUS': 1}, {'AUS': 2024}, names={'AUS': 'Australia'})
+    assert check._asr_noise(finding) == previously_tolerated
+    assert not quality.minor_speech_difference(finding, ds)
+
+
+def test_small_article_noise_remains_visible_but_acceptable():
+    ds = Dataset('metric', '%', 'WB', 'CC BY', '', {'USA': 1}, {'USA': 2024})
+    assert quality.minor_speech_difference("'the' heard as '(nothing)' after 'in'", ds)
+
+
 def test_definition_threshold_is_allowed_but_remains_separate_from_country_values():
     from ytc.atlas import writer
     ds = Dataset('broadband', 'per 100', 'WB', 'CC BY', '', {'USA': 35}, {'USA': 2024},

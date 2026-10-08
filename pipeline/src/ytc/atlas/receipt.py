@@ -15,6 +15,9 @@ def verify(folder: Path, media_sha: str) -> dict:
     qa = json.loads((folder / "qa.json").read_text())
     if qa.get("version") != VERSION or qa.get("passed") is not True or qa.get("media_sha256") != media_sha:
         raise ValueError("missing or invalid media quality receipt")
+    if (qa.get("speech", {}).get("differences") and
+            qa.get("speech_policy") != "material-hard-entity-polarity-strict-minor-spelling-warning"):
+        raise ValueError("speech differences require the current entity/polarity policy")
     for name, field in (("atlas.yaml", "script_sha256"), ("data.json", "data_sha256"), ("claims.json", "claims_sha256")):
         if digest(folder / name) != qa.get(field):
             raise ValueError(f"quality receipt does not bind {name}")

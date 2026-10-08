@@ -16,6 +16,27 @@ from .episode import AtlasEpisode
 from .receipt import digest, verify
 
 VERSION = 1
+SPEECH_POLICY = "material-hard-entity-polarity-strict-minor-spelling-warning"
+
+
+def minor_speech_difference(finding: str, ds: Dataset) -> bool:
+    """Fuzzy spelling tolerance must never excuse a direction reversal or a changed country name."""
+    from .. import check
+    match = check._FINDING.match(finding)
+    if not match:
+        return False
+    wrote, heard = match[2], match[4]
+    polarity = r"\b(?:not|no|never|above|below|over|under|more|less|positive|negative|highest|lowest|higher|lower|most|least|increase[ds]?|increasing|decrease[ds]?|decreasing|grow(?:s|ing|th)?|grew|grown|shrink(?:s|ing)?|shrunk|rises?|rising|rose|fall(?:s|ing|en)?|fell)\b"
+    if re.search(polarity, wrote + " " + heard, re.I):
+        return False
+    from . import geo
+    from .draw import short_name
+    aliases = {n for name in [*ds.names.values(), *(c.name for c in geo.world().values())] if isinstance(name, str)
+               for n in (name, short_name(name)) if len(n) >= 3}
+    aliases.update({"USA", "UK", "UAE"})
+    if any(re.search(r"\b" + re.escape(alias) + r"\b", wrote + " " + heard, re.I) for alias in aliases):
+        return False
+    return check._asr_noise(finding)
 
 
 def save(path: Path, value: dict) -> None:
@@ -194,7 +215,8 @@ def media(ep: AtlasEpisode, folder: Path, video: Path) -> dict:
     save(folder / "media-review.json", {"duration": duration, "integrated_lufs": integrated,
                                         "true_peak_dbfs": true_peak, "speech": speech})
     differences = speech.get("differences", [])
-    material = [d for d in differences if not check._asr_noise(d)]
+    ds = Dataset.load(folder / "data.json")
+    material = [d for d in differences if not minor_speech_difference(d, ds)]
     if material or len(differences) > 4:
         raise ValueError("encoded speech material mismatch: " + "; ".join(material or differences)[:500])
     warnings = list(differences)
@@ -222,6 +244,6 @@ def media(ep: AtlasEpisode, folder: Path, video: Path) -> dict:
               "quality_module_sha256": digest(Path(__file__)), "media_sha256": digest(video), "script_sha256": digest(folder / "atlas.yaml"),
               "data_sha256": digest(folder / "data.json"), "claims_sha256": digest(folder / "claims.json"),
               "contact_sha256": digest(folder / "contact.jpg"), "duration": round(duration, 3), "integrated_lufs": integrated, "true_peak_dbfs": true_peak,
-              "speech": speech, "warnings": warnings, "speech_policy": "material-hard-minor-spelling-warning"}
+              "speech": speech, "warnings": warnings, "speech_policy": SPEECH_POLICY}
     save(folder / "qa.json", result)
     return result
