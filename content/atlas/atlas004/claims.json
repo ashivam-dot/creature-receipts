@@ -1,0 +1,1991 @@
+{
+  "version": 1,
+  "evidence": {
+    "version": 1,
+    "indicator": "SP.DYN.LE00.IN",
+    "definition": "Life expectancy at birth indicates the number of years a newborn infant would live if prevailing patterns of mortality at the time of its birth were to stay the same throughout its life.",
+    "source": "https://data.worldbank.org/indicator/SP.DYN.LE00.IN",
+    "source_response_sha256": "2ee3fd74f72bf410c66dad7521fab1fdfa4b60fd6ecaee407e93afd055fa3a89",
+    "source_organization": "World Population Prospects, United Nations (UN), uri: UN Population Division;\nStatistical databases and publications from national statistical offices, National Statistical Offices (NSOs), note: Derived from male and female life expectancy at birth from sources such as statistical databases and publications from national statistical offices.;\nDemographic Statistics, Eurostat (ESTAT), note: Derived from male and female life expectancy at birth from sources such as Eurostat: Demographic Statistics.",
+    "year_label": "2024",
+    "universe": "mapped countries and territories with data",
+    "count": 208,
+    "threshold": 80.0,
+    "at_or_above": 47,
+    "entities": {
+      "AFG": {
+        "name": "Afghanistan",
+        "value": 66.289,
+        "display": "66 years",
+        "year": 2024,
+        "unit": "years",
+        "rank": 176
+      },
+      "ALB": {
+        "name": "Albania",
+        "value": 79.776,
+        "display": "80 years",
+        "year": 2024,
+        "unit": "years",
+        "rank": 49
+      },
+      "DZA": {
+        "name": "Algeria",
+        "value": 76.475,
+        "display": "76 years",
+        "year": 2024,
+        "unit": "years",
+        "rank": 86
+      },
+      "ASM": {
+        "name": "American Samoa",
+        "value": 72.992,
+        "display": "73 years",
+        "year": 2024,
+        "unit": "years",
+        "rank": 119
+      },
+      "AND": {
+        "name": "Andorra",
+        "value": 84.188,
+        "display": "84 years",
+        "year": 2024,
+        "unit": "years",
+        "rank": 7
+      },
+      "AGO": {
+        "name": "Angola",
+        "value": 64.805,
+        "display": "65 years",
+        "year": 2024,
+        "unit": "years",
+        "rank": 183
+      },
+      "ATG": {
+        "name": "Antigua and Barbuda",
+        "value": 77.766,
+        "display": "78 years",
+        "year": 2024,
+        "unit": "years",
+        "rank": 71
+      },
+      "ARG": {
+        "name": "Argentina",
+        "value": 77.543,
+        "display": "78 years",
+        "year": 2024,
+        "unit": "years",
+        "rank": 74
+      },
+      "ARM": {
+        "name": "Armenia",
+        "value": 78.319512195122,
+        "display": "78 years",
+        "year": 2024,
+        "unit": "years",
+        "rank": 59
+      },
+      "ABW": {
+        "name": "Aruba",
+        "value": 76.5,
+        "display": "76 years",
+        "year": 2024,
+        "unit": "years",
+        "rank": 85
+      },
+      "AUS": {
+        "name": "Australia",
+        "value": 83.0512195121951,
+        "display": "83 years",
+        "year": 2024,
+        "unit": "years",
+        "rank": 19
+      },
+      "AUT": {
+        "name": "Austria",
+        "value": 81.9951219512195,
+        "display": "82 years",
+        "year": 2024,
+        "unit": "years",
+        "rank": 33
+      },
+      "AZE": {
+        "name": "Azerbaijan",
+        "value": 74.576,
+        "display": "75 years",
+        "year": 2024,
+        "unit": "years",
+        "rank": 105
+      },
+      "BHS": {
+        "name": "Bahamas, The",
+        "value": 74.71,
+        "display": "75 years",
+        "year": 2024,
+        "unit": "years",
+        "rank": 102
+      },
+      "BHR": {
+        "name": "Bahrain",
+        "value": 81.423,
+        "display": "81 years",
+        "year": 2024,
+        "unit": "years",
+        "rank": 38
+      },
+      "BGD": {
+        "name": "Bangladesh",
+        "value": 74.93,
+        "display": "75 years",
+        "year": 2024,
+        "unit": "years",
+        "rank": 100
+      },
+      "BRB": {
+        "name": "Barbados",
+        "value": 76.332,
+        "display": "76 years",
+        "year": 2024,
+        "unit": "years",
+        "rank": 89
+      },
+      "BLR": {
+        "name": "Belarus",
+        "value": 74.3653414634147,
+        "display": "74 years",
+        "year": 2024,
+        "unit": "years",
+        "rank": 107
+      },
+      "BEL": {
+        "name": "Belgium",
+        "value": 82.3,
+        "display": "82 years",
+        "year": 2024,
+        "unit": "years",
+        "rank": 28
+      },
+      "BLZ": {
+        "name": "Belize",
+        "value": 73.739,
+        "display": "74 years",
+        "year": 2024,
+        "unit": "years",
+        "rank": 113
+      },
+      "BEN": {
+        "name": "Benin",
+        "value": 60.961,
+        "display": "61 years",
+        "year": 2024,
+        "unit": "years",
+        "rank": 200
+      },
+      "BMU": {
+        "name": "Bermuda",
+        "value": 82.49,
+        "display": "82 years",
+        "year": 2024,
+        "unit": "years",
+        "rank": 25
+      },
+      "BTN": {
+        "name": "Bhutan",
+        "value": 73.262,
+        "display": "73 years",
+        "year": 2024,
+        "unit": "years",
+        "rank": 116
+      },
+      "BOL": {
+        "name": "Bolivia",
+        "value": 68.739,
+        "display": "69 years",
+        "year": 2024,
+        "unit": "years",
+        "rank": 156
+      },
+      "BIH": {
+        "name": "Bosnia and Herzegovina",
+        "value": 78.044,
+        "display": "78 years",
+        "year": 2024,
+        "unit": "years",
+        "rank": 63
+      },
+      "BWA": {
+        "name": "Botswana",
+        "value": 69.293,
+        "display": "69 years",
+        "year": 2024,
+        "unit": "years",
+        "rank": 151
+      },
+      "BRA": {
+        "name": "Brazil",
+        "value": 76.023,
+        "display": "76 years",
+        "year": 2024,
+        "unit": "years",
+        "rank": 92
+      },
+      "VGB": {
+        "name": "British Virgin Islands",
+        "value": 77.431,
+        "display": "77 years",
+        "year": 2024,
+        "unit": "years",
+        "rank": 75
+      },
+      "BRN": {
+        "name": "Brunei Darussalam",
+        "value": 75.501,
+        "display": "76 years",
+        "year": 2024,
+        "unit": "years",
+        "rank": 95
+      },
+      "BGR": {
+        "name": "Bulgaria",
+        "value": 75.7609756097561,
+        "display": "76 years",
+        "year": 2024,
+        "unit": "years",
+        "rank": 94
+      },
+      "BFA": {
+        "name": "Burkina Faso",
+        "value": 61.292,
+        "display": "61 years",
+        "year": 2024,
+        "unit": "years",
+        "rank": 199
+      },
+      "BDI": {
+        "name": "Burundi",
+        "value": 63.818,
+        "display": "64 years",
+        "year": 2024,
+        "unit": "years",
+        "rank": 190
+      },
+      "CPV": {
+        "name": "Cabo Verde",
+        "value": 76.224,
+        "display": "76 years",
+        "year": 2024,
+        "unit": "years",
+        "rank": 91
+      },
+      "KHM": {
+        "name": "Cambodia",
+        "value": 70.817,
+        "display": "71 years",
+        "year": 2024,
+        "unit": "years",
+        "rank": 141
+      },
+      "CMR": {
+        "name": "Cameroon",
+        "value": 63.968,
+        "display": "64 years",
+        "year": 2024,
+        "unit": "years",
+        "rank": 186
+      },
+      "CAN": {
+        "name": "Canada",
+        "value": 82.1080487804878,
+        "display": "82 years",
+        "year": 2024,
+        "unit": "years",
+        "rank": 31
+      },
+      "CYM": {
+        "name": "Cayman Islands",
+        "value": 80.54,
+        "display": "81 years",
+        "year": 2024,
+        "unit": "years",
+        "rank": 45
+      },
+      "CAF": {
+        "name": "Central African Republic",
+        "value": 57.671,
+        "display": "58 years",
+        "year": 2024,
+        "unit": "years",
+        "rank": 206
+      },
+      "TCD": {
+        "name": "Chad",
+        "value": 55.238,
+        "display": "55 years",
+        "year": 2024,
+        "unit": "years",
+        "rank": 207
+      },
+      "CHL": {
+        "name": "Chile",
+        "value": 81.359,
+        "display": "81 years",
+        "year": 2024,
+        "unit": "years",
+        "rank": 40
+      },
+      "CHN": {
+        "name": "China",
+        "value": 78.017,
+        "display": "78 years",
+        "year": 2024,
+        "unit": "years",
+        "rank": 64
+      },
+      "COL": {
+        "name": "Colombia",
+        "value": 77.913,
+        "display": "78 years",
+        "year": 2024,
+        "unit": "years",
+        "rank": 68
+      },
+      "COM": {
+        "name": "Comoros",
+        "value": 67.023,
+        "display": "67 years",
+        "year": 2024,
+        "unit": "years",
+        "rank": 171
+      },
+      "COD": {
+        "name": "Congo, Dem. Rep.",
+        "value": 62.074,
+        "display": "62 years",
+        "year": 2024,
+        "unit": "years",
+        "rank": 196
+      },
+      "COG": {
+        "name": "Congo, Rep.",
+        "value": 66.001,
+        "display": "66 years",
+        "year": 2024,
+        "unit": "years",
+        "rank": 180
+      },
+      "CRI": {
+        "name": "Costa Rica",
+        "value": 80.996,
+        "display": "81 years",
+        "year": 2024,
+        "unit": "years",
+        "rank": 42
+      },
+      "CIV": {
+        "name": "Cote d'Ivoire",
+        "value": 62.11,
+        "display": "62 years",
+        "year": 2024,
+        "unit": "years",
+        "rank": 195
+      },
+      "HRV": {
+        "name": "Croatia",
+        "value": 78.9292682926829,
+        "display": "79 years",
+        "year": 2024,
+        "unit": "years",
+        "rank": 54
+      },
+      "CUB": {
+        "name": "Cuba",
+        "value": 78.264,
+        "display": "78 years",
+        "year": 2024,
+        "unit": "years",
+        "rank": 61
+      },
+      "CUW": {
+        "name": "Curacao",
+        "value": 76.989,
+        "display": "77 years",
+        "year": 2024,
+        "unit": "years",
+        "rank": 79
+      },
+      "CYP": {
+        "name": "Cyprus",
+        "value": 81.821,
+        "display": "82 years",
+        "year": 2024,
+        "unit": "years",
+        "rank": 37
+      },
+      "CZE": {
+        "name": "Czechia",
+        "value": 79.9780487804878,
+        "display": "80 years",
+        "year": 2024,
+        "unit": "years",
+        "rank": 48
+      },
+      "DNK": {
+        "name": "Denmark",
+        "value": 82.2536585365854,
+        "display": "82 years",
+        "year": 2024,
+        "unit": "years",
+        "rank": 30
+      },
+      "DJI": {
+        "name": "Djibouti",
+        "value": 66.202,
+        "display": "66 years",
+        "year": 2024,
+        "unit": "years",
+        "rank": 178
+      },
+      "DMA": {
+        "name": "Dominica",
+        "value": 71.294,
+        "display": "71 years",
+        "year": 2024,
+        "unit": "years",
+        "rank": 138
+      },
+      "DOM": {
+        "name": "Dominican Republic",
+        "value": 73.868,
+        "display": "74 years",
+        "year": 2024,
+        "unit": "years",
+        "rank": 109
+      },
+      "ECU": {
+        "name": "Ecuador",
+        "value": 77.579,
+        "display": "78 years",
+        "year": 2024,
+        "unit": "years",
+        "rank": 73
+      },
+      "EGY": {
+        "name": "Egypt, Arab Rep.",
+        "value": 71.806,
+        "display": "72 years",
+        "year": 2024,
+        "unit": "years",
+        "rank": 133
+      },
+      "SLV": {
+        "name": "El Salvador",
+        "value": 72.302,
+        "display": "72 years",
+        "year": 2024,
+        "unit": "years",
+        "rank": 128
+      },
+      "GNQ": {
+        "name": "Equatorial Guinea",
+        "value": 63.906,
+        "display": "64 years",
+        "year": 2024,
+        "unit": "years",
+        "rank": 187
+      },
+      "ERI": {
+        "name": "Eritrea",
+        "value": 68.893,
+        "display": "69 years",
+        "year": 2024,
+        "unit": "years",
+        "rank": 155
+      },
+      "EST": {
+        "name": "Estonia",
+        "value": 79.2951219512195,
+        "display": "79 years",
+        "year": 2024,
+        "unit": "years",
+        "rank": 51
+      },
+      "SWZ": {
+        "name": "Eswatini",
+        "value": 64.264,
+        "display": "64 years",
+        "year": 2024,
+        "unit": "years",
+        "rank": 184
+      },
+      "ETH": {
+        "name": "Ethiopia",
+        "value": 67.603,
+        "display": "68 years",
+        "year": 2024,
+        "unit": "years",
+        "rank": 163
+      },
+      "FRO": {
+        "name": "Faroe Islands",
+        "value": 83.0832463414634,
+        "display": "83 years",
+        "year": 2024,
+        "unit": "years",
+        "rank": 17
+      },
+      "FJI": {
+        "name": "Fiji",
+        "value": 67.463,
+        "display": "67 years",
+        "year": 2024,
+        "unit": "years",
+        "rank": 166
+      },
+      "FIN": {
+        "name": "Finland",
+        "value": 82.3365853658537,
+        "display": "82 years",
+        "year": 2024,
+        "unit": "years",
+        "rank": 27
+      },
+      "FRA": {
+        "name": "France",
+        "value": 82.9804878048781,
+        "display": "83 years",
+        "year": 2024,
+        "unit": "years",
+        "rank": 21
+      },
+      "PYF": {
+        "name": "French Polynesia",
+        "value": 84.192,
+        "display": "84 years",
+        "year": 2024,
+        "unit": "years",
+        "rank": 6
+      },
+      "GAB": {
+        "name": "Gabon",
+        "value": 68.511,
+        "display": "69 years",
+        "year": 2024,
+        "unit": "years",
+        "rank": 158
+      },
+      "GMB": {
+        "name": "Gambia, The",
+        "value": 66.057,
+        "display": "66 years",
+        "year": 2024,
+        "unit": "years",
+        "rank": 179
+      },
+      "GEO": {
+        "name": "Georgia",
+        "value": 74.657,
+        "display": "75 years",
+        "year": 2024,
+        "unit": "years",
+        "rank": 104
+      },
+      "DEU": {
+        "name": "Germany",
+        "value": 80.7926829268293,
+        "display": "81 years",
+        "year": 2024,
+        "unit": "years",
+        "rank": 43
+      },
+      "GHA": {
+        "name": "Ghana",
+        "value": 65.695,
+        "display": "66 years",
+        "year": 2024,
+        "unit": "years",
+        "rank": 181
+      },
+      "GRC": {
+        "name": "Greece",
+        "value": 81.8390243902439,
+        "display": "82 years",
+        "year": 2024,
+        "unit": "years",
+        "rank": 36
+      },
+      "GRL": {
+        "name": "Greenland",
+        "value": 70.2734146341463,
+        "display": "70 years",
+        "year": 2024,
+        "unit": "years",
+        "rank": 145
+      },
+      "GRD": {
+        "name": "Grenada",
+        "value": 75.367,
+        "display": "75 years",
+        "year": 2024,
+        "unit": "years",
+        "rank": 97
+      },
+      "GUM": {
+        "name": "Guam",
+        "value": 77.422,
+        "display": "77 years",
+        "year": 2024,
+        "unit": "years",
+        "rank": 76
+      },
+      "GTM": {
+        "name": "Guatemala",
+        "value": 72.746,
+        "display": "73 years",
+        "year": 2024,
+        "unit": "years",
+        "rank": 121
+      },
+      "GIN": {
+        "name": "Guinea",
+        "value": 60.904,
+        "display": "61 years",
+        "year": 2024,
+        "unit": "years",
+        "rank": 201
+      },
+      "GNB": {
+        "name": "Guinea-Bissau",
+        "value": 64.254,
+        "display": "64 years",
+        "year": 2024,
+        "unit": "years",
+        "rank": 185
+      },
+      "GUY": {
+        "name": "Guyana",
+        "value": 70.319,
+        "display": "70 years",
+        "year": 2024,
+        "unit": "years",
+        "rank": 144
+      },
+      "HTI": {
+        "name": "Haiti",
+        "value": 65.119,
+        "display": "65 years",
+        "year": 2024,
+        "unit": "years",
+        "rank": 182
+      },
+      "HND": {
+        "name": "Honduras",
+        "value": 73.044,
+        "display": "73 years",
+        "year": 2024,
+        "unit": "years",
+        "rank": 118
+      },
+      "HKG": {
+        "name": "Hong Kong SAR, China",
+        "value": 85.3926829268293,
+        "display": "85 years",
+        "year": 2024,
+        "unit": "years",
+        "rank": 2
+      },
+      "HUN": {
+        "name": "Hungary",
+        "value": 76.7243902439025,
+        "display": "77 years",
+        "year": 2024,
+        "unit": "years",
+        "rank": 81
+      },
+      "ISL": {
+        "name": "Iceland",
+        "value": 82.809756097561,
+        "display": "83 years",
+        "year": 2024,
+        "unit": "years",
+        "rank": 23
+      },
+      "IND": {
+        "name": "India",
+        "value": 72.235,
+        "display": "72 years",
+        "year": 2024,
+        "unit": "years",
+        "rank": 130
+      },
+      "IDN": {
+        "name": "Indonesia",
+        "value": 71.288,
+        "display": "71 years",
+        "year": 2024,
+        "unit": "years",
+        "rank": 139
+      },
+      "IRN": {
+        "name": "Iran, Islamic Rep.",
+        "value": 77.854,
+        "display": "78 years",
+        "year": 2024,
+        "unit": "years",
+        "rank": 70
+      },
+      "IRQ": {
+        "name": "Iraq",
+        "value": 72.424,
+        "display": "72 years",
+        "year": 2024,
+        "unit": "years",
+        "rank": 125
+      },
+      "IRL": {
+        "name": "Ireland",
+        "value": 83.009756097561,
+        "display": "83 years",
+        "year": 2024,
+        "unit": "years",
+        "rank": 20
+      },
+      "IMN": {
+        "name": "Isle of Man",
+        "value": 81.091,
+        "display": "81 years",
+        "year": 2024,
+        "unit": "years",
+        "rank": 41
+      },
+      "ISR": {
+        "name": "Israel",
+        "value": 83.1975609756098,
+        "display": "83 years",
+        "year": 2024,
+        "unit": "years",
+        "rank": 14
+      },
+      "ITA": {
+        "name": "Italy",
+        "value": 83.9512195121951,
+        "display": "84 years",
+        "year": 2024,
+        "unit": "years",
+        "rank": 10
+      },
+      "JAM": {
+        "name": "Jamaica",
+        "value": 71.606,
+        "display": "72 years",
+        "year": 2024,
+        "unit": "years",
+        "rank": 135
+      },
+      "JPN": {
+        "name": "Japan",
+        "value": 84.0363414634146,
+        "display": "84 years",
+        "year": 2024,
+        "unit": "years",
+        "rank": 9
+      },
+      "JOR": {
+        "name": "Jordan",
+        "value": 77.981,
+        "display": "78 years",
+        "year": 2024,
+        "unit": "years",
+        "rank": 65
+      },
+      "KAZ": {
+        "name": "Kazakhstan",
+        "value": 74.531,
+        "display": "75 years",
+        "year": 2024,
+        "unit": "years",
+        "rank": 106
+      },
+      "KEN": {
+        "name": "Kenya",
+        "value": 63.834,
+        "display": "64 years",
+        "year": 2024,
+        "unit": "years",
+        "rank": 189
+      },
+      "KIR": {
+        "name": "Kiribati",
+        "value": 66.6,
+        "display": "67 years",
+        "year": 2024,
+        "unit": "years",
+        "rank": 172
+      },
+      "PRK": {
+        "name": "Korea, Dem. People's Rep.",
+        "value": 73.743,
+        "display": "74 years",
+        "year": 2024,
+        "unit": "years",
+        "rank": 112
+      },
+      "KOR": {
+        "name": "Korea, Rep.",
+        "value": 83.6292682926829,
+        "display": "84 years",
+        "year": 2024,
+        "unit": "years",
+        "rank": 12
+      },
+      "KWT": {
+        "name": "Kuwait",
+        "value": 84.580487804878,
+        "display": "85 years",
+        "year": 2024,
+        "unit": "years",
+        "rank": 3
+      },
+      "KGZ": {
+        "name": "Kyrgyz Republic",
+        "value": 72.4,
+        "display": "72 years",
+        "year": 2024,
+        "unit": "years",
+        "rank": 126
+      },
+      "LAO": {
+        "name": "Lao PDR",
+        "value": 69.225,
+        "display": "69 years",
+        "year": 2024,
+        "unit": "years",
+        "rank": 152
+      },
+      "LVA": {
+        "name": "Latvia",
+        "value": 76.4292682926829,
+        "display": "76 years",
+        "year": 2024,
+        "unit": "years",
+        "rank": 88
+      },
+      "LBN": {
+        "name": "Lebanon",
+        "value": 77.945,
+        "display": "78 years",
+        "year": 2024,
+        "unit": "years",
+        "rank": 66
+      },
+      "LSO": {
+        "name": "Lesotho",
+        "value": 57.798,
+        "display": "58 years",
+        "year": 2024,
+        "unit": "years",
+        "rank": 204
+      },
+      "LBR": {
+        "name": "Liberia",
+        "value": 62.324,
+        "display": "62 years",
+        "year": 2024,
+        "unit": "years",
+        "rank": 194
+      },
+      "LBY": {
+        "name": "Libya",
+        "value": 71.121,
+        "display": "71 years",
+        "year": 2024,
+        "unit": "years",
+        "rank": 140
+      },
+      "LIE": {
+        "name": "Liechtenstein",
+        "value": 84.2,
+        "display": "84 years",
+        "year": 2024,
+        "unit": "years",
+        "rank": 5
+      },
+      "LTU": {
+        "name": "Lithuania",
+        "value": 77.1951219512195,
+        "display": "77 years",
+        "year": 2024,
+        "unit": "years",
+        "rank": 78
+      },
+      "LUX": {
+        "name": "Luxembourg",
+        "value": 83.1951219512195,
+        "display": "83 years",
+        "year": 2024,
+        "unit": "years",
+        "rank": 15
+      },
+      "MDG": {
+        "name": "Madagascar",
+        "value": 63.835,
+        "display": "64 years",
+        "year": 2024,
+        "unit": "years",
+        "rank": 188
+      },
+      "MWI": {
+        "name": "Malawi",
+        "value": 67.561,
+        "display": "68 years",
+        "year": 2024,
+        "unit": "years",
+        "rank": 164
+      },
+      "MYS": {
+        "name": "Malaysia",
+        "value": 76.821,
+        "display": "77 years",
+        "year": 2024,
+        "unit": "years",
+        "rank": 80
+      },
+      "MLI": {
+        "name": "Mali",
+        "value": 60.675,
+        "display": "61 years",
+        "year": 2024,
+        "unit": "years",
+        "rank": 202
+      },
+      "MLT": {
+        "name": "Malta",
+        "value": 82.9560975609756,
+        "display": "83 years",
+        "year": 2024,
+        "unit": "years",
+        "rank": 22
+      },
+      "MHL": {
+        "name": "Marshall Islands",
+        "value": 67.075,
+        "display": "67 years",
+        "year": 2024,
+        "unit": "years",
+        "rank": 170
+      },
+      "MRT": {
+        "name": "Mauritania",
+        "value": 68.713,
+        "display": "69 years",
+        "year": 2024,
+        "unit": "years",
+        "rank": 157
+      },
+      "MUS": {
+        "name": "Mauritius",
+        "value": 73.7890243902439,
+        "display": "74 years",
+        "year": 2024,
+        "unit": "years",
+        "rank": 110
+      },
+      "MEX": {
+        "name": "Mexico",
+        "value": 75.264,
+        "display": "75 years",
+        "year": 2024,
+        "unit": "years",
+        "rank": 98
+      },
+      "FSM": {
+        "name": "Micronesia, Fed. Sts.",
+        "value": 67.357,
+        "display": "67 years",
+        "year": 2024,
+        "unit": "years",
+        "rank": 167
+      },
+      "MDA": {
+        "name": "Moldova",
+        "value": 71.332,
+        "display": "71 years",
+        "year": 2024,
+        "unit": "years",
+        "rank": 137
+      },
+      "MNG": {
+        "name": "Mongolia",
+        "value": 72.3980487804878,
+        "display": "72 years",
+        "year": 2024,
+        "unit": "years",
+        "rank": 127
+      },
+      "MNE": {
+        "name": "Montenegro",
+        "value": 77.890243902439,
+        "display": "78 years",
+        "year": 2024,
+        "unit": "years",
+        "rank": 69
+      },
+      "MAR": {
+        "name": "Morocco",
+        "value": 75.493,
+        "display": "75 years",
+        "year": 2024,
+        "unit": "years",
+        "rank": 96
+      },
+      "MOZ": {
+        "name": "Mozambique",
+        "value": 63.797,
+        "display": "64 years",
+        "year": 2024,
+        "unit": "years",
+        "rank": 191
+      },
+      "MMR": {
+        "name": "Myanmar",
+        "value": 67.095,
+        "display": "67 years",
+        "year": 2024,
+        "unit": "years",
+        "rank": 169
+      },
+      "NAM": {
+        "name": "Namibia",
+        "value": 67.516,
+        "display": "68 years",
+        "year": 2024,
+        "unit": "years",
+        "rank": 165
+      },
+      "NPL": {
+        "name": "Nepal",
+        "value": 70.636,
+        "display": "71 years",
+        "year": 2024,
+        "unit": "years",
+        "rank": 143
+      },
+      "NLD": {
+        "name": "Netherlands",
+        "value": 81.9658536585366,
+        "display": "82 years",
+        "year": 2024,
+        "unit": "years",
+        "rank": 34
+      },
+      "NCL": {
+        "name": "New Caledonia",
+        "value": 78.921,
+        "display": "79 years",
+        "year": 2024,
+        "unit": "years",
+        "rank": 55
+      },
+      "NZL": {
+        "name": "New Zealand",
+        "value": 82.009756097561,
+        "display": "82 years",
+        "year": 2024,
+        "unit": "years",
+        "rank": 32
+      },
+      "NIC": {
+        "name": "Nicaragua",
+        "value": 75.1,
+        "display": "75 years",
+        "year": 2024,
+        "unit": "years",
+        "rank": 99
+      },
+      "NER": {
+        "name": "Niger",
+        "value": 61.433,
+        "display": "61 years",
+        "year": 2024,
+        "unit": "years",
+        "rank": 198
+      },
+      "NGA": {
+        "name": "Nigeria",
+        "value": 54.635,
+        "display": "55 years",
+        "year": 2024,
+        "unit": "years",
+        "rank": 208
+      },
+      "MKD": {
+        "name": "North Macedonia",
+        "value": 76.6165853658537,
+        "display": "77 years",
+        "year": 2024,
+        "unit": "years",
+        "rank": 83
+      },
+      "MNP": {
+        "name": "Northern Mariana Islands",
+        "value": 78.947,
+        "display": "79 years",
+        "year": 2024,
+        "unit": "years",
+        "rank": 53
+      },
+      "NOR": {
+        "name": "Norway",
+        "value": 83.1609756097561,
+        "display": "83 years",
+        "year": 2024,
+        "unit": "years",
+        "rank": 16
+      },
+      "OMN": {
+        "name": "Oman",
+        "value": 80.246,
+        "display": "80 years",
+        "year": 2024,
+        "unit": "years",
+        "rank": 47
+      },
+      "PAK": {
+        "name": "Pakistan",
+        "value": 67.799,
+        "display": "68 years",
+        "year": 2024,
+        "unit": "years",
+        "rank": 162
+      },
+      "PLW": {
+        "name": "Palau",
+        "value": 69.383,
+        "display": "69 years",
+        "year": 2024,
+        "unit": "years",
+        "rank": 150
+      },
+      "PAN": {
+        "name": "Panama",
+        "value": 79.775,
+        "display": "80 years",
+        "year": 2024,
+        "unit": "years",
+        "rank": 50
+      },
+      "PNG": {
+        "name": "Papua New Guinea",
+        "value": 66.256,
+        "display": "66 years",
+        "year": 2024,
+        "unit": "years",
+        "rank": 177
+      },
+      "PRY": {
+        "name": "Paraguay",
+        "value": 73.982,
+        "display": "74 years",
+        "year": 2024,
+        "unit": "years",
+        "rank": 108
+      },
+      "PER": {
+        "name": "Peru",
+        "value": 77.941,
+        "display": "78 years",
+        "year": 2024,
+        "unit": "years",
+        "rank": 67
+      },
+      "PHL": {
+        "name": "Philippines",
+        "value": 69.946,
+        "display": "70 years",
+        "year": 2024,
+        "unit": "years",
+        "rank": 147
+      },
+      "POL": {
+        "name": "Poland",
+        "value": 78.409756097561,
+        "display": "78 years",
+        "year": 2024,
+        "unit": "years",
+        "rank": 57
+      },
+      "PRT": {
+        "name": "Portugal",
+        "value": 82.3829268292683,
+        "display": "82 years",
+        "year": 2024,
+        "unit": "years",
+        "rank": 26
+      },
+      "PRI": {
+        "name": "Puerto Rico (US)",
+        "value": 81.902,
+        "display": "82 years",
+        "year": 2024,
+        "unit": "years",
+        "rank": 35
+      },
+      "QAT": {
+        "name": "Qatar",
+        "value": 82.522,
+        "display": "83 years",
+        "year": 2024,
+        "unit": "years",
+        "rank": 24
+      },
+      "ROU": {
+        "name": "Romania",
+        "value": 76.4585365853659,
+        "display": "76 years",
+        "year": 2024,
+        "unit": "years",
+        "rank": 87
+      },
+      "RUS": {
+        "name": "Russian Federation",
+        "value": 73.4404878048781,
+        "display": "73 years",
+        "year": 2024,
+        "unit": "years",
+        "rank": 115
+      },
+      "RWA": {
+        "name": "Rwanda",
+        "value": 68.017,
+        "display": "68 years",
+        "year": 2024,
+        "unit": "years",
+        "rank": 160
+      },
+      "WSM": {
+        "name": "Samoa",
+        "value": 71.826,
+        "display": "72 years",
+        "year": 2024,
+        "unit": "years",
+        "rank": 132
+      },
+      "SMR": {
+        "name": "San Marino",
+        "value": 85.817,
+        "display": "86 years",
+        "year": 2024,
+        "unit": "years",
+        "rank": 1
+      },
+      "STP": {
+        "name": "Sao Tome and Principe",
+        "value": 69.905,
+        "display": "70 years",
+        "year": 2024,
+        "unit": "years",
+        "rank": 148
+      },
+      "SAU": {
+        "name": "Saudi Arabia",
+        "value": 78.982,
+        "display": "79 years",
+        "year": 2024,
+        "unit": "years",
+        "rank": 52
+      },
+      "SEN": {
+        "name": "Senegal",
+        "value": 68.924,
+        "display": "69 years",
+        "year": 2024,
+        "unit": "years",
+        "rank": 154
+      },
+      "SRB": {
+        "name": "Serbia",
+        "value": 75.9682926829268,
+        "display": "76 years",
+        "year": 2024,
+        "unit": "years",
+        "rank": 93
+      },
+      "SYC": {
+        "name": "Seychelles",
+        "value": 76.2951219512195,
+        "display": "76 years",
+        "year": 2024,
+        "unit": "years",
+        "rank": 90
+      },
+      "SLE": {
+        "name": "Sierra Leone",
+        "value": 61.964,
+        "display": "62 years",
+        "year": 2024,
+        "unit": "years",
+        "rank": 197
+      },
+      "SGP": {
+        "name": "Singapore",
+        "value": 83.3463414634146,
+        "display": "83 years",
+        "year": 2024,
+        "unit": "years",
+        "rank": 13
+      },
+      "SVK": {
+        "name": "Slovak Republic",
+        "value": 78.3707317073171,
+        "display": "78 years",
+        "year": 2024,
+        "unit": "years",
+        "rank": 58
+      },
+      "SVN": {
+        "name": "Slovenia",
+        "value": 82.2853658536585,
+        "display": "82 years",
+        "year": 2024,
+        "unit": "years",
+        "rank": 29
+      },
+      "SLB": {
+        "name": "Solomon Islands",
+        "value": 70.694,
+        "display": "71 years",
+        "year": 2024,
+        "unit": "years",
+        "rank": 142
+      },
+      "SOM": {
+        "name": "Somalia, Fed. Rep.",
+        "value": 58.967,
+        "display": "59 years",
+        "year": 2024,
+        "unit": "years",
+        "rank": 203
+      },
+      "ZAF": {
+        "name": "South Africa",
+        "value": 66.312,
+        "display": "66 years",
+        "year": 2024,
+        "unit": "years",
+        "rank": 175
+      },
+      "SSD": {
+        "name": "South Sudan",
+        "value": 57.738,
+        "display": "58 years",
+        "year": 2024,
+        "unit": "years",
+        "rank": 205
+      },
+      "ESP": {
+        "name": "Spain",
+        "value": 83.8878048780488,
+        "display": "84 years",
+        "year": 2024,
+        "unit": "years",
+        "rank": 11
+      },
+      "LKA": {
+        "name": "Sri Lanka",
+        "value": 77.672,
+        "display": "78 years",
+        "year": 2024,
+        "unit": "years",
+        "rank": 72
+      },
+      "KNA": {
+        "name": "St. Kitts and Nevis",
+        "value": 72.281,
+        "display": "72 years",
+        "year": 2024,
+        "unit": "years",
+        "rank": 129
+      },
+      "LCA": {
+        "name": "St. Lucia",
+        "value": 72.846,
+        "display": "73 years",
+        "year": 2024,
+        "unit": "years",
+        "rank": 120
+      },
+      "MAF": {
+        "name": "St. Martin (French part)",
+        "value": 80.438,
+        "display": "80 years",
+        "year": 2024,
+        "unit": "years",
+        "rank": 46
+      },
+      "VCT": {
+        "name": "St. Vincent and the Grenadines",
+        "value": 71.382,
+        "display": "71 years",
+        "year": 2024,
+        "unit": "years",
+        "rank": 136
+      },
+      "SDN": {
+        "name": "Sudan",
+        "value": 66.521,
+        "display": "67 years",
+        "year": 2024,
+        "unit": "years",
+        "rank": 174
+      },
+      "SUR": {
+        "name": "Suriname",
+        "value": 73.757,
+        "display": "74 years",
+        "year": 2024,
+        "unit": "years",
+        "rank": 111
+      },
+      "SWE": {
+        "name": "Sweden",
+        "value": 84.0634146341463,
+        "display": "84 years",
+        "year": 2024,
+        "unit": "years",
+        "rank": 8
+      },
+      "CHE": {
+        "name": "Switzerland",
+        "value": 84.4073170731707,
+        "display": "84 years",
+        "year": 2024,
+        "unit": "years",
+        "rank": 4
+      },
+      "SYR": {
+        "name": "Syrian Arab Republic",
+        "value": 72.56,
+        "display": "73 years",
+        "year": 2024,
+        "unit": "years",
+        "rank": 123
+      },
+      "TJK": {
+        "name": "Tajikistan",
+        "value": 71.927,
+        "display": "72 years",
+        "year": 2024,
+        "unit": "years",
+        "rank": 131
+      },
+      "TZA": {
+        "name": "Tanzania",
+        "value": 67.212,
+        "display": "67 years",
+        "year": 2024,
+        "unit": "years",
+        "rank": 168
+      },
+      "THA": {
+        "name": "Thailand",
+        "value": 76.564,
+        "display": "77 years",
+        "year": 2024,
+        "unit": "years",
+        "rank": 84
+      },
+      "TLS": {
+        "name": "Timor-Leste",
+        "value": 67.904,
+        "display": "68 years",
+        "year": 2024,
+        "unit": "years",
+        "rank": 161
+      },
+      "TGO": {
+        "name": "Togo",
+        "value": 62.935,
+        "display": "63 years",
+        "year": 2024,
+        "unit": "years",
+        "rank": 193
+      },
+      "TON": {
+        "name": "Tonga",
+        "value": 73.07,
+        "display": "73 years",
+        "year": 2024,
+        "unit": "years",
+        "rank": 117
+      },
+      "TTO": {
+        "name": "Trinidad and Tobago",
+        "value": 73.617,
+        "display": "74 years",
+        "year": 2024,
+        "unit": "years",
+        "rank": 114
+      },
+      "TUN": {
+        "name": "Tunisia",
+        "value": 76.711,
+        "display": "77 years",
+        "year": 2024,
+        "unit": "years",
+        "rank": 82
+      },
+      "TUR": {
+        "name": "Turkiye",
+        "value": 77.421,
+        "display": "77 years",
+        "year": 2024,
+        "unit": "years",
+        "rank": 77
+      },
+      "TKM": {
+        "name": "Turkmenistan",
+        "value": 70.201,
+        "display": "70 years",
+        "year": 2024,
+        "unit": "years",
+        "rank": 146
+      },
+      "TCA": {
+        "name": "Turks and Caicos Islands",
+        "value": 78.181,
+        "display": "78 years",
+        "year": 2024,
+        "unit": "years",
+        "rank": 62
+      },
+      "UGA": {
+        "name": "Uganda",
+        "value": 68.487,
+        "display": "68 years",
+        "year": 2024,
+        "unit": "years",
+        "rank": 159
+      },
+      "UKR": {
+        "name": "Ukraine",
+        "value": 74.692,
+        "display": "75 years",
+        "year": 2024,
+        "unit": "years",
+        "rank": 103
+      },
+      "ARE": {
+        "name": "United Arab Emirates",
+        "value": 83.069,
+        "display": "83 years",
+        "year": 2024,
+        "unit": "years",
+        "rank": 18
+      },
+      "GBR": {
+        "name": "United Kingdom",
+        "value": 81.3868536585366,
+        "display": "81 years",
+        "year": 2024,
+        "unit": "years",
+        "rank": 39
+      },
+      "USA": {
+        "name": "United States",
+        "value": 78.890243902439,
+        "display": "79 years",
+        "year": 2024,
+        "unit": "years",
+        "rank": 56
+      },
+      "URY": {
+        "name": "Uruguay",
+        "value": 78.287,
+        "display": "78 years",
+        "year": 2024,
+        "unit": "years",
+        "rank": 60
+      },
+      "UZB": {
+        "name": "Uzbekistan",
+        "value": 72.528,
+        "display": "73 years",
+        "year": 2024,
+        "unit": "years",
+        "rank": 124
+      },
+      "VUT": {
+        "name": "Vanuatu",
+        "value": 71.654,
+        "display": "72 years",
+        "year": 2024,
+        "unit": "years",
+        "rank": 134
+      },
+      "VEN": {
+        "name": "Venezuela, RB",
+        "value": 72.673,
+        "display": "73 years",
+        "year": 2024,
+        "unit": "years",
+        "rank": 122
+      },
+      "VNM": {
+        "name": "Viet Nam",
+        "value": 74.736,
+        "display": "75 years",
+        "year": 2024,
+        "unit": "years",
+        "rank": 101
+      },
+      "VIR": {
+        "name": "Virgin Islands (U.S.)",
+        "value": 80.7707317073171,
+        "display": "81 years",
+        "year": 2024,
+        "unit": "years",
+        "rank": 44
+      },
+      "PSE": {
+        "name": "West Bank and Gaza",
+        "value": 69.213,
+        "display": "69 years",
+        "year": 2024,
+        "unit": "years",
+        "rank": 153
+      },
+      "YEM": {
+        "name": "Yemen, Rep.",
+        "value": 69.439,
+        "display": "69 years",
+        "year": 2024,
+        "unit": "years",
+        "rank": 149
+      },
+      "ZMB": {
+        "name": "Zambia",
+        "value": 66.528,
+        "display": "67 years",
+        "year": 2024,
+        "unit": "years",
+        "rank": 173
+      },
+      "ZWE": {
+        "name": "Zimbabwe",
+        "value": 63.064,
+        "display": "63 years",
+        "year": 2024,
+        "unit": "years",
+        "rank": 192
+      }
+    }
+  },
+  "review": {
+    "errors": [],
+    "claims": [
+      {
+        "surface": "title",
+        "text": "47 places Where Life Expectancy Reaches 80",
+        "isos": [],
+        "support": "47 entities are at or above 80.0 years.",
+        "evidence": {}
+      },
+      {
+        "surface": "beat_0",
+        "text": "Only 47 of 208 countries and territories see babies expected to live past 80.",
+        "isos": [],
+        "support": "47 entities are at or above 80.0 years out of 208 total.",
+        "evidence": {}
+      },
+      {
+        "surface": "beat_3",
+        "text": "Japan hits 84 years, while Switzerland also reaches 84 years.",
+        "isos": [
+          "JPN",
+          "CHE"
+        ],
+        "support": "Japan value is 84.036, Switzerland value is 84.407.",
+        "evidence": {
+          "JPN": {
+            "name": "Japan",
+            "value": 84.0363414634146,
+            "display": "84 years",
+            "year": 2024,
+            "unit": "years",
+            "rank": 9
+          },
+          "CHE": {
+            "name": "Switzerland",
+            "value": 84.4073170731707,
+            "display": "84 years",
+            "year": 2024,
+            "unit": "years",
+            "rank": 4
+          }
+        }
+      },
+      {
+        "surface": "beat_4",
+        "text": "India is at 72 years, and the USA is at 79 years.",
+        "isos": [
+          "IND",
+          "USA"
+        ],
+        "support": "India value is 72.235, USA value is 78.890.",
+        "evidence": {
+          "IND": {
+            "name": "India",
+            "value": 72.235,
+            "display": "72 years",
+            "year": 2024,
+            "unit": "years",
+            "rank": 130
+          },
+          "USA": {
+            "name": "United States",
+            "value": 78.890243902439,
+            "display": "79 years",
+            "year": 2024,
+            "unit": "years",
+            "rank": 56
+          }
+        }
+      },
+      {
+        "surface": "beat_5",
+        "text": "Nigeria sits at 55 years",
+        "isos": [
+          "NGA"
+        ],
+        "support": "Nigeria value is 54.635.",
+        "evidence": {
+          "NGA": {
+            "name": "Nigeria",
+            "value": 54.635,
+            "display": "55 years",
+            "year": 2024,
+            "unit": "years",
+            "rank": 208
+          }
+        }
+      },
+      {
+        "surface": "title",
+        "text": "47 places Where Life Expectancy Reaches 80",
+        "isos": [],
+        "support": "47 entities are at or above 80.0 years.",
+        "method": "complete-surface-check",
+        "evidence": {}
+      },
+      {
+        "surface": "hook",
+        "text": "LIVING PAST 80",
+        "isos": [],
+        "support": "Matches the theme of the data.",
+        "method": "complete-surface-check",
+        "evidence": {}
+      },
+      {
+        "surface": "description",
+        "text": "A global look at where life expectancy at birth meets or exceeds 80 years in 2024.",
+        "isos": [],
+        "support": "Matches the definition provided.",
+        "method": "complete-surface-check",
+        "evidence": {}
+      },
+      {
+        "surface": "beat_0",
+        "text": "Only 47 of 208 countries and territories see babies expected to live past 80.",
+        "isos": [],
+        "support": "47 entities are at or above 80.0 years out of 208 total.",
+        "method": "complete-surface-check",
+        "evidence": {}
+      },
+      {
+        "surface": "beat_1",
+        "text": "Yellow shows 80 plus years, while dark blue is under 80.",
+        "isos": [],
+        "support": "Standard visualization description.",
+        "method": "complete-surface-check",
+        "evidence": {}
+      },
+      {
+        "surface": "beat_2",
+        "text": "Life expectancy indicates the number of years a newborn would live if mortality patterns stay the same.",
+        "isos": [],
+        "support": "Matches the provided definition.",
+        "method": "complete-surface-check",
+        "evidence": {}
+      },
+      {
+        "surface": "beat_3",
+        "text": "Japan hits 84 years, while Switzerland also reaches 84 years.",
+        "isos": [
+          "JPN",
+          "CHE"
+        ],
+        "support": "Japan value is 84.036, Switzerland value is 84.407.",
+        "method": "complete-surface-check",
+        "evidence": {
+          "JPN": {
+            "name": "Japan",
+            "value": 84.0363414634146,
+            "display": "84 years",
+            "year": 2024,
+            "unit": "years",
+            "rank": 9
+          },
+          "CHE": {
+            "name": "Switzerland",
+            "value": 84.4073170731707,
+            "display": "84 years",
+            "year": 2024,
+            "unit": "years",
+            "rank": 4
+          }
+        }
+      },
+      {
+        "surface": "beat_4",
+        "text": "India is at 72 years, and the USA is at 79 years.",
+        "isos": [
+          "IND",
+          "USA"
+        ],
+        "support": "India value is 72.235, USA value is 78.890.",
+        "method": "complete-surface-check",
+        "evidence": {
+          "IND": {
+            "name": "India",
+            "value": 72.235,
+            "display": "72 years",
+            "year": 2024,
+            "unit": "years",
+            "rank": 130
+          },
+          "USA": {
+            "name": "United States",
+            "value": 78.890243902439,
+            "display": "79 years",
+            "year": 2024,
+            "unit": "years",
+            "rank": 56
+          }
+        }
+      },
+      {
+        "surface": "beat_5",
+        "text": "Nigeria sits at 55 years, the world's lowest among these countries.",
+        "isos": [
+          "NGA"
+        ],
+        "support": "Nigeria value is 54.635.",
+        "method": "complete-surface-check",
+        "evidence": {
+          "NGA": {
+            "name": "Nigeria",
+            "value": 54.635,
+            "display": "55 years",
+            "year": 2024,
+            "unit": "years",
+            "rank": 208
+          }
+        }
+      },
+      {
+        "surface": "beat_6",
+        "text": "So where does your country fall on this map?",
+        "isos": [],
+        "support": "Standard prompt.",
+        "method": "complete-surface-check",
+        "evidence": {}
+      },
+      {
+        "surface": "card_6",
+        "text": [
+          "Where is your country?",
+          "World Bank 2024"
+        ],
+        "isos": [],
+        "support": "Matches the provided metadata.",
+        "method": "complete-surface-check",
+        "evidence": {}
+      }
+    ],
+    "surface_checks": {
+      "title": {
+        "supported": true,
+        "reason": "47 entities are at or above 80.0 years.",
+        "isos": []
+      },
+      "hook": {
+        "supported": true,
+        "reason": "Matches the theme of the data.",
+        "isos": []
+      },
+      "description": {
+        "supported": true,
+        "reason": "Matches the definition provided.",
+        "isos": []
+      },
+      "beat_0": {
+        "supported": true,
+        "reason": "47 entities are at or above 80.0 years out of 208 total.",
+        "isos": []
+      },
+      "beat_1": {
+        "supported": true,
+        "reason": "Standard visualization description.",
+        "isos": []
+      },
+      "beat_2": {
+        "supported": true,
+        "reason": "Matches the provided definition.",
+        "isos": []
+      },
+      "beat_3": {
+        "supported": true,
+        "reason": "Japan value is 84.036, Switzerland value is 84.407.",
+        "isos": [
+          "JPN",
+          "CHE"
+        ]
+      },
+      "beat_4": {
+        "supported": true,
+        "reason": "India value is 72.235, USA value is 78.890.",
+        "isos": [
+          "IND",
+          "USA"
+        ]
+      },
+      "beat_5": {
+        "supported": true,
+        "reason": "Nigeria value is 54.635.",
+        "isos": [
+          "NGA"
+        ]
+      },
+      "beat_6": {
+        "supported": true,
+        "reason": "Standard prompt.",
+        "isos": []
+      },
+      "card_6": {
+        "supported": true,
+        "reason": "Matches the provided metadata.",
+        "isos": []
+      }
+    },
+    "warnings": [
+      {
+        "surface": "beat_5",
+        "claim": "Nigeria sits at 55 years, the world's lowest among these countries.",
+        "reason": "Nigeria has the lowest life expectancy in the provided dataset (55 years), but the phrasing 'among these countries' is ambiguous and potentially misleading as it is the lowest of the entire universe of 208 entities.",
+        "severity": "info"
+      }
+    ]
+  },
+  "script_sha256": "113975d4ce5f85bf1fb3efa52c6985a91b6c1543f4aa8af4ebdd9e3126e1a0e6",
+  "data_sha256": "afd2461484b9cd3941c411d3bfa6656cfe196f61c5b89de4a41f884ed3325920",
+  "reviewer_model": "gemini-3.1-flash-lite"
+}

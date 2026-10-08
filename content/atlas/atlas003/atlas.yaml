@@ -1,9 +1,8 @@
 id: atlas003
-title: Most of the world is now below replacement fertility
+title: Below the fertility benchmark in 2024
 format: rank_ladder
-hook_text: THE 2.1 LINE
-description: Atlas in Numbers looks at fertility rates across 208 countries, revealing that most of the world now
-  sits below the 2.1 replacement level.
+hook_text: BELOW 2.1
+description: An exploration of birth rates across 208 countries and territories using 2024 World Bank data.
 hashtags:
 - '#maps'
 - '#geography'
@@ -25,26 +24,26 @@ scale:
   - Below 2.1
 value_format: '{v:.1f}'
 beats:
-- text: Out of 208 countries, 113 are now below 2.1.
-- text: Yellow shows 2.1 or more. Dark blue shows below 2.1. The median country sits at 1.9.
-- text: South Korea sits at 0.7, Japan is 1.1, and Chad reaches 6.0.
+- text: 113 of 208 mapped countries and territories sit below the 2.1 replacement benchmark.
+- text: Yellow marks 2.1 or more and dark blue marks below 2.1, with 113 below that benchmark.
+- text: South Korea sits at 0.7 births per woman.
   shot:
-    kind: rank
-    isos:
-    - KOR
-    - JPN
-    - TCD
-- text: India stands at 2.0, while the USA records 1.6 and China drops to 1.0.
+    kind: country
+    iso: KOR
+- text: Nigeria sits at 4.4 births per woman.
   shot:
-    kind: group
-    isos:
-    - IND
-    - USA
-    - CHN
-- text: This number represents the children a woman would have if she lived through her childbearing years.
-- text: So where does your country land on this map?
+    kind: country
+    iso: NGA
+- text: India sits at 2.0 births per woman.
+  shot:
+    kind: country
+    iso: IND
+- text: Total fertility rate represents the number of children that would be born to a woman if she were to live
+    to the end of her childbearing years and bear children in accordance with age-specific fertility rates of the
+    specified year.
+- text: So where does your country rank on the map?
   shot:
     kind: card
     lines:
-    - Where is your country?
-    - World Bank 2024
+    - So where is your country?
+    - Births per woman, World Bank, 2024

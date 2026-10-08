@@ -1,7 +1,8 @@
 id: atlas002
-title: 45 countries are shrinking in 2025
-hook_text: FORTY FIVE COUNTRIES
-description: An overview of annual population growth rates across 208 countries showing which nations are shrinking.
+title: 45 places with Falling Populations
+hook_text: 45 PLACES SHRINKING
+description: Discover which countries and territories have negative population growth in 2025 according to World
+  Bank data.
 hashtags:
 - '#maps'
 - '#geography'
@@ -20,29 +21,32 @@ scale:
   labels:
   - Growing
   - Shrinking
-value_format: '{v:.1f}%'
+value_format: '{v:.2f}%'
 beats:
-- text: In 2025, 45 countries are shrinking.
-- text: Yellow is growing at or above 0, and dark blue is shrinking.
-- text: Among these countries, Moldova sits at the bottom, shrinking by 1.8%.
+- text: Out of 208 countries and territories, 45 have falling populations.
+- text: On this map, yellow marks 163 countries and territories growing at or above 0, and dark blue marks 45 shrinking
+    countries.
+- text: Moldova sits at the bottom, shrinking by 1.75%.
   shot:
     kind: country
     iso: MDA
-- text: China is also shrinking by 0.2%, while India sits at 0.9%.
+- text: China is also shrinking by 0.17%, while Japan is shrinking by 0.49%.
   shot:
     kind: group
     isos:
     - CHN
-    - IND
-- text: UAE leads all 208 countries with data at 4.7%.
+    - JPN
+- text: India and the USA are growing, with India at 0.89% and the USA at 0.52%.
   shot:
-    kind: country
-    iso: ARE
-- text: This measures the annual growth rate of the midyear population counting all residents regardless of legal
-    status.
-- text: So where does your country rank?
+    kind: group
+    isos:
+    - IND
+    - USA
+- text: This measures the annual rate of population change by counting all residents, regardless of legal status
+    or citizenship.
+- text: So where is your country?
   shot:
     kind: card
     lines:
-    - Where is your country?
+    - So where is your country?
     - World Bank 2025
