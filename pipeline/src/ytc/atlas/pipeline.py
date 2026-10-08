@@ -1,19 +1,30 @@
-"""The Atlas lane end to end: pick a topic, snapshot its data, write and check the script, render, schedule.
+"""The Atlas lane's producer: pick a topic, snapshot its data, write and check the script, render, and park the
+video for the publisher.
 
 Each Short lives in content/atlas/<id>/ with atlas.yaml (the script), data.json (the exact numbers it was checked
-against) and publish.json once Buffer has it. The catalogue is strategy/ATLAS-TOPICS.json.
+against), ready.json once its video is parked in the Modal outbox, and publish.json once the publisher has
+scheduled it. The catalogue is strategy/ATLAS-TOPICS.json.
+
+The producer never holds the Buffer or Cloudinary keys. The publisher (`control/atlas.py` in
+ashivam-dot/history-last-hours-control) reads ready.json from this repo, fetches the parked video, schedules it, and
+records the post in its own atlas/published.json, which `sync` copies back here.
 """
 
 from __future__ import annotations
 
+import hashlib
 import json
 import logging
 import os
 import re
+import shutil
+import time
 from datetime import datetime, timezone
 from pathlib import Path
 
-from . import publish, render, writer
+import requests
+
+from . import render, writer
 from .data import Dataset, fetch
 from .episode import AtlasEpisode
 
@@ -22,9 +33,17 @@ log = logging.getLogger(__name__)
 ROOT = Path(__file__).resolve().parents[4]
 TOPICS = ROOT / "strategy" / "ATLAS-TOPICS.json"
 EPISODES = ROOT / "content" / "atlas"
-BULKY = ("short.mp4", "mix.wav", "mix_raw.wav", "narration.wav", "work")
-# Without these a run still writes and renders the next Short, then waits for them before making another.
-PUBLISH_KEYS = ("BUFFER_API_KEY", "CLOUDINARY_URL")
+BULKY = ("short.mp4", "mix.wav", "mix_raw.wav", "mix_tamed.wav", "narration.wav", "work", ".sfx")
+OUTBOX_VOLUME = "creature-receipts-outbox"
+# Rendered Shorts kept waiting for the publisher: more than a day of SLOTS, so a failed run costs no post.
+RESERVE = 4
+PUBLISHED_URL = ("https://raw.githubusercontent.com/ashivam-dot/history-last-hours-control/main/"
+                 "atlas/published.json")
+EPISODE_ID = re.compile(r"atlas\d{3}")
+
+
+def outbox() -> Path:
+    return Path(os.environ.get("ATLAS_OUTBOX", "/outbox"))
 
 
 def _catalogue() -> dict:
@@ -37,6 +56,11 @@ def _mark(topic_id: str, status: str) -> None:
         if t["id"] == topic_id:
             t["status"] = status
     TOPICS.write_text(json.dumps(cat, indent=1, ensure_ascii=False) + "\n", encoding="utf-8")
+
+
+def _topic_of(episode_id: str) -> dict | None:
+    return next((t for t in _catalogue()["topics"]
+                 if t.get("status", "").split(":", 1)[-1] == episode_id), None)
 
 
 def next_id() -> str:
@@ -68,18 +92,7 @@ def make(topic: dict, episode_id: str) -> tuple[AtlasEpisode, Path, Dataset, Pat
     return ep, folder, ds, video
 
 
-def _scheduled(now: datetime) -> list[dict]:
-    found = []
-    for path in EPISODES.glob("atlas*/publish.json"):
-        record = json.loads(path.read_text(encoding="utf-8"))
-        if record.get("due_at") and datetime.fromisoformat(record["due_at"]) > now:
-            found.append(record)
-    return found
-
-
 def _tidy(folder: Path) -> None:
-    import shutil
-
     for name in BULKY:
         path = folder / name
         if path.is_dir():
@@ -88,41 +101,109 @@ def _tidy(folder: Path) -> None:
             path.unlink(missing_ok=True)
 
 
-def run(publish_it: bool = True) -> dict:
-    """One daily run: make and schedule the next Short unless one is already waiting in Buffer."""
-    now = datetime.now(timezone.utc)
-    if publish_it and (queued := _scheduled(now)):
-        return {"outcome": "queued", "next": queued[0]["id"], "due_at": queued[0]["due_at"]}
-    pending = next((p.parent for p in sorted(EPISODES.glob("atlas*/atlas.yaml"))
-                    if re.fullmatch(r"atlas\d{3}", p.parent.name) and not (p.parent / "publish.json").exists()), None)
-    missing = [k for k in PUBLISH_KEYS if not os.environ.get(k)]
-    if publish_it and missing and pending:
-        return {"outcome": "no_keys", "missing": missing, "waiting": pending.name}
-    publish_it = publish_it and not missing
-    if pending:
-        episode_id = pending.name
-        topic = next(t for t in _catalogue()["topics"] if t.get("status") == f"making:{episode_id}")
+def park(ep: AtlasEpisode, folder: Path, video: Path, topic_id: str) -> dict:
+    """Copy the video into the outbox under its hash and record where it is in ready.json."""
+    with video.open("rb") as fh:
+        sha = hashlib.file_digest(fh, "sha256").hexdigest()
+    rel = f"atlas/{ep.id}-{sha}.mp4"
+    target = outbox() / rel
+    target.parent.mkdir(parents=True, exist_ok=True)
+    shutil.copyfile(video, target)
+    with target.open("rb") as fh:
+        if hashlib.file_digest(fh, "sha256").hexdigest() != sha:
+            raise RuntimeError(f"{ep.id}: the parked copy differs from the render")
+    record = {"id": ep.id, "title": ep.title, "topic": topic_id, "media_sha256": sha, "bytes": target.stat().st_size,
+              "modal_volume": OUTBOX_VOLUME, "modal_path": rel,
+              "rendered_at": datetime.now(timezone.utc).isoformat(timespec="seconds")}
+    (folder / "ready.json").write_text(json.dumps(record, indent=2) + "\n", encoding="utf-8")
+    _tidy(folder)
+    return record
+
+
+def ready() -> list[Path]:
+    return sorted(p.parent for p in EPISODES.glob("atlas*/ready.json")
+                  if EPISODE_ID.fullmatch(p.parent.name) and not (p.parent / "publish.json").exists())
+
+
+def published() -> dict:
+    try:
+        response = requests.get(PUBLISHED_URL, timeout=30)
+        if response.status_code == 404:
+            return {}
+        response.raise_for_status()
+        return response.json()
+    except (requests.RequestException, ValueError) as err:
+        log.warning("couldn't read the publisher's records: %s", err)
+        return {}
+
+
+def sync(records: dict | None = None) -> list[str]:
+    """Copy each post the publisher made into its Short's publish.json, mark the topic used, and free the parked
+    video."""
+    done = []
+    for episode_id, record in (records if records is not None else published()).items():
+        folder = EPISODES / episode_id
+        if not EPISODE_ID.fullmatch(episode_id) or not folder.is_dir() or (folder / "publish.json").exists():
+            continue
+        (folder / "publish.json").write_text(json.dumps(record, indent=2) + "\n", encoding="utf-8")
+        if topic := _topic_of(episode_id):
+            _mark(topic["id"], f"used:{episode_id}")
+        parked = folder / "ready.json"
+        if parked.exists():
+            (outbox() / json.loads(parked.read_text(encoding="utf-8"))["modal_path"]).unlink(missing_ok=True)
+        done.append(episode_id)
+    return done
+
+
+def _pending() -> tuple[str, dict] | None:
+    """A Short that was started (topic marked making:<id>) but never parked."""
+    for t in _catalogue()["topics"]:
+        status = t.get("status", "")
+        if status.startswith("making:"):
+            episode_id = status.split(":", 1)[1]
+            if not (EPISODES / episode_id / "ready.json").exists():
+                return episode_id, t
+    return None
+
+
+def make_next() -> dict:
+    if found := _pending():
+        episode_id, topic = found
     else:
         topic = pick()
         if topic is None:
             return {"outcome": "no_topics"}
         episode_id = next_id()
         _mark(topic["id"], f"making:{episode_id}")
+    now = datetime.now(timezone.utc)
     try:
-        ep, folder, ds, video = make(topic, episode_id)
+        ep, folder, _, video = make(topic, episode_id)
+        record = park(ep, folder, video, topic["id"])
     except Exception as err:
         log.exception("%s failed", episode_id)
         _mark(topic["id"], f"failed:{type(err).__name__}")
         failed = EPISODES / episode_id
         if failed.exists():
             _tidy(failed)
-            (failed / "failed.json").write_text(json.dumps({"topic": topic["id"], "error": str(err)[:800]}), encoding="utf-8")
+            (failed / "failed.json").write_text(json.dumps({"topic": topic["id"], "error": str(err)[:800]}),
+                                                encoding="utf-8")
             failed.rename(failed.with_name(f"{episode_id}-failed-{now:%Y%m%d%H%M}"))
         return {"outcome": "failed", "id": episode_id, "topic": topic["id"], "error": str(err)[:400]}
-    record = publish.schedule(ep, folder, ds, video) if publish_it else {}
-    if publish_it:
-        _mark(topic["id"], f"used:{episode_id}")
-        _tidy(folder)
-    return {"outcome": "scheduled" if publish_it else ("no_keys" if missing else "rendered"), "id": episode_id,
-            "topic": topic["id"], "title": ep.title, "video": str(video),
-            **({"due_at": record.get("due_at")} if record else {}), **({"missing": missing} if missing else {})}
+    _mark(topic["id"], f"ready:{episode_id}")
+    return {"outcome": "ready", "id": episode_id, "topic": topic["id"], "title": ep.title, "bytes": record["bytes"]}
+
+
+def run(reserve: int = RESERVE, minutes: float = 40, max_failures: int = 2) -> dict:
+    """One producer run: sync the publisher's posts, then render until `reserve` Shorts are waiting."""
+    started = time.monotonic()
+    synced = sync()
+    made, failed = [], []
+    while len(ready()) < reserve and time.monotonic() - started < minutes * 60 and len(failed) < max_failures:
+        result = make_next()
+        if result["outcome"] == "no_topics":
+            break
+        (made if result["outcome"] == "ready" else failed).append(result)
+    waiting = [p.name for p in ready()]
+    outcome = "failed" if failed and not waiting else ("no_topics" if not waiting else "ok")
+    return {"outcome": outcome, "synced": synced, "made": made, "failed": failed, "waiting": waiting,
+            "open_topics": sum(t.get("status") == "open" for t in _catalogue()["topics"])}

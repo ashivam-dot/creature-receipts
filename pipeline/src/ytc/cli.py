@@ -66,8 +66,8 @@ def main() -> None:
     produce.add_argument("--series", required=True)
     produce.add_argument("--id", help="episode id (default: the next free epNNN)")
     produce.add_argument("--at", help="anniversary date (YYYY-MM-DD) to publish on")
-    atlas = commands.add_parser("atlas", help="Atlas in Numbers: make (and schedule) the next data-map Short")
-    atlas.add_argument("--no-publish", action="store_true", help="render only; don't host or schedule")
+    atlas = commands.add_parser("atlas", help="Atlas in Numbers: render Shorts until enough wait for the publisher")
+    atlas.add_argument("--reserve", type=int, help="how many rendered Shorts to keep waiting (default RESERVE)")
     atlas.add_argument("--render", type=Path, help="render this atlas.yaml as it is, without writing or publishing")
     args = parser.parse_args()
     logging.basicConfig(level=logging.INFO, format="%(asctime)s %(levelname)s %(name)s: %(message)s", datefmt="%H:%M:%S")
@@ -152,11 +152,9 @@ def _run(args: argparse.Namespace) -> None:
 
             print(render_atlas(AtlasEpisode.load(args.render), args.render.parent))
         else:
-            from .atlas.pipeline import run as run_atlas
+            from .atlas.pipeline import RESERVE, run as run_atlas
 
-            outcome = run_atlas(publish_it=not args.no_publish)
+            outcome = run_atlas(reserve=args.reserve or RESERVE)
             print(json.dumps(outcome, indent=2))
             if outcome["outcome"] in ("failed", "no_topics"):
                 raise SystemExit(1)
-            if outcome["outcome"] == "no_keys":
-                raise SystemExit(3)

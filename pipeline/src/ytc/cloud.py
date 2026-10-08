@@ -372,8 +372,9 @@ def studio_run(trigger: str = "schedule", args: list[str] | None = None) -> dict
     return {"exit": code, "saved": saved, "minutes": round((datetime.now(timezone.utc) - started).total_seconds() / 60, 1)}
 
 
-# 14:10 UTC: 10:10 in New York, so the day's Short is in Buffer well before its 19:00 ET slot (atlas.publish.SLOT).
-ATLAS_SCHEDULE = "10 14 * * *"
+# 03:10 and 13:10 UTC (late evening and morning in New York): each run tops the outbox back up to
+# atlas.pipeline.RESERVE rendered Shorts, ahead of the publisher's slots (atlas.publish.SLOTS).
+ATLAS_SCHEDULE = "10 3,13 * * *"
 ATLAS_MINUTES = 50
 # A channel that has had nothing go out for this long has stopped, whatever the runs say.
 ATLAS_QUIET_HOURS = 36
@@ -422,9 +423,10 @@ def atlas_preview(topic: dict, episode_id: str = "preview") -> tuple[str, bytes]
 
 
 @app.function(image=run_image, cpu=4.0, memory=6144, timeout=3600, schedule=modal.Cron(ATLAS_SCHEDULE),
-              secrets=[run_secret], volumes={"/cache": cache}, max_containers=1)
+              secrets=[run_secret], volumes={"/cache": cache, "/outbox": outbox}, max_containers=1)
 def atlas_run(trigger: str = "schedule", args: list[str] | None = None) -> dict:
-    """One Atlas run (`ytc atlas`) on a fresh clone: write, render and schedule the next Short, then push its files."""
+    """One Atlas run (`ytc atlas`) on a fresh clone: render Shorts and park them in the outbox for the publisher,
+    then push their files."""
     logging.basicConfig(level=logging.INFO, format="%(asctime)s %(levelname)s %(name)s: %(message)s", datefmt="%H:%M:%S")
     started = datetime.now(timezone.utc)
     try:
@@ -432,22 +434,21 @@ def atlas_run(trigger: str = "schedule", args: list[str] | None = None) -> dict:
     except Exception as err:
         _alert(f"The Atlas run on Modal couldn't start: {err}"[:900])
         raise
-    env = {**os.environ, "PYTHONPATH": str(CHECKOUT / "pipeline" / "src"), "PYTHONUNBUFFERED": "1"}
+    env = {k: v for k, v in os.environ.items() if k not in PUBLISHER_ENV}
+    env.update({"PYTHONPATH": str(CHECKOUT / "pipeline" / "src"), "PYTHONUNBUFFERED": "1", "ATLAS_OUTBOX": "/outbox"})
     command = [sys.executable, "-c", "import ytc; ytc.main()", "atlas", *(args or [])]
     try:
         code = subprocess.run(command, cwd=CHECKOUT / "pipeline", env=env, timeout=ATLAS_MINUTES * 60).returncode
     except subprocess.TimeoutExpired:
         code = 124
     cache.commit()
+    outbox.commit()
     try:
         saved = _save(f"atlas: Modal run {started:%Y-%m-%d %H:%M} UTC ({trigger})")
     except Exception as err:
         _alert(f"The Atlas run on Modal couldn't save what it did: {err}"[:900])
         raise
-    if code == 3:
-        _alert("Atlas in Numbers has a Short ready but can't publish: the Modal secret has no Buffer key or "
-               "Cloudinary URL. Run kit/atlas_keys.py on the Mac (MODAL_PROFILE=aksha-shivam18).")
-    elif code:
+    if code:
         why = f"ran over {ATLAS_MINUTES} minutes and was stopped" if code == 124 else f"failed (exit {code})"
         _alert(f"The Atlas run on Modal {why}. Its log: modal.com > creature-receipts > atlas_run.")
     if quiet := _atlas_quiet(datetime.now(timezone.utc)):

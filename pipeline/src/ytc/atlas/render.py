@@ -5,7 +5,7 @@ from __future__ import annotations
 
 import logging
 import subprocess
-from dataclasses import dataclass
+from dataclasses import dataclass, field
 from pathlib import Path
 
 import numpy as np
@@ -38,6 +38,7 @@ class Plan:
     callouts: list[str]
     card: list[str]
     dim: float
+    rank: list[str] = field(default_factory=list)
 
 
 def dataset(ep: AtlasEpisode, folder: Path) -> Dataset:
@@ -64,7 +65,29 @@ def _plan(shot: Shot) -> Plan:
         return Plan(cam, set(shot.callouts), shot.callouts, [], 0.0)
     if shot.kind == "card":
         return Plan(draw.WORLD, set(), [], shot.lines, 0.0)
+    if shot.kind == "rank":
+        isos = [i for i in shot.isos if i in world]
+        return Plan(draw.WORLD, set(), [], [], 0.7, isos)
     return Plan(draw.WORLD, set(shot.callouts), shot.callouts, [], 0.0)
+
+
+def rank_rows(isos: list[str], ds: Dataset, ep: AtlasEpisode, scale: draw.Scale,
+              names: dict[str, str]) -> tuple[str, list[tuple[str, str, float, tuple]]]:
+    """The bars for a rank shot, in order, and a "Top N"/"Lowest N" title only when that's exactly what they are
+    among every mapped country with data."""
+    world = geo.world()
+    mapped = sorted(((k, v) for k, v in ds.values.items() if k in world), key=lambda kv: kv[1], reverse=True)
+    picked = [i for i in isos if i in ds.values]
+    n = len(picked)
+    top, bottom = [k for k, _ in mapped[:n]], [k for k, _ in mapped[-n:]]
+    if set(picked) == set(bottom) and set(picked) != set(top):
+        order, title = sorted(picked, key=lambda k: ds.values[k]), f"Lowest {n}"
+    else:
+        order = sorted(picked, key=lambda k: ds.values[k], reverse=True)
+        title = f"Top {n}" if set(picked) == set(top) else ""
+    rows = [(names.get(k, ds.names.get(k, k)), ep.value_text(ds.values[k]), ds.values[k], scale.color(ds.values[k]))
+            for k in order]
+    return title, rows
 
 
 def _short_spec(ep: AtlasEpisode) -> ShortSpec:
@@ -121,6 +144,8 @@ def render(ep: AtlasEpisode, folder: Path) -> Path:
             cues.append((spans[i][0] - 0.15, "whoosh"))
         if plans[i].callouts and not plans[i].card:
             cues.append((spans[i][0] + (FLY if moved else 0.1), "pop"))
+        if plans[i].rank:
+            cues.append((spans[i][0] + 0.2, "pop"))
 
     words = narr.words
     emphasis = {i: set() for i in range(len(ep.beats))}
@@ -155,6 +180,7 @@ def render(ep: AtlasEpisode, folder: Path) -> Path:
     source = _source_line(ds)
     swatches = scale.swatches()
     last_card = None
+    ranks: dict[int, tuple] = {}
     frames = int(total * FPS)
     for f in range(frames):
         t = f / FPS
@@ -189,6 +215,10 @@ def render(ep: AtlasEpisode, folder: Path) -> Path:
                         callouts.append((x, y, names.get(iso, ds.names.get(iso, iso)), ep.value_text(ds.values[iso])))
             frame = draw.overlay(layer, chip=ep.dataset.label, swatches=swatches, source=source, callouts=callouts,
                                  callout_alpha=min(ready / CALLOUT_IN, 1.0) if callouts else 0.0)
+            if plan.rank:
+                if i not in ranks:
+                    ranks[i] = rank_rows(plan.rank, ds, ep, scale, names)
+                frame = draw.rank_panel(frame, *ranks[i], local)
         proc.stdin.write(frame.tobytes())
     proc.stdin.close()
     err = proc.stderr.read().decode(errors="replace")

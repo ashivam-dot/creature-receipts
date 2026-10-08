@@ -8,7 +8,7 @@
   then tours the surprising countries and ends on a loop question. English, for a US audience, with India always
   shown in its official borders (Natural Earth's India point-of-view layer, public domain). Never war, elections,
   religion, or breaking news.
-- **Format:** YouTube Shorts, 30–45 seconds (75–120 words, 6–8 beats), one a day at 19:00 ET. Map frames are drawn
+- **Format:** YouTube Shorts, 30–45 seconds (75–120 words, 6–8 beats), three a day at 12:00, 16:00 and 19:00 ET. Map frames are drawn
   by `pipeline/src/ytc/atlas/` (Equal Earth projection, eased camera, value callouts, legend, source line on
   screen), narrated by Kokoro `am_fenrir`, captions in libass, a synthesized pad, -14 LUFS.
 - **Every number is checked:** the writer sees only a summary computed from the downloaded dataset
@@ -88,23 +88,35 @@ Start here: `PLAYBOOK.md` (the daily routine), `strategy/STRATEGY.md`, `strategy
 
 ## How it runs (Atlas in Numbers)
 
-- `atlas_run` in the Modal app `creature-receipts` (workspace `aksha-shivam18`) runs `ytc atlas` daily at 14:10 UTC
-  on a fresh clone: it takes the next open topic in `strategy/ATLAS-TOPICS.json`, downloads the dataset, writes and
-  checks the script (Gemini ladder, `llm.generate`), renders on 4 CPUs, hosts the MP4 on Cloudinary, schedules it in
-  Buffer for the next free 19:00 ET slot (one a day), marks the topic used, and pushes `content/atlas/<id>/`
-  (`atlas.yaml`, `data.json`, `publish.json`). Keys come from the Modal secret `creature-receipts-studio`.
-- A failed run, a run that can't save, or 36 hours with nothing due pushes an ntfy alert.
-- `ytc atlas --no-publish` renders without scheduling; `ytc atlas --render <atlas.yaml>` re-renders a script as is;
-  `cloud.atlas_preview` writes and renders one topic on Modal and returns it without saving anything.
+- **Producer (no keys):** `atlas_run` in the Modal app `creature-receipts` (workspace `aksha-shivam18`) runs
+  `ytc atlas` at 03:10 and 13:10 UTC on a fresh clone. It first copies the publisher's records
+  (`atlas/published.json` in ashivam-dot/history-last-hours-control) into each Short's `publish.json` and marks
+  those topics used. Then, until `atlas.pipeline.RESERVE` (4) Shorts are waiting, it takes the next open topic in
+  `strategy/ATLAS-TOPICS.json`, downloads the dataset, writes and checks the script (Gemini ladder,
+  `llm.generate`), renders on 4 CPUs, parks the MP4 in the Modal volume `creature-receipts-outbox`
+  (`atlas/<id>-<sha256>.mp4`), and pushes `content/atlas/<id>/` (`atlas.yaml`, `data.json`, `ready.json`).
+  The publisher keys are stripped from its environment.
+- **Publisher (holds the keys):** the workflow `atlas-publish.yml` in the public repo
+  ashivam-dot/history-last-hours-control runs every 2 hours at :25. Its `history-publisher` environment holds the
+  Buffer key, the Cloudinary URL and a Modal token. `control/atlas.py` keeps 3 future posts in Buffer: for each
+  waiting Short it reads the exact parked bytes (hash-checked), calls this repo's `ytc.atlas.publish.schedule`
+  (Cloudinary host, then Buffer `createPost` for the next free slot of 12:00, 16:00 and 19:00 ET), and commits the
+  post to `atlas/published.json`. Run it with `list=true` to see the Buffer queue only.
+- Every History workflow in that repo is disabled; it was made public on 2026-10-08 because GitHub refuses
+  private-repo Actions minutes over a failed payment, and public repos run free.
+- A failed producer run, a run that can't save, or 36 hours with nothing due pushes an ntfy alert.
+- `ytc atlas --render <atlas.yaml>` re-renders a script as is; `cloud.atlas_preview` writes and renders one topic
+  on Modal and returns it without saving anything.
+- Shots: `world`, `country`, `group`, `region`, `rank` (3–6 countries as animated bars; titled "Top N" or
+  "Lowest N" only when exactly true) and the end `card`.
 - Retired 2026-10-08: the History lane's `studio_run` schedule, and the `studio`, `watchdog`, and `accident-intake`
-  workflow schedules (each can still be run by hand). Publishing no longer depends on the private
-  `history-last-hours-control` repository, whose Actions stopped on 2026-10-07 when GitHub refused private-repo
-  minutes over a failed payment.
+  workflow schedules (each can still be run by hand).
 
 ## How it ran (History's Last Hours)
 
 | Job | Tool | Cost |
 |---|---|---|
+| 2026-10-08 | Atlas publishing split: Modal renders and parks Shorts without keys; the Atlas publisher workflow in history-last-hours-control (made public, History workflows disabled) schedules them with the stored Buffer and Cloudinary keys; three slots a day (12:00, 16:00, 19:00 ET); new rank-bar shot | The keys already existed only in that repo's history-publisher environment, and private-repo Actions were blocked by a failed payment; public-repo Actions run free. The owner asked for several Shorts a day and no owner steps |
 | Running the channel | The cloud studio on Modal: `studio_run` in the Modal app `creature-receipts` runs `ytc auto` four times a day (11:05, 17:05, 23:05, 05:05 IST) on a fresh clone of the repository <https://github.com/ashivam-dot/creature-receipts>, and pushes what changed with a deploy key that reaches only that repository. Each run deploys that clone's code as the app first (so `slot_watch` runs the latest code), syncs Buffer, files live Shorts into playlists, collects finished Shorts, does the daily routine in the first run after 14:00 IST (stats, learnings, new topics, report), schedules Shorts into Buffer, and starts new ones when fewer than 42 are ready. Its state lives in the repository (`status/`, `content/`, `strategy/`); its keys in the Modal secret `creature-receipts-studio` (`pipeline/modal_secret.py`). GitHub's `studio` workflow is the backup: its schedule is 2 hours behind, and it works only when Modal's last run failed or is over 8 hours old. The Mac isn't needed | free: about $1 a month of Modal's credit. The Modal workspace (`akshshivam5`, $30 of credit a month, spend limit $0) is shared with Universe Receipts, and both studios read the workspace's total spend |
 | Research, scripts, image picks, reviews | Gemini's free tier first (AI Studio project `creature-receipts` on akshshivam5@gmail.com), about 15 seconds a prompt: every step starts on the six Flash models (20 requests a day each), except the picture checks, which start on the Flash-Lite models (500 a day each). Once Flash is spent, scripts go to Flash-Lite, and the other steps to Flash-Lite and then to other providers' free models through their OpenAI-compatible APIs (`llm.PROVIDERS`; one whose key isn't set is skipped): OVHcloud AI Endpoints without an account (Qwen3.5-397B and two Qwen 27B models; 2 requests a minute per model, shared by everyone on the same address, so best effort), Mistral's free plan (Ministral 14B, 30 requests a minute, key in the `YTC_MISTRAL_API_KEY` secret; it researches, picks, and checks, but broke the script rules in testing, so it writes nothing), and OpenRouter's free Dots3-Note Preview (50 requests a day for the account, key in the `YTC_OPENROUTER_API_KEY` secret; it writes and researches after Qwen3.5-397B and ahead of Gemma, but doesn't judge). Gemma 4 31B, in the same Gemini project, takes prompts under its 16,000-token-a-minute cap. So no Short is held for Gemini's reset. The review, which decides what gets published, uses a Flash model while 9 or more are ready: a Short finished after Flash is spent waits for the reset (12:35 IST, 13:35 in winter) and is reviewed first after it. With fewer than 9 ready, Qwen3.5-397B or Cursor judges (a backup model passes only a Short it finds nothing to fix in), and with fewer than 3, Gemma. When nothing else can answer (or Gemini refuses a prompt), Cursor's agent models do, through the Cursor SDK (`cursor_llm.py`, key in the `YTC_CURSOR_API_KEY` secret), in 2 to 5 minutes a prompt. Each Cursor prompt goes to a fresh agent with no tools, so it can only answer in text. Cursor takes the best model the key allows: Opus, Sonnet, GPT, Gemini, then Grok, newest first. Apart from prompts Gemini refuses, Cursor answers only while fewer than 9 are ready. `YTC_LLM_FIRST=cursor` puts Cursor first | Gemini, OVHcloud, Mistral, OpenRouter: free; Cursor: counts against the key's Cursor plan (optional) |
 | Making each Short | A Modal worker (`studio_episode`, a quarter CPU, since it mostly waits on the language models) makes one Short end to end: research, script, images, render, review, fixes, and hosting. The run that starts it exits at once, and the next run collects the result. Runs start as many as the credit covers after a $2 reserve for the runs themselves. Only GitHub's backup makes Shorts on its runner, once Modal's credit is used up: three at a time (they mostly wait on the language model, so the waits overlap and renders take turns), within a share of the Actions minutes paced over the month | free: about $0.12 per Short; the shared $30 covers about 230 Shorts a month across both channels, and GitHub's runner makes them after that |

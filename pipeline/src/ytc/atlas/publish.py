@@ -1,7 +1,10 @@
 """Schedule an Atlas Short on YouTube through Buffer, with its video hosted on Cloudinary.
 
-One post a day at SLOT in the audience's time. A post is matched by its description before a new one is made, so a
+Posts go out at SLOTS in the audience's time. A post is matched by its description before a new one is made, so a
 run that stopped after Buffer took a post doesn't post it twice.
+
+The keys live only with the publisher (the control repo's history-publisher environment, `control/atlas.py`); the
+producer on Modal renders and parks each Short without them.
 """
 
 from __future__ import annotations
@@ -22,10 +25,12 @@ log = logging.getLogger(__name__)
 BUFFER_CHANNEL = "6abcba6dea19ca0bde30177e"
 os.environ.setdefault("BUFFER_YOUTUBE_CHANNEL_ID", BUFFER_CHANNEL)
 
-SLOT = time(19, 0)
+SLOTS = (time(12, 0), time(16, 0), time(19, 0))
 CATEGORY = "27"  # Education
 TITLE_CHARS = 100
-MIN_LEAD = timedelta(minutes=45)
+MIN_LEAD = timedelta(minutes=30)
+# A slot with a post this close to it is taken.
+SLOT_GAP = timedelta(minutes=60)
 MAP_CREDIT = "Map: Natural Earth (public domain)."
 
 
@@ -41,14 +46,14 @@ def description(ep: AtlasEpisode, ds: Dataset) -> str:
 
 
 def next_slot(taken: list[datetime], now: datetime | None = None) -> datetime:
-    """The first SLOT on a day with no Atlas post, at least MIN_LEAD from now."""
+    """The first of SLOTS with no post within SLOT_GAP of it, at least MIN_LEAD from now."""
     now = (now or datetime.now(pub.AUDIENCE_TZ)).astimezone(pub.AUDIENCE_TZ)
-    days = {t.astimezone(pub.AUDIENCE_TZ).date() for t in taken}
     day = now.date()
     while True:
-        when = datetime.combine(day, SLOT, pub.AUDIENCE_TZ)
-        if when >= now + MIN_LEAD and day not in days:
-            return when
+        for slot in SLOTS:
+            when = datetime.combine(day, slot, pub.AUDIENCE_TZ)
+            if when >= now + MIN_LEAD and all(abs(when - t) >= SLOT_GAP for t in taken):
+                return when
         day += timedelta(days=1)
 
 

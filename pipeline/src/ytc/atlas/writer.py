@@ -55,8 +55,10 @@ Rules:
 - Say a negative value as a fall without the minus sign: "-1.8%" becomes "shrinking by 1.8%" or "down 1.8%".
 - The "why" line is plain English a 12-year-old follows; no jargon such as "exponential", "de facto", "per capita".
 - Plain spoken English, short sentences, no emojis, no hashtags in the beats, no politics or war.
-- Shots: "world" (whole map), "country" (iso), "group" (2-3 isos side by side), or "card" for the last beat only.
-  Use only ISO codes from the summary.
+- Shots: "world" (whole map), "country" (iso), "group" (2-3 isos side by side), "rank" (3-6 isos shown as a bar
+  chart of their values; the best way to show a top or bottom list), or "card" for the last beat only. Use "rank"
+  for exactly one middle beat when the FORMAT is rank_ladder, and at most once otherwise. Use only ISO codes from
+  the summary.
 - title: at most 60 characters, a concrete claim with a number, no clickbait punctuation, no emoji.
 - hook_text: 2-5 words in capitals shown on screen over beat 1, adding to (not repeating) the spoken hook.
 - card_lines: 2 short lines for the end card: a 2-4 word question, then the dataset label.
@@ -75,7 +77,7 @@ SCHEMA = {
                 "type": "object",
                 "properties": {
                     "text": {"type": "string"},
-                    "shot": {"type": "string", "enum": ["world", "country", "group", "card"]},
+                    "shot": {"type": "string", "enum": ["world", "country", "group", "rank", "card"]},
                     "isos": {"type": "array", "items": {"type": "string"}},
                 },
                 "required": ["text", "shot"],
@@ -251,6 +253,12 @@ def problems(draft: dict, allowed: set[str], owners: dict[str, set[str]], vals: 
             out.append(f"beat {i}: a country shot names exactly one iso")
         if b["shot"] == "group" and not 2 <= len(isos) <= 3:
             out.append(f"beat {i}: a group shot names 2 or 3 isos")
+        if b["shot"] == "rank" and not 3 <= len(isos) <= 6:
+            out.append(f"beat {i}: a rank shot names 3 to 6 isos")
+    if sum(b["shot"] == "rank" for b in beats) > 1:
+        out.append("use the rank shot at most once")
+    for i, b in enumerate(beats, 1):
+        isos = b.get("isos", [])
         out += [f"beat {i}: {p}" for p in number_problems(b["text"], allowed, owners, isos)]
     out += [f"title: {p}" for p in number_problems(draft.get("title", ""), allowed, owners, used)]
     return out
@@ -297,6 +305,8 @@ def _episode(draft: dict, topic: dict, episode_id: str, series: str) -> AtlasEpi
             shot = {"kind": "country", "iso": isos[0]}
         elif b["shot"] == "group":
             shot = {"kind": "group", "isos": isos}
+        elif b["shot"] == "rank":
+            shot = {"kind": "rank", "isos": isos}
         else:
             shot = {"kind": "world", "callouts": isos[:3]}
         beats.append({"text": b["text"].strip(), "shot": shot})

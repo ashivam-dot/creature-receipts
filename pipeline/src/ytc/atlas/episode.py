@@ -34,7 +34,7 @@ class ScaleSpec(_Model):
 
 
 class Shot(_Model):
-    kind: Literal["world", "country", "group", "region", "card"] = "world"
+    kind: Literal["world", "country", "group", "region", "rank", "card"] = "world"
     iso: str = ""
     isos: list[str] = []
     box: list[float] = []  # lon0, lat0, lon1, lat1 for a region
@@ -71,6 +71,8 @@ class AtlasEpisode(_Model):
                 raise ValueError(f"beat {n}: a country shot needs iso")
             if s.kind == "group" and not s.isos:
                 raise ValueError(f"beat {n}: a group shot needs isos")
+            if s.kind == "rank" and not 3 <= len(s.isos) <= 6:
+                raise ValueError(f"beat {n}: a rank shot needs 3-6 isos")
             if s.kind == "region" and len(s.box) != 4:
                 raise ValueError(f"beat {n}: a region shot needs box [lon0, lat0, lon1, lat1]")
         return self

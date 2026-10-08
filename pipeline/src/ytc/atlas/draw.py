@@ -223,6 +223,44 @@ def overlay(img: Image.Image, *, chip: str, swatches: list[tuple[tuple, str]], s
 TOP, BOTTOM = H * 0.335, H * 0.625  # the band callouts stay inside, clear of the legend and captions
 
 
+def rank_panel(img: Image.Image, title: str, rows: list[tuple[str, str, float, tuple]], t: float) -> Image.Image:
+    """Bars for a ranked list over a dimmed map, inside the callout band: (name, value text, value, colour) per row,
+    longest first. `t` is seconds since the panel started; bars grow one after another, then their values appear."""
+    img = img.convert("RGBA")
+    layer = Image.new("RGBA", (W, H), (0, 0, 0, 0))
+    d = ImageDraw.Draw(layer)
+    a = int(255 * min(t / 0.25, 1.0))
+    x0, x1 = W * 0.07, W * 0.93
+    top, bottom = TOP - 10, BOTTOM + 10
+    d.rounded_rectangle((x0 - 24, top, x1 + 24, bottom), radius=36, fill=(9, 18, 36, int(a * 0.9)),
+                        outline=(40, 58, 92, a), width=3)
+    y = top + 30
+    if title:
+        f = font("Montserrat-Black.ttf", 44)
+        text_center(d, (W / 2, y + 26), title.upper(), f, fill=(*HIGHLIGHT, a))
+        y += 76
+    n = max(len(rows), 1)
+    pitch = (bottom - 24 - y) / n
+    bar_h = min(pitch * 0.62, 70)
+    biggest = max((abs(v) for _, _, v, _ in rows), default=1.0) or 1.0
+    fn, fv = font("Montserrat-ExtraBold.ttf", 34), font("Anton-Regular.ttf", 50)
+    label_w = max((d.textlength(name.upper(), font=fn) for name, *_ in rows), default=0) + 28
+    value_w = max((d.textlength(v, font=fv) for _, v, _, _ in rows), default=0) + 24
+    track = x1 - x0 - label_w - value_w
+    for i, (name, value_text, value, color) in enumerate(rows):
+        grow = ease((t - 0.2 - 0.12 * i) / 0.6)
+        cy = y + pitch * (i + 0.5)
+        d.text((x0 + label_w - 18, cy), name.upper(), font=fn, fill=(*INK, a), anchor="rm")
+        length = max(track * abs(value) / biggest, 12) * grow
+        bx = x0 + label_w
+        if length > 0:
+            d.rounded_rectangle((bx, cy - bar_h / 2, bx + length, cy + bar_h / 2), radius=int(bar_h / 3),
+                                fill=(*color, a))
+        if grow >= 1:
+            d.text((bx + length + 16, cy), value_text, font=fv, fill=(*HIGHLIGHT, a), anchor="lm")
+    return Image.alpha_composite(img, layer).convert("RGB")
+
+
 def _layout(d: ImageDraw.ImageDraw, callouts: list[tuple[float, float, str, str]]) -> list[tuple]:
     """Place each callout's box above its point (below when there's no room), then push overlapping boxes
     apart vertically, keeping them inside the map band."""

@@ -35,10 +35,47 @@ def test_negative_zero_and_minus_signs():
     assert "no Red" in found and "minus sign" in found
 
 
-def test_one_post_a_day_at_the_evening_slot():
+def test_three_slots_a_day():
     now = datetime(2026, 10, 8, 10, 0, tzinfo=ET)
-    assert publish.next_slot([], now) == datetime(2026, 10, 8, 19, 0, tzinfo=ET)
-    taken = [datetime(2026, 10, 8, 19, 0, tzinfo=ET)]
-    assert publish.next_slot(taken, now) == datetime(2026, 10, 9, 19, 0, tzinfo=ET)
-    late = datetime(2026, 10, 8, 18, 30, tzinfo=ET)
-    assert publish.next_slot([], late) == datetime(2026, 10, 9, 19, 0, tzinfo=ET)
+    assert publish.next_slot([], now) == datetime(2026, 10, 8, 12, 0, tzinfo=ET)
+    taken = [datetime(2026, 10, 8, 12, 0, tzinfo=ET), datetime(2026, 10, 8, 16, 20, tzinfo=ET)]
+    assert publish.next_slot(taken, now) == datetime(2026, 10, 8, 19, 0, tzinfo=ET)
+    late = datetime(2026, 10, 8, 18, 45, tzinfo=ET)
+    assert publish.next_slot([], late) == datetime(2026, 10, 9, 12, 0, tzinfo=ET)
+
+
+def test_rank_title_only_when_true():
+    from ytc.atlas import draw, render
+    from ytc.atlas.episode import AtlasEpisode
+
+    ds = _dataset()
+    ep = AtlasEpisode.model_validate({"id": "atlas999", "title": "t", "value_format": "{v:.1f}%",
+                                      "dataset": {"kind": "worldbank", "label": "l", "source": "s"},
+                                      "beats": [{"text": "x", "shot": {"kind": "rank", "isos": ["IND", "USA", "BRA"]}}]})
+    scale = draw.Scale("threshold", at=0)
+    title, rows = render.rank_rows(["USA", "IND", "BRA"], ds, ep, scale, {})
+    assert title == "Top 3" and [r[1] for r in rows] == ["0.9%", "0.5%", "0.4%"]
+    title, _ = render.rank_rows(["USA", "IND", "JPN"], ds, ep, scale, {})
+    assert title == ""
+
+
+def test_sync_copies_the_publishers_record(tmp_path, monkeypatch):
+    import json
+
+    from ytc.atlas import pipeline
+
+    episodes, box = tmp_path / "atlas", tmp_path / "outbox"
+    (episodes / "atlas001").mkdir(parents=True)
+    (box / "atlas").mkdir(parents=True)
+    (box / "atlas" / "atlas001-ab.mp4").write_bytes(b"x")
+    (episodes / "atlas001" / "ready.json").write_text(json.dumps({"modal_path": "atlas/atlas001-ab.mp4"}))
+    topics = tmp_path / "topics.json"
+    topics.write_text(json.dumps({"topics": [{"id": "t001", "status": "ready:atlas001"}]}))
+    monkeypatch.setattr(pipeline, "EPISODES", episodes)
+    monkeypatch.setattr(pipeline, "TOPICS", topics)
+    monkeypatch.setenv("ATLAS_OUTBOX", str(box))
+    assert pipeline.ready() == [episodes / "atlas001"]
+    assert pipeline.sync({"atlas001": {"id": "atlas001", "due_at": "2026-10-08T12:00:00-04:00"}}) == ["atlas001"]
+    assert (episodes / "atlas001" / "publish.json").exists() and pipeline.ready() == []
+    assert not (box / "atlas" / "atlas001-ab.mp4").exists()
+    assert json.loads(topics.read_text())["topics"][0]["status"] == "used:atlas001"
