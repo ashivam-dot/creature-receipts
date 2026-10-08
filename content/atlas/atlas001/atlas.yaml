@@ -1,0 +1,38 @@
+id: atlas001
+title: "More Phones Than People: 137 Countries Already Are"
+format: map_reveal
+series: "Mapped"
+hook_text: "MORE PHONES THAN PEOPLE"
+dataset:
+  kind: worldbank
+  indicator: IT.CEL.SETS.P2
+  label: "Mobile subscriptions per 100 people"
+  unit: "per 100"
+  source: "ITU via World Bank"
+  min_year: 2022
+scale:
+  kind: threshold
+  at: 100
+  labels: ["More than people", "Fewer"]
+value_format: "{v:.0f} per 100"
+hashtags: ["#maps", "#geography", "#data"]
+sources:
+  - "https://data.worldbank.org/indicator/IT.CEL.SETS.P2"
+  - "https://data.worldbank.org/indicator/IT.CEL.SETS"
+beats:
+  - text: "Every yellow country on this map has more phone subscriptions than people."
+    shot: {kind: world}
+  - text: "That's 137 of the 209 places with data."
+    shot: {kind: world}
+  - text: "Japan has 178 for every hundred people."
+    shot: {kind: country, iso: JPN, pad: 2.4}
+  - text: "The UAE, 203. Russia, 186."
+    shot: {kind: group, isos: [ARE, RUS], pad: 1.15}
+  - text: "India has over one point one billion subscriptions, and it's still blue. Just 79 per hundred."
+    shot: {kind: country, iso: IND, pad: 1.6}
+  - text: "Because a subscription is a SIM card, not a person. Plenty of people carry two: one for work, one for cheaper calls."
+    shot: {kind: world}
+  - text: "So is your country yellow, or blue?"
+    shot:
+      kind: card
+      lines: ["YELLOW OR BLUE?", "Mobile subscriptions per 100 people", "ITU via World Bank · 2024 · CC BY 4.0"]

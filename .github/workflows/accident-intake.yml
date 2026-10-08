@@ -1,8 +1,7 @@
 name: History checked accident source and art intake
 
 on:
-  schedule:
-    - cron: '10 4 * * *'
+  # Retired with the History lane on 2026-10-08; the channel is now Atlas in Numbers (cloud.atlas_run).
   workflow_dispatch:
 
 concurrency:

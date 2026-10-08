@@ -1,4 +1,29 @@
-# History's Last Hours: source of truth
+# Atlas in Numbers: source of truth
+
+- **Channel:** Atlas in Numbers (handle to claim: @atlasinnumbers; was History's Last Hours, @HistorysLastHours),
+  the YouTube channel of the Google account aksha.shivam18@gmail.com. Channel ID `UC6e6OB3iw3yp8JnnBYxLItA`.
+  Buffer channel ID `6abcba6dea19ca0bde30177e`. Created 2026-09-30; renamed 2026-10-08.
+- **Niche (from 2026-10-08):** one world map, one number. Each Short colours every country by one official dataset
+  (World Bank WDI, CC BY 4.0, with the UN, WHO, FAO, ITU and ILO series it republishes; Our World in Data, CC BY),
+  then tours the surprising countries and ends on a loop question. English, for a US audience, with India always
+  shown in its official borders (Natural Earth's India point-of-view layer, public domain). Never war, elections,
+  religion, or breaking news.
+- **Format:** YouTube Shorts, 30–45 seconds (75–120 words, 6–8 beats), one a day at 19:00 ET. Map frames are drawn
+  by `pipeline/src/ytc/atlas/` (Equal Earth projection, eased camera, value callouts, legend, source line on
+  screen), narrated by Kokoro `am_fenrir`, captions in libass, a synthesized pad, -14 LUFS.
+- **Every number is checked:** the writer sees only a summary computed from the downloaded dataset
+  (`atlas/writer.facts`), and a draft that says any number not in that summary, or names a country without data,
+  is rewritten (3 tries) or dropped. The dataset snapshot is kept beside the script as `data.json`.
+- **Owner account:** aksha.shivam18@gmail.com (a personal Google account); channel country India. Chrome profile:
+  Profile 5. Never use the owner's work account or its Chrome profile for anything on this channel.
+- **Accounts:** as before: Google Cloud project `shorts-studio-two`; Buffer; Cloudinary (cloud `uj4a07e7`); Modal
+  workspace `aksha-shivam18`; GitHub `ashivam-dot`, public repository <https://github.com/ashivam-dot/creature-receipts>
+  (the slug stays `creature-receipts`). Universe Receipts (channel 1) is a separate studio and is never changed
+  from here.
+
+The History's Last Hours material below is kept for its lessons; its lanes are retired.
+
+## Before 2026-10-08: History's Last Hours
 
 - **Channel:** History's Last Hours (@HistorysLastHours), <https://www.youtube.com/@HistorysLastHours>, the YouTube
   channel of the Google account aksha.shivam18@gmail.com (not a Brand Account; the name shows only on YouTube).
@@ -61,7 +86,22 @@ Start here: `PLAYBOOK.md` (the daily routine), `strategy/STRATEGY.md`, `strategy
   Disclose realistic synthetic media when YouTube requires it.
 - Use only assets whose licenses allow commercial use: public domain, CC0, or CC BY with credit.
 
-## How it runs
+## How it runs (Atlas in Numbers)
+
+- `atlas_run` in the Modal app `creature-receipts` (workspace `aksha-shivam18`) runs `ytc atlas` daily at 14:10 UTC
+  on a fresh clone: it takes the next open topic in `strategy/ATLAS-TOPICS.json`, downloads the dataset, writes and
+  checks the script (Gemini ladder, `llm.generate`), renders on 4 CPUs, hosts the MP4 on Cloudinary, schedules it in
+  Buffer for the next free 19:00 ET slot (one a day), marks the topic used, and pushes `content/atlas/<id>/`
+  (`atlas.yaml`, `data.json`, `publish.json`). Keys come from the Modal secret `creature-receipts-studio`.
+- A failed run, a run that can't save, or 36 hours with nothing due pushes an ntfy alert.
+- `ytc atlas --no-publish` renders without scheduling; `ytc atlas --render <atlas.yaml>` re-renders a script as is;
+  `cloud.atlas_preview` writes and renders one topic on Modal and returns it without saving anything.
+- Retired 2026-10-08: the History lane's `studio_run` schedule, and the `studio`, `watchdog`, and `accident-intake`
+  workflow schedules (each can still be run by hand). Publishing no longer depends on the private
+  `history-last-hours-control` repository, whose Actions stopped on 2026-10-07 when GitHub refused private-repo
+  minutes over a failed payment.
+
+## How it ran (History's Last Hours)
 
 | Job | Tool | Cost |
 |---|---|---|
@@ -83,6 +123,7 @@ Start here: `PLAYBOOK.md` (the daily routine), `strategy/STRATEGY.md`, `strategy
 
 | Date | Decision | Why |
 |---|---|---|
+| 2026-10-08 | Channel 2 rebuilt as Atlas in Numbers: data-map Shorts, one a day, from public datasets, made by a new lane (`ytc.atlas`) and a Modal schedule that publishes through Buffer directly | History's Last Hours had 4 public Shorts and 37 views after 112 attempts; 68 drafts were rejected, most for pictures, and publishing had stopped on 2026-10-07 with the private control repo's Actions blocked by billing. Map Shorts need no found pictures (the map is drawn), every claim is a number checked against the downloaded data, and the niche is proven: GeoMaps' 54 Shorts have a median of 76K views (max 15M). Research: `../channel-review-2026-10-08/niche-research.md` on the Mac |
 | 2026-09-30 | Built the studio from Universe Receipts' code (a `git archive` of its main branch), with its content, status, analytics, and reports emptied | That studio already runs a channel unattended on free tiers; its decision log and `reference/days-of-odd/CHANNEL.md` explain the design |
 | 2026-09-30 | Niche: true stories of strange animals, extreme biology, and deep-sea life, English, US audience | Six candidate niches were measured against the pipeline, not just ranked by demand (`research/channel/pipeline-fit-and-policy.md`): the median topic had 99 usable openly licensed pictures for animals, 89 for disasters, 50 for the deep ocean, 43 for archaeology, 10 for aviation, and 6 for frauds. The market report's first pick, failure analysis, was rejected: too few free pictures, and a feed of accidents is the "off-putting" content the July 2026 monetization update names. Animals are also evergreen, safe for advertisers, and don't overlap Universe Receipts. Animal-fact Shorts convert viewers to subscribers poorly (`research/channel/niche-market.md`, section 3), so every Short is a sourced story in a named series |
 | 2026-09-30 | Name: History's Last Hours (@HistorysLastHours) | A sister brand to Universe Receipts: "receipts" means every claim is backed by sources listed in the description, which is also the defense against the inauthentic-content review. The handle returned 404 on YouTube before it was claimed |

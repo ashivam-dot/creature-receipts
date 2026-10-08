@@ -5,9 +5,7 @@ name: watchdog
 # its first check after 08:00 IST; running it by hand sends the summary now. It runs here rather than on Modal so
 # it keeps watching when Modal is what stopped. Read-only: it changes nothing.
 on:
-  schedule:
-    - cron: "10 */3 * * *"
-    - cron: "40 23 3 10 *" # ep054: 4 Oct 2026 05:10 IST, first post-slot check
+  # Retired with the History lane on 2026-10-08; the channel is now Atlas in Numbers (cloud.atlas_run).
   workflow_dispatch:
 
 concurrency:

@@ -5,8 +5,7 @@ name: studio
 # This schedule is 2 hours behind Modal's, and a scheduled run does nothing unless Modal's last run failed or is
 # over 8 hours old (.github/backup_gate.py). Started by hand, it always runs.
 on:
-  schedule:
-    - cron: "35 1,7,13,19 * * *"
+  # Retired with the History lane on 2026-10-08; the channel is now Atlas in Numbers (cloud.atlas_run).
   workflow_dispatch:
     inputs:
       produce:

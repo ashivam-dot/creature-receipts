@@ -22,7 +22,7 @@ import tarfile
 import tempfile
 import time
 import urllib.request
-from datetime import datetime, timezone
+from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
 import modal
@@ -287,11 +287,11 @@ def _git(*args: str) -> subprocess.CompletedProcess:
     return subprocess.run(["git", "-C", str(CHECKOUT), *args], capture_output=True, text=True)
 
 
-def _alert(message: str) -> None:
+def _alert(message: str, title: str = "Atlas in Numbers needs attention") -> None:
     """Push to the owner's phone through ntfy, as monitor/monitor.py does; a run that can't save stops the channel."""
     if topic := os.environ.get("YTC_NTFY_TOPIC"):
         request = urllib.request.Request(f"https://ntfy.sh/{topic}", data=message.encode("utf-8"), method="POST",
-                                         headers={"Title": "History's Last Hours needs attention", "Priority": "high", "Tags": "warning"})
+                                         headers={"Title": title, "Priority": "high", "Tags": "warning"})
         try:
             urllib.request.urlopen(request, timeout=30).read()
         except Exception as err:
@@ -309,7 +309,7 @@ def _checkout() -> None:
     done = subprocess.run(["git", "clone", "-q", "--depth", "20", REPO_URL, str(CHECKOUT)], capture_output=True, text=True)
     if done.returncode:
         raise RuntimeError(f"couldn't clone the repo: {done.stderr.strip()[:400]}")
-    _git("config", "user.name", "History's Last Hours studio")
+    _git("config", "user.name", "Atlas in Numbers studio")
     _git("config", "user.email", "studio@creature-receipts.invalid")
     # A run that couldn't save would repeat its work (start workers, schedule posts) on the next run's clone.
     if (done := _git("push", "--dry-run", "-q", "origin", "HEAD")).returncode:
@@ -342,9 +342,9 @@ def _save(message: str) -> str:
 RUN_MINUTES = 100
 
 
-# One at a time: a second call waits for the first, which it has to start from.
-@app.function(image=run_image, cpu=1.0, memory=2048, timeout=2 * 3600, schedule=modal.Cron(SCHEDULE),
-              secrets=[run_secret], max_containers=1)
+# One at a time: a second call waits for the first, which it has to start from. Unscheduled since the channel became
+# Atlas in Numbers; kept so the History lane can still be run by hand.
+@app.function(image=run_image, cpu=1.0, memory=2048, timeout=2 * 3600, secrets=[run_secret], max_containers=1)
 def studio_run(trigger: str = "schedule", args: list[str] | None = None) -> dict:
     """One studio run (`ytc auto`) on a fresh clone of the repo; what it changed is pushed back."""
     logging.basicConfig(level=logging.INFO, format="%(asctime)s %(levelname)s %(name)s: %(message)s", datefmt="%H:%M:%S")
@@ -369,6 +369,89 @@ def studio_run(trigger: str = "schedule", args: list[str] | None = None) -> dict
     if code:
         why = f"ran over {RUN_MINUTES} minutes and was stopped" if code == 124 else f"failed (exit {code})"
         _alert(f"The studio's run on Modal {why}. Its log: modal.com > creature-receipts > studio_run.")
+    return {"exit": code, "saved": saved, "minutes": round((datetime.now(timezone.utc) - started).total_seconds() / 60, 1)}
+
+
+# 14:10 UTC: 10:10 in New York, so the day's Short is in Buffer well before its 19:00 ET slot (atlas.publish.SLOT).
+ATLAS_SCHEDULE = "10 14 * * *"
+ATLAS_MINUTES = 50
+# A channel that has had nothing go out for this long has stopped, whatever the runs say.
+ATLAS_QUIET_HOURS = 36
+
+
+def _atlas_quiet(now: datetime) -> str | None:
+    records = [json.loads(p.read_text(encoding="utf-8")) for p in (CHECKOUT / "content" / "atlas").glob("atlas*/publish.json")]
+    due = [datetime.fromisoformat(r["due_at"]) for r in records if r.get("due_at")]
+    past = [d for d in due if d <= now]
+    if not due or not past:
+        return None
+    hours = (now - max(past)).total_seconds() / 3600
+    if hours > ATLAS_QUIET_HOURS and not any(d > now for d in due):
+        return f"Atlas in Numbers hasn't had a Short due for {hours:.0f} hours and none is queued."
+    return None
+
+
+@app.function(image=image, cpu=0.25, memory=512, timeout=300, secrets=[run_secret])
+def buffer_queue(delete_ids: list[str] | None = None) -> dict:
+    """The YouTube channel's Buffer posts that haven't gone out (id, status, due time, start of the text), after
+    deleting any listed in delete_ids, and which publishing keys the run secret has (names only)."""
+    from . import publish
+    from .atlas import publish as atlas_publish  # noqa: F401  (sets the Buffer channel id)
+
+    keys = {k: bool(os.environ.get(k)) for k in ("BUFFER_API_KEY", "BUFFER_ORG_ID", "CLOUDINARY_URL", "YTC_NTFY_TOPIC",
+                                                 "YTC_DEPLOY_KEY", "YTC_GEMINI_API_KEY")}
+    if not keys["BUFFER_API_KEY"]:
+        return {"keys": keys, "posts": None}
+    for post_id in delete_ids or []:
+        publish.delete_post(post_id)
+    found = publish.posts(since=datetime.now(timezone.utc) - timedelta(days=2))
+    return {"keys": keys, "posts": [{"id": p["id"], "status": p["status"], "due": p.get("dueAt"),
+                                     "text": (p.get("text") or "")[:80]} for p in found if p["status"] != "sent"]}
+
+
+@app.function(image=image, cpu=4.0, memory=6144, timeout=3600, secrets=[run_secret], volumes={"/cache": cache})
+def atlas_preview(topic: dict, episode_id: str = "preview") -> tuple[str, bytes]:
+    """Write and render one topic without publishing or saving anything: (atlas.yaml text, the MP4)."""
+    from .atlas import pipeline
+
+    logging.basicConfig(level=logging.INFO, format="%(asctime)s %(levelname)s %(name)s: %(message)s", datefmt="%H:%M:%S")
+    pipeline.EPISODES = Path(tempfile.mkdtemp())
+    _, folder, _, video = pipeline.make(topic, episode_id)
+    cache.commit()
+    return (folder / "atlas.yaml").read_text(encoding="utf-8"), video.read_bytes()
+
+
+@app.function(image=run_image, cpu=4.0, memory=6144, timeout=3600, schedule=modal.Cron(ATLAS_SCHEDULE),
+              secrets=[run_secret], volumes={"/cache": cache}, max_containers=1)
+def atlas_run(trigger: str = "schedule", args: list[str] | None = None) -> dict:
+    """One Atlas run (`ytc atlas`) on a fresh clone: write, render and schedule the next Short, then push its files."""
+    logging.basicConfig(level=logging.INFO, format="%(asctime)s %(levelname)s %(name)s: %(message)s", datefmt="%H:%M:%S")
+    started = datetime.now(timezone.utc)
+    try:
+        _checkout()
+    except Exception as err:
+        _alert(f"The Atlas run on Modal couldn't start: {err}"[:900])
+        raise
+    env = {**os.environ, "PYTHONPATH": str(CHECKOUT / "pipeline" / "src"), "PYTHONUNBUFFERED": "1"}
+    command = [sys.executable, "-c", "import ytc; ytc.main()", "atlas", *(args or [])]
+    try:
+        code = subprocess.run(command, cwd=CHECKOUT / "pipeline", env=env, timeout=ATLAS_MINUTES * 60).returncode
+    except subprocess.TimeoutExpired:
+        code = 124
+    cache.commit()
+    try:
+        saved = _save(f"atlas: Modal run {started:%Y-%m-%d %H:%M} UTC ({trigger})")
+    except Exception as err:
+        _alert(f"The Atlas run on Modal couldn't save what it did: {err}"[:900])
+        raise
+    if code == 3:
+        _alert("Atlas in Numbers has a Short ready but can't publish: the Modal secret has no Buffer key or "
+               "Cloudinary URL. Run kit/atlas_keys.py on the Mac (MODAL_PROFILE=aksha-shivam18).")
+    elif code:
+        why = f"ran over {ATLAS_MINUTES} minutes and was stopped" if code == 124 else f"failed (exit {code})"
+        _alert(f"The Atlas run on Modal {why}. Its log: modal.com > creature-receipts > atlas_run.")
+    if quiet := _atlas_quiet(datetime.now(timezone.utc)):
+        _alert(quiet)
     return {"exit": code, "saved": saved, "minutes": round((datetime.now(timezone.utc) - started).total_seconds() / 60, 1)}
 
 

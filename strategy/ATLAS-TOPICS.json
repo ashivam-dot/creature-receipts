@@ -1,0 +1,942 @@
+{
+ "topics": [
+  {
+   "id": "t001",
+   "topic": "Mobile phones outnumber people",
+   "angle": "Where SIM cards outnumber humans, and the giant country that doesn't.",
+   "format": "map_reveal",
+   "dataset": {
+    "kind": "worldbank",
+    "indicator": "IT.CEL.SETS.P2",
+    "label": "Mobile subscriptions per 100 people",
+    "unit": "per 100",
+    "source": "World Bank",
+    "min_year": 2019
+   },
+   "scale": {
+    "kind": "threshold",
+    "at": 100,
+    "labels": [
+     "More than people",
+     "Fewer"
+    ]
+   },
+   "value_format": "{v:.0f} per 100",
+   "source_url": "https://data.worldbank.org/indicator/IT.CEL.SETS.P2",
+   "publisher_note": "World Telecommunication/ICT Indicators Database, International Telecommunication Union (ITU)",
+   "status": "making:atlas001"
+  },
+  {
+   "id": "t002",
+   "topic": "The countries that are shrinking",
+   "angle": "Which countries now lose people every year.",
+   "format": "map_reveal",
+   "dataset": {
+    "kind": "worldbank",
+    "indicator": "SP.POP.GROW",
+    "label": "Population growth, annual %",
+    "unit": "%",
+    "source": "World Bank",
+    "min_year": 2019
+   },
+   "scale": {
+    "kind": "threshold",
+    "at": 0,
+    "labels": [
+     "Growing",
+     "Shrinking"
+    ]
+   },
+   "value_format": "{v:.1f}%",
+   "source_url": "https://data.worldbank.org/indicator/SP.POP.GROW",
+   "publisher_note": "World Population Prospects, United Nations (UN), note: Derived from total population, publisher: UN Population Division;\nStatistical databases and publications from national statistical offices, Natio",
+   "status": "open"
+  },
+  {
+   "id": "t003",
+   "topic": "Below replacement: the fertility map",
+   "angle": "2.1 births keeps a population stable; most of the world is now below it.",
+   "format": "map_reveal",
+   "dataset": {
+    "kind": "worldbank",
+    "indicator": "SP.DYN.TFRT.IN",
+    "label": "Births per woman",
+    "unit": "births per woman",
+    "source": "World Bank",
+    "min_year": 2019
+   },
+   "scale": {
+    "kind": "threshold",
+    "at": 2.1,
+    "labels": [
+     "2.1 or more",
+     "Below 2.1"
+    ]
+   },
+   "value_format": "{v:.1f}",
+   "source_url": "https://data.worldbank.org/indicator/SP.DYN.TFRT.IN",
+   "publisher_note": "World Population Prospects, United Nations (UN), publisher: UN Population Division;\nStatistical databases and publications from national statistical offices, National Statistical Offices (NSOs);\nDemog",
+   "status": "open"
+  },
+  {
+   "id": "t004",
+   "topic": "Where people live past 80",
+   "angle": "The short list of countries where babies are expected to pass 80.",
+   "format": "map_reveal",
+   "dataset": {
+    "kind": "worldbank",
+    "indicator": "SP.DYN.LE00.IN",
+    "label": "Life expectancy at birth",
+    "unit": "years",
+    "source": "World Bank",
+    "min_year": 2019
+   },
+   "scale": {
+    "kind": "threshold",
+    "at": 80,
+    "labels": [
+     "80+ years",
+     "Under 80"
+    ]
+   },
+   "value_format": "{v:.0f} years",
+   "source_url": "https://data.worldbank.org/indicator/SP.DYN.LE00.IN",
+   "publisher_note": "World Population Prospects, United Nations (UN), uri: UN Population Division;\nStatistical databases and publications from national statistical offices, National Statistical Offices (NSOs), note: Deriv",
+   "status": "open"
+  },
+  {
+   "id": "t005",
+   "topic": "The oldest countries on Earth",
+   "angle": "Where one in four people is over 65, and where almost no one is.",
+   "format": "map_reveal",
+   "dataset": {
+    "kind": "worldbank",
+    "indicator": "SP.POP.65UP.TO.ZS",
+    "label": "Share of people aged 65+",
+    "unit": "%",
+    "source": "World Bank",
+    "min_year": 2019
+   },
+   "scale": {
+    "kind": "bins",
+    "edges": [
+     5,
+     10,
+     15,
+     20,
+     25
+    ],
+    "labels": [
+     "<5%",
+     "5-10",
+     "10-15",
+     "15-20",
+     "20-25",
+     "25%+"
+    ]
+   },
+   "value_format": "{v:.0f}%",
+   "source_url": "https://data.worldbank.org/indicator/SP.POP.65UP.TO.ZS",
+   "publisher_note": "World Population Prospects, United Nations (UN), publisher: UN Population Division",
+   "status": "open"
+  },
+  {
+   "id": "t007",
+   "topic": "Mostly city, or mostly countryside?",
+   "angle": "Where the majority still lives outside cities.",
+   "format": "map_reveal",
+   "dataset": {
+    "kind": "worldbank",
+    "indicator": "SP.URB.TOTL.IN.ZS",
+    "label": "Share of people living in cities",
+    "unit": "%",
+    "source": "World Bank",
+    "min_year": 2019
+   },
+   "scale": {
+    "kind": "threshold",
+    "at": 50,
+    "labels": [
+     "Mostly urban",
+     "Mostly rural"
+    ]
+   },
+   "value_format": "{v:.0f}%",
+   "source_url": "https://data.worldbank.org/indicator/SP.URB.TOTL.IN.ZS",
+   "publisher_note": "World Urbanization Prospects, United Nations (UN), uri: https://population",
+   "status": "open"
+  },
+  {
+   "id": "t008",
+   "topic": "The countries that are mostly forest",
+   "angle": "Countries that are mostly trees, and deserts with almost none.",
+   "format": "map_reveal",
+   "dataset": {
+    "kind": "worldbank",
+    "indicator": "AG.LND.FRST.ZS",
+    "label": "Forest cover, share of land",
+    "unit": "%",
+    "source": "World Bank",
+    "min_year": 2019
+   },
+   "scale": {
+    "kind": "bins",
+    "edges": [
+     10,
+     25,
+     40,
+     55,
+     70
+    ],
+    "labels": [
+     "<10%",
+     "10-25",
+     "25-40",
+     "40-55",
+     "55-70",
+     "70%+"
+    ]
+   },
+   "value_format": "{v:.0f}%",
+   "source_url": "https://data.worldbank.org/indicator/AG.LND.FRST.ZS",
+   "publisher_note": "FAOSTAT, Food and Agriculture Organization of the United Nations (FAO), uri: https://www",
+   "status": "open"
+  },
+  {
+   "id": "t009",
+   "topic": "Who's still offline",
+   "angle": "The countries where most people have never used the internet.",
+   "format": "map_reveal",
+   "dataset": {
+    "kind": "worldbank",
+    "indicator": "IT.NET.USER.ZS",
+    "label": "Share of people using the internet",
+    "unit": "%",
+    "source": "World Bank",
+    "min_year": 2019
+   },
+   "scale": {
+    "kind": "threshold",
+    "at": 50,
+    "labels": [
+     "Most online",
+     "Most offline"
+    ]
+   },
+   "value_format": "{v:.0f}%",
+   "source_url": "https://data.worldbank.org/indicator/IT.NET.USER.ZS",
+   "publisher_note": "World Telecommunication/ICT Indicators Database, International Telecommunication Union (ITU), uri: https://datahub",
+   "status": "open"
+  },
+  {
+   "id": "t010",
+   "topic": "Lights on: access to electricity",
+   "angle": "Where electricity is still not a given.",
+   "format": "map_reveal",
+   "dataset": {
+    "kind": "worldbank",
+    "indicator": "EG.ELC.ACCS.ZS",
+    "label": "Share of people with electricity",
+    "unit": "%",
+    "source": "World Bank",
+    "min_year": 2019
+   },
+   "scale": {
+    "kind": "bins",
+    "edges": [
+     25,
+     50,
+     75,
+     95,
+     99.5
+    ],
+    "labels": [
+     "<25%",
+     "25-50",
+     "50-75",
+     "75-95",
+     "95-99",
+     "~100%"
+    ]
+   },
+   "value_format": "{v:.0f}%",
+   "source_url": "https://data.worldbank.org/indicator/EG.ELC.ACCS.ZS",
+   "publisher_note": "SDG 7",
+   "status": "open"
+  },
+  {
+   "id": "t011",
+   "topic": "The emptiest and most crowded countries",
+   "angle": "Crowded islands versus near-empty giants.",
+   "format": "map_reveal",
+   "dataset": {
+    "kind": "worldbank",
+    "indicator": "EN.POP.DNST",
+    "label": "People per square kilometre",
+    "unit": "per km²",
+    "source": "World Bank",
+    "min_year": 2019
+   },
+   "scale": {
+    "kind": "bins",
+    "edges": [
+     10,
+     25,
+     50,
+     100,
+     250
+    ],
+    "labels": [
+     "<10",
+     "10-25",
+     "25-50",
+     "50-100",
+     "100-250",
+     "250+"
+    ]
+   },
+   "value_format": "{v:,.0f}",
+   "source_url": "https://data.worldbank.org/indicator/EN.POP.DNST",
+   "publisher_note": "FAO population estimates, Food and Agriculture Organization of the United Nations (FAO), publisher: Food and Agriculture Organization of the United Nations (FAO);\nWorld Bank population estimates, Worl",
+   "status": "open"
+  },
+  {
+   "id": "t012",
+   "topic": "Where money sent home runs the economy",
+   "angle": "Countries where money from workers abroad is a fifth of the economy.",
+   "format": "map_reveal",
+   "dataset": {
+    "kind": "worldbank",
+    "indicator": "BX.TRF.PWKR.DT.GD.ZS",
+    "label": "Remittances received, % of GDP",
+    "unit": "% of GDP",
+    "source": "World Bank",
+    "min_year": 2019
+   },
+   "scale": {
+    "kind": "bins",
+    "edges": [
+     1,
+     3,
+     5,
+     10,
+     20
+    ],
+    "labels": [
+     "<1%",
+     "1-3",
+     "3-5",
+     "5-10",
+     "10-20",
+     "20%+"
+    ]
+   },
+   "value_format": "{v:.0f}%",
+   "source_url": "https://data.worldbank.org/indicator/BX.TRF.PWKR.DT.GD.ZS",
+   "publisher_note": "Staff estimates, World Bank (WB);\nIMF balance of payments data, International Monetary Fund (IMF);\nWorld Bank GDP estimates, World Bank (WB);\nOECD GDP estimates, Organisation for Economic Co-operation",
+   "status": "open"
+  },
+  {
+   "id": "t013",
+   "topic": "Renewables: who's already there",
+   "angle": "The surprising countries that already run mostly on renewables.",
+   "format": "map_reveal",
+   "dataset": {
+    "kind": "worldbank",
+    "indicator": "EG.FEC.RNEW.ZS",
+    "label": "Renewable share of energy use",
+    "unit": "%",
+    "source": "World Bank",
+    "min_year": 2019
+   },
+   "scale": {
+    "kind": "bins",
+    "edges": [
+     10,
+     25,
+     50,
+     75,
+     90
+    ],
+    "labels": [
+     "<10%",
+     "10-25",
+     "25-50",
+     "50-75",
+     "75-90",
+     "90%+"
+    ]
+   },
+   "value_format": "{v:.0f}%",
+   "source_url": "https://data.worldbank.org/indicator/EG.FEC.RNEW.ZS",
+   "publisher_note": "IEA Energy Statistics Data Browser, International Energy Agency (IEA), uri: https://www",
+   "status": "open"
+  },
+  {
+   "id": "t014",
+   "topic": "The air you breathe",
+   "angle": "Where the average air is cleanest and dirtiest.",
+   "format": "map_reveal",
+   "dataset": {
+    "kind": "worldbank",
+    "indicator": "EN.ATM.PM25.MC.M3",
+    "label": "Average PM2.5 air pollution",
+    "unit": "micrograms per m³",
+    "source": "World Bank",
+    "min_year": 2019
+   },
+   "scale": {
+    "kind": "bins",
+    "edges": [
+     10,
+     20,
+     35,
+     50,
+     70
+    ],
+    "labels": [
+     "<10",
+     "10-20",
+     "20-35",
+     "35-50",
+     "50-70",
+     "70+"
+    ]
+   },
+   "value_format": "{v:.0f}",
+   "source_url": "https://data.worldbank.org/indicator/EN.ATM.PM25.MC.M3",
+   "publisher_note": "Global Burden of Disease Study 2023 (GBD 2023) Air Pollution Exposure Estimates and Risk Curves 1990-2023, GBD Collaborator Network, uri: https://ghdx",
+   "status": "open"
+  },
+  {
+   "id": "t015",
+   "topic": "Farmland planet",
+   "angle": "Countries that are mostly farms or pasture.",
+   "format": "map_reveal",
+   "dataset": {
+    "kind": "worldbank",
+    "indicator": "AG.LND.AGRI.ZS",
+    "label": "Agricultural land, share of land",
+    "unit": "%",
+    "source": "World Bank",
+    "min_year": 2019
+   },
+   "scale": {
+    "kind": "bins",
+    "edges": [
+     10,
+     25,
+     40,
+     55,
+     70
+    ],
+    "labels": [
+     "<10%",
+     "10-25",
+     "25-40",
+     "40-55",
+     "55-70",
+     "70%+"
+    ]
+   },
+   "value_format": "{v:.0f}%",
+   "source_url": "https://data.worldbank.org/indicator/AG.LND.AGRI.ZS",
+   "publisher_note": "FAO electronic files and web site, Food and Agriculture Organization of the United Nations (FAO), publisher: Food and Agriculture Organization of the United Nations (FAO)",
+   "status": "open"
+  },
+  {
+   "id": "t016",
+   "topic": "Doctors per person",
+   "angle": "From over 5 doctors per thousand people to almost none.",
+   "format": "map_reveal",
+   "dataset": {
+    "kind": "worldbank",
+    "indicator": "SH.MED.PHYS.ZS",
+    "label": "Doctors per 1,000 people",
+    "unit": "per 1,000",
+    "source": "World Bank",
+    "min_year": 2019
+   },
+   "scale": {
+    "kind": "bins",
+    "edges": [
+     0.5,
+     1,
+     2,
+     3,
+     4
+    ],
+    "labels": [
+     "<0.5",
+     "0.5-1",
+     "1-2",
+     "2-3",
+     "3-4",
+     "4+"
+    ]
+   },
+   "value_format": "{v:.1f}",
+   "source_url": "https://data.worldbank.org/indicator/SH.MED.PHYS.ZS",
+   "publisher_note": "Global Health Workforce Statistics, World Health Organization (WHO);\nOrganisation for Economic Co-operation and Development (OECD);\nCountry data",
+   "status": "open"
+  },
+  {
+   "id": "t017",
+   "topic": "Fast home internet",
+   "angle": "Home broadband is rare in most of the world, even where phones are everywhere.",
+   "format": "map_reveal",
+   "dataset": {
+    "kind": "worldbank",
+    "indicator": "IT.NET.BBND.P2",
+    "label": "Fixed broadband per 100 people",
+    "unit": "per 100",
+    "source": "World Bank",
+    "min_year": 2019
+   },
+   "scale": {
+    "kind": "bins",
+    "edges": [
+     1,
+     5,
+     15,
+     30,
+     40
+    ],
+    "labels": [
+     "<1",
+     "1-5",
+     "5-15",
+     "15-30",
+     "30-40",
+     "40+"
+    ]
+   },
+   "value_format": "{v:.0f} per 100",
+   "source_url": "https://data.worldbank.org/indicator/IT.NET.BBND.P2",
+   "publisher_note": "World Telecommunication/ICT Indicators Database, International Telecommunication Union (ITU)",
+   "status": "open"
+  },
+  {
+   "id": "t018",
+   "topic": "Safe drinking water",
+   "angle": "Where clean water at home is still not universal.",
+   "format": "map_reveal",
+   "dataset": {
+    "kind": "worldbank",
+    "indicator": "SH.H2O.BASW.ZS",
+    "label": "Basic drinking water access",
+    "unit": "%",
+    "source": "World Bank",
+    "min_year": 2019
+   },
+   "scale": {
+    "kind": "bins",
+    "edges": [
+     50,
+     70,
+     85,
+     95,
+     99.5
+    ],
+    "labels": [
+     "<50%",
+     "50-70",
+     "70-85",
+     "85-95",
+     "95-99",
+     "~100%"
+    ]
+   },
+   "value_format": "{v:.0f}%",
+   "source_url": "https://data.worldbank.org/indicator/SH.H2O.BASW.ZS",
+   "publisher_note": "WHO/UNICEF Joint Monitoring Programme (JMP) for Water Supply, Sanitation and Hygiene, World Health Organization (WHO), uri: washdata",
+   "status": "open"
+  },
+  {
+   "id": "t019",
+   "topic": "One city holds the country",
+   "angle": "Countries where one city holds most of the urban population.",
+   "format": "map_reveal",
+   "dataset": {
+    "kind": "worldbank",
+    "indicator": "EN.URB.LCTY.UR.ZS",
+    "label": "Share of city dwellers in the largest city",
+    "unit": "% of urban",
+    "source": "World Bank",
+    "min_year": 2019
+   },
+   "scale": {
+    "kind": "threshold",
+    "at": 50,
+    "labels": [
+     "One city has half+",
+     "Spread out"
+    ]
+   },
+   "value_format": "{v:.0f}%",
+   "source_url": "https://data.worldbank.org/indicator/EN.URB.LCTY.UR.ZS",
+   "publisher_note": "World Urbanization Prospects 2018, United Nations (UN), uri: https://population",
+   "status": "open"
+  },
+  {
+   "id": "t020",
+   "topic": "Cropland: where the land is ploughed",
+   "angle": "Countries where almost every field is cropland, and where almost none can be.",
+   "format": "map_reveal",
+   "dataset": {
+    "kind": "worldbank",
+    "indicator": "AG.LND.ARBL.ZS",
+    "label": "Arable land, share of land",
+    "unit": "%",
+    "source": "World Bank",
+    "min_year": 2019
+   },
+   "scale": {
+    "kind": "bins",
+    "edges": [
+     5,
+     10,
+     20,
+     30,
+     45
+    ],
+    "labels": [
+     "<5%",
+     "5-10",
+     "10-20",
+     "20-30",
+     "30-45",
+     "45%+"
+    ]
+   },
+   "value_format": "{v:.0f}%",
+   "source_url": "https://data.worldbank.org/indicator/AG.LND.ARBL.ZS",
+   "publisher_note": "FAO electronic files and website, Food and Agriculture Organization of the United Nations (FAO), publisher: Food and Agriculture Organization of the United Nations (FAO)",
+   "status": "open"
+  },
+  {
+   "id": "t021",
+   "topic": "Protected nature",
+   "angle": "Who already protects 30% of their land, the global 2030 target.",
+   "format": "map_reveal",
+   "dataset": {
+    "kind": "worldbank",
+    "indicator": "ER.LND.PTLD.ZS",
+    "label": "Protected land, share of land",
+    "unit": "%",
+    "source": "World Bank",
+    "min_year": 2019
+   },
+   "scale": {
+    "kind": "bins",
+    "edges": [
+     5,
+     10,
+     17,
+     30,
+     40
+    ],
+    "labels": [
+     "<5%",
+     "5-10",
+     "10-17",
+     "17-30",
+     "30-40",
+     "40%+"
+    ]
+   },
+   "value_format": "{v:.0f}%",
+   "source_url": "https://data.worldbank.org/indicator/ER.LND.PTLD.ZS",
+   "publisher_note": "Protected Planet: The World Database on Protected Areas (WDPA) and World Database on Other Effective Area-based Conservation Measures (WD-OECM), UN Environment Programme World Conservation Monitoring ",
+   "status": "open"
+  },
+  {
+   "id": "t022",
+   "topic": "Women at work",
+   "angle": "Where most women work for pay, and where few do.",
+   "format": "map_reveal",
+   "dataset": {
+    "kind": "worldbank",
+    "indicator": "SL.TLF.CACT.FE.ZS",
+    "label": "Women in the labour force",
+    "unit": "%",
+    "source": "World Bank",
+    "min_year": 2019
+   },
+   "scale": {
+    "kind": "bins",
+    "edges": [
+     20,
+     35,
+     45,
+     55,
+     65
+    ],
+    "labels": [
+     "<20%",
+     "20-35",
+     "35-45",
+     "45-55",
+     "55-65",
+     "65%+"
+    ]
+   },
+   "value_format": "{v:.0f}%",
+   "source_url": "https://data.worldbank.org/indicator/SL.TLF.CACT.FE.ZS",
+   "publisher_note": "ILO Modelled Estimates database (ILOEST), International Labour Organization (ILO), uri: https://ilostat",
+   "status": "open"
+  },
+  {
+   "id": "t023",
+   "topic": "Old-age dependency",
+   "angle": "How many retirees every 100 workers support.",
+   "format": "map_reveal",
+   "dataset": {
+    "kind": "worldbank",
+    "indicator": "SP.POP.DPND.OL",
+    "label": "People 65+ per 100 working-age",
+    "unit": "per 100",
+    "source": "World Bank",
+    "min_year": 2019
+   },
+   "scale": {
+    "kind": "bins",
+    "edges": [
+     5,
+     10,
+     20,
+     30,
+     40
+    ],
+    "labels": [
+     "<5",
+     "5-10",
+     "10-20",
+     "20-30",
+     "30-40",
+     "40+"
+    ]
+   },
+   "value_format": "{v:.0f} per 100",
+   "source_url": "https://data.worldbank.org/indicator/SP.POP.DPND.OL",
+   "publisher_note": "World Population Prospects, United Nations (UN), publisher: UN Population Division;\nStaff estimates, World Bank (WB)",
+   "status": "open"
+  },
+  {
+   "id": "t024",
+   "topic": "Birth rate map",
+   "angle": "Where births are booming and where they've nearly stalled.",
+   "format": "map_reveal",
+   "dataset": {
+    "kind": "worldbank",
+    "indicator": "SP.DYN.CBRT.IN",
+    "label": "Births per 1,000 people",
+    "unit": "per 1,000",
+    "source": "World Bank",
+    "min_year": 2019
+   },
+   "scale": {
+    "kind": "bins",
+    "edges": [
+     8,
+     12,
+     20,
+     30,
+     38
+    ],
+    "labels": [
+     "<8",
+     "8-12",
+     "12-20",
+     "20-30",
+     "30-38",
+     "38+"
+    ]
+   },
+   "value_format": "{v:.0f}",
+   "source_url": "https://data.worldbank.org/indicator/SP.DYN.CBRT.IN",
+   "publisher_note": "World Population Prospects, United Nations (UN), publisher: UN Population Division;\nStatistical databases and publications from national statistical offices, National Statistical Offices (NSOs);\nDemog",
+   "status": "open"
+  },
+  {
+   "id": "t025",
+   "topic": "Migrants: the share born abroad",
+   "angle": "Countries where most residents were born somewhere else.",
+   "format": "map_reveal",
+   "dataset": {
+    "kind": "worldbank",
+    "indicator": "SM.POP.TOTL.ZS",
+    "label": "Share of people born abroad",
+    "unit": "%",
+    "source": "World Bank",
+    "min_year": 2019
+   },
+   "scale": {
+    "kind": "bins",
+    "edges": [
+     1,
+     5,
+     10,
+     20,
+     40
+    ],
+    "labels": [
+     "<1%",
+     "1-5",
+     "5-10",
+     "10-20",
+     "20-40",
+     "40%+"
+    ]
+   },
+   "value_format": "{v:.0f}%",
+   "source_url": "https://data.worldbank.org/indicator/SM.POP.TOTL.ZS",
+   "publisher_note": "International Migrant Stock, United Nations (UN), publisher: UN Population Division",
+   "status": "open"
+  },
+  {
+   "id": "t026",
+   "topic": "Health spending per person",
+   "angle": "The 100-fold gap in what countries spend on health per person.",
+   "format": "map_reveal",
+   "dataset": {
+    "kind": "worldbank",
+    "indicator": "SH.XPD.CHEX.PC.CD",
+    "label": "Health spending per person",
+    "unit": "US dollars",
+    "source": "World Bank",
+    "min_year": 2019
+   },
+   "scale": {
+    "kind": "bins",
+    "edges": [
+     100,
+     300,
+     1000,
+     3000,
+     6000
+    ],
+    "labels": [
+     "<$100",
+     "100-300",
+     "300-1k",
+     "1k-3k",
+     "3k-6k",
+     "$6k+"
+    ]
+   },
+   "value_format": "${v:,.0f}",
+   "source_url": "https://data.worldbank.org/indicator/SH.XPD.CHEX.PC.CD",
+   "publisher_note": "Global Health Expenditure Database, updated December 12th, 2025, World Health Organization (WHO), uri: http://apps",
+   "status": "open"
+  },
+  {
+   "id": "t027",
+   "topic": "Education spending",
+   "angle": "Who spends the biggest share of their economy on schools.",
+   "format": "map_reveal",
+   "dataset": {
+    "kind": "worldbank",
+    "indicator": "SE.XPD.TOTL.GD.ZS",
+    "label": "Education spending, % of GDP",
+    "unit": "% of GDP",
+    "source": "World Bank",
+    "min_year": 2019
+   },
+   "scale": {
+    "kind": "bins",
+    "edges": [
+     2,
+     3,
+     4,
+     5,
+     6
+    ],
+    "labels": [
+     "<2%",
+     "2-3",
+     "3-4",
+     "4-5",
+     "5-6",
+     "6%+"
+    ]
+   },
+   "value_format": "{v:.1f}%",
+   "source_url": "https://data.worldbank.org/indicator/SE.XPD.TOTL.GD.ZS",
+   "publisher_note": "Data API, UN Educational, Scientific and Cultural Organization (UNESCO), uri: https://databrowser",
+   "status": "open"
+  },
+  {
+   "id": "t029",
+   "topic": "Farming's share of the economy",
+   "angle": "Where farming is still a big part of the economy.",
+   "format": "map_reveal",
+   "dataset": {
+    "kind": "worldbank",
+    "indicator": "NV.AGR.TOTL.ZS",
+    "label": "Agriculture, % of GDP",
+    "unit": "% of GDP",
+    "source": "World Bank",
+    "min_year": 2019
+   },
+   "scale": {
+    "kind": "bins",
+    "edges": [
+     2,
+     5,
+     10,
+     20,
+     30
+    ],
+    "labels": [
+     "<2%",
+     "2-5",
+     "5-10",
+     "10-20",
+     "20-30",
+     "30%+"
+    ]
+   },
+   "value_format": "{v:.0f}%",
+   "source_url": "https://data.worldbank.org/indicator/NV.AGR.TOTL.ZS",
+   "publisher_note": "Country official statistics, National Statistical Organizations and/or Central Banks;\nNational Accounts data files, Organisation for Economic Co-operation and Development (OECD);\nStaff estimates, Worl",
+   "status": "open"
+  },
+  {
+   "id": "t030",
+   "topic": "GDP per person",
+   "angle": "The size of the economy per person, and the extreme ends.",
+   "format": "map_reveal",
+   "dataset": {
+    "kind": "worldbank",
+    "indicator": "NY.GDP.PCAP.CD",
+    "label": "GDP per person",
+    "unit": "US dollars",
+    "source": "World Bank",
+    "min_year": 2019
+   },
+   "scale": {
+    "kind": "bins",
+    "edges": [
+     1000,
+     4000,
+     13000,
+     30000,
+     60000
+    ],
+    "labels": [
+     "<$1k",
+     "1-4k",
+     "4-13k",
+     "13-30k",
+     "30-60k",
+     "$60k+"
+    ]
+   },
+   "value_format": "${v:,.0f}",
+   "source_url": "https://data.worldbank.org/indicator/NY.GDP.PCAP.CD",
+   "publisher_note": "Country official statistics, National Statistical Organizations and/or Central Banks;\nNational Accounts data files, Organisation for Economic Co-operation and Development (OECD);\nStaff estimates, Worl",
+   "status": "open"
+  }
+ ]
+}

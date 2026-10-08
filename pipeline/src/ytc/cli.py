@@ -66,6 +66,9 @@ def main() -> None:
     produce.add_argument("--series", required=True)
     produce.add_argument("--id", help="episode id (default: the next free epNNN)")
     produce.add_argument("--at", help="anniversary date (YYYY-MM-DD) to publish on")
+    atlas = commands.add_parser("atlas", help="Atlas in Numbers: make (and schedule) the next data-map Short")
+    atlas.add_argument("--no-publish", action="store_true", help="render only; don't host or schedule")
+    atlas.add_argument("--render", type=Path, help="render this atlas.yaml as it is, without writing or publishing")
     args = parser.parse_args()
     logging.basicConfig(level=logging.INFO, format="%(asctime)s %(levelname)s %(name)s: %(message)s", datefmt="%H:%M:%S")
     for noisy in ("httpx", "urllib3", "trafilatura", "primp"):
@@ -142,3 +145,18 @@ def _run(args: argparse.Namespace) -> None:
         from .studio import produce
 
         print(json.dumps(produce(args.topic, args.series, args.id, at=args.at), indent=2))
+    elif args.command == "atlas":
+        if args.render:
+            from .atlas.episode import AtlasEpisode
+            from .atlas.render import render as render_atlas
+
+            print(render_atlas(AtlasEpisode.load(args.render), args.render.parent))
+        else:
+            from .atlas.pipeline import run as run_atlas
+
+            outcome = run_atlas(publish_it=not args.no_publish)
+            print(json.dumps(outcome, indent=2))
+            if outcome["outcome"] in ("failed", "no_topics"):
+                raise SystemExit(1)
+            if outcome["outcome"] == "no_keys":
+                raise SystemExit(3)
