@@ -138,21 +138,24 @@ def published() -> dict:
 
 
 def sync(records: dict | None = None) -> list[str]:
-    """Copy each post the publisher made into its Short's publish.json, mark the topic used, and free the parked
-    video."""
-    done = []
+    """Mirror each post the publisher made into its Short's publish.json and mark the topic used. The parked video
+    is freed only once the post has gone out, so the publisher can still retry a post Buffer failed to send."""
+    changed = []
     for episode_id, record in (records if records is not None else published()).items():
         folder = EPISODES / episode_id
-        if not EPISODE_ID.fullmatch(episode_id) or not folder.is_dir() or (folder / "publish.json").exists():
+        if not EPISODE_ID.fullmatch(episode_id) or not folder.is_dir():
             continue
-        (folder / "publish.json").write_text(json.dumps(record, indent=2) + "\n", encoding="utf-8")
-        if topic := _topic_of(episode_id):
+        path = folder / "publish.json"
+        text = json.dumps(record, indent=2) + "\n"
+        if not path.exists() or path.read_text(encoding="utf-8") != text:
+            path.write_text(text, encoding="utf-8")
+            changed.append(episode_id)
+        if (topic := _topic_of(episode_id)) and topic["status"] != f"used:{episode_id}":
             _mark(topic["id"], f"used:{episode_id}")
         parked = folder / "ready.json"
-        if parked.exists():
+        if record.get("status") == "sent" and parked.exists():
             (outbox() / json.loads(parked.read_text(encoding="utf-8"))["modal_path"]).unlink(missing_ok=True)
-        done.append(episode_id)
-    return done
+    return changed
 
 
 def _pending() -> tuple[str, dict] | None:
@@ -194,9 +197,20 @@ def make_next() -> dict:
 
 
 def run(reserve: int = RESERVE, minutes: float = 40, max_failures: int = 2) -> dict:
-    """One producer run: sync the publisher's posts, then render until `reserve` Shorts are waiting."""
+    """One producer run: sync the publisher's posts, refresh their numbers, top up the topics, then render until
+    `reserve` Shorts are waiting."""
+    from . import stats, topics
+
     started = time.monotonic()
     synced = sync()
+    numbers = stats.update(EPISODES, ROOT)
+    added = []
+    try:
+        cat = _catalogue()
+        if added := topics.refill(cat, numbers):
+            TOPICS.write_text(json.dumps(cat, indent=1, ensure_ascii=False) + "\n", encoding="utf-8")
+    except Exception as err:  # a failed refill mustn't stop today's renders
+        log.exception("topic refill failed: %s", err)
     made, failed = [], []
     while len(ready()) < reserve and time.monotonic() - started < minutes * 60 and len(failed) < max_failures:
         result = make_next()
@@ -206,4 +220,5 @@ def run(reserve: int = RESERVE, minutes: float = 40, max_failures: int = 2) -> d
     waiting = [p.name for p in ready()]
     outcome = "failed" if failed and not waiting else ("no_topics" if not waiting else "ok")
     return {"outcome": outcome, "synced": synced, "made": made, "failed": failed, "waiting": waiting,
+            "new_topics": [t["id"] for t in added], "tracked": len(numbers),
             "open_topics": sum(t.get("status") == "open" for t in _catalogue()["topics"])}

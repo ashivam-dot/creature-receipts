@@ -392,6 +392,48 @@ def _atlas_quiet(now: datetime) -> str | None:
     return None
 
 
+ATLAS_HEALTH = ("https://raw.githubusercontent.com/ashivam-dot/history-last-hours-control/main/atlas/health.json")
+# The publisher runs every 2 hours; this long without a fresh health record means it has stopped.
+ATLAS_PUBLISHER_STALE_HOURS = 5
+ATLAS_REALERT_HOURS = 12
+
+
+def _atlas_publisher_problems(now: datetime) -> list[str]:
+    try:
+        with urllib.request.urlopen(f"{ATLAS_HEALTH}?t={int(now.timestamp())}", timeout=30) as response:
+            health = json.loads(response.read())
+    except Exception as err:
+        return [f"Atlas publisher health can't be read ({type(err).__name__})."]
+    problems = []
+    checked = datetime.fromisoformat(health.get("checked_at", "1970-01-01T00:00:00+00:00"))
+    if (hours := (now - checked).total_seconds() / 3600) > ATLAS_PUBLISHER_STALE_HOURS:
+        problems.append(f"The Atlas publisher (history-last-hours-control, atlas-publish.yml) last ran {hours:.0f} "
+                        "hours ago.")
+    for post in health.get("errors", []):
+        problems.append(f"Buffer couldn't send {post.get('id')}: {str(post.get('error'))[:200]}")
+    if health.get("problem"):
+        problems.append(str(health["problem"])[:300])
+    return problems
+
+
+# Three-hourly: the publisher's health, and the channel's silence check, each pushed once per problem.
+@app.function(image=image, cpu=0.25, memory=512, timeout=300, secrets=[run_secret],
+              schedule=modal.Cron("40 */3 * * *"))
+def atlas_watch() -> list[str]:
+    now = datetime.now(timezone.utc)
+    problems = _atlas_publisher_problems(now)
+    alerted = []
+    for problem in problems:
+        key = "atlas:" + hashlib.sha256(problem.encode()).hexdigest()[:16]
+        last = watch_state.get(key)
+        if last and (now - datetime.fromisoformat(last)).total_seconds() < ATLAS_REALERT_HOURS * 3600:
+            continue
+        _alert(problem)
+        watch_state[key] = now.isoformat()
+        alerted.append(problem)
+    return alerted
+
+
 @app.function(image=image, cpu=0.25, memory=512, timeout=300, secrets=[run_secret])
 def buffer_queue(delete_ids: list[str] | None = None) -> dict:
     """The YouTube channel's Buffer posts that haven't gone out (id, status, due time, start of the text), after
@@ -408,6 +450,20 @@ def buffer_queue(delete_ids: list[str] | None = None) -> dict:
     found = publish.posts(since=datetime.now(timezone.utc) - timedelta(days=2))
     return {"keys": keys, "posts": [{"id": p["id"], "status": p["status"], "due": p.get("dueAt"),
                                      "text": (p.get("text") or "")[:80]} for p in found if p["status"] != "sent"]}
+
+
+@app.function(image=image, cpu=1.0, memory=2048, timeout=1800, secrets=[run_secret])
+def atlas_topics_preview(add: int = 3) -> list[dict]:
+    """New topics `atlas.topics.refill` would add to the current catalogue, without saving them."""
+    from .atlas import topics
+
+    logging.basicConfig(level=logging.INFO, format="%(asctime)s %(levelname)s %(name)s: %(message)s", datefmt="%H:%M:%S")
+    with urllib.request.urlopen("https://raw.githubusercontent.com/ashivam-dot/creature-receipts/main/strategy/"
+                                "ATLAS-TOPICS.json", timeout=30) as response:
+        cat = json.loads(response.read())
+    for t in cat["topics"]:
+        t["status"] = "used"
+    return topics.refill(cat, add=add)
 
 
 @app.function(image=image, cpu=4.0, memory=6144, timeout=3600, secrets=[run_secret], volumes={"/cache": cache})

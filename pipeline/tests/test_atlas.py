@@ -59,7 +59,7 @@ def test_rank_title_only_when_true():
     assert title == ""
 
 
-def test_sync_copies_the_publishers_record(tmp_path, monkeypatch):
+def test_sync_frees_the_video_only_once_sent(tmp_path, monkeypatch):
     import json
 
     from ytc.atlas import pipeline
@@ -67,15 +67,45 @@ def test_sync_copies_the_publishers_record(tmp_path, monkeypatch):
     episodes, box = tmp_path / "atlas", tmp_path / "outbox"
     (episodes / "atlas001").mkdir(parents=True)
     (box / "atlas").mkdir(parents=True)
-    (box / "atlas" / "atlas001-ab.mp4").write_bytes(b"x")
+    video = box / "atlas" / "atlas001-ab.mp4"
+    video.write_bytes(b"x")
     (episodes / "atlas001" / "ready.json").write_text(json.dumps({"modal_path": "atlas/atlas001-ab.mp4"}))
     topics = tmp_path / "topics.json"
     topics.write_text(json.dumps({"topics": [{"id": "t001", "status": "ready:atlas001"}]}))
     monkeypatch.setattr(pipeline, "EPISODES", episodes)
     monkeypatch.setattr(pipeline, "TOPICS", topics)
     monkeypatch.setenv("ATLAS_OUTBOX", str(box))
-    assert pipeline.ready() == [episodes / "atlas001"]
-    assert pipeline.sync({"atlas001": {"id": "atlas001", "due_at": "2026-10-08T12:00:00-04:00"}}) == ["atlas001"]
-    assert (episodes / "atlas001" / "publish.json").exists() and pipeline.ready() == []
-    assert not (box / "atlas" / "atlas001-ab.mp4").exists()
-    assert json.loads(topics.read_text())["topics"][0]["status"] == "used:atlas001"
+    record = {"id": "atlas001", "status": "scheduled", "due_at": "2026-10-08T12:00:00-04:00"}
+    assert pipeline.sync({"atlas001": record}) == ["atlas001"]
+    assert video.exists() and json.loads(topics.read_text())["topics"][0]["status"] == "used:atlas001"
+    assert pipeline.sync({"atlas001": record}) == []
+    assert pipeline.sync({"atlas001": record | {"status": "sent"}}) == ["atlas001"]
+    assert not video.exists()
+
+
+def test_topic_scales_are_checked_against_the_data():
+    from ytc.atlas import topics
+
+    vals = [float(v) for v in range(1, 101)]
+    good = {"label": "Share", "value_format": "{v:.0f}%", "scale": {"kind": "bins", "edges": [10, 30, 50, 70],
+                                                                    "labels": ["a", "b", "c", "d", "e"]}}
+    assert topics.check(good, vals) == []
+    outside = good | {"scale": {"kind": "bins", "edges": [0, 30, 50, 200], "labels": ["a", "b", "c", "d", "e"]}}
+    assert "inside" in " ".join(topics.check(outside, vals))
+    edge = good | {"scale": {"kind": "threshold", "at": 99.5, "labels": ["x", "y"]}}
+    assert "percentile" in " ".join(topics.check(edge, vals))
+    assert topics.NO_GO.search("Armed forces personnel (% of total labor force)")
+    assert topics.RATIO.search("Individuals using the Internet (% of population)")
+
+
+def test_scoreboard_is_rewritten_in_place(tmp_path):
+    from ytc.atlas import stats
+
+    path = tmp_path / "LEARNINGS.md"
+    path.write_text("# x\n\n## Scoreboard\n\nold\n\n## Log\n\n- kept\n")
+    stats._scoreboard(path, [{"id": "atlas001", "title": "T", "format": "map_reveal",
+                              "published": "2026-10-08T16:00:05+00:00", "views": 120, "likes": 3,
+                              "views_per_hour": 12.0}])
+    text = path.read_text()
+    assert "| atlas001 T | map_reveal | 2026-10-08 16:00 UTC | 120 | 3 | 12.0 |" in text
+    assert "old" not in text and "- kept" in text
