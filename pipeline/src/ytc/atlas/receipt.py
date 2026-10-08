@@ -2,6 +2,7 @@
 from __future__ import annotations
 import hashlib
 import json
+import re
 from pathlib import Path
 VERSION = 1
 
@@ -18,6 +19,8 @@ def verify(folder: Path, media_sha: str) -> dict:
         if digest(folder / name) != qa.get(field):
             raise ValueError(f"quality receipt does not bind {name}")
     claims = json.loads((folder / "claims.json").read_text())
+    if not re.fullmatch(r"[0-9a-f]{64}", claims.get("evidence", {}).get("source_response_sha256", "")):
+        raise ValueError("factual receipt lacks original source-response provenance")
     if claims["review"]["errors"] or claims["script_sha256"] != qa["script_sha256"] or claims["data_sha256"] != qa["data_sha256"]:
         raise ValueError("factual acceptance receipt is invalid")
     return qa

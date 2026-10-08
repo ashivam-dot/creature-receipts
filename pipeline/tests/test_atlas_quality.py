@@ -29,7 +29,8 @@ def test_invalid_data_cannot_be_saved(tmp_path, values, years):
 
 def receipt(tmp_path):
     for name in ('atlas.yaml', 'data.json'): (tmp_path / name).write_text(name)
-    claims = {'review': {'errors': []}, 'script_sha256': quality.digest(tmp_path / 'atlas.yaml'),
+    claims = {'review': {'errors': []}, 'evidence': {'source_response_sha256': 'a' * 64},
+              'script_sha256': quality.digest(tmp_path / 'atlas.yaml'),
               'data_sha256': quality.digest(tmp_path / 'data.json')}
     quality.save(tmp_path / 'claims.json', claims)
     qa = {'version': 1, 'passed': True, 'media_sha256': 'abc',
@@ -55,6 +56,16 @@ def test_publisher_rejects_failed_factual_review_even_if_hashes_match(tmp_path):
     qa['claims_sha256'] = quality.digest(tmp_path / 'claims.json')
     quality.save(tmp_path / 'qa.json', qa)
     with pytest.raises(ValueError, match='factual'): quality.verify(tmp_path, 'abc')
+
+
+def test_publisher_rejects_missing_source_provenance_even_if_artifact_hashes_match(tmp_path):
+    qa = receipt(tmp_path)
+    claims = json.loads((tmp_path / 'claims.json').read_text())
+    claims['evidence']['source_response_sha256'] = ''
+    quality.save(tmp_path / 'claims.json', claims)
+    qa['claims_sha256'] = quality.digest(tmp_path / 'claims.json')
+    quality.save(tmp_path / 'qa.json', qa)
+    with pytest.raises(ValueError, match='source-response'): quality.verify(tmp_path, 'abc')
 
 
 def test_description_has_stable_identity_and_mixed_year_disclosure():
