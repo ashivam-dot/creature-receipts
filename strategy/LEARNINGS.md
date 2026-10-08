@@ -34,11 +34,11 @@ rules from two Shorts each and ended up with rules that contradict each other; d
 
 ## Scoreboard
 
-Refreshed by every producer run (`atlas.stats`) from the channel's public feed. Views per hour is over the Short's whole life so far, so compare Shorts of similar age.
+Refreshed by every producer run (`atlas.stats`) from the channel's public feed or Atlas's cloud public-count snapshot. Views per hour is over the Short's whole life so far, so compare Shorts of similar age.
 
 | Short | Topic | Published | Views | Likes | Views per hour |
 |---|---|---|---|---|---|
-
+| atlas001 137 Places Have More Mobile Subscriptions Than People | map_reveal | 2026-10-08 16:01 UTC | 101 | 4 | 32.6 |
 
 ## Log
 
