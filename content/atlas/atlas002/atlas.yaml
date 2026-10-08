@@ -1,0 +1,48 @@
+id: atlas002
+title: 45 countries are shrinking in 2025
+hook_text: FORTY FIVE COUNTRIES
+description: An overview of annual population growth rates across 208 countries showing which nations are shrinking.
+hashtags:
+- '#maps'
+- '#geography'
+- '#data'
+sources:
+- https://data.worldbank.org/indicator/SP.POP.GROW
+dataset:
+  kind: worldbank
+  indicator: SP.POP.GROW
+  label: Population growth, annual %
+  unit: '%'
+  source: World Bank
+  min_year: 2019
+scale:
+  kind: threshold
+  labels:
+  - Growing
+  - Shrinking
+value_format: '{v:.1f}%'
+beats:
+- text: Across the globe, 45 countries are shrinking every single year.
+- text: Yellow is growing at or above 0, and dark blue is shrinking.
+- text: Among these countries, Moldova sits at the bottom, shrinking by 1.8%.
+  shot:
+    kind: country
+    iso: MDA
+- text: China is also shrinking by 0.2%, while India sits at 0.9%.
+  shot:
+    kind: group
+    isos:
+    - CHN
+    - IND
+- text: UAE leads all 208 countries with data at 4.7%.
+  shot:
+    kind: country
+    iso: ARE
+- text: This measures the annual growth rate of the midyear population counting all residents regardless of legal
+    status.
+- text: So where does your country rank?
+  shot:
+    kind: card
+    lines:
+    - Where is your country?
+    - World Bank 2025

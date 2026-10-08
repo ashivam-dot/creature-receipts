@@ -1,0 +1,102 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Cap,Montserrat Black,96,&H00FFFFFF,&H00FFFFFF,&H00000000,&H78000000,0,0,0,0,100,100,0,0,1,9,4,5,60,60,0,1
+Style: Hook,Anton,124,&H0000D4FF,&H0000D4FF,&H38000000,&H00000000,0,0,0,0,100,100,1,0,3,18,0,8,60,60,0,1
+
+Style: Provenance,Montserrat Black,48,&H00FFFFFF,&H00FFFFFF,&H50000000,&H00000000,0,0,0,0,100,100,0,0,3,12,0,8,60,60,0,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.25,0:00:00.57,Cap,,0,0,0,,{\an5\pos(540,1430)\fscx100\fscy100\fscx86\fscy86\t(0,90,\fscx100\fscy100)}{\c&H0000D4FF}ONLY{\c&H00FFFFFF} 47 OF
+Dialogue: 0,0:00:00.57,0:00:01.35,Cap,,0,0,0,,{\an5\pos(540,1430)\fscx100\fscy100}ONLY {\c&H0000D4FF}47{\c&H00FFFFFF} OF
+Dialogue: 0,0:00:01.35,0:00:01.51,Cap,,0,0,0,,{\an5\pos(540,1430)\fscx100\fscy100}ONLY 47 {\c&H0000D4FF}OF{\c&H00FFFFFF}
+Dialogue: 0,0:00:01.51,0:00:02.32,Cap,,0,0,0,,{\an5\pos(540,1430)\fscx100\fscy100\fscx86\fscy86\t(0,90,\fscx100\fscy100)}{\c&H0000D4FF}208{\c&H00FFFFFF} COUNTRIES SEE
+Dialogue: 0,0:00:02.32,0:00:02.82,Cap,,0,0,0,,{\an5\pos(540,1430)\fscx100\fscy100}208 {\c&H0000D4FF}COUNTRIES{\c&H00FFFFFF} SEE
+Dialogue: 0,0:00:02.82,0:00:03.11,Cap,,0,0,0,,{\an5\pos(540,1430)\fscx100\fscy100}208 COUNTRIES {\c&H0000D4FF}SEE{\c&H00FFFFFF}
+Dialogue: 0,0:00:03.11,0:00:03.72,Cap,,0,0,0,,{\an5\pos(540,1430)\fscx100\fscy100\fscx86\fscy86\t(0,90,\fscx100\fscy100)}{\c&H0000D4FF}NEWBORNS{\c&H00FFFFFF} EXPECTED
+Dialogue: 0,0:00:03.72,0:00:04.27,Cap,,0,0,0,,{\an5\pos(540,1430)\fscx100\fscy100}NEWBORNS {\c&H0000D4FF}EXPECTED{\c&H00FFFFFF}
+Dialogue: 0,0:00:04.27,0:00:04.40,Cap,,0,0,0,,{\an5\pos(540,1430)\fscx100\fscy100\fscx86\fscy86\t(0,90,\fscx100\fscy100)}{\c&H0000D4FF}TO{\c&H00FFFFFF} LIVE TO
+Dialogue: 0,0:00:04.40,0:00:04.62,Cap,,0,0,0,,{\an5\pos(540,1430)\fscx100\fscy100}TO {\c&H0000D4FF}LIVE{\c&H00FFFFFF} TO
+Dialogue: 0,0:00:04.62,0:00:04.75,Cap,,0,0,0,,{\an5\pos(540,1430)\fscx100\fscy100}TO LIVE {\c&H0000D4FF}TO{\c&H00FFFFFF}
+Dialogue: 0,0:00:04.75,0:00:06.00,Cap,,0,0,0,,{\an5\pos(540,1430)\fscx100\fscy100\fscx86\fscy86\t(0,90,\fscx100\fscy100)}{\c&H0000D4FF}80{\c&H00FFFFFF}
+Dialogue: 0,0:00:06.00,0:00:06.32,Cap,,0,0,0,,{\an5\pos(540,1430)\fscx100\fscy100\fscx86\fscy86\t(0,90,\fscx100\fscy100)}{\c&H0000D4FF}YELLOW{\c&H00FFFFFF} MARKS
+Dialogue: 0,0:00:06.32,0:00:06.65,Cap,,0,0,0,,{\an5\pos(540,1430)\fscx100\fscy100}YELLOW {\c&H0000D4FF}MARKS{\c&H00FFFFFF}
+Dialogue: 0,0:00:06.65,0:00:07.26,Cap,,0,0,0,,{\an5\pos(540,1430)\fscx100\fscy100\fscx86\fscy86\t(0,90,\fscx100\fscy100)}{\c&H0000D4FF}COUNTRIES{\c&H00FFFFFF} AT OR
+Dialogue: 0,0:00:07.26,0:00:07.48,Cap,,0,0,0,,{\an5\pos(540,1430)\fscx100\fscy100}COUNTRIES {\c&H0000D4FF}AT{\c&H00FFFFFF} OR
+Dialogue: 0,0:00:07.48,0:00:07.62,Cap,,0,0,0,,{\an5\pos(540,1430)\fscx100\fscy100}COUNTRIES AT {\c&H0000D4FF}OR{\c&H00FFFFFF}
+Dialogue: 0,0:00:07.62,0:00:07.95,Cap,,0,0,0,,{\an5\pos(540,1430)\fscx100\fscy100\fscx86\fscy86\t(0,90,\fscx100\fscy100)}{\c&H0000D4FF}ABOVE{\c&H00FFFFFF} 80 WHILE
+Dialogue: 0,0:00:07.95,0:00:08.47,Cap,,0,0,0,,{\an5\pos(540,1430)\fscx100\fscy100}ABOVE {\c&H0000D4FF}80{\c&H00FFFFFF} WHILE
+Dialogue: 0,0:00:08.47,0:00:08.71,Cap,,0,0,0,,{\an5\pos(540,1430)\fscx100\fscy100}ABOVE 80 {\c&H0000D4FF}WHILE{\c&H00FFFFFF}
+Dialogue: 0,0:00:08.71,0:00:09.02,Cap,,0,0,0,,{\an5\pos(540,1430)\fscx100\fscy100\fscx86\fscy86\t(0,90,\fscx100\fscy100)}{\c&H0000D4FF}DARK{\c&H00FFFFFF} BLUE COVERS
+Dialogue: 0,0:00:09.02,0:00:09.32,Cap,,0,0,0,,{\an5\pos(540,1430)\fscx100\fscy100}DARK {\c&H0000D4FF}BLUE{\c&H00FFFFFF} COVERS
+Dialogue: 0,0:00:09.32,0:00:09.72,Cap,,0,0,0,,{\an5\pos(540,1430)\fscx100\fscy100}DARK BLUE {\c&H0000D4FF}COVERS{\c&H00FFFFFF}
+Dialogue: 0,0:00:09.72,0:00:10.85,Cap,,0,0,0,,{\an5\pos(540,1430)\fscx100\fscy100\fscx86\fscy86\t(0,90,\fscx100\fscy100)}{\c&H0000D4FF}161{\c&H00FFFFFF} OTHERS
+Dialogue: 0,0:00:10.85,0:00:12.12,Cap,,0,0,0,,{\an5\pos(540,1430)\fscx100\fscy100}161 {\c&H0000D4FF}OTHERS{\c&H00FFFFFF}
+Dialogue: 0,0:00:12.12,0:00:12.22,Cap,,0,0,0,,{\an5\pos(540,1430)\fscx100\fscy100\fscx86\fscy86\t(0,90,\fscx100\fscy100)}{\c&H0000D4FF}THE{\c&H00FFFFFF} USA SITS
+Dialogue: 0,0:00:12.22,0:00:12.81,Cap,,0,0,0,,{\an5\pos(540,1430)\fscx100\fscy100}THE {\c&H0000D4FF}USA{\c&H00FFFFFF} SITS
+Dialogue: 0,0:00:12.81,0:00:13.08,Cap,,0,0,0,,{\an5\pos(540,1430)\fscx100\fscy100}THE USA {\c&H0000D4FF}SITS{\c&H00FFFFFF}
+Dialogue: 0,0:00:13.08,0:00:13.16,Cap,,0,0,0,,{\an5\pos(540,1430)\fscx100\fscy100\fscx86\fscy86\t(0,90,\fscx100\fscy100)}{\c&H0000D4FF}IN{\c&H00FFFFFF} THE BLUE
+Dialogue: 0,0:00:13.16,0:00:13.26,Cap,,0,0,0,,{\an5\pos(540,1430)\fscx100\fscy100}IN {\c&H0000D4FF}THE{\c&H00FFFFFF} BLUE
+Dialogue: 0,0:00:13.26,0:00:13.57,Cap,,0,0,0,,{\an5\pos(540,1430)\fscx100\fscy100}IN THE {\c&H0000D4FF}BLUE{\c&H00FFFFFF}
+Dialogue: 0,0:00:13.57,0:00:13.73,Cap,,0,0,0,,{\an5\pos(540,1430)\fscx100\fscy100\fscx86\fscy86\t(0,90,\fscx100\fscy100)}{\c&H0000D4FF}AT{\c&H00FFFFFF} 79 YEARS
+Dialogue: 0,0:00:13.73,0:00:14.42,Cap,,0,0,0,,{\an5\pos(540,1430)\fscx100\fscy100}AT {\c&H0000D4FF}79{\c&H00FFFFFF} YEARS
+Dialogue: 0,0:00:14.42,0:00:14.90,Cap,,0,0,0,,{\an5\pos(540,1430)\fscx100\fscy100}AT 79 {\c&H0000D4FF}YEARS{\c&H00FFFFFF}
+Dialogue: 0,0:00:14.90,0:00:15.16,Cap,,0,0,0,,{\an5\pos(540,1430)\fscx100\fscy100\fscx86\fscy86\t(0,90,\fscx100\fscy100)}{\c&H0000D4FF}JUST{\c&H00FFFFFF} ABOVE CHINA
+Dialogue: 0,0:00:15.16,0:00:15.46,Cap,,0,0,0,,{\an5\pos(540,1430)\fscx100\fscy100}JUST {\c&H0000D4FF}ABOVE{\c&H00FFFFFF} CHINA
+Dialogue: 0,0:00:15.46,0:00:15.88,Cap,,0,0,0,,{\an5\pos(540,1430)\fscx100\fscy100}JUST ABOVE {\c&H0000D4FF}CHINA{\c&H00FFFFFF}
+Dialogue: 0,0:00:15.88,0:00:16.06,Cap,,0,0,0,,{\an5\pos(540,1430)\fscx100\fscy100\fscx86\fscy86\t(0,90,\fscx100\fscy100)}{\c&H0000D4FF}AT{\c&H00FFFFFF} 78
+Dialogue: 0,0:00:16.06,0:00:17.60,Cap,,0,0,0,,{\an5\pos(540,1430)\fscx100\fscy100}AT {\c&H0000D4FF}78{\c&H00FFFFFF}
+Dialogue: 0,0:00:17.60,0:00:17.90,Cap,,0,0,0,,{\an5\pos(540,1430)\fscx100\fscy100\fscx86\fscy86\t(0,90,\fscx100\fscy100)}{\c&H0000D4FF}AMONG{\c&H00FFFFFF} THESE
+Dialogue: 0,0:00:17.90,0:00:18.12,Cap,,0,0,0,,{\an5\pos(540,1430)\fscx100\fscy100}AMONG {\c&H0000D4FF}THESE{\c&H00FFFFFF}
+Dialogue: 0,0:00:18.12,0:00:18.75,Cap,,0,0,0,,{\an5\pos(540,1430)\fscx100\fscy100\fscx86\fscy86\t(0,90,\fscx100\fscy100)}{\c&H0000D4FF}COUNTRIES{\c&H00FFFFFF} KUWAIT
+Dialogue: 0,0:00:18.75,0:00:19.20,Cap,,0,0,0,,{\an5\pos(540,1430)\fscx100\fscy100}COUNTRIES {\c&H0000D4FF}KUWAIT{\c&H00FFFFFF}
+Dialogue: 0,0:00:19.20,0:00:19.61,Cap,,0,0,0,,{\an5\pos(540,1430)\fscx100\fscy100\fscx86\fscy86\t(0,90,\fscx100\fscy100)}{\c&H0000D4FF}REACHES{\c&H00FFFFFF} 85 YEARS
+Dialogue: 0,0:00:19.61,0:00:20.27,Cap,,0,0,0,,{\an5\pos(540,1430)\fscx100\fscy100}REACHES {\c&H0000D4FF}85{\c&H00FFFFFF} YEARS
+Dialogue: 0,0:00:20.27,0:00:20.60,Cap,,0,0,0,,{\an5\pos(540,1430)\fscx100\fscy100}REACHES 85 {\c&H0000D4FF}YEARS{\c&H00FFFFFF}
+Dialogue: 0,0:00:20.60,0:00:20.82,Cap,,0,0,0,,{\an5\pos(540,1430)\fscx100\fscy100\fscx86\fscy86\t(0,90,\fscx100\fscy100)}{\c&H0000D4FF}WHILE{\c&H00FFFFFF} JAPAN AND
+Dialogue: 0,0:00:20.82,0:00:21.32,Cap,,0,0,0,,{\an5\pos(540,1430)\fscx100\fscy100}WHILE {\c&H0000D4FF}JAPAN{\c&H00FFFFFF} AND
+Dialogue: 0,0:00:21.32,0:00:21.46,Cap,,0,0,0,,{\an5\pos(540,1430)\fscx100\fscy100}WHILE JAPAN {\c&H0000D4FF}AND{\c&H00FFFFFF}
+Dialogue: 0,0:00:21.46,0:00:22.10,Cap,,0,0,0,,{\an5\pos(540,1430)\fscx100\fscy100\fscx86\fscy86\t(0,90,\fscx100\fscy100)}{\c&H0000D4FF}SWITZERLAND{\c&H00FFFFFF} HIT 84
+Dialogue: 0,0:00:22.10,0:00:22.32,Cap,,0,0,0,,{\an5\pos(540,1430)\fscx100\fscy100}SWITZERLAND {\c&H0000D4FF}HIT{\c&H00FFFFFF} 84
+Dialogue: 0,0:00:22.32,0:00:23.85,Cap,,0,0,0,,{\an5\pos(540,1430)\fscx100\fscy100}SWITZERLAND HIT {\c&H0000D4FF}84{\c&H00FFFFFF}
+Dialogue: 0,0:00:23.85,0:00:24.45,Cap,,0,0,0,,{\an5\pos(540,1430)\fscx100\fscy100\fscx86\fscy86\t(0,90,\fscx100\fscy100)}{\c&H0000D4FF}NIGERIA{\c&H00FFFFFF} HAS THE
+Dialogue: 0,0:00:24.45,0:00:24.67,Cap,,0,0,0,,{\an5\pos(540,1430)\fscx100\fscy100}NIGERIA {\c&H0000D4FF}HAS{\c&H00FFFFFF} THE
+Dialogue: 0,0:00:24.67,0:00:24.80,Cap,,0,0,0,,{\an5\pos(540,1430)\fscx100\fscy100}NIGERIA HAS {\c&H0000D4FF}THE{\c&H00FFFFFF}
+Dialogue: 0,0:00:24.80,0:00:25.21,Cap,,0,0,0,,{\an5\pos(540,1430)\fscx100\fscy100\fscx86\fscy86\t(0,90,\fscx100\fscy100)}{\c&H0000D4FF}WORLD'S{\c&H00FFFFFF} LOWEST LIFE
+Dialogue: 0,0:00:25.21,0:00:25.65,Cap,,0,0,0,,{\an5\pos(540,1430)\fscx100\fscy100}WORLD'S {\c&H0000D4FF}LOWEST{\c&H00FFFFFF} LIFE
+Dialogue: 0,0:00:25.65,0:00:25.93,Cap,,0,0,0,,{\an5\pos(540,1430)\fscx100\fscy100}WORLD'S LOWEST {\c&H0000D4FF}LIFE{\c&H00FFFFFF}
+Dialogue: 0,0:00:25.93,0:00:26.65,Cap,,0,0,0,,{\an5\pos(540,1430)\fscx100\fscy100\fscx86\fscy86\t(0,90,\fscx100\fscy100)}{\c&H0000D4FF}EXPECTANCY{\c&H00FFFFFF} AT BIRTH
+Dialogue: 0,0:00:26.65,0:00:26.77,Cap,,0,0,0,,{\an5\pos(540,1430)\fscx100\fscy100}EXPECTANCY {\c&H0000D4FF}AT{\c&H00FFFFFF} BIRTH
+Dialogue: 0,0:00:26.77,0:00:27.07,Cap,,0,0,0,,{\an5\pos(540,1430)\fscx100\fscy100}EXPECTANCY AT {\c&H0000D4FF}BIRTH{\c&H00FFFFFF}
+Dialogue: 0,0:00:27.07,0:00:27.23,Cap,,0,0,0,,{\an5\pos(540,1430)\fscx100\fscy100\fscx86\fscy86\t(0,90,\fscx100\fscy100)}{\c&H0000D4FF}AT{\c&H00FFFFFF} 55 YEARS
+Dialogue: 0,0:00:27.23,0:00:27.87,Cap,,0,0,0,,{\an5\pos(540,1430)\fscx100\fscy100}AT {\c&H0000D4FF}55{\c&H00FFFFFF} YEARS
+Dialogue: 0,0:00:27.87,0:00:29.12,Cap,,0,0,0,,{\an5\pos(540,1430)\fscx100\fscy100}AT 55 {\c&H0000D4FF}YEARS{\c&H00FFFFFF}
+Dialogue: 0,0:00:29.12,0:00:29.35,Cap,,0,0,0,,{\an5\pos(540,1430)\fscx100\fscy100\fscx86\fscy86\t(0,90,\fscx100\fscy100)}{\c&H0000D4FF}THIS{\c&H00FFFFFF} MEASURES HOW
+Dialogue: 0,0:00:29.35,0:00:29.80,Cap,,0,0,0,,{\an5\pos(540,1430)\fscx100\fscy100}THIS {\c&H0000D4FF}MEASURES{\c&H00FFFFFF} HOW
+Dialogue: 0,0:00:29.80,0:00:29.97,Cap,,0,0,0,,{\an5\pos(540,1430)\fscx100\fscy100}THIS MEASURES {\c&H0000D4FF}HOW{\c&H00FFFFFF}
+Dialogue: 0,0:00:29.97,0:00:30.20,Cap,,0,0,0,,{\an5\pos(540,1430)\fscx100\fscy100\fscx86\fscy86\t(0,90,\fscx100\fscy100)}{\c&H0000D4FF}MANY{\c&H00FFFFFF} YEARS A
+Dialogue: 0,0:00:30.20,0:00:30.51,Cap,,0,0,0,,{\an5\pos(540,1430)\fscx100\fscy100}MANY {\c&H0000D4FF}YEARS{\c&H00FFFFFF} A
+Dialogue: 0,0:00:30.51,0:00:30.61,Cap,,0,0,0,,{\an5\pos(540,1430)\fscx100\fscy100}MANY YEARS {\c&H0000D4FF}A{\c&H00FFFFFF}
+Dialogue: 0,0:00:30.61,0:00:31.00,Cap,,0,0,0,,{\an5\pos(540,1430)\fscx100\fscy100\fscx86\fscy86\t(0,90,\fscx100\fscy100)}{\c&H0000D4FF}BABY{\c&H00FFFFFF} LIVES IF
+Dialogue: 0,0:00:31.00,0:00:31.36,Cap,,0,0,0,,{\an5\pos(540,1430)\fscx100\fscy100}BABY {\c&H0000D4FF}LIVES{\c&H00FFFFFF} IF
+Dialogue: 0,0:00:31.36,0:00:31.52,Cap,,0,0,0,,{\an5\pos(540,1430)\fscx100\fscy100}BABY LIVES {\c&H0000D4FF}IF{\c&H00FFFFFF}
+Dialogue: 0,0:00:31.52,0:00:31.95,Cap,,0,0,0,,{\an5\pos(540,1430)\fscx100\fscy100\fscx86\fscy86\t(0,90,\fscx100\fscy100)}{\c&H0000D4FF}TODAY'S{\c&H00FFFFFF} MORTALITY
+Dialogue: 0,0:00:31.95,0:00:32.57,Cap,,0,0,0,,{\an5\pos(540,1430)\fscx100\fscy100}TODAY'S {\c&H0000D4FF}MORTALITY{\c&H00FFFFFF}
+Dialogue: 0,0:00:32.57,0:00:33.05,Cap,,0,0,0,,{\an5\pos(540,1430)\fscx100\fscy100\fscx86\fscy86\t(0,90,\fscx100\fscy100)}{\c&H0000D4FF}PATTERNS{\c&H00FFFFFF} STAY THE
+Dialogue: 0,0:00:33.05,0:00:33.32,Cap,,0,0,0,,{\an5\pos(540,1430)\fscx100\fscy100}PATTERNS {\c&H0000D4FF}STAY{\c&H00FFFFFF} THE
+Dialogue: 0,0:00:33.32,0:00:33.46,Cap,,0,0,0,,{\an5\pos(540,1430)\fscx100\fscy100}PATTERNS STAY {\c&H0000D4FF}THE{\c&H00FFFFFF}
+Dialogue: 0,0:00:33.46,0:00:34.70,Cap,,0,0,0,,{\an5\pos(540,1430)\fscx100\fscy100\fscx86\fscy86\t(0,90,\fscx100\fscy100)}{\c&H0000D4FF}SAME{\c&H00FFFFFF}
+Dialogue: 0,0:00:34.70,0:00:34.83,Cap,,0,0,0,,{\an5\pos(540,1430)\fscx100\fscy100\fscx86\fscy86\t(0,90,\fscx100\fscy100)}{\c&H0000D4FF}IS{\c&H00FFFFFF} YOUR COUNTRY
+Dialogue: 0,0:00:34.83,0:00:34.95,Cap,,0,0,0,,{\an5\pos(540,1430)\fscx100\fscy100}IS {\c&H0000D4FF}YOUR{\c&H00FFFFFF} COUNTRY
+Dialogue: 0,0:00:34.95,0:00:35.32,Cap,,0,0,0,,{\an5\pos(540,1430)\fscx100\fscy100}IS YOUR {\c&H0000D4FF}COUNTRY{\c&H00FFFFFF}
+Dialogue: 0,0:00:35.32,0:00:35.67,Cap,,0,0,0,,{\an5\pos(540,1430)\fscx100\fscy100\fscx86\fscy86\t(0,90,\fscx100\fscy100)}{\c&H0000D4FF}YELLOW{\c&H00FFFFFF} OR BLUE?
+Dialogue: 0,0:00:35.67,0:00:35.82,Cap,,0,0,0,,{\an5\pos(540,1430)\fscx100\fscy100}YELLOW {\c&H0000D4FF}OR{\c&H00FFFFFF} BLUE?
+Dialogue: 0,0:00:35.82,0:00:36.67,Cap,,0,0,0,,{\an5\pos(540,1430)\fscx100\fscy100}YELLOW OR {\c&H0000D4FF}BLUE?{\c&H00FFFFFF}
+Dialogue: 1,0:00:00.00,0:00:05.80,Hook,,0,0,0,,{\an8\pos(540,192)\fad(0,200)}THE 80 YEAR CLUB

@@ -1,0 +1,52 @@
+id: atlas004
+title: Only 47 countries reach a life expectancy of 80
+hook_text: THE 80 YEAR CLUB
+description: A look at global life expectancy at birth in 2024, highlighting the few countries where newborns are
+  expected to live past 80.
+hashtags:
+- '#maps'
+- '#geography'
+- '#data'
+sources:
+- https://data.worldbank.org/indicator/SP.DYN.LE00.IN
+dataset:
+  kind: worldbank
+  indicator: SP.DYN.LE00.IN
+  label: Life expectancy at birth
+  unit: years
+  source: World Bank
+  min_year: 2019
+scale:
+  kind: threshold
+  at: 80.0
+  labels:
+  - 80+ years
+  - Under 80
+value_format: '{v:.0f} years'
+beats:
+- text: Only 47 of 208 countries see newborns expected to live to 80.
+- text: Yellow marks countries at or above 80, while dark blue covers 161 others.
+- text: The USA sits in the blue at 79 years, just above China at 78.
+  shot:
+    kind: group
+    isos:
+    - USA
+    - CHN
+- text: Among these countries, Kuwait reaches 85 years while Japan and Switzerland hit 84.
+  shot:
+    kind: rank
+    isos:
+    - KWT
+    - JPN
+    - CHE
+- text: Nigeria has the world's lowest life expectancy at birth at 55 years.
+  shot:
+    kind: country
+    iso: NGA
+- text: This measures how many years a baby lives if today's mortality patterns stay the same.
+- text: Is your country yellow or blue?
+  shot:
+    kind: card
+    lines:
+    - IS YOURS YELLOW?
+    - Life expectancy 2024

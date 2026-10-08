@@ -1,0 +1,50 @@
+id: atlas003
+title: Most of the world is now below replacement fertility
+format: rank_ladder
+hook_text: THE 2.1 LINE
+description: Atlas in Numbers looks at fertility rates across 208 countries, revealing that most of the world now
+  sits below the 2.1 replacement level.
+hashtags:
+- '#maps'
+- '#geography'
+- '#data'
+sources:
+- https://data.worldbank.org/indicator/SP.DYN.TFRT.IN
+dataset:
+  kind: worldbank
+  indicator: SP.DYN.TFRT.IN
+  label: Births per woman
+  unit: births per woman
+  source: World Bank
+  min_year: 2019
+scale:
+  kind: threshold
+  at: 2.1
+  labels:
+  - 2.1 or more
+  - Below 2.1
+value_format: '{v:.1f}'
+beats:
+- text: Out of 208 countries, 113 are now below 2.1.
+- text: Yellow shows 2.1 or more. Dark blue shows below 2.1. The median country sits at 1.9.
+- text: South Korea sits at 0.7, Japan is 1.1, and Chad reaches 6.0.
+  shot:
+    kind: rank
+    isos:
+    - KOR
+    - JPN
+    - TCD
+- text: India stands at 2.0, while the USA records 1.6 and China drops to 1.0.
+  shot:
+    kind: group
+    isos:
+    - IND
+    - USA
+    - CHN
+- text: This number represents the children a woman would have if she lived through her childbearing years.
+- text: So where does your country land on this map?
+  shot:
+    kind: card
+    lines:
+    - Where is your country?
+    - World Bank 2024

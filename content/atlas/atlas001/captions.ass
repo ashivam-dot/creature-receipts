@@ -1,0 +1,94 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Cap,Montserrat Black,96,&H00FFFFFF,&H00FFFFFF,&H00000000,&H78000000,0,0,0,0,100,100,0,0,1,9,4,5,60,60,0,1
+Style: Hook,Anton,124,&H0000D4FF,&H0000D4FF,&H38000000,&H00000000,0,0,0,0,100,100,1,0,3,18,0,8,60,60,0,1
+
+Style: Provenance,Montserrat Black,48,&H00FFFFFF,&H00FFFFFF,&H50000000,&H00000000,0,0,0,0,100,100,0,0,3,12,0,8,60,60,0,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.25,0:00:00.56,Cap,,0,0,0,,{\an5\pos(540,1430)\fscx100\fscy100\fscx86\fscy86\t(0,90,\fscx100\fscy100)}{\c&H0000D4FF}EVERY{\c&H00FFFFFF} YELLOW
+Dialogue: 0,0:00:00.56,0:00:00.93,Cap,,0,0,0,,{\an5\pos(540,1430)\fscx100\fscy100}EVERY {\c&H0000D4FF}YELLOW{\c&H00FFFFFF}
+Dialogue: 0,0:00:00.93,0:00:01.36,Cap,,0,0,0,,{\an5\pos(540,1430)\fscx100\fscy100\fscx86\fscy86\t(0,90,\fscx100\fscy100)}{\c&H0000D4FF}COUNTRY{\c&H00FFFFFF} ON THIS
+Dialogue: 0,0:00:01.36,0:00:01.48,Cap,,0,0,0,,{\an5\pos(540,1430)\fscx100\fscy100}COUNTRY {\c&H0000D4FF}ON{\c&H00FFFFFF} THIS
+Dialogue: 0,0:00:01.48,0:00:01.67,Cap,,0,0,0,,{\an5\pos(540,1430)\fscx100\fscy100}COUNTRY ON {\c&H0000D4FF}THIS{\c&H00FFFFFF}
+Dialogue: 0,0:00:01.67,0:00:02.02,Cap,,0,0,0,,{\an5\pos(540,1430)\fscx100\fscy100\fscx86\fscy86\t(0,90,\fscx100\fscy100)}{\c&H0000D4FF}MAP{\c&H00FFFFFF} HAS MORE
+Dialogue: 0,0:00:02.02,0:00:02.23,Cap,,0,0,0,,{\an5\pos(540,1430)\fscx100\fscy100}MAP {\c&H0000D4FF}HAS{\c&H00FFFFFF} MORE
+Dialogue: 0,0:00:02.23,0:00:02.50,Cap,,0,0,0,,{\an5\pos(540,1430)\fscx100\fscy100}MAP HAS {\c&H0000D4FF}MORE{\c&H00FFFFFF}
+Dialogue: 0,0:00:02.50,0:00:02.85,Cap,,0,0,0,,{\an5\pos(540,1430)\fscx100\fscy100\fscx86\fscy86\t(0,90,\fscx100\fscy100)}{\c&H0000D4FF}PHONE{\c&H00FFFFFF} SUBSCRIPTIONS
+Dialogue: 0,0:00:02.85,0:00:03.60,Cap,,0,0,0,,{\an5\pos(540,1430)\fscx100\fscy100}PHONE {\c&H0000D4FF}SUBSCRIPTIONS{\c&H00FFFFFF}
+Dialogue: 0,0:00:03.60,0:00:03.75,Cap,,0,0,0,,{\an5\pos(540,1430)\fscx100\fscy100\fscx86\fscy86\t(0,90,\fscx100\fscy100)}{\c&H0000D4FF}THAN{\c&H00FFFFFF} PEOPLE
+Dialogue: 0,0:00:03.75,0:00:05.02,Cap,,0,0,0,,{\an5\pos(540,1430)\fscx100\fscy100}THAN {\c&H0000D4FF}PEOPLE{\c&H00FFFFFF}
+Dialogue: 0,0:00:05.02,0:00:05.32,Cap,,0,0,0,,{\an5\pos(540,1430)\fscx100\fscy100\fscx86\fscy86\t(0,90,\fscx100\fscy100)}{\c&H0000D4FF}THAT'S{\c&H00FFFFFF} 137 OF
+Dialogue: 0,0:00:05.32,0:00:06.67,Cap,,0,0,0,,{\an5\pos(540,1430)\fscx100\fscy100}THAT'S {\c&H0000D4FF}137{\c&H00FFFFFF} OF
+Dialogue: 0,0:00:06.67,0:00:06.76,Cap,,0,0,0,,{\an5\pos(540,1430)\fscx100\fscy100}THAT'S 137 {\c&H0000D4FF}OF{\c&H00FFFFFF}
+Dialogue: 0,0:00:06.76,0:00:06.88,Cap,,0,0,0,,{\an5\pos(540,1430)\fscx100\fscy100\fscx86\fscy86\t(0,90,\fscx100\fscy100)}{\c&H0000D4FF}THE{\c&H00FFFFFF} 209 PLACES
+Dialogue: 0,0:00:06.88,0:00:07.80,Cap,,0,0,0,,{\an5\pos(540,1430)\fscx100\fscy100}THE {\c&H0000D4FF}209{\c&H00FFFFFF} PLACES
+Dialogue: 0,0:00:07.80,0:00:08.27,Cap,,0,0,0,,{\an5\pos(540,1430)\fscx100\fscy100}THE 209 {\c&H0000D4FF}PLACES{\c&H00FFFFFF}
+Dialogue: 0,0:00:08.27,0:00:08.45,Cap,,0,0,0,,{\an5\pos(540,1430)\fscx100\fscy100\fscx86\fscy86\t(0,90,\fscx100\fscy100)}{\c&H0000D4FF}WITH{\c&H00FFFFFF} DATA
+Dialogue: 0,0:00:08.45,0:00:09.70,Cap,,0,0,0,,{\an5\pos(540,1430)\fscx100\fscy100}WITH {\c&H0000D4FF}DATA{\c&H00FFFFFF}
+Dialogue: 0,0:00:09.70,0:00:10.15,Cap,,0,0,0,,{\an5\pos(540,1430)\fscx100\fscy100\fscx86\fscy86\t(0,90,\fscx100\fscy100)}{\c&H0000D4FF}JAPAN{\c&H00FFFFFF} HAS 178
+Dialogue: 0,0:00:10.15,0:00:10.37,Cap,,0,0,0,,{\an5\pos(540,1430)\fscx100\fscy100}JAPAN {\c&H0000D4FF}HAS{\c&H00FFFFFF} 178
+Dialogue: 0,0:00:10.37,0:00:11.55,Cap,,0,0,0,,{\an5\pos(540,1430)\fscx100\fscy100}JAPAN HAS {\c&H0000D4FF}178{\c&H00FFFFFF}
+Dialogue: 0,0:00:11.55,0:00:11.71,Cap,,0,0,0,,{\an5\pos(540,1430)\fscx100\fscy100\fscx86\fscy86\t(0,90,\fscx100\fscy100)}{\c&H0000D4FF}FOR{\c&H00FFFFFF} EVERY HUNDRED
+Dialogue: 0,0:00:11.71,0:00:12.05,Cap,,0,0,0,,{\an5\pos(540,1430)\fscx100\fscy100}FOR {\c&H0000D4FF}EVERY{\c&H00FFFFFF} HUNDRED
+Dialogue: 0,0:00:12.05,0:00:12.37,Cap,,0,0,0,,{\an5\pos(540,1430)\fscx100\fscy100}FOR EVERY {\c&H0000D4FF}HUNDRED{\c&H00FFFFFF}
+Dialogue: 0,0:00:12.37,0:00:13.62,Cap,,0,0,0,,{\an5\pos(540,1430)\fscx100\fscy100\fscx86\fscy86\t(0,90,\fscx100\fscy100)}{\c&H0000D4FF}PEOPLE{\c&H00FFFFFF}
+Dialogue: 0,0:00:13.62,0:00:13.72,Cap,,0,0,0,,{\an5\pos(540,1430)\fscx100\fscy100\fscx86\fscy86\t(0,90,\fscx100\fscy100)}{\c&H0000D4FF}THE{\c&H00FFFFFF} UAE 203
+Dialogue: 0,0:00:13.72,0:00:14.22,Cap,,0,0,0,,{\an5\pos(540,1430)\fscx100\fscy100}THE {\c&H0000D4FF}UAE{\c&H00FFFFFF} 203
+Dialogue: 0,0:00:14.22,0:00:15.21,Cap,,0,0,0,,{\an5\pos(540,1430)\fscx100\fscy100}THE UAE {\c&H0000D4FF}203{\c&H00FFFFFF}
+Dialogue: 0,0:00:15.21,0:00:15.62,Cap,,0,0,0,,{\an5\pos(540,1430)\fscx100\fscy100\fscx86\fscy86\t(0,90,\fscx100\fscy100)}{\c&H0000D4FF}RUSSIA{\c&H00FFFFFF} 186
+Dialogue: 0,0:00:15.62,0:00:17.52,Cap,,0,0,0,,{\an5\pos(540,1430)\fscx100\fscy100}RUSSIA {\c&H0000D4FF}186{\c&H00FFFFFF}
+Dialogue: 0,0:00:17.52,0:00:17.95,Cap,,0,0,0,,{\an5\pos(540,1430)\fscx100\fscy100\fscx86\fscy86\t(0,90,\fscx100\fscy100)}{\c&H0000D4FF}INDIA{\c&H00FFFFFF} HAS OVER
+Dialogue: 0,0:00:17.95,0:00:18.17,Cap,,0,0,0,,{\an5\pos(540,1430)\fscx100\fscy100}INDIA {\c&H0000D4FF}HAS{\c&H00FFFFFF} OVER
+Dialogue: 0,0:00:18.17,0:00:18.51,Cap,,0,0,0,,{\an5\pos(540,1430)\fscx100\fscy100}INDIA HAS {\c&H0000D4FF}OVER{\c&H00FFFFFF}
+Dialogue: 0,0:00:18.51,0:00:18.86,Cap,,0,0,0,,{\an5\pos(540,1430)\fscx100\fscy100\fscx86\fscy86\t(0,90,\fscx100\fscy100)}{\c&H0000D4FF}ONE{\c&H00FFFFFF} POINT ONE
+Dialogue: 0,0:00:18.86,0:00:19.26,Cap,,0,0,0,,{\an5\pos(540,1430)\fscx100\fscy100}ONE {\c&H0000D4FF}POINT{\c&H00FFFFFF} ONE
+Dialogue: 0,0:00:19.26,0:00:19.56,Cap,,0,0,0,,{\an5\pos(540,1430)\fscx100\fscy100}ONE POINT {\c&H0000D4FF}ONE{\c&H00FFFFFF}
+Dialogue: 0,0:00:19.56,0:00:19.97,Cap,,0,0,0,,{\an5\pos(540,1430)\fscx100\fscy100\fscx86\fscy86\t(0,90,\fscx100\fscy100)}{\c&H0000D4FF}BILLION{\c&H00FFFFFF} SUBSCRIPTIONS
+Dialogue: 0,0:00:19.97,0:00:20.75,Cap,,0,0,0,,{\an5\pos(540,1430)\fscx100\fscy100}BILLION {\c&H0000D4FF}SUBSCRIPTIONS{\c&H00FFFFFF}
+Dialogue: 0,0:00:20.75,0:00:20.86,Cap,,0,0,0,,{\an5\pos(540,1430)\fscx100\fscy100\fscx86\fscy86\t(0,90,\fscx100\fscy100)}{\c&H0000D4FF}AND{\c&H00FFFFFF} IT'S STILL
+Dialogue: 0,0:00:20.86,0:00:20.97,Cap,,0,0,0,,{\an5\pos(540,1430)\fscx100\fscy100}AND {\c&H0000D4FF}IT'S{\c&H00FFFFFF} STILL
+Dialogue: 0,0:00:20.97,0:00:21.26,Cap,,0,0,0,,{\an5\pos(540,1430)\fscx100\fscy100}AND IT'S {\c&H0000D4FF}STILL{\c&H00FFFFFF}
+Dialogue: 0,0:00:21.26,0:00:21.86,Cap,,0,0,0,,{\an5\pos(540,1430)\fscx100\fscy100\fscx86\fscy86\t(0,90,\fscx100\fscy100)}{\c&H0000D4FF}BLUE{\c&H00FFFFFF}
+Dialogue: 0,0:00:21.86,0:00:22.17,Cap,,0,0,0,,{\an5\pos(540,1430)\fscx100\fscy100\fscx86\fscy86\t(0,90,\fscx100\fscy100)}{\c&H0000D4FF}JUST{\c&H00FFFFFF} 79 PER
+Dialogue: 0,0:00:22.17,0:00:22.90,Cap,,0,0,0,,{\an5\pos(540,1430)\fscx100\fscy100}JUST {\c&H0000D4FF}79{\c&H00FFFFFF} PER
+Dialogue: 0,0:00:22.90,0:00:23.10,Cap,,0,0,0,,{\an5\pos(540,1430)\fscx100\fscy100}JUST 79 {\c&H0000D4FF}PER{\c&H00FFFFFF}
+Dialogue: 0,0:00:23.10,0:00:24.42,Cap,,0,0,0,,{\an5\pos(540,1430)\fscx100\fscy100\fscx86\fscy86\t(0,90,\fscx100\fscy100)}{\c&H0000D4FF}HUNDRED{\c&H00FFFFFF}
+Dialogue: 0,0:00:24.42,0:00:24.72,Cap,,0,0,0,,{\an5\pos(540,1430)\fscx100\fscy100\fscx86\fscy86\t(0,90,\fscx100\fscy100)}{\c&H0000D4FF}BECAUSE{\c&H00FFFFFF} A
+Dialogue: 0,0:00:24.72,0:00:24.82,Cap,,0,0,0,,{\an5\pos(540,1430)\fscx100\fscy100}BECAUSE {\c&H0000D4FF}A{\c&H00FFFFFF}
+Dialogue: 0,0:00:24.82,0:00:25.52,Cap,,0,0,0,,{\an5\pos(540,1430)\fscx100\fscy100\fscx86\fscy86\t(0,90,\fscx100\fscy100)}{\c&H0000D4FF}SUBSCRIPTION{\c&H00FFFFFF} IS A
+Dialogue: 0,0:00:25.52,0:00:25.67,Cap,,0,0,0,,{\an5\pos(540,1430)\fscx100\fscy100}SUBSCRIPTION {\c&H0000D4FF}IS{\c&H00FFFFFF} A
+Dialogue: 0,0:00:25.67,0:00:25.80,Cap,,0,0,0,,{\an5\pos(540,1430)\fscx100\fscy100}SUBSCRIPTION IS {\c&H0000D4FF}A{\c&H00FFFFFF}
+Dialogue: 0,0:00:25.80,0:00:26.13,Cap,,0,0,0,,{\an5\pos(540,1430)\fscx100\fscy100\fscx86\fscy86\t(0,90,\fscx100\fscy100)}{\c&H0000D4FF}SIM{\c&H00FFFFFF} CARD NOT
+Dialogue: 0,0:00:26.13,0:00:26.57,Cap,,0,0,0,,{\an5\pos(540,1430)\fscx100\fscy100}SIM {\c&H0000D4FF}CARD{\c&H00FFFFFF} NOT
+Dialogue: 0,0:00:26.57,0:00:26.76,Cap,,0,0,0,,{\an5\pos(540,1430)\fscx100\fscy100}SIM CARD {\c&H0000D4FF}NOT{\c&H00FFFFFF}
+Dialogue: 0,0:00:26.76,0:00:26.82,Cap,,0,0,0,,{\an5\pos(540,1430)\fscx100\fscy100\fscx86\fscy86\t(0,90,\fscx100\fscy100)}{\c&H0000D4FF}A{\c&H00FFFFFF} PERSON
+Dialogue: 0,0:00:26.82,0:00:27.56,Cap,,0,0,0,,{\an5\pos(540,1430)\fscx100\fscy100}A {\c&H0000D4FF}PERSON{\c&H00FFFFFF}
+Dialogue: 0,0:00:27.56,0:00:27.88,Cap,,0,0,0,,{\an5\pos(540,1430)\fscx100\fscy100\fscx86\fscy86\t(0,90,\fscx100\fscy100)}{\c&H0000D4FF}PLENTY{\c&H00FFFFFF} OF PEOPLE
+Dialogue: 0,0:00:27.88,0:00:27.97,Cap,,0,0,0,,{\an5\pos(540,1430)\fscx100\fscy100}PLENTY {\c&H0000D4FF}OF{\c&H00FFFFFF} PEOPLE
+Dialogue: 0,0:00:27.97,0:00:28.32,Cap,,0,0,0,,{\an5\pos(540,1430)\fscx100\fscy100}PLENTY OF {\c&H0000D4FF}PEOPLE{\c&H00FFFFFF}
+Dialogue: 0,0:00:28.32,0:00:28.68,Cap,,0,0,0,,{\an5\pos(540,1430)\fscx100\fscy100\fscx86\fscy86\t(0,90,\fscx100\fscy100)}{\c&H0000D4FF}CARRY{\c&H00FFFFFF} TWO ONE
+Dialogue: 0,0:00:28.68,0:00:29.12,Cap,,0,0,0,,{\an5\pos(540,1430)\fscx100\fscy100}CARRY {\c&H0000D4FF}TWO{\c&H00FFFFFF} ONE
+Dialogue: 0,0:00:29.12,0:00:29.35,Cap,,0,0,0,,{\an5\pos(540,1430)\fscx100\fscy100}CARRY TWO {\c&H0000D4FF}ONE{\c&H00FFFFFF}
+Dialogue: 0,0:00:29.35,0:00:29.52,Cap,,0,0,0,,{\an5\pos(540,1430)\fscx100\fscy100\fscx86\fscy86\t(0,90,\fscx100\fscy100)}{\c&H0000D4FF}FOR{\c&H00FFFFFF} WORK ONE
+Dialogue: 0,0:00:29.52,0:00:29.85,Cap,,0,0,0,,{\an5\pos(540,1430)\fscx100\fscy100}FOR {\c&H0000D4FF}WORK{\c&H00FFFFFF} ONE
+Dialogue: 0,0:00:29.85,0:00:30.07,Cap,,0,0,0,,{\an5\pos(540,1430)\fscx100\fscy100}FOR WORK {\c&H0000D4FF}ONE{\c&H00FFFFFF}
+Dialogue: 0,0:00:30.07,0:00:30.23,Cap,,0,0,0,,{\an5\pos(540,1430)\fscx100\fscy100\fscx86\fscy86\t(0,90,\fscx100\fscy100)}{\c&H0000D4FF}FOR{\c&H00FFFFFF} CHEAPER CALLS
+Dialogue: 0,0:00:30.23,0:00:30.62,Cap,,0,0,0,,{\an5\pos(540,1430)\fscx100\fscy100}FOR {\c&H0000D4FF}CHEAPER{\c&H00FFFFFF} CALLS
+Dialogue: 0,0:00:30.62,0:00:32.02,Cap,,0,0,0,,{\an5\pos(540,1430)\fscx100\fscy100}FOR CHEAPER {\c&H0000D4FF}CALLS{\c&H00FFFFFF}
+Dialogue: 0,0:00:32.02,0:00:32.16,Cap,,0,0,0,,{\an5\pos(540,1430)\fscx100\fscy100\fscx86\fscy86\t(0,90,\fscx100\fscy100)}{\c&H0000D4FF}SO{\c&H00FFFFFF} IS YOUR
+Dialogue: 0,0:00:32.16,0:00:32.26,Cap,,0,0,0,,{\an5\pos(540,1430)\fscx100\fscy100}SO {\c&H0000D4FF}IS{\c&H00FFFFFF} YOUR
+Dialogue: 0,0:00:32.26,0:00:32.37,Cap,,0,0,0,,{\an5\pos(540,1430)\fscx100\fscy100}SO IS {\c&H0000D4FF}YOUR{\c&H00FFFFFF}
+Dialogue: 0,0:00:32.37,0:00:32.72,Cap,,0,0,0,,{\an5\pos(540,1430)\fscx100\fscy100\fscx86\fscy86\t(0,90,\fscx100\fscy100)}{\c&H0000D4FF}COUNTRY{\c&H00FFFFFF} YELLOW OR
+Dialogue: 0,0:00:32.72,0:00:33.10,Cap,,0,0,0,,{\an5\pos(540,1430)\fscx100\fscy100}COUNTRY {\c&H0000D4FF}YELLOW{\c&H00FFFFFF} OR
+Dialogue: 0,0:00:33.10,0:00:33.25,Cap,,0,0,0,,{\an5\pos(540,1430)\fscx100\fscy100}COUNTRY YELLOW {\c&H0000D4FF}OR{\c&H00FFFFFF}
+Dialogue: 0,0:00:33.25,0:00:34.09,Cap,,0,0,0,,{\an5\pos(540,1430)\fscx100\fscy100\fscx86\fscy86\t(0,90,\fscx100\fscy100)}{\c&H0000D4FF}BLUE?{\c&H00FFFFFF}
+Dialogue: 1,0:00:00.00,0:00:04.85,Hook,,0,0,0,,{\an8\pos(540,192)\fad(0,200)}MORE PHONES THAN PEOPLE
