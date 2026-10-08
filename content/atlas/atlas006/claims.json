@@ -5,8 +5,8 @@
     "indicator": "AG.LND.FRST.ZS",
     "definition": "Forest area (% of land area) is the share of total land area that is under natural or planted stands of trees of at least 5 meters in situ, whether productive or not, and excludes tree stands in agricultural production systems (for example, in fruit plantations and agroforestry systems) and trees in urban parks and gardens.",
     "source": "https://data.worldbank.org/indicator/AG.LND.FRST.ZS",
-    "source_response_sha256": "",
-    "source_organization": "",
+    "source_response_sha256": "db31f0eb85d30b0788d816c8b3658de4b3ccd7289210f28547847c4c631ad6f9",
+    "source_organization": "FAOSTAT, Food and Agriculture Organization of the United Nations (FAO), uri: https://www.fao.org/faostat/en/#data/RL, publisher: Food and Agriculture Organization of the United Nations (FAO)",
     "year_label": "latest available 2021–2023",
     "universe": "mapped countries and territories with data",
     "count": 207,
@@ -1678,21 +1678,21 @@
         "surface": "title",
         "text": "Forest cover across the world in 207 places",
         "isos": [],
-        "support": "count: 207, universe: mapped countries and territories with data",
+        "support": "universe mapped countries and territories with data count 207",
         "evidence": {}
       },
       {
         "surface": "hook",
         "text": "THE WORLD'S GREENEST",
         "isos": [],
-        "support": "indicator: AG.LND.FRST.ZS",
+        "support": "SUR rank 1 value 94.44758351333",
         "evidence": {}
       },
       {
         "surface": "description",
         "text": "A look at the global distribution of forest cover based on World Bank data.",
         "isos": [],
-        "support": "source: https://data.worldbank.org/indicator/AG.LND.FRST.ZS",
+        "support": "source https://data.worldbank.org/indicator/AG.LND.FRST.ZS",
         "evidence": {}
       },
       {
@@ -1701,7 +1701,7 @@
         "isos": [
           "SUR"
         ],
-        "support": "SUR: 94.44758351333, display: 94%, rank: 1",
+        "support": "SUR value 94.44758351333 rank 1 display 94%",
         "evidence": {
           "SUR": {
             "name": "Suriname",
@@ -1717,14 +1717,14 @@
         "surface": "beat_1",
         "text": "Dark blue is the lowest coverage, shifting through grey-gold to bright yellow for the highest across 207 countries and territories.",
         "isos": [],
-        "support": "count: 207",
+        "support": "universe mapped countries and territories with data count 207",
         "evidence": {}
       },
       {
         "surface": "beat_2",
         "text": "Forest area is the share of land under natural or planted trees at least 5 meters tall, excluding agriculture and urban parks.",
         "isos": [],
-        "support": "definition: Forest area (% of land area) is the share of total land area that is under natural or planted stands of trees of at least 5 meters in situ, whether productive or not, and excludes tree stands in agricultural production systems (for example, in fruit plantations and agroforestry systems) and trees in urban parks and gardens.",
+        "support": "definition Forest area (% of land area) is the share of total land area that is under natural or planted stands of trees of at least 5 meters in situ, whether productive or not, and excludes tree stands in agricultural production systems (for example, in fruit plantations and agroforestry systems) and trees in urban parks and gardens.",
         "evidence": {}
       },
       {
@@ -1735,7 +1735,7 @@
           "GAB",
           "GUY"
         ],
-        "support": "SUR: 94.44758351333 (display: 94%), GAB: 91.1823650405558 (display: 91%), GUY: 87.0878369802027 (display: 87%)",
+        "support": "SUR value 94.44758351333 display 94%, GAB value 91.1823650405558 display 91%, GUY value 87.0878369802027 display 87%",
         "evidence": {
           "SUR": {
             "name": "Suriname",
@@ -1771,7 +1771,7 @@
           "IND",
           "JPN"
         ],
-        "support": "USA: 33.8669264120375 (display: 34%), IND: 24.5390304689576 (display: 25%), JPN: 68.3957811364628 (display: 68%)",
+        "support": "USA value 33.8669264120375 display 34%, IND value 24.5390304689576 display 25%, JPN value 68.3957811364628 display 68%",
         "evidence": {
           "USA": {
             "name": "United States",
@@ -1807,7 +1807,7 @@
           "MRT",
           "QAT"
         ],
-        "support": "KWT: 0.350729517396184 (display: 0%), MRT: 0.287611138061512 (display: 0%), QAT: 0.0 (display: 0%)",
+        "support": "KWT value 0.350729517396184 display 0%, MRT value 0.287611138061512 display 0%, QAT value 0.0 display 0%",
         "evidence": {
           "KWT": {
             "name": "Kuwait",
@@ -1839,37 +1839,48 @@
         "surface": "beat_6",
         "text": "So where does your country rank on the map?",
         "isos": [],
-        "support": "universe: mapped countries and territories with data",
+        "support": "universe mapped countries and territories with data",
         "evidence": {}
       },
       {
         "surface": "card_6",
         "text": "Where is your country? Data: World Bank 2021-2023",
         "isos": [],
-        "support": "source: https://data.worldbank.org/indicator/AG.LND.FRST.ZS, year_label: latest available 2021–2023",
+        "support": "source https://data.worldbank.org/indicator/AG.LND.FRST.ZS year_label latest available 2021–2023",
         "evidence": {}
       },
       {
         "surface": "title",
         "text": "Forest cover across the world in 207 places",
         "isos": [],
-        "support": "Count matches the universe size of 207.",
+        "support": "Matches the count of 207 in the universe.",
         "method": "complete-surface-check",
         "evidence": {}
       },
       {
         "surface": "hook",
         "text": "THE WORLD'S GREENEST",
-        "isos": [],
-        "support": "Refers to the forest cover indicator.",
+        "isos": [
+          "SUR"
+        ],
+        "support": "Suriname is ranked #1 in forest cover.",
         "method": "complete-surface-check",
-        "evidence": {}
+        "evidence": {
+          "SUR": {
+            "name": "Suriname",
+            "value": 94.44758351333,
+            "display": "94%",
+            "year": 2023,
+            "unit": "%",
+            "rank": 1
+          }
+        }
       },
       {
         "surface": "description",
         "text": "A look at the global distribution of forest cover based on World Bank data.",
         "isos": [],
-        "support": "Accurately references World Bank data source.",
+        "support": "Accurately describes the indicator and source.",
         "method": "complete-surface-check",
         "evidence": {}
       },
@@ -1879,7 +1890,7 @@
         "isos": [
           "SUR"
         ],
-        "support": "Suriname value is 94.44% (displayed as 94%) and it ranks 1st.",
+        "support": "Suriname's forest area is 94.44% (displayed as 94%) and it ranks first.",
         "method": "complete-surface-check",
         "evidence": {
           "SUR": {
@@ -1896,7 +1907,7 @@
         "surface": "beat_1",
         "text": "Dark blue is the lowest coverage, shifting through grey-gold to bright yellow for the highest across 207 countries and territories.",
         "isos": [],
-        "support": "Matches the 207 count and visual plans.",
+        "support": "Describes visual encoding across the 207 mapped entities.",
         "method": "complete-surface-check",
         "evidence": {}
       },
@@ -1904,7 +1915,7 @@
         "surface": "beat_2",
         "text": "Forest area is the share of land under natural or planted trees at least 5 meters tall, excluding agriculture and urban parks.",
         "isos": [],
-        "support": "Directly matches the provided definition.",
+        "support": "Directly matches the provided definition of the World Bank indicator.",
         "method": "complete-surface-check",
         "evidence": {}
       },
@@ -1916,7 +1927,7 @@
           "GAB",
           "GUY"
         ],
-        "support": "Suriname, Gabon, and Guyana values match the dataset.",
+        "support": "Suriname (94%), Gabon (91%), and Guyana (87%) values match the dataset.",
         "method": "complete-surface-check",
         "evidence": {
           "SUR": {
@@ -1953,7 +1964,7 @@
           "IND",
           "JPN"
         ],
-        "support": "USA, India, and Japan values match the dataset.",
+        "support": "USA (34%), India (25%), and Japan (68%) values match the dataset.",
         "method": "complete-surface-check",
         "evidence": {
           "USA": {
@@ -1990,7 +2001,7 @@
           "MRT",
           "QAT"
         ],
-        "support": "Kuwait, Mauritania, and Qatar round to 0% display values.",
+        "support": "Kuwait (0%), Mauritania (0%), and Qatar (0%) are correctly reported based on rounded display values.",
         "method": "complete-surface-check",
         "evidence": {
           "KWT": {
@@ -2023,7 +2034,7 @@
         "surface": "beat_6",
         "text": "So where does your country rank on the map?",
         "isos": [],
-        "support": "Consistent with map universe.",
+        "support": "Call to action consistent with mapped country data.",
         "method": "complete-surface-check",
         "evidence": {}
       },
@@ -2034,7 +2045,7 @@
           "Data: World Bank 2021-2023"
         ],
         "isos": [],
-        "support": "Matches World Bank source and year label range.",
+        "support": "Reflects the correct source and timeframe (2021-2023).",
         "method": "complete-surface-check",
         "evidence": {}
       }
@@ -2042,39 +2053,41 @@
     "surface_checks": {
       "title": {
         "supported": true,
-        "reason": "Count matches the universe size of 207.",
+        "reason": "Matches the count of 207 in the universe.",
         "isos": []
       },
       "hook": {
         "supported": true,
-        "reason": "Refers to the forest cover indicator.",
-        "isos": []
+        "reason": "Suriname is ranked #1 in forest cover.",
+        "isos": [
+          "SUR"
+        ]
       },
       "description": {
         "supported": true,
-        "reason": "Accurately references World Bank data source.",
+        "reason": "Accurately describes the indicator and source.",
         "isos": []
       },
       "beat_0": {
         "supported": true,
-        "reason": "Suriname value is 94.44% (displayed as 94%) and it ranks 1st.",
+        "reason": "Suriname's forest area is 94.44% (displayed as 94%) and it ranks first.",
         "isos": [
           "SUR"
         ]
       },
       "beat_1": {
         "supported": true,
-        "reason": "Matches the 207 count and visual plans.",
+        "reason": "Describes visual encoding across the 207 mapped entities.",
         "isos": []
       },
       "beat_2": {
         "supported": true,
-        "reason": "Directly matches the provided definition.",
+        "reason": "Directly matches the provided definition of the World Bank indicator.",
         "isos": []
       },
       "beat_3": {
         "supported": true,
-        "reason": "Suriname, Gabon, and Guyana values match the dataset.",
+        "reason": "Suriname (94%), Gabon (91%), and Guyana (87%) values match the dataset.",
         "isos": [
           "SUR",
           "GAB",
@@ -2083,7 +2096,7 @@
       },
       "beat_4": {
         "supported": true,
-        "reason": "USA, India, and Japan values match the dataset.",
+        "reason": "USA (34%), India (25%), and Japan (68%) values match the dataset.",
         "isos": [
           "USA",
           "IND",
@@ -2092,7 +2105,7 @@
       },
       "beat_5": {
         "supported": true,
-        "reason": "Kuwait, Mauritania, and Qatar round to 0% display values.",
+        "reason": "Kuwait (0%), Mauritania (0%), and Qatar (0%) are correctly reported based on rounded display values.",
         "isos": [
           "KWT",
           "MRT",
@@ -2101,18 +2114,18 @@
       },
       "beat_6": {
         "supported": true,
-        "reason": "Consistent with map universe.",
+        "reason": "Call to action consistent with mapped country data.",
         "isos": []
       },
       "card_6": {
         "supported": true,
-        "reason": "Matches World Bank source and year label range.",
+        "reason": "Reflects the correct source and timeframe (2021-2023).",
         "isos": []
       }
     },
     "warnings": []
   },
   "script_sha256": "6ff30e316385e08f0467e437c3993c01cdeba523d5591805858256be7a9f7005",
-  "data_sha256": "e07cda74b4d58920ce1f79386b1cf37e5488d51d29dc136d7d005860a9aff0a3",
-  "reviewer_model": "gemini-flash-lite-latest"
+  "data_sha256": "f6e9eadf60f44245e914fce0ef245cfb75da3ebacbcc410828e017e14e8ba83b",
+  "reviewer_model": "gemini-3.5-flash-lite"
 }

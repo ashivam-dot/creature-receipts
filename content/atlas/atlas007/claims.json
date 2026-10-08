@@ -5,8 +5,8 @@
     "indicator": "IT.NET.USER.ZS",
     "definition": "Internet users are individuals who have used the Internet (from any location) in the last 3 months. The Internet can be used via a computer, mobile phone, personal digital assistant, games machine, digital TV etc.",
     "source": "https://data.worldbank.org/indicator/IT.NET.USER.ZS",
-    "source_response_sha256": "",
-    "source_organization": "",
+    "source_response_sha256": "c5cab9893815188e4aa2789c3486447c81877b360cd15865e741f65d538fc0b0",
+    "source_organization": "World Telecommunication/ICT Indicators Database, International Telecommunication Union (ITU), uri: https://datahub.itu.int/",
     "year_label": "latest available 2019–2025",
     "universe": "mapped countries and territories with data",
     "count": 186,
@@ -1510,14 +1510,35 @@
         "surface": "title",
         "text": "Internet usage across 186 places",
         "isos": [],
-        "support": "The evidence lists 186 mapped countries and territories.",
+        "support": "count: 186",
+        "evidence": {}
+      },
+      {
+        "surface": "hook",
+        "text": "INTERNET USAGE MAPPED",
+        "isos": [],
+        "support": "indicator: IT.NET.USER.ZS",
+        "evidence": {}
+      },
+      {
+        "surface": "description",
+        "text": "This map shows the share of people who have used the internet in the last 3 months.",
+        "isos": [],
+        "support": "definition: Internet users are individuals who have used the Internet (from any location) in the last 3 months.",
         "evidence": {}
       },
       {
         "surface": "beat_0",
         "text": "143 out of 186 countries and territories have at least 50 percent internet usage.",
         "isos": [],
-        "support": "The evidence states 143 entities are at or above the 50.0 threshold out of 186.",
+        "support": "count: 186, threshold: 50.0, at_or_above: 143",
+        "evidence": {}
+      },
+      {
+        "surface": "beat_1",
+        "text": "Yellow areas show 50 percent or more usage, while dark blue areas are below that.",
+        "isos": [],
+        "support": "threshold: 50.0",
         "evidence": {}
       },
       {
@@ -1526,7 +1547,7 @@
         "isos": [
           "SSD"
         ],
-        "support": "The evidence shows South Sudan (SSD) at rank 186 with a value of 6.671% (displayed as 7%).",
+        "support": "South Sudan value: 6.671000004, display: 7%, rank: 186",
         "evidence": {
           "SSD": {
             "name": "South Sudan",
@@ -1545,7 +1566,7 @@
           "KWT",
           "NGA"
         ],
-        "support": "The evidence shows Kuwait (KWT) at 100% and Nigeria (NGA) at 41.21% (displayed as 41%).",
+        "support": "Kuwait (2025) value: 100.0, display: 100%, rank: 1; Nigeria value: 41.21139908, display: 41%, rank: 153",
         "evidence": {
           "KWT": {
             "name": "Kuwait",
@@ -1566,13 +1587,20 @@
         }
       },
       {
+        "surface": "beat_4",
+        "text": "The metric counts individuals who have used the internet from any location in the last 3 months.",
+        "isos": [],
+        "support": "definition: Internet users are individuals who have used the Internet (from any location) in the last 3 months.",
+        "evidence": {}
+      },
+      {
         "surface": "beat_5",
         "text": "Among these countries, India is at 70 percent and the USA is at 95 percent.",
         "isos": [
           "IND",
           "USA"
         ],
-        "support": "The evidence shows India (IND) at 70% and the USA (USA) at 94.69% (displayed as 95%).",
+        "support": "India value: 70.0, display: 70%, rank: 120; United States value: 94.69380188, display: 95%, rank: 27",
         "evidence": {
           "IND": {
             "name": "India",
@@ -1593,10 +1621,24 @@
         }
       },
       {
+        "surface": "beat_6",
+        "text": "So where does your country rank?",
+        "isos": [],
+        "support": "universe: mapped countries and territories with data",
+        "evidence": {}
+      },
+      {
+        "surface": "card_6",
+        "text": "Where is your country? Source: World Bank",
+        "isos": [],
+        "support": "source: https://data.worldbank.org/indicator/IT.NET.USER.ZS",
+        "evidence": {}
+      },
+      {
         "surface": "title",
         "text": "Internet usage across 186 places",
         "isos": [],
-        "support": "Matches the count of 186 entities in the evidence.",
+        "support": "Count is 186 places in the universe.",
         "method": "complete-surface-check",
         "evidence": {}
       },
@@ -1604,7 +1646,7 @@
         "surface": "hook",
         "text": "INTERNET USAGE MAPPED",
         "isos": [],
-        "support": "Accurate summary of the indicator.",
+        "support": "Matches indicator topic.",
         "method": "complete-surface-check",
         "evidence": {}
       },
@@ -1612,7 +1654,7 @@
         "surface": "description",
         "text": "This map shows the share of people who have used the internet in the last 3 months.",
         "isos": [],
-        "support": "Matches the definition provided in the evidence.",
+        "support": "Directly matches the World Bank definition.",
         "method": "complete-surface-check",
         "evidence": {}
       },
@@ -1620,7 +1662,7 @@
         "surface": "beat_0",
         "text": "143 out of 186 countries and territories have at least 50 percent internet usage.",
         "isos": [],
-        "support": "Matches the evidence count of 143 out of 186.",
+        "support": "Matches count of 186 and at_or_above 143 for threshold 50.0.",
         "method": "complete-surface-check",
         "evidence": {}
       },
@@ -1628,7 +1670,7 @@
         "surface": "beat_1",
         "text": "Yellow areas show 50 percent or more usage, while dark blue areas are below that.",
         "isos": [],
-        "support": "Describes the visual representation of the threshold.",
+        "support": "Matches threshold of 50.0.",
         "method": "complete-surface-check",
         "evidence": {}
       },
@@ -1638,7 +1680,7 @@
         "isos": [
           "SSD"
         ],
-        "support": "Matches the evidence for South Sudan.",
+        "support": "South Sudan rank is 186 with 7% display value.",
         "method": "complete-surface-check",
         "evidence": {
           "SSD": {
@@ -1658,7 +1700,7 @@
           "KWT",
           "NGA"
         ],
-        "support": "Matches the evidence for Kuwait and Nigeria.",
+        "support": "Kuwait is 100% and Nigeria is 41%.",
         "method": "complete-surface-check",
         "evidence": {
           "KWT": {
@@ -1683,7 +1725,7 @@
         "surface": "beat_4",
         "text": "The metric counts individuals who have used the internet from any location in the last 3 months.",
         "isos": [],
-        "support": "Matches the definition provided in the evidence.",
+        "support": "Directly quotes the indicator definition.",
         "method": "complete-surface-check",
         "evidence": {}
       },
@@ -1694,7 +1736,7 @@
           "IND",
           "USA"
         ],
-        "support": "Matches the evidence for India and the USA.",
+        "support": "India is 70% and USA is 95%.",
         "method": "complete-surface-check",
         "evidence": {
           "IND": {
@@ -1719,7 +1761,7 @@
         "surface": "beat_6",
         "text": "So where does your country rank?",
         "isos": [],
-        "support": "Standard engagement question.",
+        "support": "Standard concluding question matching universe.",
         "method": "complete-surface-check",
         "evidence": {}
       },
@@ -1730,7 +1772,7 @@
           "Source: World Bank"
         ],
         "isos": [],
-        "support": "Matches the source attribution.",
+        "support": "Matches source and concluding text.",
         "method": "complete-surface-check",
         "evidence": {}
       }
@@ -1738,39 +1780,39 @@
     "surface_checks": {
       "title": {
         "supported": true,
-        "reason": "Matches the count of 186 entities in the evidence.",
+        "reason": "Count is 186 places in the universe.",
         "isos": []
       },
       "hook": {
         "supported": true,
-        "reason": "Accurate summary of the indicator.",
+        "reason": "Matches indicator topic.",
         "isos": []
       },
       "description": {
         "supported": true,
-        "reason": "Matches the definition provided in the evidence.",
+        "reason": "Directly matches the World Bank definition.",
         "isos": []
       },
       "beat_0": {
         "supported": true,
-        "reason": "Matches the evidence count of 143 out of 186.",
+        "reason": "Matches count of 186 and at_or_above 143 for threshold 50.0.",
         "isos": []
       },
       "beat_1": {
         "supported": true,
-        "reason": "Describes the visual representation of the threshold.",
+        "reason": "Matches threshold of 50.0.",
         "isos": []
       },
       "beat_2": {
         "supported": true,
-        "reason": "Matches the evidence for South Sudan.",
+        "reason": "South Sudan rank is 186 with 7% display value.",
         "isos": [
           "SSD"
         ]
       },
       "beat_3": {
         "supported": true,
-        "reason": "Matches the evidence for Kuwait and Nigeria.",
+        "reason": "Kuwait is 100% and Nigeria is 41%.",
         "isos": [
           "KWT",
           "NGA"
@@ -1778,12 +1820,12 @@
       },
       "beat_4": {
         "supported": true,
-        "reason": "Matches the definition provided in the evidence.",
+        "reason": "Directly quotes the indicator definition.",
         "isos": []
       },
       "beat_5": {
         "supported": true,
-        "reason": "Matches the evidence for India and the USA.",
+        "reason": "India is 70% and USA is 95%.",
         "isos": [
           "IND",
           "USA"
@@ -1791,18 +1833,18 @@
       },
       "beat_6": {
         "supported": true,
-        "reason": "Standard engagement question.",
+        "reason": "Standard concluding question matching universe.",
         "isos": []
       },
       "card_6": {
         "supported": true,
-        "reason": "Matches the source attribution.",
+        "reason": "Matches source and concluding text.",
         "isos": []
       }
     },
     "warnings": []
   },
   "script_sha256": "784d1537547cb156511991b3147701f8c400502f1cbc4cfb43e0fcb9016fecb8",
-  "data_sha256": "3465903684ad37bcaa6084908129a7cc0c62a17e650dfef0e8144530d0a2d7d8",
-  "reviewer_model": "gemini-3.1-flash-lite"
+  "data_sha256": "e42aa3f23d2869f88f0277b05f211babfe3ea4a0dcbffaac52449c5d728eb866",
+  "reviewer_model": "gemini-3.5-flash-lite"
 }

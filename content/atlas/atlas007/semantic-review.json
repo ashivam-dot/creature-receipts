@@ -5,13 +5,31 @@
       "surface": "title",
       "text": "Internet usage across 186 places",
       "isos": [],
-      "support": "The evidence lists 186 mapped countries and territories."
+      "support": "count: 186"
+    },
+    {
+      "surface": "hook",
+      "text": "INTERNET USAGE MAPPED",
+      "isos": [],
+      "support": "indicator: IT.NET.USER.ZS"
+    },
+    {
+      "surface": "description",
+      "text": "This map shows the share of people who have used the internet in the last 3 months.",
+      "isos": [],
+      "support": "definition: Internet users are individuals who have used the Internet (from any location) in the last 3 months."
     },
     {
       "surface": "beat_0",
       "text": "143 out of 186 countries and territories have at least 50 percent internet usage.",
       "isos": [],
-      "support": "The evidence states 143 entities are at or above the 50.0 threshold out of 186."
+      "support": "count: 186, threshold: 50.0, at_or_above: 143"
+    },
+    {
+      "surface": "beat_1",
+      "text": "Yellow areas show 50 percent or more usage, while dark blue areas are below that.",
+      "isos": [],
+      "support": "threshold: 50.0"
     },
     {
       "surface": "beat_2",
@@ -19,7 +37,7 @@
       "isos": [
         "SSD"
       ],
-      "support": "The evidence shows South Sudan (SSD) at rank 186 with a value of 6.671% (displayed as 7%)."
+      "support": "South Sudan value: 6.671000004, display: 7%, rank: 186"
     },
     {
       "surface": "beat_3",
@@ -28,7 +46,13 @@
         "KWT",
         "NGA"
       ],
-      "support": "The evidence shows Kuwait (KWT) at 100% and Nigeria (NGA) at 41.21% (displayed as 41%)."
+      "support": "Kuwait (2025) value: 100.0, display: 100%, rank: 1; Nigeria value: 41.21139908, display: 41%, rank: 153"
+    },
+    {
+      "surface": "beat_4",
+      "text": "The metric counts individuals who have used the internet from any location in the last 3 months.",
+      "isos": [],
+      "support": "definition: Internet users are individuals who have used the Internet (from any location) in the last 3 months."
     },
     {
       "surface": "beat_5",
@@ -37,45 +61,57 @@
         "IND",
         "USA"
       ],
-      "support": "The evidence shows India (IND) at 70% and the USA (USA) at 94.69% (displayed as 95%)."
+      "support": "India value: 70.0, display: 70%, rank: 120; United States value: 94.69380188, display: 95%, rank: 27"
+    },
+    {
+      "surface": "beat_6",
+      "text": "So where does your country rank?",
+      "isos": [],
+      "support": "universe: mapped countries and territories with data"
+    },
+    {
+      "surface": "card_6",
+      "text": "Where is your country? Source: World Bank",
+      "isos": [],
+      "support": "source: https://data.worldbank.org/indicator/IT.NET.USER.ZS"
     }
   ],
   "surface_checks": {
     "title": {
       "supported": true,
-      "reason": "Matches the count of 186 entities in the evidence.",
+      "reason": "Count is 186 places in the universe.",
       "isos": []
     },
     "hook": {
       "supported": true,
-      "reason": "Accurate summary of the indicator.",
+      "reason": "Matches indicator topic.",
       "isos": []
     },
     "description": {
       "supported": true,
-      "reason": "Matches the definition provided in the evidence.",
+      "reason": "Directly matches the World Bank definition.",
       "isos": []
     },
     "beat_0": {
       "supported": true,
-      "reason": "Matches the evidence count of 143 out of 186.",
+      "reason": "Matches count of 186 and at_or_above 143 for threshold 50.0.",
       "isos": []
     },
     "beat_1": {
       "supported": true,
-      "reason": "Describes the visual representation of the threshold.",
+      "reason": "Matches threshold of 50.0.",
       "isos": []
     },
     "beat_2": {
       "supported": true,
-      "reason": "Matches the evidence for South Sudan.",
+      "reason": "South Sudan rank is 186 with 7% display value.",
       "isos": [
         "SSD"
       ]
     },
     "beat_3": {
       "supported": true,
-      "reason": "Matches the evidence for Kuwait and Nigeria.",
+      "reason": "Kuwait is 100% and Nigeria is 41%.",
       "isos": [
         "KWT",
         "NGA"
@@ -83,12 +119,12 @@
     },
     "beat_4": {
       "supported": true,
-      "reason": "Matches the definition provided in the evidence.",
+      "reason": "Directly quotes the indicator definition.",
       "isos": []
     },
     "beat_5": {
       "supported": true,
-      "reason": "Matches the evidence for India and the USA.",
+      "reason": "India is 70% and USA is 95%.",
       "isos": [
         "IND",
         "USA"
@@ -96,12 +132,12 @@
     },
     "beat_6": {
       "supported": true,
-      "reason": "Standard engagement question.",
+      "reason": "Standard concluding question matching universe.",
       "isos": []
     },
     "card_6": {
       "supported": true,
-      "reason": "Matches the source attribution.",
+      "reason": "Matches source and concluding text.",
       "isos": []
     }
   }
