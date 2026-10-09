@@ -93,6 +93,9 @@ def entity_value_errors(text: str, ep: AtlasEpisode, ds: Dataset) -> list[str]:
         # A sentence boundary ends the named subject's scope.
         clause = re.split(r"[.!?](?:\s|$)", clause)[0]
         for number in writer._NUMBER.finditer(clause):
+            # Digits inside a measure's name (PM2.5, CO2) are not the country's value.
+            if number.start() and clause[number.start() - 1].isalpha():
+                continue
             context = clause[:number.start()].lower()
             token = number.group().replace(",", "").rstrip(".")
             if re.search(r"(?:per|every|each|in|year|rank|#|top)\s*$", context):

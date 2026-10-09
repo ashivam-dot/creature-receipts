@@ -36,6 +36,17 @@ def test_country_value_cannot_borrow_a_unit_denominator():
     assert quality.entity_value_errors('France has 100 subscriptions per 100 people.', ep, ds)
 
 
+def test_digits_in_a_measure_name_are_not_the_country_value():
+    from ytc.atlas.episode import AtlasEpisode
+    ep = AtlasEpisode.model_validate({'id': 'atlas999', 'title': 'test', 'value_format': '{v:.0f}',
+        'dataset': {'kind': 'worldbank', 'label': 'PM2.5', 'source': 'WB'}, 'beats': [{'text': 'test'}]})
+    ds = Dataset('pm25', 'micrograms per m³', 'WB', 'CC BY', '', {'QAT': 108, 'IND': 54},
+                 {'QAT': 2023, 'IND': 2023}, names={'QAT': 'Qatar', 'IND': 'India'})
+    assert quality.entity_value_errors("Qatar has the world's highest average PM2.5 air pollution at 108.", ep, ds) == []
+    assert quality.entity_value_errors('India has an average PM2.5 level of 2.5.', ep, ds)
+    assert quality.entity_value_errors("Qatar has the world's highest average PM2.5 air pollution at 54.", ep, ds)
+
+
 def test_public_rating_count_is_not_presented_as_verified_likes(monkeypatch):
     from ytc.atlas import stats
     class Response:
