@@ -134,9 +134,16 @@ function target(i, t) {
   const s = S.shots[i];
   const dt = Math.max(0, t - s.t0);
   const drift = s.kind === 'world' || s.kind === 'card' || s.kind === 'rank' ? 2.6 : 0.7;
-  const dir = vec(s.focus[0], s.focus[1] + drift * dt);
+  let dir = vec(s.focus[0], s.focus[1] + drift * dt);
   const span = Math.max(s.t1 - s.t0, 0.1);
-  return { dir, alt: s.alt * (1 - 0.07 * Math.min(1, dt / span)) };
+  let lift = 1;
+  if (s.focus2) {
+    const u = ease(Math.min(1, Math.max(0, (dt / span - s.pan[0]) / (s.pan[1] - s.pan[0]))));
+    const end = vec(s.focus2[0], s.focus2[1] + drift * dt);
+    dir = dir.clone().applyQuaternion(new THREE.Quaternion().slerp(new THREE.Quaternion().setFromUnitVectors(dir, end), u));
+    lift = 1 + 0.12 * Math.sin(Math.PI * u);
+  }
+  return { dir, alt: s.alt * lift * (1 - 0.07 * Math.min(1, dt / span)) };
 }
 function flyTime(i) {
   const s = S.shots[i];
@@ -236,10 +243,15 @@ window.renderAt = (t) => {
       const top = k.n.clone().multiplyScalar(1.0005 + k.mesh.scale.y + 0.004);
       const p = top.clone().project(camera);
       const e = pin(iso);
-      e.style.left = `${(p.x * 0.5 + 0.5) * W}px`;
+      // The box stays inside the frame; only its stem leans to the country's point.
+      const x = (p.x * 0.5 + 0.5) * W, half = e.offsetWidth / 2 + 28;
+      const cx = Math.min(W - half, Math.max(half, x));
+      e.style.left = `${cx}px`;
       e.style.top = `${(-p.y * 0.5 + 0.5) * H}px`;
+      e.lastChild.style.left = `calc(50% + ${x - cx}px)`;
       const at = s.pin_at ?? F;
-      e.style.opacity = smooth(at, at + 0.3, t - s.t0) * (k.n.dot(camDir) > 0.15 ? 1 : 0);
+      const inside = smooth(30, 110, Math.min(x, W - x)) * smooth(0.12, 0.25, k.n.dot(camDir));
+      e.style.opacity = smooth(at, at + 0.3, t - s.t0) * inside;
     }
   }
   renderer.render(scene, camera);

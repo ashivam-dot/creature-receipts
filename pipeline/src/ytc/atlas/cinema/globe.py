@@ -29,6 +29,10 @@ FPS = 30
 TEX_W, TEX_H = 4096, 2048
 # Altitudes above the surface, in Earth radii.
 ALT_WORLD, ALT_CARD, ALT_RANK = 5.0, 5.6, 4.6
+# Two countries named in one world shot further apart than this (radians from their midpoint) can't share the
+# narrow 9:16 view: the camera starts on the first and pans to the second over PAN (fractions of the beat).
+PAN_SPREAD = math.radians(40)
+PAN = (0.35, 0.75)
 # Software GL works on any Linux host; on a Mac the GPU is used unless ATLAS_SOFTWARE_GL=1.
 SOFTWARE_GL = ["--use-angle=swiftshader", "--use-gl=angle", "--enable-unsafe-swiftshader", "--ignore-gpu-blocklist"]
 
@@ -146,10 +150,21 @@ def shots(ep, spans: list[tuple[float, float]], duration: float) -> list[dict]:
         shot = beat.shot
         kind = shot.kind
         isos = [x for x in ([shot.iso] if shot.iso else []) + list(shot.isos) if x in world]
+        extra = {}
         if kind == "world":
             callouts = [x for x in shot.callouts if x in world]
-            lat, lon, _ = _center(callouts) if callouts else (18.0, last[1], 0.0)
+            lat, lon, spread = _center(callouts) if callouts else (18.0, last[1], 0.0)
             focus, alt, isos = (_clamp_lat(lat * 0.6 + 8), lon), ALT_WORLD, callouts[:2]
+            if len(isos) == 2 and spread > PAN_SPREAD:
+                a, b = world[isos[0]], world[isos[1]]
+                focus = (_clamp_lat(a.lat * 0.6 + 8), a.lon)
+                extra = {"focus2": [round(_clamp_lat(b.lat * 0.6 + 8), 3), round(b.lon, 3)], "pan": list(PAN)}
+        elif kind in ("group", "region") and len(isos) > 1 and _center(isos)[2] > PAN_SPREAD:
+            # Too far apart to share a view: dive to the first, as a country shot would, and light only it.
+            lo0, la0, lo1, la1 = _lonlat_box(isos[0])
+            c = world[isos[0]]
+            span = math.radians(max((lo1 - lo0) * math.cos(math.radians(c.lat)), la1 - la0))
+            focus, alt, extra = (_clamp_lat(c.lat), c.lon), max(1.2, min(2.4, span / 0.2)), {"hi_isos": isos[:1]}
         elif kind == "country" and isos:
             lo0, la0, lo1, la1 = _lonlat_box(isos[0])
             c = world[isos[0]]
@@ -165,7 +180,7 @@ def shots(ep, spans: list[tuple[float, float]], duration: float) -> list[dict]:
             focus, alt, isos = (18.0, last[1] + 35), ALT_CARD, []
         last = focus
         out.append({"kind": kind, "t0": 0.0 if i == 0 else t0, "t1": duration if i == len(spans) - 1 else t1,
-                    "isos": isos, "focus": [round(focus[0], 3), round(focus[1], 3)], "alt": round(alt, 3)})
+                    "isos": isos, "focus": [round(focus[0], 3), round(focus[1], 3)], "alt": round(alt, 3), **extra})
     return out
 
 
@@ -202,7 +217,7 @@ def bake(ep, ds, scale: Scale, spans: list[tuple[float, float]], duration: float
     for i, s in enumerate(plan):
         if s["kind"] in ("country", "group") and s["isos"]:
             name = f"hi_{i}.png"
-            s["hibox"] = [round(v, 6) for v in highlight_texture(s["isos"], accent, out / name)]
+            s["hibox"] = [round(v, 6) for v in highlight_texture(s.get("hi_isos", s["isos"]), accent, out / name)]
             s["hi"] = name
     scene = {"countries": countries, "shots": plan, "grow": [0.0, 1.6], "duration": duration}
     (out / "scene.json").write_text(json.dumps(scene), encoding="utf-8")

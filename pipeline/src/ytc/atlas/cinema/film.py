@@ -440,7 +440,7 @@ def narrate(ep: AtlasEpisode, folder: Path) -> tts.Narration:
                      beats=[Beat(text=b.text, pause_after=b.pause_after) for b in ep.beats])
     narr = tts.synthesize(spec, folder)
     if not TARGET[0] <= narr.duration <= TARGET[1]:
-        speed = min(1.25, max(0.98, VOICE.speed * narr.duration / sum(TARGET) * 2))
+        speed = min(1.18, max(0.98, VOICE.speed * narr.duration / sum(TARGET) * 2))
         spec = spec.model_copy(update={"voice": VOICE.model_copy(update={"speed": speed})})
         narr = tts.synthesize(spec, folder)
     return narr

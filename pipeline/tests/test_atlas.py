@@ -118,6 +118,78 @@ def test_sync_frees_the_video_only_once_sent(tmp_path, monkeypatch):
     assert not video.exists()
 
 
+def test_withdrawn_shorts_leave_the_reserve_and_reopen_their_topic(tmp_path, monkeypatch):
+    import json
+
+    from ytc.atlas import pipeline
+
+    episodes, box = tmp_path / "atlas", tmp_path / "outbox"
+    for name in ("atlas006", "atlas007"):
+        (episodes / name).mkdir(parents=True)
+    (box / "atlas").mkdir(parents=True)
+    video = box / "atlas" / "atlas006-ab.mp4"
+    video.write_bytes(b"x")
+    (episodes / "atlas006" / "ready.json").write_text(json.dumps({"modal_path": "atlas/atlas006-ab.mp4"}))
+    (episodes / "atlas007" / "publish.json").write_text("{}")
+    topics = tmp_path / "topics.json"
+    topics.write_text(json.dumps({"topics": [{"id": "t001", "status": "ready:atlas006"}]}))
+    monkeypatch.setattr(pipeline, "EPISODES", episodes)
+    monkeypatch.setattr(pipeline, "TOPICS", topics)
+    monkeypatch.setenv("ATLAS_OUTBOX", str(box))
+    assert pipeline.retire_withdrawn({"atlas006": {}, "atlas007": {}, "atlas404": {}}) == ["atlas006"]
+    assert not video.exists() and not (episodes / "atlas006").exists()
+    assert json.loads(topics.read_text())["topics"][0]["status"] == "open"
+    assert (episodes / "atlas007").is_dir() and pipeline.next_id() == "atlas008"
+
+
+def test_plain_repairs_fillers_it_can():
+    from ytc.atlas import writer
+
+    assert writer.plain("207 countries and territories with data. Chad reaches 1,700. Peru records 2,400.") == \
+        "207 countries and territories. Chad hits 1,700. Peru has 2,400."
+
+
+def test_writer_rejects_report_speak_and_back_to_back_repeats():
+    from ytc.atlas import writer
+
+    draft = {"title": "t", "beats": [
+        {"text": "The USA has 3,947.", "shot": "world", "isos": ["USA"]},
+        {"text": "The USA, standing as the top, has 3,947.", "shot": "country", "isos": ["USA"]},
+        {"text": "Where do you land?", "shot": "card"}]}
+    found = " ".join(writer.problems(draft, {"3,947"}, {}, {"USA": 3947.0}))
+    assert "report-speak" in found and "repeats 3,947" in found
+    draft["title"] = "Japan is 3.5 times older than Niger"
+    assert "misstates a ratio" in " ".join(writer.problems(draft, {"3,947", "3.5"}, {}, {"USA": 3947.0}))
+
+
+def test_numbers_count_as_they_are_said():
+    from ytc.atlas import writer
+
+    assert writer.spoken_words("The USA has 3,947.") == 3 + 6
+    assert writer.spoken_words("Japan, 1.6 times.") == 1 + 3 + 1
+
+
+def test_number_words_from_the_official_definition_may_be_quoted():
+    from ytc.atlas import writer
+
+    text = "Median age splits a country into two halves."
+    assert writer.number_problems(text, set())
+    assert not writer.number_problems(text, set(), quoted="It divides the population into two halves.")
+
+
+def test_photo_credits_come_from_the_committed_episode(tmp_path, monkeypatch):
+    import json
+
+    from ytc.atlas import publish
+
+    (tmp_path / "atlas009").mkdir()
+    (tmp_path / "atlas009" / "credits.json").write_text(json.dumps(
+        [{"place": "Tokyo", "author": "A", "license": "CC BY-SA 4.0", "page": "https://commons.wikimedia.org/x"}]))
+    monkeypatch.setattr(publish, "EPISODES", tmp_path)
+    assert "Tokyo: A, CC BY-SA 4.0" in publish.photo_credits(tmp_path / "empty", "atlas009")
+    assert publish.photo_credits(None, "atlas404") == ""
+
+
 def test_topic_scales_are_checked_against_the_data():
     from ytc.atlas import topics
 

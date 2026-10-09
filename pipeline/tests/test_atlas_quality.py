@@ -129,6 +129,9 @@ def test_legacy_or_changed_receipts_do_not_count_toward_producer_reserve(tmp_pat
     receipt(folder)
     marker['qa_sha256'] = quality.digest(folder / 'qa.json')
     quality.save(folder / 'ready.json', marker)
+    assert pipeline.ready() == []
+    marker['format'] = pipeline.FORMAT
+    quality.save(folder / 'ready.json', marker)
     assert pipeline.ready() == [folder]
     (folder / 'atlas.yaml').write_text('changed')
     assert pipeline.ready() == []

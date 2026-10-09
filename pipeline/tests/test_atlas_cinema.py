@@ -28,6 +28,19 @@ def test_country_beats_dive_on_the_globe_then_cut_to_photos():
     assert segs[2]["t0"] - 4.0 >= film.DIVE and segs[-1]["t1"] == 23.6 and segs[0]["t0"] == 0.0
 
 
+def test_far_apart_countries_pan_or_dive_to_the_first():
+    ep = AtlasEpisode.model_validate({
+        "id": "atlas999", "title": "t", "dataset": {"kind": "worldbank", "label": "l", "source": "s"},
+        "beats": [{"text": "far", "shot": {"callouts": ["NER", "JPN"]}},
+                  {"text": "near", "shot": {"callouts": ["FRA", "DEU"]}},
+                  {"text": "pair", "shot": {"kind": "group", "isos": ["USA", "CHN"]}},
+                  {"text": "end", "shot": {"kind": "card", "lines": ["Yours?"]}}]})
+    far, near, pair, _ = globe.shots(ep, [(0, 5), (5, 10), (10, 15), (15, 20)], 20)
+    assert far["focus2"][1] > 100 and far["focus"][1] < 20 and far["pan"] == list(globe.PAN)
+    assert "focus2" not in near
+    assert pair["hi_isos"] == ["USA"] and pair["focus"][1] < -60
+
+
 def test_claims_skip_former_values_and_prefer_the_preferred_rank():
     entity = {"claims": {"P36": [
         {"rank": "normal", "mainsnak": {"datavalue": {"value": {"id": "Q_OLD"}}}, "qualifiers": {"P582": []}},

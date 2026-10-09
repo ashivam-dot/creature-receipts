@@ -8,9 +8,11 @@ def test_hold_renders_nothing(tmp_path, monkeypatch):
     hold.write_text(json.dumps({"reason": "format rework"}))
     monkeypatch.setattr(pipeline, "HOLD", hold)
     monkeypatch.setattr(pipeline, "sync", lambda: ["atlas001"])
+    monkeypatch.setattr(pipeline, "retire_withdrawn", lambda: ["atlas006"])
     monkeypatch.setattr(stats, "update", lambda episodes, root: {"atlas001": {}})
     monkeypatch.setattr(pipeline, "make_next", lambda: (_ for _ in ()).throw(AssertionError("rendered while held")))
 
     result = pipeline.run()
 
-    assert result == {"outcome": "held", "reason": "format rework", "synced": ["atlas001"], "tracked": 1}
+    assert result == {"outcome": "held", "reason": "format rework", "synced": ["atlas001"], "withdrawn": ["atlas006"],
+                      "tracked": 1}

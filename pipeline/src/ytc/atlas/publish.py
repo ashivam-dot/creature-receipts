@@ -32,12 +32,17 @@ MIN_LEAD = timedelta(minutes=30)
 # A slot with a post this close to it is taken.
 SLOT_GAP = timedelta(minutes=60)
 MAP_CREDIT = "Globe: NASA Blue Marble and Black Marble (public domain). Borders: Natural Earth (public domain)."
+# The producer's committed episodes. The publisher schedules from a temporary folder holding only the video, so the
+# credits are read from here when that folder has none.
+EPISODES = Path(__file__).resolve().parents[4] / "content" / "atlas"
 
 
-def photo_credits(folder: Path | None) -> str:
+def photo_credits(folder: Path | None, episode_id: str = "") -> str:
     """Every photo the Short shows, with its author, licence and Commons page (credits.json, written by the
     renderer); empty for a Short without photos."""
     path = folder / "credits.json" if folder else None
+    if (not path or not path.exists()) and episode_id:
+        path = EPISODES / episode_id / "credits.json"
     if not path or not path.exists():
         return ""
     rows = json.loads(path.read_text(encoding="utf-8"))
@@ -50,7 +55,7 @@ def description(ep: AtlasEpisode, ds: Dataset, folder: Path | None = None) -> st
     blocks = [
         ep.description,
         f"Data: {ds.label}, {ds.source}, {ds.year_label} ({ds.license}).\n{sources}\n{MAP_CREDIT}",
-        photo_credits(folder),
+        photo_credits(folder, ep.id),
         "Script written with AI and checked number by number against the data. Narrated with a synthetic voice.",
         f"Atlas episode: {ep.id}",
         " ".join(ep.hashtags[:3]),

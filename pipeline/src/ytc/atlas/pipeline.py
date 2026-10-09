@@ -37,10 +37,13 @@ EPISODES = ROOT / "content" / "atlas"
 BULKY = ("short.mp4", "mix.wav", "mix_raw.wav", "mix_tamed.wav", "narration.wav", "work", ".sfx", "globe.mp4",
          ".stage", "stills")
 OUTBOX_VOLUME = "creature-receipts-outbox"
+# The visual format a parked Short was rendered in; a waiting Short in any other format is re-rendered before it posts.
+FORMAT = "cinema-v2"
 # Rendered Shorts kept waiting for the publisher: more than a day of SLOTS, so a failed run costs no post.
 RESERVE = 4
 PUBLISHED_URL = ("https://raw.githubusercontent.com/ashivam-dot/history-last-hours-control/main/"
                  "atlas/published.json")
+WITHDRAWN_URL = PUBLISHED_URL.replace("published.json", "withdrawn.json")
 EPISODE_ID = re.compile(r"atlas\d{3,}")
 # While this file ({"reason": ...}) exists the producer only syncs and refreshes numbers; it renders nothing.
 HOLD = ROOT / "status" / "atlas_hold.json"
@@ -185,7 +188,7 @@ def park(ep: AtlasEpisode, folder: Path, video: Path, topic_id: str) -> dict:
             raise RuntimeError(f"{ep.id}: the parked copy differs from the render")
     quality.verify(folder, sha)
     record = {"qa_sha256": quality.digest(folder / "qa.json"), "id": ep.id, "title": ep.title, "topic": topic_id, "media_sha256": sha, "bytes": target.stat().st_size,
-              "modal_volume": OUTBOX_VOLUME, "modal_path": rel,
+              "modal_volume": OUTBOX_VOLUME, "modal_path": rel, "format": FORMAT,
               "rendered_at": datetime.now(timezone.utc).isoformat(timespec="seconds")}
     (folder / "ready.json").write_text(json.dumps(record, indent=2) + "\n", encoding="utf-8")
     _tidy(folder)
@@ -200,7 +203,7 @@ def _waiting() -> list[Path]:
 def _accepted(folder: Path) -> bool:
     try:
         record = json.loads((folder / "ready.json").read_text())
-        if record["id"] != folder.name or record["modal_volume"] != OUTBOX_VOLUME:
+        if record["id"] != folder.name or record["modal_volume"] != OUTBOX_VOLUME or record.get("format") != FORMAT:
             return False
         if record.get("qa_sha256") != quality.digest(folder / "qa.json"):
             return False
@@ -215,9 +218,9 @@ def ready() -> list[Path]:
     return [folder for folder in _waiting() if _accepted(folder)]
 
 
-def published() -> dict:
+def published(url: str = PUBLISHED_URL) -> dict:
     try:
-        response = requests.get(PUBLISHED_URL, timeout=30)
+        response = requests.get(url, timeout=30)
         if response.status_code == 404:
             return {}
         response.raise_for_status()
@@ -246,6 +249,27 @@ def sync(records: dict | None = None) -> list[str]:
         if record.get("status") == "sent" and parked.exists():
             (outbox() / json.loads(parked.read_text(encoding="utf-8"))["modal_path"]).unlink(missing_ok=True)
     return changed
+
+
+def retire_withdrawn(records: dict | None = None) -> list[str]:
+    """The publisher never schedules a Short it withdrew from Buffer, so free its parked video, reopen its topic
+    for a new Short, and set its folder aside, or it would sit in the reserve forever."""
+    retired = []
+    for episode_id in (records if records is not None else published(WITHDRAWN_URL)):
+        folder = EPISODES / episode_id
+        if not EPISODE_ID.fullmatch(episode_id) or not folder.is_dir() or (folder / "publish.json").exists():
+            continue
+        parked = folder / "ready.json"
+        if parked.exists():
+            if path := json.loads(parked.read_text(encoding="utf-8")).get("modal_path"):
+                (outbox() / path).unlink(missing_ok=True)
+            parked.unlink()
+        if topic := _topic_of(episode_id):
+            _mark(topic["id"], "open")
+        _tidy(folder)
+        folder.rename(folder.with_name(f"{episode_id}-withdrawn-{datetime.now(timezone.utc):%Y%m%d%H%M%S}"))
+        retired.append(episode_id)
+    return retired
 
 
 def _pending() -> tuple[str, dict] | None:
@@ -306,10 +330,11 @@ def run(reserve: int = RESERVE, minutes: float = 40, max_failures: int = 2) -> d
 
     started = time.monotonic()
     synced = sync()
+    withdrawn = retire_withdrawn()
     if HOLD.exists():
         reason = json.loads(HOLD.read_text(encoding="utf-8")).get("reason") or "held"
         numbers = stats.update(EPISODES, ROOT)
-        return {"outcome": "held", "reason": reason, "synced": synced, "tracked": len(numbers)}
+        return {"outcome": "held", "reason": reason, "synced": synced, "withdrawn": withdrawn, "tracked": len(numbers)}
     # Upgrade old waiting videos through the same checks instead of grandfathering unverified media.
     for folder in _waiting():
         if _accepted(folder):
@@ -318,8 +343,10 @@ def run(reserve: int = RESERVE, minutes: float = 40, max_failures: int = 2) -> d
         if topic is None:
             continue
         try:
+            old_path = json.loads((folder / "ready.json").read_text()).get("modal_path")
             ep, upgraded, _, video = make(topic, folder.name)
-            park(ep, upgraded, video, topic["id"])
+            if park(ep, upgraded, video, topic["id"])["modal_path"] != old_path and old_path:
+                (outbox() / old_path).unlink(missing_ok=True)
         except Exception as error:
             log.exception("legacy upgrade rejected %s", folder.name)
             _mark(topic["id"], "open")
@@ -347,6 +374,6 @@ def run(reserve: int = RESERVE, minutes: float = 40, max_failures: int = 2) -> d
         {"ready": made, "skipped": skipped}.get(result["outcome"], failed).append(result)
     waiting = [p.name for p in ready()]
     outcome = "failed" if failed and not waiting else ("no_topics" if not waiting else "ok")
-    return {"outcome": outcome, "synced": synced, "made": made, "failed": failed, "skipped": skipped, "waiting": waiting,
+    return {"outcome": outcome, "synced": synced, "withdrawn": withdrawn, "made": made, "failed": failed, "skipped": skipped, "waiting": waiting,
             "new_topics": [t["id"] for t in added], "tracked": len(numbers),
             "open_topics": sum(t.get("status") == "open" for t in _catalogue()["topics"])}

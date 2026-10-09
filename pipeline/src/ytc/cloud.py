@@ -506,7 +506,14 @@ def atlas_quality_preview(topic: dict, episode_id: str = "quality-preview", llm_
     if llm_first:
         os.environ["YTC_LLM_FIRST"] = llm_first
     pipeline.EPISODES = Path(tempfile.mkdtemp())
-    _, folder, _, video = pipeline.make(topic, episode_id)
+    try:
+        _, folder, _, video = pipeline.make(topic, episode_id)
+    except Exception as error:
+        cache.commit()
+        folder = pipeline.EPISODES / episode_id
+        return {"error": f"{type(error).__name__}: {error}"[:2000],
+                "artifacts": {p.name: p.read_text() for p in sorted(folder.glob("*.json")) + sorted(folder.glob("*.yaml"))},
+                "video": (folder / "short.mp4").read_bytes() if (folder / "short.mp4").exists() else b""}
     cache.commit()
     return {"artifacts": {name: (folder / name).read_text() for name in
                           ("atlas.yaml", "data.json", "claims.json", "qa.json", "timing.json")},
