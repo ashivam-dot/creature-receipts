@@ -200,7 +200,7 @@
    "value_format": "{v:.0f}%",
    "source_url": "https://data.worldbank.org/indicator/AG.LND.FRST.ZS",
    "publisher_note": "FAOSTAT, Food and Agriculture Organization of the United Nations (FAO), uri: https://www",
-   "status": "ready:atlas006"
+   "status": "used:atlas006"
   },
   {
    "id": "t009",
@@ -226,7 +226,7 @@
    "value_format": "{v:.0f}%",
    "source_url": "https://data.worldbank.org/indicator/IT.NET.USER.ZS",
    "publisher_note": "World Telecommunication/ICT Indicators Database, International Telecommunication Union (ITU), uri: https://datahub",
-   "status": "ready:atlas007"
+   "status": "used:atlas007"
   },
   {
    "id": "t010",
@@ -298,7 +298,7 @@
    "value_format": "{v:,.0f}",
    "source_url": "https://data.worldbank.org/indicator/EN.POP.DNST",
    "publisher_note": "FAO population estimates, Food and Agriculture Organization of the United Nations (FAO), publisher: Food and Agriculture Organization of the United Nations (FAO);\nWorld Bank population estimates, Worl",
-   "status": "open"
+   "status": "failed:ValueError"
   },
   {
    "id": "t012",
@@ -334,7 +334,7 @@
    "value_format": "{v:.0f}%",
    "source_url": "https://data.worldbank.org/indicator/BX.TRF.PWKR.DT.GD.ZS",
    "publisher_note": "Staff estimates, World Bank (WB);\nIMF balance of payments data, International Monetary Fund (IMF);\nWorld Bank GDP estimates, World Bank (WB);\nOECD GDP estimates, Organisation for Economic Co-operation",
-   "status": "open"
+   "status": "ready:atlas011"
   },
   {
    "id": "t013",
@@ -406,7 +406,7 @@
    "value_format": "{v:.0f}",
    "source_url": "https://data.worldbank.org/indicator/EN.ATM.PM25.MC.M3",
    "publisher_note": "Global Burden of Disease Study 2023 (GBD 2023) Air Pollution Exposure Estimates and Risk Curves 1990-2023, GBD Collaborator Network, uri: https://ghdx",
-   "status": "open"
+   "status": "failed:ValueError"
   },
   {
    "id": "t015",

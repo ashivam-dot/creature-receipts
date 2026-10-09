@@ -1,0 +1,54 @@
+id: atlas012
+title: Global Air Pollution Measured in PM2.5
+hook_text: WORST AIR
+description: Where the average air is cleanest and dirtiest globally.
+hashtags:
+- '#maps'
+- '#geography'
+- '#data'
+sources:
+- https://data.worldbank.org/indicator/EN.ATM.PM25.MC.M3
+dataset:
+  kind: worldbank
+  indicator: EN.ATM.PM25.MC.M3
+  label: Average PM2.5 air pollution
+  unit: micrograms per m³
+  source: World Bank
+  min_year: 2019
+scale:
+  edges:
+  - 10.0
+  - 20.0
+  - 35.0
+  - 50.0
+  - 70.0
+  labels:
+  - <10
+  - 10-20
+  - 20-35
+  - 35-50
+  - 50-70
+  - 70+
+value_format: '{v:.0f}'
+beats:
+- text: Qatar has the world's highest average PM2.5 air pollution at 108.
+  shot:
+    callouts:
+    - QAT
+- text: Dark blue is lowest, through grey-gold, to bright yellow for highest across 196 countries and territories.
+- text: Greenland has the world's lowest average PM2.5 air pollution at 2.
+  shot:
+    kind: country
+    iso: GRL
+- text: India has an average PM2.5 air pollution level of 54.
+  shot:
+    kind: country
+    iso: IND
+- text: This measures population exposure to suspended particles under 2.5 microns that penetrate deep into the
+    respiratory tract.
+- text: So where does your country rank on this global map?
+  shot:
+    kind: card
+    lines:
+    - Where is your country?
+    - World Bank 2023

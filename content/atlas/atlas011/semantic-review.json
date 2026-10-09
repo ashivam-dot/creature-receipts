@@ -1,0 +1,139 @@
+{
+  "errors": [],
+  "claims": [
+    {
+      "surface": "title",
+      "text": "Remittances reach 58% of GDP in Tajikistan",
+      "isos": [
+        "TJK"
+      ],
+      "support": "Tajikistan value is 57.6648462573476, displayed as 58% of GDP."
+    },
+    {
+      "surface": "hook",
+      "text": "HIGHEST REMITTANCES",
+      "isos": [
+        "TJK"
+      ],
+      "support": "Tajikistan is ranked 1st in the universe with 58%."
+    },
+    {
+      "surface": "description",
+      "text": "Where personal remittances received are large relative to GDP, mapped across 173 countries and territories.",
+      "isos": [],
+      "support": "Universe count is 173 mapped countries and territories with data for indicator BX.TRF.PWKR.DT.GD.ZS."
+    },
+    {
+      "surface": "beat_0",
+      "text": "In Tajikistan, personal remittances received reach 58% of gross domestic product.",
+      "isos": [
+        "TJK"
+      ],
+      "support": "Tajikistan value is 57.6648462573476, displayed as 58% of GDP."
+    },
+    {
+      "surface": "beat_1",
+      "text": "The map uses dark blue for the lowest values, moving through grey-gold to bright yellow for the highest across 173 countries and territories.",
+      "isos": [],
+      "support": "Universe count is 173 mapped countries and territories."
+    },
+    {
+      "surface": "beat_2",
+      "text": "Tajikistan is the highest at 58%.",
+      "isos": [
+        "TJK"
+      ],
+      "support": "Tajikistan rank is 1, value is 57.6648462573476 (displayed as 58%)."
+    },
+    {
+      "surface": "beat_3",
+      "text": "India is 4% and the USA is 0%.",
+      "isos": [
+        "IND",
+        "USA"
+      ],
+      "support": "India value is 3.80963193396421 (displayed as 4%), USA value is 0.0303707868455006 (displayed as 0%)."
+    },
+    {
+      "surface": "beat_4",
+      "text": "Personal remittances comprise personal transfers and compensation of employees, counting cash and in kind transfers plus income of short-term and border workers.",
+      "isos": [],
+      "support": "Indicator definition: Personal remittances comprise personal transfers and compensation of employees. Personal transfers consist of all current transfers in cash or in kind... Compensation of employees refers to the income of border, seasonal, and other short-term workers..."
+    },
+    {
+      "surface": "beat_5",
+      "text": "So where does your country rank on the map?",
+      "isos": [],
+      "support": "Matches card_5."
+    },
+    {
+      "surface": "card_5",
+      "text": "Where is your country? Remittances received, % of GDP, World Bank",
+      "isos": [],
+      "support": "Matches visual plans and indicator metadata."
+    }
+  ],
+  "surface_checks": {
+    "title": {
+      "supported": true,
+      "reason": "Tajikistan is correctly stated as 58% based on indicator data.",
+      "isos": [
+        "TJK"
+      ]
+    },
+    "hook": {
+      "supported": true,
+      "reason": "Tajikistan ranks 1st in the dataset.",
+      "isos": [
+        "TJK"
+      ]
+    },
+    "description": {
+      "supported": true,
+      "reason": "Count of 173 countries and territories matches the evidence universe.",
+      "isos": []
+    },
+    "beat_0": {
+      "supported": true,
+      "reason": "Tajikistan value is 57.66%, rounded to 58%.",
+      "isos": [
+        "TJK"
+      ]
+    },
+    "beat_1": {
+      "supported": true,
+      "reason": "Universe count of 173 is correct and color description is standard style.",
+      "isos": []
+    },
+    "beat_2": {
+      "supported": true,
+      "reason": "Tajikistan is rank 1 with 58%.",
+      "isos": [
+        "TJK"
+      ]
+    },
+    "beat_3": {
+      "supported": true,
+      "reason": "India display is 4% (3.81%) and USA display is 0% (0.03%).",
+      "isos": [
+        "IND",
+        "USA"
+      ]
+    },
+    "beat_4": {
+      "supported": true,
+      "reason": "Statement directly reflects the official World Bank definition.",
+      "isos": []
+    },
+    "beat_5": {
+      "supported": true,
+      "reason": "Matches card 5 content.",
+      "isos": []
+    },
+    "card_5": {
+      "supported": true,
+      "reason": "Matches visual plan and World Bank indicator parameters.",
+      "isos": []
+    }
+  }
+}

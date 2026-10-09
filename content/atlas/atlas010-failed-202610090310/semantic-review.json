@@ -1,0 +1,148 @@
+{
+  "errors": [],
+  "claims": [
+    {
+      "surface": "title",
+      "text": "The Emptiest and Most Crowded places",
+      "isos": [],
+      "support": "Global population density comparison based on World Bank data."
+    },
+    {
+      "surface": "hook",
+      "text": "ZERO PEOPLE",
+      "isos": [
+        "GRL"
+      ],
+      "support": "Greenland value is 0.13847274570044, display 0 per km²."
+    },
+    {
+      "surface": "description",
+      "text": "Comparing the emptiest and most crowded countries and territories using World Bank population density data.",
+      "isos": [],
+      "support": "Indicator EN.POP.DNST, World Bank, 208 mapped countries and territories."
+    },
+    {
+      "surface": "beat_0",
+      "text": "Greenland hits 0 people per square kilometre, the lowest of all 208 with data.",
+      "isos": [
+        "GRL"
+      ],
+      "support": "Greenland rank 208, display 0 per km², count 208."
+    },
+    {
+      "surface": "beat_1",
+      "text": "Dark blue is lowest and bright yellow is highest across 208 countries and territories.",
+      "isos": [],
+      "support": "Count 208 mapped countries and territories."
+    },
+    {
+      "surface": "beat_2",
+      "text": "Bangladesh reaches 1,333 people per square kilometre among these countries.",
+      "isos": [
+        "BGD"
+      ],
+      "support": "Bangladesh display 1,333 per km²."
+    },
+    {
+      "surface": "beat_3",
+      "text": "Mongolia sits at 2 people per square kilometre among these countries.",
+      "isos": [
+        "MNG"
+      ],
+      "support": "Mongolia display 2 per km²."
+    },
+    {
+      "surface": "beat_4",
+      "text": "India reaches 488 people per square kilometre among these countries.",
+      "isos": [
+        "IND"
+      ],
+      "support": "India display 488 per km²."
+    },
+    {
+      "surface": "beat_5",
+      "text": "Population density is midyear population divided by land area in square kilometers.",
+      "isos": [],
+      "support": "Definition: Population density is midyear population divided by land area in square kilometers."
+    },
+    {
+      "surface": "beat_6",
+      "text": "So where does your country rank on this map?",
+      "isos": [],
+      "support": "General prompt accompanying rank display."
+    },
+    {
+      "surface": "card_6",
+      "text": "So where is your country?",
+      "isos": [],
+      "support": "Card ending question."
+    }
+  ],
+  "surface_checks": {
+    "title": {
+      "supported": true,
+      "reason": "Title accurately reflects the content of comparing population densities.",
+      "isos": []
+    },
+    "hook": {
+      "supported": true,
+      "reason": "Greenland rounds to 0 per km².",
+      "isos": [
+        "GRL"
+      ]
+    },
+    "description": {
+      "supported": true,
+      "reason": "Accurately describes the indicator and data source.",
+      "isos": []
+    },
+    "beat_0": {
+      "supported": true,
+      "reason": "Greenland has the lowest value (rank 208) and displays as 0.",
+      "isos": [
+        "GRL"
+      ]
+    },
+    "beat_1": {
+      "supported": true,
+      "reason": "Matches universe count of 208.",
+      "isos": []
+    },
+    "beat_2": {
+      "supported": true,
+      "reason": "Bangladesh display value is 1,333.",
+      "isos": [
+        "BGD"
+      ]
+    },
+    "beat_3": {
+      "supported": true,
+      "reason": "Mongolia display value is 2.",
+      "isos": [
+        "MNG"
+      ]
+    },
+    "beat_4": {
+      "supported": true,
+      "reason": "India display value is 488.",
+      "isos": [
+        "IND"
+      ]
+    },
+    "beat_5": {
+      "supported": true,
+      "reason": "Directly quotes the official indicator definition.",
+      "isos": []
+    },
+    "beat_6": {
+      "supported": true,
+      "reason": "Stylistic closing question consistent with map ranks.",
+      "isos": []
+    },
+    "card_6": {
+      "supported": true,
+      "reason": "Matches card visual text.",
+      "isos": []
+    }
+  }
+}

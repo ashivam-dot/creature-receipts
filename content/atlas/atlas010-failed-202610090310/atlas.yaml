@@ -1,0 +1,57 @@
+id: atlas010
+title: The Emptiest and Most Crowded places
+hook_text: ZERO PEOPLE
+description: Comparing the emptiest and most crowded countries and territories using World Bank population density
+  data.
+hashtags:
+- '#maps'
+- '#geography'
+- '#data'
+sources:
+- https://data.worldbank.org/indicator/EN.POP.DNST
+dataset:
+  kind: worldbank
+  indicator: EN.POP.DNST
+  label: People per square kilometre
+  unit: per km²
+  source: World Bank
+  min_year: 2019
+scale:
+  edges:
+  - 10.0
+  - 25.0
+  - 50.0
+  - 100.0
+  - 250.0
+  labels:
+  - <10
+  - 10-25
+  - 25-50
+  - 50-100
+  - 100-250
+  - 250+
+beats:
+- text: Greenland hits 0 people per square kilometre, the lowest of all 208 with data.
+  shot:
+    callouts:
+    - GRL
+- text: Dark blue is lowest and bright yellow is highest across 208 countries and territories.
+- text: Bangladesh reaches 1,333 people per square kilometre among these countries.
+  shot:
+    kind: country
+    iso: BGD
+- text: Mongolia sits at 2 people per square kilometre among these countries.
+  shot:
+    kind: country
+    iso: MNG
+- text: India reaches 488 people per square kilometre among these countries.
+  shot:
+    kind: country
+    iso: IND
+- text: Population density is midyear population divided by land area in square kilometers.
+- text: So where does your country rank on this map?
+  shot:
+    kind: card
+    lines:
+    - So where is your country?
+    - World Bank
