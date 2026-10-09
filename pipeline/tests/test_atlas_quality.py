@@ -36,6 +36,20 @@ def test_country_value_cannot_borrow_a_unit_denominator():
     assert quality.entity_value_errors('France has 100 subscriptions per 100 people.', ep, ds)
 
 
+def test_counts_and_scale_limits_are_not_the_country_value():
+    from ytc.atlas.episode import AtlasEpisode
+    ep = AtlasEpisode.model_validate({'id': 'atlas999', 'title': 'test', 'value_format': '{v:.1f}',
+        'dataset': {'kind': 'owid', 'label': 'Life rating', 'source': 'WHR'}, 'beats': [{'text': 'test'}]})
+    ds = Dataset('ladder', 'out of 10', 'WHR', 'CC BY', '', {'FIN': 7.8, 'AFG': 1.4},
+                 {'FIN': 2024, 'AFG': 2024}, names={'FIN': 'Finland', 'AFG': 'Afghanistan'})
+    assert quality.entity_value_errors('Finland is the highest of all 146.', ep, ds) == []
+    assert quality.entity_value_errors('Finland rates life at 7.8 out of 10, top of 146 countries.', ep, ds) == []
+    assert quality.entity_value_errors('Afghanistan rates life at 7.8.', ep, ds)
+    assert quality.entity_value_errors('From 1.4 in Afghanistan to 7.8 in Finland.', ep, ds) == []
+    assert quality.entity_value_errors('From 1.4 in Afghanistan to 1.4 in Finland.', ep, ds)
+    assert quality.entity_value_errors('Afghanistan has 7.8, and so does Finland.', ep, ds)
+
+
 def test_digits_in_a_measure_name_are_not_the_country_value():
     from ytc.atlas.episode import AtlasEpisode
     ep = AtlasEpisode.model_validate({'id': 'atlas999', 'title': 'test', 'value_format': '{v:.0f}',

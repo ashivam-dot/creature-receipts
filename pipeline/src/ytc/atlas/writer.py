@@ -18,11 +18,11 @@ from .episode import AtlasEpisode
 log = logging.getLogger(__name__)
 
 WORDS = (60, 110)
-# Spoken words (numbers as said) that fit 30-44 s at the narrator's natural 2.55 words a second; a longer script
-# is sped up past clear speech, and the speech check then fails it.
-SPOKEN_MAX = 112
+# Spoken words (numbers as said) that fit 44 s at the narrator's natural 2.55 words a second, plus the few that
+# film.narrate's capped speed-up still says clearly; past that the speech check fails the Short.
+SPOKEN_MAX = 118
 BEATS = (6, 9)
-TRIES = 4
+TRIES = 6
 MIN_COUNTRIES = 100
 # Places with data that the map can't draw (tiny islands) are left out of what the writer may point at: the main
 # landmass must span this much of the projected map (about 5 pixels across on the world view).
@@ -62,15 +62,17 @@ How a great Atlas script works:
   Never invent causes, history, or opinions.
 - The last beat is a short question to the viewer that loops back to the hook (e.g. "Where does your country land?").
 - Every beat adds something new: never repeat a number in the very next beat. No report-speak ("records",
-  "registers", "standing as", "holding rank", "ranks 21st globally"): talk like a person.
-- A finished script for another dataset, for its rhythm only (its numbers are not yours):
-  world: "Every square kilometre of Bangladesh holds 1,333 people. In Australia, it's 4."
-  country BGD: "Bangladesh is the most crowded big country on Earth. Fields, rivers and cities, all shared."
-  country AUS: "Those same 1,333 people, in Australia, would spread across 377 square kilometres."
-  group IND, CHN: "India and China, the giants, aren't the most crowded. India has 488. China, just 150."
-  rank MNG, AUS, CAN, RUS: "The emptiest big countries? Mongolia, Australia, Canada and Russia, all under 10."
-  country JPN: "And Japan, famous for its crowds, has 340. A quarter of Bangladesh."
-  card: "Where does your country land?"
+  "registers", "standing at", "holding rank", "ranks 21st globally", "India's value"): talk like a person and
+  name the thing ("2.3 times the food Burundi has").
+- The beats of a finished script for another dataset, for their rhythm only (its numbers are not yours; ISO codes
+  go only in "isos", never in "text"):
+  {{"shot": "world", "isos": ["BGD", "AUS"], "text": "Every square kilometre of Bangladesh holds 1,333 people. In Australia, it's 4."}}
+  {{"shot": "country", "isos": ["BGD"], "text": "Bangladesh is the most crowded big country on Earth. Fields, rivers and cities, all shared."}}
+  {{"shot": "country", "isos": ["AUS"], "text": "Those same 1,333 people, in Australia, would spread across 377 square kilometres."}}
+  {{"shot": "group", "isos": ["IND", "CHN"], "text": "India and China, the giants, aren't the most crowded. India has 488. China, just 150."}}
+  {{"shot": "rank", "isos": ["MNG", "AUS", "CAN", "RUS"], "text": "The emptiest big countries? Mongolia, Australia, Canada and Russia, all under 10."}}
+  {{"shot": "country", "isos": ["JPN"], "text": "And Japan, famous for its crowds, has 340. A quarter of Bangladesh."}}
+  {{"shot": "card", "text": "Where does your country land?"}}
 - Write every number as digits exactly as in the summary ("178", "3.2", "1.15 billion"). Never write numbers as
   words, not even "two worlds" or "three times"; rephrase instead ("a world apart"). Never round differently. Definition thresholds may quote the official definition exactly; never use
   a definition threshold as a country's measured value. A country's value goes only in
@@ -282,7 +284,8 @@ _REPAIRS = ((re.compile(r"\b(countries|places)( and territories)? with data\b", 
             (re.compile(r"\b(records|registers)\b", re.I), "has"))
 # "3.5 times older" says 3.5 times the age difference, not 3.5 times the age; "times less" has no clear meaning.
 _LOOSE_RATIO = re.compile(r"\btimes (older|younger|less|fewer|smaller|lower|cheaper|poorer)\b", re.I)
-_REPORT_SPEAK = re.compile(r"\b(standing as|holding (the )?rank|ranks? \d+(st|nd|rd|th)? (globally|worldwide))\b", re.I)
+_REPORT_SPEAK = re.compile(r"\b(standing (as|at)|holding (the )?rank|ranks? \d+(st|nd|rd|th)? (globally|worldwide)|"
+                           r"\w+'s value|the value of)\b", re.I)
 
 
 def spoken_words(text: str) -> int:
@@ -295,6 +298,13 @@ def spoken_words(text: str) -> int:
         except (ImportError, ValueError, OverflowError):
             return " ".join("x" * (1 + len(token) // 2))
     return len(_NUMBER.sub(say, text).replace(" and ", " ").split())
+
+
+def strip_codes(text: str, isos: set[str]) -> str:
+    """ISO codes copied into the narration ("FIN Finland", "USA USA") are dropped; "USA" alone stays a name."""
+    text = re.sub(r"\b([A-Z]{3})\s+(?=[A-Z])", lambda m: "" if m.group(1) in isos and m.group(1) != "USA" else m.group(0),
+                  text)
+    return re.sub(r"\b(USA|UAE)\s+(?=\1\b|United\b)", "", text)
 
 
 def plain(text: str) -> str:
@@ -346,18 +356,19 @@ def problems(draft: dict, allowed: set[str], owners: dict[str, set[str]], vals: 
     if not WORDS[0] <= words <= WORDS[1]:
         out.append(f"{words} words; write {WORDS[0]}-{WORDS[1]}")
     if (spoken := sum(spoken_words(b["text"]) for b in beats)) > SPOKEN_MAX:
-        out.append(f"{spoken} words as spoken (a number counts as said: '3,947' is 6 words); cut to {SPOKEN_MAX} "
-                   "with fewer numbers and shorter lines")
+        out.append(f"{spoken} words as spoken (a number counts as said: '3,947' is 6 words); cut about "
+                   f"{spoken - SPOKEN_MAX + 5}: drop a number or a clause")
     if len(draft.get("title", "")) > 60:
         out.append("the title is over 60 characters")
     if beats and beats[0]["shot"] != "world":
         out.append("beat 1 must be a world shot")
     if beats and beats[-1]["shot"] != "card":
         out.append("the last beat must be the card")
-    if beats and len(beats[0]["text"].split()) > 16:
-        out.append("the hook is over 16 words")
+    if beats and (n := len(beats[0]["text"].split())) > 16:
+        out.append(f"the hook (beat 1 and every opening option) is {n} words; at most 16, shaped like "
+                   "'<country> has <value>. In <other country>, it's <value>.'")
     if beats and beats[0]["text"].strip().endswith("?"):
-        out.append("the hook must be a claim, not a question")
+        out.append("the hook must be a statement ending in a full stop, not a question")
     for where, text in [("title", draft.get("title", "")), *((f"beat {i}", b["text"]) for i, b in enumerate(beats, 1))]:
         if loose := _LOOSE_RATIO.search(text):
             out.append(f"{where}: '{loose.group(0)}' misstates a ratio; say 'N times the <measure> of <country>' "
@@ -372,7 +383,8 @@ def problems(draft: dict, allowed: set[str], owners: dict[str, set[str]], vals: 
             out.append(f"beat {i}: drop the filler '{filler.group(0)}'; say the number plainly")
         if report := _REPORT_SPEAK.search(b["text"]):
             out.append(f"beat {i}: '{report.group(0)}' is report-speak; say it the way a person would")
-        if i > 1 and (again := set(_NUMBER.findall(b["text"])) & set(_NUMBER.findall(beats[i - 2]["text"]))):
+        repeated = set(_NUMBER.findall(b["text"])) & set(_NUMBER.findall(beats[i - 2]["text"])) if i > 1 else set()
+        if again := {n for n in repeated if owners.get(n) or owners.get(n.replace(",", ""))}:
             out.append(f"beat {i}: repeats {', '.join(sorted(again))} from the beat before; add something new")
         if trend := _TREND.search(b["text"]):
             out.append(f"beat {i}: '{trend.group(0)}' claims a trend, but the data is one year")
@@ -417,7 +429,7 @@ def write(topic: dict, ds: Dataset, episode_id: str, series: str = "") -> AtlasE
                              models=(*llm.FLASH, *llm.FLASH_LITE, *llm.BACKUP_STRONG),
                              purpose=f"atlas script {episode_id}")
         for beat in [*draft.get("beats", []), *draft.get("opening_options", [])]:
-            beat["text"] = plain(beat["text"])
+            beat["text"] = plain(strip_codes(beat["text"], set(vals)))
         # Bind named country/value clauses to their world-shot callouts instead of wasting a rewrite.
         for beat in draft.get("beats", []):
             if beat["shot"] != "world":

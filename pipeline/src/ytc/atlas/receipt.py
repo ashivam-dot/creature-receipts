@@ -5,6 +5,8 @@ import json
 import re
 from pathlib import Path
 VERSION = 1
+# The visual format a parked Short must be in (ready.json "format"); anything else waits to be re-rendered.
+FORMAT = "cinema-v2"
 
 def digest(path: Path) -> str:
     return hashlib.sha256(path.read_bytes()).hexdigest()

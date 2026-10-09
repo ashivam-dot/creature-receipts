@@ -24,7 +24,7 @@ from pathlib import Path
 
 import requests
 
-from . import quality, topics, writer
+from . import quality, receipt, topics, writer
 from .cinema import film
 from .data import Dataset, fetch
 from .episode import AtlasEpisode
@@ -37,8 +37,7 @@ EPISODES = ROOT / "content" / "atlas"
 BULKY = ("short.mp4", "mix.wav", "mix_raw.wav", "mix_tamed.wav", "narration.wav", "work", ".sfx", "globe.mp4",
          ".stage", "stills")
 OUTBOX_VOLUME = "creature-receipts-outbox"
-# The visual format a parked Short was rendered in; a waiting Short in any other format is re-rendered before it posts.
-FORMAT = "cinema-v2"
+FORMAT = receipt.FORMAT
 # Rendered Shorts kept waiting for the publisher: more than a day of SLOTS, so a failed run costs no post.
 RESERVE = 4
 PUBLISHED_URL = ("https://raw.githubusercontent.com/ashivam-dot/history-last-hours-control/main/"
@@ -140,8 +139,11 @@ def make(topic: dict, episode_id: str) -> tuple[AtlasEpisode, Path, Dataset, Pat
             except ValueError as error:
                 if attempt == 2:
                     raise
+                rejected = "\n".join(f"  {b.shot.kind}: {b.text}" for b in ep.beats)
                 fixed_topic = {**topic, "angle": topic.get("angle", "") +
-                               "\nMandatory factual corrections from the reviewer: " + str(error),
+                               "\nMandatory factual corrections from the reviewer: " + str(error) +
+                               "\nThe rejected script; keep what the reviewer did not flag and change only what it did:\n"
+                               + rejected,
                                "definition_text": ds.definition or writer.definition(topic["dataset"])}
                 ep = writer.write(fixed_topic, ds, episode_id, series=topic.get("series", ""))
                 ep.save(spec_path)

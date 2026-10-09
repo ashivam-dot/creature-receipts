@@ -89,10 +89,17 @@ def entity_value_errors(text: str, ep: AtlasEpisode, ds: Dataset) -> list[str]:
         iso = canonical[match.group().lower()]
         if iso not in ds.values:
             continue
-        clause = text[match.end():matches[i + 1].start() if i + 1 < len(matches) else len(text)]
+        whole = text[match.end():matches[i + 1].start() if i + 1 < len(matches) else len(text)]
         # A sentence boundary ends the named subject's scope.
-        clause = re.split(r"[.!?](?:\s|$)", clause)[0]
+        clause = re.split(r"[.!?](?:\s|$)", whole)[0]
+        following = canonical[matches[i + 1].group().lower()] if i + 1 < len(matches) and clause == whole else None
         for number in writer._NUMBER.finditer(clause):
+            subject = iso
+            # "... to 3,947 in the USA": a number just before "in <the next country>" is that country's.
+            if following and re.fullmatch(r"\s*(?:[^\W\d]+\s+){0,3}?(?:in|for)(?: the)?\s*", clause[number.end():], re.I):
+                if following not in ds.values:
+                    continue
+                subject = following
             # Digits inside a measure's name (PM2.5, CO2) are not the country's value.
             if number.start() and clause[number.start() - 1].isalpha():
                 continue
@@ -100,15 +107,21 @@ def entity_value_errors(text: str, ep: AtlasEpisode, ds: Dataset) -> list[str]:
             token = number.group().replace(",", "").rstrip(".")
             if re.search(r"(?:per|every|each|in|year|rank|#|top)\s*$", context):
                 continue
+            # Counts and scale limits ("highest of all 146", "146 countries", "out of 10") aren't values either.
+            if re.search(r"(?:of all|out of|among(?: the)?)\s*$", context) or re.match(
+                    r"\s*(?:countries|places|nations|territories)\b", clause[number.end():], re.I):
+                continue
             # "377 times" compares two countries; ratio_errors checks it.
             if RATIO.match(clause[number.end():]):
                 continue
-            displayed = writer._NUMBER.search(ep.value_text(ds.values[iso]))
+            displayed = writer._NUMBER.search(ep.value_text(ds.values[subject]))
             # Unit denominators such as "per 100" are not this country's measured value.
             expected = writer._forms(displayed.group()) if displayed else set()
             if token not in expected:
-                errors.append(f"{match.group()} value {token} does not match {ep.value_text(ds.values[iso])}")
-            break
+                name = match.group() if subject == iso else matches[i + 1].group()
+                errors.append(f"{name} value {token} does not match {ep.value_text(ds.values[subject])}")
+            if subject == iso:
+                break
     return errors
 
 

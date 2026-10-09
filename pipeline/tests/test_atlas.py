@@ -156,10 +156,31 @@ def test_writer_rejects_report_speak_and_back_to_back_repeats():
         {"text": "The USA has 3,947.", "shot": "world", "isos": ["USA"]},
         {"text": "The USA, standing as the top, has 3,947.", "shot": "country", "isos": ["USA"]},
         {"text": "Where do you land?", "shot": "card"}]}
-    found = " ".join(writer.problems(draft, {"3,947"}, {}, {"USA": 3947.0}))
+    found = " ".join(writer.problems(draft, {"3,947"}, {"3947": {"USA"}}, {"USA": 3947.0}))
     assert "report-speak" in found and "repeats 3,947" in found
+    draft["beats"][:2] = [{"text": "USA: 3,947 out of 10.", "shot": "world", "isos": ["USA"]},
+                          {"text": "Rated out of 10.", "shot": "country", "isos": ["USA"]}]
+    assert "repeats" not in " ".join(writer.problems(draft, {"3,947", "10"}, {"3947": {"USA"}}, {"USA": 3947.0}))
     draft["title"] = "Japan is 3.5 times older than Niger"
     assert "misstates a ratio" in " ".join(writer.problems(draft, {"3,947", "3.5"}, {}, {"USA": 3947.0}))
+
+
+def test_iso_codes_never_reach_the_narration():
+    from ytc.atlas import writer
+
+    isos = {"FIN", "IND", "USA", "PER"}
+    assert writer.strip_codes("FIN Finland is top. USA USA hits 6.8, while IND India scores 4.5.", isos) == \
+        "Finland is top. USA hits 6.8, while India scores 4.5."
+    assert writer.strip_codes("The USA has 3,947. GDP Per head.", isos) == "The USA has 3,947. GDP Per head."
+
+
+def test_prompt_formats_with_its_worked_example():
+    from ytc.atlas import writer
+
+    names = ("topic", "angle", "format", "label", "unit", "source", "year", "count", "definition", "summary",
+             "beats_min", "beats_max", "words_min", "words_max", "spoken_max", "feedback")
+    text = writer.PROMPT.format(**{n: "x" for n in names})
+    assert '{"shot": "country", "isos": ["BGD"]' in text
 
 
 def test_numbers_count_as_they_are_said():
