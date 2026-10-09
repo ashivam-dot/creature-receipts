@@ -1683,12 +1683,44 @@
     "errors": [],
     "claims": [
       {
+        "surface": "title",
+        "text": "Mapping the world share of residents aged 65 or older",
+        "isos": [],
+        "support": "Population ages 65 and above as a percentage of the total population.",
+        "evidence": {}
+      },
+      {
+        "surface": "hook",
+        "text": "JAPAN'S AGING POPULATION",
+        "isos": [
+          "JPN"
+        ],
+        "support": "Japan value is 29.9940966737423, display 30%",
+        "evidence": {
+          "JPN": {
+            "name": "Japan",
+            "value": 29.9940966737423,
+            "display": "30%",
+            "year": 2025,
+            "unit": "%",
+            "rank": 1
+          }
+        }
+      },
+      {
+        "surface": "description",
+        "text": "A visualization of the percentage of the population aged 65 and over across 208 countries and territories in 2025.",
+        "isos": [],
+        "support": "Count is 208, year label 2025",
+        "evidence": {}
+      },
+      {
         "surface": "beat_0",
         "text": "In Japan, 30% of all residents are aged 65 or older.",
         "isos": [
           "JPN"
         ],
-        "support": "29.9940966737423",
+        "support": "Japan value is 29.9940966737423, display 30%",
         "evidence": {
           "JPN": {
             "name": "Japan",
@@ -1701,31 +1733,29 @@
         }
       },
       {
-        "surface": "beat_2",
-        "text": "Japan is the world's highest at 30%",
-        "isos": [
-          "JPN"
-        ],
-        "support": "29.9940966737423",
-        "evidence": {
-          "JPN": {
-            "name": "Japan",
-            "value": 29.9940966737423,
-            "display": "30%",
-            "year": 2025,
-            "unit": "%",
-            "rank": 1
-          }
-        }
+        "surface": "beat_1",
+        "text": "Dark blue is lowest, grey-gold is middle, and bright yellow is highest. We have data for 208 countries and territories.",
+        "isos": [],
+        "support": "Count is 208",
+        "evidence": {}
       },
       {
         "surface": "beat_2",
-        "text": "Qatar is the world's lowest at 2%.",
+        "text": "Japan is the world's highest at 30%, while Qatar is the world's lowest at 2%.",
         "isos": [
+          "JPN",
           "QAT"
         ],
-        "support": "1.70081503237359",
+        "support": "Japan rank 1 with 30%, Qatar rank 208 with 2%",
         "evidence": {
+          "JPN": {
+            "name": "Japan",
+            "value": 29.9940966737423,
+            "display": "30%",
+            "year": 2025,
+            "unit": "%",
+            "rank": 1
+          },
           "QAT": {
             "name": "Qatar",
             "value": 1.70081503237359,
@@ -1738,11 +1768,12 @@
       },
       {
         "surface": "beat_3",
-        "text": "The USA sits at 18%",
+        "text": "The USA sits at 18%, while India is currently at 7%.",
         "isos": [
-          "USA"
+          "USA",
+          "IND"
         ],
-        "support": "18.387224828496",
+        "support": "USA display 18%, India display 7%",
         "evidence": {
           "USA": {
             "name": "United States",
@@ -1751,17 +1782,7 @@
             "year": 2025,
             "unit": "%",
             "rank": 43
-          }
-        }
-      },
-      {
-        "surface": "beat_3",
-        "text": "India is currently at 7%.",
-        "isos": [
-          "IND"
-        ],
-        "support": "7.37657146047502",
-        "evidence": {
+          },
           "IND": {
             "name": "India",
             "value": 7.37657146047502,
@@ -1773,10 +1794,31 @@
         }
       },
       {
+        "surface": "beat_4",
+        "text": "This measures the percentage of the total population aged 65 and above, counting all residents regardless of legal status or citizenship.",
+        "isos": [],
+        "support": "Definition: Population ages 65 and above as a percentage of the total population. Population is based on the de facto definition of population, which counts all residents regardless of legal status or citizenship.",
+        "evidence": {}
+      },
+      {
+        "surface": "beat_5",
+        "text": "So where does your country rank?",
+        "isos": [],
+        "support": "Universe mapped countries and territories with data",
+        "evidence": {}
+      },
+      {
+        "surface": "card_5",
+        "text": "Where is your country?, World Bank 2025 Data",
+        "isos": [],
+        "support": "Source: World Bank, Year label: 2025",
+        "evidence": {}
+      },
+      {
         "surface": "title",
         "text": "Mapping the world share of residents aged 65 or older",
         "isos": [],
-        "support": "The title accurately describes the indicator.",
+        "support": "Accurately reflects the indicator definition.",
         "method": "complete-surface-check",
         "evidence": {}
       },
@@ -1786,7 +1828,7 @@
         "isos": [
           "JPN"
         ],
-        "support": "Japan has the highest percentage of population aged 65 and above.",
+        "support": "Japan's value is 30% display.",
         "method": "complete-surface-check",
         "evidence": {
           "JPN": {
@@ -1803,7 +1845,7 @@
         "surface": "description",
         "text": "A visualization of the percentage of the population aged 65 and over across 208 countries and territories in 2025.",
         "isos": [],
-        "support": "The description matches the provided metadata.",
+        "support": "Matches count of 208 and year 2025.",
         "method": "complete-surface-check",
         "evidence": {}
       },
@@ -1813,7 +1855,7 @@
         "isos": [
           "JPN"
         ],
-        "support": "Japan value is 29.99%, rounded to 30%.",
+        "support": "Japan value rounds to 30%.",
         "method": "complete-surface-check",
         "evidence": {
           "JPN": {
@@ -1830,7 +1872,7 @@
         "surface": "beat_1",
         "text": "Dark blue is lowest, grey-gold is middle, and bright yellow is highest. We have data for 208 countries and territories.",
         "isos": [],
-        "support": "The count of 208 matches the metadata.",
+        "support": "Correctly states the total mapped count of 208.",
         "method": "complete-surface-check",
         "evidence": {}
       },
@@ -1841,7 +1883,7 @@
           "JPN",
           "QAT"
         ],
-        "support": "Japan is rank 1 (highest) and Qatar is rank 208 (lowest).",
+        "support": "Japan is rank 1 (30%) and Qatar is rank 208 (2%).",
         "method": "complete-surface-check",
         "evidence": {
           "JPN": {
@@ -1869,7 +1911,7 @@
           "USA",
           "IND"
         ],
-        "support": "USA value is 18.38% (18%) and India is 7.37% (7%).",
+        "support": "USA display is 18% and India display is 7%.",
         "method": "complete-surface-check",
         "evidence": {
           "USA": {
@@ -1894,7 +1936,7 @@
         "surface": "beat_4",
         "text": "This measures the percentage of the total population aged 65 and above, counting all residents regardless of legal status or citizenship.",
         "isos": [],
-        "support": "The definition matches the provided metadata.",
+        "support": "Matches indicator definition verbatim.",
         "method": "complete-surface-check",
         "evidence": {}
       },
@@ -1902,7 +1944,7 @@
         "surface": "beat_5",
         "text": "So where does your country rank?",
         "isos": [],
-        "support": "This is a rhetorical question.",
+        "support": "General closing question consistent with the universe.",
         "method": "complete-surface-check",
         "evidence": {}
       },
@@ -1913,7 +1955,7 @@
           "World Bank 2025 Data"
         ],
         "isos": [],
-        "support": "The card text matches the metadata.",
+        "support": "Matches World Bank 2025 source metadata.",
         "method": "complete-surface-check",
         "evidence": {}
       }
@@ -1921,36 +1963,36 @@
     "surface_checks": {
       "title": {
         "supported": true,
-        "reason": "The title accurately describes the indicator.",
+        "reason": "Accurately reflects the indicator definition.",
         "isos": []
       },
       "hook": {
         "supported": true,
-        "reason": "Japan has the highest percentage of population aged 65 and above.",
+        "reason": "Japan's value is 30% display.",
         "isos": [
           "JPN"
         ]
       },
       "description": {
         "supported": true,
-        "reason": "The description matches the provided metadata.",
+        "reason": "Matches count of 208 and year 2025.",
         "isos": []
       },
       "beat_0": {
         "supported": true,
-        "reason": "Japan value is 29.99%, rounded to 30%.",
+        "reason": "Japan value rounds to 30%.",
         "isos": [
           "JPN"
         ]
       },
       "beat_1": {
         "supported": true,
-        "reason": "The count of 208 matches the metadata.",
+        "reason": "Correctly states the total mapped count of 208.",
         "isos": []
       },
       "beat_2": {
         "supported": true,
-        "reason": "Japan is rank 1 (highest) and Qatar is rank 208 (lowest).",
+        "reason": "Japan is rank 1 (30%) and Qatar is rank 208 (2%).",
         "isos": [
           "JPN",
           "QAT"
@@ -1958,7 +2000,7 @@
       },
       "beat_3": {
         "supported": true,
-        "reason": "USA value is 18.38% (18%) and India is 7.37% (7%).",
+        "reason": "USA display is 18% and India display is 7%.",
         "isos": [
           "USA",
           "IND"
@@ -1966,17 +2008,17 @@
       },
       "beat_4": {
         "supported": true,
-        "reason": "The definition matches the provided metadata.",
+        "reason": "Matches indicator definition verbatim.",
         "isos": []
       },
       "beat_5": {
         "supported": true,
-        "reason": "This is a rhetorical question.",
+        "reason": "General closing question consistent with the universe.",
         "isos": []
       },
       "card_5": {
         "supported": true,
-        "reason": "The card text matches the metadata.",
+        "reason": "Matches World Bank 2025 source metadata.",
         "isos": []
       }
     },
@@ -1984,5 +2026,5 @@
   },
   "script_sha256": "c2c641f17e7a5f0bb9abe2735531a2d532bbbfb245ed53511637785928112d95",
   "data_sha256": "3447d90e8733342af6c50d8d58ea4cda1d3ac00b9af71e11ac9972588ea49c45",
-  "reviewer_model": "gemini-3.1-flash-lite"
+  "reviewer_model": "gemini-3.5-flash-lite"
 }

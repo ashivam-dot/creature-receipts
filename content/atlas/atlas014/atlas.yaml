@@ -1,0 +1,71 @@
+id: atlas014
+title: Finland Rates Life at 7.8 out of 10
+format: rank_ladder
+hook_text: THE LIFE LADDER
+description: A global look at how people rate their lives on a 0 to 10 scale, from Finland at the top to Afghanistan
+  at the bottom.
+hashtags:
+- '#geography'
+- '#maps'
+- '#happiness'
+sources:
+- https://ourworldindata.org/grapher/happiness-cantril-ladder
+dataset:
+  kind: owid
+  slug: happiness-cantril-ladder
+  column: cantril_ladder_score
+  label: Life rating, 0 to 10
+  unit: out of 10
+  source: World Happiness Report via Our World in Data
+  min_year: 2022
+scale:
+  edges:
+  - 4.0
+  - 5.0
+  - 6.0
+  - 7.0
+  labels:
+  - <4
+  - 4-5
+  - 5-6
+  - 6-7
+  - 7+
+value_format: '{v:.1f}'
+beats:
+- text: 'Rate your life from 0 to 10: Finland answers 7.8. Afghanistan answers 1.4.'
+  shot:
+    callouts:
+    - FIN
+    - AFG
+- text: Finland is the world's highest, feeling closest to the best possible life.
+  shot:
+    kind: country
+    iso: FIN
+- text: Right behind, Iceland has 7.5, Denmark has 7.5, Costa Rica has 7.4, and Sweden has 7.3.
+  shot:
+    kind: rank
+    isos:
+    - ISL
+    - DNK
+    - CRI
+    - SWE
+- text: For major economies, USA has 6.8, while India has 4.5.
+  shot:
+    kind: group
+    isos:
+    - USA
+    - IND
+- text: Toward the bottom, Malawi has 3.3.
+  shot:
+    kind: country
+    iso: MWI
+- text: Afghanistan is the world's lowest at 1.4, right near the bottom step.
+  shot:
+    kind: country
+    iso: AFG
+- text: Which step are you on?
+  shot:
+    kind: card
+    lines:
+    - Which step are you on?
+    - Cantril Life Ladder, 2025

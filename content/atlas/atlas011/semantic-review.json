@@ -7,7 +7,7 @@
       "isos": [
         "TJK"
       ],
-      "support": "Tajikistan value is 57.6648462573476, displayed as 58% of GDP."
+      "support": "Tajikistan TJK value is 57.6648462573476, displayed as 58% of GDP"
     },
     {
       "surface": "hook",
@@ -15,13 +15,13 @@
       "isos": [
         "TJK"
       ],
-      "support": "Tajikistan is ranked 1st in the universe with 58%."
+      "support": "Tajikistan ranks 1 out of 173 mapped countries and territories"
     },
     {
       "surface": "description",
       "text": "Where personal remittances received are large relative to GDP, mapped across 173 countries and territories.",
       "isos": [],
-      "support": "Universe count is 173 mapped countries and territories with data for indicator BX.TRF.PWKR.DT.GD.ZS."
+      "support": "Indicator BX.TRF.PWKR.DT.GD.ZS covers 173 mapped countries and territories"
     },
     {
       "surface": "beat_0",
@@ -29,13 +29,13 @@
       "isos": [
         "TJK"
       ],
-      "support": "Tajikistan value is 57.6648462573476, displayed as 58% of GDP."
+      "support": "Tajikistan TJK value is 57.6648462573476, displayed as 58% of GDP"
     },
     {
       "surface": "beat_1",
       "text": "The map uses dark blue for the lowest values, moving through grey-gold to bright yellow for the highest across 173 countries and territories.",
       "isos": [],
-      "support": "Universe count is 173 mapped countries and territories."
+      "support": "Visual color/loop question check: ordinary color description."
     },
     {
       "surface": "beat_2",
@@ -43,7 +43,7 @@
       "isos": [
         "TJK"
       ],
-      "support": "Tajikistan rank is 1, value is 57.6648462573476 (displayed as 58%)."
+      "support": "Tajikistan rank is 1 with 57.6648462573476%"
     },
     {
       "surface": "beat_3",
@@ -52,69 +52,69 @@
         "IND",
         "USA"
       ],
-      "support": "India value is 3.80963193396421 (displayed as 4%), USA value is 0.0303707868455006 (displayed as 0%)."
+      "support": "India IND value is 3.80963193396421 (displayed as 4%), United States USA value is 0.0303707868455006 (displayed as 0%)"
     },
     {
       "surface": "beat_4",
       "text": "Personal remittances comprise personal transfers and compensation of employees, counting cash and in kind transfers plus income of short-term and border workers.",
       "isos": [],
-      "support": "Indicator definition: Personal remittances comprise personal transfers and compensation of employees. Personal transfers consist of all current transfers in cash or in kind... Compensation of employees refers to the income of border, seasonal, and other short-term workers..."
+      "support": "Definition: Personal remittances comprise personal transfers and compensation of employees. Personal transfers consist of all current transfers in cash or in kind... Compensation of employees refers to the income of border, seasonal, and other short-term workers"
     },
     {
       "surface": "beat_5",
       "text": "So where does your country rank on the map?",
       "isos": [],
-      "support": "Matches card_5."
+      "support": "Ordinary prompt question"
     },
     {
       "surface": "card_5",
-      "text": "Where is your country? Remittances received, % of GDP, World Bank",
+      "text": "Where is your country?",
       "isos": [],
-      "support": "Matches visual plans and indicator metadata."
+      "support": "Card title matches visual plan"
     }
   ],
   "surface_checks": {
     "title": {
       "supported": true,
-      "reason": "Tajikistan is correctly stated as 58% based on indicator data.",
+      "reason": "Tajikistan value is 57.66%, rounded to 58%",
       "isos": [
         "TJK"
       ]
     },
     "hook": {
       "supported": true,
-      "reason": "Tajikistan ranks 1st in the dataset.",
+      "reason": "Tajikistan is rank 1",
       "isos": [
         "TJK"
       ]
     },
     "description": {
       "supported": true,
-      "reason": "Count of 173 countries and territories matches the evidence universe.",
+      "reason": "Indicator counts 173 mapped countries and territories",
       "isos": []
     },
     "beat_0": {
       "supported": true,
-      "reason": "Tajikistan value is 57.66%, rounded to 58%.",
+      "reason": "Tajikistan remittances received is 57.66% of GDP",
       "isos": [
         "TJK"
       ]
     },
     "beat_1": {
       "supported": true,
-      "reason": "Universe count of 173 is correct and color description is standard style.",
+      "reason": "Standard map color/loop description",
       "isos": []
     },
     "beat_2": {
       "supported": true,
-      "reason": "Tajikistan is rank 1 with 58%.",
+      "reason": "Tajikistan rank is 1 at 58%",
       "isos": [
         "TJK"
       ]
     },
     "beat_3": {
       "supported": true,
-      "reason": "India display is 4% (3.81%) and USA display is 0% (0.03%).",
+      "reason": "India is 4% (3.81%) and USA is 0% (0.03%)",
       "isos": [
         "IND",
         "USA"
@@ -122,17 +122,17 @@
     },
     "beat_4": {
       "supported": true,
-      "reason": "Statement directly reflects the official World Bank definition.",
+      "reason": "Directly matches indicator definition text",
       "isos": []
     },
     "beat_5": {
       "supported": true,
-      "reason": "Matches card 5 content.",
+      "reason": "Closing question matches card",
       "isos": []
     },
     "card_5": {
       "supported": true,
-      "reason": "Matches visual plan and World Bank indicator parameters.",
+      "reason": "Matches visual plan card strings",
       "isos": []
     }
   }

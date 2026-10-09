@@ -1,0 +1,172 @@
+{
+  "errors": [],
+  "claims": [
+    {
+      "surface": "title",
+      "text": "Finland Rates Life at 7.8 out of 10",
+      "isos": [
+        "FIN"
+      ],
+      "support": "Finland value is 7.764, displayed as 7.8 out of 10"
+    },
+    {
+      "surface": "hook",
+      "text": "THE LIFE LADDER",
+      "isos": [],
+      "support": "Indicator definition uses the Cantril ladder question"
+    },
+    {
+      "surface": "description",
+      "text": "A global look at how people rate their lives on a 0 to 10 scale, from Finland at the top to Afghanistan at the bottom.",
+      "isos": [
+        "FIN",
+        "AFG"
+      ],
+      "support": "Finland rank 1 (value 7.764), Afghanistan rank 146 (value 1.446), scale 0 to 10"
+    },
+    {
+      "surface": "beat_0",
+      "text": "Rate your life from 0 to 10: Finland answers 7.8. Afghanistan answers 1.4.",
+      "isos": [
+        "FIN",
+        "AFG"
+      ],
+      "support": "Finland display 7.8, Afghanistan display 1.4, scale 0 to 10"
+    },
+    {
+      "surface": "beat_1",
+      "text": "Finland is the world's highest, feeling closest to the best possible life.",
+      "isos": [
+        "FIN"
+      ],
+      "support": "Finland rank is 1 out of 146, value 7.764"
+    },
+    {
+      "surface": "beat_2",
+      "text": "Right behind, Iceland has 7.5, Denmark has 7.5, Costa Rica has 7.4, and Sweden has 7.3.",
+      "isos": [
+        "ISL",
+        "DNK",
+        "CRI",
+        "SWE"
+      ],
+      "support": "Iceland display 7.5 (rank 2), Denmark display 7.5 (rank 3), Costa Rica display 7.4 (rank 4), Sweden display 7.3 (rank 5)"
+    },
+    {
+      "surface": "beat_3",
+      "text": "For major economies, USA has 6.8, while India has 4.5.",
+      "isos": [
+        "USA",
+        "IND"
+      ],
+      "support": "United States display 6.8 (rank 22), India display 4.5 (rank 115)"
+    },
+    {
+      "surface": "beat_4",
+      "text": "Toward the bottom, Malawi has 3.3.",
+      "isos": [
+        "MWI"
+      ],
+      "support": "Malawi display 3.3, rank 144"
+    },
+    {
+      "surface": "beat_5",
+      "text": "Afghanistan is the world's lowest at 1.4, right near the bottom step.",
+      "isos": [
+        "AFG"
+      ],
+      "support": "Afghanistan display 1.4, rank 146"
+    },
+    {
+      "surface": "beat_6",
+      "text": "Which step are you on?",
+      "isos": [],
+      "support": "Cantril ladder question text"
+    },
+    {
+      "surface": "card_6",
+      "text": "Which step are you on?, Cantril Life Ladder, 2025",
+      "isos": [],
+      "support": "Question and metadata year 2025"
+    }
+  ],
+  "surface_checks": {
+    "title": {
+      "supported": true,
+      "reason": "Finland's value is 7.764, correctly rounded and displayed as 7.8 out of 10.",
+      "isos": [
+        "FIN"
+      ]
+    },
+    "hook": {
+      "supported": true,
+      "reason": "The indicator is based on the Cantril ladder question.",
+      "isos": []
+    },
+    "description": {
+      "supported": true,
+      "reason": "Finland is ranked 1st and Afghanistan is ranked 146th on a 0 to 10 scale.",
+      "isos": [
+        "FIN",
+        "AFG"
+      ]
+    },
+    "beat_0": {
+      "supported": true,
+      "reason": "Finland display is 7.8 and Afghanistan display is 1.4 out of 10.",
+      "isos": [
+        "FIN",
+        "AFG"
+      ]
+    },
+    "beat_1": {
+      "supported": true,
+      "reason": "Finland has rank 1, making it the highest in the dataset.",
+      "isos": [
+        "FIN"
+      ]
+    },
+    "beat_2": {
+      "supported": true,
+      "reason": "Iceland (7.5), Denmark (7.5), Costa Rica (7.4), and Sweden (7.3) match their data displays and top rankings.",
+      "isos": [
+        "ISL",
+        "DNK",
+        "CRI",
+        "SWE"
+      ]
+    },
+    "beat_3": {
+      "supported": true,
+      "reason": "United States display is 6.8 and India display is 4.5.",
+      "isos": [
+        "USA",
+        "IND"
+      ]
+    },
+    "beat_4": {
+      "supported": true,
+      "reason": "Malawi display is 3.3, near the bottom of the rankings.",
+      "isos": [
+        "MWI"
+      ]
+    },
+    "beat_5": {
+      "supported": true,
+      "reason": "Afghanistan rank is 146 with a display value of 1.4, the lowest in the dataset.",
+      "isos": [
+        "AFG"
+      ]
+    },
+    "beat_6": {
+      "supported": true,
+      "reason": "Matches the Cantril ladder survey question text.",
+      "isos": []
+    },
+    "card_6": {
+      "supported": true,
+      "reason": "Matches the survey question and dataset year 2025.",
+      "isos": []
+    }
+  }
+}
