@@ -381,6 +381,8 @@ ATLAS_QUIET_HOURS = 36
 
 
 def _atlas_quiet(now: datetime) -> str | None:
+    if (CHECKOUT / "status" / "atlas_hold.json").exists():
+        return None
     records = [json.loads(p.read_text(encoding="utf-8")) for p in (CHECKOUT / "content" / "atlas").glob("atlas*/publish.json")]
     due = [datetime.fromisoformat(r["due_at"]) for r in records if r.get("due_at")]
     past = [d for d in due if d <= now]

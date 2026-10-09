@@ -40,6 +40,8 @@ RESERVE = 4
 PUBLISHED_URL = ("https://raw.githubusercontent.com/ashivam-dot/history-last-hours-control/main/"
                  "atlas/published.json")
 EPISODE_ID = re.compile(r"atlas\d{3,}")
+# While this file ({"reason": ...}) exists the producer only syncs and refreshes numbers; it renders nothing.
+HOLD = ROOT / "status" / "atlas_hold.json"
 
 
 def outbox() -> Path:
@@ -292,6 +294,10 @@ def run(reserve: int = RESERVE, minutes: float = 40, max_failures: int = 2) -> d
 
     started = time.monotonic()
     synced = sync()
+    if HOLD.exists():
+        reason = json.loads(HOLD.read_text(encoding="utf-8")).get("reason") or "held"
+        numbers = stats.update(EPISODES, ROOT)
+        return {"outcome": "held", "reason": reason, "synced": synced, "tracked": len(numbers)}
     # Upgrade old waiting videos through the same checks instead of grandfathering unverified media.
     for folder in _waiting():
         if _accepted(folder):
