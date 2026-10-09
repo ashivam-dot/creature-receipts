@@ -204,7 +204,7 @@ def facts(ds: Dataset, ep_scale: dict, fmt: str) -> tuple[str, set[str], dict[st
             add(f"  {k} {names[k]}: {_say(vals[k], fmt)} (rank {rank}; year {ds.years[k]})", _say(vals[k], fmt), rank, iso=k)
     pairs = comparisons(shown, ranked, fmt)
     if pairs:
-        lines.append("COMPARISONS (already computed; a ratio may be said only as written, in a beat naming both):")
+        lines.append("COMPARISONS (already computed; use at most one, said only as written, in a beat naming both):")
         for a, b, text in pairs:
             lines.append(f"  {names[a]} has {text} times {names[b]}'s value")
             for f in _forms(text):
@@ -285,6 +285,7 @@ _FILLER = re.compile(r"\b(among these (countries|places)|with data|measures|reac
 _REPAIRS = ((re.compile(r"\b(countries|places)( and territories)? with data\b", re.I), r"\1\2"),
             (re.compile(r"\breaches\b", re.I), "hits"),
             (re.compile(r"\b(records|registers)\b", re.I), "has"))
+_RATIO = re.compile(r"\b\d+(?:\.\d+)? times\b", re.I)
 # "3.5 times older" says 3.5 times the age difference, not 3.5 times the age; "times less" has no clear meaning.
 _LOOSE_RATIO = re.compile(r"\btimes (older|younger|less|fewer|smaller|lower|cheaper|poorer)\b", re.I)
 _REPORT_SPEAK = re.compile(r"\b(standing (as|at)|holding (the )?rank|ranks? \d+(st|nd|rd|th)? (globally|worldwide)|"
@@ -376,6 +377,9 @@ def problems(draft: dict, allowed: set[str], owners: dict[str, set[str]], vals: 
         if loose := _LOOSE_RATIO.search(text):
             out.append(f"{where}: '{loose.group(0)}' misstates a ratio; say 'N times the <measure> of <country>' "
                        "or 'a third of'")
+    if sum(len(_RATIO.findall(b["text"])) for b in beats) > 1:
+        out.append("use at most one 'N times' comparison in the whole script; a run of ratios reads like a "
+                   "spreadsheet, so give the other beats what the number means for people there")
     used = []
     for i, b in enumerate(beats, 1):
         isos = b.get("isos", [])

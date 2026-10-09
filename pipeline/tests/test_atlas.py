@@ -163,6 +163,10 @@ def test_writer_rejects_report_speak_and_back_to_back_repeats():
     assert "repeats" not in " ".join(writer.problems(draft, {"3,947", "10"}, {"3947": {"USA"}}, {"USA": 3947.0}))
     draft["title"] = "Japan is 3.5 times older than Niger"
     assert "misstates a ratio" in " ".join(writer.problems(draft, {"3,947", "3.5"}, {}, {"USA": 3947.0}))
+    assert "at most one 'N times'" not in " ".join(writer.problems(draft, set(), {}, {}))
+    draft["beats"][:2] = [{"text": "Japan is 3.5 times Chad.", "shot": "world", "isos": []},
+                          {"text": "China is 2.6 times Chad.", "shot": "world", "isos": []}]
+    assert "at most one 'N times'" in " ".join(writer.problems(draft, set(), {}, {}))
 
 
 def test_iso_codes_never_reach_the_narration():
