@@ -1,0 +1,2012 @@
+{
+  "version": 1,
+  "evidence": {
+    "version": 1,
+    "indicator": "EN.POP.DNST",
+    "definition": "Population density is midyear population divided by land area in square kilometers. Population is based on the de facto definition of population, which counts all residents regardless of legal status or citizenship--except for refugees not permanently settled in the country of asylum, who are generally considered part of the population of their country of origin. Land area is a country's total area, excluding area under inland water bodies, national claims to continental shelf, and exclusive economic zones. In most cases the definition of inland water bodies includes major rivers and lakes.",
+    "source": "https://data.worldbank.org/indicator/EN.POP.DNST",
+    "source_response_sha256": "4ac7ff7c805627b301840df3c99fcc1e0f5595d0e796c6dd359c71ab60de0259",
+    "source_organization": "FAO population estimates, Food and Agriculture Organization of the United Nations (FAO), publisher: Food and Agriculture Organization of the United Nations (FAO);\nWorld Bank population estimates, World Bank (WB), publisher: World Bank (WB)",
+    "year_label": "latest available 2021–2024",
+    "universe": "mapped countries and territories with data",
+    "count": 208,
+    "threshold": null,
+    "at_or_above": null,
+    "entities": {
+      "AFG": {
+        "name": "Afghanistan",
+        "value": 65.3871977676586,
+        "display": "65",
+        "year": 2024,
+        "unit": "per km²",
+        "rank": 132
+      },
+      "ALB": {
+        "name": "Albania",
+        "value": 86.756496350365,
+        "display": "87",
+        "year": 2024,
+        "unit": "per km²",
+        "rank": 107
+      },
+      "DZA": {
+        "name": "Algeria",
+        "value": 19.6555073181791,
+        "display": "20",
+        "year": 2024,
+        "unit": "per km²",
+        "rank": 179
+      },
+      "ASM": {
+        "name": "American Samoa",
+        "value": 235.0,
+        "display": "235",
+        "year": 2024,
+        "unit": "per km²",
+        "rank": 52
+      },
+      "AND": {
+        "name": "Andorra",
+        "value": 175.081196581197,
+        "display": "175",
+        "year": 2024,
+        "unit": "per km²",
+        "rank": 61
+      },
+      "AGO": {
+        "name": "Angola",
+        "value": 30.3889059116066,
+        "display": "30",
+        "year": 2024,
+        "unit": "per km²",
+        "rank": 162
+      },
+      "ATG": {
+        "name": "Antigua and Barbuda",
+        "value": 212.973940376745,
+        "display": "213",
+        "year": 2024,
+        "unit": "per km²",
+        "rank": 56
+      },
+      "ARG": {
+        "name": "Argentina",
+        "value": 16.6976014820824,
+        "display": "17",
+        "year": 2024,
+        "unit": "per km²",
+        "rank": 187
+      },
+      "ARM": {
+        "name": "Armenia",
+        "value": 107.573210777534,
+        "display": "108",
+        "year": 2024,
+        "unit": "per km²",
+        "rank": 91
+      },
+      "ABW": {
+        "name": "Aruba",
+        "value": 599.972222222222,
+        "display": "600",
+        "year": 2024,
+        "unit": "per km²",
+        "rank": 10
+      },
+      "AUS": {
+        "name": "Australia",
+        "value": 3.53710598992988,
+        "display": "4",
+        "year": 2024,
+        "unit": "per km²",
+        "rank": 206
+      },
+      "AUT": {
+        "name": "Austria",
+        "value": 111.221303926321,
+        "display": "111",
+        "year": 2024,
+        "unit": "per km²",
+        "rank": 88
+      },
+      "AZE": {
+        "name": "Azerbaijan",
+        "value": 123.446218995765,
+        "display": "123",
+        "year": 2024,
+        "unit": "per km²",
+        "rank": 81
+      },
+      "BHS": {
+        "name": "Bahamas, The",
+        "value": 40.0882117882118,
+        "display": "40",
+        "year": 2024,
+        "unit": "per km²",
+        "rank": 154
+      },
+      "BHR": {
+        "name": "Bahrain",
+        "value": 1985.8375,
+        "display": "1,986",
+        "year": 2024,
+        "unit": "per km²",
+        "rank": 3
+      },
+      "BGD": {
+        "name": "Bangladesh",
+        "value": 1333.35149419989,
+        "display": "1,333",
+        "year": 2024,
+        "unit": "per km²",
+        "rank": 5
+      },
+      "BRB": {
+        "name": "Barbados",
+        "value": 655.375870069606,
+        "display": "655",
+        "year": 2024,
+        "unit": "per km²",
+        "rank": 8
+      },
+      "BLR": {
+        "name": "Belarus",
+        "value": 44.9936396421252,
+        "display": "45",
+        "year": 2024,
+        "unit": "per km²",
+        "rank": 151
+      },
+      "BEL": {
+        "name": "Belgium",
+        "value": 388.880581303604,
+        "display": "389",
+        "year": 2024,
+        "unit": "per km²",
+        "rank": 22
+      },
+      "BLZ": {
+        "name": "Belize",
+        "value": 18.2846120122753,
+        "display": "18",
+        "year": 2024,
+        "unit": "per km²",
+        "rank": 184
+      },
+      "BEN": {
+        "name": "Benin",
+        "value": 128.261120964881,
+        "display": "128",
+        "year": 2024,
+        "unit": "per km²",
+        "rank": 79
+      },
+      "BMU": {
+        "name": "Bermuda",
+        "value": 1196.96296296296,
+        "display": "1,197",
+        "year": 2024,
+        "unit": "per km²",
+        "rank": 6
+      },
+      "BTN": {
+        "name": "Bhutan",
+        "value": 20.7531200839014,
+        "display": "21",
+        "year": 2024,
+        "unit": "per km²",
+        "rank": 176
+      },
+      "BOL": {
+        "name": "Bolivia",
+        "value": 11.4097266273871,
+        "display": "11",
+        "year": 2024,
+        "unit": "per km²",
+        "rank": 193
+      },
+      "BIH": {
+        "name": "Bosnia and Herzegovina",
+        "value": 61.80181640625,
+        "display": "62",
+        "year": 2024,
+        "unit": "per km²",
+        "rank": 134
+      },
+      "BWA": {
+        "name": "Botswana",
+        "value": 4.44857163022956,
+        "display": "4",
+        "year": 2024,
+        "unit": "per km²",
+        "rank": 200
+      },
+      "BRA": {
+        "name": "Brazil",
+        "value": 25.3643242396035,
+        "display": "25",
+        "year": 2024,
+        "unit": "per km²",
+        "rank": 173
+      },
+      "VGB": {
+        "name": "British Virgin Islands",
+        "value": 261.397350993377,
+        "display": "261",
+        "year": 2024,
+        "unit": "per km²",
+        "rank": 43
+      },
+      "BRN": {
+        "name": "Brunei Darussalam",
+        "value": 87.8028462998102,
+        "display": "88",
+        "year": 2024,
+        "unit": "per km²",
+        "rank": 106
+      },
+      "BGR": {
+        "name": "Bulgaria",
+        "value": 59.3351234340457,
+        "display": "59",
+        "year": 2024,
+        "unit": "per km²",
+        "rank": 138
+      },
+      "BFA": {
+        "name": "Burkina Faso",
+        "value": 86.070105994152,
+        "display": "86",
+        "year": 2024,
+        "unit": "per km²",
+        "rank": 108
+      },
+      "BDI": {
+        "name": "Burundi",
+        "value": 547.032165109034,
+        "display": "547",
+        "year": 2024,
+        "unit": "per km²",
+        "rank": 14
+      },
+      "CPV": {
+        "name": "Cabo Verde",
+        "value": 130.242431761787,
+        "display": "130",
+        "year": 2024,
+        "unit": "per km²",
+        "rank": 77
+      },
+      "KHM": {
+        "name": "Cambodia",
+        "value": 99.9252266032178,
+        "display": "100",
+        "year": 2024,
+        "unit": "per km²",
+        "rank": 98
+      },
+      "CMR": {
+        "name": "Cameroon",
+        "value": 61.6101711408686,
+        "display": "62",
+        "year": 2024,
+        "unit": "per km²",
+        "rank": 135
+      },
+      "CAN": {
+        "name": "Canada",
+        "value": 4.69492973932436,
+        "display": "5",
+        "year": 2024,
+        "unit": "per km²",
+        "rank": 199
+      },
+      "CYM": {
+        "name": "Cayman Islands",
+        "value": 310.2375,
+        "display": "310",
+        "year": 2024,
+        "unit": "per km²",
+        "rank": 31
+      },
+      "CAF": {
+        "name": "Central African Republic",
+        "value": 8.55675944653119,
+        "display": "9",
+        "year": 2024,
+        "unit": "per km²",
+        "rank": 196
+      },
+      "TCD": {
+        "name": "Chad",
+        "value": 16.1206504129606,
+        "display": "16",
+        "year": 2024,
+        "unit": "per km²",
+        "rank": 189
+      },
+      "CHL": {
+        "name": "Chile",
+        "value": 26.6360096771031,
+        "display": "27",
+        "year": 2024,
+        "unit": "per km²",
+        "rank": 171
+      },
+      "CHN": {
+        "name": "China",
+        "value": 150.079195075526,
+        "display": "150",
+        "year": 2024,
+        "unit": "per km²",
+        "rank": 68
+      },
+      "COL": {
+        "name": "Colombia",
+        "value": 47.6668436232537,
+        "display": "48",
+        "year": 2024,
+        "unit": "per km²",
+        "rank": 148
+      },
+      "COM": {
+        "name": "Comoros",
+        "value": 463.511793335829,
+        "display": "464",
+        "year": 2024,
+        "unit": "per km²",
+        "rank": 19
+      },
+      "COD": {
+        "name": "Congo, Dem. Rep.",
+        "value": 48.2019651088419,
+        "display": "48",
+        "year": 2024,
+        "unit": "per km²",
+        "rank": 147
+      },
+      "COG": {
+        "name": "Congo, Rep.",
+        "value": 18.544541727672,
+        "display": "19",
+        "year": 2024,
+        "unit": "per km²",
+        "rank": 182
+      },
+      "CRI": {
+        "name": "Costa Rica",
+        "value": 101.461827531646,
+        "display": "101",
+        "year": 2024,
+        "unit": "per km²",
+        "rank": 96
+      },
+      "CIV": {
+        "name": "Cote d'Ivoire",
+        "value": 100.422106918239,
+        "display": "100",
+        "year": 2024,
+        "unit": "per km²",
+        "rank": 97
+      },
+      "HRV": {
+        "name": "Croatia",
+        "value": 69.0886347390994,
+        "display": "69",
+        "year": 2024,
+        "unit": "per km²",
+        "rank": 128
+      },
+      "CUB": {
+        "name": "Cuba",
+        "value": 105.778256262042,
+        "display": "106",
+        "year": 2024,
+        "unit": "per km²",
+        "rank": 93
+      },
+      "CUW": {
+        "name": "Curacao",
+        "value": 351.277027027027,
+        "display": "351",
+        "year": 2024,
+        "unit": "per km²",
+        "rank": 26
+      },
+      "CYP": {
+        "name": "Cyprus",
+        "value": 147.000216450216,
+        "display": "147",
+        "year": 2024,
+        "unit": "per km²",
+        "rank": 72
+      },
+      "CZE": {
+        "name": "Czechia",
+        "value": 141.338237020958,
+        "display": "141",
+        "year": 2024,
+        "unit": "per km²",
+        "rank": 74
+      },
+      "DNK": {
+        "name": "Denmark",
+        "value": 149.4248,
+        "display": "149",
+        "year": 2024,
+        "unit": "per km²",
+        "rank": 70
+      },
+      "DJI": {
+        "name": "Djibouti",
+        "value": 50.4194132873167,
+        "display": "50",
+        "year": 2024,
+        "unit": "per km²",
+        "rank": 145
+      },
+      "DMA": {
+        "name": "Dominica",
+        "value": 88.155792276964,
+        "display": "88",
+        "year": 2024,
+        "unit": "per km²",
+        "rank": 105
+      },
+      "DOM": {
+        "name": "Dominican Republic",
+        "value": 237.095984440855,
+        "display": "237",
+        "year": 2024,
+        "unit": "per km²",
+        "rank": 51
+      },
+      "ECU": {
+        "name": "Ecuador",
+        "value": 73.020929296183,
+        "display": "73",
+        "year": 2024,
+        "unit": "per km²",
+        "rank": 125
+      },
+      "EGY": {
+        "name": "Egypt, Arab Rep.",
+        "value": 117.070930734844,
+        "display": "117",
+        "year": 2024,
+        "unit": "per km²",
+        "rank": 85
+      },
+      "SLV": {
+        "name": "El Salvador",
+        "value": 305.897345559846,
+        "display": "306",
+        "year": 2024,
+        "unit": "per km²",
+        "rank": 33
+      },
+      "GNQ": {
+        "name": "Equatorial Guinea",
+        "value": 67.4657683189847,
+        "display": "67",
+        "year": 2024,
+        "unit": "per km²",
+        "rank": 129
+      },
+      "ERI": {
+        "name": "Eritrea",
+        "value": 29.2682367549669,
+        "display": "29",
+        "year": 2024,
+        "unit": "per km²",
+        "rank": 165
+      },
+      "EST": {
+        "name": "Estonia",
+        "value": 32.1165691551603,
+        "display": "32",
+        "year": 2024,
+        "unit": "per km²",
+        "rank": 161
+      },
+      "SWZ": {
+        "name": "Eswatini",
+        "value": 72.2570930232558,
+        "display": "72",
+        "year": 2024,
+        "unit": "per km²",
+        "rank": 127
+      },
+      "ETH": {
+        "name": "Ethiopia",
+        "value": 117.686187969574,
+        "display": "118",
+        "year": 2024,
+        "unit": "per km²",
+        "rank": 84
+      },
+      "FRO": {
+        "name": "Faroe Islands",
+        "value": 39.8832116788321,
+        "display": "40",
+        "year": 2024,
+        "unit": "per km²",
+        "rank": 155
+      },
+      "FJI": {
+        "name": "Fiji",
+        "value": 50.6618665793924,
+        "display": "51",
+        "year": 2024,
+        "unit": "per km²",
+        "rank": 144
+      },
+      "FIN": {
+        "name": "Finland",
+        "value": 18.4865493421053,
+        "display": "18",
+        "year": 2024,
+        "unit": "per km²",
+        "rank": 183
+      },
+      "FRA": {
+        "name": "France",
+        "value": 127.194828833844,
+        "display": "127",
+        "year": 2024,
+        "unit": "per km²",
+        "rank": 80
+      },
+      "PYF": {
+        "name": "French Polynesia",
+        "value": 80.0360692984948,
+        "display": "80",
+        "year": 2024,
+        "unit": "per km²",
+        "rank": 115
+      },
+      "GAB": {
+        "name": "Gabon",
+        "value": 9.8535025420111,
+        "display": "10",
+        "year": 2024,
+        "unit": "per km²",
+        "rank": 194
+      },
+      "GMB": {
+        "name": "Gambia, The",
+        "value": 272.726086956522,
+        "display": "273",
+        "year": 2024,
+        "unit": "per km²",
+        "rank": 38
+      },
+      "GEO": {
+        "name": "Georgia",
+        "value": 66.70138913188,
+        "display": "67",
+        "year": 2024,
+        "unit": "per km²",
+        "rank": 131
+      },
+      "DEU": {
+        "name": "Germany",
+        "value": 239.008078871305,
+        "display": "239",
+        "year": 2024,
+        "unit": "per km²",
+        "rank": 50
+      },
+      "GHA": {
+        "name": "Ghana",
+        "value": 151.30734442916,
+        "display": "151",
+        "year": 2024,
+        "unit": "per km²",
+        "rank": 67
+      },
+      "GRC": {
+        "name": "Greece",
+        "value": 80.7225290923196,
+        "display": "81",
+        "year": 2024,
+        "unit": "per km²",
+        "rank": 114
+      },
+      "GRL": {
+        "name": "Greenland",
+        "value": 0.13847274570044,
+        "display": "0",
+        "year": 2024,
+        "unit": "per km²",
+        "rank": 208
+      },
+      "GRD": {
+        "name": "Grenada",
+        "value": 340.718023255814,
+        "display": "341",
+        "year": 2024,
+        "unit": "per km²",
+        "rank": 27
+      },
+      "GUM": {
+        "name": "Guam",
+        "value": 310.123844731978,
+        "display": "310",
+        "year": 2024,
+        "unit": "per km²",
+        "rank": 32
+      },
+      "GTM": {
+        "name": "Guatemala",
+        "value": 171.765201567749,
+        "display": "172",
+        "year": 2024,
+        "unit": "per km²",
+        "rank": 62
+      },
+      "GIN": {
+        "name": "Guinea",
+        "value": 60.0471471593684,
+        "display": "60",
+        "year": 2024,
+        "unit": "per km²",
+        "rank": 137
+      },
+      "GNB": {
+        "name": "Guinea-Bissau",
+        "value": 78.2842105263158,
+        "display": "78",
+        "year": 2024,
+        "unit": "per km²",
+        "rank": 119
+      },
+      "GUY": {
+        "name": "Guyana",
+        "value": 3.93618925831202,
+        "display": "4",
+        "year": 2024,
+        "unit": "per km²",
+        "rank": 203
+      },
+      "HTI": {
+        "name": "Haiti",
+        "value": 427.160994194485,
+        "display": "427",
+        "year": 2024,
+        "unit": "per km²",
+        "rank": 21
+      },
+      "HND": {
+        "name": "Honduras",
+        "value": 96.7530878541425,
+        "display": "97",
+        "year": 2024,
+        "unit": "per km²",
+        "rank": 102
+      },
+      "HKG": {
+        "name": "Hong Kong SAR, China",
+        "value": 7165.80952380952,
+        "display": "7,166",
+        "year": 2024,
+        "unit": "per km²",
+        "rank": 2
+      },
+      "HUN": {
+        "name": "Hungary",
+        "value": 104.778270874425,
+        "display": "105",
+        "year": 2024,
+        "unit": "per km²",
+        "rank": 95
+      },
+      "ISL": {
+        "name": "Iceland",
+        "value": 3.83324407418427,
+        "display": "4",
+        "year": 2024,
+        "unit": "per km²",
+        "rank": 204
+      },
+      "IND": {
+        "name": "India",
+        "value": 488.006414322664,
+        "display": "488",
+        "year": 2024,
+        "unit": "per km²",
+        "rank": 18
+      },
+      "IDN": {
+        "name": "Indonesia",
+        "value": 149.802588244483,
+        "display": "150",
+        "year": 2024,
+        "unit": "per km²",
+        "rank": 69
+      },
+      "IRN": {
+        "name": "Iran, Islamic Rep.",
+        "value": 56.4362021571649,
+        "display": "56",
+        "year": 2024,
+        "unit": "per km²",
+        "rank": 141
+      },
+      "IRQ": {
+        "name": "Iraq",
+        "value": 106.055824292263,
+        "display": "106",
+        "year": 2024,
+        "unit": "per km²",
+        "rank": 92
+      },
+      "IRL": {
+        "name": "Ireland",
+        "value": 78.3247205690231,
+        "display": "78",
+        "year": 2024,
+        "unit": "per km²",
+        "rank": 118
+      },
+      "IMN": {
+        "name": "Isle of Man",
+        "value": 147.033388249558,
+        "display": "147",
+        "year": 2024,
+        "unit": "per km²",
+        "rank": 71
+      },
+      "ISR": {
+        "name": "Israel",
+        "value": 462.20887245841,
+        "display": "462",
+        "year": 2024,
+        "unit": "per km²",
+        "rank": 20
+      },
+      "ITA": {
+        "name": "Italy",
+        "value": 199.353117814149,
+        "display": "199",
+        "year": 2024,
+        "unit": "per km²",
+        "rank": 59
+      },
+      "JAM": {
+        "name": "Jamaica",
+        "value": 262.158356417359,
+        "display": "262",
+        "year": 2024,
+        "unit": "per km²",
+        "rank": 42
+      },
+      "JPN": {
+        "name": "Japan",
+        "value": 340.124474622771,
+        "display": "340",
+        "year": 2024,
+        "unit": "per km²",
+        "rank": 28
+      },
+      "JOR": {
+        "name": "Jordan",
+        "value": 130.108746086447,
+        "display": "130",
+        "year": 2024,
+        "unit": "per km²",
+        "rank": 78
+      },
+      "KAZ": {
+        "name": "Kazakhstan",
+        "value": 7.62772567322295,
+        "display": "8",
+        "year": 2024,
+        "unit": "per km²",
+        "rank": 197
+      },
+      "KEN": {
+        "name": "Kenya",
+        "value": 97.1507781297342,
+        "display": "97",
+        "year": 2024,
+        "unit": "per km²",
+        "rank": 100
+      },
+      "KIR": {
+        "name": "Kiribati",
+        "value": 165.86683107275,
+        "display": "166",
+        "year": 2024,
+        "unit": "per km²",
+        "rank": 63
+      },
+      "PRK": {
+        "name": "Korea, Dem. People's Rep.",
+        "value": 220.071613653351,
+        "display": "220",
+        "year": 2024,
+        "unit": "per km²",
+        "rank": 55
+      },
+      "KOR": {
+        "name": "Korea, Rep.",
+        "value": 530.236321721311,
+        "display": "530",
+        "year": 2024,
+        "unit": "per km²",
+        "rank": 16
+      },
+      "KWT": {
+        "name": "Kuwait",
+        "value": 274.81835016835,
+        "display": "275",
+        "year": 2024,
+        "unit": "per km²",
+        "rank": 37
+      },
+      "KGZ": {
+        "name": "Kyrgyz Republic",
+        "value": 37.653117831074,
+        "display": "38",
+        "year": 2024,
+        "unit": "per km²",
+        "rank": 157
+      },
+      "LAO": {
+        "name": "Lao PDR",
+        "value": 33.6647270363951,
+        "display": "34",
+        "year": 2024,
+        "unit": "per km²",
+        "rank": 159
+      },
+      "LVA": {
+        "name": "Latvia",
+        "value": 29.9875301301623,
+        "display": "30",
+        "year": 2024,
+        "unit": "per km²",
+        "rank": 164
+      },
+      "LBN": {
+        "name": "Lebanon",
+        "value": 567.542717497556,
+        "display": "568",
+        "year": 2024,
+        "unit": "per km²",
+        "rank": 12
+      },
+      "LSO": {
+        "name": "Lesotho",
+        "value": 76.9902173913043,
+        "display": "77",
+        "year": 2024,
+        "unit": "per km²",
+        "rank": 121
+      },
+      "LBR": {
+        "name": "Liberia",
+        "value": 58.272601744186,
+        "display": "58",
+        "year": 2024,
+        "unit": "per km²",
+        "rank": 139
+      },
+      "LBY": {
+        "name": "Libya",
+        "value": 4.1948594519022,
+        "display": "4",
+        "year": 2024,
+        "unit": "per km²",
+        "rank": 201
+      },
+      "LIE": {
+        "name": "Liechtenstein",
+        "value": 252.8125,
+        "display": "253",
+        "year": 2024,
+        "unit": "per km²",
+        "rank": 46
+      },
+      "LTU": {
+        "name": "Lithuania",
+        "value": 46.145997763221,
+        "display": "46",
+        "year": 2024,
+        "unit": "per km²",
+        "rank": 150
+      },
+      "LUX": {
+        "name": "Luxembourg",
+        "value": 262.972429169612,
+        "display": "263",
+        "year": 2024,
+        "unit": "per km²",
+        "rank": 41
+      },
+      "MDG": {
+        "name": "Madagascar",
+        "value": 54.9414850464077,
+        "display": "55",
+        "year": 2024,
+        "unit": "per km²",
+        "rank": 142
+      },
+      "MWI": {
+        "name": "Malawi",
+        "value": 229.691196436148,
+        "display": "230",
+        "year": 2024,
+        "unit": "per km²",
+        "rank": 53
+      },
+      "MYS": {
+        "name": "Malaysia",
+        "value": 108.226063004109,
+        "display": "108",
+        "year": 2024,
+        "unit": "per km²",
+        "rank": 90
+      },
+      "MLI": {
+        "name": "Mali",
+        "value": 20.0612978306657,
+        "display": "20",
+        "year": 2024,
+        "unit": "per km²",
+        "rank": 178
+      },
+      "MLT": {
+        "name": "Malta",
+        "value": 1805.00396636522,
+        "display": "1,805",
+        "year": 2024,
+        "unit": "per km²",
+        "rank": 4
+      },
+      "MHL": {
+        "name": "Marshall Islands",
+        "value": 207.447513812155,
+        "display": "207",
+        "year": 2024,
+        "unit": "per km²",
+        "rank": 57
+      },
+      "MRT": {
+        "name": "Mauritania",
+        "value": 5.01542155816435,
+        "display": "5",
+        "year": 2024,
+        "unit": "per km²",
+        "rank": 198
+      },
+      "MUS": {
+        "name": "Mauritius",
+        "value": 622.8895,
+        "display": "623",
+        "year": 2024,
+        "unit": "per km²",
+        "rank": 9
+      },
+      "MEX": {
+        "name": "Mexico",
+        "value": 67.3170642249029,
+        "display": "67",
+        "year": 2024,
+        "unit": "per km²",
+        "rank": 130
+      },
+      "FSM": {
+        "name": "Micronesia, Fed. Sts.",
+        "value": 161.426533523538,
+        "display": "161",
+        "year": 2024,
+        "unit": "per km²",
+        "rank": 64
+      },
+      "MDA": {
+        "name": "Moldova",
+        "value": 83.5090902770536,
+        "display": "84",
+        "year": 2024,
+        "unit": "per km²",
+        "rank": 110
+      },
+      "MNG": {
+        "name": "Mongolia",
+        "value": 2.26165292694361,
+        "display": "2",
+        "year": 2024,
+        "unit": "per km²",
+        "rank": 207
+      },
+      "MNE": {
+        "name": "Montenegro",
+        "value": 46.3587360594796,
+        "display": "46",
+        "year": 2024,
+        "unit": "per km²",
+        "rank": 149
+      },
+      "MAR": {
+        "name": "Morocco",
+        "value": 85.3264015236388,
+        "display": "85",
+        "year": 2024,
+        "unit": "per km²",
+        "rank": 109
+      },
+      "MOZ": {
+        "name": "Mozambique",
+        "value": 44.0394796408861,
+        "display": "44",
+        "year": 2024,
+        "unit": "per km²",
+        "rank": 152
+      },
+      "MMR": {
+        "name": "Myanmar",
+        "value": 83.5032880322368,
+        "display": "84",
+        "year": 2024,
+        "unit": "per km²",
+        "rank": 111
+      },
+      "NAM": {
+        "name": "Namibia",
+        "value": 3.68051476393494,
+        "display": "4",
+        "year": 2024,
+        "unit": "per km²",
+        "rank": 205
+      },
+      "NPL": {
+        "name": "Nepal",
+        "value": 206.843767003837,
+        "display": "207",
+        "year": 2024,
+        "unit": "per km²",
+        "rank": 58
+      },
+      "NLD": {
+        "name": "Netherlands",
+        "value": 534.407038907039,
+        "display": "534",
+        "year": 2024,
+        "unit": "per km²",
+        "rank": 15
+      },
+      "NCL": {
+        "name": "New Caledonia",
+        "value": 15.7536068044789,
+        "display": "16",
+        "year": 2024,
+        "unit": "per km²",
+        "rank": 191
+      },
+      "NZL": {
+        "name": "New Zealand",
+        "value": 20.0903877558771,
+        "display": "20",
+        "year": 2024,
+        "unit": "per km²",
+        "rank": 177
+      },
+      "NIC": {
+        "name": "Nicaragua",
+        "value": 56.702783779292,
+        "display": "57",
+        "year": 2023,
+        "unit": "per km²",
+        "rank": 140
+      },
+      "NER": {
+        "name": "Niger",
+        "value": 21.340816294308,
+        "display": "21",
+        "year": 2024,
+        "unit": "per km²",
+        "rank": 175
+      },
+      "NGA": {
+        "name": "Nigeria",
+        "value": 255.47556243618,
+        "display": "255",
+        "year": 2024,
+        "unit": "per km²",
+        "rank": 45
+      },
+      "MKD": {
+        "name": "North Macedonia",
+        "value": 72.3377874702617,
+        "display": "72",
+        "year": 2024,
+        "unit": "per km²",
+        "rank": 126
+      },
+      "MNP": {
+        "name": "Northern Mariana Islands",
+        "value": 96.8884026258206,
+        "display": "97",
+        "year": 2024,
+        "unit": "per km²",
+        "rank": 101
+      },
+      "NOR": {
+        "name": "Norway",
+        "value": 15.2971120322837,
+        "display": "15",
+        "year": 2024,
+        "unit": "per km²",
+        "rank": 192
+      },
+      "OMN": {
+        "name": "Oman",
+        "value": 17.0647431340872,
+        "display": "17",
+        "year": 2024,
+        "unit": "per km²",
+        "rank": 186
+      },
+      "PAK": {
+        "name": "Pakistan",
+        "value": 325.951074097136,
+        "display": "326",
+        "year": 2024,
+        "unit": "per km²",
+        "rank": 29
+      },
+      "PLW": {
+        "name": "Palau",
+        "value": 38.4673913043478,
+        "display": "38",
+        "year": 2024,
+        "unit": "per km²",
+        "rank": 156
+      },
+      "PAN": {
+        "name": "Panama",
+        "value": 60.873240765705,
+        "display": "61",
+        "year": 2024,
+        "unit": "per km²",
+        "rank": 136
+      },
+      "PNG": {
+        "name": "Papua New Guinea",
+        "value": 23.3549043854613,
+        "display": "23",
+        "year": 2024,
+        "unit": "per km²",
+        "rank": 174
+      },
+      "PRY": {
+        "name": "Paraguay",
+        "value": 17.4973295634479,
+        "display": "17",
+        "year": 2024,
+        "unit": "per km²",
+        "rank": 185
+      },
+      "PER": {
+        "name": "Peru",
+        "value": 26.73269375,
+        "display": "27",
+        "year": 2024,
+        "unit": "per km²",
+        "rank": 170
+      },
+      "PHL": {
+        "name": "Philippines",
+        "value": 388.515511285508,
+        "display": "389",
+        "year": 2024,
+        "unit": "per km²",
+        "rank": 23
+      },
+      "POL": {
+        "name": "Poland",
+        "value": 119.447293102885,
+        "display": "119",
+        "year": 2024,
+        "unit": "per km²",
+        "rank": 83
+      },
+      "PRT": {
+        "name": "Portugal",
+        "value": 116.747022016121,
+        "display": "117",
+        "year": 2024,
+        "unit": "per km²",
+        "rank": 86
+      },
+      "PRI": {
+        "name": "Puerto Rico (US)",
+        "value": 361.050845546787,
+        "display": "361",
+        "year": 2024,
+        "unit": "per km²",
+        "rank": 24
+      },
+      "QAT": {
+        "name": "Qatar",
+        "value": 248.722541340296,
+        "display": "249",
+        "year": 2024,
+        "unit": "per km²",
+        "rank": 48
+      },
+      "ROU": {
+        "name": "Romania",
+        "value": 82.805128650904,
+        "display": "83",
+        "year": 2024,
+        "unit": "per km²",
+        "rank": 113
+      },
+      "RUS": {
+        "name": "Russian Federation",
+        "value": 8.77271713092917,
+        "display": "9",
+        "year": 2024,
+        "unit": "per km²",
+        "rank": 195
+      },
+      "RWA": {
+        "name": "Rwanda",
+        "value": 599.948415578041,
+        "display": "600",
+        "year": 2024,
+        "unit": "per km²",
+        "rank": 11
+      },
+      "WSM": {
+        "name": "Samoa",
+        "value": 78.4241007194245,
+        "display": "78",
+        "year": 2024,
+        "unit": "per km²",
+        "rank": 117
+      },
+      "SMR": {
+        "name": "San Marino",
+        "value": 555.179738562092,
+        "display": "555",
+        "year": 2024,
+        "unit": "per km²",
+        "rank": 13
+      },
+      "STP": {
+        "name": "Sao Tome and Principe",
+        "value": 245.35,
+        "display": "245",
+        "year": 2024,
+        "unit": "per km²",
+        "rank": 49
+      },
+      "SAU": {
+        "name": "Saudi Arabia",
+        "value": 16.421102577581,
+        "display": "16",
+        "year": 2024,
+        "unit": "per km²",
+        "rank": 188
+      },
+      "SEN": {
+        "name": "Senegal",
+        "value": 96.0992260946346,
+        "display": "96",
+        "year": 2024,
+        "unit": "per km²",
+        "rank": 103
+      },
+      "SRB": {
+        "name": "Serbia",
+        "value": 75.1977823623367,
+        "display": "75",
+        "year": 2024,
+        "unit": "per km²",
+        "rank": 124
+      },
+      "SYC": {
+        "name": "Seychelles",
+        "value": 265.544857768053,
+        "display": "266",
+        "year": 2024,
+        "unit": "per km²",
+        "rank": 40
+      },
+      "SLE": {
+        "name": "Sierra Leone",
+        "value": 119.728761429759,
+        "display": "120",
+        "year": 2024,
+        "unit": "per km²",
+        "rank": 82
+      },
+      "SGP": {
+        "name": "Singapore",
+        "value": 8329.00110375276,
+        "display": "8,329",
+        "year": 2024,
+        "unit": "per km²",
+        "rank": 1
+      },
+      "SVK": {
+        "name": "Slovak Republic",
+        "value": 112.771817803661,
+        "display": "113",
+        "year": 2024,
+        "unit": "per km²",
+        "rank": 87
+      },
+      "SVN": {
+        "name": "Slovenia",
+        "value": 105.659440264223,
+        "display": "106",
+        "year": 2024,
+        "unit": "per km²",
+        "rank": 94
+      },
+      "SLB": {
+        "name": "Solomon Islands",
+        "value": 29.2675241157556,
+        "display": "29",
+        "year": 2024,
+        "unit": "per km²",
+        "rank": 166
+      },
+      "SOM": {
+        "name": "Somalia, Fed. Rep.",
+        "value": 30.3011939299264,
+        "display": "30",
+        "year": 2024,
+        "unit": "per km²",
+        "rank": 163
+      },
+      "ZAF": {
+        "name": "South Africa",
+        "value": 52.7637578415451,
+        "display": "53",
+        "year": 2024,
+        "unit": "per km²",
+        "rank": 143
+      },
+      "SSD": {
+        "name": "South Sudan",
+        "value": 18.8998908106911,
+        "display": "19",
+        "year": 2024,
+        "unit": "per km²",
+        "rank": 181
+      },
+      "ESP": {
+        "name": "Spain",
+        "value": 97.7591687574834,
+        "display": "98",
+        "year": 2024,
+        "unit": "per km²",
+        "rank": 99
+      },
+      "LKA": {
+        "name": "Sri Lanka",
+        "value": 354.283866795991,
+        "display": "354",
+        "year": 2024,
+        "unit": "per km²",
+        "rank": 25
+      },
+      "KNA": {
+        "name": "St. Kitts and Nevis",
+        "value": 179.475095785441,
+        "display": "179",
+        "year": 2024,
+        "unit": "per km²",
+        "rank": 60
+      },
+      "LCA": {
+        "name": "St. Lucia",
+        "value": 294.662295081967,
+        "display": "295",
+        "year": 2024,
+        "unit": "per km²",
+        "rank": 35
+      },
+      "MAF": {
+        "name": "St. Martin (French part)",
+        "value": 493.0,
+        "display": "493",
+        "year": 2024,
+        "unit": "per km²",
+        "rank": 17
+      },
+      "VCT": {
+        "name": "St. Vincent and the Grenadines",
+        "value": 258.652956298201,
+        "display": "259",
+        "year": 2024,
+        "unit": "per km²",
+        "rank": 44
+      },
+      "SDN": {
+        "name": "Sudan",
+        "value": 27.0069395074946,
+        "display": "27",
+        "year": 2024,
+        "unit": "per km²",
+        "rank": 168
+      },
+      "SUR": {
+        "name": "Suriname",
+        "value": 3.95265370906713,
+        "display": "4",
+        "year": 2024,
+        "unit": "per km²",
+        "rank": 202
+      },
+      "SWE": {
+        "name": "Sweden",
+        "value": 25.9525842806983,
+        "display": "26",
+        "year": 2024,
+        "unit": "per km²",
+        "rank": 172
+      },
+      "CHE": {
+        "name": "Switzerland",
+        "value": 227.933848026418,
+        "display": "228",
+        "year": 2024,
+        "unit": "per km²",
+        "rank": 54
+      },
+      "SYR": {
+        "name": "Syrian Arab Republic",
+        "value": 134.361269944998,
+        "display": "134",
+        "year": 2024,
+        "unit": "per km²",
+        "rank": 76
+      },
+      "TJK": {
+        "name": "Tajikistan",
+        "value": 76.3090064125658,
+        "display": "76",
+        "year": 2024,
+        "unit": "per km²",
+        "rank": 123
+      },
+      "TZA": {
+        "name": "Tanzania",
+        "value": 77.5567386877828,
+        "display": "78",
+        "year": 2024,
+        "unit": "per km²",
+        "rank": 120
+      },
+      "THA": {
+        "name": "Thailand",
+        "value": 140.280708175928,
+        "display": "140",
+        "year": 2024,
+        "unit": "per km²",
+        "rank": 75
+      },
+      "TLS": {
+        "name": "Timor-Leste",
+        "value": 94.1921990585071,
+        "display": "94",
+        "year": 2024,
+        "unit": "per km²",
+        "rank": 104
+      },
+      "TGO": {
+        "name": "Togo",
+        "value": 154.560728075014,
+        "display": "155",
+        "year": 2024,
+        "unit": "per km²",
+        "rank": 66
+      },
+      "TON": {
+        "name": "Tonga",
+        "value": 144.6875,
+        "display": "145",
+        "year": 2024,
+        "unit": "per km²",
+        "rank": 73
+      },
+      "TTO": {
+        "name": "Trinidad and Tobago",
+        "value": 266.835608424337,
+        "display": "267",
+        "year": 2024,
+        "unit": "per km²",
+        "rank": 39
+      },
+      "TUN": {
+        "name": "Tunisia",
+        "value": 79.0236161174047,
+        "display": "79",
+        "year": 2024,
+        "unit": "per km²",
+        "rank": 116
+      },
+      "TUR": {
+        "name": "Turkiye",
+        "value": 111.116589789899,
+        "display": "111",
+        "year": 2024,
+        "unit": "per km²",
+        "rank": 89
+      },
+      "TKM": {
+        "name": "Turkmenistan",
+        "value": 15.9481156768029,
+        "display": "16",
+        "year": 2024,
+        "unit": "per km²",
+        "rank": 190
+      },
+      "TCA": {
+        "name": "Turks and Caicos Islands",
+        "value": 49.07564620398,
+        "display": "49",
+        "year": 2024,
+        "unit": "per km²",
+        "rank": 146
+      },
+      "UGA": {
+        "name": "Uganda",
+        "value": 249.426949930182,
+        "display": "249",
+        "year": 2024,
+        "unit": "per km²",
+        "rank": 47
+      },
+      "UKR": {
+        "name": "Ukraine",
+        "value": 65.343840179496,
+        "display": "65",
+        "year": 2024,
+        "unit": "per km²",
+        "rank": 133
+      },
+      "ARE": {
+        "name": "United Arab Emirates",
+        "value": 154.694452266967,
+        "display": "155",
+        "year": 2024,
+        "unit": "per km²",
+        "rank": 65
+      },
+      "GBR": {
+        "name": "United Kingdom",
+        "value": 286.367957673707,
+        "display": "286",
+        "year": 2024,
+        "unit": "per km²",
+        "rank": 36
+      },
+      "USA": {
+        "name": "United States",
+        "value": 37.1693654604249,
+        "display": "37",
+        "year": 2024,
+        "unit": "per km²",
+        "rank": 158
+      },
+      "URY": {
+        "name": "Uruguay",
+        "value": 19.3501622708781,
+        "display": "19",
+        "year": 2024,
+        "unit": "per km²",
+        "rank": 180
+      },
+      "UZB": {
+        "name": "Uzbekistan",
+        "value": 82.9213906182299,
+        "display": "83",
+        "year": 2024,
+        "unit": "per km²",
+        "rank": 112
+      },
+      "VUT": {
+        "name": "Vanuatu",
+        "value": 26.8912133891213,
+        "display": "27",
+        "year": 2024,
+        "unit": "per km²",
+        "rank": 169
+      },
+      "VEN": {
+        "name": "Venezuela, RB",
+        "value": 32.2040054418684,
+        "display": "32",
+        "year": 2024,
+        "unit": "per km²",
+        "rank": 160
+      },
+      "VNM": {
+        "name": "Viet Nam",
+        "value": 322.202750862237,
+        "display": "322",
+        "year": 2024,
+        "unit": "per km²",
+        "rank": 30
+      },
+      "VIR": {
+        "name": "Virgin Islands (U.S.)",
+        "value": 299.933908045977,
+        "display": "300",
+        "year": 2024,
+        "unit": "per km²",
+        "rank": 34
+      },
+      "PSE": {
+        "name": "West Bank and Gaza",
+        "value": 877.86755186722,
+        "display": "878",
+        "year": 2024,
+        "unit": "per km²",
+        "rank": 7
+      },
+      "YEM": {
+        "name": "Yemen, Rep.",
+        "value": 76.866711618886,
+        "display": "77",
+        "year": 2024,
+        "unit": "per km²",
+        "rank": 122
+      },
+      "ZMB": {
+        "name": "Zambia",
+        "value": 28.6726428926943,
+        "display": "29",
+        "year": 2024,
+        "unit": "per km²",
+        "rank": 167
+      },
+      "ZWE": {
+        "name": "Zimbabwe",
+        "value": 42.9995424583172,
+        "display": "43",
+        "year": 2024,
+        "unit": "per km²",
+        "rank": 153
+      }
+    }
+  },
+  "review": {
+    "errors": [],
+    "claims": [
+      {
+        "surface": "title",
+        "text": "The emptiest and most crowded places by density",
+        "isos": [],
+        "support": "Universe of 208 countries and territories with population density data.",
+        "evidence": {}
+      },
+      {
+        "surface": "hook",
+        "text": "LOWEST DENSITY",
+        "isos": [],
+        "support": "Indicator: EN.POP.DNST",
+        "evidence": {}
+      },
+      {
+        "surface": "description",
+        "text": "Population density across 208 countries and territories using World Bank data.",
+        "isos": [],
+        "support": "count: 208, source: World Bank",
+        "evidence": {}
+      },
+      {
+        "surface": "beat_0",
+        "text": "Greenland is the world's lowest among these countries with 0 people per square kilometre.",
+        "isos": [
+          "GRL"
+        ],
+        "support": "Greenland (GRL) value: 0.13847274570044, display: 0, rank: 208",
+        "evidence": {
+          "GRL": {
+            "name": "Greenland",
+            "value": 0.13847274570044,
+            "display": "0",
+            "year": 2024,
+            "unit": "per km²",
+            "rank": 208
+          }
+        }
+      },
+      {
+        "surface": "beat_1",
+        "text": "Mapped across 208 countries and territories, dark blue is lowest, through grey-gold, to bright yellow for highest.",
+        "isos": [],
+        "support": "count: 208",
+        "evidence": {}
+      },
+      {
+        "surface": "beat_2",
+        "text": "Bangladesh reaches 1,333 people per square kilometre among these countries.",
+        "isos": [
+          "BGD"
+        ],
+        "support": "Bangladesh (BGD) value: 1333.35149419989, display: 1,333, rank: 5",
+        "evidence": {
+          "BGD": {
+            "name": "Bangladesh",
+            "value": 1333.35149419989,
+            "display": "1,333",
+            "year": 2024,
+            "unit": "per km²",
+            "rank": 5
+          }
+        }
+      },
+      {
+        "surface": "beat_3",
+        "text": "India measures 488 people per square kilometre among these countries.",
+        "isos": [
+          "IND"
+        ],
+        "support": "India (IND) value: 488.006414322664, display: 488, rank: 18",
+        "evidence": {
+          "IND": {
+            "name": "India",
+            "value": 488.006414322664,
+            "display": "488",
+            "year": 2024,
+            "unit": "per km²",
+            "rank": 18
+          }
+        }
+      },
+      {
+        "surface": "beat_4",
+        "text": "Australia measures 4 people per square kilometre among these countries.",
+        "isos": [
+          "AUS"
+        ],
+        "support": "Australia (AUS) value: 3.53710598992988, display: 4, rank: 206",
+        "evidence": {
+          "AUS": {
+            "name": "Australia",
+            "value": 3.53710598992988,
+            "display": "4",
+            "year": 2024,
+            "unit": "per km²",
+            "rank": 206
+          }
+        }
+      },
+      {
+        "surface": "beat_5",
+        "text": "Population density is midyear population divided by land area in square kilometers.",
+        "isos": [],
+        "support": "definition: Population density is midyear population divided by land area in square kilometers.",
+        "evidence": {}
+      },
+      {
+        "surface": "beat_6",
+        "text": "So where is your country?",
+        "isos": [],
+        "support": "Card question",
+        "evidence": {}
+      },
+      {
+        "surface": "card_6",
+        "text": "So where is your country? World Bank population density",
+        "isos": [],
+        "support": "Card text matching source indicator",
+        "evidence": {}
+      },
+      {
+        "surface": "title",
+        "text": "The emptiest and most crowded places by density",
+        "isos": [],
+        "support": "Accurately describes ranking of population density.",
+        "method": "complete-surface-check",
+        "evidence": {}
+      },
+      {
+        "surface": "hook",
+        "text": "LOWEST DENSITY",
+        "isos": [],
+        "support": "Introduces lowest density context.",
+        "method": "complete-surface-check",
+        "evidence": {}
+      },
+      {
+        "surface": "description",
+        "text": "Population density across 208 countries and territories using World Bank data.",
+        "isos": [],
+        "support": "Accurately reflects the 208 countries and territories count and World Bank source.",
+        "method": "complete-surface-check",
+        "evidence": {}
+      },
+      {
+        "surface": "beat_0",
+        "text": "Greenland is the world's lowest among these countries with 0 people per square kilometre.",
+        "isos": [
+          "GRL"
+        ],
+        "support": "Greenland has the lowest density in the dataset (rank 208, display 0).",
+        "method": "complete-surface-check",
+        "evidence": {
+          "GRL": {
+            "name": "Greenland",
+            "value": 0.13847274570044,
+            "display": "0",
+            "year": 2024,
+            "unit": "per km²",
+            "rank": 208
+          }
+        }
+      },
+      {
+        "surface": "beat_1",
+        "text": "Mapped across 208 countries and territories, dark blue is lowest, through grey-gold, to bright yellow for highest.",
+        "isos": [],
+        "support": "Describes map color scaling across 208 countries and territories.",
+        "method": "complete-surface-check",
+        "evidence": {}
+      },
+      {
+        "surface": "beat_2",
+        "text": "Bangladesh reaches 1,333 people per square kilometre among these countries.",
+        "isos": [
+          "BGD"
+        ],
+        "support": "Bangladesh density is displayed as 1,333 per km².",
+        "method": "complete-surface-check",
+        "evidence": {
+          "BGD": {
+            "name": "Bangladesh",
+            "value": 1333.35149419989,
+            "display": "1,333",
+            "year": 2024,
+            "unit": "per km²",
+            "rank": 5
+          }
+        }
+      },
+      {
+        "surface": "beat_3",
+        "text": "India measures 488 people per square kilometre among these countries.",
+        "isos": [
+          "IND"
+        ],
+        "support": "India density is displayed as 488 per km².",
+        "method": "complete-surface-check",
+        "evidence": {
+          "IND": {
+            "name": "India",
+            "value": 488.006414322664,
+            "display": "488",
+            "year": 2024,
+            "unit": "per km²",
+            "rank": 18
+          }
+        }
+      },
+      {
+        "surface": "beat_4",
+        "text": "Australia measures 4 people per square kilometre among these countries.",
+        "isos": [
+          "AUS"
+        ],
+        "support": "Australia density is displayed as 4 per km².",
+        "method": "complete-surface-check",
+        "evidence": {
+          "AUS": {
+            "name": "Australia",
+            "value": 3.53710598992988,
+            "display": "4",
+            "year": 2024,
+            "unit": "per km²",
+            "rank": 206
+          }
+        }
+      },
+      {
+        "surface": "beat_5",
+        "text": "Population density is midyear population divided by land area in square kilometers.",
+        "isos": [],
+        "support": "Matches the official indicator definition.",
+        "method": "complete-surface-check",
+        "evidence": {}
+      },
+      {
+        "surface": "beat_6",
+        "text": "So where is your country?",
+        "isos": [],
+        "support": "Standard concluding question.",
+        "method": "complete-surface-check",
+        "evidence": {}
+      },
+      {
+        "surface": "card_6",
+        "text": [
+          "So where is your country?",
+          "World Bank population density"
+        ],
+        "isos": [],
+        "support": "Accurately reflects card contents and dataset indicator.",
+        "method": "complete-surface-check",
+        "evidence": {}
+      }
+    ],
+    "surface_checks": {
+      "title": {
+        "supported": true,
+        "reason": "Accurately describes ranking of population density.",
+        "isos": []
+      },
+      "hook": {
+        "supported": true,
+        "reason": "Introduces lowest density context.",
+        "isos": []
+      },
+      "description": {
+        "supported": true,
+        "reason": "Accurately reflects the 208 countries and territories count and World Bank source.",
+        "isos": []
+      },
+      "beat_0": {
+        "supported": true,
+        "reason": "Greenland has the lowest density in the dataset (rank 208, display 0).",
+        "isos": [
+          "GRL"
+        ]
+      },
+      "beat_1": {
+        "supported": true,
+        "reason": "Describes map color scaling across 208 countries and territories.",
+        "isos": []
+      },
+      "beat_2": {
+        "supported": true,
+        "reason": "Bangladesh density is displayed as 1,333 per km².",
+        "isos": [
+          "BGD"
+        ]
+      },
+      "beat_3": {
+        "supported": true,
+        "reason": "India density is displayed as 488 per km².",
+        "isos": [
+          "IND"
+        ]
+      },
+      "beat_4": {
+        "supported": true,
+        "reason": "Australia density is displayed as 4 per km².",
+        "isos": [
+          "AUS"
+        ]
+      },
+      "beat_5": {
+        "supported": true,
+        "reason": "Matches the official indicator definition.",
+        "isos": []
+      },
+      "beat_6": {
+        "supported": true,
+        "reason": "Standard concluding question.",
+        "isos": []
+      },
+      "card_6": {
+        "supported": true,
+        "reason": "Accurately reflects card contents and dataset indicator.",
+        "isos": []
+      }
+    },
+    "warnings": []
+  },
+  "script_sha256": "a0d58f15e96fbe687088b22b75284e0bf6feefadc23f124bfde7b748f243cb4e",
+  "data_sha256": "fca23feaf60cbe0736dcd645b530a8e3f352ebb36e5cca7a0d68b36e0c82018f",
+  "reviewer_model": "gemini-3.5-flash-lite"
+}

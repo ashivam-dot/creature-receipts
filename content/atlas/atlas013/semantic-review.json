@@ -1,0 +1,144 @@
+{
+  "errors": [],
+  "claims": [
+    {
+      "surface": "title",
+      "text": "The emptiest and most crowded places by density",
+      "isos": [],
+      "support": "Universe of 208 countries and territories with population density data."
+    },
+    {
+      "surface": "hook",
+      "text": "LOWEST DENSITY",
+      "isos": [],
+      "support": "Indicator: EN.POP.DNST"
+    },
+    {
+      "surface": "description",
+      "text": "Population density across 208 countries and territories using World Bank data.",
+      "isos": [],
+      "support": "count: 208, source: World Bank"
+    },
+    {
+      "surface": "beat_0",
+      "text": "Greenland is the world's lowest among these countries with 0 people per square kilometre.",
+      "isos": [
+        "GRL"
+      ],
+      "support": "Greenland (GRL) value: 0.13847274570044, display: 0, rank: 208"
+    },
+    {
+      "surface": "beat_1",
+      "text": "Mapped across 208 countries and territories, dark blue is lowest, through grey-gold, to bright yellow for highest.",
+      "isos": [],
+      "support": "count: 208"
+    },
+    {
+      "surface": "beat_2",
+      "text": "Bangladesh reaches 1,333 people per square kilometre among these countries.",
+      "isos": [
+        "BGD"
+      ],
+      "support": "Bangladesh (BGD) value: 1333.35149419989, display: 1,333, rank: 5"
+    },
+    {
+      "surface": "beat_3",
+      "text": "India measures 488 people per square kilometre among these countries.",
+      "isos": [
+        "IND"
+      ],
+      "support": "India (IND) value: 488.006414322664, display: 488, rank: 18"
+    },
+    {
+      "surface": "beat_4",
+      "text": "Australia measures 4 people per square kilometre among these countries.",
+      "isos": [
+        "AUS"
+      ],
+      "support": "Australia (AUS) value: 3.53710598992988, display: 4, rank: 206"
+    },
+    {
+      "surface": "beat_5",
+      "text": "Population density is midyear population divided by land area in square kilometers.",
+      "isos": [],
+      "support": "definition: Population density is midyear population divided by land area in square kilometers."
+    },
+    {
+      "surface": "beat_6",
+      "text": "So where is your country?",
+      "isos": [],
+      "support": "Card question"
+    },
+    {
+      "surface": "card_6",
+      "text": "So where is your country? World Bank population density",
+      "isos": [],
+      "support": "Card text matching source indicator"
+    }
+  ],
+  "surface_checks": {
+    "title": {
+      "supported": true,
+      "reason": "Accurately describes ranking of population density.",
+      "isos": []
+    },
+    "hook": {
+      "supported": true,
+      "reason": "Introduces lowest density context.",
+      "isos": []
+    },
+    "description": {
+      "supported": true,
+      "reason": "Accurately reflects the 208 countries and territories count and World Bank source.",
+      "isos": []
+    },
+    "beat_0": {
+      "supported": true,
+      "reason": "Greenland has the lowest density in the dataset (rank 208, display 0).",
+      "isos": [
+        "GRL"
+      ]
+    },
+    "beat_1": {
+      "supported": true,
+      "reason": "Describes map color scaling across 208 countries and territories.",
+      "isos": []
+    },
+    "beat_2": {
+      "supported": true,
+      "reason": "Bangladesh density is displayed as 1,333 per km².",
+      "isos": [
+        "BGD"
+      ]
+    },
+    "beat_3": {
+      "supported": true,
+      "reason": "India density is displayed as 488 per km².",
+      "isos": [
+        "IND"
+      ]
+    },
+    "beat_4": {
+      "supported": true,
+      "reason": "Australia density is displayed as 4 per km².",
+      "isos": [
+        "AUS"
+      ]
+    },
+    "beat_5": {
+      "supported": true,
+      "reason": "Matches the official indicator definition.",
+      "isos": []
+    },
+    "beat_6": {
+      "supported": true,
+      "reason": "Standard concluding question.",
+      "isos": []
+    },
+    "card_6": {
+      "supported": true,
+      "reason": "Accurately reflects card contents and dataset indicator.",
+      "isos": []
+    }
+  }
+}
