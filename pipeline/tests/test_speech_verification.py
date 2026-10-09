@@ -97,6 +97,22 @@ def test_ep064_equivalent_spellings_and_henry_numeral_clear_without_second_model
     assert not checker.speech_verified(altered, result["media_sha256"], beats)
 
 
+def test_atlas010_british_units_match_american_transcript(video, monkeypatch):
+    beats = [{"text": line} for line in (
+        "Bangladesh packs 1,300 people per square kilometre of land.",
+        "Monaco tops the map with people per square kilometre beyond any country.",
+        "Mongolia has 2 people per square kilometre; Canada 4 per square kilometre.",
+        "Its labour and fertiliser use, measured in litres per hectare, sit at the centre.",
+        "Every number here is people per square kilometre.",
+    )]
+    heard = " ".join(beat["text"] for beat in beats)
+    for british, american in (("kilometre", "kilometer"), ("labour", "labor"), ("fertiliser", "fertilizer"),
+                              ("litres", "liters"), ("centre", "center")):
+        heard = heard.replace(british, american)
+    result = _speech(video, beats, heard, OSError("second model should not run"), monkeypatch)
+    assert result["primary_differences"] == result["differences"] == []
+
+
 @pytest.mark.parametrize("scripted,small", [
     ("The SS Grandcamp exploded.", "The SS Grandchamp exploded."),
     ("The ammonium nitrate burned.", "The ammonium nitrite burned."),

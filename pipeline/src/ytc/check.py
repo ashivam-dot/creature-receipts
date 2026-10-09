@@ -23,8 +23,15 @@ _WAR = re.compile(r"\bWar (I{1,2})\b")
 # writes Henry the Fifth as Henry V. Keep these equivalences exact: a changed
 # number, person, or other content word must still hold the final video.
 _HENRY_FIFTH = re.compile(r"\bHenry\s+V\b(?![-\w])", re.I)
-_SPELLING_VARIANT = re.compile(r"\b(?:armoured|ploughed)\b", re.I)
-_SAME_SPOKEN_WORD = {"armoured": "armored", "ploughed": "plowed"}
+_SAME_SPOKEN_WORD = {"armoured": "armored", "ploughed": "plowed", "labour": "labor", "colour": "color",
+                     "colours": "colors", "coloured": "colored", "programme": "program", "programmes": "programs",
+                     "defence": "defense", "licence": "license", "fertiliser": "fertilizer",
+                     "fertilisers": "fertilizers", "urbanisation": "urbanization", "organisation": "organization",
+                     "organisations": "organizations", "immunisation": "immunization",
+                     "immunisations": "immunizations"}
+_SPELLING_VARIANT = re.compile(r"\b(?:" + "|".join(_SAME_SPOKEN_WORD) + r")\b", re.I)
+# kilometre, litres, centre, fibre, theatre: Whisper writes the American -er.
+_RE_ENDING = re.compile(r"\b(\w*(?:met|lit|cent|fib|theat))re(s?)\b", re.I)
 ASR_MODEL = "small.en"
 # A different English Whisper checkpoint checks only disputed final MP4 audio. It is
 # small enough for the studio worker; neither checkpoint alone can waive a changed
@@ -319,8 +326,9 @@ def _words(text: str) -> list[str]:
 
 
 def _speech_equivalents(text: str) -> str:
-    """Canonicalize only known ways ASR writes the same spoken ep064 words."""
+    """Canonicalize only known ways ASR writes the same spoken words (British and American spellings)."""
     text = _HENRY_FIFTH.sub("Henry the Fifth", text)
+    text = _RE_ENDING.sub(r"\1er\2", text)
     return _SPELLING_VARIANT.sub(lambda match: _SAME_SPOKEN_WORD[match.group().casefold()], text)
 
 
