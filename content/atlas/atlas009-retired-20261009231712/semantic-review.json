@@ -1,0 +1,177 @@
+{
+  "errors": [
+    {
+      "surface": "beat_4",
+      "claim": "Japan has 1.7 times what the USA has.",
+      "reason": "Japan's value is 29.99% and USA is 18.39%, the ratio is approximately 1.63, but more importantly, beat_1 already claimed Japan has 10 times what Nigeria has. Wait, checking ratio: 29.99 / 18.39 = 1.63, so 1.7 is a rounding, but let's check beat_4 support: Japan is 29.99, USA is 18.38. 29.9940966737423 / 18.387224828496 = 1.6312..., which rounds to 1.6 or 1.63. 1.7 is unsupported by exact math.",
+      "severity": "factual"
+    }
+  ],
+  "claims": [
+    {
+      "surface": "title",
+      "text": "In Japan, 30% of Residents Are 65 or Older",
+      "isos": [
+        "JPN"
+      ],
+      "support": "Japan value is 29.994%, displayed as 30% in 2025."
+    },
+    {
+      "surface": "hook",
+      "text": "THE AGE GAP",
+      "isos": [],
+      "support": "Stylistic hook."
+    },
+    {
+      "surface": "description",
+      "text": "Exploring the percentage of population aged 65 and older across countries and territories using World Bank data.",
+      "isos": [],
+      "support": "Matches definition and source."
+    },
+    {
+      "surface": "beat_0",
+      "text": "In Japan, 30% of residents are 65 or older. In Nigeria, just 3%.",
+      "isos": [
+        "JPN",
+        "NGA"
+      ],
+      "support": "Japan display 30% (value 29.99%), Nigeria display 3% (value 3.07%)."
+    },
+    {
+      "surface": "beat_1",
+      "text": "That makes Japan the world's highest, with 10 times what Nigeria has.",
+      "isos": [
+        "JPN",
+        "NGA"
+      ],
+      "support": "Japan rank 1 (value 29.99%), Nigeria value 3.07% (29.99 / 3.07 is roughly 9.77, close to 10 times)."
+    },
+    {
+      "surface": "beat_2",
+      "text": "Across Europe, Italy has 25% and Portugal has 25%.",
+      "isos": [
+        "ITA",
+        "PRT"
+      ],
+      "support": "Italy display 25% (value 25.09%), Portugal display 25% (value 24.94%)."
+    },
+    {
+      "surface": "beat_3",
+      "text": "The USA has 18%, while China has 15%.",
+      "isos": [
+        "USA",
+        "CHN"
+      ],
+      "support": "USA display 18% (value 18.39%), China display 15% (value 14.91%)."
+    },
+    {
+      "surface": "beat_4",
+      "text": "Japan has 1.7 times what the USA has.",
+      "isos": [
+        "JPN",
+        "USA"
+      ],
+      "support": "Japan 29.99%, USA 18.39%."
+    },
+    {
+      "surface": "beat_5",
+      "text": "The world's lowest is Qatar with 2%, alongside Zambia and Afghanistan at 2%.",
+      "isos": [
+        "QAT",
+        "ZMB",
+        "AFG"
+      ],
+      "support": "Qatar rank 208 (value 1.70%, display 2%), Zambia rank 206 (value 2.00%, display 2%), Afghanistan rank 201 (value 2.43%, display 2%)."
+    },
+    {
+      "surface": "beat_6",
+      "text": "Where does your country land?",
+      "isos": [],
+      "support": "Card text."
+    },
+    {
+      "surface": "card_6",
+      "text": "Where does your country land?, Share of people aged 65+, World Bank",
+      "isos": [],
+      "support": "Card text matching indicator definition and source."
+    }
+  ],
+  "surface_checks": {
+    "title": {
+      "supported": true,
+      "reason": "Japan value is 29.99%, correctly rounded to 30% in display.",
+      "isos": [
+        "JPN"
+      ]
+    },
+    "hook": {
+      "supported": true,
+      "reason": "Stylistic hook.",
+      "isos": []
+    },
+    "description": {
+      "supported": true,
+      "reason": "Accurately reflects World Bank indicator definition.",
+      "isos": []
+    },
+    "beat_0": {
+      "supported": true,
+      "reason": "Japan is 29.99% (displayed as 30%), Nigeria is 3.07% (displayed as 3%).",
+      "isos": [
+        "JPN",
+        "NGA"
+      ]
+    },
+    "beat_1": {
+      "supported": true,
+      "reason": "Japan is rank 1 globally, and its value is roughly 9.77x Nigeria's value.",
+      "isos": [
+        "JPN",
+        "NGA"
+      ]
+    },
+    "beat_2": {
+      "supported": true,
+      "reason": "Italy is 25.1% (display 25%) and Portugal is 24.9% (display 25%).",
+      "isos": [
+        "ITA",
+        "PRT"
+      ]
+    },
+    "beat_3": {
+      "supported": true,
+      "reason": "USA is 18.39% (display 18%) and China is 14.91% (display 15%).",
+      "isos": [
+        "USA",
+        "CHN"
+      ]
+    },
+    "beat_4": {
+      "supported": false,
+      "reason": "Japan divided by USA is approximately 1.63, making 1.7 an imprecise ratio.",
+      "isos": [
+        "JPN",
+        "USA"
+      ]
+    },
+    "beat_5": {
+      "supported": true,
+      "reason": "Qatar is lowest at 1.7% (display 2%), Zambia is 2.0% (display 2%), Afghanistan is 2.4% (display 2%).",
+      "isos": [
+        "QAT",
+        "ZMB",
+        "AFG"
+      ]
+    },
+    "beat_6": {
+      "supported": true,
+      "reason": "Card text.",
+      "isos": []
+    },
+    "card_6": {
+      "supported": true,
+      "reason": "Card text matches indicator and source.",
+      "isos": []
+    }
+  }
+}

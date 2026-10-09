@@ -1,0 +1,179 @@
+{
+  "errors": [],
+  "claims": [
+    {
+      "surface": "title",
+      "text": "The Youngest and Oldest places on Earth",
+      "isos": [],
+      "support": "Global median age range from 14.32 (CAF) to 50.45 (SHN)"
+    },
+    {
+      "surface": "hook",
+      "text": "A WORLD APART",
+      "isos": [],
+      "support": "Global median ages vary significantly across the world"
+    },
+    {
+      "surface": "description",
+      "text": "Median age divides population into two halves of equal size: half are older and half are younger.",
+      "isos": [],
+      "support": "Median age is the age that divides the population into two halves of equal size: half of the people are older than it and half are younger. UN World Population Prospects estimates."
+    },
+    {
+      "surface": "beat_0",
+      "text": "Half of Niger is younger than 15, while half of Japan is older than 49.",
+      "isos": [
+        "NER",
+        "JPN"
+      ],
+      "support": "Niger median age is 15.25 (display 15); Japan median age is 48.958 (display 49)"
+    },
+    {
+      "surface": "beat_1",
+      "text": "Central African Republic is 14, the lowest of all 219.",
+      "isos": [
+        "CAF"
+      ],
+      "support": "Central African Republic median age is 14.32 (display 14), rank 219 out of 219"
+    },
+    {
+      "surface": "beat_2",
+      "text": "Japan is 49. That is 3.5 times the Central African Republic.",
+      "isos": [
+        "JPN",
+        "CAF"
+      ],
+      "support": "Japan display 49, Central African Republic display 14 (49 / 14 = 3.5)"
+    },
+    {
+      "surface": "beat_3",
+      "text": "China is 39. That is 2.6 times the age of Chad at 15.",
+      "isos": [
+        "CHN",
+        "TCD"
+      ],
+      "support": "China display 39, Chad display 15 (39 / 15 = 2.6)"
+    },
+    {
+      "surface": "beat_4",
+      "text": "USA is 38. That is 2.5 times Niger.",
+      "isos": [
+        "USA",
+        "NER"
+      ],
+      "support": "USA display 38, Niger display 15 (38 / 15 = 2.53)"
+    },
+    {
+      "surface": "beat_5",
+      "text": "The oldest? Italy has 47, Portugal has 46, and Germany has 45.",
+      "isos": [
+        "ITA",
+        "PRT",
+        "DEU"
+      ],
+      "support": "Italy display 47, Portugal display 46, Germany display 45"
+    },
+    {
+      "surface": "beat_6",
+      "text": "India is 28.",
+      "isos": [
+        "IND"
+      ],
+      "support": "India display 28"
+    },
+    {
+      "surface": "beat_7",
+      "text": "Where does your country land?",
+      "isos": [],
+      "support": "Interactive or concluding prompt about country placement"
+    },
+    {
+      "surface": "card_7",
+      "text": "Where does your country land?, Median age in years, UN 2023",
+      "isos": [],
+      "support": "Card metadata matching UN 2023 median age indicator"
+    }
+  ],
+  "surface_checks": {
+    "title": {
+      "supported": true,
+      "reason": "Accurately reflects the extremeness of the global dataset.",
+      "isos": []
+    },
+    "hook": {
+      "supported": true,
+      "reason": "Stylistic hook reflecting global disparity.",
+      "isos": []
+    },
+    "description": {
+      "supported": true,
+      "reason": "Matches official definition provided in metadata.",
+      "isos": []
+    },
+    "beat_0": {
+      "supported": true,
+      "reason": "Niger value is 15.25 and Japan is 48.958, matching displays of 15 and 49.",
+      "isos": [
+        "NER",
+        "JPN"
+      ]
+    },
+    "beat_1": {
+      "supported": true,
+      "reason": "Central African Republic value is 14.32 (display 14) and rank is 219 out of 219.",
+      "isos": [
+        "CAF"
+      ]
+    },
+    "beat_2": {
+      "supported": true,
+      "reason": "Japan display 49 and CAR display 14 yield a 3.5x ratio.",
+      "isos": [
+        "JPN",
+        "CAF"
+      ]
+    },
+    "beat_3": {
+      "supported": true,
+      "reason": "China display 39 and Chad display 15 yield a 2.6x ratio.",
+      "isos": [
+        "CHN",
+        "TCD"
+      ]
+    },
+    "beat_4": {
+      "supported": true,
+      "reason": "USA display 38 and Niger display 15 yield a 2.5x ratio.",
+      "isos": [
+        "USA",
+        "NER"
+      ]
+    },
+    "beat_5": {
+      "supported": true,
+      "reason": "Italy display 47, Portugal display 46, and Germany display 45 are fully supported by evidence.",
+      "isos": [
+        "ITA",
+        "PRT",
+        "DEU"
+      ]
+    },
+    "beat_6": {
+      "supported": true,
+      "reason": "India display is 28.",
+      "isos": [
+        "IND"
+      ]
+    },
+    "beat_7": {
+      "supported": true,
+      "reason": "Conclusive prompt is consistent with the data.",
+      "isos": []
+    },
+    "card_7": {
+      "supported": true,
+      "reason": "Card text matches indicator and year label.",
+      "isos": []
+    }
+  }
+}

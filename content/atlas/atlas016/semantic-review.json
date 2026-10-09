@@ -1,0 +1,156 @@
+{
+  "errors": [],
+  "claims": [
+    {
+      "surface": "title",
+      "text": "How Many Calories Each Country Has On Its Plate",
+      "isos": [],
+      "support": "Mapped countries and territories with data, daily per capita caloric supply"
+    },
+    {
+      "surface": "hook",
+      "text": "THE DAILY PLATE",
+      "isos": [],
+      "support": "Daily per capita caloric supply indicator"
+    },
+    {
+      "surface": "description",
+      "text": "Calories available per person a day from the FAO food balance sheets.",
+      "isos": [],
+      "support": "Food available for human consumption, in kilocalories per person per day, from the FAO food balance sheets."
+    },
+    {
+      "surface": "beat_0",
+      "text": "The US has 3,947 calories of food available daily. In Burundi, it is 1,698.",
+      "isos": [
+        "USA",
+        "BDI"
+      ],
+      "support": "United States: 3947.3303 (display: 3,947), rank 1; Burundi: 1697.9843 (display: 1,698), rank 183"
+    },
+    {
+      "surface": "beat_1",
+      "text": "The US is the world's highest at retail level, with food wasted at home not subtracted.",
+      "isos": [
+        "USA"
+      ],
+      "support": "United States rank 1; definition notes food supply at the retail level, food wasted at home is not subtracted."
+    },
+    {
+      "surface": "beat_2",
+      "text": "Burundi is the world's lowest at 1,698 calories available per person daily.",
+      "isos": [
+        "BDI"
+      ],
+      "support": "Burundi rank 183 with value 1697.9843 (display 1,698)"
+    },
+    {
+      "surface": "beat_3",
+      "text": "The US has 2.3 times the food Burundi has.",
+      "isos": [
+        "USA",
+        "BDI"
+      ],
+      "support": "3947.3303 / 1697.9843 is approximately 2.32"
+    },
+    {
+      "surface": "beat_4",
+      "text": "India has 2,668 calories available per person daily.",
+      "isos": [
+        "IND"
+      ],
+      "support": "India value 2668.5, display 2,668"
+    },
+    {
+      "surface": "beat_5",
+      "text": "China hits 3,527.",
+      "isos": [
+        "CHN"
+      ],
+      "support": "China value 3526.8997, display 3,527"
+    },
+    {
+      "surface": "beat_6",
+      "text": "Where does your country land?",
+      "isos": [],
+      "support": "Closing card prompt"
+    },
+    {
+      "surface": "card_6",
+      "text": "FAO via Our World in Data",
+      "isos": [],
+      "support": "Source organization: FAO via Our World in Data"
+    }
+  ],
+  "surface_checks": {
+    "title": {
+      "supported": true,
+      "reason": "Accurately represents the daily per capita caloric supply across mapped territories.",
+      "isos": []
+    },
+    "hook": {
+      "supported": true,
+      "reason": "Stylistic headline matching the indicator.",
+      "isos": []
+    },
+    "description": {
+      "supported": true,
+      "reason": "Directly quotes the provided definition.",
+      "isos": []
+    },
+    "beat_0": {
+      "supported": true,
+      "reason": "Values for USA (3,947) and Burundi (1,698) match the dataset.",
+      "isos": [
+        "USA",
+        "BDI"
+      ]
+    },
+    "beat_1": {
+      "supported": true,
+      "reason": "USA is rank 1, and definition specifies retail level without home waste subtraction.",
+      "isos": [
+        "USA"
+      ]
+    },
+    "beat_2": {
+      "supported": true,
+      "reason": "Burundi is rank 183 with 1,698 kcal/day.",
+      "isos": [
+        "BDI"
+      ]
+    },
+    "beat_3": {
+      "supported": true,
+      "reason": "Ratio calculation 3947.33 / 1697.98 is accurately summarized as 2.3 times.",
+      "isos": [
+        "USA",
+        "BDI"
+      ]
+    },
+    "beat_4": {
+      "supported": true,
+      "reason": "India value 2,668 matches dataset.",
+      "isos": [
+        "IND"
+      ]
+    },
+    "beat_5": {
+      "supported": true,
+      "reason": "China value 3,527 matches dataset.",
+      "isos": [
+        "CHN"
+      ]
+    },
+    "beat_6": {
+      "supported": true,
+      "reason": "Standard closing question.",
+      "isos": []
+    },
+    "card_6": {
+      "supported": true,
+      "reason": "Correctly names the source organization.",
+      "isos": []
+    }
+  }
+}

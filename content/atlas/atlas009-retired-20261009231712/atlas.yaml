@@ -1,0 +1,72 @@
+id: atlas009
+title: In Japan, 30% of Residents Are 65 or Older
+hook_text: THE AGE GAP
+description: Exploring the percentage of population aged 65 and older across countries and territories using World
+  Bank data.
+hashtags:
+- '#maps'
+- '#geography'
+- '#data'
+sources:
+- https://data.worldbank.org/indicator/SP.POP.65UP.TO.ZS
+dataset:
+  kind: worldbank
+  indicator: SP.POP.65UP.TO.ZS
+  label: Share of people aged 65+
+  unit: '%'
+  source: World Bank
+  min_year: 2019
+scale:
+  edges:
+  - 5.0
+  - 10.0
+  - 15.0
+  - 20.0
+  - 25.0
+  labels:
+  - <5%
+  - 5-10
+  - 10-15
+  - 15-20
+  - 20-25
+  - 25%+
+value_format: '{v:.0f}%'
+beats:
+- text: In Japan, 30% of residents are 65 or older. In Nigeria, just 3%.
+  shot:
+    callouts:
+    - JPN
+    - NGA
+- text: That makes Japan the world's highest, with 10 times what Nigeria has.
+  shot:
+    kind: country
+    iso: JPN
+- text: Across Europe, Italy has 25% and Portugal has 25%.
+  shot:
+    kind: group
+    isos:
+    - ITA
+    - PRT
+- text: The USA has 18%, while China has 15%.
+  shot:
+    kind: group
+    isos:
+    - USA
+    - CHN
+- text: Japan has 1.7 times what the USA has.
+  shot:
+    kind: country
+    iso: JPN
+- text: The world's lowest is Qatar with 2%, alongside Zambia and Afghanistan at 2%.
+  shot:
+    kind: rank
+    isos:
+    - QAT
+    - ZMB
+    - AFG
+- text: Where does your country land?
+  shot:
+    kind: card
+    lines:
+    - Where does your country land?
+    - Share of people aged 65+, World Bank

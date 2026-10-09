@@ -1404,11 +1404,11 @@
     "claims": [
       {
         "surface": "title",
-        "text": "Remittances reach 58% of GDP in Tajikistan",
+        "text": "Money Sent Home Equals 58% of GDP in Tajikistan",
         "isos": [
           "TJK"
         ],
-        "support": "Tajikistan TJK value is 57.6648462573476, displayed as 58% of GDP",
+        "support": "Tajikistan value is 57.6648462573476, displayed as 58% of GDP",
         "evidence": {
           "TJK": {
             "name": "Tajikistan",
@@ -1422,36 +1422,26 @@
       },
       {
         "surface": "hook",
-        "text": "HIGHEST REMITTANCES",
-        "isos": [
-          "TJK"
-        ],
-        "support": "Tajikistan ranks 1 out of 173 mapped countries and territories",
-        "evidence": {
-          "TJK": {
-            "name": "Tajikistan",
-            "value": 57.6648462573476,
-            "display": "58%",
-            "year": 2025,
-            "unit": "% of GDP",
-            "rank": 1
-          }
-        }
+        "text": "REMITTANCE SHARE OF GDP",
+        "isos": [],
+        "support": "Indicator name: Personal remittances, received (% of GDP)",
+        "evidence": {}
       },
       {
         "surface": "description",
-        "text": "Where personal remittances received are large relative to GDP, mapped across 173 countries and territories.",
+        "text": "Comparing personal remittances received as a percentage of GDP across the world using World Bank data.",
         "isos": [],
-        "support": "Indicator BX.TRF.PWKR.DT.GD.ZS covers 173 mapped countries and territories",
+        "support": "World Bank indicator BX.TRF.PWKR.DT.GD.ZS measuring personal remittances received (% of GDP)",
         "evidence": {}
       },
       {
         "surface": "beat_0",
-        "text": "In Tajikistan, personal remittances received reach 58% of gross domestic product.",
+        "text": "In Tajikistan, money sent home equals 58% of GDP. In Canada, it's 0%.",
         "isos": [
-          "TJK"
+          "TJK",
+          "CAN"
         ],
-        "support": "Tajikistan TJK value is 57.6648462573476, displayed as 58% of GDP",
+        "support": "Tajikistan: 57.66% (displayed 58%), Canada: 0.03595% (displayed 0%)",
         "evidence": {
           "TJK": {
             "name": "Tajikistan",
@@ -1460,23 +1450,24 @@
             "year": 2025,
             "unit": "% of GDP",
             "rank": 1
+          },
+          "CAN": {
+            "name": "Canada",
+            "value": 0.0359503385795271,
+            "display": "0%",
+            "year": 2025,
+            "unit": "% of GDP",
+            "rank": 166
           }
         }
       },
       {
         "surface": "beat_1",
-        "text": "The map uses dark blue for the lowest values, moving through grey-gold to bright yellow for the highest across 173 countries and territories.",
-        "isos": [],
-        "support": "Visual color/loop question check: ordinary color description.",
-        "evidence": {}
-      },
-      {
-        "surface": "beat_2",
-        "text": "Tajikistan is the highest at 58%.",
+        "text": "Tajikistan is the world's highest. These personal transfers consist of cash sent to families back home.",
         "isos": [
           "TJK"
         ],
-        "support": "Tajikistan rank is 1 with 57.6648462573476%",
+        "support": "Tajikistan rank is 1 (highest), definition mentions personal transfers in cash or in kind",
         "evidence": {
           "TJK": {
             "name": "Tajikistan",
@@ -1489,13 +1480,31 @@
         }
       },
       {
+        "surface": "beat_2",
+        "text": "Nepal sits at 32%, far above the global median of 2%.",
+        "isos": [
+          "NPL"
+        ],
+        "support": "Nepal value is 32.31% (displayed 32%)",
+        "evidence": {
+          "NPL": {
+            "name": "Nepal",
+            "value": 32.3122082502615,
+            "display": "32%",
+            "year": 2025,
+            "unit": "% of GDP",
+            "rank": 4
+          }
+        }
+      },
+      {
         "surface": "beat_3",
-        "text": "India is 4% and the USA is 0%.",
+        "text": "India and Mexico both sit at 4%, well below smaller, reliant nations.",
         "isos": [
           "IND",
-          "USA"
+          "MEX"
         ],
-        "support": "India IND value is 3.80963193396421 (displayed as 4%), United States USA value is 0.0303707868455006 (displayed as 0%)",
+        "support": "India value is 3.81% (displayed 4%), Mexico value is 3.55% (displayed 4%)",
         "evidence": {
           "IND": {
             "name": "India",
@@ -1505,6 +1514,69 @@
             "unit": "% of GDP",
             "rank": 63
           },
+          "MEX": {
+            "name": "Mexico",
+            "value": 3.55152940400712,
+            "display": "4%",
+            "year": 2025,
+            "unit": "% of GDP",
+            "rank": 68
+          }
+        }
+      },
+      {
+        "surface": "beat_4",
+        "text": "Other high nations include Lebanon at 33%, Honduras at 30%, El Salvador at 28%, and Nicaragua at 27%.",
+        "isos": [
+          "LBN",
+          "HND",
+          "SLV",
+          "NIC"
+        ],
+        "support": "Lebanon: 33.35% (33%), Honduras: 30.12% (30%), El Salvador: 27.51% (28%), Nicaragua: 26.63% (27%)",
+        "evidence": {
+          "LBN": {
+            "name": "Lebanon",
+            "value": 33.349773045666,
+            "display": "33%",
+            "year": 2023,
+            "unit": "% of GDP",
+            "rank": 3
+          },
+          "HND": {
+            "name": "Honduras",
+            "value": 30.118530958428,
+            "display": "30%",
+            "year": 2025,
+            "unit": "% of GDP",
+            "rank": 5
+          },
+          "SLV": {
+            "name": "El Salvador",
+            "value": 27.5112692575543,
+            "display": "28%",
+            "year": 2025,
+            "unit": "% of GDP",
+            "rank": 6
+          },
+          "NIC": {
+            "name": "Nicaragua",
+            "value": 26.632397170907,
+            "display": "27%",
+            "year": 2024,
+            "unit": "% of GDP",
+            "rank": 7
+          }
+        }
+      },
+      {
+        "surface": "beat_5",
+        "text": "In the USA, it's 0%. Major economic giants rely far less on incoming money.",
+        "isos": [
+          "USA"
+        ],
+        "support": "United States value is 0.0303% (displayed 0%)",
+        "evidence": {
           "USA": {
             "name": "United States",
             "value": 0.0303707868455006,
@@ -1516,33 +1588,26 @@
         }
       },
       {
-        "surface": "beat_4",
-        "text": "Personal remittances comprise personal transfers and compensation of employees, counting cash and in kind transfers plus income of short-term and border workers.",
+        "surface": "beat_6",
+        "text": "Where does your country land?",
         "isos": [],
-        "support": "Definition: Personal remittances comprise personal transfers and compensation of employees. Personal transfers consist of all current transfers in cash or in kind... Compensation of employees refers to the income of border, seasonal, and other short-term workers",
+        "support": "Card closing question",
         "evidence": {}
       },
       {
-        "surface": "beat_5",
-        "text": "So where does your country rank on the map?",
+        "surface": "card_6",
+        "text": "Remittances Received, % of GDP | World Bank",
         "isos": [],
-        "support": "Ordinary prompt question",
-        "evidence": {}
-      },
-      {
-        "surface": "card_5",
-        "text": "Where is your country?",
-        "isos": [],
-        "support": "Card title matches visual plan",
+        "support": "World Bank indicator source reference",
         "evidence": {}
       },
       {
         "surface": "title",
-        "text": "Remittances reach 58% of GDP in Tajikistan",
+        "text": "Money Sent Home Equals 58% of GDP in Tajikistan",
         "isos": [
           "TJK"
         ],
-        "support": "Tajikistan value is 57.66%, rounded to 58%",
+        "support": "Tajikistan value is 57.66% which rounds to 58%",
         "method": "complete-surface-check",
         "evidence": {
           "TJK": {
@@ -1557,38 +1622,28 @@
       },
       {
         "surface": "hook",
-        "text": "HIGHEST REMITTANCES",
-        "isos": [
-          "TJK"
-        ],
-        "support": "Tajikistan is rank 1",
+        "text": "REMITTANCE SHARE OF GDP",
+        "isos": [],
+        "support": "Accurately reflects the dataset indicator subject",
         "method": "complete-surface-check",
-        "evidence": {
-          "TJK": {
-            "name": "Tajikistan",
-            "value": 57.6648462573476,
-            "display": "58%",
-            "year": 2025,
-            "unit": "% of GDP",
-            "rank": 1
-          }
-        }
+        "evidence": {}
       },
       {
         "surface": "description",
-        "text": "Where personal remittances received are large relative to GDP, mapped across 173 countries and territories.",
+        "text": "Comparing personal remittances received as a percentage of GDP across the world using World Bank data.",
         "isos": [],
-        "support": "Indicator counts 173 mapped countries and territories",
+        "support": "Matches indicator and source provided",
         "method": "complete-surface-check",
         "evidence": {}
       },
       {
         "surface": "beat_0",
-        "text": "In Tajikistan, personal remittances received reach 58% of gross domestic product.",
+        "text": "In Tajikistan, money sent home equals 58% of GDP. In Canada, it's 0%.",
         "isos": [
-          "TJK"
+          "TJK",
+          "CAN"
         ],
-        "support": "Tajikistan remittances received is 57.66% of GDP",
+        "support": "Tajikistan is 58% and Canada is 0% in the dataset",
         "method": "complete-surface-check",
         "evidence": {
           "TJK": {
@@ -1598,24 +1653,24 @@
             "year": 2025,
             "unit": "% of GDP",
             "rank": 1
+          },
+          "CAN": {
+            "name": "Canada",
+            "value": 0.0359503385795271,
+            "display": "0%",
+            "year": 2025,
+            "unit": "% of GDP",
+            "rank": 166
           }
         }
       },
       {
         "surface": "beat_1",
-        "text": "The map uses dark blue for the lowest values, moving through grey-gold to bright yellow for the highest across 173 countries and territories.",
-        "isos": [],
-        "support": "Standard map color/loop description",
-        "method": "complete-surface-check",
-        "evidence": {}
-      },
-      {
-        "surface": "beat_2",
-        "text": "Tajikistan is the highest at 58%.",
+        "text": "Tajikistan is the world's highest. These personal transfers consist of cash sent to families back home.",
         "isos": [
           "TJK"
         ],
-        "support": "Tajikistan rank is 1 at 58%",
+        "support": "Tajikistan rank is 1, and text correctly quotes transfer definition",
         "method": "complete-surface-check",
         "evidence": {
           "TJK": {
@@ -1629,13 +1684,32 @@
         }
       },
       {
+        "surface": "beat_2",
+        "text": "Nepal sits at 32%, far above the global median of 2%.",
+        "isos": [
+          "NPL"
+        ],
+        "support": "Nepal is at 32.31% (displayed 32%)",
+        "method": "complete-surface-check",
+        "evidence": {
+          "NPL": {
+            "name": "Nepal",
+            "value": 32.3122082502615,
+            "display": "32%",
+            "year": 2025,
+            "unit": "% of GDP",
+            "rank": 4
+          }
+        }
+      },
+      {
         "surface": "beat_3",
-        "text": "India is 4% and the USA is 0%.",
+        "text": "India and Mexico both sit at 4%, well below smaller, reliant nations.",
         "isos": [
           "IND",
-          "USA"
+          "MEX"
         ],
-        "support": "India is 4% (3.81%) and USA is 0% (0.03%)",
+        "support": "India is 3.81% and Mexico is 3.55%, both rounding to 4%",
         "method": "complete-surface-check",
         "evidence": {
           "IND": {
@@ -1646,6 +1720,71 @@
             "unit": "% of GDP",
             "rank": 63
           },
+          "MEX": {
+            "name": "Mexico",
+            "value": 3.55152940400712,
+            "display": "4%",
+            "year": 2025,
+            "unit": "% of GDP",
+            "rank": 68
+          }
+        }
+      },
+      {
+        "surface": "beat_4",
+        "text": "Other high nations include Lebanon at 33%, Honduras at 30%, El Salvador at 28%, and Nicaragua at 27%.",
+        "isos": [
+          "LBN",
+          "HND",
+          "SLV",
+          "NIC"
+        ],
+        "support": "Values for Lebanon, Honduras, El Salvador, and Nicaragua are correctly cited",
+        "method": "complete-surface-check",
+        "evidence": {
+          "LBN": {
+            "name": "Lebanon",
+            "value": 33.349773045666,
+            "display": "33%",
+            "year": 2023,
+            "unit": "% of GDP",
+            "rank": 3
+          },
+          "HND": {
+            "name": "Honduras",
+            "value": 30.118530958428,
+            "display": "30%",
+            "year": 2025,
+            "unit": "% of GDP",
+            "rank": 5
+          },
+          "SLV": {
+            "name": "El Salvador",
+            "value": 27.5112692575543,
+            "display": "28%",
+            "year": 2025,
+            "unit": "% of GDP",
+            "rank": 6
+          },
+          "NIC": {
+            "name": "Nicaragua",
+            "value": 26.632397170907,
+            "display": "27%",
+            "year": 2024,
+            "unit": "% of GDP",
+            "rank": 7
+          }
+        }
+      },
+      {
+        "surface": "beat_5",
+        "text": "In the USA, it's 0%. Major economic giants rely far less on incoming money.",
+        "isos": [
+          "USA"
+        ],
+        "support": "United States value is 0.03%, displayed as 0%",
+        "method": "complete-surface-check",
+        "evidence": {
           "USA": {
             "name": "United States",
             "value": 0.0303707868455006,
@@ -1657,29 +1796,21 @@
         }
       },
       {
-        "surface": "beat_4",
-        "text": "Personal remittances comprise personal transfers and compensation of employees, counting cash and in kind transfers plus income of short-term and border workers.",
+        "surface": "beat_6",
+        "text": "Where does your country land?",
         "isos": [],
-        "support": "Directly matches indicator definition text",
+        "support": "Standard call-to-action card question",
         "method": "complete-surface-check",
         "evidence": {}
       },
       {
-        "surface": "beat_5",
-        "text": "So where does your country rank on the map?",
-        "isos": [],
-        "support": "Closing question matches card",
-        "method": "complete-surface-check",
-        "evidence": {}
-      },
-      {
-        "surface": "card_5",
+        "surface": "card_6",
         "text": [
-          "Where is your country?",
-          "Remittances received, % of GDP, World Bank"
+          "Where does your country land?",
+          "Remittances Received, % of GDP | World Bank"
         ],
         "isos": [],
-        "support": "Matches visual plan card strings",
+        "support": "Matches indicator name and source organization",
         "method": "complete-surface-check",
         "evidence": {}
       }
@@ -1687,69 +1818,82 @@
     "surface_checks": {
       "title": {
         "supported": true,
-        "reason": "Tajikistan value is 57.66%, rounded to 58%",
+        "reason": "Tajikistan value is 57.66% which rounds to 58%",
         "isos": [
           "TJK"
         ]
       },
       "hook": {
         "supported": true,
-        "reason": "Tajikistan is rank 1",
-        "isos": [
-          "TJK"
-        ]
+        "reason": "Accurately reflects the dataset indicator subject",
+        "isos": []
       },
       "description": {
         "supported": true,
-        "reason": "Indicator counts 173 mapped countries and territories",
+        "reason": "Matches indicator and source provided",
         "isos": []
       },
       "beat_0": {
         "supported": true,
-        "reason": "Tajikistan remittances received is 57.66% of GDP",
+        "reason": "Tajikistan is 58% and Canada is 0% in the dataset",
         "isos": [
-          "TJK"
+          "TJK",
+          "CAN"
         ]
       },
       "beat_1": {
         "supported": true,
-        "reason": "Standard map color/loop description",
-        "isos": []
-      },
-      "beat_2": {
-        "supported": true,
-        "reason": "Tajikistan rank is 1 at 58%",
+        "reason": "Tajikistan rank is 1, and text correctly quotes transfer definition",
         "isos": [
           "TJK"
         ]
       },
+      "beat_2": {
+        "supported": true,
+        "reason": "Nepal is at 32.31% (displayed 32%)",
+        "isos": [
+          "NPL"
+        ]
+      },
       "beat_3": {
         "supported": true,
-        "reason": "India is 4% (3.81%) and USA is 0% (0.03%)",
+        "reason": "India is 3.81% and Mexico is 3.55%, both rounding to 4%",
         "isos": [
           "IND",
-          "USA"
+          "MEX"
         ]
       },
       "beat_4": {
         "supported": true,
-        "reason": "Directly matches indicator definition text",
-        "isos": []
+        "reason": "Values for Lebanon, Honduras, El Salvador, and Nicaragua are correctly cited",
+        "isos": [
+          "LBN",
+          "HND",
+          "SLV",
+          "NIC"
+        ]
       },
       "beat_5": {
         "supported": true,
-        "reason": "Closing question matches card",
+        "reason": "United States value is 0.03%, displayed as 0%",
+        "isos": [
+          "USA"
+        ]
+      },
+      "beat_6": {
+        "supported": true,
+        "reason": "Standard call-to-action card question",
         "isos": []
       },
-      "card_5": {
+      "card_6": {
         "supported": true,
-        "reason": "Matches visual plan card strings",
+        "reason": "Matches indicator name and source organization",
         "isos": []
       }
     },
     "warnings": []
   },
-  "script_sha256": "a139d4ba95f85e69ea39b47b75dcdf2a4523977080e625ab3ef91958892ce95e",
+  "script_sha256": "3ba34f3e5a4e2495a0b4591e5804e8a3ab3d2d37ee6c054cccb8e79001ab72cc",
   "data_sha256": "e3aa990afd7d685aadb5d39cd8779a2d120bace8b40a8922c0ca8cd3e3ffbb4e",
   "reviewer_model": "gemini-3.5-flash-lite"
 }

@@ -1,7 +1,7 @@
 id: atlas011
-title: Remittances reach 58% of GDP in Tajikistan
-hook_text: HIGHEST REMITTANCES
-description: Where personal remittances received are large relative to GDP, mapped across 173 countries and territories.
+title: Money Sent Home Equals 58% of GDP in Tajikistan
+hook_text: REMITTANCE SHARE OF GDP
+description: Comparing personal remittances received as a percentage of GDP across the world using World Bank data.
 hashtags:
 - '#maps'
 - '#geography'
@@ -31,27 +31,40 @@ scale:
   - 20%+
 value_format: '{v:.0f}%'
 beats:
-- text: In Tajikistan, personal remittances received reach 58% of gross domestic product.
+- text: In Tajikistan, money sent home equals 58% of GDP. In Canada, it's 0%.
   shot:
     callouts:
     - TJK
-- text: The map uses dark blue for the lowest values, moving through grey-gold to bright yellow for the highest
-    across 173 countries and territories.
-- text: Tajikistan is the highest at 58%.
+    - CAN
+- text: Tajikistan is the world's highest. These personal transfers consist of cash sent to families back home.
   shot:
     kind: country
     iso: TJK
-- text: India is 4% and the USA is 0%.
+- text: Nepal sits at 32%, far above the global median of 2%.
+  shot:
+    kind: country
+    iso: NPL
+- text: India and Mexico both sit at 4%, well below smaller, reliant nations.
   shot:
     kind: group
     isos:
     - IND
-    - USA
-- text: Personal remittances comprise personal transfers and compensation of employees, counting cash and in kind
-    transfers plus income of short-term and border workers.
-- text: So where does your country rank on the map?
+    - MEX
+- text: Other high nations include Lebanon at 33%, Honduras at 30%, El Salvador at 28%, and Nicaragua at 27%.
+  shot:
+    kind: rank
+    isos:
+    - LBN
+    - HND
+    - SLV
+    - NIC
+- text: In the USA, it's 0%. Major economic giants rely far less on incoming money.
+  shot:
+    kind: country
+    iso: USA
+- text: Where does your country land?
   shot:
     kind: card
     lines:
-    - Where is your country?
-    - Remittances received, % of GDP, World Bank
+    - Where does your country land?
+    - Remittances Received, % of GDP | World Bank

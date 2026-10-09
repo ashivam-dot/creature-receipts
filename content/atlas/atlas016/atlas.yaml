@@ -1,0 +1,64 @@
+id: atlas016
+title: How Many Calories Each Country Has On Its Plate
+hook_text: THE DAILY PLATE
+description: Calories available per person a day from the FAO food balance sheets.
+hashtags:
+- '#geography'
+- '#maps'
+- '#food'
+sources:
+- https://ourworldindata.org/grapher/daily-per-capita-caloric-supply
+dataset:
+  kind: owid
+  slug: daily-per-capita-caloric-supply
+  column: daily_calories
+  label: Calories available per person a day
+  unit: kcal a day
+  source: FAO via Our World in Data
+  min_year: 2020
+scale:
+  edges:
+  - 2200.0
+  - 2600.0
+  - 3000.0
+  - 3400.0
+  labels:
+  - <2,200
+  - 2,200-2,600
+  - 2,600-3,000
+  - 3,000-3,400
+  - 3,400+
+beats:
+- text: The US has 3,947 calories of food available daily. In Burundi, it is 1,698.
+  shot:
+    callouts:
+    - USA
+    - BDI
+- text: The US is the world's highest at retail level, with food wasted at home not subtracted.
+  shot:
+    kind: country
+    iso: USA
+- text: Burundi is the world's lowest at 1,698 calories available per person daily.
+  shot:
+    kind: country
+    iso: BDI
+- text: The US has 2.3 times the food Burundi has.
+  shot:
+    kind: group
+    isos:
+    - USA
+    - BDI
+- text: India has 2,668 calories available per person daily.
+  shot:
+    kind: country
+    iso: IND
+- text: China hits 3,527.
+  shot:
+    kind: country
+    iso: CHN
+- text: Where does your country land?
+  shot:
+    kind: card
+    lines:
+    - Where does your country land?
+    - FAO via Our World in Data

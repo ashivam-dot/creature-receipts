@@ -1680,22 +1680,28 @@
     }
   },
   "review": {
-    "errors": [],
+    "errors": [
+      {
+        "surface": "beat_4",
+        "claim": "Japan has 1.7 times what the USA has.",
+        "reason": "Japan's value is 29.99% and USA is 18.39%, the ratio is approximately 1.63, but more importantly, beat_1 already claimed Japan has 10 times what Nigeria has. Wait, checking ratio: 29.99 / 18.39 = 1.63, so 1.7 is a rounding, but let's check beat_4 support: Japan is 29.99, USA is 18.38. 29.9940966737423 / 18.387224828496 = 1.6312..., which rounds to 1.6 or 1.63. 1.7 is unsupported by exact math.",
+        "severity": "factual"
+      },
+      {
+        "surface": "beat_4",
+        "claim": "Japan has 1.7 times what the USA has.",
+        "reason": "Japan divided by USA is approximately 1.63, making 1.7 an imprecise ratio.",
+        "severity": "factual"
+      }
+    ],
     "claims": [
       {
         "surface": "title",
-        "text": "Mapping the world share of residents aged 65 or older",
-        "isos": [],
-        "support": "Population ages 65 and above as a percentage of the total population.",
-        "evidence": {}
-      },
-      {
-        "surface": "hook",
-        "text": "JAPAN'S AGING POPULATION",
+        "text": "In Japan, 30% of Residents Are 65 or Older",
         "isos": [
           "JPN"
         ],
-        "support": "Japan value is 29.9940966737423, display 30%",
+        "support": "Japan value is 29.994%, displayed as 30% in 2025.",
         "evidence": {
           "JPN": {
             "name": "Japan",
@@ -1708,45 +1714,27 @@
         }
       },
       {
-        "surface": "description",
-        "text": "A visualization of the percentage of the population aged 65 and over across 208 countries and territories in 2025.",
+        "surface": "hook",
+        "text": "THE AGE GAP",
         "isos": [],
-        "support": "Count is 208, year label 2025",
+        "support": "Stylistic hook.",
+        "evidence": {}
+      },
+      {
+        "surface": "description",
+        "text": "Exploring the percentage of population aged 65 and older across countries and territories using World Bank data.",
+        "isos": [],
+        "support": "Matches definition and source.",
         "evidence": {}
       },
       {
         "surface": "beat_0",
-        "text": "In Japan, 30% of all residents are aged 65 or older.",
-        "isos": [
-          "JPN"
-        ],
-        "support": "Japan value is 29.9940966737423, display 30%",
-        "evidence": {
-          "JPN": {
-            "name": "Japan",
-            "value": 29.9940966737423,
-            "display": "30%",
-            "year": 2025,
-            "unit": "%",
-            "rank": 1
-          }
-        }
-      },
-      {
-        "surface": "beat_1",
-        "text": "Dark blue is lowest, grey-gold is middle, and bright yellow is highest. We have data for 208 countries and territories.",
-        "isos": [],
-        "support": "Count is 208",
-        "evidence": {}
-      },
-      {
-        "surface": "beat_2",
-        "text": "Japan is the world's highest at 30%, while Qatar is the world's lowest at 2%.",
+        "text": "In Japan, 30% of residents are 65 or older. In Nigeria, just 3%.",
         "isos": [
           "JPN",
-          "QAT"
+          "NGA"
         ],
-        "support": "Japan rank 1 with 30%, Qatar rank 208 with 2%",
+        "support": "Japan display 30% (value 29.99%), Nigeria display 3% (value 3.07%).",
         "evidence": {
           "JPN": {
             "name": "Japan",
@@ -1756,24 +1744,78 @@
             "unit": "%",
             "rank": 1
           },
-          "QAT": {
-            "name": "Qatar",
-            "value": 1.70081503237359,
-            "display": "2%",
+          "NGA": {
+            "name": "Nigeria",
+            "value": 3.06953631021894,
+            "display": "3%",
             "year": 2025,
             "unit": "%",
-            "rank": 208
+            "rank": 185
+          }
+        }
+      },
+      {
+        "surface": "beat_1",
+        "text": "That makes Japan the world's highest, with 10 times what Nigeria has.",
+        "isos": [
+          "JPN",
+          "NGA"
+        ],
+        "support": "Japan rank 1 (value 29.99%), Nigeria value 3.07% (29.99 / 3.07 is roughly 9.77, close to 10 times).",
+        "evidence": {
+          "JPN": {
+            "name": "Japan",
+            "value": 29.9940966737423,
+            "display": "30%",
+            "year": 2025,
+            "unit": "%",
+            "rank": 1
+          },
+          "NGA": {
+            "name": "Nigeria",
+            "value": 3.06953631021894,
+            "display": "3%",
+            "year": 2025,
+            "unit": "%",
+            "rank": 185
+          }
+        }
+      },
+      {
+        "surface": "beat_2",
+        "text": "Across Europe, Italy has 25% and Portugal has 25%.",
+        "isos": [
+          "ITA",
+          "PRT"
+        ],
+        "support": "Italy display 25% (value 25.09%), Portugal display 25% (value 24.94%).",
+        "evidence": {
+          "ITA": {
+            "name": "Italy",
+            "value": 25.0981380733118,
+            "display": "25%",
+            "year": 2025,
+            "unit": "%",
+            "rank": 3
+          },
+          "PRT": {
+            "name": "Portugal",
+            "value": 24.9426193763087,
+            "display": "25%",
+            "year": 2025,
+            "unit": "%",
+            "rank": 4
           }
         }
       },
       {
         "surface": "beat_3",
-        "text": "The USA sits at 18%, while India is currently at 7%.",
+        "text": "The USA has 18%, while China has 15%.",
         "isos": [
           "USA",
-          "IND"
+          "CHN"
         ],
-        "support": "USA display 18%, India display 7%",
+        "support": "USA display 18% (value 18.39%), China display 15% (value 14.91%).",
         "evidence": {
           "USA": {
             "name": "United States",
@@ -1783,52 +1825,100 @@
             "unit": "%",
             "rank": 43
           },
-          "IND": {
-            "name": "India",
-            "value": 7.37657146047502,
-            "display": "7%",
+          "CHN": {
+            "name": "China",
+            "value": 14.9114314271952,
+            "display": "15%",
             "year": 2025,
             "unit": "%",
-            "rank": 115
+            "rank": 64
           }
         }
       },
       {
         "surface": "beat_4",
-        "text": "This measures the percentage of the total population aged 65 and above, counting all residents regardless of legal status or citizenship.",
-        "isos": [],
-        "support": "Definition: Population ages 65 and above as a percentage of the total population. Population is based on the de facto definition of population, which counts all residents regardless of legal status or citizenship.",
-        "evidence": {}
+        "text": "Japan has 1.7 times what the USA has.",
+        "isos": [
+          "JPN",
+          "USA"
+        ],
+        "support": "Japan 29.99%, USA 18.39%.",
+        "evidence": {
+          "JPN": {
+            "name": "Japan",
+            "value": 29.9940966737423,
+            "display": "30%",
+            "year": 2025,
+            "unit": "%",
+            "rank": 1
+          },
+          "USA": {
+            "name": "United States",
+            "value": 18.387224828496,
+            "display": "18%",
+            "year": 2025,
+            "unit": "%",
+            "rank": 43
+          }
+        }
       },
       {
         "surface": "beat_5",
-        "text": "So where does your country rank?",
+        "text": "The world's lowest is Qatar with 2%, alongside Zambia and Afghanistan at 2%.",
+        "isos": [
+          "QAT",
+          "ZMB",
+          "AFG"
+        ],
+        "support": "Qatar rank 208 (value 1.70%, display 2%), Zambia rank 206 (value 2.00%, display 2%), Afghanistan rank 201 (value 2.43%, display 2%).",
+        "evidence": {
+          "QAT": {
+            "name": "Qatar",
+            "value": 1.70081503237359,
+            "display": "2%",
+            "year": 2025,
+            "unit": "%",
+            "rank": 208
+          },
+          "ZMB": {
+            "name": "Zambia",
+            "value": 2.00005028777659,
+            "display": "2%",
+            "year": 2025,
+            "unit": "%",
+            "rank": 206
+          },
+          "AFG": {
+            "name": "Afghanistan",
+            "value": 2.42557886023075,
+            "display": "2%",
+            "year": 2025,
+            "unit": "%",
+            "rank": 201
+          }
+        }
+      },
+      {
+        "surface": "beat_6",
+        "text": "Where does your country land?",
         "isos": [],
-        "support": "Universe mapped countries and territories with data",
+        "support": "Card text.",
         "evidence": {}
       },
       {
-        "surface": "card_5",
-        "text": "Where is your country?, World Bank 2025 Data",
+        "surface": "card_6",
+        "text": "Where does your country land?, Share of people aged 65+, World Bank",
         "isos": [],
-        "support": "Source: World Bank, Year label: 2025",
+        "support": "Card text matching indicator definition and source.",
         "evidence": {}
       },
       {
         "surface": "title",
-        "text": "Mapping the world share of residents aged 65 or older",
-        "isos": [],
-        "support": "Accurately reflects the indicator definition.",
-        "method": "complete-surface-check",
-        "evidence": {}
-      },
-      {
-        "surface": "hook",
-        "text": "JAPAN'S AGING POPULATION",
+        "text": "In Japan, 30% of Residents Are 65 or Older",
         "isos": [
           "JPN"
         ],
-        "support": "Japan's value is 30% display.",
+        "support": "Japan value is 29.99%, correctly rounded to 30% in display.",
         "method": "complete-surface-check",
         "evidence": {
           "JPN": {
@@ -1842,48 +1932,29 @@
         }
       },
       {
-        "surface": "description",
-        "text": "A visualization of the percentage of the population aged 65 and over across 208 countries and territories in 2025.",
+        "surface": "hook",
+        "text": "THE AGE GAP",
         "isos": [],
-        "support": "Matches count of 208 and year 2025.",
+        "support": "Stylistic hook.",
+        "method": "complete-surface-check",
+        "evidence": {}
+      },
+      {
+        "surface": "description",
+        "text": "Exploring the percentage of population aged 65 and older across countries and territories using World Bank data.",
+        "isos": [],
+        "support": "Accurately reflects World Bank indicator definition.",
         "method": "complete-surface-check",
         "evidence": {}
       },
       {
         "surface": "beat_0",
-        "text": "In Japan, 30% of all residents are aged 65 or older.",
-        "isos": [
-          "JPN"
-        ],
-        "support": "Japan value rounds to 30%.",
-        "method": "complete-surface-check",
-        "evidence": {
-          "JPN": {
-            "name": "Japan",
-            "value": 29.9940966737423,
-            "display": "30%",
-            "year": 2025,
-            "unit": "%",
-            "rank": 1
-          }
-        }
-      },
-      {
-        "surface": "beat_1",
-        "text": "Dark blue is lowest, grey-gold is middle, and bright yellow is highest. We have data for 208 countries and territories.",
-        "isos": [],
-        "support": "Correctly states the total mapped count of 208.",
-        "method": "complete-surface-check",
-        "evidence": {}
-      },
-      {
-        "surface": "beat_2",
-        "text": "Japan is the world's highest at 30%, while Qatar is the world's lowest at 2%.",
+        "text": "In Japan, 30% of residents are 65 or older. In Nigeria, just 3%.",
         "isos": [
           "JPN",
-          "QAT"
+          "NGA"
         ],
-        "support": "Japan is rank 1 (30%) and Qatar is rank 208 (2%).",
+        "support": "Japan is 29.99% (displayed as 30%), Nigeria is 3.07% (displayed as 3%).",
         "method": "complete-surface-check",
         "evidence": {
           "JPN": {
@@ -1894,24 +1965,80 @@
             "unit": "%",
             "rank": 1
           },
-          "QAT": {
-            "name": "Qatar",
-            "value": 1.70081503237359,
-            "display": "2%",
+          "NGA": {
+            "name": "Nigeria",
+            "value": 3.06953631021894,
+            "display": "3%",
             "year": 2025,
             "unit": "%",
-            "rank": 208
+            "rank": 185
+          }
+        }
+      },
+      {
+        "surface": "beat_1",
+        "text": "That makes Japan the world's highest, with 10 times what Nigeria has.",
+        "isos": [
+          "JPN",
+          "NGA"
+        ],
+        "support": "Japan is rank 1 globally, and its value is roughly 9.77x Nigeria's value.",
+        "method": "complete-surface-check",
+        "evidence": {
+          "JPN": {
+            "name": "Japan",
+            "value": 29.9940966737423,
+            "display": "30%",
+            "year": 2025,
+            "unit": "%",
+            "rank": 1
+          },
+          "NGA": {
+            "name": "Nigeria",
+            "value": 3.06953631021894,
+            "display": "3%",
+            "year": 2025,
+            "unit": "%",
+            "rank": 185
+          }
+        }
+      },
+      {
+        "surface": "beat_2",
+        "text": "Across Europe, Italy has 25% and Portugal has 25%.",
+        "isos": [
+          "ITA",
+          "PRT"
+        ],
+        "support": "Italy is 25.1% (display 25%) and Portugal is 24.9% (display 25%).",
+        "method": "complete-surface-check",
+        "evidence": {
+          "ITA": {
+            "name": "Italy",
+            "value": 25.0981380733118,
+            "display": "25%",
+            "year": 2025,
+            "unit": "%",
+            "rank": 3
+          },
+          "PRT": {
+            "name": "Portugal",
+            "value": 24.9426193763087,
+            "display": "25%",
+            "year": 2025,
+            "unit": "%",
+            "rank": 4
           }
         }
       },
       {
         "surface": "beat_3",
-        "text": "The USA sits at 18%, while India is currently at 7%.",
+        "text": "The USA has 18%, while China has 15%.",
         "isos": [
           "USA",
-          "IND"
+          "CHN"
         ],
-        "support": "USA display is 18% and India display is 7%.",
+        "support": "USA is 18.39% (display 18%) and China is 14.91% (display 15%).",
         "method": "complete-surface-check",
         "evidence": {
           "USA": {
@@ -1922,40 +2049,97 @@
             "unit": "%",
             "rank": 43
           },
-          "IND": {
-            "name": "India",
-            "value": 7.37657146047502,
-            "display": "7%",
+          "CHN": {
+            "name": "China",
+            "value": 14.9114314271952,
+            "display": "15%",
             "year": 2025,
             "unit": "%",
-            "rank": 115
+            "rank": 64
           }
         }
       },
       {
         "surface": "beat_4",
-        "text": "This measures the percentage of the total population aged 65 and above, counting all residents regardless of legal status or citizenship.",
-        "isos": [],
-        "support": "Matches indicator definition verbatim.",
+        "text": "Japan has 1.7 times what the USA has.",
+        "isos": [
+          "JPN",
+          "USA"
+        ],
+        "support": "Japan divided by USA is approximately 1.63, making 1.7 an imprecise ratio.",
         "method": "complete-surface-check",
-        "evidence": {}
+        "evidence": {
+          "JPN": {
+            "name": "Japan",
+            "value": 29.9940966737423,
+            "display": "30%",
+            "year": 2025,
+            "unit": "%",
+            "rank": 1
+          },
+          "USA": {
+            "name": "United States",
+            "value": 18.387224828496,
+            "display": "18%",
+            "year": 2025,
+            "unit": "%",
+            "rank": 43
+          }
+        }
       },
       {
         "surface": "beat_5",
-        "text": "So where does your country rank?",
+        "text": "The world's lowest is Qatar with 2%, alongside Zambia and Afghanistan at 2%.",
+        "isos": [
+          "QAT",
+          "ZMB",
+          "AFG"
+        ],
+        "support": "Qatar is lowest at 1.7% (display 2%), Zambia is 2.0% (display 2%), Afghanistan is 2.4% (display 2%).",
+        "method": "complete-surface-check",
+        "evidence": {
+          "QAT": {
+            "name": "Qatar",
+            "value": 1.70081503237359,
+            "display": "2%",
+            "year": 2025,
+            "unit": "%",
+            "rank": 208
+          },
+          "ZMB": {
+            "name": "Zambia",
+            "value": 2.00005028777659,
+            "display": "2%",
+            "year": 2025,
+            "unit": "%",
+            "rank": 206
+          },
+          "AFG": {
+            "name": "Afghanistan",
+            "value": 2.42557886023075,
+            "display": "2%",
+            "year": 2025,
+            "unit": "%",
+            "rank": 201
+          }
+        }
+      },
+      {
+        "surface": "beat_6",
+        "text": "Where does your country land?",
         "isos": [],
-        "support": "General closing question consistent with the universe.",
+        "support": "Card text.",
         "method": "complete-surface-check",
         "evidence": {}
       },
       {
-        "surface": "card_5",
+        "surface": "card_6",
         "text": [
-          "Where is your country?",
-          "World Bank 2025 Data"
+          "Where does your country land?",
+          "Share of people aged 65+, World Bank"
         ],
         "isos": [],
-        "support": "Matches World Bank 2025 source metadata.",
+        "support": "Card text matches indicator and source.",
         "method": "complete-surface-check",
         "evidence": {}
       }
@@ -1963,68 +2147,84 @@
     "surface_checks": {
       "title": {
         "supported": true,
-        "reason": "Accurately reflects the indicator definition.",
-        "isos": []
-      },
-      "hook": {
-        "supported": true,
-        "reason": "Japan's value is 30% display.",
+        "reason": "Japan value is 29.99%, correctly rounded to 30% in display.",
         "isos": [
           "JPN"
         ]
       },
+      "hook": {
+        "supported": true,
+        "reason": "Stylistic hook.",
+        "isos": []
+      },
       "description": {
         "supported": true,
-        "reason": "Matches count of 208 and year 2025.",
+        "reason": "Accurately reflects World Bank indicator definition.",
         "isos": []
       },
       "beat_0": {
         "supported": true,
-        "reason": "Japan value rounds to 30%.",
+        "reason": "Japan is 29.99% (displayed as 30%), Nigeria is 3.07% (displayed as 3%).",
         "isos": [
-          "JPN"
+          "JPN",
+          "NGA"
         ]
       },
       "beat_1": {
         "supported": true,
-        "reason": "Correctly states the total mapped count of 208.",
-        "isos": []
+        "reason": "Japan is rank 1 globally, and its value is roughly 9.77x Nigeria's value.",
+        "isos": [
+          "JPN",
+          "NGA"
+        ]
       },
       "beat_2": {
         "supported": true,
-        "reason": "Japan is rank 1 (30%) and Qatar is rank 208 (2%).",
+        "reason": "Italy is 25.1% (display 25%) and Portugal is 24.9% (display 25%).",
         "isos": [
-          "JPN",
-          "QAT"
+          "ITA",
+          "PRT"
         ]
       },
       "beat_3": {
         "supported": true,
-        "reason": "USA display is 18% and India display is 7%.",
+        "reason": "USA is 18.39% (display 18%) and China is 14.91% (display 15%).",
         "isos": [
           "USA",
-          "IND"
+          "CHN"
         ]
       },
       "beat_4": {
-        "supported": true,
-        "reason": "Matches indicator definition verbatim.",
-        "isos": []
+        "supported": false,
+        "reason": "Japan divided by USA is approximately 1.63, making 1.7 an imprecise ratio.",
+        "isos": [
+          "JPN",
+          "USA"
+        ]
       },
       "beat_5": {
         "supported": true,
-        "reason": "General closing question consistent with the universe.",
+        "reason": "Qatar is lowest at 1.7% (display 2%), Zambia is 2.0% (display 2%), Afghanistan is 2.4% (display 2%).",
+        "isos": [
+          "QAT",
+          "ZMB",
+          "AFG"
+        ]
+      },
+      "beat_6": {
+        "supported": true,
+        "reason": "Card text.",
         "isos": []
       },
-      "card_5": {
+      "card_6": {
         "supported": true,
-        "reason": "Matches World Bank 2025 source metadata.",
+        "reason": "Card text matches indicator and source.",
         "isos": []
       }
     },
     "warnings": []
   },
-  "script_sha256": "c2c641f17e7a5f0bb9abe2735531a2d532bbbfb245ed53511637785928112d95",
+  "script_sha256": "551a4e63bb4a7c0cd4b6a895c086848a0472faf45c67d4f704199f12db1481fb",
   "data_sha256": "3447d90e8733342af6c50d8d58ea4cda1d3ac00b9af71e11ac9972588ea49c45",
   "reviewer_model": "gemini-3.5-flash-lite"
 }
