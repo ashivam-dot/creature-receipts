@@ -15,6 +15,8 @@ canvas { position: absolute; left: 0; top: 0; }
 .pin .value { font-weight: 900; font-size: 72px; color: #ffd166; line-height: 1.0; }
 .pin .stem { position: absolute; left: 50%; bottom: -60px; width: 3px; height: 58px; margin-left: -1.5px;
   background: linear-gradient(#fff, rgba(255, 255, 255, 0)); }
+.pin.below { transform: translate(-50%, 60px); }
+.pin.below .stem { bottom: auto; top: -60px; background: linear-gradient(rgba(255, 255, 255, 0), #fff); }
 </style>
 <script type="importmap">{ "imports": { "three": "./vendor/three.module.js" } }</script>
 </head>

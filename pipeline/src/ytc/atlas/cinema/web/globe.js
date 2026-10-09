@@ -246,8 +246,11 @@ window.renderAt = (t) => {
       // The box stays inside the frame; only its stem leans to the country's point.
       const x = (p.x * 0.5 + 0.5) * W, half = e.offsetWidth / 2 + 28;
       const cx = Math.min(W - half, Math.max(half, x));
+      const y = (-p.y * 0.5 + 0.5) * H;
+      // The film draws the dataset chip across the top ~200px; a pin that would reach it hangs below its point.
+      e.classList.toggle('below', y - 60 - e.offsetHeight < 0.105 * H);
       e.style.left = `${cx}px`;
-      e.style.top = `${(-p.y * 0.5 + 0.5) * H}px`;
+      e.style.top = `${y}px`;
       e.lastChild.style.left = `calc(50% + ${x - cx}px)`;
       const at = s.pin_at ?? F;
       const inside = smooth(30, 110, Math.min(x, W - x)) * smooth(0.12, 0.25, k.n.dot(camDir));
