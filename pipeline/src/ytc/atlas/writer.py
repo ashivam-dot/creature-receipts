@@ -23,6 +23,9 @@ WORDS = (60, 110)
 SPOKEN_MAX = 118
 BEATS = (6, 9)
 TRIES = 6
+# Bump when the writing rules change enough that scripts written under the old ones must not be re-rendered, and
+# bump receipt.FORMAT with it: the publisher only sees the format.
+STYLE = "story-v2"
 MIN_COUNTRIES = 100
 # Places with data that the map can't draw (tiny islands) are left out of what the writer may point at: the main
 # landmass must span this much of the projected map (about 5 pixels across on the world view).

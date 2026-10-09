@@ -124,12 +124,12 @@ def make(topic: dict, episode_id: str) -> tuple[AtlasEpisode, Path, Dataset, Pat
                      "policy": "model memory is advisory; unsupported suspicions cannot overrule official data"})
         ds.save(data_path)
     spec_path = folder / "atlas.yaml"
-    if spec_path.exists():
+    if spec_path.exists() and current_script(folder):
         ep = AtlasEpisode.load(spec_path)
     else:
         ep = writer.write({**topic, "definition_text": ds.definition or writer.definition(topic["dataset"])}, ds, episode_id,
                           series=topic.get("series", ""))
-        ep.save(spec_path)
+        _save_script(ep, folder)
     for media_attempt in range(2):
         # Reused and speech-repaired scripts must pass the full factual gate too.
         for attempt in range(3):
@@ -146,7 +146,7 @@ def make(topic: dict, episode_id: str) -> tuple[AtlasEpisode, Path, Dataset, Pat
                                + rejected,
                                "definition_text": ds.definition or writer.definition(topic["dataset"])}
                 ep = writer.write(fixed_topic, ds, episode_id, series=topic.get("series", ""))
-                ep.save(spec_path)
+                _save_script(ep, folder)
         video = film.render(ep, folder, places_cache())
         try:
             quality.media(ep, folder, video)
@@ -163,9 +163,21 @@ def make(topic: dict, episode_id: str) -> tuple[AtlasEpisode, Path, Dataset, Pat
                 "do not invent phonetic spellings or change units, years or factual meaning.",
                 "definition_text": ds.definition or writer.definition(topic["dataset"])}
             ep = writer.write(fixed_topic, ds, episode_id, series=topic.get("series", ""))
-            ep.save(spec_path)
+            _save_script(ep, folder)
             continue
         return ep, folder, ds, video
+
+
+def current_script(folder: Path) -> bool:
+    try:
+        return json.loads((folder / "script.json").read_text(encoding="utf-8")).get("writer") == writer.STYLE
+    except (OSError, ValueError, AttributeError):
+        return False
+
+
+def _save_script(ep: AtlasEpisode, folder: Path) -> None:
+    ep.save(folder / "atlas.yaml")
+    (folder / "script.json").write_text(json.dumps({"writer": writer.STYLE}) + "\n", encoding="utf-8")
 
 
 def _tidy(folder: Path) -> None:
@@ -206,6 +218,8 @@ def _accepted(folder: Path) -> bool:
     try:
         record = json.loads((folder / "ready.json").read_text())
         if record["id"] != folder.name or record["modal_volume"] != OUTBOX_VOLUME or record.get("format") != FORMAT:
+            return False
+        if not current_script(folder):
             return False
         if record.get("qa_sha256") != quality.digest(folder / "qa.json"):
             return False

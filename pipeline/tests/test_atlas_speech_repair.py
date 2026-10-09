@@ -38,6 +38,18 @@ def test_material_speech_failure_gets_one_rewrite_with_new_factual_and_media_che
     assert (folder / 'speech-repair.json').exists()
 
 
+def test_a_script_from_the_old_writer_is_rewritten_and_a_current_one_reused(tmp_path, monkeypatch):
+    topic, drafts, reviews, renders = setup(tmp_path, monkeypatch, 'unused')
+    monkeypatch.setattr(pipeline.quality, 'media', lambda *a: None)
+    folder = tmp_path / 'atlas001'; folder.mkdir()
+    AtlasEpisode.model_validate({'id': 'atlas001', 'title': 'Old', 'dataset': {'kind': 'worldbank', 'label': 'Metric',
+        'source': 'WB'}, 'beats': [{'text': 'Dark blue is lowest'}]}).save(folder / 'atlas.yaml')
+    ep, *_ = pipeline.make(topic, 'atlas001')
+    assert ep.beats[0].text == 'Checked draft 1' and pipeline.current_script(folder)
+    ep, *_ = pipeline.make(topic, 'atlas001')
+    assert len(drafts) == 1 and ep.beats[0].text == 'Checked draft 1'
+
+
 def test_decode_failure_is_not_treated_as_a_script_problem(tmp_path, monkeypatch):
     topic, drafts, reviews, renders = setup(tmp_path, monkeypatch, 'final MP4 failed full decode')
     with pytest.raises(ValueError, match='decode'): pipeline.make(topic, 'atlas001')

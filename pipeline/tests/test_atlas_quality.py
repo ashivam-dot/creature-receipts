@@ -146,6 +146,8 @@ def test_legacy_or_changed_receipts_do_not_count_toward_producer_reserve(tmp_pat
     assert pipeline.ready() == []
     marker['format'] = pipeline.FORMAT
     quality.save(folder / 'ready.json', marker)
+    assert pipeline.ready() == []
+    quality.save(folder / 'script.json', {'writer': pipeline.writer.STYLE})
     assert pipeline.ready() == [folder]
     (folder / 'atlas.yaml').write_text('changed')
     assert pipeline.ready() == []
