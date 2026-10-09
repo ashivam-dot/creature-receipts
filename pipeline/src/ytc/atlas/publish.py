@@ -31,14 +31,26 @@ TITLE_CHARS = 100
 MIN_LEAD = timedelta(minutes=30)
 # A slot with a post this close to it is taken.
 SLOT_GAP = timedelta(minutes=60)
-MAP_CREDIT = "Map: Natural Earth (public domain)."
+MAP_CREDIT = "Globe: NASA Blue Marble and Black Marble (public domain). Borders: Natural Earth (public domain)."
 
 
-def description(ep: AtlasEpisode, ds: Dataset) -> str:
+def photo_credits(folder: Path | None) -> str:
+    """Every photo the Short shows, with its author, licence and Commons page (credits.json, written by the
+    renderer); empty for a Short without photos."""
+    path = folder / "credits.json" if folder else None
+    if not path or not path.exists():
+        return ""
+    rows = json.loads(path.read_text(encoding="utf-8"))
+    lines = [f"- {r['place']}: {r['author']}, {r['license']}, {r['page']}" for r in rows]
+    return "Photos from Wikimedia Commons:\n" + "\n".join(lines) if lines else ""
+
+
+def description(ep: AtlasEpisode, ds: Dataset, folder: Path | None = None) -> str:
     sources = "\n".join(ep.sources) if ep.sources else ds.url
     blocks = [
         ep.description,
         f"Data: {ds.label}, {ds.source}, {ds.year_label} ({ds.license}).\n{sources}\n{MAP_CREDIT}",
+        photo_credits(folder),
         "Script written with AI and checked number by number against the data. Narrated with a synthetic voice.",
         f"Atlas episode: {ep.id}",
         " ".join(ep.hashtags[:3]),
@@ -62,7 +74,7 @@ def schedule(ep: AtlasEpisode, folder: Path, ds: Dataset, video: Path) -> dict:
     record_path = folder / "publish.json"
     if record_path.exists():
         return json.loads(record_path.read_text(encoding="utf-8"))
-    text = description(ep, ds)
+    text = description(ep, ds, folder)
     title = pub._youtube_text(ep.title)[:TITLE_CHARS]
     recent = pub.posts(since=datetime.now(pub.AUDIENCE_TZ) - timedelta(days=30))
     lead = f"Atlas episode: {ep.id}"
@@ -125,7 +137,7 @@ def replace_queued(ep: AtlasEpisode, folder: Path, ds: Dataset, video: Path, rec
     due = datetime.fromisoformat(before["dueAt"])
     if due != datetime.fromisoformat(record["due_at"]):
         raise RuntimeError("legacy post's scheduled slot changed")
-    title, text = pub._youtube_text(ep.title)[:TITLE_CHARS], description(ep, ds)
+    title, text = pub._youtube_text(ep.title)[:TITLE_CHARS], description(ep, ds, folder)
     sha = digest(video)
     public_id = f"atlasinnumbers/{ep.id}-qa-{sha[:12]}"
     existing_url = before.get("video") or ""

@@ -100,12 +100,58 @@ def entity_value_errors(text: str, ep: AtlasEpisode, ds: Dataset) -> list[str]:
             token = number.group().replace(",", "").rstrip(".")
             if re.search(r"(?:per|every|each|in|year|rank|#|top)\s*$", context):
                 continue
+            # "377 times" compares two countries; ratio_errors checks it.
+            if RATIO.match(clause[number.end():]):
+                continue
             displayed = writer._NUMBER.search(ep.value_text(ds.values[iso]))
             # Unit denominators such as "per 100" are not this country's measured value.
             expected = writer._forms(displayed.group()) if displayed else set()
             if token not in expected:
                 errors.append(f"{match.group()} value {token} does not match {ep.value_text(ds.values[iso])}")
             break
+    return errors
+
+
+RATIO = re.compile(r"\s*(?:times\b|x\b|×)", re.I)
+
+
+def ratio_errors(text: str, ep: AtlasEpisode, ds: Dataset, context: list[str] = ()) -> list[str]:
+    """Each "N times" must be the ratio of two countries' values as displayed: the two its sentence names, else the
+    ones its shot shows (`context`; a 3-word hook can't name both). The writer rounds as writer.ratio_text does,
+    so 5% slack covers rounding only."""
+    from .draw import short_name
+    from . import geo
+    world = geo.world()
+    aliases = {}
+    for iso, name in ds.names.items():
+        for alias in {name, short_name(name), *((world[iso].name, short_name(world[iso].name)) if iso in world else ())}:
+            if len(alias) >= 3:
+                aliases[alias.lower()] = iso
+    aliases.update({"united states": "USA", "usa": "USA", "uk": "GBR", "uae": "ARE"})
+    pattern = re.compile(r"\b(" + "|".join(re.escape(n) for n in sorted(aliases, key=len, reverse=True)) + r")\b", re.I)
+    errors = []
+    for sentence in re.split(r"(?<=[.!?])\s+", text):
+        isos = list(dict.fromkeys(aliases[m.group().lower()] for m in pattern.finditer(sentence)))
+        isos = [i for i in isos if i in ds.values]
+        if len(isos) < 2:
+            isos += [i for i in context if i in ds.values and i not in isos]
+        for m in writer._NUMBER.finditer(sentence):
+            if not RATIO.match(sentence[m.end():]):
+                continue
+            said = float(m.group().replace(",", "").rstrip("."))
+            if len(isos) < 2:
+                errors.append(f"'{m.group()} times' needs both countries it compares named in the same sentence")
+                continue
+            shown = []
+            for iso in isos[:2]:
+                d = writer._NUMBER.search(ep.value_text(ds.values[iso]))
+                shown.append(float(d.group().replace(",", "")) if d else 0.0)
+            true = sorted(abs(ds.values[i]) for i in isos[:2])
+            fits = [r for r in ((max(shown) / min(shown)) if min(shown) > 0 else None,
+                                (true[1] / true[0]) if true[0] > 0 else None) if r]
+            if not fits or all(abs(said - r) > 0.05 * r + 0.05 for r in fits):
+                errors.append(f"'{m.group()} times' is not the ratio of {isos[0]} and {isos[1]} "
+                              f"({ep.value_text(ds.values[isos[0]])} vs {ep.value_text(ds.values[isos[1]])})")
     return errors
 
 
@@ -131,6 +177,9 @@ def review(ep: AtlasEpisode, ds: Dataset, folder: Path) -> dict:
     for surface, text in surfaces.items():
         value = " ".join(text) if isinstance(text, list) else text
         deterministic.extend(f"{surface}: {error}" for error in entity_value_errors(value, ep, ds))
+        shot = ep.beats[int(surface[5:])].shot if surface.startswith("beat_") else ep.beats[0].shot
+        context = list(dict.fromkeys(([shot.iso] if shot.iso else []) + shot.isos + shot.callouts))
+        deterministic.extend(f"{surface}: {error}" for error in ratio_errors(value, ep, ds, context))
     if deterministic:
         raise ValueError("entity binding: " + "; ".join(deterministic))
     shots = {f"beat_{i}": b.shot.model_dump() for i, b in enumerate(ep.beats)}

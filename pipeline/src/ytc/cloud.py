@@ -79,6 +79,8 @@ def _image(*apt: str) -> modal.Image:
     return (
         (base.apt_install(*apt) if apt else base)
         .uv_sync(str(PIPELINE_ROOT))
+        # Headless Chromium for the Atlas globe (cinema/globe.py), rendered with its built-in software GL.
+        .run_commands("python -m playwright install --with-deps chromium")
         .env({"HF_HOME": "/cache/huggingface", "PYTHONPATH": str(REMOTE_PIPELINE / "src"), "YTC_ON_MODAL": "1"})
         .add_local_dir(PIPELINE_ROOT / "assets", str(REMOTE_PIPELINE / "assets"))
         .add_local_dir(PIPELINE_ROOT / "src", str(REMOTE_PIPELINE / "src"), ignore=["**/__pycache__"])
@@ -496,7 +498,7 @@ def atlas_preview(topic: dict, episode_id: str = "preview") -> tuple[str, bytes]
     return (folder / "atlas.yaml").read_text(encoding="utf-8"), video.read_bytes()
 
 
-@app.function(image=image, cpu=4.0, memory=6144, timeout=3600, secrets=[run_secret], volumes={"/cache": cache})
+@app.function(image=image, cpu=8.0, memory=8192, timeout=3600, secrets=[run_secret], volumes={"/cache": cache})
 def atlas_quality_preview(topic: dict, episode_id: str = "quality-preview", llm_first: str = "") -> dict:
     """Produce a fully checked private preview without changing the queue or production catalogue."""
     from .atlas import pipeline
@@ -557,7 +559,7 @@ def atlas_metrics_probe() -> dict:
         "status": r.get("status", {})} for r in rows]}
 
 
-@app.function(image=run_image, cpu=4.0, memory=6144, timeout=3600, schedule=modal.Cron(ATLAS_SCHEDULE),
+@app.function(image=run_image, cpu=8.0, memory=8192, timeout=3600, schedule=modal.Cron(ATLAS_SCHEDULE),
               secrets=[run_secret], volumes={"/cache": cache, "/outbox": outbox}, max_containers=1)
 def atlas_run(trigger: str = "schedule", args: list[str] | None = None) -> dict:
     """One Atlas run (`ytc atlas`) on a fresh clone: render Shorts and park them in the outbox for the publisher,

@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import csv
+import hashlib
 import io
 import json
 from dataclasses import dataclass, field
@@ -109,7 +110,6 @@ def worldbank(indicator: str, label: str, unit: str, source: str, min_year: int)
         iso, value = row["countryiso3code"], row["value"]
         if iso in names and value is not None and int(row["date"]) >= min_year:
             values[iso], years[iso] = float(value), int(row["date"])
-    import hashlib
     meta = get(f"{WB_API}/indicator/{indicator}", params={"format": "json"}, timeout=TIMEOUT).json()[1][0]
     return Dataset(label, unit, source, "CC BY 4.0", f"https://data.worldbank.org/indicator/{indicator}",
                    values, years, {k: names[k] for k in values}, _now(),
@@ -118,8 +118,10 @@ def worldbank(indicator: str, label: str, unit: str, source: str, min_year: int)
                    source_organization=meta.get("sourceOrganization", ""))
 
 
-def owid(slug: str, column: str, label: str, unit: str, source: str, min_year: int) -> Dataset:
-    """The latest value since `min_year` per country from an Our World in Data chart."""
+def owid(slug: str, column: str, label: str, unit: str, source: str, min_year: int, definition: str = "") -> Dataset:
+    """The latest observed value since `min_year` per country from an Our World in Data chart (rows dated after
+    this year are projections and are skipped)."""
+    this_year = datetime.now(timezone.utc).year
     url = f"{OWID_GRAPHER}/{slug}.csv"
     resp = get(url, params={"v": 1, "csvType": "full", "useColumnShortNames": "true"},
                         headers={"User-Agent": "atlas-in-numbers/1.0"}, timeout=TIMEOUT)
@@ -127,12 +129,12 @@ def owid(slug: str, column: str, label: str, unit: str, source: str, min_year: i
     values, years, names = {}, {}, {}
     for row in csv.DictReader(io.StringIO(resp.text)):
         code, year, value = row.get("code") or row.get("Code") or "", row.get("year") or row.get("Year"), row.get(column)
-        if len(code) != 3 or not value or int(year) < min_year:
+        if len(code) != 3 or not value or not min_year <= int(year) <= this_year:
             continue
         if code not in years or int(year) > years[code]:
             values[code], years[code], names[code] = float(value), int(year), row.get("entity") or row.get("Entity")
     return Dataset(label, unit, source, "CC BY 4.0", f"https://ourworldindata.org/grapher/{slug}",
-                   values, years, names, _now(),
+                   values, years, names, _now(), definition=definition, indicator=slug,
                    source_response_sha256=hashlib.sha256(resp.content).hexdigest(),
                    source_organization=source)
 
@@ -144,5 +146,5 @@ def fetch(spec: dict) -> Dataset:
     if kind == "worldbank":
         return worldbank(spec["indicator"], **common)
     if kind == "owid":
-        return owid(spec["slug"], spec["column"], **common)
+        return owid(spec["slug"], spec["column"], definition=spec.get("definition", ""), **common)
     raise ValueError(f"unknown dataset kind: {kind}")

@@ -147,10 +147,11 @@ def _run(args: argparse.Namespace) -> None:
         print(json.dumps(produce(args.topic, args.series, args.id, at=args.at), indent=2))
     elif args.command == "atlas":
         if args.render:
+            from .atlas.cinema.film import render as render_atlas
             from .atlas.episode import AtlasEpisode
-            from .atlas.render import render as render_atlas
+            from .atlas.pipeline import places_cache
 
-            print(render_atlas(AtlasEpisode.load(args.render), args.render.parent))
+            print(render_atlas(AtlasEpisode.load(args.render), args.render.parent, places_cache()))
         else:
             from .atlas.pipeline import RESERVE, run as run_atlas
 

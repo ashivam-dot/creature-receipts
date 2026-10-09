@@ -32,7 +32,42 @@ def test_negative_zero_and_minus_signs():
     assert writer._say(-0.01, "{v:.1f}%") == "0.0%"
     draft = {"title": "t", "beats": [{"text": "Red shows Moldova at -1.8%.", "shot": "world", "isos": ["MDA"]}]}
     found = " ".join(writer.problems(draft, set(), {"1.8": {"MDA"}}, {"MDA": -1.8}))
-    assert "no Red" in found and "minus sign" in found
+    assert "'Red' describes the map" in found and "minus sign" in found
+
+
+def test_no_filler_and_ratios_are_offered_and_bound_to_both_countries():
+    ds = Dataset(label="Density", unit="per km²", source="World Bank", license="CC BY 4.0", url="",
+                 values={"BGD": 1333.4, "AUS": 3.54, "IND": 488.0, "USA": 37.2, "JPN": 340.1, "NLD": 534.4},
+                 years={k: 2023 for k in ("BGD", "AUS", "IND", "USA", "JPN", "NLD")}, names={}, fetched="")
+    summary, allowed, owners = writer.facts(ds, {"kind": "bins"}, "{v:,.0f}")
+    # Australia shows as "4", far from 3.54, so no ratio against it is offered; India to the USA is.
+    assert "Australia's value" not in summary and "13 times" in summary
+    assert owners["13"] == {"IND", "USA"}
+    assert writer.number_problems("India has 13 times the USA's density.", allowed, owners, ["IND"]) == []
+    assert writer.number_problems("Japan has 13 times that.", allowed, owners, ["JPN"])
+    draft = {"title": "t", "beats": [{"text": "Bangladesh reaches 1,333 among these countries.", "shot": "world",
+                                      "isos": ["BGD"]}]}
+    found = " ".join(writer.problems(draft, allowed, owners, writer.visible(writer.drawable(ds))))
+    assert "filler" in found
+
+
+def test_quality_checks_every_ratio_against_the_data():
+    from ytc.atlas import quality
+    from ytc.atlas.episode import AtlasEpisode
+
+    ds = Dataset(label="Density", unit="per km²", source="World Bank", license="CC BY 4.0", url="",
+                 values={"BGD": 1333.4, "AUS": 3.54, "IND": 488.0, "USA": 37.2},
+                 years={k: 2023 for k in ("BGD", "AUS", "IND", "USA")},
+                 names={"BGD": "Bangladesh", "AUS": "Australia", "IND": "India", "USA": "United States"}, fetched="")
+    ep = AtlasEpisode.model_validate({"id": "atlas999", "title": "t", "value_format": "{v:,.0f}",
+                                      "dataset": {"kind": "worldbank", "label": "l", "source": "s"},
+                                      "beats": [{"text": "x"}]})
+    assert quality.ratio_errors("India has 13 times the density of the United States.", ep, ds) == []
+    assert quality.ratio_errors("Bangladesh has 377 times Australia's density.", ep, ds) == []
+    assert quality.ratio_errors("India has 20 times the density of the United States.", ep, ds)
+    assert quality.ratio_errors("That's 13 times more.", ep, ds)
+    assert quality.ratio_errors("13X THE PEOPLE", ep, ds, ["IND", "USA"]) == []
+    assert quality.entity_value_errors("India has 13 times the density of the United States.", ep, ds) == []
 
 
 def test_three_slots_a_day():

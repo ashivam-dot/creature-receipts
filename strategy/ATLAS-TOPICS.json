@@ -937,6 +937,180 @@
    "source_url": "https://data.worldbank.org/indicator/NY.GDP.PCAP.CD",
    "publisher_note": "Country official statistics, National Statistical Organizations and/or Central Banks;\nNational Accounts data files, Organisation for Economic Co-operation and Development (OECD);\nStaff estimates, Worl",
    "status": "open"
+  },
+  {
+   "id": "t031",
+   "topic": "The youngest and oldest countries on Earth",
+   "angle": "Half of Niger is younger than 16 while half of Japan is older than 49: the same planet, two different worlds.",
+   "family": "population",
+   "format": "map_reveal",
+   "priority": 3,
+   "dataset": {
+    "kind": "owid",
+    "slug": "median-age",
+    "column": "median_age__sex_all__age_all__variant_estimates",
+    "label": "Median age",
+    "unit": "years",
+    "source": "UN WPP via Our World in Data",
+    "min_year": 2020,
+    "definition": "Median age is the age that divides the population into two halves of equal size: half of the people are older than it and half are younger. UN World Population Prospects estimates."
+   },
+   "scale": {
+    "kind": "bins",
+    "edges": [
+     20,
+     25,
+     30,
+     35,
+     40
+    ],
+    "labels": [
+     "<20",
+     "20-25",
+     "25-30",
+     "30-35",
+     "35-40",
+     "40+"
+    ]
+   },
+   "value_format": "{v:.0f}",
+   "hashtags": [
+    "#geography",
+    "#maps",
+    "#population"
+   ],
+   "source_url": "https://ourworldindata.org/grapher/median-age",
+   "status": "open",
+   "added_by": "atlas-v2"
+  },
+  {
+   "id": "t032",
+   "topic": "How good people say their life is",
+   "angle": "Asked to rate their life from 0 to 10, people in Finland answer near 8; elsewhere the answer is under 4.",
+   "family": "people",
+   "format": "rank_ladder",
+   "priority": 3,
+   "dataset": {
+    "kind": "owid",
+    "slug": "happiness-cantril-ladder",
+    "column": "cantril_ladder_score",
+    "label": "Life rating, 0 to 10",
+    "unit": "out of 10",
+    "source": "World Happiness Report via Our World in Data",
+    "min_year": 2022,
+    "definition": "The national average answer to the Cantril ladder question in the Gallup World Poll: imagine a ladder with steps from 0 at the bottom (the worst possible life for you) to 10 at the top (the best possible life for you); on which step do you feel you stand now? Averaged over three years of surveys."
+   },
+   "scale": {
+    "kind": "bins",
+    "edges": [
+     4,
+     5,
+     6,
+     7
+    ],
+    "labels": [
+     "<4",
+     "4-5",
+     "5-6",
+     "6-7",
+     "7+"
+    ]
+   },
+   "value_format": "{v:.1f}",
+   "hashtags": [
+    "#geography",
+    "#maps",
+    "#happiness"
+   ],
+   "source_url": "https://ourworldindata.org/grapher/happiness-cantril-ladder",
+   "status": "open",
+   "added_by": "atlas-v2"
+  },
+  {
+   "id": "t033",
+   "topic": "How many calories each country has on its plate",
+   "angle": "The food available per person ranges from about 1,700 calories a day to nearly 4,000.",
+   "family": "food",
+   "format": "map_reveal",
+   "priority": 2,
+   "dataset": {
+    "kind": "owid",
+    "slug": "daily-per-capita-caloric-supply",
+    "column": "daily_calories",
+    "label": "Calories available per person a day",
+    "unit": "kcal a day",
+    "source": "FAO via Our World in Data",
+    "min_year": 2020,
+    "definition": "Food available for human consumption, in kilocalories per person per day, from the FAO food balance sheets. It is the food supply at the retail level, not what people actually eat: food wasted at home is not subtracted."
+   },
+   "scale": {
+    "kind": "bins",
+    "edges": [
+     2200,
+     2600,
+     3000,
+     3400
+    ],
+    "labels": [
+     "<2,200",
+     "2,200-2,600",
+     "2,600-3,000",
+     "3,000-3,400",
+     "3,400+"
+    ]
+   },
+   "value_format": "{v:,.0f}",
+   "hashtags": [
+    "#geography",
+    "#maps",
+    "#food"
+   ],
+   "source_url": "https://ourworldindata.org/grapher/daily-per-capita-caloric-supply",
+   "status": "open",
+   "added_by": "atlas-v2"
+  },
+  {
+   "id": "t034",
+   "topic": "Where the most meat is eaten",
+   "angle": "Some countries have over 100 kilograms of meat per person a year; others have less than 5.",
+   "family": "food",
+   "format": "rank_ladder",
+   "priority": 2,
+   "dataset": {
+    "kind": "owid",
+    "slug": "meat-supply-per-person",
+    "column": "meat__total__00002943__food_available_for_consumption__0645pc__kilograms_per_year_per_capita",
+    "label": "Meat available per person a year",
+    "unit": "kg a year",
+    "source": "FAO via Our World in Data",
+    "min_year": 2020,
+    "definition": "Meat of all kinds available for human consumption per person per year, in kilograms, from the FAO food balance sheets: the supply at the retail level, not adjusted for food wasted at home."
+   },
+   "scale": {
+    "kind": "bins",
+    "edges": [
+     10,
+     25,
+     50,
+     80
+    ],
+    "labels": [
+     "<10",
+     "10-25",
+     "25-50",
+     "50-80",
+     "80+"
+    ]
+   },
+   "value_format": "{v:.0f}",
+   "hashtags": [
+    "#geography",
+    "#maps",
+    "#food"
+   ],
+   "source_url": "https://ourworldindata.org/grapher/meat-supply-per-person",
+   "status": "open",
+   "added_by": "atlas-v2"
   }
  ]
 }

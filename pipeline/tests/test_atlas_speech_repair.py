@@ -18,10 +18,10 @@ def setup(tmp_path, monkeypatch, failure):
             'beats': [{'text': f'Checked draft {len(drafts)}'}]})
     monkeypatch.setattr(pipeline.writer, 'write', write)
     monkeypatch.setattr(pipeline.quality, 'review', lambda ep, *a: reviews.append(ep.beats[0].text))
-    def render(ep, folder):
+    def render(ep, folder, cache):
         renders.append(ep.beats[0].text)
         video = folder / 'short.mp4'; video.write_bytes(ep.beats[0].text.encode()); return video
-    monkeypatch.setattr(pipeline.render, 'render', render)
+    monkeypatch.setattr(pipeline.film, 'render', render)
     def media(ep, *a):
         if len(renders) == 1: raise ValueError(failure)
     monkeypatch.setattr(pipeline.quality, 'media', media)

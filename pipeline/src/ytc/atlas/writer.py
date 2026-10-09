@@ -25,30 +25,38 @@ MIN_COUNTRIES = 100
 # landmass must span this much of the projected map (about 5 pixels across on the world view).
 MIN_SIDE = 0.025
 
-PROMPT = """You write 30 to 45 second YouTube Shorts for "Atlas in Numbers": one world map, one dataset, and the
-surprise hidden in it. Every claim comes from the data below; the audience is curious adults worldwide.
+PROMPT = """You write 30 to 45 second YouTube Shorts for "Atlas in Numbers", a cinematic data channel. The picture
+is a photoreal 3D globe that flies to each country you name, then real photos of that country with its flag and
+value on screen; comparisons split the screen, rankings rise as a panel of flags. Your words carry the story: one
+dataset, one surprising contrast, told like a sharp documentary narrator. Every claim comes from the data below; the
+audience is curious adults worldwide.
 
 TOPIC: {topic}
 ANGLE: {angle}
 FORMAT: {format}
-DATASET: {label} ({unit}), {source}, {year}. {count} countries and territories have mapped data.
-{scale_note}
-OFFICIAL DEFINITION (the only allowed basis for any "why" or "what it measures" line):
+DATASET: {label} ({unit}), {source}, {year}. {count} countries and territories have data.
+OFFICIAL DEFINITION (the only allowed basis for any "what it measures" line):
 {definition}
 
 DATA SUMMARY (values already rounded the way you may say them):
 {summary}
 
 Write {beats_min}-{beats_max} beats, {words_min}-{words_max} words in total, as JSON.
-Rules:
-- Beat 1 is the hook over the finished world map: a concrete, surprising claim in at most 14 words, phrased so it's
-  true by the data. Use the exact metric (subscriptions are not phones; basic water is not safe water). No "Did you know", no "Most people think", no question as the first beat.
-- Beat 2 says what the colours mean and one headline count from the summary.
-- The middle beats tour 3 or 4 countries that make the point (biggest, smallest, a surprise, and India or the USA
-  when the data makes them interesting). Each tour beat names its country and says its value.
-- One beat explains WHY or what the number really measures, using only the official definition. If the definition
-  gives no reason, explain what is being counted instead. Never invent causes, history, or opinions.
-- The last beat is a short question to the viewer that loops back to the hook (e.g. "So where's your country?").
+How a great Atlas script works:
+- Beat 1 is the hook while the globe spins: a concrete contrast in at most 16 words that makes people stay, true by
+  the data, e.g. "Every square kilometre of Bangladesh holds 1,333 people. In Australia, it's 4." Use the exact
+  metric (subscriptions are not phones; basic water is not safe water). No "Did you know", no "Most people think",
+  no question as the first beat.
+- Then tell it as a story with a turn: the extreme, its opposite, a surprise (a famous country that isn't where
+  people expect, or India or the USA when the data makes them interesting), and a payoff. Each country beat names
+  its country and says its value, then makes the number felt: a contrast with another country, or a ratio from
+  COMPARISONS ("377 times", said exactly as listed, in a beat that names both countries).
+- Use one "group" beat to put 2 or 3 countries side by side (the screen splits between their photos).
+- Never describe the map's colours or legend, and never say "among these countries", "measures", "reaches" or "with
+  data": say the number plainly ("Japan: 340.", "Niger has 6.1.").
+- You may add one short line on what is counted, only from the official definition, if it makes the number clearer.
+  Never invent causes, history, or opinions.
+- The last beat is a short question to the viewer that loops back to the hook (e.g. "Where does your country land?").
 - Write every number as digits exactly as in the summary ("178", "3.2", "1.15 billion"). Never write numbers as
   words. Never round differently. Definition thresholds may quote the official definition exactly; never use
   a definition threshold as a country's measured value. A country's value goes only in
@@ -58,13 +66,14 @@ Rules:
 - These are latest available observations, not a time series. Never claim a trend over time: no "every year", "each year", "always", "more than
   ever", "for decades". "Shrinking by 1.8% a year" is fine; it states the rate.
 - The "why" line is plain English a 12-year-old follows; no jargon such as "exponential", "de facto", "per capita".
-- Plain spoken English, short sentences, no emojis, no hashtags in the beats, no politics or war.
-- Shots: "world" (whole map), "country" (iso), "group" (2-3 isos side by side), "rank" (3-6 isos shown as a bar
-  chart of their values; the best way to show a top or bottom list), or "card" for the last beat only. Use "rank"
-  for exactly one middle beat when the FORMAT is rank_ladder, and at most once otherwise. Use only ISO codes from
-  the summary.
+- Plain spoken English, short punchy sentences, "you" is fine, no emojis, no hashtags in the beats, no politics or war.
+- Shots: "world" (the spinning globe; list in isos the countries the beat names, up to 2), "country" (one iso: the
+  globe dives to it, then its photos), "group" (2-3 isos side by side), "rank" (3-6 isos shown as a panel of flags
+  and bars; the best way to show a top or bottom list, listed in the order you say them), or "card" for the last
+  beat only. Use "rank" for exactly one middle beat when the FORMAT is rank_ladder, and at most once otherwise.
+  Use only ISO codes from the summary.
 - opening_options: propose 3 distinct factual openings, strongest first for clarity and curiosity, each with text
-  (at most 14 words) and hook_text (2-5 words). Preserve the exact metric and universe. Never optimize by overclaiming.
+  (at most 16 words) and hook_text (2-5 words). Preserve the exact metric and universe. Never optimize by overclaiming.
 - title: at most 60 characters, a concrete claim with a number, no clickbait punctuation, no emoji.
 - hook_text: 2-5 words in capitals shown on screen over beat 1, adding to (not repeating) the spoken hook.
 - card_lines: 2 short lines for the end card: a 2-4 word question, then the dataset label.
@@ -167,13 +176,20 @@ def facts(ds: Dataset, ep_scale: dict, fmt: str) -> tuple[str, set[str], dict[st
         if k in shown:
             lines.append(f"{names[k]} is the {label} of all {len(vals)} with data, so 'the world's {label}' is true of it.")
         else:
-            lines.append(f"The true {label} is {names[k]}, too small to show. Never call a country on this map the "
-                         f"world's {label} or 'the fastest/most/least'; say 'among these countries' instead.")
+            lines.append(f"The true {label} is {names[k]}, too small to show. Never call another country the "
+                         f"world's {label} or 'the fastest/most/least'; say 'one of the {label}' or compare instead.")
     lines.append(f"Notable countries (rank among the {len(shown)}):")
-    for k in ("IND", "USA", "CHN", "GBR", "BRA", "NGA", "JPN", "DEU", "PAK", "IDN", "RUS", "AUS", "CAN", "MEX"):
+    for k in NOTABLE:
         if k in shown:
             rank = 1 + [x for x, _ in ranked].index(k)
             add(f"  {k} {names[k]}: {_say(vals[k], fmt)} (rank {rank}; year {ds.years[k]})", _say(vals[k], fmt), rank, iso=k)
+    pairs = comparisons(shown, ranked, fmt)
+    if pairs:
+        lines.append("COMPARISONS (already computed; a ratio may be said only as written, in a beat naming both):")
+        for a, b, text in pairs:
+            lines.append(f"  {names[a]} has {text} times {names[b]}'s value")
+            for f in _forms(text):
+                owners.setdefault(f, set()).update({a, b})
     for n in range(1, 13):
         allowed.update(_forms(n))
     allowed.update({"100", "hundred", str(len(shown))})
@@ -182,6 +198,47 @@ def facts(ds: Dataset, ep_scale: dict, fmt: str) -> tuple[str, set[str], dict[st
     for token in _NUMBER.findall(ds.definition or ""):
         allowed.update(_forms(token))
     return "\n".join(lines), allowed, owners
+
+
+NOTABLE = ("IND", "USA", "CHN", "GBR", "BRA", "NGA", "JPN", "DEU", "PAK", "IDN", "RUS", "AUS", "CAN", "MEX")
+
+
+def ratio_text(r: float) -> str:
+    """How a ratio is said: whole above 10 ("377"), one decimal below ("2.5"), never "3.0"."""
+    return f"{r:,.0f}" if r >= 10 else f"{r:.1f}".removesuffix(".0")
+
+
+def comparisons(shown: dict[str, float], ranked: list[tuple[str, float]], fmt: str,
+                limit: int = 16) -> list[tuple[str, str, str]]:
+    """(bigger iso, smaller iso, ratio text) for the pairs a script is most likely to contrast: the extremes and the
+    notable countries. Only pairs whose displayed values are within 3% of the data, so the ratio said is also the
+    one a viewer gets from the numbers on screen."""
+    def shown_value(iso: str) -> float | None:
+        m = _NUMBER.search(_say(shown[iso], fmt))
+        if not m:
+            return None
+        d = float(m.group(0).replace(",", ""))
+        return d if shown[iso] and abs(d - abs(shown[iso])) <= 0.03 * abs(shown[iso]) else None
+
+    extremes = [k for k, _ in ranked[:3]] + [k for k, _ in ranked[-3:]]
+    notable = [k for k in NOTABLE if k in shown and k not in extremes][:6]
+    pool = list(dict.fromkeys(extremes + notable))
+    out = []
+    for i, a in enumerate(pool):
+        for b in pool[i + 1:]:
+            va, vb = shown_value(a), shown_value(b)
+            if va is None or vb is None or va <= 0 or vb <= 0 or "-" in _say(shown[a], fmt) + _say(shown[b], fmt):
+                continue
+            hi, lo = (a, b) if va >= vb else (b, a)
+            r = max(va, vb) / min(va, vb)
+            if r < 1.5:
+                continue
+            # The two extremes first, then an extreme against a famous country, then famous against famous.
+            famous = (a in notable) + (b in notable)
+            kind = 0 if {a, b} == {ranked[0][0], ranked[-1][0]} else {1: 1, 2: 2}.get(famous, 3)
+            out.append((kind, -r, hi, lo, ratio_text(r)))
+    out.sort()
+    return [(a, b, t) for _, _, a, b, t in out[:limit]]
 
 
 def _forms(n: float | int | str) -> set[str]:
@@ -203,7 +260,9 @@ def _forms(n: float | int | str) -> set[str]:
     return out
 
 
-_WRONG_COLOUR = re.compile(r"\b(red|green|orange|purple|pink|brown|light blue)\b", re.I)
+_COLOUR_TALK = re.compile(r"\b(yellow|blue|grey|gray|gold|red|green|orange|purple|pink|brown|colou?r(s|ed)?|legend|"
+                          r"shaded)\b", re.I)
+_FILLER = re.compile(r"\b(among these (countries|places)|with data|measures|reaches|is mapped|mapped across)\b", re.I)
 _TREND = re.compile(r"\b(every (single )?year|each year|always|for decades|more than ever)\b", re.I)
 _NUMBER = re.compile(r"\d[\d,]*(?:\.\d+)?")
 _WORD_NUMBERS = re.compile(r"\b(two|three|four|five|six|seven|eight|nine|ten|eleven|twelve|twenty|thirty|forty|"
@@ -247,16 +306,18 @@ def problems(draft: dict, allowed: set[str], owners: dict[str, set[str]], vals: 
         out.append("beat 1 must be a world shot")
     if beats and beats[-1]["shot"] != "card":
         out.append("the last beat must be the card")
-    if beats and len(beats[0]["text"].split()) > 14:
-        out.append("the hook is over 14 words")
+    if beats and len(beats[0]["text"].split()) > 16:
+        out.append("the hook is over 16 words")
     if beats and beats[0]["text"].strip().endswith("?"):
         out.append("the hook must be a claim, not a question")
     used = []
     for i, b in enumerate(beats, 1):
         isos = b.get("isos", [])
         used += isos
-        if colour := _WRONG_COLOUR.search(b["text"]):
-            out.append(f"beat {i}: the map has no {colour.group(0)}; name only yellow, dark blue, or grey")
+        if colour := _COLOUR_TALK.search(b["text"]):
+            out.append(f"beat {i}: '{colour.group(0)}' describes the map; say the numbers and places instead")
+        if filler := _FILLER.search(b["text"]):
+            out.append(f"beat {i}: drop the filler '{filler.group(0)}'; say the number plainly")
         if trend := _TREND.search(b["text"]):
             out.append(f"beat {i}: '{trend.group(0)}' claims a trend, but the data is one year")
         if re.search(r"(?<![\w.])-\d", b["text"]):
@@ -289,16 +350,11 @@ def write(topic: dict, ds: Dataset, episode_id: str, series: str = "") -> AtlasE
     if len(vals) < MIN_COUNTRIES:
         raise RuntimeError(f"only {len(vals)} countries have data; an Atlas map needs {MIN_COUNTRIES}")
     shown = visible(vals)
-    labels = scale.get("labels") or ["above", "below"]
-    scale_note = (f"Colours on the map: yellow = {labels[0]} (at or above {scale['at']:g}), dark blue = {labels[1]}. "
-                  "Grey = no data. Name only these colours." if scale.get("kind") == "threshold" else
-                  "Colours on the map: dark blue is lowest, through grey-gold, to bright yellow for highest. Grey = no "
-                  "data. Name only these colours.")
     feedback = ""
     for attempt in range(1, TRIES + 1):
         prompt = PROMPT.format(topic=topic["topic"], angle=topic.get("angle", ""), format=topic.get("format", "map_reveal"),
                                label=ds.label, unit=ds.unit, source=ds.source, year=ds.year_label, count=len(vals),
-                               scale_note=scale_note, definition=topic.get("definition_text", "") or "(none given)",
+                               definition=topic.get("definition_text", "") or "(none given)",
                                summary=summary, beats_min=BEATS[0], beats_max=BEATS[1], words_min=WORDS[0],
                                words_max=WORDS[1], feedback=feedback)
         draft = llm.generate(prompt, schema=SCHEMA, temperature=0.7,

@@ -24,7 +24,8 @@ from pathlib import Path
 
 import requests
 
-from . import quality, render, topics, writer
+from . import quality, topics, writer
+from .cinema import film
 from .data import Dataset, fetch
 from .episode import AtlasEpisode
 
@@ -33,7 +34,8 @@ log = logging.getLogger(__name__)
 ROOT = Path(__file__).resolve().parents[4]
 TOPICS = ROOT / "strategy" / "ATLAS-TOPICS.json"
 EPISODES = ROOT / "content" / "atlas"
-BULKY = ("short.mp4", "mix.wav", "mix_raw.wav", "mix_tamed.wav", "narration.wav", "work", ".sfx")
+BULKY = ("short.mp4", "mix.wav", "mix_raw.wav", "mix_tamed.wav", "narration.wav", "work", ".sfx", "globe.mp4",
+         ".stage", "stills")
 OUTBOX_VOLUME = "creature-receipts-outbox"
 # Rendered Shorts kept waiting for the publisher: more than a day of SLOTS, so a failed run costs no post.
 RESERVE = 4
@@ -46,6 +48,13 @@ HOLD = ROOT / "status" / "atlas_hold.json"
 
 def outbox() -> Path:
     return Path(os.environ.get("ATLAS_OUTBOX", "/outbox"))
+
+
+def places_cache() -> Path:
+    """Country flags and photos, shared by every Short: on the Modal cache volume, or the repo's .cache on a Mac."""
+    if found := os.environ.get("ATLAS_PLACES"):
+        return Path(found)
+    return Path("/cache/atlas-places") if Path("/cache").is_dir() else ROOT / ".cache" / "atlas-places"
 
 
 def _catalogue() -> dict:
@@ -75,6 +84,8 @@ class Implausible(Exception):
 
 
 def family(topic: dict) -> str:
+    if topic.get("family"):
+        return topic["family"]
     indicator = topic["dataset"].get("indicator", "")
     prefix = indicator.split(".")[0]
     return {"SP": "population", "SH": "health", "IT": "technology", "AG": "nature", "EN": "nature",
@@ -88,8 +99,9 @@ def pick() -> dict | None:
         return None
     recent = sorted((t for t in catalogue if re.search(r"atlas\d{3,}$", t.get("status", ""))),
                     key=lambda t: int(t["status"].split("atlas")[-1]), reverse=True)[:3]
-    # Balance topic families; this is editorial variety, not a claim of algorithmic advantage.
-    return min(candidates, key=lambda t: sum(family(old) == family(t) for old in recent))
+    # Balance topic families (editorial variety, not a claim of algorithmic advantage); within that, topics marked
+    # with a higher priority (everyday-life stories) go first.
+    return min(candidates, key=lambda t: (sum(family(old) == family(t) for old in recent), -t.get("priority", 0)))
 
 
 def make(topic: dict, episode_id: str) -> tuple[AtlasEpisode, Path, Dataset, Path]:
@@ -130,7 +142,7 @@ def make(topic: dict, episode_id: str) -> tuple[AtlasEpisode, Path, Dataset, Pat
                                "definition_text": ds.definition or writer.definition(topic["dataset"])}
                 ep = writer.write(fixed_topic, ds, episode_id, series=topic.get("series", ""))
                 ep.save(spec_path)
-        video = render.render(ep, folder)
+        video = film.render(ep, folder, places_cache())
         try:
             quality.media(ep, folder, video)
         except ValueError as error:
