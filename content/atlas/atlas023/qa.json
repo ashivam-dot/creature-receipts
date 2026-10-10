@@ -1,4 +1,13 @@
 {
+  "version": 1,
+  "passed": true,
+  "checked_at": "2026-10-10T13:24:39.061086+00:00",
+  "quality_module_sha256": "abf82a585f855cc47faceb8807dd90b999b3d330d3a23eac1d6dd346e7364b2d",
+  "media_sha256": "3eb9b0a826ebabafc3666f8920d38969a0af8e2b984644e58396f0a7c9c86b50",
+  "script_sha256": "4ee30ef9a8de1fd427a4a76b700a79614ce24ec3dce29f517161d15fa17325d5",
+  "data_sha256": "934f098b98ba715a73991228383d572a904b6c6f3dd84f0b9553d13e02a36b36",
+  "claims_sha256": "8d4676c5594bfc8c0653c6dd1b12b43595b63250399e60138dbeead2c6a344d8",
+  "contact_sha256": "88f66f814bf3e376306eed53446da3a1012ecf79517854ca874733b6bce1c203",
   "duration": 37.09,
   "integrated_lufs": -14.4,
   "true_peak_dbfs": -1.4,
@@ -8,5 +17,7 @@
     "media_sha256": "3eb9b0a826ebabafc3666f8920d38969a0af8e2b984644e58396f0a7c9c86b50",
     "primary_differences": [],
     "differences": []
-  }
+  },
+  "warnings": [],
+  "speech_policy": "material-hard-entity-polarity-strict-minor-spelling-warning"
 }

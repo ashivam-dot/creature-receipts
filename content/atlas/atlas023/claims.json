@@ -1636,33 +1636,39 @@
     "claims": [
       {
         "surface": "title",
-        "text": "Fixed Broadband Subscriptions Per 100 Residents",
-        "isos": [],
-        "support": "Indicator: Fixed broadband subscriptions (IT.NET.BBND.P2)",
-        "evidence": {}
+        "text": "France has 49 fixed broadband lines per 100 people",
+        "isos": [
+          "FRA"
+        ],
+        "support": "FRA value is 48.9251978969333, displayed as 49 per 100",
+        "evidence": {
+          "FRA": {
+            "name": "France",
+            "value": 48.9251978969333,
+            "display": "49 per 100",
+            "year": 2024,
+            "unit": "per 100",
+            "rank": 5
+          }
+        }
       },
       {
         "surface": "hook",
-        "text": "WIDE GAP",
+        "text": "WIRED WORLD GAP",
         "isos": [],
-        "support": "Range from 56 (CYM) down to 0 (TCD)",
+        "support": "Stylistic title describing fixed broadband subscriptions globally",
         "evidence": {}
       },
       {
         "surface": "description",
-        "text": "Fixed broadband subscriptions per 100 residents across the globe.",
-        "isos": [],
-        "support": "Indicator definition and 202 mapped entities",
-        "evidence": {}
-      },
-      {
-        "surface": "beat_0",
-        "text": "France has 49 fixed broadband subscriptions per 100 residents. Chad has 0.",
+        "text": "Comparing fixed broadband subscriptions per 100 people across the globe, from France and South Korea to India and DR Congo, based on World Bank data.",
         "isos": [
           "FRA",
-          "TCD"
+          "KOR",
+          "IND",
+          "COD"
         ],
-        "support": "France value: 48.9251978969333, display: 49 per 100. Chad value: 0.0, display: 0 per 100.",
+        "support": "Dataset covers fixed broadband subscriptions per 100 people for FRA, KOR, IND, COD from World Bank",
         "evidence": {
           "FRA": {
             "name": "France",
@@ -1672,31 +1678,85 @@
             "unit": "per 100",
             "rank": 5
           },
-          "TCD": {
-            "name": "Chad",
-            "value": 0.0,
+          "KOR": {
+            "name": "Korea, Rep.",
+            "value": 47.8014965507867,
+            "display": "48 per 100",
+            "year": 2024,
+            "unit": "per 100",
+            "rank": 6
+          },
+          "IND": {
+            "name": "India",
+            "value": 3.15046250037677,
+            "display": "3 per 100",
+            "year": 2024,
+            "unit": "per 100",
+            "rank": 141
+          },
+          "COD": {
+            "name": "Congo, Dem. Rep.",
+            "value": 0.0320289131404702,
             "display": "0 per 100",
             "year": 2024,
             "unit": "per 100",
-            "rank": 202
+            "rank": 195
+          }
+        }
+      },
+      {
+        "surface": "beat_0",
+        "text": "France has 49 fixed broadband subscriptions per 100 people. Burundi has 0.",
+        "isos": [
+          "FRA",
+          "BDI"
+        ],
+        "support": "FRA value is 48.925 (displayed as 49); BDI value is 0.0203 (displayed as 0)",
+        "evidence": {
+          "FRA": {
+            "name": "France",
+            "value": 48.9251978969333,
+            "display": "49 per 100",
+            "year": 2024,
+            "unit": "per 100",
+            "rank": 5
+          },
+          "BDI": {
+            "name": "Burundi",
+            "value": 0.0203441336211462,
+            "display": "0 per 100",
+            "year": 2023,
+            "unit": "per 100",
+            "rank": 196
           }
         }
       },
       {
         "surface": "beat_1",
-        "text": "This total counts high-speed access to the public internet at speeds equal to or greater than 256 kbit/s.",
-        "isos": [],
-        "support": "Definition: Fixed broadband subscriptions refers to fixed subscriptions to high-speed access to the public Internet (a TCP/IP connection), at downstream speeds equal to, or greater than, 256 kbit/s.",
-        "evidence": {}
+        "text": "South Korea is one of the highest with 48 per 100. High-speed home and office lines.",
+        "isos": [
+          "KOR"
+        ],
+        "support": "KOR value is 47.801 (displayed as 48), rank 6 out of 202",
+        "evidence": {
+          "KOR": {
+            "name": "Korea, Rep.",
+            "value": 47.8014965507867,
+            "display": "48 per 100",
+            "year": 2024,
+            "unit": "per 100",
+            "rank": 6
+          }
+        }
       },
       {
         "surface": "beat_2",
-        "text": "France has 49 per 100. Brazil has 24 per 100, exactly half that total.",
+        "text": "France has 2 times Brazil. France has 49, and Brazil has 24.",
         "isos": [
           "FRA",
           "BRA"
         ],
-        "support": "France display: 49 per 100. Brazil value: 24.079199344422, display: 24 per 100.",
+        "support": "FRA is 48.925 (49) and BRA is 24.079 (24), 49 is approximately twice 24",
         "evidence": {
           "FRA": {
             "name": "France",
@@ -1718,11 +1778,29 @@
       },
       {
         "surface": "beat_3",
-        "text": "India hits 3 per 100.",
+        "text": "This counts high-speed home and office lines, but excludes mobile data. China has 47 per 100.",
+        "isos": [
+          "CHN"
+        ],
+        "support": "Definition includes residential and organizations, excludes mobile-cellular; CHN value is 47.193 (displayed as 47)",
+        "evidence": {
+          "CHN": {
+            "name": "China",
+            "value": 47.1933952081567,
+            "display": "47 per 100",
+            "year": 2024,
+            "unit": "per 100",
+            "rank": 7
+          }
+        }
+      },
+      {
+        "surface": "beat_4",
+        "text": "India, a tech giant, has 3 per 100.",
         "isos": [
           "IND"
         ],
-        "support": "India value: 3.15046250037677, display: 3 per 100.",
+        "support": "IND value is 3.150 (displayed as 3 per 100)",
         "evidence": {
           "IND": {
             "name": "India",
@@ -1735,38 +1813,38 @@
         }
       },
       {
-        "surface": "beat_4",
-        "text": "USA stands at 39 per 100.",
-        "isos": [
-          "USA"
-        ],
-        "support": "United States value: 38.8571729185246, display: 39 per 100.",
-        "evidence": {
-          "USA": {
-            "name": "United States",
-            "value": 38.8571729185246,
-            "display": "39 per 100",
-            "year": 2024,
-            "unit": "per 100",
-            "rank": 27
-          }
-        }
-      },
-      {
         "surface": "beat_5",
-        "text": "Chad is the lowest of all 202 countries and territories.",
+        "text": "At the bottom, DR Congo has 0. Central African Republic has 0, and Guinea has 0.",
         "isos": [
-          "TCD"
+          "COD",
+          "CAF",
+          "GIN"
         ],
-        "support": "Chad rank: 202 out of 202 count.",
+        "support": "COD value is 0.032 (display 0), CAF is 0.016 (display 0), GIN is 0.006 (display 0)",
         "evidence": {
-          "TCD": {
-            "name": "Chad",
-            "value": 0.0,
+          "COD": {
+            "name": "Congo, Dem. Rep.",
+            "value": 0.0320289131404702,
             "display": "0 per 100",
             "year": 2024,
             "unit": "per 100",
-            "rank": 202
+            "rank": 195
+          },
+          "CAF": {
+            "name": "Central African Republic",
+            "value": 0.0160846160651184,
+            "display": "0 per 100",
+            "year": 2022,
+            "unit": "per 100",
+            "rank": 197
+          },
+          "GIN": {
+            "name": "Guinea",
+            "value": 0.00627528568380372,
+            "display": "0 per 100",
+            "year": 2022,
+            "unit": "per 100",
+            "rank": 198
           }
         }
       },
@@ -1774,48 +1852,53 @@
         "surface": "beat_6",
         "text": "Where does your country land?",
         "isos": [],
-        "support": "Card visual prompt",
+        "support": "General interactive closing question",
         "evidence": {}
       },
       {
         "surface": "card_6",
-        "text": "Where does your country land?",
+        "text": "Where do you land? Fixed broadband per 100 people",
         "isos": [],
-        "support": "Card text",
+        "support": "Card title and subtitle matching indicator name",
         "evidence": {}
       },
       {
         "surface": "title",
-        "text": "Fixed Broadband Subscriptions Per 100 Residents",
-        "isos": [],
-        "support": "Accurately reflects the World Bank indicator.",
+        "text": "France has 49 fixed broadband lines per 100 people",
+        "isos": [
+          "FRA"
+        ],
+        "support": "France display value is 49 per 100",
         "method": "complete-surface-check",
-        "evidence": {}
+        "evidence": {
+          "FRA": {
+            "name": "France",
+            "value": 48.9251978969333,
+            "display": "49 per 100",
+            "year": 2024,
+            "unit": "per 100",
+            "rank": 5
+          }
+        }
       },
       {
         "surface": "hook",
-        "text": "WIDE GAP",
+        "text": "WIRED WORLD GAP",
         "isos": [],
-        "support": "Reflects the broad distribution of broadband subscription rates.",
+        "support": "Stylistic headline matching topic",
         "method": "complete-surface-check",
         "evidence": {}
       },
       {
         "surface": "description",
-        "text": "Fixed broadband subscriptions per 100 residents across the globe.",
-        "isos": [],
-        "support": "Summarizes the dataset scope.",
-        "method": "complete-surface-check",
-        "evidence": {}
-      },
-      {
-        "surface": "beat_0",
-        "text": "France has 49 fixed broadband subscriptions per 100 residents. Chad has 0.",
+        "text": "Comparing fixed broadband subscriptions per 100 people across the globe, from France and South Korea to India and DR Congo, based on World Bank data.",
         "isos": [
           "FRA",
-          "TCD"
+          "KOR",
+          "IND",
+          "COD"
         ],
-        "support": "France is 49 per 100 and Chad is 0 per 100 in the dataset.",
+        "support": "Mentions correct indicator and referenced entities",
         "method": "complete-surface-check",
         "evidence": {
           "FRA": {
@@ -1826,32 +1909,87 @@
             "unit": "per 100",
             "rank": 5
           },
-          "TCD": {
-            "name": "Chad",
-            "value": 0.0,
+          "KOR": {
+            "name": "Korea, Rep.",
+            "value": 47.8014965507867,
+            "display": "48 per 100",
+            "year": 2024,
+            "unit": "per 100",
+            "rank": 6
+          },
+          "IND": {
+            "name": "India",
+            "value": 3.15046250037677,
+            "display": "3 per 100",
+            "year": 2024,
+            "unit": "per 100",
+            "rank": 141
+          },
+          "COD": {
+            "name": "Congo, Dem. Rep.",
+            "value": 0.0320289131404702,
             "display": "0 per 100",
             "year": 2024,
             "unit": "per 100",
-            "rank": 202
+            "rank": 195
+          }
+        }
+      },
+      {
+        "surface": "beat_0",
+        "text": "France has 49 fixed broadband subscriptions per 100 people. Burundi has 0.",
+        "isos": [
+          "FRA",
+          "BDI"
+        ],
+        "support": "France is 49 and Burundi is 0 per 100 in data",
+        "method": "complete-surface-check",
+        "evidence": {
+          "FRA": {
+            "name": "France",
+            "value": 48.9251978969333,
+            "display": "49 per 100",
+            "year": 2024,
+            "unit": "per 100",
+            "rank": 5
+          },
+          "BDI": {
+            "name": "Burundi",
+            "value": 0.0203441336211462,
+            "display": "0 per 100",
+            "year": 2023,
+            "unit": "per 100",
+            "rank": 196
           }
         }
       },
       {
         "surface": "beat_1",
-        "text": "This total counts high-speed access to the public internet at speeds equal to or greater than 256 kbit/s.",
-        "isos": [],
-        "support": "Directly matches the official World Bank metadata definition.",
+        "text": "South Korea is one of the highest with 48 per 100. High-speed home and office lines.",
+        "isos": [
+          "KOR"
+        ],
+        "support": "South Korea is 48 per 100 and near the top (rank 6)",
         "method": "complete-surface-check",
-        "evidence": {}
+        "evidence": {
+          "KOR": {
+            "name": "Korea, Rep.",
+            "value": 47.8014965507867,
+            "display": "48 per 100",
+            "year": 2024,
+            "unit": "per 100",
+            "rank": 6
+          }
+        }
       },
       {
         "surface": "beat_2",
-        "text": "France has 49 per 100. Brazil has 24 per 100, exactly half that total.",
+        "text": "France has 2 times Brazil. France has 49, and Brazil has 24.",
         "isos": [
           "FRA",
           "BRA"
         ],
-        "support": "France is 49 and Brazil is 24 per 100.",
+        "support": "France (49) is roughly double Brazil (24)",
         "method": "complete-surface-check",
         "evidence": {
           "FRA": {
@@ -1874,11 +2012,30 @@
       },
       {
         "surface": "beat_3",
-        "text": "India hits 3 per 100.",
+        "text": "This counts high-speed home and office lines, but excludes mobile data. China has 47 per 100.",
+        "isos": [
+          "CHN"
+        ],
+        "support": "Definition covers home/office lines and excludes mobile; China is 47 per 100",
+        "method": "complete-surface-check",
+        "evidence": {
+          "CHN": {
+            "name": "China",
+            "value": 47.1933952081567,
+            "display": "47 per 100",
+            "year": 2024,
+            "unit": "per 100",
+            "rank": 7
+          }
+        }
+      },
+      {
+        "surface": "beat_4",
+        "text": "India, a tech giant, has 3 per 100.",
         "isos": [
           "IND"
         ],
-        "support": "India display is 3 per 100.",
+        "support": "India is 3 per 100",
         "method": "complete-surface-check",
         "evidence": {
           "IND": {
@@ -1892,40 +2049,39 @@
         }
       },
       {
-        "surface": "beat_4",
-        "text": "USA stands at 39 per 100.",
-        "isos": [
-          "USA"
-        ],
-        "support": "United States display is 39 per 100.",
-        "method": "complete-surface-check",
-        "evidence": {
-          "USA": {
-            "name": "United States",
-            "value": 38.8571729185246,
-            "display": "39 per 100",
-            "year": 2024,
-            "unit": "per 100",
-            "rank": 27
-          }
-        }
-      },
-      {
         "surface": "beat_5",
-        "text": "Chad is the lowest of all 202 countries and territories.",
+        "text": "At the bottom, DR Congo has 0. Central African Republic has 0, and Guinea has 0.",
         "isos": [
-          "TCD"
+          "COD",
+          "CAF",
+          "GIN"
         ],
-        "support": "Chad has a rank of 202 out of 202.",
+        "support": "DR Congo, CAR, and Guinea all display as 0 per 100",
         "method": "complete-surface-check",
         "evidence": {
-          "TCD": {
-            "name": "Chad",
-            "value": 0.0,
+          "COD": {
+            "name": "Congo, Dem. Rep.",
+            "value": 0.0320289131404702,
             "display": "0 per 100",
             "year": 2024,
             "unit": "per 100",
-            "rank": 202
+            "rank": 195
+          },
+          "CAF": {
+            "name": "Central African Republic",
+            "value": 0.0160846160651184,
+            "display": "0 per 100",
+            "year": 2022,
+            "unit": "per 100",
+            "rank": 197
+          },
+          "GIN": {
+            "name": "Guinea",
+            "value": 0.00627528568380372,
+            "display": "0 per 100",
+            "year": 2022,
+            "unit": "per 100",
+            "rank": 198
           }
         }
       },
@@ -1933,18 +2089,18 @@
         "surface": "beat_6",
         "text": "Where does your country land?",
         "isos": [],
-        "support": "Standard concluding prompt text.",
+        "support": "Standard closing question",
         "method": "complete-surface-check",
         "evidence": {}
       },
       {
         "surface": "card_6",
         "text": [
-          "Where does your country land?",
+          "Where do you land?",
           "Fixed broadband per 100 people"
         ],
         "isos": [],
-        "support": "Standard card layout text.",
+        "support": "Accurately reflects the indicator",
         "method": "complete-surface-check",
         "evidence": {}
       }
@@ -1952,35 +2108,44 @@
     "surface_checks": {
       "title": {
         "supported": true,
-        "reason": "Accurately reflects the World Bank indicator.",
-        "isos": []
+        "reason": "France display value is 49 per 100",
+        "isos": [
+          "FRA"
+        ]
       },
       "hook": {
         "supported": true,
-        "reason": "Reflects the broad distribution of broadband subscription rates.",
+        "reason": "Stylistic headline matching topic",
         "isos": []
       },
       "description": {
         "supported": true,
-        "reason": "Summarizes the dataset scope.",
-        "isos": []
+        "reason": "Mentions correct indicator and referenced entities",
+        "isos": [
+          "FRA",
+          "KOR",
+          "IND",
+          "COD"
+        ]
       },
       "beat_0": {
         "supported": true,
-        "reason": "France is 49 per 100 and Chad is 0 per 100 in the dataset.",
+        "reason": "France is 49 and Burundi is 0 per 100 in data",
         "isos": [
           "FRA",
-          "TCD"
+          "BDI"
         ]
       },
       "beat_1": {
         "supported": true,
-        "reason": "Directly matches the official World Bank metadata definition.",
-        "isos": []
+        "reason": "South Korea is 48 per 100 and near the top (rank 6)",
+        "isos": [
+          "KOR"
+        ]
       },
       "beat_2": {
         "supported": true,
-        "reason": "France is 49 and Brazil is 24 per 100.",
+        "reason": "France (49) is roughly double Brazil (24)",
         "isos": [
           "FRA",
           "BRA"
@@ -1988,39 +2153,41 @@
       },
       "beat_3": {
         "supported": true,
-        "reason": "India display is 3 per 100.",
+        "reason": "Definition covers home/office lines and excludes mobile; China is 47 per 100",
         "isos": [
-          "IND"
+          "CHN"
         ]
       },
       "beat_4": {
         "supported": true,
-        "reason": "United States display is 39 per 100.",
+        "reason": "India is 3 per 100",
         "isos": [
-          "USA"
+          "IND"
         ]
       },
       "beat_5": {
         "supported": true,
-        "reason": "Chad has a rank of 202 out of 202.",
+        "reason": "DR Congo, CAR, and Guinea all display as 0 per 100",
         "isos": [
-          "TCD"
+          "COD",
+          "CAF",
+          "GIN"
         ]
       },
       "beat_6": {
         "supported": true,
-        "reason": "Standard concluding prompt text.",
+        "reason": "Standard closing question",
         "isos": []
       },
       "card_6": {
         "supported": true,
-        "reason": "Standard card layout text.",
+        "reason": "Accurately reflects the indicator",
         "isos": []
       }
     },
     "warnings": []
   },
-  "script_sha256": "557a1ef7d2be486bd1edbe35a111617ec6d9feaac64be956b286042a5839eff2",
+  "script_sha256": "4ee30ef9a8de1fd427a4a76b700a79614ce24ec3dce29f517161d15fa17325d5",
   "data_sha256": "934f098b98ba715a73991228383d572a904b6c6f3dd84f0b9553d13e02a36b36",
   "reviewer_model": "gemini-3.5-flash-lite"
 }

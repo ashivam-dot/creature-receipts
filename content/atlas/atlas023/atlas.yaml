@@ -1,7 +1,8 @@
 id: atlas023
-title: Fixed Broadband Subscriptions Per 100 Residents
-hook_text: WIDE GAP
-description: Fixed broadband subscriptions per 100 residents across the globe.
+title: France has 49 fixed broadband lines per 100 people
+hook_text: WIRED WORLD GAP
+description: Comparing fixed broadband subscriptions per 100 people across the globe, from France and South Korea
+  to India and DR Congo, based on World Bank data.
 hashtags:
 - '#maps'
 - '#geography'
@@ -31,36 +32,39 @@ scale:
   - 40+
 value_format: '{v:.0f} per 100'
 beats:
-- text: France has 49 fixed broadband subscriptions per 100 residents. Chad has 0.
+- text: France has 49 fixed broadband subscriptions per 100 people. Burundi has 0.
   shot:
     callouts:
     - FRA
-    - TCD
-- text: This total counts high-speed access to the public internet at speeds equal to or greater than 256 kbit/s.
+    - BDI
+- text: South Korea is one of the highest with 48 per 100. High-speed home and office lines.
   shot:
     kind: country
-    iso: FRA
-- text: France has 49 per 100. Brazil has 24 per 100, exactly half that total.
+    iso: KOR
+- text: France has 2 times Brazil. France has 49, and Brazil has 24.
   shot:
     kind: group
     isos:
     - FRA
     - BRA
-- text: India hits 3 per 100.
+- text: This counts high-speed home and office lines, but excludes mobile data. China has 47 per 100.
+  shot:
+    kind: country
+    iso: CHN
+- text: India, a tech giant, has 3 per 100.
   shot:
     kind: country
     iso: IND
-- text: USA stands at 39 per 100.
+- text: At the bottom, DR Congo has 0. Central African Republic has 0, and Guinea has 0.
   shot:
-    kind: country
-    iso: USA
-- text: Chad is the lowest of all 202 countries and territories.
-  shot:
-    kind: country
-    iso: TCD
+    kind: rank
+    isos:
+    - COD
+    - CAF
+    - GIN
 - text: Where does your country land?
   shot:
     kind: card
     lines:
-    - Where does your country land?
+    - Where do you land?
     - Fixed broadband per 100 people
