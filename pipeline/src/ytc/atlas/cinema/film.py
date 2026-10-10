@@ -302,19 +302,19 @@ def _chip_layer(label: str, source: str) -> tuple[np.ndarray, np.ndarray]:
     return _rgba(img)
 
 
-def _country_layer(name: str, value: str, unit: str, flag: str | None) -> tuple[np.ndarray, np.ndarray]:
-    """The country's flag, its name, and its value in the accent colour with the unit beside it."""
+def _country_layer(name: str, value: str, unit: str, flag: str | None, badge: str = "") -> tuple[np.ndarray, np.ndarray]:
+    """The country's flag, its name, its value in the accent colour with the unit beside it, and a rank badge."""
     big = _anton(112)
     while big.getlength(name.upper()) > W - 330 and big.size > 64:
         big = _anton(big.size - 6)
-    num, small = _sans(84, "Black"), _sans(38, "Bold")
+    num, small, tag = _sans(84, "Black"), _sans(38, "Bold"), _sans(34, "Black")
     fl = _flag(flag, 96)
     name_w = big.getbbox(name.upper(), stroke_width=6)[2]
     unit_lines = _wrap(unit, small, 420)[:2]
     value_w = num.getbbox(value, stroke_width=5)[2] + 22 + max([int(small.getlength(u)) for u in unit_lines] or [0])
     left = (fl.width + 28) if fl else 0
-    w = left + max(name_w, value_w) + 20
-    img = Image.new("RGBA", (w, 260), (0, 0, 0, 0))
+    w = left + max(name_w, value_w, int(tag.getlength(badge)) + 48) + 20
+    img = Image.new("RGBA", (w, 340), (0, 0, 0, 0))
     d = ImageDraw.Draw(img)
     if fl:
         img.alpha_composite(fl, (0, 22))
@@ -328,7 +328,13 @@ def _country_layer(name: str, value: str, unit: str, flag: str | None) -> tuple[
     for line in unit_lines:
         d.text((ux, uy), line, font=small, fill=(255, 255, 255, 240), stroke_width=4, stroke_fill=(0, 0, 0, 255))
         uy += 46
-    return _rgba(_shadowed(img.crop(img.getbbox() or (0, 0, w, 260))))
+    if badge:
+        by = y + vb[3] - vb[1] + 22
+        bw = int(tag.getlength(badge)) + 44
+        d.rounded_rectangle((left, by, left + bw, by + 56), radius=28, fill=(8, 12, 22, 200), outline=ACCENT + (255,),
+                            width=3)
+        d.text((left + 22, by + 9), badge, font=tag, fill=(255, 255, 255, 255))
+    return _rgba(_shadowed(img.crop(img.getbbox() or (0, 0, w, 340))))
 
 
 def _place_layer(place: str, credit: str) -> tuple[np.ndarray, np.ndarray]:
@@ -367,23 +373,46 @@ class RankPanel:
             vf = _sans(42, "Black")
             d.text((self.width - 24 - vf.getlength(value), 12), value, font=vf, fill=ACCENT + (255,))
             self.static.append(img)
+        self.lit = []
+        for img in self.static:
+            hl = img.copy()
+            ImageDraw.Draw(hl).rounded_rectangle((1, 1, self.width - 2, self.row_h - 11), radius=16,
+                                                 outline=ACCENT + (255,), width=4)
+            self.lit.append(hl)
 
-    def draw(self, frame: np.ndarray, local: float, y0: int) -> None:
+    def draw(self, frame: np.ndarray, local: float, y0: int, active: int | None = None, since: float = 0.0) -> None:
+        """`active` is the row the narrator is naming, lit and nudged out for `since` seconds; the rest dim."""
         if self.head:
             _blit(frame, self.head, 60, y0 - 58, min(1.0, local / 0.3))
         n = len(self.rows)
+        focus = _ease(since / 0.2) if active is not None else 0.0
         for i, img in enumerate(self.static):
             at = 0.15 + 0.22 * (n - 1 - i)
             u = _ease((local - at) / 0.35)
             if u <= 0:
                 continue
-            row = img.copy()
+            row = (self.lit[i] if i == active else img).copy()
             bar = _ease((local - at - 0.15) / 0.6) * self.fracs[i]
             if bar > 0:
                 d = ImageDraw.Draw(row)
                 x1 = 82 + max(8, round((self.width - 110) * bar))
-                d.rounded_rectangle((82, 74, x1, 90), radius=8, fill=ACCENT + (255,) if i == 0 else (255, 255, 255, 210))
-            _blit(frame, _rgba(row), 60, y0 + i * self.row_h + round(30 * (1 - u)), u)
+                d.rounded_rectangle((82, 74, x1, 90), radius=8,
+                                    fill=ACCENT + (255,) if i in (0, active) else (255, 255, 255, 210))
+            shift = round(18 * focus) if i == active else 0
+            alpha = u * (1.0 if active is None or i == active else 1 - 0.4 * focus)
+            _blit(frame, _rgba(row), 60 + shift, y0 + i * self.row_h + round(30 * (1 - u)), alpha)
+
+
+def _spoken_at(names: list[str], words: list[dict]) -> list[float | None]:
+    """When the narration first says each name (all of its words in a row), or None."""
+    said = [("".join(ch for ch in w["text"].lower() if ch.isalnum()), w["start"]) for w in words]
+    out = []
+    for name in names:
+        toks = ["".join(ch for ch in p.lower() if ch.isalnum()) for p in name.split()]
+        hit = next((said[j][1] for j in range(len(said) - len(toks) + 1)
+                    if [s for s, _ in said[j:j + len(toks)]] == toks), None)
+        out.append(hit)
+    return out
 
 
 def _end_layers(question: str, source: str) -> dict:
@@ -574,10 +603,14 @@ def render(ep: AtlasEpisode, folder: Path, cache: Path) -> Path:
     def value_of(iso: str) -> str:
         return ep.value_text(ds.values[iso]) if iso in ds.values else ""
 
+    world_vals = {k: v for k, v in ds.values.items() if k in world}
+    positions = globe.ranks(world_vals)
+
     def country_card(iso: str):
         if iso not in country_cards:
             flag = (pics.get(iso, {}).get("flag") or {}).get("path")
-            country_cards[iso] = _country_layer(names.get(iso, iso), value_of(iso), unit, flag)
+            badge = f"#{positions[iso]} OF {len(world_vals)}" if iso in positions else ""
+            country_cards[iso] = _country_layer(names.get(iso, iso), value_of(iso), unit, flag, badge)
         return country_cards[iso]
 
     def photo_frame(seg: dict, t: float) -> np.ndarray:
@@ -599,6 +632,7 @@ def render(ep: AtlasEpisode, folder: Path, cache: Path) -> Path:
         return frame
 
     rank_panels: dict[int, RankPanel] = {}
+    rank_said: dict[int, list[float | None]] = {}
     for i, b in enumerate(ep.beats):
         if b.shot.kind == "rank":
             title, rows = rank_rows(b.shot.isos, ds, ep, scale, names)
@@ -610,6 +644,15 @@ def render(ep: AtlasEpisode, folder: Path, cache: Path) -> Path:
             rank_panels[i] = RankPanel(title.upper(), ep.dataset.label, [
                 (name, value, v, (pics.get(by_name.get(name, ""), {}).get("flag") or {}).get("path"))
                 for name, value, v, _ in rows])
+            rank_said[i] = _spoken_at([r[0] for r in rank_panels[i].rows], [w for w in words if w["beat"] == i])
+
+    def naming(i: int, t: float) -> tuple[int | None, float]:
+        """The ranking row the narrator has most recently named at t, and for how long."""
+        best = None
+        for row, at in enumerate(rank_said.get(i, [])):
+            if at is not None and at <= t and (best is None or at > best[1]):
+                best = (row, at)
+        return (best[0], t - best[1]) if best else (None, 0.0)
 
     mixed = _mix(narr.wav_path, score.score(total, ep.id), _effects(ep, scene, segs, total, folder / ".sfx"), total,
                  folder)
@@ -666,8 +709,14 @@ def render(ep: AtlasEpisode, folder: Path, cache: Path) -> Path:
                       min(1.0, local / 0.25))
                 _blit(frame, end["meta"], (W - end["meta"][1].shape[1]) // 2, round(H * 0.80), fade)
             elif seg["beat"] == 0 and seg["kind"] == "globe" and t < HOOK_HOLD + 0.35:
-                # Fully visible from the first frame (YouTube may use it as the cover), gone before the pins land.
-                _blit(frame, hook, (W - hook[1].shape[1]) // 2, round(H * 0.06), min(1.0, (HOOK_HOLD + 0.35 - t) / 0.35))
+                # Fully visible from the first frame (YouTube may use it as the cover), gone before the pins land;
+                # it lands with a punch and keeps creeping larger while it holds.
+                z = 1.0 + 0.14 * (1 - _ease(t / 0.3)) + 0.035 * _ease(t / HOOK_HOLD)
+                rgb, a = hook
+                size = (round(a.shape[1] * z), round(a.shape[0] * z))
+                big = (cv2.resize(rgb, size), cv2.resize(a, size)[..., None])
+                _blit(frame, big, (W - size[0]) // 2, round(H * 0.06 - (size[1] - a.shape[0]) / 2),
+                      min(1.0, (HOOK_HOLD + 0.35 - t) / 0.35))
                 captions.draw(frame, t)
             else:
                 if seg["kind"] == "photo":
@@ -700,7 +749,8 @@ def render(ep: AtlasEpisode, folder: Path, cache: Path) -> Path:
                     since = t - HOOK_HOLD - 0.35 if seg["beat"] == 0 else local if seg["beat"] == 1 else 1.0
                     _blit(frame, chip, 40, round(H * 0.045), min(1.0, since / 0.3))
                     if beat.shot.kind == "rank" and seg["beat"] in rank_panels:
-                        rank_panels[seg["beat"]].draw(frame, local, round(H * 0.17))
+                        row, since_named = naming(seg["beat"], t)
+                        rank_panels[seg["beat"]].draw(frame, local, round(H * 0.17), row, since_named)
                 captions.draw(frame, t)
             enc.stdin.write(frame.tobytes())
             if f in still_at:

@@ -79,3 +79,13 @@ def test_description_credits_every_photo(tmp_path):
     text = publish.photo_credits(tmp_path)
     assert "Dhaka: Jo, CC BY 2.0, https://c/A" in text
     assert publish.photo_credits(None) == ""
+
+
+def test_ranks_count_down_from_the_highest_and_ties_share_a_place():
+    assert globe.ranks({"FIN": 7.8, "DNK": 7.5, "ISL": 7.5, "AFG": 1.4}) == {"FIN": 1, "DNK": 2, "ISL": 2, "AFG": 4}
+
+
+def test_rank_rows_light_up_when_the_narrator_says_the_whole_name():
+    words = [{"text": t, "start": float(i)} for i, t in enumerate(
+        ["Iceland", "has", "7.5,", "Costa", "Rica,", "7.4,", "and", "Sweden."])]
+    assert film._spoken_at(["Iceland", "Costa Rica", "Sweden", "Denmark"], words) == [0.0, 3.0, 7.0, None]

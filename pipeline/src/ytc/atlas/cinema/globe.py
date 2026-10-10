@@ -28,7 +28,7 @@ EARTH = Path(__file__).resolve().parents[4] / "assets" / "atlas" / "earth"
 FPS = 30
 TEX_W, TEX_H = 4096, 2048
 # Altitudes above the surface, in Earth radii.
-ALT_WORLD, ALT_CARD, ALT_RANK = 5.0, 5.6, 4.6
+ALT_WORLD, ALT_CARD, ALT_RANK = 4.4, 5.6, 4.6
 # Two countries named in one world shot further apart than this (radians from their midpoint) can't share the
 # narrow 9:16 view: the camera starts on the first and pans to the second over PAN (fractions of the beat).
 PAN_SPREAD = math.radians(40)
@@ -184,6 +184,11 @@ def shots(ep, spans: list[tuple[float, float]], duration: float) -> list[dict]:
     return out
 
 
+def ranks(vals: dict[str, float]) -> dict[str, int]:
+    """Each place's position from the highest value down; tied values share the better position."""
+    return {k: 1 + sum(1 for x in vals.values() if x > v) for k, v in vals.items()}
+
+
 def bake(ep, ds, scale: Scale, spans: list[tuple[float, float]], duration: float, stage: Path,
          accent: tuple = (255, 209, 102), first_pins: float = 0.0) -> dict:
     """The stage folder for capture(); the opening shot's pins wait `first_pins` seconds (for the hook title)."""
@@ -203,6 +208,7 @@ def bake(ep, ds, scale: Scale, spans: list[tuple[float, float]], duration: float
     lo = vals[order[0]]
     hi = float(np.percentile([vals[k] for k in order], 98))
     rank = {k: max(0.0, min(1.0, (vals[k] - lo) / max(hi - lo, 1e-9))) ** 0.8 for k in order}
+    places = ranks(vals)
     countries = []
     for k in order:
         c = world[k]
@@ -210,6 +216,7 @@ def bake(ep, ds, scale: Scale, spans: list[tuple[float, float]], duration: float
         size = math.sqrt(max((lo1 - lo0) * (la1 - la0), 0.01))
         countries.append({"iso": k, "lat": round(c.lat, 3), "lon": round(c.lon, 3), "h": round(rank[k], 4),
                           "c": _hex(colors[k]), "name": short_name(c.name), "value": ep.value_text(vals[k]),
+                          "rank": places[k], "of": len(vals),
                           "w": round(min(0.016, max(0.0065, 0.0011 * size)), 5)})
     plan = shots(ep, spans, duration)
     if first_pins:

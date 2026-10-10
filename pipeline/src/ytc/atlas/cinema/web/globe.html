@@ -12,7 +12,9 @@ canvas { position: absolute; left: 0; top: 0; }
 .pin { background: rgba(6, 10, 20, 0.62); border: 2px solid rgba(255, 255, 255, 0.85); border-radius: 18px;
   padding: 10px 26px 12px; }
 .pin .name { font-weight: 800; font-size: 46px; letter-spacing: 1px; text-transform: uppercase; }
-.pin .value { font-weight: 900; font-size: 72px; color: #ffd166; line-height: 1.0; }
+.pin .value { font-weight: 900; font-size: 72px; color: #ffd166; line-height: 1.0; font-variant-numeric: tabular-nums; }
+.pin .rank { font-weight: 700; font-size: 30px; letter-spacing: 1px; opacity: 0.85; margin-top: 4px; }
+.pin .rank:empty { display: none; }
 .pin .stem { position: absolute; left: 50%; bottom: -60px; width: 3px; height: 58px; margin-left: -1.5px;
   background: linear-gradient(#fff, rgba(255, 255, 255, 0)); }
 .pin.below { transform: translate(-50%, 60px); }

@@ -13,10 +13,13 @@
   headless Chromium; NASA Blue Marble and Black Marble textures) carries the data as glowing columns and flies to each
   country the narration names, with its outline lit; then real photos of that country and its capital (Wikidata and
   Wikimedia Commons, CC0/PD/CC BY/CC BY-SA only, credited in the description) move in depth parallax under a flag
-  card with its value. Comparisons split the screen between photos; rankings rise as a panel of flags and bars.
+  card with its value and a "#rank of total" badge. Comparisons split the screen between photos; rankings rise as a
+  panel of flags and bars whose rows light up as the narrator names them. The globe opens with a rush in from deep
+  space, sits on a navy space backdrop sized to fill the frame down to the captions, ripples rings from the country
+  in focus, and counts each pin's value up on its first appearance.
   Kokoro `am_fenrir` narration, karaoke captions (Anton), an original synthesized score with whooshes, -14 LUFS.
   The owner rejected the v1 flat Equal Earth map ("like cartoon") on 2026-10-10; Orbitwire's renders are the
-  quality bar. Every parked Short records `"format": "cinema-v2"` in `ready.json`; one without it is re-rendered.
+  quality bar. Every parked Short records its `format` (now `cinema-v2.2`) in `ready.json`; any other is re-rendered.
 - **Acceptance checks:** drafts bind metric definitions, entity values and reporting years to saved source data.
   Complete semantic review checks titles, narration, descriptions and visual plans; final encoded video passes
   decode, audio and speech checks. The publisher verifies artifact and media hashes before scheduling.
@@ -161,6 +164,7 @@ Start here: `PLAYBOOK.md` (the daily routine), `strategy/STRATEGY.md`, `strategy
 
 | Date | Decision | Why |
 |---|---|---|
+| 2026-10-10 | `cinema-v2.2`: more motion and detail in every shot. The opening rushes in from deep space and the hook title punches in; the flat black around the globe became a navy space backdrop with visible stars, and the globe sits lower and closer (centre at 46% of the frame, world view at 4.4 radii) so it fills the frame down to the captions; rings ripple from the country in focus; pins count their value up on first appearance (0.5 s, never again, so a pin can't disagree with the narration) and every pin and country card shows "#rank of total" from the same dataset; the ranking panel lights the row being named and dims the rest. Parked v2.1 Shorts (atlas017, atlas019) re-render through the usual checks; the three already in Buffer for 10–11 Oct stay as scheduled | The owner: "Make the content full engaging with proper animation and detailings." The v2.1 review found the bottom third of every globe shot empty black, the hook a static title over a slow globe, and the ranking panel frozen for 4–6 s. Local renders of atlas014 and atlas016 with the new code were checked frame by frame |
 | 2026-10-10 | Atlas v2 "cinema" format replaces the flat map: photoreal globe with data columns and dives, real licensed country photos with depth parallax, flag cards, split screens, rank panel, karaoke captions, an original score; story-first scripts written on Flash first (was Flash-Lite) with a worked example, precomputed ratios, and checks against report-speak and back-to-back repeats. Old waiting Shorts (atlas009, atlas011, atlas013) get new v2 scripts and renders before posting (the first upgrade kept their v1 scripts, which narrated the old map legend, so scripts are now stamped and the format is `cinema-v2.1`); withdrawn ones (atlas006–008) are retired and their topics reopened | The owner: "like cartoon … did you really think anyone likes … basic world map … play with numbers only". Orbitwire's renders are the bar. The first cloud v2 Short (calorie supply) passed every gate but read like a report ("records 3,947 … holding rank 21 globally"), hence the writer changes |
 | 2026-10-09 | Acceptance checks no longer reject two kinds of correct Shorts: the speech check treats British and American spellings (kilometre/kilometer, litre, centre, labour, fertiliser…) as the same spoken word, and the entity binder ignores digits inside a measure's name (PM2.5, CO2). Topics t011 and t014 were reopened | The 03:10 UTC run lost atlas010 (population density) after two renders because Whisper wrote "kilometer" five times, past the 4-difference cap, and atlas012 (air pollution) because "PM2.5" was read as Qatar's value of 2.5 |
 | 2026-10-08 | The four public History's Last Hours Shorts (nsIV96pvg_0, fG5iWshCAOM, gbhhEU5wfZk, GeYxkROXScI) made private in Studio; `STRATEGY.md` and `LEARNINGS.md` reset for Atlas | Off-niche Shorts on a renamed channel confuse the feed's audience test; private (not deleted) keeps them recoverable |
