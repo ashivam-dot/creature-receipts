@@ -1684,32 +1684,176 @@
     "claims": [
       {
         "surface": "title",
-        "text": "The emptiest and most crowded places by density",
+        "text": "The Emptiest and Most Crowded places",
         "isos": [],
-        "support": "Universe of 208 countries and territories with population density data",
+        "support": "Global population density universe across 208 countries and territories.",
         "evidence": {}
       },
       {
         "surface": "hook",
-        "text": "LOWEST DENSITY",
+        "text": "CROWDED VS EMPTY",
         "isos": [],
-        "support": "Topic of population density",
+        "support": "Contrast between high and low population density places in the dataset.",
         "evidence": {}
       },
       {
         "surface": "description",
-        "text": "Population density across 208 countries and territories using World Bank data.",
+        "text": "Population density across 208 countries and territories.",
         "isos": [],
-        "support": "count: 208, source: https://data.worldbank.org/indicator/EN.POP.DNST",
+        "support": "count: 208, universe: mapped countries and territories with data.",
         "evidence": {}
       },
       {
         "surface": "beat_0",
-        "text": "Greenland is the world's lowest among these countries with 0 people per square kilometre.",
+        "text": "Every square kilometre of Bangladesh holds 1,333 people. In Australia, it is 4.",
+        "isos": [
+          "BGD",
+          "AUS"
+        ],
+        "support": "Bangladesh value 1333.35149419989 (display 1,333), Australia value 3.53710598992988 (display 4) per km².",
+        "evidence": {
+          "BGD": {
+            "name": "Bangladesh",
+            "value": 1333.35149419989,
+            "display": "1,333",
+            "year": 2024,
+            "unit": "per km²",
+            "rank": 5
+          },
+          "AUS": {
+            "name": "Australia",
+            "value": 3.53710598992988,
+            "display": "4",
+            "year": 2024,
+            "unit": "per km²",
+            "rank": 206
+          }
+        }
+      },
+      {
+        "surface": "beat_1",
+        "text": "Bangladesh holds 36 times what the USA holds, while the USA sits at 37.",
+        "isos": [
+          "BGD",
+          "USA"
+        ],
+        "support": "Bangladesh display 1,333, USA display 37 per km² (1333 / 37 ≈ 36).",
+        "evidence": {
+          "BGD": {
+            "name": "Bangladesh",
+            "value": 1333.35149419989,
+            "display": "1,333",
+            "year": 2024,
+            "unit": "per km²",
+            "rank": 5
+          },
+          "USA": {
+            "name": "United States",
+            "value": 37.1693654604249,
+            "display": "37",
+            "year": 2024,
+            "unit": "per km²",
+            "rank": 158
+          }
+        }
+      },
+      {
+        "surface": "beat_2",
+        "text": "Rwanda has 600. India has 488.",
+        "isos": [
+          "RWA",
+          "IND"
+        ],
+        "support": "Rwanda display 600, India display 488 per km².",
+        "evidence": {
+          "RWA": {
+            "name": "Rwanda",
+            "value": 599.948415578041,
+            "display": "600",
+            "year": 2024,
+            "unit": "per km²",
+            "rank": 11
+          },
+          "IND": {
+            "name": "India",
+            "value": 488.006414322664,
+            "display": "488",
+            "year": 2024,
+            "unit": "per km²",
+            "rank": 18
+          }
+        }
+      },
+      {
+        "surface": "beat_3",
+        "text": "China has 150. Brazil has 25.",
+        "isos": [
+          "CHN",
+          "BRA"
+        ],
+        "support": "China display 150, Brazil display 25 per km².",
+        "evidence": {
+          "CHN": {
+            "name": "China",
+            "value": 150.079195075526,
+            "display": "150",
+            "year": 2024,
+            "unit": "per km²",
+            "rank": 68
+          },
+          "BRA": {
+            "name": "Brazil",
+            "value": 25.3643242396035,
+            "display": "25",
+            "year": 2024,
+            "unit": "per km²",
+            "rank": 173
+          }
+        }
+      },
+      {
+        "surface": "beat_4",
+        "text": "The emptiest places on Earth include Libya at 4, Suriname at 4, and Mongolia at 2.",
+        "isos": [
+          "LBY",
+          "SUR",
+          "MNG"
+        ],
+        "support": "Libya display 4, Suriname display 4, Mongolia display 2 per km².",
+        "evidence": {
+          "LBY": {
+            "name": "Libya",
+            "value": 4.1948594519022,
+            "display": "4",
+            "year": 2024,
+            "unit": "per km²",
+            "rank": 201
+          },
+          "SUR": {
+            "name": "Suriname",
+            "value": 3.95265370906713,
+            "display": "4",
+            "year": 2024,
+            "unit": "per km²",
+            "rank": 202
+          },
+          "MNG": {
+            "name": "Mongolia",
+            "value": 2.26165292694361,
+            "display": "2",
+            "year": 2024,
+            "unit": "per km²",
+            "rank": 207
+          }
+        }
+      },
+      {
+        "surface": "beat_5",
+        "text": "Greenland has 0.",
         "isos": [
           "GRL"
         ],
-        "support": "Greenland (GRL) value: 0.13847274570044, display: 0, rank: 208",
+        "support": "Greenland display 0 per km².",
         "evidence": {
           "GRL": {
             "name": "Greenland",
@@ -1722,118 +1866,199 @@
         }
       },
       {
-        "surface": "beat_1",
-        "text": "Mapped across 208 countries and territories, dark blue is lowest, through grey-gold, to bright yellow for highest.",
-        "isos": [],
-        "support": "count: 208",
-        "evidence": {}
-      },
-      {
-        "surface": "beat_2",
-        "text": "Bangladesh reaches 1,333 people per square kilometre among these countries.",
-        "isos": [
-          "BGD"
-        ],
-        "support": "Bangladesh (BGD) value: 1333.35149419989, display: 1,333, rank: 5",
-        "evidence": {
-          "BGD": {
-            "name": "Bangladesh",
-            "value": 1333.35149419989,
-            "display": "1,333",
-            "year": 2024,
-            "unit": "per km²",
-            "rank": 5
-          }
-        }
-      },
-      {
-        "surface": "beat_3",
-        "text": "India measures 488 people per square kilometre among these countries.",
-        "isos": [
-          "IND"
-        ],
-        "support": "India (IND) value: 488.006414322664, display: 488, rank: 18",
-        "evidence": {
-          "IND": {
-            "name": "India",
-            "value": 488.006414322664,
-            "display": "488",
-            "year": 2024,
-            "unit": "per km²",
-            "rank": 18
-          }
-        }
-      },
-      {
-        "surface": "beat_4",
-        "text": "Australia measures 4 people per square kilometre among these countries.",
-        "isos": [
-          "AUS"
-        ],
-        "support": "Australia (AUS) value: 3.53710598992988, display: 4, rank: 206",
-        "evidence": {
-          "AUS": {
-            "name": "Australia",
-            "value": 3.53710598992988,
-            "display": "4",
-            "year": 2024,
-            "unit": "per km²",
-            "rank": 206
-          }
-        }
-      },
-      {
-        "surface": "beat_5",
-        "text": "Population density is midyear population divided by land area in square kilometers.",
-        "isos": [],
-        "support": "Definition: Population density is midyear population divided by land area in square kilometers.",
-        "evidence": {}
-      },
-      {
         "surface": "beat_6",
-        "text": "So where is your country?",
+        "text": "Where does your country land?",
         "isos": [],
-        "support": "Closing rhetorical question",
+        "support": "Call to action prompt for the audience.",
         "evidence": {}
       },
       {
         "surface": "card_6",
-        "text": "So where is your country? World Bank population density",
+        "text": "Where does your country land?",
         "isos": [],
-        "support": "Closing card summary",
+        "support": "Card heading matching beat_6.",
         "evidence": {}
       },
       {
         "surface": "title",
-        "text": "The emptiest and most crowded places by density",
+        "text": "The Emptiest and Most Crowded places",
         "isos": [],
-        "support": "Accurately reflects ranking concept across the dataset.",
+        "support": "Accurately describes content comparing high and low density places.",
         "method": "complete-surface-check",
         "evidence": {}
       },
       {
         "surface": "hook",
-        "text": "LOWEST DENSITY",
+        "text": "CROWDED VS EMPTY",
         "isos": [],
-        "support": "Matches the focus on low density for Greenland.",
+        "support": "Summarizes the crowded vs empty theme.",
         "method": "complete-surface-check",
         "evidence": {}
       },
       {
         "surface": "description",
-        "text": "Population density across 208 countries and territories using World Bank data.",
+        "text": "Population density across 208 countries and territories.",
         "isos": [],
-        "support": "Count of 208 and World Bank source match evidence metadata.",
+        "support": "Matches the dataset count of 208 countries and territories.",
         "method": "complete-surface-check",
         "evidence": {}
       },
       {
         "surface": "beat_0",
-        "text": "Greenland is the world's lowest among these countries with 0 people per square kilometre.",
+        "text": "Every square kilometre of Bangladesh holds 1,333 people. In Australia, it is 4.",
+        "isos": [
+          "BGD",
+          "AUS"
+        ],
+        "support": "Values match Bangladesh (1,333) and Australia (4) displays.",
+        "method": "complete-surface-check",
+        "evidence": {
+          "BGD": {
+            "name": "Bangladesh",
+            "value": 1333.35149419989,
+            "display": "1,333",
+            "year": 2024,
+            "unit": "per km²",
+            "rank": 5
+          },
+          "AUS": {
+            "name": "Australia",
+            "value": 3.53710598992988,
+            "display": "4",
+            "year": 2024,
+            "unit": "per km²",
+            "rank": 206
+          }
+        }
+      },
+      {
+        "surface": "beat_1",
+        "text": "Bangladesh holds 36 times what the USA holds, while the USA sits at 37.",
+        "isos": [
+          "BGD",
+          "USA"
+        ],
+        "support": "Accurately relates Bangladesh and USA values and ratio.",
+        "method": "complete-surface-check",
+        "evidence": {
+          "BGD": {
+            "name": "Bangladesh",
+            "value": 1333.35149419989,
+            "display": "1,333",
+            "year": 2024,
+            "unit": "per km²",
+            "rank": 5
+          },
+          "USA": {
+            "name": "United States",
+            "value": 37.1693654604249,
+            "display": "37",
+            "year": 2024,
+            "unit": "per km²",
+            "rank": 158
+          }
+        }
+      },
+      {
+        "surface": "beat_2",
+        "text": "Rwanda has 600. India has 488.",
+        "isos": [
+          "RWA",
+          "IND"
+        ],
+        "support": "Values match Rwanda (600) and India (488) displays.",
+        "method": "complete-surface-check",
+        "evidence": {
+          "RWA": {
+            "name": "Rwanda",
+            "value": 599.948415578041,
+            "display": "600",
+            "year": 2024,
+            "unit": "per km²",
+            "rank": 11
+          },
+          "IND": {
+            "name": "India",
+            "value": 488.006414322664,
+            "display": "488",
+            "year": 2024,
+            "unit": "per km²",
+            "rank": 18
+          }
+        }
+      },
+      {
+        "surface": "beat_3",
+        "text": "China has 150. Brazil has 25.",
+        "isos": [
+          "CHN",
+          "BRA"
+        ],
+        "support": "Values match China (150) and Brazil (25) displays.",
+        "method": "complete-surface-check",
+        "evidence": {
+          "CHN": {
+            "name": "China",
+            "value": 150.079195075526,
+            "display": "150",
+            "year": 2024,
+            "unit": "per km²",
+            "rank": 68
+          },
+          "BRA": {
+            "name": "Brazil",
+            "value": 25.3643242396035,
+            "display": "25",
+            "year": 2024,
+            "unit": "per km²",
+            "rank": 173
+          }
+        }
+      },
+      {
+        "surface": "beat_4",
+        "text": "The emptiest places on Earth include Libya at 4, Suriname at 4, and Mongolia at 2.",
+        "isos": [
+          "LBY",
+          "SUR",
+          "MNG"
+        ],
+        "support": "Values match Libya (4), Suriname (4), and Mongolia (2) displays.",
+        "method": "complete-surface-check",
+        "evidence": {
+          "LBY": {
+            "name": "Libya",
+            "value": 4.1948594519022,
+            "display": "4",
+            "year": 2024,
+            "unit": "per km²",
+            "rank": 201
+          },
+          "SUR": {
+            "name": "Suriname",
+            "value": 3.95265370906713,
+            "display": "4",
+            "year": 2024,
+            "unit": "per km²",
+            "rank": 202
+          },
+          "MNG": {
+            "name": "Mongolia",
+            "value": 2.26165292694361,
+            "display": "2",
+            "year": 2024,
+            "unit": "per km²",
+            "rank": 207
+          }
+        }
+      },
+      {
+        "surface": "beat_5",
+        "text": "Greenland has 0.",
         "isos": [
           "GRL"
         ],
-        "support": "Greenland has the lowest display value of 0 (rank 208).",
+        "support": "Value matches Greenland (0) display.",
         "method": "complete-surface-check",
         "evidence": {
           "GRL": {
@@ -1847,94 +2072,21 @@
         }
       },
       {
-        "surface": "beat_1",
-        "text": "Mapped across 208 countries and territories, dark blue is lowest, through grey-gold, to bright yellow for highest.",
-        "isos": [],
-        "support": "Describes map color scale across 208 countries and territories.",
-        "method": "complete-surface-check",
-        "evidence": {}
-      },
-      {
-        "surface": "beat_2",
-        "text": "Bangladesh reaches 1,333 people per square kilometre among these countries.",
-        "isos": [
-          "BGD"
-        ],
-        "support": "Bangladesh display value is 1,333 per km².",
-        "method": "complete-surface-check",
-        "evidence": {
-          "BGD": {
-            "name": "Bangladesh",
-            "value": 1333.35149419989,
-            "display": "1,333",
-            "year": 2024,
-            "unit": "per km²",
-            "rank": 5
-          }
-        }
-      },
-      {
-        "surface": "beat_3",
-        "text": "India measures 488 people per square kilometre among these countries.",
-        "isos": [
-          "IND"
-        ],
-        "support": "India display value is 488 per km².",
-        "method": "complete-surface-check",
-        "evidence": {
-          "IND": {
-            "name": "India",
-            "value": 488.006414322664,
-            "display": "488",
-            "year": 2024,
-            "unit": "per km²",
-            "rank": 18
-          }
-        }
-      },
-      {
-        "surface": "beat_4",
-        "text": "Australia measures 4 people per square kilometre among these countries.",
-        "isos": [
-          "AUS"
-        ],
-        "support": "Australia display value is 4 per km².",
-        "method": "complete-surface-check",
-        "evidence": {
-          "AUS": {
-            "name": "Australia",
-            "value": 3.53710598992988,
-            "display": "4",
-            "year": 2024,
-            "unit": "per km²",
-            "rank": 206
-          }
-        }
-      },
-      {
-        "surface": "beat_5",
-        "text": "Population density is midyear population divided by land area in square kilometers.",
-        "isos": [],
-        "support": "Matches the official indicator definition text verbatim.",
-        "method": "complete-surface-check",
-        "evidence": {}
-      },
-      {
         "surface": "beat_6",
-        "text": "So where is your country?",
+        "text": "Where does your country land?",
         "isos": [],
-        "support": "Standard closing question.",
+        "support": "Consistent closing prompt.",
         "method": "complete-surface-check",
         "evidence": {}
       },
       {
         "surface": "card_6",
         "text": [
-          "So where is your country?",
-          "World Bank population density"
+          "Where does your country land?",
+          "People per square kilometre"
         ],
         "isos": [],
-        "support": "Accurately names the indicator and source topic.",
+        "support": "Card elements match the visual plan and prompt.",
         "method": "complete-surface-check",
         "evidence": {}
       }
@@ -1942,71 +2094,81 @@
     "surface_checks": {
       "title": {
         "supported": true,
-        "reason": "Accurately reflects ranking concept across the dataset.",
+        "reason": "Accurately describes content comparing high and low density places.",
         "isos": []
       },
       "hook": {
         "supported": true,
-        "reason": "Matches the focus on low density for Greenland.",
+        "reason": "Summarizes the crowded vs empty theme.",
         "isos": []
       },
       "description": {
         "supported": true,
-        "reason": "Count of 208 and World Bank source match evidence metadata.",
+        "reason": "Matches the dataset count of 208 countries and territories.",
         "isos": []
       },
       "beat_0": {
         "supported": true,
-        "reason": "Greenland has the lowest display value of 0 (rank 208).",
+        "reason": "Values match Bangladesh (1,333) and Australia (4) displays.",
         "isos": [
-          "GRL"
+          "BGD",
+          "AUS"
         ]
       },
       "beat_1": {
         "supported": true,
-        "reason": "Describes map color scale across 208 countries and territories.",
-        "isos": []
+        "reason": "Accurately relates Bangladesh and USA values and ratio.",
+        "isos": [
+          "BGD",
+          "USA"
+        ]
       },
       "beat_2": {
         "supported": true,
-        "reason": "Bangladesh display value is 1,333 per km².",
+        "reason": "Values match Rwanda (600) and India (488) displays.",
         "isos": [
-          "BGD"
+          "RWA",
+          "IND"
         ]
       },
       "beat_3": {
         "supported": true,
-        "reason": "India display value is 488 per km².",
+        "reason": "Values match China (150) and Brazil (25) displays.",
         "isos": [
-          "IND"
+          "CHN",
+          "BRA"
         ]
       },
       "beat_4": {
         "supported": true,
-        "reason": "Australia display value is 4 per km².",
+        "reason": "Values match Libya (4), Suriname (4), and Mongolia (2) displays.",
         "isos": [
-          "AUS"
+          "LBY",
+          "SUR",
+          "MNG"
         ]
       },
       "beat_5": {
         "supported": true,
-        "reason": "Matches the official indicator definition text verbatim.",
-        "isos": []
+        "reason": "Value matches Greenland (0) display.",
+        "isos": [
+          "GRL"
+        ]
       },
       "beat_6": {
         "supported": true,
-        "reason": "Standard closing question.",
+        "reason": "Consistent closing prompt.",
         "isos": []
       },
       "card_6": {
         "supported": true,
-        "reason": "Accurately names the indicator and source topic.",
+        "reason": "Card elements match the visual plan and prompt.",
         "isos": []
       }
     },
     "warnings": []
   },
-  "script_sha256": "a0d58f15e96fbe687088b22b75284e0bf6feefadc23f124bfde7b748f243cb4e",
-  "data_sha256": "fca23feaf60cbe0736dcd645b530a8e3f352ebb36e5cca7a0d68b36e0c82018f",
+  "script_sha256": "994f60015fca809b18c0ac8e769accca36ae636c008e93f74160382dc4943be6",
+  "data_sha256": "c281ae48d97c667b934a8cc8f98613eeb015bcf4cdb948ff1ea8580164980ed1",
   "reviewer_model": "gemini-3.5-flash-lite"
 }

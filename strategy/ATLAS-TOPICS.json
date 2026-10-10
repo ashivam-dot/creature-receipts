@@ -262,7 +262,7 @@
    "value_format": "{v:.0f}%",
    "source_url": "https://data.worldbank.org/indicator/EG.ELC.ACCS.ZS",
    "publisher_note": "SDG 7",
-   "status": "open"
+   "status": "failed:RuntimeError"
   },
   {
    "id": "t011",
@@ -298,7 +298,7 @@
    "value_format": "{v:,.0f}",
    "source_url": "https://data.worldbank.org/indicator/EN.POP.DNST",
    "publisher_note": "FAO population estimates, Food and Agriculture Organization of the United Nations (FAO), publisher: Food and Agriculture Organization of the United Nations (FAO);\nWorld Bank population estimates, Worl",
-   "status": "ready:atlas013"
+   "status": "ready:atlas019"
   },
   {
    "id": "t012",
@@ -334,7 +334,7 @@
    "value_format": "{v:.0f}%",
    "source_url": "https://data.worldbank.org/indicator/BX.TRF.PWKR.DT.GD.ZS",
    "publisher_note": "Staff estimates, World Bank (WB);\nIMF balance of payments data, International Monetary Fund (IMF);\nWorld Bank GDP estimates, World Bank (WB);\nOECD GDP estimates, Organisation for Economic Co-operation",
-   "status": "ready:atlas011"
+   "status": "used:atlas011"
   },
   {
    "id": "t013",
@@ -370,7 +370,7 @@
    "value_format": "{v:.0f}%",
    "source_url": "https://data.worldbank.org/indicator/EG.FEC.RNEW.ZS",
    "publisher_note": "IEA Energy Statistics Data Browser, International Energy Agency (IEA), uri: https://www",
-   "status": "open"
+   "status": "failed:ValueError"
   },
   {
    "id": "t014",
@@ -980,7 +980,7 @@
     "#population"
    ],
    "source_url": "https://ourworldindata.org/grapher/median-age",
-   "status": "open",
+   "status": "ready:atlas017",
    "added_by": "atlas-v2"
   },
   {
@@ -1066,7 +1066,7 @@
     "#food"
    ],
    "source_url": "https://ourworldindata.org/grapher/daily-per-capita-caloric-supply",
-   "status": "ready:atlas016",
+   "status": "used:atlas016",
    "added_by": "atlas-v2"
   },
   {

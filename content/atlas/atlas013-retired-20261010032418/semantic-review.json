@@ -1,0 +1,182 @@
+{
+  "errors": [
+    {
+      "surface": "beat_1",
+      "claim": "That is 24 times Brazil, which has 25.",
+      "reason": "600 divided by 25 is 24, but the text phrasing 'That is 24 times Brazil' can be interpreted loosely; however, mathematically 600/25 = 24. Wait, let's check Rwanda value: 599.948 (display 600). Brazil value: 25.36 (display 25). 599.948 / 25.364 = 23.65 times, but using display values 600/25 = 24. No factual error here since rounding is allowed.",
+      "severity": "info"
+    }
+  ],
+  "claims": [
+    {
+      "surface": "title",
+      "text": "The Most Crowded and Empty places on Earth",
+      "isos": [],
+      "support": "Global population density range from 0.138 (Greenland) to 8,329 (Singapore)."
+    },
+    {
+      "surface": "hook",
+      "text": "CROWDED AND EMPTY",
+      "isos": [],
+      "support": "Global population density extremes."
+    },
+    {
+      "surface": "description",
+      "text": "Population density across the world, from dense islands to empty giants.",
+      "isos": [],
+      "support": "Population density indicator EN.POP.DNST."
+    },
+    {
+      "surface": "beat_0",
+      "text": "Every square kilometre of Bangladesh holds 1,333 people. In Australia, it is 4.",
+      "isos": [
+        "BGD",
+        "AUS"
+      ],
+      "support": "Bangladesh value is 1333.35 (display 1,333), Australia value is 3.537 (display 4)."
+    },
+    {
+      "surface": "beat_1",
+      "text": "Rwanda has 600 people per square kilometre. That is 24 times Brazil, which has 25.",
+      "isos": [
+        "RWA",
+        "BRA"
+      ],
+      "support": "Rwanda value is 599.948 (display 600), Brazil value is 25.364 (display 25)."
+    },
+    {
+      "surface": "beat_2",
+      "text": "At the other extreme, Greenland is the lowest, with its value at 0.",
+      "isos": [
+        "GRL"
+      ],
+      "support": "Greenland value is 0.13847 (display 0), rank 208 (lowest in universe)."
+    },
+    {
+      "surface": "beat_3",
+      "text": "The Netherlands has 534. This is one of the highest values in Europe.",
+      "isos": [
+        "NLD"
+      ],
+      "support": "Netherlands value is 534.407 (display 534)."
+    },
+    {
+      "surface": "beat_4",
+      "text": "India and China, the giants, aren't the most crowded. India has 488. China, just 150.",
+      "isos": [
+        "IND",
+        "CHN"
+      ],
+      "support": "India value is 488.006 (display 488), China value is 150.079 (display 150)."
+    },
+    {
+      "surface": "beat_5",
+      "text": "The emptiest big countries? Mongolia has 2, Australia has 4, Canada has 5, and Russia has 9.",
+      "isos": [
+        "MNG",
+        "AUS",
+        "CAN",
+        "RUS"
+      ],
+      "support": "Mongolia value is 2.261 (display 2), Australia value is 3.537 (display 4), Canada value is 4.694 (display 5), Russia value is 8.772 (display 9)."
+    },
+    {
+      "surface": "beat_6",
+      "text": "Population density is midyear population divided by land area in square kilometers.",
+      "isos": [],
+      "support": "Population density is midyear population divided by land area in square kilometers."
+    },
+    {
+      "surface": "beat_7",
+      "text": "Where does your country land?",
+      "isos": [],
+      "support": "Card prompt."
+    },
+    {
+      "surface": "card_7",
+      "text": "Where does your country land? People per square kilometre",
+      "isos": [],
+      "support": "Card text and unit."
+    }
+  ],
+  "surface_checks": {
+    "title": {
+      "supported": true,
+      "reason": "The title correctly reflects a video about population density extremes.",
+      "isos": []
+    },
+    "hook": {
+      "supported": true,
+      "reason": "The hook highlights crowded and empty places.",
+      "isos": []
+    },
+    "description": {
+      "supported": true,
+      "reason": "Description matches the population density dataset.",
+      "isos": []
+    },
+    "beat_0": {
+      "supported": true,
+      "reason": "Bangladesh (1,333) and Australia (4) match the source data.",
+      "isos": [
+        "BGD",
+        "AUS"
+      ]
+    },
+    "beat_1": {
+      "supported": true,
+      "reason": "Rwanda (600) and Brazil (25) match display values.",
+      "isos": [
+        "RWA",
+        "BRA"
+      ]
+    },
+    "beat_2": {
+      "supported": true,
+      "reason": "Greenland has the lowest density in the dataset (display 0).",
+      "isos": [
+        "GRL"
+      ]
+    },
+    "beat_3": {
+      "supported": true,
+      "reason": "Netherlands value is 534, matching the display value.",
+      "isos": [
+        "NLD"
+      ]
+    },
+    "beat_4": {
+      "supported": true,
+      "reason": "India (488) and China (150) match source data.",
+      "isos": [
+        "IND",
+        "CHN"
+      ]
+    },
+    "beat_5": {
+      "supported": true,
+      "reason": "Mongolia (2), Australia (4), Canada (5), and Russia (9) match display values.",
+      "isos": [
+        "MNG",
+        "AUS",
+        "CAN",
+        "RUS"
+      ]
+    },
+    "beat_6": {
+      "supported": true,
+      "reason": "Matches the official definition provided in the source metadata.",
+      "isos": []
+    },
+    "beat_7": {
+      "supported": true,
+      "reason": "Standard concluding prompt.",
+      "isos": []
+    },
+    "card_7": {
+      "supported": true,
+      "reason": "Card displays correct unit 'per km²'.",
+      "isos": []
+    }
+  }
+}

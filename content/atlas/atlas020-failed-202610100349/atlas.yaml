@@ -1,0 +1,71 @@
+id: atlas020
+title: Renewable Share of Energy Use Worldwide
+format: rank_ladder
+hook_text: THE RENEWABLE GAP
+description: Renewable share of total final energy consumption, including biomass where counted, across 206 countries
+  and territories.
+hashtags:
+- '#maps'
+- '#geography'
+- '#data'
+sources:
+- https://data.worldbank.org/indicator/EG.FEC.RNEW.ZS
+dataset:
+  kind: worldbank
+  indicator: EG.FEC.RNEW.ZS
+  label: Renewable share of energy use
+  unit: '%'
+  source: World Bank
+  min_year: 2019
+scale:
+  edges:
+  - 10.0
+  - 25.0
+  - 50.0
+  - 75.0
+  - 90.0
+  labels:
+  - <10%
+  - 10-25
+  - 25-50
+  - 50-75
+  - 75-90
+  - 90%+
+value_format: '{v:.0f}%'
+beats:
+- text: DR Congo draws 96% of its energy from renewables. Qatar sits at 0%.
+  shot:
+    callouts:
+    - COD
+    - QAT
+- text: DR Congo has 8.7 times the 11% found in the USA.
+  shot:
+    kind: country
+    iso: COD
+- text: India and China draw 35% and 15% respectively.
+  shot:
+    kind: group
+    isos:
+    - IND
+    - CHN
+- text: 'The top countries lead the world: DR Congo hits 96%, Somalia hits 95%, and Liberia hits 93%.'
+  shot:
+    kind: rank
+    isos:
+    - COD
+    - SOM
+    - LBR
+- text: Nigeria draws 80%, outperforming many industrial nations.
+  shot:
+    kind: country
+    iso: NGA
+- text: Qatar sits at 0%.
+  shot:
+    kind: country
+    iso: QAT
+- text: Where does your country land?
+  shot:
+    kind: card
+    lines:
+    - Where does your country land?
+    - Renewable energy consumption is the share of renewable energy in total final energy consumption.

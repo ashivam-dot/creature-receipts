@@ -1,0 +1,164 @@
+{
+  "errors": [],
+  "claims": [
+    {
+      "surface": "title",
+      "text": "The Emptiest and Most Crowded places",
+      "isos": [],
+      "support": "Global population density universe across 208 countries and territories."
+    },
+    {
+      "surface": "hook",
+      "text": "CROWDED VS EMPTY",
+      "isos": [],
+      "support": "Contrast between high and low population density places in the dataset."
+    },
+    {
+      "surface": "description",
+      "text": "Population density across 208 countries and territories.",
+      "isos": [],
+      "support": "count: 208, universe: mapped countries and territories with data."
+    },
+    {
+      "surface": "beat_0",
+      "text": "Every square kilometre of Bangladesh holds 1,333 people. In Australia, it is 4.",
+      "isos": [
+        "BGD",
+        "AUS"
+      ],
+      "support": "Bangladesh value 1333.35149419989 (display 1,333), Australia value 3.53710598992988 (display 4) per km²."
+    },
+    {
+      "surface": "beat_1",
+      "text": "Bangladesh holds 36 times what the USA holds, while the USA sits at 37.",
+      "isos": [
+        "BGD",
+        "USA"
+      ],
+      "support": "Bangladesh display 1,333, USA display 37 per km² (1333 / 37 ≈ 36)."
+    },
+    {
+      "surface": "beat_2",
+      "text": "Rwanda has 600. India has 488.",
+      "isos": [
+        "RWA",
+        "IND"
+      ],
+      "support": "Rwanda display 600, India display 488 per km²."
+    },
+    {
+      "surface": "beat_3",
+      "text": "China has 150. Brazil has 25.",
+      "isos": [
+        "CHN",
+        "BRA"
+      ],
+      "support": "China display 150, Brazil display 25 per km²."
+    },
+    {
+      "surface": "beat_4",
+      "text": "The emptiest places on Earth include Libya at 4, Suriname at 4, and Mongolia at 2.",
+      "isos": [
+        "LBY",
+        "SUR",
+        "MNG"
+      ],
+      "support": "Libya display 4, Suriname display 4, Mongolia display 2 per km²."
+    },
+    {
+      "surface": "beat_5",
+      "text": "Greenland has 0.",
+      "isos": [
+        "GRL"
+      ],
+      "support": "Greenland display 0 per km²."
+    },
+    {
+      "surface": "beat_6",
+      "text": "Where does your country land?",
+      "isos": [],
+      "support": "Call to action prompt for the audience."
+    },
+    {
+      "surface": "card_6",
+      "text": "Where does your country land?",
+      "isos": [],
+      "support": "Card heading matching beat_6."
+    }
+  ],
+  "surface_checks": {
+    "title": {
+      "supported": true,
+      "reason": "Accurately describes content comparing high and low density places.",
+      "isos": []
+    },
+    "hook": {
+      "supported": true,
+      "reason": "Summarizes the crowded vs empty theme.",
+      "isos": []
+    },
+    "description": {
+      "supported": true,
+      "reason": "Matches the dataset count of 208 countries and territories.",
+      "isos": []
+    },
+    "beat_0": {
+      "supported": true,
+      "reason": "Values match Bangladesh (1,333) and Australia (4) displays.",
+      "isos": [
+        "BGD",
+        "AUS"
+      ]
+    },
+    "beat_1": {
+      "supported": true,
+      "reason": "Accurately relates Bangladesh and USA values and ratio.",
+      "isos": [
+        "BGD",
+        "USA"
+      ]
+    },
+    "beat_2": {
+      "supported": true,
+      "reason": "Values match Rwanda (600) and India (488) displays.",
+      "isos": [
+        "RWA",
+        "IND"
+      ]
+    },
+    "beat_3": {
+      "supported": true,
+      "reason": "Values match China (150) and Brazil (25) displays.",
+      "isos": [
+        "CHN",
+        "BRA"
+      ]
+    },
+    "beat_4": {
+      "supported": true,
+      "reason": "Values match Libya (4), Suriname (4), and Mongolia (2) displays.",
+      "isos": [
+        "LBY",
+        "SUR",
+        "MNG"
+      ]
+    },
+    "beat_5": {
+      "supported": true,
+      "reason": "Value matches Greenland (0) display.",
+      "isos": [
+        "GRL"
+      ]
+    },
+    "beat_6": {
+      "supported": true,
+      "reason": "Consistent closing prompt.",
+      "isos": []
+    },
+    "card_6": {
+      "supported": true,
+      "reason": "Card elements match the visual plan and prompt.",
+      "isos": []
+    }
+  }
+}

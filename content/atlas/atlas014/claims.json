@@ -1192,7 +1192,7 @@
         "isos": [
           "FIN"
         ],
-        "support": "Finland value is 7.764, displayed as 7.8 out of 10",
+        "support": "Finland value is 7.764, display 7.8 out of 10",
         "evidence": {
           "FIN": {
             "name": "Finland",
@@ -1208,7 +1208,7 @@
         "surface": "hook",
         "text": "THE LIFE LADDER",
         "isos": [],
-        "support": "Indicator definition uses the Cantril ladder question",
+        "support": "Indicator name is happiness-cantril-ladder",
         "evidence": {}
       },
       {
@@ -1218,7 +1218,7 @@
           "FIN",
           "AFG"
         ],
-        "support": "Finland rank 1 (value 7.764), Afghanistan rank 146 (value 1.446), scale 0 to 10",
+        "support": "Finland rank 1 (7.764), Afghanistan rank 146 (1.446) on 0 to 10 scale",
         "evidence": {
           "FIN": {
             "name": "Finland",
@@ -1245,7 +1245,7 @@
           "FIN",
           "AFG"
         ],
-        "support": "Finland display 7.8, Afghanistan display 1.4, scale 0 to 10",
+        "support": "Finland value 7.764, display 7.8; Afghanistan value 1.446, display 1.4",
         "evidence": {
           "FIN": {
             "name": "Finland",
@@ -1271,7 +1271,7 @@
         "isos": [
           "FIN"
         ],
-        "support": "Finland rank is 1 out of 146, value 7.764",
+        "support": "Finland rank 1",
         "evidence": {
           "FIN": {
             "name": "Finland",
@@ -1292,7 +1292,7 @@
           "CRI",
           "SWE"
         ],
-        "support": "Iceland display 7.5 (rank 2), Denmark display 7.5 (rank 3), Costa Rica display 7.4 (rank 4), Sweden display 7.3 (rank 5)",
+        "support": "Iceland value 7.54, display 7.5; Denmark value 7.539, display 7.5; Costa Rica value 7.439, display 7.4; Sweden value 7.255, display 7.3",
         "evidence": {
           "ISL": {
             "name": "Iceland",
@@ -1335,7 +1335,7 @@
           "USA",
           "IND"
         ],
-        "support": "United States display 6.8 (rank 22), India display 4.5 (rank 115)",
+        "support": "United States value 6.816, display 6.8; India value 4.536, display 4.5",
         "evidence": {
           "USA": {
             "name": "United States",
@@ -1361,7 +1361,7 @@
         "isos": [
           "MWI"
         ],
-        "support": "Malawi display 3.3, rank 144",
+        "support": "Malawi value 3.284, display 3.3, rank 144",
         "evidence": {
           "MWI": {
             "name": "Malawi",
@@ -1379,7 +1379,7 @@
         "isos": [
           "AFG"
         ],
-        "support": "Afghanistan display 1.4, rank 146",
+        "support": "Afghanistan value 1.446, display 1.4, rank 146",
         "evidence": {
           "AFG": {
             "name": "Afghanistan",
@@ -1395,14 +1395,14 @@
         "surface": "beat_6",
         "text": "Which step are you on?",
         "isos": [],
-        "support": "Cantril ladder question text",
+        "support": "Cantril ladder question: on which step do you feel you stand now?",
         "evidence": {}
       },
       {
         "surface": "card_6",
         "text": "Which step are you on?, Cantril Life Ladder, 2025",
         "isos": [],
-        "support": "Question and metadata year 2025",
+        "support": "Year label is 2025 and question matches ladder definition",
         "evidence": {}
       },
       {
@@ -1411,7 +1411,7 @@
         "isos": [
           "FIN"
         ],
-        "support": "Finland's value is 7.764, correctly rounded and displayed as 7.8 out of 10.",
+        "support": "Finland's value is 7.764, which rounds to 7.8 out of 10.",
         "method": "complete-surface-check",
         "evidence": {
           "FIN": {
@@ -1428,7 +1428,7 @@
         "surface": "hook",
         "text": "THE LIFE LADDER",
         "isos": [],
-        "support": "The indicator is based on the Cantril ladder question.",
+        "support": "Matches the Cantril Life Ladder indicator theme.",
         "method": "complete-surface-check",
         "evidence": {}
       },
@@ -1439,7 +1439,7 @@
           "FIN",
           "AFG"
         ],
-        "support": "Finland is ranked 1st and Afghanistan is ranked 146th on a 0 to 10 scale.",
+        "support": "Finland is ranked highest (1st) and Afghanistan is ranked lowest (146th).",
         "method": "complete-surface-check",
         "evidence": {
           "FIN": {
@@ -1467,7 +1467,7 @@
           "FIN",
           "AFG"
         ],
-        "support": "Finland display is 7.8 and Afghanistan display is 1.4 out of 10.",
+        "support": "Finland display is 7.8 and Afghanistan display is 1.4.",
         "method": "complete-surface-check",
         "evidence": {
           "FIN": {
@@ -1494,7 +1494,7 @@
         "isos": [
           "FIN"
         ],
-        "support": "Finland has rank 1, making it the highest in the dataset.",
+        "support": "Finland is rank 1 in the dataset.",
         "method": "complete-surface-check",
         "evidence": {
           "FIN": {
@@ -1516,7 +1516,7 @@
           "CRI",
           "SWE"
         ],
-        "support": "Iceland (7.5), Denmark (7.5), Costa Rica (7.4), and Sweden (7.3) match their data displays and top rankings.",
+        "support": "Iceland (7.5), Denmark (7.5), Costa Rica (7.4), and Sweden (7.3) values match displays.",
         "method": "complete-surface-check",
         "evidence": {
           "ISL": {
@@ -1560,7 +1560,7 @@
           "USA",
           "IND"
         ],
-        "support": "United States display is 6.8 and India display is 4.5.",
+        "support": "USA display is 6.8 and India display is 4.5.",
         "method": "complete-surface-check",
         "evidence": {
           "USA": {
@@ -1587,7 +1587,7 @@
         "isos": [
           "MWI"
         ],
-        "support": "Malawi display is 3.3, near the bottom of the rankings.",
+        "support": "Malawi display is 3.3.",
         "method": "complete-surface-check",
         "evidence": {
           "MWI": {
@@ -1606,7 +1606,7 @@
         "isos": [
           "AFG"
         ],
-        "support": "Afghanistan rank is 146 with a display value of 1.4, the lowest in the dataset.",
+        "support": "Afghanistan display is 1.4 and is ranked 146th out of 146.",
         "method": "complete-surface-check",
         "evidence": {
           "AFG": {
@@ -1623,7 +1623,7 @@
         "surface": "beat_6",
         "text": "Which step are you on?",
         "isos": [],
-        "support": "Matches the Cantril ladder survey question text.",
+        "support": "Reflects the core question of the Cantril ladder.",
         "method": "complete-surface-check",
         "evidence": {}
       },
@@ -1634,7 +1634,7 @@
           "Cantril Life Ladder, 2025"
         ],
         "isos": [],
-        "support": "Matches the survey question and dataset year 2025.",
+        "support": "Matches question and year 2025.",
         "method": "complete-surface-check",
         "evidence": {}
       }
@@ -1642,19 +1642,19 @@
     "surface_checks": {
       "title": {
         "supported": true,
-        "reason": "Finland's value is 7.764, correctly rounded and displayed as 7.8 out of 10.",
+        "reason": "Finland's value is 7.764, which rounds to 7.8 out of 10.",
         "isos": [
           "FIN"
         ]
       },
       "hook": {
         "supported": true,
-        "reason": "The indicator is based on the Cantril ladder question.",
+        "reason": "Matches the Cantril Life Ladder indicator theme.",
         "isos": []
       },
       "description": {
         "supported": true,
-        "reason": "Finland is ranked 1st and Afghanistan is ranked 146th on a 0 to 10 scale.",
+        "reason": "Finland is ranked highest (1st) and Afghanistan is ranked lowest (146th).",
         "isos": [
           "FIN",
           "AFG"
@@ -1662,7 +1662,7 @@
       },
       "beat_0": {
         "supported": true,
-        "reason": "Finland display is 7.8 and Afghanistan display is 1.4 out of 10.",
+        "reason": "Finland display is 7.8 and Afghanistan display is 1.4.",
         "isos": [
           "FIN",
           "AFG"
@@ -1670,14 +1670,14 @@
       },
       "beat_1": {
         "supported": true,
-        "reason": "Finland has rank 1, making it the highest in the dataset.",
+        "reason": "Finland is rank 1 in the dataset.",
         "isos": [
           "FIN"
         ]
       },
       "beat_2": {
         "supported": true,
-        "reason": "Iceland (7.5), Denmark (7.5), Costa Rica (7.4), and Sweden (7.3) match their data displays and top rankings.",
+        "reason": "Iceland (7.5), Denmark (7.5), Costa Rica (7.4), and Sweden (7.3) values match displays.",
         "isos": [
           "ISL",
           "DNK",
@@ -1687,7 +1687,7 @@
       },
       "beat_3": {
         "supported": true,
-        "reason": "United States display is 6.8 and India display is 4.5.",
+        "reason": "USA display is 6.8 and India display is 4.5.",
         "isos": [
           "USA",
           "IND"
@@ -1695,26 +1695,26 @@
       },
       "beat_4": {
         "supported": true,
-        "reason": "Malawi display is 3.3, near the bottom of the rankings.",
+        "reason": "Malawi display is 3.3.",
         "isos": [
           "MWI"
         ]
       },
       "beat_5": {
         "supported": true,
-        "reason": "Afghanistan rank is 146 with a display value of 1.4, the lowest in the dataset.",
+        "reason": "Afghanistan display is 1.4 and is ranked 146th out of 146.",
         "isos": [
           "AFG"
         ]
       },
       "beat_6": {
         "supported": true,
-        "reason": "Matches the Cantril ladder survey question text.",
+        "reason": "Reflects the core question of the Cantril ladder.",
         "isos": []
       },
       "card_6": {
         "supported": true,
-        "reason": "Matches the survey question and dataset year 2025.",
+        "reason": "Matches question and year 2025.",
         "isos": []
       }
     },

@@ -1,0 +1,73 @@
+id: atlas013
+title: The Emptiest and Most Crowded places
+hook_text: CROWDED AND EMPTY
+description: Population density across 208 countries and territories, from Bangladesh to Greenland.
+hashtags:
+- '#maps'
+- '#geography'
+- '#data'
+sources:
+- https://data.worldbank.org/indicator/EN.POP.DNST
+dataset:
+  kind: worldbank
+  indicator: EN.POP.DNST
+  label: People per square kilometre
+  unit: per km²
+  source: World Bank
+  min_year: 2019
+scale:
+  edges:
+  - 10.0
+  - 25.0
+  - 50.0
+  - 100.0
+  - 250.0
+  labels:
+  - <10
+  - 10-25
+  - 25-50
+  - 50-100
+  - 100-250
+  - 250+
+beats:
+- text: Every square kilometre of Bangladesh holds 1,333 people. In Australia, it's 4.
+  shot:
+    callouts:
+    - BGD
+    - AUS
+- text: Bangladesh has 36 times the USA, where each square kilometre holds 37 people.
+  shot:
+    kind: group
+    isos:
+    - BGD
+    - USA
+- text: Rwanda has 600 people per square kilometre. Brazil has 25.
+  shot:
+    kind: group
+    isos:
+    - RWA
+    - BRA
+- text: India and China, the giants, sit in the middle. India has 488. China has 150.
+  shot:
+    kind: group
+    isos:
+    - IND
+    - CHN
+- text: The emptiest big countries? Mongolia, Australia, Canada and Russia, all under 10.
+  shot:
+    kind: rank
+    isos:
+    - MNG
+    - AUS
+    - CAN
+    - RUS
+- text: And Greenland holds 0 people per square kilometre, the lowest of all 208 countries and territories.
+  shot:
+    kind: country
+    iso: GRL
+- text: Where does your country land?
+  shot:
+    kind: card
+    lines:
+    - Where does your country land?
+    - People per square kilometre

@@ -1,0 +1,70 @@
+id: atlas017
+title: The Youngest and Oldest places on Earth
+hook_text: TWO WORLDS APART
+description: Median age across 219 countries and territories in 2023.
+hashtags:
+- '#geography'
+- '#maps'
+- '#population'
+sources:
+- https://ourworldindata.org/grapher/median-age
+dataset:
+  kind: owid
+  slug: median-age
+  column: median_age__sex_all__age_all__variant_estimates
+  label: Median age
+  unit: years
+  source: UN WPP via Our World in Data
+  min_year: 2020
+scale:
+  edges:
+  - 20.0
+  - 25.0
+  - 30.0
+  - 35.0
+  - 40.0
+  labels:
+  - <20
+  - 20-25
+  - 25-30
+  - 30-35
+  - 35-40
+  - 40+
+value_format: '{v:.0f}'
+beats:
+- text: Half of Niger is younger than 15 while half of Japan is older than 49.
+  shot:
+    callouts:
+    - NER
+    - JPN
+- text: 'Median age is the age that divides the population into two halves of equal size: half of the people are
+    older than it and half are younger.'
+  shot:
+    kind: country
+    iso: NER
+- text: Central African Rep. is the lowest of all 219 with a median age of 14.
+  shot:
+    kind: country
+    iso: CAF
+- text: Japan is 49, one of the highest on Earth.
+  shot:
+    kind: country
+    iso: JPN
+- text: Japan has 3.5 times Central African Rep.'s value.
+  shot:
+    kind: group
+    isos:
+    - JPN
+    - CAF
+- text: India sits at 28 and USA at 38.
+  shot:
+    kind: group
+    isos:
+    - IND
+    - USA
+- text: Where does your country land?
+  shot:
+    kind: card
+    lines:
+    - Where does your country land?
+    - Median age in 2023
