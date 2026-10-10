@@ -1,0 +1,70 @@
+id: atlas022
+title: Some places Supply 136 Kilograms of Meat
+format: rank_ladder
+hook_text: THE MEAT GAP
+description: A global comparison of meat supply per person, contrasting high-supply countries and territories like
+  Mongolia and Australia with India and Bangladesh.
+hashtags:
+- '#geography'
+- '#maps'
+- '#food'
+sources:
+- https://ourworldindata.org/grapher/meat-supply-per-person
+dataset:
+  kind: owid
+  slug: meat-supply-per-person
+  column: meat__total__00002943__food_available_for_consumption__0645pc__kilograms_per_year_per_capita
+  label: Meat available per person a year
+  unit: kg a year
+  source: FAO via Our World in Data
+  min_year: 2020
+scale:
+  edges:
+  - 10.0
+  - 25.0
+  - 50.0
+  - 80.0
+  labels:
+  - <10
+  - 10-25
+  - 25-50
+  - 50-80
+  - 80+
+value_format: '{v:.0f}'
+beats:
+- text: In kilograms of meat per person, Mongolia has 136. India has just 8.
+  shot:
+    callouts:
+    - MNG
+    - IND
+- text: That counts all meat supplied at retail, before any food is wasted at home.
+  shot:
+    kind: country
+    iso: MNG
+- text: 'High on the ladder: Australia with 117, Argentina with 115, and Brazil with 105.'
+  shot:
+    kind: rank
+    isos:
+    - AUS
+    - ARG
+    - BRA
+- text: Australia has 15 times the meat India has.
+  shot:
+    kind: group
+    isos:
+    - AUS
+    - IND
+- text: China has 74, well below the top group.
+  shot:
+    kind: country
+    iso: CHN
+- text: At the opposite end, Bangladesh has 4.
+  shot:
+    kind: country
+    iso: BGD
+- text: Where does your country land?
+  shot:
+    kind: card
+    lines:
+    - Where Do You Land?
+    - Meat Supply per Person

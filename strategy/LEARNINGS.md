@@ -38,10 +38,10 @@ Refreshed by every producer run (`atlas.stats`) from the channel's public feed o
 
 | Short | Topic | Published | Views | Likes | Views per hour |
 |---|---|---|---|---|---|
-| atlas001 137 Places Have More Mobile Subscriptions Than People | map_reveal | 2026-10-08 16:01 UTC | 1311 | 16 | 40.1 |
-| atlas002 45 places with Falling Populations | map_reveal | 2026-10-09 16:02 UTC | 4 | 0 | 0.5 |
-| atlas003 Below the fertility benchmark in 2024 | rank_ladder | 2026-10-08 20:01 UTC | 127 | 1 | 4.4 |
-| atlas004 47 places Where Life Expectancy Reaches 80 | map_reveal | 2026-10-08 23:01 UTC | 10 | 0 | 0.4 |
+| atlas001 137 Places Have More Mobile Subscriptions Than People | map_reveal | 2026-10-08 16:01 UTC | 1306 | 16 | 36.6 |
+| atlas002 45 places with Falling Populations | map_reveal | 2026-10-09 16:02 UTC | 4 | 0 | 0.3 |
+| atlas003 Below the fertility benchmark in 2024 | rank_ladder | 2026-10-08 20:01 UTC | 127 | 1 | 4.0 |
+| atlas004 47 places Where Life Expectancy Reaches 80 | map_reveal | 2026-10-08 23:01 UTC | 10 | 0 | 0.3 |
 
 ## Log
 

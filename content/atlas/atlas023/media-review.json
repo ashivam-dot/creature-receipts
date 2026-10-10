@@ -1,0 +1,24 @@
+{
+  "duration": 37.19,
+  "integrated_lufs": -14.4,
+  "true_peak_dbfs": -1.3,
+  "speech": {
+    "heard": "South Korea counts 48 fixed broadband subscriptions per 100 residents. India has three. France hits 49 subscriptions per 100 residents, giving it two times Brazil's 24. South Korea counts 48 subscriptions per 100 residents. China has 47 subscriptions per 100 residents. The USA has 39 subscriptions per 100 residents while India has three. The lowest places on Earth for high-speed fixed access include Dr. Kongo, Burundi and Chad at zero. Where does your country land?",
+    "model": "small.en",
+    "media_sha256": "da8aa97afd1fec9125dd07ea7fbd8bb64472a9edc187ef629ea6534d8f25e579",
+    "primary_differences": [
+      "'congo' heard as 'kongo' after 'access include doctor'"
+    ],
+    "differences": [
+      "'congo' heard as 'kongo' after 'access include doctor'"
+    ],
+    "corroboration": {
+      "model": "base.en",
+      "heard": "South Korea counts 48 fixed broadband subscriptions per 100 residents. India has three. France hits 49 subscriptions per 100 residents, giving it two times Brazil's 24. South Korea counts 48 subscriptions per 100 residents. China has 47 subscriptions per 100 residents. USA has 39 subscriptions per 100 residents while India has three. The lowest places on Earth for high-speed fixed access include Dr. Congo, Burundi, and Chad at zero. Where does your country land?",
+      "differences": [
+        "'the' heard as '(nothing)' after 'per 100 residents'"
+      ],
+      "resolved": []
+    }
+  }
+}

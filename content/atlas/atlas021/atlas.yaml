@@ -1,0 +1,72 @@
+id: atlas021
+title: Cuba has 9.5 doctors while Niger has 0.0
+format: rank_ladder
+hook_text: DOCTOR DIVIDE
+description: A global look at doctor availability per person, from Cuba's world-leading numbers to near zero in
+  parts of Central Africa.
+hashtags:
+- '#maps'
+- '#geography'
+- '#data'
+sources:
+- https://data.worldbank.org/indicator/SH.MED.PHYS.ZS
+dataset:
+  kind: worldbank
+  indicator: SH.MED.PHYS.ZS
+  label: Doctors per 1,000 people
+  unit: per 1,000
+  source: World Bank
+  min_year: 2019
+scale:
+  edges:
+  - 0.5
+  - 1.0
+  - 2.0
+  - 3.0
+  - 4.0
+  labels:
+  - <0.5
+  - 0.5-1
+  - 1-2
+  - 2-3
+  - 3-4
+  - 4+
+value_format: '{v:.1f}'
+beats:
+- text: Cuba has 9.5 doctors. Niger has 0.0.
+  shot:
+    callouts:
+    - CUB
+    - NER
+- text: Cuba is the world's highest, counting generalist and specialist medical practitioners.
+  shot:
+    kind: country
+    iso: CUB
+- text: 'The Americas split widely: the USA has 3.7 doctors, while Brazil has 2.4.'
+  shot:
+    kind: group
+    isos:
+    - USA
+    - BRA
+- text: Across Europe, Greece has 6.6, Portugal has 5.9, Austria has 5.5, and Norway has 5.0.
+  shot:
+    kind: rank
+    isos:
+    - GRC
+    - PRT
+    - AUT
+    - NOR
+- text: Further down the ladder, populous India has 0.7.
+  shot:
+    kind: country
+    iso: IND
+- text: Near the absolute bottom, Chad has 0.1.
+  shot:
+    kind: country
+    iso: TCD
+- text: Where does your country land?
+  shot:
+    kind: card
+    lines:
+    - Where are your doctors?
+    - Doctors per 1,000 people, World Bank

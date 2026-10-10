@@ -1,0 +1,66 @@
+id: atlas023
+title: Fixed Broadband Subscriptions Per 100 Residents
+hook_text: WIDE GAP
+description: Fixed broadband subscriptions per 100 residents across the globe.
+hashtags:
+- '#maps'
+- '#geography'
+- '#data'
+sources:
+- https://data.worldbank.org/indicator/IT.NET.BBND.P2
+dataset:
+  kind: worldbank
+  indicator: IT.NET.BBND.P2
+  label: Fixed broadband per 100 people
+  unit: per 100
+  source: World Bank
+  min_year: 2019
+scale:
+  edges:
+  - 1.0
+  - 5.0
+  - 15.0
+  - 30.0
+  - 40.0
+  labels:
+  - <1
+  - 1-5
+  - 5-15
+  - 15-30
+  - 30-40
+  - 40+
+value_format: '{v:.0f} per 100'
+beats:
+- text: France has 49 fixed broadband subscriptions per 100 residents. Chad has 0.
+  shot:
+    callouts:
+    - FRA
+    - TCD
+- text: This total counts high-speed access to the public internet at speeds equal to or greater than 256 kbit/s.
+  shot:
+    kind: country
+    iso: FRA
+- text: France has 49 per 100. Brazil has 24 per 100, exactly half that total.
+  shot:
+    kind: group
+    isos:
+    - FRA
+    - BRA
+- text: India hits 3 per 100.
+  shot:
+    kind: country
+    iso: IND
+- text: USA stands at 39 per 100.
+  shot:
+    kind: country
+    iso: USA
+- text: Chad is the lowest of all 202 countries and territories.
+  shot:
+    kind: country
+    iso: TCD
+- text: Where does your country land?
+  shot:
+    kind: card
+    lines:
+    - Where does your country land?
+    - Fixed broadband per 100 people

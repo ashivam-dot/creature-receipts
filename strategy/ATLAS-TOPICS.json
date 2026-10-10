@@ -478,7 +478,7 @@
    "value_format": "{v:.1f}",
    "source_url": "https://data.worldbank.org/indicator/SH.MED.PHYS.ZS",
    "publisher_note": "Global Health Workforce Statistics, World Health Organization (WHO);\nOrganisation for Economic Co-operation and Development (OECD);\nCountry data",
-   "status": "open"
+   "status": "ready:atlas021"
   },
   {
    "id": "t017",
@@ -514,7 +514,7 @@
    "value_format": "{v:.0f} per 100",
    "source_url": "https://data.worldbank.org/indicator/IT.NET.BBND.P2",
    "publisher_note": "World Telecommunication/ICT Indicators Database, International Telecommunication Union (ITU)",
-   "status": "open"
+   "status": "making:atlas023"
   },
   {
    "id": "t018",
@@ -1023,7 +1023,7 @@
     "#happiness"
    ],
    "source_url": "https://ourworldindata.org/grapher/happiness-cantril-ladder",
-   "status": "ready:atlas014",
+   "status": "used:atlas014",
    "added_by": "atlas-v2"
   },
   {
@@ -1109,7 +1109,7 @@
     "#food"
    ],
    "source_url": "https://ourworldindata.org/grapher/meat-supply-per-person",
-   "status": "open",
+   "status": "failed:ValueError",
    "added_by": "atlas-v2"
   }
  ]

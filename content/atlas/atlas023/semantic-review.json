@@ -1,0 +1,152 @@
+{
+  "errors": [],
+  "claims": [
+    {
+      "surface": "title",
+      "text": "Fixed Broadband Subscriptions Per 100 Residents",
+      "isos": [],
+      "support": "Indicator: Fixed broadband subscriptions (IT.NET.BBND.P2)"
+    },
+    {
+      "surface": "hook",
+      "text": "WIDE GAP",
+      "isos": [],
+      "support": "Range from 56 (CYM) down to 0 (TCD)"
+    },
+    {
+      "surface": "description",
+      "text": "Fixed broadband subscriptions per 100 residents across the globe.",
+      "isos": [],
+      "support": "Indicator definition and 202 mapped entities"
+    },
+    {
+      "surface": "beat_0",
+      "text": "France has 49 fixed broadband subscriptions per 100 residents. Chad has 0.",
+      "isos": [
+        "FRA",
+        "TCD"
+      ],
+      "support": "France value: 48.9251978969333, display: 49 per 100. Chad value: 0.0, display: 0 per 100."
+    },
+    {
+      "surface": "beat_1",
+      "text": "This total counts high-speed access to the public internet at speeds equal to or greater than 256 kbit/s.",
+      "isos": [],
+      "support": "Definition: Fixed broadband subscriptions refers to fixed subscriptions to high-speed access to the public Internet (a TCP/IP connection), at downstream speeds equal to, or greater than, 256 kbit/s."
+    },
+    {
+      "surface": "beat_2",
+      "text": "France has 49 per 100. Brazil has 24 per 100, exactly half that total.",
+      "isos": [
+        "FRA",
+        "BRA"
+      ],
+      "support": "France display: 49 per 100. Brazil value: 24.079199344422, display: 24 per 100."
+    },
+    {
+      "surface": "beat_3",
+      "text": "India hits 3 per 100.",
+      "isos": [
+        "IND"
+      ],
+      "support": "India value: 3.15046250037677, display: 3 per 100."
+    },
+    {
+      "surface": "beat_4",
+      "text": "USA stands at 39 per 100.",
+      "isos": [
+        "USA"
+      ],
+      "support": "United States value: 38.8571729185246, display: 39 per 100."
+    },
+    {
+      "surface": "beat_5",
+      "text": "Chad is the lowest of all 202 countries and territories.",
+      "isos": [
+        "TCD"
+      ],
+      "support": "Chad rank: 202 out of 202 count."
+    },
+    {
+      "surface": "beat_6",
+      "text": "Where does your country land?",
+      "isos": [],
+      "support": "Card visual prompt"
+    },
+    {
+      "surface": "card_6",
+      "text": "Where does your country land?",
+      "isos": [],
+      "support": "Card text"
+    }
+  ],
+  "surface_checks": {
+    "title": {
+      "supported": true,
+      "reason": "Accurately reflects the World Bank indicator.",
+      "isos": []
+    },
+    "hook": {
+      "supported": true,
+      "reason": "Reflects the broad distribution of broadband subscription rates.",
+      "isos": []
+    },
+    "description": {
+      "supported": true,
+      "reason": "Summarizes the dataset scope.",
+      "isos": []
+    },
+    "beat_0": {
+      "supported": true,
+      "reason": "France is 49 per 100 and Chad is 0 per 100 in the dataset.",
+      "isos": [
+        "FRA",
+        "TCD"
+      ]
+    },
+    "beat_1": {
+      "supported": true,
+      "reason": "Directly matches the official World Bank metadata definition.",
+      "isos": []
+    },
+    "beat_2": {
+      "supported": true,
+      "reason": "France is 49 and Brazil is 24 per 100.",
+      "isos": [
+        "FRA",
+        "BRA"
+      ]
+    },
+    "beat_3": {
+      "supported": true,
+      "reason": "India display is 3 per 100.",
+      "isos": [
+        "IND"
+      ]
+    },
+    "beat_4": {
+      "supported": true,
+      "reason": "United States display is 39 per 100.",
+      "isos": [
+        "USA"
+      ]
+    },
+    "beat_5": {
+      "supported": true,
+      "reason": "Chad has a rank of 202 out of 202.",
+      "isos": [
+        "TCD"
+      ]
+    },
+    "beat_6": {
+      "supported": true,
+      "reason": "Standard concluding prompt text.",
+      "isos": []
+    },
+    "card_6": {
+      "supported": true,
+      "reason": "Standard card layout text.",
+      "isos": []
+    }
+  }
+}

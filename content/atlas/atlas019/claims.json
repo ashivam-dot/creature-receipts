@@ -1686,21 +1686,21 @@
         "surface": "title",
         "text": "The Emptiest and Most Crowded places",
         "isos": [],
-        "support": "Global population density universe across 208 countries and territories.",
+        "support": "The video covers population density for 208 countries and territories ranging from high to low values.",
         "evidence": {}
       },
       {
         "surface": "hook",
         "text": "CROWDED VS EMPTY",
         "isos": [],
-        "support": "Contrast between high and low population density places in the dataset.",
+        "support": "The video highlights extreme high and low population densities.",
         "evidence": {}
       },
       {
         "surface": "description",
         "text": "Population density across 208 countries and territories.",
         "isos": [],
-        "support": "count: 208, universe: mapped countries and territories with data.",
+        "support": "count: 208, universe: mapped countries and territories with data",
         "evidence": {}
       },
       {
@@ -1710,7 +1710,7 @@
           "BGD",
           "AUS"
         ],
-        "support": "Bangladesh value 1333.35149419989 (display 1,333), Australia value 3.53710598992988 (display 4) per km².",
+        "support": "BGD: 1,3333.35149419989 (display: 1,333), AUS: 3.53710598992988 (display: 4)",
         "evidence": {
           "BGD": {
             "name": "Bangladesh",
@@ -1737,7 +1737,7 @@
           "BGD",
           "USA"
         ],
-        "support": "Bangladesh display 1,333, USA display 37 per km² (1333 / 37 ≈ 36).",
+        "support": "BGD value 1333.35 / USA value 37.17 = 35.87 times (rounds to 36). USA display: 37.",
         "evidence": {
           "BGD": {
             "name": "Bangladesh",
@@ -1764,7 +1764,7 @@
           "RWA",
           "IND"
         ],
-        "support": "Rwanda display 600, India display 488 per km².",
+        "support": "RWA: 599.948415578041 (display: 600), IND: 488.006414322664 (display: 488)",
         "evidence": {
           "RWA": {
             "name": "Rwanda",
@@ -1791,7 +1791,7 @@
           "CHN",
           "BRA"
         ],
-        "support": "China display 150, Brazil display 25 per km².",
+        "support": "CHN: 150.079195075526 (display: 150), BRA: 25.3643242396035 (display: 25)",
         "evidence": {
           "CHN": {
             "name": "China",
@@ -1819,7 +1819,7 @@
           "SUR",
           "MNG"
         ],
-        "support": "Libya display 4, Suriname display 4, Mongolia display 2 per km².",
+        "support": "LBY: 4.1948594519022 (display: 4), SUR: 3.95265370906713 (display: 4), MNG: 2.26165292694361 (display: 2)",
         "evidence": {
           "LBY": {
             "name": "Libya",
@@ -1853,7 +1853,7 @@
         "isos": [
           "GRL"
         ],
-        "support": "Greenland display 0 per km².",
+        "support": "GRL: 0.13847274570044 (display: 0)",
         "evidence": {
           "GRL": {
             "name": "Greenland",
@@ -1869,21 +1869,21 @@
         "surface": "beat_6",
         "text": "Where does your country land?",
         "isos": [],
-        "support": "Call to action prompt for the audience.",
+        "support": "Closing call to action.",
         "evidence": {}
       },
       {
         "surface": "card_6",
-        "text": "Where does your country land?",
+        "text": "Where does your country land? People per square kilometre",
         "isos": [],
-        "support": "Card heading matching beat_6.",
+        "support": "Card displaying units and concluding text.",
         "evidence": {}
       },
       {
         "surface": "title",
         "text": "The Emptiest and Most Crowded places",
         "isos": [],
-        "support": "Accurately describes content comparing high and low density places.",
+        "support": "Title accurately reflects the thematic contrast of the dataset.",
         "method": "complete-surface-check",
         "evidence": {}
       },
@@ -1891,7 +1891,7 @@
         "surface": "hook",
         "text": "CROWDED VS EMPTY",
         "isos": [],
-        "support": "Summarizes the crowded vs empty theme.",
+        "support": "Hook matches the density extremes shown.",
         "method": "complete-surface-check",
         "evidence": {}
       },
@@ -1899,7 +1899,7 @@
         "surface": "description",
         "text": "Population density across 208 countries and territories.",
         "isos": [],
-        "support": "Matches the dataset count of 208 countries and territories.",
+        "support": "Accurately reflects the dataset universe and count.",
         "method": "complete-surface-check",
         "evidence": {}
       },
@@ -1910,7 +1910,7 @@
           "BGD",
           "AUS"
         ],
-        "support": "Values match Bangladesh (1,333) and Australia (4) displays.",
+        "support": "Values for Bangladesh and Australia match the dataset display values.",
         "method": "complete-surface-check",
         "evidence": {
           "BGD": {
@@ -1938,7 +1938,7 @@
           "BGD",
           "USA"
         ],
-        "support": "Accurately relates Bangladesh and USA values and ratio.",
+        "support": "Ratio and US value accurately reflect dataset calculations and display values.",
         "method": "complete-surface-check",
         "evidence": {
           "BGD": {
@@ -1966,7 +1966,7 @@
           "RWA",
           "IND"
         ],
-        "support": "Values match Rwanda (600) and India (488) displays.",
+        "support": "Rwanda and India display values match.",
         "method": "complete-surface-check",
         "evidence": {
           "RWA": {
@@ -1994,7 +1994,7 @@
           "CHN",
           "BRA"
         ],
-        "support": "Values match China (150) and Brazil (25) displays.",
+        "support": "China and Brazil display values match.",
         "method": "complete-surface-check",
         "evidence": {
           "CHN": {
@@ -2023,7 +2023,7 @@
           "SUR",
           "MNG"
         ],
-        "support": "Values match Libya (4), Suriname (4), and Mongolia (2) displays.",
+        "support": "Libya, Suriname, and Mongolia display values match.",
         "method": "complete-surface-check",
         "evidence": {
           "LBY": {
@@ -2058,7 +2058,7 @@
         "isos": [
           "GRL"
         ],
-        "support": "Value matches Greenland (0) display.",
+        "support": "Greenland display value matches.",
         "method": "complete-surface-check",
         "evidence": {
           "GRL": {
@@ -2075,7 +2075,7 @@
         "surface": "beat_6",
         "text": "Where does your country land?",
         "isos": [],
-        "support": "Consistent closing prompt.",
+        "support": "Closing question is stylistic and appropriate.",
         "method": "complete-surface-check",
         "evidence": {}
       },
@@ -2086,7 +2086,7 @@
           "People per square kilometre"
         ],
         "isos": [],
-        "support": "Card elements match the visual plan and prompt.",
+        "support": "Card correctly states the metric unit.",
         "method": "complete-surface-check",
         "evidence": {}
       }
@@ -2094,22 +2094,22 @@
     "surface_checks": {
       "title": {
         "supported": true,
-        "reason": "Accurately describes content comparing high and low density places.",
+        "reason": "Title accurately reflects the thematic contrast of the dataset.",
         "isos": []
       },
       "hook": {
         "supported": true,
-        "reason": "Summarizes the crowded vs empty theme.",
+        "reason": "Hook matches the density extremes shown.",
         "isos": []
       },
       "description": {
         "supported": true,
-        "reason": "Matches the dataset count of 208 countries and territories.",
+        "reason": "Accurately reflects the dataset universe and count.",
         "isos": []
       },
       "beat_0": {
         "supported": true,
-        "reason": "Values match Bangladesh (1,333) and Australia (4) displays.",
+        "reason": "Values for Bangladesh and Australia match the dataset display values.",
         "isos": [
           "BGD",
           "AUS"
@@ -2117,7 +2117,7 @@
       },
       "beat_1": {
         "supported": true,
-        "reason": "Accurately relates Bangladesh and USA values and ratio.",
+        "reason": "Ratio and US value accurately reflect dataset calculations and display values.",
         "isos": [
           "BGD",
           "USA"
@@ -2125,7 +2125,7 @@
       },
       "beat_2": {
         "supported": true,
-        "reason": "Values match Rwanda (600) and India (488) displays.",
+        "reason": "Rwanda and India display values match.",
         "isos": [
           "RWA",
           "IND"
@@ -2133,7 +2133,7 @@
       },
       "beat_3": {
         "supported": true,
-        "reason": "Values match China (150) and Brazil (25) displays.",
+        "reason": "China and Brazil display values match.",
         "isos": [
           "CHN",
           "BRA"
@@ -2141,7 +2141,7 @@
       },
       "beat_4": {
         "supported": true,
-        "reason": "Values match Libya (4), Suriname (4), and Mongolia (2) displays.",
+        "reason": "Libya, Suriname, and Mongolia display values match.",
         "isos": [
           "LBY",
           "SUR",
@@ -2150,19 +2150,19 @@
       },
       "beat_5": {
         "supported": true,
-        "reason": "Value matches Greenland (0) display.",
+        "reason": "Greenland display value matches.",
         "isos": [
           "GRL"
         ]
       },
       "beat_6": {
         "supported": true,
-        "reason": "Consistent closing prompt.",
+        "reason": "Closing question is stylistic and appropriate.",
         "isos": []
       },
       "card_6": {
         "supported": true,
-        "reason": "Card elements match the visual plan and prompt.",
+        "reason": "Card correctly states the metric unit.",
         "isos": []
       }
     },

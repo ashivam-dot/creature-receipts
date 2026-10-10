@@ -1,0 +1,174 @@
+{
+  "errors": [],
+  "claims": [
+    {
+      "surface": "title",
+      "text": "Cuba has 9.5 doctors while Niger has 0.0",
+      "isos": [
+        "CUB",
+        "NER"
+      ],
+      "support": "CUB value is 9.542 (display 9.5), NER value is 0.038 (display 0.0)"
+    },
+    {
+      "surface": "hook",
+      "text": "DOCTOR DIVIDE",
+      "isos": [],
+      "support": "Stylistic hook reflecting physician availability"
+    },
+    {
+      "surface": "description",
+      "text": "A global look at doctor availability per person, from Cuba's world-leading numbers to near zero in parts of Central Africa.",
+      "isos": [
+        "CUB",
+        "CAF"
+      ],
+      "support": "CUB rank 1 (highest), CAF value 0.074 (display 0.1)"
+    },
+    {
+      "surface": "beat_0",
+      "text": "Cuba has 9.5 doctors. Niger has 0.0.",
+      "isos": [
+        "CUB",
+        "NER"
+      ],
+      "support": "CUB value is 9.542 (display 9.5), NER value is 0.038 (display 0.0)"
+    },
+    {
+      "surface": "beat_1",
+      "text": "Cuba is the world's highest, counting generalist and specialist medical practitioners.",
+      "isos": [
+        "CUB"
+      ],
+      "support": "CUB rank 1, definition: Physicians include generalist and specialist medical practitioners."
+    },
+    {
+      "surface": "beat_2",
+      "text": "The Americas split widely: the USA has 3.7 doctors, while Brazil has 2.4.",
+      "isos": [
+        "USA",
+        "BRA"
+      ],
+      "support": "USA value is 3.681 (display 3.7), BRA value is 2.357 (display 2.4)"
+    },
+    {
+      "surface": "beat_3",
+      "text": "Across Europe, Greece has 6.6, Portugal has 5.9, Austria has 5.5, and Norway has 5.0.",
+      "isos": [
+        "GRC",
+        "PRT",
+        "AUT",
+        "NOR"
+      ],
+      "support": "GRC value 6.576 (display 6.6), PRT value 5.851 (display 5.9), AUT value 5.515 (display 5.5), NOR value 4.975 (display 5.0)"
+    },
+    {
+      "surface": "beat_4",
+      "text": "Further down the ladder, populous India has 0.7.",
+      "isos": [
+        "IND"
+      ],
+      "support": "IND value is 0.723 (display 0.7)"
+    },
+    {
+      "surface": "beat_5",
+      "text": "Near the absolute bottom, Chad has 0.1.",
+      "isos": [
+        "TCD"
+      ],
+      "support": "TCD value is 0.085 (display 0.1), rank 164"
+    },
+    {
+      "surface": "beat_6",
+      "text": "Where does your country land?",
+      "isos": [],
+      "support": "Call to action question"
+    },
+    {
+      "surface": "card_6",
+      "text": "Where are your doctors? Doctors per 1,000 people, World Bank",
+      "isos": [],
+      "support": "Indicator title and source citation matching metadata"
+    }
+  ],
+  "surface_checks": {
+    "title": {
+      "supported": true,
+      "reason": "Cuba has 9.5 and Niger has 0.0 per 1,000 according to the dataset.",
+      "isos": [
+        "CUB",
+        "NER"
+      ]
+    },
+    "hook": {
+      "supported": true,
+      "reason": "Stylistic title representing the topic.",
+      "isos": []
+    },
+    "description": {
+      "supported": true,
+      "reason": "Accurately references Cuba's top rank and low values in Central Africa.",
+      "isos": [
+        "CUB",
+        "CAF"
+      ]
+    },
+    "beat_0": {
+      "supported": true,
+      "reason": "Matches CUB and NER display values.",
+      "isos": [
+        "CUB",
+        "NER"
+      ]
+    },
+    "beat_1": {
+      "supported": true,
+      "reason": "Cuba is rank 1 and definition matches World Bank metadata.",
+      "isos": [
+        "CUB"
+      ]
+    },
+    "beat_2": {
+      "supported": true,
+      "reason": "USA and BRA values match display values.",
+      "isos": [
+        "USA",
+        "BRA"
+      ]
+    },
+    "beat_3": {
+      "supported": true,
+      "reason": "All European country values match display values.",
+      "isos": [
+        "GRC",
+        "PRT",
+        "AUT",
+        "NOR"
+      ]
+    },
+    "beat_4": {
+      "supported": true,
+      "reason": "India value matches display value 0.7.",
+      "isos": [
+        "IND"
+      ]
+    },
+    "beat_5": {
+      "supported": true,
+      "reason": "Chad value matches display value 0.1.",
+      "isos": [
+        "TCD"
+      ]
+    },
+    "beat_6": {
+      "supported": true,
+      "reason": "Outro question is standard and valid.",
+      "isos": []
+    },
+    "card_6": {
+      "supported": true,
+      "reason": "Card text matches the source and indicator metadata.",
+      "isos": []
+    }
+  }
+}

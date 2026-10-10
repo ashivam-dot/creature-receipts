@@ -5,19 +5,19 @@
       "surface": "title",
       "text": "The Youngest and Oldest places on Earth",
       "isos": [],
-      "support": "Global median age range from 14.32 (CAF) to 50.45 (SHN) across 219 mapped entities in 2023."
+      "support": "Global median age range from 14.32 (CAF) to 50.45 (SHN) across 219 mapped entities."
     },
     {
       "surface": "hook",
       "text": "TWO WORLDS APART",
       "isos": [],
-      "support": "Extremes of median age vary widely from 14 to 50 years across countries."
+      "support": "Contrasting extremes of median age in the dataset."
     },
     {
       "surface": "description",
       "text": "Median age across 219 countries and territories in 2023.",
       "isos": [],
-      "support": "Count: 219, Year: 2023, Indicator: median-age."
+      "support": "count: 219, year_label: 2023, indicator: median-age."
     },
     {
       "surface": "beat_0",
@@ -26,13 +26,13 @@
         "NER",
         "JPN"
       ],
-      "support": "NER median age value is 15.25 (display 15); JPN median age value is 48.958 (display 49). Definition states median age divides population into two halves."
+      "support": "NER median age value is 15.25 (display 15); JPN median age value is 48.958 (display 49). Definition: median age divides population into halves of older and younger."
     },
     {
       "surface": "beat_1",
       "text": "Median age is the age that divides the population into two halves of equal size: half of the people are older than it and half are younger.",
       "isos": [],
-      "support": "Median age is the age that divides the population into two halves of equal size: half of the people are older than it and half are younger. UN World Population Prospects estimates."
+      "support": "Definition: Median age is the age that divides the population into two halves of equal size: half of the people are older than it and half are younger. UN World Population Prospects estimates."
     },
     {
       "surface": "beat_2",
@@ -40,7 +40,7 @@
       "isos": [
         "CAF"
       ],
-      "support": "CAF rank is 219 (last of 219) with a value of 14.32 (display 14)."
+      "support": "CAF rank is 219 (last/lowest in count 219) with value 14.32, display 14."
     },
     {
       "surface": "beat_3",
@@ -48,7 +48,7 @@
       "isos": [
         "JPN"
       ],
-      "support": "JPN median age value is 48.958 (display 49), rank 2 out of 219."
+      "support": "JPN value is 48.958, display 49, rank 2 out of 219."
     },
     {
       "surface": "beat_4",
@@ -57,7 +57,7 @@
         "JPN",
         "CAF"
       ],
-      "support": "48.958 / 14.32 = 3.418 (approximately 3.5 times)."
+      "support": "JPN value is 48.958, CAF value is 14.32. 48.958 / 14.32 = 3.4187 (approx 3.5 times)."
     },
     {
       "surface": "beat_5",
@@ -66,40 +66,40 @@
         "IND",
         "USA"
       ],
-      "support": "IND median age is 28.06 (display 28); USA median age is 38.023 (display 38)."
+      "support": "IND value is 28.06, display 28; USA value is 38.023, display 38."
     },
     {
       "surface": "beat_6",
       "text": "Where does your country land?",
       "isos": [],
-      "support": "Interactive prompt based on the 219 mapped entities."
+      "support": "Callout question matching card_6."
     },
     {
       "surface": "card_6",
-      "text": "Where does your country land? Median age in 2023",
+      "text": "Where does your country land?",
       "isos": [],
-      "support": "Card displaying title and indicator context for 2023."
+      "support": "Card title matching visual plan."
     }
   ],
   "surface_checks": {
     "title": {
       "supported": true,
-      "reason": "The data spans 219 places showing youngest and oldest median ages.",
+      "reason": "Accurately reflects the extremes of the dataset.",
       "isos": []
     },
     "hook": {
       "supported": true,
-      "reason": "Captures the vast demographic gap between the youngest and oldest entities.",
+      "reason": "Stylistic framing for demographic contrast.",
       "isos": []
     },
     "description": {
       "supported": true,
-      "reason": "Matches the count of 219 entities and year 2023 in the dataset.",
+      "reason": "Matches count 219 and year 2023 in evidence.",
       "isos": []
     },
     "beat_0": {
       "supported": true,
-      "reason": "Niger's median age is 15.25 and Japan's is 48.958, fitting the definition of splitting the population in half.",
+      "reason": "Niger median age is 15.25 (display 15) and Japan is 48.958 (display 49); definition splits population in half.",
       "isos": [
         "NER",
         "JPN"
@@ -112,21 +112,21 @@
     },
     "beat_2": {
       "supported": true,
-      "reason": "Central African Republic has rank 219 with a value of 14.32 (displayed as 14).",
+      "reason": "CAF rank is 219 with a value of 14.32 (display 14).",
       "isos": [
         "CAF"
       ]
     },
     "beat_3": {
       "supported": true,
-      "reason": "Japan's value is 48.958 (displayed as 49), ranking 2nd out of 219.",
+      "reason": "Japan value is 48.958 (display 49) and rank is 2 out of 219.",
       "isos": [
         "JPN"
       ]
     },
     "beat_4": {
       "supported": true,
-      "reason": "Japan (48.958) divided by Central African Republic (14.32) is approximately 3.42, which rounds to 3.5.",
+      "reason": "48.958 divided by 14.32 is approximately 3.42, matching 3.5 times.",
       "isos": [
         "JPN",
         "CAF"
@@ -134,7 +134,7 @@
     },
     "beat_5": {
       "supported": true,
-      "reason": "India's value is 28.06 (display 28) and United States' value is 38.023 (display 38).",
+      "reason": "India value is 28.06 (display 28) and USA value is 38.023 (display 38).",
       "isos": [
         "IND",
         "USA"
@@ -142,12 +142,12 @@
     },
     "beat_6": {
       "supported": true,
-      "reason": "Refers to the overall dataset of countries and territories.",
+      "reason": "Matches card text.",
       "isos": []
     },
     "card_6": {
       "supported": true,
-      "reason": "Accurately represents the indicator and year from the evidence.",
+      "reason": "Matches visual plan and card content.",
       "isos": []
     }
   }

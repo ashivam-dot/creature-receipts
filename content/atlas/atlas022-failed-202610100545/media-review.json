@@ -1,0 +1,24 @@
+{
+  "duration": 32.67,
+  "integrated_lufs": -14.4,
+  "true_peak_dbfs": -1.3,
+  "speech": {
+    "heard": "In kilograms of meat per person, Mongolia has 136, India has just eight. That counts all meat supplied at retail, before any food is wasted at home. High on the latter, Australia with 117, Argentina with 115, and Brazil with 105. Australia has 15 times the meat India has. China has 74, well below the top group. The opposite end, Bangladesh has four. Where does your country land?",
+    "model": "small.en",
+    "media_sha256": "bb041aa9ef6fde3383a6947c611f29cc133ec29d0e7bc82c576b4c2ab9fee93e",
+    "primary_differences": [
+      "'ladder' heard as 'latter' after 'high on the'",
+      "'at' heard as '(nothing)' after 'the top group'"
+    ],
+    "differences": [
+      "'ladder' heard as 'latter' after 'high on the'",
+      "'at' heard as '(nothing)' after 'the top group'"
+    ],
+    "corroboration": {
+      "model": "base.en",
+      "heard": "In kilograms of meat per person, Mongolia has 136. India has just eight. That counts all meat supplied at retail before any food is wasted at home. High on the ladder, Australia with 117, Argentina with 115 and Brazil with 105. Australia has 15 times the meat India has. China has 74, well below the top group. At the opposite end, Bangladesh has four. Where does your country land?",
+      "differences": [],
+      "resolved": []
+    }
+  }
+}

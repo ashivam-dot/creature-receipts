@@ -1,0 +1,170 @@
+{
+  "errors": [],
+  "claims": [
+    {
+      "surface": "title",
+      "text": "Some places Supply 136 Kilograms of Meat",
+      "isos": [
+        "MNG"
+      ],
+      "support": "Mongolia has 136.13968 kg a year."
+    },
+    {
+      "surface": "hook",
+      "text": "THE MEAT GAP",
+      "isos": [],
+      "support": "Global comparison of meat supply per person."
+    },
+    {
+      "surface": "description",
+      "text": "A global comparison of meat supply per person, contrasting high-supply countries and territories like Mongolia and Australia with India and Bangladesh.",
+      "isos": [
+        "MNG",
+        "AUS",
+        "IND",
+        "BGD"
+      ],
+      "support": "Mongolia (136), Australia (117), India (8), Bangladesh (4)."
+    },
+    {
+      "surface": "beat_0",
+      "text": "In kilograms of meat per person, Mongolia has 136. India has just 8.",
+      "isos": [
+        "MNG",
+        "IND"
+      ],
+      "support": "Mongolia has 136.13968, India has 8.12."
+    },
+    {
+      "surface": "beat_1",
+      "text": "That counts all meat supplied at retail, before any food is wasted at home.",
+      "isos": [],
+      "support": "Definition: supply at the retail level, not adjusted for food wasted at home."
+    },
+    {
+      "surface": "beat_2",
+      "text": "High on the ladder: Australia with 117, Argentina with 115, and Brazil with 105.",
+      "isos": [
+        "AUS",
+        "ARG",
+        "BRA"
+      ],
+      "support": "Australia 116.77997, Argentina 114.94999, Brazil 104.57."
+    },
+    {
+      "surface": "beat_3",
+      "text": "Australia has 15 times the meat India has.",
+      "isos": [
+        "AUS",
+        "IND"
+      ],
+      "support": "Australia value is 116.77997, India value is 8.12; 116.77997 / 8.12 equals approximately 14.38, which rounds to 15 times."
+    },
+    {
+      "surface": "beat_4",
+      "text": "China has 74, well below the top group.",
+      "isos": [
+        "CHN"
+      ],
+      "support": "China value is 73.54."
+    },
+    {
+      "surface": "beat_5",
+      "text": "At the opposite end, Bangladesh has 4.",
+      "isos": [
+        "BGD"
+      ],
+      "support": "Bangladesh value is 4.49."
+    },
+    {
+      "surface": "beat_6",
+      "text": "Where does your country land?",
+      "isos": [],
+      "support": "Interactive closing question."
+    },
+    {
+      "surface": "card_6",
+      "text": "Where Do You Land? Meat Supply per Person",
+      "isos": [],
+      "support": "Card title matching indicator definition."
+    }
+  ],
+  "surface_checks": {
+    "title": {
+      "supported": true,
+      "reason": "Mongolia has 136.14 kg per person, matching 136.",
+      "isos": [
+        "MNG"
+      ]
+    },
+    "hook": {
+      "supported": true,
+      "reason": "Stylistic hook summarizing the indicator topic.",
+      "isos": []
+    },
+    "description": {
+      "supported": true,
+      "reason": "Accurately describes the global meat supply comparison and mentioned entities.",
+      "isos": [
+        "MNG",
+        "AUS",
+        "IND",
+        "BGD"
+      ]
+    },
+    "beat_0": {
+      "supported": true,
+      "reason": "Mongolia value is 136.14 and India value is 8.12.",
+      "isos": [
+        "MNG",
+        "IND"
+      ]
+    },
+    "beat_1": {
+      "supported": true,
+      "reason": "Directly matches the dataset's official definition.",
+      "isos": []
+    },
+    "beat_2": {
+      "supported": true,
+      "reason": "Australia, Argentina, and Brazil values match evidence: 117, 115, and 105 respectively.",
+      "isos": [
+        "AUS",
+        "ARG",
+        "BRA"
+      ]
+    },
+    "beat_3": {
+      "supported": true,
+      "reason": "Australia (116.78) divided by India (8.12) is roughly 14.4, which correctly supports '15 times'.",
+      "isos": [
+        "AUS",
+        "IND"
+      ]
+    },
+    "beat_4": {
+      "supported": true,
+      "reason": "China value is 73.54, which rounds to 74.",
+      "isos": [
+        "CHN"
+      ]
+    },
+    "beat_5": {
+      "supported": true,
+      "reason": "Bangladesh value is 4.49, which rounds to 4.",
+      "isos": [
+        "BGD"
+      ]
+    },
+    "beat_6": {
+      "supported": true,
+      "reason": "Standard closing prompt.",
+      "isos": []
+    },
+    "card_6": {
+      "supported": true,
+      "reason": "Accurately states the indicator title and theme.",
+      "isos": []
+    }
+  }
+}
