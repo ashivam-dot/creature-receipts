@@ -38,12 +38,13 @@ Refreshed by every producer run (`atlas.stats`) from the channel's public feed o
 
 | Short | Topic | Published | Views | Likes | Views per hour |
 |---|---|---|---|---|---|
-| atlas001 137 Places Have More Mobile Subscriptions Than People | map_reveal | 2026-10-08 16:01 UTC | 1314 | 16 | 23.2 |
-| atlas002 45 places with Falling Populations | map_reveal | 2026-10-09 16:02 UTC | 220 | 5 | 6.7 |
-| atlas003 Below the fertility benchmark in 2024 | rank_ladder | 2026-10-08 20:01 UTC | 128 | 1 | 2.4 |
-| atlas004 47 places Where Life Expectancy Reaches 80 | map_reveal | 2026-10-08 23:01 UTC | 133 | 2 | 2.7 |
-| atlas011 Money Sent Home Equals 58% of GDP in Tajikistan | map_reveal | 2026-10-10 16:01 UTC | 2 | 0 | 0.2 |
-| atlas016 How Many Calories Each Country Has On Its Plate | map_reveal | 2026-10-10 20:00 UTC | 796 | 18 | 169.8 |
+| atlas001 137 Places Have More Mobile Subscriptions Than People | map_reveal | 2026-10-08 16:01 UTC | 1318 | – | 19.1 |
+| atlas002 45 places with Falling Populations | map_reveal | 2026-10-09 16:02 UTC | 953 | – | 21.1 |
+| atlas003 Below the fertility benchmark in 2024 | rank_ladder | 2026-10-08 20:01 UTC | 128 | – | 2.0 |
+| atlas004 47 places Where Life Expectancy Reaches 80 | map_reveal | 2026-10-08 23:01 UTC | 159 | – | 2.6 |
+| atlas011 Money Sent Home Equals 58% of GDP in Tajikistan | map_reveal | 2026-10-10 16:01 UTC | 48 | – | 2.3 |
+| atlas014 Finland Rates Life at 7.8 out of 10 | rank_ladder | 2026-10-10 23:00 UTC | 1000 | – | 70.7 |
+| atlas016 How Many Calories Each Country Has On Its Plate | map_reveal | 2026-10-10 20:00 UTC | 1095 | – | 63.8 |
 
 ## Log
 
