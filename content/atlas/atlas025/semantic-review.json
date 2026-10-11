@@ -1,0 +1,160 @@
+{
+  "errors": [],
+  "claims": [
+    {
+      "surface": "title",
+      "text": "Qatar has 108 micrograms of particles",
+      "isos": [
+        "QAT"
+      ],
+      "support": "Qatar value is 107.758571527846, displayed as 108 micrograms per m3"
+    },
+    {
+      "surface": "hook",
+      "text": "CLEANEST AND DIRTIEST",
+      "isos": [],
+      "support": "Context discusses highest and lowest air pollution countries"
+    },
+    {
+      "surface": "description",
+      "text": "Average fine particle air pollution by country in 2023.",
+      "isos": [],
+      "support": "Indicator EN.ATM.PM25.MC.M3 for 2023"
+    },
+    {
+      "surface": "beat_0",
+      "text": "Qatar has 108 micrograms of particles, the world's highest. Greenland has 2.",
+      "isos": [
+        "QAT",
+        "GRL"
+      ],
+      "support": "Qatar rank 1 with value 107.76 (display 108), Greenland rank 196 with value 1.64 (display 2)"
+    },
+    {
+      "surface": "beat_1",
+      "text": "These suspended particles penetrate deep into the respiratory tract, causing severe health damage.",
+      "isos": [],
+      "support": "Definition: concentrations of suspended particles measuring less than 2.5 microns in aerodynamic diameter, which are capable of penetrating deep into the respiratory tract and causing severe health damage."
+    },
+    {
+      "surface": "beat_2",
+      "text": "Saudi Arabia has 74, while USA has 7.",
+      "isos": [
+        "SAU",
+        "USA"
+      ],
+      "support": "Saudi Arabia value is 73.52 (display 74), United States value is 6.97 (display 7)"
+    },
+    {
+      "surface": "beat_3",
+      "text": "Nigeria has 66, across both urban and rural areas.",
+      "isos": [
+        "NGA"
+      ],
+      "support": "Nigeria value is 65.74 (display 66), definition mentions weighting in both urban and rural areas"
+    },
+    {
+      "surface": "beat_4",
+      "text": "India has 54, far above the median country of 18.",
+      "isos": [
+        "IND"
+      ],
+      "support": "India value is 54.05 (display 54)"
+    },
+    {
+      "surface": "beat_5",
+      "text": "Japan has 11. The UK has 9. Australia has 6.",
+      "isos": [
+        "JPN",
+        "GBR",
+        "AUS"
+      ],
+      "support": "Japan value is 11.45 (display 11), United Kingdom value is 9.46 (display 9), Australia value is 6.41 (display 6)"
+    },
+    {
+      "surface": "beat_6",
+      "text": "Where does your country land?",
+      "isos": [],
+      "support": "Closing rhetorical question"
+    },
+    {
+      "surface": "card_6",
+      "text": "Where do you live? FINE PARTICLE POLLUTION",
+      "isos": [],
+      "support": "Card title and topic"
+    }
+  ],
+  "surface_checks": {
+    "title": {
+      "supported": true,
+      "reason": "Qatar value matches display 108",
+      "isos": [
+        "QAT"
+      ]
+    },
+    "hook": {
+      "supported": true,
+      "reason": "Refers to the range of cleanest and dirtiest entities",
+      "isos": []
+    },
+    "description": {
+      "supported": true,
+      "reason": "Accurately describes indicator and year",
+      "isos": []
+    },
+    "beat_0": {
+      "supported": true,
+      "reason": "Qatar is rank 1 (108) and Greenland is rank 196 (2)",
+      "isos": [
+        "QAT",
+        "GRL"
+      ]
+    },
+    "beat_1": {
+      "supported": true,
+      "reason": "Directly quotes indicator definition",
+      "isos": []
+    },
+    "beat_2": {
+      "supported": true,
+      "reason": "Saudi Arabia display 74 and USA display 7 are correct",
+      "isos": [
+        "SAU",
+        "USA"
+      ]
+    },
+    "beat_3": {
+      "supported": true,
+      "reason": "Nigeria display 66 is correct and urban/rural weighting is in definition",
+      "isos": [
+        "NGA"
+      ]
+    },
+    "beat_4": {
+      "supported": true,
+      "reason": "India display 54 is correct",
+      "isos": [
+        "IND"
+      ]
+    },
+    "beat_5": {
+      "supported": true,
+      "reason": "Japan (11), UK (9), and Australia (6) display values are correct",
+      "isos": [
+        "JPN",
+        "GBR",
+        "AUS"
+      ]
+    },
+    "beat_6": {
+      "supported": true,
+      "reason": "Outro question aligns with video topic",
+      "isos": []
+    },
+    "card_6": {
+      "supported": true,
+      "reason": "Matches topic and card elements",
+      "isos": []
+    }
+  }
+}

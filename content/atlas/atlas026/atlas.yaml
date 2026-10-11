@@ -1,0 +1,77 @@
+id: atlas026
+title: The Global Gap in Basic Drinking Water Access
+hook_text: THE WATER DIVIDE
+description: A cinematic look at the divide in basic drinking water access across 200 countries and territories
+  using World Bank data.
+hashtags:
+- '#maps'
+- '#geography'
+- '#data'
+sources:
+- https://data.worldbank.org/indicator/SH.H2O.BASW.ZS
+dataset:
+  kind: worldbank
+  indicator: SH.H2O.BASW.ZS
+  label: Basic drinking water access
+  unit: '%'
+  source: World Bank
+  min_year: 2019
+scale:
+  edges:
+  - 50.0
+  - 70.0
+  - 85.0
+  - 95.0
+  - 99.5
+  labels:
+  - <50%
+  - 50-70
+  - 70-85
+  - 85-95
+  - 95-99
+  - ~100%
+value_format: '{v:.0f}%'
+beats:
+- text: USA has 100% basic drinking water access. In DR Congo, it's 36%.
+  shot:
+    callouts:
+    - USA
+    - COD
+- text: DR Congo is the world's lowest. This counts improved sources within a 30 minute round trip.
+  shot:
+    kind: country
+    iso: COD
+- text: USA has 2.8 times the access of DR Congo.
+  shot:
+    kind: group
+    isos:
+    - USA
+    - COD
+- text: India and China both have 96%.
+  shot:
+    callouts:
+    - IND
+    - CHN
+- text: 'At the bottom: Central African Republic 37%, South Sudan 40%, and Burkina Faso 50%.'
+  shot:
+    kind: rank
+    isos:
+    - CAF
+    - SSD
+    - BFA
+- text: Nigeria has 82%. Pakistan has 91%.
+  shot:
+    kind: group
+    isos:
+    - NGA
+    - PAK
+- text: Brazil has 100%. One of the highest in the world.
+  shot:
+    kind: country
+    iso: BRA
+- text: Where does your country land?
+  shot:
+    kind: card
+    lines:
+    - Where do you land?
+    - Basic Water Access

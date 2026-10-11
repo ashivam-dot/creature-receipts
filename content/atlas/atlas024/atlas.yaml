@@ -1,0 +1,76 @@
+id: atlas024
+title: Where 30% of People are 65 or Older
+hook_text: THE AGE GAP
+description: A cinematic exploration of global aging based on 2025 World Bank data, highlighting the contrast between
+  the world's oldest and youngest populations.
+hashtags:
+- '#maps'
+- '#geography'
+- '#data'
+sources:
+- https://data.worldbank.org/indicator/SP.POP.65UP.TO.ZS
+dataset:
+  kind: worldbank
+  indicator: SP.POP.65UP.TO.ZS
+  label: Share of people aged 65+
+  unit: '%'
+  source: World Bank
+  min_year: 2019
+scale:
+  edges:
+  - 5.0
+  - 10.0
+  - 15.0
+  - 20.0
+  - 25.0
+  labels:
+  - <5%
+  - 5-10
+  - 10-15
+  - 15-20
+  - 20-25
+  - 25%+
+value_format: '{v:.0f}%'
+beats:
+- text: In Japan, 30% of people are 65 or older. Zambia has only 2%.
+  shot:
+    callouts:
+    - JPN
+    - ZMB
+- text: Japan is the world's highest, counting all residents regardless of legal status or citizenship.
+  shot:
+    kind: country
+    iso: JPN
+- text: Japan has 2 times China. China stands at 15%.
+  shot:
+    kind: group
+    isos:
+    - JPN
+    - CHN
+- text: The USA has 18%. Australia and Russia share that figure.
+  shot:
+    kind: country
+    iso: USA
+- text: Across Europe, Italy has 25%. Germany, Greece and Finland all have 24%.
+  shot:
+    kind: rank
+    isos:
+    - ITA
+    - DEU
+    - GRC
+    - FIN
+- text: The UK has 20%. Nigeria has 3%.
+  shot:
+    callouts:
+    - GBR
+    - NGA
+- text: At the lowest end, Qatar has 2%, the world's lowest.
+  shot:
+    kind: country
+    iso: QAT
+- text: Where does your country land?
+  shot:
+    kind: card
+    lines:
+    - Where do you land?
+    - Share aged 65+, World Bank 2025

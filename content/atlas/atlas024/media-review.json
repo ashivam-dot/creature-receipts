@@ -1,0 +1,27 @@
+{
+  "duration": 38.38,
+  "integrated_lufs": -14.4,
+  "true_peak_dbfs": -1.4,
+  "speech": {
+    "heard": "In Japan, 30% of people are 65 or older, Zambia has only 2%. Japan is the world's highest, counting all residents regardless of legal status or citizenship. Japan has two times China, China stands at 15%. USA has 18%, Australia and Russia share that figure. Across Europe, Italy has 25%, Germany, Greece and Finland all have 24%. UK has 20%, Nigeria has 3%. At the lowest end, Qatar has 2%, the world's lowest. Where does your country land?",
+    "model": "small.en",
+    "media_sha256": "928b876be25302df3ad7879bbbac96171fec2ee0e0c9220a8937c12d58177772",
+    "primary_differences": [
+      "'the' heard as '(nothing)' after 'stands at 15%'",
+      "'the' heard as '(nothing)' after 'all have 24%'"
+    ],
+    "differences": [
+      "'the' heard as '(nothing)' after 'stands at 15%'"
+    ],
+    "corroboration": {
+      "model": "base.en",
+      "heard": "In Japan, 30% of people are 65 or older, Zambia has only 2%. Japan is the world's highest, counting all residents regardless of legal status or citizenship. Japan has two times China, China stands at 15%. USA has 18%, Australia and Russia share that figure. Across Europe, Italy has 25%, Germany, Greece and Finland all have 24%. The UK has 20%, Nigeria has 3%. At the lowest end, Qatar has 2% the world's lowest. Where does your country land?",
+      "differences": [
+        "'the' heard as '(nothing)' after 'stands at 15%'"
+      ],
+      "resolved": [
+        "'the' heard as '(nothing)' after 'all have 24%'"
+      ]
+    }
+  }
+}

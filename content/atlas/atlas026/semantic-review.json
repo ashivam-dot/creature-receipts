@@ -1,0 +1,179 @@
+{
+  "errors": [],
+  "claims": [
+    {
+      "surface": "title",
+      "text": "The Global Gap in Basic Drinking Water Access",
+      "isos": [],
+      "support": "Global percentage of people using at least basic water services."
+    },
+    {
+      "surface": "hook",
+      "text": "THE WATER DIVIDE",
+      "isos": [],
+      "support": "The percentage of people using at least basic water services."
+    },
+    {
+      "surface": "description",
+      "text": "A cinematic look at the divide in basic drinking water access across 200 countries and territories using World Bank data.",
+      "isos": [],
+      "support": "count: 200"
+    },
+    {
+      "surface": "beat_0",
+      "text": "USA has 100% basic drinking water access. In DR Congo, it's 36%.",
+      "isos": [
+        "USA",
+        "COD"
+      ],
+      "support": "USA: 100%, COD: 36%"
+    },
+    {
+      "surface": "beat_1",
+      "text": "DR Congo is the world's lowest. This counts improved sources within a 30 minute round trip.",
+      "isos": [
+        "COD"
+      ],
+      "support": "COD rank: 200; Basic drinking water services is defined as drinking water from an improved source, provided collection time is not more than 30 minutes for a round trip."
+    },
+    {
+      "surface": "beat_2",
+      "text": "USA has 2.8 times the access of DR Congo.",
+      "isos": [
+        "USA",
+        "COD"
+      ],
+      "support": "USA value 99.98 / COD value 35.68 = 2.8"
+    },
+    {
+      "surface": "beat_3",
+      "text": "India and China both have 96%.",
+      "isos": [
+        "IND",
+        "CHN"
+      ],
+      "support": "IND: 96%, CHN: 96%"
+    },
+    {
+      "surface": "beat_4",
+      "text": "At the bottom: Central African Republic 37%, South Sudan 40%, and Burkina Faso 50%.",
+      "isos": [
+        "CAF",
+        "SSD",
+        "BFA"
+      ],
+      "support": "CAF: 37%, SSD: 40%, BFA: 50%"
+    },
+    {
+      "surface": "beat_5",
+      "text": "Nigeria has 82%. Pakistan has 91%.",
+      "isos": [
+        "NGA",
+        "PAK"
+      ],
+      "support": "NGA: 82%, PAK: 91%"
+    },
+    {
+      "surface": "beat_6",
+      "text": "Brazil has 100%. One of the highest in the world.",
+      "isos": [
+        "BRA"
+      ],
+      "support": "BRA: 100%, rank: 33"
+    },
+    {
+      "surface": "beat_7",
+      "text": "Where does your country land?",
+      "isos": [],
+      "support": "mapped countries and territories with data"
+    },
+    {
+      "surface": "card_7",
+      "text": "Where do you land?, Basic Water Access",
+      "isos": [],
+      "support": "The percentage of people using at least basic water services."
+    }
+  ],
+  "surface_checks": {
+    "title": {
+      "supported": true,
+      "reason": "Accurately reflects indicator SH.H2O.BASW.ZS.",
+      "isos": []
+    },
+    "hook": {
+      "supported": true,
+      "reason": "Stylistic headline matching the topic.",
+      "isos": []
+    },
+    "description": {
+      "supported": true,
+      "reason": "Matches count and source.",
+      "isos": []
+    },
+    "beat_0": {
+      "supported": true,
+      "reason": "USA value display is 100%, COD value display is 36%.",
+      "isos": [
+        "USA",
+        "COD"
+      ]
+    },
+    "beat_1": {
+      "supported": true,
+      "reason": "COD rank is 200 (lowest), and definition mentions improved sources within 30 minutes.",
+      "isos": [
+        "COD"
+      ]
+    },
+    "beat_2": {
+      "supported": true,
+      "reason": "Ratio is accurately computed.",
+      "isos": [
+        "USA",
+        "COD"
+      ]
+    },
+    "beat_3": {
+      "supported": true,
+      "reason": "IND and CHN display percentages both match 96%.",
+      "isos": [
+        "IND",
+        "CHN"
+      ]
+    },
+    "beat_4": {
+      "supported": true,
+      "reason": "CAF, SSD, and BFA display values match 37%, 40%, and 50%.",
+      "isos": [
+        "CAF",
+        "SSD",
+        "BFA"
+      ]
+    },
+    "beat_5": {
+      "supported": true,
+      "reason": "NGA and PAK display values match 82% and 91%.",
+      "isos": [
+        "NGA",
+        "PAK"
+      ]
+    },
+    "beat_6": {
+      "supported": true,
+      "reason": "BRA display value matches 100% and is near the top (rank 33).",
+      "isos": [
+        "BRA"
+      ]
+    },
+    "beat_7": {
+      "supported": true,
+      "reason": "General closing question.",
+      "isos": []
+    },
+    "card_7": {
+      "supported": true,
+      "reason": "Accurately represents title and metric theme.",
+      "isos": []
+    }
+  }
+}

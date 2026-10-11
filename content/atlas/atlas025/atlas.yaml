@@ -1,0 +1,69 @@
+id: atlas025
+title: Qatar has 108 micrograms of particles
+hook_text: CLEANEST AND DIRTIEST
+description: Average fine particle air pollution by country in 2023.
+hashtags:
+- '#maps'
+- '#geography'
+- '#data'
+sources:
+- https://data.worldbank.org/indicator/EN.ATM.PM25.MC.M3
+dataset:
+  kind: worldbank
+  indicator: EN.ATM.PM25.MC.M3
+  label: Average PM2.5 air pollution
+  unit: micrograms per m³
+  source: World Bank
+  min_year: 2019
+scale:
+  edges:
+  - 10.0
+  - 20.0
+  - 35.0
+  - 50.0
+  - 70.0
+  labels:
+  - <10
+  - 10-20
+  - 20-35
+  - 35-50
+  - 50-70
+  - 70+
+value_format: '{v:.0f}'
+beats:
+- text: Qatar has 108 micrograms of particles, the world's highest. Greenland has 2.
+  shot:
+    callouts:
+    - QAT
+    - GRL
+- text: These suspended particles penetrate deep into the respiratory tract, causing severe health damage.
+  shot:
+    kind: country
+    iso: QAT
+- text: Saudi Arabia has 74, while USA has 7.
+  shot:
+    kind: group
+    isos:
+    - SAU
+    - USA
+- text: Nigeria has 66, across both urban and rural areas.
+  shot:
+    kind: country
+    iso: NGA
+- text: India has 54, far above the median country of 18.
+  shot:
+    kind: country
+    iso: IND
+- text: Japan has 11. The UK has 9. Australia has 6.
+  shot:
+    kind: rank
+    isos:
+    - JPN
+    - GBR
+    - AUS
+- text: Where does your country land?
+  shot:
+    kind: card
+    lines:
+    - Where do you live?
+    - FINE PARTICLE POLLUTION

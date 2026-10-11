@@ -1,0 +1,200 @@
+{
+  "errors": [
+    {
+      "surface": "title",
+      "claim": "Where 30% of People are 65 or Older",
+      "reason": "Only Japan is at 30% globally; the title implies a generalized state or misrepresents the global share.",
+      "severity": "style"
+    },
+    {
+      "surface": "beat_2",
+      "claim": "Japan has 2 times China.",
+      "reason": "Japan's value is 29.99% and China's is 14.91%, which is fractionally just over 2x, but visually or strictly speaking China is 15% and Japan is 30% making the ratio 2:1. However, claims comparing precise multipliers should be checked carefully. 29.99 / 14.91 = 2.011, so it is factually supported.",
+      "severity": "info"
+    }
+  ],
+  "claims": [
+    {
+      "surface": "title",
+      "text": "Where 30% of People are 65 or Older",
+      "isos": [
+        "JPN"
+      ],
+      "support": "Japan value is 29.9940966737423, displayed as 30%"
+    },
+    {
+      "surface": "hook",
+      "text": "THE AGE GAP",
+      "isos": [],
+      "support": "General thematic title"
+    },
+    {
+      "surface": "description",
+      "text": "A cinematic exploration of global aging based on 2025 World Bank data, highlighting the contrast between the world's oldest and youngest populations.",
+      "isos": [],
+      "support": "Based on 2025 World Bank SP.POP.65UP.TO.ZS data"
+    },
+    {
+      "surface": "beat_0",
+      "text": "In Japan, 30% of people are 65 or older. Zambia has only 2%.",
+      "isos": [
+        "JPN",
+        "ZMB"
+      ],
+      "support": "Japan: 29.99% (displayed 30%), Zambia: 2.00% (displayed 2%)"
+    },
+    {
+      "surface": "beat_1",
+      "text": "Japan is the world's highest, counting all residents regardless of legal status or citizenship.",
+      "isos": [
+        "JPN"
+      ],
+      "support": "Japan rank 1, definition mentions de facto definition counting all residents regardless of legal status or citizenship"
+    },
+    {
+      "surface": "beat_2",
+      "text": "Japan has 2 times China. China stands at 15%.",
+      "isos": [
+        "JPN",
+        "CHN"
+      ],
+      "support": "Japan: 29.99%, China: 14.91% (displayed 15%)"
+    },
+    {
+      "surface": "beat_3",
+      "text": "The USA has 18%. Australia and Russia share that figure.",
+      "isos": [
+        "USA",
+        "AUS",
+        "RUS"
+      ],
+      "support": "USA: 18.39% (18%), Australia: 18.09% (18%), Russia: 17.79% (18%)"
+    },
+    {
+      "surface": "beat_4",
+      "text": "Across Europe, Italy has 25%. Germany, Greece and Finland all have 24%.",
+      "isos": [
+        "ITA",
+        "DEU",
+        "GRC",
+        "FIN"
+      ],
+      "support": "Italy: 25.10% (25%), Germany: 23.70% (24%), Greece: 24.40% (24%), Finland: 24.20% (24%)"
+    },
+    {
+      "surface": "beat_5",
+      "text": "The UK has 20%. Nigeria has 3%.",
+      "isos": [
+        "GBR",
+        "NGA"
+      ],
+      "support": "United Kingdom: 19.70% (20%), Nigeria: 3.07% (3%)"
+    },
+    {
+      "surface": "beat_6",
+      "text": "At the lowest end, Qatar has 2%, the world's lowest.",
+      "isos": [
+        "QAT"
+      ],
+      "support": "Qatar value: 1.70% (displayed 2%), rank: 208 (lowest in 208 count)"
+    },
+    {
+      "surface": "beat_7",
+      "text": "Where does your country land?",
+      "isos": [],
+      "support": "Closing rhetorical question"
+    },
+    {
+      "surface": "card_7",
+      "text": "Where do you land?, Share aged 65+, World Bank 2025",
+      "isos": [],
+      "support": "Card metadata matching source and indicator"
+    }
+  ],
+  "surface_checks": {
+    "title": {
+      "supported": true,
+      "reason": "References Japan's 30% stat.",
+      "isos": [
+        "JPN"
+      ]
+    },
+    "hook": {
+      "supported": true,
+      "reason": "General title.",
+      "isos": []
+    },
+    "description": {
+      "supported": true,
+      "reason": "Accurately describes World Bank 2025 population ages 65 and above data.",
+      "isos": []
+    },
+    "beat_0": {
+      "supported": true,
+      "reason": "Japan is 30% and Zambia is 2% in the dataset.",
+      "isos": [
+        "JPN",
+        "ZMB"
+      ]
+    },
+    "beat_1": {
+      "supported": true,
+      "reason": "Japan is rank 1 and definition matches text.",
+      "isos": [
+        "JPN"
+      ]
+    },
+    "beat_2": {
+      "supported": true,
+      "reason": "Japan is ~30% and China is 15%.",
+      "isos": [
+        "JPN",
+        "CHN"
+      ]
+    },
+    "beat_3": {
+      "supported": true,
+      "reason": "USA, Australia, and Russia all display as 18%.",
+      "isos": [
+        "USA",
+        "AUS",
+        "RUS"
+      ]
+    },
+    "beat_4": {
+      "supported": true,
+      "reason": "Italy is 25%, Germany, Greece, and Finland are 24%.",
+      "isos": [
+        "ITA",
+        "DEU",
+        "GRC",
+        "FIN"
+      ]
+    },
+    "beat_5": {
+      "supported": true,
+      "reason": "UK is 20% and Nigeria is 3%.",
+      "isos": [
+        "GBR",
+        "NGA"
+      ]
+    },
+    "beat_6": {
+      "supported": true,
+      "reason": "Qatar is rank 208 with 1.7%, displayed as 2%.",
+      "isos": [
+        "QAT"
+      ]
+    },
+    "beat_7": {
+      "supported": true,
+      "reason": "Closing text.",
+      "isos": []
+    },
+    "card_7": {
+      "supported": true,
+      "reason": "Matches indicator and source metadata.",
+      "isos": []
+    }
+  }
+}
