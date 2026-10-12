@@ -1111,6 +1111,356 @@
    "source_url": "https://ourworldindata.org/grapher/meat-supply-per-person",
    "status": "failed:ValueError",
    "added_by": "atlas-v2"
+  },
+  {
+   "id": "t035",
+   "topic": "Global Alcohol Consumption Per Adult",
+   "angle": "Romania leads the world in alcohol consumption, with adults drinking over 16 liters of pure alcohol annually.",
+   "format": "map_reveal",
+   "dataset": {
+    "kind": "worldbank",
+    "indicator": "SH.ALC.PCAP.LI",
+    "label": "Liters of pure alcohol per person",
+    "unit": "liters",
+    "source": "World Bank",
+    "min_year": 2019
+   },
+   "scale": {
+    "kind": "bins",
+    "edges": [
+     1,
+     4,
+     8,
+     12
+    ],
+    "labels": [
+     "Under 1",
+     "1 to 4",
+     "4 to 8",
+     "8 to 12",
+     "Over 12"
+    ]
+   },
+   "value_format": "{v:.1f} liters",
+   "hashtags": [
+    "#maps",
+    "#geography",
+    "#dataviz"
+   ],
+   "source_url": "https://data.worldbank.org/indicator/SH.ALC.PCAP.LI",
+   "status": "open",
+   "added_by": "refill"
+  },
+  {
+   "id": "t036",
+   "topic": "Global Density of Cash Machines",
+   "angle": "Uruguay leads the world with over 300 ATMs per 100,000 adults, nearly double the density found in Canada.",
+   "format": "rank_ladder",
+   "dataset": {
+    "kind": "worldbank",
+    "indicator": "FB.ATM.TOTL.P5",
+    "label": "ATMs per 100,000 adults",
+    "unit": "per 100k adults",
+    "source": "World Bank",
+    "min_year": 2019
+   },
+   "scale": {
+    "kind": "bins",
+    "edges": [
+     15,
+     40,
+     70,
+     100
+    ],
+    "labels": [
+     "Under 15",
+     "15 to 40",
+     "40 to 70",
+     "70 to 100",
+     "Over 100"
+    ]
+   },
+   "value_format": "{v:.1f}",
+   "hashtags": [
+    "#maps",
+    "#geography",
+    "#banking"
+   ],
+   "source_url": "https://data.worldbank.org/indicator/FB.ATM.TOTL.P5",
+   "status": "open",
+   "added_by": "refill"
+  },
+  {
+   "id": "t037",
+   "topic": "Average Annual Precipitation by Country",
+   "angle": "Colombia receives over 170 times more annual rainfall than Egypt, the world's driest nation.",
+   "format": "map_reveal",
+   "dataset": {
+    "kind": "worldbank",
+    "indicator": "AG.LND.PRCP.MM",
+    "label": "Average annual precipitation depth",
+    "unit": "mm",
+    "source": "World Bank",
+    "min_year": 2019
+   },
+   "scale": {
+    "kind": "bins",
+    "edges": [
+     250,
+     1000,
+     2000,
+     3000
+    ],
+    "labels": [
+     "Under 250 mm",
+     "250 to 1,000 mm",
+     "1,000 to 2,000 mm",
+     "2,000 to 3,000 mm",
+     "Over 3,000 mm"
+    ]
+   },
+   "value_format": "{v:,.0f} mm",
+   "hashtags": [
+    "#maps",
+    "#geography",
+    "#nature"
+   ],
+   "source_url": "https://data.worldbank.org/indicator/AG.LND.PRCP.MM",
+   "status": "open",
+   "added_by": "refill"
+  },
+  {
+   "id": "t038",
+   "topic": "Powering Life: Electric Consumption Per Person",
+   "angle": "Geothermal and industrial nations consume thousands of times more electricity per capita than the lowest nations.",
+   "format": "map_reveal",
+   "dataset": {
+    "kind": "worldbank",
+    "indicator": "EG.USE.ELEC.KH.PC",
+    "label": "Annual electric power consumption",
+    "unit": "kWh per capita",
+    "source": "World Bank",
+    "min_year": 2019
+   },
+   "scale": {
+    "kind": "bins",
+    "edges": [
+     500,
+     2500,
+     6000,
+     15000
+    ],
+    "labels": [
+     "Minimal",
+     "Low",
+     "Moderate",
+     "High",
+     "Extreme"
+    ]
+   },
+   "value_format": "{v:,.0f}",
+   "hashtags": [
+    "#maps",
+    "#geography",
+    "#energy"
+   ],
+   "source_url": "https://data.worldbank.org/indicator/EG.USE.ELEC.KH.PC",
+   "status": "open",
+   "added_by": "refill"
+  },
+  {
+   "id": "t039",
+   "topic": "Where Household Goods Cost More Than America",
+   "angle": "While half the world has household price levels below half of the US baseline, island nations like Bermuda see prices soar 44 percent higher.",
+   "format": "rank_ladder",
+   "dataset": {
+    "kind": "worldbank",
+    "indicator": "PA.NUS.PRVT.PLI",
+    "label": "Price level index (US = 100)",
+    "unit": "",
+    "source": "World Bank",
+    "min_year": 2019
+   },
+   "scale": {
+    "kind": "threshold",
+    "at": 50,
+    "labels": [
+     "Above 50",
+     "50 and below"
+    ]
+   },
+   "value_format": "{v:.0f}",
+   "hashtags": [
+    "#maps",
+    "#geography",
+    "#economics"
+   ],
+   "source_url": "https://data.worldbank.org/indicator/PA.NUS.PRVT.PLI",
+   "status": "open",
+   "added_by": "refill"
+  },
+  {
+   "id": "t040",
+   "topic": "Household Consumption Spending Per Person",
+   "angle": "Household spending power varies drastically, with the highest nations exceeding 61,000 international dollars while the lowest fall under 500.",
+   "format": "map_reveal",
+   "dataset": {
+    "kind": "worldbank",
+    "indicator": "NE.CON.PCAP.PP.CD",
+    "label": "Annual household consumption",
+    "unit": "international $",
+    "source": "World Bank",
+    "min_year": 2019
+   },
+   "scale": {
+    "kind": "bins",
+    "edges": [
+     2500,
+     10000,
+     25000,
+     50000
+    ],
+    "labels": [
+     "Under $2.5k",
+     "$2.5k–$10k",
+     "$10k–$25k",
+     "$25k–$50k",
+     "Over $50k"
+    ]
+   },
+   "value_format": "{v:,.0f}",
+   "hashtags": [
+    "#maps",
+    "#geography",
+    "#worldeconomy"
+   ],
+   "source_url": "https://data.worldbank.org/indicator/NE.CON.PCAP.PP.CD",
+   "status": "open",
+   "added_by": "refill"
+  },
+  {
+   "id": "t041",
+   "topic": "Where Working For Yourself Is The Norm",
+   "angle": "In nations like Chad, over 90 percent of workers are self-employed, while in Qatar fewer than 1 percent work for themselves.",
+   "format": "map_reveal",
+   "dataset": {
+    "kind": "worldbank",
+    "indicator": "SL.EMP.SELF.ZS",
+    "label": "Self-employed share of total employment",
+    "unit": "%",
+    "source": "World Bank",
+    "min_year": 2019
+   },
+   "scale": {
+    "kind": "threshold",
+    "at": 50,
+    "labels": [
+     "Majority self-employed",
+     "Mostly wage employment"
+    ]
+   },
+   "value_format": "{v:.1f}%",
+   "hashtags": [
+    "#maps",
+    "#geography",
+    "#globalwork"
+   ],
+   "source_url": "https://data.worldbank.org/indicator/SL.EMP.SELF.ZS",
+   "status": "open",
+   "added_by": "refill"
+  },
+  {
+   "id": "t042",
+   "topic": "The Nuclear Power Divide Across Nations",
+   "angle": "Despite growing energy demands, the vast majority of countries produce zero electricity from nuclear sources, with only a small elite generating over half their power this way.",
+   "format": "rank_ladder",
+   "dataset": {
+    "kind": "worldbank",
+    "indicator": "EG.ELC.NUCL.ZS",
+    "label": "Nuclear electricity share",
+    "unit": "%",
+    "source": "World Bank",
+    "min_year": 2019
+   },
+   "scale": {
+    "kind": "threshold",
+    "at": 10.0,
+    "labels": [
+     "Over 10%",
+     "Under 10%"
+    ]
+   },
+   "value_format": "{v:.1f}%",
+   "hashtags": [
+    "#maps",
+    "#geography",
+    "#nuclearenergy"
+   ],
+   "source_url": "https://data.worldbank.org/indicator/EG.ELC.NUCL.ZS",
+   "status": "open",
+   "added_by": "refill"
+  },
+  {
+   "id": "t043",
+   "topic": "Tourism's massive share of global exports",
+   "angle": "For island and microstate destinations, international tourism receipts account for over half of total export revenues.",
+   "format": "map_reveal",
+   "dataset": {
+    "kind": "worldbank",
+    "indicator": "ST.INT.RCPT.XP.ZS",
+    "label": "Tourism share of total exports",
+    "unit": "%",
+    "source": "World Bank",
+    "min_year": 2019
+   },
+   "scale": {
+    "kind": "threshold",
+    "at": 25.0,
+    "labels": [
+     "Major tourism export economies",
+     "Lower tourism reliance"
+    ]
+   },
+   "value_format": "{v:.1f}%",
+   "hashtags": [
+    "#maps",
+    "#geography",
+    "#tourism"
+   ],
+   "source_url": "https://data.worldbank.org/indicator/ST.INT.RCPT.XP.ZS",
+   "status": "open",
+   "added_by": "refill"
+  },
+  {
+   "id": "t044",
+   "topic": "Adults with a bank or mobile account",
+   "angle": "Almost every adult in Iceland and Finland has a financial account, while fewer than one in ten do in South Sudan.",
+   "format": "map_reveal",
+   "dataset": {
+    "kind": "worldbank",
+    "indicator": "FX.OWN.TOTL.ZS",
+    "label": "Adults with a bank or mobile account",
+    "unit": "%",
+    "source": "World Bank",
+    "min_year": 2019
+   },
+   "scale": {
+    "kind": "threshold",
+    "at": 70.0,
+    "labels": [
+     "70% or more",
+     "Under 70%"
+    ]
+   },
+   "value_format": "{v:.0f}%",
+   "hashtags": [
+    "#maps",
+    "#geography",
+    "#finance"
+   ],
+   "source_url": "https://data.worldbank.org/indicator/FX.OWN.TOTL.ZS",
+   "status": "open",
+   "added_by": "refill"
   }
  ]
 }
