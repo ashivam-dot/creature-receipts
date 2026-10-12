@@ -138,7 +138,7 @@
    "value_format": "{v:.0f}%",
    "source_url": "https://data.worldbank.org/indicator/SP.POP.65UP.TO.ZS",
    "publisher_note": "World Population Prospects, United Nations (UN), publisher: UN Population Division",
-   "status": "ready:atlas024"
+   "status": "used:atlas024"
   },
   {
    "id": "t007",
@@ -164,7 +164,7 @@
    "value_format": "{v:.0f}%",
    "source_url": "https://data.worldbank.org/indicator/SP.URB.TOTL.IN.ZS",
    "publisher_note": "World Urbanization Prospects, United Nations (UN), uri: https://population",
-   "status": "open"
+   "status": "ready:atlas028"
   },
   {
    "id": "t008",
@@ -406,7 +406,7 @@
    "value_format": "{v:.0f}",
    "source_url": "https://data.worldbank.org/indicator/EN.ATM.PM25.MC.M3",
    "publisher_note": "Global Burden of Disease Study 2023 (GBD 2023) Air Pollution Exposure Estimates and Risk Curves 1990-2023, GBD Collaborator Network, uri: https://ghdx",
-   "status": "ready:atlas025"
+   "status": "used:atlas025"
   },
   {
    "id": "t015",
@@ -442,7 +442,7 @@
    "value_format": "{v:.0f}%",
    "source_url": "https://data.worldbank.org/indicator/AG.LND.AGRI.ZS",
    "publisher_note": "FAO electronic files and web site, Food and Agriculture Organization of the United Nations (FAO), publisher: Food and Agriculture Organization of the United Nations (FAO)",
-   "status": "open"
+   "status": "failed:RuntimeError"
   },
   {
    "id": "t016",
@@ -514,7 +514,7 @@
    "value_format": "{v:.0f} per 100",
    "source_url": "https://data.worldbank.org/indicator/IT.NET.BBND.P2",
    "publisher_note": "World Telecommunication/ICT Indicators Database, International Telecommunication Union (ITU)",
-   "status": "ready:atlas023"
+   "status": "used:atlas023"
   },
   {
    "id": "t018",
@@ -576,7 +576,7 @@
    "value_format": "{v:.0f}%",
    "source_url": "https://data.worldbank.org/indicator/EN.URB.LCTY.UR.ZS",
    "publisher_note": "World Urbanization Prospects 2018, United Nations (UN), uri: https://population",
-   "status": "open"
+   "status": "ready:atlas030"
   },
   {
    "id": "t020",
@@ -684,7 +684,7 @@
    "value_format": "{v:.0f}%",
    "source_url": "https://data.worldbank.org/indicator/SL.TLF.CACT.FE.ZS",
    "publisher_note": "ILO Modelled Estimates database (ILOEST), International Labour Organization (ILO), uri: https://ilostat",
-   "status": "open"
+   "status": "ready:atlas027"
   },
   {
    "id": "t023",

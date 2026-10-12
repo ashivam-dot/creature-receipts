@@ -1,0 +1,74 @@
+id: atlas027
+title: 'Women in the labor force: 83% to 5%'
+format: rank_ladder
+hook_text: THE WIDE GAP
+description: Female labour-force participation rates across the world, from the highest to the lowest.
+hashtags:
+- '#maps'
+- '#geography'
+- '#data'
+sources:
+- https://data.worldbank.org/indicator/SL.TLF.CACT.FE.ZS
+dataset:
+  kind: worldbank
+  indicator: SL.TLF.CACT.FE.ZS
+  label: Women in the labour force
+  unit: '%'
+  source: World Bank
+  min_year: 2019
+scale:
+  edges:
+  - 20.0
+  - 35.0
+  - 45.0
+  - 55.0
+  - 65.0
+  labels:
+  - <20%
+  - 20-35
+  - 35-45
+  - 45-55
+  - 55-65
+  - 65%+
+value_format: '{v:.0f}%'
+beats:
+- text: Madagascar hits 83% in the labor force. Yemen stops at 5%.
+  shot:
+    callouts:
+    - MDG
+    - YEM
+- text: Nigeria is 81%. Tanzania hits 80%. Burundi hits 79%.
+  shot:
+    kind: rank
+    isos:
+    - NGA
+    - TZA
+    - BDI
+- text: India lands at 32%. Madagascar has 2.6 times India value.
+  shot:
+    kind: group
+    isos:
+    - MDG
+    - IND
+- text: The USA is 56%. China hits 59%.
+  shot:
+    kind: group
+    isos:
+    - USA
+    - CHN
+- text: Afghanistan drops to 5%. Yemen shares that exact 5%.
+  shot:
+    kind: group
+    isos:
+    - AFG
+    - YEM
+- text: The labor force is the sum of all persons of working age who are employed and those who are unemployed.
+  shot:
+    kind: country
+    iso: YEM
+- text: Where does your country land?
+  shot:
+    kind: card
+    lines:
+    - Where does your country land?
+    - Women in the labour force (%)

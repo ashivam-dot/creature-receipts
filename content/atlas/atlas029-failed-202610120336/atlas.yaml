@@ -1,0 +1,66 @@
+id: atlas029
+title: 'Farmland Planet: How Much of Each Country is Farmed'
+hook_text: FARMED EARTH
+description: Discover the countries and territories that are mostly farms and pastures, based on World Bank data.
+hashtags:
+- '#maps'
+- '#geography'
+- '#data'
+sources:
+- https://data.worldbank.org/indicator/AG.LND.AGRI.ZS
+dataset:
+  kind: worldbank
+  indicator: AG.LND.AGRI.ZS
+  label: Agricultural land, share of land
+  unit: '%'
+  source: World Bank
+  min_year: 2019
+scale:
+  edges:
+  - 10.0
+  - 25.0
+  - 40.0
+  - 55.0
+  - 70.0
+  labels:
+  - <10%
+  - 10-25
+  - 25-40
+  - 40-55
+  - 55-70
+  - 70%+
+value_format: '{v:.0f}%'
+beats:
+- text: Uruguay dedicates 87% of its land to agriculture. Brazil uses just 28%.
+  shot:
+    callouts:
+    - LSO
+    - SUR
+- text: Lesotho is the world's highest at 93%. That is 3.3 times what Brazil uses.
+  shot:
+    kind: country
+    iso: LSO
+- text: Uruguay is close behind at 87%.
+  shot:
+    kind: country
+    iso: URY
+- text: The United States sits at 46%, and China at 42%.
+  shot:
+    kind: group
+    isos:
+    - USA
+    - CHN
+- text: India farms 60% of its land.
+  shot:
+    kind: country
+    iso: IND
+- text: Suriname has 0% as the world's lowest.
+  shot:
+    kind: country
+    iso: SUR
+- text: Where does your country land?
+  shot:
+    kind: card
+    lines:
+    - Where does your country land?
+    - Agricultural land share

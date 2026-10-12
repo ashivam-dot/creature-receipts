@@ -1,0 +1,166 @@
+{
+  "errors": [],
+  "claims": [
+    {
+      "surface": "title",
+      "text": "61 places Still Have Most People Outside Cities",
+      "isos": [],
+      "support": "Count of entities with urban population share below 50% is 61 (208 total minus 147 at or above threshold)."
+    },
+    {
+      "surface": "hook",
+      "text": "THE URBAN DIVIDE",
+      "isos": [],
+      "support": "General stylistic title."
+    },
+    {
+      "surface": "description",
+      "text": "While Kuwait sees everyone in urban centers, dozens of nations still have most people living across the countryside.",
+      "isos": [
+        "KWT"
+      ],
+      "support": "Kuwait urban population share is 100%, and dozens of places have values below 50%."
+    },
+    {
+      "surface": "beat_0",
+      "text": "In Kuwait, 100% live in cities. In Papua N. Guinea, just 16%.",
+      "isos": [
+        "KWT",
+        "PNG"
+      ],
+      "support": "Kuwait (KWT) value is 100.0%, display 100%; Papua New Guinea (PNG) value is 15.7797448680276, display 16%."
+    },
+    {
+      "surface": "beat_1",
+      "text": "Papua N. Guinea is one of the lowest, where daily life stays rural.",
+      "isos": [
+        "PNG"
+      ],
+      "support": "Papua New Guinea rank is 207 out of 208, among the lowest."
+    },
+    {
+      "surface": "beat_2",
+      "text": "In the USA, 80% live in cities.",
+      "isos": [
+        "USA"
+      ],
+      "support": "United States (USA) value is 80.1921733027869, display 80%."
+    },
+    {
+      "surface": "beat_3",
+      "text": "Across South Asia, Pakistan has 40%, while India has 36%.",
+      "isos": [
+        "PAK",
+        "IND"
+      ],
+      "support": "Pakistan (PAK) value is 39.5256010979606, display 40%; India (IND) value is 35.689155772396, display 36%."
+    },
+    {
+      "surface": "beat_4",
+      "text": "Some of the lowest include Niger at 18%, Sri Lanka at 20%, South Sudan at 22%, and Ethiopia at 24%.",
+      "isos": [
+        "NER",
+        "LKA",
+        "SSD",
+        "ETH"
+      ],
+      "support": "Niger (NER) value is 18.3740697195469, display 18%, rank 204; Sri Lanka (LKA) value is 20.4501355167937, display 20%, rank 203; South Sudan (SSD) value is 21.6843599017401, display 22%, rank 201; Ethiopia (ETH) value is 24.1096952088946, display 24%, rank 198."
+    },
+    {
+      "surface": "beat_5",
+      "text": "In China, 66% live in cities, leaving hundreds of millions in villages.",
+      "isos": [
+        "CHN"
+      ],
+      "support": "China (CHN) value is 66.3429910348272, display 66%."
+    },
+    {
+      "surface": "beat_6",
+      "text": "Where does your country land?",
+      "isos": [],
+      "support": "Closing rhetorical question."
+    },
+    {
+      "surface": "card_6",
+      "text": "City or countryside?, Share of people living in cities, 2025",
+      "isos": [],
+      "support": "Matches indicator definition and year label 2025."
+    }
+  ],
+  "surface_checks": {
+    "title": {
+      "supported": true,
+      "reason": "There are exactly 208 total entities and 147 at or above 50%, meaning 61 are below 50% (having most people outside cities).",
+      "isos": []
+    },
+    "hook": {
+      "supported": true,
+      "reason": "Stylistic hook introducing the urban/rural topic.",
+      "isos": []
+    },
+    "description": {
+      "supported": true,
+      "reason": "Kuwait is 100%, and 61 entities have less than 50% urban population.",
+      "isos": [
+        "KWT"
+      ]
+    },
+    "beat_0": {
+      "supported": true,
+      "reason": "Kuwait display is 100% and Papua New Guinea display is 16%.",
+      "isos": [
+        "KWT",
+        "PNG"
+      ]
+    },
+    "beat_1": {
+      "supported": true,
+      "reason": "Papua New Guinea rank is 207, which is near the bottom.",
+      "isos": [
+        "PNG"
+      ]
+    },
+    "beat_2": {
+      "supported": true,
+      "reason": "United States display is 80%.",
+      "isos": [
+        "USA"
+      ]
+    },
+    "beat_3": {
+      "supported": true,
+      "reason": "Pakistan display is 40% and India display is 36%.",
+      "isos": [
+        "PAK",
+        "IND"
+      ]
+    },
+    "beat_4": {
+      "supported": true,
+      "reason": "Niger is 18% (rank 204), Sri Lanka is 20% (rank 203), South Sudan is 22% (rank 201), and Ethiopia is 24% (rank 198).",
+      "isos": [
+        "NER",
+        "LKA",
+        "SSD",
+        "ETH"
+      ]
+    },
+    "beat_5": {
+      "supported": true,
+      "reason": "China display is 66%.",
+      "isos": [
+        "CHN"
+      ]
+    },
+    "beat_6": {
+      "supported": true,
+      "reason": "Standard call-to-action closing line.",
+      "isos": []
+    },
+    "card_6": {
+      "supported": true,
+      "reason": "Card text matches indicator subject and year 2025.",
+      "isos": []
+    }
+  }
+}

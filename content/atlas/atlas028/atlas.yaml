@@ -1,0 +1,64 @@
+id: atlas028
+title: 61 places Still Have Most People Outside Cities
+format: rank_ladder
+hook_text: THE URBAN DIVIDE
+description: While Kuwait sees everyone in urban centers, dozens of nations still have most people living across
+  the countryside.
+hashtags:
+- '#maps'
+- '#geography'
+- '#data'
+sources:
+- https://data.worldbank.org/indicator/SP.URB.TOTL.IN.ZS
+dataset:
+  kind: worldbank
+  indicator: SP.URB.TOTL.IN.ZS
+  label: Share of people living in cities
+  unit: '%'
+  source: World Bank
+  min_year: 2019
+scale:
+  kind: threshold
+  at: 50.0
+  labels:
+  - Mostly urban
+  - Mostly rural
+value_format: '{v:.0f}%'
+beats:
+- text: In Kuwait, 100% live in cities. In Papua N. Guinea, just 16%.
+  shot:
+    callouts:
+    - KWT
+    - PNG
+- text: Papua N. Guinea is one of the lowest, where daily life stays rural.
+  shot:
+    kind: country
+    iso: PNG
+- text: In the USA, 80% live in cities.
+  shot:
+    kind: country
+    iso: USA
+- text: Across South Asia, Pakistan has 40%, while India has 36%.
+  shot:
+    kind: group
+    isos:
+    - PAK
+    - IND
+- text: Some of the lowest include Niger at 18%, Sri Lanka at 20%, South Sudan at 22%, and Ethiopia at 24%.
+  shot:
+    kind: rank
+    isos:
+    - NER
+    - LKA
+    - SSD
+    - ETH
+- text: In China, 66% live in cities, leaving hundreds of millions in villages.
+  shot:
+    kind: country
+    iso: CHN
+- text: Where does your country land?
+  shot:
+    kind: card
+    lines:
+    - City or countryside?
+    - Share of people living in cities, 2025

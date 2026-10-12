@@ -1,0 +1,60 @@
+id: atlas030
+title: places Where One City Holds 92% of City Dwellers
+format: rank_ladder
+hook_text: ONE CITY RULES
+description: In some nations, more than half of all city dwellers live in a single metropolitan area. Here is how
+  urban populations concentrate worldwide.
+hashtags:
+- '#maps'
+- '#geography'
+- '#data'
+sources:
+- https://data.worldbank.org/indicator/EN.URB.LCTY.UR.ZS
+dataset:
+  kind: worldbank
+  indicator: EN.URB.LCTY.UR.ZS
+  label: Share of city dwellers in the largest city
+  unit: '% of urban'
+  source: World Bank
+  min_year: 2019
+scale:
+  kind: threshold
+  at: 50.0
+  labels:
+  - One city has half+
+  - Spread out
+value_format: '{v:.0f}%'
+beats:
+- text: In Eritrea, 92% of city dwellers live in one city. In USA, it is 7%.
+  shot:
+    callouts:
+    - ERI
+    - USA
+- text: Nearly all urban citizens live in its single largest metropolitan area.
+  shot:
+    kind: country
+    iso: ERI
+- text: Djibouti has 71%, Kuwait has 70%, Panama has 68%, and Mongolia has 68%.
+  shot:
+    kind: rank
+    isos:
+    - DJI
+    - KWT
+    - PAN
+    - MNG
+- text: 'Large economies spread out into many centers: India has 7%, and Germany has 5%.'
+  shot:
+    kind: group
+    isos:
+    - IND
+    - DEU
+- text: China is the world's lowest at 3%.
+  shot:
+    kind: country
+    iso: CHN
+- text: Does one city dominate your country?
+  shot:
+    kind: card
+    lines:
+    - ONE CITY DOMINATES?
+    - Urban population in largest city, 2025

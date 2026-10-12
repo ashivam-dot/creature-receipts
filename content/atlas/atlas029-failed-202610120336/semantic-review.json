@@ -1,0 +1,183 @@
+{
+  "errors": [
+    {
+      "surface": "beat_0",
+      "claim": "Uruguay dedicates 87% of its land to agriculture.",
+      "reason": "Uruguay has a value of 87.356% (display 87%), but beat_0 is paired with a world map callout for LSO and SUR, not Uruguay.",
+      "severity": "factual"
+    },
+    {
+      "surface": "beat_0",
+      "claim": "Brazil uses just 28%.",
+      "reason": "Brazil's agricultural land share is 28.366% (display 28%), but beat_0 does not show a group or world comparison including Brazil.",
+      "severity": "factual"
+    },
+    {
+      "surface": "beat_1",
+      "claim": "Lesotho is the world's highest at 93%. That is 3.3 times what Brazil uses.",
+      "reason": "Lesotho is rank 1 at 92.885% (display 93%). However, comparing Lesotho to Brazil (28.366%) inside a visual plan showing only Lesotho (iso: LSO) violates the rule that group/rank shots must include the countries being compared.",
+      "severity": "factual"
+    },
+    {
+      "surface": "beat_5",
+      "claim": "Suriname has 0% as the world's lowest.",
+      "reason": "Suriname is rank 206 with 0.473% (display 0%). However, calling it 0% absolute without context or showing the correct decimal creates an unsupported claim of exactly zero.",
+      "severity": "factual"
+    }
+  ],
+  "claims": [
+    {
+      "surface": "title",
+      "text": "Farmland Planet: How Much of Each Country is Farmed",
+      "isos": [],
+      "support": "Indicator AG.LND.AGRI.ZS: Agricultural land refers to the share of land area that is arable, under permanent crops, and under permanent pastures."
+    },
+    {
+      "surface": "hook",
+      "text": "FARMED EARTH",
+      "isos": [],
+      "support": "Agricultural land share dataset covering 206 countries and territories."
+    },
+    {
+      "surface": "description",
+      "text": "Discover the countries and territories that are mostly farms and pastures, based on World Bank data.",
+      "isos": [],
+      "support": "Source: World Bank (FAO data), indicator AG.LND.AGRI.ZS."
+    },
+    {
+      "surface": "beat_0",
+      "text": "Uruguay dedicates 87% of its land to agriculture. Brazil uses just 28%.",
+      "isos": [
+        "URY",
+        "BRA"
+      ],
+      "support": "URY value is 87.3568702290076 (display 87%), BRA value is 28.3664427731529 (display 28%)."
+    },
+    {
+      "surface": "beat_1",
+      "text": "Lesotho is the world's highest at 93%. That is 3.3 times what Brazil uses.",
+      "isos": [
+        "LSO",
+        "BRA"
+      ],
+      "support": "LSO rank 1, value 92.8853754940711 (display 93%). BRA value 28.3664427731529."
+    },
+    {
+      "surface": "beat_2",
+      "text": "Uruguay is close behind at 87%.",
+      "isos": [
+        "URY"
+      ],
+      "support": "URY rank 2, value 87.3568702290076 (display 87%)."
+    },
+    {
+      "surface": "beat_3",
+      "text": "The United States sits at 46%, and China at 42%.",
+      "isos": [
+        "USA",
+        "CHN"
+      ],
+      "support": "USA value is 46.0829796817026 (display 46%), CHN value is 41.7356450271138 (display 42%)."
+    },
+    {
+      "surface": "beat_4",
+      "text": "India farms 60% of its land.",
+      "isos": [
+        "IND"
+      ],
+      "support": "IND value is 59.9423514810692 (display 60%)."
+    },
+    {
+      "surface": "beat_5",
+      "text": "Suriname has 0% as the world's lowest.",
+      "isos": [
+        "SUR"
+      ],
+      "support": "SUR rank 206, value 0.473497798640202 (display 0%)."
+    },
+    {
+      "surface": "beat_6",
+      "text": "Where does your country land?",
+      "isos": [],
+      "support": "Call to action card matching dataset scope of 206 entities."
+    },
+    {
+      "surface": "card_6",
+      "text": "Where does your country land?",
+      "isos": [],
+      "support": "Call to action card matching dataset scope of 206 entities."
+    }
+  ],
+  "surface_checks": {
+    "title": {
+      "supported": true,
+      "reason": "Accurately describes the indicator scope.",
+      "isos": []
+    },
+    "hook": {
+      "supported": true,
+      "reason": "Stylistic hook summarizing agricultural land share.",
+      "isos": []
+    },
+    "description": {
+      "supported": true,
+      "reason": "Accurately references World Bank data and definitions.",
+      "isos": []
+    },
+    "beat_0": {
+      "supported": false,
+      "reason": "Mentions Uruguay and Brazil while visual plan is a world map showing callouts for LSO and SUR.",
+      "isos": [
+        "URY",
+        "BRA"
+      ]
+    },
+    "beat_1": {
+      "supported": false,
+      "reason": "Compares Lesotho to Brazil while the visual plan only displays Lesotho (LSO).",
+      "isos": [
+        "LSO",
+        "BRA"
+      ]
+    },
+    "beat_2": {
+      "supported": true,
+      "reason": "Uruguay value 87% is correctly supported by URY (87.36%).",
+      "isos": [
+        "URY"
+      ]
+    },
+    "beat_3": {
+      "supported": true,
+      "reason": "USA (46%) and China (42%) are directly supported by the data.",
+      "isos": [
+        "USA",
+        "CHN"
+      ]
+    },
+    "beat_4": {
+      "supported": true,
+      "reason": "India (60%) is directly supported by IND (59.94%).",
+      "isos": [
+        "IND"
+      ]
+    },
+    "beat_5": {
+      "supported": true,
+      "reason": "Suriname is rank 206 with display 0%, matching lowest in the universe.",
+      "isos": [
+        "SUR"
+      ]
+    },
+    "beat_6": {
+      "supported": true,
+      "reason": "Standard engagement card text.",
+      "isos": []
+    },
+    "card_6": {
+      "supported": true,
+      "reason": "Standard engagement card elements matching dataset.",
+      "isos": []
+    }
+  }
+}
