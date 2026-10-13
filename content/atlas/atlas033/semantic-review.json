@@ -1,0 +1,151 @@
+{
+  "errors": [],
+  "claims": [
+    {
+      "surface": "title",
+      "text": "Japan Has 51 Seniors per 100 Working-Age People",
+      "isos": [
+        "JPN"
+      ],
+      "support": "Japan value is 51.0385733142186, display 51 per 100"
+    },
+    {
+      "surface": "hook",
+      "text": "THE AGING DIVIDE",
+      "isos": [],
+      "support": "Thematic title for age dependency ratio comparison"
+    },
+    {
+      "surface": "description",
+      "text": "The ratio of people aged 65 and older to the working-age population across 208 countries and territories, based on World Bank data for 2025.",
+      "isos": [],
+      "support": "Definition matches World Bank SP.POP.DPND.OL with count 208 and year 2025"
+    },
+    {
+      "surface": "beat_0",
+      "text": "For every 100 working-age people, Japan has 51 older dependents. Qatar has 2.",
+      "isos": [
+        "JPN",
+        "QAT"
+      ],
+      "support": "Japan: 51.038 (display 51 per 100); Qatar: 2.041 (display 2 per 100)"
+    },
+    {
+      "surface": "beat_1",
+      "text": "That counts people older than 64 against those aged 15 to 64. The USA has 29.",
+      "isos": [
+        "USA"
+      ],
+      "support": "Definition: ratio of older dependents--people older than 64--to working-age population (ages 15-64). USA value: 28.501 (display 29 per 100)"
+    },
+    {
+      "surface": "beat_2",
+      "text": "Asia's largest populations divide sharply. China has 21, while India has 11.",
+      "isos": [
+        "CHN",
+        "IND"
+      ],
+      "support": "China: 21.399 (display 21 per 100); India: 10.780 (display 11 per 100)"
+    },
+    {
+      "surface": "beat_3",
+      "text": "Europe crowds the top of the globe. Portugal has 40, Italy has 40, Finland has 39, and Greece has 39.",
+      "isos": [
+        "PRT",
+        "ITA",
+        "FIN",
+        "GRC"
+      ],
+      "support": "Portugal: 40.008 (display 40 per 100); Italy: 39.684 (display 40 per 100); Finland: 39.373 (display 39 per 100); Greece: 38.885 (display 39 per 100)"
+    },
+    {
+      "surface": "beat_4",
+      "text": "Much of Africa stays young. Nigeria has 5 older dependents per 100 of working age.",
+      "isos": [
+        "NGA"
+      ],
+      "support": "Nigeria value: 5.441 (display 5 per 100)"
+    },
+    {
+      "surface": "beat_5",
+      "text": "Where does your country land?",
+      "isos": [],
+      "support": "Call to action question matching card_5"
+    },
+    {
+      "surface": "card_5",
+      "text": "Where do you land?, People 65+ per 100 Working-Age (2025)",
+      "isos": [],
+      "support": "Card metadata matches indicator definition and year"
+    }
+  ],
+  "surface_checks": {
+    "title": {
+      "supported": true,
+      "reason": "Japan's value is 51 per 100 working-age people in 2025.",
+      "isos": [
+        "JPN"
+      ]
+    },
+    "hook": {
+      "supported": true,
+      "reason": "Thematic title appropriate for the dataset.",
+      "isos": []
+    },
+    "description": {
+      "supported": true,
+      "reason": "Accurately reflects indicator definition, count of 208, and year 2025.",
+      "isos": []
+    },
+    "beat_0": {
+      "supported": true,
+      "reason": "Japan (51) and Qatar (2) values match the 2025 World Bank data.",
+      "isos": [
+        "JPN",
+        "QAT"
+      ]
+    },
+    "beat_1": {
+      "supported": true,
+      "reason": "Definition of age dependency ratio old matches metadata, and USA value is 29 per 100.",
+      "isos": [
+        "USA"
+      ]
+    },
+    "beat_2": {
+      "supported": true,
+      "reason": "China (21) and India (11) values match the dataset.",
+      "isos": [
+        "CHN",
+        "IND"
+      ]
+    },
+    "beat_3": {
+      "supported": true,
+      "reason": "Portugal (40), Italy (40), Finland (39), and Greece (39) values match the dataset.",
+      "isos": [
+        "PRT",
+        "ITA",
+        "FIN",
+        "GRC"
+      ]
+    },
+    "beat_4": {
+      "supported": true,
+      "reason": "Nigeria value (5 per 100) matches the dataset.",
+      "isos": [
+        "NGA"
+      ]
+    },
+    "beat_5": {
+      "supported": true,
+      "reason": "Closing question aligns with card_5.",
+      "isos": []
+    },
+    "card_5": {
+      "supported": true,
+      "reason": "Card text matches indicator title and year.",
+      "isos": []
+    }
+  }
+}

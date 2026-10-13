@@ -1,0 +1,70 @@
+id: atlas032
+title: 'Health Spending: The $10,550 to $13 Divide'
+hook_text: THE HEALTH GAP
+description: The massive divide in health spending per person across 189 countries and territories.
+hashtags:
+- '#maps'
+- '#geography'
+- '#data'
+sources:
+- https://data.worldbank.org/indicator/SH.XPD.CHEX.PC.CD
+dataset:
+  kind: worldbank
+  indicator: SH.XPD.CHEX.PC.CD
+  label: Health spending per person
+  unit: US dollars
+  source: World Bank
+  min_year: 2019
+scale:
+  edges:
+  - 100.0
+  - 300.0
+  - 1000.0
+  - 3000.0
+  - 6000.0
+  labels:
+  - <$100
+  - 100-300
+  - 300-1k
+  - 1k-3k
+  - 3k-6k
+  - $6k+
+value_format: ${v:,.0f}
+beats:
+- text: The USA spends $10,550 per person on health. Somalia spends just $13.
+  shot:
+    callouts:
+    - USA
+    - SOM
+- text: That counts every healthcare good and service consumed across the year.
+  shot:
+    kind: country
+    iso: USA
+- text: The USA has 812 times the health spending Somalia has.
+  shot:
+    kind: group
+    isos:
+    - USA
+    - SOM
+- text: Switzerland comes closest to the top at $9,610.
+  shot:
+    kind: country
+    iso: CHE
+- text: Brazil sits well above the middle at $868.
+  shot:
+    kind: country
+    iso: BRA
+- text: China spends $539 per person.
+  shot:
+    kind: country
+    iso: CHN
+- text: India spends $61 per person.
+  shot:
+    kind: country
+    iso: IND
+- text: Where does your country land?
+  shot:
+    kind: card
+    lines:
+    - Where does your country land?
+    - Health spending per person

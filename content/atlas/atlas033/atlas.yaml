@@ -1,0 +1,67 @@
+id: atlas033
+title: Japan Has 51 Seniors per 100 Working-Age People
+hook_text: THE AGING DIVIDE
+description: The ratio of people aged 65 and older to the working-age population across 208 countries and territories,
+  based on World Bank data for 2025.
+hashtags:
+- '#maps'
+- '#geography'
+- '#data'
+sources:
+- https://data.worldbank.org/indicator/SP.POP.DPND.OL
+dataset:
+  kind: worldbank
+  indicator: SP.POP.DPND.OL
+  label: People 65+ per 100 working-age
+  unit: per 100
+  source: World Bank
+  min_year: 2019
+scale:
+  edges:
+  - 5.0
+  - 10.0
+  - 20.0
+  - 30.0
+  - 40.0
+  labels:
+  - <5
+  - 5-10
+  - 10-20
+  - 20-30
+  - 30-40
+  - 40+
+value_format: '{v:.0f} per 100'
+beats:
+- text: For every 100 working-age people, Japan has 51 older dependents. Qatar has 2.
+  shot:
+    callouts:
+    - JPN
+    - QAT
+- text: That counts people older than 64 against those aged 15 to 64. The USA has 29.
+  shot:
+    kind: country
+    iso: USA
+- text: Asia's largest populations divide sharply. China has 21, while India has 11.
+  shot:
+    kind: group
+    isos:
+    - CHN
+    - IND
+- text: Europe crowds the top of the globe. Portugal has 40, Italy has 40, Finland has 39, and Greece has 39.
+  shot:
+    kind: rank
+    isos:
+    - PRT
+    - ITA
+    - FIN
+    - GRC
+- text: Much of Africa stays young. Nigeria has 5 older dependents per 100 of working age.
+  shot:
+    kind: country
+    iso: NGA
+- text: Where does your country land?
+  shot:
+    kind: card
+    lines:
+    - Where do you land?
+    - People 65+ per 100 Working-Age (2025)

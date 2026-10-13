@@ -1,0 +1,155 @@
+{
+  "errors": [],
+  "claims": [
+    {
+      "surface": "title",
+      "text": "Health Spending: The $10,550 to $13 Divide",
+      "isos": [
+        "USA",
+        "SOM"
+      ],
+      "support": "United States value is 10550.22 (rank 1), Somalia value is 12.99 (rank 189)"
+    },
+    {
+      "surface": "description",
+      "text": "The massive divide in health spending per person across 189 countries and territories.",
+      "isos": [],
+      "support": "Count is 189 mapped countries and territories with data"
+    },
+    {
+      "surface": "beat_0",
+      "text": "The USA spends $10,550 per person on health. Somalia spends just $13.",
+      "isos": [
+        "USA",
+        "SOM"
+      ],
+      "support": "United States value is 10550.22 (display $10,550), Somalia value is 12.99 (display $13)"
+    },
+    {
+      "surface": "beat_1",
+      "text": "That counts every healthcare good and service consumed across the year.",
+      "isos": [],
+      "support": "Estimates of current health expenditures include healthcare goods and services consumed during each year."
+    },
+    {
+      "surface": "beat_2",
+      "text": "The USA has 812 times the health spending Somalia has.",
+      "isos": [
+        "USA",
+        "SOM"
+      ],
+      "support": "10550.22070313 / 12.99074364 = 812.13 times"
+    },
+    {
+      "surface": "beat_3",
+      "text": "Switzerland comes closest to the top at $9,610.",
+      "isos": [
+        "CHE"
+      ],
+      "support": "Switzerland value is 9609.80 (display $9,610), rank 3"
+    },
+    {
+      "surface": "beat_4",
+      "text": "Brazil sits well above the middle at $868.",
+      "isos": [
+        "BRA"
+      ],
+      "support": "Brazil value is 868.17 (display $868), rank 57 out of 189"
+    },
+    {
+      "surface": "beat_5",
+      "text": "China spends $539 per person.",
+      "isos": [
+        "CHN"
+      ],
+      "support": "China value is 538.99 (display $539)"
+    },
+    {
+      "surface": "beat_6",
+      "text": "India spends $61 per person.",
+      "isos": [
+        "IND"
+      ],
+      "support": "India value is 60.69 (display $61)"
+    }
+  ],
+  "surface_checks": {
+    "title": {
+      "supported": true,
+      "reason": "Title accurately reflects the maximum and minimum values in the dataset.",
+      "isos": [
+        "USA",
+        "SOM"
+      ]
+    },
+    "hook": {
+      "supported": true,
+      "reason": "Stylistic hook introducing the health gap.",
+      "isos": []
+    },
+    "description": {
+      "supported": true,
+      "reason": "Description correctly states the universe count of 189 countries and territories.",
+      "isos": []
+    },
+    "beat_0": {
+      "supported": true,
+      "reason": "Values for USA ($10,550) and Somalia ($13) match the dataset displays.",
+      "isos": [
+        "USA",
+        "SOM"
+      ]
+    },
+    "beat_1": {
+      "supported": true,
+      "reason": "Matches definition of current health expenditures.",
+      "isos": []
+    },
+    "beat_2": {
+      "supported": true,
+      "reason": "Mathematically accurate ratio between USA and Somalia spending.",
+      "isos": [
+        "USA",
+        "SOM"
+      ]
+    },
+    "beat_3": {
+      "supported": true,
+      "reason": "Switzerland value of $9,610 and near-top rank are supported by data.",
+      "isos": [
+        "CHE"
+      ]
+    },
+    "beat_4": {
+      "supported": true,
+      "reason": "Brazil spending of $868 is supported and is above the midpoint rank of 95.",
+      "isos": [
+        "BRA"
+      ]
+    },
+    "beat_5": {
+      "supported": true,
+      "reason": "China spending of $539 is supported by data.",
+      "isos": [
+        "CHN"
+      ]
+    },
+    "beat_6": {
+      "supported": true,
+      "reason": "India spending of $61 is supported by data.",
+      "isos": [
+        "IND"
+      ]
+    },
+    "beat_7": {
+      "supported": true,
+      "reason": "Standard call to action question.",
+      "isos": []
+    },
+    "card_7": {
+      "supported": true,
+      "reason": "Card text correctly matches card visual requirements and subject.",
+      "isos": []
+    }
+  }
+}

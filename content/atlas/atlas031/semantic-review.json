@@ -1,0 +1,164 @@
+{
+  "errors": [],
+  "claims": [
+    {
+      "surface": "title",
+      "text": "In Qatar, 77% of people were born abroad",
+      "isos": [
+        "QAT"
+      ],
+      "support": "QAT: 76.7% (displayed as 77%)"
+    },
+    {
+      "surface": "hook",
+      "text": "BORN ABROAD",
+      "isos": [],
+      "support": "International migrant stock (% of population)"
+    },
+    {
+      "surface": "description",
+      "text": "The share of people born abroad reaches over 70% in Gulf nations, while dipping near zero in East Asia, based on World Bank data.",
+      "isos": [],
+      "support": "QAT, ARE, KWT, UAE show >70%; CHN, JPN show 0-3%"
+    },
+    {
+      "surface": "beat_0",
+      "text": "In Australia, 30% of people were born abroad. In China, it is 0%.",
+      "isos": [
+        "AUS",
+        "CHN"
+      ],
+      "support": "AUS: 30.4% (30%), CHN: 0.1% (0%)"
+    },
+    {
+      "surface": "beat_1",
+      "text": "Qatar is the world's highest: 77% of residents were born in another country.",
+      "isos": [
+        "QAT"
+      ],
+      "support": "QAT rank 1, 76.7% (77%)"
+    },
+    {
+      "surface": "beat_2",
+      "text": "In USA, that share is 15%. In Canada, it is 22%.",
+      "isos": [
+        "USA",
+        "CAN"
+      ],
+      "support": "USA: 15.2% (15%), CAN: 22.2% (22%)"
+    },
+    {
+      "surface": "beat_3",
+      "text": "Across the Gulf, UAE has 74%, Kuwait has 67%, and Oman has 43%.",
+      "isos": [
+        "ARE",
+        "KWT",
+        "OMN"
+      ],
+      "support": "ARE: 74.0%, KWT: 67.3%, OMN: 43.2%"
+    },
+    {
+      "surface": "beat_4",
+      "text": "In Europe, Switzerland has 31% born abroad.",
+      "isos": [
+        "CHE"
+      ],
+      "support": "CHE: 31.1% (31%)"
+    },
+    {
+      "surface": "beat_5",
+      "text": "Yet in Japan, just 3% were born outside the country.",
+      "isos": [
+        "JPN"
+      ],
+      "support": "JPN: 2.8% (3%)"
+    },
+    {
+      "surface": "beat_6",
+      "text": "Where does your country land?",
+      "isos": [],
+      "support": "Interactive call to action"
+    },
+    {
+      "surface": "card_6",
+      "text": "Where were you born? Share born abroad, World Bank",
+      "isos": [],
+      "support": "World Bank International Migrant Stock indicator"
+    }
+  ],
+  "surface_checks": {
+    "title": {
+      "supported": true,
+      "reason": "Qatar value is 76.7%, displayed as 77%",
+      "isos": [
+        "QAT"
+      ]
+    },
+    "hook": {
+      "supported": true,
+      "reason": "Directly describes the metric",
+      "isos": []
+    },
+    "description": {
+      "supported": true,
+      "reason": "Gulf nations >70% and East Asia near zero are supported by data",
+      "isos": []
+    },
+    "beat_0": {
+      "supported": true,
+      "reason": "Australia is 30.4% and China is 0.1%",
+      "isos": [
+        "AUS",
+        "CHN"
+      ]
+    },
+    "beat_1": {
+      "supported": true,
+      "reason": "Qatar is rank 1 at 76.7%",
+      "isos": [
+        "QAT"
+      ]
+    },
+    "beat_2": {
+      "supported": true,
+      "reason": "USA is 15.2% and Canada is 22.2%",
+      "isos": [
+        "USA",
+        "CAN"
+      ]
+    },
+    "beat_3": {
+      "supported": true,
+      "reason": "UAE, Kuwait, and Oman match dataset values",
+      "isos": [
+        "ARE",
+        "KWT",
+        "OMN"
+      ]
+    },
+    "beat_4": {
+      "supported": true,
+      "reason": "Switzerland is 31.1%",
+      "isos": [
+        "CHE"
+      ]
+    },
+    "beat_5": {
+      "supported": true,
+      "reason": "Japan is 2.8%, displayed as 3%",
+      "isos": [
+        "JPN"
+      ]
+    },
+    "beat_6": {
+      "supported": true,
+      "reason": "Outro question matches visual plan",
+      "isos": []
+    },
+    "card_6": {
+      "supported": true,
+      "reason": "Matches card visual plan",
+      "isos": []
+    }
+  }
+}

@@ -38,16 +38,18 @@ Refreshed by every producer run (`atlas.stats`) from the channel's public feed o
 
 | Short | Topic | Published | Views | Likes | Views per hour |
 |---|---|---|---|---|---|
-| atlas001 137 Places Have More Mobile Subscriptions Than People | map_reveal | 2026-10-08 16:01 UTC | 1319 | – | 14.2 |
-| atlas002 45 places with Falling Populations | map_reveal | 2026-10-09 16:02 UTC | 960 | – | 13.9 |
-| atlas003 Below the fertility benchmark in 2024 | rank_ladder | 2026-10-08 20:01 UTC | 128 | – | 1.4 |
-| atlas004 47 places Where Life Expectancy Reaches 80 | map_reveal | 2026-10-08 23:01 UTC | 157 | – | 1.8 |
-| atlas011 Money Sent Home Equals 58% of GDP in Tajikistan | map_reveal | 2026-10-10 16:01 UTC | 130 | – | 2.9 |
-| atlas014 Finland Rates Life at 7.8 out of 10 | rank_ladder | 2026-10-10 23:00 UTC | 1027 | – | 26.9 |
-| atlas016 How Many Calories Each Country Has On Its Plate | map_reveal | 2026-10-10 20:00 UTC | 1106 | – | 26.9 |
-| atlas017 The Youngest and Oldest places on Earth | map_reveal | 2026-10-11 16:01 UTC | 1227 | – | 58.0 |
-| atlas019 The Emptiest and Most Crowded places | map_reveal | 2026-10-11 20:00 UTC | 1238 | – | 72.1 |
-| atlas021 Cuba has 9.5 doctors while Niger has 0.0 | rank_ladder | 2026-10-11 23:00 UTC | 998 | – | 70.5 |
+| atlas001 137 Places Have More Mobile Subscriptions Than People | map_reveal | 2026-10-08 16:01 UTC | 1320 | 17 | 12.6 |
+| atlas002 45 places with Falling Populations | map_reveal | 2026-10-09 16:02 UTC | 967 | 15 | 12.0 |
+| atlas003 Below the fertility benchmark in 2024 | rank_ladder | 2026-10-08 20:01 UTC | 128 | 1 | 1.3 |
+| atlas004 47 places Where Life Expectancy Reaches 80 | map_reveal | 2026-10-08 23:01 UTC | 157 | 2 | 1.6 |
+| atlas011 Money Sent Home Equals 58% of GDP in Tajikistan | map_reveal | 2026-10-10 16:01 UTC | 147 | 1 | 2.6 |
+| atlas014 Finland Rates Life at 7.8 out of 10 | rank_ladder | 2026-10-10 23:00 UTC | 1034 | 9 | 20.8 |
+| atlas016 How Many Calories Each Country Has On Its Plate | map_reveal | 2026-10-10 20:00 UTC | 1122 | 16 | 21.3 |
+| atlas017 The Youngest and Oldest places on Earth | map_reveal | 2026-10-11 16:01 UTC | 1320 | 21 | 40.4 |
+| atlas019 The Emptiest and Most Crowded places | map_reveal | 2026-10-11 20:00 UTC | 1321 | 18 | 46.0 |
+| atlas021 Cuba has 9.5 doctors while Niger has 0.0 | rank_ladder | 2026-10-11 23:00 UTC | 1017 | 14 | 39.6 |
+| atlas023 France has 49 fixed broadband lines per 100 people | map_reveal | 2026-10-12 16:02 UTC | 95 | 1 | 11.0 |
+| atlas024 Where 30% of People are 65 or Older | map_reveal | 2026-10-12 20:01 UTC | 944 | 14 | 201.8 |
 
 ## Log
 

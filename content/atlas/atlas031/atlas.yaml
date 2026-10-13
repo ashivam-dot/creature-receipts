@@ -1,0 +1,71 @@
+id: atlas031
+title: In Qatar, 77% of people were born abroad
+format: rank_ladder
+hook_text: BORN ABROAD
+description: The share of people born abroad reaches over 70% in Gulf nations, while dipping near zero in East Asia,
+  based on World Bank data.
+hashtags:
+- '#maps'
+- '#geography'
+- '#data'
+sources:
+- https://data.worldbank.org/indicator/SM.POP.TOTL.ZS
+dataset:
+  kind: worldbank
+  indicator: SM.POP.TOTL.ZS
+  label: Share of people born abroad
+  unit: '%'
+  source: World Bank
+  min_year: 2019
+scale:
+  edges:
+  - 1.0
+  - 5.0
+  - 10.0
+  - 20.0
+  - 40.0
+  labels:
+  - <1%
+  - 1-5
+  - 5-10
+  - 10-20
+  - 20-40
+  - 40%+
+value_format: '{v:.0f}%'
+beats:
+- text: In Australia, 30% of people were born abroad. In China, it is 0%.
+  shot:
+    callouts:
+    - AUS
+    - CHN
+- text: 'Qatar is the world''s highest: 77% of residents were born in another country.'
+  shot:
+    kind: country
+    iso: QAT
+- text: In USA, that share is 15%. In Canada, it is 22%.
+  shot:
+    kind: group
+    isos:
+    - USA
+    - CAN
+- text: Across the Gulf, UAE has 74%, Kuwait has 67%, and Oman has 43%.
+  shot:
+    kind: rank
+    isos:
+    - ARE
+    - KWT
+    - OMN
+- text: In Europe, Switzerland has 31% born abroad.
+  shot:
+    kind: country
+    iso: CHE
+- text: Yet in Japan, just 3% were born outside the country.
+  shot:
+    kind: country
+    iso: JPN
+- text: Where does your country land?
+  shot:
+    kind: card
+    lines:
+    - Where were you born?
+    - Share born abroad, World Bank
