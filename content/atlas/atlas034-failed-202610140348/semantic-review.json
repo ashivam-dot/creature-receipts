@@ -1,0 +1,191 @@
+{
+  "errors": [],
+  "claims": [
+    {
+      "surface": "title",
+      "text": "Bangladesh has 61% arable land",
+      "isos": [
+        "BGD"
+      ],
+      "support": "Bangladesh value is 60.5131750787432, display 61%"
+    },
+    {
+      "surface": "hook",
+      "text": "FERTILE EARTH",
+      "isos": [],
+      "support": "Title and theme of arable land share comparison"
+    },
+    {
+      "surface": "description",
+      "text": "A global comparison of arable land share, from the high-density fields of Bangladesh to the vast interiors of Canada and Australia.",
+      "isos": [
+        "BGD",
+        "CAN",
+        "AUS"
+      ],
+      "support": "Bangladesh 61%, Canada 4%, Australia 4%"
+    },
+    {
+      "surface": "beat_0",
+      "text": "Bangladesh has 61% arable land. In the USA, it is 17%.",
+      "isos": [
+        "BGD",
+        "USA"
+      ],
+      "support": "Bangladesh 61% (60.51%), USA 17% (16.57%)"
+    },
+    {
+      "surface": "beat_1",
+      "text": "Bangladesh is the world's highest. This includes land under temporary crops, gardens, and temporary fallow, but excludes abandoned shifting cultivation.",
+      "isos": [
+        "BGD"
+      ],
+      "support": "Bangladesh rank 1; definition mentions temporary crops, gardens, temporary fallow, and excludes abandoned shifting cultivation"
+    },
+    {
+      "surface": "beat_2",
+      "text": "Canada and Australia have just 4%. Huge countries, but very little is ready for the plow.",
+      "isos": [
+        "CAN",
+        "AUS"
+      ],
+      "support": "Canada 4% (4.33%), Australia 4% (4.07%)"
+    },
+    {
+      "surface": "beat_3",
+      "text": "India has 52%. That is 3.1 times the share in the USA.",
+      "isos": [
+        "IND",
+        "USA"
+      ],
+      "support": "India 52% (51.73%), USA 17% (16.57%), 51.73 / 16.57 = 3.12"
+    },
+    {
+      "surface": "beat_4",
+      "text": "China has 12% and Japan has 11%. Both sit just above the global median of 10%.",
+      "isos": [
+        "CHN",
+        "JPN"
+      ],
+      "support": "China 12% (11.55%), Japan 11% (11.04%), median value near 10%"
+    },
+    {
+      "surface": "beat_5",
+      "text": "Nigeria has 41%. A high share for a large nation, including fields left fallow.",
+      "isos": [
+        "NGA"
+      ],
+      "support": "Nigeria 41% (40.83%), definition includes temporary fallow"
+    },
+    {
+      "surface": "beat_6",
+      "text": "The leaders? Bangladesh 61%, Denmark 59%, and The Gambia 58%.",
+      "isos": [
+        "BGD",
+        "DNK",
+        "GMB"
+      ],
+      "support": "Bangladesh rank 1 (61%), Denmark rank 2 (59%), The Gambia rank 3 (58%)"
+    },
+    {
+      "surface": "beat_7",
+      "text": "Where does your country land?",
+      "isos": [],
+      "support": "Call to action prompt"
+    },
+    {
+      "surface": "card_7",
+      "text": "[\"YOUR SHARE?\", \"ARABLE LAND %\"]",
+      "isos": [],
+      "support": "Card labels matching indicator unit"
+    }
+  ],
+  "surface_checks": {
+    "title": {
+      "supported": true,
+      "reason": "Bangladesh value is 60.51% which rounds to 61%",
+      "isos": [
+        "BGD"
+      ]
+    },
+    "hook": {
+      "supported": true,
+      "reason": "Stylistic hook referencing fertile earth",
+      "isos": []
+    },
+    "description": {
+      "supported": true,
+      "reason": "Accurately references Bangladesh, Canada, and Australia data values",
+      "isos": [
+        "BGD",
+        "CAN",
+        "AUS"
+      ]
+    },
+    "beat_0": {
+      "supported": true,
+      "reason": "Bangladesh is 61% and USA is 17%",
+      "isos": [
+        "BGD",
+        "USA"
+      ]
+    },
+    "beat_1": {
+      "supported": true,
+      "reason": "Bangladesh is rank 1 and definition matches FAO criteria cited",
+      "isos": [
+        "BGD"
+      ]
+    },
+    "beat_2": {
+      "supported": true,
+      "reason": "Canada is 4% and Australia is 4%",
+      "isos": [
+        "CAN",
+        "AUS"
+      ]
+    },
+    "beat_3": {
+      "supported": true,
+      "reason": "India is 52% and USA is 17%, matching the 3.1 multiplier",
+      "isos": [
+        "IND",
+        "USA"
+      ]
+    },
+    "beat_4": {
+      "supported": true,
+      "reason": "China is 12% and Japan is 11%, sitting around the 10% median",
+      "isos": [
+        "CHN",
+        "JPN"
+      ]
+    },
+    "beat_5": {
+      "supported": true,
+      "reason": "Nigeria is 41% and definition includes fallow land",
+      "isos": [
+        "NGA"
+      ]
+    },
+    "beat_6": {
+      "supported": true,
+      "reason": "Top three ranks are Bangladesh (61%), Denmark (59%), and The Gambia (58%)",
+      "isos": [
+        "BGD",
+        "DNK",
+        "GMB"
+      ]
+    },
+    "beat_7": {
+      "supported": true,
+      "reason": "Engagement prompt",
+      "isos": []
+    },
+    "card_7": {
+      "supported": true,
+      "reason": "Card text matches indicator context",
+      "isos": []
+    }
+  }
+}

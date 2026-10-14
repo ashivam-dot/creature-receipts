@@ -1,0 +1,72 @@
+id: atlas035
+title: Who Protects 30 Percent of Their Land?
+hook_text: PROTECTED LAND
+description: A cinematic look at global terrestrial protected areas, exploring which nations meet the 2030 target
+  and which fall behind.
+hashtags:
+- '#maps'
+- '#geography'
+- '#data'
+sources:
+- https://data.worldbank.org/indicator/ER.LND.PTLD.ZS
+dataset:
+  kind: worldbank
+  indicator: ER.LND.PTLD.ZS
+  label: Protected land, share of land
+  unit: '%'
+  source: World Bank
+  min_year: 2019
+scale:
+  edges:
+  - 5.0
+  - 10.0
+  - 17.0
+  - 30.0
+  - 40.0
+  labels:
+  - <5%
+  - 5-10
+  - 10-17
+  - 17-30
+  - 30-40
+  - 40%+
+value_format: '{v:.0f}%'
+beats:
+- text: Bhutan protects 52% of its land. In the United States, it is just 13%.
+  shot:
+    callouts:
+    - BTN
+    - USA
+- text: These are national parks and wildlife sanctuaries of at least 1,000 hectares. Bhutan has 4 times what the
+    US protects.
+  shot:
+    kind: country
+    iso: BTN
+- text: One of the highest is New Caledonia at 60%. Over half of its territory is under protection.
+  shot:
+    kind: country
+    iso: NCL
+- text: The global target is 30%. Brazil has 31%, and Japan meets it at 30%.
+  shot:
+    kind: group
+    isos:
+    - BRA
+    - JPN
+- text: Germany has 39%. By contrast, India protects only 8%.
+  shot:
+    callouts:
+    - DEU
+    - IND
+- text: Somalia is the world's lowest at 0%. Libya and Eritrea also have 0%.
+  shot:
+    kind: rank
+    isos:
+    - SOM
+    - LBY
+    - ERI
+- text: Where does your country land?
+  shot:
+    kind: card
+    lines:
+    - Where does your country land?
+    - Protected land, share of land (%), World Bank, 2025

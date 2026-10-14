@@ -1,0 +1,77 @@
+id: atlas034
+title: Bangladesh has 61% arable land
+hook_text: FERTILE EARTH
+description: A global comparison of arable land share, from the high-density fields of Bangladesh to the vast interiors
+  of Canada and Australia.
+hashtags:
+- '#maps'
+- '#geography'
+- '#data'
+sources:
+- https://data.worldbank.org/indicator/AG.LND.ARBL.ZS
+dataset:
+  kind: worldbank
+  indicator: AG.LND.ARBL.ZS
+  label: Arable land, share of land
+  unit: '%'
+  source: World Bank
+  min_year: 2019
+scale:
+  edges:
+  - 5.0
+  - 10.0
+  - 20.0
+  - 30.0
+  - 45.0
+  labels:
+  - <5%
+  - 5-10
+  - 10-20
+  - 20-30
+  - 30-45
+  - 45%+
+value_format: '{v:.0f}%'
+beats:
+- text: Bangladesh has 61% arable land. In the USA, it is 17%.
+  shot:
+    callouts:
+    - BGD
+    - USA
+- text: Bangladesh is the world's highest. This includes land under temporary crops, gardens, and temporary fallow,
+    but excludes abandoned shifting cultivation.
+  shot:
+    kind: country
+    iso: BGD
+- text: Canada and Australia have just 4%. Huge countries, but very little is ready for the plow.
+  shot:
+    kind: group
+    isos:
+    - CAN
+    - AUS
+- text: India has 52%. That is 3.1 times the share in the USA.
+  shot:
+    kind: country
+    iso: IND
+- text: China has 12% and Japan has 11%. Both sit just above the global median of 10%.
+  shot:
+    kind: group
+    isos:
+    - CHN
+    - JPN
+- text: Nigeria has 41%. A high share for a large nation, including fields left fallow.
+  shot:
+    kind: country
+    iso: NGA
+- text: The leaders? Bangladesh 61%, Denmark 59%, and The Gambia 58%.
+  shot:
+    kind: rank
+    isos:
+    - BGD
+    - DNK
+    - GMB
+- text: Where does your country land?
+  shot:
+    kind: card
+    lines:
+    - YOUR SHARE?
+    - ARABLE LAND %

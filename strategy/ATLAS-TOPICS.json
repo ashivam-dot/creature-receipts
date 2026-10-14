@@ -576,7 +576,7 @@
    "value_format": "{v:.0f}%",
    "source_url": "https://data.worldbank.org/indicator/EN.URB.LCTY.UR.ZS",
    "publisher_note": "World Urbanization Prospects 2018, United Nations (UN), uri: https://population",
-   "status": "ready:atlas030"
+   "status": "used:atlas030"
   },
   {
    "id": "t020",
@@ -612,7 +612,7 @@
    "value_format": "{v:.0f}%",
    "source_url": "https://data.worldbank.org/indicator/AG.LND.ARBL.ZS",
    "publisher_note": "FAO electronic files and website, Food and Agriculture Organization of the United Nations (FAO), publisher: Food and Agriculture Organization of the United Nations (FAO)",
-   "status": "open"
+   "status": "failed:ValueError"
   },
   {
    "id": "t021",
@@ -648,7 +648,7 @@
    "value_format": "{v:.0f}%",
    "source_url": "https://data.worldbank.org/indicator/ER.LND.PTLD.ZS",
    "publisher_note": "Protected Planet: The World Database on Protected Areas (WDPA) and World Database on Other Effective Area-based Conservation Measures (WD-OECM), UN Environment Programme World Conservation Monitoring ",
-   "status": "open"
+   "status": "failed:ValueError"
   },
   {
    "id": "t022",
@@ -792,7 +792,7 @@
    "value_format": "{v:.0f}%",
    "source_url": "https://data.worldbank.org/indicator/SM.POP.TOTL.ZS",
    "publisher_note": "International Migrant Stock, United Nations (UN), publisher: UN Population Division",
-   "status": "ready:atlas031"
+   "status": "used:atlas031"
   },
   {
    "id": "t026",
@@ -828,7 +828,7 @@
    "value_format": "${v:,.0f}",
    "source_url": "https://data.worldbank.org/indicator/SH.XPD.CHEX.PC.CD",
    "publisher_note": "Global Health Expenditure Database, updated December 12th, 2025, World Health Organization (WHO), uri: http://apps",
-   "status": "ready:atlas032"
+   "status": "used:atlas032"
   },
   {
    "id": "t027",
