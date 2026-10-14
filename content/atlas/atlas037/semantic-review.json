@@ -1,0 +1,150 @@
+{
+  "errors": [],
+  "claims": [
+    {
+      "surface": "title",
+      "text": "Colombia Rains 180 Times Egypt's Annual Precipitation",
+      "isos": [
+        "COL",
+        "EGY"
+      ],
+      "support": "Colombia: 3240 mm, Egypt: 18.1 mm"
+    },
+    {
+      "surface": "beat_0",
+      "text": "Colombia receives 3,240 millimetres of annual precipitation. Egypt gets just 18.",
+      "isos": [
+        "COL",
+        "EGY"
+      ],
+      "support": "Colombia: 3240 mm, Egypt: 18.1 mm"
+    },
+    {
+      "surface": "beat_1",
+      "text": "Colombia has 180 times the rainfall that Egypt gets.",
+      "isos": [
+        "COL",
+        "EGY"
+      ],
+      "support": "Colombia: 3240 mm, Egypt: 18.1 mm"
+    },
+    {
+      "surface": "beat_2",
+      "text": "Egypt is the world's lowest at 18 millimetres.",
+      "isos": [
+        "EGY"
+      ],
+      "support": "Egypt, Arab Rep. rank 181 (last in universe count 181), value 18.1 mm"
+    },
+    {
+      "surface": "beat_3",
+      "text": "Precipitation is any water that falls from clouds as a liquid or a solid.",
+      "isos": [],
+      "support": "Precipitation is defined as any kind of water that falls from clouds as a liquid or a solid."
+    },
+    {
+      "surface": "beat_4",
+      "text": "The United States receives 715 millimetres. China hits 645.",
+      "isos": [
+        "USA",
+        "CHN"
+      ],
+      "support": "United States: 715 mm, China: 645 mm"
+    },
+    {
+      "surface": "beat_5",
+      "text": "Jordan has 111 millimetres, and Mauritania has 92.",
+      "isos": [
+        "JOR",
+        "MRT"
+      ],
+      "support": "Jordan: 111 mm, Mauritania: 92 mm"
+    },
+    {
+      "surface": "beat_6",
+      "text": "Where does your country land?",
+      "isos": [],
+      "support": "Universe count 181 mapped countries and territories"
+    },
+    {
+      "surface": "card_6",
+      "text": "Where does your country land?, World Bank Precipitation Data",
+      "isos": [],
+      "support": "World Bank precipitation data"
+    }
+  ],
+  "surface_checks": {
+    "title": {
+      "supported": true,
+      "reason": "Colombia value is 3240 and Egypt is 18.1, making the ratio approximately 179x rounded to 180x.",
+      "isos": [
+        "COL",
+        "EGY"
+      ]
+    },
+    "hook": {
+      "supported": true,
+      "reason": "General stylistic hook matching the precipitation theme.",
+      "isos": []
+    },
+    "description": {
+      "supported": true,
+      "reason": "Accurately describes average annual precipitation by country using World Bank data.",
+      "isos": []
+    },
+    "beat_0": {
+      "supported": true,
+      "reason": "Colombia is 3240 mm and Egypt is 18.1 mm (displayed as 18 mm).",
+      "isos": [
+        "COL",
+        "EGY"
+      ]
+    },
+    "beat_1": {
+      "supported": true,
+      "reason": "Ratio of Colombia to Egypt is approximately 180.",
+      "isos": [
+        "COL",
+        "EGY"
+      ]
+    },
+    "beat_2": {
+      "supported": true,
+      "reason": "Egypt rank is 181 out of 181 with 18.1 mm.",
+      "isos": [
+        "EGY"
+      ]
+    },
+    "beat_3": {
+      "supported": true,
+      "reason": "Directly matches the definition provided in the evidence.",
+      "isos": []
+    },
+    "beat_4": {
+      "supported": true,
+      "reason": "United States is 715 mm and China is 645 mm.",
+      "isos": [
+        "USA",
+        "CHN"
+      ]
+    },
+    "beat_5": {
+      "supported": true,
+      "reason": "Jordan is 111 mm and Mauritania is 92 mm.",
+      "isos": [
+        "JOR",
+        "MRT"
+      ]
+    },
+    "beat_6": {
+      "supported": true,
+      "reason": "Matches visual plan call to action.",
+      "isos": []
+    },
+    "card_6": {
+      "supported": true,
+      "reason": "Matches source attribution and closing prompt.",
+      "isos": []
+    }
+  }
+}

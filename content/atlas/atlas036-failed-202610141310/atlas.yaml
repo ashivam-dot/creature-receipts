@@ -1,0 +1,74 @@
+id: atlas036
+title: Who spends the most on education?
+hook_text: EDUCATION SPENDING
+description: General government expenditure on education as a percentage of GDP.
+hashtags:
+- '#maps'
+- '#geography'
+- '#data'
+sources:
+- https://data.worldbank.org/indicator/SE.XPD.TOTL.GD.ZS
+dataset:
+  kind: worldbank
+  indicator: SE.XPD.TOTL.GD.ZS
+  label: Education spending, % of GDP
+  unit: '% of GDP'
+  source: World Bank
+  min_year: 2019
+scale:
+  edges:
+  - 2.0
+  - 3.0
+  - 4.0
+  - 5.0
+  - 6.0
+  labels:
+  - <2%
+  - 2-3
+  - 3-4
+  - 4-5
+  - 5-6
+  - 6%+
+value_format: '{v:.1f}%'
+beats:
+- text: Namibia puts 9.1% of its GDP into education. Japan puts just 3.3%.
+  shot:
+    callouts:
+    - NAM
+    - JPN
+- text: Namibia is one of the highest in the world, funding local, regional and central governments.
+  shot:
+    kind: country
+    iso: NAM
+- text: Namibia spends 2.8 times what Japan spends on schools.
+  shot:
+    callouts:
+    - NAM
+    - JPN
+- text: Sweden spends 7.3%, Iceland spends 7.3% and Kyrgyzstan spends 6.8%.
+  shot:
+    kind: rank
+    isos:
+    - SWE
+    - ISL
+    - KGZ
+- text: Nigeria is near the bottom, spending just 0.3% of its economy on education.
+  shot:
+    kind: country
+    iso: NGA
+- text: Somalia is the world's lowest, spending 0.0%.
+  shot:
+    kind: country
+    iso: SOM
+- text: India and China sit near the middle, spending 4.1% and 3.9%.
+  shot:
+    kind: group
+    isos:
+    - IND
+    - CHN
+- text: Where does your country land?
+  shot:
+    kind: card
+    lines:
+    - Where does your country land?
+    - Education spending, % of GDP

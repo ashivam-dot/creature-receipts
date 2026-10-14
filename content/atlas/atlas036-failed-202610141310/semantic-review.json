@@ -1,0 +1,182 @@
+{
+  "errors": [],
+  "claims": [
+    {
+      "surface": "title",
+      "text": "Algeria spends 2.7 times more on schools than Japan",
+      "isos": [
+        "DZA",
+        "JPN"
+      ],
+      "support": "Algeria value is 8.97772026062012 (9.0%), Japan value is 3.33663988113403 (3.3%). 8.97772026062012 / 3.33663988113403 = 2.69036... which rounds to 2.7 times."
+    },
+    {
+      "surface": "hook",
+      "text": "SCHOOL SPENDING",
+      "isos": [],
+      "support": "Matches indicator definition for General government expenditure on education."
+    },
+    {
+      "surface": "description",
+      "text": "A global comparison of government education spending as a percentage of GDP, featuring Namibia, Algeria, Japan, and the USA.",
+      "isos": [
+        "NAM",
+        "DZA",
+        "JPN",
+        "USA"
+      ],
+      "support": "Global comparison of SE.XPD.TOTL.GD.ZS featuring Namibia (NAM), Algeria (DZA), Japan (JPN), and the United States (USA)."
+    },
+    {
+      "surface": "beat_0",
+      "text": "Algeria spends 9.0% on education. Japan spends 3.3%.",
+      "isos": [
+        "DZA",
+        "JPN"
+      ],
+      "support": "Algeria display is 9.0% (value 8.97772026062012), Japan display is 3.3% (value 3.33663988113403)."
+    },
+    {
+      "surface": "beat_1",
+      "text": "Algeria has 2.7 times the share Japan does. This includes local, regional and central governments.",
+      "isos": [
+        "DZA",
+        "JPN"
+      ],
+      "support": "Algeria/Japan ratio is ~2.7. Definition states: 'General government usually refers to local, regional and central governments.'"
+    },
+    {
+      "surface": "beat_2",
+      "text": "Somalia is the world's lowest at 0.0%. Nigeria has 0.3%.",
+      "isos": [
+        "SOM",
+        "NGA"
+      ],
+      "support": "Somalia rank is 179 with value 8.14262404011e-06 (0.0%). Nigeria rank is 178 with value 0.319069049792343 (0.3%)."
+    },
+    {
+      "surface": "beat_3",
+      "text": "India has 4.1%. China has 3.9%.",
+      "isos": [
+        "IND",
+        "CHN"
+      ],
+      "support": "India display is 4.1% (value 4.09865814174589). China display is 3.9% (value 3.89714002609253)."
+    },
+    {
+      "surface": "beat_4",
+      "text": "The UK spends 5.9%. The USA is at 5.4%.",
+      "isos": [
+        "GBR",
+        "USA"
+      ],
+      "support": "United Kingdom display is 5.9% (value 5.90681982040405). United States display is 5.4% (value 5.42038011550903)."
+    },
+    {
+      "surface": "beat_5",
+      "text": "Namibia at 9.1%, Algeria at 9.0% and Cuba at 8.4% are among the highest.",
+      "isos": [
+        "NAM",
+        "DZA",
+        "CUB"
+      ],
+      "support": "Namibia display is 9.1% (rank 3), Algeria display is 9.0% (rank 4), Cuba display is 8.4% (rank 5)."
+    },
+    {
+      "surface": "beat_6",
+      "text": "Where does your country land?",
+      "isos": [],
+      "support": "Engagement question regarding the 179 mapped countries and territories."
+    },
+    {
+      "surface": "card_6",
+      "text": "['YOUR SCHOOLS?', 'Education spending % of GDP']",
+      "isos": [],
+      "support": "Card matching indicator theme and metadata unit '% of GDP'."
+    }
+  ],
+  "surface_checks": {
+    "title": {
+      "supported": true,
+      "reason": "Algeria's spending percentage divided by Japan's spending percentage equals approximately 2.7.",
+      "isos": [
+        "DZA",
+        "JPN"
+      ]
+    },
+    "hook": {
+      "supported": true,
+      "reason": "Accurately labels the indicator topic.",
+      "isos": []
+    },
+    "description": {
+      "supported": true,
+      "reason": "Correctly describes the theme and lists entities featured in the data/visual plans.",
+      "isos": [
+        "NAM",
+        "DZA",
+        "JPN",
+        "USA"
+      ]
+    },
+    "beat_0": {
+      "supported": true,
+      "reason": "Values match Algeria (9.0%) and Japan (3.3%) displays in the dataset.",
+      "isos": [
+        "DZA",
+        "JPN"
+      ]
+    },
+    "beat_1": {
+      "supported": true,
+      "reason": "Ratio is correct, and statement about local, regional, and central governments is directly from the indicator definition.",
+      "isos": [
+        "DZA",
+        "JPN"
+      ]
+    },
+    "beat_2": {
+      "supported": true,
+      "reason": "Somalia is rank 179 (0.0%) and Nigeria is rank 178 (0.3%).",
+      "isos": [
+        "SOM",
+        "NGA"
+      ]
+    },
+    "beat_3": {
+      "supported": true,
+      "reason": "India display is 4.1% and China display is 3.9%.",
+      "isos": [
+        "IND",
+        "CHN"
+      ]
+    },
+    "beat_4": {
+      "supported": true,
+      "reason": "United Kingdom display is 5.9% and United States display is 5.4%.",
+      "isos": [
+        "GBR",
+        "USA"
+      ]
+    },
+    "beat_5": {
+      "supported": true,
+      "reason": "Namibia (9.1%, rank 3), Algeria (9.0%, rank 4), and Cuba (8.4%, rank 5) are among the top ranks.",
+      "isos": [
+        "NAM",
+        "DZA",
+        "CUB"
+      ]
+    },
+    "beat_6": {
+      "supported": true,
+      "reason": "Standard call-to-action question.",
+      "isos": []
+    },
+    "card_6": {
+      "supported": true,
+      "reason": "Matches the metadata unit '% of GDP' and indicator theme.",
+      "isos": []
+    }
+  }
+}

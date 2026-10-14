@@ -1,0 +1,67 @@
+id: atlas037
+title: Colombia Rains 180 Times Egypt's Annual Precipitation
+hook_text: RAINS AND DROUGHTS
+description: Average annual precipitation by country, comparing the wettest and driest nations on Earth using World
+  Bank data.
+hashtags:
+- '#maps'
+- '#geography'
+- '#nature'
+sources:
+- https://data.worldbank.org/indicator/AG.LND.PRCP.MM
+dataset:
+  kind: worldbank
+  indicator: AG.LND.PRCP.MM
+  label: Average annual precipitation depth
+  unit: mm
+  source: World Bank
+  min_year: 2019
+scale:
+  edges:
+  - 250.0
+  - 1000.0
+  - 2000.0
+  - 3000.0
+  labels:
+  - Under 250 mm
+  - 250 to 1,000 mm
+  - 1,000 to 2,000 mm
+  - 2,000 to 3,000 mm
+  - Over 3,000 mm
+value_format: '{v:,.0f} mm'
+beats:
+- text: Colombia receives 3,240 millimetres of annual precipitation. Egypt gets just 18.
+  shot:
+    callouts:
+    - COL
+    - EGY
+- text: Colombia has 180 times the rainfall that Egypt gets.
+  shot:
+    kind: country
+    iso: COL
+- text: Egypt is the world's lowest at 18 millimetres.
+  shot:
+    kind: country
+    iso: EGY
+- text: Precipitation is any water that falls from clouds as a liquid or a solid.
+  shot:
+    kind: country
+    iso: EGY
+- text: The United States receives 715 millimetres. China hits 645.
+  shot:
+    kind: group
+    isos:
+    - USA
+    - CHN
+- text: Jordan has 111 millimetres, and Mauritania has 92.
+  shot:
+    kind: group
+    isos:
+    - JOR
+    - MRT
+- text: Where does your country land?
+  shot:
+    kind: card
+    lines:
+    - Where does your country land?
+    - World Bank Precipitation Data

@@ -864,7 +864,7 @@
    "value_format": "{v:.1f}%",
    "source_url": "https://data.worldbank.org/indicator/SE.XPD.TOTL.GD.ZS",
    "publisher_note": "Data API, UN Educational, Scientific and Cultural Organization (UNESCO), uri: https://databrowser",
-   "status": "open"
+   "status": "failed:ValueError"
   },
   {
    "id": "t029",
@@ -900,7 +900,7 @@
    "value_format": "{v:.0f}%",
    "source_url": "https://data.worldbank.org/indicator/NV.AGR.TOTL.ZS",
    "publisher_note": "Country official statistics, National Statistical Organizations and/or Central Banks;\nNational Accounts data files, Organisation for Economic Co-operation and Development (OECD);\nStaff estimates, Worl",
-   "status": "open"
+   "status": "failed:RuntimeError"
   },
   {
    "id": "t030",
@@ -1226,7 +1226,7 @@
     "#nature"
    ],
    "source_url": "https://data.worldbank.org/indicator/AG.LND.PRCP.MM",
-   "status": "open",
+   "status": "ready:atlas037",
    "added_by": "refill"
   },
   {

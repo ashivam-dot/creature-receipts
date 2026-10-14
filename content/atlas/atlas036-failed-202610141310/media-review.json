@@ -1,0 +1,38 @@
+{
+  "duration": 38.84,
+  "integrated_lufs": -14.3,
+  "true_peak_dbfs": -1.4,
+  "speech": {
+    "heard": "Algeria spends 9% on education, Japan spends 3.3%. Algeria has 2.7 times the share Japan does. This includes local, regional, and central governments. Somalia is the world's lowest at 0%, Nigeria has 0.3%. India has 4.1%, China has 3.9%. UK spends 5.9%, the USA is at 5.4%. Namibia at 9.1%, Algeria at 9% and Cuba at 8.4% are among the highest. Where does your country land?",
+    "model": "small.en",
+    "media_sha256": "579af576d2ad498eb5eab56c80b775fa71a99a6d2ef669510f3fa3dcea856ca9",
+    "primary_differences": [
+      "'9.0%' heard as '9%' after 'algeria spends'",
+      "'0.0%' heard as '0%' after 'is lowest at'",
+      "'the' heard as '(nothing)' after 'china has 3.9%'",
+      "'9.0%' heard as '9%' after 'one algeria at'"
+    ],
+    "differences": [
+      "'9.0%' heard as '9%' after 'algeria spends'",
+      "'0.0%' heard as '0%' after 'is lowest at'",
+      "'the' heard as '(nothing)' after 'china has 3.9%'",
+      "'9.0%' heard as '9%' after 'one algeria at'",
+      "base.en: '9.0%' heard as '9%' after 'algeria spends'",
+      "base.en: 'share' heard as 'shared' after '2.7 times the'",
+      "base.en: '0.0%' heard as '0%' after 'is lowest at'",
+      "base.en: '9.0%' heard as '9%' after 'one algeria at'"
+    ],
+    "corroboration": {
+      "model": "base.en",
+      "heard": "Algeria spends 9% on education, Japan spends 3.3%. Algeria has 2.7 times the shared Japan does, this includes local, regional, and central governments. Somalia is the world's lowest at 0%, Nigeria has 0.3%. India has 4.1%, China has 3.9%. UK spends 5.9%, the USA is at 5.4%. Namibia at 9.1%, Algeria at 9%, and Cuba at 8.4% are among the highest. Where does your country land?",
+      "differences": [
+        "'9.0%' heard as '9%' after 'algeria spends'",
+        "'share' heard as 'shared' after '2.7 times the'",
+        "'0.0%' heard as '0%' after 'is lowest at'",
+        "'the' heard as '(nothing)' after 'china has 3.9%'",
+        "'9.0%' heard as '9%' after 'one algeria at'"
+      ],
+      "resolved": []
+    }
+  }
+}
