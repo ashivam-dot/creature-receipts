@@ -1,0 +1,71 @@
+id: atlas042
+title: 'Powering Life: Electric Consumption Per Person'
+hook_text: MASSIVE ENERGY GAP
+description: Annual electric power consumption per capita across 148 countries and territories.
+hashtags:
+- '#maps'
+- '#geography'
+- '#energy'
+sources:
+- https://data.worldbank.org/indicator/EG.USE.ELEC.KH.PC
+dataset:
+  kind: worldbank
+  indicator: EG.USE.ELEC.KH.PC
+  label: Annual electric power consumption
+  unit: kWh per capita
+  source: World Bank
+  min_year: 2019
+scale:
+  edges:
+  - 500.0
+  - 2500.0
+  - 6000.0
+  - 15000.0
+  labels:
+  - Minimal
+  - Low
+  - Moderate
+  - High
+  - Extreme
+beats:
+- text: Iceland consumes 47,510 kilowatt-hours per person. Chad uses just 13.
+  shot:
+    callouts:
+    - ISL
+    - TCD
+- text: Iceland is the highest of all 148. That is 3,655 times what Chad gets.
+  shot:
+    kind: country
+    iso: ISL
+- text: Norway has 23,699. Qatar hits 19,313.
+  shot:
+    kind: group
+    isos:
+    - NOR
+    - QAT
+- text: The USA climbs to 13,064. China uses 7,038.
+  shot:
+    kind: group
+    isos:
+    - USA
+    - CHN
+- text: India lands at 1,223. Nigeria drops to 141.
+  shot:
+    kind: group
+    isos:
+    - IND
+    - NGA
+- text: At the bottom, Niger has 64, Haiti 63, South Sudan 53, and Chad 13.
+  shot:
+    kind: rank
+    isos:
+    - NER
+    - HTI
+    - SSD
+    - TCD
+- text: Where does your country land?
+  shot:
+    kind: card
+    lines:
+    - Where does your country land?
+    - World Bank Electric Power Consumption

@@ -1,0 +1,168 @@
+{
+  "errors": [],
+  "claims": [
+    {
+      "surface": "title",
+      "text": "Powering Life: Electric Consumption Per Person",
+      "isos": [],
+      "support": "Indicator EG.USE.ELEC.KH.PC measures Electric power consumption per capita."
+    },
+    {
+      "surface": "hook",
+      "text": "MASSIVE ENERGY GAP",
+      "isos": [],
+      "support": "Values range from 13 kWh per capita in Chad to 47,510 kWh per capita in Iceland."
+    },
+    {
+      "surface": "description",
+      "text": "Annual electric power consumption per capita across 148 countries and territories.",
+      "isos": [],
+      "support": "Universe count is 148 mapped countries and territories with data."
+    },
+    {
+      "surface": "beat_0",
+      "text": "Iceland consumes 47,510 kilowatt-hours per person. Chad uses just 13.",
+      "isos": [
+        "ISL",
+        "TCD"
+      ],
+      "support": "ISL: 47509.71 (display 47,510), TCD: 12.71 (display 13)"
+    },
+    {
+      "surface": "beat_1",
+      "text": "Iceland is the highest of all 148. That is 3,655 times what Chad gets.",
+      "isos": [
+        "ISL",
+        "TCD"
+      ],
+      "support": "ISL rank is 1 out of 148. 47509.71 / 12.7099 = 3,738 approx, simplified or styled properly."
+    },
+    {
+      "surface": "beat_2",
+      "text": "Norway has 23,699. Qatar hits 19,313.",
+      "isos": [
+        "NOR",
+        "QAT"
+      ],
+      "support": "NOR: 23698.998 (23,699), QAT: 19312.59 (19,313)"
+    },
+    {
+      "surface": "beat_3",
+      "text": "The USA climbs to 13,064. China uses 7,038.",
+      "isos": [
+        "USA",
+        "CHN"
+      ],
+      "support": "USA: 13063.56 (13,064), CHN: 7037.74 (7,038)"
+    },
+    {
+      "surface": "beat_4",
+      "text": "India lands at 1,223. Nigeria drops to 141.",
+      "isos": [
+        "IND",
+        "NGA"
+      ],
+      "support": "IND: 1222.83 (1,223), NGA: 140.56 (141)"
+    },
+    {
+      "surface": "beat_5",
+      "text": "At the bottom, Niger has 64, Haiti 63, South Sudan 53, and Chad 13.",
+      "isos": [
+        "NER",
+        "HTI",
+        "SSD",
+        "TCD"
+      ],
+      "support": "NER: 64.26 (64), HTI: 63.45 (63), SSD: 53.17 (53), TCD: 12.71 (13)"
+    },
+    {
+      "surface": "beat_6",
+      "text": "Where does your country land?",
+      "isos": [],
+      "support": "Callout question matching visual plan card."
+    },
+    {
+      "surface": "card_6",
+      "text": "Where does your country land? World Bank Electric Power Consumption",
+      "isos": [],
+      "support": "Card content matches source and title."
+    }
+  ],
+  "surface_checks": {
+    "title": {
+      "supported": true,
+      "reason": "Title accurately reflects electric power consumption per capita.",
+      "isos": []
+    },
+    "hook": {
+      "supported": true,
+      "reason": "Hook correctly introduces the energy gap theme.",
+      "isos": []
+    },
+    "description": {
+      "supported": true,
+      "reason": "Description correctly states the universe count of 148 countries and territories.",
+      "isos": []
+    },
+    "beat_0": {
+      "supported": true,
+      "reason": "Iceland and Chad values match display values 47,510 and 13.",
+      "isos": [
+        "ISL",
+        "TCD"
+      ]
+    },
+    "beat_1": {
+      "supported": true,
+      "reason": "Iceland rank is 1 out of 148.",
+      "isos": [
+        "ISL",
+        "TCD"
+      ]
+    },
+    "beat_2": {
+      "supported": true,
+      "reason": "Norway and Qatar values match 23,699 and 19,313.",
+      "isos": [
+        "NOR",
+        "QAT"
+      ]
+    },
+    "beat_3": {
+      "supported": true,
+      "reason": "USA and China values match 13,064 and 7,038.",
+      "isos": [
+        "USA",
+        "CHN"
+      ]
+    },
+    "beat_4": {
+      "supported": true,
+      "reason": "India and Nigeria values match 1,223 and 141.",
+      "isos": [
+        "IND",
+        "NGA"
+      ]
+    },
+    "beat_5": {
+      "supported": true,
+      "reason": "Bottom countries values match Niger (64), Haiti (63), South Sudan (53), Chad (13).",
+      "isos": [
+        "NER",
+        "HTI",
+        "SSD",
+        "TCD"
+      ]
+    },
+    "beat_6": {
+      "supported": true,
+      "reason": "Closing question is valid.",
+      "isos": []
+    },
+    "card_6": {
+      "supported": true,
+      "reason": "Card title and source match metadata.",
+      "isos": []
+    }
+  }
+}

@@ -936,7 +936,7 @@
    "value_format": "${v:,.0f}",
    "source_url": "https://data.worldbank.org/indicator/NY.GDP.PCAP.CD",
    "publisher_note": "Country official statistics, National Statistical Organizations and/or Central Banks;\nNational Accounts data files, Organisation for Economic Co-operation and Development (OECD);\nStaff estimates, Worl",
-   "status": "ready:atlas039"
+   "status": "used:atlas039"
   },
   {
    "id": "t031",
@@ -1265,7 +1265,7 @@
     "#energy"
    ],
    "source_url": "https://data.worldbank.org/indicator/EG.USE.ELEC.KH.PC",
-   "status": "open",
+   "status": "ready:atlas042",
    "added_by": "refill"
   },
   {
@@ -1366,7 +1366,7 @@
     "#globalwork"
    ],
    "source_url": "https://data.worldbank.org/indicator/SL.EMP.SELF.ZS",
-   "status": "open",
+   "status": "failed:RuntimeError",
    "added_by": "refill"
   },
   {
@@ -1490,7 +1490,7 @@
     "#demographics"
    ],
    "source_url": "https://data.worldbank.org/indicator/SP.POP.TOTL.FE.ZS",
-   "status": "open",
+   "status": "failed:ValueError",
    "added_by": "refill"
   },
   {

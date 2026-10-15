@@ -1,0 +1,59 @@
+id: atlas044
+title: The Global Balance of Women
+format: rank_ladder
+hook_text: QATAR DROPS TO 28.9%
+description: While women are the majority in most countries and territories, they represent less than 30% of the
+  population in parts of the Middle East due to labor migration.
+hashtags:
+- '#maps'
+- '#geography'
+- '#demographics'
+sources:
+- https://data.worldbank.org/indicator/SP.POP.TOTL.FE.ZS
+dataset:
+  kind: worldbank
+  indicator: SP.POP.TOTL.FE.ZS
+  label: Female share of the population
+  unit: '%'
+  source: World Bank
+  min_year: 2019
+scale:
+  kind: threshold
+  at: 50.0
+  labels:
+  - Majority female
+  - Majority male
+value_format: '{v:.1f}%'
+beats:
+- text: While women are the majority in most nations, Qatar drops to just 28.9%.
+  shot:
+    callouts:
+    - QAT
+- text: Moldova has 54.0% of its population female, which is 1.9 times Qatar.
+  shot:
+    kind: country
+    iso: MDA
+- text: Russia has 53.6%, Latvia has 53.6%, and Armenia has 53.6%.
+  shot:
+    kind: rank
+    isos:
+    - RUS
+    - LVA
+    - ARM
+- text: Among the giants, USA sits at 49.8%, China is 49.1%, and India has 48.4%.
+  shot:
+    kind: group
+    isos:
+    - USA
+    - CHN
+    - IND
+- text: Population is based on the de facto definition, counting all residents regardless of legal status.
+  shot:
+    kind: country
+    iso: QAT
+- text: Where does your country land?
+  shot:
+    kind: card
+    lines:
+    - Where does your country land?
+    - Female share of the population (%), World Bank, 2025.

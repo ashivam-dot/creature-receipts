@@ -1,0 +1,27 @@
+{
+  "duration": 41.95,
+  "integrated_lufs": -14.3,
+  "true_peak_dbfs": -1.3,
+  "speech": {
+    "heard": "In Moldova, women are 54% of the population, in Qatar just 28.9%. Qatar is the world's lowest, counting all residents regardless of legal status or citizenship. Other Gulf nations sit near the bottom. Saudi Arabia has 39.6%, Kuwait 38.9%, Oman 37.6% and UAE 36.2%. Russia sits near the top, where women make up 53.6%. The two biggest superpowers both tilt male. USA has 49.8% and China has 49.1%. Where does your country land?",
+    "model": "small.en",
+    "media_sha256": "b0bef20b47783e40de5a169479f4269543c59330ffd5a80d178ad649578cd220",
+    "primary_differences": [
+      "'54.0%' heard as '54%' after 'moldova women are'"
+    ],
+    "differences": [
+      "'54.0%' heard as '54%' after 'moldova women are'",
+      "base.en: '54.0%' heard as '54%' after 'moldova women are'",
+      "base.en: 'male' heard as 'mail' after 'superpowers both tilt'"
+    ],
+    "corroboration": {
+      "model": "base.en",
+      "heard": "In Moldova, women are 54% of the population, in Qatar, just 28.9%. Qatar is the world's lowest, counting all residents regardless of legal status or citizenship. Other Gulf nations sit near the bottom, Saudi Arabia has 39.6%, Kuwait 38.9%, Oman 37.6% and UAE 36.2%. Russia sits near the top, where women make up 53.6%. The two biggest superpowers both tilt-mail, USA has 49.8% and China has 49.1%. Where does your country land?",
+      "differences": [
+        "'54.0%' heard as '54%' after 'moldova women are'",
+        "'male' heard as 'mail' after 'superpowers both tilt'"
+      ],
+      "resolved": []
+    }
+  }
+}

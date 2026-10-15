@@ -1,0 +1,175 @@
+{
+  "errors": [
+    {
+      "surface": "beat_1",
+      "claim": "Moldova has 54.0% of its population female, which is 1.9 times Qatar.",
+      "reason": "Moldova value (54.0%) divided by Qatar value (28.9%) is approximately 1.87, not 1.9 times in exact terms or the calculation uses wrong phrasing for the ratio, but more importantly 54.0 / 28.9 = 1.868, so rounding to 1.9 could be acceptable, but let us check beat_2.",
+      "severity": "style"
+    },
+    {
+      "surface": "beat_2",
+      "claim": "Armenia has 53.6%",
+      "reason": "Armenia value in evidence is 53.5916980426533 which displays as 53.6%, however Russia is 53.6257 (53.6%), Latvia is 53.5937 (53.6%), Armenia is 53.5916 (53.6%). The claim that Armenia has 53.6% is supported by display, but let us check another factual error: description or definition.",
+      "severity": "style"
+    },
+    {
+      "surface": "description",
+      "claim": "due to labor migration",
+      "reason": "The World Bank definition does not attribute the female share or lack thereof to labor migration; this is an unsourced cause.",
+      "severity": "factual"
+    }
+  ],
+  "claims": [
+    {
+      "surface": "title",
+      "text": "The Global Balance of Women",
+      "isos": [],
+      "support": "Global indicator SP.POP.TOTL.FE.ZS"
+    },
+    {
+      "surface": "hook",
+      "text": "QATAR DROPS TO 28.9%",
+      "isos": [
+        "QAT"
+      ],
+      "support": "QAT: 28.9%"
+    },
+    {
+      "surface": "description",
+      "text": "While women are the majority in most countries and territories, they represent less than 30% of the population in parts of the Middle East due to labor migration.",
+      "isos": [
+        "QAT",
+        "BHR",
+        "ARE",
+        "OMN",
+        "SAU",
+        "KWT"
+      ],
+      "support": "At least 137 entities out of 208 are >= 50% (majority). QAT, BHR, ARE, OMN, SAU, KWT are below 30%."
+    },
+    {
+      "surface": "beat_0",
+      "text": "While women are the majority in most nations, Qatar drops to just 28.9%.",
+      "isos": [
+        "QAT"
+      ],
+      "support": "137 out of 208 entities are >= 50%. QAT value is 28.9%."
+    },
+    {
+      "surface": "beat_1",
+      "text": "Moldova has 54.0% of its population female, which is 1.9 times Qatar.",
+      "isos": [
+        "MDA",
+        "QAT"
+      ],
+      "support": "MDA: 54.0%, QAT: 28.9%"
+    },
+    {
+      "surface": "beat_2",
+      "text": "Russia has 53.6%, Latvia has 53.6%, and Armenia has 53.6%.",
+      "isos": [
+        "RUS",
+        "LVA",
+        "ARM"
+      ],
+      "support": "RUS: 53.6%, LVA: 53.6%, ARM: 53.6%"
+    },
+    {
+      "surface": "beat_3",
+      "text": "Among the giants, USA sits at 49.8%, China is 49.1%, and India has 48.4%.",
+      "isos": [
+        "USA",
+        "CHN",
+        "IND"
+      ],
+      "support": "USA: 49.8%, CHN: 49.1%, IND: 48.4%"
+    },
+    {
+      "surface": "beat_4",
+      "text": "Population is based on the de facto definition, counting all residents regardless of legal status.",
+      "isos": [],
+      "support": "Population is based on the de facto definition of population, which counts all residents regardless of legal status or citizenship."
+    },
+    {
+      "surface": "beat_5",
+      "text": "Where does your country land?",
+      "isos": [],
+      "support": "N/A"
+    },
+    {
+      "surface": "card_5",
+      "text": "Where does your country land? Female share of the population (%), World Bank, 2025.",
+      "isos": [],
+      "support": "Indicator SP.POP.TOTL.FE.ZS, World Bank, 2025"
+    }
+  ],
+  "surface_checks": {
+    "title": {
+      "supported": true,
+      "reason": "Accurate stylistic headline for female population share.",
+      "isos": []
+    },
+    "hook": {
+      "supported": true,
+      "reason": "Qatar value is 28.9%",
+      "isos": [
+        "QAT"
+      ]
+    },
+    "description": {
+      "supported": false,
+      "reason": "Includes unsourced cause 'due to labor migration'.",
+      "isos": [
+        "QAT"
+      ]
+    },
+    "beat_0": {
+      "supported": true,
+      "reason": "137 of 208 are >= 50% and Qatar is 28.9%",
+      "isos": [
+        "QAT"
+      ]
+    },
+    "beat_1": {
+      "supported": true,
+      "reason": "Moldova is 54.0% and Qatar is 28.9%",
+      "isos": [
+        "MDA",
+        "QAT"
+      ]
+    },
+    "beat_2": {
+      "supported": true,
+      "reason": "Russia 53.6%, Latvia 53.6%, Armenia 53.6% match display values.",
+      "isos": [
+        "RUS",
+        "LVA",
+        "ARM"
+      ]
+    },
+    "beat_3": {
+      "supported": true,
+      "reason": "USA 49.8%, China 49.1%, India 48.4% match data.",
+      "isos": [
+        "USA",
+        "CHN",
+        "IND"
+      ]
+    },
+    "beat_4": {
+      "supported": true,
+      "reason": "Directly matches source definition.",
+      "isos": []
+    },
+    "beat_5": {
+      "supported": true,
+      "reason": "Standard closing question.",
+      "isos": []
+    },
+    "card_5": {
+      "supported": true,
+      "reason": "Matches indicator, source, and year.",
+      "isos": []
+    }
+  }
+}
