@@ -720,7 +720,7 @@
    "value_format": "{v:.0f} per 100",
    "source_url": "https://data.worldbank.org/indicator/SP.POP.DPND.OL",
    "publisher_note": "World Population Prospects, United Nations (UN), publisher: UN Population Division;\nStaff estimates, World Bank (WB)",
-   "status": "ready:atlas033"
+   "status": "used:atlas033"
   },
   {
    "id": "t024",
@@ -756,7 +756,7 @@
    "value_format": "{v:.0f}",
    "source_url": "https://data.worldbank.org/indicator/SP.DYN.CBRT.IN",
    "publisher_note": "World Population Prospects, United Nations (UN), publisher: UN Population Division;\nStatistical databases and publications from national statistical offices, National Statistical Offices (NSOs);\nDemog",
-   "status": "open"
+   "status": "failed:ValueError"
   },
   {
    "id": "t025",
@@ -936,7 +936,7 @@
    "value_format": "${v:,.0f}",
    "source_url": "https://data.worldbank.org/indicator/NY.GDP.PCAP.CD",
    "publisher_note": "Country official statistics, National Statistical Organizations and/or Central Banks;\nNational Accounts data files, Organisation for Economic Co-operation and Development (OECD);\nStaff estimates, Worl",
-   "status": "open"
+   "status": "ready:atlas039"
   },
   {
    "id": "t031",
@@ -1148,7 +1148,7 @@
     "#dataviz"
    ],
    "source_url": "https://data.worldbank.org/indicator/SH.ALC.PCAP.LI",
-   "status": "open",
+   "status": "ready:atlas040",
    "added_by": "refill"
   },
   {
@@ -1226,7 +1226,7 @@
     "#nature"
    ],
    "source_url": "https://data.worldbank.org/indicator/AG.LND.PRCP.MM",
-   "status": "ready:atlas037",
+   "status": "used:atlas037",
    "added_by": "refill"
   },
   {
@@ -1459,6 +1459,388 @@
     "#finance"
    ],
    "source_url": "https://data.worldbank.org/indicator/FX.OWN.TOTL.ZS",
+   "status": "open",
+   "added_by": "refill"
+  },
+  {
+   "id": "t045",
+   "topic": "The Global Balance of Women",
+   "angle": "While women are the majority in most countries, they represent less than 30% of the population in parts of the Middle East due to labor migration.",
+   "format": "rank_ladder",
+   "dataset": {
+    "kind": "worldbank",
+    "indicator": "SP.POP.TOTL.FE.ZS",
+    "label": "Female share of the population",
+    "unit": "%",
+    "source": "World Bank",
+    "min_year": 2019
+   },
+   "scale": {
+    "kind": "threshold",
+    "at": 50,
+    "labels": [
+     "Majority female",
+     "Majority male"
+    ]
+   },
+   "value_format": "{v:.1f}%",
+   "hashtags": [
+    "#maps",
+    "#geography",
+    "#demographics"
+   ],
+   "source_url": "https://data.worldbank.org/indicator/SP.POP.TOTL.FE.ZS",
+   "status": "open",
+   "added_by": "refill"
+  },
+  {
+   "id": "t046",
+   "topic": "Global Prevalence of Tobacco Use",
+   "angle": "Nearly half of adults in Timor-Leste use tobacco, while in Nigeria the rate is only 3.1%.",
+   "format": "map_reveal",
+   "dataset": {
+    "kind": "worldbank",
+    "indicator": "SH.PRV.SMOK",
+    "label": "Share of adults using tobacco",
+    "unit": "%",
+    "source": "World Bank",
+    "min_year": 2019
+   },
+   "scale": {
+    "kind": "bins",
+    "edges": [
+     10,
+     20,
+     30,
+     40
+    ],
+    "labels": [
+     "Under 10%",
+     "10% to 20%",
+     "20% to 30%",
+     "30% to 40%",
+     "Over 40%"
+    ]
+   },
+   "value_format": "{v:.1f}%",
+   "hashtags": [
+    "#maps",
+    "#geography",
+    "#publichealth"
+   ],
+   "source_url": "https://data.worldbank.org/indicator/SH.PRV.SMOK",
+   "status": "open",
+   "added_by": "refill"
+  },
+  {
+   "id": "t047",
+   "topic": "The Global Reach of Landline Telephones",
+   "angle": "While landlines have almost entirely disappeared across much of Africa, more than half of the population in France and Portugal still maintains a fixed connection.",
+   "format": "map_reveal",
+   "dataset": {
+    "kind": "worldbank",
+    "indicator": "IT.MLT.MAIN.P2",
+    "label": "Fixed telephone lines per 100 people",
+    "unit": "per 100 people",
+    "source": "World Bank",
+    "min_year": 2019
+   },
+   "scale": {
+    "kind": "bins",
+    "edges": [
+     2,
+     10,
+     25,
+     50
+    ],
+    "labels": [
+     "Under 2",
+     "2 to 10",
+     "10 to 25",
+     "25 to 50",
+     "Over 50"
+    ]
+   },
+   "value_format": "{v:.1f}",
+   "hashtags": [
+    "#maps",
+    "#geography",
+    "#telecom"
+   ],
+   "source_url": "https://data.worldbank.org/indicator/IT.MLT.MAIN.P2",
+   "status": "open",
+   "added_by": "refill"
+  },
+  {
+   "id": "t048",
+   "topic": "Electricity Generated From Flowing Water",
+   "angle": "While the global median is only 10%, countries like Bhutan and Paraguay generate nearly 100% of their electricity from hydroelectric sources.",
+   "format": "rank_ladder",
+   "dataset": {
+    "kind": "worldbank",
+    "indicator": "EG.ELC.HYRO.ZS",
+    "label": "Share of electricity from hydropower",
+    "unit": "%",
+    "source": "World Bank",
+    "min_year": 2019
+   },
+   "scale": {
+    "kind": "bins",
+    "edges": [
+     10,
+     45,
+     75,
+     95
+    ],
+    "labels": [
+     "<10%",
+     "10-45%",
+     "45-75%",
+     "75-95%",
+     ">95%"
+    ]
+   },
+   "value_format": "{v:.1f}%",
+   "hashtags": [
+    "#maps",
+    "#geography",
+    "#renewableenergy"
+   ],
+   "source_url": "https://data.worldbank.org/indicator/EG.ELC.HYRO.ZS",
+   "status": "open",
+   "added_by": "refill"
+  },
+  {
+   "id": "t049",
+   "topic": "The Global Part-Time Workforce",
+   "angle": "In Trinidad and Tobago, the entire workforce is classified as part-time under the international thirty-five hour threshold.",
+   "format": "map_reveal",
+   "dataset": {
+    "kind": "worldbank",
+    "indicator": "SL.TLF.PART.ZS",
+    "label": "Part-time share of total employment",
+    "unit": "%",
+    "source": "World Bank",
+    "min_year": 2019
+   },
+   "scale": {
+    "kind": "bins",
+    "edges": [
+     10,
+     25,
+     40,
+     60
+    ],
+    "labels": [
+     "Minimal",
+     "Low",
+     "Moderate",
+     "High",
+     "Extremely High"
+    ]
+   },
+   "value_format": "{v:.1f}%",
+   "hashtags": [
+    "#maps",
+    "#geography",
+    "#economy"
+   ],
+   "source_url": "https://data.worldbank.org/indicator/SL.TLF.PART.ZS",
+   "status": "open",
+   "added_by": "refill"
+  },
+  {
+   "id": "t050",
+   "topic": "Hospital Bed Capacity Worldwide",
+   "angle": "South Korea and Japan offer over 50 times more hospital beds per capita than several nations in the Sahel region.",
+   "format": "map_reveal",
+   "dataset": {
+    "kind": "worldbank",
+    "indicator": "SH.MED.BEDS.ZS",
+    "label": "Hospital beds per 1,000 people",
+    "unit": "per 1,000 people",
+    "source": "World Bank",
+    "min_year": 2019
+   },
+   "scale": {
+    "kind": "bins",
+    "edges": [
+     1,
+     2.5,
+     5,
+     8
+    ],
+    "labels": [
+     "Under 1.0",
+     "1.0–2.5",
+     "2.5–5.0",
+     "5.0–8.0",
+     "Over 8.0"
+    ]
+   },
+   "value_format": "{v:.1f}",
+   "hashtags": [
+    "#maps",
+    "#geography",
+    "#healthcare"
+   ],
+   "source_url": "https://data.worldbank.org/indicator/SH.MED.BEDS.ZS",
+   "status": "open",
+   "added_by": "refill"
+  },
+  {
+   "id": "t051",
+   "topic": "Global Access to Clean Cooking",
+   "angle": "While the global median access rate is 93%, there are still five countries where 2% or less of the population uses clean cooking fuels.",
+   "format": "rank_ladder",
+   "dataset": {
+    "kind": "worldbank",
+    "indicator": "EG.CFT.ACCS.ZS",
+    "label": "Access to clean cooking fuels",
+    "unit": "%",
+    "source": "World Bank",
+    "min_year": 2019
+   },
+   "scale": {
+    "kind": "bins",
+    "edges": [
+     10,
+     50,
+     90,
+     99
+    ],
+    "labels": [
+     "Under 10%",
+     "10-50%",
+     "50-90%",
+     "90-99%",
+     "Over 99%"
+    ]
+   },
+   "value_format": "{v:.0f}%",
+   "hashtags": [
+    "#maps",
+    "#geography",
+    "#energyaccess"
+   ],
+   "source_url": "https://data.worldbank.org/indicator/EG.CFT.ACCS.ZS",
+   "status": "open",
+   "added_by": "refill"
+  },
+  {
+   "id": "t052",
+   "topic": "Internal Freshwater Resources Per Person",
+   "angle": "Iceland has over 400,000 cubic meters of internal freshwater per person, while desert nations like Kuwait have zero.",
+   "format": "map_reveal",
+   "dataset": {
+    "kind": "worldbank",
+    "indicator": "ER.H2O.INTR.PC",
+    "label": "Internal freshwater per person",
+    "unit": "m³",
+    "source": "World Bank",
+    "min_year": 2019
+   },
+   "scale": {
+    "kind": "bins",
+    "edges": [
+     1000,
+     2500,
+     10000,
+     50000
+    ],
+    "labels": [
+     "<1k",
+     "1k-2.5k",
+     "2.5k-10k",
+     "10k-50k",
+     ">50k"
+    ]
+   },
+   "value_format": "{v:,.0f} m³",
+   "hashtags": [
+    "#maps",
+    "#geography",
+    "#water"
+   ],
+   "source_url": "https://data.worldbank.org/indicator/ER.H2O.INTR.PC",
+   "status": "open",
+   "added_by": "refill"
+  },
+  {
+   "id": "t053",
+   "topic": "Global Access to Physical Banking",
+   "angle": "San Marino maintains over 120 bank branches per 100,000 adults, while the Democratic Republic of the Congo has fewer than one.",
+   "format": "map_reveal",
+   "dataset": {
+    "kind": "worldbank",
+    "indicator": "FB.CBK.BRCH.P5",
+    "label": "Bank branches per 100,000 adults",
+    "unit": "per 100k adults",
+    "source": "World Bank",
+    "min_year": 2019
+   },
+   "scale": {
+    "kind": "bins",
+    "edges": [
+     3,
+     12,
+     30,
+     60
+    ],
+    "labels": [
+     "Under 3",
+     "3 to 12",
+     "12 to 30",
+     "30 to 60",
+     "Over 60"
+    ]
+   },
+   "value_format": "{v:.1f}",
+   "hashtags": [
+    "#maps",
+    "#geography",
+    "#finance"
+   ],
+   "source_url": "https://data.worldbank.org/indicator/FB.CBK.BRCH.P5",
+   "status": "open",
+   "added_by": "refill"
+  },
+  {
+   "id": "t054",
+   "topic": "Global Tertiary Education Enrollment",
+   "angle": "Greece's tertiary enrollment rate reaches 165% because the figure includes students of all ages, not just those recently out of high school.",
+   "format": "rank_ladder",
+   "dataset": {
+    "kind": "worldbank",
+    "indicator": "SE.TER.ENRR",
+    "label": "Gross tertiary enrollment ratio",
+    "unit": "%",
+    "source": "World Bank",
+    "min_year": 2019
+   },
+   "scale": {
+    "kind": "bins",
+    "edges": [
+     10,
+     25,
+     50,
+     80
+    ],
+    "labels": [
+     "Very Low",
+     "Low",
+     "Moderate",
+     "High",
+     "Very High"
+    ]
+   },
+   "value_format": "{v:.1f}%",
+   "hashtags": [
+    "#maps",
+    "#geography",
+    "#education"
+   ],
+   "source_url": "https://data.worldbank.org/indicator/SE.TER.ENRR",
    "status": "open",
    "added_by": "refill"
   }

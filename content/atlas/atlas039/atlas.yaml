@@ -1,0 +1,66 @@
+id: atlas039
+title: Ireland Produces $131,592 per Person
+hook_text: OUTPUT PER PERSON
+description: Gross domestic product per person in current US dollars across nations, based on World Bank data.
+hashtags:
+- '#maps'
+- '#geography'
+- '#data'
+sources:
+- https://data.worldbank.org/indicator/NY.GDP.PCAP.CD
+dataset:
+  kind: worldbank
+  indicator: NY.GDP.PCAP.CD
+  label: GDP per person
+  unit: US dollars
+  source: World Bank
+  min_year: 2019
+scale:
+  edges:
+  - 1000.0
+  - 4000.0
+  - 13000.0
+  - 30000.0
+  - 60000.0
+  labels:
+  - <$1k
+  - 1-4k
+  - 4-13k
+  - 13-30k
+  - 30-60k
+  - $60k+
+value_format: ${v:,.0f}
+beats:
+- text: Switzerland produces $114,769 per person. In Burundi, it is $234.
+  shot:
+    callouts:
+    - CHE
+    - BDI
+- text: Burundi is the world's lowest, dividing total production of goods and services across its population.
+  shot:
+    kind: country
+    iso: BDI
+- text: Near the top, Ireland is one of the highest, producing $131,592 per person.
+  shot:
+    kind: country
+    iso: IRL
+- text: Germany produces $60,496 per person.
+  shot:
+    kind: country
+    iso: DEU
+- text: China produces $13,862 per person, while Brazil produces $10,713.
+  shot:
+    kind: group
+    isos:
+    - CHN
+    - BRA
+- text: India produces $2,702 per person.
+  shot:
+    kind: country
+    iso: IND
+- text: Where does your country land?
+  shot:
+    kind: card
+    lines:
+    - Where Do You Land?
+    - GDP per Person, World Bank

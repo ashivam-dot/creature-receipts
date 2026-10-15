@@ -1,0 +1,160 @@
+{
+  "errors": [],
+  "claims": [
+    {
+      "surface": "title",
+      "text": "Ireland Produces $131,592 per Person",
+      "isos": [
+        "IRL"
+      ],
+      "support": "IRL value 131592.462547877 display $131,592"
+    },
+    {
+      "surface": "hook",
+      "text": "OUTPUT PER PERSON",
+      "isos": [],
+      "support": "Indicator NY.GDP.PCAP.CD"
+    },
+    {
+      "surface": "description",
+      "text": "Gross domestic product per person in current US dollars across nations, based on World Bank data.",
+      "isos": [],
+      "support": "World Bank indicator definition and source"
+    },
+    {
+      "surface": "beat_0",
+      "text": "Switzerland produces $114,769 per person. In Burundi, it is $234.",
+      "isos": [
+        "CHE",
+        "BDI"
+      ],
+      "support": "CHE value 114769.012314293 display $114,769; BDI value 233.823013385395 display $234"
+    },
+    {
+      "surface": "beat_1",
+      "text": "Burundi is the world's lowest, dividing total production of goods and services across its population.",
+      "isos": [
+        "BDI"
+      ],
+      "support": "BDI rank 203 (lowest among 203 counted entities); definition of GDP per capita"
+    },
+    {
+      "surface": "beat_2",
+      "text": "Near the top, Ireland is one of the highest, producing $131,592 per person.",
+      "isos": [
+        "IRL"
+      ],
+      "support": "IRL rank 4, value 131592.462547877 display $131,592"
+    },
+    {
+      "surface": "beat_3",
+      "text": "Germany produces $60,496 per person.",
+      "isos": [
+        "DEU"
+      ],
+      "support": "DEU value 60496.4350820414 display $60,496"
+    },
+    {
+      "surface": "beat_4",
+      "text": "China produces $13,862 per person, while Brazil produces $10,713.",
+      "isos": [
+        "CHN",
+        "BRA"
+      ],
+      "support": "CHN value 13861.970224368 display $13,862; BRA value 10713.2856869511 display $10,713"
+    },
+    {
+      "surface": "beat_5",
+      "text": "India produces $2,702 per person.",
+      "isos": [
+        "IND"
+      ],
+      "support": "IND value 2702.47987141553 display $2,702"
+    },
+    {
+      "surface": "beat_6",
+      "text": "Where does your country land?",
+      "isos": [],
+      "support": "Closing prompt matching card_6"
+    },
+    {
+      "surface": "card_6",
+      "text": "Where Do You Land? GDP per Person, World Bank",
+      "isos": [],
+      "support": "Card matching visual plan and indicator metadata"
+    }
+  ],
+  "surface_checks": {
+    "title": {
+      "supported": true,
+      "reason": "Ireland's value is $131,592 in the evidence.",
+      "isos": [
+        "IRL"
+      ]
+    },
+    "hook": {
+      "supported": true,
+      "reason": "The indicator is Gross Domestic Product per capita.",
+      "isos": []
+    },
+    "description": {
+      "supported": true,
+      "reason": "Matches World Bank indicator definition and source.",
+      "isos": []
+    },
+    "beat_0": {
+      "supported": true,
+      "reason": "Switzerland value is $114,769 and Burundi is $234.",
+      "isos": [
+        "CHE",
+        "BDI"
+      ]
+    },
+    "beat_1": {
+      "supported": true,
+      "reason": "Burundi is ranked 203 out of 203 entities, making it the lowest, and GDP divides production by population.",
+      "isos": [
+        "BDI"
+      ]
+    },
+    "beat_2": {
+      "supported": true,
+      "reason": "Ireland is ranked 4th with $131,592 per person.",
+      "isos": [
+        "IRL"
+      ]
+    },
+    "beat_3": {
+      "supported": true,
+      "reason": "Germany's value is $60,496.",
+      "isos": [
+        "DEU"
+      ]
+    },
+    "beat_4": {
+      "supported": true,
+      "reason": "China value is $13,862 and Brazil is $10,713.",
+      "isos": [
+        "CHN",
+        "BRA"
+      ]
+    },
+    "beat_5": {
+      "supported": true,
+      "reason": "India's value is $2,702.",
+      "isos": [
+        "IND"
+      ]
+    },
+    "beat_6": {
+      "supported": true,
+      "reason": "Closing call to action matches card content.",
+      "isos": []
+    },
+    "card_6": {
+      "supported": true,
+      "reason": "Card text matches visual plan lines.",
+      "isos": []
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "duration": 29.73,
+  "integrated_lufs": -14.3,
+  "true_peak_dbfs": -1.4,
+  "speech": {
+    "heard": "Chad counts 43 births per 1,000 people, Spain counts 6. See African Rep is the world's highest at 46. Booming births cover the region, Somalia has 42 and Niger has 41. The global median is 14, India sits near the middle at 16. The USA falls lower at 11 live births per 1,000 people. South Korea is one of the lowest with 5. Where does your country land?",
+    "model": "small.en",
+    "media_sha256": "3d059ea61b3c8224ee56c12aedbb2c001214538d7e361c68555c910fb6633bcc",
+    "primary_differences": [
+      "'c' heard as 'see' after 'spain counts 6'"
+    ],
+    "differences": [
+      "'c' heard as 'see' after 'spain counts 6'",
+      "base.en: 'c' heard as 'see' after 'spain counts 6'"
+    ],
+    "corroboration": {
+      "model": "base.en",
+      "heard": "Chad counts 43 births per 1,000 people, Spain counts 6. See African Rep is the world's highest at 46. Booming births cover the region, Somalia has 42 and Niger has 41. The global median is 14, India sits near the middle at 16. The USA falls lower at 11 live births per 1,000 people. South Korea is one of the lowest with 5. Where does your country land? . . . . . .",
+      "differences": [
+        "'c' heard as 'see' after 'spain counts 6'"
+      ],
+      "resolved": []
+    }
+  }
+}

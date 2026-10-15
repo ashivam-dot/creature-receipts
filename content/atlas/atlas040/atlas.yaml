@@ -1,0 +1,63 @@
+id: atlas040
+title: Romania Drinks 16.8 Liters of Pure Alcohol per Adult
+hook_text: GLOBAL ALCOHOL DIVIDE
+description: Romania leads the world in alcohol consumption at 16.8 liters per adult, while many nations drink zero.
+hashtags:
+- '#maps'
+- '#geography'
+- '#dataviz'
+sources:
+- https://data.worldbank.org/indicator/SH.ALC.PCAP.LI
+dataset:
+  kind: worldbank
+  indicator: SH.ALC.PCAP.LI
+  label: Liters of pure alcohol per person
+  unit: liters
+  source: World Bank
+  min_year: 2019
+scale:
+  edges:
+  - 1.0
+  - 4.0
+  - 8.0
+  - 12.0
+  labels:
+  - Under 1
+  - 1 to 4
+  - 4 to 8
+  - 8 to 12
+  - Over 12
+value_format: '{v:.1f} liters'
+beats:
+- text: Adults in Romania drink 16.8 liters of pure alcohol. In Somalia, it is 0.0.
+  shot:
+    callouts:
+    - ROU
+    - SOM
+- text: Romania is the world's highest, counting both recorded and unrecorded alcohol for all adults.
+  shot:
+    kind: country
+    iso: ROU
+- text: 'Other top nations follow close behind: Georgia drinks 14.4 liters, Latvia 12.9, and Czech Republic 12.0.'
+  shot:
+    kind: rank
+    isos:
+    - GEO
+    - LVA
+    - CZE
+- text: Adults in the USA drink 9.9 liters of pure alcohol, falling well short of Romania.
+  shot:
+    kind: country
+    iso: USA
+- text: 'Giant nations drink far less: China has 4.6 liters, and India has 4.1.'
+  shot:
+    kind: group
+    isos:
+    - CHN
+    - IND
+- text: Where does your country land?
+  shot:
+    kind: card
+    lines:
+    - Where Do You Land?
+    - Pure Alcohol per Adult in Liters

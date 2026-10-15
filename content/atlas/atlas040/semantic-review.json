@@ -1,0 +1,157 @@
+{
+  "errors": [],
+  "claims": [
+    {
+      "surface": "title",
+      "text": "Romania Drinks 16.8 Liters of Pure Alcohol per Adult",
+      "isos": [
+        "ROU"
+      ],
+      "support": "ROU value is 16.8"
+    },
+    {
+      "surface": "hook",
+      "text": "GLOBAL ALCOHOL DIVIDE",
+      "isos": [],
+      "support": "Global alcohol consumption indicators and variations across mapped countries"
+    },
+    {
+      "surface": "description",
+      "text": "Romania leads the world in alcohol consumption at 16.8 liters per adult, while many nations drink zero.",
+      "isos": [
+        "ROU",
+        "SOM"
+      ],
+      "support": "ROU rank 1 with 16.8 liters; SOM rank 181 with 0.0 liters"
+    },
+    {
+      "surface": "beat_0",
+      "text": "Adults in Romania drink 16.8 liters of pure alcohol. In Somalia, it is 0.0.",
+      "isos": [
+        "ROU",
+        "SOM"
+      ],
+      "support": "ROU value 16.8; SOM value 0.0"
+    },
+    {
+      "surface": "beat_1",
+      "text": "Romania is the world's highest, counting both recorded and unrecorded alcohol for all adults.",
+      "isos": [
+        "ROU"
+      ],
+      "support": "ROU rank 1, definition mentions sum of recorded and unrecorded alcohol per person (15 years or older)"
+    },
+    {
+      "surface": "beat_2",
+      "text": "Other top nations follow close behind: Georgia drinks 14.4 liters, Latvia 12.9, and Czech Republic 12.0.",
+      "isos": [
+        "GEO",
+        "LVA",
+        "CZE"
+      ],
+      "support": "GEO value 14.41 (14.4), LVA value 12.87 (12.9), CZE value 11.99 (12.0)"
+    },
+    {
+      "surface": "beat_3",
+      "text": "Adults in the USA drink 9.9 liters of pure alcohol, falling well short of Romania.",
+      "isos": [
+        "USA",
+        "ROU"
+      ],
+      "support": "USA value 9.9, ROU value 16.8"
+    },
+    {
+      "surface": "beat_4",
+      "text": "Giant nations drink far less: China has 4.6 liters, and India has 4.1.",
+      "isos": [
+        "CHN",
+        "IND"
+      ],
+      "support": "CHN value 4.58 (4.6), IND value 4.1"
+    },
+    {
+      "surface": "beat_5",
+      "text": "Where does your country land?",
+      "isos": [],
+      "support": "Call to action card prompt"
+    },
+    {
+      "surface": "card_5",
+      "text": "Where Do You Land? Pure Alcohol per Adult in Liters",
+      "isos": [],
+      "support": "Card title and unit description"
+    }
+  ],
+  "surface_checks": {
+    "title": {
+      "supported": true,
+      "reason": "Romania's consumption is 16.8 liters per adult.",
+      "isos": [
+        "ROU"
+      ]
+    },
+    "hook": {
+      "supported": true,
+      "reason": "Reflects global divide in alcohol consumption.",
+      "isos": []
+    },
+    "description": {
+      "supported": true,
+      "reason": "Romania is rank 1 at 16.8 liters, and multiple countries (e.g., Somalia) have 0.0 liters.",
+      "isos": [
+        "ROU",
+        "SOM"
+      ]
+    },
+    "beat_0": {
+      "supported": true,
+      "reason": "Romania value is 16.8 and Somalia value is 0.0.",
+      "isos": [
+        "ROU",
+        "SOM"
+      ]
+    },
+    "beat_1": {
+      "supported": true,
+      "reason": "Matches Romania's rank 1 and indicator definition regarding recorded and unrecorded alcohol for adults aged 15+.",
+      "isos": [
+        "ROU"
+      ]
+    },
+    "beat_2": {
+      "supported": true,
+      "reason": "Georgia is 14.4, Latvia is 12.9, and Czechia is 12.0.",
+      "isos": [
+        "GEO",
+        "LVA",
+        "CZE"
+      ]
+    },
+    "beat_3": {
+      "supported": true,
+      "reason": "USA consumption is 9.9 liters.",
+      "isos": [
+        "USA",
+        "ROU"
+      ]
+    },
+    "beat_4": {
+      "supported": true,
+      "reason": "China consumption is 4.6 liters, India is 4.1 liters.",
+      "isos": [
+        "CHN",
+        "IND"
+      ]
+    },
+    "beat_5": {
+      "supported": true,
+      "reason": "Standard concluding prompt matching visual card.",
+      "isos": []
+    },
+    "card_5": {
+      "supported": true,
+      "reason": "Matches indicator label and unit.",
+      "isos": []
+    }
+  }
+}

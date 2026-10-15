@@ -1,0 +1,156 @@
+{
+  "errors": [],
+  "claims": [
+    {
+      "surface": "title",
+      "text": "Global birth rates range from 46 to 5",
+      "isos": [],
+      "support": "Max value is 46.193 (Central African Republic), min value is 4.2 (San Marino), or 4.7 (South Korea) / 4.9 (Hong Kong)."
+    },
+    {
+      "surface": "hook",
+      "text": "GLOBAL BIRTH DIVIDE",
+      "isos": [],
+      "support": "Stylistic headline describing crude birth rates across the world."
+    },
+    {
+      "surface": "description",
+      "text": "A look at live births per 1,000 people across 208 countries and territories, from booming populations to historic lows.",
+      "isos": [],
+      "support": "Universe count is 208 mapped countries and territories with data, indicator measures live births per 1,000 population."
+    },
+    {
+      "surface": "beat_0",
+      "text": "Chad counts 43 births per 1,000 people. Spain counts 6.",
+      "isos": [
+        "TCD",
+        "ESP"
+      ],
+      "support": "TCD value is 43.264 (display: 43), ESP value is 6.5 (display: 6)."
+    },
+    {
+      "surface": "beat_1",
+      "text": "C. African Rep. is the world's highest at 46.",
+      "isos": [
+        "CAF"
+      ],
+      "support": "CAF value is 46.193 (display: 46), rank is 1."
+    },
+    {
+      "surface": "beat_2",
+      "text": "Booming births cover the region: Somalia has 42, and Niger has 41.",
+      "isos": [
+        "SOM",
+        "NER"
+      ],
+      "support": "SOM value is 42.346 (display: 42), NER value is 41.42 (display: 41)."
+    },
+    {
+      "surface": "beat_3",
+      "text": "The global median is 14. India sits near the middle at 16.",
+      "isos": [
+        "IND"
+      ],
+      "support": "IND value is 15.981 (display: 16)."
+    },
+    {
+      "surface": "beat_4",
+      "text": "The USA falls lower at 11 live births per 1,000 people.",
+      "isos": [
+        "USA"
+      ],
+      "support": "USA value is 10.6 (display: 11)."
+    },
+    {
+      "surface": "beat_5",
+      "text": "South Korea is one of the lowest, with 5.",
+      "isos": [
+        "KOR"
+      ],
+      "support": "KOR value is 4.7 (display: 5), rank is 207 out of 208."
+    },
+    {
+      "surface": "beat_6",
+      "text": "Where does your country land?",
+      "isos": [],
+      "support": "Introductory card prompt."
+    },
+    {
+      "surface": "card_6",
+      "text": "Where are you?\nBirths per 1,000 people, World Bank 2024",
+      "isos": [],
+      "support": "Source attribution matches World Bank 2024 crude birth rate data."
+    }
+  ],
+  "surface_checks": {
+    "title": {
+      "supported": true,
+      "reason": "The range encompasses the minimum and maximum values in the dataset.",
+      "isos": []
+    },
+    "hook": {
+      "supported": true,
+      "reason": "Stylistic headline representing the topic.",
+      "isos": []
+    },
+    "description": {
+      "supported": true,
+      "reason": "Accurately reflects the universe size (208) and the indicator unit (per 1,000 people).",
+      "isos": []
+    },
+    "beat_0": {
+      "supported": true,
+      "reason": "Chad (TCD) is 43.264 (display 43); Spain (ESP) is 6.5 (display 6).",
+      "isos": [
+        "TCD",
+        "ESP"
+      ]
+    },
+    "beat_1": {
+      "supported": true,
+      "reason": "Central African Republic (CAF) value is 46.193, rank 1.",
+      "isos": [
+        "CAF"
+      ]
+    },
+    "beat_2": {
+      "supported": true,
+      "reason": "Somalia (SOM) is 42.346 (display 42); Niger (NER) is 41.42 (display 41).",
+      "isos": [
+        "SOM",
+        "NER"
+      ]
+    },
+    "beat_3": {
+      "supported": true,
+      "reason": "India (IND) value is 15.981 (display 16).",
+      "isos": [
+        "IND"
+      ]
+    },
+    "beat_4": {
+      "supported": true,
+      "reason": "United States (USA) value is 10.6 (display 11).",
+      "isos": [
+        "USA"
+      ]
+    },
+    "beat_5": {
+      "supported": true,
+      "reason": "South Korea (KOR) value is 4.7 (display 5), among the lowest.",
+      "isos": [
+        "KOR"
+      ]
+    },
+    "beat_6": {
+      "supported": true,
+      "reason": "Card question is standard engagement text.",
+      "isos": []
+    },
+    "card_6": {
+      "supported": true,
+      "reason": "Attribution correctly references World Bank 2024 data.",
+      "isos": []
+    }
+  }
+}

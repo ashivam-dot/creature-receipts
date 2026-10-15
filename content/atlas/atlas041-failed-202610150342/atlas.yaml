@@ -1,0 +1,67 @@
+id: atlas041
+title: Global birth rates range from 46 to 5
+hook_text: GLOBAL BIRTH DIVIDE
+description: A look at live births per 1,000 people across 208 countries and territories, from booming populations
+  to historic lows.
+hashtags:
+- '#maps'
+- '#geography'
+- '#data'
+sources:
+- https://data.worldbank.org/indicator/SP.DYN.CBRT.IN
+dataset:
+  kind: worldbank
+  indicator: SP.DYN.CBRT.IN
+  label: Births per 1,000 people
+  unit: per 1,000
+  source: World Bank
+  min_year: 2019
+scale:
+  edges:
+  - 8.0
+  - 12.0
+  - 20.0
+  - 30.0
+  - 38.0
+  labels:
+  - <8
+  - 8-12
+  - 12-20
+  - 20-30
+  - 30-38
+  - 38+
+value_format: '{v:.0f}'
+beats:
+- text: Chad counts 43 births per 1,000 people. Spain counts 6.
+  shot:
+    callouts:
+    - TCD
+    - ESP
+- text: C. African Rep. is the world's highest at 46.
+  shot:
+    kind: country
+    iso: CAF
+- text: 'Booming births cover the region: Somalia has 42, and Niger has 41.'
+  shot:
+    kind: group
+    isos:
+    - SOM
+    - NER
+- text: The global median is 14. India sits near the middle at 16.
+  shot:
+    kind: country
+    iso: IND
+- text: The USA falls lower at 11 live births per 1,000 people.
+  shot:
+    kind: country
+    iso: USA
+- text: South Korea is one of the lowest, with 5.
+  shot:
+    kind: country
+    iso: KOR
+- text: Where does your country land?
+  shot:
+    kind: card
+    lines:
+    - Where are you?
+    - Births per 1,000 people, World Bank 2024
