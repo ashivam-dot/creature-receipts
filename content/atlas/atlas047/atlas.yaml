@@ -1,0 +1,63 @@
+id: atlas047
+title: 'Freshwater Per Person: From Iceland to Kuwait'
+hook_text: ICELAND VS KUWAIT
+description: Internal freshwater resources per person across 181 countries and territories.
+hashtags:
+- '#maps'
+- '#geography'
+- '#water'
+sources:
+- https://data.worldbank.org/indicator/ER.H2O.INTR.PC
+dataset:
+  kind: worldbank
+  indicator: ER.H2O.INTR.PC
+  label: Internal freshwater per person
+  unit: m³
+  source: World Bank
+  min_year: 2019
+scale:
+  edges:
+  - 1000.0
+  - 2500.0
+  - 10000.0
+  - 50000.0
+  labels:
+  - <1k
+  - 1k-2.5k
+  - 2.5k-10k
+  - 10k-50k
+  - '>50k'
+value_format: '{v:,.0f} m³'
+beats:
+- text: Every Icelander has 445,023 cubic meters of internal freshwater. Kuwait has zero.
+  shot:
+    callouts:
+    - ISL
+    - KWT
+- text: Renewable internal freshwater resources flows refer to internal river flows and groundwater from rainfall.
+  shot:
+    kind: country
+    iso: ISL
+- text: Iceland has 439 times the water India gets, with India at 1,014 m³.
+  shot:
+    kind: group
+    isos:
+    - ISL
+    - IND
+- text: China has 1,992 m³.
+  shot:
+    kind: country
+    iso: CHN
+- text: The lowest nations include Saudi Arabia with 75 m³, Jordan with 61 m³, and Egypt with 9 m³.
+  shot:
+    kind: rank
+    isos:
+    - SAU
+    - JOR
+    - EGY
+- text: Where does your country land?
+  shot:
+    kind: card
+    lines:
+    - Where does your country land?
+    - World Bank Freshwater Data

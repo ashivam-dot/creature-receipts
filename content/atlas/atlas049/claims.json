@@ -1,0 +1,1780 @@
+{
+  "version": 1,
+  "evidence": {
+    "version": 1,
+    "indicator": "SH.PRV.SMOK",
+    "definition": "The percentage of the population ages 15 years and over who currently use any tobacco product (smoked and/or smokeless tobacco) on a daily or non-daily basis. Tobacco products include cigarettes, pipes, cigars, cigarillos, waterpipes (hookah, shisha), bidis, kretek, heated tobacco products, and all forms of smokeless (oral and nasal) tobacco. Tobacco products exclude e-cigarettes (which do not contain tobacco), “e-cigars”, “e-hookahs”, JUUL and “e-pipes”. The rates are age-standardized to the WHO Standard Population.",
+    "source": "https://data.worldbank.org/indicator/SH.PRV.SMOK",
+    "source_response_sha256": "774606e9912f16b9483de7949c7fa905234baed84da8ed6a42134003f6546306",
+    "source_organization": "Global Health Observatory Data Repository, World Health Organization (WHO), uri: https://www.who.int/data/gho",
+    "year_label": "2024",
+    "universe": "mapped countries and territories with data",
+    "count": 163,
+    "threshold": null,
+    "at_or_above": null,
+    "entities": {
+      "AFG": {
+        "name": "Afghanistan",
+        "value": 22.1,
+        "display": "22.1%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 64
+      },
+      "ALB": {
+        "name": "Albania",
+        "value": 21.4,
+        "display": "21.4%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 67
+      },
+      "DZA": {
+        "name": "Algeria",
+        "value": 22.4,
+        "display": "22.4%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 61
+      },
+      "AND": {
+        "name": "Andorra",
+        "value": 35.5,
+        "display": "35.5%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 12
+      },
+      "ARG": {
+        "name": "Argentina",
+        "value": 23.5,
+        "display": "23.5%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 54
+      },
+      "ARM": {
+        "name": "Armenia",
+        "value": 26.2,
+        "display": "26.2%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 40
+      },
+      "AUS": {
+        "name": "Australia",
+        "value": 11.6,
+        "display": "11.6%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 118
+      },
+      "AUT": {
+        "name": "Austria",
+        "value": 23.8,
+        "display": "23.8%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 51
+      },
+      "AZE": {
+        "name": "Azerbaijan",
+        "value": 18.7,
+        "display": "18.7%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 81
+      },
+      "BHS": {
+        "name": "Bahamas, The",
+        "value": 17.3,
+        "display": "17.3%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 90
+      },
+      "BHR": {
+        "name": "Bahrain",
+        "value": 15.4,
+        "display": "15.4%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 100
+      },
+      "BGD": {
+        "name": "Bangladesh",
+        "value": 32.0,
+        "display": "32.0%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 21
+      },
+      "BLR": {
+        "name": "Belarus",
+        "value": 29.2,
+        "display": "29.2%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 31
+      },
+      "BEL": {
+        "name": "Belgium",
+        "value": 23.5,
+        "display": "23.5%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 54
+      },
+      "BLZ": {
+        "name": "Belize",
+        "value": 8.5,
+        "display": "8.5%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 139
+      },
+      "BEN": {
+        "name": "Benin",
+        "value": 7.4,
+        "display": "7.4%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 149
+      },
+      "BTN": {
+        "name": "Bhutan",
+        "value": 19.6,
+        "display": "19.6%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 78
+      },
+      "BOL": {
+        "name": "Bolivia",
+        "value": 12.3,
+        "display": "12.3%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 112
+      },
+      "BIH": {
+        "name": "Bosnia and Herzegovina",
+        "value": 37.1,
+        "display": "37.1%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 11
+      },
+      "BWA": {
+        "name": "Botswana",
+        "value": 18.0,
+        "display": "18.0%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 85
+      },
+      "BRA": {
+        "name": "Brazil",
+        "value": 11.9,
+        "display": "11.9%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 115
+      },
+      "BRN": {
+        "name": "Brunei Darussalam",
+        "value": 14.5,
+        "display": "14.5%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 102
+      },
+      "BGR": {
+        "name": "Bulgaria",
+        "value": 38.7,
+        "display": "38.7%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 7
+      },
+      "BFA": {
+        "name": "Burkina Faso",
+        "value": 11.6,
+        "display": "11.6%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 118
+      },
+      "BDI": {
+        "name": "Burundi",
+        "value": 10.1,
+        "display": "10.1%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 129
+      },
+      "CPV": {
+        "name": "Cabo Verde",
+        "value": 10.4,
+        "display": "10.4%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 128
+      },
+      "KHM": {
+        "name": "Cambodia",
+        "value": 18.6,
+        "display": "18.6%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 82
+      },
+      "CMR": {
+        "name": "Cameroon",
+        "value": 5.7,
+        "display": "5.7%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 156
+      },
+      "CAN": {
+        "name": "Canada",
+        "value": 11.2,
+        "display": "11.2%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 123
+      },
+      "TCD": {
+        "name": "Chad",
+        "value": 7.4,
+        "display": "7.4%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 149
+      },
+      "CHL": {
+        "name": "Chile",
+        "value": 26.7,
+        "display": "26.7%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 39
+      },
+      "CHN": {
+        "name": "China",
+        "value": 22.8,
+        "display": "22.8%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 59
+      },
+      "COL": {
+        "name": "Colombia",
+        "value": 8.0,
+        "display": "8.0%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 144
+      },
+      "COM": {
+        "name": "Comoros",
+        "value": 8.9,
+        "display": "8.9%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 137
+      },
+      "COD": {
+        "name": "Congo, Dem. Rep.",
+        "value": 12.3,
+        "display": "12.3%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 112
+      },
+      "COG": {
+        "name": "Congo, Rep.",
+        "value": 16.2,
+        "display": "16.2%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 94
+      },
+      "CRI": {
+        "name": "Costa Rica",
+        "value": 7.9,
+        "display": "7.9%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 146
+      },
+      "CIV": {
+        "name": "Cote d'Ivoire",
+        "value": 7.3,
+        "display": "7.3%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 153
+      },
+      "HRV": {
+        "name": "Croatia",
+        "value": 34.4,
+        "display": "34.4%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 15
+      },
+      "CUB": {
+        "name": "Cuba",
+        "value": 16.1,
+        "display": "16.1%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 95
+      },
+      "CYP": {
+        "name": "Cyprus",
+        "value": 32.5,
+        "display": "32.5%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 19
+      },
+      "CZE": {
+        "name": "Czechia",
+        "value": 28.4,
+        "display": "28.4%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 35
+      },
+      "DNK": {
+        "name": "Denmark",
+        "value": 15.7,
+        "display": "15.7%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 97
+      },
+      "ECU": {
+        "name": "Ecuador",
+        "value": 10.1,
+        "display": "10.1%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 129
+      },
+      "EGY": {
+        "name": "Egypt, Arab Rep.",
+        "value": 25.0,
+        "display": "25.0%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 45
+      },
+      "SLV": {
+        "name": "El Salvador",
+        "value": 8.2,
+        "display": "8.2%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 142
+      },
+      "EST": {
+        "name": "Estonia",
+        "value": 26.1,
+        "display": "26.1%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 41
+      },
+      "SWZ": {
+        "name": "Eswatini",
+        "value": 11.5,
+        "display": "11.5%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 120
+      },
+      "ETH": {
+        "name": "Ethiopia",
+        "value": 5.2,
+        "display": "5.2%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 159
+      },
+      "FJI": {
+        "name": "Fiji",
+        "value": 25.8,
+        "display": "25.8%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 42
+      },
+      "FIN": {
+        "name": "Finland",
+        "value": 21.4,
+        "display": "21.4%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 67
+      },
+      "FRA": {
+        "name": "France",
+        "value": 33.6,
+        "display": "33.6%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 17
+      },
+      "GAB": {
+        "name": "Gabon",
+        "value": 13.3,
+        "display": "13.3%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 106
+      },
+      "GMB": {
+        "name": "Gambia, The",
+        "value": 11.1,
+        "display": "11.1%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 125
+      },
+      "GEO": {
+        "name": "Georgia",
+        "value": 33.0,
+        "display": "33.0%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 18
+      },
+      "DEU": {
+        "name": "Germany",
+        "value": 22.0,
+        "display": "22.0%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 65
+      },
+      "GHA": {
+        "name": "Ghana",
+        "value": 3.3,
+        "display": "3.3%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 162
+      },
+      "GRC": {
+        "name": "Greece",
+        "value": 30.2,
+        "display": "30.2%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 26
+      },
+      "GTM": {
+        "name": "Guatemala",
+        "value": 11.2,
+        "display": "11.2%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 123
+      },
+      "GNB": {
+        "name": "Guinea-Bissau",
+        "value": 8.2,
+        "display": "8.2%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 142
+      },
+      "GUY": {
+        "name": "Guyana",
+        "value": 11.7,
+        "display": "11.7%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 117
+      },
+      "HTI": {
+        "name": "Haiti",
+        "value": 8.0,
+        "display": "8.0%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 144
+      },
+      "HND": {
+        "name": "Honduras",
+        "value": 12.1,
+        "display": "12.1%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 114
+      },
+      "HUN": {
+        "name": "Hungary",
+        "value": 30.8,
+        "display": "30.8%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 25
+      },
+      "ISL": {
+        "name": "Iceland",
+        "value": 9.2,
+        "display": "9.2%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 135
+      },
+      "IND": {
+        "name": "India",
+        "value": 22.6,
+        "display": "22.6%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 60
+      },
+      "IDN": {
+        "name": "Indonesia",
+        "value": 31.0,
+        "display": "31.0%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 24
+      },
+      "IRN": {
+        "name": "Iran, Islamic Rep.",
+        "value": 11.9,
+        "display": "11.9%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 115
+      },
+      "IRQ": {
+        "name": "Iraq",
+        "value": 20.1,
+        "display": "20.1%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 76
+      },
+      "IRL": {
+        "name": "Ireland",
+        "value": 18.2,
+        "display": "18.2%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 84
+      },
+      "ISR": {
+        "name": "Israel",
+        "value": 21.2,
+        "display": "21.2%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 69
+      },
+      "ITA": {
+        "name": "Italy",
+        "value": 22.4,
+        "display": "22.4%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 61
+      },
+      "JAM": {
+        "name": "Jamaica",
+        "value": 11.5,
+        "display": "11.5%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 120
+      },
+      "JPN": {
+        "name": "Japan",
+        "value": 17.5,
+        "display": "17.5%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 89
+      },
+      "JOR": {
+        "name": "Jordan",
+        "value": 34.1,
+        "display": "34.1%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 16
+      },
+      "KAZ": {
+        "name": "Kazakhstan",
+        "value": 21.1,
+        "display": "21.1%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 70
+      },
+      "KEN": {
+        "name": "Kenya",
+        "value": 9.6,
+        "display": "9.6%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 133
+      },
+      "KIR": {
+        "name": "Kiribati",
+        "value": 37.7,
+        "display": "37.7%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 9
+      },
+      "PRK": {
+        "name": "Korea, Dem. People's Rep.",
+        "value": 15.6,
+        "display": "15.6%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 99
+      },
+      "KOR": {
+        "name": "Korea, Rep.",
+        "value": 18.6,
+        "display": "18.6%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 82
+      },
+      "KWT": {
+        "name": "Kuwait",
+        "value": 19.4,
+        "display": "19.4%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 79
+      },
+      "KGZ": {
+        "name": "Kyrgyz Republic",
+        "value": 22.2,
+        "display": "22.2%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 63
+      },
+      "LAO": {
+        "name": "Lao PDR",
+        "value": 25.4,
+        "display": "25.4%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 44
+      },
+      "LVA": {
+        "name": "Latvia",
+        "value": 34.6,
+        "display": "34.6%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 14
+      },
+      "LBN": {
+        "name": "Lebanon",
+        "value": 46.9,
+        "display": "46.9%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 2
+      },
+      "LSO": {
+        "name": "Lesotho",
+        "value": 28.0,
+        "display": "28.0%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 36
+      },
+      "LBR": {
+        "name": "Liberia",
+        "value": 5.2,
+        "display": "5.2%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 159
+      },
+      "LBY": {
+        "name": "Libya",
+        "value": 24.2,
+        "display": "24.2%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 50
+      },
+      "LTU": {
+        "name": "Lithuania",
+        "value": 31.4,
+        "display": "31.4%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 22
+      },
+      "LUX": {
+        "name": "Luxembourg",
+        "value": 24.5,
+        "display": "24.5%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 48
+      },
+      "MDG": {
+        "name": "Madagascar",
+        "value": 25.6,
+        "display": "25.6%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 43
+      },
+      "MWI": {
+        "name": "Malawi",
+        "value": 8.9,
+        "display": "8.9%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 137
+      },
+      "MYS": {
+        "name": "Malaysia",
+        "value": 16.9,
+        "display": "16.9%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 92
+      },
+      "MLI": {
+        "name": "Mali",
+        "value": 7.4,
+        "display": "7.4%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 149
+      },
+      "MLT": {
+        "name": "Malta",
+        "value": 24.6,
+        "display": "24.6%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 47
+      },
+      "MHL": {
+        "name": "Marshall Islands",
+        "value": 29.9,
+        "display": "29.9%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 27
+      },
+      "MRT": {
+        "name": "Mauritania",
+        "value": 9.9,
+        "display": "9.9%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 132
+      },
+      "MUS": {
+        "name": "Mauritius",
+        "value": 17.7,
+        "display": "17.7%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 88
+      },
+      "MEX": {
+        "name": "Mexico",
+        "value": 15.7,
+        "display": "15.7%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 97
+      },
+      "MDA": {
+        "name": "Moldova",
+        "value": 28.8,
+        "display": "28.8%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 32
+      },
+      "MNG": {
+        "name": "Mongolia",
+        "value": 29.5,
+        "display": "29.5%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 29
+      },
+      "MNE": {
+        "name": "Montenegro",
+        "value": 37.2,
+        "display": "37.2%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 10
+      },
+      "MAR": {
+        "name": "Morocco",
+        "value": 12.5,
+        "display": "12.5%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 109
+      },
+      "MOZ": {
+        "name": "Mozambique",
+        "value": 10.5,
+        "display": "10.5%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 127
+      },
+      "MMR": {
+        "name": "Myanmar",
+        "value": 43.4,
+        "display": "43.4%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 3
+      },
+      "NPL": {
+        "name": "Nepal",
+        "value": 28.7,
+        "display": "28.7%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 33
+      },
+      "NLD": {
+        "name": "Netherlands",
+        "value": 20.5,
+        "display": "20.5%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 74
+      },
+      "NZL": {
+        "name": "New Zealand",
+        "value": 9.3,
+        "display": "9.3%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 134
+      },
+      "NER": {
+        "name": "Niger",
+        "value": 7.4,
+        "display": "7.4%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 149
+      },
+      "NGA": {
+        "name": "Nigeria",
+        "value": 3.1,
+        "display": "3.1%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 163
+      },
+      "MKD": {
+        "name": "North Macedonia",
+        "value": 39.6,
+        "display": "39.6%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 5
+      },
+      "NOR": {
+        "name": "Norway",
+        "value": 12.9,
+        "display": "12.9%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 107
+      },
+      "OMN": {
+        "name": "Oman",
+        "value": 8.5,
+        "display": "8.5%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 139
+      },
+      "PAK": {
+        "name": "Pakistan",
+        "value": 17.9,
+        "display": "17.9%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 86
+      },
+      "PLW": {
+        "name": "Palau",
+        "value": 23.0,
+        "display": "23.0%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 58
+      },
+      "PAN": {
+        "name": "Panama",
+        "value": 4.8,
+        "display": "4.8%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 161
+      },
+      "PNG": {
+        "name": "Papua New Guinea",
+        "value": 39.3,
+        "display": "39.3%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 6
+      },
+      "PRY": {
+        "name": "Paraguay",
+        "value": 6.4,
+        "display": "6.4%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 154
+      },
+      "PER": {
+        "name": "Peru",
+        "value": 12.4,
+        "display": "12.4%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 111
+      },
+      "PHL": {
+        "name": "Philippines",
+        "value": 19.9,
+        "display": "19.9%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 77
+      },
+      "POL": {
+        "name": "Poland",
+        "value": 21.7,
+        "display": "21.7%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 66
+      },
+      "PRT": {
+        "name": "Portugal",
+        "value": 28.6,
+        "display": "28.6%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 34
+      },
+      "QAT": {
+        "name": "Qatar",
+        "value": 12.5,
+        "display": "12.5%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 109
+      },
+      "ROU": {
+        "name": "Romania",
+        "value": 29.7,
+        "display": "29.7%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 28
+      },
+      "RUS": {
+        "name": "Russian Federation",
+        "value": 27.0,
+        "display": "27.0%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 38
+      },
+      "RWA": {
+        "name": "Rwanda",
+        "value": 10.1,
+        "display": "10.1%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 129
+      },
+      "WSM": {
+        "name": "Samoa",
+        "value": 23.1,
+        "display": "23.1%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 56
+      },
+      "STP": {
+        "name": "Sao Tome and Principe",
+        "value": 8.3,
+        "display": "8.3%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 141
+      },
+      "SAU": {
+        "name": "Saudi Arabia",
+        "value": 14.7,
+        "display": "14.7%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 101
+      },
+      "SEN": {
+        "name": "Senegal",
+        "value": 5.4,
+        "display": "5.4%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 157
+      },
+      "SRB": {
+        "name": "Serbia",
+        "value": 39.7,
+        "display": "39.7%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 4
+      },
+      "SYC": {
+        "name": "Seychelles",
+        "value": 17.3,
+        "display": "17.3%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 90
+      },
+      "SLE": {
+        "name": "Sierra Leone",
+        "value": 11.3,
+        "display": "11.3%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 122
+      },
+      "SGP": {
+        "name": "Singapore",
+        "value": 13.8,
+        "display": "13.8%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 105
+      },
+      "SVK": {
+        "name": "Slovak Republic",
+        "value": 29.5,
+        "display": "29.5%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 29
+      },
+      "SVN": {
+        "name": "Slovenia",
+        "value": 20.9,
+        "display": "20.9%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 72
+      },
+      "SLB": {
+        "name": "Solomon Islands",
+        "value": 38.4,
+        "display": "38.4%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 8
+      },
+      "ZAF": {
+        "name": "South Africa",
+        "value": 23.7,
+        "display": "23.7%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 52
+      },
+      "ESP": {
+        "name": "Spain",
+        "value": 27.6,
+        "display": "27.6%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 37
+      },
+      "LKA": {
+        "name": "Sri Lanka",
+        "value": 20.7,
+        "display": "20.7%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 73
+      },
+      "LCA": {
+        "name": "St. Lucia",
+        "value": 13.9,
+        "display": "13.9%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 104
+      },
+      "SWE": {
+        "name": "Sweden",
+        "value": 20.3,
+        "display": "20.3%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 75
+      },
+      "CHE": {
+        "name": "Switzerland",
+        "value": 23.1,
+        "display": "23.1%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 56
+      },
+      "TZA": {
+        "name": "Tanzania",
+        "value": 7.7,
+        "display": "7.7%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 147
+      },
+      "THA": {
+        "name": "Thailand",
+        "value": 17.8,
+        "display": "17.8%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 87
+      },
+      "TLS": {
+        "name": "Timor-Leste",
+        "value": 48.8,
+        "display": "48.8%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 1
+      },
+      "TGO": {
+        "name": "Togo",
+        "value": 5.8,
+        "display": "5.8%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 155
+      },
+      "TON": {
+        "name": "Tonga",
+        "value": 32.1,
+        "display": "32.1%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 20
+      },
+      "TUN": {
+        "name": "Tunisia",
+        "value": 24.4,
+        "display": "24.4%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 49
+      },
+      "TUR": {
+        "name": "Turkiye",
+        "value": 31.1,
+        "display": "31.1%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 23
+      },
+      "TKM": {
+        "name": "Turkmenistan",
+        "value": 5.4,
+        "display": "5.4%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 157
+      },
+      "UGA": {
+        "name": "Uganda",
+        "value": 7.5,
+        "display": "7.5%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 148
+      },
+      "UKR": {
+        "name": "Ukraine",
+        "value": 23.7,
+        "display": "23.7%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 52
+      },
+      "ARE": {
+        "name": "United Arab Emirates",
+        "value": 9.0,
+        "display": "9.0%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 136
+      },
+      "GBR": {
+        "name": "United Kingdom",
+        "value": 12.8,
+        "display": "12.8%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 108
+      },
+      "USA": {
+        "name": "United States",
+        "value": 15.8,
+        "display": "15.8%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 96
+      },
+      "URY": {
+        "name": "Uruguay",
+        "value": 19.3,
+        "display": "19.3%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 80
+      },
+      "UZB": {
+        "name": "Uzbekistan",
+        "value": 16.3,
+        "display": "16.3%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 93
+      },
+      "VUT": {
+        "name": "Vanuatu",
+        "value": 24.9,
+        "display": "24.9%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 46
+      },
+      "VNM": {
+        "name": "Viet Nam",
+        "value": 21.1,
+        "display": "21.1%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 70
+      },
+      "PSE": {
+        "name": "West Bank and Gaza",
+        "value": 35.5,
+        "display": "35.5%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 12
+      },
+      "ZMB": {
+        "name": "Zambia",
+        "value": 14.3,
+        "display": "14.3%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 103
+      },
+      "ZWE": {
+        "name": "Zimbabwe",
+        "value": 11.0,
+        "display": "11.0%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 126
+      }
+    }
+  },
+  "review": {
+    "claims": [
+      {
+        "isos": [
+          "TLS",
+          "NGA"
+        ],
+        "support": "Evidence shows TLS (Timor-Leste) at 48.8% and NGA (Nigeria) at 3.1% for 2024.",
+        "surface": "title",
+        "text": "East Timor at 48.8% and Nigeria at 3.1%",
+        "evidence": {
+          "TLS": {
+            "name": "Timor-Leste",
+            "value": 48.8,
+            "display": "48.8%",
+            "year": 2024,
+            "unit": "%",
+            "rank": 1
+          },
+          "NGA": {
+            "name": "Nigeria",
+            "value": 3.1,
+            "display": "3.1%",
+            "year": 2024,
+            "unit": "%",
+            "rank": 163
+          }
+        }
+      },
+      {
+        "isos": [],
+        "support": "Evidence count is 163 entities (countries and territories).",
+        "surface": "description",
+        "text": "across 163 countries and territories",
+        "evidence": {}
+      },
+      {
+        "isos": [
+          "TLS",
+          "NGA"
+        ],
+        "support": "Evidence shows TLS 48.8% (nearly half) and NGA 3.1%.",
+        "surface": "beat_0",
+        "text": "Nearly half of adults in East Timor use tobacco. In Nigeria, the share is just 3.1%.",
+        "evidence": {
+          "TLS": {
+            "name": "Timor-Leste",
+            "value": 48.8,
+            "display": "48.8%",
+            "year": 2024,
+            "unit": "%",
+            "rank": 1
+          },
+          "NGA": {
+            "name": "Nigeria",
+            "value": 3.1,
+            "display": "3.1%",
+            "year": 2024,
+            "unit": "%",
+            "rank": 163
+          }
+        }
+      },
+      {
+        "isos": [
+          "TLS",
+          "NGA"
+        ],
+        "support": "Evidence shows TLS 48.8%. Ratio 48.8/3.1 = 15.74, rounded to 16.",
+        "surface": "beat_1",
+        "text": "East Timor hits 48.8%. That is 16 times the tobacco use found in Nigeria.",
+        "evidence": {
+          "TLS": {
+            "name": "Timor-Leste",
+            "value": 48.8,
+            "display": "48.8%",
+            "year": 2024,
+            "unit": "%",
+            "rank": 1
+          },
+          "NGA": {
+            "name": "Nigeria",
+            "value": 3.1,
+            "display": "3.1%",
+            "year": 2024,
+            "unit": "%",
+            "rank": 163
+          }
+        }
+      },
+      {
+        "isos": [
+          "NGA"
+        ],
+        "support": "Evidence shows NGA 3.1%, Rank 163 of 163 (lowest).",
+        "surface": "beat_2",
+        "text": "Nigeria sits at 3.1%. The lowest share across all 163 countries and territories on the map.",
+        "evidence": {
+          "NGA": {
+            "name": "Nigeria",
+            "value": 3.1,
+            "display": "3.1%",
+            "year": 2024,
+            "unit": "%",
+            "rank": 163
+          }
+        }
+      },
+      {
+        "isos": [
+          "LBN",
+          "MMR"
+        ],
+        "support": "Evidence shows LBN 46.9% and MMR 43.4%.",
+        "surface": "beat_3",
+        "text": "Lebanon climbs to 46.9% and Myanmar is 43.4%.",
+        "evidence": {
+          "LBN": {
+            "name": "Lebanon",
+            "value": 46.9,
+            "display": "46.9%",
+            "year": 2024,
+            "unit": "%",
+            "rank": 2
+          },
+          "MMR": {
+            "name": "Myanmar",
+            "value": 43.4,
+            "display": "43.4%",
+            "year": 2024,
+            "unit": "%",
+            "rank": 3
+          }
+        }
+      },
+      {
+        "isos": [
+          "USA",
+          "CHN",
+          "IND"
+        ],
+        "support": "Evidence shows USA 15.8%, CHN 22.8%, IND 22.6%.",
+        "surface": "beat_4",
+        "text": "The USA is 15.8%, China is 22.8%, and India is 22.6%.",
+        "evidence": {
+          "USA": {
+            "name": "United States",
+            "value": 15.8,
+            "display": "15.8%",
+            "year": 2024,
+            "unit": "%",
+            "rank": 96
+          },
+          "CHN": {
+            "name": "China",
+            "value": 22.8,
+            "display": "22.8%",
+            "year": 2024,
+            "unit": "%",
+            "rank": 59
+          },
+          "IND": {
+            "name": "India",
+            "value": 22.6,
+            "display": "22.6%",
+            "year": 2024,
+            "unit": "%",
+            "rank": 60
+          }
+        }
+      },
+      {
+        "isos": [],
+        "support": "Evidence definition matches 'Share of adults using tobacco (%)'. Source is World Bank data portal. Year is 2024.",
+        "surface": "card_5",
+        "text": "Share of adults using tobacco (%), World Bank, 2024",
+        "evidence": {}
+      },
+      {
+        "surface": "beat_0",
+        "text": "Nearly half of adults in East Timor use tobacco. In Nigeria, the share is just 3.1%.",
+        "isos": [
+          "TLS",
+          "NGA"
+        ],
+        "support": "Values 48.8% (TLS) and 3.1% (NGA) match evidence. 'Nearly half' is a valid description of 48.8%.",
+        "method": "complete-surface-check",
+        "evidence": {
+          "TLS": {
+            "name": "Timor-Leste",
+            "value": 48.8,
+            "display": "48.8%",
+            "year": 2024,
+            "unit": "%",
+            "rank": 1
+          },
+          "NGA": {
+            "name": "Nigeria",
+            "value": 3.1,
+            "display": "3.1%",
+            "year": 2024,
+            "unit": "%",
+            "rank": 163
+          }
+        }
+      },
+      {
+        "surface": "beat_1",
+        "text": "East Timor hits 48.8%. That is 16 times the tobacco use found in Nigeria.",
+        "isos": [
+          "TLS",
+          "NGA"
+        ],
+        "support": "Value 48.8% matches. Ratio 48.8/3.1=15.74 rounds to 16.",
+        "method": "complete-surface-check",
+        "evidence": {
+          "TLS": {
+            "name": "Timor-Leste",
+            "value": 48.8,
+            "display": "48.8%",
+            "year": 2024,
+            "unit": "%",
+            "rank": 1
+          },
+          "NGA": {
+            "name": "Nigeria",
+            "value": 3.1,
+            "display": "3.1%",
+            "year": 2024,
+            "unit": "%",
+            "rank": 163
+          }
+        }
+      },
+      {
+        "surface": "beat_2",
+        "text": "Nigeria sits at 3.1%. The lowest share across all 163 countries and territories on the map.",
+        "isos": [
+          "NGA"
+        ],
+        "support": "Value 3.1% matches. Rank 163/163 confirms lowest share in universe.",
+        "method": "complete-surface-check",
+        "evidence": {
+          "NGA": {
+            "name": "Nigeria",
+            "value": 3.1,
+            "display": "3.1%",
+            "year": 2024,
+            "unit": "%",
+            "rank": 163
+          }
+        }
+      },
+      {
+        "surface": "beat_3",
+        "text": "Lebanon climbs to 46.9% and Myanmar is 43.4%. High numbers span the globe.",
+        "isos": [
+          "LBN",
+          "MMR"
+        ],
+        "support": "Values 46.9% (LBN) and 43.4% (MMR) match evidence.",
+        "method": "complete-surface-check",
+        "evidence": {
+          "LBN": {
+            "name": "Lebanon",
+            "value": 46.9,
+            "display": "46.9%",
+            "year": 2024,
+            "unit": "%",
+            "rank": 2
+          },
+          "MMR": {
+            "name": "Myanmar",
+            "value": 43.4,
+            "display": "43.4%",
+            "year": 2024,
+            "unit": "%",
+            "rank": 3
+          }
+        }
+      },
+      {
+        "surface": "beat_4",
+        "text": "The USA is 15.8%, China is 22.8%, and India is 22.6%.",
+        "isos": [
+          "USA",
+          "CHN",
+          "IND"
+        ],
+        "support": "Values 15.8% (USA), 22.8% (CHN), 22.6% (IND) match evidence.",
+        "method": "complete-surface-check",
+        "evidence": {
+          "USA": {
+            "name": "United States",
+            "value": 15.8,
+            "display": "15.8%",
+            "year": 2024,
+            "unit": "%",
+            "rank": 96
+          },
+          "CHN": {
+            "name": "China",
+            "value": 22.8,
+            "display": "22.8%",
+            "year": 2024,
+            "unit": "%",
+            "rank": 59
+          },
+          "IND": {
+            "name": "India",
+            "value": 22.6,
+            "display": "22.6%",
+            "year": 2024,
+            "unit": "%",
+            "rank": 60
+          }
+        }
+      },
+      {
+        "surface": "beat_5",
+        "text": "Where does your country land?",
+        "isos": [],
+        "support": "Rhetorical question, no factual claim to verify against data values.",
+        "method": "complete-surface-check",
+        "evidence": {}
+      },
+      {
+        "surface": "card_5",
+        "text": [
+          "Where does your country land?",
+          "Share of adults using tobacco (%), World Bank, 2024"
+        ],
+        "isos": [],
+        "support": "Metric name aligns with indicator definition (15+ as adults). Source and year match evidence metadata.",
+        "method": "complete-surface-check",
+        "evidence": {}
+      },
+      {
+        "surface": "description",
+        "text": "A cinematic look at the share of adults using tobacco across 163 countries and territories.",
+        "isos": [],
+        "support": "Count 163 matches evidence count. 'Countries and territories' matches evidence universe.",
+        "method": "complete-surface-check",
+        "evidence": {}
+      },
+      {
+        "surface": "hook",
+        "text": "TOBACCO USE WIDE GAP",
+        "isos": [],
+        "support": "Range 3.1% to 48.8% supports 'wide gap' description.",
+        "method": "complete-surface-check",
+        "evidence": {}
+      },
+      {
+        "surface": "title",
+        "text": "Global Tobacco Use: East Timor at 48.8% and Nigeria at 3.1%",
+        "isos": [
+          "TLS",
+          "NGA"
+        ],
+        "support": "Values 48.8% (TLS) and 3.1% (NGA) match evidence. 'East Timor' is common name for Timor-Leste.",
+        "method": "complete-surface-check",
+        "evidence": {
+          "TLS": {
+            "name": "Timor-Leste",
+            "value": 48.8,
+            "display": "48.8%",
+            "year": 2024,
+            "unit": "%",
+            "rank": 1
+          },
+          "NGA": {
+            "name": "Nigeria",
+            "value": 3.1,
+            "display": "3.1%",
+            "year": 2024,
+            "unit": "%",
+            "rank": 163
+          }
+        }
+      }
+    ],
+    "errors": [],
+    "surface_checks": {
+      "beat_0": {
+        "isos": [
+          "TLS",
+          "NGA"
+        ],
+        "reason": "Values 48.8% (TLS) and 3.1% (NGA) match evidence. 'Nearly half' is a valid description of 48.8%.",
+        "supported": true
+      },
+      "beat_1": {
+        "isos": [
+          "TLS",
+          "NGA"
+        ],
+        "reason": "Value 48.8% matches. Ratio 48.8/3.1=15.74 rounds to 16.",
+        "supported": true
+      },
+      "beat_2": {
+        "isos": [
+          "NGA"
+        ],
+        "reason": "Value 3.1% matches. Rank 163/163 confirms lowest share in universe.",
+        "supported": true
+      },
+      "beat_3": {
+        "isos": [
+          "LBN",
+          "MMR"
+        ],
+        "reason": "Values 46.9% (LBN) and 43.4% (MMR) match evidence.",
+        "supported": true
+      },
+      "beat_4": {
+        "isos": [
+          "USA",
+          "CHN",
+          "IND"
+        ],
+        "reason": "Values 15.8% (USA), 22.8% (CHN), 22.6% (IND) match evidence.",
+        "supported": true
+      },
+      "beat_5": {
+        "isos": [],
+        "reason": "Rhetorical question, no factual claim to verify against data values.",
+        "supported": true
+      },
+      "card_5": {
+        "isos": [],
+        "reason": "Metric name aligns with indicator definition (15+ as adults). Source and year match evidence metadata.",
+        "supported": true
+      },
+      "description": {
+        "isos": [],
+        "reason": "Count 163 matches evidence count. 'Countries and territories' matches evidence universe.",
+        "supported": true
+      },
+      "hook": {
+        "isos": [],
+        "reason": "Range 3.1% to 48.8% supports 'wide gap' description.",
+        "supported": true
+      },
+      "title": {
+        "isos": [
+          "TLS",
+          "NGA"
+        ],
+        "reason": "Values 48.8% (TLS) and 3.1% (NGA) match evidence. 'East Timor' is common name for Timor-Leste.",
+        "supported": true
+      }
+    },
+    "warnings": []
+  },
+  "script_sha256": "2964bd7eb1c0061aefdb08ce948e28eb9ef2adec29c2eaed7b90d67151475148",
+  "data_sha256": "3bfc498be29a01bbc04ae63c0af0db7be5037001a717eaab96ba3a8ff9b8d27e",
+  "reviewer_model": "ovh:Qwen3.5-397B-A17B"
+}

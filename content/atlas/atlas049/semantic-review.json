@@ -1,0 +1,141 @@
+{
+  "claims": [
+    {
+      "isos": [
+        "TLS",
+        "NGA"
+      ],
+      "support": "Evidence shows TLS (Timor-Leste) at 48.8% and NGA (Nigeria) at 3.1% for 2024.",
+      "surface": "title",
+      "text": "East Timor at 48.8% and Nigeria at 3.1%"
+    },
+    {
+      "isos": [],
+      "support": "Evidence count is 163 entities (countries and territories).",
+      "surface": "description",
+      "text": "across 163 countries and territories"
+    },
+    {
+      "isos": [
+        "TLS",
+        "NGA"
+      ],
+      "support": "Evidence shows TLS 48.8% (nearly half) and NGA 3.1%.",
+      "surface": "beat_0",
+      "text": "Nearly half of adults in East Timor use tobacco. In Nigeria, the share is just 3.1%."
+    },
+    {
+      "isos": [
+        "TLS",
+        "NGA"
+      ],
+      "support": "Evidence shows TLS 48.8%. Ratio 48.8/3.1 = 15.74, rounded to 16.",
+      "surface": "beat_1",
+      "text": "East Timor hits 48.8%. That is 16 times the tobacco use found in Nigeria."
+    },
+    {
+      "isos": [
+        "NGA"
+      ],
+      "support": "Evidence shows NGA 3.1%, Rank 163 of 163 (lowest).",
+      "surface": "beat_2",
+      "text": "Nigeria sits at 3.1%. The lowest share across all 163 countries and territories on the map."
+    },
+    {
+      "isos": [
+        "LBN",
+        "MMR"
+      ],
+      "support": "Evidence shows LBN 46.9% and MMR 43.4%.",
+      "surface": "beat_3",
+      "text": "Lebanon climbs to 46.9% and Myanmar is 43.4%."
+    },
+    {
+      "isos": [
+        "USA",
+        "CHN",
+        "IND"
+      ],
+      "support": "Evidence shows USA 15.8%, CHN 22.8%, IND 22.6%.",
+      "surface": "beat_4",
+      "text": "The USA is 15.8%, China is 22.8%, and India is 22.6%."
+    },
+    {
+      "isos": [],
+      "support": "Evidence definition matches 'Share of adults using tobacco (%)'. Source is World Bank data portal. Year is 2024.",
+      "surface": "card_5",
+      "text": "Share of adults using tobacco (%), World Bank, 2024"
+    }
+  ],
+  "errors": [],
+  "surface_checks": {
+    "beat_0": {
+      "isos": [
+        "TLS",
+        "NGA"
+      ],
+      "reason": "Values 48.8% (TLS) and 3.1% (NGA) match evidence. 'Nearly half' is a valid description of 48.8%.",
+      "supported": true
+    },
+    "beat_1": {
+      "isos": [
+        "TLS",
+        "NGA"
+      ],
+      "reason": "Value 48.8% matches. Ratio 48.8/3.1=15.74 rounds to 16.",
+      "supported": true
+    },
+    "beat_2": {
+      "isos": [
+        "NGA"
+      ],
+      "reason": "Value 3.1% matches. Rank 163/163 confirms lowest share in universe.",
+      "supported": true
+    },
+    "beat_3": {
+      "isos": [
+        "LBN",
+        "MMR"
+      ],
+      "reason": "Values 46.9% (LBN) and 43.4% (MMR) match evidence.",
+      "supported": true
+    },
+    "beat_4": {
+      "isos": [
+        "USA",
+        "CHN",
+        "IND"
+      ],
+      "reason": "Values 15.8% (USA), 22.8% (CHN), 22.6% (IND) match evidence.",
+      "supported": true
+    },
+    "beat_5": {
+      "isos": [],
+      "reason": "Rhetorical question, no factual claim to verify against data values.",
+      "supported": true
+    },
+    "card_5": {
+      "isos": [],
+      "reason": "Metric name aligns with indicator definition (15+ as adults). Source and year match evidence metadata.",
+      "supported": true
+    },
+    "description": {
+      "isos": [],
+      "reason": "Count 163 matches evidence count. 'Countries and territories' matches evidence universe.",
+      "supported": true
+    },
+    "hook": {
+      "isos": [],
+      "reason": "Range 3.1% to 48.8% supports 'wide gap' description.",
+      "supported": true
+    },
+    "title": {
+      "isos": [
+        "TLS",
+        "NGA"
+      ],
+      "reason": "Values 48.8% (TLS) and 3.1% (NGA) match evidence. 'East Timor' is common name for Timor-Leste.",
+      "supported": true
+    }
+  }
+}

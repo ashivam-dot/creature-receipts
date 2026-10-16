@@ -1,0 +1,63 @@
+id: atlas049
+title: 'Global Tobacco Use: East Timor at 48.8% and Nigeria at 3.1%'
+hook_text: TOBACCO USE WIDE GAP
+description: A cinematic look at the share of adults using tobacco across 163 countries and territories.
+hashtags:
+- '#maps'
+- '#geography'
+- '#publichealth'
+sources:
+- https://data.worldbank.org/indicator/SH.PRV.SMOK
+dataset:
+  kind: worldbank
+  indicator: SH.PRV.SMOK
+  label: Share of adults using tobacco
+  unit: '%'
+  source: World Bank
+  min_year: 2019
+scale:
+  edges:
+  - 10.0
+  - 20.0
+  - 30.0
+  - 40.0
+  labels:
+  - Under 10%
+  - 10% to 20%
+  - 20% to 30%
+  - 30% to 40%
+  - Over 40%
+value_format: '{v:.1f}%'
+beats:
+- text: Nearly half of adults in East Timor use tobacco. In Nigeria, the share is just 3.1%.
+  shot:
+    callouts:
+    - TLS
+    - NGA
+- text: East Timor hits 48.8%. That is 16 times the tobacco use found in Nigeria.
+  shot:
+    kind: country
+    iso: TLS
+- text: Nigeria sits at 3.1%. The lowest share across all 163 countries and territories on the map.
+  shot:
+    kind: country
+    iso: NGA
+- text: Lebanon climbs to 46.9% and Myanmar is 43.4%. High numbers span the globe.
+  shot:
+    kind: group
+    isos:
+    - LBN
+    - MMR
+- text: The USA is 15.8%, China is 22.8%, and India is 22.6%.
+  shot:
+    kind: rank
+    isos:
+    - USA
+    - CHN
+    - IND
+- text: Where does your country land?
+  shot:
+    kind: card
+    lines:
+    - Where does your country land?
+    - Share of adults using tobacco (%), World Bank, 2024

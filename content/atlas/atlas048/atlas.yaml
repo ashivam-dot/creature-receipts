@@ -1,0 +1,70 @@
+id: atlas048
+title: Uruguay Leads the World in Cash Machines
+format: rank_ladder
+hook_text: HIGHEST ATM DENSITY
+description: A cinematic look at the global density of cash machines, highlighting Uruguay's leading position and
+  stark global contrasts.
+hashtags:
+- '#maps'
+- '#geography'
+- '#banking'
+sources:
+- https://data.worldbank.org/indicator/FB.ATM.TOTL.P5
+dataset:
+  kind: worldbank
+  indicator: FB.ATM.TOTL.P5
+  label: ATMs per 100,000 adults
+  unit: per 100k adults
+  source: World Bank
+  min_year: 2019
+scale:
+  edges:
+  - 15.0
+  - 40.0
+  - 70.0
+  - 100.0
+  labels:
+  - Under 15
+  - 15 to 40
+  - 40 to 70
+  - 70 to 100
+  - Over 100
+value_format: '{v:.1f}'
+beats:
+- text: Uruguay leads the world with 306.5 ATMs per 100k adults.
+  shot:
+    callouts:
+    - URY
+    - CAN
+- text: Uruguay leads the world. Machines enable cash withdrawals and balance inquiries.
+  shot:
+    kind: country
+    iso: URY
+- text: South Korea has 244.5 ATMs per 100k adults. Canada, Austria, and Portugal follow close behind.
+  shot:
+    kind: rank
+    isos:
+    - KOR
+    - CAN
+    - AUT
+    - PRT
+- text: Uruguay has 13 times India, which has 24.5. A massive gap.
+  shot:
+    kind: group
+    isos:
+    - URY
+    - IND
+- text: Access drops sharply in Niger, with just 1.4 ATMs per 100k adults.
+  shot:
+    kind: country
+    iso: NER
+- text: South Sudan sits at 1.0 ATMs per 100k adults. The world's lowest.
+  shot:
+    kind: country
+    iso: SSD
+- text: Where does your country land?
+  shot:
+    kind: card
+    lines:
+    - Where does your country land?
+    - ATMs per 100,000 adults

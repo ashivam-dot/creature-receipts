@@ -1,0 +1,17 @@
+{
+  "warnings": [
+    {
+      "country": "Uruguay",
+      "why": "Value of 306 is an extreme outlier compared to historical World Bank data (typically ~110-120) and exceeds global leaders, suggesting a definition change or unit error."
+    },
+    {
+      "country": "Korea, Rep.",
+      "why": "Value of 244 is significantly higher than historical averages (~130), indicating a likely methodology change or inclusion of non-ATM terminals."
+    },
+    {
+      "country": "Peru",
+      "why": "Value of 135 is inconsistent with its developing economic status and historical data (~50-60), incorrectly ranking it near developed nations like Austria."
+    }
+  ],
+  "policy": "model memory is advisory; unsupported suspicions cannot overrule official data"
+}

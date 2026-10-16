@@ -1,0 +1,160 @@
+{
+  "errors": [
+    {
+      "surface": "beat_2",
+      "claim": "Iceland has 439 times the water India gets",
+      "reason": "Iceland value is 445022.68 and India is 1014.44; 445022.68 / 1014.44 is approximately 438.7, but the exact comparison ratio should be verified or stated correctly. More importantly, 445,023 / 1,014 = 438.8, which rounds to 439, but let us check if any other discrepancy exists. Actually, 445022.683067934 / 1014.43556399726 = 438.687, so 439 times is correct by rounding, but let's check beat_2 claim support. Wait, let's look at another error: beat_2 says India is at 1,014 m³ (supported). Let's check beat_2 ratio: 445,022 / 1,014 = 438.8, so 439 times is correct. Let's check if there are other errors. Wait, let's check beat_1: 'Renewable internal freshwater resources flows refer to internal river flows and groundwater from rainfall.' This is a definition from the metadata and is supported. Let's check beat_0: 'Every Icelander has 445,023 cubic meters of internal freshwater. Kuwait has zero.' Iceland is 445,023 m³, Kuwait is 0 m³. Both supported. Let's check beat_4: 'Saudi Arabia with 75 m³, Jordan with 61 m³, and Egypt with 9 m³.' Saudi Arabia display is 75 m³, Jordan display is 61 m³, Egypt display is 9 m³. All supported.",
+      "severity": "info"
+    }
+  ],
+  "claims": [
+    {
+      "surface": "title",
+      "text": "Freshwater Per Person: From Iceland to Kuwait",
+      "isos": [
+        "ISL",
+        "KWT"
+      ],
+      "support": "Iceland (ISL) value is 445,023 m³ (rank 1), Kuwait (KWT) value is 0 m³ (rank 181)."
+    },
+    {
+      "surface": "hook",
+      "text": "ICELAND VS KUWAIT",
+      "isos": [
+        "ISL",
+        "KWT"
+      ],
+      "support": "Iceland (ISL) and Kuwait (KWT) represent the extremes in the dataset."
+    },
+    {
+      "surface": "description",
+      "text": "Internal freshwater resources per person across 181 countries and territories.",
+      "isos": [],
+      "support": "Universe count is 181 mapped countries and territories with data for indicator ER.H2O.INTR.PC."
+    },
+    {
+      "surface": "beat_0",
+      "text": "Every Icelander has 445,023 cubic meters of internal freshwater. Kuwait has zero.",
+      "isos": [
+        "ISL",
+        "KWT"
+      ],
+      "support": "Iceland value is 445,022.68 m³ (display 445,023 m³); Kuwait value is 0.0 m³ (display 0 m³)."
+    },
+    {
+      "surface": "beat_1",
+      "text": "Renewable internal freshwater resources flows refer to internal river flows and groundwater from rainfall.",
+      "isos": [],
+      "support": "Definition: Renewable internal freshwater resources flows refer to internal renewable resources (internal river flows and groundwater from rainfall) in the country."
+    },
+    {
+      "surface": "beat_2",
+      "text": "Iceland has 439 times the water India gets, with India at 1,014 m³.",
+      "isos": [
+        "ISL",
+        "IND"
+      ],
+      "support": "Iceland value is 445,022.68 m³, India value is 1,014.44 m³ (display 1,014 m³). Ratio is 438.68, which rounds to 439 times."
+    },
+    {
+      "surface": "beat_3",
+      "text": "China has 1,992 m³.",
+      "isos": [
+        "CHN"
+      ],
+      "support": "China (CHN) value display is 1,992 m³ (exact: 1991.89 m³)."
+    },
+    {
+      "surface": "beat_4",
+      "text": "The lowest nations include Saudi Arabia with 75 m³, Jordan with 61 m³, and Egypt with 9 m³.",
+      "isos": [
+        "SAU",
+        "JOR",
+        "EGY"
+      ],
+      "support": "Saudi Arabia (SAU) display is 75 m³, Jordan (JOR) display is 61 m³, Egypt (EGY) display is 9 m³."
+    },
+    {
+      "surface": "beat_5",
+      "text": "Where does your country land?",
+      "isos": [],
+      "support": "Closing call to action question."
+    },
+    {
+      "surface": "card_5",
+      "text": "Where does your country land?",
+      "isos": [],
+      "support": "Closing card title."
+    }
+  ],
+  "surface_checks": {
+    "title": {
+      "supported": true,
+      "reason": "Iceland and Kuwait are valid entities spanning the max and min values in the dataset.",
+      "isos": [
+        "ISL",
+        "KWT"
+      ]
+    },
+    "hook": {
+      "supported": true,
+      "reason": "Contrasts Iceland and Kuwait as extremes in the dataset.",
+      "isos": [
+        "ISL",
+        "KWT"
+      ]
+    },
+    "description": {
+      "supported": true,
+      "reason": "Accurately reflects the 181 mapped countries and territories count and indicator subject.",
+      "isos": []
+    },
+    "beat_0": {
+      "supported": true,
+      "reason": "Iceland display is 445,023 m³ and Kuwait display is 0 m³, matching the text.",
+      "isos": [
+        "ISL",
+        "KWT"
+      ]
+    },
+    "beat_1": {
+      "supported": true,
+      "reason": "Directly matches the supplied metadata definition for the indicator.",
+      "isos": []
+    },
+    "beat_2": {
+      "supported": true,
+      "reason": "India value is 1,014 m³ and Iceland's ratio is correctly calculated/rounded to 439 times.",
+      "isos": [
+        "ISL",
+        "IND"
+      ]
+    },
+    "beat_3": {
+      "supported": true,
+      "reason": "China display is 1,992 m³, perfectly matching the data.",
+      "isos": [
+        "CHN"
+      ]
+    },
+    "beat_4": {
+      "supported": true,
+      "reason": "Saudi Arabia (75 m³), Jordan (61 m³), and Egypt (9 m³) all match their exact display values in the dataset.",
+      "isos": [
+        "SAU",
+        "JOR",
+        "EGY"
+      ]
+    },
+    "beat_5": {
+      "supported": true,
+      "reason": "Standard engagement question appropriate for data visualization.",
+      "isos": []
+    },
+    "card_5": {
+      "supported": true,
+      "reason": "Card text matches the visual plan and dataset source attribution.",
+      "isos": []
+    }
+  }
+}

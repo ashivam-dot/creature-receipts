@@ -1,0 +1,168 @@
+{
+  "errors": [],
+  "claims": [
+    {
+      "surface": "title",
+      "text": "Uruguay Leads the World in Cash Machines",
+      "isos": [
+        "URY"
+      ],
+      "support": "Uruguay has the highest value of 306.460239675036 (display: 306.5) ranking 1st in the universe."
+    },
+    {
+      "surface": "hook",
+      "text": "HIGHEST ATM DENSITY",
+      "isos": [],
+      "support": "Refers to the highest ranking ATM density indicator globally."
+    },
+    {
+      "surface": "description",
+      "text": "A cinematic look at the global density of cash machines, highlighting Uruguay's leading position and stark global contrasts.",
+      "isos": [
+        "URY"
+      ],
+      "support": "Uruguay ranks 1st globally in ATM density."
+    },
+    {
+      "surface": "beat_0",
+      "text": "Uruguay leads the world with 306.5 ATMs per 100k adults.",
+      "isos": [
+        "URY"
+      ],
+      "support": "Uruguay value is 306.460239675036, displayed as 306.5 per 100k adults, rank 1."
+    },
+    {
+      "surface": "beat_1",
+      "text": "Uruguay leads the world. Machines enable cash withdrawals and balance inquiries.",
+      "isos": [
+        "URY"
+      ],
+      "support": "Uruguay rank 1; definition states ATMs enable cash withdrawals, balance inquiries, etc."
+    },
+    {
+      "surface": "beat_2",
+      "text": "South Korea has 244.5 ATMs per 100k adults. Canada, Austria, and Portugal follow close behind.",
+      "isos": [
+        "KOR",
+        "CAN",
+        "AUT",
+        "PRT"
+      ],
+      "support": "Korea, Rep. value is 244.469292769745 (display 244.5, rank 2), Canada is 173.814950716338 (display 173.8, rank 3), Austria is 170.058889305102 (display 170.1, rank 4), Portugal is 157.795894091896 (display 157.8, rank 5)."
+    },
+    {
+      "surface": "beat_3",
+      "text": "Uruguay has 13 times India, which has 24.5. A massive gap.",
+      "isos": [
+        "URY",
+        "IND"
+      ],
+      "support": "Uruguay value is 306.46, India value is 24.47 (display 24.5), 306.46 / 24.47 is approximately 12.53 (rounds to 13 times)."
+    },
+    {
+      "surface": "beat_4",
+      "text": "Access drops sharply in Niger, with just 1.4 ATMs per 100k adults.",
+      "isos": [
+        "NER"
+      ],
+      "support": "Niger value is 1.39937331629238, displayed as 1.4 per 100k adults."
+    },
+    {
+      "surface": "beat_5",
+      "text": "South Sudan sits at 1.0 ATMs per 100k adults. The world's lowest.",
+      "isos": [
+        "SSD"
+      ],
+      "support": "South Sudan value is 0.959517149038783, displayed as 1.0, rank 174 (lowest in the 174-country universe)."
+    },
+    {
+      "surface": "beat_6",
+      "text": "Where does your country land?",
+      "isos": [],
+      "support": "Call to action card."
+    },
+    {
+      "surface": "card_6",
+      "text": "Where does your country land?",
+      "isos": [],
+      "support": "Card line matching visual plan."
+    }
+  ],
+  "surface_checks": {
+    "title": {
+      "supported": true,
+      "reason": "Uruguay is rank 1 in the dataset.",
+      "isos": [
+        "URY"
+      ]
+    },
+    "hook": {
+      "supported": true,
+      "reason": "Indicator measures ATM density per 100k adults.",
+      "isos": []
+    },
+    "description": {
+      "supported": true,
+      "reason": "Accurately reflects the dataset showing Uruguay as #1 and global range.",
+      "isos": [
+        "URY"
+      ]
+    },
+    "beat_0": {
+      "supported": true,
+      "reason": "Uruguay value is 306.5 per 100k adults.",
+      "isos": [
+        "URY"
+      ]
+    },
+    "beat_1": {
+      "supported": true,
+      "reason": "Matches definition of ATMs and Uruguay's rank.",
+      "isos": [
+        "URY"
+      ]
+    },
+    "beat_2": {
+      "supported": true,
+      "reason": "South Korea (244.5), Canada (173.8), Austria (170.1), and Portugal (157.8) match the evidence values and ranks.",
+      "isos": [
+        "KOR",
+        "CAN",
+        "AUT",
+        "PRT"
+      ]
+    },
+    "beat_3": {
+      "supported": true,
+      "reason": "Uruguay (306.5) is roughly 13 times India (24.5).",
+      "isos": [
+        "URY",
+        "IND"
+      ]
+    },
+    "beat_4": {
+      "supported": true,
+      "reason": "Niger value is 1.4 per 100k adults.",
+      "isos": [
+        "NER"
+      ]
+    },
+    "beat_5": {
+      "supported": true,
+      "reason": "South Sudan value is 1.0, ranking 174th out of 174.",
+      "isos": [
+        "SSD"
+      ]
+    },
+    "beat_6": {
+      "supported": true,
+      "reason": "Matches visual plan and card text.",
+      "isos": []
+    },
+    "card_6": {
+      "supported": true,
+      "reason": "Matches visual plan and card text.",
+      "isos": []
+    }
+  }
+}
