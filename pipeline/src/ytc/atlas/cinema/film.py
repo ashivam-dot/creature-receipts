@@ -416,13 +416,17 @@ def _spoken_at(names: list[str], words: list[dict]) -> list[float | None]:
 
 
 def _end_layers(question: str, source: str) -> dict:
-    logo = Image.new("RGBA", (W, 200), (0, 0, 0, 0))
+    logo = Image.new("RGBA", (W, 260), (0, 0, 0, 0))
     d = ImageDraw.Draw(logo)
     a, b = _anton(120), _anton(120)
     aw, bw = a.getlength("ATLAS "), b.getlength("IN NUMBERS")
     x = (W - aw - bw) / 2
     d.text((x, 20), "ATLAS ", font=a, fill=(255, 255, 255, 255), stroke_width=4, stroke_fill=(0, 0, 0, 255))
     d.text((x + aw, 20), "IN NUMBERS", font=b, fill=ACCENT + (255,), stroke_width=4, stroke_fill=(0, 0, 0, 255))
+    # Viewers subscribe to a promise of more: 13 subscribers from 15,000 views when the card named only the brand.
+    promise, pf = "NEW NUMBERS EVERY DAY · FOLLOW", _sans(40, "SemiBold")
+    d.text(((W - pf.getlength(promise)) / 2, 190), promise, font=pf, fill=(255, 255, 255, 235),
+           stroke_width=3, stroke_fill=(0, 0, 0, 255))
     big = _anton(110)
     q = _lines_layer([(line, big, (255, 255, 255, 255)) for line in _wrap(question.upper(), big, round(W * CAPTION_W))],
                      stroke=7, gap=10)
