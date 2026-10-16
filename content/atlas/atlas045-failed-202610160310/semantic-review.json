@@ -1,0 +1,140 @@
+{
+  "errors": [],
+  "claims": [
+    {
+      "surface": "title",
+      "text": "France Has 56.1 Landlines Per 100 People",
+      "isos": [
+        "FRA"
+      ],
+      "support": "France value is 56.1132766622503, display 56.1 per 100 people in 2023"
+    },
+    {
+      "surface": "beat_0",
+      "text": "France has 56.1 landlines per 100 people. South Sudan has 0.0, the world's lowest.",
+      "isos": [
+        "FRA",
+        "SSD"
+      ],
+      "support": "France has 56.1132766622503 (display 56.1), South Sudan has 0.0 (rank 201, tied lowest)"
+    },
+    {
+      "surface": "beat_1",
+      "text": "Portugal also keeps the connection, with 53.0.",
+      "isos": [
+        "PRT"
+      ],
+      "support": "Portugal value is 53.0028799193346, display 53.0 per 100 people in 2024"
+    },
+    {
+      "surface": "beat_2",
+      "text": "France has 2.4 times the landlines of the USA. The USA has 23.6.",
+      "isos": [
+        "FRA",
+        "USA"
+      ],
+      "support": "France is 56.113, USA is 23.608; 56.113 / 23.608 = 2.376 (rounds to 2.4); USA has 23.6"
+    },
+    {
+      "surface": "beat_3",
+      "text": "Japan remains a high-tech outlier with 47.7.",
+      "isos": [
+        "JPN"
+      ],
+      "support": "Japan value is 47.7014048948264, display 47.7 per 100 people in 2023"
+    },
+    {
+      "surface": "beat_4",
+      "text": "But in many nations, the lines are silent. Nigeria, Benin, and Chad all have 0.0.",
+      "isos": [
+        "NGA",
+        "BEN",
+        "TCD"
+      ],
+      "support": "Nigeria has 0.044 (display 0.0), Benin has 0.009 (display 0.0), Chad has 0.0"
+    },
+    {
+      "surface": "beat_5",
+      "text": "The UK maintains 34.4, counting analogue lines and digital voice connections.",
+      "isos": [
+        "GBR"
+      ],
+      "support": "United Kingdom value is 34.384757993093, display 34.4; definition includes analogue fixed telephone lines and VoIP/ISDN"
+    }
+  ],
+  "surface_checks": {
+    "title": {
+      "supported": true,
+      "reason": "France has 56.113, displayed as 56.1 per 100 people.",
+      "isos": [
+        "FRA"
+      ]
+    },
+    "hook": {
+      "supported": true,
+      "reason": "Stylistic hook phrase.",
+      "isos": []
+    },
+    "description": {
+      "supported": true,
+      "reason": "Accurately describes the indicator as fixed telephone lines using World Bank data.",
+      "isos": []
+    },
+    "beat_0": {
+      "supported": true,
+      "reason": "France is 56.1; South Sudan is 0.0, tied for the lowest rank of 201.",
+      "isos": [
+        "FRA",
+        "SSD"
+      ]
+    },
+    "beat_1": {
+      "supported": true,
+      "reason": "Portugal has 53.0 per 100 people.",
+      "isos": [
+        "PRT"
+      ]
+    },
+    "beat_2": {
+      "supported": true,
+      "reason": "France (56.113) divided by USA (23.608) is approximately 2.4; USA is 23.6.",
+      "isos": [
+        "FRA",
+        "USA"
+      ]
+    },
+    "beat_3": {
+      "supported": true,
+      "reason": "Japan has 47.7 per 100 people.",
+      "isos": [
+        "JPN"
+      ]
+    },
+    "beat_4": {
+      "supported": true,
+      "reason": "Nigeria displays 0.0, Benin displays 0.0, Chad has 0.0.",
+      "isos": [
+        "NGA",
+        "BEN",
+        "TCD"
+      ]
+    },
+    "beat_5": {
+      "supported": true,
+      "reason": "United Kingdom has 34.4; definition mentions analogue lines and VoIP/ISDN voice channels.",
+      "isos": [
+        "GBR"
+      ]
+    },
+    "beat_6": {
+      "supported": true,
+      "reason": "Closing question for audience engagement.",
+      "isos": []
+    },
+    "card_6": {
+      "supported": true,
+      "reason": "Title and indicator text match source details.",
+      "isos": []
+    }
+  }
+}

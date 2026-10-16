@@ -1148,7 +1148,7 @@
     "#dataviz"
    ],
    "source_url": "https://data.worldbank.org/indicator/SH.ALC.PCAP.LI",
-   "status": "ready:atlas040",
+   "status": "used:atlas040",
    "added_by": "refill"
   },
   {
@@ -1265,7 +1265,7 @@
     "#energy"
    ],
    "source_url": "https://data.worldbank.org/indicator/EG.USE.ELEC.KH.PC",
-   "status": "ready:atlas042",
+   "status": "used:atlas042",
    "added_by": "refill"
   },
   {
@@ -1568,7 +1568,7 @@
     "#telecom"
    ],
    "source_url": "https://data.worldbank.org/indicator/IT.MLT.MAIN.P2",
-   "status": "open",
+   "status": "failed:ValueError",
    "added_by": "refill"
   },
   {
@@ -1646,7 +1646,7 @@
     "#economy"
    ],
    "source_url": "https://data.worldbank.org/indicator/SL.TLF.PART.ZS",
-   "status": "open",
+   "status": "failed:RuntimeError",
    "added_by": "refill"
   },
   {

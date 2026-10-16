@@ -38,25 +38,27 @@ Refreshed by every producer run (`atlas.stats`) from the channel's public feed o
 
 | Short | Topic | Published | Views | Likes | Views per hour |
 |---|---|---|---|---|---|
-| atlas001 137 Places Have More Mobile Subscriptions Than People | map_reveal | 2026-10-08 16:01 UTC | 1322 | 17 | 8.7 |
-| atlas002 45 places with Falling Populations | map_reveal | 2026-10-09 16:02 UTC | 972 | 15 | 7.6 |
-| atlas003 Below the fertility benchmark in 2024 | rank_ladder | 2026-10-08 20:01 UTC | 131 | 2 | 0.9 |
-| atlas004 47 places Where Life Expectancy Reaches 80 | map_reveal | 2026-10-08 23:01 UTC | 159 | 2 | 1.1 |
-| atlas011 Money Sent Home Equals 58% of GDP in Tajikistan | map_reveal | 2026-10-10 16:01 UTC | 148 | – | 1.3 |
-| atlas014 Finland Rates Life at 7.8 out of 10 | rank_ladder | 2026-10-10 23:00 UTC | 1041 | – | 9.4 |
-| atlas016 How Many Calories Each Country Has On Its Plate | map_reveal | 2026-10-10 20:00 UTC | 1129 | – | 9.9 |
-| atlas017 The Youngest and Oldest places on Earth | map_reveal | 2026-10-11 16:01 UTC | 1338 | – | 14.3 |
-| atlas019 The Emptiest and Most Crowded places | map_reveal | 2026-10-11 20:00 UTC | 1627 | – | 18.2 |
-| atlas021 Cuba has 9.5 doctors while Niger has 0.0 | rank_ladder | 2026-10-11 23:00 UTC | 1026 | – | 11.9 |
-| atlas023 France has 49 fixed broadband lines per 100 people | map_reveal | 2026-10-12 16:02 UTC | 260 | – | 3.7 |
-| atlas024 Where 30% of People are 65 or Older | map_reveal | 2026-10-12 20:01 UTC | 1173 | – | 17.9 |
-| atlas025 Qatar has 108 micrograms of particles | map_reveal | 2026-10-12 23:01 UTC | 1127 | – | 18.0 |
-| atlas026 The Global Gap in Basic Drinking Water Access | map_reveal | 2026-10-13 16:03 UTC | 667 | – | 14.7 |
-| atlas027 Women in the labor force: 83% to 5% | rank_ladder | 2026-10-13 20:01 UTC | 128 | – | 3.1 |
-| atlas028 61 places Still Have Most People Outside Cities | rank_ladder | 2026-10-13 23:01 UTC | 1141 | – | 29.6 |
-| atlas030 places Where One City Holds 92% of City Dwellers | rank_ladder | 2026-10-14 16:02 UTC | 1124 | – | 52.3 |
-| atlas031 In Qatar, 77% of people were born abroad | rank_ladder | 2026-10-14 20:01 UTC | 1 | – | 0.1 |
-| atlas032 Health Spending: The $10,550 to $13 Divide | map_reveal | 2026-10-14 23:01 UTC | 982 | – | 67.6 |
+| atlas001 137 Places Have More Mobile Subscriptions Than People | map_reveal | 2026-10-08 16:01 UTC | 1323 | 17 | 7.5 |
+| atlas002 45 places with Falling Populations | map_reveal | 2026-10-09 16:02 UTC | 976 | 15 | 6.4 |
+| atlas003 Below the fertility benchmark in 2024 | rank_ladder | 2026-10-08 20:01 UTC | 132 | 2 | 0.8 |
+| atlas004 47 places Where Life Expectancy Reaches 80 | map_reveal | 2026-10-08 23:01 UTC | 160 | 2 | 0.9 |
+| atlas011 Money Sent Home Equals 58% of GDP in Tajikistan | map_reveal | 2026-10-10 16:01 UTC | 148 | 1 | 1.2 |
+| atlas014 Finland Rates Life at 7.8 out of 10 | rank_ladder | 2026-10-10 23:00 UTC | 1043 | 9 | 8.6 |
+| atlas016 How Many Calories Each Country Has On Its Plate | map_reveal | 2026-10-10 20:00 UTC | 1129 | 16 | 9.1 |
+| atlas017 The Youngest and Oldest places on Earth | map_reveal | 2026-10-11 16:01 UTC | 1338 | 21 | 12.8 |
+| atlas019 The Emptiest and Most Crowded places | map_reveal | 2026-10-11 20:00 UTC | 1762 | 20 | 17.5 |
+| atlas021 Cuba has 9.5 doctors while Niger has 0.0 | rank_ladder | 2026-10-11 23:00 UTC | 1035 | 14 | 10.6 |
+| atlas023 France has 49 fixed broadband lines per 100 people | map_reveal | 2026-10-12 16:02 UTC | 260 | 6 | 3.2 |
+| atlas024 Where 30% of People are 65 or Older | map_reveal | 2026-10-12 20:01 UTC | 1186 | 16 | 15.5 |
+| atlas025 Qatar has 108 micrograms of particles | map_reveal | 2026-10-12 23:01 UTC | 1146 | 19 | 15.6 |
+| atlas026 The Global Gap in Basic Drinking Water Access | map_reveal | 2026-10-13 16:03 UTC | 759 | 10 | 13.4 |
+| atlas027 Women in the labor force: 83% to 5% | rank_ladder | 2026-10-13 20:01 UTC | 142 | 5 | 2.7 |
+| atlas028 61 places Still Have Most People Outside Cities | rank_ladder | 2026-10-13 23:01 UTC | 1150 | 14 | 23.2 |
+| atlas030 places Where One City Holds 92% of City Dwellers | rank_ladder | 2026-10-14 16:02 UTC | 1140 | 7 | 34.9 |
+| atlas031 In Qatar, 77% of people were born abroad | rank_ladder | 2026-10-14 20:01 UTC | 1 | 0 | 0.0 |
+| atlas032 Health Spending: The $10,550 to $13 Divide | map_reveal | 2026-10-14 23:01 UTC | 1087 | 10 | 42.3 |
+| atlas033 Japan Has 51 Seniors per 100 Working-Age People | map_reveal | 2026-10-15 16:03 UTC | 884 | 12 | 102.2 |
+| atlas037 Colombia Rains 180 Times Egypt's Annual Precipitation | map_reveal | 2026-10-15 20:01 UTC | 585 | 6 | 125.2 |
 
 ## Log
 

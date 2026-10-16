@@ -1,0 +1,69 @@
+id: atlas046
+title: Where 92.8% of Workers Are Part-Time
+hook_text: WORKING HOURS
+description: Explore the global part-time workforce, where rates range from 92.8% in Belarus to the world's lowest
+  in Poland.
+hashtags:
+- '#maps'
+- '#geography'
+- '#economy'
+sources:
+- https://data.worldbank.org/indicator/SL.TLF.PART.ZS
+dataset:
+  kind: worldbank
+  indicator: SL.TLF.PART.ZS
+  label: Part-time share of total employment
+  unit: '%'
+  source: World Bank
+  min_year: 2019
+scale:
+  edges:
+  - 10.0
+  - 25.0
+  - 40.0
+  - 60.0
+  labels:
+  - Minimal
+  - Low
+  - Moderate
+  - High
+  - Extremely High
+value_format: '{v:.1f}%'
+beats:
+- text: In Belarus, 92.8% of workers clock short weeks. In Poland, almost none do.
+  shot:
+    callouts:
+    - BLR
+    - POL
+- text: Part time employment in this series is based on a common definition of less than 35 actual weekly hours
+    worked.
+  shot:
+    kind: country
+    iso: BLR
+- text: The Netherlands has 61.5%. Over half the workforce works these shorter weeks.
+  shot:
+    kind: country
+    iso: NLD
+- text: The USA sits near the median with 26.9%. Germany has 44.5%.
+  shot:
+    kind: group
+    isos:
+    - USA
+    - DEU
+- text: Germany is 9.3 times Mongolia, while Mongolia sits at 4.8%.
+  shot:
+    kind: country
+    iso: MNG
+- text: 'The lowest rates: Jamaica has 7.2%, Bosnia has 5.7%, and Poland is the world''s lowest at 0.4%.'
+  shot:
+    kind: rank
+    isos:
+    - JAM
+    - BIH
+    - POL
+- text: Where does your country land?
+  shot:
+    kind: card
+    lines:
+    - Your weekly hours?
+    - Part-time employment, World Bank

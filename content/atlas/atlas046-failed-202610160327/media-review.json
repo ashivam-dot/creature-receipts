@@ -1,0 +1,29 @@
+{
+  "duration": 39.98,
+  "integrated_lufs": -14.3,
+  "true_peak_dbfs": -1.4,
+  "speech": {
+    "heard": "In Trinidad and Tobago, the entire workforce is part-time. In Poland, it is 0.4%. This counts everyone working less than 35 actual weekly hours. Ukraine has 100%. Belarus has 92.8%. India has 24.8% and Brazil has 24.8%. Germany has 44.5%, which is 15 times the 3% in the UAE. Poland is the world's lowest at 0.4%, Mongolia has 4.8% and Russia has 7.1%. How many hours does your work week last?",
+    "model": "small.en",
+    "media_sha256": "83e1e2fc6e61749b35317b4721fef66b02dc27376b27b493e3069ff523aed1c1",
+    "primary_differences": [
+      "'100.0%' heard as '100%' after 'hours ukraine has'",
+      "'3.0%' heard as '3%' after '15 times the'"
+    ],
+    "differences": [
+      "'100.0%' heard as '100%' after 'hours ukraine has'",
+      "'3.0%' heard as '3%' after '15 times the'",
+      "base.en: '100.0%' heard as '100%' after 'hours ukraine has'",
+      "base.en: '3.0%' heard as '3%' after '15 times the'"
+    ],
+    "corroboration": {
+      "model": "base.en",
+      "heard": "In Trinidad and Tobago, the entire workforce is part-time. In Poland, it is 0.4%. This counts everyone working less than 35 actual weekly hours. Ukraine has 100%, Belarus has 92.8%. India has 24.8%, and Brazil has 24.8%. Germany has 44.5%, which is 15 times the 3% in the UAE. Poland is the world's lowest at 0.4%, Mongolia has 4.8% and Russia has 7.1%. How many hours does your work week last?",
+      "differences": [
+        "'100.0%' heard as '100%' after 'hours ukraine has'",
+        "'3.0%' heard as '3%' after '15 times the'"
+      ],
+      "resolved": []
+    }
+  }
+}

@@ -1,0 +1,175 @@
+{
+  "errors": [
+    {
+      "surface": "beat_4",
+      "claim": "Germany is 9.3 times Mongolia",
+      "reason": "Germany's value is 44.5 and Mongolia's is 4.8. 44.5 / 4.8 is approximately 9.27, but Germany's rank is 22 and Mongolia is 144, and using the exact values 44.486 / 4.824 is about 9.22, while Germany is not 9.3 times Mongolia in any official metric scaling other than a direct division of rounded values.",
+      "severity": "factual"
+    }
+  ],
+  "claims": [
+    {
+      "surface": "title",
+      "text": "Where 92.8% of Workers Are Part-Time",
+      "isos": [
+        "BLR"
+      ],
+      "support": "Belarus part-time employment rate is 92.8% (value: 92.826, year: 2025)"
+    },
+    {
+      "surface": "hook",
+      "text": "WORKING HOURS",
+      "isos": [],
+      "support": "Indicator measures part-time employment based on weekly hours worked."
+    },
+    {
+      "surface": "description",
+      "text": "Explore the global part-time workforce, where rates range from 92.8% in Belarus to the world's lowest in Poland.",
+      "isos": [
+        "BLR",
+        "POL"
+      ],
+      "support": "Belarus rate is 92.826 (rank 3) and Poland rate is 0.424 (rank 146, lowest in universe)."
+    },
+    {
+      "surface": "beat_0",
+      "text": "In Belarus, 92.8% of workers clock short weeks. In Poland, almost none do.",
+      "isos": [
+        "BLR",
+        "POL"
+      ],
+      "support": "Belarus is 92.8% (92.826) and Poland is 0.4% (0.424)."
+    },
+    {
+      "surface": "beat_1",
+      "text": "Part time employment in this series is based on a common definition of less than 35 actual weekly hours worked.",
+      "isos": [],
+      "support": "Definition: Part time employment in this series is based on a common definition of less than 35 actual weekly hours worked."
+    },
+    {
+      "surface": "beat_2",
+      "text": "The Netherlands has 61.5%. Over half the workforce works these shorter weeks.",
+      "isos": [
+        "NLD"
+      ],
+      "support": "Netherlands value is 61.548 (displayed as 61.5%), which is over half."
+    },
+    {
+      "surface": "beat_3",
+      "text": "The USA sits near the median with 26.9%. Germany has 44.5%.",
+      "isos": [
+        "USA",
+        "DEU"
+      ],
+      "support": "United States value is 26.922 (26.9%), Germany value is 44.486 (44.5%)."
+    },
+    {
+      "surface": "beat_4",
+      "text": "Germany is 9.3 times Mongolia, while Mongolia sits at 4.8%.",
+      "isos": [
+        "DEU",
+        "MNG"
+      ],
+      "support": "Mongolia value is 4.824 (4.8%)."
+    },
+    {
+      "surface": "beat_5",
+      "text": "The lowest rates: Jamaica has 7.2%, Bosnia has 5.7%, and Poland is the world's lowest at 0.4%.",
+      "isos": [
+        "JAM",
+        "BIH",
+        "POL"
+      ],
+      "support": "Jamaica value is 7.187 (7.2%), Bosnia and Herzegovina is 5.705 (5.7%), Poland is 0.424 (0.4%, rank 146 lowest)."
+    },
+    {
+      "surface": "beat_6",
+      "text": "Where does your country land?",
+      "isos": [],
+      "support": "Call to action prompt."
+    },
+    {
+      "surface": "card_6",
+      "text": "Your weekly hours? Part-time employment, World Bank",
+      "isos": [],
+      "support": "Source metadata and card display."
+    }
+  ],
+  "surface_checks": {
+    "title": {
+      "supported": true,
+      "reason": "Matches Belarus value of 92.8%",
+      "isos": [
+        "BLR"
+      ]
+    },
+    "hook": {
+      "supported": true,
+      "reason": "Refers generally to working hours covered by the indicator",
+      "isos": []
+    },
+    "description": {
+      "supported": true,
+      "reason": "Accurately references Belarus high and Poland low",
+      "isos": [
+        "BLR",
+        "POL"
+      ]
+    },
+    "beat_0": {
+      "supported": true,
+      "reason": "Belarus is 92.8% and Poland is 0.4%",
+      "isos": [
+        "BLR",
+        "POL"
+      ]
+    },
+    "beat_1": {
+      "supported": true,
+      "reason": "Matches official indicator definition verbatim",
+      "isos": []
+    },
+    "beat_2": {
+      "supported": true,
+      "reason": "Netherlands is 61.5%",
+      "isos": [
+        "NLD"
+      ]
+    },
+    "beat_3": {
+      "supported": true,
+      "reason": "USA is 26.9% and Germany is 44.5%",
+      "isos": [
+        "USA",
+        "DEU"
+      ]
+    },
+    "beat_4": {
+      "supported": false,
+      "reason": "Germany/Mongolia ratio claim is imprecise relative to exact values",
+      "isos": [
+        "DEU",
+        "MNG"
+      ]
+    },
+    "beat_5": {
+      "supported": true,
+      "reason": "Jamaica is 7.2%, Bosnia is 5.7%, Poland is 0.4%",
+      "isos": [
+        "JAM",
+        "BIH",
+        "POL"
+      ]
+    },
+    "beat_6": {
+      "supported": true,
+      "reason": "Standard call to action question",
+      "isos": []
+    },
+    "card_6": {
+      "supported": true,
+      "reason": "Matches source attribution and theme",
+      "isos": []
+    }
+  }
+}

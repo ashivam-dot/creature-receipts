@@ -1,0 +1,27 @@
+{
+  "duration": 35.62,
+  "integrated_lufs": -14.3,
+  "true_peak_dbfs": -1.2,
+  "speech": {
+    "heard": "France has 56.1 landlines per 100 people. South Sudan has zero, the world's lowest. Portugal also keeps the connection with 53. France has 2.4 times the landlines of the USA. The USA has 23.6. Japan remains a high-tech outlier with 47.7. But in many nations, the lines are silent. Nigeria, Benin, and Chad all have zero. The UK maintains 34.4 counting analog lines and digital voice connections. Does your home still have a landline?",
+    "model": "small.en",
+    "media_sha256": "0c616e00cd0dbf74f54cbb769b21c8ff26cd0e68c378854327ca316fb2e51ccc",
+    "primary_differences": [
+      "'analogue' heard as 'analog' after 'maintains 34.4 counting'"
+    ],
+    "differences": [
+      "'analogue' heard as 'analog' after 'maintains 34.4 counting'",
+      "base.en: 'analogue' heard as 'analog' after 'maintains 34.4 counting'",
+      "base.en: 'does' heard as 'is' after 'digital voice connections'"
+    ],
+    "corroboration": {
+      "model": "base.en",
+      "heard": "France has 56.1 landlines per 100 people. South Sudan has zero, the world's lowest. Portugal also keeps the connection with 53. France has 2.4 times the landlines of the USA. The USA has 23.6. Japan remains a high-tech outlier with 47.7. But in many nations, the lines are silent. Nigeria, Benin and Chad all have zero. The UK maintains 34.4, counting analog lines and digital voice connections. Is your home still have a landline?",
+      "differences": [
+        "'analogue' heard as 'analog' after 'maintains 34.4 counting'",
+        "'does' heard as 'is' after 'digital voice connections'"
+      ],
+      "resolved": []
+    }
+  }
+}
