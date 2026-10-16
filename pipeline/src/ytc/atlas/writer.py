@@ -418,10 +418,10 @@ def problems(draft: dict, allowed: set[str], owners: dict[str, set[str]], vals: 
 
 def write(topic: dict, ds: Dataset, episode_id: str, series: str = "") -> AtlasEpisode:
     """A checked script for the topic, or RuntimeError after TRIES drafts that break the rules."""
-    fmt = topic.get("value_format", "{v:,.0f}")
+    vals = drawable(ds)
+    fmt = topic["value_format"] = precise(topic.get("value_format", "{v:,.0f}"), vals.values())
     scale = topic.get("scale", {"kind": "bins"})
     summary, allowed, owners = facts(ds, scale, fmt)
-    vals = drawable(ds)
     if len(vals) < MIN_COUNTRIES:
         raise RuntimeError(f"only {len(vals)} countries have data; an Atlas map needs {MIN_COUNTRIES}")
     shown = visible(vals)
@@ -469,9 +469,26 @@ def write(topic: dict, ds: Dataset, episode_id: str, series: str = "") -> AtlasE
     raise RuntimeError(f"{episode_id}: no draft passed after {TRIES} tries: {'; '.join(found)[:500]}")
 
 
+def _places(match: re.Match) -> str:
+    word = match.group(0)
+    return "PLACES" if word.isupper() else "Places" if word[0].isupper() else "places"
+
+
+def precise(fmt: str, values) -> str:
+    """fmt with enough decimals that no nonzero value reads as 0 ("Niger has 0.0" doctors, 2026-10-11)."""
+    small = min((abs(v) for v in values if v), default=None)
+    for _ in range(3):
+        decimals = re.search(r"\.(\d)f", fmt)
+        if small is None or not decimals or any(c in "123456789" for c in fmt.format(v=small)):
+            break
+        fmt = fmt.replace(decimals.group(0), f".{int(decimals.group(1)) + 1}f", 1)
+    return fmt
+
+
 def _episode(draft: dict, topic: dict, episode_id: str, series: str) -> AtlasEpisode:
     # Aggregate totals cover World Bank countries AND territories; repair this terminology deterministically.
-    draft["title"] = re.sub(r"\bcountries\b", "places", draft["title"], flags=re.I)
+    draft["title"] = re.sub(r"\bcountries\b", _places, draft["title"], flags=re.I)
+    draft["title"] = draft["title"][:1].upper() + draft["title"][1:]
     draft["hook_text"] = re.sub(r"\bcountries\b", "PLACES", draft["hook_text"], flags=re.I)
     draft["description"] = re.sub(r"\bcountries\b(?! and territories)", "countries and territories", draft["description"], flags=re.I)
     beats = []
