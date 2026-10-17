@@ -1,0 +1,157 @@
+{
+  "errors": [],
+  "claims": [
+    {
+      "surface": "title",
+      "text": "Household Goods Cost 130 in Iceland but 100 in USA",
+      "isos": [
+        "ISL",
+        "USA"
+      ],
+      "support": "Iceland value is 129.708 (display 130), United States value is 100.0"
+    },
+    {
+      "surface": "hook",
+      "text": "GLOBAL PRICE GAP",
+      "isos": [],
+      "support": "General thematic title for price level index comparisons"
+    },
+    {
+      "surface": "description",
+      "text": "Comparing household price levels worldwide against the United States baseline of 100.",
+      "isos": [
+        "USA"
+      ],
+      "support": "Indicator measures price level relative to a base country set equal to 100, which is the United States"
+    },
+    {
+      "surface": "beat_0",
+      "text": "Household goods cost 100 in USA, but in India they cost just 23.",
+      "isos": [
+        "USA",
+        "IND"
+      ],
+      "support": "United States value is 100.0 (display 100), India value is 22.717 (display 23)"
+    },
+    {
+      "surface": "beat_1",
+      "text": "Egypt is the world's lowest at 16, where US dollars buy the most.",
+      "isos": [
+        "EGY"
+      ],
+      "support": "Egypt rank is 200 (lowest among 200 entities) with value 15.551 (display 16)"
+    },
+    {
+      "surface": "beat_2",
+      "text": "Near the top, Denmark sits at 105, Switzerland at 128, and Iceland at 130.",
+      "isos": [
+        "DNK",
+        "CHE",
+        "ISL"
+      ],
+      "support": "Denmark value is 104.528 (display 105), Switzerland value is 128.169 (display 128), Iceland value is 129.708 (display 130)"
+    },
+    {
+      "surface": "beat_3",
+      "text": "China sits near the global median at 48, with prices well below America.",
+      "isos": [
+        "CHN",
+        "USA"
+      ],
+      "support": "China value is 48.117 (display 48), compared to USA 100"
+    },
+    {
+      "surface": "beat_4",
+      "text": "Between the extremes, Iceland has 130 while Egypt has just 16.",
+      "isos": [
+        "ISL",
+        "EGY"
+      ],
+      "support": "Iceland value is 129.708 (display 130), Egypt value is 15.551 (display 16)"
+    },
+    {
+      "surface": "beat_5",
+      "text": "Where does your country land?",
+      "isos": [],
+      "support": "Call to action prompt"
+    },
+    {
+      "surface": "card_5",
+      "text": "Where do you land?",
+      "isos": [],
+      "support": "Card heading prompt"
+    }
+  ],
+  "surface_checks": {
+    "title": {
+      "supported": true,
+      "reason": "Iceland and USA values match data displays",
+      "isos": [
+        "ISL",
+        "USA"
+      ]
+    },
+    "hook": {
+      "supported": true,
+      "reason": "Accurate thematic framing",
+      "isos": []
+    },
+    "description": {
+      "supported": true,
+      "reason": "Matches indicator definition setting US = 100",
+      "isos": [
+        "USA"
+      ]
+    },
+    "beat_0": {
+      "supported": true,
+      "reason": "USA display is 100, India display is 23",
+      "isos": [
+        "USA",
+        "IND"
+      ]
+    },
+    "beat_1": {
+      "supported": true,
+      "reason": "Egypt is rank 200 with display value 16, lowest in universe",
+      "isos": [
+        "EGY"
+      ]
+    },
+    "beat_2": {
+      "supported": true,
+      "reason": "Denmark display 105, Switzerland display 128, Iceland display 130",
+      "isos": [
+        "DNK",
+        "CHE",
+        "ISL"
+      ]
+    },
+    "beat_3": {
+      "supported": true,
+      "reason": "China display is 48, correctly noted as below America",
+      "isos": [
+        "CHN",
+        "USA"
+      ]
+    },
+    "beat_4": {
+      "supported": true,
+      "reason": "Iceland display 130 and Egypt display 16 are correctly stated extremes",
+      "isos": [
+        "ISL",
+        "EGY"
+      ]
+    },
+    "beat_5": {
+      "supported": true,
+      "reason": "Standard concluding engagement question",
+      "isos": []
+    },
+    "card_5": {
+      "supported": true,
+      "reason": "Matches card visual plan",
+      "isos": []
+    }
+  }
+}

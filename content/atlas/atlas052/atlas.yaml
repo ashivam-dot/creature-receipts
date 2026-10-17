@@ -1,0 +1,69 @@
+id: atlas052
+title: 'Clean Cooking Access: From 100% Down to 0%'
+format: rank_ladder
+hook_text: THE CLEAN FUEL GAP
+description: Global access to clean cooking fuels ranges from 100% down to 0%, with a median of 93%. Data from World
+  Bank, 2024.
+hashtags:
+- '#maps'
+- '#geography'
+- '#energyaccess'
+sources:
+- https://data.worldbank.org/indicator/EG.CFT.ACCS.ZS
+dataset:
+  kind: worldbank
+  indicator: EG.CFT.ACCS.ZS
+  label: Access to clean cooking fuels
+  unit: '%'
+  source: World Bank
+  min_year: 2019
+scale:
+  edges:
+  - 10.0
+  - 50.0
+  - 90.0
+  - 99.0
+  labels:
+  - Under 10%
+  - 10-50%
+  - 50-90%
+  - 90-99%
+  - Over 99%
+value_format: '{v:.0f}%'
+beats:
+- text: Algeria has 100% clean cooking access, the world's highest. South Sudan has 0%.
+  shot:
+    callouts:
+    - DZA
+    - SSD
+- text: India has 81%. Under WHO guidelines, kerosene is excluded from clean cooking fuels.
+  shot:
+    kind: country
+    iso: IND
+- text: USA has 100%. Across the Atlantic, Nigeria has 28%.
+  shot:
+    kind: group
+    isos:
+    - USA
+    - NGA
+- text: China has 90%, close to the global median of 93%.
+  shot:
+    kind: country
+    iso: CHN
+- text: At the very bottom, Mali has 2%, Liberia has 1%, and Burundi has 0%.
+  shot:
+    kind: rank
+    isos:
+    - MLI
+    - LBR
+    - BDI
+- text: Brazil has 98%, where nearly everyone cooks with clean fuels.
+  shot:
+    kind: country
+    iso: BRA
+- text: Where does your country land?
+  shot:
+    kind: card
+    lines:
+    - Where are you?
+    - Clean Cooking Access (2024)

@@ -1,0 +1,68 @@
+id: atlas055
+title: South Korea Has 12.8 Hospital Beds While Chad Has 0.1
+hook_text: GLOBAL HEALTH GAP
+description: South Korea leads the world with 12.8 hospital beds, while Chad sits lowest at 0.1.
+hashtags:
+- '#maps'
+- '#geography'
+- '#healthcare'
+sources:
+- https://data.worldbank.org/indicator/SH.MED.BEDS.ZS
+dataset:
+  kind: worldbank
+  indicator: SH.MED.BEDS.ZS
+  label: Hospital beds per 1,000 people
+  unit: per 1,000 people
+  source: World Bank
+  min_year: 2019
+scale:
+  edges:
+  - 1.0
+  - 2.5
+  - 5.0
+  - 8.0
+  labels:
+  - Under 1.0
+  - 1.0–2.5
+  - 2.5–5.0
+  - 5.0–8.0
+  - Over 8.0
+value_format: '{v:.1f}'
+beats:
+- text: South Korea has 12.8 hospital beds. Niger has 0.3.
+  shot:
+    callouts:
+    - KOR
+    - NER
+- text: South Korea is the world's highest, counting inpatient beds in hospitals and rehabilitation centers.
+  shot:
+    kind: country
+    iso: KOR
+- text: Japan is right behind with 12.6, covering acute and chronic care.
+  shot:
+    kind: country
+    iso: JPN
+- text: USA has 2.7, sitting just above the global median of 2.4.
+  shot:
+    kind: country
+    iso: USA
+- text: Germany has 7.5, while India has 1.6.
+  shot:
+    kind: group
+    isos:
+    - DEU
+    - IND
+- text: Burkina Faso has 0.2.
+  shot:
+    kind: country
+    iso: BFA
+- text: Chad has the world's lowest with 0.1.
+  shot:
+    kind: country
+    iso: TCD
+- text: Where does your country land?
+  shot:
+    kind: card
+    lines:
+    - Where does yours stand?
+    - Hospital beds per 1,000 people

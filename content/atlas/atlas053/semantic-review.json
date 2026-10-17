@@ -1,0 +1,137 @@
+{
+  "errors": [],
+  "claims": [
+    {
+      "surface": "title",
+      "text": "Why Greece Has 165.1% College Enrollment",
+      "isos": [
+        "GRC"
+      ],
+      "support": "GRC value is 165.113418579102, display 165.1%"
+    },
+    {
+      "surface": "description",
+      "text": "Gross tertiary education enrollment across the world, from Greece at 165.1% to Suriname at 2.6%.",
+      "isos": [
+        "GRC",
+        "SUR"
+      ],
+      "support": "GRC value is 165.113418579102, SUR value is 2.56642457392281"
+    },
+    {
+      "surface": "beat_0",
+      "text": "Tertiary enrollment in Greece is 165.1%, while Suriname has just 2.6%.",
+      "isos": [
+        "GRC",
+        "SUR"
+      ],
+      "support": "GRC: 165.1%, SUR: 2.6%"
+    },
+    {
+      "surface": "beat_1",
+      "text": "Greece is the world's highest. Total enrollment counts students regardless of age against the official college-age population.",
+      "isos": [
+        "GRC"
+      ],
+      "support": "GRC rank is 1 (highest); definition matches total enrollment regardless of age to the population of the official age group"
+    },
+    {
+      "surface": "beat_2",
+      "text": "Cyprus has 120.9%, South Korea 111.9%, and Finland 110.3%.",
+      "isos": [
+        "CYP",
+        "KOR",
+        "FIN"
+      ],
+      "support": "CYP: 120.9%, KOR: 111.9%, FIN: 110.3%"
+    },
+    {
+      "surface": "beat_3",
+      "text": "The world's largest economies sit lower: the USA has 79.4%, while China has 76.9%.",
+      "isos": [
+        "USA",
+        "CHN"
+      ],
+      "support": "USA: 79.4%, CHN: 76.9%"
+    },
+    {
+      "surface": "beat_4",
+      "text": "India has 34.4%, falling well behind.",
+      "isos": [
+        "IND"
+      ],
+      "support": "IND: 34.4%"
+    }
+  ],
+  "surface_checks": {
+    "title": {
+      "supported": true,
+      "reason": "Greece value is 165.1%",
+      "isos": [
+        "GRC"
+      ]
+    },
+    "hook": {
+      "supported": true,
+      "reason": "Stylistic headline introducing higher education topic",
+      "isos": []
+    },
+    "description": {
+      "supported": true,
+      "reason": "Accurately reflects Greece at 165.1% and Suriname at 2.6%",
+      "isos": [
+        "GRC",
+        "SUR"
+      ]
+    },
+    "beat_0": {
+      "supported": true,
+      "reason": "Matches GRC (165.1%) and SUR (2.6%) values",
+      "isos": [
+        "GRC",
+        "SUR"
+      ]
+    },
+    "beat_1": {
+      "supported": true,
+      "reason": "Greece rank is 1 and definition correctly references the gross enrollment ratio definition",
+      "isos": [
+        "GRC"
+      ]
+    },
+    "beat_2": {
+      "supported": true,
+      "reason": "CYP, KOR, and FIN match their display values",
+      "isos": [
+        "CYP",
+        "KOR",
+        "FIN"
+      ]
+    },
+    "beat_3": {
+      "supported": true,
+      "reason": "USA and CHN match their display values",
+      "isos": [
+        "USA",
+        "CHN"
+      ]
+    },
+    "beat_4": {
+      "supported": true,
+      "reason": "IND matches its display value of 34.4%",
+      "isos": [
+        "IND"
+      ]
+    },
+    "beat_5": {
+      "supported": true,
+      "reason": "Interactive outro question",
+      "isos": []
+    },
+    "card_5": {
+      "supported": true,
+      "reason": "Matches card content requirements",
+      "isos": []
+    }
+  }
+}

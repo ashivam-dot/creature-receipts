@@ -1,0 +1,1716 @@
+{
+  "version": 1,
+  "evidence": {
+    "version": 1,
+    "indicator": "SH.MED.BEDS.ZS",
+    "definition": "Hospital beds include inpatient beds available in public, private, general, and specialized hospitals and rehabilitation centers. In most cases beds for both acute and chronic care are included.",
+    "source": "https://data.worldbank.org/indicator/SH.MED.BEDS.ZS",
+    "source_response_sha256": "cab6f2c13f32eff162c1d5bdd755054c1786bcea0a077bfdd9ac1821e2d880b2",
+    "source_organization": "WHO data, supplemented by country data, World Health Organization (WHO)",
+    "year_label": "latest available 2019–2023",
+    "universe": "mapped countries and territories with data",
+    "count": 144,
+    "threshold": null,
+    "at_or_above": null,
+    "entities": {
+      "AFG": {
+        "name": "Afghanistan",
+        "value": 0.35,
+        "display": "0.3",
+        "year": 2023,
+        "unit": "per 1,000 people",
+        "rank": 140
+      },
+      "ALB": {
+        "name": "Albania",
+        "value": 2.9,
+        "display": "2.9",
+        "year": 2020,
+        "unit": "per 1,000 people",
+        "rank": 61
+      },
+      "AGO": {
+        "name": "Angola",
+        "value": 0.75,
+        "display": "0.8",
+        "year": 2019,
+        "unit": "per 1,000 people",
+        "rank": 125
+      },
+      "ATG": {
+        "name": "Antigua and Barbuda",
+        "value": 3.42,
+        "display": "3.4",
+        "year": 2023,
+        "unit": "per 1,000 people",
+        "rank": 49
+      },
+      "ARG": {
+        "name": "Argentina",
+        "value": 3.36,
+        "display": "3.4",
+        "year": 2022,
+        "unit": "per 1,000 people",
+        "rank": 50
+      },
+      "ARM": {
+        "name": "Armenia",
+        "value": 4.24,
+        "display": "4.2",
+        "year": 2023,
+        "unit": "per 1,000 people",
+        "rank": 31
+      },
+      "AUT": {
+        "name": "Austria",
+        "value": 6.7,
+        "display": "6.7",
+        "year": 2022,
+        "unit": "per 1,000 people",
+        "rank": 9
+      },
+      "AZE": {
+        "name": "Azerbaijan",
+        "value": 3.68,
+        "display": "3.7",
+        "year": 2023,
+        "unit": "per 1,000 people",
+        "rank": 44
+      },
+      "BHS": {
+        "name": "Bahamas, The",
+        "value": 2.17,
+        "display": "2.2",
+        "year": 2023,
+        "unit": "per 1,000 people",
+        "rank": 83
+      },
+      "BHR": {
+        "name": "Bahrain",
+        "value": 1.84,
+        "display": "1.8",
+        "year": 2022,
+        "unit": "per 1,000 people",
+        "rank": 92
+      },
+      "BGD": {
+        "name": "Bangladesh",
+        "value": 0.92,
+        "display": "0.9",
+        "year": 2023,
+        "unit": "per 1,000 people",
+        "rank": 122
+      },
+      "BRB": {
+        "name": "Barbados",
+        "value": 6.4,
+        "display": "6.4",
+        "year": 2023,
+        "unit": "per 1,000 people",
+        "rank": 13
+      },
+      "BLR": {
+        "name": "Belarus",
+        "value": 9.77,
+        "display": "9.8",
+        "year": 2023,
+        "unit": "per 1,000 people",
+        "rank": 3
+      },
+      "BEL": {
+        "name": "Belgium",
+        "value": 5.42,
+        "display": "5.4",
+        "year": 2023,
+        "unit": "per 1,000 people",
+        "rank": 23
+      },
+      "BLZ": {
+        "name": "Belize",
+        "value": 1.0,
+        "display": "1.0",
+        "year": 2023,
+        "unit": "per 1,000 people",
+        "rank": 117
+      },
+      "BEN": {
+        "name": "Benin",
+        "value": 0.43,
+        "display": "0.4",
+        "year": 2021,
+        "unit": "per 1,000 people",
+        "rank": 138
+      },
+      "BTN": {
+        "name": "Bhutan",
+        "value": 2.16,
+        "display": "2.2",
+        "year": 2023,
+        "unit": "per 1,000 people",
+        "rank": 84
+      },
+      "BOL": {
+        "name": "Bolivia",
+        "value": 1.49,
+        "display": "1.5",
+        "year": 2023,
+        "unit": "per 1,000 people",
+        "rank": 100
+      },
+      "BIH": {
+        "name": "Bosnia and Herzegovina",
+        "value": 2.35,
+        "display": "2.4",
+        "year": 2019,
+        "unit": "per 1,000 people",
+        "rank": 80
+      },
+      "BWA": {
+        "name": "Botswana",
+        "value": 2.36,
+        "display": "2.4",
+        "year": 2022,
+        "unit": "per 1,000 people",
+        "rank": 79
+      },
+      "BRA": {
+        "name": "Brazil",
+        "value": 2.52,
+        "display": "2.5",
+        "year": 2021,
+        "unit": "per 1,000 people",
+        "rank": 70
+      },
+      "BRN": {
+        "name": "Brunei Darussalam",
+        "value": 3.58,
+        "display": "3.6",
+        "year": 2023,
+        "unit": "per 1,000 people",
+        "rank": 46
+      },
+      "BGR": {
+        "name": "Bulgaria",
+        "value": 8.2,
+        "display": "8.2",
+        "year": 2023,
+        "unit": "per 1,000 people",
+        "rank": 5
+      },
+      "BFA": {
+        "name": "Burkina Faso",
+        "value": 0.2,
+        "display": "0.2",
+        "year": 2020,
+        "unit": "per 1,000 people",
+        "rank": 143
+      },
+      "CPV": {
+        "name": "Cabo Verde",
+        "value": 2.21,
+        "display": "2.2",
+        "year": 2022,
+        "unit": "per 1,000 people",
+        "rank": 82
+      },
+      "CAN": {
+        "name": "Canada",
+        "value": 2.54,
+        "display": "2.5",
+        "year": 2022,
+        "unit": "per 1,000 people",
+        "rank": 69
+      },
+      "TCD": {
+        "name": "Chad",
+        "value": 0.15,
+        "display": "0.1",
+        "year": 2020,
+        "unit": "per 1,000 people",
+        "rank": 144
+      },
+      "CHL": {
+        "name": "Chile",
+        "value": 1.94,
+        "display": "1.9",
+        "year": 2023,
+        "unit": "per 1,000 people",
+        "rank": 88
+      },
+      "CHN": {
+        "name": "China",
+        "value": 5.63,
+        "display": "5.6",
+        "year": 2023,
+        "unit": "per 1,000 people",
+        "rank": 19
+      },
+      "COL": {
+        "name": "Colombia",
+        "value": 1.7,
+        "display": "1.7",
+        "year": 2020,
+        "unit": "per 1,000 people",
+        "rank": 95
+      },
+      "CRI": {
+        "name": "Costa Rica",
+        "value": 1.14,
+        "display": "1.1",
+        "year": 2022,
+        "unit": "per 1,000 people",
+        "rank": 109
+      },
+      "HRV": {
+        "name": "Croatia",
+        "value": 5.6,
+        "display": "5.6",
+        "year": 2023,
+        "unit": "per 1,000 people",
+        "rank": 20
+      },
+      "CUB": {
+        "name": "Cuba",
+        "value": 4.33,
+        "display": "4.3",
+        "year": 2023,
+        "unit": "per 1,000 people",
+        "rank": 29
+      },
+      "CYP": {
+        "name": "Cyprus",
+        "value": 2.15,
+        "display": "2.1",
+        "year": 2022,
+        "unit": "per 1,000 people",
+        "rank": 85
+      },
+      "CZE": {
+        "name": "Czechia",
+        "value": 6.54,
+        "display": "6.5",
+        "year": 2022,
+        "unit": "per 1,000 people",
+        "rank": 11
+      },
+      "DNK": {
+        "name": "Denmark",
+        "value": 2.43,
+        "display": "2.4",
+        "year": 2023,
+        "unit": "per 1,000 people",
+        "rank": 73
+      },
+      "DMA": {
+        "name": "Dominica",
+        "value": 3.97,
+        "display": "4.0",
+        "year": 2023,
+        "unit": "per 1,000 people",
+        "rank": 38
+      },
+      "DOM": {
+        "name": "Dominican Republic",
+        "value": 0.75,
+        "display": "0.8",
+        "year": 2023,
+        "unit": "per 1,000 people",
+        "rank": 125
+      },
+      "ECU": {
+        "name": "Ecuador",
+        "value": 1.32,
+        "display": "1.3",
+        "year": 2023,
+        "unit": "per 1,000 people",
+        "rank": 105
+      },
+      "EGY": {
+        "name": "Egypt, Arab Rep.",
+        "value": 1.06,
+        "display": "1.1",
+        "year": 2021,
+        "unit": "per 1,000 people",
+        "rank": 113
+      },
+      "SLV": {
+        "name": "El Salvador",
+        "value": 1.21,
+        "display": "1.2",
+        "year": 2023,
+        "unit": "per 1,000 people",
+        "rank": 108
+      },
+      "ERI": {
+        "name": "Eritrea",
+        "value": 1.02,
+        "display": "1.0",
+        "year": 2023,
+        "unit": "per 1,000 people",
+        "rank": 115
+      },
+      "EST": {
+        "name": "Estonia",
+        "value": 4.13,
+        "display": "4.1",
+        "year": 2023,
+        "unit": "per 1,000 people",
+        "rank": 32
+      },
+      "FIN": {
+        "name": "Finland",
+        "value": 2.61,
+        "display": "2.6",
+        "year": 2022,
+        "unit": "per 1,000 people",
+        "rank": 68
+      },
+      "FRA": {
+        "name": "France",
+        "value": 5.65,
+        "display": "5.7",
+        "year": 2022,
+        "unit": "per 1,000 people",
+        "rank": 18
+      },
+      "GMB": {
+        "name": "Gambia, The",
+        "value": 1.11,
+        "display": "1.1",
+        "year": 2023,
+        "unit": "per 1,000 people",
+        "rank": 110
+      },
+      "GEO": {
+        "name": "Georgia",
+        "value": 4.04,
+        "display": "4.0",
+        "year": 2023,
+        "unit": "per 1,000 people",
+        "rank": 35
+      },
+      "DEU": {
+        "name": "Germany",
+        "value": 7.55,
+        "display": "7.5",
+        "year": 2023,
+        "unit": "per 1,000 people",
+        "rank": 6
+      },
+      "GRC": {
+        "name": "Greece",
+        "value": 4.27,
+        "display": "4.3",
+        "year": 2022,
+        "unit": "per 1,000 people",
+        "rank": 30
+      },
+      "GRD": {
+        "name": "Grenada",
+        "value": 3.01,
+        "display": "3.0",
+        "year": 2023,
+        "unit": "per 1,000 people",
+        "rank": 57
+      },
+      "GTM": {
+        "name": "Guatemala",
+        "value": 0.45,
+        "display": "0.5",
+        "year": 2023,
+        "unit": "per 1,000 people",
+        "rank": 137
+      },
+      "GUY": {
+        "name": "Guyana",
+        "value": 3.24,
+        "display": "3.2",
+        "year": 2023,
+        "unit": "per 1,000 people",
+        "rank": 52
+      },
+      "HTI": {
+        "name": "Haiti",
+        "value": 4.9,
+        "display": "4.9",
+        "year": 2023,
+        "unit": "per 1,000 people",
+        "rank": 25
+      },
+      "HND": {
+        "name": "Honduras",
+        "value": 0.53,
+        "display": "0.5",
+        "year": 2023,
+        "unit": "per 1,000 people",
+        "rank": 135
+      },
+      "HUN": {
+        "name": "Hungary",
+        "value": 6.63,
+        "display": "6.6",
+        "year": 2022,
+        "unit": "per 1,000 people",
+        "rank": 10
+      },
+      "ISL": {
+        "name": "Iceland",
+        "value": 2.83,
+        "display": "2.8",
+        "year": 2020,
+        "unit": "per 1,000 people",
+        "rank": 63
+      },
+      "IND": {
+        "name": "India",
+        "value": 1.59,
+        "display": "1.6",
+        "year": 2021,
+        "unit": "per 1,000 people",
+        "rank": 97
+      },
+      "IDN": {
+        "name": "Indonesia",
+        "value": 1.37,
+        "display": "1.4",
+        "year": 2023,
+        "unit": "per 1,000 people",
+        "rank": 103
+      },
+      "IRN": {
+        "name": "Iran, Islamic Rep.",
+        "value": 1.85,
+        "display": "1.9",
+        "year": 2019,
+        "unit": "per 1,000 people",
+        "rank": 91
+      },
+      "IRL": {
+        "name": "Ireland",
+        "value": 2.96,
+        "display": "3.0",
+        "year": 2023,
+        "unit": "per 1,000 people",
+        "rank": 58
+      },
+      "ISR": {
+        "name": "Israel",
+        "value": 3.14,
+        "display": "3.1",
+        "year": 2023,
+        "unit": "per 1,000 people",
+        "rank": 54
+      },
+      "ITA": {
+        "name": "Italy",
+        "value": 3.06,
+        "display": "3.1",
+        "year": 2022,
+        "unit": "per 1,000 people",
+        "rank": 55
+      },
+      "JAM": {
+        "name": "Jamaica",
+        "value": 1.65,
+        "display": "1.6",
+        "year": 2023,
+        "unit": "per 1,000 people",
+        "rank": 96
+      },
+      "JPN": {
+        "name": "Japan",
+        "value": 12.59,
+        "display": "12.6",
+        "year": 2022,
+        "unit": "per 1,000 people",
+        "rank": 2
+      },
+      "JOR": {
+        "name": "Jordan",
+        "value": 1.41,
+        "display": "1.4",
+        "year": 2023,
+        "unit": "per 1,000 people",
+        "rank": 102
+      },
+      "KAZ": {
+        "name": "Kazakhstan",
+        "value": 6.54,
+        "display": "6.5",
+        "year": 2020,
+        "unit": "per 1,000 people",
+        "rank": 11
+      },
+      "KEN": {
+        "name": "Kenya",
+        "value": 1.33,
+        "display": "1.3",
+        "year": 2019,
+        "unit": "per 1,000 people",
+        "rank": 104
+      },
+      "KOR": {
+        "name": "Korea, Rep.",
+        "value": 12.81,
+        "display": "12.8",
+        "year": 2022,
+        "unit": "per 1,000 people",
+        "rank": 1
+      },
+      "KWT": {
+        "name": "Kuwait",
+        "value": 2.33,
+        "display": "2.3",
+        "year": 2020,
+        "unit": "per 1,000 people",
+        "rank": 81
+      },
+      "KGZ": {
+        "name": "Kyrgyz Republic",
+        "value": 3.73,
+        "display": "3.7",
+        "year": 2023,
+        "unit": "per 1,000 people",
+        "rank": 43
+      },
+      "LAO": {
+        "name": "Lao PDR",
+        "value": 1.71,
+        "display": "1.7",
+        "year": 2023,
+        "unit": "per 1,000 people",
+        "rank": 94
+      },
+      "LVA": {
+        "name": "Latvia",
+        "value": 4.95,
+        "display": "5.0",
+        "year": 2023,
+        "unit": "per 1,000 people",
+        "rank": 24
+      },
+      "LBN": {
+        "name": "Lebanon",
+        "value": 2.73,
+        "display": "2.7",
+        "year": 2021,
+        "unit": "per 1,000 people",
+        "rank": 65
+      },
+      "LBR": {
+        "name": "Liberia",
+        "value": 1.59,
+        "display": "1.6",
+        "year": 2021,
+        "unit": "per 1,000 people",
+        "rank": 97
+      },
+      "LBY": {
+        "name": "Libya",
+        "value": 3.5,
+        "display": "3.5",
+        "year": 2022,
+        "unit": "per 1,000 people",
+        "rank": 47
+      },
+      "LTU": {
+        "name": "Lithuania",
+        "value": 5.71,
+        "display": "5.7",
+        "year": 2022,
+        "unit": "per 1,000 people",
+        "rank": 17
+      },
+      "LUX": {
+        "name": "Luxembourg",
+        "value": 3.95,
+        "display": "4.0",
+        "year": 2023,
+        "unit": "per 1,000 people",
+        "rank": 39
+      },
+      "MYS": {
+        "name": "Malaysia",
+        "value": 1.96,
+        "display": "2.0",
+        "year": 2023,
+        "unit": "per 1,000 people",
+        "rank": 86
+      },
+      "MLT": {
+        "name": "Malta",
+        "value": 4.09,
+        "display": "4.1",
+        "year": 2022,
+        "unit": "per 1,000 people",
+        "rank": 34
+      },
+      "MUS": {
+        "name": "Mauritius",
+        "value": 3.8,
+        "display": "3.8",
+        "year": 2023,
+        "unit": "per 1,000 people",
+        "rank": 42
+      },
+      "MEX": {
+        "name": "Mexico",
+        "value": 1.01,
+        "display": "1.0",
+        "year": 2022,
+        "unit": "per 1,000 people",
+        "rank": 116
+      },
+      "MDA": {
+        "name": "Moldova",
+        "value": 5.54,
+        "display": "5.5",
+        "year": 2023,
+        "unit": "per 1,000 people",
+        "rank": 22
+      },
+      "MNG": {
+        "name": "Mongolia",
+        "value": 8.58,
+        "display": "8.6",
+        "year": 2023,
+        "unit": "per 1,000 people",
+        "rank": 4
+      },
+      "MNE": {
+        "name": "Montenegro",
+        "value": 3.82,
+        "display": "3.8",
+        "year": 2022,
+        "unit": "per 1,000 people",
+        "rank": 41
+      },
+      "MAR": {
+        "name": "Morocco",
+        "value": 0.73,
+        "display": "0.7",
+        "year": 2023,
+        "unit": "per 1,000 people",
+        "rank": 129
+      },
+      "MOZ": {
+        "name": "Mozambique",
+        "value": 0.74,
+        "display": "0.7",
+        "year": 2021,
+        "unit": "per 1,000 people",
+        "rank": 128
+      },
+      "MMR": {
+        "name": "Myanmar",
+        "value": 1.07,
+        "display": "1.1",
+        "year": 2020,
+        "unit": "per 1,000 people",
+        "rank": 112
+      },
+      "NPL": {
+        "name": "Nepal",
+        "value": 0.54,
+        "display": "0.5",
+        "year": 2023,
+        "unit": "per 1,000 people",
+        "rank": 134
+      },
+      "NLD": {
+        "name": "Netherlands",
+        "value": 2.42,
+        "display": "2.4",
+        "year": 2022,
+        "unit": "per 1,000 people",
+        "rank": 74
+      },
+      "NZL": {
+        "name": "New Zealand",
+        "value": 2.51,
+        "display": "2.5",
+        "year": 2023,
+        "unit": "per 1,000 people",
+        "rank": 71
+      },
+      "NIC": {
+        "name": "Nicaragua",
+        "value": 0.97,
+        "display": "1.0",
+        "year": 2022,
+        "unit": "per 1,000 people",
+        "rank": 120
+      },
+      "NER": {
+        "name": "Niger",
+        "value": 0.28,
+        "display": "0.3",
+        "year": 2020,
+        "unit": "per 1,000 people",
+        "rank": 142
+      },
+      "MKD": {
+        "name": "North Macedonia",
+        "value": 4.74,
+        "display": "4.7",
+        "year": 2021,
+        "unit": "per 1,000 people",
+        "rank": 27
+      },
+      "NOR": {
+        "name": "Norway",
+        "value": 3.3,
+        "display": "3.3",
+        "year": 2023,
+        "unit": "per 1,000 people",
+        "rank": 51
+      },
+      "OMN": {
+        "name": "Oman",
+        "value": 0.99,
+        "display": "1.0",
+        "year": 2023,
+        "unit": "per 1,000 people",
+        "rank": 118
+      },
+      "PAK": {
+        "name": "Pakistan",
+        "value": 0.63,
+        "display": "0.6",
+        "year": 2020,
+        "unit": "per 1,000 people",
+        "rank": 132
+      },
+      "PAN": {
+        "name": "Panama",
+        "value": 1.95,
+        "display": "1.9",
+        "year": 2023,
+        "unit": "per 1,000 people",
+        "rank": 87
+      },
+      "PNG": {
+        "name": "Papua New Guinea",
+        "value": 0.62,
+        "display": "0.6",
+        "year": 2023,
+        "unit": "per 1,000 people",
+        "rank": 133
+      },
+      "PRY": {
+        "name": "Paraguay",
+        "value": 1.04,
+        "display": "1.0",
+        "year": 2022,
+        "unit": "per 1,000 people",
+        "rank": 114
+      },
+      "PER": {
+        "name": "Peru",
+        "value": 1.56,
+        "display": "1.6",
+        "year": 2023,
+        "unit": "per 1,000 people",
+        "rank": 99
+      },
+      "PHL": {
+        "name": "Philippines",
+        "value": 0.97,
+        "display": "1.0",
+        "year": 2021,
+        "unit": "per 1,000 people",
+        "rank": 120
+      },
+      "POL": {
+        "name": "Poland",
+        "value": 6.04,
+        "display": "6.0",
+        "year": 2022,
+        "unit": "per 1,000 people",
+        "rank": 15
+      },
+      "PRT": {
+        "name": "Portugal",
+        "value": 3.48,
+        "display": "3.5",
+        "year": 2022,
+        "unit": "per 1,000 people",
+        "rank": 48
+      },
+      "QAT": {
+        "name": "Qatar",
+        "value": 1.25,
+        "display": "1.2",
+        "year": 2022,
+        "unit": "per 1,000 people",
+        "rank": 107
+      },
+      "ROU": {
+        "name": "Romania",
+        "value": 7.23,
+        "display": "7.2",
+        "year": 2022,
+        "unit": "per 1,000 people",
+        "rank": 7
+      },
+      "RUS": {
+        "name": "Russian Federation",
+        "value": 6.81,
+        "display": "6.8",
+        "year": 2023,
+        "unit": "per 1,000 people",
+        "rank": 8
+      },
+      "RWA": {
+        "name": "Rwanda",
+        "value": 0.75,
+        "display": "0.8",
+        "year": 2023,
+        "unit": "per 1,000 people",
+        "rank": 125
+      },
+      "STP": {
+        "name": "Sao Tome and Principe",
+        "value": 2.91,
+        "display": "2.9",
+        "year": 2019,
+        "unit": "per 1,000 people",
+        "rank": 59
+      },
+      "SAU": {
+        "name": "Saudi Arabia",
+        "value": 2.41,
+        "display": "2.4",
+        "year": 2023,
+        "unit": "per 1,000 people",
+        "rank": 76
+      },
+      "SEN": {
+        "name": "Senegal",
+        "value": 0.71,
+        "display": "0.7",
+        "year": 2019,
+        "unit": "per 1,000 people",
+        "rank": 130
+      },
+      "SRB": {
+        "name": "Serbia",
+        "value": 5.78,
+        "display": "5.8",
+        "year": 2022,
+        "unit": "per 1,000 people",
+        "rank": 16
+      },
+      "SYC": {
+        "name": "Seychelles",
+        "value": 2.63,
+        "display": "2.6",
+        "year": 2023,
+        "unit": "per 1,000 people",
+        "rank": 67
+      },
+      "SGP": {
+        "name": "Singapore",
+        "value": 2.81,
+        "display": "2.8",
+        "year": 2023,
+        "unit": "per 1,000 people",
+        "rank": 64
+      },
+      "SVK": {
+        "name": "Slovak Republic",
+        "value": 5.57,
+        "display": "5.6",
+        "year": 2023,
+        "unit": "per 1,000 people",
+        "rank": 21
+      },
+      "SVN": {
+        "name": "Slovenia",
+        "value": 4.11,
+        "display": "4.1",
+        "year": 2022,
+        "unit": "per 1,000 people",
+        "rank": 33
+      },
+      "SOM": {
+        "name": "Somalia, Fed. Rep.",
+        "value": 0.87,
+        "display": "0.9",
+        "year": 2019,
+        "unit": "per 1,000 people",
+        "rank": 123
+      },
+      "ESP": {
+        "name": "Spain",
+        "value": 2.91,
+        "display": "2.9",
+        "year": 2023,
+        "unit": "per 1,000 people",
+        "rank": 59
+      },
+      "LKA": {
+        "name": "Sri Lanka",
+        "value": 3.93,
+        "display": "3.9",
+        "year": 2023,
+        "unit": "per 1,000 people",
+        "rank": 40
+      },
+      "KNA": {
+        "name": "St. Kitts and Nevis",
+        "value": 3.98,
+        "display": "4.0",
+        "year": 2023,
+        "unit": "per 1,000 people",
+        "rank": 37
+      },
+      "LCA": {
+        "name": "St. Lucia",
+        "value": 1.09,
+        "display": "1.1",
+        "year": 2022,
+        "unit": "per 1,000 people",
+        "rank": 111
+      },
+      "VCT": {
+        "name": "St. Vincent and the Grenadines",
+        "value": 3.21,
+        "display": "3.2",
+        "year": 2022,
+        "unit": "per 1,000 people",
+        "rank": 53
+      },
+      "SDN": {
+        "name": "Sudan",
+        "value": 0.66,
+        "display": "0.7",
+        "year": 2021,
+        "unit": "per 1,000 people",
+        "rank": 131
+      },
+      "SUR": {
+        "name": "Suriname",
+        "value": 2.87,
+        "display": "2.9",
+        "year": 2022,
+        "unit": "per 1,000 people",
+        "rank": 62
+      },
+      "SWE": {
+        "name": "Sweden",
+        "value": 1.9,
+        "display": "1.9",
+        "year": 2022,
+        "unit": "per 1,000 people",
+        "rank": 89
+      },
+      "CHE": {
+        "name": "Switzerland",
+        "value": 4.38,
+        "display": "4.4",
+        "year": 2023,
+        "unit": "per 1,000 people",
+        "rank": 28
+      },
+      "SYR": {
+        "name": "Syrian Arab Republic",
+        "value": 1.43,
+        "display": "1.4",
+        "year": 2021,
+        "unit": "per 1,000 people",
+        "rank": 101
+      },
+      "TJK": {
+        "name": "Tajikistan",
+        "value": 4.04,
+        "display": "4.0",
+        "year": 2023,
+        "unit": "per 1,000 people",
+        "rank": 35
+      },
+      "TZA": {
+        "name": "Tanzania",
+        "value": 0.84,
+        "display": "0.8",
+        "year": 2022,
+        "unit": "per 1,000 people",
+        "rank": 124
+      },
+      "THA": {
+        "name": "Thailand",
+        "value": 2.39,
+        "display": "2.4",
+        "year": 2023,
+        "unit": "per 1,000 people",
+        "rank": 77
+      },
+      "TLS": {
+        "name": "Timor-Leste",
+        "value": 0.38,
+        "display": "0.4",
+        "year": 2023,
+        "unit": "per 1,000 people",
+        "rank": 139
+      },
+      "TGO": {
+        "name": "Togo",
+        "value": 0.33,
+        "display": "0.3",
+        "year": 2022,
+        "unit": "per 1,000 people",
+        "rank": 141
+      },
+      "TTO": {
+        "name": "Trinidad and Tobago",
+        "value": 2.37,
+        "display": "2.4",
+        "year": 2023,
+        "unit": "per 1,000 people",
+        "rank": 78
+      },
+      "TUN": {
+        "name": "Tunisia",
+        "value": 1.82,
+        "display": "1.8",
+        "year": 2023,
+        "unit": "per 1,000 people",
+        "rank": 93
+      },
+      "TUR": {
+        "name": "Turkiye",
+        "value": 3.05,
+        "display": "3.0",
+        "year": 2023,
+        "unit": "per 1,000 people",
+        "rank": 56
+      },
+      "TKM": {
+        "name": "Turkmenistan",
+        "value": 3.6,
+        "display": "3.6",
+        "year": 2021,
+        "unit": "per 1,000 people",
+        "rank": 45
+      },
+      "UKR": {
+        "name": "Ukraine",
+        "value": 6.14,
+        "display": "6.1",
+        "year": 2022,
+        "unit": "per 1,000 people",
+        "rank": 14
+      },
+      "ARE": {
+        "name": "United Arab Emirates",
+        "value": 1.87,
+        "display": "1.9",
+        "year": 2022,
+        "unit": "per 1,000 people",
+        "rank": 90
+      },
+      "GBR": {
+        "name": "United Kingdom",
+        "value": 2.42,
+        "display": "2.4",
+        "year": 2022,
+        "unit": "per 1,000 people",
+        "rank": 74
+      },
+      "USA": {
+        "name": "United States",
+        "value": 2.68,
+        "display": "2.7",
+        "year": 2022,
+        "unit": "per 1,000 people",
+        "rank": 66
+      },
+      "URY": {
+        "name": "Uruguay",
+        "value": 2.44,
+        "display": "2.4",
+        "year": 2023,
+        "unit": "per 1,000 people",
+        "rank": 72
+      },
+      "UZB": {
+        "name": "Uzbekistan",
+        "value": 4.89,
+        "display": "4.9",
+        "year": 2023,
+        "unit": "per 1,000 people",
+        "rank": 26
+      },
+      "VEN": {
+        "name": "Venezuela, RB",
+        "value": 0.99,
+        "display": "1.0",
+        "year": 2020,
+        "unit": "per 1,000 people",
+        "rank": 118
+      },
+      "PSE": {
+        "name": "West Bank and Gaza",
+        "value": 1.3,
+        "display": "1.3",
+        "year": 2022,
+        "unit": "per 1,000 people",
+        "rank": 106
+      },
+      "YEM": {
+        "name": "Yemen, Rep.",
+        "value": 0.46,
+        "display": "0.5",
+        "year": 2023,
+        "unit": "per 1,000 people",
+        "rank": 136
+      }
+    }
+  },
+  "review": {
+    "errors": [],
+    "claims": [
+      {
+        "surface": "title",
+        "text": "South Korea Has 12.8 Hospital Beds While Chad Has 0.1",
+        "isos": [
+          "KOR",
+          "TCD"
+        ],
+        "support": "KOR value is 12.81, display 12.8; TCD value is 0.15, display 0.1",
+        "evidence": {
+          "KOR": {
+            "name": "Korea, Rep.",
+            "value": 12.81,
+            "display": "12.8",
+            "year": 2022,
+            "unit": "per 1,000 people",
+            "rank": 1
+          },
+          "TCD": {
+            "name": "Chad",
+            "value": 0.15,
+            "display": "0.1",
+            "year": 2020,
+            "unit": "per 1,000 people",
+            "rank": 144
+          }
+        }
+      },
+      {
+        "surface": "hook",
+        "text": "GLOBAL HEALTH GAP",
+        "isos": [],
+        "support": "Global overview of hospital beds indicator",
+        "evidence": {}
+      },
+      {
+        "surface": "description",
+        "text": "South Korea leads the world with 12.8 hospital beds, while Chad sits lowest at 0.1.",
+        "isos": [
+          "KOR",
+          "TCD"
+        ],
+        "support": "KOR rank is 1 with 12.8; TCD rank is 144 with 0.1",
+        "evidence": {
+          "KOR": {
+            "name": "Korea, Rep.",
+            "value": 12.81,
+            "display": "12.8",
+            "year": 2022,
+            "unit": "per 1,000 people",
+            "rank": 1
+          },
+          "TCD": {
+            "name": "Chad",
+            "value": 0.15,
+            "display": "0.1",
+            "year": 2020,
+            "unit": "per 1,000 people",
+            "rank": 144
+          }
+        }
+      },
+      {
+        "surface": "beat_0",
+        "text": "South Korea has 12.8 hospital beds. Niger has 0.3.",
+        "isos": [
+          "KOR",
+          "NER"
+        ],
+        "support": "KOR value 12.81, NER value 0.28, display 0.3",
+        "evidence": {
+          "KOR": {
+            "name": "Korea, Rep.",
+            "value": 12.81,
+            "display": "12.8",
+            "year": 2022,
+            "unit": "per 1,000 people",
+            "rank": 1
+          },
+          "NER": {
+            "name": "Niger",
+            "value": 0.28,
+            "display": "0.3",
+            "year": 2020,
+            "unit": "per 1,000 people",
+            "rank": 142
+          }
+        }
+      },
+      {
+        "surface": "beat_1",
+        "text": "South Korea is the world's highest, counting inpatient beds in hospitals and rehabilitation centers.",
+        "isos": [
+          "KOR"
+        ],
+        "support": "KOR rank 1 and definition references inpatient beds in hospitals and rehabilitation centers",
+        "evidence": {
+          "KOR": {
+            "name": "Korea, Rep.",
+            "value": 12.81,
+            "display": "12.8",
+            "year": 2022,
+            "unit": "per 1,000 people",
+            "rank": 1
+          }
+        }
+      },
+      {
+        "surface": "beat_2",
+        "text": "Japan is right behind with 12.6, covering acute and chronic care.",
+        "isos": [
+          "JPN"
+        ],
+        "support": "JPN rank 2 with value 12.59, display 12.6, and definition covers acute and chronic care",
+        "evidence": {
+          "JPN": {
+            "name": "Japan",
+            "value": 12.59,
+            "display": "12.6",
+            "year": 2022,
+            "unit": "per 1,000 people",
+            "rank": 2
+          }
+        }
+      },
+      {
+        "surface": "beat_3",
+        "text": "USA has 2.7, sitting just above the global median of 2.4.",
+        "isos": [
+          "USA"
+        ],
+        "support": "USA value is 2.68, display 2.7; Denmark, Netherlands, UK have 2.4 median",
+        "evidence": {
+          "USA": {
+            "name": "United States",
+            "value": 2.68,
+            "display": "2.7",
+            "year": 2022,
+            "unit": "per 1,000 people",
+            "rank": 66
+          }
+        }
+      },
+      {
+        "surface": "beat_4",
+        "text": "Germany has 7.5, while India has 1.6.",
+        "isos": [
+          "DEU",
+          "IND"
+        ],
+        "support": "DEU value is 7.55, display 7.5; IND value is 1.59, display 1.6",
+        "evidence": {
+          "DEU": {
+            "name": "Germany",
+            "value": 7.55,
+            "display": "7.5",
+            "year": 2023,
+            "unit": "per 1,000 people",
+            "rank": 6
+          },
+          "IND": {
+            "name": "India",
+            "value": 1.59,
+            "display": "1.6",
+            "year": 2021,
+            "unit": "per 1,000 people",
+            "rank": 97
+          }
+        }
+      },
+      {
+        "surface": "beat_5",
+        "text": "Burkina Faso has 0.2.",
+        "isos": [
+          "BFA"
+        ],
+        "support": "BFA value is 0.2",
+        "evidence": {
+          "BFA": {
+            "name": "Burkina Faso",
+            "value": 0.2,
+            "display": "0.2",
+            "year": 2020,
+            "unit": "per 1,000 people",
+            "rank": 143
+          }
+        }
+      },
+      {
+        "surface": "beat_6",
+        "text": "Chad has the world's lowest with 0.1.",
+        "isos": [
+          "TCD"
+        ],
+        "support": "TCD rank is 144 with value 0.15, display 0.1",
+        "evidence": {
+          "TCD": {
+            "name": "Chad",
+            "value": 0.15,
+            "display": "0.1",
+            "year": 2020,
+            "unit": "per 1,000 people",
+            "rank": 144
+          }
+        }
+      },
+      {
+        "surface": "beat_7",
+        "text": "Where does your country land?",
+        "isos": [],
+        "support": "Call to action prompt",
+        "evidence": {}
+      },
+      {
+        "surface": "card_7",
+        "text": "Where does yours stand? Hospital beds per 1,000 people",
+        "isos": [],
+        "support": "Card matching indicator unit and prompt",
+        "evidence": {}
+      },
+      {
+        "surface": "title",
+        "text": "South Korea Has 12.8 Hospital Beds While Chad Has 0.1",
+        "isos": [
+          "KOR",
+          "TCD"
+        ],
+        "support": "South Korea is 12.8 and Chad is 0.1 in the dataset",
+        "method": "complete-surface-check",
+        "evidence": {
+          "KOR": {
+            "name": "Korea, Rep.",
+            "value": 12.81,
+            "display": "12.8",
+            "year": 2022,
+            "unit": "per 1,000 people",
+            "rank": 1
+          },
+          "TCD": {
+            "name": "Chad",
+            "value": 0.15,
+            "display": "0.1",
+            "year": 2020,
+            "unit": "per 1,000 people",
+            "rank": 144
+          }
+        }
+      },
+      {
+        "surface": "hook",
+        "text": "GLOBAL HEALTH GAP",
+        "isos": [],
+        "support": "Title and theme appropriately summarize indicator data",
+        "method": "complete-surface-check",
+        "evidence": {}
+      },
+      {
+        "surface": "description",
+        "text": "South Korea leads the world with 12.8 hospital beds, while Chad sits lowest at 0.1.",
+        "isos": [
+          "KOR",
+          "TCD"
+        ],
+        "support": "South Korea leads with 12.8 and Chad is lowest with 0.1",
+        "method": "complete-surface-check",
+        "evidence": {
+          "KOR": {
+            "name": "Korea, Rep.",
+            "value": 12.81,
+            "display": "12.8",
+            "year": 2022,
+            "unit": "per 1,000 people",
+            "rank": 1
+          },
+          "TCD": {
+            "name": "Chad",
+            "value": 0.15,
+            "display": "0.1",
+            "year": 2020,
+            "unit": "per 1,000 people",
+            "rank": 144
+          }
+        }
+      },
+      {
+        "surface": "beat_0",
+        "text": "South Korea has 12.8 hospital beds. Niger has 0.3.",
+        "isos": [
+          "KOR",
+          "NER"
+        ],
+        "support": "South Korea has 12.8 and Niger has 0.3",
+        "method": "complete-surface-check",
+        "evidence": {
+          "KOR": {
+            "name": "Korea, Rep.",
+            "value": 12.81,
+            "display": "12.8",
+            "year": 2022,
+            "unit": "per 1,000 people",
+            "rank": 1
+          },
+          "NER": {
+            "name": "Niger",
+            "value": 0.28,
+            "display": "0.3",
+            "year": 2020,
+            "unit": "per 1,000 people",
+            "rank": 142
+          }
+        }
+      },
+      {
+        "surface": "beat_1",
+        "text": "South Korea is the world's highest, counting inpatient beds in hospitals and rehabilitation centers.",
+        "isos": [
+          "KOR"
+        ],
+        "support": "South Korea is rank 1, definition mentions hospitals and rehabilitation centers",
+        "method": "complete-surface-check",
+        "evidence": {
+          "KOR": {
+            "name": "Korea, Rep.",
+            "value": 12.81,
+            "display": "12.8",
+            "year": 2022,
+            "unit": "per 1,000 people",
+            "rank": 1
+          }
+        }
+      },
+      {
+        "surface": "beat_2",
+        "text": "Japan is right behind with 12.6, covering acute and chronic care.",
+        "isos": [
+          "JPN"
+        ],
+        "support": "Japan is rank 2 with 12.6, definition mentions acute and chronic care",
+        "method": "complete-surface-check",
+        "evidence": {
+          "JPN": {
+            "name": "Japan",
+            "value": 12.59,
+            "display": "12.6",
+            "year": 2022,
+            "unit": "per 1,000 people",
+            "rank": 2
+          }
+        }
+      },
+      {
+        "surface": "beat_3",
+        "text": "USA has 2.7, sitting just above the global median of 2.4.",
+        "isos": [
+          "USA"
+        ],
+        "support": "USA has 2.7, median is 2.4",
+        "method": "complete-surface-check",
+        "evidence": {
+          "USA": {
+            "name": "United States",
+            "value": 2.68,
+            "display": "2.7",
+            "year": 2022,
+            "unit": "per 1,000 people",
+            "rank": 66
+          }
+        }
+      },
+      {
+        "surface": "beat_4",
+        "text": "Germany has 7.5, while India has 1.6.",
+        "isos": [
+          "DEU",
+          "IND"
+        ],
+        "support": "Germany has 7.5 and India has 1.6",
+        "method": "complete-surface-check",
+        "evidence": {
+          "DEU": {
+            "name": "Germany",
+            "value": 7.55,
+            "display": "7.5",
+            "year": 2023,
+            "unit": "per 1,000 people",
+            "rank": 6
+          },
+          "IND": {
+            "name": "India",
+            "value": 1.59,
+            "display": "1.6",
+            "year": 2021,
+            "unit": "per 1,000 people",
+            "rank": 97
+          }
+        }
+      },
+      {
+        "surface": "beat_5",
+        "text": "Burkina Faso has 0.2.",
+        "isos": [
+          "BFA"
+        ],
+        "support": "Burkina Faso has 0.2",
+        "method": "complete-surface-check",
+        "evidence": {
+          "BFA": {
+            "name": "Burkina Faso",
+            "value": 0.2,
+            "display": "0.2",
+            "year": 2020,
+            "unit": "per 1,000 people",
+            "rank": 143
+          }
+        }
+      },
+      {
+        "surface": "beat_6",
+        "text": "Chad has the world's lowest with 0.1.",
+        "isos": [
+          "TCD"
+        ],
+        "support": "Chad is rank 144 with 0.1",
+        "method": "complete-surface-check",
+        "evidence": {
+          "TCD": {
+            "name": "Chad",
+            "value": 0.15,
+            "display": "0.1",
+            "year": 2020,
+            "unit": "per 1,000 people",
+            "rank": 144
+          }
+        }
+      },
+      {
+        "surface": "beat_7",
+        "text": "Where does your country land?",
+        "isos": [],
+        "support": "Prompt matches card and format",
+        "method": "complete-surface-check",
+        "evidence": {}
+      },
+      {
+        "surface": "card_7",
+        "text": [
+          "Where does yours stand?",
+          "Hospital beds per 1,000 people"
+        ],
+        "isos": [],
+        "support": "Matches indicator title and unit",
+        "method": "complete-surface-check",
+        "evidence": {}
+      }
+    ],
+    "surface_checks": {
+      "title": {
+        "supported": true,
+        "reason": "South Korea is 12.8 and Chad is 0.1 in the dataset",
+        "isos": [
+          "KOR",
+          "TCD"
+        ]
+      },
+      "hook": {
+        "supported": true,
+        "reason": "Title and theme appropriately summarize indicator data",
+        "isos": []
+      },
+      "description": {
+        "supported": true,
+        "reason": "South Korea leads with 12.8 and Chad is lowest with 0.1",
+        "isos": [
+          "KOR",
+          "TCD"
+        ]
+      },
+      "beat_0": {
+        "supported": true,
+        "reason": "South Korea has 12.8 and Niger has 0.3",
+        "isos": [
+          "KOR",
+          "NER"
+        ]
+      },
+      "beat_1": {
+        "supported": true,
+        "reason": "South Korea is rank 1, definition mentions hospitals and rehabilitation centers",
+        "isos": [
+          "KOR"
+        ]
+      },
+      "beat_2": {
+        "supported": true,
+        "reason": "Japan is rank 2 with 12.6, definition mentions acute and chronic care",
+        "isos": [
+          "JPN"
+        ]
+      },
+      "beat_3": {
+        "supported": true,
+        "reason": "USA has 2.7, median is 2.4",
+        "isos": [
+          "USA"
+        ]
+      },
+      "beat_4": {
+        "supported": true,
+        "reason": "Germany has 7.5 and India has 1.6",
+        "isos": [
+          "DEU",
+          "IND"
+        ]
+      },
+      "beat_5": {
+        "supported": true,
+        "reason": "Burkina Faso has 0.2",
+        "isos": [
+          "BFA"
+        ]
+      },
+      "beat_6": {
+        "supported": true,
+        "reason": "Chad is rank 144 with 0.1",
+        "isos": [
+          "TCD"
+        ]
+      },
+      "beat_7": {
+        "supported": true,
+        "reason": "Prompt matches card and format",
+        "isos": []
+      },
+      "card_7": {
+        "supported": true,
+        "reason": "Matches indicator title and unit",
+        "isos": []
+      }
+    },
+    "warnings": []
+  },
+  "script_sha256": "ae3b3854c65179e14ca4875de583d105633a691f0f1b5780748575d8e4f9db09",
+  "data_sha256": "72c7ab7337e3cb039262e6cf1017319c7ec4437df73bf685ebfd56c37de6258d",
+  "reviewer_model": "gemini-3.5-flash-lite"
+}

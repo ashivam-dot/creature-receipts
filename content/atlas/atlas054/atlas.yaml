@@ -1,0 +1,57 @@
+id: atlas054
+title: Household Goods Cost 130 in Iceland but 100 in USA
+format: rank_ladder
+hook_text: GLOBAL PRICE GAP
+description: Comparing household price levels worldwide against the United States baseline of 100.
+hashtags:
+- '#maps'
+- '#geography'
+- '#economics'
+sources:
+- https://data.worldbank.org/indicator/PA.NUS.PRVT.PLI
+dataset:
+  kind: worldbank
+  indicator: PA.NUS.PRVT.PLI
+  label: Price level index (US = 100)
+  source: World Bank
+  min_year: 2019
+scale:
+  kind: threshold
+  at: 50.0
+  labels:
+  - Above 50
+  - 50 and below
+value_format: '{v:.0f}'
+beats:
+- text: Household goods cost 100 in USA, but in India they cost just 23.
+  shot:
+    callouts:
+    - USA
+    - IND
+- text: Egypt is the world's lowest at 16, where US dollars buy the most.
+  shot:
+    kind: country
+    iso: EGY
+- text: Near the top, Denmark sits at 105, Switzerland at 128, and Iceland at 130.
+  shot:
+    kind: rank
+    isos:
+    - DNK
+    - CHE
+    - ISL
+- text: China sits near the global median at 48, with prices well below America.
+  shot:
+    kind: country
+    iso: CHN
+- text: Between the extremes, Iceland has 130 while Egypt has just 16.
+  shot:
+    kind: group
+    isos:
+    - ISL
+    - EGY
+- text: Where does your country land?
+  shot:
+    kind: card
+    lines:
+    - Where do you land?
+    - Price level index (US = 100)

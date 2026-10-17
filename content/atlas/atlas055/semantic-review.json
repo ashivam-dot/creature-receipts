@@ -1,0 +1,183 @@
+{
+  "errors": [],
+  "claims": [
+    {
+      "surface": "title",
+      "text": "South Korea Has 12.8 Hospital Beds While Chad Has 0.1",
+      "isos": [
+        "KOR",
+        "TCD"
+      ],
+      "support": "KOR value is 12.81, display 12.8; TCD value is 0.15, display 0.1"
+    },
+    {
+      "surface": "hook",
+      "text": "GLOBAL HEALTH GAP",
+      "isos": [],
+      "support": "Global overview of hospital beds indicator"
+    },
+    {
+      "surface": "description",
+      "text": "South Korea leads the world with 12.8 hospital beds, while Chad sits lowest at 0.1.",
+      "isos": [
+        "KOR",
+        "TCD"
+      ],
+      "support": "KOR rank is 1 with 12.8; TCD rank is 144 with 0.1"
+    },
+    {
+      "surface": "beat_0",
+      "text": "South Korea has 12.8 hospital beds. Niger has 0.3.",
+      "isos": [
+        "KOR",
+        "NER"
+      ],
+      "support": "KOR value 12.81, NER value 0.28, display 0.3"
+    },
+    {
+      "surface": "beat_1",
+      "text": "South Korea is the world's highest, counting inpatient beds in hospitals and rehabilitation centers.",
+      "isos": [
+        "KOR"
+      ],
+      "support": "KOR rank 1 and definition references inpatient beds in hospitals and rehabilitation centers"
+    },
+    {
+      "surface": "beat_2",
+      "text": "Japan is right behind with 12.6, covering acute and chronic care.",
+      "isos": [
+        "JPN"
+      ],
+      "support": "JPN rank 2 with value 12.59, display 12.6, and definition covers acute and chronic care"
+    },
+    {
+      "surface": "beat_3",
+      "text": "USA has 2.7, sitting just above the global median of 2.4.",
+      "isos": [
+        "USA"
+      ],
+      "support": "USA value is 2.68, display 2.7; Denmark, Netherlands, UK have 2.4 median"
+    },
+    {
+      "surface": "beat_4",
+      "text": "Germany has 7.5, while India has 1.6.",
+      "isos": [
+        "DEU",
+        "IND"
+      ],
+      "support": "DEU value is 7.55, display 7.5; IND value is 1.59, display 1.6"
+    },
+    {
+      "surface": "beat_5",
+      "text": "Burkina Faso has 0.2.",
+      "isos": [
+        "BFA"
+      ],
+      "support": "BFA value is 0.2"
+    },
+    {
+      "surface": "beat_6",
+      "text": "Chad has the world's lowest with 0.1.",
+      "isos": [
+        "TCD"
+      ],
+      "support": "TCD rank is 144 with value 0.15, display 0.1"
+    },
+    {
+      "surface": "beat_7",
+      "text": "Where does your country land?",
+      "isos": [],
+      "support": "Call to action prompt"
+    },
+    {
+      "surface": "card_7",
+      "text": "Where does yours stand? Hospital beds per 1,000 people",
+      "isos": [],
+      "support": "Card matching indicator unit and prompt"
+    }
+  ],
+  "surface_checks": {
+    "title": {
+      "supported": true,
+      "reason": "South Korea is 12.8 and Chad is 0.1 in the dataset",
+      "isos": [
+        "KOR",
+        "TCD"
+      ]
+    },
+    "hook": {
+      "supported": true,
+      "reason": "Title and theme appropriately summarize indicator data",
+      "isos": []
+    },
+    "description": {
+      "supported": true,
+      "reason": "South Korea leads with 12.8 and Chad is lowest with 0.1",
+      "isos": [
+        "KOR",
+        "TCD"
+      ]
+    },
+    "beat_0": {
+      "supported": true,
+      "reason": "South Korea has 12.8 and Niger has 0.3",
+      "isos": [
+        "KOR",
+        "NER"
+      ]
+    },
+    "beat_1": {
+      "supported": true,
+      "reason": "South Korea is rank 1, definition mentions hospitals and rehabilitation centers",
+      "isos": [
+        "KOR"
+      ]
+    },
+    "beat_2": {
+      "supported": true,
+      "reason": "Japan is rank 2 with 12.6, definition mentions acute and chronic care",
+      "isos": [
+        "JPN"
+      ]
+    },
+    "beat_3": {
+      "supported": true,
+      "reason": "USA has 2.7, median is 2.4",
+      "isos": [
+        "USA"
+      ]
+    },
+    "beat_4": {
+      "supported": true,
+      "reason": "Germany has 7.5 and India has 1.6",
+      "isos": [
+        "DEU",
+        "IND"
+      ]
+    },
+    "beat_5": {
+      "supported": true,
+      "reason": "Burkina Faso has 0.2",
+      "isos": [
+        "BFA"
+      ]
+    },
+    "beat_6": {
+      "supported": true,
+      "reason": "Chad is rank 144 with 0.1",
+      "isos": [
+        "TCD"
+      ]
+    },
+    "beat_7": {
+      "supported": true,
+      "reason": "Prompt matches card and format",
+      "isos": []
+    },
+    "card_7": {
+      "supported": true,
+      "reason": "Matches indicator title and unit",
+      "isos": []
+    }
+  }
+}

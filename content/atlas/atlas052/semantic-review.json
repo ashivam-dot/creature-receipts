@@ -1,0 +1,160 @@
+{
+  "errors": [],
+  "claims": [
+    {
+      "surface": "title",
+      "text": "Clean Cooking Access: From 100% Down to 0%",
+      "isos": [],
+      "support": "Data shows values ranging from 100% (e.g., Algeria) to 0% (e.g., South Sudan) for indicator EG.CFT.ACCS.ZS in 2024."
+    },
+    {
+      "surface": "hook",
+      "text": "THE CLEAN FUEL GAP",
+      "isos": [],
+      "support": "Overview title representing clean cooking access differences."
+    },
+    {
+      "surface": "description",
+      "text": "Global access to clean cooking fuels ranges from 100% down to 0%, with a median of 93%. Data from World Bank, 2024.",
+      "isos": [],
+      "support": "Source Tracking SDG 7 / World Bank (2024), indicator EG.CFT.ACCS.ZS."
+    },
+    {
+      "surface": "beat_0",
+      "text": "Algeria has 100% clean cooking access, the world's highest. South Sudan has 0%.",
+      "isos": [
+        "DZA",
+        "SSD"
+      ],
+      "support": "Algeria value is 100.0 (rank 1), South Sudan value is 0.0 (rank 187)."
+    },
+    {
+      "surface": "beat_1",
+      "text": "India has 81%. Under WHO guidelines, kerosene is excluded from clean cooking fuels.",
+      "isos": [
+        "IND"
+      ],
+      "support": "India value is 81.0, definition notes: 'Under WHO guidelines, kerosene is excluded from clean cooking fuels.'"
+    },
+    {
+      "surface": "beat_2",
+      "text": "USA has 100%. Across the Atlantic, Nigeria has 28%.",
+      "isos": [
+        "USA",
+        "NGA"
+      ],
+      "support": "United States value is 100.0, Nigeria value is 28.0."
+    },
+    {
+      "surface": "beat_3",
+      "text": "China has 90%, close to the global median of 93%.",
+      "isos": [
+        "CHN"
+      ],
+      "support": "China value is 90.0, median of the data is 93.0."
+    },
+    {
+      "surface": "beat_4",
+      "text": "At the very bottom, Mali has 2%, Liberia has 1%, and Burundi has 0%.",
+      "isos": [
+        "MLI",
+        "LBR",
+        "BDI"
+      ],
+      "support": "Mali value is 2.0, Liberia value is 1.0, Burundi value is 0.0."
+    },
+    {
+      "surface": "beat_5",
+      "text": "Brazil has 98%, where nearly everyone cooks with clean fuels.",
+      "isos": [
+        "BRA"
+      ],
+      "support": "Brazil value is 98.0."
+    },
+    {
+      "surface": "beat_6",
+      "text": "Where does your country land?",
+      "isos": [],
+      "support": "Closing rhetorical question matching visual plan card."
+    },
+    {
+      "surface": "card_6",
+      "text": "Where are you?, Clean Cooking Access (2024)",
+      "isos": [],
+      "support": "Visual card text summarizing topic and year."
+    }
+  ],
+  "surface_checks": {
+    "title": {
+      "supported": true,
+      "reason": "Matches min and max values in the dataset.",
+      "isos": []
+    },
+    "hook": {
+      "supported": true,
+      "reason": "Stylistic hook introducing clean cooking gap.",
+      "isos": []
+    },
+    "description": {
+      "supported": true,
+      "reason": "Accurately cites range and year from World Bank indicator EG.CFT.ACCS.ZS.",
+      "isos": []
+    },
+    "beat_0": {
+      "supported": true,
+      "reason": "Algeria is 100% (rank 1), South Sudan is 0% (rank 187).",
+      "isos": [
+        "DZA",
+        "SSD"
+      ]
+    },
+    "beat_1": {
+      "supported": true,
+      "reason": "India is 81% and definition directly matches kerosene exclusion statement.",
+      "isos": [
+        "IND"
+      ]
+    },
+    "beat_2": {
+      "supported": true,
+      "reason": "USA is 100%, Nigeria is 28%.",
+      "isos": [
+        "USA",
+        "NGA"
+      ]
+    },
+    "beat_3": {
+      "supported": true,
+      "reason": "China is 90%.",
+      "isos": [
+        "CHN"
+      ]
+    },
+    "beat_4": {
+      "supported": true,
+      "reason": "Mali is 2%, Liberia is 1%, Burundi is 0%.",
+      "isos": [
+        "MLI",
+        "LBR",
+        "BDI"
+      ]
+    },
+    "beat_5": {
+      "supported": true,
+      "reason": "Brazil is 98%.",
+      "isos": [
+        "BRA"
+      ]
+    },
+    "beat_6": {
+      "supported": true,
+      "reason": "Matches card_6 and visual plan.",
+      "isos": []
+    },
+    "card_6": {
+      "supported": true,
+      "reason": "Accurately reflects indicator title and year 2024.",
+      "isos": []
+    }
+  }
+}

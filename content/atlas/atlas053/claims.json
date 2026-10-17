@@ -1,0 +1,1690 @@
+{
+  "version": 1,
+  "evidence": {
+    "version": 1,
+    "indicator": "SE.TER.ENRR",
+    "definition": "Gross enrollment ratio is the ratio of total enrollment, regardless of age, to the population of the age group that officially corresponds to the level of education shown. Tertiary education, whether or not to an advanced research qualification, normally requires, as a minimum condition of admission, the successful completion of education at the secondary level.",
+    "source": "https://data.worldbank.org/indicator/SE.TER.ENRR",
+    "source_response_sha256": "86bd15602091052affc871ce4b08d21f0b60596d26096fa4b129eeb13985c1ea",
+    "source_organization": "Data API, UN Educational, Scientific and Cultural Organization (UNESCO), uri: https://databrowser.uis.unesco.org/resources, note: The data are obtained through the UIS API.  Detailed documentation is available at: https://api.uis.unesco.org/api/public/documentation/, publisher: UNESCO Institute for Statistics (UIS), type: Bulk file (csv), date accessed: 2026-03-19, date published: 2026-02",
+    "year_label": "latest available 2019–2025",
+    "universe": "mapped countries and territories with data",
+    "count": 152,
+    "threshold": null,
+    "at_or_above": null,
+    "entities": {
+      "AFG": {
+        "name": "Afghanistan",
+        "value": 10.85435962677,
+        "display": "10.9%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 135
+      },
+      "ALB": {
+        "name": "Albania",
+        "value": 84.1496200561523,
+        "display": "84.1%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 17
+      },
+      "DZA": {
+        "name": "Algeria",
+        "value": 54.4283410150344,
+        "display": "54.4%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 70
+      },
+      "AND": {
+        "name": "Andorra",
+        "value": 67.6767676767677,
+        "display": "67.7%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 51
+      },
+      "AGO": {
+        "name": "Angola",
+        "value": 9.9549065722902,
+        "display": "10.0%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 140
+      },
+      "ARG": {
+        "name": "Argentina",
+        "value": 107.822574129434,
+        "display": "107.8%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 8
+      },
+      "ARM": {
+        "name": "Armenia",
+        "value": 52.7748065090859,
+        "display": "52.8%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 75
+      },
+      "ABW": {
+        "name": "Aruba",
+        "value": 14.0655418559377,
+        "display": "14.1%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 130
+      },
+      "AUS": {
+        "name": "Australia",
+        "value": 108.421989440918,
+        "display": "108.4%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 7
+      },
+      "AUT": {
+        "name": "Austria",
+        "value": 92.6126708984375,
+        "display": "92.6%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 13
+      },
+      "AZE": {
+        "name": "Azerbaijan",
+        "value": 41.3413783372226,
+        "display": "41.3%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 92
+      },
+      "BHR": {
+        "name": "Bahrain",
+        "value": 58.3677241853667,
+        "display": "58.4%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 61
+      },
+      "BGD": {
+        "name": "Bangladesh",
+        "value": 23.7295608009814,
+        "display": "23.7%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 112
+      },
+      "BRB": {
+        "name": "Barbados",
+        "value": 50.801079116886,
+        "display": "50.8%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 77
+      },
+      "BLR": {
+        "name": "Belarus",
+        "value": 70.1107509145358,
+        "display": "70.1%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 46
+      },
+      "BEL": {
+        "name": "Belgium",
+        "value": 82.1475601196289,
+        "display": "82.1%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 21
+      },
+      "BLZ": {
+        "name": "Belize",
+        "value": 24.8098643151325,
+        "display": "24.8%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 110
+      },
+      "BEN": {
+        "name": "Benin",
+        "value": 10.2350101470947,
+        "display": "10.2%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 138
+      },
+      "BMU": {
+        "name": "Bermuda",
+        "value": 17.3357105255127,
+        "display": "17.3%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 122
+      },
+      "BTN": {
+        "name": "Bhutan",
+        "value": 13.011259392916,
+        "display": "13.0%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 132
+      },
+      "BIH": {
+        "name": "Bosnia and Herzegovina",
+        "value": 45.5027618408203,
+        "display": "45.5%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 84
+      },
+      "BWA": {
+        "name": "Botswana",
+        "value": 21.4087908549348,
+        "display": "21.4%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 117
+      },
+      "BRA": {
+        "name": "Brazil",
+        "value": 69.7317733764648,
+        "display": "69.7%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 47
+      },
+      "VGB": {
+        "name": "British Virgin Islands",
+        "value": 29.5605306799337,
+        "display": "29.6%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 105
+      },
+      "BRN": {
+        "name": "Brunei Darussalam",
+        "value": 36.4182725443167,
+        "display": "36.4%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 98
+      },
+      "BGR": {
+        "name": "Bulgaria",
+        "value": 69.5460433959961,
+        "display": "69.5%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 48
+      },
+      "BFA": {
+        "name": "Burkina Faso",
+        "value": 10.0419678526515,
+        "display": "10.0%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 139
+      },
+      "BDI": {
+        "name": "Burundi",
+        "value": 6.38454008102417,
+        "display": "6.4%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 143
+      },
+      "KHM": {
+        "name": "Cambodia",
+        "value": 21.4437426836662,
+        "display": "21.4%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 116
+      },
+      "CMR": {
+        "name": "Cameroon",
+        "value": 16.6614294830602,
+        "display": "16.7%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 123
+      },
+      "CAN": {
+        "name": "Canada",
+        "value": 76.2666931152344,
+        "display": "76.3%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 37
+      },
+      "TCD": {
+        "name": "Chad",
+        "value": 4.39665967267065,
+        "display": "4.4%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 148
+      },
+      "CHL": {
+        "name": "Chile",
+        "value": 110.176902770996,
+        "display": "110.2%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 6
+      },
+      "CHN": {
+        "name": "China",
+        "value": 76.8757843123403,
+        "display": "76.9%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 34
+      },
+      "COL": {
+        "name": "Colombia",
+        "value": 59.2901382446289,
+        "display": "59.3%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 59
+      },
+      "COD": {
+        "name": "Congo, Dem. Rep.",
+        "value": 6.37987995147705,
+        "display": "6.4%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 144
+      },
+      "COG": {
+        "name": "Congo, Rep.",
+        "value": 10.3812103271484,
+        "display": "10.4%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 137
+      },
+      "CRI": {
+        "name": "Costa Rica",
+        "value": 55.0202903747559,
+        "display": "55.0%",
+        "year": 2019,
+        "unit": "%",
+        "rank": 67
+      },
+      "CIV": {
+        "name": "Cote d'Ivoire",
+        "value": 12.3354902267456,
+        "display": "12.3%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 133
+      },
+      "HRV": {
+        "name": "Croatia",
+        "value": 81.1775207519531,
+        "display": "81.2%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 22
+      },
+      "CUB": {
+        "name": "Cuba",
+        "value": 43.1040700506779,
+        "display": "43.1%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 87
+      },
+      "CYP": {
+        "name": "Cyprus",
+        "value": 120.87727355957,
+        "display": "120.9%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 2
+      },
+      "CZE": {
+        "name": "Czechia",
+        "value": 66.7282867431641,
+        "display": "66.7%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 52
+      },
+      "DNK": {
+        "name": "Denmark",
+        "value": 78.9604110717773,
+        "display": "79.0%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 29
+      },
+      "DOM": {
+        "name": "Dominican Republic",
+        "value": 57.6509476207267,
+        "display": "57.7%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 62
+      },
+      "ECU": {
+        "name": "Ecuador",
+        "value": 67.8851161961618,
+        "display": "67.9%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 50
+      },
+      "EGY": {
+        "name": "Egypt, Arab Rep.",
+        "value": 38.0398346509947,
+        "display": "38.0%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 95
+      },
+      "SLV": {
+        "name": "El Salvador",
+        "value": 32.8347079463918,
+        "display": "32.8%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 102
+      },
+      "EST": {
+        "name": "Estonia",
+        "value": 65.6692276000977,
+        "display": "65.7%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 53
+      },
+      "FJI": {
+        "name": "Fiji",
+        "value": 75.0089752283697,
+        "display": "75.0%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 40
+      },
+      "FIN": {
+        "name": "Finland",
+        "value": 110.304496765137,
+        "display": "110.3%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 5
+      },
+      "FRA": {
+        "name": "France",
+        "value": 71.5346908569336,
+        "display": "71.5%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 44
+      },
+      "GMB": {
+        "name": "Gambia, The",
+        "value": 13.4765901565552,
+        "display": "13.5%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 131
+      },
+      "GEO": {
+        "name": "Georgia",
+        "value": 89.4861221313477,
+        "display": "89.5%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 14
+      },
+      "DEU": {
+        "name": "Germany",
+        "value": 76.7096862792969,
+        "display": "76.7%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 35
+      },
+      "GHA": {
+        "name": "Ghana",
+        "value": 21.330810546875,
+        "display": "21.3%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 118
+      },
+      "GRC": {
+        "name": "Greece",
+        "value": 165.113418579102,
+        "display": "165.1%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 1
+      },
+      "GTM": {
+        "name": "Guatemala",
+        "value": 27.2948879201171,
+        "display": "27.3%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 106
+      },
+      "GUY": {
+        "name": "Guyana",
+        "value": 26.4315792489043,
+        "display": "26.4%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 107
+      },
+      "HND": {
+        "name": "Honduras",
+        "value": 23.3177890777588,
+        "display": "23.3%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 114
+      },
+      "HKG": {
+        "name": "Hong Kong SAR, China",
+        "value": 120.08978583196,
+        "display": "120.1%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 3
+      },
+      "HUN": {
+        "name": "Hungary",
+        "value": 60.5168685913086,
+        "display": "60.5%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 56
+      },
+      "ISL": {
+        "name": "Iceland",
+        "value": 76.5200729370117,
+        "display": "76.5%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 36
+      },
+      "IND": {
+        "name": "India",
+        "value": 34.4465039692543,
+        "display": "34.4%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 101
+      },
+      "IDN": {
+        "name": "Indonesia",
+        "value": 44.8813034886441,
+        "display": "44.9%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 85
+      },
+      "IRN": {
+        "name": "Iran, Islamic Rep.",
+        "value": 58.6838607788086,
+        "display": "58.7%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 60
+      },
+      "IRL": {
+        "name": "Ireland",
+        "value": 77.5933380126953,
+        "display": "77.6%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 32
+      },
+      "ISR": {
+        "name": "Israel",
+        "value": 56.2561111450195,
+        "display": "56.3%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 64
+      },
+      "ITA": {
+        "name": "Italy",
+        "value": 75.9496536254883,
+        "display": "75.9%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 38
+      },
+      "JPN": {
+        "name": "Japan",
+        "value": 64.4907608032227,
+        "display": "64.5%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 54
+      },
+      "JOR": {
+        "name": "Jordan",
+        "value": 35.9184001120427,
+        "display": "35.9%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 99
+      },
+      "KAZ": {
+        "name": "Kazakhstan",
+        "value": 52.8612860406142,
+        "display": "52.9%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 74
+      },
+      "KEN": {
+        "name": "Kenya",
+        "value": 10.4185962462804,
+        "display": "10.4%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 136
+      },
+      "KIR": {
+        "name": "Kiribati",
+        "value": 4.96087980270386,
+        "display": "5.0%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 147
+      },
+      "KOR": {
+        "name": "Korea, Rep.",
+        "value": 111.853302001953,
+        "display": "111.9%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 4
+      },
+      "KWT": {
+        "name": "Kuwait",
+        "value": 51.8967176944636,
+        "display": "51.9%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 76
+      },
+      "KGZ": {
+        "name": "Kyrgyz Republic",
+        "value": 53.8761747562613,
+        "display": "53.9%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 72
+      },
+      "LAO": {
+        "name": "Lao PDR",
+        "value": 14.8841695785522,
+        "display": "14.9%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 128
+      },
+      "LVA": {
+        "name": "Latvia",
+        "value": 82.917350769043,
+        "display": "82.9%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 20
+      },
+      "LBN": {
+        "name": "Lebanon",
+        "value": 54.4012561547071,
+        "display": "54.4%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 71
+      },
+      "LIE": {
+        "name": "Liechtenstein",
+        "value": 46.0189590454102,
+        "display": "46.0%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 82
+      },
+      "LTU": {
+        "name": "Lithuania",
+        "value": 75.6177368164062,
+        "display": "75.6%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 39
+      },
+      "LUX": {
+        "name": "Luxembourg",
+        "value": 22.4103698730469,
+        "display": "22.4%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 115
+      },
+      "MDG": {
+        "name": "Madagascar",
+        "value": 6.1466638463036,
+        "display": "6.1%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 145
+      },
+      "MWI": {
+        "name": "Malawi",
+        "value": 2.70813684546823,
+        "display": "2.7%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 151
+      },
+      "MYS": {
+        "name": "Malaysia",
+        "value": 38.5013945445142,
+        "display": "38.5%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 93
+      },
+      "MLT": {
+        "name": "Malta",
+        "value": 80.5250091552734,
+        "display": "80.5%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 24
+      },
+      "MHL": {
+        "name": "Marshall Islands",
+        "value": 37.6853055916775,
+        "display": "37.7%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 96
+      },
+      "MRT": {
+        "name": "Mauritania",
+        "value": 5.97194330025359,
+        "display": "6.0%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 146
+      },
+      "MUS": {
+        "name": "Mauritius",
+        "value": 45.7771156388358,
+        "display": "45.8%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 83
+      },
+      "MEX": {
+        "name": "Mexico",
+        "value": 48.203441619873,
+        "display": "48.2%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 79
+      },
+      "MDA": {
+        "name": "Moldova",
+        "value": 74.7109378669046,
+        "display": "74.7%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 41
+      },
+      "MNG": {
+        "name": "Mongolia",
+        "value": 69.044059753418,
+        "display": "69.0%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 49
+      },
+      "MNE": {
+        "name": "Montenegro",
+        "value": 55.1743011474609,
+        "display": "55.2%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 65
+      },
+      "MAR": {
+        "name": "Morocco",
+        "value": 48.1839617510572,
+        "display": "48.2%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 80
+      },
+      "NAM": {
+        "name": "Namibia",
+        "value": 26.1092654658031,
+        "display": "26.1%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 108
+      },
+      "NPL": {
+        "name": "Nepal",
+        "value": 21.2915596292014,
+        "display": "21.3%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 119
+      },
+      "NLD": {
+        "name": "Netherlands",
+        "value": 86.5938262939453,
+        "display": "86.6%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 16
+      },
+      "NZL": {
+        "name": "New Zealand",
+        "value": 77.2406463623047,
+        "display": "77.2%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 33
+      },
+      "NIC": {
+        "name": "Nicaragua",
+        "value": 30.3635101318359,
+        "display": "30.4%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 104
+      },
+      "NER": {
+        "name": "Niger",
+        "value": 4.15170730347346,
+        "display": "4.2%",
+        "year": 2019,
+        "unit": "%",
+        "rank": 149
+      },
+      "MKD": {
+        "name": "North Macedonia",
+        "value": 55.0082015991211,
+        "display": "55.0%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 68
+      },
+      "NOR": {
+        "name": "Norway",
+        "value": 95.4987564086914,
+        "display": "95.5%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 11
+      },
+      "OMN": {
+        "name": "Oman",
+        "value": 42.226921081543,
+        "display": "42.2%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 90
+      },
+      "PAK": {
+        "name": "Pakistan",
+        "value": 10.8564126844434,
+        "display": "10.9%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 134
+      },
+      "PLW": {
+        "name": "Palau",
+        "value": 71.8428437792329,
+        "display": "71.8%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 43
+      },
+      "PAN": {
+        "name": "Panama",
+        "value": 53.6949637061742,
+        "display": "53.7%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 73
+      },
+      "PHL": {
+        "name": "Philippines",
+        "value": 47.4134996154186,
+        "display": "47.4%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 81
+      },
+      "POL": {
+        "name": "Poland",
+        "value": 80.9149627685547,
+        "display": "80.9%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 23
+      },
+      "PRT": {
+        "name": "Portugal",
+        "value": 77.6778182983398,
+        "display": "77.7%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 31
+      },
+      "PRI": {
+        "name": "Puerto Rico (US)",
+        "value": 77.9263575380698,
+        "display": "77.9%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 30
+      },
+      "QAT": {
+        "name": "Qatar",
+        "value": 43.0178909301758,
+        "display": "43.0%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 88
+      },
+      "ROU": {
+        "name": "Romania",
+        "value": 55.1682891845703,
+        "display": "55.2%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 66
+      },
+      "RUS": {
+        "name": "Russian Federation",
+        "value": 60.3891235376867,
+        "display": "60.4%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 57
+      },
+      "RWA": {
+        "name": "Rwanda",
+        "value": 9.41173924647801,
+        "display": "9.4%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 141
+      },
+      "WSM": {
+        "name": "Samoa",
+        "value": 16.0263900756836,
+        "display": "16.0%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 124
+      },
+      "SMR": {
+        "name": "San Marino",
+        "value": 57.5487465181059,
+        "display": "57.5%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 63
+      },
+      "SAU": {
+        "name": "Saudi Arabia",
+        "value": 83.884129573915,
+        "display": "83.9%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 19
+      },
+      "SEN": {
+        "name": "Senegal",
+        "value": 15.3302400879779,
+        "display": "15.3%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 125
+      },
+      "SRB": {
+        "name": "Serbia",
+        "value": 70.582649230957,
+        "display": "70.6%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 45
+      },
+      "SYC": {
+        "name": "Seychelles",
+        "value": 14.5342502593994,
+        "display": "14.5%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 129
+      },
+      "SGP": {
+        "name": "Singapore",
+        "value": 97.2886546863037,
+        "display": "97.3%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 10
+      },
+      "SVK": {
+        "name": "Slovak Republic",
+        "value": 54.4743194580078,
+        "display": "54.5%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 69
+      },
+      "SVN": {
+        "name": "Slovenia",
+        "value": 80.0806884765625,
+        "display": "80.1%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 26
+      },
+      "ZAF": {
+        "name": "South Africa",
+        "value": 23.493768799339,
+        "display": "23.5%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 113
+      },
+      "ESP": {
+        "name": "Spain",
+        "value": 93.7689666748047,
+        "display": "93.8%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 12
+      },
+      "LKA": {
+        "name": "Sri Lanka",
+        "value": 20.7412633848006,
+        "display": "20.7%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 120
+      },
+      "LCA": {
+        "name": "St. Lucia",
+        "value": 15.0396404266357,
+        "display": "15.0%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 126
+      },
+      "VCT": {
+        "name": "St. Vincent and the Grenadines",
+        "value": 41.4983277591973,
+        "display": "41.5%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 91
+      },
+      "SUR": {
+        "name": "Suriname",
+        "value": 2.56642457392281,
+        "display": "2.6%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 152
+      },
+      "SWE": {
+        "name": "Sweden",
+        "value": 83.9988098144531,
+        "display": "84.0%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 18
+      },
+      "CHE": {
+        "name": "Switzerland",
+        "value": 73.5430526733398,
+        "display": "73.5%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 42
+      },
+      "TJK": {
+        "name": "Tajikistan",
+        "value": 35.6398418742497,
+        "display": "35.6%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 100
+      },
+      "TZA": {
+        "name": "Tanzania",
+        "value": 4.01880979537964,
+        "display": "4.0%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 150
+      },
+      "THA": {
+        "name": "Thailand",
+        "value": 49.0776442074561,
+        "display": "49.1%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 78
+      },
+      "TLS": {
+        "name": "Timor-Leste",
+        "value": 30.9611108169641,
+        "display": "31.0%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 103
+      },
+      "TGO": {
+        "name": "Togo",
+        "value": 14.9029897765252,
+        "display": "14.9%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 127
+      },
+      "TON": {
+        "name": "Tonga",
+        "value": 42.8611738148984,
+        "display": "42.9%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 89
+      },
+      "TTO": {
+        "name": "Trinidad and Tobago",
+        "value": 23.8493010569383,
+        "display": "23.8%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 111
+      },
+      "TUN": {
+        "name": "Tunisia",
+        "value": 38.1219482421875,
+        "display": "38.1%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 94
+      },
+      "TUR": {
+        "name": "Turkiye",
+        "value": 105.88606262207,
+        "display": "105.9%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 9
+      },
+      "TKM": {
+        "name": "Turkmenistan",
+        "value": 20.4250351701637,
+        "display": "20.4%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 121
+      },
+      "TCA": {
+        "name": "Turks and Caicos Islands",
+        "value": 25.2537080405933,
+        "display": "25.3%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 109
+      },
+      "UKR": {
+        "name": "Ukraine",
+        "value": 87.1920013427734,
+        "display": "87.2%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 15
+      },
+      "ARE": {
+        "name": "United Arab Emirates",
+        "value": 63.7384451086316,
+        "display": "63.7%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 55
+      },
+      "GBR": {
+        "name": "United Kingdom",
+        "value": 80.4146499633789,
+        "display": "80.4%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 25
+      },
+      "USA": {
+        "name": "United States",
+        "value": 79.361930847168,
+        "display": "79.4%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 28
+      },
+      "URY": {
+        "name": "Uruguay",
+        "value": 79.9536903496537,
+        "display": "80.0%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 27
+      },
+      "UZB": {
+        "name": "Uzbekistan",
+        "value": 59.8086982926392,
+        "display": "59.8%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 58
+      },
+      "VNM": {
+        "name": "Viet Nam",
+        "value": 37.5923642016718,
+        "display": "37.6%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 97
+      },
+      "PSE": {
+        "name": "West Bank and Gaza",
+        "value": 44.4904623709098,
+        "display": "44.5%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 86
+      },
+      "ZWE": {
+        "name": "Zimbabwe",
+        "value": 7.74912957845971,
+        "display": "7.7%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 142
+      }
+    }
+  },
+  "review": {
+    "errors": [],
+    "claims": [
+      {
+        "surface": "title",
+        "text": "Why Greece Has 165.1% College Enrollment",
+        "isos": [
+          "GRC"
+        ],
+        "support": "GRC value is 165.113418579102, display 165.1%",
+        "evidence": {
+          "GRC": {
+            "name": "Greece",
+            "value": 165.113418579102,
+            "display": "165.1%",
+            "year": 2023,
+            "unit": "%",
+            "rank": 1
+          }
+        }
+      },
+      {
+        "surface": "description",
+        "text": "Gross tertiary education enrollment across the world, from Greece at 165.1% to Suriname at 2.6%.",
+        "isos": [
+          "GRC",
+          "SUR"
+        ],
+        "support": "GRC value is 165.113418579102, SUR value is 2.56642457392281",
+        "evidence": {
+          "GRC": {
+            "name": "Greece",
+            "value": 165.113418579102,
+            "display": "165.1%",
+            "year": 2023,
+            "unit": "%",
+            "rank": 1
+          },
+          "SUR": {
+            "name": "Suriname",
+            "value": 2.56642457392281,
+            "display": "2.6%",
+            "year": 2024,
+            "unit": "%",
+            "rank": 152
+          }
+        }
+      },
+      {
+        "surface": "beat_0",
+        "text": "Tertiary enrollment in Greece is 165.1%, while Suriname has just 2.6%.",
+        "isos": [
+          "GRC",
+          "SUR"
+        ],
+        "support": "GRC: 165.1%, SUR: 2.6%",
+        "evidence": {
+          "GRC": {
+            "name": "Greece",
+            "value": 165.113418579102,
+            "display": "165.1%",
+            "year": 2023,
+            "unit": "%",
+            "rank": 1
+          },
+          "SUR": {
+            "name": "Suriname",
+            "value": 2.56642457392281,
+            "display": "2.6%",
+            "year": 2024,
+            "unit": "%",
+            "rank": 152
+          }
+        }
+      },
+      {
+        "surface": "beat_1",
+        "text": "Greece is the world's highest. Total enrollment counts students regardless of age against the official college-age population.",
+        "isos": [
+          "GRC"
+        ],
+        "support": "GRC rank is 1 (highest); definition matches total enrollment regardless of age to the population of the official age group",
+        "evidence": {
+          "GRC": {
+            "name": "Greece",
+            "value": 165.113418579102,
+            "display": "165.1%",
+            "year": 2023,
+            "unit": "%",
+            "rank": 1
+          }
+        }
+      },
+      {
+        "surface": "beat_2",
+        "text": "Cyprus has 120.9%, South Korea 111.9%, and Finland 110.3%.",
+        "isos": [
+          "CYP",
+          "KOR",
+          "FIN"
+        ],
+        "support": "CYP: 120.9%, KOR: 111.9%, FIN: 110.3%",
+        "evidence": {
+          "CYP": {
+            "name": "Cyprus",
+            "value": 120.87727355957,
+            "display": "120.9%",
+            "year": 2024,
+            "unit": "%",
+            "rank": 2
+          },
+          "KOR": {
+            "name": "Korea, Rep.",
+            "value": 111.853302001953,
+            "display": "111.9%",
+            "year": 2024,
+            "unit": "%",
+            "rank": 4
+          },
+          "FIN": {
+            "name": "Finland",
+            "value": 110.304496765137,
+            "display": "110.3%",
+            "year": 2024,
+            "unit": "%",
+            "rank": 5
+          }
+        }
+      },
+      {
+        "surface": "beat_3",
+        "text": "The world's largest economies sit lower: the USA has 79.4%, while China has 76.9%.",
+        "isos": [
+          "USA",
+          "CHN"
+        ],
+        "support": "USA: 79.4%, CHN: 76.9%",
+        "evidence": {
+          "USA": {
+            "name": "United States",
+            "value": 79.361930847168,
+            "display": "79.4%",
+            "year": 2022,
+            "unit": "%",
+            "rank": 28
+          },
+          "CHN": {
+            "name": "China",
+            "value": 76.8757843123403,
+            "display": "76.9%",
+            "year": 2024,
+            "unit": "%",
+            "rank": 34
+          }
+        }
+      },
+      {
+        "surface": "beat_4",
+        "text": "India has 34.4%, falling well behind.",
+        "isos": [
+          "IND"
+        ],
+        "support": "IND: 34.4%",
+        "evidence": {
+          "IND": {
+            "name": "India",
+            "value": 34.4465039692543,
+            "display": "34.4%",
+            "year": 2025,
+            "unit": "%",
+            "rank": 101
+          }
+        }
+      },
+      {
+        "surface": "title",
+        "text": "Why Greece Has 165.1% College Enrollment",
+        "isos": [
+          "GRC"
+        ],
+        "support": "Greece value is 165.1%",
+        "method": "complete-surface-check",
+        "evidence": {
+          "GRC": {
+            "name": "Greece",
+            "value": 165.113418579102,
+            "display": "165.1%",
+            "year": 2023,
+            "unit": "%",
+            "rank": 1
+          }
+        }
+      },
+      {
+        "surface": "hook",
+        "text": "HIGHER EDUCATION DIVIDE",
+        "isos": [],
+        "support": "Stylistic headline introducing higher education topic",
+        "method": "complete-surface-check",
+        "evidence": {}
+      },
+      {
+        "surface": "description",
+        "text": "Gross tertiary education enrollment across the world, from Greece at 165.1% to Suriname at 2.6%.",
+        "isos": [
+          "GRC",
+          "SUR"
+        ],
+        "support": "Accurately reflects Greece at 165.1% and Suriname at 2.6%",
+        "method": "complete-surface-check",
+        "evidence": {
+          "GRC": {
+            "name": "Greece",
+            "value": 165.113418579102,
+            "display": "165.1%",
+            "year": 2023,
+            "unit": "%",
+            "rank": 1
+          },
+          "SUR": {
+            "name": "Suriname",
+            "value": 2.56642457392281,
+            "display": "2.6%",
+            "year": 2024,
+            "unit": "%",
+            "rank": 152
+          }
+        }
+      },
+      {
+        "surface": "beat_0",
+        "text": "Tertiary enrollment in Greece is 165.1%, while Suriname has just 2.6%.",
+        "isos": [
+          "GRC",
+          "SUR"
+        ],
+        "support": "Matches GRC (165.1%) and SUR (2.6%) values",
+        "method": "complete-surface-check",
+        "evidence": {
+          "GRC": {
+            "name": "Greece",
+            "value": 165.113418579102,
+            "display": "165.1%",
+            "year": 2023,
+            "unit": "%",
+            "rank": 1
+          },
+          "SUR": {
+            "name": "Suriname",
+            "value": 2.56642457392281,
+            "display": "2.6%",
+            "year": 2024,
+            "unit": "%",
+            "rank": 152
+          }
+        }
+      },
+      {
+        "surface": "beat_1",
+        "text": "Greece is the world's highest. Total enrollment counts students regardless of age against the official college-age population.",
+        "isos": [
+          "GRC"
+        ],
+        "support": "Greece rank is 1 and definition correctly references the gross enrollment ratio definition",
+        "method": "complete-surface-check",
+        "evidence": {
+          "GRC": {
+            "name": "Greece",
+            "value": 165.113418579102,
+            "display": "165.1%",
+            "year": 2023,
+            "unit": "%",
+            "rank": 1
+          }
+        }
+      },
+      {
+        "surface": "beat_2",
+        "text": "Cyprus has 120.9%, South Korea 111.9%, and Finland 110.3%.",
+        "isos": [
+          "CYP",
+          "KOR",
+          "FIN"
+        ],
+        "support": "CYP, KOR, and FIN match their display values",
+        "method": "complete-surface-check",
+        "evidence": {
+          "CYP": {
+            "name": "Cyprus",
+            "value": 120.87727355957,
+            "display": "120.9%",
+            "year": 2024,
+            "unit": "%",
+            "rank": 2
+          },
+          "KOR": {
+            "name": "Korea, Rep.",
+            "value": 111.853302001953,
+            "display": "111.9%",
+            "year": 2024,
+            "unit": "%",
+            "rank": 4
+          },
+          "FIN": {
+            "name": "Finland",
+            "value": 110.304496765137,
+            "display": "110.3%",
+            "year": 2024,
+            "unit": "%",
+            "rank": 5
+          }
+        }
+      },
+      {
+        "surface": "beat_3",
+        "text": "The world's largest economies sit lower: the USA has 79.4%, while China has 76.9%.",
+        "isos": [
+          "USA",
+          "CHN"
+        ],
+        "support": "USA and CHN match their display values",
+        "method": "complete-surface-check",
+        "evidence": {
+          "USA": {
+            "name": "United States",
+            "value": 79.361930847168,
+            "display": "79.4%",
+            "year": 2022,
+            "unit": "%",
+            "rank": 28
+          },
+          "CHN": {
+            "name": "China",
+            "value": 76.8757843123403,
+            "display": "76.9%",
+            "year": 2024,
+            "unit": "%",
+            "rank": 34
+          }
+        }
+      },
+      {
+        "surface": "beat_4",
+        "text": "India has 34.4%, falling well behind.",
+        "isos": [
+          "IND"
+        ],
+        "support": "IND matches its display value of 34.4%",
+        "method": "complete-surface-check",
+        "evidence": {
+          "IND": {
+            "name": "India",
+            "value": 34.4465039692543,
+            "display": "34.4%",
+            "year": 2025,
+            "unit": "%",
+            "rank": 101
+          }
+        }
+      },
+      {
+        "surface": "beat_5",
+        "text": "Where does your country land?",
+        "isos": [],
+        "support": "Interactive outro question",
+        "method": "complete-surface-check",
+        "evidence": {}
+      },
+      {
+        "surface": "card_5",
+        "text": [
+          "Where do you land?",
+          "Gross tertiary enrollment ratio"
+        ],
+        "isos": [],
+        "support": "Matches card content requirements",
+        "method": "complete-surface-check",
+        "evidence": {}
+      }
+    ],
+    "surface_checks": {
+      "title": {
+        "supported": true,
+        "reason": "Greece value is 165.1%",
+        "isos": [
+          "GRC"
+        ]
+      },
+      "hook": {
+        "supported": true,
+        "reason": "Stylistic headline introducing higher education topic",
+        "isos": []
+      },
+      "description": {
+        "supported": true,
+        "reason": "Accurately reflects Greece at 165.1% and Suriname at 2.6%",
+        "isos": [
+          "GRC",
+          "SUR"
+        ]
+      },
+      "beat_0": {
+        "supported": true,
+        "reason": "Matches GRC (165.1%) and SUR (2.6%) values",
+        "isos": [
+          "GRC",
+          "SUR"
+        ]
+      },
+      "beat_1": {
+        "supported": true,
+        "reason": "Greece rank is 1 and definition correctly references the gross enrollment ratio definition",
+        "isos": [
+          "GRC"
+        ]
+      },
+      "beat_2": {
+        "supported": true,
+        "reason": "CYP, KOR, and FIN match their display values",
+        "isos": [
+          "CYP",
+          "KOR",
+          "FIN"
+        ]
+      },
+      "beat_3": {
+        "supported": true,
+        "reason": "USA and CHN match their display values",
+        "isos": [
+          "USA",
+          "CHN"
+        ]
+      },
+      "beat_4": {
+        "supported": true,
+        "reason": "IND matches its display value of 34.4%",
+        "isos": [
+          "IND"
+        ]
+      },
+      "beat_5": {
+        "supported": true,
+        "reason": "Interactive outro question",
+        "isos": []
+      },
+      "card_5": {
+        "supported": true,
+        "reason": "Matches card content requirements",
+        "isos": []
+      }
+    },
+    "warnings": []
+  },
+  "script_sha256": "e917b09075f77e8ccadbb84e79ce8acff77abfdb70d2bdb80f9413e1dbdc5d23",
+  "data_sha256": "7e366571c075234281d26cb0e2dc329e91c98f793f514c1fc3f2bcdf4cd2b88a",
+  "reviewer_model": "gemini-3.5-flash-lite"
+}
