@@ -1,0 +1,29 @@
+{
+  "duration": 44.85,
+  "integrated_lufs": -14.3,
+  "true_peak_dbfs": -1.4,
+  "speech": {
+    "heard": "Bhutan generates 99.992% of its electricity from water. Saudi Arabia generates 0%. Bhutan is the world's highest, relying on hydroelectric sources for almost all its power. In South America, Paraguay generates 99.424% of its electricity from water. Major economies rely much less on hydropower. China generates 13.913% while USA generates 5.801%. Top hydro leaders span the globe. Nepal has 98.698%, Ethiopia 97.081% and Norway 89.554%. How does your country generate its power?",
+    "model": "small.en",
+    "media_sha256": "6dfd971f5972a33cb13e030fcef775da1b20afa3f29607aee2246a18031b40e3",
+    "primary_differences": [
+      "'0.000%' heard as '0%' after 'saudi arabia generates'"
+    ],
+    "differences": [
+      "'0.000%' heard as '0%' after 'saudi arabia generates'",
+      "base.en: '0.000%' heard as '0%' after 'saudi arabia generates'",
+      "base.en: '(nothing)' heard as 'hydropower' after 'less on hydropower'",
+      "base.en: 'hydro leaders' heard as 'hydroleter' after 'generates 5.801% top'"
+    ],
+    "corroboration": {
+      "model": "base.en",
+      "heard": "Bhutan generates 99.99 2% of its electricity from water. Saudi Arabia generates 0%. Bhutan is the world's highest, relying on hydroelectric sources for almost all its power. In South America, Paraguay generates 99.424% of its electricity from water. Major economies rely much less on hydropower. hydropower. China generates 13.913% while USA generates 5.801%. Top hydroleter span the globe. Nepal has 98.698%, Ethiopia 97.081% and Norway 89.554%. How does your country generate its power?",
+      "differences": [
+        "'0.000%' heard as '0%' after 'saudi arabia generates'",
+        "'(nothing)' heard as 'hydropower' after 'less on hydropower'",
+        "'hydro leaders' heard as 'hydroleter' after 'generates 5.801% top'"
+      ],
+      "resolved": []
+    }
+  }
+}

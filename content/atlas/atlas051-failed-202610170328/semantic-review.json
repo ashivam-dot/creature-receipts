@@ -1,0 +1,153 @@
+{
+  "errors": [],
+  "claims": [
+    {
+      "surface": "title",
+      "text": "Bhutan Generates 99.992% of Electricity From Water",
+      "isos": [
+        "BTN"
+      ],
+      "support": "Bhutan: 99.9918693177619%"
+    },
+    {
+      "surface": "hook",
+      "text": "HYDRO POWER SPLIT",
+      "isos": [],
+      "support": "Theme of hydroelectricity share"
+    },
+    {
+      "surface": "description",
+      "text": "Bhutan leads the world with 99.992% of its electricity generated from hydroelectric sources, while the global median is under 10%.",
+      "isos": [
+        "BTN"
+      ],
+      "support": "Bhutan rank 1 with 99.9918693177619%"
+    },
+    {
+      "surface": "beat_0",
+      "text": "Bhutan generates 99.992% of its electricity from water. Saudi Arabia generates 0.000%.",
+      "isos": [
+        "BTN",
+        "SAU"
+      ],
+      "support": "Bhutan: 99.9918693177619%, Saudi Arabia: 0.0%"
+    },
+    {
+      "surface": "beat_1",
+      "text": "Bhutan is the world's highest, relying on hydroelectric sources for almost all its power.",
+      "isos": [
+        "BTN"
+      ],
+      "support": "Bhutan rank 1 with 99.9918693177619%"
+    },
+    {
+      "surface": "beat_2",
+      "text": "In South America, Paraguay generates 99.424% of its electricity from water.",
+      "isos": [
+        "PRY"
+      ],
+      "support": "Paraguay: 99.4236446277119%"
+    },
+    {
+      "surface": "beat_3",
+      "text": "Major economies rely much less on hydropower. China generates 13.913%, while USA generates 5.801%.",
+      "isos": [
+        "CHN",
+        "USA"
+      ],
+      "support": "China: 13.9131901176221%, United States: 5.80066377373012%"
+    },
+    {
+      "surface": "beat_4",
+      "text": "Top hydro leaders span the globe: Nepal has 98.698%, Ethiopia 97.081%, and Norway 89.554%.",
+      "isos": [
+        "NPL",
+        "ETH",
+        "NOR"
+      ],
+      "support": "Nepal: 98.6979903764506%, Ethiopia: 97.0812311651373%, Norway: 89.5535555650858%"
+    },
+    {
+      "surface": "beat_5",
+      "text": "How does your country generate its power?",
+      "isos": [],
+      "support": "Call to action prompt"
+    },
+    {
+      "surface": "card_5",
+      "text": "How does your country generate power? Share of electricity from hydropower (%)",
+      "isos": [],
+      "support": "Visual card labels matching dataset definition and unit"
+    }
+  ],
+  "surface_checks": {
+    "title": {
+      "supported": true,
+      "reason": "Bhutan's value is 99.992% in 2021.",
+      "isos": [
+        "BTN"
+      ]
+    },
+    "hook": {
+      "supported": true,
+      "reason": "Accurately labels the video's topic as hydroelectricity power split.",
+      "isos": []
+    },
+    "description": {
+      "supported": true,
+      "reason": "Bhutan is rank 1 with 99.992%.",
+      "isos": [
+        "BTN"
+      ]
+    },
+    "beat_0": {
+      "supported": true,
+      "reason": "Bhutan is 99.992% and Saudi Arabia is 0.000%.",
+      "isos": [
+        "BTN",
+        "SAU"
+      ]
+    },
+    "beat_1": {
+      "supported": true,
+      "reason": "Bhutan is rank 1 in the dataset.",
+      "isos": [
+        "BTN"
+      ]
+    },
+    "beat_2": {
+      "supported": true,
+      "reason": "Paraguay's value is 99.424%.",
+      "isos": [
+        "PRY"
+      ]
+    },
+    "beat_3": {
+      "supported": true,
+      "reason": "China has 13.913% and USA has 5.801%.",
+      "isos": [
+        "CHN",
+        "USA"
+      ]
+    },
+    "beat_4": {
+      "supported": true,
+      "reason": "Nepal is 98.698% (rank 4), Ethiopia is 97.081% (rank 6), Norway is 89.554% (rank 12).",
+      "isos": [
+        "NPL",
+        "ETH",
+        "NOR"
+      ]
+    },
+    "beat_5": {
+      "supported": true,
+      "reason": "Matches general prompt context.",
+      "isos": []
+    },
+    "card_5": {
+      "supported": true,
+      "reason": "Matches indicator definition and unit (%).",
+      "isos": []
+    }
+  }
+}

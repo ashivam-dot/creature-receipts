@@ -1,0 +1,61 @@
+id: atlas050
+title: France generates 67.2% of its power from nuclear plants
+format: rank_ladder
+hook_text: NUCLEAR POWER GAP
+description: Discover the nuclear electricity divide across nations, from France and Slovakia down to Germany and
+  India, based on World Bank data.
+hashtags:
+- '#maps'
+- '#geography'
+- '#nuclearenergy'
+sources:
+- https://data.worldbank.org/indicator/EG.ELC.NUCL.ZS
+dataset:
+  kind: worldbank
+  indicator: EG.ELC.NUCL.ZS
+  label: Nuclear electricity share
+  unit: '%'
+  source: World Bank
+  min_year: 2019
+scale:
+  kind: threshold
+  at: 10.0
+  labels:
+  - Over 10%
+  - Under 10%
+value_format: '{v:.1f}%'
+beats:
+- text: France generates 67.2% of its electricity from nuclear power. India produces just 2.7%.
+  shot:
+    callouts:
+    - FRA
+    - IND
+- text: Slovakia sits close behind, with nuclear reactors delivering 65.6% of its electricity.
+  shot:
+    kind: country
+    iso: SVK
+- text: 'A tight European pack follows: Bulgaria has 40.9%, Hungary has 40.5%, Finland has 39.7%, and Slovenia has
+    38.8%.'
+  shot:
+    kind: rank
+    isos:
+    - BGR
+    - HUN
+    - FIN
+    - SVN
+- text: The USA generates 17.4% of its electricity from nuclear plants, while China produces 4.4%.
+  shot:
+    kind: group
+    isos:
+    - USA
+    - CHN
+- text: Germany produces just 1.4% of its electricity from nuclear power.
+  shot:
+    kind: country
+    iso: DEU
+- text: Where does your country land?
+  shot:
+    kind: card
+    lines:
+    - Where does yours land?
+    - Nuclear electricity share (%)

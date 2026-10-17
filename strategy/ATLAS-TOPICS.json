@@ -1187,7 +1187,7 @@
     "#banking"
    ],
    "source_url": "https://data.worldbank.org/indicator/FB.ATM.TOTL.P5",
-   "status": "ready:atlas048",
+   "status": "used:atlas048",
    "added_by": "refill"
   },
   {
@@ -1397,7 +1397,7 @@
     "#nuclearenergy"
    ],
    "source_url": "https://data.worldbank.org/indicator/EG.ELC.NUCL.ZS",
-   "status": "open",
+   "status": "failed:ValueError",
    "added_by": "refill"
   },
   {
@@ -1529,7 +1529,7 @@
     "#publichealth"
    ],
    "source_url": "https://data.worldbank.org/indicator/SH.PRV.SMOK",
-   "status": "ready:atlas049",
+   "status": "used:atlas049",
    "added_by": "refill"
   },
   {
@@ -1607,7 +1607,7 @@
     "#renewableenergy"
    ],
    "source_url": "https://data.worldbank.org/indicator/EG.ELC.HYRO.ZS",
-   "status": "open",
+   "status": "failed:ValueError",
    "added_by": "refill"
   },
   {
@@ -1763,7 +1763,7 @@
     "#water"
    ],
    "source_url": "https://data.worldbank.org/indicator/ER.H2O.INTR.PC",
-   "status": "ready:atlas047",
+   "status": "used:atlas047",
    "added_by": "refill"
   },
   {
@@ -1841,6 +1841,382 @@
     "#education"
    ],
    "source_url": "https://data.worldbank.org/indicator/SE.TER.ENRR",
+   "status": "open",
+   "added_by": "refill"
+  },
+  {
+   "id": "t055",
+   "topic": "Where High-Tech Dominates Factory Exports",
+   "angle": "In half of all countries, high-tech products account for under 7% of manufactured exports, while in hubs like Singapore and the Philippines they surpass 50%.",
+   "format": "map_reveal",
+   "dataset": {
+    "kind": "worldbank",
+    "indicator": "TX.VAL.TECH.MF.ZS",
+    "label": "High-tech share of manufactured exports",
+    "unit": "%",
+    "source": "World Bank",
+    "min_year": 2019
+   },
+   "scale": {
+    "kind": "bins",
+    "edges": [
+     2.5,
+     7.0,
+     17.5,
+     30.0
+    ],
+    "labels": [
+     "Under 2.5%",
+     "2.5% to 7%",
+     "7% to 17.5%",
+     "17.5% to 30%",
+     "Over 30%"
+    ]
+   },
+   "value_format": "{v:.1f}%",
+   "hashtags": [
+    "#maps",
+    "#geography",
+    "#globaltrade"
+   ],
+   "source_url": "https://data.worldbank.org/indicator/TX.VAL.TECH.MF.ZS",
+   "status": "open",
+   "added_by": "refill"
+  },
+  {
+   "id": "t056",
+   "topic": "Official Starting Age for Primary School",
+   "angle": "While most children enter primary school at age 6, official starting ages range from 5 in the United Kingdom to 7 in Bulgaria.",
+   "format": "map_reveal",
+   "dataset": {
+    "kind": "worldbank",
+    "indicator": "SE.PRM.AGES",
+    "label": "Primary school starting age",
+    "unit": "years",
+    "source": "World Bank",
+    "min_year": 2019
+   },
+   "scale": {
+    "kind": "threshold",
+    "at": 6,
+    "labels": [
+     "6 years or older",
+     "Under 6 years"
+    ]
+   },
+   "value_format": "{v:.0f} years",
+   "hashtags": [
+    "#maps','#geography','#mapsoftheworld"
+   ],
+   "source_url": "https://data.worldbank.org/indicator/SE.PRM.AGES",
+   "status": "open",
+   "added_by": "refill"
+  },
+  {
+   "id": "t057",
+   "topic": "Years Children Must Legally Attend School",
+   "angle": "While children globally are typically required to attend school for 10 years, several Latin American nations mandate up to 17 years.",
+   "format": "rank_ladder",
+   "dataset": {
+    "kind": "worldbank",
+    "indicator": "SE.COM.DURS",
+    "label": "Compulsory education duration",
+    "unit": "years",
+    "source": "World Bank",
+    "min_year": 2019
+   },
+   "scale": {
+    "kind": "bins",
+    "edges": [
+     6,
+     9,
+     11,
+     13
+    ],
+    "labels": [
+     "Under 6",
+     "6 to 8",
+     "9 to 10",
+     "11 to 12",
+     "13 and over"
+    ]
+   },
+   "value_format": "{v:.0f} years",
+   "hashtags": [
+    "#geography",
+    "#maps",
+    "#education"
+   ],
+   "source_url": "https://data.worldbank.org/indicator/SE.COM.DURS",
+   "status": "open",
+   "added_by": "refill"
+  },
+  {
+   "id": "t058",
+   "topic": "Where More Boys Are Born Worldwide",
+   "angle": "In every country across the globe, more boys are born than girls, with ratios ranging from 1.01 to 1.16 male births per female birth.",
+   "format": "map_reveal",
+   "dataset": {
+    "kind": "worldbank",
+    "indicator": "SP.POP.BRTH.MF",
+    "label": "Male births per female birth",
+    "unit": "boys per girl",
+    "source": "World Bank",
+    "min_year": 2019
+   },
+   "scale": {
+    "kind": "bins",
+    "edges": [
+     1.03,
+     1.05,
+     1.07,
+     1.1
+    ],
+    "labels": [
+     "< 1.03",
+     "1.03–1.05",
+     "1.05–1.07",
+     "1.07–1.10",
+     "≥ 1.10"
+    ]
+   },
+   "value_format": "{v:.2f}",
+   "hashtags": [
+    "#maps",
+    "#geography",
+    "#demographics"
+   ],
+   "source_url": "https://data.worldbank.org/indicator/SP.POP.BRTH.MF",
+   "status": "open",
+   "added_by": "refill"
+  },
+  {
+   "id": "t059",
+   "topic": "Where Coal Still Powers the Grid",
+   "angle": "Over half of the world produces zero electricity from coal, yet a handful of nations still rely on it for more than 70% of their power.",
+   "format": "map_reveal",
+   "dataset": {
+    "kind": "worldbank",
+    "indicator": "EG.ELC.COAL.ZS",
+    "label": "Coal share in electricity production",
+    "unit": "%",
+    "source": "World Bank",
+    "min_year": 2019
+   },
+   "scale": {
+    "kind": "bins",
+    "edges": [
+     1,
+     10,
+     30,
+     60
+    ],
+    "labels": [
+     "0%",
+     "1–10%",
+     "10–30%",
+     "30–60%",
+     ">60%"
+    ]
+   },
+   "value_format": "{v:.1f}%",
+   "hashtags": [
+    "#maps",
+    "#geography",
+    "#mapsofworld"
+   ],
+   "source_url": "https://data.worldbank.org/indicator/EG.ELC.COAL.ZS",
+   "status": "open",
+   "added_by": "refill"
+  },
+  {
+   "id": "t060",
+   "topic": "The World's Food-Dependent Exporters",
+   "angle": "In several small island and agricultural nations, food accounts for over 90% of all goods sold abroad.",
+   "format": "rank_ladder",
+   "dataset": {
+    "kind": "worldbank",
+    "indicator": "TX.VAL.FOOD.ZS.UN",
+    "label": "Food share of merchandise exports",
+    "unit": "%",
+    "source": "World Bank",
+    "min_year": 2019
+   },
+   "scale": {
+    "kind": "bins",
+    "edges": [
+     5,
+     15,
+     35,
+     65
+    ],
+    "labels": [
+     "Under 5%",
+     "5% to 15%",
+     "15% to 35%",
+     "35% to 65%",
+     "Over 65%"
+    ]
+   },
+   "value_format": "{v:.1f}%",
+   "hashtags": [
+    "#maps",
+    "#geography",
+    "#globaltrade"
+   ],
+   "source_url": "https://data.worldbank.org/indicator/TX.VAL.FOOD.ZS.UN",
+   "status": "open",
+   "added_by": "refill"
+  },
+  {
+   "id": "t061",
+   "topic": "How Much of Imports Is Food",
+   "angle": "While food accounts for under 5% of imports in major trade hubs, it exceeds 40% of all incoming goods in several island and arid nations.",
+   "format": "map_reveal",
+   "dataset": {
+    "kind": "worldbank",
+    "indicator": "TM.VAL.FOOD.ZS.UN",
+    "label": "Food share of merchandise imports",
+    "unit": "%",
+    "source": "World Bank",
+    "min_year": 2019
+   },
+   "scale": {
+    "kind": "bins",
+    "edges": [
+     8.0,
+     14.0,
+     20.0,
+     27.0
+    ],
+    "labels": [
+     "Under 8%",
+     "8%–14%",
+     "14%–20%",
+     "20%–27%",
+     "Over 27%"
+    ]
+   },
+   "value_format": "{v:.1f}%",
+   "hashtags": [
+    "#maps','#geography','#trade"
+   ],
+   "source_url": "https://data.worldbank.org/indicator/TM.VAL.FOOD.ZS.UN",
+   "status": "open",
+   "added_by": "refill"
+  },
+  {
+   "id": "t062",
+   "topic": "Where New Businesses Are Registered",
+   "angle": "In half the world, fewer than 2.4 new companies are registered per 1,000 working-age adults each year, while leading hubs register over ten times that rate.",
+   "format": "map_reveal",
+   "dataset": {
+    "kind": "worldbank",
+    "indicator": "IC.BUS.NDNS.ZS",
+    "label": "New firms per 1,000 working-age adults",
+    "unit": "per 1,000 adults",
+    "source": "World Bank",
+    "min_year": 2019
+   },
+   "scale": {
+    "kind": "bins",
+    "edges": [
+     1.0,
+     2.5,
+     6.0,
+     15.0
+    ],
+    "labels": [
+     "Under 1.0",
+     "1.0–2.5",
+     "2.5–6.0",
+     "6.0–15.0",
+     "Over 15.0"
+    ]
+   },
+   "value_format": "{v:.1f}",
+   "hashtags": [
+    "#maps','#geography','#business"
+   ],
+   "source_url": "https://data.worldbank.org/indicator/IC.BUS.NDNS.ZS",
+   "status": "open",
+   "added_by": "refill"
+  },
+  {
+   "id": "t063",
+   "topic": "Women in Senior and Middle Management",
+   "angle": "Women make up over half of all senior and middle managers in parts of the Caribbean and Jordan, while the global median sits at just one-third.",
+   "format": "rank_ladder",
+   "dataset": {
+    "kind": "worldbank",
+    "indicator": "SL.EMP.SMGT.FE.ZS",
+    "label": "Female share of management roles",
+    "unit": "%",
+    "source": "World Bank",
+    "min_year": 2019
+   },
+   "scale": {
+    "kind": "bins",
+    "edges": [
+     20,
+     30,
+     40,
+     50
+    ],
+    "labels": [
+     "Under 20%",
+     "20% to 30%",
+     "30% to 40%",
+     "40% to 50%",
+     "50% or more"
+    ]
+   },
+   "value_format": "{v:.1f}%",
+   "hashtags": [
+    "#maps改革",
+    "#maps",
+    "#geography"
+   ],
+   "source_url": "https://data.worldbank.org/indicator/SL.EMP.SMGT.FE.ZS",
+   "status": "open",
+   "added_by": "refill"
+  },
+  {
+   "id": "t064",
+   "topic": "Youth Out of Work and Education",
+   "angle": "Over a quarter of nations see more than one in four young people neither working nor in school, while in Japan fewer than one in thirty are disengaged.",
+   "format": "map_reveal",
+   "dataset": {
+    "kind": "worldbank",
+    "indicator": "SL.UEM.NEET.ZS",
+    "label": "Youth not in school or employment",
+    "unit": "%",
+    "source": "World Bank",
+    "min_year": 2019
+   },
+   "scale": {
+    "kind": "bins",
+    "edges": [
+     10,
+     15,
+     20,
+     30
+    ],
+    "labels": [
+     "<10%",
+     "10–15%",
+     "15–20%",
+     "20–30%",
+     ">30%"
+    ]
+   },
+   "value_format": "{v:.1f}%",
+   "hashtags": [
+    "#maps",
+    "#geography",
+    "#economy"
+   ],
+   "source_url": "https://data.worldbank.org/indicator/SL.UEM.NEET.ZS",
    "status": "open",
    "added_by": "refill"
   }

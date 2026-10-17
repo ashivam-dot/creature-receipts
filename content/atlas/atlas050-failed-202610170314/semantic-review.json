@@ -1,0 +1,161 @@
+{
+  "errors": [],
+  "claims": [
+    {
+      "surface": "title",
+      "text": "France generates 67.2% of its power from nuclear plants",
+      "isos": [
+        "FRA"
+      ],
+      "support": "FRA: 67.2225314828251%"
+    },
+    {
+      "surface": "hook",
+      "text": "NUCLEAR POWER GAP",
+      "isos": [],
+      "support": "Indicator measures share of electricity production from nuclear sources of total electricity production."
+    },
+    {
+      "surface": "description",
+      "text": "Discover the nuclear electricity divide across nations, from France and Slovakia down to Germany and India, based on World Bank data.",
+      "isos": [
+        "FRA",
+        "SVK",
+        "DEU",
+        "IND"
+      ],
+      "support": "World Bank indicator EG.ELC.NUCL.ZS across countries."
+    },
+    {
+      "surface": "beat_0",
+      "text": "France generates 67.2% of its electricity from nuclear power. India produces just 2.7%.",
+      "isos": [
+        "FRA",
+        "IND"
+      ],
+      "support": "FRA: 67.2225314828251% (display 67.2%), IND: 2.72541495970611% (display 2.7%)"
+    },
+    {
+      "surface": "beat_1",
+      "text": "Slovakia sits close behind, with nuclear reactors delivering 65.6% of its electricity.",
+      "isos": [
+        "SVK"
+      ],
+      "support": "SVK: 65.6230837364584% (display 65.6%)"
+    },
+    {
+      "surface": "beat_2",
+      "text": "A tight European pack follows: Bulgaria has 40.9%, Hungary has 40.5%, Finland has 39.7%, and Slovenia has 38.8%.",
+      "isos": [
+        "BGR",
+        "HUN",
+        "FIN",
+        "SVN"
+      ],
+      "support": "BGR: 40.9%, HUN: 40.5%, FIN: 39.7%, SVN: 38.8%"
+    },
+    {
+      "surface": "beat_3",
+      "text": "The USA generates 17.4% of its electricity from nuclear plants, while China produces 4.4%.",
+      "isos": [
+        "USA",
+        "CHN"
+      ],
+      "support": "USA: 17.3931891967743% (display 17.4%), CHN: 4.39983850831178% (display 4.4%)"
+    },
+    {
+      "surface": "beat_4",
+      "text": "Germany produces just 1.4% of its electricity from nuclear power.",
+      "isos": [
+        "DEU"
+      ],
+      "support": "DEU: 1.38007271391988% (display 1.4%)"
+    },
+    {
+      "surface": "beat_5",
+      "text": "Where does your country land?",
+      "isos": [],
+      "support": "Generic call to action based on universe of mapped countries."
+    },
+    {
+      "surface": "card_5",
+      "text": "Where does yours land?, Nuclear electricity share (%)",
+      "isos": [],
+      "support": "Indicator EG.ELC.NUCL.ZS unit is %"
+    }
+  ],
+  "surface_checks": {
+    "title": {
+      "supported": true,
+      "reason": "France value is 67.2% matching display value.",
+      "isos": [
+        "FRA"
+      ]
+    },
+    "hook": {
+      "supported": true,
+      "reason": "Theme reflects nuclear electricity share differences.",
+      "isos": []
+    },
+    "description": {
+      "supported": true,
+      "reason": "Mentions countries correctly mapped to World Bank indicator.",
+      "isos": [
+        "FRA",
+        "SVK",
+        "DEU",
+        "IND"
+      ]
+    },
+    "beat_0": {
+      "supported": true,
+      "reason": "France is 67.2% and India is 2.7% in dataset.",
+      "isos": [
+        "FRA",
+        "IND"
+      ]
+    },
+    "beat_1": {
+      "supported": true,
+      "reason": "Slovakia value is 65.6% matching dataset.",
+      "isos": [
+        "SVK"
+      ]
+    },
+    "beat_2": {
+      "supported": true,
+      "reason": "Bulgaria, Hungary, Finland, and Slovenia values match dataset display values.",
+      "isos": [
+        "BGR",
+        "HUN",
+        "FIN",
+        "SVN"
+      ]
+    },
+    "beat_3": {
+      "supported": true,
+      "reason": "USA is 17.4% and China is 4.4% matching dataset.",
+      "isos": [
+        "USA",
+        "CHN"
+      ]
+    },
+    "beat_4": {
+      "supported": true,
+      "reason": "Germany value is 1.4% matching dataset.",
+      "isos": [
+        "DEU"
+      ]
+    },
+    "beat_5": {
+      "supported": true,
+      "reason": "Standard concluding question.",
+      "isos": []
+    },
+    "card_5": {
+      "supported": true,
+      "reason": "Matches indicator label and unit.",
+      "isos": []
+    }
+  }
+}

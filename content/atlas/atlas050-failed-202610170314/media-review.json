@@ -1,0 +1,22 @@
+{
+  "duration": 42.89,
+  "integrated_lufs": -14.3,
+  "true_peak_dbfs": -1.1,
+  "speech": {
+    "heard": "France generates 67.2% of its electricity from nuclear power. India produces just 2.7%. Slovakia sits close behind, with nuclear reactors delivering 65.6% of its electricity. A tight European pack follows. Bulgaria has 40.9%, Hungary has 40.5%, Finland has 39.7% and Slovenia has 38.8%. The USA generates 17.4% of its electricity from nuclear plants, while China produces 4.4%. Germany produces just 1.4% of its electricity from nuclear power. What is your country land?",
+    "model": "small.en",
+    "media_sha256": "e657d89986f241cca84f1dc57c689ea78491d08b4934c26c565dccfb6c59c29f",
+    "primary_differences": [
+      "'where does' heard as 'what is' after 'from nuclear power'"
+    ],
+    "differences": [
+      "'where does' heard as 'what is' after 'from nuclear power'"
+    ],
+    "corroboration": {
+      "model": "base.en",
+      "heard": "France generates 67.2% of its electricity from nuclear power. India produces just 2.7%. Slovakia sits close behind, with nuclear reactors delivering 65.6% of its electricity. A tight European pack follows. Bulgaria has 40.9%, Hungary has 40.5%, Finland has 39.7% and Slovenia has 38.8%. The USA generates 17.4 percent of its electricity from nuclear plants, while China produces 4.4 percent. Germany produces just 1.4 percent of its electricity from nuclear power. Where does your country land?",
+      "differences": [],
+      "resolved": []
+    }
+  }
+}

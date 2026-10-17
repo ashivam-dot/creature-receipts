@@ -1,0 +1,65 @@
+id: atlas051
+title: Bhutan Generates 99.992% of Electricity From Water
+format: rank_ladder
+hook_text: HYDRO POWER SPLIT
+description: Bhutan leads the world with 99.992% of its electricity generated from hydroelectric sources, while
+  the global median is under 10%.
+hashtags:
+- '#maps'
+- '#geography'
+- '#renewableenergy'
+sources:
+- https://data.worldbank.org/indicator/EG.ELC.HYRO.ZS
+dataset:
+  kind: worldbank
+  indicator: EG.ELC.HYRO.ZS
+  label: Share of electricity from hydropower
+  unit: '%'
+  source: World Bank
+  min_year: 2019
+scale:
+  edges:
+  - 10.0
+  - 45.0
+  - 75.0
+  - 95.0
+  labels:
+  - <10%
+  - 10-45%
+  - 45-75%
+  - 75-95%
+  - '>95%'
+value_format: '{v:.3f}%'
+beats:
+- text: Bhutan generates 99.992% of its electricity from water. Saudi Arabia generates 0.000%.
+  shot:
+    callouts:
+    - BTN
+    - SAU
+- text: Bhutan is the world's highest, relying on hydroelectric sources for almost all its power.
+  shot:
+    kind: country
+    iso: BTN
+- text: In South America, Paraguay generates 99.424% of its electricity from water.
+  shot:
+    kind: country
+    iso: PRY
+- text: Major economies rely much less on hydropower. China generates 13.913%, while USA generates 5.801%.
+  shot:
+    kind: group
+    isos:
+    - CHN
+    - USA
+- text: 'Top hydro leaders span the globe: Nepal has 98.698%, Ethiopia 97.081%, and Norway 89.554%.'
+  shot:
+    kind: rank
+    isos:
+    - NPL
+    - ETH
+    - NOR
+- text: How does your country generate its power?
+  shot:
+    kind: card
+    lines:
+    - How does your country generate power?
+    - Share of electricity from hydropower (%)
