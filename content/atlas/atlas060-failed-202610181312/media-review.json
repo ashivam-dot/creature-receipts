@@ -1,0 +1,29 @@
+{
+  "duration": 43.26,
+  "integrated_lufs": -14.4,
+  "true_peak_dbfs": -1.3,
+  "speech": {
+    "heard": "In Albania, international tourism delivers 35.92% of exports. In Guinea, just 0.01%. Foreign travelers spending on transport and lodging gives Albania one of the highest shares. In the Gambia, visitors generate 30.17% of export income, while Ethiopia collects 29.58%. By contrast, the USA relies on international travel for only 3.88% of exports. Nigeria counts even less from foreign visitors at 0.8 percent. Ini sits at the world's lowest mark, where inbound visitors provide 0.01 percent. What share does tourism hold in your homeland?",
+    "model": "small.en",
+    "media_sha256": "259bc8706087ecaa92b54a7755a4e4d740eba6edeb0f9f81326b62f143f4d19e",
+    "primary_differences": [
+      "'traveler' heard as 'travelers' after 'just 0.01% foreign'",
+      "'0.80% guinea' heard as '0.8% ini' after 'foreign visitors at'"
+    ],
+    "differences": [
+      "'traveler' heard as 'travelers' after 'just 0.01% foreign'",
+      "'0.80% guinea' heard as '0.8% ini' after 'foreign visitors at'",
+      "base.en: 'traveler' heard as 'travelers' after 'just 0.01% foreign'",
+      "base.en: '0.80% guinea' heard as '0.8% any' after 'foreign visitors at'"
+    ],
+    "corroboration": {
+      "model": "base.en",
+      "heard": "In Albania, international tourism delivers 35.92% of exports. In Guinea, just 0.01%. Foreign travelers spending on transport and lodging gives Albania one of the highest shares. In the Gambia, visitors generate 30.17% of export income, while Ethiopia collects 29.58%. By contrast, the USA relies on international travel for only 3.88% of exports. Nigeria counts even less from foreign visitors at 0.8%. Any sits at the world's lowest mark where inbound visitors provide 0.01%. What share does tourism hold in your homeland?",
+      "differences": [
+        "'traveler' heard as 'travelers' after 'just 0.01% foreign'",
+        "'0.80% guinea' heard as '0.8% any' after 'foreign visitors at'"
+      ],
+      "resolved": []
+    }
+  }
+}

@@ -1,0 +1,145 @@
+{
+  "errors": [],
+  "claims": [
+    {
+      "surface": "title",
+      "text": "Botswana Produces 95.4386% of Its Power From Coal",
+      "isos": [
+        "BWA"
+      ],
+      "support": "Botswana value is 95.4385964912281, display 95.4386%"
+    },
+    {
+      "surface": "hook",
+      "text": "COAL POWER DIVIDE",
+      "isos": [],
+      "support": "General stylistic title describing coal electricity share distribution"
+    },
+    {
+      "surface": "description",
+      "text": "Comparing the share of electricity production from coal across different nations using World Bank data.",
+      "isos": [],
+      "support": "Indicator definition: The share of electricity production from coal sources of total electricity production."
+    },
+    {
+      "surface": "beat_0",
+      "text": "Mongolia generates 84.0554% of its electricity from coal. The UK generates just 0.0991%.",
+      "isos": [
+        "MNG",
+        "GBR"
+      ],
+      "support": "Mongolia (MNG) value is 84.0553617643749 (display: 84.0554%), United Kingdom (GBR) value is 0.0991189427312775 (display: 0.0991%)"
+    },
+    {
+      "surface": "beat_1",
+      "text": "Botswana is the world's highest. Botswana produces 95.4386% of all its electricity from coal.",
+      "isos": [
+        "BWA"
+      ],
+      "support": "Botswana rank is 1 (world's highest) with value 95.4385964912281 (display: 95.4386%)"
+    },
+    {
+      "surface": "beat_2",
+      "text": "Across southern Africa, South Africa generates 85.0182%, while the USA produces 17.1904%.",
+      "isos": [
+        "ZAF",
+        "USA"
+      ],
+      "support": "South Africa (ZAF) value is 85.0182408461075 (display: 85.0182%), United States (USA) value is 17.1904001564822 (display: 17.1904%)"
+    },
+    {
+      "surface": "beat_3",
+      "text": "In Southeast Asia, Indonesia generates 70.5202% of its power from coal.",
+      "isos": [
+        "IDN"
+      ],
+      "support": "Indonesia (IDN) value is 70.5202490735954 (display: 70.5202%)"
+    },
+    {
+      "surface": "beat_4",
+      "text": "China generates 58.5532% of its total electricity production from coal.",
+      "isos": [
+        "CHN"
+      ],
+      "support": "China (CHN) value is 58.5531699282334 (display: 58.5532%)"
+    },
+    {
+      "surface": "beat_5",
+      "text": "Where does your country stand?",
+      "isos": [],
+      "support": "Call to action card matching card_5"
+    },
+    {
+      "surface": "card_5",
+      "text": "Where does yours stand?",
+      "isos": [],
+      "support": "End card matching visual plan card text"
+    }
+  ],
+  "surface_checks": {
+    "title": {
+      "supported": true,
+      "reason": "Botswana's coal share value is exactly 95.4386%",
+      "isos": [
+        "BWA"
+      ]
+    },
+    "hook": {
+      "supported": true,
+      "reason": "Accurately frames the subject matter",
+      "isos": []
+    },
+    "description": {
+      "supported": true,
+      "reason": "Accurately describes the World Bank indicator source and scope",
+      "isos": []
+    },
+    "beat_0": {
+      "supported": true,
+      "reason": "Mongolia and UK values match dataset statistics",
+      "isos": [
+        "MNG",
+        "GBR"
+      ]
+    },
+    "beat_1": {
+      "supported": true,
+      "reason": "Botswana holds rank 1 and has value 95.4386%",
+      "isos": [
+        "BWA"
+      ]
+    },
+    "beat_2": {
+      "supported": true,
+      "reason": "South Africa and USA values match the dataset",
+      "isos": [
+        "ZAF",
+        "USA"
+      ]
+    },
+    "beat_3": {
+      "supported": true,
+      "reason": "Indonesia value matches the dataset",
+      "isos": [
+        "IDN"
+      ]
+    },
+    "beat_4": {
+      "supported": true,
+      "reason": "China value matches the dataset",
+      "isos": [
+        "CHN"
+      ]
+    },
+    "beat_5": {
+      "supported": true,
+      "reason": "Matches closing card text",
+      "isos": []
+    },
+    "card_5": {
+      "supported": true,
+      "reason": "Matches visual plan strings",
+      "isos": []
+    }
+  }
+}

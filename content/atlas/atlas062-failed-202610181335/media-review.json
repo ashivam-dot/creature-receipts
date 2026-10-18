@@ -1,0 +1,29 @@
+{
+  "duration": 43.44,
+  "integrated_lufs": -14.5,
+  "true_peak_dbfs": -1.4,
+  "speech": {
+    "heard": "Mongolia generates 84.0554% of its electricity from coal. The UK generates just 0.0991%. Botswana is the world's highest. Botswana produces 95.4386% of all its electricity from coal. Across southern Africa, South Africa generates 85.0182%, while the USA produces 17.1904%. In Southeast Asia, Indonesia generates 70.5202% of its power from coal. China generates 58.5532% of its total electricity production from coal. What does your country stand?",
+    "model": "small.en",
+    "media_sha256": "254ee1afaf936f995c598303355daba65db96214f05ab42aee211358265b40bb",
+    "primary_differences": [
+      "'where' heard as 'what' after 'production from coal'"
+    ],
+    "differences": [
+      "'where' heard as 'what' after 'production from coal'",
+      "base.en: '70.5202%' heard as '70.520%' after 'asia indonesia generates'",
+      "base.en: '58.5532%' heard as '58.532%' after 'coal china generates'",
+      "base.en: 'where' heard as 'what' after 'production from coal'"
+    ],
+    "corroboration": {
+      "model": "base.en",
+      "heard": "Mongolia generates 84.0554% of its electricity from coal. The UK generates just 0.0991%. Botswana is the world's highest. Botswana produces 95.4386% of all its electricity from coal. Across Southern Africa, South Africa generates 85.0182%, while the USA produces 17.1904%. In Southeast Asia, Indonesia generates 70.520% of its power from coal. China generates 58.532% of its total electricity production from coal. What does your country stand?",
+      "differences": [
+        "'70.5202%' heard as '70.520%' after 'asia indonesia generates'",
+        "'58.5532%' heard as '58.532%' after 'coal china generates'",
+        "'where' heard as 'what' after 'production from coal'"
+      ],
+      "resolved": []
+    }
+  }
+}

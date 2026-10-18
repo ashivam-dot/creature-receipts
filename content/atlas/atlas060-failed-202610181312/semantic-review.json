@@ -1,0 +1,154 @@
+{
+  "errors": [],
+  "claims": [
+    {
+      "surface": "title",
+      "text": "Tourism Fuels 35.92% of Albania's Exports",
+      "isos": [
+        "ALB"
+      ],
+      "support": "Albania value is 35.9164177962174 (display: 35.92%)"
+    },
+    {
+      "surface": "description",
+      "text": "International tourism receipts make up over a third of export earnings for some nations, while others see almost no money from inbound travel.",
+      "isos": [],
+      "support": "Albania has 35.92% (>33%), and Guinea has 0.01% (almost no money)"
+    },
+    {
+      "surface": "beat_0",
+      "text": "In Albania, international tourism delivers 35.92% of exports. In Guinea, just 0.01%.",
+      "isos": [
+        "ALB",
+        "GIN"
+      ],
+      "support": "Albania: 35.92%, Guinea: 0.01%"
+    },
+    {
+      "surface": "beat_1",
+      "text": "Foreign traveler spending on transport and lodging gives Albania one of the highest shares.",
+      "isos": [
+        "ALB"
+      ],
+      "support": "Albania rank is 9, which is among the highest (threshold is 25% for top tier, rank 9 is 35.92%)"
+    },
+    {
+      "surface": "beat_2",
+      "text": "In The Gambia, visitors generate 30.17% of export income, while Ethiopia collects 29.58%.",
+      "isos": [
+        "GMB",
+        "ETH"
+      ],
+      "support": "Gambia, The: 30.17%, Ethiopia: 29.58%"
+    },
+    {
+      "surface": "beat_3",
+      "text": "By contrast, the USA relies on international travel for only 3.88% of exports.",
+      "isos": [
+        "USA"
+      ],
+      "support": "United States value is 3.87575312642398 (display: 3.88%)"
+    },
+    {
+      "surface": "beat_4",
+      "text": "Nigeria counts even less from foreign visitors, at 0.80%.",
+      "isos": [
+        "NGA"
+      ],
+      "support": "Nigeria value is 0.803762406232205 (display: 0.80%)"
+    },
+    {
+      "surface": "beat_5",
+      "text": "Guinea sits at the world's lowest mark, where inbound visitors provide 0.01%.",
+      "isos": [
+        "GIN"
+      ],
+      "support": "Guinea rank is 134, value 0.01% (lowest in universe of 134)"
+    },
+    {
+      "surface": "beat_6",
+      "text": "What share does tourism hold in your homeland?",
+      "isos": [],
+      "support": "Call to action prompt"
+    },
+    {
+      "surface": "card_6",
+      "text": "What is your share?, Tourism Share of Exports",
+      "isos": [],
+      "support": "Card display texts"
+    }
+  ],
+  "surface_checks": {
+    "title": {
+      "supported": true,
+      "reason": "Albania export share is 35.92%",
+      "isos": [
+        "ALB"
+      ]
+    },
+    "hook": {
+      "supported": true,
+      "reason": "Matches indicator topic",
+      "isos": []
+    },
+    "description": {
+      "supported": true,
+      "reason": "Reflects the range from over a third to near zero",
+      "isos": []
+    },
+    "beat_0": {
+      "supported": true,
+      "reason": "Albania is 35.92% and Guinea is 0.01%",
+      "isos": [
+        "ALB",
+        "GIN"
+      ]
+    },
+    "beat_1": {
+      "supported": true,
+      "reason": "Albania rank 9 is among the highest",
+      "isos": [
+        "ALB"
+      ]
+    },
+    "beat_2": {
+      "supported": true,
+      "reason": "The Gambia is 30.17% and Ethiopia is 29.58%",
+      "isos": [
+        "GMB",
+        "ETH"
+      ]
+    },
+    "beat_3": {
+      "supported": true,
+      "reason": "USA is 3.88%",
+      "isos": [
+        "USA"
+      ]
+    },
+    "beat_4": {
+      "supported": true,
+      "reason": "Nigeria is 0.80%",
+      "isos": [
+        "NGA"
+      ]
+    },
+    "beat_5": {
+      "supported": true,
+      "reason": "Guinea rank 134 is the lowest at 0.01%",
+      "isos": [
+        "GIN"
+      ]
+    },
+    "beat_6": {
+      "supported": true,
+      "reason": "Standard engagement question",
+      "isos": []
+    },
+    "card_6": {
+      "supported": true,
+      "reason": "Card title and subtitle match indicator",
+      "isos": []
+    }
+  }
+}

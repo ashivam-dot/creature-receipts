@@ -1,0 +1,60 @@
+id: atlas062
+title: Botswana Produces 95.4386% of Its Power From Coal
+hook_text: COAL POWER DIVIDE
+description: Comparing the share of electricity production from coal across different nations using World Bank data.
+hashtags:
+- '#maps'
+- '#geography'
+- '#mapsofworld'
+sources:
+- https://data.worldbank.org/indicator/EG.ELC.COAL.ZS
+dataset:
+  kind: worldbank
+  indicator: EG.ELC.COAL.ZS
+  label: Coal share in electricity production
+  unit: '%'
+  source: World Bank
+  min_year: 2019
+scale:
+  edges:
+  - 1.0
+  - 10.0
+  - 30.0
+  - 60.0
+  labels:
+  - 0%
+  - 1–10%
+  - 10–30%
+  - 30–60%
+  - '>60%'
+value_format: '{v:.4f}%'
+beats:
+- text: Mongolia generates 84.0554% of its electricity from coal. The UK generates just 0.0991%.
+  shot:
+    callouts:
+    - MNG
+    - GBR
+- text: Botswana is the world's highest. Botswana produces 95.4386% of all its electricity from coal.
+  shot:
+    kind: country
+    iso: BWA
+- text: Across southern Africa, South Africa generates 85.0182%, while the USA produces 17.1904%.
+  shot:
+    kind: group
+    isos:
+    - ZAF
+    - USA
+- text: In Southeast Asia, Indonesia generates 70.5202% of its power from coal.
+  shot:
+    kind: country
+    iso: IDN
+- text: China generates 58.5532% of its total electricity production from coal.
+  shot:
+    kind: country
+    iso: CHN
+- text: Where does your country stand?
+  shot:
+    kind: card
+    lines:
+    - Where does yours stand?
+    - Coal Share in Electricity

@@ -1,0 +1,59 @@
+id: atlas060
+title: Tourism Fuels 35.92% of Albania's Exports
+hook_text: TOURISM EXPORT SHARE
+description: International tourism receipts make up over a third of export earnings for some nations, while others
+  see almost no money from inbound travel.
+hashtags:
+- '#maps'
+- '#geography'
+- '#tourism'
+sources:
+- https://data.worldbank.org/indicator/ST.INT.RCPT.XP.ZS
+dataset:
+  kind: worldbank
+  indicator: ST.INT.RCPT.XP.ZS
+  label: Tourism share of total exports
+  unit: '%'
+  source: World Bank
+  min_year: 2019
+scale:
+  kind: threshold
+  at: 25.0
+  labels:
+  - Major tourism export economies
+  - Lower tourism reliance
+value_format: '{v:.2f}%'
+beats:
+- text: In Albania, international tourism delivers 35.92% of exports. In Guinea, just 0.01%.
+  shot:
+    callouts:
+    - ALB
+    - GIN
+- text: Foreign traveler spending on transport and lodging gives Albania one of the highest shares.
+  shot:
+    kind: country
+    iso: ALB
+- text: In The Gambia, visitors generate 30.17% of export income, while Ethiopia collects 29.58%.
+  shot:
+    kind: group
+    isos:
+    - GMB
+    - ETH
+- text: By contrast, the USA relies on international travel for only 3.88% of exports.
+  shot:
+    kind: country
+    iso: USA
+- text: Nigeria counts even less from foreign visitors, at 0.80%.
+  shot:
+    kind: country
+    iso: NGA
+- text: Guinea sits at the world's lowest mark, where inbound visitors provide 0.01%.
+  shot:
+    kind: country
+    iso: GIN
+- text: What share does tourism hold in your homeland?
+  shot:
+    kind: card
+    lines:
+    - What is your share?
+    - Tourism Share of Exports

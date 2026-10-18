@@ -1428,7 +1428,7 @@
     "#tourism"
    ],
    "source_url": "https://data.worldbank.org/indicator/ST.INT.RCPT.XP.ZS",
-   "status": "open",
+   "status": "failed:ValueError",
    "added_by": "refill"
   },
   {
@@ -1459,7 +1459,7 @@
     "#finance"
    ],
    "source_url": "https://data.worldbank.org/indicator/FX.OWN.TOTL.ZS",
-   "status": "open",
+   "status": "ready:atlas061",
    "added_by": "refill"
   },
   {
@@ -2026,7 +2026,7 @@
     "#mapsofworld"
    ],
    "source_url": "https://data.worldbank.org/indicator/EG.ELC.COAL.ZS",
-   "status": "open",
+   "status": "failed:ValueError",
    "added_by": "refill"
   },
   {
@@ -2217,6 +2217,380 @@
     "#economy"
    ],
    "source_url": "https://data.worldbank.org/indicator/SL.UEM.NEET.ZS",
+   "status": "open",
+   "added_by": "refill"
+  },
+  {
+   "id": "t065",
+   "topic": "Where People Consume the Most Energy",
+   "angle": "The average resident of Iceland uses over ten times more energy than the global median, leading the world at 16,200 kg of oil equivalent.",
+   "format": "map_reveal",
+   "dataset": {
+    "kind": "worldbank",
+    "indicator": "EG.USE.PCAP.KG.OE",
+    "label": "Energy use per person (kg oil eq.)",
+    "unit": "kg oil equivalent",
+    "source": "World Bank",
+    "min_year": 2019
+   },
+   "scale": {
+    "kind": "bins",
+    "edges": [
+     500,
+     1500,
+     3000,
+     6000
+    ],
+    "labels": [
+     "<500",
+     "500–1,500",
+     "1,500–3,000",
+     "3,000–6,000",
+     ">6,000"
+    ]
+   },
+   "value_format": "{v:,.0f} kg",
+   "hashtags": [
+    "#maps",
+    "#geography",
+    "#energy"
+   ],
+   "source_url": "https://data.worldbank.org/indicator/EG.USE.PCAP.KG.OE",
+   "status": "open",
+   "added_by": "refill"
+  },
+  {
+   "id": "t066",
+   "topic": "Where Freshwater Goes to Farming",
+   "angle": "In more than half of all countries, agriculture consumes the majority of freshwater withdrawals, exceeding 90% across large parts of Africa and Asia.",
+   "format": "rank_ladder",
+   "dataset": {
+    "kind": "worldbank",
+    "indicator": "ER.H2O.FWAG.ZS",
+    "label": "Share of freshwater used in agriculture",
+    "unit": "%",
+    "source": "World Bank",
+    "min_year": 2019
+   },
+   "scale": {
+    "kind": "threshold",
+    "at": 50,
+    "labels": [
+     "Over 50% used for farming",
+     "50% or less used for farming"
+    ]
+   },
+   "value_format": "{v:.0f}%",
+   "hashtags": [
+    "#maps",
+    "#geography",
+    "#waterresources"
+   ],
+   "source_url": "https://data.worldbank.org/indicator/ER.H2O.FWAG.ZS",
+   "status": "open",
+   "added_by": "refill"
+  },
+  {
+   "id": "t067",
+   "topic": "Electricity Lost Before Reaching Consumers",
+   "angle": "While top-performing grids lose under 3% of their electricity, some countries lose over half of all generated power in transit.",
+   "format": "map_reveal",
+   "dataset": {
+    "kind": "worldbank",
+    "indicator": "EG.ELC.LOSS.ZS",
+    "label": "Electricity lost in transmission",
+    "unit": "%",
+    "source": "World Bank",
+    "min_year": 2019
+   },
+   "scale": {
+    "kind": "bins",
+    "edges": [
+     5,
+     10,
+     15,
+     25
+    ],
+    "labels": [
+     "<5%",
+     "5–10%",
+     "10–15%",
+     "15–25%",
+     ">25%"
+    ]
+   },
+   "value_format": "{v:.1f}%",
+   "hashtags": [
+    "#maps",
+    "#geography",
+    "#energy"
+   ],
+   "source_url": "https://data.worldbank.org/indicator/EG.ELC.LOSS.ZS",
+   "status": "open",
+   "added_by": "refill"
+  },
+  {
+   "id": "t068",
+   "topic": "Desert Nations Lead Cereal Crop Yields",
+   "angle": "Hyper-irrigated Gulf states produce over 20,000 kilograms of cereal per hectare, far outpacing traditional agricultural breadbaskets.",
+   "format": "map_reveal",
+   "dataset": {
+    "kind": "worldbank",
+    "indicator": "AG.YLD.CREL.KG",
+    "label": "Cereal yield per hectare",
+    "unit": "kg/ha",
+    "source": "World Bank",
+    "min_year": 2019
+   },
+   "scale": {
+    "kind": "bins",
+    "edges": [
+     1500,
+     3000,
+     5000,
+     10000
+    ],
+    "labels": [
+     "<1,500",
+     "1,500–3,000",
+     "3,000–5,000",
+     "5,000–10,000",
+     ">10,000"
+    ]
+   },
+   "value_format": "{v:,.0f} kg/ha",
+   "hashtags": [
+    "#geography",
+    "#maps",
+    "#agriculture"
+   ],
+   "source_url": "https://data.worldbank.org/indicator/AG.YLD.CREL.KG",
+   "status": "open",
+   "added_by": "refill"
+  },
+  {
+   "id": "t069",
+   "topic": "Global Container Shipping Connectivity",
+   "angle": "While major maritime hubs score well above 100, half of all connected countries score under 15.",
+   "format": "rank_ladder",
+   "dataset": {
+    "kind": "worldbank",
+    "indicator": "IS.SHP.GCNW.XQ",
+    "label": "Liner shipping connectivity index",
+    "unit": "index points",
+    "source": "World Bank",
+    "min_year": 2019
+   },
+   "scale": {
+    "kind": "bins",
+    "edges": [
+     10,
+     25,
+     50,
+     100
+    ],
+    "labels": [
+     "<10",
+     "10–25",
+     "25–50",
+     "50–100",
+     ">100"
+    ]
+   },
+   "value_format": "{v:.1f}",
+   "hashtags": [
+    "#maps",
+    "#geography",
+    "#maritime"
+   ],
+   "source_url": "https://data.worldbank.org/indicator/IS.SHP.GCNW.XQ",
+   "status": "open",
+   "added_by": "refill"
+  },
+  {
+   "id": "t070",
+   "topic": "Where the World's Researchers Work",
+   "angle": "South Korea and Nordic nations have over 8,000 researchers per million people, while half of reporting countries count fewer than 1,220.",
+   "format": "map_reveal",
+   "dataset": {
+    "kind": "worldbank",
+    "indicator": "SP.POP.SCIE.RD.P6",
+    "label": "R&D researchers per million people",
+    "unit": "per million people",
+    "source": "World Bank",
+    "min_year": 2019
+   },
+   "scale": {
+    "kind": "bins",
+    "edges": [
+     200,
+     1000,
+     3000,
+     6000
+    ],
+    "labels": [
+     "<200",
+     "200–1,000",
+     "1,000–3,000",
+     "3,000–6,000",
+     ">6,000"
+    ]
+   },
+   "value_format": "{v:,.0f}",
+   "hashtags": [
+    "#maps",
+    "#geography",
+    "#science"
+   ],
+   "source_url": "https://data.worldbank.org/indicator/SP.POP.SCIE.RD.P6",
+   "status": "open",
+   "added_by": "refill"
+  },
+  {
+   "id": "t071",
+   "topic": "Access to Soap and Water at Home",
+   "angle": "In several countries, over 90% of people lack basic soap and water to wash their hands at home.",
+   "format": "map_reveal",
+   "dataset": {
+    "kind": "worldbank",
+    "indicator": "SH.STA.HYGN.ZS",
+    "label": "Access to soap and water at home",
+    "unit": "%",
+    "source": "World Bank",
+    "min_year": 2019
+   },
+   "scale": {
+    "kind": "bins",
+    "edges": [
+     25,
+     50,
+     75,
+     90
+    ],
+    "labels": [
+     "Under 25%",
+     "25% to 50%",
+     "50% to 75%",
+     "75% to 90%",
+     "Over 90%"
+    ]
+   },
+   "value_format": "{v:.1f}%",
+   "hashtags": [
+    "#maps",
+    "#geography",
+    "#globalhealth"
+   ],
+   "source_url": "https://data.worldbank.org/indicator/SH.STA.HYGN.ZS",
+   "status": "open",
+   "added_by": "refill"
+  },
+  {
+   "id": "t072",
+   "topic": "Who Relies on Foreign Energy?",
+   "angle": "Over half of nations depend on foreign energy supplies, while Norway exports more than seven times the energy it consumes.",
+   "format": "rank_ladder",
+   "dataset": {
+    "kind": "worldbank",
+    "indicator": "EG.IMP.CONS.ZS",
+    "label": "Net energy imports (% of energy use)",
+    "unit": "%",
+    "source": "World Bank",
+    "min_year": 2019
+   },
+   "scale": {
+    "kind": "threshold",
+    "at": 0,
+    "labels": [
+     "Net importer",
+     "Net exporter"
+    ]
+   },
+   "value_format": "{v:.0f}%",
+   "hashtags": [
+    "#maps改革",
+    "#geography",
+    "#energy"
+   ],
+   "source_url": "https://data.worldbank.org/indicator/EG.IMP.CONS.ZS",
+   "status": "open",
+   "added_by": "refill"
+  },
+  {
+   "id": "t073",
+   "topic": "Early Childhood Preschool Education Around the World",
+   "angle": "Preprimary gross enrollment ranges from under 2% in Chad and Somalia to over 115% in Ghana, Liberia, and Australia.",
+   "format": "map_reveal",
+   "dataset": {
+    "kind": "worldbank",
+    "indicator": "SE.PRE.ENRR",
+    "label": "Gross preprimary enrollment ratio",
+    "unit": "%",
+    "source": "World Bank",
+    "min_year": 2019
+   },
+   "scale": {
+    "kind": "bins",
+    "edges": [
+     25,
+     50,
+     75,
+     100
+    ],
+    "labels": [
+     "<25%",
+     "25–50%",
+     "50–75%",
+     "75–100%",
+     ">100%"
+    ]
+   },
+   "value_format": "{v:.0f}%",
+   "hashtags": [
+    "#maps",
+    "#geography",
+    "#geographyposts"
+   ],
+   "source_url": "https://data.worldbank.org/indicator/SE.PRE.ENRR",
+   "status": "open",
+   "added_by": "refill"
+  },
+  {
+   "id": "t074",
+   "topic": "Where Fuel Dominates Merchandise Exports",
+   "angle": "While mineral fuels make up under four percent of exports for half the world, several nations rely on them for over ninety percent of all goods shipped abroad.",
+   "format": "map_reveal",
+   "dataset": {
+    "kind": "worldbank",
+    "indicator": "TX.VAL.FUEL.ZS.UN",
+    "label": "Fuel share of merchandise exports",
+    "unit": "%",
+    "source": "World Bank",
+    "min_year": 2019
+   },
+   "scale": {
+    "kind": "bins",
+    "edges": [
+     1,
+     5,
+     20,
+     60
+    ],
+    "labels": [
+     "< 1%",
+     "1–5%",
+     "5–20%",
+     "20–60%",
+     "> 60%"
+    ]
+   },
+   "value_format": "{v:.1f}%",
+   "hashtags": [
+    "#maps",
+    "#geography",
+    "#globaltrade"
+   ],
+   "source_url": "https://data.worldbank.org/indicator/TX.VAL.FUEL.ZS.UN",
    "status": "open",
    "added_by": "refill"
   }

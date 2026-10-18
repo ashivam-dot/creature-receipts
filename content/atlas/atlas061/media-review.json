@@ -1,0 +1,24 @@
+{
+  "duration": 31.69,
+  "integrated_lufs": -14.4,
+  "true_peak_dbfs": -1.4,
+  "speech": {
+    "heard": "In Iceland, 100% of adults have a bank or mobile account. In South Sudan, 6%. USA has 97% of adults with a bank or mobile account. India has 89%, while Brazil has 86%. Nigeria has 63% of adults with an account. In Pakistan, 27% of adults have an account. South Sudan has 6%, the world's lowest, leaving most people completely unbanked. Where does your country land?",
+    "model": "small.en",
+    "media_sha256": "29b58221e62d96f3c76f916eeb3504dfcbc5402754c923a6aafb2e27a2544c89",
+    "primary_differences": [
+      "'the' heard as '(nothing)' after 'south sudan 6%'"
+    ],
+    "differences": [
+      "'the' heard as '(nothing)' after 'south sudan 6%'"
+    ],
+    "corroboration": {
+      "model": "base.en",
+      "heard": "In Iceland, 100% of adults have a bank or mobile account, in South Sudan, 6%. USA has 97% of adults with a bank or mobile account. India has 89%, while Brazil has 86%. Nigeria has 63% of adults with an account. In Pakistan, 27% of adults have an account. South Sudan has 6%, the world's lowest, leaving most people completely unbanked. Where does your country land?",
+      "differences": [
+        "'the' heard as '(nothing)' after 'south sudan 6%'"
+      ],
+      "resolved": []
+    }
+  }
+}

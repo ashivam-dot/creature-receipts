@@ -1,0 +1,59 @@
+id: atlas061
+title: 100% of Adults in Iceland Have an Account, South Sudan 6%
+hook_text: WHO CAN BANK
+description: Around the world, access to bank and mobile accounts ranges from universal coverage to fewer than one
+  in ten adults. Data from the World Bank.
+hashtags:
+- '#maps'
+- '#geography'
+- '#finance'
+sources:
+- https://data.worldbank.org/indicator/FX.OWN.TOTL.ZS
+dataset:
+  kind: worldbank
+  indicator: FX.OWN.TOTL.ZS
+  label: Adults with a bank or mobile account
+  unit: '%'
+  source: World Bank
+  min_year: 2019
+scale:
+  kind: threshold
+  at: 70.0
+  labels:
+  - 70% or more
+  - Under 70%
+value_format: '{v:.0f}%'
+beats:
+- text: In Iceland, 100% of adults have a bank or mobile account. In South Sudan, 6%.
+  shot:
+    callouts:
+    - ISL
+    - SSD
+- text: The USA has 97% of adults with a bank or mobile account.
+  shot:
+    kind: country
+    iso: USA
+- text: India has 89%, while Brazil has 86%.
+  shot:
+    kind: group
+    isos:
+    - IND
+    - BRA
+- text: Nigeria has 63% of adults with an account.
+  shot:
+    kind: country
+    iso: NGA
+- text: In Pakistan, 27% of adults have an account.
+  shot:
+    kind: country
+    iso: PAK
+- text: South Sudan has 6%, the world's lowest, leaving most people completely unbanked.
+  shot:
+    kind: country
+    iso: SSD
+- text: Where does your country land?
+  shot:
+    kind: card
+    lines:
+    - Where do you land?
+    - Bank or mobile account, World Bank

@@ -1,0 +1,37 @@
+{
+  "version": 1,
+  "passed": true,
+  "checked_at": "2026-10-18T13:35:54.385888+00:00",
+  "quality_module_sha256": "abf82a585f855cc47faceb8807dd90b999b3d330d3a23eac1d6dd346e7364b2d",
+  "media_sha256": "29b58221e62d96f3c76f916eeb3504dfcbc5402754c923a6aafb2e27a2544c89",
+  "script_sha256": "e3ca407d7dfe77079119ddd8a14fe66ac888e88d87fb2e0a990771e88e6ae93f",
+  "data_sha256": "925bffbe54f1c709014186d267869fe2141e24c965b38c2c7ad41bc5372370d3",
+  "claims_sha256": "ea1eb357673040450d42313057fa865e71ba1ad03f40c2c7b7f530f0f9dfa402",
+  "contact_sha256": "a8dff06589e37cbe3010846bf6c49ff53cbd3ebb30e6b6db16a0791b81a2d4cc",
+  "duration": 31.69,
+  "integrated_lufs": -14.4,
+  "true_peak_dbfs": -1.4,
+  "speech": {
+    "heard": "In Iceland, 100% of adults have a bank or mobile account. In South Sudan, 6%. USA has 97% of adults with a bank or mobile account. India has 89%, while Brazil has 86%. Nigeria has 63% of adults with an account. In Pakistan, 27% of adults have an account. South Sudan has 6%, the world's lowest, leaving most people completely unbanked. Where does your country land?",
+    "model": "small.en",
+    "media_sha256": "29b58221e62d96f3c76f916eeb3504dfcbc5402754c923a6aafb2e27a2544c89",
+    "primary_differences": [
+      "'the' heard as '(nothing)' after 'south sudan 6%'"
+    ],
+    "differences": [
+      "'the' heard as '(nothing)' after 'south sudan 6%'"
+    ],
+    "corroboration": {
+      "model": "base.en",
+      "heard": "In Iceland, 100% of adults have a bank or mobile account, in South Sudan, 6%. USA has 97% of adults with a bank or mobile account. India has 89%, while Brazil has 86%. Nigeria has 63% of adults with an account. In Pakistan, 27% of adults have an account. South Sudan has 6%, the world's lowest, leaving most people completely unbanked. Where does your country land?",
+      "differences": [
+        "'the' heard as '(nothing)' after 'south sudan 6%'"
+      ],
+      "resolved": []
+    }
+  },
+  "warnings": [
+    "'the' heard as '(nothing)' after 'south sudan 6%'"
+  ],
+  "speech_policy": "material-hard-entity-polarity-strict-minor-spelling-warning"
+}

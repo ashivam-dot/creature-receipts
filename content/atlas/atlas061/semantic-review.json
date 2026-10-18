@@ -1,0 +1,169 @@
+{
+  "errors": [
+    {
+      "surface": "beat_5",
+      "claim": "South Sudan has 6%, the world's lowest, leaving most people completely unbanked.",
+      "reason": "Most people in South Sudan is not supported by the data since 6% have accounts and the claim states most people are unbanked, but 'most people' implies an absolute majority of the global population or similar phrasing if not carefully scoped, though 6% having accounts means 94% are unbanked which is most people in South Sudan. Wait, the error rule states 'Most countries is not most people.' but more importantly, let's check if South Sudan is indeed the lowest: rank is 144, value is 5.83% (display 6%), which is the lowest in the universe (count 144). However, saying 'leaving most people completely unbanked' for a country means 94%, which is mathematically correct for that country, but let's check another error: title says '100% of Adults in Iceland Have an Account', value is 99.85% (display 100%). Let's check if there are actual errors. Wait, the prompt says 'Most countries is not most people.' Let's check beat_5 for any other issues. Is 6% the lowest? Yes, rank 144 is the maximum rank among 144 entities, meaning lowest value.",
+      "severity": "info"
+    }
+  ],
+  "claims": [
+    {
+      "surface": "title",
+      "text": "100% of Adults in Iceland Have an Account, South Sudan 6%",
+      "isos": [
+        "ISL",
+        "SSD"
+      ],
+      "support": "Iceland value is 99.8548358099717 (display 100%), South Sudan value is 5.8314074673825 (display 6%)"
+    },
+    {
+      "surface": "hook",
+      "text": "WHO CAN BANK",
+      "isos": [],
+      "support": "Global Findex Database, World Bank indicator FX.OWN.TOTL.ZS"
+    },
+    {
+      "surface": "description",
+      "text": "Around the world, access to bank and mobile accounts ranges from universal coverage to fewer than one in ten adults. Data from the World Bank.",
+      "isos": [],
+      "support": "Global Findex Database, World Bank indicator FX.OWN.TOTL.ZS"
+    },
+    {
+      "surface": "beat_0",
+      "text": "In Iceland, 100% of adults have a bank or mobile account. In South Sudan, 6%.",
+      "isos": [
+        "ISL",
+        "SSD"
+      ],
+      "support": "Iceland display 100%, South Sudan display 6%"
+    },
+    {
+      "surface": "beat_1",
+      "text": "The USA has 97% of adults with a bank or mobile account.",
+      "isos": [
+        "USA"
+      ],
+      "support": "United States display 97%"
+    },
+    {
+      "surface": "beat_2",
+      "text": "India has 89%, while Brazil has 86%.",
+      "isos": [
+        "IND",
+        "BRA"
+      ],
+      "support": "India display 89%, Brazil display 86%"
+    },
+    {
+      "surface": "beat_3",
+      "text": "Nigeria has 63% of adults with an account.",
+      "isos": [
+        "NGA"
+      ],
+      "support": "Nigeria display 63%"
+    },
+    {
+      "surface": "beat_4",
+      "text": "In Pakistan, 27% of adults have an account.",
+      "isos": [
+        "PAK"
+      ],
+      "support": "Pakistan display 27%"
+    },
+    {
+      "surface": "beat_5",
+      "text": "South Sudan has 6%, the world's lowest, leaving most people completely unbanked.",
+      "isos": [
+        "SSD"
+      ],
+      "support": "South Sudan display 6%, rank 144 out of 144"
+    },
+    {
+      "surface": "beat_6",
+      "text": "Where does your country land?",
+      "isos": [],
+      "support": "Call to action surface"
+    },
+    {
+      "surface": "card_6",
+      "text": "Where do you land?",
+      "isos": [],
+      "support": "Card title"
+    }
+  ],
+  "surface_checks": {
+    "title": {
+      "supported": true,
+      "reason": "Iceland and South Sudan values match display figures rounded to 100% and 6%",
+      "isos": [
+        "ISL",
+        "SSD"
+      ]
+    },
+    "hook": {
+      "supported": true,
+      "reason": "General thematic title matching the indicator",
+      "isos": []
+    },
+    "description": {
+      "supported": true,
+      "reason": "Accurately describes the range from near 100% to under 10% across the dataset",
+      "isos": []
+    },
+    "beat_0": {
+      "supported": true,
+      "reason": "Iceland is 100% (99.85%) and South Sudan is 6% (5.83%)",
+      "isos": [
+        "ISL",
+        "SSD"
+      ]
+    },
+    "beat_1": {
+      "supported": true,
+      "reason": "USA display is 97%",
+      "isos": [
+        "USA"
+      ]
+    },
+    "beat_2": {
+      "supported": true,
+      "reason": "India display is 89% and Brazil display is 86%",
+      "isos": [
+        "IND",
+        "BRA"
+      ]
+    },
+    "beat_3": {
+      "supported": true,
+      "reason": "Nigeria display is 63%",
+      "isos": [
+        "NGA"
+      ]
+    },
+    "beat_4": {
+      "supported": true,
+      "reason": "Pakistan display is 27%",
+      "isos": [
+        "PAK"
+      ]
+    },
+    "beat_5": {
+      "supported": true,
+      "reason": "South Sudan display is 6% and rank is 144 (lowest)",
+      "isos": [
+        "SSD"
+      ]
+    },
+    "beat_6": {
+      "supported": true,
+      "reason": "Standard concluding question",
+      "isos": []
+    },
+    "card_6": {
+      "supported": true,
+      "reason": "Card text matches source attribution and closing prompt",
+      "isos": []
+    }
+  }
+}
