@@ -1,0 +1,74 @@
+id: atlas058
+title: Years Children Must Legally Attend School
+format: rank_ladder
+hook_text: SEVENTEEN YEARS
+description: While children globally are typically required to attend school for 10 years, several Latin American
+  nations mandate up to 17 years.
+hashtags:
+- '#geography'
+- '#maps'
+- '#education'
+sources:
+- https://data.worldbank.org/indicator/SE.COM.DURS
+dataset:
+  kind: worldbank
+  indicator: SE.COM.DURS
+  label: Compulsory education duration
+  unit: years
+  source: World Bank
+  min_year: 2019
+scale:
+  edges:
+  - 6.0
+  - 9.0
+  - 11.0
+  - 13.0
+  labels:
+  - Under 6
+  - 6 to 8
+  - 9 to 10
+  - 11 to 12
+  - 13 and over
+value_format: '{v:.0f} years'
+beats:
+- text: Children globally must attend school for 10 years. In Venezuela, it is 17.
+  shot:
+    callouts:
+    - VEN
+- text: Duration of compulsory education is the number of years that children are legally obliged to attend school.
+  shot:
+    kind: country
+    iso: VEN
+- text: Venezuela has 2.1 times India, where school is 8 years.
+  shot:
+    kind: country
+    iso: VEN
+- text: 'Guatemala: 16 years. Dominican Rep.: 15 years. Ecuador: 15 years.'
+  shot:
+    kind: rank
+    isos:
+    - GTM
+    - DOM
+    - ECU
+- text: 'USA: 12 years. China: 9 years.'
+  shot:
+    kind: group
+    isos:
+    - USA
+    - CHN
+- text: 'Liberia: 6 years. Madagascar: 5 years.'
+  shot:
+    kind: group
+    isos:
+    - LBR
+    - MDG
+- text: 'New Caledonia: 0 years.'
+  shot:
+    kind: country
+    iso: NCL
+- text: Where does your country land?
+  shot:
+    kind: card
+    lines:
+    - Where does your country land?
+    - World Bank, 2025

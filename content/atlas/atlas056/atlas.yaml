@@ -1,0 +1,65 @@
+id: atlas056
+title: 'Where More Boys Are Born: 1.01 to 1.11 Worldwide'
+hook_text: MORE BOYS WORLDWIDE
+description: In every country across the globe, more boys are born than girls. Here is how male births per female
+  birth compare worldwide.
+hashtags:
+- '#maps'
+- '#geography'
+- '#demographics'
+sources:
+- https://data.worldbank.org/indicator/SP.POP.BRTH.MF
+dataset:
+  kind: worldbank
+  indicator: SP.POP.BRTH.MF
+  label: Male births per female birth
+  unit: boys per girl
+  source: World Bank
+  min_year: 2019
+scale:
+  edges:
+  - 1.03
+  - 1.05
+  - 1.07
+  - 1.1
+  labels:
+  - < 1.03
+  - 1.03–1.05
+  - 1.05–1.07
+  - 1.07–1.10
+  - ≥ 1.10
+value_format: '{v:.2f}'
+beats:
+- text: In Zambia, male births per female birth sit at 1.01. In Azerbaijan, 1.11.
+  shot:
+    callouts:
+    - ZMB
+    - AZE
+- text: USA sits at the world median of 1.05 boys per girl.
+  shot:
+    kind: country
+    iso: USA
+- text: Most nations stay close to that line. Germany has 1.06, while Brazil has 1.04.
+  shot:
+    kind: group
+    isos:
+    - DEU
+    - BRA
+- text: Zambia has the world's lowest mark, at 1.01.
+  shot:
+    kind: country
+    iso: ZMB
+- text: India pushes higher, with 1.07 boys per girl.
+  shot:
+    kind: country
+    iso: IND
+- text: Azerbaijan is one of the highest on the globe, at 1.11.
+  shot:
+    kind: country
+    iso: AZE
+- text: Where does your country land?
+  shot:
+    kind: card
+    lines:
+    - Where do you land?
+    - Male births per female birth, 2024

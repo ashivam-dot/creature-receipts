@@ -1,0 +1,61 @@
+id: atlas057
+title: Primary School Starting Ages Around the World
+hook_text: GLOBAL AGES
+description: Primary school starting age is the age at which students would enter primary education, assuming they
+  had started at the official entrance age for the lowest level of education, had studied full-time throughout and
+  had progressed through the system without repeating or skipping a grade.
+hashtags:
+- '#maps'',''#geography'',''#mapsoftheworld'
+sources:
+- https://data.worldbank.org/indicator/SE.PRM.AGES
+dataset:
+  kind: worldbank
+  indicator: SE.PRM.AGES
+  label: Primary school starting age
+  unit: years
+  source: World Bank
+  min_year: 2019
+scale:
+  kind: threshold
+  at: 6.0
+  labels:
+  - 6 years or older
+  - Under 6 years
+value_format: '{v:.0f} years'
+beats:
+- text: While 179 countries and territories set their primary school starting age at 6 or older, 24 start earlier.
+  shot:
+    callouts:
+    - GBR
+    - AFG
+- text: 'UK: 5 years. The UK is the world''s lowest, alongside countries like Ireland and Pakistan.'
+  shot:
+    kind: country
+    iso: GBR
+- text: 'Afghanistan: 7 years. Afghanistan is the world''s highest, matching countries like Bulgaria and Finland.'
+  shot:
+    kind: country
+    iso: AFG
+- text: India, USA and China all set their official starting age at 6 years.
+  shot:
+    kind: group
+    isos:
+    - IND
+    - USA
+    - CHN
+- text: Indonesia and Russia both start children at 7 years.
+  shot:
+    kind: group
+    isos:
+    - IDN
+    - RUS
+- text: 'Australia: 6 years. Australia sits right at the global median of 6 years.'
+  shot:
+    kind: country
+    iso: AUS
+- text: Where does your country land?
+  shot:
+    kind: card
+    lines:
+    - Where does your country land?
+    - World Bank, 2025

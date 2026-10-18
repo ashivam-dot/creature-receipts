@@ -1,0 +1,181 @@
+{
+  "errors": [],
+  "claims": [
+    {
+      "surface": "title",
+      "text": "Years Children Must Legally Attend School",
+      "isos": [],
+      "support": "Indicator: SE.COM.DURS - Duration of compulsory education (years)"
+    },
+    {
+      "surface": "hook",
+      "text": "SEVENTEEN YEARS",
+      "isos": [
+        "VEN"
+      ],
+      "support": "Venezuela value: 17.0 years"
+    },
+    {
+      "surface": "description",
+      "text": "While children globally are typically required to attend school for 10 years, several Latin American nations mandate up to 17 years.",
+      "isos": [
+        "VEN"
+      ],
+      "support": "Venezuela value: 17.0 years"
+    },
+    {
+      "surface": "beat_0",
+      "text": "Children globally must attend school for 10 years. In Venezuela, it is 17.",
+      "isos": [
+        "VEN"
+      ],
+      "support": "Venezuela value: 17.0 years"
+    },
+    {
+      "surface": "beat_1",
+      "text": "Duration of compulsory education is the number of years that children are legally obliged to attend school.",
+      "isos": [],
+      "support": "Definition: Duration of compulsory education is the number of years that children are legally obliged to attend school."
+    },
+    {
+      "surface": "beat_2",
+      "text": "Venezuela has 2.1 times India, where school is 8 years.",
+      "isos": [
+        "VEN",
+        "IND"
+      ],
+      "support": "Venezuela: 17.0 years, India: 8.0 years"
+    },
+    {
+      "surface": "beat_3",
+      "text": "Guatemala: 16 years. Dominican Rep.: 15 years. Ecuador: 15 years.",
+      "isos": [
+        "GTM",
+        "DOM",
+        "ECU"
+      ],
+      "support": "Guatemala: 16.0 years, Dominican Republic: 15.0 years, Ecuador: 15.0 years"
+    },
+    {
+      "surface": "beat_4",
+      "text": "USA: 12 years. China: 9 years.",
+      "isos": [
+        "USA",
+        "CHN"
+      ],
+      "support": "United States: 12.0 years, China: 9.0 years"
+    },
+    {
+      "surface": "beat_5",
+      "text": "Liberia: 6 years. Madagascar: 5 years.",
+      "isos": [
+        "LBR",
+        "MDG"
+      ],
+      "support": "Liberia: 6.0 years, Madagascar: 5.0 years"
+    },
+    {
+      "surface": "beat_6",
+      "text": "New Caledonia: 0 years.",
+      "isos": [
+        "NCL"
+      ],
+      "support": "New Caledonia: 0.0 years"
+    },
+    {
+      "surface": "beat_7",
+      "text": "Where does your country land?",
+      "isos": [],
+      "support": "Card question"
+    },
+    {
+      "surface": "card_7",
+      "text": "Where does your country land?",
+      "isos": [],
+      "support": "Card question"
+    }
+  ],
+  "surface_checks": {
+    "title": {
+      "supported": true,
+      "reason": "Accurately describes the indicator SE.COM.DURS",
+      "isos": []
+    },
+    "hook": {
+      "supported": true,
+      "reason": "Matches Venezuela's value of 17 years",
+      "isos": [
+        "VEN"
+      ]
+    },
+    "description": {
+      "supported": true,
+      "reason": "Reflects the maximum value of 17 years in Venezuela",
+      "isos": [
+        "VEN"
+      ]
+    },
+    "beat_0": {
+      "supported": true,
+      "reason": "Venezuela value is 17 years",
+      "isos": [
+        "VEN"
+      ]
+    },
+    "beat_1": {
+      "supported": true,
+      "reason": "Matches official definition",
+      "isos": []
+    },
+    "beat_2": {
+      "supported": true,
+      "reason": "Venezuela is 17 years and India is 8 years",
+      "isos": [
+        "VEN",
+        "IND"
+      ]
+    },
+    "beat_3": {
+      "supported": true,
+      "reason": "Guatemala is 16, Dominican Republic is 15, Ecuador is 15",
+      "isos": [
+        "GTM",
+        "DOM",
+        "ECU"
+      ]
+    },
+    "beat_4": {
+      "supported": true,
+      "reason": "United States is 12 and China is 9",
+      "isos": [
+        "USA",
+        "CHN"
+      ]
+    },
+    "beat_5": {
+      "supported": true,
+      "reason": "Liberia is 6 and Madagascar is 5",
+      "isos": [
+        "LBR",
+        "MDG"
+      ]
+    },
+    "beat_6": {
+      "supported": true,
+      "reason": "New Caledonia is 0 years",
+      "isos": [
+        "NCL"
+      ]
+    },
+    "beat_7": {
+      "supported": true,
+      "reason": "Standard card prompt",
+      "isos": []
+    },
+    "card_7": {
+      "supported": true,
+      "reason": "Standard card prompt and source year 2025",
+      "isos": []
+    }
+  }
+}

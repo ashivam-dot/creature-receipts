@@ -1,0 +1,156 @@
+{
+  "errors": [],
+  "claims": [
+    {
+      "surface": "title",
+      "text": "Where More Boys Are Born: 1.01 to 1.11 Worldwide",
+      "isos": [],
+      "support": "The evidence covers values ranging from Namibia/Malawi at 1.011 up to Liechtenstein at 1.163, with Azerbaijan at 1.113."
+    },
+    {
+      "surface": "hook",
+      "text": "MORE BOYS WORLDWIDE",
+      "isos": [],
+      "support": "All values in the evidence are above 1.0, meaning more boys are born than girls everywhere."
+    },
+    {
+      "surface": "description",
+      "text": "In every country across the globe, more boys are born than girls. Here is how male births per female birth compare worldwide.",
+      "isos": [],
+      "support": "All 208 entities have values greater than 1.0."
+    },
+    {
+      "surface": "beat_0",
+      "text": "In Zambia, male births per female birth sit at 1.01. In Azerbaijan, 1.11.",
+      "isos": [
+        "ZMB",
+        "AZE"
+      ],
+      "support": "Zambia (ZMB) value is 1.011 (display 1.01), Azerbaijan (AZE) value is 1.113 (display 1.11)."
+    },
+    {
+      "surface": "beat_1",
+      "text": "USA sits at the world median of 1.05 boys per girl.",
+      "isos": [
+        "USA"
+      ],
+      "support": "USA value is 1.049, displayed as 1.05."
+    },
+    {
+      "surface": "beat_2",
+      "text": "Most nations stay close to that line. Germany has 1.06, while Brazil has 1.04.",
+      "isos": [
+        "DEU",
+        "BRA"
+      ],
+      "support": "Germany (DEU) is 1.056 (display 1.06), Brazil (BRA) is 1.045 (display 1.04)."
+    },
+    {
+      "surface": "beat_3",
+      "text": "Zambia has the world's lowest mark, at 1.01.",
+      "isos": [
+        "ZMB"
+      ],
+      "support": "Zambia (ZMB) rank is 207 with value 1.011 (tied with Zimbabwe, Namibia is 1.011 at rank 207 as well)."
+    },
+    {
+      "surface": "beat_4",
+      "text": "India pushes higher, with 1.07 boys per girl.",
+      "isos": [
+        "IND"
+      ],
+      "support": "India (IND) value is 1.071 (display 1.07)."
+    },
+    {
+      "surface": "beat_5",
+      "text": "Azerbaijan is one of the highest on the globe, at 1.11.",
+      "isos": [
+        "AZE"
+      ],
+      "support": "Azerbaijan (AZE) value is 1.113 (display 1.11), rank 3."
+    },
+    {
+      "surface": "beat_6",
+      "text": "Where does your country land?",
+      "isos": [],
+      "support": "Introductory or concluding interactive question."
+    },
+    {
+      "surface": "card_6",
+      "text": "Where do you land?, Male births per female birth, 2024",
+      "isos": [],
+      "support": "Matches year label 2024 and indicator definition."
+    }
+  ],
+  "surface_checks": {
+    "title": {
+      "supported": true,
+      "reason": "Range covers minimum and maximum rounded values in the dataset.",
+      "isos": []
+    },
+    "hook": {
+      "supported": true,
+      "reason": "All ratios exceed 1.0.",
+      "isos": []
+    },
+    "description": {
+      "supported": true,
+      "reason": "All entities in the dataset show values greater than 1.0.",
+      "isos": []
+    },
+    "beat_0": {
+      "supported": true,
+      "reason": "Zambia is 1.011 and Azerbaijan is 1.113.",
+      "isos": [
+        "ZMB",
+        "AZE"
+      ]
+    },
+    "beat_1": {
+      "supported": true,
+      "reason": "USA value is 1.049, displayed as 1.05.",
+      "isos": [
+        "USA"
+      ]
+    },
+    "beat_2": {
+      "supported": true,
+      "reason": "Germany is 1.056 (1.06) and Brazil is 1.045 (1.04).",
+      "isos": [
+        "DEU",
+        "BRA"
+      ]
+    },
+    "beat_3": {
+      "supported": true,
+      "reason": "Zambia's value rounds to 1.01 and matches lowest ranks.",
+      "isos": [
+        "ZMB"
+      ]
+    },
+    "beat_4": {
+      "supported": true,
+      "reason": "India is 1.071 (1.07).",
+      "isos": [
+        "IND"
+      ]
+    },
+    "beat_5": {
+      "supported": true,
+      "reason": "Azerbaijan is 1.113 (1.11), ranking 3rd globally.",
+      "isos": [
+        "AZE"
+      ]
+    },
+    "beat_6": {
+      "supported": true,
+      "reason": "Standard closing question.",
+      "isos": []
+    },
+    "card_6": {
+      "supported": true,
+      "reason": "Matches indicator and year 2024.",
+      "isos": []
+    }
+  }
+}
