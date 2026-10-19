@@ -1,0 +1,164 @@
+{
+  "errors": [],
+  "claims": [
+    {
+      "surface": "title",
+      "text": "In Belarus 65.7% of Youth Neither Work Nor Study",
+      "isos": [
+        "BLR"
+      ],
+      "support": "BLR value is 65.734, display 65.7%, year 2024"
+    },
+    {
+      "surface": "hook",
+      "text": "YOUTH LEFT BEHIND",
+      "isos": [],
+      "support": "Stylistic hook"
+    },
+    {
+      "surface": "description",
+      "text": "Across the world, millions of young people aged 15 to 24 are neither in education nor employment. Here is how nations compare using World Bank data.",
+      "isos": [],
+      "support": "Indicator SL.UEM.NEET.ZS definition covers youth aged 15 to 24"
+    },
+    {
+      "surface": "beat_0",
+      "text": "In Belarus, 65.7% of youth are neither working nor in school. In Japan, 3.1%.",
+      "isos": [
+        "BLR",
+        "JPN"
+      ],
+      "support": "BLR is 65.7%, JPN is 3.1% (rank 154)"
+    },
+    {
+      "surface": "beat_1",
+      "text": "That gives Belarus the world's highest share of disengaged young people.",
+      "isos": [
+        "BLR"
+      ],
+      "support": "BLR rank is 1"
+    },
+    {
+      "surface": "beat_2",
+      "text": "Japan holds the world's lowest share, keeping nearly everyone learning or earning.",
+      "isos": [
+        "JPN"
+      ],
+      "support": "JPN rank is 154 (lowest in the 154-country universe)"
+    },
+    {
+      "surface": "beat_3",
+      "text": "India has 25.6% of young people aged 15 to 24 neither working nor in school.",
+      "isos": [
+        "IND"
+      ],
+      "support": "IND value is 25.554, display 25.6%"
+    },
+    {
+      "surface": "beat_4",
+      "text": "USA has 11.6%, while Germany drops to 8.2%.",
+      "isos": [
+        "USA",
+        "DEU"
+      ],
+      "support": "USA is 11.6%, DEU is 8.2%"
+    },
+    {
+      "surface": "beat_5",
+      "text": "Norway has 6.2%, Sweden has 5.0%, and Netherlands has 3.9%.",
+      "isos": [
+        "NOR",
+        "SWE",
+        "NLD"
+      ],
+      "support": "NOR is 6.2%, SWE is 5.0%, NLD is 3.9%"
+    },
+    {
+      "surface": "beat_6",
+      "text": "How does your country compare?",
+      "isos": [],
+      "support": "Call to action question"
+    },
+    {
+      "surface": "card_6",
+      "text": "How do you compare?, Youth Not in School or Work (%)",
+      "isos": [],
+      "support": "Card matching indicator definition"
+    }
+  ],
+  "surface_checks": {
+    "title": {
+      "supported": true,
+      "reason": "Belarus NEET rate is 65.7%",
+      "isos": [
+        "BLR"
+      ]
+    },
+    "hook": {
+      "supported": true,
+      "reason": "Stylistic hook",
+      "isos": []
+    },
+    "description": {
+      "supported": true,
+      "reason": "Matches indicator definition for ages 15 to 24",
+      "isos": []
+    },
+    "beat_0": {
+      "supported": true,
+      "reason": "Belarus is 65.7% and Japan is 3.1%",
+      "isos": [
+        "BLR",
+        "JPN"
+      ]
+    },
+    "beat_1": {
+      "supported": true,
+      "reason": "Belarus rank is 1",
+      "isos": [
+        "BLR"
+      ]
+    },
+    "beat_2": {
+      "supported": true,
+      "reason": "Japan rank is 154",
+      "isos": [
+        "JPN"
+      ]
+    },
+    "beat_3": {
+      "supported": true,
+      "reason": "India NEET rate is 25.6%",
+      "isos": [
+        "IND"
+      ]
+    },
+    "beat_4": {
+      "supported": true,
+      "reason": "USA is 11.6% and Germany is 8.2%",
+      "isos": [
+        "USA",
+        "DEU"
+      ]
+    },
+    "beat_5": {
+      "supported": true,
+      "reason": "Norway is 6.2%, Sweden is 5.0%, Netherlands is 3.9%",
+      "isos": [
+        "NOR",
+        "SWE",
+        "NLD"
+      ]
+    },
+    "beat_6": {
+      "supported": true,
+      "reason": "Call to action question",
+      "isos": []
+    },
+    "card_6": {
+      "supported": true,
+      "reason": "Card text matches indicator",
+      "isos": []
+    }
+  }
+}

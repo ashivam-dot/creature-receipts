@@ -1,0 +1,164 @@
+{
+  "errors": [],
+  "claims": [
+    {
+      "surface": "title",
+      "text": "Women hold 52.3% of management roles in Jordan",
+      "isos": [
+        "JOR"
+      ],
+      "support": "Jordan value is 52.314%, displayed as 52.3%"
+    },
+    {
+      "surface": "hook",
+      "text": "THE MANAGEMENT DIVIDE",
+      "isos": [],
+      "support": "Stylistic hook introducing the theme of management shares."
+    },
+    {
+      "surface": "description",
+      "text": "A documentary-style look at the female share of senior and middle management positions globally.",
+      "isos": [],
+      "support": "Matches indicator SL.EMP.SMGT.FE.ZS definition."
+    },
+    {
+      "surface": "beat_0",
+      "text": "Jordan has 52.3% women in senior and middle management. India has 11.9%.",
+      "isos": [
+        "JOR",
+        "IND"
+      ],
+      "support": "Jordan value is 52.314% (52.3%), India value is 11.916% (11.9%)"
+    },
+    {
+      "surface": "beat_1",
+      "text": "This counts only senior and middle management, excluding all junior roles.",
+      "isos": [],
+      "support": "Definition specifies senior and middle management only, excluding junior management."
+    },
+    {
+      "surface": "beat_2",
+      "text": "Afghanistan has 5.9%, the world's lowest. Jordan has 8.9 times the share Afghanistan has.",
+      "isos": [
+        "AFG",
+        "JOR"
+      ],
+      "support": "Afghanistan rank is 129 (lowest) with value 5.889% (5.9%); Jordan 52.314 / 5.889 approx 8.88"
+    },
+    {
+      "surface": "beat_3",
+      "text": "Other leaders include Botswana at 48.2%, Montenegro at 48.1%, and Malawi at 47.7%.",
+      "isos": [
+        "BWA",
+        "MNE",
+        "MWI"
+      ],
+      "support": "Botswana value is 48.212% (48.2%), Montenegro value is 48.114% (48.1%), Malawi value is 47.736% (47.7%)"
+    },
+    {
+      "surface": "beat_4",
+      "text": "Major economies vary: the USA has 44.1%, while Japan has 14.5%.",
+      "isos": [
+        "USA",
+        "JPN"
+      ],
+      "support": "USA value is 44.059% (44.1%), Japan value is 14.494% (14.5%)"
+    },
+    {
+      "surface": "beat_5",
+      "text": "The global median is 33.4%. Brazil is above that with 38.7%.",
+      "isos": [
+        "ALB",
+        "BRA"
+      ],
+      "support": "Albania (median rank value among 129 countries, rank 65) value is 33.407% (33.4%); Brazil value is 38.702% (38.7%)"
+    },
+    {
+      "surface": "beat_6",
+      "text": "Where does your country land?",
+      "isos": [],
+      "support": "Engaging closing question."
+    },
+    {
+      "surface": "card_6",
+      "text": "Where do you land? Female Share of Management (%)",
+      "isos": [],
+      "support": "Card text reflecting indicator name and closing question."
+    }
+  ],
+  "surface_checks": {
+    "title": {
+      "supported": true,
+      "reason": "Jordan's value is 52.3%",
+      "isos": [
+        "JOR"
+      ]
+    },
+    "hook": {
+      "supported": true,
+      "reason": "Stylistic title introducing the topic",
+      "isos": []
+    },
+    "description": {
+      "supported": true,
+      "reason": "Accurately describes indicator coverage",
+      "isos": []
+    },
+    "beat_0": {
+      "supported": true,
+      "reason": "Jordan is 52.3% and India is 11.9% in evidence",
+      "isos": [
+        "JOR",
+        "IND"
+      ]
+    },
+    "beat_1": {
+      "supported": true,
+      "reason": "Matches definition excluding junior management",
+      "isos": []
+    },
+    "beat_2": {
+      "supported": true,
+      "reason": "Afghanistan is rank 129 at 5.9% and Jordan is 8.9x that value",
+      "isos": [
+        "AFG",
+        "JOR"
+      ]
+    },
+    "beat_3": {
+      "supported": true,
+      "reason": "Botswana, Montenegro, and Malawi values match evidence",
+      "isos": [
+        "BWA",
+        "MNE",
+        "MWI"
+      ]
+    },
+    "beat_4": {
+      "supported": true,
+      "reason": "USA and Japan values match evidence",
+      "isos": [
+        "USA",
+        "JPN"
+      ]
+    },
+    "beat_5": {
+      "supported": true,
+      "reason": "Median country Albania is 33.4% and Brazil is 38.7%",
+      "isos": [
+        "ALB",
+        "BRA"
+      ]
+    },
+    "beat_6": {
+      "supported": true,
+      "reason": "Engaging outro question",
+      "isos": []
+    },
+    "card_6": {
+      "supported": true,
+      "reason": "Card displays correct question and unit name",
+      "isos": []
+    }
+  }
+}

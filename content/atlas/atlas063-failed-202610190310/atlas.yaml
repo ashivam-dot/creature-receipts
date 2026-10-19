@@ -1,0 +1,68 @@
+id: atlas063
+title: Women hold 52.3% of management roles in Jordan
+format: rank_ladder
+hook_text: THE MANAGEMENT DIVIDE
+description: A documentary-style look at the female share of senior and middle management positions globally.
+hashtags:
+- '#maps改革'
+- '#maps'
+- '#geography'
+sources:
+- https://data.worldbank.org/indicator/SL.EMP.SMGT.FE.ZS
+dataset:
+  kind: worldbank
+  indicator: SL.EMP.SMGT.FE.ZS
+  label: Female share of management roles
+  unit: '%'
+  source: World Bank
+  min_year: 2019
+scale:
+  edges:
+  - 20.0
+  - 30.0
+  - 40.0
+  - 50.0
+  labels:
+  - Under 20%
+  - 20% to 30%
+  - 30% to 40%
+  - 40% to 50%
+  - 50% or more
+value_format: '{v:.1f}%'
+beats:
+- text: Jordan has 52.3% women in senior and middle management. India has 11.9%.
+  shot:
+    callouts:
+    - JOR
+    - IND
+- text: This counts only senior and middle management, excluding all junior roles.
+  shot:
+    kind: country
+    iso: JOR
+- text: Afghanistan has 5.9%, the world's lowest. Jordan has 8.9 times the share Afghanistan has.
+  shot:
+    kind: country
+    iso: AFG
+- text: Other leaders include Botswana at 48.2%, Montenegro at 48.1%, and Malawi at 47.7%.
+  shot:
+    kind: rank
+    isos:
+    - BWA
+    - MNE
+    - MWI
+- text: 'Major economies vary: the USA has 44.1%, while Japan has 14.5%.'
+  shot:
+    kind: group
+    isos:
+    - USA
+    - JPN
+- text: The global median is 33.4%. Brazil is above that with 38.7%.
+  shot:
+    kind: country
+    iso: BRA
+- text: Where does your country land?
+  shot:
+    kind: card
+    lines:
+    - Where do you land?
+    - Female Share of Management (%)

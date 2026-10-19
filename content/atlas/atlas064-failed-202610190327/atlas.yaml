@@ -1,0 +1,68 @@
+id: atlas064
+title: In Belarus 65.7% of Youth Neither Work Nor Study
+hook_text: YOUTH LEFT BEHIND
+description: Across the world, millions of young people aged 15 to 24 are neither in education nor employment. Here
+  is how nations compare using World Bank data.
+hashtags:
+- '#maps'
+- '#geography'
+- '#economy'
+sources:
+- https://data.worldbank.org/indicator/SL.UEM.NEET.ZS
+dataset:
+  kind: worldbank
+  indicator: SL.UEM.NEET.ZS
+  label: Youth not in school or employment
+  unit: '%'
+  source: World Bank
+  min_year: 2019
+scale:
+  edges:
+  - 10.0
+  - 15.0
+  - 20.0
+  - 30.0
+  labels:
+  - <10%
+  - 10–15%
+  - 15–20%
+  - 20–30%
+  - '>30%'
+value_format: '{v:.1f}%'
+beats:
+- text: In Belarus, 65.7% of youth are neither working nor in school. In Japan, 3.1%.
+  shot:
+    callouts:
+    - BLR
+    - JPN
+- text: That gives Belarus the world's highest share of disengaged young people.
+  shot:
+    kind: country
+    iso: BLR
+- text: Japan holds the world's lowest share, keeping nearly everyone learning or earning.
+  shot:
+    kind: country
+    iso: JPN
+- text: India has 25.6% of young people aged 15 to 24 neither working nor in school.
+  shot:
+    kind: country
+    iso: IND
+- text: USA has 11.6%, while Germany drops to 8.2%.
+  shot:
+    kind: group
+    isos:
+    - USA
+    - DEU
+- text: Norway has 6.2%, Sweden has 5.0%, and Netherlands has 3.9%.
+  shot:
+    kind: rank
+    isos:
+    - NOR
+    - SWE
+    - NLD
+- text: How does your country compare?
+  shot:
+    kind: card
+    lines:
+    - How do you compare?
+    - Youth Not in School or Work (%)

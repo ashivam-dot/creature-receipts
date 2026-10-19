@@ -1,0 +1,25 @@
+{
+  "duration": 38.97,
+  "integrated_lufs": -14.4,
+  "true_peak_dbfs": -1.4,
+  "speech": {
+    "heard": "In Belarus, 65.7% of youth are neither working nor in school. In Japan, 3.1%. That gives Belarus the world's highest share of disengaged young people. Japan holds the world's lowest share, keeping nearly everyone learning or earning. India has 25.6% of young people aged 15 to 24 neither working nor in school. USA has 11.6 percent, while Germany drops to 8.2 percent. Norway has 6.2 percent, Sweden has 5 percent, and Netherlands has 3.9 percent. How does your country compare?",
+    "model": "small.en",
+    "media_sha256": "d3f9e36b8971ee1af7829beafe45774c945a800423cae7b8889cb911f2320a08",
+    "primary_differences": [
+      "'5.0%' heard as '5%' after '6.2% sweden has'"
+    ],
+    "differences": [
+      "'5.0%' heard as '5%' after '6.2% sweden has'",
+      "base.en: '5.0%' heard as '5%' after '6.2% sweden has'"
+    ],
+    "corroboration": {
+      "model": "base.en",
+      "heard": "In Belarus, 65.7% of youth are neither working nor in school, in Japan, 3.1%. That gives Belarus the world's highest share of disengaged young people. Japan holds the world's lowest share, keeping nearly everyone learning or earning. India has 25.6% of young people aged 15 to 24 neither working nor in school. USA has 11.6% while Germany drops to 8.2%. Norway has 6.2%, Sweden has 5%, and Netherlands has 3.9%. How does your country compare?",
+      "differences": [
+        "'5.0%' heard as '5%' after '6.2% sweden has'"
+      ],
+      "resolved": []
+    }
+  }
+}
