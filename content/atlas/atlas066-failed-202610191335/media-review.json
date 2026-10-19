@@ -1,0 +1,27 @@
+{
+  "duration": 39.62,
+  "integrated_lufs": -14.4,
+  "true_peak_dbfs": -1.4,
+  "speech": {
+    "heard": "In 104 of 178 countries and territories, agriculture consumes the majority of freshwater withdrawals. Somalia 99.5%, Afghanistan 98.2%, Nepal 98.1%. Somalia takes 7.1 times the water that goes to farming in the UK, which uses 14%. The United States uses 39.7%, China is sixty two point one percent India hits ninety point four percent for irrigation and livestock Ireland uses just two point four percent What is your country land?",
+    "model": "small.en",
+    "media_sha256": "69ea396411fcd5ea88f82231f432f8fb86138e03004e596c97fd3167b20708d2",
+    "primary_differences": [
+      "'14.0%' heard as '14%' after 'uk which uses'",
+      "'where does' heard as 'what is' after 'uses just 2.4%'"
+    ],
+    "differences": [
+      "'14.0%' heard as '14%' after 'uk which uses'",
+      "'where does' heard as 'what is' after 'uses just 2.4%'",
+      "base.en: '14.0% the' heard as '14%' after 'uk which uses'"
+    ],
+    "corroboration": {
+      "model": "base.en",
+      "heard": "In 104 of 178 countries and territories, agriculture consumes the majority of freshwater withdrawals. Somalia 99.5%, Afghanistan 98.2%, Nepal 98.1%. Somalia takes 7.1 times the water that goes to farming in the UK, which uses 14%. United States uses 39.7%. China is 62.1%. India hits 90.4% for irrigation and livestock. Ireland uses just 2.4%. Where does your country land?",
+      "differences": [
+        "'14.0% the' heard as '14%' after 'uk which uses'"
+      ],
+      "resolved": []
+    }
+  }
+}

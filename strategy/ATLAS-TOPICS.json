@@ -2256,7 +2256,7 @@
     "#energy"
    ],
    "source_url": "https://data.worldbank.org/indicator/EG.USE.PCAP.KG.OE",
-   "status": "open",
+   "status": "ready:atlas065",
    "added_by": "refill"
   },
   {
@@ -2287,7 +2287,7 @@
     "#waterresources"
    ],
    "source_url": "https://data.worldbank.org/indicator/ER.H2O.FWAG.ZS",
-   "status": "open",
+   "status": "failed:ValueError",
    "added_by": "refill"
   },
   {
@@ -2365,7 +2365,7 @@
     "#agriculture"
    ],
    "source_url": "https://data.worldbank.org/indicator/AG.YLD.CREL.KG",
-   "status": "open",
+   "status": "failed:RuntimeError",
    "added_by": "refill"
   },
   {

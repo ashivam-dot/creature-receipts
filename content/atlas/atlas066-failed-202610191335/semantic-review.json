@@ -1,0 +1,156 @@
+{
+  "errors": [],
+  "claims": [
+    {
+      "surface": "title",
+      "text": "Where Freshwater Goes to Farming",
+      "isos": [],
+      "support": "Indicator: Annual freshwater withdrawals, agriculture (% of total freshwater withdrawal)"
+    },
+    {
+      "surface": "hook",
+      "text": "MOSTLY TO FARMS",
+      "isos": [],
+      "support": "104 of 178 countries and territories are at or above 50%"
+    },
+    {
+      "surface": "description",
+      "text": "Share of freshwater used in agriculture, World Bank latest available 2021-2022.",
+      "isos": [],
+      "support": "year_label: latest available 2021-2022, universe: mapped countries and territories with data, source: World Bank"
+    },
+    {
+      "surface": "beat_0",
+      "text": "In 104 of 178 countries and territories, agriculture consumes the majority of freshwater withdrawals.",
+      "isos": [],
+      "support": "threshold: 50.0, at_or_above: 104, count: 178"
+    },
+    {
+      "surface": "beat_1",
+      "text": "Somalia: 99.5%. Afghanistan: 98.2%. Nepal: 98.1%.",
+      "isos": [
+        "SOM",
+        "AFG",
+        "NPL"
+      ],
+      "support": "SOM: 99.48453608 (display: 99.5%), AFG: 98.1696273 (display: 98.2%), NPL: 98.13522023 (display: 98.1%)"
+    },
+    {
+      "surface": "beat_2",
+      "text": "Somalia takes 7.1 times the water that goes to farming in the UK, which uses 14.0%.",
+      "isos": [
+        "SOM",
+        "GBR"
+      ],
+      "support": "SOM: 99.48453608, GBR: 14.04988124 (display: 14.0%), ratio ~7.08"
+    },
+    {
+      "surface": "beat_3",
+      "text": "The United States uses 39.7%. China is 62.1%.",
+      "isos": [
+        "USA",
+        "CHN"
+      ],
+      "support": "USA: 39.65878143 (display: 39.7%), CHN: 62.14454059 (display: 62.1%)"
+    },
+    {
+      "surface": "beat_4",
+      "text": "India hits 90.4% for irrigation and livestock.",
+      "isos": [
+        "IND"
+      ],
+      "support": "IND: 90.40735874 (display: 90.4%), definition: Withdrawals for agriculture are total withdrawals for irrigation and livestock production."
+    },
+    {
+      "surface": "beat_5",
+      "text": "Ireland uses just 2.4%.",
+      "isos": [
+        "IRL"
+      ],
+      "support": "IRL: 2.368798566 (display: 2.4%)"
+    },
+    {
+      "surface": "beat_6",
+      "text": "Where does your country land?",
+      "isos": [],
+      "support": "Card prompt reflecting the indicator universe"
+    },
+    {
+      "surface": "card_6",
+      "text": "Where does your country land?",
+      "isos": [],
+      "support": "Card prompt reflecting the indicator universe"
+    }
+  ],
+  "surface_checks": {
+    "title": {
+      "supported": true,
+      "reason": "Accurately reflects the dataset theme of agricultural freshwater use.",
+      "isos": []
+    },
+    "hook": {
+      "supported": true,
+      "reason": "Reflects that a majority of countries have >50% agricultural withdrawal share.",
+      "isos": []
+    },
+    "description": {
+      "supported": true,
+      "reason": "Accurately references the dataset source and year range.",
+      "isos": []
+    },
+    "beat_0": {
+      "supported": true,
+      "reason": "Matches count (178) and threshold count (104 at or above 50%).",
+      "isos": []
+    },
+    "beat_1": {
+      "supported": true,
+      "reason": "Values match Somalia, Afghanistan, and Nepal data exactly.",
+      "isos": [
+        "SOM",
+        "AFG",
+        "NPL"
+      ]
+    },
+    "beat_2": {
+      "supported": true,
+      "reason": "Matches Somalia and UK values, with accurate relative multiplier.",
+      "isos": [
+        "SOM",
+        "GBR"
+      ]
+    },
+    "beat_3": {
+      "supported": true,
+      "reason": "Matches USA and China values exactly.",
+      "isos": [
+        "USA",
+        "CHN"
+      ]
+    },
+    "beat_4": {
+      "supported": true,
+      "reason": "Matches India value and aligns with definition including irrigation and livestock.",
+      "isos": [
+        "IND"
+      ]
+    },
+    "beat_5": {
+      "supported": true,
+      "reason": "Matches Ireland value exactly.",
+      "isos": [
+        "IRL"
+      ]
+    },
+    "beat_6": {
+      "supported": true,
+      "reason": "Valid outro card text.",
+      "isos": []
+    },
+    "card_6": {
+      "supported": true,
+      "reason": "Valid outro card components matching data scope.",
+      "isos": []
+    }
+  }
+}

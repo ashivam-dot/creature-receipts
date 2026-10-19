@@ -1,0 +1,64 @@
+id: atlas066
+title: Where Freshwater Goes to Farming
+format: rank_ladder
+hook_text: MOSTLY TO FARMS
+description: Share of freshwater used in agriculture, World Bank latest available 2021-2022.
+hashtags:
+- '#maps'
+- '#geography'
+- '#waterresources'
+sources:
+- https://data.worldbank.org/indicator/ER.H2O.FWAG.ZS
+dataset:
+  kind: worldbank
+  indicator: ER.H2O.FWAG.ZS
+  label: Share of freshwater used in agriculture
+  unit: '%'
+  source: World Bank
+  min_year: 2019
+scale:
+  kind: threshold
+  at: 50.0
+  labels:
+  - Over 50% used for farming
+  - 50% or less used for farming
+value_format: '{v:.1f}%'
+beats:
+- text: In 104 of 178 countries and territories, agriculture consumes the majority of freshwater withdrawals.
+  shot:
+    callouts:
+    - SOM
+    - IRL
+- text: 'Somalia: 99.5%. Afghanistan: 98.2%. Nepal: 98.1%.'
+  shot:
+    kind: rank
+    isos:
+    - SOM
+    - AFG
+    - NPL
+- text: Somalia takes 7.1 times the water that goes to farming in the UK, which uses 14.0%.
+  shot:
+    kind: group
+    isos:
+    - SOM
+    - GBR
+- text: The United States uses 39.7%. China is 62.1%.
+  shot:
+    kind: group
+    isos:
+    - USA
+    - CHN
+- text: India hits 90.4% for irrigation and livestock.
+  shot:
+    kind: country
+    iso: IND
+- text: Ireland uses just 2.4%.
+  shot:
+    kind: country
+    iso: IRL
+- text: Where does your country land?
+  shot:
+    kind: card
+    lines:
+    - Where does your country land?
+    - Share of freshwater used in agriculture (%)
