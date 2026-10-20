@@ -38,37 +38,39 @@ Refreshed by every producer run (`atlas.stats`) from the channel's public feed o
 
 | Short | Topic | Published | Views | Likes | Views per hour |
 |---|---|---|---|---|---|
-| atlas001 137 Places Have More Mobile Subscriptions Than People | map_reveal | 2026-10-08 16:01 UTC | 1325 | 17 | 5.3 |
-| atlas002 45 places with Falling Populations | map_reveal | 2026-10-09 16:02 UTC | 977 | 15 | 4.3 |
+| atlas001 137 Places Have More Mobile Subscriptions Than People | map_reveal | 2026-10-08 16:01 UTC | 1326 | 17 | 4.9 |
+| atlas002 45 places with Falling Populations | map_reveal | 2026-10-09 16:02 UTC | 977 | 15 | 3.9 |
 | atlas003 Below the fertility benchmark in 2024 | rank_ladder | 2026-10-08 20:01 UTC | 132 | 2 | 0.5 |
-| atlas004 47 places Where Life Expectancy Reaches 80 | map_reveal | 2026-10-08 23:01 UTC | 163 | 2 | 0.7 |
+| atlas004 47 places Where Life Expectancy Reaches 80 | map_reveal | 2026-10-08 23:01 UTC | 164 | 2 | 0.6 |
 | atlas011 Money Sent Home Equals 58% of GDP in Tajikistan | map_reveal | 2026-10-10 16:01 UTC | 149 | 1 | 0.7 |
-| atlas014 Finland Rates Life at 7.8 out of 10 | rank_ladder | 2026-10-10 23:00 UTC | 1043 | 9 | 5.4 |
-| atlas016 How Many Calories Each Country Has On Its Plate | map_reveal | 2026-10-10 20:00 UTC | 1132 | 16 | 5.8 |
-| atlas017 The Youngest and Oldest places on Earth | map_reveal | 2026-10-11 16:01 UTC | 1339 | 21 | 7.6 |
-| atlas019 The Emptiest and Most Crowded places | map_reveal | 2026-10-11 20:00 UTC | 1767 | 20 | 10.2 |
-| atlas021 Cuba has 9.5 doctors while Niger has 0.0 | rank_ladder | 2026-10-11 23:00 UTC | 1046 | 14 | 6.2 |
-| atlas023 France has 49 fixed broadband lines per 100 people | map_reveal | 2026-10-12 16:02 UTC | 259 | 6 | 1.7 |
-| atlas024 Where 30% of People are 65 or Older | map_reveal | 2026-10-12 20:01 UTC | 1218 | 16 | 8.2 |
-| atlas025 Qatar has 108 micrograms of particles | map_reveal | 2026-10-12 23:01 UTC | 1214 | 20 | 8.3 |
-| atlas026 The Global Gap in Basic Drinking Water Access | map_reveal | 2026-10-13 16:03 UTC | 769 | 10 | 6.0 |
-| atlas027 Women in the labor force: 83% to 5% | rank_ladder | 2026-10-13 20:01 UTC | 143 | 5 | 1.1 |
-| atlas028 61 places Still Have Most People Outside Cities | rank_ladder | 2026-10-13 23:01 UTC | 1155 | 14 | 9.5 |
-| atlas030 places Where One City Holds 92% of City Dwellers | rank_ladder | 2026-10-14 16:02 UTC | 1366 | – | 11.7 |
-| atlas031 In Qatar, 77% of people were born abroad | rank_ladder | 2026-10-14 20:01 UTC | 2 | – | 0.0 |
-| atlas032 Health Spending: The $10,550 to $13 Divide | map_reveal | 2026-10-14 23:01 UTC | 1101 | – | 10.0 |
-| atlas033 Japan Has 51 Seniors per 100 Working-Age People | map_reveal | 2026-10-15 16:03 UTC | 1135 | – | 12.2 |
-| atlas037 Colombia Rains 180 Times Egypt's Annual Precipitation | map_reveal | 2026-10-15 20:01 UTC | 1052 | – | 11.8 |
-| atlas039 Ireland Produces $131,592 per Person | map_reveal | 2026-10-15 23:01 UTC | 1067 | – | 12.4 |
-| atlas040 Romania Drinks 16.8 Liters of Pure Alcohol per Adult | map_reveal | 2026-10-16 16:02 UTC | 1078 | – | 15.6 |
-| atlas042 Powering Life: Electric Consumption Per Person | map_reveal | 2026-10-16 20:01 UTC | 777 | – | 11.9 |
-| atlas047 Freshwater Per Person: From Iceland to Kuwait | map_reveal | 2026-10-16 23:01 UTC | 1054 | – | 17.0 |
-| atlas048 Uruguay Leads the World in Cash Machines | rank_ladder | 2026-10-17 16:02 UTC | 1041 | – | 23.1 |
-| atlas049 Global Tobacco Use: East Timor at 48.8% and Nigeria at 3.1% | map_reveal | 2026-10-17 20:01 UTC | 380 | – | 9.2 |
-| atlas052 Clean Cooking Access: From 100% Down to 0% | rank_ladder | 2026-10-17 23:01 UTC | 1065 | – | 27.9 |
-| atlas053 Why Greece Has 165.1% College Enrollment | rank_ladder | 2026-10-18 16:01 UTC | 782 | – | 37.0 |
-| atlas054 Household Goods Cost 130 in Iceland but 100 in USA | rank_ladder | 2026-10-18 20:01 UTC | 945 | – | 55.1 |
-| atlas055 South Korea Has 12.8 Hospital Beds While Chad Has 0.1 | map_reveal | 2026-10-18 23:00 UTC | 1040 | – | 73.5 |
+| atlas014 Finland Rates Life at 7.8 out of 10 | rank_ladder | 2026-10-10 23:00 UTC | 1043 | 9 | 4.8 |
+| atlas016 How Many Calories Each Country Has On Its Plate | map_reveal | 2026-10-10 20:00 UTC | 1134 | 16 | 5.1 |
+| atlas017 The Youngest and Oldest places on Earth | map_reveal | 2026-10-11 16:01 UTC | 1339 | 21 | 6.7 |
+| atlas019 The Emptiest and Most Crowded places | map_reveal | 2026-10-11 20:00 UTC | 1767 | 20 | 9.0 |
+| atlas021 Cuba has 9.5 doctors while Niger has 0.0 | rank_ladder | 2026-10-11 23:00 UTC | 1046 | 14 | 5.4 |
+| atlas023 France has 49 fixed broadband lines per 100 people | map_reveal | 2026-10-12 16:02 UTC | 259 | 6 | 1.5 |
+| atlas024 Where 30% of People are 65 or Older | map_reveal | 2026-10-12 20:01 UTC | 1218 | 16 | 7.1 |
+| atlas025 Qatar has 108 micrograms of particles | map_reveal | 2026-10-12 23:01 UTC | 1214 | 20 | 7.2 |
+| atlas026 The Global Gap in Basic Drinking Water Access | map_reveal | 2026-10-13 16:03 UTC | 769 | 10 | 5.0 |
+| atlas027 Women in the labor force: 83% to 5% | rank_ladder | 2026-10-13 20:01 UTC | 143 | 5 | 1.0 |
+| atlas028 61 places Still Have Most People Outside Cities | rank_ladder | 2026-10-13 23:01 UTC | 1156 | 14 | 7.9 |
+| atlas030 places Where One City Holds 92% of City Dwellers | rank_ladder | 2026-10-14 16:02 UTC | 1366 | 8 | 10.6 |
+| atlas031 In Qatar, 77% of people were born abroad | rank_ladder | 2026-10-14 20:01 UTC | 2 | 0 | 0.0 |
+| atlas032 Health Spending: The $10,550 to $13 Divide | map_reveal | 2026-10-14 23:01 UTC | 1101 | 11 | 9.0 |
+| atlas033 Japan Has 51 Seniors per 100 Working-Age People | map_reveal | 2026-10-15 16:03 UTC | 1139 | 16 | 10.9 |
+| atlas037 Colombia Rains 180 Times Egypt's Annual Precipitation | map_reveal | 2026-10-15 20:01 UTC | 1052 | 7 | 10.4 |
+| atlas039 Ireland Produces $131,592 per Person | map_reveal | 2026-10-15 23:01 UTC | 1083 | 7 | 11.1 |
+| atlas040 Romania Drinks 16.8 Liters of Pure Alcohol per Adult | map_reveal | 2026-10-16 16:02 UTC | 1100 | 12 | 13.6 |
+| atlas042 Powering Life: Electric Consumption Per Person | map_reveal | 2026-10-16 20:01 UTC | 780 | 2 | 10.2 |
+| atlas047 Freshwater Per Person: From Iceland to Kuwait | map_reveal | 2026-10-16 23:01 UTC | 1060 | 8 | 14.4 |
+| atlas048 Uruguay Leads the World in Cash Machines | rank_ladder | 2026-10-17 16:02 UTC | 1046 | 10 | 18.5 |
+| atlas049 Global Tobacco Use: East Timor at 48.8% and Nigeria at 3.1% | map_reveal | 2026-10-17 20:01 UTC | 419 | 1 | 8.0 |
+| atlas052 Clean Cooking Access: From 100% Down to 0% | rank_ladder | 2026-10-17 23:01 UTC | 1067 | 12 | 21.5 |
+| atlas053 Why Greece Has 165.1% College Enrollment | rank_ladder | 2026-10-18 16:01 UTC | 845 | 8 | 25.9 |
+| atlas054 Household Goods Cost 130 in Iceland but 100 in USA | rank_ladder | 2026-10-18 20:01 UTC | 984 | 3 | 34.3 |
+| atlas055 South Korea Has 12.8 Hospital Beds While Chad Has 0.1 | map_reveal | 2026-10-18 23:00 UTC | 1071 | 13 | 41.7 |
+| atlas056 Where More Boys Are Born: 1.01 to 1.11 Worldwide | map_reveal | 2026-10-19 16:02 UTC | 394 | 5 | 45.5 |
+| atlas058 Years Children Must Legally Attend School | rank_ladder | 2026-10-19 20:01 UTC | 461 | 6 | 98.6 |
 
 ## Log
 

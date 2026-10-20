@@ -1,0 +1,70 @@
+id: atlas069
+title: Homes with Soap and Water
+hook_text: CLEAN HANDS GAP
+description: In several countries and territories, over 90% of people lack basic soap and water to wash their hands
+  at home.
+hashtags:
+- '#maps'
+- '#geography'
+- '#globalhealth'
+sources:
+- https://data.worldbank.org/indicator/SH.STA.HYGN.ZS
+dataset:
+  kind: worldbank
+  indicator: SH.STA.HYGN.ZS
+  label: Access to soap and water at home
+  unit: '%'
+  source: World Bank
+  min_year: 2019
+scale:
+  edges:
+  - 25.0
+  - 50.0
+  - 75.0
+  - 90.0
+  labels:
+  - Under 25%
+  - 25% to 50%
+  - 50% to 75%
+  - 75% to 90%
+  - Over 90%
+value_format: '{v:.1f}%'
+beats:
+- text: Mexico has 98.8% of homes with soap and water. In Liberia, it is just 3.5%.
+  shot:
+    callouts:
+    - MEX
+    - LBR
+- text: Liberia is the world's lowest. Most families lack even a basin with soap on the premises.
+  shot:
+    kind: country
+    iso: LBR
+- text: India has 89.7%, which is 26 times what Liberia has.
+  shot:
+    kind: group
+    isos:
+    - IND
+    - LBR
+- text: China has 97.3%. Pakistan, 84.8%.
+  shot:
+    kind: group
+    isos:
+    - CHN
+    - PAK
+- text: The bottom is a stark contrast. Sudan has 10.8%. Burundi, 6.4%, and Ethiopia, 5.9%.
+  shot:
+    kind: rank
+    isos:
+    - SDN
+    - BDI
+    - ETH
+- text: Nigeria has 31.3%. For many, a bucket with a tap is a luxury.
+  shot:
+    kind: country
+    iso: NGA
+- text: Where does your country land?
+  shot:
+    kind: card
+    lines:
+    - YOUR HOME?
+    - Access to soap and water
