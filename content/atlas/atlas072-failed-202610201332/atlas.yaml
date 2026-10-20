@@ -1,0 +1,75 @@
+id: atlas072
+title: Preschool Enrollment Ranges From 160% to 1%
+hook_text: 160% TO 1%
+description: Gross preprimary enrollment ratios worldwide based on World Bank data.
+hashtags:
+- '#maps'
+- '#geography'
+- '#geographyposts'
+sources:
+- https://data.worldbank.org/indicator/SE.PRE.ENRR
+dataset:
+  kind: worldbank
+  indicator: SE.PRE.ENRR
+  label: Gross preprimary enrollment ratio
+  unit: '%'
+  source: World Bank
+  min_year: 2019
+scale:
+  edges:
+  - 25.0
+  - 50.0
+  - 75.0
+  - 100.0
+  labels:
+  - <25%
+  - 25–50%
+  - 50–75%
+  - 75–100%
+  - '>100%'
+value_format: '{v:.0f}%'
+beats:
+- text: Australia has 160% preschool enrollment. In Somalia, it is just 1%.
+  shot:
+    callouts:
+    - AUS
+    - SOM
+- text: Chad shares the bottom spot with Somalia.
+  shot:
+    kind: group
+    isos:
+    - SOM
+    - TCD
+- text: Australia is the world's highest, counting total enrollment regardless of age relative to the official target
+    group.
+  shot:
+    kind: country
+    iso: AUS
+- text: Australia has 2.2 times the enrollment the USA has, which sits at 72%.
+  shot:
+    callouts:
+    - AUS
+    - USA
+- text: Canada has 49%, and India has 52%.
+  shot:
+    kind: group
+    isos:
+    - CAN
+    - IND
+- text: Ghana has 116%, Germany has 108%, and the UK has 106%.
+  shot:
+    kind: rank
+    isos:
+    - GHA
+    - DEU
+    - GBR
+- text: China has 93%, providing a bridge between home and school.
+  shot:
+    kind: country
+    iso: CHN
+- text: Where does your country land?
+  shot:
+    kind: card
+    lines:
+    - Where does your country land?
+    - Gross Preprimary Enrollment

@@ -1,0 +1,24 @@
+{
+  "duration": 33.35,
+  "integrated_lufs": -14.4,
+  "true_peak_dbfs": -1.4,
+  "speech": {
+    "heard": "Myanmar has 0.6% of children under five overweight. In Australia, it is 26.4%. Australia has 44 times the percentage recorded in Myanmar. China has 11.1% of young children overweight, while Brazil sits at 10.9%. USA has 9.7%, and the UK hits 7.8%. India stays low at 3.7%. Myanmar is the world's lowest at 0.6%. Where does your country land?",
+    "model": "small.en",
+    "media_sha256": "844dd5b3dea94728972f9e33d5409f4f60a1d4df137e42cf6fd04dacb6631c5a",
+    "primary_differences": [
+      "'the' heard as '(nothing)' after 'sits at 10.9%'"
+    ],
+    "differences": [
+      "'the' heard as '(nothing)' after 'sits at 10.9%'"
+    ],
+    "corroboration": {
+      "model": "base.en",
+      "heard": "Myanmar has 0.6% of children under 5 overweight. In Australia, it is 26.4%. Australia has 44 times the percentage recorded in Myanmar. China has 11.1% of young children overweight, while Brazil sits at 10.9%. USA has 9.7% and the UK hits 7.8%. India stays low at 3.7%. Myanmar is the world's lowest at 0.6 percent. Where does your country land?",
+      "differences": [
+        "'the' heard as '(nothing)' after 'sits at 10.9%'"
+      ],
+      "resolved": []
+    }
+  }
+}

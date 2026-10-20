@@ -1,0 +1,67 @@
+id: atlas071
+title: Australia Leads the World in Overweight Toddlers
+hook_text: THE WIDEST GAP
+description: A cinematic look at the global prevalence of overweight children under 5, contrasting the highest and
+  lowest nations by data.
+hashtags:
+- '#maps'
+- '#geography'
+- '#healthdata'
+sources:
+- https://data.worldbank.org/indicator/SH.STA.OWGH.ME.ZS
+dataset:
+  kind: worldbank
+  indicator: SH.STA.OWGH.ME.ZS
+  label: Share of overweight children under 5
+  unit: '%'
+  source: World Bank
+  min_year: 2019
+scale:
+  edges:
+  - 2.4
+  - 5.5
+  - 9.5
+  - 15.0
+  labels:
+  - Under 2.4%
+  - 2.4% to 5.5%
+  - 5.5% to 9.5%
+  - 9.5% to 15.0%
+  - Over 15.0%
+value_format: '{v:.1f}%'
+beats:
+- text: Myanmar has 0.6% of children under 5 overweight. In Australia, it is 26.4%.
+  shot:
+    callouts:
+    - MMR
+    - AUS
+- text: Australia has 44 times the percentage recorded in Myanmar.
+  shot:
+    kind: country
+    iso: AUS
+- text: China has 11.1% of young children overweight, while Brazil sits at 10.9%.
+  shot:
+    kind: group
+    isos:
+    - CHN
+    - BRA
+- text: The USA has 9.7%, and the UK hits 7.8%.
+  shot:
+    kind: group
+    isos:
+    - USA
+    - GBR
+- text: India stays low at 3.7%.
+  shot:
+    kind: country
+    iso: IND
+- text: Myanmar is the world's lowest at 0.6%.
+  shot:
+    kind: country
+    iso: MMR
+- text: Where does your country land?
+  shot:
+    kind: card
+    lines:
+    - Where does your country land?
+    - Share of overweight children under 5 (%), World Bank, 2024

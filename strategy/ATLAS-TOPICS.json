@@ -2552,7 +2552,7 @@
     "#geographyposts"
    ],
    "source_url": "https://data.worldbank.org/indicator/SE.PRE.ENRR",
-   "status": "open",
+   "status": "failed:RuntimeError",
    "added_by": "refill"
   },
   {
@@ -2591,6 +2591,370 @@
     "#globaltrade"
    ],
    "source_url": "https://data.worldbank.org/indicator/TX.VAL.FUEL.ZS.UN",
+   "status": "open",
+   "added_by": "refill"
+  },
+  {
+   "id": "t075",
+   "topic": "Urban Population Living in Slums",
+   "angle": "In South Sudan and Mali, over 90% of city dwellers live in households lacking basic services like clean water or sanitation.",
+   "format": "rank_ladder",
+   "dataset": {
+    "kind": "worldbank",
+    "indicator": "EN.POP.SLUM.UR.ZS",
+    "label": "Share of urban population in slums",
+    "unit": "%",
+    "source": "World Bank",
+    "min_year": 2019
+   },
+   "scale": {
+    "kind": "bins",
+    "edges": [
+     1,
+     11,
+     45,
+     70
+    ],
+    "labels": [
+     "Minimal",
+     "Low",
+     "Moderate",
+     "High",
+     "Severe"
+    ]
+   },
+   "value_format": "{v:.1f}%",
+   "hashtags": [
+    "#maps",
+    "#geography",
+    "#urbanization"
+   ],
+   "source_url": "https://data.worldbank.org/indicator/EN.POP.SLUM.UR.ZS",
+   "status": "failed:RuntimeError",
+   "added_by": "refill"
+  },
+  {
+   "id": "t076",
+   "topic": "Global Prevalence of Overweight Toddlers",
+   "angle": "Australia leads the world with over 26% of children under five being overweight, a rate more than four times the global median.",
+   "format": "map_reveal",
+   "dataset": {
+    "kind": "worldbank",
+    "indicator": "SH.STA.OWGH.ME.ZS",
+    "label": "Share of overweight children under 5",
+    "unit": "%",
+    "source": "World Bank",
+    "min_year": 2019
+   },
+   "scale": {
+    "kind": "bins",
+    "edges": [
+     2.4,
+     5.5,
+     9.5,
+     15.0
+    ],
+    "labels": [
+     "Under 2.4%",
+     "2.4% to 5.5%",
+     "5.5% to 9.5%",
+     "9.5% to 15.0%",
+     "Over 15.0%"
+    ]
+   },
+   "value_format": "{v:.1f}%",
+   "hashtags": [
+    "#maps",
+    "#geography",
+    "#healthdata"
+   ],
+   "source_url": "https://data.worldbank.org/indicator/SH.STA.OWGH.ME.ZS",
+   "status": "ready:atlas071",
+   "added_by": "refill"
+  },
+  {
+   "id": "t077",
+   "topic": "Domestic Share of Water Use",
+   "angle": "In nations like Luxembourg and Brunei, domestic needs drive over 90% of water withdrawals, whereas in Austria and Vietnam, the share is below 2%.",
+   "format": "map_reveal",
+   "dataset": {
+    "kind": "worldbank",
+    "indicator": "ER.H2O.FWDM.ZS",
+    "label": "Domestic share of water withdrawals",
+    "unit": "%",
+    "source": "World Bank",
+    "min_year": 2019
+   },
+   "scale": {
+    "kind": "bins",
+    "edges": [
+     10,
+     20,
+     45,
+     70
+    ],
+    "labels": [
+     "Under 10%",
+     "10-20%",
+     "20-45%",
+     "45-70%",
+     "Over 70%"
+    ]
+   },
+   "value_format": "{v:.1f}%",
+   "hashtags": [
+    "#maps",
+    "#geography",
+    "#hydrology"
+   ],
+   "source_url": "https://data.worldbank.org/indicator/ER.H2O.FWDM.ZS",
+   "status": "open",
+   "added_by": "refill"
+  },
+  {
+   "id": "t078",
+   "topic": "Waiting for an Electrical Connection",
+   "angle": "Businesses in Kuwait or South Korea wait under five days for electricity, while connecting in Poland takes over nine months.",
+   "format": "rank_ladder",
+   "dataset": {
+    "kind": "worldbank",
+    "indicator": "IC.ELC.DURS",
+    "label": "Days to obtain an electrical connection",
+    "unit": "days",
+    "source": "World Bank",
+    "min_year": 2019
+   },
+   "scale": {
+    "kind": "bins",
+    "edges": [
+     10,
+     25,
+     50,
+     100
+    ],
+    "labels": [
+     "Under 10 days",
+     "10 to 25 days",
+     "25 to 50 days",
+     "50 to 100 days",
+     "Over 100 days"
+    ]
+   },
+   "value_format": "{v:.0f} days",
+   "hashtags": [
+    "#maps",
+    "#geography",
+    "#energy"
+   ],
+   "source_url": "https://data.worldbank.org/indicator/IC.ELC.DURS",
+   "status": "open",
+   "added_by": "refill"
+  },
+  {
+   "id": "t079",
+   "topic": "Income Inequality Around the World",
+   "angle": "While Colombia and South Africa record Gini scores exceeding 54, nations such as the Slovak Republic and India report some of the lowest inequality at 24 or below.",
+   "format": "map_reveal",
+   "dataset": {
+    "kind": "worldbank",
+    "indicator": "SI.POV.GINI",
+    "label": "Income inequality (Gini index)",
+    "unit": "points",
+    "source": "World Bank",
+    "min_year": 2019
+   },
+   "scale": {
+    "kind": "bins",
+    "edges": [
+     27.0,
+     31.0,
+     35.0,
+     40.0
+    ],
+    "labels": [
+     "Under 27",
+     "27 to 31",
+     "31 to 35",
+     "35 to 40",
+     "Over 40"
+    ]
+   },
+   "value_format": "{v:.1f}",
+   "hashtags": [
+    "#maps','#geography','#mapsofinstagram"
+   ],
+   "source_url": "https://data.worldbank.org/indicator/SI.POV.GINI",
+   "status": "open",
+   "added_by": "refill"
+  },
+  {
+   "id": "t080",
+   "topic": "Global Consumer Price Inflation Rates",
+   "angle": "While most of the world experiences single-digit inflation, a handful of nations battle extreme price surges exceeding one hundred percent.",
+   "format": "map_reveal",
+   "dataset": {
+    "kind": "worldbank",
+    "indicator": "FP.CPI.TOTL.ZG",
+    "label": "Annual consumer price inflation",
+    "unit": "%",
+    "source": "World Bank",
+    "min_year": 2019
+   },
+   "scale": {
+    "kind": "threshold",
+    "at": 5.0,
+    "labels": [
+     "High inflation (5% and above)",
+     "Moderate to low inflation (under 5%)"
+    ]
+   },
+   "value_format": "{v:.1f}%",
+   "hashtags": [
+    "#maps",
+    "#geography",
+    "#economics"
+   ],
+   "source_url": "https://data.worldbank.org/indicator/FP.CPI.TOTL.ZG",
+   "status": "open",
+   "added_by": "refill"
+  },
+  {
+   "id": "t081",
+   "topic": "Where Women Lead The Corporate World",
+   "angle": "While global business leadership remains mostly male, island nations like Kiribati lead the world with nearly two-thirds of firms managed by women.",
+   "format": "rank_ladder",
+   "dataset": {
+    "kind": "worldbank",
+    "indicator": "IC.FRM.FEMM.ZS",
+    "label": "Firms with female top manager",
+    "unit": "%",
+    "source": "World Bank",
+    "min_year": 2019
+   },
+   "scale": {
+    "kind": "bins",
+    "edges": [
+     10.0,
+     20.0,
+     35.0,
+     50.0
+    ],
+    "labels": [
+     "Under 10%",
+     "10-20%",
+     "20-35%",
+     "35-50%",
+     "Over 50%"
+    ]
+   },
+   "value_format": "{v:.1f}%",
+   "hashtags": [
+    "#maps",
+    "#geography",
+    "#womeninbusiness"
+   ],
+   "source_url": "https://data.worldbank.org/indicator/IC.FRM.FEMM.ZS",
+   "status": "open",
+   "added_by": "refill"
+  },
+  {
+   "id": "t082",
+   "topic": "Where Companies Invest in Staff Training",
+   "angle": "Surging past major economies, countries like China and Papua New Guinea lead the world with over 75 percent of firms offering formal employee training.",
+   "format": "map_reveal",
+   "dataset": {
+    "kind": "worldbank",
+    "indicator": "IC.FRM.TRNG.ZS",
+    "label": "Firms offering formal training",
+    "unit": "%",
+    "source": "World Bank",
+    "min_year": 2019
+   },
+   "scale": {
+    "kind": "bins",
+    "edges": [
+     10.0,
+     30.0,
+     50.0,
+     70.0
+    ],
+    "labels": [
+     "Under 10%",
+     "10-30%",
+     "30-50%",
+     "50-70%",
+     "Over 70%"
+    ]
+   },
+   "value_format": "{v:.1f}%",
+   "hashtags": [
+    "#maps",
+    "#geography",
+    "#business"
+   ],
+   "source_url": "https://data.worldbank.org/indicator/IC.FRM.TRNG.ZS",
+   "status": "open",
+   "added_by": "refill"
+  },
+  {
+   "id": "t083",
+   "topic": "Where Every Woman Uses The Internet",
+   "angle": "In several nations, 100 percent of women have used the internet recently, while in others the share drops below 10 percent.",
+   "format": "map_reveal",
+   "dataset": {
+    "kind": "worldbank",
+    "indicator": "IT.NET.USER.FE.ZS",
+    "label": "Share of female internet users",
+    "unit": "%",
+    "source": "World Bank",
+    "min_year": 2019
+   },
+   "scale": {
+    "kind": "threshold",
+    "at": 90,
+    "labels": [
+     "90% or more",
+     "Under 90%"
+    ]
+   },
+   "value_format": "{v:.1f}%",
+   "hashtags": [
+    "#maps",
+    "#geography",
+    "#internet"
+   ],
+   "source_url": "https://data.worldbank.org/indicator/IT.NET.USER.FE.ZS",
+   "status": "open",
+   "added_by": "refill"
+  },
+  {
+   "id": "t084",
+   "topic": "Where Food Dominates Manufacturing",
+   "angle": "In island and developing economies like the Marshall Islands and Malawi, food, beverages, and tobacco account for over eighty percent of all manufacturing value added.",
+   "format": "rank_ladder",
+   "dataset": {
+    "kind": "worldbank",
+    "indicator": "NV.MNF.FBTO.ZS.UN",
+    "label": "Food and tobacco share of manufacturing",
+    "unit": "%",
+    "source": "World Bank",
+    "min_year": 2019
+   },
+   "scale": {
+    "kind": "threshold",
+    "at": 25.0,
+    "labels": [
+     "Over 25% of manufacturing",
+     "Under 25% of manufacturing"
+    ]
+   },
+   "value_format": "{v:.1f}%",
+   "hashtags": [
+    "#maps",
+    "#geography",
+    "#manufacturing"
+   ],
+   "source_url": "https://data.worldbank.org/indicator/NV.MNF.FBTO.ZS.UN",
    "status": "open",
    "added_by": "refill"
   }

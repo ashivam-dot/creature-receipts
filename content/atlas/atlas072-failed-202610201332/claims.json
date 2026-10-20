@@ -1,0 +1,1802 @@
+{
+  "version": 1,
+  "evidence": {
+    "version": 1,
+    "indicator": "SE.PRE.ENRR",
+    "definition": "Gross enrollment ratio is the ratio of total enrollment, regardless of age, to the population of the age group that officially corresponds to the level of education shown. Preprimary education refers to programs at the initial stage of organized instruction, designed primarily to introduce very young children to a school-type environment and to provide a bridge between home and school.",
+    "source": "https://data.worldbank.org/indicator/SE.PRE.ENRR",
+    "source_response_sha256": "404e4d1c369c2b640f8d0b2c30317eaf4f6cbac51e0dde7a92ea280454c31926",
+    "source_organization": "Stat Bulk Data Download Service, UN Educational, Scientific and Cultural Organization (UNESCO), uri: https://uis.unesco.org/bdds, publisher: UNESCO Institute for Statistics (UIS)",
+    "year_label": "latest available 2019–2022",
+    "universe": "mapped countries and territories with data",
+    "count": 156,
+    "threshold": null,
+    "at_or_above": null,
+    "entities": {
+      "ALB": {
+        "name": "Albania",
+        "value": 69.2341995239258,
+        "display": "69%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 89
+      },
+      "ARG": {
+        "name": "Argentina",
+        "value": 76.186653137207,
+        "display": "76%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 76
+      },
+      "ARM": {
+        "name": "Armenia",
+        "value": 28.7847690582275,
+        "display": "29%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 133
+      },
+      "AUS": {
+        "name": "Australia",
+        "value": 160.214385986328,
+        "display": "160%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 1
+      },
+      "AUT": {
+        "name": "Austria",
+        "value": 102.857139587402,
+        "display": "103%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 16
+      },
+      "AZE": {
+        "name": "Azerbaijan",
+        "value": 46.2895889282227,
+        "display": "46%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 110
+      },
+      "BHS": {
+        "name": "Bahamas, The",
+        "value": 39.7394790649414,
+        "display": "40%",
+        "year": 2019,
+        "unit": "%",
+        "rank": 117
+      },
+      "BHR": {
+        "name": "Bahrain",
+        "value": 52.6030311584473,
+        "display": "53%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 101
+      },
+      "BGD": {
+        "name": "Bangladesh",
+        "value": 36.380687713623,
+        "display": "36%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 120
+      },
+      "BRB": {
+        "name": "Barbados",
+        "value": 75.1266479492188,
+        "display": "75%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 77
+      },
+      "BLR": {
+        "name": "Belarus",
+        "value": 96.7663269042969,
+        "display": "97%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 27
+      },
+      "BEL": {
+        "name": "Belgium",
+        "value": 112.43090057373,
+        "display": "112%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 8
+      },
+      "BLZ": {
+        "name": "Belize",
+        "value": 34.1667709350586,
+        "display": "34%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 123
+      },
+      "BEN": {
+        "name": "Benin",
+        "value": 23.1280193328857,
+        "display": "23%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 142
+      },
+      "BTN": {
+        "name": "Bhutan",
+        "value": 51.9293251037598,
+        "display": "52%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 102
+      },
+      "BOL": {
+        "name": "Bolivia",
+        "value": 78.4713287353516,
+        "display": "78%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 72
+      },
+      "BIH": {
+        "name": "Bosnia and Herzegovina",
+        "value": 25.4686393737793,
+        "display": "25%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 139
+      },
+      "BRA": {
+        "name": "Brazil",
+        "value": 85.9419708251953,
+        "display": "86%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 65
+      },
+      "VGB": {
+        "name": "British Virgin Islands",
+        "value": 87.878791809082,
+        "display": "88%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 61
+      },
+      "BRN": {
+        "name": "Brunei Darussalam",
+        "value": 63.4778442382813,
+        "display": "63%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 96
+      },
+      "BGR": {
+        "name": "Bulgaria",
+        "value": 84.2854766845703,
+        "display": "84%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 69
+      },
+      "BFA": {
+        "name": "Burkina Faso",
+        "value": 6.50381708145142,
+        "display": "7%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 153
+      },
+      "BDI": {
+        "name": "Burundi",
+        "value": 16.4923000335693,
+        "display": "16%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 147
+      },
+      "CPV": {
+        "name": "Cabo Verde",
+        "value": 74.7021484375,
+        "display": "75%",
+        "year": 2019,
+        "unit": "%",
+        "rank": 78
+      },
+      "KHM": {
+        "name": "Cambodia",
+        "value": 33.5721702575684,
+        "display": "34%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 125
+      },
+      "CMR": {
+        "name": "Cameroon",
+        "value": 35.6178703308105,
+        "display": "36%",
+        "year": 2019,
+        "unit": "%",
+        "rank": 122
+      },
+      "CAN": {
+        "name": "Canada",
+        "value": 48.9200401306152,
+        "display": "49%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 108
+      },
+      "TCD": {
+        "name": "Chad",
+        "value": 1.27060997486115,
+        "display": "1%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 155
+      },
+      "CHL": {
+        "name": "Chile",
+        "value": 84.5110778808594,
+        "display": "85%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 68
+      },
+      "CHN": {
+        "name": "China",
+        "value": 93.0686721801758,
+        "display": "93%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 48
+      },
+      "COL": {
+        "name": "Colombia",
+        "value": 85.9283218383789,
+        "display": "86%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 66
+      },
+      "COD": {
+        "name": "Congo, Dem. Rep.",
+        "value": 6.86351013183594,
+        "display": "7%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 152
+      },
+      "CRI": {
+        "name": "Costa Rica",
+        "value": 95.2350387573242,
+        "display": "95%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 34
+      },
+      "CIV": {
+        "name": "Cote d'Ivoire",
+        "value": 10.7175779342651,
+        "display": "11%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 149
+      },
+      "HRV": {
+        "name": "Croatia",
+        "value": 70.9137268066406,
+        "display": "71%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 86
+      },
+      "CUB": {
+        "name": "Cuba",
+        "value": 99.6210021972656,
+        "display": "100%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 24
+      },
+      "CUW": {
+        "name": "Curacao",
+        "value": 94.01708984375,
+        "display": "94%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 40
+      },
+      "CYP": {
+        "name": "Cyprus",
+        "value": 86.661247253418,
+        "display": "87%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 63
+      },
+      "CZE": {
+        "name": "Czechia",
+        "value": 113.5302734375,
+        "display": "114%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 6
+      },
+      "DNK": {
+        "name": "Denmark",
+        "value": 103.195510864258,
+        "display": "103%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 14
+      },
+      "DJI": {
+        "name": "Djibouti",
+        "value": 11.6162700653076,
+        "display": "12%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 148
+      },
+      "DMA": {
+        "name": "Dominica",
+        "value": 66.0313873291016,
+        "display": "66%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 92
+      },
+      "DOM": {
+        "name": "Dominican Republic",
+        "value": 33.3575210571289,
+        "display": "33%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 126
+      },
+      "ECU": {
+        "name": "Ecuador",
+        "value": 55.2859191894531,
+        "display": "55%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 99
+      },
+      "EGY": {
+        "name": "Egypt, Arab Rep.",
+        "value": 29.2698307037354,
+        "display": "29%",
+        "year": 2019,
+        "unit": "%",
+        "rank": 131
+      },
+      "ERI": {
+        "name": "Eritrea",
+        "value": 23.8528347015381,
+        "display": "24%",
+        "year": 2019,
+        "unit": "%",
+        "rank": 141
+      },
+      "EST": {
+        "name": "Estonia",
+        "value": 94.311767578125,
+        "display": "94%",
+        "year": 2019,
+        "unit": "%",
+        "rank": 38
+      },
+      "ETH": {
+        "name": "Ethiopia",
+        "value": 30.118839263916,
+        "display": "30%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 130
+      },
+      "FJI": {
+        "name": "Fiji",
+        "value": 31.3401336669922,
+        "display": "31%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 128
+      },
+      "FIN": {
+        "name": "Finland",
+        "value": 88.3590774536133,
+        "display": "88%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 60
+      },
+      "FRA": {
+        "name": "France",
+        "value": 106.658348083496,
+        "display": "107%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 11
+      },
+      "GAB": {
+        "name": "Gabon",
+        "value": 42.9866485595703,
+        "display": "43%",
+        "year": 2019,
+        "unit": "%",
+        "rank": 112
+      },
+      "GMB": {
+        "name": "Gambia, The",
+        "value": 41.9368476867676,
+        "display": "42%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 113
+      },
+      "GEO": {
+        "name": "Georgia",
+        "value": 95.2487030029297,
+        "display": "95%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 33
+      },
+      "DEU": {
+        "name": "Germany",
+        "value": 108.031730651855,
+        "display": "108%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 10
+      },
+      "GHA": {
+        "name": "Ghana",
+        "value": 116.13671875,
+        "display": "116%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 4
+      },
+      "GRC": {
+        "name": "Greece",
+        "value": 93.2796173095703,
+        "display": "93%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 46
+      },
+      "GRD": {
+        "name": "Grenada",
+        "value": 130.813323974609,
+        "display": "131%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 2
+      },
+      "GTM": {
+        "name": "Guatemala",
+        "value": 49.8383483886719,
+        "display": "50%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 105
+      },
+      "GIN": {
+        "name": "Guinea",
+        "value": 19.6575222015381,
+        "display": "20%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 143
+      },
+      "HND": {
+        "name": "Honduras",
+        "value": 33.7702293395996,
+        "display": "34%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 124
+      },
+      "HKG": {
+        "name": "Hong Kong SAR, China",
+        "value": 93.6461334228516,
+        "display": "94%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 45
+      },
+      "HUN": {
+        "name": "Hungary",
+        "value": 90.8407669067383,
+        "display": "91%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 55
+      },
+      "ISL": {
+        "name": "Iceland",
+        "value": 95.1041030883789,
+        "display": "95%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 35
+      },
+      "IND": {
+        "name": "India",
+        "value": 51.6870307922363,
+        "display": "52%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 103
+      },
+      "IRN": {
+        "name": "Iran, Islamic Rep.",
+        "value": 72.4765472412109,
+        "display": "72%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 83
+      },
+      "IRL": {
+        "name": "Ireland",
+        "value": 95.3538970947266,
+        "display": "95%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 32
+      },
+      "ISR": {
+        "name": "Israel",
+        "value": 111.230239868164,
+        "display": "111%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 9
+      },
+      "ITA": {
+        "name": "Italy",
+        "value": 92.6589508056641,
+        "display": "93%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 49
+      },
+      "JOR": {
+        "name": "Jordan",
+        "value": 26.5996608734131,
+        "display": "27%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 138
+      },
+      "KAZ": {
+        "name": "Kazakhstan",
+        "value": 74.1345901489258,
+        "display": "74%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 81
+      },
+      "KEN": {
+        "name": "Kenya",
+        "value": 65.1438522338867,
+        "display": "65%",
+        "year": 2019,
+        "unit": "%",
+        "rank": 93
+      },
+      "KIR": {
+        "name": "Kiribati",
+        "value": 88.8116683959961,
+        "display": "89%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 59
+      },
+      "KOR": {
+        "name": "Korea, Rep.",
+        "value": 91.7819137573242,
+        "display": "92%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 53
+      },
+      "KWT": {
+        "name": "Kuwait",
+        "value": 60.2476997375488,
+        "display": "60%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 97
+      },
+      "KGZ": {
+        "name": "Kyrgyz Republic",
+        "value": 38.5439682006836,
+        "display": "39%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 118
+      },
+      "LAO": {
+        "name": "Lao PDR",
+        "value": 49.3228950500488,
+        "display": "49%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 107
+      },
+      "LVA": {
+        "name": "Latvia",
+        "value": 94.6291198730469,
+        "display": "95%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 37
+      },
+      "LSO": {
+        "name": "Lesotho",
+        "value": 33.0466079711914,
+        "display": "33%",
+        "year": 2019,
+        "unit": "%",
+        "rank": 127
+      },
+      "LBR": {
+        "name": "Liberia",
+        "value": 128.478256225586,
+        "display": "128%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 3
+      },
+      "LIE": {
+        "name": "Liechtenstein",
+        "value": 102.236839294434,
+        "display": "102%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 18
+      },
+      "LTU": {
+        "name": "Lithuania",
+        "value": 89.1377716064453,
+        "display": "89%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 58
+      },
+      "LUX": {
+        "name": "Luxembourg",
+        "value": 92.1959075927734,
+        "display": "92%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 51
+      },
+      "MDG": {
+        "name": "Madagascar",
+        "value": 40.1499214172363,
+        "display": "40%",
+        "year": 2019,
+        "unit": "%",
+        "rank": 115
+      },
+      "MYS": {
+        "name": "Malaysia",
+        "value": 87.4983444213867,
+        "display": "87%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 62
+      },
+      "MLI": {
+        "name": "Mali",
+        "value": 7.59596967697144,
+        "display": "8%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 150
+      },
+      "MLT": {
+        "name": "Malta",
+        "value": 112.487106323242,
+        "display": "112%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 7
+      },
+      "MHL": {
+        "name": "Marshall Islands",
+        "value": 67.7650375366211,
+        "display": "68%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 91
+      },
+      "MUS": {
+        "name": "Mauritius",
+        "value": 102.004051208496,
+        "display": "102%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 19
+      },
+      "MEX": {
+        "name": "Mexico",
+        "value": 70.5982513427734,
+        "display": "71%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 87
+      },
+      "FSM": {
+        "name": "Micronesia, Fed. Sts.",
+        "value": 5.88564252853394,
+        "display": "6%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 154
+      },
+      "MDA": {
+        "name": "Moldova",
+        "value": 90.3316802978516,
+        "display": "90%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 56
+      },
+      "MNG": {
+        "name": "Mongolia",
+        "value": 80.1474227905273,
+        "display": "80%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 71
+      },
+      "MNE": {
+        "name": "Montenegro",
+        "value": 72.8723220825195,
+        "display": "73%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 82
+      },
+      "MAR": {
+        "name": "Morocco",
+        "value": 59.870189666748,
+        "display": "60%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 98
+      },
+      "NAM": {
+        "name": "Namibia",
+        "value": 36.5069999694824,
+        "display": "37%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 119
+      },
+      "NPL": {
+        "name": "Nepal",
+        "value": 93.6980285644531,
+        "display": "94%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 43
+      },
+      "NLD": {
+        "name": "Netherlands",
+        "value": 91.9532470703125,
+        "display": "92%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 52
+      },
+      "NZL": {
+        "name": "New Zealand",
+        "value": 91.6810607910156,
+        "display": "92%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 54
+      },
+      "NIC": {
+        "name": "Nicaragua",
+        "value": 69.0436401367188,
+        "display": "69%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 90
+      },
+      "NER": {
+        "name": "Niger",
+        "value": 7.02583980560303,
+        "display": "7%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 151
+      },
+      "MKD": {
+        "name": "North Macedonia",
+        "value": 31.04128074646,
+        "display": "31%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 129
+      },
+      "NOR": {
+        "name": "Norway",
+        "value": 96.3390502929688,
+        "display": "96%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 29
+      },
+      "OMN": {
+        "name": "Oman",
+        "value": 27.3968696594238,
+        "display": "27%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 136
+      },
+      "PAK": {
+        "name": "Pakistan",
+        "value": 82.5566711425781,
+        "display": "83%",
+        "year": 2019,
+        "unit": "%",
+        "rank": 70
+      },
+      "PLW": {
+        "name": "Palau",
+        "value": 70.5093765258789,
+        "display": "71%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 88
+      },
+      "PAN": {
+        "name": "Panama",
+        "value": 26.9723892211914,
+        "display": "27%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 137
+      },
+      "PRY": {
+        "name": "Paraguay",
+        "value": 51.0917205810547,
+        "display": "51%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 104
+      },
+      "PER": {
+        "name": "Peru",
+        "value": 96.441780090332,
+        "display": "96%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 28
+      },
+      "PHL": {
+        "name": "Philippines",
+        "value": 90.2253494262695,
+        "display": "90%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 57
+      },
+      "POL": {
+        "name": "Poland",
+        "value": 93.8656768798828,
+        "display": "94%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 42
+      },
+      "PRT": {
+        "name": "Portugal",
+        "value": 99.3589935302734,
+        "display": "99%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 25
+      },
+      "QAT": {
+        "name": "Qatar",
+        "value": 53.9965209960938,
+        "display": "54%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 100
+      },
+      "ROU": {
+        "name": "Romania",
+        "value": 94.9140777587891,
+        "display": "95%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 36
+      },
+      "RUS": {
+        "name": "Russian Federation",
+        "value": 85.9931564331055,
+        "display": "86%",
+        "year": 2019,
+        "unit": "%",
+        "rank": 64
+      },
+      "RWA": {
+        "name": "Rwanda",
+        "value": 28.1999607086182,
+        "display": "28%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 134
+      },
+      "WSM": {
+        "name": "Samoa",
+        "value": 41.425178527832,
+        "display": "41%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 114
+      },
+      "SMR": {
+        "name": "San Marino",
+        "value": 100.129867553711,
+        "display": "100%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 23
+      },
+      "SAU": {
+        "name": "Saudi Arabia",
+        "value": 18.319730758667,
+        "display": "18%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 144
+      },
+      "SEN": {
+        "name": "Senegal",
+        "value": 17.5804004669189,
+        "display": "18%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 145
+      },
+      "SRB": {
+        "name": "Serbia",
+        "value": 63.7926902770996,
+        "display": "64%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 95
+      },
+      "SYC": {
+        "name": "Seychelles",
+        "value": 104.291038513184,
+        "display": "104%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 13
+      },
+      "SLE": {
+        "name": "Sierra Leone",
+        "value": 25.0021991729736,
+        "display": "25%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 140
+      },
+      "SGP": {
+        "name": "Singapore",
+        "value": 96.0698699951172,
+        "display": "96%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 31
+      },
+      "SVK": {
+        "name": "Slovak Republic",
+        "value": 101.775810241699,
+        "display": "102%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 21
+      },
+      "SVN": {
+        "name": "Slovenia",
+        "value": 93.9730987548828,
+        "display": "94%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 41
+      },
+      "SLB": {
+        "name": "Solomon Islands",
+        "value": 93.2664794921875,
+        "display": "93%",
+        "year": 2019,
+        "unit": "%",
+        "rank": 47
+      },
+      "SOM": {
+        "name": "Somalia, Fed. Rep.",
+        "value": 1.14606761932373,
+        "display": "1%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 156
+      },
+      "ZAF": {
+        "name": "South Africa",
+        "value": 17.5463600158691,
+        "display": "18%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 146
+      },
+      "ESP": {
+        "name": "Spain",
+        "value": 101.828903198242,
+        "display": "102%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 20
+      },
+      "LKA": {
+        "name": "Sri Lanka",
+        "value": 71.8412780761719,
+        "display": "72%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 85
+      },
+      "KNA": {
+        "name": "St. Kitts and Nevis",
+        "value": 93.6827011108398,
+        "display": "94%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 44
+      },
+      "LCA": {
+        "name": "St. Lucia",
+        "value": 78.046028137207,
+        "display": "78%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 74
+      },
+      "VCT": {
+        "name": "St. Vincent and the Grenadines",
+        "value": 113.829132080078,
+        "display": "114%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 5
+      },
+      "SUR": {
+        "name": "Suriname",
+        "value": 78.1529693603516,
+        "display": "78%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 73
+      },
+      "SWE": {
+        "name": "Sweden",
+        "value": 100.388809204102,
+        "display": "100%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 22
+      },
+      "CHE": {
+        "name": "Switzerland",
+        "value": 102.872566223145,
+        "display": "103%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 15
+      },
+      "TZA": {
+        "name": "Tanzania",
+        "value": 77.2501220703125,
+        "display": "77%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 75
+      },
+      "THA": {
+        "name": "Thailand",
+        "value": 74.369758605957,
+        "display": "74%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 79
+      },
+      "TLS": {
+        "name": "Timor-Leste",
+        "value": 27.8652362823486,
+        "display": "28%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 135
+      },
+      "TGO": {
+        "name": "Togo",
+        "value": 29.1930904388428,
+        "display": "29%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 132
+      },
+      "TON": {
+        "name": "Tonga",
+        "value": 48.3202590942383,
+        "display": "48%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 109
+      },
+      "TTO": {
+        "name": "Trinidad and Tobago",
+        "value": 64.4892807006836,
+        "display": "64%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 94
+      },
+      "TUR": {
+        "name": "Turkiye",
+        "value": 39.7459297180176,
+        "display": "40%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 116
+      },
+      "TKM": {
+        "name": "Turkmenistan",
+        "value": 35.9144515991211,
+        "display": "36%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 121
+      },
+      "TCA": {
+        "name": "Turks and Caicos Islands",
+        "value": 96.1538467407227,
+        "display": "96%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 30
+      },
+      "UKR": {
+        "name": "Ukraine",
+        "value": 85.8198318481445,
+        "display": "86%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 67
+      },
+      "ARE": {
+        "name": "United Arab Emirates",
+        "value": 94.2054061889648,
+        "display": "94%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 39
+      },
+      "GBR": {
+        "name": "United Kingdom",
+        "value": 105.762809753418,
+        "display": "106%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 12
+      },
+      "USA": {
+        "name": "United States",
+        "value": 72.3956832885742,
+        "display": "72%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 84
+      },
+      "URY": {
+        "name": "Uruguay",
+        "value": 97.1439590454102,
+        "display": "97%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 26
+      },
+      "UZB": {
+        "name": "Uzbekistan",
+        "value": 44.0116310119629,
+        "display": "44%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 111
+      },
+      "VUT": {
+        "name": "Vanuatu",
+        "value": 102.605842590332,
+        "display": "103%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 17
+      },
+      "VNM": {
+        "name": "Viet Nam",
+        "value": 92.4453887939453,
+        "display": "92%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 50
+      },
+      "PSE": {
+        "name": "West Bank and Gaza",
+        "value": 49.4757385253906,
+        "display": "49%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 106
+      },
+      "ZWE": {
+        "name": "Zimbabwe",
+        "value": 74.3152465820313,
+        "display": "74%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 80
+      }
+    }
+  },
+  "review": {
+    "errors": [],
+    "claims": [
+      {
+        "surface": "title",
+        "text": "Preschool Enrollment Ranges From 160% to 1%",
+        "isos": [],
+        "support": "AUS is 160% (rank 1) and SOM is 1% (rank 156)",
+        "evidence": {}
+      },
+      {
+        "surface": "hook",
+        "text": "160% TO 1%",
+        "isos": [],
+        "support": "AUS is 160% and SOM is 1%",
+        "evidence": {}
+      },
+      {
+        "surface": "description",
+        "text": "Gross preprimary enrollment ratios worldwide based on World Bank data.",
+        "isos": [],
+        "support": "Gross enrollment ratio indicator SE.PRE.ENRR from World Bank source data",
+        "evidence": {}
+      },
+      {
+        "surface": "beat_0",
+        "text": "Australia has 160% preschool enrollment. In Somalia, it is just 1%.",
+        "isos": [
+          "AUS",
+          "SOM"
+        ],
+        "support": "AUS value is 160.214 (display 160%) and SOM value is 1.146 (display 1%)",
+        "evidence": {
+          "AUS": {
+            "name": "Australia",
+            "value": 160.214385986328,
+            "display": "160%",
+            "year": 2020,
+            "unit": "%",
+            "rank": 1
+          },
+          "SOM": {
+            "name": "Somalia, Fed. Rep.",
+            "value": 1.14606761932373,
+            "display": "1%",
+            "year": 2021,
+            "unit": "%",
+            "rank": 156
+          }
+        }
+      },
+      {
+        "surface": "beat_1",
+        "text": "Chad shares the bottom spot with Somalia.",
+        "isos": [
+          "TCD",
+          "SOM"
+        ],
+        "support": "SOM rank is 156 with 1% and TCD rank is 155 with 1%",
+        "evidence": {
+          "TCD": {
+            "name": "Chad",
+            "value": 1.27060997486115,
+            "display": "1%",
+            "year": 2021,
+            "unit": "%",
+            "rank": 155
+          },
+          "SOM": {
+            "name": "Somalia, Fed. Rep.",
+            "value": 1.14606761932373,
+            "display": "1%",
+            "year": 2021,
+            "unit": "%",
+            "rank": 156
+          }
+        }
+      },
+      {
+        "surface": "beat_2",
+        "text": "Australia is the world's highest, counting total enrollment regardless of age relative to the official target group.",
+        "isos": [
+          "AUS"
+        ],
+        "support": "AUS rank is 1, definition states gross enrollment ratio is total enrollment regardless of age to population of the official age group",
+        "evidence": {
+          "AUS": {
+            "name": "Australia",
+            "value": 160.214385986328,
+            "display": "160%",
+            "year": 2020,
+            "unit": "%",
+            "rank": 1
+          }
+        }
+      },
+      {
+        "surface": "beat_3",
+        "text": "Australia has 2.2 times the enrollment the USA has, which sits at 72%.",
+        "isos": [
+          "AUS",
+          "USA"
+        ],
+        "support": "AUS is 160.214, USA is 72.396 (display 72%), 160.214 / 72.396 is approximately 2.21",
+        "evidence": {
+          "AUS": {
+            "name": "Australia",
+            "value": 160.214385986328,
+            "display": "160%",
+            "year": 2020,
+            "unit": "%",
+            "rank": 1
+          },
+          "USA": {
+            "name": "United States",
+            "value": 72.3956832885742,
+            "display": "72%",
+            "year": 2020,
+            "unit": "%",
+            "rank": 84
+          }
+        }
+      },
+      {
+        "surface": "beat_4",
+        "text": "Canada has 49%, and India has 52%.",
+        "isos": [
+          "CAN",
+          "IND"
+        ],
+        "support": "CAN display is 49% (value 48.92) and IND display is 52% (value 51.69)",
+        "evidence": {
+          "CAN": {
+            "name": "Canada",
+            "value": 48.9200401306152,
+            "display": "49%",
+            "year": 2020,
+            "unit": "%",
+            "rank": 108
+          },
+          "IND": {
+            "name": "India",
+            "value": 51.6870307922363,
+            "display": "52%",
+            "year": 2021,
+            "unit": "%",
+            "rank": 103
+          }
+        }
+      },
+      {
+        "surface": "beat_5",
+        "text": "Ghana has 116%, Germany has 108%, and the UK has 106%.",
+        "isos": [
+          "GHA",
+          "DEU",
+          "GBR"
+        ],
+        "support": "GHA display is 116%, DEU display is 108%, GBR display is 106%",
+        "evidence": {
+          "GHA": {
+            "name": "Ghana",
+            "value": 116.13671875,
+            "display": "116%",
+            "year": 2020,
+            "unit": "%",
+            "rank": 4
+          },
+          "DEU": {
+            "name": "Germany",
+            "value": 108.031730651855,
+            "display": "108%",
+            "year": 2020,
+            "unit": "%",
+            "rank": 10
+          },
+          "GBR": {
+            "name": "United Kingdom",
+            "value": 105.762809753418,
+            "display": "106%",
+            "year": 2020,
+            "unit": "%",
+            "rank": 12
+          }
+        }
+      },
+      {
+        "surface": "beat_6",
+        "text": "China has 93%, providing a bridge between home and school.",
+        "isos": [
+          "CHN"
+        ],
+        "support": "CHN display is 93%, definition states preprimary provides a bridge between home and school",
+        "evidence": {
+          "CHN": {
+            "name": "China",
+            "value": 93.0686721801758,
+            "display": "93%",
+            "year": 2021,
+            "unit": "%",
+            "rank": 48
+          }
+        }
+      },
+      {
+        "surface": "beat_7",
+        "text": "Where does your country land?",
+        "isos": [],
+        "support": "Callout card question",
+        "evidence": {}
+      },
+      {
+        "surface": "card_7",
+        "text": "Where does your country land? Gross Preprimary Enrollment",
+        "isos": [],
+        "support": "Card text matching visual plan and indicator subject",
+        "evidence": {}
+      },
+      {
+        "surface": "title",
+        "text": "Preschool Enrollment Ranges From 160% to 1%",
+        "isos": [],
+        "support": "Australia is 160% and Somalia is 1% matching the indicator extremes in the dataset.",
+        "method": "complete-surface-check",
+        "evidence": {}
+      },
+      {
+        "surface": "hook",
+        "text": "160% TO 1%",
+        "isos": [],
+        "support": "Reflects the min and max values in the dataset (160% and 1%).",
+        "method": "complete-surface-check",
+        "evidence": {}
+      },
+      {
+        "surface": "description",
+        "text": "Gross preprimary enrollment ratios worldwide based on World Bank data.",
+        "isos": [],
+        "support": "Accurately describes the indicator as gross preprimary enrollment ratios based on World Bank data.",
+        "method": "complete-surface-check",
+        "evidence": {}
+      },
+      {
+        "surface": "beat_0",
+        "text": "Australia has 160% preschool enrollment. In Somalia, it is just 1%.",
+        "isos": [
+          "AUS",
+          "SOM"
+        ],
+        "support": "Australia's display value is 160% and Somalia's display value is 1%.",
+        "method": "complete-surface-check",
+        "evidence": {
+          "AUS": {
+            "name": "Australia",
+            "value": 160.214385986328,
+            "display": "160%",
+            "year": 2020,
+            "unit": "%",
+            "rank": 1
+          },
+          "SOM": {
+            "name": "Somalia, Fed. Rep.",
+            "value": 1.14606761932373,
+            "display": "1%",
+            "year": 2021,
+            "unit": "%",
+            "rank": 156
+          }
+        }
+      },
+      {
+        "surface": "beat_1",
+        "text": "Chad shares the bottom spot with Somalia.",
+        "isos": [
+          "TCD",
+          "SOM"
+        ],
+        "support": "Chad and Somalia occupy the lowest ranks (155 and 156) with 1% enrollment.",
+        "method": "complete-surface-check",
+        "evidence": {
+          "TCD": {
+            "name": "Chad",
+            "value": 1.27060997486115,
+            "display": "1%",
+            "year": 2021,
+            "unit": "%",
+            "rank": 155
+          },
+          "SOM": {
+            "name": "Somalia, Fed. Rep.",
+            "value": 1.14606761932373,
+            "display": "1%",
+            "year": 2021,
+            "unit": "%",
+            "rank": 156
+          }
+        }
+      },
+      {
+        "surface": "beat_2",
+        "text": "Australia is the world's highest, counting total enrollment regardless of age relative to the official target group.",
+        "isos": [
+          "AUS"
+        ],
+        "support": "Australia is rank 1, and definition matches gross enrollment ratio explanation.",
+        "method": "complete-surface-check",
+        "evidence": {
+          "AUS": {
+            "name": "Australia",
+            "value": 160.214385986328,
+            "display": "160%",
+            "year": 2020,
+            "unit": "%",
+            "rank": 1
+          }
+        }
+      },
+      {
+        "surface": "beat_3",
+        "text": "Australia has 2.2 times the enrollment the USA has, which sits at 72%.",
+        "isos": [
+          "AUS",
+          "USA"
+        ],
+        "support": "Australia is 160% and USA is 72%, and 160 / 72 is about 2.2.",
+        "method": "complete-surface-check",
+        "evidence": {
+          "AUS": {
+            "name": "Australia",
+            "value": 160.214385986328,
+            "display": "160%",
+            "year": 2020,
+            "unit": "%",
+            "rank": 1
+          },
+          "USA": {
+            "name": "United States",
+            "value": 72.3956832885742,
+            "display": "72%",
+            "year": 2020,
+            "unit": "%",
+            "rank": 84
+          }
+        }
+      },
+      {
+        "surface": "beat_4",
+        "text": "Canada has 49%, and India has 52%.",
+        "isos": [
+          "CAN",
+          "IND"
+        ],
+        "support": "Canada display is 49% and India display is 52%.",
+        "method": "complete-surface-check",
+        "evidence": {
+          "CAN": {
+            "name": "Canada",
+            "value": 48.9200401306152,
+            "display": "49%",
+            "year": 2020,
+            "unit": "%",
+            "rank": 108
+          },
+          "IND": {
+            "name": "India",
+            "value": 51.6870307922363,
+            "display": "52%",
+            "year": 2021,
+            "unit": "%",
+            "rank": 103
+          }
+        }
+      },
+      {
+        "surface": "beat_5",
+        "text": "Ghana has 116%, Germany has 108%, and the UK has 106%.",
+        "isos": [
+          "GHA",
+          "DEU",
+          "GBR"
+        ],
+        "support": "Ghana is 116%, Germany is 108%, and UK is 106% in the dataset.",
+        "method": "complete-surface-check",
+        "evidence": {
+          "GHA": {
+            "name": "Ghana",
+            "value": 116.13671875,
+            "display": "116%",
+            "year": 2020,
+            "unit": "%",
+            "rank": 4
+          },
+          "DEU": {
+            "name": "Germany",
+            "value": 108.031730651855,
+            "display": "108%",
+            "year": 2020,
+            "unit": "%",
+            "rank": 10
+          },
+          "GBR": {
+            "name": "United Kingdom",
+            "value": 105.762809753418,
+            "display": "106%",
+            "year": 2020,
+            "unit": "%",
+            "rank": 12
+          }
+        }
+      },
+      {
+        "surface": "beat_6",
+        "text": "China has 93%, providing a bridge between home and school.",
+        "isos": [
+          "CHN"
+        ],
+        "support": "China display is 93%, and text uses the official definition phrase 'bridge between home and school'.",
+        "method": "complete-surface-check",
+        "evidence": {
+          "CHN": {
+            "name": "China",
+            "value": 93.0686721801758,
+            "display": "93%",
+            "year": 2021,
+            "unit": "%",
+            "rank": 48
+          }
+        }
+      },
+      {
+        "surface": "beat_7",
+        "text": "Where does your country land?",
+        "isos": [],
+        "support": "Standard closing question matching card_7.",
+        "method": "complete-surface-check",
+        "evidence": {}
+      },
+      {
+        "surface": "card_7",
+        "text": [
+          "Where does your country land?",
+          "Gross Preprimary Enrollment"
+        ],
+        "isos": [],
+        "support": "Accurately reflects the dataset title and closing question.",
+        "method": "complete-surface-check",
+        "evidence": {}
+      }
+    ],
+    "surface_checks": {
+      "title": {
+        "supported": true,
+        "reason": "Australia is 160% and Somalia is 1% matching the indicator extremes in the dataset.",
+        "isos": []
+      },
+      "hook": {
+        "supported": true,
+        "reason": "Reflects the min and max values in the dataset (160% and 1%).",
+        "isos": []
+      },
+      "description": {
+        "supported": true,
+        "reason": "Accurately describes the indicator as gross preprimary enrollment ratios based on World Bank data.",
+        "isos": []
+      },
+      "beat_0": {
+        "supported": true,
+        "reason": "Australia's display value is 160% and Somalia's display value is 1%.",
+        "isos": [
+          "AUS",
+          "SOM"
+        ]
+      },
+      "beat_1": {
+        "supported": true,
+        "reason": "Chad and Somalia occupy the lowest ranks (155 and 156) with 1% enrollment.",
+        "isos": [
+          "TCD",
+          "SOM"
+        ]
+      },
+      "beat_2": {
+        "supported": true,
+        "reason": "Australia is rank 1, and definition matches gross enrollment ratio explanation.",
+        "isos": [
+          "AUS"
+        ]
+      },
+      "beat_3": {
+        "supported": true,
+        "reason": "Australia is 160% and USA is 72%, and 160 / 72 is about 2.2.",
+        "isos": [
+          "AUS",
+          "USA"
+        ]
+      },
+      "beat_4": {
+        "supported": true,
+        "reason": "Canada display is 49% and India display is 52%.",
+        "isos": [
+          "CAN",
+          "IND"
+        ]
+      },
+      "beat_5": {
+        "supported": true,
+        "reason": "Ghana is 116%, Germany is 108%, and UK is 106% in the dataset.",
+        "isos": [
+          "GHA",
+          "DEU",
+          "GBR"
+        ]
+      },
+      "beat_6": {
+        "supported": true,
+        "reason": "China display is 93%, and text uses the official definition phrase 'bridge between home and school'.",
+        "isos": [
+          "CHN"
+        ]
+      },
+      "beat_7": {
+        "supported": true,
+        "reason": "Standard closing question matching card_7.",
+        "isos": []
+      },
+      "card_7": {
+        "supported": true,
+        "reason": "Accurately reflects the dataset title and closing question.",
+        "isos": []
+      }
+    },
+    "warnings": []
+  },
+  "script_sha256": "3aa45ec72efc52c261afe1c42a7f5663bbf6af1e944ec5161f7ae2d83dce4df0",
+  "data_sha256": "94dcbfc14b06fc08987248bf338df4312997e189c1992bace295a06d3d4660cc",
+  "reviewer_model": "gemini-3.5-flash-lite"
+}

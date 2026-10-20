@@ -1,0 +1,164 @@
+{
+  "errors": [],
+  "claims": [
+    {
+      "surface": "title",
+      "text": "Australia Leads the World in Overweight Toddlers",
+      "isos": [
+        "AUS"
+      ],
+      "support": "Australia has value 26.4%, rank 1, highest among 160 mapped entities."
+    },
+    {
+      "surface": "hook",
+      "text": "THE WIDEST GAP",
+      "isos": [],
+      "support": "Contrasts highest (Australia 26.4%) and lowest (Myanmar 0.6%)."
+    },
+    {
+      "surface": "description",
+      "text": "A cinematic look at the global prevalence of overweight children under 5, contrasting the highest and lowest nations by data.",
+      "isos": [],
+      "support": "Indicator SH.STA.OWGH.ME.ZS measures prevalence of overweight children under age 5."
+    },
+    {
+      "surface": "beat_0",
+      "text": "Myanmar has 0.6% of children under 5 overweight. In Australia, it is 26.4%.",
+      "isos": [
+        "MMR",
+        "AUS"
+      ],
+      "support": "MMR value is 0.6%, AUS value is 26.4%."
+    },
+    {
+      "surface": "beat_1",
+      "text": "Australia has 44 times the percentage recorded in Myanmar.",
+      "isos": [
+        "AUS",
+        "MMR"
+      ],
+      "support": "26.4 / 0.6 = 44."
+    },
+    {
+      "surface": "beat_2",
+      "text": "China has 11.1% of young children overweight, while Brazil sits at 10.9%.",
+      "isos": [
+        "CHN",
+        "BRA"
+      ],
+      "support": "CHN value is 11.1%, BRA value is 10.9%."
+    },
+    {
+      "surface": "beat_3",
+      "text": "The USA has 9.7%, and the UK hits 7.8%.",
+      "isos": [
+        "USA",
+        "GBR"
+      ],
+      "support": "USA value is 9.7%, GBR value is 7.8%."
+    },
+    {
+      "surface": "beat_4",
+      "text": "India stays low at 3.7%.",
+      "isos": [
+        "IND"
+      ],
+      "support": "IND value is 3.7%."
+    },
+    {
+      "surface": "beat_5",
+      "text": "Myanmar is the world's lowest at 0.6%.",
+      "isos": [
+        "MMR"
+      ],
+      "support": "MMR value is 0.6%, rank 160 (lowest)."
+    },
+    {
+      "surface": "beat_6",
+      "text": "Where does your country land?",
+      "isos": [],
+      "support": "Call to action card."
+    },
+    {
+      "surface": "card_6",
+      "text": "Where does your country land? Share of overweight children under 5 (%), World Bank, 2024",
+      "isos": [],
+      "support": "Matches metadata indicator name, source, and year."
+    }
+  ],
+  "surface_checks": {
+    "title": {
+      "supported": true,
+      "reason": "Australia ranks 1st with 26.4%.",
+      "isos": [
+        "AUS"
+      ]
+    },
+    "hook": {
+      "supported": true,
+      "reason": "Accurately frames the comparison between extremes.",
+      "isos": []
+    },
+    "description": {
+      "supported": true,
+      "reason": "Accurately describes the indicator and scope.",
+      "isos": []
+    },
+    "beat_0": {
+      "supported": true,
+      "reason": "Values for Myanmar (0.6%) and Australia (26.4%) match the dataset.",
+      "isos": [
+        "MMR",
+        "AUS"
+      ]
+    },
+    "beat_1": {
+      "supported": true,
+      "reason": "Math check: 26.4 / 0.6 = 44.",
+      "isos": [
+        "AUS",
+        "MMR"
+      ]
+    },
+    "beat_2": {
+      "supported": true,
+      "reason": "China (11.1%) and Brazil (10.9%) values are supported.",
+      "isos": [
+        "CHN",
+        "BRA"
+      ]
+    },
+    "beat_3": {
+      "supported": true,
+      "reason": "USA (9.7%) and United Kingdom (7.8%) values are supported.",
+      "isos": [
+        "USA",
+        "GBR"
+      ]
+    },
+    "beat_4": {
+      "supported": true,
+      "reason": "India value (3.7%) is supported.",
+      "isos": [
+        "IND"
+      ]
+    },
+    "beat_5": {
+      "supported": true,
+      "reason": "Myanmar rank 160 with 0.6% is the lowest in the dataset.",
+      "isos": [
+        "MMR"
+      ]
+    },
+    "beat_6": {
+      "supported": true,
+      "reason": "Standard concluding question.",
+      "isos": []
+    },
+    "card_6": {
+      "supported": true,
+      "reason": "Metadata correctly cites World Bank and 2024.",
+      "isos": []
+    }
+  }
+}

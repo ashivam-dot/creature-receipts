@@ -1,0 +1,25 @@
+{
+  "duration": 41.54,
+  "integrated_lufs": -14.4,
+  "true_peak_dbfs": -1.4,
+  "speech": {
+    "heard": "Australia has 160% preschool enrollment. In Somalia, it is just 1%. Dad shares the bottom spot with Somalia. Australia is the world's highest, counting total enrollment regardless of age relative to the official target group. Australia has 2.2 times the enrollment the USA has, which sits at 72%. Canada has 49%, and India has 52%. Ghana has 116%, Germany has 108%, and the UK has 106%. China has 93%, providing a bridge between home and school. Where does your country land?",
+    "model": "small.en",
+    "media_sha256": "e51128e33ae55d1d2f5d7c5c883631c8eabd9c87e51e76496d445b063ffd45f1",
+    "primary_differences": [
+      "'chad' heard as 'dad' after 'is just one'"
+    ],
+    "differences": [
+      "'chad' heard as 'dad' after 'is just one'",
+      "base.en: 'chad' heard as 'ged' after 'is just one'"
+    ],
+    "corroboration": {
+      "model": "base.en",
+      "heard": "Australia has 160% pre-school enrollment. In Somalia, it is just 1%. GED shares the bottom spot with Somalia. Australia is the world's highest, counting total enrollment regardless of age relative to the official target group. Australia has 2.2 times the enrollment the USA has, which sits at 72%. Canada has 49% and India has 52%. Ghana has 116%, Germany has 108%, and the UK has 106%. China has 93%, providing a bridge between home and school. Where does your country land?",
+      "differences": [
+        "'chad' heard as 'ged' after 'is just one'"
+      ],
+      "resolved": []
+    }
+  }
+}

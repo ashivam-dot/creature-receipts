@@ -1,0 +1,179 @@
+{
+  "errors": [],
+  "claims": [
+    {
+      "surface": "title",
+      "text": "Preschool Enrollment Ranges From 160% to 1%",
+      "isos": [],
+      "support": "AUS is 160% (rank 1) and SOM is 1% (rank 156)"
+    },
+    {
+      "surface": "hook",
+      "text": "160% TO 1%",
+      "isos": [],
+      "support": "AUS is 160% and SOM is 1%"
+    },
+    {
+      "surface": "description",
+      "text": "Gross preprimary enrollment ratios worldwide based on World Bank data.",
+      "isos": [],
+      "support": "Gross enrollment ratio indicator SE.PRE.ENRR from World Bank source data"
+    },
+    {
+      "surface": "beat_0",
+      "text": "Australia has 160% preschool enrollment. In Somalia, it is just 1%.",
+      "isos": [
+        "AUS",
+        "SOM"
+      ],
+      "support": "AUS value is 160.214 (display 160%) and SOM value is 1.146 (display 1%)"
+    },
+    {
+      "surface": "beat_1",
+      "text": "Chad shares the bottom spot with Somalia.",
+      "isos": [
+        "TCD",
+        "SOM"
+      ],
+      "support": "SOM rank is 156 with 1% and TCD rank is 155 with 1%"
+    },
+    {
+      "surface": "beat_2",
+      "text": "Australia is the world's highest, counting total enrollment regardless of age relative to the official target group.",
+      "isos": [
+        "AUS"
+      ],
+      "support": "AUS rank is 1, definition states gross enrollment ratio is total enrollment regardless of age to population of the official age group"
+    },
+    {
+      "surface": "beat_3",
+      "text": "Australia has 2.2 times the enrollment the USA has, which sits at 72%.",
+      "isos": [
+        "AUS",
+        "USA"
+      ],
+      "support": "AUS is 160.214, USA is 72.396 (display 72%), 160.214 / 72.396 is approximately 2.21"
+    },
+    {
+      "surface": "beat_4",
+      "text": "Canada has 49%, and India has 52%.",
+      "isos": [
+        "CAN",
+        "IND"
+      ],
+      "support": "CAN display is 49% (value 48.92) and IND display is 52% (value 51.69)"
+    },
+    {
+      "surface": "beat_5",
+      "text": "Ghana has 116%, Germany has 108%, and the UK has 106%.",
+      "isos": [
+        "GHA",
+        "DEU",
+        "GBR"
+      ],
+      "support": "GHA display is 116%, DEU display is 108%, GBR display is 106%"
+    },
+    {
+      "surface": "beat_6",
+      "text": "China has 93%, providing a bridge between home and school.",
+      "isos": [
+        "CHN"
+      ],
+      "support": "CHN display is 93%, definition states preprimary provides a bridge between home and school"
+    },
+    {
+      "surface": "beat_7",
+      "text": "Where does your country land?",
+      "isos": [],
+      "support": "Callout card question"
+    },
+    {
+      "surface": "card_7",
+      "text": "Where does your country land? Gross Preprimary Enrollment",
+      "isos": [],
+      "support": "Card text matching visual plan and indicator subject"
+    }
+  ],
+  "surface_checks": {
+    "title": {
+      "supported": true,
+      "reason": "Australia is 160% and Somalia is 1% matching the indicator extremes in the dataset.",
+      "isos": []
+    },
+    "hook": {
+      "supported": true,
+      "reason": "Reflects the min and max values in the dataset (160% and 1%).",
+      "isos": []
+    },
+    "description": {
+      "supported": true,
+      "reason": "Accurately describes the indicator as gross preprimary enrollment ratios based on World Bank data.",
+      "isos": []
+    },
+    "beat_0": {
+      "supported": true,
+      "reason": "Australia's display value is 160% and Somalia's display value is 1%.",
+      "isos": [
+        "AUS",
+        "SOM"
+      ]
+    },
+    "beat_1": {
+      "supported": true,
+      "reason": "Chad and Somalia occupy the lowest ranks (155 and 156) with 1% enrollment.",
+      "isos": [
+        "TCD",
+        "SOM"
+      ]
+    },
+    "beat_2": {
+      "supported": true,
+      "reason": "Australia is rank 1, and definition matches gross enrollment ratio explanation.",
+      "isos": [
+        "AUS"
+      ]
+    },
+    "beat_3": {
+      "supported": true,
+      "reason": "Australia is 160% and USA is 72%, and 160 / 72 is about 2.2.",
+      "isos": [
+        "AUS",
+        "USA"
+      ]
+    },
+    "beat_4": {
+      "supported": true,
+      "reason": "Canada display is 49% and India display is 52%.",
+      "isos": [
+        "CAN",
+        "IND"
+      ]
+    },
+    "beat_5": {
+      "supported": true,
+      "reason": "Ghana is 116%, Germany is 108%, and UK is 106% in the dataset.",
+      "isos": [
+        "GHA",
+        "DEU",
+        "GBR"
+      ]
+    },
+    "beat_6": {
+      "supported": true,
+      "reason": "China display is 93%, and text uses the official definition phrase 'bridge between home and school'.",
+      "isos": [
+        "CHN"
+      ]
+    },
+    "beat_7": {
+      "supported": true,
+      "reason": "Standard closing question matching card_7.",
+      "isos": []
+    },
+    "card_7": {
+      "supported": true,
+      "reason": "Accurately reflects the dataset title and closing question.",
+      "isos": []
+    }
+  }
+}

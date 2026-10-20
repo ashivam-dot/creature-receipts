@@ -1,0 +1,37 @@
+{
+  "version": 1,
+  "passed": true,
+  "checked_at": "2026-10-20T13:32:03.870173+00:00",
+  "quality_module_sha256": "abf82a585f855cc47faceb8807dd90b999b3d330d3a23eac1d6dd346e7364b2d",
+  "media_sha256": "844dd5b3dea94728972f9e33d5409f4f60a1d4df137e42cf6fd04dacb6631c5a",
+  "script_sha256": "397a400253d43fe740f9fc23ea190770c2a6b1ce736d00814ce46d723a64af2a",
+  "data_sha256": "3ae1de76736e6175914848eb8a3f69fc5b10c3e52c0cb0d7be54725b677b3834",
+  "claims_sha256": "fdb80710d6ecbf3f2d4b1c64d14b8b60a1cdfeb1ddc0714387cc14d0638dd76e",
+  "contact_sha256": "c6729513fe7f5302af6e3fd6c8eca2d96818c89a4e3e1ce5a1b1960b67db1784",
+  "duration": 33.35,
+  "integrated_lufs": -14.4,
+  "true_peak_dbfs": -1.4,
+  "speech": {
+    "heard": "Myanmar has 0.6% of children under five overweight. In Australia, it is 26.4%. Australia has 44 times the percentage recorded in Myanmar. China has 11.1% of young children overweight, while Brazil sits at 10.9%. USA has 9.7%, and the UK hits 7.8%. India stays low at 3.7%. Myanmar is the world's lowest at 0.6%. Where does your country land?",
+    "model": "small.en",
+    "media_sha256": "844dd5b3dea94728972f9e33d5409f4f60a1d4df137e42cf6fd04dacb6631c5a",
+    "primary_differences": [
+      "'the' heard as '(nothing)' after 'sits at 10.9%'"
+    ],
+    "differences": [
+      "'the' heard as '(nothing)' after 'sits at 10.9%'"
+    ],
+    "corroboration": {
+      "model": "base.en",
+      "heard": "Myanmar has 0.6% of children under 5 overweight. In Australia, it is 26.4%. Australia has 44 times the percentage recorded in Myanmar. China has 11.1% of young children overweight, while Brazil sits at 10.9%. USA has 9.7% and the UK hits 7.8%. India stays low at 3.7%. Myanmar is the world's lowest at 0.6 percent. Where does your country land?",
+      "differences": [
+        "'the' heard as '(nothing)' after 'sits at 10.9%'"
+      ],
+      "resolved": []
+    }
+  },
+  "warnings": [
+    "'the' heard as '(nothing)' after 'sits at 10.9%'"
+  ],
+  "speech_policy": "material-hard-entity-polarity-strict-minor-spelling-warning"
+}
