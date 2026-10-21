@@ -25,7 +25,7 @@ log = logging.getLogger(__name__)
 BUFFER_CHANNEL = "6abcba6dea19ca0bde30177e"
 os.environ.setdefault("BUFFER_YOUTUBE_CHANNEL_ID", BUFFER_CHANNEL)
 
-SLOTS = (time(12, 0), time(16, 0), time(19, 0))
+SLOTS = (time(12, 0), time(19, 0))  # lunch and evening ET; two a day (CHANNEL.md 2026-10-22)
 CATEGORY = "27"  # Education
 TITLE_CHARS = 100
 MIN_LEAD = timedelta(minutes=30)
@@ -61,6 +61,42 @@ def description(ep: AtlasEpisode, ds: Dataset, folder: Path | None = None) -> st
         " ".join(ep.hashtags[:3]),
     ]
     return pub._youtube_text("\n\n".join(b for b in blocks if b))
+
+
+# A Short parked this long goes out next whatever its score, so a low score can't keep one waiting forever.
+STALE = timedelta(hours=72)
+
+
+def order(folders: list[Path], last: Path | None = None, now: datetime | None = None) -> list[Path]:
+    """Waiting Shorts in the order the publisher schedules them: any parked over STALE first (oldest first), then
+    the highest ready.json "score" (pipeline.score), never two of one family in a row while another family waits;
+    the folder name breaks ties, so Shorts parked before scores existed keep their old order. `last` is the folder
+    of the post scheduled before them, whose family the first must not repeat."""
+    now = now or datetime.now(pub.AUDIENCE_TZ)
+
+    def ready(folder: Path | None) -> dict:
+        try:
+            return json.loads((folder / "ready.json").read_text(encoding="utf-8")) if folder else {}
+        except (OSError, ValueError):
+            return {}
+
+    def age(record: dict) -> timedelta:
+        try:
+            return now - datetime.fromisoformat(record["rendered_at"])
+        except (KeyError, TypeError, ValueError):
+            return timedelta(0)
+
+    records = {f: ready(f) for f in folders}
+    left = sorted(folders, key=lambda f: (-(records[f].get("score") or 0), f.name))
+    previous, out = ready(last).get("family"), []
+    while left:
+        stale = sorted((f for f in left if age(records[f]) > STALE), key=lambda f: -age(records[f]))
+        other = [f for f in left if not previous or records[f].get("family") != previous]
+        chosen = (stale or other or left)[0]
+        out.append(chosen)
+        left.remove(chosen)
+        previous = records[chosen].get("family")
+    return out
 
 
 def next_slot(taken: list[datetime], now: datetime | None = None) -> datetime:

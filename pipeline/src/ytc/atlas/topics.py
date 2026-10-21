@@ -31,10 +31,64 @@ NO_GO = re.compile(
     r"killed|violence|religio|election|parliament|seats held|corruption|tax |\bLCU\b|current US\$|constant|"
     r"\bPPP\b \(constant|atlas method|debt service|IDA|IBRD|HIV|tuberculosis|malaria|AIDS|prisoners|police)", re.I)
 
+# Topic families by what the channel's audience pulls for, matched on a topic's headline, label and indicator id.
+# Pull 3 families held the channel's best views by Short (analytics/atlas.json, 2026-10-22: density 1,767, one city
+# 1,366, youngest/oldest 1,339, 65+ 1,218, PM2.5 1,214, calories 1,134, GDP per person 1,084); pull 0 is the obscure
+# trade/firm-survey/grid-engineering tail (none made yet; the catalogue's open topics were mostly these). Military
+# and power rankings stay out: NO_GO above is a decorum gate and is not loosened. The first match wins, so the
+# obscure tail is tested before "food" or "energy" can claim "food imports".
+FAMILIES = (
+    ("obscure", 0, "#data", r"import|export|shipping|connectivity|transmission|new (firms|business)|registered|"
+                            r"training|manufactur|tariff|customs|logistics|top manager|electrical connection"),
+    ("migration", 3, "#migration", r"migra|born abroad|foreign.born|remittance|money sent home"),
+    ("education", 2, "#education", r"school|education|enrol|literacy|universit|tertiary|student|\bSE\."),
+    ("health", 3, "#health", r"life expectancy|live past|health|hospital|doctor|calorie|food|meat|diet|alcohol|"
+                             r"tobacco|overweight|obes|air pollution|pm2\.5|\bSH\."),
+    ("wealth", 3, "#economy", r"gdp|gni|income|wealth|\brich|poor|poverty|wage|salar|\bbank|\batms?\b|cash|money|"
+                              r"price|\bcost|inflation|inequality|gini|household|NY\.GDP|\bFB\.|PA\.NUS"),
+    ("population", 3, "#population", r"population|crowd|densit|birth|fertility|median age|aged? \d|65\+|\bolder|"
+                                     r"oldest|young|\bcity\b|\bcities\b|urban|rural|\bSP\.|EN\.POP|EN\.URB"),
+    ("geography", 3, "#geography", r"forest|land area|coast|island|mountain|desert|precipitation|\brain|"
+                                   r"temperature|freshwater|nature|\bAG\.LND|ER\.H2O|ER\.LND"),
+    ("technology", 2, "#technology", r"internet|online|offline|mobile|phone|broadband|computer|digital|\bIT\."),
+    ("happiness", 2, "#happiness", r"happi|life rating|cantril"),
+    ("energy", 1, "#energy", r"electric|energy|power|fuel|coal|nuclear|renewable|cooking|\bEG\."),
+    ("work", 1, "#work", r"labou?r|employ|work|job|\bSL\."),
+)
+_FAMILY_RES = tuple((name, pull, tag, re.compile(rx, re.I)) for name, pull, tag, rx in FAMILIES)
+
+
+def _family_row(topic: dict) -> tuple[str, int, str]:
+    """(family, pull, hashtag). An explicit catalogue "family" keeps its name; one FAMILIES doesn't know ("food")
+    takes the pull and hashtag of the keywords it matches."""
+    ds = topic.get("dataset", {})
+    text = " ".join([topic.get("topic", ""), ds.get("label", ""), ds.get("indicator", "") or ds.get("slug", "")])
+    known = next((r for r in _FAMILY_RES if r[0] == topic.get("family")), None)
+    match = known or next((r for r in _FAMILY_RES if r[3].search(text)), ("other", 1, "#data", None))
+    return topic.get("family") or match[0], match[1], match[2]
+
+
+def family(topic: dict) -> str:
+    """The topic's audience family (FAMILIES), or an explicit "family" the catalogue sets."""
+    return _family_row(topic)[0]
+
+
+def pull(topic: dict) -> int:
+    """How strongly the topic's family has pulled viewers: 0 obscure .. 3 the channel's best families."""
+    return _family_row(topic)[1]
+
+
+def family_hashtag(topic: dict) -> str:
+    return _family_row(topic)[2]
+
+
 PICK = """You choose topics for Atlas in Numbers, a YouTube Shorts channel: one world map coloured by one official
 dataset, with a surprising claim, a tour of 3-4 countries and a plain "why". Audience: curious English speakers,
 mostly US. Pick the {n} indicators below whose world map would surprise people most and be easiest to grasp in 30
-seconds. Prefer everyday life (money, work, homes, food, tech, nature, people, travel). Never pick anything about
+seconds. Prefer what this audience watches most: wealth and money (GDP or income per person, prices, banking),
+people and the future (crowds, ages, cities, births), migration (born abroad), health and food (life expectancy,
+calories, hospitals, air), education, internet and tech, and geography oddities (forest, rain, water). Pick trade
+shares, firm surveys, shipping or grid engineering only when nothing better is left. Never pick anything about
 war, death, disease, religion, politics or crime. Avoid near-duplicates of the topics already made.
 
 Already made or queued: {done}
@@ -66,7 +120,8 @@ Fields:
   splits the story (X between the 10th and 90th percentile), or bins {{"kind": "bins", "edges": [4 or 5 ascending
   numbers inside min..max], "labels": [one more label than edges, short]}}.
 - value_format: a Python format for one value, e.g. "{{v:.0f}}%", "{{v:.1f}} years", "{{v:,.0f}}".
-- hashtags: 3 hashtags starting with #maps or #geography."""
+- hashtags: 3 hashtags starting with #maps or #geography, letters and digits only (e.g. "#maps", "#geography",
+  "#population")."""
 
 SPEC_SCHEMA = {
     "type": "object",
@@ -172,10 +227,13 @@ def _performance(stats: list[dict]) -> str:
 def refill(catalogue: dict, stats: list[dict] | None = None, add: int = ADD) -> list[dict]:
     """New topics appended to the catalogue (in place) when it's running low; [] when it isn't."""
     topics = catalogue["topics"]
-    if sum(t.get("status") == "open" for t in topics) >= MIN_OPEN:
+    # The obscure tail (pull 0) doesn't count as stock: 10 of the 12 open topics on 2026-10-22 were trade shares and
+    # firm surveys, which would have held the refill off for four days of Shorts nobody searches for.
+    if sum(t.get("status") == "open" and pull(t) > 0 for t in topics) >= MIN_OPEN:
         return []
     used = {t["dataset"].get("indicator") for t in topics}
-    pool = [r for r in indicators() if r["id"] not in used]
+    pool = [r for r in indicators() if r["id"] not in used
+            and pull({"topic": r["name"], "dataset": {"indicator": r["id"]}}) > 0]
     by_id = {r["id"]: r for r in pool}
     done = "; ".join(t["topic"] for t in topics)
     picked = llm.generate(PICK.format(n=SHORTLIST, done=done, performance=_performance(stats or []),

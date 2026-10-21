@@ -1,4 +1,4 @@
-from datetime import datetime
+from datetime import datetime, time
 from zoneinfo import ZoneInfo
 
 from ytc.atlas import publish, writer
@@ -73,11 +73,15 @@ def test_quality_checks_every_ratio_against_the_data():
     assert quality.entity_value_errors("India has 13 times the density of the United States.", ep, ds) == []
 
 
-def test_three_slots_a_day():
+def test_two_slots_a_day():
+    assert publish.SLOTS == (time(12, 0), time(19, 0))
     now = datetime(2026, 10, 8, 10, 0, tzinfo=ET)
     assert publish.next_slot([], now) == datetime(2026, 10, 8, 12, 0, tzinfo=ET)
-    taken = [datetime(2026, 10, 8, 12, 0, tzinfo=ET), datetime(2026, 10, 8, 16, 20, tzinfo=ET)]
+    taken = [datetime(2026, 10, 8, 12, 0, tzinfo=ET)]
     assert publish.next_slot(taken, now) == datetime(2026, 10, 8, 19, 0, tzinfo=ET)
+    # 16:00 is no longer a slot: after 12:00 and 19:00 the next is tomorrow's lunch.
+    taken.append(datetime(2026, 10, 8, 19, 0, tzinfo=ET))
+    assert publish.next_slot(taken, now) == datetime(2026, 10, 9, 12, 0, tzinfo=ET)
     late = datetime(2026, 10, 8, 18, 45, tzinfo=ET)
     assert publish.next_slot([], late) == datetime(2026, 10, 9, 12, 0, tzinfo=ET)
 

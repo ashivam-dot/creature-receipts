@@ -63,11 +63,11 @@ def _catalogue() -> dict:
     return json.loads(TOPICS.read_text(encoding="utf-8"))
 
 
-def _mark(topic_id: str, status: str) -> None:
+def _mark(topic_id: str, status: str, **fields) -> None:
     cat = _catalogue()
     for t in cat["topics"]:
         if t["id"] == topic_id:
-            t["status"] = status
+            t.update(fields, status=status)
     TOPICS.write_text(json.dumps(cat, indent=1, ensure_ascii=False) + "\n", encoding="utf-8")
 
 
@@ -85,13 +85,7 @@ class Implausible(Exception):
     """The independent audit found values in a dataset that are very likely wrong."""
 
 
-def family(topic: dict) -> str:
-    if topic.get("family"):
-        return topic["family"]
-    indicator = topic["dataset"].get("indicator", "")
-    prefix = indicator.split(".")[0]
-    return {"SP": "population", "SH": "health", "IT": "technology", "AG": "nature", "EN": "nature",
-            "EG": "infrastructure", "ER": "nature", "SL": "work", "SE": "education"}.get(prefix, "economy")
+family = topics.family
 
 
 def pick() -> dict | None:
@@ -101,9 +95,19 @@ def pick() -> dict | None:
         return None
     recent = sorted((t for t in catalogue if re.search(r"atlas\d{3,}$", t.get("status", ""))),
                     key=lambda t: int(t["status"].split("atlas")[-1]), reverse=True)[:3]
-    # Balance topic families (editorial variety, not a claim of algorithmic advantage); within that, topics marked
-    # with a higher priority (everyday-life stories) go first.
-    return min(candidates, key=lambda t: (sum(family(old) == family(t) for old in recent), -t.get("priority", 0)))
+    last = recent[0] if recent else {}
+    # Never two Shorts in a row from one family (a viewer sees the same story twice); then the families the audience
+    # pulls for (topics.FAMILIES) before the obscure tail; then balance the last 3 families (editorial variety, not a
+    # claim of algorithmic advantage); then topics marked with a higher priority; then a change of format.
+    chosen = min(candidates, key=lambda t: (bool(last) and family(last) == family(t), -topics.pull(t),
+                                            sum(family(old) == family(t) for old in recent), -t.get("priority", 0),
+                                            bool(last) and last.get("format") == t.get("format", "map_reveal")))
+    # Nor two of one visual shape in a row: a map reveal and a rank ladder tell any dataset, so swap rather than
+    # fall back to a weaker topic.
+    flip = {"map_reveal": "rank_ladder", "rank_ladder": "map_reveal"}
+    if last and last.get("format", "map_reveal") == chosen.get("format", "map_reveal") in flip:
+        chosen = {**chosen, "format": flip[chosen.get("format", "map_reveal")]}
+    return chosen
 
 
 def make(topic: dict, episode_id: str) -> tuple[AtlasEpisode, Path, Dataset, Path]:
@@ -189,6 +193,16 @@ def _tidy(folder: Path) -> None:
             path.unlink(missing_ok=True)
 
 
+def score(folder: Path, topic_id: str) -> dict:
+    """The family, pull and quality score the publisher orders waiting Shorts by (publish.order): 10 a pull point
+    (topics.FAMILIES), less 1 for each warning the media check left in qa.json (speech that drifted from the script,
+    a duration off target). Ordering only: every Short it ranks has already passed every gate."""
+    topic = next((t for t in _catalogue()["topics"] if t["id"] == topic_id), {})
+    warnings = json.loads((folder / "qa.json").read_text(encoding="utf-8")).get("warnings", [])
+    pull = topics.pull(topic) if topic else 1
+    return {"family": family(topic) if topic else "other", "pull": pull, "score": 10 * pull - len(warnings)}
+
+
 def park(ep: AtlasEpisode, folder: Path, video: Path, topic_id: str) -> dict:
     """Copy the video into the outbox under its hash and record where it is in ready.json."""
     with video.open("rb") as fh:
@@ -203,7 +217,7 @@ def park(ep: AtlasEpisode, folder: Path, video: Path, topic_id: str) -> dict:
     quality.verify(folder, sha)
     record = {"qa_sha256": quality.digest(folder / "qa.json"), "id": ep.id, "title": ep.title, "topic": topic_id, "media_sha256": sha, "bytes": target.stat().st_size,
               "modal_volume": OUTBOX_VOLUME, "modal_path": rel, "format": FORMAT,
-              "rendered_at": datetime.now(timezone.utc).isoformat(timespec="seconds")}
+              "rendered_at": datetime.now(timezone.utc).isoformat(timespec="seconds"), **score(folder, topic_id)}
     (folder / "ready.json").write_text(json.dumps(record, indent=2) + "\n", encoding="utf-8")
     _tidy(folder)
     return record
@@ -307,7 +321,7 @@ def make_next() -> dict:
         if topic is None:
             return {"outcome": "no_topics"}
         episode_id = next_id()
-        _mark(topic["id"], f"making:{episode_id}")
+        _mark(topic["id"], f"making:{episode_id}", format=topic.get("format", "map_reveal"))
     now = datetime.now(timezone.utc)
     try:
         ep, folder, _, video = make(topic, episode_id)

@@ -126,6 +126,8 @@ class AtlasBeat(_Model):
     text: str
     shot: Shot = Field(default_factory=Shot)
     pause_after: float = 0.15
+    # A why-the-gap beat's words copied from the official definition (writer.grounded); never spoken or shown.
+    basis: str = ""
 
 
 class AtlasEpisode(_Model):
@@ -136,6 +138,8 @@ class AtlasEpisode(_Model):
     hook_text: str = ""
     description: str = ""
     hashtags: list[str] = []
+    # Recorded for search and the channel's own analysis; Buffer can't send YouTube tags (CHANNEL.md).
+    tags: list[str] = []
     sources: list[str] = []
     dataset: DatasetSpec
     scale: ScaleSpec = Field(default_factory=ScaleSpec)

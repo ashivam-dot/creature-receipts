@@ -8,11 +8,14 @@ from ytc.atlas import writer
 @pytest.mark.parametrize("title,want", [
     ("countries Where One City Holds 92% of City Dwellers", "Places Where One City Holds 92% of City Dwellers"),
     ("61 Countries Still Have Most People Outside Cities", "61 Places Still Have Most People Outside Cities"),
-    ("The Emptiest and Most Crowded countries", "The Emptiest and Most Crowded places"),
+    # The lowercase "places" a title once shipped with (2026-10-22): the repair is now full Title Case.
+    ("The Emptiest and Most Crowded countries", "The Emptiest and Most Crowded Places"),
+    ("is YOUR country one of the most crowded?", "Is YOUR Country One of the Most Crowded?"),
+    ("countries ranked by how crowded they are", "Places Ranked by How Crowded They Are"),
 ])
 def test_title_terminology_keeps_title_case(title, want):
     fixed = re.sub(r"\bcountries\b", writer._places, title, flags=re.I)
-    assert fixed[:1].upper() + fixed[1:] == want
+    assert writer.title_case(fixed) == want
 
 
 @pytest.mark.parametrize("fmt,values,want", [

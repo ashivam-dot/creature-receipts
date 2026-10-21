@@ -245,6 +245,9 @@ Do not infer never-used from current internet non-use; broadband subscriptions d
 basic water is not necessarily safe; labour force includes unemployed; age dependency is not workers/retirees;
 GDP is not wages; renewable final energy is not renewable electricity. 2.1 fertility is an approximate benchmark,
 not proof of immediate population decline. Definitions may explain a measurement, not invent causal history.
+A line that explains a gap ("because", "due to", "that's why") must rest on the definition in EVIDENCE; any other
+cause is unsourced. A title's framing ("than you think", "Is your country ...?") is style, but its numbers,
+superlatives and claims such as "almost nobody" or "don't exist" are factual and need the values to support them.
 For every material claim return its surface, text, entity ISOs (empty for aggregate/definition), and exact support.
 Also return surface_checks for EVERY supplied surface, including cards, description, and repeated units/years:
 supported (boolean), reason (source-based), and isos (empty for definitions/counts).

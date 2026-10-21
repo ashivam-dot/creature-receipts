@@ -8,8 +8,8 @@
   CC BY) across real places: the extreme, its opposite, a surprise, and a loop question. English, for a US audience, with India always
   shown in its official borders (Natural Earth's India point-of-view layer, public domain). Never war, elections,
   religion, or breaking news.
-- **Format (v2, "cinema", from 2026-10-10):** YouTube Shorts, 30–45 seconds (70–110 words, 6–9 beats), three a day
-  at 12:00, 16:00 and 19:00 ET, made by `pipeline/src/ytc/atlas/cinema/`. A photoreal 3D globe (three.js in
+- **Format (v2, "cinema", from 2026-10-10):** YouTube Shorts, 30–45 seconds (70–110 words, 6–9 beats), two a day
+  at 12:00 and 19:00 ET (three until 2026-10-22), made by `pipeline/src/ytc/atlas/cinema/`. A photoreal 3D globe (three.js in
   headless Chromium; NASA Blue Marble and Black Marble textures) carries the data as glowing columns and flies to each
   country the narration names, with its outline lit; then real photos of that country and its capital (Wikidata and
   Wikimedia Commons, CC0/PD/CC BY/CC BY-SA only, credited in the description) move in depth parallax under a flag
@@ -112,14 +112,37 @@ Start here: `PLAYBOOK.md` (the daily routine), `strategy/STRATEGY.md`, `strategy
   The publisher keys are stripped from its environment.
 - **Publisher (holds the keys):** the workflow `atlas-publish.yml` in the public repo
   ashivam-dot/history-last-hours-control runs every 2 hours at :25. Its `history-publisher` environment holds the
-  Buffer key, the Cloudinary URL and a Modal token. `control/atlas.py` keeps 3 future posts in Buffer: for each
-  waiting Short it reads the exact parked bytes (hash-checked), calls this repo's `ytc.atlas.publish.schedule`
-  (Cloudinary host, then Buffer `createPost` for the next free slot of 12:00, 16:00 and 19:00 ET), and commits the
+  Buffer key, the Cloudinary URL and a Modal token. `control/atlas.py` keeps 2 future posts in Buffer, taking
+  waiting Shorts in `ytc.atlas.publish.order` (any parked over 72 hours first, then the highest `ready.json` score,
+  never two of one topic family in a row while another waits; name order when there are no scores): for each it reads the exact parked bytes (hash-checked), calls this repo's `ytc.atlas.publish.schedule`
+  (Cloudinary host, then Buffer `createPost` for the next free slot of 12:00 and 19:00 ET), and commits the
   post to `atlas/published.json`. Run it with `list=true` to see the Buffer queue only.
-- **Slots stay at 3 a day (12:00, 16:00, 19:00 ET, `atlas.publish.SLOTS`).** Fewer slots add no supply: the
-  publisher only alerts when nothing is waiting. With 4 producer runs and the speech fixes of 2026-10-21 the replayed
-  failures project about 5 ready Shorts a day. Review: if ready Shorts per 24 hours stay under 3 for a week, cut to
-  12:00 and 19:00 ET.
+- **Slots: 2 a day (12:00 and 19:00 ET, `atlas.publish.SLOTS`) from 2026-10-22; the producer still runs 3 times.**
+  Supply was about 2 ready Shorts a day with an empty buffer, and 3 a day of similar Shorts raises the
+  mass-produced risk YPP review looks for without lifting views past about 1,000 a Short. Review: once 4 or more
+  Shorts wait on most days for a week and views per Short hold, consider 12:00, 16:00 and 19:00 again.
+- **Topic choice (`atlas.topics.FAMILIES`, `atlas.pipeline.pick`):** each topic falls in a family by keywords of its
+  headline, label and indicator, with a pull from the channel's own views: wealth, population, migration, health and
+  food, geography 3; technology, education, happiness 2; energy, work 1; the obscure tail (trade shares, firm
+  surveys, shipping, grid engineering) 0. `pick` never takes the last Short's family when another is open, then the
+  highest pull, then the least-used family of the last 3, then priority; a map reveal following a map reveal (or a
+  ladder a ladder) becomes the other format. Refill counts only pull-above-0 topics as stock and never shortlists
+  the obscure tail. Military and power rankings are not a family: `topics.NO_GO` is a decorum gate and stays.
+- **Titles (advisory, `writer.style_problems`):** Title Case (repaired in code, so "places" is "Places"), a curiosity
+  or identity framing ("Is YOUR Country One of the Most Crowded?", "The Countries Where Almost Everyone Is Online",
+  "Countries Ranked by ..." only with a rank shot, "Why ..." only with a grounded why beat), at most one word in
+  capitals, no "!", and no unhedged "nobody", "zero" or "don't exist". These rules are advisory on the last draft,
+  and a draft that passed every hard check is kept if a style rewrite breaks one, so they never cost a story. The
+  hard checks are unchanged: every number in a title is a checked value of a country the beats name.
+- **Why the gap:** one beat may add context from the official definition only (what is counted, who is included),
+  with the definition words it rests on copied into the beat's `basis` (at least 4 words, verbatim, about what the
+  beat says; any other basis is dropped from the record). No basis, no why: "because", "due to" or "that's why"
+  without one is a style note to the writer, and the semantic review rejects any cause the definition doesn't give.
+- **Tags and hashtags:** `atlas.yaml` records `tags` (family, the dataset's plain name, the top and bottom places,
+  "world map", "data"). Buffer's `createPost` takes no YouTube tags (its YouTube metadata is title, category,
+  privacy, made-for-kids, notify, AI flag, embeddable, licence) and the YouTube API is never used to edit videos, so
+  tags are recorded, not posted. The description ends with 3 clean hashtags (the family's, the topic's own, #maps)
+  and keeps the data line with the dataset, its source, year and licence.
 - **Script rules (`atlas.writer`):** 50–110 written words (at least 60 as spoken, numbers read out). Values are
   said the way the narrator says them (`episode.say_value`): no trailing zeros, at most 3 significant figures and 1
   decimal for a percentage, but a nonzero value keeps the decimals that show its first figure and its sign
@@ -183,6 +206,7 @@ Start here: `PLAYBOOK.md` (the daily routine), `strategy/STRATEGY.md`, `strategy
 
 | Date | Decision | Why |
 |---|---|---|
+| 2026-10-22 | Atlas revenue push batch 2: 2 slots a day (12:00, 19:00 ET; publisher keeps 2 ahead) ordered by a `ready.json` score (10 a pull point less 1 a media warning; parked over 72 h goes first); topic families with pull weights steer `pick` and refill, no two Shorts in a row from one family or format; Title Case repair and advisory curiosity-title rules; an optional why-the-gap beat grounded in a verbatim definition `basis`; recorded tags and clean family hashtags. Not done: YouTube tags (Buffer has no field; the YouTube API stays read-only), a military family (NO_GO stays) | Revenue-push audit (`revenue-push-2026-10-21/audit/internal-audit.md`): supply about 2 a day with nothing queued on 2026-10-21, atlas075 rendered about 2 hours before its slot; titles read as spreadsheet rows and atlas019/030 shipped a lowercase "places"; the best views by Short were density 1,767, one city 1,366, youngest/oldest 1,339, 65+ 1,218, PM2.5 1,214, GDP per person 1,084, while 10 of the 12 open topics were trade shares and firm surveys; refill hashtags such as "#maps','#geography','#trade" were mangled. Buffer GraphQL reference checked for tags. Tests in `tests/test_atlas_revenue_b2.py` |
 | 2026-10-22 | Atlas producer 3 times a day (01:10, 09:10, 17:10 UTC), not the 4 planned the day before | Modal billing for `aksha-shivam18` showed $20.25 of the $30 monthly credit spent by 2026-10-21 (about $0.6 a day at 2 runs); 4 runs would pass the credit before 1 Nov, 3 fit |
 | 2026-10-22 | Atlas yield review fixes: values never say "under"/"over" (a nonzero value grows decimals until its first figure shows, keeps its sign; a share short of 100 never shows 100), only the `{v}` field of a format is rewritten, negative percentages and a scale's "0 TO 10" or definition's 0 are not misleading numbers, "1 kilometer" and "km/h" said right, and a run starts a draft only if it can finish by minute 47 | Review of the 2026-10-21 change: "under 0.1%" let "Guinea has 0.1%" (7 times 0.0143%) pass both digit-only number checks; -0.04% and +0.04% both showed "under 0.1%"; t072 net energy imports (exporters below -100%) and 0-to-N card labels would fail every rewrite; the 13:10 UTC run of 2026-10-21 saved at minute 47 of 50. Tests in `tests/test_atlas_speech_yield.py` |
 | 2026-10-21 | Atlas yield: values said as spoken (no trailing zeros, 3 significant figures, 1 decimal for %, "under 0.1%" instead of 0.0), units and short country names as words, topic-specific end-card questions, the same number spelled another way counts as a minor speech difference, misleading numbers (a nonzero value shown as 0, an unexplained percentage over 100) rejected, word floor 60→50 (spoken floor 60), 4 failures per run (was 2), producer 4 times a day (01:10, 07:10, 13:10, 19:10 UTC). Slots stay at 3; `receipt.FORMAT` and `writer.STYLE` unchanged so waiting Shorts stay valid | 18 drafts failed 2026-10-17..21; 9 on the speech check, mostly numbers the writer was allowed to write ("5.0%" heard as "5%", "70.5202%") and the stock card "Where does your country land?", 2 on the word floor; published atlas053 said "165.1% College Enrollment" and atlas021 "Niger has 0.0". Replays in `tests/test_atlas_speech_yield.py` |

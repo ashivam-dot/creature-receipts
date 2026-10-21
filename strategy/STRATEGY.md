@@ -36,9 +36,10 @@ Every frame is drawn from data the studio is licensed to use, so no topic can be
 
 ## Publishing and learning
 
-- Three Shorts a day at 12:00, 16:00 and 19:00 ET (CHANNEL.md, How it runs). Volume plus sameness is the main
-  trigger for YouTube's inauthentic-content review, so vary topic family, shot types (the rank bars) and palette, and
-  drop to two a day if the 24-hour medians fall as volume rises.
+- Two Shorts a day at 12:00 and 19:00 ET from 2026-10-22 (three before; CHANNEL.md, How it runs). Volume plus
+  sameness is the main trigger for YouTube's inauthentic-content review, so the producer never makes two Shorts in a
+  row from one topic family or format, and the publisher never posts two of one family in a row (`atlas.topics`,
+  `atlas.publish.order`).
 - At 24 and 72 hours record views, viewed versus swiped away, average viewed percentage, shares, comments and
   subscribers per 1,000 views in `LEARNINGS.md`. Record missing metrics as missing.
 - Don't change the format until about 20 Shorts have 24+ hours of data. Then compare topic families (people,

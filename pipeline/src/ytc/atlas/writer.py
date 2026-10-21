@@ -3,6 +3,7 @@ of the indicator, and every number it says must be one the data supports."""
 
 from __future__ import annotations
 
+import copy
 import logging
 import re
 import statistics
@@ -65,8 +66,11 @@ How a great Atlas script works:
 - Use one "group" beat to put 2 or 3 countries side by side (the screen splits between their photos).
 - Never describe the map's colours or legend, and never say "among these countries", "measures", "reaches" or "with
   data": say the number plainly ("Japan: 340.", "Niger has 6.1.").
-- You may add one short line on what is counted, only from the official definition, if it makes the number clearer.
-  Never invent causes, history, or opinions.
+- Why the gap: you may give ONE beat of context that helps the contrast make sense, taken only from the official
+  definition (what is counted, who is included, how it is measured), e.g. "It counts everyone living there who was
+  born in another country." Copy the definition words it rests on, exactly, into that beat's "basis". If the
+  definition gives nothing that helps, skip this beat. Never invent causes, history, or opinions: no "because",
+  "due to" or "that's why" unless the definition itself says it.
 - The last beat is a short question to the viewer, in your own words, about THIS dataset's subject (name the thing:
   coal, doctors, crowds, tourism), so it loops back to the hook. Never start it with "Where" (the narrator's "Where
   does" is heard as "What is"), and never reuse a stock line such as "How does your country compare?".
@@ -100,7 +104,13 @@ How a great Atlas script works:
   Use only ISO codes from the summary.
 - opening_options: propose 3 distinct factual openings, strongest first for clarity and curiosity, each with text
   (at most 16 words) and hook_text (2-5 words). Preserve the exact metric and universe. Never optimize by overclaiming.
-- title: at most 60 characters, a concrete claim with a number, no clickbait punctuation, no emoji.
+- title: at most 60 characters in Title Case: a curiosity or identity framing of what THIS data shows, not a flat
+  statement of one number. Shapes that work: "Countries Ranked by How Crowded They Are" (only with a rank shot),
+  "Is YOUR Country One of the Most Crowded?", "The Countries Where Almost Everyone Is Online", "Why Japan Is WAY
+  Less Crowded Than You Think" (start with "Why" only when a beat explains the gap from the definition, with its
+  basis). Any number in the title is a value from the summary for a country the beats name. True by the data:
+  never "don't exist", "nobody", "zero" or "everyone" unless the values say exactly that (hedge with "almost").
+  At most one word in capitals for emphasis, no "!", no emoji.
 - hook_text: 2-5 words in capitals shown on screen over beat 1, adding to (not repeating) the spoken hook.
 - card_lines: 2 short lines for the end card: a 2-4 word question, then the dataset label.
 {feedback}"""
@@ -122,6 +132,7 @@ SCHEMA = {
                     "text": {"type": "string"},
                     "shot": {"type": "string", "enum": ["world", "country", "group", "rank", "card"]},
                     "isos": {"type": "array", "items": {"type": "string"}},
+                    "basis": {"type": "string"},
                 },
                 "required": ["text", "shot"],
             },
@@ -543,6 +554,122 @@ def problems(draft: dict, allowed: set[str], owners: dict[str, set[str]], vals: 
     return out
 
 
+_SMALL = frozenset("a an and as at but by for in nor of on or per the to vs via".split())
+_WORD = re.compile(r"[A-Za-z][A-Za-z'\u2019]*")
+
+
+def title_case(title: str) -> str:
+    """Title Case without touching a word that already has capitals inside it (YOUR, GDP, iPhone): "The emptiest and
+    most crowded places" becomes "The Emptiest and Most Crowded Places". Small words stay lower case except first,
+    last and after a colon."""
+    words = list(_WORD.finditer(title))
+    out, end = [], 0
+    for n, m in enumerate(words):
+        word = m.group(0)
+        out.append(title[end:m.start()])
+        first = n == 0 or title[:m.start()].rstrip().endswith((":", "?", "-", "\u2014"))
+        if any(c.isupper() for c in word[1:]):
+            out.append(word)
+        elif word.lower() in _SMALL and not first and n != len(words) - 1:
+            out.append(word.lower())
+        else:
+            out.append(word[:1].upper() + word[1:])
+        end = m.end()
+    return "".join(out) + title[end:]
+
+
+_FRAMING = re.compile(r"^(why|how|is|are|which|what|who|do|does|can|countries|places|the (\w+ ){0,3}(countries|places))"
+                      r"\b|\branked\b|\byour\b|\byou think\b|\bwhere\b", re.I)
+_OVERCLAIM = re.compile(r"\b((don't|doesn't|do not|does not|never) (even )?exist|nobody|no one|everyone|everybody|"
+                        r"zero|none|literally)\b", re.I)
+_HEDGE = re.compile(r"\b(almost|nearly|basically|barely|hardly|virtually|practically)\s+(\S+\s+){0,2}$", re.I)
+_ACRONYMS = frozenset("US USA UK UAE EU UN GDP ATM ATMS AI TV".split())
+_CAUSAL = re.compile(r"\b(because|due to|thanks to|caused by|that's why|that is why|which is why|the reason|"
+                     r"as a result)\b", re.I)
+
+
+def _norm(text: str) -> str:
+    return " ".join(re.findall(r"[a-z0-9]+(?:[.,][0-9]+)*", (text or "").lower()))
+
+
+def grounded(basis: str, text: str, definition: str) -> bool:
+    """A why-the-gap beat's basis is at least 4 words copied from the official definition, sharing a content word
+    with what the beat says."""
+    quote = _norm(basis)
+    return (len(quote.split()) >= 4 and f" {quote} " in f" {_norm(definition)} "
+            and bool(topic_words(basis) & topic_words(text)))
+
+
+def title_problems(title: str, *, why_ok: bool = False, ranked_ok: bool = False) -> list[str]:
+    """The title's framing (style; the numbers are checked by number_problems and misleading_numbers)."""
+    out = []
+    if len(_NUMBER.findall(title)) >= 2 or not _FRAMING.search(title):
+        out.append("the title states the finding flatly; frame it as curiosity or identity, e.g. 'Is YOUR Country "
+                   "One of the Most Crowded?', 'The Countries Where ...', 'Countries Ranked by ...'")
+    for m in _OVERCLAIM.finditer(title):
+        if not _HEDGE.search(title[:m.start()]):
+            out.append(f"the title says '{m.group(0)}', which the data doesn't show exactly; hedge it ('almost') "
+                       "or say it another way")
+    if re.match(r"\W*why\b", title, re.I) and not why_ok:
+        out.append("a 'Why' title needs a beat that explains the gap from the official definition, with its basis")
+    if re.search(r"\brank(ed|ing|s)?\b", title, re.I) and not ranked_ok:
+        out.append("a 'Ranked' title needs the rank shot")
+    if sum(len(w) > 1 and w.isupper() and w not in _ACRONYMS for w in re.findall(r"[A-Za-z]+", title)) > 1:
+        out.append("at most one word of the title in capitals")
+    if "!" in title:
+        out.append("no '!' in the title")
+    return out
+
+
+def style_problems(draft: dict, definition: str = "") -> list[str]:
+    """Advisory rules (2026-10-22): the title's framing and the why-the-gap beat. Unlike problems(), the last draft
+    may ship with these, and a draft that passed problems() is kept, so a style rule never costs a story. The
+    semantic review still rejects any unsourced cause, as before."""
+    beats = draft.get("beats", [])
+    out, why = [], []
+    for i, b in enumerate(beats, 1):
+        if b.get("basis"):
+            if grounded(b["basis"], b["text"], definition):
+                why.append(i)
+            else:
+                out.append(f"beat {i}: its basis must copy at least 4 words of the official definition exactly, "
+                           "about what this beat says; otherwise drop the basis and the why")
+        if (cause := _CAUSAL.search(b["text"])) and i not in why:
+            out.append(f"beat {i}: '{cause.group(0)}' gives a cause the data doesn't; explain a gap only from the "
+                       "official definition (copied into this beat's basis), or cut it")
+    if sum(bool(b.get("basis")) for b in beats) > 1:
+        out.append("give at most one why-the-gap beat")
+    out += [f"title: {p}" for p in title_problems(draft.get("title", ""), why_ok=bool(why),
+                                                  ranked_ok=any(b.get("shot") == "rank" for b in beats))]
+    return out
+
+
+def tags(topic: dict, ds: Dataset, vals: dict[str, float]) -> list[str]:
+    """YouTube-style tags for the episode record: family, the dataset's plain name, the top and bottom places on the
+    map, "world map", "data". Buffer can't send tags to YouTube, so they are recorded, not posted (CHANNEL.md)."""
+    from .topics import family
+    ranked = sorted(vals, key=vals.get)
+    names = [ds.names.get(iso, iso) for iso in (ranked[-1:] + ranked[:1])] if ranked else []
+    label = re.sub(r"\s+", " ", re.sub(r"[^\w%+ ,.-]", " ", ds.label or topic.get("dataset", {}).get("label", ""))).strip()
+    found = [family(topic), label.lower(), *names, "world map", "data"]
+    return list(dict.fromkeys(t for t in found if t and t != "other"))
+
+
+def hashtags(topic: dict) -> list[str]:
+    """3 clean description hashtags: the topic family's, the topic's own specific one, then #maps / #geography.
+    Refill once wrote "#maps','#geography','#trade" as one string; only #letters-and-digits survive."""
+    from .topics import family_hashtag
+    raw = re.findall(r"#[A-Za-z][A-Za-z0-9]*", " ".join(topic.get("hashtags", [])))
+    generic = {"#maps", "#geography", "#data"}
+    picks = [family_hashtag(topic), *(h for h in raw if h.lower() not in generic), "#maps", "#geography"]
+    seen, out = set(), []
+    for h in picks:
+        if h.lower() not in seen:
+            seen.add(h.lower())
+            out.append(h)
+    return out[:3]
+
+
 def write(topic: dict, ds: Dataset, episode_id: str, series: str = "") -> AtlasEpisode:
     """A checked script for the topic, or RuntimeError after TRIES drafts that break the rules."""
     vals = drawable(ds)
@@ -558,6 +685,9 @@ def write(topic: dict, ds: Dataset, episode_id: str, series: str = "") -> AtlasE
     subject = topic_words(topic["topic"], ds.label, ds.unit, topic.get("definition_text", ""),
                           *topic.get("hashtags", []))
     feedback = ""
+    definition_text = topic.get("definition_text", "")
+    record_tags = tags(topic, ds, shown)
+    passed = None  # the last draft that broke no rule of problems(), kept in case a style rewrite breaks one
     for attempt in range(1, TRIES + 1):
         prompt = PROMPT.format(topic=topic["topic"], angle=topic.get("angle", ""), format=topic.get("format", "map_reveal"),
                                label=ds.label, unit=ds.unit, source=ds.source, year=ds.year_label, count=len(vals),
@@ -584,7 +714,6 @@ def write(topic: dict, ds: Dataset, episode_id: str, series: str = "") -> AtlasE
             if beat["shot"] == "rank" and len(beat.get("isos", [])) == 2:
                 beat["shot"] = "group"
         # Try the ranked factual openings against the same deterministic contract; render only one.
-        import copy
         for option in draft.get("opening_options", [])[:3]:
             candidate = copy.deepcopy(draft)
             candidate["beats"][0]["text"] = option["text"]
@@ -593,11 +722,20 @@ def write(topic: dict, ds: Dataset, episode_id: str, series: str = "") -> AtlasE
                 draft = candidate
                 break
         found = problems(draft, allowed, owners, shown, topic.get("definition_text", ""), measure, subject)
+        style = style_problems(draft, definition_text)
+        if not found and (not style or attempt == TRIES):
+            if style:
+                log.info("%s draft %d ships with advisory style notes: %s", episode_id, attempt, "; ".join(style))
+            return _episode(draft, topic, episode_id, series, record_tags)
         if not found:
-            return _episode(draft, topic, episode_id, series)
+            passed = copy.deepcopy(draft)
+        found += style
         log.info("%s draft %d: %s", episode_id, attempt, "; ".join(found))
         feedback = "\nYOUR LAST DRAFT BROKE THESE RULES; FIX ALL OF THEM:\n- " + "\n- ".join(found) + \
                    f"\nLast draft: {draft}"
+    if passed is not None:
+        log.info("%s: the last draft broke a rule; shipping draft that passed every check but style", episode_id)
+        return _episode(passed, topic, episode_id, series, record_tags)
     raise RuntimeError(f"{episode_id}: no draft passed after {TRIES} tries: {'; '.join(found)[:500]}")
 
 
@@ -617,10 +755,9 @@ def precise(fmt: str, values) -> str:
     return fmt
 
 
-def _episode(draft: dict, topic: dict, episode_id: str, series: str) -> AtlasEpisode:
+def _episode(draft: dict, topic: dict, episode_id: str, series: str, record_tags: list[str] | None = None) -> AtlasEpisode:
     # Aggregate totals cover World Bank countries AND territories; repair this terminology deterministically.
-    draft["title"] = re.sub(r"\bcountries\b", _places, draft["title"], flags=re.I)
-    draft["title"] = draft["title"][:1].upper() + draft["title"][1:]
+    draft["title"] = title_case(re.sub(r"\bcountries\b", _places, draft["title"], flags=re.I))
     draft["hook_text"] = re.sub(r"\bcountries\b", "PLACES", draft["hook_text"], flags=re.I)
     draft["description"] = re.sub(r"\bcountries\b(?! and territories)", "countries and territories", draft["description"], flags=re.I)
     beats = []
@@ -637,12 +774,15 @@ def _episode(draft: dict, topic: dict, episode_id: str, series: str) -> AtlasEpi
             shot = {"kind": "rank", "isos": isos}
         else:
             shot = {"kind": "world", "callouts": isos[:3]}
-        beats.append({"text": b["text"].strip(), "shot": shot})
+        # Only a basis copied from the official definition is kept on the record.
+        basis = b.get("basis", "").strip()
+        beats.append({"text": b["text"].strip(), "shot": shot,
+                      **({"basis": basis} if grounded(basis, b["text"], topic.get("definition_text", "")) else {})})
     ds_spec = {k: v for k, v in topic["dataset"].items() if k != "definition"}
     return AtlasEpisode.model_validate({
         "id": episode_id, "title": draft["title"].strip(), "format": topic.get("format", "map_reveal"),
         "series": series, "hook_text": draft["hook_text"].strip().upper(), "description": draft["description"].strip(),
-        "hashtags": topic.get("hashtags", ["#maps", "#geography", "#data"]),
+        "hashtags": hashtags(topic), "tags": record_tags or [],
         "sources": [topic["source_url"]] if topic.get("source_url") else [],
         "dataset": ds_spec, "scale": topic.get("scale", {}), "value_format": topic.get("value_format", "{v:,.0f}"),
         "beats": beats,
