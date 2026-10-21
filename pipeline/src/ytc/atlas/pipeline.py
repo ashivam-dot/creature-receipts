@@ -264,7 +264,8 @@ def ready() -> list[Path]:
     return [folder for folder in _waiting() if _accepted(folder)]
 
 
-def published(url: str = PUBLISHED_URL) -> dict:
+def _records(url: str = PUBLISHED_URL) -> dict | None:
+    """The publisher's records, {} when there are none yet (404), None when they couldn't be read."""
     try:
         response = requests.get(url, timeout=30)
         if response.status_code == 404:
@@ -273,7 +274,12 @@ def published(url: str = PUBLISHED_URL) -> dict:
         return response.json()
     except (requests.RequestException, ValueError) as err:
         log.warning("couldn't read the publisher's records: %s", err)
-        return {}
+        return None
+
+
+def published(url: str = PUBLISHED_URL) -> dict:
+    records = _records(url)
+    return {} if records is None else records
 
 
 def sync(records: dict | None = None) -> list[str]:
@@ -393,11 +399,20 @@ def run(reserve: int = RESERVE, minutes: float = 40, max_failures: int = MAX_FAI
         numbers = stats.update(EPISODES, ROOT)
         return {"outcome": "held", "reason": reason, "synced": synced, "withdrawn": withdrawn, "tracked": len(numbers)}
     # Upgrade old waiting videos through the same checks instead of grandfathering unverified media.
+    records: dict | None = None
     for folder in _waiting():
         if _accepted(folder):
             continue
         topic = _topic_of(folder.name)
         if topic is None:
+            continue
+        # Never re-make (or, on a failed re-make, retire and reopen the topic of) a Short the publisher has already
+        # scheduled or sent but whose publish.json isn't here yet (atlas075): that could post the story twice. When
+        # the records can't be read, no Short is upgraded this run.
+        if records is None and (records := _records()) is None:
+            log.warning("publisher records unreadable; legacy upgrades skipped this run")
+            break
+        if folder.name in records:
             continue
         try:
             old_path = json.loads((folder / "ready.json").read_text()).get("modal_path")

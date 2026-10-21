@@ -148,3 +148,42 @@ def test_description_cites_dataset_indicator_year_and_the_editorial_process():
     assert "synthetic voice" in text and "checked in code against the data" in text
     owid = _dataset(indicator="share-of-population-urban")
     assert "Indicator" not in publish.description(_ep("T", owid), owid).split("\n\n")[1]
+
+
+def _upgrade_run(monkeypatch, tmp_path, records):
+    """run() with one waiting Short (atlas075) that isn't accepted, as on main: its title fails the bare-value rule
+    and its publish.json isn't synced yet. Returns the ids make() was asked to re-make."""
+    from ytc.atlas import pipeline, stats, topics
+    folder = tmp_path / "atlas075"
+    folder.mkdir()
+    remade = []
+    for name, value in (("sync", lambda: []), ("retire_withdrawn", lambda: []), ("_waiting", lambda: [folder]),
+                        ("_accepted", lambda f: False), ("_topic_of", lambda i: {"id": "t053", "status": "ready:" + i}),
+                        ("_records", lambda *a: records), ("ready", lambda: [folder] * 9),
+                        ("_catalogue", lambda: {"topics": []}),
+                        ("_mark", lambda *a, **k: (_ for _ in ()).throw(AssertionError("topic reopened"))),
+                        ("make", lambda topic, episode_id: remade.append(episode_id) or (_ for _ in ()).throw(
+                            RuntimeError("re-make")))):
+        monkeypatch.setattr(pipeline, name, value)
+    monkeypatch.setattr(pipeline, "HOLD", tmp_path / "no-hold.json")
+    monkeypatch.setattr(stats, "update", lambda *a: {})
+    monkeypatch.setattr(topics, "refill", lambda *a: [])
+    pipeline.run(reserve=0)
+    return remade, folder
+
+
+def test_a_short_the_publisher_already_sent_is_never_remade_or_reopened(monkeypatch, tmp_path):
+    remade, folder = _upgrade_run(monkeypatch, tmp_path, {"atlas075": {"status": "sent"}})
+    assert remade == [] and folder.is_dir()
+
+
+def test_no_upgrade_when_the_publishers_records_cannot_be_read(monkeypatch, tmp_path):
+    remade, folder = _upgrade_run(monkeypatch, tmp_path, None)
+    assert remade == [] and folder.is_dir()
+
+
+def test_an_unpublished_held_short_is_still_upgraded(monkeypatch, tmp_path):
+    from ytc.atlas import pipeline
+    monkeypatch.setattr(pipeline, "_tidy", lambda f: None)
+    with pytest.raises(AssertionError, match="topic reopened"):
+        _upgrade_run(monkeypatch, tmp_path, {})

@@ -37,11 +37,11 @@ MAP_CREDIT = "Globe: NASA Blue Marble and Black Marble (public domain). Borders:
 # the dataset citation). Each claim is one the code really enforces: writer.number_problems and
 # quality.entity_value_errors check every number and country, quality.review is a second model's read against the
 # official definition, and quality.media checks the encoded narration against the script.
-EDITORIAL = ("How this Short is made: one official dataset, the latest value for each place (not a trend). The "
-             "script is written with AI; every number and country in it is checked in code against the data above, "
-             "a second AI review reads it against the dataset's official definition, and the finished narration is "
-             "checked against the script before it is published. Narrated with a synthetic voice. Spot an error? "
-             "Say so in the comments and it will be checked against the source.")
+EDITORIAL = ("How this Short is made: one published dataset (named above), the latest value for each place (not a "
+             "trend). The script is written with AI; every number and country in it is checked in code against the "
+             "data above, a second AI review reads it against the dataset's definition, and the finished narration "
+             "is checked against the script before it is published. Narrated with a synthetic voice. Corrections "
+             "welcome in the comments.")
 # The producer's committed episodes. The publisher schedules from a temporary folder holding only the video, so the
 # credits are read from here when that folder has none.
 EPISODES = Path(__file__).resolve().parents[4] / "content" / "atlas"
