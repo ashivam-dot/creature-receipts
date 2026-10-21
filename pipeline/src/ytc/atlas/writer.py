@@ -12,12 +12,16 @@ import requests
 from .. import llm
 from . import geo
 from .data import Dataset, get
-from .draw import short_name
-from .episode import AtlasEpisode
+from .draw import SHORT_NAMES, short_name
+from .episode import AtlasEpisode, say_value
 
 log = logging.getLogger(__name__)
 
-WORDS = (60, 110)
+# 50, not 60: six of the 18 drafts lost on 2026-10-17..21 died at 57-58 written words. SPOKEN_MIN keeps the length
+# that matters: the 42 accepted Shorts said 68-113 words as spoken in 30.9-44.6 s, so 60 spoken words still lands
+# inside quality.media's 25 s floor once film.narrate slows a short read down.
+WORDS = (50, 110)
+SPOKEN_MIN = 60
 # Spoken words (numbers as said) that fit 44 s at the narrator's natural 2.55 words a second, plus the few that
 # film.narrate's capped speed-up still says clearly; past that the speech check fails the Short.
 SPOKEN_MAX = 118
@@ -63,7 +67,9 @@ How a great Atlas script works:
   data": say the number plainly ("Japan: 340.", "Niger has 6.1.").
 - You may add one short line on what is counted, only from the official definition, if it makes the number clearer.
   Never invent causes, history, or opinions.
-- The last beat is a short question to the viewer that loops back to the hook (e.g. "Where does your country land?").
+- The last beat is a short question to the viewer, in your own words, about THIS dataset's subject (name the thing:
+  coal, doctors, crowds, tourism), so it loops back to the hook. Never start it with "Where" (the narrator's "Where
+  does" is heard as "What is"), and never reuse a stock line such as "How does your country compare?".
 - Every beat adds something new: never repeat a number in the very next beat. No report-speak ("records",
   "registers", "standing at", "holding rank", "ranks 21st globally", "India's value"): talk like a person and
   name the thing ("2.3 times the food Burundi has").
@@ -75,8 +81,9 @@ How a great Atlas script works:
   {{"shot": "group", "isos": ["IND", "CHN"], "text": "India and China, the giants, aren't the most crowded. India has 488. China, just 150."}}
   {{"shot": "rank", "isos": ["MNG", "AUS", "CAN", "RUS"], "text": "The emptiest big countries? Mongolia, Australia, Canada and Russia, all under 10."}}
   {{"shot": "country", "isos": ["JPN"], "text": "And Japan, famous for its crowds, has 340. A quarter of Bangladesh."}}
-  {{"shot": "card", "text": "Where does your country land?"}}
-- Write every number as digits exactly as in the summary ("178", "3.2", "1.15 billion"). Never write numbers as
+  {{"shot": "card", "text": "How many people share a square kilometer in your country?"}}
+- Write every number as digits exactly as in the summary ("178", "3.2", "1.15 billion", "under 0.1%"). Say units
+  as words ("square kilometers", "kilograms", "degrees"), never as symbols or letters ("km²", "kg", "°C"). Never write numbers as
   words, not even "two worlds" or "three times"; rephrase instead ("a world apart"). Never round differently. Definition thresholds may quote the official definition exactly; never use
   a definition threshold as a country's measured value. A country's value goes only in
   a beat whose isos include that country.
@@ -137,8 +144,16 @@ def definition(ds_spec: dict) -> str:
 
 
 def _say(value: float, fmt: str) -> str:
-    text = fmt.format(v=value)
+    """How a value is said, exactly as the episode shows it (episode.say_value)."""
+    text = say_value(value, fmt)
     return text[1:] if text.startswith("-") and not re.search(r"[1-9]", text) else text
+
+
+def spoken_name(name: str) -> str:
+    """The map's short name, unless it is an abbreviation the narrator reads letter by letter: "C. African Rep."
+    was said "C" and heard as "see" (atlas041), "St" can be read "street", "&" is not a word."""
+    short = short_name(name)
+    return name if re.search(r"\.|&|^St ", short) else short
 
 
 def drawable(ds: Dataset) -> dict[str, float]:
@@ -161,7 +176,7 @@ def facts(ds: Dataset, ep_scale: dict, fmt: str) -> tuple[str, set[str], dict[st
     may only be said in a beat that names one of its owners)."""
     vals = drawable(ds)
     shown = visible(vals)
-    names = {k: short_name(geo.world()[k].name) for k in vals}
+    names = {k: spoken_name(geo.world()[k].name) for k in vals}
     ranked = sorted(shown.items(), key=lambda kv: kv[1], reverse=True)
     lines, allowed, owners = [], set(), {}
 
@@ -318,6 +333,85 @@ def plain(text: str) -> str:
     return text
 
 
+# Unit symbols the narrator would spell out or slur, as the words a person says (American spelling: the speech
+# check's normalizer folds -re into -er anyway). Longest first, so "km²" is not read as "km" then "²".
+_UNIT_WORDS = (("µg/m³", "micrograms per cubic meter"), ("kg/ha", "kilograms per hectare"),
+               ("km²", "square kilometers"), ("km2", "square kilometers"), ("sq km", "square kilometers"),
+               ("m³", "cubic meters"), ("kWh", "kilowatt hours"), ("kcal", "kilocalories"), ("°C", "degrees Celsius"),
+               ("°F", "degrees Fahrenheit"), ("km", "kilometers"), ("kg", "kilograms"), ("mm", "millimeters"))
+_UNITS = re.compile(r"(?<![\w°µ])(" + "|".join(re.escape(u) for u, _ in _UNIT_WORDS) + r")(?![\w²³])")
+_SINGULAR = re.compile(r"\b(per|a|an|each|every|one) (square |cubic )?(kilometer|kilogram|millimeter|hectare|meter|"
+                       r"kilowatt hour|kilocalorie)s\b")
+_ABBREVIATED = {short: full for full, short in SHORT_NAMES.items() if spoken_name(full) == full and short != full}
+
+
+def spoken(text: str) -> str:
+    """Narration as it is said: unit symbols as words ("per km²" is "per square kilometer") and abbreviated map
+    names in full ("C. African Rep." is "Central African Republic")."""
+    for short, full in _ABBREVIATED.items():
+        text = re.sub(r"(?<!\w)" + re.escape(short) + r"(?!\w)", full, text)
+    text = _UNITS.sub(lambda m: dict(_UNIT_WORDS)[m.group(1)], text)
+    return _SINGULAR.sub(lambda m: f"{m.group(1)} {m.group(2) or ''}{m.group(3)}", text)
+
+
+_ZERO = re.compile(r"(?<![\w.])0(?:\.0+)?(?![\d.]*\d)")
+_PERCENT = re.compile(r"(\d[\d,]*(?:\.\d+)?)\s*(?:%|percent\b)", re.I)
+_GROSS = re.compile(r"\bgross\b", re.I)
+
+
+def misleading_numbers(text: str, *, zero_ok: bool = False, gross: bool = False, explained: bool = False,
+                       growth: bool = False) -> list[str]:
+    """Values a viewer reads as wrong although they are rounded truly: a nonzero value said as 0 ("Niger has 0.0"
+    doctors, atlas021; "0.000%", atlas051) and a share over 100% ("Greece Has 165.1% College Enrollment", a gross
+    ratio, atlas053). A 0 is said only when a value in the data is exactly 0 (`zero_ok`), and never as "0.0"; a
+    percentage over 100 only for a gross ratio whose wording says "gross" (`gross`, `explained`), or a growth rate
+    (`growth`), where over 100% is a plain rise."""
+    out = []
+    for m in _ZERO.finditer(text):
+        if "." in m.group(0) or not zero_ok:
+            out.append(f"'{m.group(0)}' reads as nothing; say the value as the summary does ('under 0.1%')")
+    for m in _PERCENT.finditer(text):
+        value = float(m.group(1).replace(",", ""))
+        if value > 100 and not growth and not (gross and explained):
+            out.append(f"'{m.group(0)}' is over 100%, which reads as an error" +
+                       ("; say it is a gross ratio ('a gross enrollment ratio of ...') where you say it" if gross
+                        else "; this measure is not a gross ratio, so leave that country out"))
+    return out
+
+
+def measure_kind(label: str, indicator: str = "") -> dict[str, bool]:
+    """What misleading_numbers needs to know of a dataset: whether it is a gross ratio or a growth rate (World Bank
+    codes ending .ZG are annual growth, where over 100% is a plain rise)."""
+    return {"gross": bool(_GROSS.search(label or "")), "growth": (indicator or "").upper().endswith(".ZG")}
+
+
+_STOP = frozenset("about above after again against among around because before being below between both could does "
+                  "down during each every from have having into just more most much only other over same share "
+                  "should some such than that their them then there these they this those through under very what "
+                  "when where which while with would your yours people country countries places world total".split())
+
+
+def topic_words(*texts: str) -> set[str]:
+    """The content words of a topic, by their first 5 letters, so "electric" matches "electricity"."""
+    return {w[:5] for t in texts for w in re.findall(r"[a-z]{4,}", (t or "").lower()) if w not in _STOP}
+
+
+def card_problems(text: str, topic: set[str] | None = None) -> list[str]:
+    """The spoken end card is a question of its own about this dataset, not the stock "Where does your country
+    land?": Kokoro's "where does" was heard as "what is" in 8 encoded Shorts (atlas034, 045, 050, 062, 063, 066,
+    073, 077), and one line on every Short reads as a template."""
+    out = []
+    if not text.strip().endswith("?"):
+        out.append("the card beat is a question to the viewer; end it with '?'")
+    if re.match(r"\W*where\b", text, re.I) or re.search(r"\bwhere (does|do|is)\b", text, re.I):
+        out.append("the card question must not start with 'Where' or say 'where does' (heard as 'what is'); ask it "
+                   "another way, about this dataset")
+    if topic and not topic_words(text) & topic:
+        out.append("the card question must name this dataset's subject (e.g. 'How much of your power comes from "
+                   "coal?'), not a stock line")
+    return out
+
+
 _TREND = re.compile(r"\b(every (single )?year|each year|always|for decades|more than ever)\b", re.I)
 _NUMBER = re.compile(r"\d[\d,]*(?:\.\d+)?")
 _WORD_NUMBERS = re.compile(r"\b(two|three|four|five|six|seven|eight|nine|ten|eleven|twelve|twenty|thirty|forty|"
@@ -351,7 +445,8 @@ def number_problems(text: str, allowed: set[str], owners: dict[str, set[str]] | 
 
 
 def problems(draft: dict, allowed: set[str], owners: dict[str, set[str]], vals: dict[str, float],
-             quoted: str = "") -> list[str]:
+             quoted: str = "", measure: dict[str, bool] | None = None, topic: set[str] | None = None) -> list[str]:
+    """`measure` is measure_kind of the dataset; `topic` its topic_words, which the card question must share."""
     out = []
     beats = draft.get("beats", [])
     words = sum(len(b["text"].split()) for b in beats)
@@ -359,9 +454,13 @@ def problems(draft: dict, allowed: set[str], owners: dict[str, set[str]], vals: 
         out.append(f"{len(beats)} beats; write {BEATS[0]}-{BEATS[1]}")
     if not WORDS[0] <= words <= WORDS[1]:
         out.append(f"{words} words; write {WORDS[0]}-{WORDS[1]}")
-    if (spoken := sum(spoken_words(b["text"]) for b in beats)) > SPOKEN_MAX:
+    spoken = sum(spoken_words(b["text"]) for b in beats)
+    if spoken > SPOKEN_MAX:
         out.append(f"{spoken} words as spoken (a number counts as said: '3,947' is 6 words); cut about "
                    f"{spoken - SPOKEN_MAX + 5}: drop a number or a clause")
+    elif beats and spoken < SPOKEN_MIN:
+        out.append(f"{spoken} words as spoken; the Short needs at least {SPOKEN_MIN} to last 25 seconds: add a beat "
+                   "or a clause")
     if len(draft.get("title", "")) > 60:
         out.append("the title is over 60 characters")
     if beats and beats[0]["shot"] != "world":
@@ -408,6 +507,15 @@ def problems(draft: dict, allowed: set[str], owners: dict[str, set[str]], vals: 
             out.append(f"beat {i}: a rank shot names 3 to 6 isos")
     if sum(b["shot"] == "rank" for b in beats) > 1:
         out.append("use the rank shot at most once")
+    if beats and beats[-1]["shot"] == "card":
+        out += card_problems(beats[-1]["text"], topic)
+    kind = {"zero_ok": any(v == 0 for v in vals.values()), **(measure or {})}
+    for i, b in enumerate(beats, 1):
+        explained = any(_GROSS.search(x["text"]) for x in beats[:i])
+        out += [f"beat {i}: {p}" for p in misleading_numbers(b["text"], explained=explained, **kind)]
+    for where in ("title", "hook_text"):
+        text = draft.get(where, "")
+        out += [f"{where}: {p}" for p in misleading_numbers(text, explained=bool(_GROSS.search(text)), **kind)]
     for i, b in enumerate(beats, 1):
         isos = b.get("isos", [])
         out += [f"beat {i}: {p}" for p in number_problems(b["text"], allowed, owners,
@@ -425,6 +533,11 @@ def write(topic: dict, ds: Dataset, episode_id: str, series: str = "") -> AtlasE
     if len(vals) < MIN_COUNTRIES:
         raise RuntimeError(f"only {len(vals)} countries have data; an Atlas map needs {MIN_COUNTRIES}")
     shown = visible(vals)
+    measure = measure_kind(ds.label or topic.get("dataset", {}).get("label", ""), ds.indicator or
+                           topic.get("dataset", {}).get("indicator", ""))
+    # Not the angle: a rewrite appends the rejected script (with its old card line) to it.
+    subject = topic_words(topic["topic"], ds.label, ds.unit, topic.get("definition_text", ""),
+                          *topic.get("hashtags", []))
     feedback = ""
     for attempt in range(1, TRIES + 1):
         prompt = PROMPT.format(topic=topic["topic"], angle=topic.get("angle", ""), format=topic.get("format", "map_reveal"),
@@ -436,7 +549,7 @@ def write(topic: dict, ds: Dataset, episode_id: str, series: str = "") -> AtlasE
                              models=(*llm.FLASH, *llm.FLASH_LITE, *llm.BACKUP_STRONG),
                              purpose=f"atlas script {episode_id}")
         for beat in [*draft.get("beats", []), *draft.get("opening_options", [])]:
-            beat["text"] = plain(strip_codes(beat["text"], set(vals)))
+            beat["text"] = spoken(plain(strip_codes(beat["text"], set(vals))))
         # Bind named country/value clauses to their world-shot callouts instead of wasting a rewrite.
         for beat in draft.get("beats", []):
             if beat["shot"] != "world":
@@ -457,10 +570,10 @@ def write(topic: dict, ds: Dataset, episode_id: str, series: str = "") -> AtlasE
             candidate = copy.deepcopy(draft)
             candidate["beats"][0]["text"] = option["text"]
             candidate["hook_text"] = option["hook_text"]
-            if not problems(candidate, allowed, owners, shown, topic.get("definition_text", "")):
+            if not problems(candidate, allowed, owners, shown, topic.get("definition_text", ""), measure, subject):
                 draft = candidate
                 break
-        found = problems(draft, allowed, owners, shown, topic.get("definition_text", ""))
+        found = problems(draft, allowed, owners, shown, topic.get("definition_text", ""), measure, subject)
         if not found:
             return _episode(draft, topic, episode_id, series)
         log.info("%s draft %d: %s", episode_id, attempt, "; ".join(found))

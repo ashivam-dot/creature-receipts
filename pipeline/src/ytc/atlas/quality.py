@@ -19,8 +19,34 @@ VERSION = 1
 SPEECH_POLICY = "material-hard-entity-polarity-strict-minor-spelling-warning"
 
 
+_SPOKEN_NUMBER = re.compile(r"([^\d]*?)(\d[\d,]*(?:\.\d+)?)([^\d]*)")
+
+
+def same_number(wrote: str, heard: str) -> bool:
+    """The recognizer wrote the very number the script says, only spelled another way: "5.0%" heard as "5%",
+    "0.80%" as "0.8%", "1,333" as "1333". Every word must pair up, the units around each number must match, and the
+    values must be equal exactly: "70.5202%" heard as "70.520%" is a different number and stays material."""
+    from decimal import Decimal, InvalidOperation
+    a, b = wrote.split(), heard.split()
+    if len(a) != len(b) or a == b:
+        return False
+    for x, y in zip(a, b):
+        if x == y:
+            continue
+        mx, my = _SPOKEN_NUMBER.fullmatch(x), _SPOKEN_NUMBER.fullmatch(y)
+        if not mx or not my or (mx[1], mx[3]) != (my[1], my[3]):
+            return False
+        try:
+            if Decimal(mx[2].replace(",", "")) != Decimal(my[2].replace(",", "")):
+                return False
+        except InvalidOperation:
+            return False
+    return True
+
+
 def minor_speech_difference(finding: str, ds: Dataset) -> bool:
-    """Fuzzy spelling tolerance must never excuse a direction reversal or a changed country name."""
+    """Fuzzy spelling tolerance must never excuse a direction reversal or a changed country name; a number is
+    excused only when the recognizer wrote the same value (same_number)."""
     from .. import check
     match = check._FINDING.match(finding)
     if not match:
@@ -36,7 +62,7 @@ def minor_speech_difference(finding: str, ds: Dataset) -> bool:
     aliases.update({"USA", "UK", "UAE"})
     if any(re.search(r"\b" + re.escape(alias) + r"\b", wrote + " " + heard, re.I) for alias in aliases):
         return False
-    return check._asr_noise(finding)
+    return same_number(wrote, heard) or check._asr_noise(finding)
 
 
 def save(path: Path, value: dict) -> None:
@@ -193,6 +219,17 @@ def review(ep: AtlasEpisode, ds: Dataset, folder: Path) -> dict:
         shot = ep.beats[int(surface[5:])].shot if surface.startswith("beat_") else ep.beats[0].shot
         context = list(dict.fromkeys(([shot.iso] if shot.iso else []) + shot.isos + shot.callouts))
         deterministic.extend(f"{surface}: {error}" for error in ratio_errors(value, ep, ds, context))
+    # Values a viewer reads as wrong although rounded truly: a nonzero said as 0, a share over 100%.
+    kind = {"zero_ok": any(v == 0 for v in writer.drawable(ds).values()),
+            **writer.measure_kind(ds.label or ep.dataset.label, ds.indicator or ep.dataset.indicator)}
+    beats = [b.text for b in ep.beats]
+    for surface, text in surfaces.items():
+        if surface == "description":
+            continue
+        value = " ".join(text) if isinstance(text, list) else text
+        said_before = " ".join(beats[:int(surface[5:]) + 1]) if surface.startswith("beat_") else value
+        deterministic.extend(f"{surface}: {problem}" for problem in writer.misleading_numbers(
+            value, explained=bool(writer._GROSS.search(said_before)), **kind))
     if deterministic:
         raise ValueError("entity binding: " + "; ".join(deterministic))
     shots = {f"beat_{i}": b.shot.model_dump() for i, b in enumerate(ep.beats)}

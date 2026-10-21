@@ -339,7 +339,12 @@ def make_next() -> dict:
     return {"outcome": "ready", "id": episode_id, "topic": topic["id"], "title": ep.title, "bytes": record["bytes"]}
 
 
-def run(reserve: int = RESERVE, minutes: float = 40, max_failures: int = 2) -> dict:
+# Failed drafts a run may spend before it stops. 2 left every run at 0-2 Shorts (10 of 28 drafts passed,
+# 2026-10-17..21) and the publisher starved; a failed draft costs minutes, the `minutes` cap still bounds the run.
+MAX_FAILURES = 4
+
+
+def run(reserve: int = RESERVE, minutes: float = 40, max_failures: int = MAX_FAILURES) -> dict:
     """One producer run: sync the publisher's posts, refresh their numbers, top up the topics, then render until
     `reserve` Shorts are waiting."""
     from . import stats

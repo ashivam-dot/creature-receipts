@@ -29,7 +29,8 @@ def test_tiny_places_stay_off_the_tour_and_superlatives_are_guarded():
 
 
 def test_negative_zero_and_minus_signs():
-    assert writer._say(-0.01, "{v:.1f}%") == "0.0%"
+    # A nonzero value is never said as "0.0%" (atlas021, atlas051), and its minus sign goes with the zeros.
+    assert writer._say(-0.01, "{v:.1f}%") == "under 0.1%"
     draft = {"title": "t", "beats": [{"text": "Red shows Moldova at -1.8%.", "shot": "world", "isos": ["MDA"]}]}
     found = " ".join(writer.problems(draft, set(), {"1.8": {"MDA"}}, {"MDA": -1.8}))
     assert "'Red' describes the map" in found and "minus sign" in found

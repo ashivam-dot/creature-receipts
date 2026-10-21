@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+import re
 from pathlib import Path
 from typing import Literal
 
@@ -9,6 +10,47 @@ import yaml
 from pydantic import BaseModel, ConfigDict, Field, model_validator
 
 FORMATS = ("map_reveal", "rank_ladder", "versus", "odd_one_out", "then_now")
+_DIGITS = re.compile(r"\d[\d,]*(?:\.\d+)?")
+# Decimals a value keeps: 3 significant figures, and 1 decimal for a percentage. Whisper writes "5.0%" as "5%" and
+# "70.5202%" as "70.520%", so the narrator must never be asked to say more than a person would (2026-10-21).
+SIGNIFICANT = 3
+PERCENT_DECIMALS = 1
+
+
+def say_value(value: float, fmt: str) -> str:
+    """fmt's text for value, as a person says it on screen and aloud: no trailing zeros ("5.0%" is "5%", "0.80%"
+    is "0.8%"), at most 3 significant figures in the decimals and 1 decimal for a percentage, and a nonzero value
+    the shown precision would turn into 0 (or a share short of 100 into 100) is "under 0.1%" ("over 99.9%"),
+    never "0.0" or "0.000". Whole digits are never rounded away ("3,947" stays)."""
+    text = fmt.format(v=value)
+    m = _DIGITS.search(text)
+    if not m:
+        return text
+    number = m.group(0)
+    shown = len(number.partition(".")[2])
+    magnitude = abs(value)
+    whole = len(str(int(magnitude))) if magnitude >= 1 else 0
+    if whole:
+        decimals = max(0, SIGNIFICANT - whole)
+    else:
+        # 0.0143 keeps 0.0143: the zeros after the point, then 3 figures.
+        lead = len(f"{magnitude:.12f}".partition(".")[2]) - len(f"{magnitude:.12f}".partition(".")[2].lstrip("0"))
+        decimals = lead + SIGNIFICANT
+    percent = "%" in text
+    if percent:
+        decimals = min(decimals, PERCENT_DECIMALS)
+    decimals = min(decimals, shown)
+    said = f"{magnitude:{',' if ',' in number or ',' in fmt else ''}.{decimals}f}"
+    if "." in said:
+        said = said.rstrip("0").rstrip(".")
+    head, tail = text[:m.start()], text[m.end():]
+    unsigned = head.replace("-", "", 1)
+    smallest = f"{10 ** -decimals:.{decimals}f}" if decimals else "1"
+    if value and not re.search(r"[1-9]", said):
+        return f"under {unsigned}{smallest}{tail}"
+    if percent and 0 < value < 100 and float(said.replace(",", "")) >= 100:
+        return f"over {unsigned}{100 - 10 ** -decimals:.{decimals}f}{tail}" if decimals else f"over {unsigned}99{tail}"
+    return f"{head}{said}{tail}"
 
 
 class _Model(BaseModel):
@@ -90,7 +132,7 @@ class AtlasEpisode(_Model):
         return self
 
     def value_text(self, value: float) -> str:
-        return self.value_format.format(v=value)
+        return say_value(value, self.value_format)
 
     @classmethod
     def load(cls, path: Path) -> AtlasEpisode:
