@@ -1,0 +1,26 @@
+{
+  "duration": 37.92,
+  "integrated_lufs": -14.4,
+  "true_peak_dbfs": -1.4,
+  "speech": {
+    "heard": "Colombia has a Gini score of 54.4, while India reports 23. Colombia hits 2.4 times India, a wide gap in income distribution. Brazil sits at 50.3, more than double what India reports. USA is 41.8, and China stands at 36. Slovakia is 23.8, Slovenia 24.7, Ukraine 25.6, and the Netherlands 25.7. India hits 23, the lowest of all 124 countries and territories. How unequal is income in your country?",
+    "model": "small.en",
+    "media_sha256": "cc6a8a904af36d9a6ebbeb518d4b6888dfa3c29dc1274c387f87a0f97f704b45",
+    "primary_differences": [
+      "'the' heard as '(nothing)' after 'what india reports'"
+    ],
+    "differences": [
+      "'the' heard as '(nothing)' after 'what india reports'",
+      "base.en: 'gini' heard as 'genie' after 'colombia has a'"
+    ],
+    "corroboration": {
+      "model": "base.en",
+      "heard": "Colombia has a genie score of 54.4, while India reports 23. Colombia hits 2.4 times India, a wide gap in income distribution. Brazil sits at 50.3, more than double what India reports. USA is 41.8, and China stands at 36. Slovakia is 23.8, Slovenia 24.7, Ukraine 25.6, and the Netherlands 25.7. India hits 23, the lowest of all 124 countries and territories. How unequal is income in your country?",
+      "differences": [
+        "'gini' heard as 'genie' after 'colombia has a'",
+        "'the' heard as '(nothing)' after 'what india reports'"
+      ],
+      "resolved": []
+    }
+  }
+}

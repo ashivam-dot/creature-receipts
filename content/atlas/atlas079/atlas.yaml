@@ -1,0 +1,66 @@
+id: atlas079
+title: Places Ranked by Arable Land
+hook_text: ARABLE LAND GAP
+description: A cinematic look at arable land per person across 205 countries and territories using World Bank data.
+hashtags:
+- '#geography'
+- '#agriculture'
+- '#maps'
+tags:
+- geography
+- arable land per person
+- Kazakhstan
+- Kuwait
+- world map
+- data
+sources:
+- https://data.worldbank.org/indicator/AG.LND.ARBL.HA.PC
+dataset:
+  kind: worldbank
+  indicator: AG.LND.ARBL.HA.PC
+  label: Arable land per person
+  unit: hectares
+  source: World Bank
+  min_year: 2019
+scale:
+  kind: threshold
+  at: 0.2
+  labels:
+  - High cropland per capita
+  - Low cropland per capita
+value_format: '{v:.4f} ha'
+beats:
+- text: Kazakhstan has 1.48 hectares of arable land per person. Kuwait has 0.0016.
+  shot:
+    callouts:
+    - KAZ
+    - KWT
+- text: Kazakhstan leads the world. Land under temporary crops and temporary fallow spreads wide across the landscape.
+  shot:
+    kind: country
+    iso: KAZ
+- text: Kazakhstan has 925 times what Kuwait has.
+  shot:
+    kind: group
+    isos:
+    - KAZ
+    - KWT
+- text: Australia has 1.15 hectares, and Canada has 0.922.
+  shot:
+    kind: group
+    isos:
+    - AUS
+    - CAN
+- text: USA has 0.446, while China sits at 0.077 and India at 0.106.
+  shot:
+    kind: group
+    isos:
+    - USA
+    - CHN
+    - IND
+- text: How many hectares of arable land exist for people in your country?
+  shot:
+    kind: card
+    lines:
+    - How much arable land?
+    - Arable land per person

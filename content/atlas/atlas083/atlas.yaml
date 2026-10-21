@@ -1,0 +1,71 @@
+id: atlas083
+title: The Places With the Oldest Male Populations
+hook_text: THE WIDE GAP
+description: A cinematic look at the global share of men aged 65 and older, highlighting the massive contrast between
+  Japan and Qatar.
+hashtags:
+- '#population'
+- '#maps'
+- '#geography'
+tags:
+- population
+- share of men aged 65 and above
+- Japan
+- Qatar
+- world map
+- data
+sources:
+- https://data.worldbank.org/indicator/SP.POP.65UP.MA.ZS
+dataset:
+  kind: worldbank
+  indicator: SP.POP.65UP.MA.ZS
+  label: Share of men aged 65 and above
+  unit: '%'
+  source: World Bank
+  min_year: 2019
+scale:
+  edges:
+  - 5.0
+  - 10.0
+  - 15.0
+  - 20.0
+  labels:
+  - Under 5%
+  - 5 to 10%
+  - 10 to 15%
+  - 15 to 20%
+  - Over 20%
+value_format: '{v:.1f}%'
+beats:
+- text: Over a quarter of Japanese men are 65 and older. In Qatar, it is 1.5 percent.
+  shot:
+    callouts:
+    - JPN
+    - QAT
+- text: Japan hits 27.1 percent. India has 6.8 percent.
+  shot:
+    kind: group
+    isos:
+    - JPN
+    - IND
+  basis: Male population 65 years of age or older as a percentage of the total male population.
+- text: The US hits 16.8 percent, and Germany counts 21.3 percent.
+  shot:
+    kind: group
+    isos:
+    - USA
+    - DEU
+- text: Italy counts 22.7 percent.
+  shot:
+    kind: country
+    iso: ITA
+- text: Qatar ends the list at 1.5 percent.
+  shot:
+    kind: country
+    iso: QAT
+- text: What share of older men lives around you?
+  shot:
+    kind: card
+    lines:
+    - What share of older men lives near you?
+    - Share of men aged 65 and above (%), World Bank, 2025

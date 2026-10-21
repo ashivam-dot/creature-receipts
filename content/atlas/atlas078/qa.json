@@ -1,0 +1,25 @@
+{
+  "version": 1,
+  "passed": true,
+  "checked_at": "2026-10-21T20:05:35.190617+00:00",
+  "quality_module_sha256": "e7f26572dbfefb35b9f8c49e8e94ac6899f007d0e4e390447c2d9b83bd12ff81",
+  "media_sha256": "1e45c0e366c9927b8a6e6565c39a2395d53acd399a81c890bbd7b28316e567e3",
+  "script_sha256": "f0d7d40629141929dacd7fb2f2245d4268a189359e9ff7d26f56799922d47ba8",
+  "data_sha256": "854b839634ed7d333cf76373e3c8cfd9cb71d0be4afaeea8b3cc9ff4a0e9785c",
+  "claims_sha256": "56372b2fb9947753be7b6570e52b4c50a6b7add9c7d24afd1b9c676e735b6aca",
+  "contact_sha256": "f6a101d8bb6d7d1acb7f265a1d75edbf34f9f528f44932a7d2e3442c01af3a87",
+  "duration": 29.09,
+  "integrated_lufs": -14.3,
+  "true_peak_dbfs": -1.4,
+  "speech": {
+    "heard": "Japan hits 65.6% in massive urban hubs. In Ethiopia, it is 4.4%. Kuwait hits 70%, one of the highest on Earth. Kuwait has 16 times Ethiopia. USA stands at 47% and China at 32.7%. The lowest of all 121, Ethiopia rests at 4.4%. How many live in a megacity near you?",
+    "model": "small.en",
+    "media_sha256": "1e45c0e366c9927b8a6e6565c39a2395d53acd399a81c890bbd7b28316e567e3",
+    "primary_differences": [],
+    "differences": []
+  },
+  "warnings": [
+    "duration 29.1s outside editorial 30–45s target"
+  ],
+  "speech_policy": "material-hard-entity-polarity-strict-minor-spelling-warning"
+}

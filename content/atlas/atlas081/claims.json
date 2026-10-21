@@ -1,0 +1,1521 @@
+{
+  "version": 1,
+  "evidence": {
+    "version": 1,
+    "indicator": "SI.POV.GINI",
+    "definition": "Gini index measures the extent to which the distribution of income (or, in some cases, consumption expenditure) among individuals or households within an economy deviates from a perfectly equal distribution. A Lorenz curve plots the cumulative percentages of total income received against the cumulative number of recipients, starting with the poorest individual or household. The Gini index measures the area between the Lorenz curve and a hypothetical line of absolute equality, expressed as a percentage of the maximum area under the line. Thus a Gini index of 0 represents perfect equality, while an index of 100 implies perfect inequality.",
+    "source": "https://data.worldbank.org/indicator/SI.POV.GINI",
+    "source_response_sha256": "71ae2c652b5b224170e822912f08f47387ca230201e181d2e5efc3dfa5d2d685",
+    "source_organization": "World Bank, Poverty and Inequality Platform. Data are based on primary household survey data obtained from government statistical agencies and World Bank country departments. Data for high-income economies are mostly from the Luxembourg Income Study database. For more information and methodology, please see http://pip.worldbank.org., World Bank (WB), uri: http://pip.worldbank.org, note: Data are based on primary household survey data obtained from government statistical agencies and World Bank country departments. Data for high-income economies are mostly from the Luxembourg Income Study database.",
+    "year_label": "latest available 2019–2025",
+    "universe": "mapped countries and territories with data",
+    "count": 124,
+    "threshold": null,
+    "at_or_above": null,
+    "entities": {
+      "ALB": {
+        "name": "Albania",
+        "value": 29.4,
+        "display": "29.4",
+        "year": 2020,
+        "unit": "points",
+        "rank": 101
+      },
+      "ARG": {
+        "name": "Argentina",
+        "value": 42.4,
+        "display": "42.4",
+        "year": 2024,
+        "unit": "points",
+        "rank": 18
+      },
+      "ARM": {
+        "name": "Armenia",
+        "value": 27.4,
+        "display": "27.4",
+        "year": 2024,
+        "unit": "points",
+        "rank": 109
+      },
+      "AUS": {
+        "name": "Australia",
+        "value": 33.8,
+        "display": "33.8",
+        "year": 2020,
+        "unit": "points",
+        "rank": 64
+      },
+      "AUT": {
+        "name": "Austria",
+        "value": 31.2,
+        "display": "31.2",
+        "year": 2023,
+        "unit": "points",
+        "rank": 89
+      },
+      "BGD": {
+        "name": "Bangladesh",
+        "value": 30.9,
+        "display": "30.9",
+        "year": 2022,
+        "unit": "points",
+        "rank": 91
+      },
+      "BLR": {
+        "name": "Belarus",
+        "value": 24.4,
+        "display": "24.4",
+        "year": 2020,
+        "unit": "points",
+        "rank": 122
+      },
+      "BEL": {
+        "name": "Belgium",
+        "value": 26.8,
+        "display": "26.8",
+        "year": 2023,
+        "unit": "points",
+        "rank": 112
+      },
+      "BEN": {
+        "name": "Benin",
+        "value": 34.4,
+        "display": "34.4",
+        "year": 2021,
+        "unit": "points",
+        "rank": 56
+      },
+      "BTN": {
+        "name": "Bhutan",
+        "value": 28.5,
+        "display": "28.5",
+        "year": 2022,
+        "unit": "points",
+        "rank": 105
+      },
+      "BOL": {
+        "name": "Bolivia",
+        "value": 40.9,
+        "display": "40.9",
+        "year": 2024,
+        "unit": "points",
+        "rank": 21
+      },
+      "BIH": {
+        "name": "Bosnia and Herzegovina",
+        "value": 30.3,
+        "display": "30.3",
+        "year": 2021,
+        "unit": "points",
+        "rank": 94
+      },
+      "BRA": {
+        "name": "Brazil",
+        "value": 50.3,
+        "display": "50.3",
+        "year": 2024,
+        "unit": "points",
+        "rank": 4
+      },
+      "BGR": {
+        "name": "Bulgaria",
+        "value": 39.5,
+        "display": "39.5",
+        "year": 2023,
+        "unit": "points",
+        "rank": 27
+      },
+      "BFA": {
+        "name": "Burkina Faso",
+        "value": 37.4,
+        "display": "37.4",
+        "year": 2021,
+        "unit": "points",
+        "rank": 41
+      },
+      "BDI": {
+        "name": "Burundi",
+        "value": 37.5,
+        "display": "37.5",
+        "year": 2020,
+        "unit": "points",
+        "rank": 40
+      },
+      "CMR": {
+        "name": "Cameroon",
+        "value": 42.2,
+        "display": "42.2",
+        "year": 2021,
+        "unit": "points",
+        "rank": 19
+      },
+      "CAN": {
+        "name": "Canada",
+        "value": 31.5,
+        "display": "31.5",
+        "year": 2022,
+        "unit": "points",
+        "rank": 87
+      },
+      "CAF": {
+        "name": "Central African Republic",
+        "value": 43.0,
+        "display": "43",
+        "year": 2021,
+        "unit": "points",
+        "rank": 15
+      },
+      "TCD": {
+        "name": "Chad",
+        "value": 37.4,
+        "display": "37.4",
+        "year": 2022,
+        "unit": "points",
+        "rank": 41
+      },
+      "CHL": {
+        "name": "Chile",
+        "value": 43.0,
+        "display": "43",
+        "year": 2024,
+        "unit": "points",
+        "rank": 15
+      },
+      "CHN": {
+        "name": "China",
+        "value": 36.0,
+        "display": "36",
+        "year": 2022,
+        "unit": "points",
+        "rank": 48
+      },
+      "COL": {
+        "name": "Colombia",
+        "value": 54.4,
+        "display": "54.4",
+        "year": 2024,
+        "unit": "points",
+        "rank": 1
+      },
+      "COM": {
+        "name": "Comoros",
+        "value": 30.3,
+        "display": "30.3",
+        "year": 2024,
+        "unit": "points",
+        "rank": 94
+      },
+      "COD": {
+        "name": "Congo, Dem. Rep.",
+        "value": 44.7,
+        "display": "44.7",
+        "year": 2020,
+        "unit": "points",
+        "rank": 12
+      },
+      "CRI": {
+        "name": "Costa Rica",
+        "value": 45.5,
+        "display": "45.5",
+        "year": 2025,
+        "unit": "points",
+        "rank": 10
+      },
+      "CIV": {
+        "name": "Cote d'Ivoire",
+        "value": 35.3,
+        "display": "35.3",
+        "year": 2021,
+        "unit": "points",
+        "rank": 54
+      },
+      "HRV": {
+        "name": "Croatia",
+        "value": 30.1,
+        "display": "30.1",
+        "year": 2023,
+        "unit": "points",
+        "rank": 96
+      },
+      "CYP": {
+        "name": "Cyprus",
+        "value": 31.8,
+        "display": "31.8",
+        "year": 2023,
+        "unit": "points",
+        "rank": 84
+      },
+      "CZE": {
+        "name": "Czechia",
+        "value": 25.7,
+        "display": "25.7",
+        "year": 2023,
+        "unit": "points",
+        "rank": 117
+      },
+      "DNK": {
+        "name": "Denmark",
+        "value": 29.9,
+        "display": "29.9",
+        "year": 2023,
+        "unit": "points",
+        "rank": 98
+      },
+      "DOM": {
+        "name": "Dominican Republic",
+        "value": 39.0,
+        "display": "39",
+        "year": 2024,
+        "unit": "points",
+        "rank": 31
+      },
+      "ECU": {
+        "name": "Ecuador",
+        "value": 45.9,
+        "display": "45.9",
+        "year": 2025,
+        "unit": "points",
+        "rank": 8
+      },
+      "EGY": {
+        "name": "Egypt, Arab Rep.",
+        "value": 28.5,
+        "display": "28.5",
+        "year": 2021,
+        "unit": "points",
+        "rank": 105
+      },
+      "SLV": {
+        "name": "El Salvador",
+        "value": 39.8,
+        "display": "39.8",
+        "year": 2023,
+        "unit": "points",
+        "rank": 26
+      },
+      "GNQ": {
+        "name": "Equatorial Guinea",
+        "value": 38.5,
+        "display": "38.5",
+        "year": 2022,
+        "unit": "points",
+        "rank": 33
+      },
+      "EST": {
+        "name": "Estonia",
+        "value": 30.7,
+        "display": "30.7",
+        "year": 2023,
+        "unit": "points",
+        "rank": 92
+      },
+      "ETH": {
+        "name": "Ethiopia",
+        "value": 31.1,
+        "display": "31.1",
+        "year": 2021,
+        "unit": "points",
+        "rank": 90
+      },
+      "FJI": {
+        "name": "Fiji",
+        "value": 30.7,
+        "display": "30.7",
+        "year": 2019,
+        "unit": "points",
+        "rank": 92
+      },
+      "FIN": {
+        "name": "Finland",
+        "value": 27.4,
+        "display": "27.4",
+        "year": 2023,
+        "unit": "points",
+        "rank": 109
+      },
+      "FRA": {
+        "name": "France",
+        "value": 31.8,
+        "display": "31.8",
+        "year": 2023,
+        "unit": "points",
+        "rank": 84
+      },
+      "GMB": {
+        "name": "Gambia, The",
+        "value": 38.8,
+        "display": "38.8",
+        "year": 2020,
+        "unit": "points",
+        "rank": 32
+      },
+      "GEO": {
+        "name": "Georgia",
+        "value": 33.9,
+        "display": "33.9",
+        "year": 2024,
+        "unit": "points",
+        "rank": 61
+      },
+      "DEU": {
+        "name": "Germany",
+        "value": 33.7,
+        "display": "33.7",
+        "year": 2022,
+        "unit": "points",
+        "rank": 65
+      },
+      "GRC": {
+        "name": "Greece",
+        "value": 33.4,
+        "display": "33.4",
+        "year": 2023,
+        "unit": "points",
+        "rank": 71
+      },
+      "GTM": {
+        "name": "Guatemala",
+        "value": 45.2,
+        "display": "45.2",
+        "year": 2023,
+        "unit": "points",
+        "rank": 11
+      },
+      "GNB": {
+        "name": "Guinea-Bissau",
+        "value": 33.4,
+        "display": "33.4",
+        "year": 2021,
+        "unit": "points",
+        "rank": 71
+      },
+      "HND": {
+        "name": "Honduras",
+        "value": 45.7,
+        "display": "45.7",
+        "year": 2024,
+        "unit": "points",
+        "rank": 9
+      },
+      "ISL": {
+        "name": "Iceland",
+        "value": 26.8,
+        "display": "26.8",
+        "year": 2019,
+        "unit": "points",
+        "rank": 112
+      },
+      "IND": {
+        "name": "India",
+        "value": 23.0,
+        "display": "23",
+        "year": 2023,
+        "unit": "points",
+        "rank": 124
+      },
+      "IDN": {
+        "name": "Indonesia",
+        "value": 34.4,
+        "display": "34.4",
+        "year": 2025,
+        "unit": "points",
+        "rank": 56
+      },
+      "IRN": {
+        "name": "Iran, Islamic Rep.",
+        "value": 35.9,
+        "display": "35.9",
+        "year": 2023,
+        "unit": "points",
+        "rank": 50
+      },
+      "IRQ": {
+        "name": "Iraq",
+        "value": 29.8,
+        "display": "29.8",
+        "year": 2023,
+        "unit": "points",
+        "rank": 99
+      },
+      "IRL": {
+        "name": "Ireland",
+        "value": 29.0,
+        "display": "29",
+        "year": 2023,
+        "unit": "points",
+        "rank": 104
+      },
+      "ISR": {
+        "name": "Israel",
+        "value": 38.3,
+        "display": "38.3",
+        "year": 2022,
+        "unit": "points",
+        "rank": 36
+      },
+      "ITA": {
+        "name": "Italy",
+        "value": 34.3,
+        "display": "34.3",
+        "year": 2023,
+        "unit": "points",
+        "rank": 58
+      },
+      "JAM": {
+        "name": "Jamaica",
+        "value": 39.9,
+        "display": "39.9",
+        "year": 2021,
+        "unit": "points",
+        "rank": 25
+      },
+      "JPN": {
+        "name": "Japan",
+        "value": 32.3,
+        "display": "32.3",
+        "year": 2020,
+        "unit": "points",
+        "rank": 81
+      },
+      "KAZ": {
+        "name": "Kazakhstan",
+        "value": 29.2,
+        "display": "29.2",
+        "year": 2021,
+        "unit": "points",
+        "rank": 103
+      },
+      "KEN": {
+        "name": "Kenya",
+        "value": 38.5,
+        "display": "38.5",
+        "year": 2022,
+        "unit": "points",
+        "rank": 33
+      },
+      "KIR": {
+        "name": "Kiribati",
+        "value": 24.7,
+        "display": "24.7",
+        "year": 2023,
+        "unit": "points",
+        "rank": 120
+      },
+      "KOR": {
+        "name": "Korea, Rep.",
+        "value": 32.9,
+        "display": "32.9",
+        "year": 2021,
+        "unit": "points",
+        "rank": 76
+      },
+      "KGZ": {
+        "name": "Kyrgyz Republic",
+        "value": 27.5,
+        "display": "27.5",
+        "year": 2024,
+        "unit": "points",
+        "rank": 108
+      },
+      "LAO": {
+        "name": "Lao PDR",
+        "value": 34.7,
+        "display": "34.7",
+        "year": 2024,
+        "unit": "points",
+        "rank": 55
+      },
+      "LVA": {
+        "name": "Latvia",
+        "value": 34.0,
+        "display": "34",
+        "year": 2023,
+        "unit": "points",
+        "rank": 60
+      },
+      "LBN": {
+        "name": "Lebanon",
+        "value": 35.5,
+        "display": "35.5",
+        "year": 2022,
+        "unit": "points",
+        "rank": 52
+      },
+      "LTU": {
+        "name": "Lithuania",
+        "value": 36.0,
+        "display": "36",
+        "year": 2023,
+        "unit": "points",
+        "rank": 48
+      },
+      "LUX": {
+        "name": "Luxembourg",
+        "value": 33.6,
+        "display": "33.6",
+        "year": 2023,
+        "unit": "points",
+        "rank": 67
+      },
+      "MDG": {
+        "name": "Madagascar",
+        "value": 36.8,
+        "display": "36.8",
+        "year": 2021,
+        "unit": "points",
+        "rank": 43
+      },
+      "MWI": {
+        "name": "Malawi",
+        "value": 38.5,
+        "display": "38.5",
+        "year": 2019,
+        "unit": "points",
+        "rank": 33
+      },
+      "MYS": {
+        "name": "Malaysia",
+        "value": 40.7,
+        "display": "40.7",
+        "year": 2021,
+        "unit": "points",
+        "rank": 22
+      },
+      "MLI": {
+        "name": "Mali",
+        "value": 35.7,
+        "display": "35.7",
+        "year": 2021,
+        "unit": "points",
+        "rank": 51
+      },
+      "MLT": {
+        "name": "Malta",
+        "value": 31.8,
+        "display": "31.8",
+        "year": 2023,
+        "unit": "points",
+        "rank": 84
+      },
+      "MHL": {
+        "name": "Marshall Islands",
+        "value": 35.5,
+        "display": "35.5",
+        "year": 2019,
+        "unit": "points",
+        "rank": 52
+      },
+      "MRT": {
+        "name": "Mauritania",
+        "value": 32.0,
+        "display": "32",
+        "year": 2019,
+        "unit": "points",
+        "rank": 83
+      },
+      "MEX": {
+        "name": "Mexico",
+        "value": 42.6,
+        "display": "42.6",
+        "year": 2024,
+        "unit": "points",
+        "rank": 17
+      },
+      "MDA": {
+        "name": "Moldova",
+        "value": 26.8,
+        "display": "26.8",
+        "year": 2024,
+        "unit": "points",
+        "rank": 112
+      },
+      "MNG": {
+        "name": "Mongolia",
+        "value": 31.4,
+        "display": "31.4",
+        "year": 2022,
+        "unit": "points",
+        "rank": 88
+      },
+      "MNE": {
+        "name": "Montenegro",
+        "value": 34.3,
+        "display": "34.3",
+        "year": 2021,
+        "unit": "points",
+        "rank": 58
+      },
+      "MOZ": {
+        "name": "Mozambique",
+        "value": 49.6,
+        "display": "49.6",
+        "year": 2022,
+        "unit": "points",
+        "rank": 7
+      },
+      "NPL": {
+        "name": "Nepal",
+        "value": 30.0,
+        "display": "30",
+        "year": 2022,
+        "unit": "points",
+        "rank": 97
+      },
+      "NLD": {
+        "name": "Netherlands",
+        "value": 25.7,
+        "display": "25.7",
+        "year": 2021,
+        "unit": "points",
+        "rank": 117
+      },
+      "NER": {
+        "name": "Niger",
+        "value": 32.9,
+        "display": "32.9",
+        "year": 2021,
+        "unit": "points",
+        "rank": 76
+      },
+      "NGA": {
+        "name": "Nigeria",
+        "value": 33.9,
+        "display": "33.9",
+        "year": 2022,
+        "unit": "points",
+        "rank": 61
+      },
+      "MKD": {
+        "name": "North Macedonia",
+        "value": 33.5,
+        "display": "33.5",
+        "year": 2019,
+        "unit": "points",
+        "rank": 68
+      },
+      "NOR": {
+        "name": "Norway",
+        "value": 26.5,
+        "display": "26.5",
+        "year": 2023,
+        "unit": "points",
+        "rank": 115
+      },
+      "PAK": {
+        "name": "Pakistan",
+        "value": 33.5,
+        "display": "33.5",
+        "year": 2024,
+        "unit": "points",
+        "rank": 68
+      },
+      "PAN": {
+        "name": "Panama",
+        "value": 49.7,
+        "display": "49.7",
+        "year": 2024,
+        "unit": "points",
+        "rank": 6
+      },
+      "PRY": {
+        "name": "Paraguay",
+        "value": 44.2,
+        "display": "44.2",
+        "year": 2024,
+        "unit": "points",
+        "rank": 13
+      },
+      "PER": {
+        "name": "Peru",
+        "value": 40.1,
+        "display": "40.1",
+        "year": 2024,
+        "unit": "points",
+        "rank": 23
+      },
+      "PHL": {
+        "name": "Philippines",
+        "value": 39.3,
+        "display": "39.3",
+        "year": 2023,
+        "unit": "points",
+        "rank": 29
+      },
+      "POL": {
+        "name": "Poland",
+        "value": 28.5,
+        "display": "28.5",
+        "year": 2023,
+        "unit": "points",
+        "rank": 105
+      },
+      "PRT": {
+        "name": "Portugal",
+        "value": 33.9,
+        "display": "33.9",
+        "year": 2023,
+        "unit": "points",
+        "rank": 61
+      },
+      "ROU": {
+        "name": "Romania",
+        "value": 29.8,
+        "display": "29.8",
+        "year": 2023,
+        "unit": "points",
+        "rank": 99
+      },
+      "RUS": {
+        "name": "Russian Federation",
+        "value": 33.0,
+        "display": "33",
+        "year": 2023,
+        "unit": "points",
+        "rank": 75
+      },
+      "RWA": {
+        "name": "Rwanda",
+        "value": 39.4,
+        "display": "39.4",
+        "year": 2023,
+        "unit": "points",
+        "rank": 28
+      },
+      "SEN": {
+        "name": "Senegal",
+        "value": 36.2,
+        "display": "36.2",
+        "year": 2021,
+        "unit": "points",
+        "rank": 45
+      },
+      "SRB": {
+        "name": "Serbia",
+        "value": 32.8,
+        "display": "32.8",
+        "year": 2023,
+        "unit": "points",
+        "rank": 78
+      },
+      "SVK": {
+        "name": "Slovak Republic",
+        "value": 23.8,
+        "display": "23.8",
+        "year": 2023,
+        "unit": "points",
+        "rank": 123
+      },
+      "SVN": {
+        "name": "Slovenia",
+        "value": 24.7,
+        "display": "24.7",
+        "year": 2023,
+        "unit": "points",
+        "rank": 120
+      },
+      "ZAF": {
+        "name": "South Africa",
+        "value": 54.1,
+        "display": "54.1",
+        "year": 2022,
+        "unit": "points",
+        "rank": 2
+      },
+      "ESP": {
+        "name": "Spain",
+        "value": 33.4,
+        "display": "33.4",
+        "year": 2023,
+        "unit": "points",
+        "rank": 71
+      },
+      "LKA": {
+        "name": "Sri Lanka",
+        "value": 37.7,
+        "display": "37.7",
+        "year": 2019,
+        "unit": "points",
+        "rank": 39
+      },
+      "SUR": {
+        "name": "Suriname",
+        "value": 39.2,
+        "display": "39.2",
+        "year": 2022,
+        "unit": "points",
+        "rank": 30
+      },
+      "SWE": {
+        "name": "Sweden",
+        "value": 29.3,
+        "display": "29.3",
+        "year": 2023,
+        "unit": "points",
+        "rank": 102
+      },
+      "CHE": {
+        "name": "Switzerland",
+        "value": 33.5,
+        "display": "33.5",
+        "year": 2023,
+        "unit": "points",
+        "rank": 68
+      },
+      "SYR": {
+        "name": "Syrian Arab Republic",
+        "value": 26.4,
+        "display": "26.4",
+        "year": 2022,
+        "unit": "points",
+        "rank": 116
+      },
+      "TJK": {
+        "name": "Tajikistan",
+        "value": 36.1,
+        "display": "36.1",
+        "year": 2024,
+        "unit": "points",
+        "rank": 46
+      },
+      "THA": {
+        "name": "Thailand",
+        "value": 33.3,
+        "display": "33.3",
+        "year": 2024,
+        "unit": "points",
+        "rank": 74
+      },
+      "TGO": {
+        "name": "Togo",
+        "value": 37.9,
+        "display": "37.9",
+        "year": 2021,
+        "unit": "points",
+        "rank": 38
+      },
+      "TON": {
+        "name": "Tonga",
+        "value": 27.1,
+        "display": "27.1",
+        "year": 2021,
+        "unit": "points",
+        "rank": 111
+      },
+      "TUN": {
+        "name": "Tunisia",
+        "value": 33.7,
+        "display": "33.7",
+        "year": 2021,
+        "unit": "points",
+        "rank": 65
+      },
+      "TUR": {
+        "name": "Turkiye",
+        "value": 43.7,
+        "display": "43.7",
+        "year": 2023,
+        "unit": "points",
+        "rank": 14
+      },
+      "UGA": {
+        "name": "Uganda",
+        "value": 38.2,
+        "display": "38.2",
+        "year": 2023,
+        "unit": "points",
+        "rank": 37
+      },
+      "UKR": {
+        "name": "Ukraine",
+        "value": 25.6,
+        "display": "25.6",
+        "year": 2020,
+        "unit": "points",
+        "rank": 119
+      },
+      "GBR": {
+        "name": "United Kingdom",
+        "value": 32.4,
+        "display": "32.4",
+        "year": 2021,
+        "unit": "points",
+        "rank": 80
+      },
+      "USA": {
+        "name": "United States",
+        "value": 41.8,
+        "display": "41.8",
+        "year": 2024,
+        "unit": "points",
+        "rank": 20
+      },
+      "URY": {
+        "name": "Uruguay",
+        "value": 40.0,
+        "display": "40",
+        "year": 2024,
+        "unit": "points",
+        "rank": 24
+      },
+      "UZB": {
+        "name": "Uzbekistan",
+        "value": 32.7,
+        "display": "32.7",
+        "year": 2025,
+        "unit": "points",
+        "rank": 79
+      },
+      "VUT": {
+        "name": "Vanuatu",
+        "value": 32.3,
+        "display": "32.3",
+        "year": 2019,
+        "unit": "points",
+        "rank": 81
+      },
+      "VNM": {
+        "name": "Viet Nam",
+        "value": 36.1,
+        "display": "36.1",
+        "year": 2022,
+        "unit": "points",
+        "rank": 46
+      },
+      "PSE": {
+        "name": "West Bank and Gaza",
+        "value": 36.4,
+        "display": "36.4",
+        "year": 2023,
+        "unit": "points",
+        "rank": 44
+      },
+      "ZMB": {
+        "name": "Zambia",
+        "value": 51.5,
+        "display": "51.5",
+        "year": 2022,
+        "unit": "points",
+        "rank": 3
+      },
+      "ZWE": {
+        "name": "Zimbabwe",
+        "value": 50.3,
+        "display": "50.3",
+        "year": 2019,
+        "unit": "points",
+        "rank": 4
+      }
+    }
+  },
+  "review": {
+    "errors": [],
+    "claims": [
+      {
+        "surface": "title",
+        "text": "Places Ranked by Income Inequality",
+        "isos": [],
+        "support": "Universe contains 124 mapped countries and territories with data ranked by Gini index",
+        "evidence": {}
+      },
+      {
+        "surface": "hook",
+        "text": "WIDE GAPS",
+        "isos": [],
+        "support": "Gini index measures extent of deviation from perfect equality across economies",
+        "evidence": {}
+      },
+      {
+        "surface": "description",
+        "text": "A cinematic look at global income inequality using World Bank Gini index data.",
+        "isos": [],
+        "support": "World Bank, Poverty and Inequality Platform, SI.POV.GINI",
+        "evidence": {}
+      },
+      {
+        "surface": "beat_0",
+        "text": "Colombia has a Gini score of 54.4, while India reports 23.",
+        "isos": [
+          "COL",
+          "IND"
+        ],
+        "support": "Colombia value is 54.4 (rank 1), India value is 23 (rank 124)",
+        "evidence": {
+          "COL": {
+            "name": "Colombia",
+            "value": 54.4,
+            "display": "54.4",
+            "year": 2024,
+            "unit": "points",
+            "rank": 1
+          },
+          "IND": {
+            "name": "India",
+            "value": 23.0,
+            "display": "23",
+            "year": 2023,
+            "unit": "points",
+            "rank": 124
+          }
+        }
+      },
+      {
+        "surface": "beat_1",
+        "text": "Colombia hits 2.4 times India, a wide gap in income distribution.",
+        "isos": [
+          "COL",
+          "IND"
+        ],
+        "support": "Colombia is 54.4 and India is 23; 54.4 / 23 = 2.365 (approx 2.4)",
+        "evidence": {
+          "COL": {
+            "name": "Colombia",
+            "value": 54.4,
+            "display": "54.4",
+            "year": 2024,
+            "unit": "points",
+            "rank": 1
+          },
+          "IND": {
+            "name": "India",
+            "value": 23.0,
+            "display": "23",
+            "year": 2023,
+            "unit": "points",
+            "rank": 124
+          }
+        }
+      },
+      {
+        "surface": "beat_2",
+        "text": "Brazil sits at 50.3, more than double what India reports.",
+        "isos": [
+          "BRA",
+          "IND"
+        ],
+        "support": "Brazil value is 50.3 and India value is 23; 50.3 is more than double 23",
+        "evidence": {
+          "BRA": {
+            "name": "Brazil",
+            "value": 50.3,
+            "display": "50.3",
+            "year": 2024,
+            "unit": "points",
+            "rank": 4
+          },
+          "IND": {
+            "name": "India",
+            "value": 23.0,
+            "display": "23",
+            "year": 2023,
+            "unit": "points",
+            "rank": 124
+          }
+        }
+      },
+      {
+        "surface": "beat_3",
+        "text": "The USA is 41.8, and China stands at 36.",
+        "isos": [
+          "USA",
+          "CHN"
+        ],
+        "support": "United States value is 41.8, China value is 36",
+        "evidence": {
+          "USA": {
+            "name": "United States",
+            "value": 41.8,
+            "display": "41.8",
+            "year": 2024,
+            "unit": "points",
+            "rank": 20
+          },
+          "CHN": {
+            "name": "China",
+            "value": 36.0,
+            "display": "36",
+            "year": 2022,
+            "unit": "points",
+            "rank": 48
+          }
+        }
+      },
+      {
+        "surface": "beat_4",
+        "text": "Slovakia is 23.8, Slovenia 24.7, Ukraine 25.6, and the Netherlands 25.7.",
+        "isos": [
+          "SVK",
+          "SVN",
+          "UKR",
+          "NLD"
+        ],
+        "support": "Slovak Republic value is 23.8, Slovenia value is 24.7, Ukraine value is 25.6, Netherlands value is 25.7",
+        "evidence": {
+          "SVK": {
+            "name": "Slovak Republic",
+            "value": 23.8,
+            "display": "23.8",
+            "year": 2023,
+            "unit": "points",
+            "rank": 123
+          },
+          "SVN": {
+            "name": "Slovenia",
+            "value": 24.7,
+            "display": "24.7",
+            "year": 2023,
+            "unit": "points",
+            "rank": 120
+          },
+          "UKR": {
+            "name": "Ukraine",
+            "value": 25.6,
+            "display": "25.6",
+            "year": 2020,
+            "unit": "points",
+            "rank": 119
+          },
+          "NLD": {
+            "name": "Netherlands",
+            "value": 25.7,
+            "display": "25.7",
+            "year": 2021,
+            "unit": "points",
+            "rank": 117
+          }
+        }
+      },
+      {
+        "surface": "beat_5",
+        "text": "India hits 23, the lowest of all 124 countries and territories.",
+        "isos": [
+          "IND"
+        ],
+        "support": "India value is 23, rank 124 out of 124 in the universe",
+        "evidence": {
+          "IND": {
+            "name": "India",
+            "value": 23.0,
+            "display": "23",
+            "year": 2023,
+            "unit": "points",
+            "rank": 124
+          }
+        }
+      },
+      {
+        "surface": "beat_6",
+        "text": "How unequal is income in your country?",
+        "isos": [],
+        "support": "Gini index measures income distribution inequality",
+        "evidence": {}
+      },
+      {
+        "surface": "card_6",
+        "text": "What is your country? Income inequality (Gini index)",
+        "isos": [],
+        "support": "Gini index measures income distribution inequality",
+        "evidence": {}
+      },
+      {
+        "surface": "title",
+        "text": "Places Ranked by Income Inequality",
+        "isos": [],
+        "support": "Indicator is SI.POV.GINI representing income inequality rankings",
+        "method": "complete-surface-check",
+        "evidence": {}
+      },
+      {
+        "surface": "hook",
+        "text": "WIDE GAPS",
+        "isos": [],
+        "support": "Gini values range widely from 23 to 54.4",
+        "method": "complete-surface-check",
+        "evidence": {}
+      },
+      {
+        "surface": "description",
+        "text": "A cinematic look at global income inequality using World Bank Gini index data.",
+        "isos": [],
+        "support": "Matches World Bank SI.POV.GINI data source and definition",
+        "method": "complete-surface-check",
+        "evidence": {}
+      },
+      {
+        "surface": "beat_0",
+        "text": "Colombia has a Gini score of 54.4, while India reports 23.",
+        "isos": [
+          "COL",
+          "IND"
+        ],
+        "support": "Colombia value is 54.4 and India value is 23 in evidence",
+        "method": "complete-surface-check",
+        "evidence": {
+          "COL": {
+            "name": "Colombia",
+            "value": 54.4,
+            "display": "54.4",
+            "year": 2024,
+            "unit": "points",
+            "rank": 1
+          },
+          "IND": {
+            "name": "India",
+            "value": 23.0,
+            "display": "23",
+            "year": 2023,
+            "unit": "points",
+            "rank": 124
+          }
+        }
+      },
+      {
+        "surface": "beat_1",
+        "text": "Colombia hits 2.4 times India, a wide gap in income distribution.",
+        "isos": [
+          "COL",
+          "IND"
+        ],
+        "support": "54.4 is approximately 2.4 times 23",
+        "method": "complete-surface-check",
+        "evidence": {
+          "COL": {
+            "name": "Colombia",
+            "value": 54.4,
+            "display": "54.4",
+            "year": 2024,
+            "unit": "points",
+            "rank": 1
+          },
+          "IND": {
+            "name": "India",
+            "value": 23.0,
+            "display": "23",
+            "year": 2023,
+            "unit": "points",
+            "rank": 124
+          }
+        }
+      },
+      {
+        "surface": "beat_2",
+        "text": "Brazil sits at 50.3, more than double what India reports.",
+        "isos": [
+          "BRA",
+          "IND"
+        ],
+        "support": "Brazil is 50.3, which is more than double India's 23",
+        "method": "complete-surface-check",
+        "evidence": {
+          "BRA": {
+            "name": "Brazil",
+            "value": 50.3,
+            "display": "50.3",
+            "year": 2024,
+            "unit": "points",
+            "rank": 4
+          },
+          "IND": {
+            "name": "India",
+            "value": 23.0,
+            "display": "23",
+            "year": 2023,
+            "unit": "points",
+            "rank": 124
+          }
+        }
+      },
+      {
+        "surface": "beat_3",
+        "text": "The USA is 41.8, and China stands at 36.",
+        "isos": [
+          "USA",
+          "CHN"
+        ],
+        "support": "USA is 41.8 and China is 36 in evidence",
+        "method": "complete-surface-check",
+        "evidence": {
+          "USA": {
+            "name": "United States",
+            "value": 41.8,
+            "display": "41.8",
+            "year": 2024,
+            "unit": "points",
+            "rank": 20
+          },
+          "CHN": {
+            "name": "China",
+            "value": 36.0,
+            "display": "36",
+            "year": 2022,
+            "unit": "points",
+            "rank": 48
+          }
+        }
+      },
+      {
+        "surface": "beat_4",
+        "text": "Slovakia is 23.8, Slovenia 24.7, Ukraine 25.6, and the Netherlands 25.7.",
+        "isos": [
+          "SVK",
+          "SVN",
+          "UKR",
+          "NLD"
+        ],
+        "support": "Slovakia is 23.8, Slovenia is 24.7, Ukraine is 25.6, Netherlands is 25.7",
+        "method": "complete-surface-check",
+        "evidence": {
+          "SVK": {
+            "name": "Slovak Republic",
+            "value": 23.8,
+            "display": "23.8",
+            "year": 2023,
+            "unit": "points",
+            "rank": 123
+          },
+          "SVN": {
+            "name": "Slovenia",
+            "value": 24.7,
+            "display": "24.7",
+            "year": 2023,
+            "unit": "points",
+            "rank": 120
+          },
+          "UKR": {
+            "name": "Ukraine",
+            "value": 25.6,
+            "display": "25.6",
+            "year": 2020,
+            "unit": "points",
+            "rank": 119
+          },
+          "NLD": {
+            "name": "Netherlands",
+            "value": 25.7,
+            "display": "25.7",
+            "year": 2021,
+            "unit": "points",
+            "rank": 117
+          }
+        }
+      },
+      {
+        "surface": "beat_5",
+        "text": "India hits 23, the lowest of all 124 countries and territories.",
+        "isos": [
+          "IND"
+        ],
+        "support": "India is 23, ranked 124 out of 124 entities",
+        "method": "complete-surface-check",
+        "evidence": {
+          "IND": {
+            "name": "India",
+            "value": 23.0,
+            "display": "23",
+            "year": 2023,
+            "unit": "points",
+            "rank": 124
+          }
+        }
+      },
+      {
+        "surface": "beat_6",
+        "text": "How unequal is income in your country?",
+        "isos": [],
+        "support": "Valid stylistic question framing about income inequality",
+        "method": "complete-surface-check",
+        "evidence": {}
+      },
+      {
+        "surface": "card_6",
+        "text": [
+          "What is your country?",
+          "Income inequality (Gini index)"
+        ],
+        "isos": [],
+        "support": "Accurately reflects indicator name and topic",
+        "method": "complete-surface-check",
+        "evidence": {}
+      }
+    ],
+    "surface_checks": {
+      "title": {
+        "supported": true,
+        "reason": "Indicator is SI.POV.GINI representing income inequality rankings",
+        "isos": []
+      },
+      "hook": {
+        "supported": true,
+        "reason": "Gini values range widely from 23 to 54.4",
+        "isos": []
+      },
+      "description": {
+        "supported": true,
+        "reason": "Matches World Bank SI.POV.GINI data source and definition",
+        "isos": []
+      },
+      "beat_0": {
+        "supported": true,
+        "reason": "Colombia value is 54.4 and India value is 23 in evidence",
+        "isos": [
+          "COL",
+          "IND"
+        ]
+      },
+      "beat_1": {
+        "supported": true,
+        "reason": "54.4 is approximately 2.4 times 23",
+        "isos": [
+          "COL",
+          "IND"
+        ]
+      },
+      "beat_2": {
+        "supported": true,
+        "reason": "Brazil is 50.3, which is more than double India's 23",
+        "isos": [
+          "BRA",
+          "IND"
+        ]
+      },
+      "beat_3": {
+        "supported": true,
+        "reason": "USA is 41.8 and China is 36 in evidence",
+        "isos": [
+          "USA",
+          "CHN"
+        ]
+      },
+      "beat_4": {
+        "supported": true,
+        "reason": "Slovakia is 23.8, Slovenia is 24.7, Ukraine is 25.6, Netherlands is 25.7",
+        "isos": [
+          "SVK",
+          "SVN",
+          "UKR",
+          "NLD"
+        ]
+      },
+      "beat_5": {
+        "supported": true,
+        "reason": "India is 23, ranked 124 out of 124 entities",
+        "isos": [
+          "IND"
+        ]
+      },
+      "beat_6": {
+        "supported": true,
+        "reason": "Valid stylistic question framing about income inequality",
+        "isos": []
+      },
+      "card_6": {
+        "supported": true,
+        "reason": "Accurately reflects indicator name and topic",
+        "isos": []
+      }
+    },
+    "warnings": []
+  },
+  "script_sha256": "450e05804482d7e8157669c5692e43c58075bf8209a96e00c05809831fe36a52",
+  "data_sha256": "2d5ccf80cd893c026efde459d5c72fed5ac66cc8f809377d171b53a7ebf4b594",
+  "reviewer_model": "gemini-3.5-flash-lite"
+}

@@ -1,0 +1,116 @@
+{
+  "errors": [],
+  "claims": [
+    {
+      "surface": "beat_0",
+      "text": "Over a quarter of Japanese men are 65 and older. In Qatar, it is 1.5 percent.",
+      "isos": [
+        "JPN",
+        "QAT"
+      ],
+      "support": "Japan value is 27.0550965731269 (display 27.1%), Qatar value is 1.45300366501282 (display 1.5%)"
+    },
+    {
+      "surface": "beat_1",
+      "text": "Japan hits 27.1 percent. India has 6.8 percent.",
+      "isos": [
+        "JPN",
+        "IND"
+      ],
+      "support": "Japan display 27.1%, India value is 6.81260308190019 (display 6.8%)"
+    },
+    {
+      "surface": "beat_2",
+      "text": "The US hits 16.8 percent, and Germany counts 21.3 percent.",
+      "isos": [
+        "USA",
+        "DEU"
+      ],
+      "support": "USA display 16.8%, Germany display 21.3%"
+    },
+    {
+      "surface": "beat_3",
+      "text": "Italy counts 22.7 percent.",
+      "isos": [
+        "ITA"
+      ],
+      "support": "Italy display 22.7%"
+    },
+    {
+      "surface": "beat_4",
+      "text": "Qatar ends the list at 1.5 percent.",
+      "isos": [
+        "QAT"
+      ],
+      "support": "Qatar display 1.5%, rank 208"
+    }
+  ],
+  "surface_checks": {
+    "title": {
+      "supported": true,
+      "reason": "Stylistic framing for indicator SP.POP.65UP.MA.ZS",
+      "isos": []
+    },
+    "hook": {
+      "supported": true,
+      "reason": "Stylistic hook reflecting indicator disparities",
+      "isos": []
+    },
+    "description": {
+      "supported": true,
+      "reason": "Accurately describes indicator SP.POP.65UP.MA.ZS and compares Japan and Qatar",
+      "isos": [
+        "JPN",
+        "QAT"
+      ]
+    },
+    "beat_0": {
+      "supported": true,
+      "reason": "Japan is 27.1% (over a quarter) and Qatar is 1.5%",
+      "isos": [
+        "JPN",
+        "QAT"
+      ]
+    },
+    "beat_1": {
+      "supported": true,
+      "reason": "Japan is 27.1% and India is 6.8%",
+      "isos": [
+        "JPN",
+        "IND"
+      ]
+    },
+    "beat_2": {
+      "supported": true,
+      "reason": "USA is 16.8% and Germany is 21.3%",
+      "isos": [
+        "USA",
+        "DEU"
+      ]
+    },
+    "beat_3": {
+      "supported": true,
+      "reason": "Italy is 22.7%",
+      "isos": [
+        "ITA"
+      ]
+    },
+    "beat_4": {
+      "supported": true,
+      "reason": "Qatar is 1.5%",
+      "isos": [
+        "QAT"
+      ]
+    },
+    "beat_5": {
+      "supported": true,
+      "reason": "Matches card_5 question",
+      "isos": []
+    },
+    "card_5": {
+      "supported": true,
+      "reason": "Accurately reflects source, indicator, and year 2025",
+      "isos": []
+    }
+  }
+}

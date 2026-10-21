@@ -1802,7 +1802,7 @@
     "#finance"
    ],
    "source_url": "https://data.worldbank.org/indicator/FB.CBK.BRCH.P5",
-   "status": "ready:atlas075",
+   "status": "used:atlas075",
    "added_by": "refill"
   },
   {
@@ -2754,7 +2754,7 @@
    "id": "t079",
    "topic": "Income Inequality Around the World",
    "angle": "While Colombia and South Africa record Gini scores exceeding 54, nations such as the Slovak Republic and India report some of the lowest inequality at 24 or below.",
-   "format": "map_reveal",
+   "format": "rank_ladder",
    "dataset": {
     "kind": "worldbank",
     "indicator": "SI.POV.GINI",
@@ -2784,7 +2784,7 @@
     "#maps','#geography','#mapsofinstagram"
    ],
    "source_url": "https://data.worldbank.org/indicator/SI.POV.GINI",
-   "status": "open",
+   "status": "ready:atlas081",
    "added_by": "refill"
   },
   {
@@ -2957,6 +2957,365 @@
    "source_url": "https://data.worldbank.org/indicator/NV.MNF.FBTO.ZS.UN",
    "status": "open",
    "added_by": "refill"
+  },
+  {
+   "id": "t085",
+   "topic": "Comparing Average Wealth Around the Globe",
+   "angle": "The global economic output per person varies dramatically, with top economies exceeding 160 thousand international dollars while the lowest remain under 2 thousand.",
+   "format": "map_reveal",
+   "dataset": {
+    "kind": "worldbank",
+    "indicator": "NY.GDP.PCAP.PP.CD",
+    "label": "GDP per capita, PPP",
+    "unit": "international dollars",
+    "source": "World Bank",
+    "min_year": 2019
+   },
+   "scale": {
+    "kind": "bins",
+    "edges": [
+     5000,
+     20000,
+     50000,
+     100000
+    ],
+    "labels": [
+     "Under $5k",
+     "$5k to $20k",
+     "$20k to $50k",
+     "$50k to $100k",
+     "Over $100k"
+    ]
+   },
+   "value_format": "${v:,.0f}",
+   "hashtags": [
+    "#maps",
+    "#geography",
+    "#economy"
+   ],
+   "source_url": "https://data.worldbank.org/indicator/NY.GDP.PCAP.PP.CD",
+   "status": "open",
+   "added_by": "refill"
+  },
+  {
+   "id": "t086",
+   "topic": "Global Purchasing Power Parity Income",
+   "angle": "The average material well-being in the highest-income nation exceeds one hundred thirty thousand international dollars.",
+   "format": "map_reveal",
+   "dataset": {
+    "kind": "worldbank",
+    "indicator": "NY.GNP.PCAP.PP.CD",
+    "label": "GNI per capita, PPP",
+    "unit": "international $",
+    "source": "World Bank",
+    "min_year": 2019
+   },
+   "scale": {
+    "kind": "threshold",
+    "at": 20000,
+    "labels": [
+     "Above median",
+     "Below median"
+    ]
+   },
+   "value_format": "${v:,.0f}",
+   "hashtags": [
+    "#maps",
+    "#geography",
+    "#economics"
+   ],
+   "source_url": "https://data.worldbank.org/indicator/NY.GNP.PCAP.PP.CD",
+   "status": "open",
+   "added_by": "refill"
+  },
+  {
+   "id": "t087",
+   "topic": "The Cheapest Countries in the World",
+   "angle": "In some countries, buying the same basket of goods costs nearly ten times less than in others, with Nigeria having a price level index of just 12.8 compared to the US baseline of 100.",
+   "format": "rank_ladder",
+   "dataset": {
+    "kind": "worldbank",
+    "indicator": "PA.NUS.GDP.PLI",
+    "label": "Price level index relative to the US",
+    "unit": "index",
+    "source": "World Bank",
+    "min_year": 2019
+   },
+   "scale": {
+    "kind": "bins",
+    "edges": [
+     30,
+     50,
+     75,
+     100
+    ],
+    "labels": [
+     "Extremely cheap",
+     "Below average",
+     "Moderate",
+     "High",
+     "US level or higher"
+    ]
+   },
+   "value_format": "{v:.1f}",
+   "hashtags": [
+    "#maps",
+    "#geography",
+    "#economics"
+   ],
+   "source_url": "https://data.worldbank.org/indicator/PA.NUS.GDP.PLI",
+   "status": "failed:RuntimeError",
+   "added_by": "refill"
+  },
+  {
+   "id": "t088",
+   "topic": "Half of the population in youngest nations",
+   "angle": "In some countries nearly half of all residents are under the age of 15, while in others the share drops to barely ten percent.",
+   "format": "map_reveal",
+   "dataset": {
+    "kind": "worldbank",
+    "indicator": "SP.POP.0014.TO.ZS",
+    "label": "Population aged 0 to 14",
+    "unit": "%",
+    "source": "World Bank",
+    "min_year": 2019
+   },
+   "scale": {
+    "kind": "bins",
+    "edges": [
+     15,
+     25,
+     35,
+     45
+    ],
+    "labels": [
+     "Under 15%",
+     "15% to 25%",
+     "25% to 35%",
+     "35% to 45%",
+     "Over 45%"
+    ]
+   },
+   "value_format": "{v:.1f}%",
+   "hashtags": [
+    "#maps",
+    "#geography",
+    "#population"
+   ],
+   "source_url": "https://data.worldbank.org/indicator/SP.POP.0014.TO.ZS",
+   "status": "failed:RuntimeError",
+   "added_by": "refill"
+  },
+  {
+   "id": "t089",
+   "topic": "The Grey Divide in Male Population",
+   "angle": "While some nations see over a quarter of their men aged 65 and older, others have fewer than two percent.",
+   "format": "map_reveal",
+   "dataset": {
+    "kind": "worldbank",
+    "indicator": "SP.POP.65UP.MA.ZS",
+    "label": "Share of men aged 65 and above",
+    "unit": "%",
+    "source": "World Bank",
+    "min_year": 2019
+   },
+   "scale": {
+    "kind": "bins",
+    "edges": [
+     5.0,
+     10.0,
+     15.0,
+     20.0
+    ],
+    "labels": [
+     "Under 5%",
+     "5 to 10%",
+     "10 to 15%",
+     "15 to 20%",
+     "Over 20%"
+    ]
+   },
+   "value_format": "{v:.1f}%",
+   "hashtags": [
+    "#maps",
+    "#geography",
+    "#population"
+   ],
+   "source_url": "https://data.worldbank.org/indicator/SP.POP.65UP.MA.ZS",
+   "status": "ready:atlas083",
+   "added_by": "refill"
+  },
+  {
+   "id": "t090",
+   "topic": "Megacity Populations Around The World",
+   "angle": "Over twenty percent of the global population lives in giant urban areas with over one million residents.",
+   "format": "rank_ladder",
+   "dataset": {
+    "kind": "worldbank",
+    "indicator": "EN.URB.MCTY.TL.ZS",
+    "label": "Population in urban areas >1M",
+    "unit": "%",
+    "source": "World Bank",
+    "min_year": 2019
+   },
+   "scale": {
+    "kind": "bins",
+    "edges": [
+     10.0,
+     25.0,
+     50.0,
+     75.0
+    ],
+    "labels": [
+     "Under 10%",
+     "10% to 25%",
+     "25% to 50%",
+     "50% to 75%",
+     "Over 75%"
+    ]
+   },
+   "value_format": "{v:.1f}%",
+   "hashtags": [
+    "#maps",
+    "#geography",
+    "#population"
+   ],
+   "source_url": "https://data.worldbank.org/indicator/EN.URB.MCTY.TL.ZS",
+   "status": "ready:atlas078",
+   "added_by": "refill"
+  },
+  {
+   "id": "t091",
+   "topic": "Rapid Urban Growth Across Developing Nations",
+   "angle": "While some tiny territories shrink drastically, several African nations see their urban populations expand by over five percent annually.",
+   "format": "map_reveal",
+   "dataset": {
+    "kind": "worldbank",
+    "indicator": "SP.URB.GROW",
+    "label": "Annual urban population growth",
+    "unit": "%",
+    "source": "World Bank",
+    "min_year": 2019
+   },
+   "scale": {
+    "kind": "threshold",
+    "at": 2.0,
+    "labels": [
+     "Fast-growing urban areas",
+     "Slow growth or shrinking"
+    ]
+   },
+   "value_format": "{v:.1f}%",
+   "hashtags": [
+    "#maps",
+    "#geography",
+    "#population"
+   ],
+   "source_url": "https://data.worldbank.org/indicator/SP.URB.GROW",
+   "status": "open",
+   "added_by": "refill"
+  },
+  {
+   "id": "t092",
+   "topic": "Hectares of Arable Land Per Person",
+   "angle": "Kazakhstan leads the world with over one and a half hectares of arable land per person, while densely populated hubs like Singapore have virtually none.",
+   "format": "map_reveal",
+   "dataset": {
+    "kind": "worldbank",
+    "indicator": "AG.LND.ARBL.HA.PC",
+    "label": "Arable land per person",
+    "unit": "hectares",
+    "source": "World Bank",
+    "min_year": 2019
+   },
+   "scale": {
+    "kind": "threshold",
+    "at": 0.2,
+    "labels": [
+     "High cropland per capita",
+     "Low cropland per capita"
+    ]
+   },
+   "value_format": "{v:.2f} ha",
+   "hashtags": [
+    "#maps",
+    "#geography",
+    "#agriculture"
+   ],
+   "source_url": "https://data.worldbank.org/indicator/AG.LND.ARBL.HA.PC",
+   "status": "ready:atlas079",
+   "added_by": "refill"
+  },
+  {
+   "id": "t093",
+   "topic": "Countries extracting more water than available",
+   "angle": "Some nations have annual freshwater withdrawals exceeding 100 percent of their total internal resources due to heavy desalination and nonrenewable aquifer extraction.",
+   "format": "rank_ladder",
+   "dataset": {
+    "kind": "worldbank",
+    "indicator": "ER.H2O.FWTL.ZS",
+    "label": "Annual freshwater withdrawal share",
+    "unit": "%",
+    "source": "World Bank",
+    "min_year": 2019
+   },
+   "scale": {
+    "kind": "threshold",
+    "at": 100,
+    "labels": [
+     "Over 100% of resources",
+     "Under 100% of resources"
+    ]
+   },
+   "value_format": "{v:.0f}%",
+   "hashtags": [
+    "#maps",
+    "#geography",
+    "#water"
+   ],
+   "source_url": "https://data.worldbank.org/indicator/ER.H2O.FWTL.ZS",
+   "status": "open",
+   "added_by": "refill"
+  },
+  {
+   "id": "t094",
+   "topic": "The islands dominating global secure servers",
+   "angle": "Small financial and offshore hubs outpace traditional tech nations by millions in secure internet infrastructure.",
+   "format": "map_reveal",
+   "dataset": {
+    "kind": "worldbank",
+    "indicator": "IT.NET.SECR.P6",
+    "label": "Secure internet servers per 1M",
+    "unit": "per 1M people",
+    "source": "World Bank",
+    "min_year": 2019
+   },
+   "scale": {
+    "kind": "bins",
+    "edges": [
+     100,
+     1000,
+     10000,
+     100000
+    ],
+    "labels": [
+     "Under 100",
+     "100 to 1,000",
+     "1k to 10k",
+     "10k to 100k",
+     "Over 100k"
+    ]
+   },
+   "value_format": "{v:,.0f}",
+   "hashtags": [
+    "#maps",
+    "#geography",
+    "#technology"
+   ],
+   "source_url": "https://data.worldbank.org/indicator/IT.NET.SECR.P6",
+   "status": "open",
+   "added_by": "refill"
   }
- ]
+ ],
+ "refilled_at": "2026-10-21T19:53:16+00:00"
 }

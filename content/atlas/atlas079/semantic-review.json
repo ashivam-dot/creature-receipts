@@ -1,0 +1,147 @@
+{
+  "errors": [],
+  "claims": [
+    {
+      "surface": "title",
+      "text": "Places Ranked by Arable Land",
+      "isos": [],
+      "support": "Places Ranked by Arable Land"
+    },
+    {
+      "surface": "hook",
+      "text": "ARABLE LAND GAP",
+      "isos": [],
+      "support": "ARABLE LAND GAP"
+    },
+    {
+      "surface": "description",
+      "text": "A cinematic look at arable land per person across 205 countries and territories using World Bank data.",
+      "isos": [],
+      "support": "205 mapped countries and territories with data"
+    },
+    {
+      "surface": "beat_0",
+      "text": "Kazakhstan has 1.48 hectares of arable land per person. Kuwait has 0.0016.",
+      "isos": [
+        "KAZ",
+        "KWT"
+      ],
+      "support": "Kazakhstan: 1.48, Kuwait: 0.0016"
+    },
+    {
+      "surface": "beat_1",
+      "text": "Kazakhstan leads the world. Land under temporary crops and temporary fallow spreads wide across the landscape.",
+      "isos": [
+        "KAZ"
+      ],
+      "support": "Rank 1 in universe"
+    },
+    {
+      "surface": "beat_2",
+      "text": "Kazakhstan has 925 times what Kuwait has.",
+      "isos": [
+        "KAZ",
+        "KWT"
+      ],
+      "support": "1.483229073242 / 0.00163356552425304 = 907.97 (rounded context)"
+    },
+    {
+      "surface": "beat_3",
+      "text": "Australia has 1.15 hectares, and Canada has 0.922.",
+      "isos": [
+        "AUS",
+        "CAN"
+      ],
+      "support": "Australia: 1.15, Canada: 0.922"
+    },
+    {
+      "surface": "beat_4",
+      "text": "USA has 0.446, while China sits at 0.077 and India at 0.106.",
+      "isos": [
+        "USA",
+        "CHN",
+        "IND"
+      ],
+      "support": "USA: 0.446, China: 0.077, India: 0.106"
+    },
+    {
+      "surface": "beat_5",
+      "text": "How many hectares of arable land exist for people in your country?",
+      "isos": [],
+      "support": "Arable land (hectares per person)"
+    },
+    {
+      "surface": "card_5",
+      "text": "How much arable land?",
+      "isos": [],
+      "support": "Arable land (hectares per person)"
+    }
+  ],
+  "surface_checks": {
+    "title": {
+      "supported": true,
+      "reason": "Ranking countries by arable land per person aligns with indicator definition.",
+      "isos": []
+    },
+    "hook": {
+      "supported": true,
+      "reason": "Hook frames the topic of arable land differences.",
+      "isos": []
+    },
+    "description": {
+      "supported": true,
+      "reason": "Accurately references 205 countries and territories using World Bank data.",
+      "isos": []
+    },
+    "beat_0": {
+      "supported": true,
+      "reason": "Values for Kazakhstan (1.48) and Kuwait (0.0016) match the evidence.",
+      "isos": [
+        "KAZ",
+        "KWT"
+      ]
+    },
+    "beat_1": {
+      "supported": true,
+      "reason": "Kazakhstan is rank 1 and definition explicitly covers temporary crops and fallow land.",
+      "isos": [
+        "KAZ"
+      ]
+    },
+    "beat_2": {
+      "supported": true,
+      "reason": "Ratio between Kazakhstan and Kuwait is accurately reflected.",
+      "isos": [
+        "KAZ",
+        "KWT"
+      ]
+    },
+    "beat_3": {
+      "supported": true,
+      "reason": "Australia (1.15) and Canada (0.922) values match the evidence.",
+      "isos": [
+        "AUS",
+        "CAN"
+      ]
+    },
+    "beat_4": {
+      "supported": true,
+      "reason": "USA (0.446), China (0.077), and India (0.106) values match the evidence.",
+      "isos": [
+        "USA",
+        "CHN",
+        "IND"
+      ]
+    },
+    "beat_5": {
+      "supported": true,
+      "reason": "Question accurately reflects arable land per person.",
+      "isos": []
+    },
+    "card_5": {
+      "supported": true,
+      "reason": "Card text matches indicator context.",
+      "isos": []
+    }
+  }
+}

@@ -1,0 +1,150 @@
+{
+  "errors": [
+    {
+      "surface": "beat_2",
+      "claim": "Kuwait has 16 times Ethiopia.",
+      "reason": "Kuwait's value (69.99%) divided by Ethiopia's value (4.40%) is approximately 15.9, but the claim is an informal multiplier statement. Wait, 70 / 4.4 is 15.9, which rounds to 16, so it is mathematically supported. Let's check if there are other errors. Ah, beat_2 says Kuwait has 16 times Ethiopia, but Ethiopia's percentage is 4.4% and Kuwait is 70%. 70 / 4.4 = 15.9, which is 16 times. Wait, let's look at beat_4: Ethiopia is the lowest at 4.4%. Let's check rank for Ethiopia: 121 out of 121, so it is the lowest. Is there any actual error? Let's check beat_2 again. Kuwait has 70% and Ethiopia has 4.4%. 70/4.4 = 15.91. So 16 times is correct. Let's check if there are any errors at all. Wait, are all claims supported? Let's verify every single one.",
+      "severity": "info"
+    }
+  ],
+  "claims": [
+    {
+      "surface": "title",
+      "text": "Places Ranked by Megacity Populations",
+      "isos": [],
+      "support": "Indicator EN.URB.MCTY.TL.ZS measures population in urban agglomerations of more than one million as a percentage of population."
+    },
+    {
+      "surface": "hook",
+      "text": "MASSIVE URBAN HUBS",
+      "isos": [],
+      "support": "Indicator definition refers to urban agglomerations of more than one million."
+    },
+    {
+      "surface": "description",
+      "text": "Population in urban areas over one million as a percentage of the total country population.",
+      "isos": [],
+      "support": "Population in urban agglomerations of more than one million is the percentage of a country's population living in metropolitan areas that in 2018 had a population of more than one million people."
+    },
+    {
+      "surface": "beat_0",
+      "text": "Japan hits 65.6% in massive urban hubs. In Ethiopia, it is 4.4%.",
+      "isos": [
+        "JPN",
+        "ETH"
+      ],
+      "support": "Japan value is 65.6076937239824 (65.6%), Ethiopia value is 4.39698000881377 (4.4%)."
+    },
+    {
+      "surface": "beat_1",
+      "text": "Kuwait hits 70%, one of the highest on Earth.",
+      "isos": [
+        "KWT"
+      ],
+      "support": "Kuwait value is 69.9853328614198 (70%), rank 4 out of 121."
+    },
+    {
+      "surface": "beat_2",
+      "text": "Kuwait has 16 times Ethiopia.",
+      "isos": [
+        "KWT",
+        "ETH"
+      ],
+      "support": "Kuwait is 70% and Ethiopia is 4.4%, 70 / 4.4 = 15.91 (approx 16)."
+    },
+    {
+      "surface": "beat_3",
+      "text": "USA stands at 47% and China at 32.7%.",
+      "isos": [
+        "USA",
+        "CHN"
+      ],
+      "support": "United States value is 47.0433053738247 (47%), China value is 32.7149816043822 (32.7%)."
+    },
+    {
+      "surface": "beat_4",
+      "text": "The lowest of all 121? Ethiopia rests at 4.4%.",
+      "isos": [
+        "ETH"
+      ],
+      "support": "Ethiopia rank is 121 (last of 121 countries/territories) with a value of 4.39698000881377 (4.4%)."
+    },
+    {
+      "surface": "beat_5",
+      "text": "How many live in a megacity near you?",
+      "isos": [],
+      "support": "Style question framing."
+    },
+    {
+      "surface": "card_5",
+      "text": "Where do you live? World Bank 2025",
+      "isos": [],
+      "support": "Source attribution and title card."
+    }
+  ],
+  "surface_checks": {
+    "title": {
+      "supported": true,
+      "reason": "Accurately reflects indicator EN.URB.MCTY.TL.ZS.",
+      "isos": []
+    },
+    "hook": {
+      "supported": true,
+      "reason": "Matches the focus on urban agglomerations over one million.",
+      "isos": []
+    },
+    "description": {
+      "supported": true,
+      "reason": "Directly matches the provided definition from the World Bank source.",
+      "isos": []
+    },
+    "beat_0": {
+      "supported": true,
+      "reason": "Japan's value is 65.6% and Ethiopia's value is 4.4% in the dataset.",
+      "isos": [
+        "JPN",
+        "ETH"
+      ]
+    },
+    "beat_1": {
+      "supported": true,
+      "reason": "Kuwait's value is 70% (rank 4), making it one of the highest.",
+      "isos": [
+        "KWT"
+      ]
+    },
+    "beat_2": {
+      "supported": true,
+      "reason": "The ratio between Kuwait (70%) and Ethiopia (4.4%) is approximately 16.",
+      "isos": [
+        "KWT",
+        "ETH"
+      ]
+    },
+    "beat_3": {
+      "supported": true,
+      "reason": "USA value is 47% and China value is 32.7% in the dataset.",
+      "isos": [
+        "USA",
+        "CHN"
+      ]
+    },
+    "beat_4": {
+      "supported": true,
+      "reason": "Ethiopia is ranked 121 out of 121 with 4.4%, making it the lowest.",
+      "isos": [
+        "ETH"
+      ]
+    },
+    "beat_5": {
+      "supported": true,
+      "reason": "Standard concluding stylistic question.",
+      "isos": []
+    },
+    "card_5": {
+      "supported": true,
+      "reason": "Accurately cites source and year label from metadata.",
+      "isos": []
+    }
+  }
+}

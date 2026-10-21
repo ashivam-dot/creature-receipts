@@ -1,0 +1,166 @@
+{
+  "errors": [],
+  "claims": [
+    {
+      "surface": "title",
+      "text": "Places Ranked by Income Inequality",
+      "isos": [],
+      "support": "Universe contains 124 mapped countries and territories with data ranked by Gini index"
+    },
+    {
+      "surface": "hook",
+      "text": "WIDE GAPS",
+      "isos": [],
+      "support": "Gini index measures extent of deviation from perfect equality across economies"
+    },
+    {
+      "surface": "description",
+      "text": "A cinematic look at global income inequality using World Bank Gini index data.",
+      "isos": [],
+      "support": "World Bank, Poverty and Inequality Platform, SI.POV.GINI"
+    },
+    {
+      "surface": "beat_0",
+      "text": "Colombia has a Gini score of 54.4, while India reports 23.",
+      "isos": [
+        "COL",
+        "IND"
+      ],
+      "support": "Colombia value is 54.4 (rank 1), India value is 23 (rank 124)"
+    },
+    {
+      "surface": "beat_1",
+      "text": "Colombia hits 2.4 times India, a wide gap in income distribution.",
+      "isos": [
+        "COL",
+        "IND"
+      ],
+      "support": "Colombia is 54.4 and India is 23; 54.4 / 23 = 2.365 (approx 2.4)"
+    },
+    {
+      "surface": "beat_2",
+      "text": "Brazil sits at 50.3, more than double what India reports.",
+      "isos": [
+        "BRA",
+        "IND"
+      ],
+      "support": "Brazil value is 50.3 and India value is 23; 50.3 is more than double 23"
+    },
+    {
+      "surface": "beat_3",
+      "text": "The USA is 41.8, and China stands at 36.",
+      "isos": [
+        "USA",
+        "CHN"
+      ],
+      "support": "United States value is 41.8, China value is 36"
+    },
+    {
+      "surface": "beat_4",
+      "text": "Slovakia is 23.8, Slovenia 24.7, Ukraine 25.6, and the Netherlands 25.7.",
+      "isos": [
+        "SVK",
+        "SVN",
+        "UKR",
+        "NLD"
+      ],
+      "support": "Slovak Republic value is 23.8, Slovenia value is 24.7, Ukraine value is 25.6, Netherlands value is 25.7"
+    },
+    {
+      "surface": "beat_5",
+      "text": "India hits 23, the lowest of all 124 countries and territories.",
+      "isos": [
+        "IND"
+      ],
+      "support": "India value is 23, rank 124 out of 124 in the universe"
+    },
+    {
+      "surface": "beat_6",
+      "text": "How unequal is income in your country?",
+      "isos": [],
+      "support": "Gini index measures income distribution inequality"
+    },
+    {
+      "surface": "card_6",
+      "text": "What is your country? Income inequality (Gini index)",
+      "isos": [],
+      "support": "Gini index measures income distribution inequality"
+    }
+  ],
+  "surface_checks": {
+    "title": {
+      "supported": true,
+      "reason": "Indicator is SI.POV.GINI representing income inequality rankings",
+      "isos": []
+    },
+    "hook": {
+      "supported": true,
+      "reason": "Gini values range widely from 23 to 54.4",
+      "isos": []
+    },
+    "description": {
+      "supported": true,
+      "reason": "Matches World Bank SI.POV.GINI data source and definition",
+      "isos": []
+    },
+    "beat_0": {
+      "supported": true,
+      "reason": "Colombia value is 54.4 and India value is 23 in evidence",
+      "isos": [
+        "COL",
+        "IND"
+      ]
+    },
+    "beat_1": {
+      "supported": true,
+      "reason": "54.4 is approximately 2.4 times 23",
+      "isos": [
+        "COL",
+        "IND"
+      ]
+    },
+    "beat_2": {
+      "supported": true,
+      "reason": "Brazil is 50.3, which is more than double India's 23",
+      "isos": [
+        "BRA",
+        "IND"
+      ]
+    },
+    "beat_3": {
+      "supported": true,
+      "reason": "USA is 41.8 and China is 36 in evidence",
+      "isos": [
+        "USA",
+        "CHN"
+      ]
+    },
+    "beat_4": {
+      "supported": true,
+      "reason": "Slovakia is 23.8, Slovenia is 24.7, Ukraine is 25.6, Netherlands is 25.7",
+      "isos": [
+        "SVK",
+        "SVN",
+        "UKR",
+        "NLD"
+      ]
+    },
+    "beat_5": {
+      "supported": true,
+      "reason": "India is 23, ranked 124 out of 124 entities",
+      "isos": [
+        "IND"
+      ]
+    },
+    "beat_6": {
+      "supported": true,
+      "reason": "Valid stylistic question framing about income inequality",
+      "isos": []
+    },
+    "card_6": {
+      "supported": true,
+      "reason": "Accurately reflects indicator name and topic",
+      "isos": []
+    }
+  }
+}

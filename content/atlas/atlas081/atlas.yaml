@@ -1,0 +1,76 @@
+id: atlas081
+title: Places Ranked by Income Inequality
+format: rank_ladder
+hook_text: WIDE GAPS
+description: A cinematic look at global income inequality using World Bank Gini index data.
+hashtags:
+- '#economy'
+- '#mapsofinstagram'
+- '#maps'
+tags:
+- wealth
+- income inequality gini index
+- Colombia
+- India
+- world map
+- data
+sources:
+- https://data.worldbank.org/indicator/SI.POV.GINI
+dataset:
+  kind: worldbank
+  indicator: SI.POV.GINI
+  label: Income inequality (Gini index)
+  unit: points
+  source: World Bank
+  min_year: 2019
+scale:
+  edges:
+  - 27.0
+  - 31.0
+  - 35.0
+  - 40.0
+  labels:
+  - Under 27
+  - 27 to 31
+  - 31 to 35
+  - 35 to 40
+  - Over 40
+value_format: '{v:.1f}'
+beats:
+- text: Colombia has a Gini score of 54.4, while India reports 23.
+  shot:
+    callouts:
+    - COL
+    - IND
+- text: Colombia hits 2.4 times India, a wide gap in income distribution.
+  shot:
+    kind: country
+    iso: COL
+- text: Brazil sits at 50.3, more than double what India reports.
+  shot:
+    kind: country
+    iso: BRA
+- text: The USA is 41.8, and China stands at 36.
+  shot:
+    kind: group
+    isos:
+    - USA
+    - CHN
+- text: Slovakia is 23.8, Slovenia 24.7, Ukraine 25.6, and the Netherlands 25.7.
+  shot:
+    kind: rank
+    isos:
+    - SVK
+    - SVN
+    - UKR
+    - NLD
+- text: India hits 23, the lowest of all 124 countries and territories.
+  shot:
+    kind: country
+    iso: IND
+- text: How unequal is income in your country?
+  shot:
+    kind: card
+    lines:
+    - What is your country?
+    - Income inequality (Gini index)
