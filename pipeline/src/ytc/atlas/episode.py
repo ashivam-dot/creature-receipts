@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import re
+import string
 from pathlib import Path
 from typing import Literal
 
@@ -15,19 +16,43 @@ _DIGITS = re.compile(r"\d[\d,]*(?:\.\d+)?")
 # "70.5202%" as "70.520%", so the narrator must never be asked to say more than a person would (2026-10-21).
 SIGNIFICANT = 3
 PERCENT_DECIMALS = 1
+# Decimals a value may grow to so that it never reads as 0 or as a full 100%.
+MAX_DECIMALS = 10
+
+
+def _field(fmt: str) -> tuple[str, str, str] | None:
+    """(text before, format spec, text after) of fmt's single {v} field, or None for any other shape."""
+    try:
+        parts = list(string.Formatter().parse(fmt))
+    except ValueError:
+        return None
+    fields = [i for i, p in enumerate(parts) if p[1] is not None]
+    if len(fields) != 1 or parts[fields[0]][1] != "v" or parts[fields[0]][3] or "{" in (parts[fields[0]][2] or ""):
+        return None
+    i = fields[0]
+    head = "".join(p[0] for p in parts[:i + 1])
+    tail = "".join(p[0] for p in parts[i + 1:])
+    return head, parts[i][2] or "", tail
 
 
 def say_value(value: float, fmt: str) -> str:
     """fmt's text for value, as a person says it on screen and aloud: no trailing zeros ("5.0%" is "5%", "0.80%"
-    is "0.8%"), at most 3 significant figures in the decimals and 1 decimal for a percentage, and a nonzero value
-    the shown precision would turn into 0 (or a share short of 100 into 100) is "under 0.1%" ("over 99.9%"),
-    never "0.0" or "0.000". Whole digits are never rounded away ("3,947" stays)."""
+    is "0.8%"), at most 3 significant figures in the decimals and 1 decimal for a percentage. A nonzero value keeps
+    the decimals it needs to show its first figure, and its sign ("0.01%", "-0.04%"), and a share short of 100
+    the decimals that keep it short of 100 ("99.99%"): never "0.0", "0.000" or a rounded-up "100%", and never a
+    word such as "under" that the number checks can't see. Whole digits are never rounded away ("3,947" stays).
+    Only the {v} field is rewritten, never a digit in the unit ("CO2 5.3 t", "per 100,000")."""
     text = fmt.format(v=value)
-    m = _DIGITS.search(text)
+    field = _field(fmt)
+    if field is None or not isinstance(value, (int, float)) or field[1].endswith("%"):
+        return text
+    head, spec, tail = field
+    number = format(value, spec)
+    m = _DIGITS.search(number)
     if not m:
         return text
-    number = m.group(0)
-    shown = len(number.partition(".")[2])
+    head, tail = head + number[:m.start()], number[m.end():] + tail
+    shown = len(m.group(0).partition(".")[2])
     magnitude = abs(value)
     whole = len(str(int(magnitude))) if magnitude >= 1 else 0
     if whole:
@@ -40,17 +65,17 @@ def say_value(value: float, fmt: str) -> str:
     if percent:
         decimals = min(decimals, PERCENT_DECIMALS)
     decimals = min(decimals, shown)
-    said = f"{magnitude:{',' if ',' in number or ',' in fmt else ''}.{decimals}f}"
-    if "." in said:
-        said = said.rstrip("0").rstrip(".")
-    head, tail = text[:m.start()], text[m.end():]
-    unsigned = head.replace("-", "", 1)
-    smallest = f"{10 ** -decimals:.{decimals}f}" if decimals else "1"
-    if value and not re.search(r"[1-9]", said):
-        return f"under {unsigned}{smallest}{tail}"
-    if percent and 0 < value < 100 and float(said.replace(",", "")) >= 100:
-        return f"over {unsigned}{100 - 10 ** -decimals:.{decimals}f}{tail}" if decimals else f"over {unsigned}99{tail}"
-    return f"{head}{said}{tail}"
+    group = "," if "," in spec else ""
+
+    def said(d: int) -> str:
+        out = f"{magnitude:{group}.{d}f}"
+        return out.rstrip("0").rstrip(".") if "." in out else out
+
+    while decimals < MAX_DECIMALS and (
+            (value and not re.search(r"[1-9]", said(decimals)))
+            or (percent and 0 < value < 100 and float(said(decimals).replace(",", "")) >= 100)):
+        decimals += 1
+    return f"{head}{said(decimals)}{tail}"
 
 
 class _Model(BaseModel):

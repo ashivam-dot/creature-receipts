@@ -82,7 +82,7 @@ How a great Atlas script works:
   {{"shot": "rank", "isos": ["MNG", "AUS", "CAN", "RUS"], "text": "The emptiest big countries? Mongolia, Australia, Canada and Russia, all under 10."}}
   {{"shot": "country", "isos": ["JPN"], "text": "And Japan, famous for its crowds, has 340. A quarter of Bangladesh."}}
   {{"shot": "card", "text": "How many people share a square kilometer in your country?"}}
-- Write every number as digits exactly as in the summary ("178", "3.2", "1.15 billion", "under 0.1%"). Say units
+- Write every number as digits exactly as in the summary ("178", "3.2", "1.15 billion", "0.01%"). Say units
   as words ("square kilometers", "kilograms", "degrees"), never as symbols or letters ("km²", "kg", "°C"). Never write numbers as
   words, not even "two worlds" or "three times"; rephrase instead ("a world apart"). Never round differently. Definition thresholds may quote the official definition exactly; never use
   a definition threshold as a country's measured value. A country's value goes only in
@@ -336,12 +336,13 @@ def plain(text: str) -> str:
 # Unit symbols the narrator would spell out or slur, as the words a person says (American spelling: the speech
 # check's normalizer folds -re into -er anyway). Longest first, so "km²" is not read as "km" then "²".
 _UNIT_WORDS = (("µg/m³", "micrograms per cubic meter"), ("kg/ha", "kilograms per hectare"),
-               ("km²", "square kilometers"), ("km2", "square kilometers"), ("sq km", "square kilometers"),
+               ("km/h", "kilometers per hour"), ("km²", "square kilometers"), ("km2", "square kilometers"),
+               ("sq km", "square kilometers"),
                ("m³", "cubic meters"), ("kWh", "kilowatt hours"), ("kcal", "kilocalories"), ("°C", "degrees Celsius"),
                ("°F", "degrees Fahrenheit"), ("km", "kilometers"), ("kg", "kilograms"), ("mm", "millimeters"))
 _UNITS = re.compile(r"(?<![\w°µ])(" + "|".join(re.escape(u) for u, _ in _UNIT_WORDS) + r")(?![\w²³])")
-_SINGULAR = re.compile(r"\b(per|a|an|each|every|one) (square |cubic )?(kilometer|kilogram|millimeter|hectare|meter|"
-                       r"kilowatt hour|kilocalorie)s\b")
+_SINGULAR = re.compile(r"(?<![\w.,])(per|a|an|each|every|one|1) (square |cubic )?(kilometer|kilogram|millimeter|"
+                       r"hectare|meter|kilowatt hour|kilocalorie)s\b")
 _ABBREVIATED = {short: full for full, short in SHORT_NAMES.items() if spoken_name(full) == full and short != full}
 
 
@@ -355,27 +356,44 @@ def spoken(text: str) -> str:
 
 
 _ZERO = re.compile(r"(?<![\w.])0(?:\.0+)?(?![\d.]*\d)")
-_PERCENT = re.compile(r"(\d[\d,]*(?:\.\d+)?)\s*(?:%|percent\b)", re.I)
+# "0 to 10", "0-100", "between 0 and 1": a scale's end, not a value said as 0.
+_RANGE_END = re.compile(r"\s*(?:to|and|-|\u2013|\u2014)\s*\d", re.I)
+_PERCENT = re.compile(r"((?<![\w.,])-|\u2212|\bminus\s+)?(\d[\d,]*(?:\.\d+)?)\s*(?:%|percent\b)", re.I)
 _GROSS = re.compile(r"\bgross\b", re.I)
 
 
 def misleading_numbers(text: str, *, zero_ok: bool = False, gross: bool = False, explained: bool = False,
-                       growth: bool = False) -> list[str]:
+                       growth: bool = False, falls: frozenset[str] | set[str] = frozenset(),
+                       quoted: str = "") -> list[str]:
     """Values a viewer reads as wrong although they are rounded truly: a nonzero value said as 0 ("Niger has 0.0"
     doctors, atlas021; "0.000%", atlas051) and a share over 100% ("Greece Has 165.1% College Enrollment", a gross
-    ratio, atlas053). A 0 is said only when a value in the data is exactly 0 (`zero_ok`), and never as "0.0"; a
-    percentage over 100 only for a gross ratio whose wording says "gross" (`gross`, `explained`), or a growth rate
-    (`growth`), where over 100% is a plain rise."""
+    ratio, atlas053). A 0 is said only when a value in the data is exactly 0 (`zero_ok`), as a scale's end ("0 TO
+    10", "0-100") or as the official definition (`quoted`) says it ("0 means perfect equality"), and never as
+    "0.0". A percentage over 100 is said only for a gross ratio whose wording says "gross" (`gross`, `explained`),
+    a growth rate (`growth`), where over 100% is a plain rise, or as a negative value: signed ("-512%", "minus
+    512%") or the size of a value the data has below -100 (`falls`: its digits, "down 512%")."""
     out = []
+    definition_zero = bool(re.search(r"(?<![\w.])0(?![\w.])", quoted or ""))
     for m in _ZERO.finditer(text):
-        if "." in m.group(0) or not zero_ok:
-            out.append(f"'{m.group(0)}' reads as nothing; say the value as the summary does ('under 0.1%')")
+        if "." in m.group(0) or not (zero_ok or definition_zero or _RANGE_END.match(text, m.end())):
+            out.append(f"'{m.group(0)}' reads as nothing; say the value as the summary does")
     for m in _PERCENT.finditer(text):
-        value = float(m.group(1).replace(",", ""))
-        if value > 100 and not growth and not (gross and explained):
+        digits = m.group(2).replace(",", "")
+        if m.group(1) or digits in falls:
+            continue
+        if float(digits) > 100 and not growth and not (gross and explained):
             out.append(f"'{m.group(0)}' is over 100%, which reads as an error" +
                        ("; say it is a gross ratio ('a gross enrollment ratio of ...') where you say it" if gross
                         else "; this measure is not a gross ratio, so leave that country out"))
+    return out
+
+
+def fall_numbers(vals: dict[str, float], fmt: str) -> set[str]:
+    """The digits, as said, of every value below -100: a script says them as a fall ("down 512%")."""
+    out = set()
+    for v in vals.values():
+        if v < -100 and (m := _NUMBER.search(_say(v, fmt))):
+            out.add(m.group(0).replace(",", ""))
     return out
 
 
@@ -445,8 +463,9 @@ def number_problems(text: str, allowed: set[str], owners: dict[str, set[str]] | 
 
 
 def problems(draft: dict, allowed: set[str], owners: dict[str, set[str]], vals: dict[str, float],
-             quoted: str = "", measure: dict[str, bool] | None = None, topic: set[str] | None = None) -> list[str]:
-    """`measure` is measure_kind of the dataset; `topic` its topic_words, which the card question must share."""
+             quoted: str = "", measure: dict | None = None, topic: set[str] | None = None) -> list[str]:
+    """`measure` is measure_kind of the dataset (with its fall_numbers as "falls"); `topic` its topic_words, which
+    the card question must share."""
     out = []
     beats = draft.get("beats", [])
     words = sum(len(b["text"].split()) for b in beats)
@@ -509,7 +528,7 @@ def problems(draft: dict, allowed: set[str], owners: dict[str, set[str]], vals: 
         out.append("use the rank shot at most once")
     if beats and beats[-1]["shot"] == "card":
         out += card_problems(beats[-1]["text"], topic)
-    kind = {"zero_ok": any(v == 0 for v in vals.values()), **(measure or {})}
+    kind = {"zero_ok": any(v == 0 for v in vals.values()), "quoted": quoted, **(measure or {})}
     for i, b in enumerate(beats, 1):
         explained = any(_GROSS.search(x["text"]) for x in beats[:i])
         out += [f"beat {i}: {p}" for p in misleading_numbers(b["text"], explained=explained, **kind)]
@@ -533,8 +552,8 @@ def write(topic: dict, ds: Dataset, episode_id: str, series: str = "") -> AtlasE
     if len(vals) < MIN_COUNTRIES:
         raise RuntimeError(f"only {len(vals)} countries have data; an Atlas map needs {MIN_COUNTRIES}")
     shown = visible(vals)
-    measure = measure_kind(ds.label or topic.get("dataset", {}).get("label", ""), ds.indicator or
-                           topic.get("dataset", {}).get("indicator", ""))
+    measure = {**measure_kind(ds.label or topic.get("dataset", {}).get("label", ""), ds.indicator or
+                              topic.get("dataset", {}).get("indicator", "")), "falls": fall_numbers(vals, fmt)}
     # Not the angle: a rewrite appends the rejected script (with its old card line) to it.
     subject = topic_words(topic["topic"], ds.label, ds.unit, topic.get("definition_text", ""),
                           *topic.get("hashtags", []))

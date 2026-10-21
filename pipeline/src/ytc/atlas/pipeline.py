@@ -340,11 +340,17 @@ def make_next() -> dict:
 
 
 # Failed drafts a run may spend before it stops. 2 left every run at 0-2 Shorts (10 of 28 drafts passed,
-# 2026-10-17..21) and the publisher starved; a failed draft costs minutes, the `minutes` cap still bounds the run.
+# 2026-10-17..21) and the publisher starved. `minutes` only stops a run from STARTING a draft, and one draft (its
+# rewrites, render and checks) took 10-26 minutes (2026-10-21; the 13:10 UTC run saved at 13:57), so a run also
+# starts one only if the longest draft it has made so far (DRAFT_MINUTES before the first) still ends by
+# `deadline`, under cloud.ATLAS_MINUTES: a draft that cloud would kill mid-render (exit 124) is never begun.
 MAX_FAILURES = 4
+DRAFT_MINUTES = 15
+DEADLINE_MINUTES = 47
 
 
-def run(reserve: int = RESERVE, minutes: float = 40, max_failures: int = MAX_FAILURES) -> dict:
+def run(reserve: int = RESERVE, minutes: float = 40, max_failures: int = MAX_FAILURES,
+        deadline: float = DEADLINE_MINUTES) -> dict:
     """One producer run: sync the publisher's posts, refresh their numbers, top up the topics, then render until
     `reserve` Shorts are waiting."""
     from . import stats
@@ -388,10 +394,15 @@ def run(reserve: int = RESERVE, minutes: float = 40, max_failures: int = MAX_FAI
     except Exception as err:  # a failed refill mustn't stop today's renders
         log.exception("topic refill failed: %s", err)
     made, failed, skipped = [], [], []
-    while len(ready()) < reserve and time.monotonic() - started < minutes * 60 and len(failed) < max_failures:
+    took = []
+    while len(ready()) < reserve and len(failed) < max_failures and time.monotonic() - started < minutes * 60 \
+            and time.monotonic() - started + max(took, default=DRAFT_MINUTES * 60) <= deadline * 60:
+        began = time.monotonic()
         result = make_next()
         if result["outcome"] == "no_topics":
             break
+        if result["outcome"] != "skipped":  # a skipped topic costs seconds and says nothing of a draft's length
+            took.append(time.monotonic() - began)
         {"ready": made, "skipped": skipped}.get(result["outcome"], failed).append(result)
     waiting = [p.name for p in ready()]
     outcome = "failed" if failed and not waiting else ("no_topics" if not waiting else "ok")

@@ -220,7 +220,9 @@ def review(ep: AtlasEpisode, ds: Dataset, folder: Path) -> dict:
         context = list(dict.fromkeys(([shot.iso] if shot.iso else []) + shot.isos + shot.callouts))
         deterministic.extend(f"{surface}: {error}" for error in ratio_errors(value, ep, ds, context))
     # Values a viewer reads as wrong although rounded truly: a nonzero said as 0, a share over 100%.
-    kind = {"zero_ok": any(v == 0 for v in writer.drawable(ds).values()),
+    drawn = writer.drawable(ds)
+    kind = {"zero_ok": any(v == 0 for v in drawn.values()), "falls": writer.fall_numbers(drawn, ep.value_format),
+            "quoted": ds.definition or "",
             **writer.measure_kind(ds.label or ep.dataset.label, ds.indicator or ep.dataset.indicator)}
     beats = [b.text for b in ep.beats]
     for surface, text in surfaces.items():
