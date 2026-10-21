@@ -1,0 +1,183 @@
+{
+  "errors": [],
+  "claims": [
+    {
+      "surface": "title",
+      "text": "Why Djibouti uses 84.2% of its water at home",
+      "isos": [
+        "DJI"
+      ],
+      "support": "Djibouti domestic water use is 84.2% in 2022"
+    },
+    {
+      "surface": "hook",
+      "text": "TAP WATER SHARE",
+      "isos": [],
+      "support": "Indicator measures annual freshwater withdrawals for domestic uses"
+    },
+    {
+      "surface": "description",
+      "text": "See which countries and territories use the most water at home, from Djibouti's 84.2% to Somalia's 0.5%.",
+      "isos": [
+        "DJI",
+        "SOM"
+      ],
+      "support": "Djibouti 84.2% (rank 7), Somalia 0.5% (rank 178)"
+    },
+    {
+      "surface": "beat_0",
+      "text": "Djibouti uses 84.2% of its water for homes. In Somalia, it is just 0.5%.",
+      "isos": [
+        "DJI",
+        "SOM"
+      ],
+      "support": "Djibouti value 84.21052632, Somalia value 0.454821104"
+    },
+    {
+      "surface": "beat_1",
+      "text": "Somalia is the world's lowest. Almost every drop there goes to farming instead of the tap.",
+      "isos": [
+        "SOM"
+      ],
+      "support": "Somalia rank is 178 out of 178, lowest in universe"
+    },
+    {
+      "surface": "beat_2",
+      "text": "Djibouti uses 11 times more for its homes than India. Djibouti: 84.2%. India: 7.4%.",
+      "isos": [
+        "DJI",
+        "IND"
+      ],
+      "support": "Djibouti 84.2%, India 7.4%"
+    },
+    {
+      "surface": "beat_3",
+      "text": "Domestic use includes drinking water, municipal supply, and public services.",
+      "isos": [],
+      "support": "Definition: Withdrawals for domestic uses include drinking water, municipal use or supply, and use for public services, commercial establishments, and homes."
+    },
+    {
+      "surface": "beat_4",
+      "text": "Germany uses 41.5% for its homes, much closer to the top.",
+      "isos": [
+        "DEU"
+      ],
+      "support": "Germany value 41.53374175, display 41.5%"
+    },
+    {
+      "surface": "beat_5",
+      "text": "These nations use the least: Mali: 2.1%. Laos: 1.8%. Vietnam: 1.5%.",
+      "isos": [
+        "MLI",
+        "LAO",
+        "VNM"
+      ],
+      "support": "Mali 2.1% (rank 172), Laos 1.8% (rank 173), Vietnam 1.5% (rank 175)"
+    },
+    {
+      "surface": "beat_6",
+      "text": "The USA uses 13.1% for its homes, while China hits the median at 20.1%.",
+      "isos": [
+        "USA",
+        "CHN"
+      ],
+      "support": "USA 13.1%, China 20.1%"
+    },
+    {
+      "surface": "beat_7",
+      "text": "Where does your country land?",
+      "isos": [],
+      "support": "Closing rhetorical question"
+    },
+    {
+      "surface": "card_7",
+      "text": "Where do you land?",
+      "isos": [],
+      "support": "Closing card text"
+    }
+  ],
+  "surface_checks": {
+    "title": {
+      "supported": true,
+      "reason": "Djibouti withdrawal share for domestic use is 84.2%",
+      "isos": [
+        "DJI"
+      ]
+    },
+    "hook": {
+      "supported": true,
+      "reason": "Stylistic headline matches indicator theme",
+      "isos": []
+    },
+    "description": {
+      "supported": true,
+      "reason": "Accurately cites Djibouti and Somalia values",
+      "isos": [
+        "DJI",
+        "SOM"
+      ]
+    },
+    "beat_0": {
+      "supported": true,
+      "reason": "Matches Djibouti and Somalia values",
+      "isos": [
+        "DJI",
+        "SOM"
+      ]
+    },
+    "beat_1": {
+      "supported": true,
+      "reason": "Somalia is rank 178, lowest in the dataset",
+      "isos": [
+        "SOM"
+      ]
+    },
+    "beat_2": {
+      "supported": true,
+      "reason": "Djibouti 84.2% vs India 7.4%",
+      "isos": [
+        "DJI",
+        "IND"
+      ]
+    },
+    "beat_3": {
+      "supported": true,
+      "reason": "Directly matches official indicator definition",
+      "isos": []
+    },
+    "beat_4": {
+      "supported": true,
+      "reason": "Germany value is 41.5%",
+      "isos": [
+        "DEU"
+      ]
+    },
+    "beat_5": {
+      "supported": true,
+      "reason": "Mali, Laos, and Vietnam values match dataset",
+      "isos": [
+        "MLI",
+        "LAO",
+        "VNM"
+      ]
+    },
+    "beat_6": {
+      "supported": true,
+      "reason": "USA and China values match dataset",
+      "isos": [
+        "USA",
+        "CHN"
+      ]
+    },
+    "beat_7": {
+      "supported": true,
+      "reason": "Closing call to action",
+      "isos": []
+    },
+    "card_7": {
+      "supported": true,
+      "reason": "Closing card text matches visual plan",
+      "isos": []
+    }
+  }
+}

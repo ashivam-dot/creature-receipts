@@ -2669,7 +2669,7 @@
     "#healthdata"
    ],
    "source_url": "https://data.worldbank.org/indicator/SH.STA.OWGH.ME.ZS",
-   "status": "ready:atlas071",
+   "status": "used:atlas071",
    "added_by": "refill"
   },
   {
@@ -2708,7 +2708,7 @@
     "#hydrology"
    ],
    "source_url": "https://data.worldbank.org/indicator/ER.H2O.FWDM.ZS",
-   "status": "open",
+   "status": "failed:ValueError",
    "added_by": "refill"
   },
   {
@@ -2924,7 +2924,7 @@
     "#internet"
    ],
    "source_url": "https://data.worldbank.org/indicator/IT.NET.USER.FE.ZS",
-   "status": "open",
+   "status": "failed:RuntimeError",
    "added_by": "refill"
   },
   {

@@ -1,0 +1,74 @@
+id: atlas073
+title: Why Djibouti uses 84.2% of its water at home
+hook_text: TAP WATER SHARE
+description: See which countries and territories use the most water at home, from Djibouti's 84.2% to Somalia's
+  0.5%.
+hashtags:
+- '#maps'
+- '#geography'
+- '#hydrology'
+sources:
+- https://data.worldbank.org/indicator/ER.H2O.FWDM.ZS
+dataset:
+  kind: worldbank
+  indicator: ER.H2O.FWDM.ZS
+  label: Domestic share of water withdrawals
+  unit: '%'
+  source: World Bank
+  min_year: 2019
+scale:
+  edges:
+  - 10.0
+  - 20.0
+  - 45.0
+  - 70.0
+  labels:
+  - Under 10%
+  - 10-20%
+  - 20-45%
+  - 45-70%
+  - Over 70%
+value_format: '{v:.1f}%'
+beats:
+- text: Djibouti uses 84.2% of its water for homes. In Somalia, it is just 0.5%.
+  shot:
+    callouts:
+    - DJI
+    - SOM
+- text: Somalia is the world's lowest. Almost every drop there goes to farming instead of the tap.
+  shot:
+    kind: country
+    iso: SOM
+- text: 'Djibouti uses 11 times more for its homes than India. Djibouti: 84.2%. India: 7.4%.'
+  shot:
+    kind: group
+    isos:
+    - DJI
+    - IND
+- text: Domestic use includes drinking water, municipal supply, and public services.
+  shot:
+    kind: country
+    iso: DJI
+- text: Germany uses 41.5% for its homes, much closer to the top.
+  shot:
+    kind: country
+    iso: DEU
+- text: 'These nations use the least: Mali: 2.1%. Laos: 1.8%. Vietnam: 1.5%.'
+  shot:
+    kind: rank
+    isos:
+    - MLI
+    - LAO
+    - VNM
+- text: The USA uses 13.1% for its homes, while China hits the median at 20.1%.
+  shot:
+    kind: group
+    isos:
+    - USA
+    - CHN
+- text: Where does your country land?
+  shot:
+    kind: card
+    lines:
+    - Where do you land?
+    - Domestic water use

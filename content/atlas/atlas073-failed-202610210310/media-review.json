@@ -1,0 +1,27 @@
+{
+  "duration": 48.26,
+  "integrated_lufs": -14.4,
+  "true_peak_dbfs": -1.3,
+  "speech": {
+    "heard": "Djibouti uses 84.2% of its water for homes. In Somalia, it is just 0.5%. Somalia is the world's lowest. Almost every drop there goes to farming instead of the tap. Djibouti uses 11 times more for its homes than India. Djibouti, 84.2%. India, 7.4%. Domestic use includes drinking water, municipal supply, and public services. Germany uses 41.5% for its homes, much closer to the top. These nations use the least, Mali 2.1%, Laos 1.8%, Vietnam 1.5%. The USA uses 13.1% for its homes, while China hits the median at 20.1%. What is your country land?",
+    "model": "small.en",
+    "media_sha256": "a7f6bbf1edc989c7b7ee4d3dff49868281d16cde1b800b79923e74a8bd717ad9",
+    "primary_differences": [
+      "'where does' heard as 'what is' after 'at 20 one'"
+    ],
+    "differences": [
+      "'where does' heard as 'what is' after 'at 20 one'",
+      "base.en: 'laos' heard as 'locks' after 'mali 2 one'",
+      "base.en: 'where does' heard as 'what is' after 'at 20 one'"
+    ],
+    "corroboration": {
+      "model": "base.en",
+      "heard": "Djibouti uses 84.2% of its water for homes. In Somalia, it is just 0.5%. Somalia is the world's lowest. Almost every drop there goes to farming instead of the tap. Djibouti uses 11 times more for its homes than India. Djibouti, 84.2%, India, 7.4%. Domestic use includes drinking water, municipal supply, and public services. Germany uses 41.5% for its homes, much closer to the top. These nations use the least Mali 2.1% locks 1.8% Vietnam 1.5%. The USA uses 13.1% for its homes, while China hits the median at 20.1%. What is your country land?",
+      "differences": [
+        "'laos' heard as 'locks' after 'mali 2 one'",
+        "'where does' heard as 'what is' after 'at 20 one'"
+      ],
+      "resolved": []
+    }
+  }
+}
