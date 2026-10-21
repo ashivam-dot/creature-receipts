@@ -11,6 +11,7 @@ import numpy as np
 from PIL import Image, ImageDraw, ImageFilter, ImageFont
 
 from . import geo
+from .names import SHORT_NAMES, short_name  # noqa: F401  (re-exported)
 
 W, H = 1080, 1920
 SS = 2  # supersampling; PIL polygons have no antialiasing
@@ -365,19 +366,6 @@ def _layout(d: ImageDraw.ImageDraw, callouts: list[tuple[float, float, str, str]
         for p in placed:
             p[5] = max(TOP, p[5] - shift)
     return [tuple(p) for p in placed]
-
-
-SHORT_NAMES = {"United Arab Emirates": "UAE", "People's Republic of China": "China",
-               "United States of America": "USA", "United Kingdom": "UK", "Russian Federation": "Russia",
-               "Democratic Republic of the Congo": "DR Congo", "Republic of the Congo": "Congo",
-               "Central African Republic": "C. African Rep.", "Bosnia and Herzegovina": "Bosnia",
-               "Dominican Republic": "Dominican Rep.", "Papua New Guinea": "Papua N. Guinea",
-               "Trinidad and Tobago": "Trinidad & Tobago", "Saint Vincent and the Grenadines": "St Vincent",
-               "Republic of China": "Taiwan", "South Korea": "South Korea", "North Korea": "North Korea"}
-
-
-def short_name(name: str) -> str:
-    return SHORT_NAMES.get(name, name)
 
 
 def card(lines: list[tuple[str, int, tuple]], under: Image.Image | None = None, shade: int = 215) -> Image.Image:

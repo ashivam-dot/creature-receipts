@@ -11,9 +11,8 @@ import statistics
 import requests
 
 from .. import llm
-from . import geo
 from .data import Dataset, get
-from .draw import SHORT_NAMES, short_name
+from .names import SHORT_NAMES, short_name
 from .episode import AtlasEpisode, say_value
 
 log = logging.getLogger(__name__)
@@ -170,11 +169,15 @@ def spoken_name(name: str) -> str:
 
 
 def drawable(ds: Dataset) -> dict[str, float]:
+    from . import geo
+
     world = geo.world()
     return {k: v for k, v in ds.values.items() if k in world}
 
 
 def visible(vals: dict[str, float]) -> dict[str, float]:
+    from . import geo
+
     world = geo.world()
     out = {}
     for k, v in vals.items():
@@ -187,6 +190,8 @@ def visible(vals: dict[str, float]) -> dict[str, float]:
 def facts(ds: Dataset, ep_scale: dict, fmt: str) -> tuple[str, set[str], dict[str, set[str]]]:
     """The summary the writer sees, every number it may say, and which countries own each country value (a value
     may only be said in a beat that names one of its owners)."""
+    from . import geo
+
     vals = drawable(ds)
     shown = visible(vals)
     names = {k: spoken_name(geo.world()[k].name) for k in vals}
@@ -764,6 +769,8 @@ def hashtags(topic: dict) -> list[str]:
 
 def write(topic: dict, ds: Dataset, episode_id: str, series: str = "") -> AtlasEpisode:
     """A checked script for the topic, or RuntimeError after TRIES drafts that break the rules."""
+    from . import geo  # here, not at the top: the publisher imports this module for its title check, without numpy
+
     vals = drawable(ds)
     fmt = topic["value_format"] = precise(topic.get("value_format", "{v:,.0f}"), vals.values())
     scale = topic.get("scale", {"kind": "bins"})
