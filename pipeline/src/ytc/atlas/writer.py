@@ -106,11 +106,11 @@ How a great Atlas script works:
   (at most 16 words) and hook_text (2-5 words). Preserve the exact metric and universe. Never optimize by overclaiming.
 - title: at most 60 characters in Title Case: a curiosity or identity framing of what THIS data shows, not a flat
   statement of one number. Shapes that work: "Countries Ranked by How Crowded They Are" (only with a rank shot),
-  "Is YOUR Country One of the Most Crowded?", "The Countries Where Almost Everyone Is Online", "Why Japan Is WAY
-  Less Crowded Than You Think" (start with "Why" only when a beat explains the gap from the definition, with its
-  basis). Any number in the title is a value from the summary for a country the beats name. True by the data:
-  never "don't exist", "nobody", "zero" or "everyone" unless the values say exactly that (hedge with "almost").
-  At most one word in capitals for emphasis, no "!", no emoji.
+  "Is YOUR Country One of the Most Crowded?", "The Countries Where Almost Everyone Is Online". Never start with
+  "Why": a title that promises a cause needs one the data doesn't give. A comparison in the title ("less crowded
+  than", "twice as") is a claim the values must show. Any number in the title is a value from the summary for a
+  country the beats name. True by the data: never "don't exist", "nobody", "zero" or "everyone" unless the values
+  say exactly that (hedge with "almost"). At most one word in capitals for emphasis, no "!", no emoji.
 - hook_text: 2-5 words in capitals shown on screen over beat 1, adding to (not repeating) the spoken hook.
 - card_lines: 2 short lines for the end card: a 2-4 word question, then the dataset label.
 {feedback}"""
@@ -558,6 +558,19 @@ _SMALL = frozenset("a an and as at but by for in nor of on or per the to vs via"
 _WORD = re.compile(r"[A-Za-z][A-Za-z'\u2019]*")
 
 
+# Lowercase unit symbols kept as written after a number or "per", or before ²/³ ("3,000 mm", "per km²"; "Mm" is
+# megametres).
+_TITLE_UNITS = frozenset("m km cm mm kg g t ha l kwh mwh gwh twh mbps kbps gbps mb gb".split())
+
+
+def _unit(title: str, m: re.Match) -> bool:
+    word = m.group(0)
+    if not word.islower() or word not in _TITLE_UNITS:
+        return False
+    before = title[:m.start()].rstrip()
+    return before[-1:].isdigit() or before.lower().endswith(" per") or title[m.end():m.end() + 1] in ("\u00b2", "\u00b3")
+
+
 def title_case(title: str) -> str:
     """Title Case without touching a word that already has capitals inside it (YOUR, GDP, iPhone): "The emptiest and
     most crowded places" becomes "The Emptiest and Most Crowded Places". Small words stay lower case except first,
@@ -568,7 +581,7 @@ def title_case(title: str) -> str:
         word = m.group(0)
         out.append(title[end:m.start()])
         first = n == 0 or title[:m.start()].rstrip().endswith((":", "?", "-", "\u2014"))
-        if any(c.isupper() for c in word[1:]):
+        if any(c.isupper() for c in word[1:]) or _unit(title, m):
             out.append(word)
         elif word.lower() in _SMALL and not first and n != len(words) - 1:
             out.append(word.lower())
@@ -578,8 +591,8 @@ def title_case(title: str) -> str:
     return "".join(out) + title[end:]
 
 
-_FRAMING = re.compile(r"^(why|how|is|are|which|what|who|do|does|can|countries|places|the (\w+ ){0,3}(countries|places))"
-                      r"\b|\branked\b|\byour\b|\byou think\b|\bwhere\b", re.I)
+_FRAMING = re.compile(r"(^|:\s*)(how|is|are|which|what|who|do|does|can|countries|places|the (\w+ ){0,3}(countries|places))"
+                      r"\b|\branked\b|\byour\b|\byou think\b|\bwhere\b|\bvs\b|\bversus\b|\?\s*$", re.I)
 _OVERCLAIM = re.compile(r"\b((don't|doesn't|do not|does not|never) (even )?exist|nobody|no one|everyone|everybody|"
                         r"zero|none|literally)\b", re.I)
 _HEDGE = re.compile(r"\b(almost|nearly|basically|barely|hardly|virtually|practically)\s+(\S+\s+){0,2}$", re.I)
@@ -600,7 +613,7 @@ def grounded(basis: str, text: str, definition: str) -> bool:
             and bool(topic_words(basis) & topic_words(text)))
 
 
-def title_problems(title: str, *, why_ok: bool = False, ranked_ok: bool = False) -> list[str]:
+def title_problems(title: str, *, ranked_ok: bool = False) -> list[str]:
     """The title's framing (style; the numbers are checked by number_problems and misleading_numbers)."""
     out = []
     if len(_NUMBER.findall(title)) >= 2 or not _FRAMING.search(title):
@@ -610,11 +623,15 @@ def title_problems(title: str, *, why_ok: bool = False, ranked_ok: bool = False)
         if not _HEDGE.search(title[:m.start()]):
             out.append(f"the title says '{m.group(0)}', which the data doesn't show exactly; hedge it ('almost') "
                        "or say it another way")
-    if re.match(r"\W*why\b", title, re.I) and not why_ok:
-        out.append("a 'Why' title needs a beat that explains the gap from the official definition, with its basis")
+    if re.match(r"\W*why\b", title, re.I):
+        # A definition says what is counted, not why a country has its value, so a "Why" title promises a cause no
+        # beat can give (review 2026-10-22).
+        out.append("don't start the title with 'Why': it promises a cause the data doesn't give; ask or frame it "
+                   "another way")
     if re.search(r"\brank(ed|ing|s)?\b", title, re.I) and not ranked_ok:
         out.append("a 'Ranked' title needs the rank shot")
-    if sum(len(w) > 1 and w.isupper() and w not in _ACRONYMS for w in re.findall(r"[A-Za-z]+", title)) > 1:
+    # Two-letter codes ("DR Congo", "PM2.5", "CO2") are names, not emphasis.
+    if sum(len(w) > 2 and w.isupper() and w not in _ACRONYMS for w in re.findall(r"[A-Za-z]+", title)) > 1:
         out.append("at most one word of the title in capitals")
     if "!" in title:
         out.append("no '!' in the title")
@@ -639,7 +656,7 @@ def style_problems(draft: dict, definition: str = "") -> list[str]:
                        "official definition (copied into this beat's basis), or cut it")
     if sum(bool(b.get("basis")) for b in beats) > 1:
         out.append("give at most one why-the-gap beat")
-    out += [f"title: {p}" for p in title_problems(draft.get("title", ""), why_ok=bool(why),
+    out += [f"title: {p}" for p in title_problems(draft.get("title", ""),
                                                   ranked_ok=any(b.get("shot") == "rank" for b in beats))]
     return out
 
@@ -652,7 +669,7 @@ def tags(topic: dict, ds: Dataset, vals: dict[str, float]) -> list[str]:
     names = [ds.names.get(iso, iso) for iso in (ranked[-1:] + ranked[:1])] if ranked else []
     label = re.sub(r"\s+", " ", re.sub(r"[^\w%+ ,.-]", " ", ds.label or topic.get("dataset", {}).get("label", ""))).strip()
     found = [family(topic), label.lower(), *names, "world map", "data"]
-    return list(dict.fromkeys(t for t in found if t and t != "other"))
+    return list(dict.fromkeys(t for t in found if t and t not in ("other", "obscure")))
 
 
 def hashtags(topic: dict) -> list[str]:
@@ -661,7 +678,8 @@ def hashtags(topic: dict) -> list[str]:
     from .topics import family_hashtag
     raw = re.findall(r"#[A-Za-z][A-Za-z0-9]*", " ".join(topic.get("hashtags", [])))
     generic = {"#maps", "#geography", "#data"}
-    picks = [family_hashtag(topic), *(h for h in raw if h.lower() not in generic), "#maps", "#geography"]
+    first = family_hashtag(topic)
+    picks = [first, *[h for h in raw if h.lower() not in generic | {first.lower()}][:1], "#maps", "#geography"]
     seen, out = set(), []
     for h in picks:
         if h.lower() not in seen:
@@ -687,7 +705,7 @@ def write(topic: dict, ds: Dataset, episode_id: str, series: str = "") -> AtlasE
     feedback = ""
     definition_text = topic.get("definition_text", "")
     record_tags = tags(topic, ds, shown)
-    passed = None  # the last draft that broke no rule of problems(), kept in case a style rewrite breaks one
+    passed = None  # a draft that broke no rule of problems(), sent back once for style; shipped if the rewrite breaks one
     for attempt in range(1, TRIES + 1):
         prompt = PROMPT.format(topic=topic["topic"], angle=topic.get("angle", ""), format=topic.get("format", "map_reveal"),
                                label=ds.label, unit=ds.unit, source=ds.source, year=ds.year_label, count=len(vals),
@@ -722,20 +740,24 @@ def write(topic: dict, ds: Dataset, episode_id: str, series: str = "") -> AtlasE
                 draft = candidate
                 break
         found = problems(draft, allowed, owners, shown, topic.get("definition_text", ""), measure, subject)
-        style = style_problems(draft, definition_text)
-        if not found and (not style or attempt == TRIES):
+        if found and passed is not None:
+            # The one style rewrite broke a hard rule: ship the draft before it rather than spend more drafts.
+            log.info("%s draft %d broke a rule after a style rewrite (%s); shipping draft %d", episode_id, attempt,
+                     "; ".join(found), attempt - 1)
+            return _episode(passed, topic, episode_id, series, record_tags)
+        style = [] if found else style_problems(draft, definition_text)
+        if not found and (not style or passed is not None or attempt == TRIES):
             if style:
                 log.info("%s draft %d ships with advisory style notes: %s", episode_id, attempt, "; ".join(style))
             return _episode(draft, topic, episode_id, series, record_tags)
+        # Style notes go only to a draft that passed every hard check, and it gets one rewrite for them: mixed into a
+        # hard failure's feedback they make a hard pass less likely, and each rewrite is a model call and minutes.
         if not found:
             passed = copy.deepcopy(draft)
         found += style
         log.info("%s draft %d: %s", episode_id, attempt, "; ".join(found))
         feedback = "\nYOUR LAST DRAFT BROKE THESE RULES; FIX ALL OF THEM:\n- " + "\n- ".join(found) + \
                    f"\nLast draft: {draft}"
-    if passed is not None:
-        log.info("%s: the last draft broke a rule; shipping draft that passed every check but style", episode_id)
-        return _episode(passed, topic, episode_id, series, record_tags)
     raise RuntimeError(f"{episode_id}: no draft passed after {TRIES} tries: {'; '.join(found)[:500]}")
 
 

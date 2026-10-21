@@ -47,8 +47,9 @@ def test_curiosity_titles_pass_and_flat_or_overclaimed_titles_are_noted():
     assert any("flatly" in p for p in writer.title_problems("Places Where 1,333 Beats 4"))
     assert any("don't exist" in p.lower() for p in writer.title_problems("The Countries Where Banks Don't Exist"))
     assert any("nobody" in p.lower() for p in writer.title_problems("The Countries Where Nobody Drives"))
-    assert any("'Why' title" in p for p in writer.title_problems("Why Japan Is WAY Less Crowded Than You Think"))
-    assert writer.title_problems("Why Japan Is WAY Less Crowded Than You Think", why_ok=True) == []
+    # A definition says what is counted, never why, so every "Why" title is noted.
+    assert any("'Why'" in p for p in writer.title_problems("Why Japan Is Less Crowded Than You Think"))
+    assert "Never start with\n  \"Why\"" in writer.PROMPT and "WAY\n  Less Crowded" not in writer.PROMPT
     assert any("rank shot" in p for p in writer.title_problems("Countries Ranked by Crowds"))
     assert any("capitals" in p for p in writer.title_problems("Is YOUR Country WAY More Crowded?"))
     assert writer.title_problems("Is the USA More Crowded Than YOUR Country?") == []
@@ -75,10 +76,10 @@ def test_basis_must_be_copied_from_the_definition_and_about_the_beat():
 def test_unsourced_causes_and_bad_bases_are_style_notes_and_a_grounded_why_clears_them():
     loose = _draft("Why Qatar Is Mostly Born Abroad", why="Qatar is born abroad because of oil jobs.")
     notes = " ".join(writer.style_problems(loose, DEFINITION))
-    assert "'because' gives a cause" in notes and "'Why' title" in notes
+    assert "'because' gives a cause" in notes and "'Why'" in notes
     bad = _draft("Is YOUR Country Born Abroad?", basis="workers drawn by oil money")
     assert "basis must copy" in " ".join(writer.style_problems(bad, DEFINITION))
-    good = _draft("Why Qatar Is Mostly Born Abroad", basis="people born in a country other than that in which they live")
+    good = _draft("Is YOUR Country Mostly Born Abroad?", basis="people born in a country other than that in which they live")
     assert writer.style_problems(good, DEFINITION) == []
     two = _draft("Is YOUR Country Born Abroad?", basis="It also includes refugees.", why="Refugees count too.")
     two["beats"].insert(1, {"text": "It counts people born in another country.", "shot": "world",
@@ -93,18 +94,30 @@ def _write(monkeypatch, drafts, hard=lambda draft: []):
     return writer.write(dict(TOPIC), _dataset(), "atlas900"), calls
 
 
-def test_style_rules_are_advisory_on_the_last_attempt(monkeypatch):
+def test_style_rules_get_one_rewrite_then_are_advisory(monkeypatch):
+    # A draft that passes every hard check gets one rewrite for style, not TRIES: each is a model call and minutes.
     flat = _draft("Qatar Has 77 Percent Born Abroad")
     ep, calls = _write(monkeypatch, [flat])
-    assert len(calls) == writer.TRIES and ep.title == "Qatar Has 77 Percent Born Abroad"
+    assert len(calls) == 2 and ep.title == "Qatar Has 77 Percent Born Abroad"
     assert "frame it as curiosity" in calls[1]
+    ep, calls = _write(monkeypatch, [flat, _draft("Is YOUR Country Born Abroad?")])
+    assert len(calls) == 2 and ep.title == "Is YOUR Country Born Abroad?"
+
+
+def test_style_notes_never_join_a_hard_failures_feedback(monkeypatch):
+    flat = _draft("Qatar Has 77 Percent Born Abroad")
+    fixed = _draft("Qatar Has 77 Percent Born Abroad", why="It counts people born in another country, refugees too.")
+    ep, calls = _write(monkeypatch, [flat, fixed, fixed], hard=lambda d: ["beat 2: boom"] if d is flat else [])
+    assert "beat 2: boom" in calls[1] and "frame it as curiosity" not in calls[1].split("Last draft:")[0]
+    # Once the hard rules pass, the style note gets its one rewrite.
+    assert "frame it as curiosity" in calls[2] and len(calls) == 3
 
 
 def test_a_style_rewrite_that_breaks_a_hard_rule_never_costs_the_story(monkeypatch):
     first = _draft("Qatar Has 77 Percent Born Abroad")
     worse = _draft("Is YOUR Country Born Abroad?")
     ep, calls = _write(monkeypatch, [first, worse], hard=lambda d: ["boom"] if d["title"].startswith("Is") else [])
-    assert ep.title == "Qatar Has 77 Percent Born Abroad" and len(calls) == writer.TRIES
+    assert ep.title == "Qatar Has 77 Percent Born Abroad" and len(calls) == 2
 
 
 def test_hard_rules_still_stop_a_story(monkeypatch):
@@ -113,9 +126,9 @@ def test_hard_rules_still_stop_a_story(monkeypatch):
 
 
 def test_episode_keeps_only_a_grounded_basis_and_records_tags_and_clean_hashtags(monkeypatch):
-    good = _draft("why qatar is mostly born abroad", basis="people born in a country other than that in which they live")
+    good = _draft("is YOUR country mostly born abroad?", basis="people born in a country other than that in which they live")
     ep, calls = _write(monkeypatch, [good])
-    assert len(calls) == 1 and ep.title == "Why Qatar Is Mostly Born Abroad"
+    assert len(calls) == 1 and ep.title == "Is YOUR Country Mostly Born Abroad?"
     assert ep.beats[1].basis == "people born in a country other than that in which they live"
     assert ep.hashtags == ["#migration", "#migrants", "#maps"]
     assert ep.tags[:2] == ["migration", "share of people born abroad"] and ep.tags[-2:] == ["world map", "data"]
@@ -150,8 +163,13 @@ def test_families_rank_high_pull_topics_over_the_obscure_tail():
     assert topics.family(t("Lights on: access to electricity", "EG.ELC.ACCS.ZS")) == "energy"  # not "city"
     assert topics.pull(t("How Much of Imports Is Food", "TM.VAL.FOOD.ZS.UN")) == 0
     assert topics.pull(t("Global Container Shipping Connectivity", "IS.SHP.GCNW.XQ")) == 0
-    assert topics.family({"family": "food", "topic": "Calories on the plate", "dataset": {}}) == "food"
+    # A catalogue family FAMILIES doesn't know is the one its keywords match, so "food" after "health" is a repeat.
+    assert topics.family({"family": "food", "topic": "Calories on the plate", "dataset": {}}) == "health"
     assert topics.pull({"family": "food", "topic": "Calories on the plate", "dataset": {}}) == 3
+    assert topics.family({"family": "people", "topic": "How good people say their life is",
+                          "dataset": {"label": "Life rating (Cantril ladder)"}}) == "happiness"
+    assert topics.family({"family": "population", "topic": "Calories", "dataset": {}}) == "population"
+    assert topics.family({"family": "seas", "topic": "Something unmatched", "dataset": {}}) == "seas"
     # The decorum gate is untouched: no military family, and NO_GO still bars it.
     assert "military" not in {f[0] for f in topics.FAMILIES} and topics.NO_GO.search("Military expenditure")
 
@@ -245,3 +263,77 @@ def test_semantic_review_treats_an_ungrounded_why_as_an_unsourced_cause():
     from ytc.atlas import quality
     source = inspect.getsource(quality.review)
     assert "must rest on the definition in EVIDENCE" in source and "unsourced causes" in source
+
+
+# --- review fixes (2026-10-22) ------------------------------------------------------------------------------------
+
+def test_title_case_keeps_unit_symbols_as_written():
+    assert writer.title_case("people per km² in the most crowded places") == \
+        "People per km² in the Most Crowded Places"
+    assert writer.title_case("where 3,000 mm a year falls") == "Where 3,000 mm a Year Falls"
+    assert writer.title_case("is your country 5 m above the sea?") == "Is Your Country 5 m Above the Sea?"
+    assert writer.title_case("the mm and km of it") == "The Mm and Km of It"  # not after a number: ordinary words
+
+
+def test_framing_after_a_colon_or_vs_and_two_letter_codes():
+    assert writer.title_problems("Japan vs. the World: Who Is Older?") == []
+    assert writer.title_problems("DR Congo and the PM2.5 Map: Is YOUR Air Cleaner?") == []
+    assert any("capitals" in p for p in writer.title_problems("Is YOUR Air WAY Cleaner?"))
+
+
+def test_comparatives_and_why_titles_are_factual_in_the_semantic_review():
+    import inspect
+    from ytc.atlas import quality
+    source = " ".join(inspect.getsource(quality.review).split())
+    assert '"than you think"' not in source
+    assert 'its comparisons ("less crowded than", "twice as")' in source
+    assert 'A "Why" title claims a cause' in source
+
+
+def test_tags_drop_the_obscure_family_and_hashtags_keep_one_specific_then_maps():
+    ds = _dataset()
+    obscure = {"topic": "Container shipping", "dataset": {"indicator": "IS.SHP.GCNW.XQ", "label": "Shipping"}}
+    assert "obscure" not in writer.tags(obscure, ds, {"QAT": 1.0, "JPN": 2.0})
+    assert writer.hashtags({"topic": "Share born abroad", "dataset": {"indicator": "SM.POP.TOTL.ZS"},
+                            "hashtags": ["#migrants", "#diaspora"]}) == ["#migration", "#migrants", "#maps"]
+    assert writer.hashtags({"topic": "Share born abroad", "dataset": {"indicator": "SM.POP.TOTL.ZS"},
+                            "hashtags": ["#migration", "#diaspora"]}) == ["#migration", "#diaspora", "#maps"]
+
+
+def test_refill_runs_at_most_once_a_day_and_the_pipeline_saves_when_it_ran(tmp_path, monkeypatch):
+    now = datetime(2026, 10, 22, 12, tzinfo=timezone.utc)
+    asked = []
+    monkeypatch.setattr(topics, "indicators", lambda: asked.append(1) or [])
+    monkeypatch.setattr(topics.llm, "generate", lambda prompt, **k: {"ids": []})
+    cat = {"topics": []}
+    assert topics.refill(cat, now=now) == [] and len(asked) == 1
+    assert cat["refilled_at"] == "2026-10-22T12:00:00+00:00"
+    assert topics.refill(cat, now=now + timedelta(hours=8)) == [] and len(asked) == 1
+    assert topics.refill(cat, now=now + timedelta(hours=21)) == [] and len(asked) == 2
+    cat["refilled_at"] = "garbage"
+    topics.refill(cat, now=now)
+    assert len(asked) == 3
+
+
+def test_a_pulling_family_repeat_beats_the_obscure_tail_only_when_nothing_else_pulls(tmp_path, monkeypatch):
+    ds = lambda ind, label: {"indicator": ind, "label": label}  # noqa: E731
+    rows = [{"id": "t1", "topic": "Economic output per person", "dataset": ds("NY.GDP.PCAP.CD", "GDP per person"),
+             "status": "used:atlas075"},  # no "format": a map reveal
+            {"id": "t2", "topic": "Inflation", "dataset": ds("FP.CPI.TOTL.ZG", "Inflation"), "format": "map_reveal",
+             "status": "open"},
+            {"id": "t3", "topic": "Global Container Shipping Connectivity",
+             "dataset": ds("IS.SHP.GCNW.XQ", "Liner shipping connectivity"), "format": "rank_ladder", "status": "open"}]
+    _catalogue(tmp_path, monkeypatch, rows)
+    chosen = pipeline.pick()
+    assert chosen["id"] == "t2" and chosen["format"] == "rank_ladder"  # last had no format: a map reveal
+    rows.append({"id": "t4", "topic": "Share using the internet", "dataset": ds("IT.NET.USER.ZS", "Internet users"),
+                 "format": "map_reveal", "status": "open"})
+    _catalogue(tmp_path, monkeypatch, rows)
+    assert pipeline.pick()["id"] == "t4"
+
+
+def test_order_puts_a_stale_record_without_a_score_first(tmp_path):
+    now = datetime(2026, 10, 22, 12, tzinfo=timezone.utc)
+    best = _parked(tmp_path, "atlas090", family="wealth", score=30, rendered_at=(now - timedelta(hours=2)).isoformat())
+    legacy = _parked(tmp_path, "atlas060", rendered_at=(now - timedelta(hours=90)).isoformat())
+    assert publish.order([best, legacy], best, now) == [legacy, best]

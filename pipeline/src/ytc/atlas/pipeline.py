@@ -96,12 +96,15 @@ def pick() -> dict | None:
     recent = sorted((t for t in catalogue if re.search(r"atlas\d{3,}$", t.get("status", ""))),
                     key=lambda t: int(t["status"].split("atlas")[-1]), reverse=True)[:3]
     last = recent[0] if recent else {}
-    # Never two Shorts in a row from one family (a viewer sees the same story twice); then the families the audience
-    # pulls for (topics.FAMILIES) before the obscure tail; then balance the last 3 families (editorial variety, not a
-    # claim of algorithmic advantage); then topics marked with a higher priority; then a change of format.
-    chosen = min(candidates, key=lambda t: (bool(last) and family(last) == family(t), -topics.pull(t),
+    # Never two Shorts in a row from one family (a viewer sees the same story twice) while another family with some
+    # pull is open: with only the obscure tail left, a repeat of a pulling family beats a Short nobody searches for.
+    # Then the families the audience pulls for (topics.FAMILIES); then balance the last 3 families (editorial
+    # variety, not a claim of algorithmic advantage); then topics marked with a higher priority; then a change of
+    # format.
+    fresh = bool(last) and any(family(t) != family(last) and topics.pull(t) > 0 for t in candidates)
+    chosen = min(candidates, key=lambda t: (fresh and family(last) == family(t), -topics.pull(t),
                                             sum(family(old) == family(t) for old in recent), -t.get("priority", 0),
-                                            bool(last) and last.get("format") == t.get("format", "map_reveal")))
+                                            bool(last) and last.get("format", "map_reveal") == t.get("format", "map_reveal")))
     # Nor two of one visual shape in a row: a map reveal and a rank ladder tell any dataset, so swap rather than
     # fall back to a weaker topic.
     flip = {"map_reveal": "rank_ladder", "rank_ladder": "map_reveal"}
@@ -401,12 +404,16 @@ def run(reserve: int = RESERVE, minutes: float = 40, max_failures: int = MAX_FAI
             break
     numbers = stats.update(EPISODES, ROOT)
     added = []
+    cat = before = None
     try:
         cat = _catalogue()
-        if added := topics.refill(cat, numbers):
-            TOPICS.write_text(json.dumps(cat, indent=1, ensure_ascii=False) + "\n", encoding="utf-8")
+        before = cat.get("refilled_at")
+        added = topics.refill(cat, numbers)
     except Exception as err:  # a failed refill mustn't stop today's renders
         log.exception("topic refill failed: %s", err)
+    # Saved even when the refill added nothing or failed, so its refilled_at holds the next one off for a day.
+    if cat is not None and (added or cat.get("refilled_at") != before):
+        TOPICS.write_text(json.dumps(cat, indent=1, ensure_ascii=False) + "\n", encoding="utf-8")
     made, failed, skipped = [], [], []
     took = []
     while len(ready()) < reserve and len(failed) < max_failures and time.monotonic() - started < minutes * 60 \

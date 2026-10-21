@@ -13,6 +13,7 @@ import json
 import logging
 import re
 import statistics
+from datetime import datetime, timedelta, timezone
 
 import requests
 
@@ -25,6 +26,9 @@ log = logging.getLogger(__name__)
 MIN_OPEN = 12
 ADD = 10
 SHORTLIST = 24
+# A refill (a shortlist call, then a fetch, an audit and 1-2 spec calls for each pick) runs at most once a day, so a
+# refill that adds little can't eat every run's draft minutes and Modal credit (review 2026-10-22).
+REFILL_EVERY = timedelta(hours=20)
 RATIO = re.compile(r"(%|per |\(years\)|per capita|ratio|rate|share|index|\(days\)|\(hours\))", re.I)
 NO_GO = re.compile(
     r"(military|armed|arms |weapon|conflict|battle|war\b|terror|refugee|asylum|homicide|suicide|death|mortality|"
@@ -59,13 +63,16 @@ _FAMILY_RES = tuple((name, pull, tag, re.compile(rx, re.I)) for name, pull, tag,
 
 
 def _family_row(topic: dict) -> tuple[str, int, str]:
-    """(family, pull, hashtag). An explicit catalogue "family" keeps its name; one FAMILIES doesn't know ("food")
-    takes the pull and hashtag of the keywords it matches."""
+    """(family, pull, hashtag). An explicit catalogue "family" FAMILIES knows wins; one it doesn't ("food", "people")
+    becomes the family its keywords match, so "food" after "health" counts as a repeat; with no match it keeps its
+    own name."""
     ds = topic.get("dataset", {})
     text = " ".join([topic.get("topic", ""), ds.get("label", ""), ds.get("indicator", "") or ds.get("slug", "")])
     known = next((r for r in _FAMILY_RES if r[0] == topic.get("family")), None)
-    match = known or next((r for r in _FAMILY_RES if r[3].search(text)), ("other", 1, "#data", None))
-    return topic.get("family") or match[0], match[1], match[2]
+    match = known or next((r for r in _FAMILY_RES if r[3].search(text)), None)
+    if match is None:
+        return topic.get("family") or "other", 1, "#data"
+    return match[0], match[1], match[2]
 
 
 def family(topic: dict) -> str:
@@ -224,13 +231,21 @@ def _performance(stats: list[dict]) -> str:
     return f"Comparable early checkpoints, observational not causal. Best: {best}. Worst: {worst}.\n"
 
 
-def refill(catalogue: dict, stats: list[dict] | None = None, add: int = ADD) -> list[dict]:
-    """New topics appended to the catalogue (in place) when it's running low; [] when it isn't."""
+def refill(catalogue: dict, stats: list[dict] | None = None, add: int = ADD, now: datetime | None = None) -> list[dict]:
+    """New topics appended to the catalogue (in place) when it's running low; [] when it isn't, or when a refill
+    already ran within REFILL_EVERY (catalogue["refilled_at"], set before any model call)."""
     topics = catalogue["topics"]
     # The obscure tail (pull 0) doesn't count as stock: 10 of the 12 open topics on 2026-10-22 were trade shares and
     # firm surveys, which would have held the refill off for four days of Shorts nobody searches for.
     if sum(t.get("status") == "open" and pull(t) > 0 for t in topics) >= MIN_OPEN:
         return []
+    now = now or datetime.now(timezone.utc)
+    try:
+        if now - datetime.fromisoformat(catalogue["refilled_at"]) < REFILL_EVERY:
+            return []
+    except (KeyError, TypeError, ValueError):
+        pass
+    catalogue["refilled_at"] = now.isoformat(timespec="seconds")
     used = {t["dataset"].get("indicator") for t in topics}
     pool = [r for r in indicators() if r["id"] not in used
             and pull({"topic": r["name"], "dataset": {"indicator": r["id"]}}) > 0]

@@ -375,9 +375,10 @@ def studio_run(trigger: str = "schedule", args: list[str] | None = None) -> dict
 
 
 # 01:10, 09:10 and 17:10 UTC (evening, early morning and midday in New York), every 8 hours: each run
-# tops the outbox back up to atlas.pipeline.RESERVE rendered Shorts, ahead of the publisher's slots
-# (atlas.publish.SLOTS). Two runs a day made 2 Shorts a day for 3 slots (2026-10-17..21). Three, not four: this
-# workspace's $30 of monthly credit had $10 left for 2026-10-22..31 at about $0.3 a run. A run lasts under
+# tops the outbox back up to atlas.pipeline.RESERVE rendered Shorts, ahead of the publisher's 2 slots a day
+# (atlas.publish.SLOTS, 3 until 2026-10-22). Two runs a day made 2 Shorts a day for 3 slots (2026-10-17..21), so
+# three runs give the 2 slots a buffer. Three, not four: this workspace's $30 of monthly credit had $10 left for
+# 2026-10-22..31 at about $0.3 a run. A run lasts under
 # ATLAS_MINUTES, so runs never overlap (max_containers=1 as well). Takes effect only after a Modal redeploy.
 ATLAS_SCHEDULE = "10 1,9,17 * * *"
 ATLAS_MINUTES = 50
@@ -470,6 +471,7 @@ def atlas_topics_preview(add: int = 3) -> list[dict]:
         cat = json.loads(response.read())
     for t in cat["topics"]:
         t["status"] = "used"
+    cat.pop("refilled_at", None)  # a preview isn't held off by the producer's once-a-day refill
     return topics.refill(cat, add=add)
 
 
