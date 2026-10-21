@@ -244,7 +244,7 @@ def test_review_rejects_published_misleading_numbers_before_any_model_call(tmp_p
 
 def test_producer_runs_four_times_a_day_and_spends_up_to_four_failures():
     from ytc import cloud
-    assert cloud.ATLAS_SCHEDULE == "10 1,7,13,19 * * *"
+    assert cloud.ATLAS_SCHEDULE == "10 1,9,17 * * *"
     assert inspect.signature(pipeline.run).parameters["max_failures"].default == pipeline.MAX_FAILURES == 4
 
 

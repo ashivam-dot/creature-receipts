@@ -374,11 +374,12 @@ def studio_run(trigger: str = "schedule", args: list[str] | None = None) -> dict
     return {"exit": code, "saved": saved, "minutes": round((datetime.now(timezone.utc) - started).total_seconds() / 60, 1)}
 
 
-# 01:10, 07:10, 13:10 and 19:10 UTC (evening, night, morning and afternoon in New York), every 6 hours: each run
+# 01:10, 09:10 and 17:10 UTC (evening, early morning and midday in New York), every 8 hours: each run
 # tops the outbox back up to atlas.pipeline.RESERVE rendered Shorts, ahead of the publisher's slots
-# (atlas.publish.SLOTS). Two runs a day made 2 Shorts a day for 3 slots (2026-10-17..21). A run lasts under
+# (atlas.publish.SLOTS). Two runs a day made 2 Shorts a day for 3 slots (2026-10-17..21). Three, not four: this
+# workspace's $30 of monthly credit had $10 left for 2026-10-22..31 at about $0.3 a run. A run lasts under
 # ATLAS_MINUTES, so runs never overlap (max_containers=1 as well). Takes effect only after a Modal redeploy.
-ATLAS_SCHEDULE = "10 1,7,13,19 * * *"
+ATLAS_SCHEDULE = "10 1,9,17 * * *"
 ATLAS_MINUTES = 50
 # A channel that has had nothing go out for this long has stopped, whatever the runs say.
 ATLAS_QUIET_HOURS = 36
