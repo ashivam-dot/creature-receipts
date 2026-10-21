@@ -232,6 +232,9 @@ def review(ep: AtlasEpisode, ds: Dataset, folder: Path) -> dict:
         said_before = " ".join(beats[:int(surface[5:]) + 1]) if surface.startswith("beat_") else value
         deterministic.extend(f"{surface}: {problem}" for problem in writer.misleading_numbers(
             value, explained=bool(writer._GROSS.search(said_before)), **kind))
+    # A title that reads as a spreadsheet row or an error (writer.title_lint), before any model call or render.
+    deterministic.extend(f"title: {problem}" for problem in writer.title_lint(
+        ep.title, label=ds.label or ep.dataset.label, indicator=ds.indicator or ep.dataset.indicator))
     if deterministic:
         raise ValueError("entity binding: " + "; ".join(deterministic))
     shots = {f"beat_{i}": b.shot.model_dump() for i, b in enumerate(ep.beats)}

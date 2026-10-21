@@ -201,7 +201,9 @@ def _draft(card: str = "How many doctors does your country have?", extra: str = 
              {"shot": "country", "isos": ["IND"], "text": "India has 0.7 for every 1,000 people, below the median."},
              {"shot": "country", "isos": ["USA"], "text": "The USA has 3.6, well above the median."},
              {"shot": "card", "text": card}]
-    return {"title": "Cuba has 9.5 doctors per 1,000. Niger, 0.02", "hook_text": "DOCTOR DIVIDE", "beats": beats}
+    # Not "Cuba has 9.5 doctors per 1,000. Niger, 0.02" any more: a title ending on a bare value reads like a
+    # table row (writer.title_lint, 2026-10-22).
+    return {"title": "Cuba has 9.5 doctors per 1,000. Does YOUR country?", "hook_text": "DOCTOR DIVIDE", "beats": beats}
 
 
 def _check(draft: dict, **kwargs) -> list[str]:
@@ -260,6 +262,15 @@ def test_queued_ready_shorts_stay_accepted():
     if not waiting:
         pytest.skip("no Short is waiting in content/atlas")
     for folder in waiting:
+        if pipeline.title_held(folder):
+            # A title the publisher would hold is the one exception (writer.title_lint, 2026-10-22); everything
+            # else about the parked Short must still be accepted. atlas075 is already published
+            # (history-last-hours-control atlas/published.json); this checkout just has no publish.json for it.
+            import unittest.mock
+            with unittest.mock.patch.object(pipeline, "title_held", lambda f: []):
+                assert pipeline._accepted(folder), folder.name
+            assert not pipeline._accepted(folder), folder.name
+            continue
         assert pipeline._accepted(folder), folder.name
 
 

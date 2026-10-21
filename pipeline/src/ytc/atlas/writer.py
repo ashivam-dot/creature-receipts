@@ -110,7 +110,9 @@ How a great Atlas script works:
   "Why": a title that promises a cause needs one the data doesn't give. A comparison in the title ("less crowded
   than", "twice as") is a claim the values must show. Any number in the title is a value from the summary for a
   country the beats name. True by the data: never "don't exist", "nobody", "zero" or "everyone" unless the values
-  say exactly that (hedge with "almost"). At most one word in capitals for emphasis, no "!", no emoji.
+  say exactly that (hedge with "almost"). At most one word in capitals for emphasis, no "!", no emoji. It must
+  not read like a spreadsheet row: no indicator codes, no unit in brackets, no value with 2 or more decimals
+  (except under 1), never ending on a bare value ("... to DR Congo 0.6"), and no index value as if it were a price.
 - hook_text: 2-5 words in capitals shown on screen over beat 1, adding to (not repeating) the spoken hook.
 - card_lines: 2 short lines for the end card: a 2-4 word question, then the dataset label.
 {feedback}"""
@@ -474,9 +476,10 @@ def number_problems(text: str, allowed: set[str], owners: dict[str, set[str]] | 
 
 
 def problems(draft: dict, allowed: set[str], owners: dict[str, set[str]], vals: dict[str, float],
-             quoted: str = "", measure: dict | None = None, topic: set[str] | None = None) -> list[str]:
+             quoted: str = "", measure: dict | None = None, topic: set[str] | None = None, *, label: str = "",
+             indicator: str = "") -> list[str]:
     """`measure` is measure_kind of the dataset (with its fall_numbers as "falls"); `topic` its topic_words, which
-    the card question must share."""
+    the card question must share; `label` and `indicator` the dataset's, for title_lint."""
     out = []
     beats = draft.get("beats", [])
     words = sum(len(b["text"].split()) for b in beats)
@@ -543,9 +546,10 @@ def problems(draft: dict, allowed: set[str], owners: dict[str, set[str]], vals: 
     for i, b in enumerate(beats, 1):
         explained = any(_GROSS.search(x["text"]) for x in beats[:i])
         out += [f"beat {i}: {p}" for p in misleading_numbers(b["text"], explained=explained, **kind)]
-    for where in ("title", "hook_text"):
-        text = draft.get(where, "")
-        out += [f"{where}: {p}" for p in misleading_numbers(text, explained=bool(_GROSS.search(text)), **kind)]
+    hook = draft.get("hook_text", "")
+    out += [f"hook_text: {p}" for p in misleading_numbers(hook, explained=bool(_GROSS.search(hook)), **kind)]
+    out += [f"title: {p}" for p in title_lint(fix_title(draft.get("title", "")), label=label, indicator=indicator,
+                                              kind=kind)]
     for i, b in enumerate(beats, 1):
         isos = b.get("isos", [])
         out += [f"beat {i}: {p}" for p in number_problems(b["text"], allowed, owners,
@@ -638,6 +642,76 @@ def title_problems(title: str, *, ranked_ok: bool = False) -> list[str]:
     return out
 
 
+# Hard title rules (revenue-push gap audit #9, 2026-10-22), from titles that went out: "places Where One City Holds
+# 92% of City Dwellers" (atlas030), "Cuba has 9.5 doctors while Niger has 0.0" (atlas021), "Why Greece Has 165.1%
+# College Enrollment" (atlas053), "Where More Boys Are Born: 1.01 to 1.11 Worldwide" (atlas056), "Bulgaria Has 93.8
+# Bank Branches to DR Congo 0.6" (atlas075) and "Household Goods Cost 130 in Iceland but 100 in USA" (atlas054, a
+# price index whose 100 is the US, not a price).
+_DECIMALS = re.compile(r"(?<![\d.,])(\d[\d,]*)\.(\d{2,})(?!\d)")
+_MONEY = re.compile(r"[$€£₹]\s*$")
+_CODE = re.compile(r"\b[A-Z][A-Z0-9]+(?:\.[A-Z0-9]{2,}){2,}\b")
+_BRACKETS = re.compile(r"[(\[][^)\]]*[)\]]")
+_BARE_END = re.compile(r"\b([A-Z][\w.'’-]*),?\s+[-−]?\d[\d,]*(?:\.\d+)?%?\s*[?.]?\s*$")
+# Words before a final number that make it a threshold or a count, not a table cell ("Reaches 80", "The Top 10").
+_NOT_A_CELL = frozenset("top lowest bottom part no reaches hits tops passes exceeds above below over under than past "
+                        "beyond".split())
+_INDEX = re.compile(r"\bindex\b|=\s*100\b", re.I)
+
+
+def fix_title(title: str) -> str:
+    """The deterministic title repairs: "countries" is "places" (the data covers territories too), then Title Case
+    (a lowercase "places" shipped on 6 Shorts). Done before the checks, so a lowercase word never costs a rewrite."""
+    return title_case(re.sub(r"\bcountries\b", _places, title, flags=re.I))
+
+
+def title_lint(title: str, *, label: str = "", indicator: str = "", kind: dict | None = None) -> list[str]:
+    """Hard rules for a title a viewer would read as an error or a spreadsheet row. With `kind` (misleading_numbers'
+    view of the dataset: zero_ok, gross, growth, falls, quoted) it also runs the misleading-number guard, so a nonzero
+    shown as 0 or an unexplained share over 100% is caught the same way as in the beats. The writer, quality.review
+    and publish.schedule all run it; the publisher (control/atlas.py) keeps its own copy of the plainest rules."""
+    out = []
+    if kind is not None:
+        out += misleading_numbers(title, explained=bool(_GROSS.search(title)), **kind)
+    lower = [m.group(0) for m, fixed in zip(_WORD.finditer(title), _WORD.finditer(title_case(title)))
+             if m.group(0) != fixed.group(0) and m.group(0)[:1].islower() and m.group(0) not in _SMALL]
+    if lower:
+        out.append(f"the title isn't in Title Case ('{lower[0]}'); capitalise every word but short ones like 'of'")
+    for m in _DECIMALS.finditer(title):
+        whole = float(m.group(1).replace(",", ""))
+        if len(m.group(2)) > 2 or (whole >= 1 and not _MONEY.search(title[:m.start()])):
+            out.append(f"'{m.group(0)}' in the title is over-precise; leave the number out or use one a person "
+                       "would say")
+    if (code := _CODE.search(title)) or (indicator and len(indicator) > 4 and indicator.lower() in title.lower()):
+        out.append(f"the title quotes the indicator code '{code.group(0) if code else indicator}'; name the "
+                   "thing in plain words")
+    if bracket := _BRACKETS.search(title):
+        out.append(f"'{bracket.group(0)}' in the title reads like a column header; say the unit in words or drop it")
+    if label and "," in label and re.sub(r"\s+", " ", label.lower()) in re.sub(r"\s+", " ", title.lower()):
+        out.append(f"the title copies the dataset label '{label}'; say what it means in plain words")
+    end = _BARE_END.search(title)
+    if len(_NUMBER.findall(title)) >= 2 and end and end.group(1).lower() not in _SMALL | _NOT_A_CELL:
+        out.append("the title ends on a bare value after a name, like a table row ('... to DR Congo 0.6'); frame "
+                   "it as a question or a contrast in words")
+    if _INDEX.search(label or "") and _NUMBER.search(title) and not re.search(r"\bindex\b", title, re.I):
+        out.append(f"the title gives a value of an index ({label}) as if it were a price or a count; leave the "
+                   "number out or call it an index")
+    return out
+
+
+def dataset_kind(ds: Dataset, fmt: str) -> dict:
+    """misleading_numbers' view of a whole dataset. Every place with data counts, not only the visible ones the
+    writer may name, so this is never stricter than the writer: a title it passed is never held later."""
+    return {"zero_ok": any(v == 0 for v in ds.values.values()), "falls": fall_numbers(ds.values, fmt),
+            "quoted": ds.definition or "", **measure_kind(ds.label, ds.indicator)}
+
+
+def episode_title_lint(ep: AtlasEpisode, ds: Dataset) -> list[str]:
+    """title_lint of a finished Short against its own dataset snapshot: what publish.schedule and
+    pipeline._accepted check before a parked Short may be scheduled or counted as reserve."""
+    return title_lint(ep.title, label=ds.label or ep.dataset.label, indicator=ds.indicator or ep.dataset.indicator,
+                      kind=dataset_kind(ds, ep.value_format))
+
+
 def style_problems(draft: dict, definition: str = "") -> list[str]:
     """Advisory rules (2026-10-22): the title's framing and the why-the-gap beat. Unlike problems(), the last draft
     may ship with these, and a draft that passed problems() is kept, so a style rule never costs a story. The
@@ -697,8 +771,9 @@ def write(topic: dict, ds: Dataset, episode_id: str, series: str = "") -> AtlasE
     if len(vals) < MIN_COUNTRIES:
         raise RuntimeError(f"only {len(vals)} countries have data; an Atlas map needs {MIN_COUNTRIES}")
     shown = visible(vals)
-    measure = {**measure_kind(ds.label or topic.get("dataset", {}).get("label", ""), ds.indicator or
-                              topic.get("dataset", {}).get("indicator", "")), "falls": fall_numbers(vals, fmt)}
+    dataset = {"label": ds.label or topic.get("dataset", {}).get("label", ""),
+               "indicator": ds.indicator or topic.get("dataset", {}).get("indicator", "")}
+    measure = {**measure_kind(dataset["label"], dataset["indicator"]), "falls": fall_numbers(vals, fmt)}
     # Not the angle: a rewrite appends the rejected script (with its old card line) to it.
     subject = topic_words(topic["topic"], ds.label, ds.unit, topic.get("definition_text", ""),
                           *topic.get("hashtags", []))
@@ -717,6 +792,7 @@ def write(topic: dict, ds: Dataset, episode_id: str, series: str = "") -> AtlasE
                              purpose=f"atlas script {episode_id}")
         for beat in [*draft.get("beats", []), *draft.get("opening_options", [])]:
             beat["text"] = spoken(plain(strip_codes(beat["text"], set(vals))))
+        draft["title"] = fix_title(draft.get("title", ""))
         # Bind named country/value clauses to their world-shot callouts instead of wasting a rewrite.
         for beat in draft.get("beats", []):
             if beat["shot"] != "world":
@@ -736,10 +812,11 @@ def write(topic: dict, ds: Dataset, episode_id: str, series: str = "") -> AtlasE
             candidate = copy.deepcopy(draft)
             candidate["beats"][0]["text"] = option["text"]
             candidate["hook_text"] = option["hook_text"]
-            if not problems(candidate, allowed, owners, shown, topic.get("definition_text", ""), measure, subject):
+            if not problems(candidate, allowed, owners, shown, topic.get("definition_text", ""), measure, subject,
+                            **dataset):
                 draft = candidate
                 break
-        found = problems(draft, allowed, owners, shown, topic.get("definition_text", ""), measure, subject)
+        found = problems(draft, allowed, owners, shown, topic.get("definition_text", ""), measure, subject, **dataset)
         if found and passed is not None:
             # The one style rewrite broke a hard rule: ship the draft before it rather than spend more drafts.
             log.info("%s draft %d broke a rule after a style rewrite (%s); shipping draft %d", episode_id, attempt,
@@ -779,7 +856,7 @@ def precise(fmt: str, values) -> str:
 
 def _episode(draft: dict, topic: dict, episode_id: str, series: str, record_tags: list[str] | None = None) -> AtlasEpisode:
     # Aggregate totals cover World Bank countries AND territories; repair this terminology deterministically.
-    draft["title"] = title_case(re.sub(r"\bcountries\b", _places, draft["title"], flags=re.I))
+    draft["title"] = fix_title(draft["title"])
     draft["hook_text"] = re.sub(r"\bcountries\b", "PLACES", draft["hook_text"], flags=re.I)
     draft["description"] = re.sub(r"\bcountries\b(?! and territories)", "countries and territories", draft["description"], flags=re.I)
     beats = []

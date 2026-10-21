@@ -231,12 +231,25 @@ def _waiting() -> list[Path]:
                   if EPISODE_ID.fullmatch(p.parent.name) and not (p.parent / "publish.json").exists())
 
 
+def title_held(folder: Path) -> list[str]:
+    """What publish.schedule would hold this parked Short's title for (writer.episode_title_lint). Such a Short is
+    not reserve: the run re-makes it, and the re-review (quality.review runs writer.title_lint) rewrites the script
+    before it renders again. An unreadable script or snapshot is left to the receipt checks."""
+    try:
+        ep, ds = AtlasEpisode.load(folder / "atlas.yaml"), Dataset.load(folder / "data.json")
+    except Exception:
+        return []
+    return writer.episode_title_lint(ep, ds)
+
+
 def _accepted(folder: Path) -> bool:
     try:
         record = json.loads((folder / "ready.json").read_text())
         if record["id"] != folder.name or record["modal_volume"] != OUTBOX_VOLUME or record.get("format") != FORMAT:
             return False
         if not current_script(folder):
+            return False
+        if title_held(folder):
             return False
         if record.get("qa_sha256") != quality.digest(folder / "qa.json"):
             return False

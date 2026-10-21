@@ -12,6 +12,7 @@ from __future__ import annotations
 import json
 import logging
 import os
+import re
 from datetime import datetime, time, timedelta
 from pathlib import Path
 
@@ -32,6 +33,15 @@ MIN_LEAD = timedelta(minutes=30)
 # A slot with a post this close to it is taken.
 SLOT_GAP = timedelta(minutes=60)
 MAP_CREDIT = "Globe: NASA Blue Marble and Black Marble (public domain). Borders: Natural Earth (public domain)."
+# How every Short is made, on every description (revenue-push plan, cross-channel: an editorial-process line beside
+# the dataset citation). Each claim is one the code really enforces: writer.number_problems and
+# quality.entity_value_errors check every number and country, quality.review is a second model's read against the
+# official definition, and quality.media checks the encoded narration against the script.
+EDITORIAL = ("How this Short is made: one official dataset, the latest value for each place (not a trend). The "
+             "script is written with AI; every number and country in it is checked in code against the data above, "
+             "a second AI review reads it against the dataset's official definition, and the finished narration is "
+             "checked against the script before it is published. Narrated with a synthetic voice. Spot an error? "
+             "Say so in the comments and it will be checked against the source.")
 # The producer's committed episodes. The publisher schedules from a temporary folder holding only the video, so the
 # credits are read from here when that folder has none.
 EPISODES = Path(__file__).resolve().parents[4] / "content" / "atlas"
@@ -50,13 +60,26 @@ def photo_credits(folder: Path | None, episode_id: str = "") -> str:
     return "Photos from Wikimedia Commons:\n" + "\n".join(lines) if lines else ""
 
 
+def _indicator(ds: Dataset) -> str:
+    """The World Bank indicator code, so anyone can look the series up ("Indicator SH.MED.PHYS.ZS."); nothing for
+    an Our World in Data slug, whose URL already names it."""
+    code = ds.indicator or ""
+    return f" Indicator {code}." if re.fullmatch(r"[A-Z][A-Z0-9]*(?:\.[A-Z0-9]+)+", code) else ""
+
+
+def title_problems(ep: AtlasEpisode, ds: Dataset) -> list[str]:
+    """The last title check before Buffer (writer.episode_title_lint); the publisher calls it too."""
+    from .writer import episode_title_lint
+    return episode_title_lint(ep, ds)
+
+
 def description(ep: AtlasEpisode, ds: Dataset, folder: Path | None = None) -> str:
     sources = "\n".join(ep.sources) if ep.sources else ds.url
     blocks = [
         ep.description,
-        f"Data: {ds.label}, {ds.source}, {ds.year_label} ({ds.license}).\n{sources}\n{MAP_CREDIT}",
+        f"Data: {ds.label}, {ds.source}, {ds.year_label} ({ds.license}).{_indicator(ds)}\n{sources}\n{MAP_CREDIT}",
         photo_credits(folder, ep.id),
-        "Script written with AI and checked number by number against the data. Narrated with a synthetic voice.",
+        EDITORIAL,
         f"Atlas episode: {ep.id}",
         " ".join(ep.hashtags[:3]),
     ]
@@ -115,6 +138,8 @@ def schedule(ep: AtlasEpisode, folder: Path, ds: Dataset, video: Path) -> dict:
     record_path = folder / "publish.json"
     if record_path.exists():
         return json.loads(record_path.read_text(encoding="utf-8"))
+    if bad := title_problems(ep, ds):
+        raise ValueError(f"{ep.id}: title held, {'; '.join(bad)}")
     text = description(ep, ds, folder)
     title = pub._youtube_text(ep.title)[:TITLE_CHARS]
     recent = pub.posts(since=datetime.now(pub.AUDIENCE_TZ) - timedelta(days=30))
