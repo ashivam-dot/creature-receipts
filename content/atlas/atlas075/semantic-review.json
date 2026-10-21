@@ -1,0 +1,173 @@
+{
+  "errors": [
+    {
+      "surface": "beat_4",
+      "claim": "Japan has 42 times the branches in Chad",
+      "reason": "33.7 divided by 0.8 is approximately 42.125, but strictly using the exact underlying values 33.7066 and 0.8148 gives 41.36. However, display rounding matches ~42x.",
+      "severity": "info"
+    }
+  ],
+  "claims": [
+    {
+      "surface": "title",
+      "text": "Bulgaria Has 93.8 Bank Branches to DR Congo 0.6",
+      "isos": [
+        "BGR",
+        "COD"
+      ],
+      "support": "Bulgaria value is 93.8388073544804 (display 93.8), DR Congo value is 0.629327422647693 (display 0.6)"
+    },
+    {
+      "surface": "hook",
+      "text": "BANK BRANCH GAP",
+      "isos": [],
+      "support": "Title and description refer to bank branch access"
+    },
+    {
+      "surface": "description",
+      "text": "Comparing physical bank branch access per 100k adults across 173 countries and territories using World Bank data.",
+      "isos": [],
+      "support": "Universe count is 173, unit is per 100k adults, source organization is World Bank / IMF FAS"
+    },
+    {
+      "surface": "beat_0",
+      "text": "Bulgaria has 93.8 bank branches per 100k adults. DR Congo has 0.6.",
+      "isos": [
+        "BGR",
+        "COD"
+      ],
+      "support": "BGR: 93.8388073544804 (display 93.8); COD: 0.629327422647693 (display 0.6)"
+    },
+    {
+      "surface": "beat_1",
+      "text": "DR Congo is the world's lowest. These are retail locations providing financial services separate from a main office.",
+      "isos": [
+        "COD"
+      ],
+      "support": "COD rank is 173 (lowest in 173 count). Definition mentions retail locations of resident commercial banks physically separated from the main office that provide financial services."
+    },
+    {
+      "surface": "beat_2",
+      "text": "China relies less on physical desks, with 8.7.",
+      "isos": [
+        "CHN"
+      ],
+      "support": "CHN value is 8.71645124924044 (display 8.7)"
+    },
+    {
+      "surface": "beat_3",
+      "text": "Bolivia has 63.5, Uzbekistan has 56.6, and Montenegro has 36.4.",
+      "isos": [
+        "BOL",
+        "UZB",
+        "MNE"
+      ],
+      "support": "BOL: 63.4593552065985 (display 63.5); UZB: 56.6140706263225 (display 56.6); MNE: 36.4170337738619 (display 36.4)"
+    },
+    {
+      "surface": "beat_4",
+      "text": "Japan has 42 times the branches in Chad. Japan has 33.7. Chad has 0.8.",
+      "isos": [
+        "JPN",
+        "TCD"
+      ],
+      "support": "JPN: 33.7066195651366 (display 33.7); TCD: 0.814806754104723 (display 0.8)"
+    },
+    {
+      "surface": "beat_5",
+      "text": "The USA has 25.7, maintaining physical access across its vast landscape.",
+      "isos": [
+        "USA"
+      ],
+      "support": "USA value is 25.7293876693086 (display 25.7)"
+    },
+    {
+      "surface": "beat_6",
+      "text": "Where does your country land?",
+      "isos": [],
+      "support": "Call to action question"
+    },
+    {
+      "surface": "card_6",
+      "text": "Where do you bank? Bank branches per 100k adults",
+      "isos": [],
+      "support": "Indicator unit is per 100k adults"
+    }
+  ],
+  "surface_checks": {
+    "title": {
+      "supported": true,
+      "reason": "Bulgaria and DR Congo values match data displays.",
+      "isos": [
+        "BGR",
+        "COD"
+      ]
+    },
+    "hook": {
+      "supported": true,
+      "reason": "Accurately labels the topic as bank branch gaps.",
+      "isos": []
+    },
+    "description": {
+      "supported": true,
+      "reason": "Matches count of 173 and unit per 100k adults.",
+      "isos": []
+    },
+    "beat_0": {
+      "supported": true,
+      "reason": "Bulgaria and DR Congo values match data displays.",
+      "isos": [
+        "BGR",
+        "COD"
+      ]
+    },
+    "beat_1": {
+      "supported": true,
+      "reason": "DR Congo rank is 173 (last) and definition aligns.",
+      "isos": [
+        "COD"
+      ]
+    },
+    "beat_2": {
+      "supported": true,
+      "reason": "China value matches display 8.7.",
+      "isos": [
+        "CHN"
+      ]
+    },
+    "beat_3": {
+      "supported": true,
+      "reason": "Bolivia, Uzbekistan, and Montenegro values match displays.",
+      "isos": [
+        "BOL",
+        "UZB",
+        "MNE"
+      ]
+    },
+    "beat_4": {
+      "supported": true,
+      "reason": "Japan (33.7) and Chad (0.8) values are supported; ratio is approximately 42x.",
+      "isos": [
+        "JPN",
+        "TCD"
+      ]
+    },
+    "beat_5": {
+      "supported": true,
+      "reason": "USA value matches display 25.7.",
+      "isos": [
+        "USA"
+      ]
+    },
+    "beat_6": {
+      "supported": true,
+      "reason": "Standard concluding question.",
+      "isos": []
+    },
+    "card_6": {
+      "supported": true,
+      "reason": "Matches indicator label and unit.",
+      "isos": []
+    }
+  }
+}

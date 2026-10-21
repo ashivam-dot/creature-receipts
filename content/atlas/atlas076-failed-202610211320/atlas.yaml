@@ -1,0 +1,61 @@
+id: atlas076
+title: Where High-Tech Dominates Factory Exports
+hook_text: THE HIGH-TECH DIVIDE
+description: In half of all countries and territories, high-tech products account for under 6.8361% of manufactured
+  exports, while in hubs like the Philippines they surpass 50%.
+hashtags:
+- '#maps'
+- '#geography'
+- '#globaltrade'
+sources:
+- https://data.worldbank.org/indicator/TX.VAL.TECH.MF.ZS
+dataset:
+  kind: worldbank
+  indicator: TX.VAL.TECH.MF.ZS
+  label: High-tech share of manufactured exports
+  unit: '%'
+  source: World Bank
+  min_year: 2019
+scale:
+  edges:
+  - 2.5
+  - 7.0
+  - 17.5
+  - 30.0
+  labels:
+  - Under 2.5%
+  - 2.5% to 7%
+  - 7% to 17.5%
+  - 17.5% to 30%
+  - Over 30%
+value_format: '{v:.4f}%'
+beats:
+- text: In half of all countries, high-tech products account for under 6.8361% of manufactured exports.
+- text: High-technology exports are products with high R&D intensity, such as in aerospace, computers, pharmaceuticals,
+    scientific instruments, and electrical machinery.
+- text: Nigeria is at 2.7117%. Most of its exports fall outside these high-tech categories.
+  shot:
+    kind: country
+    iso: NGA
+- text: In contrast, the Philippines hits 60.3970%. It is a major hub for global electronics.
+  shot:
+    kind: country
+    iso: PHL
+- text: The Philippines has 22 times the high-tech export share that Nigeria does.
+  shot:
+    kind: group
+    isos:
+    - PHL
+    - NGA
+- text: Meanwhile, the USA sits at 24.3230%, and Brazil is at 11.1104%.
+  shot:
+    kind: group
+    isos:
+    - USA
+    - BRA
+- text: Where does your country land?
+  shot:
+    kind: card
+    lines:
+    - Where does your country land?
+    - High-tech share of manufactured exports (%)

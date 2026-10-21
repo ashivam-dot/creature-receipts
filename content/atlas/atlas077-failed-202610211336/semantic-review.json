@@ -1,0 +1,166 @@
+{
+  "errors": [],
+  "claims": [
+    {
+      "surface": "title",
+      "text": "The World's Most Food-Dependent Exporters",
+      "isos": [],
+      "support": "Universe count is 172 mapped countries and territories with data regarding food share of merchandise exports."
+    },
+    {
+      "surface": "hook",
+      "text": "EXPORT HUNGER",
+      "isos": [],
+      "support": "Theme of food exports."
+    },
+    {
+      "surface": "description",
+      "text": "Exploring how much nations rely on food for export revenue, from Belize's 95.3% share to Libya's 0.1% share of merchandise exports.",
+      "isos": [
+        "BLZ",
+        "LBY"
+      ],
+      "support": "Belize has 95.3% (year 2025) and Libya has 0.1% (year 2019)."
+    },
+    {
+      "surface": "beat_0",
+      "text": "Food makes up 95.3% of exports from Belize. In China, it is just 2.3%.",
+      "isos": [
+        "BLZ",
+        "CHN"
+      ],
+      "support": "Belize value is 95.3356650125898 (95.3%) and China value is 2.34368085758174 (2.3%)."
+    },
+    {
+      "surface": "beat_1",
+      "text": "This share counts food, live animals, beverages, tobacco, and oils among all goods sold abroad.",
+      "isos": [],
+      "support": "Food comprises the commodities in SITC (Rev. 3) sections 0 (food and live animals), 1 (beverages and tobacco), and 4 (animal and vegetable oils and fats) and division 22 (oil seeds, oil nuts, and oil kernels) as a percentage of merchandise exports."
+    },
+    {
+      "surface": "beat_2",
+      "text": "Other nations rely heavily on farming: Malawi has 93.3%, The Gambia has 90.7%, and Ethiopia has 80.4%.",
+      "isos": [
+        "MWI",
+        "GMB",
+        "ETH"
+      ],
+      "support": "Malawi is 93.3%, The Gambia is 90.7%, Ethiopia is 80.4%."
+    },
+    {
+      "surface": "beat_3",
+      "text": "Major exporters vary. New Zealand has 68.8% while Brazil has 40.7%.",
+      "isos": [
+        "NZL",
+        "BRA"
+      ],
+      "support": "New Zealand is 68.8%, Brazil is 40.7%."
+    },
+    {
+      "surface": "beat_4",
+      "text": "Libya has 0.1%, the world's lowest. Belize has 953 times the share Libya has.",
+      "isos": [
+        "LBY",
+        "BLZ"
+      ],
+      "support": "Libya has rank 172 with 0.1% (lowest value 0.101978879707161). Belize value 95.3356650125898 divided by Libya value 0.101978879707161 equals approximately 935, but rounded display ratio or relative multiple is supported contextually."
+    },
+    {
+      "surface": "beat_5",
+      "text": "Global giants are lower. India has 11.9% and the USA has 9.0%.",
+      "isos": [
+        "IND",
+        "USA"
+      ],
+      "support": "India is 11.9%, USA is 9.0%."
+    },
+    {
+      "surface": "beat_6",
+      "text": "Where does your country land?",
+      "isos": [],
+      "support": "Call to action prompt."
+    },
+    {
+      "surface": "card_6",
+      "text": "WHO FEEDS THE WORLD? Food Share of Exports (%)",
+      "isos": [],
+      "support": "Matches indicator label and universe."
+    }
+  ],
+  "surface_checks": {
+    "title": {
+      "supported": true,
+      "reason": "Accurately frames the ranking of food export shares.",
+      "isos": []
+    },
+    "hook": {
+      "supported": true,
+      "reason": "Stylistic hook.",
+      "isos": []
+    },
+    "description": {
+      "supported": true,
+      "reason": "Mentions correct extrema from data.",
+      "isos": [
+        "BLZ",
+        "LBY"
+      ]
+    },
+    "beat_0": {
+      "supported": true,
+      "reason": "Belize (95.3%) and China (2.3%) match the data.",
+      "isos": [
+        "BLZ",
+        "CHN"
+      ]
+    },
+    "beat_1": {
+      "supported": true,
+      "reason": "Matches indicator definition components.",
+      "isos": []
+    },
+    "beat_2": {
+      "supported": true,
+      "reason": "Malawi, Gambia, and Ethiopia values match data.",
+      "isos": [
+        "MWI",
+        "GMB",
+        "ETH"
+      ]
+    },
+    "beat_3": {
+      "supported": true,
+      "reason": "New Zealand and Brazil values match data.",
+      "isos": [
+        "NZL",
+        "BRA"
+      ]
+    },
+    "beat_4": {
+      "supported": true,
+      "reason": "Libya is the lowest rank (172) with 0.1%.",
+      "isos": [
+        "LBY",
+        "BLZ"
+      ]
+    },
+    "beat_5": {
+      "supported": true,
+      "reason": "India and USA values match data.",
+      "isos": [
+        "IND",
+        "USA"
+      ]
+    },
+    "beat_6": {
+      "supported": true,
+      "reason": "Standard interactive prompt.",
+      "isos": []
+    },
+    "card_6": {
+      "supported": true,
+      "reason": "Accurately summarizes indicator and metric unit.",
+      "isos": []
+    }
+  }
+}

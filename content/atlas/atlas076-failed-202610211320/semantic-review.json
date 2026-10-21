@@ -1,0 +1,110 @@
+{
+  "errors": [
+    {
+      "surface": "beat_0",
+      "claim": "In half of all countries, high-tech products account for under 7% of manufactured exports.",
+      "reason": "The median value of the 168 countries in the dataset is approximately 7.4% (Lao PDR), meaning half are under 7.4%, not 7%.",
+      "severity": "factual"
+    },
+    {
+      "surface": "beat_4",
+      "claim": "The Philippines has 22 times the high-tech export share that Nigeria does.",
+      "reason": "60.3970 divided by 2.7117 is approximately 22.27, which is accurate, but the claim is based on a calculation of 22.27x, which is acceptable rounding.",
+      "severity": "info"
+    }
+  ],
+  "claims": [
+    {
+      "surface": "beat_2",
+      "text": "Nigeria is at 2.7117%.",
+      "isos": [
+        "NGA"
+      ],
+      "support": "2.71167186435579"
+    },
+    {
+      "surface": "beat_3",
+      "text": "In contrast, the Philippines hits 60.3970%.",
+      "isos": [
+        "PHL"
+      ],
+      "support": "60.3970150508424"
+    },
+    {
+      "surface": "beat_5",
+      "text": "Meanwhile, the USA sits at 24.3230%, and Brazil is at 11.1104%.",
+      "isos": [
+        "USA",
+        "BRA"
+      ],
+      "support": "USA: 24.322982844202, BRA: 11.1103644206652"
+    }
+  ],
+  "surface_checks": {
+    "title": {
+      "supported": true,
+      "reason": "Matches the indicator definition.",
+      "isos": []
+    },
+    "hook": {
+      "supported": true,
+      "reason": "Matches the indicator definition.",
+      "isos": []
+    },
+    "description": {
+      "supported": true,
+      "reason": "Matches the provided definition.",
+      "isos": []
+    },
+    "beat_0": {
+      "supported": false,
+      "reason": "The median of the 168 countries is 7.4196% (Lao PDR).",
+      "isos": []
+    },
+    "beat_1": {
+      "supported": true,
+      "reason": "Matches the provided definition.",
+      "isos": []
+    },
+    "beat_2": {
+      "supported": true,
+      "reason": "Matches the provided data.",
+      "isos": [
+        "NGA"
+      ]
+    },
+    "beat_3": {
+      "supported": true,
+      "reason": "Matches the provided data.",
+      "isos": [
+        "PHL"
+      ]
+    },
+    "beat_4": {
+      "supported": true,
+      "reason": "60.3970 / 2.7117 is approximately 22.27.",
+      "isos": [
+        "PHL",
+        "NGA"
+      ]
+    },
+    "beat_5": {
+      "supported": true,
+      "reason": "Matches the provided data.",
+      "isos": [
+        "USA",
+        "BRA"
+      ]
+    },
+    "beat_6": {
+      "supported": true,
+      "reason": "Standard prompt.",
+      "isos": []
+    },
+    "card_6": {
+      "supported": true,
+      "reason": "Matches the provided data source.",
+      "isos": []
+    }
+  }
+}

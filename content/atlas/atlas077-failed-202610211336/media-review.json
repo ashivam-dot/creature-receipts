@@ -1,0 +1,29 @@
+{
+  "duration": 45.93,
+  "integrated_lufs": -14.3,
+  "true_peak_dbfs": -1.4,
+  "speech": {
+    "heard": "Food makes up 95.3% of exports from Belize. In China, it is just 2.3%. This share counts food, live animals, beverages, tobacco, and oils among all goods sold abroad. Other nations rely heavily on farming. Malawi has 93.3%, the Gambia has 90.7%, and Ethiopia has 80.4%. Major exporters vary. New Zealand has 68.8% while Brazil has 40.7%. Libya has 0.1%, the world's lowest. Belize has 953 times the share Libya has. Global giants are lower. India has 11.9% and the USA has 9%. What is your country land?",
+    "model": "small.en",
+    "media_sha256": "f5809c8056f05bce7aac72297c234d80a75df175983ed35938b4f881306f1a36",
+    "primary_differences": [
+      "'9.0% where does' heard as '9% what is' after 'the usa has'"
+    ],
+    "differences": [
+      "'9.0% where does' heard as '9% what is' after 'the usa has'",
+      "base.en: 'this' heard as 'the' after 'is just 2.3%'",
+      "base.en: '(nothing)' heard as '7%' after 'brazil has 40.7%'",
+      "base.en: '9.0% where does' heard as '9% what is' after 'the usa has'"
+    ],
+    "corroboration": {
+      "model": "base.en",
+      "heard": "Food makes up 95.3% of exports from Belize. In China, it is just 2.3%. The share counts food, live animals, beverages, tobacco, and oils among all goods sold abroad. Other nations rely heavily on farming. Malawi has 93.3%, the Gambia has 90.7% and Ethiopia has 80.4%. Major exporters vary. New Zealand has 68.8% while Brazil has 40.7%. 7%. Libya has 0.1%, the world's lowest. Belize has 953 times the share Libya has. Global giants are lower. India has 11.9% and the USA has 9%. What is your country land?",
+      "differences": [
+        "'this' heard as 'the' after 'is just 2.3%'",
+        "'(nothing)' heard as '7%' after 'brazil has 40.7%'",
+        "'9.0% where does' heard as '9% what is' after 'the usa has'"
+      ],
+      "resolved": []
+    }
+  }
+}

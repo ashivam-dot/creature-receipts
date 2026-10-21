@@ -1,0 +1,69 @@
+id: atlas075
+title: Bulgaria Has 93.8 Bank Branches to DR Congo 0.6
+hook_text: BANK BRANCH GAP
+description: Comparing physical bank branch access per 100k adults across 173 countries and territories using World
+  Bank data.
+hashtags:
+- '#maps'
+- '#geography'
+- '#finance'
+sources:
+- https://data.worldbank.org/indicator/FB.CBK.BRCH.P5
+dataset:
+  kind: worldbank
+  indicator: FB.CBK.BRCH.P5
+  label: Bank branches per 100,000 adults
+  unit: per 100k adults
+  source: World Bank
+  min_year: 2019
+scale:
+  edges:
+  - 3.0
+  - 12.0
+  - 30.0
+  - 60.0
+  labels:
+  - Under 3
+  - 3 to 12
+  - 12 to 30
+  - 30 to 60
+  - Over 60
+value_format: '{v:.1f}'
+beats:
+- text: Bulgaria has 93.8 bank branches per 100k adults. DR Congo has 0.6.
+  shot:
+    callouts:
+    - BGR
+    - COD
+- text: DR Congo is the world's lowest. These are retail locations providing financial services separate from a
+    main office.
+  shot:
+    kind: country
+    iso: COD
+- text: China relies less on physical desks, with 8.7.
+  shot:
+    kind: country
+    iso: CHN
+- text: Bolivia has 63.5, Uzbekistan has 56.6, and Montenegro has 36.4.
+  shot:
+    kind: rank
+    isos:
+    - BOL
+    - UZB
+    - MNE
+- text: Japan has 42 times the branches in Chad. Japan has 33.7. Chad has 0.8.
+  shot:
+    kind: group
+    isos:
+    - JPN
+    - TCD
+- text: The USA has 25.7, maintaining physical access across its vast landscape.
+  shot:
+    kind: country
+    iso: USA
+- text: Where does your country land?
+  shot:
+    kind: card
+    lines:
+    - Where do you bank?
+    - Bank branches per 100k adults
