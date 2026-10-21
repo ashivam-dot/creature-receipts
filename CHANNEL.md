@@ -101,7 +101,9 @@ Start here: `PLAYBOOK.md` (the daily routine), `strategy/STRATEGY.md`, `strategy
 
 - **Producer (no keys):** `atlas_run` in the Modal app `creature-receipts` (workspace `aksha-shivam18`) runs
   `ytc atlas` at 01:10, 07:10, 13:10 and 19:10 UTC (`cloud.ATLAS_SCHEDULE`) on a fresh clone; each run gives up after
-  `atlas.pipeline.MAX_FAILURES` (4) failed drafts. It first copies the publisher's records
+  `atlas.pipeline.MAX_FAILURES` (4) failed drafts, and starts a draft only before minute 40 and only if the longest
+  draft so far (15 minutes before the first) would end by minute 47 (`atlas.pipeline.DEADLINE_MINUTES`), inside
+  the 50-minute `cloud.ATLAS_MINUTES` kill. It first copies the publisher's records
   (`atlas/published.json` in ashivam-dot/history-last-hours-control) into each Short's `publish.json` and marks
   those topics used. Then, until `atlas.pipeline.RESERVE` (4) Shorts are waiting, it takes the next open topic in
   `strategy/ATLAS-TOPICS.json`, downloads the dataset, writes and checks the script (Gemini ladder,
@@ -120,11 +122,13 @@ Start here: `PLAYBOOK.md` (the daily routine), `strategy/STRATEGY.md`, `strategy
   12:00 and 19:00 ET.
 - **Script rules (`atlas.writer`):** 50–110 written words (at least 60 as spoken, numbers read out). Values are
   said the way the narrator says them (`episode.say_value`): no trailing zeros, at most 3 significant figures and 1
-  decimal for a percentage, a nonzero value that would round to 0 is "under 0.1%" (never "0.0"), and units and
+  decimal for a percentage, but a nonzero value keeps the decimals that show its first figure and its sign
+  ("0.01%", "-0.04%", never "0.0") and a share short of 100 never rounds up to 100 ("99.99%"); no "under"/"over"
+  words, which the digit-only number checks could not see. Units and
   abbreviated country names are written as words ("per square kilometer", "Central African Republic"). The end card
   is a question about the topic in the writer's own words, never "Where does your country…". A title, hook or line
-  whose number reads as 0 when the value isn't 0, or a percentage over 100 not called "gross" and explained (growth
-  rates excepted), is rejected by the writer and again by `quality.review`. The speech check also treats the same
+  whose number reads as 0 when the value isn't 0 (a scale's "0 TO 10" and the official definition's 0 excepted), or
+  a percentage over 100 not called "gross" and explained (growth rates and negative values excepted), is rejected by the writer and again by `quality.review`. The speech check also treats the same
   number spelled another way ("5.0%" heard as "5%") as minor; country names and polarity stay material.
 - Changing `cloud.ATLAS_SCHEDULE` needs a Modal redeploy (command below); every other producer change takes effect
   on the next run, because `atlas_run` clones `main`.
@@ -179,6 +183,7 @@ Start here: `PLAYBOOK.md` (the daily routine), `strategy/STRATEGY.md`, `strategy
 
 | Date | Decision | Why |
 |---|---|---|
+| 2026-10-22 | Atlas yield review fixes: values never say "under"/"over" (a nonzero value grows decimals until its first figure shows, keeps its sign; a share short of 100 never shows 100), only the `{v}` field of a format is rewritten, negative percentages and a scale's "0 TO 10" or definition's 0 are not misleading numbers, "1 kilometer" and "km/h" said right, and a run starts a draft only if it can finish by minute 47 | Review of the 2026-10-21 change: "under 0.1%" let "Guinea has 0.1%" (7 times 0.0143%) pass both digit-only number checks; -0.04% and +0.04% both showed "under 0.1%"; t072 net energy imports (exporters below -100%) and 0-to-N card labels would fail every rewrite; the 13:10 UTC run of 2026-10-21 saved at minute 47 of 50. Tests in `tests/test_atlas_speech_yield.py` |
 | 2026-10-21 | Atlas yield: values said as spoken (no trailing zeros, 3 significant figures, 1 decimal for %, "under 0.1%" instead of 0.0), units and short country names as words, topic-specific end-card questions, the same number spelled another way counts as a minor speech difference, misleading numbers (a nonzero value shown as 0, an unexplained percentage over 100) rejected, word floor 60→50 (spoken floor 60), 4 failures per run (was 2), producer 4 times a day (01:10, 07:10, 13:10, 19:10 UTC). Slots stay at 3; `receipt.FORMAT` and `writer.STYLE` unchanged so waiting Shorts stay valid | 18 drafts failed 2026-10-17..21; 9 on the speech check, mostly numbers the writer was allowed to write ("5.0%" heard as "5%", "70.5202%") and the stock card "Where does your country land?", 2 on the word floor; published atlas053 said "165.1% College Enrollment" and atlas021 "Niger has 0.0". Replays in `tests/test_atlas_speech_yield.py` |
 | 2026-10-10 | `cinema-v2.2`: more motion and detail in every shot. The opening rushes in from deep space and the hook title punches in; the flat black around the globe became a navy space backdrop with visible stars, and the globe sits lower and closer (centre at 46% of the frame, world view at 4.4 radii) so it fills the frame down to the captions; rings ripple from the country in focus; pins count their value up on first appearance (0.5 s, never again, so a pin can't disagree with the narration) and every pin and country card shows "#rank of total" from the same dataset; the ranking panel lights the row being named and dims the rest. Parked v2.1 Shorts (atlas017, atlas019) re-render through the usual checks; the three already in Buffer for 10–11 Oct stay as scheduled | The owner: "Make the content full engaging with proper animation and detailings." The v2.1 review found the bottom third of every globe shot empty black, the hook a static title over a slow globe, and the ranking panel frozen for 4–6 s. Local renders of atlas014 and atlas016 with the new code were checked frame by frame |
 | 2026-10-10 | Atlas v2 "cinema" format replaces the flat map: photoreal globe with data columns and dives, real licensed country photos with depth parallax, flag cards, split screens, rank panel, karaoke captions, an original score; story-first scripts written on Flash first (was Flash-Lite) with a worked example, precomputed ratios, and checks against report-speak and back-to-back repeats. Old waiting Shorts (atlas009, atlas011, atlas013) get new v2 scripts and renders before posting (the first upgrade kept their v1 scripts, which narrated the old map legend, so scripts are now stamped and the format is `cinema-v2.1`); withdrawn ones (atlas006–008) are retired and their topics reopened | The owner: "like cartoon … did you really think anyone likes … basic world map … play with numbers only". Orbitwire's renders are the bar. The first cloud v2 Short (calorie supply) passed every gate but read like a report ("records 3,947 … holding rank 21 globally"), hence the writer changes |
