@@ -1,0 +1,154 @@
+{
+  "errors": [],
+  "claims": [
+    {
+      "surface": "title",
+      "text": "Is YOUR Country One of the Highest Emitters?",
+      "isos": [],
+      "support": "The title uses question framing about high emitters."
+    },
+    {
+      "surface": "hook",
+      "text": "MASSIVE EMISSIONS",
+      "isos": [],
+      "support": "The hook provides stylistic emphasis."
+    },
+    {
+      "surface": "description",
+      "text": "CO2 emissions per capita from the World Bank",
+      "isos": [],
+      "support": "CO2 emissions per capita from the World Bank matches indicator EN.GHG.CO2.PC.CE.AR5."
+    },
+    {
+      "surface": "beat_0",
+      "text": "USA has 13.6 tonnes per person. DR Congo sits at 0.057.",
+      "isos": [
+        "USA",
+        "COD"
+      ],
+      "support": "USA value is 13.6238622652793 (display 13.6) and Congo, Dem. Rep. value is 0.0568247825820182 (display 0.057)."
+    },
+    {
+      "surface": "beat_1",
+      "text": "Qatar hits 47.3 tonnes, one of the highest on Earth.",
+      "isos": [
+        "QAT"
+      ],
+      "support": "Qatar value is 47.3321641445828 (display 47.3) with rank 2."
+    },
+    {
+      "surface": "beat_2",
+      "text": "Kuwait sits at 23.7, and Oman hits 18.7.",
+      "isos": [
+        "KWT",
+        "OMN"
+      ],
+      "support": "Kuwait value is 23.6726718577295 (display 23.7) and Oman value is 18.6519911434889 (display 18.7)."
+    },
+    {
+      "surface": "beat_3",
+      "text": "USA has 13.6 and China has 9.32.",
+      "isos": [
+        "USA",
+        "CHN"
+      ],
+      "support": "USA value is 13.6238622652793 (display 13.6) and China value is 9.31508933799393 (display 9.32)."
+    },
+    {
+      "surface": "beat_4",
+      "text": "Somalia stays down at 0.046.",
+      "isos": [
+        "SOM"
+      ],
+      "support": "Somalia, Fed. Rep. value is 0.0455149206821494 (display 0.046)."
+    },
+    {
+      "surface": "beat_5",
+      "text": "It counts total annual emissions of carbon dioxide from agriculture, energy, waste, and industrial sectors, divided by the population.",
+      "isos": [],
+      "support": "Definition: Total annual emissions of carbon dioxide (CO2), one of the six Kyoto greenhouse gases (GHG), from the agriculture, energy, waste, and industrial sectors, excluding LULUCF, standardized to carbon dioxide equivalent values divided by the economy's population."
+    },
+    {
+      "surface": "beat_6",
+      "text": "How much carbon does your nation emit per person?",
+      "isos": [],
+      "support": "The beat contains a concluding question."
+    },
+    {
+      "surface": "card_6",
+      "text": "What is your footprint? CO2 per capita",
+      "isos": [],
+      "support": "The card lists footprint and metric name."
+    }
+  ],
+  "surface_checks": {
+    "title": {
+      "supported": true,
+      "reason": "Stylistic identity framing in the title.",
+      "isos": []
+    },
+    "hook": {
+      "supported": true,
+      "reason": "Stylistic hook text.",
+      "isos": []
+    },
+    "description": {
+      "supported": true,
+      "reason": "Accurately references the indicator and source.",
+      "isos": []
+    },
+    "beat_0": {
+      "supported": true,
+      "reason": "USA and COD values match the evidence.",
+      "isos": [
+        "USA",
+        "COD"
+      ]
+    },
+    "beat_1": {
+      "supported": true,
+      "reason": "Qatar value and rank status are supported by evidence.",
+      "isos": [
+        "QAT"
+      ]
+    },
+    "beat_2": {
+      "supported": true,
+      "reason": "Kuwait and Oman values match the evidence.",
+      "isos": [
+        "KWT",
+        "OMN"
+      ]
+    },
+    "beat_3": {
+      "supported": true,
+      "reason": "USA and China values match the evidence.",
+      "isos": [
+        "USA",
+        "CHN"
+      ]
+    },
+    "beat_4": {
+      "supported": true,
+      "reason": "Somalia value matches the evidence.",
+      "isos": [
+        "SOM"
+      ]
+    },
+    "beat_5": {
+      "supported": true,
+      "reason": "Matches the official definition in the evidence.",
+      "isos": []
+    },
+    "beat_6": {
+      "supported": true,
+      "reason": "Closing question is stylistic.",
+      "isos": []
+    },
+    "card_6": {
+      "supported": true,
+      "reason": "Card text matches metric description.",
+      "isos": []
+    }
+  }
+}

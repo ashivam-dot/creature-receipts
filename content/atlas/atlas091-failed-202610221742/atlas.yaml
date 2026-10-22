@@ -1,0 +1,71 @@
+id: atlas091
+title: Is YOUR Country One of the Highest Emitters?
+hook_text: MASSIVE EMISSIONS
+description: CO2 emissions per capita from the World Bank
+hashtags:
+- '#geography'
+- '#climate'
+- '#maps'
+tags:
+- geography
+- co2 emissions per capita
+- Qatar
+- Somalia, Fed. Rep.
+- world map
+- data
+sources:
+- https://data.worldbank.org/indicator/EN.GHG.CO2.PC.CE.AR5
+dataset:
+  kind: worldbank
+  indicator: EN.GHG.CO2.PC.CE.AR5
+  label: CO2 emissions per capita
+  unit: t CO2e/capita
+  source: World Bank
+  min_year: 2019
+scale:
+  kind: threshold
+  at: 5.0
+  labels:
+  - High emissions
+  - Low emissions
+value_format: '{v:.3f}'
+beats:
+- text: USA has 13.6 tonnes per person. DR Congo sits at 0.057.
+  shot:
+    callouts:
+    - QAT
+    - SOM
+- text: Qatar hits 47.3 tonnes, one of the highest on Earth.
+  shot:
+    kind: country
+    iso: QAT
+- text: Kuwait sits at 23.7, and Oman hits 18.7.
+  shot:
+    kind: group
+    isos:
+    - KWT
+    - OMN
+- text: USA has 13.6 and China has 9.32.
+  shot:
+    kind: group
+    isos:
+    - USA
+    - CHN
+- text: Somalia stays down at 0.046.
+  shot:
+    kind: country
+    iso: SOM
+- text: It counts total annual emissions of carbon dioxide from agriculture, energy, waste, and industrial sectors,
+    divided by the population.
+  shot:
+    kind: country
+    iso: QAT
+  basis: Total annual emissions of carbon dioxide (CO2), one of the six Kyoto greenhouse gases (GHG), from the agriculture,
+    energy, waste, and industrial sectors, excluding LULUCF, standardized to carbon dioxide equivalent values divided
+    by the economy's population.
+- text: How much carbon does your nation emit per person?
+  shot:
+    kind: card
+    lines:
+    - What is your footprint?
+    - CO2 per capita

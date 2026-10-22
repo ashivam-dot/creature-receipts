@@ -1,0 +1,31 @@
+{
+  "duration": 36.97,
+  "integrated_lufs": -14.2,
+  "true_peak_dbfs": -1.4,
+  "speech": {
+    "heard": "USA has 13.6 tons per person, Dr. Congo sits at 0.057. Qatar hits 47.3 tons, one of the highest on Earth. Kuwait sits at 23.7, and Oman hits 18.7. USA has 13.6, and China has 9.32. Somalia stays down at 0.046. It counts total annual emissions of carbon dioxide from agriculture, energy, waste, and industrial sectors divided by the population. How much carbon does your nation emit per person?",
+    "model": "small.en",
+    "media_sha256": "6e8032505eb8588271159104748b7d9672da30f805e2ce25dc3e512ce7cc3687",
+    "primary_differences": [
+      "'tonnes' heard as 'tons' after 'usa has 13.6'",
+      "'tonnes' heard as 'tons' after 'qatar hits 47.3'"
+    ],
+    "differences": [
+      "'tonnes' heard as 'tons' after 'usa has 13.6'",
+      "'tonnes' heard as 'tons' after 'qatar hits 47.3'",
+      "base.en: 'tonnes' heard as 'tons' after 'usa has 13.6'",
+      "base.en: 'congo' heard as 'kongo' after 'per person doctor'",
+      "base.en: 'tonnes' heard as 'tons' after 'qatar hits 47.3'"
+    ],
+    "corroboration": {
+      "model": "base.en",
+      "heard": "USA has 13.6 tons per person. Dr. Kongo sits at 0.057. Qatar hits 47.3 tons, one of the highest on Earth. Kuwait sits at 23.7 and Oman hits 18.7. USA has 13.6 and China has 9.32. Somalia stays down at 0.046. It counts total annual emissions of carbon dioxide from agriculture, energy, waste, and industrial sectors divided by the population. How much carbon does your nation emit per person?",
+      "differences": [
+        "'tonnes' heard as 'tons' after 'usa has 13.6'",
+        "'congo' heard as 'kongo' after 'per person doctor'",
+        "'tonnes' heard as 'tons' after 'qatar hits 47.3'"
+      ],
+      "resolved": []
+    }
+  }
+}

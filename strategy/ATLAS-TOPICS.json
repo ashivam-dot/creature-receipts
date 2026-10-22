@@ -3142,7 +3142,7 @@
     "#population"
    ],
    "source_url": "https://data.worldbank.org/indicator/SP.POP.65UP.MA.ZS",
-   "status": "ready:atlas083",
+   "status": "used:atlas083",
    "added_by": "refill"
   },
   {
@@ -3315,7 +3315,349 @@
    "source_url": "https://data.worldbank.org/indicator/IT.NET.SECR.P6",
    "status": "failed:ValueError",
    "added_by": "refill"
+  },
+  {
+   "id": "t095",
+   "topic": "Island Nations with High Carbon Footprints",
+   "angle": "Surging past major industrial economies, Palau records the highest carbon dioxide emissions per capita in the world at nearly 83 tonnes.",
+   "format": "map_reveal",
+   "dataset": {
+    "kind": "worldbank",
+    "indicator": "EN.GHG.CO2.PC.CE.AR5",
+    "label": "CO2 emissions per capita",
+    "unit": "t CO2e/capita",
+    "source": "World Bank",
+    "min_year": 2019
+   },
+   "scale": {
+    "kind": "threshold",
+    "at": 5.0,
+    "labels": [
+     "High emissions",
+     "Low emissions"
+    ]
+   },
+   "value_format": "{v:.1f}",
+   "hashtags": [
+    "#maps",
+    "#geography",
+    "#climate"
+   ],
+   "source_url": "https://data.worldbank.org/indicator/EN.GHG.CO2.PC.CE.AR5",
+   "status": "failed:ValueError",
+   "added_by": "refill"
+  },
+  {
+   "id": "t096",
+   "topic": "Women Over 65 Around The World",
+   "angle": "In some countries nearly a third of all women are over 65, while in others the share is barely two percent.",
+   "format": "rank_ladder",
+   "dataset": {
+    "kind": "worldbank",
+    "indicator": "SP.POP.65UP.FE.ZS",
+    "label": "Share of women aged 65 and above",
+    "unit": "%",
+    "source": "World Bank",
+    "min_year": 2019
+   },
+   "scale": {
+    "kind": "bins",
+    "edges": [
+     5.0,
+     10.0,
+     20.0,
+     25.0
+    ],
+    "labels": [
+     "Under 5%",
+     "5% to 10%",
+     "10% to 20%",
+     "20% to 25%",
+     "Over 25%"
+    ]
+   },
+   "value_format": "{v:.1f}%",
+   "hashtags": [
+    "#maps",
+    "#geography",
+    "#population"
+   ],
+   "source_url": "https://data.worldbank.org/indicator/SP.POP.65UP.FE.ZS",
+   "status": "open",
+   "added_by": "refill"
+  },
+  {
+   "id": "t097",
+   "topic": "Where women match men at work",
+   "angle": "While global gaps persist, Burundi stands out as one of the few nations where female labor force participation actually exceeds male rates.",
+   "format": "map_reveal",
+   "dataset": {
+    "kind": "worldbank",
+    "indicator": "SL.TLF.CACT.FM.ZS",
+    "label": "Female-to-male labor force ratio",
+    "unit": "%",
+    "source": "World Bank",
+    "min_year": 2019
+   },
+   "scale": {
+    "kind": "bins",
+    "edges": [
+     25,
+     50,
+     75,
+     90
+    ],
+    "labels": [
+     "Under 25%",
+     "25% to 50%",
+     "50% to 75%",
+     "75% to 90%",
+     "Over 90%"
+    ]
+   },
+   "value_format": "{v:.0f}%",
+   "hashtags": [
+    "#maps",
+    "#geography",
+    "#economy"
+   ],
+   "source_url": "https://data.worldbank.org/indicator/SL.TLF.CACT.FM.ZS",
+   "status": "open",
+   "added_by": "refill"
+  },
+  {
+   "id": "t098",
+   "topic": "Powering Nations With Renewable Electricity",
+   "angle": "Over half of all countries generate less than a quarter of their electricity from renewables, while a select few nations achieve near-total clean power.",
+   "format": "map_reveal",
+   "dataset": {
+    "kind": "worldbank",
+    "indicator": "EG.ELC.RNEW.ZS",
+    "label": "Renewable electricity output",
+    "unit": "%",
+    "source": "World Bank",
+    "min_year": 2019
+   },
+   "scale": {
+    "kind": "threshold",
+    "at": 25.0,
+    "labels": [
+     "25% or more",
+     "Less than 25%"
+    ]
+   },
+   "value_format": "{v:.1f}%",
+   "hashtags": [
+    "#maps",
+    "#geography",
+    "#renewableenergy"
+   ],
+   "source_url": "https://data.worldbank.org/indicator/EG.ELC.RNEW.ZS",
+   "status": "open",
+   "added_by": "refill"
+  },
+  {
+   "id": "t099",
+   "topic": "The Last Fully Rural Nations on Earth",
+   "angle": "While hyper-urban city-states like Singapore and Hong Kong sit at zero percent, tiny Liechtenstein surprisingly tops the global rural population ranking at over eighty-five percent.",
+   "format": "rank_ladder",
+   "dataset": {
+    "kind": "worldbank",
+    "indicator": "SP.RUR.TOTL.ZS",
+    "label": "Rural population share",
+    "unit": "%",
+    "source": "World Bank",
+    "min_year": 2019
+   },
+   "scale": {
+    "kind": "bins",
+    "edges": [
+     20.0,
+     40.0,
+     60.0,
+     80.0
+    ],
+    "labels": [
+     "Mostly urban",
+     "Balanced",
+     "Mostly rural",
+     "Deeply rural",
+     "Almost entirely rural"
+    ]
+   },
+   "value_format": "{v:.1f}%",
+   "hashtags": [
+    "#maps",
+    "#geography",
+    "#population"
+   ],
+   "source_url": "https://data.worldbank.org/indicator/SP.RUR.TOTL.ZS",
+   "status": "open",
+   "added_by": "refill"
+  },
+  {
+   "id": "t100",
+   "topic": "Hunger still affects over half",
+   "angle": "In the hardest hit nations, more than half of the population faces insufficient dietary energy consumption.",
+   "format": "map_reveal",
+   "dataset": {
+    "kind": "worldbank",
+    "indicator": "SN.ITK.DEFC.ZS",
+    "label": "Prevalence of undernourishment",
+    "unit": "%",
+    "source": "World Bank",
+    "min_year": 2019
+   },
+   "scale": {
+    "kind": "bins",
+    "edges": [
+     5.0,
+     15.0,
+     30.0,
+     45.0
+    ],
+    "labels": [
+     "Under 5%",
+     "5% to 15%",
+     "15% to 30%",
+     "30% to 45%",
+     "Over 45%"
+    ]
+   },
+   "value_format": "{v:.1f}%",
+   "hashtags": [
+    "#maps",
+    "#geography",
+    "#world"
+   ],
+   "source_url": "https://data.worldbank.org/indicator/SN.ITK.DEFC.ZS",
+   "status": "open",
+   "added_by": "refill"
+  },
+  {
+   "id": "t101",
+   "topic": "Urban Handwashing Access Varies Widely",
+   "angle": "In some urban areas, fewer than six percent of people have access to basic handwashing facilities with soap and water.",
+   "format": "map_reveal",
+   "dataset": {
+    "kind": "worldbank",
+    "indicator": "SH.STA.HYGN.UR.ZS",
+    "label": "Urban population with handwashing facility",
+    "unit": "%",
+    "source": "World Bank",
+    "min_year": 2019
+   },
+   "scale": {
+    "kind": "threshold",
+    "at": 50,
+    "labels": [
+     "50% and above",
+     "Below 50%"
+    ]
+   },
+   "value_format": "{v:.1f}%",
+   "hashtags": [
+    "#maps",
+    "#geography",
+    "#globalhealth"
+   ],
+   "source_url": "https://data.worldbank.org/indicator/SH.STA.HYGN.UR.ZS",
+   "status": "open",
+   "added_by": "refill"
+  },
+  {
+   "id": "t102",
+   "topic": "The Cost of Power Outages for Businesses",
+   "angle": "Even though power outages are common worldwide, the vast majority of firms report zero financial losses from them.",
+   "format": "rank_ladder",
+   "dataset": {
+    "kind": "worldbank",
+    "indicator": "IC.FRM.OUTG.ZS",
+    "label": "Share of sales lost to outages",
+    "unit": "%",
+    "source": "World Bank",
+    "min_year": 2019
+   },
+   "scale": {
+    "kind": "threshold",
+    "at": 0.05,
+    "labels": [
+     "Significant losses",
+     "Negligible or zero losses"
+    ]
+   },
+   "value_format": "{v:.1f}%",
+   "hashtags": [
+    "#maps",
+    "#geography",
+    "#business"
+   ],
+   "source_url": "https://data.worldbank.org/indicator/IC.FRM.OUTG.ZS",
+   "status": "open",
+   "added_by": "refill"
+  },
+  {
+   "id": "t103",
+   "topic": "Direct Medical Costs Paid By Families",
+   "angle": "In some countries households pay over three quarters of all health care costs directly from their own pockets.",
+   "format": "map_reveal",
+   "dataset": {
+    "kind": "worldbank",
+    "indicator": "SH.XPD.OOPC.CH.ZS",
+    "label": "Out-of-pocket health spending share",
+    "unit": "%",
+    "source": "World Bank",
+    "min_year": 2019
+   },
+   "scale": {
+    "kind": "threshold",
+    "at": 50,
+    "labels": [
+     "Over half of health costs",
+     "Under half of health costs"
+    ]
+   },
+   "value_format": "{v:.0f}%",
+   "hashtags": [
+    "#maps",
+    "#geography",
+    "#health"
+   ],
+   "source_url": "https://data.worldbank.org/indicator/SH.XPD.OOPC.CH.ZS",
+   "status": "open",
+   "added_by": "refill"
+  },
+  {
+   "id": "t104",
+   "topic": "The Wealth Share of the Top Twenty Percent",
+   "angle": "In half the countries with data, the richest fifth of the population holds over forty percent of all income or consumption.",
+   "format": "map_reveal",
+   "dataset": {
+    "kind": "worldbank",
+    "indicator": "SI.DST.05TH.20",
+    "label": "Income share held by highest 20%",
+    "unit": "%",
+    "source": "World Bank",
+    "min_year": 2019
+   },
+   "scale": {
+    "kind": "threshold",
+    "at": 45.0,
+    "labels": [
+     "Above 45 percent",
+     "45 percent or below"
+    ]
+   },
+   "value_format": "{v:.1f}%",
+   "hashtags": [
+    "#maps",
+    "#geography",
+    "#economics"
+   ],
+   "source_url": "https://data.worldbank.org/indicator/SI.DST.05TH.20",
+   "status": "open",
+   "added_by": "refill"
   }
  ],
- "refilled_at": "2026-10-21T19:53:16+00:00"
+ "refilled_at": "2026-10-22T17:32:55+00:00"
 }

@@ -1,0 +1,29 @@
+{
+  "warnings": [
+    {
+      "country": "Palau",
+      "why": "Palau's reported CO2 per capita of 82.8 is extremely high, likely due to small population denominator effects from tourism, aviation, or maritime bunkering, or a data reporting error."
+    },
+    {
+      "country": "Faroe Islands",
+      "why": "The Faroe Islands typically have high per capita emissions (around 10-15 tonnes due to shipping and fishing), so 0.0384 is implausibly low and indicates a missing data coverage issue."
+    },
+    {
+      "country": "Northern Mariana Islands",
+      "why": "As a US territory with heavy reliance on imported fossil fuels for power, a value of 0.00226 is implausibly low and likely reflects incomplete reporting."
+    },
+    {
+      "country": "American Samoa",
+      "why": "American Samoa relies heavily on diesel generation; 0.00214 is far too low and suggests severe under-reporting or missing sector data."
+    },
+    {
+      "country": "Virgin Islands (U.S.)",
+      "why": "Home to one of the world's largest oil refineries and heavy energy use, a value of 0.00192 is drastically understated due to data gaps."
+    },
+    {
+      "country": "Guam",
+      "why": "Guam has significant US military presence and fossil fuel electricity generation; 0.00179 is unrealistically low and points to incomplete World Bank data coverage."
+    }
+  ],
+  "policy": "model memory is advisory; unsupported suspicions cannot overrule official data"
+}
