@@ -1,0 +1,74 @@
+id: atlas087
+title: Places Ranked by Average Material Well-Being
+format: rank_ladder
+hook_text: THE WEALTH CHASM
+description: A global view of GNI per capita in purchasing power parity international dollars across 191 countries
+  and territories.
+hashtags:
+- '#economy'
+- '#economics'
+- '#maps'
+tags:
+- wealth
+- gni per capita, ppp
+- Qatar
+- Burundi
+- world map
+- data
+sources:
+- https://data.worldbank.org/indicator/NY.GNP.PCAP.PP.CD
+dataset:
+  kind: worldbank
+  indicator: NY.GNP.PCAP.PP.CD
+  label: GNI per capita, PPP
+  unit: international $
+  source: World Bank
+  min_year: 2019
+scale:
+  kind: threshold
+  at: 20000.0
+  labels:
+  - Above median
+  - Below median
+value_format: ${v:,.0f}
+beats:
+- text: In Qatar, material well-being hits 126,290 international dollars. In Burundi, it is 1,250.
+  shot:
+    callouts:
+    - QAT
+    - BDI
+- text: Qatar has 101 times the buying power found in Burundi.
+  shot:
+    kind: country
+    iso: QAT
+- text: These figures convert different currencies and eliminate the differences in price levels between countries.
+  shot:
+    kind: country
+    iso: CHE
+  basis: convert different currencies to a common currency and, in the process of conversion, equalize their purchasing
+    power by eliminating the differences in price levels between countries
+- text: The USA has 89,490 international dollars per person. China hits 29,160.
+  shot:
+    kind: group
+    isos:
+    - USA
+    - CHN
+- text: 'The highest income places on Earth: Qatar, Norway, Ireland, Switzerland, and the USA.'
+  shot:
+    kind: rank
+    isos:
+    - QAT
+    - NOR
+    - IRL
+    - CHE
+    - USA
+- text: India stands at 11,600 international dollars.
+  shot:
+    kind: country
+    iso: IND
+- text: How much income does your country average?
+  shot:
+    kind: card
+    lines:
+    - WHAT IS YOUR AVERAGE?
+    - GNI PER CAPITA, PPP

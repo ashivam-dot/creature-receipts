@@ -1,0 +1,71 @@
+id: atlas086
+title: Places Ranked by Average Wealth
+format: rank_ladder
+hook_text: THE WEALTH GAP
+description: Comparing average economic output per person across the globe using purchasing power standards.
+hashtags:
+- '#economy'
+- '#maps'
+- '#geography'
+tags:
+- wealth
+- gdp per capita, ppp
+- Ireland
+- Burundi
+- world map
+- data
+sources:
+- https://data.worldbank.org/indicator/NY.GDP.PCAP.PP.CD
+dataset:
+  kind: worldbank
+  indicator: NY.GDP.PCAP.PP.CD
+  label: GDP per capita, PPP
+  unit: international dollars
+  source: World Bank
+  min_year: 2019
+scale:
+  edges:
+  - 5000.0
+  - 20000.0
+  - 50000.0
+  - 100000.0
+  labels:
+  - Under $5k
+  - $5k to $20k
+  - $20k to $50k
+  - $50k to $100k
+  - Over $100k
+value_format: ${v:,.0f}
+beats:
+- text: Ireland hits 155,089 international dollars per person while Burundi stays at 1,248.
+  shot:
+    callouts:
+    - IRL
+    - BDI
+- text: Ireland has 124 times the economic output of Burundi.
+  shot:
+    kind: country
+    iso: IRL
+- text: Burundi holds 1,248, the lowest across all 193 countries and territories on the map.
+  shot:
+    kind: country
+    iso: BDI
+- text: USA is 90,027. India sits at 11,748. China hits 29,333.
+  shot:
+    kind: group
+    isos:
+    - USA
+    - IND
+    - CHN
+- text: Switzerland climbs to 102,513 and Norway hits 104,044.
+  shot:
+    kind: group
+    isos:
+    - CHE
+    - NOR
+- text: How many international dollars does your nation generate?
+  shot:
+    kind: card
+    lines:
+    - What is your nation's output?
+    - GDP per capita, PPP

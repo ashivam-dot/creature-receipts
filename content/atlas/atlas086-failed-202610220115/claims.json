@@ -1,0 +1,1991 @@
+{
+  "version": 1,
+  "evidence": {
+    "version": 1,
+    "indicator": "NY.GDP.PCAP.PP.CD",
+    "definition": "This indicator provides values for gross domestic product (GDP) per person expressed in current international dollars, converted by purchasing power parities (PPPs). PPPs account for the different price levels across countries and thus PPP-based comparisons of economic output are more appropriate for comparing the output of economies and the average material well-being of their inhabitants than exchange-rate based comparisons.  \n\nGross domestic product is the total income earned through the production of goods and services in an economic territory during an accounting period. It can be measured in three different ways: using either the expenditure approach, the income approach, or the production approach. This series has been linked to produce a consistent time series to counteract breaks in series over time due to changes in base years, source data and methodologies. Thus, it may not be comparable with other national accounts series in the database for historical years. The core indicator has been divided by the general population to achieve a per capita estimate. This indicator is expressed in current prices, meaning no adjustment has been made to account for price changes over time. The PPP conversion factor is a currency conversion factor and a spatial price deflator. PPPs convert different currencies to a common currency and, in the process of conversion, equalize their purchasing power by eliminating the differences in price levels between countries, thereby allowing volume or output comparisons of GDP and its expenditure components.",
+    "source": "https://data.worldbank.org/indicator/NY.GDP.PCAP.PP.CD",
+    "source_response_sha256": "69a2fedf4798825baab44f862de9cfd7c91e9852bf7d2cc687552f17720ff962",
+    "source_organization": "International Comparison Program (ICP), World Bank (WB), uri: https://www.worldbank.org/en/programs/icp/data, note: This information is for ICP’s PPPs utilized in WDI, publisher: International Comparison Program (ICP), date accessed: May 30, 2024, date published: May 30, 2024;\nThe Eurostat PPP Programme, Eurostat (ESTAT), uri: https://ec.europa.eu/eurostat/databrowser/explore/all/all_themes, publisher: Eurostat;\nThe OECD PPP Programme, Organisation for Economic Co-operation and Development (OECD), uri: https://data-explorer.oecd.org/, publisher: OECD;\nStaff estimates, World Bank (WB);\nNational Accounts data files, Organisation for Economic Co-operation and Development (OECD);\nWorld Economic Outlook database, International Monetary Fund (IMF)",
+    "year_label": "latest available 2022–2025",
+    "universe": "mapped countries and territories with data",
+    "count": 193,
+    "threshold": null,
+    "at_or_above": null,
+    "entities": {
+      "AFG": {
+        "name": "Afghanistan",
+        "value": 2236.19907311431,
+        "display": "$2,236",
+        "year": 2024,
+        "unit": "international dollars",
+        "rank": 183
+      },
+      "ALB": {
+        "name": "Albania",
+        "value": 28220.7950617158,
+        "display": "$28,221",
+        "year": 2025,
+        "unit": "international dollars",
+        "rank": 82
+      },
+      "DZA": {
+        "name": "Algeria",
+        "value": 18586.2607480579,
+        "display": "$18,586",
+        "year": 2025,
+        "unit": "international dollars",
+        "rank": 108
+      },
+      "AND": {
+        "name": "Andorra",
+        "value": 79566.7925868466,
+        "display": "$79,567",
+        "year": 2025,
+        "unit": "international dollars",
+        "rank": 17
+      },
+      "AGO": {
+        "name": "Angola",
+        "value": 10251.3457063657,
+        "display": "$10,251",
+        "year": 2025,
+        "unit": "international dollars",
+        "rank": 134
+      },
+      "ATG": {
+        "name": "Antigua and Barbuda",
+        "value": 35832.4795485115,
+        "display": "$35,832",
+        "year": 2025,
+        "unit": "international dollars",
+        "rank": 70
+      },
+      "ARG": {
+        "name": "Argentina",
+        "value": 32586.6312086783,
+        "display": "$32,587",
+        "year": 2025,
+        "unit": "international dollars",
+        "rank": 77
+      },
+      "ARM": {
+        "name": "Armenia",
+        "value": 24754.2118320452,
+        "display": "$24,754",
+        "year": 2025,
+        "unit": "international dollars",
+        "rank": 89
+      },
+      "ABW": {
+        "name": "Aruba",
+        "value": 51712.1531358934,
+        "display": "$51,712",
+        "year": 2024,
+        "unit": "international dollars",
+        "rank": 48
+      },
+      "AUS": {
+        "name": "Australia",
+        "value": 71934.4033931263,
+        "display": "$71,934",
+        "year": 2025,
+        "unit": "international dollars",
+        "rank": 27
+      },
+      "AUT": {
+        "name": "Austria",
+        "value": 76777.5421537618,
+        "display": "$76,778",
+        "year": 2025,
+        "unit": "international dollars",
+        "rank": 21
+      },
+      "AZE": {
+        "name": "Azerbaijan",
+        "value": 26112.5306828203,
+        "display": "$26,113",
+        "year": 2025,
+        "unit": "international dollars",
+        "rank": 85
+      },
+      "BHS": {
+        "name": "Bahamas, The",
+        "value": 41257.7650774105,
+        "display": "$41,258",
+        "year": 2024,
+        "unit": "international dollars",
+        "rank": 63
+      },
+      "BHR": {
+        "name": "Bahrain",
+        "value": 70996.7821254802,
+        "display": "$70,997",
+        "year": 2025,
+        "unit": "international dollars",
+        "rank": 28
+      },
+      "BGD": {
+        "name": "Bangladesh",
+        "value": 10153.7083791829,
+        "display": "$10,154",
+        "year": 2025,
+        "unit": "international dollars",
+        "rank": 135
+      },
+      "BRB": {
+        "name": "Barbados",
+        "value": 25893.8676913012,
+        "display": "$25,894",
+        "year": 2025,
+        "unit": "international dollars",
+        "rank": 86
+      },
+      "BLR": {
+        "name": "Belarus",
+        "value": 34715.9778689211,
+        "display": "$34,716",
+        "year": 2025,
+        "unit": "international dollars",
+        "rank": 72
+      },
+      "BEL": {
+        "name": "Belgium",
+        "value": 74675.607672673,
+        "display": "$74,676",
+        "year": 2025,
+        "unit": "international dollars",
+        "rank": 23
+      },
+      "BLZ": {
+        "name": "Belize",
+        "value": 14965.7521203147,
+        "display": "$14,966",
+        "year": 2025,
+        "unit": "international dollars",
+        "rank": 119
+      },
+      "BEN": {
+        "name": "Benin",
+        "value": 4816.87504692826,
+        "display": "$4,817",
+        "year": 2025,
+        "unit": "international dollars",
+        "rank": 162
+      },
+      "BMU": {
+        "name": "Bermuda",
+        "value": 118727.973294368,
+        "display": "$118,728",
+        "year": 2024,
+        "unit": "international dollars",
+        "rank": 5
+      },
+      "BTN": {
+        "name": "Bhutan",
+        "value": 19594.0028382994,
+        "display": "$19,594",
+        "year": 2025,
+        "unit": "international dollars",
+        "rank": 105
+      },
+      "BOL": {
+        "name": "Bolivia",
+        "value": 12873.0394876629,
+        "display": "$12,873",
+        "year": 2025,
+        "unit": "international dollars",
+        "rank": 124
+      },
+      "BIH": {
+        "name": "Bosnia and Herzegovina",
+        "value": 25814.2641520511,
+        "display": "$25,814",
+        "year": 2025,
+        "unit": "international dollars",
+        "rank": 88
+      },
+      "BWA": {
+        "name": "Botswana",
+        "value": 20697.9104661898,
+        "display": "$20,698",
+        "year": 2025,
+        "unit": "international dollars",
+        "rank": 100
+      },
+      "BRA": {
+        "name": "Brazil",
+        "value": 23433.2897595431,
+        "display": "$23,433",
+        "year": 2025,
+        "unit": "international dollars",
+        "rank": 90
+      },
+      "BRN": {
+        "name": "Brunei Darussalam",
+        "value": 92429.9262686398,
+        "display": "$92,430",
+        "year": 2025,
+        "unit": "international dollars",
+        "rank": 9
+      },
+      "BGR": {
+        "name": "Bulgaria",
+        "value": 44451.1001576913,
+        "display": "$44,451",
+        "year": 2025,
+        "unit": "international dollars",
+        "rank": 58
+      },
+      "BFA": {
+        "name": "Burkina Faso",
+        "value": 3071.62546744866,
+        "display": "$3,072",
+        "year": 2025,
+        "unit": "international dollars",
+        "rank": 180
+      },
+      "BDI": {
+        "name": "Burundi",
+        "value": 1248.05425025467,
+        "display": "$1,248",
+        "year": 2025,
+        "unit": "international dollars",
+        "rank": 193
+      },
+      "CPV": {
+        "name": "Cabo Verde",
+        "value": 12165.2989335356,
+        "display": "$12,165",
+        "year": 2025,
+        "unit": "international dollars",
+        "rank": 128
+      },
+      "KHM": {
+        "name": "Cambodia",
+        "value": 8542.6965378612,
+        "display": "$8,543",
+        "year": 2025,
+        "unit": "international dollars",
+        "rank": 143
+      },
+      "CMR": {
+        "name": "Cameroon",
+        "value": 5787.85440270861,
+        "display": "$5,788",
+        "year": 2025,
+        "unit": "international dollars",
+        "rank": 156
+      },
+      "CAN": {
+        "name": "Canada",
+        "value": 66745.8248561648,
+        "display": "$66,746",
+        "year": 2025,
+        "unit": "international dollars",
+        "rank": 29
+      },
+      "CYM": {
+        "name": "Cayman Islands",
+        "value": 92201.086358256,
+        "display": "$92,201",
+        "year": 2024,
+        "unit": "international dollars",
+        "rank": 10
+      },
+      "CAF": {
+        "name": "Central African Republic",
+        "value": 1313.8765680523,
+        "display": "$1,314",
+        "year": 2025,
+        "unit": "international dollars",
+        "rank": 192
+      },
+      "TCD": {
+        "name": "Chad",
+        "value": 2902.7406157583,
+        "display": "$2,903",
+        "year": 2025,
+        "unit": "international dollars",
+        "rank": 181
+      },
+      "CHL": {
+        "name": "Chile",
+        "value": 37774.0879069903,
+        "display": "$37,774",
+        "year": 2025,
+        "unit": "international dollars",
+        "rank": 66
+      },
+      "CHN": {
+        "name": "China",
+        "value": 29333.3311051433,
+        "display": "$29,333",
+        "year": 2025,
+        "unit": "international dollars",
+        "rank": 79
+      },
+      "COL": {
+        "name": "Colombia",
+        "value": 22640.4224606513,
+        "display": "$22,640",
+        "year": 2025,
+        "unit": "international dollars",
+        "rank": 95
+      },
+      "COM": {
+        "name": "Comoros",
+        "value": 4238.26133409182,
+        "display": "$4,238",
+        "year": 2025,
+        "unit": "international dollars",
+        "rank": 168
+      },
+      "COD": {
+        "name": "Congo, Dem. Rep.",
+        "value": 1919.82250200565,
+        "display": "$1,920",
+        "year": 2025,
+        "unit": "international dollars",
+        "rank": 188
+      },
+      "COG": {
+        "name": "Congo, Rep.",
+        "value": 7248.44439070757,
+        "display": "$7,248",
+        "year": 2025,
+        "unit": "international dollars",
+        "rank": 148
+      },
+      "CRI": {
+        "name": "Costa Rica",
+        "value": 33814.7696296148,
+        "display": "$33,815",
+        "year": 2025,
+        "unit": "international dollars",
+        "rank": 74
+      },
+      "CIV": {
+        "name": "Cote d'Ivoire",
+        "value": 8208.90898574972,
+        "display": "$8,209",
+        "year": 2025,
+        "unit": "international dollars",
+        "rank": 145
+      },
+      "HRV": {
+        "name": "Croatia",
+        "value": 50946.1671131832,
+        "display": "$50,946",
+        "year": 2025,
+        "unit": "international dollars",
+        "rank": 49
+      },
+      "CUW": {
+        "name": "Curacao",
+        "value": 32740.7736763943,
+        "display": "$32,741",
+        "year": 2024,
+        "unit": "international dollars",
+        "rank": 76
+      },
+      "CYP": {
+        "name": "Cyprus",
+        "value": 64574.62109375,
+        "display": "$64,575",
+        "year": 2025,
+        "unit": "international dollars",
+        "rank": 32
+      },
+      "CZE": {
+        "name": "Czechia",
+        "value": 60487.2877495391,
+        "display": "$60,487",
+        "year": 2025,
+        "unit": "international dollars",
+        "rank": 36
+      },
+      "DNK": {
+        "name": "Denmark",
+        "value": 83218.071525634,
+        "display": "$83,218",
+        "year": 2025,
+        "unit": "international dollars",
+        "rank": 14
+      },
+      "DJI": {
+        "name": "Djibouti",
+        "value": 8451.96838146073,
+        "display": "$8,452",
+        "year": 2025,
+        "unit": "international dollars",
+        "rank": 144
+      },
+      "DMA": {
+        "name": "Dominica",
+        "value": 22713.1288027433,
+        "display": "$22,713",
+        "year": 2025,
+        "unit": "international dollars",
+        "rank": 93
+      },
+      "DOM": {
+        "name": "Dominican Republic",
+        "value": 28721.0964580217,
+        "display": "$28,721",
+        "year": 2025,
+        "unit": "international dollars",
+        "rank": 80
+      },
+      "ECU": {
+        "name": "Ecuador",
+        "value": 16756.6539631307,
+        "display": "$16,757",
+        "year": 2025,
+        "unit": "international dollars",
+        "rank": 112
+      },
+      "EGY": {
+        "name": "Egypt, Arab Rep.",
+        "value": 20204.0130500153,
+        "display": "$20,204",
+        "year": 2025,
+        "unit": "international dollars",
+        "rank": 101
+      },
+      "SLV": {
+        "name": "El Salvador",
+        "value": 14101.1774819291,
+        "display": "$14,101",
+        "year": 2025,
+        "unit": "international dollars",
+        "rank": 121
+      },
+      "GNQ": {
+        "name": "Equatorial Guinea",
+        "value": 16133.1056143137,
+        "display": "$16,133",
+        "year": 2025,
+        "unit": "international dollars",
+        "rank": 115
+      },
+      "EST": {
+        "name": "Estonia",
+        "value": 52105.5093433416,
+        "display": "$52,106",
+        "year": 2025,
+        "unit": "international dollars",
+        "rank": 47
+      },
+      "SWZ": {
+        "name": "Eswatini",
+        "value": 12529.2796629252,
+        "display": "$12,529",
+        "year": 2025,
+        "unit": "international dollars",
+        "rank": 127
+      },
+      "ETH": {
+        "name": "Ethiopia",
+        "value": 3621.67487597821,
+        "display": "$3,622",
+        "year": 2025,
+        "unit": "international dollars",
+        "rank": 174
+      },
+      "FRO": {
+        "name": "Faroe Islands",
+        "value": 82089.2832575392,
+        "display": "$82,089",
+        "year": 2024,
+        "unit": "international dollars",
+        "rank": 15
+      },
+      "FJI": {
+        "name": "Fiji",
+        "value": 16337.5722970567,
+        "display": "$16,338",
+        "year": 2025,
+        "unit": "international dollars",
+        "rank": 114
+      },
+      "FIN": {
+        "name": "Finland",
+        "value": 65884.4876972259,
+        "display": "$65,884",
+        "year": 2025,
+        "unit": "international dollars",
+        "rank": 30
+      },
+      "FRA": {
+        "name": "France",
+        "value": 63975.353585864,
+        "display": "$63,975",
+        "year": 2025,
+        "unit": "international dollars",
+        "rank": 33
+      },
+      "GAB": {
+        "name": "Gabon",
+        "value": 22218.341068445,
+        "display": "$22,218",
+        "year": 2025,
+        "unit": "international dollars",
+        "rank": 97
+      },
+      "GMB": {
+        "name": "Gambia, The",
+        "value": 3705.64184038599,
+        "display": "$3,706",
+        "year": 2025,
+        "unit": "international dollars",
+        "rank": 173
+      },
+      "GEO": {
+        "name": "Georgia",
+        "value": 29414.3813424216,
+        "display": "$29,414",
+        "year": 2025,
+        "unit": "international dollars",
+        "rank": 78
+      },
+      "DEU": {
+        "name": "Germany",
+        "value": 75406.6888111618,
+        "display": "$75,407",
+        "year": 2025,
+        "unit": "international dollars",
+        "rank": 22
+      },
+      "GHA": {
+        "name": "Ghana",
+        "value": 8610.2796922986,
+        "display": "$8,610",
+        "year": 2025,
+        "unit": "international dollars",
+        "rank": 142
+      },
+      "GRC": {
+        "name": "Greece",
+        "value": 45263.6498511586,
+        "display": "$45,264",
+        "year": 2025,
+        "unit": "international dollars",
+        "rank": 57
+      },
+      "GRL": {
+        "name": "Greenland",
+        "value": 78905.5801137274,
+        "display": "$78,906",
+        "year": 2023,
+        "unit": "international dollars",
+        "rank": 19
+      },
+      "GRD": {
+        "name": "Grenada",
+        "value": 21345.9653408221,
+        "display": "$21,346",
+        "year": 2025,
+        "unit": "international dollars",
+        "rank": 98
+      },
+      "GTM": {
+        "name": "Guatemala",
+        "value": 15197.0831415082,
+        "display": "$15,197",
+        "year": 2025,
+        "unit": "international dollars",
+        "rank": 118
+      },
+      "GIN": {
+        "name": "Guinea",
+        "value": 4934.65125959855,
+        "display": "$4,935",
+        "year": 2025,
+        "unit": "international dollars",
+        "rank": 160
+      },
+      "GNB": {
+        "name": "Guinea-Bissau",
+        "value": 3293.09532269486,
+        "display": "$3,293",
+        "year": 2025,
+        "unit": "international dollars",
+        "rank": 177
+      },
+      "GUY": {
+        "name": "Guyana",
+        "value": 97899.0116180627,
+        "display": "$97,899",
+        "year": 2025,
+        "unit": "international dollars",
+        "rank": 8
+      },
+      "HTI": {
+        "name": "Haiti",
+        "value": 3133.72347930529,
+        "display": "$3,134",
+        "year": 2025,
+        "unit": "international dollars",
+        "rank": 179
+      },
+      "HND": {
+        "name": "Honduras",
+        "value": 7871.09129065536,
+        "display": "$7,871",
+        "year": 2025,
+        "unit": "international dollars",
+        "rank": 146
+      },
+      "HKG": {
+        "name": "Hong Kong SAR, China",
+        "value": 80422.8129947646,
+        "display": "$80,423",
+        "year": 2025,
+        "unit": "international dollars",
+        "rank": 16
+      },
+      "HUN": {
+        "name": "Hungary",
+        "value": 49837.6008411067,
+        "display": "$49,838",
+        "year": 2025,
+        "unit": "international dollars",
+        "rank": 51
+      },
+      "ISL": {
+        "name": "Iceland",
+        "value": 83431.2131434311,
+        "display": "$83,431",
+        "year": 2025,
+        "unit": "international dollars",
+        "rank": 13
+      },
+      "IND": {
+        "name": "India",
+        "value": 11747.9160436011,
+        "display": "$11,748",
+        "year": 2025,
+        "unit": "international dollars",
+        "rank": 131
+      },
+      "IDN": {
+        "name": "Indonesia",
+        "value": 17659.7921291587,
+        "display": "$17,660",
+        "year": 2025,
+        "unit": "international dollars",
+        "rank": 110
+      },
+      "IRN": {
+        "name": "Iran, Islamic Rep.",
+        "value": 19699.2193549189,
+        "display": "$19,699",
+        "year": 2025,
+        "unit": "international dollars",
+        "rank": 104
+      },
+      "IRQ": {
+        "name": "Iraq",
+        "value": 14266.7965348226,
+        "display": "$14,267",
+        "year": 2025,
+        "unit": "international dollars",
+        "rank": 120
+      },
+      "IRL": {
+        "name": "Ireland",
+        "value": 155089.413131749,
+        "display": "$155,089",
+        "year": 2025,
+        "unit": "international dollars",
+        "rank": 3
+      },
+      "ISR": {
+        "name": "Israel",
+        "value": 59716.9735387228,
+        "display": "$59,717",
+        "year": 2025,
+        "unit": "international dollars",
+        "rank": 38
+      },
+      "ITA": {
+        "name": "Italy",
+        "value": 62802.5108384276,
+        "display": "$62,803",
+        "year": 2025,
+        "unit": "international dollars",
+        "rank": 35
+      },
+      "JAM": {
+        "name": "Jamaica",
+        "value": 13291.253767787,
+        "display": "$13,291",
+        "year": 2025,
+        "unit": "international dollars",
+        "rank": 123
+      },
+      "JPN": {
+        "name": "Japan",
+        "value": 55421.8797530311,
+        "display": "$55,422",
+        "year": 2025,
+        "unit": "international dollars",
+        "rank": 43
+      },
+      "JOR": {
+        "name": "Jordan",
+        "value": 12631.6299394746,
+        "display": "$12,632",
+        "year": 2025,
+        "unit": "international dollars",
+        "rank": 125
+      },
+      "KAZ": {
+        "name": "Kazakhstan",
+        "value": 44293.4839632441,
+        "display": "$44,293",
+        "year": 2025,
+        "unit": "international dollars",
+        "rank": 59
+      },
+      "KEN": {
+        "name": "Kenya",
+        "value": 7015.93578839722,
+        "display": "$7,016",
+        "year": 2025,
+        "unit": "international dollars",
+        "rank": 149
+      },
+      "KIR": {
+        "name": "Kiribati",
+        "value": 3936.61263730517,
+        "display": "$3,937",
+        "year": 2025,
+        "unit": "international dollars",
+        "rank": 171
+      },
+      "KOR": {
+        "name": "Korea, Rep.",
+        "value": 63124.9152183625,
+        "display": "$63,125",
+        "year": 2025,
+        "unit": "international dollars",
+        "rank": 34
+      },
+      "KWT": {
+        "name": "Kuwait",
+        "value": 56467.7272075432,
+        "display": "$56,468",
+        "year": 2025,
+        "unit": "international dollars",
+        "rank": 42
+      },
+      "KGZ": {
+        "name": "Kyrgyz Republic",
+        "value": 9219.51443675205,
+        "display": "$9,220",
+        "year": 2025,
+        "unit": "international dollars",
+        "rank": 139
+      },
+      "LAO": {
+        "name": "Lao PDR",
+        "value": 10382.9990718948,
+        "display": "$10,383",
+        "year": 2025,
+        "unit": "international dollars",
+        "rank": 133
+      },
+      "LVA": {
+        "name": "Latvia",
+        "value": 46136.689377286,
+        "display": "$46,137",
+        "year": 2025,
+        "unit": "international dollars",
+        "rank": 55
+      },
+      "LBN": {
+        "name": "Lebanon",
+        "value": 11917.4502960889,
+        "display": "$11,917",
+        "year": 2024,
+        "unit": "international dollars",
+        "rank": 130
+      },
+      "LSO": {
+        "name": "Lesotho",
+        "value": 3184.11725194709,
+        "display": "$3,184",
+        "year": 2025,
+        "unit": "international dollars",
+        "rank": 178
+      },
+      "LBR": {
+        "name": "Liberia",
+        "value": 1981.09483342188,
+        "display": "$1,981",
+        "year": 2025,
+        "unit": "international dollars",
+        "rank": 186
+      },
+      "LBY": {
+        "name": "Libya",
+        "value": 16521.3998152838,
+        "display": "$16,521",
+        "year": 2025,
+        "unit": "international dollars",
+        "rank": 113
+      },
+      "LTU": {
+        "name": "Lithuania",
+        "value": 56837.8067003598,
+        "display": "$56,838",
+        "year": 2025,
+        "unit": "international dollars",
+        "rank": 41
+      },
+      "LUX": {
+        "name": "Luxembourg",
+        "value": 156542.075847247,
+        "display": "$156,542",
+        "year": 2025,
+        "unit": "international dollars",
+        "rank": 2
+      },
+      "MDG": {
+        "name": "Madagascar",
+        "value": 1952.48426903369,
+        "display": "$1,952",
+        "year": 2025,
+        "unit": "international dollars",
+        "rank": 187
+      },
+      "MWI": {
+        "name": "Malawi",
+        "value": 1899.29166528127,
+        "display": "$1,899",
+        "year": 2025,
+        "unit": "international dollars",
+        "rank": 189
+      },
+      "MYS": {
+        "name": "Malaysia",
+        "value": 41497.6746089548,
+        "display": "$41,498",
+        "year": 2025,
+        "unit": "international dollars",
+        "rank": 62
+      },
+      "MLI": {
+        "name": "Mali",
+        "value": 3502.76132351788,
+        "display": "$3,503",
+        "year": 2025,
+        "unit": "international dollars",
+        "rank": 175
+      },
+      "MLT": {
+        "name": "Malta",
+        "value": 72210.3392223985,
+        "display": "$72,210",
+        "year": 2025,
+        "unit": "international dollars",
+        "rank": 26
+      },
+      "MHL": {
+        "name": "Marshall Islands",
+        "value": 8964.32212870807,
+        "display": "$8,964",
+        "year": 2025,
+        "unit": "international dollars",
+        "rank": 140
+      },
+      "MRT": {
+        "name": "Mauritania",
+        "value": 7675.51996658445,
+        "display": "$7,676",
+        "year": 2025,
+        "unit": "international dollars",
+        "rank": 147
+      },
+      "MUS": {
+        "name": "Mauritius",
+        "value": 33666.64355884,
+        "display": "$33,667",
+        "year": 2025,
+        "unit": "international dollars",
+        "rank": 75
+      },
+      "MEX": {
+        "name": "Mexico",
+        "value": 25868.4787520629,
+        "display": "$25,868",
+        "year": 2025,
+        "unit": "international dollars",
+        "rank": 87
+      },
+      "FSM": {
+        "name": "Micronesia, Fed. Sts.",
+        "value": 4604.39540764468,
+        "display": "$4,604",
+        "year": 2025,
+        "unit": "international dollars",
+        "rank": 164
+      },
+      "MDA": {
+        "name": "Moldova",
+        "value": 19995.7590923995,
+        "display": "$19,996",
+        "year": 2025,
+        "unit": "international dollars",
+        "rank": 103
+      },
+      "MNG": {
+        "name": "Mongolia",
+        "value": 20797.7652692242,
+        "display": "$20,798",
+        "year": 2025,
+        "unit": "international dollars",
+        "rank": 99
+      },
+      "MNE": {
+        "name": "Montenegro",
+        "value": 35422.6449824931,
+        "display": "$35,423",
+        "year": 2025,
+        "unit": "international dollars",
+        "rank": 71
+      },
+      "MAR": {
+        "name": "Morocco",
+        "value": 11111.7080078125,
+        "display": "$11,112",
+        "year": 2025,
+        "unit": "international dollars",
+        "rank": 132
+      },
+      "MOZ": {
+        "name": "Mozambique",
+        "value": 1697.94109338132,
+        "display": "$1,698",
+        "year": 2025,
+        "unit": "international dollars",
+        "rank": 190
+      },
+      "MMR": {
+        "name": "Myanmar",
+        "value": 6011.53492175516,
+        "display": "$6,012",
+        "year": 2025,
+        "unit": "international dollars",
+        "rank": 154
+      },
+      "NAM": {
+        "name": "Namibia",
+        "value": 11985.7200318677,
+        "display": "$11,986",
+        "year": 2025,
+        "unit": "international dollars",
+        "rank": 129
+      },
+      "NPL": {
+        "name": "Nepal",
+        "value": 6175.15897150244,
+        "display": "$6,175",
+        "year": 2025,
+        "unit": "international dollars",
+        "rank": 153
+      },
+      "NLD": {
+        "name": "Netherlands",
+        "value": 87320.1477254029,
+        "display": "$87,320",
+        "year": 2025,
+        "unit": "international dollars",
+        "rank": 12
+      },
+      "NZL": {
+        "name": "New Zealand",
+        "value": 57350.3627657521,
+        "display": "$57,350",
+        "year": 2025,
+        "unit": "international dollars",
+        "rank": 40
+      },
+      "NIC": {
+        "name": "Nicaragua",
+        "value": 9283.92301511154,
+        "display": "$9,284",
+        "year": 2025,
+        "unit": "international dollars",
+        "rank": 138
+      },
+      "NER": {
+        "name": "Niger",
+        "value": 2177.25014417163,
+        "display": "$2,177",
+        "year": 2025,
+        "unit": "international dollars",
+        "rank": 185
+      },
+      "NGA": {
+        "name": "Nigeria",
+        "value": 9531.61073275049,
+        "display": "$9,532",
+        "year": 2025,
+        "unit": "international dollars",
+        "rank": 136
+      },
+      "MKD": {
+        "name": "North Macedonia",
+        "value": 28028.5664230631,
+        "display": "$28,029",
+        "year": 2025,
+        "unit": "international dollars",
+        "rank": 83
+      },
+      "NOR": {
+        "name": "Norway",
+        "value": 104043.666429243,
+        "display": "$104,044",
+        "year": 2025,
+        "unit": "international dollars",
+        "rank": 6
+      },
+      "OMN": {
+        "name": "Oman",
+        "value": 42295.1761223734,
+        "display": "$42,295",
+        "year": 2025,
+        "unit": "international dollars",
+        "rank": 61
+      },
+      "PAK": {
+        "name": "Pakistan",
+        "value": 6573.41613369925,
+        "display": "$6,573",
+        "year": 2025,
+        "unit": "international dollars",
+        "rank": 150
+      },
+      "PLW": {
+        "name": "Palau",
+        "value": 23051.6787122681,
+        "display": "$23,052",
+        "year": 2025,
+        "unit": "international dollars",
+        "rank": 91
+      },
+      "PAN": {
+        "name": "Panama",
+        "value": 43902.1632084954,
+        "display": "$43,902",
+        "year": 2025,
+        "unit": "international dollars",
+        "rank": 60
+      },
+      "PNG": {
+        "name": "Papua New Guinea",
+        "value": 5214.768271628,
+        "display": "$5,215",
+        "year": 2025,
+        "unit": "international dollars",
+        "rank": 158
+      },
+      "PRY": {
+        "name": "Paraguay",
+        "value": 20181.4242826808,
+        "display": "$20,181",
+        "year": 2025,
+        "unit": "international dollars",
+        "rank": 102
+      },
+      "PER": {
+        "name": "Peru",
+        "value": 18816.1045522938,
+        "display": "$18,816",
+        "year": 2025,
+        "unit": "international dollars",
+        "rank": 107
+      },
+      "PHL": {
+        "name": "Philippines",
+        "value": 12576.9867435109,
+        "display": "$12,577",
+        "year": 2025,
+        "unit": "international dollars",
+        "rank": 126
+      },
+      "POL": {
+        "name": "Poland",
+        "value": 54262.4040405236,
+        "display": "$54,262",
+        "year": 2025,
+        "unit": "international dollars",
+        "rank": 44
+      },
+      "PRT": {
+        "name": "Portugal",
+        "value": 53145.7317498942,
+        "display": "$53,146",
+        "year": 2025,
+        "unit": "international dollars",
+        "rank": 45
+      },
+      "PRI": {
+        "name": "Puerto Rico (US)",
+        "value": 52195.5534213472,
+        "display": "$52,196",
+        "year": 2025,
+        "unit": "international dollars",
+        "rank": 46
+      },
+      "QAT": {
+        "name": "Qatar",
+        "value": 128882.934242572,
+        "display": "$128,883",
+        "year": 2025,
+        "unit": "international dollars",
+        "rank": 4
+      },
+      "ROU": {
+        "name": "Romania",
+        "value": 50895.081617639,
+        "display": "$50,895",
+        "year": 2025,
+        "unit": "international dollars",
+        "rank": 50
+      },
+      "RUS": {
+        "name": "Russian Federation",
+        "value": 49568.140625,
+        "display": "$49,568",
+        "year": 2025,
+        "unit": "international dollars",
+        "rank": 53
+      },
+      "RWA": {
+        "name": "Rwanda",
+        "value": 4164.436605809,
+        "display": "$4,164",
+        "year": 2025,
+        "unit": "international dollars",
+        "rank": 169
+      },
+      "WSM": {
+        "name": "Samoa",
+        "value": 9318.95775945515,
+        "display": "$9,319",
+        "year": 2025,
+        "unit": "international dollars",
+        "rank": 137
+      },
+      "SMR": {
+        "name": "San Marino",
+        "value": 78810.3378046111,
+        "display": "$78,810",
+        "year": 2023,
+        "unit": "international dollars",
+        "rank": 20
+      },
+      "STP": {
+        "name": "Sao Tome and Principe",
+        "value": 6388.47738664299,
+        "display": "$6,388",
+        "year": 2025,
+        "unit": "international dollars",
+        "rank": 152
+      },
+      "SAU": {
+        "name": "Saudi Arabia",
+        "value": 73783.5613906833,
+        "display": "$73,784",
+        "year": 2025,
+        "unit": "international dollars",
+        "rank": 24
+      },
+      "SEN": {
+        "name": "Senegal",
+        "value": 5463.21828561328,
+        "display": "$5,463",
+        "year": 2025,
+        "unit": "international dollars",
+        "rank": 157
+      },
+      "SRB": {
+        "name": "Serbia",
+        "value": 33909.7605745332,
+        "display": "$33,910",
+        "year": 2025,
+        "unit": "international dollars",
+        "rank": 73
+      },
+      "SYC": {
+        "name": "Seychelles",
+        "value": 35854.0281615068,
+        "display": "$35,854",
+        "year": 2025,
+        "unit": "international dollars",
+        "rank": 69
+      },
+      "SLE": {
+        "name": "Sierra Leone",
+        "value": 3716.89410482498,
+        "display": "$3,717",
+        "year": 2025,
+        "unit": "international dollars",
+        "rank": 172
+      },
+      "SGP": {
+        "name": "Singapore",
+        "value": 163353.990260152,
+        "display": "$163,354",
+        "year": 2025,
+        "unit": "international dollars",
+        "rank": 1
+      },
+      "SVK": {
+        "name": "Slovak Republic",
+        "value": 49308.7048471448,
+        "display": "$49,309",
+        "year": 2025,
+        "unit": "international dollars",
+        "rank": 54
+      },
+      "SVN": {
+        "name": "Slovenia",
+        "value": 59244.7106359661,
+        "display": "$59,245",
+        "year": 2025,
+        "unit": "international dollars",
+        "rank": 39
+      },
+      "SLB": {
+        "name": "Solomon Islands",
+        "value": 2787.61656406214,
+        "display": "$2,788",
+        "year": 2025,
+        "unit": "international dollars",
+        "rank": 182
+      },
+      "SOM": {
+        "name": "Somalia, Fed. Rep.",
+        "value": 1642.77032278186,
+        "display": "$1,643",
+        "year": 2025,
+        "unit": "international dollars",
+        "rank": 191
+      },
+      "ZAF": {
+        "name": "South Africa",
+        "value": 15905.6794419658,
+        "display": "$15,906",
+        "year": 2025,
+        "unit": "international dollars",
+        "rank": 116
+      },
+      "ESP": {
+        "name": "Spain",
+        "value": 59867.6944716701,
+        "display": "$59,868",
+        "year": 2025,
+        "unit": "international dollars",
+        "rank": 37
+      },
+      "LKA": {
+        "name": "Sri Lanka",
+        "value": 17065.0298635432,
+        "display": "$17,065",
+        "year": 2025,
+        "unit": "international dollars",
+        "rank": 111
+      },
+      "KNA": {
+        "name": "St. Kitts and Nevis",
+        "value": 36777.262691657,
+        "display": "$36,777",
+        "year": 2025,
+        "unit": "international dollars",
+        "rank": 68
+      },
+      "LCA": {
+        "name": "St. Lucia",
+        "value": 28673.8437920214,
+        "display": "$28,674",
+        "year": 2025,
+        "unit": "international dollars",
+        "rank": 81
+      },
+      "VCT": {
+        "name": "St. Vincent and the Grenadines",
+        "value": 22799.4005332261,
+        "display": "$22,799",
+        "year": 2025,
+        "unit": "international dollars",
+        "rank": 92
+      },
+      "SDN": {
+        "name": "Sudan",
+        "value": 2192.27221679688,
+        "display": "$2,192",
+        "year": 2025,
+        "unit": "international dollars",
+        "rank": 184
+      },
+      "SUR": {
+        "name": "Suriname",
+        "value": 22652.3952637959,
+        "display": "$22,652",
+        "year": 2025,
+        "unit": "international dollars",
+        "rank": 94
+      },
+      "SWE": {
+        "name": "Sweden",
+        "value": 72528.8892631159,
+        "display": "$72,529",
+        "year": 2025,
+        "unit": "international dollars",
+        "rank": 25
+      },
+      "CHE": {
+        "name": "Switzerland",
+        "value": 102513.347221899,
+        "display": "$102,513",
+        "year": 2025,
+        "unit": "international dollars",
+        "rank": 7
+      },
+      "SYR": {
+        "name": "Syrian Arab Republic",
+        "value": 4905.15252202552,
+        "display": "$4,905",
+        "year": 2022,
+        "unit": "international dollars",
+        "rank": 161
+      },
+      "TJK": {
+        "name": "Tajikistan",
+        "value": 5923.47183321348,
+        "display": "$5,923",
+        "year": 2025,
+        "unit": "international dollars",
+        "rank": 155
+      },
+      "TZA": {
+        "name": "Tanzania",
+        "value": 4470.9541015625,
+        "display": "$4,471",
+        "year": 2025,
+        "unit": "international dollars",
+        "rank": 166
+      },
+      "THA": {
+        "name": "Thailand",
+        "value": 26250.0723587304,
+        "display": "$26,250",
+        "year": 2025,
+        "unit": "international dollars",
+        "rank": 84
+      },
+      "TLS": {
+        "name": "Timor-Leste",
+        "value": 4809.49016945191,
+        "display": "$4,809",
+        "year": 2025,
+        "unit": "international dollars",
+        "rank": 163
+      },
+      "TGO": {
+        "name": "Togo",
+        "value": 4079.36376686718,
+        "display": "$4,079",
+        "year": 2025,
+        "unit": "international dollars",
+        "rank": 170
+      },
+      "TON": {
+        "name": "Tonga",
+        "value": 8674.68048447494,
+        "display": "$8,675",
+        "year": 2025,
+        "unit": "international dollars",
+        "rank": 141
+      },
+      "TTO": {
+        "name": "Trinidad and Tobago",
+        "value": 37121.2050020847,
+        "display": "$37,121",
+        "year": 2025,
+        "unit": "international dollars",
+        "rank": 67
+      },
+      "TUN": {
+        "name": "Tunisia",
+        "value": 15233.4885842318,
+        "display": "$15,233",
+        "year": 2025,
+        "unit": "international dollars",
+        "rank": 117
+      },
+      "TUR": {
+        "name": "Turkiye",
+        "value": 45288.4750285273,
+        "display": "$45,288",
+        "year": 2025,
+        "unit": "international dollars",
+        "rank": 56
+      },
+      "TKM": {
+        "name": "Turkmenistan",
+        "value": 22601.5518373128,
+        "display": "$22,602",
+        "year": 2025,
+        "unit": "international dollars",
+        "rank": 96
+      },
+      "TCA": {
+        "name": "Turks and Caicos Islands",
+        "value": 38009.5079479808,
+        "display": "$38,010",
+        "year": 2024,
+        "unit": "international dollars",
+        "rank": 65
+      },
+      "UGA": {
+        "name": "Uganda",
+        "value": 3487.69797525182,
+        "display": "$3,488",
+        "year": 2025,
+        "unit": "international dollars",
+        "rank": 176
+      },
+      "UKR": {
+        "name": "Ukraine",
+        "value": 18904.98046875,
+        "display": "$18,905",
+        "year": 2025,
+        "unit": "international dollars",
+        "rank": 106
+      },
+      "ARE": {
+        "name": "United Arab Emirates",
+        "value": 79343.7793099888,
+        "display": "$79,344",
+        "year": 2024,
+        "unit": "international dollars",
+        "rank": 18
+      },
+      "GBR": {
+        "name": "United Kingdom",
+        "value": 64606.4955066338,
+        "display": "$64,606",
+        "year": 2025,
+        "unit": "international dollars",
+        "rank": 31
+      },
+      "USA": {
+        "name": "United States",
+        "value": 90026.5163005744,
+        "display": "$90,027",
+        "year": 2025,
+        "unit": "international dollars",
+        "rank": 11
+      },
+      "URY": {
+        "name": "Uruguay",
+        "value": 38314.8861221656,
+        "display": "$38,315",
+        "year": 2025,
+        "unit": "international dollars",
+        "rank": 64
+      },
+      "UZB": {
+        "name": "Uzbekistan",
+        "value": 13601.2917473678,
+        "display": "$13,601",
+        "year": 2025,
+        "unit": "international dollars",
+        "rank": 122
+      },
+      "VUT": {
+        "name": "Vanuatu",
+        "value": 4525.23645747645,
+        "display": "$4,525",
+        "year": 2025,
+        "unit": "international dollars",
+        "rank": 165
+      },
+      "VNM": {
+        "name": "Viet Nam",
+        "value": 18088.491587163,
+        "display": "$18,088",
+        "year": 2025,
+        "unit": "international dollars",
+        "rank": 109
+      },
+      "VIR": {
+        "name": "Virgin Islands (U.S.)",
+        "value": 49785.1412220186,
+        "display": "$49,785",
+        "year": 2022,
+        "unit": "international dollars",
+        "rank": 52
+      },
+      "PSE": {
+        "name": "West Bank and Gaza",
+        "value": 4999.71301859773,
+        "display": "$5,000",
+        "year": 2025,
+        "unit": "international dollars",
+        "rank": 159
+      },
+      "ZMB": {
+        "name": "Zambia",
+        "value": 4379.26131013191,
+        "display": "$4,379",
+        "year": 2025,
+        "unit": "international dollars",
+        "rank": 167
+      },
+      "ZWE": {
+        "name": "Zimbabwe",
+        "value": 6470.41613223905,
+        "display": "$6,470",
+        "year": 2025,
+        "unit": "international dollars",
+        "rank": 151
+      }
+    }
+  },
+  "review": {
+    "errors": [],
+    "claims": [
+      {
+        "surface": "title",
+        "text": "Places Ranked by Average Wealth",
+        "isos": [],
+        "support": "indicator: NY.GDP.PCAP.PP.CD (GDP per capita, PPP measures average material well-being/output)",
+        "evidence": {}
+      },
+      {
+        "surface": "hook",
+        "text": "THE WEALTH GAP",
+        "isos": [],
+        "support": "indicator: NY.GDP.PCAP.PP.CD",
+        "evidence": {}
+      },
+      {
+        "surface": "description",
+        "text": "Comparing average economic output per person across the globe using purchasing power standards.",
+        "isos": [],
+        "support": "This indicator provides values for gross domestic product (GDP) per person expressed in current international dollars, converted by purchasing power parities (PPPs).",
+        "evidence": {}
+      },
+      {
+        "surface": "beat_0",
+        "text": "Ireland hits 155,089 international dollars per person while Burundi stays at 1,248.",
+        "isos": [
+          "IRL",
+          "BDI"
+        ],
+        "support": "IRL value is 155089.413131749 ($155,089), BDI value is 1248.05425025467 ($1,248)",
+        "evidence": {
+          "IRL": {
+            "name": "Ireland",
+            "value": 155089.413131749,
+            "display": "$155,089",
+            "year": 2025,
+            "unit": "international dollars",
+            "rank": 3
+          },
+          "BDI": {
+            "name": "Burundi",
+            "value": 1248.05425025467,
+            "display": "$1,248",
+            "year": 2025,
+            "unit": "international dollars",
+            "rank": 193
+          }
+        }
+      },
+      {
+        "surface": "beat_1",
+        "text": "Ireland has 124 times the economic output of Burundi.",
+        "isos": [
+          "IRL",
+          "BDI"
+        ],
+        "support": "155089.41 / 1248.05 = 124.26",
+        "evidence": {
+          "IRL": {
+            "name": "Ireland",
+            "value": 155089.413131749,
+            "display": "$155,089",
+            "year": 2025,
+            "unit": "international dollars",
+            "rank": 3
+          },
+          "BDI": {
+            "name": "Burundi",
+            "value": 1248.05425025467,
+            "display": "$1,248",
+            "year": 2025,
+            "unit": "international dollars",
+            "rank": 193
+          }
+        }
+      },
+      {
+        "surface": "beat_2",
+        "text": "Burundi holds 1,248, the lowest across all 193 countries and territories on the map.",
+        "isos": [
+          "BDI"
+        ],
+        "support": "BDI value is 1,248, rank 193 out of 193",
+        "evidence": {
+          "BDI": {
+            "name": "Burundi",
+            "value": 1248.05425025467,
+            "display": "$1,248",
+            "year": 2025,
+            "unit": "international dollars",
+            "rank": 193
+          }
+        }
+      },
+      {
+        "surface": "beat_3",
+        "text": "USA is 90,027. India sits at 11,748. China hits 29,333.",
+        "isos": [
+          "USA",
+          "IND",
+          "CHN"
+        ],
+        "support": "USA value is 90026.52 ($90,027), IND value is 11747.92 ($11,748), CHN value is 29333.33 ($29,333)",
+        "evidence": {
+          "USA": {
+            "name": "United States",
+            "value": 90026.5163005744,
+            "display": "$90,027",
+            "year": 2025,
+            "unit": "international dollars",
+            "rank": 11
+          },
+          "IND": {
+            "name": "India",
+            "value": 11747.9160436011,
+            "display": "$11,748",
+            "year": 2025,
+            "unit": "international dollars",
+            "rank": 131
+          },
+          "CHN": {
+            "name": "China",
+            "value": 29333.3311051433,
+            "display": "$29,333",
+            "year": 2025,
+            "unit": "international dollars",
+            "rank": 79
+          }
+        }
+      },
+      {
+        "surface": "beat_4",
+        "text": "Switzerland climbs to 102,513 and Norway hits 104,044.",
+        "isos": [
+          "CHE",
+          "NOR"
+        ],
+        "support": "CHE value is 102513.35 ($102,513), NOR value is 104043.67 ($104,044)",
+        "evidence": {
+          "CHE": {
+            "name": "Switzerland",
+            "value": 102513.347221899,
+            "display": "$102,513",
+            "year": 2025,
+            "unit": "international dollars",
+            "rank": 7
+          },
+          "NOR": {
+            "name": "Norway",
+            "value": 104043.666429243,
+            "display": "$104,044",
+            "year": 2025,
+            "unit": "international dollars",
+            "rank": 6
+          }
+        }
+      },
+      {
+        "surface": "beat_5",
+        "text": "How many international dollars does your nation generate?",
+        "isos": [],
+        "support": "indicator: NY.GDP.PCAP.PP.CD",
+        "evidence": {}
+      },
+      {
+        "surface": "card_5",
+        "text": "What is your nation's output? GDP per capita, PPP",
+        "isos": [],
+        "support": "indicator: NY.GDP.PCAP.PP.CD",
+        "evidence": {}
+      },
+      {
+        "surface": "title",
+        "text": "Places Ranked by Average Wealth",
+        "isos": [],
+        "support": "Indicator measures GDP per capita, PPP, reflecting average material well-being across places.",
+        "method": "complete-surface-check",
+        "evidence": {}
+      },
+      {
+        "surface": "hook",
+        "text": "THE WEALTH GAP",
+        "isos": [],
+        "support": "Reflects the disparity in GDP per capita across the mapped entities.",
+        "method": "complete-surface-check",
+        "evidence": {}
+      },
+      {
+        "surface": "description",
+        "text": "Comparing average economic output per person across the globe using purchasing power standards.",
+        "isos": [],
+        "support": "Accurately describes GDP per capita in current international dollars converted by PPP.",
+        "method": "complete-surface-check",
+        "evidence": {}
+      },
+      {
+        "surface": "beat_0",
+        "text": "Ireland hits 155,089 international dollars per person while Burundi stays at 1,248.",
+        "isos": [
+          "IRL",
+          "BDI"
+        ],
+        "support": "Ireland value is $155,089 and Burundi value is $1,248.",
+        "method": "complete-surface-check",
+        "evidence": {
+          "IRL": {
+            "name": "Ireland",
+            "value": 155089.413131749,
+            "display": "$155,089",
+            "year": 2025,
+            "unit": "international dollars",
+            "rank": 3
+          },
+          "BDI": {
+            "name": "Burundi",
+            "value": 1248.05425025467,
+            "display": "$1,248",
+            "year": 2025,
+            "unit": "international dollars",
+            "rank": 193
+          }
+        }
+      },
+      {
+        "surface": "beat_1",
+        "text": "Ireland has 124 times the economic output of Burundi.",
+        "isos": [
+          "IRL",
+          "BDI"
+        ],
+        "support": "The ratio between Ireland's and Burundi's GDP per capita values is approximately 124.",
+        "method": "complete-surface-check",
+        "evidence": {
+          "IRL": {
+            "name": "Ireland",
+            "value": 155089.413131749,
+            "display": "$155,089",
+            "year": 2025,
+            "unit": "international dollars",
+            "rank": 3
+          },
+          "BDI": {
+            "name": "Burundi",
+            "value": 1248.05425025467,
+            "display": "$1,248",
+            "year": 2025,
+            "unit": "international dollars",
+            "rank": 193
+          }
+        }
+      },
+      {
+        "surface": "beat_2",
+        "text": "Burundi holds 1,248, the lowest across all 193 countries and territories on the map.",
+        "isos": [
+          "BDI"
+        ],
+        "support": "Burundi's value is 1,248, ranking 193rd out of 193 countries and territories.",
+        "method": "complete-surface-check",
+        "evidence": {
+          "BDI": {
+            "name": "Burundi",
+            "value": 1248.05425025467,
+            "display": "$1,248",
+            "year": 2025,
+            "unit": "international dollars",
+            "rank": 193
+          }
+        }
+      },
+      {
+        "surface": "beat_3",
+        "text": "USA is 90,027. India sits at 11,748. China hits 29,333.",
+        "isos": [
+          "USA",
+          "IND",
+          "CHN"
+        ],
+        "support": "USA value is $90,027, India value is $11,748, China value is $29,333.",
+        "method": "complete-surface-check",
+        "evidence": {
+          "USA": {
+            "name": "United States",
+            "value": 90026.5163005744,
+            "display": "$90,027",
+            "year": 2025,
+            "unit": "international dollars",
+            "rank": 11
+          },
+          "IND": {
+            "name": "India",
+            "value": 11747.9160436011,
+            "display": "$11,748",
+            "year": 2025,
+            "unit": "international dollars",
+            "rank": 131
+          },
+          "CHN": {
+            "name": "China",
+            "value": 29333.3311051433,
+            "display": "$29,333",
+            "year": 2025,
+            "unit": "international dollars",
+            "rank": 79
+          }
+        }
+      },
+      {
+        "surface": "beat_4",
+        "text": "Switzerland climbs to 102,513 and Norway hits 104,044.",
+        "isos": [
+          "CHE",
+          "NOR"
+        ],
+        "support": "Switzerland value is $102,513 and Norway value is $104,044.",
+        "method": "complete-surface-check",
+        "evidence": {
+          "CHE": {
+            "name": "Switzerland",
+            "value": 102513.347221899,
+            "display": "$102,513",
+            "year": 2025,
+            "unit": "international dollars",
+            "rank": 7
+          },
+          "NOR": {
+            "name": "Norway",
+            "value": 104043.666429243,
+            "display": "$104,044",
+            "year": 2025,
+            "unit": "international dollars",
+            "rank": 6
+          }
+        }
+      },
+      {
+        "surface": "beat_5",
+        "text": "How many international dollars does your nation generate?",
+        "isos": [],
+        "support": "Matches the core indicator of GDP per capita in international dollars.",
+        "method": "complete-surface-check",
+        "evidence": {}
+      },
+      {
+        "surface": "card_5",
+        "text": [
+          "What is your nation's output?",
+          "GDP per capita, PPP"
+        ],
+        "isos": [],
+        "support": "Matches indicator definition and question framing.",
+        "method": "complete-surface-check",
+        "evidence": {}
+      }
+    ],
+    "surface_checks": {
+      "title": {
+        "supported": true,
+        "reason": "Indicator measures GDP per capita, PPP, reflecting average material well-being across places.",
+        "isos": []
+      },
+      "hook": {
+        "supported": true,
+        "reason": "Reflects the disparity in GDP per capita across the mapped entities.",
+        "isos": []
+      },
+      "description": {
+        "supported": true,
+        "reason": "Accurately describes GDP per capita in current international dollars converted by PPP.",
+        "isos": []
+      },
+      "beat_0": {
+        "supported": true,
+        "reason": "Ireland value is $155,089 and Burundi value is $1,248.",
+        "isos": [
+          "IRL",
+          "BDI"
+        ]
+      },
+      "beat_1": {
+        "supported": true,
+        "reason": "The ratio between Ireland's and Burundi's GDP per capita values is approximately 124.",
+        "isos": [
+          "IRL",
+          "BDI"
+        ]
+      },
+      "beat_2": {
+        "supported": true,
+        "reason": "Burundi's value is 1,248, ranking 193rd out of 193 countries and territories.",
+        "isos": [
+          "BDI"
+        ]
+      },
+      "beat_3": {
+        "supported": true,
+        "reason": "USA value is $90,027, India value is $11,748, China value is $29,333.",
+        "isos": [
+          "USA",
+          "IND",
+          "CHN"
+        ]
+      },
+      "beat_4": {
+        "supported": true,
+        "reason": "Switzerland value is $102,513 and Norway value is $104,044.",
+        "isos": [
+          "CHE",
+          "NOR"
+        ]
+      },
+      "beat_5": {
+        "supported": true,
+        "reason": "Matches the core indicator of GDP per capita in international dollars.",
+        "isos": []
+      },
+      "card_5": {
+        "supported": true,
+        "reason": "Matches indicator definition and question framing.",
+        "isos": []
+      }
+    },
+    "warnings": []
+  },
+  "script_sha256": "b43ea3862d3b4738ebf9846028bcd4a91cfcccc48001c1d4e10fd9ae69d2cd9b",
+  "data_sha256": "166ae9925fd6fee050831aa26ec87fec3b07f42f2a04a8cdcb7e134fe36ee190",
+  "reviewer_model": "gemini-3.5-flash-lite"
+}

@@ -1,0 +1,37 @@
+{
+  "duration": 43.24,
+  "integrated_lufs": -14.5,
+  "true_peak_dbfs": -1.4,
+  "speech": {
+    "heard": "In Qatar, material well-being hits $126,290 international dollars. In Burundi, it is $1,250. Qatar has 101 times the buying power found in Burundi. These figures convert different currencies and eliminate the differences in price levels between countries. The USA has $89,490 international dollars per person. China hits $29,160. The highest income places on Earth, Qatar, Norway, Ireland, Switzerland, and the USA. India stands at $11,600 international dollars. How much income does your country average?",
+    "model": "small.en",
+    "media_sha256": "acf10e76ef3f8d4d51d778a6e660035940fd20f8b17be14382da58cd74155b90",
+    "primary_differences": [
+      "'126290' heard as '$126290' after 'well being hits'",
+      "'1250' heard as '$1250' after 'burundi it is'",
+      "'89490' heard as '$89490' after 'the usa has'",
+      "'29160' heard as '$29160' after 'person china hits'",
+      "'11600' heard as '$11600' after 'india stands at'"
+    ],
+    "differences": [
+      "'126290' heard as '$126290' after 'well being hits'",
+      "'1250' heard as '$1250' after 'burundi it is'",
+      "'89490' heard as '$89490' after 'the usa has'",
+      "'29160' heard as '$29160' after 'person china hits'",
+      "'11600' heard as '$11600' after 'india stands at'",
+      "base.en: '89490' heard as '$89490' after 'the usa has'",
+      "base.en: '29160 the' heard as '$29160' after 'person china hits'",
+      "base.en: '11600' heard as '$11600' after 'india stands at'"
+    ],
+    "corroboration": {
+      "model": "base.en",
+      "heard": "In Qatar, material well-being hits 126,290 international dollars. In Burundi, it is 1,250. Qatar has 101 times the buying power found in Burundi. These figures convert different currencies and eliminate the differences in price levels between countries. The USA has $89,490 international dollars per person, China hits $29,160. Highest income places on Earth, Qatar, Norway, Ireland, Switzerland, and the USA. India stands at $11,600 international dollars. How much income does your country average?",
+      "differences": [
+        "'89490' heard as '$89490' after 'the usa has'",
+        "'29160 the' heard as '$29160' after 'person china hits'",
+        "'11600' heard as '$11600' after 'india stands at'"
+      ],
+      "resolved": []
+    }
+  }
+}

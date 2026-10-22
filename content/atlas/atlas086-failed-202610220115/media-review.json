@@ -1,0 +1,28 @@
+{
+  "duration": 43.68,
+  "integrated_lufs": -14.3,
+  "true_peak_dbfs": -1.4,
+  "speech": {
+    "heard": "Ireland hits $155,089 international dollars per person while Burundi stays at $1,248. Ireland has 124 times the economic output of Burundi. Burundi holds $1,248, the lowest across all 193 countries and territories on the map. USA is 90,027, India sits at 11,748, China hits 29,333, Switzerland climbs to 102,513 and Norway hits 104,044. How many international dollars does your nation generate?",
+    "model": "small.en",
+    "media_sha256": "5452f745689359780f71f41b7272bcdc3fa07567c8c3c2527cfa2810edb5a526",
+    "primary_differences": [
+      "'155089' heard as '$155089' after 'ireland hits'",
+      "'1248' heard as '$1248' after 'burundi stays at'",
+      "'1248' heard as '$1248' after 'burundi burundi holds'"
+    ],
+    "differences": [
+      "'155089' heard as '$155089' after 'ireland hits'",
+      "'1248' heard as '$1248' after 'burundi stays at'",
+      "'1248' heard as '$1248' after 'burundi burundi holds'"
+    ],
+    "corroboration": {
+      "model": "base.en",
+      "heard": "Ireland hits 155,089 international dollars per person while Burundi stays at 1,248. Ireland has 124 times the economic output of Burundi. Burundi holds 1,248, the lowest across all 193 countries and territories on the map. USA is 90,027. India sits at 11,748. China hits 29,333. Switzerland climbs to 102,513. Norway hits 104,044. How many international dollars does your nation generate?",
+      "differences": [
+        "'and' heard as '(nothing)' after 'climbs to 102513'"
+      ],
+      "resolved": []
+    }
+  }
+}

@@ -61,20 +61,21 @@ Refreshed by every producer run (`atlas.stats`) from the channel's public feed o
 | atlas037 Colombia Rains 180 Times Egypt's Annual Precipitation | map_reveal | 2026-10-15 20:01 UTC | 1052 | – | 9.3 |
 | atlas039 Ireland Produces $131,592 per Person | map_reveal | 2026-10-15 23:01 UTC | 1084 | – | 8.1 |
 | atlas040 Romania Drinks 16.8 Liters of Pure Alcohol per Adult | map_reveal | 2026-10-16 16:02 UTC | 1131 | – | 9.1 |
-| atlas042 Powering Life: Electric Consumption Per Person | map_reveal | 2026-10-16 20:01 UTC | 782 | – | 6.5 |
-| atlas047 Freshwater Per Person: From Iceland to Kuwait | map_reveal | 2026-10-16 23:01 UTC | 1062 | – | 9.1 |
-| atlas048 Uruguay Leads the World in Cash Machines | rank_ladder | 2026-10-17 16:02 UTC | 1052 | – | 10.5 |
-| atlas049 Global Tobacco Use: East Timor at 48.8% and Nigeria at 3.1% | map_reveal | 2026-10-17 20:01 UTC | 418 | – | 4.4 |
-| atlas052 Clean Cooking Access: From 100% Down to 0% | rank_ladder | 2026-10-17 23:01 UTC | 1075 | – | 11.6 |
-| atlas053 Why Greece Has 165.1% College Enrollment | rank_ladder | 2026-10-18 16:01 UTC | 1020 | – | 13.4 |
-| atlas054 Household Goods Cost 130 in Iceland but 100 in USA | rank_ladder | 2026-10-18 20:01 UTC | 1038 | – | 14.4 |
-| atlas055 South Korea Has 12.8 Hospital Beds While Chad Has 0.1 | map_reveal | 2026-10-18 23:00 UTC | 1088 | – | 15.8 |
-| atlas056 Where More Boys Are Born: 1.01 to 1.11 Worldwide | map_reveal | 2026-10-19 16:02 UTC | 825 | – | 15.9 |
-| atlas058 Years Children Must Legally Attend School | rank_ladder | 2026-10-19 20:01 UTC | 1010 | – | 21.1 |
-| atlas061 100% of Adults in Iceland Have an Account, South Sudan 6% | map_reveal | 2026-10-19 23:01 UTC | 1048 | – | 23.4 |
-| atlas065 Iceland Uses 16,248 kg of Energy Per Person | map_reveal | 2026-10-20 16:03 UTC | 876 | – | 31.5 |
-| atlas071 Australia Leads the World in Overweight Toddlers | map_reveal | 2026-10-20 20:00 UTC | 700 | – | 29.3 |
-| atlas075 Bulgaria Has 93.8 Bank Branches to DR Congo 0.6 | map_reveal | 2026-10-21 16:01 UTC | 106 | – | 27.4 |
+| atlas042 Powering Life: Electric Consumption Per Person | map_reveal | 2026-10-16 20:01 UTC | 782 | – | 6.2 |
+| atlas047 Freshwater Per Person: From Iceland to Kuwait | map_reveal | 2026-10-16 23:01 UTC | 1062 | – | 8.7 |
+| atlas048 Uruguay Leads the World in Cash Machines | rank_ladder | 2026-10-17 16:02 UTC | 1052 | – | 10.0 |
+| atlas049 Global Tobacco Use: East Timor at 48.8% and Nigeria at 3.1% | map_reveal | 2026-10-17 20:01 UTC | 418 | – | 4.1 |
+| atlas052 Clean Cooking Access: From 100% Down to 0% | rank_ladder | 2026-10-17 23:01 UTC | 1078 | – | 11.0 |
+| atlas053 Why Greece Has 165.1% College Enrollment | rank_ladder | 2026-10-18 16:01 UTC | 1021 | – | 12.6 |
+| atlas054 Household Goods Cost 130 in Iceland but 100 in USA | rank_ladder | 2026-10-18 20:01 UTC | 1038 | – | 13.5 |
+| atlas055 South Korea Has 12.8 Hospital Beds While Chad Has 0.1 | map_reveal | 2026-10-18 23:00 UTC | 1088 | – | 14.7 |
+| atlas056 Where More Boys Are Born: 1.01 to 1.11 Worldwide | map_reveal | 2026-10-19 16:02 UTC | 827 | – | 14.5 |
+| atlas058 Years Children Must Legally Attend School | rank_ladder | 2026-10-19 20:01 UTC | 1022 | – | 19.2 |
+| atlas061 100% of Adults in Iceland Have an Account, South Sudan 6% | map_reveal | 2026-10-19 23:01 UTC | 1048 | – | 20.9 |
+| atlas065 Iceland Uses 16,248 kg of Energy Per Person | map_reveal | 2026-10-20 16:03 UTC | 912 | – | 27.5 |
+| atlas071 Australia Leads the World in Overweight Toddlers | map_reveal | 2026-10-20 20:00 UTC | 718 | – | 24.6 |
+| atlas075 Bulgaria Has 93.8 Bank Branches to DR Congo 0.6 | map_reveal | 2026-10-21 16:01 UTC | 208 | – | 22.7 |
+| atlas079 Places Ranked by Arable Land | map_reveal | 2026-10-21 23:00 UTC | 246 | – | 113.9 |
 
 ## Log
 

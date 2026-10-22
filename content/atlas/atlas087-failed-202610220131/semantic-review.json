@@ -1,0 +1,162 @@
+{
+  "errors": [],
+  "claims": [
+    {
+      "surface": "title",
+      "text": "Places Ranked by Average Material Well-Being",
+      "isos": [],
+      "support": "indicator: NY.GNP.PCAP.PP.CD, definition references average material well-being of inhabitants"
+    },
+    {
+      "surface": "hook",
+      "text": "THE WEALTH CHASM",
+      "isos": [],
+      "support": "indicator: NY.GNP.PCAP.PP.CD"
+    },
+    {
+      "surface": "description",
+      "text": "A global view of GNI per capita in purchasing power parity international dollars across 191 countries and territories.",
+      "isos": [],
+      "support": "count: 191, unit: international $, indicator: NY.GNP.PCAP.PP.CD"
+    },
+    {
+      "surface": "beat_0",
+      "text": "In Qatar, material well-being hits 126,290 international dollars. In Burundi, it is 1,250.",
+      "isos": [
+        "QAT",
+        "BDI"
+      ],
+      "support": "QAT value: 126290.0, unit: international $; BDI value: 1250.0, unit: international $"
+    },
+    {
+      "surface": "beat_1",
+      "text": "Qatar has 101 times the buying power found in Burundi.",
+      "isos": [
+        "QAT",
+        "BDI"
+      ],
+      "support": "126290 / 1250 = 101.032"
+    },
+    {
+      "surface": "beat_2",
+      "text": "These figures convert different currencies and eliminate the differences in price levels between countries.",
+      "isos": [],
+      "support": "definition: The PPP conversion factor is a currency conversion factor and a spatial price deflator. PPPs convert different currencies to a common currency and, in the process of conversion, equalize their purchasing power by eliminating the differences in price levels between countries"
+    },
+    {
+      "surface": "beat_3",
+      "text": "The USA has 89,490 international dollars per person. China hits 29,160.",
+      "isos": [
+        "USA",
+        "CHN"
+      ],
+      "support": "USA value: 89490.0, unit: international $; CHN value: 29160.0, unit: international $"
+    },
+    {
+      "surface": "beat_4",
+      "text": "The highest income places on Earth: Qatar, Norway, Ireland, Switzerland, and the USA.",
+      "isos": [
+        "QAT",
+        "NOR",
+        "IRL",
+        "CHE",
+        "USA"
+      ],
+      "support": "QAT rank: 2, NOR rank: 4, IRL rank: 6, CHE rank: 7, USA rank: 9"
+    },
+    {
+      "surface": "beat_5",
+      "text": "India stands at 11,600 international dollars.",
+      "isos": [
+        "IND"
+      ],
+      "support": "IND value: 11600.0, unit: international $"
+    },
+    {
+      "surface": "beat_6",
+      "text": "How much income does your country average?",
+      "isos": [],
+      "support": "indicator: NY.GNP.PCAP.PP.CD"
+    },
+    {
+      "surface": "card_6",
+      "text": "WHAT IS YOUR AVERAGE? GNI PER CAPITA, PPP",
+      "isos": [],
+      "support": "indicator: NY.GNP.PCAP.PP.CD"
+    }
+  ],
+  "surface_checks": {
+    "title": {
+      "supported": true,
+      "reason": "Matches indicator definition regarding average material well-being.",
+      "isos": []
+    },
+    "hook": {
+      "supported": true,
+      "reason": "Stylistic framing supported by the wide spread of values.",
+      "isos": []
+    },
+    "description": {
+      "supported": true,
+      "reason": "Matches the 191 count and indicator unit/description.",
+      "isos": []
+    },
+    "beat_0": {
+      "supported": true,
+      "reason": "Matches Qatar (126,290) and Burundi (1,250) values.",
+      "isos": [
+        "QAT",
+        "BDI"
+      ]
+    },
+    "beat_1": {
+      "supported": true,
+      "reason": "126,290 / 1,250 is approximately 101 times.",
+      "isos": [
+        "QAT",
+        "BDI"
+      ]
+    },
+    "beat_2": {
+      "supported": true,
+      "reason": "Directly quotes/paraphrases the official definition text.",
+      "isos": []
+    },
+    "beat_3": {
+      "supported": true,
+      "reason": "Matches USA (89,490) and China (29,160) values.",
+      "isos": [
+        "USA",
+        "CHN"
+      ]
+    },
+    "beat_4": {
+      "supported": true,
+      "reason": "All listed entities are within the top 10 global ranks.",
+      "isos": [
+        "QAT",
+        "NOR",
+        "IRL",
+        "CHE",
+        "USA"
+      ]
+    },
+    "beat_5": {
+      "supported": true,
+      "reason": "Matches India value of 11,600 international dollars.",
+      "isos": [
+        "IND"
+      ]
+    },
+    "beat_6": {
+      "supported": true,
+      "reason": "Valid stylistic question framing.",
+      "isos": []
+    },
+    "card_6": {
+      "supported": true,
+      "reason": "Accurately names the indicator and card prompt.",
+      "isos": []
+    }
+  }
+}

@@ -2784,14 +2784,14 @@
     "#maps','#geography','#mapsofinstagram"
    ],
    "source_url": "https://data.worldbank.org/indicator/SI.POV.GINI",
-   "status": "ready:atlas081",
+   "status": "used:atlas081",
    "added_by": "refill"
   },
   {
    "id": "t080",
    "topic": "Global Consumer Price Inflation Rates",
    "angle": "While most of the world experiences single-digit inflation, a handful of nations battle extreme price surges exceeding one hundred percent.",
-   "format": "map_reveal",
+   "format": "rank_ladder",
    "dataset": {
     "kind": "worldbank",
     "indicator": "FP.CPI.TOTL.ZG",
@@ -2815,7 +2815,7 @@
     "#economics"
    ],
    "source_url": "https://data.worldbank.org/indicator/FP.CPI.TOTL.ZG",
-   "status": "open",
+   "status": "failed:RuntimeError",
    "added_by": "refill"
   },
   {
@@ -2962,7 +2962,7 @@
    "id": "t085",
    "topic": "Comparing Average Wealth Around the Globe",
    "angle": "The global economic output per person varies dramatically, with top economies exceeding 160 thousand international dollars while the lowest remain under 2 thousand.",
-   "format": "map_reveal",
+   "format": "rank_ladder",
    "dataset": {
     "kind": "worldbank",
     "indicator": "NY.GDP.PCAP.PP.CD",
@@ -2994,14 +2994,14 @@
     "#economy"
    ],
    "source_url": "https://data.worldbank.org/indicator/NY.GDP.PCAP.PP.CD",
-   "status": "open",
+   "status": "failed:ValueError",
    "added_by": "refill"
   },
   {
    "id": "t086",
    "topic": "Global Purchasing Power Parity Income",
    "angle": "The average material well-being in the highest-income nation exceeds one hundred thirty thousand international dollars.",
-   "format": "map_reveal",
+   "format": "rank_ladder",
    "dataset": {
     "kind": "worldbank",
     "indicator": "NY.GNP.PCAP.PP.CD",
@@ -3025,7 +3025,7 @@
     "#economics"
    ],
    "source_url": "https://data.worldbank.org/indicator/NY.GNP.PCAP.PP.CD",
-   "status": "open",
+   "status": "failed:ValueError",
    "added_by": "refill"
   },
   {
@@ -3181,7 +3181,7 @@
     "#population"
    ],
    "source_url": "https://data.worldbank.org/indicator/EN.URB.MCTY.TL.ZS",
-   "status": "ready:atlas078",
+   "status": "used:atlas078",
    "added_by": "refill"
   },
   {
@@ -3243,7 +3243,7 @@
     "#agriculture"
    ],
    "source_url": "https://data.worldbank.org/indicator/AG.LND.ARBL.HA.PC",
-   "status": "ready:atlas079",
+   "status": "used:atlas079",
    "added_by": "refill"
   },
   {
@@ -3274,7 +3274,7 @@
     "#water"
    ],
    "source_url": "https://data.worldbank.org/indicator/ER.H2O.FWTL.ZS",
-   "status": "open",
+   "status": "failed:RuntimeError",
    "added_by": "refill"
   },
   {

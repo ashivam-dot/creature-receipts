@@ -1,0 +1,147 @@
+{
+  "errors": [],
+  "claims": [
+    {
+      "surface": "title",
+      "text": "Places Ranked by Average Wealth",
+      "isos": [],
+      "support": "indicator: NY.GDP.PCAP.PP.CD (GDP per capita, PPP measures average material well-being/output)"
+    },
+    {
+      "surface": "hook",
+      "text": "THE WEALTH GAP",
+      "isos": [],
+      "support": "indicator: NY.GDP.PCAP.PP.CD"
+    },
+    {
+      "surface": "description",
+      "text": "Comparing average economic output per person across the globe using purchasing power standards.",
+      "isos": [],
+      "support": "This indicator provides values for gross domestic product (GDP) per person expressed in current international dollars, converted by purchasing power parities (PPPs)."
+    },
+    {
+      "surface": "beat_0",
+      "text": "Ireland hits 155,089 international dollars per person while Burundi stays at 1,248.",
+      "isos": [
+        "IRL",
+        "BDI"
+      ],
+      "support": "IRL value is 155089.413131749 ($155,089), BDI value is 1248.05425025467 ($1,248)"
+    },
+    {
+      "surface": "beat_1",
+      "text": "Ireland has 124 times the economic output of Burundi.",
+      "isos": [
+        "IRL",
+        "BDI"
+      ],
+      "support": "155089.41 / 1248.05 = 124.26"
+    },
+    {
+      "surface": "beat_2",
+      "text": "Burundi holds 1,248, the lowest across all 193 countries and territories on the map.",
+      "isos": [
+        "BDI"
+      ],
+      "support": "BDI value is 1,248, rank 193 out of 193"
+    },
+    {
+      "surface": "beat_3",
+      "text": "USA is 90,027. India sits at 11,748. China hits 29,333.",
+      "isos": [
+        "USA",
+        "IND",
+        "CHN"
+      ],
+      "support": "USA value is 90026.52 ($90,027), IND value is 11747.92 ($11,748), CHN value is 29333.33 ($29,333)"
+    },
+    {
+      "surface": "beat_4",
+      "text": "Switzerland climbs to 102,513 and Norway hits 104,044.",
+      "isos": [
+        "CHE",
+        "NOR"
+      ],
+      "support": "CHE value is 102513.35 ($102,513), NOR value is 104043.67 ($104,044)"
+    },
+    {
+      "surface": "beat_5",
+      "text": "How many international dollars does your nation generate?",
+      "isos": [],
+      "support": "indicator: NY.GDP.PCAP.PP.CD"
+    },
+    {
+      "surface": "card_5",
+      "text": "What is your nation's output? GDP per capita, PPP",
+      "isos": [],
+      "support": "indicator: NY.GDP.PCAP.PP.CD"
+    }
+  ],
+  "surface_checks": {
+    "title": {
+      "supported": true,
+      "reason": "Indicator measures GDP per capita, PPP, reflecting average material well-being across places.",
+      "isos": []
+    },
+    "hook": {
+      "supported": true,
+      "reason": "Reflects the disparity in GDP per capita across the mapped entities.",
+      "isos": []
+    },
+    "description": {
+      "supported": true,
+      "reason": "Accurately describes GDP per capita in current international dollars converted by PPP.",
+      "isos": []
+    },
+    "beat_0": {
+      "supported": true,
+      "reason": "Ireland value is $155,089 and Burundi value is $1,248.",
+      "isos": [
+        "IRL",
+        "BDI"
+      ]
+    },
+    "beat_1": {
+      "supported": true,
+      "reason": "The ratio between Ireland's and Burundi's GDP per capita values is approximately 124.",
+      "isos": [
+        "IRL",
+        "BDI"
+      ]
+    },
+    "beat_2": {
+      "supported": true,
+      "reason": "Burundi's value is 1,248, ranking 193rd out of 193 countries and territories.",
+      "isos": [
+        "BDI"
+      ]
+    },
+    "beat_3": {
+      "supported": true,
+      "reason": "USA value is $90,027, India value is $11,748, China value is $29,333.",
+      "isos": [
+        "USA",
+        "IND",
+        "CHN"
+      ]
+    },
+    "beat_4": {
+      "supported": true,
+      "reason": "Switzerland value is $102,513 and Norway value is $104,044.",
+      "isos": [
+        "CHE",
+        "NOR"
+      ]
+    },
+    "beat_5": {
+      "supported": true,
+      "reason": "Matches the core indicator of GDP per capita in international dollars.",
+      "isos": []
+    },
+    "card_5": {
+      "supported": true,
+      "reason": "Matches indicator definition and question framing.",
+      "isos": []
+    }
+  }
+}

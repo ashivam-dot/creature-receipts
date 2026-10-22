@@ -1,0 +1,21 @@
+{
+  "warnings": [
+    {
+      "country": "Egypt, Arab Rep.",
+      "why": "The reported value of 7.75e+03 percent is physically impossible and likely contains a major unit or scaling error, as freshwater withdrawal share cannot exceed total renewable resources by such a massive margin."
+    },
+    {
+      "country": "Bahrain",
+      "why": "The reported value of 3.88e+03 percent is extremely high and likely affected by a scaling or decimal error in the World Bank dataset."
+    },
+    {
+      "country": "Turkmenistan",
+      "why": "The reported value of 1.87e+03 percent is implausibly high even for a heavy agricultural water user relying on the Amu Darya, suggesting a data entry or scaling error."
+    },
+    {
+      "country": "United Arab Emirates",
+      "why": "The reported value of 1.51e+03 percent is likely distorted by a scaling error, although heavy reliance on desalination exists."
+    }
+  ],
+  "policy": "model memory is advisory; unsupported suspicions cannot overrule official data"
+}
