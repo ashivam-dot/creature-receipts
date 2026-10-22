@@ -2404,7 +2404,7 @@
     "#maritime"
    ],
    "source_url": "https://data.worldbank.org/indicator/IS.SHP.GCNW.XQ",
-   "status": "open",
+   "status": "ready:atlas090",
    "added_by": "refill"
   },
   {
@@ -3188,7 +3188,7 @@
    "id": "t091",
    "topic": "Rapid Urban Growth Across Developing Nations",
    "angle": "While some tiny territories shrink drastically, several African nations see their urban populations expand by over five percent annually.",
-   "format": "map_reveal",
+   "format": "rank_ladder",
    "dataset": {
     "kind": "worldbank",
     "indicator": "SP.URB.GROW",
@@ -3212,7 +3212,7 @@
     "#population"
    ],
    "source_url": "https://data.worldbank.org/indicator/SP.URB.GROW",
-   "status": "open",
+   "status": "failed:RuntimeError",
    "added_by": "refill"
   },
   {
@@ -3281,7 +3281,7 @@
    "id": "t094",
    "topic": "The islands dominating global secure servers",
    "angle": "Small financial and offshore hubs outpace traditional tech nations by millions in secure internet infrastructure.",
-   "format": "map_reveal",
+   "format": "rank_ladder",
    "dataset": {
     "kind": "worldbank",
     "indicator": "IT.NET.SECR.P6",
@@ -3313,7 +3313,7 @@
     "#technology"
    ],
    "source_url": "https://data.worldbank.org/indicator/IT.NET.SECR.P6",
-   "status": "open",
+   "status": "failed:ValueError",
    "added_by": "refill"
   }
  ],

@@ -1,0 +1,180 @@
+{
+  "errors": [
+    {
+      "surface": "beat_6",
+      "claim": "giving it 27 times what East Timor has",
+      "reason": "The UK value is 89.995 and East Timor is 3.287. Dividing 89.995 by 3.287 gives approximately 27.38, but the strict math based on displayed rounded values (90 / 3.3) is 27.27, yet more importantly East Timor's official name in the World Bank data is Timor-Leste, and asserting a precise ratio of 27 times is an unsupported calculation/claim not directly given in EVIDENCE.",
+      "severity": "style"
+    }
+  ],
+  "claims": [
+    {
+      "surface": "title",
+      "text": "Places Ranked by Container Shipping CONNECTIVITY",
+      "isos": [],
+      "support": "The Liner Shipping Connectivity Index captures how well countries are connected to global shipping networks."
+    },
+    {
+      "surface": "hook",
+      "text": "SHIPPING CONNECTIVITY GAP",
+      "isos": [],
+      "support": "The Liner Shipping Connectivity Index captures how well countries are connected to global shipping networks."
+    },
+    {
+      "surface": "description",
+      "text": "While major maritime hubs score well above 100, half of all connected countries and territories score under 15.",
+      "isos": [],
+      "support": "CHN value 171.1774765271, SGP value 110.6756480462, KOR value 111.2528687777"
+    },
+    {
+      "surface": "beat_0",
+      "text": "China hits 171 on container shipping connectivity, while Moldova sits at 0.6.",
+      "isos": [
+        "CHN",
+        "MDA"
+      ],
+      "support": "China: 171, Moldova: 0.6"
+    },
+    {
+      "surface": "beat_1",
+      "text": "China is the highest of all 162.",
+      "isos": [
+        "CHN"
+      ],
+      "support": "China rank 1 out of 162"
+    },
+    {
+      "surface": "beat_2",
+      "text": "Moldova is the lowest of all 162.",
+      "isos": [
+        "MDA"
+      ],
+      "support": "Moldova rank 162 out of 162"
+    },
+    {
+      "surface": "beat_3",
+      "text": "It is computed based on five components of the maritime transport sector.",
+      "isos": [],
+      "support": "It is computed by the United Nations Conference on Trade and Development (UNCTAD) based on five components of the maritime transport sector"
+    },
+    {
+      "surface": "beat_4",
+      "text": "South Korea hits 111. The USA hits 103.",
+      "isos": [
+        "KOR",
+        "USA"
+      ],
+      "support": "Korea, Rep.: 111, United States: 103"
+    },
+    {
+      "surface": "beat_5",
+      "text": "The bottom group features Eritrea at 3.5, East Timor at 3.3, and Paraguay at 1.9.",
+      "isos": [
+        "ERI",
+        "TLS",
+        "PRY"
+      ],
+      "support": "Eritrea: 3.5, Timor-Leste: 3.3, Paraguay: 1.9"
+    },
+    {
+      "surface": "beat_6",
+      "text": "The UK hits 90, giving it 27 times what East Timor has.",
+      "isos": [
+        "GBR",
+        "TLS"
+      ],
+      "support": "United Kingdom: 90, Timor-Leste: 3.3"
+    },
+    {
+      "surface": "beat_7",
+      "text": "What score does your country reach in container shipping connectivity?",
+      "isos": [],
+      "support": "The Liner Shipping Connectivity Index captures how well countries are connected to global shipping networks."
+    },
+    {
+      "surface": "card_7",
+      "text": "How connected is your port? Liner shipping connectivity index",
+      "isos": [],
+      "support": "The Liner Shipping Connectivity Index captures how well countries are connected to global shipping networks."
+    }
+  ],
+  "surface_checks": {
+    "title": {
+      "supported": true,
+      "reason": "Title accurately reflects a ranking by shipping connectivity.",
+      "isos": []
+    },
+    "hook": {
+      "supported": true,
+      "reason": "Hook frames the topic accurately based on the indicator.",
+      "isos": []
+    },
+    "description": {
+      "supported": true,
+      "reason": "Description correctly identifies that top hubs score above 100.",
+      "isos": []
+    },
+    "beat_0": {
+      "supported": true,
+      "reason": "China and Moldova values match the evidence (171 and 0.6).",
+      "isos": [
+        "CHN",
+        "MDA"
+      ]
+    },
+    "beat_1": {
+      "supported": true,
+      "reason": "China is rank 1 out of 162 entities.",
+      "isos": [
+        "CHN"
+      ]
+    },
+    "beat_2": {
+      "supported": true,
+      "reason": "Moldova is rank 162 out of 162 entities.",
+      "isos": [
+        "MDA"
+      ]
+    },
+    "beat_3": {
+      "supported": true,
+      "reason": "Definition explicitly mentions computation based on five components.",
+      "isos": []
+    },
+    "beat_4": {
+      "supported": true,
+      "reason": "South Korea (111) and USA (103) match display values.",
+      "isos": [
+        "KOR",
+        "USA"
+      ]
+    },
+    "beat_5": {
+      "supported": true,
+      "reason": "Eritrea (3.5), Timor-Leste (3.3), and Paraguay (1.9) match display values.",
+      "isos": [
+        "ERI",
+        "TLS",
+        "PRY"
+      ]
+    },
+    "beat_6": {
+      "supported": true,
+      "reason": "UK (90) and East Timor/Timor-Leste (3.3) match display values, with slight colloquial naming for Timor-Leste.",
+      "isos": [
+        "GBR",
+        "TLS"
+      ]
+    },
+    "beat_7": {
+      "supported": true,
+      "reason": "Standard concluding question about the index.",
+      "isos": []
+    },
+    "card_7": {
+      "supported": true,
+      "reason": "Card accurately names the index and theme.",
+      "isos": []
+    }
+  }
+}

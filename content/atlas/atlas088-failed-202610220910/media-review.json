@@ -1,0 +1,27 @@
+{
+  "duration": 45.74,
+  "integrated_lufs": -14.4,
+  "true_peak_dbfs": -1.3,
+  "speech": {
+    "heard": "Belize has 464,560 secure internet servers per million people, India has 1,212. Belize has 67 times what Brazil has, sitting among the highest totals on Earth. Denmark counts 246,546, Cyprus has 221,298, and USA has 196,616. The account tracks publicly-trusted certificates found on servers by hosting country. Massive populations look very different. China has 1,413 and India has 1,212. At the far bottom of the map, Eritrea has two. How secure is internet hosting in your country?",
+    "model": "small.en",
+    "media_sha256": "84e06a50852c90173e424c48ddbe5a3f0303cee6fe0ea0bc9283c406af4996ae",
+    "primary_differences": [
+      "'count' heard as 'account' after 'has 196616 the'"
+    ],
+    "differences": [
+      "'count' heard as 'account' after 'has 196616 the'",
+      "base.en: 'how' heard as 'i will' after 'eritrea has 2'",
+      "base.en: 'is' heard as 'as' after '2 how secure'"
+    ],
+    "corroboration": {
+      "model": "base.en",
+      "heard": "Belize has 464,560 secure internet servers per million people. India has 1,212. Belize has 67 times what Brazil has, sitting among the highest totals on Earth. Denmark counts 246,546. Cyprus has 221,298, and USA has 196,616. The count tracks publicly trusted certificates found on servers by hosting country. Massive populations look very different. China has 1,413 and India has 1,212. At the far bottom of the map, Eritrea has two. I'll secure as internet hosting in your country.",
+      "differences": [
+        "'how' heard as 'i will' after 'eritrea has 2'",
+        "'is' heard as 'as' after '2 how secure'"
+      ],
+      "resolved": []
+    }
+  }
+}

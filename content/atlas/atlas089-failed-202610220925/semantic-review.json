@@ -1,0 +1,147 @@
+{
+  "errors": [],
+  "claims": [
+    {
+      "surface": "title",
+      "text": "Places Ranked by How FAST Cities Grow",
+      "isos": [],
+      "support": "indicator: SP.URB.GROW, universe: mapped countries and territories with data, count: 208"
+    },
+    {
+      "surface": "hook",
+      "text": "BOOMING CITIES",
+      "isos": [],
+      "support": "indicator: SP.URB.GROW"
+    },
+    {
+      "surface": "description",
+      "text": "From shrinking European cities to Africa's rapidly expanding urban centers, see how fast city populations are growing worldwide.",
+      "isos": [],
+      "support": "indicator: SP.URB.GROW"
+    },
+    {
+      "surface": "beat_0",
+      "text": "Moldova's urban population shrinks by 1.3% a year, while Rwanda's grows by 5.6%.",
+      "isos": [
+        "MDA",
+        "RWA"
+      ],
+      "support": "MDA value: -1.25666858750883, display: -1.3%; RWA value: 5.55351705171871, display: 5.6%"
+    },
+    {
+      "surface": "beat_1",
+      "text": "Urban growth is slower in major economies: USA has 0.6%, and UK has 0.4%.",
+      "isos": [
+        "USA",
+        "GBR"
+      ],
+      "support": "USA value: 0.606543345545608, display: 0.6%; GBR value: 0.393742423754665, display: 0.4%"
+    },
+    {
+      "surface": "beat_2",
+      "text": "Africa dominates the fastest growth: Chad has 5.7%, Rwanda has 5.6%, and Niger has 5%.",
+      "isos": [
+        "TCD",
+        "RWA",
+        "NER"
+      ],
+      "support": "TCD value: 5.740227773779, display: 5.7%; RWA value: 5.55351705171871, display: 5.6%; NER value: 5.00382031762953, display: 5%"
+    },
+    {
+      "surface": "beat_3",
+      "text": "Burundi leads the world at 5.8%. That is 14 times the UK rate.",
+      "isos": [
+        "BDI",
+        "GBR"
+      ],
+      "support": "BDI rank: 1, value: 5.7990754437795, display: 5.8%; GBR value: 0.393742423754665, display: 0.4% (5.7990754437795 / 0.393742423754665 = 14.73)"
+    },
+    {
+      "surface": "beat_4",
+      "text": "At the other end, Japan sees its cities shrinking by 0.4% a year.",
+      "isos": [
+        "JPN"
+      ],
+      "support": "JPN value: -0.372925170859314, display: -0.4%"
+    },
+    {
+      "surface": "beat_5",
+      "text": "Is your city's population growing or shrinking?",
+      "isos": [],
+      "support": "indicator: SP.URB.GROW"
+    },
+    {
+      "surface": "card_5",
+      "text": "Is Your City Growing?, Urban Population Growth, World Bank",
+      "isos": [],
+      "support": "source: https://data.worldbank.org/indicator/SP.URB.GROW"
+    }
+  ],
+  "surface_checks": {
+    "title": {
+      "supported": true,
+      "reason": "Ranking countries by urban population growth rate is supported by the dataset.",
+      "isos": []
+    },
+    "hook": {
+      "supported": true,
+      "reason": "Stylistic hook referencing urban growth.",
+      "isos": []
+    },
+    "description": {
+      "supported": true,
+      "reason": "Overview description accurately reflects the urban growth theme.",
+      "isos": []
+    },
+    "beat_0": {
+      "supported": true,
+      "reason": "Moldova (-1.3%) and Rwanda (5.6%) match the underlying dataset values.",
+      "isos": [
+        "MDA",
+        "RWA"
+      ]
+    },
+    "beat_1": {
+      "supported": true,
+      "reason": "USA (0.6%) and UK (0.4%) match the underlying dataset values.",
+      "isos": [
+        "USA",
+        "GBR"
+      ]
+    },
+    "beat_2": {
+      "supported": true,
+      "reason": "Chad (5.7%), Rwanda (5.6%), and Niger (5%) match the underlying dataset values.",
+      "isos": [
+        "TCD",
+        "RWA",
+        "NER"
+      ]
+    },
+    "beat_3": {
+      "supported": true,
+      "reason": "Burundi is rank 1 at 5.8%, which is approximately 14 times the UK rate (0.4%).",
+      "isos": [
+        "BDI",
+        "GBR"
+      ]
+    },
+    "beat_4": {
+      "supported": true,
+      "reason": "Japan's urban growth rate is -0.4%, matching the text.",
+      "isos": [
+        "JPN"
+      ]
+    },
+    "beat_5": {
+      "supported": true,
+      "reason": "Standard concluding loop question.",
+      "isos": []
+    },
+    "card_5": {
+      "supported": true,
+      "reason": "Card correctly states the indicator name and source.",
+      "isos": []
+    }
+  }
+}

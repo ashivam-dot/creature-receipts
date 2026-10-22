@@ -1,0 +1,2193 @@
+{
+  "version": 1,
+  "evidence": {
+    "version": 1,
+    "indicator": "IT.NET.SECR.P6",
+    "definition": "The number of distinct, publicly-trusted TLS/SSL certificates found in the Netcraft Secure Server Survey (by hosting country), per 1 million people.",
+    "source": "https://data.worldbank.org/indicator/IT.NET.SECR.P6",
+    "source_response_sha256": "b6b1eafcc4e0f7a5bba998fdb4956266665055dde70649c4df6a2c13d3b9790b",
+    "source_organization": "Secure Server Survey, Netcraft, uri: http://www.netcraft.com/;\nWorld Bank population estimates, World Bank (WB)",
+    "year_label": "2024",
+    "universe": "mapped countries and territories with data",
+    "count": 208,
+    "threshold": null,
+    "at_or_above": null,
+    "entities": {
+      "AFG": {
+        "name": "Afghanistan",
+        "value": 41.0575140034026,
+        "display": "41",
+        "year": 2024,
+        "unit": "per 1M people",
+        "rank": 179
+      },
+      "ALB": {
+        "name": "Albania",
+        "value": 1512.74983930188,
+        "display": "1,513",
+        "year": 2024,
+        "unit": "per 1M people",
+        "rank": 92
+      },
+      "DZA": {
+        "name": "Algeria",
+        "value": 119.343855301674,
+        "display": "119",
+        "year": 2024,
+        "unit": "per 1M people",
+        "rank": 153
+      },
+      "ASM": {
+        "name": "American Samoa",
+        "value": 513.204319469689,
+        "display": "513",
+        "year": 2024,
+        "unit": "per 1M people",
+        "rank": 119
+      },
+      "AND": {
+        "name": "Andorra",
+        "value": 17623.0808660206,
+        "display": "17,623",
+        "year": 2024,
+        "unit": "per 1M people",
+        "rank": 46
+      },
+      "AGO": {
+        "name": "Angola",
+        "value": 48.5141563014729,
+        "display": "49",
+        "year": 2024,
+        "unit": "per 1M people",
+        "rank": 177
+      },
+      "ATG": {
+        "name": "Antigua and Barbuda",
+        "value": 970.438936996118,
+        "display": "970",
+        "year": 2024,
+        "unit": "per 1M people",
+        "rank": 102
+      },
+      "ARG": {
+        "name": "Argentina",
+        "value": 5453.43428098629,
+        "display": "5,453",
+        "year": 2024,
+        "unit": "per 1M people",
+        "rank": 71
+      },
+      "ARM": {
+        "name": "Armenia",
+        "value": 1735.28926982034,
+        "display": "1,735",
+        "year": 2024,
+        "unit": "per 1M people",
+        "rank": 90
+      },
+      "ABW": {
+        "name": "Aruba",
+        "value": 1574.14695124774,
+        "display": "1,574",
+        "year": 2024,
+        "unit": "per 1M people",
+        "rank": 91
+      },
+      "AUS": {
+        "name": "Australia",
+        "value": 44299.3061115854,
+        "display": "44,299",
+        "year": 2024,
+        "unit": "per 1M people",
+        "rank": 28
+      },
+      "AUT": {
+        "name": "Austria",
+        "value": 47132.0383936251,
+        "display": "47,132",
+        "year": 2024,
+        "unit": "per 1M people",
+        "rank": 27
+      },
+      "AZE": {
+        "name": "Azerbaijan",
+        "value": 541.026362293599,
+        "display": "541",
+        "year": 2024,
+        "unit": "per 1M people",
+        "rank": 116
+      },
+      "BHS": {
+        "name": "Bahamas, The",
+        "value": 6354.61756416295,
+        "display": "6,355",
+        "year": 2024,
+        "unit": "per 1M people",
+        "rank": 67
+      },
+      "BHR": {
+        "name": "Bahrain",
+        "value": 7064.39978094884,
+        "display": "7,064",
+        "year": 2024,
+        "unit": "per 1M people",
+        "rank": 63
+      },
+      "BGD": {
+        "name": "Bangladesh",
+        "value": 527.061270034326,
+        "display": "527",
+        "year": 2024,
+        "unit": "per 1M people",
+        "rank": 118
+      },
+      "BRB": {
+        "name": "Barbados",
+        "value": 1171.81830089887,
+        "display": "1,172",
+        "year": 2024,
+        "unit": "per 1M people",
+        "rank": 100
+      },
+      "BLR": {
+        "name": "Belarus",
+        "value": 12729.5218058239,
+        "display": "12,730",
+        "year": 2024,
+        "unit": "per 1M people",
+        "rank": 52
+      },
+      "BEL": {
+        "name": "Belgium",
+        "value": 36731.8766702,
+        "display": "36,732",
+        "year": 2024,
+        "unit": "per 1M people",
+        "rank": 32
+      },
+      "BLZ": {
+        "name": "Belize",
+        "value": 464560.075958108,
+        "display": "464,560",
+        "year": 2024,
+        "unit": "per 1M people",
+        "rank": 2
+      },
+      "BEN": {
+        "name": "Benin",
+        "value": 20.3972640285468,
+        "display": "20",
+        "year": 2024,
+        "unit": "per 1M people",
+        "rank": 190
+      },
+      "BMU": {
+        "name": "Bermuda",
+        "value": 4347.42248901541,
+        "display": "4,347",
+        "year": 2024,
+        "unit": "per 1M people",
+        "rank": 76
+      },
+      "BTN": {
+        "name": "Bhutan",
+        "value": 1339.18870432229,
+        "display": "1,339",
+        "year": 2024,
+        "unit": "per 1M people",
+        "rank": 96
+      },
+      "BOL": {
+        "name": "Bolivia",
+        "value": 364.447369618833,
+        "display": "364",
+        "year": 2024,
+        "unit": "per 1M people",
+        "rank": 132
+      },
+      "BIH": {
+        "name": "Bosnia and Herzegovina",
+        "value": 5554.23349523568,
+        "display": "5,554",
+        "year": 2024,
+        "unit": "per 1M people",
+        "rank": 70
+      },
+      "BWA": {
+        "name": "Botswana",
+        "value": 471.215589461747,
+        "display": "471",
+        "year": 2024,
+        "unit": "per 1M people",
+        "rank": 123
+      },
+      "BRA": {
+        "name": "Brazil",
+        "value": 6941.17408045006,
+        "display": "6,941",
+        "year": 2024,
+        "unit": "per 1M people",
+        "rank": 64
+      },
+      "VGB": {
+        "name": "British Virgin Islands",
+        "value": 1443008.79126447,
+        "display": "1,443,009",
+        "year": 2024,
+        "unit": "per 1M people",
+        "rank": 1
+      },
+      "BRN": {
+        "name": "Brunei Darussalam",
+        "value": 16128.509404155,
+        "display": "16,129",
+        "year": 2024,
+        "unit": "per 1M people",
+        "rank": 48
+      },
+      "BGR": {
+        "name": "Bulgaria",
+        "value": 50750.6030113542,
+        "display": "50,751",
+        "year": 2024,
+        "unit": "per 1M people",
+        "rank": 26
+      },
+      "BFA": {
+        "name": "Burkina Faso",
+        "value": 28.8337642615132,
+        "display": "29",
+        "year": 2024,
+        "unit": "per 1M people",
+        "rank": 183
+      },
+      "BDI": {
+        "name": "Burundi",
+        "value": 10.6066536036355,
+        "display": "11",
+        "year": 2024,
+        "unit": "per 1M people",
+        "rank": 199
+      },
+      "CPV": {
+        "name": "Cabo Verde",
+        "value": 857.34372052881,
+        "display": "857",
+        "year": 2024,
+        "unit": "per 1M people",
+        "rank": 107
+      },
+      "KHM": {
+        "name": "Cambodia",
+        "value": 817.289111657873,
+        "display": "817",
+        "year": 2024,
+        "unit": "per 1M people",
+        "rank": 109
+      },
+      "CMR": {
+        "name": "Cameroon",
+        "value": 25.168467350901,
+        "display": "25",
+        "year": 2024,
+        "unit": "per 1M people",
+        "rank": 184
+      },
+      "CAN": {
+        "name": "Canada",
+        "value": 39738.0380540323,
+        "display": "39,738",
+        "year": 2024,
+        "unit": "per 1M people",
+        "rank": 31
+      },
+      "CYM": {
+        "name": "Cayman Islands",
+        "value": 26673.1133405858,
+        "display": "26,673",
+        "year": 2024,
+        "unit": "per 1M people",
+        "rank": 42
+      },
+      "CAF": {
+        "name": "Central African Republic",
+        "value": 1.68833678191754,
+        "display": "2",
+        "year": 2024,
+        "unit": "per 1M people",
+        "rank": 207
+      },
+      "TCD": {
+        "name": "Chad",
+        "value": 1.23158030029179,
+        "display": "1",
+        "year": 2024,
+        "unit": "per 1M people",
+        "rank": 208
+      },
+      "CHL": {
+        "name": "Chile",
+        "value": 11912.6095617298,
+        "display": "11,913",
+        "year": 2024,
+        "unit": "per 1M people",
+        "rank": 54
+      },
+      "CHN": {
+        "name": "China",
+        "value": 1413.32103124612,
+        "display": "1,413",
+        "year": 2024,
+        "unit": "per 1M people",
+        "rank": 95
+      },
+      "COL": {
+        "name": "Colombia",
+        "value": 1126.20714719974,
+        "display": "1,126",
+        "year": 2024,
+        "unit": "per 1M people",
+        "rank": 101
+      },
+      "COM": {
+        "name": "Comoros",
+        "value": 16.1545668960615,
+        "display": "16",
+        "year": 2024,
+        "unit": "per 1M people",
+        "rank": 192
+      },
+      "COD": {
+        "name": "Congo, Dem. Rep.",
+        "value": 9.66358065038185,
+        "display": "10",
+        "year": 2024,
+        "unit": "per 1M people",
+        "rank": 201
+      },
+      "COG": {
+        "name": "Congo, Rep.",
+        "value": 16.5799220933146,
+        "display": "17",
+        "year": 2024,
+        "unit": "per 1M people",
+        "rank": 191
+      },
+      "CRI": {
+        "name": "Costa Rica",
+        "value": 1999.84015314109,
+        "display": "2,000",
+        "year": 2024,
+        "unit": "per 1M people",
+        "rank": 88
+      },
+      "CIV": {
+        "name": "Cote d'Ivoire",
+        "value": 60.7498599465213,
+        "display": "61",
+        "year": 2024,
+        "unit": "per 1M people",
+        "rank": 170
+      },
+      "HRV": {
+        "name": "Croatia",
+        "value": 29458.6415601883,
+        "display": "29,459",
+        "year": 2024,
+        "unit": "per 1M people",
+        "rank": 38
+      },
+      "CUB": {
+        "name": "Cuba",
+        "value": 192.535681260732,
+        "display": "193",
+        "year": 2024,
+        "unit": "per 1M people",
+        "rank": 143
+      },
+      "CUW": {
+        "name": "Curacao",
+        "value": 5071.58565594004,
+        "display": "5,072",
+        "year": 2024,
+        "unit": "per 1M people",
+        "rank": 73
+      },
+      "CYP": {
+        "name": "Cyprus",
+        "value": 221297.933713323,
+        "display": "221,298",
+        "year": 2024,
+        "unit": "per 1M people",
+        "rank": 4
+      },
+      "CZE": {
+        "name": "Czechia",
+        "value": 79335.8806598204,
+        "display": "79,336",
+        "year": 2024,
+        "unit": "per 1M people",
+        "rank": 17
+      },
+      "DNK": {
+        "name": "Denmark",
+        "value": 246545.586810222,
+        "display": "246,546",
+        "year": 2024,
+        "unit": "per 1M people",
+        "rank": 3
+      },
+      "DJI": {
+        "name": "Djibouti",
+        "value": 114.655153235757,
+        "display": "115",
+        "year": 2024,
+        "unit": "per 1M people",
+        "rank": 155
+      },
+      "DMA": {
+        "name": "Dominica",
+        "value": 62865.3424967903,
+        "display": "62,865",
+        "year": 2024,
+        "unit": "per 1M people",
+        "rank": 20
+      },
+      "DOM": {
+        "name": "Dominican Republic",
+        "value": 180.878555232759,
+        "display": "181",
+        "year": 2024,
+        "unit": "per 1M people",
+        "rank": 147
+      },
+      "ECU": {
+        "name": "Ecuador",
+        "value": 490.861062498601,
+        "display": "491",
+        "year": 2024,
+        "unit": "per 1M people",
+        "rank": 120
+      },
+      "EGY": {
+        "name": "Egypt, Arab Rep.",
+        "value": 82.2047640355153,
+        "display": "82",
+        "year": 2024,
+        "unit": "per 1M people",
+        "rank": 166
+      },
+      "SLV": {
+        "name": "El Salvador",
+        "value": 191.221693627821,
+        "display": "191",
+        "year": 2024,
+        "unit": "per 1M people",
+        "rank": 145
+      },
+      "GNQ": {
+        "name": "Equatorial Guinea",
+        "value": 66.5780368567558,
+        "display": "67",
+        "year": 2024,
+        "unit": "per 1M people",
+        "rank": 169
+      },
+      "ERI": {
+        "name": "Eritrea",
+        "value": 1.97986029540081,
+        "display": "2",
+        "year": 2024,
+        "unit": "per 1M people",
+        "rank": 206
+      },
+      "EST": {
+        "name": "Estonia",
+        "value": 139022.298393767,
+        "display": "139,022",
+        "year": 2024,
+        "unit": "per 1M people",
+        "rank": 13
+      },
+      "SWZ": {
+        "name": "Eswatini",
+        "value": 116.669965610522,
+        "display": "117",
+        "year": 2024,
+        "unit": "per 1M people",
+        "rank": 154
+      },
+      "ETH": {
+        "name": "Ethiopia",
+        "value": 23.7316790056127,
+        "display": "24",
+        "year": 2024,
+        "unit": "per 1M people",
+        "rank": 186
+      },
+      "FRO": {
+        "name": "Faroe Islands",
+        "value": 11420.2049780381,
+        "display": "11,420",
+        "year": 2024,
+        "unit": "per 1M people",
+        "rank": 57
+      },
+      "FJI": {
+        "name": "Fiji",
+        "value": 221.795379765371,
+        "display": "222",
+        "year": 2024,
+        "unit": "per 1M people",
+        "rank": 139
+      },
+      "FIN": {
+        "name": "Finland",
+        "value": 177933.600727841,
+        "display": "177,934",
+        "year": 2024,
+        "unit": "per 1M people",
+        "rank": 8
+      },
+      "FRA": {
+        "name": "France",
+        "value": 57274.6363971705,
+        "display": "57,275",
+        "year": 2024,
+        "unit": "per 1M people",
+        "rank": 23
+      },
+      "PYF": {
+        "name": "French Polynesia",
+        "value": 2771.40028459194,
+        "display": "2,771",
+        "year": 2024,
+        "unit": "per 1M people",
+        "rank": 81
+      },
+      "GAB": {
+        "name": "Gabon",
+        "value": 87.0437881456601,
+        "display": "87",
+        "year": 2024,
+        "unit": "per 1M people",
+        "rank": 164
+      },
+      "GMB": {
+        "name": "Gambia, The",
+        "value": 58.6959073735103,
+        "display": "59",
+        "year": 2024,
+        "unit": "per 1M people",
+        "rank": 172
+      },
+      "GEO": {
+        "name": "Georgia",
+        "value": 5293.35205761652,
+        "display": "5,293",
+        "year": 2024,
+        "unit": "per 1M people",
+        "rank": 72
+      },
+      "DEU": {
+        "name": "Germany",
+        "value": 152113.844011812,
+        "display": "152,114",
+        "year": 2024,
+        "unit": "per 1M people",
+        "rank": 11
+      },
+      "GHA": {
+        "name": "Ghana",
+        "value": 48.9145074910361,
+        "display": "49",
+        "year": 2024,
+        "unit": "per 1M people",
+        "rank": 176
+      },
+      "GRC": {
+        "name": "Greece",
+        "value": 15657.9434729048,
+        "display": "15,658",
+        "year": 2024,
+        "unit": "per 1M people",
+        "rank": 49
+      },
+      "GRL": {
+        "name": "Greenland",
+        "value": 3905.97508621296,
+        "display": "3,906",
+        "year": 2024,
+        "unit": "per 1M people",
+        "rank": 78
+      },
+      "GRD": {
+        "name": "Grenada",
+        "value": 742.276485192864,
+        "display": "742",
+        "year": 2024,
+        "unit": "per 1M people",
+        "rank": 111
+      },
+      "GUM": {
+        "name": "Guam",
+        "value": 1299.34377179232,
+        "display": "1,299",
+        "year": 2024,
+        "unit": "per 1M people",
+        "rank": 98
+      },
+      "GTM": {
+        "name": "Guatemala",
+        "value": 109.147061621475,
+        "display": "109",
+        "year": 2024,
+        "unit": "per 1M people",
+        "rank": 158
+      },
+      "GIN": {
+        "name": "Guinea",
+        "value": 12.2672068756,
+        "display": "12",
+        "year": 2024,
+        "unit": "per 1M people",
+        "rank": 196
+      },
+      "GNB": {
+        "name": "Guinea-Bissau",
+        "value": 10.9023908943231,
+        "display": "11",
+        "year": 2024,
+        "unit": "per 1M people",
+        "rank": 198
+      },
+      "GUY": {
+        "name": "Guyana",
+        "value": 175.673545609545,
+        "display": "176",
+        "year": 2024,
+        "unit": "per 1M people",
+        "rank": 148
+      },
+      "HTI": {
+        "name": "Haiti",
+        "value": 7.72984152890489,
+        "display": "8",
+        "year": 2024,
+        "unit": "per 1M people",
+        "rank": 202
+      },
+      "HND": {
+        "name": "Honduras",
+        "value": 148.812506679705,
+        "display": "149",
+        "year": 2024,
+        "unit": "per 1M people",
+        "rank": 151
+      },
+      "HKG": {
+        "name": "Hong Kong SAR, China",
+        "value": 156139.206017995,
+        "display": "156,139",
+        "year": 2024,
+        "unit": "per 1M people",
+        "rank": 10
+      },
+      "HUN": {
+        "name": "Hungary",
+        "value": 55077.4335878286,
+        "display": "55,077",
+        "year": 2024,
+        "unit": "per 1M people",
+        "rank": 25
+      },
+      "ISL": {
+        "name": "Iceland",
+        "value": 88084.0142197016,
+        "display": "88,084",
+        "year": 2024,
+        "unit": "per 1M people",
+        "rank": 16
+      },
+      "IND": {
+        "name": "India",
+        "value": 1212.44166069372,
+        "display": "1,212",
+        "year": 2024,
+        "unit": "per 1M people",
+        "rank": 99
+      },
+      "IDN": {
+        "name": "Indonesia",
+        "value": 2939.49021766292,
+        "display": "2,939",
+        "year": 2024,
+        "unit": "per 1M people",
+        "rank": 80
+      },
+      "IRN": {
+        "name": "Iran, Islamic Rep.",
+        "value": 7225.71087209777,
+        "display": "7,226",
+        "year": 2024,
+        "unit": "per 1M people",
+        "rank": 62
+      },
+      "IRQ": {
+        "name": "Iraq",
+        "value": 34.5119560905403,
+        "display": "35",
+        "year": 2024,
+        "unit": "per 1M people",
+        "rank": 181
+      },
+      "IRL": {
+        "name": "Ireland",
+        "value": 121467.84808156,
+        "display": "121,468",
+        "year": 2024,
+        "unit": "per 1M people",
+        "rank": 14
+      },
+      "IMN": {
+        "name": "Isle of Man",
+        "value": 21364.0684410646,
+        "display": "21,364",
+        "year": 2024,
+        "unit": "per 1M people",
+        "rank": 44
+      },
+      "ISR": {
+        "name": "Israel",
+        "value": 12318.6898882246,
+        "display": "12,319",
+        "year": 2024,
+        "unit": "per 1M people",
+        "rank": 53
+      },
+      "ITA": {
+        "name": "Italy",
+        "value": 30647.1608155582,
+        "display": "30,647",
+        "year": 2024,
+        "unit": "per 1M people",
+        "rank": 36
+      },
+      "JAM": {
+        "name": "Jamaica",
+        "value": 191.957170656969,
+        "display": "192",
+        "year": 2024,
+        "unit": "per 1M people",
+        "rank": 144
+      },
+      "JPN": {
+        "name": "Japan",
+        "value": 32928.7580837326,
+        "display": "32,929",
+        "year": 2024,
+        "unit": "per 1M people",
+        "rank": 35
+      },
+      "JOR": {
+        "name": "Jordan",
+        "value": 212.241523236292,
+        "display": "212",
+        "year": 2024,
+        "unit": "per 1M people",
+        "rank": 141
+      },
+      "KAZ": {
+        "name": "Kazakhstan",
+        "value": 6914.14394055021,
+        "display": "6,914",
+        "year": 2024,
+        "unit": "per 1M people",
+        "rank": 65
+      },
+      "KEN": {
+        "name": "Kenya",
+        "value": 399.695610422168,
+        "display": "400",
+        "year": 2024,
+        "unit": "per 1M people",
+        "rank": 129
+      },
+      "KIR": {
+        "name": "Kiribati",
+        "value": 22.3018480798109,
+        "display": "22",
+        "year": 2024,
+        "unit": "per 1M people",
+        "rank": 188
+      },
+      "PRK": {
+        "name": "Korea, Dem. People's Rep.",
+        "value": 10.4155569475671,
+        "display": "10",
+        "year": 2024,
+        "unit": "per 1M people",
+        "rank": 200
+      },
+      "KOR": {
+        "name": "Korea, Rep.",
+        "value": 11902.38307173,
+        "display": "11,902",
+        "year": 2024,
+        "unit": "per 1M people",
+        "rank": 55
+      },
+      "KWT": {
+        "name": "Kuwait",
+        "value": 384.296289580527,
+        "display": "384",
+        "year": 2024,
+        "unit": "per 1M people",
+        "rank": 131
+      },
+      "KGZ": {
+        "name": "Kyrgyz Republic",
+        "value": 1301.74076845492,
+        "display": "1,302",
+        "year": 2024,
+        "unit": "per 1M people",
+        "rank": 97
+      },
+      "LAO": {
+        "name": "Lao PDR",
+        "value": 301.680129228236,
+        "display": "302",
+        "year": 2024,
+        "unit": "per 1M people",
+        "rank": 133
+      },
+      "LVA": {
+        "name": "Latvia",
+        "value": 28218.3820582126,
+        "display": "28,218",
+        "year": 2024,
+        "unit": "per 1M people",
+        "rank": 40
+      },
+      "LBN": {
+        "name": "Lebanon",
+        "value": 267.311429182623,
+        "display": "267",
+        "year": 2024,
+        "unit": "per 1M people",
+        "rank": 136
+      },
+      "LSO": {
+        "name": "Lesotho",
+        "value": 85.9921374950105,
+        "display": "86",
+        "year": 2024,
+        "unit": "per 1M people",
+        "rank": 165
+      },
+      "LBR": {
+        "name": "Liberia",
+        "value": 13.0059469246904,
+        "display": "13",
+        "year": 2024,
+        "unit": "per 1M people",
+        "rank": 195
+      },
+      "LBY": {
+        "name": "Libya",
+        "value": 388.564024255174,
+        "display": "389",
+        "year": 2024,
+        "unit": "per 1M people",
+        "rank": 130
+      },
+      "LIE": {
+        "name": "Liechtenstein",
+        "value": 60321.3844252163,
+        "display": "60,321",
+        "year": 2024,
+        "unit": "per 1M people",
+        "rank": 21
+      },
+      "LTU": {
+        "name": "Lithuania",
+        "value": 98553.1863622546,
+        "display": "98,553",
+        "year": 2024,
+        "unit": "per 1M people",
+        "rank": 15
+      },
+      "LUX": {
+        "name": "Luxembourg",
+        "value": 58437.6643250046,
+        "display": "58,438",
+        "year": 2024,
+        "unit": "per 1M people",
+        "rank": 22
+      },
+      "MDG": {
+        "name": "Madagascar",
+        "value": 25.0586924005151,
+        "display": "25",
+        "year": 2024,
+        "unit": "per 1M people",
+        "rank": 185
+      },
+      "MWI": {
+        "name": "Malawi",
+        "value": 32.4632055194284,
+        "display": "32",
+        "year": 2024,
+        "unit": "per 1M people",
+        "rank": 182
+      },
+      "MYS": {
+        "name": "Malaysia",
+        "value": 7475.46106293289,
+        "display": "7,475",
+        "year": 2024,
+        "unit": "per 1M people",
+        "rank": 61
+      },
+      "MLI": {
+        "name": "Mali",
+        "value": 20.9979371773584,
+        "display": "21",
+        "year": 2024,
+        "unit": "per 1M people",
+        "rank": 189
+      },
+      "MLT": {
+        "name": "Malta",
+        "value": 4507.36313982494,
+        "display": "4,507",
+        "year": 2024,
+        "unit": "per 1M people",
+        "rank": 75
+      },
+      "MHL": {
+        "name": "Marshall Islands",
+        "value": 213.060615745179,
+        "display": "213",
+        "year": 2024,
+        "unit": "per 1M people",
+        "rank": 140
+      },
+      "MRT": {
+        "name": "Mauritania",
+        "value": 52.2304834511582,
+        "display": "52",
+        "year": 2024,
+        "unit": "per 1M people",
+        "rank": 175
+      },
+      "MUS": {
+        "name": "Mauritius",
+        "value": 2157.68607433582,
+        "display": "2,158",
+        "year": 2024,
+        "unit": "per 1M people",
+        "rank": 85
+      },
+      "MEX": {
+        "name": "Mexico",
+        "value": 531.655697865752,
+        "display": "532",
+        "year": 2024,
+        "unit": "per 1M people",
+        "rank": 117
+      },
+      "FSM": {
+        "name": "Micronesia, Fed. Sts.",
+        "value": 194.414987628137,
+        "display": "194",
+        "year": 2024,
+        "unit": "per 1M people",
+        "rank": 142
+      },
+      "MDA": {
+        "name": "Moldova",
+        "value": 13318.0369195265,
+        "display": "13,318",
+        "year": 2024,
+        "unit": "per 1M people",
+        "rank": 50
+      },
+      "MNG": {
+        "name": "Mongolia",
+        "value": 2564.12584246201,
+        "display": "2,564",
+        "year": 2024,
+        "unit": "per 1M people",
+        "rank": 82
+      },
+      "MNE": {
+        "name": "Montenegro",
+        "value": 6424.76243935688,
+        "display": "6,425",
+        "year": 2024,
+        "unit": "per 1M people",
+        "rank": 66
+      },
+      "MAR": {
+        "name": "Morocco",
+        "value": 577.319401374532,
+        "display": "577",
+        "year": 2024,
+        "unit": "per 1M people",
+        "rank": 114
+      },
+      "MOZ": {
+        "name": "Mozambique",
+        "value": 37.1624132595491,
+        "display": "37",
+        "year": 2024,
+        "unit": "per 1M people",
+        "rank": 180
+      },
+      "MMR": {
+        "name": "Myanmar",
+        "value": 23.596290875918,
+        "display": "24",
+        "year": 2024,
+        "unit": "per 1M people",
+        "rank": 187
+      },
+      "NAM": {
+        "name": "Namibia",
+        "value": 427.374262036856,
+        "display": "427",
+        "year": 2024,
+        "unit": "per 1M people",
+        "rank": 127
+      },
+      "NPL": {
+        "name": "Nepal",
+        "value": 541.228652445205,
+        "display": "541",
+        "year": 2024,
+        "unit": "per 1M people",
+        "rank": 115
+      },
+      "NLD": {
+        "name": "Netherlands",
+        "value": 198682.41199523,
+        "display": "198,682",
+        "year": 2024,
+        "unit": "per 1M people",
+        "rank": 6
+      },
+      "NCL": {
+        "name": "New Caledonia",
+        "value": 7541.71521909247,
+        "display": "7,542",
+        "year": 2024,
+        "unit": "per 1M people",
+        "rank": 60
+      },
+      "NZL": {
+        "name": "New Zealand",
+        "value": 18709.4517958412,
+        "display": "18,709",
+        "year": 2024,
+        "unit": "per 1M people",
+        "rank": 45
+      },
+      "NIC": {
+        "name": "Nicaragua",
+        "value": 93.9830599149236,
+        "display": "94",
+        "year": 2024,
+        "unit": "per 1M people",
+        "rank": 161
+      },
+      "NER": {
+        "name": "Niger",
+        "value": 5.2159607511161,
+        "display": "5",
+        "year": 2024,
+        "unit": "per 1M people",
+        "rank": 204
+      },
+      "NGA": {
+        "name": "Nigeria",
+        "value": 98.36277868906,
+        "display": "98",
+        "year": 2024,
+        "unit": "per 1M people",
+        "rank": 160
+      },
+      "MKD": {
+        "name": "North Macedonia",
+        "value": 2068.12365329412,
+        "display": "2,068",
+        "year": 2024,
+        "unit": "per 1M people",
+        "rank": 86
+      },
+      "MNP": {
+        "name": "Northern Mariana Islands",
+        "value": 1445.41307195447,
+        "display": "1,445",
+        "year": 2024,
+        "unit": "per 1M people",
+        "rank": 94
+      },
+      "NOR": {
+        "name": "Norway",
+        "value": 35469.8678942673,
+        "display": "35,470",
+        "year": 2024,
+        "unit": "per 1M people",
+        "rank": 34
+      },
+      "OMN": {
+        "name": "Oman",
+        "value": 286.658923972525,
+        "display": "287",
+        "year": 2024,
+        "unit": "per 1M people",
+        "rank": 134
+      },
+      "PAK": {
+        "name": "Pakistan",
+        "value": 109.651337877655,
+        "display": "110",
+        "year": 2024,
+        "unit": "per 1M people",
+        "rank": 157
+      },
+      "PLW": {
+        "name": "Palau",
+        "value": 1469.3416219271,
+        "display": "1,469",
+        "year": 2024,
+        "unit": "per 1M people",
+        "rank": 93
+      },
+      "PAN": {
+        "name": "Panama",
+        "value": 2234.48741988012,
+        "display": "2,234",
+        "year": 2024,
+        "unit": "per 1M people",
+        "rank": 84
+      },
+      "PNG": {
+        "name": "Papua New Guinea",
+        "value": 88.1198717685677,
+        "display": "88",
+        "year": 2024,
+        "unit": "per 1M people",
+        "rank": 163
+      },
+      "PRY": {
+        "name": "Paraguay",
+        "value": 775.275131029723,
+        "display": "775",
+        "year": 2024,
+        "unit": "per 1M people",
+        "rank": 110
+      },
+      "PER": {
+        "name": "Peru",
+        "value": 826.790743824685,
+        "display": "827",
+        "year": 2024,
+        "unit": "per 1M people",
+        "rank": 108
+      },
+      "PHL": {
+        "name": "Philippines",
+        "value": 131.556605552984,
+        "display": "132",
+        "year": 2024,
+        "unit": "per 1M people",
+        "rank": 152
+      },
+      "POL": {
+        "name": "Poland",
+        "value": 41131.8530670488,
+        "display": "41,132",
+        "year": 2024,
+        "unit": "per 1M people",
+        "rank": 30
+      },
+      "PRT": {
+        "name": "Portugal",
+        "value": 28710.2532558007,
+        "display": "28,710",
+        "year": 2024,
+        "unit": "per 1M people",
+        "rank": 39
+      },
+      "PRI": {
+        "name": "Puerto Rico (US)",
+        "value": 471.191289612152,
+        "display": "471",
+        "year": 2024,
+        "unit": "per 1M people",
+        "rank": 124
+      },
+      "QAT": {
+        "name": "Qatar",
+        "value": 445.444117933167,
+        "display": "445",
+        "year": 2024,
+        "unit": "per 1M people",
+        "rank": 126
+      },
+      "ROU": {
+        "name": "Romania",
+        "value": 27229.5998846093,
+        "display": "27,230",
+        "year": 2024,
+        "unit": "per 1M people",
+        "rank": 41
+      },
+      "RUS": {
+        "name": "Russian Federation",
+        "value": 26105.3190580658,
+        "display": "26,105",
+        "year": 2024,
+        "unit": "per 1M people",
+        "rank": 43
+      },
+      "RWA": {
+        "name": "Rwanda",
+        "value": 160.978445933022,
+        "display": "161",
+        "year": 2024,
+        "unit": "per 1M people",
+        "rank": 149
+      },
+      "WSM": {
+        "name": "Samoa",
+        "value": 605.451818419496,
+        "display": "605",
+        "year": 2024,
+        "unit": "per 1M people",
+        "rank": 113
+      },
+      "SMR": {
+        "name": "San Marino",
+        "value": 36024.3694263767,
+        "display": "36,024",
+        "year": 2024,
+        "unit": "per 1M people",
+        "rank": 33
+      },
+      "STP": {
+        "name": "Sao Tome and Principe",
+        "value": 42.4563548671965,
+        "display": "42",
+        "year": 2024,
+        "unit": "per 1M people",
+        "rank": 178
+      },
+      "SAU": {
+        "name": "Saudi Arabia",
+        "value": 482.77237461006,
+        "display": "483",
+        "year": 2024,
+        "unit": "per 1M people",
+        "rank": 121
+      },
+      "SEN": {
+        "name": "Senegal",
+        "value": 59.615228291193,
+        "display": "60",
+        "year": 2024,
+        "unit": "per 1M people",
+        "rank": 171
+      },
+      "SRB": {
+        "name": "Serbia",
+        "value": 12941.8220001105,
+        "display": "12,942",
+        "year": 2024,
+        "unit": "per 1M people",
+        "rank": 51
+      },
+      "SYC": {
+        "name": "Seychelles",
+        "value": 139583.367668144,
+        "display": "139,583",
+        "year": 2024,
+        "unit": "per 1M people",
+        "rank": 12
+      },
+      "SLE": {
+        "name": "Sierra Leone",
+        "value": 11.339938731931,
+        "display": "11",
+        "year": 2024,
+        "unit": "per 1M people",
+        "rank": 197
+      },
+      "SGP": {
+        "name": "Singapore",
+        "value": 209665.455220098,
+        "display": "209,665",
+        "year": 2024,
+        "unit": "per 1M people",
+        "rank": 5
+      },
+      "SVK": {
+        "name": "Slovak Republic",
+        "value": 43287.3502716398,
+        "display": "43,287",
+        "year": 2024,
+        "unit": "per 1M people",
+        "rank": 29
+      },
+      "SVN": {
+        "name": "Slovenia",
+        "value": 68783.4915859735,
+        "display": "68,783",
+        "year": 2024,
+        "unit": "per 1M people",
+        "rank": 18
+      },
+      "SLB": {
+        "name": "Solomon Islands",
+        "value": 80.566602945808,
+        "display": "81",
+        "year": 2024,
+        "unit": "per 1M people",
+        "rank": 167
+      },
+      "SOM": {
+        "name": "Somalia, Fed. Rep.",
+        "value": 13.9932604038971,
+        "display": "14",
+        "year": 2024,
+        "unit": "per 1M people",
+        "rank": 194
+      },
+      "ZAF": {
+        "name": "South Africa",
+        "value": 16658.2387068502,
+        "display": "16,658",
+        "year": 2024,
+        "unit": "per 1M people",
+        "rank": 47
+      },
+      "SSD": {
+        "name": "South Sudan",
+        "value": 5.2748763167096,
+        "display": "5",
+        "year": 2024,
+        "unit": "per 1M people",
+        "rank": 203
+      },
+      "ESP": {
+        "name": "Spain",
+        "value": 29986.3824811398,
+        "display": "29,986",
+        "year": 2024,
+        "unit": "per 1M people",
+        "rank": 37
+      },
+      "LKA": {
+        "name": "Sri Lanka",
+        "value": 448.71326884468,
+        "display": "449",
+        "year": 2024,
+        "unit": "per 1M people",
+        "rank": 125
+      },
+      "KNA": {
+        "name": "St. Kitts and Nevis",
+        "value": 11720.0008539163,
+        "display": "11,720",
+        "year": 2024,
+        "unit": "per 1M people",
+        "rank": 56
+      },
+      "LCA": {
+        "name": "St. Lucia",
+        "value": 734.377781734022,
+        "display": "734",
+        "year": 2024,
+        "unit": "per 1M people",
+        "rank": 112
+      },
+      "MAF": {
+        "name": "St. Martin (French part)",
+        "value": 2411.11408779517,
+        "display": "2,411",
+        "year": 2024,
+        "unit": "per 1M people",
+        "rank": 83
+      },
+      "VCT": {
+        "name": "St. Vincent and the Grenadines",
+        "value": 268.346982587262,
+        "display": "268",
+        "year": 2024,
+        "unit": "per 1M people",
+        "rank": 135
+      },
+      "SDN": {
+        "name": "Sudan",
+        "value": 2.3984635719866,
+        "display": "2",
+        "year": 2024,
+        "unit": "per 1M people",
+        "rank": 205
+      },
+      "SUR": {
+        "name": "Suriname",
+        "value": 2060.11370818891,
+        "display": "2,060",
+        "year": 2024,
+        "unit": "per 1M people",
+        "rank": 87
+      },
+      "SWE": {
+        "name": "Sweden",
+        "value": 55097.2595366627,
+        "display": "55,097",
+        "year": 2024,
+        "unit": "per 1M people",
+        "rank": 24
+      },
+      "CHE": {
+        "name": "Switzerland",
+        "value": 167357.645513638,
+        "display": "167,358",
+        "year": 2024,
+        "unit": "per 1M people",
+        "rank": 9
+      },
+      "SYR": {
+        "name": "Syrian Arab Republic",
+        "value": 113.89078481694,
+        "display": "114",
+        "year": 2024,
+        "unit": "per 1M people",
+        "rank": 156
+      },
+      "TJK": {
+        "name": "Tajikistan",
+        "value": 152.489012529309,
+        "display": "152",
+        "year": 2024,
+        "unit": "per 1M people",
+        "rank": 150
+      },
+      "TZA": {
+        "name": "Tanzania",
+        "value": 52.4065310993964,
+        "display": "52",
+        "year": 2024,
+        "unit": "per 1M people",
+        "rank": 174
+      },
+      "THA": {
+        "name": "Thailand",
+        "value": 3149.99672587537,
+        "display": "3,150",
+        "year": 2024,
+        "unit": "per 1M people",
+        "rank": 79
+      },
+      "TLS": {
+        "name": "Timor-Leste",
+        "value": 264.879290723228,
+        "display": "265",
+        "year": 2024,
+        "unit": "per 1M people",
+        "rank": 137
+      },
+      "TGO": {
+        "name": "Togo",
+        "value": 101.944220214742,
+        "display": "102",
+        "year": 2024,
+        "unit": "per 1M people",
+        "rank": 159
+      },
+      "TON": {
+        "name": "Tonga",
+        "value": 969.522438204944,
+        "display": "970",
+        "year": 2024,
+        "unit": "per 1M people",
+        "rank": 103
+      },
+      "TTO": {
+        "name": "Trinidad and Tobago",
+        "value": 480.146280181798,
+        "display": "480",
+        "year": 2024,
+        "unit": "per 1M people",
+        "rank": 122
+      },
+      "TUN": {
+        "name": "Tunisia",
+        "value": 912.34833868462,
+        "display": "912",
+        "year": 2024,
+        "unit": "per 1M people",
+        "rank": 105
+      },
+      "TUR": {
+        "name": "Turkiye",
+        "value": 11103.4011629345,
+        "display": "11,103",
+        "year": 2024,
+        "unit": "per 1M people",
+        "rank": 58
+      },
+      "TKM": {
+        "name": "Turkmenistan",
+        "value": 188.271449268517,
+        "display": "188",
+        "year": 2024,
+        "unit": "per 1M people",
+        "rank": 146
+      },
+      "TCA": {
+        "name": "Turks and Caicos Islands",
+        "value": 859.568067046309,
+        "display": "860",
+        "year": 2024,
+        "unit": "per 1M people",
+        "rank": 106
+      },
+      "UGA": {
+        "name": "Uganda",
+        "value": 53.7637719430767,
+        "display": "54",
+        "year": 2024,
+        "unit": "per 1M people",
+        "rank": 173
+      },
+      "UKR": {
+        "name": "Ukraine",
+        "value": 9936.86751062547,
+        "display": "9,937",
+        "year": 2024,
+        "unit": "per 1M people",
+        "rank": 59
+      },
+      "ARE": {
+        "name": "United Arab Emirates",
+        "value": 4192.27408432243,
+        "display": "4,192",
+        "year": 2024,
+        "unit": "per 1M people",
+        "rank": 77
+      },
+      "GBR": {
+        "name": "United Kingdom",
+        "value": 68394.8557324519,
+        "display": "68,395",
+        "year": 2024,
+        "unit": "per 1M people",
+        "rank": 19
+      },
+      "USA": {
+        "name": "United States",
+        "value": 196616.101319598,
+        "display": "196,616",
+        "year": 2024,
+        "unit": "per 1M people",
+        "rank": 7
+      },
+      "URY": {
+        "name": "Uruguay",
+        "value": 4640.65897593684,
+        "display": "4,641",
+        "year": 2024,
+        "unit": "per 1M people",
+        "rank": 74
+      },
+      "UZB": {
+        "name": "Uzbekistan",
+        "value": 966.617245834433,
+        "display": "967",
+        "year": 2024,
+        "unit": "per 1M people",
+        "rank": 104
+      },
+      "VUT": {
+        "name": "Vanuatu",
+        "value": 1918.98760437737,
+        "display": "1,919",
+        "year": 2024,
+        "unit": "per 1M people",
+        "rank": 89
+      },
+      "VEN": {
+        "name": "Venezuela, RB",
+        "value": 246.677206628298,
+        "display": "247",
+        "year": 2024,
+        "unit": "per 1M people",
+        "rank": 138
+      },
+      "VNM": {
+        "name": "Viet Nam",
+        "value": 5733.7485681175,
+        "display": "5,734",
+        "year": 2024,
+        "unit": "per 1M people",
+        "rank": 68
+      },
+      "VIR": {
+        "name": "Virgin Islands (U.S.)",
+        "value": 5614.26367877981,
+        "display": "5,614",
+        "year": 2024,
+        "unit": "per 1M people",
+        "rank": 69
+      },
+      "PSE": {
+        "name": "West Bank and Gaza",
+        "value": 427.100601381847,
+        "display": "427",
+        "year": 2024,
+        "unit": "per 1M people",
+        "rank": 128
+      },
+      "YEM": {
+        "name": "Yemen, Rep.",
+        "value": 15.0062227775045,
+        "display": "15",
+        "year": 2024,
+        "unit": "per 1M people",
+        "rank": 193
+      },
+      "ZMB": {
+        "name": "Zambia",
+        "value": 80.5068516209933,
+        "display": "81",
+        "year": 2024,
+        "unit": "per 1M people",
+        "rank": 168
+      },
+      "ZWE": {
+        "name": "Zimbabwe",
+        "value": 89.9943749006951,
+        "display": "90",
+        "year": 2024,
+        "unit": "per 1M people",
+        "rank": 162
+      }
+    }
+  },
+  "review": {
+    "errors": [],
+    "claims": [
+      {
+        "surface": "title",
+        "text": "Places Ranked by Secure Internet Servers",
+        "isos": [],
+        "support": "Indicator IT.NET.SECR.P6 measures secure internet servers per 1 million people.",
+        "evidence": {}
+      },
+      {
+        "surface": "hook",
+        "text": "SURPRISING SERVER LEADERS",
+        "isos": [],
+        "support": "Small hubs like Belize rank very high (rank 2) in secure servers per million.",
+        "evidence": {}
+      },
+      {
+        "surface": "description",
+        "text": "Small offshore hubs like Belize outpace global tech giants in secure internet servers per million people.",
+        "isos": [
+          "BLZ",
+          "IND",
+          "CHN"
+        ],
+        "support": "Belize has 464,560 per million (rank 2) while India has 1,212 and China has 1,413.",
+        "evidence": {
+          "BLZ": {
+            "name": "Belize",
+            "value": 464560.075958108,
+            "display": "464,560",
+            "year": 2024,
+            "unit": "per 1M people",
+            "rank": 2
+          },
+          "IND": {
+            "name": "India",
+            "value": 1212.44166069372,
+            "display": "1,212",
+            "year": 2024,
+            "unit": "per 1M people",
+            "rank": 99
+          },
+          "CHN": {
+            "name": "China",
+            "value": 1413.32103124612,
+            "display": "1,413",
+            "year": 2024,
+            "unit": "per 1M people",
+            "rank": 95
+          }
+        }
+      },
+      {
+        "surface": "beat_0",
+        "text": "Belize has 464,560 secure internet servers per million people. India has 1,212.",
+        "isos": [
+          "BLZ",
+          "IND"
+        ],
+        "support": "Belize value is 464,560.075958108 (display 464,560), India value is 1212.44166069372 (display 1,212).",
+        "evidence": {
+          "BLZ": {
+            "name": "Belize",
+            "value": 464560.075958108,
+            "display": "464,560",
+            "year": 2024,
+            "unit": "per 1M people",
+            "rank": 2
+          },
+          "IND": {
+            "name": "India",
+            "value": 1212.44166069372,
+            "display": "1,212",
+            "year": 2024,
+            "unit": "per 1M people",
+            "rank": 99
+          }
+        }
+      },
+      {
+        "surface": "beat_1",
+        "text": "Belize has 67 times what Brazil has, sitting among the highest totals on Earth.",
+        "isos": [
+          "BLZ",
+          "BRA"
+        ],
+        "support": "Belize is 464,560.08, Brazil is 6,941.17. 464560.08 / 6941.17 roughly 66.9 times. Belize rank is 2.",
+        "evidence": {
+          "BLZ": {
+            "name": "Belize",
+            "value": 464560.075958108,
+            "display": "464,560",
+            "year": 2024,
+            "unit": "per 1M people",
+            "rank": 2
+          },
+          "BRA": {
+            "name": "Brazil",
+            "value": 6941.17408045006,
+            "display": "6,941",
+            "year": 2024,
+            "unit": "per 1M people",
+            "rank": 64
+          }
+        }
+      },
+      {
+        "surface": "beat_2",
+        "text": "Denmark counts 246,546, Cyprus has 221,298, and USA has 196,616.",
+        "isos": [
+          "DNK",
+          "CYP",
+          "USA"
+        ],
+        "support": "Denmark display is 246,546, Cyprus display is 221,298, USA display is 196,616.",
+        "evidence": {
+          "DNK": {
+            "name": "Denmark",
+            "value": 246545.586810222,
+            "display": "246,546",
+            "year": 2024,
+            "unit": "per 1M people",
+            "rank": 3
+          },
+          "CYP": {
+            "name": "Cyprus",
+            "value": 221297.933713323,
+            "display": "221,298",
+            "year": 2024,
+            "unit": "per 1M people",
+            "rank": 4
+          },
+          "USA": {
+            "name": "United States",
+            "value": 196616.101319598,
+            "display": "196,616",
+            "year": 2024,
+            "unit": "per 1M people",
+            "rank": 7
+          }
+        }
+      },
+      {
+        "surface": "beat_3",
+        "text": "The count tracks publicly-trusted certificates found on servers by hosting country.",
+        "isos": [],
+        "support": "Definition matches: The number of distinct, publicly-trusted TLS/SSL certificates found in the Netcraft Secure Server Survey (by hosting country), per 1 million people.",
+        "evidence": {}
+      },
+      {
+        "surface": "beat_4",
+        "text": "Massive populations look very different: China has 1,413, and India has 1,212.",
+        "isos": [
+          "CHN",
+          "IND"
+        ],
+        "support": "China display is 1,413, India display is 1,212.",
+        "evidence": {
+          "CHN": {
+            "name": "China",
+            "value": 1413.32103124612,
+            "display": "1,413",
+            "year": 2024,
+            "unit": "per 1M people",
+            "rank": 95
+          },
+          "IND": {
+            "name": "India",
+            "value": 1212.44166069372,
+            "display": "1,212",
+            "year": 2024,
+            "unit": "per 1M people",
+            "rank": 99
+          }
+        }
+      },
+      {
+        "surface": "beat_5",
+        "text": "At the far bottom of the map, Eritrea has 2.",
+        "isos": [
+          "ERI"
+        ],
+        "support": "Eritrea display is 2, rank 206 out of 208.",
+        "evidence": {
+          "ERI": {
+            "name": "Eritrea",
+            "value": 1.97986029540081,
+            "display": "2",
+            "year": 2024,
+            "unit": "per 1M people",
+            "rank": 206
+          }
+        }
+      },
+      {
+        "surface": "beat_6",
+        "text": "How secure is internet hosting in your country?",
+        "isos": [],
+        "support": "Introductory style question.",
+        "evidence": {}
+      },
+      {
+        "surface": "card_6",
+        "text": "How Secure? Secure Servers per 1M",
+        "isos": [],
+        "support": "Card matches indicator definition and title.",
+        "evidence": {}
+      },
+      {
+        "surface": "title",
+        "text": "Places Ranked by Secure Internet Servers",
+        "isos": [],
+        "support": "Accurately describes indicator IT.NET.SECR.P6.",
+        "method": "complete-surface-check",
+        "evidence": {}
+      },
+      {
+        "surface": "hook",
+        "text": "SURPRISING SERVER LEADERS",
+        "isos": [],
+        "support": "Accurate stylistic framing for high-ranking small economies.",
+        "method": "complete-surface-check",
+        "evidence": {}
+      },
+      {
+        "surface": "description",
+        "text": "Small offshore hubs like Belize outpace global tech giants in secure internet servers per million people.",
+        "isos": [
+          "BLZ",
+          "IND",
+          "CHN"
+        ],
+        "support": "Supported by Belize, India, and China values.",
+        "method": "complete-surface-check",
+        "evidence": {
+          "BLZ": {
+            "name": "Belize",
+            "value": 464560.075958108,
+            "display": "464,560",
+            "year": 2024,
+            "unit": "per 1M people",
+            "rank": 2
+          },
+          "IND": {
+            "name": "India",
+            "value": 1212.44166069372,
+            "display": "1,212",
+            "year": 2024,
+            "unit": "per 1M people",
+            "rank": 99
+          },
+          "CHN": {
+            "name": "China",
+            "value": 1413.32103124612,
+            "display": "1,413",
+            "year": 2024,
+            "unit": "per 1M people",
+            "rank": 95
+          }
+        }
+      },
+      {
+        "surface": "beat_0",
+        "text": "Belize has 464,560 secure internet servers per million people. India has 1,212.",
+        "isos": [
+          "BLZ",
+          "IND"
+        ],
+        "support": "Belize (464,560) and India (1,212) values match EVIDENCE exactly.",
+        "method": "complete-surface-check",
+        "evidence": {
+          "BLZ": {
+            "name": "Belize",
+            "value": 464560.075958108,
+            "display": "464,560",
+            "year": 2024,
+            "unit": "per 1M people",
+            "rank": 2
+          },
+          "IND": {
+            "name": "India",
+            "value": 1212.44166069372,
+            "display": "1,212",
+            "year": 2024,
+            "unit": "per 1M people",
+            "rank": 99
+          }
+        }
+      },
+      {
+        "surface": "beat_1",
+        "text": "Belize has 67 times what Brazil has, sitting among the highest totals on Earth.",
+        "isos": [
+          "BLZ",
+          "BRA"
+        ],
+        "support": "Ratio between Belize and Brazil is approximately 67, and Belize is near the top (rank 2).",
+        "method": "complete-surface-check",
+        "evidence": {
+          "BLZ": {
+            "name": "Belize",
+            "value": 464560.075958108,
+            "display": "464,560",
+            "year": 2024,
+            "unit": "per 1M people",
+            "rank": 2
+          },
+          "BRA": {
+            "name": "Brazil",
+            "value": 6941.17408045006,
+            "display": "6,941",
+            "year": 2024,
+            "unit": "per 1M people",
+            "rank": 64
+          }
+        }
+      },
+      {
+        "surface": "beat_2",
+        "text": "Denmark counts 246,546, Cyprus has 221,298, and USA has 196,616.",
+        "isos": [
+          "DNK",
+          "CYP",
+          "USA"
+        ],
+        "support": "Denmark (246,546), Cyprus (221,298), and USA (196,616) match dataset displays.",
+        "method": "complete-surface-check",
+        "evidence": {
+          "DNK": {
+            "name": "Denmark",
+            "value": 246545.586810222,
+            "display": "246,546",
+            "year": 2024,
+            "unit": "per 1M people",
+            "rank": 3
+          },
+          "CYP": {
+            "name": "Cyprus",
+            "value": 221297.933713323,
+            "display": "221,298",
+            "year": 2024,
+            "unit": "per 1M people",
+            "rank": 4
+          },
+          "USA": {
+            "name": "United States",
+            "value": 196616.101319598,
+            "display": "196,616",
+            "year": 2024,
+            "unit": "per 1M people",
+            "rank": 7
+          }
+        }
+      },
+      {
+        "surface": "beat_3",
+        "text": "The count tracks publicly-trusted certificates found on servers by hosting country.",
+        "isos": [],
+        "support": "Matches the official definition of the World Bank indicator.",
+        "method": "complete-surface-check",
+        "evidence": {}
+      },
+      {
+        "surface": "beat_4",
+        "text": "Massive populations look very different: China has 1,413, and India has 1,212.",
+        "isos": [
+          "CHN",
+          "IND"
+        ],
+        "support": "China (1,413) and India (1,212) match EVIDENCE displays.",
+        "method": "complete-surface-check",
+        "evidence": {
+          "CHN": {
+            "name": "China",
+            "value": 1413.32103124612,
+            "display": "1,413",
+            "year": 2024,
+            "unit": "per 1M people",
+            "rank": 95
+          },
+          "IND": {
+            "name": "India",
+            "value": 1212.44166069372,
+            "display": "1,212",
+            "year": 2024,
+            "unit": "per 1M people",
+            "rank": 99
+          }
+        }
+      },
+      {
+        "surface": "beat_5",
+        "text": "At the far bottom of the map, Eritrea has 2.",
+        "isos": [
+          "ERI"
+        ],
+        "support": "Eritrea display is 2, positioned at the bottom of the map.",
+        "method": "complete-surface-check",
+        "evidence": {
+          "ERI": {
+            "name": "Eritrea",
+            "value": 1.97986029540081,
+            "display": "2",
+            "year": 2024,
+            "unit": "per 1M people",
+            "rank": 206
+          }
+        }
+      },
+      {
+        "surface": "beat_6",
+        "text": "How secure is internet hosting in your country?",
+        "isos": [],
+        "support": "Valid stylistic call-to-action question.",
+        "method": "complete-surface-check",
+        "evidence": {}
+      },
+      {
+        "surface": "card_6",
+        "text": [
+          "How Secure?",
+          "Secure Servers per 1M"
+        ],
+        "isos": [],
+        "support": "Accurately represents the metric name and unit.",
+        "method": "complete-surface-check",
+        "evidence": {}
+      }
+    ],
+    "surface_checks": {
+      "title": {
+        "supported": true,
+        "reason": "Accurately describes indicator IT.NET.SECR.P6.",
+        "isos": []
+      },
+      "hook": {
+        "supported": true,
+        "reason": "Accurate stylistic framing for high-ranking small economies.",
+        "isos": []
+      },
+      "description": {
+        "supported": true,
+        "reason": "Supported by Belize, India, and China values.",
+        "isos": [
+          "BLZ",
+          "IND",
+          "CHN"
+        ]
+      },
+      "beat_0": {
+        "supported": true,
+        "reason": "Belize (464,560) and India (1,212) values match EVIDENCE exactly.",
+        "isos": [
+          "BLZ",
+          "IND"
+        ]
+      },
+      "beat_1": {
+        "supported": true,
+        "reason": "Ratio between Belize and Brazil is approximately 67, and Belize is near the top (rank 2).",
+        "isos": [
+          "BLZ",
+          "BRA"
+        ]
+      },
+      "beat_2": {
+        "supported": true,
+        "reason": "Denmark (246,546), Cyprus (221,298), and USA (196,616) match dataset displays.",
+        "isos": [
+          "DNK",
+          "CYP",
+          "USA"
+        ]
+      },
+      "beat_3": {
+        "supported": true,
+        "reason": "Matches the official definition of the World Bank indicator.",
+        "isos": []
+      },
+      "beat_4": {
+        "supported": true,
+        "reason": "China (1,413) and India (1,212) match EVIDENCE displays.",
+        "isos": [
+          "CHN",
+          "IND"
+        ]
+      },
+      "beat_5": {
+        "supported": true,
+        "reason": "Eritrea display is 2, positioned at the bottom of the map.",
+        "isos": [
+          "ERI"
+        ]
+      },
+      "beat_6": {
+        "supported": true,
+        "reason": "Valid stylistic call-to-action question.",
+        "isos": []
+      },
+      "card_6": {
+        "supported": true,
+        "reason": "Accurately represents the metric name and unit.",
+        "isos": []
+      }
+    },
+    "warnings": []
+  },
+  "script_sha256": "a5b8372c3da20189f6d1e40bae16014d691b5c129de44cab07832a5902cc9e16",
+  "data_sha256": "aab18843b744cbcde78420005a1199e343c956c471d4190773de5d1bd05b060e",
+  "reviewer_model": "gemini-3.5-flash-lite"
+}

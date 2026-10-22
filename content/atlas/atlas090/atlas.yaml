@@ -1,0 +1,78 @@
+id: atlas090
+title: Places Ranked by Container Shipping CONNECTIVITY
+format: rank_ladder
+hook_text: SHIPPING CONNECTIVITY GAP
+description: While major maritime hubs score well above 100, half of all connected countries and territories score
+  under 15.
+hashtags:
+- '#data'
+- '#maritime'
+- '#maps'
+tags:
+- liner shipping connectivity index
+- China
+- Moldova
+- world map
+- data
+sources:
+- https://data.worldbank.org/indicator/IS.SHP.GCNW.XQ
+dataset:
+  kind: worldbank
+  indicator: IS.SHP.GCNW.XQ
+  label: Liner shipping connectivity index
+  unit: index points
+  source: World Bank
+  min_year: 2019
+scale:
+  edges:
+  - 10.0
+  - 25.0
+  - 50.0
+  - 100.0
+  labels:
+  - <10
+  - 10–25
+  - 25–50
+  - 50–100
+  - '>100'
+value_format: '{v:.1f}'
+beats:
+- text: China hits 171 on container shipping connectivity, while Moldova sits at 0.6.
+  shot:
+    callouts:
+    - CHN
+    - MDA
+- text: China is the highest of all 162.
+  shot:
+    kind: country
+    iso: CHN
+- text: Moldova is the lowest of all 162.
+  shot:
+    kind: country
+    iso: MDA
+- text: It is computed based on five components of the maritime transport sector.
+- text: South Korea hits 111. The USA hits 103.
+  shot:
+    kind: group
+    isos:
+    - KOR
+    - USA
+- text: The bottom group features Eritrea at 3.5, East Timor at 3.3, and Paraguay at 1.9.
+  shot:
+    kind: rank
+    isos:
+    - ERI
+    - TLS
+    - PRY
+- text: The UK hits 90, giving it 27 times what East Timor has.
+  shot:
+    kind: group
+    isos:
+    - GBR
+    - TLS
+- text: What score does your country reach in container shipping connectivity?
+  shot:
+    kind: card
+    lines:
+    - How connected is your port?
+    - Liner shipping connectivity index

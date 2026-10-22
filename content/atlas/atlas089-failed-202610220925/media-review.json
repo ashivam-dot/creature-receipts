@@ -1,0 +1,22 @@
+{
+  "duration": 39.58,
+  "integrated_lufs": -14.4,
+  "true_peak_dbfs": -1.3,
+  "speech": {
+    "heard": "Moldova's urban population shrinks by 1.3% a year, while Rwanda's grows by 5.6%. Urban growth is slower in major economies, USA has 0.6% and UK has 0.4%. Africa dominates the fastest growth, Chad has 5.7%, Rwanda has 5.6% and Niger has 5%. The city leads the world at 5.8%. That is 14 times the UK rate. At the other end, Japan sees its cities shrinking by 0.4% a year. Is your city's population growing or shrinking?",
+    "model": "small.en",
+    "media_sha256": "17b07581d97c549ba6e5780c2edf9dacf47636463d06a1ecc1f3187b3cdb1861",
+    "primary_differences": [
+      "'burundi' heard as 'the city' after 'niger has 5%'"
+    ],
+    "differences": [
+      "'burundi' heard as 'the city' after 'niger has 5%'"
+    ],
+    "corroboration": {
+      "model": "base.en",
+      "heard": "Moldova's urban population shrinks by 1.3% a year, while Rwanda's grows by 5.6%. Urban growth is slower in major economies. USA has 0.6% and UK has 0.4%. Africa dominates the fastest growth. Chad has 5.7%. Rwanda has 5.6% and Niger has 5%. Burundi leads the world at 5.8%, that is 14 times the UK rate. At the other end, Japan sees its cities shrinking by 0.4% a year. Is your city's population growing or shrinking?",
+      "differences": [],
+      "resolved": []
+    }
+  }
+}

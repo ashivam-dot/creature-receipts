@@ -1,0 +1,76 @@
+id: atlas088
+title: Places Ranked by Secure Internet Servers
+format: rank_ladder
+hook_text: SURPRISING SERVER LEADERS
+description: Small offshore hubs like Belize outpace global tech giants in secure internet servers per million people.
+hashtags:
+- '#geography'
+- '#technology'
+- '#maps'
+tags:
+- geography
+- secure internet servers per 1m
+- Belize
+- Chad
+- world map
+- data
+sources:
+- https://data.worldbank.org/indicator/IT.NET.SECR.P6
+dataset:
+  kind: worldbank
+  indicator: IT.NET.SECR.P6
+  label: Secure internet servers per 1M
+  unit: per 1M people
+  source: World Bank
+  min_year: 2019
+scale:
+  edges:
+  - 100.0
+  - 1000.0
+  - 10000.0
+  - 100000.0
+  labels:
+  - Under 100
+  - 100 to 1,000
+  - 1k to 10k
+  - 10k to 100k
+  - Over 100k
+beats:
+- text: Belize has 464,560 secure internet servers per million people. India has 1,212.
+  shot:
+    callouts:
+    - BLZ
+    - BRA
+- text: Belize has 67 times what Brazil has, sitting among the highest totals on Earth.
+  shot:
+    kind: country
+    iso: BLZ
+- text: Denmark counts 246,546, Cyprus has 221,298, and USA has 196,616.
+  shot:
+    kind: rank
+    isos:
+    - DNK
+    - CYP
+    - USA
+- text: The count tracks publicly-trusted certificates found on servers by hosting country.
+  shot:
+    kind: country
+    iso: CYP
+  basis: distinct, publicly-trusted TLS/SSL certificates found in the Netcraft Secure Server Survey (by hosting
+    country), per 1 million people
+- text: 'Massive populations look very different: China has 1,413, and India has 1,212.'
+  shot:
+    kind: group
+    isos:
+    - CHN
+    - IND
+- text: At the far bottom of the map, Eritrea has 2.
+  shot:
+    kind: country
+    iso: ERI
+- text: How secure is internet hosting in your country?
+  shot:
+    kind: card
+    lines:
+    - How Secure?
+    - Secure Servers per 1M

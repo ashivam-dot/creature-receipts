@@ -1,0 +1,166 @@
+{
+  "errors": [],
+  "claims": [
+    {
+      "surface": "title",
+      "text": "Places Ranked by Secure Internet Servers",
+      "isos": [],
+      "support": "Indicator IT.NET.SECR.P6 measures secure internet servers per 1 million people."
+    },
+    {
+      "surface": "hook",
+      "text": "SURPRISING SERVER LEADERS",
+      "isos": [],
+      "support": "Small hubs like Belize rank very high (rank 2) in secure servers per million."
+    },
+    {
+      "surface": "description",
+      "text": "Small offshore hubs like Belize outpace global tech giants in secure internet servers per million people.",
+      "isos": [
+        "BLZ",
+        "IND",
+        "CHN"
+      ],
+      "support": "Belize has 464,560 per million (rank 2) while India has 1,212 and China has 1,413."
+    },
+    {
+      "surface": "beat_0",
+      "text": "Belize has 464,560 secure internet servers per million people. India has 1,212.",
+      "isos": [
+        "BLZ",
+        "IND"
+      ],
+      "support": "Belize value is 464,560.075958108 (display 464,560), India value is 1212.44166069372 (display 1,212)."
+    },
+    {
+      "surface": "beat_1",
+      "text": "Belize has 67 times what Brazil has, sitting among the highest totals on Earth.",
+      "isos": [
+        "BLZ",
+        "BRA"
+      ],
+      "support": "Belize is 464,560.08, Brazil is 6,941.17. 464560.08 / 6941.17 roughly 66.9 times. Belize rank is 2."
+    },
+    {
+      "surface": "beat_2",
+      "text": "Denmark counts 246,546, Cyprus has 221,298, and USA has 196,616.",
+      "isos": [
+        "DNK",
+        "CYP",
+        "USA"
+      ],
+      "support": "Denmark display is 246,546, Cyprus display is 221,298, USA display is 196,616."
+    },
+    {
+      "surface": "beat_3",
+      "text": "The count tracks publicly-trusted certificates found on servers by hosting country.",
+      "isos": [],
+      "support": "Definition matches: The number of distinct, publicly-trusted TLS/SSL certificates found in the Netcraft Secure Server Survey (by hosting country), per 1 million people."
+    },
+    {
+      "surface": "beat_4",
+      "text": "Massive populations look very different: China has 1,413, and India has 1,212.",
+      "isos": [
+        "CHN",
+        "IND"
+      ],
+      "support": "China display is 1,413, India display is 1,212."
+    },
+    {
+      "surface": "beat_5",
+      "text": "At the far bottom of the map, Eritrea has 2.",
+      "isos": [
+        "ERI"
+      ],
+      "support": "Eritrea display is 2, rank 206 out of 208."
+    },
+    {
+      "surface": "beat_6",
+      "text": "How secure is internet hosting in your country?",
+      "isos": [],
+      "support": "Introductory style question."
+    },
+    {
+      "surface": "card_6",
+      "text": "How Secure? Secure Servers per 1M",
+      "isos": [],
+      "support": "Card matches indicator definition and title."
+    }
+  ],
+  "surface_checks": {
+    "title": {
+      "supported": true,
+      "reason": "Accurately describes indicator IT.NET.SECR.P6.",
+      "isos": []
+    },
+    "hook": {
+      "supported": true,
+      "reason": "Accurate stylistic framing for high-ranking small economies.",
+      "isos": []
+    },
+    "description": {
+      "supported": true,
+      "reason": "Supported by Belize, India, and China values.",
+      "isos": [
+        "BLZ",
+        "IND",
+        "CHN"
+      ]
+    },
+    "beat_0": {
+      "supported": true,
+      "reason": "Belize (464,560) and India (1,212) values match EVIDENCE exactly.",
+      "isos": [
+        "BLZ",
+        "IND"
+      ]
+    },
+    "beat_1": {
+      "supported": true,
+      "reason": "Ratio between Belize and Brazil is approximately 67, and Belize is near the top (rank 2).",
+      "isos": [
+        "BLZ",
+        "BRA"
+      ]
+    },
+    "beat_2": {
+      "supported": true,
+      "reason": "Denmark (246,546), Cyprus (221,298), and USA (196,616) match dataset displays.",
+      "isos": [
+        "DNK",
+        "CYP",
+        "USA"
+      ]
+    },
+    "beat_3": {
+      "supported": true,
+      "reason": "Matches the official definition of the World Bank indicator.",
+      "isos": []
+    },
+    "beat_4": {
+      "supported": true,
+      "reason": "China (1,413) and India (1,212) match EVIDENCE displays.",
+      "isos": [
+        "CHN",
+        "IND"
+      ]
+    },
+    "beat_5": {
+      "supported": true,
+      "reason": "Eritrea display is 2, positioned at the bottom of the map.",
+      "isos": [
+        "ERI"
+      ]
+    },
+    "beat_6": {
+      "supported": true,
+      "reason": "Valid stylistic call-to-action question.",
+      "isos": []
+    },
+    "card_6": {
+      "supported": true,
+      "reason": "Accurately represents the metric name and unit.",
+      "isos": []
+    }
+  }
+}

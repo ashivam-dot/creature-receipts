@@ -1,0 +1,66 @@
+id: atlas089
+title: Places Ranked by How FAST Cities Grow
+format: rank_ladder
+hook_text: BOOMING CITIES
+description: From shrinking European cities to Africa's rapidly expanding urban centers, see how fast city populations
+  are growing worldwide.
+hashtags:
+- '#population'
+- '#maps'
+- '#geography'
+tags:
+- population
+- annual urban population growth
+- Burundi
+- Moldova
+- world map
+- data
+sources:
+- https://data.worldbank.org/indicator/SP.URB.GROW
+dataset:
+  kind: worldbank
+  indicator: SP.URB.GROW
+  label: Annual urban population growth
+  unit: '%'
+  source: World Bank
+  min_year: 2019
+scale:
+  kind: threshold
+  at: 2.0
+  labels:
+  - Fast-growing urban areas
+  - Slow growth or shrinking
+value_format: '{v:.3f}%'
+beats:
+- text: Moldova's urban population shrinks by 1.3% a year, while Rwanda's grows by 5.6%.
+  shot:
+    callouts:
+    - MDA
+    - RWA
+- text: 'Urban growth is slower in major economies: USA has 0.6%, and UK has 0.4%.'
+  shot:
+    kind: group
+    isos:
+    - USA
+    - GBR
+- text: 'Africa dominates the fastest growth: Chad has 5.7%, Rwanda has 5.6%, and Niger has 5%.'
+  shot:
+    kind: rank
+    isos:
+    - TCD
+    - RWA
+    - NER
+- text: Burundi leads the world at 5.8%. That is 14 times the UK rate.
+  shot:
+    kind: country
+    iso: BDI
+- text: At the other end, Japan sees its cities shrinking by 0.4% a year.
+  shot:
+    kind: country
+    iso: JPN
+- text: Is your city's population growing or shrinking?
+  shot:
+    kind: card
+    lines:
+    - Is Your City Growing?
+    - Urban Population Growth, World Bank
