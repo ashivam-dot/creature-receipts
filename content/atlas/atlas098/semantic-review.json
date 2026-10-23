@@ -1,0 +1,179 @@
+{
+  "errors": [],
+  "claims": [
+    {
+      "surface": "title",
+      "text": "Places Ranked by the Income of the Richest Fifth",
+      "isos": [],
+      "support": "Indicator measures percentage share of income or consumption held by subgroups"
+    },
+    {
+      "surface": "hook",
+      "text": "WEALTH GAP",
+      "isos": [],
+      "support": "Indicator measures percentage share of income or consumption held by subgroups"
+    },
+    {
+      "surface": "description",
+      "text": "Comparing the income share held by the top twenty percent across the globe, from South Africa to Slovakia.",
+      "isos": [
+        "ZAF",
+        "SVK"
+      ],
+      "support": "ZAF value is 59.5% (rank 1), SVK value is 32.8% (rank 124)"
+    },
+    {
+      "surface": "beat_0",
+      "text": "In South Africa, the richest fifth holds 59.5% of income. In Slovakia, it is 32.8%.",
+      "isos": [
+        "ZAF",
+        "SVK"
+      ],
+      "support": "ZAF: 59.5%, SVK: 32.8%"
+    },
+    {
+      "surface": "beat_1",
+      "text": "South Africa has 1.8 times the share Slovakia does. It is the world's highest.",
+      "isos": [
+        "ZAF",
+        "SVK"
+      ],
+      "support": "59.5 / 32.8 = 1.814, ZAF rank is 1"
+    },
+    {
+      "surface": "beat_2",
+      "text": "This counts the share of income or consumption that flows to the top quintile.",
+      "isos": [],
+      "support": "Percentage share of income or consumption is the share that accrues to subgroups of population indicated by deciles or quintiles"
+    },
+    {
+      "surface": "beat_3",
+      "text": "Slovakia is the world's lowest.",
+      "isos": [
+        "SVK"
+      ],
+      "support": "SVK rank is 124 out of 124"
+    },
+    {
+      "surface": "beat_4",
+      "text": "The USA has 47.1%. China has 43.7%.",
+      "isos": [
+        "USA",
+        "CHN"
+      ],
+      "support": "USA: 47.1%, CHN: 43.7%"
+    },
+    {
+      "surface": "beat_5",
+      "text": "Shares in South America are high: Colombia: 58.9%, Brazil: 55.4%, and Paraguay: 50.2%.",
+      "isos": [
+        "COL",
+        "BRA",
+        "PRY"
+      ],
+      "support": "COL: 58.9%, BRA: 55.4%, PRY: 50.2%"
+    },
+    {
+      "surface": "beat_6",
+      "text": "India is low with 34.2%.",
+      "isos": [
+        "IND"
+      ],
+      "support": "IND value is 34.2%, rank 123"
+    },
+    {
+      "surface": "beat_7",
+      "text": "Who holds the wealth where you live?",
+      "isos": [],
+      "support": "Card question"
+    },
+    {
+      "surface": "card_7",
+      "text": "Who holds the wealth? Income share of the top 20%",
+      "isos": [],
+      "support": "Card text matches indicator"
+    }
+  ],
+  "surface_checks": {
+    "title": {
+      "supported": true,
+      "reason": "Indicator measures income or consumption share of top subgroups",
+      "isos": []
+    },
+    "hook": {
+      "supported": true,
+      "reason": "Refers to inequality measures",
+      "isos": []
+    },
+    "description": {
+      "supported": true,
+      "reason": "Accurately references South Africa and Slovakia data",
+      "isos": [
+        "ZAF",
+        "SVK"
+      ]
+    },
+    "beat_0": {
+      "supported": true,
+      "reason": "Matches South Africa (59.5%) and Slovakia (32.8%) values",
+      "isos": [
+        "ZAF",
+        "SVK"
+      ]
+    },
+    "beat_1": {
+      "supported": true,
+      "reason": "Ratio is approximately 1.8 and South Africa is rank 1",
+      "isos": [
+        "ZAF",
+        "SVK"
+      ]
+    },
+    "beat_2": {
+      "supported": true,
+      "reason": "Matches definition",
+      "isos": []
+    },
+    "beat_3": {
+      "supported": true,
+      "reason": "Slovakia is rank 124, lowest in the dataset",
+      "isos": [
+        "SVK"
+      ]
+    },
+    "beat_4": {
+      "supported": true,
+      "reason": "Matches USA (47.1%) and China (43.7%) values",
+      "isos": [
+        "USA",
+        "CHN"
+      ]
+    },
+    "beat_5": {
+      "supported": true,
+      "reason": "Matches Colombia (58.9%), Brazil (55.4%), and Paraguay (50.2%) values",
+      "isos": [
+        "COL",
+        "BRA",
+        "PRY"
+      ]
+    },
+    "beat_6": {
+      "supported": true,
+      "reason": "Matches India (34.2%) value",
+      "isos": [
+        "IND"
+      ]
+    },
+    "beat_7": {
+      "supported": true,
+      "reason": "Matches card topic",
+      "isos": []
+    },
+    "card_7": {
+      "supported": true,
+      "reason": "Matches indicator definition",
+      "isos": []
+    }
+  }
+}

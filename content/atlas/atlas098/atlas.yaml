@@ -1,0 +1,75 @@
+id: atlas098
+title: Places Ranked by the Income of the Richest Fifth
+format: rank_ladder
+hook_text: WEALTH GAP
+description: Comparing the income share held by the top twenty percent across the globe, from South Africa to Slovakia.
+hashtags:
+- '#economy'
+- '#economics'
+- '#maps'
+tags:
+- wealth
+- income share held by highest 20%
+- South Africa
+- Slovak Republic
+- world map
+- data
+sources:
+- https://data.worldbank.org/indicator/SI.DST.05TH.20
+dataset:
+  kind: worldbank
+  indicator: SI.DST.05TH.20
+  label: Income share held by highest 20%
+  unit: '%'
+  source: World Bank
+  min_year: 2019
+scale:
+  kind: threshold
+  at: 45.0
+  labels:
+  - Above 45 percent
+  - 45 percent or below
+value_format: '{v:.1f}%'
+beats:
+- text: In South Africa, the richest fifth holds 59.5% of income. In Slovakia, it is 32.8%.
+  shot:
+    callouts:
+    - ZAF
+    - SVK
+- text: South Africa has 1.8 times the share Slovakia does. It is the world's highest.
+  shot:
+    kind: country
+    iso: ZAF
+- text: This counts the share of income or consumption that flows to the top quintile.
+  shot:
+    kind: country
+    iso: ZAF
+  basis: Percentage share of income or consumption is the share that accrues to subgroups of population indicated
+    by deciles or quintiles.
+- text: Slovakia is the world's lowest.
+  shot:
+    kind: country
+    iso: SVK
+- text: The USA has 47.1%. China has 43.7%.
+  shot:
+    kind: group
+    isos:
+    - USA
+    - CHN
+- text: 'Shares in South America are high: Colombia: 58.9%, Brazil: 55.4%, and Paraguay: 50.2%.'
+  shot:
+    kind: rank
+    isos:
+    - COL
+    - BRA
+    - PRY
+- text: India is low with 34.2%.
+  shot:
+    kind: country
+    iso: IND
+- text: Who holds the wealth where you live?
+  shot:
+    kind: card
+    lines:
+    - Who holds the wealth?
+    - Income share of the top 20%

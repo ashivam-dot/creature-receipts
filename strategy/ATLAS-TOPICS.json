@@ -2404,7 +2404,7 @@
     "#maritime"
    ],
    "source_url": "https://data.worldbank.org/indicator/IS.SHP.GCNW.XQ",
-   "status": "ready:atlas090",
+   "status": "used:atlas090",
    "added_by": "refill"
   },
   {
@@ -3631,7 +3631,7 @@
    "id": "t104",
    "topic": "The Wealth Share of the Top Twenty Percent",
    "angle": "In half the countries with data, the richest fifth of the population holds over forty percent of all income or consumption.",
-   "format": "map_reveal",
+   "format": "rank_ladder",
    "dataset": {
     "kind": "worldbank",
     "indicator": "SI.DST.05TH.20",
@@ -3655,7 +3655,7 @@
     "#economics"
    ],
    "source_url": "https://data.worldbank.org/indicator/SI.DST.05TH.20",
-   "status": "open",
+   "status": "ready:atlas098",
    "added_by": "refill"
   }
  ],

@@ -63,20 +63,21 @@ Refreshed by every producer run (`atlas.stats`) from the channel's public feed o
 | atlas040 Romania Drinks 16.8 Liters of Pure Alcohol per Adult | map_reveal | 2026-10-16 16:02 UTC | 1131 | 12 | 7.4 |
 | atlas042 Powering Life: Electric Consumption Per Person | map_reveal | 2026-10-16 20:01 UTC | 782 | 2 | 5.3 |
 | atlas047 Freshwater Per Person: From Iceland to Kuwait | map_reveal | 2026-10-16 23:01 UTC | 1062 | 8 | 7.3 |
-| atlas048 Uruguay Leads the World in Cash Machines | rank_ladder | 2026-10-17 16:02 UTC | 1052 | 10 | 8.2 |
-| atlas049 Global Tobacco Use: East Timor at 48.8% and Nigeria at 3.1% | map_reveal | 2026-10-17 20:01 UTC | 418 | 1 | 3.4 |
-| atlas052 Clean Cooking Access: From 100% Down to 0% | rank_ladder | 2026-10-17 23:01 UTC | 1078 | 12 | 8.9 |
-| atlas053 Why Greece Has 165.1% College Enrollment | rank_ladder | 2026-10-18 16:01 UTC | 1022 | 10 | 9.8 |
-| atlas054 Household Goods Cost 130 in Iceland but 100 in USA | rank_ladder | 2026-10-18 20:01 UTC | 1040 | 3 | 10.3 |
-| atlas055 South Korea Has 12.8 Hospital Beds While Chad Has 0.1 | map_reveal | 2026-10-18 23:00 UTC | 1087 | 13 | 11.1 |
-| atlas056 Where More Boys Are Born: 1.01 to 1.11 Worldwide | map_reveal | 2026-10-19 16:02 UTC | 837 | 5 | 10.4 |
-| atlas058 Years Children Must Legally Attend School | rank_ladder | 2026-10-19 20:01 UTC | 1065 | 11 | 13.9 |
-| atlas061 100% of Adults in Iceland Have an Account, South Sudan 6% | map_reveal | 2026-10-19 23:01 UTC | 1052 | 4 | 14.3 |
-| atlas065 Iceland Uses 16,248 kg of Energy Per Person | map_reveal | 2026-10-20 16:03 UTC | 1007 | 11 | 17.8 |
-| atlas071 Australia Leads the World in Overweight Toddlers | map_reveal | 2026-10-20 20:00 UTC | 982 | 8 | 18.6 |
-| atlas075 Bulgaria Has 93.8 Bank Branches to DR Congo 0.6 | map_reveal | 2026-10-21 16:01 UTC | 292 | 3 | 8.9 |
-| atlas078 Places Ranked by Megacity Populations | rank_ladder | 2026-10-22 16:04 UTC | 1005 | 11 | 116.4 |
-| atlas079 Places Ranked by Arable Land | map_reveal | 2026-10-21 23:00 UTC | 612 | 2 | 23.8 |
+| atlas048 Uruguay Leads the World in Cash Machines | rank_ladder | 2026-10-17 16:02 UTC | 1052 | – | 7.6 |
+| atlas049 Global Tobacco Use: East Timor at 48.8% and Nigeria at 3.1% | map_reveal | 2026-10-17 20:01 UTC | 418 | – | 3.1 |
+| atlas052 Clean Cooking Access: From 100% Down to 0% | rank_ladder | 2026-10-17 23:01 UTC | 1078 | – | 8.2 |
+| atlas053 Why Greece Has 165.1% College Enrollment | rank_ladder | 2026-10-18 16:01 UTC | 1022 | – | 9.0 |
+| atlas054 Household Goods Cost 130 in Iceland but 100 in USA | rank_ladder | 2026-10-18 20:01 UTC | 1040 | – | 9.5 |
+| atlas055 South Korea Has 12.8 Hospital Beds While Chad Has 0.1 | map_reveal | 2026-10-18 23:00 UTC | 1090 | – | 10.2 |
+| atlas056 Where More Boys Are Born: 1.01 to 1.11 Worldwide | map_reveal | 2026-10-19 16:02 UTC | 839 | – | 9.4 |
+| atlas058 Years Children Must Legally Attend School | rank_ladder | 2026-10-19 20:01 UTC | 1066 | – | 12.4 |
+| atlas061 100% of Adults in Iceland Have an Account, South Sudan 6% | map_reveal | 2026-10-19 23:01 UTC | 1053 | – | 12.7 |
+| atlas065 Iceland Uses 16,248 kg of Energy Per Person | map_reveal | 2026-10-20 16:03 UTC | 1015 | – | 15.5 |
+| atlas071 Australia Leads the World in Overweight Toddlers | map_reveal | 2026-10-20 20:00 UTC | 981 | – | 15.9 |
+| atlas075 Bulgaria Has 93.8 Bank Branches to DR Congo 0.6 | map_reveal | 2026-10-21 16:01 UTC | 311 | – | 7.5 |
+| atlas078 Places Ranked by Megacity Populations | rank_ladder | 2026-10-22 16:04 UTC | 1055 | – | 59.8 |
+| atlas079 Places Ranked by Arable Land | map_reveal | 2026-10-21 23:00 UTC | 739 | – | 21.3 |
+| atlas081 Places Ranked by Income Inequality | rank_ladder | 2026-10-22 23:01 UTC | 629 | – | 58.9 |
 
 ## Log
 
