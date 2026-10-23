@@ -1,0 +1,24 @@
+{
+  "duration": 46.17,
+  "integrated_lufs": -14.4,
+  "true_peak_dbfs": -1.4,
+  "speech": {
+    "heard": "In the Central African Republic, there is nearly one child for every working age adult. Central African Republic hits 99.1%, South Korea stops at just 14.7%. Central African Republic spans 6.7 times what South Korea sees. This counts the ratio of younger dependents, people younger than 15 to the working age population those ages 1564. Niger has 90.4%, Dr. Congo 90.2%, and Chad 88.5%. India has 35.4%, and China has 22.1%. USA sits at 26.5%. How many children does the working age population support in your country?",
+    "model": "small.en",
+    "media_sha256": "ca4d752208a21a837d535a2f565893b45b69b8fe139df4b9d0be837bb70463d2",
+    "primary_differences": [
+      "'the' heard as '(nothing)' after 'has 22 one'"
+    ],
+    "differences": [
+      "'the' heard as '(nothing)' after 'has 22 one'"
+    ],
+    "corroboration": {
+      "model": "base.en",
+      "heard": "In the Central African Republic, there is nearly one child for every working-age adult. Central African Republic hits 99.1%, South Korea stops at just 14.7%. Central African Republic spans 6.7 times what South Korea sees. This counts the ratio of younger dependents, people younger than 15, to the working-age population, those ages 1564. Niger has 90.4%, Dr. Congo 90.2%, and Chad 88.5%. India has 35.4%, and China has 22.1%. USA sits at 26.5%. How many children does the working age population support in your country?",
+      "differences": [
+        "'the' heard as '(nothing)' after 'has 22 one'"
+      ],
+      "resolved": []
+    }
+  }
+}

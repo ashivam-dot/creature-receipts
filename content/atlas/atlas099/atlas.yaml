@@ -1,0 +1,79 @@
+id: atlas099
+title: Places Ranked by Youth Dependency
+hook_text: NEARLY ONE CHILD
+description: A cinematic look at the global youth dependency ratio, comparing children to working-age populations
+  worldwide.
+hashtags:
+- '#population'
+- '#demographics'
+- '#maps'
+tags:
+- population
+- children per 100 working-age adults
+- Central African Republic
+- Korea, Rep.
+- world map
+- data
+sources:
+- https://data.worldbank.org/indicator/SP.POP.DPND.YG
+dataset:
+  kind: worldbank
+  indicator: SP.POP.DPND.YG
+  label: Children per 100 working-age adults
+  unit: '%'
+  source: World Bank
+  min_year: 2019
+scale:
+  edges:
+  - 25.0
+  - 45.0
+  - 65.0
+  - 85.0
+  labels:
+  - Very Low
+  - Moderate
+  - High
+  - Very High
+  - Extreme
+value_format: '{v:.1f}%'
+beats:
+- text: In the Central African Republic, there is nearly one child for every working-age adult.
+  shot:
+    callouts:
+    - CAF
+- text: Central African Republic hits 99.1%. South Korea stops at just 14.7%.
+  shot:
+    callouts:
+    - CAF
+    - KOR
+- text: Central African Republic spans 6.7 times what South Korea sees.
+  shot:
+    kind: country
+    iso: CAF
+- text: This counts the ratio of younger dependents, people younger than 15, to the working-age population, those
+    ages 15-64.
+  basis: Age dependency ratio, young, is the ratio of younger dependents--people younger than 15--to the working-age
+    population--those ages 15-64. Data are shown as the proportion of dependents per 100 working-age population.
+- text: Niger has 90.4%, DR Congo 90.2%, and Chad 88.5%.
+  shot:
+    kind: rank
+    isos:
+    - NER
+    - COD
+    - TCD
+- text: India has 35.4% and China has 22.1%.
+  shot:
+    kind: group
+    isos:
+    - IND
+    - CHN
+- text: The USA sits at 26.5%.
+  shot:
+    kind: country
+    iso: USA
+- text: How many children does the working-age population support in your country?
+  shot:
+    kind: card
+    lines:
+    - How many children?
+    - Youth Dependency Ratio

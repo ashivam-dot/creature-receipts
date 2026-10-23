@@ -1,0 +1,177 @@
+{
+  "errors": [],
+  "claims": [
+    {
+      "surface": "title",
+      "text": "Places Ranked by Youth Dependency",
+      "isos": [],
+      "support": "indicator: Age dependency ratio, young"
+    },
+    {
+      "surface": "hook",
+      "text": "NEARLY ONE CHILD",
+      "isos": [
+        "CAF"
+      ],
+      "support": "Central African Republic value is 99.1108493440026, display 99.1%"
+    },
+    {
+      "surface": "description",
+      "text": "A cinematic look at the global youth dependency ratio, comparing children to working-age populations worldwide.",
+      "isos": [],
+      "support": "indicator: Age dependency ratio, young, definition: ratio of younger dependents--people younger than 15--to the working-age population--those ages 15-64"
+    },
+    {
+      "surface": "beat_0",
+      "text": "In the Central African Republic, there is nearly one child for every working-age adult.",
+      "isos": [
+        "CAF"
+      ],
+      "support": "Central African Republic value is 99.1108493440026, display 99.1%"
+    },
+    {
+      "surface": "beat_1",
+      "text": "Central African Republic hits 99.1%. South Korea stops at just 14.7%.",
+      "isos": [
+        "CAF",
+        "KOR"
+      ],
+      "support": "CAF: 99.1108493440026 (99.1%), KOR: 14.6900594581344 (14.7%)"
+    },
+    {
+      "surface": "beat_2",
+      "text": "Central African Republic spans 6.7 times what South Korea sees.",
+      "isos": [
+        "CAF",
+        "KOR"
+      ],
+      "support": "99.1108493440026 / 14.6900594581344 = 6.746797"
+    },
+    {
+      "surface": "beat_3",
+      "text": "This counts the ratio of younger dependents, people younger than 15, to the working-age population, those ages 15-64.",
+      "isos": [],
+      "support": "definition: Age dependency ratio, young, is the ratio of younger dependents--people younger than 15--to the working-age population--those ages 15-64."
+    },
+    {
+      "surface": "beat_4",
+      "text": "Niger has 90.4%, DR Congo 90.2%, and Chad 88.5%.",
+      "isos": [
+        "NER",
+        "COD",
+        "TCD"
+      ],
+      "support": "NER: 90.3641651070781 (90.4%), COD: 90.1571570105577 (90.2%), TCD: 88.524883757504 (88.5%)"
+    },
+    {
+      "surface": "beat_5",
+      "text": "India has 35.4% and China has 22.1%.",
+      "isos": [
+        "IND",
+        "CHN"
+      ],
+      "support": "IND: 35.3586391365505 (35.4%), CHN: 22.1110913062959 (22.1%)"
+    },
+    {
+      "surface": "beat_6",
+      "text": "The USA sits at 26.5%.",
+      "isos": [
+        "USA"
+      ],
+      "support": "USA: 26.5044986404695 (26.5%)"
+    },
+    {
+      "surface": "beat_7",
+      "text": "How many children does the working-age population support in your country?",
+      "isos": [],
+      "support": "indicator: Age dependency ratio, young"
+    },
+    {
+      "surface": "card_7",
+      "text": "How many children? Youth Dependency Ratio",
+      "isos": [],
+      "support": "indicator: Age dependency ratio, young"
+    }
+  ],
+  "surface_checks": {
+    "title": {
+      "supported": true,
+      "reason": "Title correctly names the indicator topic.",
+      "isos": []
+    },
+    "hook": {
+      "supported": true,
+      "reason": "Central African Republic is nearly 100% (one dependent per worker).",
+      "isos": [
+        "CAF"
+      ]
+    },
+    "description": {
+      "supported": true,
+      "reason": "Accurately reflects the dataset definition.",
+      "isos": []
+    },
+    "beat_0": {
+      "supported": true,
+      "reason": "CAF value is 99.1%, close to 100% or one per adult.",
+      "isos": [
+        "CAF"
+      ]
+    },
+    "beat_1": {
+      "supported": true,
+      "reason": "CAF is 99.1% and KOR is 14.7% in the dataset.",
+      "isos": [
+        "CAF",
+        "KOR"
+      ]
+    },
+    "beat_2": {
+      "supported": true,
+      "reason": "99.1 / 14.7 is approximately 6.7 times.",
+      "isos": [
+        "CAF",
+        "KOR"
+      ]
+    },
+    "beat_3": {
+      "supported": true,
+      "reason": "Matches the official definition verbatim.",
+      "isos": []
+    },
+    "beat_4": {
+      "supported": true,
+      "reason": "Niger, DR Congo, and Chad values match dataset figures.",
+      "isos": [
+        "NER",
+        "COD",
+        "TCD"
+      ]
+    },
+    "beat_5": {
+      "supported": true,
+      "reason": "India and China values match dataset figures.",
+      "isos": [
+        "IND",
+        "CHN"
+      ]
+    },
+    "beat_6": {
+      "supported": true,
+      "reason": "USA value matches dataset figure.",
+      "isos": [
+        "USA"
+      ]
+    },
+    "beat_7": {
+      "supported": true,
+      "reason": "Engaging question consistent with the metric.",
+      "isos": []
+    },
+    "card_7": {
+      "supported": true,
+      "reason": "Card text matches indicator focus.",
+      "isos": []
+    }
+  }
+}

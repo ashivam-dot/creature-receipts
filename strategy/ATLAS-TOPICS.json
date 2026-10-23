@@ -3624,7 +3624,7 @@
     "#health"
    ],
    "source_url": "https://data.worldbank.org/indicator/SH.XPD.OOPC.CH.ZS",
-   "status": "ready:atlas093",
+   "status": "used:atlas093",
    "added_by": "refill"
   },
   {
@@ -3657,7 +3657,397 @@
    "source_url": "https://data.worldbank.org/indicator/SI.DST.05TH.20",
    "status": "ready:atlas098",
    "added_by": "refill"
+  },
+  {
+   "id": "t105",
+   "topic": "The Price of Sending Money Home",
+   "angle": "While the median cost to send $200 is 2.8%, transaction fees for remittances to Cuba reach as high as 19.6%.",
+   "format": "rank_ladder",
+   "dataset": {
+    "kind": "worldbank",
+    "indicator": "SI.RMT.COST.IB.ZS",
+    "label": "Transaction cost for sending $200",
+    "unit": "%",
+    "source": "World Bank",
+    "min_year": 2019
+   },
+   "scale": {
+    "kind": "bins",
+    "edges": [
+     1,
+     3,
+     7,
+     12
+    ],
+    "labels": [
+     "Under 1%",
+     "1% to 3%",
+     "3% to 7%",
+     "7% to 12%",
+     "Over 12%"
+    ]
+   },
+   "value_format": "{v:.1f}%",
+   "hashtags": [
+    "#maps",
+    "#geography",
+    "#finance"
+   ],
+   "source_url": "https://data.worldbank.org/indicator/SI.RMT.COST.IB.ZS",
+   "status": "open",
+   "added_by": "refill"
+  },
+  {
+   "id": "t106",
+   "topic": "Gross National Savings Rates",
+   "angle": "While the global median savings rate is around 22%, Qatar saves more than 57% of its GDP whereas some nations face negative rates.",
+   "format": "map_reveal",
+   "dataset": {
+    "kind": "worldbank",
+    "indicator": "NY.GNS.ICTR.ZS",
+    "label": "Gross savings as a share of GDP",
+    "unit": "%",
+    "source": "World Bank",
+    "min_year": 2019
+   },
+   "scale": {
+    "kind": "bins",
+    "edges": [
+     10,
+     20,
+     30,
+     40
+    ],
+    "labels": [
+     "Under 10%",
+     "10% to 20%",
+     "20% to 30%",
+     "30% to 40%",
+     "Over 40%"
+    ]
+   },
+   "value_format": "{v:.1f}%",
+   "hashtags": [
+    "#maps",
+    "#geography",
+    "#economy"
+   ],
+   "source_url": "https://data.worldbank.org/indicator/NY.GNS.ICTR.ZS",
+   "status": "open",
+   "added_by": "refill"
+  },
+  {
+   "id": "t107",
+   "topic": "The Global Youth Dependency Ratio",
+   "angle": "In the Central African Republic, there is nearly one child for every working-age adult.",
+   "format": "map_reveal",
+   "dataset": {
+    "kind": "worldbank",
+    "indicator": "SP.POP.DPND.YG",
+    "label": "Children per 100 working-age adults",
+    "unit": "%",
+    "source": "World Bank",
+    "min_year": 2019
+   },
+   "scale": {
+    "kind": "bins",
+    "edges": [
+     25,
+     45,
+     65,
+     85
+    ],
+    "labels": [
+     "Very Low",
+     "Moderate",
+     "High",
+     "Very High",
+     "Extreme"
+    ]
+   },
+   "value_format": "{v:.1f}%",
+   "hashtags": [
+    "#maps",
+    "#geography",
+    "#demographics"
+   ],
+   "source_url": "https://data.worldbank.org/indicator/SP.POP.DPND.YG",
+   "status": "ready:atlas099",
+   "added_by": "refill"
+  },
+  {
+   "id": "t108",
+   "topic": "Global Density of Nursing Staff",
+   "angle": "Switzerland maintains over 100 times more nurses per capita than Chad.",
+   "format": "rank_ladder",
+   "dataset": {
+    "kind": "worldbank",
+    "indicator": "SH.MED.NUMW.P3",
+    "label": "Nurses and midwives per 1,000 people",
+    "unit": "per 1,000 people",
+    "source": "World Bank",
+    "min_year": 2019
+   },
+   "scale": {
+    "kind": "bins",
+    "edges": [
+     1,
+     4,
+     8,
+     12
+    ],
+    "labels": [
+     "< 1",
+     "1–4",
+     "4–8",
+     "8–12",
+     "> 12"
+    ]
+   },
+   "value_format": "{v:.1f}",
+   "hashtags": [
+    "#maps",
+    "#geography",
+    "#health"
+   ],
+   "source_url": "https://data.worldbank.org/indicator/SH.MED.NUMW.P3",
+   "status": "open",
+   "added_by": "refill"
+  },
+  {
+   "id": "t109",
+   "topic": "Adults with a University Degree",
+   "angle": "The United Arab Emirates is the only country where over half of adults have earned at least a Bachelor's degree.",
+   "format": "map_reveal",
+   "dataset": {
+    "kind": "worldbank",
+    "indicator": "SE.TER.CUAT.BA.ZS",
+    "label": "Share of adults with a Bachelor's",
+    "unit": "%",
+    "source": "World Bank",
+    "min_year": 2019
+   },
+   "scale": {
+    "kind": "bins",
+    "edges": [
+     5,
+     15,
+     25,
+     40
+    ],
+    "labels": [
+     "Under 5%",
+     "5-15%",
+     "15-25%",
+     "25-40%",
+     "Over 40%"
+    ]
+   },
+   "value_format": "{v:.1f}%",
+   "hashtags": [
+    "#maps",
+    "#geography",
+    "#education"
+   ],
+   "source_url": "https://data.worldbank.org/indicator/SE.TER.CUAT.BA.ZS",
+   "status": "open",
+   "added_by": "refill"
+  },
+  {
+   "id": "t110",
+   "topic": "The Dominance of Service Economies",
+   "angle": "While the global median has reached nearly 58%, some island economies now rely on services for over 90% of their total GDP.",
+   "format": "map_reveal",
+   "dataset": {
+    "kind": "worldbank",
+    "indicator": "NV.SRV.TOTL.ZS",
+    "label": "Services value added to GDP",
+    "unit": "%",
+    "source": "World Bank",
+    "min_year": 2019
+   },
+   "scale": {
+    "kind": "bins",
+    "edges": [
+     40,
+     55,
+     70,
+     85
+    ],
+    "labels": [
+     "Under 40%",
+     "40-55%",
+     "55-70%",
+     "70-85%",
+     "Over 85%"
+    ]
+   },
+   "value_format": "{v:.1f}%",
+   "hashtags": [
+    "#maps",
+    "#geography",
+    "#economy"
+   ],
+   "source_url": "https://data.worldbank.org/indicator/NV.SRV.TOTL.ZS",
+   "status": "open",
+   "added_by": "refill"
+  },
+  {
+   "id": "t111",
+   "topic": "Electricity Generated From Natural Gas",
+   "angle": "Turkmenistan generates 100% of its electricity from natural gas, while half of the world relies on it for less than 3% of their power.",
+   "format": "rank_ladder",
+   "dataset": {
+    "kind": "worldbank",
+    "indicator": "EG.ELC.NGAS.ZS",
+    "label": "Share of electricity from natural gas",
+    "unit": "%",
+    "source": "World Bank",
+    "min_year": 2019
+   },
+   "scale": {
+    "kind": "bins",
+    "edges": [
+     5,
+     25,
+     50,
+     75
+    ],
+    "labels": [
+     "Under 5%",
+     "5-25%",
+     "25-50%",
+     "50-75%",
+     "Over 75%"
+    ]
+   },
+   "value_format": "{v:.1f}%",
+   "hashtags": [
+    "#maps",
+    "#geography",
+    "#energy"
+   ],
+   "source_url": "https://data.worldbank.org/indicator/EG.ELC.NGAS.ZS",
+   "status": "open",
+   "added_by": "refill"
+  },
+  {
+   "id": "t112",
+   "topic": "The World's Permanent Cropland",
+   "angle": "Tropical island nations like Comoros and Sao Tome dedicate over 40% of their land to permanent crops, while the global median is just 1.6%.",
+   "format": "map_reveal",
+   "dataset": {
+    "kind": "worldbank",
+    "indicator": "AG.LND.CROP.ZS",
+    "label": "Permanent cropland as % of land area",
+    "unit": "%",
+    "source": "World Bank",
+    "min_year": 2019
+   },
+   "scale": {
+    "kind": "bins",
+    "edges": [
+     0.5,
+     1.5,
+     5.0,
+     15.0
+    ],
+    "labels": [
+     "Under 0.5%",
+     "0.5-1.5%",
+     "1.5-5%",
+     "5-15%",
+     ">15%"
+    ]
+   },
+   "value_format": "{v:.1f}%",
+   "hashtags": [
+    "#maps",
+    "#geography",
+    "#agriculture"
+   ],
+   "source_url": "https://data.worldbank.org/indicator/AG.LND.CROP.ZS",
+   "status": "open",
+   "added_by": "refill"
+  },
+  {
+   "id": "t113",
+   "topic": "Industrial Share of Freshwater Use",
+   "angle": "In several European nations, industry accounts for more than 90% of all freshwater withdrawals.",
+   "format": "map_reveal",
+   "dataset": {
+    "kind": "worldbank",
+    "indicator": "ER.H2O.FWIN.ZS",
+    "label": "Industrial share of water withdrawals",
+    "unit": "%",
+    "source": "World Bank",
+    "min_year": 2019
+   },
+   "scale": {
+    "kind": "bins",
+    "edges": [
+     5,
+     15,
+     40,
+     75
+    ],
+    "labels": [
+     "Under 5%",
+     "5-15%",
+     "15-40%",
+     "40-75%",
+     "Over 75%"
+    ]
+   },
+   "value_format": "{v:.1f}%",
+   "hashtags": [
+    "#maps",
+    "#geography",
+    "#water"
+   ],
+   "source_url": "https://data.worldbank.org/indicator/ER.H2O.FWIN.ZS",
+   "status": "open",
+   "added_by": "refill"
+  },
+  {
+   "id": "t114",
+   "topic": "The World's Smallest Business Owners",
+   "angle": "While most countries have fewer than 5% of workers acting as employers, Djibouti and Nigeria stand out with roughly one in five workers running their own business with staff.",
+   "format": "rank_ladder",
+   "dataset": {
+    "kind": "worldbank",
+    "indicator": "SL.EMP.MPYR.ZS",
+    "label": "Share of workers who are employers",
+    "unit": "%",
+    "source": "World Bank",
+    "min_year": 2019
+   },
+   "scale": {
+    "kind": "bins",
+    "edges": [
+     1.0,
+     3.0,
+     6.0,
+     12.0
+    ],
+    "labels": [
+     "Under 1%",
+     "1% to 3%",
+     "3% to 6%",
+     "6% to 12%",
+     "Over 12%"
+    ]
+   },
+   "value_format": "{v:.1f}%",
+   "hashtags": [
+    "#maps",
+    "#geography",
+    "#economy"
+   ],
+   "source_url": "https://data.worldbank.org/indicator/SL.EMP.MPYR.ZS",
+   "status": "open",
+   "added_by": "refill"
   }
  ],
- "refilled_at": "2026-10-22T17:32:55+00:00"
+ "refilled_at": "2026-10-23T17:10:10+00:00"
 }
