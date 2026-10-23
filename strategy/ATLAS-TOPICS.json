@@ -3351,7 +3351,7 @@
    "id": "t096",
    "topic": "Women Over 65 Around The World",
    "angle": "In some countries nearly a third of all women are over 65, while in others the share is barely two percent.",
-   "format": "rank_ladder",
+   "format": "map_reveal",
    "dataset": {
     "kind": "worldbank",
     "indicator": "SP.POP.65UP.FE.ZS",
@@ -3383,7 +3383,7 @@
     "#population"
    ],
    "source_url": "https://data.worldbank.org/indicator/SP.POP.65UP.FE.ZS",
-   "status": "open",
+   "status": "failed:ValueError",
    "added_by": "refill"
   },
   {
@@ -3422,7 +3422,7 @@
     "#economy"
    ],
    "source_url": "https://data.worldbank.org/indicator/SL.TLF.CACT.FM.ZS",
-   "status": "open",
+   "status": "ready:atlas097",
    "added_by": "refill"
   },
   {
@@ -3460,7 +3460,7 @@
    "id": "t099",
    "topic": "The Last Fully Rural Nations on Earth",
    "angle": "While hyper-urban city-states like Singapore and Hong Kong sit at zero percent, tiny Liechtenstein surprisingly tops the global rural population ranking at over eighty-five percent.",
-   "format": "rank_ladder",
+   "format": "map_reveal",
    "dataset": {
     "kind": "worldbank",
     "indicator": "SP.RUR.TOTL.ZS",
@@ -3492,7 +3492,7 @@
     "#population"
    ],
    "source_url": "https://data.worldbank.org/indicator/SP.RUR.TOTL.ZS",
-   "status": "open",
+   "status": "failed:RuntimeError",
    "added_by": "refill"
   },
   {
@@ -3562,7 +3562,7 @@
     "#globalhealth"
    ],
    "source_url": "https://data.worldbank.org/indicator/SH.STA.HYGN.UR.ZS",
-   "status": "open",
+   "status": "failed:ValueError",
    "added_by": "refill"
   },
   {
@@ -3593,7 +3593,7 @@
     "#business"
    ],
    "source_url": "https://data.worldbank.org/indicator/IC.FRM.OUTG.ZS",
-   "status": "open",
+   "status": "ready:atlas094",
    "added_by": "refill"
   },
   {
@@ -3624,7 +3624,7 @@
     "#health"
    ],
    "source_url": "https://data.worldbank.org/indicator/SH.XPD.OOPC.CH.ZS",
-   "status": "open",
+   "status": "ready:atlas093",
    "added_by": "refill"
   },
   {

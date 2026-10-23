@@ -1,0 +1,67 @@
+id: atlas093
+title: Direct Medical Costs Paid by Families
+hook_text: POCKET HEALTH CARE
+description: Out-of-pocket health spending share by households across 189 countries and territories.
+hashtags:
+- '#health'
+- '#maps'
+- '#geography'
+tags:
+- health
+- out-of-pocket health spending share
+- Armenia
+- Rwanda
+- world map
+- data
+sources:
+- https://data.worldbank.org/indicator/SH.XPD.OOPC.CH.ZS
+dataset:
+  kind: worldbank
+  indicator: SH.XPD.OOPC.CH.ZS
+  label: Out-of-pocket health spending share
+  unit: '%'
+  source: World Bank
+  min_year: 2019
+scale:
+  kind: threshold
+  at: 50.0
+  labels:
+  - Over half of health costs
+  - Under half of health costs
+value_format: '{v:.0f}%'
+beats:
+- text: In Armenia, households pay 80% of all health care costs directly from their own pockets.
+  shot:
+    callouts:
+    - ARM
+- text: Out-of-pocket payments are spending on health directly out-of-pocket by households.
+  shot:
+    callouts:
+    - ARM
+  basis: Out-of-pocket payments are spending on health directly out-of-pocket by households.
+- text: Bangladesh sits close behind at 79%.
+  shot:
+    kind: country
+    iso: BGD
+- text: Armenia stands at 7.3 times what families face in the USA at 11%.
+  shot:
+    kind: group
+    isos:
+    - ARM
+    - USA
+- text: Rwanda drops down to 4%.
+  shot:
+    kind: country
+    iso: RWA
+- text: China has 32% and India stands at 44%.
+  shot:
+    kind: group
+    isos:
+    - CHN
+    - IND
+- text: Who pays the medical bill in your home?
+  shot:
+    kind: card
+    lines:
+    - Who pays the medical bill in your home?
+    - Out-of-pocket health spending share

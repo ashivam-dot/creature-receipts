@@ -1,0 +1,159 @@
+{
+  "errors": [
+    {
+      "surface": "title",
+      "claim": "The Cities Where Almost Everyone Has SOAP",
+      "reason": "The title uses an identity and superlative framing ('The Cities Where Almost Everyone...') but the indicator measures urban households across mapped countries and territories rather than listing specific cities, and 'almost everyone' lacks universal support.",
+      "severity": "style"
+    },
+    {
+      "surface": "beat_1",
+      "claim": "Every city home there has a sink and soap.",
+      "reason": "The indicator measures households with a handwashing facility with soap and water, which equates to 100% for Turkmenistan, but phrasing it as 'every city home' for a national percentage is a minor generalization.",
+      "severity": "style"
+    },
+    {
+      "surface": "beat_3",
+      "claim": "Mexico has 98.5% access, 18 times as high as Liberia.",
+      "reason": "98.5 divided by 5.6 is approximately 17.59, which rounds to 17.6 times, but '18 times' slightly overstates the mathematical ratio.",
+      "severity": "factual"
+    }
+  ],
+  "claims": [
+    {
+      "surface": "description",
+      "text": "In some urban areas, fewer than six percent of people have access to basic handwashing facilities with soap and water.",
+      "isos": [
+        "LBR"
+      ],
+      "support": "Liberia value is 5.63716879846561% (5.6%)"
+    },
+    {
+      "surface": "beat_0",
+      "text": "Turkmenistan has 100% urban handwashing access. In Liberia, just 5.6%.",
+      "isos": [
+        "TKM",
+        "LBR"
+      ],
+      "support": "Turkmenistan: 100.0%, Liberia: 5.637%"
+    },
+    {
+      "surface": "beat_1",
+      "text": "Turkmenistan is the world's highest. Every city home there has a sink and soap.",
+      "isos": [
+        "TKM"
+      ],
+      "support": "Turkmenistan rank 1 with 100.0%"
+    },
+    {
+      "surface": "beat_2",
+      "text": "It counts homes with a fixed or mobile sink and soap on the premises.",
+      "isos": [],
+      "support": "Definition: The percentage of people living in households that have a handwashing facility with soap and water available on the premises. Handwashing facilities may be fixed or mobile..."
+    },
+    {
+      "surface": "beat_3",
+      "text": "Mexico has 98.5% access, 18 times as high as Liberia. China has 98.3%.",
+      "isos": [
+        "MEX",
+        "LBR",
+        "CHN"
+      ],
+      "support": "Mexico: 98.5178791880303%, Liberia: 5.63716879846561%, China: 98.3%"
+    },
+    {
+      "surface": "beat_4",
+      "text": "India has 96.1% in its cities. Nigeria has 38.2%.",
+      "isos": [
+        "IND",
+        "NGA"
+      ],
+      "support": "India: 96.1491015022912%, Nigeria: 38.1958763439829%"
+    },
+    {
+      "surface": "beat_5",
+      "text": "At the bottom, Sierra Leone has 21.2%, Ethiopia has 14%, and Liberia has 5.6%.",
+      "isos": [
+        "SLE",
+        "ETH",
+        "LBR"
+      ],
+      "support": "Sierra Leone: 21.2162953926661% (rank 99), Ethiopia: 14.0454842542067% (rank 102), Liberia: 5.63716879846561% (rank 104)"
+    }
+  ],
+  "surface_checks": {
+    "title": {
+      "supported": false,
+      "reason": "Title uses stylistic superlative framing about cities.",
+      "isos": []
+    },
+    "hook": {
+      "supported": true,
+      "reason": "Accurately reflects the hygiene gap theme.",
+      "isos": []
+    },
+    "description": {
+      "supported": true,
+      "reason": "Supported by Liberia's value of 5.6%.",
+      "isos": [
+        "LBR"
+      ]
+    },
+    "beat_0": {
+      "supported": true,
+      "reason": "Turkmenistan is 100% and Liberia is 5.6%.",
+      "isos": [
+        "TKM",
+        "LBR"
+      ]
+    },
+    "beat_1": {
+      "supported": true,
+      "reason": "Turkmenistan is rank 1 at 100%.",
+      "isos": [
+        "TKM"
+      ]
+    },
+    "beat_2": {
+      "supported": true,
+      "reason": "Directly aligns with the indicator definition.",
+      "isos": []
+    },
+    "beat_3": {
+      "supported": false,
+      "reason": "Mexico (98.5%) is approximately 17.5 times Liberia (5.6%), making '18 times' an exaggeration.",
+      "isos": [
+        "MEX",
+        "LBR",
+        "CHN"
+      ]
+    },
+    "beat_4": {
+      "supported": true,
+      "reason": "India is 96.1% and Nigeria is 38.2%.",
+      "isos": [
+        "IND",
+        "NGA"
+      ]
+    },
+    "beat_5": {
+      "supported": true,
+      "reason": "Sierra Leone is 21.2%, Ethiopia is 14%, and Liberia is 5.6% near the bottom of the rankings.",
+      "isos": [
+        "SLE",
+        "ETH",
+        "LBR"
+      ]
+    },
+    "beat_6": {
+      "supported": true,
+      "reason": "Valid closing question.",
+      "isos": []
+    },
+    "card_6": {
+      "supported": true,
+      "reason": "Accurately labels the metric and question.",
+      "isos": []
+    }
+  }
+}

@@ -1,0 +1,75 @@
+id: atlas094
+title: Places Ranked by Cost of Power Outages
+format: rank_ladder
+hook_text: ZERO FINANCIAL LOSSES
+description: An analysis of the share of sales lost to electrical outages across the globe, based on World Bank
+  data.
+hashtags:
+- '#economy'
+- '#business'
+- '#maps'
+tags:
+- wealth
+- share of sales lost to outages
+- Mali
+- Afghanistan
+- world map
+- data
+sources:
+- https://data.worldbank.org/indicator/IC.FRM.OUTG.ZS
+dataset:
+  kind: worldbank
+  indicator: IC.FRM.OUTG.ZS
+  label: Share of sales lost to outages
+  unit: '%'
+  source: World Bank
+  min_year: 2019
+scale:
+  kind: threshold
+  at: 0.05
+  labels:
+  - Significant losses
+  - Negligible or zero losses
+value_format: '{v:.4f}%'
+beats:
+- text: Central African Republic loses 9% of annual sales to blackouts. In Germany, it's 0%.
+  shot:
+    callouts:
+    - CAF
+    - DEU
+- text: Mali matches the peak at 10%, losing a tenth of yearly revenue.
+  shot:
+    kind: country
+    iso: MLI
+- text: 'Central African Republic: 9% follows right behind.'
+  shot:
+    kind: country
+    iso: CAF
+- text: Burkina Faso drops significantly to 2.7%.
+  shot:
+    kind: country
+    iso: BFA
+- text: Bangladesh and Cameroon share a heavy impact at 2% each.
+  shot:
+    kind: group
+    isos:
+    - BGD
+    - CMR
+- text: The vast majority of firms worldwide report zero financial losses.
+  shot:
+    kind: rank
+    isos:
+    - UKR
+    - GBR
+    - USA
+    - URY
+- text: Zimbabwe sits at the very bottom with 0%.
+  shot:
+    kind: country
+    iso: ZWE
+- text: Does your business lose sales when the lights go out?
+  shot:
+    kind: card
+    lines:
+    - Does your business lose sales?
+    - Share of sales lost to outages

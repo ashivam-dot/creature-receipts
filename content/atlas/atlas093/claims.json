@@ -1,0 +1,1929 @@
+{
+  "version": 1,
+  "evidence": {
+    "version": 1,
+    "indicator": "SH.XPD.OOPC.CH.ZS",
+    "definition": "Share of out-of-pocket payments of total current health expenditures.  Out-of-pocket payments are spending on health directly out-of-pocket by households.",
+    "source": "https://data.worldbank.org/indicator/SH.XPD.OOPC.CH.ZS",
+    "source_response_sha256": "7890ac3a3852cf9327ab45a03f90cf05185eaf2115ae9bb7b30695a16489a407",
+    "source_organization": "Global Health Expenditure Database, updated December 12th, 2025, World Health Organization (WHO), uri: http://apps.who.int/nha/database",
+    "year_label": "latest available 2021–2024",
+    "universe": "mapped countries and territories with data",
+    "count": 189,
+    "threshold": 50.0,
+    "at_or_above": 32,
+    "entities": {
+      "AFG": {
+        "name": "Afghanistan",
+        "value": 77.1395874,
+        "display": "77%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 4
+      },
+      "ALB": {
+        "name": "Albania",
+        "value": 48.27462769,
+        "display": "48%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 37
+      },
+      "DZA": {
+        "name": "Algeria",
+        "value": 45.00216675,
+        "display": "45%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 44
+      },
+      "AND": {
+        "name": "Andorra",
+        "value": 11.1459446,
+        "display": "11%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 160
+      },
+      "AGO": {
+        "name": "Angola",
+        "value": 32.54667664,
+        "display": "33%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 74
+      },
+      "ATG": {
+        "name": "Antigua and Barbuda",
+        "value": 20.80756378,
+        "display": "21%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 125
+      },
+      "ARG": {
+        "name": "Argentina",
+        "value": 24.46961784,
+        "display": "24%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 115
+      },
+      "ARM": {
+        "name": "Armenia",
+        "value": 80.47196198,
+        "display": "80%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 1
+      },
+      "AUS": {
+        "name": "Australia",
+        "value": 15.84897614,
+        "display": "16%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 140
+      },
+      "AUT": {
+        "name": "Austria",
+        "value": 16.46478271,
+        "display": "16%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 138
+      },
+      "AZE": {
+        "name": "Azerbaijan",
+        "value": 64.63206482,
+        "display": "65%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 11
+      },
+      "BHS": {
+        "name": "Bahamas, The",
+        "value": 27.48377991,
+        "display": "27%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 98
+      },
+      "BHR": {
+        "name": "Bahrain",
+        "value": 28.65578461,
+        "display": "29%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 90
+      },
+      "BGD": {
+        "name": "Bangladesh",
+        "value": 79.30711365,
+        "display": "79%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 2
+      },
+      "BRB": {
+        "name": "Barbados",
+        "value": 49.49338913,
+        "display": "49%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 33
+      },
+      "BLR": {
+        "name": "Belarus",
+        "value": 28.48183441,
+        "display": "28%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 91
+      },
+      "BEL": {
+        "name": "Belgium",
+        "value": 21.50983047,
+        "display": "22%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 122
+      },
+      "BLZ": {
+        "name": "Belize",
+        "value": 26.78139114,
+        "display": "27%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 104
+      },
+      "BEN": {
+        "name": "Benin",
+        "value": 42.40531921,
+        "display": "42%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 52
+      },
+      "BTN": {
+        "name": "Bhutan",
+        "value": 25.46281624,
+        "display": "25%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 111
+      },
+      "BOL": {
+        "name": "Bolivia",
+        "value": 27.31554413,
+        "display": "27%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 101
+      },
+      "BIH": {
+        "name": "Bosnia and Herzegovina",
+        "value": 30.96058273,
+        "display": "31%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 82
+      },
+      "BWA": {
+        "name": "Botswana",
+        "value": 4.25866175,
+        "display": "4%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 184
+      },
+      "BRA": {
+        "name": "Brazil",
+        "value": 26.23070717,
+        "display": "26%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 109
+      },
+      "BRN": {
+        "name": "Brunei Darussalam",
+        "value": 7.41179371,
+        "display": "7%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 179
+      },
+      "BGR": {
+        "name": "Bulgaria",
+        "value": 35.50430679,
+        "display": "36%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 68
+      },
+      "BFA": {
+        "name": "Burkina Faso",
+        "value": 43.82195663,
+        "display": "44%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 49
+      },
+      "BDI": {
+        "name": "Burundi",
+        "value": 24.48983002,
+        "display": "24%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 114
+      },
+      "CPV": {
+        "name": "Cabo Verde",
+        "value": 25.73987579,
+        "display": "26%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 110
+      },
+      "KHM": {
+        "name": "Cambodia",
+        "value": 60.60118866,
+        "display": "61%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 17
+      },
+      "CMR": {
+        "name": "Cameroon",
+        "value": 67.65119171,
+        "display": "68%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 9
+      },
+      "CAN": {
+        "name": "Canada",
+        "value": 15.27733707,
+        "display": "15%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 141
+      },
+      "CAF": {
+        "name": "Central African Republic",
+        "value": 45.02304077,
+        "display": "45%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 43
+      },
+      "TCD": {
+        "name": "Chad",
+        "value": 51.67914963,
+        "display": "52%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 31
+      },
+      "CHL": {
+        "name": "Chile",
+        "value": 39.14786911,
+        "display": "39%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 60
+      },
+      "CHN": {
+        "name": "China",
+        "value": 32.17354584,
+        "display": "32%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 76
+      },
+      "COL": {
+        "name": "Colombia",
+        "value": 14.73741817,
+        "display": "15%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 143
+      },
+      "COM": {
+        "name": "Comoros",
+        "value": 56.56671524,
+        "display": "57%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 23
+      },
+      "COD": {
+        "name": "Congo, Dem. Rep.",
+        "value": 38.00354767,
+        "display": "38%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 61
+      },
+      "COG": {
+        "name": "Congo, Rep.",
+        "value": 27.97068977,
+        "display": "28%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 94
+      },
+      "CRI": {
+        "name": "Costa Rica",
+        "value": 24.12618256,
+        "display": "24%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 117
+      },
+      "CIV": {
+        "name": "Cote d'Ivoire",
+        "value": 31.99314499,
+        "display": "32%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 79
+      },
+      "HRV": {
+        "name": "Croatia",
+        "value": 9.37740326,
+        "display": "9%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 171
+      },
+      "CUB": {
+        "name": "Cuba",
+        "value": 16.58238792,
+        "display": "17%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 137
+      },
+      "CYP": {
+        "name": "Cyprus",
+        "value": 17.9429245,
+        "display": "18%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 133
+      },
+      "CZE": {
+        "name": "Czechia",
+        "value": 14.06390572,
+        "display": "14%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 147
+      },
+      "DNK": {
+        "name": "Denmark",
+        "value": 13.86858845,
+        "display": "14%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 148
+      },
+      "DJI": {
+        "name": "Djibouti",
+        "value": 28.84145355,
+        "display": "29%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 89
+      },
+      "DMA": {
+        "name": "Dominica",
+        "value": 29.32637405,
+        "display": "29%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 88
+      },
+      "DOM": {
+        "name": "Dominican Republic",
+        "value": 25.05566978,
+        "display": "25%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 113
+      },
+      "ECU": {
+        "name": "Ecuador",
+        "value": 30.88848877,
+        "display": "31%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 84
+      },
+      "EGY": {
+        "name": "Egypt, Arab Rep.",
+        "value": 57.19506836,
+        "display": "57%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 21
+      },
+      "SLV": {
+        "name": "El Salvador",
+        "value": 32.4943924,
+        "display": "32%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 75
+      },
+      "GNQ": {
+        "name": "Equatorial Guinea",
+        "value": 65.98317719,
+        "display": "66%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 10
+      },
+      "ERI": {
+        "name": "Eritrea",
+        "value": 48.44565201,
+        "display": "48%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 36
+      },
+      "EST": {
+        "name": "Estonia",
+        "value": 21.38176537,
+        "display": "21%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 123
+      },
+      "SWZ": {
+        "name": "Eswatini",
+        "value": 11.01838779,
+        "display": "11%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 161
+      },
+      "ETH": {
+        "name": "Ethiopia",
+        "value": 46.26859283,
+        "display": "46%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 39
+      },
+      "FJI": {
+        "name": "Fiji",
+        "value": 8.31420898,
+        "display": "8%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 176
+      },
+      "FIN": {
+        "name": "Finland",
+        "value": 14.09493542,
+        "display": "14%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 146
+      },
+      "FRA": {
+        "name": "France",
+        "value": 9.22742558,
+        "display": "9%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 172
+      },
+      "GAB": {
+        "name": "Gabon",
+        "value": 17.27153969,
+        "display": "17%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 134
+      },
+      "GMB": {
+        "name": "Gambia, The",
+        "value": 33.7826767,
+        "display": "34%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 72
+      },
+      "GEO": {
+        "name": "Georgia",
+        "value": 58.75926208,
+        "display": "59%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 19
+      },
+      "DEU": {
+        "name": "Germany",
+        "value": 10.7067318,
+        "display": "11%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 163
+      },
+      "GHA": {
+        "name": "Ghana",
+        "value": 26.67723274,
+        "display": "27%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 105
+      },
+      "GRC": {
+        "name": "Greece",
+        "value": 34.30307007,
+        "display": "34%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 71
+      },
+      "GRD": {
+        "name": "Grenada",
+        "value": 48.48131943,
+        "display": "48%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 35
+      },
+      "GTM": {
+        "name": "Guatemala",
+        "value": 57.18184662,
+        "display": "57%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 22
+      },
+      "GIN": {
+        "name": "Guinea",
+        "value": 54.41574097,
+        "display": "54%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 26
+      },
+      "GNB": {
+        "name": "Guinea-Bissau",
+        "value": 61.5587883,
+        "display": "62%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 16
+      },
+      "GUY": {
+        "name": "Guyana",
+        "value": 26.32743073,
+        "display": "26%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 108
+      },
+      "HTI": {
+        "name": "Haiti",
+        "value": 52.40410995,
+        "display": "52%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 30
+      },
+      "HND": {
+        "name": "Honduras",
+        "value": 53.06166458,
+        "display": "53%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 28
+      },
+      "HUN": {
+        "name": "Hungary",
+        "value": 23.05996895,
+        "display": "23%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 118
+      },
+      "ISL": {
+        "name": "Iceland",
+        "value": 14.87985802,
+        "display": "15%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 142
+      },
+      "IND": {
+        "name": "India",
+        "value": 43.88510513,
+        "display": "44%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 48
+      },
+      "IDN": {
+        "name": "Indonesia",
+        "value": 31.0836544,
+        "display": "31%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 81
+      },
+      "IRN": {
+        "name": "Iran, Islamic Rep.",
+        "value": 43.14528656,
+        "display": "43%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 51
+      },
+      "IRQ": {
+        "name": "Iraq",
+        "value": 53.9823761,
+        "display": "54%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 27
+      },
+      "IRL": {
+        "name": "Ireland",
+        "value": 10.60706902,
+        "display": "11%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 165
+      },
+      "ISR": {
+        "name": "Israel",
+        "value": 20.48583984,
+        "display": "20%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 126
+      },
+      "ITA": {
+        "name": "Italy",
+        "value": 22.30979538,
+        "display": "22%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 120
+      },
+      "JAM": {
+        "name": "Jamaica",
+        "value": 20.2454052,
+        "display": "20%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 127
+      },
+      "JPN": {
+        "name": "Japan",
+        "value": 12.23568153,
+        "display": "12%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 155
+      },
+      "JOR": {
+        "name": "Jordan",
+        "value": 34.4679451,
+        "display": "34%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 70
+      },
+      "KAZ": {
+        "name": "Kazakhstan",
+        "value": 27.64227867,
+        "display": "28%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 97
+      },
+      "KEN": {
+        "name": "Kenya",
+        "value": 24.24565315,
+        "display": "24%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 116
+      },
+      "KIR": {
+        "name": "Kiribati",
+        "value": 2.9085722,
+        "display": "3%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 187
+      },
+      "KOR": {
+        "name": "Korea, Rep.",
+        "value": 33.73815536,
+        "display": "34%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 73
+      },
+      "KWT": {
+        "name": "Kuwait",
+        "value": 10.00349617,
+        "display": "10%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 168
+      },
+      "KGZ": {
+        "name": "Kyrgyz Republic",
+        "value": 42.26472855,
+        "display": "42%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 53
+      },
+      "LAO": {
+        "name": "Lao PDR",
+        "value": 44.84078598,
+        "display": "45%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 45
+      },
+      "LVA": {
+        "name": "Latvia",
+        "value": 35.05759811,
+        "display": "35%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 69
+      },
+      "LBN": {
+        "name": "Lebanon",
+        "value": 29.70126343,
+        "display": "30%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 86
+      },
+      "LSO": {
+        "name": "Lesotho",
+        "value": 13.19708443,
+        "display": "13%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 152
+      },
+      "LBR": {
+        "name": "Liberia",
+        "value": 63.23887634,
+        "display": "63%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 14
+      },
+      "LBY": {
+        "name": "Libya",
+        "value": 19.17657852,
+        "display": "19%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 131
+      },
+      "LIE": {
+        "name": "Liechtenstein",
+        "value": 19.7171917,
+        "display": "20%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 129
+      },
+      "LTU": {
+        "name": "Lithuania",
+        "value": 31.42526817,
+        "display": "31%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 80
+      },
+      "LUX": {
+        "name": "Luxembourg",
+        "value": 8.50457287,
+        "display": "9%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 174
+      },
+      "MDG": {
+        "name": "Madagascar",
+        "value": 27.42209625,
+        "display": "27%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 100
+      },
+      "MWI": {
+        "name": "Malawi",
+        "value": 12.00286865,
+        "display": "12%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 157
+      },
+      "MYS": {
+        "name": "Malaysia",
+        "value": 37.09352112,
+        "display": "37%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 66
+      },
+      "MLI": {
+        "name": "Mali",
+        "value": 47.22994995,
+        "display": "47%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 38
+      },
+      "MLT": {
+        "name": "Malta",
+        "value": 30.92565918,
+        "display": "31%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 83
+      },
+      "MHL": {
+        "name": "Marshall Islands",
+        "value": 1.05294764,
+        "display": "1%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 189
+      },
+      "MRT": {
+        "name": "Mauritania",
+        "value": 43.7736702,
+        "display": "44%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 50
+      },
+      "MUS": {
+        "name": "Mauritius",
+        "value": 45.2427063,
+        "display": "45%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 42
+      },
+      "MEX": {
+        "name": "Mexico",
+        "value": 41.23572922,
+        "display": "41%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 56
+      },
+      "FSM": {
+        "name": "Micronesia, Fed. Sts.",
+        "value": 2.58105636,
+        "display": "3%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 188
+      },
+      "MDA": {
+        "name": "Moldova",
+        "value": 27.468853,
+        "display": "27%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 99
+      },
+      "MNG": {
+        "name": "Mongolia",
+        "value": 48.79919434,
+        "display": "49%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 34
+      },
+      "MNE": {
+        "name": "Montenegro",
+        "value": 26.33176041,
+        "display": "26%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 107
+      },
+      "MAR": {
+        "name": "Morocco",
+        "value": 37.25432968,
+        "display": "37%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 64
+      },
+      "MOZ": {
+        "name": "Mozambique",
+        "value": 10.37066555,
+        "display": "10%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 166
+      },
+      "MMR": {
+        "name": "Myanmar",
+        "value": 71.12589264,
+        "display": "71%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 7
+      },
+      "NAM": {
+        "name": "Namibia",
+        "value": 7.49171019,
+        "display": "7%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 177
+      },
+      "NPL": {
+        "name": "Nepal",
+        "value": 59.38827515,
+        "display": "59%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 18
+      },
+      "NLD": {
+        "name": "Netherlands",
+        "value": 11.78772259,
+        "display": "12%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 158
+      },
+      "NZL": {
+        "name": "New Zealand",
+        "value": 12.68764019,
+        "display": "13%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 154
+      },
+      "NIC": {
+        "name": "Nicaragua",
+        "value": 37.6333313,
+        "display": "38%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 63
+      },
+      "NER": {
+        "name": "Niger",
+        "value": 51.48022842,
+        "display": "51%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 32
+      },
+      "NGA": {
+        "name": "Nigeria",
+        "value": 71.90481567,
+        "display": "72%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 6
+      },
+      "MKD": {
+        "name": "North Macedonia",
+        "value": 39.57205582,
+        "display": "40%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 58
+      },
+      "NOR": {
+        "name": "Norway",
+        "value": 13.68724823,
+        "display": "14%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 149
+      },
+      "OMN": {
+        "name": "Oman",
+        "value": 6.31094599,
+        "display": "6%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 182
+      },
+      "PAK": {
+        "name": "Pakistan",
+        "value": 52.93231964,
+        "display": "53%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 29
+      },
+      "PLW": {
+        "name": "Palau",
+        "value": 12.10223293,
+        "display": "12%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 156
+      },
+      "PAN": {
+        "name": "Panama",
+        "value": 40.45503235,
+        "display": "40%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 57
+      },
+      "PNG": {
+        "name": "Papua New Guinea",
+        "value": 8.55412769,
+        "display": "9%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 173
+      },
+      "PRY": {
+        "name": "Paraguay",
+        "value": 36.32289886,
+        "display": "36%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 67
+      },
+      "PER": {
+        "name": "Peru",
+        "value": 26.98286247,
+        "display": "27%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 103
+      },
+      "PHL": {
+        "name": "Philippines",
+        "value": 44.36006165,
+        "display": "44%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 46
+      },
+      "POL": {
+        "name": "Poland",
+        "value": 16.20527458,
+        "display": "16%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 139
+      },
+      "PRT": {
+        "name": "Portugal",
+        "value": 28.19350624,
+        "display": "28%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 93
+      },
+      "QAT": {
+        "name": "Qatar",
+        "value": 7.42945814,
+        "display": "7%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 178
+      },
+      "ROU": {
+        "name": "Romania",
+        "value": 22.96146011,
+        "display": "23%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 119
+      },
+      "RUS": {
+        "name": "Russian Federation",
+        "value": 28.39422226,
+        "display": "28%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 92
+      },
+      "RWA": {
+        "name": "Rwanda",
+        "value": 4.0999999,
+        "display": "4%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 185
+      },
+      "WSM": {
+        "name": "Samoa",
+        "value": 13.41968632,
+        "display": "13%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 150
+      },
+      "SMR": {
+        "name": "San Marino",
+        "value": 13.09178734,
+        "display": "13%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 153
+      },
+      "STP": {
+        "name": "Sao Tome and Principe",
+        "value": 16.66314888,
+        "display": "17%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 136
+      },
+      "SAU": {
+        "name": "Saudi Arabia",
+        "value": 14.11603928,
+        "display": "14%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 145
+      },
+      "SEN": {
+        "name": "Senegal",
+        "value": 44.32556534,
+        "display": "44%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 47
+      },
+      "SRB": {
+        "name": "Serbia",
+        "value": 32.13853073,
+        "display": "32%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 78
+      },
+      "SYC": {
+        "name": "Seychelles",
+        "value": 27.95942497,
+        "display": "28%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 95
+      },
+      "SLE": {
+        "name": "Sierra Leone",
+        "value": 54.4692421,
+        "display": "54%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 25
+      },
+      "SGP": {
+        "name": "Singapore",
+        "value": 25.41850281,
+        "display": "25%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 112
+      },
+      "SVK": {
+        "name": "Slovak Republic",
+        "value": 20.15309143,
+        "display": "20%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 128
+      },
+      "SVN": {
+        "name": "Slovenia",
+        "value": 11.7449913,
+        "display": "12%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 159
+      },
+      "SLB": {
+        "name": "Solomon Islands",
+        "value": 3.16049337,
+        "display": "3%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 186
+      },
+      "SOM": {
+        "name": "Somalia, Fed. Rep.",
+        "value": 30.77948952,
+        "display": "31%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 85
+      },
+      "ZAF": {
+        "name": "South Africa",
+        "value": 6.69263172,
+        "display": "7%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 181
+      },
+      "SSD": {
+        "name": "South Sudan",
+        "value": 27.14476204,
+        "display": "27%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 102
+      },
+      "ESP": {
+        "name": "Spain",
+        "value": 20.85539818,
+        "display": "21%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 124
+      },
+      "LKA": {
+        "name": "Sri Lanka",
+        "value": 54.81069946,
+        "display": "55%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 24
+      },
+      "KNA": {
+        "name": "St. Kitts and Nevis",
+        "value": 41.80017853,
+        "display": "42%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 55
+      },
+      "LCA": {
+        "name": "St. Lucia",
+        "value": 37.14485931,
+        "display": "37%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 65
+      },
+      "VCT": {
+        "name": "St. Vincent and the Grenadines",
+        "value": 26.57362938,
+        "display": "27%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 106
+      },
+      "SDN": {
+        "name": "Sudan",
+        "value": 57.36631393,
+        "display": "57%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 20
+      },
+      "SUR": {
+        "name": "Suriname",
+        "value": 19.71665573,
+        "display": "20%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 130
+      },
+      "SWE": {
+        "name": "Sweden",
+        "value": 13.3813858,
+        "display": "13%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 151
+      },
+      "CHE": {
+        "name": "Switzerland",
+        "value": 22.02737427,
+        "display": "22%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 121
+      },
+      "SYR": {
+        "name": "Syrian Arab Republic",
+        "value": 72.40081787,
+        "display": "72%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 5
+      },
+      "TJK": {
+        "name": "Tajikistan",
+        "value": 62.36102676,
+        "display": "62%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 15
+      },
+      "TZA": {
+        "name": "Tanzania",
+        "value": 27.93128014,
+        "display": "28%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 96
+      },
+      "THA": {
+        "name": "Thailand",
+        "value": 9.93404865,
+        "display": "10%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 169
+      },
+      "TLS": {
+        "name": "Timor-Leste",
+        "value": 6.99333382,
+        "display": "7%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 180
+      },
+      "TGO": {
+        "name": "Togo",
+        "value": 64.34121704,
+        "display": "64%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 12
+      },
+      "TON": {
+        "name": "Tonga",
+        "value": 5.86377478,
+        "display": "6%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 183
+      },
+      "TTO": {
+        "name": "Trinidad and Tobago",
+        "value": 45.27397919,
+        "display": "45%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 41
+      },
+      "TUN": {
+        "name": "Tunisia",
+        "value": 37.93983841,
+        "display": "38%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 62
+      },
+      "TUR": {
+        "name": "Turkiye",
+        "value": 19.04723167,
+        "display": "19%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 132
+      },
+      "TKM": {
+        "name": "Turkmenistan",
+        "value": 77.39328003,
+        "display": "77%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 3
+      },
+      "UGA": {
+        "name": "Uganda",
+        "value": 32.17179489,
+        "display": "32%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 77
+      },
+      "UKR": {
+        "name": "Ukraine",
+        "value": 45.29367447,
+        "display": "45%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 40
+      },
+      "ARE": {
+        "name": "United Arab Emirates",
+        "value": 9.66616821,
+        "display": "10%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 170
+      },
+      "GBR": {
+        "name": "United Kingdom",
+        "value": 14.55540943,
+        "display": "15%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 144
+      },
+      "USA": {
+        "name": "United States",
+        "value": 10.92723846,
+        "display": "11%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 162
+      },
+      "URY": {
+        "name": "Uruguay",
+        "value": 17.09811211,
+        "display": "17%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 135
+      },
+      "UZB": {
+        "name": "Uzbekistan",
+        "value": 64.05923462,
+        "display": "64%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 13
+      },
+      "VUT": {
+        "name": "Vanuatu",
+        "value": 8.38081264,
+        "display": "8%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 175
+      },
+      "VEN": {
+        "name": "Venezuela, RB",
+        "value": 29.6867485,
+        "display": "30%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 87
+      },
+      "VNM": {
+        "name": "Viet Nam",
+        "value": 39.20284653,
+        "display": "39%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 59
+      },
+      "PSE": {
+        "name": "West Bank and Gaza",
+        "value": 42.07169342,
+        "display": "42%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 54
+      },
+      "YEM": {
+        "name": "Yemen, Rep.",
+        "value": 69.12571716,
+        "display": "69%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 8
+      },
+      "ZMB": {
+        "name": "Zambia",
+        "value": 10.28683281,
+        "display": "10%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 167
+      },
+      "ZWE": {
+        "name": "Zimbabwe",
+        "value": 10.63479233,
+        "display": "11%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 164
+      }
+    }
+  },
+  "review": {
+    "errors": [],
+    "claims": [
+      {
+        "surface": "title",
+        "text": "Direct Medical Costs Paid by Families",
+        "isos": [],
+        "support": "Share of out-of-pocket payments of total current health expenditures. Out-of-pocket payments are spending on health directly out-of-pocket by households.",
+        "evidence": {}
+      },
+      {
+        "surface": "hook",
+        "text": "POCKET HEALTH CARE",
+        "isos": [],
+        "support": "Share of out-of-pocket payments of total current health expenditures.",
+        "evidence": {}
+      },
+      {
+        "surface": "description",
+        "text": "Out-of-pocket health spending share by households across 189 countries and territories.",
+        "isos": [],
+        "support": "count: 189, universe: mapped countries and territories with data",
+        "evidence": {}
+      },
+      {
+        "surface": "beat_0",
+        "text": "In Armenia, households pay 80% of all health care costs directly from their own pockets.",
+        "isos": [
+          "ARM"
+        ],
+        "support": "Armenia value: 80.47196198, display: 80%",
+        "evidence": {
+          "ARM": {
+            "name": "Armenia",
+            "value": 80.47196198,
+            "display": "80%",
+            "year": 2023,
+            "unit": "%",
+            "rank": 1
+          }
+        }
+      },
+      {
+        "surface": "beat_1",
+        "text": "Out-of-pocket payments are spending on health directly out-of-pocket by households.",
+        "isos": [],
+        "support": "Out-of-pocket payments are spending on health directly out-of-pocket by households.",
+        "evidence": {}
+      },
+      {
+        "surface": "beat_2",
+        "text": "Bangladesh sits close behind at 79%.",
+        "isos": [
+          "BGD"
+        ],
+        "support": "Bangladesh value: 79.30711365, display: 79%",
+        "evidence": {
+          "BGD": {
+            "name": "Bangladesh",
+            "value": 79.30711365,
+            "display": "79%",
+            "year": 2023,
+            "unit": "%",
+            "rank": 2
+          }
+        }
+      },
+      {
+        "surface": "beat_3",
+        "text": "Armenia stands at 7.3 times what families face in the USA at 11%.",
+        "isos": [
+          "ARM",
+          "USA"
+        ],
+        "support": "Armenia: 80.47% (display 80%), USA: 10.93% (display 11%)",
+        "evidence": {
+          "ARM": {
+            "name": "Armenia",
+            "value": 80.47196198,
+            "display": "80%",
+            "year": 2023,
+            "unit": "%",
+            "rank": 1
+          },
+          "USA": {
+            "name": "United States",
+            "value": 10.92723846,
+            "display": "11%",
+            "year": 2023,
+            "unit": "%",
+            "rank": 162
+          }
+        }
+      },
+      {
+        "surface": "beat_4",
+        "text": "Rwanda drops down to 4%.",
+        "isos": [
+          "RWA"
+        ],
+        "support": "Rwanda value: 4.0999999, display: 4%",
+        "evidence": {
+          "RWA": {
+            "name": "Rwanda",
+            "value": 4.0999999,
+            "display": "4%",
+            "year": 2023,
+            "unit": "%",
+            "rank": 185
+          }
+        }
+      },
+      {
+        "surface": "beat_5",
+        "text": "China has 32% and India stands at 44%.",
+        "isos": [
+          "CHN",
+          "IND"
+        ],
+        "support": "China: 32.17% (display 32%), India: 43.89% (display 44%)",
+        "evidence": {
+          "CHN": {
+            "name": "China",
+            "value": 32.17354584,
+            "display": "32%",
+            "year": 2023,
+            "unit": "%",
+            "rank": 76
+          },
+          "IND": {
+            "name": "India",
+            "value": 43.88510513,
+            "display": "44%",
+            "year": 2023,
+            "unit": "%",
+            "rank": 48
+          }
+        }
+      },
+      {
+        "surface": "beat_6",
+        "text": "Who pays the medical bill in your home?",
+        "isos": [],
+        "support": "Stylistic question",
+        "evidence": {}
+      },
+      {
+        "surface": "card_6",
+        "text": "Out-of-pocket health spending share",
+        "isos": [],
+        "support": "Share of out-of-pocket payments of total current health expenditures.",
+        "evidence": {}
+      },
+      {
+        "surface": "title",
+        "text": "Direct Medical Costs Paid by Families",
+        "isos": [],
+        "support": "Accurately reflects the indicator definition.",
+        "method": "complete-surface-check",
+        "evidence": {}
+      },
+      {
+        "surface": "hook",
+        "text": "POCKET HEALTH CARE",
+        "isos": [],
+        "support": "Stylistic hook matching the theme.",
+        "method": "complete-surface-check",
+        "evidence": {}
+      },
+      {
+        "surface": "description",
+        "text": "Out-of-pocket health spending share by households across 189 countries and territories.",
+        "isos": [],
+        "support": "Matches the universe count of 189 countries and territories.",
+        "method": "complete-surface-check",
+        "evidence": {}
+      },
+      {
+        "surface": "beat_0",
+        "text": "In Armenia, households pay 80% of all health care costs directly from their own pockets.",
+        "isos": [
+          "ARM"
+        ],
+        "support": "Armenia out-of-pocket share is 80.47%, displayed as 80%.",
+        "method": "complete-surface-check",
+        "evidence": {
+          "ARM": {
+            "name": "Armenia",
+            "value": 80.47196198,
+            "display": "80%",
+            "year": 2023,
+            "unit": "%",
+            "rank": 1
+          }
+        }
+      },
+      {
+        "surface": "beat_1",
+        "text": "Out-of-pocket payments are spending on health directly out-of-pocket by households.",
+        "isos": [],
+        "support": "Directly matches the indicator definition provided in EVIDENCE.",
+        "method": "complete-surface-check",
+        "evidence": {}
+      },
+      {
+        "surface": "beat_2",
+        "text": "Bangladesh sits close behind at 79%.",
+        "isos": [
+          "BGD"
+        ],
+        "support": "Bangladesh out-of-pocket share is 79.31%, displayed as 79%.",
+        "method": "complete-surface-check",
+        "evidence": {
+          "BGD": {
+            "name": "Bangladesh",
+            "value": 79.30711365,
+            "display": "79%",
+            "year": 2023,
+            "unit": "%",
+            "rank": 2
+          }
+        }
+      },
+      {
+        "surface": "beat_3",
+        "text": "Armenia stands at 7.3 times what families face in the USA at 11%.",
+        "isos": [
+          "ARM",
+          "USA"
+        ],
+        "support": "Armenia (80%) is approximately 7.3 times USA (11%).",
+        "method": "complete-surface-check",
+        "evidence": {
+          "ARM": {
+            "name": "Armenia",
+            "value": 80.47196198,
+            "display": "80%",
+            "year": 2023,
+            "unit": "%",
+            "rank": 1
+          },
+          "USA": {
+            "name": "United States",
+            "value": 10.92723846,
+            "display": "11%",
+            "year": 2023,
+            "unit": "%",
+            "rank": 162
+          }
+        }
+      },
+      {
+        "surface": "beat_4",
+        "text": "Rwanda drops down to 4%.",
+        "isos": [
+          "RWA"
+        ],
+        "support": "Rwanda out-of-pocket share is 4.10%, displayed as 4%.",
+        "method": "complete-surface-check",
+        "evidence": {
+          "RWA": {
+            "name": "Rwanda",
+            "value": 4.0999999,
+            "display": "4%",
+            "year": 2023,
+            "unit": "%",
+            "rank": 185
+          }
+        }
+      },
+      {
+        "surface": "beat_5",
+        "text": "China has 32% and India stands at 44%.",
+        "isos": [
+          "CHN",
+          "IND"
+        ],
+        "support": "China (32%) and India (44%) match the evidence values.",
+        "method": "complete-surface-check",
+        "evidence": {
+          "CHN": {
+            "name": "China",
+            "value": 32.17354584,
+            "display": "32%",
+            "year": 2023,
+            "unit": "%",
+            "rank": 76
+          },
+          "IND": {
+            "name": "India",
+            "value": 43.88510513,
+            "display": "44%",
+            "year": 2023,
+            "unit": "%",
+            "rank": 48
+          }
+        }
+      },
+      {
+        "surface": "beat_6",
+        "text": "Who pays the medical bill in your home?",
+        "isos": [],
+        "support": "Ordinary loop/closing question.",
+        "method": "complete-surface-check",
+        "evidence": {}
+      },
+      {
+        "surface": "card_6",
+        "text": [
+          "Who pays the medical bill in your home?",
+          "Out-of-pocket health spending share"
+        ],
+        "isos": [],
+        "support": "Accurately states the indicator topic.",
+        "method": "complete-surface-check",
+        "evidence": {}
+      }
+    ],
+    "surface_checks": {
+      "title": {
+        "supported": true,
+        "reason": "Accurately reflects the indicator definition.",
+        "isos": []
+      },
+      "hook": {
+        "supported": true,
+        "reason": "Stylistic hook matching the theme.",
+        "isos": []
+      },
+      "description": {
+        "supported": true,
+        "reason": "Matches the universe count of 189 countries and territories.",
+        "isos": []
+      },
+      "beat_0": {
+        "supported": true,
+        "reason": "Armenia out-of-pocket share is 80.47%, displayed as 80%.",
+        "isos": [
+          "ARM"
+        ]
+      },
+      "beat_1": {
+        "supported": true,
+        "reason": "Directly matches the indicator definition provided in EVIDENCE.",
+        "isos": []
+      },
+      "beat_2": {
+        "supported": true,
+        "reason": "Bangladesh out-of-pocket share is 79.31%, displayed as 79%.",
+        "isos": [
+          "BGD"
+        ]
+      },
+      "beat_3": {
+        "supported": true,
+        "reason": "Armenia (80%) is approximately 7.3 times USA (11%).",
+        "isos": [
+          "ARM",
+          "USA"
+        ]
+      },
+      "beat_4": {
+        "supported": true,
+        "reason": "Rwanda out-of-pocket share is 4.10%, displayed as 4%.",
+        "isos": [
+          "RWA"
+        ]
+      },
+      "beat_5": {
+        "supported": true,
+        "reason": "China (32%) and India (44%) match the evidence values.",
+        "isos": [
+          "CHN",
+          "IND"
+        ]
+      },
+      "beat_6": {
+        "supported": true,
+        "reason": "Ordinary loop/closing question.",
+        "isos": []
+      },
+      "card_6": {
+        "supported": true,
+        "reason": "Accurately states the indicator topic.",
+        "isos": []
+      }
+    },
+    "warnings": [
+      {
+        "surface": "beat_3",
+        "claim": "Armenia stands at 7.3 times what families face in the USA at 11%.",
+        "reason": "80.47196198 / 10.92723846 is approximately 7.36, but let's check the display values or exact ratio: 80 / 11 is 7.27, using exact values 80.47 / 10.93 = 7.36, however the text claims '7.3 times', which is a rounding that matches display values. Wait, let's check beat_3 carefully: Armenia is 80%, USA is 11%. 80 / 11 = 7.27 which rounds to 7.3. No factual error here based on rounding rules.",
+        "severity": "info"
+      }
+    ]
+  },
+  "script_sha256": "09156da348ec642808b8700cffe7f25a0c59928b0593df1ce5a11e015f6b3442",
+  "data_sha256": "e26d7607c2c9520f3c4a93c1424a357aac24e01887d0ae6e0f669e20c9be80cd",
+  "reviewer_model": "gemini-3.5-flash-lite"
+}

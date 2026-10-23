@@ -1,0 +1,76 @@
+id: atlas097
+title: Places Where Women MATCH Men at Work
+hook_text: THE WIDEST GAP
+description: Female-to-male labor force ratio across 184 countries and territories.
+hashtags:
+- '#work'
+- '#economy'
+- '#maps'
+tags:
+- work
+- female-to-male labor force ratio
+- Burundi
+- Afghanistan
+- world map
+- data
+sources:
+- https://data.worldbank.org/indicator/SL.TLF.CACT.FM.ZS
+dataset:
+  kind: worldbank
+  indicator: SL.TLF.CACT.FM.ZS
+  label: Female-to-male labor force ratio
+  unit: '%'
+  source: World Bank
+  min_year: 2019
+scale:
+  edges:
+  - 25.0
+  - 50.0
+  - 75.0
+  - 90.0
+  labels:
+  - Under 25%
+  - 25% to 50%
+  - 50% to 75%
+  - 75% to 90%
+  - Over 90%
+value_format: '{v:.0f}%'
+beats:
+- text: In Moldova, female economic activity matches men at 100%, while Afghanistan sits at 7%.
+  shot:
+    callouts:
+    - MDA
+    - AFG
+- text: It counts everyone ages 15 and older who supplies labor for goods and services.
+  shot:
+    kind: country
+    iso: MDA
+  basis: 'Labor force participation rate is the proportion of the population ages 15 and older that is economically
+    active: all people who supply labor for the production of goods and services during a specified period.'
+- text: India has 42%. People there face vast differences in who joins the workforce.
+  shot:
+    kind: country
+    iso: IND
+- text: Nigeria hits 96%. Iraq sits at 15%.
+  shot:
+    kind: group
+    isos:
+    - NGA
+    - IRQ
+- text: Nigeria has 6.4 times Iraq's ratio.
+  shot:
+    kind: country
+    iso: NGA
+- text: The lowest rates on Earth cluster in Afghanistan at 7%, Yemen at 8%, and Iraq at 15%.
+  shot:
+    kind: rank
+    isos:
+    - AFG
+    - YEM
+    - IRQ
+- text: What drives the balance of economic activity where you live?
+  shot:
+    kind: card
+    lines:
+    - Who works in your country?
+    - World Bank Labor Force Participation

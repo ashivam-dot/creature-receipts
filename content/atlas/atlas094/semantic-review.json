@@ -1,0 +1,167 @@
+{
+  "errors": [],
+  "claims": [
+    {
+      "surface": "title",
+      "text": "Places Ranked by Cost of Power Outages",
+      "isos": [],
+      "support": "Indicator measures losses due to electrical outages, as percentage of total annual sales."
+    },
+    {
+      "surface": "hook",
+      "text": "ZERO FINANCIAL LOSSES",
+      "isos": [],
+      "support": "Many countries have 0% losses as per the dataset."
+    },
+    {
+      "surface": "description",
+      "text": "An analysis of the share of sales lost to electrical outages across the globe, based on World Bank data.",
+      "isos": [],
+      "support": "Indicator: IC.FRM.OUTG.ZS, source: World Bank."
+    },
+    {
+      "surface": "beat_0",
+      "text": "Central African Republic loses 9% of annual sales to blackouts. In Germany, it's 0%.",
+      "isos": [
+        "CAF",
+        "DEU"
+      ],
+      "support": "Central African Republic value is 9.0%, Germany value is 0.0%."
+    },
+    {
+      "surface": "beat_1",
+      "text": "Mali matches the peak at 10%, losing a tenth of yearly revenue.",
+      "isos": [
+        "MLI"
+      ],
+      "support": "Mali value is 10.0%, rank 1."
+    },
+    {
+      "surface": "beat_2",
+      "text": "Central African Republic: 9% follows right behind.",
+      "isos": [
+        "CAF"
+      ],
+      "support": "Central African Republic value is 9.0%, rank 3."
+    },
+    {
+      "surface": "beat_3",
+      "text": "Burkina Faso drops significantly to 2.7%.",
+      "isos": [
+        "BFA"
+      ],
+      "support": "Burkina Faso display is 2.7% (exact value 2.727272727)."
+    },
+    {
+      "surface": "beat_4",
+      "text": "Bangladesh and Cameroon share a heavy impact at 2% each.",
+      "isos": [
+        "BGD",
+        "CMR"
+      ],
+      "support": "Bangladesh value is 2.0%, Cameroon value is 2.0%."
+    },
+    {
+      "surface": "beat_5",
+      "text": "The vast majority of firms worldwide report zero financial losses.",
+      "isos": [],
+      "support": "Out of 163 entities, 146 have 0% value."
+    },
+    {
+      "surface": "beat_6",
+      "text": "Zimbabwe sits at the very bottom with 0%.",
+      "isos": [
+        "ZWE"
+      ],
+      "support": "Zimbabwe value is 0.0%."
+    },
+    {
+      "surface": "beat_7",
+      "text": "Does your business lose sales when the lights go out?",
+      "isos": [],
+      "support": "Introductory or closing framing question style."
+    },
+    {
+      "surface": "card_7",
+      "text": "Does your business lose sales? Share of sales lost to outages",
+      "isos": [],
+      "support": "Matches indicator definition."
+    }
+  ],
+  "surface_checks": {
+    "title": {
+      "supported": true,
+      "reason": "Accurately describes ranking of places by electrical outage costs.",
+      "isos": []
+    },
+    "hook": {
+      "supported": true,
+      "reason": "Supported by the numerous countries with 0% losses.",
+      "isos": []
+    },
+    "description": {
+      "supported": true,
+      "reason": "Accurately references World Bank data for share of sales lost to electrical outages.",
+      "isos": []
+    },
+    "beat_0": {
+      "supported": true,
+      "reason": "CAF is 9% (2023) and Germany is 0% (2025).",
+      "isos": [
+        "CAF",
+        "DEU"
+      ]
+    },
+    "beat_1": {
+      "supported": true,
+      "reason": "Mali is 10% (2024), matching the peak rank 1.",
+      "isos": [
+        "MLI"
+      ]
+    },
+    "beat_2": {
+      "supported": true,
+      "reason": "Central African Republic is 9% (2023).",
+      "isos": [
+        "CAF"
+      ]
+    },
+    "beat_3": {
+      "supported": true,
+      "reason": "Burkina Faso is 2.7% (2024).",
+      "isos": [
+        "BFA"
+      ]
+    },
+    "beat_4": {
+      "supported": true,
+      "reason": "Bangladesh is 2% (2022) and Cameroon is 2% (2024).",
+      "isos": [
+        "BGD",
+        "CMR"
+      ]
+    },
+    "beat_5": {
+      "supported": true,
+      "reason": "Most mapped entities in the dataset show 0% losses.",
+      "isos": []
+    },
+    "beat_6": {
+      "supported": true,
+      "reason": "Zimbabwe is 0% (2025).",
+      "isos": [
+        "ZWE"
+      ]
+    },
+    "beat_7": {
+      "supported": true,
+      "reason": "Framing question aligned with indicator.",
+      "isos": []
+    },
+    "card_7": {
+      "supported": true,
+      "reason": "Card text matches indicator definition and theme.",
+      "isos": []
+    }
+  }
+}

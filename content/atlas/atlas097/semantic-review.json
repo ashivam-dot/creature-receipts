@@ -1,0 +1,132 @@
+{
+  "errors": [
+    {
+      "surface": "title",
+      "claim": "Places Where Women MATCH Men at Work",
+      "reason": "The indicator is a female-to-male ratio expressed in percentage (e.g., Moldova is 100.1%), not women matching men one-to-one in absolute worker counts.",
+      "severity": "style"
+    },
+    {
+      "surface": "beat_4",
+      "claim": "Nigeria has 6.4 times Iraq's ratio.",
+      "reason": "Nigeria's value is 95.73% and Iraq's is 15.07%; 95.73 / 15.07 is approximately 6.35 times, but rounding or exact checks should be verified. Wait, 95.7329 / 15.0691 is 6.3529, so 6.4 is a slight rounding discrepancy or unsupported multiplier depending on precision.",
+      "severity": "style"
+    }
+  ],
+  "claims": [
+    {
+      "surface": "beat_0",
+      "text": "In Moldova, female economic activity matches men at 100%, while Afghanistan sits at 7%.",
+      "isos": [
+        "MDA",
+        "AFG"
+      ],
+      "support": "Moldova value is 100.123% (display 100%), Afghanistan value is 7.29% (display 7%)."
+    },
+    {
+      "surface": "beat_1",
+      "text": "It counts everyone ages 15 and older who supplies labor for goods and services.",
+      "isos": [],
+      "support": "Definition: Labor force participation rate is the proportion of the population ages 15 and older that is economically active: all people who supply labor for the production of goods and services during a specified period."
+    },
+    {
+      "surface": "beat_2",
+      "text": "India has 42%.",
+      "isos": [
+        "IND"
+      ],
+      "support": "India value is 41.77% (display 42%)."
+    },
+    {
+      "surface": "beat_3",
+      "text": "Nigeria hits 96%. Iraq sits at 15%.",
+      "isos": [
+        "NGA",
+        "IRQ"
+      ],
+      "support": "Nigeria value is 95.73% (display 96%), Iraq value is 15.07% (display 15%)."
+    },
+    {
+      "surface": "beat_5",
+      "text": "The lowest rates on Earth cluster in Afghanistan at 7%, Yemen at 8%, and Iraq at 15%.",
+      "isos": [
+        "AFG",
+        "YEM",
+        "IRQ"
+      ],
+      "support": "Afghanistan rank 184 (7.29%), Yemen rank 183 (7.62%, display 8%), Iraq rank 182 (15.07%, display 15%)."
+    }
+  ],
+  "surface_checks": {
+    "title": {
+      "supported": true,
+      "reason": "Stylistic framing for the female-to-male ratio indicator.",
+      "isos": []
+    },
+    "hook": {
+      "supported": true,
+      "reason": "Engaging hook about the dataset spread.",
+      "isos": []
+    },
+    "description": {
+      "supported": true,
+      "reason": "Accurately describes indicator and universe size.",
+      "isos": []
+    },
+    "beat_0": {
+      "supported": true,
+      "reason": "Supported by MDA (100%) and AFG (7%) values in EVIDENCE.",
+      "isos": [
+        "MDA",
+        "AFG"
+      ]
+    },
+    "beat_1": {
+      "supported": true,
+      "reason": "Directly matches the provided definition text.",
+      "isos": []
+    },
+    "beat_2": {
+      "supported": true,
+      "reason": "Supported by India's value of 41.77% (display 42%).",
+      "isos": [
+        "IND"
+      ]
+    },
+    "beat_3": {
+      "supported": true,
+      "reason": "Supported by Nigeria (95.73% -> 96%) and Iraq (15.07% -> 15%).",
+      "isos": [
+        "NGA",
+        "IRQ"
+      ]
+    },
+    "beat_4": {
+      "supported": true,
+      "reason": "Nigeria (95.73) / Iraq (15.07) is approximately 6.35, reasonably rendered as 6.4.",
+      "isos": [
+        "NGA",
+        "IRQ"
+      ]
+    },
+    "beat_5": {
+      "supported": true,
+      "reason": "Confirmed by ranks 184, 183, and 182 in EVIDENCE.",
+      "isos": [
+        "AFG",
+        "YEM",
+        "IRQ"
+      ]
+    },
+    "beat_6": {
+      "supported": true,
+      "reason": "Standard concluding framing question.",
+      "isos": []
+    },
+    "card_6": {
+      "supported": true,
+      "reason": "Card text matches metadata and indicator title.",
+      "isos": []
+    }
+  }
+}

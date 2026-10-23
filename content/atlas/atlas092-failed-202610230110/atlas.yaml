@@ -1,0 +1,77 @@
+id: atlas092
+title: The Cities Where Almost Everyone Has SOAP
+hook_text: HYGIENE GAP
+description: In some urban areas, fewer than six percent of people have access to basic handwashing facilities with
+  soap and water.
+hashtags:
+- '#health'
+- '#globalhealth'
+- '#maps'
+tags:
+- health
+- urban population with handwashing facility
+- Turkmenistan
+- Liberia
+- world map
+- data
+sources:
+- https://data.worldbank.org/indicator/SH.STA.HYGN.UR.ZS
+dataset:
+  kind: worldbank
+  indicator: SH.STA.HYGN.UR.ZS
+  label: Urban population with handwashing facility
+  unit: '%'
+  source: World Bank
+  min_year: 2019
+scale:
+  kind: threshold
+  at: 50.0
+  labels:
+  - 50% and above
+  - Below 50%
+value_format: '{v:.1f}%'
+beats:
+- text: Turkmenistan has 100% urban handwashing access. In Liberia, just 5.6%.
+  shot:
+    callouts:
+    - TKM
+    - LBR
+- text: Turkmenistan is the world's highest. Every city home there has a sink and soap.
+  shot:
+    kind: country
+    iso: TKM
+- text: It counts homes with a fixed or mobile sink and soap on the premises.
+  shot:
+    callouts:
+    - TKM
+    - LBR
+  basis: The percentage of people living in households that have a handwashing facility with soap and water available
+    on the premises. Handwashing facilities may be fixed or mobile and include a sink with tap water, buckets with
+    taps, tippy-taps, and jugs or basins designated for handwashing. Soap includes bar soap, liquid soap, powder
+    detergent, and soapy water but does not include ash, soil, sand or other handwashing agents.
+- text: Mexico has 98.5% access, 18 times as high as Liberia. China has 98.3%.
+  shot:
+    kind: group
+    isos:
+    - MEX
+    - LBR
+    - CHN
+- text: India has 96.1% in its cities. Nigeria has 38.2%.
+  shot:
+    kind: group
+    isos:
+    - IND
+    - NGA
+- text: At the bottom, Sierra Leone has 21.2%, Ethiopia has 14%, and Liberia has 5.6%.
+  shot:
+    kind: rank
+    isos:
+    - SLE
+    - ETH
+    - LBR
+- text: Does your city have reliable soap and water?
+  shot:
+    kind: card
+    lines:
+    - Reliable soap?
+    - Urban population with handwashing facility (%)

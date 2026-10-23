@@ -1,0 +1,1890 @@
+{
+  "version": 1,
+  "evidence": {
+    "version": 1,
+    "indicator": "SL.TLF.CACT.FM.ZS",
+    "definition": "Labor force participation rate is the proportion of the population ages 15 and older that is economically active: all people who supply labor for the production of goods and services during a specified period.",
+    "source": "https://data.worldbank.org/indicator/SL.TLF.CACT.FM.ZS",
+    "source_response_sha256": "a683a1108c35ecb0d7738f0ac83293b9a16b73cdaf4416289ce3db7360b4615a",
+    "source_organization": "ILO Modelled Estimates database (ILOEST), International Labour Organization (ILO), uri: https://ilostat.ilo.org/data/bulk/, publisher: ILOSTAT, type: estimates based on external database;\nStaff estimates, World Bank (WB)",
+    "year_label": "latest available 2021–2025",
+    "universe": "mapped countries and territories with data",
+    "count": 184,
+    "threshold": null,
+    "at_or_above": null,
+    "entities": {
+      "AFG": {
+        "name": "Afghanistan",
+        "value": 7.29071100917431,
+        "display": "7%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 184
+      },
+      "ALB": {
+        "name": "Albania",
+        "value": 83.4073884189239,
+        "display": "83%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 73
+      },
+      "DZA": {
+        "name": "Algeria",
+        "value": 21.2953063590778,
+        "display": "21%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 179
+      },
+      "AGO": {
+        "name": "Angola",
+        "value": 93.2319568332322,
+        "display": "93%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 14
+      },
+      "ARG": {
+        "name": "Argentina",
+        "value": 73.2163040899767,
+        "display": "73%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 117
+      },
+      "ARM": {
+        "name": "Armenia",
+        "value": 73.4400621386036,
+        "display": "73%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 116
+      },
+      "AUS": {
+        "name": "Australia",
+        "value": 88.4388484119686,
+        "display": "88%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 32
+      },
+      "AUT": {
+        "name": "Austria",
+        "value": 84.1649087407136,
+        "display": "84%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 62
+      },
+      "AZE": {
+        "name": "Azerbaijan",
+        "value": 92.0312026658588,
+        "display": "92%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 16
+      },
+      "BHS": {
+        "name": "Bahamas, The",
+        "value": 91.6201406790419,
+        "display": "92%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 20
+      },
+      "BHR": {
+        "name": "Bahrain",
+        "value": 49.2529491912287,
+        "display": "49%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 160
+      },
+      "BGD": {
+        "name": "Bangladesh",
+        "value": 48.0685040545247,
+        "display": "48%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 161
+      },
+      "BRB": {
+        "name": "Barbados",
+        "value": 88.7747828996174,
+        "display": "89%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 29
+      },
+      "BLR": {
+        "name": "Belarus",
+        "value": 81.2634200807352,
+        "display": "81%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 82
+      },
+      "BEL": {
+        "name": "Belgium",
+        "value": 84.4430119930111,
+        "display": "84%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 59
+      },
+      "BLZ": {
+        "name": "Belize",
+        "value": 64.8678829162072,
+        "display": "65%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 141
+      },
+      "BEN": {
+        "name": "Benin",
+        "value": 96.9132778049975,
+        "display": "97%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 3
+      },
+      "BTN": {
+        "name": "Bhutan",
+        "value": 78.9869608826479,
+        "display": "79%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 95
+      },
+      "BOL": {
+        "name": "Bolivia",
+        "value": 86.2966164923791,
+        "display": "86%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 51
+      },
+      "BIH": {
+        "name": "Bosnia and Herzegovina",
+        "value": 65.4256560738938,
+        "display": "65%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 137
+      },
+      "BWA": {
+        "name": "Botswana",
+        "value": 86.1174943902241,
+        "display": "86%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 52
+      },
+      "BRA": {
+        "name": "Brazil",
+        "value": 72.7957912526748,
+        "display": "73%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 118
+      },
+      "BRN": {
+        "name": "Brunei Darussalam",
+        "value": 74.7726710804648,
+        "display": "75%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 110
+      },
+      "BGR": {
+        "name": "Bulgaria",
+        "value": 80.7799621564414,
+        "display": "81%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 85
+      },
+      "BFA": {
+        "name": "Burkina Faso",
+        "value": 84.1584028370657,
+        "display": "84%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 63
+      },
+      "BDI": {
+        "name": "Burundi",
+        "value": 103.283054656949,
+        "display": "103%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 1
+      },
+      "CPV": {
+        "name": "Cabo Verde",
+        "value": 79.6094452418884,
+        "display": "80%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 90
+      },
+      "KHM": {
+        "name": "Cambodia",
+        "value": 88.0830372597249,
+        "display": "88%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 34
+      },
+      "CMR": {
+        "name": "Cameroon",
+        "value": 76.5407554671968,
+        "display": "77%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 106
+      },
+      "CAN": {
+        "name": "Canada",
+        "value": 87.3319117455068,
+        "display": "87%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 42
+      },
+      "CAF": {
+        "name": "Central African Republic",
+        "value": 79.1048383198801,
+        "display": "79%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 93
+      },
+      "TCD": {
+        "name": "Chad",
+        "value": 65.9559930838307,
+        "display": "66%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 136
+      },
+      "CHL": {
+        "name": "Chile",
+        "value": 73.5287166154573,
+        "display": "74%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 115
+      },
+      "CHN": {
+        "name": "China",
+        "value": 84.6773847189017,
+        "display": "85%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 58
+      },
+      "COL": {
+        "name": "Colombia",
+        "value": 68.2009142072027,
+        "display": "68%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 130
+      },
+      "COM": {
+        "name": "Comoros",
+        "value": 74.5890861275477,
+        "display": "75%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 112
+      },
+      "COD": {
+        "name": "Congo, Dem. Rep.",
+        "value": 92.5231128264967,
+        "display": "93%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 15
+      },
+      "COG": {
+        "name": "Congo, Rep.",
+        "value": 93.5436934752218,
+        "display": "94%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 12
+      },
+      "CRI": {
+        "name": "Costa Rica",
+        "value": 65.9628451019179,
+        "display": "66%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 135
+      },
+      "CIV": {
+        "name": "Cote d'Ivoire",
+        "value": 79.9048463833562,
+        "display": "80%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 89
+      },
+      "HRV": {
+        "name": "Croatia",
+        "value": 82.5944457035268,
+        "display": "83%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 79
+      },
+      "CUB": {
+        "name": "Cuba",
+        "value": 61.4285275225128,
+        "display": "61%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 147
+      },
+      "CYP": {
+        "name": "Cyprus",
+        "value": 84.2318912373404,
+        "display": "84%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 61
+      },
+      "CZE": {
+        "name": "Czechia",
+        "value": 79.1753065939925,
+        "display": "79%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 91
+      },
+      "DNK": {
+        "name": "Denmark",
+        "value": 87.8776489635433,
+        "display": "88%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 37
+      },
+      "DJI": {
+        "name": "Djibouti",
+        "value": 43.4631354505667,
+        "display": "43%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 166
+      },
+      "DOM": {
+        "name": "Dominican Republic",
+        "value": 70.2658459926663,
+        "display": "70%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 124
+      },
+      "ECU": {
+        "name": "Ecuador",
+        "value": 68.1505958266119,
+        "display": "68%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 131
+      },
+      "EGY": {
+        "name": "Egypt, Arab Rep.",
+        "value": 26.1721076665627,
+        "display": "26%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 176
+      },
+      "SLV": {
+        "name": "El Salvador",
+        "value": 63.4845857168742,
+        "display": "63%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 143
+      },
+      "GNQ": {
+        "name": "Equatorial Guinea",
+        "value": 78.2475499308478,
+        "display": "78%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 100
+      },
+      "ERI": {
+        "name": "Eritrea",
+        "value": 86.5583667066751,
+        "display": "87%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 48
+      },
+      "EST": {
+        "name": "Estonia",
+        "value": 87.3458514158037,
+        "display": "87%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 41
+      },
+      "SWZ": {
+        "name": "Eswatini",
+        "value": 89.8032465248857,
+        "display": "90%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 24
+      },
+      "ETH": {
+        "name": "Ethiopia",
+        "value": 74.3298916636997,
+        "display": "74%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 113
+      },
+      "FJI": {
+        "name": "Fiji",
+        "value": 50.2384467643101,
+        "display": "50%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 159
+      },
+      "FIN": {
+        "name": "Finland",
+        "value": 89.702753342437,
+        "display": "90%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 25
+      },
+      "FRA": {
+        "name": "France",
+        "value": 86.448362720403,
+        "display": "86%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 49
+      },
+      "PYF": {
+        "name": "French Polynesia",
+        "value": 80.3335458194787,
+        "display": "80%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 88
+      },
+      "GAB": {
+        "name": "Gabon",
+        "value": 69.2293620701124,
+        "display": "69%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 128
+      },
+      "GMB": {
+        "name": "Gambia, The",
+        "value": 91.8196691510634,
+        "display": "92%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 19
+      },
+      "GEO": {
+        "name": "Georgia",
+        "value": 77.1471724813585,
+        "display": "77%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 105
+      },
+      "DEU": {
+        "name": "Germany",
+        "value": 83.701214158113,
+        "display": "84%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 66
+      },
+      "GHA": {
+        "name": "Ghana",
+        "value": 89.3662780356075,
+        "display": "89%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 27
+      },
+      "GRC": {
+        "name": "Greece",
+        "value": 74.6224271585138,
+        "display": "75%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 111
+      },
+      "GUM": {
+        "name": "Guam",
+        "value": 83.1788079470199,
+        "display": "83%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 75
+      },
+      "GTM": {
+        "name": "Guatemala",
+        "value": 46.9001639865874,
+        "display": "47%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 162
+      },
+      "GIN": {
+        "name": "Guinea",
+        "value": 67.5794311068854,
+        "display": "68%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 134
+      },
+      "GNB": {
+        "name": "Guinea-Bissau",
+        "value": 86.6416601994769,
+        "display": "87%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 47
+      },
+      "GUY": {
+        "name": "Guyana",
+        "value": 74.7777198717645,
+        "display": "75%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 109
+      },
+      "HTI": {
+        "name": "Haiti",
+        "value": 83.6456705332435,
+        "display": "84%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 68
+      },
+      "HND": {
+        "name": "Honduras",
+        "value": 53.8339157748739,
+        "display": "54%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 154
+      },
+      "HKG": {
+        "name": "Hong Kong SAR, China",
+        "value": 83.4581863289997,
+        "display": "83%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 70
+      },
+      "HUN": {
+        "name": "Hungary",
+        "value": 80.4538788570074,
+        "display": "80%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 86
+      },
+      "ISL": {
+        "name": "Iceland",
+        "value": 87.9426209945862,
+        "display": "88%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 35
+      },
+      "IND": {
+        "name": "India",
+        "value": 41.7724128157891,
+        "display": "42%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 167
+      },
+      "IDN": {
+        "name": "Indonesia",
+        "value": 65.2908432387758,
+        "display": "65%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 138
+      },
+      "IRN": {
+        "name": "Iran, Islamic Rep.",
+        "value": 20.8405835898809,
+        "display": "21%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 180
+      },
+      "IRQ": {
+        "name": "Iraq",
+        "value": 15.069097121757,
+        "display": "15%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 182
+      },
+      "IRL": {
+        "name": "Ireland",
+        "value": 85.2267054611841,
+        "display": "85%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 55
+      },
+      "ISR": {
+        "name": "Israel",
+        "value": 90.5242961175633,
+        "display": "91%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 22
+      },
+      "ITA": {
+        "name": "Italy",
+        "value": 69.9991422935071,
+        "display": "70%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 126
+      },
+      "JAM": {
+        "name": "Jamaica",
+        "value": 82.572016191362,
+        "display": "83%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 80
+      },
+      "JPN": {
+        "name": "Japan",
+        "value": 78.212876689331,
+        "display": "78%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 101
+      },
+      "JOR": {
+        "name": "Jordan",
+        "value": 25.6574840331023,
+        "display": "26%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 177
+      },
+      "KAZ": {
+        "name": "Kazakhstan",
+        "value": 85.3842694179058,
+        "display": "85%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 53
+      },
+      "KEN": {
+        "name": "Kenya",
+        "value": 87.7327766179541,
+        "display": "88%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 39
+      },
+      "PRK": {
+        "name": "Korea, Dem. People's Rep.",
+        "value": 89.5754809410192,
+        "display": "90%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 26
+      },
+      "KOR": {
+        "name": "Korea, Rep.",
+        "value": 78.8616982861587,
+        "display": "79%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 96
+      },
+      "KWT": {
+        "name": "Kuwait",
+        "value": 53.2978014656895,
+        "display": "53%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 155
+      },
+      "KGZ": {
+        "name": "Kyrgyz Republic",
+        "value": 61.8185892767102,
+        "display": "62%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 145
+      },
+      "LAO": {
+        "name": "Lao PDR",
+        "value": 87.1596652932931,
+        "display": "87%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 45
+      },
+      "LVA": {
+        "name": "Latvia",
+        "value": 82.6509088189094,
+        "display": "83%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 78
+      },
+      "LBN": {
+        "name": "Lebanon",
+        "value": 33.3238410695283,
+        "display": "33%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 172
+      },
+      "LSO": {
+        "name": "Lesotho",
+        "value": 71.8666407639314,
+        "display": "72%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 120
+      },
+      "LBR": {
+        "name": "Liberia",
+        "value": 88.6739957404375,
+        "display": "89%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 30
+      },
+      "LBY": {
+        "name": "Libya",
+        "value": 52.7540171076825,
+        "display": "53%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 156
+      },
+      "LTU": {
+        "name": "Lithuania",
+        "value": 83.6362054212412,
+        "display": "84%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 69
+      },
+      "LUX": {
+        "name": "Luxembourg",
+        "value": 87.7505839962136,
+        "display": "88%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 38
+      },
+      "MDG": {
+        "name": "Madagascar",
+        "value": 94.1187822099121,
+        "display": "94%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 10
+      },
+      "MWI": {
+        "name": "Malawi",
+        "value": 86.3948204686526,
+        "display": "86%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 50
+      },
+      "MYS": {
+        "name": "Malaysia",
+        "value": 65.1967529762281,
+        "display": "65%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 140
+      },
+      "MLI": {
+        "name": "Mali",
+        "value": 65.2193231467996,
+        "display": "65%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 139
+      },
+      "MLT": {
+        "name": "Malta",
+        "value": 77.9860237596087,
+        "display": "78%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 103
+      },
+      "MRT": {
+        "name": "Mauritania",
+        "value": 46.2437955946514,
+        "display": "46%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 163
+      },
+      "MUS": {
+        "name": "Mauritius",
+        "value": 68.1230354092808,
+        "display": "68%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 132
+      },
+      "MEX": {
+        "name": "Mexico",
+        "value": 61.5330748382244,
+        "display": "62%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 146
+      },
+      "MDA": {
+        "name": "Moldova",
+        "value": 100.123198737559,
+        "display": "100%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 2
+      },
+      "MNG": {
+        "name": "Mongolia",
+        "value": 75.4328100033716,
+        "display": "75%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 108
+      },
+      "MNE": {
+        "name": "Montenegro",
+        "value": 78.3039193215677,
+        "display": "78%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 99
+      },
+      "MAR": {
+        "name": "Morocco",
+        "value": 28.9395965265431,
+        "display": "29%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 174
+      },
+      "MOZ": {
+        "name": "Mozambique",
+        "value": 95.7425668794555,
+        "display": "96%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 5
+      },
+      "MMR": {
+        "name": "Myanmar",
+        "value": 58.7726098191215,
+        "display": "59%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 148
+      },
+      "NAM": {
+        "name": "Namibia",
+        "value": 87.1147348550943,
+        "display": "87%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 46
+      },
+      "NPL": {
+        "name": "Nepal",
+        "value": 51.9318740312276,
+        "display": "52%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 157
+      },
+      "NLD": {
+        "name": "Netherlands",
+        "value": 87.2280643187003,
+        "display": "87%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 43
+      },
+      "NCL": {
+        "name": "New Caledonia",
+        "value": 82.3475344277099,
+        "display": "82%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 81
+      },
+      "NZL": {
+        "name": "New Zealand",
+        "value": 88.4103346311832,
+        "display": "88%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 33
+      },
+      "NIC": {
+        "name": "Nicaragua",
+        "value": 62.6886665525086,
+        "display": "63%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 144
+      },
+      "NER": {
+        "name": "Niger",
+        "value": 84.1302136317396,
+        "display": "84%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 64
+      },
+      "NGA": {
+        "name": "Nigeria",
+        "value": 95.7329442328909,
+        "display": "96%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 6
+      },
+      "MKD": {
+        "name": "North Macedonia",
+        "value": 69.1193117500566,
+        "display": "69%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 129
+      },
+      "NOR": {
+        "name": "Norway",
+        "value": 89.8585963845831,
+        "display": "90%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 23
+      },
+      "OMN": {
+        "name": "Oman",
+        "value": 34.0060842717036,
+        "display": "34%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 171
+      },
+      "PAK": {
+        "name": "Pakistan",
+        "value": 30.005365677136,
+        "display": "30%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 173
+      },
+      "PAN": {
+        "name": "Panama",
+        "value": 70.5537860885647,
+        "display": "71%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 123
+      },
+      "PNG": {
+        "name": "Papua New Guinea",
+        "value": 95.4188727422928,
+        "display": "95%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 8
+      },
+      "PRY": {
+        "name": "Paraguay",
+        "value": 72.3111987942211,
+        "display": "72%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 119
+      },
+      "PER": {
+        "name": "Peru",
+        "value": 80.4303202670953,
+        "display": "80%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 87
+      },
+      "PHL": {
+        "name": "Philippines",
+        "value": 69.6745970412895,
+        "display": "70%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 127
+      },
+      "POL": {
+        "name": "Poland",
+        "value": 78.6876248265768,
+        "display": "79%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 97
+      },
+      "PRT": {
+        "name": "Portugal",
+        "value": 87.926733087608,
+        "display": "88%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 36
+      },
+      "PRI": {
+        "name": "Puerto Rico (US)",
+        "value": 74.3063956770707,
+        "display": "74%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 114
+      },
+      "QAT": {
+        "name": "Qatar",
+        "value": 64.7271205065146,
+        "display": "65%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 142
+      },
+      "ROU": {
+        "name": "Romania",
+        "value": 67.7804798962387,
+        "display": "68%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 133
+      },
+      "RUS": {
+        "name": "Russian Federation",
+        "value": 79.0212525533487,
+        "display": "79%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 94
+      },
+      "RWA": {
+        "name": "Rwanda",
+        "value": 81.160241339263,
+        "display": "81%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 83
+      },
+      "WSM": {
+        "name": "Samoa",
+        "value": 56.3997651462332,
+        "display": "56%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 151
+      },
+      "STP": {
+        "name": "Sao Tome and Principe",
+        "value": 94.9734897507619,
+        "display": "95%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 9
+      },
+      "SAU": {
+        "name": "Saudi Arabia",
+        "value": 40.2887280843864,
+        "display": "40%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 169
+      },
+      "SEN": {
+        "name": "Senegal",
+        "value": 58.1594606522699,
+        "display": "58%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 149
+      },
+      "SRB": {
+        "name": "Serbia",
+        "value": 79.1116121758737,
+        "display": "79%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 92
+      },
+      "SLE": {
+        "name": "Sierra Leone",
+        "value": 93.5329514971362,
+        "display": "94%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 13
+      },
+      "SGP": {
+        "name": "Singapore",
+        "value": 84.3403385872738,
+        "display": "84%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 60
+      },
+      "SVK": {
+        "name": "Slovak Republic",
+        "value": 83.4296870270598,
+        "display": "83%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 72
+      },
+      "SVN": {
+        "name": "Slovenia",
+        "value": 83.2608937924886,
+        "display": "83%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 74
+      },
+      "SLB": {
+        "name": "Solomon Islands",
+        "value": 95.53186058384,
+        "display": "96%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 7
+      },
+      "SOM": {
+        "name": "Somalia, Fed. Rep.",
+        "value": 43.819725227037,
+        "display": "44%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 165
+      },
+      "ZAF": {
+        "name": "South Africa",
+        "value": 80.7933397042388,
+        "display": "81%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 84
+      },
+      "SSD": {
+        "name": "South Sudan",
+        "value": 91.851300921214,
+        "display": "92%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 18
+      },
+      "ESP": {
+        "name": "Spain",
+        "value": 84.8867105897477,
+        "display": "85%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 56
+      },
+      "LKA": {
+        "name": "Sri Lanka",
+        "value": 45.72979991737,
+        "display": "46%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 164
+      },
+      "LCA": {
+        "name": "St. Lucia",
+        "value": 82.9042913117319,
+        "display": "83%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 77
+      },
+      "VCT": {
+        "name": "St. Vincent and the Grenadines",
+        "value": 77.6300782632635,
+        "display": "78%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 104
+      },
+      "SDN": {
+        "name": "Sudan",
+        "value": 23.4423916040812,
+        "display": "23%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 178
+      },
+      "SUR": {
+        "name": "Suriname",
+        "value": 71.4433416046319,
+        "display": "71%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 122
+      },
+      "SWE": {
+        "name": "Sweden",
+        "value": 90.986648529564,
+        "display": "91%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 21
+      },
+      "CHE": {
+        "name": "Switzerland",
+        "value": 87.1739191347474,
+        "display": "87%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 44
+      },
+      "SYR": {
+        "name": "Syrian Arab Republic",
+        "value": 20.7124955245256,
+        "display": "21%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 181
+      },
+      "TJK": {
+        "name": "Tajikistan",
+        "value": 39.2553019845467,
+        "display": "39%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 170
+      },
+      "TZA": {
+        "name": "Tanzania",
+        "value": 91.954733924358,
+        "display": "92%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 17
+      },
+      "THA": {
+        "name": "Thailand",
+        "value": 78.6372547712087,
+        "display": "79%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 98
+      },
+      "TLS": {
+        "name": "Timor-Leste",
+        "value": 85.3682505847994,
+        "display": "85%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 54
+      },
+      "TGO": {
+        "name": "Togo",
+        "value": 95.9282532477431,
+        "display": "96%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 4
+      },
+      "TON": {
+        "name": "Tonga",
+        "value": 71.8025671024298,
+        "display": "72%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 121
+      },
+      "TTO": {
+        "name": "Trinidad and Tobago",
+        "value": 70.1437528449554,
+        "display": "70%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 125
+      },
+      "TUN": {
+        "name": "Tunisia",
+        "value": 40.8507161247553,
+        "display": "41%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 168
+      },
+      "TUR": {
+        "name": "Turkiye",
+        "value": 51.6713731272692,
+        "display": "52%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 158
+      },
+      "TKM": {
+        "name": "Turkmenistan",
+        "value": 82.9472496963387,
+        "display": "83%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 76
+      },
+      "UGA": {
+        "name": "Uganda",
+        "value": 89.3114529429834,
+        "display": "89%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 28
+      },
+      "UKR": {
+        "name": "Ukraine",
+        "value": 75.9784182967007,
+        "display": "76%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 107
+      },
+      "ARE": {
+        "name": "United Arab Emirates",
+        "value": 57.9213544511196,
+        "display": "58%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 150
+      },
+      "GBR": {
+        "name": "United Kingdom",
+        "value": 87.4031953167876,
+        "display": "87%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 40
+      },
+      "USA": {
+        "name": "United States",
+        "value": 84.0212949983596,
+        "display": "84%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 65
+      },
+      "URY": {
+        "name": "Uruguay",
+        "value": 78.0051499339228,
+        "display": "78%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 102
+      },
+      "UZB": {
+        "name": "Uzbekistan",
+        "value": 55.696373743795,
+        "display": "56%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 152
+      },
+      "VUT": {
+        "name": "Vanuatu",
+        "value": 84.697995106917,
+        "display": "85%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 57
+      },
+      "VEN": {
+        "name": "Venezuela, RB",
+        "value": 54.941279267805,
+        "display": "55%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 153
+      },
+      "VNM": {
+        "name": "Viet Nam",
+        "value": 88.6496482516036,
+        "display": "89%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 31
+      },
+      "VIR": {
+        "name": "Virgin Islands (U.S.)",
+        "value": 93.9249924351649,
+        "display": "94%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 11
+      },
+      "PSE": {
+        "name": "West Bank and Gaza",
+        "value": 26.2625702198488,
+        "display": "26%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 175
+      },
+      "YEM": {
+        "name": "Yemen, Rep.",
+        "value": 7.61567231213967,
+        "display": "8%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 183
+      },
+      "ZMB": {
+        "name": "Zambia",
+        "value": 83.4358549713137,
+        "display": "83%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 71
+      },
+      "ZWE": {
+        "name": "Zimbabwe",
+        "value": 83.6946568997092,
+        "display": "84%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 67
+      }
+    }
+  },
+  "review": {
+    "errors": [],
+    "claims": [
+      {
+        "surface": "beat_0",
+        "text": "In Moldova, female economic activity matches men at 100%, while Afghanistan sits at 7%.",
+        "isos": [
+          "MDA",
+          "AFG"
+        ],
+        "support": "Moldova value is 100.123% (display 100%), Afghanistan value is 7.29% (display 7%).",
+        "evidence": {
+          "MDA": {
+            "name": "Moldova",
+            "value": 100.123198737559,
+            "display": "100%",
+            "year": 2025,
+            "unit": "%",
+            "rank": 2
+          },
+          "AFG": {
+            "name": "Afghanistan",
+            "value": 7.29071100917431,
+            "display": "7%",
+            "year": 2025,
+            "unit": "%",
+            "rank": 184
+          }
+        }
+      },
+      {
+        "surface": "beat_1",
+        "text": "It counts everyone ages 15 and older who supplies labor for goods and services.",
+        "isos": [],
+        "support": "Definition: Labor force participation rate is the proportion of the population ages 15 and older that is economically active: all people who supply labor for the production of goods and services during a specified period.",
+        "evidence": {}
+      },
+      {
+        "surface": "beat_2",
+        "text": "India has 42%.",
+        "isos": [
+          "IND"
+        ],
+        "support": "India value is 41.77% (display 42%).",
+        "evidence": {
+          "IND": {
+            "name": "India",
+            "value": 41.7724128157891,
+            "display": "42%",
+            "year": 2025,
+            "unit": "%",
+            "rank": 167
+          }
+        }
+      },
+      {
+        "surface": "beat_3",
+        "text": "Nigeria hits 96%. Iraq sits at 15%.",
+        "isos": [
+          "NGA",
+          "IRQ"
+        ],
+        "support": "Nigeria value is 95.73% (display 96%), Iraq value is 15.07% (display 15%).",
+        "evidence": {
+          "NGA": {
+            "name": "Nigeria",
+            "value": 95.7329442328909,
+            "display": "96%",
+            "year": 2025,
+            "unit": "%",
+            "rank": 6
+          },
+          "IRQ": {
+            "name": "Iraq",
+            "value": 15.069097121757,
+            "display": "15%",
+            "year": 2025,
+            "unit": "%",
+            "rank": 182
+          }
+        }
+      },
+      {
+        "surface": "beat_5",
+        "text": "The lowest rates on Earth cluster in Afghanistan at 7%, Yemen at 8%, and Iraq at 15%.",
+        "isos": [
+          "AFG",
+          "YEM",
+          "IRQ"
+        ],
+        "support": "Afghanistan rank 184 (7.29%), Yemen rank 183 (7.62%, display 8%), Iraq rank 182 (15.07%, display 15%).",
+        "evidence": {
+          "AFG": {
+            "name": "Afghanistan",
+            "value": 7.29071100917431,
+            "display": "7%",
+            "year": 2025,
+            "unit": "%",
+            "rank": 184
+          },
+          "YEM": {
+            "name": "Yemen, Rep.",
+            "value": 7.61567231213967,
+            "display": "8%",
+            "year": 2025,
+            "unit": "%",
+            "rank": 183
+          },
+          "IRQ": {
+            "name": "Iraq",
+            "value": 15.069097121757,
+            "display": "15%",
+            "year": 2025,
+            "unit": "%",
+            "rank": 182
+          }
+        }
+      },
+      {
+        "surface": "title",
+        "text": "Places Where Women MATCH Men at Work",
+        "isos": [],
+        "support": "Stylistic framing for the female-to-male ratio indicator.",
+        "method": "complete-surface-check",
+        "evidence": {}
+      },
+      {
+        "surface": "hook",
+        "text": "THE WIDEST GAP",
+        "isos": [],
+        "support": "Engaging hook about the dataset spread.",
+        "method": "complete-surface-check",
+        "evidence": {}
+      },
+      {
+        "surface": "description",
+        "text": "Female-to-male labor force ratio across 184 countries and territories.",
+        "isos": [],
+        "support": "Accurately describes indicator and universe size.",
+        "method": "complete-surface-check",
+        "evidence": {}
+      },
+      {
+        "surface": "beat_0",
+        "text": "In Moldova, female economic activity matches men at 100%, while Afghanistan sits at 7%.",
+        "isos": [
+          "MDA",
+          "AFG"
+        ],
+        "support": "Supported by MDA (100%) and AFG (7%) values in EVIDENCE.",
+        "method": "complete-surface-check",
+        "evidence": {
+          "MDA": {
+            "name": "Moldova",
+            "value": 100.123198737559,
+            "display": "100%",
+            "year": 2025,
+            "unit": "%",
+            "rank": 2
+          },
+          "AFG": {
+            "name": "Afghanistan",
+            "value": 7.29071100917431,
+            "display": "7%",
+            "year": 2025,
+            "unit": "%",
+            "rank": 184
+          }
+        }
+      },
+      {
+        "surface": "beat_1",
+        "text": "It counts everyone ages 15 and older who supplies labor for goods and services.",
+        "isos": [],
+        "support": "Directly matches the provided definition text.",
+        "method": "complete-surface-check",
+        "evidence": {}
+      },
+      {
+        "surface": "beat_2",
+        "text": "India has 42%. People there face vast differences in who joins the workforce.",
+        "isos": [
+          "IND"
+        ],
+        "support": "Supported by India's value of 41.77% (display 42%).",
+        "method": "complete-surface-check",
+        "evidence": {
+          "IND": {
+            "name": "India",
+            "value": 41.7724128157891,
+            "display": "42%",
+            "year": 2025,
+            "unit": "%",
+            "rank": 167
+          }
+        }
+      },
+      {
+        "surface": "beat_3",
+        "text": "Nigeria hits 96%. Iraq sits at 15%.",
+        "isos": [
+          "NGA",
+          "IRQ"
+        ],
+        "support": "Supported by Nigeria (95.73% -> 96%) and Iraq (15.07% -> 15%).",
+        "method": "complete-surface-check",
+        "evidence": {
+          "NGA": {
+            "name": "Nigeria",
+            "value": 95.7329442328909,
+            "display": "96%",
+            "year": 2025,
+            "unit": "%",
+            "rank": 6
+          },
+          "IRQ": {
+            "name": "Iraq",
+            "value": 15.069097121757,
+            "display": "15%",
+            "year": 2025,
+            "unit": "%",
+            "rank": 182
+          }
+        }
+      },
+      {
+        "surface": "beat_4",
+        "text": "Nigeria has 6.4 times Iraq's ratio.",
+        "isos": [
+          "NGA",
+          "IRQ"
+        ],
+        "support": "Nigeria (95.73) / Iraq (15.07) is approximately 6.35, reasonably rendered as 6.4.",
+        "method": "complete-surface-check",
+        "evidence": {
+          "NGA": {
+            "name": "Nigeria",
+            "value": 95.7329442328909,
+            "display": "96%",
+            "year": 2025,
+            "unit": "%",
+            "rank": 6
+          },
+          "IRQ": {
+            "name": "Iraq",
+            "value": 15.069097121757,
+            "display": "15%",
+            "year": 2025,
+            "unit": "%",
+            "rank": 182
+          }
+        }
+      },
+      {
+        "surface": "beat_5",
+        "text": "The lowest rates on Earth cluster in Afghanistan at 7%, Yemen at 8%, and Iraq at 15%.",
+        "isos": [
+          "AFG",
+          "YEM",
+          "IRQ"
+        ],
+        "support": "Confirmed by ranks 184, 183, and 182 in EVIDENCE.",
+        "method": "complete-surface-check",
+        "evidence": {
+          "AFG": {
+            "name": "Afghanistan",
+            "value": 7.29071100917431,
+            "display": "7%",
+            "year": 2025,
+            "unit": "%",
+            "rank": 184
+          },
+          "YEM": {
+            "name": "Yemen, Rep.",
+            "value": 7.61567231213967,
+            "display": "8%",
+            "year": 2025,
+            "unit": "%",
+            "rank": 183
+          },
+          "IRQ": {
+            "name": "Iraq",
+            "value": 15.069097121757,
+            "display": "15%",
+            "year": 2025,
+            "unit": "%",
+            "rank": 182
+          }
+        }
+      },
+      {
+        "surface": "beat_6",
+        "text": "What drives the balance of economic activity where you live?",
+        "isos": [],
+        "support": "Standard concluding framing question.",
+        "method": "complete-surface-check",
+        "evidence": {}
+      },
+      {
+        "surface": "card_6",
+        "text": [
+          "Who works in your country?",
+          "World Bank Labor Force Participation"
+        ],
+        "isos": [],
+        "support": "Card text matches metadata and indicator title.",
+        "method": "complete-surface-check",
+        "evidence": {}
+      }
+    ],
+    "surface_checks": {
+      "title": {
+        "supported": true,
+        "reason": "Stylistic framing for the female-to-male ratio indicator.",
+        "isos": []
+      },
+      "hook": {
+        "supported": true,
+        "reason": "Engaging hook about the dataset spread.",
+        "isos": []
+      },
+      "description": {
+        "supported": true,
+        "reason": "Accurately describes indicator and universe size.",
+        "isos": []
+      },
+      "beat_0": {
+        "supported": true,
+        "reason": "Supported by MDA (100%) and AFG (7%) values in EVIDENCE.",
+        "isos": [
+          "MDA",
+          "AFG"
+        ]
+      },
+      "beat_1": {
+        "supported": true,
+        "reason": "Directly matches the provided definition text.",
+        "isos": []
+      },
+      "beat_2": {
+        "supported": true,
+        "reason": "Supported by India's value of 41.77% (display 42%).",
+        "isos": [
+          "IND"
+        ]
+      },
+      "beat_3": {
+        "supported": true,
+        "reason": "Supported by Nigeria (95.73% -> 96%) and Iraq (15.07% -> 15%).",
+        "isos": [
+          "NGA",
+          "IRQ"
+        ]
+      },
+      "beat_4": {
+        "supported": true,
+        "reason": "Nigeria (95.73) / Iraq (15.07) is approximately 6.35, reasonably rendered as 6.4.",
+        "isos": [
+          "NGA",
+          "IRQ"
+        ]
+      },
+      "beat_5": {
+        "supported": true,
+        "reason": "Confirmed by ranks 184, 183, and 182 in EVIDENCE.",
+        "isos": [
+          "AFG",
+          "YEM",
+          "IRQ"
+        ]
+      },
+      "beat_6": {
+        "supported": true,
+        "reason": "Standard concluding framing question.",
+        "isos": []
+      },
+      "card_6": {
+        "supported": true,
+        "reason": "Card text matches metadata and indicator title.",
+        "isos": []
+      }
+    },
+    "warnings": [
+      {
+        "surface": "title",
+        "claim": "Places Where Women MATCH Men at Work",
+        "reason": "The indicator is a female-to-male ratio expressed in percentage (e.g., Moldova is 100.1%), not women matching men one-to-one in absolute worker counts.",
+        "severity": "style"
+      },
+      {
+        "surface": "beat_4",
+        "claim": "Nigeria has 6.4 times Iraq's ratio.",
+        "reason": "Nigeria's value is 95.73% and Iraq's is 15.07%; 95.73 / 15.07 is approximately 6.35 times, but rounding or exact checks should be verified. Wait, 95.7329 / 15.0691 is 6.3529, so 6.4 is a slight rounding discrepancy or unsupported multiplier depending on precision.",
+        "severity": "style"
+      }
+    ]
+  },
+  "script_sha256": "63e0e40b84afdb2b7bfa6ee928a0654859bb5ae109ad0d0a218e0a4ae19bb2de",
+  "data_sha256": "9e8c4281ea63973d05a77f65a12f7c827aae74a78e52e0bcd7a85593e8db0bd5",
+  "reviewer_model": "gemini-3.5-flash-lite"
+}

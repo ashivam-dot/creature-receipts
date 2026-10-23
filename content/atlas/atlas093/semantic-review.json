@@ -1,0 +1,159 @@
+{
+  "errors": [
+    {
+      "surface": "beat_3",
+      "claim": "Armenia stands at 7.3 times what families face in the USA at 11%.",
+      "reason": "80.47196198 / 10.92723846 is approximately 7.36, but let's check the display values or exact ratio: 80 / 11 is 7.27, using exact values 80.47 / 10.93 = 7.36, however the text claims '7.3 times', which is a rounding that matches display values. Wait, let's check beat_3 carefully: Armenia is 80%, USA is 11%. 80 / 11 = 7.27 which rounds to 7.3. No factual error here based on rounding rules.",
+      "severity": "info"
+    }
+  ],
+  "claims": [
+    {
+      "surface": "title",
+      "text": "Direct Medical Costs Paid by Families",
+      "isos": [],
+      "support": "Share of out-of-pocket payments of total current health expenditures. Out-of-pocket payments are spending on health directly out-of-pocket by households."
+    },
+    {
+      "surface": "hook",
+      "text": "POCKET HEALTH CARE",
+      "isos": [],
+      "support": "Share of out-of-pocket payments of total current health expenditures."
+    },
+    {
+      "surface": "description",
+      "text": "Out-of-pocket health spending share by households across 189 countries and territories.",
+      "isos": [],
+      "support": "count: 189, universe: mapped countries and territories with data"
+    },
+    {
+      "surface": "beat_0",
+      "text": "In Armenia, households pay 80% of all health care costs directly from their own pockets.",
+      "isos": [
+        "ARM"
+      ],
+      "support": "Armenia value: 80.47196198, display: 80%"
+    },
+    {
+      "surface": "beat_1",
+      "text": "Out-of-pocket payments are spending on health directly out-of-pocket by households.",
+      "isos": [],
+      "support": "Out-of-pocket payments are spending on health directly out-of-pocket by households."
+    },
+    {
+      "surface": "beat_2",
+      "text": "Bangladesh sits close behind at 79%.",
+      "isos": [
+        "BGD"
+      ],
+      "support": "Bangladesh value: 79.30711365, display: 79%"
+    },
+    {
+      "surface": "beat_3",
+      "text": "Armenia stands at 7.3 times what families face in the USA at 11%.",
+      "isos": [
+        "ARM",
+        "USA"
+      ],
+      "support": "Armenia: 80.47% (display 80%), USA: 10.93% (display 11%)"
+    },
+    {
+      "surface": "beat_4",
+      "text": "Rwanda drops down to 4%.",
+      "isos": [
+        "RWA"
+      ],
+      "support": "Rwanda value: 4.0999999, display: 4%"
+    },
+    {
+      "surface": "beat_5",
+      "text": "China has 32% and India stands at 44%.",
+      "isos": [
+        "CHN",
+        "IND"
+      ],
+      "support": "China: 32.17% (display 32%), India: 43.89% (display 44%)"
+    },
+    {
+      "surface": "beat_6",
+      "text": "Who pays the medical bill in your home?",
+      "isos": [],
+      "support": "Stylistic question"
+    },
+    {
+      "surface": "card_6",
+      "text": "Out-of-pocket health spending share",
+      "isos": [],
+      "support": "Share of out-of-pocket payments of total current health expenditures."
+    }
+  ],
+  "surface_checks": {
+    "title": {
+      "supported": true,
+      "reason": "Accurately reflects the indicator definition.",
+      "isos": []
+    },
+    "hook": {
+      "supported": true,
+      "reason": "Stylistic hook matching the theme.",
+      "isos": []
+    },
+    "description": {
+      "supported": true,
+      "reason": "Matches the universe count of 189 countries and territories.",
+      "isos": []
+    },
+    "beat_0": {
+      "supported": true,
+      "reason": "Armenia out-of-pocket share is 80.47%, displayed as 80%.",
+      "isos": [
+        "ARM"
+      ]
+    },
+    "beat_1": {
+      "supported": true,
+      "reason": "Directly matches the indicator definition provided in EVIDENCE.",
+      "isos": []
+    },
+    "beat_2": {
+      "supported": true,
+      "reason": "Bangladesh out-of-pocket share is 79.31%, displayed as 79%.",
+      "isos": [
+        "BGD"
+      ]
+    },
+    "beat_3": {
+      "supported": true,
+      "reason": "Armenia (80%) is approximately 7.3 times USA (11%).",
+      "isos": [
+        "ARM",
+        "USA"
+      ]
+    },
+    "beat_4": {
+      "supported": true,
+      "reason": "Rwanda out-of-pocket share is 4.10%, displayed as 4%.",
+      "isos": [
+        "RWA"
+      ]
+    },
+    "beat_5": {
+      "supported": true,
+      "reason": "China (32%) and India (44%) match the evidence values.",
+      "isos": [
+        "CHN",
+        "IND"
+      ]
+    },
+    "beat_6": {
+      "supported": true,
+      "reason": "Ordinary loop/closing question.",
+      "isos": []
+    },
+    "card_6": {
+      "supported": true,
+      "reason": "Accurately states the indicator topic.",
+      "isos": []
+    }
+  }
+}

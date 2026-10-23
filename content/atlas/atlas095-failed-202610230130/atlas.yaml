@@ -1,0 +1,76 @@
+id: atlas095
+title: Places Ranked by Older Women
+hook_text: TWO EXTREMES
+description: A cinematic look at the share of women aged 65 and above around the world.
+hashtags:
+- '#population'
+- '#maps'
+- '#geography'
+tags:
+- population
+- share of women aged 65 and above
+- Japan
+- United Arab Emirates
+- world map
+- data
+sources:
+- https://data.worldbank.org/indicator/SP.POP.65UP.FE.ZS
+dataset:
+  kind: worldbank
+  indicator: SP.POP.65UP.FE.ZS
+  label: Share of women aged 65 and above
+  unit: '%'
+  source: World Bank
+  min_year: 2019
+scale:
+  edges:
+  - 5.0
+  - 10.0
+  - 20.0
+  - 25.0
+  labels:
+  - Under 5%
+  - 5% to 10%
+  - 10% to 20%
+  - 20% to 25%
+  - Over 25%
+value_format: '{v:.1f}%'
+beats:
+- text: Nearly a third of women in Japan are over 65. In the UAE, it is 2.2%.
+  shot:
+    callouts:
+    - JPN
+    - ARE
+- text: Japan has 32.8% of all women there at 65 or older.
+  shot:
+    kind: country
+    iso: JPN
+- text: The UAE is the world's lowest at 2.2% of its female population.
+  shot:
+    kind: country
+    iso: ARE
+  basis: Population is based on the de facto definition of population, which counts all residents regardless of
+    legal status or citizenship.
+- text: The USA has 20%, while the UK has 21.1%.
+  shot:
+    kind: group
+    isos:
+    - USA
+    - GBR
+- text: Italy has 27.4%, Portugal has 27.2%, and Germany has 26%.
+  shot:
+    kind: rank
+    isos:
+    - ITA
+    - PRT
+    - DEU
+- text: India has a younger profile. Only 8% of women there are over 65.
+  shot:
+    kind: country
+    iso: IND
+- text: Is the share of older women rising in your country?
+  shot:
+    kind: card
+    lines:
+    - Is your country aging?
+    - Share of women aged 65 and above (%)
