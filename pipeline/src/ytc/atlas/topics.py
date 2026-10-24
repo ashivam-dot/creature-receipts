@@ -11,6 +11,7 @@ from __future__ import annotations
 
 import json
 import logging
+import math
 import re
 import statistics
 from datetime import datetime, timedelta, timezone
@@ -221,14 +222,25 @@ def check(spec: dict, values: list[float]) -> list[str]:
 
 
 def _performance(stats: list[dict]) -> str:
-    seen = [s for s in stats if s.get("checkpoint_24h", {}).get("views_per_hour") is not None]
-    if len(seen) < 6:
-        return "No comparable 24-hour checkpoints yet; do not infer winning topics from lifetime views."
-    seen.sort(key=lambda s: s["checkpoint_24h"]["views_per_hour"], reverse=True)
-    show = lambda s: f"{s['title']} ({s['checkpoint_24h']['views_per_hour']} views/hour at age {s['checkpoint_24h']['hours']}h)"
+    def measured(s: dict) -> bool:
+        checkpoint = s.get("checkpoint_24h") or {}
+        hours, views = checkpoint.get("hours"), checkpoint.get("views")
+        valid = lambda value: isinstance(value, (int, float)) and not isinstance(value, bool) and math.isfinite(value)
+        return valid(hours) and 24 <= hours <= 30 and valid(views) and views >= 0
+
+    seen = [s for s in stats if measured(s)]
+    if len(seen) < 10:
+        return (f"Only {len(seen)} measured first-day checkpoints in the 24–30h window; need ten for exploratory "
+                "topic feedback. Do not infer winning topics from lifetime views or views/hour.")
+    seen.sort(key=lambda s: s["checkpoint_24h"]["views"], reverse=True)
+    show = lambda s: f"{s['title']} ({s['checkpoint_24h']['views']} measured views at age {s['checkpoint_24h']['hours']}h)"
     best = "; ".join(show(s) for s in seen[:3])
     worst = "; ".join(show(s) for s in seen[-3:])
-    return f"Comparable early checkpoints, observational not causal. Best: {best}. Worst: {worst}.\n"
+    ages = [s["checkpoint_24h"]["hours"] for s in seen]
+    return (f"Measured first-day checkpoints: n={len(seen)}, actual ages {min(ages):g}–{max(ages):g}h "
+            f"within the declared 24–30h window. Higher observed views: {best}. Lower observed views: {worst}. "
+            "These are exploratory associations, not causal topic rules; ages, formats, countries and upload "
+            "times can still differ. Do not infer retention or subscriber conversion from public view counts.\n")
 
 
 def refill(catalogue: dict, stats: list[dict] | None = None, add: int = ADD, now: datetime | None = None) -> list[dict]:

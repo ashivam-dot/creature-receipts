@@ -198,7 +198,31 @@ def test_public_checkpoint_does_not_invent_missing_retention(tmp_path, monkeypat
 def test_topic_selection_does_not_reward_older_lifetime_counts():
     from ytc.atlas import topics
     stats = [{'title': 'Old', 'views': 1000000}, {'title': 'New', 'views': 100}, {'title': 'Other', 'views': 1}]
-    assert 'do not infer' in topics._performance(stats)
+    assert 'Do not infer' in topics._performance(stats)
+
+
+def test_topic_feedback_ranks_measured_views_with_actual_ages_and_denominator():
+    from ytc.atlas import topics
+    rows = [{'title': f'Control {i}', 'checkpoint_24h': {'views': 100 + i, 'hours': 25}} for i in range(8)]
+    rows += [{'title': 'More measured views', 'checkpoint_24h': {'views': 300, 'hours': 30, 'views_per_hour': 10}},
+             {'title': 'Faster hourly average', 'checkpoint_24h': {'views': 290, 'hours': 24, 'views_per_hour': 12}}]
+    rows += [{'title': 'Old outlier', 'views': 1000000, 'checkpoint_24h': {'views': 99999, 'hours': 35}}]
+    prompt = topics._performance(rows)
+    assert 'n=10' in prompt and 'actual ages 24–30h' in prompt
+    assert prompt.index('More measured views') < prompt.index('Faster hourly average')
+    assert '300 measured views at age 30h' in prompt and 'Old outlier' not in prompt
+    assert 'not causal' in prompt and 'Do not infer retention or subscriber conversion' in prompt
+    assert rows[0]['title'] == 'Control 0'
+
+
+@pytest.mark.parametrize('checkpoint', [None, {}, {'hours': 23.9, 'views': 1}, {'hours': 30.1, 'views': 1},
+    {'hours': 25, 'views': None}, {'hours': 25, 'views': -1}, {'hours': 25, 'views': float('nan')},
+    {'hours': float('inf'), 'views': 1}, {'hours': 25, 'views': True}])
+def test_topic_feedback_excludes_incomparable_rows_and_waits_for_ten(checkpoint):
+    from ytc.atlas import topics
+    rows = [{'title': f'Measured {i}', 'checkpoint_24h': {'views': 100, 'hours': 25}} for i in range(9)]
+    rows.append({'title': 'Invalid', 'checkpoint_24h': checkpoint})
+    assert 'Only 9 measured' in topics._performance(rows)
 
 
 def test_cached_camera_push_keeps_map_coordinates():
