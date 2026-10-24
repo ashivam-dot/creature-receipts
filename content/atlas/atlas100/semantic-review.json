@@ -1,0 +1,200 @@
+{
+  "errors": [
+    {
+      "surface": "beat_0",
+      "claim": "Switzerland maintains 18.8 nurses.",
+      "reason": "Missing unit 'per 1,000 people'.",
+      "severity": "style"
+    },
+    {
+      "surface": "beat_5",
+      "claim": "Switzerland has 5.1 times China.",
+      "reason": "Switzerland value is 18.76 and China is 3.666; 18.76 / 3.666 is approximately 5.12, which is correct, but should state the metric ratio explicitly.",
+      "severity": "style"
+    }
+  ],
+  "claims": [
+    {
+      "surface": "title",
+      "text": "Places Ranked by Nursing Staff Density",
+      "isos": [],
+      "support": "Ranks mapped countries and territories by nurses and midwives per 1,000 people"
+    },
+    {
+      "surface": "hook",
+      "text": "HEALTH DIVIDE",
+      "isos": [],
+      "support": "Global comparison of nurse and midwife density"
+    },
+    {
+      "surface": "description",
+      "text": "A cinematic comparison of global nursing staff density, from Switzerland to Chad and India.",
+      "isos": [
+        "CHE",
+        "TCD",
+        "IND"
+      ],
+      "support": "Switzerland (CHE): 18.8, Chad (TCD): 0.2, India (IND): 1.7"
+    },
+    {
+      "surface": "beat_0",
+      "text": "Switzerland maintains 18.8 nurses. In Chad, the value is 0.2.",
+      "isos": [
+        "CHE",
+        "TCD"
+      ],
+      "support": "Switzerland: 18.76 (display 18.8), Chad: 0.167 (display 0.2)"
+    },
+    {
+      "surface": "beat_1",
+      "text": "Switzerland is the world's highest. A leader in medical staffing.",
+      "isos": [
+        "CHE"
+      ],
+      "support": "Switzerland rank 1 with 18.76 per 1,000 people"
+    },
+    {
+      "surface": "beat_2",
+      "text": "In Chad, the world's lowest, the value rests at 0.2.",
+      "isos": [
+        "TCD"
+      ],
+      "support": "Chad rank 174 with 0.167 per 1,000 people"
+    },
+    {
+      "surface": "beat_3",
+      "text": "The top leaders are Switzerland: 18.8, Norway: 16.5, Iceland: 15.9, and Ireland: 14.8.",
+      "isos": [
+        "CHE",
+        "NOR",
+        "ISL",
+        "IRL"
+      ],
+      "support": "Switzerland: 18.76, Norway: 16.51, Iceland: 15.86, Ireland: 14.78"
+    },
+    {
+      "surface": "beat_4",
+      "text": "The USA has 13.4 and Japan has 13.",
+      "isos": [
+        "USA",
+        "JPN"
+      ],
+      "support": "United States: 13.38 (display 13.4), Japan: 12.98 (display 13)"
+    },
+    {
+      "surface": "beat_5",
+      "text": "China has 3.7. Switzerland has 5.1 times China.",
+      "isos": [
+        "CHN",
+        "CHE"
+      ],
+      "support": "China: 3.666 (display 3.7), Switzerland: 18.76"
+    },
+    {
+      "surface": "beat_6",
+      "text": "India has 1.7. The count includes professional nurses, professional and auxiliary midwives, and other associated personnel.",
+      "isos": [
+        "IND"
+      ],
+      "support": "India: 1.72 (display 1.7); definition matches EVIDENCE definition text"
+    },
+    {
+      "surface": "beat_7",
+      "text": "Are there enough nurses where you live?",
+      "isos": [],
+      "support": "Introductory/outro stylistic question"
+    },
+    {
+      "surface": "card_7",
+      "text": "Enough nurses? Nurses per 1,000 people",
+      "isos": [],
+      "support": "Indicator unit and title card"
+    }
+  ],
+  "surface_checks": {
+    "title": {
+      "supported": true,
+      "reason": "Accurately describes the ranking of nursing staff density.",
+      "isos": []
+    },
+    "hook": {
+      "supported": true,
+      "reason": "Stylistic framing supported by data disparities.",
+      "isos": []
+    },
+    "description": {
+      "supported": true,
+      "reason": "Accurately references Switzerland, Chad, and India.",
+      "isos": [
+        "CHE",
+        "TCD",
+        "IND"
+      ]
+    },
+    "beat_0": {
+      "supported": true,
+      "reason": "Switzerland value is 18.8 and Chad is 0.2.",
+      "isos": [
+        "CHE",
+        "TCD"
+      ]
+    },
+    "beat_1": {
+      "supported": true,
+      "reason": "Switzerland is ranked #1 in the dataset.",
+      "isos": [
+        "CHE"
+      ]
+    },
+    "beat_2": {
+      "supported": true,
+      "reason": "Chad is ranked #174 (last) in the dataset.",
+      "isos": [
+        "TCD"
+      ]
+    },
+    "beat_3": {
+      "supported": true,
+      "reason": "Top four values match Switzerland, Norway, Iceland, and Ireland data.",
+      "isos": [
+        "CHE",
+        "NOR",
+        "ISL",
+        "IRL"
+      ]
+    },
+    "beat_4": {
+      "supported": true,
+      "reason": "USA and Japan values match data displays.",
+      "isos": [
+        "USA",
+        "JPN"
+      ]
+    },
+    "beat_5": {
+      "supported": true,
+      "reason": "China value and comparative ratio are supported.",
+      "isos": [
+        "CHN",
+        "CHE"
+      ]
+    },
+    "beat_6": {
+      "supported": true,
+      "reason": "India value matches and definition text matches EVIDENCE.",
+      "isos": [
+        "IND"
+      ]
+    },
+    "beat_7": {
+      "supported": true,
+      "reason": "Stylistic closing question.",
+      "isos": []
+    },
+    "card_7": {
+      "supported": true,
+      "reason": "Accurately states the indicator unit.",
+      "isos": []
+    }
+  }
+}

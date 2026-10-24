@@ -1,0 +1,40 @@
+{
+  "version": 1,
+  "passed": true,
+  "checked_at": "2026-10-24T09:27:58.822631+00:00",
+  "quality_module_sha256": "db7be8ac57c839f39a10676f1a70580a83ea346f59c27f19868d09c272def14c",
+  "media_sha256": "babbd73fc1361de67c1afb228dcf7a1d011c1d9ee336fe94cd6b2d4b92c15332",
+  "script_sha256": "2db90a5b7ab4748920bde6725f31239cd8c0f6b20330caf96a0586d5422cbc70",
+  "data_sha256": "0311770b9591765f9af1c1c3e8c625a18f6d977b4626070b77e07b2599497874",
+  "claims_sha256": "82dc1ae3f10a5f095726796fdb26d2fa4cdd1b4ca6193cd3390beec08de6d764",
+  "contact_sha256": "a9e3543201f6d498c248811172597d832534f9b9ba51a62ddfc2045658b05a5c",
+  "duration": 43.07,
+  "integrated_lufs": -14.3,
+  "true_peak_dbfs": -1.4,
+  "speech": {
+    "heard": "Switzerland maintains 18.8 nurses. In Chad, the value is 0.2. Switzerland is the world's highest, a leader in medical staffing. In Chad, the world's lowest, the value rests at 0.2. The top leaders are Switzerland, 18.8 Norway, 16.5 Iceland, 15.9 Ireland, 14.8. USA has 13.4 and Japan has 13. China has 3.7, Switzerland has 5.1 times China. India has 1.7, the count includes professional nurses, professional and auxiliary midwives and other associated personnel. Are there enough nurses where you live?",
+    "model": "small.en",
+    "media_sha256": "babbd73fc1361de67c1afb228dcf7a1d011c1d9ee336fe94cd6b2d4b92c15332",
+    "primary_differences": [
+      "'and' heard as '(nothing)' after '16.5 iceland 15.9'",
+      "'the' heard as '(nothing)' after 'and ireland 14.8'"
+    ],
+    "differences": [
+      "'the' heard as '(nothing)' after 'and ireland 14.8'"
+    ],
+    "corroboration": {
+      "model": "base.en",
+      "heard": "Switzerland maintains 18.8 nurses. In Chad, the value is 0.2. Switzerland is the world's highest, a leader in medical staffing. In Chad, the world's lowest, the value rests at 0.2. The top leaders are Switzerland, 18.8 Norway, 16.5 Iceland, 15.9 and Ireland, 14.8. USA has 13.4 and Japan has 13. China has 3.7, Switzerland has 5.1 times China. India has 1.7. The count includes professional nurses, professional and auxiliary midwives, and other associated personnel. Are there enough nurses where you live?",
+      "differences": [
+        "'the' heard as '(nothing)' after 'and ireland 14.8'"
+      ],
+      "resolved": [
+        "'and' heard as '(nothing)' after '16.5 iceland 15.9'"
+      ]
+    }
+  },
+  "warnings": [
+    "'the' heard as '(nothing)' after 'and ireland 14.8'"
+  ],
+  "speech_policy": "material-hard-entity-polarity-strict-minor-spelling-warning"
+}

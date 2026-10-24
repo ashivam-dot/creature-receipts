@@ -1,0 +1,83 @@
+id: atlas100
+title: Places Ranked by Nursing Staff Density
+format: rank_ladder
+hook_text: HEALTH DIVIDE
+description: A cinematic comparison of global nursing staff density, from Switzerland to Chad and India.
+hashtags:
+- '#health'
+- '#maps'
+- '#geography'
+tags:
+- health
+- nurses and midwives per 1,000 people
+- Switzerland
+- Chad
+- world map
+- data
+sources:
+- https://data.worldbank.org/indicator/SH.MED.NUMW.P3
+dataset:
+  kind: worldbank
+  indicator: SH.MED.NUMW.P3
+  label: Nurses and midwives per 1,000 people
+  unit: per 1,000 people
+  source: World Bank
+  min_year: 2019
+scale:
+  edges:
+  - 1.0
+  - 4.0
+  - 8.0
+  - 12.0
+  labels:
+  - < 1
+  - 1–4
+  - 4–8
+  - 8–12
+  - '> 12'
+value_format: '{v:.1f}'
+beats:
+- text: Switzerland maintains 18.8 nurses. In Chad, the value is 0.2.
+  shot:
+    callouts:
+    - CHE
+    - TCD
+- text: Switzerland is the world's highest. A leader in medical staffing.
+  shot:
+    kind: country
+    iso: CHE
+- text: In Chad, the world's lowest, the value rests at 0.2.
+  shot:
+    kind: country
+    iso: TCD
+- text: 'The top leaders are Switzerland: 18.8, Norway: 16.5, Iceland: 15.9, and Ireland: 14.8.'
+  shot:
+    kind: rank
+    isos:
+    - CHE
+    - NOR
+    - ISL
+    - IRL
+- text: The USA has 13.4 and Japan has 13.
+  shot:
+    kind: group
+    isos:
+    - USA
+    - JPN
+- text: China has 3.7. Switzerland has 5.1 times China.
+  shot:
+    kind: country
+    iso: CHN
+- text: India has 1.7. The count includes professional nurses, professional and auxiliary midwives, and other associated
+    personnel.
+  shot:
+    kind: country
+    iso: IND
+  basis: Nurses and midwives include professional nurses, professional midwives, auxiliary nurses, auxiliary midwives,
+    enrolled nurses, enrolled midwives and other associated personnel, such as dental nurses and primary care nurses.
+- text: Are there enough nurses where you live?
+  shot:
+    kind: card
+    lines:
+    - Enough nurses?
+    - Nurses per 1,000 people
