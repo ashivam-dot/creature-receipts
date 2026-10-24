@@ -1,0 +1,77 @@
+id: atlas101
+title: Which Nations Grow the MOST Permanent Crops?
+hook_text: COCOA AND COFFEE
+description: Tropical nations like Ivory Coast and Rwanda dedicate large portions of land to permanent crops like
+  cocoa and coffee, far exceeding the global median.
+hashtags:
+- '#geography'
+- '#agriculture'
+- '#maps'
+tags:
+- geography
+- permanent cropland as % of land area
+- Cote d'Ivoire
+- Mongolia
+- world map
+- data
+sources:
+- https://data.worldbank.org/indicator/AG.LND.CROP.ZS
+dataset:
+  kind: worldbank
+  indicator: AG.LND.CROP.ZS
+  label: Permanent cropland as % of land area
+  unit: '%'
+  source: World Bank
+  min_year: 2019
+scale:
+  edges:
+  - 0.5
+  - 1.5
+  - 5.0
+  - 15.0
+  labels:
+  - Under 0.5%
+  - 0.5-1.5%
+  - 1.5-5%
+  - 5-15%
+  - '>15%'
+value_format: '{v:.3f}%'
+beats:
+- text: Ivory Coast devotes 26.7% of its land to permanent crops. The global median is 1.6%.
+  shot:
+    callouts:
+    - CIV
+- text: This counts land for crops that do not need replanting after each harvest, such as cocoa, coffee, and rubber.
+  shot:
+    callouts:
+    - CIV
+  basis: Permanent cropland is land cultivated with crops that occupy the land for long periods and need not be
+    replanted after each harvest, such as cocoa, coffee, and rubber.
+- text: Ivory Coast has 13 times what China has, where these crops cover 2.1%.
+  shot:
+    kind: group
+    isos:
+    - CIV
+    - CHN
+- text: Rwanda uses 21.5%.
+  shot:
+    kind: country
+    iso: RWA
+- text: India has 4.8%, Japan 0.7%, the United States 0.3%, and Canada just 0.02%.
+  shot:
+    kind: rank
+    isos:
+    - IND
+    - JPN
+    - USA
+    - CAN
+- text: Mongolia is the world's lowest, with only 0.003%.
+  shot:
+    kind: country
+    iso: MNG
+- text: How much of your country is planted with permanent crops?
+  shot:
+    kind: card
+    lines:
+    - Your permanent crops?
+    - Permanent Cropland (% of Land)

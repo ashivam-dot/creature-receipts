@@ -3811,7 +3811,7 @@
     "#health"
    ],
    "source_url": "https://data.worldbank.org/indicator/SH.MED.NUMW.P3",
-   "status": "ready:atlas100",
+   "status": "used:atlas100",
    "added_by": "refill"
   },
   {
@@ -3967,7 +3967,7 @@
     "#agriculture"
    ],
    "source_url": "https://data.worldbank.org/indicator/AG.LND.CROP.ZS",
-   "status": "open",
+   "status": "ready:atlas101",
    "added_by": "refill"
   },
   {
@@ -4047,7 +4047,385 @@
    "source_url": "https://data.worldbank.org/indicator/SL.EMP.MPYR.ZS",
    "status": "open",
    "added_by": "refill"
+  },
+  {
+   "id": "t115",
+   "topic": "Global Adult Diabetes Prevalence",
+   "angle": "Pakistan has the world's highest diabetes prevalence at 31.4%, which is over twenty times higher than the rate in Zimbabwe.",
+   "format": "map_reveal",
+   "dataset": {
+    "kind": "worldbank",
+    "indicator": "SH.STA.DIAB.ZS",
+    "label": "Adults with type 1 or 2 diabetes",
+    "unit": "%",
+    "source": "World Bank",
+    "min_year": 2019
+   },
+   "scale": {
+    "kind": "bins",
+    "edges": [
+     5,
+     10,
+     15,
+     25
+    ],
+    "labels": [
+     "Under 5%",
+     "5-10%",
+     "10-15%",
+     "15-25%",
+     "Over 25%"
+    ]
+   },
+   "value_format": "{v:.1f}%",
+   "hashtags": [
+    "#maps",
+    "#geography",
+    "#health"
+   ],
+   "source_url": "https://data.worldbank.org/indicator/SH.STA.DIAB.ZS",
+   "status": "open",
+   "added_by": "refill"
+  },
+  {
+   "id": "t116",
+   "topic": "Household Spending Share of GDP",
+   "angle": "In several nations, household consumption is so high that it actually exceeds the total value of the domestic economy, peaking at 133 percent.",
+   "format": "map_reveal",
+   "dataset": {
+    "kind": "worldbank",
+    "indicator": "NE.CON.PRVT.ZS",
+    "label": "Household consumption as % of GDP",
+    "unit": "%",
+    "source": "World Bank",
+    "min_year": 2019
+   },
+   "scale": {
+    "kind": "bins",
+    "edges": [
+     40,
+     60,
+     80,
+     100
+    ],
+    "labels": [
+     "Under 40%",
+     "40-60%",
+     "60-80%",
+     "80-100%",
+     "Over 100%"
+    ]
+   },
+   "value_format": "{v:.1f}%",
+   "hashtags": [
+    "#maps",
+    "#geography",
+    "#economy"
+   ],
+   "source_url": "https://data.worldbank.org/indicator/NE.CON.PRVT.ZS",
+   "status": "open",
+   "added_by": "refill"
+  },
+  {
+   "id": "t117",
+   "topic": "Global investment in research and development",
+   "angle": "While global leaders spend over five percent of their GDP on research and development, a vast majority of countries invest less than one percent.",
+   "format": "rank_ladder",
+   "dataset": {
+    "kind": "worldbank",
+    "indicator": "GB.XPD.RSDV.GD.ZS",
+    "label": "RD expenditure as a percent of GDP",
+    "unit": "%",
+    "source": "World Bank",
+    "min_year": 2019
+   },
+   "scale": {
+    "kind": "bins",
+    "edges": [
+     0.5,
+     1.5,
+     3.0
+    ],
+    "labels": [
+     "Under 0.5 percent",
+     "0.5 to 1.5 percent",
+     "1.5 to 3.0 percent",
+     "Over 3 percent"
+    ]
+   },
+   "value_format": "{v:.2f}%",
+   "hashtags": [
+    "#maps",
+    "#science",
+    "#economy"
+   ],
+   "source_url": "https://data.worldbank.org/indicator/GB.XPD.RSDV.GD.ZS",
+   "status": "open",
+   "added_by": "refill"
+  },
+  {
+   "id": "t118",
+   "topic": "Where Nations Save The Most Wealth",
+   "angle": "Over a quarter of countries save more than 28 percent of their entire economic output.",
+   "format": "map_reveal",
+   "dataset": {
+    "kind": "worldbank",
+    "indicator": "NY.GDS.TOTL.ZS",
+    "label": "Gross domestic savings as percent of GDP",
+    "unit": "%",
+    "source": "World Bank",
+    "min_year": 2019
+   },
+   "scale": {
+    "kind": "threshold",
+    "at": 25.0,
+    "labels": [
+     "High savings rate",
+     "Low savings rate"
+    ]
+   },
+   "value_format": "{v:.1f}%",
+   "hashtags": [
+    "#maps",
+    "#geography",
+    "#economy"
+   ],
+   "source_url": "https://data.worldbank.org/indicator/NY.GDS.TOTL.ZS",
+   "status": "open",
+   "added_by": "refill"
+  },
+  {
+   "id": "t119",
+   "topic": "Working Age Population Supporting Dependents",
+   "angle": "In some nations there are as many dependents as workers, while in the Gulf states there are fewer than 25 dependents per 100 workers.",
+   "format": "map_reveal",
+   "dataset": {
+    "kind": "worldbank",
+    "indicator": "SP.POP.DPND",
+    "label": "Dependents per 100 working-age",
+    "unit": "per 100 working-age",
+    "source": "World Bank",
+    "min_year": 2019
+   },
+   "scale": {
+    "kind": "bins",
+    "edges": [
+     35,
+     50,
+     65,
+     80
+    ],
+    "labels": [
+     "Under 35",
+     "35 to 50",
+     "50 to 65",
+     "65 to 80",
+     "Over 80"
+    ]
+   },
+   "value_format": "{v:.0f}",
+   "hashtags": [
+    "#maps",
+    "#geography",
+    "#population"
+   ],
+   "source_url": "https://data.worldbank.org/indicator/SP.POP.DPND",
+   "status": "open",
+   "added_by": "refill"
+  },
+  {
+   "id": "t120",
+   "topic": "Unequal Access to Daily Meals",
+   "angle": "Over half of the population faces moderate or severe food insecurity in the highest nations, while the lowest keep it under three percent.",
+   "format": "rank_ladder",
+   "dataset": {
+    "kind": "worldbank",
+    "indicator": "SN.ITK.MSFI.ZS",
+    "label": "Moderate or severe food insecurity rate",
+    "unit": "%",
+    "source": "World Bank",
+    "min_year": 2019
+   },
+   "scale": {
+    "kind": "bins",
+    "edges": [
+     10,
+     30,
+     50,
+     70
+    ],
+    "labels": [
+     "Under 10%",
+     "10% to 30%",
+     "30% to 50%",
+     "50% to 70%",
+     "Over 70%"
+    ]
+   },
+   "value_format": "{v:.1f}%",
+   "hashtags": [
+    "#maps",
+    "#geography",
+    "#foodsecurity"
+   ],
+   "source_url": "https://data.worldbank.org/indicator/SN.ITK.MSFI.ZS",
+   "status": "open",
+   "added_by": "refill"
+  },
+  {
+   "id": "t121",
+   "topic": "Businesses Facing Frequent Power Outages",
+   "angle": "Over forty percent of businesses worldwide struggle with electrical outages, while in Singapore and Qatar nearly zero firms experience power disruptions.",
+   "format": "map_reveal",
+   "dataset": {
+    "kind": "worldbank",
+    "indicator": "IC.ELC.OUTG.ZS",
+    "label": "Firms experiencing electrical outages",
+    "unit": "%",
+    "source": "World Bank",
+    "min_year": 2019
+   },
+   "scale": {
+    "kind": "bins",
+    "edges": [
+     10,
+     40,
+     70,
+     90
+    ],
+    "labels": [
+     "Rarely",
+     "Occasionally",
+     "Frequently",
+     "Mostly",
+     "Almost all"
+    ]
+   },
+   "value_format": "{v:.1f}%",
+   "hashtags": [
+    "#maps",
+    "#geography",
+    "#business"
+   ],
+   "source_url": "https://data.worldbank.org/indicator/IC.ELC.OUTG.ZS",
+   "status": "open",
+   "added_by": "refill"
+  },
+  {
+   "id": "t122",
+   "topic": "Global Crop Fertilizer Consumption Intensity",
+   "angle": "Kuwait uses an astonishing 2,490 kilograms of fertilizer per hectare of arable land, far surpassing intensive agricultural hubs.",
+   "format": "map_reveal",
+   "dataset": {
+    "kind": "worldbank",
+    "indicator": "AG.CON.FERT.ZS",
+    "label": "Fertilizer use per hectare",
+    "unit": "kg per hectare",
+    "source": "World Bank",
+    "min_year": 2019
+   },
+   "scale": {
+    "kind": "bins",
+    "edges": [
+     10,
+     100,
+     500,
+     1000
+    ],
+    "labels": [
+     "Negligible",
+     "Low",
+     "Moderate",
+     "High",
+     "Extreme"
+    ]
+   },
+   "value_format": "{v:,.0f} kg",
+   "hashtags": [
+    "#maps",
+    "#geography",
+    "#agriculture"
+   ],
+   "source_url": "https://data.worldbank.org/indicator/AG.CON.FERT.ZS",
+   "status": "open",
+   "added_by": "refill"
+  },
+  {
+   "id": "t123",
+   "topic": "How Many Years of Preschool? Around the World",
+   "angle": "While the median length of preprimary education is 4 years worldwide, countries like Croatia and Guatemala offer up to 7 years, starting early childhood learning.",
+   "format": "rank_ladder",
+   "dataset": {
+    "kind": "worldbank",
+    "indicator": "SE.PRE.DURS",
+    "label": "Duration of preprimary education",
+    "unit": "years",
+    "source": "World Bank",
+    "min_year": 2019
+   },
+   "scale": {
+    "kind": "bins",
+    "edges": [
+     2,
+     4,
+     6
+    ],
+    "labels": [
+     "1 year",
+     "2-3 years",
+     "4-5 years",
+     "6-7 years"
+    ]
+   },
+   "value_format": "{v:.0f} years",
+   "hashtags": [
+    "#maps",
+    "#geography",
+    "#education"
+   ],
+   "source_url": "https://data.worldbank.org/indicator/SE.PRE.DURS",
+   "status": "open",
+   "added_by": "refill"
+  },
+  {
+   "id": "t124",
+   "topic": "The Global Divide in Part-Time Work",
+   "angle": "While part-time work is a rarity in some nations, in others like the Netherlands and Trinidad and Tobago, it defines the vast majority of female employment.",
+   "format": "map_reveal",
+   "dataset": {
+    "kind": "worldbank",
+    "indicator": "SL.TLF.PART.FE.ZS",
+    "label": "Share of female employment that is part-time",
+    "unit": "%",
+    "source": "World Bank",
+    "min_year": 2019
+   },
+   "scale": {
+    "kind": "bins",
+    "edges": [
+     15,
+     30,
+     45,
+     60
+    ],
+    "labels": [
+     "Very low",
+     "Low",
+     "Moderate",
+     "High",
+     "Very high"
+    ]
+   },
+   "value_format": "{v:.1f}%",
+   "hashtags": [
+    "#maps",
+    "#geography",
+    "#workforce"
+   ],
+   "source_url": "https://data.worldbank.org/indicator/SL.TLF.PART.FE.ZS",
+   "status": "open",
+   "added_by": "refill"
   }
  ],
- "refilled_at": "2026-10-23T17:10:10+00:00"
+ "refilled_at": "2026-10-24T17:10:10+00:00"
 }

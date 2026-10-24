@@ -1,0 +1,131 @@
+{
+  "errors": [],
+  "claims": [
+    {
+      "surface": "beat_0",
+      "text": "Ivory Coast devotes 26.7% of its land to permanent crops.",
+      "isos": [
+        "CIV"
+      ],
+      "support": "26.6928616352201"
+    },
+    {
+      "surface": "beat_2",
+      "text": "Ivory Coast has 13 times what China has",
+      "isos": [
+        "CIV",
+        "CHN"
+      ],
+      "support": "26.6928616352201 / 2.14549738448543 = 12.44"
+    },
+    {
+      "surface": "beat_2",
+      "text": "China has 2.1%",
+      "isos": [
+        "CHN"
+      ],
+      "support": "2.14549738448543"
+    },
+    {
+      "surface": "beat_3",
+      "text": "Rwanda uses 21.5%.",
+      "isos": [
+        "RWA"
+      ],
+      "support": "21.5113393989005"
+    },
+    {
+      "surface": "beat_4",
+      "text": "India has 4.8%, Japan 0.7%, the United States 0.3%, and Canada just 0.02%.",
+      "isos": [
+        "IND",
+        "JPN",
+        "USA",
+        "CAN"
+      ],
+      "support": "IND: 4.77612597916716, JPN: 0.683127572016461, USA: 0.347715530717951, CAN: 0.0195705849556817"
+    },
+    {
+      "surface": "beat_5",
+      "text": "Mongolia is the world's lowest, with only 0.003%.",
+      "isos": [
+        "MNG"
+      ],
+      "support": "0.00345845176397164"
+    }
+  ],
+  "surface_checks": {
+    "title": {
+      "supported": true,
+      "reason": "The video discusses nations with high permanent crop percentages.",
+      "isos": []
+    },
+    "hook": {
+      "supported": true,
+      "reason": "Cocoa and coffee are explicitly listed as examples of permanent crops in the definition.",
+      "isos": []
+    },
+    "description": {
+      "supported": true,
+      "reason": "Ivory Coast (26.7%) and Rwanda (21.5%) are high-ranking nations for permanent crops.",
+      "isos": [
+        "CIV",
+        "RWA"
+      ]
+    },
+    "beat_0": {
+      "supported": true,
+      "reason": "Ivory Coast value is 26.7%. The median of 198 countries is approximately 1.6%.",
+      "isos": [
+        "CIV"
+      ]
+    },
+    "beat_1": {
+      "supported": true,
+      "reason": "Matches the provided definition.",
+      "isos": []
+    },
+    "beat_2": {
+      "supported": true,
+      "reason": "Ivory Coast (26.7%) is approximately 12.4 times China (2.1%).",
+      "isos": [
+        "CIV",
+        "CHN"
+      ]
+    },
+    "beat_3": {
+      "supported": true,
+      "reason": "Rwanda value is 21.5%.",
+      "isos": [
+        "RWA"
+      ]
+    },
+    "beat_4": {
+      "supported": true,
+      "reason": "Values match the provided data.",
+      "isos": [
+        "IND",
+        "JPN",
+        "USA",
+        "CAN"
+      ]
+    },
+    "beat_5": {
+      "supported": true,
+      "reason": "Mongolia is ranked 198th with 0.003%.",
+      "isos": [
+        "MNG"
+      ]
+    },
+    "beat_6": {
+      "supported": true,
+      "reason": "Standard engagement question.",
+      "isos": []
+    },
+    "card_6": {
+      "supported": true,
+      "reason": "Matches the indicator definition.",
+      "isos": []
+    }
+  }
+}
