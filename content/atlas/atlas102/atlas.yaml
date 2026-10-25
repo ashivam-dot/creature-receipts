@@ -1,0 +1,72 @@
+id: atlas102
+title: Places Ranked by the Cost of Sending Money
+format: rank_ladder
+hook_text: LOST IN TRANSFER
+description: Comparing the average transaction costs of sending $200 home across the world using World Bank data.
+hashtags:
+- '#economy'
+- '#finance'
+- '#maps'
+tags:
+- wealth
+- transaction cost for sending 200
+- Cuba
+- Malawi
+- world map
+- data
+sources:
+- https://data.worldbank.org/indicator/SI.RMT.COST.IB.ZS
+dataset:
+  kind: worldbank
+  indicator: SI.RMT.COST.IB.ZS
+  label: Transaction cost for sending $200
+  unit: '%'
+  source: World Bank
+  min_year: 2019
+scale:
+  edges:
+  - 1.0
+  - 3.0
+  - 7.0
+  - 12.0
+  labels:
+  - Under 1%
+  - 1% to 3%
+  - 3% to 7%
+  - 7% to 12%
+  - Over 12%
+value_format: '{v:.1f}%'
+beats:
+- text: Sending $200 home averages 2.8%. To Cuba, the fee is 19.6%.
+  shot:
+    callouts:
+    - CUB
+- text: Cuba is the world's highest, where fees take nearly a fifth of every transfer.
+  shot:
+    kind: country
+    iso: CUB
+- text: 'Major recipients pay far less: Mexico is 2.7%, and India is 1.8%.'
+  shot:
+    kind: group
+    isos:
+    - MEX
+    - IND
+- text: 'Other costly transfers climb fast: Benin at 17.4%, Angola at 12.8%, Sierra Leone at 10.3%, and Tajikistan
+    at 10.3%.'
+  shot:
+    kind: rank
+    isos:
+    - BEN
+    - AGO
+    - SLE
+    - TJK
+- text: Near the bottom, Croatia drops to 0.3%.
+  shot:
+    kind: country
+    iso: HRV
+- text: How much does it cost to send money to your family?
+  shot:
+    kind: card
+    lines:
+    - What do you pay?
+    - Cost to Send $200 (World Bank)

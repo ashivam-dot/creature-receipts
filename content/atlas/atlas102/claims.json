@@ -1,0 +1,1247 @@
+{
+  "version": 1,
+  "evidence": {
+    "version": 1,
+    "indicator": "SI.RMT.COST.IB.ZS",
+    "definition": "Average transaction cost of sending remittance to a specific country is the average of the total transaction cost in percentage of the amount sent for sending USD 200 charged by each single remittance service provider (RSP) included in the Remittance Prices Worldwide (RPW) database to a specific country.",
+    "source": "https://data.worldbank.org/indicator/SI.RMT.COST.IB.ZS",
+    "source_response_sha256": "34b4e173805bf3f566667c7bff9e2ee1ed359e5d464e6342c54accb0faa62c02",
+    "source_organization": "Remittance Prices Worldwide, World Bank (WB), uri: http://remittanceprices.worldbank.org",
+    "year_label": "latest available 2020–2023",
+    "universe": "mapped countries and territories with data",
+    "count": 100,
+    "threshold": null,
+    "at_or_above": null,
+    "entities": {
+      "AFG": {
+        "name": "Afghanistan",
+        "value": 9.0243334,
+        "display": "9%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 8
+      },
+      "ALB": {
+        "name": "Albania",
+        "value": 5.60000025,
+        "display": "5.6%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 19
+      },
+      "DZA": {
+        "name": "Algeria",
+        "value": 7.83,
+        "display": "7.8%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 13
+      },
+      "AGO": {
+        "name": "Angola",
+        "value": 12.784,
+        "display": "12.8%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 3
+      },
+      "ARM": {
+        "name": "Armenia",
+        "value": 4.363333,
+        "display": "4.4%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 30
+      },
+      "AZE": {
+        "name": "Azerbaijan",
+        "value": 1.33333,
+        "display": "1.3%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 89
+      },
+      "BGD": {
+        "name": "Bangladesh",
+        "value": 7.65472241666667,
+        "display": "7.7%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 14
+      },
+      "BLR": {
+        "name": "Belarus",
+        "value": 1.31667,
+        "display": "1.3%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 90
+      },
+      "BEN": {
+        "name": "Benin",
+        "value": 17.35026,
+        "display": "17.4%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 2
+      },
+      "BOL": {
+        "name": "Bolivia",
+        "value": 3.4495835,
+        "display": "3.4%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 42
+      },
+      "BIH": {
+        "name": "Bosnia and Herzegovina",
+        "value": 3.863333,
+        "display": "3.9%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 35
+      },
+      "BWA": {
+        "name": "Botswana",
+        "value": 8.412857,
+        "display": "8.4%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 10
+      },
+      "BRA": {
+        "name": "Brazil",
+        "value": 2.422778,
+        "display": "2.4%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 62
+      },
+      "BGR": {
+        "name": "Bulgaria",
+        "value": 3.45964275,
+        "display": "3.5%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 40
+      },
+      "CPV": {
+        "name": "Cabo Verde",
+        "value": 3.4375,
+        "display": "3.4%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 43
+      },
+      "KHM": {
+        "name": "Cambodia",
+        "value": 2.12,
+        "display": "2.1%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 69
+      },
+      "CMR": {
+        "name": "Cameroon",
+        "value": 3.023333,
+        "display": "3%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 48
+      },
+      "CHN": {
+        "name": "China",
+        "value": 2.826364625,
+        "display": "2.8%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 51
+      },
+      "COL": {
+        "name": "Colombia",
+        "value": 2.434,
+        "display": "2.4%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 61
+      },
+      "COM": {
+        "name": "Comoros",
+        "value": 1.743333,
+        "display": "1.7%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 84
+      },
+      "COD": {
+        "name": "Congo, Dem. Rep.",
+        "value": 1.98,
+        "display": "2%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 78
+      },
+      "CRI": {
+        "name": "Costa Rica",
+        "value": 2.26,
+        "display": "2.3%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 66
+      },
+      "CIV": {
+        "name": "Cote d'Ivoire",
+        "value": 0.743333,
+        "display": "0.7%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 96
+      },
+      "HRV": {
+        "name": "Croatia",
+        "value": 0.266,
+        "display": "0.3%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 99
+      },
+      "CUB": {
+        "name": "Cuba",
+        "value": 19.63,
+        "display": "19.6%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 1
+      },
+      "DOM": {
+        "name": "Dominican Republic",
+        "value": 2.51977766666667,
+        "display": "2.5%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 58
+      },
+      "ECU": {
+        "name": "Ecuador",
+        "value": 2.29555566666667,
+        "display": "2.3%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 65
+      },
+      "EGY": {
+        "name": "Egypt, Arab Rep.",
+        "value": 3.30309514285714,
+        "display": "3.3%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 46
+      },
+      "SLV": {
+        "name": "El Salvador",
+        "value": 2.0,
+        "display": "2%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 77
+      },
+      "ERI": {
+        "name": "Eritrea",
+        "value": 9.16,
+        "display": "9.2%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 7
+      },
+      "EST": {
+        "name": "Estonia",
+        "value": 2.75,
+        "display": "2.8%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 53
+      },
+      "SWZ": {
+        "name": "Eswatini",
+        "value": 1.82,
+        "display": "1.8%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 81
+      },
+      "ETH": {
+        "name": "Ethiopia",
+        "value": 3.41479175,
+        "display": "3.4%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 44
+      },
+      "FJI": {
+        "name": "Fiji",
+        "value": 3.2245835,
+        "display": "3.2%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 47
+      },
+      "GMB": {
+        "name": "Gambia, The",
+        "value": 6.76,
+        "display": "6.8%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 15
+      },
+      "GEO": {
+        "name": "Georgia",
+        "value": 0.8475,
+        "display": "0.8%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 95
+      },
+      "GHA": {
+        "name": "Ghana",
+        "value": 2.0085,
+        "display": "2%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 76
+      },
+      "GTM": {
+        "name": "Guatemala",
+        "value": 2.556667,
+        "display": "2.6%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 56
+      },
+      "GUY": {
+        "name": "Guyana",
+        "value": 7.925,
+        "display": "7.9%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 12
+      },
+      "HTI": {
+        "name": "Haiti",
+        "value": 4.70020825,
+        "display": "4.7%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 25
+      },
+      "HND": {
+        "name": "Honduras",
+        "value": 2.6233335,
+        "display": "2.6%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 55
+      },
+      "HUN": {
+        "name": "Hungary",
+        "value": 1.613889,
+        "display": "1.6%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 87
+      },
+      "IND": {
+        "name": "India",
+        "value": 1.75675,
+        "display": "1.8%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 83
+      },
+      "IDN": {
+        "name": "Indonesia",
+        "value": 2.43805555555556,
+        "display": "2.4%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 60
+      },
+      "JAM": {
+        "name": "Jamaica",
+        "value": 3.59333333333333,
+        "display": "3.6%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 38
+      },
+      "JOR": {
+        "name": "Jordan",
+        "value": 3.35166666666667,
+        "display": "3.4%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 45
+      },
+      "KAZ": {
+        "name": "Kazakhstan",
+        "value": 1.16667,
+        "display": "1.2%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 91
+      },
+      "KEN": {
+        "name": "Kenya",
+        "value": 3.85997216666667,
+        "display": "3.9%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 36
+      },
+      "KGZ": {
+        "name": "Kyrgyz Republic",
+        "value": 4.22,
+        "display": "4.2%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 31
+      },
+      "LAO": {
+        "name": "Lao PDR",
+        "value": 4.873333,
+        "display": "4.9%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 24
+      },
+      "LVA": {
+        "name": "Latvia",
+        "value": 2.08,
+        "display": "2.1%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 72
+      },
+      "LBN": {
+        "name": "Lebanon",
+        "value": 5.278541625,
+        "display": "5.3%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 22
+      },
+      "LSO": {
+        "name": "Lesotho",
+        "value": 1.82,
+        "display": "1.8%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 81
+      },
+      "LBR": {
+        "name": "Liberia",
+        "value": 2.833333,
+        "display": "2.8%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 50
+      },
+      "LTU": {
+        "name": "Lithuania",
+        "value": 1.4,
+        "display": "1.4%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 88
+      },
+      "MDG": {
+        "name": "Madagascar",
+        "value": 2.925,
+        "display": "2.9%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 49
+      },
+      "MWI": {
+        "name": "Malawi",
+        "value": -49.693334,
+        "display": "-49.7%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 100
+      },
+      "MYS": {
+        "name": "Malaysia",
+        "value": 0.98375,
+        "display": "1%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 92
+      },
+      "MLI": {
+        "name": "Mali",
+        "value": 1.72666666666667,
+        "display": "1.7%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 85
+      },
+      "MEX": {
+        "name": "Mexico",
+        "value": 2.653333,
+        "display": "2.7%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 54
+      },
+      "MDA": {
+        "name": "Moldova",
+        "value": 2.0141665,
+        "display": "2%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 75
+      },
+      "MAR": {
+        "name": "Morocco",
+        "value": 4.173619,
+        "display": "4.2%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 32
+      },
+      "MOZ": {
+        "name": "Mozambique",
+        "value": 3.785,
+        "display": "3.8%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 37
+      },
+      "MMR": {
+        "name": "Myanmar",
+        "value": 4.04,
+        "display": "4%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 34
+      },
+      "NPL": {
+        "name": "Nepal",
+        "value": 2.5303125,
+        "display": "2.5%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 57
+      },
+      "NIC": {
+        "name": "Nicaragua",
+        "value": 2.333333,
+        "display": "2.3%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 64
+      },
+      "NGA": {
+        "name": "Nigeria",
+        "value": 4.63537033333333,
+        "display": "4.6%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 27
+      },
+      "MKD": {
+        "name": "North Macedonia",
+        "value": 2.105,
+        "display": "2.1%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 70
+      },
+      "PAK": {
+        "name": "Pakistan",
+        "value": 2.13861108333333,
+        "display": "2.1%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 68
+      },
+      "PAN": {
+        "name": "Panama",
+        "value": 2.49,
+        "display": "2.5%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 59
+      },
+      "PRY": {
+        "name": "Paraguay",
+        "value": 4.66,
+        "display": "4.7%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 26
+      },
+      "PER": {
+        "name": "Peru",
+        "value": 3.56916675,
+        "display": "3.6%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 39
+      },
+      "PHL": {
+        "name": "Philippines",
+        "value": 1.67202385714286,
+        "display": "1.7%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 86
+      },
+      "POL": {
+        "name": "Poland",
+        "value": 0.8733335,
+        "display": "0.9%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 93
+      },
+      "ROU": {
+        "name": "Romania",
+        "value": 0.87333325,
+        "display": "0.9%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 94
+      },
+      "RWA": {
+        "name": "Rwanda",
+        "value": 5.75833325,
+        "display": "5.8%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 18
+      },
+      "WSM": {
+        "name": "Samoa",
+        "value": 4.5941665,
+        "display": "4.6%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 28
+      },
+      "SEN": {
+        "name": "Senegal",
+        "value": 0.72,
+        "display": "0.7%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 97
+      },
+      "SRB": {
+        "name": "Serbia",
+        "value": 1.937,
+        "display": "1.9%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 80
+      },
+      "SLE": {
+        "name": "Sierra Leone",
+        "value": 10.34,
+        "display": "10.3%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 4
+      },
+      "SOM": {
+        "name": "Somalia, Fed. Rep.",
+        "value": 6.0086666,
+        "display": "6%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 17
+      },
+      "ZAF": {
+        "name": "South Africa",
+        "value": 4.5541665,
+        "display": "4.6%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 29
+      },
+      "SSD": {
+        "name": "South Sudan",
+        "value": 6.47,
+        "display": "6.5%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 16
+      },
+      "LKA": {
+        "name": "Sri Lanka",
+        "value": 2.1860001,
+        "display": "2.2%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 67
+      },
+      "TJK": {
+        "name": "Tajikistan",
+        "value": 10.33,
+        "display": "10.3%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 5
+      },
+      "TZA": {
+        "name": "Tanzania",
+        "value": 5.29555533333333,
+        "display": "5.3%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 21
+      },
+      "THA": {
+        "name": "Thailand",
+        "value": 2.024,
+        "display": "2%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 74
+      },
+      "TGO": {
+        "name": "Togo",
+        "value": 2.06125,
+        "display": "2.1%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 73
+      },
+      "TON": {
+        "name": "Tonga",
+        "value": 4.096667,
+        "display": "4.1%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 33
+      },
+      "TUN": {
+        "name": "Tunisia",
+        "value": 5.5366665,
+        "display": "5.5%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 20
+      },
+      "TUR": {
+        "name": "Turkiye",
+        "value": 2.34041675,
+        "display": "2.3%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 63
+      },
+      "UGA": {
+        "name": "Uganda",
+        "value": 8.861667,
+        "display": "8.9%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 9
+      },
+      "UKR": {
+        "name": "Ukraine",
+        "value": 0.7175,
+        "display": "0.7%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 98
+      },
+      "UZB": {
+        "name": "Uzbekistan",
+        "value": 2.08667,
+        "display": "2.1%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 71
+      },
+      "VUT": {
+        "name": "Vanuatu",
+        "value": 9.4916665,
+        "display": "9.5%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 6
+      },
+      "VNM": {
+        "name": "Viet Nam",
+        "value": 3.45576391666667,
+        "display": "3.5%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 41
+      },
+      "PSE": {
+        "name": "West Bank and Gaza",
+        "value": 1.965,
+        "display": "2%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 79
+      },
+      "YEM": {
+        "name": "Yemen, Rep.",
+        "value": 2.805,
+        "display": "2.8%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 52
+      },
+      "ZMB": {
+        "name": "Zambia",
+        "value": 8.1283335,
+        "display": "8.1%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 11
+      },
+      "ZWE": {
+        "name": "Zimbabwe",
+        "value": 5.2595,
+        "display": "5.3%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 23
+      }
+    }
+  },
+  "review": {
+    "errors": [],
+    "claims": [
+      {
+        "surface": "title",
+        "text": "Places Ranked by the Cost of Sending Money",
+        "isos": [],
+        "support": "universe: mapped countries and territories with data, indicator: SI.RMT.COST.IB.ZS",
+        "evidence": {}
+      },
+      {
+        "surface": "hook",
+        "text": "LOST IN TRANSFER",
+        "isos": [],
+        "support": "indicator: SI.RMT.COST.IB.ZS",
+        "evidence": {}
+      },
+      {
+        "surface": "description",
+        "text": "Comparing the average transaction costs of sending $200 home across the world using World Bank data.",
+        "isos": [],
+        "support": "indicator: SI.RMT.COST.IB.ZS, source: Remittance Prices Worldwide, World Bank (WB)",
+        "evidence": {}
+      },
+      {
+        "surface": "beat_0",
+        "text": "Sending $200 home averages 2.8%. To Cuba, the fee is 19.6%.",
+        "isos": [
+          "CHN",
+          "CUB"
+        ],
+        "support": "CHN value is 2.826364625 (display: 2.8%), CUB value is 19.63 (display: 19.6%)",
+        "evidence": {
+          "CHN": {
+            "name": "China",
+            "value": 2.826364625,
+            "display": "2.8%",
+            "year": 2023,
+            "unit": "%",
+            "rank": 51
+          },
+          "CUB": {
+            "name": "Cuba",
+            "value": 19.63,
+            "display": "19.6%",
+            "year": 2023,
+            "unit": "%",
+            "rank": 1
+          }
+        }
+      },
+      {
+        "surface": "beat_1",
+        "text": "Cuba is the world's highest, where fees take nearly a fifth of every transfer.",
+        "isos": [
+          "CUB"
+        ],
+        "support": "CUB rank is 1, value is 19.63 (display: 19.6%)",
+        "evidence": {
+          "CUB": {
+            "name": "Cuba",
+            "value": 19.63,
+            "display": "19.6%",
+            "year": 2023,
+            "unit": "%",
+            "rank": 1
+          }
+        }
+      },
+      {
+        "surface": "beat_2",
+        "text": "Major recipients pay far less: Mexico is 2.7%, and India is 1.8%.",
+        "isos": [
+          "MEX",
+          "IND"
+        ],
+        "support": "MEX value is 2.653333 (display: 2.7%), IND value is 1.75675 (display: 1.8%)",
+        "evidence": {
+          "MEX": {
+            "name": "Mexico",
+            "value": 2.653333,
+            "display": "2.7%",
+            "year": 2023,
+            "unit": "%",
+            "rank": 54
+          },
+          "IND": {
+            "name": "India",
+            "value": 1.75675,
+            "display": "1.8%",
+            "year": 2023,
+            "unit": "%",
+            "rank": 83
+          }
+        }
+      },
+      {
+        "surface": "beat_3",
+        "text": "Other costly transfers climb fast: Benin at 17.4%, Angola at 12.8%, Sierra Leone at 10.3%, and Tajikistan at 10.3%.",
+        "isos": [
+          "BEN",
+          "AGO",
+          "SLE",
+          "TJK"
+        ],
+        "support": "BEN value is 17.35026 (display: 17.4%), AGO value is 12.784 (display: 12.8%), SLE value is 10.34 (display: 10.3%), TJK value is 10.33 (display: 10.3%)",
+        "evidence": {
+          "BEN": {
+            "name": "Benin",
+            "value": 17.35026,
+            "display": "17.4%",
+            "year": 2020,
+            "unit": "%",
+            "rank": 2
+          },
+          "AGO": {
+            "name": "Angola",
+            "value": 12.784,
+            "display": "12.8%",
+            "year": 2023,
+            "unit": "%",
+            "rank": 3
+          },
+          "SLE": {
+            "name": "Sierra Leone",
+            "value": 10.34,
+            "display": "10.3%",
+            "year": 2023,
+            "unit": "%",
+            "rank": 4
+          },
+          "TJK": {
+            "name": "Tajikistan",
+            "value": 10.33,
+            "display": "10.3%",
+            "year": 2023,
+            "unit": "%",
+            "rank": 5
+          }
+        }
+      },
+      {
+        "surface": "beat_4",
+        "text": "Near the bottom, Croatia drops to 0.3%.",
+        "isos": [
+          "HRV"
+        ],
+        "support": "HRV value is 0.266 (display: 0.3%), rank is 99",
+        "evidence": {
+          "HRV": {
+            "name": "Croatia",
+            "value": 0.266,
+            "display": "0.3%",
+            "year": 2023,
+            "unit": "%",
+            "rank": 99
+          }
+        }
+      },
+      {
+        "surface": "beat_5",
+        "text": "How much does it cost to send money to your family?",
+        "isos": [],
+        "support": "indicator: SI.RMT.COST.IB.ZS",
+        "evidence": {}
+      },
+      {
+        "surface": "card_5",
+        "text": "What do you pay? Cost to Send $200 (World Bank)",
+        "isos": [],
+        "support": "indicator: SI.RMT.COST.IB.ZS, source: Remittance Prices Worldwide, World Bank (WB)",
+        "evidence": {}
+      },
+      {
+        "surface": "title",
+        "text": "Places Ranked by the Cost of Sending Money",
+        "isos": [],
+        "support": "The data ranks countries and territories by the transaction cost of sending remittances.",
+        "method": "complete-surface-check",
+        "evidence": {}
+      },
+      {
+        "surface": "hook",
+        "text": "LOST IN TRANSFER",
+        "isos": [],
+        "support": "Stylistic hook referencing remittance costs.",
+        "method": "complete-surface-check",
+        "evidence": {}
+      },
+      {
+        "surface": "description",
+        "text": "Comparing the average transaction costs of sending $200 home across the world using World Bank data.",
+        "isos": [],
+        "support": "Describes the World Bank remittance transaction cost indicator for sending $200.",
+        "method": "complete-surface-check",
+        "evidence": {}
+      },
+      {
+        "surface": "beat_0",
+        "text": "Sending $200 home averages 2.8%. To Cuba, the fee is 19.6%.",
+        "isos": [
+          "CHN",
+          "CUB"
+        ],
+        "support": "China value is 2.8% and Cuba value is 19.6% in the source data.",
+        "method": "complete-surface-check",
+        "evidence": {
+          "CHN": {
+            "name": "China",
+            "value": 2.826364625,
+            "display": "2.8%",
+            "year": 2023,
+            "unit": "%",
+            "rank": 51
+          },
+          "CUB": {
+            "name": "Cuba",
+            "value": 19.63,
+            "display": "19.6%",
+            "year": 2023,
+            "unit": "%",
+            "rank": 1
+          }
+        }
+      },
+      {
+        "surface": "beat_1",
+        "text": "Cuba is the world's highest, where fees take nearly a fifth of every transfer.",
+        "isos": [
+          "CUB"
+        ],
+        "support": "Cuba is ranked 1st in the world with 19.6%, which is nearly a fifth.",
+        "method": "complete-surface-check",
+        "evidence": {
+          "CUB": {
+            "name": "Cuba",
+            "value": 19.63,
+            "display": "19.6%",
+            "year": 2023,
+            "unit": "%",
+            "rank": 1
+          }
+        }
+      },
+      {
+        "surface": "beat_2",
+        "text": "Major recipients pay far less: Mexico is 2.7%, and India is 1.8%.",
+        "isos": [
+          "MEX",
+          "IND"
+        ],
+        "support": "Mexico value is 2.7% and India value is 1.8% in the source data.",
+        "method": "complete-surface-check",
+        "evidence": {
+          "MEX": {
+            "name": "Mexico",
+            "value": 2.653333,
+            "display": "2.7%",
+            "year": 2023,
+            "unit": "%",
+            "rank": 54
+          },
+          "IND": {
+            "name": "India",
+            "value": 1.75675,
+            "display": "1.8%",
+            "year": 2023,
+            "unit": "%",
+            "rank": 83
+          }
+        }
+      },
+      {
+        "surface": "beat_3",
+        "text": "Other costly transfers climb fast: Benin at 17.4%, Angola at 12.8%, Sierra Leone at 10.3%, and Tajikistan at 10.3%.",
+        "isos": [
+          "BEN",
+          "AGO",
+          "SLE",
+          "TJK"
+        ],
+        "support": "Benin is 17.4%, Angola is 12.8%, Sierra Leone is 10.3%, and Tajikistan is 10.3% in the source data.",
+        "method": "complete-surface-check",
+        "evidence": {
+          "BEN": {
+            "name": "Benin",
+            "value": 17.35026,
+            "display": "17.4%",
+            "year": 2020,
+            "unit": "%",
+            "rank": 2
+          },
+          "AGO": {
+            "name": "Angola",
+            "value": 12.784,
+            "display": "12.8%",
+            "year": 2023,
+            "unit": "%",
+            "rank": 3
+          },
+          "SLE": {
+            "name": "Sierra Leone",
+            "value": 10.34,
+            "display": "10.3%",
+            "year": 2023,
+            "unit": "%",
+            "rank": 4
+          },
+          "TJK": {
+            "name": "Tajikistan",
+            "value": 10.33,
+            "display": "10.3%",
+            "year": 2023,
+            "unit": "%",
+            "rank": 5
+          }
+        }
+      },
+      {
+        "surface": "beat_4",
+        "text": "Near the bottom, Croatia drops to 0.3%.",
+        "isos": [
+          "HRV"
+        ],
+        "support": "Croatia value is 0.3% near the bottom of the rankings.",
+        "method": "complete-surface-check",
+        "evidence": {
+          "HRV": {
+            "name": "Croatia",
+            "value": 0.266,
+            "display": "0.3%",
+            "year": 2023,
+            "unit": "%",
+            "rank": 99
+          }
+        }
+      },
+      {
+        "surface": "beat_5",
+        "text": "How much does it cost to send money to your family?",
+        "isos": [],
+        "support": "Standard closing question about remittance transfer costs.",
+        "method": "complete-surface-check",
+        "evidence": {}
+      },
+      {
+        "surface": "card_5",
+        "text": [
+          "What do you pay?",
+          "Cost to Send $200 (World Bank)"
+        ],
+        "isos": [],
+        "support": "Accurately references the Cost to Send $200 World Bank indicator.",
+        "method": "complete-surface-check",
+        "evidence": {}
+      }
+    ],
+    "surface_checks": {
+      "title": {
+        "supported": true,
+        "reason": "The data ranks countries and territories by the transaction cost of sending remittances.",
+        "isos": []
+      },
+      "hook": {
+        "supported": true,
+        "reason": "Stylistic hook referencing remittance costs.",
+        "isos": []
+      },
+      "description": {
+        "supported": true,
+        "reason": "Describes the World Bank remittance transaction cost indicator for sending $200.",
+        "isos": []
+      },
+      "beat_0": {
+        "supported": true,
+        "reason": "China value is 2.8% and Cuba value is 19.6% in the source data.",
+        "isos": [
+          "CHN",
+          "CUB"
+        ]
+      },
+      "beat_1": {
+        "supported": true,
+        "reason": "Cuba is ranked 1st in the world with 19.6%, which is nearly a fifth.",
+        "isos": [
+          "CUB"
+        ]
+      },
+      "beat_2": {
+        "supported": true,
+        "reason": "Mexico value is 2.7% and India value is 1.8% in the source data.",
+        "isos": [
+          "MEX",
+          "IND"
+        ]
+      },
+      "beat_3": {
+        "supported": true,
+        "reason": "Benin is 17.4%, Angola is 12.8%, Sierra Leone is 10.3%, and Tajikistan is 10.3% in the source data.",
+        "isos": [
+          "BEN",
+          "AGO",
+          "SLE",
+          "TJK"
+        ]
+      },
+      "beat_4": {
+        "supported": true,
+        "reason": "Croatia value is 0.3% near the bottom of the rankings.",
+        "isos": [
+          "HRV"
+        ]
+      },
+      "beat_5": {
+        "supported": true,
+        "reason": "Standard closing question about remittance transfer costs.",
+        "isos": []
+      },
+      "card_5": {
+        "supported": true,
+        "reason": "Accurately references the Cost to Send $200 World Bank indicator.",
+        "isos": []
+      }
+    },
+    "warnings": []
+  },
+  "script_sha256": "8a64ff290ea74bb98c295d20383a5831148c1b5c2f5348b75263c3489cb10e70",
+  "data_sha256": "387edf7fdd8665f413782a199644622550848df0a8f0683e59d6eaf353c0b4af",
+  "reviewer_model": "gemini-3.5-flash-lite"
+}
