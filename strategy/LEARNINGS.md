@@ -67,20 +67,21 @@ Refreshed by every producer run (`atlas.stats`) from the channel's public feed o
 | atlas049 Global Tobacco Use: East Timor at 48.8% and Nigeria at 3.1% | map_reveal | 2026-10-17 20:01 UTC | 422 | 1 | 2.4 |
 | atlas052 Clean Cooking Access: From 100% Down to 0% | rank_ladder | 2026-10-17 23:01 UTC | 1078 | 12 | 6.4 |
 | atlas053 Why Greece Has 165.1% College Enrollment | rank_ladder | 2026-10-18 16:01 UTC | 1023 | 10 | 6.7 |
-| atlas054 Household Goods Cost 130 in Iceland but 100 in USA | rank_ladder | 2026-10-18 20:01 UTC | 1040 | 3 | 7.0 |
-| atlas055 South Korea Has 12.8 Hospital Beds While Chad Has 0.1 | map_reveal | 2026-10-18 23:00 UTC | 1090 | 13 | 7.5 |
-| atlas056 Where More Boys Are Born: 1.01 to 1.11 Worldwide | map_reveal | 2026-10-19 16:02 UTC | 839 | 5 | 6.5 |
-| atlas058 Years Children Must Legally Attend School | rank_ladder | 2026-10-19 20:01 UTC | 1066 | 11 | 8.6 |
-| atlas061 100% of Adults in Iceland Have an Account, South Sudan 6% | map_reveal | 2026-10-19 23:01 UTC | 1057 | 4 | 8.7 |
-| atlas065 Iceland Uses 16,248 kg of Energy Per Person | map_reveal | 2026-10-20 16:03 UTC | 1017 | 11 | 9.7 |
-| atlas071 Australia Leads the World in Overweight Toddlers | map_reveal | 2026-10-20 20:00 UTC | 983 | 9 | 9.8 |
-| atlas075 Bulgaria Has 93.8 Bank Branches to DR Congo 0.6 | map_reveal | 2026-10-21 16:01 UTC | 349 | 4 | 4.3 |
-| atlas078 Places Ranked by Megacity Populations | rank_ladder | 2026-10-22 16:04 UTC | 1327 | 11 | 23.4 |
-| atlas079 Places Ranked by Arable Land | map_reveal | 2026-10-21 23:00 UTC | 1014 | 7 | 13.8 |
-| atlas081 Places Ranked by Income Inequality | rank_ladder | 2026-10-22 23:01 UTC | 996 | 7 | 20.1 |
-| atlas083 The Places With the Oldest Male Populations | map_reveal | 2026-10-23 16:02 UTC | 1030 | 9 | 31.5 |
-| atlas090 Places Ranked by Container Shipping CONNECTIVITY | rank_ladder | 2026-10-23 23:01 UTC | 918 | 9 | 35.8 |
-| atlas093 Direct Medical Costs Paid by Families | map_reveal | 2026-10-24 16:03 UTC | 1 | 0 | 0.1 |
+| atlas054 Household Goods Cost 130 in Iceland but 100 in USA | rank_ladder | 2026-10-18 20:01 UTC | 1040 | – | 6.6 |
+| atlas055 South Korea Has 12.8 Hospital Beds While Chad Has 0.1 | map_reveal | 2026-10-18 23:00 UTC | 1091 | – | 7.1 |
+| atlas056 Where More Boys Are Born: 1.01 to 1.11 Worldwide | map_reveal | 2026-10-19 16:02 UTC | 839 | – | 6.1 |
+| atlas058 Years Children Must Legally Attend School | rank_ladder | 2026-10-19 20:01 UTC | 1066 | – | 8.0 |
+| atlas061 100% of Adults in Iceland Have an Account, South Sudan 6% | map_reveal | 2026-10-19 23:01 UTC | 1057 | – | 8.1 |
+| atlas065 Iceland Uses 16,248 kg of Energy Per Person | map_reveal | 2026-10-20 16:03 UTC | 1017 | – | 9.0 |
+| atlas071 Australia Leads the World in Overweight Toddlers | map_reveal | 2026-10-20 20:00 UTC | 983 | – | 9.0 |
+| atlas075 Bulgaria Has 93.8 Bank Branches to DR Congo 0.6 | map_reveal | 2026-10-21 16:01 UTC | 349 | – | 3.9 |
+| atlas078 Places Ranked by Megacity Populations | rank_ladder | 2026-10-22 16:04 UTC | 1347 | – | 20.7 |
+| atlas079 Places Ranked by Arable Land | map_reveal | 2026-10-21 23:00 UTC | 1015 | – | 12.4 |
+| atlas081 Places Ranked by Income Inequality | rank_ladder | 2026-10-22 23:01 UTC | 996 | – | 17.1 |
+| atlas083 The Places With the Oldest Male Populations | map_reveal | 2026-10-23 16:02 UTC | 1032 | – | 25.1 |
+| atlas090 Places Ranked by Container Shipping CONNECTIVITY | rank_ladder | 2026-10-23 23:01 UTC | 921 | – | 27.0 |
+| atlas093 Direct Medical Costs Paid by Families | map_reveal | 2026-10-24 16:03 UTC | 2 | – | 0.1 |
+| atlas094 Places Ranked by Cost of Power Outages | rank_ladder | 2026-10-24 23:01 UTC | 209 | – | 20.6 |
 
 ## Log
 
