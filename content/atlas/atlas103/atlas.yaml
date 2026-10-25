@@ -1,0 +1,73 @@
+id: atlas103
+title: Places Ranked by Dependency Load
+hook_text: DEPENDENCY EXTREMES
+description: Age dependency ratio comparing dependents to working-age population.
+hashtags:
+- '#population'
+- '#maps'
+- '#geography'
+tags:
+- population
+- dependents per 100 working-age
+- Central African Republic
+- Qatar
+- world map
+- data
+sources:
+- https://data.worldbank.org/indicator/SP.POP.DPND
+dataset:
+  kind: worldbank
+  indicator: SP.POP.DPND
+  label: Dependents per 100 working-age
+  unit: per 100 working-age
+  source: World Bank
+  min_year: 2019
+scale:
+  edges:
+  - 35.0
+  - 50.0
+  - 65.0
+  - 80.0
+  labels:
+  - Under 35
+  - 35 to 50
+  - 50 to 65
+  - 65 to 80
+  - Over 80
+value_format: '{v:.0f}'
+beats:
+- text: In Qatar, 20 dependents rely on 100 workers. In Central African Republic, 104.
+  shot:
+    callouts:
+    - QAT
+    - CAF
+- text: Central African Republic is the world's highest, giving it 5.2 times what Qatar has.
+  shot:
+    kind: country
+    iso: CAF
+- text: It counts people younger than 15 or older than 64 against the working-age population.
+  basis: Age dependency ratio is the ratio of dependents--people younger than 15 or older than 64--to the working-age
+    population--those ages 15-64.
+- text: Regional giants vary. Nigeria has 77, while India has 46.
+  shot:
+    kind: group
+    isos:
+    - NGA
+    - IND
+- text: Japan has 70, which is more than the USA at 55 and China at 44.
+  shot:
+    kind: rank
+    isos:
+    - JPN
+    - USA
+    - CHN
+- text: Qatar sits at the bottom at 20.
+  shot:
+    kind: country
+    iso: QAT
+- text: Is the dependency load heavy or light in your country?
+  shot:
+    kind: card
+    lines:
+    - Is your load heavy?
+    - Dependents per 100 working-age

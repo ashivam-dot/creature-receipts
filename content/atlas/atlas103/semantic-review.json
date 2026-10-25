@@ -1,0 +1,158 @@
+{
+  "errors": [],
+  "claims": [
+    {
+      "surface": "title",
+      "text": "Places Ranked by Dependency Load",
+      "isos": [],
+      "support": "Indicator SP.POP.DPND Ranks and Values"
+    },
+    {
+      "surface": "hook",
+      "text": "DEPENDENCY EXTREMES",
+      "isos": [],
+      "support": "Indicator SP.POP.DPND"
+    },
+    {
+      "surface": "description",
+      "text": "Age dependency ratio comparing dependents to working-age population.",
+      "isos": [],
+      "support": "Age dependency ratio is the ratio of dependents--people younger than 15 or older than 64--to the working-age population--those ages 15-64."
+    },
+    {
+      "surface": "beat_0",
+      "text": "In Qatar, 20 dependents rely on 100 workers. In Central African Republic, 104.",
+      "isos": [
+        "QAT",
+        "CAF"
+      ],
+      "support": "Qatar value 20.049623922883 (display 20), Central African Republic value 103.585626770159 (display 104)"
+    },
+    {
+      "surface": "beat_1",
+      "text": "Central African Republic is the world's highest, giving it 5.2 times what Qatar has.",
+      "isos": [
+        "CAF",
+        "QAT"
+      ],
+      "support": "Central African Republic rank 1 (highest), 103.585626770159 / 20.049623922883 = 5.166465..."
+    },
+    {
+      "surface": "beat_2",
+      "text": "It counts people younger than 15 or older than 64 against the working-age population.",
+      "isos": [],
+      "support": "Age dependency ratio is the ratio of dependents--people younger than 15 or older than 64--to the working-age population--those ages 15-64."
+    },
+    {
+      "surface": "beat_3",
+      "text": "Regional giants vary. Nigeria has 77, while India has 46.",
+      "isos": [
+        "NGA",
+        "IND"
+      ],
+      "support": "Nigeria value 77.2712069555623 (display 77), India value 46.1386620179175 (display 46)"
+    },
+    {
+      "surface": "beat_4",
+      "text": "Japan has 70, which is more than the USA at 55 and China at 44.",
+      "isos": [
+        "JPN",
+        "USA",
+        "CHN"
+      ],
+      "support": "Japan value 70.1620638979948 (display 70), USA value 55.0057553311598 (display 55), China value 43.5105718441117 (display 44)"
+    },
+    {
+      "surface": "beat_5",
+      "text": "Qatar sits at the bottom at 20.",
+      "isos": [
+        "QAT"
+      ],
+      "support": "Qatar rank 208 (bottom), value 20.049623922883 (display 20)"
+    },
+    {
+      "surface": "beat_6",
+      "text": "Is the dependency load heavy or light in your country?",
+      "isos": [],
+      "support": "General question for viewer engagement regarding dependency ratio indicator SP.POP.DPND."
+    },
+    {
+      "surface": "card_6",
+      "text": "Is your load heavy? Dependents per 100 working-age",
+      "isos": [],
+      "support": "Data are shown as the proportion of dependents per 100 working-age population."
+    }
+  ],
+  "surface_checks": {
+    "title": {
+      "supported": true,
+      "reason": "Indicator is Age dependency ratio.",
+      "isos": []
+    },
+    "hook": {
+      "supported": true,
+      "reason": "Refers to high and low age dependency extremes.",
+      "isos": []
+    },
+    "description": {
+      "supported": true,
+      "reason": "Accurately reflects the definition of age dependency ratio.",
+      "isos": []
+    },
+    "beat_0": {
+      "supported": true,
+      "reason": "Values match Qatar (20) and Central African Republic (104).",
+      "isos": [
+        "QAT",
+        "CAF"
+      ]
+    },
+    "beat_1": {
+      "supported": true,
+      "reason": "Central African Republic is rank 1, and 104/20 is approximately 5.2.",
+      "isos": [
+        "CAF",
+        "QAT"
+      ]
+    },
+    "beat_2": {
+      "supported": true,
+      "reason": "Directly matches the definition text in evidence.",
+      "isos": []
+    },
+    "beat_3": {
+      "supported": true,
+      "reason": "Values match Nigeria (77) and India (46).",
+      "isos": [
+        "NGA",
+        "IND"
+      ]
+    },
+    "beat_4": {
+      "supported": true,
+      "reason": "Values match Japan (70), USA (55), and China (44 display).",
+      "isos": [
+        "JPN",
+        "USA",
+        "CHN"
+      ]
+    },
+    "beat_5": {
+      "supported": true,
+      "reason": "Qatar rank is 208 with value 20.",
+      "isos": [
+        "QAT"
+      ]
+    },
+    "beat_6": {
+      "supported": true,
+      "reason": "Valid stylistic audience question.",
+      "isos": []
+    },
+    "card_6": {
+      "supported": true,
+      "reason": "Unit matches 'per 100 working-age' from evidence.",
+      "isos": []
+    }
+  }
+}
