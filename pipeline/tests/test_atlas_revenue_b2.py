@@ -135,9 +135,10 @@ def test_episode_keeps_only_a_grounded_basis_and_records_tags_and_clean_hashtags
     ep, calls = _write(monkeypatch, [good])
     assert len(calls) == 1 and ep.title == "Is YOUR Country Mostly Born Abroad?"
     assert ep.beats[1].basis == "people born in a country other than that in which they live"
-    assert ep.hashtags == ["#migration", "#migrants", "#maps"]
-    assert ep.tags[:2] == ["migration", "share of people born abroad"] and ep.tags[-2:] == ["world map", "data"]
-    assert len(ep.tags) == 6  # family, label, the top and bottom places, world map, data
+    assert ep.hashtags == ["#migration", "#migrants", "#geography"]
+    assert ep.tags[:3] == ["migration", "share of people born abroad", "countries ranked by share of people born abroad"]
+    assert ep.tags[-3:] == ["world map", "geography", "atlas in numbers"]
+    assert len(ep.tags) == 8  # family, label, the search, the top and bottom places, world map, geography, channel
     ungrounded = _draft("Is YOUR Country Born Abroad?", basis="workers drawn by oil money")
     ep, _ = _write(monkeypatch, [ungrounded])
     assert all(not b.basis for b in ep.beats)
@@ -147,9 +148,9 @@ def test_episode_keeps_only_a_grounded_basis_and_records_tags_and_clean_hashtags
 
 def test_hashtags_drop_mangled_refill_output():
     assert writer.hashtags({"topic": "Global Consumer Price Inflation Rates", "hashtags": ["#maps改革", "#economics"]}) == \
-        ["#economy", "#economics", "#maps"]
+        ["#economy", "#economics", "#geography"]
     assert writer.hashtags({"topic": "Where Food Dominates Manufacturing", "hashtags": []}) == \
-        ["#data", "#maps", "#geography"]
+        ["#data", "#geography", "#countries"]
 
 
 def test_why_brief_keeps_never_invent_causes():
@@ -348,9 +349,22 @@ def test_tags_drop_the_obscure_family_and_hashtags_keep_one_specific_then_maps()
     obscure = {"topic": "Container shipping", "dataset": {"indicator": "IS.SHP.GCNW.XQ", "label": "Shipping"}}
     assert "obscure" not in writer.tags(obscure, ds, {"QAT": 1.0, "JPN": 2.0})
     assert writer.hashtags({"topic": "Share born abroad", "dataset": {"indicator": "SM.POP.TOTL.ZS"},
-                            "hashtags": ["#migrants", "#diaspora"]}) == ["#migration", "#migrants", "#maps"]
+                            "hashtags": ["#migrants", "#diaspora"]}) == ["#migration", "#migrants", "#geography"]
     assert writer.hashtags({"topic": "Share born abroad", "dataset": {"indicator": "SM.POP.TOTL.ZS"},
-                            "hashtags": ["#migration", "#diaspora"]}) == ["#migration", "#diaspora", "#maps"]
+                            "hashtags": ["#migration", "#diaspora"]}) == ["#migration", "#diaspora", "#geography"]
+
+
+def test_descriptions_and_tags_carry_the_search_people_type():
+    ds = _dataset()
+    line = publish.search_line(ds)
+    assert line.startswith("Countries and territories ranked by share of people born abroad (")
+    assert "highest " in line and "lowest " in line and not any(c.isdigit() for c in line.split("):")[1])
+    ep = AtlasEpisode.model_validate({"id": "atlas900", "title": "T", "description": "Who was born abroad.",
+                                      "hashtags": ["#migration", "#geography"], "tags": ["x" * 60] * 3 + ["a b"] * 200,
+                                      "dataset": TOPIC["dataset"], "beats": [{"text": "x"}]})
+    tags = publish.youtube_tags(ep)
+    assert sum(len(t) + 1 + 2 * (" " in t) for t in tags) <= 450 and tags[0] == "x" * 60
+    assert publish.description(ep, ds).split("\n\n")[1] == line
 
 
 def test_refill_runs_at_most_once_a_day_and_the_pipeline_saves_when_it_ran(tmp_path, monkeypatch):

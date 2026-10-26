@@ -73,10 +73,25 @@ def title_problems(ep: AtlasEpisode, ds: Dataset) -> list[str]:
     return episode_title_lint(ep, ds)
 
 
+def search_line(ds: Dataset) -> str:
+    """The words people search, high in the description: "Countries and territories ranked by <label> (<years>):
+    highest <place>, lowest <place>." Names only, no values: every number lives in the checked script."""
+    from . import geo
+
+    world = geo.world()
+    vals = {k: v for k, v in ds.values.items() if k in world}
+    if not vals or not ds.label:
+        return ""
+    top, bottom = (ds.names.get(k, world[k].name) for k in (max(vals, key=vals.get), min(vals, key=vals.get)))
+    label = ds.label if re.match(r"[A-Z]{2}", ds.label) else ds.label[:1].lower() + ds.label[1:]
+    return f"Countries and territories ranked by {label} ({ds.year_label}): highest {top}, lowest {bottom}."
+
+
 def description(ep: AtlasEpisode, ds: Dataset, folder: Path | None = None) -> str:
     sources = "\n".join(ep.sources) if ep.sources else ds.url
     blocks = [
         ep.description,
+        search_line(ds),
         f"Data: {ds.label}, {ds.source}, {ds.year_label} ({ds.license}).{_indicator(ds)}\n{sources}\n{MAP_CREDIT}",
         photo_credits(folder, ep.id),
         EDITORIAL,
@@ -245,7 +260,7 @@ def upload(ep: AtlasEpisode, folder: Path, ds: Dataset, video: Path, taken: list
     from googleapiclient.http import MediaFileUpload
 
     body = {"snippet": {"title": title, "description": text, "categoryId": CATEGORY, "defaultLanguage": "en",
-                        "defaultAudioLanguage": "en", "tags": [h.lstrip("#") for h in ep.hashtags[:3]]},
+                        "defaultAudioLanguage": "en", "tags": youtube_tags(ep)},
             "status": {"privacyStatus": "private", "publishAt": when.astimezone(timezone.utc).isoformat().replace(
                 "+00:00", "Z"), "selfDeclaredMadeForKids": False, "containsSyntheticMedia": True,
                 "embeddable": True, "license": "youtube"}}
@@ -257,6 +272,18 @@ def upload(ep: AtlasEpisode, folder: Path, ds: Dataset, video: Path, taken: list
         _, response = request.next_chunk()
     log.info("uploaded %s as %s for %s", ep.id, response["id"], when.isoformat())
     return _direct_record(record_path, ep, response["id"], when.isoformat())
+
+
+def youtube_tags(ep: AtlasEpisode, limit: int = 450) -> list[str]:
+    """The episode's tags then its hashtags' words, within YouTube's 500 characters (a tag with a space counts its
+    quotes)."""
+    out, used = [], 0
+    for tag in dict.fromkeys([*ep.tags, *(h.lstrip("#") for h in ep.hashtags), "atlas in numbers"]):
+        cost = len(tag) + (2 if " " in tag else 0) + 1
+        if tag and used + cost <= limit:
+            out.append(tag)
+            used += cost
+    return out
 
 
 def withdraw(video_ids: list[str], yt=None) -> list[str]:

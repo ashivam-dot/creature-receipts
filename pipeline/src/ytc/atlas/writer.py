@@ -757,24 +757,26 @@ def style_problems(draft: dict, definition: str = "") -> list[str]:
 
 
 def tags(topic: dict, ds: Dataset, vals: dict[str, float]) -> list[str]:
-    """YouTube-style tags for the episode record: family, the dataset's plain name, the top and bottom places on the
-    map, "world map", "data". Buffer can't send tags to YouTube, so they are recorded, not posted (CHANNEL.md)."""
+    """YouTube tags: family, the dataset's plain name and the search people type ("countries ranked by ..."), the
+    top and bottom places on the map, then the channel's own. Sent with direct uploads (Buffer has no tag field)."""
     from .topics import family
     ranked = sorted(vals, key=vals.get)
     names = [ds.names.get(iso, iso) for iso in (ranked[-1:] + ranked[:1])] if ranked else []
     label = re.sub(r"\s+", " ", re.sub(r"[^\w%+ ,.-]", " ", ds.label or topic.get("dataset", {}).get("label", ""))).strip()
-    found = [family(topic), label.lower(), *names, "world map", "data"]
+    found = [family(topic), label.lower(), f"countries ranked by {label.lower()}" if label else "", *names,
+             "world map", "geography", "atlas in numbers"]
     return list(dict.fromkeys(t for t in found if t and t not in ("other", "obscure")))
 
 
 def hashtags(topic: dict) -> list[str]:
-    """3 clean description hashtags: the topic family's, the topic's own specific one, then #maps / #geography.
-    Refill once wrote "#maps','#geography','#trade" as one string; only #letters-and-digits survive."""
+    """3 clean description hashtags: the topic family's, the topic's own specific one, then #geography / #countries
+    (on YouTube #maps is mostly game and cartography maps). Refill once wrote "#maps','#geography','#trade" as one
+    string; only #letters-and-digits survive."""
     from .topics import family_hashtag
     raw = re.findall(r"#[A-Za-z][A-Za-z0-9]*", " ".join(topic.get("hashtags", [])))
-    generic = {"#maps", "#geography", "#data"}
+    generic = {"#maps", "#geography", "#data", "#countries"}
     first = family_hashtag(topic)
-    picks = [first, *[h for h in raw if h.lower() not in generic | {first.lower()}][:1], "#maps", "#geography"]
+    picks = [first, *[h for h in raw if h.lower() not in generic | {first.lower()}][:1], "#geography", "#countries"]
     seen, out = set(), []
     for h in picks:
         if h.lower() not in seen:
