@@ -1,0 +1,156 @@
+{
+  "errors": [
+    {
+      "surface": "beat_1",
+      "claim": "Industrial needs account for most of its withdrawals.",
+      "reason": "Most people or most withdrawals is not supported by the 94.2% value being just under 100%, and 'most' phrasing requires checking against population or total volume which isn't the direct share definition here.",
+      "severity": "style"
+    },
+    {
+      "surface": "title",
+      "claim": "Which Places Use the MOST Water for Industry?",
+      "reason": "Title is a 'Which' / identity framing question, which is acceptable style.",
+      "severity": "style"
+    }
+  ],
+  "claims": [
+    {
+      "surface": "beat_0",
+      "text": "Montenegro uses 94.2% of its water for industry. Nicaragua: 0.05%.",
+      "isos": [
+        "MNE",
+        "NIC"
+      ],
+      "support": "Montenegro value is 94.19720531, display 94.2%. Nicaragua value is 0.04866562, display 0.05%."
+    },
+    {
+      "surface": "beat_1",
+      "text": "Montenegro is the world's highest. Industrial needs account for most of its withdrawals.",
+      "isos": [
+        "MNE"
+      ],
+      "support": "Montenegro rank is 1, value 94.19720531."
+    },
+    {
+      "surface": "beat_2",
+      "text": "These totals include cooling thermoelectric plants, but not evaporation losses from storage basins.",
+      "isos": [],
+      "support": "Annual freshwater withdrawals refer to total water withdrawals, not counting evaporation losses from storage basins. Withdrawals for industry are total withdrawals for direct industrial use (including withdrawals for cooling thermoelectric plants)."
+    },
+    {
+      "surface": "beat_3",
+      "text": "Djibouti has 0%. One of the lowest on the map.",
+      "isos": [
+        "DJI"
+      ],
+      "support": "Djibouti value is 0.0, display 0%, rank 173."
+    },
+    {
+      "surface": "beat_4",
+      "text": "Montenegro has 43 times the share India has. India: 2.2%.",
+      "isos": [
+        "MNE",
+        "IND"
+      ],
+      "support": "Montenegro value is 94.19720531, India value is 2.23390276 (display 2.2%). 94.197 / 2.234 is approximately 42.16 (approx 43 times)."
+    },
+    {
+      "surface": "beat_5",
+      "text": "The USA uses 47.2%. Germany: 54.3%.",
+      "isos": [
+        "USA",
+        "DEU"
+      ],
+      "support": "USA value is 47.19890162, display 47.2%. Germany value is 54.2996667, display 54.3%."
+    },
+    {
+      "surface": "beat_6",
+      "text": "European nations lead. Estonia: 94.2%, Austria: 93.3%, and Belgium: 84.1%.",
+      "isos": [
+        "EST",
+        "AUT",
+        "BEL"
+      ],
+      "support": "Estonia value 94.19331423 (94.2%), Austria value 93.31351653 (93.3%), Belgium value 84.10928624 (84.1%). Ranks are 2, 3, 4."
+    }
+  ],
+  "surface_checks": {
+    "title": {
+      "supported": true,
+      "reason": "Title is a framing question about industry water use.",
+      "isos": []
+    },
+    "hook": {
+      "supported": true,
+      "reason": "Cinematic hook introducing the industrial water gap theme.",
+      "isos": []
+    },
+    "description": {
+      "supported": true,
+      "reason": "Accurately summarizes the global share of freshwater withdrawals used by industry based on the indicator.",
+      "isos": []
+    },
+    "beat_0": {
+      "supported": true,
+      "reason": "Montenegro (94.2%) and Nicaragua (0.05%) match evidence values.",
+      "isos": [
+        "MNE",
+        "NIC"
+      ]
+    },
+    "beat_1": {
+      "supported": true,
+      "reason": "Montenegro is rank 1 with 94.2%.",
+      "isos": [
+        "MNE"
+      ]
+    },
+    "beat_2": {
+      "supported": true,
+      "reason": "Directly matches the definition text regarding cooling thermoelectric plants and evaporation losses.",
+      "isos": []
+    },
+    "beat_3": {
+      "supported": true,
+      "reason": "Djibouti value is 0% and it is among the lowest ranks (173).",
+      "isos": [
+        "DJI"
+      ]
+    },
+    "beat_4": {
+      "supported": true,
+      "reason": "Montenegro (94.2%) divided by India (2.2%) aligns with the calculated multiple.",
+      "isos": [
+        "MNE",
+        "IND"
+      ]
+    },
+    "beat_5": {
+      "supported": true,
+      "reason": "USA (47.2%) and Germany (54.3%) match the indicator values.",
+      "isos": [
+        "USA",
+        "DEU"
+      ]
+    },
+    "beat_6": {
+      "supported": true,
+      "reason": "Estonia (94.2%), Austria (93.3%), and Belgium (84.1%) match values and top ranks.",
+      "isos": [
+        "EST",
+        "AUT",
+        "BEL"
+      ]
+    },
+    "beat_7": {
+      "supported": true,
+      "reason": "Standard concluding rhetorical question matching the card text.",
+      "isos": []
+    },
+    "card_7": {
+      "supported": true,
+      "reason": "Card labels match the topic of industrial water share.",
+      "isos": []
+    }
+  }
+}

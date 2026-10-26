@@ -1,0 +1,81 @@
+id: atlas105
+title: Which Places Use the MOST Water for Industry?
+hook_text: INDUSTRIAL WATER GAP
+description: A cinematic look at the global share of freshwater withdrawals used by the industrial sector, highlighting
+  the extreme concentration in Europe.
+hashtags:
+- '#geography'
+- '#water'
+- '#maps'
+tags:
+- geography
+- industrial share of water withdrawals
+- Montenegro
+- Djibouti
+- world map
+- data
+sources:
+- https://data.worldbank.org/indicator/ER.H2O.FWIN.ZS
+dataset:
+  kind: worldbank
+  indicator: ER.H2O.FWIN.ZS
+  label: Industrial share of water withdrawals
+  unit: '%'
+  source: World Bank
+  min_year: 2019
+scale:
+  edges:
+  - 5.0
+  - 15.0
+  - 40.0
+  - 75.0
+  labels:
+  - Under 5%
+  - 5-15%
+  - 15-40%
+  - 40-75%
+  - Over 75%
+value_format: '{v:.2f}%'
+beats:
+- text: 'Montenegro uses 94.2% of its water for industry. Nicaragua: 0.05%.'
+  shot:
+    callouts:
+    - MNE
+    - NIC
+- text: Montenegro is the world's highest. Industrial needs account for most of its withdrawals.
+  shot:
+    kind: country
+    iso: MNE
+- text: These totals include cooling thermoelectric plants, but not evaporation losses from storage basins.
+  shot:
+    callouts:
+    - MNE
+  basis: not counting evaporation losses from storage basins
+- text: Djibouti has 0%. One of the lowest on the map.
+  shot:
+    kind: country
+    iso: DJI
+- text: 'Montenegro has 43 times the share India has. India: 2.2%.'
+  shot:
+    callouts:
+    - MNE
+    - IND
+- text: 'The USA uses 47.2%. Germany: 54.3%.'
+  shot:
+    kind: group
+    isos:
+    - USA
+    - DEU
+- text: 'European nations lead. Estonia: 94.2%, Austria: 93.3%, and Belgium: 84.1%.'
+  shot:
+    kind: rank
+    isos:
+    - EST
+    - AUT
+    - BEL
+- text: Does industry or agriculture claim more freshwater in your country?
+  shot:
+    kind: card
+    lines:
+    - Industry or farms?
+    - Industrial Water Share

@@ -1,0 +1,1905 @@
+{
+  "version": 1,
+  "evidence": {
+    "version": 1,
+    "indicator": "ER.H2O.FWIN.ZS",
+    "definition": "Annual freshwater withdrawals refer to total water withdrawals, not counting evaporation losses from storage basins. Withdrawals also include water from desalination plants in countries where they are a significant source. Withdrawals can exceed 100 percent of total renewable resources where extraction from nonrenewable aquifers or desalination plants is considerable or where there is significant water reuse. Withdrawals for industry are total withdrawals for direct industrial use (including withdrawals for cooling thermoelectric plants). Data are for the most recent year available for 1987-2002.",
+    "source": "https://data.worldbank.org/indicator/ER.H2O.FWIN.ZS",
+    "source_response_sha256": "ec43326ea8df6eb6d31c8996b19726d8f7eb015e799e25107572d1170fa9e44d",
+    "source_organization": "AQUASTAT - FAO's Global Information System on Water and Agriculture, Food and Agriculture Organization of the United Nations (FAO), uri: https://data.apps.fao.org/aquastat/, publisher: Food and Agriculture Organization of the United Nations (FAO), date accessed: 20240529",
+    "year_label": "latest available 2021–2022",
+    "universe": "mapped countries and territories with data",
+    "count": 177,
+    "threshold": null,
+    "at_or_above": null,
+    "entities": {
+      "AFG": {
+        "name": "Afghanistan",
+        "value": 0.831987591,
+        "display": "0.8%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 159
+      },
+      "ALB": {
+        "name": "Albania",
+        "value": 1.380175659,
+        "display": "1.4%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 154
+      },
+      "DZA": {
+        "name": "Algeria",
+        "value": 1.651309187,
+        "display": "1.7%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 144
+      },
+      "AGO": {
+        "name": "Angola",
+        "value": 33.94729385,
+        "display": "33.9%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 35
+      },
+      "ATG": {
+        "name": "Antigua and Barbuda",
+        "value": 21.73913043,
+        "display": "21.7%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 51
+      },
+      "ARG": {
+        "name": "Argentina",
+        "value": 10.58761249,
+        "display": "10.6%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 79
+      },
+      "ARM": {
+        "name": "Armenia",
+        "value": 4.8828125,
+        "display": "4.9%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 106
+      },
+      "AUS": {
+        "name": "Australia",
+        "value": 18.58936043,
+        "display": "18.6%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 57
+      },
+      "AUT": {
+        "name": "Austria",
+        "value": 93.31351653,
+        "display": "93.3%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 3
+      },
+      "AZE": {
+        "name": "Azerbaijan",
+        "value": 4.611351018,
+        "display": "4.6%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 112
+      },
+      "BHR": {
+        "name": "Bahrain",
+        "value": 3.245856354,
+        "display": "3.2%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 125
+      },
+      "BGD": {
+        "name": "Bangladesh",
+        "value": 2.146640647,
+        "display": "2.1%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 133
+      },
+      "BRB": {
+        "name": "Barbados",
+        "value": 7.654320988,
+        "display": "7.7%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 87
+      },
+      "BLR": {
+        "name": "Belarus",
+        "value": 30.41018388,
+        "display": "30.4%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 38
+      },
+      "BEL": {
+        "name": "Belgium",
+        "value": 84.10928624,
+        "display": "84.1%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 4
+      },
+      "BLZ": {
+        "name": "Belize",
+        "value": 20.99009901,
+        "display": "21%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 53
+      },
+      "BEN": {
+        "name": "Benin",
+        "value": 12.82051282,
+        "display": "12.8%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 71
+      },
+      "BTN": {
+        "name": "Bhutan",
+        "value": 0.887573965,
+        "display": "0.9%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 158
+      },
+      "BOL": {
+        "name": "Bolivia",
+        "value": 1.451306354,
+        "display": "1.5%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 152
+      },
+      "BWA": {
+        "name": "Botswana",
+        "value": 11.39097625,
+        "display": "11.4%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 75
+      },
+      "BRA": {
+        "name": "Brazil",
+        "value": 15.01324698,
+        "display": "15%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 67
+      },
+      "BGR": {
+        "name": "Bulgaria",
+        "value": 71.26016589,
+        "display": "71.3%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 11
+      },
+      "BFA": {
+        "name": "Burkina Faso",
+        "value": 2.652811736,
+        "display": "2.7%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 129
+      },
+      "BDI": {
+        "name": "Burundi",
+        "value": 5.355230275,
+        "display": "5.4%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 103
+      },
+      "CPV": {
+        "name": "Cabo Verde",
+        "value": 2.12059045,
+        "display": "2.1%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 134
+      },
+      "KHM": {
+        "name": "Cambodia",
+        "value": 1.510989011,
+        "display": "1.5%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 147
+      },
+      "CMR": {
+        "name": "Cameroon",
+        "value": 9.610437339,
+        "display": "9.6%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 81
+      },
+      "CAN": {
+        "name": "Canada",
+        "value": 75.81266454,
+        "display": "75.8%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 7
+      },
+      "CAF": {
+        "name": "Central African Republic",
+        "value": 16.55172414,
+        "display": "16.6%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 61
+      },
+      "TCD": {
+        "name": "Chad",
+        "value": 11.78944975,
+        "display": "11.8%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 74
+      },
+      "CHL": {
+        "name": "Chile",
+        "value": 5.128205128,
+        "display": "5.1%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 104
+      },
+      "CHN": {
+        "name": "China",
+        "value": 17.72609197,
+        "display": "17.7%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 59
+      },
+      "COL": {
+        "name": "Colombia",
+        "value": 4.149108108,
+        "display": "4.1%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 115
+      },
+      "COM": {
+        "name": "Comoros",
+        "value": 5.0,
+        "display": "5%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 105
+      },
+      "COD": {
+        "name": "Congo, Dem. Rep.",
+        "value": 21.47454652,
+        "display": "21.5%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 52
+      },
+      "COG": {
+        "name": "Congo, Rep.",
+        "value": 26.17230098,
+        "display": "26.2%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 44
+      },
+      "CRI": {
+        "name": "Costa Rica",
+        "value": 7.117833809,
+        "display": "7.1%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 90
+      },
+      "CIV": {
+        "name": "Cote d'Ivoire",
+        "value": 20.82616179,
+        "display": "20.8%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 55
+      },
+      "HRV": {
+        "name": "Croatia",
+        "value": 46.7519685,
+        "display": "46.8%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 22
+      },
+      "CUB": {
+        "name": "Cuba",
+        "value": 10.63371174,
+        "display": "10.6%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 78
+      },
+      "CYP": {
+        "name": "Cyprus",
+        "value": 5.882352941,
+        "display": "5.9%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 100
+      },
+      "CZE": {
+        "name": "Czechia",
+        "value": 53.66528354,
+        "display": "53.7%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 18
+      },
+      "DNK": {
+        "name": "Denmark",
+        "value": 4.82431637,
+        "display": "4.8%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 109
+      },
+      "DJI": {
+        "name": "Djibouti",
+        "value": 0.0,
+        "display": "0%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 173
+      },
+      "DMA": {
+        "name": "Dominica",
+        "value": 0.0,
+        "display": "0%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 173
+      },
+      "DOM": {
+        "name": "Dominican Republic",
+        "value": 7.269302372,
+        "display": "7.3%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 89
+      },
+      "ECU": {
+        "name": "Ecuador",
+        "value": 5.5353902,
+        "display": "5.5%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 101
+      },
+      "EGY": {
+        "name": "Egypt, Arab Rep.",
+        "value": 6.967741936,
+        "display": "7%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 92
+      },
+      "SLV": {
+        "name": "El Salvador",
+        "value": 4.865325145,
+        "display": "4.9%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 107
+      },
+      "GNQ": {
+        "name": "Equatorial Guinea",
+        "value": 15.15151515,
+        "display": "15.2%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 66
+      },
+      "ERI": {
+        "name": "Eritrea",
+        "value": 0.171821306,
+        "display": "0.2%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 166
+      },
+      "EST": {
+        "name": "Estonia",
+        "value": 94.19331423,
+        "display": "94.2%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 2
+      },
+      "SWZ": {
+        "name": "Eswatini",
+        "value": 1.938202247,
+        "display": "1.9%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 137
+      },
+      "ETH": {
+        "name": "Ethiopia",
+        "value": 0.484447436,
+        "display": "0.5%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 162
+      },
+      "FJI": {
+        "name": "Fiji",
+        "value": 11.30742049,
+        "display": "11.3%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 76
+      },
+      "FIN": {
+        "name": "Finland",
+        "value": 46.4109636,
+        "display": "46.4%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 23
+      },
+      "FRA": {
+        "name": "France",
+        "value": 68.12522285,
+        "display": "68.1%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 14
+      },
+      "GAB": {
+        "name": "Gabon",
+        "value": 10.13659238,
+        "display": "10.1%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 80
+      },
+      "GMB": {
+        "name": "Gambia, The",
+        "value": 20.86614173,
+        "display": "20.9%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 54
+      },
+      "GEO": {
+        "name": "Georgia",
+        "value": 27.40571217,
+        "display": "27.4%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 43
+      },
+      "DEU": {
+        "name": "Germany",
+        "value": 54.2996667,
+        "display": "54.3%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 17
+      },
+      "GHA": {
+        "name": "Ghana",
+        "value": 6.486412672,
+        "display": "6.5%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 95
+      },
+      "GRC": {
+        "name": "Greece",
+        "value": 2.777446893,
+        "display": "2.8%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 127
+      },
+      "GRD": {
+        "name": "Grenada",
+        "value": 0.0,
+        "display": "0%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 173
+      },
+      "GTM": {
+        "name": "Guatemala",
+        "value": 18.14325682,
+        "display": "18.1%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 58
+      },
+      "GIN": {
+        "name": "Guinea",
+        "value": 6.741573034,
+        "display": "6.7%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 93
+      },
+      "GNB": {
+        "name": "Guinea-Bissau",
+        "value": 6.263157895,
+        "display": "6.3%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 99
+      },
+      "GUY": {
+        "name": "Guyana",
+        "value": 1.412057867,
+        "display": "1.4%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 153
+      },
+      "HTI": {
+        "name": "Haiti",
+        "value": 3.517241379,
+        "display": "3.5%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 121
+      },
+      "HND": {
+        "name": "Honduras",
+        "value": 7.093963908,
+        "display": "7.1%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 91
+      },
+      "HUN": {
+        "name": "Hungary",
+        "value": 75.66391655,
+        "display": "75.7%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 8
+      },
+      "ISL": {
+        "name": "Iceland",
+        "value": 71.14624506,
+        "display": "71.1%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 12
+      },
+      "IND": {
+        "name": "India",
+        "value": 2.23390276,
+        "display": "2.2%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 132
+      },
+      "IDN": {
+        "name": "Indonesia",
+        "value": 4.103128439,
+        "display": "4.1%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 116
+      },
+      "IRN": {
+        "name": "Iran, Islamic Rep.",
+        "value": 1.178992497,
+        "display": "1.2%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 156
+      },
+      "IRQ": {
+        "name": "Iraq",
+        "value": 10.6543466,
+        "display": "10.7%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 77
+      },
+      "IRL": {
+        "name": "Ireland",
+        "value": 31.78840406,
+        "display": "31.8%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 37
+      },
+      "ISR": {
+        "name": "Israel",
+        "value": 4.0013089313,
+        "display": "4%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 117
+      },
+      "ITA": {
+        "name": "Italy",
+        "value": 22.74875916,
+        "display": "22.7%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 49
+      },
+      "JAM": {
+        "name": "Jamaica",
+        "value": 9.504381981,
+        "display": "9.5%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 82
+      },
+      "JPN": {
+        "name": "Japan",
+        "value": 16.35220126,
+        "display": "16.4%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 63
+      },
+      "JOR": {
+        "name": "Jordan",
+        "value": 3.337979473,
+        "display": "3.3%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 124
+      },
+      "KAZ": {
+        "name": "Kazakhstan",
+        "value": 23.85025461,
+        "display": "23.9%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 47
+      },
+      "KEN": {
+        "name": "Kenya",
+        "value": 7.514880952,
+        "display": "7.5%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 88
+      },
+      "PRK": {
+        "name": "Korea, Dem. People's Rep.",
+        "value": 13.22506872,
+        "display": "13.2%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 70
+      },
+      "KOR": {
+        "name": "Korea, Rep.",
+        "value": 16.43157817,
+        "display": "16.4%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 62
+      },
+      "KWT": {
+        "name": "Kuwait",
+        "value": 1.864,
+        "display": "1.9%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 138
+      },
+      "KGZ": {
+        "name": "Kyrgyz Republic",
+        "value": 4.386422977,
+        "display": "4.4%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 113
+      },
+      "LAO": {
+        "name": "Lao PDR",
+        "value": 2.31292517,
+        "display": "2.3%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 131
+      },
+      "LVA": {
+        "name": "Latvia",
+        "value": 17.5769146,
+        "display": "17.6%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 60
+      },
+      "LBN": {
+        "name": "Lebanon",
+        "value": 48.91304348,
+        "display": "48.9%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 19
+      },
+      "LSO": {
+        "name": "Lesotho",
+        "value": 45.66210046,
+        "display": "45.7%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 24
+      },
+      "LBR": {
+        "name": "Liberia",
+        "value": 36.60041124,
+        "display": "36.6%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 32
+      },
+      "LBY": {
+        "name": "Libya",
+        "value": 4.802744425,
+        "display": "4.8%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 110
+      },
+      "LTU": {
+        "name": "Lithuania",
+        "value": 29.28485817,
+        "display": "29.3%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 41
+      },
+      "LUX": {
+        "name": "Luxembourg",
+        "value": 3.833263511,
+        "display": "3.8%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 118
+      },
+      "MDG": {
+        "name": "Madagascar",
+        "value": 1.194225819,
+        "display": "1.2%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 155
+      },
+      "MWI": {
+        "name": "Malawi",
+        "value": 3.515625,
+        "display": "3.5%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 122
+      },
+      "MYS": {
+        "name": "Malaysia",
+        "value": 29.9016035,
+        "display": "29.9%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 39
+      },
+      "MLI": {
+        "name": "Mali",
+        "value": 0.077130737,
+        "display": "0.1%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 168
+      },
+      "MLT": {
+        "name": "Malta",
+        "value": 1.616677751,
+        "display": "1.6%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 145
+      },
+      "MRT": {
+        "name": "Mauritania",
+        "value": 2.355206636,
+        "display": "2.4%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 130
+      },
+      "MUS": {
+        "name": "Mauritius",
+        "value": 1.579778831,
+        "display": "1.6%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 146
+      },
+      "MEX": {
+        "name": "Mexico",
+        "value": 8.85575574,
+        "display": "8.9%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 84
+      },
+      "MDA": {
+        "name": "Moldova",
+        "value": 73.05764411,
+        "display": "73.1%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 9
+      },
+      "MNG": {
+        "name": "Mongolia",
+        "value": 35.94290657,
+        "display": "35.9%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 33
+      },
+      "MNE": {
+        "name": "Montenegro",
+        "value": 94.19720531,
+        "display": "94.2%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 1
+      },
+      "MAR": {
+        "name": "Morocco",
+        "value": 2.032403413,
+        "display": "2%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 135
+      },
+      "MOZ": {
+        "name": "Mozambique",
+        "value": 1.697216565,
+        "display": "1.7%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 141
+      },
+      "MMR": {
+        "name": "Myanmar",
+        "value": 1.492599891,
+        "display": "1.5%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 149
+      },
+      "NAM": {
+        "name": "Namibia",
+        "value": 6.618579009,
+        "display": "6.6%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 94
+      },
+      "NPL": {
+        "name": "Nepal",
+        "value": 0.310621137,
+        "display": "0.3%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 164
+      },
+      "NLD": {
+        "name": "Netherlands",
+        "value": 70.24895662,
+        "display": "70.2%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 13
+      },
+      "NZL": {
+        "name": "New Zealand",
+        "value": 23.97731875,
+        "display": "24%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 46
+      },
+      "NIC": {
+        "name": "Nicaragua",
+        "value": 0.04866562,
+        "display": "0.05%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 170
+      },
+      "NER": {
+        "name": "Niger",
+        "value": 1.496290918,
+        "display": "1.5%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 148
+      },
+      "NGA": {
+        "name": "Nigeria",
+        "value": 15.75150301,
+        "display": "15.8%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 65
+      },
+      "MKD": {
+        "name": "North Macedonia",
+        "value": 1.452452222,
+        "display": "1.5%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 151
+      },
+      "NOR": {
+        "name": "Norway",
+        "value": 39.82434156,
+        "display": "39.8%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 30
+      },
+      "OMN": {
+        "name": "Oman",
+        "value": 12.42819843,
+        "display": "12.4%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 72
+      },
+      "PAK": {
+        "name": "Pakistan",
+        "value": 0.763150722,
+        "display": "0.8%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 160
+      },
+      "PAN": {
+        "name": "Panama",
+        "value": 0.511804524,
+        "display": "0.5%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 161
+      },
+      "PNG": {
+        "name": "Papua New Guinea",
+        "value": 42.74419791,
+        "display": "42.7%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 28
+      },
+      "PRY": {
+        "name": "Paraguay",
+        "value": 6.382096975,
+        "display": "6.4%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 98
+      },
+      "PER": {
+        "name": "Peru",
+        "value": 6.427717119,
+        "display": "6.4%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 96
+      },
+      "PHL": {
+        "name": "Philippines",
+        "value": 14.94095987,
+        "display": "14.9%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 68
+      },
+      "POL": {
+        "name": "Poland",
+        "value": 65.49228025,
+        "display": "65.5%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 15
+      },
+      "PRT": {
+        "name": "Portugal",
+        "value": 29.65812257,
+        "display": "29.7%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 40
+      },
+      "PRI": {
+        "name": "Puerto Rico (US)",
+        "value": 72.22476714,
+        "display": "72.2%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 10
+      },
+      "QAT": {
+        "name": "Qatar",
+        "value": 4.301014427,
+        "display": "4.3%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 114
+      },
+      "ROU": {
+        "name": "Romania",
+        "value": 48.33762729,
+        "display": "48.3%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 20
+      },
+      "RUS": {
+        "name": "Russian Federation",
+        "value": 44.78556001,
+        "display": "44.8%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 27
+      },
+      "RWA": {
+        "name": "Rwanda",
+        "value": 1.663893511,
+        "display": "1.7%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 142
+      },
+      "STP": {
+        "name": "Sao Tome and Principe",
+        "value": 1.466992665,
+        "display": "1.5%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 150
+      },
+      "SAU": {
+        "name": "Saudi Arabia",
+        "value": 5.386272699,
+        "display": "5.4%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 102
+      },
+      "SEN": {
+        "name": "Senegal",
+        "value": 0.046760411,
+        "display": "0.05%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 171
+      },
+      "SRB": {
+        "name": "Serbia",
+        "value": 77.92182282,
+        "display": "77.9%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 6
+      },
+      "SYC": {
+        "name": "Seychelles",
+        "value": 27.73722628,
+        "display": "27.7%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 42
+      },
+      "SLE": {
+        "name": "Sierra Leone",
+        "value": 26.15457116,
+        "display": "26.2%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 45
+      },
+      "SGP": {
+        "name": "Singapore",
+        "value": 45.0693085,
+        "display": "45.1%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 25
+      },
+      "SVK": {
+        "name": "Slovak Republic",
+        "value": 39.84264177,
+        "display": "39.8%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 29
+      },
+      "SVN": {
+        "name": "Slovenia",
+        "value": 77.99274486,
+        "display": "78%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 5
+      },
+      "SOM": {
+        "name": "Somalia, Fed. Rep.",
+        "value": 0.060642814,
+        "display": "0.1%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 169
+      },
+      "ZAF": {
+        "name": "South Africa",
+        "value": 23.15990166,
+        "display": "23.2%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 48
+      },
+      "SSD": {
+        "name": "South Sudan",
+        "value": 34.19452888,
+        "display": "34.2%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 34
+      },
+      "ESP": {
+        "name": "Spain",
+        "value": 18.95244659,
+        "display": "19%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 56
+      },
+      "LKA": {
+        "name": "Sri Lanka",
+        "value": 6.418971111,
+        "display": "6.4%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 97
+      },
+      "KNA": {
+        "name": "St. Kitts and Nevis",
+        "value": 0.0,
+        "display": "0%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 173
+      },
+      "LCA": {
+        "name": "St. Lucia",
+        "value": 0.0,
+        "display": "0%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 173
+      },
+      "VCT": {
+        "name": "St. Vincent and the Grenadines",
+        "value": 0.023523877,
+        "display": "0.02%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 172
+      },
+      "SDN": {
+        "name": "Sudan",
+        "value": 0.278448116,
+        "display": "0.3%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 165
+      },
+      "SUR": {
+        "name": "Suriname",
+        "value": 22.00032473,
+        "display": "22%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 50
+      },
+      "SWE": {
+        "name": "Sweden",
+        "value": 61.26692456,
+        "display": "61.3%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 16
+      },
+      "CHE": {
+        "name": "Switzerland",
+        "value": 37.09025854,
+        "display": "37.1%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 31
+      },
+      "SYR": {
+        "name": "Syrian Arab Republic",
+        "value": 3.671750078,
+        "display": "3.7%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 120
+      },
+      "TJK": {
+        "name": "Tajikistan",
+        "value": 16.26262626,
+        "display": "16.3%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 64
+      },
+      "TZA": {
+        "name": "Tanzania",
+        "value": 0.482253086,
+        "display": "0.5%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 163
+      },
+      "THA": {
+        "name": "Thailand",
+        "value": 4.845914913,
+        "display": "4.8%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 108
+      },
+      "TLS": {
+        "name": "Timor-Leste",
+        "value": 0.170648464,
+        "display": "0.2%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 167
+      },
+      "TGO": {
+        "name": "Togo",
+        "value": 2.825112108,
+        "display": "2.8%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 126
+      },
+      "TTO": {
+        "name": "Trinidad and Tobago",
+        "value": 33.63778706,
+        "display": "33.6%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 36
+      },
+      "TUN": {
+        "name": "Tunisia",
+        "value": 1.725483637,
+        "display": "1.7%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 140
+      },
+      "TUR": {
+        "name": "Turkiye",
+        "value": 2.008312523,
+        "display": "2%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 136
+      },
+      "TKM": {
+        "name": "Turkmenistan",
+        "value": 4.641954248,
+        "display": "4.6%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 111
+      },
+      "UGA": {
+        "name": "Uganda",
+        "value": 7.849293564,
+        "display": "7.8%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 86
+      },
+      "UKR": {
+        "name": "Ukraine",
+        "value": 44.8441247,
+        "display": "44.8%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 26
+      },
+      "ARE": {
+        "name": "United Arab Emirates",
+        "value": 1.141623722,
+        "display": "1.1%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 157
+      },
+      "GBR": {
+        "name": "United Kingdom",
+        "value": 11.99524941,
+        "display": "12%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 73
+      },
+      "USA": {
+        "name": "United States",
+        "value": 47.19890162,
+        "display": "47.2%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 21
+      },
+      "URY": {
+        "name": "Uruguay",
+        "value": 13.39339356,
+        "display": "13.4%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 69
+      },
+      "UZB": {
+        "name": "Uzbekistan",
+        "value": 2.696629214,
+        "display": "2.7%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 128
+      },
+      "VEN": {
+        "name": "Venezuela, RB",
+        "value": 3.506096887,
+        "display": "3.5%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 123
+      },
+      "VNM": {
+        "name": "Viet Nam",
+        "value": 3.747409484,
+        "display": "3.7%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 119
+      },
+      "PSE": {
+        "name": "West Bank and Gaza",
+        "value": 8.8959854015,
+        "display": "8.9%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 83
+      },
+      "YEM": {
+        "name": "Yemen, Rep.",
+        "value": 1.823281907,
+        "display": "1.8%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 139
+      },
+      "ZMB": {
+        "name": "Zambia",
+        "value": 8.269720102,
+        "display": "8.3%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 85
+      },
+      "ZWE": {
+        "name": "Zimbabwe",
+        "value": 1.656971738,
+        "display": "1.7%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 143
+      }
+    }
+  },
+  "review": {
+    "errors": [],
+    "claims": [
+      {
+        "surface": "beat_0",
+        "text": "Montenegro uses 94.2% of its water for industry. Nicaragua: 0.05%.",
+        "isos": [
+          "MNE",
+          "NIC"
+        ],
+        "support": "Montenegro value is 94.19720531, display 94.2%. Nicaragua value is 0.04866562, display 0.05%.",
+        "evidence": {
+          "MNE": {
+            "name": "Montenegro",
+            "value": 94.19720531,
+            "display": "94.2%",
+            "year": 2022,
+            "unit": "%",
+            "rank": 1
+          },
+          "NIC": {
+            "name": "Nicaragua",
+            "value": 0.04866562,
+            "display": "0.05%",
+            "year": 2022,
+            "unit": "%",
+            "rank": 170
+          }
+        }
+      },
+      {
+        "surface": "beat_1",
+        "text": "Montenegro is the world's highest. Industrial needs account for most of its withdrawals.",
+        "isos": [
+          "MNE"
+        ],
+        "support": "Montenegro rank is 1, value 94.19720531.",
+        "evidence": {
+          "MNE": {
+            "name": "Montenegro",
+            "value": 94.19720531,
+            "display": "94.2%",
+            "year": 2022,
+            "unit": "%",
+            "rank": 1
+          }
+        }
+      },
+      {
+        "surface": "beat_2",
+        "text": "These totals include cooling thermoelectric plants, but not evaporation losses from storage basins.",
+        "isos": [],
+        "support": "Annual freshwater withdrawals refer to total water withdrawals, not counting evaporation losses from storage basins. Withdrawals for industry are total withdrawals for direct industrial use (including withdrawals for cooling thermoelectric plants).",
+        "evidence": {}
+      },
+      {
+        "surface": "beat_3",
+        "text": "Djibouti has 0%. One of the lowest on the map.",
+        "isos": [
+          "DJI"
+        ],
+        "support": "Djibouti value is 0.0, display 0%, rank 173.",
+        "evidence": {
+          "DJI": {
+            "name": "Djibouti",
+            "value": 0.0,
+            "display": "0%",
+            "year": 2022,
+            "unit": "%",
+            "rank": 173
+          }
+        }
+      },
+      {
+        "surface": "beat_4",
+        "text": "Montenegro has 43 times the share India has. India: 2.2%.",
+        "isos": [
+          "MNE",
+          "IND"
+        ],
+        "support": "Montenegro value is 94.19720531, India value is 2.23390276 (display 2.2%). 94.197 / 2.234 is approximately 42.16 (approx 43 times).",
+        "evidence": {
+          "MNE": {
+            "name": "Montenegro",
+            "value": 94.19720531,
+            "display": "94.2%",
+            "year": 2022,
+            "unit": "%",
+            "rank": 1
+          },
+          "IND": {
+            "name": "India",
+            "value": 2.23390276,
+            "display": "2.2%",
+            "year": 2022,
+            "unit": "%",
+            "rank": 132
+          }
+        }
+      },
+      {
+        "surface": "beat_5",
+        "text": "The USA uses 47.2%. Germany: 54.3%.",
+        "isos": [
+          "USA",
+          "DEU"
+        ],
+        "support": "USA value is 47.19890162, display 47.2%. Germany value is 54.2996667, display 54.3%.",
+        "evidence": {
+          "USA": {
+            "name": "United States",
+            "value": 47.19890162,
+            "display": "47.2%",
+            "year": 2022,
+            "unit": "%",
+            "rank": 21
+          },
+          "DEU": {
+            "name": "Germany",
+            "value": 54.2996667,
+            "display": "54.3%",
+            "year": 2022,
+            "unit": "%",
+            "rank": 17
+          }
+        }
+      },
+      {
+        "surface": "beat_6",
+        "text": "European nations lead. Estonia: 94.2%, Austria: 93.3%, and Belgium: 84.1%.",
+        "isos": [
+          "EST",
+          "AUT",
+          "BEL"
+        ],
+        "support": "Estonia value 94.19331423 (94.2%), Austria value 93.31351653 (93.3%), Belgium value 84.10928624 (84.1%). Ranks are 2, 3, 4.",
+        "evidence": {
+          "EST": {
+            "name": "Estonia",
+            "value": 94.19331423,
+            "display": "94.2%",
+            "year": 2022,
+            "unit": "%",
+            "rank": 2
+          },
+          "AUT": {
+            "name": "Austria",
+            "value": 93.31351653,
+            "display": "93.3%",
+            "year": 2022,
+            "unit": "%",
+            "rank": 3
+          },
+          "BEL": {
+            "name": "Belgium",
+            "value": 84.10928624,
+            "display": "84.1%",
+            "year": 2022,
+            "unit": "%",
+            "rank": 4
+          }
+        }
+      },
+      {
+        "surface": "title",
+        "text": "Which Places Use the MOST Water for Industry?",
+        "isos": [],
+        "support": "Title is a framing question about industry water use.",
+        "method": "complete-surface-check",
+        "evidence": {}
+      },
+      {
+        "surface": "hook",
+        "text": "INDUSTRIAL WATER GAP",
+        "isos": [],
+        "support": "Cinematic hook introducing the industrial water gap theme.",
+        "method": "complete-surface-check",
+        "evidence": {}
+      },
+      {
+        "surface": "description",
+        "text": "A cinematic look at the global share of freshwater withdrawals used by the industrial sector, highlighting the extreme concentration in Europe.",
+        "isos": [],
+        "support": "Accurately summarizes the global share of freshwater withdrawals used by industry based on the indicator.",
+        "method": "complete-surface-check",
+        "evidence": {}
+      },
+      {
+        "surface": "beat_0",
+        "text": "Montenegro uses 94.2% of its water for industry. Nicaragua: 0.05%.",
+        "isos": [
+          "MNE",
+          "NIC"
+        ],
+        "support": "Montenegro (94.2%) and Nicaragua (0.05%) match evidence values.",
+        "method": "complete-surface-check",
+        "evidence": {
+          "MNE": {
+            "name": "Montenegro",
+            "value": 94.19720531,
+            "display": "94.2%",
+            "year": 2022,
+            "unit": "%",
+            "rank": 1
+          },
+          "NIC": {
+            "name": "Nicaragua",
+            "value": 0.04866562,
+            "display": "0.05%",
+            "year": 2022,
+            "unit": "%",
+            "rank": 170
+          }
+        }
+      },
+      {
+        "surface": "beat_1",
+        "text": "Montenegro is the world's highest. Industrial needs account for most of its withdrawals.",
+        "isos": [
+          "MNE"
+        ],
+        "support": "Montenegro is rank 1 with 94.2%.",
+        "method": "complete-surface-check",
+        "evidence": {
+          "MNE": {
+            "name": "Montenegro",
+            "value": 94.19720531,
+            "display": "94.2%",
+            "year": 2022,
+            "unit": "%",
+            "rank": 1
+          }
+        }
+      },
+      {
+        "surface": "beat_2",
+        "text": "These totals include cooling thermoelectric plants, but not evaporation losses from storage basins.",
+        "isos": [],
+        "support": "Directly matches the definition text regarding cooling thermoelectric plants and evaporation losses.",
+        "method": "complete-surface-check",
+        "evidence": {}
+      },
+      {
+        "surface": "beat_3",
+        "text": "Djibouti has 0%. One of the lowest on the map.",
+        "isos": [
+          "DJI"
+        ],
+        "support": "Djibouti value is 0% and it is among the lowest ranks (173).",
+        "method": "complete-surface-check",
+        "evidence": {
+          "DJI": {
+            "name": "Djibouti",
+            "value": 0.0,
+            "display": "0%",
+            "year": 2022,
+            "unit": "%",
+            "rank": 173
+          }
+        }
+      },
+      {
+        "surface": "beat_4",
+        "text": "Montenegro has 43 times the share India has. India: 2.2%.",
+        "isos": [
+          "MNE",
+          "IND"
+        ],
+        "support": "Montenegro (94.2%) divided by India (2.2%) aligns with the calculated multiple.",
+        "method": "complete-surface-check",
+        "evidence": {
+          "MNE": {
+            "name": "Montenegro",
+            "value": 94.19720531,
+            "display": "94.2%",
+            "year": 2022,
+            "unit": "%",
+            "rank": 1
+          },
+          "IND": {
+            "name": "India",
+            "value": 2.23390276,
+            "display": "2.2%",
+            "year": 2022,
+            "unit": "%",
+            "rank": 132
+          }
+        }
+      },
+      {
+        "surface": "beat_5",
+        "text": "The USA uses 47.2%. Germany: 54.3%.",
+        "isos": [
+          "USA",
+          "DEU"
+        ],
+        "support": "USA (47.2%) and Germany (54.3%) match the indicator values.",
+        "method": "complete-surface-check",
+        "evidence": {
+          "USA": {
+            "name": "United States",
+            "value": 47.19890162,
+            "display": "47.2%",
+            "year": 2022,
+            "unit": "%",
+            "rank": 21
+          },
+          "DEU": {
+            "name": "Germany",
+            "value": 54.2996667,
+            "display": "54.3%",
+            "year": 2022,
+            "unit": "%",
+            "rank": 17
+          }
+        }
+      },
+      {
+        "surface": "beat_6",
+        "text": "European nations lead. Estonia: 94.2%, Austria: 93.3%, and Belgium: 84.1%.",
+        "isos": [
+          "EST",
+          "AUT",
+          "BEL"
+        ],
+        "support": "Estonia (94.2%), Austria (93.3%), and Belgium (84.1%) match values and top ranks.",
+        "method": "complete-surface-check",
+        "evidence": {
+          "EST": {
+            "name": "Estonia",
+            "value": 94.19331423,
+            "display": "94.2%",
+            "year": 2022,
+            "unit": "%",
+            "rank": 2
+          },
+          "AUT": {
+            "name": "Austria",
+            "value": 93.31351653,
+            "display": "93.3%",
+            "year": 2022,
+            "unit": "%",
+            "rank": 3
+          },
+          "BEL": {
+            "name": "Belgium",
+            "value": 84.10928624,
+            "display": "84.1%",
+            "year": 2022,
+            "unit": "%",
+            "rank": 4
+          }
+        }
+      },
+      {
+        "surface": "beat_7",
+        "text": "Does industry or agriculture claim more freshwater in your country?",
+        "isos": [],
+        "support": "Standard concluding rhetorical question matching the card text.",
+        "method": "complete-surface-check",
+        "evidence": {}
+      },
+      {
+        "surface": "card_7",
+        "text": [
+          "Industry or farms?",
+          "Industrial Water Share"
+        ],
+        "isos": [],
+        "support": "Card labels match the topic of industrial water share.",
+        "method": "complete-surface-check",
+        "evidence": {}
+      }
+    ],
+    "surface_checks": {
+      "title": {
+        "supported": true,
+        "reason": "Title is a framing question about industry water use.",
+        "isos": []
+      },
+      "hook": {
+        "supported": true,
+        "reason": "Cinematic hook introducing the industrial water gap theme.",
+        "isos": []
+      },
+      "description": {
+        "supported": true,
+        "reason": "Accurately summarizes the global share of freshwater withdrawals used by industry based on the indicator.",
+        "isos": []
+      },
+      "beat_0": {
+        "supported": true,
+        "reason": "Montenegro (94.2%) and Nicaragua (0.05%) match evidence values.",
+        "isos": [
+          "MNE",
+          "NIC"
+        ]
+      },
+      "beat_1": {
+        "supported": true,
+        "reason": "Montenegro is rank 1 with 94.2%.",
+        "isos": [
+          "MNE"
+        ]
+      },
+      "beat_2": {
+        "supported": true,
+        "reason": "Directly matches the definition text regarding cooling thermoelectric plants and evaporation losses.",
+        "isos": []
+      },
+      "beat_3": {
+        "supported": true,
+        "reason": "Djibouti value is 0% and it is among the lowest ranks (173).",
+        "isos": [
+          "DJI"
+        ]
+      },
+      "beat_4": {
+        "supported": true,
+        "reason": "Montenegro (94.2%) divided by India (2.2%) aligns with the calculated multiple.",
+        "isos": [
+          "MNE",
+          "IND"
+        ]
+      },
+      "beat_5": {
+        "supported": true,
+        "reason": "USA (47.2%) and Germany (54.3%) match the indicator values.",
+        "isos": [
+          "USA",
+          "DEU"
+        ]
+      },
+      "beat_6": {
+        "supported": true,
+        "reason": "Estonia (94.2%), Austria (93.3%), and Belgium (84.1%) match values and top ranks.",
+        "isos": [
+          "EST",
+          "AUT",
+          "BEL"
+        ]
+      },
+      "beat_7": {
+        "supported": true,
+        "reason": "Standard concluding rhetorical question matching the card text.",
+        "isos": []
+      },
+      "card_7": {
+        "supported": true,
+        "reason": "Card labels match the topic of industrial water share.",
+        "isos": []
+      }
+    },
+    "warnings": [
+      {
+        "surface": "beat_1",
+        "claim": "Industrial needs account for most of its withdrawals.",
+        "reason": "Most people or most withdrawals is not supported by the 94.2% value being just under 100%, and 'most' phrasing requires checking against population or total volume which isn't the direct share definition here.",
+        "severity": "style"
+      },
+      {
+        "surface": "title",
+        "claim": "Which Places Use the MOST Water for Industry?",
+        "reason": "Title is a 'Which' / identity framing question, which is acceptable style.",
+        "severity": "style"
+      }
+    ]
+  },
+  "script_sha256": "263a6ec44c448e05e4d5bcfeae035da3d52586ad4e18d5d3067699fc66a9f5eb",
+  "data_sha256": "39de09ec64d6c010af13d0fce4a7b87d4a191719efcc22eed32ed0c912344ff6",
+  "reviewer_model": "gemini-3.5-flash-lite"
+}
