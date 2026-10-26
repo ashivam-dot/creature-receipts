@@ -54,12 +54,12 @@ def _reverb(x: np.ndarray, seed: int, seconds: float = 2.2, wet: float = 0.3) ->
     return (1 - wet) * x + wet * y
 
 
-def score(seconds: float, seed_text: str) -> np.ndarray:
-    """Stereo float32 [n, 2] at 48 kHz, peak at -6 dBFS, with fades."""
+def score(seconds: float, seed_text: str, progression: int | None = None, tempo: float | None = None) -> np.ndarray:
+    """Stereo float32 [n, 2] at 48 kHz, peak at -6 dBFS, with fades. A look may fix the progression and tempo."""
     seed = int(hashlib.sha1(seed_text.encode()).hexdigest()[:8], 16)
     shift = [0, 2, -2, 3, -3, 5][seed % 6]
-    prog = PROGRESSIONS[(seed >> 4) % 2]
-    beat = 60 / (88 + (seed >> 8) % 12)
+    prog = PROGRESSIONS[(seed >> 4) % 2 if progression is None else progression % len(PROGRESSIONS)]
+    beat = 60 / (tempo or 88 + (seed >> 8) % 12)
     bar = 4 * beat
     total = int((seconds + bar + 4) * SR)
     left, right = np.zeros(total, np.float32), np.zeros(total, np.float32)

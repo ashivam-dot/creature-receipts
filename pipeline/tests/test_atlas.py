@@ -73,14 +73,13 @@ def test_quality_checks_every_ratio_against_the_data():
     assert quality.entity_value_errors("India has 13 times the density of the United States.", ep, ds) == []
 
 
-def test_two_slots_a_day():
-    assert publish.SLOTS == (time(12, 0), time(19, 0))
+def test_three_slots_a_day_from_the_owners_30_day_plan():
+    assert publish.SLOTS == (time(12, 0), time(16, 0), time(19, 0))
     now = datetime(2026, 10, 8, 10, 0, tzinfo=ET)
     assert publish.next_slot([], now) == datetime(2026, 10, 8, 12, 0, tzinfo=ET)
     taken = [datetime(2026, 10, 8, 12, 0, tzinfo=ET)]
-    assert publish.next_slot(taken, now) == datetime(2026, 10, 8, 19, 0, tzinfo=ET)
-    # 16:00 is no longer a slot: after 12:00 and 19:00 the next is tomorrow's lunch.
-    taken.append(datetime(2026, 10, 8, 19, 0, tzinfo=ET))
+    assert publish.next_slot(taken, now) == datetime(2026, 10, 8, 16, 0, tzinfo=ET)
+    taken += [datetime(2026, 10, 8, 16, 0, tzinfo=ET), datetime(2026, 10, 8, 19, 0, tzinfo=ET)]
     assert publish.next_slot(taken, now) == datetime(2026, 10, 9, 12, 0, tzinfo=ET)
     late = datetime(2026, 10, 8, 18, 45, tzinfo=ET)
     assert publish.next_slot([], late) == datetime(2026, 10, 9, 12, 0, tzinfo=ET)
@@ -188,7 +187,7 @@ def test_iso_codes_never_reach_the_narration():
 def test_prompt_formats_with_its_worked_example():
     from ytc.atlas import writer
 
-    names = ("topic", "angle", "format", "label", "unit", "source", "year", "count", "definition", "summary",
+    names = ("topic", "angle", "format", "format_note", "label", "unit", "source", "year", "count", "definition", "summary",
              "beats_min", "beats_max", "words_min", "words_max", "spoken_max", "feedback")
     text = writer.PROMPT.format(**{n: "x" for n in names})
     assert '{"shot": "country", "isos": ["BGD"]' in text

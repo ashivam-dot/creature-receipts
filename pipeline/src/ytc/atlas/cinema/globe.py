@@ -226,7 +226,8 @@ def bake(ep, ds, scale: Scale, spans: list[tuple[float, float]], duration: float
             name = f"hi_{i}.png"
             s["hibox"] = [round(v, 6) for v in highlight_texture(s.get("hi_isos", s["isos"]), accent, out / name)]
             s["hi"] = name
-    scene = {"countries": countries, "shots": plan, "grow": [0.0, 1.6], "duration": duration}
+    scene = {"countries": countries, "shots": plan, "grow": [0.0, 1.6], "duration": duration,
+             "accent": _hex(accent)}
     (out / "scene.json").write_text(json.dumps(scene), encoding="utf-8")
     return scene
 

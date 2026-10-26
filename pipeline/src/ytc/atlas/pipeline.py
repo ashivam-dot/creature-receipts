@@ -27,7 +27,7 @@ import requests
 from . import quality, receipt, topics, writer
 from .cinema import film
 from .data import Dataset, fetch
-from .episode import AtlasEpisode
+from .episode import ROTATION, AtlasEpisode
 
 log = logging.getLogger(__name__)
 
@@ -93,8 +93,9 @@ def pick() -> dict | None:
     candidates = [t for t in catalogue if t.get("status") == "open"]
     if not candidates:
         return None
-    recent = sorted((t for t in catalogue if re.search(r"atlas\d{3,}$", t.get("status", ""))),
-                    key=lambda t: int(t["status"].split("atlas")[-1]), reverse=True)[:3]
+    made = sorted((t for t in catalogue if re.search(r"atlas\d{3,}$", t.get("status", ""))),
+                  key=lambda t: int(t["status"].split("atlas")[-1]), reverse=True)
+    recent = made[:3]
     last = recent[0] if recent else {}
     # Never two Shorts in a row from one family (a viewer sees the same story twice) while another family with some
     # pull is open: with only the obscure tail left, a repeat of a pulling family beats a Short nobody searches for.
@@ -105,12 +106,23 @@ def pick() -> dict | None:
     chosen = min(candidates, key=lambda t: (fresh and family(last) == family(t), -topics.pull(t),
                                             sum(family(old) == family(t) for old in recent), -t.get("priority", 0),
                                             bool(last) and last.get("format", "map_reveal") == t.get("format", "map_reveal")))
-    # Nor two of one visual shape in a row: a map reveal and a rank ladder tell any dataset, so swap rather than
-    # fall back to a weaker topic.
-    flip = {"map_reveal": "rank_ladder", "rank_ladder": "map_reveal"}
-    if last and last.get("format", "map_reveal") == chosen.get("format", "map_reveal") in flip:
-        chosen = {**chosen, "format": flip[chosen.get("format", "map_reveal")]}
-    return chosen
+    # Every format tells any dataset, and each has its own look: rotate them so no two Shorts in a row look alike.
+    # Formats tried earlier in this run count as the newest, so a format whose drafts fail can't take every try.
+    history = TRIED[::-1] + [t.get("format", "map_reveal") for t in made]
+    fmt = next_format(history[:len(ROTATION) - 1])
+    TRIED.append(fmt)
+    return {**chosen, "format": fmt}
+
+
+# The formats pick() handed out in this process, oldest first.
+TRIED: list[str] = []
+
+
+def next_format(recent: list[str]) -> str:
+    """The rotation format least used among the recent Shorts (newest first), never the newest one's."""
+    rotation = [f for f in ROTATION if not recent or f != recent[0]]
+    return min(rotation, key=lambda f: (recent.count(f), -next((i for i, r in enumerate(recent) if r == f),
+                                                               len(recent)), ROTATION.index(f)))
 
 
 def make(topic: dict, episode_id: str) -> tuple[AtlasEpisode, Path, Dataset, Path]:
@@ -219,7 +231,7 @@ def park(ep: AtlasEpisode, folder: Path, video: Path, topic_id: str) -> dict:
             raise RuntimeError(f"{ep.id}: the parked copy differs from the render")
     quality.verify(folder, sha)
     record = {"qa_sha256": quality.digest(folder / "qa.json"), "id": ep.id, "title": ep.title, "topic": topic_id, "media_sha256": sha, "bytes": target.stat().st_size,
-              "modal_volume": OUTBOX_VOLUME, "modal_path": rel, "format": FORMAT,
+              "modal_volume": OUTBOX_VOLUME, "modal_path": rel, "format": FORMAT, "look": ep.format,
               "rendered_at": datetime.now(timezone.utc).isoformat(timespec="seconds"), **score(folder, topic_id)}
     (folder / "ready.json").write_text(json.dumps(record, indent=2) + "\n", encoding="utf-8")
     _tidy(folder)

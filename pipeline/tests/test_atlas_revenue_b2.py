@@ -10,6 +10,11 @@ from ytc.atlas import geo, pipeline, publish, topics, writer
 from ytc.atlas.data import Dataset
 from ytc.atlas.episode import AtlasEpisode
 
+@pytest.fixture(autouse=True)
+def _fresh_run(monkeypatch):
+    monkeypatch.setattr(pipeline, "TRIED", [])
+
+
 DEFINITION = ("International migrant stock is the number of people born in a country other than that in which they "
               "live. It also includes refugees.")
 
@@ -192,13 +197,61 @@ def test_pick_prefers_pull_never_repeats_the_last_family_and_swaps_a_repeated_fo
         {"id": "t4", "topic": "Share born abroad", "dataset": ds("SM.POP.TOTL.ZS", "Share of people born abroad"),
          "format": "map_reveal", "status": "open"}])
     chosen = pipeline.pick()
-    # Not t2 (wealth again), not t3 (obscure); t4's map reveal would repeat the last Short's shape, so it's a ladder.
-    assert chosen["id"] == "t4" and chosen["format"] == "rank_ladder"
+    # Not t2 (wealth again), not t3 (obscure); the format rotates on from the last Short's map reveal.
+    assert chosen["id"] == "t4" and chosen["format"] == "versus"
     saved = json.loads(pipeline.TOPICS.read_text())["topics"][3]
     assert saved["format"] == "map_reveal"  # pick() itself changes nothing on disk
     pipeline._mark("t4", "making:atlas011", format=chosen["format"])
     saved = json.loads(pipeline.TOPICS.read_text())["topics"][3]
-    assert (saved["status"], saved["format"]) == ("making:atlas011", "rank_ladder")
+    assert (saved["status"], saved["format"]) == ("making:atlas011", "versus")
+
+
+def test_formats_rotate_so_no_two_shorts_in_a_row_share_a_look():
+    assert pipeline.next_format([]) == "map_reveal"
+    assert pipeline.next_format(["map_reveal"]) == "versus"
+    assert pipeline.next_format(["versus", "map_reveal"]) == "rank_ladder"
+    # Older Shorts made before the rotation were all map reveals and ladders: the unused formats come first.
+    assert pipeline.next_format(["rank_ladder", "map_reveal", "rank_ladder", "map_reveal"]) == "versus"
+    made, recent = [], []
+    for _ in range(10):
+        made.append(pipeline.next_format(recent))
+        recent = made[::-1][:4]
+    assert all(a != b for a, b in zip(made, made[1:])) and set(made[:5]) == set(pipeline.ROTATION)
+
+
+def test_a_format_whose_drafts_fail_does_not_take_every_try_of_a_run(tmp_path, monkeypatch):
+    ds = lambda ind, label: {"indicator": ind, "label": label}  # noqa: E731
+    _catalogue(tmp_path, monkeypatch, [
+        {"id": "t1", "topic": "Economic output per person", "dataset": ds("NY.GDP.PCAP.CD", "GDP per person"),
+         "format": "map_reveal", "status": "used:atlas010"},
+        *({"id": f"t{i}", "topic": f"Topic {i}", "dataset": ds(f"X.Y{i}.Z", f"Label {i}"), "status": "open"}
+          for i in range(2, 6))])
+    formats = []
+    for _ in range(4):
+        chosen = pipeline.pick()
+        formats.append(chosen["format"])
+        pipeline._mark(chosen["id"], "failed:ValueError")
+    assert len(set(formats)) == 4 and "map_reveal" not in formats
+
+
+def test_format_note_title_examples_pass_the_title_rules():
+    for title in ("Which Country Has the MOST Doctors?", "Is INDIA Near the Top for Renewable Power?",
+                  "How Does the USA Compare on Savings?", "India vs China: Who Saves More?",
+                  "Countries Ranked by How Crowded They Are"):
+        assert writer.title_problems(title, ranked_ok=True) == [], title
+    for title in ("Which Country Has the MOST Doctors?", "Is INDIA Near the Top for Renewable Power?"):
+        assert writer.title_problems(title) == [], title
+
+
+def test_each_format_has_its_own_look():
+    from ytc.atlas.cinema import film, looks
+    seen = [looks.look(f) for f in pipeline.ROTATION]
+    assert len({lk.name for lk in seen}) == len(seen) and len({lk.accent for lk in seen}) == len(seen)
+    assert len({lk.voice.voice for lk in seen}) == len(seen)
+    film.apply_look("versus")
+    assert film.ACCENT == looks.LOOKS["versus"].accent and film.VOICE.voice == "bm_george"
+    film.apply_look(None)
+    assert film.LOOK is looks.DEFAULT
 
 
 def test_refill_does_not_count_the_obscure_tail_as_stock(monkeypatch):
@@ -325,7 +378,7 @@ def test_a_pulling_family_repeat_beats_the_obscure_tail_only_when_nothing_else_p
              "dataset": ds("IS.SHP.GCNW.XQ", "Liner shipping connectivity"), "format": "rank_ladder", "status": "open"}]
     _catalogue(tmp_path, monkeypatch, rows)
     chosen = pipeline.pick()
-    assert chosen["id"] == "t2" and chosen["format"] == "rank_ladder"  # last had no format: a map reveal
+    assert chosen["id"] == "t2" and chosen["format"] == "versus"  # last had no format: a map reveal
     rows.append({"id": "t4", "topic": "Share using the internet", "dataset": ds("IT.NET.USER.ZS", "Internet users"),
                  "format": "map_reveal", "status": "open"})
     _catalogue(tmp_path, monkeypatch, rows)

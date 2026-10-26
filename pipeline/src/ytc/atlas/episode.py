@@ -10,7 +10,9 @@ from typing import Literal
 import yaml
 from pydantic import BaseModel, ConfigDict, Field, model_validator
 
-FORMATS = ("map_reveal", "rank_ladder", "versus", "odd_one_out", "then_now")
+FORMATS = ("map_reveal", "rank_ladder", "versus", "odd_one_out", "then_now", "spotlight")
+# The order Shorts take formats in, each with its own look (cinema/looks.py); then_now needs a time series.
+ROTATION = ("map_reveal", "versus", "rank_ladder", "odd_one_out", "spotlight")
 _DIGITS = re.compile(r"\d[\d,]*(?:\.\d+)?")
 # Decimals a value keeps: 3 significant figures, and 1 decimal for a percentage. Whisper writes "5.0%" as "5%" and
 # "70.5202%" as "70.520%", so the narrator must never be asked to say more than a person would (2026-10-21).

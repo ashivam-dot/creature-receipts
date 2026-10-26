@@ -187,3 +187,130 @@ def test_an_unpublished_held_short_is_still_upgraded(monkeypatch, tmp_path):
     monkeypatch.setattr(pipeline, "_tidy", lambda f: None)
     with pytest.raises(AssertionError, match="topic reopened"):
         _upgrade_run(monkeypatch, tmp_path, {})
+
+
+class _Call:
+    def __init__(self, result):
+        self.result = result
+
+    def execute(self):
+        return self.result
+
+    def next_chunk(self):
+        return None, self.result
+
+
+class _YouTube:
+    def __init__(self, channel=publish.CHANNEL_ID):
+        self.channel, self.inserted = channel, []
+
+    def channels(self):
+        return self
+
+    def playlistItems(self):
+        return self
+
+    def videos(self):
+        return self
+
+    def list(self, **params):
+        if "mine" in params:
+            return _Call({"items": [{"id": self.channel, "contentDetails": {"relatedPlaylists": {"uploads": "UU"}}}]})
+        if "playlistId" in params:
+            return _Call({"items": [{"contentDetails": {"videoId": "old1"}}]})
+        return _Call({"items": [{"id": "old1", "snippet": {"description": "Atlas episode: atlas800"},
+                                 "status": {"publishAt": "2026-10-28T16:00:00Z"}}]})
+
+    def insert(self, **params):
+        self.inserted.append(params)
+        return _Call({"id": "new1"})
+
+
+def test_direct_upload_is_private_until_its_slot_and_never_uploads_an_episode_twice(tmp_path):
+    from datetime import datetime, timezone
+
+    ds = _dataset()
+    yt = _YouTube()
+    video = tmp_path / "v.mp4"
+    video.write_bytes(b"\x00\x00\x00\x18ftypmp42")
+    existing = publish.recent_uploads(yt)
+    taken = [datetime(2026, 10, 28, 16, tzinfo=timezone.utc)]
+    record = publish.upload(_ep("Is YOUR Country Short of Doctors?", ds), tmp_path, ds, video, taken, yt=yt,
+                            existing=existing)
+    body = yt.inserted[0]["body"]
+    assert record["route"] == "youtube" and record["youtube_video_id"] == "new1"
+    assert body["status"]["privacyStatus"] == "private" and body["status"]["publishAt"].endswith("Z")
+    assert body["status"]["containsSyntheticMedia"] and "Atlas episode: atlas900" in body["snippet"]["description"]
+    again = tmp_path / "again"
+    again.mkdir()
+    twin = publish.upload(_ep("Is YOUR Country Short of Doctors?", ds, "atlas800"), again, ds, video, taken, yt=yt,
+                          existing=existing)
+    assert twin["youtube_video_id"] == "old1" and len(yt.inserted) == 1
+    with pytest.raises(RuntimeError, match="not @atlasinnumbers"):
+        publish.recent_uploads(_YouTube(channel="UCother"))
+    # The slot of an upload whose record was lost is still taken.
+    first = publish.next_slot([])
+    lost = [{"id": "x", "snippet": {"description": ""},
+             "status": {"publishAt": first.astimezone(timezone.utc).isoformat().replace("+00:00", "Z")}}]
+    third = tmp_path / "third"
+    third.mkdir()
+    record = publish.upload(_ep("Is YOUR Country Short of Doctors?", ds, "atlas901"), third, ds, video, [], yt=yt,
+                            existing=lost)
+    assert datetime.fromisoformat(record["due_at"]) > first
+    stuck = [{"id": "y", "snippet": {"description": "Atlas episode: atlas902"}, "status": {"privacyStatus": "private"}}]
+    fourth = tmp_path / "fourth"
+    fourth.mkdir()
+    with pytest.raises(RuntimeError, match="private with no schedule"):
+        publish.upload(_ep("Is YOUR Country Short of Doctors?", ds, "atlas902"), fourth, ds, video, [], yt=yt,
+                       existing=stuck)
+
+
+def test_withdraw_keeps_uploads_private_and_clears_their_schedule():
+    class _Videos(_YouTube):
+        def __init__(self):
+            super().__init__()
+            self.updates = []
+
+        def list(self, **params):
+            return _Call({"items": [
+                {"id": "a", "snippet": {"channelId": publish.CHANNEL_ID},
+                 "status": {"privacyStatus": "private", "publishAt": "2026-11-02T17:00:00Z", "embeddable": True}},
+                {"id": "b", "snippet": {"channelId": publish.CHANNEL_ID}, "status": {"privacyStatus": "public"}},
+                {"id": "c", "snippet": {"channelId": "UCother"}, "status": {"privacyStatus": "private"}}]})
+
+        def update(self, **params):
+            self.updates.append(params["body"])
+            return _Call({})
+
+    yt = _Videos()
+    assert publish.withdraw(["a", "b", "c"], yt=yt) == ["a"]
+    assert yt.updates == [{"id": "a", "status": {"embeddable": True, "privacyStatus": "private", "publishAt": None}}]
+
+
+def test_three_slots_a_day():
+    from datetime import datetime
+
+    taken = []
+    for _ in range(6):
+        taken.append(publish.next_slot(taken, datetime(2026, 11, 2, 6, tzinfo=publish.pub.AUDIENCE_TZ)))
+    assert [t.hour for t in taken] == [12, 16, 19, 12, 16, 19] and taken[3].day == 3
+
+
+def test_order_never_puts_two_of_one_look_in_a_row(tmp_path):
+    from datetime import datetime, timezone
+
+    now = datetime(2026, 10, 27, 12, tzinfo=timezone.utc)
+    at = now.isoformat()
+    last = _parked_ready(tmp_path, "atlas300", family="health", look="versus", score=10, rendered_at=at)
+    a = _parked_ready(tmp_path, "atlas301", family="wealth", look="versus", score=30, rendered_at=at)
+    b = _parked_ready(tmp_path, "atlas302", family="energy", look="spotlight", score=20, rendered_at=at)
+    assert publish.order([a, b], last, now) == [b, a]
+
+
+def _parked_ready(root, name, **record):
+    import json
+
+    folder = root / name
+    folder.mkdir()
+    (folder / "ready.json").write_text(json.dumps({"id": name, **record}))
+    return folder

@@ -548,6 +548,49 @@ def atlas_outbox_verify(records: list[dict]) -> list[dict]:
     return verified
 
 
+# The owner's YouTube sign-in for @atlasinnumbers (consent script, 2026-10-27); only atlas_upload and
+# atlas_withdraw see it, never atlas_run. It holds a placeholder until given: the publisher's atlas/direct.json
+# must not exist before then.
+atlas_youtube = modal.Secret.from_name("atlas-youtube")
+
+
+@app.function(image=image, cpu=1.0, memory=2048, timeout=1800, secrets=[atlas_youtube], volumes={"/outbox": outbox},
+              max_containers=1)
+def atlas_upload(files: dict[str, str], modal_path: str, sha256: str, taken: list[str]) -> dict:
+    """Upload one parked Short straight to YouTube, private until the first free slot after `taken`; called by the
+    publisher with the Short's atlas.yaml, data.json and credits.json. Returns its publish record."""
+    import hashlib
+    import re
+    from .atlas import publish
+    from .atlas.data import Dataset
+    from .atlas.episode import AtlasEpisode
+
+    if not re.fullmatch(r"atlas/atlas\d{3,}-[0-9a-f]{64}\.mp4", modal_path):
+        raise ValueError("invalid Atlas outbox path")
+    if not os.environ.get(publish.OAUTH_ENV, "").startswith("{"):
+        raise RuntimeError("Atlas has no YouTube sign-in yet (run consent.py)")
+    outbox.reload()
+    video = Path("/outbox") / modal_path
+    with video.open("rb") as fh:
+        if hashlib.file_digest(fh, "sha256").hexdigest() != sha256:
+            raise ValueError("parked Atlas media differs from its acceptance record")
+    folder = Path(tempfile.mkdtemp())
+    for name in ("atlas.yaml", "data.json", "credits.json"):
+        if name in files:
+            (folder / name).write_text(files[name], encoding="utf-8")
+    ep, ds = AtlasEpisode.load(folder / "atlas.yaml"), Dataset.load(folder / "data.json")
+    if not modal_path.startswith(f"atlas/{ep.id}-"):
+        raise ValueError("the parked video belongs to another episode")
+    return publish.upload(ep, folder, ds, video, [datetime.fromisoformat(t) for t in taken])
+
+
+@app.function(image=image, cpu=0.25, memory=512, timeout=300, secrets=[atlas_youtube], max_containers=1)
+def atlas_withdraw(video_ids: list[str]) -> list[str]:
+    """Keep scheduled Atlas uploads private and drop their publish time (the publisher's hold); returns the ids."""
+    from .atlas import publish
+    return publish.withdraw(video_ids)
+
+
 @app.function(image=image, cpu=0.25, memory=512, timeout=60, secrets=[run_secret])
 def atlas_metrics_probe() -> dict:
     """Check public Data API access with this studio's existing Google key; never return credentials."""

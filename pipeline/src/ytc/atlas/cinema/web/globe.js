@@ -124,7 +124,7 @@ starGeo.setAttribute('color', new THREE.Float32BufferAttribute(starCol, 3));
 scene.add(new THREE.Points(starGeo, new THREE.PointsMaterial({ size: 2.4, sizeAttenuation: false, vertexColors: true })));
 
 // Two rings ripple out from the country in focus once the camera arrives.
-const ACCENT_HEX = 0xffd166;
+const ACCENT_HEX = S.accent ? parseInt(S.accent.slice(1), 16) : 0xffd166;
 const ringGeo = new THREE.RingGeometry(0.8, 1, 72);
 const Z = new THREE.Vector3(0, 0, 1);
 const rings = [0, 1].map(() => {

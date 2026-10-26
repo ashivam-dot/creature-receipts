@@ -24,7 +24,7 @@ from .. import geo
 from ..draw import Scale, short_name
 from ..episode import AtlasEpisode
 from ..render import dataset, rank_rows
-from . import globe, places, score
+from . import globe, looks, places, score
 
 log = logging.getLogger(__name__)
 
@@ -50,6 +50,15 @@ MOTIONS = [
     {"z": (1.04, 1.08), "dz": (0.02, 0.05), "pan": (0, 0, 40, -40), "par": (0, 26)},  # rise
 ]
 MARGIN = 1.16
+LOOK = looks.DEFAULT
+
+
+def apply_look(fmt: str | None) -> looks.Look:
+    """Set this render's look; the overlay helpers read ACCENT, CAPTION_Y, VOICE and LOOK."""
+    global ACCENT, CAPTION_Y, VOICE, LOOK
+    LOOK = looks.look(fmt)
+    ACCENT, CAPTION_Y, VOICE = LOOK.accent, LOOK.caption_y, LOOK.voice
+    return LOOK
 
 
 def _font(name: str, size: int, weight: str | None = None) -> ImageFont.FreeTypeFont:
@@ -207,11 +216,20 @@ class Camera:
 
 
 def _photo_grade(frame: np.ndarray, mask: np.ndarray) -> np.ndarray:
+    saturation, contrast, tint = LOOK.grade
     f = frame.astype(np.float32)
     gray = f.mean(axis=2, keepdims=True)
-    f = gray + (f - gray) * 0.96
-    f = (f - 128) * 1.05 + 128
+    f = gray + (f - gray) * saturation
+    f = ((f - 128) * contrast + 128) * np.array(tint, np.float32)
     return np.clip(f * mask, 0, 255).astype(np.uint8)
+
+
+def _caption_font(size: int) -> ImageFont.FreeTypeFont:
+    if LOOK.caption_font == "sans":
+        return _sans(round(size * 0.86), "Black")
+    if LOOK.caption_font == "serif":
+        return _font("DMSerifDisplay-Regular.ttf", round(size * 0.95))
+    return _anton(size)
 
 
 def _masks() -> tuple[np.ndarray, np.ndarray]:
@@ -231,7 +249,7 @@ class Captions:
     """Karaoke captions: short phrases, the word being spoken in the accent colour, a small pop as each phrase lands."""
 
     def __init__(self, words: list[dict]):
-        self.font = _anton(96)
+        self.font = _caption_font(96)
         self.groups = []
         cur: list[dict] = []
         chunks = []
@@ -550,6 +568,7 @@ def render(ep: AtlasEpisode, folder: Path, cache: Path) -> Path:
     country pictures are kept in cache across episodes."""
     folder.mkdir(parents=True, exist_ok=True)
     started = time.monotonic()
+    apply_look(ep.format)
     ds = dataset(ep, folder)
     scale = Scale(ep.scale.kind, at=ep.scale.at, edges=ep.scale.edges, labels=ep.scale.labels)
     world = geo.world()
@@ -658,7 +677,7 @@ def render(ep: AtlasEpisode, folder: Path, cache: Path) -> Path:
                 best = (row, at)
         return (best[0], t - best[1]) if best else (None, 0.0)
 
-    mixed = _mix(narr.wav_path, score.score(total, ep.id), _effects(ep, scene, segs, total, folder / ".sfx"), total,
+    mixed = _mix(narr.wav_path, score.score(total, ep.id, LOOK.progression, LOOK.tempo), _effects(ep, scene, segs, total, folder / ".sfx"), total,
                  folder)
     out = folder / "short.mp4"
     stills = folder / "stills"
@@ -719,7 +738,7 @@ def render(ep: AtlasEpisode, folder: Path, cache: Path) -> Path:
                 rgb, a = hook
                 size = (round(a.shape[1] * z), round(a.shape[0] * z))
                 big = (cv2.resize(rgb, size), cv2.resize(a, size)[..., None])
-                _blit(frame, big, (W - size[0]) // 2, round(H * 0.06 - (size[1] - a.shape[0]) / 2),
+                _blit(frame, big, (W - size[0]) // 2, round(H * LOOK.hook_y - (size[1] - a.shape[0]) / 2),
                       min(1.0, (HOOK_HOLD + 0.35 - t) / 0.35))
                 captions.draw(frame, t)
             else:

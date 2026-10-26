@@ -43,7 +43,7 @@ audience is curious adults worldwide.
 
 TOPIC: {topic}
 ANGLE: {angle}
-FORMAT: {format}
+FORMAT: {format}. {format_note}
 DATASET: {label} ({unit}), {source}, {year}. {count} countries and territories are on the globe.
 OFFICIAL DEFINITION (the only allowed basis for any "what it measures" line):
 {definition}
@@ -115,6 +115,22 @@ How a great Atlas script works:
 - hook_text: 2-5 words in capitals shown on screen over beat 1, adding to (not repeating) the spoken hook.
 - card_lines: 2 short lines for the end card: a 2-4 word question, then the dataset label.
 {feedback}"""
+
+FORMAT_NOTES = {
+    "map_reveal": "Tour the map: the extreme, its opposite, a surprise, a payoff.",
+    "rank_ladder": "A countdown: build towards number 1, with the rank beat as the climb, and save the top country "
+                   "for late in the script. A title like \"Countries Ranked by ...\" or \"The Top Countries for ...\" "
+                   "fits.",
+    "versus": "Head to head: pick the 2 countries with the most striking gap the viewer already knows (big, famous "
+              "or neighbours). Beat 1 names both; most beats alternate between them; the group beat puts both side "
+              "by side; one beat says where the rest of the world falls. Title like \"India vs China: ...\".",
+    "odd_one_out": "A quiz: beat 1 sets a puzzle as a statement, not a question (\"One big country breaks this "
+                   "pattern. It's not the one you'd guess.\"); a group beat shows 3 contenders; the answer comes "
+                   "late, with its number. Title like \"Which Country Has the MOST ...?\".",
+    "spotlight": "One surprising country is the spine: India or the USA if the data makes them interesting, else the "
+                 "most famous country in an unexpected place. Every beat measures the world against it. Title like "
+                 "\"Is INDIA Near the Top for ...?\" or \"How Does the USA Compare on ...?\".",
+}
 
 SCHEMA = {
     "type": "object",
@@ -789,8 +805,9 @@ def write(topic: dict, ds: Dataset, episode_id: str, series: str = "") -> AtlasE
     record_tags = tags(topic, ds, shown)
     passed = None  # a draft that broke no rule of problems(), sent back once for style; shipped if the rewrite breaks one
     for attempt in range(1, TRIES + 1):
-        prompt = PROMPT.format(topic=topic["topic"], angle=topic.get("angle", ""), format=topic.get("format", "map_reveal"),
-                               label=ds.label, unit=ds.unit, source=ds.source, year=ds.year_label, count=len(vals),
+        story = topic.get("format", "map_reveal")
+        prompt = PROMPT.format(topic=topic["topic"], angle=topic.get("angle", ""), format=story,
+                               format_note=FORMAT_NOTES.get(story, ""), label=ds.label, unit=ds.unit, source=ds.source, year=ds.year_label, count=len(vals),
                                definition=topic.get("definition_text", "") or "(none given)",
                                summary=summary, beats_min=BEATS[0], beats_max=BEATS[1], words_min=WORDS[0],
                                words_max=WORDS[1], spoken_max=SPOKEN_MAX, feedback=feedback)

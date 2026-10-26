@@ -13,7 +13,7 @@ import json
 import logging
 import os
 import re
-from datetime import datetime, time, timedelta
+from datetime import datetime, time, timedelta, timezone
 from pathlib import Path
 
 from .. import publish as pub
@@ -26,7 +26,7 @@ log = logging.getLogger(__name__)
 BUFFER_CHANNEL = "6abcba6dea19ca0bde30177e"
 os.environ.setdefault("BUFFER_YOUTUBE_CHANNEL_ID", BUFFER_CHANNEL)
 
-SLOTS = (time(12, 0), time(19, 0))  # lunch and evening ET; two a day (CHANNEL.md 2026-10-22)
+SLOTS = (time(12, 0), time(16, 0), time(19, 0))  # lunch, afternoon and evening ET; three a day (owner, 2026-10-27)
 CATEGORY = "27"  # Education
 TITLE_CHARS = 100
 MIN_LEAD = timedelta(minutes=30)
@@ -111,14 +111,16 @@ def order(folders: list[Path], last: Path | None = None, now: datetime | None = 
 
     records = {f: ready(f) for f in folders}
     left = sorted(folders, key=lambda f: (-(records[f].get("score") or 0), f.name))
-    previous, out = ready(last).get("family"), []
+    previous, look, out = ready(last).get("family"), ready(last).get("look"), []
     while left:
         stale = sorted((f for f in left if age(records[f]) > STALE), key=lambda f: -age(records[f]))
         other = [f for f in left if not previous or records[f].get("family") != previous]
-        chosen = (stale or other or left)[0]
+        # Nor two of one look in a row (cinema/looks.py), while another look waits.
+        fresh = [f for f in other if not look or records[f].get("look") != look]
+        chosen = (stale or fresh or other or left)[0]
         out.append(chosen)
         left.remove(chosen)
-        previous = records[chosen].get("family")
+        previous, look = records[chosen].get("family"), records[chosen].get("look")
     return out
 
 
@@ -180,6 +182,108 @@ def schedule(ep: AtlasEpisode, folder: Path, ds: Dataset, video: Path) -> dict:
         raise RuntimeError(f"Buffer rejected {ep.id}: {result.get('message')}")
     log.info("scheduled %s for %s", ep.id, when.isoformat())
     return _record(record_path, ep, result["post"] | {"dueAt": when.isoformat()}, public_id, media_url)
+
+
+# Uploading, listing and unscheduling (videos.update, which youtube.upload doesn't allow).
+SCOPE = "https://www.googleapis.com/auth/youtube"
+# The sign-in for @atlasinnumbers: JSON with client_id, client_secret and refresh_token, only in the Modal secret
+# atlas-youtube that cloud.atlas_upload alone mounts.
+OAUTH_ENV = "ATLAS_YOUTUBE_OAUTH"
+CHANNEL_ID = "UC6e6OB3iw3yp8JnnBYxLItA"
+
+
+def youtube_client():
+    from google.oauth2.credentials import Credentials
+    from googleapiclient.discovery import build
+
+    info = json.loads(os.environ[OAUTH_ENV])
+    creds = Credentials(None, refresh_token=info["refresh_token"], client_id=info["client_id"],
+                        client_secret=info["client_secret"], token_uri="https://oauth2.googleapis.com/token",
+                        scopes=[SCOPE])
+    return build("youtube", "v3", credentials=creds, cache_discovery=False)
+
+
+def recent_uploads(yt, limit: int = 50) -> list[dict]:
+    """The channel's latest uploads (id, title, description, status), newest first; 2-3 quota units."""
+    me = yt.channels().list(part="id,contentDetails", mine=True).execute()["items"][0]
+    if me["id"] != CHANNEL_ID:
+        raise RuntimeError("the YouTube sign-in is not @atlasinnumbers")
+    uploads = me["contentDetails"]["relatedPlaylists"]["uploads"]
+    items = yt.playlistItems().list(part="contentDetails", playlistId=uploads, maxResults=limit).execute()["items"]
+    ids = [i["contentDetails"]["videoId"] for i in items]
+    if not ids:
+        return []
+    return yt.videos().list(part="snippet,status", id=",".join(ids)).execute()["items"]
+
+
+def upload(ep: AtlasEpisode, folder: Path, ds: Dataset, video: Path, taken: list[datetime], yt=None,
+           existing: list[dict] | None = None) -> dict:
+    """Upload a Short straight to YouTube, private until its slot (publishAt). A video already carrying this
+    episode's line is recorded instead of uploaded again."""
+    record_path = folder / "publish.json"
+    if record_path.exists():
+        return json.loads(record_path.read_text(encoding="utf-8"))
+    if bad := title_problems(ep, ds):
+        raise ValueError(f"{ep.id}: title held, {'; '.join(bad)}")
+    yt = yt or youtube_client()
+    text = description(ep, ds, folder)
+    title = pub._youtube_text(ep.title)[:TITLE_CHARS]
+    lead = f"Atlas episode: {ep.id}"
+    existing = recent_uploads(yt) if existing is None else existing
+    twin = next((v for v in existing if lead in v["snippet"].get("description", "").splitlines()), None)
+    if twin:
+        when = twin["status"].get("publishAt")
+        if not when and twin["status"].get("privacyStatus") != "public":
+            raise RuntimeError(f"{ep.id} is already YouTube video {twin['id']}, private with no schedule: "
+                               "publish or delete it in Studio")
+        log.warning("%s is already YouTube video %s; recording it", ep.id, twin["id"])
+        return _direct_record(record_path, ep, twin["id"], when or twin["snippet"].get("publishedAt"), uploaded=False)
+    # A run that uploaded and then lost its record still holds its slot on the channel.
+    taken = taken + [datetime.fromisoformat(v["status"]["publishAt"].replace("Z", "+00:00"))
+                     for v in existing if v["status"].get("publishAt")]
+    when = next_slot(taken)
+    from googleapiclient.http import MediaFileUpload
+
+    body = {"snippet": {"title": title, "description": text, "categoryId": CATEGORY, "defaultLanguage": "en",
+                        "defaultAudioLanguage": "en", "tags": [h.lstrip("#") for h in ep.hashtags[:3]]},
+            "status": {"privacyStatus": "private", "publishAt": when.astimezone(timezone.utc).isoformat().replace(
+                "+00:00", "Z"), "selfDeclaredMadeForKids": False, "containsSyntheticMedia": True,
+                "embeddable": True, "license": "youtube"}}
+    request = yt.videos().insert(part="snippet,status", body=body, notifySubscribers=True,
+                                 media_body=MediaFileUpload(str(video), mimetype="video/mp4", resumable=True,
+                                                            chunksize=8 * 1024 * 1024))
+    response = None
+    while response is None:
+        _, response = request.next_chunk()
+    log.info("uploaded %s as %s for %s", ep.id, response["id"], when.isoformat())
+    return _direct_record(record_path, ep, response["id"], when.isoformat())
+
+
+def withdraw(video_ids: list[str], yt=None) -> list[str]:
+    """Unschedule direct uploads of @atlasinnumbers: still private, no publishAt (an update that omits publishAt
+    keeps the schedule). Videos already public are left alone. Returns the ids withdrawn."""
+    yt = yt or youtube_client()
+    done = []
+    for i in range(0, len(video_ids), 50):
+        for v in yt.videos().list(part="status,snippet", id=",".join(video_ids[i:i + 50])).execute()["items"]:
+            if v["snippet"].get("channelId") != CHANNEL_ID or v["status"].get("privacyStatus") == "public":
+                continue
+            status = {k: v["status"][k] for k in ("embeddable", "license", "publicStatsViewable",
+                                                  "selfDeclaredMadeForKids", "containsSyntheticMedia")
+                      if k in v["status"]}
+            yt.videos().update(part="status", body={"id": v["id"], "status": status | {
+                "privacyStatus": "private", "publishAt": None}}).execute()
+            done.append(v["id"])
+    return done
+
+
+def _direct_record(path: Path, ep: AtlasEpisode, video_id: str, when: str, uploaded: bool = True) -> dict:
+    record = {"id": ep.id, "title": ep.title, "route": "youtube", "youtube_video_id": video_id, "due_at": when,
+              "status": "scheduled", "youtube_url": f"https://www.youtube.com/shorts/{video_id}"}
+    if uploaded:  # counts against the publisher's daily uploads
+        record["uploaded_at"] = datetime.now(timezone.utc).isoformat(timespec="seconds")
+    path.write_text(json.dumps(record, indent=2), encoding="utf-8")
+    return record
 
 
 def _record(path: Path, ep: AtlasEpisode, post: dict, public_id: str, media_url: str | None) -> dict:
