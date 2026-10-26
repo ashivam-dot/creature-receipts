@@ -1,0 +1,1773 @@
+{
+  "version": 1,
+  "evidence": {
+    "version": 1,
+    "indicator": "SN.ITK.MSFI.ZS",
+    "definition": "The percentage of people in the population who live in households classified as moderately or severely food insecure. A household is classified as moderately or severely food insecure when at least one adult in the household has reported to have been exposed, at times during the year, to low quality diets and might have been forced to also reduce the quantity of food they would normally eat because of a lack of money or other resources.",
+    "source": "https://data.worldbank.org/indicator/SN.ITK.MSFI.ZS",
+    "source_response_sha256": "7f3d8d4ad42e0fe5e5539620efb394aa572339b54ab0149c2d9ff337c1026afa",
+    "source_organization": "Food and Agriculture Organization of the United Nations (FAO)",
+    "year_label": "latest available 2019–2024",
+    "universe": "mapped countries and territories with data",
+    "count": 153,
+    "threshold": null,
+    "at_or_above": null,
+    "entities": {
+      "AFG": {
+        "name": "Afghanistan",
+        "value": 77.8,
+        "display": "77.8%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 9
+      },
+      "ALB": {
+        "name": "Albania",
+        "value": 31.8,
+        "display": "31.8%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 58
+      },
+      "DZA": {
+        "name": "Algeria",
+        "value": 17.6,
+        "display": "17.6%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 87
+      },
+      "AGO": {
+        "name": "Angola",
+        "value": 75.4,
+        "display": "75.4%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 11
+      },
+      "ATG": {
+        "name": "Antigua and Barbuda",
+        "value": 13.5,
+        "display": "13.5%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 100
+      },
+      "ARG": {
+        "name": "Argentina",
+        "value": 31.7,
+        "display": "31.7%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 59
+      },
+      "ARM": {
+        "name": "Armenia",
+        "value": 7.1,
+        "display": "7.1%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 131
+      },
+      "AUS": {
+        "name": "Australia",
+        "value": 15.1,
+        "display": "15.1%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 96
+      },
+      "AUT": {
+        "name": "Austria",
+        "value": 4.4,
+        "display": "4.4%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 142
+      },
+      "AZE": {
+        "name": "Azerbaijan",
+        "value": 14.6,
+        "display": "14.6%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 98
+      },
+      "BHS": {
+        "name": "Bahamas, The",
+        "value": 17.2,
+        "display": "17.2%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 88
+      },
+      "BGD": {
+        "name": "Bangladesh",
+        "value": 26.2,
+        "display": "26.2%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 74
+      },
+      "BRB": {
+        "name": "Barbados",
+        "value": 31.1,
+        "display": "31.1%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 62
+      },
+      "BLR": {
+        "name": "Belarus",
+        "value": 1.0,
+        "display": "1%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 153
+      },
+      "BEL": {
+        "name": "Belgium",
+        "value": 9.3,
+        "display": "9.3%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 115
+      },
+      "BLZ": {
+        "name": "Belize",
+        "value": 12.8,
+        "display": "12.8%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 103
+      },
+      "BEN": {
+        "name": "Benin",
+        "value": 65.6,
+        "display": "65.6%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 16
+      },
+      "BOL": {
+        "name": "Bolivia",
+        "value": 29.6,
+        "display": "29.6%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 65
+      },
+      "BIH": {
+        "name": "Bosnia and Herzegovina",
+        "value": 8.7,
+        "display": "8.7%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 122
+      },
+      "BWA": {
+        "name": "Botswana",
+        "value": 52.0,
+        "display": "52%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 32
+      },
+      "BRA": {
+        "name": "Brazil",
+        "value": 9.6,
+        "display": "9.6%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 111
+      },
+      "BGR": {
+        "name": "Bulgaria",
+        "value": 10.5,
+        "display": "10.5%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 107
+      },
+      "BFA": {
+        "name": "Burkina Faso",
+        "value": 41.2,
+        "display": "41.2%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 44
+      },
+      "BDI": {
+        "name": "Burundi",
+        "value": 70.8,
+        "display": "70.8%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 14
+      },
+      "CPV": {
+        "name": "Cabo Verde",
+        "value": 32.1,
+        "display": "32.1%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 56
+      },
+      "KHM": {
+        "name": "Cambodia",
+        "value": 36.4,
+        "display": "36.4%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 48
+      },
+      "CMR": {
+        "name": "Cameroon",
+        "value": 60.9,
+        "display": "60.9%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 23
+      },
+      "CAN": {
+        "name": "Canada",
+        "value": 10.5,
+        "display": "10.5%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 107
+      },
+      "CAF": {
+        "name": "Central African Republic",
+        "value": 88.1,
+        "display": "88.1%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 2
+      },
+      "TCD": {
+        "name": "Chad",
+        "value": 65.0,
+        "display": "65%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 18
+      },
+      "CHL": {
+        "name": "Chile",
+        "value": 16.0,
+        "display": "16%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 92
+      },
+      "COL": {
+        "name": "Colombia",
+        "value": 28.0,
+        "display": "28%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 69
+      },
+      "COM": {
+        "name": "Comoros",
+        "value": 79.7,
+        "display": "79.7%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 7
+      },
+      "COD": {
+        "name": "Congo, Dem. Rep.",
+        "value": 81.7,
+        "display": "81.7%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 5
+      },
+      "CRI": {
+        "name": "Costa Rica",
+        "value": 13.9,
+        "display": "13.9%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 99
+      },
+      "CIV": {
+        "name": "Cote d'Ivoire",
+        "value": 37.9,
+        "display": "37.9%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 46
+      },
+      "HRV": {
+        "name": "Croatia",
+        "value": 4.9,
+        "display": "4.9%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 139
+      },
+      "CYP": {
+        "name": "Cyprus",
+        "value": 1.4,
+        "display": "1.4%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 151
+      },
+      "CZE": {
+        "name": "Czechia",
+        "value": 9.1,
+        "display": "9.1%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 117
+      },
+      "DNK": {
+        "name": "Denmark",
+        "value": 6.2,
+        "display": "6.2%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 135
+      },
+      "DJI": {
+        "name": "Djibouti",
+        "value": 49.2,
+        "display": "49.2%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 35
+      },
+      "DMA": {
+        "name": "Dominica",
+        "value": 34.4,
+        "display": "34.4%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 51
+      },
+      "DOM": {
+        "name": "Dominican Republic",
+        "value": 41.3,
+        "display": "41.3%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 43
+      },
+      "ECU": {
+        "name": "Ecuador",
+        "value": 31.1,
+        "display": "31.1%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 62
+      },
+      "EGY": {
+        "name": "Egypt, Arab Rep.",
+        "value": 29.9,
+        "display": "29.9%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 64
+      },
+      "SLV": {
+        "name": "El Salvador",
+        "value": 41.7,
+        "display": "41.7%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 42
+      },
+      "EST": {
+        "name": "Estonia",
+        "value": 13.1,
+        "display": "13.1%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 102
+      },
+      "SWZ": {
+        "name": "Eswatini",
+        "value": 61.7,
+        "display": "61.7%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 20
+      },
+      "ETH": {
+        "name": "Ethiopia",
+        "value": 60.1,
+        "display": "60.1%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 24
+      },
+      "FJI": {
+        "name": "Fiji",
+        "value": 29.2,
+        "display": "29.2%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 66
+      },
+      "FIN": {
+        "name": "Finland",
+        "value": 13.3,
+        "display": "13.3%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 101
+      },
+      "FRA": {
+        "name": "France",
+        "value": 9.4,
+        "display": "9.4%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 112
+      },
+      "GMB": {
+        "name": "Gambia, The",
+        "value": 47.2,
+        "display": "47.2%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 37
+      },
+      "GEO": {
+        "name": "Georgia",
+        "value": 22.8,
+        "display": "22.8%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 81
+      },
+      "DEU": {
+        "name": "Germany",
+        "value": 4.1,
+        "display": "4.1%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 145
+      },
+      "GHA": {
+        "name": "Ghana",
+        "value": 43.5,
+        "display": "43.5%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 41
+      },
+      "GRC": {
+        "name": "Greece",
+        "value": 7.1,
+        "display": "7.1%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 131
+      },
+      "GRD": {
+        "name": "Grenada",
+        "value": 16.5,
+        "display": "16.5%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 90
+      },
+      "GTM": {
+        "name": "Guatemala",
+        "value": 49.0,
+        "display": "49%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 36
+      },
+      "GNB": {
+        "name": "Guinea-Bissau",
+        "value": 62.5,
+        "display": "62.5%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 19
+      },
+      "GUY": {
+        "name": "Guyana",
+        "value": 25.5,
+        "display": "25.5%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 76
+      },
+      "HTI": {
+        "name": "Haiti",
+        "value": 83.5,
+        "display": "83.5%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 4
+      },
+      "HND": {
+        "name": "Honduras",
+        "value": 39.3,
+        "display": "39.3%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 45
+      },
+      "HUN": {
+        "name": "Hungary",
+        "value": 16.9,
+        "display": "16.9%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 89
+      },
+      "ISL": {
+        "name": "Iceland",
+        "value": 7.9,
+        "display": "7.9%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 123
+      },
+      "IDN": {
+        "name": "Indonesia",
+        "value": 4.2,
+        "display": "4.2%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 143
+      },
+      "IRN": {
+        "name": "Iran, Islamic Rep.",
+        "value": 37.7,
+        "display": "37.7%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 47
+      },
+      "IRL": {
+        "name": "Ireland",
+        "value": 6.2,
+        "display": "6.2%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 135
+      },
+      "ISR": {
+        "name": "Israel",
+        "value": 8.9,
+        "display": "8.9%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 120
+      },
+      "ITA": {
+        "name": "Italy",
+        "value": 1.7,
+        "display": "1.7%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 150
+      },
+      "JAM": {
+        "name": "Jamaica",
+        "value": 55.8,
+        "display": "55.8%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 28
+      },
+      "JPN": {
+        "name": "Japan",
+        "value": 6.1,
+        "display": "6.1%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 137
+      },
+      "KAZ": {
+        "name": "Kazakhstan",
+        "value": 1.4,
+        "display": "1.4%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 151
+      },
+      "KEN": {
+        "name": "Kenya",
+        "value": 71.7,
+        "display": "71.7%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 13
+      },
+      "KIR": {
+        "name": "Kiribati",
+        "value": 43.9,
+        "display": "43.9%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 40
+      },
+      "KOR": {
+        "name": "Korea, Rep.",
+        "value": 5.8,
+        "display": "5.8%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 138
+      },
+      "KWT": {
+        "name": "Kuwait",
+        "value": 9.4,
+        "display": "9.4%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 112
+      },
+      "KGZ": {
+        "name": "Kyrgyz Republic",
+        "value": 7.4,
+        "display": "7.4%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 127
+      },
+      "LAO": {
+        "name": "Lao PDR",
+        "value": 34.4,
+        "display": "34.4%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 51
+      },
+      "LVA": {
+        "name": "Latvia",
+        "value": 11.7,
+        "display": "11.7%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 104
+      },
+      "LBN": {
+        "name": "Lebanon",
+        "value": 44.3,
+        "display": "44.3%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 39
+      },
+      "LSO": {
+        "name": "Lesotho",
+        "value": 61.6,
+        "display": "61.6%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 21
+      },
+      "LBR": {
+        "name": "Liberia",
+        "value": 79.0,
+        "display": "79%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 8
+      },
+      "LBY": {
+        "name": "Libya",
+        "value": 31.6,
+        "display": "31.6%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 60
+      },
+      "LTU": {
+        "name": "Lithuania",
+        "value": 6.7,
+        "display": "6.7%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 133
+      },
+      "LUX": {
+        "name": "Luxembourg",
+        "value": 2.6,
+        "display": "2.6%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 147
+      },
+      "MDG": {
+        "name": "Madagascar",
+        "value": 61.1,
+        "display": "61.1%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 22
+      },
+      "MWI": {
+        "name": "Malawi",
+        "value": 81.6,
+        "display": "81.6%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 6
+      },
+      "MYS": {
+        "name": "Malaysia",
+        "value": 15.4,
+        "display": "15.4%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 94
+      },
+      "MLI": {
+        "name": "Mali",
+        "value": 20.6,
+        "display": "20.6%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 84
+      },
+      "MLT": {
+        "name": "Malta",
+        "value": 9.0,
+        "display": "9%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 118
+      },
+      "MRT": {
+        "name": "Mauritania",
+        "value": 65.1,
+        "display": "65.1%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 17
+      },
+      "MUS": {
+        "name": "Mauritius",
+        "value": 28.2,
+        "display": "28.2%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 67
+      },
+      "MEX": {
+        "name": "Mexico",
+        "value": 16.5,
+        "display": "16.5%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 90
+      },
+      "MDA": {
+        "name": "Moldova",
+        "value": 26.4,
+        "display": "26.4%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 73
+      },
+      "MNG": {
+        "name": "Mongolia",
+        "value": 4.7,
+        "display": "4.7%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 140
+      },
+      "MNE": {
+        "name": "Montenegro",
+        "value": 9.0,
+        "display": "9%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 118
+      },
+      "MMR": {
+        "name": "Myanmar",
+        "value": 31.3,
+        "display": "31.3%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 61
+      },
+      "NAM": {
+        "name": "Namibia",
+        "value": 54.0,
+        "display": "54%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 30
+      },
+      "NPL": {
+        "name": "Nepal",
+        "value": 35.0,
+        "display": "35%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 50
+      },
+      "NLD": {
+        "name": "Netherlands",
+        "value": 8.9,
+        "display": "8.9%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 120
+      },
+      "NZL": {
+        "name": "New Zealand",
+        "value": 17.9,
+        "display": "17.9%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 86
+      },
+      "NER": {
+        "name": "Niger",
+        "value": 50.3,
+        "display": "50.3%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 34
+      },
+      "NGA": {
+        "name": "Nigeria",
+        "value": 76.5,
+        "display": "76.5%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 10
+      },
+      "MKD": {
+        "name": "North Macedonia",
+        "value": 9.2,
+        "display": "9.2%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 116
+      },
+      "NOR": {
+        "name": "Norway",
+        "value": 7.6,
+        "display": "7.6%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 125
+      },
+      "PAK": {
+        "name": "Pakistan",
+        "value": 22.9,
+        "display": "22.9%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 80
+      },
+      "PLW": {
+        "name": "Palau",
+        "value": 28.1,
+        "display": "28.1%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 68
+      },
+      "PNG": {
+        "name": "Papua New Guinea",
+        "value": 57.3,
+        "display": "57.3%",
+        "year": 2019,
+        "unit": "%",
+        "rank": 25
+      },
+      "PRY": {
+        "name": "Paraguay",
+        "value": 25.8,
+        "display": "25.8%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 75
+      },
+      "PER": {
+        "name": "Peru",
+        "value": 33.6,
+        "display": "33.6%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 53
+      },
+      "PHL": {
+        "name": "Philippines",
+        "value": 32.7,
+        "display": "32.7%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 55
+      },
+      "POL": {
+        "name": "Poland",
+        "value": 2.7,
+        "display": "2.7%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 146
+      },
+      "PRT": {
+        "name": "Portugal",
+        "value": 11.0,
+        "display": "11%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 105
+      },
+      "ROU": {
+        "name": "Romania",
+        "value": 15.2,
+        "display": "15.2%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 95
+      },
+      "RUS": {
+        "name": "Russian Federation",
+        "value": 2.6,
+        "display": "2.6%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 147
+      },
+      "WSM": {
+        "name": "Samoa",
+        "value": 18.2,
+        "display": "18.2%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 85
+      },
+      "STP": {
+        "name": "Sao Tome and Principe",
+        "value": 54.6,
+        "display": "54.6%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 29
+      },
+      "SEN": {
+        "name": "Senegal",
+        "value": 27.7,
+        "display": "27.7%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 70
+      },
+      "SRB": {
+        "name": "Serbia",
+        "value": 6.7,
+        "display": "6.7%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 133
+      },
+      "SLE": {
+        "name": "Sierra Leone",
+        "value": 88.1,
+        "display": "88.1%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 2
+      },
+      "SGP": {
+        "name": "Singapore",
+        "value": 10.1,
+        "display": "10.1%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 109
+      },
+      "SVK": {
+        "name": "Slovak Republic",
+        "value": 7.3,
+        "display": "7.3%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 130
+      },
+      "SVN": {
+        "name": "Slovenia",
+        "value": 7.6,
+        "display": "7.6%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 125
+      },
+      "ZAF": {
+        "name": "South Africa",
+        "value": 20.9,
+        "display": "20.9%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 83
+      },
+      "SSD": {
+        "name": "South Sudan",
+        "value": 88.8,
+        "display": "88.8%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 1
+      },
+      "ESP": {
+        "name": "Spain",
+        "value": 7.4,
+        "display": "7.4%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 127
+      },
+      "LKA": {
+        "name": "Sri Lanka",
+        "value": 10.1,
+        "display": "10.1%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 109
+      },
+      "KNA": {
+        "name": "St. Kitts and Nevis",
+        "value": 21.1,
+        "display": "21.1%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 82
+      },
+      "VCT": {
+        "name": "St. Vincent and the Grenadines",
+        "value": 33.3,
+        "display": "33.3%",
+        "year": 2019,
+        "unit": "%",
+        "rank": 54
+      },
+      "SUR": {
+        "name": "Suriname",
+        "value": 35.9,
+        "display": "35.9%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 49
+      },
+      "SWE": {
+        "name": "Sweden",
+        "value": 7.9,
+        "display": "7.9%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 123
+      },
+      "CHE": {
+        "name": "Switzerland",
+        "value": 2.6,
+        "display": "2.6%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 147
+      },
+      "TJK": {
+        "name": "Tajikistan",
+        "value": 24.0,
+        "display": "24%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 78
+      },
+      "TZA": {
+        "name": "Tanzania",
+        "value": 57.0,
+        "display": "57%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 26
+      },
+      "THA": {
+        "name": "Thailand",
+        "value": 4.5,
+        "display": "4.5%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 141
+      },
+      "TLS": {
+        "name": "Timor-Leste",
+        "value": 53.7,
+        "display": "53.7%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 31
+      },
+      "TGO": {
+        "name": "Togo",
+        "value": 56.3,
+        "display": "56.3%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 27
+      },
+      "TON": {
+        "name": "Tonga",
+        "value": 14.8,
+        "display": "14.8%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 97
+      },
+      "TTO": {
+        "name": "Trinidad and Tobago",
+        "value": 27.6,
+        "display": "27.6%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 71
+      },
+      "TUN": {
+        "name": "Tunisia",
+        "value": 24.2,
+        "display": "24.2%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 77
+      },
+      "UGA": {
+        "name": "Uganda",
+        "value": 51.6,
+        "display": "51.6%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 33
+      },
+      "UKR": {
+        "name": "Ukraine",
+        "value": 32.0,
+        "display": "32%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 57
+      },
+      "ARE": {
+        "name": "United Arab Emirates",
+        "value": 4.2,
+        "display": "4.2%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 143
+      },
+      "GBR": {
+        "name": "United Kingdom",
+        "value": 7.4,
+        "display": "7.4%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 127
+      },
+      "USA": {
+        "name": "United States",
+        "value": 10.7,
+        "display": "10.7%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 106
+      },
+      "URY": {
+        "name": "Uruguay",
+        "value": 15.5,
+        "display": "15.5%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 93
+      },
+      "VUT": {
+        "name": "Vanuatu",
+        "value": 23.3,
+        "display": "23.3%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 79
+      },
+      "VNM": {
+        "name": "Viet Nam",
+        "value": 9.4,
+        "display": "9.4%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 112
+      },
+      "PSE": {
+        "name": "West Bank and Gaza",
+        "value": 27.4,
+        "display": "27.4%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 72
+      },
+      "YEM": {
+        "name": "Yemen, Rep.",
+        "value": 74.4,
+        "display": "74.4%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 12
+      },
+      "ZMB": {
+        "name": "Zambia",
+        "value": 45.8,
+        "display": "45.8%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 38
+      },
+      "ZWE": {
+        "name": "Zimbabwe",
+        "value": 70.1,
+        "display": "70.1%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 15
+      }
+    }
+  },
+  "review": {
+    "errors": [],
+    "claims": [
+      {
+        "surface": "beat_0",
+        "text": "South Sudan has 88.8% food insecurity. Belarus has 1%.",
+        "isos": [
+          "SSD",
+          "BLR"
+        ],
+        "support": "South Sudan SSD value is 88.8, Belarus BLR value is 1.0",
+        "evidence": {
+          "SSD": {
+            "name": "South Sudan",
+            "value": 88.8,
+            "display": "88.8%",
+            "year": 2024,
+            "unit": "%",
+            "rank": 1
+          },
+          "BLR": {
+            "name": "Belarus",
+            "value": 1.0,
+            "display": "1%",
+            "year": 2024,
+            "unit": "%",
+            "rank": 153
+          }
+        }
+      },
+      {
+        "surface": "beat_1",
+        "text": "South Sudan is the world's highest. It counts families forced to also reduce the quantity of food they would normally eat.",
+        "isos": [
+          "SSD"
+        ],
+        "support": "SSD rank is 1, definition mentions forced to also reduce the quantity of food they would normally eat",
+        "evidence": {
+          "SSD": {
+            "name": "South Sudan",
+            "value": 88.8,
+            "display": "88.8%",
+            "year": 2024,
+            "unit": "%",
+            "rank": 1
+          }
+        }
+      },
+      {
+        "surface": "beat_2",
+        "text": "Belarus is the world's lowest. Just 1% of people there face these daily struggles.",
+        "isos": [
+          "BLR"
+        ],
+        "support": "BLR rank is 153 (lowest in count 153), value is 1.0%",
+        "evidence": {
+          "BLR": {
+            "name": "Belarus",
+            "value": 1.0,
+            "display": "1%",
+            "year": 2024,
+            "unit": "%",
+            "rank": 153
+          }
+        }
+      },
+      {
+        "surface": "beat_3",
+        "text": "Nigeria has 76.5%. Brazil has 9.6%.",
+        "isos": [
+          "NGA",
+          "BRA"
+        ],
+        "support": "NGA value is 76.5, BRA value is 9.6",
+        "evidence": {
+          "NGA": {
+            "name": "Nigeria",
+            "value": 76.5,
+            "display": "76.5%",
+            "year": 2024,
+            "unit": "%",
+            "rank": 10
+          },
+          "BRA": {
+            "name": "Brazil",
+            "value": 9.6,
+            "display": "9.6%",
+            "year": 2024,
+            "unit": "%",
+            "rank": 111
+          }
+        }
+      },
+      {
+        "surface": "beat_4",
+        "text": "The highest rates on Earth: South Sudan, Central African Republic, Sierra Leone, and Haiti, all above 83.5%.",
+        "isos": [
+          "SSD",
+          "CAF",
+          "SLE",
+          "HTI"
+        ],
+        "support": "SSD is 88.8, CAF is 88.1, SLE is 88.1, HTI is 83.5, all are >= 83.5",
+        "evidence": {
+          "SSD": {
+            "name": "South Sudan",
+            "value": 88.8,
+            "display": "88.8%",
+            "year": 2024,
+            "unit": "%",
+            "rank": 1
+          },
+          "CAF": {
+            "name": "Central African Republic",
+            "value": 88.1,
+            "display": "88.1%",
+            "year": 2022,
+            "unit": "%",
+            "rank": 2
+          },
+          "SLE": {
+            "name": "Sierra Leone",
+            "value": 88.1,
+            "display": "88.1%",
+            "year": 2024,
+            "unit": "%",
+            "rank": 2
+          },
+          "HTI": {
+            "name": "Haiti",
+            "value": 83.5,
+            "display": "83.5%",
+            "year": 2024,
+            "unit": "%",
+            "rank": 4
+          }
+        }
+      },
+      {
+        "surface": "beat_5",
+        "text": "The gap is staggering. Nigeria has 76 times the food insecurity of Belarus.",
+        "isos": [
+          "NGA",
+          "BLR"
+        ],
+        "support": "NGA is 76.5%, BLR is 1.0%",
+        "evidence": {
+          "NGA": {
+            "name": "Nigeria",
+            "value": 76.5,
+            "display": "76.5%",
+            "year": 2024,
+            "unit": "%",
+            "rank": 10
+          },
+          "BLR": {
+            "name": "Belarus",
+            "value": 1.0,
+            "display": "1%",
+            "year": 2024,
+            "unit": "%",
+            "rank": 153
+          }
+        }
+      },
+      {
+        "surface": "beat_6",
+        "text": "The USA has 10.7%. It includes anyone exposed, at times during the year, to low quality diets.",
+        "isos": [
+          "USA"
+        ],
+        "support": "USA value is 10.7, definition mentions exposed, at times during the year, to low quality diets",
+        "evidence": {
+          "USA": {
+            "name": "United States",
+            "value": 10.7,
+            "display": "10.7%",
+            "year": 2024,
+            "unit": "%",
+            "rank": 106
+          }
+        }
+      },
+      {
+        "surface": "title",
+        "text": "Places Ranked by Food Insecurity",
+        "isos": [],
+        "support": "The title frames the indicator ranking appropriately.",
+        "method": "complete-surface-check",
+        "evidence": {}
+      },
+      {
+        "surface": "hook",
+        "text": "THE FOOD GAP",
+        "isos": [],
+        "support": "Stylistic hook.",
+        "method": "complete-surface-check",
+        "evidence": {}
+      },
+      {
+        "surface": "description",
+        "text": "A cinematic look at the global divide in food security, comparing the struggle in South Sudan to the stability in Belarus.",
+        "isos": [
+          "SSD",
+          "BLR"
+        ],
+        "support": "Compares South Sudan and Belarus correctly based on data.",
+        "method": "complete-surface-check",
+        "evidence": {
+          "SSD": {
+            "name": "South Sudan",
+            "value": 88.8,
+            "display": "88.8%",
+            "year": 2024,
+            "unit": "%",
+            "rank": 1
+          },
+          "BLR": {
+            "name": "Belarus",
+            "value": 1.0,
+            "display": "1%",
+            "year": 2024,
+            "unit": "%",
+            "rank": 153
+          }
+        }
+      },
+      {
+        "surface": "beat_0",
+        "text": "South Sudan has 88.8% food insecurity. Belarus has 1%.",
+        "isos": [
+          "SSD",
+          "BLR"
+        ],
+        "support": "South Sudan is 88.8% and Belarus is 1%.",
+        "method": "complete-surface-check",
+        "evidence": {
+          "SSD": {
+            "name": "South Sudan",
+            "value": 88.8,
+            "display": "88.8%",
+            "year": 2024,
+            "unit": "%",
+            "rank": 1
+          },
+          "BLR": {
+            "name": "Belarus",
+            "value": 1.0,
+            "display": "1%",
+            "year": 2024,
+            "unit": "%",
+            "rank": 153
+          }
+        }
+      },
+      {
+        "surface": "beat_1",
+        "text": "South Sudan is the world's highest. It counts families forced to also reduce the quantity of food they would normally eat.",
+        "isos": [
+          "SSD"
+        ],
+        "support": "South Sudan is rank 1 and definition text matches.",
+        "method": "complete-surface-check",
+        "evidence": {
+          "SSD": {
+            "name": "South Sudan",
+            "value": 88.8,
+            "display": "88.8%",
+            "year": 2024,
+            "unit": "%",
+            "rank": 1
+          }
+        }
+      },
+      {
+        "surface": "beat_2",
+        "text": "Belarus is the world's lowest. Just 1% of people there face these daily struggles.",
+        "isos": [
+          "BLR"
+        ],
+        "support": "Belarus is rank 153 with 1%.",
+        "method": "complete-surface-check",
+        "evidence": {
+          "BLR": {
+            "name": "Belarus",
+            "value": 1.0,
+            "display": "1%",
+            "year": 2024,
+            "unit": "%",
+            "rank": 153
+          }
+        }
+      },
+      {
+        "surface": "beat_3",
+        "text": "Nigeria has 76.5%. Brazil has 9.6%.",
+        "isos": [
+          "NGA",
+          "BRA"
+        ],
+        "support": "Nigeria is 76.5% and Brazil is 9.6%.",
+        "method": "complete-surface-check",
+        "evidence": {
+          "NGA": {
+            "name": "Nigeria",
+            "value": 76.5,
+            "display": "76.5%",
+            "year": 2024,
+            "unit": "%",
+            "rank": 10
+          },
+          "BRA": {
+            "name": "Brazil",
+            "value": 9.6,
+            "display": "9.6%",
+            "year": 2024,
+            "unit": "%",
+            "rank": 111
+          }
+        }
+      },
+      {
+        "surface": "beat_4",
+        "text": "The highest rates on Earth: South Sudan, Central African Republic, Sierra Leone, and Haiti, all above 83.5%.",
+        "isos": [
+          "SSD",
+          "CAF",
+          "SLE",
+          "HTI"
+        ],
+        "support": "SSD (88.8%), CAF (88.1%), SLE (88.1%), HTI (83.5%) are all at or above 83.5%.",
+        "method": "complete-surface-check",
+        "evidence": {
+          "SSD": {
+            "name": "South Sudan",
+            "value": 88.8,
+            "display": "88.8%",
+            "year": 2024,
+            "unit": "%",
+            "rank": 1
+          },
+          "CAF": {
+            "name": "Central African Republic",
+            "value": 88.1,
+            "display": "88.1%",
+            "year": 2022,
+            "unit": "%",
+            "rank": 2
+          },
+          "SLE": {
+            "name": "Sierra Leone",
+            "value": 88.1,
+            "display": "88.1%",
+            "year": 2024,
+            "unit": "%",
+            "rank": 2
+          },
+          "HTI": {
+            "name": "Haiti",
+            "value": 83.5,
+            "display": "83.5%",
+            "year": 2024,
+            "unit": "%",
+            "rank": 4
+          }
+        }
+      },
+      {
+        "surface": "beat_5",
+        "text": "The gap is staggering. Nigeria has 76 times the food insecurity of Belarus.",
+        "isos": [
+          "NGA",
+          "BLR"
+        ],
+        "support": "Nigeria 76.5% vs Belarus 1% supports the scale comparison.",
+        "method": "complete-surface-check",
+        "evidence": {
+          "NGA": {
+            "name": "Nigeria",
+            "value": 76.5,
+            "display": "76.5%",
+            "year": 2024,
+            "unit": "%",
+            "rank": 10
+          },
+          "BLR": {
+            "name": "Belarus",
+            "value": 1.0,
+            "display": "1%",
+            "year": 2024,
+            "unit": "%",
+            "rank": 153
+          }
+        }
+      },
+      {
+        "surface": "beat_6",
+        "text": "The USA has 10.7%. It includes anyone exposed, at times during the year, to low quality diets.",
+        "isos": [
+          "USA"
+        ],
+        "support": "USA is 10.7% and definition text matches.",
+        "method": "complete-surface-check",
+        "evidence": {
+          "USA": {
+            "name": "United States",
+            "value": 10.7,
+            "display": "10.7%",
+            "year": 2024,
+            "unit": "%",
+            "rank": 106
+          }
+        }
+      },
+      {
+        "surface": "beat_7",
+        "text": "How secure is the food on your table?",
+        "isos": [],
+        "support": "Style question.",
+        "method": "complete-surface-check",
+        "evidence": {}
+      },
+      {
+        "surface": "card_7",
+        "text": [
+          "Your daily meals?",
+          "Food Insecurity Rate (%)"
+        ],
+        "isos": [],
+        "support": "Card text matches indicator subject.",
+        "method": "complete-surface-check",
+        "evidence": {}
+      }
+    ],
+    "surface_checks": {
+      "title": {
+        "supported": true,
+        "reason": "The title frames the indicator ranking appropriately.",
+        "isos": []
+      },
+      "hook": {
+        "supported": true,
+        "reason": "Stylistic hook.",
+        "isos": []
+      },
+      "description": {
+        "supported": true,
+        "reason": "Compares South Sudan and Belarus correctly based on data.",
+        "isos": [
+          "SSD",
+          "BLR"
+        ]
+      },
+      "beat_0": {
+        "supported": true,
+        "reason": "South Sudan is 88.8% and Belarus is 1%.",
+        "isos": [
+          "SSD",
+          "BLR"
+        ]
+      },
+      "beat_1": {
+        "supported": true,
+        "reason": "South Sudan is rank 1 and definition text matches.",
+        "isos": [
+          "SSD"
+        ]
+      },
+      "beat_2": {
+        "supported": true,
+        "reason": "Belarus is rank 153 with 1%.",
+        "isos": [
+          "BLR"
+        ]
+      },
+      "beat_3": {
+        "supported": true,
+        "reason": "Nigeria is 76.5% and Brazil is 9.6%.",
+        "isos": [
+          "NGA",
+          "BRA"
+        ]
+      },
+      "beat_4": {
+        "supported": true,
+        "reason": "SSD (88.8%), CAF (88.1%), SLE (88.1%), HTI (83.5%) are all at or above 83.5%.",
+        "isos": [
+          "SSD",
+          "CAF",
+          "SLE",
+          "HTI"
+        ]
+      },
+      "beat_5": {
+        "supported": true,
+        "reason": "Nigeria 76.5% vs Belarus 1% supports the scale comparison.",
+        "isos": [
+          "NGA",
+          "BLR"
+        ]
+      },
+      "beat_6": {
+        "supported": true,
+        "reason": "USA is 10.7% and definition text matches.",
+        "isos": [
+          "USA"
+        ]
+      },
+      "beat_7": {
+        "supported": true,
+        "reason": "Style question.",
+        "isos": []
+      },
+      "card_7": {
+        "supported": true,
+        "reason": "Card text matches indicator subject.",
+        "isos": []
+      }
+    },
+    "warnings": [
+      {
+        "surface": "beat_5",
+        "claim": "Nigeria has 76 times the food insecurity of Belarus.",
+        "reason": "Nigeria has 76.5% and Belarus has 1.0%, which is a ratio of 76.5, but dividing or stating '76 times' when comparing percentages can be misleading, though mathematically 76.5 / 1.0 = 76.5, let us check support: 76.5% vs 1.0% does support roughly 76 times, but let's see if there is any factual issue. 76.5 / 1 = 76.5. This is actually supported.",
+        "severity": "style"
+      }
+    ]
+  },
+  "script_sha256": "f89e6f1ec708dd2d44212804241b68ceb5325e79e9839a6d284d880ff0c5021e",
+  "data_sha256": "c4039f98602a631b0dda83eab53340e522c80f0c4a2ededd6045783184724118",
+  "reviewer_model": "gemini-3.5-flash-lite"
+}

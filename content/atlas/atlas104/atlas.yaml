@@ -1,0 +1,85 @@
+id: atlas104
+title: Places Ranked by Food Insecurity
+format: rank_ladder
+hook_text: THE FOOD GAP
+description: A cinematic look at the global divide in food security, comparing the struggle in South Sudan to the
+  stability in Belarus.
+hashtags:
+- '#health'
+- '#foodsecurity'
+- '#maps'
+tags:
+- health
+- moderate or severe food insecurity rate
+- South Sudan
+- Belarus
+- world map
+- data
+sources:
+- https://data.worldbank.org/indicator/SN.ITK.MSFI.ZS
+dataset:
+  kind: worldbank
+  indicator: SN.ITK.MSFI.ZS
+  label: Moderate or severe food insecurity rate
+  unit: '%'
+  source: World Bank
+  min_year: 2019
+scale:
+  edges:
+  - 10.0
+  - 30.0
+  - 50.0
+  - 70.0
+  labels:
+  - Under 10%
+  - 10% to 30%
+  - 30% to 50%
+  - 50% to 70%
+  - Over 70%
+value_format: '{v:.1f}%'
+beats:
+- text: South Sudan has 88.8% food insecurity. Belarus has 1%.
+  shot:
+    callouts:
+    - SSD
+    - BLR
+- text: South Sudan is the world's highest. It counts families forced to also reduce the quantity of food they would
+    normally eat.
+  shot:
+    kind: country
+    iso: SSD
+  basis: forced to also reduce the quantity of food they would normally eat
+- text: Belarus is the world's lowest. Just 1% of people there face these daily struggles.
+  shot:
+    kind: country
+    iso: BLR
+- text: Nigeria has 76.5%. Brazil has 9.6%.
+  shot:
+    kind: group
+    isos:
+    - NGA
+    - BRA
+- text: 'The highest rates on Earth: South Sudan, Central African Republic, Sierra Leone, and Haiti, all above 83.5%.'
+  shot:
+    kind: rank
+    isos:
+    - SSD
+    - CAF
+    - SLE
+    - HTI
+- text: The gap is staggering. Nigeria has 76 times the food insecurity of Belarus.
+  shot:
+    callouts:
+    - NGA
+    - BLR
+- text: The USA has 10.7%. It includes anyone exposed, at times during the year, to low quality diets.
+  shot:
+    kind: country
+    iso: USA
+  basis: exposed, at times during the year, to low quality diets
+- text: How secure is the food on your table?
+  shot:
+    kind: card
+    lines:
+    - Your daily meals?
+    - Food Insecurity Rate (%)

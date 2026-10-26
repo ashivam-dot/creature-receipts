@@ -1,0 +1,25 @@
+{
+  "version": 1,
+  "passed": true,
+  "checked_at": "2026-10-26T09:23:00.083636+00:00",
+  "quality_module_sha256": "db7be8ac57c839f39a10676f1a70580a83ea346f59c27f19868d09c272def14c",
+  "media_sha256": "580cffe5cc267312f72c42233a1cd285fe1e091229047fbf78760587b6e7208c",
+  "script_sha256": "f89e6f1ec708dd2d44212804241b68ceb5325e79e9839a6d284d880ff0c5021e",
+  "data_sha256": "c4039f98602a631b0dda83eab53340e522c80f0c4a2ededd6045783184724118",
+  "claims_sha256": "6843bec5534300f1d48d25f8ea1af3b4dc4f4f04bc634b86a43240707d98e4a5",
+  "contact_sha256": "9cde9f70747b08c36a15ebb142379a6dc47666397d96a8372ba11e642f394f47",
+  "duration": 47.06,
+  "integrated_lufs": -14.3,
+  "true_peak_dbfs": -1.3,
+  "speech": {
+    "heard": "South Sudan has 88.8% food insecurity, Belarus has 1%. South Sudan is the world's highest. It counts families forced to also reduce the quantity of food they would normally eat. Belarus is the world's lowest, just 1% of people there face these daily struggles. Nigeria has 76.5%, Brazil has 9.6%. The highest rates on Earth, South Sudan, Central African Republic, Sierra Leone, and Haiti, all above 83.5%. The gap is staggering. Nigeria has 76 times the food insecurity of Belarus. The USA has 10.7%. It includes anyone exposed at times during the year to low-quality diets. How secure is the food on your table?",
+    "model": "small.en",
+    "media_sha256": "580cffe5cc267312f72c42233a1cd285fe1e091229047fbf78760587b6e7208c",
+    "primary_differences": [],
+    "differences": []
+  },
+  "warnings": [
+    "duration 47.1s outside editorial 30–45s target"
+  ],
+  "speech_policy": "material-hard-entity-polarity-strict-minor-spelling-warning"
+}

@@ -1,0 +1,159 @@
+{
+  "errors": [
+    {
+      "surface": "beat_5",
+      "claim": "Nigeria has 76 times the food insecurity of Belarus.",
+      "reason": "Nigeria has 76.5% and Belarus has 1.0%, which is a ratio of 76.5, but dividing or stating '76 times' when comparing percentages can be misleading, though mathematically 76.5 / 1.0 = 76.5, let us check support: 76.5% vs 1.0% does support roughly 76 times, but let's see if there is any factual issue. 76.5 / 1 = 76.5. This is actually supported.",
+      "severity": "style"
+    }
+  ],
+  "claims": [
+    {
+      "surface": "beat_0",
+      "text": "South Sudan has 88.8% food insecurity. Belarus has 1%.",
+      "isos": [
+        "SSD",
+        "BLR"
+      ],
+      "support": "South Sudan SSD value is 88.8, Belarus BLR value is 1.0"
+    },
+    {
+      "surface": "beat_1",
+      "text": "South Sudan is the world's highest. It counts families forced to also reduce the quantity of food they would normally eat.",
+      "isos": [
+        "SSD"
+      ],
+      "support": "SSD rank is 1, definition mentions forced to also reduce the quantity of food they would normally eat"
+    },
+    {
+      "surface": "beat_2",
+      "text": "Belarus is the world's lowest. Just 1% of people there face these daily struggles.",
+      "isos": [
+        "BLR"
+      ],
+      "support": "BLR rank is 153 (lowest in count 153), value is 1.0%"
+    },
+    {
+      "surface": "beat_3",
+      "text": "Nigeria has 76.5%. Brazil has 9.6%.",
+      "isos": [
+        "NGA",
+        "BRA"
+      ],
+      "support": "NGA value is 76.5, BRA value is 9.6"
+    },
+    {
+      "surface": "beat_4",
+      "text": "The highest rates on Earth: South Sudan, Central African Republic, Sierra Leone, and Haiti, all above 83.5%.",
+      "isos": [
+        "SSD",
+        "CAF",
+        "SLE",
+        "HTI"
+      ],
+      "support": "SSD is 88.8, CAF is 88.1, SLE is 88.1, HTI is 83.5, all are >= 83.5"
+    },
+    {
+      "surface": "beat_5",
+      "text": "The gap is staggering. Nigeria has 76 times the food insecurity of Belarus.",
+      "isos": [
+        "NGA",
+        "BLR"
+      ],
+      "support": "NGA is 76.5%, BLR is 1.0%"
+    },
+    {
+      "surface": "beat_6",
+      "text": "The USA has 10.7%. It includes anyone exposed, at times during the year, to low quality diets.",
+      "isos": [
+        "USA"
+      ],
+      "support": "USA value is 10.7, definition mentions exposed, at times during the year, to low quality diets"
+    }
+  ],
+  "surface_checks": {
+    "title": {
+      "supported": true,
+      "reason": "The title frames the indicator ranking appropriately.",
+      "isos": []
+    },
+    "hook": {
+      "supported": true,
+      "reason": "Stylistic hook.",
+      "isos": []
+    },
+    "description": {
+      "supported": true,
+      "reason": "Compares South Sudan and Belarus correctly based on data.",
+      "isos": [
+        "SSD",
+        "BLR"
+      ]
+    },
+    "beat_0": {
+      "supported": true,
+      "reason": "South Sudan is 88.8% and Belarus is 1%.",
+      "isos": [
+        "SSD",
+        "BLR"
+      ]
+    },
+    "beat_1": {
+      "supported": true,
+      "reason": "South Sudan is rank 1 and definition text matches.",
+      "isos": [
+        "SSD"
+      ]
+    },
+    "beat_2": {
+      "supported": true,
+      "reason": "Belarus is rank 153 with 1%.",
+      "isos": [
+        "BLR"
+      ]
+    },
+    "beat_3": {
+      "supported": true,
+      "reason": "Nigeria is 76.5% and Brazil is 9.6%.",
+      "isos": [
+        "NGA",
+        "BRA"
+      ]
+    },
+    "beat_4": {
+      "supported": true,
+      "reason": "SSD (88.8%), CAF (88.1%), SLE (88.1%), HTI (83.5%) are all at or above 83.5%.",
+      "isos": [
+        "SSD",
+        "CAF",
+        "SLE",
+        "HTI"
+      ]
+    },
+    "beat_5": {
+      "supported": true,
+      "reason": "Nigeria 76.5% vs Belarus 1% supports the scale comparison.",
+      "isos": [
+        "NGA",
+        "BLR"
+      ]
+    },
+    "beat_6": {
+      "supported": true,
+      "reason": "USA is 10.7% and definition text matches.",
+      "isos": [
+        "USA"
+      ]
+    },
+    "beat_7": {
+      "supported": true,
+      "reason": "Style question.",
+      "isos": []
+    },
+    "card_7": {
+      "supported": true,
+      "reason": "Card text matches indicator subject.",
+      "isos": []
+    }
+  }
+}
