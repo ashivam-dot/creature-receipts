@@ -1,0 +1,76 @@
+id: atlas106
+title: 'USA vs Iraq: The 85 Times Research Spending Gap'
+format: versus
+hook_text: RESEARCH SPENDING GAP
+description: A cinematic comparison of global research and development spending, contrasting world leaders with
+  emerging economies and the global median.
+hashtags:
+- '#economy'
+- '#science'
+- '#geography'
+tags:
+- wealth
+- rd expenditure as a percent of gdp
+- countries ranked by rd expenditure as a percent of gdp
+- Israel
+- Guatemala
+- world map
+- geography
+- atlas in numbers
+sources:
+- https://data.worldbank.org/indicator/GB.XPD.RSDV.GD.ZS
+dataset:
+  kind: worldbank
+  indicator: GB.XPD.RSDV.GD.ZS
+  label: RD expenditure as a percent of GDP
+  unit: '%'
+  source: World Bank
+  min_year: 2019
+scale:
+  edges:
+  - 0.5
+  - 1.5
+  - 3.0
+  labels:
+  - Under 0.5 percent
+  - 0.5 to 1.5 percent
+  - 1.5 to 3.0 percent
+  - Over 3 percent
+value_format: '{v:.2f}%'
+beats:
+- text: USA invests 3.4 percent in research. Iraq has 0.04 percent. 85 times the investment.
+  shot:
+    callouts:
+    - USA
+    - IRQ
+- text: The USA invests to drive new discovery and technology.
+  shot:
+    kind: country
+    iso: USA
+- text: Iraq spends a tiny fraction of its total economy.
+  shot:
+    kind: country
+    iso: IRQ
+- text: This counts capital and current spending in business, government, and higher education sectors.
+  basis: 'capital and current expenditures in the four main sectors: Business enterprise, Government, Higher education
+    and Private non-profit.'
+- text: 'Side by side: USA at 3.4 percent and Iraq at 0.04 percent.'
+  shot:
+    kind: group
+    isos:
+    - USA
+    - IRQ
+- text: Half of all countries invest 0.6 percent or less.
+- text: Israel is the world's highest at 6.3 percent. South Korea has 4.9 percent. Sweden has 3.6 percent.
+  shot:
+    kind: rank
+    isos:
+    - ISR
+    - KOR
+    - SWE
+- text: What kind of research should your nation prioritize?
+  shot:
+    kind: card
+    lines:
+    - Future research?
+    - R&D spending (% of GDP)

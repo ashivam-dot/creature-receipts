@@ -1,0 +1,84 @@
+id: atlas107
+title: Which Country Has the MOST Diabetes?
+format: odd_one_out
+hook_text: HIGHEST DIABETES PREVALENCE
+description: Global adult diabetes prevalence reveals a massive gap between Pakistan and Zimbabwe.
+hashtags:
+- '#health'
+- '#geography'
+- '#countries'
+tags:
+- health
+- adults with type 1 or 2 diabetes
+- countries ranked by adults with type 1 or 2 diabetes
+- Pakistan
+- Zimbabwe
+- world map
+- geography
+- atlas in numbers
+sources:
+- https://data.worldbank.org/indicator/SH.STA.DIAB.ZS
+dataset:
+  kind: worldbank
+  indicator: SH.STA.DIAB.ZS
+  label: Adults with type 1 or 2 diabetes
+  unit: '%'
+  source: World Bank
+  min_year: 2019
+scale:
+  edges:
+  - 5.0
+  - 10.0
+  - 15.0
+  - 25.0
+  labels:
+  - Under 5%
+  - 5-10%
+  - 10-15%
+  - 15-25%
+  - Over 25%
+value_format: '{v:.1f}%'
+beats:
+- text: Pakistan has 21 times the diabetes rate of Zimbabwe.
+  shot:
+    callouts:
+    - PAK
+    - ZWE
+- text: Is the highest rate in the USA, India, or Pakistan?
+  shot:
+    kind: group
+    isos:
+    - USA
+    - IND
+    - PAK
+- text: The USA sits at 13.7%.
+  shot:
+    kind: country
+    iso: USA
+- text: India has 10.5%. Significant, but far from the top.
+  shot:
+    kind: country
+    iso: IND
+- text: Pakistan sits at the very peak with 31.4%.
+  shot:
+    kind: country
+    iso: PAK
+- text: At the other end, Zimbabwe drops to just 1.5%.
+  shot:
+    kind: country
+    iso: ZWE
+- text: This counts adults ages 20 to 79 with type 1 or type 2 diabetes.
+  basis: Diabetes prevalence refers to the percentage of people ages 20-79 who have type 1 or type 2 diabetes.
+- text: 'Kuwait: 25.6%. Qatar: 24.6%. Saudi Arabia: 23.1%.'
+  shot:
+    kind: rank
+    isos:
+    - KWT
+    - QAT
+    - SAU
+- text: How common is diabetes where you live?
+  shot:
+    kind: card
+    lines:
+    - How common is diabetes?
+    - Adult Diabetes Prevalence

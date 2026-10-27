@@ -71,20 +71,21 @@ Refreshed by every producer run (`atlas.stats`) from the channel's public feed o
 | atlas055 South Korea Has 12.8 Hospital Beds While Chad Has 0.1 | map_reveal | 2026-10-18 23:00 UTC | 1091 | 13 | 6.4 |
 | atlas056 Where More Boys Are Born: 1.01 to 1.11 Worldwide | map_reveal | 2026-10-19 16:02 UTC | 839 | – | 5.2 |
 | atlas058 Years Children Must Legally Attend School | rank_ladder | 2026-10-19 20:01 UTC | 1069 | – | 6.5 |
-| atlas061 100% of Adults in Iceland Have an Account, South Sudan 6% | map_reveal | 2026-10-19 23:01 UTC | 1057 | – | 6.5 |
-| atlas065 Iceland Uses 16,248 kg of Energy Per Person | map_reveal | 2026-10-20 16:03 UTC | 1017 | – | 7.0 |
-| atlas071 Australia Leads the World in Overweight Toddlers | map_reveal | 2026-10-20 20:00 UTC | 983 | – | 7.0 |
-| atlas075 Bulgaria Has 93.8 Bank Branches to DR Congo 0.6 | map_reveal | 2026-10-21 16:01 UTC | 349 | – | 2.9 |
-| atlas078 Places Ranked by Megacity Populations | rank_ladder | 2026-10-22 16:04 UTC | 1376 | – | 14.2 |
-| atlas079 Places Ranked by Arable Land | map_reveal | 2026-10-21 23:00 UTC | 1021 | – | 8.9 |
-| atlas081 Places Ranked by Income Inequality | rank_ladder | 2026-10-22 23:01 UTC | 1006 | – | 11.2 |
-| atlas083 The Places With the Oldest Male Populations | map_reveal | 2026-10-23 16:02 UTC | 1046 | – | 14.3 |
-| atlas090 Places Ranked by Container Shipping CONNECTIVITY | rank_ladder | 2026-10-23 23:01 UTC | 984 | – | 14.9 |
+| atlas061 100% of Adults in Iceland Have an Account, South Sudan 6% | map_reveal | 2026-10-19 23:01 UTC | 1057 | – | 6.2 |
+| atlas065 Iceland Uses 16,248 kg of Energy Per Person | map_reveal | 2026-10-20 16:03 UTC | 1017 | – | 6.6 |
+| atlas071 Australia Leads the World in Overweight Toddlers | map_reveal | 2026-10-20 20:00 UTC | 983 | – | 6.6 |
+| atlas075 Bulgaria Has 93.8 Bank Branches to DR Congo 0.6 | map_reveal | 2026-10-21 16:01 UTC | 349 | – | 2.7 |
+| atlas078 Places Ranked by Megacity Populations | rank_ladder | 2026-10-22 16:04 UTC | 1377 | – | 13.1 |
+| atlas079 Places Ranked by Arable Land | map_reveal | 2026-10-21 23:00 UTC | 1021 | – | 8.4 |
+| atlas081 Places Ranked by Income Inequality | rank_ladder | 2026-10-22 23:01 UTC | 1006 | – | 10.3 |
+| atlas083 The Places With the Oldest Male Populations | map_reveal | 2026-10-23 16:02 UTC | 1048 | – | 12.9 |
+| atlas090 Places Ranked by Container Shipping CONNECTIVITY | rank_ladder | 2026-10-23 23:01 UTC | 988 | – | 13.3 |
 | atlas093 Direct Medical Costs Paid by Families | map_reveal | 2026-10-24 16:03 UTC | 3 | – | 0.1 |
-| atlas094 Places Ranked by Cost of Power Outages | rank_ladder | 2026-10-24 23:01 UTC | 371 | – | 8.8 |
-| atlas098 Places Ranked by the Income of the Richest Fifth | rank_ladder | 2026-10-25 23:01 UTC | 495 | – | 27.3 |
-| atlas100 Places Ranked by Nursing Staff Density | rank_ladder | 2026-10-25 16:02 UTC | 274 | – | 10.9 |
-| atlas101 Which Nations Grow the MOST Permanent Crops? | map_reveal | 2026-10-26 16:04 UTC | 0 | – | 0.0 |
+| atlas094 Places Ranked by Cost of Power Outages | rank_ladder | 2026-10-24 23:01 UTC | 400 | – | 8.0 |
+| atlas098 Places Ranked by the Income of the Richest Fifth | rank_ladder | 2026-10-25 23:01 UTC | 596 | – | 22.8 |
+| atlas100 Places Ranked by Nursing Staff Density | rank_ladder | 2026-10-25 16:02 UTC | 289 | – | 8.7 |
+| atlas101 Which Nations Grow the MOST Permanent Crops? | map_reveal | 2026-10-26 16:04 UTC | 4 | – | 0.4 |
+| atlas102 Places Ranked by the Cost of Sending Money | rank_ladder | 2026-10-26 23:01 UTC | 179 | – | 83.3 |
 
 ## Log
 

@@ -1,0 +1,145 @@
+{
+  "errors": [],
+  "claims": [
+    {
+      "surface": "title",
+      "text": "Places Ranked by Years of Preschool",
+      "isos": [],
+      "support": "Universe of 195 countries and territories mapped by preprimary education duration"
+    },
+    {
+      "surface": "hook",
+      "text": "SEVEN YEARS",
+      "isos": [],
+      "support": "Maximum duration of 7 years in countries such as Croatia, El Salvador, Estonia, Guatemala, Hungary, Indonesia, Liechtenstein, Lithuania, South Africa"
+    },
+    {
+      "surface": "description",
+      "text": "A cinematic look at the duration of preprimary education across 195 countries and territories, based on 2025 World Bank data.",
+      "isos": [],
+      "support": "indicator: SE.PRE.DURS, count: 195, year_label: 2025"
+    },
+    {
+      "surface": "beat_0",
+      "text": "Croatia has 7 years of preschool. In Tanzania, it is 1 year.",
+      "isos": [
+        "HRV",
+        "TZA"
+      ],
+      "support": "HRV value is 7.0 years; TZA value is 1.0 year"
+    },
+    {
+      "surface": "beat_1",
+      "text": "Preprimary duration refers to the number of grades in preprimary school.",
+      "isos": [],
+      "support": "Preprimary duration refers to the number of grades (years) in preprimary school."
+    },
+    {
+      "surface": "beat_2",
+      "text": "Croatia: 7 years. El Salvador: 7 years. Estonia: 7 years. Guatemala: 7 years.",
+      "isos": [
+        "HRV",
+        "SLV",
+        "EST",
+        "GTM"
+      ],
+      "support": "HRV: 7.0, SLV: 7.0, EST: 7.0, GTM: 7.0"
+    },
+    {
+      "surface": "beat_3",
+      "text": "India and China both provide 3 years of preschool for young children.",
+      "isos": [
+        "IND",
+        "CHN"
+      ],
+      "support": "IND: 3.0, CHN: 3.0"
+    },
+    {
+      "surface": "beat_4",
+      "text": "Tanzania: 1 year. Croatia gives 7 times the preschool Tanzania gives.",
+      "isos": [
+        "TZA",
+        "HRV"
+      ],
+      "support": "TZA: 1.0, HRV: 7.0 (7 divided by 1 is 7)"
+    },
+    {
+      "surface": "beat_5",
+      "text": "How many years of preschool does your country offer to children?",
+      "isos": [],
+      "support": "Identity framing style question regarding indicator SE.PRE.DURS"
+    },
+    {
+      "surface": "card_5",
+      "text": "How many preschool years?",
+      "isos": [],
+      "support": "Indicator SE.PRE.DURS measures grades (years) in preprimary school"
+    }
+  ],
+  "surface_checks": {
+    "title": {
+      "supported": true,
+      "reason": "Accurately describes ranking of preprimary duration.",
+      "isos": []
+    },
+    "hook": {
+      "supported": true,
+      "reason": "Matches the maximum preprimary duration of 7 years found in the dataset.",
+      "isos": []
+    },
+    "description": {
+      "supported": true,
+      "reason": "Accurately reflects the dataset parameters (195 countries and territories, 2025 World Bank data).",
+      "isos": []
+    },
+    "beat_0": {
+      "supported": true,
+      "reason": "Croatia (HRV) is 7 years and Tanzania (TZA) is 1 year in the dataset.",
+      "isos": [
+        "HRV",
+        "TZA"
+      ]
+    },
+    "beat_1": {
+      "supported": true,
+      "reason": "Directly matches the provided definition: Preprimary duration refers to the number of grades (years) in preprimary school.",
+      "isos": []
+    },
+    "beat_2": {
+      "supported": true,
+      "reason": "All listed countries (Croatia, El Salvador, Estonia, Guatemala) have a value of 7 years in the dataset.",
+      "isos": [
+        "HRV",
+        "SLV",
+        "EST",
+        "GTM"
+      ]
+    },
+    "beat_3": {
+      "supported": true,
+      "reason": "Both India (IND) and China (CHN) have a value of 3 years in the dataset.",
+      "isos": [
+        "IND",
+        "CHN"
+      ]
+    },
+    "beat_4": {
+      "supported": true,
+      "reason": "Tanzania is 1 year and Croatia is 7 years, making Croatia's duration 7 times that of Tanzania.",
+      "isos": [
+        "TZA",
+        "HRV"
+      ]
+    },
+    "beat_5": {
+      "supported": true,
+      "reason": "Stylistic question framing consistent with the indicator topic.",
+      "isos": []
+    },
+    "card_5": {
+      "supported": true,
+      "reason": "Accurately reflects the core concept of preprimary education years.",
+      "isos": []
+    }
+  }
+}

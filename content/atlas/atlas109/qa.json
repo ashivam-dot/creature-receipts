@@ -1,0 +1,45 @@
+{
+  "version": 1,
+  "passed": true,
+  "checked_at": "2026-10-27T01:39:18.909247+00:00",
+  "quality_module_sha256": "db7be8ac57c839f39a10676f1a70580a83ea346f59c27f19868d09c272def14c",
+  "media_sha256": "2ac3955f0ba50b91db977476d3ded58d6a8d876318e96103f4f440163aed16a3",
+  "script_sha256": "4ed67fd1fdff2b795863bb79135a94f198278aa97bab9b89744ab1a7838a8894",
+  "data_sha256": "0de01ff09f42b77720450f225b2eb713a7054f52d88f0b70d9ff9c04256ccfe1",
+  "claims_sha256": "4ce31aa52205d93f95c931cc08d9e6e82745500d2f4b1721dc0c240f3f055e8d",
+  "contact_sha256": "775a85318a3f2de3940e85386423452a1a901da10ea3d73dd476c87f3750589c",
+  "duration": 33.5,
+  "integrated_lufs": -14.0,
+  "true_peak_dbfs": -1.5,
+  "speech": {
+    "heard": "Croatia has seven years of preschool. In Tanzania, it is one year. Propremary duration refers to the number of grades in propremary school. Croatia, seven years. El Salvador, seven years. Estonia, seven years. Guatemala, seven years. India and China both provide three years of preschool for young children. Tanzania, one year. Croatia gives seven times the preschool Tanzania gives. How many years of preschool does your country offer to children?",
+    "model": "small.en",
+    "media_sha256": "2ac3955f0ba50b91db977476d3ded58d6a8d876318e96103f4f440163aed16a3",
+    "primary_differences": [
+      "'preprimary' heard as 'propremary' after 'is one year'",
+      "'preprimary' heard as 'propremary' after 'of grades in'"
+    ],
+    "differences": [
+      "'preprimary' heard as 'propremary' after 'is one year'",
+      "'preprimary' heard as 'propremary' after 'of grades in'",
+      "base.en: 'preprimary' heard as 'perprimary' after 'is one year'",
+      "base.en: 'preprimary' heard as 'perprimary' after 'of grades in'"
+    ],
+    "corroboration": {
+      "model": "base.en",
+      "heard": "Croatia has seven years of preschool. In Tanzania, it is one year. Perprimary duration refers to the number of grades in Perprimary School. Croatia seven years. El Salvador seven years. Estonia seven years. Guatemala seven years. India and China both provide three years of preschool for young children. Tanzania one year. Croatia gives seven times the preschool Tanzania gives. How many years of preschool does your country offer to children?",
+      "differences": [
+        "'preprimary' heard as 'perprimary' after 'is one year'",
+        "'preprimary' heard as 'perprimary' after 'of grades in'"
+      ],
+      "resolved": []
+    }
+  },
+  "warnings": [
+    "'preprimary' heard as 'propremary' after 'is one year'",
+    "'preprimary' heard as 'propremary' after 'of grades in'",
+    "base.en: 'preprimary' heard as 'perprimary' after 'is one year'",
+    "base.en: 'preprimary' heard as 'perprimary' after 'of grades in'"
+  ],
+  "speech_policy": "material-hard-entity-polarity-strict-minor-spelling-warning"
+}

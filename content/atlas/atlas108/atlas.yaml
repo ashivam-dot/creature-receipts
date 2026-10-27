@@ -1,0 +1,69 @@
+id: atlas108
+title: Places Ranked by How Much Money They Save
+hook_text: SAVINGS EXTREMES
+description: An exploration of gross national savings rates across 160 countries and territories.
+hashtags:
+- '#economy'
+- '#geography'
+- '#countries'
+tags:
+- wealth
+- gross savings as a share of gdp
+- countries ranked by gross savings as a share of gdp
+- Qatar
+- Timor-Leste
+- world map
+- geography
+- atlas in numbers
+sources:
+- https://data.worldbank.org/indicator/NY.GNS.ICTR.ZS
+dataset:
+  kind: worldbank
+  indicator: NY.GNS.ICTR.ZS
+  label: Gross savings as a share of GDP
+  unit: '%'
+  source: World Bank
+  min_year: 2019
+scale:
+  edges:
+  - 10.0
+  - 20.0
+  - 30.0
+  - 40.0
+  labels:
+  - Under 10%
+  - 10% to 20%
+  - 20% to 30%
+  - 30% to 40%
+  - Over 40%
+value_format: '{v:.1f}%'
+beats:
+- text: The global median savings rate is 22.4%. Qatar sets aside 57.4% of its GDP.
+  shot:
+    callouts:
+    - QAT
+- text: Qatar has 3.5 times the USA, which stands at 16.6%.
+  shot:
+    kind: country
+    iso: USA
+- text: China hits 42.7%, while Brazil sits down at 14.4%.
+  shot:
+    kind: group
+    isos:
+    - CHN
+    - BRA
+- text: East Timor drops to the bottom at down 21.1%.
+  shot:
+    kind: country
+    iso: TLS
+- text: Gross savings are calculated as gross national income less total consumption, plus net transfers.
+  shot:
+    kind: country
+    iso: TLS
+  basis: Gross savings are calculated as gross national income less total consumption, plus net transfers.
+- text: What share of income does your country save?
+  shot:
+    kind: card
+    lines:
+    - How much does your country save?
+    - Gross savings as a share of GDP

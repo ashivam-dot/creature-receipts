@@ -1,0 +1,137 @@
+{
+  "errors": [],
+  "claims": [
+    {
+      "surface": "title",
+      "text": "Places Ranked by How Much Money They Save",
+      "isos": [],
+      "support": "indicator: NY.GNS.ICTR.ZS, Gross savings (% of GDP), universe of 160 countries and territories with data"
+    },
+    {
+      "surface": "hook",
+      "text": "SAVINGS EXTREMES",
+      "isos": [],
+      "support": "indicator: NY.GNS.ICTR.ZS, Gross savings (% of GDP)"
+    },
+    {
+      "surface": "description",
+      "text": "An exploration of gross national savings rates across 160 countries and territories.",
+      "isos": [],
+      "support": "count: 160, universe: mapped countries and territories with data"
+    },
+    {
+      "surface": "beat_0",
+      "text": "The global median savings rate is 22.4%. Qatar sets aside 57.4% of its GDP.",
+      "isos": [
+        "QAT"
+      ],
+      "support": "QAT: value = 57.4210384293663, display = 57.4%, year = 2022, rank = 1"
+    },
+    {
+      "surface": "beat_1",
+      "text": "Qatar has 3.5 times the USA, which stands at 16.6%.",
+      "isos": [
+        "QAT",
+        "USA"
+      ],
+      "support": "QAT: 57.4210384293663, USA: 16.5919955049511; 57.4210384293663 / 16.5919955049511 approx 3.46"
+    },
+    {
+      "surface": "beat_2",
+      "text": "China hits 42.7%, while Brazil sits down at 14.4%.",
+      "isos": [
+        "CHN",
+        "BRA"
+      ],
+      "support": "CHN: value = 42.7150109198495, display = 42.7%; BRA: value = 14.4155934935691, display = 14.4%"
+    },
+    {
+      "surface": "beat_3",
+      "text": "East Timor drops to the bottom at down 21.1%.",
+      "isos": [
+        "TLS"
+      ],
+      "support": "TLS: name = Timor-Leste, value = -21.1282017661134, display = -21.1%, rank = 160"
+    },
+    {
+      "surface": "beat_4",
+      "text": "Gross savings are calculated as gross national income less total consumption, plus net transfers.",
+      "isos": [],
+      "support": "definition: Gross savings are calculated as gross national income less total consumption, plus net transfers."
+    },
+    {
+      "surface": "beat_5",
+      "text": "What share of income does your country save?",
+      "isos": [],
+      "support": "indicator: NY.GNS.ICTR.ZS, Gross savings (% of GDP)"
+    },
+    {
+      "surface": "card_5",
+      "text": "How much does your country save? Gross savings as a share of GDP",
+      "isos": [],
+      "support": "indicator: NY.GNS.ICTR.ZS, Gross savings (% of GDP)"
+    }
+  ],
+  "surface_checks": {
+    "title": {
+      "supported": true,
+      "reason": "The indicator ranks places by gross savings as a share of GDP.",
+      "isos": []
+    },
+    "hook": {
+      "supported": true,
+      "reason": "Video covers the high and low extremes of the dataset.",
+      "isos": []
+    },
+    "description": {
+      "supported": true,
+      "reason": "Matches the count of 160 countries and territories in the dataset.",
+      "isos": []
+    },
+    "beat_0": {
+      "supported": true,
+      "reason": "Qatar's value is 57.4% (rank 1), matching the evidence.",
+      "isos": [
+        "QAT"
+      ]
+    },
+    "beat_1": {
+      "supported": true,
+      "reason": "Qatar (57.4%) is approximately 3.46 times the USA (16.6%).",
+      "isos": [
+        "QAT",
+        "USA"
+      ]
+    },
+    "beat_2": {
+      "supported": true,
+      "reason": "China value is 42.7% and Brazil is 14.4%, matching evidence.",
+      "isos": [
+        "CHN",
+        "BRA"
+      ]
+    },
+    "beat_3": {
+      "supported": true,
+      "reason": "Timor-Leste is ranked 160 with a value of -21.1%.",
+      "isos": [
+        "TLS"
+      ]
+    },
+    "beat_4": {
+      "supported": true,
+      "reason": "Text matches the exact definition provided in the evidence.",
+      "isos": []
+    },
+    "beat_5": {
+      "supported": true,
+      "reason": "A stylistic and standard framing question.",
+      "isos": []
+    },
+    "card_5": {
+      "supported": true,
+      "reason": "Accurately reflects the indicator and its definition.",
+      "isos": []
+    }
+  }
+}

@@ -1,0 +1,74 @@
+id: atlas109
+title: Places Ranked by Years of Preschool
+format: rank_ladder
+hook_text: SEVEN YEARS
+description: A cinematic look at the duration of preprimary education across 195 countries and territories, based
+  on 2025 World Bank data.
+hashtags:
+- '#education'
+- '#geography'
+- '#countries'
+tags:
+- education
+- duration of preprimary education
+- countries ranked by duration of preprimary education
+- South Africa
+- Afghanistan
+- world map
+- geography
+- atlas in numbers
+sources:
+- https://data.worldbank.org/indicator/SE.PRE.DURS
+dataset:
+  kind: worldbank
+  indicator: SE.PRE.DURS
+  label: Duration of preprimary education
+  unit: years
+  source: World Bank
+  min_year: 2019
+scale:
+  edges:
+  - 2.0
+  - 4.0
+  - 6.0
+  labels:
+  - 1 year
+  - 2-3 years
+  - 4-5 years
+  - 6-7 years
+value_format: '{v:.0f} years'
+beats:
+- text: Croatia has 7 years of preschool. In Tanzania, it is 1 year.
+  shot:
+    callouts:
+    - HRV
+    - TZA
+- text: Preprimary duration refers to the number of grades in preprimary school.
+  shot:
+    kind: country
+    iso: HRV
+  basis: Preprimary duration refers to the number of grades (years) in preprimary school.
+- text: 'Croatia: 7 years. El Salvador: 7 years. Estonia: 7 years. Guatemala: 7 years.'
+  shot:
+    kind: rank
+    isos:
+    - HRV
+    - SLV
+    - EST
+    - GTM
+- text: India and China both provide 3 years of preschool for young children.
+  shot:
+    kind: group
+    isos:
+    - IND
+    - CHN
+- text: 'Tanzania: 1 year. Croatia gives 7 times the preschool Tanzania gives.'
+  shot:
+    kind: country
+    iso: TZA
+- text: How many years of preschool does your country offer to children?
+  shot:
+    kind: card
+    lines:
+    - How many preschool years?
+    - Preprimary education duration

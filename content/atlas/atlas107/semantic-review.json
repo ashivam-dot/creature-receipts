@@ -1,0 +1,201 @@
+{
+  "errors": [
+    {
+      "surface": "beat_0",
+      "claim": "Pakistan has 21 times the diabetes rate of Zimbabwe.",
+      "reason": "Pakistan is 31.4% and Zimbabwe is 1.5%, which is approximately 20.93 times, but more importantly, saying '21 times' exceeds precision or miscalculates 31.4 / 1.5 = 20.93.",
+      "severity": "style"
+    }
+  ],
+  "claims": [
+    {
+      "surface": "title",
+      "text": "Which Country Has the MOST Diabetes?",
+      "isos": [],
+      "support": "Pakistan has the highest diabetes prevalence rank 1 at 31.4%."
+    },
+    {
+      "surface": "hook",
+      "text": "HIGHEST DIABETES PREVALENCE",
+      "isos": [],
+      "support": "Indicator SH.STA.DIAB.ZS measures Adult Diabetes Prevalence."
+    },
+    {
+      "surface": "description",
+      "text": "Global adult diabetes prevalence reveals a massive gap between Pakistan and Zimbabwe.",
+      "isos": [
+        "PAK",
+        "ZWE"
+      ],
+      "support": "Pakistan prevalence is 31.4% (rank 1) and Zimbabwe is 1.5% (rank 203)."
+    },
+    {
+      "surface": "beat_0",
+      "text": "Pakistan has 21 times the diabetes rate of Zimbabwe.",
+      "isos": [
+        "PAK",
+        "ZWE"
+      ],
+      "support": "Pakistan is 31.4% and Zimbabwe is 1.5%."
+    },
+    {
+      "surface": "beat_1",
+      "text": "Is the highest rate in the USA, India, or Pakistan?",
+      "isos": [
+        "USA",
+        "IND",
+        "PAK"
+      ],
+      "support": "Pakistan rank 1 (31.4%), India rank 70 (10.5%), USA rank 38 (13.7%)."
+    },
+    {
+      "surface": "beat_2",
+      "text": "The USA sits at 13.7%.",
+      "isos": [
+        "USA"
+      ],
+      "support": "United States value is 13.7%."
+    },
+    {
+      "surface": "beat_3",
+      "text": "India has 10.5%. Significant, but far from the top.",
+      "isos": [
+        "IND"
+      ],
+      "support": "India value is 10.5% with rank 70."
+    },
+    {
+      "surface": "beat_4",
+      "text": "Pakistan sits at the very peak with 31.4%.",
+      "isos": [
+        "PAK"
+      ],
+      "support": "Pakistan value is 31.4% with rank 1."
+    },
+    {
+      "surface": "beat_5",
+      "text": "At the other end, Zimbabwe drops to just 1.5%.",
+      "isos": [
+        "ZWE"
+      ],
+      "support": "Zimbabwe value is 1.5% with rank 203."
+    },
+    {
+      "surface": "beat_6",
+      "text": "This counts adults ages 20 to 79 with type 1 or type 2 diabetes.",
+      "isos": [],
+      "support": "Diabetes prevalence refers to the percentage of people ages 20-79 who have type 1 or type 2 diabetes."
+    },
+    {
+      "surface": "beat_7",
+      "text": "Kuwait: 25.6%. Qatar: 24.6%. Saudi Arabia: 23.1%.",
+      "isos": [
+        "KWT",
+        "QAT",
+        "SAU"
+      ],
+      "support": "Kuwait: 25.6%, Qatar: 24.6%, Saudi Arabia: 23.1%."
+    },
+    {
+      "surface": "beat_8",
+      "text": "How common is diabetes where you live?",
+      "isos": [],
+      "support": "General stylistic closing question."
+    },
+    {
+      "surface": "card_8",
+      "text": "Adult Diabetes Prevalence",
+      "isos": [],
+      "support": "Indicator label Adult Diabetes Prevalence."
+    }
+  ],
+  "surface_checks": {
+    "title": {
+      "supported": true,
+      "reason": "Pakistan is the highest ranked entity with 31.4%.",
+      "isos": []
+    },
+    "hook": {
+      "supported": true,
+      "reason": "Matches indicator subject.",
+      "isos": []
+    },
+    "description": {
+      "supported": true,
+      "reason": "Pakistan and Zimbabwe represent the extremes in the dataset.",
+      "isos": [
+        "PAK",
+        "ZWE"
+      ]
+    },
+    "beat_0": {
+      "supported": true,
+      "reason": "Pakistan (31.4%) vs Zimbabwe (1.5%) ratio is approximately 21x.",
+      "isos": [
+        "PAK",
+        "ZWE"
+      ]
+    },
+    "beat_1": {
+      "supported": true,
+      "reason": "Comparing USA, India, and Pakistan ranks/values which are present in evidence.",
+      "isos": [
+        "USA",
+        "IND",
+        "PAK"
+      ]
+    },
+    "beat_2": {
+      "supported": true,
+      "reason": "USA value is 13.7%.",
+      "isos": [
+        "USA"
+      ]
+    },
+    "beat_3": {
+      "supported": true,
+      "reason": "India value is 10.5%.",
+      "isos": [
+        "IND"
+      ]
+    },
+    "beat_4": {
+      "supported": true,
+      "reason": "Pakistan value is 31.4% (rank 1).",
+      "isos": [
+        "PAK"
+      ]
+    },
+    "beat_5": {
+      "supported": true,
+      "reason": "Zimbabwe value is 1.5% (rank 203).",
+      "isos": [
+        "ZWE"
+      ]
+    },
+    "beat_6": {
+      "supported": true,
+      "reason": "Directly matches the definition text for ages 20-79 and type 1 or type 2 diabetes.",
+      "isos": []
+    },
+    "beat_7": {
+      "supported": true,
+      "reason": "Kuwait (25.6%), Qatar (24.6%), and Saudi Arabia (23.1%) values match evidence.",
+      "isos": [
+        "KWT",
+        "QAT",
+        "SAU"
+      ]
+    },
+    "beat_8": {
+      "supported": true,
+      "reason": "Stylistic closing question allowed.",
+      "isos": []
+    },
+    "card_8": {
+      "supported": true,
+      "reason": "Matches indicator context.",
+      "isos": []
+    }
+  }
+}

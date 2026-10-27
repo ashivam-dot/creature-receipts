@@ -1,0 +1,154 @@
+{
+  "errors": [],
+  "claims": [
+    {
+      "surface": "beat_0",
+      "text": "USA invests 3.4 percent in research.",
+      "isos": [
+        "USA"
+      ],
+      "support": "USA value is 3.44716, display 3.4%"
+    },
+    {
+      "surface": "beat_0",
+      "text": "Iraq has 0.04 percent.",
+      "isos": [
+        "IRQ"
+      ],
+      "support": "Iraq value is 0.0407, display 0.04%"
+    },
+    {
+      "surface": "beat_0",
+      "text": "85 times the investment.",
+      "isos": [
+        "USA",
+        "IRQ"
+      ],
+      "support": "3.44716 / 0.0407 is approximately 84.7 times"
+    },
+    {
+      "surface": "beat_3",
+      "text": "This counts capital and current spending in business, government, and higher education sectors.",
+      "isos": [],
+      "support": "Definition includes both capital and current expenditures in the four main sectors: Business enterprise, Government, Higher education and Private non-profit."
+    },
+    {
+      "surface": "beat_4",
+      "text": "Side by side: USA at 3.4 percent and Iraq at 0.04 percent.",
+      "isos": [
+        "USA",
+        "IRQ"
+      ],
+      "support": "USA is 3.4%, Iraq is 0.04%"
+    },
+    {
+      "surface": "beat_5",
+      "text": "Half of all countries invest 0.6 percent or less.",
+      "isos": [],
+      "support": "Median or midpoint representation of the 114 mapped entities where half are around or below this level."
+    },
+    {
+      "surface": "beat_6",
+      "text": "Israel is the world's highest at 6.3 percent.",
+      "isos": [
+        "ISR"
+      ],
+      "support": "Israel rank 1 with 6.34589%, display 6.3%"
+    },
+    {
+      "surface": "beat_6",
+      "text": "South Korea has 4.9 percent.",
+      "isos": [
+        "KOR"
+      ],
+      "support": "South Korea rank 3 with 4.94352%, display 4.9%"
+    },
+    {
+      "surface": "beat_6",
+      "text": "Sweden has 3.6 percent.",
+      "isos": [
+        "SWE"
+      ],
+      "support": "Sweden rank 4 with 3.59978%, display 3.6%"
+    }
+  ],
+  "surface_checks": {
+    "title": {
+      "supported": true,
+      "reason": "USA value 3.4% and Iraq value 0.04% result in an 85 times gap.",
+      "isos": [
+        "USA",
+        "IRQ"
+      ]
+    },
+    "hook": {
+      "supported": true,
+      "reason": "The hook frames the topic of research spending gaps accurately.",
+      "isos": []
+    },
+    "description": {
+      "supported": true,
+      "reason": "Description correctly outlines the cinematic comparison of global research and development spending.",
+      "isos": []
+    },
+    "beat_0": {
+      "supported": true,
+      "reason": "USA and Iraq values and their ratio are directly supported by the data.",
+      "isos": [
+        "USA",
+        "IRQ"
+      ]
+    },
+    "beat_1": {
+      "supported": true,
+      "reason": "Stylistic framing of USA R&D investment purpose.",
+      "isos": [
+        "USA"
+      ]
+    },
+    "beat_2": {
+      "supported": true,
+      "reason": "Stylistic framing of Iraq's low R&D spending fraction.",
+      "isos": [
+        "IRQ"
+      ]
+    },
+    "beat_3": {
+      "supported": true,
+      "reason": "Directly supported by the definition mentioning capital and current expenditures across sectors.",
+      "isos": []
+    },
+    "beat_4": {
+      "supported": true,
+      "reason": "Side by side numbers match USA and Iraq data values.",
+      "isos": [
+        "USA",
+        "IRQ"
+      ]
+    },
+    "beat_5": {
+      "supported": true,
+      "reason": "Accurately reflects the distribution of values across the dataset.",
+      "isos": []
+    },
+    "beat_6": {
+      "supported": true,
+      "reason": "Israel, South Korea, and Sweden values and ranks match the dataset.",
+      "isos": [
+        "ISR",
+        "KOR",
+        "SWE"
+      ]
+    },
+    "beat_7": {
+      "supported": true,
+      "reason": "Standard open-ended video outro question.",
+      "isos": []
+    },
+    "card_7": {
+      "supported": true,
+      "reason": "Matches indicator definition title and card text.",
+      "isos": []
+    }
+  }
+}
