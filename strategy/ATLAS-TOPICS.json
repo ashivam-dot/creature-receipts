@@ -4425,7 +4425,397 @@
    "source_url": "https://data.worldbank.org/indicator/SL.TLF.PART.FE.ZS",
    "status": "open",
    "added_by": "refill"
+  },
+  {
+   "id": "t125",
+   "topic": "Global Adult Literacy Levels",
+   "angle": "While the median country has achieved over 90% literacy, one in ten nations still sees fewer than 55% of its adults able to read and write.",
+   "format": "map_reveal",
+   "dataset": {
+    "kind": "worldbank",
+    "indicator": "SE.ADT.LITR.ZS",
+    "label": "Adult literacy rate",
+    "unit": "%",
+    "source": "World Bank",
+    "min_year": 2019
+   },
+   "scale": {
+    "kind": "bins",
+    "edges": [
+     55,
+     75,
+     90,
+     98
+    ],
+    "labels": [
+     "Under 55%",
+     "55% to 75%",
+     "75% to 90%",
+     "90% to 98%",
+     "Over 98%"
+    ]
+   },
+   "value_format": "{v:.1f}%",
+   "hashtags": [
+    "#maps",
+    "#geography",
+    "#education"
+   ],
+   "source_url": "https://data.worldbank.org/indicator/SE.ADT.LITR.ZS",
+   "status": "open",
+   "added_by": "refill"
+  },
+  {
+   "id": "t126",
+   "topic": "Taxes on Income and Profits",
+   "angle": "The United States relies on income and profit taxes for 93% of its tax revenue, the highest share of any country.",
+   "format": "rank_ladder",
+   "dataset": {
+    "kind": "worldbank",
+    "indicator": "GC.TAX.YPKG.ZS",
+    "label": "Share of total taxes from income",
+    "unit": "%",
+    "source": "World Bank",
+    "min_year": 2019
+   },
+   "scale": {
+    "kind": "bins",
+    "edges": [
+     20,
+     40,
+     60,
+     80
+    ],
+    "labels": [
+     "<20%",
+     "20-40%",
+     "40-60%",
+     "60-80%",
+     ">80%"
+    ]
+   },
+   "value_format": "{v:.1f}%",
+   "hashtags": [
+    "#maps",
+    "#geography",
+    "#economics"
+   ],
+   "source_url": "https://data.worldbank.org/indicator/GC.TAX.YPKG.ZS",
+   "status": "open",
+   "added_by": "refill"
+  },
+  {
+   "id": "t127",
+   "topic": "Global Migration Flows in 2025",
+   "angle": "Germany is projected to see a net loss of over 330,000 people, placing it among the countries with the world's lowest net migration.",
+   "format": "map_reveal",
+   "dataset": {
+    "kind": "worldbank",
+    "indicator": "SM.POP.NETM",
+    "label": "Net migration (immigrants minus emigrants)",
+    "unit": "people",
+    "source": "World Bank",
+    "min_year": 2019
+   },
+   "scale": {
+    "kind": "bins",
+    "edges": [
+     -50000,
+     0,
+     50000,
+     500000
+    ],
+    "labels": [
+     "Major loss",
+     "Net loss",
+     "Net gain",
+     "High gain",
+     "Massive gain"
+    ]
+   },
+   "value_format": "{v:,.0f}",
+   "hashtags": [
+    "#maps",
+    "#geography",
+    "#population"
+   ],
+   "source_url": "https://data.worldbank.org/indicator/SM.POP.NETM",
+   "status": "open",
+   "added_by": "refill"
+  },
+  {
+   "id": "t128",
+   "topic": "National GDP Reliance on Oil Rents",
+   "angle": "Libya's oil rents account for 56.4% of its total GDP, representing the highest economic dependency of any nation.",
+   "format": "map_reveal",
+   "dataset": {
+    "kind": "worldbank",
+    "indicator": "NY.GDP.PETR.RT.ZS",
+    "label": "Oil rents as a share of GDP",
+    "unit": "%",
+    "source": "World Bank",
+    "min_year": 2019
+   },
+   "scale": {
+    "kind": "bins",
+    "edges": [
+     0.1,
+     1,
+     10,
+     25
+    ],
+    "labels": [
+     "Minimal",
+     "Under 1%",
+     "1-10%",
+     "10-25%",
+     "Over 25%"
+    ]
+   },
+   "value_format": "{v:.1f}%",
+   "hashtags": [
+    "#maps",
+    "#geography",
+    "#economy"
+   ],
+   "source_url": "https://data.worldbank.org/indicator/NY.GDP.PETR.RT.ZS",
+   "status": "open",
+   "added_by": "refill"
+  },
+  {
+   "id": "t129",
+   "topic": "Youth Financial Account Ownership",
+   "angle": "While several nations have reached universal financial access for youth, in some countries, fewer than one in ten young adults have an account.",
+   "format": "rank_ladder",
+   "dataset": {
+    "kind": "worldbank",
+    "indicator": "FX.OWN.TOTL.YG.ZS",
+    "label": "Young adults with a financial account",
+    "unit": "%",
+    "source": "World Bank",
+    "min_year": 2019
+   },
+   "scale": {
+    "kind": "bins",
+    "edges": [
+     30,
+     50,
+     70,
+     90
+    ],
+    "labels": [
+     "Under 30%",
+     "30-50%",
+     "50-70%",
+     "70-90%",
+     "Over 90%"
+    ]
+   },
+   "value_format": "{v:.1f}%",
+   "hashtags": [
+    "#maps",
+    "#geography",
+    "#finance"
+   ],
+   "source_url": "https://data.worldbank.org/indicator/FX.OWN.TOTL.YG.ZS",
+   "status": "open",
+   "added_by": "refill"
+  },
+  {
+   "id": "t130",
+   "topic": "Adults Finishing High School",
+   "angle": "Central Asian nations like Turkmenistan and Uzbekistan lead the world with over 95% of adults completing high school.",
+   "format": "map_reveal",
+   "dataset": {
+    "kind": "worldbank",
+    "indicator": "SE.SEC.CUAT.UP.ZS",
+    "label": "Adults with upper secondary education",
+    "unit": "%",
+    "source": "World Bank",
+    "min_year": 2019
+   },
+   "scale": {
+    "kind": "bins",
+    "edges": [
+     25,
+     50,
+     75,
+     90
+    ],
+    "labels": [
+     "<25%",
+     "25-50%",
+     "50-75%",
+     "75-90%",
+     ">90%"
+    ]
+   },
+   "value_format": "{v:.1f}%",
+   "hashtags": [
+    "#maps",
+    "#geography",
+    "#education"
+   ],
+   "source_url": "https://data.worldbank.org/indicator/SE.SEC.CUAT.UP.ZS",
+   "status": "open",
+   "added_by": "refill"
+  },
+  {
+   "id": "t131",
+   "topic": "Global Youth Employment Rates",
+   "angle": "The Netherlands leads the world with nearly 76% of its youth population in employment, which is more than double the global median.",
+   "format": "map_reveal",
+   "dataset": {
+    "kind": "worldbank",
+    "indicator": "SL.EMP.1524.SP.ZS",
+    "label": "Share of people aged 15-24 employed",
+    "unit": "%",
+    "source": "World Bank",
+    "min_year": 2019
+   },
+   "scale": {
+    "kind": "bins",
+    "edges": [
+     20,
+     33,
+     45,
+     60
+    ],
+    "labels": [
+     "Very Low",
+     "Low",
+     "Moderate",
+     "High",
+     "Very High"
+    ]
+   },
+   "value_format": "{v:.1f}%",
+   "hashtags": [
+    "#maps",
+    "#geography",
+    "#workforce"
+   ],
+   "source_url": "https://data.worldbank.org/indicator/SL.EMP.1524.SP.ZS",
+   "status": "open",
+   "added_by": "refill"
+  },
+  {
+   "id": "t132",
+   "topic": "National Wealth from Natural Resources",
+   "angle": "While the global median is less than 2%, natural resource rents account for over 30% of the economy in several resource-rich nations.",
+   "format": "rank_ladder",
+   "dataset": {
+    "kind": "worldbank",
+    "indicator": "NY.GDP.TOTL.RT.ZS",
+    "label": "Natural resource rents as % of GDP",
+    "unit": "%",
+    "source": "World Bank",
+    "min_year": 2019
+   },
+   "scale": {
+    "kind": "bins",
+    "edges": [
+     0.5,
+     2,
+     10,
+     25
+    ],
+    "labels": [
+     "<0.5%",
+     "0.5-2%",
+     "2-10%",
+     "10-25%",
+     ">25%"
+    ]
+   },
+   "value_format": "{v:.1f}%",
+   "hashtags": [
+    "#maps",
+    "#geography",
+    "#economy"
+   ],
+   "source_url": "https://data.worldbank.org/indicator/NY.GDP.TOTL.RT.ZS",
+   "status": "open",
+   "added_by": "refill"
+  },
+  {
+   "id": "t133",
+   "topic": "Commercial Bank Borrowers Worldwide",
+   "angle": "In Singapore and Eswatini, the number of bank borrowers actually exceeds the total adult population.",
+   "format": "map_reveal",
+   "dataset": {
+    "kind": "worldbank",
+    "indicator": "FB.CBK.BRWR.P3",
+    "label": "Bank borrowers per 1,000 adults",
+    "unit": "per 1,000 adults",
+    "source": "World Bank",
+    "min_year": 2019
+   },
+   "scale": {
+    "kind": "bins",
+    "edges": [
+     50,
+     200,
+     400,
+     600
+    ],
+    "labels": [
+     "Under 50",
+     "50-200",
+     "200-400",
+     "400-600",
+     "Over 600"
+    ]
+   },
+   "value_format": "{v:,.0f}",
+   "hashtags": [
+    "#maps",
+    "#geography",
+    "#finance"
+   ],
+   "source_url": "https://data.worldbank.org/indicator/FB.CBK.BRWR.P3",
+   "status": "open",
+   "added_by": "refill"
+  },
+  {
+   "id": "t134",
+   "topic": "Global Share of Salaried Workers",
+   "angle": "While over 99% of workers in Qatar are salaried employees, fewer than 9% of workers in Chad have a formal paycheck.",
+   "format": "map_reveal",
+   "dataset": {
+    "kind": "worldbank",
+    "indicator": "SL.EMP.WORK.ZS",
+    "label": "Wage and salaried workers",
+    "unit": "%",
+    "source": "World Bank",
+    "min_year": 2019
+   },
+   "scale": {
+    "kind": "bins",
+    "edges": [
+     25,
+     50,
+     75,
+     90
+    ],
+    "labels": [
+     "Under 25%",
+     "25-50%",
+     "50-75%",
+     "75-90%",
+     "Over 90%"
+    ]
+   },
+   "value_format": "{v:.1f}%",
+   "hashtags": [
+    "#maps",
+    "#geography",
+    "#employment"
+   ],
+   "source_url": "https://data.worldbank.org/indicator/SL.EMP.WORK.ZS",
+   "status": "open",
+   "added_by": "refill"
   }
  ],
- "refilled_at": "2026-10-24T17:10:10+00:00"
+ "refilled_at": "2026-10-27T09:13:00+00:00"
 }
