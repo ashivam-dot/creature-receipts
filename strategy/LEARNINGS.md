@@ -75,22 +75,22 @@ Refreshed by every producer run (`atlas.stats`) from the channel's public feed o
 | atlas065 Iceland Uses 16,248 kg of Energy Per Person | map_reveal | 2026-10-20 16:03 UTC | 1017 | 11 | 4.5 |
 | atlas071 Australia Leads the World in Overweight Toddlers | map_reveal | 2026-10-20 20:00 UTC | 983 | 9 | 4.5 |
 | atlas075 Bulgaria Has 93.8 Bank Branches to DR Congo 0.6 | map_reveal | 2026-10-21 16:01 UTC | 352 | 4 | 1.8 |
-| atlas078 Places Ranked by Megacity Populations | rank_ladder | 2026-10-22 16:04 UTC | 1388 | 11 | 7.9 |
+| atlas078 Places Ranked by Megacity Populations | rank_ladder | 2026-10-22 16:04 UTC | 1388 | – | 7.5 |
 | atlas079 Places Ranked by Arable Land | map_reveal | 2026-10-21 23:00 UTC | 1021 | 7 | 5.3 |
-| atlas081 Places Ranked by Income Inequality | rank_ladder | 2026-10-22 23:01 UTC | 1010 | 7 | 6.0 |
-| atlas083 The Places With the Oldest Male Populations | map_reveal | 2026-10-23 16:02 UTC | 1050 | 9 | 6.9 |
-| atlas090 Places Ranked by Container Shipping CONNECTIVITY | rank_ladder | 2026-10-23 23:01 UTC | 991 | 10 | 6.8 |
-| atlas093 Direct Medical Costs Paid by Families | map_reveal | 2026-10-24 16:03 UTC | 3 | 1 | 0.0 |
-| atlas094 Places Ranked by Cost of Power Outages | rank_ladder | 2026-10-24 23:01 UTC | 404 | 3 | 3.3 |
+| atlas081 Places Ranked by Income Inequality | rank_ladder | 2026-10-22 23:01 UTC | 1010 | – | 5.7 |
+| atlas083 The Places With the Oldest Male Populations | map_reveal | 2026-10-23 16:02 UTC | 1050 | – | 6.5 |
+| atlas090 Places Ranked by Container Shipping CONNECTIVITY | rank_ladder | 2026-10-23 23:01 UTC | 991 | – | 6.4 |
+| atlas093 Direct Medical Costs Paid by Families | map_reveal | 2026-10-24 16:03 UTC | 3 | – | 0.0 |
+| atlas094 Places Ranked by Cost of Power Outages | rank_ladder | 2026-10-24 23:01 UTC | 404 | – | 3.1 |
 | atlas097 Places Where Women MATCH Men at Work | map_reveal | 2026-10-27 16:04 UTC | 10 | – | 0.2 |
-| atlas098 Places Ranked by the Income of the Richest Fifth | rank_ladder | 2026-10-25 23:01 UTC | 649 | 7 | 6.6 |
-| atlas099 Places Ranked by Youth Dependency | map_reveal | 2026-10-27 20:00 UTC | 122 | – | 2.7 |
-| atlas100 Places Ranked by Nursing Staff Density | rank_ladder | 2026-10-25 16:02 UTC | 315 | 6 | 3.0 |
-| atlas101 Which Nations Grow the MOST Permanent Crops? | map_reveal | 2026-10-26 16:04 UTC | 258 | 1 | 3.2 |
-| atlas102 Places Ranked by the Cost of Sending Money | rank_ladder | 2026-10-26 23:01 UTC | 479 | 4 | 6.5 |
-| atlas103 Places Ranked by Dependency Load | map_reveal | 2026-10-28 16:00 UTC | 511 | – | 20.3 |
-| atlas104 Places Ranked by Food Insecurity | rank_ladder | 2026-10-27 23:00 UTC | 156 | – | 3.7 |
-| atlas105 Which Places Use the MOST Water for Industry? | map_reveal | 2026-10-28 20:00 UTC | 11 | – | 0.5 |
+| atlas098 Places Ranked by the Income of the Richest Fifth | rank_ladder | 2026-10-25 23:01 UTC | 650 | – | 6.1 |
+| atlas099 Places Ranked by Youth Dependency | map_reveal | 2026-10-27 20:00 UTC | 122 | – | 2.0 |
+| atlas100 Places Ranked by Nursing Staff Density | rank_ladder | 2026-10-25 16:02 UTC | 315 | – | 2.8 |
+| atlas101 Which Nations Grow the MOST Permanent Crops? | map_reveal | 2026-10-26 16:04 UTC | 258 | – | 2.9 |
+| atlas102 Places Ranked by the Cost of Sending Money | rank_ladder | 2026-10-26 23:01 UTC | 479 | – | 5.8 |
+| atlas103 Places Ranked by Dependency Load | map_reveal | 2026-10-28 16:00 UTC | 522 | – | 12.7 |
+| atlas104 Places Ranked by Food Insecurity | rank_ladder | 2026-10-27 23:00 UTC | 157 | – | 2.7 |
+| atlas105 Which Places Use the MOST Water for Industry? | map_reveal | 2026-10-28 20:00 UTC | 13 | – | 0.3 |
 
 ## Log
 
