@@ -1,0 +1,73 @@
+id: atlas114
+title: Places Ranked by University Degrees
+format: rank_ladder
+hook_text: UNIVERSITY DEGREES
+description: countries and territories ranked by the percentage of adults with a university degree, highlighting
+  the United Arab Emirates.
+hashtags:
+- '#education'
+- '#geography'
+- '#countries'
+tags:
+- education
+- share of adults with a bachelor s
+- countries ranked by share of adults with a bachelor s
+- United Arab Emirates
+- Niger
+- world map
+- geography
+- atlas in numbers
+sources:
+- https://data.worldbank.org/indicator/SE.TER.CUAT.BA.ZS
+dataset:
+  kind: worldbank
+  indicator: SE.TER.CUAT.BA.ZS
+  label: Share of adults with a Bachelor's
+  unit: '%'
+  source: World Bank
+  min_year: 2019
+scale:
+  edges:
+  - 5.0
+  - 15.0
+  - 25.0
+  - 40.0
+  labels:
+  - Under 5%
+  - 5-15%
+  - 15-25%
+  - 25-40%
+  - Over 40%
+value_format: '{v:.1f}%'
+beats:
+- text: In the United Arab Emirates, 52.7% of adults have earned at least a Bachelor's degree.
+  shot:
+    callouts:
+    - ARE
+- text: The percentage of population ages 25 and over that attained or completed Bachelor's or equivalent.
+  shot:
+    kind: country
+    iso: ARE
+  basis: The percentage of population ages 25 and over that attained or completed Bachelor's or equivalent.
+- text: China is at 7.7%. Ireland hits 41.9%.
+  shot:
+    kind: group
+    isos:
+    - CHN
+    - IRL
+- text: 'The top countries climb: USA has 39.1%. Switzerland is 41.6%.'
+  shot:
+    kind: group
+    isos:
+    - USA
+    - CHE
+- text: The United Arab Emirates hits 52.7%, the only country over half.
+  shot:
+    kind: country
+    iso: ARE
+- text: What share of adults holds a university degree in your country?
+  shot:
+    kind: card
+    lines:
+    - What is your share?
+    - Share of adults with a Bachelor's

@@ -1,0 +1,129 @@
+{
+  "errors": [],
+  "claims": [
+    {
+      "surface": "beat_0",
+      "text": "Cyprus has 5.2 times the services Guyana has. The global median is 57.6%.",
+      "isos": [
+        "CYP",
+        "GUY"
+      ],
+      "support": "Cyprus value is 76.8460803504221, Guyana value is 14.8492059221668. Ratio 76.8460803504221 / 14.8492059221668 = 5.1750989."
+    },
+    {
+      "surface": "beat_1",
+      "text": "Guyana is the world's lowest at 14.8%.",
+      "isos": [
+        "GUY"
+      ],
+      "support": "Guyana value is 14.8492059221668, display 14.8%, rank 196 out of 196."
+    },
+    {
+      "surface": "beat_2",
+      "text": "This counts value added by hotels, restaurants, transport, and financial intermediation.",
+      "isos": [],
+      "support": "Services industries correspond to ISIC (Rev. 4) divisions 45-99 and includes wholesale and retail trade, repair of motor vehicles, hotels and restaurants, transport, storage and communication, financial intermediation..."
+    },
+    {
+      "surface": "beat_3",
+      "text": "One of the highest is Cyprus at 76.8%. The USA is right behind at 76.3%.",
+      "isos": [
+        "CYP",
+        "USA"
+      ],
+      "support": "Cyprus value is 76.8460803504221 (display 76.8%, rank 10). United States value is 76.2563816410471 (display 76.3%, rank 12)."
+    },
+    {
+      "surface": "beat_4",
+      "text": "China sits right at the median with 57.7%.",
+      "isos": [
+        "CHN"
+      ],
+      "support": "China value is 57.6996434500205, display 57.7%, rank 97."
+    },
+    {
+      "surface": "beat_5",
+      "text": "Other major economies? The UK has 73.1%, Japan has 71.4%, and Brazil has 59.7%.",
+      "isos": [
+        "GBR",
+        "JPN",
+        "BRA"
+      ],
+      "support": "United Kingdom value is 73.098046259352 (display 73.1%, rank 18). Japan value is 71.4295377357598 (display 71.4%, rank 27). Brazil value is 59.7388368058983 (display 59.7%, rank 85)."
+    }
+  ],
+  "surface_checks": {
+    "title": {
+      "supported": true,
+      "reason": "Stylistic question framing.",
+      "isos": []
+    },
+    "hook": {
+      "supported": true,
+      "reason": "Stylistic headline framing.",
+      "isos": []
+    },
+    "description": {
+      "supported": true,
+      "reason": "Accurately references the indicator domain and the mentioned countries USA and Guyana.",
+      "isos": [
+        "USA",
+        "GUY"
+      ]
+    },
+    "beat_0": {
+      "supported": true,
+      "reason": "Cyprus value 76.846% divided by Guyana value 14.849% equals approximately 5.2.",
+      "isos": [
+        "CYP",
+        "GUY"
+      ]
+    },
+    "beat_1": {
+      "supported": true,
+      "reason": "Guyana is ranked 196 with 14.8% (14.849%).",
+      "isos": [
+        "GUY"
+      ]
+    },
+    "beat_2": {
+      "supported": true,
+      "reason": "Directly supported by the definition mentioning hotels, restaurants, transport, and financial intermediation.",
+      "isos": []
+    },
+    "beat_3": {
+      "supported": true,
+      "reason": "Cyprus is 76.8% (rank 10) and USA is 76.3% (rank 12).",
+      "isos": [
+        "CYP",
+        "USA"
+      ]
+    },
+    "beat_4": {
+      "supported": true,
+      "reason": "China value is 57.699% (displayed as 57.7%).",
+      "isos": [
+        "CHN"
+      ]
+    },
+    "beat_5": {
+      "supported": true,
+      "reason": "UK is 73.1%, Japan is 71.4%, Brazil is 59.7%, all supported by exact database records.",
+      "isos": [
+        "GBR",
+        "JPN",
+        "BRA"
+      ]
+    },
+    "beat_6": {
+      "supported": true,
+      "reason": "Stylistic closing question.",
+      "isos": []
+    },
+    "card_6": {
+      "supported": true,
+      "reason": "Matches the exact official indicator definition and label.",
+      "isos": []
+    }
+  }
+}

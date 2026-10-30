@@ -1,0 +1,73 @@
+id: atlas112
+title: Which Country Has the Most Youth Financial Access?
+format: odd_one_out
+hook_text: FINANCIAL ACCESS GAP
+description: A cinematic look at youth financial account ownership around the world.
+hashtags:
+- '#population'
+- '#finance'
+- '#geography'
+tags:
+- population
+- young adults with a financial account
+- countries ranked by young adults with a financial account
+- United Kingdom
+- Yemen, Rep.
+- world map
+- geography
+- atlas in numbers
+sources:
+- https://data.worldbank.org/indicator/FX.OWN.TOTL.YG.ZS
+dataset:
+  kind: worldbank
+  indicator: FX.OWN.TOTL.YG.ZS
+  label: Young adults with a financial account
+  unit: '%'
+  source: World Bank
+  min_year: 2019
+scale:
+  edges:
+  - 30.0
+  - 50.0
+  - 70.0
+  - 90.0
+  labels:
+  - Under 30%
+  - 30-50%
+  - 50-70%
+  - 70-90%
+  - Over 90%
+value_format: '{v:.1f}%'
+beats:
+- text: Every young adult in Austria has a financial account. In Yemen, only 5% do.
+  shot:
+    callouts:
+    - AUT
+    - YEM
+- text: Austria hits 100%. Austria has 20 times the value found in Yemen.
+  shot:
+    kind: country
+    iso: AUT
+- text: Account denotes respondents reporting an account at a financial institution or using mobile money.
+  shot:
+    kind: country
+    iso: AUT
+  basis: Account denotes the percentage of respondents who report having an account (by themselves or together with
+    someone else) at a bank or another type of financial institution or report personally using a mobile money service
+    in the past 12 months (young adults, % of population ages 15-24).
+- text: India and the USA sit well past the median, with India at 83.3% and the USA at 87.7%.
+  shot:
+    kind: group
+    isos:
+    - IND
+    - USA
+- text: Yemen falls at the very bottom, with just 5% of young adults owning an account.
+  shot:
+    kind: country
+    iso: YEM
+- text: How many young adults in your nation use a bank or mobile money?
+  shot:
+    kind: card
+    lines:
+    - Check your country
+    - Youth financial account ownership

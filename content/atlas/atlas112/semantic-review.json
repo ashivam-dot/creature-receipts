@@ -1,0 +1,130 @@
+{
+  "errors": [],
+  "claims": [
+    {
+      "surface": "beat_0",
+      "text": "Every young adult in Austria has a financial account.",
+      "isos": [
+        "AUT"
+      ],
+      "support": "AUT: 100%"
+    },
+    {
+      "surface": "beat_0",
+      "text": "In Yemen, only 5% do.",
+      "isos": [
+        "YEM"
+      ],
+      "support": "YEM: 5%"
+    },
+    {
+      "surface": "beat_1",
+      "text": "Austria hits 100%.",
+      "isos": [
+        "AUT"
+      ],
+      "support": "AUT: 100%"
+    },
+    {
+      "surface": "beat_1",
+      "text": "Austria has 20 times the value found in Yemen.",
+      "isos": [
+        "AUT",
+        "YEM"
+      ],
+      "support": "AUT is 100% and YEM is 5%, 100 / 5 = 20"
+    },
+    {
+      "surface": "beat_2",
+      "text": "Account denotes respondents reporting an account at a financial institution or using mobile money.",
+      "isos": [],
+      "support": "Account denotes the percentage of respondents who report having an account (by themselves or together with someone else) at a bank or another type of financial institution or report personally using a mobile money service in the past 12 months (young adults, % of population ages 15-24)."
+    },
+    {
+      "surface": "beat_3",
+      "text": "India and the USA sit well past the median, with India at 83.3% and the USA at 87.7%.",
+      "isos": [
+        "IND",
+        "USA"
+      ],
+      "support": "IND: 83.3%, USA: 87.7%"
+    },
+    {
+      "surface": "beat_4",
+      "text": "Yemen falls at the very bottom, with just 5% of young adults owning an account.",
+      "isos": [
+        "YEM"
+      ],
+      "support": "YEM: 5%, rank 142 (bottom)"
+    },
+    {
+      "surface": "beat_5",
+      "text": "How many young adults in your nation use a bank or mobile money?",
+      "isos": [],
+      "support": "Youth financial account ownership indicator definition"
+    }
+  ],
+  "surface_checks": {
+    "title": {
+      "supported": true,
+      "reason": "Stylistic framing question.",
+      "isos": []
+    },
+    "hook": {
+      "supported": true,
+      "reason": "Cinematic hook.",
+      "isos": []
+    },
+    "description": {
+      "supported": true,
+      "reason": "Matches topic of youth financial account ownership.",
+      "isos": []
+    },
+    "beat_0": {
+      "supported": true,
+      "reason": "Austria is 100% and Yemen is 5% according to dataset.",
+      "isos": [
+        "AUT",
+        "YEM"
+      ]
+    },
+    "beat_1": {
+      "supported": true,
+      "reason": "Austria is 100%, which is 20 times Yemen's 5%.",
+      "isos": [
+        "AUT",
+        "YEM"
+      ]
+    },
+    "beat_2": {
+      "supported": true,
+      "reason": "Directly quotes definition.",
+      "isos": []
+    },
+    "beat_3": {
+      "supported": true,
+      "reason": "India is 83.3% and USA is 87.7%, both well above the median rank of 71.",
+      "isos": [
+        "IND",
+        "USA"
+      ]
+    },
+    "beat_4": {
+      "supported": true,
+      "reason": "Yemen is at rank 142 with 5%, placing it at the very bottom.",
+      "isos": [
+        "YEM"
+      ]
+    },
+    "beat_5": {
+      "supported": true,
+      "reason": "Closing prompt aligned with indicator.",
+      "isos": []
+    },
+    "card_5": {
+      "supported": true,
+      "reason": "Card text matches video topic.",
+      "isos": []
+    }
+  }
+}

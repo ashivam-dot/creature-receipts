@@ -77,20 +77,21 @@ Refreshed by every producer run (`atlas.stats`) from the channel's public feed o
 | atlas075 Bulgaria Has 93.8 Bank Branches to DR Congo 0.6 | map_reveal | 2026-10-21 16:01 UTC | 352 | 4 | 1.8 |
 | atlas078 Places Ranked by Megacity Populations | rank_ladder | 2026-10-22 16:04 UTC | 1388 | – | 7.5 |
 | atlas079 Places Ranked by Arable Land | map_reveal | 2026-10-21 23:00 UTC | 1021 | 7 | 5.3 |
-| atlas081 Places Ranked by Income Inequality | rank_ladder | 2026-10-22 23:01 UTC | 1010 | – | 5.7 |
-| atlas083 The Places With the Oldest Male Populations | map_reveal | 2026-10-23 16:02 UTC | 1050 | – | 6.5 |
-| atlas090 Places Ranked by Container Shipping CONNECTIVITY | rank_ladder | 2026-10-23 23:01 UTC | 991 | – | 6.4 |
+| atlas081 Places Ranked by Income Inequality | rank_ladder | 2026-10-22 23:01 UTC | 1010 | – | 5.4 |
+| atlas083 The Places With the Oldest Male Populations | map_reveal | 2026-10-23 16:02 UTC | 1050 | – | 6.2 |
+| atlas090 Places Ranked by Container Shipping CONNECTIVITY | rank_ladder | 2026-10-23 23:01 UTC | 991 | – | 6.1 |
 | atlas093 Direct Medical Costs Paid by Families | map_reveal | 2026-10-24 16:03 UTC | 3 | – | 0.0 |
-| atlas094 Places Ranked by Cost of Power Outages | rank_ladder | 2026-10-24 23:01 UTC | 404 | – | 3.1 |
-| atlas097 Places Where Women MATCH Men at Work | map_reveal | 2026-10-27 16:04 UTC | 10 | – | 0.2 |
-| atlas098 Places Ranked by the Income of the Richest Fifth | rank_ladder | 2026-10-25 23:01 UTC | 650 | – | 6.1 |
-| atlas099 Places Ranked by Youth Dependency | map_reveal | 2026-10-27 20:00 UTC | 122 | – | 2.0 |
-| atlas100 Places Ranked by Nursing Staff Density | rank_ladder | 2026-10-25 16:02 UTC | 315 | – | 2.8 |
-| atlas101 Which Nations Grow the MOST Permanent Crops? | map_reveal | 2026-10-26 16:04 UTC | 258 | – | 2.9 |
-| atlas102 Places Ranked by the Cost of Sending Money | rank_ladder | 2026-10-26 23:01 UTC | 479 | – | 5.8 |
-| atlas103 Places Ranked by Dependency Load | map_reveal | 2026-10-28 16:00 UTC | 522 | – | 12.7 |
-| atlas104 Places Ranked by Food Insecurity | rank_ladder | 2026-10-27 23:00 UTC | 157 | – | 2.7 |
-| atlas105 Which Places Use the MOST Water for Industry? | map_reveal | 2026-10-28 20:00 UTC | 13 | – | 0.3 |
+| atlas094 Places Ranked by Cost of Power Outages | rank_ladder | 2026-10-24 23:01 UTC | 404 | – | 2.9 |
+| atlas097 Places Where Women MATCH Men at Work | map_reveal | 2026-10-27 16:04 UTC | 10 | – | 0.1 |
+| atlas098 Places Ranked by the Income of the Richest Fifth | rank_ladder | 2026-10-25 23:01 UTC | 650 | – | 5.7 |
+| atlas099 Places Ranked by Youth Dependency | map_reveal | 2026-10-27 20:00 UTC | 122 | – | 1.8 |
+| atlas100 Places Ranked by Nursing Staff Density | rank_ladder | 2026-10-25 16:02 UTC | 315 | – | 2.6 |
+| atlas101 Which Nations Grow the MOST Permanent Crops? | map_reveal | 2026-10-26 16:04 UTC | 258 | – | 2.7 |
+| atlas102 Places Ranked by the Cost of Sending Money | rank_ladder | 2026-10-26 23:01 UTC | 479 | – | 5.3 |
+| atlas103 Places Ranked by Dependency Load | map_reveal | 2026-10-28 16:00 UTC | 531 | – | 10.8 |
+| atlas104 Places Ranked by Food Insecurity | rank_ladder | 2026-10-27 23:00 UTC | 157 | – | 2.4 |
+| atlas105 Which Places Use the MOST Water for Industry? | map_reveal | 2026-10-28 20:00 UTC | 14 | – | 0.3 |
+| atlas106 USA vs Iraq: The 85 Times Research Spending Gap | versus | 2026-10-30 16:00 UTC | 8 | – | 6.9 |
 
 ## Log
 

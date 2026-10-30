@@ -1,0 +1,141 @@
+{
+  "errors": [],
+  "claims": [
+    {
+      "surface": "title",
+      "text": "Places Ranked by University Degrees",
+      "isos": [],
+      "support": "countries and territories ranked by the percentage of adults with a university degree"
+    },
+    {
+      "surface": "hook",
+      "text": "UNIVERSITY DEGREES",
+      "isos": [],
+      "support": "The percentage of population ages 25 and over that attained or completed Bachelor's or equivalent."
+    },
+    {
+      "surface": "description",
+      "text": "countries and territories ranked by the percentage of adults with a university degree, highlighting the United Arab Emirates.",
+      "isos": [
+        "ARE"
+      ],
+      "support": "United Arab Emirates value is 52.6613883972168, display 52.7%"
+    },
+    {
+      "surface": "beat_0",
+      "text": "In the United Arab Emirates, 52.7% of adults have earned at least a Bachelor's degree.",
+      "isos": [
+        "ARE"
+      ],
+      "support": "United Arab Emirates value is 52.6613883972168, display 52.7%"
+    },
+    {
+      "surface": "beat_1",
+      "text": "The percentage of population ages 25 and over that attained or completed Bachelor's or equivalent.",
+      "isos": [],
+      "support": "The percentage of population ages 25 and over that attained or completed Bachelor's or equivalent."
+    },
+    {
+      "surface": "beat_2",
+      "text": "China is at 7.7%. Ireland hits 41.9%.",
+      "isos": [
+        "CHN",
+        "IRL"
+      ],
+      "support": "China value is 7.67750978469849, display 7.7%; Ireland value is 41.8523570536881, display 41.9%"
+    },
+    {
+      "surface": "beat_3",
+      "text": "The top countries climb: USA has 39.1%. Switzerland is 41.6%.",
+      "isos": [
+        "USA",
+        "CHE"
+      ],
+      "support": "United States value is 39.0593910217285, display 39.1%; Switzerland value is 41.6142824106006, display 41.6%"
+    },
+    {
+      "surface": "beat_4",
+      "text": "The United Arab Emirates hits 52.7%, the only country over half.",
+      "isos": [
+        "ARE"
+      ],
+      "support": "United Arab Emirates value is 52.6613883972168, display 52.7%, rank 1"
+    },
+    {
+      "surface": "beat_5",
+      "text": "What share of adults holds a university degree in your country?",
+      "isos": [],
+      "support": "The percentage of population ages 25 and over that attained or completed Bachelor's or equivalent."
+    },
+    {
+      "surface": "card_5",
+      "text": "What is your share?",
+      "isos": [],
+      "support": "The percentage of population ages 25 and over that attained or completed Bachelor's or equivalent."
+    }
+  ],
+  "surface_checks": {
+    "title": {
+      "supported": true,
+      "reason": "Accurately frames the indicator as a ranking of places by university degrees.",
+      "isos": []
+    },
+    "hook": {
+      "supported": true,
+      "reason": "Directly refers to university degrees covered by the indicator.",
+      "isos": []
+    },
+    "description": {
+      "supported": true,
+      "reason": "Accurately describes the dataset and highlights the United Arab Emirates.",
+      "isos": [
+        "ARE"
+      ]
+    },
+    "beat_0": {
+      "supported": true,
+      "reason": "Matches the exact value for the United Arab Emirates (52.7%).",
+      "isos": [
+        "ARE"
+      ]
+    },
+    "beat_1": {
+      "supported": true,
+      "reason": "Matches the exact official definition of indicator SE.TER.CUAT.BA.ZS.",
+      "isos": []
+    },
+    "beat_2": {
+      "supported": true,
+      "reason": "Accurately states the values for China (7.7%) and Ireland (41.9%).",
+      "isos": [
+        "CHN",
+        "IRL"
+      ]
+    },
+    "beat_3": {
+      "supported": true,
+      "reason": "Accurately states the values for the United States (39.1%) and Switzerland (41.6%).",
+      "isos": [
+        "USA",
+        "CHE"
+      ]
+    },
+    "beat_4": {
+      "supported": true,
+      "reason": "Accurately cites the UAE value of 52.7% and its rank as #1, being the only one over 50%.",
+      "isos": [
+        "ARE"
+      ]
+    },
+    "beat_5": {
+      "supported": true,
+      "reason": "Valid stylistic call-to-action regarding university degree shares.",
+      "isos": []
+    },
+    "card_5": {
+      "supported": true,
+      "reason": "Valid summary card matching the premise of the video.",
+      "isos": []
+    }
+  }
+}

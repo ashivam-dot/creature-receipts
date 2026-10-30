@@ -3733,7 +3733,7 @@
     "#economy"
    ],
    "source_url": "https://data.worldbank.org/indicator/NY.GNS.ICTR.ZS",
-   "status": "ready:atlas108",
+   "status": "used:atlas108",
    "added_by": "refill"
   },
   {
@@ -3818,7 +3818,7 @@
    "id": "t109",
    "topic": "Adults with a University Degree",
    "angle": "The United Arab Emirates is the only country where over half of adults have earned at least a Bachelor's degree.",
-   "format": "map_reveal",
+   "format": "rank_ladder",
    "dataset": {
     "kind": "worldbank",
     "indicator": "SE.TER.CUAT.BA.ZS",
@@ -3850,7 +3850,7 @@
     "#education"
    ],
    "source_url": "https://data.worldbank.org/indicator/SE.TER.CUAT.BA.ZS",
-   "status": "open",
+   "status": "ready:atlas114",
    "added_by": "refill"
   },
   {
@@ -3889,7 +3889,7 @@
     "#economy"
    ],
    "source_url": "https://data.worldbank.org/indicator/NV.SRV.TOTL.ZS",
-   "status": "open",
+   "status": "ready:atlas113",
    "added_by": "refill"
   },
   {
@@ -4084,7 +4084,7 @@
     "#health"
    ],
    "source_url": "https://data.worldbank.org/indicator/SH.STA.DIAB.ZS",
-   "status": "ready:atlas107",
+   "status": "used:atlas107",
    "added_by": "refill"
   },
   {
@@ -4160,7 +4160,7 @@
     "#economy"
    ],
    "source_url": "https://data.worldbank.org/indicator/GB.XPD.RSDV.GD.ZS",
-   "status": "ready:atlas106",
+   "status": "used:atlas106",
    "added_by": "refill"
   },
   {
@@ -4384,7 +4384,7 @@
     "#education"
    ],
    "source_url": "https://data.worldbank.org/indicator/SE.PRE.DURS",
-   "status": "ready:atlas109",
+   "status": "used:atlas109",
    "added_by": "refill"
   },
   {
@@ -4508,7 +4508,7 @@
    "id": "t127",
    "topic": "Global Migration Flows in 2025",
    "angle": "Germany is projected to see a net loss of over 330,000 people, placing it among the countries with the world's lowest net migration.",
-   "format": "map_reveal",
+   "format": "spotlight",
    "dataset": {
     "kind": "worldbank",
     "indicator": "SM.POP.NETM",
@@ -4540,7 +4540,7 @@
     "#population"
    ],
    "source_url": "https://data.worldbank.org/indicator/SM.POP.NETM",
-   "status": "open",
+   "status": "failed:RuntimeError",
    "added_by": "refill"
   },
   {
@@ -4586,7 +4586,7 @@
    "id": "t129",
    "topic": "Youth Financial Account Ownership",
    "angle": "While several nations have reached universal financial access for youth, in some countries, fewer than one in ten young adults have an account.",
-   "format": "rank_ladder",
+   "format": "odd_one_out",
    "dataset": {
     "kind": "worldbank",
     "indicator": "FX.OWN.TOTL.YG.ZS",
@@ -4618,7 +4618,7 @@
     "#finance"
    ],
    "source_url": "https://data.worldbank.org/indicator/FX.OWN.TOTL.YG.ZS",
-   "status": "open",
+   "status": "ready:atlas112",
    "added_by": "refill"
   },
   {
@@ -4664,7 +4664,7 @@
    "id": "t131",
    "topic": "Global Youth Employment Rates",
    "angle": "The Netherlands leads the world with nearly 76% of its youth population in employment, which is more than double the global median.",
-   "format": "map_reveal",
+   "format": "versus",
    "dataset": {
     "kind": "worldbank",
     "indicator": "SL.EMP.1524.SP.ZS",
@@ -4696,7 +4696,7 @@
     "#workforce"
    ],
    "source_url": "https://data.worldbank.org/indicator/SL.EMP.1524.SP.ZS",
-   "status": "open",
+   "status": "failed:RuntimeError",
    "added_by": "refill"
   },
   {

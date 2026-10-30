@@ -1,0 +1,1520 @@
+{
+  "version": 1,
+  "evidence": {
+    "version": 1,
+    "indicator": "FX.OWN.TOTL.YG.ZS",
+    "definition": "Account denotes the percentage of respondents who report having an account (by themselves or together with someone else) at a bank or another type of financial institution or report personally using a mobile money service in the past 12 months (young adults, % of population ages 15-24).",
+    "source": "https://data.worldbank.org/indicator/FX.OWN.TOTL.YG.ZS",
+    "source_response_sha256": "eee9eebc6c3da1beba6d60f26ab5d35c0d904abe638915a927d7e6eadd25978a",
+    "source_organization": "Global Findex Database, World Bank (WB), uri: https://www.worldbank.org/en/publication/globalfindex",
+    "year_label": "latest available 2021–2024",
+    "universe": "mapped countries and territories with data",
+    "count": 142,
+    "threshold": null,
+    "at_or_above": null,
+    "entities": {
+      "ALB": {
+        "name": "Albania",
+        "value": 29.35566021935,
+        "display": "29.4%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 129
+      },
+      "DZA": {
+        "name": "Algeria",
+        "value": 18.5253329498679,
+        "display": "18.5%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 138
+      },
+      "ARG": {
+        "name": "Argentina",
+        "value": 84.3725875762201,
+        "display": "84.4%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 44
+      },
+      "ARM": {
+        "name": "Armenia",
+        "value": 63.6788281951967,
+        "display": "63.7%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 67
+      },
+      "AUS": {
+        "name": "Australia",
+        "value": 98.7486383229919,
+        "display": "98.7%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 11
+      },
+      "AUT": {
+        "name": "Austria",
+        "value": 100.0,
+        "display": "100%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 1
+      },
+      "AZE": {
+        "name": "Azerbaijan",
+        "value": 31.7424862215137,
+        "display": "31.7%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 123
+      },
+      "BHR": {
+        "name": "Bahrain",
+        "value": 76.6126202800977,
+        "display": "76.6%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 52
+      },
+      "BGD": {
+        "name": "Bangladesh",
+        "value": 38.7281503087572,
+        "display": "38.7%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 110
+      },
+      "BEL": {
+        "name": "Belgium",
+        "value": 98.0009404548099,
+        "display": "98%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 18
+      },
+      "BLZ": {
+        "name": "Belize",
+        "value": 58.0107066081771,
+        "display": "58%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 78
+      },
+      "BEN": {
+        "name": "Benin",
+        "value": 42.0188871349428,
+        "display": "42%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 106
+      },
+      "BOL": {
+        "name": "Bolivia",
+        "value": 53.8238460093009,
+        "display": "53.8%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 89
+      },
+      "BIH": {
+        "name": "Bosnia and Herzegovina",
+        "value": 58.4042469789743,
+        "display": "58.4%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 77
+      },
+      "BWA": {
+        "name": "Botswana",
+        "value": 52.2769664732798,
+        "display": "52.3%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 93
+      },
+      "BRA": {
+        "name": "Brazil",
+        "value": 84.3933437415226,
+        "display": "84.4%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 43
+      },
+      "BGR": {
+        "name": "Bulgaria",
+        "value": 79.1669804169464,
+        "display": "79.2%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 49
+      },
+      "BFA": {
+        "name": "Burkina Faso",
+        "value": 47.2708871806653,
+        "display": "47.3%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 101
+      },
+      "KHM": {
+        "name": "Cambodia",
+        "value": 40.5397345460068,
+        "display": "40.5%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 108
+      },
+      "CMR": {
+        "name": "Cameroon",
+        "value": 57.1746315950979,
+        "display": "57.2%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 83
+      },
+      "CAN": {
+        "name": "Canada",
+        "value": 100.0,
+        "display": "100%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 1
+      },
+      "TCD": {
+        "name": "Chad",
+        "value": 20.7374442412509,
+        "display": "20.7%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 136
+      },
+      "CHL": {
+        "name": "Chile",
+        "value": 85.3691665450779,
+        "display": "85.4%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 42
+      },
+      "CHN": {
+        "name": "China",
+        "value": 88.558719237412,
+        "display": "88.6%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 36
+      },
+      "COL": {
+        "name": "Colombia",
+        "value": 62.2389271536834,
+        "display": "62.2%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 70
+      },
+      "COM": {
+        "name": "Comoros",
+        "value": 32.4618637014973,
+        "display": "32.5%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 122
+      },
+      "COD": {
+        "name": "Congo, Dem. Rep.",
+        "value": 31.644089722502,
+        "display": "31.6%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 124
+      },
+      "COG": {
+        "name": "Congo, Rep.",
+        "value": 55.3898016426087,
+        "display": "55.4%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 85
+      },
+      "CRI": {
+        "name": "Costa Rica",
+        "value": 67.1332161099254,
+        "display": "67.1%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 62
+      },
+      "CIV": {
+        "name": "Cote d'Ivoire",
+        "value": 48.6274745623548,
+        "display": "48.6%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 97
+      },
+      "HRV": {
+        "name": "Croatia",
+        "value": 55.2353177810983,
+        "display": "55.2%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 87
+      },
+      "CYP": {
+        "name": "Cyprus",
+        "value": 95.3214058164952,
+        "display": "95.3%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 26
+      },
+      "CZE": {
+        "name": "Czechia",
+        "value": 91.3542044051233,
+        "display": "91.4%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 31
+      },
+      "DNK": {
+        "name": "Denmark",
+        "value": 97.9357075022428,
+        "display": "97.9%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 19
+      },
+      "DOM": {
+        "name": "Dominican Republic",
+        "value": 47.4303767289747,
+        "display": "47.4%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 99
+      },
+      "ECU": {
+        "name": "Ecuador",
+        "value": 60.5153389095443,
+        "display": "60.5%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 74
+      },
+      "EGY": {
+        "name": "Egypt, Arab Rep.",
+        "value": 32.5398576308392,
+        "display": "32.5%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 121
+      },
+      "SLV": {
+        "name": "El Salvador",
+        "value": 36.8398421212375,
+        "display": "36.8%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 114
+      },
+      "EST": {
+        "name": "Estonia",
+        "value": 98.233313148414,
+        "display": "98.2%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 16
+      },
+      "SWZ": {
+        "name": "Eswatini",
+        "value": 44.0752170791744,
+        "display": "44.1%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 105
+      },
+      "ETH": {
+        "name": "Ethiopia",
+        "value": 37.9447401209686,
+        "display": "37.9%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 112
+      },
+      "FIN": {
+        "name": "Finland",
+        "value": 98.6449515158456,
+        "display": "98.6%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 12
+      },
+      "FRA": {
+        "name": "France",
+        "value": 100.0,
+        "display": "100%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 1
+      },
+      "GAB": {
+        "name": "Gabon",
+        "value": 62.0035952508967,
+        "display": "62%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 71
+      },
+      "GMB": {
+        "name": "Gambia, The",
+        "value": 34.795004689942,
+        "display": "34.8%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 117
+      },
+      "GEO": {
+        "name": "Georgia",
+        "value": 68.7329152202524,
+        "display": "68.7%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 60
+      },
+      "DEU": {
+        "name": "Germany",
+        "value": 90.8792278031291,
+        "display": "90.9%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 32
+      },
+      "GHA": {
+        "name": "Ghana",
+        "value": 79.9671595325983,
+        "display": "80%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 47
+      },
+      "GRC": {
+        "name": "Greece",
+        "value": 69.9156625847098,
+        "display": "69.9%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 59
+      },
+      "GTM": {
+        "name": "Guatemala",
+        "value": 34.7905461046703,
+        "display": "34.8%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 118
+      },
+      "GIN": {
+        "name": "Guinea",
+        "value": 33.6901211107583,
+        "display": "33.7%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 119
+      },
+      "HND": {
+        "name": "Honduras",
+        "value": 41.1686514492311,
+        "display": "41.2%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 107
+      },
+      "HKG": {
+        "name": "Hong Kong SAR, China",
+        "value": 95.9277865060906,
+        "display": "95.9%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 23
+      },
+      "HUN": {
+        "name": "Hungary",
+        "value": 96.4328904193122,
+        "display": "96.4%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 21
+      },
+      "ISL": {
+        "name": "Iceland",
+        "value": 100.0,
+        "display": "100%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 1
+      },
+      "IND": {
+        "name": "India",
+        "value": 83.3298881784499,
+        "display": "83.3%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 45
+      },
+      "IDN": {
+        "name": "Indonesia",
+        "value": 61.9926628375153,
+        "display": "62%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 72
+      },
+      "IRN": {
+        "name": "Iran, Islamic Rep.",
+        "value": 91.7657599632166,
+        "display": "91.8%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 30
+      },
+      "IRQ": {
+        "name": "Iraq",
+        "value": 29.9052578296779,
+        "display": "29.9%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 127
+      },
+      "IRL": {
+        "name": "Ireland",
+        "value": 98.5196119369697,
+        "display": "98.5%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 14
+      },
+      "ISR": {
+        "name": "Israel",
+        "value": 57.4471602104485,
+        "display": "57.4%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 80
+      },
+      "ITA": {
+        "name": "Italy",
+        "value": 57.3500603966495,
+        "display": "57.4%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 82
+      },
+      "JAM": {
+        "name": "Jamaica",
+        "value": 75.361405240673,
+        "display": "75.4%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 54
+      },
+      "JPN": {
+        "name": "Japan",
+        "value": 97.3861999475278,
+        "display": "97.4%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 20
+      },
+      "JOR": {
+        "name": "Jordan",
+        "value": 29.2483474339461,
+        "display": "29.2%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 130
+      },
+      "KAZ": {
+        "name": "Kazakhstan",
+        "value": 68.2685953956478,
+        "display": "68.3%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 61
+      },
+      "KEN": {
+        "name": "Kenya",
+        "value": 89.8479263836567,
+        "display": "89.8%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 33
+      },
+      "KOR": {
+        "name": "Korea, Rep.",
+        "value": 98.3620851900303,
+        "display": "98.4%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 15
+      },
+      "KWT": {
+        "name": "Kuwait",
+        "value": 77.7451281078115,
+        "display": "77.7%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 50
+      },
+      "KGZ": {
+        "name": "Kyrgyz Republic",
+        "value": 55.2359147507581,
+        "display": "55.2%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 86
+      },
+      "LAO": {
+        "name": "Lao PDR",
+        "value": 30.239925568922,
+        "display": "30.2%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 125
+      },
+      "LVA": {
+        "name": "Latvia",
+        "value": 89.6607631341789,
+        "display": "89.7%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 35
+      },
+      "LBN": {
+        "name": "Lebanon",
+        "value": 5.95816210399557,
+        "display": "6%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 141
+      },
+      "LSO": {
+        "name": "Lesotho",
+        "value": 53.1560954312996,
+        "display": "53.2%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 90
+      },
+      "LBR": {
+        "name": "Liberia",
+        "value": 49.764948329605,
+        "display": "49.8%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 95
+      },
+      "LBY": {
+        "name": "Libya",
+        "value": 19.3875296371763,
+        "display": "19.4%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 137
+      },
+      "LTU": {
+        "name": "Lithuania",
+        "value": 100.0,
+        "display": "100%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 1
+      },
+      "MDG": {
+        "name": "Madagascar",
+        "value": 25.4271302190902,
+        "display": "25.4%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 132
+      },
+      "MWI": {
+        "name": "Malawi",
+        "value": 47.7891538237362,
+        "display": "47.8%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 98
+      },
+      "MYS": {
+        "name": "Malaysia",
+        "value": 87.0831218872377,
+        "display": "87.1%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 40
+      },
+      "MLI": {
+        "name": "Mali",
+        "value": 45.8003632624057,
+        "display": "45.8%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 102
+      },
+      "MLT": {
+        "name": "Malta",
+        "value": 96.1067053120617,
+        "display": "96.1%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 22
+      },
+      "MRT": {
+        "name": "Mauritania",
+        "value": 20.9447581646237,
+        "display": "20.9%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 135
+      },
+      "MUS": {
+        "name": "Mauritius",
+        "value": 89.7825430569018,
+        "display": "89.8%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 34
+      },
+      "MEX": {
+        "name": "Mexico",
+        "value": 44.6702387701333,
+        "display": "44.7%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 103
+      },
+      "MDA": {
+        "name": "Moldova",
+        "value": 58.9612387740146,
+        "display": "59%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 76
+      },
+      "MNG": {
+        "name": "Mongolia",
+        "value": 95.862287532359,
+        "display": "95.9%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 24
+      },
+      "MNE": {
+        "name": "Montenegro",
+        "value": 33.0973747292986,
+        "display": "33.1%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 120
+      },
+      "MAR": {
+        "name": "Morocco",
+        "value": 30.2073749271661,
+        "display": "30.2%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 126
+      },
+      "MOZ": {
+        "name": "Mozambique",
+        "value": 49.9572794656422,
+        "display": "50%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 94
+      },
+      "MMR": {
+        "name": "Myanmar",
+        "value": 55.6807974487462,
+        "display": "55.7%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 84
+      },
+      "NAM": {
+        "name": "Namibia",
+        "value": 59.1272853414265,
+        "display": "59.1%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 75
+      },
+      "NPL": {
+        "name": "Nepal",
+        "value": 39.1164572624061,
+        "display": "39.1%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 109
+      },
+      "NLD": {
+        "name": "Netherlands",
+        "value": 100.0,
+        "display": "100%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 1
+      },
+      "NZL": {
+        "name": "New Zealand",
+        "value": 95.3846736959617,
+        "display": "95.4%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 25
+      },
+      "NIC": {
+        "name": "Nicaragua",
+        "value": 28.3490750480852,
+        "display": "28.3%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 131
+      },
+      "NER": {
+        "name": "Niger",
+        "value": 15.7389266018374,
+        "display": "15.7%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 139
+      },
+      "NGA": {
+        "name": "Nigeria",
+        "value": 44.4306588774756,
+        "display": "44.4%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 104
+      },
+      "MKD": {
+        "name": "North Macedonia",
+        "value": 57.374776400283,
+        "display": "57.4%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 81
+      },
+      "NOR": {
+        "name": "Norway",
+        "value": 94.4300567148872,
+        "display": "94.4%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 27
+      },
+      "OMN": {
+        "name": "Oman",
+        "value": 71.4165173105373,
+        "display": "71.4%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 58
+      },
+      "PAK": {
+        "name": "Pakistan",
+        "value": 24.3424901722908,
+        "display": "24.3%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 133
+      },
+      "PAN": {
+        "name": "Panama",
+        "value": 57.5227277998642,
+        "display": "57.5%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 79
+      },
+      "PRY": {
+        "name": "Paraguay",
+        "value": 47.2972592720046,
+        "display": "47.3%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 100
+      },
+      "PER": {
+        "name": "Peru",
+        "value": 52.9856890005398,
+        "display": "53%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 92
+      },
+      "PHL": {
+        "name": "Philippines",
+        "value": 55.1122806971337,
+        "display": "55.1%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 88
+      },
+      "POL": {
+        "name": "Poland",
+        "value": 73.6306261910361,
+        "display": "73.6%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 56
+      },
+      "PRT": {
+        "name": "Portugal",
+        "value": 93.0082215711419,
+        "display": "93%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 28
+      },
+      "ROU": {
+        "name": "Romania",
+        "value": 85.6315207171153,
+        "display": "85.6%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 41
+      },
+      "RUS": {
+        "name": "Russian Federation",
+        "value": 88.4517352052366,
+        "display": "88.5%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 37
+      },
+      "SAU": {
+        "name": "Saudi Arabia",
+        "value": 64.8997344303063,
+        "display": "64.9%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 66
+      },
+      "SEN": {
+        "name": "Senegal",
+        "value": 63.2600737309056,
+        "display": "63.3%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 68
+      },
+      "SRB": {
+        "name": "Serbia",
+        "value": 37.8955351327888,
+        "display": "37.9%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 113
+      },
+      "SLE": {
+        "name": "Sierra Leone",
+        "value": 36.4963361773313,
+        "display": "36.5%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 115
+      },
+      "SGP": {
+        "name": "Singapore",
+        "value": 98.866297394825,
+        "display": "98.9%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 10
+      },
+      "SVK": {
+        "name": "Slovak Republic",
+        "value": 81.0967509510098,
+        "display": "81.1%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 46
+      },
+      "SVN": {
+        "name": "Slovenia",
+        "value": 98.6279613931479,
+        "display": "98.6%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 13
+      },
+      "ZAF": {
+        "name": "South Africa",
+        "value": 66.6012889257954,
+        "display": "66.6%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 64
+      },
+      "ESP": {
+        "name": "Spain",
+        "value": 100.0,
+        "display": "100%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 1
+      },
+      "LKA": {
+        "name": "Sri Lanka",
+        "value": 75.0641243872534,
+        "display": "75.1%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 55
+      },
+      "SWE": {
+        "name": "Sweden",
+        "value": 100.0,
+        "display": "100%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 1
+      },
+      "CHE": {
+        "name": "Switzerland",
+        "value": 98.0895176021602,
+        "display": "98.1%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 17
+      },
+      "TJK": {
+        "name": "Tajikistan",
+        "value": 29.7660846051287,
+        "display": "29.8%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 128
+      },
+      "TZA": {
+        "name": "Tanzania",
+        "value": 53.1513813279097,
+        "display": "53.2%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 91
+      },
+      "THA": {
+        "name": "Thailand",
+        "value": 88.1285982399774,
+        "display": "88.1%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 38
+      },
+      "TGO": {
+        "name": "Togo",
+        "value": 49.0469009088821,
+        "display": "49%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 96
+      },
+      "TTO": {
+        "name": "Trinidad and Tobago",
+        "value": 76.9727618121562,
+        "display": "77%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 51
+      },
+      "TUN": {
+        "name": "Tunisia",
+        "value": 11.6592580347266,
+        "display": "11.7%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 140
+      },
+      "TUR": {
+        "name": "Turkiye",
+        "value": 65.2395251221829,
+        "display": "65.2%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 65
+      },
+      "UGA": {
+        "name": "Uganda",
+        "value": 66.7441953214858,
+        "display": "66.7%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 63
+      },
+      "UKR": {
+        "name": "Ukraine",
+        "value": 92.9277148887562,
+        "display": "92.9%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 29
+      },
+      "ARE": {
+        "name": "United Arab Emirates",
+        "value": 79.4338574142122,
+        "display": "79.4%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 48
+      },
+      "GBR": {
+        "name": "United Kingdom",
+        "value": 100.0,
+        "display": "100%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 1
+      },
+      "USA": {
+        "name": "United States",
+        "value": 87.6628290445134,
+        "display": "87.7%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 39
+      },
+      "URY": {
+        "name": "Uruguay",
+        "value": 62.432302710555,
+        "display": "62.4%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 69
+      },
+      "UZB": {
+        "name": "Uzbekistan",
+        "value": 35.414358743409,
+        "display": "35.4%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 116
+      },
+      "VEN": {
+        "name": "Venezuela, RB",
+        "value": 76.3922099595066,
+        "display": "76.4%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 53
+      },
+      "VNM": {
+        "name": "Viet Nam",
+        "value": 72.1566679336018,
+        "display": "72.2%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 57
+      },
+      "PSE": {
+        "name": "West Bank and Gaza",
+        "value": 23.4405094632974,
+        "display": "23.4%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 134
+      },
+      "YEM": {
+        "name": "Yemen, Rep.",
+        "value": 5.00995602610102,
+        "display": "5%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 142
+      },
+      "ZMB": {
+        "name": "Zambia",
+        "value": 61.515767600297,
+        "display": "61.5%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 73
+      },
+      "ZWE": {
+        "name": "Zimbabwe",
+        "value": 38.23407208412,
+        "display": "38.2%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 111
+      }
+    }
+  },
+  "review": {
+    "errors": [],
+    "claims": [
+      {
+        "surface": "beat_0",
+        "text": "Every young adult in Austria has a financial account.",
+        "isos": [
+          "AUT"
+        ],
+        "support": "AUT: 100%",
+        "evidence": {
+          "AUT": {
+            "name": "Austria",
+            "value": 100.0,
+            "display": "100%",
+            "year": 2024,
+            "unit": "%",
+            "rank": 1
+          }
+        }
+      },
+      {
+        "surface": "beat_0",
+        "text": "In Yemen, only 5% do.",
+        "isos": [
+          "YEM"
+        ],
+        "support": "YEM: 5%",
+        "evidence": {
+          "YEM": {
+            "name": "Yemen, Rep.",
+            "value": 5.00995602610102,
+            "display": "5%",
+            "year": 2022,
+            "unit": "%",
+            "rank": 142
+          }
+        }
+      },
+      {
+        "surface": "beat_1",
+        "text": "Austria hits 100%.",
+        "isos": [
+          "AUT"
+        ],
+        "support": "AUT: 100%",
+        "evidence": {
+          "AUT": {
+            "name": "Austria",
+            "value": 100.0,
+            "display": "100%",
+            "year": 2024,
+            "unit": "%",
+            "rank": 1
+          }
+        }
+      },
+      {
+        "surface": "beat_1",
+        "text": "Austria has 20 times the value found in Yemen.",
+        "isos": [
+          "AUT",
+          "YEM"
+        ],
+        "support": "AUT is 100% and YEM is 5%, 100 / 5 = 20",
+        "evidence": {
+          "AUT": {
+            "name": "Austria",
+            "value": 100.0,
+            "display": "100%",
+            "year": 2024,
+            "unit": "%",
+            "rank": 1
+          },
+          "YEM": {
+            "name": "Yemen, Rep.",
+            "value": 5.00995602610102,
+            "display": "5%",
+            "year": 2022,
+            "unit": "%",
+            "rank": 142
+          }
+        }
+      },
+      {
+        "surface": "beat_2",
+        "text": "Account denotes respondents reporting an account at a financial institution or using mobile money.",
+        "isos": [],
+        "support": "Account denotes the percentage of respondents who report having an account (by themselves or together with someone else) at a bank or another type of financial institution or report personally using a mobile money service in the past 12 months (young adults, % of population ages 15-24).",
+        "evidence": {}
+      },
+      {
+        "surface": "beat_3",
+        "text": "India and the USA sit well past the median, with India at 83.3% and the USA at 87.7%.",
+        "isos": [
+          "IND",
+          "USA"
+        ],
+        "support": "IND: 83.3%, USA: 87.7%",
+        "evidence": {
+          "IND": {
+            "name": "India",
+            "value": 83.3298881784499,
+            "display": "83.3%",
+            "year": 2024,
+            "unit": "%",
+            "rank": 45
+          },
+          "USA": {
+            "name": "United States",
+            "value": 87.6628290445134,
+            "display": "87.7%",
+            "year": 2024,
+            "unit": "%",
+            "rank": 39
+          }
+        }
+      },
+      {
+        "surface": "beat_4",
+        "text": "Yemen falls at the very bottom, with just 5% of young adults owning an account.",
+        "isos": [
+          "YEM"
+        ],
+        "support": "YEM: 5%, rank 142 (bottom)",
+        "evidence": {
+          "YEM": {
+            "name": "Yemen, Rep.",
+            "value": 5.00995602610102,
+            "display": "5%",
+            "year": 2022,
+            "unit": "%",
+            "rank": 142
+          }
+        }
+      },
+      {
+        "surface": "beat_5",
+        "text": "How many young adults in your nation use a bank or mobile money?",
+        "isos": [],
+        "support": "Youth financial account ownership indicator definition",
+        "evidence": {}
+      },
+      {
+        "surface": "title",
+        "text": "Which Country Has the Most Youth Financial Access?",
+        "isos": [],
+        "support": "Stylistic framing question.",
+        "method": "complete-surface-check",
+        "evidence": {}
+      },
+      {
+        "surface": "hook",
+        "text": "FINANCIAL ACCESS GAP",
+        "isos": [],
+        "support": "Cinematic hook.",
+        "method": "complete-surface-check",
+        "evidence": {}
+      },
+      {
+        "surface": "description",
+        "text": "A cinematic look at youth financial account ownership around the world.",
+        "isos": [],
+        "support": "Matches topic of youth financial account ownership.",
+        "method": "complete-surface-check",
+        "evidence": {}
+      },
+      {
+        "surface": "beat_0",
+        "text": "Every young adult in Austria has a financial account. In Yemen, only 5% do.",
+        "isos": [
+          "AUT",
+          "YEM"
+        ],
+        "support": "Austria is 100% and Yemen is 5% according to dataset.",
+        "method": "complete-surface-check",
+        "evidence": {
+          "AUT": {
+            "name": "Austria",
+            "value": 100.0,
+            "display": "100%",
+            "year": 2024,
+            "unit": "%",
+            "rank": 1
+          },
+          "YEM": {
+            "name": "Yemen, Rep.",
+            "value": 5.00995602610102,
+            "display": "5%",
+            "year": 2022,
+            "unit": "%",
+            "rank": 142
+          }
+        }
+      },
+      {
+        "surface": "beat_1",
+        "text": "Austria hits 100%. Austria has 20 times the value found in Yemen.",
+        "isos": [
+          "AUT",
+          "YEM"
+        ],
+        "support": "Austria is 100%, which is 20 times Yemen's 5%.",
+        "method": "complete-surface-check",
+        "evidence": {
+          "AUT": {
+            "name": "Austria",
+            "value": 100.0,
+            "display": "100%",
+            "year": 2024,
+            "unit": "%",
+            "rank": 1
+          },
+          "YEM": {
+            "name": "Yemen, Rep.",
+            "value": 5.00995602610102,
+            "display": "5%",
+            "year": 2022,
+            "unit": "%",
+            "rank": 142
+          }
+        }
+      },
+      {
+        "surface": "beat_2",
+        "text": "Account denotes respondents reporting an account at a financial institution or using mobile money.",
+        "isos": [],
+        "support": "Directly quotes definition.",
+        "method": "complete-surface-check",
+        "evidence": {}
+      },
+      {
+        "surface": "beat_3",
+        "text": "India and the USA sit well past the median, with India at 83.3% and the USA at 87.7%.",
+        "isos": [
+          "IND",
+          "USA"
+        ],
+        "support": "India is 83.3% and USA is 87.7%, both well above the median rank of 71.",
+        "method": "complete-surface-check",
+        "evidence": {
+          "IND": {
+            "name": "India",
+            "value": 83.3298881784499,
+            "display": "83.3%",
+            "year": 2024,
+            "unit": "%",
+            "rank": 45
+          },
+          "USA": {
+            "name": "United States",
+            "value": 87.6628290445134,
+            "display": "87.7%",
+            "year": 2024,
+            "unit": "%",
+            "rank": 39
+          }
+        }
+      },
+      {
+        "surface": "beat_4",
+        "text": "Yemen falls at the very bottom, with just 5% of young adults owning an account.",
+        "isos": [
+          "YEM"
+        ],
+        "support": "Yemen is at rank 142 with 5%, placing it at the very bottom.",
+        "method": "complete-surface-check",
+        "evidence": {
+          "YEM": {
+            "name": "Yemen, Rep.",
+            "value": 5.00995602610102,
+            "display": "5%",
+            "year": 2022,
+            "unit": "%",
+            "rank": 142
+          }
+        }
+      },
+      {
+        "surface": "beat_5",
+        "text": "How many young adults in your nation use a bank or mobile money?",
+        "isos": [],
+        "support": "Closing prompt aligned with indicator.",
+        "method": "complete-surface-check",
+        "evidence": {}
+      },
+      {
+        "surface": "card_5",
+        "text": [
+          "Check your country",
+          "Youth financial account ownership"
+        ],
+        "isos": [],
+        "support": "Card text matches video topic.",
+        "method": "complete-surface-check",
+        "evidence": {}
+      }
+    ],
+    "surface_checks": {
+      "title": {
+        "supported": true,
+        "reason": "Stylistic framing question.",
+        "isos": []
+      },
+      "hook": {
+        "supported": true,
+        "reason": "Cinematic hook.",
+        "isos": []
+      },
+      "description": {
+        "supported": true,
+        "reason": "Matches topic of youth financial account ownership.",
+        "isos": []
+      },
+      "beat_0": {
+        "supported": true,
+        "reason": "Austria is 100% and Yemen is 5% according to dataset.",
+        "isos": [
+          "AUT",
+          "YEM"
+        ]
+      },
+      "beat_1": {
+        "supported": true,
+        "reason": "Austria is 100%, which is 20 times Yemen's 5%.",
+        "isos": [
+          "AUT",
+          "YEM"
+        ]
+      },
+      "beat_2": {
+        "supported": true,
+        "reason": "Directly quotes definition.",
+        "isos": []
+      },
+      "beat_3": {
+        "supported": true,
+        "reason": "India is 83.3% and USA is 87.7%, both well above the median rank of 71.",
+        "isos": [
+          "IND",
+          "USA"
+        ]
+      },
+      "beat_4": {
+        "supported": true,
+        "reason": "Yemen is at rank 142 with 5%, placing it at the very bottom.",
+        "isos": [
+          "YEM"
+        ]
+      },
+      "beat_5": {
+        "supported": true,
+        "reason": "Closing prompt aligned with indicator.",
+        "isos": []
+      },
+      "card_5": {
+        "supported": true,
+        "reason": "Card text matches video topic.",
+        "isos": []
+      }
+    },
+    "warnings": []
+  },
+  "script_sha256": "ef994ba2908d1926fa75bc86d62f249cc7bc09693e0fcae64b886af0f1e4cad9",
+  "data_sha256": "45e3d056fa242fad2838026b6fb3e65c801cc9dcd660278fe3a0c66bc2182a8f",
+  "reviewer_model": "gemini-3.5-flash-lite"
+}

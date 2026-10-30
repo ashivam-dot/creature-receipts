@@ -1,0 +1,81 @@
+id: atlas113
+title: Is YOUR Country a Service Economy?
+hook_text: SERVICE DOMINANCE
+description: A cinematic look at how service industries like finance, tourism, and health care dominate global GDP,
+  from the USA to Guyana.
+hashtags:
+- '#economy'
+- '#geography'
+- '#countries'
+tags:
+- wealth
+- services value added to gdp
+- countries ranked by services value added to gdp
+- Cyprus
+- Guyana
+- world map
+- geography
+- atlas in numbers
+sources:
+- https://data.worldbank.org/indicator/NV.SRV.TOTL.ZS
+dataset:
+  kind: worldbank
+  indicator: NV.SRV.TOTL.ZS
+  label: Services value added to GDP
+  unit: '%'
+  source: World Bank
+  min_year: 2019
+scale:
+  edges:
+  - 40.0
+  - 55.0
+  - 70.0
+  - 85.0
+  labels:
+  - Under 40%
+  - 40-55%
+  - 55-70%
+  - 70-85%
+  - Over 85%
+value_format: '{v:.1f}%'
+beats:
+- text: Cyprus has 5.2 times the services Guyana has. The global median is 57.6%.
+  shot:
+    callouts:
+    - CYP
+    - GUY
+- text: Guyana is the world's lowest at 14.8%.
+  shot:
+    kind: country
+    iso: GUY
+- text: This counts value added by hotels, restaurants, transport, and financial intermediation.
+  shot:
+    callouts:
+    - CYP
+    - GUY
+  basis: includes wholesale and retail trade, repair of motor vehicles, hotels and restaurants, transport, storage
+    and communication, financial intermediation, real estate, renting and business activities, public administration
+    and defence, compulsory social security, education, health and social work
+- text: One of the highest is Cyprus at 76.8%. The USA is right behind at 76.3%.
+  shot:
+    kind: group
+    isos:
+    - CYP
+    - USA
+- text: China sits right at the median with 57.7%.
+  shot:
+    kind: country
+    iso: CHN
+- text: Other major economies? The UK has 73.1%, Japan has 71.4%, and Brazil has 59.7%.
+  shot:
+    kind: rank
+    isos:
+    - GBR
+    - JPN
+    - BRA
+- text: Does your daily work provide a service or a physical product?
+  shot:
+    kind: card
+    lines:
+    - Your Service?
+    - Services value added to GDP (%)
