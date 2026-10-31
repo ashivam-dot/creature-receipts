@@ -1,0 +1,69 @@
+id: atlas116
+title: Where Nations Save the Most Wealth
+format: spotlight
+hook_text: HIGH SAVINGS
+description: A cinematic look at gross domestic savings as a percentage of GDP across the world.
+hashtags:
+- '#economy'
+- '#geography'
+- '#countries'
+tags:
+- wealth
+- gross domestic savings as percent of gdp
+- countries ranked by gross domestic savings as percent of gdp
+- Qatar
+- Timor-Leste
+- world map
+- geography
+- atlas in numbers
+sources:
+- https://data.worldbank.org/indicator/NY.GDS.TOTL.ZS
+dataset:
+  kind: worldbank
+  indicator: NY.GDS.TOTL.ZS
+  label: Gross domestic savings as percent of GDP
+  unit: '%'
+  source: World Bank
+  min_year: 2019
+scale:
+  kind: threshold
+  at: 25.0
+  labels:
+  - High savings rate
+  - Low savings rate
+value_format: '{v:.1f}%'
+beats:
+- text: Over a quarter of countries save more than 25 percent of their entire economic output.
+  shot:
+    callouts:
+    - QAT
+    - USA
+- text: Qatar saves 67.6 percent, towering above the rest.
+  shot:
+    kind: country
+    iso: QAT
+- text: Qatar has 3.7 times what the USA saves, while the USA sits at 18.5 percent.
+  shot:
+    kind: group
+    isos:
+    - QAT
+    - USA
+- text: India saves 32.6 percent, putting it near the top countries.
+  shot:
+    kind: country
+    iso: IND
+- text: China hits 43.3 percent, a massive share of its output kept back.
+  shot:
+    kind: country
+    iso: CHN
+- text: East Timor drops, shrinking by 44.2 percent, calculated as GDP less final consumption expenditure.
+  shot:
+    kind: country
+    iso: TLS
+  basis: Gross domestic savings are calculated as GDP less final consumption expenditure (total consumption).
+- text: What share of your country's wealth gets saved?
+  shot:
+    kind: card
+    lines:
+    - What share gets saved?
+    - Gross Domestic Savings as Percent of GDP

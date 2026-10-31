@@ -1,0 +1,13 @@
+{
+  "warnings": [
+    {
+      "country": "Singapore",
+      "why": "A value of 1.07e+03 (1,070 per 1,000 adults) implies that there are more borrowers than there are adults, which indicates a data reporting or definition issue (likely counting multiple accounts or loans per person rather than unique borrowers)."
+    },
+    {
+      "country": "Eswatini",
+      "why": "A value of 1.06e+03 (1,060 per 1,000 adults) also exceeds the total adult population, pointing to potential double-counting of multiple loan accounts per individual."
+    }
+  ],
+  "policy": "model memory is advisory; unsupported suspicions cannot overrule official data"
+}

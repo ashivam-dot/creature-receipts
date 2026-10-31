@@ -4091,7 +4091,7 @@
    "id": "t116",
    "topic": "Household Spending Share of GDP",
    "angle": "In several nations, household consumption is so high that it actually exceeds the total value of the domestic economy, peaking at 133 percent.",
-   "format": "map_reveal",
+   "format": "versus",
    "dataset": {
     "kind": "worldbank",
     "indicator": "NE.CON.PRVT.ZS",
@@ -4123,7 +4123,7 @@
     "#economy"
    ],
    "source_url": "https://data.worldbank.org/indicator/NE.CON.PRVT.ZS",
-   "status": "open",
+   "status": "failed:RuntimeError",
    "added_by": "refill"
   },
   {
@@ -4167,7 +4167,7 @@
    "id": "t118",
    "topic": "Where Nations Save The Most Wealth",
    "angle": "Over a quarter of countries save more than 28 percent of their entire economic output.",
-   "format": "map_reveal",
+   "format": "spotlight",
    "dataset": {
     "kind": "worldbank",
     "indicator": "NY.GDS.TOTL.ZS",
@@ -4191,7 +4191,7 @@
     "#economy"
    ],
    "source_url": "https://data.worldbank.org/indicator/NY.GDS.TOTL.ZS",
-   "status": "open",
+   "status": "failed:ValueError",
    "added_by": "refill"
   },
   {
@@ -4547,7 +4547,7 @@
    "id": "t128",
    "topic": "National GDP Reliance on Oil Rents",
    "angle": "Libya's oil rents account for 56.4% of its total GDP, representing the highest economic dependency of any nation.",
-   "format": "map_reveal",
+   "format": "odd_one_out",
    "dataset": {
     "kind": "worldbank",
     "indicator": "NY.GDP.PETR.RT.ZS",
@@ -4579,7 +4579,7 @@
     "#economy"
    ],
    "source_url": "https://data.worldbank.org/indicator/NY.GDP.PETR.RT.ZS",
-   "status": "open",
+   "status": "failed:ValueError",
    "added_by": "refill"
   },
   {
@@ -4774,7 +4774,7 @@
     "#finance"
    ],
    "source_url": "https://data.worldbank.org/indicator/FB.CBK.BRWR.P3",
-   "status": "open",
+   "status": "failed:RuntimeError",
    "added_by": "refill"
   },
   {

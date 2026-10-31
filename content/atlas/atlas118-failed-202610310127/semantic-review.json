@@ -1,0 +1,214 @@
+{
+  "errors": [
+    {
+      "surface": "title",
+      "claim": "almost everyone is a bank borrower",
+      "reason": "Singapore has 1,074 per 1,000 adults, and no other entity reaches 1,077; 'almost everyone' is an exaggeration for countries mostly well below 100 percent.",
+      "severity": "factual"
+    },
+    {
+      "surface": "hook",
+      "claim": "more loans than people",
+      "reason": "The unit is per 1,000 adults, not total population or total loans.",
+      "severity": "factual"
+    },
+    {
+      "surface": "beat_0",
+      "claim": "In Singapore, the number of bank borrowers actually exceeds the total adult population.",
+      "reason": "Singapore value is 1,073.96 per 1,000 adults, which exceeds 1,000 adults, but the claim refers to total adult population rather than per 1,000 adults.",
+      "severity": "factual"
+    },
+    {
+      "surface": "beat_2",
+      "claim": "Turkey is one of the highest. 977.",
+      "reason": "Turkey value is 976.68 (display 977) per 1,000 adults, not 'almost every adult there is a borrower' as an absolute 1-to-1 ratio.",
+      "severity": "style"
+    },
+    {
+      "surface": "beat_5",
+      "claim": "Turkey has 42 times the borrowers Pakistan has",
+      "reason": "Turkey (976.68) divided by Pakistan (23.34) is approximately 41.8 times, which rounds to 42, but the denominator is per 1,000 adults.",
+      "severity": "info"
+    },
+    {
+      "surface": "beat_6",
+      "claim": "In Singapore, the number of borrowers actually exceeds the total adult population.",
+      "reason": "Repeated statement from beat_0.",
+      "severity": "factual"
+    }
+  ],
+  "claims": [
+    {
+      "surface": "title",
+      "text": "The Places Where Almost Everyone Is a Bank Borrower",
+      "isos": [],
+      "support": "Singapore 1,074, Eswatini 1,057, Turkiye 977"
+    },
+    {
+      "surface": "hook",
+      "text": "MORE LOANS THAN PEOPLE",
+      "isos": [],
+      "support": "Singapore 1,074 per 1,000 adults"
+    },
+    {
+      "surface": "description",
+      "text": "A look at commercial bank borrower density worldwide, comparing high-credit nations like Turkey and China to the world's lowest in South Sudan.",
+      "isos": [
+        "TUR",
+        "CHN",
+        "SSD"
+      ],
+      "support": "TUR rank 3, CHN rank 7, SSD rank 104"
+    },
+    {
+      "surface": "beat_0",
+      "text": "In Singapore, the number of bank borrowers actually exceeds the total adult population.",
+      "isos": [
+        "SGP"
+      ],
+      "support": "SGP value 1073.96066194501"
+    },
+    {
+      "surface": "beat_1",
+      "text": "South Sudan is the world's lowest. Almost no one there has a formal bank loan.",
+      "isos": [
+        "SSD"
+      ],
+      "support": "SSD rank 104, value 1.02490138905185"
+    },
+    {
+      "surface": "beat_2",
+      "text": "Turkey is one of the highest. 977. Almost every adult there is a borrower.",
+      "isos": [
+        "TUR"
+      ],
+      "support": "TUR rank 3, value 976.676808209618"
+    },
+    {
+      "surface": "beat_3",
+      "text": "It counts households and businesses that obtained loans from commercial banks.",
+      "isos": [],
+      "support": "Borrowers from commercial banks are the reported number of resident customers that are nonfinancial corporations (public and private) and households who obtained loans from commercial banks and other banks functioning as commercial banks."
+    },
+    {
+      "surface": "beat_4",
+      "text": "Uruguay has 766. China has 662. Italy has 587.",
+      "isos": [
+        "URY",
+        "CHN",
+        "ITA"
+      ],
+      "support": "URY 766.28, CHN 662.06, ITA 587.27"
+    },
+    {
+      "surface": "beat_5",
+      "text": "Turkey has 42 times the borrowers Pakistan has, where only 23 borrow.",
+      "isos": [
+        "TUR",
+        "PAK"
+      ],
+      "support": "TUR 976.68, PAK 23.34"
+    },
+    {
+      "surface": "beat_6",
+      "text": "In Singapore, the number of borrowers actually exceeds the total adult population.",
+      "isos": [
+        "SGP"
+      ],
+      "support": "SGP value 1073.96066194501"
+    },
+    {
+      "surface": "beat_7",
+      "text": "Do you have a loan from a commercial bank?",
+      "isos": [],
+      "support": "Indicator definition refers to resident customers who obtained loans from commercial banks."
+    },
+    {
+      "surface": "card_7",
+      "text": "Got a loan?, Commercial Bank Borrowers",
+      "isos": [],
+      "support": "Indicator definition refers to commercial bank borrowers."
+    }
+  ],
+  "surface_checks": {
+    "title": {
+      "supported": false,
+      "reason": "Not all places have almost everyone as a borrower, though Singapore and Eswatini exceed 1,000 per 1,000 adults.",
+      "isos": []
+    },
+    "hook": {
+      "supported": false,
+      "reason": "Expressed as per 1,000 adults, not total loans vs total people.",
+      "isos": []
+    },
+    "description": {
+      "supported": true,
+      "reason": "Turkey and China are high-credit and South Sudan is the lowest in the universe.",
+      "isos": [
+        "TUR",
+        "CHN",
+        "SSD"
+      ]
+    },
+    "beat_0": {
+      "supported": false,
+      "reason": "Exceeds 1,000 per 1,000 adults, but phrasing implies total adult population count vs total borrower count.",
+      "isos": [
+        "SGP"
+      ]
+    },
+    "beat_1": {
+      "supported": true,
+      "reason": "South Sudan is rank 104 with 1 per 1,000 adults.",
+      "isos": [
+        "SSD"
+      ]
+    },
+    "beat_2": {
+      "supported": true,
+      "reason": "Turkey is rank 3 with 977 per 1,000 adults.",
+      "isos": [
+        "TUR"
+      ]
+    },
+    "beat_3": {
+      "supported": true,
+      "reason": "Directly matches the provided indicator definition.",
+      "isos": []
+    },
+    "beat_4": {
+      "supported": true,
+      "reason": "Uruguay is 766, China is 662, Italy is 587.",
+      "isos": [
+        "URY",
+        "CHN",
+        "ITA"
+      ]
+    },
+    "beat_5": {
+      "supported": true,
+      "reason": "Turkey has 976.68 and Pakistan has 23.34.",
+      "isos": [
+        "TUR",
+        "PAK"
+      ]
+    },
+    "beat_6": {
+      "supported": false,
+      "reason": "Repeated statement from beat_0.",
+      "isos": [
+        "SGP"
+      ]
+    },
+    "beat_7": {
+      "supported": true,
+      "reason": "General question aligned with indicator topic.",
+      "isos": []
+    },
+    "card_7": {
+      "supported": true,
+      "reason": "Matches indicator title and subject.",
+      "isos": []
+    }
+  }
+}

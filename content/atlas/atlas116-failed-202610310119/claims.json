@@ -1,0 +1,1796 @@
+{
+  "version": 1,
+  "evidence": {
+    "version": 1,
+    "indicator": "NY.GDS.TOTL.ZS",
+    "definition": "Gross domestic savings are calculated as GDP less final consumption expenditure (total consumption). This indicator is expressed as a percentage of Gross Domestic Product (GDP) which is the total income earned through the production of goods and services in an economic territory during an accounting period.",
+    "source": "https://data.worldbank.org/indicator/NY.GDS.TOTL.ZS",
+    "source_response_sha256": "07dbc27b0e4f3bf138f01ed0fa66e281d8e8b7d9f433f34a947206f09aa4c81b",
+    "source_organization": "Country official statistics, National Statistical Organizations and/or Central Banks;\nNational Accounts data files, Organisation for Economic Co-operation and Development (OECD);\nStaff estimates, World Bank (WB)",
+    "year_label": "latest available 2022–2025",
+    "universe": "mapped countries and territories with data",
+    "count": 174,
+    "threshold": 25.0,
+    "at_or_above": 61,
+    "entities": {
+      "AFG": {
+        "name": "Afghanistan",
+        "value": -35.3229870872174,
+        "display": "-35.3%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 171
+      },
+      "ALB": {
+        "name": "Albania",
+        "value": 17.9624123824596,
+        "display": "18%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 105
+      },
+      "DZA": {
+        "name": "Algeria",
+        "value": 39.9580489852948,
+        "display": "40%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 13
+      },
+      "AGO": {
+        "name": "Angola",
+        "value": 22.5478388116242,
+        "display": "22.5%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 77
+      },
+      "ARG": {
+        "name": "Argentina",
+        "value": 15.0900222983231,
+        "display": "15.1%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 114
+      },
+      "ARM": {
+        "name": "Armenia",
+        "value": 18.7024561333008,
+        "display": "18.7%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 100
+      },
+      "ABW": {
+        "name": "Aruba",
+        "value": 32.9593517049528,
+        "display": "33%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 32
+      },
+      "AUS": {
+        "name": "Australia",
+        "value": 24.9964284390533,
+        "display": "25%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 62
+      },
+      "AUT": {
+        "name": "Austria",
+        "value": 26.2453566868659,
+        "display": "26.2%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 52
+      },
+      "AZE": {
+        "name": "Azerbaijan",
+        "value": 25.1025624521666,
+        "display": "25.1%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 61
+      },
+      "BHS": {
+        "name": "Bahamas, The",
+        "value": 22.7900308220908,
+        "display": "22.8%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 74
+      },
+      "BHR": {
+        "name": "Bahrain",
+        "value": 46.0675810424576,
+        "display": "46.1%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 8
+      },
+      "BGD": {
+        "name": "Bangladesh",
+        "value": 21.9781775651401,
+        "display": "22%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 82
+      },
+      "BLR": {
+        "name": "Belarus",
+        "value": 25.5234911690954,
+        "display": "25.5%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 59
+      },
+      "BEL": {
+        "name": "Belgium",
+        "value": 23.7290918144786,
+        "display": "23.7%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 70
+      },
+      "BLZ": {
+        "name": "Belize",
+        "value": 19.7722987391997,
+        "display": "19.8%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 95
+      },
+      "BEN": {
+        "name": "Benin",
+        "value": 32.8143034016746,
+        "display": "32.8%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 33
+      },
+      "BMU": {
+        "name": "Bermuda",
+        "value": 44.9815264540243,
+        "display": "45%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 9
+      },
+      "BTN": {
+        "name": "Bhutan",
+        "value": 26.2286139012443,
+        "display": "26.2%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 53
+      },
+      "BOL": {
+        "name": "Bolivia",
+        "value": 13.8392693294625,
+        "display": "13.8%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 117
+      },
+      "BIH": {
+        "name": "Bosnia and Herzegovina",
+        "value": 10.3340073357845,
+        "display": "10.3%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 131
+      },
+      "BWA": {
+        "name": "Botswana",
+        "value": 22.7438288010674,
+        "display": "22.7%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 75
+      },
+      "BRA": {
+        "name": "Brazil",
+        "value": 17.4259600459081,
+        "display": "17.4%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 106
+      },
+      "BRN": {
+        "name": "Brunei Darussalam",
+        "value": 46.8754867657669,
+        "display": "46.9%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 6
+      },
+      "BGR": {
+        "name": "Bulgaria",
+        "value": 20.6792294065342,
+        "display": "20.7%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 88
+      },
+      "BFA": {
+        "name": "Burkina Faso",
+        "value": 22.1991369564751,
+        "display": "22.2%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 79
+      },
+      "BDI": {
+        "name": "Burundi",
+        "value": 28.2699257901121,
+        "display": "28.3%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 45
+      },
+      "CPV": {
+        "name": "Cabo Verde",
+        "value": 6.03038552254537,
+        "display": "6%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 138
+      },
+      "KHM": {
+        "name": "Cambodia",
+        "value": 36.0949666255168,
+        "display": "36.1%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 23
+      },
+      "CMR": {
+        "name": "Cameroon",
+        "value": 13.038307652991,
+        "display": "13%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 120
+      },
+      "CAN": {
+        "name": "Canada",
+        "value": 22.312341893623,
+        "display": "22.3%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 78
+      },
+      "CAF": {
+        "name": "Central African Republic",
+        "value": -4.91272383074375,
+        "display": "-4.9%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 155
+      },
+      "TCD": {
+        "name": "Chad",
+        "value": 33.0524577431704,
+        "display": "33.1%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 30
+      },
+      "CHL": {
+        "name": "Chile",
+        "value": 28.1997831803846,
+        "display": "28.2%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 46
+      },
+      "CHN": {
+        "name": "China",
+        "value": 43.3210475865354,
+        "display": "43.3%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 10
+      },
+      "COL": {
+        "name": "Colombia",
+        "value": 11.3181890509158,
+        "display": "11.3%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 128
+      },
+      "COM": {
+        "name": "Comoros",
+        "value": -10.4444064805024,
+        "display": "-10.4%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 162
+      },
+      "COD": {
+        "name": "Congo, Dem. Rep.",
+        "value": 31.3202454855455,
+        "display": "31.3%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 40
+      },
+      "COG": {
+        "name": "Congo, Rep.",
+        "value": 33.8678912160569,
+        "display": "33.9%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 27
+      },
+      "CRI": {
+        "name": "Costa Rica",
+        "value": 21.9926392075482,
+        "display": "22%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 80
+      },
+      "CIV": {
+        "name": "Cote d'Ivoire",
+        "value": 24.3147989730522,
+        "display": "24.3%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 66
+      },
+      "HRV": {
+        "name": "Croatia",
+        "value": 19.5428878730842,
+        "display": "19.5%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 97
+      },
+      "CUB": {
+        "name": "Cuba",
+        "value": -15.7085858520675,
+        "display": "-15.7%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 165
+      },
+      "CYP": {
+        "name": "Cyprus",
+        "value": 24.9110736013515,
+        "display": "24.9%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 63
+      },
+      "CZE": {
+        "name": "Czechia",
+        "value": 32.6061549810599,
+        "display": "32.6%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 35
+      },
+      "DNK": {
+        "name": "Denmark",
+        "value": 33.1342608252675,
+        "display": "33.1%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 29
+      },
+      "DJI": {
+        "name": "Djibouti",
+        "value": 16.2414452823769,
+        "display": "16.2%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 108
+      },
+      "DOM": {
+        "name": "Dominican Republic",
+        "value": 20.4887040168478,
+        "display": "20.5%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 92
+      },
+      "ECU": {
+        "name": "Ecuador",
+        "value": 24.4586760540051,
+        "display": "24.5%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 65
+      },
+      "EGY": {
+        "name": "Egypt, Arab Rep.",
+        "value": 1.19650202357716,
+        "display": "1.2%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 147
+      },
+      "SLV": {
+        "name": "El Salvador",
+        "value": 2.26721016146023,
+        "display": "2.3%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 144
+      },
+      "GNQ": {
+        "name": "Equatorial Guinea",
+        "value": 14.4285789773938,
+        "display": "14.4%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 116
+      },
+      "EST": {
+        "name": "Estonia",
+        "value": 25.8826614405653,
+        "display": "25.9%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 56
+      },
+      "SWZ": {
+        "name": "Eswatini",
+        "value": 15.0032611058772,
+        "display": "15%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 115
+      },
+      "ETH": {
+        "name": "Ethiopia",
+        "value": 13.2276986740795,
+        "display": "13.2%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 119
+      },
+      "FRO": {
+        "name": "Faroe Islands",
+        "value": 31.5300129907776,
+        "display": "31.5%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 37
+      },
+      "FJI": {
+        "name": "Fiji",
+        "value": 10.7154201292705,
+        "display": "10.7%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 130
+      },
+      "FIN": {
+        "name": "Finland",
+        "value": 23.1617778094593,
+        "display": "23.2%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 72
+      },
+      "FRA": {
+        "name": "France",
+        "value": 21.5316608444653,
+        "display": "21.5%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 84
+      },
+      "PYF": {
+        "name": "French Polynesia",
+        "value": -5.71345832389548,
+        "display": "-5.7%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 158
+      },
+      "GAB": {
+        "name": "Gabon",
+        "value": 50.9191968634983,
+        "display": "50.9%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 4
+      },
+      "GMB": {
+        "name": "Gambia, The",
+        "value": 3.67574977726319,
+        "display": "3.7%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 140
+      },
+      "GEO": {
+        "name": "Georgia",
+        "value": 15.4615916836204,
+        "display": "15.5%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 111
+      },
+      "DEU": {
+        "name": "Germany",
+        "value": 24.2882295169254,
+        "display": "24.3%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 68
+      },
+      "GHA": {
+        "name": "Ghana",
+        "value": 12.2220303901836,
+        "display": "12.2%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 125
+      },
+      "GRC": {
+        "name": "Greece",
+        "value": 12.7155229904444,
+        "display": "12.7%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 121
+      },
+      "GRL": {
+        "name": "Greenland",
+        "value": 25.7028042358054,
+        "display": "25.7%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 58
+      },
+      "GTM": {
+        "name": "Guatemala",
+        "value": 1.36199274124431,
+        "display": "1.4%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 145
+      },
+      "GIN": {
+        "name": "Guinea",
+        "value": 16.1447207320292,
+        "display": "16.1%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 109
+      },
+      "GNB": {
+        "name": "Guinea-Bissau",
+        "value": 12.6652998281432,
+        "display": "12.7%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 122
+      },
+      "HTI": {
+        "name": "Haiti",
+        "value": -0.705932249682564,
+        "display": "-0.7%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 151
+      },
+      "HND": {
+        "name": "Honduras",
+        "value": 2.64083385023291,
+        "display": "2.6%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 143
+      },
+      "HKG": {
+        "name": "Hong Kong SAR, China",
+        "value": 21.2185460358356,
+        "display": "21.2%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 85
+      },
+      "HUN": {
+        "name": "Hungary",
+        "value": 26.633644034249,
+        "display": "26.6%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 50
+      },
+      "ISL": {
+        "name": "Iceland",
+        "value": 24.3134645241312,
+        "display": "24.3%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 67
+      },
+      "IND": {
+        "name": "India",
+        "value": 32.559492763302,
+        "display": "32.6%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 36
+      },
+      "IDN": {
+        "name": "Indonesia",
+        "value": 37.2378532261843,
+        "display": "37.2%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 20
+      },
+      "IRN": {
+        "name": "Iran, Islamic Rep.",
+        "value": 33.0388327058509,
+        "display": "33%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 31
+      },
+      "IRQ": {
+        "name": "Iraq",
+        "value": 31.408382949602,
+        "display": "31.4%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 39
+      },
+      "IRL": {
+        "name": "Ireland",
+        "value": 63.5432380962521,
+        "display": "63.5%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 2
+      },
+      "ISR": {
+        "name": "Israel",
+        "value": 26.4745615527799,
+        "display": "26.5%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 51
+      },
+      "ITA": {
+        "name": "Italy",
+        "value": 24.1804262237568,
+        "display": "24.2%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 69
+      },
+      "JPN": {
+        "name": "Japan",
+        "value": 26.7860510291284,
+        "display": "26.8%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 49
+      },
+      "KAZ": {
+        "name": "Kazakhstan",
+        "value": 36.9343039790702,
+        "display": "36.9%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 21
+      },
+      "KEN": {
+        "name": "Kenya",
+        "value": 11.8472834421757,
+        "display": "11.8%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 126
+      },
+      "KIR": {
+        "name": "Kiribati",
+        "value": -62.8274424247781,
+        "display": "-62.8%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 174
+      },
+      "KOR": {
+        "name": "Korea, Rep.",
+        "value": 34.3303711659176,
+        "display": "34.3%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 25
+      },
+      "KWT": {
+        "name": "Kuwait",
+        "value": 32.6237453339413,
+        "display": "32.6%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 34
+      },
+      "KGZ": {
+        "name": "Kyrgyz Republic",
+        "value": -5.54850678717463,
+        "display": "-5.5%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 157
+      },
+      "LVA": {
+        "name": "Latvia",
+        "value": 19.4774159645555,
+        "display": "19.5%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 98
+      },
+      "LBN": {
+        "name": "Lebanon",
+        "value": -34.1543684923288,
+        "display": "-34.2%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 170
+      },
+      "LSO": {
+        "name": "Lesotho",
+        "value": -33.1921456188366,
+        "display": "-33.2%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 169
+      },
+      "LBY": {
+        "name": "Libya",
+        "value": 36.7884636360295,
+        "display": "36.8%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 22
+      },
+      "LTU": {
+        "name": "Lithuania",
+        "value": 26.1000008212867,
+        "display": "26.1%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 54
+      },
+      "LUX": {
+        "name": "Luxembourg",
+        "value": 46.6594190254035,
+        "display": "46.7%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 7
+      },
+      "MDG": {
+        "name": "Madagascar",
+        "value": 12.573836743579,
+        "display": "12.6%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 123
+      },
+      "MWI": {
+        "name": "Malawi",
+        "value": -2.36819568624556,
+        "display": "-2.4%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 152
+      },
+      "MYS": {
+        "name": "Malaysia",
+        "value": 26.0001036056205,
+        "display": "26%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 55
+      },
+      "MLI": {
+        "name": "Mali",
+        "value": 15.4032478746065,
+        "display": "15.4%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 112
+      },
+      "MLT": {
+        "name": "Malta",
+        "value": 37.9131878326254,
+        "display": "37.9%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 18
+      },
+      "MHL": {
+        "name": "Marshall Islands",
+        "value": -24.0156842105263,
+        "display": "-24%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 168
+      },
+      "MRT": {
+        "name": "Mauritania",
+        "value": 30.0090972291628,
+        "display": "30%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 42
+      },
+      "MUS": {
+        "name": "Mauritius",
+        "value": 17.3957562465521,
+        "display": "17.4%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 107
+      },
+      "MEX": {
+        "name": "Mexico",
+        "value": 17.977587541142,
+        "display": "18%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 104
+      },
+      "MDA": {
+        "name": "Moldova",
+        "value": -4.97668529206738,
+        "display": "-5%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 156
+      },
+      "MNG": {
+        "name": "Mongolia",
+        "value": 33.8965487559226,
+        "display": "33.9%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 26
+      },
+      "MNE": {
+        "name": "Montenegro",
+        "value": 1.286317610126,
+        "display": "1.3%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 146
+      },
+      "MAR": {
+        "name": "Morocco",
+        "value": 22.7080181606416,
+        "display": "22.7%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 76
+      },
+      "MOZ": {
+        "name": "Mozambique",
+        "value": 9.87755013043112,
+        "display": "9.9%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 133
+      },
+      "NAM": {
+        "name": "Namibia",
+        "value": -0.551557170264933,
+        "display": "-0.6%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 150
+      },
+      "NPL": {
+        "name": "Nepal",
+        "value": 6.8898136238952,
+        "display": "6.9%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 137
+      },
+      "NLD": {
+        "name": "Netherlands",
+        "value": 31.0386635217193,
+        "display": "31%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 41
+      },
+      "NCL": {
+        "name": "New Caledonia",
+        "value": 10.032855164369,
+        "display": "10%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 132
+      },
+      "NZL": {
+        "name": "New Zealand",
+        "value": 21.9839657095775,
+        "display": "22%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 81
+      },
+      "NIC": {
+        "name": "Nicaragua",
+        "value": 12.4957596561127,
+        "display": "12.5%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 124
+      },
+      "NER": {
+        "name": "Niger",
+        "value": 19.5947781124754,
+        "display": "19.6%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 96
+      },
+      "MKD": {
+        "name": "North Macedonia",
+        "value": 17.9783104881433,
+        "display": "18%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 103
+      },
+      "NOR": {
+        "name": "Norway",
+        "value": 34.9060686727388,
+        "display": "34.9%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 24
+      },
+      "OMN": {
+        "name": "Oman",
+        "value": 42.1414410455299,
+        "display": "42.1%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 12
+      },
+      "PAK": {
+        "name": "Pakistan",
+        "value": 7.05968422497151,
+        "display": "7.1%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 136
+      },
+      "PLW": {
+        "name": "Palau",
+        "value": -12.9360298646363,
+        "display": "-12.9%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 164
+      },
+      "PAN": {
+        "name": "Panama",
+        "value": 38.5758932522079,
+        "display": "38.6%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 16
+      },
+      "PRY": {
+        "name": "Paraguay",
+        "value": 23.1646013741343,
+        "display": "23.2%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 71
+      },
+      "PER": {
+        "name": "Peru",
+        "value": 28.4635245736943,
+        "display": "28.5%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 44
+      },
+      "PHL": {
+        "name": "Philippines",
+        "value": 8.44801329939182,
+        "display": "8.4%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 135
+      },
+      "POL": {
+        "name": "Poland",
+        "value": 20.7584212675366,
+        "display": "20.8%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 87
+      },
+      "PRT": {
+        "name": "Portugal",
+        "value": 21.9529732948933,
+        "display": "22%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 83
+      },
+      "PRI": {
+        "name": "Puerto Rico (US)",
+        "value": 13.5880729652826,
+        "display": "13.6%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 118
+      },
+      "QAT": {
+        "name": "Qatar",
+        "value": 67.6263813796503,
+        "display": "67.6%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 1
+      },
+      "ROU": {
+        "name": "Romania",
+        "value": 20.6544817329574,
+        "display": "20.7%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 89
+      },
+      "RUS": {
+        "name": "Russian Federation",
+        "value": 29.6343321986987,
+        "display": "29.6%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 43
+      },
+      "RWA": {
+        "name": "Rwanda",
+        "value": 20.5618914411515,
+        "display": "20.6%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 91
+      },
+      "WSM": {
+        "name": "Samoa",
+        "value": 8.65037530215654,
+        "display": "8.7%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 134
+      },
+      "SMR": {
+        "name": "San Marino",
+        "value": 47.5850732851641,
+        "display": "47.6%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 5
+      },
+      "STP": {
+        "name": "Sao Tome and Principe",
+        "value": -11.2992151819397,
+        "display": "-11.3%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 163
+      },
+      "SAU": {
+        "name": "Saudi Arabia",
+        "value": 33.1965761560527,
+        "display": "33.2%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 28
+      },
+      "SEN": {
+        "name": "Senegal",
+        "value": 20.7843444711245,
+        "display": "20.8%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 86
+      },
+      "SRB": {
+        "name": "Serbia",
+        "value": 19.0834585294733,
+        "display": "19.1%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 99
+      },
+      "SYC": {
+        "name": "Seychelles",
+        "value": 5.66429587482219,
+        "display": "5.7%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 139
+      },
+      "SLE": {
+        "name": "Sierra Leone",
+        "value": 15.8833337729568,
+        "display": "15.9%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 110
+      },
+      "SGP": {
+        "name": "Singapore",
+        "value": 58.6593250762606,
+        "display": "58.7%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 3
+      },
+      "SVK": {
+        "name": "Slovak Republic",
+        "value": 19.9305262125848,
+        "display": "19.9%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 94
+      },
+      "SVN": {
+        "name": "Slovenia",
+        "value": 27.3921406078572,
+        "display": "27.4%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 48
+      },
+      "SLB": {
+        "name": "Solomon Islands",
+        "value": -8.10497002806522,
+        "display": "-8.1%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 161
+      },
+      "SOM": {
+        "name": "Somalia, Fed. Rep.",
+        "value": -41.4522285122514,
+        "display": "-41.5%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 172
+      },
+      "ZAF": {
+        "name": "South Africa",
+        "value": 15.2758278092078,
+        "display": "15.3%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 113
+      },
+      "ESP": {
+        "name": "Spain",
+        "value": 25.2339445408594,
+        "display": "25.2%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 60
+      },
+      "LKA": {
+        "name": "Sri Lanka",
+        "value": 25.7711574738468,
+        "display": "25.8%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 57
+      },
+      "SDN": {
+        "name": "Sudan",
+        "value": 0.55837582516625,
+        "display": "0.6%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 148
+      },
+      "SWE": {
+        "name": "Sweden",
+        "value": 27.5888316644696,
+        "display": "27.6%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 47
+      },
+      "CHE": {
+        "name": "Switzerland",
+        "value": 38.4309707515475,
+        "display": "38.4%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 17
+      },
+      "SYR": {
+        "name": "Syrian Arab Republic",
+        "value": -16.9548312052516,
+        "display": "-17%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 166
+      },
+      "TJK": {
+        "name": "Tajikistan",
+        "value": -3.96119239536306,
+        "display": "-4%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 154
+      },
+      "TZA": {
+        "name": "Tanzania",
+        "value": 39.6794551425318,
+        "display": "39.7%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 14
+      },
+      "THA": {
+        "name": "Thailand",
+        "value": 24.8869264306731,
+        "display": "24.9%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 64
+      },
+      "TLS": {
+        "name": "Timor-Leste",
+        "value": -44.207210557469,
+        "display": "-44.2%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 173
+      },
+      "TGO": {
+        "name": "Togo",
+        "value": 11.6229106828578,
+        "display": "11.6%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 127
+      },
+      "TON": {
+        "name": "Tonga",
+        "value": -19.7458109013852,
+        "display": "-19.7%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 167
+      },
+      "TUN": {
+        "name": "Tunisia",
+        "value": 0.484583287389808,
+        "display": "0.5%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 149
+      },
+      "TUR": {
+        "name": "Turkiye",
+        "value": 31.4314825422833,
+        "display": "31.4%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 38
+      },
+      "UGA": {
+        "name": "Uganda",
+        "value": 23.1194557190041,
+        "display": "23.1%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 73
+      },
+      "UKR": {
+        "name": "Ukraine",
+        "value": -5.73403735267647,
+        "display": "-5.7%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 159
+      },
+      "ARE": {
+        "name": "United Arab Emirates",
+        "value": 42.9107991565376,
+        "display": "42.9%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 11
+      },
+      "GBR": {
+        "name": "United Kingdom",
+        "value": 18.3365620993855,
+        "display": "18.3%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 102
+      },
+      "USA": {
+        "name": "United States",
+        "value": 18.465975832559,
+        "display": "18.5%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 101
+      },
+      "URY": {
+        "name": "Uruguay",
+        "value": 20.6040841047253,
+        "display": "20.6%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 90
+      },
+      "UZB": {
+        "name": "Uzbekistan",
+        "value": 19.9494424972361,
+        "display": "19.9%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 93
+      },
+      "VUT": {
+        "name": "Vanuatu",
+        "value": 3.39882718803137,
+        "display": "3.4%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 142
+      },
+      "VEN": {
+        "name": "Venezuela, RB",
+        "value": 10.7220286007281,
+        "display": "10.7%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 129
+      },
+      "VNM": {
+        "name": "Viet Nam",
+        "value": 37.4122487716134,
+        "display": "37.4%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 19
+      },
+      "VIR": {
+        "name": "Virgin Islands (U.S.)",
+        "value": -3.31763698630137,
+        "display": "-3.3%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 153
+      },
+      "PSE": {
+        "name": "West Bank and Gaza",
+        "value": -7.65825328681025,
+        "display": "-7.7%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 160
+      },
+      "ZMB": {
+        "name": "Zambia",
+        "value": 39.2904198110723,
+        "display": "39.3%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 15
+      },
+      "ZWE": {
+        "name": "Zimbabwe",
+        "value": 3.41681244479211,
+        "display": "3.4%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 141
+      }
+    }
+  },
+  "review": {
+    "errors": [
+      {
+        "surface": "beat_5",
+        "claim": "East Timor drops, shrinking by 44.2 percent",
+        "reason": "Gross domestic savings as a percentage of GDP can be negative, but describing it as 'shrinking by 44.2 percent' misinterprets the metric as a growth rate or change over time rather than a share of GDP.",
+        "severity": "factual"
+      },
+      {
+        "surface": "beat_5",
+        "claim": "East Timor drops, shrinking by 44.2 percent, calculated as GDP less final consumption expenditure.",
+        "reason": "Misinterprets negative savings rate as shrinking over time.",
+        "severity": "factual"
+      }
+    ],
+    "claims": [
+      {
+        "surface": "title",
+        "text": "Where Nations Save the Most Wealth",
+        "isos": [],
+        "support": "Global map of gross domestic savings as a percentage of GDP",
+        "evidence": {}
+      },
+      {
+        "surface": "hook",
+        "text": "HIGH SAVINGS",
+        "isos": [],
+        "support": "Gross domestic savings indicator",
+        "evidence": {}
+      },
+      {
+        "surface": "description",
+        "text": "A cinematic look at gross domestic savings as a percentage of GDP across the world.",
+        "isos": [],
+        "support": "Indicator definition for NY.GDS.TOTL.ZS",
+        "evidence": {}
+      },
+      {
+        "surface": "beat_0",
+        "text": "Over a quarter of countries save more than 25 percent of their entire economic output.",
+        "isos": [],
+        "support": "threshold: 25.0, at_or_above: 61 out of 174 (more than a quarter)",
+        "evidence": {}
+      },
+      {
+        "surface": "beat_1",
+        "text": "Qatar saves 67.6 percent, towering above the rest.",
+        "isos": [
+          "QAT"
+        ],
+        "support": "QAT: 67.6263813796503, rank 1",
+        "evidence": {
+          "QAT": {
+            "name": "Qatar",
+            "value": 67.6263813796503,
+            "display": "67.6%",
+            "year": 2022,
+            "unit": "%",
+            "rank": 1
+          }
+        }
+      },
+      {
+        "surface": "beat_2",
+        "text": "Qatar has 3.7 times what the USA saves, while the USA sits at 18.5 percent.",
+        "isos": [
+          "QAT",
+          "USA"
+        ],
+        "support": "QAT value 67.626, USA value 18.465, ratio is approximately 3.66 times (rounded to 3.7)",
+        "evidence": {
+          "QAT": {
+            "name": "Qatar",
+            "value": 67.6263813796503,
+            "display": "67.6%",
+            "year": 2022,
+            "unit": "%",
+            "rank": 1
+          },
+          "USA": {
+            "name": "United States",
+            "value": 18.465975832559,
+            "display": "18.5%",
+            "year": 2024,
+            "unit": "%",
+            "rank": 101
+          }
+        }
+      },
+      {
+        "surface": "beat_3",
+        "text": "India saves 32.6 percent, putting it near the top countries.",
+        "isos": [
+          "IND"
+        ],
+        "support": "IND: 32.559492763302, display 32.6%, rank 36",
+        "evidence": {
+          "IND": {
+            "name": "India",
+            "value": 32.559492763302,
+            "display": "32.6%",
+            "year": 2025,
+            "unit": "%",
+            "rank": 36
+          }
+        }
+      },
+      {
+        "surface": "beat_4",
+        "text": "China hits 43.3 percent, a massive share of its output kept back.",
+        "isos": [
+          "CHN"
+        ],
+        "support": "CHN: 43.3210475865354, display 43.3%, rank 10",
+        "evidence": {
+          "CHN": {
+            "name": "China",
+            "value": 43.3210475865354,
+            "display": "43.3%",
+            "year": 2024,
+            "unit": "%",
+            "rank": 10
+          }
+        }
+      },
+      {
+        "surface": "beat_5",
+        "text": "East Timor drops, shrinking by 44.2 percent, calculated as GDP less final consumption expenditure.",
+        "isos": [
+          "TLS"
+        ],
+        "support": "TLS: -44.207210557469, display -44.2%",
+        "evidence": {
+          "TLS": {
+            "name": "Timor-Leste",
+            "value": -44.207210557469,
+            "display": "-44.2%",
+            "year": 2024,
+            "unit": "%",
+            "rank": 173
+          }
+        }
+      },
+      {
+        "surface": "beat_6",
+        "text": "What share of your country's wealth gets saved?",
+        "isos": [],
+        "support": "Gross domestic savings concept",
+        "evidence": {}
+      },
+      {
+        "surface": "card_6",
+        "text": "Gross Domestic Savings as Percent of GDP",
+        "isos": [],
+        "support": "Indicator definition",
+        "evidence": {}
+      },
+      {
+        "surface": "title",
+        "text": "Where Nations Save the Most Wealth",
+        "isos": [],
+        "support": "Style framing for a video about gross domestic savings ranks.",
+        "method": "complete-surface-check",
+        "evidence": {}
+      },
+      {
+        "surface": "hook",
+        "text": "HIGH SAVINGS",
+        "isos": [],
+        "support": "General high savings theme.",
+        "method": "complete-surface-check",
+        "evidence": {}
+      },
+      {
+        "surface": "description",
+        "text": "A cinematic look at gross domestic savings as a percentage of GDP across the world.",
+        "isos": [],
+        "support": "Accurately describes gross domestic savings as a percentage of GDP.",
+        "method": "complete-surface-check",
+        "evidence": {}
+      },
+      {
+        "surface": "beat_0",
+        "text": "Over a quarter of countries save more than 25 percent of their entire economic output.",
+        "isos": [],
+        "support": "61 out of 174 is more than a quarter, and threshold is 25 percent.",
+        "method": "complete-surface-check",
+        "evidence": {}
+      },
+      {
+        "surface": "beat_1",
+        "text": "Qatar saves 67.6 percent, towering above the rest.",
+        "isos": [
+          "QAT"
+        ],
+        "support": "Qatar has 67.6% savings and rank 1.",
+        "method": "complete-surface-check",
+        "evidence": {
+          "QAT": {
+            "name": "Qatar",
+            "value": 67.6263813796503,
+            "display": "67.6%",
+            "year": 2022,
+            "unit": "%",
+            "rank": 1
+          }
+        }
+      },
+      {
+        "surface": "beat_2",
+        "text": "Qatar has 3.7 times what the USA saves, while the USA sits at 18.5 percent.",
+        "isos": [
+          "QAT",
+          "USA"
+        ],
+        "support": "Qatar's value divided by USA's value equals approximately 3.7, and USA is 18.5%.",
+        "method": "complete-surface-check",
+        "evidence": {
+          "QAT": {
+            "name": "Qatar",
+            "value": 67.6263813796503,
+            "display": "67.6%",
+            "year": 2022,
+            "unit": "%",
+            "rank": 1
+          },
+          "USA": {
+            "name": "United States",
+            "value": 18.465975832559,
+            "display": "18.5%",
+            "year": 2024,
+            "unit": "%",
+            "rank": 101
+          }
+        }
+      },
+      {
+        "surface": "beat_3",
+        "text": "India saves 32.6 percent, putting it near the top countries.",
+        "isos": [
+          "IND"
+        ],
+        "support": "India value is 32.6% and rank is 36.",
+        "method": "complete-surface-check",
+        "evidence": {
+          "IND": {
+            "name": "India",
+            "value": 32.559492763302,
+            "display": "32.6%",
+            "year": 2025,
+            "unit": "%",
+            "rank": 36
+          }
+        }
+      },
+      {
+        "surface": "beat_4",
+        "text": "China hits 43.3 percent, a massive share of its output kept back.",
+        "isos": [
+          "CHN"
+        ],
+        "support": "China value is 43.3%.",
+        "method": "complete-surface-check",
+        "evidence": {
+          "CHN": {
+            "name": "China",
+            "value": 43.3210475865354,
+            "display": "43.3%",
+            "year": 2024,
+            "unit": "%",
+            "rank": 10
+          }
+        }
+      },
+      {
+        "surface": "beat_5",
+        "text": "East Timor drops, shrinking by 44.2 percent, calculated as GDP less final consumption expenditure.",
+        "isos": [
+          "TLS"
+        ],
+        "support": "Misinterprets negative savings rate as shrinking over time.",
+        "method": "complete-surface-check",
+        "evidence": {
+          "TLS": {
+            "name": "Timor-Leste",
+            "value": -44.207210557469,
+            "display": "-44.2%",
+            "year": 2024,
+            "unit": "%",
+            "rank": 173
+          }
+        }
+      },
+      {
+        "surface": "beat_6",
+        "text": "What share of your country's wealth gets saved?",
+        "isos": [],
+        "support": "Refers to the general concept of savings share.",
+        "method": "complete-surface-check",
+        "evidence": {}
+      },
+      {
+        "surface": "card_6",
+        "text": [
+          "What share gets saved?",
+          "Gross Domestic Savings as Percent of GDP"
+        ],
+        "isos": [],
+        "support": "Matches the official indicator name and definition.",
+        "method": "complete-surface-check",
+        "evidence": {}
+      }
+    ],
+    "surface_checks": {
+      "title": {
+        "supported": true,
+        "reason": "Style framing for a video about gross domestic savings ranks.",
+        "isos": []
+      },
+      "hook": {
+        "supported": true,
+        "reason": "General high savings theme.",
+        "isos": []
+      },
+      "description": {
+        "supported": true,
+        "reason": "Accurately describes gross domestic savings as a percentage of GDP.",
+        "isos": []
+      },
+      "beat_0": {
+        "supported": true,
+        "reason": "61 out of 174 is more than a quarter, and threshold is 25 percent.",
+        "isos": []
+      },
+      "beat_1": {
+        "supported": true,
+        "reason": "Qatar has 67.6% savings and rank 1.",
+        "isos": [
+          "QAT"
+        ]
+      },
+      "beat_2": {
+        "supported": true,
+        "reason": "Qatar's value divided by USA's value equals approximately 3.7, and USA is 18.5%.",
+        "isos": [
+          "QAT",
+          "USA"
+        ]
+      },
+      "beat_3": {
+        "supported": true,
+        "reason": "India value is 32.6% and rank is 36.",
+        "isos": [
+          "IND"
+        ]
+      },
+      "beat_4": {
+        "supported": true,
+        "reason": "China value is 43.3%.",
+        "isos": [
+          "CHN"
+        ]
+      },
+      "beat_5": {
+        "supported": false,
+        "reason": "Misinterprets negative savings rate as shrinking over time.",
+        "isos": [
+          "TLS"
+        ]
+      },
+      "beat_6": {
+        "supported": true,
+        "reason": "Refers to the general concept of savings share.",
+        "isos": []
+      },
+      "card_6": {
+        "supported": true,
+        "reason": "Matches the official indicator name and definition.",
+        "isos": []
+      }
+    },
+    "warnings": []
+  },
+  "script_sha256": "c70091e3777d9e8abfbcb1a8bd96a22c9a310a3821d852905f952bfbcf2feecc",
+  "data_sha256": "f264b00a840c9f702a65e1c2fbd7587a74f941425914423bd17e132d3c0b9dce",
+  "reviewer_model": "gemini-3.5-flash-lite"
+}

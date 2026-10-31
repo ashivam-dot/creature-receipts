@@ -1,0 +1,157 @@
+{
+  "errors": [
+    {
+      "surface": "beat_5",
+      "claim": "East Timor drops, shrinking by 44.2 percent",
+      "reason": "Gross domestic savings as a percentage of GDP can be negative, but describing it as 'shrinking by 44.2 percent' misinterprets the metric as a growth rate or change over time rather than a share of GDP.",
+      "severity": "factual"
+    }
+  ],
+  "claims": [
+    {
+      "surface": "title",
+      "text": "Where Nations Save the Most Wealth",
+      "isos": [],
+      "support": "Global map of gross domestic savings as a percentage of GDP"
+    },
+    {
+      "surface": "hook",
+      "text": "HIGH SAVINGS",
+      "isos": [],
+      "support": "Gross domestic savings indicator"
+    },
+    {
+      "surface": "description",
+      "text": "A cinematic look at gross domestic savings as a percentage of GDP across the world.",
+      "isos": [],
+      "support": "Indicator definition for NY.GDS.TOTL.ZS"
+    },
+    {
+      "surface": "beat_0",
+      "text": "Over a quarter of countries save more than 25 percent of their entire economic output.",
+      "isos": [],
+      "support": "threshold: 25.0, at_or_above: 61 out of 174 (more than a quarter)"
+    },
+    {
+      "surface": "beat_1",
+      "text": "Qatar saves 67.6 percent, towering above the rest.",
+      "isos": [
+        "QAT"
+      ],
+      "support": "QAT: 67.6263813796503, rank 1"
+    },
+    {
+      "surface": "beat_2",
+      "text": "Qatar has 3.7 times what the USA saves, while the USA sits at 18.5 percent.",
+      "isos": [
+        "QAT",
+        "USA"
+      ],
+      "support": "QAT value 67.626, USA value 18.465, ratio is approximately 3.66 times (rounded to 3.7)"
+    },
+    {
+      "surface": "beat_3",
+      "text": "India saves 32.6 percent, putting it near the top countries.",
+      "isos": [
+        "IND"
+      ],
+      "support": "IND: 32.559492763302, display 32.6%, rank 36"
+    },
+    {
+      "surface": "beat_4",
+      "text": "China hits 43.3 percent, a massive share of its output kept back.",
+      "isos": [
+        "CHN"
+      ],
+      "support": "CHN: 43.3210475865354, display 43.3%, rank 10"
+    },
+    {
+      "surface": "beat_5",
+      "text": "East Timor drops, shrinking by 44.2 percent, calculated as GDP less final consumption expenditure.",
+      "isos": [
+        "TLS"
+      ],
+      "support": "TLS: -44.207210557469, display -44.2%"
+    },
+    {
+      "surface": "beat_6",
+      "text": "What share of your country's wealth gets saved?",
+      "isos": [],
+      "support": "Gross domestic savings concept"
+    },
+    {
+      "surface": "card_6",
+      "text": "Gross Domestic Savings as Percent of GDP",
+      "isos": [],
+      "support": "Indicator definition"
+    }
+  ],
+  "surface_checks": {
+    "title": {
+      "supported": true,
+      "reason": "Style framing for a video about gross domestic savings ranks.",
+      "isos": []
+    },
+    "hook": {
+      "supported": true,
+      "reason": "General high savings theme.",
+      "isos": []
+    },
+    "description": {
+      "supported": true,
+      "reason": "Accurately describes gross domestic savings as a percentage of GDP.",
+      "isos": []
+    },
+    "beat_0": {
+      "supported": true,
+      "reason": "61 out of 174 is more than a quarter, and threshold is 25 percent.",
+      "isos": []
+    },
+    "beat_1": {
+      "supported": true,
+      "reason": "Qatar has 67.6% savings and rank 1.",
+      "isos": [
+        "QAT"
+      ]
+    },
+    "beat_2": {
+      "supported": true,
+      "reason": "Qatar's value divided by USA's value equals approximately 3.7, and USA is 18.5%.",
+      "isos": [
+        "QAT",
+        "USA"
+      ]
+    },
+    "beat_3": {
+      "supported": true,
+      "reason": "India value is 32.6% and rank is 36.",
+      "isos": [
+        "IND"
+      ]
+    },
+    "beat_4": {
+      "supported": true,
+      "reason": "China value is 43.3%.",
+      "isos": [
+        "CHN"
+      ]
+    },
+    "beat_5": {
+      "supported": false,
+      "reason": "Misinterprets negative savings rate as shrinking over time.",
+      "isos": [
+        "TLS"
+      ]
+    },
+    "beat_6": {
+      "supported": true,
+      "reason": "Refers to the general concept of savings share.",
+      "isos": []
+    },
+    "card_6": {
+      "supported": true,
+      "reason": "Matches the official indicator name and definition.",
+      "isos": []
+    }
+  }
+}

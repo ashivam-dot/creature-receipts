@@ -1,0 +1,77 @@
+id: atlas117
+title: Which Country Has the MOST Oil Rents?
+format: odd_one_out
+hook_text: THE HIGHEST RELIANCE
+description: National GDP Reliance on Oil Rents based on World Bank latest data.
+hashtags:
+- '#economy'
+- '#geography'
+- '#countries'
+tags:
+- wealth
+- oil rents as a share of gdp
+- countries ranked by oil rents as a share of gdp
+- Libya
+- Armenia
+- world map
+- geography
+- atlas in numbers
+sources:
+- https://data.worldbank.org/indicator/NY.GDP.PETR.RT.ZS
+dataset:
+  kind: worldbank
+  indicator: NY.GDP.PETR.RT.ZS
+  label: Oil rents as a share of GDP
+  unit: '%'
+  source: World Bank
+  min_year: 2019
+scale:
+  edges:
+  - 0.1
+  - 1.0
+  - 10.0
+  - 25.0
+  labels:
+  - Minimal
+  - Under 1%
+  - 1-10%
+  - 10-25%
+  - Over 25%
+value_format: '{v:.4f}%'
+beats:
+- text: One big country breaks this pattern. It is not the one you would guess.
+  shot:
+    callouts:
+    - LBY
+    - USA
+- text: 'Libya: 56.4%. Libya has 94 times the USA.'
+  shot:
+    kind: country
+    iso: LBY
+- text: 'USA: 0.6%.'
+  shot:
+    kind: country
+    iso: USA
+- text: 'Iraq and Congo trail closely behind. Iraq: 42.8%. Congo: 34.4%.'
+  shot:
+    kind: group
+    isos:
+    - IRQ
+    - COG
+- text: 'Angola: 28.3%. Kuwait: 27.6%. Saudi Arabia: 23.7%.'
+  shot:
+    kind: rank
+    isos:
+    - AGO
+    - KWT
+    - SAU
+- text: 'Zambia: 0%. Zambia shares the bottom with 7 others.'
+  shot:
+    kind: country
+    iso: ZMB
+- text: What share of your country's economy comes from oil rents?
+  shot:
+    kind: card
+    lines:
+    - What share of your country's economy comes from oil rents?
+    - Oil Rents as a Share of GDP

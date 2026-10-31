@@ -1,0 +1,82 @@
+id: atlas118
+title: The Places Where Almost Everyone Is a Bank Borrower
+hook_text: MORE LOANS THAN PEOPLE
+description: A look at commercial bank borrower density worldwide, comparing high-credit nations like Turkey and
+  China to the world's lowest in South Sudan.
+hashtags:
+- '#economy'
+- '#finance'
+- '#geography'
+tags:
+- wealth
+- bank borrowers per 1,000 adults
+- countries ranked by bank borrowers per 1,000 adults
+- Eswatini
+- South Sudan
+- world map
+- geography
+- atlas in numbers
+sources:
+- https://data.worldbank.org/indicator/FB.CBK.BRWR.P3
+dataset:
+  kind: worldbank
+  indicator: FB.CBK.BRWR.P3
+  label: Bank borrowers per 1,000 adults
+  unit: per 1,000 adults
+  source: World Bank
+  min_year: 2019
+scale:
+  edges:
+  - 50.0
+  - 200.0
+  - 400.0
+  - 600.0
+  labels:
+  - Under 50
+  - 50-200
+  - 200-400
+  - 400-600
+  - Over 600
+beats:
+- text: In Singapore, the number of bank borrowers actually exceeds the total adult population.
+  shot:
+    callouts:
+    - BRA
+    - SSD
+- text: South Sudan is the world's lowest. Almost no one there has a formal bank loan.
+  shot:
+    kind: country
+    iso: SSD
+- text: Turkey is one of the highest. 977. Almost every adult there is a borrower.
+  shot:
+    kind: country
+    iso: TUR
+- text: It counts households and businesses that obtained loans from commercial banks.
+  shot:
+    callouts:
+    - TUR
+    - SSD
+  basis: households who obtained loans from commercial banks
+- text: Uruguay has 766. China has 662. Italy has 587.
+  shot:
+    kind: rank
+    isos:
+    - URY
+    - CHN
+    - ITA
+- text: Turkey has 42 times the borrowers Pakistan has, where only 23 borrow.
+  shot:
+    callouts:
+    - TUR
+    - PAK
+- text: In Singapore, the number of borrowers actually exceeds the total adult population.
+  shot:
+    callouts:
+    - TUR
+    - CHN
+- text: Do you have a loan from a commercial bank?
+  shot:
+    kind: card
+    lines:
+    - Got a loan?
+    - Commercial Bank Borrowers

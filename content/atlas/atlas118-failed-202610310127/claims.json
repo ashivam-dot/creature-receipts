@@ -1,0 +1,1429 @@
+{
+  "version": 1,
+  "evidence": {
+    "version": 1,
+    "indicator": "FB.CBK.BRWR.P3",
+    "definition": "Borrowers from commercial banks are the reported number of resident customers that are nonfinancial corporations (public and private) and households who obtained loans from commercial banks and other banks functioning as commercial banks.",
+    "source": "https://data.worldbank.org/indicator/FB.CBK.BRWR.P3",
+    "source_response_sha256": "4f44dadf78b1763e263ecea4521cc32ab3a82a195f2e72e75334134cd2f6103f",
+    "source_organization": "Financial Access Survey, International Monetary Fund (IMF), uri: https://data.imf.org/en/datasets/IMF.STA:FAS",
+    "year_label": "latest available 2019–2024",
+    "universe": "mapped countries and territories with data",
+    "count": 104,
+    "threshold": null,
+    "at_or_above": null,
+    "entities": {
+      "AFG": {
+        "name": "Afghanistan",
+        "value": 3.28894066003497,
+        "display": "3",
+        "year": 2019,
+        "unit": "per 1,000 adults",
+        "rank": 103
+      },
+      "ALB": {
+        "name": "Albania",
+        "value": 155.950021572975,
+        "display": "156",
+        "year": 2024,
+        "unit": "per 1,000 adults",
+        "rank": 59
+      },
+      "DZA": {
+        "name": "Algeria",
+        "value": 43.3885902726128,
+        "display": "43",
+        "year": 2024,
+        "unit": "per 1,000 adults",
+        "rank": 82
+      },
+      "AGO": {
+        "name": "Angola",
+        "value": 25.6642402378017,
+        "display": "26",
+        "year": 2024,
+        "unit": "per 1,000 adults",
+        "rank": 90
+      },
+      "ARG": {
+        "name": "Argentina",
+        "value": 389.590349349156,
+        "display": "390",
+        "year": 2024,
+        "unit": "per 1,000 adults",
+        "rank": 25
+      },
+      "AZE": {
+        "name": "Azerbaijan",
+        "value": 392.802981206256,
+        "display": "393",
+        "year": 2024,
+        "unit": "per 1,000 adults",
+        "rank": 24
+      },
+      "BHR": {
+        "name": "Bahrain",
+        "value": 191.965288285958,
+        "display": "192",
+        "year": 2024,
+        "unit": "per 1,000 adults",
+        "rank": 53
+      },
+      "BGD": {
+        "name": "Bangladesh",
+        "value": 96.435193298809,
+        "display": "96",
+        "year": 2024,
+        "unit": "per 1,000 adults",
+        "rank": 68
+      },
+      "BEL": {
+        "name": "Belgium",
+        "value": 672.946144721332,
+        "display": "673",
+        "year": 2021,
+        "unit": "per 1,000 adults",
+        "rank": 6
+      },
+      "BLZ": {
+        "name": "Belize",
+        "value": 147.223737104901,
+        "display": "147",
+        "year": 2024,
+        "unit": "per 1,000 adults",
+        "rank": 62
+      },
+      "BEN": {
+        "name": "Benin",
+        "value": 41.6923870077517,
+        "display": "42",
+        "year": 2024,
+        "unit": "per 1,000 adults",
+        "rank": 84
+      },
+      "BOL": {
+        "name": "Bolivia",
+        "value": 81.1367611634712,
+        "display": "81",
+        "year": 2024,
+        "unit": "per 1,000 adults",
+        "rank": 70
+      },
+      "BIH": {
+        "name": "Bosnia and Herzegovina",
+        "value": 333.58469282477,
+        "display": "334",
+        "year": 2024,
+        "unit": "per 1,000 adults",
+        "rank": 32
+      },
+      "BWA": {
+        "name": "Botswana",
+        "value": 196.248508274765,
+        "display": "196",
+        "year": 2024,
+        "unit": "per 1,000 adults",
+        "rank": 52
+      },
+      "BRA": {
+        "name": "Brazil",
+        "value": 767.597950573908,
+        "display": "768",
+        "year": 2024,
+        "unit": "per 1,000 adults",
+        "rank": 4
+      },
+      "BRN": {
+        "name": "Brunei Darussalam",
+        "value": 352.342061419308,
+        "display": "352",
+        "year": 2021,
+        "unit": "per 1,000 adults",
+        "rank": 30
+      },
+      "BGR": {
+        "name": "Bulgaria",
+        "value": 392.814291512468,
+        "display": "393",
+        "year": 2024,
+        "unit": "per 1,000 adults",
+        "rank": 23
+      },
+      "BFA": {
+        "name": "Burkina Faso",
+        "value": 37.27,
+        "display": "37",
+        "year": 2020,
+        "unit": "per 1,000 adults",
+        "rank": 87
+      },
+      "BDI": {
+        "name": "Burundi",
+        "value": 19.5942106424711,
+        "display": "20",
+        "year": 2020,
+        "unit": "per 1,000 adults",
+        "rank": 96
+      },
+      "CPV": {
+        "name": "Cabo Verde",
+        "value": 208.753408154207,
+        "display": "209",
+        "year": 2022,
+        "unit": "per 1,000 adults",
+        "rank": 50
+      },
+      "CMR": {
+        "name": "Cameroon",
+        "value": 37.9733243875434,
+        "display": "38",
+        "year": 2020,
+        "unit": "per 1,000 adults",
+        "rank": 86
+      },
+      "TCD": {
+        "name": "Chad",
+        "value": 7.95966709155723,
+        "display": "8",
+        "year": 2022,
+        "unit": "per 1,000 adults",
+        "rank": 101
+      },
+      "CHL": {
+        "name": "Chile",
+        "value": 355.490082288899,
+        "display": "355",
+        "year": 2024,
+        "unit": "per 1,000 adults",
+        "rank": 29
+      },
+      "CHN": {
+        "name": "China",
+        "value": 662.055002910593,
+        "display": "662",
+        "year": 2024,
+        "unit": "per 1,000 adults",
+        "rank": 7
+      },
+      "COL": {
+        "name": "Colombia",
+        "value": 263.02439595894,
+        "display": "263",
+        "year": 2024,
+        "unit": "per 1,000 adults",
+        "rank": 42
+      },
+      "COM": {
+        "name": "Comoros",
+        "value": 24.0895978154751,
+        "display": "24",
+        "year": 2024,
+        "unit": "per 1,000 adults",
+        "rank": 92
+      },
+      "COG": {
+        "name": "Congo, Rep.",
+        "value": 61.248027161884,
+        "display": "61",
+        "year": 2022,
+        "unit": "per 1,000 adults",
+        "rank": 73
+      },
+      "CRI": {
+        "name": "Costa Rica",
+        "value": 259.804768859812,
+        "display": "260",
+        "year": 2024,
+        "unit": "per 1,000 adults",
+        "rank": 43
+      },
+      "HRV": {
+        "name": "Croatia",
+        "value": 540.718758817267,
+        "display": "541",
+        "year": 2024,
+        "unit": "per 1,000 adults",
+        "rank": 12
+      },
+      "CYP": {
+        "name": "Cyprus",
+        "value": 348.793879174755,
+        "display": "349",
+        "year": 2024,
+        "unit": "per 1,000 adults",
+        "rank": 31
+      },
+      "DJI": {
+        "name": "Djibouti",
+        "value": 42.459274829217,
+        "display": "42",
+        "year": 2024,
+        "unit": "per 1,000 adults",
+        "rank": 83
+      },
+      "DOM": {
+        "name": "Dominican Republic",
+        "value": 250.492745940027,
+        "display": "250",
+        "year": 2024,
+        "unit": "per 1,000 adults",
+        "rank": 45
+      },
+      "ECU": {
+        "name": "Ecuador",
+        "value": 147.636258582207,
+        "display": "148",
+        "year": 2024,
+        "unit": "per 1,000 adults",
+        "rank": 61
+      },
+      "EGY": {
+        "name": "Egypt, Arab Rep.",
+        "value": 132.947498849191,
+        "display": "133",
+        "year": 2024,
+        "unit": "per 1,000 adults",
+        "rank": 63
+      },
+      "GNQ": {
+        "name": "Equatorial Guinea",
+        "value": 63.8441356473247,
+        "display": "64",
+        "year": 2022,
+        "unit": "per 1,000 adults",
+        "rank": 72
+      },
+      "EST": {
+        "name": "Estonia",
+        "value": 505.659904617086,
+        "display": "506",
+        "year": 2024,
+        "unit": "per 1,000 adults",
+        "rank": 14
+      },
+      "SWZ": {
+        "name": "Eswatini",
+        "value": 1056.86135555037,
+        "display": "1,057",
+        "year": 2024,
+        "unit": "per 1,000 adults",
+        "rank": 2
+      },
+      "GEO": {
+        "name": "Georgia",
+        "value": 559.21950253872,
+        "display": "559",
+        "year": 2024,
+        "unit": "per 1,000 adults",
+        "rank": 10
+      },
+      "GHA": {
+        "name": "Ghana",
+        "value": 185.640800260333,
+        "display": "186",
+        "year": 2024,
+        "unit": "per 1,000 adults",
+        "rank": 54
+      },
+      "GTM": {
+        "name": "Guatemala",
+        "value": 167.440385067364,
+        "display": "167",
+        "year": 2024,
+        "unit": "per 1,000 adults",
+        "rank": 56
+      },
+      "GIN": {
+        "name": "Guinea",
+        "value": 22.4838407106864,
+        "display": "22",
+        "year": 2024,
+        "unit": "per 1,000 adults",
+        "rank": 94
+      },
+      "HTI": {
+        "name": "Haiti",
+        "value": 10.7129067665033,
+        "display": "11",
+        "year": 2020,
+        "unit": "per 1,000 adults",
+        "rank": 100
+      },
+      "HND": {
+        "name": "Honduras",
+        "value": 120.82867445054,
+        "display": "121",
+        "year": 2024,
+        "unit": "per 1,000 adults",
+        "rank": 65
+      },
+      "HUN": {
+        "name": "Hungary",
+        "value": 417.283052882339,
+        "display": "417",
+        "year": 2024,
+        "unit": "per 1,000 adults",
+        "rank": 20
+      },
+      "IDN": {
+        "name": "Indonesia",
+        "value": 358.683865479908,
+        "display": "359",
+        "year": 2024,
+        "unit": "per 1,000 adults",
+        "rank": 28
+      },
+      "ITA": {
+        "name": "Italy",
+        "value": 587.269312725826,
+        "display": "587",
+        "year": 2024,
+        "unit": "per 1,000 adults",
+        "rank": 9
+      },
+      "KEN": {
+        "name": "Kenya",
+        "value": 324.896861496806,
+        "display": "325",
+        "year": 2024,
+        "unit": "per 1,000 adults",
+        "rank": 33
+      },
+      "KWT": {
+        "name": "Kuwait",
+        "value": 198.933397710686,
+        "display": "199",
+        "year": 2024,
+        "unit": "per 1,000 adults",
+        "rank": 51
+      },
+      "KGZ": {
+        "name": "Kyrgyz Republic",
+        "value": 267.627797607272,
+        "display": "268",
+        "year": 2024,
+        "unit": "per 1,000 adults",
+        "rank": 40
+      },
+      "LAO": {
+        "name": "Lao PDR",
+        "value": 21.0658994807186,
+        "display": "21",
+        "year": 2024,
+        "unit": "per 1,000 adults",
+        "rank": 95
+      },
+      "LVA": {
+        "name": "Latvia",
+        "value": 304.095905871479,
+        "display": "304",
+        "year": 2024,
+        "unit": "per 1,000 adults",
+        "rank": 37
+      },
+      "LBN": {
+        "name": "Lebanon",
+        "value": 70.8152698801821,
+        "display": "71",
+        "year": 2024,
+        "unit": "per 1,000 adults",
+        "rank": 71
+      },
+      "LSO": {
+        "name": "Lesotho",
+        "value": 52.7518994669274,
+        "display": "53",
+        "year": 2024,
+        "unit": "per 1,000 adults",
+        "rank": 78
+      },
+      "LBR": {
+        "name": "Liberia",
+        "value": 12.6635469217802,
+        "display": "13",
+        "year": 2023,
+        "unit": "per 1,000 adults",
+        "rank": 99
+      },
+      "LTU": {
+        "name": "Lithuania",
+        "value": 408.037386668009,
+        "display": "408",
+        "year": 2024,
+        "unit": "per 1,000 adults",
+        "rank": 22
+      },
+      "MDG": {
+        "name": "Madagascar",
+        "value": 121.603459322267,
+        "display": "122",
+        "year": 2024,
+        "unit": "per 1,000 adults",
+        "rank": 64
+      },
+      "MWI": {
+        "name": "Malawi",
+        "value": 24.8366442680599,
+        "display": "25",
+        "year": 2024,
+        "unit": "per 1,000 adults",
+        "rank": 91
+      },
+      "MYS": {
+        "name": "Malaysia",
+        "value": 305.09407449011,
+        "display": "305",
+        "year": 2024,
+        "unit": "per 1,000 adults",
+        "rank": 36
+      },
+      "MLT": {
+        "name": "Malta",
+        "value": 433.392191485187,
+        "display": "433",
+        "year": 2024,
+        "unit": "per 1,000 adults",
+        "rank": 19
+      },
+      "MRT": {
+        "name": "Mauritania",
+        "value": 98.9542390908846,
+        "display": "99",
+        "year": 2023,
+        "unit": "per 1,000 adults",
+        "rank": 66
+      },
+      "MUS": {
+        "name": "Mauritius",
+        "value": 263.132534612033,
+        "display": "263",
+        "year": 2024,
+        "unit": "per 1,000 adults",
+        "rank": 41
+      },
+      "MDA": {
+        "name": "Moldova",
+        "value": 210.255532573463,
+        "display": "210",
+        "year": 2024,
+        "unit": "per 1,000 adults",
+        "rank": 49
+      },
+      "MNE": {
+        "name": "Montenegro",
+        "value": 321.86588350465,
+        "display": "322",
+        "year": 2024,
+        "unit": "per 1,000 adults",
+        "rank": 34
+      },
+      "MOZ": {
+        "name": "Mozambique",
+        "value": 59.2485741531876,
+        "display": "59",
+        "year": 2024,
+        "unit": "per 1,000 adults",
+        "rank": 75
+      },
+      "MMR": {
+        "name": "Myanmar",
+        "value": 13.4927398480841,
+        "display": "13",
+        "year": 2020,
+        "unit": "per 1,000 adults",
+        "rank": 98
+      },
+      "NAM": {
+        "name": "Namibia",
+        "value": 297.109964620788,
+        "display": "297",
+        "year": 2024,
+        "unit": "per 1,000 adults",
+        "rank": 38
+      },
+      "NER": {
+        "name": "Niger",
+        "value": 13.6979486046094,
+        "display": "14",
+        "year": 2022,
+        "unit": "per 1,000 adults",
+        "rank": 97
+      },
+      "NGA": {
+        "name": "Nigeria",
+        "value": 31.0783043496406,
+        "display": "31",
+        "year": 2024,
+        "unit": "per 1,000 adults",
+        "rank": 89
+      },
+      "MKD": {
+        "name": "North Macedonia",
+        "value": 385.630096230927,
+        "display": "386",
+        "year": 2024,
+        "unit": "per 1,000 adults",
+        "rank": 26
+      },
+      "PAK": {
+        "name": "Pakistan",
+        "value": 23.3403851354538,
+        "display": "23",
+        "year": 2024,
+        "unit": "per 1,000 adults",
+        "rank": 93
+      },
+      "PRY": {
+        "name": "Paraguay",
+        "value": 465.520753591369,
+        "display": "466",
+        "year": 2024,
+        "unit": "per 1,000 adults",
+        "rank": 16
+      },
+      "PER": {
+        "name": "Peru",
+        "value": 167.062248430677,
+        "display": "167",
+        "year": 2024,
+        "unit": "per 1,000 adults",
+        "rank": 57
+      },
+      "POL": {
+        "name": "Poland",
+        "value": 455.005469054246,
+        "display": "455",
+        "year": 2024,
+        "unit": "per 1,000 adults",
+        "rank": 18
+      },
+      "PRT": {
+        "name": "Portugal",
+        "value": 485.466757039866,
+        "display": "485",
+        "year": 2024,
+        "unit": "per 1,000 adults",
+        "rank": 15
+      },
+      "QAT": {
+        "name": "Qatar",
+        "value": 280.885131356847,
+        "display": "281",
+        "year": 2021,
+        "unit": "per 1,000 adults",
+        "rank": 39
+      },
+      "ROU": {
+        "name": "Romania",
+        "value": 246.628718078833,
+        "display": "247",
+        "year": 2024,
+        "unit": "per 1,000 adults",
+        "rank": 46
+      },
+      "RWA": {
+        "name": "Rwanda",
+        "value": 98.0927638798683,
+        "display": "98",
+        "year": 2024,
+        "unit": "per 1,000 adults",
+        "rank": 67
+      },
+      "WSM": {
+        "name": "Samoa",
+        "value": 151.967799642218,
+        "display": "152",
+        "year": 2024,
+        "unit": "per 1,000 adults",
+        "rank": 60
+      },
+      "SMR": {
+        "name": "San Marino",
+        "value": 416.241781832819,
+        "display": "416",
+        "year": 2024,
+        "unit": "per 1,000 adults",
+        "rank": 21
+      },
+      "STP": {
+        "name": "Sao Tome and Principe",
+        "value": 55.4299801279731,
+        "display": "55",
+        "year": 2024,
+        "unit": "per 1,000 adults",
+        "rank": 77
+      },
+      "SAU": {
+        "name": "Saudi Arabia",
+        "value": 234.684790646407,
+        "display": "235",
+        "year": 2024,
+        "unit": "per 1,000 adults",
+        "rank": 48
+      },
+      "SRB": {
+        "name": "Serbia",
+        "value": 551.054344003592,
+        "display": "551",
+        "year": 2024,
+        "unit": "per 1,000 adults",
+        "rank": 11
+      },
+      "SYC": {
+        "name": "Seychelles",
+        "value": 235.016779559819,
+        "display": "235",
+        "year": 2024,
+        "unit": "per 1,000 adults",
+        "rank": 47
+      },
+      "SLE": {
+        "name": "Sierra Leone",
+        "value": 6.28057261589018,
+        "display": "6",
+        "year": 2019,
+        "unit": "per 1,000 adults",
+        "rank": 102
+      },
+      "SGP": {
+        "name": "Singapore",
+        "value": 1073.96066194501,
+        "display": "1,074",
+        "year": 2020,
+        "unit": "per 1,000 adults",
+        "rank": 1
+      },
+      "SLB": {
+        "name": "Solomon Islands",
+        "value": 40.1055122807153,
+        "display": "40",
+        "year": 2024,
+        "unit": "per 1,000 adults",
+        "rank": 85
+      },
+      "SSD": {
+        "name": "South Sudan",
+        "value": 1.02490138905185,
+        "display": "1",
+        "year": 2024,
+        "unit": "per 1,000 adults",
+        "rank": 104
+      },
+      "ESP": {
+        "name": "Spain",
+        "value": 459.525043573703,
+        "display": "460",
+        "year": 2024,
+        "unit": "per 1,000 adults",
+        "rank": 17
+      },
+      "SUR": {
+        "name": "Suriname",
+        "value": 184.817537433653,
+        "display": "185",
+        "year": 2024,
+        "unit": "per 1,000 adults",
+        "rank": 55
+      },
+      "TJK": {
+        "name": "Tajikistan",
+        "value": 513.075670614218,
+        "display": "513",
+        "year": 2024,
+        "unit": "per 1,000 adults",
+        "rank": 13
+      },
+      "TZA": {
+        "name": "Tanzania",
+        "value": 49.1535519051338,
+        "display": "49",
+        "year": 2024,
+        "unit": "per 1,000 adults",
+        "rank": 80
+      },
+      "THA": {
+        "name": "Thailand",
+        "value": 309.668363368677,
+        "display": "310",
+        "year": 2024,
+        "unit": "per 1,000 adults",
+        "rank": 35
+      },
+      "TLS": {
+        "name": "Timor-Leste",
+        "value": 51.4010684849656,
+        "display": "51",
+        "year": 2023,
+        "unit": "per 1,000 adults",
+        "rank": 79
+      },
+      "TGO": {
+        "name": "Togo",
+        "value": 37.2452627287391,
+        "display": "37",
+        "year": 2024,
+        "unit": "per 1,000 adults",
+        "rank": 88
+      },
+      "TUN": {
+        "name": "Tunisia",
+        "value": 253.689783170786,
+        "display": "254",
+        "year": 2024,
+        "unit": "per 1,000 adults",
+        "rank": 44
+      },
+      "TUR": {
+        "name": "Turkiye",
+        "value": 976.676808209618,
+        "display": "977",
+        "year": 2024,
+        "unit": "per 1,000 adults",
+        "rank": 3
+      },
+      "UGA": {
+        "name": "Uganda",
+        "value": 60.3364123654443,
+        "display": "60",
+        "year": 2024,
+        "unit": "per 1,000 adults",
+        "rank": 74
+      },
+      "ARE": {
+        "name": "United Arab Emirates",
+        "value": 628.85920433638,
+        "display": "629",
+        "year": 2023,
+        "unit": "per 1,000 adults",
+        "rank": 8
+      },
+      "URY": {
+        "name": "Uruguay",
+        "value": 766.277447706607,
+        "display": "766",
+        "year": 2024,
+        "unit": "per 1,000 adults",
+        "rank": 5
+      },
+      "UZB": {
+        "name": "Uzbekistan",
+        "value": 376.816755625362,
+        "display": "377",
+        "year": 2024,
+        "unit": "per 1,000 adults",
+        "rank": 27
+      },
+      "VUT": {
+        "name": "Vanuatu",
+        "value": 88.4471796849474,
+        "display": "88",
+        "year": 2021,
+        "unit": "per 1,000 adults",
+        "rank": 69
+      },
+      "PSE": {
+        "name": "West Bank and Gaza",
+        "value": 166.492018508692,
+        "display": "166",
+        "year": 2024,
+        "unit": "per 1,000 adults",
+        "rank": 58
+      },
+      "ZMB": {
+        "name": "Zambia",
+        "value": 44.7616393878,
+        "display": "45",
+        "year": 2024,
+        "unit": "per 1,000 adults",
+        "rank": 81
+      },
+      "ZWE": {
+        "name": "Zimbabwe",
+        "value": 58.551872295641,
+        "display": "59",
+        "year": 2024,
+        "unit": "per 1,000 adults",
+        "rank": 76
+      }
+    }
+  },
+  "review": {
+    "errors": [
+      {
+        "surface": "title",
+        "claim": "almost everyone is a bank borrower",
+        "reason": "Singapore has 1,074 per 1,000 adults, and no other entity reaches 1,077; 'almost everyone' is an exaggeration for countries mostly well below 100 percent.",
+        "severity": "factual"
+      },
+      {
+        "surface": "hook",
+        "claim": "more loans than people",
+        "reason": "The unit is per 1,000 adults, not total population or total loans.",
+        "severity": "factual"
+      },
+      {
+        "surface": "beat_0",
+        "claim": "In Singapore, the number of bank borrowers actually exceeds the total adult population.",
+        "reason": "Singapore value is 1,073.96 per 1,000 adults, which exceeds 1,000 adults, but the claim refers to total adult population rather than per 1,000 adults.",
+        "severity": "factual"
+      },
+      {
+        "surface": "beat_6",
+        "claim": "In Singapore, the number of borrowers actually exceeds the total adult population.",
+        "reason": "Repeated statement from beat_0.",
+        "severity": "factual"
+      },
+      {
+        "surface": "title",
+        "claim": "The Places Where Almost Everyone Is a Bank Borrower",
+        "reason": "Not all places have almost everyone as a borrower, though Singapore and Eswatini exceed 1,000 per 1,000 adults.",
+        "severity": "factual"
+      },
+      {
+        "surface": "hook",
+        "claim": "MORE LOANS THAN PEOPLE",
+        "reason": "Expressed as per 1,000 adults, not total loans vs total people.",
+        "severity": "factual"
+      },
+      {
+        "surface": "beat_0",
+        "claim": "In Singapore, the number of bank borrowers actually exceeds the total adult population.",
+        "reason": "Exceeds 1,000 per 1,000 adults, but phrasing implies total adult population count vs total borrower count.",
+        "severity": "factual"
+      },
+      {
+        "surface": "beat_6",
+        "claim": "In Singapore, the number of borrowers actually exceeds the total adult population.",
+        "reason": "Repeated statement from beat_0.",
+        "severity": "factual"
+      }
+    ],
+    "claims": [
+      {
+        "surface": "title",
+        "text": "The Places Where Almost Everyone Is a Bank Borrower",
+        "isos": [],
+        "support": "Singapore 1,074, Eswatini 1,057, Turkiye 977",
+        "evidence": {}
+      },
+      {
+        "surface": "hook",
+        "text": "MORE LOANS THAN PEOPLE",
+        "isos": [],
+        "support": "Singapore 1,074 per 1,000 adults",
+        "evidence": {}
+      },
+      {
+        "surface": "description",
+        "text": "A look at commercial bank borrower density worldwide, comparing high-credit nations like Turkey and China to the world's lowest in South Sudan.",
+        "isos": [
+          "TUR",
+          "CHN",
+          "SSD"
+        ],
+        "support": "TUR rank 3, CHN rank 7, SSD rank 104",
+        "evidence": {
+          "TUR": {
+            "name": "Turkiye",
+            "value": 976.676808209618,
+            "display": "977",
+            "year": 2024,
+            "unit": "per 1,000 adults",
+            "rank": 3
+          },
+          "CHN": {
+            "name": "China",
+            "value": 662.055002910593,
+            "display": "662",
+            "year": 2024,
+            "unit": "per 1,000 adults",
+            "rank": 7
+          },
+          "SSD": {
+            "name": "South Sudan",
+            "value": 1.02490138905185,
+            "display": "1",
+            "year": 2024,
+            "unit": "per 1,000 adults",
+            "rank": 104
+          }
+        }
+      },
+      {
+        "surface": "beat_0",
+        "text": "In Singapore, the number of bank borrowers actually exceeds the total adult population.",
+        "isos": [
+          "SGP"
+        ],
+        "support": "SGP value 1073.96066194501",
+        "evidence": {
+          "SGP": {
+            "name": "Singapore",
+            "value": 1073.96066194501,
+            "display": "1,074",
+            "year": 2020,
+            "unit": "per 1,000 adults",
+            "rank": 1
+          }
+        }
+      },
+      {
+        "surface": "beat_1",
+        "text": "South Sudan is the world's lowest. Almost no one there has a formal bank loan.",
+        "isos": [
+          "SSD"
+        ],
+        "support": "SSD rank 104, value 1.02490138905185",
+        "evidence": {
+          "SSD": {
+            "name": "South Sudan",
+            "value": 1.02490138905185,
+            "display": "1",
+            "year": 2024,
+            "unit": "per 1,000 adults",
+            "rank": 104
+          }
+        }
+      },
+      {
+        "surface": "beat_2",
+        "text": "Turkey is one of the highest. 977. Almost every adult there is a borrower.",
+        "isos": [
+          "TUR"
+        ],
+        "support": "TUR rank 3, value 976.676808209618",
+        "evidence": {
+          "TUR": {
+            "name": "Turkiye",
+            "value": 976.676808209618,
+            "display": "977",
+            "year": 2024,
+            "unit": "per 1,000 adults",
+            "rank": 3
+          }
+        }
+      },
+      {
+        "surface": "beat_3",
+        "text": "It counts households and businesses that obtained loans from commercial banks.",
+        "isos": [],
+        "support": "Borrowers from commercial banks are the reported number of resident customers that are nonfinancial corporations (public and private) and households who obtained loans from commercial banks and other banks functioning as commercial banks.",
+        "evidence": {}
+      },
+      {
+        "surface": "beat_4",
+        "text": "Uruguay has 766. China has 662. Italy has 587.",
+        "isos": [
+          "URY",
+          "CHN",
+          "ITA"
+        ],
+        "support": "URY 766.28, CHN 662.06, ITA 587.27",
+        "evidence": {
+          "URY": {
+            "name": "Uruguay",
+            "value": 766.277447706607,
+            "display": "766",
+            "year": 2024,
+            "unit": "per 1,000 adults",
+            "rank": 5
+          },
+          "CHN": {
+            "name": "China",
+            "value": 662.055002910593,
+            "display": "662",
+            "year": 2024,
+            "unit": "per 1,000 adults",
+            "rank": 7
+          },
+          "ITA": {
+            "name": "Italy",
+            "value": 587.269312725826,
+            "display": "587",
+            "year": 2024,
+            "unit": "per 1,000 adults",
+            "rank": 9
+          }
+        }
+      },
+      {
+        "surface": "beat_5",
+        "text": "Turkey has 42 times the borrowers Pakistan has, where only 23 borrow.",
+        "isos": [
+          "TUR",
+          "PAK"
+        ],
+        "support": "TUR 976.68, PAK 23.34",
+        "evidence": {
+          "TUR": {
+            "name": "Turkiye",
+            "value": 976.676808209618,
+            "display": "977",
+            "year": 2024,
+            "unit": "per 1,000 adults",
+            "rank": 3
+          },
+          "PAK": {
+            "name": "Pakistan",
+            "value": 23.3403851354538,
+            "display": "23",
+            "year": 2024,
+            "unit": "per 1,000 adults",
+            "rank": 93
+          }
+        }
+      },
+      {
+        "surface": "beat_6",
+        "text": "In Singapore, the number of borrowers actually exceeds the total adult population.",
+        "isos": [
+          "SGP"
+        ],
+        "support": "SGP value 1073.96066194501",
+        "evidence": {
+          "SGP": {
+            "name": "Singapore",
+            "value": 1073.96066194501,
+            "display": "1,074",
+            "year": 2020,
+            "unit": "per 1,000 adults",
+            "rank": 1
+          }
+        }
+      },
+      {
+        "surface": "beat_7",
+        "text": "Do you have a loan from a commercial bank?",
+        "isos": [],
+        "support": "Indicator definition refers to resident customers who obtained loans from commercial banks.",
+        "evidence": {}
+      },
+      {
+        "surface": "card_7",
+        "text": "Got a loan?, Commercial Bank Borrowers",
+        "isos": [],
+        "support": "Indicator definition refers to commercial bank borrowers.",
+        "evidence": {}
+      },
+      {
+        "surface": "title",
+        "text": "The Places Where Almost Everyone Is a Bank Borrower",
+        "isos": [],
+        "support": "Not all places have almost everyone as a borrower, though Singapore and Eswatini exceed 1,000 per 1,000 adults.",
+        "method": "complete-surface-check",
+        "evidence": {}
+      },
+      {
+        "surface": "hook",
+        "text": "MORE LOANS THAN PEOPLE",
+        "isos": [],
+        "support": "Expressed as per 1,000 adults, not total loans vs total people.",
+        "method": "complete-surface-check",
+        "evidence": {}
+      },
+      {
+        "surface": "description",
+        "text": "A look at commercial bank borrower density worldwide, comparing high-credit nations like Turkey and China to the world's lowest in South Sudan.",
+        "isos": [
+          "TUR",
+          "CHN",
+          "SSD"
+        ],
+        "support": "Turkey and China are high-credit and South Sudan is the lowest in the universe.",
+        "method": "complete-surface-check",
+        "evidence": {
+          "TUR": {
+            "name": "Turkiye",
+            "value": 976.676808209618,
+            "display": "977",
+            "year": 2024,
+            "unit": "per 1,000 adults",
+            "rank": 3
+          },
+          "CHN": {
+            "name": "China",
+            "value": 662.055002910593,
+            "display": "662",
+            "year": 2024,
+            "unit": "per 1,000 adults",
+            "rank": 7
+          },
+          "SSD": {
+            "name": "South Sudan",
+            "value": 1.02490138905185,
+            "display": "1",
+            "year": 2024,
+            "unit": "per 1,000 adults",
+            "rank": 104
+          }
+        }
+      },
+      {
+        "surface": "beat_0",
+        "text": "In Singapore, the number of bank borrowers actually exceeds the total adult population.",
+        "isos": [
+          "SGP"
+        ],
+        "support": "Exceeds 1,000 per 1,000 adults, but phrasing implies total adult population count vs total borrower count.",
+        "method": "complete-surface-check",
+        "evidence": {
+          "SGP": {
+            "name": "Singapore",
+            "value": 1073.96066194501,
+            "display": "1,074",
+            "year": 2020,
+            "unit": "per 1,000 adults",
+            "rank": 1
+          }
+        }
+      },
+      {
+        "surface": "beat_1",
+        "text": "South Sudan is the world's lowest. Almost no one there has a formal bank loan.",
+        "isos": [
+          "SSD"
+        ],
+        "support": "South Sudan is rank 104 with 1 per 1,000 adults.",
+        "method": "complete-surface-check",
+        "evidence": {
+          "SSD": {
+            "name": "South Sudan",
+            "value": 1.02490138905185,
+            "display": "1",
+            "year": 2024,
+            "unit": "per 1,000 adults",
+            "rank": 104
+          }
+        }
+      },
+      {
+        "surface": "beat_2",
+        "text": "Turkey is one of the highest. 977. Almost every adult there is a borrower.",
+        "isos": [
+          "TUR"
+        ],
+        "support": "Turkey is rank 3 with 977 per 1,000 adults.",
+        "method": "complete-surface-check",
+        "evidence": {
+          "TUR": {
+            "name": "Turkiye",
+            "value": 976.676808209618,
+            "display": "977",
+            "year": 2024,
+            "unit": "per 1,000 adults",
+            "rank": 3
+          }
+        }
+      },
+      {
+        "surface": "beat_3",
+        "text": "It counts households and businesses that obtained loans from commercial banks.",
+        "isos": [],
+        "support": "Directly matches the provided indicator definition.",
+        "method": "complete-surface-check",
+        "evidence": {}
+      },
+      {
+        "surface": "beat_4",
+        "text": "Uruguay has 766. China has 662. Italy has 587.",
+        "isos": [
+          "URY",
+          "CHN",
+          "ITA"
+        ],
+        "support": "Uruguay is 766, China is 662, Italy is 587.",
+        "method": "complete-surface-check",
+        "evidence": {
+          "URY": {
+            "name": "Uruguay",
+            "value": 766.277447706607,
+            "display": "766",
+            "year": 2024,
+            "unit": "per 1,000 adults",
+            "rank": 5
+          },
+          "CHN": {
+            "name": "China",
+            "value": 662.055002910593,
+            "display": "662",
+            "year": 2024,
+            "unit": "per 1,000 adults",
+            "rank": 7
+          },
+          "ITA": {
+            "name": "Italy",
+            "value": 587.269312725826,
+            "display": "587",
+            "year": 2024,
+            "unit": "per 1,000 adults",
+            "rank": 9
+          }
+        }
+      },
+      {
+        "surface": "beat_5",
+        "text": "Turkey has 42 times the borrowers Pakistan has, where only 23 borrow.",
+        "isos": [
+          "TUR",
+          "PAK"
+        ],
+        "support": "Turkey has 976.68 and Pakistan has 23.34.",
+        "method": "complete-surface-check",
+        "evidence": {
+          "TUR": {
+            "name": "Turkiye",
+            "value": 976.676808209618,
+            "display": "977",
+            "year": 2024,
+            "unit": "per 1,000 adults",
+            "rank": 3
+          },
+          "PAK": {
+            "name": "Pakistan",
+            "value": 23.3403851354538,
+            "display": "23",
+            "year": 2024,
+            "unit": "per 1,000 adults",
+            "rank": 93
+          }
+        }
+      },
+      {
+        "surface": "beat_6",
+        "text": "In Singapore, the number of borrowers actually exceeds the total adult population.",
+        "isos": [
+          "SGP"
+        ],
+        "support": "Repeated statement from beat_0.",
+        "method": "complete-surface-check",
+        "evidence": {
+          "SGP": {
+            "name": "Singapore",
+            "value": 1073.96066194501,
+            "display": "1,074",
+            "year": 2020,
+            "unit": "per 1,000 adults",
+            "rank": 1
+          }
+        }
+      },
+      {
+        "surface": "beat_7",
+        "text": "Do you have a loan from a commercial bank?",
+        "isos": [],
+        "support": "General question aligned with indicator topic.",
+        "method": "complete-surface-check",
+        "evidence": {}
+      },
+      {
+        "surface": "card_7",
+        "text": [
+          "Got a loan?",
+          "Commercial Bank Borrowers"
+        ],
+        "isos": [],
+        "support": "Matches indicator title and subject.",
+        "method": "complete-surface-check",
+        "evidence": {}
+      }
+    ],
+    "surface_checks": {
+      "title": {
+        "supported": false,
+        "reason": "Not all places have almost everyone as a borrower, though Singapore and Eswatini exceed 1,000 per 1,000 adults.",
+        "isos": []
+      },
+      "hook": {
+        "supported": false,
+        "reason": "Expressed as per 1,000 adults, not total loans vs total people.",
+        "isos": []
+      },
+      "description": {
+        "supported": true,
+        "reason": "Turkey and China are high-credit and South Sudan is the lowest in the universe.",
+        "isos": [
+          "TUR",
+          "CHN",
+          "SSD"
+        ]
+      },
+      "beat_0": {
+        "supported": false,
+        "reason": "Exceeds 1,000 per 1,000 adults, but phrasing implies total adult population count vs total borrower count.",
+        "isos": [
+          "SGP"
+        ]
+      },
+      "beat_1": {
+        "supported": true,
+        "reason": "South Sudan is rank 104 with 1 per 1,000 adults.",
+        "isos": [
+          "SSD"
+        ]
+      },
+      "beat_2": {
+        "supported": true,
+        "reason": "Turkey is rank 3 with 977 per 1,000 adults.",
+        "isos": [
+          "TUR"
+        ]
+      },
+      "beat_3": {
+        "supported": true,
+        "reason": "Directly matches the provided indicator definition.",
+        "isos": []
+      },
+      "beat_4": {
+        "supported": true,
+        "reason": "Uruguay is 766, China is 662, Italy is 587.",
+        "isos": [
+          "URY",
+          "CHN",
+          "ITA"
+        ]
+      },
+      "beat_5": {
+        "supported": true,
+        "reason": "Turkey has 976.68 and Pakistan has 23.34.",
+        "isos": [
+          "TUR",
+          "PAK"
+        ]
+      },
+      "beat_6": {
+        "supported": false,
+        "reason": "Repeated statement from beat_0.",
+        "isos": [
+          "SGP"
+        ]
+      },
+      "beat_7": {
+        "supported": true,
+        "reason": "General question aligned with indicator topic.",
+        "isos": []
+      },
+      "card_7": {
+        "supported": true,
+        "reason": "Matches indicator title and subject.",
+        "isos": []
+      }
+    },
+    "warnings": [
+      {
+        "surface": "beat_2",
+        "claim": "Turkey is one of the highest. 977.",
+        "reason": "Turkey value is 976.68 (display 977) per 1,000 adults, not 'almost every adult there is a borrower' as an absolute 1-to-1 ratio.",
+        "severity": "style"
+      },
+      {
+        "surface": "beat_5",
+        "claim": "Turkey has 42 times the borrowers Pakistan has",
+        "reason": "Turkey (976.68) divided by Pakistan (23.34) is approximately 41.8 times, which rounds to 42, but the denominator is per 1,000 adults.",
+        "severity": "info"
+      }
+    ]
+  },
+  "script_sha256": "8439ddb28e6a74cacc7176b7072124b36598a8b6cedce7ea54617264beb60cd9",
+  "data_sha256": "47cf66fcb672e37511986dc327d276c9f053213d7c36274cbbd13f9ae88d8195",
+  "reviewer_model": "gemini-3.5-flash-lite"
+}

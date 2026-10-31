@@ -1,0 +1,29 @@
+{
+  "duration": 41.64,
+  "integrated_lufs": -14.5,
+  "true_peak_dbfs": -1.4,
+  "speech": {
+    "heard": "In Eswatini, commercial bank borrowers outnumber the entire adult population. Eswatini hits 1,057, households and non-financial corporations obtain loans from commercial banks. Turkey sits at 977, and Brazil hits 768. Nigeria drops to 31, where credit is far less common. China hits 662, while Indonesia rests at 359. At the very bottom, South Sudan falls to just one, the world's lowest. A Swatini hits 1,057, towering far above South Sudan. How many adults in your country hold a bank loan?",
+    "model": "small.en",
+    "media_sha256": "02cbcc8794bd170f62b89c370f14d75ba6b7575071dc3ddc682566ecdf1e547f",
+    "primary_differences": [
+      "'eswatini' heard as 'a swatini' after 'world is lowest'"
+    ],
+    "differences": [
+      "'eswatini' heard as 'a swatini' after 'world is lowest'",
+      "base.en: 'eswatini' heard as 'eswetini' after 'in'",
+      "base.en: 'eswatini' heard as 'eswetini' after 'entire adult population'",
+      "base.en: 'eswatini' heard as 'a swatini' after 'world is lowest'"
+    ],
+    "corroboration": {
+      "model": "base.en",
+      "heard": "In Eswetini, commercial bank borrowers outnumber the entire adult population. Eswetini hits 1057, households and non-financial corporations obtain loans from commercial banks. Turkey sits at 977 and Brazil hits 768. Nigeria drops to 31, where credit is far less common. China hits 662, while Indonesia rests at 359. At the very bottom, South Sudan falls to just one, the world's lowest. A Swatini hits 1057, towering far above South Sudan. How many adults in your country hold a bank loan?",
+      "differences": [
+        "'eswatini' heard as 'eswetini' after 'in'",
+        "'eswatini' heard as 'eswetini' after 'entire adult population'",
+        "'eswatini' heard as 'a swatini' after 'world is lowest'"
+      ],
+      "resolved": []
+    }
+  }
+}
