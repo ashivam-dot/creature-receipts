@@ -4815,7 +4815,397 @@
    "source_url": "https://data.worldbank.org/indicator/SL.EMP.WORK.ZS",
    "status": "ready:atlas119",
    "added_by": "refill"
+  },
+  {
+   "id": "t135",
+   "topic": "Income Share of the Poorest 20%",
+   "angle": "India leads the world with the poorest fifth of its population holding over 11% of national income.",
+   "format": "rank_ladder",
+   "dataset": {
+    "kind": "worldbank",
+    "indicator": "SI.DST.FRST.20",
+    "label": "Income share of the bottom 20%",
+    "unit": "%",
+    "source": "World Bank",
+    "min_year": 2019
+   },
+   "scale": {
+    "kind": "bins",
+    "edges": [
+     5.0,
+     6.5,
+     8.0,
+     9.5
+    ],
+    "labels": [
+     "Under 5.0%",
+     "5.0% - 6.5%",
+     "6.5% - 8.0%",
+     "8.0% - 9.5%",
+     "Over 9.5%"
+    ]
+   },
+   "value_format": "{v:.1f}%",
+   "hashtags": [
+    "#maps",
+    "#geography",
+    "#wealth"
+   ],
+   "source_url": "https://data.worldbank.org/indicator/SI.DST.FRST.20",
+   "status": "open",
+   "added_by": "refill"
+  },
+  {
+   "id": "t136",
+   "topic": "Individual Greenhouse Gas Emissions",
+   "angle": "Palau's per capita greenhouse gas emissions are nearly double those of Qatar, the world's second-highest emitter.",
+   "format": "map_reveal",
+   "dataset": {
+    "kind": "worldbank",
+    "indicator": "EN.GHG.ALL.PC.CE.AR5",
+    "label": "Greenhouse gas emissions per capita",
+    "unit": "t CO2e",
+    "source": "World Bank",
+    "min_year": 2019
+   },
+   "scale": {
+    "kind": "bins",
+    "edges": [
+     2,
+     5,
+     10,
+     25
+    ],
+    "labels": [
+     "Minimal",
+     "Low",
+     "Moderate",
+     "High",
+     "Extreme"
+    ]
+   },
+   "value_format": "{v:.1f} t",
+   "hashtags": [
+    "#maps",
+    "#environment",
+    "#climatechange"
+   ],
+   "source_url": "https://data.worldbank.org/indicator/EN.GHG.ALL.PC.CE.AR5",
+   "status": "open",
+   "added_by": "refill"
+  },
+  {
+   "id": "t137",
+   "topic": "Female Enrollment in Higher Education",
+   "angle": "In countries like Greece and Argentina, the number of women enrolled in university is significantly higher than the total population of college-aged women.",
+   "format": "map_reveal",
+   "dataset": {
+    "kind": "worldbank",
+    "indicator": "SE.TER.ENRR.FE",
+    "label": "Female tertiary enrollment ratio",
+    "unit": "%",
+    "source": "World Bank",
+    "min_year": 2019
+   },
+   "scale": {
+    "kind": "bins",
+    "edges": [
+     25,
+     50,
+     75,
+     100
+    ],
+    "labels": [
+     "Under 25%",
+     "25% to 50%",
+     "50% to 75%",
+     "75% to 100%",
+     "Over 100%"
+    ]
+   },
+   "value_format": "{v:.0f}%",
+   "hashtags": [
+    "#maps",
+    "#geography",
+    "#education"
+   ],
+   "source_url": "https://data.worldbank.org/indicator/SE.TER.ENRR.FE",
+   "status": "open",
+   "added_by": "refill"
+  },
+  {
+   "id": "t138",
+   "topic": "Global Access to Safe Drinking Water",
+   "angle": "In parts of Central Africa, fewer than 7% of people have access to drinking water that is safe and available when needed.",
+   "format": "rank_ladder",
+   "dataset": {
+    "kind": "worldbank",
+    "indicator": "SH.H2O.SMDW.ZS",
+    "label": "Population with safe drinking water",
+    "unit": "%",
+    "source": "World Bank",
+    "min_year": 2019
+   },
+   "scale": {
+    "kind": "bins",
+    "edges": [
+     25,
+     50,
+     75,
+     95
+    ],
+    "labels": [
+     "Under 25%",
+     "25-50%",
+     "50-75%",
+     "75-95%",
+     "Over 95%"
+    ]
+   },
+   "value_format": "{v:.1f}%",
+   "hashtags": [
+    "#maps",
+    "#geography",
+    "#water"
+   ],
+   "source_url": "https://data.worldbank.org/indicator/SH.H2O.SMDW.ZS",
+   "status": "open",
+   "added_by": "refill"
+  },
+  {
+   "id": "t139",
+   "topic": "Male Share of Global Population",
+   "angle": "In several Gulf nations, the male population exceeds 60% of the total, more than twenty points above the global median.",
+   "format": "map_reveal",
+   "dataset": {
+    "kind": "worldbank",
+    "indicator": "SP.POP.TOTL.MA.ZS",
+    "label": "Male percentage of total population",
+    "unit": "%",
+    "source": "World Bank",
+    "min_year": 2019
+   },
+   "scale": {
+    "kind": "bins",
+    "edges": [
+     48,
+     50,
+     52,
+     60
+    ],
+    "labels": [
+     "<48%",
+     "48-50%",
+     "50-52%",
+     "52-60%",
+     ">60%"
+    ]
+   },
+   "value_format": "{v:.1f}%",
+   "hashtags": [
+    "#maps",
+    "#geography",
+    "#demographics"
+   ],
+   "source_url": "https://data.worldbank.org/indicator/SP.POP.TOTL.MA.ZS",
+   "status": "open",
+   "added_by": "refill"
+  },
+  {
+   "id": "t140",
+   "topic": "Global Gross Savings Rates",
+   "angle": "While Qatar saves nearly 60% of its national income, several countries have negative savings rates, meaning their total consumption exceeds their income.",
+   "format": "map_reveal",
+   "dataset": {
+    "kind": "worldbank",
+    "indicator": "NY.GNS.ICTR.GN.ZS",
+    "label": "Gross savings as a percentage of GNI",
+    "unit": "%",
+    "source": "World Bank",
+    "min_year": 2019
+   },
+   "scale": {
+    "kind": "bins",
+    "edges": [
+     10,
+     20,
+     30,
+     40
+    ],
+    "labels": [
+     "Under 10%",
+     "10-20%",
+     "20-30%",
+     "30-40%",
+     "Over 40%"
+    ]
+   },
+   "value_format": "{v:.1f}%",
+   "hashtags": [
+    "#maps",
+    "#geography",
+    "#economics"
+   ],
+   "source_url": "https://data.worldbank.org/indicator/NY.GNS.ICTR.GN.ZS",
+   "status": "open",
+   "added_by": "refill"
+  },
+  {
+   "id": "t141",
+   "topic": "Men Working Part-Time Jobs",
+   "angle": "In several countries like Malawi and Ethiopia, more than half of the male workforce works fewer than 35 hours per week.",
+   "format": "rank_ladder",
+   "dataset": {
+    "kind": "worldbank",
+    "indicator": "SL.TLF.PART.MA.ZS",
+    "label": "Share of men in part-time work",
+    "unit": "%",
+    "source": "World Bank",
+    "min_year": 2019
+   },
+   "scale": {
+    "kind": "bins",
+    "edges": [
+     10,
+     20,
+     30,
+     45
+    ],
+    "labels": [
+     "<10%",
+     "10-20%",
+     "20-30%",
+     "30-45%",
+     ">45%"
+    ]
+   },
+   "value_format": "{v:.1f}%",
+   "hashtags": [
+    "#maps",
+    "#geography",
+    "#workforce"
+   ],
+   "source_url": "https://data.worldbank.org/indicator/SL.TLF.PART.MA.ZS",
+   "status": "open",
+   "added_by": "refill"
+  },
+  {
+   "id": "t142",
+   "topic": "Global Access to Basic Sanitation",
+   "angle": "While the global median access stands at 93%, fewer than 11% of people in Ethiopia have access to a private, improved toilet.",
+   "format": "map_reveal",
+   "dataset": {
+    "kind": "worldbank",
+    "indicator": "SH.STA.BASS.ZS",
+    "label": "People using basic sanitation services",
+    "unit": "%",
+    "source": "World Bank",
+    "min_year": 2019
+   },
+   "scale": {
+    "kind": "bins",
+    "edges": [
+     35,
+     65,
+     85,
+     95
+    ],
+    "labels": [
+     "Critical (<35%)",
+     "Low (35-65%)",
+     "Moderate (65-85%)",
+     "High (85-95%)",
+     "Universal (>95%)"
+    ]
+   },
+   "value_format": "{v:.1f}%",
+   "hashtags": [
+    "#maps",
+    "#geography",
+    "#health"
+   ],
+   "source_url": "https://data.worldbank.org/indicator/SH.STA.BASS.ZS",
+   "status": "open",
+   "added_by": "refill"
+  },
+  {
+   "id": "t143",
+   "topic": "Global Youth Literacy Rates",
+   "angle": "While the global median for youth literacy is over 97%, in countries like Chad and Mali, fewer than half of young people can read and write.",
+   "format": "map_reveal",
+   "dataset": {
+    "kind": "worldbank",
+    "indicator": "SE.ADT.1524.LT.ZS",
+    "label": "Literacy rate among 15-24 year olds",
+    "unit": "%",
+    "source": "World Bank",
+    "min_year": 2019
+   },
+   "scale": {
+    "kind": "bins",
+    "edges": [
+     71.2,
+     90.4,
+     97.2,
+     99.5
+    ],
+    "labels": [
+     "Below 71%",
+     "71-90%",
+     "90-97%",
+     "97-99.5%",
+     "Above 99.5%"
+    ]
+   },
+   "value_format": "{v:.1f}%",
+   "hashtags": [
+    "#maps",
+    "#geography",
+    "#education"
+   ],
+   "source_url": "https://data.worldbank.org/indicator/SE.ADT.1524.LT.ZS",
+   "status": "open",
+   "added_by": "refill"
+  },
+  {
+   "id": "t144",
+   "topic": "National Consumption Spending Relative to GDP",
+   "angle": "In several nations, total consumption spending actually exceeds the entire value of their annual economic output.",
+   "format": "rank_ladder",
+   "dataset": {
+    "kind": "worldbank",
+    "indicator": "NE.CON.TOTL.ZS",
+    "label": "Final consumption expenditure (% of GDP)",
+    "unit": "%",
+    "source": "World Bank",
+    "min_year": 2019
+   },
+   "scale": {
+    "kind": "bins",
+    "edges": [
+     65,
+     80,
+     95,
+     110
+    ],
+    "labels": [
+     "Low (<65%)",
+     "Moderate (65-80%)",
+     "High (80-95%)",
+     "Very High (95-110%)",
+     "Extreme (>110%)"
+    ]
+   },
+   "value_format": "{v:.1f}%",
+   "hashtags": [
+    "#maps",
+    "#geography",
+    "#economy"
+   ],
+   "source_url": "https://data.worldbank.org/indicator/NE.CON.TOTL.ZS",
+   "status": "open",
+   "added_by": "refill"
   }
  ],
- "refilled_at": "2026-10-27T09:13:00+00:00"
+ "refilled_at": "2026-10-31T17:10:12+00:00"
 }
