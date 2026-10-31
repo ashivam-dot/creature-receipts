@@ -1,0 +1,25 @@
+{
+  "version": 1,
+  "passed": true,
+  "checked_at": "2026-10-31T09:25:27.566779+00:00",
+  "quality_module_sha256": "db7be8ac57c839f39a10676f1a70580a83ea346f59c27f19868d09c272def14c",
+  "media_sha256": "06d4e4e9efbcf29f5a3a4b28f979476d0f97753a35dc6b7189a33f57956f3af8",
+  "script_sha256": "7fbd9729a5195316408a62f1471264894aa7c65d88b4b000b5bf55068aac508a",
+  "data_sha256": "9bb86fbb0bca3a371a7dc272d9591727e2b17d4494ce87356f2ceddd234a2075",
+  "claims_sha256": "ced818c0e0fef5f2a6e891eb629b295296cc06519a9e8da3515c2459e40c36f9",
+  "contact_sha256": "dd8d78d78b06f351fa3ddfca31678671450231e989418e3c810b12128f669095",
+  "duration": 46.02,
+  "integrated_lufs": -14.1,
+  "true_peak_dbfs": -1.4,
+  "speech": {
+    "heard": "Qatar has 99.2% wage and salaried workers. In Chad, it is 8.4%. Qatar is the world's highest. Almost every worker there has a formal employment contract. Chad is the world's lowest. Most work for themselves without a steady, basic pay. Side by side, Qatar has 12 times the share of paid employees in Chad. These workers hold contracts for a basic pay that does not depend on business revenue. Brazil has 69.7%, China has 62.3%, Nigeria has 13.8%, Madagascar has 11.7%, and Niger 10.5%. Do you have a formal employment contract?",
+    "model": "small.en",
+    "media_sha256": "06d4e4e9efbcf29f5a3a4b28f979476d0f97753a35dc6b7189a33f57956f3af8",
+    "primary_differences": [],
+    "differences": []
+  },
+  "warnings": [
+    "duration 46.0s outside editorial 30–45s target"
+  ],
+  "speech_policy": "material-hard-entity-polarity-strict-minor-spelling-warning"
+}

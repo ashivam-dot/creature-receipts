@@ -1,0 +1,82 @@
+id: atlas119
+title: 'Qatar vs Chad: The Global Paid Employment Gap'
+format: versus
+hook_text: FORMAL JOBS
+description: A cinematic look at the global gap in wage and salaried workers, comparing nations like Qatar and Chad.
+hashtags:
+- '#economy'
+- '#employment'
+- '#geography'
+tags:
+- wealth
+- wage and salaried workers
+- countries ranked by wage and salaried workers
+- Qatar
+- Chad
+- world map
+- geography
+- atlas in numbers
+sources:
+- https://data.worldbank.org/indicator/SL.EMP.WORK.ZS
+dataset:
+  kind: worldbank
+  indicator: SL.EMP.WORK.ZS
+  label: Wage and salaried workers
+  unit: '%'
+  source: World Bank
+  min_year: 2019
+scale:
+  edges:
+  - 25.0
+  - 50.0
+  - 75.0
+  - 90.0
+  labels:
+  - Under 25%
+  - 25-50%
+  - 50-75%
+  - 75-90%
+  - Over 90%
+value_format: '{v:.1f}%'
+beats:
+- text: Qatar has 99.2 percent wage and salaried workers. In Chad, it is 8.4 percent.
+  shot:
+    callouts:
+    - QAT
+    - TCD
+- text: Qatar is the world's highest. Almost every worker there has a formal employment contract.
+  shot:
+    kind: country
+    iso: QAT
+- text: Chad is the world's lowest. Most work for themselves without a steady, basic pay.
+  shot:
+    kind: country
+    iso: TCD
+- text: Side by side, Qatar has 12 times the share of paid employees in Chad.
+  shot:
+    kind: group
+    isos:
+    - QAT
+    - TCD
+- text: These workers hold contracts for a basic pay that does not depend on business revenue.
+  basis: employment contracts that give them a basic remuneration that is not directly dependent upon the revenue
+    of the unit for which they work
+- text: Brazil has 69.7 percent. China has 62.3 percent.
+  shot:
+    kind: group
+    isos:
+    - BRA
+    - CHN
+- text: Nigeria has 13.8 percent, Madagascar has 11.7 percent, and Niger 10.5 percent.
+  shot:
+    kind: rank
+    isos:
+    - NGA
+    - MDG
+    - NER
+- text: Do you have a formal employment contract?
+  shot:
+    kind: card
+    lines:
+    - FORMAL CONTRACT?
+    - Wage and salaried workers (%)

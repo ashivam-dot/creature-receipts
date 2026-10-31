@@ -1,0 +1,185 @@
+{
+  "errors": [],
+  "claims": [
+    {
+      "surface": "title",
+      "text": "Qatar vs Chad: The Global Paid Employment Gap",
+      "isos": [
+        "QAT",
+        "TCD"
+      ],
+      "support": "Qatar value is 99.1678180696403, Chad value is 8.43893405146016"
+    },
+    {
+      "surface": "hook",
+      "text": "FORMAL JOBS",
+      "isos": [],
+      "support": "Indicator SL.EMP.WORK.ZS measures wage and salaried workers (employees)"
+    },
+    {
+      "surface": "description",
+      "text": "A cinematic look at the global gap in wage and salaried workers, comparing nations like Qatar and Chad.",
+      "isos": [
+        "QAT",
+        "TCD"
+      ],
+      "support": "Qatar and Chad are both present in the evidence dataset with values 99.2% and 8.4%"
+    },
+    {
+      "surface": "beat_0",
+      "text": "Qatar has 99.2 percent wage and salaried workers. In Chad, it is 8.4 percent.",
+      "isos": [
+        "QAT",
+        "TCD"
+      ],
+      "support": "Qatar display is 99.2% (rank 1), Chad display is 8.4% (rank 184)"
+    },
+    {
+      "surface": "beat_1",
+      "text": "Qatar is the world's highest. Almost every worker there has a formal employment contract.",
+      "isos": [
+        "QAT"
+      ],
+      "support": "Qatar rank is 1 (highest among 184 entities), value 99.2%"
+    },
+    {
+      "surface": "beat_2",
+      "text": "Chad is the world's lowest. Most work for themselves without a steady, basic pay.",
+      "isos": [
+        "TCD"
+      ],
+      "support": "Chad rank is 184 (lowest among 184 entities), value 8.4%"
+    },
+    {
+      "surface": "beat_3",
+      "text": "Side by side, Qatar has 12 times the share of paid employees in Chad.",
+      "isos": [
+        "QAT",
+        "TCD"
+      ],
+      "support": "99.1678 / 8.4389 = 11.75, which rounds to 12 times"
+    },
+    {
+      "surface": "beat_4",
+      "text": "These workers hold contracts for a basic pay that does not depend on business revenue.",
+      "isos": [],
+      "support": "Definition matches: Wage and salaried workers hold employment contracts that give them a basic remuneration that is not directly dependent upon the revenue of the unit for which they work"
+    },
+    {
+      "surface": "beat_5",
+      "text": "Brazil has 69.7 percent. China has 62.3 percent.",
+      "isos": [
+        "BRA",
+        "CHN"
+      ],
+      "support": "Brazil display is 69.7%, China display is 62.3%"
+    },
+    {
+      "surface": "beat_6",
+      "text": "Nigeria has 13.8 percent, Madagascar has 11.7 percent, and Niger 10.5 percent.",
+      "isos": [
+        "NGA",
+        "MDG",
+        "NER"
+      ],
+      "support": "Nigeria display is 13.8%, Madagascar display is 11.7%, Niger display is 10.5%"
+    },
+    {
+      "surface": "beat_7",
+      "text": "Do you have a formal employment contract?",
+      "isos": [],
+      "support": "Ordinary loop/engagement question matching indicator context"
+    },
+    {
+      "surface": "card_7",
+      "text": "FORMAL CONTRACT? Wage and salaried workers (%)",
+      "isos": [],
+      "support": "Matches indicator definition and topic"
+    }
+  ],
+  "surface_checks": {
+    "title": {
+      "supported": true,
+      "reason": "Qatar and Chad are compared accurately based on their dataset values.",
+      "isos": [
+        "QAT",
+        "TCD"
+      ]
+    },
+    "hook": {
+      "supported": true,
+      "reason": "Accurately reflects the wage and salaried workers indicator theme.",
+      "isos": []
+    },
+    "description": {
+      "supported": true,
+      "reason": "Correctly summarizes the video content comparing Qatar and Chad.",
+      "isos": [
+        "QAT",
+        "TCD"
+      ]
+    },
+    "beat_0": {
+      "supported": true,
+      "reason": "Qatar (99.2%) and Chad (8.4%) figures match the evidence exactly.",
+      "isos": [
+        "QAT",
+        "TCD"
+      ]
+    },
+    "beat_1": {
+      "supported": true,
+      "reason": "Qatar is ranked 1st out of 184 in the evidence.",
+      "isos": [
+        "QAT"
+      ]
+    },
+    "beat_2": {
+      "supported": true,
+      "reason": "Chad is ranked 184th (lowest) out of 184 in the evidence.",
+      "isos": [
+        "TCD"
+      ]
+    },
+    "beat_3": {
+      "supported": true,
+      "reason": "The 12x ratio is mathematically supported by the values.",
+      "isos": [
+        "QAT",
+        "TCD"
+      ]
+    },
+    "beat_4": {
+      "supported": true,
+      "reason": "Directly paraphrases the official definition provided in the evidence.",
+      "isos": []
+    },
+    "beat_5": {
+      "supported": true,
+      "reason": "Brazil (69.7%) and China (62.3%) values match the evidence.",
+      "isos": [
+        "BRA",
+        "CHN"
+      ]
+    },
+    "beat_6": {
+      "supported": true,
+      "reason": "Nigeria (13.8%), Madagascar (11.7%), and Niger (10.5%) values match the evidence.",
+      "isos": [
+        "NGA",
+        "MDG",
+        "NER"
+      ]
+    },
+    "beat_7": {
+      "supported": true,
+      "reason": "Valid engagement question matching the topic.",
+      "isos": []
+    },
+    "card_7": {
+      "supported": true,
+      "reason": "Card text matches the indicator metadata.",
+      "isos": []
+    }
+  }
+}
