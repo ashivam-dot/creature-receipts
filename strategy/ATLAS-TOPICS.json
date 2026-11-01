@@ -3850,7 +3850,7 @@
     "#education"
    ],
    "source_url": "https://data.worldbank.org/indicator/SE.TER.CUAT.BA.ZS",
-   "status": "ready:atlas114",
+   "status": "used:atlas114",
    "added_by": "refill"
   },
   {
@@ -3889,7 +3889,7 @@
     "#economy"
    ],
    "source_url": "https://data.worldbank.org/indicator/NV.SRV.TOTL.ZS",
-   "status": "ready:atlas113",
+   "status": "used:atlas113",
    "added_by": "refill"
   },
   {
@@ -4469,7 +4469,7 @@
    "id": "t126",
    "topic": "Taxes on Income and Profits",
    "angle": "The United States relies on income and profit taxes for 93% of its tax revenue, the highest share of any country.",
-   "format": "rank_ladder",
+   "format": "versus",
    "dataset": {
     "kind": "worldbank",
     "indicator": "GC.TAX.YPKG.ZS",
@@ -4501,7 +4501,7 @@
     "#economics"
    ],
    "source_url": "https://data.worldbank.org/indicator/GC.TAX.YPKG.ZS",
-   "status": "open",
+   "status": "ready:atlas122",
    "added_by": "refill"
   },
   {
@@ -4618,7 +4618,7 @@
     "#finance"
    ],
    "source_url": "https://data.worldbank.org/indicator/FX.OWN.TOTL.YG.ZS",
-   "status": "ready:atlas112",
+   "status": "used:atlas112",
    "added_by": "refill"
   },
   {
@@ -4813,7 +4813,7 @@
     "#employment"
    ],
    "source_url": "https://data.worldbank.org/indicator/SL.EMP.WORK.ZS",
-   "status": "ready:atlas119",
+   "status": "used:atlas119",
    "added_by": "refill"
   },
   {
@@ -4937,7 +4937,7 @@
    "id": "t138",
    "topic": "Global Access to Safe Drinking Water",
    "angle": "In parts of Central Africa, fewer than 7% of people have access to drinking water that is safe and available when needed.",
-   "format": "rank_ladder",
+   "format": "spotlight",
    "dataset": {
     "kind": "worldbank",
     "indicator": "SH.H2O.SMDW.ZS",
@@ -4969,7 +4969,7 @@
     "#water"
    ],
    "source_url": "https://data.worldbank.org/indicator/SH.H2O.SMDW.ZS",
-   "status": "open",
+   "status": "ready:atlas120",
    "added_by": "refill"
   },
   {
@@ -5008,7 +5008,7 @@
     "#demographics"
    ],
    "source_url": "https://data.worldbank.org/indicator/SP.POP.TOTL.MA.ZS",
-   "status": "open",
+   "status": "ready:atlas121",
    "added_by": "refill"
   },
   {
@@ -5093,7 +5093,7 @@
    "id": "t142",
    "topic": "Global Access to Basic Sanitation",
    "angle": "While the global median access stands at 93%, fewer than 11% of people in Ethiopia have access to a private, improved toilet.",
-   "format": "map_reveal",
+   "format": "rank_ladder",
    "dataset": {
     "kind": "worldbank",
     "indicator": "SH.STA.BASS.ZS",
@@ -5125,7 +5125,7 @@
     "#health"
    ],
    "source_url": "https://data.worldbank.org/indicator/SH.STA.BASS.ZS",
-   "status": "open",
+   "status": "ready:atlas123",
    "added_by": "refill"
   },
   {

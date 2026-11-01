@@ -1,0 +1,76 @@
+id: atlas122
+title: 'USA vs Russia: How Much Tax Revenue Comes From Income?'
+format: versus
+hook_text: INCOME TAX GAP
+description: The United States relies on income and profit taxes for 93% of its tax revenue, while Russia gets just
+  14.4% from income taxes.
+hashtags:
+- '#economy'
+- '#economics'
+- '#geography'
+tags:
+- wealth
+- share of total taxes from income
+- countries ranked by share of total taxes from income
+- United States
+- Belarus
+- world map
+- geography
+- atlas in numbers
+sources:
+- https://data.worldbank.org/indicator/GC.TAX.YPKG.ZS
+dataset:
+  kind: worldbank
+  indicator: GC.TAX.YPKG.ZS
+  label: Share of total taxes from income
+  unit: '%'
+  source: World Bank
+  min_year: 2019
+scale:
+  edges:
+  - 20.0
+  - 40.0
+  - 60.0
+  - 80.0
+  labels:
+  - <20%
+  - 20-40%
+  - 40-60%
+  - 60-80%
+  - '>80%'
+value_format: '{v:.1f}%'
+beats:
+- text: The United States gets 93% of tax revenue from income, while Russia gets 14.4%.
+  shot:
+    callouts:
+    - USA
+    - RUS
+- text: That total counts taxes payable on actual or presumed incomes, profits, and capital gains.
+  shot:
+    kind: country
+    iso: USA
+  basis: taxes payable on the actual or presumed incomes, profits and capital gains
+- text: Side by side, America relies heavily on income, getting 6.5 times the share Russia collects.
+  shot:
+    kind: group
+    isos:
+    - USA
+    - RUS
+- text: Across the globe, the median country gets 38% of tax revenue from income, with China close by at 37.2%.
+  shot:
+    callouts:
+    - CHN
+- text: Canada takes 78.5% and Australia 76.6%, while the UK takes 52.6% and Germany 45.2%.
+  shot:
+    kind: rank
+    isos:
+    - CAN
+    - AUS
+    - GBR
+    - DEU
+- text: How much of your country's tax revenue comes from income?
+  shot:
+    kind: card
+    lines:
+    - Income Tax Reliance
+    - Share of Total Taxes from Income

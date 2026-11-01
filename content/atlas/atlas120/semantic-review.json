@@ -1,0 +1,129 @@
+{
+  "errors": [],
+  "claims": [
+    {
+      "surface": "beat_0",
+      "text": "In the USA, 97.6% of people have safe drinking water.",
+      "isos": [
+        "USA"
+      ],
+      "support": "United States: 97.6%"
+    },
+    {
+      "surface": "beat_0",
+      "text": "In Chad, just 6.3%.",
+      "isos": [
+        "TCD"
+      ],
+      "support": "Chad: 6.3%"
+    },
+    {
+      "surface": "beat_1",
+      "text": "Central African Republic has 6.2%, the world's lowest, far below the USA.",
+      "isos": [
+        "CAF",
+        "USA"
+      ],
+      "support": "Central African Republic: 6.2%, rank 145"
+    },
+    {
+      "surface": "beat_2",
+      "text": "To count as safe, water must be accessible on premises, available when needed and free from fecal and priority chemical contamination.",
+      "isos": [],
+      "support": "The percentage of people using drinking water from an improved source that is accessible on premises, available when needed and free from fecal and priority chemical contamination."
+    },
+    {
+      "surface": "beat_3",
+      "text": "Ranked above the USA, Hungary has 100%, Germany has 99.9%, and the UK has 99.8%.",
+      "isos": [
+        "HUN",
+        "DEU",
+        "GBR",
+        "USA"
+      ],
+      "support": "Hungary: 100%, Germany: 99.9%, United Kingdom: 99.8%, United States: 97.6%"
+    },
+    {
+      "surface": "beat_4",
+      "text": "Trailing behind the USA, India has 76.4%, while Nigeria has 29.9%.",
+      "isos": [
+        "USA",
+        "IND",
+        "NGA"
+      ],
+      "support": "United States: 97.6%, India: 76.4%, Nigeria: 29.9%"
+    }
+  ],
+  "surface_checks": {
+    "title": {
+      "supported": true,
+      "reason": "Title is framing/style and mentions the USA.",
+      "isos": [
+        "USA"
+      ]
+    },
+    "hook": {
+      "supported": true,
+      "reason": "Hook is a stylistic label.",
+      "isos": []
+    },
+    "description": {
+      "supported": true,
+      "reason": "Accurately references Hungary, USA, and Central Africa.",
+      "isos": [
+        "HUN",
+        "USA",
+        "CAF"
+      ]
+    },
+    "beat_0": {
+      "supported": true,
+      "reason": "Matches values for USA and Chad in the dataset.",
+      "isos": [
+        "USA",
+        "TCD"
+      ]
+    },
+    "beat_1": {
+      "supported": true,
+      "reason": "Matches Central African Republic value and rank as lowest.",
+      "isos": [
+        "CAF"
+      ]
+    },
+    "beat_2": {
+      "supported": true,
+      "reason": "Directly quotes the provided indicator definition.",
+      "isos": []
+    },
+    "beat_3": {
+      "supported": true,
+      "reason": "Accurately reflects values and relative rankings for Hungary, Germany, UK, and USA.",
+      "isos": [
+        "HUN",
+        "DEU",
+        "GBR",
+        "USA"
+      ]
+    },
+    "beat_4": {
+      "supported": true,
+      "reason": "Accurately reflects values trailing behind the USA for India and Nigeria.",
+      "isos": [
+        "USA",
+        "IND",
+        "NGA"
+      ]
+    },
+    "beat_5": {
+      "supported": true,
+      "reason": "Stylistic question.",
+      "isos": []
+    },
+    "card_5": {
+      "supported": true,
+      "reason": "Accurately displays card text matching the visual plan.",
+      "isos": []
+    }
+  }
+}

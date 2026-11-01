@@ -1,0 +1,76 @@
+id: atlas120
+title: How Does the USA Compare on Safe Drinking Water?
+format: spotlight
+hook_text: CLEAN WATER DIVIDE
+description: Comparing access to safely managed drinking water around the world, from Hungary and the USA to Central
+  Africa.
+hashtags:
+- '#health'
+- '#water'
+- '#geography'
+tags:
+- health
+- population with safe drinking water
+- countries ranked by population with safe drinking water
+- New Zealand
+- Central African Republic
+- world map
+- geography
+- atlas in numbers
+sources:
+- https://data.worldbank.org/indicator/SH.H2O.SMDW.ZS
+dataset:
+  kind: worldbank
+  indicator: SH.H2O.SMDW.ZS
+  label: Population with safe drinking water
+  unit: '%'
+  source: World Bank
+  min_year: 2019
+scale:
+  edges:
+  - 25.0
+  - 50.0
+  - 75.0
+  - 95.0
+  labels:
+  - Under 25%
+  - 25-50%
+  - 50-75%
+  - 75-95%
+  - Over 95%
+value_format: '{v:.1f}%'
+beats:
+- text: In the USA, 97.6% of people have safe drinking water. In Chad, just 6.3%.
+  shot:
+    callouts:
+    - USA
+    - TCD
+- text: Central African Republic has 6.2%, the world's lowest, far below the USA.
+  shot:
+    kind: country
+    iso: CAF
+- text: To count as safe, water must be accessible on premises, available when needed and free from fecal and priority
+    chemical contamination.
+  shot:
+    kind: country
+    iso: CAF
+  basis: accessible on premises, available when needed and free from fecal and priority chemical contamination
+- text: Ranked above the USA, Hungary has 100%, Germany has 99.9%, and the UK has 99.8%.
+  shot:
+    kind: rank
+    isos:
+    - HUN
+    - DEU
+    - GBR
+- text: Trailing behind the USA, India has 76.4%, while Nigeria has 29.9%.
+  shot:
+    kind: group
+    isos:
+    - IND
+    - NGA
+- text: Does safe drinking water flow straight from your tap?
+  shot:
+    kind: card
+    lines:
+    - Is your tap safe?
+    - Safe Drinking Water Access (%)

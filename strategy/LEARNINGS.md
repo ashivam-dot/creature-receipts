@@ -38,63 +38,65 @@ Refreshed by every producer run (`atlas.stats`) from the channel's public feed o
 
 | Short | Topic | Published | Views | Likes | Views per hour |
 |---|---|---|---|---|---|
-| atlas001 137 Places Have More Mobile Subscriptions Than People | map_reveal | 2026-10-08 16:01 UTC | 1326 | 17 | 2.5 |
-| atlas002 45 places with Falling Populations | map_reveal | 2026-10-09 16:02 UTC | 978 | 15 | 1.9 |
+| atlas001 137 Places Have More Mobile Subscriptions Than People | map_reveal | 2026-10-08 16:01 UTC | 1326 | 17 | 2.4 |
+| atlas002 45 places with Falling Populations | map_reveal | 2026-10-09 16:02 UTC | 978 | 15 | 1.8 |
 | atlas003 Below the fertility benchmark in 2024 | rank_ladder | 2026-10-08 20:01 UTC | 132 | 2 | 0.2 |
 | atlas004 47 places Where Life Expectancy Reaches 80 | map_reveal | 2026-10-08 23:01 UTC | 164 | 2 | 0.3 |
 | atlas011 Money Sent Home Equals 58% of GDP in Tajikistan | map_reveal | 2026-10-10 16:01 UTC | 149 | 1 | 0.3 |
-| atlas014 Finland Rates Life at 7.8 out of 10 | rank_ladder | 2026-10-10 23:00 UTC | 1043 | 9 | 2.2 |
-| atlas016 How Many Calories Each Country Has On Its Plate | map_reveal | 2026-10-10 20:00 UTC | 1135 | 16 | 2.3 |
-| atlas017 The Youngest and Oldest places on Earth | map_reveal | 2026-10-11 16:01 UTC | 1339 | 21 | 2.9 |
-| atlas019 The Emptiest and Most Crowded places | map_reveal | 2026-10-11 20:00 UTC | 1768 | 20 | 3.8 |
-| atlas021 Cuba has 9.5 doctors while Niger has 0.0 | rank_ladder | 2026-10-11 23:00 UTC | 1048 | 14 | 2.3 |
+| atlas014 Finland Rates Life at 7.8 out of 10 | rank_ladder | 2026-10-10 23:00 UTC | 1043 | 9 | 2.1 |
+| atlas016 How Many Calories Each Country Has On Its Plate | map_reveal | 2026-10-10 20:00 UTC | 1135 | 16 | 2.2 |
+| atlas017 The Youngest and Oldest places on Earth | map_reveal | 2026-10-11 16:01 UTC | 1339 | 21 | 2.7 |
+| atlas019 The Emptiest and Most Crowded places | map_reveal | 2026-10-11 20:00 UTC | 1768 | 20 | 3.6 |
+| atlas021 Cuba has 9.5 doctors while Niger has 0.0 | rank_ladder | 2026-10-11 23:00 UTC | 1048 | 14 | 2.2 |
 | atlas023 France has 49 fixed broadband lines per 100 people | map_reveal | 2026-10-12 16:02 UTC | 259 | 6 | 0.6 |
-| atlas024 Where 30% of People are 65 or Older | map_reveal | 2026-10-12 20:01 UTC | 1218 | 16 | 2.8 |
-| atlas025 Qatar has 108 micrograms of particles | map_reveal | 2026-10-12 23:01 UTC | 1217 | 20 | 2.8 |
-| atlas026 The Global Gap in Basic Drinking Water Access | map_reveal | 2026-10-13 16:03 UTC | 769 | 10 | 1.8 |
+| atlas024 Where 30% of People are 65 or Older | map_reveal | 2026-10-12 20:01 UTC | 1218 | 16 | 2.6 |
+| atlas025 Qatar has 108 micrograms of particles | map_reveal | 2026-10-12 23:01 UTC | 1217 | 20 | 2.7 |
+| atlas026 The Global Gap in Basic Drinking Water Access | map_reveal | 2026-10-13 16:03 UTC | 769 | 10 | 1.7 |
 | atlas027 Women in the labor force: 83% to 5% | rank_ladder | 2026-10-13 20:01 UTC | 143 | 5 | 0.3 |
-| atlas028 61 places Still Have Most People Outside Cities | rank_ladder | 2026-10-13 23:01 UTC | 1157 | 14 | 2.8 |
-| atlas030 places Where One City Holds 92% of City Dwellers | rank_ladder | 2026-10-14 16:02 UTC | 1368 | 8 | 3.5 |
+| atlas028 61 places Still Have Most People Outside Cities | rank_ladder | 2026-10-13 23:01 UTC | 1157 | 14 | 2.7 |
+| atlas030 places Where One City Holds 92% of City Dwellers | rank_ladder | 2026-10-14 16:02 UTC | 1368 | 8 | 3.3 |
 | atlas031 In Qatar, 77% of people were born abroad | rank_ladder | 2026-10-14 20:01 UTC | 2 | 0 | 0.0 |
-| atlas032 Health Spending: The $10,550 to $13 Divide | map_reveal | 2026-10-14 23:01 UTC | 1101 | 11 | 2.9 |
-| atlas033 Japan Has 51 Seniors per 100 Working-Age People | map_reveal | 2026-10-15 16:03 UTC | 1141 | 16 | 3.1 |
-| atlas037 Colombia Rains 180 Times Egypt's Annual Precipitation | map_reveal | 2026-10-15 20:01 UTC | 1056 | 7 | 2.9 |
-| atlas039 Ireland Produces $131,592 per Person | map_reveal | 2026-10-15 23:01 UTC | 1086 | 7 | 3.0 |
-| atlas040 Romania Drinks 16.8 Liters of Pure Alcohol per Adult | map_reveal | 2026-10-16 16:02 UTC | 1133 | 12 | 3.3 |
-| atlas042 Powering Life: Electric Consumption Per Person | map_reveal | 2026-10-16 20:01 UTC | 787 | 2 | 2.3 |
-| atlas047 Freshwater Per Person: From Iceland to Kuwait | map_reveal | 2026-10-16 23:01 UTC | 1062 | 8 | 3.1 |
-| atlas048 Uruguay Leads the World in Cash Machines | rank_ladder | 2026-10-17 16:02 UTC | 1051 | 10 | 3.3 |
-| atlas049 Global Tobacco Use: East Timor at 48.8% and Nigeria at 3.1% | map_reveal | 2026-10-17 20:01 UTC | 423 | 1 | 1.3 |
-| atlas052 Clean Cooking Access: From 100% Down to 0% | rank_ladder | 2026-10-17 23:01 UTC | 1078 | 12 | 3.4 |
-| atlas053 Why Greece Has 165.1% College Enrollment | rank_ladder | 2026-10-18 16:01 UTC | 1027 | 10 | 3.5 |
-| atlas054 Household Goods Cost 130 in Iceland but 100 in USA | rank_ladder | 2026-10-18 20:01 UTC | 1040 | 3 | 3.6 |
-| atlas055 South Korea Has 12.8 Hospital Beds While Chad Has 0.1 | map_reveal | 2026-10-18 23:00 UTC | 1091 | 13 | 3.8 |
-| atlas056 Where More Boys Are Born: 1.01 to 1.11 Worldwide | map_reveal | 2026-10-19 16:02 UTC | 839 | 5 | 3.1 |
-| atlas058 Years Children Must Legally Attend School | rank_ladder | 2026-10-19 20:01 UTC | 1073 | 11 | 4.0 |
-| atlas061 100% of Adults in Iceland Have an Account, South Sudan 6% | map_reveal | 2026-10-19 23:01 UTC | 1057 | 4 | 4.0 |
-| atlas065 Iceland Uses 16,248 kg of Energy Per Person | map_reveal | 2026-10-20 16:03 UTC | 1017 | 11 | 4.1 |
-| atlas071 Australia Leads the World in Overweight Toddlers | map_reveal | 2026-10-20 20:00 UTC | 983 | 9 | 4.0 |
-| atlas075 Bulgaria Has 93.8 Bank Branches to DR Congo 0.6 | map_reveal | 2026-10-21 16:01 UTC | 352 | 4 | 1.6 |
-| atlas078 Places Ranked by Megacity Populations | rank_ladder | 2026-10-22 16:04 UTC | 1390 | 11 | 6.9 |
-| atlas079 Places Ranked by Arable Land | map_reveal | 2026-10-21 23:00 UTC | 1021 | 7 | 4.7 |
-| atlas081 Places Ranked by Income Inequality | rank_ladder | 2026-10-22 23:01 UTC | 1010 | 7 | 5.2 |
-| atlas083 The Places With the Oldest Male Populations | map_reveal | 2026-10-23 16:02 UTC | 1050 | 9 | 5.9 |
-| atlas090 Places Ranked by Container Shipping CONNECTIVITY | rank_ladder | 2026-10-23 23:01 UTC | 991 | – | 5.6 |
-| atlas093 Direct Medical Costs Paid by Families | map_reveal | 2026-10-24 16:03 UTC | 3 | – | 0.0 |
-| atlas094 Places Ranked by Cost of Power Outages | rank_ladder | 2026-10-24 23:01 UTC | 406 | – | 2.5 |
-| atlas097 Places Where Women MATCH Men at Work | map_reveal | 2026-10-27 16:04 UTC | 10 | – | 0.1 |
-| atlas098 Places Ranked by the Income of the Richest Fifth | rank_ladder | 2026-10-25 23:01 UTC | 650 | – | 4.7 |
-| atlas099 Places Ranked by Youth Dependency | map_reveal | 2026-10-27 20:00 UTC | 122 | – | 1.3 |
-| atlas100 Places Ranked by Nursing Staff Density | rank_ladder | 2026-10-25 16:02 UTC | 315 | – | 2.2 |
-| atlas101 Which Nations Grow the MOST Permanent Crops? | map_reveal | 2026-10-26 16:04 UTC | 256 | – | 2.1 |
-| atlas102 Places Ranked by the Cost of Sending Money | rank_ladder | 2026-10-26 23:01 UTC | 479 | – | 4.2 |
-| atlas103 Places Ranked by Dependency Load | map_reveal | 2026-10-28 16:00 UTC | 538 | – | 7.4 |
-| atlas104 Places Ranked by Food Insecurity | rank_ladder | 2026-10-27 23:00 UTC | 155 | – | 1.7 |
-| atlas105 Which Places Use the MOST Water for Industry? | map_reveal | 2026-10-28 20:00 UTC | 14 | – | 0.2 |
-| atlas106 USA vs Iraq: The 85 Times Research Spending Gap | versus | 2026-10-30 16:00 UTC | 151 | – | 6.0 |
-| atlas107 Which Country Has the MOST Diabetes? | odd_one_out | 2026-10-30 20:00 UTC | 36 | – | 1.7 |
-| atlas108 Places Ranked by How Much Money They Save | map_reveal | 2026-10-30 23:00 UTC | 364 | – | 20.0 |
-| atlas109 Places Ranked by Years of Preschool | rank_ladder | 2026-10-31 16:00 UTC | 141 | – | 120.5 |
+| atlas032 Health Spending: The $10,550 to $13 Divide | map_reveal | 2026-10-14 23:01 UTC | 1101 | 11 | 2.7 |
+| atlas033 Japan Has 51 Seniors per 100 Working-Age People | map_reveal | 2026-10-15 16:03 UTC | 1141 | 16 | 2.9 |
+| atlas037 Colombia Rains 180 Times Egypt's Annual Precipitation | map_reveal | 2026-10-15 20:01 UTC | 1056 | 7 | 2.7 |
+| atlas039 Ireland Produces $131,592 per Person | map_reveal | 2026-10-15 23:01 UTC | 1086 | 7 | 2.8 |
+| atlas040 Romania Drinks 16.8 Liters of Pure Alcohol per Adult | map_reveal | 2026-10-16 16:02 UTC | 1133 | 12 | 3.1 |
+| atlas042 Powering Life: Electric Consumption Per Person | map_reveal | 2026-10-16 20:01 UTC | 787 | 2 | 2.2 |
+| atlas047 Freshwater Per Person: From Iceland to Kuwait | map_reveal | 2026-10-16 23:01 UTC | 1062 | 8 | 2.9 |
+| atlas048 Uruguay Leads the World in Cash Machines | rank_ladder | 2026-10-17 16:02 UTC | 1051 | 10 | 3.0 |
+| atlas049 Global Tobacco Use: East Timor at 48.8% and Nigeria at 3.1% | map_reveal | 2026-10-17 20:01 UTC | 423 | 1 | 1.2 |
+| atlas052 Clean Cooking Access: From 100% Down to 0% | rank_ladder | 2026-10-17 23:01 UTC | 1078 | 12 | 3.2 |
+| atlas053 Why Greece Has 165.1% College Enrollment | rank_ladder | 2026-10-18 16:01 UTC | 1028 | 10 | 3.2 |
+| atlas054 Household Goods Cost 130 in Iceland but 100 in USA | rank_ladder | 2026-10-18 20:01 UTC | 1040 | 3 | 3.3 |
+| atlas055 South Korea Has 12.8 Hospital Beds While Chad Has 0.1 | map_reveal | 2026-10-18 23:00 UTC | 1092 | 13 | 3.5 |
+| atlas056 Where More Boys Are Born: 1.01 to 1.11 Worldwide | map_reveal | 2026-10-19 16:02 UTC | 839 | 5 | 2.8 |
+| atlas058 Years Children Must Legally Attend School | rank_ladder | 2026-10-19 20:01 UTC | 1073 | 11 | 3.7 |
+| atlas061 100% of Adults in Iceland Have an Account, South Sudan 6% | map_reveal | 2026-10-19 23:01 UTC | 1057 | 4 | 3.6 |
+| atlas065 Iceland Uses 16,248 kg of Energy Per Person | map_reveal | 2026-10-20 16:03 UTC | 1017 | 11 | 3.7 |
+| atlas071 Australia Leads the World in Overweight Toddlers | map_reveal | 2026-10-20 20:00 UTC | 983 | 9 | 3.7 |
+| atlas075 Bulgaria Has 93.8 Bank Branches to DR Congo 0.6 | map_reveal | 2026-10-21 16:01 UTC | 352 | 4 | 1.4 |
+| atlas078 Places Ranked by Megacity Populations | rank_ladder | 2026-10-22 16:04 UTC | 1390 | 11 | 6.2 |
+| atlas079 Places Ranked by Arable Land | map_reveal | 2026-10-21 23:00 UTC | 1021 | 7 | 4.2 |
+| atlas081 Places Ranked by Income Inequality | rank_ladder | 2026-10-22 23:01 UTC | 1011 | 7 | 4.6 |
+| atlas083 The Places With the Oldest Male Populations | map_reveal | 2026-10-23 16:02 UTC | 1050 | 9 | 5.2 |
+| atlas090 Places Ranked by Container Shipping CONNECTIVITY | rank_ladder | 2026-10-23 23:01 UTC | 991 | 10 | 5.1 |
+| atlas093 Direct Medical Costs Paid by Families | map_reveal | 2026-10-24 16:03 UTC | 3 | 1 | 0.0 |
+| atlas094 Places Ranked by Cost of Power Outages | rank_ladder | 2026-10-24 23:01 UTC | 406 | 3 | 2.4 |
+| atlas097 Places Where Women MATCH Men at Work | map_reveal | 2026-10-27 16:04 UTC | 10 | 0 | 0.1 |
+| atlas098 Places Ranked by the Income of the Richest Fifth | rank_ladder | 2026-10-25 23:01 UTC | 650 | 7 | 4.5 |
+| atlas099 Places Ranked by Youth Dependency | map_reveal | 2026-10-27 20:00 UTC | 122 | 1 | 1.2 |
+| atlas100 Places Ranked by Nursing Staff Density | rank_ladder | 2026-10-25 16:02 UTC | 315 | 6 | 2.1 |
+| atlas101 Which Nations Grow the MOST Permanent Crops? | map_reveal | 2026-10-26 16:04 UTC | 256 | 1 | 2.0 |
+| atlas102 Places Ranked by the Cost of Sending Money | rank_ladder | 2026-10-26 23:01 UTC | 479 | 4 | 3.9 |
+| atlas103 Places Ranked by Dependency Load | map_reveal | 2026-10-28 16:00 UTC | 538 | 5 | 6.7 |
+| atlas104 Places Ranked by Food Insecurity | rank_ladder | 2026-10-27 23:00 UTC | 155 | 1 | 1.6 |
+| atlas105 Which Places Use the MOST Water for Industry? | map_reveal | 2026-10-28 20:00 UTC | 14 | 0 | 0.2 |
+| atlas106 USA vs Iraq: The 85 Times Research Spending Gap | versus | 2026-10-30 16:00 UTC | 151 | 1 | 4.6 |
+| atlas107 Which Country Has the MOST Diabetes? | odd_one_out | 2026-10-30 20:00 UTC | 51 | 0 | 1.8 |
+| atlas108 Places Ranked by How Much Money They Save | map_reveal | 2026-10-30 23:00 UTC | 363 | 2 | 14.1 |
+| atlas109 Places Ranked by Years of Preschool | rank_ladder | 2026-10-31 16:00 UTC | 999 | 8 | 114.8 |
+| atlas112 Which Country Has the Most Youth Financial Access? | odd_one_out | 2026-10-31 20:00 UTC | 166 | 3 | 35.3 |
+| atlas113 Is YOUR Country a Service Economy? | map_reveal | 2026-10-31 23:00 UTC | 29 | 0 | 17.1 |
 
 ## Log
 

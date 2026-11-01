@@ -1,0 +1,43 @@
+{
+  "version": 1,
+  "passed": true,
+  "checked_at": "2026-11-01T01:39:03.080165+00:00",
+  "quality_module_sha256": "db7be8ac57c839f39a10676f1a70580a83ea346f59c27f19868d09c272def14c",
+  "media_sha256": "8f861145655986e410d0d6b7ebc9e960e58e4484fc2207f08f5c06f6a54a148a",
+  "script_sha256": "4c6b814098d4d97b91491c34225a79aece30036a097bedfef21369f83f07e9ef",
+  "data_sha256": "17fd0280d5c43d6970b70cf927d62374fd9861edb3c77ac2557e1ef9bffc2d03",
+  "claims_sha256": "d3bd45626920d307e6fd3624478ec7a9c354b75e7f58b9133a85fdb1fb01ea4c",
+  "contact_sha256": "55888626fb15818574b72d71830ce4cf824bb9727b0c6ad497550953f008c255",
+  "duration": 45.11,
+  "integrated_lufs": -14.0,
+  "true_peak_dbfs": -1.4,
+  "speech": {
+    "heard": "The United States gets 93% of tax revenue from income, while Russia gets 14.4%. At total counts, taxes payable on actual or presumed incomes, profits, and capital gains. Side by side, America relies heavily on income, getting 6.5 times the share Russia collects. Across the globe, the median country gets 38% of tax revenue from income, with China close by at 37.2%. Canada takes 78.5% and Australia 76.6%, while the U.K. takes 52.6% and Germany 45.2%. How much of your country's tax revenue comes from income?",
+    "model": "small.en",
+    "media_sha256": "8f861145655986e410d0d6b7ebc9e960e58e4484fc2207f08f5c06f6a54a148a",
+    "primary_differences": [
+      "'that' heard as 'at' after 'russia gets 14.4%'"
+    ],
+    "differences": [
+      "'that' heard as 'at' after 'russia gets 14.4%'",
+      "base.en: 'that' heard as 'the' after 'russia gets 14.4%'",
+      "base.en: '(nothing)' heard as 'is' after '78.5% and australia'"
+    ],
+    "corroboration": {
+      "model": "base.en",
+      "heard": "The United States gets 93% of tax revenue from income, while Russia gets 14.4%. The total counts taxes payable on actual or presumed incomes, profits and capital gains. Side-by-side, America relies heavily on income, getting 6.5 times the share Russia collects. Across the globe, the median country gets 38% of tax revenue from income, with China close by at 37.2%. Canada takes 78.5% and Australia's 76.6% while the UK takes 52.6% and Germany 45.2%. How much of your country's tax revenue comes from income?",
+      "differences": [
+        "'that' heard as 'the' after 'russia gets 14.4%'",
+        "'(nothing)' heard as 'is' after '78.5% and australia'"
+      ],
+      "resolved": []
+    }
+  },
+  "warnings": [
+    "'that' heard as 'at' after 'russia gets 14.4%'",
+    "base.en: 'that' heard as 'the' after 'russia gets 14.4%'",
+    "base.en: '(nothing)' heard as 'is' after '78.5% and australia'",
+    "duration 45.1s outside editorial 30–45s target"
+  ],
+  "speech_policy": "material-hard-entity-polarity-strict-minor-spelling-warning"
+}

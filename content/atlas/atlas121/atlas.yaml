@@ -1,0 +1,77 @@
+id: atlas121
+title: The Places With the Highest Male Share
+hook_text: GLOBAL MALE SHARE
+description: A cinematic look at global male population percentages across countries and territories in 2025.
+hashtags:
+- '#population'
+- '#demographics'
+- '#geography'
+tags:
+- population
+- male percentage of total population
+- countries ranked by male percentage of total population
+- Qatar
+- Moldova
+- world map
+- geography
+- atlas in numbers
+sources:
+- https://data.worldbank.org/indicator/SP.POP.TOTL.MA.ZS
+dataset:
+  kind: worldbank
+  indicator: SP.POP.TOTL.MA.ZS
+  label: Male percentage of total population
+  unit: '%'
+  source: World Bank
+  min_year: 2019
+scale:
+  edges:
+  - 48.0
+  - 50.0
+  - 52.0
+  - 60.0
+  labels:
+  - <48%
+  - 48-50%
+  - 50-52%
+  - 52-60%
+  - '>60%'
+value_format: '{v:.1f}%'
+beats:
+- text: Qatar is 71.1% male. In Russia, males make up just 46.4%.
+  shot:
+    callouts:
+    - QAT
+    - RUS
+- text: Qatar has the world's highest male share. The global median is 49.6%.
+  shot:
+    kind: country
+    iso: QAT
+- text: The count includes all residents regardless of legal status or citizenship.
+  shot:
+    kind: country
+    iso: QAT
+  basis: counts all residents regardless of legal status or citizenship
+- text: Across the Gulf, UAE is 63.8% male, and Kuwait is 61.1%.
+  shot:
+    kind: group
+    isos:
+    - ARE
+    - KWT
+- text: 'Eastern Europe has some of the lowest shares: Ukraine is 46.5%, Armenia 46.4%, and Moldova 46%.'
+  shot:
+    kind: rank
+    isos:
+    - UKR
+    - ARM
+    - MDA
+- text: Near the global center, the USA is 50.2% male.
+  shot:
+    kind: country
+    iso: USA
+- text: What is the male share in your country?
+  shot:
+    kind: card
+    lines:
+    - MALE SHARE
+    - World Bank (2025)

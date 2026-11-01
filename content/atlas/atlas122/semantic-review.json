@@ -1,0 +1,158 @@
+{
+  "errors": [],
+  "claims": [
+    {
+      "surface": "title",
+      "text": "USA vs Russia: How Much Tax Revenue Comes From Income?",
+      "isos": [
+        "USA",
+        "RUS"
+      ],
+      "support": "USA: 93%, RUS: 14.4%"
+    },
+    {
+      "surface": "hook",
+      "text": "INCOME TAX GAP",
+      "isos": [],
+      "support": "USA 93%, RUS 14.4%"
+    },
+    {
+      "surface": "description",
+      "text": "The United States relies on income and profit taxes for 93% of its tax revenue, while Russia gets just 14.4% from income taxes.",
+      "isos": [
+        "USA",
+        "RUS"
+      ],
+      "support": "USA: 93%, RUS: 14.4%"
+    },
+    {
+      "surface": "beat_0",
+      "text": "The United States gets 93% of tax revenue from income, while Russia gets 14.4%.",
+      "isos": [
+        "USA",
+        "RUS"
+      ],
+      "support": "USA: 93%, RUS: 14.4%"
+    },
+    {
+      "surface": "beat_1",
+      "text": "That total counts taxes payable on actual or presumed incomes, profits, and capital gains.",
+      "isos": [],
+      "support": "Taxes on income, profits, and capital gains are taxes payable on the actual or presumed incomes, profits and capital gains."
+    },
+    {
+      "surface": "beat_2",
+      "text": "Side by side, America relies heavily on income, getting 6.5 times the share Russia collects.",
+      "isos": [
+        "USA",
+        "RUS"
+      ],
+      "support": "USA: 92.9803197345877, RUS: 14.41097029598, ratio approx 6.45"
+    },
+    {
+      "surface": "beat_3",
+      "text": "Across the globe, the median country gets 38% of tax revenue from income, with China close by at 37.2%.",
+      "isos": [
+        "CHN"
+      ],
+      "support": "CHN: 37.2%"
+    },
+    {
+      "surface": "beat_4",
+      "text": "Canada takes 78.5% and Australia 76.6%, while the UK takes 52.6% and Germany 45.2%.",
+      "isos": [
+        "CAN",
+        "AUS",
+        "GBR",
+        "DEU"
+      ],
+      "support": "CAN: 78.5%, AUS: 76.6%, GBR: 52.6%, DEU: 45.2%"
+    },
+    {
+      "surface": "beat_5",
+      "text": "How much of your country's tax revenue comes from income?",
+      "isos": [],
+      "support": "Viewer question style framing"
+    },
+    {
+      "surface": "card_5",
+      "text": "Income Tax Reliance, Share of Total Taxes from Income",
+      "isos": [],
+      "support": "Indicator definition matches share of total taxes from income, profits, and capital gains"
+    }
+  ],
+  "surface_checks": {
+    "title": {
+      "supported": true,
+      "reason": "Title compares USA and Russia correctly based on indicator data.",
+      "isos": [
+        "USA",
+        "RUS"
+      ]
+    },
+    "hook": {
+      "supported": true,
+      "reason": "Hook introduces the tax gap supported by the data.",
+      "isos": [
+        "USA",
+        "RUS"
+      ]
+    },
+    "description": {
+      "supported": true,
+      "reason": "Description correctly quotes USA (93%) and Russia (14.4%).",
+      "isos": [
+        "USA",
+        "RUS"
+      ]
+    },
+    "beat_0": {
+      "supported": true,
+      "reason": "Beat 0 correctly matches USA and Russia values.",
+      "isos": [
+        "USA",
+        "RUS"
+      ]
+    },
+    "beat_1": {
+      "supported": true,
+      "reason": "Beat 1 uses the official definition text from EVIDENCE.",
+      "isos": []
+    },
+    "beat_2": {
+      "supported": true,
+      "reason": "93 / 14.4 is approximately 6.46, correctly rounded to 6.5 times.",
+      "isos": [
+        "USA",
+        "RUS"
+      ]
+    },
+    "beat_3": {
+      "supported": true,
+      "reason": "China's value is 37.2%, which is close to 38%.",
+      "isos": [
+        "CHN"
+      ]
+    },
+    "beat_4": {
+      "supported": true,
+      "reason": "Canada (78.5%), Australia (76.6%), UK (52.6%), and Germany (45.2%) match evidence values.",
+      "isos": [
+        "CAN",
+        "AUS",
+        "GBR",
+        "DEU"
+      ]
+    },
+    "beat_5": {
+      "supported": true,
+      "reason": "Stylistic question framing is valid.",
+      "isos": []
+    },
+    "card_5": {
+      "supported": true,
+      "reason": "Card labels accurately reflect the metric.",
+      "isos": []
+    }
+  }
+}

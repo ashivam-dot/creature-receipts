@@ -1,0 +1,74 @@
+id: atlas123
+title: Places Ranked by Access to Basic Sanitation
+format: rank_ladder
+hook_text: SANITATION GAP EXPOSED
+description: Comparing access to basic sanitation services across the globe using World Bank data.
+hashtags:
+- '#health'
+- '#geography'
+- '#countries'
+tags:
+- health
+- people using basic sanitation services
+- countries ranked by people using basic sanitation services
+- New Zealand
+- Ethiopia
+- world map
+- geography
+- atlas in numbers
+sources:
+- https://data.worldbank.org/indicator/SH.STA.BASS.ZS
+dataset:
+  kind: worldbank
+  indicator: SH.STA.BASS.ZS
+  label: People using basic sanitation services
+  unit: '%'
+  source: World Bank
+  min_year: 2019
+scale:
+  edges:
+  - 35.0
+  - 65.0
+  - 85.0
+  - 95.0
+  labels:
+  - Critical (<35%)
+  - Low (35-65%)
+  - Moderate (65-85%)
+  - High (85-95%)
+  - Universal (>95%)
+value_format: '{v:.1f}%'
+beats:
+- text: In Mexico, 93% of people have basic sanitation. In Ethiopia, just 10.4%.
+  shot:
+    callouts:
+    - MEX
+    - ETH
+- text: It counts people using improved sanitation facilities that are not shared with other households.
+  shot:
+    kind: country
+    iso: ETH
+  basis: improved sanitation facilities that are not shared with other households
+- text: India has 83.4%. Brazil has 92.4%.
+  shot:
+    kind: group
+    isos:
+    - IND
+    - BRA
+- text: 'Climbing higher: Germany has 99.2%, USA has 99.6%, and Japan has 99.9%.'
+  shot:
+    kind: rank
+    isos:
+    - DEU
+    - USA
+    - JPN
+- text: At 100%, Australia is one of the highest in the world.
+  shot:
+    kind: country
+    iso: AUS
+- text: How clean is sanitation in your country?
+  shot:
+    kind: card
+    lines:
+    - SANITATION ACCESS
+    - People using basic sanitation services (%)

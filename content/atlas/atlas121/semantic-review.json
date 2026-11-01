@@ -1,0 +1,156 @@
+{
+  "errors": [],
+  "claims": [
+    {
+      "surface": "title",
+      "text": "The Places With the Highest Male Share",
+      "isos": [],
+      "support": "The Places With the Highest Male Share"
+    },
+    {
+      "surface": "hook",
+      "text": "GLOBAL MALE SHARE",
+      "isos": [],
+      "support": "GLOBAL MALE SHARE"
+    },
+    {
+      "surface": "description",
+      "text": "A cinematic look at global male population percentages across countries and territories in 2025.",
+      "isos": [],
+      "support": "A cinematic look at global male population percentages across countries and territories in 2025."
+    },
+    {
+      "surface": "beat_0",
+      "text": "Qatar is 71.1% male. In Russia, males make up just 46.4%.",
+      "isos": [
+        "QAT",
+        "RUS"
+      ],
+      "support": "Qatar: 71.1%, Russia: 46.4%"
+    },
+    {
+      "surface": "beat_1",
+      "text": "Qatar has the world's highest male share. The global median is 49.6%.",
+      "isos": [
+        "QAT"
+      ],
+      "support": "Qatar rank 1, value 71.09%"
+    },
+    {
+      "surface": "beat_2",
+      "text": "The count includes all residents regardless of legal status or citizenship.",
+      "isos": [],
+      "support": "Population is based on the de facto definition of population, which counts all residents regardless of legal status or citizenship."
+    },
+    {
+      "surface": "beat_3",
+      "text": "Across the Gulf, UAE is 63.8% male, and Kuwait is 61.1%.",
+      "isos": [
+        "ARE",
+        "KWT"
+      ],
+      "support": "ARE: 63.8%, KWT: 61.1%"
+    },
+    {
+      "surface": "beat_4",
+      "text": "Eastern Europe has some of the lowest shares: Ukraine is 46.5%, Armenia 46.4%, and Moldova 46%.",
+      "isos": [
+        "UKR",
+        "ARM",
+        "MDA"
+      ],
+      "support": "UKR: 46.5%, ARM: 46.4%, MDA: 46%"
+    },
+    {
+      "surface": "beat_5",
+      "text": "Near the global center, the USA is 50.2% male.",
+      "isos": [
+        "USA"
+      ],
+      "support": "USA: 50.2%"
+    },
+    {
+      "surface": "beat_6",
+      "text": "What is the male share in your country?",
+      "isos": [],
+      "support": "What is the male share in your country?"
+    },
+    {
+      "surface": "card_6",
+      "text": "MALE SHARE, World Bank (2025)",
+      "isos": [],
+      "support": "MALE SHARE, World Bank (2025)"
+    }
+  ],
+  "surface_checks": {
+    "title": {
+      "supported": true,
+      "reason": "Style framing for the video content.",
+      "isos": []
+    },
+    "hook": {
+      "supported": true,
+      "reason": "Accurate summary of indicator topic.",
+      "isos": []
+    },
+    "description": {
+      "supported": true,
+      "reason": "Accurate description matching indicator context and year 2025.",
+      "isos": []
+    },
+    "beat_0": {
+      "supported": true,
+      "reason": "Qatar is 71.1% (71.0916%) and Russia is 46.4% (46.3743%).",
+      "isos": [
+        "QAT",
+        "RUS"
+      ]
+    },
+    "beat_1": {
+      "supported": true,
+      "reason": "Qatar rank is 1, holding the highest value in the dataset.",
+      "isos": [
+        "QAT"
+      ]
+    },
+    "beat_2": {
+      "supported": true,
+      "reason": "Directly matches the definition text in EVIDENCE.",
+      "isos": []
+    },
+    "beat_3": {
+      "supported": true,
+      "reason": "UAE is 63.8% (63.7724%) and Kuwait is 61.1% (61.0740%).",
+      "isos": [
+        "ARE",
+        "KWT"
+      ]
+    },
+    "beat_4": {
+      "supported": true,
+      "reason": "Ukraine is 46.5% (46.5299%), Armenia is 46.4% (46.4083%), and Moldova is 46% (45.9886%).",
+      "isos": [
+        "UKR",
+        "ARM",
+        "MDA"
+      ]
+    },
+    "beat_5": {
+      "supported": true,
+      "reason": "USA is 50.2% (50.2473%).",
+      "isos": [
+        "USA"
+      ]
+    },
+    "beat_6": {
+      "supported": true,
+      "reason": "Standard interactive callout question.",
+      "isos": []
+    },
+    "card_6": {
+      "supported": true,
+      "reason": "Matches indicator title and source year.",
+      "isos": []
+    }
+  }
+}

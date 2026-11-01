@@ -1,0 +1,111 @@
+{
+  "errors": [],
+  "claims": [
+    {
+      "surface": "beat_0",
+      "text": "In Mexico, 93% of people have basic sanitation. In Ethiopia, just 10.4%.",
+      "isos": [
+        "MEX",
+        "ETH"
+      ],
+      "support": "MEX: 92.9912822357176, display: 93%, year: 2024; ETH: 10.3577188356734, display: 10.4%, year: 2024"
+    },
+    {
+      "surface": "beat_1",
+      "text": "It counts people using improved sanitation facilities that are not shared with other households.",
+      "isos": [],
+      "support": "The percentage of people using at least basic sanitation services, that is, improved sanitation facilities that are not shared with other households."
+    },
+    {
+      "surface": "beat_2",
+      "text": "India has 83.4%. Brazil has 92.4%.",
+      "isos": [
+        "IND",
+        "BRA"
+      ],
+      "support": "IND: 83.380872478201, display: 83.4%, year: 2024; BRA: 92.4012701604853, display: 92.4%, year: 2024"
+    },
+    {
+      "surface": "beat_3",
+      "text": "Climbing higher: Germany has 99.2%, USA has 99.6%, and Japan has 99.9%.",
+      "isos": [
+        "DEU",
+        "USA",
+        "JPN"
+      ],
+      "support": "DEU: 99.2269528917777, display: 99.2%, year: 2024; USA: 99.6182734760609, display: 99.6%, year: 2024; JPN: 99.9433104207437, display: 99.9%, year: 2024"
+    },
+    {
+      "surface": "beat_4",
+      "text": "At 100%, Australia is one of the highest in the world.",
+      "isos": [
+        "AUS"
+      ],
+      "support": "AUS: 100.0, display: 100%, year: 2024, rank: 1"
+    }
+  ],
+  "surface_checks": {
+    "title": {
+      "supported": true,
+      "reason": "The title appropriately frames the video content regarding access to basic sanitation services.",
+      "isos": []
+    },
+    "hook": {
+      "supported": true,
+      "reason": "Style framing for the video hook.",
+      "isos": []
+    },
+    "description": {
+      "supported": true,
+      "reason": "Accurately describes the comparison across the globe using World Bank data.",
+      "isos": []
+    },
+    "beat_0": {
+      "supported": true,
+      "reason": "Mexicos value is 93% and Ethiopias value is 10.4%, matching the evidence.",
+      "isos": [
+        "MEX",
+        "ETH"
+      ]
+    },
+    "beat_1": {
+      "supported": true,
+      "reason": "Directly matches the definition provided in the evidence.",
+      "isos": []
+    },
+    "beat_2": {
+      "supported": true,
+      "reason": "Indias value is 83.4% and Brazils value is 92.4%, matching the evidence.",
+      "isos": [
+        "IND",
+        "BRA"
+      ]
+    },
+    "beat_3": {
+      "supported": true,
+      "reason": "Germanys value is 99.2%, USA is 99.6%, and Japan is 99.9%, matching the evidence.",
+      "isos": [
+        "DEU",
+        "USA",
+        "JPN"
+      ]
+    },
+    "beat_4": {
+      "supported": true,
+      "reason": "Australias value is 100% and it holds a top rank (rank 1), supporting the claim.",
+      "isos": [
+        "AUS"
+      ]
+    },
+    "beat_5": {
+      "supported": true,
+      "reason": "Standard loop/color closing question.",
+      "isos": []
+    },
+    "card_5": {
+      "supported": true,
+      "reason": "Matches indicator description and title.",
+      "isos": []
+    }
+  }
+}
