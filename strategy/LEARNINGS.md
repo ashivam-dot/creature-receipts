@@ -83,20 +83,21 @@ Refreshed by every producer run (`atlas.stats`) from the channel's public feed o
 | atlas093 Direct Medical Costs Paid by Families | map_reveal | 2026-10-24 16:03 UTC | 3 | 1 | 0.0 |
 | atlas094 Places Ranked by Cost of Power Outages | rank_ladder | 2026-10-24 23:01 UTC | 406 | 3 | 2.4 |
 | atlas097 Places Where Women MATCH Men at Work | map_reveal | 2026-10-27 16:04 UTC | 10 | – | 0.1 |
-| atlas098 Places Ranked by the Income of the Richest Fifth | rank_ladder | 2026-10-25 23:01 UTC | 650 | – | 4.2 |
-| atlas099 Places Ranked by Youth Dependency | map_reveal | 2026-10-27 20:00 UTC | 122 | – | 1.1 |
+| atlas098 Places Ranked by the Income of the Richest Fifth | rank_ladder | 2026-10-25 23:01 UTC | 650 | – | 4.0 |
+| atlas099 Places Ranked by Youth Dependency | map_reveal | 2026-10-27 20:00 UTC | 122 | – | 1.0 |
 | atlas100 Places Ranked by Nursing Staff Density | rank_ladder | 2026-10-25 16:02 UTC | 315 | – | 2.0 |
-| atlas101 Which Nations Grow the MOST Permanent Crops? | map_reveal | 2026-10-26 16:04 UTC | 256 | – | 1.9 |
-| atlas102 Places Ranked by the Cost of Sending Money | rank_ladder | 2026-10-26 23:01 UTC | 479 | – | 3.7 |
-| atlas103 Places Ranked by Dependency Load | map_reveal | 2026-10-28 16:00 UTC | 539 | – | 6.0 |
-| atlas104 Places Ranked by Food Insecurity | rank_ladder | 2026-10-27 23:00 UTC | 155 | – | 1.5 |
+| atlas101 Which Nations Grow the MOST Permanent Crops? | map_reveal | 2026-10-26 16:04 UTC | 256 | – | 1.8 |
+| atlas102 Places Ranked by the Cost of Sending Money | rank_ladder | 2026-10-26 23:01 UTC | 479 | – | 3.5 |
+| atlas103 Places Ranked by Dependency Load | map_reveal | 2026-10-28 16:00 UTC | 541 | – | 5.6 |
+| atlas104 Places Ranked by Food Insecurity | rank_ladder | 2026-10-27 23:00 UTC | 156 | – | 1.4 |
 | atlas105 Which Places Use the MOST Water for Industry? | map_reveal | 2026-10-28 20:00 UTC | 14 | – | 0.2 |
-| atlas106 USA vs Iraq: The 85 Times Research Spending Gap | versus | 2026-10-30 16:00 UTC | 199 | – | 4.8 |
-| atlas107 Which Country Has the MOST Diabetes? | odd_one_out | 2026-10-30 20:00 UTC | 61 | – | 1.6 |
-| atlas108 Places Ranked by How Much Money They Save | map_reveal | 2026-10-30 23:00 UTC | 363 | – | 10.6 |
-| atlas109 Places Ranked by Years of Preschool | rank_ladder | 2026-10-31 16:00 UTC | 1032 | – | 60.1 |
-| atlas112 Which Country Has the Most Youth Financial Access? | odd_one_out | 2026-10-31 20:00 UTC | 227 | – | 17.2 |
-| atlas113 Is YOUR Country a Service Economy? | map_reveal | 2026-10-31 23:00 UTC | 77 | – | 7.6 |
+| atlas106 USA vs Iraq: The 85 Times Research Spending Gap | versus | 2026-10-30 16:00 UTC | 199 | – | 4.0 |
+| atlas107 Which Country Has the MOST Diabetes? | odd_one_out | 2026-10-30 20:00 UTC | 65 | – | 1.4 |
+| atlas108 Places Ranked by How Much Money They Save | map_reveal | 2026-10-30 23:00 UTC | 363 | – | 8.6 |
+| atlas109 Places Ranked by Years of Preschool | rank_ladder | 2026-10-31 16:00 UTC | 1036 | – | 41.2 |
+| atlas112 Which Country Has the Most Youth Financial Access? | odd_one_out | 2026-10-31 20:00 UTC | 228 | – | 10.8 |
+| atlas113 Is YOUR Country a Service Economy? | map_reveal | 2026-10-31 23:00 UTC | 77 | – | 4.2 |
+| atlas114 Places Ranked by University Degrees | rank_ladder | 2026-11-01 17:00 UTC | 2 | – | 12.3 |
 
 ## Log
 
