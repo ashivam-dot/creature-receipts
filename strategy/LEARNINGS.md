@@ -88,18 +88,19 @@ Refreshed by every producer run (`atlas.stats`) from the channel's public feed o
 | atlas100 Places Ranked by Nursing Staff Density | rank_ladder | 2026-10-25 16:02 UTC | 315 | 6 | 1.8 |
 | atlas101 Which Nations Grow the MOST Permanent Crops? | map_reveal | 2026-10-26 16:04 UTC | 256 | 1 | 1.7 |
 | atlas102 Places Ranked by the Cost of Sending Money | rank_ladder | 2026-10-26 23:01 UTC | 480 | – | 3.1 |
-| atlas103 Places Ranked by Dependency Load | map_reveal | 2026-10-28 16:00 UTC | 541 | – | 4.8 |
-| atlas104 Places Ranked by Food Insecurity | rank_ladder | 2026-10-27 23:00 UTC | 156 | – | 1.2 |
+| atlas103 Places Ranked by Dependency Load | map_reveal | 2026-10-28 16:00 UTC | 541 | – | 4.5 |
+| atlas104 Places Ranked by Food Insecurity | rank_ladder | 2026-10-27 23:00 UTC | 156 | – | 1.1 |
 | atlas105 Which Places Use the MOST Water for Industry? | map_reveal | 2026-10-28 20:00 UTC | 15 | – | 0.1 |
-| atlas106 USA vs Iraq: The 85 Times Research Spending Gap | versus | 2026-10-30 16:00 UTC | 200 | – | 3.1 |
-| atlas107 Which Country Has the MOST Diabetes? | odd_one_out | 2026-10-30 20:00 UTC | 67 | – | 1.1 |
-| atlas108 Places Ranked by How Much Money They Save | map_reveal | 2026-10-30 23:00 UTC | 404 | – | 6.9 |
-| atlas109 Places Ranked by Years of Preschool | rank_ladder | 2026-10-31 16:00 UTC | 1041 | – | 25.3 |
-| atlas112 Which Country Has the Most Youth Financial Access? | odd_one_out | 2026-10-31 20:00 UTC | 529 | – | 14.2 |
-| atlas113 Is YOUR Country a Service Economy? | map_reveal | 2026-10-31 23:00 UTC | 544 | – | 15.9 |
-| atlas114 Places Ranked by University Degrees | rank_ladder | 2026-11-01 17:00 UTC | 1076 | – | 66.6 |
-| atlas119 Qatar vs Chad: The Global Paid Employment Gap | versus | 2026-11-01 21:00 UTC | 92 | – | 7.6 |
-| atlas120 How Does the USA Compare on Safe Drinking Water? | spotlight | 2026-11-02 00:00 UTC | 66 | – | 7.2 |
+| atlas106 USA vs Iraq: The 85 Times Research Spending Gap | versus | 2026-10-30 16:00 UTC | 202 | – | 2.8 |
+| atlas107 Which Country Has the MOST Diabetes? | odd_one_out | 2026-10-30 20:00 UTC | 67 | – | 1.0 |
+| atlas108 Places Ranked by How Much Money They Save | map_reveal | 2026-10-30 23:00 UTC | 404 | – | 6.1 |
+| atlas109 Places Ranked by Years of Preschool | rank_ladder | 2026-10-31 16:00 UTC | 1041 | – | 21.2 |
+| atlas112 Which Country Has the Most Youth Financial Access? | odd_one_out | 2026-10-31 20:00 UTC | 562 | – | 12.4 |
+| atlas113 Is YOUR Country a Service Economy? | map_reveal | 2026-10-31 23:00 UTC | 599 | – | 14.2 |
+| atlas114 Places Ranked by University Degrees | rank_ladder | 2026-11-01 17:00 UTC | 1081 | – | 44.7 |
+| atlas119 Qatar vs Chad: The Global Paid Employment Gap | versus | 2026-11-01 21:00 UTC | 93 | – | 4.6 |
+| atlas120 How Does the USA Compare on Safe Drinking Water? | spotlight | 2026-11-02 00:00 UTC | 66 | – | 3.8 |
+| atlas121 The Places With the Highest Male Share | map_reveal | 2026-11-02 17:00 UTC | 1 | – | 5.7 |
 
 ## Log
 
