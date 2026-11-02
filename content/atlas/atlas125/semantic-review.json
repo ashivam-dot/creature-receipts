@@ -1,0 +1,158 @@
+{
+  "errors": [],
+  "claims": [
+    {
+      "surface": "title",
+      "text": "Places Ranked by Adult Literacy",
+      "isos": [],
+      "support": "Global adult literacy rate rankings based on World Bank data."
+    },
+    {
+      "surface": "hook",
+      "text": "THE READING GAP",
+      "isos": [],
+      "support": "A global look at adult literacy levels."
+    },
+    {
+      "surface": "description",
+      "text": "A global look at adult literacy levels, comparing high-performing nations with those facing literacy challenges based on World Bank data.",
+      "isos": [],
+      "support": "World Bank Adult Literacy Rate data."
+    },
+    {
+      "surface": "beat_0",
+      "text": "In Uzbekistan, adult literacy is 100%. In Chad, it is 30.6%.",
+      "isos": [
+        "UZB",
+        "TCD"
+      ],
+      "support": "Uzbekistan value: 100.0, Chad value: 30.6299991607666 (displayed as 30.6%)"
+    },
+    {
+      "surface": "beat_1",
+      "text": "Uzbekistan leads all nations on the map, with universal reading and writing.",
+      "isos": [
+        "UZB"
+      ],
+      "support": "Uzbekistan rank: 1, value: 100.0"
+    },
+    {
+      "surface": "beat_2",
+      "text": "The lowest nations include Chad at 30.6%, Niger at 35.6%, Mali at 35.6%, and Burkina Faso at 41.6%.",
+      "isos": [
+        "TCD",
+        "NER",
+        "MLI",
+        "BFA"
+      ],
+      "support": "Chad rank: 107 (30.6%), Niger rank: 106 (35.6%), Mali rank: 105 (35.6%), Burkina Faso rank: 103 (41.6%)"
+    },
+    {
+      "surface": "beat_3",
+      "text": "In Asia, China has 96.7%, while India has 78.2%.",
+      "isos": [
+        "CHN",
+        "IND"
+      ],
+      "support": "China value: 96.7399978637695 (96.7%), India value: 78.1625330351403 (78.2%)"
+    },
+    {
+      "surface": "beat_4",
+      "text": "Brazil, the largest nation in South America, has 94.7%.",
+      "isos": [
+        "BRA"
+      ],
+      "support": "Brazil value: 94.7399978637695 (94.7%)"
+    },
+    {
+      "surface": "beat_5",
+      "text": "The metric counts people ages 15 and above who can read and write a short simple statement about everyday life.",
+      "isos": [],
+      "support": "Adult literacy rate is the percentage of people ages 15 and above who can both read and write with understanding a short simple statement about their everyday life."
+    },
+    {
+      "surface": "beat_6",
+      "text": "How high is adult literacy in your country?",
+      "isos": [],
+      "support": "Inquiry based on Adult Literacy Rate indicator."
+    },
+    {
+      "surface": "card_6",
+      "text": "How Literate Is Your Country?",
+      "isos": [],
+      "support": "Title card reflecting adult literacy topic."
+    }
+  ],
+  "surface_checks": {
+    "title": {
+      "supported": true,
+      "reason": "Accurately describes the ranking of places by adult literacy.",
+      "isos": []
+    },
+    "hook": {
+      "supported": true,
+      "reason": "Stylistic hook fitting the literacy theme.",
+      "isos": []
+    },
+    "description": {
+      "supported": true,
+      "reason": "Accurately summarizes the focus on adult literacy using World Bank data.",
+      "isos": []
+    },
+    "beat_0": {
+      "supported": true,
+      "reason": "Matches Uzbekistan (100%) and Chad (30.6%) values in the evidence.",
+      "isos": [
+        "UZB",
+        "TCD"
+      ]
+    },
+    "beat_1": {
+      "supported": true,
+      "reason": "Uzbekistan is ranked 1 with 100%, indicating the highest position.",
+      "isos": [
+        "UZB"
+      ]
+    },
+    "beat_2": {
+      "supported": true,
+      "reason": "Matches values for Chad, Niger, Mali, and Burkina Faso.",
+      "isos": [
+        "TCD",
+        "NER",
+        "MLI",
+        "BFA"
+      ]
+    },
+    "beat_3": {
+      "supported": true,
+      "reason": "Matches China (96.7%) and India (78.2%) values.",
+      "isos": [
+        "CHN",
+        "IND"
+      ]
+    },
+    "beat_4": {
+      "supported": true,
+      "reason": "Matches Brazil's literacy rate value of 94.7%.",
+      "isos": [
+        "BRA"
+      ]
+    },
+    "beat_5": {
+      "supported": true,
+      "reason": "Directly reflects the official indicator definition.",
+      "isos": []
+    },
+    "beat_6": {
+      "supported": true,
+      "reason": "Stylistic closing question consistent with the topic.",
+      "isos": []
+    },
+    "card_6": {
+      "supported": true,
+      "reason": "Matches title card elements.",
+      "isos": []
+    }
+  }
+}

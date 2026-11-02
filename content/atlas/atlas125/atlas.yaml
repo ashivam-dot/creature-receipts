@@ -1,0 +1,78 @@
+id: atlas125
+title: Places Ranked by Adult Literacy
+hook_text: THE READING GAP
+description: A global look at adult literacy levels, comparing high-performing nations with those facing literacy
+  challenges based on World Bank data.
+hashtags:
+- '#education'
+- '#geography'
+- '#countries'
+tags:
+- education
+- adult literacy rate
+- countries ranked by adult literacy rate
+- Uzbekistan
+- Chad
+- world map
+- geography
+- atlas in numbers
+sources:
+- https://data.worldbank.org/indicator/SE.ADT.LITR.ZS
+dataset:
+  kind: worldbank
+  indicator: SE.ADT.LITR.ZS
+  label: Adult literacy rate
+  unit: '%'
+  source: World Bank
+  min_year: 2019
+scale:
+  edges:
+  - 55.0
+  - 75.0
+  - 90.0
+  - 98.0
+  labels:
+  - Under 55%
+  - 55% to 75%
+  - 75% to 90%
+  - 90% to 98%
+  - Over 98%
+value_format: '{v:.1f}%'
+beats:
+- text: In Uzbekistan, adult literacy is 100%. In Chad, it is 30.6%.
+  shot:
+    callouts:
+    - UZB
+    - TCD
+- text: Uzbekistan leads all nations on the map, with universal reading and writing.
+  shot:
+    kind: country
+    iso: UZB
+- text: The lowest nations include Chad at 30.6%, Niger at 35.6%, Mali at 35.6%, and Burkina Faso at 41.6%.
+  shot:
+    kind: rank
+    isos:
+    - TCD
+    - NER
+    - MLI
+    - BFA
+- text: In Asia, China has 96.7%, while India has 78.2%.
+  shot:
+    kind: group
+    isos:
+    - CHN
+    - IND
+- text: Brazil, the largest nation in South America, has 94.7%.
+  shot:
+    kind: country
+    iso: BRA
+- text: The metric counts people ages 15 and above who can read and write a short simple statement about everyday
+    life.
+  basis: Adult literacy rate is the percentage of people ages 15 and above who can both read and write with understanding
+    a short simple statement about their everyday life.
+- text: How high is adult literacy in your country?
+  shot:
+    kind: card
+    lines:
+    - How Literate Is Your Country?
+    - Adult Literacy Rate

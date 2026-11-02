@@ -1,0 +1,77 @@
+id: atlas124
+title: Which Major Country Has the Highest Savings Rate?
+format: odd_one_out
+hook_text: SAVINGS PUZZLE
+description: A global look at national gross savings rates based on World Bank data.
+hashtags:
+- '#economy'
+- '#economics'
+- '#geography'
+tags:
+- wealth
+- gross savings as a percentage of gni
+- countries ranked by gross savings as a percentage of gni
+- Qatar
+- Timor-Leste
+- world map
+- geography
+- atlas in numbers
+sources:
+- https://data.worldbank.org/indicator/NY.GNS.ICTR.GN.ZS
+dataset:
+  kind: worldbank
+  indicator: NY.GNS.ICTR.GN.ZS
+  label: Gross savings as a percentage of GNI
+  unit: '%'
+  source: World Bank
+  min_year: 2019
+scale:
+  edges:
+  - 10.0
+  - 20.0
+  - 30.0
+  - 40.0
+  labels:
+  - Under 10%
+  - 10-20%
+  - 20-30%
+  - 30-40%
+  - Over 40%
+value_format: '{v:.1f}%'
+beats:
+- text: Qatar saves 59.5% of its national income. A giant economy breaks the expected pattern.
+  shot:
+    callouts:
+    - QAT
+- text: Consider the USA, the UK, and China.
+  shot:
+    kind: group
+    isos:
+    - USA
+    - GBR
+    - CHN
+- text: The USA saves 16.8%, while the UK saves 17.3%.
+  shot:
+    kind: group
+    isos:
+    - USA
+    - GBR
+- text: China is the odd one out, saving 43%.
+  shot:
+    kind: country
+    iso: CHN
+- text: At the opposite end, East Timor is down 18.5%.
+  shot:
+    kind: country
+    iso: TLS
+- text: Gross savings count national income left after total consumption.
+  shot:
+    callouts:
+    - QAT
+  basis: Gross savings are calculated as gross national income less total consumption, plus net transfers.
+- text: How much national income does your country save?
+  shot:
+    kind: card
+    lines:
+    - How Much Do You Save?
+    - Gross Savings (% of GNI), World Bank

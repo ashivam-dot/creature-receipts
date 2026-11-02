@@ -1,0 +1,121 @@
+{
+  "errors": [
+    {
+      "surface": "title",
+      "claim": "Which Major Country Has the Highest Savings Rate?",
+      "reason": "Qatar is ranked #1 in the dataset with 59.5%, but calling it a major country based solely on this dataset or general size is subjective/unsourced framing, though the primary factual check relies on the superlative. Qatar is indeed #1.",
+      "severity": "style"
+    },
+    {
+      "surface": "beat_3",
+      "claim": "China is the odd one out, saving 43%.",
+      "reason": "China's savings rate of 43% is correct, but 'odd one out' is an unsourced narrative claim.",
+      "severity": "style"
+    }
+  ],
+  "claims": [
+    {
+      "surface": "beat_0",
+      "text": "Qatar saves 59.5% of its national income.",
+      "isos": [
+        "QAT"
+      ],
+      "support": "Qatar, value: 59.5138473728343, display: 59.5%"
+    },
+    {
+      "surface": "beat_2",
+      "text": "The USA saves 16.8%, while the UK saves 17.3%.",
+      "isos": [
+        "USA",
+        "GBR"
+      ],
+      "support": "United States: 16.8%, United Kingdom: 17.3%"
+    },
+    {
+      "surface": "beat_3",
+      "text": "China is the odd one out, saving 43%.",
+      "isos": [
+        "CHN"
+      ],
+      "support": "China: 43%"
+    },
+    {
+      "surface": "beat_4",
+      "text": "At the opposite end, East Timor is down 18.5%.",
+      "isos": [
+        "TLS"
+      ],
+      "support": "Timor-Leste, value: -18.5327975851099, display: -18.5%, rank: 160"
+    }
+  ],
+  "surface_checks": {
+    "title": {
+      "supported": true,
+      "reason": "Qatar is highest at 59.5%, though 'major' is framing.",
+      "isos": []
+    },
+    "hook": {
+      "supported": true,
+      "reason": "Stylistic hook.",
+      "isos": []
+    },
+    "description": {
+      "supported": true,
+      "reason": "Accurately describes World Bank gross savings rate data.",
+      "isos": []
+    },
+    "beat_0": {
+      "supported": true,
+      "reason": "Matches Qatar's value of 59.5%.",
+      "isos": [
+        "QAT"
+      ]
+    },
+    "beat_1": {
+      "supported": true,
+      "reason": "Lists USA, UK, and China, matching the visual plan.",
+      "isos": [
+        "USA",
+        "GBR",
+        "CHN"
+      ]
+    },
+    "beat_2": {
+      "supported": true,
+      "reason": "USA (16.8%) and GBR (17.3%) match the data values.",
+      "isos": [
+        "USA",
+        "GBR"
+      ]
+    },
+    "beat_3": {
+      "supported": true,
+      "reason": "China's savings rate is 43%.",
+      "isos": [
+        "CHN"
+      ]
+    },
+    "beat_4": {
+      "supported": true,
+      "reason": "Timor-Leste (East Timor) value is -18.5%.",
+      "isos": [
+        "TLS"
+      ]
+    },
+    "beat_5": {
+      "supported": true,
+      "reason": "Matches the definition of gross savings (national income less total consumption).",
+      "isos": []
+    },
+    "beat_6": {
+      "supported": true,
+      "reason": "Standard engagement question.",
+      "isos": []
+    },
+    "card_6": {
+      "supported": true,
+      "reason": "Matches indicator and source title.",
+      "isos": []
+    }
+  }
+}

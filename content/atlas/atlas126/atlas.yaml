@@ -1,0 +1,74 @@
+id: atlas126
+title: 'Iraq vs USA: Natural Resource Wealth'
+format: versus
+hook_text: RESOURCE WEALTH GAP
+description: Comparing natural resource rents as a percentage of GDP between Iraq and the USA, based on World Bank
+  data.
+hashtags:
+- '#economy'
+- '#geography'
+- '#countries'
+tags:
+- wealth
+- natural resource rents as % of gdp
+- countries ranked by natural resource rents as % of gdp
+- Libya
+- Greenland
+- world map
+- geography
+- atlas in numbers
+sources:
+- https://data.worldbank.org/indicator/NY.GDP.TOTL.RT.ZS
+dataset:
+  kind: worldbank
+  indicator: NY.GDP.TOTL.RT.ZS
+  label: Natural resource rents as % of GDP
+  unit: '%'
+  source: World Bank
+  min_year: 2019
+scale:
+  edges:
+  - 0.5
+  - 2.0
+  - 10.0
+  - 25.0
+  labels:
+  - <0.5%
+  - 0.5-2%
+  - 2-10%
+  - 10-25%
+  - '>25%'
+value_format: '{v:.4f}%'
+beats:
+- text: In Iraq, natural resource rents make up 43.4% of GDP. In the USA, just 1.3%.
+  shot:
+    callouts:
+    - IRQ
+    - USA
+- text: That gives Iraq 33 times the resource reliance of the USA.
+  shot:
+    kind: group
+    isos:
+    - IRQ
+    - USA
+- text: These rents sum up oil, natural gas, coal, mineral, and forest rents.
+  shot:
+    kind: country
+    iso: IRQ
+  basis: Total natural resources rents are the sum of oil rents, natural gas rents, coal rents (hard and soft),
+    mineral rents, and forest rents.
+- text: Across the globe, the median country sits at just 1.7%.
+- text: Libya leads all countries at 61%, while Japan dips to 0.05%.
+  shot:
+    kind: rank
+    isos:
+    - LBY
+    - IRQ
+    - USA
+    - JPN
+- text: How much of your nation's economy comes from natural resources?
+  shot:
+    kind: card
+    lines:
+    - RESOURCE DEPENDENCE?
+    - Natural resource rents (% of GDP), World Bank

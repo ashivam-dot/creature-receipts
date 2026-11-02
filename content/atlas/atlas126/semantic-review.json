@@ -1,0 +1,125 @@
+{
+  "errors": [],
+  "claims": [
+    {
+      "surface": "beat_0",
+      "text": "In Iraq, natural resource rents make up 43.4% of GDP.",
+      "isos": [
+        "IRQ"
+      ],
+      "support": "Iraq value is 43.4458576871878, display 43.4%"
+    },
+    {
+      "surface": "beat_0",
+      "text": "In the USA, just 1.3%.",
+      "isos": [
+        "USA"
+      ],
+      "support": "United States value is 1.27994423022721, display 1.3%"
+    },
+    {
+      "surface": "beat_1",
+      "text": "That gives Iraq 33 times the resource reliance of the USA.",
+      "isos": [
+        "IRQ",
+        "USA"
+      ],
+      "support": "Iraq 43.446 / USA 1.280 is approximately 33.9 times"
+    },
+    {
+      "surface": "beat_2",
+      "text": "These rents sum up oil, natural gas, coal, mineral, and forest rents.",
+      "isos": [],
+      "support": "Total natural resources rents are the sum of oil rents, natural gas rents, coal rents (hard and soft), mineral rents, and forest rents."
+    },
+    {
+      "surface": "beat_3",
+      "text": "Across the globe, the median country sits at just 1.7%.",
+      "isos": [],
+      "support": "China value is 1.70756488252672 (display 1.7%, rank 102 out of 201)"
+    },
+    {
+      "surface": "beat_4",
+      "text": "Libya leads all countries at 61%",
+      "isos": [
+        "LBY"
+      ],
+      "support": "Libya value is 61.0347089411103, display 61%, rank 1"
+    },
+    {
+      "surface": "beat_4",
+      "text": "while Japan dips to 0.05%.",
+      "isos": [
+        "JPN"
+      ],
+      "support": "Japan value is 0.0473044627668744, display 0.05%, rank 161"
+    }
+  ],
+  "surface_checks": {
+    "title": {
+      "supported": true,
+      "reason": "Title frames Iraq vs USA natural resource wealth using World Bank data.",
+      "isos": [
+        "IRQ",
+        "USA"
+      ]
+    },
+    "hook": {
+      "supported": true,
+      "reason": "Style hook introducing resource wealth gap.",
+      "isos": []
+    },
+    "description": {
+      "supported": true,
+      "reason": "Description accurately reflects the comparison of natural resource rents as a percentage of GDP between Iraq and the USA based on World Bank data.",
+      "isos": [
+        "IRQ",
+        "USA"
+      ]
+    },
+    "beat_0": {
+      "supported": true,
+      "reason": "Iraq is 43.4% and USA is 1.3% in the source data.",
+      "isos": [
+        "IRQ",
+        "USA"
+      ]
+    },
+    "beat_1": {
+      "supported": true,
+      "reason": "Ratio between Iraq and USA rents is approximately 33 times.",
+      "isos": [
+        "IRQ",
+        "USA"
+      ]
+    },
+    "beat_2": {
+      "supported": true,
+      "reason": "Matches definition in evidence exactly.",
+      "isos": []
+    },
+    "beat_3": {
+      "supported": true,
+      "reason": "Median value matches 1.7% from China (rank 102 out of 201).",
+      "isos": []
+    },
+    "beat_4": {
+      "supported": true,
+      "reason": "Libya rank 1 at 61% and Japan rank 161 at 0.05% are supported by the dataset.",
+      "isos": [
+        "LBY",
+        "JPN"
+      ]
+    },
+    "beat_5": {
+      "supported": true,
+      "reason": "Ordinary question about resource dependence.",
+      "isos": []
+    },
+    "card_5": {
+      "supported": true,
+      "reason": "Card title and source match the indicator description.",
+      "isos": []
+    }
+  }
+}

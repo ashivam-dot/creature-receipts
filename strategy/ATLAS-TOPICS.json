@@ -4462,7 +4462,7 @@
     "#education"
    ],
    "source_url": "https://data.worldbank.org/indicator/SE.ADT.LITR.ZS",
-   "status": "open",
+   "status": "ready:atlas125",
    "added_by": "refill"
   },
   {
@@ -4501,7 +4501,7 @@
     "#economics"
    ],
    "source_url": "https://data.worldbank.org/indicator/GC.TAX.YPKG.ZS",
-   "status": "ready:atlas122",
+   "status": "used:atlas122",
    "added_by": "refill"
   },
   {
@@ -4703,7 +4703,7 @@
    "id": "t132",
    "topic": "National Wealth from Natural Resources",
    "angle": "While the global median is less than 2%, natural resource rents account for over 30% of the economy in several resource-rich nations.",
-   "format": "rank_ladder",
+   "format": "versus",
    "dataset": {
     "kind": "worldbank",
     "indicator": "NY.GDP.TOTL.RT.ZS",
@@ -4735,7 +4735,7 @@
     "#economy"
    ],
    "source_url": "https://data.worldbank.org/indicator/NY.GDP.TOTL.RT.ZS",
-   "status": "open",
+   "status": "ready:atlas126",
    "added_by": "refill"
   },
   {
@@ -4969,7 +4969,7 @@
     "#water"
    ],
    "source_url": "https://data.worldbank.org/indicator/SH.H2O.SMDW.ZS",
-   "status": "ready:atlas120",
+   "status": "used:atlas120",
    "added_by": "refill"
   },
   {
@@ -5008,14 +5008,14 @@
     "#demographics"
    ],
    "source_url": "https://data.worldbank.org/indicator/SP.POP.TOTL.MA.ZS",
-   "status": "ready:atlas121",
+   "status": "used:atlas121",
    "added_by": "refill"
   },
   {
    "id": "t140",
    "topic": "Global Gross Savings Rates",
    "angle": "While Qatar saves nearly 60% of its national income, several countries have negative savings rates, meaning their total consumption exceeds their income.",
-   "format": "map_reveal",
+   "format": "odd_one_out",
    "dataset": {
     "kind": "worldbank",
     "indicator": "NY.GNS.ICTR.GN.ZS",
@@ -5047,7 +5047,7 @@
     "#economics"
    ],
    "source_url": "https://data.worldbank.org/indicator/NY.GNS.ICTR.GN.ZS",
-   "status": "open",
+   "status": "ready:atlas124",
    "added_by": "refill"
   },
   {
@@ -5125,7 +5125,7 @@
     "#health"
    ],
    "source_url": "https://data.worldbank.org/indicator/SH.STA.BASS.ZS",
-   "status": "ready:atlas123",
+   "status": "used:atlas123",
    "added_by": "refill"
   },
   {

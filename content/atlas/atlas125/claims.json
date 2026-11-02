@@ -1,0 +1,1323 @@
+{
+  "version": 1,
+  "evidence": {
+    "version": 1,
+    "indicator": "SE.ADT.LITR.ZS",
+    "definition": "Adult literacy rate is the percentage of people ages 15 and above who can both read and write with understanding a short simple statement about their everyday life.",
+    "source": "https://data.worldbank.org/indicator/SE.ADT.LITR.ZS",
+    "source_response_sha256": "d612648181ae3ae463a72fd3ecf99e062a0ff01384459c3a67cc7ae90d811ad2",
+    "source_organization": "Data API, UN Educational, Scientific and Cultural Organization (UNESCO), uri: https://databrowser.uis.unesco.org/resources, note: The data are obtained through the UIS API.  Detailed documentation is available at: https://api.uis.unesco.org/api/public/documentation/, publisher: UNESCO Institute for Statistics (UIS), type: Excel (bulk file), date accessed: 2026-03-19, date published: 2026-02",
+    "year_label": "latest available 2019–2024",
+    "universe": "mapped countries and territories with data",
+    "count": 107,
+    "threshold": null,
+    "at_or_above": null,
+    "entities": {
+      "AFG": {
+        "name": "Afghanistan",
+        "value": 37.2700004577637,
+        "display": "37.3%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 104
+      },
+      "ALB": {
+        "name": "Albania",
+        "value": 97.6800003051758,
+        "display": "97.7%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 25
+      },
+      "AGO": {
+        "name": "Angola",
+        "value": 68.1800003051758,
+        "display": "68.2%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 89
+      },
+      "ARG": {
+        "name": "Argentina",
+        "value": 99.1399993896484,
+        "display": "99.1%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 15
+      },
+      "ARM": {
+        "name": "Armenia",
+        "value": 99.8399963378906,
+        "display": "99.8%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 7
+      },
+      "AZE": {
+        "name": "Azerbaijan",
+        "value": 99.7799987792969,
+        "display": "99.8%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 8
+      },
+      "BHR": {
+        "name": "Bahrain",
+        "value": 97.8199996948242,
+        "display": "97.8%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 24
+      },
+      "BGD": {
+        "name": "Bangladesh",
+        "value": 79.0,
+        "display": "79%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 71
+      },
+      "BLR": {
+        "name": "Belarus",
+        "value": 99.870002746582,
+        "display": "99.9%",
+        "year": 2019,
+        "unit": "%",
+        "rank": 5
+      },
+      "BLZ": {
+        "name": "Belize",
+        "value": 87.879997253418,
+        "display": "87.9%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 62
+      },
+      "BEN": {
+        "name": "Benin",
+        "value": 51.3800010681152,
+        "display": "51.4%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 98
+      },
+      "BTN": {
+        "name": "Bhutan",
+        "value": 64.9100036621094,
+        "display": "64.9%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 90
+      },
+      "BOL": {
+        "name": "Bolivia",
+        "value": 96.7300033569336,
+        "display": "96.7%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 31
+      },
+      "BRA": {
+        "name": "Brazil",
+        "value": 94.7399978637695,
+        "display": "94.7%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 41
+      },
+      "BFA": {
+        "name": "Burkina Faso",
+        "value": 41.5670909952631,
+        "display": "41.6%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 103
+      },
+      "BDI": {
+        "name": "Burundi",
+        "value": 71.3374789737041,
+        "display": "71.3%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 83
+      },
+      "CPV": {
+        "name": "Cabo Verde",
+        "value": 88.4700012207031,
+        "display": "88.5%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 59
+      },
+      "KHM": {
+        "name": "Cambodia",
+        "value": 71.9300003051758,
+        "display": "71.9%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 81
+      },
+      "CAF": {
+        "name": "Central African Republic",
+        "value": 42.439998626709,
+        "display": "42.4%",
+        "year": 2019,
+        "unit": "%",
+        "rank": 102
+      },
+      "TCD": {
+        "name": "Chad",
+        "value": 30.6299991607666,
+        "display": "30.6%",
+        "year": 2019,
+        "unit": "%",
+        "rank": 107
+      },
+      "CHN": {
+        "name": "China",
+        "value": 96.7399978637695,
+        "display": "96.7%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 30
+      },
+      "COL": {
+        "name": "Colombia",
+        "value": 95.3399963378906,
+        "display": "95.3%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 39
+      },
+      "COM": {
+        "name": "Comoros",
+        "value": 75.6201980162165,
+        "display": "75.6%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 78
+      },
+      "COD": {
+        "name": "Congo, Dem. Rep.",
+        "value": 68.5,
+        "display": "68.5%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 88
+      },
+      "CIV": {
+        "name": "Cote d'Ivoire",
+        "value": 50.0,
+        "display": "50%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 100
+      },
+      "CUB": {
+        "name": "Cuba",
+        "value": 97.6500015258789,
+        "display": "97.7%",
+        "year": 2019,
+        "unit": "%",
+        "rank": 26
+      },
+      "DOM": {
+        "name": "Dominican Republic",
+        "value": 94.0299987792969,
+        "display": "94%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 45
+      },
+      "ECU": {
+        "name": "Ecuador",
+        "value": 93.4899978637695,
+        "display": "93.5%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 48
+      },
+      "EGY": {
+        "name": "Egypt, Arab Rep.",
+        "value": 79.4531619498685,
+        "display": "79.5%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 70
+      },
+      "SLV": {
+        "name": "El Salvador",
+        "value": 89.7699966430664,
+        "display": "89.8%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 56
+      },
+      "SWZ": {
+        "name": "Eswatini",
+        "value": 90.75,
+        "display": "90.8%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 54
+      },
+      "ETH": {
+        "name": "Ethiopia",
+        "value": 60.4599990844727,
+        "display": "60.5%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 93
+      },
+      "GAB": {
+        "name": "Gabon",
+        "value": 88.8600006103516,
+        "display": "88.9%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 58
+      },
+      "GMB": {
+        "name": "Gambia, The",
+        "value": 51.6399993896484,
+        "display": "51.6%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 97
+      },
+      "GEO": {
+        "name": "Georgia",
+        "value": 99.6800003051758,
+        "display": "99.7%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 10
+      },
+      "GHA": {
+        "name": "Ghana",
+        "value": 76.4899978637695,
+        "display": "76.5%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 76
+      },
+      "GTM": {
+        "name": "Guatemala",
+        "value": 82.1100006103516,
+        "display": "82.1%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 69
+      },
+      "GNB": {
+        "name": "Guinea-Bissau",
+        "value": 63.9300003051758,
+        "display": "63.9%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 91
+      },
+      "GUY": {
+        "name": "Guyana",
+        "value": 85.6399993896484,
+        "display": "85.6%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 67
+      },
+      "HND": {
+        "name": "Honduras",
+        "value": 88.25,
+        "display": "88.2%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 60
+      },
+      "IND": {
+        "name": "India",
+        "value": 78.1625330351403,
+        "display": "78.2%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 74
+      },
+      "IDN": {
+        "name": "Indonesia",
+        "value": 96.0,
+        "display": "96%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 35
+      },
+      "IRN": {
+        "name": "Iran, Islamic Rep.",
+        "value": 88.9168161136597,
+        "display": "88.9%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 57
+      },
+      "IRQ": {
+        "name": "Iraq",
+        "value": 84.0648941705243,
+        "display": "84.1%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 68
+      },
+      "ITA": {
+        "name": "Italy",
+        "value": 99.3499984741211,
+        "display": "99.3%",
+        "year": 2019,
+        "unit": "%",
+        "rank": 12
+      },
+      "JOR": {
+        "name": "Jordan",
+        "value": 94.4400024414062,
+        "display": "94.4%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 42
+      },
+      "KIR": {
+        "name": "Kiribati",
+        "value": 98.6079816424987,
+        "display": "98.6%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 19
+      },
+      "KWT": {
+        "name": "Kuwait",
+        "value": 96.4599990844727,
+        "display": "96.5%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 32
+      },
+      "LAO": {
+        "name": "Lao PDR",
+        "value": 75.6399993896484,
+        "display": "75.6%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 77
+      },
+      "LBN": {
+        "name": "Lebanon",
+        "value": 92.0099744752418,
+        "display": "92%",
+        "year": 2019,
+        "unit": "%",
+        "rank": 51
+      },
+      "LSO": {
+        "name": "Lesotho",
+        "value": 90.4499969482422,
+        "display": "90.4%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 55
+      },
+      "MDG": {
+        "name": "Madagascar",
+        "value": 74.6900024414062,
+        "display": "74.7%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 79
+      },
+      "MWI": {
+        "name": "Malawi",
+        "value": 70.1500015258789,
+        "display": "70.2%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 85
+      },
+      "MYS": {
+        "name": "Malaysia",
+        "value": 95.7699966430664,
+        "display": "95.8%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 36
+      },
+      "MLI": {
+        "name": "Mali",
+        "value": 35.6300010681152,
+        "display": "35.6%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 105
+      },
+      "MHL": {
+        "name": "Marshall Islands",
+        "value": 95.7629302411191,
+        "display": "95.8%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 37
+      },
+      "MRT": {
+        "name": "Mauritania",
+        "value": 59.5299987792969,
+        "display": "59.5%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 94
+      },
+      "MUS": {
+        "name": "Mauritius",
+        "value": 94.2877776512134,
+        "display": "94.3%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 44
+      },
+      "MEX": {
+        "name": "Mexico",
+        "value": 95.5500030517578,
+        "display": "95.6%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 38
+      },
+      "MNG": {
+        "name": "Mongolia",
+        "value": 98.6399993896484,
+        "display": "98.6%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 18
+      },
+      "MOZ": {
+        "name": "Mozambique",
+        "value": 61.6653441678133,
+        "display": "61.7%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 92
+      },
+      "MMR": {
+        "name": "Myanmar",
+        "value": 93.527395549521,
+        "display": "93.5%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 47
+      },
+      "NAM": {
+        "name": "Namibia",
+        "value": 87.6399993896484,
+        "display": "87.6%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 63
+      },
+      "NPL": {
+        "name": "Nepal",
+        "value": 68.7099990844727,
+        "display": "68.7%",
+        "year": 2019,
+        "unit": "%",
+        "rank": 87
+      },
+      "NER": {
+        "name": "Niger",
+        "value": 35.6100006103516,
+        "display": "35.6%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 106
+      },
+      "NGA": {
+        "name": "Nigeria",
+        "value": 70.4100036621094,
+        "display": "70.4%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 84
+      },
+      "OMN": {
+        "name": "Oman",
+        "value": 97.3399963378906,
+        "display": "97.3%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 28
+      },
+      "PAK": {
+        "name": "Pakistan",
+        "value": 58.8600006103516,
+        "display": "58.9%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 95
+      },
+      "PLW": {
+        "name": "Palau",
+        "value": 99.8448081264108,
+        "display": "99.8%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 6
+      },
+      "PAN": {
+        "name": "Panama",
+        "value": 96.2276533152296,
+        "display": "96.2%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 33
+      },
+      "PNG": {
+        "name": "Papua New Guinea",
+        "value": 87.0046890533686,
+        "display": "87%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 65
+      },
+      "PRY": {
+        "name": "Paraguay",
+        "value": 94.8600006103516,
+        "display": "94.9%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 40
+      },
+      "PER": {
+        "name": "Peru",
+        "value": 93.6600036621094,
+        "display": "93.7%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 46
+      },
+      "PHL": {
+        "name": "Philippines",
+        "value": 98.4700012207031,
+        "display": "98.5%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 20
+      },
+      "ROU": {
+        "name": "Romania",
+        "value": 99.1600036621094,
+        "display": "99.2%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 14
+      },
+      "RUS": {
+        "name": "Russian Federation",
+        "value": 99.9300003051758,
+        "display": "99.9%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 2
+      },
+      "RWA": {
+        "name": "Rwanda",
+        "value": 78.7600021362305,
+        "display": "78.8%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 72
+      },
+      "WSM": {
+        "name": "Samoa",
+        "value": 97.9899978637695,
+        "display": "98%",
+        "year": 2019,
+        "unit": "%",
+        "rank": 21
+      },
+      "SMR": {
+        "name": "San Marino",
+        "value": 99.9100036621094,
+        "display": "99.9%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 3
+      },
+      "STP": {
+        "name": "Sao Tome and Principe",
+        "value": 87.4400024414062,
+        "display": "87.4%",
+        "year": 2019,
+        "unit": "%",
+        "rank": 64
+      },
+      "SAU": {
+        "name": "Saudi Arabia",
+        "value": 97.9300003051758,
+        "display": "97.9%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 23
+      },
+      "SEN": {
+        "name": "Senegal",
+        "value": 50.3600006103516,
+        "display": "50.4%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 99
+      },
+      "SRB": {
+        "name": "Serbia",
+        "value": 99.3399963378906,
+        "display": "99.3%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 13
+      },
+      "SLE": {
+        "name": "Sierra Leone",
+        "value": 43.5800018310547,
+        "display": "43.6%",
+        "year": 2019,
+        "unit": "%",
+        "rank": 101
+      },
+      "SGP": {
+        "name": "Singapore",
+        "value": 97.6500015258789,
+        "display": "97.7%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 26
+      },
+      "SOM": {
+        "name": "Somalia, Fed. Rep.",
+        "value": 54.1199989318848,
+        "display": "54.1%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 96
+      },
+      "ZAF": {
+        "name": "South Africa",
+        "value": 91.1500015258789,
+        "display": "91.2%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 52
+      },
+      "ESP": {
+        "name": "Spain",
+        "value": 99.6999969482422,
+        "display": "99.7%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 9
+      },
+      "LKA": {
+        "name": "Sri Lanka",
+        "value": 92.7399978637695,
+        "display": "92.7%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 50
+      },
+      "SYR": {
+        "name": "Syrian Arab Republic",
+        "value": 94.4199981689453,
+        "display": "94.4%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 43
+      },
+      "TZA": {
+        "name": "Tanzania",
+        "value": 78.2099990844727,
+        "display": "78.2%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 73
+      },
+      "THA": {
+        "name": "Thailand",
+        "value": 91.0999984741211,
+        "display": "91.1%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 53
+      },
+      "TLS": {
+        "name": "Timor-Leste",
+        "value": 69.4000015258789,
+        "display": "69.4%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 86
+      },
+      "TGO": {
+        "name": "Togo",
+        "value": 72.5999984741211,
+        "display": "72.6%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 80
+      },
+      "TON": {
+        "name": "Tonga",
+        "value": 99.4800033569336,
+        "display": "99.5%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 11
+      },
+      "TUN": {
+        "name": "Tunisia",
+        "value": 86.25,
+        "display": "86.2%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 66
+      },
+      "TUR": {
+        "name": "Turkiye",
+        "value": 97.2600021362305,
+        "display": "97.3%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 29
+      },
+      "TKM": {
+        "name": "Turkmenistan",
+        "value": 99.9000015258789,
+        "display": "99.9%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 4
+      },
+      "UGA": {
+        "name": "Uganda",
+        "value": 77.0400009155273,
+        "display": "77%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 75
+      },
+      "ARE": {
+        "name": "United Arab Emirates",
+        "value": 98.8099975585938,
+        "display": "98.8%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 17
+      },
+      "URY": {
+        "name": "Uruguay",
+        "value": 98.9100036621094,
+        "display": "98.9%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 16
+      },
+      "UZB": {
+        "name": "Uzbekistan",
+        "value": 100.0,
+        "display": "100%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 1
+      },
+      "VUT": {
+        "name": "Vanuatu",
+        "value": 87.9599990844727,
+        "display": "88%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 61
+      },
+      "VNM": {
+        "name": "Viet Nam",
+        "value": 96.129997253418,
+        "display": "96.1%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 34
+      },
+      "PSE": {
+        "name": "West Bank and Gaza",
+        "value": 97.9389541214558,
+        "display": "97.9%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 22
+      },
+      "ZMB": {
+        "name": "Zambia",
+        "value": 71.7699966430664,
+        "display": "71.8%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 82
+      },
+      "ZWE": {
+        "name": "Zimbabwe",
+        "value": 93.2300033569336,
+        "display": "93.2%",
+        "year": 2019,
+        "unit": "%",
+        "rank": 49
+      }
+    }
+  },
+  "review": {
+    "errors": [],
+    "claims": [
+      {
+        "surface": "title",
+        "text": "Places Ranked by Adult Literacy",
+        "isos": [],
+        "support": "Global adult literacy rate rankings based on World Bank data.",
+        "evidence": {}
+      },
+      {
+        "surface": "hook",
+        "text": "THE READING GAP",
+        "isos": [],
+        "support": "A global look at adult literacy levels.",
+        "evidence": {}
+      },
+      {
+        "surface": "description",
+        "text": "A global look at adult literacy levels, comparing high-performing nations with those facing literacy challenges based on World Bank data.",
+        "isos": [],
+        "support": "World Bank Adult Literacy Rate data.",
+        "evidence": {}
+      },
+      {
+        "surface": "beat_0",
+        "text": "In Uzbekistan, adult literacy is 100%. In Chad, it is 30.6%.",
+        "isos": [
+          "UZB",
+          "TCD"
+        ],
+        "support": "Uzbekistan value: 100.0, Chad value: 30.6299991607666 (displayed as 30.6%)",
+        "evidence": {
+          "UZB": {
+            "name": "Uzbekistan",
+            "value": 100.0,
+            "display": "100%",
+            "year": 2022,
+            "unit": "%",
+            "rank": 1
+          },
+          "TCD": {
+            "name": "Chad",
+            "value": 30.6299991607666,
+            "display": "30.6%",
+            "year": 2019,
+            "unit": "%",
+            "rank": 107
+          }
+        }
+      },
+      {
+        "surface": "beat_1",
+        "text": "Uzbekistan leads all nations on the map, with universal reading and writing.",
+        "isos": [
+          "UZB"
+        ],
+        "support": "Uzbekistan rank: 1, value: 100.0",
+        "evidence": {
+          "UZB": {
+            "name": "Uzbekistan",
+            "value": 100.0,
+            "display": "100%",
+            "year": 2022,
+            "unit": "%",
+            "rank": 1
+          }
+        }
+      },
+      {
+        "surface": "beat_2",
+        "text": "The lowest nations include Chad at 30.6%, Niger at 35.6%, Mali at 35.6%, and Burkina Faso at 41.6%.",
+        "isos": [
+          "TCD",
+          "NER",
+          "MLI",
+          "BFA"
+        ],
+        "support": "Chad rank: 107 (30.6%), Niger rank: 106 (35.6%), Mali rank: 105 (35.6%), Burkina Faso rank: 103 (41.6%)",
+        "evidence": {
+          "TCD": {
+            "name": "Chad",
+            "value": 30.6299991607666,
+            "display": "30.6%",
+            "year": 2019,
+            "unit": "%",
+            "rank": 107
+          },
+          "NER": {
+            "name": "Niger",
+            "value": 35.6100006103516,
+            "display": "35.6%",
+            "year": 2022,
+            "unit": "%",
+            "rank": 106
+          },
+          "MLI": {
+            "name": "Mali",
+            "value": 35.6300010681152,
+            "display": "35.6%",
+            "year": 2024,
+            "unit": "%",
+            "rank": 105
+          },
+          "BFA": {
+            "name": "Burkina Faso",
+            "value": 41.5670909952631,
+            "display": "41.6%",
+            "year": 2023,
+            "unit": "%",
+            "rank": 103
+          }
+        }
+      },
+      {
+        "surface": "beat_3",
+        "text": "In Asia, China has 96.7%, while India has 78.2%.",
+        "isos": [
+          "CHN",
+          "IND"
+        ],
+        "support": "China value: 96.7399978637695 (96.7%), India value: 78.1625330351403 (78.2%)",
+        "evidence": {
+          "CHN": {
+            "name": "China",
+            "value": 96.7399978637695,
+            "display": "96.7%",
+            "year": 2020,
+            "unit": "%",
+            "rank": 30
+          },
+          "IND": {
+            "name": "India",
+            "value": 78.1625330351403,
+            "display": "78.2%",
+            "year": 2024,
+            "unit": "%",
+            "rank": 74
+          }
+        }
+      },
+      {
+        "surface": "beat_4",
+        "text": "Brazil, the largest nation in South America, has 94.7%.",
+        "isos": [
+          "BRA"
+        ],
+        "support": "Brazil value: 94.7399978637695 (94.7%)",
+        "evidence": {
+          "BRA": {
+            "name": "Brazil",
+            "value": 94.7399978637695,
+            "display": "94.7%",
+            "year": 2024,
+            "unit": "%",
+            "rank": 41
+          }
+        }
+      },
+      {
+        "surface": "beat_5",
+        "text": "The metric counts people ages 15 and above who can read and write a short simple statement about everyday life.",
+        "isos": [],
+        "support": "Adult literacy rate is the percentage of people ages 15 and above who can both read and write with understanding a short simple statement about their everyday life.",
+        "evidence": {}
+      },
+      {
+        "surface": "beat_6",
+        "text": "How high is adult literacy in your country?",
+        "isos": [],
+        "support": "Inquiry based on Adult Literacy Rate indicator.",
+        "evidence": {}
+      },
+      {
+        "surface": "card_6",
+        "text": "How Literate Is Your Country?",
+        "isos": [],
+        "support": "Title card reflecting adult literacy topic.",
+        "evidence": {}
+      },
+      {
+        "surface": "title",
+        "text": "Places Ranked by Adult Literacy",
+        "isos": [],
+        "support": "Accurately describes the ranking of places by adult literacy.",
+        "method": "complete-surface-check",
+        "evidence": {}
+      },
+      {
+        "surface": "hook",
+        "text": "THE READING GAP",
+        "isos": [],
+        "support": "Stylistic hook fitting the literacy theme.",
+        "method": "complete-surface-check",
+        "evidence": {}
+      },
+      {
+        "surface": "description",
+        "text": "A global look at adult literacy levels, comparing high-performing nations with those facing literacy challenges based on World Bank data.",
+        "isos": [],
+        "support": "Accurately summarizes the focus on adult literacy using World Bank data.",
+        "method": "complete-surface-check",
+        "evidence": {}
+      },
+      {
+        "surface": "beat_0",
+        "text": "In Uzbekistan, adult literacy is 100%. In Chad, it is 30.6%.",
+        "isos": [
+          "UZB",
+          "TCD"
+        ],
+        "support": "Matches Uzbekistan (100%) and Chad (30.6%) values in the evidence.",
+        "method": "complete-surface-check",
+        "evidence": {
+          "UZB": {
+            "name": "Uzbekistan",
+            "value": 100.0,
+            "display": "100%",
+            "year": 2022,
+            "unit": "%",
+            "rank": 1
+          },
+          "TCD": {
+            "name": "Chad",
+            "value": 30.6299991607666,
+            "display": "30.6%",
+            "year": 2019,
+            "unit": "%",
+            "rank": 107
+          }
+        }
+      },
+      {
+        "surface": "beat_1",
+        "text": "Uzbekistan leads all nations on the map, with universal reading and writing.",
+        "isos": [
+          "UZB"
+        ],
+        "support": "Uzbekistan is ranked 1 with 100%, indicating the highest position.",
+        "method": "complete-surface-check",
+        "evidence": {
+          "UZB": {
+            "name": "Uzbekistan",
+            "value": 100.0,
+            "display": "100%",
+            "year": 2022,
+            "unit": "%",
+            "rank": 1
+          }
+        }
+      },
+      {
+        "surface": "beat_2",
+        "text": "The lowest nations include Chad at 30.6%, Niger at 35.6%, Mali at 35.6%, and Burkina Faso at 41.6%.",
+        "isos": [
+          "TCD",
+          "NER",
+          "MLI",
+          "BFA"
+        ],
+        "support": "Matches values for Chad, Niger, Mali, and Burkina Faso.",
+        "method": "complete-surface-check",
+        "evidence": {
+          "TCD": {
+            "name": "Chad",
+            "value": 30.6299991607666,
+            "display": "30.6%",
+            "year": 2019,
+            "unit": "%",
+            "rank": 107
+          },
+          "NER": {
+            "name": "Niger",
+            "value": 35.6100006103516,
+            "display": "35.6%",
+            "year": 2022,
+            "unit": "%",
+            "rank": 106
+          },
+          "MLI": {
+            "name": "Mali",
+            "value": 35.6300010681152,
+            "display": "35.6%",
+            "year": 2024,
+            "unit": "%",
+            "rank": 105
+          },
+          "BFA": {
+            "name": "Burkina Faso",
+            "value": 41.5670909952631,
+            "display": "41.6%",
+            "year": 2023,
+            "unit": "%",
+            "rank": 103
+          }
+        }
+      },
+      {
+        "surface": "beat_3",
+        "text": "In Asia, China has 96.7%, while India has 78.2%.",
+        "isos": [
+          "CHN",
+          "IND"
+        ],
+        "support": "Matches China (96.7%) and India (78.2%) values.",
+        "method": "complete-surface-check",
+        "evidence": {
+          "CHN": {
+            "name": "China",
+            "value": 96.7399978637695,
+            "display": "96.7%",
+            "year": 2020,
+            "unit": "%",
+            "rank": 30
+          },
+          "IND": {
+            "name": "India",
+            "value": 78.1625330351403,
+            "display": "78.2%",
+            "year": 2024,
+            "unit": "%",
+            "rank": 74
+          }
+        }
+      },
+      {
+        "surface": "beat_4",
+        "text": "Brazil, the largest nation in South America, has 94.7%.",
+        "isos": [
+          "BRA"
+        ],
+        "support": "Matches Brazil's literacy rate value of 94.7%.",
+        "method": "complete-surface-check",
+        "evidence": {
+          "BRA": {
+            "name": "Brazil",
+            "value": 94.7399978637695,
+            "display": "94.7%",
+            "year": 2024,
+            "unit": "%",
+            "rank": 41
+          }
+        }
+      },
+      {
+        "surface": "beat_5",
+        "text": "The metric counts people ages 15 and above who can read and write a short simple statement about everyday life.",
+        "isos": [],
+        "support": "Directly reflects the official indicator definition.",
+        "method": "complete-surface-check",
+        "evidence": {}
+      },
+      {
+        "surface": "beat_6",
+        "text": "How high is adult literacy in your country?",
+        "isos": [],
+        "support": "Stylistic closing question consistent with the topic.",
+        "method": "complete-surface-check",
+        "evidence": {}
+      },
+      {
+        "surface": "card_6",
+        "text": [
+          "How Literate Is Your Country?",
+          "Adult Literacy Rate"
+        ],
+        "isos": [],
+        "support": "Matches title card elements.",
+        "method": "complete-surface-check",
+        "evidence": {}
+      }
+    ],
+    "surface_checks": {
+      "title": {
+        "supported": true,
+        "reason": "Accurately describes the ranking of places by adult literacy.",
+        "isos": []
+      },
+      "hook": {
+        "supported": true,
+        "reason": "Stylistic hook fitting the literacy theme.",
+        "isos": []
+      },
+      "description": {
+        "supported": true,
+        "reason": "Accurately summarizes the focus on adult literacy using World Bank data.",
+        "isos": []
+      },
+      "beat_0": {
+        "supported": true,
+        "reason": "Matches Uzbekistan (100%) and Chad (30.6%) values in the evidence.",
+        "isos": [
+          "UZB",
+          "TCD"
+        ]
+      },
+      "beat_1": {
+        "supported": true,
+        "reason": "Uzbekistan is ranked 1 with 100%, indicating the highest position.",
+        "isos": [
+          "UZB"
+        ]
+      },
+      "beat_2": {
+        "supported": true,
+        "reason": "Matches values for Chad, Niger, Mali, and Burkina Faso.",
+        "isos": [
+          "TCD",
+          "NER",
+          "MLI",
+          "BFA"
+        ]
+      },
+      "beat_3": {
+        "supported": true,
+        "reason": "Matches China (96.7%) and India (78.2%) values.",
+        "isos": [
+          "CHN",
+          "IND"
+        ]
+      },
+      "beat_4": {
+        "supported": true,
+        "reason": "Matches Brazil's literacy rate value of 94.7%.",
+        "isos": [
+          "BRA"
+        ]
+      },
+      "beat_5": {
+        "supported": true,
+        "reason": "Directly reflects the official indicator definition.",
+        "isos": []
+      },
+      "beat_6": {
+        "supported": true,
+        "reason": "Stylistic closing question consistent with the topic.",
+        "isos": []
+      },
+      "card_6": {
+        "supported": true,
+        "reason": "Matches title card elements.",
+        "isos": []
+      }
+    },
+    "warnings": []
+  },
+  "script_sha256": "edb243f8885a7c9875b64b7fb0dc488ceeb79ea5590fa3a7111b50e865b84567",
+  "data_sha256": "747a041c7b6e65ef107941c8d7e0092946efcb6f5db4bfe156dbc5fd12e4b559",
+  "reviewer_model": "gemini-3.5-flash-lite"
+}
