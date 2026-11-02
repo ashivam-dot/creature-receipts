@@ -1,0 +1,162 @@
+{
+  "errors": [],
+  "claims": [
+    {
+      "surface": "title",
+      "text": "How Does the USA Compare on High School Completion?",
+      "isos": [
+        "USA"
+      ],
+      "support": "USA upper secondary education completion rate is 91.6% (rank 10)."
+    },
+    {
+      "surface": "hook",
+      "text": "THE DIPLOMA GAP",
+      "isos": [],
+      "support": "Upper secondary education completion rates vary widely across countries."
+    },
+    {
+      "surface": "description",
+      "text": "Comparing adult high school completion rates across the globe using World Bank data.",
+      "isos": [],
+      "support": "World Bank indicator SE.SEC.CUAT.UP.ZS measures upper secondary education attainment."
+    },
+    {
+      "surface": "beat_0",
+      "text": "In Turkmenistan, 98.4% of adults finished high school. In Niger, it's just 1.7%.",
+      "isos": [
+        "TKM",
+        "NER"
+      ],
+      "support": "Turkmenistan: 98.383918762207% (98.4%), Niger: 1.72214996814728% (1.7%)."
+    },
+    {
+      "surface": "beat_1",
+      "text": "The USA sits near the top, with 91.6% of adults completing high school.",
+      "isos": [
+        "USA"
+      ],
+      "support": "United States: 91.6156005859375% (91.6%), rank 10."
+    },
+    {
+      "surface": "beat_2",
+      "text": "Other major economies lag behind: India has 41.3%, while China has 31.8%.",
+      "isos": [
+        "IND",
+        "CHN"
+      ],
+      "support": "India: 41.3380012512207% (41.3%), China: 31.7697906494141% (31.8%)."
+    },
+    {
+      "surface": "beat_3",
+      "text": "Central Asia leads: Turkmenistan is at 98.4%, Uzbekistan 96.8%, and Kazakhstan 94.3%.",
+      "isos": [
+        "TKM",
+        "UZB",
+        "KAZ"
+      ],
+      "support": "Turkmenistan: 98.4%, Uzbekistan: 96.8%, Kazakhstan: 94.3%."
+    },
+    {
+      "surface": "beat_4",
+      "text": "It counts the percentage of population ages 25 and over that attained or completed upper secondary education.",
+      "isos": [],
+      "support": "Definition: The percentage of population ages 25 and over that attained or completed upper secondary education."
+    },
+    {
+      "surface": "beat_5",
+      "text": "At the bottom, Senegal has 8.4% and Mali has 7.2%.",
+      "isos": [
+        "SEN",
+        "MLI"
+      ],
+      "support": "Senegal: 8.44915962219238% (8.4%), Mali: 7.23940992355347% (7.2%)."
+    },
+    {
+      "surface": "beat_6",
+      "text": "What share of adults finished high school in your country?",
+      "isos": [],
+      "support": "Closing call to action question."
+    },
+    {
+      "surface": "card_6",
+      "text": "HIGH SCHOOL DIPLOMAS",
+      "isos": [],
+      "support": "Card heading reflecting high school completion theme."
+    }
+  ],
+  "surface_checks": {
+    "title": {
+      "supported": true,
+      "reason": "The USA completion rate is present in the data and compared.",
+      "isos": [
+        "USA"
+      ]
+    },
+    "hook": {
+      "supported": true,
+      "reason": "Refers generally to the dataset disparity.",
+      "isos": []
+    },
+    "description": {
+      "supported": true,
+      "reason": "Accurately describes the indicator source and use.",
+      "isos": []
+    },
+    "beat_0": {
+      "supported": true,
+      "reason": "Values for Turkmenistan (98.4%) and Niger (1.7%) match the dataset.",
+      "isos": [
+        "TKM",
+        "NER"
+      ]
+    },
+    "beat_1": {
+      "supported": true,
+      "reason": "USA value is 91.6% (rank 10), matching the text.",
+      "isos": [
+        "USA"
+      ]
+    },
+    "beat_2": {
+      "supported": true,
+      "reason": "India is 41.3% and China is 31.8% in the dataset.",
+      "isos": [
+        "IND",
+        "CHN"
+      ]
+    },
+    "beat_3": {
+      "supported": true,
+      "reason": "Turkmenistan (98.4%), Uzbekistan (96.8%), and Kazakhstan (94.3%) values are accurate.",
+      "isos": [
+        "TKM",
+        "UZB",
+        "KAZ"
+      ]
+    },
+    "beat_4": {
+      "supported": true,
+      "reason": "Matches the official definition verbatim.",
+      "isos": []
+    },
+    "beat_5": {
+      "supported": true,
+      "reason": "Senegal is 8.4% and Mali is 7.2% in the dataset.",
+      "isos": [
+        "SEN",
+        "MLI"
+      ]
+    },
+    "beat_6": {
+      "supported": true,
+      "reason": "Standard video outro question.",
+      "isos": []
+    },
+    "card_6": {
+      "supported": true,
+      "reason": "Summarizes the indicator topic correctly.",
+      "isos": []
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "version": 1,
+  "passed": true,
+  "checked_at": "2026-11-02T09:25:28.032830+00:00",
+  "quality_module_sha256": "db7be8ac57c839f39a10676f1a70580a83ea346f59c27f19868d09c272def14c",
+  "media_sha256": "d7960ec9b2a72eb0e994fd96a266d95c29307f8359917fab2ff06d323e0ed539",
+  "script_sha256": "cdeb04e147e552489eebb68749b4935a715bda19471af9e0860485f171d41208",
+  "data_sha256": "b4822a3ab9e1ce3d704f246b49004a641fdb5dd7ddd512ee6e5f3be26f8959da",
+  "claims_sha256": "a7ff14408331c84ebba2f08d45cfbfbb4ae7fec0cfff00d42ceaaa42bf3a6852",
+  "contact_sha256": "5151c6757473f9e11fadfa0fd8e9b0ff2aab17b2c4d2e42e554f86392abe2148",
+  "duration": 45.41,
+  "integrated_lufs": -14.2,
+  "true_peak_dbfs": -1.4,
+  "speech": {
+    "heard": "In Turkmenistan, 98.4% of adults finished high school. In Niger, it's just 1.7%. The USA sits near the top, with 91.6% of adults completing high school. Other major economies lag behind. India has 41.3%, while China has 31.8%. Central Asia leads. Turkmenistan is at 98.4%, Uzbekistan 96.8% and Kazakhstan 94.3%. It counts the percentage of population ages 25 and over that attained or completed upper secondary education. At the bottom, Senegal has 8.4% and Mali has 7.2%. What share of adults finished high school in your country?",
+    "model": "small.en",
+    "media_sha256": "d7960ec9b2a72eb0e994fd96a266d95c29307f8359917fab2ff06d323e0ed539",
+    "primary_differences": [],
+    "differences": []
+  },
+  "warnings": [
+    "duration 45.4s outside editorial 30–45s target"
+  ],
+  "speech_policy": "material-hard-entity-polarity-strict-minor-spelling-warning"
+}

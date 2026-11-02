@@ -1,0 +1,80 @@
+id: atlas127
+title: How Does the USA Compare on High School Completion?
+format: spotlight
+hook_text: THE DIPLOMA GAP
+description: Comparing adult high school completion rates across the globe using World Bank data.
+hashtags:
+- '#education'
+- '#geography'
+- '#countries'
+tags:
+- education
+- adults with upper secondary education
+- countries ranked by adults with upper secondary education
+- Turkmenistan
+- Niger
+- world map
+- geography
+- atlas in numbers
+sources:
+- https://data.worldbank.org/indicator/SE.SEC.CUAT.UP.ZS
+dataset:
+  kind: worldbank
+  indicator: SE.SEC.CUAT.UP.ZS
+  label: Adults with upper secondary education
+  unit: '%'
+  source: World Bank
+  min_year: 2019
+scale:
+  edges:
+  - 25.0
+  - 50.0
+  - 75.0
+  - 90.0
+  labels:
+  - <25%
+  - 25-50%
+  - 50-75%
+  - 75-90%
+  - '>90%'
+value_format: '{v:.1f}%'
+beats:
+- text: In Turkmenistan, 98.4% of adults finished high school. In Niger, it's just 1.7%.
+  shot:
+    callouts:
+    - TKM
+    - NER
+- text: The USA sits near the top, with 91.6% of adults completing high school.
+  shot:
+    kind: country
+    iso: USA
+- text: 'Other major economies lag behind: India has 41.3%, while China has 31.8%.'
+  shot:
+    kind: group
+    isos:
+    - IND
+    - CHN
+- text: 'Central Asia leads: Turkmenistan is at 98.4%, Uzbekistan 96.8%, and Kazakhstan 94.3%.'
+  shot:
+    kind: rank
+    isos:
+    - TKM
+    - UZB
+    - KAZ
+- text: It counts the percentage of population ages 25 and over that attained or completed upper secondary education.
+  shot:
+    callouts:
+    - USA
+  basis: The percentage of population ages 25 and over that attained or completed upper secondary education.
+- text: At the bottom, Senegal has 8.4% and Mali has 7.2%.
+  shot:
+    kind: group
+    isos:
+    - SEN
+    - MLI
+- text: What share of adults finished high school in your country?
+  shot:
+    kind: card
+    lines:
+    - HIGH SCHOOL DIPLOMAS
+    - Adults with Upper Secondary Education
