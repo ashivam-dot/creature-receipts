@@ -1,0 +1,79 @@
+id: atlas132
+title: Nations With the Most Children
+hook_text: A WORLD OF DIFFERENCE
+description: A look at the global share of females aged 0 to 14, highlighting the massive contrast between nations
+  with high youth populations and those with aging demographics.
+hashtags:
+- '#population'
+- '#demographics'
+- '#geography'
+tags:
+- population
+- share of females aged 0-14
+- countries ranked by share of females aged 0-14
+- Central African Republic
+- Korea Rep.
+- world map
+- geography
+- atlas in numbers
+sources:
+- https://data.worldbank.org/indicator/SP.POP.0014.FE.ZS
+dataset:
+  kind: worldbank
+  indicator: SP.POP.0014.FE.ZS
+  label: Share of females aged 0-14
+  unit: '%'
+  source: World Bank
+  min_year: 2019
+scale:
+  edges:
+  - 15.0
+  - 25.0
+  - 35.0
+  labels:
+  - Very low
+  - Low
+  - High
+  - Very high
+value_format: '{v:.1f}%'
+beats:
+- text: In Central African Republic, 46.5% of females are children. In South Korea, it is 9.9%.
+  shot:
+    callouts:
+    - CAF
+    - KOR
+- text: Central African Republic has 4.7 times the value found in South Korea.
+  shot:
+    kind: country
+    iso: CAF
+- text: This counts the female population between the ages 0 to 14 as a percentage of the total female population.
+  shot:
+    kind: country
+    iso: CAF
+  basis: Female population between the ages 0 to 14 as a percentage of the total female population. Population is
+    based on the de facto definition of population.
+- text: Nigeria has 40.4% of females in this age group, while Japan has 10.7%.
+  shot:
+    kind: group
+    isos:
+    - NGA
+    - JPN
+- text: Niger has 46.2%, Somalia has 46%, and Mali has 45.7%.
+  shot:
+    kind: rank
+    isos:
+    - NER
+    - SOM
+    - MLI
+- text: Italy has 11.1% and Spain has 12%, showing low shares of young females.
+  shot:
+    kind: group
+    isos:
+    - ITA
+    - ESP
+- text: What share of your nation is aged 0 to 14?
+  shot:
+    kind: card
+    lines:
+    - What is the girl population share in your country?
+    - Share of females aged 0-14 (%)

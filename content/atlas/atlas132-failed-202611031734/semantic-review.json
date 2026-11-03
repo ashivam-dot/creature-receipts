@@ -1,0 +1,148 @@
+{
+  "errors": [
+    {
+      "surface": "beat_1",
+      "claim": "Central African Republic has 4.7 times the value found in South Korea.",
+      "reason": "46.468 / 9.921 is approximately 4.68, which rounds to 4.7, but the claim is based on a specific calculation that is not explicitly supported by the provided data.",
+      "severity": "info"
+    },
+    {
+      "surface": "beat_6",
+      "claim": "What share of your nation is aged 0 to 14?",
+      "reason": "The indicator measures the share of females aged 0-14, not the total population aged 0-14.",
+      "severity": "factual"
+    },
+    {
+      "surface": "card_6",
+      "claim": "What is the girl population share in your country?",
+      "reason": "The indicator measures the share of females aged 0-14, not the total girl population share.",
+      "severity": "factual"
+    }
+  ],
+  "claims": [
+    {
+      "surface": "beat_0",
+      "text": "In Central African Republic, 46.5% of females are children.",
+      "isos": [
+        "CAF"
+      ],
+      "support": "46.4680756824957"
+    },
+    {
+      "surface": "beat_0",
+      "text": "In South Korea, it is 9.9%.",
+      "isos": [
+        "KOR"
+      ],
+      "support": "9.92146752356248"
+    },
+    {
+      "surface": "beat_3",
+      "text": "Nigeria has 40.4% of females in this age group",
+      "isos": [
+        "NGA"
+      ],
+      "support": "40.4124834379058"
+    },
+    {
+      "surface": "beat_3",
+      "text": "Japan has 10.7%.",
+      "isos": [
+        "JPN"
+      ],
+      "support": "10.6822807915674"
+    },
+    {
+      "surface": "beat_4",
+      "text": "Niger has 46.2%, Somalia has 46%, and Mali has 45.7%.",
+      "isos": [
+        "NER",
+        "SOM",
+        "MLI"
+      ],
+      "support": "46.1848594847396, 45.9623270301416, 45.7086761915257"
+    },
+    {
+      "surface": "beat_5",
+      "text": "Italy has 11.1% and Spain has 12%",
+      "isos": [
+        "ITA",
+        "ESP"
+      ],
+      "support": "11.0848494898423, 12.0398757658006"
+    }
+  ],
+  "surface_checks": {
+    "title": {
+      "supported": true,
+      "reason": "The title is a stylistic framing of the data.",
+      "isos": []
+    },
+    "hook": {
+      "supported": true,
+      "reason": "The hook is a stylistic framing.",
+      "isos": []
+    },
+    "description": {
+      "supported": true,
+      "reason": "The description accurately reflects the indicator.",
+      "isos": []
+    },
+    "beat_0": {
+      "supported": true,
+      "reason": "Values match the provided evidence.",
+      "isos": [
+        "CAF",
+        "KOR"
+      ]
+    },
+    "beat_1": {
+      "supported": true,
+      "reason": "The ratio is mathematically consistent with the provided values.",
+      "isos": [
+        "CAF",
+        "KOR"
+      ]
+    },
+    "beat_2": {
+      "supported": true,
+      "reason": "The definition matches the provided evidence.",
+      "isos": []
+    },
+    "beat_3": {
+      "supported": true,
+      "reason": "Values match the provided evidence.",
+      "isos": [
+        "NGA",
+        "JPN"
+      ]
+    },
+    "beat_4": {
+      "supported": true,
+      "reason": "Values match the provided evidence.",
+      "isos": [
+        "NER",
+        "SOM",
+        "MLI"
+      ]
+    },
+    "beat_5": {
+      "supported": true,
+      "reason": "Values match the provided evidence.",
+      "isos": [
+        "ITA",
+        "ESP"
+      ]
+    },
+    "beat_6": {
+      "supported": false,
+      "reason": "The text omits the 'female' qualifier, which is essential to the indicator definition.",
+      "isos": []
+    },
+    "card_6": {
+      "supported": false,
+      "reason": "The text omits the 'female' qualifier, which is essential to the indicator definition.",
+      "isos": []
+    }
+  }
+}

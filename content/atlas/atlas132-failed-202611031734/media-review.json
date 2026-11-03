@@ -1,0 +1,26 @@
+{
+  "duration": 45.12,
+  "integrated_lufs": -14.4,
+  "true_peak_dbfs": -1.4,
+  "speech": {
+    "heard": "In Niger, 46.2% of females are children. In Japan, it is 10.7%. Central African Republic is the world's highest, where 46.5% of females are children. It counts girls aged 0 to 14 as a percentage of the total female population. South Korea is the opposite at 9.9%, a nation with very few children. Somalia, Mali and Chad are also high, all at 45.5% or more. Nigeria has 40.4%, that is 3.8 times the 10.7% found in Japan. USA has 16.7%, while China is 14.7%. Does your country have a high share of young females?",
+    "model": "small.en",
+    "media_sha256": "4a187f8e7f3ca91323e00546d60d0b8118d8c213cc5dad715f1bf91c379243bc",
+    "primary_differences": [
+      "'the' heard as '(nothing)' after 'found in japan'"
+    ],
+    "differences": [
+      "'the' heard as '(nothing)' after 'found in japan'",
+      "base.en: 'it counts' heard as 'accounts' after 'females are children'"
+    ],
+    "corroboration": {
+      "model": "base.en",
+      "heard": "In Niger 46.2% of females are children. In Japan, it is 10.7%. Central African Republic is the world's highest, where 46.5% of females are children. Accounts girls aged 0 to 14 as a percentage of the total female population. South Korea is the opposite at 9.9%, a nation with very few children. Somalia, Mali, and Chad are also high, all at 45.5% or more. Nigeria has 40.4%, that is 3.8 times the 10.7% found in Japan. USA has 16.7% while China is 14.7%. Does your country have a high share of young females?",
+      "differences": [
+        "'it counts' heard as 'accounts' after 'females are children'",
+        "'the' heard as '(nothing)' after 'found in japan'"
+      ],
+      "resolved": []
+    }
+  }
+}

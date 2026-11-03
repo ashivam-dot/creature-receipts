@@ -5205,7 +5205,391 @@
    "source_url": "https://data.worldbank.org/indicator/NE.CON.TOTL.ZS",
    "status": "open",
    "added_by": "refill"
+  },
+  {
+   "id": "t145",
+   "topic": "The World's Youngest Female Populations",
+   "angle": "In some nations, nearly half of all females are children under 15, while in others, this group makes up less than one in ten.",
+   "format": "map_reveal",
+   "dataset": {
+    "kind": "worldbank",
+    "indicator": "SP.POP.0014.FE.ZS",
+    "label": "Share of females aged 0-14",
+    "unit": "%",
+    "source": "World Bank",
+    "min_year": 2019
+   },
+   "scale": {
+    "kind": "bins",
+    "edges": [
+     15,
+     25,
+     35
+    ],
+    "labels": [
+     "Very low",
+     "Low",
+     "High",
+     "Very high"
+    ]
+   },
+   "value_format": "{v:.1f}%",
+   "hashtags": [
+    "#maps",
+    "#geography",
+    "#demographics"
+   ],
+   "source_url": "https://data.worldbank.org/indicator/SP.POP.0014.FE.ZS",
+   "status": "failed:ValueError",
+   "added_by": "refill"
+  },
+  {
+   "id": "t146",
+   "topic": "The Growing Share of Senior Women",
+   "angle": "In some countries, women aged 65 to 69 make up nearly eight times the share of the female population compared to those in the youngest-skewing nations.",
+   "format": "map_reveal",
+   "dataset": {
+    "kind": "worldbank",
+    "indicator": "SP.POP.6569.FE.5Y",
+    "label": "Share of women aged 65 to 69",
+    "unit": "%",
+    "source": "World Bank",
+    "min_year": 2019
+   },
+   "scale": {
+    "kind": "bins",
+    "edges": [
+     2.0,
+     4.0,
+     6.0
+    ],
+    "labels": [
+     "Under 2%",
+     "2% to 4%",
+     "4% to 6%",
+     "Over 6%"
+    ]
+   },
+   "value_format": "{v:.1f}%",
+   "hashtags": [
+    "#maps",
+    "#geography",
+    "#demographics"
+   ],
+   "source_url": "https://data.worldbank.org/indicator/SP.POP.6569.FE.5Y",
+   "status": "open",
+   "added_by": "refill"
+  },
+  {
+   "id": "t147",
+   "topic": "Female To Male Labor Participation Ratio",
+   "angle": "In Burundi and Angola, women work at nearly the same rate as men.",
+   "format": "rank_ladder",
+   "dataset": {
+    "kind": "worldbank",
+    "indicator": "SL.TLF.CACT.FM.NE.ZS",
+    "label": "Female to male labor participation ratio",
+    "unit": "%",
+    "source": "World Bank",
+    "min_year": 2019
+   },
+   "scale": {
+    "edges": [
+     50,
+     70,
+     85,
+     95
+    ],
+    "kind": "bins",
+    "labels": [
+     "<50%",
+     "50-70%",
+     "70-85%",
+     "85-95%",
+     ">95%"
+    ]
+   },
+   "value_format": "{v:.1f}%",
+   "hashtags": [
+    "#maps",
+    "#geography",
+    "#mapdata"
+   ],
+   "source_url": "https://data.worldbank.org/indicator/SL.TLF.CACT.FM.NE.ZS",
+   "status": "open",
+   "added_by": "refill"
+  },
+  {
+   "id": "t148",
+   "topic": "Global Open Defecation Rates By Country",
+   "angle": "While 50% of nations are near zero, Niger reaches 66%.",
+   "format": "map_reveal",
+   "dataset": {
+    "kind": "worldbank",
+    "indicator": "SH.STA.ODFC.ZS",
+    "label": "Population practicing open defecation",
+    "unit": "%",
+    "source": "World Bank",
+    "min_year": 2019
+   },
+   "scale": {
+    "edges": [
+     0.1,
+     5,
+     20,
+     60
+    ],
+    "kind": "bins",
+    "labels": [
+     "0%",
+     "0.1-5%",
+     "5-20%",
+     "20-60%",
+     "60%+"
+    ]
+   },
+   "value_format": "{v:.1f}%",
+   "hashtags": [
+    "#maps",
+    "#geography",
+    "#mapsData"
+   ],
+   "source_url": "https://data.worldbank.org/indicator/SH.STA.ODFC.ZS",
+   "status": "open",
+   "added_by": "refill"
+  },
+  {
+   "id": "t149",
+   "topic": "Rural Households With Handwashing Facilities",
+   "angle": "While some nations achieve 100% rural access, others remain below 1%.",
+   "format": "map_reveal",
+   "dataset": {
+    "kind": "worldbank",
+    "indicator": "SH.STA.HYGN.RU.ZS",
+    "label": "Rural pop with soap and water (%)",
+    "unit": "%",
+    "source": "World Bank",
+    "min_year": 2019
+   },
+   "scale": {
+    "kind": "bins",
+    "edges": [
+     20,
+     50,
+     80,
+     95
+    ],
+    "labels": [
+     "<20%",
+     "20-50%",
+     "50-80%",
+     "80-95%",
+     "95%+"
+    ]
+   },
+   "value_format": "{v:.1f}%",
+   "hashtags": [
+    "#maps",
+    "#geography",
+    "#mapstats"
+   ],
+   "source_url": "https://data.worldbank.org/indicator/SH.STA.HYGN.RU.ZS",
+   "status": "open",
+   "added_by": "refill"
+  },
+  {
+   "id": "t150",
+   "topic": "Global Male Tobacco Use Rates",
+   "angle": "In countries like Timor-Leste over three-quarters of adult men use tobacco, whereas in Nigeria fewer than 6% do.",
+   "format": "rank_ladder",
+   "dataset": {
+    "kind": "worldbank",
+    "indicator": "SH.PRV.SMOK.MA",
+    "label": "Male adult tobacco use rate",
+    "unit": "%",
+    "source": "World Bank",
+    "min_year": 2019
+   },
+   "scale": {
+    "kind": "bins",
+    "edges": [
+     15,
+     25,
+     40,
+     50
+    ],
+    "labels": [
+     "Under 15%",
+     "15–25%",
+     "25–40%",
+     "40–50%",
+     "Over 50%"
+    ]
+   },
+   "value_format": "{v:.1f}%",
+   "hashtags": [
+    "#mapsSend me more details if needed. Wait, no text outside JSON!"
+   ],
+   "source_url": "https://data.worldbank.org/indicator/SH.PRV.SMOK.MA",
+   "status": "open",
+   "added_by": "refill"
+  },
+  {
+   "id": "t151",
+   "topic": "Male Alcohol Consumption per Capita",
+   "angle": "The average male in Romania consumes 27 liters of pure alcohol annually, nearly four times the global median.",
+   "format": "map_reveal",
+   "dataset": {
+    "kind": "worldbank",
+    "indicator": "SH.ALC.PCAP.MA.LI",
+    "label": "Liters of pure alcohol per male",
+    "unit": "liters",
+    "source": "World Bank",
+    "min_year": 2019
+   },
+   "scale": {
+    "kind": "bins",
+    "edges": [
+     3,
+     7,
+     13,
+     17
+    ],
+    "labels": [
+     "Minimal",
+     "Low",
+     "Moderate",
+     "High",
+     "Extreme"
+    ]
+   },
+   "value_format": "{v:.1f} liters",
+   "hashtags": [
+    "#maps",
+    "#geography",
+    "#health"
+   ],
+   "source_url": "https://data.worldbank.org/indicator/SH.ALC.PCAP.MA.LI",
+   "status": "open",
+   "added_by": "refill"
+  },
+  {
+   "id": "t152",
+   "topic": "Global Adolescent Birth Rates",
+   "angle": "The highest adolescent birth rate recorded is 161 per 1,000 women, which is over 300 times higher than the lowest rate.",
+   "format": "map_reveal",
+   "dataset": {
+    "kind": "worldbank",
+    "indicator": "SP.ADO.TFRT",
+    "label": "Births per 1,000 women ages 15-19",
+    "unit": "per 1,000 women",
+    "source": "World Bank",
+    "min_year": 2019
+   },
+   "scale": {
+    "kind": "bins",
+    "edges": [
+     10,
+     30,
+     60,
+     100
+    ],
+    "labels": [
+     "Very Low",
+     "Low",
+     "Moderate",
+     "High",
+     "Very High"
+    ]
+   },
+   "value_format": "{v:.1f}",
+   "hashtags": [
+    "#maps",
+    "#geography",
+    "#population"
+   ],
+   "source_url": "https://data.worldbank.org/indicator/SP.ADO.TFRT",
+   "status": "open",
+   "added_by": "refill"
+  },
+  {
+   "id": "t153",
+   "topic": "Reliance on Fossil Fuel Electricity",
+   "angle": "While some nations have achieved entirely fossil-free power grids, over half of all countries still generate more than 60% of their electricity from oil, gas, and coal.",
+   "format": "rank_ladder",
+   "dataset": {
+    "kind": "worldbank",
+    "indicator": "EG.ELC.FOSL.ZS",
+    "label": "Electricity from fossil fuel sources",
+    "unit": "%",
+    "source": "World Bank",
+    "min_year": 2019
+   },
+   "scale": {
+    "kind": "bins",
+    "edges": [
+     10,
+     40,
+     70,
+     95
+    ],
+    "labels": [
+     "Minimal",
+     "Low",
+     "Moderate",
+     "High",
+     "Extreme"
+    ]
+   },
+   "value_format": "{v:.1f}%",
+   "hashtags": [
+    "#maps",
+    "#geography",
+    "#energy"
+   ],
+   "source_url": "https://data.worldbank.org/indicator/EG.ELC.FOSL.ZS",
+   "status": "open",
+   "added_by": "refill"
+  },
+  {
+   "id": "t154",
+   "topic": "Non-Hydro Renewable Energy Production",
+   "angle": "Denmark leads the world by generating nearly 80% of its electricity from wind and solar alone, excluding all hydroelectric power.",
+   "format": "map_reveal",
+   "dataset": {
+    "kind": "worldbank",
+    "indicator": "EG.ELC.RNWX.ZS",
+    "label": "Share of non-hydro renewable electricity",
+    "unit": "%",
+    "source": "World Bank",
+    "min_year": 2019
+   },
+   "scale": {
+    "kind": "bins",
+    "edges": [
+     5,
+     15,
+     30,
+     50
+    ],
+    "labels": [
+     "Under 5%",
+     "5-15%",
+     "15-30%",
+     "30-50%",
+     "Over 50%"
+    ]
+   },
+   "value_format": "{v:.1f}%",
+   "hashtags": [
+    "#maps",
+    "#geography",
+    "#cleanenergy"
+   ],
+   "source_url": "https://data.worldbank.org/indicator/EG.ELC.RNWX.ZS",
+   "status": "open",
+   "added_by": "refill"
   }
  ],
- "refilled_at": "2026-10-31T17:10:12+00:00"
+ "refilled_at": "2026-11-03T17:11:05+00:00"
 }
