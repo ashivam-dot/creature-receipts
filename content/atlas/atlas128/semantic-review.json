@@ -1,0 +1,143 @@
+{
+  "errors": [],
+  "claims": [
+    {
+      "surface": "title",
+      "text": "Places Ranked by Income Share of the Poorest",
+      "isos": [],
+      "support": "Percentage share of income or consumption is the share that accrues to subgroups of population indicated by deciles or quintiles."
+    },
+    {
+      "surface": "hook",
+      "text": "HIGHEST SHARE",
+      "isos": [],
+      "support": "Indicator measures percentage share of income or consumption for the poorest quintile."
+    },
+    {
+      "surface": "description",
+      "text": "countries and territories ranked by the income share of the poorest 20% of the population, using World Bank data.",
+      "isos": [],
+      "support": "Universe is mapped countries and territories with data, source World Bank, indicator SI.DST.FRST.20."
+    },
+    {
+      "surface": "beat_0",
+      "text": "India leads the planet with the poorest fifth holding 11.1% of national income.",
+      "isos": [
+        "IND"
+      ],
+      "support": "IND value is 11.1, rank 1."
+    },
+    {
+      "surface": "beat_1",
+      "text": "Colombia has the lowest on Earth, where the bottom fifth takes 3.2%.",
+      "isos": [
+        "COL"
+      ],
+      "support": "COL value is 3.2, rank 124."
+    },
+    {
+      "surface": "beat_2",
+      "text": "India has 3.5 times the income share that Colombia sees.",
+      "isos": [
+        "IND",
+        "COL"
+      ],
+      "support": "IND is 11.1 and COL is 3.2; 11.1 / 3.2 = 3.46875 (approximately 3.5)."
+    },
+    {
+      "surface": "beat_3",
+      "text": "The USA stands at 5.1%, while Brazil drops to 3.9%.",
+      "isos": [
+        "USA",
+        "BRA"
+      ],
+      "support": "USA value is 5.1 and BRA value is 3.9."
+    },
+    {
+      "surface": "beat_4",
+      "text": "Belarus hits 10.3% and Slovenia hits 10%, keeping the bottom fifth well above Latin America.",
+      "isos": [
+        "BLR",
+        "SVN"
+      ],
+      "support": "BLR value is 10.3 and SVN value is 10."
+    },
+    {
+      "surface": "beat_5",
+      "text": "What share goes to the poorest in your nation?",
+      "isos": [],
+      "support": "Indicator asks about national income share of the poorest quintile."
+    },
+    {
+      "surface": "card_5",
+      "text": "Income Share of the Poorest 20%",
+      "isos": [],
+      "support": "Definition matches indicator SI.DST.FRST.20."
+    }
+  ],
+  "surface_checks": {
+    "title": {
+      "supported": true,
+      "reason": "Title accurately reflects ranking by income share of the poorest quintile.",
+      "isos": []
+    },
+    "hook": {
+      "supported": true,
+      "reason": "Hook emphasizes the highest share concept supported by the dataset.",
+      "isos": []
+    },
+    "description": {
+      "supported": true,
+      "reason": "Description correctly identifies countries, territories, and World Bank source.",
+      "isos": []
+    },
+    "beat_0": {
+      "supported": true,
+      "reason": "India value 11.1% and rank 1 are correctly stated.",
+      "isos": [
+        "IND"
+      ]
+    },
+    "beat_1": {
+      "supported": true,
+      "reason": "Colombia value 3.2% and rank 124 are correctly stated.",
+      "isos": [
+        "COL"
+      ]
+    },
+    "beat_2": {
+      "supported": true,
+      "reason": "Multiple is correctly calculated from India (11.1) and Colombia (3.2).",
+      "isos": [
+        "IND",
+        "COL"
+      ]
+    },
+    "beat_3": {
+      "supported": true,
+      "reason": "USA (5.1%) and Brazil (3.9%) values match the data exactly.",
+      "isos": [
+        "USA",
+        "BRA"
+      ]
+    },
+    "beat_4": {
+      "supported": true,
+      "reason": "Belarus (10.3%) and Slovenia (10%) values match the data exactly.",
+      "isos": [
+        "BLR",
+        "SVN"
+      ]
+    },
+    "beat_5": {
+      "supported": true,
+      "reason": "Standard concluding question is consistent with the metric.",
+      "isos": []
+    },
+    "card_5": {
+      "supported": true,
+      "reason": "Card text matches the official indicator name and definition.",
+      "isos": []
+    }
+  }
+}

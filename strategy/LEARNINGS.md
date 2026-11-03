@@ -88,19 +88,21 @@ Refreshed by every producer run (`atlas.stats`) from the channel's public feed o
 | atlas100 Places Ranked by Nursing Staff Density | rank_ladder | 2026-10-25 16:02 UTC | 315 | 6 | 1.6 |
 | atlas101 Which Nations Grow the MOST Permanent Crops? | map_reveal | 2026-10-26 16:04 UTC | 256 | 1 | 1.4 |
 | atlas102 Places Ranked by the Cost of Sending Money | rank_ladder | 2026-10-26 23:01 UTC | 480 | 4 | 2.8 |
-| atlas103 Places Ranked by Dependency Load | map_reveal | 2026-10-28 16:00 UTC | 541 | 5 | 4.2 |
-| atlas104 Places Ranked by Food Insecurity | rank_ladder | 2026-10-27 23:00 UTC | 156 | 1 | 1.1 |
-| atlas105 Which Places Use the MOST Water for Industry? | map_reveal | 2026-10-28 20:00 UTC | 15 | 0 | 0.1 |
-| atlas106 USA vs Iraq: The 85 Times Research Spending Gap | versus | 2026-10-30 16:00 UTC | 202 | 2 | 2.5 |
-| atlas107 Which Country Has the MOST Diabetes? | odd_one_out | 2026-10-30 20:00 UTC | 67 | 0 | 0.9 |
-| atlas108 Places Ranked by How Much Money They Save | map_reveal | 2026-10-30 23:00 UTC | 404 | 2 | 5.5 |
-| atlas109 Places Ranked by Years of Preschool | rank_ladder | 2026-10-31 16:00 UTC | 1041 | 8 | 18.4 |
-| atlas112 Which Country Has the Most Youth Financial Access? | odd_one_out | 2026-10-31 20:00 UTC | 570 | 7 | 10.8 |
-| atlas113 Is YOUR Country a Service Economy? | map_reveal | 2026-10-31 23:00 UTC | 626 | 3 | 12.6 |
-| atlas114 Places Ranked by University Degrees | rank_ladder | 2026-11-01 17:00 UTC | 1082 | 10 | 34.1 |
-| atlas119 Qatar vs Chad: The Global Paid Employment Gap | versus | 2026-11-01 21:00 UTC | 95 | 0 | 3.4 |
-| atlas120 How Does the USA Compare on Safe Drinking Water? | spotlight | 2026-11-02 00:00 UTC | 86 | 0 | 3.5 |
-| atlas121 The Places With the Highest Male Share | map_reveal | 2026-11-02 17:00 UTC | 18 | 0 | 2.3 |
+| atlas103 Places Ranked by Dependency Load | map_reveal | 2026-10-28 16:00 UTC | 541 | – | 3.9 |
+| atlas104 Places Ranked by Food Insecurity | rank_ladder | 2026-10-27 23:00 UTC | 156 | – | 1.0 |
+| atlas105 Which Places Use the MOST Water for Industry? | map_reveal | 2026-10-28 20:00 UTC | 15 | – | 0.1 |
+| atlas106 USA vs Iraq: The 85 Times Research Spending Gap | versus | 2026-10-30 16:00 UTC | 202 | – | 2.3 |
+| atlas107 Which Country Has the MOST Diabetes? | odd_one_out | 2026-10-30 20:00 UTC | 67 | – | 0.8 |
+| atlas108 Places Ranked by How Much Money They Save | map_reveal | 2026-10-30 23:00 UTC | 404 | – | 4.9 |
+| atlas109 Places Ranked by Years of Preschool | rank_ladder | 2026-10-31 16:00 UTC | 1041 | – | 16.0 |
+| atlas112 Which Country Has the Most Youth Financial Access? | odd_one_out | 2026-10-31 20:00 UTC | 570 | – | 9.3 |
+| atlas113 Is YOUR Country a Service Economy? | map_reveal | 2026-10-31 23:00 UTC | 630 | – | 10.8 |
+| atlas114 Places Ranked by University Degrees | rank_ladder | 2026-11-01 17:00 UTC | 1080 | – | 26.9 |
+| atlas119 Qatar vs Chad: The Global Paid Employment Gap | versus | 2026-11-01 21:00 UTC | 95 | – | 2.6 |
+| atlas120 How Does the USA Compare on Safe Drinking Water? | spotlight | 2026-11-02 00:00 UTC | 106 | – | 3.2 |
+| atlas121 The Places With the Highest Male Share | map_reveal | 2026-11-02 17:00 UTC | 41 | – | 2.5 |
+| atlas122 USA vs Russia: How Much Tax Revenue Comes From Income? | versus | 2026-11-03 00:00 UTC | 8 | – | 0.9 |
+| atlas123 Places Ranked by Access to Basic Sanitation | rank_ladder | 2026-11-02 21:00 UTC | 177 | – | 14.5 |
 
 ## Log
 

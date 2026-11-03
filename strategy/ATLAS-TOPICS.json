@@ -3429,7 +3429,7 @@
    "id": "t098",
    "topic": "Powering Nations With Renewable Electricity",
    "angle": "Over half of all countries generate less than a quarter of their electricity from renewables, while a select few nations achieve near-total clean power.",
-   "format": "map_reveal",
+   "format": "odd_one_out",
    "dataset": {
     "kind": "worldbank",
     "indicator": "EG.ELC.RNEW.ZS",
@@ -3453,7 +3453,7 @@
     "#renewableenergy"
    ],
    "source_url": "https://data.worldbank.org/indicator/EG.ELC.RNEW.ZS",
-   "status": "open",
+   "status": "ready:atlas131",
    "added_by": "refill"
   },
   {
@@ -4462,7 +4462,7 @@
     "#education"
    ],
    "source_url": "https://data.worldbank.org/indicator/SE.ADT.LITR.ZS",
-   "status": "ready:atlas125",
+   "status": "used:atlas125",
    "added_by": "refill"
   },
   {
@@ -4657,7 +4657,7 @@
     "#education"
    ],
    "source_url": "https://data.worldbank.org/indicator/SE.SEC.CUAT.UP.ZS",
-   "status": "ready:atlas127",
+   "status": "used:atlas127",
    "added_by": "refill"
   },
   {
@@ -4735,7 +4735,7 @@
     "#economy"
    ],
    "source_url": "https://data.worldbank.org/indicator/NY.GDP.TOTL.RT.ZS",
-   "status": "ready:atlas126",
+   "status": "used:atlas126",
    "added_by": "refill"
   },
   {
@@ -4852,7 +4852,7 @@
     "#wealth"
    ],
    "source_url": "https://data.worldbank.org/indicator/SI.DST.FRST.20",
-   "status": "open",
+   "status": "ready:atlas128",
    "added_by": "refill"
   },
   {
@@ -4930,7 +4930,7 @@
     "#education"
    ],
    "source_url": "https://data.worldbank.org/indicator/SE.TER.ENRR.FE",
-   "status": "open",
+   "status": "failed:RuntimeError",
    "added_by": "refill"
   },
   {
@@ -5047,7 +5047,7 @@
     "#economics"
    ],
    "source_url": "https://data.worldbank.org/indicator/NY.GNS.ICTR.GN.ZS",
-   "status": "ready:atlas124",
+   "status": "used:atlas124",
    "added_by": "refill"
   },
   {
@@ -5132,7 +5132,7 @@
    "id": "t143",
    "topic": "Global Youth Literacy Rates",
    "angle": "While the global median for youth literacy is over 97%, in countries like Chad and Mali, fewer than half of young people can read and write.",
-   "format": "map_reveal",
+   "format": "versus",
    "dataset": {
     "kind": "worldbank",
     "indicator": "SE.ADT.1524.LT.ZS",
@@ -5164,7 +5164,7 @@
     "#education"
    ],
    "source_url": "https://data.worldbank.org/indicator/SE.ADT.1524.LT.ZS",
-   "status": "open",
+   "status": "failed:RuntimeError",
    "added_by": "refill"
   },
   {

@@ -1,0 +1,75 @@
+id: atlas128
+title: Places Ranked by Income Share of the Poorest
+format: rank_ladder
+hook_text: HIGHEST SHARE
+description: countries and territories ranked by the income share of the poorest 20% of the population, using World
+  Bank data.
+hashtags:
+- '#economy'
+- '#wealth'
+- '#geography'
+tags:
+- wealth
+- income share of the bottom 20%
+- countries ranked by income share of the bottom 20%
+- India
+- Colombia
+- world map
+- geography
+- atlas in numbers
+sources:
+- https://data.worldbank.org/indicator/SI.DST.FRST.20
+dataset:
+  kind: worldbank
+  indicator: SI.DST.FRST.20
+  label: Income share of the bottom 20%
+  unit: '%'
+  source: World Bank
+  min_year: 2019
+scale:
+  edges:
+  - 5.0
+  - 6.5
+  - 8.0
+  - 9.5
+  labels:
+  - Under 5.0%
+  - 5.0% - 6.5%
+  - 6.5% - 8.0%
+  - 8.0% - 9.5%
+  - Over 9.5%
+value_format: '{v:.1f}%'
+beats:
+- text: India leads the planet with the poorest fifth holding 11.1% of national income.
+  shot:
+    callouts:
+    - IND
+- text: Colombia has the lowest on Earth, where the bottom fifth takes 3.2%.
+  shot:
+    kind: country
+    iso: COL
+- text: India has 3.5 times the income share that Colombia sees.
+  shot:
+    kind: group
+    isos:
+    - IND
+    - COL
+- text: The USA stands at 5.1%, while Brazil drops to 3.9%.
+  shot:
+    kind: group
+    isos:
+    - USA
+    - BRA
+- text: Belarus hits 10.3% and Slovenia hits 10%, keeping the bottom fifth well above Latin America.
+  shot:
+    kind: rank
+    isos:
+    - BLR
+    - SVN
+    - BRA
+- text: What share goes to the poorest in your nation?
+  shot:
+    kind: card
+    lines:
+    - What is your share?
+    - Income Share of the Poorest 20%
