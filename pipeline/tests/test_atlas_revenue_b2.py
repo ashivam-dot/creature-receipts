@@ -2,6 +2,7 @@
 tags and hashtags, two slots a day and score-ordered publishing."""
 
 import json
+from dataclasses import replace
 from datetime import datetime, timedelta, timezone
 
 import pytest
@@ -365,6 +366,17 @@ def test_descriptions_and_tags_carry_the_search_people_type():
     tags = publish.youtube_tags(ep)
     assert sum(len(t) + 1 + 2 * (" " in t) for t in tags) <= 450 and tags[0] == "x" * 60
     assert publish.description(ep, ds).split("\n\n")[1] == line
+
+
+def test_tags_never_carry_a_comma_and_keep_ampersands_and_apostrophes():
+    ep = AtlasEpisode.model_validate({"id": "atlas901", "title": "T", "description": "D.",
+                                      "hashtags": ["#finance"], "tags": ["Korea, Rep.", "world map", "a  b"],
+                                      "dataset": TOPIC["dataset"], "beats": [{"text": "x"}]})
+    assert publish.youtube_tags(ep) == ["Korea Rep.", "world map", "a b", "finance", "atlas in numbers"]
+    ds = _dataset()
+    for label, want in (("R&D expenditure", "r&d expenditure"), ("Share of adults with a bachelor's", "bachelor's")):
+        assert want in " ".join(writer.tags({"topic": "t", "dataset": {"label": label}}, replace(ds, label=label),
+                                            {"QAT": 1.0}))
 
 
 def test_refill_runs_at_most_once_a_day_and_the_pipeline_saves_when_it_ran(tmp_path, monkeypatch):

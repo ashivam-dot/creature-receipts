@@ -761,8 +761,10 @@ def tags(topic: dict, ds: Dataset, vals: dict[str, float]) -> list[str]:
     top and bottom places on the map, then the channel's own. Sent with direct uploads (Buffer has no tag field)."""
     from .topics import family
     ranked = sorted(vals, key=vals.get)
-    names = [ds.names.get(iso, iso) for iso in (ranked[-1:] + ranked[:1])] if ranked else []
-    label = re.sub(r"\s+", " ", re.sub(r"[^\w%+ ,.-]", " ", ds.label or topic.get("dataset", {}).get("label", ""))).strip()
+    # No commas: YouTube splits tags on them, and "Korea, Rep." merged the rest into one tag (EOe-HOtlST4).
+    names = [ds.names.get(iso, iso).replace(",", "") for iso in (ranked[-1:] + ranked[:1])] if ranked else []
+    # "&" and "'" stay: stripping them sent "rd expenditure" and "bachelor s".
+    label = re.sub(r"\s+", " ", re.sub(r"[^\w%+ .&'-]", " ", ds.label or topic.get("dataset", {}).get("label", ""))).strip()
     found = [family(topic), label.lower(), f"countries ranked by {label.lower()}" if label else "", *names,
              "world map", "geography", "atlas in numbers"]
     return list(dict.fromkeys(t for t in found if t and t not in ("other", "obscure")))

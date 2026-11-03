@@ -278,7 +278,9 @@ def youtube_tags(ep: AtlasEpisode, limit: int = 450) -> list[str]:
     """The episode's tags then its hashtags' words, within YouTube's 500 characters (a tag with a space counts its
     quotes)."""
     out, used = [], 0
-    for tag in dict.fromkeys([*ep.tags, *(h.lstrip("#") for h in ep.hashtags), "atlas in numbers"]):
+    clean = (" ".join(t.replace(",", " ").replace("<", "").replace(">", "").split())
+             for t in [*ep.tags, *(h.lstrip("#") for h in ep.hashtags), "atlas in numbers"])
+    for tag in dict.fromkeys(clean):
         cost = len(tag) + (2 if " " in tag else 0) + 1
         if tag and used + cost <= limit:
             out.append(tag)
