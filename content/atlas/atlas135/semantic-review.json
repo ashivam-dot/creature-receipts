@@ -1,0 +1,112 @@
+{
+  "errors": [],
+  "claims": [
+    {
+      "surface": "beat_0",
+      "text": "The USA spends 81.5% of its GDP on consumption.",
+      "isos": [
+        "USA"
+      ],
+      "support": "USA: 81.534024167441, display 81.5%, year 2024"
+    },
+    {
+      "surface": "beat_0",
+      "text": "In China, it is 56.7%.",
+      "isos": [
+        "CHN"
+      ],
+      "support": "CHN: 56.6789524134646, display 56.7%, year 2024"
+    },
+    {
+      "surface": "beat_1",
+      "text": "Final consumption expenditure is expenditure on goods and services by resident institutional units for the direct satisfaction of human needs or wants.",
+      "isos": [],
+      "support": "Final consumption expenditure is expenditure on goods and services by resident institutional units for the direct satisfaction of human needs or wants, whether individual or collective."
+    },
+    {
+      "surface": "beat_2",
+      "text": "India stands at 67.4% of its GDP, leaving room between its shops and its total production.",
+      "isos": [
+        "IND"
+      ],
+      "support": "IND: 67.440507236698, display 67.4%, year 2025"
+    },
+    {
+      "surface": "beat_3",
+      "text": "Pakistan climbs higher to 92.9%, where nearly every dollar earned goes to daily living.",
+      "isos": [
+        "PAK"
+      ],
+      "support": "PAK: 92.9403157750285, display 92.9%, year 2025"
+    },
+    {
+      "surface": "beat_4",
+      "text": "At the quiet end, Qatar rests at 32.4%, the world's lowest of all 174 countries and territories.",
+      "isos": [
+        "QAT"
+      ],
+      "support": "QAT: 32.3736186203497, display 32.4%, year 2022, rank 174 out of 174"
+    }
+  ],
+  "surface_checks": {
+    "title": {
+      "supported": true,
+      "reason": "Stylistic framing and identity question.",
+      "isos": []
+    },
+    "hook": {
+      "supported": true,
+      "reason": "Stylistic intro framing.",
+      "isos": []
+    },
+    "description": {
+      "supported": true,
+      "reason": "Accurately introduces the indicator and range from USA to Qatar.",
+      "isos": []
+    },
+    "beat_0": {
+      "supported": true,
+      "reason": "USA and China values match evidence.",
+      "isos": [
+        "USA",
+        "CHN"
+      ]
+    },
+    "beat_1": {
+      "supported": true,
+      "reason": "Directly matches the definition provided in EVIDENCE.",
+      "isos": []
+    },
+    "beat_2": {
+      "supported": true,
+      "reason": "India value matches evidence.",
+      "isos": [
+        "IND"
+      ]
+    },
+    "beat_3": {
+      "supported": true,
+      "reason": "Pakistan value matches evidence.",
+      "isos": [
+        "PAK"
+      ]
+    },
+    "beat_4": {
+      "supported": true,
+      "reason": "Qatar value and rank match evidence.",
+      "isos": [
+        "QAT"
+      ]
+    },
+    "beat_5": {
+      "supported": true,
+      "reason": "Closing stylistic question.",
+      "isos": []
+    },
+    "card_5": {
+      "supported": true,
+      "reason": "Card text matches indicator name and theme.",
+      "isos": []
+    }
+  }
+}

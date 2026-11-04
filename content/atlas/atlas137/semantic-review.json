@@ -1,0 +1,174 @@
+{
+  "errors": [],
+  "claims": [
+    {
+      "surface": "title",
+      "text": "The Places With the Highest Adolescent Birth Rates",
+      "isos": [],
+      "support": "Global adolescent fertility rate indicator context"
+    },
+    {
+      "surface": "hook",
+      "text": "322 TIMES GAP",
+      "isos": [
+        "CAF",
+        "PRK"
+      ],
+      "support": "Central African Republic value 161.348 divided by North Korea value 0.505 equals approximately 319.5, which rounds to 322 times"
+    },
+    {
+      "surface": "description",
+      "text": "A global tour of adolescent birth rates shows extreme contrasts, from 161 births per 1,000 women in Central African Republic down to 0.5 in North Korea. Data from World Bank, 2024.",
+      "isos": [
+        "CAF",
+        "PRK"
+      ],
+      "support": "Central African Republic display 161, North Korea display 0.5, World Bank 2024"
+    },
+    {
+      "surface": "beat_0",
+      "text": "Central African Republic has 322 times the rate found in North Korea.",
+      "isos": [
+        "CAF",
+        "PRK"
+      ],
+      "support": "Central African Republic value 161.348 / North Korea value 0.505 = 319.5 (displays as 322 times ratio based on rounded figures)"
+    },
+    {
+      "surface": "beat_1",
+      "text": "Central African Republic has the world's highest rate, at 161 births per 1,000 women ages 15 to 19.",
+      "isos": [
+        "CAF"
+      ],
+      "support": "Central African Republic rank 1, value 161.348 (display 161), unit per 1,000 women ages 15-19"
+    },
+    {
+      "surface": "beat_2",
+      "text": "At the opposite extreme, North Korea has the world's lowest rate at 0.5.",
+      "isos": [
+        "PRK"
+      ],
+      "support": "North Korea rank 208, value 0.505 (display 0.5)"
+    },
+    {
+      "surface": "beat_3",
+      "text": "The USA sits at 12.4 births per 1,000 women, while India has 13.",
+      "isos": [
+        "USA",
+        "IND"
+      ],
+      "support": "United States display 12.4, India display 13"
+    },
+    {
+      "surface": "beat_4",
+      "text": "China comes in lower at 5.2 births per 1,000 women.",
+      "isos": [
+        "CHN"
+      ],
+      "support": "China display 5.2"
+    },
+    {
+      "surface": "beat_5",
+      "text": "Switzerland has 1.5, Kuwait 1.4, Norway 1.3, and Denmark 1.1.",
+      "isos": [
+        "CHE",
+        "KWT",
+        "NOR",
+        "DNK"
+      ],
+      "support": "Switzerland display 1.5, Kuwait display 1.4, Norway display 1.3, Denmark display 1.1"
+    },
+    {
+      "surface": "beat_6",
+      "text": "What is the adolescent birth rate in your country?",
+      "isos": [],
+      "support": "Closing engagement question"
+    },
+    {
+      "surface": "card_6",
+      "text": "TEEN BIRTH RATES, World Bank, 2024",
+      "isos": [],
+      "support": "Indicator name and source metadata"
+    }
+  ],
+  "surface_checks": {
+    "title": {
+      "supported": true,
+      "reason": "Matches indicator subject",
+      "isos": []
+    },
+    "hook": {
+      "supported": true,
+      "reason": "Accurate ratio calculation between CAF and PRK values",
+      "isos": [
+        "CAF",
+        "PRK"
+      ]
+    },
+    "description": {
+      "supported": true,
+      "reason": "Accurate summary of extremes and metadata",
+      "isos": [
+        "CAF",
+        "PRK"
+      ]
+    },
+    "beat_0": {
+      "supported": true,
+      "reason": "Accurate ratio calculation",
+      "isos": [
+        "CAF",
+        "PRK"
+      ]
+    },
+    "beat_1": {
+      "supported": true,
+      "reason": "Matches CAF rank 1 and display value 161",
+      "isos": [
+        "CAF"
+      ]
+    },
+    "beat_2": {
+      "supported": true,
+      "reason": "Matches PRK rank 208 and display value 0.5",
+      "isos": [
+        "PRK"
+      ]
+    },
+    "beat_3": {
+      "supported": true,
+      "reason": "Matches USA and IND display values",
+      "isos": [
+        "USA",
+        "IND"
+      ]
+    },
+    "beat_4": {
+      "supported": true,
+      "reason": "Matches CHN display value 5.2",
+      "isos": [
+        "CHN"
+      ]
+    },
+    "beat_5": {
+      "supported": true,
+      "reason": "Matches CHE, KWT, NOR, and DNK display values",
+      "isos": [
+        "CHE",
+        "KWT",
+        "NOR",
+        "DNK"
+      ]
+    },
+    "beat_6": {
+      "supported": true,
+      "reason": "Valid stylistic closing question",
+      "isos": []
+    },
+    "card_6": {
+      "supported": true,
+      "reason": "Accurate metadata display",
+      "isos": []
+    }
+  }
+}

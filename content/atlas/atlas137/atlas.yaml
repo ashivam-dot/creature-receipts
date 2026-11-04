@@ -1,0 +1,79 @@
+id: atlas137
+title: The Places With the Highest Adolescent Birth Rates
+hook_text: 322 TIMES GAP
+description: A global tour of adolescent birth rates shows extreme contrasts, from 161 births per 1,000 women in
+  Central African Republic down to 0.5 in North Korea. Data from World Bank, 2024.
+hashtags:
+- '#population'
+- '#geography'
+- '#countries'
+tags:
+- population
+- births per 1 000 women ages 15-19
+- countries ranked by births per 1 000 women ages 15-19
+- Central African Republic
+- Korea Dem. People's Rep.
+- world map
+- geography
+- atlas in numbers
+sources:
+- https://data.worldbank.org/indicator/SP.ADO.TFRT
+dataset:
+  kind: worldbank
+  indicator: SP.ADO.TFRT
+  label: Births per 1,000 women ages 15-19
+  unit: per 1,000 women
+  source: World Bank
+  min_year: 2019
+scale:
+  edges:
+  - 10.0
+  - 30.0
+  - 60.0
+  - 100.0
+  labels:
+  - Very Low
+  - Low
+  - Moderate
+  - High
+  - Very High
+value_format: '{v:.1f}'
+beats:
+- text: Central African Republic has 322 times the rate found in North Korea.
+  shot:
+    callouts:
+    - CAF
+    - PRK
+- text: Central African Republic has the world's highest rate, at 161 births per 1,000 women ages 15 to 19.
+  shot:
+    kind: country
+    iso: CAF
+  basis: Adolescent fertility rate is the number of births per 1,000 women ages 15-19.
+- text: At the opposite extreme, North Korea has the world's lowest rate at 0.5.
+  shot:
+    kind: country
+    iso: PRK
+- text: The USA sits at 12.4 births per 1,000 women, while India has 13.
+  shot:
+    kind: group
+    isos:
+    - USA
+    - IND
+- text: China comes in lower at 5.2 births per 1,000 women.
+  shot:
+    kind: country
+    iso: CHN
+- text: Switzerland has 1.5, Kuwait 1.4, Norway 1.3, and Denmark 1.1.
+  shot:
+    kind: rank
+    isos:
+    - CHE
+    - KWT
+    - NOR
+    - DNK
+- text: What is the adolescent birth rate in your country?
+  shot:
+    kind: card
+    lines:
+    - TEEN BIRTH RATES
+    - World Bank, 2024

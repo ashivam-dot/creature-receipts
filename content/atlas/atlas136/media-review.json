@@ -1,0 +1,29 @@
+{
+  "duration": 44.4,
+  "integrated_lufs": -14.1,
+  "true_peak_dbfs": -1.4,
+  "speech": {
+    "heard": "In Switzerland, open defecation is 0%, in Niger it is 66%. Nigeria is at 18%, that is 2.7 times the 6.7% in India. The rates climb, Benin is 47%, Chad is 62.2%, and South Sudan is 62.8%. Niger hit 66%. It counts the percentage of the population defecating in the open such as in fields, forests, bushes, open bodies of water or on beaches. In contrast, Brazil, Japan and Germany are all at 0%. How much open defecation happens in your country?",
+    "model": "small.en",
+    "media_sha256": "1a48f9bfca1cbc67ee68ea017334d147fde879a407b4df6c2eb1697947a37624",
+    "primary_differences": [
+      "'hits' heard as 'hit' after 'is 62.8% niger'",
+      "'forest' heard as 'forests' after 'as in fields'"
+    ],
+    "differences": [
+      "'hits' heard as 'hit' after 'is 62.8% niger'",
+      "'forest' heard as 'forests' after 'as in fields'",
+      "base.en: 'hits' heard as 'hit' after 'is 62.8% niger'",
+      "base.en: 'forest' heard as 'forests' after 'as in fields'"
+    ],
+    "corroboration": {
+      "model": "base.en",
+      "heard": "In Switzerland, open defecation is 0%, in Niger it is 66%. Nigeria is at 18%, that is 2.7 times the 6.7% in India. The rates climb, Benin is 47%, Chad is 62.2%, and South Sudan is 62.8%. Niger hit 66%. It counts the percentage of the population defecating in the open, such as in fields, forests, bushes, open bodies of water, or on beaches. In contrast, Brazil, Japan, and Germany are all at 0%. How much open defecation happens in your country?",
+      "differences": [
+        "'hits' heard as 'hit' after 'is 62.8% niger'",
+        "'forest' heard as 'forests' after 'as in fields'"
+      ],
+      "resolved": []
+    }
+  }
+}

@@ -1,0 +1,85 @@
+id: atlas136
+title: Places Ranked by Open Defecation Rates
+format: rank_ladder
+hook_text: THE SANITATION GAP
+description: A countdown of global open defecation rates, comparing the highest and lowest nations based on World
+  Bank data.
+hashtags:
+- '#health'
+- '#mapsData'
+- '#geography'
+tags:
+- health
+- population practicing open defecation
+- countries ranked by population practicing open defecation
+- Niger
+- Albania
+- world map
+- geography
+- atlas in numbers
+sources:
+- https://data.worldbank.org/indicator/SH.STA.ODFC.ZS
+dataset:
+  kind: worldbank
+  indicator: SH.STA.ODFC.ZS
+  label: Population practicing open defecation
+  unit: '%'
+  source: World Bank
+  min_year: 2019
+scale:
+  edges:
+  - 0.1
+  - 5.0
+  - 20.0
+  - 60.0
+  labels:
+  - 0%
+  - 0.1-5%
+  - 5-20%
+  - 20-60%
+  - 60%+
+value_format: '{v:.3f}%'
+beats:
+- text: In Switzerland, open defecation is 0%. In Niger, it is 66%.
+  shot:
+    callouts:
+    - CHE
+    - NER
+- text: Nigeria is at 18%. That is 2.7 times the 6.7% in India.
+  shot:
+    kind: group
+    isos:
+    - NGA
+    - IND
+- text: 'The rates climb: Benin is 47%, Chad is 62.2%, and South Sudan is 62.8%.'
+  shot:
+    kind: rank
+    isos:
+    - BEN
+    - TCD
+    - SSD
+- text: Niger hits 66%.
+  shot:
+    kind: country
+    iso: NER
+- text: It counts the percentage of the population defecating in the open, such as in fields, forest, bushes, open
+    bodies of water, or on beaches.
+  shot:
+    kind: country
+    iso: NER
+  basis: People practicing open defecation refers to the percentage of the population defecating in the open, such
+    as in fields, forest, bushes, open bodies of water, on beaches, in other open spaces or disposed of with solid
+    waste.
+- text: In contrast, Brazil, Japan, and Germany are all at 0%.
+  shot:
+    kind: group
+    isos:
+    - BRA
+    - JPN
+    - DEU
+- text: How much open defecation happens in your country?
+  shot:
+    kind: card
+    lines:
+    - How clean is your sanitation?
+    - Population practicing open defecation (%)

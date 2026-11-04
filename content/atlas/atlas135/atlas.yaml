@@ -1,0 +1,71 @@
+id: atlas135
+title: Is YOUR Country Spending More Than It Produces?
+format: spotlight
+hook_text: SPENDING VS OUTPUT
+description: A look at final consumption expenditure relative to GDP around the world, from the USA to Qatar.
+hashtags:
+- '#economy'
+- '#geography'
+- '#countries'
+tags:
+- wealth
+- final consumption expenditure % of gdp
+- countries ranked by final consumption expenditure % of gdp
+- Timor-Leste
+- Qatar
+- world map
+- geography
+- atlas in numbers
+sources:
+- https://data.worldbank.org/indicator/NE.CON.TOTL.ZS
+dataset:
+  kind: worldbank
+  indicator: NE.CON.TOTL.ZS
+  label: Final consumption expenditure (% of GDP)
+  unit: '%'
+  source: World Bank
+  min_year: 2019
+scale:
+  edges:
+  - 65.0
+  - 80.0
+  - 95.0
+  - 110.0
+  labels:
+  - Low (<65%)
+  - Moderate (65-80%)
+  - High (80-95%)
+  - Very High (95-110%)
+  - Extreme (>110%)
+value_format: '{v:.1f}%'
+beats:
+- text: The USA spends 81.5% of its GDP on consumption. In China, it is 56.7%.
+  shot:
+    callouts:
+    - USA
+    - CHN
+- text: Final consumption expenditure is expenditure on goods and services by resident institutional units for the
+    direct satisfaction of human needs or wants.
+  shot:
+    callouts:
+    - USA
+  basis: Final consumption expenditure is expenditure on goods and services by resident institutional units for
+    the direct satisfaction of human needs or wants, whether individual or collective.
+- text: India stands at 67.4% of its GDP, leaving room between its shops and its total production.
+  shot:
+    kind: country
+    iso: IND
+- text: Pakistan climbs higher to 92.9%, where nearly every dollar earned goes to daily living.
+  shot:
+    kind: country
+    iso: PAK
+- text: At the quiet end, Qatar rests at 32.4%, the world's lowest of all 174 countries and territories.
+  shot:
+    kind: country
+    iso: QAT
+- text: How much of your nation's output goes to daily life?
+  shot:
+    kind: card
+    lines:
+    - High consumption?
+    - Final Consumption Expenditure (% of GDP)

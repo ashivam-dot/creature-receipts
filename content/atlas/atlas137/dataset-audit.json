@@ -1,0 +1,21 @@
+{
+  "warnings": [
+    {
+      "country": "Korea, Rep.",
+      "why": "The fertility rate for women aged 15-19 being reported as 0.532 is conflated with total fertility rate or is otherwise implausibly low for a national adolescent birth rate."
+    },
+    {
+      "country": "Korea, Dem. People's Rep.",
+      "why": "A reported value of 0.505 births per 1,000 women aged 15-19 is extremely anomalous and likely reflects a data reporting or unit error rather than actual demographics."
+    },
+    {
+      "country": "Denmark",
+      "why": "A value of 1.06 is suspiciously low compared to demographic norms for the region and likely represents a scaling or unit error in the source data."
+    },
+    {
+      "country": "Hong Kong SAR, China",
+      "why": "A value of 1.15 is extremely low even for Hong Kong and strongly suggests a unit error."
+    }
+  ],
+  "policy": "model memory is advisory; unsupported suspicions cannot overrule official data"
+}

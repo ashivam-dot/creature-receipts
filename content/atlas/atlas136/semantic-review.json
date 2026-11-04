@@ -1,0 +1,160 @@
+{
+  "errors": [],
+  "claims": [
+    {
+      "surface": "title",
+      "text": "Places Ranked by Open Defecation Rates",
+      "isos": [],
+      "support": "indicator: SH.STA.ODFC.ZS"
+    },
+    {
+      "surface": "hook",
+      "text": "THE SANITATION GAP",
+      "isos": [],
+      "support": "indicator: SH.STA.ODFC.ZS"
+    },
+    {
+      "surface": "description",
+      "text": "A countdown of global open defecation rates, comparing the highest and lowest nations based on World Bank data.",
+      "isos": [],
+      "support": "indicator: SH.STA.ODFC.ZS, universe: mapped countries and territories with data, count: 190"
+    },
+    {
+      "surface": "beat_0",
+      "text": "In Switzerland, open defecation is 0%. In Niger, it is 66%.",
+      "isos": [
+        "CHE",
+        "NER"
+      ],
+      "support": "CHE: 0.0%, NER: 65.98% (displayed as 66%)"
+    },
+    {
+      "surface": "beat_1",
+      "text": "Nigeria is at 18%. That is 2.7 times the 6.7% in India.",
+      "isos": [
+        "NGA",
+        "IND"
+      ],
+      "support": "NGA: 17.96% (displayed as 18%), IND: 6.73% (displayed as 6.7%)"
+    },
+    {
+      "surface": "beat_2",
+      "text": "The rates climb: Benin is 47%, Chad is 62.2%, and South Sudan is 62.8%.",
+      "isos": [
+        "BEN",
+        "TCD",
+        "SSD"
+      ],
+      "support": "BEN: 47.04% (displayed as 47%), TCD: 62.22% (displayed as 62.2%), SSD: 62.80% (displayed as 62.8%)"
+    },
+    {
+      "surface": "beat_3",
+      "text": "Niger hits 66%.",
+      "isos": [
+        "NER"
+      ],
+      "support": "NER: 65.98% (displayed as 66%)"
+    },
+    {
+      "surface": "beat_4",
+      "text": "It counts the percentage of the population defecating in the open, such as in fields, forest, bushes, open bodies of water, or on beaches.",
+      "isos": [],
+      "support": "definition: People practicing open defecation refers to the percentage of the population defecating in the open, such as in fields, forest, bushes, open bodies of water, on beaches, in other open spaces or disposed of with solid waste."
+    },
+    {
+      "surface": "beat_5",
+      "text": "In contrast, Brazil, Japan, and Germany are all at 0%.",
+      "isos": [
+        "BRA",
+        "JPN",
+        "DEU"
+      ],
+      "support": "BRA: 0.0%, JPN: 0.0%, DEU: 0.0%"
+    },
+    {
+      "surface": "beat_6",
+      "text": "How much open defecation happens in your country?",
+      "isos": [],
+      "support": "indicator: SH.STA.ODFC.ZS"
+    },
+    {
+      "surface": "card_6",
+      "text": "How clean is your sanitation?",
+      "isos": [],
+      "support": "indicator: SH.STA.ODFC.ZS"
+    }
+  ],
+  "surface_checks": {
+    "title": {
+      "supported": true,
+      "reason": "Indicator measures open defecation rates across ranked countries.",
+      "isos": []
+    },
+    "hook": {
+      "supported": true,
+      "reason": "Valid stylistic hook for sanitation topic.",
+      "isos": []
+    },
+    "description": {
+      "supported": true,
+      "reason": "Accurately describes the World Bank open defecation data.",
+      "isos": []
+    },
+    "beat_0": {
+      "supported": true,
+      "reason": "Switzerland is 0% (CHE) and Niger is 65.98% rounded to 66% (NER).",
+      "isos": [
+        "CHE",
+        "NER"
+      ]
+    },
+    "beat_1": {
+      "supported": true,
+      "reason": "Nigeria is 17.96% (displayed as 18%) and India is 6.73% (displayed as 6.7%).",
+      "isos": [
+        "NGA",
+        "IND"
+      ]
+    },
+    "beat_2": {
+      "supported": true,
+      "reason": "Benin is 47.04% (47%), Chad is 62.22% (62.2%), South Sudan is 62.80% (62.8%).",
+      "isos": [
+        "BEN",
+        "TCD",
+        "SSD"
+      ]
+    },
+    "beat_3": {
+      "supported": true,
+      "reason": "Niger is 65.98% (displayed as 66%).",
+      "isos": [
+        "NER"
+      ]
+    },
+    "beat_4": {
+      "supported": true,
+      "reason": "Matches the exact wording of the definition in evidence.",
+      "isos": []
+    },
+    "beat_5": {
+      "supported": true,
+      "reason": "Brazil, Japan, and Germany all have values of 0.0%.",
+      "isos": [
+        "BRA",
+        "JPN",
+        "DEU"
+      ]
+    },
+    "beat_6": {
+      "supported": true,
+      "reason": "Valid stylistic closing question.",
+      "isos": []
+    },
+    "card_6": {
+      "supported": true,
+      "reason": "Matches the requested title and variable label in visual plans.",
+      "isos": []
+    }
+  }
+}

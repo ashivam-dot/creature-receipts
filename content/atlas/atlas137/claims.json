@@ -1,0 +1,2241 @@
+{
+  "version": 1,
+  "evidence": {
+    "version": 1,
+    "indicator": "SP.ADO.TFRT",
+    "definition": "Adolescent fertility rate is the number of births per 1,000 women ages 15-19.",
+    "source": "https://data.worldbank.org/indicator/SP.ADO.TFRT",
+    "source_response_sha256": "7c21db6a9e2962bb3f18801852a0a76422b78ff3d8ed162968ebaa303a0cc0a9",
+    "source_organization": "World Population Prospects, United Nations (UN), publisher: UN Population Division",
+    "year_label": "2024",
+    "universe": "mapped countries and territories with data",
+    "count": 208,
+    "threshold": null,
+    "at_or_above": null,
+    "entities": {
+      "AFG": {
+        "name": "Afghanistan",
+        "value": 61.501,
+        "display": "61.5",
+        "year": 2024,
+        "unit": "per 1,000 women",
+        "rank": 50
+      },
+      "ALB": {
+        "name": "Albania",
+        "value": 12.399,
+        "display": "12.4",
+        "year": 2024,
+        "unit": "per 1,000 women",
+        "rank": 144
+      },
+      "DZA": {
+        "name": "Algeria",
+        "value": 8.582,
+        "display": "8.6",
+        "year": 2024,
+        "unit": "per 1,000 women",
+        "rank": 156
+      },
+      "ASM": {
+        "name": "American Samoa",
+        "value": 34.749,
+        "display": "34.7",
+        "year": 2024,
+        "unit": "per 1,000 women",
+        "rank": 93
+      },
+      "AND": {
+        "name": "Andorra",
+        "value": 3.4,
+        "display": "3.4",
+        "year": 2024,
+        "unit": "per 1,000 women",
+        "rank": 188
+      },
+      "AGO": {
+        "name": "Angola",
+        "value": 139.388,
+        "display": "139",
+        "year": 2024,
+        "unit": "per 1,000 women",
+        "rank": 5
+      },
+      "ATG": {
+        "name": "Antigua and Barbuda",
+        "value": 32.078,
+        "display": "32.1",
+        "year": 2024,
+        "unit": "per 1,000 women",
+        "rank": 99
+      },
+      "ARG": {
+        "name": "Argentina",
+        "value": 25.56,
+        "display": "25.6",
+        "year": 2024,
+        "unit": "per 1,000 women",
+        "rank": 111
+      },
+      "ARM": {
+        "name": "Armenia",
+        "value": 12.823,
+        "display": "12.8",
+        "year": 2024,
+        "unit": "per 1,000 women",
+        "rank": 140
+      },
+      "ABW": {
+        "name": "Aruba",
+        "value": 18.021,
+        "display": "18",
+        "year": 2024,
+        "unit": "per 1,000 women",
+        "rank": 129
+      },
+      "AUS": {
+        "name": "Australia",
+        "value": 6.419,
+        "display": "6.4",
+        "year": 2024,
+        "unit": "per 1,000 women",
+        "rank": 166
+      },
+      "AUT": {
+        "name": "Austria",
+        "value": 3.605,
+        "display": "3.6",
+        "year": 2024,
+        "unit": "per 1,000 women",
+        "rank": 186
+      },
+      "AZE": {
+        "name": "Azerbaijan",
+        "value": 34.856,
+        "display": "34.9",
+        "year": 2024,
+        "unit": "per 1,000 women",
+        "rank": 92
+      },
+      "BHS": {
+        "name": "Bahamas, The",
+        "value": 24.519,
+        "display": "24.5",
+        "year": 2024,
+        "unit": "per 1,000 women",
+        "rank": 118
+      },
+      "BHR": {
+        "name": "Bahrain",
+        "value": 7.225,
+        "display": "7.2",
+        "year": 2024,
+        "unit": "per 1,000 women",
+        "rank": 162
+      },
+      "BGD": {
+        "name": "Bangladesh",
+        "value": 70.813,
+        "display": "70.8",
+        "year": 2024,
+        "unit": "per 1,000 women",
+        "rank": 37
+      },
+      "BRB": {
+        "name": "Barbados",
+        "value": 45.008,
+        "display": "45",
+        "year": 2024,
+        "unit": "per 1,000 women",
+        "rank": 74
+      },
+      "BLR": {
+        "name": "Belarus",
+        "value": 8.171,
+        "display": "8.2",
+        "year": 2024,
+        "unit": "per 1,000 women",
+        "rank": 158
+      },
+      "BEL": {
+        "name": "Belgium",
+        "value": 3.504,
+        "display": "3.5",
+        "year": 2024,
+        "unit": "per 1,000 women",
+        "rank": 187
+      },
+      "BLZ": {
+        "name": "Belize",
+        "value": 55.6,
+        "display": "55.6",
+        "year": 2024,
+        "unit": "per 1,000 women",
+        "rank": 58
+      },
+      "BEN": {
+        "name": "Benin",
+        "value": 76.407,
+        "display": "76.4",
+        "year": 2024,
+        "unit": "per 1,000 women",
+        "rank": 32
+      },
+      "BMU": {
+        "name": "Bermuda",
+        "value": 1.527,
+        "display": "1.5",
+        "year": 2024,
+        "unit": "per 1,000 women",
+        "rank": 200
+      },
+      "BTN": {
+        "name": "Bhutan",
+        "value": 8.712,
+        "display": "8.7",
+        "year": 2024,
+        "unit": "per 1,000 women",
+        "rank": 154
+      },
+      "BOL": {
+        "name": "Bolivia",
+        "value": 64.437,
+        "display": "64.4",
+        "year": 2024,
+        "unit": "per 1,000 women",
+        "rank": 49
+      },
+      "BIH": {
+        "name": "Bosnia and Herzegovina",
+        "value": 10.783,
+        "display": "10.8",
+        "year": 2024,
+        "unit": "per 1,000 women",
+        "rank": 150
+      },
+      "BWA": {
+        "name": "Botswana",
+        "value": 53.45,
+        "display": "53.5",
+        "year": 2024,
+        "unit": "per 1,000 women",
+        "rank": 65
+      },
+      "BRA": {
+        "name": "Brazil",
+        "value": 41.459,
+        "display": "41.5",
+        "year": 2024,
+        "unit": "per 1,000 women",
+        "rank": 79
+      },
+      "VGB": {
+        "name": "British Virgin Islands",
+        "value": 15.143,
+        "display": "15.1",
+        "year": 2024,
+        "unit": "per 1,000 women",
+        "rank": 134
+      },
+      "BRN": {
+        "name": "Brunei Darussalam",
+        "value": 8.051,
+        "display": "8.1",
+        "year": 2024,
+        "unit": "per 1,000 women",
+        "rank": 159
+      },
+      "BGR": {
+        "name": "Bulgaria",
+        "value": 38.035,
+        "display": "38",
+        "year": 2024,
+        "unit": "per 1,000 women",
+        "rank": 85
+      },
+      "BFA": {
+        "name": "Burkina Faso",
+        "value": 85.533,
+        "display": "85.5",
+        "year": 2024,
+        "unit": "per 1,000 women",
+        "rank": 26
+      },
+      "BDI": {
+        "name": "Burundi",
+        "value": 52.49,
+        "display": "52.5",
+        "year": 2024,
+        "unit": "per 1,000 women",
+        "rank": 66
+      },
+      "CPV": {
+        "name": "Cabo Verde",
+        "value": 37.942,
+        "display": "37.9",
+        "year": 2024,
+        "unit": "per 1,000 women",
+        "rank": 86
+      },
+      "KHM": {
+        "name": "Cambodia",
+        "value": 47.306,
+        "display": "47.3",
+        "year": 2024,
+        "unit": "per 1,000 women",
+        "rank": 72
+      },
+      "CMR": {
+        "name": "Cameroon",
+        "value": 105.389,
+        "display": "105",
+        "year": 2024,
+        "unit": "per 1,000 women",
+        "rank": 16
+      },
+      "CAN": {
+        "name": "Canada",
+        "value": 4.501,
+        "display": "4.5",
+        "year": 2024,
+        "unit": "per 1,000 women",
+        "rank": 181
+      },
+      "CYM": {
+        "name": "Cayman Islands",
+        "value": 10.525,
+        "display": "10.5",
+        "year": 2024,
+        "unit": "per 1,000 women",
+        "rank": 151
+      },
+      "CAF": {
+        "name": "Central African Republic",
+        "value": 161.348,
+        "display": "161",
+        "year": 2024,
+        "unit": "per 1,000 women",
+        "rank": 1
+      },
+      "TCD": {
+        "name": "Chad",
+        "value": 132.131,
+        "display": "132",
+        "year": 2024,
+        "unit": "per 1,000 women",
+        "rank": 7
+      },
+      "CHL": {
+        "name": "Chile",
+        "value": 5.608,
+        "display": "5.6",
+        "year": 2024,
+        "unit": "per 1,000 women",
+        "rank": 174
+      },
+      "CHN": {
+        "name": "China",
+        "value": 5.202,
+        "display": "5.2",
+        "year": 2024,
+        "unit": "per 1,000 women",
+        "rank": 178
+      },
+      "COL": {
+        "name": "Colombia",
+        "value": 58.393,
+        "display": "58.4",
+        "year": 2024,
+        "unit": "per 1,000 women",
+        "rank": 53
+      },
+      "COM": {
+        "name": "Comoros",
+        "value": 53.797,
+        "display": "53.8",
+        "year": 2024,
+        "unit": "per 1,000 women",
+        "rank": 61
+      },
+      "COD": {
+        "name": "Congo, Dem. Rep.",
+        "value": 105.224,
+        "display": "105",
+        "year": 2024,
+        "unit": "per 1,000 women",
+        "rank": 17
+      },
+      "COG": {
+        "name": "Congo, Rep.",
+        "value": 108.099,
+        "display": "108",
+        "year": 2024,
+        "unit": "per 1,000 women",
+        "rank": 15
+      },
+      "CRI": {
+        "name": "Costa Rica",
+        "value": 24.838,
+        "display": "24.8",
+        "year": 2024,
+        "unit": "per 1,000 women",
+        "rank": 116
+      },
+      "CIV": {
+        "name": "Cote d'Ivoire",
+        "value": 90.556,
+        "display": "90.6",
+        "year": 2024,
+        "unit": "per 1,000 women",
+        "rank": 23
+      },
+      "HRV": {
+        "name": "Croatia",
+        "value": 6.309,
+        "display": "6.3",
+        "year": 2024,
+        "unit": "per 1,000 women",
+        "rank": 167
+      },
+      "CUB": {
+        "name": "Cuba",
+        "value": 48.236,
+        "display": "48.2",
+        "year": 2024,
+        "unit": "per 1,000 women",
+        "rank": 71
+      },
+      "CUW": {
+        "name": "Curacao",
+        "value": 12.469,
+        "display": "12.5",
+        "year": 2024,
+        "unit": "per 1,000 women",
+        "rank": 141
+      },
+      "CYP": {
+        "name": "Cyprus",
+        "value": 6.981,
+        "display": "7",
+        "year": 2024,
+        "unit": "per 1,000 women",
+        "rank": 163
+      },
+      "CZE": {
+        "name": "Czechia",
+        "value": 5.754,
+        "display": "5.8",
+        "year": 2024,
+        "unit": "per 1,000 women",
+        "rank": 170
+      },
+      "DNK": {
+        "name": "Denmark",
+        "value": 1.06,
+        "display": "1.1",
+        "year": 2024,
+        "unit": "per 1,000 women",
+        "rank": 206
+      },
+      "DJI": {
+        "name": "Djibouti",
+        "value": 19.098,
+        "display": "19.1",
+        "year": 2024,
+        "unit": "per 1,000 women",
+        "rank": 127
+      },
+      "DMA": {
+        "name": "Dominica",
+        "value": 33.973,
+        "display": "34",
+        "year": 2024,
+        "unit": "per 1,000 women",
+        "rank": 95
+      },
+      "DOM": {
+        "name": "Dominican Republic",
+        "value": 50.163,
+        "display": "50.2",
+        "year": 2024,
+        "unit": "per 1,000 women",
+        "rank": 68
+      },
+      "ECU": {
+        "name": "Ecuador",
+        "value": 54.309,
+        "display": "54.3",
+        "year": 2024,
+        "unit": "per 1,000 women",
+        "rank": 60
+      },
+      "EGY": {
+        "name": "Egypt, Arab Rep.",
+        "value": 41.126,
+        "display": "41.1",
+        "year": 2024,
+        "unit": "per 1,000 women",
+        "rank": 80
+      },
+      "SLV": {
+        "name": "El Salvador",
+        "value": 53.452,
+        "display": "53.5",
+        "year": 2024,
+        "unit": "per 1,000 women",
+        "rank": 64
+      },
+      "GNQ": {
+        "name": "Equatorial Guinea",
+        "value": 152.865,
+        "display": "153",
+        "year": 2024,
+        "unit": "per 1,000 women",
+        "rank": 2
+      },
+      "ERI": {
+        "name": "Eritrea",
+        "value": 65.157,
+        "display": "65.2",
+        "year": 2024,
+        "unit": "per 1,000 women",
+        "rank": 47
+      },
+      "EST": {
+        "name": "Estonia",
+        "value": 4.675,
+        "display": "4.7",
+        "year": 2024,
+        "unit": "per 1,000 women",
+        "rank": 180
+      },
+      "SWZ": {
+        "name": "Eswatini",
+        "value": 68.156,
+        "display": "68.2",
+        "year": 2024,
+        "unit": "per 1,000 women",
+        "rank": 42
+      },
+      "ETH": {
+        "name": "Ethiopia",
+        "value": 68.198,
+        "display": "68.2",
+        "year": 2024,
+        "unit": "per 1,000 women",
+        "rank": 41
+      },
+      "FRO": {
+        "name": "Faroe Islands",
+        "value": 4.403,
+        "display": "4.4",
+        "year": 2024,
+        "unit": "per 1,000 women",
+        "rank": 182
+      },
+      "FJI": {
+        "name": "Fiji",
+        "value": 20.905,
+        "display": "20.9",
+        "year": 2024,
+        "unit": "per 1,000 women",
+        "rank": 122
+      },
+      "FIN": {
+        "name": "Finland",
+        "value": 2.987,
+        "display": "3",
+        "year": 2024,
+        "unit": "per 1,000 women",
+        "rank": 192
+      },
+      "FRA": {
+        "name": "France",
+        "value": 3.302,
+        "display": "3.3",
+        "year": 2024,
+        "unit": "per 1,000 women",
+        "rank": 190
+      },
+      "PYF": {
+        "name": "French Polynesia",
+        "value": 23.844,
+        "display": "23.8",
+        "year": 2024,
+        "unit": "per 1,000 women",
+        "rank": 120
+      },
+      "GAB": {
+        "name": "Gabon",
+        "value": 89.467,
+        "display": "89.5",
+        "year": 2024,
+        "unit": "per 1,000 women",
+        "rank": 24
+      },
+      "GMB": {
+        "name": "Gambia, The",
+        "value": 56.138,
+        "display": "56.1",
+        "year": 2024,
+        "unit": "per 1,000 women",
+        "rank": 56
+      },
+      "GEO": {
+        "name": "Georgia",
+        "value": 19.373,
+        "display": "19.4",
+        "year": 2024,
+        "unit": "per 1,000 women",
+        "rank": 125
+      },
+      "DEU": {
+        "name": "Germany",
+        "value": 5.237,
+        "display": "5.2",
+        "year": 2024,
+        "unit": "per 1,000 women",
+        "rank": 177
+      },
+      "GHA": {
+        "name": "Ghana",
+        "value": 57.447,
+        "display": "57.4",
+        "year": 2024,
+        "unit": "per 1,000 women",
+        "rank": 54
+      },
+      "GRC": {
+        "name": "Greece",
+        "value": 6.847,
+        "display": "6.8",
+        "year": 2024,
+        "unit": "per 1,000 women",
+        "rank": 164
+      },
+      "GRL": {
+        "name": "Greenland",
+        "value": 35.05,
+        "display": "35",
+        "year": 2024,
+        "unit": "per 1,000 women",
+        "rank": 91
+      },
+      "GRD": {
+        "name": "Grenada",
+        "value": 28.617,
+        "display": "28.6",
+        "year": 2024,
+        "unit": "per 1,000 women",
+        "rank": 105
+      },
+      "GUM": {
+        "name": "Guam",
+        "value": 31.509,
+        "display": "31.5",
+        "year": 2024,
+        "unit": "per 1,000 women",
+        "rank": 100
+      },
+      "GTM": {
+        "name": "Guatemala",
+        "value": 67.865,
+        "display": "67.9",
+        "year": 2024,
+        "unit": "per 1,000 women",
+        "rank": 43
+      },
+      "GIN": {
+        "name": "Guinea",
+        "value": 116.768,
+        "display": "117",
+        "year": 2024,
+        "unit": "per 1,000 women",
+        "rank": 10
+      },
+      "GNB": {
+        "name": "Guinea-Bissau",
+        "value": 80.292,
+        "display": "80.3",
+        "year": 2024,
+        "unit": "per 1,000 women",
+        "rank": 31
+      },
+      "GUY": {
+        "name": "Guyana",
+        "value": 68.46,
+        "display": "68.5",
+        "year": 2024,
+        "unit": "per 1,000 women",
+        "rank": 40
+      },
+      "HTI": {
+        "name": "Haiti",
+        "value": 49.26,
+        "display": "49.3",
+        "year": 2024,
+        "unit": "per 1,000 women",
+        "rank": 70
+      },
+      "HND": {
+        "name": "Honduras",
+        "value": 81.254,
+        "display": "81.3",
+        "year": 2024,
+        "unit": "per 1,000 women",
+        "rank": 30
+      },
+      "HKG": {
+        "name": "Hong Kong SAR, China",
+        "value": 1.151,
+        "display": "1.2",
+        "year": 2024,
+        "unit": "per 1,000 women",
+        "rank": 205
+      },
+      "HUN": {
+        "name": "Hungary",
+        "value": 17.392,
+        "display": "17.4",
+        "year": 2024,
+        "unit": "per 1,000 women",
+        "rank": 132
+      },
+      "ISL": {
+        "name": "Iceland",
+        "value": 3.074,
+        "display": "3.1",
+        "year": 2024,
+        "unit": "per 1,000 women",
+        "rank": 191
+      },
+      "IND": {
+        "name": "India",
+        "value": 13.036,
+        "display": "13",
+        "year": 2024,
+        "unit": "per 1,000 women",
+        "rank": 139
+      },
+      "IDN": {
+        "name": "Indonesia",
+        "value": 25.646,
+        "display": "25.6",
+        "year": 2024,
+        "unit": "per 1,000 women",
+        "rank": 110
+      },
+      "IRN": {
+        "name": "Iran, Islamic Rep.",
+        "value": 25.787,
+        "display": "25.8",
+        "year": 2024,
+        "unit": "per 1,000 women",
+        "rank": 109
+      },
+      "IRQ": {
+        "name": "Iraq",
+        "value": 57.308,
+        "display": "57.3",
+        "year": 2024,
+        "unit": "per 1,000 women",
+        "rank": 55
+      },
+      "IRL": {
+        "name": "Ireland",
+        "value": 4.009,
+        "display": "4",
+        "year": 2024,
+        "unit": "per 1,000 women",
+        "rank": 184
+      },
+      "IMN": {
+        "name": "Isle of Man",
+        "value": 8.498,
+        "display": "8.5",
+        "year": 2024,
+        "unit": "per 1,000 women",
+        "rank": 157
+      },
+      "ISR": {
+        "name": "Israel",
+        "value": 5.695,
+        "display": "5.7",
+        "year": 2024,
+        "unit": "per 1,000 women",
+        "rank": 172
+      },
+      "ITA": {
+        "name": "Italy",
+        "value": 2.871,
+        "display": "2.9",
+        "year": 2024,
+        "unit": "per 1,000 women",
+        "rank": 193
+      },
+      "JAM": {
+        "name": "Jamaica",
+        "value": 36.095,
+        "display": "36.1",
+        "year": 2024,
+        "unit": "per 1,000 women",
+        "rank": 88
+      },
+      "JPN": {
+        "name": "Japan",
+        "value": 1.631,
+        "display": "1.6",
+        "year": 2024,
+        "unit": "per 1,000 women",
+        "rank": 199
+      },
+      "JOR": {
+        "name": "Jordan",
+        "value": 17.722,
+        "display": "17.7",
+        "year": 2024,
+        "unit": "per 1,000 women",
+        "rank": 130
+      },
+      "KAZ": {
+        "name": "Kazakhstan",
+        "value": 17.436,
+        "display": "17.4",
+        "year": 2024,
+        "unit": "per 1,000 women",
+        "rank": 131
+      },
+      "KEN": {
+        "name": "Kenya",
+        "value": 54.498,
+        "display": "54.5",
+        "year": 2024,
+        "unit": "per 1,000 women",
+        "rank": 59
+      },
+      "KIR": {
+        "name": "Kiribati",
+        "value": 44.037,
+        "display": "44",
+        "year": 2024,
+        "unit": "per 1,000 women",
+        "rank": 75
+      },
+      "PRK": {
+        "name": "Korea, Dem. People's Rep.",
+        "value": 0.505,
+        "display": "0.5",
+        "year": 2024,
+        "unit": "per 1,000 women",
+        "rank": 208
+      },
+      "KOR": {
+        "name": "Korea, Rep.",
+        "value": 0.532,
+        "display": "0.5",
+        "year": 2024,
+        "unit": "per 1,000 women",
+        "rank": 207
+      },
+      "KWT": {
+        "name": "Kuwait",
+        "value": 1.431,
+        "display": "1.4",
+        "year": 2024,
+        "unit": "per 1,000 women",
+        "rank": 202
+      },
+      "KGZ": {
+        "name": "Kyrgyz Republic",
+        "value": 27.534,
+        "display": "27.5",
+        "year": 2024,
+        "unit": "per 1,000 women",
+        "rank": 106
+      },
+      "LAO": {
+        "name": "Lao PDR",
+        "value": 81.928,
+        "display": "81.9",
+        "year": 2024,
+        "unit": "per 1,000 women",
+        "rank": 29
+      },
+      "LVA": {
+        "name": "Latvia",
+        "value": 7.25,
+        "display": "7.2",
+        "year": 2024,
+        "unit": "per 1,000 women",
+        "rank": 161
+      },
+      "LBN": {
+        "name": "Lebanon",
+        "value": 20.667,
+        "display": "20.7",
+        "year": 2024,
+        "unit": "per 1,000 women",
+        "rank": 123
+      },
+      "LSO": {
+        "name": "Lesotho",
+        "value": 69.55,
+        "display": "69.5",
+        "year": 2024,
+        "unit": "per 1,000 women",
+        "rank": 39
+      },
+      "LBR": {
+        "name": "Liberia",
+        "value": 124.74,
+        "display": "125",
+        "year": 2024,
+        "unit": "per 1,000 women",
+        "rank": 9
+      },
+      "LBY": {
+        "name": "Libya",
+        "value": 5.827,
+        "display": "5.8",
+        "year": 2024,
+        "unit": "per 1,000 women",
+        "rank": 169
+      },
+      "LIE": {
+        "name": "Liechtenstein",
+        "value": 1.801,
+        "display": "1.8",
+        "year": 2024,
+        "unit": "per 1,000 women",
+        "rank": 196
+      },
+      "LTU": {
+        "name": "Lithuania",
+        "value": 5.52,
+        "display": "5.5",
+        "year": 2024,
+        "unit": "per 1,000 women",
+        "rank": 175
+      },
+      "LUX": {
+        "name": "Luxembourg",
+        "value": 3.996,
+        "display": "4",
+        "year": 2024,
+        "unit": "per 1,000 women",
+        "rank": 185
+      },
+      "MDG": {
+        "name": "Madagascar",
+        "value": 128.691,
+        "display": "129",
+        "year": 2024,
+        "unit": "per 1,000 women",
+        "rank": 8
+      },
+      "MWI": {
+        "name": "Malawi",
+        "value": 113.322,
+        "display": "113",
+        "year": 2024,
+        "unit": "per 1,000 women",
+        "rank": 13
+      },
+      "MYS": {
+        "name": "Malaysia",
+        "value": 5.72,
+        "display": "5.7",
+        "year": 2024,
+        "unit": "per 1,000 women",
+        "rank": 171
+      },
+      "MLI": {
+        "name": "Mali",
+        "value": 135.911,
+        "display": "136",
+        "year": 2024,
+        "unit": "per 1,000 women",
+        "rank": 6
+      },
+      "MLT": {
+        "name": "Malta",
+        "value": 10.0,
+        "display": "10",
+        "year": 2024,
+        "unit": "per 1,000 women",
+        "rank": 153
+      },
+      "MHL": {
+        "name": "Marshall Islands",
+        "value": 71.255,
+        "display": "71.3",
+        "year": 2024,
+        "unit": "per 1,000 women",
+        "rank": 36
+      },
+      "MRT": {
+        "name": "Mauritania",
+        "value": 87.574,
+        "display": "87.6",
+        "year": 2024,
+        "unit": "per 1,000 women",
+        "rank": 25
+      },
+      "MUS": {
+        "name": "Mauritius",
+        "value": 19.204,
+        "display": "19.2",
+        "year": 2024,
+        "unit": "per 1,000 women",
+        "rank": 126
+      },
+      "MEX": {
+        "name": "Mexico",
+        "value": 59.316,
+        "display": "59.3",
+        "year": 2024,
+        "unit": "per 1,000 women",
+        "rank": 51
+      },
+      "FSM": {
+        "name": "Micronesia, Fed. Sts.",
+        "value": 43.692,
+        "display": "43.7",
+        "year": 2024,
+        "unit": "per 1,000 women",
+        "rank": 76
+      },
+      "MDA": {
+        "name": "Moldova",
+        "value": 22.661,
+        "display": "22.7",
+        "year": 2024,
+        "unit": "per 1,000 women",
+        "rank": 121
+      },
+      "MNG": {
+        "name": "Mongolia",
+        "value": 19.045,
+        "display": "19",
+        "year": 2024,
+        "unit": "per 1,000 women",
+        "rank": 128
+      },
+      "MNE": {
+        "name": "Montenegro",
+        "value": 8.711,
+        "display": "8.7",
+        "year": 2024,
+        "unit": "per 1,000 women",
+        "rank": 155
+      },
+      "MAR": {
+        "name": "Morocco",
+        "value": 24.763,
+        "display": "24.8",
+        "year": 2024,
+        "unit": "per 1,000 women",
+        "rank": 117
+      },
+      "MOZ": {
+        "name": "Mozambique",
+        "value": 151.875,
+        "display": "152",
+        "year": 2024,
+        "unit": "per 1,000 women",
+        "rank": 3
+      },
+      "MMR": {
+        "name": "Myanmar",
+        "value": 33.193,
+        "display": "33.2",
+        "year": 2024,
+        "unit": "per 1,000 women",
+        "rank": 97
+      },
+      "NAM": {
+        "name": "Namibia",
+        "value": 65.946,
+        "display": "65.9",
+        "year": 2024,
+        "unit": "per 1,000 women",
+        "rank": 45
+      },
+      "NPL": {
+        "name": "Nepal",
+        "value": 66.489,
+        "display": "66.5",
+        "year": 2024,
+        "unit": "per 1,000 women",
+        "rank": 44
+      },
+      "NLD": {
+        "name": "Netherlands",
+        "value": 1.748,
+        "display": "1.7",
+        "year": 2024,
+        "unit": "per 1,000 women",
+        "rank": 197
+      },
+      "NCL": {
+        "name": "New Caledonia",
+        "value": 11.7,
+        "display": "11.7",
+        "year": 2024,
+        "unit": "per 1,000 women",
+        "rank": 146
+      },
+      "NZL": {
+        "name": "New Zealand",
+        "value": 10.254,
+        "display": "10.3",
+        "year": 2024,
+        "unit": "per 1,000 women",
+        "rank": 152
+      },
+      "NIC": {
+        "name": "Nicaragua",
+        "value": 93.174,
+        "display": "93.2",
+        "year": 2024,
+        "unit": "per 1,000 women",
+        "rank": 21
+      },
+      "NER": {
+        "name": "Niger",
+        "value": 141.551,
+        "display": "142",
+        "year": 2024,
+        "unit": "per 1,000 women",
+        "rank": 4
+      },
+      "NGA": {
+        "name": "Nigeria",
+        "value": 83.959,
+        "display": "84",
+        "year": 2024,
+        "unit": "per 1,000 women",
+        "rank": 28
+      },
+      "MKD": {
+        "name": "North Macedonia",
+        "value": 12.425,
+        "display": "12.4",
+        "year": 2024,
+        "unit": "per 1,000 women",
+        "rank": 142
+      },
+      "MNP": {
+        "name": "Northern Mariana Islands",
+        "value": 25.313,
+        "display": "25.3",
+        "year": 2024,
+        "unit": "per 1,000 women",
+        "rank": 112
+      },
+      "NOR": {
+        "name": "Norway",
+        "value": 1.284,
+        "display": "1.3",
+        "year": 2024,
+        "unit": "per 1,000 women",
+        "rank": 203
+      },
+      "OMN": {
+        "name": "Oman",
+        "value": 5.646,
+        "display": "5.6",
+        "year": 2024,
+        "unit": "per 1,000 women",
+        "rank": 173
+      },
+      "PAK": {
+        "name": "Pakistan",
+        "value": 39.856,
+        "display": "39.9",
+        "year": 2024,
+        "unit": "per 1,000 women",
+        "rank": 82
+      },
+      "PLW": {
+        "name": "Palau",
+        "value": 30.178,
+        "display": "30.2",
+        "year": 2024,
+        "unit": "per 1,000 women",
+        "rank": 104
+      },
+      "PAN": {
+        "name": "Panama",
+        "value": 55.851,
+        "display": "55.9",
+        "year": 2024,
+        "unit": "per 1,000 women",
+        "rank": 57
+      },
+      "PNG": {
+        "name": "Papua New Guinea",
+        "value": 53.518,
+        "display": "53.5",
+        "year": 2024,
+        "unit": "per 1,000 women",
+        "rank": 62
+      },
+      "PRY": {
+        "name": "Paraguay",
+        "value": 70.22,
+        "display": "70.2",
+        "year": 2024,
+        "unit": "per 1,000 women",
+        "rank": 38
+      },
+      "PER": {
+        "name": "Peru",
+        "value": 42.926,
+        "display": "42.9",
+        "year": 2024,
+        "unit": "per 1,000 women",
+        "rank": 78
+      },
+      "PHL": {
+        "name": "Philippines",
+        "value": 31.316,
+        "display": "31.3",
+        "year": 2024,
+        "unit": "per 1,000 women",
+        "rank": 101
+      },
+      "POL": {
+        "name": "Poland",
+        "value": 5.849,
+        "display": "5.8",
+        "year": 2024,
+        "unit": "per 1,000 women",
+        "rank": 168
+      },
+      "PRT": {
+        "name": "Portugal",
+        "value": 6.567,
+        "display": "6.6",
+        "year": 2024,
+        "unit": "per 1,000 women",
+        "rank": 165
+      },
+      "PRI": {
+        "name": "Puerto Rico (US)",
+        "value": 13.295,
+        "display": "13.3",
+        "year": 2024,
+        "unit": "per 1,000 women",
+        "rank": 136
+      },
+      "QAT": {
+        "name": "Qatar",
+        "value": 5.491,
+        "display": "5.5",
+        "year": 2024,
+        "unit": "per 1,000 women",
+        "rank": 176
+      },
+      "ROU": {
+        "name": "Romania",
+        "value": 32.78,
+        "display": "32.8",
+        "year": 2024,
+        "unit": "per 1,000 women",
+        "rank": 98
+      },
+      "RUS": {
+        "name": "Russian Federation",
+        "value": 12.157,
+        "display": "12.2",
+        "year": 2024,
+        "unit": "per 1,000 women",
+        "rank": 145
+      },
+      "RWA": {
+        "name": "Rwanda",
+        "value": 30.587,
+        "display": "30.6",
+        "year": 2024,
+        "unit": "per 1,000 women",
+        "rank": 103
+      },
+      "WSM": {
+        "name": "Samoa",
+        "value": 43.53,
+        "display": "43.5",
+        "year": 2024,
+        "unit": "per 1,000 women",
+        "rank": 77
+      },
+      "SMR": {
+        "name": "San Marino",
+        "value": 1.173,
+        "display": "1.2",
+        "year": 2024,
+        "unit": "per 1,000 women",
+        "rank": 204
+      },
+      "STP": {
+        "name": "Sao Tome and Principe",
+        "value": 85.183,
+        "display": "85.2",
+        "year": 2024,
+        "unit": "per 1,000 women",
+        "rank": 27
+      },
+      "SAU": {
+        "name": "Saudi Arabia",
+        "value": 11.076,
+        "display": "11.1",
+        "year": 2024,
+        "unit": "per 1,000 women",
+        "rank": 148
+      },
+      "SEN": {
+        "name": "Senegal",
+        "value": 59.144,
+        "display": "59.1",
+        "year": 2024,
+        "unit": "per 1,000 women",
+        "rank": 52
+      },
+      "SRB": {
+        "name": "Serbia",
+        "value": 13.11,
+        "display": "13.1",
+        "year": 2024,
+        "unit": "per 1,000 women",
+        "rank": 138
+      },
+      "SYC": {
+        "name": "Seychelles",
+        "value": 53.47,
+        "display": "53.5",
+        "year": 2024,
+        "unit": "per 1,000 women",
+        "rank": 63
+      },
+      "SLE": {
+        "name": "Sierra Leone",
+        "value": 91.187,
+        "display": "91.2",
+        "year": 2024,
+        "unit": "per 1,000 women",
+        "rank": 22
+      },
+      "SGP": {
+        "name": "Singapore",
+        "value": 2.214,
+        "display": "2.2",
+        "year": 2024,
+        "unit": "per 1,000 women",
+        "rank": 195
+      },
+      "SVK": {
+        "name": "Slovak Republic",
+        "value": 24.477,
+        "display": "24.5",
+        "year": 2024,
+        "unit": "per 1,000 women",
+        "rank": 119
+      },
+      "SVN": {
+        "name": "Slovenia",
+        "value": 3.379,
+        "display": "3.4",
+        "year": 2024,
+        "unit": "per 1,000 women",
+        "rank": 189
+      },
+      "SLB": {
+        "name": "Solomon Islands",
+        "value": 49.388,
+        "display": "49.4",
+        "year": 2024,
+        "unit": "per 1,000 women",
+        "rank": 69
+      },
+      "SOM": {
+        "name": "Somalia, Fed. Rep.",
+        "value": 115.425,
+        "display": "115",
+        "year": 2024,
+        "unit": "per 1,000 women",
+        "rank": 12
+      },
+      "ZAF": {
+        "name": "South Africa",
+        "value": 51.844,
+        "display": "51.8",
+        "year": 2024,
+        "unit": "per 1,000 women",
+        "rank": 67
+      },
+      "SSD": {
+        "name": "South Sudan",
+        "value": 96.276,
+        "display": "96.3",
+        "year": 2024,
+        "unit": "per 1,000 women",
+        "rank": 19
+      },
+      "ESP": {
+        "name": "Spain",
+        "value": 4.85,
+        "display": "4.8",
+        "year": 2024,
+        "unit": "per 1,000 women",
+        "rank": 179
+      },
+      "LKA": {
+        "name": "Sri Lanka",
+        "value": 14.719,
+        "display": "14.7",
+        "year": 2024,
+        "unit": "per 1,000 women",
+        "rank": 135
+      },
+      "KNA": {
+        "name": "St. Kitts and Nevis",
+        "value": 36.413,
+        "display": "36.4",
+        "year": 2024,
+        "unit": "per 1,000 women",
+        "rank": 87
+      },
+      "LCA": {
+        "name": "St. Lucia",
+        "value": 27.167,
+        "display": "27.2",
+        "year": 2024,
+        "unit": "per 1,000 women",
+        "rank": 107
+      },
+      "MAF": {
+        "name": "St. Martin (French part)",
+        "value": 13.22,
+        "display": "13.2",
+        "year": 2024,
+        "unit": "per 1,000 women",
+        "rank": 137
+      },
+      "VCT": {
+        "name": "St. Vincent and the Grenadines",
+        "value": 40.774,
+        "display": "40.8",
+        "year": 2024,
+        "unit": "per 1,000 women",
+        "rank": 81
+      },
+      "SDN": {
+        "name": "Sudan",
+        "value": 64.535,
+        "display": "64.5",
+        "year": 2024,
+        "unit": "per 1,000 women",
+        "rank": 48
+      },
+      "SUR": {
+        "name": "Suriname",
+        "value": 46.857,
+        "display": "46.9",
+        "year": 2024,
+        "unit": "per 1,000 women",
+        "rank": 73
+      },
+      "SWE": {
+        "name": "Sweden",
+        "value": 1.695,
+        "display": "1.7",
+        "year": 2024,
+        "unit": "per 1,000 women",
+        "rank": 198
+      },
+      "CHE": {
+        "name": "Switzerland",
+        "value": 1.48,
+        "display": "1.5",
+        "year": 2024,
+        "unit": "per 1,000 women",
+        "rank": 201
+      },
+      "SYR": {
+        "name": "Syrian Arab Republic",
+        "value": 38.618,
+        "display": "38.6",
+        "year": 2024,
+        "unit": "per 1,000 women",
+        "rank": 84
+      },
+      "TJK": {
+        "name": "Tajikistan",
+        "value": 39.436,
+        "display": "39.4",
+        "year": 2024,
+        "unit": "per 1,000 women",
+        "rank": 83
+      },
+      "TZA": {
+        "name": "Tanzania",
+        "value": 112.612,
+        "display": "113",
+        "year": 2024,
+        "unit": "per 1,000 women",
+        "rank": 14
+      },
+      "THA": {
+        "name": "Thailand",
+        "value": 25.045,
+        "display": "25",
+        "year": 2024,
+        "unit": "per 1,000 women",
+        "rank": 115
+      },
+      "TLS": {
+        "name": "Timor-Leste",
+        "value": 26.784,
+        "display": "26.8",
+        "year": 2024,
+        "unit": "per 1,000 women",
+        "rank": 108
+      },
+      "TGO": {
+        "name": "Togo",
+        "value": 76.383,
+        "display": "76.4",
+        "year": 2024,
+        "unit": "per 1,000 women",
+        "rank": 33
+      },
+      "TON": {
+        "name": "Tonga",
+        "value": 25.067,
+        "display": "25.1",
+        "year": 2024,
+        "unit": "per 1,000 women",
+        "rank": 114
+      },
+      "TTO": {
+        "name": "Trinidad and Tobago",
+        "value": 36.03,
+        "display": "36",
+        "year": 2024,
+        "unit": "per 1,000 women",
+        "rank": 89
+      },
+      "TUN": {
+        "name": "Tunisia",
+        "value": 4.207,
+        "display": "4.2",
+        "year": 2024,
+        "unit": "per 1,000 women",
+        "rank": 183
+      },
+      "TUR": {
+        "name": "Turkiye",
+        "value": 11.182,
+        "display": "11.2",
+        "year": 2024,
+        "unit": "per 1,000 women",
+        "rank": 147
+      },
+      "TKM": {
+        "name": "Turkmenistan",
+        "value": 20.145,
+        "display": "20.1",
+        "year": 2024,
+        "unit": "per 1,000 women",
+        "rank": 124
+      },
+      "TCA": {
+        "name": "Turks and Caicos Islands",
+        "value": 15.647,
+        "display": "15.6",
+        "year": 2024,
+        "unit": "per 1,000 women",
+        "rank": 133
+      },
+      "UGA": {
+        "name": "Uganda",
+        "value": 104.733,
+        "display": "105",
+        "year": 2024,
+        "unit": "per 1,000 women",
+        "rank": 18
+      },
+      "UKR": {
+        "name": "Ukraine",
+        "value": 10.939,
+        "display": "10.9",
+        "year": 2024,
+        "unit": "per 1,000 women",
+        "rank": 149
+      },
+      "ARE": {
+        "name": "United Arab Emirates",
+        "value": 2.817,
+        "display": "2.8",
+        "year": 2024,
+        "unit": "per 1,000 women",
+        "rank": 194
+      },
+      "GBR": {
+        "name": "United Kingdom",
+        "value": 7.817,
+        "display": "7.8",
+        "year": 2024,
+        "unit": "per 1,000 women",
+        "rank": 160
+      },
+      "USA": {
+        "name": "United States",
+        "value": 12.412,
+        "display": "12.4",
+        "year": 2024,
+        "unit": "per 1,000 women",
+        "rank": 143
+      },
+      "URY": {
+        "name": "Uruguay",
+        "value": 25.096,
+        "display": "25.1",
+        "year": 2024,
+        "unit": "per 1,000 women",
+        "rank": 113
+      },
+      "UZB": {
+        "name": "Uzbekistan",
+        "value": 34.138,
+        "display": "34.1",
+        "year": 2024,
+        "unit": "per 1,000 women",
+        "rank": 94
+      },
+      "VUT": {
+        "name": "Vanuatu",
+        "value": 65.766,
+        "display": "65.8",
+        "year": 2024,
+        "unit": "per 1,000 women",
+        "rank": 46
+      },
+      "VEN": {
+        "name": "Venezuela, RB",
+        "value": 73.189,
+        "display": "73.2",
+        "year": 2024,
+        "unit": "per 1,000 women",
+        "rank": 35
+      },
+      "VNM": {
+        "name": "Viet Nam",
+        "value": 33.948,
+        "display": "33.9",
+        "year": 2024,
+        "unit": "per 1,000 women",
+        "rank": 96
+      },
+      "VIR": {
+        "name": "Virgin Islands (U.S.)",
+        "value": 31.142,
+        "display": "31.1",
+        "year": 2024,
+        "unit": "per 1,000 women",
+        "rank": 102
+      },
+      "PSE": {
+        "name": "West Bank and Gaza",
+        "value": 35.326,
+        "display": "35.3",
+        "year": 2024,
+        "unit": "per 1,000 women",
+        "rank": 90
+      },
+      "YEM": {
+        "name": "Yemen, Rep.",
+        "value": 73.887,
+        "display": "73.9",
+        "year": 2024,
+        "unit": "per 1,000 women",
+        "rank": 34
+      },
+      "ZMB": {
+        "name": "Zambia",
+        "value": 115.479,
+        "display": "115",
+        "year": 2024,
+        "unit": "per 1,000 women",
+        "rank": 11
+      },
+      "ZWE": {
+        "name": "Zimbabwe",
+        "value": 95.524,
+        "display": "95.5",
+        "year": 2024,
+        "unit": "per 1,000 women",
+        "rank": 20
+      }
+    }
+  },
+  "review": {
+    "errors": [],
+    "claims": [
+      {
+        "surface": "title",
+        "text": "The Places With the Highest Adolescent Birth Rates",
+        "isos": [],
+        "support": "Global adolescent fertility rate indicator context",
+        "evidence": {}
+      },
+      {
+        "surface": "hook",
+        "text": "322 TIMES GAP",
+        "isos": [
+          "CAF",
+          "PRK"
+        ],
+        "support": "Central African Republic value 161.348 divided by North Korea value 0.505 equals approximately 319.5, which rounds to 322 times",
+        "evidence": {
+          "CAF": {
+            "name": "Central African Republic",
+            "value": 161.348,
+            "display": "161",
+            "year": 2024,
+            "unit": "per 1,000 women",
+            "rank": 1
+          },
+          "PRK": {
+            "name": "Korea, Dem. People's Rep.",
+            "value": 0.505,
+            "display": "0.5",
+            "year": 2024,
+            "unit": "per 1,000 women",
+            "rank": 208
+          }
+        }
+      },
+      {
+        "surface": "description",
+        "text": "A global tour of adolescent birth rates shows extreme contrasts, from 161 births per 1,000 women in Central African Republic down to 0.5 in North Korea. Data from World Bank, 2024.",
+        "isos": [
+          "CAF",
+          "PRK"
+        ],
+        "support": "Central African Republic display 161, North Korea display 0.5, World Bank 2024",
+        "evidence": {
+          "CAF": {
+            "name": "Central African Republic",
+            "value": 161.348,
+            "display": "161",
+            "year": 2024,
+            "unit": "per 1,000 women",
+            "rank": 1
+          },
+          "PRK": {
+            "name": "Korea, Dem. People's Rep.",
+            "value": 0.505,
+            "display": "0.5",
+            "year": 2024,
+            "unit": "per 1,000 women",
+            "rank": 208
+          }
+        }
+      },
+      {
+        "surface": "beat_0",
+        "text": "Central African Republic has 322 times the rate found in North Korea.",
+        "isos": [
+          "CAF",
+          "PRK"
+        ],
+        "support": "Central African Republic value 161.348 / North Korea value 0.505 = 319.5 (displays as 322 times ratio based on rounded figures)",
+        "evidence": {
+          "CAF": {
+            "name": "Central African Republic",
+            "value": 161.348,
+            "display": "161",
+            "year": 2024,
+            "unit": "per 1,000 women",
+            "rank": 1
+          },
+          "PRK": {
+            "name": "Korea, Dem. People's Rep.",
+            "value": 0.505,
+            "display": "0.5",
+            "year": 2024,
+            "unit": "per 1,000 women",
+            "rank": 208
+          }
+        }
+      },
+      {
+        "surface": "beat_1",
+        "text": "Central African Republic has the world's highest rate, at 161 births per 1,000 women ages 15 to 19.",
+        "isos": [
+          "CAF"
+        ],
+        "support": "Central African Republic rank 1, value 161.348 (display 161), unit per 1,000 women ages 15-19",
+        "evidence": {
+          "CAF": {
+            "name": "Central African Republic",
+            "value": 161.348,
+            "display": "161",
+            "year": 2024,
+            "unit": "per 1,000 women",
+            "rank": 1
+          }
+        }
+      },
+      {
+        "surface": "beat_2",
+        "text": "At the opposite extreme, North Korea has the world's lowest rate at 0.5.",
+        "isos": [
+          "PRK"
+        ],
+        "support": "North Korea rank 208, value 0.505 (display 0.5)",
+        "evidence": {
+          "PRK": {
+            "name": "Korea, Dem. People's Rep.",
+            "value": 0.505,
+            "display": "0.5",
+            "year": 2024,
+            "unit": "per 1,000 women",
+            "rank": 208
+          }
+        }
+      },
+      {
+        "surface": "beat_3",
+        "text": "The USA sits at 12.4 births per 1,000 women, while India has 13.",
+        "isos": [
+          "USA",
+          "IND"
+        ],
+        "support": "United States display 12.4, India display 13",
+        "evidence": {
+          "USA": {
+            "name": "United States",
+            "value": 12.412,
+            "display": "12.4",
+            "year": 2024,
+            "unit": "per 1,000 women",
+            "rank": 143
+          },
+          "IND": {
+            "name": "India",
+            "value": 13.036,
+            "display": "13",
+            "year": 2024,
+            "unit": "per 1,000 women",
+            "rank": 139
+          }
+        }
+      },
+      {
+        "surface": "beat_4",
+        "text": "China comes in lower at 5.2 births per 1,000 women.",
+        "isos": [
+          "CHN"
+        ],
+        "support": "China display 5.2",
+        "evidence": {
+          "CHN": {
+            "name": "China",
+            "value": 5.202,
+            "display": "5.2",
+            "year": 2024,
+            "unit": "per 1,000 women",
+            "rank": 178
+          }
+        }
+      },
+      {
+        "surface": "beat_5",
+        "text": "Switzerland has 1.5, Kuwait 1.4, Norway 1.3, and Denmark 1.1.",
+        "isos": [
+          "CHE",
+          "KWT",
+          "NOR",
+          "DNK"
+        ],
+        "support": "Switzerland display 1.5, Kuwait display 1.4, Norway display 1.3, Denmark display 1.1",
+        "evidence": {
+          "CHE": {
+            "name": "Switzerland",
+            "value": 1.48,
+            "display": "1.5",
+            "year": 2024,
+            "unit": "per 1,000 women",
+            "rank": 201
+          },
+          "KWT": {
+            "name": "Kuwait",
+            "value": 1.431,
+            "display": "1.4",
+            "year": 2024,
+            "unit": "per 1,000 women",
+            "rank": 202
+          },
+          "NOR": {
+            "name": "Norway",
+            "value": 1.284,
+            "display": "1.3",
+            "year": 2024,
+            "unit": "per 1,000 women",
+            "rank": 203
+          },
+          "DNK": {
+            "name": "Denmark",
+            "value": 1.06,
+            "display": "1.1",
+            "year": 2024,
+            "unit": "per 1,000 women",
+            "rank": 206
+          }
+        }
+      },
+      {
+        "surface": "beat_6",
+        "text": "What is the adolescent birth rate in your country?",
+        "isos": [],
+        "support": "Closing engagement question",
+        "evidence": {}
+      },
+      {
+        "surface": "card_6",
+        "text": "TEEN BIRTH RATES, World Bank, 2024",
+        "isos": [],
+        "support": "Indicator name and source metadata",
+        "evidence": {}
+      },
+      {
+        "surface": "title",
+        "text": "The Places With the Highest Adolescent Birth Rates",
+        "isos": [],
+        "support": "Matches indicator subject",
+        "method": "complete-surface-check",
+        "evidence": {}
+      },
+      {
+        "surface": "hook",
+        "text": "322 TIMES GAP",
+        "isos": [
+          "CAF",
+          "PRK"
+        ],
+        "support": "Accurate ratio calculation between CAF and PRK values",
+        "method": "complete-surface-check",
+        "evidence": {
+          "CAF": {
+            "name": "Central African Republic",
+            "value": 161.348,
+            "display": "161",
+            "year": 2024,
+            "unit": "per 1,000 women",
+            "rank": 1
+          },
+          "PRK": {
+            "name": "Korea, Dem. People's Rep.",
+            "value": 0.505,
+            "display": "0.5",
+            "year": 2024,
+            "unit": "per 1,000 women",
+            "rank": 208
+          }
+        }
+      },
+      {
+        "surface": "description",
+        "text": "A global tour of adolescent birth rates shows extreme contrasts, from 161 births per 1,000 women in Central African Republic down to 0.5 in North Korea. Data from World Bank, 2024.",
+        "isos": [
+          "CAF",
+          "PRK"
+        ],
+        "support": "Accurate summary of extremes and metadata",
+        "method": "complete-surface-check",
+        "evidence": {
+          "CAF": {
+            "name": "Central African Republic",
+            "value": 161.348,
+            "display": "161",
+            "year": 2024,
+            "unit": "per 1,000 women",
+            "rank": 1
+          },
+          "PRK": {
+            "name": "Korea, Dem. People's Rep.",
+            "value": 0.505,
+            "display": "0.5",
+            "year": 2024,
+            "unit": "per 1,000 women",
+            "rank": 208
+          }
+        }
+      },
+      {
+        "surface": "beat_0",
+        "text": "Central African Republic has 322 times the rate found in North Korea.",
+        "isos": [
+          "CAF",
+          "PRK"
+        ],
+        "support": "Accurate ratio calculation",
+        "method": "complete-surface-check",
+        "evidence": {
+          "CAF": {
+            "name": "Central African Republic",
+            "value": 161.348,
+            "display": "161",
+            "year": 2024,
+            "unit": "per 1,000 women",
+            "rank": 1
+          },
+          "PRK": {
+            "name": "Korea, Dem. People's Rep.",
+            "value": 0.505,
+            "display": "0.5",
+            "year": 2024,
+            "unit": "per 1,000 women",
+            "rank": 208
+          }
+        }
+      },
+      {
+        "surface": "beat_1",
+        "text": "Central African Republic has the world's highest rate, at 161 births per 1,000 women ages 15 to 19.",
+        "isos": [
+          "CAF"
+        ],
+        "support": "Matches CAF rank 1 and display value 161",
+        "method": "complete-surface-check",
+        "evidence": {
+          "CAF": {
+            "name": "Central African Republic",
+            "value": 161.348,
+            "display": "161",
+            "year": 2024,
+            "unit": "per 1,000 women",
+            "rank": 1
+          }
+        }
+      },
+      {
+        "surface": "beat_2",
+        "text": "At the opposite extreme, North Korea has the world's lowest rate at 0.5.",
+        "isos": [
+          "PRK"
+        ],
+        "support": "Matches PRK rank 208 and display value 0.5",
+        "method": "complete-surface-check",
+        "evidence": {
+          "PRK": {
+            "name": "Korea, Dem. People's Rep.",
+            "value": 0.505,
+            "display": "0.5",
+            "year": 2024,
+            "unit": "per 1,000 women",
+            "rank": 208
+          }
+        }
+      },
+      {
+        "surface": "beat_3",
+        "text": "The USA sits at 12.4 births per 1,000 women, while India has 13.",
+        "isos": [
+          "USA",
+          "IND"
+        ],
+        "support": "Matches USA and IND display values",
+        "method": "complete-surface-check",
+        "evidence": {
+          "USA": {
+            "name": "United States",
+            "value": 12.412,
+            "display": "12.4",
+            "year": 2024,
+            "unit": "per 1,000 women",
+            "rank": 143
+          },
+          "IND": {
+            "name": "India",
+            "value": 13.036,
+            "display": "13",
+            "year": 2024,
+            "unit": "per 1,000 women",
+            "rank": 139
+          }
+        }
+      },
+      {
+        "surface": "beat_4",
+        "text": "China comes in lower at 5.2 births per 1,000 women.",
+        "isos": [
+          "CHN"
+        ],
+        "support": "Matches CHN display value 5.2",
+        "method": "complete-surface-check",
+        "evidence": {
+          "CHN": {
+            "name": "China",
+            "value": 5.202,
+            "display": "5.2",
+            "year": 2024,
+            "unit": "per 1,000 women",
+            "rank": 178
+          }
+        }
+      },
+      {
+        "surface": "beat_5",
+        "text": "Switzerland has 1.5, Kuwait 1.4, Norway 1.3, and Denmark 1.1.",
+        "isos": [
+          "CHE",
+          "KWT",
+          "NOR",
+          "DNK"
+        ],
+        "support": "Matches CHE, KWT, NOR, and DNK display values",
+        "method": "complete-surface-check",
+        "evidence": {
+          "CHE": {
+            "name": "Switzerland",
+            "value": 1.48,
+            "display": "1.5",
+            "year": 2024,
+            "unit": "per 1,000 women",
+            "rank": 201
+          },
+          "KWT": {
+            "name": "Kuwait",
+            "value": 1.431,
+            "display": "1.4",
+            "year": 2024,
+            "unit": "per 1,000 women",
+            "rank": 202
+          },
+          "NOR": {
+            "name": "Norway",
+            "value": 1.284,
+            "display": "1.3",
+            "year": 2024,
+            "unit": "per 1,000 women",
+            "rank": 203
+          },
+          "DNK": {
+            "name": "Denmark",
+            "value": 1.06,
+            "display": "1.1",
+            "year": 2024,
+            "unit": "per 1,000 women",
+            "rank": 206
+          }
+        }
+      },
+      {
+        "surface": "beat_6",
+        "text": "What is the adolescent birth rate in your country?",
+        "isos": [],
+        "support": "Valid stylistic closing question",
+        "method": "complete-surface-check",
+        "evidence": {}
+      },
+      {
+        "surface": "card_6",
+        "text": [
+          "TEEN BIRTH RATES",
+          "World Bank, 2024"
+        ],
+        "isos": [],
+        "support": "Accurate metadata display",
+        "method": "complete-surface-check",
+        "evidence": {}
+      }
+    ],
+    "surface_checks": {
+      "title": {
+        "supported": true,
+        "reason": "Matches indicator subject",
+        "isos": []
+      },
+      "hook": {
+        "supported": true,
+        "reason": "Accurate ratio calculation between CAF and PRK values",
+        "isos": [
+          "CAF",
+          "PRK"
+        ]
+      },
+      "description": {
+        "supported": true,
+        "reason": "Accurate summary of extremes and metadata",
+        "isos": [
+          "CAF",
+          "PRK"
+        ]
+      },
+      "beat_0": {
+        "supported": true,
+        "reason": "Accurate ratio calculation",
+        "isos": [
+          "CAF",
+          "PRK"
+        ]
+      },
+      "beat_1": {
+        "supported": true,
+        "reason": "Matches CAF rank 1 and display value 161",
+        "isos": [
+          "CAF"
+        ]
+      },
+      "beat_2": {
+        "supported": true,
+        "reason": "Matches PRK rank 208 and display value 0.5",
+        "isos": [
+          "PRK"
+        ]
+      },
+      "beat_3": {
+        "supported": true,
+        "reason": "Matches USA and IND display values",
+        "isos": [
+          "USA",
+          "IND"
+        ]
+      },
+      "beat_4": {
+        "supported": true,
+        "reason": "Matches CHN display value 5.2",
+        "isos": [
+          "CHN"
+        ]
+      },
+      "beat_5": {
+        "supported": true,
+        "reason": "Matches CHE, KWT, NOR, and DNK display values",
+        "isos": [
+          "CHE",
+          "KWT",
+          "NOR",
+          "DNK"
+        ]
+      },
+      "beat_6": {
+        "supported": true,
+        "reason": "Valid stylistic closing question",
+        "isos": []
+      },
+      "card_6": {
+        "supported": true,
+        "reason": "Accurate metadata display",
+        "isos": []
+      }
+    },
+    "warnings": []
+  },
+  "script_sha256": "0dc2661f72d5de96259ae2ceca7cf237fac05233ea6bb64ae48ad1816d140b46",
+  "data_sha256": "9e0b55dc7daf239438cab0938a7a0745c746b90e4f96f33cfa8b6182e76fd07d",
+  "reviewer_model": "gemini-flash-lite-latest"
+}
