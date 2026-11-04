@@ -1,0 +1,119 @@
+{
+  "errors": [],
+  "claims": [
+    {
+      "surface": "beat_0",
+      "text": "For women aged 65 to 69, Bosnia stands at 7.8 percent. In UAE, it's 1 percent.",
+      "isos": [
+        "BIH",
+        "ARE"
+      ],
+      "support": "Bosnia and Herzegovina value is 7.84856634828682 (7.8%), United Arab Emirates value is 0.97492190808126 (1%)"
+    },
+    {
+      "surface": "beat_1",
+      "text": "Bosnia is the world's highest, while UAE has the world's lowest.",
+      "isos": [
+        "BIH",
+        "ARE"
+      ],
+      "support": "Bosnia and Herzegovina rank is 1 (highest), United Arab Emirates rank is 208 (lowest)"
+    },
+    {
+      "surface": "beat_2",
+      "text": "The USA has 6 percent, while Nigeria has 1.4 percent.",
+      "isos": [
+        "USA",
+        "NGA"
+      ],
+      "support": "United States value is 5.9744848073433 (6%), Nigeria value is 1.39997602898235 (1.4%)"
+    },
+    {
+      "surface": "beat_3",
+      "text": "Near the top, Belarus has 7.5 percent, Croatia 7.4 percent, and South Korea 7.3 percent.",
+      "isos": [
+        "BLR",
+        "HRV",
+        "KOR"
+      ],
+      "support": "Belarus value is 7.49940279450554 (7.5%), Croatia value is 7.43815059208996 (7.4%), Korea, Rep. value is 7.34544641946086 (7.3%)"
+    },
+    {
+      "surface": "beat_4",
+      "text": "India has 3.1 percent, less than China's 5.3 percent.",
+      "isos": [
+        "IND",
+        "CHN"
+      ],
+      "support": "India value is 3.07206894478669 (3.1%), China value is 5.2744464842192 (5.3%)"
+    }
+  ],
+  "surface_checks": {
+    "title": {
+      "supported": true,
+      "reason": "The title matches the dataset indicator theme (Female population between the ages 65 to 69 as a percentage of the total female population).",
+      "isos": []
+    },
+    "hook": {
+      "supported": true,
+      "reason": "The hook matches the topic of the dataset.",
+      "isos": []
+    },
+    "description": {
+      "supported": true,
+      "reason": "The description accurately states the source (World Bank), indicator definition, and year (2025).",
+      "isos": []
+    },
+    "beat_0": {
+      "supported": true,
+      "reason": "Bosnia and Herzegovina (BIH) is 7.8% and United Arab Emirates (ARE) is 1% in the dataset.",
+      "isos": [
+        "BIH",
+        "ARE"
+      ]
+    },
+    "beat_1": {
+      "supported": true,
+      "reason": "BIH is rank 1 (highest) and ARE is rank 208 (lowest) in the dataset.",
+      "isos": [
+        "BIH",
+        "ARE"
+      ]
+    },
+    "beat_2": {
+      "supported": true,
+      "reason": "USA is 6% and NGA is 1.4% according to the dataset.",
+      "isos": [
+        "USA",
+        "NGA"
+      ]
+    },
+    "beat_3": {
+      "supported": true,
+      "reason": "Belarus is 7.5% (rank 3), Croatia is 7.4% (rank 4), and South Korea is 7.3% (rank 6), all near the top.",
+      "isos": [
+        "BLR",
+        "HRV",
+        "KOR"
+      ]
+    },
+    "beat_4": {
+      "supported": true,
+      "reason": "India is 3.1% and China is 5.3%, making India less than China.",
+      "isos": [
+        "IND",
+        "CHN"
+      ]
+    },
+    "beat_5": {
+      "supported": true,
+      "reason": "The question is a stylistic framing appropriate for viewer engagement.",
+      "isos": []
+    },
+    "card_5": {
+      "supported": true,
+      "reason": "Card title and year match the dataset source and year label.",
+      "isos": []
+    }
+  }
+}

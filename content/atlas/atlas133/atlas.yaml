@@ -1,0 +1,74 @@
+id: atlas133
+title: Senior Women Share Around the World
+hook_text: SENIOR WOMEN SHARE
+description: A global comparison of the share of women aged 65 to 69 based on World Bank data for 2025.
+hashtags:
+- '#population'
+- '#demographics'
+- '#geography'
+tags:
+- population
+- share of women aged 65 to 69
+- countries ranked by share of women aged 65 to 69
+- Bosnia and Herzegovina
+- United Arab Emirates
+- world map
+- geography
+- atlas in numbers
+sources:
+- https://data.worldbank.org/indicator/SP.POP.6569.FE.5Y
+dataset:
+  kind: worldbank
+  indicator: SP.POP.6569.FE.5Y
+  label: Share of women aged 65 to 69
+  unit: '%'
+  source: World Bank
+  min_year: 2019
+scale:
+  edges:
+  - 2.0
+  - 4.0
+  - 6.0
+  labels:
+  - Under 2%
+  - 2% to 4%
+  - 4% to 6%
+  - Over 6%
+value_format: '{v:.1f}%'
+beats:
+- text: For women aged 65 to 69, Bosnia stands at 7.8 percent. In UAE, it's 1 percent.
+  shot:
+    callouts:
+    - BIH
+    - ARE
+- text: Bosnia is the world's highest, while UAE has the world's lowest.
+  shot:
+    kind: group
+    isos:
+    - BIH
+    - ARE
+- text: The USA has 6 percent, while Nigeria has 1.4 percent.
+  shot:
+    kind: group
+    isos:
+    - USA
+    - NGA
+- text: Near the top, Belarus has 7.5 percent, Croatia 7.4 percent, and South Korea 7.3 percent.
+  shot:
+    kind: rank
+    isos:
+    - BLR
+    - HRV
+    - KOR
+- text: India has 3.1 percent, less than China's 5.3 percent.
+  shot:
+    kind: group
+    isos:
+    - IND
+    - CHN
+- text: What share of women in your country are in their late sixties?
+  shot:
+    kind: card
+    lines:
+    - Senior Women Share
+    - World Bank 2025

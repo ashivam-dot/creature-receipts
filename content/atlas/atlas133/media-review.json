@@ -1,0 +1,28 @@
+{
+  "duration": 34.05,
+  "integrated_lufs": -14.4,
+  "true_peak_dbfs": -1.4,
+  "speech": {
+    "heard": "For women aged 65 to 69, Bosnia stands at 7.8 percent. In UAE, it's 1 percent. Bosnia is the world's highest, while UAE has the world's lowest. USA has 6 percent, while Nigeria has 1.4 percent. Near the top, Belarus has 7.5 percent, Croatia 7.4 percent, and South Korea 7.3 percent. India has 3.1 percent, less than China's 5.3 percent. What share of women in your country are in their late 60s?",
+    "model": "small.en",
+    "media_sha256": "f3589cd2600c2fd88ad01f693f7785df3a0f939cb045165796e95c3dfb05552f",
+    "primary_differences": [
+      "'the' heard as '(nothing)' after 'world is lowest'"
+    ],
+    "differences": [
+      "'the' heard as '(nothing)' after 'world is lowest'",
+      "base.en: '(nothing)' heard as 'is' after 'has 7.5% croatia'",
+      "base.en: '(nothing)' heard as 'is' after 'and south korea'"
+    ],
+    "corroboration": {
+      "model": "base.en",
+      "heard": "For women aged 65 to 69, Bosnia stands at 7.8%, in UAE, it's 1%. Bosnia is the world's highest, while UAE has the world's lowest. USA has 6%, while Nigeria has 1.4%. Near the top, Belarus has 7.5%, Croatia's 7.4% and South Korea's 7.3%. India has 3.1 percent, less than China's 5.3 percent. What share of women in your country are in their late 60s?",
+      "differences": [
+        "'the' heard as '(nothing)' after 'world is lowest'",
+        "'(nothing)' heard as 'is' after 'has 7.5% croatia'",
+        "'(nothing)' heard as 'is' after 'and south korea'"
+      ],
+      "resolved": []
+    }
+  }
+}

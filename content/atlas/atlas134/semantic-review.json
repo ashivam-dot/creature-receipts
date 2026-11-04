@@ -1,0 +1,181 @@
+{
+  "errors": [],
+  "claims": [
+    {
+      "surface": "title",
+      "text": "East Timor vs Nigeria: Male Tobacco Use",
+      "isos": [
+        "TLS",
+        "NGA"
+      ],
+      "support": "East Timor (Timor-Leste) value is 76.2% and Nigeria value is 5.8%"
+    },
+    {
+      "surface": "hook",
+      "text": "MALE TOBACCO RATES",
+      "isos": [],
+      "support": "Indicator is SH.PRV.SMOK.MA: Male tobacco use"
+    },
+    {
+      "surface": "description",
+      "text": "Global male tobacco use rates show East Timor at 76.2% and Nigeria at 5.8% in 2024.",
+      "isos": [
+        "TLS",
+        "NGA"
+      ],
+      "support": "TLS value is 76.2%, NGA value is 5.8%, year is 2024"
+    },
+    {
+      "surface": "beat_0",
+      "text": "East Timor hits 76.2% for male tobacco use. Nigeria stays down at 5.8%.",
+      "isos": [
+        "TLS",
+        "NGA"
+      ],
+      "support": "TLS is 76.2%, NGA is 5.8%"
+    },
+    {
+      "surface": "beat_1",
+      "text": "East Timor is the highest of all 163 countries and territories on the globe.",
+      "isos": [
+        "TLS"
+      ],
+      "support": "TLS rank is 1 out of 163"
+    },
+    {
+      "surface": "beat_2",
+      "text": "Nigeria sits at the bottom with 5.8%.",
+      "isos": [
+        "NGA"
+      ],
+      "support": "NGA rank is 163, value 5.8%"
+    },
+    {
+      "surface": "beat_3",
+      "text": "East Timor has 13 times what Nigeria has.",
+      "isos": [
+        "TLS",
+        "NGA"
+      ],
+      "support": "76.2 / 5.8 is approximately 13.13"
+    },
+    {
+      "surface": "beat_4",
+      "text": "China stands at 44.2% and India at 35.6%.",
+      "isos": [
+        "CHN",
+        "IND"
+      ],
+      "support": "CHN is 44.2%, IND is 35.6%"
+    },
+    {
+      "surface": "beat_5",
+      "text": "It counts anyone ages 15 and over who uses smoked or smokeless tobacco.",
+      "isos": [],
+      "support": "Definition: The percentage of the male population ages 15 years and over who currently use any tobacco product (smoked and/or smokeless tobacco)"
+    },
+    {
+      "surface": "beat_6",
+      "text": "The median across the globe is 26.4%.",
+      "isos": [
+        "BEL"
+      ],
+      "support": "Belgium (BEL) value is 26.4%, which matches the median position for 163 sorted entities"
+    },
+    {
+      "surface": "beat_7",
+      "text": "How common is male tobacco use where you live?",
+      "isos": [],
+      "support": "Stylistic question"
+    },
+    {
+      "surface": "card_7",
+      "text": "How does your country compare? Male adult tobacco use rate (%)",
+      "isos": [],
+      "support": "Card matching indicator and metadata"
+    }
+  ],
+  "surface_checks": {
+    "title": {
+      "supported": true,
+      "reason": "East Timor and Nigeria are correctly referenced with their data.",
+      "isos": [
+        "TLS",
+        "NGA"
+      ]
+    },
+    "hook": {
+      "supported": true,
+      "reason": "Matches indicator topic.",
+      "isos": []
+    },
+    "description": {
+      "supported": true,
+      "reason": "Values and year match the evidence.",
+      "isos": [
+        "TLS",
+        "NGA"
+      ]
+    },
+    "beat_0": {
+      "supported": true,
+      "reason": "Values match evidence for Timor-Leste and Nigeria.",
+      "isos": [
+        "TLS",
+        "NGA"
+      ]
+    },
+    "beat_1": {
+      "supported": true,
+      "reason": "Timor-Leste is rank 1 out of 163.",
+      "isos": [
+        "TLS"
+      ]
+    },
+    "beat_2": {
+      "supported": true,
+      "reason": "Nigeria is rank 163 with 5.8%.",
+      "isos": [
+        "NGA"
+      ]
+    },
+    "beat_3": {
+      "supported": true,
+      "reason": "76.2 is roughly 13 times 5.8.",
+      "isos": [
+        "TLS",
+        "NGA"
+      ]
+    },
+    "beat_4": {
+      "supported": true,
+      "reason": "China and India values match evidence.",
+      "isos": [
+        "CHN",
+        "IND"
+      ]
+    },
+    "beat_5": {
+      "supported": true,
+      "reason": "Directly supported by the definition.",
+      "isos": []
+    },
+    "beat_6": {
+      "supported": true,
+      "reason": "Median value matches Belgium.",
+      "isos": [
+        "BEL"
+      ]
+    },
+    "beat_7": {
+      "supported": true,
+      "reason": "Permitted stylistic question.",
+      "isos": []
+    },
+    "card_7": {
+      "supported": true,
+      "reason": "Matches indicator metadata.",
+      "isos": []
+    }
+  }
+}
