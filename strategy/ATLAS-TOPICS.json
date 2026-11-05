@@ -3499,7 +3499,7 @@
    "id": "t100",
    "topic": "Hunger still affects over half",
    "angle": "In the hardest hit nations, more than half of the population faces insufficient dietary energy consumption.",
-   "format": "map_reveal",
+   "format": "versus",
    "dataset": {
     "kind": "worldbank",
     "indicator": "SN.ITK.DEFC.ZS",
@@ -3531,7 +3531,7 @@
     "#world"
    ],
    "source_url": "https://data.worldbank.org/indicator/SN.ITK.DEFC.ZS",
-   "status": "open",
+   "status": "failed:RuntimeError",
    "added_by": "refill"
   },
   {
@@ -3896,7 +3896,7 @@
    "id": "t111",
    "topic": "Electricity Generated From Natural Gas",
    "angle": "Turkmenistan generates 100% of its electricity from natural gas, while half of the world relies on it for less than 3% of their power.",
-   "format": "rank_ladder",
+   "format": "spotlight",
    "dataset": {
     "kind": "worldbank",
     "indicator": "EG.ELC.NGAS.ZS",
@@ -3928,7 +3928,7 @@
     "#energy"
    ],
    "source_url": "https://data.worldbank.org/indicator/EG.ELC.NGAS.ZS",
-   "status": "open",
+   "status": "failed:ValueError",
    "added_by": "refill"
   },
   {
@@ -4045,7 +4045,7 @@
     "#economy"
    ],
    "source_url": "https://data.worldbank.org/indicator/SL.EMP.MPYR.ZS",
-   "status": "open",
+   "status": "failed:RuntimeError",
    "added_by": "refill"
   },
   {
@@ -4308,7 +4308,7 @@
     "#business"
    ],
    "source_url": "https://data.worldbank.org/indicator/IC.ELC.OUTG.ZS",
-   "status": "open",
+   "status": "failed:ValueError",
    "added_by": "refill"
   },
   {
@@ -5203,7 +5203,7 @@
     "#economy"
    ],
    "source_url": "https://data.worldbank.org/indicator/NE.CON.TOTL.ZS",
-   "status": "ready:atlas135",
+   "status": "used:atlas135",
    "added_by": "refill"
   },
   {
@@ -5355,7 +5355,7 @@
     "#mapsData"
    ],
    "source_url": "https://data.worldbank.org/indicator/SH.STA.ODFC.ZS",
-   "status": "ready:atlas136",
+   "status": "used:atlas136",
    "added_by": "refill"
   },
   {
@@ -5394,7 +5394,7 @@
     "#mapstats"
    ],
    "source_url": "https://data.worldbank.org/indicator/SH.STA.HYGN.RU.ZS",
-   "status": "ready:atlas138",
+   "status": "used:atlas138",
    "added_by": "refill"
   },
   {
@@ -5509,7 +5509,7 @@
     "#population"
    ],
    "source_url": "https://data.worldbank.org/indicator/SP.ADO.TFRT",
-   "status": "ready:atlas137",
+   "status": "used:atlas137",
    "added_by": "refill"
   },
   {

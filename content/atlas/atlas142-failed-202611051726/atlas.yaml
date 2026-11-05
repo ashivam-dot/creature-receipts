@@ -1,0 +1,80 @@
+id: atlas142
+title: Places Where Electricity Almost NEVER Stops
+hook_text: RELIABLE POWER
+description: A cinematic comparison of global power reliability for businesses, contrasting Chad's frequent outages
+  with the stable grids of Qatar.
+hashtags:
+- '#energy'
+- '#business'
+- '#geography'
+tags:
+- energy
+- firms experiencing electrical outages
+- countries ranked by firms experiencing electrical outages
+- Chad
+- Qatar
+- world map
+- geography
+- atlas in numbers
+sources:
+- https://data.worldbank.org/indicator/IC.ELC.OUTG.ZS
+dataset:
+  kind: worldbank
+  indicator: IC.ELC.OUTG.ZS
+  label: Firms experiencing electrical outages
+  unit: '%'
+  source: World Bank
+  min_year: 2019
+scale:
+  edges:
+  - 10.0
+  - 40.0
+  - 70.0
+  - 90.0
+  labels:
+  - Rarely
+  - Occasionally
+  - Frequently
+  - Mostly
+  - Almost all
+value_format: '{v:.1f}%'
+beats:
+- text: In Chad, 96.2% of businesses lose power. In Qatar, the figure is 0%.
+  shot:
+    callouts:
+    - TCD
+    - QAT
+- text: Chad is the world's highest. Almost every firm there deals with power disruptions.
+  shot:
+    kind: country
+    iso: TCD
+- text: This counts the percentage of firms that experienced power outages over the last complete fiscal year.
+  basis: Percentage of firms that experienced power outages over the last complete fiscal year.
+- text: Qatar is the world's lowest. 0% of firms there experienced power outages.
+  shot:
+    kind: country
+    iso: QAT
+- text: Saudi Arabia has 0.7%, Kuwait has 3.5%, and China has 3.7%.
+  shot:
+    kind: rank
+    isos:
+    - SAU
+    - KWT
+    - CHN
+- text: Major economies also struggle. Australia has 56.6% and Brazil has 59.6%.
+  shot:
+    kind: group
+    isos:
+    - AUS
+    - BRA
+- text: Burundi has 93.9%, which is 4.2 times the USA at 22.6%.
+  shot:
+    callouts:
+    - BDI
+    - USA
+- text: How often does your local business lose power?
+  shot:
+    kind: card
+    lines:
+    - How often do outages occur?
+    - Firms Experiencing Outages (%)

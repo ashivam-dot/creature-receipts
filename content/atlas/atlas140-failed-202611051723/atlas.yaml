@@ -1,0 +1,78 @@
+id: atlas140
+title: Which Places Rely Most on Natural Gas for Power?
+format: spotlight
+hook_text: GAS POWERED NATIONS
+description: A global look at the share of electricity production from natural gas sources, highlighting the extreme
+  reliance of Turkmenistan versus the global median.
+hashtags:
+- '#energy'
+- '#geography'
+- '#countries'
+tags:
+- energy
+- share of electricity from natural gas
+- countries ranked by share of electricity from natural gas
+- Turkmenistan
+- Afghanistan
+- world map
+- geography
+- atlas in numbers
+sources:
+- https://data.worldbank.org/indicator/EG.ELC.NGAS.ZS
+dataset:
+  kind: worldbank
+  indicator: EG.ELC.NGAS.ZS
+  label: Share of electricity from natural gas
+  unit: '%'
+  source: World Bank
+  min_year: 2019
+scale:
+  edges:
+  - 5.0
+  - 25.0
+  - 50.0
+  - 75.0
+  labels:
+  - Under 5%
+  - 5-25%
+  - 25-50%
+  - 50-75%
+  - Over 75%
+value_format: '{v:.2f}%'
+beats:
+- text: Turkmenistan generates 100% of its electricity from natural gas, while half the world uses under 3%.
+  shot:
+    callouts:
+    - TKM
+- text: It counts the share of electricity production from natural gas sources of total electricity production.
+    Gas refers to natural gas but excludes natural gas liquids.
+  basis: The share of electricity production from natural gas sources of total electricity production. Sources of
+    electricity refer to the inputs used to generate electricity. Gas refers to natural gas but excludes natural
+    gas liquids.
+- text: Turkmenistan has 34 times India, which uses just 2.9%.
+  shot:
+    kind: group
+    isos:
+    - TKM
+    - IND
+- text: The USA sits at 39.6%, far below the leaders but well above the global middle.
+  shot:
+    kind: country
+    iso: USA
+- text: Nigeria is much higher than the USA, with 72.9% of its power from gas.
+  shot:
+    kind: country
+    iso: NGA
+- text: At the bottom, Zimbabwe, Zambia, and Uganda produce 0% of their electricity from natural gas.
+  shot:
+    kind: rank
+    isos:
+    - ZWE
+    - ZMB
+    - UGA
+- text: Does your country rely on gas for its electricity?
+  shot:
+    kind: card
+    lines:
+    - Does your power come from gas?
+    - Share of electricity from natural gas, World Bank

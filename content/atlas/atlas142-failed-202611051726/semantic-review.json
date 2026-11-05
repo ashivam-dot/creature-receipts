@@ -1,0 +1,190 @@
+{
+  "errors": [
+    {
+      "surface": "beat_6",
+      "claim": "Burundi has 93.9%, which is 4.2 times the USA at 22.6%.",
+      "reason": "93.9 divided by 22.6 is approximately 4.15, which rounds to 4.2, but the claim implies a direct mathematical relationship that is not supported by the source definition.",
+      "severity": "info"
+    }
+  ],
+  "claims": [
+    {
+      "surface": "beat_0",
+      "text": "In Chad, 96.2% of businesses lose power.",
+      "isos": [
+        "TCD"
+      ],
+      "support": "96.17499542"
+    },
+    {
+      "surface": "beat_0",
+      "text": "In Qatar, the figure is 0%.",
+      "isos": [
+        "QAT"
+      ],
+      "support": "0.0"
+    },
+    {
+      "surface": "beat_1",
+      "text": "Chad is the world's highest.",
+      "isos": [
+        "TCD"
+      ],
+      "support": "rank 1"
+    },
+    {
+      "surface": "beat_3",
+      "text": "Qatar is the world's lowest.",
+      "isos": [
+        "QAT"
+      ],
+      "support": "rank 163"
+    },
+    {
+      "surface": "beat_3",
+      "text": "0% of firms there experienced power outages.",
+      "isos": [
+        "QAT"
+      ],
+      "support": "0.0"
+    },
+    {
+      "surface": "beat_4",
+      "text": "Saudi Arabia has 0.7%",
+      "isos": [
+        "SAU"
+      ],
+      "support": "0.6670945883"
+    },
+    {
+      "surface": "beat_4",
+      "text": "Kuwait has 3.5%",
+      "isos": [
+        "KWT"
+      ],
+      "support": "3.472869635"
+    },
+    {
+      "surface": "beat_4",
+      "text": "China has 3.7%",
+      "isos": [
+        "CHN"
+      ],
+      "support": "3.657439232"
+    },
+    {
+      "surface": "beat_5",
+      "text": "Australia has 56.6%",
+      "isos": [
+        "AUS"
+      ],
+      "support": "56.60778809"
+    },
+    {
+      "surface": "beat_5",
+      "text": "Brazil has 59.6%",
+      "isos": [
+        "BRA"
+      ],
+      "support": "59.63993073"
+    },
+    {
+      "surface": "beat_6",
+      "text": "Burundi has 93.9%",
+      "isos": [
+        "BDI"
+      ],
+      "support": "93.88008881"
+    },
+    {
+      "surface": "beat_6",
+      "text": "USA at 22.6%",
+      "isos": [
+        "USA"
+      ],
+      "support": "22.63454056"
+    }
+  ],
+  "surface_checks": {
+    "title": {
+      "supported": true,
+      "reason": "The title is a stylistic framing of the data.",
+      "isos": []
+    },
+    "hook": {
+      "supported": true,
+      "reason": "The hook is a stylistic framing of the data.",
+      "isos": []
+    },
+    "description": {
+      "supported": true,
+      "reason": "The description accurately summarizes the contrast between Chad and Qatar.",
+      "isos": [
+        "TCD",
+        "QAT"
+      ]
+    },
+    "beat_0": {
+      "supported": true,
+      "reason": "Values match the evidence for Chad and Qatar.",
+      "isos": [
+        "TCD",
+        "QAT"
+      ]
+    },
+    "beat_1": {
+      "supported": true,
+      "reason": "Chad is ranked 1st in the evidence.",
+      "isos": [
+        "TCD"
+      ]
+    },
+    "beat_2": {
+      "supported": true,
+      "reason": "The text correctly states the definition of the indicator.",
+      "isos": []
+    },
+    "beat_3": {
+      "supported": true,
+      "reason": "Qatar is ranked 163rd in the evidence.",
+      "isos": [
+        "QAT"
+      ]
+    },
+    "beat_4": {
+      "supported": true,
+      "reason": "Values match the evidence for Saudi Arabia, Kuwait, and China.",
+      "isos": [
+        "SAU",
+        "KWT",
+        "CHN"
+      ]
+    },
+    "beat_5": {
+      "supported": true,
+      "reason": "Values match the evidence for Australia and Brazil.",
+      "isos": [
+        "AUS",
+        "BRA"
+      ]
+    },
+    "beat_6": {
+      "supported": true,
+      "reason": "Values match the evidence for Burundi and the USA.",
+      "isos": [
+        "BDI",
+        "USA"
+      ]
+    },
+    "beat_7": {
+      "supported": true,
+      "reason": "The text is a rhetorical question.",
+      "isos": []
+    },
+    "card_7": {
+      "supported": true,
+      "reason": "The card text matches the indicator definition.",
+      "isos": []
+    }
+  }
+}
