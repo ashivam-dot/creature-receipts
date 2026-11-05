@@ -1,0 +1,85 @@
+id: atlas138
+title: Which Country Has the MOST Rural Handwashing Access?
+format: odd_one_out
+hook_text: THE RURAL OUTLIER
+description: A look at the global divide in rural handwashing facilities, comparing giants like China, India, and
+  Nigeria.
+hashtags:
+- '#health'
+- '#mapstats'
+- '#geography'
+tags:
+- health
+- rural pop with soap and water %
+- countries ranked by rural pop with soap and water %
+- Turkmenistan
+- Liberia
+- world map
+- geography
+- atlas in numbers
+sources:
+- https://data.worldbank.org/indicator/SH.STA.HYGN.RU.ZS
+dataset:
+  kind: worldbank
+  indicator: SH.STA.HYGN.RU.ZS
+  label: Rural pop with soap and water (%)
+  unit: '%'
+  source: World Bank
+  min_year: 2019
+scale:
+  edges:
+  - 20.0
+  - 50.0
+  - 80.0
+  - 95.0
+  labels:
+  - <20%
+  - 20-50%
+  - 50-80%
+  - 80-95%
+  - 95%+
+value_format: '{v:.1f}%'
+beats:
+- text: One major country breaks the pattern of its peers. It is not the one you'd guess.
+  shot:
+    callouts:
+    - NGA
+    - CHN
+- text: China, India, or Nigeria. One of these giants has surprisingly low access.
+  shot:
+    kind: group
+    isos:
+    - CHN
+    - IND
+    - NGA
+- text: It counts any home with a sink, bucket, or basin, as long as there is soap.
+  shot:
+    callouts:
+    - MEX
+  basis: Handwashing facilities may be fixed or mobile and include a sink with tap water, buckets with taps, tippy-taps,
+    and jugs or basins designated for handwashing. Soap includes bar soap, liquid soap, powder detergent, and soapy
+    water
+- text: China has 95.3 percent. Almost every rural home there has soap and water ready.
+  shot:
+    kind: country
+    iso: CHN
+- text: India has 85.9 percent. That is 26 times the value Ethiopia has.
+  shot:
+    kind: country
+    iso: IND
+- text: The outlier is Nigeria, at 22.9 percent. Far below its peers.
+  shot:
+    kind: country
+    iso: NGA
+- text: 'At the bottom: Ethiopia has 3.3 percent, and Liberia has just 1 percent.'
+  shot:
+    kind: group
+    isos:
+    - ETH
+    - LBR
+- text: Does your home have a dedicated spot for soap and water?
+  shot:
+    kind: card
+    lines:
+    - Clean Hands?
+    - Rural pop with soap and water (%)

@@ -1,0 +1,182 @@
+{
+  "errors": [
+    {
+      "surface": "beat_4",
+      "claim": "That is 26 times the value Ethiopia has.",
+      "reason": "The value for India is 85.9 percent and Ethiopia is 3.3 percent. 85.9 / 3.3 is approximately 26, but comparison math between absolute percentages is often discouraged or requires strict support; however, looking closer at the prompt instructions: 85.9 divided by 3.3 is 26.03, which numerically supports 26 times. Let us check if there is an actual error. Actually 85.9 / 3.3 = 26.03, so the math is correct. Let's look for other errors. Wait, title claims a cause or superlative: 'Which Country Has the MOST Rural Handwashing Access?' - Mexico and Turkmenistan are tied at 100 percent, so China is not the most. Wait, does the title claim China has the most? No, the title asks 'Which Country Has the MOST Rural Handwashing Access?', which is an identity framing/question, but beat_2 says 'It counts any home...', beat_5 says 'The outlier is Nigeria...'. Let's check beat_4 comparison: India (85.9) vs Ethiopia (3.3). 85.9 / 3.3 = 26.03. Wait, is comparing percentages using 'times' a wrong unit/denominator error? Yes! 'percentages cannot be compared with multiplicative 'times' without converting to percentage points or relative risk' or similar, but let's check if there are clearer factual errors. Let's check title: 'Which Country Has the MOST Rural Handwashing Access?' Mexico and Turkmenistan are rank 1 with 100%. China is rank 13 with 95.3%. But the title is a question, which the prompt says is style. Let's check beat_4's multiplier: 85.9 / 3.3 = 26.03. Let's designate an error for multiplicative percentage comparison if needed, or check another claim. Let's check beat_4 support: Ethiopia is 3.313%, India is 85.92%. 85.92 / 3.313 = 25.93. The claim '26 times' is supported numerically.",
+      "severity": "info"
+    }
+  ],
+  "claims": [
+    {
+      "surface": "title",
+      "text": "Which Country Has the MOST Rural Handwashing Access?",
+      "isos": [],
+      "support": "Mexico and Turkmenistan are rank 1 with 100%."
+    },
+    {
+      "surface": "hook",
+      "text": "THE RURAL OUTLIER",
+      "isos": [],
+      "support": "Global divide in rural handwashing facilities."
+    },
+    {
+      "surface": "description",
+      "text": "A look at the global divide in rural handwashing facilities, comparing giants like China, India, and Nigeria.",
+      "isos": [
+        "CHN",
+        "IND",
+        "NGA"
+      ],
+      "support": "China: 95.3%, India: 85.9%, Nigeria: 22.9%."
+    },
+    {
+      "surface": "beat_0",
+      "text": "One major country breaks the pattern of its peers. It is not the one you'd guess.",
+      "isos": [],
+      "support": "General qualitative narrative introducing outliers."
+    },
+    {
+      "surface": "beat_1",
+      "text": "China, India, or Nigeria. One of these giants has surprisingly low access.",
+      "isos": [
+        "CHN",
+        "IND",
+        "NGA"
+      ],
+      "support": "China: 95.3%, India: 85.9%, Nigeria: 22.9%."
+    },
+    {
+      "surface": "beat_2",
+      "text": "It counts any home with a sink, bucket, or basin, as long as there is soap.",
+      "isos": [],
+      "support": "The percentage of people living in households that have a handwashing facility with soap and water available on the premises. Handwashing facilities may be fixed or mobile and include a sink with tap water, buckets with taps, tippy-taps, and jugs or basins designated for handwashing. Soap includes bar soap, liquid soap, powder detergent, and soapy water"
+    },
+    {
+      "surface": "beat_3",
+      "text": "China has 95.3 percent. Almost every rural home there has soap and water ready.",
+      "isos": [
+        "CHN"
+      ],
+      "support": "China value is 95.3%."
+    },
+    {
+      "surface": "beat_4",
+      "text": "India has 85.9 percent. That is 26 times the value Ethiopia has.",
+      "isos": [
+        "IND",
+        "ETH"
+      ],
+      "support": "India value is 85.9%, Ethiopia value is 3.3%."
+    },
+    {
+      "surface": "beat_5",
+      "text": "The outlier is Nigeria, at 22.9 percent. Far below its peers.",
+      "isos": [
+        "NGA"
+      ],
+      "support": "Nigeria value is 22.9%."
+    },
+    {
+      "surface": "beat_6",
+      "text": "At the bottom: Ethiopia has 3.3 percent, and Liberia has just 1 percent.",
+      "isos": [
+        "ETH",
+        "LBR"
+      ],
+      "support": "Ethiopia value is 3.3%, Liberia value is 1%."
+    },
+    {
+      "surface": "beat_7",
+      "text": "Does your home have a dedicated spot for soap and water?",
+      "isos": [],
+      "support": "Closing loop question."
+    },
+    {
+      "surface": "card_7",
+      "text": "Clean Hands? Rural pop with soap and water (%)",
+      "isos": [],
+      "support": "Indicator definition: The percentage of people living in households that have a handwashing facility with soap and water available on the premises."
+    }
+  ],
+  "surface_checks": {
+    "title": {
+      "supported": true,
+      "reason": "Framing question is style.",
+      "isos": []
+    },
+    "hook": {
+      "supported": true,
+      "reason": "Stylistic hook.",
+      "isos": []
+    },
+    "description": {
+      "supported": true,
+      "reason": "Accurately references China, India, and Nigeria.",
+      "isos": [
+        "CHN",
+        "IND",
+        "NGA"
+      ]
+    },
+    "beat_0": {
+      "supported": true,
+      "reason": "Qualitative introduction supported by data dispersion.",
+      "isos": []
+    },
+    "beat_1": {
+      "supported": true,
+      "reason": "Compares China (95.3%), India (85.9%), and Nigeria (22.9%).",
+      "isos": [
+        "CHN",
+        "IND",
+        "NGA"
+      ]
+    },
+    "beat_2": {
+      "supported": true,
+      "reason": "Matches indicator definition for facilities and soap.",
+      "isos": []
+    },
+    "beat_3": {
+      "supported": true,
+      "reason": "China value is 95.3%.",
+      "isos": [
+        "CHN"
+      ]
+    },
+    "beat_4": {
+      "supported": true,
+      "reason": "India is 85.9% and Ethiopia is 3.3%.",
+      "isos": [
+        "IND",
+        "ETH"
+      ]
+    },
+    "beat_5": {
+      "supported": true,
+      "reason": "Nigeria value is 22.9%.",
+      "isos": [
+        "NGA"
+      ]
+    },
+    "beat_6": {
+      "supported": true,
+      "reason": "Ethiopia is 3.3% and Liberia is 1% (display 1%, actual 0.956%).",
+      "isos": [
+        "ETH",
+        "LBR"
+      ]
+    },
+    "beat_7": {
+      "supported": true,
+      "reason": "Standard loop question.",
+      "isos": []
+    },
+    "card_7": {
+      "supported": true,
+      "reason": "Matches indicator definition and unit.",
+      "isos": []
+    }
+  }
+}

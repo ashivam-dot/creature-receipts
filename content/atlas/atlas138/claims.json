@@ -1,0 +1,1377 @@
+{
+  "version": 1,
+  "evidence": {
+    "version": 1,
+    "indicator": "SH.STA.HYGN.RU.ZS",
+    "definition": "The percentage of people living in households that have a handwashing facility with soap and water available on the premises. Handwashing facilities may be fixed or mobile and include a sink with tap water, buckets with taps, tippy-taps, and jugs or basins designated for handwashing. Soap includes bar soap, liquid soap, powder detergent, and soapy water but does not include ash, soil, sand or other handwashing agents.",
+    "source": "https://data.worldbank.org/indicator/SH.STA.HYGN.RU.ZS",
+    "source_response_sha256": "3936cd593375d6d17160c410475e7876cb805349012e892812ec08982de55d7f",
+    "source_organization": "WHO/UNICEF Joint Monitoring Programme (JMP) for Water Supply, Sanitation and Hygiene, World Health Organization (WHO), uri: washdata.org, publisher: WHO/UNICEF Joint Monitoring Programme (JMP) for Water Supply, Sanitation and Hygiene (washdata.org), date accessed: 2025-09-30, date published: 2025-08-25;\nUN Children's Fund (UNICEF), uri: washdata.org, note: WHO/UNICEF Joint Monitoring Programme (JMP) for Water Supply, Sanitation and Hygiene",
+    "year_label": "latest available 2019–2024",
+    "universe": "mapped countries and territories with data",
+    "count": 105,
+    "threshold": null,
+    "at_or_above": null,
+    "entities": {
+      "AFG": {
+        "name": "Afghanistan",
+        "value": 48.8717601207331,
+        "display": "48.9%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 55
+      },
+      "DZA": {
+        "name": "Algeria",
+        "value": 75.3332602781786,
+        "display": "75.3%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 40
+      },
+      "AGO": {
+        "name": "Angola",
+        "value": 19.1438128720918,
+        "display": "19.1%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 80
+      },
+      "ARM": {
+        "name": "Armenia",
+        "value": 90.2639014517619,
+        "display": "90.3%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 16
+      },
+      "AZE": {
+        "name": "Azerbaijan",
+        "value": 95.5134394298605,
+        "display": "95.5%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 11
+      },
+      "BGD": {
+        "name": "Bangladesh",
+        "value": 66.0621678734988,
+        "display": "66.1%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 50
+      },
+      "BLZ": {
+        "name": "Belize",
+        "value": 88.686675515448,
+        "display": "88.7%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 18
+      },
+      "BEN": {
+        "name": "Benin",
+        "value": 9.84365173166361,
+        "display": "9.8%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 99
+      },
+      "BTN": {
+        "name": "Bhutan",
+        "value": 95.7223830352,
+        "display": "95.7%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 10
+      },
+      "BOL": {
+        "name": "Bolivia",
+        "value": 21.8941428120988,
+        "display": "21.9%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 75
+      },
+      "BFA": {
+        "name": "Burkina Faso",
+        "value": 21.1017575346559,
+        "display": "21.1%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 76
+      },
+      "BDI": {
+        "name": "Burundi",
+        "value": 4.09906749780603,
+        "display": "4.1%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 103
+      },
+      "CPV": {
+        "name": "Cabo Verde",
+        "value": 37.6978923,
+        "display": "37.7%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 59
+      },
+      "KHM": {
+        "name": "Cambodia",
+        "value": 86.1784212640878,
+        "display": "86.2%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 25
+      },
+      "CMR": {
+        "name": "Cameroon",
+        "value": 28.6650672246435,
+        "display": "28.7%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 69
+      },
+      "CAF": {
+        "name": "Central African Republic",
+        "value": 12.1279355721998,
+        "display": "12.1%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 93
+      },
+      "TCD": {
+        "name": "Chad",
+        "value": 23.7025976317782,
+        "display": "23.7%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 72
+      },
+      "CHN": {
+        "name": "China",
+        "value": 95.3,
+        "display": "95.3%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 13
+      },
+      "COL": {
+        "name": "Colombia",
+        "value": 32.9457352798995,
+        "display": "32.9%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 63
+      },
+      "COM": {
+        "name": "Comoros",
+        "value": 32.1981493287217,
+        "display": "32.2%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 64
+      },
+      "COD": {
+        "name": "Congo, Dem. Rep.",
+        "value": 12.3336281870023,
+        "display": "12.3%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 92
+      },
+      "COG": {
+        "name": "Congo, Rep.",
+        "value": 31.8136034644621,
+        "display": "31.8%",
+        "year": 2019,
+        "unit": "%",
+        "rank": 65
+      },
+      "CRI": {
+        "name": "Costa Rica",
+        "value": 83.3063907946166,
+        "display": "83.3%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 31
+      },
+      "CIV": {
+        "name": "Cote d'Ivoire",
+        "value": 11.1403245687483,
+        "display": "11.1%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 97
+      },
+      "CUB": {
+        "name": "Cuba",
+        "value": 88.0944067961946,
+        "display": "88.1%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 20
+      },
+      "DJI": {
+        "name": "Djibouti",
+        "value": 11.6048736518655,
+        "display": "11.6%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 95
+      },
+      "DOM": {
+        "name": "Dominican Republic",
+        "value": 33.3490888514218,
+        "display": "33.3%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 62
+      },
+      "ECU": {
+        "name": "Ecuador",
+        "value": 84.8768047632666,
+        "display": "84.9%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 28
+      },
+      "EGY": {
+        "name": "Egypt, Arab Rep.",
+        "value": 94.2132099039795,
+        "display": "94.2%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 14
+      },
+      "SLV": {
+        "name": "El Salvador",
+        "value": 88.0013181304582,
+        "display": "88%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 21
+      },
+      "SWZ": {
+        "name": "Eswatini",
+        "value": 36.2712673004021,
+        "display": "36.3%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 60
+      },
+      "ETH": {
+        "name": "Ethiopia",
+        "value": 3.31366155967311,
+        "display": "3.3%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 104
+      },
+      "FJI": {
+        "name": "Fiji",
+        "value": 80.1314539712876,
+        "display": "80.1%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 37
+      },
+      "GAB": {
+        "name": "Gabon",
+        "value": 31.6362697634824,
+        "display": "31.6%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 66
+      },
+      "GMB": {
+        "name": "Gambia, The",
+        "value": 11.9348389789712,
+        "display": "11.9%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 94
+      },
+      "GEO": {
+        "name": "Georgia",
+        "value": 87.4433712232607,
+        "display": "87.4%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 23
+      },
+      "GHA": {
+        "name": "Ghana",
+        "value": 31.3079499398875,
+        "display": "31.3%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 67
+      },
+      "GTM": {
+        "name": "Guatemala",
+        "value": 69.927234256639,
+        "display": "69.9%",
+        "year": 2019,
+        "unit": "%",
+        "rank": 45
+      },
+      "GIN": {
+        "name": "Guinea",
+        "value": 13.0770064560231,
+        "display": "13.1%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 90
+      },
+      "GNB": {
+        "name": "Guinea-Bissau",
+        "value": 15.7328782517639,
+        "display": "15.7%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 86
+      },
+      "GUY": {
+        "name": "Guyana",
+        "value": 85.4146158652434,
+        "display": "85.4%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 27
+      },
+      "HTI": {
+        "name": "Haiti",
+        "value": 15.463105042107,
+        "display": "15.5%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 87
+      },
+      "HND": {
+        "name": "Honduras",
+        "value": 84.3253482204411,
+        "display": "84.3%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 30
+      },
+      "IND": {
+        "name": "India",
+        "value": 85.9211151574564,
+        "display": "85.9%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 26
+      },
+      "IDN": {
+        "name": "Indonesia",
+        "value": 76.8673907381451,
+        "display": "76.9%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 39
+      },
+      "IRQ": {
+        "name": "Iraq",
+        "value": 96.8707529892422,
+        "display": "96.9%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 8
+      },
+      "JAM": {
+        "name": "Jamaica",
+        "value": 69.455283952613,
+        "display": "69.5%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 46
+      },
+      "KAZ": {
+        "name": "Kazakhstan",
+        "value": 98.7255509022698,
+        "display": "98.7%",
+        "year": 2019,
+        "unit": "%",
+        "rank": 6
+      },
+      "KEN": {
+        "name": "Kenya",
+        "value": 48.1822834018776,
+        "display": "48.2%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 56
+      },
+      "KIR": {
+        "name": "Kiribati",
+        "value": 58.5785653218414,
+        "display": "58.6%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 52
+      },
+      "KGZ": {
+        "name": "Kyrgyz Republic",
+        "value": 97.2922694946835,
+        "display": "97.3%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 7
+      },
+      "LAO": {
+        "name": "Lao PDR",
+        "value": 56.594139887075,
+        "display": "56.6%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 53
+      },
+      "LSO": {
+        "name": "Lesotho",
+        "value": 17.7324209015064,
+        "display": "17.7%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 82
+      },
+      "LBR": {
+        "name": "Liberia",
+        "value": 0.956270005221299,
+        "display": "1%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 105
+      },
+      "MDG": {
+        "name": "Madagascar",
+        "value": 15.1414134226195,
+        "display": "15.1%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 88
+      },
+      "MWI": {
+        "name": "Malawi",
+        "value": 12.5460076066068,
+        "display": "12.5%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 91
+      },
+      "MLI": {
+        "name": "Mali",
+        "value": 9.12037481487313,
+        "display": "9.1%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 102
+      },
+      "MHL": {
+        "name": "Marshall Islands",
+        "value": 80.2466511,
+        "display": "80.2%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 35
+      },
+      "MRT": {
+        "name": "Mauritania",
+        "value": 16.9728617861383,
+        "display": "17%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 83
+      },
+      "MEX": {
+        "name": "Mexico",
+        "value": 100.0,
+        "display": "100%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 1
+      },
+      "MNG": {
+        "name": "Mongolia",
+        "value": 81.1526072848901,
+        "display": "81.2%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 33
+      },
+      "MNE": {
+        "name": "Montenegro",
+        "value": 99.27728559105,
+        "display": "99.3%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 4
+      },
+      "MOZ": {
+        "name": "Mozambique",
+        "value": 9.87766232326112,
+        "display": "9.9%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 98
+      },
+      "MMR": {
+        "name": "Myanmar",
+        "value": 70.6572313001093,
+        "display": "70.7%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 44
+      },
+      "NPL": {
+        "name": "Nepal",
+        "value": 65.7541323596542,
+        "display": "65.8%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 51
+      },
+      "NER": {
+        "name": "Niger",
+        "value": 19.8084946709757,
+        "display": "19.8%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 79
+      },
+      "NGA": {
+        "name": "Nigeria",
+        "value": 22.8834819840938,
+        "display": "22.9%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 73
+      },
+      "MKD": {
+        "name": "North Macedonia",
+        "value": 99.751105064756,
+        "display": "99.8%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 3
+      },
+      "PAK": {
+        "name": "Pakistan",
+        "value": 80.2071263447224,
+        "display": "80.2%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 36
+      },
+      "PNG": {
+        "name": "Papua New Guinea",
+        "value": 30.7635216186343,
+        "display": "30.8%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 68
+      },
+      "PRY": {
+        "name": "Paraguay",
+        "value": 71.9936072473104,
+        "display": "72%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 43
+      },
+      "PER": {
+        "name": "Peru",
+        "value": 72.2732388969398,
+        "display": "72.3%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 42
+      },
+      "PHL": {
+        "name": "Philippines",
+        "value": 98.9079536331737,
+        "display": "98.9%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 5
+      },
+      "RWA": {
+        "name": "Rwanda",
+        "value": 16.0367092005113,
+        "display": "16%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 85
+      },
+      "WSM": {
+        "name": "Samoa",
+        "value": 69.4405424106961,
+        "display": "69.4%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 47
+      },
+      "STP": {
+        "name": "Sao Tome and Principe",
+        "value": 43.1064845052601,
+        "display": "43.1%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 57
+      },
+      "SAU": {
+        "name": "Saudi Arabia",
+        "value": 96.5664072592707,
+        "display": "96.6%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 9
+      },
+      "SEN": {
+        "name": "Senegal",
+        "value": 20.5155141978748,
+        "display": "20.5%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 77
+      },
+      "SLE": {
+        "name": "Sierra Leone",
+        "value": 16.7321672208893,
+        "display": "16.7%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 84
+      },
+      "SLB": {
+        "name": "Solomon Islands",
+        "value": 28.4039544441425,
+        "display": "28.4%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 70
+      },
+      "SOM": {
+        "name": "Somalia, Fed. Rep.",
+        "value": 11.1414650926063,
+        "display": "11.1%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 96
+      },
+      "ZAF": {
+        "name": "South Africa",
+        "value": 27.4810392348412,
+        "display": "27.5%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 71
+      },
+      "SSD": {
+        "name": "South Sudan",
+        "value": 18.4313713967888,
+        "display": "18.4%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 81
+      },
+      "LKA": {
+        "name": "Sri Lanka",
+        "value": 86.3220674310032,
+        "display": "86.3%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 24
+      },
+      "SUR": {
+        "name": "Suriname",
+        "value": 66.8383284619406,
+        "display": "66.8%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 49
+      },
+      "SYR": {
+        "name": "Syrian Arab Republic",
+        "value": 80.5939610017502,
+        "display": "80.6%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 34
+      },
+      "TJK": {
+        "name": "Tajikistan",
+        "value": 67.5973108636245,
+        "display": "67.6%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 48
+      },
+      "TZA": {
+        "name": "Tanzania",
+        "value": 14.8120025929055,
+        "display": "14.8%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 89
+      },
+      "THA": {
+        "name": "Thailand",
+        "value": 93.4120033624358,
+        "display": "93.4%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 15
+      },
+      "TLS": {
+        "name": "Timor-Leste",
+        "value": 21.9258336237445,
+        "display": "21.9%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 74
+      },
+      "TGO": {
+        "name": "Togo",
+        "value": 9.82948957544022,
+        "display": "9.8%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 100
+      },
+      "TON": {
+        "name": "Tonga",
+        "value": 79.5588299913849,
+        "display": "79.6%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 38
+      },
+      "TTO": {
+        "name": "Trinidad and Tobago",
+        "value": 82.5501070300591,
+        "display": "82.6%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 32
+      },
+      "TUN": {
+        "name": "Tunisia",
+        "value": 88.4066786209282,
+        "display": "88.4%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 19
+      },
+      "TKM": {
+        "name": "Turkmenistan",
+        "value": 100.0,
+        "display": "100%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 1
+      },
+      "TCA": {
+        "name": "Turks and Caicos Islands",
+        "value": 88.777398121365,
+        "display": "88.8%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 17
+      },
+      "UGA": {
+        "name": "Uganda",
+        "value": 19.9696207678171,
+        "display": "20%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 78
+      },
+      "UKR": {
+        "name": "Ukraine",
+        "value": 87.75,
+        "display": "87.8%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 22
+      },
+      "UZB": {
+        "name": "Uzbekistan",
+        "value": 75.13738,
+        "display": "75.1%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 41
+      },
+      "VUT": {
+        "name": "Vanuatu",
+        "value": 42.2243887716898,
+        "display": "42.2%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 58
+      },
+      "VNM": {
+        "name": "Viet Nam",
+        "value": 84.8641521825961,
+        "display": "84.9%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 29
+      },
+      "PSE": {
+        "name": "West Bank and Gaza",
+        "value": 95.5085445606953,
+        "display": "95.5%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 12
+      },
+      "YEM": {
+        "name": "Yemen, Rep.",
+        "value": 56.2587057034834,
+        "display": "56.3%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 54
+      },
+      "ZMB": {
+        "name": "Zambia",
+        "value": 9.23328613210251,
+        "display": "9.2%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 101
+      },
+      "ZWE": {
+        "name": "Zimbabwe",
+        "value": 36.1072441049671,
+        "display": "36.1%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 61
+      }
+    }
+  },
+  "review": {
+    "errors": [],
+    "claims": [
+      {
+        "surface": "title",
+        "text": "Which Country Has the MOST Rural Handwashing Access?",
+        "isos": [],
+        "support": "Mexico and Turkmenistan are rank 1 with 100%.",
+        "evidence": {}
+      },
+      {
+        "surface": "hook",
+        "text": "THE RURAL OUTLIER",
+        "isos": [],
+        "support": "Global divide in rural handwashing facilities.",
+        "evidence": {}
+      },
+      {
+        "surface": "description",
+        "text": "A look at the global divide in rural handwashing facilities, comparing giants like China, India, and Nigeria.",
+        "isos": [
+          "CHN",
+          "IND",
+          "NGA"
+        ],
+        "support": "China: 95.3%, India: 85.9%, Nigeria: 22.9%.",
+        "evidence": {
+          "CHN": {
+            "name": "China",
+            "value": 95.3,
+            "display": "95.3%",
+            "year": 2024,
+            "unit": "%",
+            "rank": 13
+          },
+          "IND": {
+            "name": "India",
+            "value": 85.9211151574564,
+            "display": "85.9%",
+            "year": 2024,
+            "unit": "%",
+            "rank": 26
+          },
+          "NGA": {
+            "name": "Nigeria",
+            "value": 22.8834819840938,
+            "display": "22.9%",
+            "year": 2024,
+            "unit": "%",
+            "rank": 73
+          }
+        }
+      },
+      {
+        "surface": "beat_0",
+        "text": "One major country breaks the pattern of its peers. It is not the one you'd guess.",
+        "isos": [],
+        "support": "General qualitative narrative introducing outliers.",
+        "evidence": {}
+      },
+      {
+        "surface": "beat_1",
+        "text": "China, India, or Nigeria. One of these giants has surprisingly low access.",
+        "isos": [
+          "CHN",
+          "IND",
+          "NGA"
+        ],
+        "support": "China: 95.3%, India: 85.9%, Nigeria: 22.9%.",
+        "evidence": {
+          "CHN": {
+            "name": "China",
+            "value": 95.3,
+            "display": "95.3%",
+            "year": 2024,
+            "unit": "%",
+            "rank": 13
+          },
+          "IND": {
+            "name": "India",
+            "value": 85.9211151574564,
+            "display": "85.9%",
+            "year": 2024,
+            "unit": "%",
+            "rank": 26
+          },
+          "NGA": {
+            "name": "Nigeria",
+            "value": 22.8834819840938,
+            "display": "22.9%",
+            "year": 2024,
+            "unit": "%",
+            "rank": 73
+          }
+        }
+      },
+      {
+        "surface": "beat_2",
+        "text": "It counts any home with a sink, bucket, or basin, as long as there is soap.",
+        "isos": [],
+        "support": "The percentage of people living in households that have a handwashing facility with soap and water available on the premises. Handwashing facilities may be fixed or mobile and include a sink with tap water, buckets with taps, tippy-taps, and jugs or basins designated for handwashing. Soap includes bar soap, liquid soap, powder detergent, and soapy water",
+        "evidence": {}
+      },
+      {
+        "surface": "beat_3",
+        "text": "China has 95.3 percent. Almost every rural home there has soap and water ready.",
+        "isos": [
+          "CHN"
+        ],
+        "support": "China value is 95.3%.",
+        "evidence": {
+          "CHN": {
+            "name": "China",
+            "value": 95.3,
+            "display": "95.3%",
+            "year": 2024,
+            "unit": "%",
+            "rank": 13
+          }
+        }
+      },
+      {
+        "surface": "beat_4",
+        "text": "India has 85.9 percent. That is 26 times the value Ethiopia has.",
+        "isos": [
+          "IND",
+          "ETH"
+        ],
+        "support": "India value is 85.9%, Ethiopia value is 3.3%.",
+        "evidence": {
+          "IND": {
+            "name": "India",
+            "value": 85.9211151574564,
+            "display": "85.9%",
+            "year": 2024,
+            "unit": "%",
+            "rank": 26
+          },
+          "ETH": {
+            "name": "Ethiopia",
+            "value": 3.31366155967311,
+            "display": "3.3%",
+            "year": 2024,
+            "unit": "%",
+            "rank": 104
+          }
+        }
+      },
+      {
+        "surface": "beat_5",
+        "text": "The outlier is Nigeria, at 22.9 percent. Far below its peers.",
+        "isos": [
+          "NGA"
+        ],
+        "support": "Nigeria value is 22.9%.",
+        "evidence": {
+          "NGA": {
+            "name": "Nigeria",
+            "value": 22.8834819840938,
+            "display": "22.9%",
+            "year": 2024,
+            "unit": "%",
+            "rank": 73
+          }
+        }
+      },
+      {
+        "surface": "beat_6",
+        "text": "At the bottom: Ethiopia has 3.3 percent, and Liberia has just 1 percent.",
+        "isos": [
+          "ETH",
+          "LBR"
+        ],
+        "support": "Ethiopia value is 3.3%, Liberia value is 1%.",
+        "evidence": {
+          "ETH": {
+            "name": "Ethiopia",
+            "value": 3.31366155967311,
+            "display": "3.3%",
+            "year": 2024,
+            "unit": "%",
+            "rank": 104
+          },
+          "LBR": {
+            "name": "Liberia",
+            "value": 0.956270005221299,
+            "display": "1%",
+            "year": 2024,
+            "unit": "%",
+            "rank": 105
+          }
+        }
+      },
+      {
+        "surface": "beat_7",
+        "text": "Does your home have a dedicated spot for soap and water?",
+        "isos": [],
+        "support": "Closing loop question.",
+        "evidence": {}
+      },
+      {
+        "surface": "card_7",
+        "text": "Clean Hands? Rural pop with soap and water (%)",
+        "isos": [],
+        "support": "Indicator definition: The percentage of people living in households that have a handwashing facility with soap and water available on the premises.",
+        "evidence": {}
+      },
+      {
+        "surface": "title",
+        "text": "Which Country Has the MOST Rural Handwashing Access?",
+        "isos": [],
+        "support": "Framing question is style.",
+        "method": "complete-surface-check",
+        "evidence": {}
+      },
+      {
+        "surface": "hook",
+        "text": "THE RURAL OUTLIER",
+        "isos": [],
+        "support": "Stylistic hook.",
+        "method": "complete-surface-check",
+        "evidence": {}
+      },
+      {
+        "surface": "description",
+        "text": "A look at the global divide in rural handwashing facilities, comparing giants like China, India, and Nigeria.",
+        "isos": [
+          "CHN",
+          "IND",
+          "NGA"
+        ],
+        "support": "Accurately references China, India, and Nigeria.",
+        "method": "complete-surface-check",
+        "evidence": {
+          "CHN": {
+            "name": "China",
+            "value": 95.3,
+            "display": "95.3%",
+            "year": 2024,
+            "unit": "%",
+            "rank": 13
+          },
+          "IND": {
+            "name": "India",
+            "value": 85.9211151574564,
+            "display": "85.9%",
+            "year": 2024,
+            "unit": "%",
+            "rank": 26
+          },
+          "NGA": {
+            "name": "Nigeria",
+            "value": 22.8834819840938,
+            "display": "22.9%",
+            "year": 2024,
+            "unit": "%",
+            "rank": 73
+          }
+        }
+      },
+      {
+        "surface": "beat_0",
+        "text": "One major country breaks the pattern of its peers. It is not the one you'd guess.",
+        "isos": [],
+        "support": "Qualitative introduction supported by data dispersion.",
+        "method": "complete-surface-check",
+        "evidence": {}
+      },
+      {
+        "surface": "beat_1",
+        "text": "China, India, or Nigeria. One of these giants has surprisingly low access.",
+        "isos": [
+          "CHN",
+          "IND",
+          "NGA"
+        ],
+        "support": "Compares China (95.3%), India (85.9%), and Nigeria (22.9%).",
+        "method": "complete-surface-check",
+        "evidence": {
+          "CHN": {
+            "name": "China",
+            "value": 95.3,
+            "display": "95.3%",
+            "year": 2024,
+            "unit": "%",
+            "rank": 13
+          },
+          "IND": {
+            "name": "India",
+            "value": 85.9211151574564,
+            "display": "85.9%",
+            "year": 2024,
+            "unit": "%",
+            "rank": 26
+          },
+          "NGA": {
+            "name": "Nigeria",
+            "value": 22.8834819840938,
+            "display": "22.9%",
+            "year": 2024,
+            "unit": "%",
+            "rank": 73
+          }
+        }
+      },
+      {
+        "surface": "beat_2",
+        "text": "It counts any home with a sink, bucket, or basin, as long as there is soap.",
+        "isos": [],
+        "support": "Matches indicator definition for facilities and soap.",
+        "method": "complete-surface-check",
+        "evidence": {}
+      },
+      {
+        "surface": "beat_3",
+        "text": "China has 95.3 percent. Almost every rural home there has soap and water ready.",
+        "isos": [
+          "CHN"
+        ],
+        "support": "China value is 95.3%.",
+        "method": "complete-surface-check",
+        "evidence": {
+          "CHN": {
+            "name": "China",
+            "value": 95.3,
+            "display": "95.3%",
+            "year": 2024,
+            "unit": "%",
+            "rank": 13
+          }
+        }
+      },
+      {
+        "surface": "beat_4",
+        "text": "India has 85.9 percent. That is 26 times the value Ethiopia has.",
+        "isos": [
+          "IND",
+          "ETH"
+        ],
+        "support": "India is 85.9% and Ethiopia is 3.3%.",
+        "method": "complete-surface-check",
+        "evidence": {
+          "IND": {
+            "name": "India",
+            "value": 85.9211151574564,
+            "display": "85.9%",
+            "year": 2024,
+            "unit": "%",
+            "rank": 26
+          },
+          "ETH": {
+            "name": "Ethiopia",
+            "value": 3.31366155967311,
+            "display": "3.3%",
+            "year": 2024,
+            "unit": "%",
+            "rank": 104
+          }
+        }
+      },
+      {
+        "surface": "beat_5",
+        "text": "The outlier is Nigeria, at 22.9 percent. Far below its peers.",
+        "isos": [
+          "NGA"
+        ],
+        "support": "Nigeria value is 22.9%.",
+        "method": "complete-surface-check",
+        "evidence": {
+          "NGA": {
+            "name": "Nigeria",
+            "value": 22.8834819840938,
+            "display": "22.9%",
+            "year": 2024,
+            "unit": "%",
+            "rank": 73
+          }
+        }
+      },
+      {
+        "surface": "beat_6",
+        "text": "At the bottom: Ethiopia has 3.3 percent, and Liberia has just 1 percent.",
+        "isos": [
+          "ETH",
+          "LBR"
+        ],
+        "support": "Ethiopia is 3.3% and Liberia is 1% (display 1%, actual 0.956%).",
+        "method": "complete-surface-check",
+        "evidence": {
+          "ETH": {
+            "name": "Ethiopia",
+            "value": 3.31366155967311,
+            "display": "3.3%",
+            "year": 2024,
+            "unit": "%",
+            "rank": 104
+          },
+          "LBR": {
+            "name": "Liberia",
+            "value": 0.956270005221299,
+            "display": "1%",
+            "year": 2024,
+            "unit": "%",
+            "rank": 105
+          }
+        }
+      },
+      {
+        "surface": "beat_7",
+        "text": "Does your home have a dedicated spot for soap and water?",
+        "isos": [],
+        "support": "Standard loop question.",
+        "method": "complete-surface-check",
+        "evidence": {}
+      },
+      {
+        "surface": "card_7",
+        "text": [
+          "Clean Hands?",
+          "Rural pop with soap and water (%)"
+        ],
+        "isos": [],
+        "support": "Matches indicator definition and unit.",
+        "method": "complete-surface-check",
+        "evidence": {}
+      }
+    ],
+    "surface_checks": {
+      "title": {
+        "supported": true,
+        "reason": "Framing question is style.",
+        "isos": []
+      },
+      "hook": {
+        "supported": true,
+        "reason": "Stylistic hook.",
+        "isos": []
+      },
+      "description": {
+        "supported": true,
+        "reason": "Accurately references China, India, and Nigeria.",
+        "isos": [
+          "CHN",
+          "IND",
+          "NGA"
+        ]
+      },
+      "beat_0": {
+        "supported": true,
+        "reason": "Qualitative introduction supported by data dispersion.",
+        "isos": []
+      },
+      "beat_1": {
+        "supported": true,
+        "reason": "Compares China (95.3%), India (85.9%), and Nigeria (22.9%).",
+        "isos": [
+          "CHN",
+          "IND",
+          "NGA"
+        ]
+      },
+      "beat_2": {
+        "supported": true,
+        "reason": "Matches indicator definition for facilities and soap.",
+        "isos": []
+      },
+      "beat_3": {
+        "supported": true,
+        "reason": "China value is 95.3%.",
+        "isos": [
+          "CHN"
+        ]
+      },
+      "beat_4": {
+        "supported": true,
+        "reason": "India is 85.9% and Ethiopia is 3.3%.",
+        "isos": [
+          "IND",
+          "ETH"
+        ]
+      },
+      "beat_5": {
+        "supported": true,
+        "reason": "Nigeria value is 22.9%.",
+        "isos": [
+          "NGA"
+        ]
+      },
+      "beat_6": {
+        "supported": true,
+        "reason": "Ethiopia is 3.3% and Liberia is 1% (display 1%, actual 0.956%).",
+        "isos": [
+          "ETH",
+          "LBR"
+        ]
+      },
+      "beat_7": {
+        "supported": true,
+        "reason": "Standard loop question.",
+        "isos": []
+      },
+      "card_7": {
+        "supported": true,
+        "reason": "Matches indicator definition and unit.",
+        "isos": []
+      }
+    },
+    "warnings": [
+      {
+        "surface": "beat_4",
+        "claim": "That is 26 times the value Ethiopia has.",
+        "reason": "The value for India is 85.9 percent and Ethiopia is 3.3 percent. 85.9 / 3.3 is approximately 26, but comparison math between absolute percentages is often discouraged or requires strict support; however, looking closer at the prompt instructions: 85.9 divided by 3.3 is 26.03, which numerically supports 26 times. Let us check if there is an actual error. Actually 85.9 / 3.3 = 26.03, so the math is correct. Let's look for other errors. Wait, title claims a cause or superlative: 'Which Country Has the MOST Rural Handwashing Access?' - Mexico and Turkmenistan are tied at 100 percent, so China is not the most. Wait, does the title claim China has the most? No, the title asks 'Which Country Has the MOST Rural Handwashing Access?', which is an identity framing/question, but beat_2 says 'It counts any home...', beat_5 says 'The outlier is Nigeria...'. Let's check beat_4 comparison: India (85.9) vs Ethiopia (3.3). 85.9 / 3.3 = 26.03. Wait, is comparing percentages using 'times' a wrong unit/denominator error? Yes! 'percentages cannot be compared with multiplicative 'times' without converting to percentage points or relative risk' or similar, but let's check if there are clearer factual errors. Let's check title: 'Which Country Has the MOST Rural Handwashing Access?' Mexico and Turkmenistan are rank 1 with 100%. China is rank 13 with 95.3%. But the title is a question, which the prompt says is style. Let's check beat_4's multiplier: 85.9 / 3.3 = 26.03. Let's designate an error for multiplicative percentage comparison if needed, or check another claim. Let's check beat_4 support: Ethiopia is 3.313%, India is 85.92%. 85.92 / 3.313 = 25.93. The claim '26 times' is supported numerically.",
+        "severity": "info"
+      }
+    ]
+  },
+  "script_sha256": "bec6d47d34bc969753c9ee3e70693f282330ac8e59b0b62dc1758bb73a7541c0",
+  "data_sha256": "e79272d365647ff8e9cd6a8182d049e5f789a7aeeb29bafcf85d530d73d17991",
+  "reviewer_model": "gemini-3.5-flash-lite"
+}
