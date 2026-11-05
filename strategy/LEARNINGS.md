@@ -94,20 +94,21 @@ Refreshed by every producer run (`atlas.stats`) from the channel's public feed o
 | atlas106 USA vs Iraq: The 85 Times Research Spending Gap | versus | 2026-10-30 16:00 UTC | 201 | 2 | 1.6 |
 | atlas107 Which Country Has the MOST Diabetes? | odd_one_out | 2026-10-30 20:00 UTC | 67 | 0 | 0.5 |
 | atlas108 Places Ranked by How Much Money They Save | map_reveal | 2026-10-30 23:00 UTC | 405 | 2 | 3.3 |
-| atlas109 Places Ranked by Years of Preschool | rank_ladder | 2026-10-31 16:00 UTC | 1054 | 8 | 10.1 |
-| atlas112 Which Country Has the Most Youth Financial Access? | odd_one_out | 2026-10-31 20:00 UTC | 576 | 7 | 5.7 |
-| atlas113 Is YOUR Country a Service Economy? | map_reveal | 2026-10-31 23:00 UTC | 633 | 3 | 6.5 |
-| atlas114 Places Ranked by University Degrees | rank_ladder | 2026-11-01 17:00 UTC | 1081 | 10 | 13.6 |
-| atlas119 Qatar vs Chad: The Global Paid Employment Gap | versus | 2026-11-01 21:00 UTC | 101 | 0 | 1.3 |
-| atlas120 How Does the USA Compare on Safe Drinking Water? | spotlight | 2026-11-02 00:00 UTC | 131 | 0 | 1.8 |
-| atlas121 The Places With the Highest Male Share | map_reveal | 2026-11-02 17:00 UTC | 1217 | 17 | 21.8 |
-| atlas122 USA vs Russia: How Much Tax Revenue Comes From Income? | versus | 2026-11-03 00:00 UTC | 164 | 2 | 3.4 |
-| atlas123 Places Ranked by Access to Basic Sanitation | rank_ladder | 2026-11-02 21:00 UTC | 579 | 6 | 11.2 |
-| atlas124 Which Major Country Has the Highest Savings Rate? | odd_one_out | 2026-11-03 21:00 UTC | 1085 | 4 | 39.2 |
-| atlas125 Places Ranked by Adult Literacy | map_reveal | 2026-11-03 17:00 UTC | 1191 | 18 | 37.6 |
-| atlas126 Iraq vs USA: Natural Resource Wealth | versus | 2026-11-04 17:00 UTC | 32 | 1 | 4.2 |
-| atlas127 How Does the USA Compare on High School Completion? | spotlight | 2026-11-04 00:00 UTC | 1048 | 15 | 42.4 |
-| atlas133 Senior Women Share Around the World | map_reveal | 2026-11-04 21:00 UTC | 28 | 0 | 7.6 |
+| atlas109 Places Ranked by Years of Preschool | rank_ladder | 2026-10-31 16:00 UTC | 1054 | – | 9.3 |
+| atlas112 Which Country Has the Most Youth Financial Access? | odd_one_out | 2026-10-31 20:00 UTC | 575 | – | 5.3 |
+| atlas113 Is YOUR Country a Service Economy? | map_reveal | 2026-10-31 23:00 UTC | 634 | – | 6.0 |
+| atlas114 Places Ranked by University Degrees | rank_ladder | 2026-11-01 17:00 UTC | 1082 | – | 12.3 |
+| atlas119 Qatar vs Chad: The Global Paid Employment Gap | versus | 2026-11-01 21:00 UTC | 101 | – | 1.2 |
+| atlas120 How Does the USA Compare on Safe Drinking Water? | spotlight | 2026-11-02 00:00 UTC | 132 | – | 1.6 |
+| atlas121 The Places With the Highest Male Share | map_reveal | 2026-11-02 17:00 UTC | 1218 | – | 19.0 |
+| atlas122 USA vs Russia: How Much Tax Revenue Comes From Income? | versus | 2026-11-03 00:00 UTC | 175 | – | 3.1 |
+| atlas123 Places Ranked by Access to Basic Sanitation | rank_ladder | 2026-11-02 21:00 UTC | 579 | – | 9.6 |
+| atlas124 Which Major Country Has the Highest Savings Rate? | odd_one_out | 2026-11-03 21:00 UTC | 1090 | – | 30.1 |
+| atlas125 Places Ranked by Adult Literacy | map_reveal | 2026-11-03 17:00 UTC | 1206 | – | 30.0 |
+| atlas126 Iraq vs USA: Natural Resource Wealth | versus | 2026-11-04 17:00 UTC | 57 | – | 3.5 |
+| atlas127 How Does the USA Compare on High School Completion? | spotlight | 2026-11-04 00:00 UTC | 1052 | – | 31.7 |
+| atlas128 Places Ranked by Income Share of the Poorest | rank_ladder | 2026-11-05 00:00 UTC | 862 | – | 94.0 |
+| atlas133 Senior Women Share Around the World | map_reveal | 2026-11-04 21:00 UTC | 180 | – | 14.8 |
 
 ## Log
 
