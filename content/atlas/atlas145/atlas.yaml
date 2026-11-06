@@ -1,0 +1,70 @@
+id: atlas145
+title: Is YOUR Country Powered by Oil?
+hook_text: OIL POWERED ISLANDS
+description: countries and territories ranked by their share of electricity from oil, comparing extreme island nations
+  with industrial giants.
+hashtags:
+- '#geography'
+- '#energy'
+- '#countries'
+tags:
+- geography
+- share of electricity from oil
+- countries ranked by share of electricity from oil
+- Timor-Leste
+- Albania
+- world map
+- atlas in numbers
+sources:
+- https://data.worldbank.org/indicator/EG.ELC.PETR.ZS
+dataset:
+  kind: worldbank
+  indicator: EG.ELC.PETR.ZS
+  label: Share of electricity from oil
+  unit: '%'
+  source: World Bank
+  min_year: 2019
+scale:
+  kind: threshold
+  at: 50.0
+  labels:
+  - Majority oil-powered
+  - Lower oil reliance
+value_format: '{v:.3f}%'
+beats:
+- text: East Timor gets 99.6 percent of its electricity from oil. In Nigeria, it is 0.04 percent.
+  shot:
+    callouts:
+    - TLS
+    - NGA
+- text: East Timor has 142 times the share of electricity from oil that the USA has.
+  shot:
+    kind: country
+    iso: TLS
+  basis: The share of electricity production from oil sources of total electricity production.
+- text: The Gambia gets 98.4 percent from oil, and Chad gets 97.7 percent.
+  shot:
+    kind: group
+    isos:
+    - GMB
+    - TCD
+- text: Meanwhile, China runs on just 0.1 percent oil for electricity, and India gets 0.7 percent.
+  shot:
+    kind: group
+    isos:
+    - CHN
+    - IND
+- text: Georgia, Latvia, Nepal, and Zimbabwe get 0 percent of their electricity from oil.
+  shot:
+    kind: rank
+    isos:
+    - GEO
+    - LVA
+    - NPL
+    - ZWE
+- text: What is the primary source of electricity in your country?
+  shot:
+    kind: card
+    lines:
+    - What powers your lights?
+    - Share of electricity from oil

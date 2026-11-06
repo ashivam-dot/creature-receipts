@@ -1,0 +1,81 @@
+id: atlas144
+title: Is EAST Timor Near the Top for Energy Depletion?
+format: spotlight
+hook_text: MASSIVE LOSS
+description: Wealth Lost to Energy Depletion across 188 countries and territories.
+hashtags:
+- '#economy'
+- '#energy'
+- '#geography'
+tags:
+- wealth
+- energy depletion as % of gni
+- countries ranked by energy depletion as % of gni
+- Timor-Leste
+- Benin
+- world map
+- geography
+- atlas in numbers
+sources:
+- https://data.worldbank.org/indicator/NY.ADJ.DNGY.GN.ZS
+dataset:
+  kind: worldbank
+  indicator: NY.ADJ.DNGY.GN.ZS
+  label: Energy depletion as % of GNI
+  unit: '%'
+  source: World Bank
+  min_year: 2019
+scale:
+  edges:
+  - 0.1
+  - 1.0
+  - 10.0
+  - 20.0
+  labels:
+  - Minimal
+  - Low
+  - Moderate
+  - High
+  - Extreme
+value_format: '{v:.4f}%'
+beats:
+- text: Fossil fuel depletion swallows 57.2% of gross national income in East Timor.
+  shot:
+    callouts:
+    - TLS
+- text: It covers coal, crude oil, and natural gas, measured against remaining reserve lifetime.
+  shot:
+    kind: country
+    iso: TLS
+  basis: It covers coal, crude oil, and natural gas. This indicator is expressed as a percentage of Gross National
+    Income
+- text: East Timor has 114 times what India has at 0.5%.
+  shot:
+    kind: group
+    isos:
+    - TLS
+    - IND
+- text: Oman sits at 24%. Angola follows close behind at 22.5%.
+  shot:
+    kind: group
+    isos:
+    - OMN
+    - AGO
+- text: Russia has 8.6%. Nigeria is 2.7%. Brazil hits 2.3%.
+  shot:
+    kind: rank
+    isos:
+    - RUS
+    - NGA
+    - BRA
+- text: The median country sits near 0.04%, while nations like Mali and Uganda drop to 0%.
+  shot:
+    callouts:
+    - MLI
+    - UGA
+- text: How much of your nation's wealth vanishes into coal, oil, and gas?
+  shot:
+    kind: card
+    lines:
+    - What about your country?
+    - Energy depletion as % of GNI

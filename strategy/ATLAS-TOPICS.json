@@ -5438,7 +5438,7 @@
    "id": "t151",
    "topic": "Male Alcohol Consumption per Capita",
    "angle": "The average male in Romania consumes 27 liters of pure alcohol annually, nearly four times the global median.",
-   "format": "map_reveal",
+   "format": "versus",
    "dataset": {
     "kind": "worldbank",
     "indicator": "SH.ALC.PCAP.MA.LI",
@@ -5470,7 +5470,7 @@
     "#health"
    ],
    "source_url": "https://data.worldbank.org/indicator/SH.ALC.PCAP.MA.LI",
-   "status": "open",
+   "status": "failed:ValueError",
    "added_by": "refill"
   },
   {
@@ -5589,7 +5589,389 @@
    "source_url": "https://data.worldbank.org/indicator/EG.ELC.RNWX.ZS",
    "status": "open",
    "added_by": "refill"
+  },
+  {
+   "id": "t155",
+   "topic": "Female Alcohol Consumption Worldwide",
+   "angle": "Women in Romania consume an average of 7.4 liters of pure alcohol annually, the highest rate globally.",
+   "format": "map_reveal",
+   "dataset": {
+    "kind": "worldbank",
+    "indicator": "SH.ALC.PCAP.FE.LI",
+    "label": "Liters of pure alcohol per woman",
+    "unit": "liters",
+    "source": "World Bank",
+    "min_year": 2019
+   },
+   "scale": {
+    "kind": "bins",
+    "edges": [
+     0.5,
+     2.0,
+     4.0,
+     6.0
+    ],
+    "labels": [
+     "Minimal",
+     "Low",
+     "Moderate",
+     "High",
+     "Extreme"
+    ]
+   },
+   "value_format": "{v:.1f} liters",
+   "hashtags": [
+    "#maps",
+    "#geography",
+    "#health"
+   ],
+   "source_url": "https://data.worldbank.org/indicator/SH.ALC.PCAP.FE.LI",
+   "status": "open",
+   "added_by": "refill"
+  },
+  {
+   "id": "t156",
+   "topic": "Female University Degree Attainment",
+   "angle": "The United Arab Emirates leads the world with over 56% of women aged 25 and older holding at least a bachelor's degree.",
+   "format": "rank_ladder",
+   "dataset": {
+    "kind": "worldbank",
+    "indicator": "SE.TER.CUAT.BA.FE.ZS",
+    "label": "Women with a Bachelor's degree or more",
+    "unit": "%",
+    "source": "World Bank",
+    "min_year": 2019
+   },
+   "scale": {
+    "kind": "bins",
+    "edges": [
+     5,
+     15,
+     25,
+     40
+    ],
+    "labels": [
+     "Under 5%",
+     "5-15%",
+     "15-25%",
+     "25-40%",
+     "Over 40%"
+    ]
+   },
+   "value_format": "{v:.1f}%",
+   "hashtags": [
+    "#maps",
+    "#geography",
+    "#education"
+   ],
+   "source_url": "https://data.worldbank.org/indicator/SE.TER.CUAT.BA.FE.ZS",
+   "status": "open",
+   "added_by": "refill"
+  },
+  {
+   "id": "t157",
+   "topic": "Women as Business Employers",
+   "angle": "While the global median is just 2%, in Timor-Leste more than 15% of employed women are business owners who hire others.",
+   "format": "map_reveal",
+   "dataset": {
+    "kind": "worldbank",
+    "indicator": "SL.EMP.MPYR.FE.ZS",
+    "label": "Share of working women who are employers",
+    "unit": "%",
+    "source": "World Bank",
+    "min_year": 2019
+   },
+   "scale": {
+    "kind": "bins",
+    "edges": [
+     1,
+     2,
+     4,
+     8
+    ],
+    "labels": [
+     "Under 1%",
+     "1% to 2%",
+     "2% to 4%",
+     "4% to 8%",
+     "Over 8%"
+    ]
+   },
+   "value_format": "{v:.1f}%",
+   "hashtags": [
+    "#maps",
+    "#geography",
+    "#employment"
+   ],
+   "source_url": "https://data.worldbank.org/indicator/SL.EMP.MPYR.FE.ZS",
+   "status": "open",
+   "added_by": "refill"
+  },
+  {
+   "id": "t158",
+   "topic": "The World's Share of Female Octogenarians",
+   "angle": "In Japan, 13% of women are aged 80 or older, a share nearly eight times higher than the global median.",
+   "format": "odd_one_out",
+   "dataset": {
+    "kind": "worldbank",
+    "indicator": "SP.POP.80UP.FE.5Y",
+    "label": "Female population aged 80 and above",
+    "unit": "%",
+    "source": "World Bank",
+    "min_year": 2019
+   },
+   "scale": {
+    "kind": "bins",
+    "edges": [
+     1,
+     2,
+     5,
+     8
+    ],
+    "labels": [
+     "<1%",
+     "1-2%",
+     "2-5%",
+     "5-8%",
+     ">8%"
+    ]
+   },
+   "value_format": "{v:.1f}%",
+   "hashtags": [
+    "#maps",
+    "#geography",
+    "#demographics"
+   ],
+   "source_url": "https://data.worldbank.org/indicator/SP.POP.80UP.FE.5Y",
+   "status": "failed:RuntimeError",
+   "added_by": "refill"
+  },
+  {
+   "id": "t159",
+   "topic": "Where Boys Outnumber Men",
+   "angle": "In the Central African Republic, 51.1% of the male population is under fifteen years old.",
+   "format": "rank_ladder",
+   "dataset": {
+    "kind": "worldbank",
+    "indicator": "SP.POP.0014.MA.ZS",
+    "label": "Share of males aged 0 to 14",
+    "unit": "%",
+    "source": "World Bank",
+    "min_year": 2019
+   },
+   "scale": {
+    "kind": "bins",
+    "edges": [
+     15,
+     25,
+     35,
+     45
+    ],
+    "labels": [
+     "Under 15%",
+     "15-25%",
+     "25-35%",
+     "35-45%",
+     "Over 45%"
+    ]
+   },
+   "value_format": "{v:.1f}%",
+   "hashtags": [
+    "#maps",
+    "#geography",
+    "#demographics"
+   ],
+   "source_url": "https://data.worldbank.org/indicator/SP.POP.0014.MA.ZS",
+   "status": "failed:RuntimeError",
+   "added_by": "refill"
+  },
+  {
+   "id": "t160",
+   "topic": "Male Internet Usage Worldwide",
+   "angle": "Four Middle Eastern countries have reached a perfect 100% internet penetration rate for their male population.",
+   "format": "map_reveal",
+   "dataset": {
+    "kind": "worldbank",
+    "indicator": "IT.NET.USER.MA.ZS",
+    "label": "Share of men using the internet",
+    "unit": "%",
+    "source": "World Bank",
+    "min_year": 2019
+   },
+   "scale": {
+    "kind": "bins",
+    "edges": [
+     50,
+     75,
+     90,
+     98
+    ],
+    "labels": [
+     "Under 50%",
+     "50% to 75%",
+     "75% to 90%",
+     "90% to 98%",
+     "Over 98%"
+    ]
+   },
+   "value_format": "{v:.1f}%",
+   "hashtags": [
+    "#maps",
+    "#geography",
+    "#internet"
+   ],
+   "source_url": "https://data.worldbank.org/indicator/IT.NET.USER.MA.ZS",
+   "status": "open",
+   "added_by": "refill"
+  },
+  {
+   "id": "t161",
+   "topic": "Youth Literacy Gender Parity Index",
+   "angle": "In several nations including Yemen and Comoros, literate young women now outnumber their male counterparts, reversing traditional gender gaps.",
+   "format": "map_reveal",
+   "dataset": {
+    "kind": "worldbank",
+    "indicator": "SE.ADT.1524.LT.FM.ZS",
+    "label": "Female-to-male youth literacy ratio",
+    "unit": "ratio",
+    "source": "World Bank",
+    "min_year": 2019
+   },
+   "scale": {
+    "kind": "bins",
+    "edges": [
+     0.85,
+     0.95,
+     1.01,
+     1.05
+    ],
+    "labels": [
+     "Significant male gap",
+     "Moderate male gap",
+     "Gender parity",
+     "Moderate female gap",
+     "Significant female gap"
+    ]
+   },
+   "value_format": "{v:.2f}",
+   "hashtags": [
+    "#maps",
+    "#geography",
+    "#education"
+   ],
+   "source_url": "https://data.worldbank.org/indicator/SE.ADT.1524.LT.FM.ZS",
+   "status": "open",
+   "added_by": "refill"
+  },
+  {
+   "id": "t162",
+   "topic": "Income Share of the Top 10%",
+   "angle": "In countries like Colombia and South Africa, the wealthiest 10% of the population controls more than 40% of the total national income.",
+   "format": "versus",
+   "dataset": {
+    "kind": "worldbank",
+    "indicator": "SI.DST.10TH.10",
+    "label": "Income share held by the top 10%",
+    "unit": "%",
+    "source": "World Bank",
+    "min_year": 2019
+   },
+   "scale": {
+    "kind": "bins",
+    "edges": [
+     22.2,
+     26.3,
+     30.1,
+     34.3
+    ],
+    "labels": [
+     "Under 22%",
+     "22-26%",
+     "26-30%",
+     "30-34%",
+     "Over 34%"
+    ]
+   },
+   "value_format": "{v:.1f}%",
+   "hashtags": [
+    "#maps",
+    "#geography",
+    "#wealth"
+   ],
+   "source_url": "https://data.worldbank.org/indicator/SI.DST.10TH.10",
+   "status": "failed:ValueError",
+   "added_by": "refill"
+  },
+  {
+   "id": "t163",
+   "topic": "Wealth Lost to Energy Depletion",
+   "angle": "Timor-Leste's depletion of fossil fuel reserves is equivalent to over 57% of its total gross national income.",
+   "format": "spotlight",
+   "dataset": {
+    "kind": "worldbank",
+    "indicator": "NY.ADJ.DNGY.GN.ZS",
+    "label": "Energy depletion as % of GNI",
+    "unit": "%",
+    "source": "World Bank",
+    "min_year": 2019
+   },
+   "scale": {
+    "kind": "bins",
+    "edges": [
+     0.1,
+     1,
+     10,
+     20
+    ],
+    "labels": [
+     "Minimal",
+     "Low",
+     "Moderate",
+     "High",
+     "Extreme"
+    ]
+   },
+   "value_format": "{v:.1f}%",
+   "hashtags": [
+    "#maps",
+    "#geography",
+    "#energy"
+   ],
+   "source_url": "https://data.worldbank.org/indicator/NY.ADJ.DNGY.GN.ZS",
+   "status": "ready:atlas144",
+   "added_by": "refill"
+  },
+  {
+   "id": "t164",
+   "topic": "Island Nations Powered Entirely by Oil",
+   "angle": "While many countries have transitioned to green energy, several island nations still generate nearly all of their electricity from burning oil.",
+   "format": "map_reveal",
+   "dataset": {
+    "kind": "worldbank",
+    "indicator": "EG.ELC.PETR.ZS",
+    "label": "Share of electricity from oil",
+    "unit": "%",
+    "source": "World Bank",
+    "min_year": 2019
+   },
+   "scale": {
+    "kind": "threshold",
+    "at": 50.0,
+    "labels": [
+     "Majority oil-powered",
+     "Lower oil reliance"
+    ]
+   },
+   "value_format": "{v:.1f}%",
+   "hashtags": [
+    "#maps",
+    "#geography",
+    "#energy"
+   ],
+   "source_url": "https://data.worldbank.org/indicator/EG.ELC.PETR.ZS",
+   "status": "ready:atlas145",
+   "added_by": "refill"
   }
  ],
- "refilled_at": "2026-11-03T17:11:05+00:00"
+ "refilled_at": "2026-11-06T01:10:18+00:00"
 }

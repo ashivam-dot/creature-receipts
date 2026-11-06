@@ -1,0 +1,162 @@
+{
+  "errors": [],
+  "claims": [
+    {
+      "surface": "title",
+      "text": "Is EAST Timor Near the Top for Energy Depletion?",
+      "isos": [
+        "TLS"
+      ],
+      "support": "Timor-Leste rank 1 with 57.2%"
+    },
+    {
+      "surface": "hook",
+      "text": "MASSIVE LOSS",
+      "isos": [],
+      "support": "Indicator is energy depletion as percentage of GNI"
+    },
+    {
+      "surface": "description",
+      "text": "Wealth Lost to Energy Depletion across 188 countries and territories.",
+      "isos": [],
+      "support": "188 mapped countries and territories with data"
+    },
+    {
+      "surface": "beat_0",
+      "text": "Fossil fuel depletion swallows 57.2% of gross national income in East Timor.",
+      "isos": [
+        "TLS"
+      ],
+      "support": "Timor-Leste value 57.1989917274677, display 57.2%, unit %"
+    },
+    {
+      "surface": "beat_1",
+      "text": "It covers coal, crude oil, and natural gas, measured against remaining reserve lifetime.",
+      "isos": [],
+      "support": "Energy depletion is the ratio of the value of the stock of energy resources to the remaining reserve lifetime (capped at 25 years). It covers coal, crude oil, and natural gas."
+    },
+    {
+      "surface": "beat_2",
+      "text": "East Timor has 114 times what India has at 0.5%.",
+      "isos": [
+        "TLS",
+        "IND"
+      ],
+      "support": "Timor-Leste value 57.1989917274677, India value 0.511873027354764 (display 0.5%), ratio is approximately 111.7x"
+    },
+    {
+      "surface": "beat_3",
+      "text": "Oman sits at 24%. Angola follows close behind at 22.5%.",
+      "isos": [
+        "OMN",
+        "AGO"
+      ],
+      "support": "Oman value 23.9732239927888 (display 24%), Angola value 22.5306656063475 (display 22.5%)"
+    },
+    {
+      "surface": "beat_4",
+      "text": "Russia has 8.6%. Nigeria is 2.7%. Brazil hits 2.3%.",
+      "isos": [
+        "RUS",
+        "NGA",
+        "BRA"
+      ],
+      "support": "Russian Federation value 8.56466446175717 (display 8.6%), Nigeria value 2.7341515185273 (display 2.7%), Brazil value 2.26355193351451 (display 2.3%)"
+    },
+    {
+      "surface": "beat_5",
+      "text": "The median country sits near 0.04%, while nations like Mali and Uganda drop to 0%.",
+      "isos": [
+        "MLI",
+        "UGA"
+      ],
+      "support": "Bosnia and Herzegovina value 0.0409789332692792 (display 0.04%), Mali value 0.0, Uganda value 0.0"
+    },
+    {
+      "surface": "beat_6",
+      "text": "How much of your nation's wealth vanishes into coal, oil, and gas?",
+      "isos": [],
+      "support": "Energy depletion definition covers coal, crude oil, and natural gas and is expressed as a percentage of GNI"
+    },
+    {
+      "surface": "card_6",
+      "text": "What about your country?",
+      "isos": [],
+      "support": "Card framing style"
+    }
+  ],
+  "surface_checks": {
+    "title": {
+      "supported": true,
+      "reason": "Timor-Leste is ranked 1st in the universe.",
+      "isos": [
+        "TLS"
+      ]
+    },
+    "hook": {
+      "supported": true,
+      "reason": "Stylistic phrase consistent with high energy depletion values.",
+      "isos": []
+    },
+    "description": {
+      "supported": true,
+      "reason": "Matches universe count of 188 countries and territories.",
+      "isos": []
+    },
+    "beat_0": {
+      "supported": true,
+      "reason": "Matches Timor-Leste value of 57.2%.",
+      "isos": [
+        "TLS"
+      ]
+    },
+    "beat_1": {
+      "supported": true,
+      "reason": "Directly quotes the definition provided in EVIDENCE.",
+      "isos": []
+    },
+    "beat_2": {
+      "supported": true,
+      "reason": "Accurately compares Timor-Leste (57.2%) and India (0.5%).",
+      "isos": [
+        "TLS",
+        "IND"
+      ]
+    },
+    "beat_3": {
+      "supported": true,
+      "reason": "Accurately states Oman (24%) and Angola (22.5%).",
+      "isos": [
+        "OMN",
+        "AGO"
+      ]
+    },
+    "beat_4": {
+      "supported": true,
+      "reason": "Accurately states Russia (8.6%), Nigeria (2.7%), and Brazil (2.3%).",
+      "isos": [
+        "RUS",
+        "NGA",
+        "BRA"
+      ]
+    },
+    "beat_5": {
+      "supported": true,
+      "reason": "Correctly reflects median range and 0% values for Mali and Uganda.",
+      "isos": [
+        "MLI",
+        "UGA"
+      ]
+    },
+    "beat_6": {
+      "supported": true,
+      "reason": "Valid rhetorical question aligned with the indicator definition.",
+      "isos": []
+    },
+    "card_6": {
+      "supported": true,
+      "reason": "Card matches visual plan text and indicator theme.",
+      "isos": []
+    }
+  }
+}

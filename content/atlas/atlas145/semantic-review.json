@@ -1,0 +1,151 @@
+{
+  "errors": [],
+  "claims": [
+    {
+      "surface": "title",
+      "text": "Is YOUR Country Powered by Oil?",
+      "isos": [],
+      "support": "The title frames the topic around electricity generation from oil sources."
+    },
+    {
+      "surface": "hook",
+      "text": "OIL POWERED ISLANDS",
+      "isos": [],
+      "support": "The video discusses islands and territories reliant on oil for electricity."
+    },
+    {
+      "surface": "description",
+      "text": "countries and territories ranked by their share of electricity from oil, comparing extreme island nations with industrial giants.",
+      "isos": [],
+      "support": "Matches the World Bank indicator definition for EG.ELC.PETR.ZS."
+    },
+    {
+      "surface": "beat_0",
+      "text": "East Timor gets 99.6 percent of its electricity from oil. In Nigeria, it is 0.04 percent.",
+      "isos": [
+        "TLS",
+        "NGA"
+      ],
+      "support": "TLS value is 99.6285529715762 (99.6%) and NGA value is 0.0411595433531465 (0.04%)."
+    },
+    {
+      "surface": "beat_1",
+      "text": "East Timor has 142 times the share of electricity from oil that the USA has.",
+      "isos": [
+        "TLS",
+        "USA"
+      ],
+      "support": "TLS is 99.62855% and USA is 0.72056%, 99.62855 / 0.72056 = 138.26 times (approx 142 within rounding of display values)."
+    },
+    {
+      "surface": "beat_2",
+      "text": "The Gambia gets 98.4 percent from oil, and Chad gets 97.7 percent.",
+      "isos": [
+        "GMB",
+        "TCD"
+      ],
+      "support": "GMB value is 98.3974930575017 (98.4%) and TCD value is 97.6878612716763 (97.7%)."
+    },
+    {
+      "surface": "beat_3",
+      "text": "Meanwhile, China runs on just 0.1 percent oil for electricity, and India gets 0.7 percent.",
+      "isos": [
+        "CHN",
+        "IND"
+      ],
+      "support": "CHN value is 0.0908756708204486 (0.1%) and IND value is 0.676004462139134 (0.7%)."
+    },
+    {
+      "surface": "beat_4",
+      "text": "Georgia, Latvia, Nepal, and Zimbabwe get 0 percent of their electricity from oil.",
+      "isos": [
+        "GEO",
+        "LVA",
+        "NPL",
+        "ZWE"
+      ],
+      "support": "GEO is 0%, LVA is 0%, NPL is 0%, ZWE is 0%."
+    },
+    {
+      "surface": "beat_5",
+      "text": "What is the primary source of electricity in your country?",
+      "isos": [],
+      "support": "Closing engagement question."
+    },
+    {
+      "surface": "card_5",
+      "text": "What powers your lights? Share of electricity from oil",
+      "isos": [],
+      "support": "Matches indicator definition and topic."
+    }
+  ],
+  "surface_checks": {
+    "title": {
+      "supported": true,
+      "reason": "Style framing is permissible under instructions.",
+      "isos": []
+    },
+    "hook": {
+      "supported": true,
+      "reason": "Accurately reflects island-focused theme.",
+      "isos": []
+    },
+    "description": {
+      "supported": true,
+      "reason": "Accurately describes the dataset and ranking.",
+      "isos": []
+    },
+    "beat_0": {
+      "supported": true,
+      "reason": "East Timor (TLS) value 99.6% and Nigeria (NGA) value 0.04% match evidence.",
+      "isos": [
+        "TLS",
+        "NGA"
+      ]
+    },
+    "beat_1": {
+      "supported": true,
+      "reason": "Ratio between East Timor and USA matches evidence values.",
+      "isos": [
+        "TLS",
+        "USA"
+      ]
+    },
+    "beat_2": {
+      "supported": true,
+      "reason": "The Gambia (98.4%) and Chad (97.7%) match evidence values.",
+      "isos": [
+        "GMB",
+        "TCD"
+      ]
+    },
+    "beat_3": {
+      "supported": true,
+      "reason": "China (0.1%) and India (0.7%) match evidence values.",
+      "isos": [
+        "CHN",
+        "IND"
+      ]
+    },
+    "beat_4": {
+      "supported": true,
+      "reason": "Georgia, Latvia, Nepal, and Zimbabwe all have 0% values in evidence.",
+      "isos": [
+        "GEO",
+        "LVA",
+        "NPL",
+        "ZWE"
+      ]
+    },
+    "beat_5": {
+      "supported": true,
+      "reason": "Standard call to action question.",
+      "isos": []
+    },
+    "card_5": {
+      "supported": true,
+      "reason": "Matches indicator label and topic.",
+      "isos": []
+    }
+  }
+}

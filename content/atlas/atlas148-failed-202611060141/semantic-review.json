@@ -1,0 +1,157 @@
+{
+  "errors": [
+    {
+      "surface": "description",
+      "claim": "annual pure alcohol consumption per male",
+      "reason": "The indicator SH.ALC.PCAP.MA.LI measures total alcohol per capita consumption for the population 15 years or older, not specifically per male.",
+      "severity": "factual"
+    },
+    {
+      "surface": "beat_0",
+      "claim": "Romania's males consume 27 liters of pure alcohol, while Nigeria's males drink 6.31.",
+      "reason": "The indicator measures total per capita consumption for the population 15 years or older, not specifically for males.",
+      "severity": "factual"
+    },
+    {
+      "surface": "beat_2",
+      "claim": "Romania leads 184 countries and territories, with 4.3 times the alcohol that Nigeria drinks.",
+      "reason": "The indicator measures total per capita consumption for the population 15 years or older, not specifically for males.",
+      "severity": "factual"
+    }
+  ],
+  "claims": [
+    {
+      "surface": "title",
+      "text": "The Places Drinking the Most Pure Alcohol",
+      "isos": [],
+      "support": "The indicator measures total alcohol per capita consumption."
+    },
+    {
+      "surface": "beat_0",
+      "text": "Romania's males consume 27 liters of pure alcohol, while Nigeria's males drink 6.31.",
+      "isos": [
+        "ROU",
+        "NGA"
+      ],
+      "support": "Romania value is 27.03 (rounded to 27) and Nigeria value is 6.31."
+    },
+    {
+      "surface": "beat_1",
+      "text": "This count includes the total sum of recorded and unrecorded alcohol consumed by those 15 years or older.",
+      "isos": [],
+      "support": "Definition: Total (sum of recorded and unrecorded alcohol) amount of alcohol consumed per person (15 years of age or older)."
+    },
+    {
+      "surface": "beat_2",
+      "text": "Romania leads 184 countries and territories, with 4.3 times the alcohol that Nigeria drinks.",
+      "isos": [
+        "ROU",
+        "NGA"
+      ],
+      "support": "Romania rank 1, value 27.03. Nigeria value 6.31. 27.03 / 6.31 is approximately 4.28."
+    },
+    {
+      "surface": "beat_3",
+      "text": "The highest levels are Romania 27, Georgia 24.5, Latvia 21.4, and Lithuania 19.8.",
+      "isos": [
+        "ROU",
+        "GEO",
+        "LVA",
+        "LTU"
+      ],
+      "support": "Romania 27.03, Georgia 24.51, Latvia 21.35, Lithuania 19.82."
+    },
+    {
+      "surface": "beat_4",
+      "text": "At the other extreme, Saudi Arabia and Somalia both consume 0 liters.",
+      "isos": [
+        "SAU",
+        "SOM"
+      ],
+      "support": "Saudi Arabia 0.0, Somalia 0.0."
+    },
+    {
+      "surface": "beat_5",
+      "text": "Most of the world sits in between, with India at 6.77 and China at 7.31.",
+      "isos": [
+        "IND",
+        "CHN"
+      ],
+      "support": "India 6.77, China 7.31."
+    }
+  ],
+  "surface_checks": {
+    "title": {
+      "supported": true,
+      "reason": "The indicator measures total alcohol per capita consumption.",
+      "isos": []
+    },
+    "hook": {
+      "supported": true,
+      "reason": "The indicator measures alcohol consumption.",
+      "isos": []
+    },
+    "description": {
+      "supported": false,
+      "reason": "The indicator measures total per capita consumption for the population 15 years or older, not specifically per male.",
+      "isos": []
+    },
+    "beat_0": {
+      "supported": false,
+      "reason": "The indicator measures total per capita consumption for the population 15 years or older, not specifically per male.",
+      "isos": [
+        "ROU",
+        "NGA"
+      ]
+    },
+    "beat_1": {
+      "supported": true,
+      "reason": "Matches the definition provided.",
+      "isos": []
+    },
+    "beat_2": {
+      "supported": false,
+      "reason": "The indicator measures total per capita consumption for the population 15 years or older, not specifically per male.",
+      "isos": [
+        "ROU",
+        "NGA"
+      ]
+    },
+    "beat_3": {
+      "supported": true,
+      "reason": "Values match the evidence.",
+      "isos": [
+        "ROU",
+        "GEO",
+        "LVA",
+        "LTU"
+      ]
+    },
+    "beat_4": {
+      "supported": true,
+      "reason": "Values match the evidence.",
+      "isos": [
+        "SAU",
+        "SOM"
+      ]
+    },
+    "beat_5": {
+      "supported": true,
+      "reason": "Values match the evidence.",
+      "isos": [
+        "IND",
+        "CHN"
+      ]
+    },
+    "beat_6": {
+      "supported": true,
+      "reason": "Stylistic question.",
+      "isos": []
+    },
+    "card_6": {
+      "supported": true,
+      "reason": "Matches the evidence source and year.",
+      "isos": []
+    }
+  }
+}

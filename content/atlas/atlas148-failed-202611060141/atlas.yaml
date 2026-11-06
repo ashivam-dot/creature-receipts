@@ -1,0 +1,82 @@
+id: atlas148
+title: Where Alcohol Consumption Is Highest
+format: versus
+hook_text: MASSIVE DRINKING GAPS
+description: The indicator measures total per capita consumption for the population 15 years or older, not specifically
+  per male.
+hashtags:
+- '#health'
+- '#geography'
+- '#countries'
+tags:
+- health
+- liters of pure alcohol per male
+- countries ranked by liters of pure alcohol per male
+- Romania
+- Kuwait
+- world map
+- geography
+- atlas in numbers
+sources:
+- https://data.worldbank.org/indicator/SH.ALC.PCAP.MA.LI
+dataset:
+  kind: worldbank
+  indicator: SH.ALC.PCAP.MA.LI
+  label: Liters of pure alcohol per male
+  unit: liters
+  source: World Bank
+  min_year: 2019
+scale:
+  edges:
+  - 3.0
+  - 7.0
+  - 13.0
+  - 17.0
+  labels:
+  - Minimal
+  - Low
+  - Moderate
+  - High
+  - Extreme
+value_format: '{v:.2f} liters'
+beats:
+- text: Romania averages 27 liters of pure alcohol annually, nearly 4 times the global median.
+  shot:
+    callouts:
+    - ROU
+- text: This count includes the total sum of recorded and unrecorded alcohol consumed by those 15 years or older.
+  basis: Total alcohol per capita consumption is defined as the total (sum of recorded and unrecorded alcohol) amount
+    of alcohol consumed per person (15 years of age or older) over a calendar year, in litres of pure alcohol, adjusted
+    for tourist consumption.
+- text: Romania leads with 27 liters, while Nigeria consumes 6.31.
+  shot:
+    kind: group
+    isos:
+    - ROU
+    - NGA
+- text: The highest levels are Romania 27, Georgia 24.5, Latvia 21.4, and Lithuania 19.8.
+  shot:
+    kind: rank
+    isos:
+    - ROU
+    - GEO
+    - LVA
+    - LTU
+- text: At the other extreme, Saudi Arabia and Somalia both consume 0 liters.
+  shot:
+    kind: group
+    isos:
+    - SAU
+    - SOM
+- text: Mid-range countries like India at 6.77 and China at 7.31 sit far from the top.
+  shot:
+    kind: group
+    isos:
+    - IND
+    - CHN
+- text: Does your country lean toward the top or bottom of this annual consumption list?
+  shot:
+    kind: card
+    lines:
+    - How much does your country drink?
+    - 'Source: World Bank, 2020'
