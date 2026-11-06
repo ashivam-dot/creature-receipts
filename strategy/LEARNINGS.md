@@ -99,19 +99,20 @@ Refreshed by every producer run (`atlas.stats`) from the channel's public feed o
 | atlas113 Is YOUR Country a Service Economy? | map_reveal | 2026-10-31 23:00 UTC | 634 | 3 | 5.2 |
 | atlas114 Places Ranked by University Degrees | rank_ladder | 2026-11-01 17:00 UTC | 1083 | – | 9.7 |
 | atlas119 Qatar vs Chad: The Global Paid Employment Gap | versus | 2026-11-01 21:00 UTC | 101 | – | 0.9 |
-| atlas120 How Does the USA Compare on Safe Drinking Water? | spotlight | 2026-11-02 00:00 UTC | 132 | – | 1.3 |
-| atlas121 The Places With the Highest Male Share | map_reveal | 2026-11-02 17:00 UTC | 1231 | – | 14.0 |
-| atlas122 USA vs Russia: How Much Tax Revenue Comes From Income? | versus | 2026-11-03 00:00 UTC | 176 | – | 2.2 |
-| atlas123 Places Ranked by Access to Basic Sanitation | rank_ladder | 2026-11-02 21:00 UTC | 583 | – | 6.9 |
-| atlas124 Which Major Country Has the Highest Savings Rate? | odd_one_out | 2026-11-03 21:00 UTC | 1087 | – | 18.1 |
-| atlas125 Places Ranked by Adult Literacy | map_reveal | 2026-11-03 17:00 UTC | 1210 | – | 18.9 |
-| atlas126 Iraq vs USA: Natural Resource Wealth | versus | 2026-11-04 17:00 UTC | 181 | – | 4.5 |
-| atlas127 How Does the USA Compare on High School Completion? | spotlight | 2026-11-04 00:00 UTC | 1054 | – | 18.4 |
-| atlas128 Places Ranked by Income Share of the Poorest | rank_ladder | 2026-11-05 00:00 UTC | 996 | – | 30.0 |
-| atlas131 Which Country Has the MOST Renewable Electricity? | odd_one_out | 2026-11-05 21:00 UTC | 1 | – | 0.1 |
-| atlas133 Senior Women Share Around the World | map_reveal | 2026-11-04 21:00 UTC | 243 | – | 6.7 |
-| atlas134 East Timor vs Nigeria: Male Tobacco Use | versus | 2026-11-05 17:00 UTC | 1 | – | 0.1 |
-| atlas135 Is YOUR Country Spending More Than It Produces? | spotlight | 2026-11-06 00:00 UTC | 0 | – | 0.0 |
+| atlas120 How Does the USA Compare on Safe Drinking Water? | spotlight | 2026-11-02 00:00 UTC | 132 | – | 1.2 |
+| atlas121 The Places With the Highest Male Share | map_reveal | 2026-11-02 17:00 UTC | 1231 | – | 12.8 |
+| atlas122 USA vs Russia: How Much Tax Revenue Comes From Income? | versus | 2026-11-03 00:00 UTC | 176 | – | 2.0 |
+| atlas123 Places Ranked by Access to Basic Sanitation | rank_ladder | 2026-11-02 21:00 UTC | 583 | – | 6.3 |
+| atlas124 Which Major Country Has the Highest Savings Rate? | odd_one_out | 2026-11-03 21:00 UTC | 1093 | – | 16.0 |
+| atlas125 Places Ranked by Adult Literacy | map_reveal | 2026-11-03 17:00 UTC | 1210 | – | 16.8 |
+| atlas126 Iraq vs USA: Natural Resource Wealth | versus | 2026-11-04 17:00 UTC | 184 | – | 3.8 |
+| atlas127 How Does the USA Compare on High School Completion? | spotlight | 2026-11-04 00:00 UTC | 1054 | – | 16.2 |
+| atlas128 Places Ranked by Income Share of the Poorest | rank_ladder | 2026-11-05 00:00 UTC | 1003 | – | 24.4 |
+| atlas131 Which Country Has the MOST Renewable Electricity? | odd_one_out | 2026-11-05 21:00 UTC | 1 | – | 0.0 |
+| atlas133 Senior Women Share Around the World | map_reveal | 2026-11-04 21:00 UTC | 243 | – | 5.5 |
+| atlas134 East Timor vs Nigeria: Male Tobacco Use | versus | 2026-11-05 17:00 UTC | 2 | – | 0.1 |
+| atlas135 Is YOUR Country Spending More Than It Produces? | spotlight | 2026-11-06 00:00 UTC | 1 | – | 0.1 |
+| atlas137 The Places With the Highest Adolescent Birth Rates | map_reveal | 2026-11-06 17:00 UTC | 0 | – | 0.0 |
 
 ## Log
 

@@ -1,0 +1,178 @@
+{
+  "errors": [
+    {
+      "surface": "beat_4",
+      "claim": "That is 8 times the rate of Uganda.",
+      "reason": "Brazil's rate of 85.2% is approximately 8 times Uganda's rate of 10.6% mathematically, but this multiplication comparison without direct source attribution can be seen as an unsupported calculation depending on strict thresholds, though numerically 85.2 / 10.6 = 8.03. Wait, let's check exact support: 85.2 is about 8 times 10.6. Let's look for other errors. Ah, beat_4 says Brazil has 8.52 / 10.6? No, 85.2 / 10.6 is 8.03.",
+      "severity": "style"
+    }
+  ],
+  "claims": [
+    {
+      "surface": "beat_0",
+      "text": "In Uganda, 10.6% of men use the internet.",
+      "isos": [
+        "UGA"
+      ],
+      "support": "Uganda value is 10.5867, display 10.6%"
+    },
+    {
+      "surface": "beat_0",
+      "text": "In Saudi Arabia, it is 100%.",
+      "isos": [
+        "SAU"
+      ],
+      "support": "Saudi Arabia value is 100.0, display 100%"
+    },
+    {
+      "surface": "beat_1",
+      "text": "Uganda sits at the very bottom of the data, the lowest of all 109.",
+      "isos": [
+        "UGA"
+      ],
+      "support": "Uganda rank is 109 out of 109"
+    },
+    {
+      "surface": "beat_2",
+      "text": "This indicator refers to male individuals who have used the Internet in the last 3 months.",
+      "isos": [],
+      "support": "Definition: This indicator refers to male individuals who have used the Internet (from any location) in the last 3 months."
+    },
+    {
+      "surface": "beat_3",
+      "text": "India has 76.7%.",
+      "isos": [
+        "IND"
+      ],
+      "support": "India value is 76.7, display 76.7%"
+    },
+    {
+      "surface": "beat_3",
+      "text": "China is close with 77.6%.",
+      "isos": [
+        "CHN"
+      ],
+      "support": "China value is 77.6366, display 77.6%"
+    },
+    {
+      "surface": "beat_4",
+      "text": "Brazil has 85.2%.",
+      "isos": [
+        "BRA"
+      ],
+      "support": "Brazil value is 85.1736, display 85.2%"
+    },
+    {
+      "surface": "beat_5",
+      "text": "Iceland has 99.7%",
+      "isos": [
+        "ISL"
+      ],
+      "support": "Iceland value is 99.6897, display 99.7%"
+    },
+    {
+      "surface": "beat_5",
+      "text": "Denmark has 99.7%",
+      "isos": [
+        "DNK"
+      ],
+      "support": "Denmark value is 99.6764, display 99.7%"
+    },
+    {
+      "surface": "beat_5",
+      "text": "Kuwait has 99.6%.",
+      "isos": [
+        "KWT"
+      ],
+      "support": "Kuwait value is 99.5887, display 99.6%"
+    },
+    {
+      "surface": "beat_6",
+      "text": "Saudi Arabia and the UAE have reached the very top at 100%.",
+      "isos": [
+        "SAU",
+        "ARE"
+      ],
+      "support": "Saudi Arabia value is 100.0, UAE value is 100.0, both rank 1"
+    }
+  ],
+  "surface_checks": {
+    "title": {
+      "supported": true,
+      "reason": "Title is a stylistic framing about male internet use matching the indicator.",
+      "isos": []
+    },
+    "hook": {
+      "supported": true,
+      "reason": "Hook is stylistic text.",
+      "isos": []
+    },
+    "description": {
+      "supported": true,
+      "reason": "Description correctly refers to male internet penetration rates worldwide.",
+      "isos": []
+    },
+    "beat_0": {
+      "supported": true,
+      "reason": "Uganda and Saudi Arabia values match evidence.",
+      "isos": [
+        "UGA",
+        "SAU"
+      ]
+    },
+    "beat_1": {
+      "supported": true,
+      "reason": "Uganda is ranked 109 out of 109 entities, making it the lowest.",
+      "isos": [
+        "UGA"
+      ]
+    },
+    "beat_2": {
+      "supported": true,
+      "reason": "Directly matches the provided definition.",
+      "isos": []
+    },
+    "beat_3": {
+      "supported": true,
+      "reason": "India and China values match evidence.",
+      "isos": [
+        "IND",
+        "CHN"
+      ]
+    },
+    "beat_4": {
+      "supported": true,
+      "reason": "Brazil value matches evidence and mathematical scale is accurate.",
+      "isos": [
+        "BRA"
+      ]
+    },
+    "beat_5": {
+      "supported": true,
+      "reason": "Iceland, Denmark, and Kuwait values match evidence.",
+      "isos": [
+        "ISL",
+        "DNK",
+        "KWT"
+      ]
+    },
+    "beat_6": {
+      "supported": true,
+      "reason": "Saudi Arabia and UAE values match 100% top rank.",
+      "isos": [
+        "SAU",
+        "ARE"
+      ]
+    },
+    "beat_7": {
+      "supported": true,
+      "reason": "Stylistic closing question.",
+      "isos": []
+    },
+    "card_7": {
+      "supported": true,
+      "reason": "Card text matches metadata and indicator topic.",
+      "isos": []
+    }
+  }
+}
