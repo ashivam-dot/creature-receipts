@@ -5594,7 +5594,7 @@
    "id": "t155",
    "topic": "Female Alcohol Consumption Worldwide",
    "angle": "Women in Romania consume an average of 7.4 liters of pure alcohol annually, the highest rate globally.",
-   "format": "map_reveal",
+   "format": "versus",
    "dataset": {
     "kind": "worldbank",
     "indicator": "SH.ALC.PCAP.FE.LI",
@@ -5626,7 +5626,7 @@
     "#health"
    ],
    "source_url": "https://data.worldbank.org/indicator/SH.ALC.PCAP.FE.LI",
-   "status": "open",
+   "status": "ready:atlas149",
    "added_by": "refill"
   },
   {
@@ -5665,7 +5665,7 @@
     "#education"
    ],
    "source_url": "https://data.worldbank.org/indicator/SE.TER.CUAT.BA.FE.ZS",
-   "status": "open",
+   "status": "failed:ValueError",
    "added_by": "refill"
   },
   {

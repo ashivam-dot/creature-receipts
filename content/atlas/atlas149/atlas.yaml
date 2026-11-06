@@ -1,0 +1,75 @@
+id: atlas149
+title: 'Romania vs India: Female Alcohol Consumption'
+format: versus
+hook_text: ALCOHOL BY COUNTRY
+description: Comparing female alcohol consumption rates in Romania, India, China, and Somalia based on World Bank
+  data.
+hashtags:
+- '#health'
+- '#geography'
+- '#countries'
+tags:
+- health
+- liters of pure alcohol per woman
+- countries ranked by liters of pure alcohol per woman
+- Romania
+- Kuwait
+- world map
+- geography
+- atlas in numbers
+sources:
+- https://data.worldbank.org/indicator/SH.ALC.PCAP.FE.LI
+dataset:
+  kind: worldbank
+  indicator: SH.ALC.PCAP.FE.LI
+  label: Liters of pure alcohol per woman
+  unit: liters
+  source: World Bank
+  min_year: 2019
+scale:
+  edges:
+  - 0.5
+  - 2.0
+  - 4.0
+  - 6.0
+  labels:
+  - Minimal
+  - Low
+  - Moderate
+  - High
+  - Extreme
+value_format: '{v:.3f} liters'
+beats:
+- text: Women in Romania consume 7.42 liters of pure alcohol a year. In India, it's 1.28.
+  shot:
+    callouts:
+    - ROU
+    - IND
+- text: Romania is the world's highest.
+  shot:
+    kind: country
+    iso: ROU
+- text: India stays lower down at 1.28 liters.
+  shot:
+    kind: country
+    iso: IND
+- text: Romania has 5.8 times the alcohol India has.
+  shot:
+    kind: group
+    isos:
+    - ROU
+    - IND
+- text: China sits near the middle at 1.79 liters.
+  shot:
+    callouts:
+    - CHN
+- text: Somalia is the world's lowest at 0 liters.
+  shot:
+    kind: country
+    iso: SOM
+- text: How much alcohol do women consume in your country?
+  shot:
+    kind: card
+    lines:
+    - FEMALE ALCOHOL USE
+    - Liters of pure alcohol per woman

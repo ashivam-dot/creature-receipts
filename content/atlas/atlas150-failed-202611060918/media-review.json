@@ -1,0 +1,25 @@
+{
+  "duration": 44.77,
+  "integrated_lufs": -14.1,
+  "true_peak_dbfs": -1.4,
+  "speech": {
+    "heard": "In Niger, 0.5% of adult women finished university. In Lithuania, it's 46.4%. It counts the percentage of population ages 25 and over that attained or completed bachelors or equivalent. China has 7.4%, while India has 11.7%. Climbing higher, USA has 40.5%, UK has 40.9%, Russia has 42.8%, and Lithuania has 46.4%. At the very top, UAE has 56.8%. That gives UAE 7.7 times what China has. What percentage of women hold degrees in your country?",
+    "model": "small.en",
+    "media_sha256": "ff6443607c4b91bb894af39f2fb62e72ea454da870f65f7163afd5cdd0fa6891",
+    "primary_differences": [
+      "'bachelor is' heard as 'bachelors' after 'attained or completed'"
+    ],
+    "differences": [
+      "'bachelor is' heard as 'bachelors' after 'attained or completed'",
+      "base.en: 'bachelor is' heard as 'bachelors' after 'attained or completed'"
+    ],
+    "corroboration": {
+      "model": "base.en",
+      "heard": "In Niger, 0.5% of adult women finished university. In Lithuania, it's 46.4%. It counts the percentage of population ages 25 and over that attained or completed bachelors or equivalent. China has 7.4% while India has 11.7%. Climbing higher, USA has 40.5%. UK has 40.9%. Russia has 42.8% and Lithuania has 46.4%. At the very top, UAE has 56.8%. That gives UAE 7.7 times what China has. What percentage of women hold degrees in your country?",
+      "differences": [
+        "'bachelor is' heard as 'bachelors' after 'attained or completed'"
+      ],
+      "resolved": []
+    }
+  }
+}

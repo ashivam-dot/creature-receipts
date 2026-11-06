@@ -1,0 +1,160 @@
+{
+  "errors": [],
+  "claims": [
+    {
+      "surface": "title",
+      "text": "Places Ranked by Female Degree Holders",
+      "isos": [],
+      "support": "The title frames the ranking style and metric correctly matching the indicator."
+    },
+    {
+      "surface": "hook",
+      "text": "DEGREE GAP",
+      "isos": [],
+      "support": "Style hook summarizing the topic."
+    },
+    {
+      "surface": "description",
+      "text": "Comparing the percentage of adult women worldwide holding a bachelor's degree or higher.",
+      "isos": [],
+      "support": "Matches definition: The percentage of population ages 25 and over that attained or completed Bachelor's or equivalent."
+    },
+    {
+      "surface": "beat_0",
+      "text": "In Niger, 0.5% of adult women finished university. In Lithuania, it's 46.4%.",
+      "isos": [
+        "NER",
+        "LTU"
+      ],
+      "support": "NER: 0.516629993915558 (0.5%), LTU: 46.4316241928746 (46.4%)"
+    },
+    {
+      "surface": "beat_1",
+      "text": "It counts the percentage of population ages 25 and over that attained or completed Bachelor's or equivalent.",
+      "isos": [],
+      "support": "Exact match to definition: The percentage of population ages 25 and over that attained or completed Bachelor's or equivalent."
+    },
+    {
+      "surface": "beat_2",
+      "text": "China has 7.4%, while India has 11.7%.",
+      "isos": [
+        "CHN",
+        "IND"
+      ],
+      "support": "CHN: 7.40245008468628 (7.4%), IND: 11.6815004348755 (11.7%)"
+    },
+    {
+      "surface": "beat_3",
+      "text": "Climbing higher: USA has 40.5%, UK has 40.9%, Russia has 42.8%, and Lithuania has 46.4%.",
+      "isos": [
+        "USA",
+        "GBR",
+        "RUS",
+        "LTU"
+      ],
+      "support": "USA: 40.4519691467285 (40.5%), GBR: 40.9413299560547 (40.9%), RUS: 42.8296699523926 (42.8%), LTU: 46.4316241928746 (46.4%)"
+    },
+    {
+      "surface": "beat_4",
+      "text": "At the very top, UAE has 56.8%.",
+      "isos": [
+        "ARE"
+      ],
+      "support": "ARE: 56.7601203918457 (56.8%) and rank 1"
+    },
+    {
+      "surface": "beat_5",
+      "text": "That gives UAE 7.7 times what China has.",
+      "isos": [
+        "ARE",
+        "CHN"
+      ],
+      "support": "56.7601203918457 / 7.40245008468628 = 7.667... which rounds to 7.7 times"
+    },
+    {
+      "surface": "beat_6",
+      "text": "What percentage of women hold degrees in your country?",
+      "isos": [],
+      "support": "Standard question/loop style."
+    },
+    {
+      "surface": "card_6",
+      "text": "Female Degree Share, World Bank Data",
+      "isos": [],
+      "support": "Card metadata matches topic and source."
+    }
+  ],
+  "surface_checks": {
+    "title": {
+      "supported": true,
+      "reason": "Accurately describes ranking of degree holders matching indicator source.",
+      "isos": []
+    },
+    "hook": {
+      "supported": true,
+      "reason": "Style hook.",
+      "isos": []
+    },
+    "description": {
+      "supported": true,
+      "reason": "Accurately reflects definition.",
+      "isos": []
+    },
+    "beat_0": {
+      "supported": true,
+      "reason": "Values for Niger and Lithuania match evidence.",
+      "isos": [
+        "NER",
+        "LTU"
+      ]
+    },
+    "beat_1": {
+      "supported": true,
+      "reason": "Verbatim definition match.",
+      "isos": []
+    },
+    "beat_2": {
+      "supported": true,
+      "reason": "Values for China and India match evidence.",
+      "isos": [
+        "CHN",
+        "IND"
+      ]
+    },
+    "beat_3": {
+      "supported": true,
+      "reason": "Values for USA, UK, Russia, and Lithuania match evidence.",
+      "isos": [
+        "USA",
+        "GBR",
+        "RUS",
+        "LTU"
+      ]
+    },
+    "beat_4": {
+      "supported": true,
+      "reason": "Value and rank 1 for UAE match evidence.",
+      "isos": [
+        "ARE"
+      ]
+    },
+    "beat_5": {
+      "supported": true,
+      "reason": "Ratio calculation between UAE and China is mathematically correct.",
+      "isos": [
+        "ARE",
+        "CHN"
+      ]
+    },
+    "beat_6": {
+      "supported": true,
+      "reason": "Ordinary loop question.",
+      "isos": []
+    },
+    "card_6": {
+      "supported": true,
+      "reason": "Accurate card metadata.",
+      "isos": []
+    }
+  }
+}

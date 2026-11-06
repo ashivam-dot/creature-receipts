@@ -1,0 +1,157 @@
+{
+  "errors": [
+    {
+      "surface": "hook",
+      "claim": "ALCOHOL BY COUNTRY",
+      "reason": "Indicator is specifically about female alcohol consumption per capita (15+), not general alcohol by country.",
+      "severity": "style"
+    }
+  ],
+  "claims": [
+    {
+      "surface": "title",
+      "text": "Romania vs India: Female Alcohol Consumption",
+      "isos": [],
+      "support": "Romania ROU value is 7.42, India IND value is 1.28."
+    },
+    {
+      "surface": "description",
+      "text": "Comparing female alcohol consumption rates in Romania, India, China, and Somalia based on World Bank data.",
+      "isos": [],
+      "support": "Romania (ROU: 7.42), India (IND: 1.28), China (CHN: 1.79), Somalia (SOM: 0.0)."
+    },
+    {
+      "surface": "beat_0",
+      "text": "Women in Romania consume 7.42 liters of pure alcohol a year. In India, it's 1.28.",
+      "isos": [
+        "ROU",
+        "IND"
+      ],
+      "support": "Romania ROU value is 7.42 liters; India IND value is 1.28 liters."
+    },
+    {
+      "surface": "beat_1",
+      "text": "Romania is the world's highest.",
+      "isos": [
+        "ROU"
+      ],
+      "support": "Romania rank is 1 out of 184."
+    },
+    {
+      "surface": "beat_2",
+      "text": "India stays lower down at 1.28 liters.",
+      "isos": [
+        "IND"
+      ],
+      "support": "India value is 1.28 liters, rank 107."
+    },
+    {
+      "surface": "beat_3",
+      "text": "Romania has 5.8 times the alcohol India has.",
+      "isos": [
+        "ROU",
+        "IND"
+      ],
+      "support": "7.42 / 1.28 = 5.7969 times."
+    },
+    {
+      "surface": "beat_4",
+      "text": "China sits near the middle at 1.79 liters.",
+      "isos": [
+        "CHN"
+      ],
+      "support": "China value is 1.79 liters, rank 89."
+    },
+    {
+      "surface": "beat_5",
+      "text": "Somalia is the world's lowest at 0 liters.",
+      "isos": [
+        "SOM"
+      ],
+      "support": "Somalia value is 0.0 liters, rank 181 (tied with lowest values)."
+    },
+    {
+      "surface": "beat_6",
+      "text": "How much alcohol do women consume in your country?",
+      "isos": [],
+      "support": "Question frame."
+    },
+    {
+      "surface": "card_6",
+      "text": "FEMALE ALCOHOL USE, Liters of pure alcohol per woman",
+      "isos": [],
+      "support": "Matches definition: total alcohol per capita consumption per person (15 years or older) over a calendar year, in litres of pure alcohol."
+    }
+  ],
+  "surface_checks": {
+    "title": {
+      "supported": true,
+      "reason": "The title correctly contrasts Romania and India on female alcohol consumption.",
+      "isos": []
+    },
+    "hook": {
+      "supported": true,
+      "reason": "Stylistic intro framing.",
+      "isos": []
+    },
+    "description": {
+      "supported": true,
+      "reason": "Accurately references the four countries and the dataset.",
+      "isos": []
+    },
+    "beat_0": {
+      "supported": true,
+      "reason": "Romania is 7.42 liters and India is 1.28 liters in EVIDENCE.",
+      "isos": [
+        "ROU",
+        "IND"
+      ]
+    },
+    "beat_1": {
+      "supported": true,
+      "reason": "Romania is rank 1, the highest in the dataset.",
+      "isos": [
+        "ROU"
+      ]
+    },
+    "beat_2": {
+      "supported": true,
+      "reason": "India value is 1.28 liters.",
+      "isos": [
+        "IND"
+      ]
+    },
+    "beat_3": {
+      "supported": true,
+      "reason": "7.42 / 1.28 is approximately 5.8.",
+      "isos": [
+        "ROU",
+        "IND"
+      ]
+    },
+    "beat_4": {
+      "supported": true,
+      "reason": "China's value is 1.79 liters.",
+      "isos": [
+        "CHN"
+      ]
+    },
+    "beat_5": {
+      "supported": true,
+      "reason": "Somalia's value is 0 liters, tied for the lowest rank 181.",
+      "isos": [
+        "SOM"
+      ]
+    },
+    "beat_6": {
+      "supported": true,
+      "reason": "Standard interactive question.",
+      "isos": []
+    },
+    "card_6": {
+      "supported": true,
+      "reason": "Accurately reflects indicator title and definition.",
+      "isos": []
+    }
+  }
+}
