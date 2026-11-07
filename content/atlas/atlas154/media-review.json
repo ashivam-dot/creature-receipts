@@ -1,0 +1,25 @@
+{
+  "duration": 36.01,
+  "integrated_lufs": -14.1,
+  "true_peak_dbfs": -1.5,
+  "speech": {
+    "heard": "In Yemen, literate young women outnumber young men at 1.19. One big country breaks this pattern. At the bottom, Afghanistan has the world's lowest youth literacy ratio at 0.54. Look at Brazil, Indonesia, and India. Only one stays below full parity. Indonesia has 1.02, where literate young women laid. Brazil has one, showing equal literacy between genders. India is the odd one out at 0.99, where young men still lead. Does your country have equal youth literacy between genders?",
+    "model": "small.en",
+    "media_sha256": "c47f9591822ea1af65736e77ffba9b49c6ec4834f8d0f36054adfa92bf074ae3",
+    "primary_differences": [
+      "'lead' heard as 'laid' after 'literate young women'"
+    ],
+    "differences": [
+      "'lead' heard as 'laid' after 'literate young women'",
+      "base.en: 'lead' heard as 'laid' after 'literate young women'"
+    ],
+    "corroboration": {
+      "model": "base.en",
+      "heard": "In Yemen, literate young women outnumber young men at 1.19. One big country breaks this pattern. At the bottom, Afghanistan has the world's lowest youth literacy ratio at 0.54. Look at Brazil, Indonesia, and India. Only one stays below full parity. Indonesia has 1.02, where literate young women laid. Brazil has one, showing equal literacy between genders. India is the odd one out at 0.99, where young men still lead. Does your country have equal youth literacy between genders?",
+      "differences": [
+        "'lead' heard as 'laid' after 'literate young women'"
+      ],
+      "resolved": []
+    }
+  }
+}

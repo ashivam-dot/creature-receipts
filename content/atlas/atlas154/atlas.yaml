@@ -1,0 +1,74 @@
+id: atlas154
+title: Which Country Has the MOST Equal Youth Literacy?
+format: odd_one_out
+hook_text: YOUTH LITERACY PARITY
+description: Exploring female-to-male youth literacy ratios across the globe using World Bank data.
+hashtags:
+- '#education'
+- '#geography'
+- '#countries'
+tags:
+- education
+- female-to-male youth literacy ratio
+- countries ranked by female-to-male youth literacy ratio
+- Yemen Rep.
+- Afghanistan
+- world map
+- geography
+- atlas in numbers
+sources:
+- https://data.worldbank.org/indicator/SE.ADT.1524.LT.FM.ZS
+dataset:
+  kind: worldbank
+  indicator: SE.ADT.1524.LT.FM.ZS
+  label: Female-to-male youth literacy ratio
+  unit: ratio
+  source: World Bank
+  min_year: 2019
+scale:
+  edges:
+  - 0.85
+  - 0.95
+  - 1.01
+  - 1.05
+  labels:
+  - Significant male gap
+  - Moderate male gap
+  - Gender parity
+  - Moderate female gap
+  - Significant female gap
+value_format: '{v:.2f}'
+beats:
+- text: In Yemen, literate young women outnumber young men at 1.19. One big country breaks this pattern.
+  shot:
+    callouts:
+    - YEM
+- text: At the bottom, Afghanistan has the world's lowest youth literacy ratio at 0.54.
+  shot:
+    kind: country
+    iso: AFG
+- text: Look at Brazil, Indonesia, and India. Only one stays below full parity.
+  shot:
+    kind: group
+    isos:
+    - BRA
+    - IDN
+    - IND
+- text: Indonesia has 1.02, where literate young women lead.
+  shot:
+    kind: country
+    iso: IDN
+- text: Brazil has 1, showing equal literacy between genders.
+  shot:
+    kind: country
+    iso: BRA
+- text: India is the odd one out at 0.99, where young men still lead.
+  shot:
+    kind: country
+    iso: IND
+- text: Does your country have equal youth literacy between genders?
+  shot:
+    kind: card
+    lines:
+    - LITERACY PARITY?
+    - Female-to-male youth literacy ratio

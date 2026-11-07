@@ -1,0 +1,187 @@
+{
+  "errors": [],
+  "claims": [
+    {
+      "surface": "title",
+      "text": "Germany vs USA: The Years Spent in School",
+      "isos": [
+        "DEU",
+        "USA"
+      ],
+      "support": "DEU has 9 years (rank 1), USA has 6 years (rank 88)."
+    },
+    {
+      "surface": "hook",
+      "text": "THE SCHOOL GAP",
+      "isos": [],
+      "support": "Indicator measures secondary education duration (SE.SEC.DURS)."
+    },
+    {
+      "surface": "description",
+      "text": "A look at the global duration of secondary education, comparing Germany's world-leading 9 years to the USA and the global median of 6 years.",
+      "isos": [
+        "DEU",
+        "USA"
+      ],
+      "support": "DEU is 9 years (rank 1, highest), USA is 6 years."
+    },
+    {
+      "surface": "beat_0",
+      "text": "Germany's students spend 9 years in secondary school. In the USA, it is just 6.",
+      "isos": [
+        "DEU",
+        "USA"
+      ],
+      "support": "DEU value is 9.0 years, USA value is 6.0 years."
+    },
+    {
+      "surface": "beat_1",
+      "text": "This counts the total number of grades a student completes in secondary school.",
+      "isos": [],
+      "support": "Secondary duration refers to the number of grades (years) in secondary school."
+    },
+    {
+      "surface": "beat_2",
+      "text": "Germany is the world's highest. 9 years of classrooms and study.",
+      "isos": [
+        "DEU"
+      ],
+      "support": "DEU value is 9.0 years, rank 1."
+    },
+    {
+      "surface": "beat_3",
+      "text": "In the USA, that journey is shorter. 6 years.",
+      "isos": [
+        "USA"
+      ],
+      "support": "USA value is 6.0 years."
+    },
+    {
+      "surface": "beat_4",
+      "text": "Germany has 1.5 times the years of schooling you get in the USA.",
+      "isos": [
+        "DEU",
+        "USA"
+      ],
+      "support": "Germany has 9 years and USA has 6 years; 9 divided by 6 is 1.5."
+    },
+    {
+      "surface": "beat_5",
+      "text": "The global median is 6 years. China and Japan both match that.",
+      "isos": [
+        "CHN",
+        "JPN"
+      ],
+      "support": "CHN value is 6.0 years, JPN value is 6.0 years."
+    },
+    {
+      "surface": "beat_6",
+      "text": "Slovakia matches the top at 9. India and Russia have 7. South Africa has 5.",
+      "isos": [
+        "SVK",
+        "IND",
+        "RUS",
+        "ZAF"
+      ],
+      "support": "SVK is 9 years (rank 1), IND is 7 years, RUS is 7 years, ZAF is 5 years."
+    },
+    {
+      "surface": "beat_7",
+      "text": "How many years of secondary school did you finish?",
+      "isos": [],
+      "support": "Indicator is secondary education duration in years."
+    },
+    {
+      "surface": "card_7",
+      "text": "How many years?\nSecondary Education Duration",
+      "isos": [],
+      "support": "Indicator is Secondary Education Duration."
+    }
+  ],
+  "surface_checks": {
+    "title": {
+      "supported": true,
+      "reason": "Germany and USA comparison is supported by values 9 and 6.",
+      "isos": [
+        "DEU",
+        "USA"
+      ]
+    },
+    "hook": {
+      "supported": true,
+      "reason": "Focuses on secondary school gap based on indicator definition.",
+      "isos": []
+    },
+    "description": {
+      "supported": true,
+      "reason": "Germany has 9 years (world leading) and USA has 6 years.",
+      "isos": [
+        "DEU",
+        "USA"
+      ]
+    },
+    "beat_0": {
+      "supported": true,
+      "reason": "Germany has 9 years and USA has 6 years according to the dataset.",
+      "isos": [
+        "DEU",
+        "USA"
+      ]
+    },
+    "beat_1": {
+      "supported": true,
+      "reason": "Accurately reflects the definition: 'Secondary duration refers to the number of grades (years) in secondary school.'",
+      "isos": []
+    },
+    "beat_2": {
+      "supported": true,
+      "reason": "Germany is ranked 1 with 9 years.",
+      "isos": [
+        "DEU"
+      ]
+    },
+    "beat_3": {
+      "supported": true,
+      "reason": "USA has 6 years, which is shorter than 9 years.",
+      "isos": [
+        "USA"
+      ]
+    },
+    "beat_4": {
+      "supported": true,
+      "reason": "9 divided by 6 equals 1.5.",
+      "isos": [
+        "DEU",
+        "USA"
+      ]
+    },
+    "beat_5": {
+      "supported": true,
+      "reason": "China and Japan both have 6 years.",
+      "isos": [
+        "CHN",
+        "JPN"
+      ]
+    },
+    "beat_6": {
+      "supported": true,
+      "reason": "Slovakia has 9 years (rank 1), India has 7, Russia has 7, South Africa has 5.",
+      "isos": [
+        "SVK",
+        "IND",
+        "RUS",
+        "ZAF"
+      ]
+    },
+    "beat_7": {
+      "supported": true,
+      "reason": "Asks about the duration of secondary school in years.",
+      "isos": []
+    },
+    "card_7": {
+      "supported": true,
+      "reason": "Accurately names the indicator and question.",
+      "isos": []
+    }
+  }
+}

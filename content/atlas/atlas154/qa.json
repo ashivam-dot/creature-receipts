@@ -1,0 +1,39 @@
+{
+  "version": 1,
+  "passed": true,
+  "checked_at": "2026-11-07T09:20:16.317718+00:00",
+  "quality_module_sha256": "db7be8ac57c839f39a10676f1a70580a83ea346f59c27f19868d09c272def14c",
+  "media_sha256": "c47f9591822ea1af65736e77ffba9b49c6ec4834f8d0f36054adfa92bf074ae3",
+  "script_sha256": "f4357b788311be3887d01aa1db74545902e8b58a421c32308dfbaf0ab0c1d89c",
+  "data_sha256": "87a9c5b697f7f1db86a6377ab7dfa07795a90672d9d9acc0fdefe9d4710d567e",
+  "claims_sha256": "b6087cc52978b7dd4a94b7254a6acbecf13d50cb1de8249604d1e58bcfada14f",
+  "contact_sha256": "299635f9ccf6779906a30391d8231ab4a6d3565f856fcd962b451d4b788137ad",
+  "duration": 36.01,
+  "integrated_lufs": -14.1,
+  "true_peak_dbfs": -1.5,
+  "speech": {
+    "heard": "In Yemen, literate young women outnumber young men at 1.19. One big country breaks this pattern. At the bottom, Afghanistan has the world's lowest youth literacy ratio at 0.54. Look at Brazil, Indonesia, and India. Only one stays below full parity. Indonesia has 1.02, where literate young women laid. Brazil has one, showing equal literacy between genders. India is the odd one out at 0.99, where young men still lead. Does your country have equal youth literacy between genders?",
+    "model": "small.en",
+    "media_sha256": "c47f9591822ea1af65736e77ffba9b49c6ec4834f8d0f36054adfa92bf074ae3",
+    "primary_differences": [
+      "'lead' heard as 'laid' after 'literate young women'"
+    ],
+    "differences": [
+      "'lead' heard as 'laid' after 'literate young women'",
+      "base.en: 'lead' heard as 'laid' after 'literate young women'"
+    ],
+    "corroboration": {
+      "model": "base.en",
+      "heard": "In Yemen, literate young women outnumber young men at 1.19. One big country breaks this pattern. At the bottom, Afghanistan has the world's lowest youth literacy ratio at 0.54. Look at Brazil, Indonesia, and India. Only one stays below full parity. Indonesia has 1.02, where literate young women laid. Brazil has one, showing equal literacy between genders. India is the odd one out at 0.99, where young men still lead. Does your country have equal youth literacy between genders?",
+      "differences": [
+        "'lead' heard as 'laid' after 'literate young women'"
+      ],
+      "resolved": []
+    }
+  },
+  "warnings": [
+    "'lead' heard as 'laid' after 'literate young women'",
+    "base.en: 'lead' heard as 'laid' after 'literate young women'"
+  ],
+  "speech_policy": "material-hard-entity-polarity-strict-minor-spelling-warning"
+}

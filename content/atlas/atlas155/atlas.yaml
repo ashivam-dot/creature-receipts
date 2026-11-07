@@ -1,0 +1,73 @@
+id: atlas155
+title: The Nations Powered by Mineral Wealth
+hook_text: THE MINING DIVIDE
+description: Mineral rents as a share of GDP across 201 countries and territories, based on World Bank data.
+hashtags:
+- '#economy'
+- '#geography'
+- '#countries'
+tags:
+- wealth
+- mineral rents as a share of gdp
+- countries ranked by mineral rents as a share of gdp
+- Congo Dem. Rep.
+- Afghanistan
+- world map
+- geography
+- atlas in numbers
+sources:
+- https://data.worldbank.org/indicator/NY.GDP.MINR.RT.ZS
+dataset:
+  kind: worldbank
+  indicator: NY.GDP.MINR.RT.ZS
+  label: Mineral rents as a share of GDP
+  unit: '%'
+  source: World Bank
+  min_year: 2019
+scale:
+  edges:
+  - 0.1
+  - 1.0
+  - 5.0
+  - 15.0
+  labels:
+  - Negligible
+  - Low
+  - Moderate
+  - High
+  - Extreme
+value_format: '{v:.4f}%'
+beats:
+- text: Mineral rents make up 28.8% of DR Congo's economy. In the USA, just 0.1%.
+  shot:
+    callouts:
+    - COD
+    - USA
+- text: DR Congo is the world's highest, with mineral rents larger than in any other nation.
+  shot:
+    kind: country
+    iso: COD
+- text: Zambia follows closely with 28.2%, and Mongolia has 26.6%.
+  shot:
+    kind: group
+    isos:
+    - ZMB
+    - MNG
+- text: Mining powerhouse Australia has 10.5%.
+  shot:
+    kind: country
+    iso: AUS
+- text: Near the bottom, Germany has 0%.
+  shot:
+    kind: country
+    iso: DEU
+- text: China has just 0.5%.
+  shot:
+    kind: country
+    iso: CHN
+- text: How much of your national economy comes from mineral rents?
+  shot:
+    kind: card
+    lines:
+    - Powered by Minerals?
+    - Mineral rents (% of GDP), World Bank

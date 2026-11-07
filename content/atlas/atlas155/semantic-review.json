@@ -1,0 +1,133 @@
+{
+  "errors": [
+    {
+      "surface": "beat_4",
+      "claim": "Germany has 0%",
+      "reason": "Germany's value is 0.0% (rounded display value 0%), which is supported, but calling it near the bottom is a style or info note since 0% is shared by 90 entities.",
+      "severity": "info"
+    }
+  ],
+  "claims": [
+    {
+      "surface": "beat_0",
+      "text": "Mineral rents make up 28.8% of DR Congo's economy. In the USA, just 0.1%.",
+      "isos": [
+        "COD",
+        "USA"
+      ],
+      "support": "Congo, Dem. Rep.: 28.8127978039482 (28.8%), United States: 0.101999501227916 (0.1%)"
+    },
+    {
+      "surface": "beat_1",
+      "text": "DR Congo is the world's highest, with mineral rents larger than in any other nation.",
+      "isos": [
+        "COD"
+      ],
+      "support": "Congo, Dem. Rep. rank is 1"
+    },
+    {
+      "surface": "beat_2",
+      "text": "Zambia follows closely with 28.2%, and Mongolia has 26.6%.",
+      "isos": [
+        "ZMB",
+        "MNG"
+      ],
+      "support": "Zambia: 28.2490949914965 (28.2%, rank 2), Mongolia: 26.5731453966821 (26.6%, rank 3)"
+    },
+    {
+      "surface": "beat_3",
+      "text": "Mining powerhouse Australia has 10.5%.",
+      "isos": [
+        "AUS"
+      ],
+      "support": "Australia: 10.4657754902913 (10.5%, rank 11)"
+    },
+    {
+      "surface": "beat_4",
+      "text": "Near the bottom, Germany has 0%.",
+      "isos": [
+        "DEU"
+      ],
+      "support": "Germany: 0.0 (0%, rank 90)"
+    },
+    {
+      "surface": "beat_5",
+      "text": "China has just 0.5%.",
+      "isos": [
+        "CHN"
+      ],
+      "support": "China: 0.510049245324858 (0.5%, rank 54)"
+    }
+  ],
+  "surface_checks": {
+    "title": {
+      "supported": true,
+      "reason": "Title is a stylistic framing about mineral wealth.",
+      "isos": []
+    },
+    "hook": {
+      "supported": true,
+      "reason": "Hook introduces the mining theme.",
+      "isos": []
+    },
+    "description": {
+      "supported": true,
+      "reason": "Accurately describes indicator and count of 201 from EVIDENCE.",
+      "isos": []
+    },
+    "beat_0": {
+      "supported": true,
+      "reason": "DR Congo and USA values match the EVIDENCE dataset.",
+      "isos": [
+        "COD",
+        "USA"
+      ]
+    },
+    "beat_1": {
+      "supported": true,
+      "reason": "DR Congo rank is 1, making it the highest.",
+      "isos": [
+        "COD"
+      ]
+    },
+    "beat_2": {
+      "supported": true,
+      "reason": "Zambia and Mongolia values and ranks match EVIDENCE.",
+      "isos": [
+        "ZMB",
+        "MNG"
+      ]
+    },
+    "beat_3": {
+      "supported": true,
+      "reason": "Australia value matches EVIDENCE.",
+      "isos": [
+        "AUS"
+      ]
+    },
+    "beat_4": {
+      "supported": true,
+      "reason": "Germany value matches EVIDENCE (0%).",
+      "isos": [
+        "DEU"
+      ]
+    },
+    "beat_5": {
+      "supported": true,
+      "reason": "China value matches EVIDENCE.",
+      "isos": [
+        "CHN"
+      ]
+    },
+    "beat_6": {
+      "supported": true,
+      "reason": "Standard engagement question.",
+      "isos": []
+    },
+    "card_6": {
+      "supported": true,
+      "reason": "Card correctly states the indicator and source.",
+      "isos": []
+    }
+  }
+}
