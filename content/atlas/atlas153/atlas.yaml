@@ -1,0 +1,78 @@
+id: atlas153
+title: Is Madagascar the Highest for Bank Loan Spreads?
+format: spotlight
+hook_text: MASSIVE BANK SPREADS
+description: A cinematic look at interest rate spreads across the world, led by Madagascar's staggering 47.9% gap
+  between loans and deposits.
+hashtags:
+- '#economy'
+- '#finance'
+- '#geography'
+tags:
+- wealth
+- interest rate spread
+- countries ranked by interest rate spread
+- Madagascar
+- New Zealand
+- world map
+- geography
+- atlas in numbers
+sources:
+- https://data.worldbank.org/indicator/FR.INR.LNDP
+dataset:
+  kind: worldbank
+  indicator: FR.INR.LNDP
+  label: Interest rate spread
+  unit: '%'
+  source: World Bank
+  min_year: 2019
+scale:
+  edges:
+  - 3.0
+  - 6.0
+  - 12.0
+  - 25.0
+  labels:
+  - Under 3%
+  - 3% to 6%
+  - 6% to 12%
+  - 12% to 25%
+  - Over 25%
+value_format: '{v:.1f}%'
+beats:
+- text: In Madagascar, the gap between bank loan and deposit interest rates is a staggering 47.9%.
+  shot:
+    callouts:
+    - MDG
+- text: It is the interest rate charged by banks on loans minus the rate paid for deposits.
+  shot:
+    callouts:
+    - MDG
+  basis: Interest rate spread is the interest rate charged by banks on loans to private sector customers minus the
+    interest rate paid by commercial or similar banks for demand, time, or savings deposits.
+- text: Madagascar holds the world highest spread. That is 17 times the 2.9% found in China.
+  shot:
+    kind: group
+    isos:
+    - MDG
+    - CHN
+- text: Brazil is also high, with a gap of 32.5%.
+  shot:
+    kind: country
+    iso: BRA
+- text: Russia has a much tighter gap at 2.5%, while Qatar sits at 0.1%.
+  shot:
+    kind: group
+    isos:
+    - RUS
+    - QAT
+- text: New Zealand is the lowest of all, down 3.9%.
+  shot:
+    kind: country
+    iso: NZL
+- text: How wide is the gap between loan and deposit rates in your home country?
+  shot:
+    kind: card
+    lines:
+    - What is your bank spread?
+    - Interest Rate Spread

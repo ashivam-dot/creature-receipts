@@ -5626,7 +5626,7 @@
     "#health"
    ],
    "source_url": "https://data.worldbank.org/indicator/SH.ALC.PCAP.FE.LI",
-   "status": "ready:atlas149",
+   "status": "used:atlas149",
    "added_by": "refill"
   },
   {
@@ -5821,7 +5821,7 @@
     "#internet"
    ],
    "source_url": "https://data.worldbank.org/indicator/IT.NET.USER.MA.ZS",
-   "status": "ready:atlas151",
+   "status": "used:atlas151",
    "added_by": "refill"
   },
   {
@@ -5938,7 +5938,7 @@
     "#energy"
    ],
    "source_url": "https://data.worldbank.org/indicator/NY.ADJ.DNGY.GN.ZS",
-   "status": "ready:atlas144",
+   "status": "used:atlas144",
    "added_by": "refill"
   },
   {
@@ -5969,9 +5969,395 @@
     "#energy"
    ],
    "source_url": "https://data.worldbank.org/indicator/EG.ELC.PETR.ZS",
-   "status": "ready:atlas145",
+   "status": "used:atlas145",
+   "added_by": "refill"
+  },
+  {
+   "id": "t165",
+   "topic": "The Cost of Borrowing Money",
+   "angle": "While borrowers in some nations enjoy rates below 3%, interest rates in Madagascar reach a staggering 60%.",
+   "format": "odd_one_out",
+   "dataset": {
+    "kind": "worldbank",
+    "indicator": "FR.INR.LEND",
+    "label": "Annual lending interest rate",
+    "unit": "%",
+    "source": "World Bank",
+    "min_year": 2019
+   },
+   "scale": {
+    "kind": "bins",
+    "edges": [
+     5,
+     10,
+     20,
+     40
+    ],
+    "labels": [
+     "Under 5%",
+     "5-10%",
+     "10-20%",
+     "20-40%",
+     "Over 40%"
+    ]
+   },
+   "value_format": "{v:.1f}%",
+   "hashtags": [
+    "#maps",
+    "#geography",
+    "#economy"
+   ],
+   "source_url": "https://data.worldbank.org/indicator/FR.INR.LEND",
+   "status": "failed:RuntimeError",
+   "added_by": "refill"
+  },
+  {
+   "id": "t166",
+   "topic": "Gender Balance in Primary Schools",
+   "angle": "In some countries, primary education is almost entirely female-led, with women accounting for over 99% of all teaching staff.",
+   "format": "map_reveal",
+   "dataset": {
+    "kind": "worldbank",
+    "indicator": "SE.PRM.TCHR.FE.ZS",
+    "label": "Share of female primary teachers",
+    "unit": "%",
+    "source": "World Bank",
+    "min_year": 2019
+   },
+   "scale": {
+    "kind": "bins",
+    "edges": [
+     40,
+     60,
+     80,
+     95
+    ],
+    "labels": [
+     "Under 40%",
+     "40-60%",
+     "60-80%",
+     "80-95%",
+     "Over 95%"
+    ]
+   },
+   "value_format": "{v:.1f}%",
+   "hashtags": [
+    "#maps",
+    "#geography",
+    "#education"
+   ],
+   "source_url": "https://data.worldbank.org/indicator/SE.PRM.TCHR.FE.ZS",
+   "status": "open",
+   "added_by": "refill"
+  },
+  {
+   "id": "t167",
+   "topic": "National Budgets Spent on Debt Interest",
+   "angle": "While Iraq spends almost nothing on debt interest, Sri Lanka must dedicate nearly half of its entire budget just to interest payments.",
+   "format": "map_reveal",
+   "dataset": {
+    "kind": "worldbank",
+    "indicator": "GC.XPN.INTP.ZS",
+    "label": "Interest payments as % of expense",
+    "unit": "%",
+    "source": "World Bank",
+    "min_year": 2019
+   },
+   "scale": {
+    "kind": "bins",
+    "edges": [
+     2,
+     6,
+     12,
+     20
+    ],
+    "labels": [
+     "Minimal (<2%)",
+     "Low (2-6%)",
+     "Moderate (6-12%)",
+     "High (12-20%)",
+     "Extreme (>20%)"
+    ]
+   },
+   "value_format": "{v:.1f}%",
+   "hashtags": [
+    "#maps",
+    "#geography",
+    "#economy"
+   ],
+   "source_url": "https://data.worldbank.org/indicator/GC.XPN.INTP.ZS",
+   "status": "open",
+   "added_by": "refill"
+  },
+  {
+   "id": "t168",
+   "topic": "Bank Loan and Deposit Spreads",
+   "angle": "In Madagascar, the gap between what banks charge for loans and pay for deposits is a staggering 47.9%.",
+   "format": "spotlight",
+   "dataset": {
+    "kind": "worldbank",
+    "indicator": "FR.INR.LNDP",
+    "label": "Interest rate spread",
+    "unit": "%",
+    "source": "World Bank",
+    "min_year": 2019
+   },
+   "scale": {
+    "kind": "bins",
+    "edges": [
+     3,
+     6,
+     12,
+     25
+    ],
+    "labels": [
+     "Under 3%",
+     "3% to 6%",
+     "6% to 12%",
+     "12% to 25%",
+     "Over 25%"
+    ]
+   },
+   "value_format": "{v:.1f}%",
+   "hashtags": [
+    "#maps",
+    "#geography",
+    "#finance"
+   ],
+   "source_url": "https://data.worldbank.org/indicator/FR.INR.LNDP",
+   "status": "ready:atlas153",
+   "added_by": "refill"
+  },
+  {
+   "id": "t169",
+   "topic": "Government Revenue from Consumption Taxes",
+   "angle": "In the Bahamas and Laos, taxes on goods and services provide over half of all government revenue, while in the United States they account for only 2%.",
+   "format": "map_reveal",
+   "dataset": {
+    "kind": "worldbank",
+    "indicator": "GC.TAX.GSRV.RV.ZS",
+    "label": "Taxes on goods and services",
+    "unit": "%",
+    "source": "World Bank",
+    "min_year": 2019
+   },
+   "scale": {
+    "kind": "bins",
+    "edges": [
+     15,
+     31,
+     45
+    ],
+    "labels": [
+     "Under 15%",
+     "15-31%",
+     "31-45%",
+     "Over 45%"
+    ]
+   },
+   "value_format": "{v:.1f}%",
+   "hashtags": [
+    "#maps",
+    "#geography",
+    "#economics"
+   ],
+   "source_url": "https://data.worldbank.org/indicator/GC.TAX.GSRV.RV.ZS",
+   "status": "open",
+   "added_by": "refill"
+  },
+  {
+   "id": "t170",
+   "topic": "Dependency on International Trade Taxes",
+   "angle": "While trade taxes are nearly zero in most of Europe, they account for over 30% of total government revenue in countries like Eswatini and Namibia.",
+   "format": "map_reveal",
+   "dataset": {
+    "kind": "worldbank",
+    "indicator": "GC.TAX.INTT.RV.ZS",
+    "label": "Trade taxes as % of total revenue",
+    "unit": "%",
+    "source": "World Bank",
+    "min_year": 2019
+   },
+   "scale": {
+    "kind": "bins",
+    "edges": [
+     1,
+     5,
+     10,
+     20
+    ],
+    "labels": [
+     "Under 1%",
+     "1-5%",
+     "5-10%",
+     "10-20%",
+     "Over 20%"
+    ]
+   },
+   "value_format": "{v:.1f}%",
+   "hashtags": [
+    "#maps",
+    "#geography",
+    "#economy"
+   ],
+   "source_url": "https://data.worldbank.org/indicator/GC.TAX.INTT.RV.ZS",
+   "status": "open",
+   "added_by": "refill"
+  },
+  {
+   "id": "t171",
+   "topic": "Mining's Contribution to National Wealth",
+   "angle": "Mineral rents account for more than 25% of the total GDP in the Democratic Republic of the Congo and Zambia.",
+   "format": "rank_ladder",
+   "dataset": {
+    "kind": "worldbank",
+    "indicator": "NY.GDP.MINR.RT.ZS",
+    "label": "Mineral rents as a share of GDP",
+    "unit": "%",
+    "source": "World Bank",
+    "min_year": 2019
+   },
+   "scale": {
+    "kind": "bins",
+    "edges": [
+     0.1,
+     1,
+     5,
+     15
+    ],
+    "labels": [
+     "Negligible",
+     "Low",
+     "Moderate",
+     "High",
+     "Extreme"
+    ]
+   },
+   "value_format": "{v:.1f}%",
+   "hashtags": [
+    "#maps",
+    "#geography",
+    "#economy"
+   ],
+   "source_url": "https://data.worldbank.org/indicator/NY.GDP.MINR.RT.ZS",
+   "status": "open",
+   "added_by": "refill"
+  },
+  {
+   "id": "t172",
+   "topic": "Women in Secondary Education Teaching",
+   "angle": "While women make up nearly 90% of secondary teachers in Armenia, they represent less than 7% of the teaching workforce in Liberia.",
+   "format": "map_reveal",
+   "dataset": {
+    "kind": "worldbank",
+    "indicator": "SE.SEC.TCHR.FE.ZS",
+    "label": "Share of female secondary teachers",
+    "unit": "%",
+    "source": "World Bank",
+    "min_year": 2019
+   },
+   "scale": {
+    "kind": "bins",
+    "edges": [
+     25,
+     50,
+     65,
+     75
+    ],
+    "labels": [
+     "Very low",
+     "Low",
+     "Balanced",
+     "High",
+     "Very high"
+    ]
+   },
+   "value_format": "{v:.1f}%",
+   "hashtags": [
+    "#maps",
+    "#geography",
+    "#education"
+   ],
+   "source_url": "https://data.worldbank.org/indicator/SE.SEC.TCHR.FE.ZS",
+   "status": "open",
+   "added_by": "refill"
+  },
+  {
+   "id": "t173",
+   "topic": "The Length of Primary School",
+   "angle": "While the global median is six years, primary school duration ranges from just four years in the UAE to eight years in Ireland.",
+   "format": "map_reveal",
+   "dataset": {
+    "kind": "worldbank",
+    "indicator": "SE.PRM.DURS",
+    "label": "Duration of primary education",
+    "unit": "years",
+    "source": "World Bank",
+    "min_year": 2019
+   },
+   "scale": {
+    "kind": "bins",
+    "edges": [
+     5,
+     6,
+     7
+    ],
+    "labels": [
+     "4 years",
+     "5 years",
+     "6 years",
+     "7+ years"
+    ]
+   },
+   "value_format": "{v:.0f} years",
+   "hashtags": [
+    "#maps",
+    "#geography",
+    "#education"
+   ],
+   "source_url": "https://data.worldbank.org/indicator/SE.PRM.DURS",
+   "status": "open",
+   "added_by": "refill"
+  },
+  {
+   "id": "t174",
+   "topic": "The Duration of Secondary Schooling",
+   "angle": "While the global median is six years, students in Germany spend more than twice as many years in secondary school as those in Singapore.",
+   "format": "rank_ladder",
+   "dataset": {
+    "kind": "worldbank",
+    "indicator": "SE.SEC.DURS",
+    "label": "Secondary education duration",
+    "unit": "years",
+    "source": "World Bank",
+    "min_year": 2019
+   },
+   "scale": {
+    "kind": "bins",
+    "edges": [
+     5,
+     6,
+     7,
+     8
+    ],
+    "labels": [
+     "4",
+     "5",
+     "6",
+     "7",
+     "8+"
+    ]
+   },
+   "value_format": "{v:.0f} years",
+   "hashtags": [
+    "#maps",
+    "#geography",
+    "#education"
+   ],
+   "source_url": "https://data.worldbank.org/indicator/SE.SEC.DURS",
+   "status": "open",
    "added_by": "refill"
   }
  ],
- "refilled_at": "2026-11-06T01:10:18+00:00"
+ "refilled_at": "2026-11-07T01:11:02+00:00"
 }

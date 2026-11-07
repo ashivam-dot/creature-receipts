@@ -1,0 +1,21 @@
+{
+  "warnings": [
+    {
+      "country": "Bangladesh",
+      "why": "Interest rate spreads are typically positive; a negative value suggests a data error or a fundamental mismatch in the reporting of deposit versus lending rates."
+    },
+    {
+      "country": "New Zealand",
+      "why": "A negative interest rate spread of -3.94 is economically anomalous for a developed banking system and likely represents a reporting error or a misclassification of the underlying data."
+    },
+    {
+      "country": "Lebanon",
+      "why": "Given the country's severe financial crisis and hyperinflationary environment, a spread of 0.817 is inconsistent with the reality of its banking sector's risk premiums."
+    },
+    {
+      "country": "Zambia",
+      "why": "A spread of 0.763 is extremely low for the Zambian market, which historically maintains much higher spreads due to high credit risk and inflation."
+    }
+  ],
+  "policy": "model memory is advisory; unsupported suspicions cannot overrule official data"
+}

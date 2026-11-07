@@ -1,0 +1,142 @@
+{
+  "errors": [],
+  "claims": [
+    {
+      "surface": "title",
+      "text": "Is Madagascar the Highest for Bank Loan Spreads?",
+      "isos": [
+        "MDG"
+      ],
+      "support": "Madagascar is ranked 1st in the provided data with a value of 47.9%."
+    },
+    {
+      "surface": "description",
+      "text": "Madagascar's staggering 47.9% gap between loans and deposits.",
+      "isos": [
+        "MDG"
+      ],
+      "support": "Madagascar value is 47.9%."
+    },
+    {
+      "surface": "beat_0",
+      "text": "In Madagascar, the gap between bank loan and deposit interest rates is a staggering 47.9%.",
+      "isos": [
+        "MDG"
+      ],
+      "support": "Madagascar value is 47.9%."
+    },
+    {
+      "surface": "beat_1",
+      "text": "It is the interest rate charged by banks on loans minus the rate paid for deposits.",
+      "isos": [],
+      "support": "Definition: Interest rate spread is the interest rate charged by banks on loans to private sector customers minus the interest rate paid by commercial or similar banks for demand, time, or savings deposits."
+    },
+    {
+      "surface": "beat_2",
+      "text": "Madagascar holds the world highest spread. That is 17 times the 2.9% found in China.",
+      "isos": [
+        "MDG",
+        "CHN"
+      ],
+      "support": "Madagascar is rank 1 (47.9%). China is 2.9%. 47.9 / 2.9 is approximately 16.5, which rounds to 17."
+    },
+    {
+      "surface": "beat_3",
+      "text": "Brazil is also high, with a gap of 32.5%.",
+      "isos": [
+        "BRA"
+      ],
+      "support": "Brazil value is 32.5%."
+    },
+    {
+      "surface": "beat_4",
+      "text": "Russia has a much tighter gap at 2.5%, while Qatar sits at 0.1%.",
+      "isos": [
+        "RUS",
+        "QAT"
+      ],
+      "support": "Russia value is 2.5%. Qatar value is 0.1%."
+    },
+    {
+      "surface": "beat_5",
+      "text": "New Zealand is the lowest of all, down 3.9%.",
+      "isos": [
+        "NZL"
+      ],
+      "support": "New Zealand is rank 110 with a value of -3.9%."
+    }
+  ],
+  "surface_checks": {
+    "title": {
+      "supported": true,
+      "reason": "Madagascar is ranked 1st.",
+      "isos": [
+        "MDG"
+      ]
+    },
+    "hook": {
+      "supported": true,
+      "reason": "The data shows high spreads in many countries.",
+      "isos": []
+    },
+    "description": {
+      "supported": true,
+      "reason": "Madagascar value is 47.9%.",
+      "isos": [
+        "MDG"
+      ]
+    },
+    "beat_0": {
+      "supported": true,
+      "reason": "Madagascar value is 47.9%.",
+      "isos": [
+        "MDG"
+      ]
+    },
+    "beat_1": {
+      "supported": true,
+      "reason": "Matches definition.",
+      "isos": []
+    },
+    "beat_2": {
+      "supported": true,
+      "reason": "Madagascar is rank 1; 47.9/2.9 is ~16.5.",
+      "isos": [
+        "MDG",
+        "CHN"
+      ]
+    },
+    "beat_3": {
+      "supported": true,
+      "reason": "Brazil value is 32.5%.",
+      "isos": [
+        "BRA"
+      ]
+    },
+    "beat_4": {
+      "supported": true,
+      "reason": "Russia value is 2.5%, Qatar value is 0.1%.",
+      "isos": [
+        "RUS",
+        "QAT"
+      ]
+    },
+    "beat_5": {
+      "supported": true,
+      "reason": "New Zealand is rank 110 with -3.9%.",
+      "isos": [
+        "NZL"
+      ]
+    },
+    "beat_6": {
+      "supported": true,
+      "reason": "General question.",
+      "isos": []
+    },
+    "card_6": {
+      "supported": true,
+      "reason": "General question.",
+      "isos": []
+    }
+  }
+}
