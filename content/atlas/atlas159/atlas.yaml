@@ -1,0 +1,77 @@
+id: atlas159
+title: Places Ranked by Female Primary Teachers
+format: rank_ladder
+hook_text: TEACHER GENDER BALANCE
+description: A documentary overview ranking countries and territories by the share of female primary school teachers,
+  from South Sudan to Belarus.
+hashtags:
+- '#education'
+- '#geography'
+- '#countries'
+tags:
+- education
+- share of female primary teachers
+- countries ranked by share of female primary teachers
+- Belarus
+- South Sudan
+- world map
+- geography
+- atlas in numbers
+sources:
+- https://data.worldbank.org/indicator/SE.PRM.TCHR.FE.ZS
+dataset:
+  kind: worldbank
+  indicator: SE.PRM.TCHR.FE.ZS
+  label: Share of female primary teachers
+  unit: '%'
+  source: World Bank
+  min_year: 2019
+scale:
+  edges:
+  - 40.0
+  - 60.0
+  - 80.0
+  - 95.0
+  labels:
+  - Under 40%
+  - 40-60%
+  - 60-80%
+  - 80-95%
+  - Over 95%
+value_format: '{v:.1f}%'
+beats:
+- text: In South Sudan, 14.5 percent of primary teachers are women. In Belarus, it's 99.5 percent.
+  shot:
+    callouts:
+    - SSD
+    - BLR
+- text: South Sudan is the world's lowest, counting both full-time and part-time staff.
+  shot:
+    kind: country
+    iso: SSD
+  basis: Female teachers as a percentage of total primary education teachers includes full-time and part-time teachers.
+- text: India has 58.6 percent, while the USA has 87.5 percent.
+  shot:
+    kind: group
+    isos:
+    - IND
+    - USA
+- text: Stepping up the list, Moldova has 98.3 percent, Ukraine 98.6 percent, Kyrgyzstan 98.9 percent, and Russia
+    99.3 percent.
+  shot:
+    kind: rank
+    isos:
+    - MDA
+    - UKR
+    - KGZ
+    - RUS
+- text: Belarus is the world's highest, where women account for 99.5 percent of primary teachers.
+  shot:
+    kind: country
+    iso: BLR
+- text: What was the gender balance among your primary school teachers?
+  shot:
+    kind: card
+    lines:
+    - Who Taught You?
+    - Female Primary Teachers (%)

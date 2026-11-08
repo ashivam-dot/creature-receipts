@@ -1,0 +1,159 @@
+{
+  "errors": [],
+  "claims": [
+    {
+      "surface": "title",
+      "text": "Armenia vs Liberia: Women in Secondary Teaching",
+      "isos": [
+        "ARM",
+        "LBR"
+      ],
+      "support": "Armenia (ARM): 88.7%, Liberia (LBR): 6.7%"
+    },
+    {
+      "surface": "hook",
+      "text": "TEACHER GENDER GAP",
+      "isos": [],
+      "support": "Female teachers as a percentage of total secondary education teachers"
+    },
+    {
+      "surface": "description",
+      "text": "A global look at the percentage of female secondary school teachers, comparing Armenia and Liberia using World Bank data.",
+      "isos": [
+        "ARM",
+        "LBR"
+      ],
+      "support": "Armenia and Liberia percentages from World Bank data"
+    },
+    {
+      "surface": "beat_0",
+      "text": "In Armenia, 88.7% of secondary teachers are women. In Liberia, it's just 6.7%.",
+      "isos": [
+        "ARM",
+        "LBR"
+      ],
+      "support": "ARM: 88.7181077250177%, LBR: 6.73685389483116%"
+    },
+    {
+      "surface": "beat_1",
+      "text": "Armenia is the world's highest, with female teachers dominating high school classrooms.",
+      "isos": [
+        "ARM"
+      ],
+      "support": "ARM rank 1"
+    },
+    {
+      "surface": "beat_2",
+      "text": "Liberia sits at the world's lowest, where male teachers make up almost the entire workforce.",
+      "isos": [
+        "LBR"
+      ],
+      "support": "LBR rank 162 (lowest in 162 count universe)"
+    },
+    {
+      "surface": "beat_3",
+      "text": "Armenia has 13 times the share of female secondary teachers Liberia has.",
+      "isos": [
+        "ARM",
+        "LBR"
+      ],
+      "support": "88.7 / 6.7 is approximately 13.24 times"
+    },
+    {
+      "surface": "beat_4",
+      "text": "Most nations sit in between: Germany has 63.9%, USA has 62.8%, China has 60.3%, and India has 49.3%.",
+      "isos": [
+        "DEU",
+        "USA",
+        "CHN",
+        "IND"
+      ],
+      "support": "DEU: 63.9%, USA: 62.8%, CHN: 60.3%, IND: 49.3%"
+    },
+    {
+      "surface": "beat_5",
+      "text": "What share of secondary teachers in your country are women?",
+      "isos": [],
+      "support": "Indicator measures female teachers as a percentage of total secondary education teachers"
+    },
+    {
+      "surface": "card_5",
+      "text": "Female Secondary Teachers",
+      "isos": [],
+      "support": "Indicator: SE.SEC.TCHR.FE.ZS"
+    }
+  ],
+  "surface_checks": {
+    "title": {
+      "supported": true,
+      "reason": "Armenia and Liberia are valid entities with respective data in the source.",
+      "isos": [
+        "ARM",
+        "LBR"
+      ]
+    },
+    "hook": {
+      "supported": true,
+      "reason": "The title and topic reflect the indicator on female secondary teachers.",
+      "isos": []
+    },
+    "description": {
+      "supported": true,
+      "reason": "Accurately describes the comparison between Armenia and Liberia using World Bank data.",
+      "isos": [
+        "ARM",
+        "LBR"
+      ]
+    },
+    "beat_0": {
+      "supported": true,
+      "reason": "Armenia value is 88.7% (88.718%) and Liberia is 6.7% (6.737%), matching display values.",
+      "isos": [
+        "ARM",
+        "LBR"
+      ]
+    },
+    "beat_1": {
+      "supported": true,
+      "reason": "Armenia has rank 1 in the dataset, making it the highest.",
+      "isos": [
+        "ARM"
+      ]
+    },
+    "beat_2": {
+      "supported": true,
+      "reason": "Liberia has rank 162 out of 162, making it the lowest.",
+      "isos": [
+        "LBR"
+      ]
+    },
+    "beat_3": {
+      "supported": true,
+      "reason": "88.7 divided by 6.7 is roughly 13.",
+      "isos": [
+        "ARM",
+        "LBR"
+      ]
+    },
+    "beat_4": {
+      "supported": true,
+      "reason": "Germany is 63.9%, USA is 62.8%, China is 60.3%, India is 49.3%, all matching evidence display values.",
+      "isos": [
+        "DEU",
+        "USA",
+        "CHN",
+        "IND"
+      ]
+    },
+    "beat_5": {
+      "supported": true,
+      "reason": "Standard interactive question framing matching the indicator definition.",
+      "isos": []
+    },
+    "card_5": {
+      "supported": true,
+      "reason": "Matches indicator definition and source.",
+      "isos": []
+    }
+  }
+}

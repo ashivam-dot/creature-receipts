@@ -1,0 +1,167 @@
+{
+  "errors": [
+    {
+      "surface": "beat_3",
+      "claim": "29 times Burundi at 0.6",
+      "reason": "17.4 divided by 0.5995 is about 29 times mathematically, but Burundi's display value is 0.6 t, and 17.4 / 0.6 is 29, so this ratio is correct, but let's check the wording. Wait, 17.3898578550286 / 0.599503722508301 = 29.008... The ratio is accurate, however check if any other error exists.",
+      "severity": "info"
+    }
+  ],
+  "claims": [
+    {
+      "surface": "title",
+      "text": "Who Emits the Most Greenhouse Gases per Person?",
+      "isos": [],
+      "support": "Indicator EN.GHG.ALL.PC.CE.AR5 measures total annual greenhouse gas emissions per capita."
+    },
+    {
+      "surface": "hook",
+      "text": "EMISSIONS PER PERSON",
+      "isos": [],
+      "support": "Indicator EN.GHG.ALL.PC.CE.AR5"
+    },
+    {
+      "surface": "description",
+      "text": "A global look at per capita greenhouse gas emissions using World Bank data, from Qatar to DR Congo.",
+      "isos": [
+        "QAT",
+        "COD"
+      ],
+      "support": "Qatar value 56.9, DR Congo value 0.535"
+    },
+    {
+      "surface": "beat_0",
+      "text": "Qatar produces 56.9 tons of greenhouse gases per person. DR Congo produces 0.5.",
+      "isos": [
+        "QAT",
+        "COD"
+      ],
+      "support": "Qatar: 56.9471086722686 (display: 56.9 t), COD: 0.535264451068125 (display: 0.5 t)"
+    },
+    {
+      "surface": "beat_1",
+      "text": "Kuwait sits right near the top, producing 35.4 tons per person.",
+      "isos": [
+        "KWT"
+      ],
+      "support": "Kuwait: 35.3933819768307, display: 35.4 t, rank 4"
+    },
+    {
+      "surface": "beat_2",
+      "text": "Mongolia is a surprise near the peak, producing 29.6 tons per person.",
+      "isos": [
+        "MNG"
+      ],
+      "support": "Mongolia: 29.6060358807395, display: 29.6 t, rank 5"
+    },
+    {
+      "surface": "beat_3",
+      "text": "USA produces 17.4 tons per person, 29 times Burundi at 0.6.",
+      "isos": [
+        "USA",
+        "BDI"
+      ],
+      "support": "USA: 17.3898578550286, display 17.4 t; Burundi: 0.599503722508301, display 0.6 t"
+    },
+    {
+      "surface": "beat_4",
+      "text": "Near the bottom, Malawi produces 0.9 tons per person, and Afghanistan just 0.8.",
+      "isos": [
+        "MWI",
+        "AFG"
+      ],
+      "support": "Malawi: 0.87847373615846, display 0.9 t; Afghanistan: 0.774601235636553, display 0.8 t"
+    },
+    {
+      "surface": "beat_5",
+      "text": "This counts greenhouse gases from energy, industry, waste, and agriculture, divided by population.",
+      "isos": [],
+      "support": "Definition: Total annual emissions of the six greenhouse gases ... from the energy, industry, waste, and agriculture sectors ... divided by the economy's population."
+    },
+    {
+      "surface": "beat_6",
+      "text": "How many tons of greenhouse gases does your country emit?",
+      "isos": [],
+      "support": "Indicator EN.GHG.ALL.PC.CE.AR5"
+    },
+    {
+      "surface": "card_6",
+      "text": "What is your footprint?, Greenhouse gas emissions per capita, World Bank",
+      "isos": [],
+      "support": "World Bank indicator EN.GHG.ALL.PC.CE.AR5"
+    }
+  ],
+  "surface_checks": {
+    "title": {
+      "supported": true,
+      "reason": "The title appropriately frames the per-capita greenhouse gas emissions indicator.",
+      "isos": []
+    },
+    "hook": {
+      "supported": true,
+      "reason": "Matches the core metric theme.",
+      "isos": []
+    },
+    "description": {
+      "supported": true,
+      "reason": "Accurately references World Bank data and extreme entities Qatar and DR Congo.",
+      "isos": [
+        "QAT",
+        "COD"
+      ]
+    },
+    "beat_0": {
+      "supported": true,
+      "reason": "Qatar value 56.947 matches 56.9 t; DR Congo value 0.535 matches 0.5 t.",
+      "isos": [
+        "QAT",
+        "COD"
+      ]
+    },
+    "beat_1": {
+      "supported": true,
+      "reason": "Kuwait value 35.393 matches 35.4 t.",
+      "isos": [
+        "KWT"
+      ]
+    },
+    "beat_2": {
+      "supported": true,
+      "reason": "Mongolia value 29.606 matches 29.6 t.",
+      "isos": [
+        "MNG"
+      ]
+    },
+    "beat_3": {
+      "supported": true,
+      "reason": "USA value 17.389 matches 17.4 t and Burundi value 0.599 matches 0.6 t.",
+      "isos": [
+        "USA",
+        "BDI"
+      ]
+    },
+    "beat_4": {
+      "supported": true,
+      "reason": "Malawi value 0.878 matches 0.9 t and Afghanistan value 0.774 matches 0.8 t.",
+      "isos": [
+        "MWI",
+        "AFG"
+      ]
+    },
+    "beat_5": {
+      "supported": true,
+      "reason": "Directly matches the official definition sectors and per-capita formula.",
+      "isos": []
+    },
+    "beat_6": {
+      "supported": true,
+      "reason": "Standard concluding question compatible with the dataset.",
+      "isos": []
+    },
+    "card_6": {
+      "supported": true,
+      "reason": "Accurately names source and topic.",
+      "isos": []
+    }
+  }
+}

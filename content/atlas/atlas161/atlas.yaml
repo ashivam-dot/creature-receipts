@@ -1,0 +1,75 @@
+id: atlas161
+title: 'Armenia vs Liberia: Women in Secondary Teaching'
+format: versus
+hook_text: TEACHER GENDER GAP
+description: A global look at the percentage of female secondary school teachers, comparing Armenia and Liberia
+  using World Bank data.
+hashtags:
+- '#education'
+- '#geography'
+- '#countries'
+tags:
+- education
+- share of female secondary teachers
+- countries ranked by share of female secondary teachers
+- Armenia
+- Liberia
+- world map
+- geography
+- atlas in numbers
+sources:
+- https://data.worldbank.org/indicator/SE.SEC.TCHR.FE.ZS
+dataset:
+  kind: worldbank
+  indicator: SE.SEC.TCHR.FE.ZS
+  label: Share of female secondary teachers
+  unit: '%'
+  source: World Bank
+  min_year: 2019
+scale:
+  edges:
+  - 25.0
+  - 50.0
+  - 65.0
+  - 75.0
+  labels:
+  - Very low
+  - Low
+  - Balanced
+  - High
+  - Very high
+value_format: '{v:.1f}%'
+beats:
+- text: In Armenia, 88.7% of secondary teachers are women. In Liberia, it's just 6.7%.
+  shot:
+    callouts:
+    - ARM
+    - LBR
+- text: Armenia is the world's highest, with female teachers dominating high school classrooms.
+  shot:
+    kind: country
+    iso: ARM
+- text: Liberia sits at the world's lowest, where male teachers make up almost the entire workforce.
+  shot:
+    kind: country
+    iso: LBR
+- text: Armenia has 13 times the share of female secondary teachers Liberia has.
+  shot:
+    kind: group
+    isos:
+    - ARM
+    - LBR
+- text: 'Most nations sit in between: Germany has 63.9%, USA has 62.8%, China has 60.3%, and India has 49.3%.'
+  shot:
+    kind: rank
+    isos:
+    - DEU
+    - USA
+    - CHN
+    - IND
+- text: What share of secondary teachers in your country are women?
+  shot:
+    kind: card
+    lines:
+    - Female Secondary Teachers
+    - World Bank Data

@@ -1,0 +1,153 @@
+{
+  "errors": [],
+  "claims": [
+    {
+      "surface": "title",
+      "text": "Places Ranked by Female Primary Teachers",
+      "isos": [],
+      "support": "Indicator: SE.PRM.TCHR.FE.ZS, definition: Female teachers as a percentage of total primary education teachers"
+    },
+    {
+      "surface": "hook",
+      "text": "TEACHER GENDER BALANCE",
+      "isos": [],
+      "support": "Indicator: SE.PRM.TCHR.FE.ZS"
+    },
+    {
+      "surface": "description",
+      "text": "A documentary overview ranking countries and territories by the share of female primary school teachers, from South Sudan to Belarus.",
+      "isos": [
+        "SSD",
+        "BLR"
+      ],
+      "support": "SSD rank 171 (14.5%), BLR rank 1 (99.5%)"
+    },
+    {
+      "surface": "beat_0",
+      "text": "In South Sudan, 14.5 percent of primary teachers are women. In Belarus, it's 99.5 percent.",
+      "isos": [
+        "SSD",
+        "BLR"
+      ],
+      "support": "SSD value 14.4875802993774 (14.5%, year 2024); BLR value 99.5096274968508 (99.5%, year 2024)"
+    },
+    {
+      "surface": "beat_1",
+      "text": "South Sudan is the world's lowest, counting both full-time and part-time staff.",
+      "isos": [
+        "SSD"
+      ],
+      "support": "SSD rank 171 (lowest among 171 count); definition: includes full-time and part-time teachers"
+    },
+    {
+      "surface": "beat_2",
+      "text": "India has 58.6 percent, while the USA has 87.5 percent.",
+      "isos": [
+        "IND",
+        "USA"
+      ],
+      "support": "IND value 58.5982555539994 (58.6%, year 2025); USA value 87.4554214477539 (87.5%, year 2023)"
+    },
+    {
+      "surface": "beat_3",
+      "text": "Stepping up the list, Moldova has 98.3 percent, Ukraine 98.6 percent, Kyrgyzstan 98.9 percent, and Russia 99.3 percent.",
+      "isos": [
+        "MDA",
+        "UKR",
+        "KGZ",
+        "RUS"
+      ],
+      "support": "MDA value 98.2586393088553 (98.3%, rank 5); UKR value 98.6243306147936 (98.6%, rank 4); KGZ value 98.8713822773494 (98.9%, rank 3); RUS value 99.273926787363 (99.3%, rank 2)"
+    },
+    {
+      "surface": "beat_4",
+      "text": "Belarus is the world's highest, where women account for 99.5 percent of primary teachers.",
+      "isos": [
+        "BLR"
+      ],
+      "support": "BLR value 99.5096274968508 (99.5%, rank 1)"
+    },
+    {
+      "surface": "beat_5",
+      "text": "What was the gender balance among your primary school teachers?",
+      "isos": [],
+      "support": "Indicator: SE.PRM.TCHR.FE.ZS"
+    },
+    {
+      "surface": "card_5",
+      "text": "Who Taught You? Female Primary Teachers (%)",
+      "isos": [],
+      "support": "Indicator: SE.PRM.TCHR.FE.ZS"
+    }
+  ],
+  "surface_checks": {
+    "title": {
+      "supported": true,
+      "reason": "Accurately describes ranking countries by the indicator.",
+      "isos": []
+    },
+    "hook": {
+      "supported": true,
+      "reason": "Matches the thematic focus on female teacher percentages.",
+      "isos": []
+    },
+    "description": {
+      "supported": true,
+      "reason": "Correctly references the range from South Sudan to Belarus.",
+      "isos": [
+        "SSD",
+        "BLR"
+      ]
+    },
+    "beat_0": {
+      "supported": true,
+      "reason": "Matches South Sudan (14.5%) and Belarus (99.5%) data values.",
+      "isos": [
+        "SSD",
+        "BLR"
+      ]
+    },
+    "beat_1": {
+      "supported": true,
+      "reason": "South Sudan is rank 171 (lowest) and definition includes full-time and part-time staff.",
+      "isos": [
+        "SSD"
+      ]
+    },
+    "beat_2": {
+      "supported": true,
+      "reason": "Matches India (58.6%) and USA (87.5%) values.",
+      "isos": [
+        "IND",
+        "USA"
+      ]
+    },
+    "beat_3": {
+      "supported": true,
+      "reason": "Matches Moldova (98.3%), Ukraine (98.6%), Kyrgyzstan (98.9%), and Russia (99.3%) values and relative order.",
+      "isos": [
+        "MDA",
+        "UKR",
+        "KGZ",
+        "RUS"
+      ]
+    },
+    "beat_4": {
+      "supported": true,
+      "reason": "Belarus is rank 1 with 99.5%.",
+      "isos": [
+        "BLR"
+      ]
+    },
+    "beat_5": {
+      "supported": true,
+      "reason": "Standard stylistic closing question.",
+      "isos": []
+    },
+    "card_5": {
+      "supported": true,
+      "reason": "Matches indicator title and topic.",
+      "isos": []
+    }
+  }
+}

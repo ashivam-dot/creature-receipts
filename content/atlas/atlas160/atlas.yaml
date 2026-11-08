@@ -1,0 +1,75 @@
+id: atlas160
+title: Who Emits the Most Greenhouse Gases per Person?
+hook_text: EMISSIONS PER PERSON
+description: A global look at per capita greenhouse gas emissions using World Bank data, from Qatar to DR Congo.
+hashtags:
+- '#data'
+- '#environment'
+- '#geography'
+tags:
+- greenhouse gas emissions per capita
+- countries ranked by greenhouse gas emissions per capita
+- Qatar
+- Congo Dem. Rep.
+- world map
+- geography
+- atlas in numbers
+sources:
+- https://data.worldbank.org/indicator/EN.GHG.ALL.PC.CE.AR5
+dataset:
+  kind: worldbank
+  indicator: EN.GHG.ALL.PC.CE.AR5
+  label: Greenhouse gas emissions per capita
+  unit: t CO2e
+  source: World Bank
+  min_year: 2019
+scale:
+  edges:
+  - 2.0
+  - 5.0
+  - 10.0
+  - 25.0
+  labels:
+  - Minimal
+  - Low
+  - Moderate
+  - High
+  - Extreme
+value_format: '{v:.1f} t'
+beats:
+- text: Qatar produces 56.9 tons of greenhouse gases per person. DR Congo produces 0.5.
+  shot:
+    callouts:
+    - QAT
+    - COD
+- text: Kuwait sits right near the top, producing 35.4 tons per person.
+  shot:
+    kind: country
+    iso: KWT
+- text: Mongolia is a surprise near the peak, producing 29.6 tons per person.
+  shot:
+    kind: country
+    iso: MNG
+- text: USA produces 17.4 tons per person, 29 times Burundi at 0.6.
+  shot:
+    kind: group
+    isos:
+    - USA
+    - BDI
+- text: Near the bottom, Malawi produces 0.9 tons per person, and Afghanistan just 0.8.
+  shot:
+    kind: rank
+    isos:
+    - MWI
+    - YEM
+    - LBR
+    - AFG
+- text: This counts greenhouse gases from energy, industry, waste, and agriculture, divided by population.
+  basis: from the energy, industry, waste, and agriculture sectors, standardized to carbon dioxide equivalent values
+    divided by the economy's population.
+- text: How many tons of greenhouse gases does your country emit?
+  shot:
+    kind: card
+    lines:
+    - What is your footprint?
+    - Greenhouse gas emissions per capita, World Bank

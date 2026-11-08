@@ -1,0 +1,29 @@
+{
+  "warnings": [
+    {
+      "country": "Palau",
+      "why": "A figure of 86.7 tonnes per capita is excessively high and an outlier even for small island states with heavy tourism aviation or diesel power, likely reflecting a data error or population denominator mismatch."
+    },
+    {
+      "country": "Virgin Islands (U.S.)",
+      "why": "At 0.235, this is unrealistically low for a US territory with high per capita energy consumption and an oil refinery legacy."
+    },
+    {
+      "country": "American Samoa",
+      "why": "At 0.19, this is implausibly low for a US territory dependent on imported fossil fuels and heavy industry."
+    },
+    {
+      "country": "Guam",
+      "why": "At 0.107, this is implausibly low for an island economy with significant military infrastructure and heavy fossil fuel dependence."
+    },
+    {
+      "country": "Marshall Islands",
+      "why": "At 0.107, this seems too low compared to other Pacific island nations that rely almost entirely on imported diesel for power generation."
+    },
+    {
+      "country": "Northern Mariana Islands",
+      "why": "At 0.0926, this is extremely low and likely suffers from severe underreporting or population-to-emissions data discrepancies typical of small island territories."
+    }
+  ],
+  "policy": "model memory is advisory; unsupported suspicions cannot overrule official data"
+}
