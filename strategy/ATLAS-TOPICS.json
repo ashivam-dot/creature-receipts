@@ -6357,7 +6357,304 @@
    "source_url": "https://data.worldbank.org/indicator/SE.SEC.DURS",
    "status": "used:atlas156",
    "added_by": "refill"
+  },
+  {
+   "id": "t175",
+   "topic": "Working-Age Population Share Worldwide",
+   "angle": "Driven by massive foreign labor influxes, over 80% of Qatar's population is working-age, compared to under 50% in the Central African Republic.",
+   "format": "map_reveal",
+   "dataset": {
+    "kind": "worldbank",
+    "indicator": "SP.POP.1564.TO.ZS",
+    "label": "Working-age population share",
+    "unit": "%",
+    "source": "World Bank",
+    "min_year": 2019
+   },
+   "scale": {
+    "kind": "bins",
+    "edges": [
+     55.0,
+     62.0,
+     68.0,
+     75.0
+    ],
+    "labels": [
+     "Under 55%",
+     "55% to 62%",
+     "62% to 68%",
+     "68% to 75%",
+     "Over 75%"
+    ]
+   },
+   "value_format": "{v:.1f}%",
+   "hashtags": [
+    "#maps me"
+   ],
+   "source_url": "https://data.worldbank.org/indicator/SP.POP.1564.TO.ZS",
+   "status": "open",
+   "added_by": "refill"
+  },
+  {
+   "id": "t176",
+   "topic": "Real Interest Rates Around the World",
+   "angle": "Adjusted for inflation, real interest rates range drastically worldwide, from over 47% in Madagascar to below -50% in South Sudan.",
+   "format": "map_reveal",
+   "dataset": {
+    "kind": "worldbank",
+    "indicator": "FR.INR.RINR",
+    "label": "Real interest rate",
+    "unit": "%",
+    "source": "World Bank",
+    "min_year": 2019
+   },
+   "scale": {
+    "kind": "threshold",
+    "at": 0,
+    "labels": [
+     "Positive real interest rate",
+     "Negative real interest rate"
+    ]
+   },
+   "value_format": "{v:.1f}%",
+   "hashtags": [
+    "#maps me"
+   ],
+   "source_url": "https://data.worldbank.org/indicator/FR.INR.RINR",
+   "status": "open",
+   "added_by": "refill"
+  },
+  {
+   "id": "t177",
+   "topic": "Global Money Supply Relative to GDP",
+   "angle": "In major financial centers like Hong Kong and Japan, broad money supply far exceeds annual GDP, reaching over 200% to 480% of economic output.",
+   "format": "rank_ladder",
+   "dataset": {
+    "kind": "worldbank",
+    "indicator": "FM.LBL.BMNY.GD.ZS",
+    "label": "Broad money supply (% of GDP)",
+    "unit": "%",
+    "source": "World Bank",
+    "min_year": 2019
+   },
+   "scale": {
+    "kind": "bins",
+    "edges": [
+     30,
+     60,
+     100,
+     150
+    ],
+    "labels": [
+     "Under 30%",
+     "30% to 60%",
+     "60% to 100%",
+     "100% to 150%",
+     "Over 150%"
+    ]
+   },
+   "value_format": "{v:.0f}%",
+   "hashtags": [
+    "#maps"
+   ],
+   "source_url": "https://data.worldbank.org/indicator/FM.LBL.BMNY.GD.ZS",
+   "status": "open",
+   "added_by": "refill"
+  },
+  {
+   "id": "t178",
+   "topic": "Global Bank Capital to Assets Ratio",
+   "angle": "Bank capital adequacy ratios range widely across the world, from below zero in Equatorial Guinea to over 20% in Tajikistan.",
+   "format": "map_reveal",
+   "dataset": {
+    "kind": "worldbank",
+    "indicator": "FB.BNK.CAPA.ZS",
+    "label": "Bank capital to assets ratio",
+    "unit": "%",
+    "source": "World Bank",
+    "min_year": 2019
+   },
+   "scale": {
+    "kind": "bins",
+    "edges": [
+     6.0,
+     9.0,
+     12.0
+    ],
+    "labels": [
+     "Under 6.0%",
+     "6.0% to 9.0%",
+     "9.0% to 12.0%",
+     "Above 12.0%"
+    ]
+   },
+   "value_format": "{v:.1f}%",
+   "hashtags": [
+    "#maps шарing,",
+    "#geography",
+    "#finance"
+   ],
+   "source_url": "https://data.worldbank.org/indicator/FB.BNK.CAPA.ZS",
+   "status": "open",
+   "added_by": "refill"
+  },
+  {
+   "id": "t179",
+   "topic": "Income Share Held by Poorest 10%",
+   "angle": "In most surveyed countries, the poorest 10% of the population receive less than 3% of national income.",
+   "format": "map_reveal",
+   "dataset": {
+    "kind": "worldbank",
+    "indicator": "SI.DST.FRST.10",
+    "label": "Income share held by lowest 10%",
+    "unit": "%",
+    "source": "World Bank",
+    "min_year": 2019
+   },
+   "scale": {
+    "kind": "threshold",
+    "at": 3.0,
+    "labels": [
+     "3% or higher",
+     "Under 3%"
+    ]
+   },
+   "value_format": "{v:.1f}%",
+   "hashtags": [
+    "#maps"
+   ],
+   "source_url": "https://data.worldbank.org/indicator/SI.DST.FRST.10",
+   "status": "open",
+   "added_by": "refill"
+  },
+  {
+   "id": "t180",
+   "topic": "Income Share of Upper Middle Class",
+   "angle": "Across most nations, the fourth income quintile holds a remarkably stable 21% to 23% share of total national income.",
+   "format": "rank_ladder",
+   "dataset": {
+    "kind": "worldbank",
+    "indicator": "SI.DST.04TH.20",
+    "label": "Income share of 4th quintile",
+    "unit": "%",
+    "source": "World Bank",
+    "min_year": 2019
+   },
+   "scale": {
+    "kind": "threshold",
+    "at": 22.2,
+    "labels": [
+     "Above 22.2%",
+     "22.2% or lower"
+    ]
+   },
+   "value_format": "{v:.1f}%",
+   "hashtags": [
+    "#maps",
+    "#geography",
+    "#economy"
+   ],
+   "source_url": "https://data.worldbank.org/indicator/SI.DST.04TH.20",
+   "status": "open",
+   "added_by": "refill"
+  },
+  {
+   "id": "t181",
+   "topic": "Women in University Faculty Worldwide",
+   "angle": "While women make up over 80% of university faculty in Jamaica, several African nations report fewer than 10% female academic staff.",
+   "format": "map_reveal",
+   "dataset": {
+    "kind": "worldbank",
+    "indicator": "SE.TER.TCHR.FE.ZS",
+    "label": "Share of female university faculty",
+    "unit": "%",
+    "source": "World Bank",
+    "min_year": 2019
+   },
+   "scale": {
+    "kind": "threshold",
+    "at": 50,
+    "labels": [
+     "Female majority",
+     "Male majority"
+    ]
+   },
+   "value_format": "{v:.1f}%",
+   "hashtags": [
+    "#maps me"
+   ],
+   "source_url": "https://data.worldbank.org/indicator/SE.TER.TCHR.FE.ZS",
+   "status": "open",
+   "added_by": "refill"
+  },
+  {
+   "id": "t182",
+   "topic": "Women in the Global Labor Force",
+   "angle": "Women make up nearly half of the workforce across most nations, reaching over 55% in Moldova while staying under 10% in others.",
+   "format": "map_reveal",
+   "dataset": {
+    "kind": "worldbank",
+    "indicator": "SL.TLF.TOTL.FE.ZS",
+    "label": "Female share of total labor force",
+    "unit": "%",
+    "source": "World Bank",
+    "min_year": 2019
+   },
+   "scale": {
+    "kind": "bins",
+    "edges": [
+     25,
+     40,
+     45,
+     50
+    ],
+    "labels": [
+     "Under 25%",
+     "25% to 40%",
+     "40% to 45%",
+     "45% to 50%",
+     "Over 50%"
+    ]
+   },
+   "value_format": "{v:.1f}%",
+   "hashtags": [
+    "#maps"
+   ],
+   "source_url": "https://data.worldbank.org/indicator/SL.TLF.TOTL.FE.ZS",
+   "status": "open",
+   "added_by": "refill"
+  },
+  {
+   "id": "t183",
+   "topic": "Changes in Global Food Output",
+   "angle": "Food production in Senegal has surged by 87% since the 2014-2016 baseline, whereas Cuba's output dropped by over 50%.",
+   "format": "rank_ladder",
+   "dataset": {
+    "kind": "worldbank",
+    "indicator": "AG.PRD.FOOD.XD",
+    "label": "Food production index (2014-2016 = 100)",
+    "unit": "index",
+    "source": "World Bank",
+    "min_year": 2019
+   },
+   "scale": {
+    "kind": "threshold",
+    "at": 100,
+    "labels": [
+     "Expanded since 2014-2016",
+     "Contracted since 2014-2016"
+    ]
+   },
+   "value_format": "{v:.1f}",
+   "hashtags": [
+    "#maps me",
+    "#geography",
+    "#agriculture"
+   ],
+   "source_url": "https://data.worldbank.org/indicator/AG.PRD.FOOD.XD",
+   "status": "open",
+   "added_by": "refill"
   }
  ],
- "refilled_at": "2026-11-07T01:11:02+00:00"
+ "refilled_at": "2026-11-08T17:10:15+00:00"
 }
