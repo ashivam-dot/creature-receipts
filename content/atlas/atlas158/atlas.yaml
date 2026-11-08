@@ -1,0 +1,74 @@
+id: atlas158
+title: How Does the USA Compare on Female Part-Time Work?
+format: spotlight
+hook_text: FEMALE PART-TIME WORK
+description: Comparing the share of female employment that is part-time across countries and territories using World
+  Bank data.
+hashtags:
+- '#work'
+- '#workforce'
+- '#geography'
+tags:
+- work
+- share of female employment that is part-time
+- countries ranked by share of female employment that is part-time
+- Ukraine
+- Poland
+- world map
+- geography
+- atlas in numbers
+sources:
+- https://data.worldbank.org/indicator/SL.TLF.PART.FE.ZS
+dataset:
+  kind: worldbank
+  indicator: SL.TLF.PART.FE.ZS
+  label: Share of female employment that is part-time
+  unit: '%'
+  source: World Bank
+  min_year: 2019
+scale:
+  edges:
+  - 15.0
+  - 30.0
+  - 45.0
+  - 60.0
+  labels:
+  - Very low
+  - Low
+  - Moderate
+  - High
+  - Very high
+value_format: '{v:.1f}%'
+beats:
+- text: In the United States, 33.2% of working women are part-time. In the Netherlands, it's 77.3%.
+  shot:
+    callouts:
+    - USA
+    - NLD
+- text: This counts anyone working less than 35 actual weekly hours.
+  shot:
+    kind: country
+    iso: USA
+  basis: Part time employment in this series is based on a common definition of less than 35 actual weekly hours
+    worked.
+- text: In the Netherlands, short workweeks define daily life for 77.3% of employed women.
+  shot:
+    kind: country
+    iso: NLD
+- text: Germany also stays high, where 60.6% of women work part-time.
+  shot:
+    kind: country
+    iso: DEU
+- text: At the other end, Mongolia has 6.2%, the UAE has 5.8%, and Poland is the world's lowest at 0.5%.
+  shot:
+    kind: rank
+    isos:
+    - MNG
+    - ARE
+    - POL
+- text: What percentage of women work part-time in your country?
+  shot:
+    kind: card
+    lines:
+    - FEMALE PART-TIME WORK
+    - Share of female employment that is part-time (%)

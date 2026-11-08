@@ -1,0 +1,28 @@
+{
+  "duration": 43.36,
+  "integrated_lufs": -14.1,
+  "true_peak_dbfs": -1.3,
+  "speech": {
+    "heard": "Nigeria applies 13 kg of fertilizer per hectare of arable land. The USA applies 128 kg per hectare, while India uses 214. Climbing higher, Brazil uses 397 kg, Egypt has 598, Ireland 987, and Malaysia 1,869. At the top, Kuwait uses 2,488 kg per hectare, 19 times what the USA uses. This counts nitrogenous, potash and phosphate plant nutrients used per unit of arable land. How heavily fertilized is the cropland in your country?",
+    "model": "small.en",
+    "media_sha256": "c4d0b30760dd389576af9cdfae2284f7fc573b07e7a5773124be7aa6d8022a74",
+    "primary_differences": [
+      "'kilograms' heard as 'kg' after 'nigeria applies 13'",
+      "'kilograms' heard as 'kg' after 'usa applies 128'",
+      "'kilograms' heard as 'kg' after 'brazil uses 397'",
+      "'kilograms' heard as 'kg' after 'kuwait uses 2488'"
+    ],
+    "differences": [
+      "'kilograms' heard as 'kg' after 'nigeria applies 13'",
+      "'kilograms' heard as 'kg' after 'usa applies 128'",
+      "'kilograms' heard as 'kg' after 'brazil uses 397'",
+      "'kilograms' heard as 'kg' after 'kuwait uses 2488'"
+    ],
+    "corroboration": {
+      "model": "base.en",
+      "heard": "Nigeria applies 13 kilograms of fertilizer per hectare of arable land. The USA applies 128 kilograms per hectare, while India uses 214. Climbing higher, Brazil uses 397 kilograms, Egypt has 598, Ireland 987, and Malaysia 1869. At the top, Kuwait uses 2488 kilograms per hectare. 19 times what the USA uses. This counts nitrogenous, potash, and phosphate plant nutrients used per unit of arable land. How heavily fertilized is the cropland in your country.",
+      "differences": [],
+      "resolved": []
+    }
+  }
+}

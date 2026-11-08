@@ -1,0 +1,113 @@
+{
+  "errors": [],
+  "claims": [
+    {
+      "surface": "beat_0",
+      "text": "Nigeria applies 13 kilograms of fertilizer per hectare of arable land.",
+      "isos": [
+        "NGA"
+      ],
+      "support": "Nigeria, value: 13.0431532031359, display: 13 kg"
+    },
+    {
+      "surface": "beat_1",
+      "text": "The USA applies 128 kilograms per hectare, while India uses 214.",
+      "isos": [
+        "USA",
+        "IND"
+      ],
+      "support": "United States, value: 127.80546291862, display: 128 kg; India, value: 214.079650701801, display: 214 kg"
+    },
+    {
+      "surface": "beat_2",
+      "text": "Climbing higher: Brazil uses 397 kilograms, Egypt has 598, Ireland 987, and Malaysia 1,869.",
+      "isos": [
+        "BRA",
+        "EGY",
+        "IRL",
+        "MYS"
+      ],
+      "support": "Brazil, 397 kg; Egypt, Arab Rep., 598 kg; Ireland, 987 kg; Malaysia, 1,869 kg"
+    },
+    {
+      "surface": "beat_3",
+      "text": "At the top, Kuwait uses 2,488 kilograms per hectare, 19 times what the USA uses.",
+      "isos": [
+        "KWT",
+        "USA"
+      ],
+      "support": "Kuwait, value: 2487.5, display: 2,488 kg; United States, 128 kg (2487.5 / 127.805 ~ 19.45)"
+    },
+    {
+      "surface": "beat_4",
+      "text": "This counts nitrogenous, potash, and phosphate plant nutrients used per unit of arable land.",
+      "isos": [],
+      "support": "Fertilizer products cover nitrogenous, potash, and phosphate fertilizers... per unit of arable land."
+    }
+  ],
+  "surface_checks": {
+    "title": {
+      "supported": true,
+      "reason": "Accurately frames the ranking of fertilizer consumption intensity per hectare.",
+      "isos": []
+    },
+    "hook": {
+      "supported": true,
+      "reason": "General stylistic hook matching global topic.",
+      "isos": []
+    },
+    "description": {
+      "supported": true,
+      "reason": "Accurately reflects definition components (nitrogenous, potash, phosphate, arable land).",
+      "isos": []
+    },
+    "beat_0": {
+      "supported": true,
+      "reason": "Nigeria display value is 13 kg per hectare.",
+      "isos": [
+        "NGA"
+      ]
+    },
+    "beat_1": {
+      "supported": true,
+      "reason": "USA is 128 kg and India is 214 kg per hectare.",
+      "isos": [
+        "USA",
+        "IND"
+      ]
+    },
+    "beat_2": {
+      "supported": true,
+      "reason": "Brazil, Egypt, Ireland, and Malaysia match respective evidence values.",
+      "isos": [
+        "BRA",
+        "EGY",
+        "IRL",
+        "MYS"
+      ]
+    },
+    "beat_3": {
+      "supported": true,
+      "reason": "Kuwait is 2,488 kg, which is approximately 19 times the USA value of 128 kg.",
+      "isos": [
+        "KWT",
+        "USA"
+      ]
+    },
+    "beat_4": {
+      "supported": true,
+      "reason": "Directly matches elements of the indicator definition.",
+      "isos": []
+    },
+    "beat_5": {
+      "supported": true,
+      "reason": "Ordinary identity/loop question, permissible by instructions.",
+      "isos": []
+    },
+    "card_5": {
+      "supported": true,
+      "reason": "Card text matches expected title and source labelling.",
+      "isos": []
+    }
+  }
+}

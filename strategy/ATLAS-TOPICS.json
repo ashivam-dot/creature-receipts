@@ -4315,7 +4315,7 @@
    "id": "t122",
    "topic": "Global Crop Fertilizer Consumption Intensity",
    "angle": "Kuwait uses an astonishing 2,490 kilograms of fertilizer per hectare of arable land, far surpassing intensive agricultural hubs.",
-   "format": "map_reveal",
+   "format": "rank_ladder",
    "dataset": {
     "kind": "worldbank",
     "indicator": "AG.CON.FERT.ZS",
@@ -4347,7 +4347,7 @@
     "#agriculture"
    ],
    "source_url": "https://data.worldbank.org/indicator/AG.CON.FERT.ZS",
-   "status": "open",
+   "status": "failed:ValueError",
    "added_by": "refill"
   },
   {
@@ -4391,7 +4391,7 @@
    "id": "t124",
    "topic": "The Global Divide in Part-Time Work",
    "angle": "While part-time work is a rarity in some nations, in others like the Netherlands and Trinidad and Tobago, it defines the vast majority of female employment.",
-   "format": "map_reveal",
+   "format": "spotlight",
    "dataset": {
     "kind": "worldbank",
     "indicator": "SL.TLF.PART.FE.ZS",
@@ -4423,7 +4423,7 @@
     "#workforce"
    ],
    "source_url": "https://data.worldbank.org/indicator/SL.TLF.PART.FE.ZS",
-   "status": "open",
+   "status": "ready:atlas158",
    "added_by": "refill"
   },
   {
@@ -5860,7 +5860,7 @@
     "#education"
    ],
    "source_url": "https://data.worldbank.org/indicator/SE.ADT.1524.LT.FM.ZS",
-   "status": "ready:atlas154",
+   "status": "used:atlas154",
    "added_by": "refill"
   },
   {
@@ -6125,7 +6125,7 @@
     "#finance"
    ],
    "source_url": "https://data.worldbank.org/indicator/FR.INR.LNDP",
-   "status": "ready:atlas153",
+   "status": "used:atlas153",
    "added_by": "refill"
   },
   {
@@ -6240,7 +6240,7 @@
     "#economy"
    ],
    "source_url": "https://data.worldbank.org/indicator/NY.GDP.MINR.RT.ZS",
-   "status": "ready:atlas155",
+   "status": "used:atlas155",
    "added_by": "refill"
   },
   {
@@ -6355,7 +6355,7 @@
     "#education"
    ],
    "source_url": "https://data.worldbank.org/indicator/SE.SEC.DURS",
-   "status": "ready:atlas156",
+   "status": "used:atlas156",
    "added_by": "refill"
   }
  ],

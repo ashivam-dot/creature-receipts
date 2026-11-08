@@ -1,0 +1,139 @@
+{
+  "errors": [],
+  "claims": [
+    {
+      "surface": "title",
+      "text": "How Does the USA Compare on Female Part-Time Work?",
+      "isos": [],
+      "support": "Title frame matching indicators"
+    },
+    {
+      "surface": "hook",
+      "text": "FEMALE PART-TIME WORK",
+      "isos": [],
+      "support": "Indicator name"
+    },
+    {
+      "surface": "description",
+      "text": "Comparing the share of female employment that is part-time across countries and territories using World Bank data.",
+      "isos": [],
+      "support": "Indicator definition and universe"
+    },
+    {
+      "surface": "beat_0",
+      "text": "In the United States, 33.2% of working women are part-time. In the Netherlands, it's 77.3%.",
+      "isos": [
+        "USA",
+        "NLD"
+      ],
+      "support": "USA: 33.156% (2025), NLD: 77.301% (2024)"
+    },
+    {
+      "surface": "beat_1",
+      "text": "This counts anyone working less than 35 actual weekly hours.",
+      "isos": [],
+      "support": "Part time employment in this series is based on a common definition of less than 35 actual weekly hours worked."
+    },
+    {
+      "surface": "beat_2",
+      "text": "In the Netherlands, short workweeks define daily life for 77.3% of employed women.",
+      "isos": [
+        "NLD"
+      ],
+      "support": "NLD: 77.301% (2024)"
+    },
+    {
+      "surface": "beat_3",
+      "text": "Germany also stays high, where 60.6% of women work part-time.",
+      "isos": [
+        "DEU"
+      ],
+      "support": "DEU: 60.588% (2024)"
+    },
+    {
+      "surface": "beat_4",
+      "text": "At the other end, Mongolia has 6.2%, the UAE has 5.8%, and Poland is the world's lowest at 0.5%.",
+      "isos": [
+        "MNG",
+        "ARE",
+        "POL"
+      ],
+      "support": "MNG: 6.21% (rank 143), ARE: 5.838% (rank 145), POL: 0.452% (rank 146)"
+    },
+    {
+      "surface": "beat_5",
+      "text": "What percentage of women work part-time in your country?",
+      "isos": [],
+      "support": "Engagement question"
+    },
+    {
+      "surface": "card_5",
+      "text": "FEMALE PART-TIME WORK Share of female employment that is part-time (%)",
+      "isos": [],
+      "support": "Indicator label"
+    }
+  ],
+  "surface_checks": {
+    "title": {
+      "supported": true,
+      "reason": "Matches indicator and dataset.",
+      "isos": []
+    },
+    "hook": {
+      "supported": true,
+      "reason": "Matches indicator label.",
+      "isos": []
+    },
+    "description": {
+      "supported": true,
+      "reason": "Accurately describes World Bank data and coverage.",
+      "isos": []
+    },
+    "beat_0": {
+      "supported": true,
+      "reason": "USA value is 33.156% and Netherlands value is 77.301%.",
+      "isos": [
+        "USA",
+        "NLD"
+      ]
+    },
+    "beat_1": {
+      "supported": true,
+      "reason": "Matches definition of less than 35 actual weekly hours worked.",
+      "isos": []
+    },
+    "beat_2": {
+      "supported": true,
+      "reason": "Netherlands value is 77.301%.",
+      "isos": [
+        "NLD"
+      ]
+    },
+    "beat_3": {
+      "supported": true,
+      "reason": "Germany value is 60.588%.",
+      "isos": [
+        "DEU"
+      ]
+    },
+    "beat_4": {
+      "supported": true,
+      "reason": "Mongolia is 6.21%, UAE is 5.838%, and Poland is 0.452% (lowest).",
+      "isos": [
+        "MNG",
+        "ARE",
+        "POL"
+      ]
+    },
+    "beat_5": {
+      "supported": true,
+      "reason": "Valid stylistic call to action.",
+      "isos": []
+    },
+    "card_5": {
+      "supported": true,
+      "reason": "Matches indicator name and unit.",
+      "isos": []
+    }
+  }
+}

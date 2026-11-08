@@ -1,0 +1,77 @@
+id: atlas157
+title: Places Ranked by Fertilizer Used per Hectare
+format: rank_ladder
+hook_text: GLOBAL FERTILIZER RATES
+description: A global look at crop fertilizer consumption intensity per hectare of arable land, counting nitrogenous,
+  potash, and phosphate plant nutrients.
+hashtags:
+- '#data'
+- '#agriculture'
+- '#geography'
+tags:
+- fertilizer use per hectare
+- countries ranked by fertilizer use per hectare
+- Kuwait
+- Central African Republic
+- world map
+- geography
+- atlas in numbers
+sources:
+- https://data.worldbank.org/indicator/AG.CON.FERT.ZS
+dataset:
+  kind: worldbank
+  indicator: AG.CON.FERT.ZS
+  label: Fertilizer use per hectare
+  unit: kg per hectare
+  source: World Bank
+  min_year: 2019
+scale:
+  edges:
+  - 10.0
+  - 100.0
+  - 500.0
+  - 1000.0
+  labels:
+  - Negligible
+  - Low
+  - Moderate
+  - High
+  - Extreme
+value_format: '{v:,.2f} kg'
+beats:
+- text: Nigeria applies 13 kilograms of fertilizer per hectare of arable land.
+  shot:
+    callouts:
+    - NGA
+    - SOM
+- text: The USA applies 128 kilograms per hectare, while India uses 214.
+  shot:
+    kind: group
+    isos:
+    - USA
+    - IND
+- text: 'Climbing higher: Brazil uses 397 kilograms, Egypt has 598, Ireland 987, and Malaysia 1,869.'
+  shot:
+    kind: rank
+    isos:
+    - BRA
+    - EGY
+    - IRL
+    - MYS
+- text: At the top, Kuwait uses 2,488 kilograms per hectare, 19 times what the USA uses.
+  shot:
+    callouts:
+    - KWT
+    - USA
+- text: This counts nitrogenous, potash, and phosphate plant nutrients used per unit of arable land.
+  shot:
+    kind: country
+    iso: KWT
+  basis: Fertilizer consumption measures the quantity of plant nutrients used per unit of arable land. Fertilizer
+    products cover nitrogenous, potash, and phosphate fertilizers
+- text: How heavily fertilized is the cropland in your country?
+  shot:
+    kind: card
+    lines:
+    - HOW FERTILIZED IS YOUR CROPLAND?
+    - Fertilizer use per hectare (World Bank)
