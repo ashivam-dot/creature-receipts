@@ -105,21 +105,22 @@ Refreshed by every producer run (`atlas.stats`) from the channel's public feed o
 | atlas123 Places Ranked by Access to Basic Sanitation | rank_ladder | 2026-11-02 21:00 UTC | 585 | 6 | 4.0 |
 | atlas124 Which Major Country Has the Highest Savings Rate? | odd_one_out | 2026-11-03 21:00 UTC | 1099 | 4 | 8.9 |
 | atlas125 Places Ranked by Adult Literacy | map_reveal | 2026-11-03 17:00 UTC | 1366 | 21 | 10.7 |
-| atlas126 Iraq vs USA: Natural Resource Wealth | versus | 2026-11-04 17:00 UTC | 186 | 5 | 1.8 |
+| atlas126 Iraq vs USA: Natural Resource Wealth | versus | 2026-11-04 17:00 UTC | 187 | – | 1.7 |
 | atlas127 How Does the USA Compare on High School Completion? | spotlight | 2026-11-04 00:00 UTC | 1060 | 15 | 8.8 |
-| atlas128 Places Ranked by Income Share of the Poorest | rank_ladder | 2026-11-05 00:00 UTC | 1012 | 6 | 10.5 |
-| atlas131 Which Country Has the MOST Renewable Electricity? | odd_one_out | 2026-11-05 21:00 UTC | 189 | 2 | 2.5 |
-| atlas133 Senior Women Share Around the World | map_reveal | 2026-11-04 21:00 UTC | 245 | 2 | 2.5 |
-| atlas134 East Timor vs Nigeria: Male Tobacco Use | versus | 2026-11-05 17:00 UTC | 125 | 2 | 1.6 |
-| atlas135 Is YOUR Country Spending More Than It Produces? | spotlight | 2026-11-06 00:00 UTC | 69 | 1 | 0.9 |
-| atlas136 Places Ranked by Open Defecation Rates | rank_ladder | 2026-11-07 00:00 UTC | 261 | 6 | 5.4 |
-| atlas137 The Places With the Highest Adolescent Birth Rates | map_reveal | 2026-11-06 17:00 UTC | 1124 | 13 | 20.2 |
-| atlas138 Which Country Has the MOST Rural Handwashing Access? | odd_one_out | 2026-11-06 21:00 UTC | 1047 | 8 | 20.3 |
-| atlas144 Is EAST Timor Near the Top for Energy Depletion? | spotlight | 2026-11-07 17:00 UTC | 66 | 0 | 2.1 |
-| atlas145 Is YOUR Country Powered by Oil? | map_reveal | 2026-11-07 21:00 UTC | 430 | 9 | 15.5 |
-| atlas149 Romania vs India: Female Alcohol Consumption | versus | 2026-11-08 00:00 UTC | 469 | 6 | 19.0 |
-| atlas151 Places Ranked by Male Internet Use | rank_ladder | 2026-11-08 17:00 UTC | 443 | 8 | 57.5 |
-| atlas153 Is Madagascar the Highest for Bank Loan Spreads? | spotlight | 2026-11-08 21:00 UTC | 3 | 0 | 0.8 |
+| atlas128 Places Ranked by Income Share of the Poorest | rank_ladder | 2026-11-05 00:00 UTC | 1011 | – | 9.6 |
+| atlas131 Which Country Has the MOST Renewable Electricity? | odd_one_out | 2026-11-05 21:00 UTC | 190 | – | 2.3 |
+| atlas133 Senior Women Share Around the World | map_reveal | 2026-11-04 21:00 UTC | 245 | – | 2.3 |
+| atlas134 East Timor vs Nigeria: Male Tobacco Use | versus | 2026-11-05 17:00 UTC | 125 | – | 1.4 |
+| atlas135 Is YOUR Country Spending More Than It Produces? | spotlight | 2026-11-06 00:00 UTC | 69 | – | 0.9 |
+| atlas136 Places Ranked by Open Defecation Rates | rank_ladder | 2026-11-07 00:00 UTC | 273 | – | 4.8 |
+| atlas137 The Places With the Highest Adolescent Birth Rates | map_reveal | 2026-11-06 17:00 UTC | 1126 | – | 17.5 |
+| atlas138 Which Country Has the MOST Rural Handwashing Access? | odd_one_out | 2026-11-06 21:00 UTC | 1049 | – | 17.4 |
+| atlas144 Is EAST Timor Near the Top for Energy Depletion? | spotlight | 2026-11-07 17:00 UTC | 108 | – | 2.7 |
+| atlas145 Is YOUR Country Powered by Oil? | map_reveal | 2026-11-07 21:00 UTC | 975 | – | 27.0 |
+| atlas149 Romania vs India: Female Alcohol Consumption | versus | 2026-11-08 00:00 UTC | 936 | – | 28.2 |
+| atlas151 Places Ranked by Male Internet Use | rank_ladder | 2026-11-08 17:00 UTC | 762 | – | 47.1 |
+| atlas153 Is Madagascar the Highest for Bank Loan Spreads? | spotlight | 2026-11-08 21:00 UTC | 68 | – | 5.6 |
+| atlas156 Germany vs USA: The Years Spent in School | versus | 2026-11-09 00:00 UTC | 81 | – | 8.8 |
 
 ## Log
 

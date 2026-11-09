@@ -6465,7 +6465,7 @@
    "id": "t178",
    "topic": "Global Bank Capital to Assets Ratio",
    "angle": "Bank capital adequacy ratios range widely across the world, from below zero in Equatorial Guinea to over 20% in Tajikistan.",
-   "format": "map_reveal",
+   "format": "spotlight",
    "dataset": {
     "kind": "worldbank",
     "indicator": "FB.BNK.CAPA.ZS",
@@ -6495,7 +6495,7 @@
     "#finance"
    ],
    "source_url": "https://data.worldbank.org/indicator/FB.BNK.CAPA.ZS",
-   "status": "open",
+   "status": "ready:atlas164",
    "added_by": "refill"
   },
   {
@@ -6531,7 +6531,7 @@
    "id": "t180",
    "topic": "Income Share of Upper Middle Class",
    "angle": "Across most nations, the fourth income quintile holds a remarkably stable 21% to 23% share of total national income.",
-   "format": "rank_ladder",
+   "format": "versus",
    "dataset": {
     "kind": "worldbank",
     "indicator": "SI.DST.04TH.20",
@@ -6555,7 +6555,7 @@
     "#economy"
    ],
    "source_url": "https://data.worldbank.org/indicator/SI.DST.04TH.20",
-   "status": "open",
+   "status": "ready:atlas166",
    "added_by": "refill"
   },
   {
@@ -6628,7 +6628,7 @@
    "id": "t183",
    "topic": "Changes in Global Food Output",
    "angle": "Food production in Senegal has surged by 87% since the 2014-2016 baseline, whereas Cuba's output dropped by over 50%.",
-   "format": "rank_ladder",
+   "format": "map_reveal",
    "dataset": {
     "kind": "worldbank",
     "indicator": "AG.PRD.FOOD.XD",
@@ -6652,7 +6652,7 @@
     "#agriculture"
    ],
    "source_url": "https://data.worldbank.org/indicator/AG.PRD.FOOD.XD",
-   "status": "open",
+   "status": "ready:atlas165",
    "added_by": "refill"
   }
  ],

@@ -1,0 +1,1648 @@
+{
+  "version": 1,
+  "evidence": {
+    "version": 1,
+    "indicator": "FB.BNK.CAPA.ZS",
+    "definition": "The indicator is a measure of capital adequacy that evaluates the financial strength of deposit takers by comparing Tier 1 capital to total assets. Tier 1 capital, often referred to as core capital, includes the most stable and readily available forms of capital, such as common equity, disclosed reserves, retained earnings, and certain other instruments that meet regulatory requirements under the Basel framework. This capital is considered the highest quality because it is fully available to cover losses and does not need to be repaid.",
+    "source": "https://data.worldbank.org/indicator/FB.BNK.CAPA.ZS",
+    "source_response_sha256": "42e4976b6557504c4b911e43beea44bcb3d4c581f046e15b37cfc379c9f05881",
+    "source_organization": "Financial Soundness Indicators, International Monetary Fund (IMF), uri: https://data.imf.org/en/datasets/IMF:EXTERNAL_DATASET_CARDS/IMF.STA:LFSI",
+    "year_label": "latest available 2019–2025",
+    "universe": "mapped countries and territories with data",
+    "count": 147,
+    "threshold": null,
+    "at_or_above": null,
+    "entities": {
+      "ALB": {
+        "name": "Albania",
+        "value": 9.19407652195526,
+        "display": "9.2%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 68
+      },
+      "DZA": {
+        "name": "Algeria",
+        "value": 9.10587939405734,
+        "display": "9.1%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 71
+      },
+      "AGO": {
+        "name": "Angola",
+        "value": 11.9500523511903,
+        "display": "12%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 28
+      },
+      "ATG": {
+        "name": "Antigua and Barbuda",
+        "value": 12.776453,
+        "display": "12.8%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 20
+      },
+      "ARG": {
+        "name": "Argentina",
+        "value": 19.7111557567288,
+        "display": "19.7%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 2
+      },
+      "ARM": {
+        "name": "Armenia",
+        "value": 14.0898349963827,
+        "display": "14.1%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 11
+      },
+      "AUS": {
+        "name": "Australia",
+        "value": 5.5709088681729,
+        "display": "5.6%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 138
+      },
+      "AUT": {
+        "name": "Austria",
+        "value": 8.53540044679741,
+        "display": "8.5%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 86
+      },
+      "AZE": {
+        "name": "Azerbaijan",
+        "value": 8.65564600004157,
+        "display": "8.7%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 80
+      },
+      "BGD": {
+        "name": "Bangladesh",
+        "value": 2.29413315478589,
+        "display": "2.3%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 145
+      },
+      "BRB": {
+        "name": "Barbados",
+        "value": 11.2318558867574,
+        "display": "11.2%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 41
+      },
+      "BLR": {
+        "name": "Belarus",
+        "value": 12.7392328292616,
+        "display": "12.7%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 21
+      },
+      "BEL": {
+        "name": "Belgium",
+        "value": 5.9211545290661,
+        "display": "5.9%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 132
+      },
+      "BLZ": {
+        "name": "Belize",
+        "value": 9.61941289736902,
+        "display": "9.6%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 61
+      },
+      "BTN": {
+        "name": "Bhutan",
+        "value": 7.89731959636914,
+        "display": "7.9%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 100
+      },
+      "BOL": {
+        "name": "Bolivia",
+        "value": 7.04239653639851,
+        "display": "7%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 116
+      },
+      "BIH": {
+        "name": "Bosnia and Herzegovina",
+        "value": 10.6451086481249,
+        "display": "10.6%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 49
+      },
+      "BWA": {
+        "name": "Botswana",
+        "value": 9.47724860394496,
+        "display": "9.5%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 65
+      },
+      "BRA": {
+        "name": "Brazil",
+        "value": 8.34632699705756,
+        "display": "8.3%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 92
+      },
+      "BRN": {
+        "name": "Brunei Darussalam",
+        "value": 9.73541207560586,
+        "display": "9.7%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 60
+      },
+      "BGR": {
+        "name": "Bulgaria",
+        "value": 11.4218680217742,
+        "display": "11.4%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 34
+      },
+      "BDI": {
+        "name": "Burundi",
+        "value": 10.0337625878036,
+        "display": "10%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 56
+      },
+      "KHM": {
+        "name": "Cambodia",
+        "value": 14.3603842208196,
+        "display": "14.4%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 9
+      },
+      "CMR": {
+        "name": "Cameroon",
+        "value": 6.6466485170834,
+        "display": "6.6%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 121
+      },
+      "CAN": {
+        "name": "Canada",
+        "value": 4.85847750201986,
+        "display": "4.9%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 142
+      },
+      "CAF": {
+        "name": "Central African Republic",
+        "value": 11.1229153798641,
+        "display": "11.1%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 44
+      },
+      "TCD": {
+        "name": "Chad",
+        "value": -1.04362734862471,
+        "display": "-1%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 146
+      },
+      "CHL": {
+        "name": "Chile",
+        "value": 9.05727885615525,
+        "display": "9.1%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 76
+      },
+      "CHN": {
+        "name": "China",
+        "value": 7.75345301609578,
+        "display": "7.8%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 103
+      },
+      "COL": {
+        "name": "Colombia",
+        "value": 10.1429784973284,
+        "display": "10.1%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 55
+      },
+      "COM": {
+        "name": "Comoros",
+        "value": 8.85294383335538,
+        "display": "8.9%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 79
+      },
+      "COD": {
+        "name": "Congo, Dem. Rep.",
+        "value": 8.19407026913911,
+        "display": "8.2%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 95
+      },
+      "COG": {
+        "name": "Congo, Rep.",
+        "value": 8.86472326776593,
+        "display": "8.9%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 78
+      },
+      "CRI": {
+        "name": "Costa Rica",
+        "value": 10.7671807391626,
+        "display": "10.8%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 48
+      },
+      "HRV": {
+        "name": "Croatia",
+        "value": 8.6372038298524,
+        "display": "8.6%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 81
+      },
+      "CUW": {
+        "name": "Curacao",
+        "value": 11.267248645331,
+        "display": "11.3%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 39
+      },
+      "CYP": {
+        "name": "Cyprus",
+        "value": 9.54154137760599,
+        "display": "9.5%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 63
+      },
+      "CZE": {
+        "name": "Czechia",
+        "value": 5.89304494346746,
+        "display": "5.9%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 133
+      },
+      "DNK": {
+        "name": "Denmark",
+        "value": 5.31620625665904,
+        "display": "5.3%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 140
+      },
+      "DJI": {
+        "name": "Djibouti",
+        "value": 7.92160358199741,
+        "display": "7.9%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 99
+      },
+      "DMA": {
+        "name": "Dominica",
+        "value": 10.543417,
+        "display": "10.5%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 50
+      },
+      "DOM": {
+        "name": "Dominican Republic",
+        "value": 9.78190275658669,
+        "display": "9.8%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 59
+      },
+      "ECU": {
+        "name": "Ecuador",
+        "value": 10.8504159917523,
+        "display": "10.9%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 46
+      },
+      "SLV": {
+        "name": "El Salvador",
+        "value": 8.38108058498597,
+        "display": "8.4%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 91
+      },
+      "GNQ": {
+        "name": "Equatorial Guinea",
+        "value": -6.40252879823414,
+        "display": "-6.4%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 147
+      },
+      "EST": {
+        "name": "Estonia",
+        "value": 8.51742118758183,
+        "display": "8.5%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 88
+      },
+      "SWZ": {
+        "name": "Eswatini",
+        "value": 11.4036566673709,
+        "display": "11.4%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 36
+      },
+      "ETH": {
+        "name": "Ethiopia",
+        "value": 7.05751396667351,
+        "display": "7.1%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 115
+      },
+      "FJI": {
+        "name": "Fiji",
+        "value": 10.7835447006076,
+        "display": "10.8%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 47
+      },
+      "FIN": {
+        "name": "Finland",
+        "value": 6.34138513188216,
+        "display": "6.3%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 124
+      },
+      "FRA": {
+        "name": "France",
+        "value": 5.55510796222175,
+        "display": "5.6%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 139
+      },
+      "GAB": {
+        "name": "Gabon",
+        "value": 8.5860735562067,
+        "display": "8.6%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 82
+      },
+      "GMB": {
+        "name": "Gambia, The",
+        "value": 12.1461423511356,
+        "display": "12.1%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 27
+      },
+      "GEO": {
+        "name": "Georgia",
+        "value": 15.1933970183347,
+        "display": "15.2%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 5
+      },
+      "DEU": {
+        "name": "Germany",
+        "value": 7.48886682479448,
+        "display": "7.5%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 107
+      },
+      "GHA": {
+        "name": "Ghana",
+        "value": 6.6024440112726,
+        "display": "6.6%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 122
+      },
+      "GRC": {
+        "name": "Greece",
+        "value": 7.60733180460098,
+        "display": "7.6%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 104
+      },
+      "GRD": {
+        "name": "Grenada",
+        "value": 11.237035,
+        "display": "11.2%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 40
+      },
+      "GTM": {
+        "name": "Guatemala",
+        "value": 6.99289998838997,
+        "display": "7%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 117
+      },
+      "GIN": {
+        "name": "Guinea",
+        "value": 11.3530933851907,
+        "display": "11.4%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 37
+      },
+      "HND": {
+        "name": "Honduras",
+        "value": 6.02509453840585,
+        "display": "6%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 130
+      },
+      "HKG": {
+        "name": "Hong Kong SAR, China",
+        "value": 7.93221748379387,
+        "display": "7.9%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 98
+      },
+      "HUN": {
+        "name": "Hungary",
+        "value": 9.09051603572696,
+        "display": "9.1%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 73
+      },
+      "ISL": {
+        "name": "Iceland",
+        "value": 12.9833091457012,
+        "display": "13%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 17
+      },
+      "IND": {
+        "name": "India",
+        "value": 8.51794922790103,
+        "display": "8.5%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 87
+      },
+      "IDN": {
+        "name": "Indonesia",
+        "value": 13.0097568990606,
+        "display": "13%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 16
+      },
+      "IRQ": {
+        "name": "Iraq",
+        "value": 13.8615112768946,
+        "display": "13.9%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 12
+      },
+      "IRL": {
+        "name": "Ireland",
+        "value": 9.5119189688455,
+        "display": "9.5%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 64
+      },
+      "ISR": {
+        "name": "Israel",
+        "value": 7.30932068090567,
+        "display": "7.3%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 113
+      },
+      "ITA": {
+        "name": "Italy",
+        "value": 6.25476502974826,
+        "display": "6.3%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 126
+      },
+      "JPN": {
+        "name": "Japan",
+        "value": 4.067677427737,
+        "display": "4.1%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 144
+      },
+      "JOR": {
+        "name": "Jordan",
+        "value": 10.49401839923,
+        "display": "10.5%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 52
+      },
+      "KAZ": {
+        "name": "Kazakhstan",
+        "value": 14.4696522424615,
+        "display": "14.5%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 7
+      },
+      "KEN": {
+        "name": "Kenya",
+        "value": 11.6896167282259,
+        "display": "11.7%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 31
+      },
+      "KOR": {
+        "name": "Korea, Rep.",
+        "value": 6.2899613496518,
+        "display": "6.3%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 125
+      },
+      "KWT": {
+        "name": "Kuwait",
+        "value": 11.4074487989589,
+        "display": "11.4%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 35
+      },
+      "KGZ": {
+        "name": "Kyrgyz Republic",
+        "value": 14.3586472566685,
+        "display": "14.4%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 10
+      },
+      "LVA": {
+        "name": "Latvia",
+        "value": 8.89048664958248,
+        "display": "8.9%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 77
+      },
+      "LBN": {
+        "name": "Lebanon",
+        "value": 8.56312376259306,
+        "display": "8.6%",
+        "year": 2019,
+        "unit": "%",
+        "rank": 84
+      },
+      "LSO": {
+        "name": "Lesotho",
+        "value": 11.1573393670899,
+        "display": "11.2%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 42
+      },
+      "LIE": {
+        "name": "Liechtenstein",
+        "value": 7.32845236511595,
+        "display": "7.3%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 112
+      },
+      "LTU": {
+        "name": "Lithuania",
+        "value": 6.03173048101243,
+        "display": "6%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 128
+      },
+      "LUX": {
+        "name": "Luxembourg",
+        "value": 9.25248704084792,
+        "display": "9.3%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 66
+      },
+      "MDG": {
+        "name": "Madagascar",
+        "value": 7.46420560770474,
+        "display": "7.5%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 109
+      },
+      "MWI": {
+        "name": "Malawi",
+        "value": 8.23216208972469,
+        "display": "8.2%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 94
+      },
+      "MYS": {
+        "name": "Malaysia",
+        "value": 7.30726884155786,
+        "display": "7.3%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 114
+      },
+      "MLT": {
+        "name": "Malta",
+        "value": 8.02409163757967,
+        "display": "8%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 97
+      },
+      "MUS": {
+        "name": "Mauritius",
+        "value": 9.05830164121584,
+        "display": "9.1%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 74
+      },
+      "MEX": {
+        "name": "Mexico",
+        "value": 10.4993290331307,
+        "display": "10.5%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 51
+      },
+      "FSM": {
+        "name": "Micronesia, Fed. Sts.",
+        "value": 5.85244665312143,
+        "display": "5.9%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 134
+      },
+      "MDA": {
+        "name": "Moldova",
+        "value": 11.6405466410203,
+        "display": "11.6%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 33
+      },
+      "MNG": {
+        "name": "Mongolia",
+        "value": 9.09092680776759,
+        "display": "9.1%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 72
+      },
+      "MNE": {
+        "name": "Montenegro",
+        "value": 9.8984725933545,
+        "display": "9.9%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 57
+      },
+      "MAR": {
+        "name": "Morocco",
+        "value": 8.43299041353463,
+        "display": "8.4%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 90
+      },
+      "MOZ": {
+        "name": "Mozambique",
+        "value": 12.8836148775279,
+        "display": "12.9%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 19
+      },
+      "NAM": {
+        "name": "Namibia",
+        "value": 11.0554492629511,
+        "display": "11.1%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 45
+      },
+      "NPL": {
+        "name": "Nepal",
+        "value": 6.01454937093967,
+        "display": "6%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 131
+      },
+      "NLD": {
+        "name": "Netherlands",
+        "value": 6.0262473950167,
+        "display": "6%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 129
+      },
+      "NIC": {
+        "name": "Nicaragua",
+        "value": 9.1631826944434,
+        "display": "9.2%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 70
+      },
+      "NGA": {
+        "name": "Nigeria",
+        "value": 4.54876583425726,
+        "display": "4.5%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 143
+      },
+      "MKD": {
+        "name": "North Macedonia",
+        "value": 12.3054800538113,
+        "display": "12.3%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 26
+      },
+      "NOR": {
+        "name": "Norway",
+        "value": 7.76785722961162,
+        "display": "7.8%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 102
+      },
+      "PAK": {
+        "name": "Pakistan",
+        "value": 5.20778535671514,
+        "display": "5.2%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 141
+      },
+      "PAN": {
+        "name": "Panama",
+        "value": 12.9230377613039,
+        "display": "12.9%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 18
+      },
+      "PNG": {
+        "name": "Papua New Guinea",
+        "value": 12.341195085906,
+        "display": "12.3%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 25
+      },
+      "PRY": {
+        "name": "Paraguay",
+        "value": 9.05769011633023,
+        "display": "9.1%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 75
+      },
+      "PER": {
+        "name": "Peru",
+        "value": 11.686881842464,
+        "display": "11.7%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 32
+      },
+      "PHL": {
+        "name": "Philippines",
+        "value": 9.2220093869479,
+        "display": "9.2%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 67
+      },
+      "POL": {
+        "name": "Poland",
+        "value": 6.12415416292432,
+        "display": "6.1%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 127
+      },
+      "PRT": {
+        "name": "Portugal",
+        "value": 7.53056614995063,
+        "display": "7.5%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 106
+      },
+      "ROU": {
+        "name": "Romania",
+        "value": 8.56697770310014,
+        "display": "8.6%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 83
+      },
+      "RUS": {
+        "name": "Russian Federation",
+        "value": 8.08279468348291,
+        "display": "8.1%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 96
+      },
+      "RWA": {
+        "name": "Rwanda",
+        "value": 12.3846237963325,
+        "display": "12.4%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 24
+      },
+      "WSM": {
+        "name": "Samoa",
+        "value": 9.8074595592965,
+        "display": "9.8%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 58
+      },
+      "SMR": {
+        "name": "San Marino",
+        "value": 6.5136840216726,
+        "display": "6.5%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 123
+      },
+      "STP": {
+        "name": "Sao Tome and Principe",
+        "value": 16.681327548091,
+        "display": "16.7%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 3
+      },
+      "SAU": {
+        "name": "Saudi Arabia",
+        "value": 13.8606363304895,
+        "display": "13.9%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 13
+      },
+      "SYC": {
+        "name": "Seychelles",
+        "value": 7.33471773727753,
+        "display": "7.3%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 111
+      },
+      "SGP": {
+        "name": "Singapore",
+        "value": 8.23996458301581,
+        "display": "8.2%",
+        "year": 2019,
+        "unit": "%",
+        "rank": 93
+      },
+      "SVK": {
+        "name": "Slovak Republic",
+        "value": 7.45942374543731,
+        "display": "7.5%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 110
+      },
+      "SVN": {
+        "name": "Slovenia",
+        "value": 10.3203712655124,
+        "display": "10.3%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 54
+      },
+      "SLB": {
+        "name": "Solomon Islands",
+        "value": 14.4557361760496,
+        "display": "14.5%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 8
+      },
+      "SOM": {
+        "name": "Somalia, Fed. Rep.",
+        "value": 11.7591888832857,
+        "display": "11.8%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 30
+      },
+      "ZAF": {
+        "name": "South Africa",
+        "value": 7.81376716672933,
+        "display": "7.8%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 101
+      },
+      "ESP": {
+        "name": "Spain",
+        "value": 5.74175050834882,
+        "display": "5.7%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 136
+      },
+      "LKA": {
+        "name": "Sri Lanka",
+        "value": 6.91973940003828,
+        "display": "6.9%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 118
+      },
+      "KNA": {
+        "name": "St. Kitts and Nevis",
+        "value": 13.07084,
+        "display": "13.1%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 15
+      },
+      "LCA": {
+        "name": "St. Lucia",
+        "value": 9.584688,
+        "display": "9.6%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 62
+      },
+      "VCT": {
+        "name": "St. Vincent and the Grenadines",
+        "value": 7.467105,
+        "display": "7.5%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 108
+      },
+      "SWE": {
+        "name": "Sweden",
+        "value": 5.82829459723212,
+        "display": "5.8%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 135
+      },
+      "CHE": {
+        "name": "Switzerland",
+        "value": 7.55866565327746,
+        "display": "7.6%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 105
+      },
+      "TJK": {
+        "name": "Tajikistan",
+        "value": 20.9222699816233,
+        "display": "20.9%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 1
+      },
+      "TZA": {
+        "name": "Tanzania",
+        "value": 12.4505223875823,
+        "display": "12.5%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 23
+      },
+      "THA": {
+        "name": "Thailand",
+        "value": 11.125634912273,
+        "display": "11.1%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 43
+      },
+      "TON": {
+        "name": "Tonga",
+        "value": 15.0845727400077,
+        "display": "15.1%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 6
+      },
+      "TTO": {
+        "name": "Trinidad and Tobago",
+        "value": 11.9168829755513,
+        "display": "11.9%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 29
+      },
+      "TUR": {
+        "name": "Turkiye",
+        "value": 6.67005773491148,
+        "display": "6.7%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 120
+      },
+      "UGA": {
+        "name": "Uganda",
+        "value": 15.4853553307953,
+        "display": "15.5%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 4
+      },
+      "UKR": {
+        "name": "Ukraine",
+        "value": 6.89533453572279,
+        "display": "6.9%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 119
+      },
+      "ARE": {
+        "name": "United Arab Emirates",
+        "value": 11.2780232919953,
+        "display": "11.3%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 38
+      },
+      "GBR": {
+        "name": "United Kingdom",
+        "value": 5.62023432006482,
+        "display": "5.6%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 137
+      },
+      "USA": {
+        "name": "United States",
+        "value": 9.17401570770544,
+        "display": "9.2%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 69
+      },
+      "URY": {
+        "name": "Uruguay",
+        "value": 10.460301084212,
+        "display": "10.5%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 53
+      },
+      "UZB": {
+        "name": "Uzbekistan",
+        "value": 13.3385802562713,
+        "display": "13.3%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 14
+      },
+      "VNM": {
+        "name": "Viet Nam",
+        "value": 8.55370173162123,
+        "display": "8.6%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 85
+      },
+      "PSE": {
+        "name": "West Bank and Gaza",
+        "value": 8.50632541476352,
+        "display": "8.5%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 89
+      },
+      "ZMB": {
+        "name": "Zambia",
+        "value": 12.6013101326149,
+        "display": "12.6%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 22
+      }
+    }
+  },
+  "review": {
+    "errors": [],
+    "claims": [
+      {
+        "surface": "title",
+        "text": "How Does the USA Compare on Bank Capital?",
+        "isos": [
+          "USA"
+        ],
+        "support": "United States value is 9.174% (9.2%), ranked 69 out of 147.",
+        "evidence": {
+          "USA": {
+            "name": "United States",
+            "value": 9.17401570770544,
+            "display": "9.2%",
+            "year": 2025,
+            "unit": "%",
+            "rank": 69
+          }
+        }
+      },
+      {
+        "surface": "hook",
+        "text": "BANK CAPITAL RATIOS",
+        "isos": [],
+        "support": "Indicator: Bank capital to assets ratio (%)",
+        "evidence": {}
+      },
+      {
+        "surface": "description",
+        "text": "Comparing bank capital to assets ratios across major economies using World Bank data.",
+        "isos": [],
+        "support": "Source: World Bank (IMF Financial Soundness Indicators), 147 entities.",
+        "evidence": {}
+      },
+      {
+        "surface": "beat_0",
+        "text": "The USA has a 9.2% bank capital ratio, while Tajikistan has 20.9%.",
+        "isos": [
+          "USA",
+          "TJK"
+        ],
+        "support": "USA: 9.174% (display 9.2%), TJK: 20.922% (display 20.9%).",
+        "evidence": {
+          "USA": {
+            "name": "United States",
+            "value": 9.17401570770544,
+            "display": "9.2%",
+            "year": 2025,
+            "unit": "%",
+            "rank": 69
+          },
+          "TJK": {
+            "name": "Tajikistan",
+            "value": 20.9222699816233,
+            "display": "20.9%",
+            "year": 2021,
+            "unit": "%",
+            "rank": 1
+          }
+        }
+      },
+      {
+        "surface": "beat_1",
+        "text": "That puts America right next to the global median of 9.1%.",
+        "isos": [
+          "USA"
+        ],
+        "support": "USA value is 9.174%, close to 9.1%.",
+        "evidence": {
+          "USA": {
+            "name": "United States",
+            "value": 9.17401570770544,
+            "display": "9.2%",
+            "year": 2025,
+            "unit": "%",
+            "rank": 69
+          }
+        }
+      },
+      {
+        "surface": "beat_2",
+        "text": "This evaluates financial strength by comparing core capital to total assets.",
+        "isos": [],
+        "support": "Definition: compares Tier 1 capital (core capital) to total assets.",
+        "evidence": {}
+      },
+      {
+        "surface": "beat_3",
+        "text": "In Asia, India has 8.5%, while China has 7.8%.",
+        "isos": [
+          "IND",
+          "CHN"
+        ],
+        "support": "IND: 8.518% (display 8.5%), CHN: 7.753% (display 7.8%).",
+        "evidence": {
+          "IND": {
+            "name": "India",
+            "value": 8.51794922790103,
+            "display": "8.5%",
+            "year": 2025,
+            "unit": "%",
+            "rank": 87
+          },
+          "CHN": {
+            "name": "China",
+            "value": 7.75345301609578,
+            "display": "7.8%",
+            "year": 2021,
+            "unit": "%",
+            "rank": 103
+          }
+        }
+      },
+      {
+        "surface": "beat_4",
+        "text": "Further down, Canada has 4.9%, Nigeria 4.5%, and Japan 4.1%.",
+        "isos": [
+          "CAN",
+          "NGA",
+          "JPN"
+        ],
+        "support": "CAN: 4.858% (display 4.9%), NGA: 4.549% (display 4.5%), JPN: 4.068% (display 4.1%).",
+        "evidence": {
+          "CAN": {
+            "name": "Canada",
+            "value": 4.85847750201986,
+            "display": "4.9%",
+            "year": 2025,
+            "unit": "%",
+            "rank": 142
+          },
+          "NGA": {
+            "name": "Nigeria",
+            "value": 4.54876583425726,
+            "display": "4.5%",
+            "year": 2025,
+            "unit": "%",
+            "rank": 143
+          },
+          "JPN": {
+            "name": "Japan",
+            "value": 4.067677427737,
+            "display": "4.1%",
+            "year": 2022,
+            "unit": "%",
+            "rank": 144
+          }
+        }
+      },
+      {
+        "surface": "beat_5",
+        "text": "At the world's bottom, Equatorial Guinea drops below zero, down 6.4%.",
+        "isos": [
+          "GNQ"
+        ],
+        "support": "GNQ: -6.403% (display -6.4%), rank 147 (last).",
+        "evidence": {
+          "GNQ": {
+            "name": "Equatorial Guinea",
+            "value": -6.40252879823414,
+            "display": "-6.4%",
+            "year": 2023,
+            "unit": "%",
+            "rank": 147
+          }
+        }
+      },
+      {
+        "surface": "beat_6",
+        "text": "How strong are bank capital buffers in your country?",
+        "isos": [],
+        "support": "Closing question about bank capital buffers.",
+        "evidence": {}
+      },
+      {
+        "surface": "card_6",
+        "text": "Bank Capital Ratios Bank capital to assets ratio (%)",
+        "isos": [],
+        "support": "Matches indicator definition and title.",
+        "evidence": {}
+      },
+      {
+        "surface": "title",
+        "text": "How Does the USA Compare on Bank Capital?",
+        "isos": [
+          "USA"
+        ],
+        "support": "The USA is present in the dataset with a defined bank capital ratio.",
+        "method": "complete-surface-check",
+        "evidence": {
+          "USA": {
+            "name": "United States",
+            "value": 9.17401570770544,
+            "display": "9.2%",
+            "year": 2025,
+            "unit": "%",
+            "rank": 69
+          }
+        }
+      },
+      {
+        "surface": "hook",
+        "text": "BANK CAPITAL RATIOS",
+        "isos": [],
+        "support": "Accurately reflects the dataset indicator.",
+        "method": "complete-surface-check",
+        "evidence": {}
+      },
+      {
+        "surface": "description",
+        "text": "Comparing bank capital to assets ratios across major economies using World Bank data.",
+        "isos": [],
+        "support": "Accurately describes the indicator and data source.",
+        "method": "complete-surface-check",
+        "evidence": {}
+      },
+      {
+        "surface": "beat_0",
+        "text": "The USA has a 9.2% bank capital ratio, while Tajikistan has 20.9%.",
+        "isos": [
+          "USA",
+          "TJK"
+        ],
+        "support": "USA value is 9.2% and Tajikistan is 20.9% in the dataset.",
+        "method": "complete-surface-check",
+        "evidence": {
+          "USA": {
+            "name": "United States",
+            "value": 9.17401570770544,
+            "display": "9.2%",
+            "year": 2025,
+            "unit": "%",
+            "rank": 69
+          },
+          "TJK": {
+            "name": "Tajikistan",
+            "value": 20.9222699816233,
+            "display": "20.9%",
+            "year": 2021,
+            "unit": "%",
+            "rank": 1
+          }
+        }
+      },
+      {
+        "surface": "beat_1",
+        "text": "That puts America right next to the global median of 9.1%.",
+        "isos": [
+          "USA"
+        ],
+        "support": "USA value of 9.2% is near the 9.1% level.",
+        "method": "complete-surface-check",
+        "evidence": {
+          "USA": {
+            "name": "United States",
+            "value": 9.17401570770544,
+            "display": "9.2%",
+            "year": 2025,
+            "unit": "%",
+            "rank": 69
+          }
+        }
+      },
+      {
+        "surface": "beat_2",
+        "text": "This evaluates financial strength by comparing core capital to total assets.",
+        "isos": [],
+        "support": "Matches the official definition of Tier 1 capital compared to total assets.",
+        "method": "complete-surface-check",
+        "evidence": {}
+      },
+      {
+        "surface": "beat_3",
+        "text": "In Asia, India has 8.5%, while China has 7.8%.",
+        "isos": [
+          "IND",
+          "CHN"
+        ],
+        "support": "India is 8.5% and China is 7.8% in the dataset.",
+        "method": "complete-surface-check",
+        "evidence": {
+          "IND": {
+            "name": "India",
+            "value": 8.51794922790103,
+            "display": "8.5%",
+            "year": 2025,
+            "unit": "%",
+            "rank": 87
+          },
+          "CHN": {
+            "name": "China",
+            "value": 7.75345301609578,
+            "display": "7.8%",
+            "year": 2021,
+            "unit": "%",
+            "rank": 103
+          }
+        }
+      },
+      {
+        "surface": "beat_4",
+        "text": "Further down, Canada has 4.9%, Nigeria 4.5%, and Japan 4.1%.",
+        "isos": [
+          "CAN",
+          "NGA",
+          "JPN"
+        ],
+        "support": "Canada (4.9%), Nigeria (4.5%), and Japan (4.1%) match the dataset.",
+        "method": "complete-surface-check",
+        "evidence": {
+          "CAN": {
+            "name": "Canada",
+            "value": 4.85847750201986,
+            "display": "4.9%",
+            "year": 2025,
+            "unit": "%",
+            "rank": 142
+          },
+          "NGA": {
+            "name": "Nigeria",
+            "value": 4.54876583425726,
+            "display": "4.5%",
+            "year": 2025,
+            "unit": "%",
+            "rank": 143
+          },
+          "JPN": {
+            "name": "Japan",
+            "value": 4.067677427737,
+            "display": "4.1%",
+            "year": 2022,
+            "unit": "%",
+            "rank": 144
+          }
+        }
+      },
+      {
+        "surface": "beat_5",
+        "text": "At the world's bottom, Equatorial Guinea drops below zero, down 6.4%.",
+        "isos": [
+          "GNQ"
+        ],
+        "support": "Equatorial Guinea is ranked 147 with -6.4%.",
+        "method": "complete-surface-check",
+        "evidence": {
+          "GNQ": {
+            "name": "Equatorial Guinea",
+            "value": -6.40252879823414,
+            "display": "-6.4%",
+            "year": 2023,
+            "unit": "%",
+            "rank": 147
+          }
+        }
+      },
+      {
+        "surface": "beat_6",
+        "text": "How strong are bank capital buffers in your country?",
+        "isos": [],
+        "support": "Valid closing question.",
+        "method": "complete-surface-check",
+        "evidence": {}
+      },
+      {
+        "surface": "card_6",
+        "text": [
+          "Bank Capital Ratios",
+          "Bank capital to assets ratio (%)"
+        ],
+        "isos": [],
+        "support": "Card text matches indicator metadata.",
+        "method": "complete-surface-check",
+        "evidence": {}
+      }
+    ],
+    "surface_checks": {
+      "title": {
+        "supported": true,
+        "reason": "The USA is present in the dataset with a defined bank capital ratio.",
+        "isos": [
+          "USA"
+        ]
+      },
+      "hook": {
+        "supported": true,
+        "reason": "Accurately reflects the dataset indicator.",
+        "isos": []
+      },
+      "description": {
+        "supported": true,
+        "reason": "Accurately describes the indicator and data source.",
+        "isos": []
+      },
+      "beat_0": {
+        "supported": true,
+        "reason": "USA value is 9.2% and Tajikistan is 20.9% in the dataset.",
+        "isos": [
+          "USA",
+          "TJK"
+        ]
+      },
+      "beat_1": {
+        "supported": true,
+        "reason": "USA value of 9.2% is near the 9.1% level.",
+        "isos": [
+          "USA"
+        ]
+      },
+      "beat_2": {
+        "supported": true,
+        "reason": "Matches the official definition of Tier 1 capital compared to total assets.",
+        "isos": []
+      },
+      "beat_3": {
+        "supported": true,
+        "reason": "India is 8.5% and China is 7.8% in the dataset.",
+        "isos": [
+          "IND",
+          "CHN"
+        ]
+      },
+      "beat_4": {
+        "supported": true,
+        "reason": "Canada (4.9%), Nigeria (4.5%), and Japan (4.1%) match the dataset.",
+        "isos": [
+          "CAN",
+          "NGA",
+          "JPN"
+        ]
+      },
+      "beat_5": {
+        "supported": true,
+        "reason": "Equatorial Guinea is ranked 147 with -6.4%.",
+        "isos": [
+          "GNQ"
+        ]
+      },
+      "beat_6": {
+        "supported": true,
+        "reason": "Valid closing question.",
+        "isos": []
+      },
+      "card_6": {
+        "supported": true,
+        "reason": "Card text matches indicator metadata.",
+        "isos": []
+      }
+    },
+    "warnings": []
+  },
+  "script_sha256": "1faeed85f751d22fd0f9e2f8a9b8640530aa580c6d2d49e3e19917558cd614fc",
+  "data_sha256": "5667d1084c9d636434e1dec0700a400dec0c750ec8c4f14ca38f7de65dc0cd92",
+  "reviewer_model": "gemini-3.5-flash-lite"
+}

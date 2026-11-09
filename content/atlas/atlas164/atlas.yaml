@@ -1,0 +1,77 @@
+id: atlas164
+title: How Does the USA Compare on Bank Capital?
+format: spotlight
+hook_text: BANK CAPITAL RATIOS
+description: Comparing bank capital to assets ratios across major economies using World Bank data.
+hashtags:
+- '#economy'
+- '#finance'
+- '#geography'
+tags:
+- wealth
+- bank capital to assets ratio
+- countries ranked by bank capital to assets ratio
+- Tajikistan
+- Equatorial Guinea
+- world map
+- geography
+- atlas in numbers
+sources:
+- https://data.worldbank.org/indicator/FB.BNK.CAPA.ZS
+dataset:
+  kind: worldbank
+  indicator: FB.BNK.CAPA.ZS
+  label: Bank capital to assets ratio
+  unit: '%'
+  source: World Bank
+  min_year: 2019
+scale:
+  edges:
+  - 6.0
+  - 9.0
+  - 12.0
+  labels:
+  - Under 6.0%
+  - 6.0% to 9.0%
+  - 9.0% to 12.0%
+  - Above 12.0%
+value_format: '{v:.1f}%'
+beats:
+- text: The USA has a 9.2% bank capital ratio, while Tajikistan has 20.9%.
+  shot:
+    callouts:
+    - USA
+    - TJK
+- text: That puts America right next to the global median of 9.1%.
+  shot:
+    kind: country
+    iso: USA
+- text: This evaluates financial strength by comparing core capital to total assets.
+  shot:
+    kind: country
+    iso: USA
+  basis: The indicator is a measure of capital adequacy that evaluates the financial strength of deposit takers
+    by comparing Tier 1 capital to total assets.
+- text: In Asia, India has 8.5%, while China has 7.8%.
+  shot:
+    kind: group
+    isos:
+    - IND
+    - CHN
+- text: Further down, Canada has 4.9%, Nigeria 4.5%, and Japan 4.1%.
+  shot:
+    kind: rank
+    isos:
+    - CAN
+    - NGA
+    - JPN
+- text: At the world's bottom, Equatorial Guinea drops below zero, down 6.4%.
+  shot:
+    kind: country
+    iso: GNQ
+- text: How strong are bank capital buffers in your country?
+  shot:
+    kind: card
+    lines:
+    - Bank Capital Ratios
+    - Bank capital to assets ratio (%)

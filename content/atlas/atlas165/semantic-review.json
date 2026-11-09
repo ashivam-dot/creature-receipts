@@ -1,0 +1,162 @@
+{
+  "errors": [
+    {
+      "surface": "beat_1",
+      "claim": "Senegal leads the world, producing 1.8 times the food output of the USA.",
+      "reason": "Senegal's food production index is 186.75 and the USA's is 104.12, making Senegal's output approximately 1.79 times that of the USA, which is slightly different from 1.8 or unsupported depending on precise rounding, but mainly Senegal is not explicitly stated in the evidence text to lead the world overall (Senegal has rank 1). Wait, rank 1 means leading the world, but let's check the ratio: 186.75 / 104.12 = 1.793, so 1.8 is a rounding. However, let's check if there are other errors. Let's look at title:",
+      "severity": "style"
+    }
+  ],
+  "claims": [
+    {
+      "surface": "title",
+      "text": "Which Places Are Growing the Most Food?",
+      "isos": [],
+      "support": "Food production index universe count 191"
+    },
+    {
+      "surface": "hook",
+      "text": "FOOD OUTPUT GAP",
+      "isos": [],
+      "support": "Food production index"
+    },
+    {
+      "surface": "description",
+      "text": "Senegal leads global food output with an index of 187, while Cuba fell to 48.1. Here is how food production compares worldwide.",
+      "isos": [
+        "SEN",
+        "CUB"
+      ],
+      "support": "Senegal value 186.75 display 187 rank 1, Cuba value 48.15 display 48.1 rank 191"
+    },
+    {
+      "surface": "beat_0",
+      "text": "Senegal reached a food production index of 187, while Cuba fell to 48.1.",
+      "isos": [
+        "SEN",
+        "CUB"
+      ],
+      "support": "Senegal value 186.75 display 187, Cuba value 48.15 display 48.1"
+    },
+    {
+      "surface": "beat_1",
+      "text": "Senegal leads the world, producing 1.8 times the food output of the USA.",
+      "isos": [
+        "SEN",
+        "USA"
+      ],
+      "support": "Senegal rank 1, value 186.75; USA value 104.12"
+    },
+    {
+      "surface": "beat_2",
+      "text": "The USA sits near baseline at 104, while Brazil reached 126.",
+      "isos": [
+        "USA",
+        "BRA"
+      ],
+      "support": "USA value 104.12 display 104, Brazil value 126.09 display 126"
+    },
+    {
+      "surface": "beat_3",
+      "text": "Other top growers are Oman at 180, Tajikistan at 178, and Mozambique at 176.",
+      "isos": [
+        "OMN",
+        "TJK",
+        "MOZ"
+      ],
+      "support": "Oman value 180.44 display 180, Tajikistan value 177.56 display 178, Mozambique value 176.03 display 176"
+    },
+    {
+      "surface": "beat_4",
+      "text": "In contrast, the UK sits at 97.7, and Japan is at 98.2.",
+      "isos": [
+        "GBR",
+        "JPN"
+      ],
+      "support": "United Kingdom value 97.69 display 97.7, Japan value 98.2 display 98.2"
+    },
+    {
+      "surface": "beat_5",
+      "text": "How is food output changing in your country?",
+      "isos": [],
+      "support": "Food production index"
+    },
+    {
+      "surface": "card_5",
+      "text": "How is your country performing? Food production index (2014-2016 = 100)",
+      "isos": [],
+      "support": "Food production index definition"
+    }
+  ],
+  "surface_checks": {
+    "title": {
+      "supported": true,
+      "reason": "The title frames the theme of food production growth across places, matching the indicator.",
+      "isos": []
+    },
+    "hook": {
+      "supported": true,
+      "reason": "Hook introduces food output correctly based on indicator.",
+      "isos": []
+    },
+    "description": {
+      "supported": true,
+      "reason": "Senegal index is 186.75 (display 187, rank 1) and Cuba index is 48.15 (display 48.1, rank 191).",
+      "isos": [
+        "SEN",
+        "CUB"
+      ]
+    },
+    "beat_0": {
+      "supported": true,
+      "reason": "Senegal display is 187 and Cuba display is 48.1.",
+      "isos": [
+        "SEN",
+        "CUB"
+      ]
+    },
+    "beat_1": {
+      "supported": true,
+      "reason": "Senegal is rank 1 and its value divided by USA (104.12) is approximately 1.79.",
+      "isos": [
+        "SEN",
+        "USA"
+      ]
+    },
+    "beat_2": {
+      "supported": true,
+      "reason": "USA value is 104.12 (display 104) and Brazil value is 126.09 (display 126).",
+      "isos": [
+        "USA",
+        "BRA"
+      ]
+    },
+    "beat_3": {
+      "supported": true,
+      "reason": "Oman is 180.44 (180), Tajikistan is 177.56 (178), Mozambique is 176.03 (176).",
+      "isos": [
+        "OMN",
+        "TJK",
+        "MOZ"
+      ]
+    },
+    "beat_4": {
+      "supported": true,
+      "reason": "United Kingdom value is 97.69 (97.7) and Japan value is 98.2.",
+      "isos": [
+        "GBR",
+        "JPN"
+      ]
+    },
+    "beat_5": {
+      "supported": true,
+      "reason": "General question about country food output supported by the dataset.",
+      "isos": []
+    },
+    "card_5": {
+      "supported": true,
+      "reason": "Matches indicator and base period description.",
+      "isos": []
+    }
+  }
+}

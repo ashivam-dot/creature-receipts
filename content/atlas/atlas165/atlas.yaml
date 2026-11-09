@@ -1,0 +1,69 @@
+id: atlas165
+title: Which Places Are Growing the Most Food?
+hook_text: FOOD OUTPUT GAP
+description: Senegal leads global food output with an index of 187, while Cuba fell to 48.1. Here is how food production
+  compares worldwide.
+hashtags:
+- '#health'
+- '#agriculture'
+- '#geography'
+tags:
+- health
+- food production index 2014-2016 100
+- countries ranked by food production index 2014-2016 100
+- Senegal
+- Cuba
+- world map
+- geography
+- atlas in numbers
+sources:
+- https://data.worldbank.org/indicator/AG.PRD.FOOD.XD
+dataset:
+  kind: worldbank
+  indicator: AG.PRD.FOOD.XD
+  label: Food production index (2014-2016 = 100)
+  unit: index
+  source: World Bank
+  min_year: 2019
+scale:
+  kind: threshold
+  at: 100.0
+  labels:
+  - Expanded since 2014-2016
+  - Contracted since 2014-2016
+value_format: '{v:.1f}'
+beats:
+- text: Senegal reached a food production index of 187, while Cuba fell to 48.1.
+  shot:
+    callouts:
+    - SEN
+    - CUB
+- text: Senegal leads the world, producing 1.8 times the food output of the USA.
+  shot:
+    kind: country
+    iso: SEN
+- text: The USA sits near baseline at 104, while Brazil reached 126.
+  shot:
+    kind: group
+    isos:
+    - USA
+    - BRA
+- text: Other top growers are Oman at 180, Tajikistan at 178, and Mozambique at 176.
+  shot:
+    kind: rank
+    isos:
+    - OMN
+    - TJK
+    - MOZ
+- text: In contrast, the UK sits at 97.7, and Japan is at 98.2.
+  shot:
+    kind: group
+    isos:
+    - GBR
+    - JPN
+- text: How is food output changing in your country?
+  shot:
+    kind: card
+    lines:
+    - How is your country performing?
+    - Food production index (2014-2016 = 100)

@@ -1,0 +1,160 @@
+{
+  "errors": [],
+  "claims": [
+    {
+      "surface": "title",
+      "text": "How Does the USA Compare on Bank Capital?",
+      "isos": [
+        "USA"
+      ],
+      "support": "United States value is 9.174% (9.2%), ranked 69 out of 147."
+    },
+    {
+      "surface": "hook",
+      "text": "BANK CAPITAL RATIOS",
+      "isos": [],
+      "support": "Indicator: Bank capital to assets ratio (%)"
+    },
+    {
+      "surface": "description",
+      "text": "Comparing bank capital to assets ratios across major economies using World Bank data.",
+      "isos": [],
+      "support": "Source: World Bank (IMF Financial Soundness Indicators), 147 entities."
+    },
+    {
+      "surface": "beat_0",
+      "text": "The USA has a 9.2% bank capital ratio, while Tajikistan has 20.9%.",
+      "isos": [
+        "USA",
+        "TJK"
+      ],
+      "support": "USA: 9.174% (display 9.2%), TJK: 20.922% (display 20.9%)."
+    },
+    {
+      "surface": "beat_1",
+      "text": "That puts America right next to the global median of 9.1%.",
+      "isos": [
+        "USA"
+      ],
+      "support": "USA value is 9.174%, close to 9.1%."
+    },
+    {
+      "surface": "beat_2",
+      "text": "This evaluates financial strength by comparing core capital to total assets.",
+      "isos": [],
+      "support": "Definition: compares Tier 1 capital (core capital) to total assets."
+    },
+    {
+      "surface": "beat_3",
+      "text": "In Asia, India has 8.5%, while China has 7.8%.",
+      "isos": [
+        "IND",
+        "CHN"
+      ],
+      "support": "IND: 8.518% (display 8.5%), CHN: 7.753% (display 7.8%)."
+    },
+    {
+      "surface": "beat_4",
+      "text": "Further down, Canada has 4.9%, Nigeria 4.5%, and Japan 4.1%.",
+      "isos": [
+        "CAN",
+        "NGA",
+        "JPN"
+      ],
+      "support": "CAN: 4.858% (display 4.9%), NGA: 4.549% (display 4.5%), JPN: 4.068% (display 4.1%)."
+    },
+    {
+      "surface": "beat_5",
+      "text": "At the world's bottom, Equatorial Guinea drops below zero, down 6.4%.",
+      "isos": [
+        "GNQ"
+      ],
+      "support": "GNQ: -6.403% (display -6.4%), rank 147 (last)."
+    },
+    {
+      "surface": "beat_6",
+      "text": "How strong are bank capital buffers in your country?",
+      "isos": [],
+      "support": "Closing question about bank capital buffers."
+    },
+    {
+      "surface": "card_6",
+      "text": "Bank Capital Ratios Bank capital to assets ratio (%)",
+      "isos": [],
+      "support": "Matches indicator definition and title."
+    }
+  ],
+  "surface_checks": {
+    "title": {
+      "supported": true,
+      "reason": "The USA is present in the dataset with a defined bank capital ratio.",
+      "isos": [
+        "USA"
+      ]
+    },
+    "hook": {
+      "supported": true,
+      "reason": "Accurately reflects the dataset indicator.",
+      "isos": []
+    },
+    "description": {
+      "supported": true,
+      "reason": "Accurately describes the indicator and data source.",
+      "isos": []
+    },
+    "beat_0": {
+      "supported": true,
+      "reason": "USA value is 9.2% and Tajikistan is 20.9% in the dataset.",
+      "isos": [
+        "USA",
+        "TJK"
+      ]
+    },
+    "beat_1": {
+      "supported": true,
+      "reason": "USA value of 9.2% is near the 9.1% level.",
+      "isos": [
+        "USA"
+      ]
+    },
+    "beat_2": {
+      "supported": true,
+      "reason": "Matches the official definition of Tier 1 capital compared to total assets.",
+      "isos": []
+    },
+    "beat_3": {
+      "supported": true,
+      "reason": "India is 8.5% and China is 7.8% in the dataset.",
+      "isos": [
+        "IND",
+        "CHN"
+      ]
+    },
+    "beat_4": {
+      "supported": true,
+      "reason": "Canada (4.9%), Nigeria (4.5%), and Japan (4.1%) match the dataset.",
+      "isos": [
+        "CAN",
+        "NGA",
+        "JPN"
+      ]
+    },
+    "beat_5": {
+      "supported": true,
+      "reason": "Equatorial Guinea is ranked 147 with -6.4%.",
+      "isos": [
+        "GNQ"
+      ]
+    },
+    "beat_6": {
+      "supported": true,
+      "reason": "Valid closing question.",
+      "isos": []
+    },
+    "card_6": {
+      "supported": true,
+      "reason": "Card text matches indicator metadata.",
+      "isos": []
+    }
+  }
+}

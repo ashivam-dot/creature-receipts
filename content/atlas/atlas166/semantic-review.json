@@ -1,0 +1,124 @@
+{
+  "errors": [],
+  "claims": [
+    {
+      "surface": "beat_0",
+      "text": "In the USA, the upper middle class holds 22.6% of national income.",
+      "isos": [
+        "USA"
+      ],
+      "support": "USA: 22.6%, 2024"
+    },
+    {
+      "surface": "beat_0",
+      "text": "In Brazil, it's 19.8%.",
+      "isos": [
+        "BRA"
+      ],
+      "support": "BRA: 19.8%, 2024"
+    },
+    {
+      "surface": "beat_2",
+      "text": "Brazil limits that fourth quintile to under a fifth of total income.",
+      "isos": [
+        "BRA"
+      ],
+      "support": "19.8% < 20%"
+    },
+    {
+      "surface": "beat_4",
+      "text": "Across the world, North Macedonia leads at 24.8%",
+      "isos": [
+        "MKD"
+      ],
+      "support": "MKD: 24.8%, rank 1"
+    },
+    {
+      "surface": "beat_4",
+      "text": "while Mozambique sits lowest at 18.8%.",
+      "isos": [
+        "MOZ"
+      ],
+      "support": "MOZ: 18.8%, rank 124"
+    }
+  ],
+  "surface_checks": {
+    "title": {
+      "supported": true,
+      "reason": "The title accurately reflects the comparison of the 4th quintile income share between the USA and Brazil.",
+      "isos": [
+        "USA",
+        "BRA"
+      ]
+    },
+    "hook": {
+      "supported": true,
+      "reason": "The hook introduces the income share gap between the two countries.",
+      "isos": [
+        "USA",
+        "BRA"
+      ]
+    },
+    "description": {
+      "supported": true,
+      "reason": "The description correctly identifies the metric and the countries being compared.",
+      "isos": [
+        "USA",
+        "BRA"
+      ]
+    },
+    "beat_0": {
+      "supported": true,
+      "reason": "Values for USA and Brazil match the provided evidence.",
+      "isos": [
+        "USA",
+        "BRA"
+      ]
+    },
+    "beat_1": {
+      "supported": true,
+      "reason": "The USA value of 22.6% is within the range of the provided data.",
+      "isos": [
+        "USA"
+      ]
+    },
+    "beat_2": {
+      "supported": true,
+      "reason": "19.8% is indeed under 20%.",
+      "isos": [
+        "BRA"
+      ]
+    },
+    "beat_3": {
+      "supported": true,
+      "reason": "The statement is a general observation about the Americas.",
+      "isos": [
+        "USA",
+        "BRA"
+      ]
+    },
+    "beat_4": {
+      "supported": true,
+      "reason": "The values for North Macedonia and Mozambique match the evidence.",
+      "isos": [
+        "MKD",
+        "MOZ"
+      ]
+    },
+    "beat_5": {
+      "supported": true,
+      "reason": "The definition matches the provided evidence.",
+      "isos": []
+    },
+    "beat_6": {
+      "supported": true,
+      "reason": "This is a rhetorical question.",
+      "isos": []
+    },
+    "card_6": {
+      "supported": true,
+      "reason": "The card correctly labels the metric and source.",
+      "isos": []
+    }
+  }
+}

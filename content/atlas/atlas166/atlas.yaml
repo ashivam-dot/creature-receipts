@@ -1,0 +1,75 @@
+id: atlas166
+title: 'USA vs Brazil: Upper Middle Class Income Share'
+format: versus
+hook_text: INCOME SHARE GAP
+description: Comparing the fourth income quintile's share of national income between the USA and Brazil using World
+  Bank data.
+hashtags:
+- '#economy'
+- '#geography'
+- '#countries'
+tags:
+- wealth
+- income share of 4th quintile
+- countries ranked by income share of 4th quintile
+- North Macedonia
+- Mozambique
+- world map
+- geography
+- atlas in numbers
+sources:
+- https://data.worldbank.org/indicator/SI.DST.04TH.20
+dataset:
+  kind: worldbank
+  indicator: SI.DST.04TH.20
+  label: Income share of 4th quintile
+  unit: '%'
+  source: World Bank
+  min_year: 2019
+scale:
+  kind: threshold
+  at: 22.2
+  labels:
+  - Above 22.2%
+  - 22.2% or lower
+value_format: '{v:.1f}%'
+beats:
+- text: In the USA, the upper middle class holds 22.6% of national income. In Brazil, it's 19.8%.
+  shot:
+    callouts:
+    - USA
+    - BRA
+- text: The USA gives its fourth income quintile a steady share near global norms.
+  shot:
+    kind: country
+    iso: USA
+- text: Brazil limits that fourth quintile to under a fifth of total income.
+  shot:
+    kind: country
+    iso: BRA
+- text: Together, they highlight how upper middle class earnings vary across the Americas.
+  shot:
+    kind: group
+    isos:
+    - USA
+    - BRA
+- text: Across the world, North Macedonia leads at 24.8%, while Mozambique sits lowest at 18.8%.
+  shot:
+    kind: rank
+    isos:
+    - MKD
+    - USA
+    - BRA
+    - MOZ
+- text: Data reflects the share of income or consumption accruing to each population quintile.
+  shot:
+    kind: country
+    iso: USA
+  basis: Percentage share of income or consumption is the share that accrues to subgroups of population indicated
+    by deciles or quintiles.
+- text: How much income does the upper middle class hold in your country?
+  shot:
+    kind: card
+    lines:
+    - UPPER MIDDLE CLASS INCOME
+    - Income share of 4th quintile (%), World Bank
