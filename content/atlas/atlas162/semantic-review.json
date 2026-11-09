@@ -1,0 +1,178 @@
+{
+  "errors": [],
+  "claims": [
+    {
+      "surface": "title",
+      "text": "Which Country Has the Highest Working-Age Share?",
+      "isos": [],
+      "support": "Qatar rank 1 with 83.2988889044008%"
+    },
+    {
+      "surface": "description",
+      "text": "Qatar has a working-age share of 83.3%, while the Central African Republic has 49.1%.",
+      "isos": [
+        "QAT",
+        "CAF"
+      ],
+      "support": "Qatar: 83.2988889044008% (display 83.3%), Central African Republic: 49.1193811598971% (display 49.1%)"
+    },
+    {
+      "surface": "beat_0",
+      "text": "Qatar is 83.3% working age. One country breaks the pattern you'd guess.",
+      "isos": [
+        "QAT"
+      ],
+      "support": "Qatar: 83.2988889044008% (display 83.3%)"
+    },
+    {
+      "surface": "beat_1",
+      "text": "Qatar is the highest. It counts all residents regardless of legal status.",
+      "isos": [
+        "QAT"
+      ],
+      "support": "Qatar rank 1 with 83.2988889044008%, definition mentions counts all residents regardless of legal status or citizenship."
+    },
+    {
+      "surface": "beat_2",
+      "text": "Central African Republic: 49.1%.",
+      "isos": [
+        "CAF"
+      ],
+      "support": "Central African Republic: 49.1193811598971% (display 49.1%)"
+    },
+    {
+      "surface": "beat_3",
+      "text": "Qatar has 1.7 times the share of Central African Republic.",
+      "isos": [
+        "QAT",
+        "CAF"
+      ],
+      "support": "Qatar 83.2988889044008 / Central African Republic 49.1193811598971 = 1.695864... (~1.7)"
+    },
+    {
+      "surface": "beat_4",
+      "text": "USA, Japan, or Nigeria: which is highest?",
+      "isos": [
+        "USA",
+        "JPN",
+        "NGA"
+      ],
+      "support": "USA: 64.5%, Japan: 58.8%, Nigeria: 56.4%"
+    },
+    {
+      "surface": "beat_5",
+      "text": "Japan has 58.8%.",
+      "isos": [
+        "JPN"
+      ],
+      "support": "Japan: 58.7675052627879% (display 58.8%)"
+    },
+    {
+      "surface": "beat_6",
+      "text": "Nigeria: 56.4%.",
+      "isos": [
+        "NGA"
+      ],
+      "support": "Nigeria: 56.4107403158649% (display 56.4%)"
+    },
+    {
+      "surface": "beat_7",
+      "text": "USA: 64.5%, just above the median.",
+      "isos": [
+        "USA"
+      ],
+      "support": "USA: 64.5137336553454% (display 64.5%), rank 101 out of 208"
+    }
+  ],
+  "surface_checks": {
+    "title": {
+      "supported": true,
+      "reason": "Qatar is indeed the highest in the dataset with 83.3%.",
+      "isos": [
+        "QAT"
+      ]
+    },
+    "hook": {
+      "supported": true,
+      "reason": "Stylistic hook.",
+      "isos": []
+    },
+    "description": {
+      "supported": true,
+      "reason": "Qatar value 83.3% and CAR value 49.1% match the evidence.",
+      "isos": [
+        "QAT",
+        "CAF"
+      ]
+    },
+    "beat_0": {
+      "supported": true,
+      "reason": "Qatar value matches 83.3%.",
+      "isos": [
+        "QAT"
+      ]
+    },
+    "beat_1": {
+      "supported": true,
+      "reason": "Qatar is rank 1 and definition covers residents regardless of legal status.",
+      "isos": [
+        "QAT"
+      ]
+    },
+    "beat_2": {
+      "supported": true,
+      "reason": "Central African Republic value matches 49.1%.",
+      "isos": [
+        "CAF"
+      ]
+    },
+    "beat_3": {
+      "supported": true,
+      "reason": "83.298 / 49.119 is approximately 1.7.",
+      "isos": [
+        "QAT",
+        "CAF"
+      ]
+    },
+    "beat_4": {
+      "supported": true,
+      "reason": "USA, Japan, and Nigeria are correctly queried.",
+      "isos": [
+        "USA",
+        "JPN",
+        "NGA"
+      ]
+    },
+    "beat_5": {
+      "supported": true,
+      "reason": "Japan value matches 58.8%.",
+      "isos": [
+        "JPN"
+      ]
+    },
+    "beat_6": {
+      "supported": true,
+      "reason": "Nigeria value matches 56.4%.",
+      "isos": [
+        "NGA"
+      ]
+    },
+    "beat_7": {
+      "supported": true,
+      "reason": "USA value matches 64.5% and is near the middle of 208 countries.",
+      "isos": [
+        "USA"
+      ]
+    },
+    "beat_8": {
+      "supported": true,
+      "reason": "Ordinary loop question.",
+      "isos": []
+    },
+    "card_8": {
+      "supported": true,
+      "reason": "Card title and label match indicator and text correctly.",
+      "isos": []
+    }
+  }
+}

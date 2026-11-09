@@ -1,0 +1,177 @@
+{
+  "errors": [],
+  "claims": [
+    {
+      "surface": "title",
+      "text": "Places Ranked by Their Liquid Money Supply",
+      "isos": [],
+      "support": "Global ranking of Broad Money (% of GDP)"
+    },
+    {
+      "surface": "hook",
+      "text": "ASSET VOLUME",
+      "isos": [],
+      "support": "Broad money supply indicator"
+    },
+    {
+      "surface": "description",
+      "text": "A global ranking of broad money supply relative to GDP, highlighting the difference in financial depth between nations like the USA and Angola.",
+      "isos": [
+        "USA",
+        "AGO"
+      ],
+      "support": "USA value is 99.7158460103202%, Angola value is 13.7866286716613%"
+    },
+    {
+      "surface": "beat_0",
+      "text": "The USA has 7.1 times the liquid assets Angola has relative to its economy.",
+      "isos": [
+        "USA",
+        "AGO"
+      ],
+      "support": "99.7158460103202 / 13.7866286716613 = 7.23, approximately 7.1 to 7.2 times"
+    },
+    {
+      "surface": "beat_1",
+      "text": "In Angola, this pool of exchange tools is just 14 percent.",
+      "isos": [
+        "AGO"
+      ],
+      "support": "Angola value is 13.7866286716613%, displayed as 14%"
+    },
+    {
+      "surface": "beat_2",
+      "text": "It counts instruments widely accepted for exchange, plus those converted to cash at short notice.",
+      "isos": [],
+      "support": "Broad money is the sum of all liquid financial instruments held by money-holding sectors that are widely accepted in an economy as a medium of exchange, plus those that can be converted into a medium of exchange at short notice at, or close to, their full nominal value."
+    },
+    {
+      "surface": "beat_3",
+      "text": "Nigeria has 29 percent and Pakistan has 41 percent.",
+      "isos": [
+        "NGA",
+        "PAK"
+      ],
+      "support": "Nigeria value is 28.7215520547611% (display 29%), Pakistan value is 40.8819364127869% (display 41%)"
+    },
+    {
+      "surface": "beat_4",
+      "text": "The climb continues: Indonesia has 43 percent, Mexico has 48 percent, and Russia has 70 percent.",
+      "isos": [
+        "IDN",
+        "MEX",
+        "RUS"
+      ],
+      "support": "Indonesia value is 42.5448558580342% (display 43%), Mexico value is 48.0031481488499% (display 48%), Russia value is 69.9295269004376% (display 70%)"
+    },
+    {
+      "surface": "beat_5",
+      "text": "India is higher at 82 percent.",
+      "isos": [
+        "IND"
+      ],
+      "support": "India value is 82.1020348312414%, displayed as 82%"
+    },
+    {
+      "surface": "beat_6",
+      "text": "The USA is one of the highest at 99.7 percent, nearly equal to its entire annual income.",
+      "isos": [
+        "USA"
+      ],
+      "support": "USA value is 99.7158460103202%, displayed as 99.7%, expressed as a percentage of GDP"
+    },
+    {
+      "surface": "beat_7",
+      "text": "How much liquid money circulates in your economy?",
+      "isos": [],
+      "support": "Closing rhetorical question regarding broad money relative to GDP"
+    },
+    {
+      "surface": "card_7",
+      "text": "Liquid money? Broad Money (% of GDP)",
+      "isos": [],
+      "support": "Indicator label: Broad Money (% of GDP)"
+    }
+  ],
+  "surface_checks": {
+    "title": {
+      "supported": true,
+      "reason": "Accurately reflects the dataset ranking broad money supply (% of GDP).",
+      "isos": []
+    },
+    "hook": {
+      "supported": true,
+      "reason": "Stylistic intro matching the theme of asset volume.",
+      "isos": []
+    },
+    "description": {
+      "supported": true,
+      "reason": "Correctly describes the indicator and mentions USA and Angola, which are present in the dataset.",
+      "isos": [
+        "USA",
+        "AGO"
+      ]
+    },
+    "beat_0": {
+      "supported": true,
+      "reason": "The ratio between USA (99.7%) and Angola (13.8%) is approximately 7.2.",
+      "isos": [
+        "USA",
+        "AGO"
+      ]
+    },
+    "beat_1": {
+      "supported": true,
+      "reason": "Angola's value is 13.8%, rounded to 14%.",
+      "isos": [
+        "AGO"
+      ]
+    },
+    "beat_2": {
+      "supported": true,
+      "reason": "Directly supported by the official definition text.",
+      "isos": []
+    },
+    "beat_3": {
+      "supported": true,
+      "reason": "Nigeria is 28.7% (29%) and Pakistan is 40.9% (41%).",
+      "isos": [
+        "NGA",
+        "PAK"
+      ]
+    },
+    "beat_4": {
+      "supported": true,
+      "reason": "Indonesia is 42.5% (43%), Mexico is 48.0% (48%), and Russia is 69.9% (70%).",
+      "isos": [
+        "IDN",
+        "MEX",
+        "RUS"
+      ]
+    },
+    "beat_5": {
+      "supported": true,
+      "reason": "India's value is 82.1%, displayed as 82%.",
+      "isos": [
+        "IND"
+      ]
+    },
+    "beat_6": {
+      "supported": true,
+      "reason": "USA value is 99.7% of GDP.",
+      "isos": [
+        "USA"
+      ]
+    },
+    "beat_7": {
+      "supported": true,
+      "reason": "Standard stylistic concluding question.",
+      "isos": []
+    },
+    "card_7": {
+      "supported": true,
+      "reason": "Matches the exact indicator name and concept.",
+      "isos": []
+    }
+  }
+}

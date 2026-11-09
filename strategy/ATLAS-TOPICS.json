@@ -4423,7 +4423,7 @@
     "#workforce"
    ],
    "source_url": "https://data.worldbank.org/indicator/SL.TLF.PART.FE.ZS",
-   "status": "ready:atlas158",
+   "status": "used:atlas158",
    "added_by": "refill"
   },
   {
@@ -4891,7 +4891,7 @@
     "#climatechange"
    ],
    "source_url": "https://data.worldbank.org/indicator/EN.GHG.ALL.PC.CE.AR5",
-   "status": "ready:atlas160",
+   "status": "used:atlas160",
    "added_by": "refill"
   },
   {
@@ -6047,7 +6047,7 @@
     "#education"
    ],
    "source_url": "https://data.worldbank.org/indicator/SE.PRM.TCHR.FE.ZS",
-   "status": "ready:atlas159",
+   "status": "used:atlas159",
    "added_by": "refill"
   },
   {
@@ -6279,7 +6279,7 @@
     "#education"
    ],
    "source_url": "https://data.worldbank.org/indicator/SE.SEC.TCHR.FE.ZS",
-   "status": "ready:atlas161",
+   "status": "used:atlas161",
    "added_by": "refill"
   },
   {
@@ -6362,7 +6362,7 @@
    "id": "t175",
    "topic": "Working-Age Population Share Worldwide",
    "angle": "Driven by massive foreign labor influxes, over 80% of Qatar's population is working-age, compared to under 50% in the Central African Republic.",
-   "format": "map_reveal",
+   "format": "odd_one_out",
    "dataset": {
     "kind": "worldbank",
     "indicator": "SP.POP.1564.TO.ZS",
@@ -6392,7 +6392,7 @@
     "#maps me"
    ],
    "source_url": "https://data.worldbank.org/indicator/SP.POP.1564.TO.ZS",
-   "status": "open",
+   "status": "ready:atlas162",
    "added_by": "refill"
   },
   {
@@ -6458,7 +6458,7 @@
     "#maps"
    ],
    "source_url": "https://data.worldbank.org/indicator/FM.LBL.BMNY.GD.ZS",
-   "status": "open",
+   "status": "failed:ValueError",
    "added_by": "refill"
   },
   {

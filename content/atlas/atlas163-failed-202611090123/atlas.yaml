@@ -1,0 +1,85 @@
+id: atlas163
+title: Places Ranked by Their Liquid Money Supply
+format: rank_ladder
+hook_text: ASSET VOLUME
+description: A global ranking of broad money supply relative to GDP, highlighting the difference in financial depth
+  between nations like the USA and Angola.
+hashtags:
+- '#economy'
+- '#geography'
+- '#countries'
+tags:
+- wealth
+- broad money supply % of gdp
+- countries ranked by broad money supply % of gdp
+- Japan
+- Zimbabwe
+- world map
+- geography
+- atlas in numbers
+sources:
+- https://data.worldbank.org/indicator/FM.LBL.BMNY.GD.ZS
+dataset:
+  kind: worldbank
+  indicator: FM.LBL.BMNY.GD.ZS
+  label: Broad money supply (% of GDP)
+  unit: '%'
+  source: World Bank
+  min_year: 2019
+scale:
+  edges:
+  - 30.0
+  - 60.0
+  - 100.0
+  - 150.0
+  labels:
+  - Under 30%
+  - 30% to 60%
+  - 60% to 100%
+  - 100% to 150%
+  - Over 150%
+value_format: '{v:.0f}%'
+beats:
+- text: The USA has 7.1 times the liquid assets Angola has relative to its economy.
+  shot:
+    callouts:
+    - USA
+    - AGO
+- text: In Angola, this pool of exchange tools is just 14 percent.
+  shot:
+    kind: country
+    iso: AGO
+- text: It counts instruments widely accepted for exchange, plus those converted to cash at short notice.
+  shot:
+    kind: country
+    iso: AGO
+  basis: Broad money is the sum of all liquid financial instruments held by money-holding sectors that are widely
+    accepted in an economy as a medium of exchange, plus those that can be converted into a medium of exchange at
+    short notice at, or close to, their full nominal value.
+- text: Nigeria has 29 percent and Pakistan has 41 percent.
+  shot:
+    kind: group
+    isos:
+    - NGA
+    - PAK
+- text: 'The climb continues: Indonesia has 43 percent, Mexico has 48 percent, and Russia has 70 percent.'
+  shot:
+    kind: rank
+    isos:
+    - IDN
+    - MEX
+    - RUS
+- text: India is higher at 82 percent.
+  shot:
+    kind: country
+    iso: IND
+- text: The USA is one of the highest at 99.7 percent, nearly equal to its entire annual income.
+  shot:
+    kind: country
+    iso: USA
+- text: How much liquid money circulates in your economy?
+  shot:
+    kind: card
+    lines:
+    - Liquid money?
+    - Broad Money (% of GDP)
