@@ -273,7 +273,7 @@
     "kind": "worldbank",
     "indicator": "EN.POP.DNST",
     "label": "People per square kilometre",
-    "unit": "per km\u00b2",
+    "unit": "per km²",
     "source": "World Bank",
     "min_year": 2019
    },
@@ -381,7 +381,7 @@
     "kind": "worldbank",
     "indicator": "EN.ATM.PM25.MC.M3",
     "label": "Average PM2.5 air pollution",
-    "unit": "micrograms per m\u00b3",
+    "unit": "micrograms per m³",
     "source": "World Bank",
     "min_year": 2019
    },
@@ -689,7 +689,7 @@
   {
    "id": "t023",
    "topic": "The older-population ratio",
-   "angle": "People aged 65+ per 100 people aged 15\u201364; neither actual retirees nor actual workers.",
+   "angle": "People aged 65+ per 100 people aged 15–64; neither actual retirees nor actual workers.",
    "format": "map_reveal",
    "dataset": {
     "kind": "worldbank",
@@ -1322,9 +1322,9 @@
     ],
     "labels": [
      "Under $2.5k",
-     "$2.5k\u2013$10k",
-     "$10k\u2013$25k",
-     "$25k\u2013$50k",
+     "$2.5k–$10k",
+     "$10k–$25k",
+     "$25k–$50k",
      "Over $50k"
     ]
    },
@@ -1672,9 +1672,9 @@
     ],
     "labels": [
      "Under 1.0",
-     "1.0\u20132.5",
-     "2.5\u20135.0",
-     "5.0\u20138.0",
+     "1.0–2.5",
+     "2.5–5.0",
+     "5.0–8.0",
      "Over 8.0"
     ]
    },
@@ -1736,7 +1736,7 @@
     "kind": "worldbank",
     "indicator": "ER.H2O.INTR.PC",
     "label": "Internal freshwater per person",
-    "unit": "m\u00b3",
+    "unit": "m³",
     "source": "World Bank",
     "min_year": 2019
    },
@@ -1756,7 +1756,7 @@
      ">50k"
     ]
    },
-   "value_format": "{v:,.0f} m\u00b3",
+   "value_format": "{v:,.0f} m³",
    "hashtags": [
     "#maps",
     "#geography",
@@ -1974,10 +1974,10 @@
     ],
     "labels": [
      "< 1.03",
-     "1.03\u20131.05",
-     "1.05\u20131.07",
-     "1.07\u20131.10",
-     "\u2265 1.10"
+     "1.03–1.05",
+     "1.05–1.07",
+     "1.07–1.10",
+     "≥ 1.10"
     ]
    },
    "value_format": "{v:.2f}",
@@ -2013,9 +2013,9 @@
     ],
     "labels": [
      "0%",
-     "1\u201310%",
-     "10\u201330%",
-     "30\u201360%",
+     "1–10%",
+     "10–30%",
+     "30–60%",
      ">60%"
     ]
    },
@@ -2091,9 +2091,9 @@
     ],
     "labels": [
      "Under 8%",
-     "8%\u201314%",
-     "14%\u201320%",
-     "20%\u201327%",
+     "8%–14%",
+     "14%–20%",
+     "20%–27%",
      "Over 27%"
     ]
    },
@@ -2128,9 +2128,9 @@
     ],
     "labels": [
      "Under 1.0",
-     "1.0\u20132.5",
-     "2.5\u20136.0",
-     "6.0\u201315.0",
+     "1.0–2.5",
+     "2.5–6.0",
+     "6.0–15.0",
      "Over 15.0"
     ]
    },
@@ -2173,7 +2173,7 @@
    },
    "value_format": "{v:.1f}%",
    "hashtags": [
-    "#maps\u6539\u9769",
+    "#maps改革",
     "#maps",
     "#geography"
    ],
@@ -2204,9 +2204,9 @@
     ],
     "labels": [
      "<10%",
-     "10\u201315%",
-     "15\u201320%",
-     "20\u201330%",
+     "10–15%",
+     "15–20%",
+     "20–30%",
      ">30%"
     ]
    },
@@ -2243,9 +2243,9 @@
     ],
     "labels": [
      "<500",
-     "500\u20131,500",
-     "1,500\u20133,000",
-     "3,000\u20136,000",
+     "500–1,500",
+     "1,500–3,000",
+     "3,000–6,000",
      ">6,000"
     ]
    },
@@ -2313,9 +2313,9 @@
     ],
     "labels": [
      "<5%",
-     "5\u201310%",
-     "10\u201315%",
-     "15\u201325%",
+     "5–10%",
+     "10–15%",
+     "15–25%",
      ">25%"
     ]
    },
@@ -2352,9 +2352,9 @@
     ],
     "labels": [
      "<1,500",
-     "1,500\u20133,000",
-     "3,000\u20135,000",
-     "5,000\u201310,000",
+     "1,500–3,000",
+     "3,000–5,000",
+     "5,000–10,000",
      ">10,000"
     ]
    },
@@ -2391,9 +2391,9 @@
     ],
     "labels": [
      "<10",
-     "10\u201325",
-     "25\u201350",
-     "50\u2013100",
+     "10–25",
+     "25–50",
+     "50–100",
      ">100"
     ]
    },
@@ -2430,9 +2430,9 @@
     ],
     "labels": [
      "<200",
-     "200\u20131,000",
-     "1,000\u20133,000",
-     "3,000\u20136,000",
+     "200–1,000",
+     "1,000–3,000",
+     "3,000–6,000",
      ">6,000"
     ]
    },
@@ -2508,7 +2508,7 @@
    },
    "value_format": "{v:.0f}%",
    "hashtags": [
-    "#maps\u6539\u9769",
+    "#maps改革",
     "#geography",
     "#energy"
    ],
@@ -2539,9 +2539,9 @@
     ],
     "labels": [
      "<25%",
-     "25\u201350%",
-     "50\u201375%",
-     "75\u2013100%",
+     "25–50%",
+     "50–75%",
+     "75–100%",
      ">100%"
     ]
    },
@@ -2578,9 +2578,9 @@
     ],
     "labels": [
      "< 1%",
-     "1\u20135%",
-     "5\u201320%",
-     "20\u201360%",
+     "1–5%",
+     "5–20%",
+     "20–60%",
      "> 60%"
     ]
    },
@@ -3798,9 +3798,9 @@
     ],
     "labels": [
      "< 1",
-     "1\u20134",
-     "4\u20138",
-     "8\u201312",
+     "1–4",
+     "4–8",
+     "8–12",
      "> 12"
     ]
    },
@@ -5420,9 +5420,9 @@
     ],
     "labels": [
      "Under 15%",
-     "15\u201325%",
-     "25\u201340%",
-     "40\u201350%",
+     "15–25%",
+     "25–40%",
+     "40–50%",
      "Over 50%"
     ]
    },
@@ -5587,9 +5587,9 @@
     "#cleanenergy"
    ],
    "source_url": "https://data.worldbank.org/indicator/EG.ELC.RNWX.ZS",
-   "status": "retry:atlas169",
+   "status": "ready:atlas169",
    "added_by": "refill",
-   "source_retries": 1
+   "source_retries": 2
   },
   {
    "id": "t155",
@@ -6491,7 +6491,7 @@
    },
    "value_format": "{v:.1f}%",
    "hashtags": [
-    "#maps \u0448\u0430\u0440ing,",
+    "#maps шарing,",
     "#geography",
     "#finance"
    ],
@@ -6656,7 +6656,358 @@
    "source_url": "https://data.worldbank.org/indicator/AG.PRD.FOOD.XD",
    "status": "used:atlas165",
    "added_by": "refill"
+  },
+  {
+   "id": "t184",
+   "topic": "Global Master's Degree Attainment",
+   "angle": "Luxembourg leads the world with 29.1% of adults holding a Master's degree, a rate over 150 times higher than in Mozambique.",
+   "format": "map_reveal",
+   "dataset": {
+    "kind": "worldbank",
+    "indicator": "SE.TER.CUAT.MS.ZS",
+    "label": "Adults with a Master's degree",
+    "unit": "%",
+    "source": "World Bank",
+    "min_year": 2019
+   },
+   "scale": {
+    "kind": "bins",
+    "edges": [
+     1,
+     5,
+     10,
+     20
+    ],
+    "labels": [
+     "Under 1%",
+     "1-5%",
+     "5-10%",
+     "10-20%",
+     "Over 20%"
+    ]
+   },
+   "value_format": "{v:.1f}%",
+   "hashtags": [
+    "#maps",
+    "#geography",
+    "#education"
+   ],
+   "source_url": "https://data.worldbank.org/indicator/SE.TER.CUAT.MS.ZS",
+   "status": "open",
+   "added_by": "refill"
+  },
+  {
+   "id": "t185",
+   "topic": "Global Relative Income Poverty",
+   "angle": "India records the world's lowest rate of relative poverty, with only 2.4% of people living below half the median income.",
+   "format": "map_reveal",
+   "dataset": {
+    "kind": "worldbank",
+    "indicator": "SI.DST.50MD",
+    "label": "People below 50% of median income",
+    "unit": "%",
+    "source": "World Bank",
+    "min_year": 2019
+   },
+   "scale": {
+    "kind": "bins",
+    "edges": [
+     6,
+     10,
+     14,
+     18
+    ],
+    "labels": [
+     "Under 6%",
+     "6% to 10%",
+     "10% to 14%",
+     "14% to 18%",
+     "Over 18%"
+    ]
+   },
+   "value_format": "{v:.1f}%",
+   "hashtags": [
+    "#maps",
+    "#geography",
+    "#economics"
+   ],
+   "source_url": "https://data.worldbank.org/indicator/SI.DST.50MD",
+   "status": "open",
+   "added_by": "refill"
+  },
+  {
+   "id": "t186",
+   "topic": "The World's Youngest Female Populations",
+   "angle": "In several African nations, girls under five make up 18% of the female population, nearly eight times the share in South Korea.",
+   "format": "rank_ladder",
+   "dataset": {
+    "kind": "worldbank",
+    "indicator": "SP.POP.0004.FE.5Y",
+    "label": "Girls aged 0-4 as % of female population",
+    "unit": "%",
+    "source": "World Bank",
+    "min_year": 2019
+   },
+   "scale": {
+    "kind": "bins",
+    "edges": [
+     4,
+     7,
+     11,
+     15
+    ],
+    "labels": [
+     "Under 4%",
+     "4-7%",
+     "7-11%",
+     "11-15%",
+     "Over 15%"
+    ]
+   },
+   "value_format": "{v:.1f}%",
+   "hashtags": [
+    "#maps",
+    "#geography",
+    "#demographics"
+   ],
+   "source_url": "https://data.worldbank.org/indicator/SP.POP.0004.FE.5Y",
+   "status": "open",
+   "added_by": "refill"
+  },
+  {
+   "id": "t187",
+   "topic": "Global Livestock Production Trends",
+   "angle": "Guyana has more than doubled its livestock output since 2016, reaching the highest growth index worldwide.",
+   "format": "map_reveal",
+   "dataset": {
+    "kind": "worldbank",
+    "indicator": "AG.PRD.LVSK.XD",
+    "label": "Livestock production index",
+    "unit": "index",
+    "source": "World Bank",
+    "min_year": 2019
+   },
+   "scale": {
+    "kind": "bins",
+    "edges": [
+     90,
+     110,
+     130,
+     160
+    ],
+    "labels": [
+     "Shrinking",
+     "Stable",
+     "Growing",
+     "Fast growth",
+     "Booming"
+    ]
+   },
+   "value_format": "{v:.1f}",
+   "hashtags": [
+    "#maps",
+    "#geography",
+    "#agriculture"
+   ],
+   "source_url": "https://data.worldbank.org/indicator/AG.PRD.LVSK.XD",
+   "status": "open",
+   "added_by": "refill"
+  },
+  {
+   "id": "t188",
+   "topic": "Joblessness Among the Highly Educated",
+   "angle": "In countries like Angola and Jordan, more than one in four people with advanced degrees are currently unemployed.",
+   "format": "map_reveal",
+   "dataset": {
+    "kind": "worldbank",
+    "indicator": "SL.UEM.ADVN.ZS",
+    "label": "Unemployed with advanced education",
+    "unit": "%",
+    "source": "World Bank",
+    "min_year": 2019
+   },
+   "scale": {
+    "kind": "bins",
+    "edges": [
+     2,
+     5,
+     10,
+     20
+    ],
+    "labels": [
+     "Under 2%",
+     "2% - 5%",
+     "5% - 10%",
+     "10% - 20%",
+     "Over 20%"
+    ]
+   },
+   "value_format": "{v:.1f}%",
+   "hashtags": [
+    "#maps",
+    "#geography",
+    "#employment"
+   ],
+   "source_url": "https://data.worldbank.org/indicator/SL.UEM.ADVN.ZS",
+   "status": "open",
+   "added_by": "refill"
+  },
+  {
+   "id": "t189",
+   "topic": "National Wealth Lost to Resource Depletion",
+   "angle": "Timor-Leste loses over 57% of its gross national income value through the depletion of finite natural resources like oil and gas.",
+   "format": "rank_ladder",
+   "dataset": {
+    "kind": "worldbank",
+    "indicator": "NY.ADJ.DRES.GN.ZS",
+    "label": "Resource depletion as % of GNI",
+    "unit": "%",
+    "source": "World Bank",
+    "min_year": 2019
+   },
+   "scale": {
+    "kind": "bins",
+    "edges": [
+     1,
+     5,
+     10,
+     25
+    ],
+    "labels": [
+     "Minimal",
+     "Low",
+     "Moderate",
+     "High",
+     "Very High"
+    ]
+   },
+   "value_format": "{v:.1f}%",
+   "hashtags": [
+    "#maps",
+    "#geography",
+    "#economy"
+   ],
+   "source_url": "https://data.worldbank.org/indicator/NY.ADJ.DRES.GN.ZS",
+   "status": "open",
+   "added_by": "refill"
+  },
+  {
+   "id": "t190",
+   "topic": "Primary School Completion Rates Worldwide",
+   "angle": "Several nations report completion rates exceeding 100% because older students or repeaters enter the final grade.",
+   "format": "map_reveal",
+   "dataset": {
+    "kind": "worldbank",
+    "indicator": "SE.PRM.CMPT.ZS",
+    "label": "Primary school completion rate",
+    "unit": "%",
+    "source": "World Bank",
+    "min_year": 2019
+   },
+   "scale": {
+    "kind": "bins",
+    "edges": [
+     60,
+     80,
+     100,
+     110
+    ],
+    "labels": [
+     "<60%",
+     "60-80%",
+     "80-100%",
+     "100-110%",
+     ">110%"
+    ]
+   },
+   "value_format": "{v:.1f}%",
+   "hashtags": [
+    "#maps",
+    "#education",
+    "#geography"
+   ],
+   "source_url": "https://data.worldbank.org/indicator/SE.PRM.CMPT.ZS",
+   "status": "open",
+   "added_by": "refill"
+  },
+  {
+   "id": "t191",
+   "topic": "Greenhouse Gas Emissions Since 1990",
+   "angle": "While the median country's emissions have risen by 87.6% since 1990, Equatorial Guinea has seen an increase of over 4,000%.",
+   "format": "map_reveal",
+   "dataset": {
+    "kind": "worldbank",
+    "indicator": "EN.GHG.TOT.ZG.AR5",
+    "label": "Change in GHG emissions since 1990",
+    "unit": "%",
+    "source": "World Bank",
+    "min_year": 2019
+   },
+   "scale": {
+    "kind": "bins",
+    "edges": [
+     0,
+     87.6,
+     250,
+     1000
+    ],
+    "labels": [
+     "Decreased",
+     "0-88% increase",
+     "88-250% increase",
+     "250-1000% increase",
+     "Over 1000% increase"
+    ]
+   },
+   "value_format": "{v:+.1f}%",
+   "hashtags": [
+    "#maps",
+    "#geography",
+    "#emissions"
+   ],
+   "source_url": "https://data.worldbank.org/indicator/EN.GHG.TOT.ZG.AR5",
+   "status": "open",
+   "added_by": "refill"
+  },
+  {
+   "id": "t192",
+   "topic": "Global Rates of Vulnerable Employment",
+   "angle": "While some Gulf states report under 1% vulnerable employment, in Chad, over 90% of workers lack formal job security and benefits.",
+   "format": "rank_ladder",
+   "dataset": {
+    "kind": "worldbank",
+    "indicator": "SL.EMP.VULN.ZS",
+    "label": "Share of workers in vulnerable jobs",
+    "unit": "%",
+    "source": "World Bank",
+    "min_year": 2019
+   },
+   "scale": {
+    "kind": "bins",
+    "edges": [
+     10,
+     30,
+     55,
+     75
+    ],
+    "labels": [
+     "Under 10%",
+     "10-30%",
+     "30-55%",
+     "55-75%",
+     "Over 75%"
+    ]
+   },
+   "value_format": "{v:.1f}%",
+   "hashtags": [
+    "#maps",
+    "#geography",
+    "#workforce"
+   ],
+   "source_url": "https://data.worldbank.org/indicator/SL.EMP.VULN.ZS",
+   "status": "open",
+   "added_by": "refill"
   }
  ],
- "refilled_at": "2026-11-08T17:10:15+00:00"
+ "refilled_at": "2026-11-10T17:10:13+00:00"
 }

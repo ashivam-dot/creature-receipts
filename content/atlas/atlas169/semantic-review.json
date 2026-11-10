@@ -1,0 +1,121 @@
+{
+  "errors": [],
+  "claims": [
+    {
+      "surface": "description",
+      "text": "Denmark generates 78.9% of its electricity from wind and solar alone.",
+      "isos": [
+        "DNK"
+      ],
+      "support": "Denmark DNK value 78.9104689863843 display 78.9%"
+    },
+    {
+      "surface": "beat_0",
+      "text": "Denmark generates 78.9% of its electricity from wind and solar alone.",
+      "isos": [
+        "DNK"
+      ],
+      "support": "Denmark DNK value 78.9104689863843 display 78.9%"
+    },
+    {
+      "surface": "beat_1",
+      "text": "That is 6.1 times what China produces at 12.9%.",
+      "isos": [
+        "DNK",
+        "CHN"
+      ],
+      "support": "Denmark DNK value 78.9104689863843, China CHN value 12.8565369430344 display 12.9% (78.9 / 12.9 is approximately 6.1)"
+    },
+    {
+      "surface": "beat_2",
+      "text": "India hits 9.2%, falling well behind the global leaders.",
+      "isos": [
+        "IND"
+      ],
+      "support": "India IND value 9.20378927120657 display 9.2%"
+    },
+    {
+      "surface": "beat_3",
+      "text": "Equatorial Guinea sits at the bottom, down 23.8%.",
+      "isos": [
+        "GNQ"
+      ],
+      "support": "Equatorial Guinea GNQ value -23.7704576976422 display -23.8% and rank 203 (bottom)"
+    },
+    {
+      "surface": "beat_4",
+      "text": "Germany hits 35.6% and the UK hits 37.8%.",
+      "isos": [
+        "DEU",
+        "GBR"
+      ],
+      "support": "Germany DEU value 35.6193907985478 display 35.6%, United Kingdom GBR value 37.8311738385223 display 37.8%"
+    }
+  ],
+  "surface_checks": {
+    "title": {
+      "supported": true,
+      "reason": "The title refers to Places Ranked by Renewable Electricity Share, matching the World Bank indicator for non-hydro renewable electricity.",
+      "isos": []
+    },
+    "hook": {
+      "supported": true,
+      "reason": "Hook mentions WIND AND SOLAR, which are covered by the definition excluding hydroelectric.",
+      "isos": []
+    },
+    "description": {
+      "supported": true,
+      "reason": "Denmark value is 78.9104689863843, displayed as 78.9%.",
+      "isos": [
+        "DNK"
+      ]
+    },
+    "beat_0": {
+      "supported": true,
+      "reason": "Denmark value is 78.9104689863843, displayed as 78.9%.",
+      "isos": [
+        "DNK"
+      ]
+    },
+    "beat_1": {
+      "supported": true,
+      "reason": "Denmark is 78.9% and China is 12.9%, ratio matches ~6.1x.",
+      "isos": [
+        "DNK",
+        "CHN"
+      ]
+    },
+    "beat_2": {
+      "supported": true,
+      "reason": "India value is 9.20378927120657, displayed as 9.2%.",
+      "isos": [
+        "IND"
+      ]
+    },
+    "beat_3": {
+      "supported": true,
+      "reason": "Equatorial Guinea value is -23.7704576976422, displayed as -23.8% at rank 203.",
+      "isos": [
+        "GNQ"
+      ]
+    },
+    "beat_4": {
+      "supported": true,
+      "reason": "Germany is 35.6% and United Kingdom is 37.8%, matching evidence values.",
+      "isos": [
+        "DEU",
+        "GBR"
+      ]
+    },
+    "beat_5": {
+      "supported": true,
+      "reason": "Ordinary loop/callout question.",
+      "isos": []
+    },
+    "card_5": {
+      "supported": true,
+      "reason": "Card matches indicator definition, source, and year 2021.",
+      "isos": []
+    }
+  }
+}

@@ -1,0 +1,72 @@
+id: atlas169
+title: Places Ranked by Renewable Electricity Share
+hook_text: WIND AND SOLAR
+description: Denmark generates 78.9% of its electricity from wind and solar alone.
+hashtags:
+- '#energy'
+- '#cleanenergy'
+- '#geography'
+tags:
+- energy
+- share of non-hydro renewable electricity
+- countries ranked by share of non-hydro renewable electricity
+- Denmark
+- Equatorial Guinea
+- world map
+- geography
+- atlas in numbers
+sources:
+- https://data.worldbank.org/indicator/EG.ELC.RNWX.ZS
+dataset:
+  kind: worldbank
+  indicator: EG.ELC.RNWX.ZS
+  label: Share of non-hydro renewable electricity
+  unit: '%'
+  source: World Bank
+  min_year: 2019
+scale:
+  edges:
+  - 5.0
+  - 15.0
+  - 30.0
+  - 50.0
+  labels:
+  - Under 5%
+  - 5-15%
+  - 15-30%
+  - 30-50%
+  - Over 50%
+value_format: '{v:.3f}%'
+beats:
+- text: Denmark generates 78.9% of its electricity from wind and solar alone.
+  shot:
+    callouts:
+    - DNK
+  basis: Electricity production from renewable sources, excluding hydroelectric, includes geothermal, solar, tides,
+    wind, biomass, and biofuels.
+- text: That is 6.1 times what China produces at 12.9%.
+  shot:
+    kind: group
+    isos:
+    - DNK
+    - CHN
+- text: India hits 9.2%, falling well behind the global leaders.
+  shot:
+    kind: country
+    iso: IND
+- text: Equatorial Guinea sits at the bottom, down 23.8%.
+  shot:
+    kind: country
+    iso: GNQ
+- text: Germany hits 35.6% and the UK hits 37.8%.
+  shot:
+    kind: group
+    isos:
+    - DEU
+    - GBR
+- text: Which source lights up your local grid?
+  shot:
+    kind: card
+    lines:
+    - Light up your grid
+    - Share of non-hydro renewable electricity (%), World Bank, 2021
