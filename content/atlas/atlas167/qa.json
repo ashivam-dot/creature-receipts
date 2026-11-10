@@ -1,0 +1,42 @@
+{
+  "version": 1,
+  "passed": true,
+  "checked_at": "2026-11-10T09:23:10.358977+00:00",
+  "quality_module_sha256": "db7be8ac57c839f39a10676f1a70580a83ea346f59c27f19868d09c272def14c",
+  "media_sha256": "a4dd45db96840f9020f179f1158936f5202d8568c119894e24ad6d96a11a650a",
+  "script_sha256": "0ebd071120d6ee3eb52534172a810ed7031cfe9342924c9797166bc9241f3986",
+  "data_sha256": "c23a9a49c1be9d94a4b6c2d284fdac77cd02a904aaa0bd310d0db9c476be9ed8",
+  "claims_sha256": "39fcc0ec19cf8261a9c464bd2c2d8beec3de5f1a3190626ac490537ab7a9ad17",
+  "contact_sha256": "9ffead88bad2ecb5c6d712a7c3f7753a1e0bacc10dff3956b84a3974e7abf54d",
+  "duration": 38.66,
+  "integrated_lufs": -14.1,
+  "true_peak_dbfs": -1.4,
+  "speech": {
+    "heard": "Primary school in Ireland lasts 8 years. In the UAE it's 4. It counts the number of grades in primary school. The shortest paths include the UAE, Germany, Russia and Ukraine, all with 4 years. India has 5 years. Brazil also has 5. The USA, China and Nigeria have 6. All 3 match the global media. Australia is one of the highest, with seven years of primary education. Ireland has eight years. That is two times the years that UAE has. How many years did you spend in primary school?",
+    "model": "small.en",
+    "media_sha256": "a4dd45db96840f9020f179f1158936f5202d8568c119894e24ad6d96a11a650a",
+    "primary_differences": [
+      "'median' heard as 'media' after 'match the global'",
+      "'the' heard as 'that' after 'times the years'"
+    ],
+    "differences": [
+      "'median' heard as 'media' after 'match the global'",
+      "'the' heard as 'that' after 'times the years'",
+      "base.en: 'median' heard as 'media' after 'match the global'"
+    ],
+    "corroboration": {
+      "model": "base.en",
+      "heard": "Primary school in Ireland lasts eight years. In the UAE, it's four. It counts the number of grades in primary school. The shortest paths include the UAE, Germany, Russia, and Ukraine, all with four years. India has five years. Brazil also has five. The USA, China, and Nigeria have six. All three match the global media. Australia is one of the highest, with seven years of primary education. Ireland has eight years. That is two times the years the UAE has. How many years did you spend in primary school?",
+      "differences": [
+        "'median' heard as 'media' after 'match the global'"
+      ],
+      "resolved": []
+    }
+  },
+  "warnings": [
+    "'median' heard as 'media' after 'match the global'",
+    "'the' heard as 'that' after 'times the years'",
+    "base.en: 'median' heard as 'media' after 'match the global'"
+  ],
+  "speech_policy": "material-hard-entity-polarity-strict-minor-spelling-warning"
+}

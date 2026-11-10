@@ -1,0 +1,183 @@
+{
+  "errors": [],
+  "claims": [
+    {
+      "surface": "title",
+      "text": "Places Ranked by Years in Primary School",
+      "isos": [],
+      "support": "Primary duration refers to the number of grades (years) in primary school."
+    },
+    {
+      "surface": "hook",
+      "text": "DOUBLE THE SCHOOL",
+      "isos": [],
+      "support": "Max duration is 8 years (e.g. IRL, GUM) and min is 4 years (e.g. ARE, DEU), making the maximum double the minimum."
+    },
+    {
+      "surface": "description",
+      "text": "A cinematic comparison of primary school duration worldwide, from the shortest 4-year programs to Ireland's 8-year system.",
+      "isos": [
+        "IRL"
+      ],
+      "support": "Ireland (IRL) primary duration is 8 years, and the shortest programs are 4 years."
+    },
+    {
+      "surface": "beat_0",
+      "text": "Primary school in Ireland lasts 8 years. In the UAE, it's 4.",
+      "isos": [
+        "IRL",
+        "ARE"
+      ],
+      "support": "Ireland value is 8.0 years, United Arab Emirates value is 4.0 years."
+    },
+    {
+      "surface": "beat_1",
+      "text": "It counts the number of grades in primary school.",
+      "isos": [],
+      "support": "Primary duration refers to the number of grades (years) in primary school."
+    },
+    {
+      "surface": "beat_2",
+      "text": "The shortest paths include the UAE, Germany, Russia, and Ukraine, all with 4 years.",
+      "isos": [
+        "ARE",
+        "DEU",
+        "RUS",
+        "UKR"
+      ],
+      "support": "ARE value is 4.0, DEU value is 4.0, RUS value is 4.0, UKR value is 4.0."
+    },
+    {
+      "surface": "beat_3",
+      "text": "India has 5 years. Brazil also has 5.",
+      "isos": [
+        "IND",
+        "BRA"
+      ],
+      "support": "India value is 5.0, Brazil value is 5.0."
+    },
+    {
+      "surface": "beat_4",
+      "text": "The USA, China, and Nigeria have 6. All 3 match the global median.",
+      "isos": [
+        "USA",
+        "CHN",
+        "NGA"
+      ],
+      "support": "United States value is 6.0, China value is 6.0, Nigeria value is 6.0."
+    },
+    {
+      "surface": "beat_5",
+      "text": "Australia is one of the highest, with 7 years of primary education.",
+      "isos": [
+        "AUS"
+      ],
+      "support": "Australia value is 7.0 years."
+    },
+    {
+      "surface": "beat_6",
+      "text": "Ireland has 8 years. That is 2 times the years the UAE has.",
+      "isos": [
+        "IRL",
+        "ARE"
+      ],
+      "support": "Ireland is 8.0 years and UAE is 4.0 years; 8 is 2 times 4."
+    },
+    {
+      "surface": "beat_7",
+      "text": "How many years did you spend in primary school?",
+      "isos": [],
+      "support": "Primary duration refers to the number of grades (years) in primary school."
+    },
+    {
+      "surface": "card_7",
+      "text": "How many years? Primary Education Duration",
+      "isos": [],
+      "support": "Primary duration refers to the number of grades (years) in primary school."
+    }
+  ],
+  "surface_checks": {
+    "title": {
+      "supported": true,
+      "reason": "The indicator is about primary duration in years across places.",
+      "isos": []
+    },
+    "hook": {
+      "supported": true,
+      "reason": "Max duration is 8 years and min is 4 years, which is a factor of two.",
+      "isos": []
+    },
+    "description": {
+      "supported": true,
+      "reason": "Accurately describes comparing 4-year programs to Ireland's 8-year system.",
+      "isos": [
+        "IRL"
+      ]
+    },
+    "beat_0": {
+      "supported": true,
+      "reason": "Ireland is 8 years and UAE is 4 years in the dataset.",
+      "isos": [
+        "IRL",
+        "ARE"
+      ]
+    },
+    "beat_1": {
+      "supported": true,
+      "reason": "Matches the definition that primary duration is the number of grades (years).",
+      "isos": []
+    },
+    "beat_2": {
+      "supported": true,
+      "reason": "ARE, DEU, RUS, and UKR all have a value of 4 years.",
+      "isos": [
+        "ARE",
+        "DEU",
+        "RUS",
+        "UKR"
+      ]
+    },
+    "beat_3": {
+      "supported": true,
+      "reason": "IND and BRA both have a value of 5 years.",
+      "isos": [
+        "IND",
+        "BRA"
+      ]
+    },
+    "beat_4": {
+      "supported": true,
+      "reason": "USA, CHN, and NGA all have a value of 6 years.",
+      "isos": [
+        "USA",
+        "CHN",
+        "NGA"
+      ]
+    },
+    "beat_5": {
+      "supported": true,
+      "reason": "Australia has 7 years, which places it among the highest ranks (rank 3).",
+      "isos": [
+        "AUS"
+      ]
+    },
+    "beat_6": {
+      "supported": true,
+      "reason": "Ireland's 8 years is twice the UAE's 4 years.",
+      "isos": [
+        "IRL",
+        "ARE"
+      ]
+    },
+    "beat_7": {
+      "supported": true,
+      "reason": "Asks a relevant closing question matching the indicator topic.",
+      "isos": []
+    },
+    "card_7": {
+      "supported": true,
+      "reason": "Matches the indicator concept of primary education duration in years.",
+      "isos": []
+    }
+  }
+}

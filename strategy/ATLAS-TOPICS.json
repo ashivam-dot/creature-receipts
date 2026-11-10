@@ -273,7 +273,7 @@
     "kind": "worldbank",
     "indicator": "EN.POP.DNST",
     "label": "People per square kilometre",
-    "unit": "per km²",
+    "unit": "per km\u00b2",
     "source": "World Bank",
     "min_year": 2019
    },
@@ -381,7 +381,7 @@
     "kind": "worldbank",
     "indicator": "EN.ATM.PM25.MC.M3",
     "label": "Average PM2.5 air pollution",
-    "unit": "micrograms per m³",
+    "unit": "micrograms per m\u00b3",
     "source": "World Bank",
     "min_year": 2019
    },
@@ -689,7 +689,7 @@
   {
    "id": "t023",
    "topic": "The older-population ratio",
-   "angle": "People aged 65+ per 100 people aged 15–64; neither actual retirees nor actual workers.",
+   "angle": "People aged 65+ per 100 people aged 15\u201364; neither actual retirees nor actual workers.",
    "format": "map_reveal",
    "dataset": {
     "kind": "worldbank",
@@ -1322,9 +1322,9 @@
     ],
     "labels": [
      "Under $2.5k",
-     "$2.5k–$10k",
-     "$10k–$25k",
-     "$25k–$50k",
+     "$2.5k\u2013$10k",
+     "$10k\u2013$25k",
+     "$25k\u2013$50k",
      "Over $50k"
     ]
    },
@@ -1672,9 +1672,9 @@
     ],
     "labels": [
      "Under 1.0",
-     "1.0–2.5",
-     "2.5–5.0",
-     "5.0–8.0",
+     "1.0\u20132.5",
+     "2.5\u20135.0",
+     "5.0\u20138.0",
      "Over 8.0"
     ]
    },
@@ -1736,7 +1736,7 @@
     "kind": "worldbank",
     "indicator": "ER.H2O.INTR.PC",
     "label": "Internal freshwater per person",
-    "unit": "m³",
+    "unit": "m\u00b3",
     "source": "World Bank",
     "min_year": 2019
    },
@@ -1756,7 +1756,7 @@
      ">50k"
     ]
    },
-   "value_format": "{v:,.0f} m³",
+   "value_format": "{v:,.0f} m\u00b3",
    "hashtags": [
     "#maps",
     "#geography",
@@ -1974,10 +1974,10 @@
     ],
     "labels": [
      "< 1.03",
-     "1.03–1.05",
-     "1.05–1.07",
-     "1.07–1.10",
-     "≥ 1.10"
+     "1.03\u20131.05",
+     "1.05\u20131.07",
+     "1.07\u20131.10",
+     "\u2265 1.10"
     ]
    },
    "value_format": "{v:.2f}",
@@ -2013,9 +2013,9 @@
     ],
     "labels": [
      "0%",
-     "1–10%",
-     "10–30%",
-     "30–60%",
+     "1\u201310%",
+     "10\u201330%",
+     "30\u201360%",
      ">60%"
     ]
    },
@@ -2091,9 +2091,9 @@
     ],
     "labels": [
      "Under 8%",
-     "8%–14%",
-     "14%–20%",
-     "20%–27%",
+     "8%\u201314%",
+     "14%\u201320%",
+     "20%\u201327%",
      "Over 27%"
     ]
    },
@@ -2128,9 +2128,9 @@
     ],
     "labels": [
      "Under 1.0",
-     "1.0–2.5",
-     "2.5–6.0",
-     "6.0–15.0",
+     "1.0\u20132.5",
+     "2.5\u20136.0",
+     "6.0\u201315.0",
      "Over 15.0"
     ]
    },
@@ -2173,7 +2173,7 @@
    },
    "value_format": "{v:.1f}%",
    "hashtags": [
-    "#maps改革",
+    "#maps\u6539\u9769",
     "#maps",
     "#geography"
    ],
@@ -2204,9 +2204,9 @@
     ],
     "labels": [
      "<10%",
-     "10–15%",
-     "15–20%",
-     "20–30%",
+     "10\u201315%",
+     "15\u201320%",
+     "20\u201330%",
      ">30%"
     ]
    },
@@ -2243,9 +2243,9 @@
     ],
     "labels": [
      "<500",
-     "500–1,500",
-     "1,500–3,000",
-     "3,000–6,000",
+     "500\u20131,500",
+     "1,500\u20133,000",
+     "3,000\u20136,000",
      ">6,000"
     ]
    },
@@ -2313,9 +2313,9 @@
     ],
     "labels": [
      "<5%",
-     "5–10%",
-     "10–15%",
-     "15–25%",
+     "5\u201310%",
+     "10\u201315%",
+     "15\u201325%",
      ">25%"
     ]
    },
@@ -2352,9 +2352,9 @@
     ],
     "labels": [
      "<1,500",
-     "1,500–3,000",
-     "3,000–5,000",
-     "5,000–10,000",
+     "1,500\u20133,000",
+     "3,000\u20135,000",
+     "5,000\u201310,000",
      ">10,000"
     ]
    },
@@ -2391,9 +2391,9 @@
     ],
     "labels": [
      "<10",
-     "10–25",
-     "25–50",
-     "50–100",
+     "10\u201325",
+     "25\u201350",
+     "50\u2013100",
      ">100"
     ]
    },
@@ -2430,9 +2430,9 @@
     ],
     "labels": [
      "<200",
-     "200–1,000",
-     "1,000–3,000",
-     "3,000–6,000",
+     "200\u20131,000",
+     "1,000\u20133,000",
+     "3,000\u20136,000",
      ">6,000"
     ]
    },
@@ -2508,7 +2508,7 @@
    },
    "value_format": "{v:.0f}%",
    "hashtags": [
-    "#maps改革",
+    "#maps\u6539\u9769",
     "#geography",
     "#energy"
    ],
@@ -2539,9 +2539,9 @@
     ],
     "labels": [
      "<25%",
-     "25–50%",
-     "50–75%",
-     "75–100%",
+     "25\u201350%",
+     "50\u201375%",
+     "75\u2013100%",
      ">100%"
     ]
    },
@@ -2578,9 +2578,9 @@
     ],
     "labels": [
      "< 1%",
-     "1–5%",
-     "5–20%",
-     "20–60%",
+     "1\u20135%",
+     "5\u201320%",
+     "20\u201360%",
      "> 60%"
     ]
    },
@@ -3798,9 +3798,9 @@
     ],
     "labels": [
      "< 1",
-     "1–4",
-     "4–8",
-     "8–12",
+     "1\u20134",
+     "4\u20138",
+     "8\u201312",
      "> 12"
     ]
    },
@@ -5420,9 +5420,9 @@
     ],
     "labels": [
      "Under 15%",
-     "15–25%",
-     "25–40%",
-     "40–50%",
+     "15\u201325%",
+     "25\u201340%",
+     "40\u201350%",
      "Over 50%"
     ]
    },
@@ -5587,8 +5587,9 @@
     "#cleanenergy"
    ],
    "source_url": "https://data.worldbank.org/indicator/EG.ELC.RNWX.ZS",
-   "status": "open",
-   "added_by": "refill"
+   "status": "retry:atlas169",
+   "added_by": "refill",
+   "source_retries": 1
   },
   {
    "id": "t155",
@@ -6286,7 +6287,7 @@
    "id": "t173",
    "topic": "The Length of Primary School",
    "angle": "While the global median is six years, primary school duration ranges from just four years in the UAE to eight years in Ireland.",
-   "format": "map_reveal",
+   "format": "rank_ladder",
    "dataset": {
     "kind": "worldbank",
     "indicator": "SE.PRM.DURS",
@@ -6316,7 +6317,7 @@
     "#education"
    ],
    "source_url": "https://data.worldbank.org/indicator/SE.PRM.DURS",
-   "status": "open",
+   "status": "ready:atlas167",
    "added_by": "refill"
   },
   {
@@ -6392,7 +6393,7 @@
     "#maps me"
    ],
    "source_url": "https://data.worldbank.org/indicator/SP.POP.1564.TO.ZS",
-   "status": "ready:atlas162",
+   "status": "used:atlas162",
    "added_by": "refill"
   },
   {
@@ -6490,19 +6491,19 @@
    },
    "value_format": "{v:.1f}%",
    "hashtags": [
-    "#maps шарing,",
+    "#maps \u0448\u0430\u0440ing,",
     "#geography",
     "#finance"
    ],
    "source_url": "https://data.worldbank.org/indicator/FB.BNK.CAPA.ZS",
-   "status": "ready:atlas164",
+   "status": "used:atlas164",
    "added_by": "refill"
   },
   {
    "id": "t179",
    "topic": "Income Share Held by Poorest 10%",
    "angle": "In most surveyed countries, the poorest 10% of the population receive less than 3% of national income.",
-   "format": "map_reveal",
+   "format": "odd_one_out",
    "dataset": {
     "kind": "worldbank",
     "indicator": "SI.DST.FRST.10",
@@ -6524,8 +6525,9 @@
     "#maps"
    ],
    "source_url": "https://data.worldbank.org/indicator/SI.DST.FRST.10",
-   "status": "open",
-   "added_by": "refill"
+   "status": "failed:RetryError",
+   "added_by": "refill",
+   "source_retries": 3
   },
   {
    "id": "t180",
@@ -6555,7 +6557,7 @@
     "#economy"
    ],
    "source_url": "https://data.worldbank.org/indicator/SI.DST.04TH.20",
-   "status": "ready:atlas166",
+   "status": "used:atlas166",
    "added_by": "refill"
   },
   {
@@ -6652,7 +6654,7 @@
     "#agriculture"
    ],
    "source_url": "https://data.worldbank.org/indicator/AG.PRD.FOOD.XD",
-   "status": "ready:atlas165",
+   "status": "used:atlas165",
    "added_by": "refill"
   }
  ],

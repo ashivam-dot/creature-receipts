@@ -1,0 +1,88 @@
+id: atlas167
+title: Places Ranked by Years in Primary School
+format: rank_ladder
+hook_text: DOUBLE THE SCHOOL
+description: A cinematic comparison of primary school duration worldwide, from the shortest 4-year programs to Ireland's
+  8-year system.
+hashtags:
+- '#education'
+- '#geography'
+- '#countries'
+tags:
+- education
+- duration of primary education
+- countries ranked by duration of primary education
+- Ireland
+- Armenia
+- world map
+- geography
+- atlas in numbers
+sources:
+- https://data.worldbank.org/indicator/SE.PRM.DURS
+dataset:
+  kind: worldbank
+  indicator: SE.PRM.DURS
+  label: Duration of primary education
+  unit: years
+  source: World Bank
+  min_year: 2019
+scale:
+  edges:
+  - 5.0
+  - 6.0
+  - 7.0
+  labels:
+  - 4 years
+  - 5 years
+  - 6 years
+  - 7+ years
+value_format: '{v:.0f} years'
+beats:
+- text: Primary school in Ireland lasts 8 years. In the UAE, it's 4.
+  shot:
+    callouts:
+    - IRL
+    - ARE
+- text: It counts the number of grades in primary school.
+  shot:
+    callouts:
+    - IRL
+    - ARE
+  basis: Primary duration refers to the number of grades (years) in primary school.
+- text: The shortest paths include the UAE, Germany, Russia, and Ukraine, all with 4 years.
+  shot:
+    kind: rank
+    isos:
+    - ARE
+    - DEU
+    - RUS
+    - UKR
+- text: India has 5 years. Brazil also has 5.
+  shot:
+    kind: group
+    isos:
+    - IND
+    - BRA
+- text: The USA, China, and Nigeria have 6. All 3 match the global median.
+  shot:
+    kind: group
+    isos:
+    - USA
+    - CHN
+    - NGA
+- text: Australia is one of the highest, with 7 years of primary education.
+  shot:
+    kind: country
+    iso: AUS
+- text: Ireland has 8 years. That is 2 times the years the UAE has.
+  shot:
+    kind: group
+    isos:
+    - IRL
+    - ARE
+- text: How many years did you spend in primary school?
+  shot:
+    kind: card
+    lines:
+    - How many years?
+    - Primary Education Duration
