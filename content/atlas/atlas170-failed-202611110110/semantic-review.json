@@ -1,0 +1,119 @@
+{
+  "errors": [
+    {
+      "surface": "beat_0",
+      "claim": "Chad has 7.8 times the share of young girls that South Korea has.",
+      "reason": "Chad (18.018%) divided by South Korea (2.347%) is approximately 7.677, not 7.8.",
+      "severity": "factual"
+    }
+  ],
+  "claims": [
+    {
+      "surface": "beat_0",
+      "text": "Chad has 7.8 times the share of young girls that South Korea has.",
+      "isos": [
+        "TCD",
+        "KOR"
+      ],
+      "support": "Chad: 18.0182428299979%, South Korea: 2.34669737447754%"
+    },
+    {
+      "surface": "beat_3",
+      "text": "India is 7.7%. The USA is 5.2%.",
+      "isos": [
+        "IND",
+        "USA"
+      ],
+      "support": "India: 7.69000947609511%, USA: 5.24633084493556%"
+    },
+    {
+      "surface": "beat_4",
+      "text": "Chad is 18%. Central African Republic is 18%. Somalia is 18%.",
+      "isos": [
+        "TCD",
+        "CAF",
+        "SOM"
+      ],
+      "support": "Chad: 18.0182428299979%, Central African Republic: 17.9877441751124%, Somalia: 17.9722491837343%"
+    },
+    {
+      "surface": "beat_5",
+      "text": "Japan is 3%. South Korea is the lowest at 2.3%.",
+      "isos": [
+        "JPN",
+        "KOR"
+      ],
+      "support": "Japan: 3.0335930375036%, South Korea: 2.34669737447754%"
+    }
+  ],
+  "surface_checks": {
+    "title": {
+      "supported": true,
+      "reason": "The title is a stylistic framing of the indicator.",
+      "isos": []
+    },
+    "hook": {
+      "supported": true,
+      "reason": "The hook is a stylistic framing.",
+      "isos": []
+    },
+    "description": {
+      "supported": true,
+      "reason": "The description accurately reflects the indicator definition.",
+      "isos": []
+    },
+    "beat_0": {
+      "supported": false,
+      "reason": "The calculated ratio is 7.68, not 7.8.",
+      "isos": [
+        "TCD",
+        "KOR"
+      ]
+    },
+    "beat_1": {
+      "supported": true,
+      "reason": "The text matches the indicator definition.",
+      "isos": []
+    },
+    "beat_2": {
+      "supported": true,
+      "reason": "The text is a stylistic narrative lead-in.",
+      "isos": []
+    },
+    "beat_3": {
+      "supported": true,
+      "reason": "The values match the evidence.",
+      "isos": [
+        "IND",
+        "USA"
+      ]
+    },
+    "beat_4": {
+      "supported": true,
+      "reason": "The values match the evidence (rounded).",
+      "isos": [
+        "TCD",
+        "CAF",
+        "SOM"
+      ]
+    },
+    "beat_5": {
+      "supported": true,
+      "reason": "The values match the evidence (rounded).",
+      "isos": [
+        "JPN",
+        "KOR"
+      ]
+    },
+    "beat_6": {
+      "supported": true,
+      "reason": "The text is a stylistic question.",
+      "isos": []
+    },
+    "card_6": {
+      "supported": true,
+      "reason": "The text matches the indicator definition.",
+      "isos": []
+    }
+  }
+}

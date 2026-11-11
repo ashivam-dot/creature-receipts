@@ -1,0 +1,77 @@
+id: atlas172
+title: The Global Divide in Relative Poverty
+format: versus
+hook_text: A VAST INCOME GAP
+description: A comparative look at relative poverty rates between India and the United States using World Bank data.
+hashtags:
+- '#economy'
+- '#economics'
+- '#geography'
+tags:
+- wealth
+- people below 50% of median income
+- countries ranked by people below 50% of median income
+- Honduras
+- India
+- world map
+- geography
+- atlas in numbers
+sources:
+- https://data.worldbank.org/indicator/SI.DST.50MD
+dataset:
+  kind: worldbank
+  indicator: SI.DST.50MD
+  label: People below 50% of median income
+  unit: '%'
+  source: World Bank
+  min_year: 2019
+scale:
+  edges:
+  - 6.0
+  - 10.0
+  - 14.0
+  - 18.0
+  labels:
+  - Under 6%
+  - 6% to 10%
+  - 10% to 14%
+  - 14% to 18%
+  - Over 18%
+value_format: '{v:.1f}%'
+beats:
+- text: In the United States, 18.9% live below half the median income. In India, just 2.4%.
+  shot:
+    callouts:
+    - USA
+    - IND
+- text: The percentage of people in the population who live in households whose per capita income or consumption
+    is below half of the median income or consumption per capita.
+  shot:
+    kind: country
+    iso: IND
+  basis: The percentage of people in the population who live in households whose per capita income or consumption
+    is below half of the median income or consumption per capita.
+- text: India is the lowest on the map at 2.4%.
+  shot:
+    kind: country
+    iso: IND
+- text: The United States has 7.9 times the poverty rate of India.
+  shot:
+    kind: country
+    iso: USA
+- text: Honduras sits at the world's highest, with 23.4%.
+  shot:
+    kind: country
+    iso: HND
+- text: India and the United States show opposite ends of this global spectrum.
+  shot:
+    kind: group
+    isos:
+    - IND
+    - USA
+- text: What does your country see for these poverty levels?
+  shot:
+    kind: card
+    lines:
+    - What is your poverty rate?
+    - Relative Income Poverty Data

@@ -1,0 +1,78 @@
+id: atlas171
+title: Is Your Country Losing Wealth to Resource Depletion
+format: spotlight
+hook_text: NATIONAL WEALTH LOST
+description: A look at the percentage of Gross National Income lost to the depletion of energy, mineral, and forest
+  resources across 176 countries and territories.
+hashtags:
+- '#economy'
+- '#geography'
+- '#countries'
+tags:
+- wealth
+- resource depletion as % of gni
+- countries ranked by resource depletion as % of gni
+- Timor-Leste
+- Benin
+- world map
+- geography
+- atlas in numbers
+sources:
+- https://data.worldbank.org/indicator/NY.ADJ.DRES.GN.ZS
+dataset:
+  kind: worldbank
+  indicator: NY.ADJ.DRES.GN.ZS
+  label: Resource depletion as % of GNI
+  unit: '%'
+  source: World Bank
+  min_year: 2019
+scale:
+  edges:
+  - 1.0
+  - 5.0
+  - 10.0
+  - 25.0
+  labels:
+  - Minimal
+  - Low
+  - Moderate
+  - High
+  - Very High
+value_format: '{v:.4f}%'
+beats:
+- text: East Timor loses 57.3% of its national income to the depletion of finite natural resources.
+  shot:
+    callouts:
+    - TLS
+- text: It is the sum of net forest depletion, energy depletion, and mineral depletion.
+  basis: Natural resource depletion is the sum of net forest depletion, energy depletion, and mineral depletion.
+- text: East Timor has 72 times the 0.8% lost by the USA.
+  shot:
+    kind: group
+    isos:
+    - TLS
+    - USA
+- text: DR Congo loses 33.1% and Guyana 29.5%, both far above the 1.4% global median.
+  shot:
+    kind: group
+    isos:
+    - COD
+    - GUY
+- text: Brazil loses 3.7%, Nigeria 2.7%, India 1.6%, and China 1%.
+  shot:
+    kind: rank
+    isos:
+    - BRA
+    - NGA
+    - IND
+    - CHN
+- text: Japan loses just 0.01% of its income.
+  shot:
+    kind: country
+    iso: JPN
+- text: Does your country rely on resources that will eventually run out?
+  shot:
+    kind: card
+    lines:
+    - Is your country's wealth vanishing?
+    - World Bank Resource Depletion Data

@@ -6586,7 +6586,7 @@
     "#maps me"
    ],
    "source_url": "https://data.worldbank.org/indicator/SE.TER.TCHR.FE.ZS",
-   "status": "open",
+   "status": "ready:atlas173",
    "added_by": "refill"
   },
   {
@@ -6700,7 +6700,7 @@
    "id": "t185",
    "topic": "Global Relative Income Poverty",
    "angle": "India records the world's lowest rate of relative poverty, with only 2.4% of people living below half the median income.",
-   "format": "map_reveal",
+   "format": "versus",
    "dataset": {
     "kind": "worldbank",
     "indicator": "SI.DST.50MD",
@@ -6732,14 +6732,14 @@
     "#economics"
    ],
    "source_url": "https://data.worldbank.org/indicator/SI.DST.50MD",
-   "status": "open",
+   "status": "ready:atlas172",
    "added_by": "refill"
   },
   {
    "id": "t186",
    "topic": "The World's Youngest Female Populations",
    "angle": "In several African nations, girls under five make up 18% of the female population, nearly eight times the share in South Korea.",
-   "format": "rank_ladder",
+   "format": "odd_one_out",
    "dataset": {
     "kind": "worldbank",
     "indicator": "SP.POP.0004.FE.5Y",
@@ -6771,7 +6771,7 @@
     "#demographics"
    ],
    "source_url": "https://data.worldbank.org/indicator/SP.POP.0004.FE.5Y",
-   "status": "open",
+   "status": "failed:ValueError",
    "added_by": "refill"
   },
   {
@@ -6856,7 +6856,7 @@
    "id": "t189",
    "topic": "National Wealth Lost to Resource Depletion",
    "angle": "Timor-Leste loses over 57% of its gross national income value through the depletion of finite natural resources like oil and gas.",
-   "format": "rank_ladder",
+   "format": "spotlight",
    "dataset": {
     "kind": "worldbank",
     "indicator": "NY.ADJ.DRES.GN.ZS",
@@ -6888,7 +6888,7 @@
     "#economy"
    ],
    "source_url": "https://data.worldbank.org/indicator/NY.ADJ.DRES.GN.ZS",
-   "status": "open",
+   "status": "failed:ValueError",
    "added_by": "refill"
   },
   {

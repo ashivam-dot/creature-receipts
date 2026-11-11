@@ -1,0 +1,156 @@
+{
+  "errors": [],
+  "claims": [
+    {
+      "surface": "title",
+      "text": "Where Women DOMINATE University Faculty",
+      "isos": [],
+      "support": "The indicator threshold is 50.0, and there are 45 mapped countries and territories at or above this level (dominated/majority share)."
+    },
+    {
+      "surface": "description",
+      "text": "From Jamaica's 80.7% to Togo's 6.1%, see how the share of female university faculty varies around the world.",
+      "isos": [
+        "JAM",
+        "TGO"
+      ],
+      "support": "Jamaica (JAM) value is 80.7% (rank 1), Togo (TGO) value is 6.1% (rank 125)."
+    },
+    {
+      "surface": "beat_0",
+      "text": "In Jamaica, 80.7% of university faculty are women. In DR Congo, just 6.3%.",
+      "isos": [
+        "JAM",
+        "COD"
+      ],
+      "support": "Jamaica value is 80.7% (rank 1), Congo, Dem. Rep. (COD) value is 6.338% displayed as 6.3% (rank 124)."
+    },
+    {
+      "surface": "beat_1",
+      "text": "Jamaica is the world's highest, with female professors leading classrooms across the island.",
+      "isos": [
+        "JAM"
+      ],
+      "support": "Jamaica (JAM) rank is 1, the highest in the universe."
+    },
+    {
+      "surface": "beat_2",
+      "text": "At the opposite end, Togo has 6.1%, the world's lowest.",
+      "isos": [
+        "TGO"
+      ],
+      "support": "Togo (TGO) value is 6.096% displayed as 6.1%, rank 125, the lowest in the universe."
+    },
+    {
+      "surface": "beat_3",
+      "text": "In Germany, women hold 42% of academic staff posts. India has 44.3%.",
+      "isos": [
+        "DEU",
+        "IND"
+      ],
+      "support": "Germany (DEU) value is 41.97% displayed as 42%. India (IND) value is 44.27% displayed as 44.3%."
+    },
+    {
+      "surface": "beat_4",
+      "text": "The United States sits at 51.7%, just above an even split.",
+      "isos": [
+        "USA"
+      ],
+      "support": "United States (USA) value is 51.7%, which is above the 50% even split."
+    },
+    {
+      "surface": "beat_5",
+      "text": "Russia stays higher with 59.6%, where female scholars remain the majority.",
+      "isos": [
+        "RUS"
+      ],
+      "support": "Russian Federation (RUS) value is 59.56% displayed as 59.6% (above 50% majority)."
+    },
+    {
+      "surface": "beat_6",
+      "text": "What percentage of university faculty are women in your country?",
+      "isos": [],
+      "support": "Audience engagement question about the indicator share of female academic staff."
+    },
+    {
+      "surface": "card_6",
+      "text": "Who Teaches College? Female Academic Staff (World Bank)",
+      "isos": [],
+      "support": "Matches the World Bank indicator SE.TER.TCHR.FE.ZS definition."
+    }
+  ],
+  "surface_checks": {
+    "title": {
+      "supported": true,
+      "reason": "The framing describes territories and countries with high shares of female academic staff.",
+      "isos": []
+    },
+    "hook": {
+      "supported": true,
+      "reason": "Stylistic headline introducing the topic of gender distribution in university faculty.",
+      "isos": []
+    },
+    "description": {
+      "supported": true,
+      "reason": "Accurately cites Jamaica's 80.7% and Togo's 6.1% from the dataset.",
+      "isos": [
+        "JAM",
+        "TGO"
+      ]
+    },
+    "beat_0": {
+      "supported": true,
+      "reason": "Jamaica value is 80.7% and DR Congo is 6.3%, matching the source dataset.",
+      "isos": [
+        "JAM",
+        "COD"
+      ]
+    },
+    "beat_1": {
+      "supported": true,
+      "reason": "Jamaica is rank 1 in the dataset, making it the highest.",
+      "isos": [
+        "JAM"
+      ]
+    },
+    "beat_2": {
+      "supported": true,
+      "reason": "Togo is rank 125 with 6.1%, making it the lowest in the dataset.",
+      "isos": [
+        "TGO"
+      ]
+    },
+    "beat_3": {
+      "supported": true,
+      "reason": "Germany is 42% and India is 44.3%, matching the source values.",
+      "isos": [
+        "DEU",
+        "IND"
+      ]
+    },
+    "beat_4": {
+      "supported": true,
+      "reason": "United States value is 51.7%, matching the dataset.",
+      "isos": [
+        "USA"
+      ]
+    },
+    "beat_5": {
+      "supported": true,
+      "reason": "Russian Federation value is 59.6%, matching the dataset.",
+      "isos": [
+        "RUS"
+      ]
+    },
+    "beat_6": {
+      "supported": true,
+      "reason": "Stylistic closing question consistent with the indicator.",
+      "isos": []
+    },
+    "card_6": {
+      "supported": true,
+      "reason": "Accurately reflects the dataset title and World Bank attribution.",
+      "isos": []
+    }
+  }
+}

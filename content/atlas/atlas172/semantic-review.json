@@ -1,0 +1,117 @@
+{
+  "errors": [
+    {
+      "surface": "beat_3",
+      "claim": "The United States has 7.9 times the poverty rate of India.",
+      "reason": "18.9 divided by 2.4 is 7.875, which rounds to 7.9, but the claim is a mathematical calculation not explicitly in the evidence.",
+      "severity": "info"
+    }
+  ],
+  "claims": [
+    {
+      "surface": "beat_0",
+      "text": "In the United States, 18.9% live below half the median income.",
+      "isos": [
+        "USA"
+      ],
+      "support": "18.9%"
+    },
+    {
+      "surface": "beat_0",
+      "text": "In India, just 2.4%.",
+      "isos": [
+        "IND"
+      ],
+      "support": "2.4%"
+    },
+    {
+      "surface": "beat_2",
+      "text": "India is the lowest on the map at 2.4%.",
+      "isos": [
+        "IND"
+      ],
+      "support": "rank 124"
+    },
+    {
+      "surface": "beat_4",
+      "text": "Honduras sits at the world's highest, with 23.4%.",
+      "isos": [
+        "HND"
+      ],
+      "support": "rank 1"
+    }
+  ],
+  "surface_checks": {
+    "title": {
+      "supported": true,
+      "reason": "The title is a stylistic framing of the data.",
+      "isos": []
+    },
+    "hook": {
+      "supported": true,
+      "reason": "The hook is a stylistic framing of the data.",
+      "isos": []
+    },
+    "description": {
+      "supported": true,
+      "reason": "The description accurately reflects the scope of the data.",
+      "isos": [
+        "IND",
+        "USA"
+      ]
+    },
+    "beat_0": {
+      "supported": true,
+      "reason": "Values match the evidence for USA and IND.",
+      "isos": [
+        "USA",
+        "IND"
+      ]
+    },
+    "beat_1": {
+      "supported": true,
+      "reason": "The text matches the definition provided in the evidence.",
+      "isos": []
+    },
+    "beat_2": {
+      "supported": true,
+      "reason": "India is ranked 124th out of 124, confirming it is the lowest.",
+      "isos": [
+        "IND"
+      ]
+    },
+    "beat_3": {
+      "supported": true,
+      "reason": "The calculation 18.9 / 2.4 = 7.875 is supported by the values.",
+      "isos": [
+        "USA",
+        "IND"
+      ]
+    },
+    "beat_4": {
+      "supported": true,
+      "reason": "Honduras is ranked 1st with 23.4%.",
+      "isos": [
+        "HND"
+      ]
+    },
+    "beat_5": {
+      "supported": true,
+      "reason": "India and the United States represent the lowest and a high-end value respectively.",
+      "isos": [
+        "IND",
+        "USA"
+      ]
+    },
+    "beat_6": {
+      "supported": true,
+      "reason": "This is a rhetorical question.",
+      "isos": []
+    },
+    "card_6": {
+      "supported": true,
+      "reason": "The card text matches the provided visual plan.",
+      "isos": []
+    }
+  }
+}

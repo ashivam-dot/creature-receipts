@@ -1,0 +1,76 @@
+id: atlas170
+title: Which Places Have the MOST Young Girls
+format: odd_one_out
+hook_text: A MASSIVE GENERATION GAP
+description: A look at the global distribution of the female population between the ages 0 to 4.
+hashtags:
+- '#population'
+- '#demographics'
+- '#geography'
+tags:
+- population
+- girls aged 0-4 as % of female population
+- countries ranked by girls aged 0-4 as % of female population
+- Chad
+- Korea Rep.
+- world map
+- geography
+- atlas in numbers
+sources:
+- https://data.worldbank.org/indicator/SP.POP.0004.FE.5Y
+dataset:
+  kind: worldbank
+  indicator: SP.POP.0004.FE.5Y
+  label: Girls aged 0-4 as % of female population
+  unit: '%'
+  source: World Bank
+  min_year: 2019
+scale:
+  edges:
+  - 4.0
+  - 7.0
+  - 11.0
+  - 15.0
+  labels:
+  - Under 4%
+  - 4-7%
+  - 7-11%
+  - 11-15%
+  - Over 15%
+value_format: '{v:.1f}%'
+beats:
+- text: Chad has 7.8 times the share of young girls that South Korea has.
+  shot:
+    callouts:
+    - TCD
+    - KOR
+- text: This counts the female population between the ages 0 to 4 as a percentage of the total female population.
+  basis: Female population between the ages 0 to 4 as a percentage of the total female population.
+- text: One big country breaks the pattern. It is not the one you would guess.
+  shot:
+    callouts:
+    - IND
+- text: Look at the USA and India. India is 7.7%. The USA is 5.2%.
+  shot:
+    kind: group
+    isos:
+    - IND
+    - USA
+- text: Chad is 18%. Central African Republic is 18%. Somalia is 18%.
+  shot:
+    kind: rank
+    isos:
+    - TCD
+    - CAF
+    - SOM
+- text: Japan is 3%. South Korea is the lowest at 2.3%.
+  shot:
+    callouts:
+    - JPN
+    - KOR
+- text: Does your country have many young girls?
+  shot:
+    kind: card
+    lines:
+    - How young is your country?
+    - Female population aged 0 to 4

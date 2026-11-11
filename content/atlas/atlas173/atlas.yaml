@@ -1,0 +1,68 @@
+id: atlas173
+title: Where Women DOMINATE University Faculty
+hook_text: CAMPUS GENDER DIVIDE
+description: 'From Jamaica''s 80.7% to Togo''s 6.1%, see how the share of female university faculty varies around
+  the world. Data: World Bank.'
+hashtags:
+- '#education'
+- '#geography'
+- '#countries'
+tags:
+- education
+- share of female university faculty
+- countries ranked by share of female university faculty
+- Jamaica
+- Togo
+- world map
+- geography
+- atlas in numbers
+sources:
+- https://data.worldbank.org/indicator/SE.TER.TCHR.FE.ZS
+dataset:
+  kind: worldbank
+  indicator: SE.TER.TCHR.FE.ZS
+  label: Share of female university faculty
+  unit: '%'
+  source: World Bank
+  min_year: 2019
+scale:
+  kind: threshold
+  at: 50.0
+  labels:
+  - Female majority
+  - Male majority
+value_format: '{v:.1f}%'
+beats:
+- text: In Jamaica, 80.7% of university faculty are women. In DR Congo, just 6.3%.
+  shot:
+    callouts:
+    - JAM
+    - COD
+- text: Jamaica is the world's highest, with female professors leading classrooms across the island.
+  shot:
+    kind: country
+    iso: JAM
+- text: At the opposite end, Togo has 6.1%, the world's lowest.
+  shot:
+    kind: country
+    iso: TGO
+- text: In Germany, women hold 42% of academic staff posts. India has 44.3%.
+  shot:
+    kind: group
+    isos:
+    - DEU
+    - IND
+- text: The United States sits at 51.7%, just above an even split.
+  shot:
+    kind: country
+    iso: USA
+- text: Russia stays higher with 59.6%, where female scholars remain the majority.
+  shot:
+    kind: country
+    iso: RUS
+- text: What percentage of university faculty are women in your country?
+  shot:
+    kind: card
+    lines:
+    - Who Teaches College?
+    - Female Academic Staff (World Bank)
