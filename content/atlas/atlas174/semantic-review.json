@@ -1,0 +1,122 @@
+{
+  "errors": [
+    {
+      "surface": "beat_5",
+      "claim": "Ukraine has 100%. That is 250 times the value seen in Poland.",
+      "reason": "100 divided by 0.4 is 250, but the claim implies a comparison of the actual values. While mathematically 100/0.4 = 250, the phrasing is misleading as it suggests a scale of magnitude rather than a ratio of percentages.",
+      "severity": "info"
+    }
+  ],
+  "claims": [
+    {
+      "surface": "beat_3",
+      "text": "Malawi has 58.1%. Ethiopia has 56.2%. Somalia has 53.6%.",
+      "isos": [
+        "MWI",
+        "ETH",
+        "SOM"
+      ],
+      "support": "MWI: 58.1%, ETH: 56.2%, SOM: 53.6%"
+    },
+    {
+      "surface": "beat_4",
+      "text": "The Netherlands has 47.5%.",
+      "isos": [
+        "NLD"
+      ],
+      "support": "NLD: 47.5%"
+    },
+    {
+      "surface": "beat_5",
+      "text": "Ukraine has 100%.",
+      "isos": [
+        "UKR"
+      ],
+      "support": "UKR: 100%"
+    },
+    {
+      "surface": "beat_6",
+      "text": "Poland is the world's lowest at 0.4%.",
+      "isos": [
+        "POL"
+      ],
+      "support": "POL: 0.4%, Rank 146"
+    }
+  ],
+  "surface_checks": {
+    "title": {
+      "supported": true,
+      "reason": "The title accurately reflects the content of the dataset.",
+      "isos": []
+    },
+    "hook": {
+      "supported": true,
+      "reason": "The hook is a stylistic introduction to the dataset.",
+      "isos": []
+    },
+    "description": {
+      "supported": true,
+      "reason": "The description matches the provided definition and count.",
+      "isos": []
+    },
+    "beat_0": {
+      "supported": true,
+      "reason": "Stylistic framing.",
+      "isos": []
+    },
+    "beat_1": {
+      "supported": true,
+      "reason": "Stylistic question.",
+      "isos": [
+        "NLD",
+        "ETH",
+        "SOM"
+      ]
+    },
+    "beat_2": {
+      "supported": true,
+      "reason": "Matches the provided definition.",
+      "isos": []
+    },
+    "beat_3": {
+      "supported": true,
+      "reason": "Values match the evidence.",
+      "isos": [
+        "MWI",
+        "ETH",
+        "SOM"
+      ]
+    },
+    "beat_4": {
+      "supported": true,
+      "reason": "Value matches the evidence.",
+      "isos": [
+        "NLD"
+      ]
+    },
+    "beat_5": {
+      "supported": true,
+      "reason": "Value matches the evidence.",
+      "isos": [
+        "UKR"
+      ]
+    },
+    "beat_6": {
+      "supported": true,
+      "reason": "Value and rank match the evidence.",
+      "isos": [
+        "POL"
+      ]
+    },
+    "beat_7": {
+      "supported": true,
+      "reason": "Stylistic question.",
+      "isos": []
+    },
+    "card_7": {
+      "supported": true,
+      "reason": "Stylistic text.",
+      "isos": []
+    }
+  }
+}

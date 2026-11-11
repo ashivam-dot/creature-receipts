@@ -1,0 +1,84 @@
+id: atlas176
+title: Places Ranked by Debt Interest Costs
+hook_text: DEBT BURDENS
+description: A look at how much governments spend on debt interest as a percentage of their total expenses, comparing
+  the extreme burdens of Sri Lanka and Ghana to the low costs in Iraq and Germany.
+hashtags:
+- '#data'
+- '#economy'
+- '#geography'
+tags:
+- interest payments as % of expense
+- countries ranked by interest payments as % of expense
+- Sri Lanka
+- Iraq
+- world map
+- geography
+- atlas in numbers
+sources:
+- https://data.worldbank.org/indicator/GC.XPN.INTP.ZS
+dataset:
+  kind: worldbank
+  indicator: GC.XPN.INTP.ZS
+  label: Interest payments as % of expense
+  unit: '%'
+  source: World Bank
+  min_year: 2019
+scale:
+  edges:
+  - 2.0
+  - 6.0
+  - 12.0
+  - 20.0
+  labels:
+  - Minimal (<2%)
+  - Low (2-6%)
+  - Moderate (6-12%)
+  - High (12-20%)
+  - Extreme (>20%)
+value_format: '{v:.2f}%'
+beats:
+- text: Sri Lanka spends 49.4% of total expenses on debt interest. In Iraq, it is 0.01%.
+  shot:
+    callouts:
+    - LKA
+    - IRQ
+- text: Sri Lanka has the world's highest burden. Interest alone consumes nearly half of its total expenses.
+  shot:
+    kind: country
+    iso: LKA
+- text: Iraq is the world's lowest. It pays almost nothing for its debt.
+  shot:
+    kind: country
+    iso: IRQ
+- text: This counts interest on government debt paid to domestic and foreign residents.
+  shot:
+    kind: country
+    iso: LKA
+  basis: Interest payments include interest payments on government debt (including long-term bonds, long-term loans,
+    and other debt instruments) to domestic and foreign residents.
+- text: Brazil at 24.1% and India at 23.2% both face heavy interest costs.
+  shot:
+    kind: group
+    isos:
+    - BRA
+    - IND
+- text: 'USA: 12.9%. UK: 7.8%. Germany: 1.4%.'
+  shot:
+    kind: rank
+    isos:
+    - USA
+    - GBR
+    - DEU
+- text: Sri Lanka has 3.8 times the interest burden of the USA.
+  shot:
+    kind: group
+    isos:
+    - LKA
+    - USA
+- text: How much does your government spend on debt interest?
+  shot:
+    kind: card
+    lines:
+    - DEBT INTEREST?
+    - Interest as % of expense

@@ -1,0 +1,155 @@
+{
+  "errors": [
+    {
+      "surface": "description",
+      "claim": "comparing the extreme burdens of Sri Lanka and Ghana to the low costs in Iraq and Germany.",
+      "reason": "Ghana is not mentioned in the visual plan or the beat-by-beat narration as a primary focus, and the comparison is misleading as it implies a group comparison not fully supported by the narrative flow.",
+      "severity": "style"
+    },
+    {
+      "surface": "beat_2",
+      "claim": "Iraq is the world's lowest.",
+      "reason": "Iraq is the lowest in the provided dataset (rank 137), but the claim is framed as a superlative without explicitly referencing the universe of 137 countries.",
+      "severity": "info"
+    },
+    {
+      "surface": "beat_6",
+      "claim": "Sri Lanka has 3.8 times the interest burden of the USA.",
+      "reason": "49.4 / 12.9 = 3.829. The math is correct, but the claim is based on different years (2023 for both), which is acceptable.",
+      "severity": "info"
+    }
+  ],
+  "claims": [
+    {
+      "surface": "beat_0",
+      "text": "Sri Lanka spends 49.4% of total expenses on debt interest.",
+      "isos": [
+        "LKA"
+      ],
+      "support": "49.4%"
+    },
+    {
+      "surface": "beat_0",
+      "text": "In Iraq, it is 0.01%.",
+      "isos": [
+        "IRQ"
+      ],
+      "support": "0.01%"
+    },
+    {
+      "surface": "beat_1",
+      "text": "Sri Lanka has the world's highest burden.",
+      "isos": [
+        "LKA"
+      ],
+      "support": "rank 1"
+    },
+    {
+      "surface": "beat_4",
+      "text": "Brazil at 24.1% and India at 23.2% both face heavy interest costs.",
+      "isos": [
+        "BRA",
+        "IND"
+      ],
+      "support": "24.1%, 23.2%"
+    },
+    {
+      "surface": "beat_5",
+      "text": "USA: 12.9%. UK: 7.8%. Germany: 1.4%.",
+      "isos": [
+        "USA",
+        "GBR",
+        "DEU"
+      ],
+      "support": "12.9%, 7.8%, 1.4%"
+    },
+    {
+      "surface": "beat_6",
+      "text": "Sri Lanka has 3.8 times the interest burden of the USA.",
+      "isos": [
+        "LKA",
+        "USA"
+      ],
+      "support": "49.4% / 12.9% = 3.8"
+    }
+  ],
+  "surface_checks": {
+    "title": {
+      "supported": true,
+      "reason": "The title accurately reflects the content.",
+      "isos": []
+    },
+    "hook": {
+      "supported": true,
+      "reason": "The hook is a stylistic summary of the topic.",
+      "isos": []
+    },
+    "description": {
+      "supported": true,
+      "reason": "The description summarizes the content, though Ghana is not a focus.",
+      "isos": []
+    },
+    "beat_0": {
+      "supported": true,
+      "reason": "Values match the evidence.",
+      "isos": [
+        "LKA",
+        "IRQ"
+      ]
+    },
+    "beat_1": {
+      "supported": true,
+      "reason": "Sri Lanka is rank 1.",
+      "isos": [
+        "LKA"
+      ]
+    },
+    "beat_2": {
+      "supported": true,
+      "reason": "Iraq is rank 137.",
+      "isos": [
+        "IRQ"
+      ]
+    },
+    "beat_3": {
+      "supported": true,
+      "reason": "Matches the definition provided in the evidence.",
+      "isos": []
+    },
+    "beat_4": {
+      "supported": true,
+      "reason": "Values match the evidence.",
+      "isos": [
+        "BRA",
+        "IND"
+      ]
+    },
+    "beat_5": {
+      "supported": true,
+      "reason": "Values match the evidence.",
+      "isos": [
+        "USA",
+        "GBR",
+        "DEU"
+      ]
+    },
+    "beat_6": {
+      "supported": true,
+      "reason": "Calculation is accurate.",
+      "isos": [
+        "LKA",
+        "USA"
+      ]
+    },
+    "beat_7": {
+      "supported": true,
+      "reason": "Stylistic question.",
+      "isos": []
+    },
+    "card_7": {
+      "supported": true,
+      "reason": "Matches the indicator definition.",
+      "isos": []
+    }
+  }
+}

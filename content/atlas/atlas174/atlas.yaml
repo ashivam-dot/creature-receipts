@@ -1,0 +1,79 @@
+id: atlas174
+title: Places Ranked by Male Part-Time Work
+format: odd_one_out
+hook_text: GLOBAL WORK PATTERNS
+description: This dataset tracks the percentage of male employment that is part-time, defined as less than 35 actual
+  weekly hours worked, covering 146 countries and territories.
+hashtags:
+- '#work'
+- '#workforce'
+- '#geography'
+tags:
+- work
+- share of men in part-time work
+- countries ranked by share of men in part-time work
+- Ukraine
+- Poland
+- world map
+- geography
+- atlas in numbers
+sources:
+- https://data.worldbank.org/indicator/SL.TLF.PART.MA.ZS
+dataset:
+  kind: worldbank
+  indicator: SL.TLF.PART.MA.ZS
+  label: Share of men in part-time work
+  unit: '%'
+  source: World Bank
+  min_year: 2019
+scale:
+  edges:
+  - 10.0
+  - 20.0
+  - 30.0
+  - 45.0
+  labels:
+  - <10%
+  - 10-20%
+  - 20-30%
+  - 30-45%
+  - '>45%'
+value_format: '{v:.1f}%'
+beats:
+- text: One country breaks the global pattern of male part-time work. It is not the expected one.
+- text: Is it the Netherlands, Ethiopia, or Somalia?
+  shot:
+    kind: group
+    isos:
+    - NLD
+    - ETH
+    - SOM
+- text: Part time employment in this series is based on a common definition of less than 35 actual weekly hours
+    worked.
+  basis: Part time employment in this series is based on a common definition of less than 35 actual weekly hours
+    worked.
+- text: Malawi has 58.1%. Ethiopia has 56.2%. Somalia has 53.6%.
+  shot:
+    kind: rank
+    isos:
+    - MWI
+    - ETH
+    - SOM
+- text: The Netherlands has 47.5%.
+  shot:
+    kind: country
+    iso: NLD
+- text: Ukraine has 100%. That is 250 times the value seen in Poland.
+  shot:
+    kind: country
+    iso: UKR
+- text: Poland is the world's lowest at 0.4%.
+  shot:
+    kind: country
+    iso: POL
+- text: How common is part-time work for men in your country?
+  shot:
+    kind: card
+    lines:
+    - Do you work part-time?
+    - Share of men in part-time work

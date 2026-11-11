@@ -1,0 +1,1575 @@
+{
+  "version": 1,
+  "evidence": {
+    "version": 1,
+    "indicator": "GC.XPN.INTP.ZS",
+    "definition": "Interest payments include interest payments on government debt (including long-term bonds, long-term loans, and other debt instruments) to domestic and foreign residents. This indicator is expressed as percentage of total expenses which is any decrease in net worth resulting from a transaction.",
+    "source": "https://data.worldbank.org/indicator/GC.XPN.INTP.ZS",
+    "source_response_sha256": "e362e97aa7eea0d93ffbdafaec196f2ca553daaa69c54f0ce40ceabfdfa064ad",
+    "source_organization": "Government Finance Statistics Yearbook and data files, International Monetary Fund (IMF)",
+    "year_label": "latest available 2019–2024",
+    "universe": "mapped countries and territories with data",
+    "count": 137,
+    "threshold": null,
+    "at_or_above": null,
+    "entities": {
+      "ALB": {
+        "name": "Albania",
+        "value": 7.8375312934103,
+        "display": "7.8%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 56
+      },
+      "AGO": {
+        "name": "Angola",
+        "value": 31.9067465835755,
+        "display": "31.9%",
+        "year": 2019,
+        "unit": "%",
+        "rank": 3
+      },
+      "ARG": {
+        "name": "Argentina",
+        "value": 7.28994415748098,
+        "display": "7.3%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 63
+      },
+      "ARM": {
+        "name": "Armenia",
+        "value": 12.7444830083133,
+        "display": "12.7%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 35
+      },
+      "AUS": {
+        "name": "Australia",
+        "value": 2.97349498522328,
+        "display": "3%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 100
+      },
+      "AUT": {
+        "name": "Austria",
+        "value": 2.54774654927962,
+        "display": "2.5%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 107
+      },
+      "AZE": {
+        "name": "Azerbaijan",
+        "value": 2.05111428349966,
+        "display": "2.1%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 112
+      },
+      "BHS": {
+        "name": "Bahamas, The",
+        "value": 18.4443120587033,
+        "display": "18.4%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 13
+      },
+      "BHR": {
+        "name": "Bahrain",
+        "value": 18.906653108688,
+        "display": "18.9%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 12
+      },
+      "BGD": {
+        "name": "Bangladesh",
+        "value": 24.0308309605995,
+        "display": "24%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 7
+      },
+      "BLR": {
+        "name": "Belarus",
+        "value": 5.39351570328502,
+        "display": "5.4%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 77
+      },
+      "BEL": {
+        "name": "Belgium",
+        "value": 3.20492444536103,
+        "display": "3.2%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 95
+      },
+      "BTN": {
+        "name": "Bhutan",
+        "value": 1.89677556207645,
+        "display": "1.9%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 114
+      },
+      "BIH": {
+        "name": "Bosnia and Herzegovina",
+        "value": 2.10678510173839,
+        "display": "2.1%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 110
+      },
+      "BWA": {
+        "name": "Botswana",
+        "value": 4.03598322419164,
+        "display": "4%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 87
+      },
+      "BRA": {
+        "name": "Brazil",
+        "value": 24.1406744442752,
+        "display": "24.1%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 6
+      },
+      "BGR": {
+        "name": "Bulgaria",
+        "value": 1.30174453433701,
+        "display": "1.3%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 124
+      },
+      "BFA": {
+        "name": "Burkina Faso",
+        "value": 11.9321922197332,
+        "display": "11.9%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 39
+      },
+      "BDI": {
+        "name": "Burundi",
+        "value": 3.32723691972429,
+        "display": "3.3%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 93
+      },
+      "CPV": {
+        "name": "Cabo Verde",
+        "value": 8.76047623865603,
+        "display": "8.8%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 50
+      },
+      "KHM": {
+        "name": "Cambodia",
+        "value": 2.09949971745433,
+        "display": "2.1%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 111
+      },
+      "CMR": {
+        "name": "Cameroon",
+        "value": 7.79214407700028,
+        "display": "7.8%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 57
+      },
+      "CAN": {
+        "name": "Canada",
+        "value": 7.6221859232897,
+        "display": "7.6%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 61
+      },
+      "CAF": {
+        "name": "Central African Republic",
+        "value": 5.17379201333978,
+        "display": "5.2%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 78
+      },
+      "CHL": {
+        "name": "Chile",
+        "value": 4.31931404443204,
+        "display": "4.3%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 83
+      },
+      "COL": {
+        "name": "Colombia",
+        "value": 13.184979951153,
+        "display": "13.2%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 33
+      },
+      "COD": {
+        "name": "Congo, Dem. Rep.",
+        "value": 0.67820755951564,
+        "display": "0.7%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 129
+      },
+      "COG": {
+        "name": "Congo, Rep.",
+        "value": 11.5059394233198,
+        "display": "11.5%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 40
+      },
+      "CRI": {
+        "name": "Costa Rica",
+        "value": 16.7149833783003,
+        "display": "16.7%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 16
+      },
+      "CIV": {
+        "name": "Cote d'Ivoire",
+        "value": 14.1441585161889,
+        "display": "14.1%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 28
+      },
+      "HRV": {
+        "name": "Croatia",
+        "value": 4.17590376004244,
+        "display": "4.2%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 85
+      },
+      "CYP": {
+        "name": "Cyprus",
+        "value": 3.05308635048373,
+        "display": "3.1%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 99
+      },
+      "CZE": {
+        "name": "Czechia",
+        "value": 3.14855304194982,
+        "display": "3.1%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 97
+      },
+      "DNK": {
+        "name": "Denmark",
+        "value": 1.39027560207261,
+        "display": "1.4%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 121
+      },
+      "DOM": {
+        "name": "Dominican Republic",
+        "value": 17.5049306519082,
+        "display": "17.5%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 14
+      },
+      "ECU": {
+        "name": "Ecuador",
+        "value": 4.74391645927243,
+        "display": "4.7%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 81
+      },
+      "SLV": {
+        "name": "El Salvador",
+        "value": 14.0991164041491,
+        "display": "14.1%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 30
+      },
+      "GNQ": {
+        "name": "Equatorial Guinea",
+        "value": 9.94326797368154,
+        "display": "9.9%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 45
+      },
+      "EST": {
+        "name": "Estonia",
+        "value": 0.964385532833384,
+        "display": "1%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 127
+      },
+      "SWZ": {
+        "name": "Eswatini",
+        "value": 7.62139280448234,
+        "display": "7.6%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 62
+      },
+      "ETH": {
+        "name": "Ethiopia",
+        "value": 9.02815413293203,
+        "display": "9%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 49
+      },
+      "FJI": {
+        "name": "Fiji",
+        "value": 14.5757719608,
+        "display": "14.6%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 26
+      },
+      "FIN": {
+        "name": "Finland",
+        "value": 2.00332800417632,
+        "display": "2%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 113
+      },
+      "FRA": {
+        "name": "France",
+        "value": 3.39881626150649,
+        "display": "3.4%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 92
+      },
+      "GAB": {
+        "name": "Gabon",
+        "value": 20.3614908965219,
+        "display": "20.4%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 10
+      },
+      "GEO": {
+        "name": "Georgia",
+        "value": 5.86005231139977,
+        "display": "5.9%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 73
+      },
+      "DEU": {
+        "name": "Germany",
+        "value": 1.36063064048218,
+        "display": "1.4%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 123
+      },
+      "GHA": {
+        "name": "Ghana",
+        "value": 32.7918765176006,
+        "display": "32.8%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 2
+      },
+      "GRC": {
+        "name": "Greece",
+        "value": 7.26940845494491,
+        "display": "7.3%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 64
+      },
+      "GTM": {
+        "name": "Guatemala",
+        "value": 11.9597545656155,
+        "display": "12%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 38
+      },
+      "GNB": {
+        "name": "Guinea-Bissau",
+        "value": 14.9250253234672,
+        "display": "14.9%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 24
+      },
+      "HND": {
+        "name": "Honduras",
+        "value": 9.95222571059726,
+        "display": "10%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 44
+      },
+      "HUN": {
+        "name": "Hungary",
+        "value": 6.63656973475662,
+        "display": "6.6%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 65
+      },
+      "ISL": {
+        "name": "Iceland",
+        "value": 14.7385352937588,
+        "display": "14.7%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 25
+      },
+      "IND": {
+        "name": "India",
+        "value": 23.2265929898439,
+        "display": "23.2%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 8
+      },
+      "IRQ": {
+        "name": "Iraq",
+        "value": 0.0081562139783722,
+        "display": "0.01%",
+        "year": 2019,
+        "unit": "%",
+        "rank": 137
+      },
+      "IRL": {
+        "name": "Ireland",
+        "value": 3.30477653382315,
+        "display": "3.3%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 94
+      },
+      "ISR": {
+        "name": "Israel",
+        "value": 7.65491515262077,
+        "display": "7.7%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 59
+      },
+      "ITA": {
+        "name": "Italy",
+        "value": 7.64920787378101,
+        "display": "7.6%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 60
+      },
+      "JAM": {
+        "name": "Jamaica",
+        "value": 21.9928227167205,
+        "display": "22%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 9
+      },
+      "JOR": {
+        "name": "Jordan",
+        "value": 16.5081581013873,
+        "display": "16.5%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 17
+      },
+      "KAZ": {
+        "name": "Kazakhstan",
+        "value": 8.67727591100597,
+        "display": "8.7%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 52
+      },
+      "KEN": {
+        "name": "Kenya",
+        "value": 16.3847586300693,
+        "display": "16.4%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 18
+      },
+      "KIR": {
+        "name": "Kiribati",
+        "value": 0.754132350743955,
+        "display": "0.8%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 128
+      },
+      "KOR": {
+        "name": "Korea, Rep.",
+        "value": 4.42673830435798,
+        "display": "4.4%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 82
+      },
+      "KGZ": {
+        "name": "Kyrgyz Republic",
+        "value": 3.15680858054618,
+        "display": "3.2%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 96
+      },
+      "LAO": {
+        "name": "Lao PDR",
+        "value": 16.9926114542933,
+        "display": "17%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 15
+      },
+      "LVA": {
+        "name": "Latvia",
+        "value": 1.85834760754293,
+        "display": "1.9%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 115
+      },
+      "LBN": {
+        "name": "Lebanon",
+        "value": 15.2348051210285,
+        "display": "15.2%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 22
+      },
+      "LSO": {
+        "name": "Lesotho",
+        "value": 3.9938168439388,
+        "display": "4%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 89
+      },
+      "LTU": {
+        "name": "Lithuania",
+        "value": 1.45328967238392,
+        "display": "1.5%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 120
+      },
+      "LUX": {
+        "name": "Luxembourg",
+        "value": 0.600360770108885,
+        "display": "0.6%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 130
+      },
+      "MDG": {
+        "name": "Madagascar",
+        "value": 6.32279229112892,
+        "display": "6.3%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 68
+      },
+      "MWI": {
+        "name": "Malawi",
+        "value": 26.3476413023757,
+        "display": "26.3%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 5
+      },
+      "MYS": {
+        "name": "Malaysia",
+        "value": 14.9336814453094,
+        "display": "14.9%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 23
+      },
+      "MLI": {
+        "name": "Mali",
+        "value": 8.48018272317572,
+        "display": "8.5%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 53
+      },
+      "MLT": {
+        "name": "Malta",
+        "value": 3.08556992208013,
+        "display": "3.1%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 98
+      },
+      "MHL": {
+        "name": "Marshall Islands",
+        "value": 0.46196573982872,
+        "display": "0.5%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 133
+      },
+      "MUS": {
+        "name": "Mauritius",
+        "value": 8.4122860514143,
+        "display": "8.4%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 54
+      },
+      "MEX": {
+        "name": "Mexico",
+        "value": 15.7675933805407,
+        "display": "15.8%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 20
+      },
+      "FSM": {
+        "name": "Micronesia, Fed. Sts.",
+        "value": 0.599522143120964,
+        "display": "0.6%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 131
+      },
+      "MDA": {
+        "name": "Moldova",
+        "value": 5.06637819324406,
+        "display": "5.1%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 79
+      },
+      "MNG": {
+        "name": "Mongolia",
+        "value": 6.00938844942534,
+        "display": "6%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 70
+      },
+      "MAR": {
+        "name": "Morocco",
+        "value": 7.9281220953823,
+        "display": "7.9%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 55
+      },
+      "MOZ": {
+        "name": "Mozambique",
+        "value": 11.3013980433644,
+        "display": "11.3%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 41
+      },
+      "MMR": {
+        "name": "Myanmar",
+        "value": 10.2335200734128,
+        "display": "10.2%",
+        "year": 2019,
+        "unit": "%",
+        "rank": 43
+      },
+      "NAM": {
+        "name": "Namibia",
+        "value": 14.1395836682992,
+        "display": "14.1%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 29
+      },
+      "NPL": {
+        "name": "Nepal",
+        "value": 4.10545778120049,
+        "display": "4.1%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 86
+      },
+      "NLD": {
+        "name": "Netherlands",
+        "value": 1.58766840983001,
+        "display": "1.6%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 118
+      },
+      "NZL": {
+        "name": "New Zealand",
+        "value": 2.97099182325874,
+        "display": "3%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 101
+      },
+      "NIC": {
+        "name": "Nicaragua",
+        "value": 9.20916035188721,
+        "display": "9.2%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 48
+      },
+      "MKD": {
+        "name": "North Macedonia",
+        "value": 4.29428142724082,
+        "display": "4.3%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 84
+      },
+      "NOR": {
+        "name": "Norway",
+        "value": 1.56038555006417,
+        "display": "1.6%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 119
+      },
+      "PLW": {
+        "name": "Palau",
+        "value": 0.501033462894223,
+        "display": "0.5%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 132
+      },
+      "PAN": {
+        "name": "Panama",
+        "value": 13.3603368658693,
+        "display": "13.4%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 31
+      },
+      "PNG": {
+        "name": "Papua New Guinea",
+        "value": 12.2822739880754,
+        "display": "12.3%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 37
+      },
+      "PRY": {
+        "name": "Paraguay",
+        "value": 8.76003061289144,
+        "display": "8.8%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 51
+      },
+      "PER": {
+        "name": "Peru",
+        "value": 6.08517390018485,
+        "display": "6.1%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 69
+      },
+      "PHL": {
+        "name": "Philippines",
+        "value": 15.3092399067996,
+        "display": "15.3%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 21
+      },
+      "POL": {
+        "name": "Poland",
+        "value": 4.78929268964856,
+        "display": "4.8%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 80
+      },
+      "PRT": {
+        "name": "Portugal",
+        "value": 5.72944714254288,
+        "display": "5.7%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 75
+      },
+      "ROU": {
+        "name": "Romania",
+        "value": 3.86890621327426,
+        "display": "3.9%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 90
+      },
+      "RUS": {
+        "name": "Russian Federation",
+        "value": 2.35404393439969,
+        "display": "2.4%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 108
+      },
+      "RWA": {
+        "name": "Rwanda",
+        "value": 9.8450103437569,
+        "display": "9.8%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 46
+      },
+      "WSM": {
+        "name": "Samoa",
+        "value": 1.66371065288605,
+        "display": "1.7%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 117
+      },
+      "SMR": {
+        "name": "San Marino",
+        "value": 5.87729865530332,
+        "display": "5.9%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 72
+      },
+      "SAU": {
+        "name": "Saudi Arabia",
+        "value": 3.414461648629,
+        "display": "3.4%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 91
+      },
+      "SEN": {
+        "name": "Senegal",
+        "value": 13.1980129777505,
+        "display": "13.2%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 32
+      },
+      "SRB": {
+        "name": "Serbia",
+        "value": 3.99619171926037,
+        "display": "4%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 88
+      },
+      "SGP": {
+        "name": "Singapore",
+        "value": 0.440005500976707,
+        "display": "0.4%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 134
+      },
+      "SVK": {
+        "name": "Slovak Republic",
+        "value": 2.6643027875529,
+        "display": "2.7%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 106
+      },
+      "SVN": {
+        "name": "Slovenia",
+        "value": 2.79145620999002,
+        "display": "2.8%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 105
+      },
+      "SLB": {
+        "name": "Solomon Islands",
+        "value": 1.26944073419449,
+        "display": "1.3%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 125
+      },
+      "SOM": {
+        "name": "Somalia, Fed. Rep.",
+        "value": 0.33875897932055,
+        "display": "0.3%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 135
+      },
+      "ZAF": {
+        "name": "South Africa",
+        "value": 14.2905939785224,
+        "display": "14.3%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 27
+      },
+      "ESP": {
+        "name": "Spain",
+        "value": 5.9115512845656,
+        "display": "5.9%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 71
+      },
+      "LKA": {
+        "name": "Sri Lanka",
+        "value": 49.4413883545725,
+        "display": "49.4%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 1
+      },
+      "KNA": {
+        "name": "St. Kitts and Nevis",
+        "value": 2.94486215538847,
+        "display": "2.9%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 104
+      },
+      "SWE": {
+        "name": "Sweden",
+        "value": 1.36779658865395,
+        "display": "1.4%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 122
+      },
+      "CHE": {
+        "name": "Switzerland",
+        "value": 0.976513506236558,
+        "display": "1%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 126
+      },
+      "TJK": {
+        "name": "Tajikistan",
+        "value": 6.3909014076452,
+        "display": "6.4%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 66
+      },
+      "TZA": {
+        "name": "Tanzania",
+        "value": 12.5639155910495,
+        "display": "12.6%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 36
+      },
+      "THA": {
+        "name": "Thailand",
+        "value": 5.48933437260126,
+        "display": "5.5%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 76
+      },
+      "TLS": {
+        "name": "Timor-Leste",
+        "value": 0.133280748691546,
+        "display": "0.1%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 136
+      },
+      "TGO": {
+        "name": "Togo",
+        "value": 16.1868932031131,
+        "display": "16.2%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 19
+      },
+      "TON": {
+        "name": "Tonga",
+        "value": 1.69327181095932,
+        "display": "1.7%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 116
+      },
+      "TTO": {
+        "name": "Trinidad and Tobago",
+        "value": 9.58115113877906,
+        "display": "9.6%",
+        "year": 2019,
+        "unit": "%",
+        "rank": 47
+      },
+      "TUR": {
+        "name": "Turkiye",
+        "value": 11.0423652945442,
+        "display": "11%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 42
+      },
+      "UGA": {
+        "name": "Uganda",
+        "value": 19.4796562861475,
+        "display": "19.5%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 11
+      },
+      "UKR": {
+        "name": "Ukraine",
+        "value": 5.80369879340924,
+        "display": "5.8%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 74
+      },
+      "ARE": {
+        "name": "United Arab Emirates",
+        "value": 2.27182764673082,
+        "display": "2.3%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 109
+      },
+      "GBR": {
+        "name": "United Kingdom",
+        "value": 7.77115632733349,
+        "display": "7.8%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 58
+      },
+      "USA": {
+        "name": "United States",
+        "value": 12.8991192094491,
+        "display": "12.9%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 34
+      },
+      "URY": {
+        "name": "Uruguay",
+        "value": 6.37204805922112,
+        "display": "6.4%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 67
+      },
+      "UZB": {
+        "name": "Uzbekistan",
+        "value": 2.9451729012447,
+        "display": "2.9%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 103
+      },
+      "VUT": {
+        "name": "Vanuatu",
+        "value": 2.96453285893771,
+        "display": "3%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 102
+      },
+      "ZMB": {
+        "name": "Zambia",
+        "value": 26.5318916491576,
+        "display": "26.5%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 4
+      }
+    }
+  },
+  "review": {
+    "errors": [],
+    "claims": [
+      {
+        "surface": "beat_0",
+        "text": "Sri Lanka spends 49.4% of total expenses on debt interest.",
+        "isos": [
+          "LKA"
+        ],
+        "support": "49.4%",
+        "evidence": {
+          "LKA": {
+            "name": "Sri Lanka",
+            "value": 49.4413883545725,
+            "display": "49.4%",
+            "year": 2023,
+            "unit": "%",
+            "rank": 1
+          }
+        }
+      },
+      {
+        "surface": "beat_0",
+        "text": "In Iraq, it is 0.01%.",
+        "isos": [
+          "IRQ"
+        ],
+        "support": "0.01%",
+        "evidence": {
+          "IRQ": {
+            "name": "Iraq",
+            "value": 0.0081562139783722,
+            "display": "0.01%",
+            "year": 2019,
+            "unit": "%",
+            "rank": 137
+          }
+        }
+      },
+      {
+        "surface": "beat_1",
+        "text": "Sri Lanka has the world's highest burden.",
+        "isos": [
+          "LKA"
+        ],
+        "support": "rank 1",
+        "evidence": {
+          "LKA": {
+            "name": "Sri Lanka",
+            "value": 49.4413883545725,
+            "display": "49.4%",
+            "year": 2023,
+            "unit": "%",
+            "rank": 1
+          }
+        }
+      },
+      {
+        "surface": "beat_4",
+        "text": "Brazil at 24.1% and India at 23.2% both face heavy interest costs.",
+        "isos": [
+          "BRA",
+          "IND"
+        ],
+        "support": "24.1%, 23.2%",
+        "evidence": {
+          "BRA": {
+            "name": "Brazil",
+            "value": 24.1406744442752,
+            "display": "24.1%",
+            "year": 2023,
+            "unit": "%",
+            "rank": 6
+          },
+          "IND": {
+            "name": "India",
+            "value": 23.2265929898439,
+            "display": "23.2%",
+            "year": 2022,
+            "unit": "%",
+            "rank": 8
+          }
+        }
+      },
+      {
+        "surface": "beat_5",
+        "text": "USA: 12.9%. UK: 7.8%. Germany: 1.4%.",
+        "isos": [
+          "USA",
+          "GBR",
+          "DEU"
+        ],
+        "support": "12.9%, 7.8%, 1.4%",
+        "evidence": {
+          "USA": {
+            "name": "United States",
+            "value": 12.8991192094491,
+            "display": "12.9%",
+            "year": 2023,
+            "unit": "%",
+            "rank": 34
+          },
+          "GBR": {
+            "name": "United Kingdom",
+            "value": 7.77115632733349,
+            "display": "7.8%",
+            "year": 2023,
+            "unit": "%",
+            "rank": 58
+          },
+          "DEU": {
+            "name": "Germany",
+            "value": 1.36063064048218,
+            "display": "1.4%",
+            "year": 2022,
+            "unit": "%",
+            "rank": 123
+          }
+        }
+      },
+      {
+        "surface": "beat_6",
+        "text": "Sri Lanka has 3.8 times the interest burden of the USA.",
+        "isos": [
+          "LKA",
+          "USA"
+        ],
+        "support": "49.4% / 12.9% = 3.8",
+        "evidence": {
+          "LKA": {
+            "name": "Sri Lanka",
+            "value": 49.4413883545725,
+            "display": "49.4%",
+            "year": 2023,
+            "unit": "%",
+            "rank": 1
+          },
+          "USA": {
+            "name": "United States",
+            "value": 12.8991192094491,
+            "display": "12.9%",
+            "year": 2023,
+            "unit": "%",
+            "rank": 34
+          }
+        }
+      },
+      {
+        "surface": "title",
+        "text": "Places Ranked by Debt Interest Costs",
+        "isos": [],
+        "support": "The title accurately reflects the content.",
+        "method": "complete-surface-check",
+        "evidence": {}
+      },
+      {
+        "surface": "hook",
+        "text": "DEBT BURDENS",
+        "isos": [],
+        "support": "The hook is a stylistic summary of the topic.",
+        "method": "complete-surface-check",
+        "evidence": {}
+      },
+      {
+        "surface": "description",
+        "text": "A look at how much governments spend on debt interest as a percentage of their total expenses, comparing the extreme burdens of Sri Lanka and Ghana to the low costs in Iraq and Germany.",
+        "isos": [],
+        "support": "The description summarizes the content, though Ghana is not a focus.",
+        "method": "complete-surface-check",
+        "evidence": {}
+      },
+      {
+        "surface": "beat_0",
+        "text": "Sri Lanka spends 49.4% of total expenses on debt interest. In Iraq, it is 0.01%.",
+        "isos": [
+          "LKA",
+          "IRQ"
+        ],
+        "support": "Values match the evidence.",
+        "method": "complete-surface-check",
+        "evidence": {
+          "LKA": {
+            "name": "Sri Lanka",
+            "value": 49.4413883545725,
+            "display": "49.4%",
+            "year": 2023,
+            "unit": "%",
+            "rank": 1
+          },
+          "IRQ": {
+            "name": "Iraq",
+            "value": 0.0081562139783722,
+            "display": "0.01%",
+            "year": 2019,
+            "unit": "%",
+            "rank": 137
+          }
+        }
+      },
+      {
+        "surface": "beat_1",
+        "text": "Sri Lanka has the world's highest burden. Interest alone consumes nearly half of its total expenses.",
+        "isos": [
+          "LKA"
+        ],
+        "support": "Sri Lanka is rank 1.",
+        "method": "complete-surface-check",
+        "evidence": {
+          "LKA": {
+            "name": "Sri Lanka",
+            "value": 49.4413883545725,
+            "display": "49.4%",
+            "year": 2023,
+            "unit": "%",
+            "rank": 1
+          }
+        }
+      },
+      {
+        "surface": "beat_2",
+        "text": "Iraq is the world's lowest. It pays almost nothing for its debt.",
+        "isos": [
+          "IRQ"
+        ],
+        "support": "Iraq is rank 137.",
+        "method": "complete-surface-check",
+        "evidence": {
+          "IRQ": {
+            "name": "Iraq",
+            "value": 0.0081562139783722,
+            "display": "0.01%",
+            "year": 2019,
+            "unit": "%",
+            "rank": 137
+          }
+        }
+      },
+      {
+        "surface": "beat_3",
+        "text": "This counts interest on government debt paid to domestic and foreign residents.",
+        "isos": [],
+        "support": "Matches the definition provided in the evidence.",
+        "method": "complete-surface-check",
+        "evidence": {}
+      },
+      {
+        "surface": "beat_4",
+        "text": "Brazil at 24.1% and India at 23.2% both face heavy interest costs.",
+        "isos": [
+          "BRA",
+          "IND"
+        ],
+        "support": "Values match the evidence.",
+        "method": "complete-surface-check",
+        "evidence": {
+          "BRA": {
+            "name": "Brazil",
+            "value": 24.1406744442752,
+            "display": "24.1%",
+            "year": 2023,
+            "unit": "%",
+            "rank": 6
+          },
+          "IND": {
+            "name": "India",
+            "value": 23.2265929898439,
+            "display": "23.2%",
+            "year": 2022,
+            "unit": "%",
+            "rank": 8
+          }
+        }
+      },
+      {
+        "surface": "beat_5",
+        "text": "USA: 12.9%. UK: 7.8%. Germany: 1.4%.",
+        "isos": [
+          "USA",
+          "GBR",
+          "DEU"
+        ],
+        "support": "Values match the evidence.",
+        "method": "complete-surface-check",
+        "evidence": {
+          "USA": {
+            "name": "United States",
+            "value": 12.8991192094491,
+            "display": "12.9%",
+            "year": 2023,
+            "unit": "%",
+            "rank": 34
+          },
+          "GBR": {
+            "name": "United Kingdom",
+            "value": 7.77115632733349,
+            "display": "7.8%",
+            "year": 2023,
+            "unit": "%",
+            "rank": 58
+          },
+          "DEU": {
+            "name": "Germany",
+            "value": 1.36063064048218,
+            "display": "1.4%",
+            "year": 2022,
+            "unit": "%",
+            "rank": 123
+          }
+        }
+      },
+      {
+        "surface": "beat_6",
+        "text": "Sri Lanka has 3.8 times the interest burden of the USA.",
+        "isos": [
+          "LKA",
+          "USA"
+        ],
+        "support": "Calculation is accurate.",
+        "method": "complete-surface-check",
+        "evidence": {
+          "LKA": {
+            "name": "Sri Lanka",
+            "value": 49.4413883545725,
+            "display": "49.4%",
+            "year": 2023,
+            "unit": "%",
+            "rank": 1
+          },
+          "USA": {
+            "name": "United States",
+            "value": 12.8991192094491,
+            "display": "12.9%",
+            "year": 2023,
+            "unit": "%",
+            "rank": 34
+          }
+        }
+      },
+      {
+        "surface": "beat_7",
+        "text": "How much does your government spend on debt interest?",
+        "isos": [],
+        "support": "Stylistic question.",
+        "method": "complete-surface-check",
+        "evidence": {}
+      },
+      {
+        "surface": "card_7",
+        "text": [
+          "DEBT INTEREST?",
+          "Interest as % of expense"
+        ],
+        "isos": [],
+        "support": "Matches the indicator definition.",
+        "method": "complete-surface-check",
+        "evidence": {}
+      }
+    ],
+    "surface_checks": {
+      "title": {
+        "supported": true,
+        "reason": "The title accurately reflects the content.",
+        "isos": []
+      },
+      "hook": {
+        "supported": true,
+        "reason": "The hook is a stylistic summary of the topic.",
+        "isos": []
+      },
+      "description": {
+        "supported": true,
+        "reason": "The description summarizes the content, though Ghana is not a focus.",
+        "isos": []
+      },
+      "beat_0": {
+        "supported": true,
+        "reason": "Values match the evidence.",
+        "isos": [
+          "LKA",
+          "IRQ"
+        ]
+      },
+      "beat_1": {
+        "supported": true,
+        "reason": "Sri Lanka is rank 1.",
+        "isos": [
+          "LKA"
+        ]
+      },
+      "beat_2": {
+        "supported": true,
+        "reason": "Iraq is rank 137.",
+        "isos": [
+          "IRQ"
+        ]
+      },
+      "beat_3": {
+        "supported": true,
+        "reason": "Matches the definition provided in the evidence.",
+        "isos": []
+      },
+      "beat_4": {
+        "supported": true,
+        "reason": "Values match the evidence.",
+        "isos": [
+          "BRA",
+          "IND"
+        ]
+      },
+      "beat_5": {
+        "supported": true,
+        "reason": "Values match the evidence.",
+        "isos": [
+          "USA",
+          "GBR",
+          "DEU"
+        ]
+      },
+      "beat_6": {
+        "supported": true,
+        "reason": "Calculation is accurate.",
+        "isos": [
+          "LKA",
+          "USA"
+        ]
+      },
+      "beat_7": {
+        "supported": true,
+        "reason": "Stylistic question.",
+        "isos": []
+      },
+      "card_7": {
+        "supported": true,
+        "reason": "Matches the indicator definition.",
+        "isos": []
+      }
+    },
+    "warnings": [
+      {
+        "surface": "description",
+        "claim": "comparing the extreme burdens of Sri Lanka and Ghana to the low costs in Iraq and Germany.",
+        "reason": "Ghana is not mentioned in the visual plan or the beat-by-beat narration as a primary focus, and the comparison is misleading as it implies a group comparison not fully supported by the narrative flow.",
+        "severity": "style"
+      },
+      {
+        "surface": "beat_2",
+        "claim": "Iraq is the world's lowest.",
+        "reason": "Iraq is the lowest in the provided dataset (rank 137), but the claim is framed as a superlative without explicitly referencing the universe of 137 countries.",
+        "severity": "info"
+      },
+      {
+        "surface": "beat_6",
+        "claim": "Sri Lanka has 3.8 times the interest burden of the USA.",
+        "reason": "49.4 / 12.9 = 3.829. The math is correct, but the claim is based on different years (2023 for both), which is acceptable.",
+        "severity": "info"
+      }
+    ]
+  },
+  "script_sha256": "2c2a6c3c62d3fc9a0a58a6340f0dd49a316996678f28ed45aa358bc84cd836a3",
+  "data_sha256": "08e84ce26176ef942d750aa8f7d36afbe8262009e2443f664c3b4d87d30259ed",
+  "reviewer_model": "gemini-3.1-flash-lite"
+}

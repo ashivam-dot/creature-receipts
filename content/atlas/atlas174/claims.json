@@ -1,0 +1,1558 @@
+{
+  "version": 1,
+  "evidence": {
+    "version": 1,
+    "indicator": "SL.TLF.PART.MA.ZS",
+    "definition": "Part-time employment rate represents the percentage of employment that is part time. Part time employment in this series is based on a common definition of less than 35 actual weekly hours worked.",
+    "source": "https://data.worldbank.org/indicator/SL.TLF.PART.MA.ZS",
+    "source_response_sha256": "85915ec09970b17262aecf0e3d2cfbaceae15e7a5ac66c4b535ce2943d847c99",
+    "source_organization": "Wages and Working Time Statistics database (COND), International Labour Organization (ILO), uri: https://ilostat.ilo.org/data/bulk/, publisher: ILOSTAT, type: external database, date accessed: September 28, 2026",
+    "year_label": "latest available 2019–2025",
+    "universe": "mapped countries and territories with data",
+    "count": 146,
+    "threshold": null,
+    "at_or_above": null,
+    "entities": {
+      "AFG": {
+        "name": "Afghanistan",
+        "value": 23.079,
+        "display": "23.1%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 70
+      },
+      "ALB": {
+        "name": "Albania",
+        "value": 14.848,
+        "display": "14.8%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 109
+      },
+      "AGO": {
+        "name": "Angola",
+        "value": 24.369,
+        "display": "24.4%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 64
+      },
+      "ATG": {
+        "name": "Antigua and Barbuda",
+        "value": 11.127,
+        "display": "11.1%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 126
+      },
+      "ARG": {
+        "name": "Argentina",
+        "value": 30.313,
+        "display": "30.3%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 44
+      },
+      "ARM": {
+        "name": "Armenia",
+        "value": 15.583,
+        "display": "15.6%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 102
+      },
+      "AUS": {
+        "name": "Australia",
+        "value": 21.203,
+        "display": "21.2%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 79
+      },
+      "AUT": {
+        "name": "Austria",
+        "value": 37.411,
+        "display": "37.4%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 23
+      },
+      "BHS": {
+        "name": "Bahamas, The",
+        "value": 13.839,
+        "display": "13.8%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 112
+      },
+      "BGD": {
+        "name": "Bangladesh",
+        "value": 9.323,
+        "display": "9.3%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 131
+      },
+      "BRB": {
+        "name": "Barbados",
+        "value": 6.323,
+        "display": "6.3%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 140
+      },
+      "BLR": {
+        "name": "Belarus",
+        "value": 96.024,
+        "display": "96%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 3
+      },
+      "BEL": {
+        "name": "Belgium",
+        "value": 32.245,
+        "display": "32.2%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 35
+      },
+      "BLZ": {
+        "name": "Belize",
+        "value": 22.75,
+        "display": "22.8%",
+        "year": 2019,
+        "unit": "%",
+        "rank": 72
+      },
+      "BEN": {
+        "name": "Benin",
+        "value": 33.353,
+        "display": "33.4%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 33
+      },
+      "BTN": {
+        "name": "Bhutan",
+        "value": 11.876,
+        "display": "11.9%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 120
+      },
+      "BOL": {
+        "name": "Bolivia",
+        "value": 30.48,
+        "display": "30.5%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 41
+      },
+      "BIH": {
+        "name": "Bosnia and Herzegovina",
+        "value": 4.658,
+        "display": "4.7%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 142
+      },
+      "BWA": {
+        "name": "Botswana",
+        "value": 23.576,
+        "display": "23.6%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 67
+      },
+      "BRA": {
+        "name": "Brazil",
+        "value": 19.201,
+        "display": "19.2%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 87
+      },
+      "BRN": {
+        "name": "Brunei Darussalam",
+        "value": 9.945,
+        "display": "9.9%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 129
+      },
+      "BGR": {
+        "name": "Bulgaria",
+        "value": 10.34,
+        "display": "10.3%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 127
+      },
+      "BFA": {
+        "name": "Burkina Faso",
+        "value": 19.749,
+        "display": "19.7%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 85
+      },
+      "BDI": {
+        "name": "Burundi",
+        "value": 48.372,
+        "display": "48.4%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 8
+      },
+      "KHM": {
+        "name": "Cambodia",
+        "value": 27.788,
+        "display": "27.8%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 54
+      },
+      "CAN": {
+        "name": "Canada",
+        "value": 35.084,
+        "display": "35.1%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 29
+      },
+      "TCD": {
+        "name": "Chad",
+        "value": 31.363,
+        "display": "31.4%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 38
+      },
+      "CHL": {
+        "name": "Chile",
+        "value": 23.105,
+        "display": "23.1%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 69
+      },
+      "COL": {
+        "name": "Colombia",
+        "value": 15.786,
+        "display": "15.8%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 101
+      },
+      "COM": {
+        "name": "Comoros",
+        "value": 18.162,
+        "display": "18.2%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 95
+      },
+      "COD": {
+        "name": "Congo, Dem. Rep.",
+        "value": 44.961,
+        "display": "45%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 13
+      },
+      "CRI": {
+        "name": "Costa Rica",
+        "value": 12.965,
+        "display": "13%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 115
+      },
+      "CIV": {
+        "name": "Cote d'Ivoire",
+        "value": 35.478,
+        "display": "35.5%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 27
+      },
+      "HRV": {
+        "name": "Croatia",
+        "value": 23.075,
+        "display": "23.1%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 71
+      },
+      "CYP": {
+        "name": "Cyprus",
+        "value": 28.515,
+        "display": "28.5%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 52
+      },
+      "CZE": {
+        "name": "Czechia",
+        "value": 24.367,
+        "display": "24.4%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 65
+      },
+      "DNK": {
+        "name": "Denmark",
+        "value": 38.235,
+        "display": "38.2%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 22
+      },
+      "DJI": {
+        "name": "Djibouti",
+        "value": 11.925,
+        "display": "11.9%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 119
+      },
+      "DOM": {
+        "name": "Dominican Republic",
+        "value": 25.276,
+        "display": "25.3%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 60
+      },
+      "ECU": {
+        "name": "Ecuador",
+        "value": 36.367,
+        "display": "36.4%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 25
+      },
+      "EGY": {
+        "name": "Egypt, Arab Rep.",
+        "value": 15.044,
+        "display": "15%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 106
+      },
+      "SLV": {
+        "name": "El Salvador",
+        "value": 18.717,
+        "display": "18.7%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 90
+      },
+      "GNQ": {
+        "name": "Equatorial Guinea",
+        "value": 35.325,
+        "display": "35.3%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 28
+      },
+      "EST": {
+        "name": "Estonia",
+        "value": 28.568,
+        "display": "28.6%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 51
+      },
+      "SWZ": {
+        "name": "Eswatini",
+        "value": 20.849,
+        "display": "20.8%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 82
+      },
+      "ETH": {
+        "name": "Ethiopia",
+        "value": 56.184,
+        "display": "56.2%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 5
+      },
+      "FJI": {
+        "name": "Fiji",
+        "value": 30.455,
+        "display": "30.5%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 42
+      },
+      "FIN": {
+        "name": "Finland",
+        "value": 40.787,
+        "display": "40.8%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 18
+      },
+      "FRA": {
+        "name": "France",
+        "value": 31.225,
+        "display": "31.2%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 39
+      },
+      "GAB": {
+        "name": "Gabon",
+        "value": 18.276,
+        "display": "18.3%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 92
+      },
+      "GMB": {
+        "name": "Gambia, The",
+        "value": 28.96,
+        "display": "29%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 49
+      },
+      "GEO": {
+        "name": "Georgia",
+        "value": 17.226,
+        "display": "17.2%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 98
+      },
+      "DEU": {
+        "name": "Germany",
+        "value": 30.315,
+        "display": "30.3%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 43
+      },
+      "GHA": {
+        "name": "Ghana",
+        "value": 41.528,
+        "display": "41.5%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 17
+      },
+      "GRC": {
+        "name": "Greece",
+        "value": 18.262,
+        "display": "18.3%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 93
+      },
+      "GRD": {
+        "name": "Grenada",
+        "value": 11.616,
+        "display": "11.6%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 123
+      },
+      "GTM": {
+        "name": "Guatemala",
+        "value": 22.303,
+        "display": "22.3%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 73
+      },
+      "GNB": {
+        "name": "Guinea-Bissau",
+        "value": 35.573,
+        "display": "35.6%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 26
+      },
+      "GUY": {
+        "name": "Guyana",
+        "value": 15.009,
+        "display": "15%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 107
+      },
+      "HND": {
+        "name": "Honduras",
+        "value": 24.874,
+        "display": "24.9%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 62
+      },
+      "HUN": {
+        "name": "Hungary",
+        "value": 25.322,
+        "display": "25.3%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 59
+      },
+      "ISL": {
+        "name": "Iceland",
+        "value": 41.872,
+        "display": "41.9%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 16
+      },
+      "IND": {
+        "name": "India",
+        "value": 14.9,
+        "display": "14.9%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 108
+      },
+      "IDN": {
+        "name": "Indonesia",
+        "value": 31.606,
+        "display": "31.6%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 36
+      },
+      "IRN": {
+        "name": "Iran, Islamic Rep.",
+        "value": 16.38,
+        "display": "16.4%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 100
+      },
+      "IRQ": {
+        "name": "Iraq",
+        "value": 19.943,
+        "display": "19.9%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 84
+      },
+      "IRL": {
+        "name": "Ireland",
+        "value": 33.22,
+        "display": "33.2%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 34
+      },
+      "ISR": {
+        "name": "Israel",
+        "value": 26.46,
+        "display": "26.5%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 57
+      },
+      "ITA": {
+        "name": "Italy",
+        "value": 6.652,
+        "display": "6.7%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 137
+      },
+      "JAM": {
+        "name": "Jamaica",
+        "value": 6.441,
+        "display": "6.4%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 138
+      },
+      "JOR": {
+        "name": "Jordan",
+        "value": 6.695,
+        "display": "6.7%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 135
+      },
+      "KEN": {
+        "name": "Kenya",
+        "value": 33.966,
+        "display": "34%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 31
+      },
+      "KIR": {
+        "name": "Kiribati",
+        "value": 50.05,
+        "display": "50%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 7
+      },
+      "KOR": {
+        "name": "Korea, Rep.",
+        "value": 18.996,
+        "display": "19%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 88
+      },
+      "KGZ": {
+        "name": "Kyrgyz Republic",
+        "value": 14.372,
+        "display": "14.4%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 110
+      },
+      "LAO": {
+        "name": "Lao PDR",
+        "value": 18.607,
+        "display": "18.6%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 91
+      },
+      "LVA": {
+        "name": "Latvia",
+        "value": 15.233,
+        "display": "15.2%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 104
+      },
+      "LBN": {
+        "name": "Lebanon",
+        "value": 17.944,
+        "display": "17.9%",
+        "year": 2019,
+        "unit": "%",
+        "rank": 97
+      },
+      "LSO": {
+        "name": "Lesotho",
+        "value": 12.411,
+        "display": "12.4%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 116
+      },
+      "LTU": {
+        "name": "Lithuania",
+        "value": 19.538,
+        "display": "19.5%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 86
+      },
+      "LUX": {
+        "name": "Luxembourg",
+        "value": 27.195,
+        "display": "27.2%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 56
+      },
+      "MDG": {
+        "name": "Madagascar",
+        "value": 34.354,
+        "display": "34.4%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 30
+      },
+      "MWI": {
+        "name": "Malawi",
+        "value": 58.146,
+        "display": "58.1%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 4
+      },
+      "MLI": {
+        "name": "Mali",
+        "value": 11.673,
+        "display": "11.7%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 122
+      },
+      "MLT": {
+        "name": "Malta",
+        "value": 30.142,
+        "display": "30.1%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 46
+      },
+      "MHL": {
+        "name": "Marshall Islands",
+        "value": 21.21,
+        "display": "21.2%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 78
+      },
+      "MRT": {
+        "name": "Mauritania",
+        "value": 18.902,
+        "display": "18.9%",
+        "year": 2019,
+        "unit": "%",
+        "rank": 89
+      },
+      "MUS": {
+        "name": "Mauritius",
+        "value": 30.776,
+        "display": "30.8%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 40
+      },
+      "MEX": {
+        "name": "Mexico",
+        "value": 21.073,
+        "display": "21.1%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 80
+      },
+      "MDA": {
+        "name": "Moldova",
+        "value": 6.677,
+        "display": "6.7%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 136
+      },
+      "MNG": {
+        "name": "Mongolia",
+        "value": 3.694,
+        "display": "3.7%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 144
+      },
+      "MNE": {
+        "name": "Montenegro",
+        "value": 4.123,
+        "display": "4.1%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 143
+      },
+      "MOZ": {
+        "name": "Mozambique",
+        "value": 42.155,
+        "display": "42.2%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 15
+      },
+      "MMR": {
+        "name": "Myanmar",
+        "value": 13.126,
+        "display": "13.1%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 114
+      },
+      "NLD": {
+        "name": "Netherlands",
+        "value": 47.513,
+        "display": "47.5%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 9
+      },
+      "NCL": {
+        "name": "New Caledonia",
+        "value": 7.525,
+        "display": "7.5%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 133
+      },
+      "NER": {
+        "name": "Niger",
+        "value": 37.069,
+        "display": "37.1%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 24
+      },
+      "NGA": {
+        "name": "Nigeria",
+        "value": 21.053,
+        "display": "21.1%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 81
+      },
+      "MKD": {
+        "name": "North Macedonia",
+        "value": 16.547,
+        "display": "16.5%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 99
+      },
+      "NOR": {
+        "name": "Norway",
+        "value": 46.104,
+        "display": "46.1%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 10
+      },
+      "PAK": {
+        "name": "Pakistan",
+        "value": 6.368,
+        "display": "6.4%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 139
+      },
+      "PLW": {
+        "name": "Palau",
+        "value": 11.133,
+        "display": "11.1%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 125
+      },
+      "PAN": {
+        "name": "Panama",
+        "value": 29.608,
+        "display": "29.6%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 48
+      },
+      "PRY": {
+        "name": "Paraguay",
+        "value": 24.934,
+        "display": "24.9%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 61
+      },
+      "PER": {
+        "name": "Peru",
+        "value": 29.842,
+        "display": "29.8%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 47
+      },
+      "PHL": {
+        "name": "Philippines",
+        "value": 25.485,
+        "display": "25.5%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 58
+      },
+      "POL": {
+        "name": "Poland",
+        "value": 0.402,
+        "display": "0.4%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 146
+      },
+      "PRT": {
+        "name": "Portugal",
+        "value": 27.865,
+        "display": "27.9%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 53
+      },
+      "PRI": {
+        "name": "Puerto Rico (US)",
+        "value": 24.838,
+        "display": "24.8%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 63
+      },
+      "ROU": {
+        "name": "Romania",
+        "value": 13.768,
+        "display": "13.8%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 113
+      },
+      "RUS": {
+        "name": "Russian Federation",
+        "value": 4.96,
+        "display": "5%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 141
+      },
+      "RWA": {
+        "name": "Rwanda",
+        "value": 45.922,
+        "display": "45.9%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 11
+      },
+      "WSM": {
+        "name": "Samoa",
+        "value": 21.605,
+        "display": "21.6%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 76
+      },
+      "SEN": {
+        "name": "Senegal",
+        "value": 9.357,
+        "display": "9.4%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 130
+      },
+      "SRB": {
+        "name": "Serbia",
+        "value": 15.522,
+        "display": "15.5%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 103
+      },
+      "SYC": {
+        "name": "Seychelles",
+        "value": 11.195,
+        "display": "11.2%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 124
+      },
+      "SGP": {
+        "name": "Singapore",
+        "value": 7.136,
+        "display": "7.1%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 134
+      },
+      "SVK": {
+        "name": "Slovak Republic",
+        "value": 24.191,
+        "display": "24.2%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 66
+      },
+      "SVN": {
+        "name": "Slovenia",
+        "value": 27.43,
+        "display": "27.4%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 55
+      },
+      "SOM": {
+        "name": "Somalia, Fed. Rep.",
+        "value": 53.635,
+        "display": "53.6%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 6
+      },
+      "ZAF": {
+        "name": "South Africa",
+        "value": 12.38,
+        "display": "12.4%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 117
+      },
+      "ESP": {
+        "name": "Spain",
+        "value": 28.723,
+        "display": "28.7%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 50
+      },
+      "LKA": {
+        "name": "Sri Lanka",
+        "value": 22.004,
+        "display": "22%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 75
+      },
+      "LCA": {
+        "name": "St. Lucia",
+        "value": 9.214,
+        "display": "9.2%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 132
+      },
+      "SDN": {
+        "name": "Sudan",
+        "value": 11.974,
+        "display": "12%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 118
+      },
+      "SWE": {
+        "name": "Sweden",
+        "value": 42.291,
+        "display": "42.3%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 14
+      },
+      "CHE": {
+        "name": "Switzerland",
+        "value": 22.013,
+        "display": "22%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 74
+      },
+      "TZA": {
+        "name": "Tanzania",
+        "value": 31.418,
+        "display": "31.4%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 37
+      },
+      "THA": {
+        "name": "Thailand",
+        "value": 18.262,
+        "display": "18.3%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 93
+      },
+      "TLS": {
+        "name": "Timor-Leste",
+        "value": 38.441,
+        "display": "38.4%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 21
+      },
+      "TGO": {
+        "name": "Togo",
+        "value": 40.302,
+        "display": "40.3%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 20
+      },
+      "TON": {
+        "name": "Tonga",
+        "value": 45.569,
+        "display": "45.6%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 12
+      },
+      "TTO": {
+        "name": "Trinidad and Tobago",
+        "value": 100.0,
+        "display": "100%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 1
+      },
+      "TUN": {
+        "name": "Tunisia",
+        "value": 10.147,
+        "display": "10.1%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 128
+      },
+      "TUR": {
+        "name": "Turkiye",
+        "value": 20.633,
+        "display": "20.6%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 83
+      },
+      "UGA": {
+        "name": "Uganda",
+        "value": 23.197,
+        "display": "23.2%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 68
+      },
+      "UKR": {
+        "name": "Ukraine",
+        "value": 100.0,
+        "display": "100%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 1
+      },
+      "ARE": {
+        "name": "United Arab Emirates",
+        "value": 2.255,
+        "display": "2.3%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 145
+      },
+      "GBR": {
+        "name": "United Kingdom",
+        "value": 30.208,
+        "display": "30.2%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 45
+      },
+      "USA": {
+        "name": "United States",
+        "value": 21.381,
+        "display": "21.4%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 77
+      },
+      "URY": {
+        "name": "Uruguay",
+        "value": 33.362,
+        "display": "33.4%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 32
+      },
+      "VUT": {
+        "name": "Vanuatu",
+        "value": 40.607,
+        "display": "40.6%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 19
+      },
+      "VNM": {
+        "name": "Viet Nam",
+        "value": 18.152,
+        "display": "18.2%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 96
+      },
+      "PSE": {
+        "name": "West Bank and Gaza",
+        "value": 14.234,
+        "display": "14.2%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 111
+      },
+      "ZMB": {
+        "name": "Zambia",
+        "value": 15.174,
+        "display": "15.2%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 105
+      },
+      "ZWE": {
+        "name": "Zimbabwe",
+        "value": 11.84,
+        "display": "11.8%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 121
+      }
+    }
+  },
+  "review": {
+    "errors": [],
+    "claims": [
+      {
+        "surface": "beat_3",
+        "text": "Malawi has 58.1%. Ethiopia has 56.2%. Somalia has 53.6%.",
+        "isos": [
+          "MWI",
+          "ETH",
+          "SOM"
+        ],
+        "support": "MWI: 58.1%, ETH: 56.2%, SOM: 53.6%",
+        "evidence": {
+          "MWI": {
+            "name": "Malawi",
+            "value": 58.146,
+            "display": "58.1%",
+            "year": 2024,
+            "unit": "%",
+            "rank": 4
+          },
+          "ETH": {
+            "name": "Ethiopia",
+            "value": 56.184,
+            "display": "56.2%",
+            "year": 2021,
+            "unit": "%",
+            "rank": 5
+          },
+          "SOM": {
+            "name": "Somalia, Fed. Rep.",
+            "value": 53.635,
+            "display": "53.6%",
+            "year": 2022,
+            "unit": "%",
+            "rank": 6
+          }
+        }
+      },
+      {
+        "surface": "beat_4",
+        "text": "The Netherlands has 47.5%.",
+        "isos": [
+          "NLD"
+        ],
+        "support": "NLD: 47.5%",
+        "evidence": {
+          "NLD": {
+            "name": "Netherlands",
+            "value": 47.513,
+            "display": "47.5%",
+            "year": 2024,
+            "unit": "%",
+            "rank": 9
+          }
+        }
+      },
+      {
+        "surface": "beat_5",
+        "text": "Ukraine has 100%.",
+        "isos": [
+          "UKR"
+        ],
+        "support": "UKR: 100%",
+        "evidence": {
+          "UKR": {
+            "name": "Ukraine",
+            "value": 100.0,
+            "display": "100%",
+            "year": 2021,
+            "unit": "%",
+            "rank": 1
+          }
+        }
+      },
+      {
+        "surface": "beat_6",
+        "text": "Poland is the world's lowest at 0.4%.",
+        "isos": [
+          "POL"
+        ],
+        "support": "POL: 0.4%, Rank 146",
+        "evidence": {
+          "POL": {
+            "name": "Poland",
+            "value": 0.402,
+            "display": "0.4%",
+            "year": 2025,
+            "unit": "%",
+            "rank": 146
+          }
+        }
+      },
+      {
+        "surface": "title",
+        "text": "Places Ranked by Male Part-Time Work",
+        "isos": [],
+        "support": "The title accurately reflects the content of the dataset.",
+        "method": "complete-surface-check",
+        "evidence": {}
+      },
+      {
+        "surface": "hook",
+        "text": "GLOBAL WORK PATTERNS",
+        "isos": [],
+        "support": "The hook is a stylistic introduction to the dataset.",
+        "method": "complete-surface-check",
+        "evidence": {}
+      },
+      {
+        "surface": "description",
+        "text": "This dataset tracks the percentage of male employment that is part-time, defined as less than 35 actual weekly hours worked, covering 146 countries and territories.",
+        "isos": [],
+        "support": "The description matches the provided definition and count.",
+        "method": "complete-surface-check",
+        "evidence": {}
+      },
+      {
+        "surface": "beat_0",
+        "text": "One country breaks the global pattern of male part-time work. It is not the expected one.",
+        "isos": [],
+        "support": "Stylistic framing.",
+        "method": "complete-surface-check",
+        "evidence": {}
+      },
+      {
+        "surface": "beat_1",
+        "text": "Is it the Netherlands, Ethiopia, or Somalia?",
+        "isos": [
+          "NLD",
+          "ETH",
+          "SOM"
+        ],
+        "support": "Stylistic question.",
+        "method": "complete-surface-check",
+        "evidence": {
+          "NLD": {
+            "name": "Netherlands",
+            "value": 47.513,
+            "display": "47.5%",
+            "year": 2024,
+            "unit": "%",
+            "rank": 9
+          },
+          "ETH": {
+            "name": "Ethiopia",
+            "value": 56.184,
+            "display": "56.2%",
+            "year": 2021,
+            "unit": "%",
+            "rank": 5
+          },
+          "SOM": {
+            "name": "Somalia, Fed. Rep.",
+            "value": 53.635,
+            "display": "53.6%",
+            "year": 2022,
+            "unit": "%",
+            "rank": 6
+          }
+        }
+      },
+      {
+        "surface": "beat_2",
+        "text": "Part time employment in this series is based on a common definition of less than 35 actual weekly hours worked.",
+        "isos": [],
+        "support": "Matches the provided definition.",
+        "method": "complete-surface-check",
+        "evidence": {}
+      },
+      {
+        "surface": "beat_3",
+        "text": "Malawi has 58.1%. Ethiopia has 56.2%. Somalia has 53.6%.",
+        "isos": [
+          "MWI",
+          "ETH",
+          "SOM"
+        ],
+        "support": "Values match the evidence.",
+        "method": "complete-surface-check",
+        "evidence": {
+          "MWI": {
+            "name": "Malawi",
+            "value": 58.146,
+            "display": "58.1%",
+            "year": 2024,
+            "unit": "%",
+            "rank": 4
+          },
+          "ETH": {
+            "name": "Ethiopia",
+            "value": 56.184,
+            "display": "56.2%",
+            "year": 2021,
+            "unit": "%",
+            "rank": 5
+          },
+          "SOM": {
+            "name": "Somalia, Fed. Rep.",
+            "value": 53.635,
+            "display": "53.6%",
+            "year": 2022,
+            "unit": "%",
+            "rank": 6
+          }
+        }
+      },
+      {
+        "surface": "beat_4",
+        "text": "The Netherlands has 47.5%.",
+        "isos": [
+          "NLD"
+        ],
+        "support": "Value matches the evidence.",
+        "method": "complete-surface-check",
+        "evidence": {
+          "NLD": {
+            "name": "Netherlands",
+            "value": 47.513,
+            "display": "47.5%",
+            "year": 2024,
+            "unit": "%",
+            "rank": 9
+          }
+        }
+      },
+      {
+        "surface": "beat_5",
+        "text": "Ukraine has 100%. That is 250 times the value seen in Poland.",
+        "isos": [
+          "UKR"
+        ],
+        "support": "Value matches the evidence.",
+        "method": "complete-surface-check",
+        "evidence": {
+          "UKR": {
+            "name": "Ukraine",
+            "value": 100.0,
+            "display": "100%",
+            "year": 2021,
+            "unit": "%",
+            "rank": 1
+          }
+        }
+      },
+      {
+        "surface": "beat_6",
+        "text": "Poland is the world's lowest at 0.4%.",
+        "isos": [
+          "POL"
+        ],
+        "support": "Value and rank match the evidence.",
+        "method": "complete-surface-check",
+        "evidence": {
+          "POL": {
+            "name": "Poland",
+            "value": 0.402,
+            "display": "0.4%",
+            "year": 2025,
+            "unit": "%",
+            "rank": 146
+          }
+        }
+      },
+      {
+        "surface": "beat_7",
+        "text": "How common is part-time work for men in your country?",
+        "isos": [],
+        "support": "Stylistic question.",
+        "method": "complete-surface-check",
+        "evidence": {}
+      },
+      {
+        "surface": "card_7",
+        "text": [
+          "Do you work part-time?",
+          "Share of men in part-time work"
+        ],
+        "isos": [],
+        "support": "Stylistic text.",
+        "method": "complete-surface-check",
+        "evidence": {}
+      }
+    ],
+    "surface_checks": {
+      "title": {
+        "supported": true,
+        "reason": "The title accurately reflects the content of the dataset.",
+        "isos": []
+      },
+      "hook": {
+        "supported": true,
+        "reason": "The hook is a stylistic introduction to the dataset.",
+        "isos": []
+      },
+      "description": {
+        "supported": true,
+        "reason": "The description matches the provided definition and count.",
+        "isos": []
+      },
+      "beat_0": {
+        "supported": true,
+        "reason": "Stylistic framing.",
+        "isos": []
+      },
+      "beat_1": {
+        "supported": true,
+        "reason": "Stylistic question.",
+        "isos": [
+          "NLD",
+          "ETH",
+          "SOM"
+        ]
+      },
+      "beat_2": {
+        "supported": true,
+        "reason": "Matches the provided definition.",
+        "isos": []
+      },
+      "beat_3": {
+        "supported": true,
+        "reason": "Values match the evidence.",
+        "isos": [
+          "MWI",
+          "ETH",
+          "SOM"
+        ]
+      },
+      "beat_4": {
+        "supported": true,
+        "reason": "Value matches the evidence.",
+        "isos": [
+          "NLD"
+        ]
+      },
+      "beat_5": {
+        "supported": true,
+        "reason": "Value matches the evidence.",
+        "isos": [
+          "UKR"
+        ]
+      },
+      "beat_6": {
+        "supported": true,
+        "reason": "Value and rank match the evidence.",
+        "isos": [
+          "POL"
+        ]
+      },
+      "beat_7": {
+        "supported": true,
+        "reason": "Stylistic question.",
+        "isos": []
+      },
+      "card_7": {
+        "supported": true,
+        "reason": "Stylistic text.",
+        "isos": []
+      }
+    },
+    "warnings": [
+      {
+        "surface": "beat_5",
+        "claim": "Ukraine has 100%. That is 250 times the value seen in Poland.",
+        "reason": "100 divided by 0.4 is 250, but the claim implies a comparison of the actual values. While mathematically 100/0.4 = 250, the phrasing is misleading as it suggests a scale of magnitude rather than a ratio of percentages.",
+        "severity": "info"
+      }
+    ]
+  },
+  "script_sha256": "9cfcdd478e63f31b73b6073b6f5d704533e968cb7f590ef16d82526687d9ad23",
+  "data_sha256": "f5f88633ba101991a19f0661a74b3851d81654ca6605b7b97bbfd3aa2edb7a47",
+  "reviewer_model": "gemini-3.1-flash-lite"
+}

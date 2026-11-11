@@ -1,0 +1,81 @@
+id: atlas175
+title: Places Ranked by Master's Degree Attainment
+format: rank_ladder
+hook_text: ACADEMIC DIVIDE
+description: A cinematic look at global Master's degree attainment, from Mozambique to Georgia.
+hashtags:
+- '#education'
+- '#geography'
+- '#countries'
+tags:
+- education
+- adults with a master's degree
+- countries ranked by adults with a master's degree
+- Georgia
+- Mozambique
+- world map
+- geography
+- atlas in numbers
+sources:
+- https://data.worldbank.org/indicator/SE.TER.CUAT.MS.ZS
+dataset:
+  kind: worldbank
+  indicator: SE.TER.CUAT.MS.ZS
+  label: Adults with a Master's degree
+  unit: '%'
+  source: World Bank
+  min_year: 2019
+scale:
+  edges:
+  - 1.0
+  - 5.0
+  - 10.0
+  - 20.0
+  labels:
+  - Under 1%
+  - 1-5%
+  - 5-10%
+  - 10-20%
+  - Over 20%
+value_format: '{v:.1f}%'
+beats:
+- text: Mozambique has 0.2% of adults with a Master's degree. Georgia has 24.9%.
+  shot:
+    callouts:
+    - MOZ
+    - GEO
+- text: Mozambique is the world's lowest. Very few adults reach this level of study.
+  shot:
+    kind: country
+    iso: MOZ
+- text: Global giants are often lower. China has 0.9%, while Japan has 2.5%.
+  shot:
+    kind: group
+    isos:
+    - CHN
+    - JPN
+- text: The USA has 15%. This counts everyone age 25 and over who attained or completed a Master's or equivalent
+    degree.
+  shot:
+    kind: country
+    iso: USA
+  basis: The percentage of population ages 25 and over that attained or completed Master's or equivalent.
+- text: The leaderboard climbs through Poland at 21.4%, Estonia at 21.8%, and Slovakia at 22.3%.
+  shot:
+    kind: rank
+    isos:
+    - POL
+    - EST
+    - SVK
+- text: Georgia is among the highest at 24.9%. That is 10 times the rate in Japan.
+  shot:
+    kind: group
+    isos:
+    - GEO
+    - JPN
+- text: How many adults hold a Master's degree where you live?
+  shot:
+    kind: card
+    lines:
+    - Master's Degrees
+    - Adults with a Master's degree (%)

@@ -1,0 +1,22 @@
+{
+  "duration": 48.47,
+  "integrated_lufs": -14.1,
+  "true_peak_dbfs": -1.4,
+  "speech": {
+    "heard": "Mozambique has 0.2% of adults with a master's degree. Georgia has 24.9%. Mozambique is the world's lowest. Very few adults reach this level of study. Global giants are often lower. China has 0.9%, while Japan has 2.5%. The USA has 15%. This counts everyone aged 25 and over who attained or completed a master's or equivalent degree. The leaderboard climbs through Poland at 21.4%, Estonia at 21.8%, and Slovakia at 22.3%. Georgia is among the highest at 24.9%. That is 10 times the rate in Japan. How many adults hold a master's degree where you live?",
+    "model": "small.en",
+    "media_sha256": "136ccaa95909a99fd9e54e984fcc5f1408b83ff790ef3af9d65c37b6084bd47b",
+    "primary_differences": [
+      "'age' heard as 'aged' after 'this counts everyone'"
+    ],
+    "differences": [
+      "'age' heard as 'aged' after 'this counts everyone'"
+    ],
+    "corroboration": {
+      "model": "base.en",
+      "heard": "Mozambique has 0.2% of adults with a master's degree. Georgia has 24.9%. Mozambique is the world's lowest. Very few adults reach this level of study. Global giants are often lower. China has 0.9% while Japan has 2.5%. The USA has 15%. This counts everyone age 25 and over who attained or completed a master's or equivalent degree. The leaderboard climbs through Poland at 21.4%, Estonia at 21.8%, and Slovakia at 22.3%. Georgia is among the highest at 24.9%, that is 10 times the rate in Japan. How many adults hold a master's degree where you live?",
+      "differences": [],
+      "resolved": []
+    }
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "version": 1,
+  "passed": true,
+  "checked_at": "2026-11-11T17:39:44.369247+00:00",
+  "quality_module_sha256": "db7be8ac57c839f39a10676f1a70580a83ea346f59c27f19868d09c272def14c",
+  "media_sha256": "136ccaa95909a99fd9e54e984fcc5f1408b83ff790ef3af9d65c37b6084bd47b",
+  "script_sha256": "ba486b2a817bc81b72baca40e66ba1e0879a34bd1d31025930acae1692b7ac8a",
+  "data_sha256": "405ee29b86db7fbdd7ae25dcac3c5ee11a3bc0f902bc97bb878fdfda13aea78c",
+  "claims_sha256": "750d0df008c0947987ef1ed650e3d9efd17f8a3e705f1497b34751d39797f733",
+  "contact_sha256": "44e7f4a8cd038d9d978517754f168b20d1b450e9a3dd8052a077c7d672788056",
+  "duration": 48.47,
+  "integrated_lufs": -14.1,
+  "true_peak_dbfs": -1.4,
+  "speech": {
+    "heard": "Mozambique has 0.2% of adults with a master's degree. Georgia has 24.9%. Mozambique is the world's lowest. Very few adults reach this level of study. Global giants are often lower. China has 0.9%, while Japan has 2.5%. The USA has 15%. This counts everyone aged 25 and over who attained or completed a master's or equivalent degree. The leaderboard climbs through Poland at 21.4%, Estonia at 21.8%, and Slovakia at 22.3%. Georgia is among the highest at 24.9%. That is 10 times the rate in Japan. How many adults hold a master's degree where you live?",
+    "model": "small.en",
+    "media_sha256": "136ccaa95909a99fd9e54e984fcc5f1408b83ff790ef3af9d65c37b6084bd47b",
+    "primary_differences": [
+      "'age' heard as 'aged' after 'this counts everyone'"
+    ],
+    "differences": [
+      "'age' heard as 'aged' after 'this counts everyone'"
+    ],
+    "corroboration": {
+      "model": "base.en",
+      "heard": "Mozambique has 0.2% of adults with a master's degree. Georgia has 24.9%. Mozambique is the world's lowest. Very few adults reach this level of study. Global giants are often lower. China has 0.9% while Japan has 2.5%. The USA has 15%. This counts everyone age 25 and over who attained or completed a master's or equivalent degree. The leaderboard climbs through Poland at 21.4%, Estonia at 21.8%, and Slovakia at 22.3%. Georgia is among the highest at 24.9%, that is 10 times the rate in Japan. How many adults hold a master's degree where you live?",
+      "differences": [],
+      "resolved": []
+    }
+  },
+  "warnings": [
+    "'age' heard as 'aged' after 'this counts everyone'",
+    "duration 48.5s outside editorial 30–45s target"
+  ],
+  "speech_policy": "material-hard-entity-polarity-strict-minor-spelling-warning"
+}
