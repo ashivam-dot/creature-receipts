@@ -112,19 +112,21 @@ Refreshed by every producer run (`atlas.stats`) from the channel's public feed o
 | atlas133 Senior Women Share Around the World | map_reveal | 2026-11-04 21:00 UTC | 245 | 2 | 1.7 |
 | atlas134 East Timor vs Nigeria: Male Tobacco Use | versus | 2026-11-05 17:00 UTC | 126 | 2 | 1.0 |
 | atlas135 Is YOUR Country Spending More Than It Produces? | spotlight | 2026-11-06 00:00 UTC | 69 | 1 | 0.6 |
-| atlas136 Places Ranked by Open Defecation Rates | rank_ladder | 2026-11-07 00:00 UTC | 273 | 6 | 2.8 |
-| atlas137 The Places With the Highest Adolescent Birth Rates | map_reveal | 2026-11-06 17:00 UTC | 1135 | 13 | 10.9 |
-| atlas138 Which Country Has the MOST Rural Handwashing Access? | odd_one_out | 2026-11-06 21:00 UTC | 1051 | 8 | 10.5 |
-| atlas144 Is EAST Timor Near the Top for Energy Depletion? | spotlight | 2026-11-07 17:00 UTC | 123 | 1 | 1.5 |
-| atlas145 Is YOUR Country Powered by Oil? | map_reveal | 2026-11-07 21:00 UTC | 977 | 11 | 12.9 |
-| atlas149 Romania vs India: Female Alcohol Consumption | versus | 2026-11-08 00:00 UTC | 954 | 6 | 13.1 |
-| atlas151 Places Ranked by Male Internet Use | rank_ladder | 2026-11-08 17:00 UTC | 785 | 10 | 14.1 |
-| atlas153 Is Madagascar the Highest for Bank Loan Spreads? | spotlight | 2026-11-08 21:00 UTC | 77 | 0 | 1.5 |
-| atlas154 Which Country Has the MOST Equal Youth Literacy? | odd_one_out | 2026-11-09 21:00 UTC | 74 | 2 | 2.7 |
-| atlas155 The Nations Powered by Mineral Wealth | map_reveal | 2026-11-09 17:00 UTC | 48 | 0 | 1.5 |
-| atlas156 Germany vs USA: The Years Spent in School | versus | 2026-11-09 00:00 UTC | 105 | 1 | 2.2 |
-| atlas158 How Does the USA Compare on Female Part-Time Work? | spotlight | 2026-11-10 00:00 UTC | 23 | 0 | 0.9 |
-| atlas159 Places Ranked by Female Primary Teachers | rank_ladder | 2026-11-10 17:00 UTC | 154 | 0 | 20.0 |
+| atlas136 Places Ranked by Open Defecation Rates | rank_ladder | 2026-11-07 00:00 UTC | 273 | – | 2.6 |
+| atlas137 The Places With the Highest Adolescent Birth Rates | map_reveal | 2026-11-06 17:00 UTC | 1135 | – | 10.1 |
+| atlas138 Which Country Has the MOST Rural Handwashing Access? | odd_one_out | 2026-11-06 21:00 UTC | 1051 | – | 9.7 |
+| atlas144 Is EAST Timor Near the Top for Energy Depletion? | spotlight | 2026-11-07 17:00 UTC | 123 | – | 1.4 |
+| atlas145 Is YOUR Country Powered by Oil? | map_reveal | 2026-11-07 21:00 UTC | 977 | – | 11.6 |
+| atlas149 Romania vs India: Female Alcohol Consumption | versus | 2026-11-08 00:00 UTC | 954 | – | 11.8 |
+| atlas151 Places Ranked by Male Internet Use | rank_ladder | 2026-11-08 17:00 UTC | 785 | – | 12.2 |
+| atlas153 Is Madagascar the Highest for Bank Loan Spreads? | spotlight | 2026-11-08 21:00 UTC | 77 | – | 1.3 |
+| atlas154 Which Country Has the MOST Equal Youth Literacy? | odd_one_out | 2026-11-09 21:00 UTC | 74 | – | 2.0 |
+| atlas155 The Nations Powered by Mineral Wealth | map_reveal | 2026-11-09 17:00 UTC | 49 | – | 1.2 |
+| atlas156 Germany vs USA: The Years Spent in School | versus | 2026-11-09 00:00 UTC | 108 | – | 1.9 |
+| atlas158 How Does the USA Compare on Female Part-Time Work? | spotlight | 2026-11-10 00:00 UTC | 25 | – | 0.8 |
+| atlas159 Places Ranked by Female Primary Teachers | rank_ladder | 2026-11-10 17:00 UTC | 154 | – | 9.5 |
+| atlas160 Who Emits the Most Greenhouse Gases per Person? | map_reveal | 2026-11-10 21:00 UTC | 0 | – | 0.0 |
+| atlas161 Armenia vs Liberia: Women in Secondary Teaching | versus | 2026-11-11 00:00 UTC | 0 | – | 0.0 |
 
 ## Log
 
