@@ -1,0 +1,33 @@
+{
+  "version": 1,
+  "passed": true,
+  "checked_at": "2026-11-12T01:28:23.890422+00:00",
+  "quality_module_sha256": "db7be8ac57c839f39a10676f1a70580a83ea346f59c27f19868d09c272def14c",
+  "media_sha256": "7edfc878a9413c8580861b69ea3432055b91d997ab3700849e7fc71242b6d661",
+  "script_sha256": "c8c87a7da7daad6fbe3ff1f79fbc4e6ae447952133ecc429665e2dd6a393961d",
+  "data_sha256": "86573f7adda947d10216f584a27101fc323b2c63918474b4c55646c8c1febae5",
+  "claims_sha256": "c2559acd331b2380de4cea42210b786cbeab634770908a0f7625a7015497e94e",
+  "contact_sha256": "7b037718bf789c30bb5915d439de85feeacec1650693b4c26b13ca6ca34c2355",
+  "duration": 40.14,
+  "integrated_lufs": -14.1,
+  "true_peak_dbfs": -1.2,
+  "speech": {
+    "heard": "India hits 90.3% primary completion. The USA hits 95.7%. Niger stands at 40.8%. It is the lowest of all 167 countries and territories. The USA hits 95.7%, while Indonesia hits 99.95%. The lowest completion rates are led by Liberia at 57.8%, Ethiopia at 54.4%, Burkina Faso at 52%. It counts new entrants in the last grade of primary education, regardless of age. How many children complete primary school where you live?",
+    "model": "small.en",
+    "media_sha256": "7edfc878a9413c8580861b69ea3432055b91d997ab3700849e7fc71242b6d661",
+    "primary_differences": [
+      "'and' heard as '(nothing)' after 'ethiopia at 54.4%'"
+    ],
+    "differences": [],
+    "corroboration": {
+      "model": "base.en",
+      "heard": "India hits 90.3% primary completion, the USA hits 95.7%, Niger stands at 40.8%, it is the lowest of all 167 countries and territories, the USA hits 95.7% while Indonesia hits 99.95%. The lowest completion rates are led by Liberia at 57.8%, Ethiopia at 54.4% and Burkina Faso at 52%. It counts new entrants in the last grade of primary education, regardless of age. How many children complete primary school where you live?",
+      "differences": [],
+      "resolved": [
+        "'and' heard as '(nothing)' after 'ethiopia at 54.4%'"
+      ]
+    }
+  },
+  "warnings": [],
+  "speech_policy": "material-hard-entity-polarity-strict-minor-spelling-warning"
+}

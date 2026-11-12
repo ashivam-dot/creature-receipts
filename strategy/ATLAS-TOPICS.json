@@ -6817,7 +6817,7 @@
    "id": "t188",
    "topic": "Joblessness Among the Highly Educated",
    "angle": "In countries like Angola and Jordan, more than one in four people with advanced degrees are currently unemployed.",
-   "format": "map_reveal",
+   "format": "versus",
    "dataset": {
     "kind": "worldbank",
     "indicator": "SL.UEM.ADVN.ZS",
@@ -6849,7 +6849,7 @@
     "#employment"
    ],
    "source_url": "https://data.worldbank.org/indicator/SL.UEM.ADVN.ZS",
-   "status": "open",
+   "status": "failed:RuntimeError",
    "added_by": "refill"
   },
   {
@@ -6895,7 +6895,7 @@
    "id": "t190",
    "topic": "Primary School Completion Rates Worldwide",
    "angle": "Several nations report completion rates exceeding 100% because older students or repeaters enter the final grade.",
-   "format": "map_reveal",
+   "format": "spotlight",
    "dataset": {
     "kind": "worldbank",
     "indicator": "SE.PRM.CMPT.ZS",
@@ -6927,7 +6927,7 @@
     "#geography"
    ],
    "source_url": "https://data.worldbank.org/indicator/SE.PRM.CMPT.ZS",
-   "status": "open",
+   "status": "ready:atlas178",
    "added_by": "refill"
   },
   {

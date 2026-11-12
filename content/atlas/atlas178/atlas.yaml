@@ -1,0 +1,73 @@
+id: atlas178
+title: Is INDIA Near the Top for School Completion?
+format: spotlight
+hook_text: GLOBAL CLASSROOMS
+description: Primary school completion rates vary widely across the globe, showing stark differences between nations.
+hashtags:
+- '#education'
+- '#geography'
+- '#countries'
+tags:
+- education
+- primary school completion rate
+- countries ranked by primary school completion rate
+- Nepal
+- Niger
+- world map
+- geography
+- atlas in numbers
+sources:
+- https://data.worldbank.org/indicator/SE.PRM.CMPT.ZS
+dataset:
+  kind: worldbank
+  indicator: SE.PRM.CMPT.ZS
+  label: Primary school completion rate
+  unit: '%'
+  source: World Bank
+  min_year: 2019
+scale:
+  edges:
+  - 60.0
+  - 80.0
+  - 100.0
+  - 110.0
+  labels:
+  - <60%
+  - 60-80%
+  - 80-100%
+  - 100-110%
+  - '>110%'
+value_format: '{v:.1f}%'
+beats:
+- text: India hits 90.3% primary completion. The USA hits 95.7%.
+  shot:
+    callouts:
+    - IND
+    - NER
+- text: Niger stands at 40.8%. It is the lowest of all 167 countries and territories.
+  shot:
+    kind: country
+    iso: NER
+- text: The USA hits 95.7%, while Indonesia hits 99.95%.
+  shot:
+    kind: group
+    isos:
+    - USA
+    - IDN
+- text: The lowest completion rates are led by Liberia at 57.8%, Ethiopia at 54.4%, and Burkina Faso at 52%.
+  shot:
+    kind: rank
+    isos:
+    - LBR
+    - ETH
+    - BFA
+- text: It counts new entrants in the last grade of primary education regardless of age.
+  shot:
+    callouts:
+    - IND
+- text: How many children complete primary school where you live?
+  shot:
+    kind: card
+    lines:
+    - Does your country finish school?
+    - Primary School Completion Rate
