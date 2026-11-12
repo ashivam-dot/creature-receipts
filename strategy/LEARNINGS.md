@@ -116,20 +116,21 @@ Refreshed by every producer run (`atlas.stats`) from the channel's public feed o
 | atlas137 The Places With the Highest Adolescent Birth Rates | map_reveal | 2026-11-06 17:00 UTC | 1135 | – | 10.1 |
 | atlas138 Which Country Has the MOST Rural Handwashing Access? | odd_one_out | 2026-11-06 21:00 UTC | 1051 | – | 9.0 |
 | atlas144 Is EAST Timor Near the Top for Energy Depletion? | spotlight | 2026-11-07 17:00 UTC | 124 | – | 1.1 |
-| atlas145 Is YOUR Country Powered by Oil? | map_reveal | 2026-11-07 21:00 UTC | 979 | – | 9.1 |
-| atlas149 Romania vs India: Female Alcohol Consumption | versus | 2026-11-08 00:00 UTC | 957 | – | 9.1 |
-| atlas151 Places Ranked by Male Internet Use | rank_ladder | 2026-11-08 17:00 UTC | 787 | – | 8.9 |
-| atlas153 Is Madagascar the Highest for Bank Loan Spreads? | spotlight | 2026-11-08 21:00 UTC | 78 | – | 0.9 |
-| atlas154 Which Country Has the MOST Equal Youth Literacy? | odd_one_out | 2026-11-09 21:00 UTC | 114 | – | 1.9 |
-| atlas155 The Nations Powered by Mineral Wealth | map_reveal | 2026-11-09 17:00 UTC | 77 | – | 1.2 |
-| atlas156 Germany vs USA: The Years Spent in School | versus | 2026-11-09 00:00 UTC | 109 | – | 1.3 |
-| atlas158 How Does the USA Compare on Female Part-Time Work? | spotlight | 2026-11-10 00:00 UTC | 41 | – | 0.7 |
-| atlas159 Places Ranked by Female Primary Teachers | rank_ladder | 2026-11-10 17:00 UTC | 257 | – | 6.4 |
-| atlas160 Who Emits the Most Greenhouse Gases per Person? | map_reveal | 2026-11-10 21:00 UTC | 16 | – | 0.4 |
-| atlas161 Armenia vs Liberia: Women in Secondary Teaching | versus | 2026-11-11 00:00 UTC | 17 | – | 0.5 |
-| atlas162 Which Country Has the Highest Working-Age Share? | odd_one_out | 2026-11-11 17:00 UTC | 15 | – | 0.9 |
-| atlas164 How Does the USA Compare on Bank Capital? | spotlight | 2026-11-11 21:00 UTC | 19 | – | 1.6 |
-| atlas165 Which Places Are Growing the Most Food? | map_reveal | 2026-11-12 00:00 UTC | 10 | – | 1.1 |
+| atlas145 Is YOUR Country Powered by Oil? | map_reveal | 2026-11-07 21:00 UTC | 979 | – | 8.4 |
+| atlas149 Romania vs India: Female Alcohol Consumption | versus | 2026-11-08 00:00 UTC | 957 | – | 8.5 |
+| atlas151 Places Ranked by Male Internet Use | rank_ladder | 2026-11-08 17:00 UTC | 788 | – | 8.2 |
+| atlas153 Is Madagascar the Highest for Bank Loan Spreads? | spotlight | 2026-11-08 21:00 UTC | 78 | – | 0.8 |
+| atlas154 Which Country Has the MOST Equal Youth Literacy? | odd_one_out | 2026-11-09 21:00 UTC | 114 | – | 1.7 |
+| atlas155 The Nations Powered by Mineral Wealth | map_reveal | 2026-11-09 17:00 UTC | 77 | – | 1.1 |
+| atlas156 Germany vs USA: The Years Spent in School | versus | 2026-11-09 00:00 UTC | 109 | – | 1.2 |
+| atlas158 How Does the USA Compare on Female Part-Time Work? | spotlight | 2026-11-10 00:00 UTC | 41 | – | 0.6 |
+| atlas159 Places Ranked by Female Primary Teachers | rank_ladder | 2026-11-10 17:00 UTC | 257 | – | 5.3 |
+| atlas160 Who Emits the Most Greenhouse Gases per Person? | map_reveal | 2026-11-10 21:00 UTC | 17 | – | 0.4 |
+| atlas161 Armenia vs Liberia: Women in Secondary Teaching | versus | 2026-11-11 00:00 UTC | 17 | – | 0.4 |
+| atlas162 Which Country Has the Highest Working-Age Share? | odd_one_out | 2026-11-11 17:00 UTC | 15 | – | 0.6 |
+| atlas164 How Does the USA Compare on Bank Capital? | spotlight | 2026-11-11 21:00 UTC | 20 | – | 1.0 |
+| atlas165 Which Places Are Growing the Most Food? | map_reveal | 2026-11-12 00:00 UTC | 10 | – | 0.6 |
+| atlas166 USA vs Brazil: Upper Middle Class Income Share | versus | 2026-11-12 17:00 UTC | 0 | – | 0.0 |
 
 ## Log
 

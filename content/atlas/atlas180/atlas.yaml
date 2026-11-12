@@ -1,0 +1,77 @@
+id: atlas180
+title: Places Ranked by Fossil Fuel Electricity Reliance
+format: rank_ladder
+hook_text: FOSSIL FUEL POWER
+description: A global ranking of country reliance on oil, gas, and coal for electricity generation.
+hashtags:
+- '#energy'
+- '#geography'
+- '#countries'
+tags:
+- energy
+- electricity from fossil fuel sources
+- countries ranked by electricity from fossil fuel sources
+- Turkmenistan
+- Albania
+- world map
+- geography
+- atlas in numbers
+sources:
+- https://data.worldbank.org/indicator/EG.ELC.FOSL.ZS
+dataset:
+  kind: worldbank
+  indicator: EG.ELC.FOSL.ZS
+  label: Electricity from fossil fuel sources
+  unit: '%'
+  source: World Bank
+  min_year: 2019
+scale:
+  edges:
+  - 10.0
+  - 40.0
+  - 70.0
+  - 95.0
+  labels:
+  - Minimal
+  - Low
+  - Moderate
+  - High
+  - Extreme
+value_format: '{v:.2f}%'
+beats:
+- text: Nepal generates 0% of its electricity from fossil fuels. Turkmenistan generates 100%.
+  shot:
+    callouts:
+    - NPL
+    - TKM
+- text: Sources of electricity refer to the inputs used to generate total electricity.
+  basis: Sources of electricity refer to the inputs used to generate electricity.
+- text: Major economies vary. India has 75.8%, China has 61.6%, and Germany has 40.9%.
+  shot:
+    kind: group
+    isos:
+    - IND
+    - CHN
+    - DEU
+- text: 'Climbing near the top: Algeria sits at 99.2%, East Timor at 99.6%, Kuwait at 99.8%, and Libya at 99.98%.'
+  shot:
+    kind: rank
+    isos:
+    - DZA
+    - TLS
+    - KWT
+    - LBY
+- text: Turkmenistan relies on fossil fuels for 100% of its electricity.
+  shot:
+    kind: country
+    iso: TKM
+- text: At the opposite end, Nepal is the world's lowest at 0%.
+  shot:
+    kind: country
+    iso: NPL
+- text: How much of your electricity comes from burning fossil fuels?
+  shot:
+    kind: card
+    lines:
+    - Fossil Fuel Power?
+    - Electricity from Fossil Fuel Sources (%)

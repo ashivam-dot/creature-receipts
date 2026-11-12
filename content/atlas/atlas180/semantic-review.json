@@ -1,0 +1,131 @@
+{
+  "errors": [],
+  "claims": [
+    {
+      "surface": "beat_0",
+      "text": "Nepal generates 0% of its electricity from fossil fuels.",
+      "isos": [
+        "NPL"
+      ],
+      "support": "NPL: 0%"
+    },
+    {
+      "surface": "beat_0",
+      "text": "Turkmenistan generates 100%.",
+      "isos": [
+        "TKM"
+      ],
+      "support": "TKM: 100%"
+    },
+    {
+      "surface": "beat_2",
+      "text": "India has 75.8%, China has 61.6%, and Germany has 40.9%.",
+      "isos": [
+        "IND",
+        "CHN",
+        "DEU"
+      ],
+      "support": "IND: 75.8%, CHN: 61.6%, DEU: 40.9%"
+    },
+    {
+      "surface": "beat_3",
+      "text": "Algeria sits at 99.2%, East Timor at 99.6%, Kuwait at 99.8%, and Libya at 99.98%.",
+      "isos": [
+        "DZA",
+        "TLS",
+        "KWT",
+        "LBY"
+      ],
+      "support": "DZA: 99.2%, TLS: 99.6%, KWT: 99.8%, LBY: 99.98%"
+    },
+    {
+      "surface": "beat_4",
+      "text": "Turkmenistan relies on fossil fuels for 100% of its electricity.",
+      "isos": [
+        "TKM"
+      ],
+      "support": "TKM: 100%"
+    },
+    {
+      "surface": "beat_5",
+      "text": "At the opposite end, Nepal is the world's lowest at 0%.",
+      "isos": [
+        "NPL"
+      ],
+      "support": "NPL: 0%"
+    }
+  ],
+  "surface_checks": {
+    "title": {
+      "supported": true,
+      "reason": "The title accurately reflects the content of the video.",
+      "isos": []
+    },
+    "hook": {
+      "supported": true,
+      "reason": "The hook is a stylistic summary of the topic.",
+      "isos": []
+    },
+    "description": {
+      "supported": true,
+      "reason": "The description accurately summarizes the indicator.",
+      "isos": []
+    },
+    "beat_0": {
+      "supported": true,
+      "reason": "Values for NPL and TKM match the evidence.",
+      "isos": [
+        "NPL",
+        "TKM"
+      ]
+    },
+    "beat_1": {
+      "supported": true,
+      "reason": "The definition matches the provided evidence.",
+      "isos": []
+    },
+    "beat_2": {
+      "supported": true,
+      "reason": "Values for IND, CHN, and DEU match the evidence.",
+      "isos": [
+        "IND",
+        "CHN",
+        "DEU"
+      ]
+    },
+    "beat_3": {
+      "supported": true,
+      "reason": "Values for DZA, TLS, KWT, and LBY match the evidence.",
+      "isos": [
+        "DZA",
+        "TLS",
+        "KWT",
+        "LBY"
+      ]
+    },
+    "beat_4": {
+      "supported": true,
+      "reason": "Value for TKM matches the evidence.",
+      "isos": [
+        "TKM"
+      ]
+    },
+    "beat_5": {
+      "supported": true,
+      "reason": "Value for NPL matches the evidence.",
+      "isos": [
+        "NPL"
+      ]
+    },
+    "beat_6": {
+      "supported": true,
+      "reason": "The question is a stylistic engagement prompt.",
+      "isos": []
+    },
+    "card_6": {
+      "supported": true,
+      "reason": "The card text matches the indicator definition.",
+      "isos": []
+    }
+  }
+}

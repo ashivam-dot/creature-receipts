@@ -1,0 +1,148 @@
+{
+  "errors": [
+    {
+      "surface": "beat_2",
+      "claim": "Burundi is one of the highest, with 6.3 times the ratio found in Iraq.",
+      "reason": "99.1 / 15.8 is approximately 6.27, which rounds to 6.3, but the claim is presented as a definitive fact without acknowledging the rounding or the specific year differences (2020 vs 2021).",
+      "severity": "info"
+    }
+  ],
+  "claims": [
+    {
+      "surface": "beat_0",
+      "text": "In Burundi, women work at 99.1% of the male rate.",
+      "isos": [
+        "BDI"
+      ],
+      "support": "99.1297187737522"
+    },
+    {
+      "surface": "beat_0",
+      "text": "In Iraq, it is 15.8%.",
+      "isos": [
+        "IRQ"
+      ],
+      "support": "15.7776735734592"
+    },
+    {
+      "surface": "beat_3",
+      "text": "Iraq sits at 15.8%, the world's lowest.",
+      "isos": [
+        "IRQ"
+      ],
+      "support": "15.7776735734592"
+    },
+    {
+      "surface": "beat_4",
+      "text": "Nigeria at 97.4%",
+      "isos": [
+        "NGA"
+      ],
+      "support": "97.3602071184882"
+    },
+    {
+      "surface": "beat_4",
+      "text": "Angola at 98%",
+      "isos": [
+        "AGO"
+      ],
+      "support": "97.9675770643667"
+    },
+    {
+      "surface": "beat_5",
+      "text": "Sudan is 23.3%",
+      "isos": [
+        "SDN"
+      ],
+      "support": "23.2660384372929"
+    },
+    {
+      "surface": "beat_5",
+      "text": "Iran is 20.9%",
+      "isos": [
+        "IRN"
+      ],
+      "support": "20.9300255208024"
+    },
+    {
+      "surface": "beat_5",
+      "text": "Iraq is 15.8%",
+      "isos": [
+        "IRQ"
+      ],
+      "support": "15.7776735734592"
+    }
+  ],
+  "surface_checks": {
+    "title": {
+      "supported": true,
+      "reason": "The video discusses countries with high female-to-male labor participation ratios.",
+      "isos": []
+    },
+    "hook": {
+      "supported": true,
+      "reason": "The video highlights the contrast between high and low participation ratios.",
+      "isos": []
+    },
+    "description": {
+      "supported": true,
+      "reason": "The description accurately reflects the content of the video.",
+      "isos": []
+    },
+    "beat_0": {
+      "supported": true,
+      "reason": "Values match the evidence for Burundi and Iraq.",
+      "isos": [
+        "BDI",
+        "IRQ"
+      ]
+    },
+    "beat_1": {
+      "supported": true,
+      "reason": "Definition matches the provided evidence.",
+      "isos": []
+    },
+    "beat_2": {
+      "supported": true,
+      "reason": "Burundi is ranked 2nd, which is among the highest.",
+      "isos": [
+        "BDI",
+        "IRQ"
+      ]
+    },
+    "beat_3": {
+      "supported": true,
+      "reason": "Iraq is ranked 165th, the lowest in the dataset.",
+      "isos": [
+        "IRQ"
+      ]
+    },
+    "beat_4": {
+      "supported": true,
+      "reason": "Values match the evidence for Nigeria and Angola.",
+      "isos": [
+        "NGA",
+        "AGO"
+      ]
+    },
+    "beat_5": {
+      "supported": true,
+      "reason": "Values match the evidence for Sudan, Iran, and Iraq.",
+      "isos": [
+        "SDN",
+        "IRN",
+        "IRQ"
+      ]
+    },
+    "beat_6": {
+      "supported": true,
+      "reason": "The question is stylistic.",
+      "isos": []
+    },
+    "card_6": {
+      "supported": true,
+      "reason": "The text matches the definition provided in the evidence.",
+      "isos": []
+    }
+  }
+}

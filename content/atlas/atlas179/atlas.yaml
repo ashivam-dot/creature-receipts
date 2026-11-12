@@ -1,0 +1,76 @@
+id: atlas179
+title: Places With the Smallest Labor Gaps
+format: versus
+hook_text: STARK WORKFORCE CONTRAST
+description: A look at the female to male labor participation ratio across countries and territories, comparing
+  the highest and lowest performers globally.
+hashtags:
+- '#work'
+- '#mapdata'
+- '#geography'
+tags:
+- work
+- female to male labor participation ratio
+- countries ranked by female to male labor participation ratio
+- Burundi
+- Iraq
+- world map
+- geography
+- atlas in numbers
+sources:
+- https://data.worldbank.org/indicator/SL.TLF.CACT.FM.NE.ZS
+dataset:
+  kind: worldbank
+  indicator: SL.TLF.CACT.FM.NE.ZS
+  label: Female to male labor participation ratio
+  unit: '%'
+  source: World Bank
+  min_year: 2019
+scale:
+  edges:
+  - 50.0
+  - 70.0
+  - 85.0
+  - 95.0
+  labels:
+  - <50%
+  - 50-70%
+  - 70-85%
+  - 85-95%
+  - '>95%'
+value_format: '{v:.1f}%'
+beats:
+- text: In Burundi, women work at 99.1% of the male rate. In Iraq, it is 15.8%.
+  shot:
+    callouts:
+    - BDI
+    - IRQ
+- text: The labor force is the sum of all persons of working age who are employed and those who are unemployed.
+  basis: The labor force is the sum of all persons of working age who are employed and those who are unemployed.
+- text: Burundi is one of the highest, with 6.3 times the ratio found in Iraq.
+  shot:
+    kind: country
+    iso: BDI
+- text: Iraq sits at 15.8%, the world's lowest.
+  shot:
+    kind: country
+    iso: IRQ
+- text: Nigeria at 97.4% and Angola at 98% show nearly balanced participation.
+  shot:
+    kind: group
+    isos:
+    - NGA
+    - AGO
+- text: At the bottom, Sudan is 23.3%, Iran is 20.9%, and Iraq is 15.8%.
+  shot:
+    kind: rank
+    isos:
+    - SDN
+    - IRN
+    - IRQ
+- text: Which countries see the most balanced workforce participation?
+  shot:
+    kind: card
+    lines:
+    - What is your ratio?
+    - Female to male labor participation ratio

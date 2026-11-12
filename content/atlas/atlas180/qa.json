@@ -1,0 +1,25 @@
+{
+  "version": 1,
+  "passed": true,
+  "checked_at": "2026-11-12T17:48:05.490851+00:00",
+  "quality_module_sha256": "db7be8ac57c839f39a10676f1a70580a83ea346f59c27f19868d09c272def14c",
+  "media_sha256": "27ff725472f67b26fd07b861d252d318f5189fd93ac53d11caf1cc48a01c578a",
+  "script_sha256": "c0602bb1c043645573c230264ac5c80a81e314cfe9a4d03fb453d83b9e2ef925",
+  "data_sha256": "4dd93c4b4eae9cdb66d88380837534cbe63ffc75571b6243feaf5e8b2fefe13f",
+  "claims_sha256": "4ff8d87d43292337be6d14a1fae9b9156f7bf7f908adf507dff6c05bf845232b",
+  "contact_sha256": "fed2d7f1a697f63cba16cc660ea7ab8b4c15d2a7932860e65098747f0b58a11c",
+  "duration": 51.34,
+  "integrated_lufs": -14.1,
+  "true_peak_dbfs": -1.4,
+  "speech": {
+    "heard": "Nepal generates 0% of its electricity from fossil fuels. Turkmenistan generates 100%. Sources of electricity refer to the inputs used to generate total electricity. Major economies vary. India has 75.8%, China has 61.6%, and Germany has 40.9%. Climbing near the top, Algeria sits at 99.2%, East Timor at 99.6%, Kuwait at 99.8% and Libya at 99.98%. Turkmenistan relies on fossil fuels for 100% of its electricity. At the opposite end, Nepal is the world's lowest at 0%. how much of your electricity comes from burning fossil fuels.",
+    "model": "small.en",
+    "media_sha256": "27ff725472f67b26fd07b861d252d318f5189fd93ac53d11caf1cc48a01c578a",
+    "primary_differences": [],
+    "differences": []
+  },
+  "warnings": [
+    "duration 51.3s outside editorial 30–45s target"
+  ],
+  "speech_policy": "material-hard-entity-polarity-strict-minor-spelling-warning"
+}
