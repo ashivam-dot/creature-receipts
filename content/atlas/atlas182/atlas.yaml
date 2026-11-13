@@ -1,0 +1,84 @@
+id: atlas182
+title: The Places Most Dependent on Their Forests
+hook_text: TIMBER ECONOMIES
+description: A cinematic look at global forest rents as a percentage of GDP, comparing high-dependence nations like
+  Liberia to nations with almost no forest income.
+hashtags:
+- '#economy'
+- '#geography'
+- '#countries'
+tags:
+- wealth
+- forest rents % of gdp
+- countries ranked by forest rents % of gdp
+- Liberia
+- Greenland
+- world map
+- geography
+- atlas in numbers
+sources:
+- https://data.worldbank.org/indicator/NY.GDP.FRST.RT.ZS
+dataset:
+  kind: worldbank
+  indicator: NY.GDP.FRST.RT.ZS
+  label: Forest rents (% of GDP)
+  unit: '%'
+  source: World Bank
+  min_year: 2019
+scale:
+  edges:
+  - 0.1
+  - 1.0
+  - 3.5
+  - 10.0
+  labels:
+  - Under 0.1%
+  - 0.1% to 1.0%
+  - 1.0% to 3.5%
+  - 3.5% to 10.0%
+  - Over 10.0%
+value_format: '{v:.4f}%'
+beats:
+- text: Liberia has 15 times the forest wealth of Nigeria. Nigeria has 1.1 percent.
+  shot:
+    callouts:
+    - LBR
+    - NGA
+- text: Liberia is one of the highest on the map, at 16.5 percent.
+  shot:
+    kind: country
+    iso: LBR
+- text: This counts roundwood harvest times regional prices and rental rates.
+  shot:
+    kind: country
+    iso: LBR
+  basis: Forest rents are roundwood harvest times the product of regional prices and a regional rental rate.
+- text: At the bottom, the United Kingdom and Turkey have 0 percent.
+  shot:
+    kind: group
+    isos:
+    - GBR
+    - TUR
+- text: Burundi has 14 percent, Somalia 11.2 percent, and Guinea-Bissau 10.4 percent.
+  shot:
+    kind: rank
+    isos:
+    - BDI
+    - SOM
+    - GNB
+- text: China has 0.1 percent and the USA has 0.04 percent.
+  shot:
+    kind: group
+    isos:
+    - CHN
+    - USA
+- text: Liberia is a map leader, but the Solomon Islands are even higher.
+  shot:
+    kind: country
+    iso: LBR
+- text: How much does timber contribute to your economy?
+  shot:
+    kind: card
+    lines:
+    - Forest wealth?
+    - Forest rents (% of GDP)

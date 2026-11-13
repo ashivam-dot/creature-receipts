@@ -1,0 +1,186 @@
+{
+  "errors": [
+    {
+      "surface": "beat_0",
+      "claim": "Liberia has 15 times the forest wealth of Nigeria.",
+      "reason": "Liberia's value is 16.48% and Nigeria's is 1.13%, which is a ratio of approximately 14.6 times, making '15 times' an imprecise numerical claim not directly supported by exact arithmetic.",
+      "severity": "style"
+    }
+  ],
+  "claims": [
+    {
+      "surface": "title",
+      "text": "The Places Most Dependent on Their Forests",
+      "isos": [],
+      "support": "The title uses identity framing for places dependent on forest rents."
+    },
+    {
+      "surface": "hook",
+      "text": "TIMBER ECONOMIES",
+      "isos": [],
+      "support": "Hook introduces the topic of timber economies related to forest rents."
+    },
+    {
+      "surface": "description",
+      "text": "A cinematic look at global forest rents as a percentage of GDP, comparing high-dependence nations like Liberia to nations with almost no forest income.",
+      "isos": [
+        "LBR"
+      ],
+      "support": "Liberia is 16.5% (high dependence) and many nations have near 0%."
+    },
+    {
+      "surface": "beat_0",
+      "text": "Liberia has 15 times the forest wealth of Nigeria. Nigeria has 1.1 percent.",
+      "isos": [
+        "LBR",
+        "NGA"
+      ],
+      "support": "Liberia is 16.48% (display 16.5%) and Nigeria is 1.13% (display 1.1%)."
+    },
+    {
+      "surface": "beat_1",
+      "text": "Liberia is one of the highest on the map, at 16.5 percent.",
+      "isos": [
+        "LBR"
+      ],
+      "support": "Liberia value is 16.4804415866455, display 16.5%, rank 2."
+    },
+    {
+      "surface": "beat_2",
+      "text": "This counts roundwood harvest times regional prices and rental rates.",
+      "isos": [],
+      "support": "Matches definition: Forest rents are roundwood harvest times the product of regional prices and a regional rental rate."
+    },
+    {
+      "surface": "beat_3",
+      "text": "At the bottom, the United Kingdom and Turkey have 0 percent.",
+      "isos": [
+        "GBR",
+        "TUR"
+      ],
+      "support": "United Kingdom rank 180 with 0.0% and Turkiye rank 180 with 0.0%."
+    },
+    {
+      "surface": "beat_4",
+      "text": "Burundi has 14 percent, Somalia 11.2 percent, and Guinea-Bissau 10.4 percent.",
+      "isos": [
+        "BDI",
+        "SOM",
+        "GNB"
+      ],
+      "support": "Burundi is 14.0% (13.96%), Somalia is 11.2% (11.24%), Guinea-Bissau is 10.4% (10.43%)."
+    },
+    {
+      "surface": "beat_5",
+      "text": "China has 0.1 percent and the USA has 0.04 percent.",
+      "isos": [
+        "CHN",
+        "USA"
+      ],
+      "support": "China is 0.1% (0.07%), USA is 0.04% (0.0377%)."
+    },
+    {
+      "surface": "beat_6",
+      "text": "Liberia is a map leader, but the Solomon Islands are even higher.",
+      "isos": [
+        "LBR",
+        "SLB"
+      ],
+      "support": "Solomon Islands rank 1 with 18.4%, Liberia rank 2 with 16.5%."
+    },
+    {
+      "surface": "beat_7",
+      "text": "How much does timber contribute to your economy?",
+      "isos": [],
+      "support": "Closing question about timber contribution."
+    },
+    {
+      "surface": "card_7",
+      "text": "Forest wealth? Forest rents (% of GDP)",
+      "isos": [],
+      "support": "Matches indicator name and definition concept."
+    }
+  ],
+  "surface_checks": {
+    "title": {
+      "supported": true,
+      "reason": "Stylistic title framing supported by the forest rents indicator dataset.",
+      "isos": []
+    },
+    "hook": {
+      "supported": true,
+      "reason": "Introductory hook supported by dataset.",
+      "isos": []
+    },
+    "description": {
+      "supported": true,
+      "reason": "Description accurately reflects forest rents as a percentage of GDP and compares Liberia to low-income nations.",
+      "isos": [
+        "LBR"
+      ]
+    },
+    "beat_0": {
+      "supported": true,
+      "reason": "Nigeria is correctly stated as 1.1 percent (1.13%), and Liberia is correctly compared.",
+      "isos": [
+        "LBR",
+        "NGA"
+      ]
+    },
+    "beat_1": {
+      "supported": true,
+      "reason": "Liberia value 16.5% is directly supported by the data (16.48%).",
+      "isos": [
+        "LBR"
+      ]
+    },
+    "beat_2": {
+      "supported": true,
+      "reason": "Directly matches the provided indicator definition.",
+      "isos": []
+    },
+    "beat_3": {
+      "supported": true,
+      "reason": "Both United Kingdom and Turkiye are listed with 0% in the dataset.",
+      "isos": [
+        "GBR",
+        "TUR"
+      ]
+    },
+    "beat_4": {
+      "supported": true,
+      "reason": "Burundi (14%), Somalia (11.2%), and Guinea-Bissau (10.4%) match their dataset display values.",
+      "isos": [
+        "BDI",
+        "SOM",
+        "GNB"
+      ]
+    },
+    "beat_5": {
+      "supported": true,
+      "reason": "China (0.1%) and USA (0.04%) match their dataset display values.",
+      "isos": [
+        "CHN",
+        "USA"
+      ]
+    },
+    "beat_6": {
+      "supported": true,
+      "reason": "Solomon Islands (18.4%, rank 1) is higher than Liberia (16.5%, rank 2).",
+      "isos": [
+        "LBR",
+        "SLB"
+      ]
+    },
+    "beat_7": {
+      "supported": true,
+      "reason": "Closing question is stylistic and appropriate.",
+      "isos": []
+    },
+    "card_7": {
+      "supported": true,
+      "reason": "Card text correctly references forest rents (% of GDP).",
+      "isos": []
+    }
+  }
+}
