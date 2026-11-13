@@ -1,0 +1,81 @@
+id: atlas181
+title: Which Country Has the MOST Revenue From Sales Taxes?
+format: odd_one_out
+hook_text: REVENUE OUTLIER
+description: A documentary-style look at government revenue from consumption taxes, contrasting the low levels in
+  the USA and Iraq with the high reliance in countries and territories like Guatemala and India.
+hashtags:
+- '#data'
+- '#economics'
+- '#geography'
+tags:
+- taxes on goods and services
+- countries ranked by taxes on goods and services
+- Lao PDR
+- Iraq
+- world map
+- geography
+- atlas in numbers
+sources:
+- https://data.worldbank.org/indicator/GC.TAX.GSRV.RV.ZS
+dataset:
+  kind: worldbank
+  indicator: GC.TAX.GSRV.RV.ZS
+  label: Taxes on goods and services
+  unit: '%'
+  source: World Bank
+  min_year: 2019
+scale:
+  edges:
+  - 15.0
+  - 31.0
+  - 45.0
+  labels:
+  - Under 15%
+  - 15-31%
+  - 31-45%
+  - Over 45%
+value_format: '{v:.1f}%'
+beats:
+- text: One big country breaks the pattern for how governments fund themselves. It's a total surprise.
+  shot:
+    callouts:
+    - USA
+    - GTM
+- text: India, China, or the USA. Only one gets almost nothing from sales taxes.
+  shot:
+    kind: group
+    isos:
+    - IND
+    - CHN
+    - USA
+- text: These taxes are collected on the sale, purchase, or delivery of goods and services.
+  shot:
+    kind: country
+    iso: USA
+  basis: General taxes on goods and services are taxes levied on the production, leasing, delivery, sale, purchase
+    or other change of ownership of a wide range of goods and the provision of a wide range of services.
+- text: The answer is number 3, the USA. Its government gets just 2.1% from these taxes.
+  shot:
+    kind: country
+    iso: USA
+- text: India has 16 times what the USA collects. India gets 32.6%.
+  shot:
+    kind: group
+    isos:
+    - IND
+    - USA
+- text: Guatemala relies on these taxes for 51.9% of its money. Over half.
+  shot:
+    kind: country
+    iso: GTM
+- text: Iraq is the world's lowest. It collects only 0.4%.
+  shot:
+    kind: country
+    iso: IRQ
+- text: Does your government take a big cut of everything you buy?
+  shot:
+    kind: card
+    lines:
+    - Every purchase taxed?
+    - Consumption Tax Revenue

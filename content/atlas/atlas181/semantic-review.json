@@ -1,0 +1,131 @@
+{
+  "errors": [
+    {
+      "surface": "description",
+      "claim": "Iraq low levels",
+      "reason": "Iraq is at 0.4% which is the lowest, but the description frames it alongside the US as 'low levels' in a general sense, though technically correct, let's look at beat 4 and beat 1 for factual claims.",
+      "severity": "info"
+    },
+    {
+      "surface": "beat_1",
+      "claim": "India, China, or the USA. Only one gets almost nothing from sales taxes.",
+      "reason": "China's value is 28.3%, India's is 32.6%, and USA is 2.1%. Saying 'only one gets almost nothing' correctly points to the USA, but 'almost nothing' is a bit vague. However, USA is indeed very low (2.1%).",
+      "severity": "style"
+    },
+    {
+      "surface": "beat_4",
+      "claim": "India has 16 times what the USA collects. India gets 32.6%.",
+      "reason": "USA is 2.07768% and India is 32.5985%. 32.5985 / 2.07768 is roughly 15.69, which rounds to 16 times. This is factually supported.",
+      "severity": "style"
+    }
+  ],
+  "claims": [
+    {
+      "surface": "beat_3",
+      "text": "The answer is number 3, the USA. Its government gets just 2.1% from these taxes.",
+      "isos": [
+        "USA"
+      ],
+      "support": "United States: 2.1%, year 2024, rank 138"
+    },
+    {
+      "surface": "beat_4",
+      "text": "India gets 32.6%.",
+      "isos": [
+        "IND"
+      ],
+      "support": "India: 32.6%, year 2022, rank 57"
+    },
+    {
+      "surface": "beat_5",
+      "text": "Guatemala relies on these taxes for 51.9% of its money. Over half.",
+      "isos": [
+        "GTM"
+      ],
+      "support": "Guatemala: 51.9%, year 2024, rank 4"
+    },
+    {
+      "surface": "beat_6",
+      "text": "Iraq is the world's lowest. It collects only 0.4%.",
+      "isos": [
+        "IRQ"
+      ],
+      "support": "Iraq: 0.4%, year 2019, rank 139"
+    }
+  ],
+  "surface_checks": {
+    "title": {
+      "supported": true,
+      "reason": "Title is a framing question about the maximum revenue from sales taxes.",
+      "isos": []
+    },
+    "hook": {
+      "supported": true,
+      "reason": "Introductory hook label.",
+      "isos": []
+    },
+    "description": {
+      "supported": true,
+      "reason": "Accurately reflects the focus on consumption taxes and mentions USA, Iraq, Guatemala, and India.",
+      "isos": []
+    },
+    "beat_0": {
+      "supported": true,
+      "reason": "Introductory beat.",
+      "isos": []
+    },
+    "beat_1": {
+      "supported": true,
+      "reason": "Compares India, China, and the USA, identifying the USA as having a very low value.",
+      "isos": [
+        "IND",
+        "CHN",
+        "USA"
+      ]
+    },
+    "beat_2": {
+      "supported": true,
+      "reason": "Matches the definition of General taxes on goods and services.",
+      "isos": []
+    },
+    "beat_3": {
+      "supported": true,
+      "reason": "USA value is 2.1% (exact value 2.07768%).",
+      "isos": [
+        "USA"
+      ]
+    },
+    "beat_4": {
+      "supported": true,
+      "reason": "India value is 32.6% (exact value 32.5985%), which is roughly 16 times the US value.",
+      "isos": [
+        "IND",
+        "USA"
+      ]
+    },
+    "beat_5": {
+      "supported": true,
+      "reason": "Guatemala value is 51.9%, which is over half.",
+      "isos": [
+        "GTM"
+      ]
+    },
+    "beat_6": {
+      "supported": true,
+      "reason": "Iraq is rank 139 (lowest in the universe) with 0.4% (exact value 0.351%).",
+      "isos": [
+        "IRQ"
+      ]
+    },
+    "beat_7": {
+      "supported": true,
+      "reason": "Outro question.",
+      "isos": []
+    },
+    "card_7": {
+      "supported": true,
+      "reason": "Card labels match topic.",
+      "isos": []
+    }
+  }
+}
