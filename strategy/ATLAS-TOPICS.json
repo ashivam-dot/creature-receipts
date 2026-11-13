@@ -7007,7 +7007,305 @@
    "source_url": "https://data.worldbank.org/indicator/SL.EMP.VULN.ZS",
    "status": "open",
    "added_by": "refill"
+  },
+  {
+   "id": "t193",
+   "topic": "Global Industrial Employment Rates",
+   "angle": "Industrial jobs account for over a third of total employment in countries like Czechia and Viet Nam, but less than four percent in Timor-Leste and Burundi.",
+   "format": "map_reveal",
+   "dataset": {
+    "kind": "worldbank",
+    "indicator": "SL.IND.EMPL.ZS",
+    "label": "Industrial employment share",
+    "unit": "%",
+    "source": "World Bank",
+    "min_year": 2019
+   },
+   "scale": {
+    "kind": "bins",
+    "edges": [
+     10.0,
+     18.0,
+     25.0,
+     32.0
+    ],
+    "labels": [
+     "Under 10%",
+     "10% to 18%",
+     "18% to 25%",
+     "25% to 32%",
+     "Over 32%"
+    ]
+   },
+   "value_format": "{v:.1f}%",
+   "hashtags": [
+    "#mapshandler",
+    "#geography",
+    "#jobs"
+   ],
+   "source_url": "https://data.worldbank.org/indicator/SL.IND.EMPL.ZS",
+   "status": "open",
+   "added_by": "refill"
+  },
+  {
+   "id": "t194",
+   "topic": "Economic Dependence on Forest Rents",
+   "angle": "In developing island and tropical nations like Solomon Islands and Liberia, forest resource harvest accounts for over 15% of total economic output.",
+   "format": "map_reveal",
+   "dataset": {
+    "kind": "worldbank",
+    "indicator": "NY.GDP.FRST.RT.ZS",
+    "label": "Forest rents (% of GDP)",
+    "unit": "%",
+    "source": "World Bank",
+    "min_year": 2019
+   },
+   "scale": {
+    "kind": "bins",
+    "edges": [
+     0.1,
+     1.0,
+     3.5,
+     10.0
+    ],
+    "labels": [
+     "Under 0.1%",
+     "0.1% to 1.0%",
+     "1.0% to 3.5%",
+     "3.5% to 10.0%",
+     "Over 10.0%"
+    ]
+   },
+   "value_format": "{v:.1f}%",
+   "hashtags": [
+    "#maps"
+   ],
+   "source_url": "https://data.worldbank.org/indicator/NY.GDP.FRST.RT.ZS",
+   "status": "open",
+   "added_by": "refill"
+  },
+  {
+   "id": "t195",
+   "topic": "Economic Dependency on Natural Gas Rents",
+   "angle": "Timor-Leste derives nearly thirty percent of its GDP from natural gas rents, highest of any country in the world.",
+   "format": "rank_ladder",
+   "dataset": {
+    "kind": "worldbank",
+    "indicator": "NY.GDP.NGAS.RT.ZS",
+    "label": "Natural gas rents as % of GDP",
+    "unit": "%",
+    "source": "World Bank",
+    "min_year": 2019
+   },
+   "scale": {
+    "kind": "bins",
+    "edges": [
+     0.1,
+     1.0,
+     5.0,
+     10.0
+    ],
+    "labels": [
+     "Under 0.1%",
+     "0.1% - 1.0%",
+     "1.0% - 5.0%",
+     "5.0% - 10.0%",
+     "Over 10.0%"
+    ]
+   },
+   "value_format": "{v:.1f}%",
+   "hashtags": [
+    "#maps",
+    "#geography",
+    "#economy"
+   ],
+   "source_url": "https://data.worldbank.org/indicator/NY.GDP.NGAS.RT.ZS",
+   "status": "open",
+   "added_by": "refill"
+  },
+  {
+   "id": "t196",
+   "topic": "Fossil Fuel Share of Energy Consumption",
+   "angle": "While several nations rely almost 100% on fossil fuels for energy, DR Congo gets less than 3% of its energy from fossil fuels.",
+   "format": "map_reveal",
+   "dataset": {
+    "kind": "worldbank",
+    "indicator": "EG.USE.COMM.FO.ZS",
+    "label": "Fossil fuel share of total energy",
+    "unit": "%",
+    "source": "World Bank",
+    "min_year": 2019
+   },
+   "scale": {
+    "kind": "bins",
+    "edges": [
+     25,
+     50,
+     75,
+     90
+    ],
+    "labels": [
+     "Under 25%",
+     "25% - 50%",
+     "50% - 75%",
+     "75% - 90%",
+     "Over 90%"
+    ]
+   },
+   "value_format": "{v:.1f}%",
+   "hashtags": [
+    "#maps射",
+    "#maps",
+    "#geography"
+   ],
+   "source_url": "https://data.worldbank.org/indicator/EG.USE.COMM.FO.ZS",
+   "status": "open",
+   "added_by": "refill"
+  },
+  {
+   "id": "t197",
+   "topic": "Youth Labor Force Participation Worldwide",
+   "angle": "More than 83% of youth aged 15–24 in the Netherlands are economically active, compared to under 14% in Djibouti.",
+   "format": "map_reveal",
+   "dataset": {
+    "kind": "worldbank",
+    "indicator": "SL.TLF.ACTI.1524.ZS",
+    "label": "Youth labor force participation rate",
+    "unit": "%",
+    "source": "World Bank",
+    "min_year": 2019
+   },
+   "scale": {
+    "kind": "bins",
+    "edges": [
+     25.0,
+     38.5,
+     50.0,
+     65.0
+    ],
+    "labels": [
+     "Under 25%",
+     "25% to 38.5%",
+     "38.5% to 50%",
+     "50% to 65%",
+     "Over 65%"
+    ]
+   },
+   "value_format": "{v:.1f}%",
+   "hashtags": [
+    "#maps me",
+    "#geography",
+    "#labor"
+   ],
+   "source_url": "https://data.worldbank.org/indicator/SL.TLF.ACTI.1524.ZS",
+   "status": "open",
+   "added_by": "refill"
+  },
+  {
+   "id": "t198",
+   "topic": "Share of Babies Born Underweight",
+   "angle": "Over 27 percent of newborns in India weigh less than 2.5 kilograms, a rate nearly seven times higher than in Nordic countries.",
+   "format": "rank_ladder",
+   "dataset": {
+    "kind": "worldbank",
+    "indicator": "SH.STA.BRTW.ZS",
+    "label": "Low-birthweight babies (% of births)",
+    "unit": "%",
+    "source": "World Bank",
+    "min_year": 2019
+   },
+   "scale": {
+    "kind": "threshold",
+    "at": 10,
+    "labels": [
+     "10% or higher",
+     "Under 10%"
+    ]
+   },
+   "value_format": "{v:.1f}%",
+   "hashtags": [
+    "#maps"
+   ],
+   "source_url": "https://data.worldbank.org/indicator/SH.STA.BRTW.ZS",
+   "status": "open",
+   "added_by": "refill"
+  },
+  {
+   "id": "t199",
+   "topic": "Civil Servant Pay in Public Spending",
+   "angle": "Public employee salaries account for over half of total government expenses in several developing nations, compared to under six percent in Germany and Belgium.",
+   "format": "map_reveal",
+   "dataset": {
+    "kind": "worldbank",
+    "indicator": "GC.XPN.COMP.ZS",
+    "label": "Public employee pay share of expenses",
+    "unit": "%",
+    "source": "World Bank",
+    "min_year": 2019
+   },
+   "scale": {
+    "kind": "bins",
+    "edges": [
+     10,
+     20,
+     35,
+     50
+    ],
+    "labels": [
+     "Under 10%",
+     "10% to 20%",
+     "20% to 35%",
+     "35% to 50%",
+     "Over 50%"
+    ]
+   },
+   "value_format": "{v:.1f}%",
+   "hashtags": [
+    "#mapsSend me raw json string inside json block or directly? Prompt says "
+   ],
+   "source_url": "https://data.worldbank.org/indicator/GC.XPN.COMP.ZS",
+   "status": "open",
+   "added_by": "refill"
+  },
+  {
+   "id": "t200",
+   "topic": "Global Consumer Prices Since 2010",
+   "angle": "Consumer prices in South Sudan have skyrocketed more than 400-fold since 2010, while Switzerland's prices have risen by only six percent.",
+   "format": "map_reveal",
+   "dataset": {
+    "kind": "worldbank",
+    "indicator": "FP.CPI.TOTL",
+    "label": "Consumer price index (2010 = 100)",
+    "unit": "index",
+    "source": "World Bank",
+    "min_year": 2019
+   },
+   "scale": {
+    "kind": "bins",
+    "edges": [
+     130,
+     160,
+     230,
+     500
+    ],
+    "labels": [
+     "Under 130",
+     "130–160",
+     "160–230",
+     "230–500",
+     "Over 500"
+    ]
+   },
+   "value_format": "{v:,.0f}",
+   "hashtags": [
+    "#maps",
+    "#geography",
+    "#economy"
+   ],
+   "source_url": "https://data.worldbank.org/indicator/FP.CPI.TOTL",
+   "status": "open",
+   "added_by": "refill"
   }
  ],
- "refilled_at": "2026-11-12T09:10:13+00:00"
+ "refilled_at": "2026-11-13T09:10:13+00:00"
 }
