@@ -1,0 +1,68 @@
+id: atlas186
+title: Places Ranked by Rural Population Growth
+format: rank_ladder
+hook_text: RURAL POPULATION GROWTH
+description: Discover where rural populations are expanding and shrinking fastest around the world, from the Netherlands
+  to Oman.
+hashtags:
+- '#population'
+- '#geography'
+- '#countries'
+tags:
+- population
+- annual rural population growth rate
+- countries ranked by annual rural population growth rate
+- Oman
+- Netherlands
+- world map
+- geography
+- atlas in numbers
+sources:
+- https://data.worldbank.org/indicator/SP.RUR.TOTL.ZG
+dataset:
+  kind: worldbank
+  indicator: SP.RUR.TOTL.ZG
+  label: Annual rural population growth rate
+  unit: '%'
+  source: World Bank
+  min_year: 2019
+scale:
+  kind: threshold
+  labels:
+  - Growing countryside
+  - Declining countryside
+value_format: '{v:+.2f}%'
+beats:
+- text: The rural population in the Netherlands is shrinking by 6.6%. In Oman, it's growing by 3.8%.
+  shot:
+    callouts:
+    - NLD
+    - OMN
+- text: This counts everyone in areas outside cities, calculated as total population minus urban population.
+  shot:
+    kind: country
+    iso: OMN
+  basis: calculated as the difference between total population and urban population.
+- text: Big countries diverge. India is growing by 0.4%, while Brazil is down 2%.
+  shot:
+    kind: group
+    isos:
+    - IND
+    - BRA
+- text: 'The fastest growing countrysides climb steeply: Niger at 2.8%, Saudi Arabia at 3.6%, and Syria at 3.7%.'
+  shot:
+    kind: rank
+    isos:
+    - NER
+    - SAU
+    - SYR
+- text: At the very top is Oman, expanding by 3.8%.
+  shot:
+    kind: country
+    iso: OMN
+- text: Is the countryside growing or shrinking in your country?
+  shot:
+    kind: card
+    lines:
+    - Is your countryside growing?
+    - Annual Rural Population Growth Rate (2025)

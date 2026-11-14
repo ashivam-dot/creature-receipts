@@ -1,0 +1,147 @@
+{
+  "errors": [],
+  "claims": [
+    {
+      "surface": "title",
+      "text": "Places Ranked by Rural Population Growth",
+      "isos": [],
+      "support": "Ranks mapped countries and territories by SP.RUR.TOTL.ZG"
+    },
+    {
+      "surface": "hook",
+      "text": "RURAL POPULATION GROWTH",
+      "isos": [],
+      "support": "Indicator SP.RUR.TOTL.ZG"
+    },
+    {
+      "surface": "description",
+      "text": "Discover where rural populations are expanding and shrinking fastest around the world, from the Netherlands to Oman.",
+      "isos": [
+        "NLD",
+        "OMN"
+      ],
+      "support": "Netherlands growth: -6.58% (rank 201), Oman growth: 3.79% (rank 1)"
+    },
+    {
+      "surface": "beat_0",
+      "text": "The rural population in the Netherlands is shrinking by 6.6%. In Oman, it's growing by 3.8%.",
+      "isos": [
+        "NLD",
+        "OMN"
+      ],
+      "support": "Netherlands value -6.5803438251894 (display -6.6%), Oman value 3.79047800811716 (display +3.8%)"
+    },
+    {
+      "surface": "beat_1",
+      "text": "This counts everyone in areas outside cities, calculated as total population minus urban population.",
+      "isos": [],
+      "support": "Definition: Rural population refers to people living in rural areas as defined by national statistical offices. It is calculated as the difference between total population and urban population."
+    },
+    {
+      "surface": "beat_2",
+      "text": "Big countries diverge. India is growing by 0.4%, while Brazil is down 2%.",
+      "isos": [
+        "IND",
+        "BRA"
+      ],
+      "support": "India value 0.405907634979981 (display +0.4%), Brazil value -1.96950183622636 (display -2%)"
+    },
+    {
+      "surface": "beat_3",
+      "text": "The fastest growing countrysides climb steeply: Niger at 2.8%, Saudi Arabia at 3.6%, and Syria at 3.7%.",
+      "isos": [
+        "NER",
+        "SAU",
+        "SYR"
+      ],
+      "support": "Niger value 2.82634893789145 (display +2.8%), Saudi Arabia value 3.61664381192166 (display +3.6%), Syrian Arab Republic value 3.74218579781778 (display +3.7%)"
+    },
+    {
+      "surface": "beat_4",
+      "text": "At the very top is Oman, expanding by 3.8%.",
+      "isos": [
+        "OMN"
+      ],
+      "support": "Oman rank 1, value 3.79047800811716 (display +3.8%)"
+    },
+    {
+      "surface": "beat_5",
+      "text": "Is the countryside growing or shrinking in your country?",
+      "isos": [],
+      "support": "Style/identity question"
+    },
+    {
+      "surface": "card_5",
+      "text": "Is your countryside growing?, Annual Rural Population Growth Rate (2025)",
+      "isos": [],
+      "support": "Card metadata and title matching year 2025"
+    }
+  ],
+  "surface_checks": {
+    "title": {
+      "supported": true,
+      "reason": "Accurately describes ranking of rural population growth values.",
+      "isos": []
+    },
+    "hook": {
+      "supported": true,
+      "reason": "Matches indicator topic.",
+      "isos": []
+    },
+    "description": {
+      "supported": true,
+      "reason": "Netherlands (-6.6%) and Oman (3.8%) match data extremes.",
+      "isos": [
+        "NLD",
+        "OMN"
+      ]
+    },
+    "beat_0": {
+      "supported": true,
+      "reason": "Netherlands -6.58% and Oman 3.79% rounded correctly to displayed values.",
+      "isos": [
+        "NLD",
+        "OMN"
+      ]
+    },
+    "beat_1": {
+      "supported": true,
+      "reason": "Directly quotes definition parts regarding areas outside cities and calculation.",
+      "isos": []
+    },
+    "beat_2": {
+      "supported": true,
+      "reason": "India 0.41% (+0.4%) and Brazil -1.97% (-2%) match data.",
+      "isos": [
+        "IND",
+        "BRA"
+      ]
+    },
+    "beat_3": {
+      "supported": true,
+      "reason": "Niger 2.83% (+2.8%), Saudi Arabia 3.62% (+3.6%), and Syria 3.74% (+3.7%) match data.",
+      "isos": [
+        "NER",
+        "SAU",
+        "SYR"
+      ]
+    },
+    "beat_4": {
+      "supported": true,
+      "reason": "Oman rank 1 with 3.79% (+3.8%).",
+      "isos": [
+        "OMN"
+      ]
+    },
+    "beat_5": {
+      "supported": true,
+      "reason": "Stylistic closing question.",
+      "isos": []
+    },
+    "card_5": {
+      "supported": true,
+      "reason": "Card text matches indicator name and year label 2025.",
+      "isos": []
+    }
+  }
+}

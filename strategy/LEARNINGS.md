@@ -124,17 +124,18 @@ Refreshed by every producer run (`atlas.stats`) from the channel's public feed o
 | atlas155 The Nations Powered by Mineral Wealth | map_reveal | 2026-11-09 17:00 UTC | 77 | – | 0.7 |
 | atlas156 Germany vs USA: The Years Spent in School | versus | 2026-11-09 00:00 UTC | 110 | 1 | 0.9 |
 | atlas158 How Does the USA Compare on Female Part-Time Work? | spotlight | 2026-11-10 00:00 UTC | 42 | – | 0.4 |
-| atlas159 Places Ranked by Female Primary Teachers | rank_ladder | 2026-11-10 17:00 UTC | 258 | – | 2.9 |
+| atlas159 Places Ranked by Female Primary Teachers | rank_ladder | 2026-11-10 17:00 UTC | 258 | – | 2.7 |
 | atlas160 Who Emits the Most Greenhouse Gases per Person? | map_reveal | 2026-11-10 21:00 UTC | 18 | – | 0.2 |
 | atlas161 Armenia vs Liberia: Women in Secondary Teaching | versus | 2026-11-11 00:00 UTC | 18 | – | 0.2 |
 | atlas162 Which Country Has the Highest Working-Age Share? | odd_one_out | 2026-11-11 17:00 UTC | 15 | – | 0.2 |
 | atlas164 How Does the USA Compare on Bank Capital? | spotlight | 2026-11-11 21:00 UTC | 21 | – | 0.3 |
-| atlas165 Which Places Are Growing the Most Food? | map_reveal | 2026-11-12 00:00 UTC | 10 | – | 0.2 |
+| atlas165 Which Places Are Growing the Most Food? | map_reveal | 2026-11-12 00:00 UTC | 12 | – | 0.2 |
 | atlas166 USA vs Brazil: Upper Middle Class Income Share | versus | 2026-11-12 17:00 UTC | 4 | – | 0.1 |
 | atlas167 Places Ranked by Years in Primary School | rank_ladder | 2026-11-13 17:00 UTC | 0 | – | 0.0 |
-| atlas169 Places Ranked by Renewable Electricity Share | map_reveal | 2026-11-13 21:00 UTC | 0 | – | 0.0 |
-| atlas172 The Global Divide in Relative Poverty | versus | 2026-11-13 00:00 UTC | 2 | – | 0.1 |
+| atlas169 Places Ranked by Renewable Electricity Share | map_reveal | 2026-11-13 21:00 UTC | 1 | – | 0.0 |
+| atlas172 The Global Divide in Relative Poverty | versus | 2026-11-13 00:00 UTC | 2 | – | 0.0 |
 | atlas173 Where Women DOMINATE University Faculty | map_reveal | 2026-11-12 21:00 UTC | 1 | – | 0.0 |
+| atlas174 Places Ranked by Male Part-Time Work | odd_one_out | 2026-11-14 17:00 UTC | 0 | – | 0.0 |
 | atlas178 Is INDIA Near the Top for School Completion? | spotlight | 2026-11-14 00:00 UTC | 0 | – | 0.0 |
 
 ## Log
