@@ -7305,7 +7305,188 @@
    "source_url": "https://data.worldbank.org/indicator/FP.CPI.TOTL",
    "status": "open",
    "added_by": "refill"
+  },
+  {
+   "id": "t201",
+   "topic": "Global Commercial Bank Deposit Interest Rates",
+   "angle": "Bank deposit returns vary dramatically worldwide, ranging from under 0.1% in Switzerland and Micronesia to over 50% in Turkiye.",
+   "format": "rank_ladder",
+   "dataset": {
+    "kind": "worldbank",
+    "indicator": "FR.INR.DPST",
+    "label": "Deposit interest rate",
+    "unit": "%",
+    "source": "World Bank",
+    "min_year": 2019
+   },
+   "scale": {
+    "kind": "bins",
+    "edges": [
+     1,
+     4,
+     8,
+     15
+    ],
+    "labels": [
+     "Under 1%",
+     "1% to 4%",
+     "4% to 8%",
+     "8% to 15%",
+     "Over 15%"
+    ]
+   },
+   "value_format": "{v:.1f}%",
+   "hashtags": [
+    "#maps"
+   ],
+   "source_url": "https://data.worldbank.org/indicator/FR.INR.DPST",
+   "status": "open",
+   "added_by": "refill"
+  },
+  {
+   "id": "t202",
+   "topic": "Income Share of Middle Class",
+   "angle": "Slovakia's middle 20 percent earns nearly 19.3 percent of national income, almost double South Africa's 10.8 percent share.",
+   "format": "map_reveal",
+   "dataset": {
+    "kind": "worldbank",
+    "indicator": "SI.DST.03RD.20",
+    "label": "Income share held by middle quintile",
+    "unit": "%",
+    "source": "World Bank",
+    "min_year": 2019
+   },
+   "scale": {
+    "kind": "bins",
+    "edges": [
+     14.0,
+     16.0,
+     17.5
+    ],
+    "labels": [
+     "Below 14.0%",
+     "14.0% to 16.0%",
+     "16.0% to 17.5%",
+     "Above 17.5%"
+    ]
+   },
+   "value_format": "{v:.1f}%",
+   "hashtags": [
+    "#maps me",
+    "#geography",
+    "#economics"
+   ],
+   "source_url": "https://data.worldbank.org/indicator/SI.DST.03RD.20",
+   "status": "open",
+   "added_by": "refill"
+  },
+  {
+   "id": "t203",
+   "topic": "Global Investment in Fixed Capital",
+   "angle": "Tanzania and Bhutan lead the world in building future capacity by re-investing over 40% of their GDP into fixed assets.",
+   "format": "map_reveal",
+   "dataset": {
+    "kind": "worldbank",
+    "indicator": "NE.GDI.FTOT.ZS",
+    "label": "Gross fixed capital formation (% of GDP)",
+    "unit": "%",
+    "source": "World Bank",
+    "min_year": 2019
+   },
+   "scale": {
+    "kind": "bins",
+    "edges": [
+     15,
+     20,
+     25,
+     30
+    ],
+    "labels": [
+     "Under 15%",
+     "15% to 20%",
+     "20% to 25%",
+     "25% to 30%",
+     "Over 30%"
+    ]
+   },
+   "value_format": "{v:.1f}%",
+   "hashtags": [
+    "#maps me"
+   ],
+   "source_url": "https://data.worldbank.org/indicator/NE.GDI.FTOT.ZS",
+   "status": "open",
+   "added_by": "refill"
+  },
+  {
+   "id": "t204",
+   "topic": "Where Rural Populations Are Still Growing",
+   "angle": "While rural populations are shrinking rapidly in countries like the Netherlands (-6.58%), they are expanding fastest in parts of the Middle East, peaking at 3.79% in Oman.",
+   "format": "rank_ladder",
+   "dataset": {
+    "kind": "worldbank",
+    "indicator": "SP.RUR.TOTL.ZG",
+    "label": "Annual rural population growth rate",
+    "unit": "%",
+    "source": "World Bank",
+    "min_year": 2019
+   },
+   "scale": {
+    "kind": "threshold",
+    "at": 0,
+    "labels": [
+     "Growing countryside",
+     "Declining countryside"
+    ]
+   },
+   "value_format": "{v:+.1f}%",
+   "hashtags": [
+    "#maps me",
+    "# #geography me",
+    "# #population me"
+   ],
+   "source_url": "https://data.worldbank.org/indicator/SP.RUR.TOTL.ZG",
+   "status": "open",
+   "added_by": "refill"
+  },
+  {
+   "id": "t205",
+   "topic": "Global Energy Efficiency in Economic Output",
+   "angle": "Ireland produces over $57 of economic output per kilogram of oil equivalent energy used, standardizing productivity far above energy-intensive Trinidad and Tobago's $3.50.",
+   "format": "map_reveal",
+   "dataset": {
+    "kind": "worldbank",
+    "indicator": "EG.GDP.PUSE.KO.PP",
+    "label": "GDP per kg of oil equivalent",
+    "unit": "$",
+    "source": "World Bank",
+    "min_year": 2019
+   },
+   "scale": {
+    "kind": "bins",
+    "edges": [
+     10,
+     15,
+     20,
+     30
+    ],
+    "labels": [
+     "Under $10",
+     "$10 - $15",
+     "$15 - $20",
+     "$20 - $30",
+     "Over $30"
+    ]
+   },
+   "value_format": "${v:.1f}",
+   "hashtags": [
+    "#maps",
+    "#geography",
+    "#energy"
+   ],
+   "source_url": "https://data.worldbank.org/indicator/EG.GDP.PUSE.KO.PP",
+   "status": "open",
+   "added_by": "refill"
   }
  ],
- "refilled_at": "2026-11-13T09:10:13+00:00"
+ "refilled_at": "2026-11-14T09:10:11+00:00"
 }
