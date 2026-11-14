@@ -1,0 +1,1780 @@
+{
+  "version": 1,
+  "evidence": {
+    "version": 1,
+    "indicator": "SH.STA.BRTW.ZS",
+    "definition": "Low-birthweight babies are newborns weighing less than 2,500 grams, with the measurement taken within the first hour of life, before significant postnatal weight loss has occurred.",
+    "source": "https://data.worldbank.org/indicator/SH.STA.BRTW.ZS",
+    "source_response_sha256": "4cec0cd3a2a143366f313bcbc15d6e4fbeda196ab24e91c1904e7f1c3063dbc5",
+    "source_organization": "UNICEF-WHO Low birthweight estimates, UN Children's Fund (UNICEF), uri: data.unicef.org;\nWorld Health Organization (WHO), uri: data.unicef.org, note: UNICEF-WHO Low birthweight estimates",
+    "year_label": "2020",
+    "universe": "mapped countries and territories with data",
+    "count": 155,
+    "threshold": 10.0,
+    "at_or_above": 81,
+    "entities": {
+      "ALB": {
+        "name": "Albania",
+        "value": 5.992350456,
+        "display": "6%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 133
+      },
+      "DZA": {
+        "name": "Algeria",
+        "value": 7.197213007,
+        "display": "7.2%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 116
+      },
+      "AND": {
+        "name": "Andorra",
+        "value": 9.394871191,
+        "display": "9.4%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 89
+      },
+      "AGO": {
+        "name": "Angola",
+        "value": 15.52779066,
+        "display": "15.5%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 29
+      },
+      "ATG": {
+        "name": "Antigua and Barbuda",
+        "value": 15.35550278,
+        "display": "15.4%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 31
+      },
+      "ARG": {
+        "name": "Argentina",
+        "value": 7.361601633,
+        "display": "7.4%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 113
+      },
+      "ARM": {
+        "name": "Armenia",
+        "value": 8.272253773,
+        "display": "8.3%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 100
+      },
+      "AUS": {
+        "name": "Australia",
+        "value": 6.553680899,
+        "display": "6.6%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 124
+      },
+      "AUT": {
+        "name": "Austria",
+        "value": 6.305404111,
+        "display": "6.3%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 128
+      },
+      "AZE": {
+        "name": "Azerbaijan",
+        "value": 11.03530631,
+        "display": "11%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 68
+      },
+      "BHS": {
+        "name": "Bahamas, The",
+        "value": 15.39718187,
+        "display": "15.4%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 30
+      },
+      "BHR": {
+        "name": "Bahrain",
+        "value": 12.44146062,
+        "display": "12.4%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 57
+      },
+      "BGD": {
+        "name": "Bangladesh",
+        "value": 23.04670249,
+        "display": "23%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 2
+      },
+      "BLR": {
+        "name": "Belarus",
+        "value": 5.122986416,
+        "display": "5.1%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 142
+      },
+      "BEL": {
+        "name": "Belgium",
+        "value": 6.756188073,
+        "display": "6.8%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 121
+      },
+      "BLZ": {
+        "name": "Belize",
+        "value": 11.5589646,
+        "display": "11.6%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 60
+      },
+      "BEN": {
+        "name": "Benin",
+        "value": 16.44582801,
+        "display": "16.4%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 23
+      },
+      "BTN": {
+        "name": "Bhutan",
+        "value": 11.43096562,
+        "display": "11.4%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 62
+      },
+      "BOL": {
+        "name": "Bolivia",
+        "value": 7.933435546,
+        "display": "7.9%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 103
+      },
+      "BIH": {
+        "name": "Bosnia and Herzegovina",
+        "value": 5.154733974,
+        "display": "5.2%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 141
+      },
+      "BWA": {
+        "name": "Botswana",
+        "value": 16.83437991,
+        "display": "16.8%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 19
+      },
+      "BRA": {
+        "name": "Brazil",
+        "value": 8.698070886,
+        "display": "8.7%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 97
+      },
+      "BRN": {
+        "name": "Brunei Darussalam",
+        "value": 13.64151602,
+        "display": "13.6%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 44
+      },
+      "BGR": {
+        "name": "Bulgaria",
+        "value": 11.36161178,
+        "display": "11.4%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 64
+      },
+      "BFA": {
+        "name": "Burkina Faso",
+        "value": 18.46865415,
+        "display": "18.5%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 12
+      },
+      "BDI": {
+        "name": "Burundi",
+        "value": 14.77690155,
+        "display": "14.8%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 33
+      },
+      "KHM": {
+        "name": "Cambodia",
+        "value": 11.44900477,
+        "display": "11.4%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 61
+      },
+      "CMR": {
+        "name": "Cameroon",
+        "value": 12.51261546,
+        "display": "12.5%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 54
+      },
+      "CAN": {
+        "name": "Canada",
+        "value": 6.625426609,
+        "display": "6.6%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 123
+      },
+      "CAF": {
+        "name": "Central African Republic",
+        "value": 16.35473066,
+        "display": "16.4%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 24
+      },
+      "CHL": {
+        "name": "Chile",
+        "value": 6.83669713,
+        "display": "6.8%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 119
+      },
+      "CHN": {
+        "name": "China",
+        "value": 4.973518577,
+        "display": "5%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 144
+      },
+      "COL": {
+        "name": "Colombia",
+        "value": 10.95282506,
+        "display": "11%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 69
+      },
+      "COM": {
+        "name": "Comoros",
+        "value": 23.02724006,
+        "display": "23%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 3
+      },
+      "COD": {
+        "name": "Congo, Dem. Rep.",
+        "value": 10.15699502,
+        "display": "10.2%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 79
+      },
+      "COG": {
+        "name": "Congo, Rep.",
+        "value": 11.92652931,
+        "display": "11.9%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 58
+      },
+      "CRI": {
+        "name": "Costa Rica",
+        "value": 8.716621057,
+        "display": "8.7%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 95
+      },
+      "CIV": {
+        "name": "Cote d'Ivoire",
+        "value": 18.28976148,
+        "display": "18.3%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 13
+      },
+      "HRV": {
+        "name": "Croatia",
+        "value": 4.99451209,
+        "display": "5%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 143
+      },
+      "CUB": {
+        "name": "Cuba",
+        "value": 7.062041879,
+        "display": "7.1%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 118
+      },
+      "CZE": {
+        "name": "Czechia",
+        "value": 7.609481314,
+        "display": "7.6%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 107
+      },
+      "DNK": {
+        "name": "Denmark",
+        "value": 4.807598298,
+        "display": "4.8%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 146
+      },
+      "DOM": {
+        "name": "Dominican Republic",
+        "value": 13.43542101,
+        "display": "13.4%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 46
+      },
+      "ECU": {
+        "name": "Ecuador",
+        "value": 10.62690669,
+        "display": "10.6%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 72
+      },
+      "SLV": {
+        "name": "El Salvador",
+        "value": 10.22300061,
+        "display": "10.2%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 77
+      },
+      "ERI": {
+        "name": "Eritrea",
+        "value": 15.1601429,
+        "display": "15.2%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 32
+      },
+      "EST": {
+        "name": "Estonia",
+        "value": 4.173697894,
+        "display": "4.2%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 152
+      },
+      "SWZ": {
+        "name": "Eswatini",
+        "value": 10.20161162,
+        "display": "10.2%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 78
+      },
+      "FJI": {
+        "name": "Fiji",
+        "value": 7.401885145,
+        "display": "7.4%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 112
+      },
+      "FIN": {
+        "name": "Finland",
+        "value": 4.069185571,
+        "display": "4.1%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 154
+      },
+      "FRA": {
+        "name": "France",
+        "value": 7.428983167,
+        "display": "7.4%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 110
+      },
+      "GAB": {
+        "name": "Gabon",
+        "value": 14.64981828,
+        "display": "14.6%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 35
+      },
+      "GMB": {
+        "name": "Gambia, The",
+        "value": 13.24914954,
+        "display": "13.2%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 47
+      },
+      "GEO": {
+        "name": "Georgia",
+        "value": 7.420559377,
+        "display": "7.4%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 111
+      },
+      "DEU": {
+        "name": "Germany",
+        "value": 6.714126163,
+        "display": "6.7%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 122
+      },
+      "GHA": {
+        "name": "Ghana",
+        "value": 14.41585206,
+        "display": "14.4%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 38
+      },
+      "GRC": {
+        "name": "Greece",
+        "value": 11.40590068,
+        "display": "11.4%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 63
+      },
+      "GTM": {
+        "name": "Guatemala",
+        "value": 14.49437989,
+        "display": "14.5%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 36
+      },
+      "GNB": {
+        "name": "Guinea-Bissau",
+        "value": 19.54887142,
+        "display": "19.5%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 7
+      },
+      "GUY": {
+        "name": "Guyana",
+        "value": 17.16307383,
+        "display": "17.2%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 18
+      },
+      "HND": {
+        "name": "Honduras",
+        "value": 13.09450185,
+        "display": "13.1%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 50
+      },
+      "HUN": {
+        "name": "Hungary",
+        "value": 8.316534957,
+        "display": "8.3%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 98
+      },
+      "ISL": {
+        "name": "Iceland",
+        "value": 3.992822369,
+        "display": "4%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 155
+      },
+      "IND": {
+        "name": "India",
+        "value": 27.43525934,
+        "display": "27.4%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 1
+      },
+      "IDN": {
+        "name": "Indonesia",
+        "value": 9.934186169,
+        "display": "9.9%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 85
+      },
+      "IRQ": {
+        "name": "Iraq",
+        "value": 10.8613574,
+        "display": "10.9%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 71
+      },
+      "IRL": {
+        "name": "Ireland",
+        "value": 5.645686692,
+        "display": "5.6%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 138
+      },
+      "ISR": {
+        "name": "Israel",
+        "value": 8.983944543,
+        "display": "9%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 92
+      },
+      "ITA": {
+        "name": "Italy",
+        "value": 7.21055095,
+        "display": "7.2%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 115
+      },
+      "JAM": {
+        "name": "Jamaica",
+        "value": 13.68120587,
+        "display": "13.7%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 43
+      },
+      "JPN": {
+        "name": "Japan",
+        "value": 11.30468889,
+        "display": "11.3%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 65
+      },
+      "JOR": {
+        "name": "Jordan",
+        "value": 18.93666383,
+        "display": "18.9%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 9
+      },
+      "KAZ": {
+        "name": "Kazakhstan",
+        "value": 5.291126034,
+        "display": "5.3%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 140
+      },
+      "KEN": {
+        "name": "Kenya",
+        "value": 9.971119457,
+        "display": "10%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 82
+      },
+      "KIR": {
+        "name": "Kiribati",
+        "value": 9.031391662,
+        "display": "9%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 91
+      },
+      "KOR": {
+        "name": "Korea, Rep.",
+        "value": 7.463083879,
+        "display": "7.5%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 109
+      },
+      "KWT": {
+        "name": "Kuwait",
+        "value": 14.36604616,
+        "display": "14.4%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 39
+      },
+      "KGZ": {
+        "name": "Kyrgyz Republic",
+        "value": 6.037714249,
+        "display": "6%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 132
+      },
+      "LAO": {
+        "name": "Lao PDR",
+        "value": 16.73231578,
+        "display": "16.7%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 20
+      },
+      "LVA": {
+        "name": "Latvia",
+        "value": 4.232556976,
+        "display": "4.2%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 151
+      },
+      "LBN": {
+        "name": "Lebanon",
+        "value": 12.59960101,
+        "display": "12.6%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 53
+      },
+      "LSO": {
+        "name": "Lesotho",
+        "value": 14.44742354,
+        "display": "14.4%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 37
+      },
+      "LBR": {
+        "name": "Liberia",
+        "value": 19.8812653,
+        "display": "19.9%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 5
+      },
+      "LTU": {
+        "name": "Lithuania",
+        "value": 4.397884914,
+        "display": "4.4%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 148
+      },
+      "LUX": {
+        "name": "Luxembourg",
+        "value": 7.74989029,
+        "display": "7.7%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 106
+      },
+      "MDG": {
+        "name": "Madagascar",
+        "value": 18.71212047,
+        "display": "18.7%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 10
+      },
+      "MWI": {
+        "name": "Malawi",
+        "value": 15.57640226,
+        "display": "15.6%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 28
+      },
+      "MYS": {
+        "name": "Malaysia",
+        "value": 13.81137628,
+        "display": "13.8%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 42
+      },
+      "MLT": {
+        "name": "Malta",
+        "value": 7.184098646,
+        "display": "7.2%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 117
+      },
+      "MUS": {
+        "name": "Mauritius",
+        "value": 18.69435005,
+        "display": "18.7%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 11
+      },
+      "MEX": {
+        "name": "Mexico",
+        "value": 10.15384708,
+        "display": "10.2%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 80
+      },
+      "MDA": {
+        "name": "Moldova",
+        "value": 6.470493286,
+        "display": "6.5%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 125
+      },
+      "MNG": {
+        "name": "Mongolia",
+        "value": 4.896474513,
+        "display": "4.9%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 145
+      },
+      "MNE": {
+        "name": "Montenegro",
+        "value": 6.231987721,
+        "display": "6.2%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 130
+      },
+      "MAR": {
+        "name": "Morocco",
+        "value": 14.76651824,
+        "display": "14.8%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 34
+      },
+      "MOZ": {
+        "name": "Mozambique",
+        "value": 17.76020276,
+        "display": "17.8%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 16
+      },
+      "MMR": {
+        "name": "Myanmar",
+        "value": 12.48430117,
+        "display": "12.5%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 55
+      },
+      "NAM": {
+        "name": "Namibia",
+        "value": 15.58151943,
+        "display": "15.6%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 27
+      },
+      "NPL": {
+        "name": "Nepal",
+        "value": 19.73151245,
+        "display": "19.7%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 6
+      },
+      "NLD": {
+        "name": "Netherlands",
+        "value": 5.651838859,
+        "display": "5.7%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 137
+      },
+      "NZL": {
+        "name": "New Zealand",
+        "value": 5.857246489,
+        "display": "5.9%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 134
+      },
+      "NIC": {
+        "name": "Nicaragua",
+        "value": 10.09621863,
+        "display": "10.1%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 81
+      },
+      "MKD": {
+        "name": "North Macedonia",
+        "value": 8.29205809,
+        "display": "8.3%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 99
+      },
+      "NOR": {
+        "name": "Norway",
+        "value": 4.44297773,
+        "display": "4.4%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 147
+      },
+      "OMN": {
+        "name": "Oman",
+        "value": 13.23588907,
+        "display": "13.2%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 48
+      },
+      "PLW": {
+        "name": "Palau",
+        "value": 13.52511019,
+        "display": "13.5%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 45
+      },
+      "PAN": {
+        "name": "Panama",
+        "value": 10.2837361,
+        "display": "10.3%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 76
+      },
+      "PNG": {
+        "name": "Papua New Guinea",
+        "value": 19.38028308,
+        "display": "19.4%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 8
+      },
+      "PRY": {
+        "name": "Paraguay",
+        "value": 9.960016952,
+        "display": "10%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 83
+      },
+      "PER": {
+        "name": "Peru",
+        "value": 7.471594891,
+        "display": "7.5%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 108
+      },
+      "PHL": {
+        "name": "Philippines",
+        "value": 21.14414662,
+        "display": "21.1%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 4
+      },
+      "POL": {
+        "name": "Poland",
+        "value": 5.606949229,
+        "display": "5.6%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 139
+      },
+      "PRT": {
+        "name": "Portugal",
+        "value": 8.922583683,
+        "display": "8.9%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 93
+      },
+      "QAT": {
+        "name": "Qatar",
+        "value": 9.955851859,
+        "display": "10%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 84
+      },
+      "ROU": {
+        "name": "Romania",
+        "value": 8.817817845,
+        "display": "8.8%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 94
+      },
+      "RUS": {
+        "name": "Russian Federation",
+        "value": 7.268242008,
+        "display": "7.3%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 114
+      },
+      "RWA": {
+        "name": "Rwanda",
+        "value": 9.398525709,
+        "display": "9.4%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 88
+      },
+      "SMR": {
+        "name": "San Marino",
+        "value": 4.244335446,
+        "display": "4.2%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 150
+      },
+      "STP": {
+        "name": "Sao Tome and Principe",
+        "value": 11.11475279,
+        "display": "11.1%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 67
+      },
+      "SEN": {
+        "name": "Senegal",
+        "value": 17.24938655,
+        "display": "17.2%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 17
+      },
+      "SRB": {
+        "name": "Serbia",
+        "value": 6.202315972,
+        "display": "6.2%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 131
+      },
+      "SYC": {
+        "name": "Seychelles",
+        "value": 12.4838294,
+        "display": "12.5%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 56
+      },
+      "SLE": {
+        "name": "Sierra Leone",
+        "value": 10.3436843,
+        "display": "10.3%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 74
+      },
+      "SGP": {
+        "name": "Singapore",
+        "value": 10.95095201,
+        "display": "11%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 70
+      },
+      "SVK": {
+        "name": "Slovak Republic",
+        "value": 7.822980555,
+        "display": "7.8%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 104
+      },
+      "SVN": {
+        "name": "Slovenia",
+        "value": 6.290086,
+        "display": "6.3%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 129
+      },
+      "SLB": {
+        "name": "Solomon Islands",
+        "value": 13.23393119,
+        "display": "13.2%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 49
+      },
+      "ZAF": {
+        "name": "South Africa",
+        "value": 16.63838895,
+        "display": "16.6%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 21
+      },
+      "ESP": {
+        "name": "Spain",
+        "value": 9.638991015,
+        "display": "9.6%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 87
+      },
+      "LKA": {
+        "name": "Sri Lanka",
+        "value": 17.97828986,
+        "display": "18%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 15
+      },
+      "LCA": {
+        "name": "St. Lucia",
+        "value": 16.25114353,
+        "display": "16.3%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 26
+      },
+      "SUR": {
+        "name": "Suriname",
+        "value": 16.46447838,
+        "display": "16.5%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 22
+      },
+      "SWE": {
+        "name": "Sweden",
+        "value": 4.121824119,
+        "display": "4.1%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 153
+      },
+      "CHE": {
+        "name": "Switzerland",
+        "value": 6.416099261,
+        "display": "6.4%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 126
+      },
+      "TJK": {
+        "name": "Tajikistan",
+        "value": 8.716076098,
+        "display": "8.7%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 96
+      },
+      "TZA": {
+        "name": "Tanzania",
+        "value": 9.703563588,
+        "display": "9.7%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 86
+      },
+      "THA": {
+        "name": "Thailand",
+        "value": 10.30292405,
+        "display": "10.3%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 75
+      },
+      "TLS": {
+        "name": "Timor-Leste",
+        "value": 18.21201819,
+        "display": "18.2%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 14
+      },
+      "TGO": {
+        "name": "Togo",
+        "value": 14.28142408,
+        "display": "14.3%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 40
+      },
+      "TTO": {
+        "name": "Trinidad and Tobago",
+        "value": 16.27413873,
+        "display": "16.3%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 25
+      },
+      "TUN": {
+        "name": "Tunisia",
+        "value": 8.237122382,
+        "display": "8.2%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 102
+      },
+      "TUR": {
+        "name": "Turkiye",
+        "value": 12.89684222,
+        "display": "12.9%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 52
+      },
+      "TKM": {
+        "name": "Turkmenistan",
+        "value": 4.287813245,
+        "display": "4.3%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 149
+      },
+      "UKR": {
+        "name": "Ukraine",
+        "value": 5.725983097,
+        "display": "5.7%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 136
+      },
+      "ARE": {
+        "name": "United Arab Emirates",
+        "value": 13.94074671,
+        "display": "13.9%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 41
+      },
+      "GBR": {
+        "name": "United Kingdom",
+        "value": 6.827130399,
+        "display": "6.8%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 120
+      },
+      "USA": {
+        "name": "United States",
+        "value": 8.261421513,
+        "display": "8.3%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 101
+      },
+      "URY": {
+        "name": "Uruguay",
+        "value": 7.802982899,
+        "display": "7.8%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 105
+      },
+      "UZB": {
+        "name": "Uzbekistan",
+        "value": 5.848450503,
+        "display": "5.8%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 135
+      },
+      "VUT": {
+        "name": "Vanuatu",
+        "value": 13.06263993,
+        "display": "13.1%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 51
+      },
+      "VEN": {
+        "name": "Venezuela, RB",
+        "value": 9.302933854,
+        "display": "9.3%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 90
+      },
+      "VNM": {
+        "name": "Viet Nam",
+        "value": 6.311217509,
+        "display": "6.3%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 127
+      },
+      "PSE": {
+        "name": "West Bank and Gaza",
+        "value": 10.37288765,
+        "display": "10.4%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 73
+      },
+      "ZMB": {
+        "name": "Zambia",
+        "value": 11.24687551,
+        "display": "11.2%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 66
+      },
+      "ZWE": {
+        "name": "Zimbabwe",
+        "value": 11.82972993,
+        "display": "11.8%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 59
+      }
+    }
+  },
+  "review": {
+    "errors": [],
+    "claims": [
+      {
+        "surface": "title",
+        "text": "Is INDIA the Highest for Underweight Babies?",
+        "isos": [
+          "IND"
+        ],
+        "support": "India rank 1, value 27.43525934",
+        "evidence": {
+          "IND": {
+            "name": "India",
+            "value": 27.43525934,
+            "display": "27.4%",
+            "year": 2020,
+            "unit": "%",
+            "rank": 1
+          }
+        }
+      },
+      {
+        "surface": "hook",
+        "text": "BIRTH WEIGHT GAP",
+        "isos": [],
+        "support": "Global data on low-birthweight baby rates comparing various countries",
+        "evidence": {}
+      },
+      {
+        "surface": "description",
+        "text": "A cinematic data comparison of low-birthweight baby rates using 2020 World Bank data, focusing on India's global high and the gap with other major nations.",
+        "isos": [
+          "IND"
+        ],
+        "support": "Indicator SH.STA.BRTW.ZS, year 2020, India rank 1",
+        "evidence": {
+          "IND": {
+            "name": "India",
+            "value": 27.43525934,
+            "display": "27.4%",
+            "year": 2020,
+            "unit": "%",
+            "rank": 1
+          }
+        }
+      },
+      {
+        "surface": "beat_0",
+        "text": "India: 27.4% of babies are born underweight. In Iceland, it is 4%.",
+        "isos": [
+          "IND",
+          "ISL"
+        ],
+        "support": "India value 27.43525934 (display 27.4%), Iceland value 3.992822369 (display 4%)",
+        "evidence": {
+          "IND": {
+            "name": "India",
+            "value": 27.43525934,
+            "display": "27.4%",
+            "year": 2020,
+            "unit": "%",
+            "rank": 1
+          },
+          "ISL": {
+            "name": "Iceland",
+            "value": 3.992822369,
+            "display": "4%",
+            "year": 2020,
+            "unit": "%",
+            "rank": 155
+          }
+        }
+      },
+      {
+        "surface": "beat_1",
+        "text": "India has the world's highest rate. A difficult start for newborns weighing less than 2,500 grams.",
+        "isos": [
+          "IND"
+        ],
+        "support": "India rank 1; definition: Low-birthweight babies are newborns weighing less than 2,500 grams",
+        "evidence": {
+          "IND": {
+            "name": "India",
+            "value": 27.43525934,
+            "display": "27.4%",
+            "year": 2020,
+            "unit": "%",
+            "rank": 1
+          }
+        }
+      },
+      {
+        "surface": "beat_2",
+        "text": "This counts weight within the 1st hour of life, before significant postnatal weight loss has occurred.",
+        "isos": [],
+        "support": "definition: with the measurement taken within the first hour of life, before significant postnatal weight loss has occurred",
+        "evidence": {}
+      },
+      {
+        "surface": "beat_3",
+        "text": "India has 3.3 times the underweight newborns the USA has, where 8.3% of babies are underweight.",
+        "isos": [
+          "IND",
+          "USA"
+        ],
+        "support": "India 27.43525934 / USA 8.261421513 = 3.321153; USA display 8.3%",
+        "evidence": {
+          "IND": {
+            "name": "India",
+            "value": 27.43525934,
+            "display": "27.4%",
+            "year": 2020,
+            "unit": "%",
+            "rank": 1
+          },
+          "USA": {
+            "name": "United States",
+            "value": 8.261421513,
+            "display": "8.3%",
+            "year": 2020,
+            "unit": "%",
+            "rank": 101
+          }
+        }
+      },
+      {
+        "surface": "beat_4",
+        "text": "Bangladesh: 23%, Philippines: 21.1%, and Liberia: 19.9% are also high.",
+        "isos": [
+          "BGD",
+          "PHL",
+          "LBR"
+        ],
+        "support": "Bangladesh display 23%, Philippines display 21.1%, Liberia display 19.9%",
+        "evidence": {
+          "BGD": {
+            "name": "Bangladesh",
+            "value": 23.04670249,
+            "display": "23%",
+            "year": 2020,
+            "unit": "%",
+            "rank": 2
+          },
+          "PHL": {
+            "name": "Philippines",
+            "value": 21.14414662,
+            "display": "21.1%",
+            "year": 2020,
+            "unit": "%",
+            "rank": 4
+          },
+          "LBR": {
+            "name": "Liberia",
+            "value": 19.8812653,
+            "display": "19.9%",
+            "year": 2020,
+            "unit": "%",
+            "rank": 5
+          }
+        }
+      },
+      {
+        "surface": "beat_5",
+        "text": "Japan is a surprise for a wealthy nation at 11.3%.",
+        "isos": [
+          "JPN"
+        ],
+        "support": "Japan display 11.3%",
+        "evidence": {
+          "JPN": {
+            "name": "Japan",
+            "value": 11.30468889,
+            "display": "11.3%",
+            "year": 2020,
+            "unit": "%",
+            "rank": 65
+          }
+        }
+      },
+      {
+        "surface": "beat_6",
+        "text": "At the other end, Sweden is just 4.1%.",
+        "isos": [
+          "SWE"
+        ],
+        "support": "Sweden display 4.1%",
+        "evidence": {
+          "SWE": {
+            "name": "Sweden",
+            "value": 4.121824119,
+            "display": "4.1%",
+            "year": 2020,
+            "unit": "%",
+            "rank": 153
+          }
+        }
+      },
+      {
+        "surface": "beat_7",
+        "text": "How common are underweight births where you live?",
+        "isos": [],
+        "support": "Engaging closing question referencing low-birthweight births",
+        "evidence": {}
+      },
+      {
+        "surface": "card_7",
+        "text": "Healthy starts? Low-birthweight babies (%)",
+        "isos": [],
+        "support": "Card corresponding to indicator unit % and low-birthweight babies theme",
+        "evidence": {}
+      },
+      {
+        "surface": "title",
+        "text": "Is INDIA the Highest for Underweight Babies?",
+        "isos": [
+          "IND"
+        ],
+        "support": "India is indeed ranked 1st globally with 27.4%.",
+        "method": "complete-surface-check",
+        "evidence": {
+          "IND": {
+            "name": "India",
+            "value": 27.43525934,
+            "display": "27.4%",
+            "year": 2020,
+            "unit": "%",
+            "rank": 1
+          }
+        }
+      },
+      {
+        "surface": "hook",
+        "text": "BIRTH WEIGHT GAP",
+        "isos": [],
+        "support": "Accurate conceptual framing.",
+        "method": "complete-surface-check",
+        "evidence": {}
+      },
+      {
+        "surface": "description",
+        "text": "A cinematic data comparison of low-birthweight baby rates using 2020 World Bank data, focusing on India's global high and the gap with other major nations.",
+        "isos": [
+          "IND"
+        ],
+        "support": "Accurately summarizes the data and source year 2020.",
+        "method": "complete-surface-check",
+        "evidence": {
+          "IND": {
+            "name": "India",
+            "value": 27.43525934,
+            "display": "27.4%",
+            "year": 2020,
+            "unit": "%",
+            "rank": 1
+          }
+        }
+      },
+      {
+        "surface": "beat_0",
+        "text": "India: 27.4% of babies are born underweight. In Iceland, it is 4%.",
+        "isos": [
+          "IND",
+          "ISL"
+        ],
+        "support": "India is 27.4% and Iceland is 4% in the 2020 dataset.",
+        "method": "complete-surface-check",
+        "evidence": {
+          "IND": {
+            "name": "India",
+            "value": 27.43525934,
+            "display": "27.4%",
+            "year": 2020,
+            "unit": "%",
+            "rank": 1
+          },
+          "ISL": {
+            "name": "Iceland",
+            "value": 3.992822369,
+            "display": "4%",
+            "year": 2020,
+            "unit": "%",
+            "rank": 155
+          }
+        }
+      },
+      {
+        "surface": "beat_1",
+        "text": "India has the world's highest rate. A difficult start for newborns weighing less than 2,500 grams.",
+        "isos": [
+          "IND"
+        ],
+        "support": "India rank is 1 (highest), and definition specifies newborns weighing less than 2,500 grams.",
+        "method": "complete-surface-check",
+        "evidence": {
+          "IND": {
+            "name": "India",
+            "value": 27.43525934,
+            "display": "27.4%",
+            "year": 2020,
+            "unit": "%",
+            "rank": 1
+          }
+        }
+      },
+      {
+        "surface": "beat_2",
+        "text": "This counts weight within the 1st hour of life, before significant postnatal weight loss has occurred.",
+        "isos": [],
+        "support": "Directly matches the source definition.",
+        "method": "complete-surface-check",
+        "evidence": {}
+      },
+      {
+        "surface": "beat_3",
+        "text": "India has 3.3 times the underweight newborns the USA has, where 8.3% of babies are underweight.",
+        "isos": [
+          "IND",
+          "USA"
+        ],
+        "support": "27.435 / 8.261 is approximately 3.3; USA display is 8.3%.",
+        "method": "complete-surface-check",
+        "evidence": {
+          "IND": {
+            "name": "India",
+            "value": 27.43525934,
+            "display": "27.4%",
+            "year": 2020,
+            "unit": "%",
+            "rank": 1
+          },
+          "USA": {
+            "name": "United States",
+            "value": 8.261421513,
+            "display": "8.3%",
+            "year": 2020,
+            "unit": "%",
+            "rank": 101
+          }
+        }
+      },
+      {
+        "surface": "beat_4",
+        "text": "Bangladesh: 23%, Philippines: 21.1%, and Liberia: 19.9% are also high.",
+        "isos": [
+          "BGD",
+          "PHL",
+          "LBR"
+        ],
+        "support": "Bangladesh is 23%, Philippines is 21.1%, Liberia is 19.9%.",
+        "method": "complete-surface-check",
+        "evidence": {
+          "BGD": {
+            "name": "Bangladesh",
+            "value": 23.04670249,
+            "display": "23%",
+            "year": 2020,
+            "unit": "%",
+            "rank": 2
+          },
+          "PHL": {
+            "name": "Philippines",
+            "value": 21.14414662,
+            "display": "21.1%",
+            "year": 2020,
+            "unit": "%",
+            "rank": 4
+          },
+          "LBR": {
+            "name": "Liberia",
+            "value": 19.8812653,
+            "display": "19.9%",
+            "year": 2020,
+            "unit": "%",
+            "rank": 5
+          }
+        }
+      },
+      {
+        "surface": "beat_5",
+        "text": "Japan is a surprise for a wealthy nation at 11.3%.",
+        "isos": [
+          "JPN"
+        ],
+        "support": "Japan's display value is 11.3%.",
+        "method": "complete-surface-check",
+        "evidence": {
+          "JPN": {
+            "name": "Japan",
+            "value": 11.30468889,
+            "display": "11.3%",
+            "year": 2020,
+            "unit": "%",
+            "rank": 65
+          }
+        }
+      },
+      {
+        "surface": "beat_6",
+        "text": "At the other end, Sweden is just 4.1%.",
+        "isos": [
+          "SWE"
+        ],
+        "support": "Sweden's display value is 4.1%.",
+        "method": "complete-surface-check",
+        "evidence": {
+          "SWE": {
+            "name": "Sweden",
+            "value": 4.121824119,
+            "display": "4.1%",
+            "year": 2020,
+            "unit": "%",
+            "rank": 153
+          }
+        }
+      },
+      {
+        "surface": "beat_7",
+        "text": "How common are underweight births where you live?",
+        "isos": [],
+        "support": "Standard closing hook style.",
+        "method": "complete-surface-check",
+        "evidence": {}
+      },
+      {
+        "surface": "card_7",
+        "text": [
+          "Healthy starts?",
+          "Low-birthweight babies (%)"
+        ],
+        "isos": [],
+        "support": "Matches indicator unit and topic.",
+        "method": "complete-surface-check",
+        "evidence": {}
+      }
+    ],
+    "surface_checks": {
+      "title": {
+        "supported": true,
+        "reason": "India is indeed ranked 1st globally with 27.4%.",
+        "isos": [
+          "IND"
+        ]
+      },
+      "hook": {
+        "supported": true,
+        "reason": "Accurate conceptual framing.",
+        "isos": []
+      },
+      "description": {
+        "supported": true,
+        "reason": "Accurately summarizes the data and source year 2020.",
+        "isos": [
+          "IND"
+        ]
+      },
+      "beat_0": {
+        "supported": true,
+        "reason": "India is 27.4% and Iceland is 4% in the 2020 dataset.",
+        "isos": [
+          "IND",
+          "ISL"
+        ]
+      },
+      "beat_1": {
+        "supported": true,
+        "reason": "India rank is 1 (highest), and definition specifies newborns weighing less than 2,500 grams.",
+        "isos": [
+          "IND"
+        ]
+      },
+      "beat_2": {
+        "supported": true,
+        "reason": "Directly matches the source definition.",
+        "isos": []
+      },
+      "beat_3": {
+        "supported": true,
+        "reason": "27.435 / 8.261 is approximately 3.3; USA display is 8.3%.",
+        "isos": [
+          "IND",
+          "USA"
+        ]
+      },
+      "beat_4": {
+        "supported": true,
+        "reason": "Bangladesh is 23%, Philippines is 21.1%, Liberia is 19.9%.",
+        "isos": [
+          "BGD",
+          "PHL",
+          "LBR"
+        ]
+      },
+      "beat_5": {
+        "supported": true,
+        "reason": "Japan's display value is 11.3%.",
+        "isos": [
+          "JPN"
+        ]
+      },
+      "beat_6": {
+        "supported": true,
+        "reason": "Sweden's display value is 4.1%.",
+        "isos": [
+          "SWE"
+        ]
+      },
+      "beat_7": {
+        "supported": true,
+        "reason": "Standard closing hook style.",
+        "isos": []
+      },
+      "card_7": {
+        "supported": true,
+        "reason": "Matches indicator unit and topic.",
+        "isos": []
+      }
+    },
+    "warnings": []
+  },
+  "script_sha256": "fc5056ef9f33a27e56e5b68b06c6a4337db404bd4c8e4a5104de86c008d0049c",
+  "data_sha256": "8bb603d3d3c87074dacf75ff80b72fdcf9459501141b3753b892d0f30d40776e",
+  "reviewer_model": "gemini-3.5-flash-lite"
+}

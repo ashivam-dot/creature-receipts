@@ -1,0 +1,77 @@
+id: atlas185
+title: Where Women Are Most Likely to Hire Employees
+hook_text: WOMEN BUSINESS EMPLOYERS
+description: Share of working women who are employers across the world, based on World Bank data.
+hashtags:
+- '#work'
+- '#employment'
+- '#geography'
+tags:
+- work
+- share of working women who are employers
+- countries ranked by share of working women who are employers
+- Timor-Leste
+- Pakistan
+- world map
+- geography
+- atlas in numbers
+sources:
+- https://data.worldbank.org/indicator/SL.EMP.MPYR.FE.ZS
+dataset:
+  kind: worldbank
+  indicator: SL.EMP.MPYR.FE.ZS
+  label: Share of working women who are employers
+  unit: '%'
+  source: World Bank
+  min_year: 2019
+scale:
+  edges:
+  - 1.0
+  - 2.0
+  - 4.0
+  - 8.0
+  labels:
+  - Under 1%
+  - 1% to 2%
+  - 2% to 4%
+  - 4% to 8%
+  - Over 8%
+value_format: '{v:.1f}%'
+beats:
+- text: In East Timor, 15.6% of working women hire employees. In the USA, it is 1.2%.
+  shot:
+    callouts:
+    - TLS
+    - USA
+- text: That gives East Timor 13 times what the USA has.
+  shot:
+    kind: country
+    iso: TLS
+- text: At the world's lowest end, Pakistan has just 0.1%.
+  shot:
+    kind: country
+    iso: PAK
+- text: Djibouti sits near the top with 14.6%, while Azerbaijan has 13.1%.
+  shot:
+    kind: group
+    isos:
+    - DJI
+    - AZE
+- text: 'Big economies lag behind: China has 2.7%, Germany 2%, the UK 0.9%, and India 0.6%.'
+  shot:
+    kind: rank
+    isos:
+    - CHN
+    - DEU
+    - GBR
+    - IND
+- text: Nigeria stands out in Africa, where 10.4% of working women hire staff.
+  shot:
+    kind: country
+    iso: NGA
+- text: How many working women hire employees in your country?
+  shot:
+    kind: card
+    lines:
+    - Women as Employers
+    - World Bank Data

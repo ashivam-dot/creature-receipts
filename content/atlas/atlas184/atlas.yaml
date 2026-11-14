@@ -1,0 +1,75 @@
+id: atlas184
+title: 'East Timor vs Qatar: Natural Gas Rents'
+format: versus
+hook_text: GAS DEPENDENCY LEADER
+description: Discover which countries and territories depend most on natural gas rents as a percentage of GDP, featuring
+  East Timor, Qatar, and major world economies.
+hashtags:
+- '#economy'
+- '#geography'
+- '#countries'
+tags:
+- wealth
+- natural gas rents as % of gdp
+- countries ranked by natural gas rents as % of gdp
+- Timor-Leste
+- Armenia
+- world map
+- geography
+- atlas in numbers
+sources:
+- https://data.worldbank.org/indicator/NY.GDP.NGAS.RT.ZS
+dataset:
+  kind: worldbank
+  indicator: NY.GDP.NGAS.RT.ZS
+  label: Natural gas rents as % of GDP
+  unit: '%'
+  source: World Bank
+  min_year: 2019
+scale:
+  edges:
+  - 0.1
+  - 1.0
+  - 5.0
+  - 10.0
+  labels:
+  - Under 0.1%
+  - 0.1% - 1.0%
+  - 1.0% - 5.0%
+  - 5.0% - 10.0%
+  - Over 10.0%
+value_format: '{v:.4f}%'
+beats:
+- text: East Timor gets 29.4% of its economy from natural gas rents. Qatar gets 12%.
+  shot:
+    callouts:
+    - TLS
+    - QAT
+- text: That puts East Timor highest in the world, building nearly a third of its economy on gas.
+  shot:
+    kind: country
+    iso: TLS
+- text: Qatar, famous for giant energy reserves, gets 12%, giving East Timor 2.4 times its share.
+  shot:
+    kind: country
+    iso: QAT
+- text: Together, East Timor and Qatar lead global dependence on natural gas rents.
+  shot:
+    kind: group
+    isos:
+    - TLS
+    - QAT
+- text: 'Most global giants sit lower: Russia at 5.9%, the USA 0.4%, China 0.2%, and Zimbabwe 0%.'
+  shot:
+    kind: rank
+    isos:
+    - RUS
+    - USA
+    - CHN
+    - ZWE
+- text: How much does natural gas power your country's economy?
+  shot:
+    kind: card
+    lines:
+    - GAS ECONOMY SHARE
+    - Natural gas rents (% of GDP)

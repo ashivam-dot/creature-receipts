@@ -38,102 +38,103 @@ Refreshed by every producer run (`atlas.stats`) from the channel's public feed o
 
 | Short | Topic | Published | Views | Likes | Views per hour |
 |---|---|---|---|---|---|
-| atlas001 137 Places Have More Mobile Subscriptions Than People | map_reveal | 2026-10-08 16:01 UTC | 1330 | 17 | 1.6 |
-| atlas002 45 places with Falling Populations | map_reveal | 2026-10-09 16:02 UTC | 978 | 15 | 1.2 |
+| atlas001 137 Places Have More Mobile Subscriptions Than People | map_reveal | 2026-10-08 16:01 UTC | 1330 | 17 | 1.5 |
+| atlas002 45 places with Falling Populations | map_reveal | 2026-10-09 16:02 UTC | 979 | 15 | 1.2 |
 | atlas003 Below the fertility benchmark in 2024 | rank_ladder | 2026-10-08 20:01 UTC | 132 | 2 | 0.2 |
 | atlas004 47 places Where Life Expectancy Reaches 80 | map_reveal | 2026-10-08 23:01 UTC | 164 | 2 | 0.2 |
 | atlas011 Money Sent Home Equals 58% of GDP in Tajikistan | map_reveal | 2026-10-10 16:01 UTC | 150 | 1 | 0.2 |
 | atlas014 Finland Rates Life at 7.8 out of 10 | rank_ladder | 2026-10-10 23:00 UTC | 1043 | 9 | 1.3 |
 | atlas016 How Many Calories Each Country Has On Its Plate | map_reveal | 2026-10-10 20:00 UTC | 1137 | 16 | 1.4 |
 | atlas017 The Youngest and Oldest places on Earth | map_reveal | 2026-10-11 16:01 UTC | 1339 | 21 | 1.7 |
-| atlas019 The Emptiest and Most Crowded places | map_reveal | 2026-10-11 20:00 UTC | 1768 | 20 | 2.3 |
-| atlas021 Cuba has 9.5 doctors while Niger has 0.0 | rank_ladder | 2026-10-11 23:00 UTC | 1048 | 14 | 1.4 |
+| atlas019 The Emptiest and Most Crowded places | map_reveal | 2026-10-11 20:00 UTC | 1768 | 20 | 2.2 |
+| atlas021 Cuba has 9.5 doctors while Niger has 0.0 | rank_ladder | 2026-10-11 23:00 UTC | 1048 | 14 | 1.3 |
 | atlas023 France has 49 fixed broadband lines per 100 people | map_reveal | 2026-10-12 16:02 UTC | 259 | 6 | 0.3 |
 | atlas024 Where 30% of People are 65 or Older | map_reveal | 2026-10-12 20:01 UTC | 1218 | 16 | 1.6 |
 | atlas025 Qatar has 108 micrograms of particles | map_reveal | 2026-10-12 23:01 UTC | 1217 | 20 | 1.6 |
-| atlas026 The Global Gap in Basic Drinking Water Access | map_reveal | 2026-10-13 16:03 UTC | 771 | 10 | 1.1 |
+| atlas026 The Global Gap in Basic Drinking Water Access | map_reveal | 2026-10-13 16:03 UTC | 771 | 10 | 1.0 |
 | atlas027 Women in the labor force: 83% to 5% | rank_ladder | 2026-10-13 20:01 UTC | 143 | 5 | 0.2 |
 | atlas028 61 places Still Have Most People Outside Cities | rank_ladder | 2026-10-13 23:01 UTC | 1157 | 14 | 1.6 |
 | atlas030 places Where One City Holds 92% of City Dwellers | rank_ladder | 2026-10-14 16:02 UTC | 1369 | 8 | 1.9 |
 | atlas031 In Qatar, 77% of people were born abroad | rank_ladder | 2026-10-14 20:01 UTC | 2 | 0 | 0.0 |
-| atlas032 Health Spending: The $10,550 to $13 Divide | map_reveal | 2026-10-14 23:01 UTC | 1101 | 11 | 1.6 |
-| atlas033 Japan Has 51 Seniors per 100 Working-Age People | map_reveal | 2026-10-15 16:03 UTC | 1141 | 16 | 1.7 |
-| atlas037 Colombia Rains 180 Times Egypt's Annual Precipitation | map_reveal | 2026-10-15 20:01 UTC | 1056 | 7 | 1.6 |
+| atlas032 Health Spending: The $10,550 to $13 Divide | map_reveal | 2026-10-14 23:01 UTC | 1101 | 11 | 1.5 |
+| atlas033 Japan Has 51 Seniors per 100 Working-Age People | map_reveal | 2026-10-15 16:03 UTC | 1141 | 16 | 1.6 |
+| atlas037 Colombia Rains 180 Times Egypt's Annual Precipitation | map_reveal | 2026-10-15 20:01 UTC | 1056 | 7 | 1.5 |
 | atlas039 Ireland Produces $131,592 per Person | map_reveal | 2026-10-15 23:01 UTC | 1086 | 7 | 1.6 |
-| atlas040 Romania Drinks 16.8 Liters of Pure Alcohol per Adult | map_reveal | 2026-10-16 16:02 UTC | 1141 | 12 | 1.7 |
+| atlas040 Romania Drinks 16.8 Liters of Pure Alcohol per Adult | map_reveal | 2026-10-16 16:02 UTC | 1143 | 12 | 1.7 |
 | atlas042 Powering Life: Electric Consumption Per Person | map_reveal | 2026-10-16 20:01 UTC | 788 | 2 | 1.2 |
 | atlas047 Freshwater Per Person: From Iceland to Kuwait | map_reveal | 2026-10-16 23:01 UTC | 1063 | 8 | 1.6 |
-| atlas048 Uruguay Leads the World in Cash Machines | rank_ladder | 2026-10-17 16:02 UTC | 1071 | 10 | 1.7 |
-| atlas049 Global Tobacco Use: East Timor at 48.8% and Nigeria at 3.1% | map_reveal | 2026-10-17 20:01 UTC | 424 | 1 | 0.7 |
+| atlas048 Uruguay Leads the World in Cash Machines | rank_ladder | 2026-10-17 16:02 UTC | 1071 | 10 | 1.6 |
+| atlas049 Global Tobacco Use: East Timor at 48.8% and Nigeria at 3.1% | map_reveal | 2026-10-17 20:01 UTC | 424 | 1 | 0.6 |
 | atlas052 Clean Cooking Access: From 100% Down to 0% | rank_ladder | 2026-10-17 23:01 UTC | 1080 | 12 | 1.7 |
-| atlas053 Why Greece Has 165.1% College Enrollment | rank_ladder | 2026-10-18 16:01 UTC | 1028 | 10 | 1.7 |
+| atlas053 Why Greece Has 165.1% College Enrollment | rank_ladder | 2026-10-18 16:01 UTC | 1028 | 10 | 1.6 |
 | atlas054 Household Goods Cost 130 in Iceland but 100 in USA | rank_ladder | 2026-10-18 20:01 UTC | 1040 | 3 | 1.7 |
-| atlas055 South Korea Has 12.8 Hospital Beds While Chad Has 0.1 | map_reveal | 2026-10-18 23:00 UTC | 1094 | 13 | 1.8 |
+| atlas055 South Korea Has 12.8 Hospital Beds While Chad Has 0.1 | map_reveal | 2026-10-18 23:00 UTC | 1094 | 13 | 1.7 |
 | atlas056 Where More Boys Are Born: 1.01 to 1.11 Worldwide | map_reveal | 2026-10-19 16:02 UTC | 839 | 5 | 1.4 |
-| atlas058 Years Children Must Legally Attend School | rank_ladder | 2026-10-19 20:01 UTC | 1077 | 11 | 1.9 |
+| atlas058 Years Children Must Legally Attend School | rank_ladder | 2026-10-19 20:01 UTC | 1077 | 11 | 1.8 |
 | atlas061 100% of Adults in Iceland Have an Account, South Sudan 6% | map_reveal | 2026-10-19 23:01 UTC | 1057 | 4 | 1.8 |
-| atlas065 Iceland Uses 16,248 kg of Energy Per Person | map_reveal | 2026-10-20 16:03 UTC | 1017 | 11 | 1.8 |
-| atlas071 Australia Leads the World in Overweight Toddlers | map_reveal | 2026-10-20 20:00 UTC | 983 | 9 | 1.8 |
-| atlas075 Bulgaria Has 93.8 Bank Branches to DR Congo 0.6 | map_reveal | 2026-10-21 16:01 UTC | 353 | 4 | 0.7 |
-| atlas078 Places Ranked by Megacity Populations | rank_ladder | 2026-10-22 16:04 UTC | 1395 | 11 | 2.7 |
-| atlas079 Places Ranked by Arable Land | map_reveal | 2026-10-21 23:00 UTC | 1021 | 7 | 1.9 |
-| atlas081 Places Ranked by Income Inequality | rank_ladder | 2026-10-22 23:01 UTC | 1017 | 7 | 2.0 |
-| atlas083 The Places With the Oldest Male Populations | map_reveal | 2026-10-23 16:02 UTC | 1069 | 9 | 2.2 |
-| atlas090 Places Ranked by Container Shipping CONNECTIVITY | rank_ladder | 2026-10-23 23:01 UTC | 991 | 10 | 2.1 |
+| atlas065 Iceland Uses 16,248 kg of Energy Per Person | map_reveal | 2026-10-20 16:03 UTC | 1017 | 11 | 1.7 |
+| atlas071 Australia Leads the World in Overweight Toddlers | map_reveal | 2026-10-20 20:00 UTC | 984 | 9 | 1.7 |
+| atlas075 Bulgaria Has 93.8 Bank Branches to DR Congo 0.6 | map_reveal | 2026-10-21 16:01 UTC | 353 | 4 | 0.6 |
+| atlas078 Places Ranked by Megacity Populations | rank_ladder | 2026-10-22 16:04 UTC | 1395 | 11 | 2.6 |
+| atlas079 Places Ranked by Arable Land | map_reveal | 2026-10-21 23:00 UTC | 1021 | 7 | 1.8 |
+| atlas081 Places Ranked by Income Inequality | rank_ladder | 2026-10-22 23:01 UTC | 1017 | 7 | 1.9 |
+| atlas083 The Places With the Oldest Male Populations | map_reveal | 2026-10-23 16:02 UTC | 1069 | 9 | 2.1 |
+| atlas090 Places Ranked by Container Shipping CONNECTIVITY | rank_ladder | 2026-10-23 23:01 UTC | 991 | 10 | 2.0 |
 | atlas093 Direct Medical Costs Paid by Families | map_reveal | 2026-10-24 16:03 UTC | 3 | 1 | 0.0 |
-| atlas094 Places Ranked by Cost of Power Outages | rank_ladder | 2026-10-24 23:01 UTC | 406 | 3 | 0.9 |
+| atlas094 Places Ranked by Cost of Power Outages | rank_ladder | 2026-10-24 23:01 UTC | 406 | 3 | 0.8 |
 | atlas097 Places Where Women MATCH Men at Work | map_reveal | 2026-10-27 16:04 UTC | 13 | 0 | 0.0 |
-| atlas098 Places Ranked by the Income of the Richest Fifth | rank_ladder | 2026-10-25 23:01 UTC | 650 | 7 | 1.5 |
+| atlas098 Places Ranked by the Income of the Richest Fifth | rank_ladder | 2026-10-25 23:01 UTC | 651 | 7 | 1.4 |
 | atlas099 Places Ranked by Youth Dependency | map_reveal | 2026-10-27 20:00 UTC | 123 | 1 | 0.3 |
 | atlas100 Places Ranked by Nursing Staff Density | rank_ladder | 2026-10-25 16:02 UTC | 316 | 6 | 0.7 |
 | atlas101 Which Nations Grow the MOST Permanent Crops? | map_reveal | 2026-10-26 16:04 UTC | 258 | 1 | 0.6 |
-| atlas102 Places Ranked by the Cost of Sending Money | rank_ladder | 2026-10-26 23:01 UTC | 481 | 4 | 1.2 |
-| atlas103 Places Ranked by Dependency Load | map_reveal | 2026-10-28 16:00 UTC | 541 | 5 | 1.5 |
+| atlas102 Places Ranked by the Cost of Sending Money | rank_ladder | 2026-10-26 23:01 UTC | 481 | 4 | 1.1 |
+| atlas103 Places Ranked by Dependency Load | map_reveal | 2026-10-28 16:00 UTC | 541 | 5 | 1.4 |
 | atlas104 Places Ranked by Food Insecurity | rank_ladder | 2026-10-27 23:00 UTC | 156 | 1 | 0.4 |
 | atlas105 Which Places Use the MOST Water for Industry? | map_reveal | 2026-10-28 20:00 UTC | 15 | 0 | 0.0 |
 | atlas106 USA vs Iraq: The 85 Times Research Spending Gap | versus | 2026-10-30 16:00 UTC | 203 | 2 | 0.6 |
 | atlas107 Which Country Has the MOST Diabetes? | odd_one_out | 2026-10-30 20:00 UTC | 69 | 0 | 0.2 |
-| atlas108 Places Ranked by How Much Money They Save | map_reveal | 2026-10-30 23:00 UTC | 405 | 2 | 1.3 |
-| atlas109 Places Ranked by Years of Preschool | rank_ladder | 2026-10-31 16:00 UTC | 1054 | 8 | 3.6 |
-| atlas112 Which Country Has the Most Youth Financial Access? | odd_one_out | 2026-10-31 20:00 UTC | 576 | 7 | 2.0 |
-| atlas113 Is YOUR Country a Service Economy? | map_reveal | 2026-10-31 23:00 UTC | 635 | 3 | 2.2 |
-| atlas114 Places Ranked by University Degrees | rank_ladder | 2026-11-01 17:00 UTC | 1085 | 10 | 4.0 |
-| atlas119 Qatar vs Chad: The Global Paid Employment Gap | versus | 2026-11-01 21:00 UTC | 102 | 0 | 0.4 |
+| atlas108 Places Ranked by How Much Money They Save | map_reveal | 2026-10-30 23:00 UTC | 405 | 2 | 1.2 |
+| atlas109 Places Ranked by Years of Preschool | rank_ladder | 2026-10-31 16:00 UTC | 1054 | 8 | 3.3 |
+| atlas112 Which Country Has the Most Youth Financial Access? | odd_one_out | 2026-10-31 20:00 UTC | 576 | 7 | 1.8 |
+| atlas113 Is YOUR Country a Service Economy? | map_reveal | 2026-10-31 23:00 UTC | 635 | 3 | 2.0 |
+| atlas114 Places Ranked by University Degrees | rank_ladder | 2026-11-01 17:00 UTC | 1085 | 10 | 3.7 |
+| atlas119 Qatar vs Chad: The Global Paid Employment Gap | versus | 2026-11-01 21:00 UTC | 102 | 0 | 0.3 |
 | atlas120 How Does the USA Compare on Safe Drinking Water? | spotlight | 2026-11-02 00:00 UTC | 133 | 0 | 0.5 |
-| atlas121 The Places With the Highest Male Share | map_reveal | 2026-11-02 17:00 UTC | 1233 | 16 | 5.0 |
+| atlas121 The Places With the Highest Male Share | map_reveal | 2026-11-02 17:00 UTC | 1233 | 16 | 4.5 |
 | atlas122 USA vs Russia: How Much Tax Revenue Comes From Income? | versus | 2026-11-03 00:00 UTC | 176 | 2 | 0.7 |
-| atlas123 Places Ranked by Access to Basic Sanitation | rank_ladder | 2026-11-02 21:00 UTC | 585 | 6 | 2.4 |
-| atlas124 Which Major Country Has the Highest Savings Rate? | odd_one_out | 2026-11-03 21:00 UTC | 1103 | 4 | 5.0 |
-| atlas125 Places Ranked by Adult Literacy | map_reveal | 2026-11-03 17:00 UTC | 1369 | 21 | 6.1 |
-| atlas126 Iraq vs USA: Natural Resource Wealth | versus | 2026-11-04 17:00 UTC | 191 | 5 | 1.0 |
-| atlas127 How Does the USA Compare on High School Completion? | spotlight | 2026-11-04 00:00 UTC | 1061 | 15 | 4.9 |
-| atlas128 Places Ranked by Income Share of the Poorest | rank_ladder | 2026-11-05 00:00 UTC | 1013 | 6 | 5.3 |
-| atlas131 Which Country Has the MOST Renewable Electricity? | odd_one_out | 2026-11-05 21:00 UTC | 194 | 2 | 1.1 |
-| atlas133 Senior Women Share Around the World | map_reveal | 2026-11-04 21:00 UTC | 245 | 2 | 1.3 |
-| atlas134 East Timor vs Nigeria: Male Tobacco Use | versus | 2026-11-05 17:00 UTC | 126 | 2 | 0.7 |
+| atlas123 Places Ranked by Access to Basic Sanitation | rank_ladder | 2026-11-02 21:00 UTC | 585 | 6 | 2.2 |
+| atlas124 Which Major Country Has the Highest Savings Rate? | odd_one_out | 2026-11-03 21:00 UTC | 1103 | 4 | 4.5 |
+| atlas125 Places Ranked by Adult Literacy | map_reveal | 2026-11-03 17:00 UTC | 1370 | 21 | 5.5 |
+| atlas126 Iraq vs USA: Natural Resource Wealth | versus | 2026-11-04 17:00 UTC | 192 | 5 | 0.9 |
+| atlas127 How Does the USA Compare on High School Completion? | spotlight | 2026-11-04 00:00 UTC | 1061 | 15 | 4.4 |
+| atlas128 Places Ranked by Income Share of the Poorest | rank_ladder | 2026-11-05 00:00 UTC | 1013 | 6 | 4.7 |
+| atlas131 Which Country Has the MOST Renewable Electricity? | odd_one_out | 2026-11-05 21:00 UTC | 194 | 2 | 1.0 |
+| atlas133 Senior Women Share Around the World | map_reveal | 2026-11-04 21:00 UTC | 245 | 2 | 1.1 |
+| atlas134 East Timor vs Nigeria: Male Tobacco Use | versus | 2026-11-05 17:00 UTC | 126 | 2 | 0.6 |
 | atlas135 Is YOUR Country Spending More Than It Produces? | spotlight | 2026-11-06 00:00 UTC | 70 | 1 | 0.4 |
-| atlas136 Places Ranked by Open Defecation Rates | rank_ladder | 2026-11-07 00:00 UTC | 272 | 6 | 1.9 |
-| atlas137 The Places With the Highest Adolescent Birth Rates | map_reveal | 2026-11-06 17:00 UTC | 1138 | 13 | 7.5 |
-| atlas138 Which Country Has the MOST Rural Handwashing Access? | odd_one_out | 2026-11-06 21:00 UTC | 1052 | 8 | 7.1 |
-| atlas144 Is EAST Timor Near the Top for Energy Depletion? | spotlight | 2026-11-07 17:00 UTC | 124 | 1 | 1.0 |
-| atlas145 Is YOUR Country Powered by Oil? | map_reveal | 2026-11-07 21:00 UTC | 979 | 11 | 7.9 |
-| atlas149 Romania vs India: Female Alcohol Consumption | versus | 2026-11-08 00:00 UTC | 957 | 6 | 7.9 |
-| atlas151 Places Ranked by Male Internet Use | rank_ladder | 2026-11-08 17:00 UTC | 788 | – | 7.0 |
-| atlas153 Is Madagascar the Highest for Bank Loan Spreads? | spotlight | 2026-11-08 21:00 UTC | 80 | – | 0.7 |
-| atlas154 Which Country Has the MOST Equal Youth Literacy? | odd_one_out | 2026-11-09 21:00 UTC | 114 | – | 1.2 |
-| atlas155 The Nations Powered by Mineral Wealth | map_reveal | 2026-11-09 17:00 UTC | 77 | – | 0.8 |
-| atlas156 Germany vs USA: The Years Spent in School | versus | 2026-11-09 00:00 UTC | 109 | – | 1.0 |
-| atlas158 How Does the USA Compare on Female Part-Time Work? | spotlight | 2026-11-10 00:00 UTC | 42 | – | 0.5 |
-| atlas159 Places Ranked by Female Primary Teachers | rank_ladder | 2026-11-10 17:00 UTC | 257 | – | 3.6 |
-| atlas160 Who Emits the Most Greenhouse Gases per Person? | map_reveal | 2026-11-10 21:00 UTC | 17 | – | 0.2 |
-| atlas161 Armenia vs Liberia: Women in Secondary Teaching | versus | 2026-11-11 00:00 UTC | 18 | – | 0.3 |
-| atlas162 Which Country Has the Highest Working-Age Share? | odd_one_out | 2026-11-11 17:00 UTC | 15 | – | 0.3 |
-| atlas164 How Does the USA Compare on Bank Capital? | spotlight | 2026-11-11 21:00 UTC | 21 | – | 0.5 |
-| atlas165 Which Places Are Growing the Most Food? | map_reveal | 2026-11-12 00:00 UTC | 10 | – | 0.2 |
-| atlas166 USA vs Brazil: Upper Middle Class Income Share | versus | 2026-11-12 17:00 UTC | 3 | – | 0.1 |
-| atlas167 Places Ranked by Years in Primary School | rank_ladder | 2026-11-13 17:00 UTC | 0 | – | 0.0 |
-| atlas172 The Global Divide in Relative Poverty | versus | 2026-11-13 00:00 UTC | 0 | – | 0.0 |
-| atlas173 Where Women DOMINATE University Faculty | map_reveal | 2026-11-12 21:00 UTC | 1 | – | 0.0 |
+| atlas136 Places Ranked by Open Defecation Rates | rank_ladder | 2026-11-07 00:00 UTC | 273 | 6 | 1.6 |
+| atlas137 The Places With the Highest Adolescent Birth Rates | map_reveal | 2026-11-06 17:00 UTC | 1138 | 13 | 6.5 |
+| atlas138 Which Country Has the MOST Rural Handwashing Access? | odd_one_out | 2026-11-06 21:00 UTC | 1052 | 8 | 6.1 |
+| atlas144 Is EAST Timor Near the Top for Energy Depletion? | spotlight | 2026-11-07 17:00 UTC | 125 | 1 | 0.8 |
+| atlas145 Is YOUR Country Powered by Oil? | map_reveal | 2026-11-07 21:00 UTC | 979 | 11 | 6.6 |
+| atlas149 Romania vs India: Female Alcohol Consumption | versus | 2026-11-08 00:00 UTC | 955 | 6 | 6.6 |
+| atlas151 Places Ranked by Male Internet Use | rank_ladder | 2026-11-08 17:00 UTC | 788 | 10 | 6.2 |
+| atlas153 Is Madagascar the Highest for Bank Loan Spreads? | spotlight | 2026-11-08 21:00 UTC | 80 | 0 | 0.6 |
+| atlas154 Which Country Has the MOST Equal Youth Literacy? | odd_one_out | 2026-11-09 21:00 UTC | 113 | 3 | 1.1 |
+| atlas155 The Nations Powered by Mineral Wealth | map_reveal | 2026-11-09 17:00 UTC | 77 | 1 | 0.7 |
+| atlas156 Germany vs USA: The Years Spent in School | versus | 2026-11-09 00:00 UTC | 110 | 1 | 0.9 |
+| atlas158 How Does the USA Compare on Female Part-Time Work? | spotlight | 2026-11-10 00:00 UTC | 42 | 0 | 0.4 |
+| atlas159 Places Ranked by Female Primary Teachers | rank_ladder | 2026-11-10 17:00 UTC | 257 | 0 | 3.2 |
+| atlas160 Who Emits the Most Greenhouse Gases per Person? | map_reveal | 2026-11-10 21:00 UTC | 17 | 0 | 0.2 |
+| atlas161 Armenia vs Liberia: Women in Secondary Teaching | versus | 2026-11-11 00:00 UTC | 18 | 0 | 0.2 |
+| atlas162 Which Country Has the Highest Working-Age Share? | odd_one_out | 2026-11-11 17:00 UTC | 15 | 0 | 0.3 |
+| atlas164 How Does the USA Compare on Bank Capital? | spotlight | 2026-11-11 21:00 UTC | 21 | 0 | 0.4 |
+| atlas165 Which Places Are Growing the Most Food? | map_reveal | 2026-11-12 00:00 UTC | 10 | 0 | 0.2 |
+| atlas166 USA vs Brazil: Upper Middle Class Income Share | versus | 2026-11-12 17:00 UTC | 3 | 0 | 0.1 |
+| atlas167 Places Ranked by Years in Primary School | rank_ladder | 2026-11-13 17:00 UTC | 0 | 0 | 0.0 |
+| atlas169 Places Ranked by Renewable Electricity Share | map_reveal | 2026-11-13 21:00 UTC | 0 | 0 | 0.0 |
+| atlas172 The Global Divide in Relative Poverty | versus | 2026-11-13 00:00 UTC | 2 | 0 | 0.1 |
+| atlas173 Where Women DOMINATE University Faculty | map_reveal | 2026-11-12 21:00 UTC | 1 | 0 | 0.0 |
 
 ## Log
 

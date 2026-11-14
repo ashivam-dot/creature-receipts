@@ -1,0 +1,179 @@
+{
+  "errors": [],
+  "claims": [
+    {
+      "surface": "title",
+      "text": "Is INDIA the Highest for Underweight Babies?",
+      "isos": [
+        "IND"
+      ],
+      "support": "India rank 1, value 27.43525934"
+    },
+    {
+      "surface": "hook",
+      "text": "BIRTH WEIGHT GAP",
+      "isos": [],
+      "support": "Global data on low-birthweight baby rates comparing various countries"
+    },
+    {
+      "surface": "description",
+      "text": "A cinematic data comparison of low-birthweight baby rates using 2020 World Bank data, focusing on India's global high and the gap with other major nations.",
+      "isos": [
+        "IND"
+      ],
+      "support": "Indicator SH.STA.BRTW.ZS, year 2020, India rank 1"
+    },
+    {
+      "surface": "beat_0",
+      "text": "India: 27.4% of babies are born underweight. In Iceland, it is 4%.",
+      "isos": [
+        "IND",
+        "ISL"
+      ],
+      "support": "India value 27.43525934 (display 27.4%), Iceland value 3.992822369 (display 4%)"
+    },
+    {
+      "surface": "beat_1",
+      "text": "India has the world's highest rate. A difficult start for newborns weighing less than 2,500 grams.",
+      "isos": [
+        "IND"
+      ],
+      "support": "India rank 1; definition: Low-birthweight babies are newborns weighing less than 2,500 grams"
+    },
+    {
+      "surface": "beat_2",
+      "text": "This counts weight within the 1st hour of life, before significant postnatal weight loss has occurred.",
+      "isos": [],
+      "support": "definition: with the measurement taken within the first hour of life, before significant postnatal weight loss has occurred"
+    },
+    {
+      "surface": "beat_3",
+      "text": "India has 3.3 times the underweight newborns the USA has, where 8.3% of babies are underweight.",
+      "isos": [
+        "IND",
+        "USA"
+      ],
+      "support": "India 27.43525934 / USA 8.261421513 = 3.321153; USA display 8.3%"
+    },
+    {
+      "surface": "beat_4",
+      "text": "Bangladesh: 23%, Philippines: 21.1%, and Liberia: 19.9% are also high.",
+      "isos": [
+        "BGD",
+        "PHL",
+        "LBR"
+      ],
+      "support": "Bangladesh display 23%, Philippines display 21.1%, Liberia display 19.9%"
+    },
+    {
+      "surface": "beat_5",
+      "text": "Japan is a surprise for a wealthy nation at 11.3%.",
+      "isos": [
+        "JPN"
+      ],
+      "support": "Japan display 11.3%"
+    },
+    {
+      "surface": "beat_6",
+      "text": "At the other end, Sweden is just 4.1%.",
+      "isos": [
+        "SWE"
+      ],
+      "support": "Sweden display 4.1%"
+    },
+    {
+      "surface": "beat_7",
+      "text": "How common are underweight births where you live?",
+      "isos": [],
+      "support": "Engaging closing question referencing low-birthweight births"
+    },
+    {
+      "surface": "card_7",
+      "text": "Healthy starts? Low-birthweight babies (%)",
+      "isos": [],
+      "support": "Card corresponding to indicator unit % and low-birthweight babies theme"
+    }
+  ],
+  "surface_checks": {
+    "title": {
+      "supported": true,
+      "reason": "India is indeed ranked 1st globally with 27.4%.",
+      "isos": [
+        "IND"
+      ]
+    },
+    "hook": {
+      "supported": true,
+      "reason": "Accurate conceptual framing.",
+      "isos": []
+    },
+    "description": {
+      "supported": true,
+      "reason": "Accurately summarizes the data and source year 2020.",
+      "isos": [
+        "IND"
+      ]
+    },
+    "beat_0": {
+      "supported": true,
+      "reason": "India is 27.4% and Iceland is 4% in the 2020 dataset.",
+      "isos": [
+        "IND",
+        "ISL"
+      ]
+    },
+    "beat_1": {
+      "supported": true,
+      "reason": "India rank is 1 (highest), and definition specifies newborns weighing less than 2,500 grams.",
+      "isos": [
+        "IND"
+      ]
+    },
+    "beat_2": {
+      "supported": true,
+      "reason": "Directly matches the source definition.",
+      "isos": []
+    },
+    "beat_3": {
+      "supported": true,
+      "reason": "27.435 / 8.261 is approximately 3.3; USA display is 8.3%.",
+      "isos": [
+        "IND",
+        "USA"
+      ]
+    },
+    "beat_4": {
+      "supported": true,
+      "reason": "Bangladesh is 23%, Philippines is 21.1%, Liberia is 19.9%.",
+      "isos": [
+        "BGD",
+        "PHL",
+        "LBR"
+      ]
+    },
+    "beat_5": {
+      "supported": true,
+      "reason": "Japan's display value is 11.3%.",
+      "isos": [
+        "JPN"
+      ]
+    },
+    "beat_6": {
+      "supported": true,
+      "reason": "Sweden's display value is 4.1%.",
+      "isos": [
+        "SWE"
+      ]
+    },
+    "beat_7": {
+      "supported": true,
+      "reason": "Standard closing hook style.",
+      "isos": []
+    },
+    "card_7": {
+      "supported": true,
+      "reason": "Matches indicator unit and topic.",
+      "isos": []
+    }
+  }
+}

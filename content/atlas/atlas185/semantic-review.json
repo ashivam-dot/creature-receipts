@@ -1,0 +1,164 @@
+{
+  "errors": [],
+  "claims": [
+    {
+      "surface": "title",
+      "text": "Where Women Are Most Likely to Hire Employees",
+      "isos": [],
+      "support": "Global comparison of the share of working women who are employers based on World Bank indicator SL.EMP.MPYR.FE.ZS."
+    },
+    {
+      "surface": "hook",
+      "text": "WOMEN BUSINESS EMPLOYERS",
+      "isos": [],
+      "support": "Topic indicator theme: Employers, female (% of female employment)."
+    },
+    {
+      "surface": "description",
+      "text": "Share of working women who are employers across the world, based on World Bank data.",
+      "isos": [],
+      "support": "Share of working women who are employers across the world, based on World Bank data."
+    },
+    {
+      "surface": "beat_0",
+      "text": "In East Timor, 15.6% of working women hire employees. In the USA, it is 1.2%.",
+      "isos": [
+        "TLS",
+        "USA"
+      ],
+      "support": "TLS: 15.5942673671514 (15.6%), USA: 1.18485112751738 (1.2%)"
+    },
+    {
+      "surface": "beat_1",
+      "text": "That gives East Timor 13 times what the USA has.",
+      "isos": [
+        "TLS",
+        "USA"
+      ],
+      "support": "TLS 15.6% divided by USA 1.2% is approximately 13."
+    },
+    {
+      "surface": "beat_2",
+      "text": "At the world's lowest end, Pakistan has just 0.1%.",
+      "isos": [
+        "PAK"
+      ],
+      "support": "PAK: 0.0977886252049544 (0.1%), rank 184 (lowest in the 184 universe)."
+    },
+    {
+      "surface": "beat_3",
+      "text": "Djibouti sits near the top with 14.6%, while Azerbaijan has 13.1%.",
+      "isos": [
+        "DJI",
+        "AZE"
+      ],
+      "support": "DJI: 14.5663122551763 (14.6%, rank 2), AZE: 13.1405780594896 (13.1%, rank 3)."
+    },
+    {
+      "surface": "beat_4",
+      "text": "Big economies lag behind: China has 2.7%, Germany 2%, the UK 0.9%, and India 0.6%.",
+      "isos": [
+        "CHN",
+        "DEU",
+        "GBR",
+        "IND"
+      ],
+      "support": "CHN: 2.72011990770608 (2.7%), DEU: 1.98152595408056 (2%), GBR: 0.893401302372825 (0.9%), IND: 0.605768074992855 (0.6%)."
+    },
+    {
+      "surface": "beat_5",
+      "text": "Nigeria stands out in Africa, where 10.4% of working women hire staff.",
+      "isos": [
+        "NGA"
+      ],
+      "support": "NGA: 10.4445863143246 (10.4%)."
+    },
+    {
+      "surface": "beat_6",
+      "text": "How many working women hire employees in your country?",
+      "isos": [],
+      "support": "Call to action prompt."
+    },
+    {
+      "surface": "card_6",
+      "text": "Women as Employers",
+      "isos": [],
+      "support": "Indicator topic representation."
+    }
+  ],
+  "surface_checks": {
+    "title": {
+      "supported": true,
+      "reason": "Title frames the comparison of the indicator across entities.",
+      "isos": []
+    },
+    "hook": {
+      "supported": true,
+      "reason": "Accurately represents the dataset theme of female employers.",
+      "isos": []
+    },
+    "description": {
+      "supported": true,
+      "reason": "Accurately describes the World Bank dataset indicator for female employers.",
+      "isos": []
+    },
+    "beat_0": {
+      "supported": true,
+      "reason": "Values for East Timor (15.6%) and USA (1.2%) match the EVIDENCE database.",
+      "isos": [
+        "TLS",
+        "USA"
+      ]
+    },
+    "beat_1": {
+      "supported": true,
+      "reason": "15.6 / 1.2 is 13.",
+      "isos": [
+        "TLS",
+        "USA"
+      ]
+    },
+    "beat_2": {
+      "supported": true,
+      "reason": "Pakistan's value is 0.1% and it is ranked 184 (the lowest).",
+      "isos": [
+        "PAK"
+      ]
+    },
+    "beat_3": {
+      "supported": true,
+      "reason": "Djibouti is 14.6% (rank 2) and Azerbaijan is 13.1% (rank 3).",
+      "isos": [
+        "DJI",
+        "AZE"
+      ]
+    },
+    "beat_4": {
+      "supported": true,
+      "reason": "China (2.7%), Germany (2%), UK (0.9%), and India (0.6%) values match the EVIDENCE.",
+      "isos": [
+        "CHN",
+        "DEU",
+        "GBR",
+        "IND"
+      ]
+    },
+    "beat_5": {
+      "supported": true,
+      "reason": "Nigeria's value is 10.4%.",
+      "isos": [
+        "NGA"
+      ]
+    },
+    "beat_6": {
+      "supported": true,
+      "reason": "Standard engagement question.",
+      "isos": []
+    },
+    "card_6": {
+      "supported": true,
+      "reason": "Accurately reflects source data attribution.",
+      "isos": []
+    }
+  }
+}

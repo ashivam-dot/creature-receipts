@@ -5316,7 +5316,7 @@
     "#mapdata"
    ],
    "source_url": "https://data.worldbank.org/indicator/SL.TLF.CACT.FM.NE.ZS",
-   "status": "ready:atlas179",
+   "status": "used:atlas179",
    "added_by": "refill"
   },
   {
@@ -5548,7 +5548,7 @@
     "#energy"
    ],
    "source_url": "https://data.worldbank.org/indicator/EG.ELC.FOSL.ZS",
-   "status": "ready:atlas180",
+   "status": "used:atlas180",
    "added_by": "refill"
   },
   {
@@ -5705,7 +5705,7 @@
     "#employment"
    ],
    "source_url": "https://data.worldbank.org/indicator/SL.EMP.MPYR.FE.ZS",
-   "status": "open",
+   "status": "ready:atlas185",
    "added_by": "refill"
   },
   {
@@ -6163,7 +6163,7 @@
     "#economics"
    ],
    "source_url": "https://data.worldbank.org/indicator/GC.TAX.GSRV.RV.ZS",
-   "status": "ready:atlas181",
+   "status": "used:atlas181",
    "added_by": "refill"
   },
   {
@@ -7081,14 +7081,14 @@
     "#maps"
    ],
    "source_url": "https://data.worldbank.org/indicator/NY.GDP.FRST.RT.ZS",
-   "status": "ready:atlas182",
+   "status": "used:atlas182",
    "added_by": "refill"
   },
   {
    "id": "t195",
    "topic": "Economic Dependency on Natural Gas Rents",
    "angle": "Timor-Leste derives nearly thirty percent of its GDP from natural gas rents, highest of any country in the world.",
-   "format": "rank_ladder",
+   "format": "versus",
    "dataset": {
     "kind": "worldbank",
     "indicator": "NY.GDP.NGAS.RT.ZS",
@@ -7120,7 +7120,7 @@
     "#economy"
    ],
    "source_url": "https://data.worldbank.org/indicator/NY.GDP.NGAS.RT.ZS",
-   "status": "open",
+   "status": "ready:atlas184",
    "added_by": "refill"
   },
   {
@@ -7205,7 +7205,7 @@
    "id": "t198",
    "topic": "Share of Babies Born Underweight",
    "angle": "Over 27 percent of newborns in India weigh less than 2.5 kilograms, a rate nearly seven times higher than in Nordic countries.",
-   "format": "rank_ladder",
+   "format": "spotlight",
    "dataset": {
     "kind": "worldbank",
     "indicator": "SH.STA.BRTW.ZS",
@@ -7227,7 +7227,7 @@
     "#maps"
    ],
    "source_url": "https://data.worldbank.org/indicator/SH.STA.BRTW.ZS",
-   "status": "open",
+   "status": "ready:atlas183",
    "added_by": "refill"
   },
   {

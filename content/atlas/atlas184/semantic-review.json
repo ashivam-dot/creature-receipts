@@ -1,0 +1,165 @@
+{
+  "errors": [],
+  "claims": [
+    {
+      "surface": "title",
+      "text": "East Timor vs Qatar: Natural Gas Rents",
+      "isos": [
+        "TLS",
+        "QAT"
+      ],
+      "support": "East Timor (TLS) is present in evidence with value 29.37%, Qatar (QAT) with 12.01%"
+    },
+    {
+      "surface": "hook",
+      "text": "GAS DEPENDENCY LEADER",
+      "isos": [
+        "TLS"
+      ],
+      "support": "East Timor rank is 1"
+    },
+    {
+      "surface": "description",
+      "text": "Discover which countries and territories depend most on natural gas rents as a percentage of GDP, featuring East Timor, Qatar, and major world economies.",
+      "isos": [
+        "TLS",
+        "QAT"
+      ],
+      "support": "Reflects natural gas rents (% of GDP) indicator definition and entities"
+    },
+    {
+      "surface": "beat_0",
+      "text": "East Timor gets 29.4% of its economy from natural gas rents. Qatar gets 12%.",
+      "isos": [
+        "TLS",
+        "QAT"
+      ],
+      "support": "TLS value is 29.3788715937531 (displayed as 29.4%), QAT value is 12.0112545642563 (displayed as 12%)"
+    },
+    {
+      "surface": "beat_1",
+      "text": "That puts East Timor highest in the world, building nearly a third of its economy on gas.",
+      "isos": [
+        "TLS"
+      ],
+      "support": "TLS rank is 1, value is 29.38%"
+    },
+    {
+      "surface": "beat_2",
+      "text": "Qatar, famous for giant energy reserves, gets 12%, giving East Timor 2.4 times its share.",
+      "isos": [
+        "TLS",
+        "QAT"
+      ],
+      "support": "TLS is 29.38%, QAT is 12.01%, 29.38 / 12.01 = 2.44"
+    },
+    {
+      "surface": "beat_3",
+      "text": "Together, East Timor and Qatar lead global dependence on natural gas rents.",
+      "isos": [
+        "TLS",
+        "QAT"
+      ],
+      "support": "TLS rank is 1 and QAT rank is 3"
+    },
+    {
+      "surface": "beat_4",
+      "text": "Most global giants sit lower: Russia at 5.9%, the USA 0.4%, China 0.2%, and Zimbabwe 0%.",
+      "isos": [
+        "RUS",
+        "USA",
+        "CHN",
+        "ZWE"
+      ],
+      "support": "RUS value 5.86% (5.9%), USA value 0.36% (0.4%), CHN value 0.21% (0.2%), ZWE value 0%"
+    },
+    {
+      "surface": "beat_5",
+      "text": "How much does natural gas power your country's economy?",
+      "isos": [],
+      "support": "Generic question matching indicator"
+    },
+    {
+      "surface": "card_5",
+      "text": "Natural gas rents (% of GDP)",
+      "isos": [],
+      "support": "Matches definition of indicator NY.GDP.NGAS.RT.ZS"
+    }
+  ],
+  "surface_checks": {
+    "title": {
+      "supported": true,
+      "reason": "Accurately references East Timor and Qatar in the context of Natural Gas Rents.",
+      "isos": [
+        "TLS",
+        "QAT"
+      ]
+    },
+    "hook": {
+      "supported": true,
+      "reason": "East Timor is rank 1 in the dataset.",
+      "isos": [
+        "TLS"
+      ]
+    },
+    "description": {
+      "supported": true,
+      "reason": "Accurately describes indicator and featured entities.",
+      "isos": [
+        "TLS",
+        "QAT"
+      ]
+    },
+    "beat_0": {
+      "supported": true,
+      "reason": "Matches exact values for East Timor (29.4%) and Qatar (12%).",
+      "isos": [
+        "TLS",
+        "QAT"
+      ]
+    },
+    "beat_1": {
+      "supported": true,
+      "reason": "East Timor is rank 1 and 29.4% is nearly a third.",
+      "isos": [
+        "TLS"
+      ]
+    },
+    "beat_2": {
+      "supported": true,
+      "reason": "Qatar is 12% and East Timor's share is roughly 2.4 times larger.",
+      "isos": [
+        "TLS",
+        "QAT"
+      ]
+    },
+    "beat_3": {
+      "supported": true,
+      "reason": "Both countries are among the top ranks globally (1 and 3).",
+      "isos": [
+        "TLS",
+        "QAT"
+      ]
+    },
+    "beat_4": {
+      "supported": true,
+      "reason": "Russia is 5.9%, USA is 0.4%, China is 0.2%, Zimbabwe is 0% matching data.",
+      "isos": [
+        "RUS",
+        "USA",
+        "CHN",
+        "ZWE"
+      ]
+    },
+    "beat_5": {
+      "supported": true,
+      "reason": "Valid stylistic loop question.",
+      "isos": []
+    },
+    "card_5": {
+      "supported": true,
+      "reason": "Matches official indicator name and unit.",
+      "isos": []
+    }
+  }
+}

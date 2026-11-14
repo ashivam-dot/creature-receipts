@@ -1,0 +1,78 @@
+id: atlas183
+title: Is INDIA the Highest for Underweight Babies?
+format: spotlight
+hook_text: BIRTH WEIGHT GAP
+description: A cinematic data comparison of low-birthweight baby rates using 2020 World Bank data, focusing on India's
+  global high and the gap with other major nations.
+hashtags:
+- '#health'
+- '#geography'
+- '#countries'
+tags:
+- health
+- low-birthweight babies % of births
+- countries ranked by low-birthweight babies % of births
+- India
+- Iceland
+- world map
+- geography
+- atlas in numbers
+sources:
+- https://data.worldbank.org/indicator/SH.STA.BRTW.ZS
+dataset:
+  kind: worldbank
+  indicator: SH.STA.BRTW.ZS
+  label: Low-birthweight babies (% of births)
+  unit: '%'
+  source: World Bank
+  min_year: 2019
+scale:
+  kind: threshold
+  at: 10.0
+  labels:
+  - 10% or higher
+  - Under 10%
+value_format: '{v:.1f}%'
+beats:
+- text: 'India: 27.4% of babies are born underweight. In Iceland, it is 4%.'
+  shot:
+    callouts:
+    - IND
+    - ISL
+- text: India has the world's highest rate. A difficult start for newborns weighing less than 2,500 grams.
+  shot:
+    kind: country
+    iso: IND
+- text: This counts weight within the 1st hour of life, before significant postnatal weight loss has occurred.
+  shot:
+    kind: country
+    iso: IND
+  basis: Low-birthweight babies are newborns weighing less than 2,500 grams, with the measurement taken within the
+    first hour of life, before significant postnatal weight loss has occurred.
+- text: India has 3.3 times the underweight newborns the USA has, where 8.3% of babies are underweight.
+  shot:
+    kind: group
+    isos:
+    - IND
+    - USA
+- text: 'Bangladesh: 23%, Philippines: 21.1%, and Liberia: 19.9% are also high.'
+  shot:
+    kind: rank
+    isos:
+    - BGD
+    - PHL
+    - LBR
+- text: Japan is a surprise for a wealthy nation at 11.3%.
+  shot:
+    kind: country
+    iso: JPN
+- text: At the other end, Sweden is just 4.1%.
+  shot:
+    kind: country
+    iso: SWE
+- text: How common are underweight births where you live?
+  shot:
+    kind: card
+    lines:
+    - Healthy starts?
+    - Low-birthweight babies (%)
