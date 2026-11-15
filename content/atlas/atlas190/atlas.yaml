@@ -1,0 +1,79 @@
+id: atlas190
+title: The Top Places for Middle Class Income
+format: rank_ladder
+hook_text: MIDDLE CLASS WEALTH
+description: A rank ladder showing how the income share of the middle 20 percent of the population varies from Colombia
+  to Slovakia.
+hashtags:
+- '#economy'
+- '#economics'
+- '#geography'
+tags:
+- wealth
+- income share held by middle quintile
+- countries ranked by income share held by middle quintile
+- Slovak Republic
+- South Africa
+- world map
+- geography
+- atlas in numbers
+sources:
+- https://data.worldbank.org/indicator/SI.DST.03RD.20
+dataset:
+  kind: worldbank
+  indicator: SI.DST.03RD.20
+  label: Income share held by middle quintile
+  unit: '%'
+  source: World Bank
+  min_year: 2019
+scale:
+  edges:
+  - 14.0
+  - 16.0
+  - 17.5
+  labels:
+  - Below 14.0%
+  - 14.0% to 16.0%
+  - 16.0% to 17.5%
+  - Above 17.5%
+value_format: '{v:.1f}%'
+beats:
+- text: Slovakia's middle class earns 19.3 percent of national income. Colombia has 11.5.
+  shot:
+    callouts:
+    - SVK
+    - COL
+- text: Colombia has a lower share. A small slice for the middle of the population.
+  shot:
+    kind: country
+    iso: COL
+- text: Zambia and Zimbabwe are also near the bottom. Zambia has 11.9 percent. Zimbabwe, 12.
+  shot:
+    kind: group
+    isos:
+    - ZMB
+    - ZWE
+- text: This is the share that accrues to the middle quintile of the population.
+  shot:
+    callouts:
+    - SVK
+    - COL
+  basis: Percentage share of income or consumption is the share that accrues to subgroups of population indicated
+    by deciles or quintiles.
+- text: Moving up, the USA has 15.1 percent. Indonesia has 15.5. Nigeria, 16.4.
+  shot:
+    kind: rank
+    isos:
+    - USA
+    - IDN
+    - NGA
+- text: Slovakia is the world's highest. With 19.3 percent, it has 1.7 times Colombia's share.
+  shot:
+    kind: country
+    iso: SVK
+- text: How large is the middle class share where you live?
+  shot:
+    kind: card
+    lines:
+    - Middle class share?
+    - Income Share of Middle Quintile

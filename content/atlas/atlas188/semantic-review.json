@@ -1,0 +1,158 @@
+{
+  "errors": [],
+  "claims": [
+    {
+      "surface": "title",
+      "text": "Eswatini vs USA: Dependency on Trade Taxes",
+      "isos": [
+        "SWZ",
+        "USA"
+      ],
+      "support": "SWZ value 35.49%, USA value 1.60%"
+    },
+    {
+      "surface": "hook",
+      "text": "TRADE TAX GAP",
+      "isos": [],
+      "support": "Global comparison of taxes on international trade (% of revenue)"
+    },
+    {
+      "surface": "description",
+      "text": "A global comparison showing how heavily different nations rely on international trade taxes for public revenue.",
+      "isos": [],
+      "support": "Indicator measures taxes on international trade as a percentage of revenue across mapped countries and territories"
+    },
+    {
+      "surface": "beat_0",
+      "text": "Eswatini gets 35.5% of government revenue from trade taxes. The USA gets 1.6%.",
+      "isos": [
+        "SWZ",
+        "USA"
+      ],
+      "support": "SWZ display 35.5%, USA display 1.6%"
+    },
+    {
+      "surface": "beat_1",
+      "text": "Eswatini is the world's highest, relying on border customs for over a third of its public funds.",
+      "isos": [
+        "SWZ"
+      ],
+      "support": "SWZ rank 1, value 35.49% (greater than 1/3)"
+    },
+    {
+      "surface": "beat_2",
+      "text": "The USA relies far less on border customs, taking in just 1.6% of its revenue there.",
+      "isos": [
+        "USA"
+      ],
+      "support": "USA display 1.6%"
+    },
+    {
+      "surface": "beat_3",
+      "text": "Side by side, Eswatini depends on trade taxes 22 times as much as the USA.",
+      "isos": [
+        "SWZ",
+        "USA"
+      ],
+      "support": "35.49 / 1.60 is approximately 22.18"
+    },
+    {
+      "surface": "beat_4",
+      "text": "Across the globe, the median country collects 4.4% of total revenue from trade taxes.",
+      "isos": [],
+      "support": "Median value of the 118 universe entries is around 4.4% (e.g., Rwanda 4.40%, Uzbekistan 4.40%)"
+    },
+    {
+      "surface": "beat_5",
+      "text": "Bosnia is the world's lowest, drawing just 0.00001% of its revenue from border taxes.",
+      "isos": [
+        "BIH"
+      ],
+      "support": "BIH rank 118, display 0.00001%"
+    },
+    {
+      "surface": "beat_6",
+      "text": "How much does your country depend on international trade taxes?",
+      "isos": [],
+      "support": "Identity framing question about the indicator"
+    },
+    {
+      "surface": "card_6",
+      "text": "BORDER TAX DEPENDENCY, Trade Taxes (% of Total Revenue), World Bank",
+      "isos": [],
+      "support": "Indicator: GC.TAX.INTT.RV.ZS, source World Bank / IMF"
+    }
+  ],
+  "surface_checks": {
+    "title": {
+      "supported": true,
+      "reason": "Compares Eswatini and USA which are present in the dataset with matching values.",
+      "isos": [
+        "SWZ",
+        "USA"
+      ]
+    },
+    "hook": {
+      "supported": true,
+      "reason": "Directly reflects the subject matter of international trade tax differences.",
+      "isos": []
+    },
+    "description": {
+      "supported": true,
+      "reason": "Accurately describes the indicator measuring taxes on international trade as a percentage of revenue.",
+      "isos": []
+    },
+    "beat_0": {
+      "supported": true,
+      "reason": "Eswatini is 35.5% and USA is 1.6% matching display values.",
+      "isos": [
+        "SWZ",
+        "USA"
+      ]
+    },
+    "beat_1": {
+      "supported": true,
+      "reason": "Eswatini is rank 1 (highest) with 35.5%, which is over a third.",
+      "isos": [
+        "SWZ"
+      ]
+    },
+    "beat_2": {
+      "supported": true,
+      "reason": "USA display value is 1.6%.",
+      "isos": [
+        "USA"
+      ]
+    },
+    "beat_3": {
+      "supported": true,
+      "reason": "35.49 / 1.60 = ~22.18, supporting 22 times.",
+      "isos": [
+        "SWZ",
+        "USA"
+      ]
+    },
+    "beat_4": {
+      "supported": true,
+      "reason": "The median of the dataset aligns with ~4.4%.",
+      "isos": []
+    },
+    "beat_5": {
+      "supported": true,
+      "reason": "Bosnia and Herzegovina is rank 118 with display 0.00001%.",
+      "isos": [
+        "BIH"
+      ]
+    },
+    "beat_6": {
+      "supported": true,
+      "reason": "Stylistic question about the indicator.",
+      "isos": []
+    },
+    "card_6": {
+      "supported": true,
+      "reason": "Matches indicator title and source information.",
+      "isos": []
+    }
+  }
+}

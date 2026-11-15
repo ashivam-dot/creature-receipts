@@ -1,0 +1,1502 @@
+{
+  "version": 1,
+  "evidence": {
+    "version": 1,
+    "indicator": "SI.DST.03RD.20",
+    "definition": "Percentage share of income or consumption is the share that accrues to subgroups of population indicated by deciles or quintiles. Percentage shares by quintile may not sum to 100 because of rounding.",
+    "source": "https://data.worldbank.org/indicator/SI.DST.03RD.20",
+    "source_response_sha256": "5e62761f0c04fbeb5c360c45dcccac69a065ab4e8b9b6b243e3b362efb864edf",
+    "source_organization": "World Bank, Poverty and Inequality Platform. Data are based on primary household survey data obtained from government statistical agencies and World Bank country departments. Data for high-income economies are mostly from the Luxembourg Income Study database. For more information and methodology, please see http://pip.worldbank.org., World Bank (WB), uri: http://pip.worldbank.org, note: Data are based on primary household survey data obtained from government statistical agencies and World Bank country departments. Data for high-income economies are mostly from the Luxembourg Income Study database.",
+    "year_label": "latest available 2019–2025",
+    "universe": "mapped countries and territories with data",
+    "count": 124,
+    "threshold": null,
+    "at_or_above": null,
+    "entities": {
+      "ALB": {
+        "name": "Albania",
+        "value": 17.3,
+        "display": "17.3%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 26
+      },
+      "ARG": {
+        "name": "Argentina",
+        "value": 14.8,
+        "display": "14.8%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 103
+      },
+      "ARM": {
+        "name": "Armenia",
+        "value": 17.5,
+        "display": "17.5%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 22
+      },
+      "AUS": {
+        "name": "Australia",
+        "value": 16.5,
+        "display": "16.5%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 54
+      },
+      "AUT": {
+        "name": "Austria",
+        "value": 17.5,
+        "display": "17.5%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 22
+      },
+      "BGD": {
+        "name": "Bangladesh",
+        "value": 16.5,
+        "display": "16.5%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 54
+      },
+      "BLR": {
+        "name": "Belarus",
+        "value": 18.0,
+        "display": "18%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 5
+      },
+      "BEL": {
+        "name": "Belgium",
+        "value": 18.0,
+        "display": "18%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 5
+      },
+      "BEN": {
+        "name": "Benin",
+        "value": 16.1,
+        "display": "16.1%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 69
+      },
+      "BTN": {
+        "name": "Bhutan",
+        "value": 17.6,
+        "display": "17.6%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 17
+      },
+      "BOL": {
+        "name": "Bolivia",
+        "value": 15.2,
+        "display": "15.2%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 94
+      },
+      "BIH": {
+        "name": "Bosnia and Herzegovina",
+        "value": 17.2,
+        "display": "17.2%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 28
+      },
+      "BRA": {
+        "name": "Brazil",
+        "value": 12.8,
+        "display": "12.8%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 119
+      },
+      "BGR": {
+        "name": "Bulgaria",
+        "value": 15.4,
+        "display": "15.4%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 84
+      },
+      "BFA": {
+        "name": "Burkina Faso",
+        "value": 15.1,
+        "display": "15.1%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 98
+      },
+      "BDI": {
+        "name": "Burundi",
+        "value": 15.3,
+        "display": "15.3%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 90
+      },
+      "CMR": {
+        "name": "Cameroon",
+        "value": 14.7,
+        "display": "14.7%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 104
+      },
+      "CAN": {
+        "name": "Canada",
+        "value": 17.2,
+        "display": "17.2%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 28
+      },
+      "CAF": {
+        "name": "Central African Republic",
+        "value": 14.1,
+        "display": "14.1%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 111
+      },
+      "TCD": {
+        "name": "Chad",
+        "value": 15.9,
+        "display": "15.9%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 75
+      },
+      "CHL": {
+        "name": "Chile",
+        "value": 14.0,
+        "display": "14%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 113
+      },
+      "CHN": {
+        "name": "China",
+        "value": 15.7,
+        "display": "15.7%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 78
+      },
+      "COL": {
+        "name": "Colombia",
+        "value": 11.5,
+        "display": "11.5%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 123
+      },
+      "COM": {
+        "name": "Comoros",
+        "value": 16.7,
+        "display": "16.7%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 51
+      },
+      "COD": {
+        "name": "Congo, Dem. Rep.",
+        "value": 13.7,
+        "display": "13.7%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 116
+      },
+      "CRI": {
+        "name": "Costa Rica",
+        "value": 13.8,
+        "display": "13.8%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 115
+      },
+      "CIV": {
+        "name": "Cote d'Ivoire",
+        "value": 15.7,
+        "display": "15.7%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 78
+      },
+      "HRV": {
+        "name": "Croatia",
+        "value": 17.8,
+        "display": "17.8%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 14
+      },
+      "CYP": {
+        "name": "Cyprus",
+        "value": 16.5,
+        "display": "16.5%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 54
+      },
+      "CZE": {
+        "name": "Czechia",
+        "value": 18.1,
+        "display": "18.1%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 4
+      },
+      "DNK": {
+        "name": "Denmark",
+        "value": 16.8,
+        "display": "16.8%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 46
+      },
+      "DOM": {
+        "name": "Dominican Republic",
+        "value": 15.4,
+        "display": "15.4%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 84
+      },
+      "ECU": {
+        "name": "Ecuador",
+        "value": 13.7,
+        "display": "13.7%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 116
+      },
+      "EGY": {
+        "name": "Egypt, Arab Rep.",
+        "value": 16.9,
+        "display": "16.9%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 42
+      },
+      "SLV": {
+        "name": "El Salvador",
+        "value": 15.4,
+        "display": "15.4%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 84
+      },
+      "GNQ": {
+        "name": "Equatorial Guinea",
+        "value": 15.2,
+        "display": "15.2%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 94
+      },
+      "EST": {
+        "name": "Estonia",
+        "value": 16.7,
+        "display": "16.7%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 51
+      },
+      "ETH": {
+        "name": "Ethiopia",
+        "value": 16.8,
+        "display": "16.8%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 46
+      },
+      "FJI": {
+        "name": "Fiji",
+        "value": 16.8,
+        "display": "16.8%",
+        "year": 2019,
+        "unit": "%",
+        "rank": 46
+      },
+      "FIN": {
+        "name": "Finland",
+        "value": 17.6,
+        "display": "17.6%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 17
+      },
+      "FRA": {
+        "name": "France",
+        "value": 17.2,
+        "display": "17.2%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 28
+      },
+      "GMB": {
+        "name": "Gambia, The",
+        "value": 15.2,
+        "display": "15.2%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 94
+      },
+      "GEO": {
+        "name": "Georgia",
+        "value": 16.5,
+        "display": "16.5%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 54
+      },
+      "DEU": {
+        "name": "Germany",
+        "value": 17.0,
+        "display": "17%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 37
+      },
+      "GRC": {
+        "name": "Greece",
+        "value": 16.9,
+        "display": "16.9%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 42
+      },
+      "GTM": {
+        "name": "Guatemala",
+        "value": 14.0,
+        "display": "14%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 113
+      },
+      "GNB": {
+        "name": "Guinea-Bissau",
+        "value": 16.2,
+        "display": "16.2%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 65
+      },
+      "HND": {
+        "name": "Honduras",
+        "value": 14.5,
+        "display": "14.5%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 107
+      },
+      "ISL": {
+        "name": "Iceland",
+        "value": 17.9,
+        "display": "17.9%",
+        "year": 2019,
+        "unit": "%",
+        "rank": 10
+      },
+      "IND": {
+        "name": "India",
+        "value": 17.9,
+        "display": "17.9%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 10
+      },
+      "IDN": {
+        "name": "Indonesia",
+        "value": 15.5,
+        "display": "15.5%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 82
+      },
+      "IRN": {
+        "name": "Iran, Islamic Rep.",
+        "value": 16.0,
+        "display": "16%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 72
+      },
+      "IRQ": {
+        "name": "Iraq",
+        "value": 16.9,
+        "display": "16.9%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 42
+      },
+      "IRL": {
+        "name": "Ireland",
+        "value": 17.1,
+        "display": "17.1%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 34
+      },
+      "ISR": {
+        "name": "Israel",
+        "value": 16.6,
+        "display": "16.6%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 53
+      },
+      "ITA": {
+        "name": "Italy",
+        "value": 17.0,
+        "display": "17%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 37
+      },
+      "JAM": {
+        "name": "Jamaica",
+        "value": 15.3,
+        "display": "15.3%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 90
+      },
+      "JPN": {
+        "name": "Japan",
+        "value": 17.6,
+        "display": "17.6%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 17
+      },
+      "KAZ": {
+        "name": "Kazakhstan",
+        "value": 16.3,
+        "display": "16.3%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 64
+      },
+      "KEN": {
+        "name": "Kenya",
+        "value": 14.6,
+        "display": "14.6%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 105
+      },
+      "KIR": {
+        "name": "Kiribati",
+        "value": 17.9,
+        "display": "17.9%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 10
+      },
+      "KOR": {
+        "name": "Korea, Rep.",
+        "value": 16.9,
+        "display": "16.9%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 42
+      },
+      "KGZ": {
+        "name": "Kyrgyz Republic",
+        "value": 17.2,
+        "display": "17.2%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 28
+      },
+      "LAO": {
+        "name": "Lao PDR",
+        "value": 15.7,
+        "display": "15.7%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 78
+      },
+      "LVA": {
+        "name": "Latvia",
+        "value": 16.5,
+        "display": "16.5%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 54
+      },
+      "LBN": {
+        "name": "Lebanon",
+        "value": 16.2,
+        "display": "16.2%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 65
+      },
+      "LTU": {
+        "name": "Lithuania",
+        "value": 16.2,
+        "display": "16.2%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 65
+      },
+      "LUX": {
+        "name": "Luxembourg",
+        "value": 17.0,
+        "display": "17%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 37
+      },
+      "MDG": {
+        "name": "Madagascar",
+        "value": 15.5,
+        "display": "15.5%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 82
+      },
+      "MWI": {
+        "name": "Malawi",
+        "value": 14.9,
+        "display": "14.9%",
+        "year": 2019,
+        "unit": "%",
+        "rank": 102
+      },
+      "MYS": {
+        "name": "Malaysia",
+        "value": 15.0,
+        "display": "15%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 100
+      },
+      "MLI": {
+        "name": "Mali",
+        "value": 15.4,
+        "display": "15.4%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 84
+      },
+      "MLT": {
+        "name": "Malta",
+        "value": 17.1,
+        "display": "17.1%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 34
+      },
+      "MHL": {
+        "name": "Marshall Islands",
+        "value": 15.8,
+        "display": "15.8%",
+        "year": 2019,
+        "unit": "%",
+        "rank": 77
+      },
+      "MRT": {
+        "name": "Mauritania",
+        "value": 16.8,
+        "display": "16.8%",
+        "year": 2019,
+        "unit": "%",
+        "rank": 46
+      },
+      "MEX": {
+        "name": "Mexico",
+        "value": 14.3,
+        "display": "14.3%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 109
+      },
+      "MDA": {
+        "name": "Moldova",
+        "value": 17.4,
+        "display": "17.4%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 24
+      },
+      "MNG": {
+        "name": "Mongolia",
+        "value": 16.8,
+        "display": "16.8%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 46
+      },
+      "MNE": {
+        "name": "Montenegro",
+        "value": 17.2,
+        "display": "17.2%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 28
+      },
+      "MOZ": {
+        "name": "Mozambique",
+        "value": 12.5,
+        "display": "12.5%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 120
+      },
+      "NPL": {
+        "name": "Nepal",
+        "value": 17.0,
+        "display": "17%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 37
+      },
+      "NLD": {
+        "name": "Netherlands",
+        "value": 18.3,
+        "display": "18.3%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 3
+      },
+      "NER": {
+        "name": "Niger",
+        "value": 15.9,
+        "display": "15.9%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 75
+      },
+      "NGA": {
+        "name": "Nigeria",
+        "value": 16.4,
+        "display": "16.4%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 62
+      },
+      "MKD": {
+        "name": "North Macedonia",
+        "value": 18.0,
+        "display": "18%",
+        "year": 2019,
+        "unit": "%",
+        "rank": 5
+      },
+      "NOR": {
+        "name": "Norway",
+        "value": 18.0,
+        "display": "18%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 5
+      },
+      "PAK": {
+        "name": "Pakistan",
+        "value": 16.0,
+        "display": "16%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 72
+      },
+      "PAN": {
+        "name": "Panama",
+        "value": 13.0,
+        "display": "13%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 118
+      },
+      "PRY": {
+        "name": "Paraguay",
+        "value": 14.1,
+        "display": "14.1%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 111
+      },
+      "PER": {
+        "name": "Peru",
+        "value": 15.4,
+        "display": "15.4%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 84
+      },
+      "PHL": {
+        "name": "Philippines",
+        "value": 14.6,
+        "display": "14.6%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 105
+      },
+      "POL": {
+        "name": "Poland",
+        "value": 17.7,
+        "display": "17.7%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 16
+      },
+      "PRT": {
+        "name": "Portugal",
+        "value": 16.5,
+        "display": "16.5%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 54
+      },
+      "ROU": {
+        "name": "Romania",
+        "value": 18.4,
+        "display": "18.4%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 2
+      },
+      "RUS": {
+        "name": "Russian Federation",
+        "value": 16.5,
+        "display": "16.5%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 54
+      },
+      "RWA": {
+        "name": "Rwanda",
+        "value": 14.4,
+        "display": "14.4%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 108
+      },
+      "SEN": {
+        "name": "Senegal",
+        "value": 15.6,
+        "display": "15.6%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 81
+      },
+      "SRB": {
+        "name": "Serbia",
+        "value": 17.4,
+        "display": "17.4%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 24
+      },
+      "SVK": {
+        "name": "Slovak Republic",
+        "value": 19.3,
+        "display": "19.3%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 1
+      },
+      "SVN": {
+        "name": "Slovenia",
+        "value": 18.0,
+        "display": "18%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 5
+      },
+      "ZAF": {
+        "name": "South Africa",
+        "value": 10.8,
+        "display": "10.8%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 124
+      },
+      "ESP": {
+        "name": "Spain",
+        "value": 17.3,
+        "display": "17.3%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 26
+      },
+      "LKA": {
+        "name": "Sri Lanka",
+        "value": 15.0,
+        "display": "15%",
+        "year": 2019,
+        "unit": "%",
+        "rank": 100
+      },
+      "SUR": {
+        "name": "Suriname",
+        "value": 15.3,
+        "display": "15.3%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 90
+      },
+      "SWE": {
+        "name": "Sweden",
+        "value": 17.8,
+        "display": "17.8%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 14
+      },
+      "CHE": {
+        "name": "Switzerland",
+        "value": 16.5,
+        "display": "16.5%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 54
+      },
+      "SYR": {
+        "name": "Syrian Arab Republic",
+        "value": 17.9,
+        "display": "17.9%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 10
+      },
+      "TJK": {
+        "name": "Tajikistan",
+        "value": 16.0,
+        "display": "16%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 72
+      },
+      "THA": {
+        "name": "Thailand",
+        "value": 16.2,
+        "display": "16.2%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 65
+      },
+      "TGO": {
+        "name": "Togo",
+        "value": 15.4,
+        "display": "15.4%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 84
+      },
+      "TON": {
+        "name": "Tonga",
+        "value": 17.6,
+        "display": "17.6%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 17
+      },
+      "TUN": {
+        "name": "Tunisia",
+        "value": 16.4,
+        "display": "16.4%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 62
+      },
+      "TUR": {
+        "name": "Turkiye",
+        "value": 14.2,
+        "display": "14.2%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 110
+      },
+      "UGA": {
+        "name": "Uganda",
+        "value": 15.2,
+        "display": "15.2%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 94
+      },
+      "UKR": {
+        "name": "Ukraine",
+        "value": 17.6,
+        "display": "17.6%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 17
+      },
+      "GBR": {
+        "name": "United Kingdom",
+        "value": 17.0,
+        "display": "17%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 37
+      },
+      "USA": {
+        "name": "United States",
+        "value": 15.1,
+        "display": "15.1%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 98
+      },
+      "URY": {
+        "name": "Uruguay",
+        "value": 15.3,
+        "display": "15.3%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 90
+      },
+      "UZB": {
+        "name": "Uzbekistan",
+        "value": 17.1,
+        "display": "17.1%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 34
+      },
+      "VUT": {
+        "name": "Vanuatu",
+        "value": 17.2,
+        "display": "17.2%",
+        "year": 2019,
+        "unit": "%",
+        "rank": 28
+      },
+      "VNM": {
+        "name": "Viet Nam",
+        "value": 16.1,
+        "display": "16.1%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 69
+      },
+      "PSE": {
+        "name": "West Bank and Gaza",
+        "value": 16.1,
+        "display": "16.1%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 69
+      },
+      "ZMB": {
+        "name": "Zambia",
+        "value": 11.9,
+        "display": "11.9%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 122
+      },
+      "ZWE": {
+        "name": "Zimbabwe",
+        "value": 12.0,
+        "display": "12%",
+        "year": 2019,
+        "unit": "%",
+        "rank": 121
+      }
+    }
+  },
+  "review": {
+    "errors": [],
+    "claims": [
+      {
+        "surface": "title",
+        "text": "The Top Places for Middle Class Income",
+        "isos": [],
+        "support": "Slovak Republic rank 1 with 19.3%",
+        "evidence": {}
+      },
+      {
+        "surface": "hook",
+        "text": "MIDDLE CLASS WEALTH",
+        "isos": [],
+        "support": "Indicator measures percentage share of income or consumption for subgroups",
+        "evidence": {}
+      },
+      {
+        "surface": "description",
+        "text": "A rank ladder showing how the income share of the middle 20 percent of the population varies from Colombia to Slovakia.",
+        "isos": [
+          "COL",
+          "SVK"
+        ],
+        "support": "Colombia value is 11.5% (rank 123), Slovak Republic value is 19.3% (rank 1)",
+        "evidence": {
+          "COL": {
+            "name": "Colombia",
+            "value": 11.5,
+            "display": "11.5%",
+            "year": 2024,
+            "unit": "%",
+            "rank": 123
+          },
+          "SVK": {
+            "name": "Slovak Republic",
+            "value": 19.3,
+            "display": "19.3%",
+            "year": 2023,
+            "unit": "%",
+            "rank": 1
+          }
+        }
+      },
+      {
+        "surface": "beat_0",
+        "text": "Slovakia's middle class earns 19.3 percent of national income. Colombia has 11.5.",
+        "isos": [
+          "SVK",
+          "COL"
+        ],
+        "support": "Slovak Republic value: 19.3%, Colombia value: 11.5%",
+        "evidence": {
+          "SVK": {
+            "name": "Slovak Republic",
+            "value": 19.3,
+            "display": "19.3%",
+            "year": 2023,
+            "unit": "%",
+            "rank": 1
+          },
+          "COL": {
+            "name": "Colombia",
+            "value": 11.5,
+            "display": "11.5%",
+            "year": 2024,
+            "unit": "%",
+            "rank": 123
+          }
+        }
+      },
+      {
+        "surface": "beat_1",
+        "text": "Colombia has a lower share. A small slice for the middle of the population.",
+        "isos": [
+          "COL"
+        ],
+        "support": "Colombia value is 11.5%, which is among the lowest in the universe",
+        "evidence": {
+          "COL": {
+            "name": "Colombia",
+            "value": 11.5,
+            "display": "11.5%",
+            "year": 2024,
+            "unit": "%",
+            "rank": 123
+          }
+        }
+      },
+      {
+        "surface": "beat_2",
+        "text": "Zambia and Zimbabwe are also near the bottom. Zambia has 11.9 percent. Zimbabwe, 12.",
+        "isos": [
+          "ZMB",
+          "ZWE"
+        ],
+        "support": "Zambia value: 11.9%, Zimbabwe value: 12.0%",
+        "evidence": {
+          "ZMB": {
+            "name": "Zambia",
+            "value": 11.9,
+            "display": "11.9%",
+            "year": 2022,
+            "unit": "%",
+            "rank": 122
+          },
+          "ZWE": {
+            "name": "Zimbabwe",
+            "value": 12.0,
+            "display": "12%",
+            "year": 2019,
+            "unit": "%",
+            "rank": 121
+          }
+        }
+      },
+      {
+        "surface": "beat_3",
+        "text": "This is the share that accrues to the middle quintile of the population.",
+        "isos": [],
+        "support": "Definition: Percentage share of income or consumption is the share that accrues to subgroups of population indicated by deciles or quintiles.",
+        "evidence": {}
+      },
+      {
+        "surface": "beat_4",
+        "text": "Moving up, the USA has 15.1 percent. Indonesia has 15.5. Nigeria, 16.4.",
+        "isos": [
+          "USA",
+          "IDN",
+          "NGA"
+        ],
+        "support": "United States value: 15.1%, Indonesia value: 15.5%, Nigeria value: 16.4%",
+        "evidence": {
+          "USA": {
+            "name": "United States",
+            "value": 15.1,
+            "display": "15.1%",
+            "year": 2024,
+            "unit": "%",
+            "rank": 98
+          },
+          "IDN": {
+            "name": "Indonesia",
+            "value": 15.5,
+            "display": "15.5%",
+            "year": 2025,
+            "unit": "%",
+            "rank": 82
+          },
+          "NGA": {
+            "name": "Nigeria",
+            "value": 16.4,
+            "display": "16.4%",
+            "year": 2022,
+            "unit": "%",
+            "rank": 62
+          }
+        }
+      },
+      {
+        "surface": "beat_5",
+        "text": "Slovakia is the world's highest. With 19.3 percent, it has 1.7 times Colombia's share.",
+        "isos": [
+          "SVK",
+          "COL"
+        ],
+        "support": "Slovak Republic is rank 1 with 19.3%, and 19.3 / 11.5 is approximately 1.687 (1.7 times)",
+        "evidence": {
+          "SVK": {
+            "name": "Slovak Republic",
+            "value": 19.3,
+            "display": "19.3%",
+            "year": 2023,
+            "unit": "%",
+            "rank": 1
+          },
+          "COL": {
+            "name": "Colombia",
+            "value": 11.5,
+            "display": "11.5%",
+            "year": 2024,
+            "unit": "%",
+            "rank": 123
+          }
+        }
+      },
+      {
+        "surface": "beat_6",
+        "text": "How large is the middle class share where you live?",
+        "isos": [],
+        "support": "General audience question",
+        "evidence": {}
+      },
+      {
+        "surface": "card_6",
+        "text": "Income Share of Middle Quintile",
+        "isos": [],
+        "support": "Indicator SI.DST.03RD.20 definition",
+        "evidence": {}
+      },
+      {
+        "surface": "title",
+        "text": "The Top Places for Middle Class Income",
+        "isos": [],
+        "support": "Slovakia is ranked number 1 in the dataset, supporting a top places framing.",
+        "method": "complete-surface-check",
+        "evidence": {}
+      },
+      {
+        "surface": "hook",
+        "text": "MIDDLE CLASS WEALTH",
+        "isos": [],
+        "support": "Refers to the income share of the middle quintile.",
+        "method": "complete-surface-check",
+        "evidence": {}
+      },
+      {
+        "surface": "description",
+        "text": "A rank ladder showing how the income share of the middle 20 percent of the population varies from Colombia to Slovakia.",
+        "isos": [
+          "COL",
+          "SVK"
+        ],
+        "support": "Colombia value is 11.5% and Slovakia value is 19.3%, accurately bounded in the text.",
+        "method": "complete-surface-check",
+        "evidence": {
+          "COL": {
+            "name": "Colombia",
+            "value": 11.5,
+            "display": "11.5%",
+            "year": 2024,
+            "unit": "%",
+            "rank": 123
+          },
+          "SVK": {
+            "name": "Slovak Republic",
+            "value": 19.3,
+            "display": "19.3%",
+            "year": 2023,
+            "unit": "%",
+            "rank": 1
+          }
+        }
+      },
+      {
+        "surface": "beat_0",
+        "text": "Slovakia's middle class earns 19.3 percent of national income. Colombia has 11.5.",
+        "isos": [
+          "SVK",
+          "COL"
+        ],
+        "support": "Slovak Republic value is 19.3% and Colombia value is 11.5%.",
+        "method": "complete-surface-check",
+        "evidence": {
+          "SVK": {
+            "name": "Slovak Republic",
+            "value": 19.3,
+            "display": "19.3%",
+            "year": 2023,
+            "unit": "%",
+            "rank": 1
+          },
+          "COL": {
+            "name": "Colombia",
+            "value": 11.5,
+            "display": "11.5%",
+            "year": 2024,
+            "unit": "%",
+            "rank": 123
+          }
+        }
+      },
+      {
+        "surface": "beat_1",
+        "text": "Colombia has a lower share. A small slice for the middle of the population.",
+        "isos": [
+          "COL"
+        ],
+        "support": "Colombia value of 11.5% is near the bottom of the 124 countries.",
+        "method": "complete-surface-check",
+        "evidence": {
+          "COL": {
+            "name": "Colombia",
+            "value": 11.5,
+            "display": "11.5%",
+            "year": 2024,
+            "unit": "%",
+            "rank": 123
+          }
+        }
+      },
+      {
+        "surface": "beat_2",
+        "text": "Zambia and Zimbabwe are also near the bottom. Zambia has 11.9 percent. Zimbabwe, 12.",
+        "isos": [
+          "ZMB",
+          "ZWE"
+        ],
+        "support": "Zambia value is 11.9% and Zimbabwe value is 12.0%, both near the bottom.",
+        "method": "complete-surface-check",
+        "evidence": {
+          "ZMB": {
+            "name": "Zambia",
+            "value": 11.9,
+            "display": "11.9%",
+            "year": 2022,
+            "unit": "%",
+            "rank": 122
+          },
+          "ZWE": {
+            "name": "Zimbabwe",
+            "value": 12.0,
+            "display": "12%",
+            "year": 2019,
+            "unit": "%",
+            "rank": 121
+          }
+        }
+      },
+      {
+        "surface": "beat_3",
+        "text": "This is the share that accrues to the middle quintile of the population.",
+        "isos": [],
+        "support": "Directly matches the provided definition for the indicator.",
+        "method": "complete-surface-check",
+        "evidence": {}
+      },
+      {
+        "surface": "beat_4",
+        "text": "Moving up, the USA has 15.1 percent. Indonesia has 15.5. Nigeria, 16.4.",
+        "isos": [
+          "USA",
+          "IDN",
+          "NGA"
+        ],
+        "support": "United States is 15.1%, Indonesia is 15.5%, and Nigeria is 16.4%.",
+        "method": "complete-surface-check",
+        "evidence": {
+          "USA": {
+            "name": "United States",
+            "value": 15.1,
+            "display": "15.1%",
+            "year": 2024,
+            "unit": "%",
+            "rank": 98
+          },
+          "IDN": {
+            "name": "Indonesia",
+            "value": 15.5,
+            "display": "15.5%",
+            "year": 2025,
+            "unit": "%",
+            "rank": 82
+          },
+          "NGA": {
+            "name": "Nigeria",
+            "value": 16.4,
+            "display": "16.4%",
+            "year": 2022,
+            "unit": "%",
+            "rank": 62
+          }
+        }
+      },
+      {
+        "surface": "beat_5",
+        "text": "Slovakia is the world's highest. With 19.3 percent, it has 1.7 times Colombia's share.",
+        "isos": [
+          "SVK",
+          "COL"
+        ],
+        "support": "Slovak Republic is ranked 1st at 19.3%, and 19.3 / 11.5 rounds to 1.7.",
+        "method": "complete-surface-check",
+        "evidence": {
+          "SVK": {
+            "name": "Slovak Republic",
+            "value": 19.3,
+            "display": "19.3%",
+            "year": 2023,
+            "unit": "%",
+            "rank": 1
+          },
+          "COL": {
+            "name": "Colombia",
+            "value": 11.5,
+            "display": "11.5%",
+            "year": 2024,
+            "unit": "%",
+            "rank": 123
+          }
+        }
+      },
+      {
+        "surface": "beat_6",
+        "text": "How large is the middle class share where you live?",
+        "isos": [],
+        "support": "Standard interactive question.",
+        "method": "complete-surface-check",
+        "evidence": {}
+      },
+      {
+        "surface": "card_6",
+        "text": [
+          "Middle class share?",
+          "Income Share of Middle Quintile"
+        ],
+        "isos": [],
+        "support": "Matches indicator definition name.",
+        "method": "complete-surface-check",
+        "evidence": {}
+      }
+    ],
+    "surface_checks": {
+      "title": {
+        "supported": true,
+        "reason": "Slovakia is ranked number 1 in the dataset, supporting a top places framing.",
+        "isos": []
+      },
+      "hook": {
+        "supported": true,
+        "reason": "Refers to the income share of the middle quintile.",
+        "isos": []
+      },
+      "description": {
+        "supported": true,
+        "reason": "Colombia value is 11.5% and Slovakia value is 19.3%, accurately bounded in the text.",
+        "isos": [
+          "COL",
+          "SVK"
+        ]
+      },
+      "beat_0": {
+        "supported": true,
+        "reason": "Slovak Republic value is 19.3% and Colombia value is 11.5%.",
+        "isos": [
+          "SVK",
+          "COL"
+        ]
+      },
+      "beat_1": {
+        "supported": true,
+        "reason": "Colombia value of 11.5% is near the bottom of the 124 countries.",
+        "isos": [
+          "COL"
+        ]
+      },
+      "beat_2": {
+        "supported": true,
+        "reason": "Zambia value is 11.9% and Zimbabwe value is 12.0%, both near the bottom.",
+        "isos": [
+          "ZMB",
+          "ZWE"
+        ]
+      },
+      "beat_3": {
+        "supported": true,
+        "reason": "Directly matches the provided definition for the indicator.",
+        "isos": []
+      },
+      "beat_4": {
+        "supported": true,
+        "reason": "United States is 15.1%, Indonesia is 15.5%, and Nigeria is 16.4%.",
+        "isos": [
+          "USA",
+          "IDN",
+          "NGA"
+        ]
+      },
+      "beat_5": {
+        "supported": true,
+        "reason": "Slovak Republic is ranked 1st at 19.3%, and 19.3 / 11.5 rounds to 1.7.",
+        "isos": [
+          "SVK",
+          "COL"
+        ]
+      },
+      "beat_6": {
+        "supported": true,
+        "reason": "Standard interactive question.",
+        "isos": []
+      },
+      "card_6": {
+        "supported": true,
+        "reason": "Matches indicator definition name.",
+        "isos": []
+      }
+    },
+    "warnings": []
+  },
+  "script_sha256": "08f7238bf93ba1c2c3666c27a54179125ec9829b6010f6c8e5e760ca5e9316a7",
+  "data_sha256": "b6616d172c14134a73b6c014272cb4498073723e7e0db3956d963c1ec16a2114",
+  "reviewer_model": "gemini-3.5-flash-lite"
+}

@@ -5705,7 +5705,7 @@
     "#employment"
    ],
    "source_url": "https://data.worldbank.org/indicator/SL.EMP.MPYR.FE.ZS",
-   "status": "ready:atlas185",
+   "status": "used:atlas185",
    "added_by": "refill"
   },
   {
@@ -6170,7 +6170,7 @@
    "id": "t170",
    "topic": "Dependency on International Trade Taxes",
    "angle": "While trade taxes are nearly zero in most of Europe, they account for over 30% of total government revenue in countries like Eswatini and Namibia.",
-   "format": "map_reveal",
+   "format": "versus",
    "dataset": {
     "kind": "worldbank",
     "indicator": "GC.TAX.INTT.RV.ZS",
@@ -6202,7 +6202,7 @@
     "#economy"
    ],
    "source_url": "https://data.worldbank.org/indicator/GC.TAX.INTT.RV.ZS",
-   "status": "open",
+   "status": "ready:atlas188",
    "added_by": "refill"
   },
   {
@@ -7120,7 +7120,7 @@
     "#economy"
    ],
    "source_url": "https://data.worldbank.org/indicator/NY.GDP.NGAS.RT.ZS",
-   "status": "ready:atlas184",
+   "status": "used:atlas184",
    "added_by": "refill"
   },
   {
@@ -7227,7 +7227,7 @@
     "#maps"
    ],
    "source_url": "https://data.worldbank.org/indicator/SH.STA.BRTW.ZS",
-   "status": "ready:atlas183",
+   "status": "used:atlas183",
    "added_by": "refill"
   },
   {
@@ -7271,7 +7271,7 @@
    "id": "t200",
    "topic": "Global Consumer Prices Since 2010",
    "angle": "Consumer prices in South Sudan have skyrocketed more than 400-fold since 2010, while Switzerland's prices have risen by only six percent.",
-   "format": "map_reveal",
+   "format": "odd_one_out",
    "dataset": {
     "kind": "worldbank",
     "indicator": "FP.CPI.TOTL",
@@ -7303,14 +7303,14 @@
     "#economy"
    ],
    "source_url": "https://data.worldbank.org/indicator/FP.CPI.TOTL",
-   "status": "open",
+   "status": "ready:atlas187",
    "added_by": "refill"
   },
   {
    "id": "t201",
    "topic": "Global Commercial Bank Deposit Interest Rates",
    "angle": "Bank deposit returns vary dramatically worldwide, ranging from under 0.1% in Switzerland and Micronesia to over 50% in Turkiye.",
-   "format": "rank_ladder",
+   "format": "map_reveal",
    "dataset": {
     "kind": "worldbank",
     "indicator": "FR.INR.DPST",
@@ -7340,14 +7340,14 @@
     "#maps"
    ],
    "source_url": "https://data.worldbank.org/indicator/FR.INR.DPST",
-   "status": "open",
+   "status": "failed:ValueError",
    "added_by": "refill"
   },
   {
    "id": "t202",
    "topic": "Income Share of Middle Class",
    "angle": "Slovakia's middle 20 percent earns nearly 19.3 percent of national income, almost double South Africa's 10.8 percent share.",
-   "format": "map_reveal",
+   "format": "rank_ladder",
    "dataset": {
     "kind": "worldbank",
     "indicator": "SI.DST.03RD.20",
@@ -7377,7 +7377,7 @@
     "#economics"
    ],
    "source_url": "https://data.worldbank.org/indicator/SI.DST.03RD.20",
-   "status": "open",
+   "status": "ready:atlas190",
    "added_by": "refill"
   },
   {
@@ -7445,7 +7445,7 @@
     "# #population me"
    ],
    "source_url": "https://data.worldbank.org/indicator/SP.RUR.TOTL.ZG",
-   "status": "ready:atlas186",
+   "status": "used:atlas186",
    "added_by": "refill"
   },
   {

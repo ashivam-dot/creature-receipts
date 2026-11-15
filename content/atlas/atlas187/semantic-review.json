@@ -1,0 +1,156 @@
+{
+  "errors": [],
+  "claims": [
+    {
+      "surface": "title",
+      "text": "Which Country Has the MOST Stable Prices?",
+      "isos": [],
+      "support": "Switzerland has the lowest consumer price index value of 105.67 (rank 181 out of 181)."
+    },
+    {
+      "surface": "description",
+      "text": "Comparing global consumer price changes since 2010, from extreme inflation in South Sudan to price stability in Switzerland.",
+      "isos": [
+        "SSD",
+        "CHE"
+      ],
+      "support": "South Sudan value 41,281.74 (rank 1), Switzerland value 105.67 (rank 181)."
+    },
+    {
+      "surface": "beat_0",
+      "text": "Prices exploded across most of the world since 2010. One rich country breaks this pattern.",
+      "isos": [
+        "CHE"
+      ],
+      "support": "Switzerland index is 105.67, the lowest in the universe."
+    },
+    {
+      "surface": "beat_1",
+      "text": "Consider the USA, Japan, and Switzerland.",
+      "isos": [
+        "USA",
+        "JPN",
+        "CHE"
+      ],
+      "support": "USA: 143.86, JPN: 118.04, CHE: 105.67."
+    },
+    {
+      "surface": "beat_2",
+      "text": "The USA rose to 144.",
+      "isos": [
+        "USA"
+      ],
+      "support": "USA value is 143.857336014607, displayed as 144."
+    },
+    {
+      "surface": "beat_3",
+      "text": "Japan stayed low at 118.",
+      "isos": [
+        "JPN"
+      ],
+      "support": "Japan value is 118.043592898576, displayed as 118."
+    },
+    {
+      "surface": "beat_4",
+      "text": "Switzerland is the world's lowest, sitting at just 106.",
+      "isos": [
+        "CHE"
+      ],
+      "support": "Switzerland value is 105.671996011192, displayed as 106, rank 181."
+    },
+    {
+      "surface": "beat_5",
+      "text": "At the opposite extreme, South Sudan is the world's highest at 41,281.",
+      "isos": [
+        "SSD"
+      ],
+      "support": "South Sudan value is 41280.7396930495, displayed as 41,281, rank 1."
+    },
+    {
+      "surface": "beat_6",
+      "text": "How much have consumer prices changed in your country?",
+      "isos": [],
+      "support": "Consumer price index indicator definition."
+    },
+    {
+      "surface": "card_6",
+      "text": "Consumer price index (2010 = 100)",
+      "isos": [],
+      "support": "Definition: Index of the prices of consumption goods and services, as compared to a certain reference period (2010=100)."
+    }
+  ],
+  "surface_checks": {
+    "title": {
+      "supported": true,
+      "reason": "Switzerland has the lowest CPI value, making it the most stable according to the dataset.",
+      "isos": []
+    },
+    "hook": {
+      "supported": true,
+      "reason": "Accurately reflects the topic of stable consumer prices.",
+      "isos": []
+    },
+    "description": {
+      "supported": true,
+      "reason": "Accurately captures South Sudan and Switzerland as the extremes.",
+      "isos": [
+        "SSD",
+        "CHE"
+      ]
+    },
+    "beat_0": {
+      "supported": true,
+      "reason": "Most countries have indexes well above 100, and Switzerland is exceptionally low.",
+      "isos": [
+        "CHE"
+      ]
+    },
+    "beat_1": {
+      "supported": true,
+      "reason": "All three entities exist in the dataset with matching values.",
+      "isos": [
+        "USA",
+        "JPN",
+        "CHE"
+      ]
+    },
+    "beat_2": {
+      "supported": true,
+      "reason": "USA value 143.86 rounds to 144.",
+      "isos": [
+        "USA"
+      ]
+    },
+    "beat_3": {
+      "supported": true,
+      "reason": "Japan value 118.04 rounds to 118.",
+      "isos": [
+        "JPN"
+      ]
+    },
+    "beat_4": {
+      "supported": true,
+      "reason": "Switzerland has rank 181 (lowest) and value 105.67 rounds to 106.",
+      "isos": [
+        "CHE"
+      ]
+    },
+    "beat_5": {
+      "supported": true,
+      "reason": "South Sudan has rank 1 (highest) and value 41280.74 rounds to 41,281.",
+      "isos": [
+        "SSD"
+      ]
+    },
+    "beat_6": {
+      "supported": true,
+      "reason": "Matches indicator subject.",
+      "isos": []
+    },
+    "card_6": {
+      "supported": true,
+      "reason": "Matches the official definition and base year.",
+      "isos": []
+    }
+  }
+}

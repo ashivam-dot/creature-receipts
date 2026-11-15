@@ -1,0 +1,85 @@
+id: atlas189
+title: The Places With the Highest Interest on Deposits
+hook_text: MASSIVE RATE GAP
+description: Bank deposit returns vary dramatically worldwide, ranging from under 0.1% in Switzerland and Micronesia
+  to over 50% in Turkiye.
+hashtags:
+- '#economy'
+- '#geography'
+- '#countries'
+tags:
+- wealth
+- deposit interest rate
+- countries ranked by deposit interest rate
+- Turkiye
+- Switzerland
+- world map
+- geography
+- atlas in numbers
+sources:
+- https://data.worldbank.org/indicator/FR.INR.DPST
+dataset:
+  kind: worldbank
+  indicator: FR.INR.DPST
+  label: Deposit interest rate
+  unit: '%'
+  source: World Bank
+  min_year: 2019
+scale:
+  edges:
+  - 1.0
+  - 4.0
+  - 8.0
+  - 15.0
+  labels:
+  - Under 1%
+  - 1% to 4%
+  - 4% to 8%
+  - 8% to 15%
+  - Over 15%
+value_format: '{v:.2f}%'
+beats:
+- text: Switzerland pays 0.1 percent on bank deposits. Turkey pays 57.6 percent.
+  shot:
+    callouts:
+    - CHE
+    - TUR
+- text: Turkey has 38 times the interest China pays, where banks offer 1.5 percent.
+  shot:
+    kind: group
+    isos:
+    - TUR
+    - CHN
+- text: Bulgaria offers 0.2 percent, while Switzerland and South Sudan pay just 0.1 percent.
+  shot:
+    kind: rank
+    isos:
+    - BGR
+    - CHE
+    - SSD
+- text: Nigeria pays 11.3 percent, and Brazil offers 7.7 percent.
+  shot:
+    kind: group
+    isos:
+    - NGA
+    - BRA
+- text: Banks pay these rates for your demand, time, or savings deposits.
+  shot:
+    callouts:
+    - TUR
+    - CHE
+  basis: Deposit interest rate is the rate paid by commercial or similar banks for demand, time, or savings deposits.
+- text: Argentina also pays a high return of 34.9 percent.
+  shot:
+    kind: country
+    iso: ARG
+- text: But Turkey is the world's highest, paying 57.6 percent.
+  shot:
+    kind: country
+    iso: TUR
+- text: What interest does your bank pay on deposits?
+  shot:
+    kind: card
+    lines:
+    - Your bank's return?
+    - Deposit Interest Rate (%)

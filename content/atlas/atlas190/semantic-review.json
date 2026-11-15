@@ -1,0 +1,164 @@
+{
+  "errors": [],
+  "claims": [
+    {
+      "surface": "title",
+      "text": "The Top Places for Middle Class Income",
+      "isos": [],
+      "support": "Slovak Republic rank 1 with 19.3%"
+    },
+    {
+      "surface": "hook",
+      "text": "MIDDLE CLASS WEALTH",
+      "isos": [],
+      "support": "Indicator measures percentage share of income or consumption for subgroups"
+    },
+    {
+      "surface": "description",
+      "text": "A rank ladder showing how the income share of the middle 20 percent of the population varies from Colombia to Slovakia.",
+      "isos": [
+        "COL",
+        "SVK"
+      ],
+      "support": "Colombia value is 11.5% (rank 123), Slovak Republic value is 19.3% (rank 1)"
+    },
+    {
+      "surface": "beat_0",
+      "text": "Slovakia's middle class earns 19.3 percent of national income. Colombia has 11.5.",
+      "isos": [
+        "SVK",
+        "COL"
+      ],
+      "support": "Slovak Republic value: 19.3%, Colombia value: 11.5%"
+    },
+    {
+      "surface": "beat_1",
+      "text": "Colombia has a lower share. A small slice for the middle of the population.",
+      "isos": [
+        "COL"
+      ],
+      "support": "Colombia value is 11.5%, which is among the lowest in the universe"
+    },
+    {
+      "surface": "beat_2",
+      "text": "Zambia and Zimbabwe are also near the bottom. Zambia has 11.9 percent. Zimbabwe, 12.",
+      "isos": [
+        "ZMB",
+        "ZWE"
+      ],
+      "support": "Zambia value: 11.9%, Zimbabwe value: 12.0%"
+    },
+    {
+      "surface": "beat_3",
+      "text": "This is the share that accrues to the middle quintile of the population.",
+      "isos": [],
+      "support": "Definition: Percentage share of income or consumption is the share that accrues to subgroups of population indicated by deciles or quintiles."
+    },
+    {
+      "surface": "beat_4",
+      "text": "Moving up, the USA has 15.1 percent. Indonesia has 15.5. Nigeria, 16.4.",
+      "isos": [
+        "USA",
+        "IDN",
+        "NGA"
+      ],
+      "support": "United States value: 15.1%, Indonesia value: 15.5%, Nigeria value: 16.4%"
+    },
+    {
+      "surface": "beat_5",
+      "text": "Slovakia is the world's highest. With 19.3 percent, it has 1.7 times Colombia's share.",
+      "isos": [
+        "SVK",
+        "COL"
+      ],
+      "support": "Slovak Republic is rank 1 with 19.3%, and 19.3 / 11.5 is approximately 1.687 (1.7 times)"
+    },
+    {
+      "surface": "beat_6",
+      "text": "How large is the middle class share where you live?",
+      "isos": [],
+      "support": "General audience question"
+    },
+    {
+      "surface": "card_6",
+      "text": "Income Share of Middle Quintile",
+      "isos": [],
+      "support": "Indicator SI.DST.03RD.20 definition"
+    }
+  ],
+  "surface_checks": {
+    "title": {
+      "supported": true,
+      "reason": "Slovakia is ranked number 1 in the dataset, supporting a top places framing.",
+      "isos": []
+    },
+    "hook": {
+      "supported": true,
+      "reason": "Refers to the income share of the middle quintile.",
+      "isos": []
+    },
+    "description": {
+      "supported": true,
+      "reason": "Colombia value is 11.5% and Slovakia value is 19.3%, accurately bounded in the text.",
+      "isos": [
+        "COL",
+        "SVK"
+      ]
+    },
+    "beat_0": {
+      "supported": true,
+      "reason": "Slovak Republic value is 19.3% and Colombia value is 11.5%.",
+      "isos": [
+        "SVK",
+        "COL"
+      ]
+    },
+    "beat_1": {
+      "supported": true,
+      "reason": "Colombia value of 11.5% is near the bottom of the 124 countries.",
+      "isos": [
+        "COL"
+      ]
+    },
+    "beat_2": {
+      "supported": true,
+      "reason": "Zambia value is 11.9% and Zimbabwe value is 12.0%, both near the bottom.",
+      "isos": [
+        "ZMB",
+        "ZWE"
+      ]
+    },
+    "beat_3": {
+      "supported": true,
+      "reason": "Directly matches the provided definition for the indicator.",
+      "isos": []
+    },
+    "beat_4": {
+      "supported": true,
+      "reason": "United States is 15.1%, Indonesia is 15.5%, and Nigeria is 16.4%.",
+      "isos": [
+        "USA",
+        "IDN",
+        "NGA"
+      ]
+    },
+    "beat_5": {
+      "supported": true,
+      "reason": "Slovak Republic is ranked 1st at 19.3%, and 19.3 / 11.5 rounds to 1.7.",
+      "isos": [
+        "SVK",
+        "COL"
+      ]
+    },
+    "beat_6": {
+      "supported": true,
+      "reason": "Standard interactive question.",
+      "isos": []
+    },
+    "card_6": {
+      "supported": true,
+      "reason": "Matches indicator definition name.",
+      "isos": []
+    }
+  }
+}

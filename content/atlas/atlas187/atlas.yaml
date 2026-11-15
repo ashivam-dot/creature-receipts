@@ -1,0 +1,74 @@
+id: atlas187
+title: Which Country Has the MOST Stable Prices?
+format: odd_one_out
+hook_text: STABLE CONSUMER PRICES
+description: Comparing global consumer price changes since 2010, from extreme inflation in South Sudan to price
+  stability in Switzerland.
+hashtags:
+- '#economy'
+- '#geography'
+- '#countries'
+tags:
+- wealth
+- consumer price index 2010 100
+- countries ranked by consumer price index 2010 100
+- South Sudan
+- Switzerland
+- world map
+- geography
+- atlas in numbers
+sources:
+- https://data.worldbank.org/indicator/FP.CPI.TOTL
+dataset:
+  kind: worldbank
+  indicator: FP.CPI.TOTL
+  label: Consumer price index (2010 = 100)
+  unit: index
+  source: World Bank
+  min_year: 2019
+scale:
+  edges:
+  - 130.0
+  - 160.0
+  - 230.0
+  - 500.0
+  labels:
+  - Under 130
+  - 130–160
+  - 160–230
+  - 230–500
+  - Over 500
+beats:
+- text: Prices exploded across most of the world since 2010. One rich country breaks this pattern.
+  shot:
+    callouts:
+    - CHE
+- text: Consider the USA, Japan, and Switzerland.
+  shot:
+    kind: group
+    isos:
+    - USA
+    - JPN
+    - CHE
+- text: The USA rose to 144.
+  shot:
+    kind: country
+    iso: USA
+- text: Japan stayed low at 118.
+  shot:
+    kind: country
+    iso: JPN
+- text: Switzerland is the world's lowest, sitting at just 106.
+  shot:
+    kind: country
+    iso: CHE
+- text: At the opposite extreme, South Sudan is the world's highest at 41,281.
+  shot:
+    callouts:
+    - SSD
+- text: How much have consumer prices changed in your country?
+  shot:
+    kind: card
+    lines:
+    - How have consumer prices changed?
+    - Consumer price index (2010 = 100)

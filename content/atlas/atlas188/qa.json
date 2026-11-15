@@ -1,0 +1,25 @@
+{
+  "version": 1,
+  "passed": true,
+  "checked_at": "2026-11-15T01:32:00.278632+00:00",
+  "quality_module_sha256": "db7be8ac57c839f39a10676f1a70580a83ea346f59c27f19868d09c272def14c",
+  "media_sha256": "aa6fcbf02bc1ef08cc1d2a5893944a2ba6ade8d357be750fb9373c4c521a2c0e",
+  "script_sha256": "c8ff681c86f7153c6f402c7df1451eb0903cb0500b1abde5d862ea49f00d667d",
+  "data_sha256": "3740f33f86e058bd55fb424f22ec4e973789fe0207973d80f9ab200543ea02c6",
+  "claims_sha256": "3194497cab31deee229c1dc25315fa01ebd80bafbfda84620d731491ef13d122",
+  "contact_sha256": "25f7c65e69177a4f57886696ed7ea72d2896e7706d0ccc8f3562b80bb6509be0",
+  "duration": 48.4,
+  "integrated_lufs": -14.1,
+  "true_peak_dbfs": -1.5,
+  "speech": {
+    "heard": "Eswatini gets 35.5% of government revenue from trade taxes. The USA gets 1.6%. Eswatini is the world's highest, relying on border customs for over a third of its public funds. The USA relies far less on border customs, taking in just 1.6% of its revenue there. Side by side, Eswatini depends on trade taxes 22 times as much as the USA. Across the globe, the median country collects 4.4% of total revenue from trade taxes. Bosnia is the world's lowest, drawing just 0.00001% of its revenue from border taxes. How much does your country depend on international trade taxes?",
+    "model": "small.en",
+    "media_sha256": "aa6fcbf02bc1ef08cc1d2a5893944a2ba6ade8d357be750fb9373c4c521a2c0e",
+    "primary_differences": [],
+    "differences": []
+  },
+  "warnings": [
+    "duration 48.4s outside editorial 30–45s target"
+  ],
+  "speech_policy": "material-hard-entity-polarity-strict-minor-spelling-warning"
+}
