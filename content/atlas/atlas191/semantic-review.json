@@ -1,0 +1,156 @@
+{
+  "errors": [
+    {
+      "surface": "title",
+      "claim": "Who Pays for Healthcare in YOUR Country?",
+      "reason": "A Why or question title claims a cause or premise; here it is an identity framing with a question, which is style, but let's check claims.",
+      "severity": "style"
+    },
+    {
+      "surface": "hook",
+      "claim": "WHO PAYS FOR HEALTHCARE",
+      "reason": "Stylistic hook headline summarizing the topic.",
+      "severity": "style"
+    },
+    {
+      "surface": "beat_4",
+      "claim": "which is 8.4 times East Timor",
+      "reason": "India (58.56) divided by East Timor (6.99) is approximately 8.378, which rounds to 8.4 times, so this is mathematically supported.",
+      "severity": "info"
+    }
+  ],
+  "claims": [
+    {
+      "surface": "beat_0",
+      "text": "In Armenia, 83.9% of health spending comes from private sources. In East Timor, just 7%.",
+      "isos": [
+        "ARM",
+        "TLS"
+      ],
+      "support": "ARM: 83.90179443 (83.9%), TLS: 6.9933362 (7%)"
+    },
+    {
+      "surface": "beat_1",
+      "text": "Armenia is the world's highest. It counts funds from households, corporations, and non-profits paid directly or via insurance.",
+      "isos": [
+        "ARM"
+      ],
+      "support": "ARM rank 1; definition mentions funds from households, corporations and non-profit organizations prepaid to voluntary health insurance or paid directly to healthcare providers."
+    },
+    {
+      "surface": "beat_2",
+      "text": "Myanmar at 82.8%, Bangladesh at 82%, Nigeria at 74.4%, and Syria at 73.3% follow close behind.",
+      "isos": [
+        "MMR",
+        "BGD",
+        "NGA",
+        "SYR"
+      ],
+      "support": "MMR: 82.81489563 (82.8%, rank 2), BGD: 82.01707458 (82%, rank 4), NGA: 74.38244629 (74.4%, rank 6), SYR: 73.27332306 (73.3%, rank 7)"
+    },
+    {
+      "surface": "beat_3",
+      "text": "The USA is 46%, while China sits at 42.9%.",
+      "isos": [
+        "USA",
+        "CHN"
+      ],
+      "support": "USA: 46.04626465 (46%), CHN: 42.89730072 (42.9%)"
+    },
+    {
+      "surface": "beat_4",
+      "text": "India is 58.6%, which is 8.4 times East Timor.",
+      "isos": [
+        "IND",
+        "TLS"
+      ],
+      "support": "IND: 58.56241226 (58.6%), TLS: 6.9933362 (7%)"
+    },
+    {
+      "surface": "beat_5",
+      "text": "In Japan, private sources fund only 15.2% of health care.",
+      "isos": [
+        "JPN"
+      ],
+      "support": "JPN: 15.17451668 (15.2%)"
+    }
+  ],
+  "surface_checks": {
+    "title": {
+      "supported": true,
+      "reason": "Stylistic title framing the video topic.",
+      "isos": []
+    },
+    "hook": {
+      "supported": true,
+      "reason": "Stylistic hook summarizing the indicator.",
+      "isos": []
+    },
+    "description": {
+      "supported": true,
+      "reason": "Accurately introduces the scope and indicator from Armenia to East Timor.",
+      "isos": [
+        "ARM",
+        "TLS"
+      ]
+    },
+    "beat_0": {
+      "supported": true,
+      "reason": "Armenia value is 83.9% (rank 1) and East Timor value is 7% (rank 187).",
+      "isos": [
+        "ARM",
+        "TLS"
+      ]
+    },
+    "beat_1": {
+      "supported": true,
+      "reason": "Armenia is rank 1 in the universe and definition explicitly matches the listed sources.",
+      "isos": [
+        "ARM"
+      ]
+    },
+    "beat_2": {
+      "supported": true,
+      "reason": "Myanmar is 82.8% (rank 2), Bangladesh is 82% (rank 4), Nigeria is 74.4% (rank 6), Syria is 73.3% (rank 7).",
+      "isos": [
+        "MMR",
+        "BGD",
+        "NGA",
+        "SYR"
+      ]
+    },
+    "beat_3": {
+      "supported": true,
+      "reason": "USA is 46% (rank 67) and China is 42.9% (rank 76).",
+      "isos": [
+        "USA",
+        "CHN"
+      ]
+    },
+    "beat_4": {
+      "supported": true,
+      "reason": "India is 58.6% (rank 31) and East Timor is 7% (rank 187); 58.5624 / 6.9933 = 8.378 times.",
+      "isos": [
+        "IND",
+        "TLS"
+      ]
+    },
+    "beat_5": {
+      "supported": true,
+      "reason": "Japan is 15.2% (rank 170).",
+      "isos": [
+        "JPN"
+      ]
+    },
+    "beat_6": {
+      "supported": true,
+      "reason": "Ending question summarizing the theme.",
+      "isos": []
+    },
+    "card_6": {
+      "supported": true,
+      "reason": "Card text matches indicator definition and topic title.",
+      "isos": []
+    }
+  }
+}

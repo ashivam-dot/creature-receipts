@@ -1,0 +1,83 @@
+id: atlas191
+title: Who Pays for Healthcare in YOUR Country?
+hook_text: WHO PAYS FOR HEALTHCARE
+description: From Armenia to East Timor, see which countries and territories rely most on private spending to fund
+  healthcare.
+hashtags:
+- '#health'
+- '#geography'
+- '#countries'
+tags:
+- health
+- private share of health spending
+- countries ranked by private share of health spending
+- Armenia
+- Timor-Leste
+- world map
+- geography
+- atlas in numbers
+sources:
+- https://data.worldbank.org/indicator/SH.XPD.PVTD.CH.ZS
+dataset:
+  kind: worldbank
+  indicator: SH.XPD.PVTD.CH.ZS
+  label: Private share of health spending
+  unit: '%'
+  source: World Bank
+  min_year: 2019
+scale:
+  edges:
+  - 20.0
+  - 35.0
+  - 50.0
+  - 65.0
+  labels:
+  - Under 20%
+  - 20% to 35%
+  - 35% to 50%
+  - 50% to 65%
+  - Over 65%
+value_format: '{v:.1f}%'
+beats:
+- text: In Armenia, 83.9% of health spending comes from private sources. In East Timor, just 7%.
+  shot:
+    callouts:
+    - ARM
+    - TLS
+- text: Armenia is the world's highest. It counts funds from households, corporations, and non-profits paid directly
+    or via insurance.
+  shot:
+    kind: country
+    iso: ARM
+  basis: Domestic private sources include funds from households, corporations and non-profit organizations. Such
+    expenditures can be either prepaid to voluntary health insurance or paid directly to healthcare providers.
+- text: Myanmar at 82.8%, Bangladesh at 82%, Nigeria at 74.4%, and Syria at 73.3% follow close behind.
+  shot:
+    kind: rank
+    isos:
+    - MMR
+    - BGD
+    - NGA
+    - SYR
+- text: The USA is 46%, while China sits at 42.9%.
+  shot:
+    kind: group
+    isos:
+    - USA
+    - CHN
+- text: India is 58.6%, which is 8.4 times East Timor.
+  shot:
+    kind: group
+    isos:
+    - IND
+    - TLS
+- text: In Japan, private sources fund only 15.2% of health care.
+  shot:
+    kind: country
+    iso: JPN
+- text: Who pays for healthcare in your country?
+  shot:
+    kind: card
+    lines:
+    - Who pays?
+    - Private Share of Health Spending

@@ -7486,7 +7486,387 @@
    "source_url": "https://data.worldbank.org/indicator/EG.GDP.PUSE.KO.PP",
    "status": "open",
    "added_by": "refill"
+  },
+  {
+   "id": "t206",
+   "topic": "Private Share of Healthcare Spending",
+   "angle": "In countries like Armenia and Myanmar, private sources fund over 80% of all healthcare expenditure.",
+   "format": "map_reveal",
+   "dataset": {
+    "kind": "worldbank",
+    "indicator": "SH.XPD.PVTD.CH.ZS",
+    "label": "Private share of health spending",
+    "unit": "%",
+    "source": "World Bank",
+    "min_year": 2019
+   },
+   "scale": {
+    "kind": "bins",
+    "edges": [
+     20,
+     35,
+     50,
+     65
+    ],
+    "labels": [
+     "Under 20%",
+     "20% to 35%",
+     "35% to 50%",
+     "50% to 65%",
+     "Over 65%"
+    ]
+   },
+   "value_format": "{v:.1f}%",
+   "hashtags": [
+    "#maps",
+    "#geography",
+    "#health"
+   ],
+   "source_url": "https://data.worldbank.org/indicator/SH.XPD.PVTD.CH.ZS",
+   "status": "ready:atlas191",
+   "added_by": "refill"
+  },
+  {
+   "id": "t207",
+   "topic": "Share of Adults Holding Doctoral Degrees",
+   "angle": "In Switzerland, over 3% of adults hold a doctorate, while in some nations fewer than 1 in 10,000 adults reach this level of education.",
+   "format": "rank_ladder",
+   "dataset": {
+    "kind": "worldbank",
+    "indicator": "SE.TER.CUAT.DO.ZS",
+    "label": "Adults with a doctoral degree",
+    "unit": "%",
+    "source": "World Bank",
+    "min_year": 2019
+   },
+   "scale": {
+    "kind": "bins",
+    "edges": [
+     0.1,
+     0.5,
+     1.0,
+     2.0
+    ],
+    "labels": [
+     "Under 0.1%",
+     "0.1% to 0.5%",
+     "0.5% to 1.0%",
+     "1.0% to 2.0%",
+     "Over 2.0%"
+    ]
+   },
+   "value_format": "{v:.2f}%",
+   "hashtags": [
+    "#maps",
+    "#geography",
+    "#education"
+   ],
+   "source_url": "https://data.worldbank.org/indicator/SE.TER.CUAT.DO.ZS",
+   "status": "open",
+   "added_by": "refill"
+  },
+  {
+   "id": "t208",
+   "topic": "Global Workers in Service Sector",
+   "angle": "While over 90% of workers in Djibouti and Luxembourg are employed in services, fewer than 20% of the workforce in Niger and Burundi work in the service sector.",
+   "format": "map_reveal",
+   "dataset": {
+    "kind": "worldbank",
+    "indicator": "SL.SRV.EMPL.ZS",
+    "label": "Share of employment in services",
+    "unit": "%",
+    "source": "World Bank",
+    "min_year": 2019
+   },
+   "scale": {
+    "kind": "bins",
+    "edges": [
+     35,
+     50,
+     65,
+     80
+    ],
+    "labels": [
+     "Under 35%",
+     "35% to 50%",
+     "50% to 65%",
+     "65% to 80%",
+     "Over 80%"
+    ]
+   },
+   "value_format": "{v:.1f}%",
+   "hashtags": [
+    "#maps шар#geography шар#jobs"
+   ],
+   "source_url": "https://data.worldbank.org/indicator/SL.SRV.EMPL.ZS",
+   "status": "open",
+   "added_by": "refill"
+  },
+  {
+   "id": "t209",
+   "topic": "Global Trade as Share of GDP",
+   "angle": "In global trade hubs like Hong Kong and Luxembourg, the value of imports and exports is more than triple their total economic output.",
+   "format": "map_reveal",
+   "dataset": {
+    "kind": "worldbank",
+    "indicator": "NE.TRD.GNFS.ZS",
+    "label": "Trade as a percentage of GDP",
+    "unit": "%",
+    "source": "World Bank",
+    "min_year": 2019
+   },
+   "scale": {
+    "kind": "bins",
+    "edges": [
+     40,
+     80,
+     120,
+     160
+    ],
+    "labels": [
+     "Under 40%",
+     "40-80%",
+     "80-120%",
+     "120-160%",
+     "Over 160%"
+    ]
+   },
+   "value_format": "{v:.0f}%",
+   "hashtags": [
+    "#maps",
+    "#geography",
+    "#economy"
+   ],
+   "source_url": "https://data.worldbank.org/indicator/NE.TRD.GNFS.ZS",
+   "status": "open",
+   "added_by": "refill"
+  },
+  {
+   "id": "t210",
+   "topic": "The Global Clean Energy Divide",
+   "angle": "While Iceland derives nearly 90% of its total energy from clean sources, the global median remains surprisingly low at just 6.4%.",
+   "format": "rank_ladder",
+   "dataset": {
+    "kind": "worldbank",
+    "indicator": "EG.USE.COMM.CL.ZS",
+    "label": "Clean energy share of total use",
+    "unit": "%",
+    "source": "World Bank",
+    "min_year": 2019
+   },
+   "scale": {
+    "kind": "bins",
+    "edges": [
+     5,
+     15,
+     30,
+     50
+    ],
+    "labels": [
+     "Under 5%",
+     "5-15%",
+     "15-30%",
+     "30-50%",
+     "Over 50%"
+    ]
+   },
+   "value_format": "{v:.1f}%",
+   "hashtags": [
+    "#maps",
+    "#geography",
+    "#energy"
+   ],
+   "source_url": "https://data.worldbank.org/indicator/EG.USE.COMM.CL.ZS",
+   "status": "open",
+   "added_by": "refill"
+  },
+  {
+   "id": "t211",
+   "topic": "Income and Profit Tax Revenue",
+   "angle": "Australia generates nearly 68% of its government revenue from income and profit taxes, the highest share in the world.",
+   "format": "map_reveal",
+   "dataset": {
+    "kind": "worldbank",
+    "indicator": "GC.TAX.YPKG.RV.ZS",
+    "label": "Income tax share of total revenue",
+    "unit": "%",
+    "source": "World Bank",
+    "min_year": 2019
+   },
+   "scale": {
+    "kind": "bins",
+    "edges": [
+     10,
+     25,
+     40,
+     55
+    ],
+    "labels": [
+     "Under 10%",
+     "10-25%",
+     "25-40%",
+     "40-55%",
+     "Over 55%"
+    ]
+   },
+   "value_format": "{v:.1f}%",
+   "hashtags": [
+    "#maps",
+    "#geography",
+    "#economy"
+   ],
+   "source_url": "https://data.worldbank.org/indicator/GC.TAX.YPKG.RV.ZS",
+   "status": "open",
+   "added_by": "refill"
+  },
+  {
+   "id": "t212",
+   "topic": "Rural Access to Electricity Worldwide",
+   "angle": "In five countries, fewer than four percent of rural residents have access to electricity, despite half of all nations achieving universal coverage.",
+   "format": "map_reveal",
+   "dataset": {
+    "kind": "worldbank",
+    "indicator": "EG.ELC.ACCS.RU.ZS",
+    "label": "Rural population with electricity access",
+    "unit": "%",
+    "source": "World Bank",
+    "min_year": 2019
+   },
+   "scale": {
+    "kind": "bins",
+    "edges": [
+     25,
+     50,
+     75,
+     99
+    ],
+    "labels": [
+     "Under 25%",
+     "25-50%",
+     "50-75%",
+     "75-99%",
+     "100%"
+    ]
+   },
+   "value_format": "{v:.1f}%",
+   "hashtags": [
+    "#maps",
+    "#geography",
+    "#infrastructure"
+   ],
+   "source_url": "https://data.worldbank.org/indicator/EG.ELC.ACCS.RU.ZS",
+   "status": "open",
+   "added_by": "refill"
+  },
+  {
+   "id": "t213",
+   "topic": "Government Spending on Social Transfers",
+   "angle": "In nations like Czechia and Germany, over 80% of government expenditure is dedicated to subsidies and social transfers.",
+   "format": "rank_ladder",
+   "dataset": {
+    "kind": "worldbank",
+    "indicator": "GC.XPN.TRFT.ZS",
+    "label": "Subsidies and transfers (% of expense)",
+    "unit": "%",
+    "source": "World Bank",
+    "min_year": 2019
+   },
+   "scale": {
+    "kind": "bins",
+    "edges": [
+     20,
+     40,
+     60,
+     80
+    ],
+    "labels": [
+     "Under 20%",
+     "20-40%",
+     "40-60%",
+     "60-80%",
+     "Over 80%"
+    ]
+   },
+   "value_format": "{v:.1f}%",
+   "hashtags": [
+    "#maps",
+    "#economy",
+    "#government"
+   ],
+   "source_url": "https://data.worldbank.org/indicator/GC.XPN.TRFT.ZS",
+   "status": "open",
+   "added_by": "refill"
+  },
+  {
+   "id": "t214",
+   "topic": "National Spending Relative to GDP",
+   "angle": "In many developing nations, total domestic spending exceeds the entire value of the national economy, reaching as high as 193% in Kiribati.",
+   "format": "map_reveal",
+   "dataset": {
+    "kind": "worldbank",
+    "indicator": "NE.DAB.TOTL.ZS",
+    "label": "Gross national expenditure (% of GDP)",
+    "unit": "%",
+    "source": "World Bank",
+    "min_year": 2019
+   },
+   "scale": {
+    "kind": "bins",
+    "edges": [
+     85,
+     100,
+     115,
+     130
+    ],
+    "labels": [
+     "Under 85%",
+     "85-100%",
+     "100-115%",
+     "115-130%",
+     "Over 130%"
+    ]
+   },
+   "value_format": "{v:.1f}%",
+   "hashtags": [
+    "#maps",
+    "#geography",
+    "#economics"
+   ],
+   "source_url": "https://data.worldbank.org/indicator/NE.DAB.TOTL.ZS",
+   "status": "open",
+   "added_by": "refill"
+  },
+  {
+   "id": "t215",
+   "topic": "Gender Parity in University Enrollment",
+   "angle": "Women now outnumber men in higher education in more than 75% of the world's countries.",
+   "format": "map_reveal",
+   "dataset": {
+    "kind": "worldbank",
+    "indicator": "SE.ENR.TERT.FM.ZS",
+    "label": "Women-to-men ratio in higher education",
+    "unit": "ratio",
+    "source": "World Bank",
+    "min_year": 2019
+   },
+   "scale": {
+    "kind": "threshold",
+    "at": 1.0,
+    "labels": [
+     "More women than men",
+     "More men than women"
+    ]
+   },
+   "value_format": "{v:.2f}",
+   "hashtags": [
+    "#maps",
+    "#geography",
+    "#education"
+   ],
+   "source_url": "https://data.worldbank.org/indicator/SE.ENR.TERT.FM.ZS",
+   "status": "open",
+   "added_by": "refill"
   }
  ],
- "refilled_at": "2026-11-14T09:10:11+00:00"
+ "refilled_at": "2026-11-15T09:10:15+00:00"
 }
