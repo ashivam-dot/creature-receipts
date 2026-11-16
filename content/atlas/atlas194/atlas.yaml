@@ -1,0 +1,75 @@
+id: atlas194
+title: 'USA vs Nigeria: The Doctoral Degree Gap'
+format: versus
+hook_text: ADVANCED DEGREES
+description: A look at the percentage of adults who hold doctoral degrees in the USA and Nigeria, compared to the
+  global median and extremes.
+hashtags:
+- '#education'
+- '#geography'
+- '#countries'
+tags:
+- education
+- adults with a doctoral degree
+- countries ranked by adults with a doctoral degree
+- Switzerland
+- Guatemala
+- world map
+- geography
+- atlas in numbers
+sources:
+- https://data.worldbank.org/indicator/SE.TER.CUAT.DO.ZS
+dataset:
+  kind: worldbank
+  indicator: SE.TER.CUAT.DO.ZS
+  label: Adults with a doctoral degree
+  unit: '%'
+  source: World Bank
+  min_year: 2019
+scale:
+  edges:
+  - 0.1
+  - 0.5
+  - 1.0
+  - 2.0
+  labels:
+  - Under 0.1%
+  - 0.1% to 0.5%
+  - 0.5% to 1.0%
+  - 1.0% to 2.0%
+  - Over 2.0%
+value_format: '{v:.2f}%'
+beats:
+- text: USA has 2.3% of adults with a doctorate. Nigeria has 0.6%.
+  shot:
+    callouts:
+    - USA
+    - NGA
+- text: USA has 3.8 times the share seen in Nigeria.
+  shot:
+    kind: group
+    isos:
+    - USA
+    - NGA
+- text: It counts everyone 25 and over who completed a doctoral or equivalent degree.
+  shot:
+    kind: country
+    iso: USA
+  basis: The percentage of population ages 25 and over that attained or completed Doctoral or equivalent.
+- text: Nigeria has 0.6%, sitting above the global median of 0.4%.
+  shot:
+    kind: country
+    iso: NGA
+- text: Switzerland is the world's highest at 3.3%. Germany has 1.9%, and Guatemala is the lowest at 0.01%.
+  shot:
+    kind: rank
+    isos:
+    - CHE
+    - DEU
+    - GTM
+- text: How many people hold a doctoral degree where you live?
+  shot:
+    kind: card
+    lines:
+    - Doctoral Degrees?
+    - Adults with a Doctorate (%)

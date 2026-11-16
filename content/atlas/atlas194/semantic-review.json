@@ -1,0 +1,130 @@
+{
+  "errors": [
+    {
+      "surface": "hook",
+      "claim": "ADVANCED DEGREES",
+      "reason": "The indicator specifically measures Doctoral or equivalent degrees, so calling it 'ADVANCED DEGREES' broadly is a stylistic mismatch.",
+      "severity": "style"
+    }
+  ],
+  "claims": [
+    {
+      "surface": "beat_0",
+      "text": "USA has 2.3% of adults with a doctorate. Nigeria has 0.6%.",
+      "isos": [
+        "USA",
+        "NGA"
+      ],
+      "support": "USA value is 2.29690777721687 (displayed as 2.3%), Nigeria value is 0.600767894521955 (displayed as 0.6%)."
+    },
+    {
+      "surface": "beat_1",
+      "text": "USA has 3.8 times the share seen in Nigeria.",
+      "isos": [
+        "USA",
+        "NGA"
+      ],
+      "support": "2.29690777721687 / 0.600767894521955 = 3.823... which rounds to 3.8 times."
+    },
+    {
+      "surface": "beat_2",
+      "text": "It counts everyone 25 and over who completed a doctoral or equivalent degree.",
+      "isos": [],
+      "support": "Definition: 'The percentage of population ages 25 and over that attained or completed Doctoral or equivalent.'"
+    },
+    {
+      "surface": "beat_3",
+      "text": "Nigeria has 0.6%, sitting above the global median of 0.4%.",
+      "isos": [
+        "NGA"
+      ],
+      "support": "Nigeria value is 0.6%. Among the 108 entities, the median value is approximately 0.35% - 0.4%."
+    },
+    {
+      "surface": "beat_4",
+      "text": "Switzerland is the world's highest at 3.3%. Germany has 1.9%, and Guatemala is the lowest at 0.01%.",
+      "isos": [
+        "CHE",
+        "DEU",
+        "GTM"
+      ],
+      "support": "Switzerland rank 1 with 3.309% (displayed as 3.3%), Germany rank 7 with 1.856% (displayed as 1.9%), Guatemala rank 108 with 0.008% (displayed as 0.01%)."
+    },
+    {
+      "surface": "beat_5",
+      "text": "How many people hold a doctoral degree where you live?",
+      "isos": [],
+      "support": "Ordinary audience question matching card 5."
+    }
+  ],
+  "surface_checks": {
+    "title": {
+      "supported": true,
+      "reason": "Title is a framing comparison between USA and Nigeria regarding doctoral degrees.",
+      "isos": [
+        "USA",
+        "NGA"
+      ]
+    },
+    "hook": {
+      "supported": true,
+      "reason": "Hook introduces doctoral degrees.",
+      "isos": []
+    },
+    "description": {
+      "supported": true,
+      "reason": "Accurately describes the topic covering the USA, Nigeria, global median, and extremes.",
+      "isos": [
+        "USA",
+        "NGA"
+      ]
+    },
+    "beat_0": {
+      "supported": true,
+      "reason": "USA and Nigeria values match the data (2.3% and 0.6%).",
+      "isos": [
+        "USA",
+        "NGA"
+      ]
+    },
+    "beat_1": {
+      "supported": true,
+      "reason": "Ratio between USA and Nigeria values is accurately calculated.",
+      "isos": [
+        "USA",
+        "NGA"
+      ]
+    },
+    "beat_2": {
+      "supported": true,
+      "reason": "Directly reflects the indicator definition.",
+      "isos": []
+    },
+    "beat_3": {
+      "supported": true,
+      "reason": "Nigeria value is 0.6%, which is above the median.",
+      "isos": [
+        "NGA"
+      ]
+    },
+    "beat_4": {
+      "supported": true,
+      "reason": "Switzerland, Germany, and Guatemala ranks and values match the dataset exactly.",
+      "isos": [
+        "CHE",
+        "DEU",
+        "GTM"
+      ]
+    },
+    "beat_5": {
+      "supported": true,
+      "reason": "Matches card 5 question.",
+      "isos": []
+    },
+    "card_5": {
+      "supported": true,
+      "reason": "Accurately labels the indicator topic and unit as a percentage.",
+      "isos": []
+    }
+  }
+}

@@ -6202,7 +6202,7 @@
     "#economy"
    ],
    "source_url": "https://data.worldbank.org/indicator/GC.TAX.INTT.RV.ZS",
-   "status": "ready:atlas188",
+   "status": "used:atlas188",
    "added_by": "refill"
   },
   {
@@ -7303,7 +7303,7 @@
     "#economy"
    ],
    "source_url": "https://data.worldbank.org/indicator/FP.CPI.TOTL",
-   "status": "ready:atlas187",
+   "status": "used:atlas187",
    "added_by": "refill"
   },
   {
@@ -7377,14 +7377,14 @@
     "#economics"
    ],
    "source_url": "https://data.worldbank.org/indicator/SI.DST.03RD.20",
-   "status": "ready:atlas190",
+   "status": "used:atlas190",
    "added_by": "refill"
   },
   {
    "id": "t203",
    "topic": "Global Investment in Fixed Capital",
    "angle": "Tanzania and Bhutan lead the world in building future capacity by re-investing over 40% of their GDP into fixed assets.",
-   "format": "map_reveal",
+   "format": "odd_one_out",
    "dataset": {
     "kind": "worldbank",
     "indicator": "NE.GDI.FTOT.ZS",
@@ -7414,7 +7414,7 @@
     "#maps me"
    ],
    "source_url": "https://data.worldbank.org/indicator/NE.GDI.FTOT.ZS",
-   "status": "open",
+   "status": "ready:atlas193",
    "added_by": "refill"
   },
   {
@@ -7523,14 +7523,14 @@
     "#health"
    ],
    "source_url": "https://data.worldbank.org/indicator/SH.XPD.PVTD.CH.ZS",
-   "status": "ready:atlas191",
+   "status": "used:atlas191",
    "added_by": "refill"
   },
   {
    "id": "t207",
    "topic": "Share of Adults Holding Doctoral Degrees",
    "angle": "In Switzerland, over 3% of adults hold a doctorate, while in some nations fewer than 1 in 10,000 adults reach this level of education.",
-   "format": "rank_ladder",
+   "format": "versus",
    "dataset": {
     "kind": "worldbank",
     "indicator": "SE.TER.CUAT.DO.ZS",
@@ -7562,7 +7562,7 @@
     "#education"
    ],
    "source_url": "https://data.worldbank.org/indicator/SE.TER.CUAT.DO.ZS",
-   "status": "open",
+   "status": "ready:atlas194",
    "added_by": "refill"
   },
   {
@@ -7723,7 +7723,7 @@
    "id": "t212",
    "topic": "Rural Access to Electricity Worldwide",
    "angle": "In five countries, fewer than four percent of rural residents have access to electricity, despite half of all nations achieving universal coverage.",
-   "format": "map_reveal",
+   "format": "spotlight",
    "dataset": {
     "kind": "worldbank",
     "indicator": "EG.ELC.ACCS.RU.ZS",
@@ -7755,7 +7755,7 @@
     "#infrastructure"
    ],
    "source_url": "https://data.worldbank.org/indicator/EG.ELC.ACCS.RU.ZS",
-   "status": "open",
+   "status": "failed:ValueError",
    "added_by": "refill"
   },
   {

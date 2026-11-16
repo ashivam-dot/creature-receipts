@@ -1,0 +1,160 @@
+{
+  "errors": [
+    {
+      "surface": "beat_0",
+      "claim": "In most nations on Earth, 100% of rural residents have power.",
+      "reason": "Most nations/territories do not have 100% rural electrification in the dataset.",
+      "severity": "factual"
+    }
+  ],
+  "claims": [
+    {
+      "surface": "title",
+      "text": "Is INDIA Near the Top for Rural Electricity?",
+      "isos": [
+        "IND"
+      ],
+      "support": "India rank is 115"
+    },
+    {
+      "surface": "hook",
+      "text": "ELECTRICITY ACCESS GAP",
+      "isos": [],
+      "support": "Definition: Access to electricity, rural is the percentage of rural population with access to electricity."
+    },
+    {
+      "surface": "description",
+      "text": "Comparing rural electricity access rates across 203 countries and territories based on World Bank data.",
+      "isos": [],
+      "support": "Universe count is 203"
+    },
+    {
+      "surface": "beat_0",
+      "text": "South Sudan has 0.7%.",
+      "isos": [
+        "SSD"
+      ],
+      "support": "SSD value is 0.7%"
+    },
+    {
+      "surface": "beat_1",
+      "text": "India has 99.9% of its rural population connected.",
+      "isos": [
+        "IND"
+      ],
+      "support": "IND value is 99.9%"
+    },
+    {
+      "surface": "beat_2",
+      "text": "India has 77 times the rural power access of Angola.",
+      "isos": [
+        "IND",
+        "AGO"
+      ],
+      "support": "IND is 99.9 and AGO is 1.3, 99.9 / 1.3 is approximately 76.85"
+    },
+    {
+      "surface": "beat_3",
+      "text": "The USA has 100% rural access. China also has 100%.",
+      "isos": [
+        "USA",
+        "CHN"
+      ],
+      "support": "USA value is 100%, CHN value is 100%"
+    },
+    {
+      "surface": "beat_4",
+      "text": "At the bottom, Burundi has 3.6%, Central African Republic 2%, Angola 1.3%, DR Congo 1%, and South Sudan 0.7%.",
+      "isos": [
+        "BDI",
+        "CAF",
+        "AGO",
+        "COD",
+        "SSD"
+      ],
+      "support": "BDI: 3.6%, CAF: 2%, AGO: 1.3%, COD: 1%, SSD: 0.7%"
+    },
+    {
+      "surface": "beat_5",
+      "text": "How reliable is rural electricity in your country?",
+      "isos": [],
+      "support": "Style question"
+    },
+    {
+      "surface": "card_5",
+      "text": "Rural Electricity Access",
+      "isos": [],
+      "support": "Matches indicator definition context"
+    }
+  ],
+  "surface_checks": {
+    "title": {
+      "supported": true,
+      "reason": "India is near the top (rank 115 out of 203, though many are tied at rank 1, 99.9% is near 100%).",
+      "isos": [
+        "IND"
+      ]
+    },
+    "hook": {
+      "supported": true,
+      "reason": "Accurately frames the indicator topic.",
+      "isos": []
+    },
+    "description": {
+      "supported": true,
+      "reason": "Matches universe count of 203 and World Bank source.",
+      "isos": []
+    },
+    "beat_0": {
+      "supported": false,
+      "reason": "Claiming most nations have 100% is unsupported; South Sudan 0.7% is supported.",
+      "isos": [
+        "SSD"
+      ]
+    },
+    "beat_1": {
+      "supported": true,
+      "reason": "India value is 99.9%.",
+      "isos": [
+        "IND"
+      ]
+    },
+    "beat_2": {
+      "supported": true,
+      "reason": "99.9 / 1.3 equals ~76.85, appropriately rounded to 77 times.",
+      "isos": [
+        "IND",
+        "AGO"
+      ]
+    },
+    "beat_3": {
+      "supported": true,
+      "reason": "USA and China values are both 100%.",
+      "isos": [
+        "USA",
+        "CHN"
+      ]
+    },
+    "beat_4": {
+      "supported": true,
+      "reason": "All bottom values match the dataset exactly.",
+      "isos": [
+        "BDI",
+        "CAF",
+        "AGO",
+        "COD",
+        "SSD"
+      ]
+    },
+    "beat_5": {
+      "supported": true,
+      "reason": "Permissible color/loop question.",
+      "isos": []
+    },
+    "card_5": {
+      "supported": true,
+      "reason": "Matches indicator labels and source.",
+      "isos": []
+    }
+  }
+}

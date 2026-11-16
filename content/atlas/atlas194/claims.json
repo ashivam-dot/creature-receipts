@@ -1,0 +1,1293 @@
+{
+  "version": 1,
+  "evidence": {
+    "version": 1,
+    "indicator": "SE.TER.CUAT.DO.ZS",
+    "definition": "The percentage of population ages 25 and over that attained or completed Doctoral or equivalent.",
+    "source": "https://data.worldbank.org/indicator/SE.TER.CUAT.DO.ZS",
+    "source_response_sha256": "0e6bdd395ff1c1e98993e99f8c06e1ceb08525626babbe242b82a571dfbe7a0a",
+    "source_organization": "Data API, UN Educational, Scientific and Cultural Organization (UNESCO), uri: https://databrowser.uis.unesco.org/resources, note: The data are obtained through the UIS API.  Detailed documentation is available at: https://api.uis.unesco.org/api/public/documentation/, publisher: UNESCO Institute for Statistics (UIS), type: Bulk file (csv), date accessed: 2026-03-19, date published: 2026-02",
+    "year_label": "latest available 2019–2024",
+    "universe": "mapped countries and territories with data",
+    "count": 108,
+    "threshold": null,
+    "at_or_above": null,
+    "entities": {
+      "ALB": {
+        "name": "Albania",
+        "value": 0.332650005817413,
+        "display": "0.3%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 58
+      },
+      "AND": {
+        "name": "Andorra",
+        "value": 0.449779987335205,
+        "display": "0.4%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 53
+      },
+      "ARM": {
+        "name": "Armenia",
+        "value": 0.939641902556647,
+        "display": "0.9%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 27
+      },
+      "AUS": {
+        "name": "Australia",
+        "value": 1.82231193609471,
+        "display": "1.8%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 9
+      },
+      "AUT": {
+        "name": "Austria",
+        "value": 1.19173002243042,
+        "display": "1.2%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 19
+      },
+      "AZE": {
+        "name": "Azerbaijan",
+        "value": 0.358740001916885,
+        "display": "0.4%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 55
+      },
+      "BHS": {
+        "name": "Bahamas, The",
+        "value": 0.527660012245178,
+        "display": "0.5%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 50
+      },
+      "BHR": {
+        "name": "Bahrain",
+        "value": 0.626990020275116,
+        "display": "0.6%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 44
+      },
+      "BGD": {
+        "name": "Bangladesh",
+        "value": 0.0444302568923854,
+        "display": "0.04%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 103
+      },
+      "BLR": {
+        "name": "Belarus",
+        "value": 0.302630007266998,
+        "display": "0.3%",
+        "year": 2019,
+        "unit": "%",
+        "rank": 62
+      },
+      "BEL": {
+        "name": "Belgium",
+        "value": 0.975638331331699,
+        "display": "1%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 25
+      },
+      "BLZ": {
+        "name": "Belize",
+        "value": 0.276439994573593,
+        "display": "0.3%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 66
+      },
+      "BOL": {
+        "name": "Bolivia",
+        "value": 0.0576154633660614,
+        "display": "0.1%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 97
+      },
+      "BIH": {
+        "name": "Bosnia and Herzegovina",
+        "value": 0.205956670181246,
+        "display": "0.2%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 76
+      },
+      "BWA": {
+        "name": "Botswana",
+        "value": 0.387318736983447,
+        "display": "0.4%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 54
+      },
+      "BRN": {
+        "name": "Brunei Darussalam",
+        "value": 1.29533504510512,
+        "display": "1.3%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 14
+      },
+      "BGR": {
+        "name": "Bulgaria",
+        "value": 0.318948950065204,
+        "display": "0.3%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 59
+      },
+      "BFA": {
+        "name": "Burkina Faso",
+        "value": 0.283410012722015,
+        "display": "0.3%",
+        "year": 2019,
+        "unit": "%",
+        "rank": 64
+      },
+      "CPV": {
+        "name": "Cabo Verde",
+        "value": 0.0294300001114607,
+        "display": "0.03%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 106
+      },
+      "CAN": {
+        "name": "Canada",
+        "value": 1.06719994544983,
+        "display": "1.1%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 23
+      },
+      "CHL": {
+        "name": "Chile",
+        "value": 0.233978415125335,
+        "display": "0.2%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 72
+      },
+      "CHN": {
+        "name": "China",
+        "value": 0.119779996573925,
+        "display": "0.1%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 87
+      },
+      "COL": {
+        "name": "Colombia",
+        "value": 0.16597988431799,
+        "display": "0.2%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 81
+      },
+      "CRI": {
+        "name": "Costa Rica",
+        "value": 0.221780002117157,
+        "display": "0.2%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 75
+      },
+      "CIV": {
+        "name": "Cote d'Ivoire",
+        "value": 0.854309976100922,
+        "display": "0.9%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 30
+      },
+      "HRV": {
+        "name": "Croatia",
+        "value": 0.84844302293195,
+        "display": "0.8%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 31
+      },
+      "CYP": {
+        "name": "Cyprus",
+        "value": 0.926446714916102,
+        "display": "0.9%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 29
+      },
+      "CZE": {
+        "name": "Czechia",
+        "value": 0.741046297079685,
+        "display": "0.7%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 37
+      },
+      "DNK": {
+        "name": "Denmark",
+        "value": 1.25328939014803,
+        "display": "1.3%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 18
+      },
+      "ECU": {
+        "name": "Ecuador",
+        "value": 0.235029995441437,
+        "display": "0.2%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 71
+      },
+      "EST": {
+        "name": "Estonia",
+        "value": 0.718256044263215,
+        "display": "0.7%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 41
+      },
+      "ETH": {
+        "name": "Ethiopia",
+        "value": 0.0372315264553375,
+        "display": "0.04%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 105
+      },
+      "FIN": {
+        "name": "Finland",
+        "value": 1.58122674726,
+        "display": "1.6%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 10
+      },
+      "FRA": {
+        "name": "France",
+        "value": 1.06558989943445,
+        "display": "1.1%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 24
+      },
+      "GEO": {
+        "name": "Georgia",
+        "value": 0.521070003509521,
+        "display": "0.5%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 51
+      },
+      "DEU": {
+        "name": "Germany",
+        "value": 1.85658852830127,
+        "display": "1.9%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 7
+      },
+      "GHA": {
+        "name": "Ghana",
+        "value": 0.0559459843557144,
+        "display": "0.1%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 99
+      },
+      "GRC": {
+        "name": "Greece",
+        "value": 0.726684227102461,
+        "display": "0.7%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 40
+      },
+      "GTM": {
+        "name": "Guatemala",
+        "value": 0.0080199996009469,
+        "display": "0.01%",
+        "year": 2019,
+        "unit": "%",
+        "rank": 108
+      },
+      "HUN": {
+        "name": "Hungary",
+        "value": 0.530222124314408,
+        "display": "0.5%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 49
+      },
+      "ISL": {
+        "name": "Iceland",
+        "value": 1.27730554901901,
+        "display": "1.3%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 16
+      },
+      "IND": {
+        "name": "India",
+        "value": 0.0769900009036064,
+        "display": "0.1%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 94
+      },
+      "IDN": {
+        "name": "Indonesia",
+        "value": 0.0476439743896681,
+        "display": "0.05%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 100
+      },
+      "IRN": {
+        "name": "Iran, Islamic Rep.",
+        "value": 0.344496543828189,
+        "display": "0.3%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 57
+      },
+      "IRQ": {
+        "name": "Iraq",
+        "value": 0.137251974181772,
+        "display": "0.1%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 83
+      },
+      "IRL": {
+        "name": "Ireland",
+        "value": 1.53768415711434,
+        "display": "1.5%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 12
+      },
+      "ISR": {
+        "name": "Israel",
+        "value": 1.5791696274892,
+        "display": "1.6%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 11
+      },
+      "ITA": {
+        "name": "Italy",
+        "value": 0.454112413383147,
+        "display": "0.5%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 52
+      },
+      "JOR": {
+        "name": "Jordan",
+        "value": 0.935289978981018,
+        "display": "0.9%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 28
+      },
+      "KEN": {
+        "name": "Kenya",
+        "value": 0.0996199995279312,
+        "display": "0.1%",
+        "year": 2019,
+        "unit": "%",
+        "rank": 90
+      },
+      "KIR": {
+        "name": "Kiribati",
+        "value": 0.0776221128360469,
+        "display": "0.1%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 93
+      },
+      "KOR": {
+        "name": "Korea, Rep.",
+        "value": 0.969981787057433,
+        "display": "1%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 26
+      },
+      "LVA": {
+        "name": "Latvia",
+        "value": 0.692002107070704,
+        "display": "0.7%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 43
+      },
+      "LBN": {
+        "name": "Lebanon",
+        "value": 2.41118903497293,
+        "display": "2.4%",
+        "year": 2019,
+        "unit": "%",
+        "rank": 4
+      },
+      "LTU": {
+        "name": "Lithuania",
+        "value": 0.623845609745795,
+        "display": "0.6%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 45
+      },
+      "LUX": {
+        "name": "Luxembourg",
+        "value": 2.84207672301988,
+        "display": "2.8%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 2
+      },
+      "MWI": {
+        "name": "Malawi",
+        "value": 0.104205954298807,
+        "display": "0.1%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 89
+      },
+      "MYS": {
+        "name": "Malaysia",
+        "value": 0.0992700010538101,
+        "display": "0.1%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 91
+      },
+      "MLI": {
+        "name": "Mali",
+        "value": 0.229530717773165,
+        "display": "0.2%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 74
+      },
+      "MLT": {
+        "name": "Malta",
+        "value": 0.706610749215657,
+        "display": "0.7%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 42
+      },
+      "MHL": {
+        "name": "Marshall Islands",
+        "value": 0.188996220075598,
+        "display": "0.2%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 79
+      },
+      "MUS": {
+        "name": "Mauritius",
+        "value": 0.302420944143227,
+        "display": "0.3%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 63
+      },
+      "MEX": {
+        "name": "Mexico",
+        "value": 0.313980013132095,
+        "display": "0.3%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 61
+      },
+      "MDA": {
+        "name": "Moldova",
+        "value": 0.238849997520447,
+        "display": "0.2%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 69
+      },
+      "MNG": {
+        "name": "Mongolia",
+        "value": 0.245707982089266,
+        "display": "0.2%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 68
+      },
+      "MNE": {
+        "name": "Montenegro",
+        "value": 0.136163430043876,
+        "display": "0.1%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 84
+      },
+      "MOZ": {
+        "name": "Mozambique",
+        "value": 0.047070000320673,
+        "display": "0.05%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 102
+      },
+      "MMR": {
+        "name": "Myanmar",
+        "value": 0.0476099997758865,
+        "display": "0.05%",
+        "year": 2019,
+        "unit": "%",
+        "rank": 101
+      },
+      "NAM": {
+        "name": "Namibia",
+        "value": 0.133509993553162,
+        "display": "0.1%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 85
+      },
+      "NLD": {
+        "name": "Netherlands",
+        "value": 1.07392450870305,
+        "display": "1.1%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 22
+      },
+      "NZL": {
+        "name": "New Zealand",
+        "value": 1.12228000164032,
+        "display": "1.1%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 21
+      },
+      "NGA": {
+        "name": "Nigeria",
+        "value": 0.600767894521955,
+        "display": "0.6%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 46
+      },
+      "MKD": {
+        "name": "North Macedonia",
+        "value": 0.352544693904768,
+        "display": "0.4%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 56
+      },
+      "NOR": {
+        "name": "Norway",
+        "value": 1.52758850279791,
+        "display": "1.5%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 13
+      },
+      "OMN": {
+        "name": "Oman",
+        "value": 0.317580014467239,
+        "display": "0.3%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 60
+      },
+      "PAK": {
+        "name": "Pakistan",
+        "value": 0.0393257036898466,
+        "display": "0.04%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 104
+      },
+      "PLW": {
+        "name": "Palau",
+        "value": 0.278460278460278,
+        "display": "0.3%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 65
+      },
+      "PAN": {
+        "name": "Panama",
+        "value": 0.238809807915596,
+        "display": "0.2%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 70
+      },
+      "PRY": {
+        "name": "Paraguay",
+        "value": 0.0910300016403198,
+        "display": "0.1%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 92
+      },
+      "PHL": {
+        "name": "Philippines",
+        "value": 0.174031890484343,
+        "display": "0.2%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 80
+      },
+      "POL": {
+        "name": "Poland",
+        "value": 0.776409983634949,
+        "display": "0.8%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 34
+      },
+      "PRT": {
+        "name": "Portugal",
+        "value": 0.762600600875874,
+        "display": "0.8%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 35
+      },
+      "PRI": {
+        "name": "Puerto Rico (US)",
+        "value": 1.18062779239078,
+        "display": "1.2%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 20
+      },
+      "QAT": {
+        "name": "Qatar",
+        "value": 0.589690029621124,
+        "display": "0.6%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 47
+      },
+      "ROU": {
+        "name": "Romania",
+        "value": 0.142228004371551,
+        "display": "0.1%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 82
+      },
+      "RUS": {
+        "name": "Russian Federation",
+        "value": 1.26895999908447,
+        "display": "1.3%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 17
+      },
+      "RWA": {
+        "name": "Rwanda",
+        "value": 0.066639788804145,
+        "display": "0.1%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 96
+      },
+      "SAU": {
+        "name": "Saudi Arabia",
+        "value": 0.728789985179901,
+        "display": "0.7%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 38
+      },
+      "SEN": {
+        "name": "Senegal",
+        "value": 0.246998383896459,
+        "display": "0.2%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 67
+      },
+      "SRB": {
+        "name": "Serbia",
+        "value": 0.578726034430744,
+        "display": "0.6%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 48
+      },
+      "SVK": {
+        "name": "Slovak Republic",
+        "value": 0.752927649736529,
+        "display": "0.8%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 36
+      },
+      "SVN": {
+        "name": "Slovenia",
+        "value": 2.40675375117129,
+        "display": "2.4%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 5
+      },
+      "ZAF": {
+        "name": "South Africa",
+        "value": 0.202260002493858,
+        "display": "0.2%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 77
+      },
+      "ESP": {
+        "name": "Spain",
+        "value": 0.830905981627942,
+        "display": "0.8%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 32
+      },
+      "SWE": {
+        "name": "Sweden",
+        "value": 1.84892788899631,
+        "display": "1.8%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 8
+      },
+      "CHE": {
+        "name": "Switzerland",
+        "value": 3.30906845420646,
+        "display": "3.3%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 1
+      },
+      "THA": {
+        "name": "Thailand",
+        "value": 0.130300000309944,
+        "display": "0.1%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 86
+      },
+      "TLS": {
+        "name": "Timor-Leste",
+        "value": 0.194049999117851,
+        "display": "0.2%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 78
+      },
+      "TUN": {
+        "name": "Tunisia",
+        "value": 0.793233281280688,
+        "display": "0.8%",
+        "year": 2019,
+        "unit": "%",
+        "rank": 33
+      },
+      "TUR": {
+        "name": "Turkiye",
+        "value": 2.73705754946055,
+        "display": "2.7%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 3
+      },
+      "TKM": {
+        "name": "Turkmenistan",
+        "value": 0.0197299998253584,
+        "display": "0.02%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 107
+      },
+      "ARE": {
+        "name": "United Arab Emirates",
+        "value": 0.72816002368927,
+        "display": "0.7%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 39
+      },
+      "GBR": {
+        "name": "United Kingdom",
+        "value": 1.28208994865418,
+        "display": "1.3%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 15
+      },
+      "USA": {
+        "name": "United States",
+        "value": 2.29690777721687,
+        "display": "2.3%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 6
+      },
+      "VUT": {
+        "name": "Vanuatu",
+        "value": 0.0559964878589806,
+        "display": "0.1%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 98
+      },
+      "VNM": {
+        "name": "Viet Nam",
+        "value": 0.0668640898713094,
+        "display": "0.1%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 95
+      },
+      "PSE": {
+        "name": "West Bank and Gaza",
+        "value": 0.233938913468265,
+        "display": "0.2%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 73
+      },
+      "ZWE": {
+        "name": "Zimbabwe",
+        "value": 0.109727964253998,
+        "display": "0.1%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 88
+      }
+    }
+  },
+  "review": {
+    "errors": [],
+    "claims": [
+      {
+        "surface": "beat_0",
+        "text": "USA has 2.3% of adults with a doctorate. Nigeria has 0.6%.",
+        "isos": [
+          "USA",
+          "NGA"
+        ],
+        "support": "USA value is 2.29690777721687 (displayed as 2.3%), Nigeria value is 0.600767894521955 (displayed as 0.6%).",
+        "evidence": {
+          "USA": {
+            "name": "United States",
+            "value": 2.29690777721687,
+            "display": "2.3%",
+            "year": 2024,
+            "unit": "%",
+            "rank": 6
+          },
+          "NGA": {
+            "name": "Nigeria",
+            "value": 0.600767894521955,
+            "display": "0.6%",
+            "year": 2023,
+            "unit": "%",
+            "rank": 46
+          }
+        }
+      },
+      {
+        "surface": "beat_1",
+        "text": "USA has 3.8 times the share seen in Nigeria.",
+        "isos": [
+          "USA",
+          "NGA"
+        ],
+        "support": "2.29690777721687 / 0.600767894521955 = 3.823... which rounds to 3.8 times.",
+        "evidence": {
+          "USA": {
+            "name": "United States",
+            "value": 2.29690777721687,
+            "display": "2.3%",
+            "year": 2024,
+            "unit": "%",
+            "rank": 6
+          },
+          "NGA": {
+            "name": "Nigeria",
+            "value": 0.600767894521955,
+            "display": "0.6%",
+            "year": 2023,
+            "unit": "%",
+            "rank": 46
+          }
+        }
+      },
+      {
+        "surface": "beat_2",
+        "text": "It counts everyone 25 and over who completed a doctoral or equivalent degree.",
+        "isos": [],
+        "support": "Definition: 'The percentage of population ages 25 and over that attained or completed Doctoral or equivalent.'",
+        "evidence": {}
+      },
+      {
+        "surface": "beat_3",
+        "text": "Nigeria has 0.6%, sitting above the global median of 0.4%.",
+        "isos": [
+          "NGA"
+        ],
+        "support": "Nigeria value is 0.6%. Among the 108 entities, the median value is approximately 0.35% - 0.4%.",
+        "evidence": {
+          "NGA": {
+            "name": "Nigeria",
+            "value": 0.600767894521955,
+            "display": "0.6%",
+            "year": 2023,
+            "unit": "%",
+            "rank": 46
+          }
+        }
+      },
+      {
+        "surface": "beat_4",
+        "text": "Switzerland is the world's highest at 3.3%. Germany has 1.9%, and Guatemala is the lowest at 0.01%.",
+        "isos": [
+          "CHE",
+          "DEU",
+          "GTM"
+        ],
+        "support": "Switzerland rank 1 with 3.309% (displayed as 3.3%), Germany rank 7 with 1.856% (displayed as 1.9%), Guatemala rank 108 with 0.008% (displayed as 0.01%).",
+        "evidence": {
+          "CHE": {
+            "name": "Switzerland",
+            "value": 3.30906845420646,
+            "display": "3.3%",
+            "year": 2024,
+            "unit": "%",
+            "rank": 1
+          },
+          "DEU": {
+            "name": "Germany",
+            "value": 1.85658852830127,
+            "display": "1.9%",
+            "year": 2023,
+            "unit": "%",
+            "rank": 7
+          },
+          "GTM": {
+            "name": "Guatemala",
+            "value": 0.0080199996009469,
+            "display": "0.01%",
+            "year": 2019,
+            "unit": "%",
+            "rank": 108
+          }
+        }
+      },
+      {
+        "surface": "beat_5",
+        "text": "How many people hold a doctoral degree where you live?",
+        "isos": [],
+        "support": "Ordinary audience question matching card 5.",
+        "evidence": {}
+      },
+      {
+        "surface": "title",
+        "text": "USA vs Nigeria: The Doctoral Degree Gap",
+        "isos": [
+          "USA",
+          "NGA"
+        ],
+        "support": "Title is a framing comparison between USA and Nigeria regarding doctoral degrees.",
+        "method": "complete-surface-check",
+        "evidence": {
+          "USA": {
+            "name": "United States",
+            "value": 2.29690777721687,
+            "display": "2.3%",
+            "year": 2024,
+            "unit": "%",
+            "rank": 6
+          },
+          "NGA": {
+            "name": "Nigeria",
+            "value": 0.600767894521955,
+            "display": "0.6%",
+            "year": 2023,
+            "unit": "%",
+            "rank": 46
+          }
+        }
+      },
+      {
+        "surface": "hook",
+        "text": "ADVANCED DEGREES",
+        "isos": [],
+        "support": "Hook introduces doctoral degrees.",
+        "method": "complete-surface-check",
+        "evidence": {}
+      },
+      {
+        "surface": "description",
+        "text": "A look at the percentage of adults who hold doctoral degrees in the USA and Nigeria, compared to the global median and extremes.",
+        "isos": [
+          "USA",
+          "NGA"
+        ],
+        "support": "Accurately describes the topic covering the USA, Nigeria, global median, and extremes.",
+        "method": "complete-surface-check",
+        "evidence": {
+          "USA": {
+            "name": "United States",
+            "value": 2.29690777721687,
+            "display": "2.3%",
+            "year": 2024,
+            "unit": "%",
+            "rank": 6
+          },
+          "NGA": {
+            "name": "Nigeria",
+            "value": 0.600767894521955,
+            "display": "0.6%",
+            "year": 2023,
+            "unit": "%",
+            "rank": 46
+          }
+        }
+      },
+      {
+        "surface": "beat_0",
+        "text": "USA has 2.3% of adults with a doctorate. Nigeria has 0.6%.",
+        "isos": [
+          "USA",
+          "NGA"
+        ],
+        "support": "USA and Nigeria values match the data (2.3% and 0.6%).",
+        "method": "complete-surface-check",
+        "evidence": {
+          "USA": {
+            "name": "United States",
+            "value": 2.29690777721687,
+            "display": "2.3%",
+            "year": 2024,
+            "unit": "%",
+            "rank": 6
+          },
+          "NGA": {
+            "name": "Nigeria",
+            "value": 0.600767894521955,
+            "display": "0.6%",
+            "year": 2023,
+            "unit": "%",
+            "rank": 46
+          }
+        }
+      },
+      {
+        "surface": "beat_1",
+        "text": "USA has 3.8 times the share seen in Nigeria.",
+        "isos": [
+          "USA",
+          "NGA"
+        ],
+        "support": "Ratio between USA and Nigeria values is accurately calculated.",
+        "method": "complete-surface-check",
+        "evidence": {
+          "USA": {
+            "name": "United States",
+            "value": 2.29690777721687,
+            "display": "2.3%",
+            "year": 2024,
+            "unit": "%",
+            "rank": 6
+          },
+          "NGA": {
+            "name": "Nigeria",
+            "value": 0.600767894521955,
+            "display": "0.6%",
+            "year": 2023,
+            "unit": "%",
+            "rank": 46
+          }
+        }
+      },
+      {
+        "surface": "beat_2",
+        "text": "It counts everyone 25 and over who completed a doctoral or equivalent degree.",
+        "isos": [],
+        "support": "Directly reflects the indicator definition.",
+        "method": "complete-surface-check",
+        "evidence": {}
+      },
+      {
+        "surface": "beat_3",
+        "text": "Nigeria has 0.6%, sitting above the global median of 0.4%.",
+        "isos": [
+          "NGA"
+        ],
+        "support": "Nigeria value is 0.6%, which is above the median.",
+        "method": "complete-surface-check",
+        "evidence": {
+          "NGA": {
+            "name": "Nigeria",
+            "value": 0.600767894521955,
+            "display": "0.6%",
+            "year": 2023,
+            "unit": "%",
+            "rank": 46
+          }
+        }
+      },
+      {
+        "surface": "beat_4",
+        "text": "Switzerland is the world's highest at 3.3%. Germany has 1.9%, and Guatemala is the lowest at 0.01%.",
+        "isos": [
+          "CHE",
+          "DEU",
+          "GTM"
+        ],
+        "support": "Switzerland, Germany, and Guatemala ranks and values match the dataset exactly.",
+        "method": "complete-surface-check",
+        "evidence": {
+          "CHE": {
+            "name": "Switzerland",
+            "value": 3.30906845420646,
+            "display": "3.3%",
+            "year": 2024,
+            "unit": "%",
+            "rank": 1
+          },
+          "DEU": {
+            "name": "Germany",
+            "value": 1.85658852830127,
+            "display": "1.9%",
+            "year": 2023,
+            "unit": "%",
+            "rank": 7
+          },
+          "GTM": {
+            "name": "Guatemala",
+            "value": 0.0080199996009469,
+            "display": "0.01%",
+            "year": 2019,
+            "unit": "%",
+            "rank": 108
+          }
+        }
+      },
+      {
+        "surface": "beat_5",
+        "text": "How many people hold a doctoral degree where you live?",
+        "isos": [],
+        "support": "Matches card 5 question.",
+        "method": "complete-surface-check",
+        "evidence": {}
+      },
+      {
+        "surface": "card_5",
+        "text": [
+          "Doctoral Degrees?",
+          "Adults with a Doctorate (%)"
+        ],
+        "isos": [],
+        "support": "Accurately labels the indicator topic and unit as a percentage.",
+        "method": "complete-surface-check",
+        "evidence": {}
+      }
+    ],
+    "surface_checks": {
+      "title": {
+        "supported": true,
+        "reason": "Title is a framing comparison between USA and Nigeria regarding doctoral degrees.",
+        "isos": [
+          "USA",
+          "NGA"
+        ]
+      },
+      "hook": {
+        "supported": true,
+        "reason": "Hook introduces doctoral degrees.",
+        "isos": []
+      },
+      "description": {
+        "supported": true,
+        "reason": "Accurately describes the topic covering the USA, Nigeria, global median, and extremes.",
+        "isos": [
+          "USA",
+          "NGA"
+        ]
+      },
+      "beat_0": {
+        "supported": true,
+        "reason": "USA and Nigeria values match the data (2.3% and 0.6%).",
+        "isos": [
+          "USA",
+          "NGA"
+        ]
+      },
+      "beat_1": {
+        "supported": true,
+        "reason": "Ratio between USA and Nigeria values is accurately calculated.",
+        "isos": [
+          "USA",
+          "NGA"
+        ]
+      },
+      "beat_2": {
+        "supported": true,
+        "reason": "Directly reflects the indicator definition.",
+        "isos": []
+      },
+      "beat_3": {
+        "supported": true,
+        "reason": "Nigeria value is 0.6%, which is above the median.",
+        "isos": [
+          "NGA"
+        ]
+      },
+      "beat_4": {
+        "supported": true,
+        "reason": "Switzerland, Germany, and Guatemala ranks and values match the dataset exactly.",
+        "isos": [
+          "CHE",
+          "DEU",
+          "GTM"
+        ]
+      },
+      "beat_5": {
+        "supported": true,
+        "reason": "Matches card 5 question.",
+        "isos": []
+      },
+      "card_5": {
+        "supported": true,
+        "reason": "Accurately labels the indicator topic and unit as a percentage.",
+        "isos": []
+      }
+    },
+    "warnings": [
+      {
+        "surface": "hook",
+        "claim": "ADVANCED DEGREES",
+        "reason": "The indicator specifically measures Doctoral or equivalent degrees, so calling it 'ADVANCED DEGREES' broadly is a stylistic mismatch.",
+        "severity": "style"
+      }
+    ]
+  },
+  "script_sha256": "0b45d4128d758a880dc939f448494719141c723419f3cd92faf8d0456ed1d7ed",
+  "data_sha256": "b1bfdd9800d2745f31197ce545792272ee6a57d0de0479bdc13d83cfda08359c",
+  "reviewer_model": "gemini-3.5-flash-lite"
+}

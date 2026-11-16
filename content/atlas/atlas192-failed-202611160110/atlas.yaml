@@ -1,0 +1,77 @@
+id: atlas192
+title: Is INDIA Near the Top for Rural Electricity?
+format: spotlight
+hook_text: ELECTRICITY ACCESS GAP
+description: Comparing rural electricity access rates across 203 countries and territories based on World Bank data.
+hashtags:
+- '#population'
+- '#infrastructure'
+- '#geography'
+tags:
+- population
+- rural population with electricity access
+- countries ranked by rural population with electricity access
+- Viet Nam
+- South Sudan
+- world map
+- geography
+- atlas in numbers
+sources:
+- https://data.worldbank.org/indicator/EG.ELC.ACCS.RU.ZS
+dataset:
+  kind: worldbank
+  indicator: EG.ELC.ACCS.RU.ZS
+  label: Rural population with electricity access
+  unit: '%'
+  source: World Bank
+  min_year: 2019
+scale:
+  edges:
+  - 25.0
+  - 50.0
+  - 75.0
+  - 99.0
+  labels:
+  - Under 25%
+  - 25-50%
+  - 50-75%
+  - 75-99%
+  - 100%
+value_format: '{v:.1f}%'
+beats:
+- text: In most nations on Earth, 100% of rural residents have power. South Sudan has 0.7%.
+  shot:
+    callouts:
+    - SSD
+- text: India has 99.9% of its rural population connected.
+  shot:
+    kind: country
+    iso: IND
+- text: India has 77 times the rural power access of Angola.
+  shot:
+    kind: group
+    isos:
+    - IND
+    - AGO
+- text: The USA has 100% rural access. China also has 100%.
+  shot:
+    kind: group
+    isos:
+    - USA
+    - CHN
+- text: At the bottom, Burundi has 3.6%, Central African Republic 2%, Angola 1.3%, DR Congo 1%, and South Sudan
+    0.7%.
+  shot:
+    kind: rank
+    isos:
+    - BDI
+    - CAF
+    - AGO
+    - COD
+    - SSD
+- text: How reliable is rural electricity in your country?
+  shot:
+    kind: card
+    lines:
+    - Rural Electricity Access
+    - World Bank Data

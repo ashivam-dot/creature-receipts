@@ -1,0 +1,80 @@
+id: atlas193
+title: Which Country Reinvests the MOST in Fixed Assets?
+format: odd_one_out
+hook_text: FIXED ASSET INVESTMENT
+description: A global look at gross fixed capital formation as a percentage of GDP, featuring Tanzania, Bhutan,
+  China, the USA, and the UK.
+hashtags:
+- '#economy'
+- '#geography'
+- '#countries'
+tags:
+- wealth
+- gross fixed capital formation % of gdp
+- countries ranked by gross fixed capital formation % of gdp
+- Tanzania
+- Sudan
+- world map
+- geography
+- atlas in numbers
+sources:
+- https://data.worldbank.org/indicator/NE.GDI.FTOT.ZS
+dataset:
+  kind: worldbank
+  indicator: NE.GDI.FTOT.ZS
+  label: Gross fixed capital formation (% of GDP)
+  unit: '%'
+  source: World Bank
+  min_year: 2019
+scale:
+  edges:
+  - 15.0
+  - 20.0
+  - 25.0
+  - 30.0
+  labels:
+  - Under 15%
+  - 15% to 20%
+  - 20% to 25%
+  - 25% to 30%
+  - Over 30%
+value_format: '{v:.1f}%'
+beats:
+- text: The USA puts 21.3% of its economy into fixed assets, but one giant breaks this pattern.
+  shot:
+    callouts:
+    - USA
+    - GBR
+- text: Between the UK, the USA, and China, one reinvests a far larger share into fixed capital.
+  shot:
+    kind: group
+    isos:
+    - GBR
+    - USA
+    - CHN
+- text: The UK puts 18.9% of its economy into fixed assets.
+  shot:
+    kind: country
+    iso: GBR
+- text: The USA puts 21.3%, putting income into infrastructure and equipment.
+  shot:
+    kind: country
+    iso: USA
+- text: China charges ahead, putting 39.7% of its economy into fixed capital.
+  shot:
+    kind: country
+    iso: CHN
+- text: Yet Tanzania tops the world, putting 42.2% of its economy into fixed assets.
+  shot:
+    kind: country
+    iso: TZA
+- text: Bhutan follows right behind, putting 42.1% into fixed assets.
+  shot:
+    kind: country
+    iso: BTN
+- text: How much of its economy does your country put into fixed assets?
+  shot:
+    kind: card
+    lines:
+    - FIXED ASSET INVESTMENT
+    - Gross fixed capital formation (% of GDP)

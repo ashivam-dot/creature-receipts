@@ -1,0 +1,183 @@
+{
+  "errors": [],
+  "claims": [
+    {
+      "surface": "title",
+      "text": "Which Country Reinvests the MOST in Fixed Assets?",
+      "isos": [],
+      "support": "Tanzania is rank 1 with 42.2%"
+    },
+    {
+      "surface": "hook",
+      "text": "FIXED ASSET INVESTMENT",
+      "isos": [],
+      "support": "Indicator name: Gross fixed capital formation (% of GDP)"
+    },
+    {
+      "surface": "description",
+      "text": "A global look at gross fixed capital formation as a percentage of GDP, featuring Tanzania, Bhutan, China, the USA, and the UK.",
+      "isos": [
+        "TZA",
+        "BTN",
+        "CHN",
+        "USA",
+        "GBR"
+      ],
+      "support": "TZA: 42.2%, BTN: 42.1%, CHN: 39.7%, USA: 21.3%, GBR: 18.9%"
+    },
+    {
+      "surface": "beat_0",
+      "text": "The USA puts 21.3% of its economy into fixed assets, but one giant breaks this pattern.",
+      "isos": [
+        "USA"
+      ],
+      "support": "USA value is 21.3498335194267, display 21.3%"
+    },
+    {
+      "surface": "beat_1",
+      "text": "Between the UK, the USA, and China, one reinvests a far larger share into fixed capital.",
+      "isos": [
+        "GBR",
+        "USA",
+        "CHN"
+      ],
+      "support": "GBR: 18.9%, USA: 21.3%, CHN: 39.7%"
+    },
+    {
+      "surface": "beat_2",
+      "text": "The UK puts 18.9% of its economy into fixed assets.",
+      "isos": [
+        "GBR"
+      ],
+      "support": "GBR value is 18.8835936906326, display 18.9%"
+    },
+    {
+      "surface": "beat_3",
+      "text": "The USA puts 21.3%, putting income into infrastructure and equipment.",
+      "isos": [
+        "USA"
+      ],
+      "support": "USA value is 21.3498335194267, display 21.3%"
+    },
+    {
+      "surface": "beat_4",
+      "text": "China charges ahead, putting 39.7% of its economy into fixed capital.",
+      "isos": [
+        "CHN"
+      ],
+      "support": "CHN value is 39.6519325237885, display 39.7%"
+    },
+    {
+      "surface": "beat_5",
+      "text": "Yet Tanzania tops the world, putting 42.2% of its economy into fixed assets.",
+      "isos": [
+        "TZA"
+      ],
+      "support": "TZA rank is 1 with value 42.2197765584611, display 42.2%"
+    },
+    {
+      "surface": "beat_6",
+      "text": "Bhutan follows right behind, putting 42.1% into fixed assets.",
+      "isos": [
+        "BTN"
+      ],
+      "support": "BTN rank is 2 with value 42.1455062871038, display 42.1%"
+    },
+    {
+      "surface": "beat_7",
+      "text": "How much of its economy does your country put into fixed assets?",
+      "isos": [],
+      "support": "Prompt for user engagement"
+    },
+    {
+      "surface": "card_7",
+      "text": "FIXED ASSET INVESTMENT Gross fixed capital formation (% of GDP)",
+      "isos": [],
+      "support": "Matches indicator definition and title"
+    }
+  ],
+  "surface_checks": {
+    "title": {
+      "supported": true,
+      "reason": "Tanzania has the highest value at 42.2% (rank 1).",
+      "isos": []
+    },
+    "hook": {
+      "supported": true,
+      "reason": "Accurately names the topic.",
+      "isos": []
+    },
+    "description": {
+      "supported": true,
+      "reason": "All mentioned countries are featured with correct data in the dataset.",
+      "isos": [
+        "TZA",
+        "BTN",
+        "CHN",
+        "USA",
+        "GBR"
+      ]
+    },
+    "beat_0": {
+      "supported": true,
+      "reason": "USA value is 21.3% (21.349%).",
+      "isos": [
+        "USA"
+      ]
+    },
+    "beat_1": {
+      "supported": true,
+      "reason": "GBR is 18.9%, USA is 21.3%, CHN is 39.7%; China clearly reinvests a larger share.",
+      "isos": [
+        "GBR",
+        "USA",
+        "CHN"
+      ]
+    },
+    "beat_2": {
+      "supported": true,
+      "reason": "UK value is 18.9% (18.88%).",
+      "isos": [
+        "GBR"
+      ]
+    },
+    "beat_3": {
+      "supported": true,
+      "reason": "USA value is 21.3%.",
+      "isos": [
+        "USA"
+      ]
+    },
+    "beat_4": {
+      "supported": true,
+      "reason": "China value is 39.7% (39.65%).",
+      "isos": [
+        "CHN"
+      ]
+    },
+    "beat_5": {
+      "supported": true,
+      "reason": "Tanzania is rank 1 globally with 42.2% (42.21%).",
+      "isos": [
+        "TZA"
+      ]
+    },
+    "beat_6": {
+      "supported": true,
+      "reason": "Bhutan is rank 2 globally with 42.1% (42.14%).",
+      "isos": [
+        "BTN"
+      ]
+    },
+    "beat_7": {
+      "supported": true,
+      "reason": "Standard call to action question.",
+      "isos": []
+    },
+    "card_7": {
+      "supported": true,
+      "reason": "Accurately reflects indicator title and definition.",
+      "isos": []
+    }
+  }
+}
