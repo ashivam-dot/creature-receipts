@@ -1,0 +1,76 @@
+id: atlas196
+title: Places Ranked by Global Trade Share of GDP
+format: rank_ladder
+hook_text: GLOBAL TRADE SHARE
+description: Ranking countries and territories by trade as a percentage of GDP using official World Bank data.
+hashtags:
+- '#economy'
+- '#geography'
+- '#countries'
+tags:
+- wealth
+- trade as a percentage of gdp
+- countries ranked by trade as a percentage of gdp
+- Ireland
+- Sudan
+- world map
+- geography
+- atlas in numbers
+sources:
+- https://data.worldbank.org/indicator/NE.TRD.GNFS.ZS
+dataset:
+  kind: worldbank
+  indicator: NE.TRD.GNFS.ZS
+  label: Trade as a percentage of GDP
+  unit: '%'
+  source: World Bank
+  min_year: 2019
+scale:
+  edges:
+  - 40.0
+  - 80.0
+  - 120.0
+  - 160.0
+  labels:
+  - Under 40%
+  - 40-80%
+  - 80-120%
+  - 120-160%
+  - Over 160%
+value_format: '{v:.0f}%'
+beats:
+- text: In USA, global trade accounts for only 25% of economic output.
+  shot:
+    callouts:
+    - USA
+    - SDN
+- text: Sudan is the world's lowest, where trade equals just 2% of total output.
+  shot:
+    kind: country
+    iso: SDN
+- text: Trade is the sum of exports and imports of goods and services.
+  shot:
+    kind: country
+    iso: USA
+  basis: Trade is the sum of exports and imports of goods and services.
+- text: The largest economies trade less relative to their size. USA is 25%, and China is 38%.
+  shot:
+    kind: group
+    isos:
+    - USA
+    - CHN
+- text: 'Climbing higher: Pakistan has 27%, India has 46%, UK has 62%, Germany has 79%, and Mexico has 80%.'
+  shot:
+    kind: rank
+    isos:
+    - PAK
+    - IND
+    - GBR
+    - DEU
+    - MEX
+- text: How much of your country's economic output comes from global trade?
+  shot:
+    kind: card
+    lines:
+    - GLOBAL TRADE
+    - Trade as % of GDP

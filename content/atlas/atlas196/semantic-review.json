@@ -1,0 +1,113 @@
+{
+  "errors": [],
+  "claims": [
+    {
+      "surface": "beat_0",
+      "text": "In USA, global trade accounts for only 25% of economic output.",
+      "isos": [
+        "USA"
+      ],
+      "support": "USA value is 25.0160172978284, displayed as 25%."
+    },
+    {
+      "surface": "beat_1",
+      "text": "Sudan is the world's lowest, where trade equals just 2% of total output.",
+      "isos": [
+        "SDN"
+      ],
+      "support": "SDN value is 2.38193028387697, displayed as 2%, rank 180."
+    },
+    {
+      "surface": "beat_2",
+      "text": "Trade is the sum of exports and imports of goods and services.",
+      "isos": [],
+      "support": "Definition: Trade is the sum of exports and imports of goods and services."
+    },
+    {
+      "surface": "beat_3",
+      "text": "USA is 25%, and China is 38%.",
+      "isos": [
+        "USA",
+        "CHN"
+      ],
+      "support": "USA value is 25%, CHN value is 37.9563878652312, displayed as 38%."
+    },
+    {
+      "surface": "beat_4",
+      "text": "Pakistan has 27%, India has 46%, UK has 62%, Germany has 79%, and Mexico has 80%.",
+      "isos": [
+        "PAK",
+        "IND",
+        "GBR",
+        "DEU",
+        "MEX"
+      ],
+      "support": "PAK: 27.1935373787664 (27%), IND: 46.2682006859907 (46%), GBR: 62.4573294634195 (62%), DEU: 78.5128112199127 (79%), MEX: 79.9239525815655 (80%)."
+    }
+  ],
+  "surface_checks": {
+    "title": {
+      "supported": true,
+      "reason": "The title describes the content of the ranking.",
+      "isos": []
+    },
+    "hook": {
+      "supported": true,
+      "reason": "The hook introduces the topic.",
+      "isos": []
+    },
+    "description": {
+      "supported": true,
+      "reason": "The description accurately reflects the data source.",
+      "isos": []
+    },
+    "beat_0": {
+      "supported": true,
+      "reason": "Matches data for USA.",
+      "isos": [
+        "USA"
+      ]
+    },
+    "beat_1": {
+      "supported": true,
+      "reason": "Matches data for Sudan as the lowest rank.",
+      "isos": [
+        "SDN"
+      ]
+    },
+    "beat_2": {
+      "supported": true,
+      "reason": "Matches definition.",
+      "isos": []
+    },
+    "beat_3": {
+      "supported": true,
+      "reason": "Matches data for USA and China.",
+      "isos": [
+        "USA",
+        "CHN"
+      ]
+    },
+    "beat_4": {
+      "supported": true,
+      "reason": "Matches data for listed countries.",
+      "isos": [
+        "PAK",
+        "IND",
+        "GBR",
+        "DEU",
+        "MEX"
+      ]
+    },
+    "beat_5": {
+      "supported": true,
+      "reason": "Stylistic question.",
+      "isos": []
+    },
+    "card_5": {
+      "supported": true,
+      "reason": "Matches indicator name.",
+      "isos": []
+    }
+  }
+}
