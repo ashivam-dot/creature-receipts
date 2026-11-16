@@ -1,0 +1,78 @@
+id: atlas197
+title: Where Women Outnumber Men in University
+hook_text: CAMPUS GENDER GAP
+description: Exploring gender parity in university enrollment around the world, from The Gambia to Afghanistan,
+  based on World Bank data.
+hashtags:
+- '#education'
+- '#geography'
+- '#countries'
+tags:
+- education
+- women-to-men ratio in higher education
+- countries ranked by women-to-men ratio in higher education
+- Gambia The
+- Afghanistan
+- world map
+- geography
+- atlas in numbers
+sources:
+- https://data.worldbank.org/indicator/SE.ENR.TERT.FM.ZS
+dataset:
+  kind: worldbank
+  indicator: SE.ENR.TERT.FM.ZS
+  label: Women-to-men ratio in higher education
+  unit: ratio
+  source: World Bank
+  min_year: 2019
+scale:
+  kind: threshold
+  at: 1.0
+  labels:
+  - More women than men
+  - More men than women
+value_format: '{v:.2f}'
+beats:
+- text: The Gambia has 1.83 women in university for every man. Afghanistan has 0.38.
+  shot:
+    callouts:
+    - GMB
+    - AFG
+- text: The Gambia is the world's highest, leading every country on the map.
+  shot:
+    kind: country
+    iso: GMB
+- text: Afghanistan is the world's lowest. India has 1.07, 2.8 times Afghanistan.
+  shot:
+    callouts:
+    - AFG
+    - IND
+- text: It counts students enrolled at tertiary level in public and private schools.
+  shot:
+    kind: country
+    iso: GMB
+  basis: ratio of women to men enrolled at tertiary level in public and private schools
+- text: The USA has 1.32, Brazil 1.36, and China 1.14.
+  shot:
+    kind: group
+    isos:
+    - USA
+    - BRA
+    - CHN
+- text: Russia has 1.07. This giant also has more women on campus.
+  shot:
+    kind: country
+    iso: RUS
+- text: Men lead in Niger at 0.64, Benin at 0.59, and Togo at 0.57.
+  shot:
+    kind: rank
+    isos:
+    - NER
+    - BEN
+    - TGO
+- text: Who outnumbers whom at your university?
+  shot:
+    kind: card
+    lines:
+    - WHO OUTNUMBERS WHOM?
+    - University Gender Ratio

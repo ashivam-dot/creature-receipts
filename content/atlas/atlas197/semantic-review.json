@@ -1,0 +1,160 @@
+{
+  "errors": [
+    {
+      "surface": "beat_2",
+      "claim": "India has 2.8 times Afghanistan.",
+      "reason": "1.07 divided by 0.38 is approximately 2.815, but the claim is based on specific values that are not explicitly stated as a ratio in the evidence, and the calculation is a mathematical inference rather than a direct data point.",
+      "severity": "info"
+    }
+  ],
+  "claims": [
+    {
+      "surface": "beat_0",
+      "text": "The Gambia has 1.83 women in university for every man.",
+      "isos": [
+        "GMB"
+      ],
+      "support": "GMB value is 1.83"
+    },
+    {
+      "surface": "beat_0",
+      "text": "Afghanistan has 0.38.",
+      "isos": [
+        "AFG"
+      ],
+      "support": "AFG value is 0.38"
+    },
+    {
+      "surface": "beat_1",
+      "text": "The Gambia is the world's highest, leading every country on the map.",
+      "isos": [
+        "GMB"
+      ],
+      "support": "GMB rank is 1"
+    },
+    {
+      "surface": "beat_2",
+      "text": "Afghanistan is the world's lowest.",
+      "isos": [
+        "AFG"
+      ],
+      "support": "AFG rank is 152"
+    },
+    {
+      "surface": "beat_2",
+      "text": "India has 1.07",
+      "isos": [
+        "IND"
+      ],
+      "support": "IND value is 1.07"
+    },
+    {
+      "surface": "beat_4",
+      "text": "The USA has 1.32, Brazil 1.36, and China 1.14.",
+      "isos": [
+        "USA",
+        "BRA",
+        "CHN"
+      ],
+      "support": "USA value 1.32, BRA value 1.36, CHN value 1.14"
+    },
+    {
+      "surface": "beat_5",
+      "text": "Russia has 1.07.",
+      "isos": [
+        "RUS"
+      ],
+      "support": "RUS value 1.07"
+    },
+    {
+      "surface": "beat_6",
+      "text": "Men lead in Niger at 0.64, Benin at 0.59, and Togo at 0.57.",
+      "isos": [
+        "NER",
+        "BEN",
+        "TGO"
+      ],
+      "support": "NER value 0.64, BEN value 0.59, TGO value 0.57"
+    }
+  ],
+  "surface_checks": {
+    "title": {
+      "supported": true,
+      "reason": "The title accurately reflects the subject of gender parity in university enrollment.",
+      "isos": []
+    },
+    "hook": {
+      "supported": true,
+      "reason": "The hook is a stylistic summary of the topic.",
+      "isos": []
+    },
+    "description": {
+      "supported": true,
+      "reason": "The description accurately frames the data source and scope.",
+      "isos": []
+    },
+    "beat_0": {
+      "supported": true,
+      "reason": "Values for The Gambia and Afghanistan match the evidence.",
+      "isos": [
+        "GMB",
+        "AFG"
+      ]
+    },
+    "beat_1": {
+      "supported": true,
+      "reason": "The Gambia is ranked 1st in the evidence.",
+      "isos": [
+        "GMB"
+      ]
+    },
+    "beat_2": {
+      "supported": true,
+      "reason": "Afghanistan is ranked 152nd; India value matches.",
+      "isos": [
+        "AFG",
+        "IND"
+      ]
+    },
+    "beat_3": {
+      "supported": true,
+      "reason": "The text matches the definition provided in the evidence.",
+      "isos": []
+    },
+    "beat_4": {
+      "supported": true,
+      "reason": "Values for USA, Brazil, and China match the evidence.",
+      "isos": [
+        "USA",
+        "BRA",
+        "CHN"
+      ]
+    },
+    "beat_5": {
+      "supported": true,
+      "reason": "Value for Russia matches the evidence.",
+      "isos": [
+        "RUS"
+      ]
+    },
+    "beat_6": {
+      "supported": true,
+      "reason": "Values for Niger, Benin, and Togo match the evidence.",
+      "isos": [
+        "NER",
+        "BEN",
+        "TGO"
+      ]
+    },
+    "beat_7": {
+      "supported": true,
+      "reason": "Stylistic question.",
+      "isos": []
+    },
+    "card_7": {
+      "supported": true,
+      "reason": "Stylistic card content.",
+      "isos": []
+    }
+  }
+}
