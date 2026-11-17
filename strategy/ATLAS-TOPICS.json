@@ -6973,7 +6973,7 @@
    "id": "t192",
    "topic": "Global Rates of Vulnerable Employment",
    "angle": "While some Gulf states report under 1% vulnerable employment, in Chad, over 90% of workers lack formal job security and benefits.",
-   "format": "rank_ladder",
+   "format": "spotlight",
    "dataset": {
     "kind": "worldbank",
     "indicator": "SL.EMP.VULN.ZS",
@@ -7005,8 +7005,9 @@
     "#workforce"
    ],
    "source_url": "https://data.worldbank.org/indicator/SL.EMP.VULN.ZS",
-   "status": "open",
-   "added_by": "refill"
+   "status": "retry:atlas200",
+   "added_by": "refill",
+   "source_retries": 2
   },
   {
    "id": "t193",
@@ -7835,9 +7836,9 @@
     "#economics"
    ],
    "source_url": "https://data.worldbank.org/indicator/NE.DAB.TOTL.ZS",
-   "status": "retry:atlas199",
+   "status": "failed:RetryError",
    "added_by": "refill",
-   "source_retries": 1
+   "source_retries": 3
   },
   {
    "id": "t215",
