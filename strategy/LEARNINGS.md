@@ -130,7 +130,7 @@ Refreshed by every producer run (`atlas.stats`) from the channel's public feed o
 | atlas162 Which Country Has the Highest Working-Age Share? | odd_one_out | 2026-11-11 17:00 UTC | 17 | – | 0.2 |
 | atlas164 How Does the USA Compare on Bank Capital? | spotlight | 2026-11-11 21:00 UTC | 21 | – | 0.2 |
 | atlas165 Which Places Are Growing the Most Food? | map_reveal | 2026-11-12 00:00 UTC | 12 | – | 0.1 |
-| atlas166 USA vs Brazil: Upper Middle Class Income Share | versus | 2026-11-12 17:00 UTC | 5 | – | 0.1 |
+| atlas166 USA vs Brazil: Upper Middle Class Income Share | versus | 2026-11-12 17:00 UTC | 5 | – | 0.0 |
 | atlas167 Places Ranked by Years in Primary School | rank_ladder | 2026-11-13 17:00 UTC | 0 | – | 0.0 |
 | atlas169 Places Ranked by Renewable Electricity Share | map_reveal | 2026-11-13 21:00 UTC | 3 | – | 0.0 |
 | atlas172 The Global Divide in Relative Poverty | versus | 2026-11-13 00:00 UTC | 3 | – | 0.0 |
@@ -140,9 +140,11 @@ Refreshed by every producer run (`atlas.stats`) from the channel's public feed o
 | atlas176 Places Ranked by Debt Interest Costs | map_reveal | 2026-11-15 00:00 UTC | 0 | – | 0.0 |
 | atlas178 Is INDIA Near the Top for School Completion? | spotlight | 2026-11-14 00:00 UTC | 1 | – | 0.0 |
 | atlas179 Places With the Smallest Labor Gaps | versus | 2026-11-15 17:00 UTC | 0 | – | 0.0 |
-| atlas180 Places Ranked by Fossil Fuel Electricity Reliance | rank_ladder | 2026-11-16 17:00 UTC | 0 | – | 0.0 |
-| atlas181 Which Country Has the MOST Revenue From Sales Taxes? | odd_one_out | 2026-11-16 00:00 UTC | 1 | – | 0.1 |
-| atlas182 The Places Most Dependent on Their Forests | map_reveal | 2026-11-15 21:00 UTC | 1 | – | 0.0 |
+| atlas180 Places Ranked by Fossil Fuel Electricity Reliance | rank_ladder | 2026-11-16 17:00 UTC | 1 | – | 0.1 |
+| atlas181 Which Country Has the MOST Revenue From Sales Taxes? | odd_one_out | 2026-11-16 00:00 UTC | 1 | – | 0.0 |
+| atlas182 The Places Most Dependent on Their Forests | map_reveal | 2026-11-15 21:00 UTC | 4 | – | 0.1 |
+| atlas183 Is INDIA the Highest for Underweight Babies? | spotlight | 2026-11-16 21:00 UTC | 0 | – | 0.0 |
+| atlas184 East Timor vs Qatar: Natural Gas Rents | versus | 2026-11-17 00:00 UTC | 0 | – | 0.0 |
 
 ## Log
 

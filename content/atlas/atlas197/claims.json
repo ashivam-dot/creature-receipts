@@ -1235,245 +1235,40 @@
     "errors": [],
     "claims": [
       {
-        "surface": "beat_0",
-        "text": "The Gambia has 1.83 women in university for every man.",
-        "isos": [
-          "GMB"
-        ],
-        "support": "GMB value is 1.83",
-        "evidence": {
-          "GMB": {
-            "name": "Gambia, The",
-            "value": 1.8296400308609,
-            "display": "1.83",
-            "year": 2024,
-            "unit": "ratio",
-            "rank": 1
-          }
-        }
-      },
-      {
-        "surface": "beat_0",
-        "text": "Afghanistan has 0.38.",
-        "isos": [
-          "AFG"
-        ],
-        "support": "AFG value is 0.38",
-        "evidence": {
-          "AFG": {
-            "name": "Afghanistan",
-            "value": 0.380919992923737,
-            "display": "0.38",
-            "year": 2020,
-            "unit": "ratio",
-            "rank": 152
-          }
-        }
-      },
-      {
-        "surface": "beat_1",
-        "text": "The Gambia is the world's highest, leading every country on the map.",
-        "isos": [
-          "GMB"
-        ],
-        "support": "GMB rank is 1",
-        "evidence": {
-          "GMB": {
-            "name": "Gambia, The",
-            "value": 1.8296400308609,
-            "display": "1.83",
-            "year": 2024,
-            "unit": "ratio",
-            "rank": 1
-          }
-        }
-      },
-      {
-        "surface": "beat_2",
-        "text": "Afghanistan is the world's lowest.",
-        "isos": [
-          "AFG"
-        ],
-        "support": "AFG rank is 152",
-        "evidence": {
-          "AFG": {
-            "name": "Afghanistan",
-            "value": 0.380919992923737,
-            "display": "0.38",
-            "year": 2020,
-            "unit": "ratio",
-            "rank": 152
-          }
-        }
-      },
-      {
-        "surface": "beat_2",
-        "text": "India has 1.07",
-        "isos": [
-          "IND"
-        ],
-        "support": "IND value is 1.07",
-        "evidence": {
-          "IND": {
-            "name": "India",
-            "value": 1.06887190693647,
-            "display": "1.07",
-            "year": 2025,
-            "unit": "ratio",
-            "rank": 118
-          }
-        }
-      },
-      {
-        "surface": "beat_4",
-        "text": "The USA has 1.32, Brazil 1.36, and China 1.14.",
-        "isos": [
-          "USA",
-          "BRA",
-          "CHN"
-        ],
-        "support": "USA value 1.32, BRA value 1.36, CHN value 1.14",
-        "evidence": {
-          "USA": {
-            "name": "United States",
-            "value": 1.31957995891571,
-            "display": "1.32",
-            "year": 2022,
-            "unit": "ratio",
-            "rank": 52
-          },
-          "BRA": {
-            "name": "Brazil",
-            "value": 1.3551299571991,
-            "display": "1.36",
-            "year": 2024,
-            "unit": "ratio",
-            "rank": 38
-          },
-          "CHN": {
-            "name": "China",
-            "value": 1.13814000492912,
-            "display": "1.14",
-            "year": 2024,
-            "unit": "ratio",
-            "rank": 106
-          }
-        }
-      },
-      {
-        "surface": "beat_5",
-        "text": "Russia has 1.07.",
-        "isos": [
-          "RUS"
-        ],
-        "support": "RUS value 1.07",
-        "evidence": {
-          "RUS": {
-            "name": "Russian Federation",
-            "value": 1.07059742149174,
-            "display": "1.07",
-            "year": 2024,
-            "unit": "ratio",
-            "rank": 117
-          }
-        }
-      },
-      {
-        "surface": "beat_6",
-        "text": "Men lead in Niger at 0.64, Benin at 0.59, and Togo at 0.57.",
-        "isos": [
-          "NER",
-          "BEN",
-          "TGO"
-        ],
-        "support": "NER value 0.64, BEN value 0.59, TGO value 0.57",
-        "evidence": {
-          "NER": {
-            "name": "Niger",
-            "value": 0.636423890318528,
-            "display": "0.64",
-            "year": 2019,
-            "unit": "ratio",
-            "rank": 146
-          },
-          "BEN": {
-            "name": "Benin",
-            "value": 0.59306001663208,
-            "display": "0.59",
-            "year": 2022,
-            "unit": "ratio",
-            "rank": 147
-          },
-          "TGO": {
-            "name": "Togo",
-            "value": 0.569815150227066,
-            "display": "0.57",
-            "year": 2020,
-            "unit": "ratio",
-            "rank": 149
-          }
-        }
-      },
-      {
         "surface": "title",
-        "text": "Where Women Outnumber Men in University",
+        "text": "Places Ranked by University Gender Parity",
         "isos": [],
-        "support": "The title accurately reflects the subject of gender parity in university enrollment.",
-        "method": "complete-surface-check",
+        "support": "Global rankings by indicator SE.ENR.TERT.FM.ZS",
         "evidence": {}
       },
       {
         "surface": "hook",
-        "text": "CAMPUS GENDER GAP",
+        "text": "FEMALE CAMPUS MAJORITY",
         "isos": [],
-        "support": "The hook is a stylistic summary of the topic.",
-        "method": "complete-surface-check",
+        "support": "128 of 152 countries and territories have a ratio >= 1.0",
         "evidence": {}
       },
       {
         "surface": "description",
-        "text": "Exploring gender parity in university enrollment around the world, from The Gambia to Afghanistan, based on World Bank data.",
+        "text": "Global university enrollment ratios of women to men based on World Bank data.",
         "isos": [],
-        "support": "The description accurately frames the data source and scope.",
-        "method": "complete-surface-check",
+        "support": "Gender parity index for gross enrollment ratio in tertiary education is the ratio of women to men enrolled at tertiary level in public and private schools.",
         "evidence": {}
       },
       {
         "surface": "beat_0",
-        "text": "The Gambia has 1.83 women in university for every man. Afghanistan has 0.38.",
-        "isos": [
-          "GMB",
-          "AFG"
-        ],
-        "support": "Values for The Gambia and Afghanistan match the evidence.",
-        "method": "complete-surface-check",
-        "evidence": {
-          "GMB": {
-            "name": "Gambia, The",
-            "value": 1.8296400308609,
-            "display": "1.83",
-            "year": 2024,
-            "unit": "ratio",
-            "rank": 1
-          },
-          "AFG": {
-            "name": "Afghanistan",
-            "value": 0.380919992923737,
-            "display": "0.38",
-            "year": 2020,
-            "unit": "ratio",
-            "rank": 152
-          }
-        }
+        "text": "Women lead university enrollment in 128 of 152 countries and territories across the globe.",
+        "isos": [],
+        "support": "threshold: 1.0, at_or_above: 128, count: 152",
+        "evidence": {}
       },
       {
         "surface": "beat_1",
-        "text": "The Gambia is the world's highest, leading every country on the map.",
+        "text": "The Gambia has 1.83, the world's highest ratio on campus.",
         "isos": [
           "GMB"
         ],
-        "support": "The Gambia is ranked 1st in the evidence.",
-        "method": "complete-surface-check",
+        "support": "GMB value: 1.8296400308609, display: 1.83, rank: 1",
         "evidence": {
           "GMB": {
             "name": "Gambia, The",
@@ -1487,13 +1282,11 @@
       },
       {
         "surface": "beat_2",
-        "text": "Afghanistan is the world's lowest. India has 1.07, 2.8 times Afghanistan.",
+        "text": "Afghanistan has 0.38, the world's lowest.",
         "isos": [
-          "AFG",
-          "IND"
+          "AFG"
         ],
-        "support": "Afghanistan is ranked 152nd; India value matches.",
-        "method": "complete-surface-check",
+        "support": "AFG value: 0.380919992923737, display: 0.38, rank: 152",
         "evidence": {
           "AFG": {
             "name": "Afghanistan",
@@ -1502,34 +1295,191 @@
             "year": 2020,
             "unit": "ratio",
             "rank": 152
-          },
-          "IND": {
-            "name": "India",
-            "value": 1.06887190693647,
-            "display": "1.07",
-            "year": 2025,
-            "unit": "ratio",
-            "rank": 118
           }
         }
       },
       {
         "surface": "beat_3",
-        "text": "It counts students enrolled at tertiary level in public and private schools.",
+        "text": "In the USA, female students lead at 1.32. But Japan drops to 0.97.",
+        "isos": [
+          "USA",
+          "JPN"
+        ],
+        "support": "USA value: 1.31957995891571, display: 1.32, rank: 52; JPN value: 0.974250018596649, display: 0.97, rank: 131",
+        "evidence": {
+          "USA": {
+            "name": "United States",
+            "value": 1.31957995891571,
+            "display": "1.32",
+            "year": 2022,
+            "unit": "ratio",
+            "rank": 52
+          },
+          "JPN": {
+            "name": "Japan",
+            "value": 0.974250018596649,
+            "display": "0.97",
+            "year": 2023,
+            "unit": "ratio",
+            "rank": 131
+          }
+        }
+      },
+      {
+        "surface": "beat_4",
+        "text": "Qatar has 1.64, Guyana 1.57, Iceland 1.52, and Cuba 1.49.",
+        "isos": [
+          "QAT",
+          "GUY",
+          "ISL",
+          "CUB"
+        ],
+        "support": "QAT value: 1.63836002349853 (rank 3), GUY value: 1.57473742526691 (rank 4), ISL value: 1.51546001434326 (rank 10), CUB value: 1.49335735960971 (rank 13)",
+        "evidence": {
+          "QAT": {
+            "name": "Qatar",
+            "value": 1.63836002349853,
+            "display": "1.64",
+            "year": 2024,
+            "unit": "ratio",
+            "rank": 3
+          },
+          "GUY": {
+            "name": "Guyana",
+            "value": 1.57473742526691,
+            "display": "1.57",
+            "year": 2024,
+            "unit": "ratio",
+            "rank": 4
+          },
+          "ISL": {
+            "name": "Iceland",
+            "value": 1.51546001434326,
+            "display": "1.52",
+            "year": 2023,
+            "unit": "ratio",
+            "rank": 10
+          },
+          "CUB": {
+            "name": "Cuba",
+            "value": 1.49335735960971,
+            "display": "1.49",
+            "year": 2024,
+            "unit": "ratio",
+            "rank": 13
+          }
+        }
+      },
+      {
+        "surface": "beat_5",
+        "text": "Brazil has 1.36. Across 128 of 152 countries and territories, women lead on campus.",
+        "isos": [
+          "BRA"
+        ],
+        "support": "BRA value: 1.3551299571991, display: 1.36, rank: 38; at_or_above: 128, count: 152",
+        "evidence": {
+          "BRA": {
+            "name": "Brazil",
+            "value": 1.3551299571991,
+            "display": "1.36",
+            "year": 2024,
+            "unit": "ratio",
+            "rank": 38
+          }
+        }
+      },
+      {
+        "surface": "beat_6",
+        "text": "Does your country have more women or men in higher education?",
         "isos": [],
-        "support": "The text matches the definition provided in the evidence.",
+        "support": "Style question framing",
+        "evidence": {}
+      },
+      {
+        "surface": "card_6",
+        "text": "CAMPUS GENDER RATIO\nWorld Bank Data, 2019–2025",
+        "isos": [],
+        "support": "Indicator SE.ENR.TERT.FM.ZS, year_label: latest available 2019–2025",
+        "evidence": {}
+      },
+      {
+        "surface": "title",
+        "text": "Places Ranked by University Gender Parity",
+        "isos": [],
+        "support": "Accurately frames ranking of university gender parity.",
         "method": "complete-surface-check",
         "evidence": {}
       },
       {
-        "surface": "beat_4",
-        "text": "The USA has 1.32, Brazil 1.36, and China 1.14.",
+        "surface": "hook",
+        "text": "FEMALE CAMPUS MAJORITY",
+        "isos": [],
+        "support": "Supported by majority of countries having ratio >= 1.0.",
+        "method": "complete-surface-check",
+        "evidence": {}
+      },
+      {
+        "surface": "description",
+        "text": "Global university enrollment ratios of women to men based on World Bank data.",
+        "isos": [],
+        "support": "Accurately describes World Bank indicator definition.",
+        "method": "complete-surface-check",
+        "evidence": {}
+      },
+      {
+        "surface": "beat_0",
+        "text": "Women lead university enrollment in 128 of 152 countries and territories across the globe.",
+        "isos": [],
+        "support": "Matches count (152) and threshold at_or_above (128).",
+        "method": "complete-surface-check",
+        "evidence": {}
+      },
+      {
+        "surface": "beat_1",
+        "text": "The Gambia has 1.83, the world's highest ratio on campus.",
+        "isos": [
+          "GMB"
+        ],
+        "support": "Matches Gambia's rank 1 and display value 1.83.",
+        "method": "complete-surface-check",
+        "evidence": {
+          "GMB": {
+            "name": "Gambia, The",
+            "value": 1.8296400308609,
+            "display": "1.83",
+            "year": 2024,
+            "unit": "ratio",
+            "rank": 1
+          }
+        }
+      },
+      {
+        "surface": "beat_2",
+        "text": "Afghanistan has 0.38, the world's lowest.",
+        "isos": [
+          "AFG"
+        ],
+        "support": "Matches Afghanistan's rank 152 and display value 0.38.",
+        "method": "complete-surface-check",
+        "evidence": {
+          "AFG": {
+            "name": "Afghanistan",
+            "value": 0.380919992923737,
+            "display": "0.38",
+            "year": 2020,
+            "unit": "ratio",
+            "rank": 152
+          }
+        }
+      },
+      {
+        "surface": "beat_3",
+        "text": "In the USA, female students lead at 1.32. But Japan drops to 0.97.",
         "isos": [
           "USA",
-          "BRA",
-          "CHN"
+          "JPN"
         ],
-        "support": "Values for USA, Brazil, and China match the evidence.",
+        "support": "Matches USA value 1.32 and Japan value 0.97.",
         "method": "complete-surface-check",
         "evidence": {
           "USA": {
@@ -1540,6 +1490,71 @@
             "unit": "ratio",
             "rank": 52
           },
+          "JPN": {
+            "name": "Japan",
+            "value": 0.974250018596649,
+            "display": "0.97",
+            "year": 2023,
+            "unit": "ratio",
+            "rank": 131
+          }
+        }
+      },
+      {
+        "surface": "beat_4",
+        "text": "Qatar has 1.64, Guyana 1.57, Iceland 1.52, and Cuba 1.49.",
+        "isos": [
+          "QAT",
+          "GUY",
+          "ISL",
+          "CUB"
+        ],
+        "support": "Matches Qatar (1.64), Guyana (1.57), Iceland (1.52), and Cuba (1.49).",
+        "method": "complete-surface-check",
+        "evidence": {
+          "QAT": {
+            "name": "Qatar",
+            "value": 1.63836002349853,
+            "display": "1.64",
+            "year": 2024,
+            "unit": "ratio",
+            "rank": 3
+          },
+          "GUY": {
+            "name": "Guyana",
+            "value": 1.57473742526691,
+            "display": "1.57",
+            "year": 2024,
+            "unit": "ratio",
+            "rank": 4
+          },
+          "ISL": {
+            "name": "Iceland",
+            "value": 1.51546001434326,
+            "display": "1.52",
+            "year": 2023,
+            "unit": "ratio",
+            "rank": 10
+          },
+          "CUB": {
+            "name": "Cuba",
+            "value": 1.49335735960971,
+            "display": "1.49",
+            "year": 2024,
+            "unit": "ratio",
+            "rank": 13
+          }
+        }
+      },
+      {
+        "surface": "beat_5",
+        "text": "Brazil has 1.36. Across 128 of 152 countries and territories, women lead on campus.",
+        "isos": [
+          "BRA"
+        ],
+        "support": "Matches Brazil value 1.36 and aggregate stats.",
+        "method": "complete-surface-check",
+        "evidence": {
           "BRA": {
             "name": "Brazil",
             "value": 1.3551299571991,
@@ -1547,89 +1562,25 @@
             "year": 2024,
             "unit": "ratio",
             "rank": 38
-          },
-          "CHN": {
-            "name": "China",
-            "value": 1.13814000492912,
-            "display": "1.14",
-            "year": 2024,
-            "unit": "ratio",
-            "rank": 106
-          }
-        }
-      },
-      {
-        "surface": "beat_5",
-        "text": "Russia has 1.07. This giant also has more women on campus.",
-        "isos": [
-          "RUS"
-        ],
-        "support": "Value for Russia matches the evidence.",
-        "method": "complete-surface-check",
-        "evidence": {
-          "RUS": {
-            "name": "Russian Federation",
-            "value": 1.07059742149174,
-            "display": "1.07",
-            "year": 2024,
-            "unit": "ratio",
-            "rank": 117
           }
         }
       },
       {
         "surface": "beat_6",
-        "text": "Men lead in Niger at 0.64, Benin at 0.59, and Togo at 0.57.",
-        "isos": [
-          "NER",
-          "BEN",
-          "TGO"
-        ],
-        "support": "Values for Niger, Benin, and Togo match the evidence.",
-        "method": "complete-surface-check",
-        "evidence": {
-          "NER": {
-            "name": "Niger",
-            "value": 0.636423890318528,
-            "display": "0.64",
-            "year": 2019,
-            "unit": "ratio",
-            "rank": 146
-          },
-          "BEN": {
-            "name": "Benin",
-            "value": 0.59306001663208,
-            "display": "0.59",
-            "year": 2022,
-            "unit": "ratio",
-            "rank": 147
-          },
-          "TGO": {
-            "name": "Togo",
-            "value": 0.569815150227066,
-            "display": "0.57",
-            "year": 2020,
-            "unit": "ratio",
-            "rank": 149
-          }
-        }
-      },
-      {
-        "surface": "beat_7",
-        "text": "Who outnumbers whom at your university?",
+        "text": "Does your country have more women or men in higher education?",
         "isos": [],
-        "support": "Stylistic question.",
+        "support": "Valid stylistic identity framing question.",
         "method": "complete-surface-check",
         "evidence": {}
       },
       {
-        "surface": "card_7",
+        "surface": "card_6",
         "text": [
-          "WHO OUTNUMBERS WHOM?",
-          "University Gender Ratio"
+          "CAMPUS GENDER RATIO",
+          "World Bank Data, 2019–2025"
         ],
         "isos": [],
-        "support": "Stylistic card content.",
+        "support": "Accurately reflects data source and year range.",
         "method": "complete-surface-check",
         "evidence": {}
       }
@@ -1637,93 +1588,77 @@
     "surface_checks": {
       "title": {
         "supported": true,
-        "reason": "The title accurately reflects the subject of gender parity in university enrollment.",
+        "reason": "Accurately frames ranking of university gender parity.",
         "isos": []
       },
       "hook": {
         "supported": true,
-        "reason": "The hook is a stylistic summary of the topic.",
+        "reason": "Supported by majority of countries having ratio >= 1.0.",
         "isos": []
       },
       "description": {
         "supported": true,
-        "reason": "The description accurately frames the data source and scope.",
+        "reason": "Accurately describes World Bank indicator definition.",
         "isos": []
       },
       "beat_0": {
         "supported": true,
-        "reason": "Values for The Gambia and Afghanistan match the evidence.",
-        "isos": [
-          "GMB",
-          "AFG"
-        ]
+        "reason": "Matches count (152) and threshold at_or_above (128).",
+        "isos": []
       },
       "beat_1": {
         "supported": true,
-        "reason": "The Gambia is ranked 1st in the evidence.",
+        "reason": "Matches Gambia's rank 1 and display value 1.83.",
         "isos": [
           "GMB"
         ]
       },
       "beat_2": {
         "supported": true,
-        "reason": "Afghanistan is ranked 152nd; India value matches.",
+        "reason": "Matches Afghanistan's rank 152 and display value 0.38.",
         "isos": [
-          "AFG",
-          "IND"
+          "AFG"
         ]
       },
       "beat_3": {
         "supported": true,
-        "reason": "The text matches the definition provided in the evidence.",
-        "isos": []
+        "reason": "Matches USA value 1.32 and Japan value 0.97.",
+        "isos": [
+          "USA",
+          "JPN"
+        ]
       },
       "beat_4": {
         "supported": true,
-        "reason": "Values for USA, Brazil, and China match the evidence.",
+        "reason": "Matches Qatar (1.64), Guyana (1.57), Iceland (1.52), and Cuba (1.49).",
         "isos": [
-          "USA",
-          "BRA",
-          "CHN"
+          "QAT",
+          "GUY",
+          "ISL",
+          "CUB"
         ]
       },
       "beat_5": {
         "supported": true,
-        "reason": "Value for Russia matches the evidence.",
+        "reason": "Matches Brazil value 1.36 and aggregate stats.",
         "isos": [
-          "RUS"
+          "BRA"
         ]
       },
       "beat_6": {
         "supported": true,
-        "reason": "Values for Niger, Benin, and Togo match the evidence.",
-        "isos": [
-          "NER",
-          "BEN",
-          "TGO"
-        ]
-      },
-      "beat_7": {
-        "supported": true,
-        "reason": "Stylistic question.",
+        "reason": "Valid stylistic identity framing question.",
         "isos": []
       },
-      "card_7": {
+      "card_6": {
         "supported": true,
-        "reason": "Stylistic card content.",
+        "reason": "Accurately reflects data source and year range.",
         "isos": []
       }
     },
-    "warnings": [
-      {
-        "surface": "beat_2",
-        "claim": "India has 2.8 times Afghanistan.",
-        "reason": "1.07 divided by 0.38 is approximately 2.815, but the claim is based on specific values that are not explicitly stated as a ratio in the evidence, and the calculation is a mathematical inference rather than a direct data point.",
-        "severity": "info"
-      }
-    ]
+    "warnings": []
   },
-  "script_sha256": "d214810b57b5638fe39be8289a55016785ee4e73e11b1e523fdfcd57296c1f77",
+  "script_sha256": "1fa2e4abf65c1bb5a5dfe3925f42f7e6482b70f11cfe3cc08c990654b57dc28d",
   "data_sha256": "322beaffb60bdde16be62d8498200d4ba2f29ea2de5d9626155d52ae399be875",
-  "reviewer_model": "gemini-3.1-flash-lite"
+  "reviewer_model": "gemini-3.5-flash-lite"
 }

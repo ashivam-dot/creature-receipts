@@ -1,8 +1,7 @@
 id: atlas197
-title: Where Women Outnumber Men in University
-hook_text: CAMPUS GENDER GAP
-description: Exploring gender parity in university enrollment around the world, from The Gambia to Afghanistan,
-  based on World Bank data.
+title: Places Ranked by University Gender Parity
+hook_text: FEMALE CAMPUS MAJORITY
+description: Global university enrollment ratios of women to men based on World Bank data.
 hashtags:
 - '#education'
 - '#geography'
@@ -33,46 +32,40 @@ scale:
   - More men than women
 value_format: '{v:.2f}'
 beats:
-- text: The Gambia has 1.83 women in university for every man. Afghanistan has 0.38.
+- text: Women lead university enrollment in 128 of 152 countries and territories across the globe.
   shot:
     callouts:
     - GMB
     - AFG
-- text: The Gambia is the world's highest, leading every country on the map.
+- text: The Gambia has 1.83, the world's highest ratio on campus.
   shot:
     kind: country
     iso: GMB
-- text: Afghanistan is the world's lowest. India has 1.07, 2.8 times Afghanistan.
-  shot:
-    callouts:
-    - AFG
-    - IND
-- text: It counts students enrolled at tertiary level in public and private schools.
+- text: Afghanistan has 0.38, the world's lowest.
   shot:
     kind: country
-    iso: GMB
-  basis: ratio of women to men enrolled at tertiary level in public and private schools
-- text: The USA has 1.32, Brazil 1.36, and China 1.14.
+    iso: AFG
+- text: In the USA, female students lead at 1.32. But Japan drops to 0.97.
   shot:
     kind: group
     isos:
     - USA
-    - BRA
-    - CHN
-- text: Russia has 1.07. This giant also has more women on campus.
-  shot:
-    kind: country
-    iso: RUS
-- text: Men lead in Niger at 0.64, Benin at 0.59, and Togo at 0.57.
+    - JPN
+- text: Qatar has 1.64, Guyana 1.57, Iceland 1.52, and Cuba 1.49.
   shot:
     kind: rank
     isos:
-    - NER
-    - BEN
-    - TGO
-- text: Who outnumbers whom at your university?
+    - QAT
+    - GUY
+    - ISL
+    - CUB
+- text: Brazil has 1.36. Across 128 of 152 countries and territories, women lead on campus.
+  shot:
+    kind: country
+    iso: BRA
+- text: Does your country have more women or men in higher education?
   shot:
     kind: card
     lines:
-    - WHO OUTNUMBERS WHOM?
-    - University Gender Ratio
+    - CAMPUS GENDER RATIO
+    - World Bank Data, 2019–2025

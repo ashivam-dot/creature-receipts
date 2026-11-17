@@ -1,31 +1,24 @@
 {
-  "duration": 36.61,
-  "integrated_lufs": -14.2,
-  "true_peak_dbfs": -1.4,
+  "duration": 43.61,
+  "integrated_lufs": -14.4,
+  "true_peak_dbfs": -1.3,
   "speech": {
-    "heard": "In 128 of 152 countries and territories, women outnumber men at university. Gambia is highest at 1.83. Afghanistan is lowest at 0.38. USA has 1.32, 3.4 times the ratio Chad has at 0.39. Brazil has 1.36, the UK has 1.27, China has 1.14, India has 1.07, and Japan drops to 0.97. How many female students attend university per male student where you live?",
+    "heard": "Women lead university enrollment in 128 of 152 countries and territories across the globe. Gambia has 1.83, the world's highest ratio on campus. Afghanistan has 0.38, the world's lowest. In the USA, female students lead at 1.32, but Japan drops to 0.97. Qatar has 1.64, Guyana 1.57, Iceland 1.52, and Cuba 1.49. Brazil has 1.36, across 128 of 152 countries and territories women lead on campus. Does your country have more women or men in higher education?",
     "model": "small.en",
-    "media_sha256": "cdd8e3ebb714c593ec59f8dff34bb3534648946dcff37be14c8c81a059311aac",
+    "media_sha256": "33ccf48e34b51e2a1e160600c28da7181f599060f2d996208bb0110c1e2ad2fa",
     "primary_differences": [
-      "'the' heard as '(nothing)' after 'men at university'",
-      "'the' heard as '(nothing)' after 'lowest at 0.38'"
+      "'the' heard as '(nothing)' after 'across the globe'"
     ],
     "differences": [
-      "'the' heard as '(nothing)' after 'lowest at 0.38'",
-      "base.en: 'chad' heard as 'chat' after 'times the ratio'",
-      "base.en: '(nothing)' heard as '7' after 'india has one.07'"
+      "'the' heard as '(nothing)' after 'across the globe'"
     ],
     "corroboration": {
       "model": "base.en",
-      "heard": "In 128 of 152 countries and territories, women outnumber men at university. The Gambia is highest at 1.83. Afghanistan is lowest at 0.38. USA has 1.32, 3.4 times the ratio chat has at 0.39. Brazil has 1.36, the UK has 1.27, China has 1.14, India has 1.07, 7, and Japan drops to 0.97. How many female students attend university per male student where you live?",
+      "heard": "Women lead university enrollment in 128 of 152 countries and territories across the globe. Gambia has 1.83, the world's highest ratio on campus. Afghanistan has 0.38, the world's lowest. In the USA, female students lead at 1.32, but Japan drops to 0.97. Qatar has 1.64 Guyana 1.57, Iceland 1.52, and Cuba 1.49. Brazil has 1.36, across 128 of 152 countries and territories women lead on campus. Does your country have more women or men in higher education?",
       "differences": [
-        "'the' heard as '(nothing)' after 'lowest at 0.38'",
-        "'chad' heard as 'chat' after 'times the ratio'",
-        "'(nothing)' heard as '7' after 'india has one.07'"
+        "'the' heard as '(nothing)' after 'across the globe'"
       ],
-      "resolved": [
-        "'the' heard as '(nothing)' after 'men at university'"
-      ]
+      "resolved": []
     }
   }
 }

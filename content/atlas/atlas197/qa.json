@@ -1,0 +1,37 @@
+{
+  "version": 1,
+  "passed": true,
+  "checked_at": "2026-11-17T01:23:43.480781+00:00",
+  "quality_module_sha256": "db7be8ac57c839f39a10676f1a70580a83ea346f59c27f19868d09c272def14c",
+  "media_sha256": "33ccf48e34b51e2a1e160600c28da7181f599060f2d996208bb0110c1e2ad2fa",
+  "script_sha256": "1fa2e4abf65c1bb5a5dfe3925f42f7e6482b70f11cfe3cc08c990654b57dc28d",
+  "data_sha256": "322beaffb60bdde16be62d8498200d4ba2f29ea2de5d9626155d52ae399be875",
+  "claims_sha256": "723bb97ba6774ad3db4e4b3c5b9ff8c0a0e4a36d4badce6f7aaee5576668de0b",
+  "contact_sha256": "3486b2ca536d94caeb5d122ff181f1bc2c604b056110361ea0d3bc4a0bbfcc80",
+  "duration": 43.61,
+  "integrated_lufs": -14.4,
+  "true_peak_dbfs": -1.3,
+  "speech": {
+    "heard": "Women lead university enrollment in 128 of 152 countries and territories across the globe. Gambia has 1.83, the world's highest ratio on campus. Afghanistan has 0.38, the world's lowest. In the USA, female students lead at 1.32, but Japan drops to 0.97. Qatar has 1.64, Guyana 1.57, Iceland 1.52, and Cuba 1.49. Brazil has 1.36, across 128 of 152 countries and territories women lead on campus. Does your country have more women or men in higher education?",
+    "model": "small.en",
+    "media_sha256": "33ccf48e34b51e2a1e160600c28da7181f599060f2d996208bb0110c1e2ad2fa",
+    "primary_differences": [
+      "'the' heard as '(nothing)' after 'across the globe'"
+    ],
+    "differences": [
+      "'the' heard as '(nothing)' after 'across the globe'"
+    ],
+    "corroboration": {
+      "model": "base.en",
+      "heard": "Women lead university enrollment in 128 of 152 countries and territories across the globe. Gambia has 1.83, the world's highest ratio on campus. Afghanistan has 0.38, the world's lowest. In the USA, female students lead at 1.32, but Japan drops to 0.97. Qatar has 1.64 Guyana 1.57, Iceland 1.52, and Cuba 1.49. Brazil has 1.36, across 128 of 152 countries and territories women lead on campus. Does your country have more women or men in higher education?",
+      "differences": [
+        "'the' heard as '(nothing)' after 'across the globe'"
+      ],
+      "resolved": []
+    }
+  },
+  "warnings": [
+    "'the' heard as '(nothing)' after 'across the globe'"
+  ],
+  "speech_policy": "material-hard-entity-polarity-strict-minor-spelling-warning"
+}
