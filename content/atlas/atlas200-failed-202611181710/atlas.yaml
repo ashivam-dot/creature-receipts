@@ -1,0 +1,79 @@
+id: atlas200
+title: The Places With the Most Vulnerable Jobs
+format: spotlight
+hook_text: VULNERABLE EMPLOYMENT GAP
+description: A look at the global divide in formal job security, comparing high-vulnerability economies like Chad
+  and India against the low-vulnerability rates of Gulf nations and the USA.
+hashtags:
+- '#work'
+- '#workforce'
+- '#geography'
+tags:
+- work
+- share of workers in vulnerable jobs
+- countries ranked by share of workers in vulnerable jobs
+- Chad
+- Qatar
+- world map
+- geography
+- atlas in numbers
+sources:
+- https://data.worldbank.org/indicator/SL.EMP.VULN.ZS
+dataset:
+  kind: worldbank
+  indicator: SL.EMP.VULN.ZS
+  label: Share of workers in vulnerable jobs
+  unit: '%'
+  source: World Bank
+  min_year: 2019
+scale:
+  edges:
+  - 10.0
+  - 30.0
+  - 55.0
+  - 75.0
+  labels:
+  - Under 10%
+  - 10-30%
+  - 30-55%
+  - 55-75%
+  - Over 75%
+value_format: '{v:.1f}%'
+beats:
+- text: In Chad, 90.2% of workers lack formal job security. In Saudi Arabia, it is 1.7%.
+  shot:
+    callouts:
+    - TCD
+    - SAU
+- text: This counts contributing family workers and own-account workers as a percentage of total employment.
+  shot:
+    kind: country
+    iso: TCD
+  basis: Vulnerable employment is contributing family workers and own-account workers as a percentage of total employment.
+- text: India has 71.6% of its workforce in these roles. That is 42 times the level in Saudi Arabia.
+  shot:
+    kind: country
+    iso: IND
+- text: China has 33.4% and Brazil has 26.1%. Both have more formal job security than India.
+  shot:
+    kind: group
+    isos:
+    - CHN
+    - BRA
+- text: The lowest rates? Qatar at 0.5%, the UAE at 1.5%, and Kuwait at 2.4%.
+  shot:
+    kind: rank
+    isos:
+    - QAT
+    - ARE
+    - KWT
+- text: The USA sits at 3.8%. A tiny fraction of the vulnerable employment seen in India.
+  shot:
+    kind: country
+    iso: USA
+- text: How secure is the employment in your country?
+  shot:
+    kind: card
+    lines:
+    - How secure is your job?
+    - World Bank Vulnerable Employment Data

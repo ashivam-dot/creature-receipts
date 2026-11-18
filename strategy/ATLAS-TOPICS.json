@@ -7005,7 +7005,7 @@
     "#workforce"
    ],
    "source_url": "https://data.worldbank.org/indicator/SL.EMP.VULN.ZS",
-   "status": "retry:atlas200",
+   "status": "failed:ValueError",
    "added_by": "refill",
    "source_retries": 2
   },
@@ -7876,7 +7876,7 @@
    "id": "t216",
    "topic": "Personal Healthcare Costs per Person",
    "angle": "Out-of-pocket health costs in Switzerland exceed $2,300 per person, while citizens in five nations pay less than $12 annually.",
-   "format": "rank_ladder",
+   "format": "spotlight",
    "dataset": {
     "kind": "worldbank",
     "indicator": "SH.XPD.OOPC.PP.CD",
@@ -7908,7 +7908,7 @@
     "#healthcare"
    ],
    "source_url": "https://data.worldbank.org/indicator/SH.XPD.OOPC.PP.CD",
-   "status": "open",
+   "status": "failed:RuntimeError",
    "added_by": "refill"
   },
   {
@@ -7954,7 +7954,7 @@
    "id": "t218",
    "topic": "Male Toddlers Share of Population",
    "angle": "In the Central African Republic, nearly one in five males is under five years old, a rate eight times higher than in South Korea.",
-   "format": "map_reveal",
+   "format": "odd_one_out",
    "dataset": {
     "kind": "worldbank",
     "indicator": "SP.POP.0004.MA.5Y",
@@ -7986,7 +7986,7 @@
     "#population"
    ],
    "source_url": "https://data.worldbank.org/indicator/SP.POP.0004.MA.5Y",
-   "status": "open",
+   "status": "failed:RuntimeError",
    "added_by": "refill"
   },
   {

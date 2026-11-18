@@ -1,0 +1,182 @@
+{
+  "errors": [
+    {
+      "surface": "beat_2",
+      "claim": "That is 42 times the level in Saudi Arabia.",
+      "reason": "India's value is 71.58% and Saudi Arabia's is 1.66%, which is a ratio of approximately 43.1 times, not 42 times.",
+      "severity": "factual"
+    }
+  ],
+  "claims": [
+    {
+      "surface": "title",
+      "text": "The Places With the Most Vulnerable Jobs",
+      "isos": [],
+      "support": "The title frames the video around vulnerable employment locations using World Bank indicator SL.EMP.VULN.ZS."
+    },
+    {
+      "surface": "hook",
+      "text": "VULNERABLE EMPLOYMENT GAP",
+      "isos": [],
+      "support": "Summarizes the topic of vulnerable employment differences globally."
+    },
+    {
+      "surface": "description",
+      "text": "A look at the global divide in formal job security, comparing high-vulnerability economies like Chad and India against the low-vulnerability rates of Gulf nations and the USA.",
+      "isos": [
+        "TCD",
+        "IND",
+        "SAU",
+        "ARE",
+        "KWT",
+        "USA"
+      ],
+      "support": "Chad (90.2%), India (71.6%), Saudi Arabia (1.7%), Qatar (0.5%), UAE (1.5%), Kuwait (2.4%), and USA (3.8%) match the World Bank dataset."
+    },
+    {
+      "surface": "beat_0",
+      "text": "In Chad, 90.2% of workers lack formal job security. In Saudi Arabia, it is 1.7%.",
+      "isos": [
+        "TCD",
+        "SAU"
+      ],
+      "support": "Chad value is 90.224285798179% (display: 90.2%) and Saudi Arabia value is 1.66172984324461% (display: 1.7%)."
+    },
+    {
+      "surface": "beat_1",
+      "text": "This counts contributing family workers and own-account workers as a percentage of total employment.",
+      "isos": [],
+      "support": "Matches the evidence definition: Vulnerable employment is contributing family workers and own-account workers as a percentage of total employment."
+    },
+    {
+      "surface": "beat_2",
+      "text": "India has 71.6% of its workforce in these roles. That is 42 times the level in Saudi Arabia.",
+      "isos": [
+        "IND",
+        "SAU"
+      ],
+      "support": "India value is 71.583962506186% (display: 71.6%). Saudi Arabia value is 1.66172984324461% (display: 1.7%)."
+    },
+    {
+      "surface": "beat_3",
+      "text": "China has 33.4% and Brazil has 26.1%. Both have more formal job security than India.",
+      "isos": [
+        "CHN",
+        "BRA",
+        "IND"
+      ],
+      "support": "China value is 33.3992901433807% (display: 33.4%), Brazil value is 26.0849820869874% (display: 26.1%), and India is 71.6%."
+    },
+    {
+      "surface": "beat_4",
+      "text": "The lowest rates? Qatar at 0.5%, the UAE at 1.5%, and Kuwait at 2.4%.",
+      "isos": [
+        "QAT",
+        "ARE",
+        "KWT"
+      ],
+      "support": "Qatar value is 0.455955577569801% (display: 0.5%, rank 184), UAE value is 1.5011293226179% (display: 1.5%, rank 182), Kuwait value is 2.40281042159704% (display: 2.4%, rank 180)."
+    },
+    {
+      "surface": "beat_5",
+      "text": "The USA sits at 3.8%. A tiny fraction of the vulnerable employment seen in India.",
+      "isos": [
+        "USA",
+        "IND"
+      ],
+      "support": "United States value is 3.80976956797991% (display: 3.8%), India value is 71.6%."
+    },
+    {
+      "surface": "beat_6",
+      "text": "How secure is the employment in your country?",
+      "isos": [],
+      "support": "Ordinary question framing style."
+    },
+    {
+      "surface": "card_6",
+      "text": "How secure is your job?",
+      "isos": [],
+      "support": "Card title element."
+    }
+  ],
+  "surface_checks": {
+    "title": {
+      "supported": true,
+      "reason": "Valid descriptive title for the indicator.",
+      "isos": []
+    },
+    "hook": {
+      "supported": true,
+      "reason": "Valid topic summary.",
+      "isos": []
+    },
+    "description": {
+      "supported": true,
+      "reason": "Accurately references the countries shown in the video.",
+      "isos": [
+        "TCD",
+        "IND",
+        "SAU",
+        "ARE",
+        "KWT",
+        "USA"
+      ]
+    },
+    "beat_0": {
+      "supported": true,
+      "reason": "Chad (90.2%) and Saudi Arabia (1.7%) figures match evidence.",
+      "isos": [
+        "TCD",
+        "SAU"
+      ]
+    },
+    "beat_1": {
+      "supported": true,
+      "reason": "Matches official indicator definition word-for-word.",
+      "isos": []
+    },
+    "beat_2": {
+      "supported": false,
+      "reason": "India's rate is correct, but the multiple calculation is slightly off (71.58 / 1.66 is ~43.1x, not 42x).",
+      "isos": [
+        "IND",
+        "SAU"
+      ]
+    },
+    "beat_3": {
+      "supported": true,
+      "reason": "China (33.4%) and Brazil (26.1%) match evidence and are lower than India (71.6%).",
+      "isos": [
+        "CHN",
+        "BRA",
+        "IND"
+      ]
+    },
+    "beat_4": {
+      "supported": true,
+      "reason": "Qatar (0.5%), UAE (1.5%), and Kuwait (2.4%) match the dataset values and lowest ranks.",
+      "isos": [
+        "QAT",
+        "ARE",
+        "KWT"
+      ]
+    },
+    "beat_5": {
+      "supported": true,
+      "reason": "United States value (3.8%) matches evidence.",
+      "isos": [
+        "USA"
+      ]
+    },
+    "beat_6": {
+      "supported": true,
+      "reason": "Standard call to action question.",
+      "isos": []
+    },
+    "card_6": {
+      "supported": true,
+      "reason": "Card text matches video theme.",
+      "isos": []
+    }
+  }
+}
