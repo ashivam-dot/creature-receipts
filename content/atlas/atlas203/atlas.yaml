@@ -1,0 +1,71 @@
+id: atlas203
+title: How Does the USA Compare on Daily Poverty?
+format: spotlight
+hook_text: LIVING ON $3.00
+description: Global poverty percentages based on living on less than $3.00 a day.
+hashtags:
+- '#economy'
+- '#economics'
+- '#geography'
+tags:
+- wealth
+- population living on under 3.00 day
+- countries ranked by population living on under 3.00 day
+- Congo Dem. Rep.
+- Belarus
+- world map
+- geography
+- atlas in numbers
+sources:
+- https://data.worldbank.org/indicator/SI.POV.DDAY
+dataset:
+  kind: worldbank
+  indicator: SI.POV.DDAY
+  label: Population living on under $3.00/day
+  unit: '%'
+  source: World Bank
+  min_year: 2019
+scale:
+  edges:
+  - 1.0
+  - 10.0
+  - 40.0
+  - 70.0
+  labels:
+  - <1%
+  - 1-10%
+  - 10-40%
+  - 40-70%
+  - '>70%'
+value_format: '{v:.1f}%'
+beats:
+- text: In DR Congo, 85.3% of the population lives on less than $3.00 a day.
+  shot:
+    callouts:
+    - COD
+- text: DR Congo has 78 times the poverty found in the USA at 1.1%.
+  shot:
+    kind: group
+    isos:
+    - COD
+    - USA
+  basis: Poverty headcount ratio at $3.00 a day is the percentage of the population living on less than $3.00 a
+    day at 2021 purchasing power adjusted prices.
+- text: India has 2.6% living below this daily mark.
+  shot:
+    kind: country
+    iso: IND
+- text: Nigeria stands at 41.8% of its population.
+  shot:
+    kind: country
+    iso: NGA
+- text: Ukraine hits 0% on the global scale.
+  shot:
+    kind: country
+    iso: UKR
+- text: What share of your country lives on less than $3?
+  shot:
+    kind: card
+    lines:
+    - What share lives on $3?
+    - Poverty headcount ratio at $3.00 a day

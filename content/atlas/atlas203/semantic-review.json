@@ -1,0 +1,122 @@
+{
+  "errors": [
+    {
+      "surface": "title",
+      "claim": "How Does the USA Compare on Daily Poverty?",
+      "reason": "A 'Why' or comparative question title claims a cause or comparison that must match evidence; here, the title frames a comparison of the USA, but the evidence shows multiple countries.",
+      "severity": "style"
+    },
+    {
+      "surface": "beat_1",
+      "claim": "DR Congo has 78 times the poverty found in the USA at 1.1%.",
+      "reason": "85.3 divided by 1.1 is approximately 77.54, which rounds to 78, but the ratio claim should be exact or supported by a clear calculation.",
+      "severity": "info"
+    }
+  ],
+  "claims": [
+    {
+      "surface": "beat_0",
+      "text": "In DR Congo, 85.3% of the population lives on less than $3.00 a day.",
+      "isos": [
+        "COD"
+      ],
+      "support": "Congo, Dem. Rep.: 85.3%"
+    },
+    {
+      "surface": "beat_1",
+      "text": "DR Congo has 78 times the poverty found in the USA at 1.1%.",
+      "isos": [
+        "COD",
+        "USA"
+      ],
+      "support": "Congo, Dem. Rep.: 85.3%, United States: 1.1%"
+    },
+    {
+      "surface": "beat_2",
+      "text": "India has 2.6% living below this daily mark.",
+      "isos": [
+        "IND"
+      ],
+      "support": "India: 2.6%"
+    },
+    {
+      "surface": "beat_3",
+      "text": "Nigeria stands at 41.8% of its population.",
+      "isos": [
+        "NGA"
+      ],
+      "support": "Nigeria: 41.8%"
+    },
+    {
+      "surface": "beat_4",
+      "text": "Ukraine hits 0% on the global scale.",
+      "isos": [
+        "UKR"
+      ],
+      "support": "Ukraine: 0%"
+    }
+  ],
+  "surface_checks": {
+    "title": {
+      "supported": true,
+      "reason": "Framing style is acceptable for a comparison video.",
+      "isos": []
+    },
+    "hook": {
+      "supported": true,
+      "reason": "Matches indicator threshold of $3.00 a day.",
+      "isos": []
+    },
+    "description": {
+      "supported": true,
+      "reason": "Accurately reflects the definition of poverty headcount ratio at $3.00 a day.",
+      "isos": []
+    },
+    "beat_0": {
+      "supported": true,
+      "reason": "Matches evidence value for DR Congo (85.3%).",
+      "isos": [
+        "COD"
+      ]
+    },
+    "beat_1": {
+      "supported": true,
+      "reason": "Matches evidence values for DR Congo (85.3%) and USA (1.1%).",
+      "isos": [
+        "COD",
+        "USA"
+      ]
+    },
+    "beat_2": {
+      "supported": true,
+      "reason": "Matches evidence value for India (2.6%).",
+      "isos": [
+        "IND"
+      ]
+    },
+    "beat_3": {
+      "supported": true,
+      "reason": "Matches evidence value for Nigeria (41.8%).",
+      "isos": [
+        "NGA"
+      ]
+    },
+    "beat_4": {
+      "supported": true,
+      "reason": "Matches evidence value for Ukraine (0%).",
+      "isos": [
+        "UKR"
+      ]
+    },
+    "beat_5": {
+      "supported": true,
+      "reason": "Engagement question matches topic style.",
+      "isos": []
+    },
+    "card_5": {
+      "supported": true,
+      "reason": "Card text correctly quotes indicator definition.",
+      "isos": []
+    }
+  }
+}

@@ -1,0 +1,108 @@
+{
+  "errors": [
+    {
+      "surface": "beat_1",
+      "claim": "Spain hits 2.3 times what Burkina Faso achieves.",
+      "reason": "Spain's value (99.97%) divided by Burkina Faso's value (43.40%) is approximately 2.30, but this calculation represents an unsupported comparative math claim not directly tied to a definition or source ratio.",
+      "severity": "factual"
+    }
+  ],
+  "claims": [
+    {
+      "surface": "beat_0",
+      "text": "Spain sees 99.97 percent of children reach grade 5.",
+      "isos": [
+        "ESP"
+      ],
+      "support": "ESP value is 99.9685363769531, displayed as 99.97%"
+    },
+    {
+      "surface": "beat_0",
+      "text": "Burkina Faso sees just 43.4 percent.",
+      "isos": [
+        "BFA"
+      ],
+      "support": "BFA value is 43.4012413024902, displayed as 43.4%"
+    },
+    {
+      "surface": "beat_3",
+      "text": "India stands at 74.2 percent",
+      "isos": [
+        "IND"
+      ],
+      "support": "IND value is 74.1899566650391, displayed as 74.2%"
+    },
+    {
+      "surface": "beat_3",
+      "text": "while the United States hits 84.4 percent.",
+      "isos": [
+        "USA"
+      ],
+      "support": "USA value is 84.4307403564453, displayed as 84.4%"
+    }
+  ],
+  "surface_checks": {
+    "title": {
+      "supported": true,
+      "reason": "The title frames a comparison between Spain and Burkina Faso, which are featured in the video.",
+      "isos": []
+    },
+    "hook": {
+      "supported": true,
+      "reason": "Accurately names the indicator topic.",
+      "isos": []
+    },
+    "description": {
+      "supported": true,
+      "reason": "Accurately describes the cinematic data comparison of persistence rates to grade 5.",
+      "isos": []
+    },
+    "beat_0": {
+      "supported": true,
+      "reason": "Spain (99.97%) and Burkina Faso (43.4%) data match the evidence values.",
+      "isos": [
+        "ESP",
+        "BFA"
+      ]
+    },
+    "beat_1": {
+      "supported": false,
+      "reason": "The calculated ratio claim of 2.3 times is an unverified arithmetic derivation.",
+      "isos": [
+        "ESP",
+        "BFA"
+      ]
+    },
+    "beat_2": {
+      "supported": true,
+      "reason": "Qualitative contrast statement between Burkina Faso and Spain.",
+      "isos": [
+        "BFA",
+        "ESP"
+      ]
+    },
+    "beat_3": {
+      "supported": true,
+      "reason": "India (74.2%) and United States (84.4%) values match the data.",
+      "isos": [
+        "IND",
+        "USA"
+      ]
+    },
+    "beat_4": {
+      "supported": true,
+      "reason": "The median value across the 109 mapped countries/territories is correctly stated.",
+      "isos": []
+    },
+    "beat_5": {
+      "supported": true,
+      "reason": "Ordinary identity framing question.",
+      "isos": []
+    },
+    "card_5": {
+      "supported": true,
+      "reason": "Card text correctly reflects the indicator title and unit.",
+      "isos": []
+    }
+  }
+}

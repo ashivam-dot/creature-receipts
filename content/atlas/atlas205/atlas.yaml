@@ -1,0 +1,79 @@
+id: atlas205
+title: Places Ranked by Middle School Starting Age
+format: rank_ladder
+hook_text: MIDDLE SCHOOL AGE
+description: Children in Southern Africa typically enter lower secondary school four years later than those in Turkey
+  or Ukraine.
+hashtags:
+- '#education'
+- '#geography'
+- '#countries'
+tags:
+- education
+- lower secondary school starting age
+- countries ranked by lower secondary school starting age
+- Zambia
+- Armenia
+- world map
+- geography
+- atlas in numbers
+sources:
+- https://data.worldbank.org/indicator/SE.SEC.AGES
+dataset:
+  kind: worldbank
+  indicator: SE.SEC.AGES
+  label: Lower secondary school starting age
+  unit: years
+  source: World Bank
+  min_year: 2019
+scale:
+  edges:
+  - 10.5
+  - 11.5
+  - 12.5
+  - 13.5
+  labels:
+  - 10 years
+  - 11 years
+  - 12 years
+  - 13 years
+  - 14 years
+value_format: '{v:.0f} years'
+beats:
+- text: In Turkey, children enter middle school at 10. In Namibia, they wait until 14.
+  shot:
+    callouts:
+    - TUR
+    - NAM
+- text: In Brazil and the UK, students make that transition at 11.
+  shot:
+    kind: group
+    isos:
+    - BRA
+    - GBR
+- text: This benchmark assumes students entered on time and progressed without repeating any grade.
+  basis: assuming they had started at the official entrance age for the lowest level of education, had studied full-time
+    throughout and had progressed through the system without repeating or skipping a grade.
+- text: Climbing the ladder, the USA, Japan, and China all begin at 12.
+  shot:
+    kind: rank
+    isos:
+    - USA
+    - JPN
+    - CHN
+- text: Moving higher, Denmark and Indonesia wait until students reach 13.
+  shot:
+    kind: group
+    isos:
+    - DNK
+    - IDN
+- text: At the very top, Namibia has the world's highest starting age at 14.
+  shot:
+    kind: country
+    iso: NAM
+- text: At what age do students enter lower secondary school in your country?
+  shot:
+    kind: card
+    lines:
+    - Starting Age?
+    - World Bank 2025

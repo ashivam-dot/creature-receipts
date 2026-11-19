@@ -1,0 +1,70 @@
+id: atlas204
+title: 'Spain vs Burkina Faso: Reaching Grade 5'
+format: versus
+hook_text: PRIMARY SCHOOL PERSISTENCE
+description: Share of children reaching grade 5 across 109 countries and territories.
+hashtags:
+- '#education'
+- '#geography'
+- '#countries'
+tags:
+- education
+- share of children reaching grade 5
+- countries ranked by share of children reaching grade 5
+- Spain
+- Azerbaijan
+- world map
+- geography
+- atlas in numbers
+sources:
+- https://data.worldbank.org/indicator/SE.PRM.PRS5.ZS
+dataset:
+  kind: worldbank
+  indicator: SE.PRM.PRS5.ZS
+  label: Share of children reaching grade 5
+  unit: '%'
+  source: World Bank
+  min_year: 2019
+scale:
+  edges:
+  - 70.0
+  - 85.0
+  - 95.0
+  - 99.0
+  labels:
+  - Under 70%
+  - 70-85%
+  - 85-95%
+  - 95-99%
+  - Over 99%
+value_format: '{v:.1f}%'
+beats:
+- text: In Spain, 99.97 percent of children reach grade 5, compared to 43.4 percent in Burkina Faso.
+  shot:
+    callouts:
+    - ESP
+    - BFA
+- text: Spain hits 2.3 times what Burkina Faso achieves, counting children enrolled in the first grade of primary
+    school who eventually reach grade 5.
+  shot:
+    kind: country
+    iso: ESP
+  basis: Persistence to grade 5 percentage of cohort reaching grade 5 is the share of children enrolled in the first
+    grade of primary school who eventually reach grade 5.
+- text: Burkina Faso brings a stark contrast to Spain, showing how fewer children persist through primary years.
+  shot:
+    kind: country
+    iso: BFA
+- text: India stands at 74.2 percent, while the United States hits 84.4 percent.
+  shot:
+    kind: group
+    isos:
+    - IND
+    - USA
+- text: The median country across the globe hits 95.2 percent.
+- text: How many children reach the fifth grade in your country?
+  shot:
+    kind: card
+    lines:
+    - Reach grade 5?
+    - World Bank

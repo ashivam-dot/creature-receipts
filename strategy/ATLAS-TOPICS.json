@@ -7915,7 +7915,7 @@
    "id": "t217",
    "topic": "Children Reaching the Fifth Grade",
    "angle": "In several nations, fewer than half of the children who start primary school manage to reach the fifth grade.",
-   "format": "map_reveal",
+   "format": "versus",
    "dataset": {
     "kind": "worldbank",
     "indicator": "SE.PRM.PRS5.ZS",
@@ -7947,7 +7947,7 @@
     "#education"
    ],
    "source_url": "https://data.worldbank.org/indicator/SE.PRM.PRS5.ZS",
-   "status": "open",
+   "status": "failed:ValueError",
    "added_by": "refill"
   },
   {
@@ -7993,7 +7993,7 @@
    "id": "t219",
    "topic": "Global Poverty at $3 a Day",
    "angle": "In the Democratic Republic of the Congo, a staggering 85.3% of the population lives on less than $3.00 per day.",
-   "format": "rank_ladder",
+   "format": "spotlight",
    "dataset": {
     "kind": "worldbank",
     "indicator": "SI.POV.DDAY",
@@ -8025,7 +8025,7 @@
     "#economics"
    ],
    "source_url": "https://data.worldbank.org/indicator/SI.POV.DDAY",
-   "status": "open",
+   "status": "ready:atlas203",
    "added_by": "refill"
   },
   {
@@ -8142,7 +8142,7 @@
     "#education"
    ],
    "source_url": "https://data.worldbank.org/indicator/SE.SEC.AGES",
-   "status": "open",
+   "status": "ready:atlas205",
    "added_by": "refill"
   }
  ],

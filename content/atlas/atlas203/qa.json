@@ -1,0 +1,25 @@
+{
+  "version": 1,
+  "passed": true,
+  "checked_at": "2026-11-19T01:19:58.174026+00:00",
+  "quality_module_sha256": "db7be8ac57c839f39a10676f1a70580a83ea346f59c27f19868d09c272def14c",
+  "media_sha256": "0039ad7eb9dc0731d956bb175f9b43093a1ffe628b2278f9304ade5eaaa61462",
+  "script_sha256": "dcf915537ba31d6a1c0cbec4c48649c1a690ee51d9b4c2b85df53700f6595063",
+  "data_sha256": "c6738dc7ef76214408b182e49968ea3d580c18c72af059f0cfc56b04451c4a0e",
+  "claims_sha256": "a242147eb414e8b8ae8cb13e162f01b57a95edab3f505ab13468db61b8ce2cc1",
+  "contact_sha256": "b2e4b919e497a81d4e3191b8c4a9fed2312bb7659bf8c6aa1b2399ab45b25fef",
+  "duration": 29.62,
+  "integrated_lufs": -14.1,
+  "true_peak_dbfs": -1.3,
+  "speech": {
+    "heard": "In Dr. Congo, 85.3% of the population lives on less than $3 a day. Dr. Congo has 78 times the poverty found in the USA, at 1.1%. India has 2.6% living below this daily mark. Nigeria stands at 41.8% of its population. Ukraine hits 0% on the global scale. What share of your country lives on less than $3?",
+    "model": "small.en",
+    "media_sha256": "0039ad7eb9dc0731d956bb175f9b43093a1ffe628b2278f9304ade5eaaa61462",
+    "primary_differences": [],
+    "differences": []
+  },
+  "warnings": [
+    "duration 29.6s outside editorial 30–45s target"
+  ],
+  "speech_policy": "material-hard-entity-polarity-strict-minor-spelling-warning"
+}

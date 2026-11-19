@@ -1,0 +1,1211 @@
+{
+  "version": 1,
+  "evidence": {
+    "version": 1,
+    "indicator": "SE.PRM.PRS5.ZS",
+    "definition": "Persistence to grade 5 (percentage of cohort reaching grade 5) is the share of children enrolled in the first grade of primary school who eventually reach grade 5. The estimate is based on the reconstructed cohort method.",
+    "source": "https://data.worldbank.org/indicator/SE.PRM.PRS5.ZS",
+    "source_response_sha256": "dc3f05a2ab544553053eb2c395f71a13ef4b58a838b5d2aab47cfc37efc75ec7",
+    "source_organization": "Data API, UN Educational, Scientific and Cultural Organization (UNESCO), uri: https://databrowser.uis.unesco.org/resources, note: The data are obtained through the UIS API.  Detailed documentation is available at: https://api.uis.unesco.org/api/public/documentation/, publisher: UNESCO Institute for Statistics (UIS), date accessed: 2026-03-19, date published: 2026-02",
+    "year_label": "latest available 2019–2023",
+    "universe": "mapped countries and territories with data",
+    "count": 109,
+    "threshold": null,
+    "at_or_above": null,
+    "entities": {
+      "ALB": {
+        "name": "Albania",
+        "value": 86.6504516601562,
+        "display": "86.7%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 77
+      },
+      "DZA": {
+        "name": "Algeria",
+        "value": 92.6793823242188,
+        "display": "92.7%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 61
+      },
+      "AND": {
+        "name": "Andorra",
+        "value": 98.4870834350586,
+        "display": "98.5%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 27
+      },
+      "ARG": {
+        "name": "Argentina",
+        "value": 98.0278167724609,
+        "display": "98%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 30
+      },
+      "ABW": {
+        "name": "Aruba",
+        "value": 87.2497329711914,
+        "display": "87.2%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 76
+      },
+      "AZE": {
+        "name": "Azerbaijan",
+        "value": 0.0,
+        "display": "0%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 108
+      },
+      "BHR": {
+        "name": "Bahrain",
+        "value": 97.4483108520508,
+        "display": "97.4%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 36
+      },
+      "BRB": {
+        "name": "Barbados",
+        "value": 95.4956512451172,
+        "display": "95.5%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 51
+      },
+      "BEL": {
+        "name": "Belgium",
+        "value": 99.2279891967773,
+        "display": "99.2%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 21
+      },
+      "BLZ": {
+        "name": "Belize",
+        "value": 97.1559829711914,
+        "display": "97.2%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 37
+      },
+      "BEN": {
+        "name": "Benin",
+        "value": 62.6687393188477,
+        "display": "62.7%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 100
+      },
+      "BOL": {
+        "name": "Bolivia",
+        "value": 97.5325088500977,
+        "display": "97.5%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 35
+      },
+      "BIH": {
+        "name": "Bosnia and Herzegovina",
+        "value": 95.7249069213867,
+        "display": "95.7%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 50
+      },
+      "VGB": {
+        "name": "British Virgin Islands",
+        "value": 19.416540145874,
+        "display": "19.4%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 107
+      },
+      "BRN": {
+        "name": "Brunei Darussalam",
+        "value": 99.1722106933594,
+        "display": "99.2%",
+        "year": 2019,
+        "unit": "%",
+        "rank": 22
+      },
+      "BFA": {
+        "name": "Burkina Faso",
+        "value": 43.4012413024902,
+        "display": "43.4%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 106
+      },
+      "BDI": {
+        "name": "Burundi",
+        "value": 59.8968811035156,
+        "display": "59.9%",
+        "year": 2019,
+        "unit": "%",
+        "rank": 101
+      },
+      "CPV": {
+        "name": "Cabo Verde",
+        "value": 95.7305526733398,
+        "display": "95.7%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 49
+      },
+      "KHM": {
+        "name": "Cambodia",
+        "value": 84.0681915283203,
+        "display": "84.1%",
+        "year": 2019,
+        "unit": "%",
+        "rank": 84
+      },
+      "CMR": {
+        "name": "Cameroon",
+        "value": 74.4701766967773,
+        "display": "74.5%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 93
+      },
+      "CYM": {
+        "name": "Cayman Islands",
+        "value": 87.5192565917969,
+        "display": "87.5%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 75
+      },
+      "CHL": {
+        "name": "Chile",
+        "value": 99.6613082885742,
+        "display": "99.7%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 9
+      },
+      "CHN": {
+        "name": "China",
+        "value": 99.7857437133789,
+        "display": "99.8%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 6
+      },
+      "COL": {
+        "name": "Colombia",
+        "value": 91.3313522338867,
+        "display": "91.3%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 64
+      },
+      "COD": {
+        "name": "Congo, Dem. Rep.",
+        "value": 76.9431076049805,
+        "display": "76.9%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 91
+      },
+      "CRI": {
+        "name": "Costa Rica",
+        "value": 95.4334106445312,
+        "display": "95.4%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 53
+      },
+      "CIV": {
+        "name": "Cote d'Ivoire",
+        "value": 68.0376586914062,
+        "display": "68%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 99
+      },
+      "HRV": {
+        "name": "Croatia",
+        "value": 0.0,
+        "display": "0%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 108
+      },
+      "CUB": {
+        "name": "Cuba",
+        "value": 90.3997802734375,
+        "display": "90.4%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 69
+      },
+      "CYP": {
+        "name": "Cyprus",
+        "value": 98.0654067993164,
+        "display": "98.1%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 28
+      },
+      "CZE": {
+        "name": "Czechia",
+        "value": 99.4993209838867,
+        "display": "99.5%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 14
+      },
+      "DNK": {
+        "name": "Denmark",
+        "value": 99.7349624633789,
+        "display": "99.7%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 7
+      },
+      "DJI": {
+        "name": "Djibouti",
+        "value": 72.6802215576172,
+        "display": "72.7%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 96
+      },
+      "DMA": {
+        "name": "Dominica",
+        "value": 93.0233383178711,
+        "display": "93%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 59
+      },
+      "DOM": {
+        "name": "Dominican Republic",
+        "value": 95.7574234008789,
+        "display": "95.8%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 48
+      },
+      "ECU": {
+        "name": "Ecuador",
+        "value": 95.4593200683594,
+        "display": "95.5%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 52
+      },
+      "EGY": {
+        "name": "Egypt, Arab Rep.",
+        "value": 99.8412170410156,
+        "display": "99.8%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 3
+      },
+      "SLV": {
+        "name": "El Salvador",
+        "value": 90.9499435424805,
+        "display": "90.9%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 66
+      },
+      "EST": {
+        "name": "Estonia",
+        "value": 99.4675674438477,
+        "display": "99.5%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 16
+      },
+      "ETH": {
+        "name": "Ethiopia",
+        "value": 55.5315093994141,
+        "display": "55.5%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 103
+      },
+      "FJI": {
+        "name": "Fiji",
+        "value": 94.833610534668,
+        "display": "94.8%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 56
+      },
+      "FIN": {
+        "name": "Finland",
+        "value": 99.6224212646484,
+        "display": "99.6%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 12
+      },
+      "GMB": {
+        "name": "Gambia, The",
+        "value": 81.2964477539062,
+        "display": "81.3%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 87
+      },
+      "GEO": {
+        "name": "Georgia",
+        "value": 97.7736663818359,
+        "display": "97.8%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 32
+      },
+      "GHA": {
+        "name": "Ghana",
+        "value": 92.4319229125977,
+        "display": "92.4%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 62
+      },
+      "GRC": {
+        "name": "Greece",
+        "value": 99.7976608276367,
+        "display": "99.8%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 4
+      },
+      "GTM": {
+        "name": "Guatemala",
+        "value": 90.6758422851562,
+        "display": "90.7%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 67
+      },
+      "HND": {
+        "name": "Honduras",
+        "value": 84.4925994873047,
+        "display": "84.5%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 80
+      },
+      "HKG": {
+        "name": "Hong Kong SAR, China",
+        "value": 97.5939788818359,
+        "display": "97.6%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 34
+      },
+      "ISL": {
+        "name": "Iceland",
+        "value": 99.2526016235352,
+        "display": "99.3%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 20
+      },
+      "IND": {
+        "name": "India",
+        "value": 74.1899566650391,
+        "display": "74.2%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 94
+      },
+      "IRN": {
+        "name": "Iran, Islamic Rep.",
+        "value": 96.1813201904297,
+        "display": "96.2%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 42
+      },
+      "ISR": {
+        "name": "Israel",
+        "value": 98.7282867431641,
+        "display": "98.7%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 24
+      },
+      "ITA": {
+        "name": "Italy",
+        "value": 99.8990097045898,
+        "display": "99.9%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 2
+      },
+      "JAM": {
+        "name": "Jamaica",
+        "value": 78.4060592651367,
+        "display": "78.4%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 88
+      },
+      "JOR": {
+        "name": "Jordan",
+        "value": 96.0400466918945,
+        "display": "96%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 45
+      },
+      "KIR": {
+        "name": "Kiribati",
+        "value": 89.7491912841797,
+        "display": "89.7%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 72
+      },
+      "KOR": {
+        "name": "Korea, Rep.",
+        "value": 98.8986282348633,
+        "display": "98.9%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 23
+      },
+      "KWT": {
+        "name": "Kuwait",
+        "value": 85.7431411743164,
+        "display": "85.7%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 79
+      },
+      "LAO": {
+        "name": "Lao PDR",
+        "value": 82.0526733398438,
+        "display": "82.1%",
+        "year": 2019,
+        "unit": "%",
+        "rank": 85
+      },
+      "LVA": {
+        "name": "Latvia",
+        "value": 95.9680404663086,
+        "display": "96%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 46
+      },
+      "LBN": {
+        "name": "Lebanon",
+        "value": 95.4016799926758,
+        "display": "95.4%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 54
+      },
+      "LSO": {
+        "name": "Lesotho",
+        "value": 84.3203125,
+        "display": "84.3%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 83
+      },
+      "LIE": {
+        "name": "Liechtenstein",
+        "value": 96.268440246582,
+        "display": "96.3%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 40
+      },
+      "LUX": {
+        "name": "Luxembourg",
+        "value": 96.2233505249023,
+        "display": "96.2%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 41
+      },
+      "MYS": {
+        "name": "Malaysia",
+        "value": 88.4752502441406,
+        "display": "88.5%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 74
+      },
+      "MLT": {
+        "name": "Malta",
+        "value": 99.4634094238281,
+        "display": "99.5%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 18
+      },
+      "MHL": {
+        "name": "Marshall Islands",
+        "value": 86.3914566040039,
+        "display": "86.4%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 78
+      },
+      "MUS": {
+        "name": "Mauritius",
+        "value": 90.2416915893555,
+        "display": "90.2%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 71
+      },
+      "MEX": {
+        "name": "Mexico",
+        "value": 99.6408004760742,
+        "display": "99.6%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 11
+      },
+      "MNE": {
+        "name": "Montenegro",
+        "value": 99.4673614501953,
+        "display": "99.5%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 17
+      },
+      "MAR": {
+        "name": "Morocco",
+        "value": 94.4816436767578,
+        "display": "94.5%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 57
+      },
+      "MOZ": {
+        "name": "Mozambique",
+        "value": 56.429069519043,
+        "display": "56.4%",
+        "year": 2019,
+        "unit": "%",
+        "rank": 102
+      },
+      "NER": {
+        "name": "Niger",
+        "value": 53.5410614013672,
+        "display": "53.5%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 104
+      },
+      "MKD": {
+        "name": "North Macedonia",
+        "value": 93.0414581298828,
+        "display": "93%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 58
+      },
+      "NOR": {
+        "name": "Norway",
+        "value": 99.6827774047852,
+        "display": "99.7%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 8
+      },
+      "PAN": {
+        "name": "Panama",
+        "value": 72.3109664916992,
+        "display": "72.3%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 97
+      },
+      "PRY": {
+        "name": "Paraguay",
+        "value": 97.624397277832,
+        "display": "97.6%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 33
+      },
+      "PHL": {
+        "name": "Philippines",
+        "value": 95.1696090698242,
+        "display": "95.2%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 55
+      },
+      "PRT": {
+        "name": "Portugal",
+        "value": 99.4696807861328,
+        "display": "99.5%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 15
+      },
+      "QAT": {
+        "name": "Qatar",
+        "value": 96.146369934082,
+        "display": "96.1%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 43
+      },
+      "ROU": {
+        "name": "Romania",
+        "value": 96.0715789794922,
+        "display": "96.1%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 44
+      },
+      "RWA": {
+        "name": "Rwanda",
+        "value": 76.8063888549805,
+        "display": "76.8%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 92
+      },
+      "WSM": {
+        "name": "Samoa",
+        "value": 90.2646484375,
+        "display": "90.3%",
+        "year": 2019,
+        "unit": "%",
+        "rank": 70
+      },
+      "SMR": {
+        "name": "San Marino",
+        "value": 96.5503463745117,
+        "display": "96.6%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 39
+      },
+      "SEN": {
+        "name": "Senegal",
+        "value": 78.1955490112305,
+        "display": "78.2%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 89
+      },
+      "SYC": {
+        "name": "Seychelles",
+        "value": 95.8815612792969,
+        "display": "95.9%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 47
+      },
+      "SLE": {
+        "name": "Sierra Leone",
+        "value": 49.0715713500977,
+        "display": "49.1%",
+        "year": 2019,
+        "unit": "%",
+        "rank": 105
+      },
+      "SGP": {
+        "name": "Singapore",
+        "value": 99.5241088867188,
+        "display": "99.5%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 13
+      },
+      "SVN": {
+        "name": "Slovenia",
+        "value": 99.4284362792969,
+        "display": "99.4%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 19
+      },
+      "ZAF": {
+        "name": "South Africa",
+        "value": 97.076057434082,
+        "display": "97.1%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 38
+      },
+      "ESP": {
+        "name": "Spain",
+        "value": 99.9685363769531,
+        "display": "99.97%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 1
+      },
+      "LKA": {
+        "name": "Sri Lanka",
+        "value": 97.9165191650391,
+        "display": "97.9%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 31
+      },
+      "LCA": {
+        "name": "St. Lucia",
+        "value": 70.4206237792969,
+        "display": "70.4%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 98
+      },
+      "SUR": {
+        "name": "Suriname",
+        "value": 78.016487121582,
+        "display": "78%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 90
+      },
+      "SWE": {
+        "name": "Sweden",
+        "value": 98.6546020507812,
+        "display": "98.7%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 25
+      },
+      "CHE": {
+        "name": "Switzerland",
+        "value": 99.6599273681641,
+        "display": "99.7%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 10
+      },
+      "SYR": {
+        "name": "Syrian Arab Republic",
+        "value": 91.7853698730469,
+        "display": "91.8%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 63
+      },
+      "TZA": {
+        "name": "Tanzania",
+        "value": 84.4770736694336,
+        "display": "84.5%",
+        "year": 2019,
+        "unit": "%",
+        "rank": 81
+      },
+      "TGO": {
+        "name": "Togo",
+        "value": 73.9546585083008,
+        "display": "74%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 95
+      },
+      "TON": {
+        "name": "Tonga",
+        "value": 91.3237762451172,
+        "display": "91.3%",
+        "year": 2019,
+        "unit": "%",
+        "rank": 65
+      },
+      "TTO": {
+        "name": "Trinidad and Tobago",
+        "value": 98.0576477050781,
+        "display": "98.1%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 29
+      },
+      "TUN": {
+        "name": "Tunisia",
+        "value": 98.5748825073242,
+        "display": "98.6%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 26
+      },
+      "GBR": {
+        "name": "United Kingdom",
+        "value": 99.7908172607422,
+        "display": "99.8%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 5
+      },
+      "USA": {
+        "name": "United States",
+        "value": 84.4307403564453,
+        "display": "84.4%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 82
+      },
+      "URY": {
+        "name": "Uruguay",
+        "value": 88.9714736938477,
+        "display": "89%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 73
+      },
+      "VUT": {
+        "name": "Vanuatu",
+        "value": 81.607551574707,
+        "display": "81.6%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 86
+      },
+      "VEN": {
+        "name": "Venezuela, RB",
+        "value": 90.5289688110352,
+        "display": "90.5%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 68
+      },
+      "ZWE": {
+        "name": "Zimbabwe",
+        "value": 92.9346237182617,
+        "display": "92.9%",
+        "year": 2019,
+        "unit": "%",
+        "rank": 60
+      }
+    }
+  },
+  "review": {
+    "errors": [
+      {
+        "surface": "beat_1",
+        "claim": "Spain hits 2.3 times what Burkina Faso achieves.",
+        "reason": "Spain's value (99.97%) divided by Burkina Faso's value (43.40%) is approximately 2.30, but this calculation represents an unsupported comparative math claim not directly tied to a definition or source ratio.",
+        "severity": "factual"
+      },
+      {
+        "surface": "beat_1",
+        "claim": "Spain hits 2.3 times what Burkina Faso achieves.",
+        "reason": "The calculated ratio claim of 2.3 times is an unverified arithmetic derivation.",
+        "severity": "factual"
+      }
+    ],
+    "claims": [
+      {
+        "surface": "beat_0",
+        "text": "Spain sees 99.97 percent of children reach grade 5.",
+        "isos": [
+          "ESP"
+        ],
+        "support": "ESP value is 99.9685363769531, displayed as 99.97%",
+        "evidence": {
+          "ESP": {
+            "name": "Spain",
+            "value": 99.9685363769531,
+            "display": "99.97%",
+            "year": 2021,
+            "unit": "%",
+            "rank": 1
+          }
+        }
+      },
+      {
+        "surface": "beat_0",
+        "text": "Burkina Faso sees just 43.4 percent.",
+        "isos": [
+          "BFA"
+        ],
+        "support": "BFA value is 43.4012413024902, displayed as 43.4%",
+        "evidence": {
+          "BFA": {
+            "name": "Burkina Faso",
+            "value": 43.4012413024902,
+            "display": "43.4%",
+            "year": 2022,
+            "unit": "%",
+            "rank": 106
+          }
+        }
+      },
+      {
+        "surface": "beat_3",
+        "text": "India stands at 74.2 percent",
+        "isos": [
+          "IND"
+        ],
+        "support": "IND value is 74.1899566650391, displayed as 74.2%",
+        "evidence": {
+          "IND": {
+            "name": "India",
+            "value": 74.1899566650391,
+            "display": "74.2%",
+            "year": 2023,
+            "unit": "%",
+            "rank": 94
+          }
+        }
+      },
+      {
+        "surface": "beat_3",
+        "text": "while the United States hits 84.4 percent.",
+        "isos": [
+          "USA"
+        ],
+        "support": "USA value is 84.4307403564453, displayed as 84.4%",
+        "evidence": {
+          "USA": {
+            "name": "United States",
+            "value": 84.4307403564453,
+            "display": "84.4%",
+            "year": 2021,
+            "unit": "%",
+            "rank": 82
+          }
+        }
+      },
+      {
+        "surface": "title",
+        "text": "Spain vs Burkina Faso: The Primary School Gap",
+        "isos": [],
+        "support": "The title frames a comparison between Spain and Burkina Faso, which are featured in the video.",
+        "method": "complete-surface-check",
+        "evidence": {}
+      },
+      {
+        "surface": "hook",
+        "text": "PRIMARY SCHOOL PERSISTENCE",
+        "isos": [],
+        "support": "Accurately names the indicator topic.",
+        "method": "complete-surface-check",
+        "evidence": {}
+      },
+      {
+        "surface": "description",
+        "text": "A cinematic data comparison of primary school persistence rates to grade 5 across nations.",
+        "isos": [],
+        "support": "Accurately describes the cinematic data comparison of persistence rates to grade 5.",
+        "method": "complete-surface-check",
+        "evidence": {}
+      },
+      {
+        "surface": "beat_0",
+        "text": "Spain sees 99.97 percent of children reach grade 5. Burkina Faso sees just 43.4 percent.",
+        "isos": [
+          "ESP",
+          "BFA"
+        ],
+        "support": "Spain (99.97%) and Burkina Faso (43.4%) data match the evidence values.",
+        "method": "complete-surface-check",
+        "evidence": {
+          "ESP": {
+            "name": "Spain",
+            "value": 99.9685363769531,
+            "display": "99.97%",
+            "year": 2021,
+            "unit": "%",
+            "rank": 1
+          },
+          "BFA": {
+            "name": "Burkina Faso",
+            "value": 43.4012413024902,
+            "display": "43.4%",
+            "year": 2022,
+            "unit": "%",
+            "rank": 106
+          }
+        }
+      },
+      {
+        "surface": "beat_1",
+        "text": "Spain hits 2.3 times what Burkina Faso achieves.",
+        "isos": [
+          "ESP",
+          "BFA"
+        ],
+        "support": "The calculated ratio claim of 2.3 times is an unverified arithmetic derivation.",
+        "method": "complete-surface-check",
+        "evidence": {
+          "ESP": {
+            "name": "Spain",
+            "value": 99.9685363769531,
+            "display": "99.97%",
+            "year": 2021,
+            "unit": "%",
+            "rank": 1
+          },
+          "BFA": {
+            "name": "Burkina Faso",
+            "value": 43.4012413024902,
+            "display": "43.4%",
+            "year": 2022,
+            "unit": "%",
+            "rank": 106
+          }
+        }
+      },
+      {
+        "surface": "beat_2",
+        "text": "Burkina Faso brings a stark contrast to Spain, showing how fewer children persist through primary years.",
+        "isos": [
+          "BFA",
+          "ESP"
+        ],
+        "support": "Qualitative contrast statement between Burkina Faso and Spain.",
+        "method": "complete-surface-check",
+        "evidence": {
+          "BFA": {
+            "name": "Burkina Faso",
+            "value": 43.4012413024902,
+            "display": "43.4%",
+            "year": 2022,
+            "unit": "%",
+            "rank": 106
+          },
+          "ESP": {
+            "name": "Spain",
+            "value": 99.9685363769531,
+            "display": "99.97%",
+            "year": 2021,
+            "unit": "%",
+            "rank": 1
+          }
+        }
+      },
+      {
+        "surface": "beat_3",
+        "text": "India stands at 74.2 percent, while the United States hits 84.4 percent.",
+        "isos": [
+          "IND",
+          "USA"
+        ],
+        "support": "India (74.2%) and United States (84.4%) values match the data.",
+        "method": "complete-surface-check",
+        "evidence": {
+          "IND": {
+            "name": "India",
+            "value": 74.1899566650391,
+            "display": "74.2%",
+            "year": 2023,
+            "unit": "%",
+            "rank": 94
+          },
+          "USA": {
+            "name": "United States",
+            "value": 84.4307403564453,
+            "display": "84.4%",
+            "year": 2021,
+            "unit": "%",
+            "rank": 82
+          }
+        }
+      },
+      {
+        "surface": "beat_4",
+        "text": "The median country across the globe hits 95.2 percent.",
+        "isos": [],
+        "support": "The median value across the 109 mapped countries/territories is correctly stated.",
+        "method": "complete-surface-check",
+        "evidence": {}
+      },
+      {
+        "surface": "beat_5",
+        "text": "How many children reach the fifth grade in your country?",
+        "isos": [],
+        "support": "Ordinary identity framing question.",
+        "method": "complete-surface-check",
+        "evidence": {}
+      },
+      {
+        "surface": "card_5",
+        "text": [
+          "Who finishes primary school?",
+          "Share of children reaching grade 5 (%)"
+        ],
+        "isos": [],
+        "support": "Card text correctly reflects the indicator title and unit.",
+        "method": "complete-surface-check",
+        "evidence": {}
+      }
+    ],
+    "surface_checks": {
+      "title": {
+        "supported": true,
+        "reason": "The title frames a comparison between Spain and Burkina Faso, which are featured in the video.",
+        "isos": []
+      },
+      "hook": {
+        "supported": true,
+        "reason": "Accurately names the indicator topic.",
+        "isos": []
+      },
+      "description": {
+        "supported": true,
+        "reason": "Accurately describes the cinematic data comparison of persistence rates to grade 5.",
+        "isos": []
+      },
+      "beat_0": {
+        "supported": true,
+        "reason": "Spain (99.97%) and Burkina Faso (43.4%) data match the evidence values.",
+        "isos": [
+          "ESP",
+          "BFA"
+        ]
+      },
+      "beat_1": {
+        "supported": false,
+        "reason": "The calculated ratio claim of 2.3 times is an unverified arithmetic derivation.",
+        "isos": [
+          "ESP",
+          "BFA"
+        ]
+      },
+      "beat_2": {
+        "supported": true,
+        "reason": "Qualitative contrast statement between Burkina Faso and Spain.",
+        "isos": [
+          "BFA",
+          "ESP"
+        ]
+      },
+      "beat_3": {
+        "supported": true,
+        "reason": "India (74.2%) and United States (84.4%) values match the data.",
+        "isos": [
+          "IND",
+          "USA"
+        ]
+      },
+      "beat_4": {
+        "supported": true,
+        "reason": "The median value across the 109 mapped countries/territories is correctly stated.",
+        "isos": []
+      },
+      "beat_5": {
+        "supported": true,
+        "reason": "Ordinary identity framing question.",
+        "isos": []
+      },
+      "card_5": {
+        "supported": true,
+        "reason": "Card text correctly reflects the indicator title and unit.",
+        "isos": []
+      }
+    },
+    "warnings": []
+  },
+  "script_sha256": "ad86289dd5e5acef4bd2362a0a4dcb2e5075897c8c7bd0c41acafc6373a38e9c",
+  "data_sha256": "221ad681264d507f21f8e87fb56aaee2669f199b5ea7dbd699a2ac7ea45d78ed",
+  "reviewer_model": "gemini-3.5-flash-lite"
+}

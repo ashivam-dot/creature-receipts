@@ -1,0 +1,176 @@
+{
+  "errors": [
+    {
+      "surface": "description",
+      "claim": "Children in Southern Africa typically enter lower secondary school four years later than those in Turkey or Ukraine.",
+      "reason": "Turkey starting age is 10 years and Ukraine is 10 years. Namibia is 14 years, which is a 4-year difference, but Ukraine and Turkey are 10 years, making 14-10 = 4 years, however the claim says Southern Africa vs Turkey or Ukraine. Namibia value is 14, Turkey is 10. 14 - 10 = 4. This is supported mathematically, but let's check Ukraine: Ukraine is 10. Turkey is 10. Wait, 14 - 10 = 4. Let's check text: 'Southern Africa' (Namibia is 14, South Africa is 14, Tanzania is 14, Zambia is 14). Turkey is 10. Ukraine is 10. 14 - 10 = 4. This is supported.",
+      "severity": "info"
+    }
+  ],
+  "claims": [
+    {
+      "surface": "title",
+      "text": "Places Ranked by Middle School Starting Age",
+      "isos": [],
+      "support": "Indicator SE.SEC.AGES measures lower secondary school starting age across mapped countries and territories."
+    },
+    {
+      "surface": "hook",
+      "text": "MIDDLE SCHOOL AGE",
+      "isos": [],
+      "support": "Indicator SE.SEC.AGES measures lower secondary school starting age."
+    },
+    {
+      "surface": "description",
+      "text": "Children in Southern Africa typically enter lower secondary school four years later than those in Turkey or Ukraine.",
+      "isos": [
+        "NAM",
+        "ZAF",
+        "TZA",
+        "ZMB",
+        "TUR",
+        "UKR"
+      ],
+      "support": "Namibia (NAM): 14 years, South Africa (ZAF): 14 years, Tanzania (TZA): 14 years, Zambia (ZMB): 14 years. Turkey (TUR): 10 years, Ukraine (UKR): 10 years. Difference is 4 years."
+    },
+    {
+      "surface": "beat_0",
+      "text": "In Turkey, children enter middle school at 10. In Namibia, they wait until 14.",
+      "isos": [
+        "TUR",
+        "NAM"
+      ],
+      "support": "Turkey (TUR): 10 years, Namibia (NAM): 14 years."
+    },
+    {
+      "surface": "beat_1",
+      "text": "In Brazil and the UK, students make that transition at 11.",
+      "isos": [
+        "BRA",
+        "GBR"
+      ],
+      "support": "Brazil (BRA): 11 years, United Kingdom (GBR): 11 years."
+    },
+    {
+      "surface": "beat_2",
+      "text": "This benchmark assumes students entered on time and progressed without repeating any grade.",
+      "isos": [],
+      "support": "Definition: assuming they had started at the official entrance age for the lowest level of education, had studied full-time throughout and had progressed through the system without repeating or skipping a grade."
+    },
+    {
+      "surface": "beat_3",
+      "text": "Climbing the ladder, the USA, Japan, and China all begin at 12.",
+      "isos": [
+        "USA",
+        "JPN",
+        "CHN"
+      ],
+      "support": "United States (USA): 12 years, Japan (JPN): 12 years, China (CHN): 12 years."
+    },
+    {
+      "surface": "beat_4",
+      "text": "Moving higher, Denmark and Indonesia wait until students reach 13.",
+      "isos": [
+        "DNK",
+        "IDN"
+      ],
+      "support": "Denmark (DNK): 13 years, Indonesia (IDN): 13 years."
+    },
+    {
+      "surface": "beat_5",
+      "text": "At the very top, Namibia has the world's highest starting age at 14.",
+      "isos": [
+        "NAM"
+      ],
+      "support": "Namibia (NAM): 14 years, rank 1."
+    },
+    {
+      "surface": "beat_6",
+      "text": "At what age do students enter lower secondary school in your country?",
+      "isos": [],
+      "support": "General closing question."
+    },
+    {
+      "surface": "card_6",
+      "text": "Starting Age? World Bank 2025",
+      "isos": [],
+      "support": "World Bank 2025, Indicator SE.SEC.AGES."
+    }
+  ],
+  "surface_checks": {
+    "title": {
+      "supported": true,
+      "reason": "Title refers to ranking places by lower secondary school starting age, matching indicator SE.SEC.AGES.",
+      "isos": []
+    },
+    "hook": {
+      "supported": true,
+      "reason": "Hook introduces middle school age matching lower secondary school.",
+      "isos": []
+    },
+    "description": {
+      "supported": true,
+      "reason": "Namibia/Southern Africa is 14 years, Turkey and Ukraine are 10 years, difference is 4 years.",
+      "isos": [
+        "NAM",
+        "TUR",
+        "UKR"
+      ]
+    },
+    "beat_0": {
+      "supported": true,
+      "reason": "Turkey is 10 years and Namibia is 14 years in the data.",
+      "isos": [
+        "TUR",
+        "NAM"
+      ]
+    },
+    "beat_1": {
+      "supported": true,
+      "reason": "Brazil and UK are both 11 years in the data.",
+      "isos": [
+        "BRA",
+        "GBR"
+      ]
+    },
+    "beat_2": {
+      "supported": true,
+      "reason": "Directly matches the definition text regarding assuming on-time entry and no grade repetition.",
+      "isos": []
+    },
+    "beat_3": {
+      "supported": true,
+      "reason": "USA, Japan, and China are all 12 years in the data.",
+      "isos": [
+        "USA",
+        "JPN",
+        "CHN"
+      ]
+    },
+    "beat_4": {
+      "supported": true,
+      "reason": "Denmark and Indonesia are both 13 years in the data.",
+      "isos": [
+        "DNK",
+        "IDN"
+      ]
+    },
+    "beat_5": {
+      "supported": true,
+      "reason": "Namibia has a value of 14 years and rank 1.",
+      "isos": [
+        "NAM"
+      ]
+    },
+    "beat_6": {
+      "supported": true,
+      "reason": "Closing prompt is style/question.",
+      "isos": []
+    },
+    "card_6": {
+      "supported": true,
+      "reason": "Card correctly references starting age and World Bank 2025.",
+      "isos": []
+    }
+  }
+}
