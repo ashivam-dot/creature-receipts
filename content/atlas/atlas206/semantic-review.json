@@ -1,0 +1,134 @@
+{
+  "errors": [
+    {
+      "surface": "beat_4",
+      "claim": "Madagascar has 8.5 times India.",
+      "reason": "47.6 / 5.6 is approximately 8.5, but the claim is mathematically imprecise and lacks context.",
+      "severity": "info"
+    },
+    {
+      "surface": "beat_5",
+      "claim": "Brazil hits 37.5%, trailing only the highest.",
+      "reason": "Brazil is ranked 2nd, so it trails only the highest (Madagascar). This is factually correct.",
+      "severity": "info"
+    },
+    {
+      "surface": "beat_6",
+      "claim": "The median country sits at 5%, where half rest above and half below.",
+      "reason": "The median of 117 values is the 59th value. The 59th value in the dataset is 4.98% (Argentina), which rounds to 5%.",
+      "severity": "info"
+    }
+  ],
+  "claims": [
+    {
+      "surface": "beat_0",
+      "text": "Madagascar hits 47.6%. South Sudan drops to down 55%.",
+      "isos": [
+        "MDG",
+        "SSD"
+      ],
+      "support": "Madagascar: 47.6325112573895 (47.6%), South Sudan: -54.9958898385381 (-55%)"
+    },
+    {
+      "surface": "beat_2",
+      "text": "South Sudan drops to down 55%, the lowest of all 117.",
+      "isos": [
+        "SSD"
+      ],
+      "support": "South Sudan rank 117/117"
+    },
+    {
+      "surface": "beat_3",
+      "text": "India stands at 5.6%. China sits at 5.2%.",
+      "isos": [
+        "IND",
+        "CHN"
+      ],
+      "support": "India: 5.55501946152238 (5.6%), China: 5.15344182022933 (5.2%)"
+    },
+    {
+      "surface": "beat_5",
+      "text": "Brazil hits 37.5%, trailing only the highest.",
+      "isos": [
+        "BRA"
+      ],
+      "support": "Brazil: 37.4603628210417 (37.5%), Rank 2"
+    }
+  ],
+  "surface_checks": {
+    "title": {
+      "supported": true,
+      "reason": "The title frames the comparison of India and China within the context of the dataset.",
+      "isos": []
+    },
+    "hook": {
+      "supported": true,
+      "reason": "The hook describes the range of values in the dataset.",
+      "isos": []
+    },
+    "description": {
+      "supported": true,
+      "reason": "The description accurately reflects the dataset scope (117 countries/territories) and the indicator definition.",
+      "isos": []
+    },
+    "beat_0": {
+      "supported": true,
+      "reason": "Values match the provided evidence for Madagascar and South Sudan.",
+      "isos": [
+        "MDG",
+        "SSD"
+      ]
+    },
+    "beat_1": {
+      "supported": true,
+      "reason": "The definition of the indicator matches the provided evidence.",
+      "isos": [
+        "MDG"
+      ]
+    },
+    "beat_2": {
+      "supported": true,
+      "reason": "South Sudan is the lowest ranked entity in the dataset.",
+      "isos": [
+        "SSD"
+      ]
+    },
+    "beat_3": {
+      "supported": true,
+      "reason": "Values match the provided evidence for India and China.",
+      "isos": [
+        "IND",
+        "CHN"
+      ]
+    },
+    "beat_4": {
+      "supported": true,
+      "reason": "The ratio is mathematically supported by the provided values.",
+      "isos": [
+        "MDG"
+      ]
+    },
+    "beat_5": {
+      "supported": true,
+      "reason": "Brazil is ranked 2nd, trailing only the highest.",
+      "isos": [
+        "BRA"
+      ]
+    },
+    "beat_6": {
+      "supported": true,
+      "reason": "The median of 117 values is the 59th value, which is 4.98% (Argentina), rounding to 5%.",
+      "isos": []
+    },
+    "beat_7": {
+      "supported": true,
+      "reason": "This is a rhetorical question.",
+      "isos": []
+    },
+    "card_7": {
+      "supported": true,
+      "reason": "This is a title card.",
+      "isos": []
+    }
+  }
+}

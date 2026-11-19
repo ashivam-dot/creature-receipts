@@ -1,0 +1,44 @@
+{
+  "version": 1,
+  "passed": true,
+  "checked_at": "2026-11-19T09:49:26.975978+00:00",
+  "quality_module_sha256": "db7be8ac57c839f39a10676f1a70580a83ea346f59c27f19868d09c272def14c",
+  "media_sha256": "0f64d663426ff42fe5a45a5fb060eb53609739611933e7832af954aa9aef873c",
+  "script_sha256": "58760d74912af01dcecdcb686190865c104bc757f96623c8217154600665227d",
+  "data_sha256": "0e5cc1142c126d86286d4864b2b3191a8cac560f63c4704a175bd9cb4fcacce6",
+  "claims_sha256": "8fdf9a9004ae94c7cee8f72752fe0649c25c74c3007ab290a137964d34f9802e",
+  "contact_sha256": "a31589c2b0aa3a0bf421d4c2f6d4e6573bd97107f811ec99ca5902f0f7185222",
+  "duration": 46.98,
+  "integrated_lufs": -14.3,
+  "true_peak_dbfs": -1.4,
+  "speech": {
+    "heard": "In Moldova, women are 55.4% of workers, in Afghanistan just 6.8%. Moldova is the world's highest, where women are a majority of those working. Counts everyone 15 or older who supplies labor for goods and services. Afghanistan is the world's lowest. Moldova has 8.1 times the share Afghanistan does. The largest economies sit in the middle. USA 45.6%, China 45.4%. UK, Nigeria and Russia sit higher. UK 47.8%, Nigeria 48.4%, Russia 48.8%. Further down, India has 28.3%. How many women work in your country's labor force?",
+    "model": "small.en",
+    "media_sha256": "0f64d663426ff42fe5a45a5fb060eb53609739611933e7832af954aa9aef873c",
+    "primary_differences": [
+      "'it' heard as '(nothing)' after 'of those working'",
+      "'the' heard as '(nothing)' after '45.6% china 45.4%'"
+    ],
+    "differences": [
+      "'it' heard as '(nothing)' after 'of those working'",
+      "'the' heard as '(nothing)' after '45.6% china 45.4%'",
+      "base.en: 'it' heard as '(nothing)' after 'of those working'"
+    ],
+    "corroboration": {
+      "model": "base.en",
+      "heard": "In Moldova, women are 55.4% of workers, in Afghanistan just 6.8%. Moldova is the world's highest, where women are a majority of those working. Counts everyone 15 or older who supplies labor for goods and services. Afghanistan is the world's lowest. Moldova has 8.1 times the share Afghanistan does. The largest economies sit in the middle, USA 45.6%, China 45.4%. UK, Nigeria and Russia sit higher, UK 47.8%, Nigeria 48.4%, Russia 48.8%. Further down, India has 28.3%. How many women work in your country's labor force?",
+      "differences": [
+        "'it' heard as '(nothing)' after 'of those working'",
+        "'the' heard as '(nothing)' after '45.6% china 45.4%'"
+      ],
+      "resolved": []
+    }
+  },
+  "warnings": [
+    "'it' heard as '(nothing)' after 'of those working'",
+    "'the' heard as '(nothing)' after '45.6% china 45.4%'",
+    "base.en: 'it' heard as '(nothing)' after 'of those working'",
+    "duration 47.0s outside editorial 30–45s target"
+  ],
+  "speech_policy": "material-hard-entity-polarity-strict-minor-spelling-warning"
+}

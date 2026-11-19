@@ -1,0 +1,83 @@
+id: atlas207
+title: Places Ranked by Women in the Labor Force
+hook_text: THE WORKFORCE GAP
+description: A cinematic exploration of the female share of the labor force globally, contrasting Moldova's high
+  participation with Afghanistan's low figures.
+hashtags:
+- '#work'
+- '#geography'
+- '#countries'
+tags:
+- work
+- female share of total labor force
+- countries ranked by female share of total labor force
+- Moldova
+- Afghanistan
+- world map
+- geography
+- atlas in numbers
+sources:
+- https://data.worldbank.org/indicator/SL.TLF.TOTL.FE.ZS
+dataset:
+  kind: worldbank
+  indicator: SL.TLF.TOTL.FE.ZS
+  label: Female share of total labor force
+  unit: '%'
+  source: World Bank
+  min_year: 2019
+scale:
+  edges:
+  - 25.0
+  - 40.0
+  - 45.0
+  - 50.0
+  labels:
+  - Under 25%
+  - 25% to 40%
+  - 40% to 45%
+  - 45% to 50%
+  - Over 50%
+value_format: '{v:.1f}%'
+beats:
+- text: In Moldova, women are 55.4% of workers. In Afghanistan, just 6.8%.
+  shot:
+    callouts:
+    - MDA
+    - AFG
+- text: Moldova is the world's highest, where women are a majority of those working.
+  shot:
+    kind: country
+    iso: MDA
+- text: It counts everyone 15 or older who supplies labor for goods and services.
+  shot:
+    callouts:
+    - MDA
+  basis: Labor force comprises people ages 15 and older who supply labor for the production of goods and services
+    during a specified period.
+- text: Afghanistan is the world's lowest. Moldova has 8.1 times the share Afghanistan does.
+  shot:
+    kind: country
+    iso: AFG
+- text: 'The largest economies sit in the middle. USA: 45.6%. China: 45.4%.'
+  shot:
+    kind: group
+    isos:
+    - USA
+    - CHN
+- text: 'The UK, Nigeria, and Russia sit higher. UK: 47.8%. Nigeria: 48.4%. Russia: 48.8%.'
+  shot:
+    kind: rank
+    isos:
+    - GBR
+    - NGA
+    - RUS
+- text: Further down, India has 28.3%.
+  shot:
+    kind: country
+    iso: IND
+- text: How many women work in your country's labor force?
+  shot:
+    kind: card
+    lines:
+    - Who is working?
+    - Female Share of Labor Force

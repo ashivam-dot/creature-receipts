@@ -1,0 +1,71 @@
+id: atlas206
+title: 'India vs China: Real Interest Rates Worldwide'
+format: versus
+hook_text: WILD EXTREMES
+description: A cinematic look at real interest rates adjusted for inflation across 117 countries and territories.
+hashtags:
+- '#data'
+- '#geography'
+- '#countries'
+tags:
+- real interest rate
+- countries ranked by real interest rate
+- Madagascar
+- South Sudan
+- world map
+- geography
+- atlas in numbers
+sources:
+- https://data.worldbank.org/indicator/FR.INR.RINR
+dataset:
+  kind: worldbank
+  indicator: FR.INR.RINR
+  label: Real interest rate
+  unit: '%'
+  source: World Bank
+  min_year: 2019
+scale:
+  kind: threshold
+  labels:
+  - Positive real interest rate
+  - Negative real interest rate
+value_format: '{v:.2f}%'
+beats:
+- text: Madagascar hits 47.6%. South Sudan drops to down 55%.
+  shot:
+    callouts:
+    - MDG
+    - SSD
+- text: Madagascar is adjusted for inflation as measured by the GDP deflator.
+  shot:
+    kind: country
+    iso: MDG
+  basis: The real interest rate is the lending interest rate adjusted for inflation as measured by the GDP deflator.
+- text: South Sudan drops to down 55%, the lowest of all 117.
+  shot:
+    kind: country
+    iso: SSD
+- text: India stands at 5.6%. China sits at 5.2%.
+  shot:
+    kind: group
+    isos:
+    - IND
+    - CHN
+- text: Madagascar has 8.5 times India.
+  shot:
+    kind: country
+    iso: MDG
+- text: Brazil hits 37.5%, trailing only the highest.
+  shot:
+    kind: country
+    iso: BRA
+- text: The median country sits at 5%, where half rest above and half below.
+  shot:
+    callouts:
+    - IND
+- text: What is the real interest rate in your country?
+  shot:
+    kind: card
+    lines:
+    - What is your rate?
+    - World Bank Real Interest Rate
