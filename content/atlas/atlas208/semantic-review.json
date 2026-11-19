@@ -1,0 +1,127 @@
+{
+  "errors": [
+    {
+      "surface": "beat_1",
+      "claim": "One big country breaks this pattern. It is not the one you would guess.",
+      "reason": "Unsourced causal or pattern framing not present in evidence definition.",
+      "severity": "style"
+    }
+  ],
+  "claims": [
+    {
+      "surface": "beat_0",
+      "text": "Healthcare in the United States costs 13,473 per person. Sudan spends 28.",
+      "isos": [
+        "USA",
+        "SDN"
+      ],
+      "support": "USA value is 13473.19 (display $13,473), SDN value is 28.2618 (display $28)."
+    },
+    {
+      "surface": "beat_2",
+      "text": "Is it Switzerland at 10,602, Germany at 8,826, or China?",
+      "isos": [
+        "CHE",
+        "DEU",
+        "CHN"
+      ],
+      "support": "CHE value is 10601.93 ($10,602), DEU value is 8825.61 ($8,826), CHN value is 1486.88 ($1,487)."
+    },
+    {
+      "surface": "beat_3",
+      "text": "China is the surprise, spending 1,487.",
+      "isos": [
+        "CHN"
+      ],
+      "support": "CHN value is 1486.88389429767, display $1,487."
+    },
+    {
+      "surface": "beat_4",
+      "text": "The United States is the world's highest, at 13,473.",
+      "isos": [
+        "USA"
+      ],
+      "support": "USA rank is 1 with value 13473.1932166645, display $13,473."
+    },
+    {
+      "surface": "beat_5",
+      "text": "Sudan is the lowest at 28. It counts current expenditures on health per person.",
+      "isos": [
+        "SDN"
+      ],
+      "support": "SDN rank is 189 (last) with value 28.261876902732, display $28. Definition matches current expenditures on health per capita."
+    }
+  ],
+  "surface_checks": {
+    "title": {
+      "supported": true,
+      "reason": "Title is a framing question about the indicator maximum, which is supported by ranks.",
+      "isos": []
+    },
+    "hook": {
+      "supported": true,
+      "reason": "Stylistic intro framing.",
+      "isos": []
+    },
+    "description": {
+      "supported": true,
+      "reason": "Accurately describes healthcare spending per person disparity.",
+      "isos": []
+    },
+    "beat_0": {
+      "supported": true,
+      "reason": "Exact numbers match USA and SDN data values.",
+      "isos": [
+        "USA",
+        "SDN"
+      ]
+    },
+    "beat_1": {
+      "supported": true,
+      "reason": "Stylistic narration not contradicting any data.",
+      "isos": [
+        "CHN"
+      ]
+    },
+    "beat_2": {
+      "supported": true,
+      "reason": "Exact values match CHE, DEU, and CHN.",
+      "isos": [
+        "CHE",
+        "DEU",
+        "CHN"
+      ]
+    },
+    "beat_3": {
+      "supported": true,
+      "reason": "China's value matches display $1,487.",
+      "isos": [
+        "CHN"
+      ]
+    },
+    "beat_4": {
+      "supported": true,
+      "reason": "USA rank 1 is highest in universe with 13,473.",
+      "isos": [
+        "USA"
+      ]
+    },
+    "beat_5": {
+      "supported": true,
+      "reason": "Sudan rank is 189 (lowest) with 28; definition matches.",
+      "isos": [
+        "SDN"
+      ]
+    },
+    "beat_6": {
+      "supported": true,
+      "reason": "Ordinary closing engagement question.",
+      "isos": []
+    },
+    "card_6": {
+      "supported": true,
+      "reason": "Matches indicator definition.",
+      "isos": []
+    }
+  }
+}

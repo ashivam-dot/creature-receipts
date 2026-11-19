@@ -1,0 +1,1919 @@
+{
+  "version": 1,
+  "evidence": {
+    "version": 1,
+    "indicator": "SH.XPD.CHEX.PP.CD",
+    "definition": "Current expenditures on health per capita expressed in international dollars at purchasing power parity.",
+    "source": "https://data.worldbank.org/indicator/SH.XPD.CHEX.PP.CD",
+    "source_response_sha256": "f8172efa136fc2728900962689eb53d564c8da365f92cc66afcbd6a1fc4d5e45",
+    "source_organization": "Global Health Expenditure Database, updated December 12th, 2025, World Health Organization (WHO), uri: http://apps.who.int/nha/database",
+    "year_label": "latest available 2021–2024",
+    "universe": "mapped countries and territories with data",
+    "count": 189,
+    "threshold": null,
+    "at_or_above": null,
+    "entities": {
+      "AFG": {
+        "name": "Afghanistan",
+        "value": 329.823207832857,
+        "display": "$330",
+        "year": 2023,
+        "unit": "international $",
+        "rank": 140
+      },
+      "ALB": {
+        "name": "Albania",
+        "value": 1464.53502823031,
+        "display": "$1,465",
+        "year": 2023,
+        "unit": "international $",
+        "rank": 73
+      },
+      "DZA": {
+        "name": "Algeria",
+        "value": 732.004025956997,
+        "display": "$732",
+        "year": 2023,
+        "unit": "international $",
+        "rank": 112
+      },
+      "AND": {
+        "name": "Andorra",
+        "value": 5519.41470327922,
+        "display": "$5,519",
+        "year": 2023,
+        "unit": "international $",
+        "rank": 22
+      },
+      "AGO": {
+        "name": "Angola",
+        "value": 248.38769563917,
+        "display": "$248",
+        "year": 2023,
+        "unit": "international $",
+        "rank": 147
+      },
+      "ATG": {
+        "name": "Antigua and Barbuda",
+        "value": 1241.35033031918,
+        "display": "$1,241",
+        "year": 2023,
+        "unit": "international $",
+        "rank": 84
+      },
+      "ARG": {
+        "name": "Argentina",
+        "value": 3089.30758524707,
+        "display": "$3,089",
+        "year": 2023,
+        "unit": "international $",
+        "rank": 45
+      },
+      "ARM": {
+        "name": "Armenia",
+        "value": 2032.61543604151,
+        "display": "$2,033",
+        "year": 2023,
+        "unit": "international $",
+        "rank": 60
+      },
+      "AUS": {
+        "name": "Australia",
+        "value": 7690.82499337234,
+        "display": "$7,691",
+        "year": 2023,
+        "unit": "international $",
+        "rank": 11
+      },
+      "AUT": {
+        "name": "Austria",
+        "value": 8250.10666677903,
+        "display": "$8,250",
+        "year": 2024,
+        "unit": "international $",
+        "rank": 8
+      },
+      "AZE": {
+        "name": "Azerbaijan",
+        "value": 992.839281257224,
+        "display": "$993",
+        "year": 2023,
+        "unit": "international $",
+        "rank": 98
+      },
+      "BHS": {
+        "name": "Bahamas, The",
+        "value": 2315.62457132367,
+        "display": "$2,316",
+        "year": 2023,
+        "unit": "international $",
+        "rank": 55
+      },
+      "BHR": {
+        "name": "Bahrain",
+        "value": 2555.25121691665,
+        "display": "$2,555",
+        "year": 2023,
+        "unit": "international $",
+        "rank": 54
+      },
+      "BGD": {
+        "name": "Bangladesh",
+        "value": 198.520096538506,
+        "display": "$199",
+        "year": 2023,
+        "unit": "international $",
+        "rank": 156
+      },
+      "BRB": {
+        "name": "Barbados",
+        "value": 1153.10213713461,
+        "display": "$1,153",
+        "year": 2023,
+        "unit": "international $",
+        "rank": 90
+      },
+      "BLR": {
+        "name": "Belarus",
+        "value": 2193.49860229965,
+        "display": "$2,193",
+        "year": 2023,
+        "unit": "international $",
+        "rank": 58
+      },
+      "BEL": {
+        "name": "Belgium",
+        "value": 7489.31179853622,
+        "display": "$7,489",
+        "year": 2023,
+        "unit": "international $",
+        "rank": 13
+      },
+      "BLZ": {
+        "name": "Belize",
+        "value": 573.336236342235,
+        "display": "$573",
+        "year": 2023,
+        "unit": "international $",
+        "rank": 122
+      },
+      "BEN": {
+        "name": "Benin",
+        "value": 137.830811615783,
+        "display": "$138",
+        "year": 2023,
+        "unit": "international $",
+        "rank": 169
+      },
+      "BTN": {
+        "name": "Bhutan",
+        "value": 676.701597399206,
+        "display": "$677",
+        "year": 2023,
+        "unit": "international $",
+        "rank": 115
+      },
+      "BOL": {
+        "name": "Bolivia",
+        "value": 755.882068996814,
+        "display": "$756",
+        "year": 2023,
+        "unit": "international $",
+        "rank": 110
+      },
+      "BIH": {
+        "name": "Bosnia and Herzegovina",
+        "value": 1989.05672091938,
+        "display": "$1,989",
+        "year": 2023,
+        "unit": "international $",
+        "rank": 61
+      },
+      "BWA": {
+        "name": "Botswana",
+        "value": 1309.50101290892,
+        "display": "$1,310",
+        "year": 2023,
+        "unit": "international $",
+        "rank": 82
+      },
+      "BRA": {
+        "name": "Brazil",
+        "value": 2070.43822679684,
+        "display": "$2,070",
+        "year": 2023,
+        "unit": "international $",
+        "rank": 59
+      },
+      "BRN": {
+        "name": "Brunei Darussalam",
+        "value": 1896.11804135,
+        "display": "$1,896",
+        "year": 2023,
+        "unit": "international $",
+        "rank": 64
+      },
+      "BGR": {
+        "name": "Bulgaria",
+        "value": 2969.55151843467,
+        "display": "$2,970",
+        "year": 2023,
+        "unit": "international $",
+        "rank": 47
+      },
+      "BFA": {
+        "name": "Burkina Faso",
+        "value": 223.870411080804,
+        "display": "$224",
+        "year": 2023,
+        "unit": "international $",
+        "rank": 153
+      },
+      "BDI": {
+        "name": "Burundi",
+        "value": 100.062312964118,
+        "display": "$100",
+        "year": 2023,
+        "unit": "international $",
+        "rank": 181
+      },
+      "CPV": {
+        "name": "Cabo Verde",
+        "value": 616.53837498828,
+        "display": "$617",
+        "year": 2023,
+        "unit": "international $",
+        "rank": 118
+      },
+      "KHM": {
+        "name": "Cambodia",
+        "value": 350.113839449842,
+        "display": "$350",
+        "year": 2023,
+        "unit": "international $",
+        "rank": 136
+      },
+      "CMR": {
+        "name": "Cameroon",
+        "value": 246.180203848641,
+        "display": "$246",
+        "year": 2023,
+        "unit": "international $",
+        "rank": 149
+      },
+      "CAN": {
+        "name": "Canada",
+        "value": 7645.92699305836,
+        "display": "$7,646",
+        "year": 2024,
+        "unit": "international $",
+        "rank": 12
+      },
+      "CAF": {
+        "name": "Central African Republic",
+        "value": 136.684996416491,
+        "display": "$137",
+        "year": 2023,
+        "unit": "international $",
+        "rank": 170
+      },
+      "TCD": {
+        "name": "Chad",
+        "value": 129.912086167297,
+        "display": "$130",
+        "year": 2023,
+        "unit": "international $",
+        "rank": 172
+      },
+      "CHL": {
+        "name": "Chile",
+        "value": 3611.90416214736,
+        "display": "$3,612",
+        "year": 2024,
+        "unit": "international $",
+        "rank": 37
+      },
+      "CHN": {
+        "name": "China",
+        "value": 1486.88389429767,
+        "display": "$1,487",
+        "year": 2023,
+        "unit": "international $",
+        "rank": 71
+      },
+      "COL": {
+        "name": "Colombia",
+        "value": 1757.86920291765,
+        "display": "$1,758",
+        "year": 2024,
+        "unit": "international $",
+        "rank": 68
+      },
+      "COM": {
+        "name": "Comoros",
+        "value": 249.621382825549,
+        "display": "$250",
+        "year": 2023,
+        "unit": "international $",
+        "rank": 145
+      },
+      "COD": {
+        "name": "Congo, Dem. Rep.",
+        "value": 57.762334845154,
+        "display": "$58",
+        "year": 2023,
+        "unit": "international $",
+        "rank": 187
+      },
+      "COG": {
+        "name": "Congo, Rep.",
+        "value": 208.864294376044,
+        "display": "$209",
+        "year": 2023,
+        "unit": "international $",
+        "rank": 154
+      },
+      "CRI": {
+        "name": "Costa Rica",
+        "value": 1927.74318453635,
+        "display": "$1,928",
+        "year": 2023,
+        "unit": "international $",
+        "rank": 63
+      },
+      "CIV": {
+        "name": "Cote d'Ivoire",
+        "value": 249.363625351043,
+        "display": "$249",
+        "year": 2023,
+        "unit": "international $",
+        "rank": 146
+      },
+      "HRV": {
+        "name": "Croatia",
+        "value": 3229.33564953197,
+        "display": "$3,229",
+        "year": 2023,
+        "unit": "international $",
+        "rank": 42
+      },
+      "CUB": {
+        "name": "Cuba",
+        "value": 2575.4060881822,
+        "display": "$2,575",
+        "year": 2023,
+        "unit": "international $",
+        "rank": 52
+      },
+      "CYP": {
+        "name": "Cyprus",
+        "value": 4537.67999225208,
+        "display": "$4,538",
+        "year": 2023,
+        "unit": "international $",
+        "rank": 31
+      },
+      "CZE": {
+        "name": "Czechia",
+        "value": 4674.02676171649,
+        "display": "$4,674",
+        "year": 2024,
+        "unit": "international $",
+        "rank": 30
+      },
+      "DNK": {
+        "name": "Denmark",
+        "value": 7261.55360583993,
+        "display": "$7,262",
+        "year": 2024,
+        "unit": "international $",
+        "rank": 14
+      },
+      "DJI": {
+        "name": "Djibouti",
+        "value": 155.011097558281,
+        "display": "$155",
+        "year": 2023,
+        "unit": "international $",
+        "rank": 163
+      },
+      "DMA": {
+        "name": "Dominica",
+        "value": 968.266382918939,
+        "display": "$968",
+        "year": 2023,
+        "unit": "international $",
+        "rank": 99
+      },
+      "DOM": {
+        "name": "Dominican Republic",
+        "value": 1168.81089141222,
+        "display": "$1,169",
+        "year": 2023,
+        "unit": "international $",
+        "rank": 89
+      },
+      "ECU": {
+        "name": "Ecuador",
+        "value": 1238.08562321825,
+        "display": "$1,238",
+        "year": 2023,
+        "unit": "international $",
+        "rank": 85
+      },
+      "EGY": {
+        "name": "Egypt, Arab Rep.",
+        "value": 904.665053940783,
+        "display": "$905",
+        "year": 2023,
+        "unit": "international $",
+        "rank": 104
+      },
+      "SLV": {
+        "name": "El Salvador",
+        "value": 1175.52067026246,
+        "display": "$1,176",
+        "year": 2023,
+        "unit": "international $",
+        "rank": 88
+      },
+      "GNQ": {
+        "name": "Equatorial Guinea",
+        "value": 609.300887743997,
+        "display": "$609",
+        "year": 2023,
+        "unit": "international $",
+        "rank": 119
+      },
+      "ERI": {
+        "name": "Eritrea",
+        "value": 86.564480126457,
+        "display": "$87",
+        "year": 2023,
+        "unit": "international $",
+        "rank": 183
+      },
+      "EST": {
+        "name": "Estonia",
+        "value": 3740.86106413705,
+        "display": "$3,741",
+        "year": 2024,
+        "unit": "international $",
+        "rank": 35
+      },
+      "SWZ": {
+        "name": "Eswatini",
+        "value": 922.026572433391,
+        "display": "$922",
+        "year": 2023,
+        "unit": "international $",
+        "rank": 102
+      },
+      "ETH": {
+        "name": "Ethiopia",
+        "value": 85.730445772557,
+        "display": "$86",
+        "year": 2023,
+        "unit": "international $",
+        "rank": 184
+      },
+      "FJI": {
+        "name": "Fiji",
+        "value": 547.77330791684,
+        "display": "$548",
+        "year": 2023,
+        "unit": "international $",
+        "rank": 125
+      },
+      "FIN": {
+        "name": "Finland",
+        "value": 6433.37242991069,
+        "display": "$6,433",
+        "year": 2023,
+        "unit": "international $",
+        "rank": 19
+      },
+      "FRA": {
+        "name": "France",
+        "value": 6868.20609701239,
+        "display": "$6,868",
+        "year": 2024,
+        "unit": "international $",
+        "rank": 16
+      },
+      "GAB": {
+        "name": "Gabon",
+        "value": 672.982835286249,
+        "display": "$673",
+        "year": 2023,
+        "unit": "international $",
+        "rank": 116
+      },
+      "GMB": {
+        "name": "Gambia, The",
+        "value": 94.1328682072811,
+        "display": "$94",
+        "year": 2023,
+        "unit": "international $",
+        "rank": 182
+      },
+      "GEO": {
+        "name": "Georgia",
+        "value": 1679.03595330401,
+        "display": "$1,679",
+        "year": 2023,
+        "unit": "international $",
+        "rank": 69
+      },
+      "DEU": {
+        "name": "Germany",
+        "value": 8825.61480783196,
+        "display": "$8,826",
+        "year": 2024,
+        "unit": "international $",
+        "rank": 5
+      },
+      "GHA": {
+        "name": "Ghana",
+        "value": 234.462562664913,
+        "display": "$234",
+        "year": 2023,
+        "unit": "international $",
+        "rank": 151
+      },
+      "GRC": {
+        "name": "Greece",
+        "value": 3453.89441532691,
+        "display": "$3,454",
+        "year": 2023,
+        "unit": "international $",
+        "rank": 39
+      },
+      "GRD": {
+        "name": "Grenada",
+        "value": 880.317032463419,
+        "display": "$880",
+        "year": 2023,
+        "unit": "international $",
+        "rank": 105
+      },
+      "GTM": {
+        "name": "Guatemala",
+        "value": 935.351381407763,
+        "display": "$935",
+        "year": 2023,
+        "unit": "international $",
+        "rank": 101
+      },
+      "GIN": {
+        "name": "Guinea",
+        "value": 168.743604817928,
+        "display": "$169",
+        "year": 2023,
+        "unit": "international $",
+        "rank": 160
+      },
+      "GNB": {
+        "name": "Guinea-Bissau",
+        "value": 247.126691222918,
+        "display": "$247",
+        "year": 2023,
+        "unit": "international $",
+        "rank": 148
+      },
+      "GUY": {
+        "name": "Guyana",
+        "value": 1331.13608960325,
+        "display": "$1,331",
+        "year": 2023,
+        "unit": "international $",
+        "rank": 81
+      },
+      "HTI": {
+        "name": "Haiti",
+        "value": 104.722015033974,
+        "display": "$105",
+        "year": 2023,
+        "unit": "international $",
+        "rank": 178
+      },
+      "HND": {
+        "name": "Honduras",
+        "value": 553.468796775363,
+        "display": "$553",
+        "year": 2023,
+        "unit": "international $",
+        "rank": 124
+      },
+      "HUN": {
+        "name": "Hungary",
+        "value": 2875.2067856772,
+        "display": "$2,875",
+        "year": 2023,
+        "unit": "international $",
+        "rank": 50
+      },
+      "ISL": {
+        "name": "Iceland",
+        "value": 6926.88414378239,
+        "display": "$6,927",
+        "year": 2024,
+        "unit": "international $",
+        "rank": 15
+      },
+      "IND": {
+        "name": "India",
+        "value": 346.246240799183,
+        "display": "$346",
+        "year": 2023,
+        "unit": "international $",
+        "rank": 138
+      },
+      "IDN": {
+        "name": "Indonesia",
+        "value": 416.590667674711,
+        "display": "$417",
+        "year": 2023,
+        "unit": "international $",
+        "rank": 131
+      },
+      "IRN": {
+        "name": "Iran, Islamic Rep.",
+        "value": 1064.08202686918,
+        "display": "$1,064",
+        "year": 2023,
+        "unit": "international $",
+        "rank": 96
+      },
+      "IRQ": {
+        "name": "Iraq",
+        "value": 842.794539580691,
+        "display": "$843",
+        "year": 2023,
+        "unit": "international $",
+        "rank": 108
+      },
+      "IRL": {
+        "name": "Ireland",
+        "value": 8772.47310002337,
+        "display": "$8,772",
+        "year": 2024,
+        "unit": "international $",
+        "rank": 7
+      },
+      "ISR": {
+        "name": "Israel",
+        "value": 4033.24498180961,
+        "display": "$4,033",
+        "year": 2023,
+        "unit": "international $",
+        "rank": 33
+      },
+      "ITA": {
+        "name": "Italy",
+        "value": 4992.80267729202,
+        "display": "$4,993",
+        "year": 2024,
+        "unit": "international $",
+        "rank": 27
+      },
+      "JAM": {
+        "name": "Jamaica",
+        "value": 868.617475019533,
+        "display": "$869",
+        "year": 2023,
+        "unit": "international $",
+        "rank": 107
+      },
+      "JPN": {
+        "name": "Japan",
+        "value": 5365.0750064152,
+        "display": "$5,365",
+        "year": 2023,
+        "unit": "international $",
+        "rank": 24
+      },
+      "JOR": {
+        "name": "Jordan",
+        "value": 797.845877689424,
+        "display": "$798",
+        "year": 2023,
+        "unit": "international $",
+        "rank": 109
+      },
+      "KAZ": {
+        "name": "Kazakhstan",
+        "value": 1459.9923891622,
+        "display": "$1,460",
+        "year": 2023,
+        "unit": "international $",
+        "rank": 74
+      },
+      "KEN": {
+        "name": "Kenya",
+        "value": 274.473624269189,
+        "display": "$274",
+        "year": 2023,
+        "unit": "international $",
+        "rank": 143
+      },
+      "KIR": {
+        "name": "Kiribati",
+        "value": 400.907617626912,
+        "display": "$401",
+        "year": 2023,
+        "unit": "international $",
+        "rank": 132
+      },
+      "KOR": {
+        "name": "Korea, Rep.",
+        "value": 5081.41151607382,
+        "display": "$5,081",
+        "year": 2024,
+        "unit": "international $",
+        "rank": 26
+      },
+      "KWT": {
+        "name": "Kuwait",
+        "value": 2566.8102979544,
+        "display": "$2,567",
+        "year": 2023,
+        "unit": "international $",
+        "rank": 53
+      },
+      "KGZ": {
+        "name": "Kyrgyz Republic",
+        "value": 348.625883638341,
+        "display": "$349",
+        "year": 2023,
+        "unit": "international $",
+        "rank": 137
+      },
+      "LAO": {
+        "name": "Lao PDR",
+        "value": 123.253987719582,
+        "display": "$123",
+        "year": 2023,
+        "unit": "international $",
+        "rank": 174
+      },
+      "LVA": {
+        "name": "Latvia",
+        "value": 3033.87411302447,
+        "display": "$3,034",
+        "year": 2023,
+        "unit": "international $",
+        "rank": 46
+      },
+      "LBN": {
+        "name": "Lebanon",
+        "value": 643.849749450606,
+        "display": "$644",
+        "year": 2023,
+        "unit": "international $",
+        "rank": 117
+      },
+      "LSO": {
+        "name": "Lesotho",
+        "value": 385.602726182804,
+        "display": "$386",
+        "year": 2023,
+        "unit": "international $",
+        "rank": 133
+      },
+      "LBR": {
+        "name": "Liberia",
+        "value": 233.052087652106,
+        "display": "$233",
+        "year": 2023,
+        "unit": "international $",
+        "rank": 152
+      },
+      "LBY": {
+        "name": "Libya",
+        "value": 1055.35713644896,
+        "display": "$1,055",
+        "year": 2023,
+        "unit": "international $",
+        "rank": 97
+      },
+      "LIE": {
+        "name": "Liechtenstein",
+        "value": 9795.16401910884,
+        "display": "$9,795",
+        "year": 2023,
+        "unit": "international $",
+        "rank": 3
+      },
+      "LTU": {
+        "name": "Lithuania",
+        "value": 4127.40238575885,
+        "display": "$4,127",
+        "year": 2024,
+        "unit": "international $",
+        "rank": 32
+      },
+      "LUX": {
+        "name": "Luxembourg",
+        "value": 8807.5855816904,
+        "display": "$8,808",
+        "year": 2024,
+        "unit": "international $",
+        "rank": 6
+      },
+      "MDG": {
+        "name": "Madagascar",
+        "value": 62.8407588151018,
+        "display": "$63",
+        "year": 2023,
+        "unit": "international $",
+        "rank": 186
+      },
+      "MWI": {
+        "name": "Malawi",
+        "value": 125.339832634507,
+        "display": "$125",
+        "year": 2023,
+        "unit": "international $",
+        "rank": 173
+      },
+      "MYS": {
+        "name": "Malaysia",
+        "value": 1441.22067100948,
+        "display": "$1,441",
+        "year": 2023,
+        "unit": "international $",
+        "rank": 76
+      },
+      "MLI": {
+        "name": "Mali",
+        "value": 103.891453893696,
+        "display": "$104",
+        "year": 2023,
+        "unit": "international $",
+        "rank": 179
+      },
+      "MLT": {
+        "name": "Malta",
+        "value": 5706.08612341606,
+        "display": "$5,706",
+        "year": 2023,
+        "unit": "international $",
+        "rank": 20
+      },
+      "MHL": {
+        "name": "Marshall Islands",
+        "value": 874.110813284817,
+        "display": "$874",
+        "year": 2023,
+        "unit": "international $",
+        "rank": 106
+      },
+      "MRT": {
+        "name": "Mauritania",
+        "value": 301.696427214965,
+        "display": "$302",
+        "year": 2023,
+        "unit": "international $",
+        "rank": 141
+      },
+      "MUS": {
+        "name": "Mauritius",
+        "value": 1565.91464740648,
+        "display": "$1,566",
+        "year": 2023,
+        "unit": "international $",
+        "rank": 70
+      },
+      "MEX": {
+        "name": "Mexico",
+        "value": 1367.99293806662,
+        "display": "$1,368",
+        "year": 2023,
+        "unit": "international $",
+        "rank": 79
+      },
+      "FSM": {
+        "name": "Micronesia, Fed. Sts.",
+        "value": 481.761120246203,
+        "display": "$482",
+        "year": 2023,
+        "unit": "international $",
+        "rank": 128
+      },
+      "MDA": {
+        "name": "Moldova",
+        "value": 1181.23602968629,
+        "display": "$1,181",
+        "year": 2023,
+        "unit": "international $",
+        "rank": 87
+      },
+      "MNG": {
+        "name": "Mongolia",
+        "value": 1108.94503872546,
+        "display": "$1,109",
+        "year": 2023,
+        "unit": "international $",
+        "rank": 93
+      },
+      "MNE": {
+        "name": "Montenegro",
+        "value": 2907.99537216869,
+        "display": "$2,908",
+        "year": 2023,
+        "unit": "international $",
+        "rank": 48
+      },
+      "MAR": {
+        "name": "Morocco",
+        "value": 606.044278328875,
+        "display": "$606",
+        "year": 2023,
+        "unit": "international $",
+        "rank": 120
+      },
+      "MOZ": {
+        "name": "Mozambique",
+        "value": 142.624131867611,
+        "display": "$143",
+        "year": 2023,
+        "unit": "international $",
+        "rank": 166
+      },
+      "MMR": {
+        "name": "Myanmar",
+        "value": 283.191811325701,
+        "display": "$283",
+        "year": 2023,
+        "unit": "international $",
+        "rank": 142
+      },
+      "NAM": {
+        "name": "Namibia",
+        "value": 1068.44630021516,
+        "display": "$1,068",
+        "year": 2023,
+        "unit": "international $",
+        "rank": 94
+      },
+      "NPL": {
+        "name": "Nepal",
+        "value": 332.162753551408,
+        "display": "$332",
+        "year": 2023,
+        "unit": "international $",
+        "rank": 139
+      },
+      "NLD": {
+        "name": "Netherlands",
+        "value": 8194.56817525471,
+        "display": "$8,195",
+        "year": 2024,
+        "unit": "international $",
+        "rank": 9
+      },
+      "NZL": {
+        "name": "New Zealand",
+        "value": 5575.77384303509,
+        "display": "$5,576",
+        "year": 2024,
+        "unit": "international $",
+        "rank": 21
+      },
+      "NIC": {
+        "name": "Nicaragua",
+        "value": 688.670661909422,
+        "display": "$689",
+        "year": 2023,
+        "unit": "international $",
+        "rank": 114
+      },
+      "NER": {
+        "name": "Niger",
+        "value": 76.4890960444129,
+        "display": "$76",
+        "year": 2023,
+        "unit": "international $",
+        "rank": 185
+      },
+      "NGA": {
+        "name": "Nigeria",
+        "value": 260.144634681531,
+        "display": "$260",
+        "year": 2023,
+        "unit": "international $",
+        "rank": 144
+      },
+      "MKD": {
+        "name": "North Macedonia",
+        "value": 1807.61394141913,
+        "display": "$1,808",
+        "year": 2023,
+        "unit": "international $",
+        "rank": 66
+      },
+      "NOR": {
+        "name": "Norway",
+        "value": 9523.30517462555,
+        "display": "$9,523",
+        "year": 2023,
+        "unit": "international $",
+        "rank": 4
+      },
+      "OMN": {
+        "name": "Oman",
+        "value": 1444.38052024643,
+        "display": "$1,444",
+        "year": 2023,
+        "unit": "international $",
+        "rank": 75
+      },
+      "PAK": {
+        "name": "Pakistan",
+        "value": 152.104499152766,
+        "display": "$152",
+        "year": 2023,
+        "unit": "international $",
+        "rank": 165
+      },
+      "PLW": {
+        "name": "Palau",
+        "value": 1856.71376319022,
+        "display": "$1,857",
+        "year": 2023,
+        "unit": "international $",
+        "rank": 65
+      },
+      "PAN": {
+        "name": "Panama",
+        "value": 3318.24774938406,
+        "display": "$3,318",
+        "year": 2023,
+        "unit": "international $",
+        "rank": 40
+      },
+      "PNG": {
+        "name": "Papua New Guinea",
+        "value": 133.00408934153,
+        "display": "$133",
+        "year": 2023,
+        "unit": "international $",
+        "rank": 171
+      },
+      "PRY": {
+        "name": "Paraguay",
+        "value": 1469.44739737129,
+        "display": "$1,469",
+        "year": 2023,
+        "unit": "international $",
+        "rank": 72
+      },
+      "PER": {
+        "name": "Peru",
+        "value": 956.47844506314,
+        "display": "$956",
+        "year": 2023,
+        "unit": "international $",
+        "rank": 100
+      },
+      "PHL": {
+        "name": "Philippines",
+        "value": 560.418506292015,
+        "display": "$560",
+        "year": 2023,
+        "unit": "international $",
+        "rank": 123
+      },
+      "POL": {
+        "name": "Poland",
+        "value": 3938.95472285932,
+        "display": "$3,939",
+        "year": 2024,
+        "unit": "international $",
+        "rank": 34
+      },
+      "PRT": {
+        "name": "Portugal",
+        "value": 4928.03132034767,
+        "display": "$4,928",
+        "year": 2024,
+        "unit": "international $",
+        "rank": 29
+      },
+      "QAT": {
+        "name": "Qatar",
+        "value": 2900.58226967307,
+        "display": "$2,901",
+        "year": 2023,
+        "unit": "international $",
+        "rank": 49
+      },
+      "ROU": {
+        "name": "Romania",
+        "value": 2614.09426055762,
+        "display": "$2,614",
+        "year": 2023,
+        "unit": "international $",
+        "rank": 51
+      },
+      "RUS": {
+        "name": "Russian Federation",
+        "value": 3203.80624404722,
+        "display": "$3,204",
+        "year": 2023,
+        "unit": "international $",
+        "rank": 43
+      },
+      "RWA": {
+        "name": "Rwanda",
+        "value": 177.011280229869,
+        "display": "$177",
+        "year": 2023,
+        "unit": "international $",
+        "rank": 158
+      },
+      "WSM": {
+        "name": "Samoa",
+        "value": 474.509220884603,
+        "display": "$475",
+        "year": 2023,
+        "unit": "international $",
+        "rank": 129
+      },
+      "SMR": {
+        "name": "San Marino",
+        "value": 5231.14919129759,
+        "display": "$5,231",
+        "year": 2023,
+        "unit": "international $",
+        "rank": 25
+      },
+      "STP": {
+        "name": "Sao Tome and Principe",
+        "value": 355.034720895384,
+        "display": "$355",
+        "year": 2023,
+        "unit": "international $",
+        "rank": 135
+      },
+      "SAU": {
+        "name": "Saudi Arabia",
+        "value": 3475.05778671586,
+        "display": "$3,475",
+        "year": 2023,
+        "unit": "international $",
+        "rank": 38
+      },
+      "SEN": {
+        "name": "Senegal",
+        "value": 205.610253935047,
+        "display": "$206",
+        "year": 2023,
+        "unit": "international $",
+        "rank": 155
+      },
+      "SRB": {
+        "name": "Serbia",
+        "value": 2302.62447828459,
+        "display": "$2,303",
+        "year": 2023,
+        "unit": "international $",
+        "rank": 56
+      },
+      "SYC": {
+        "name": "Seychelles",
+        "value": 1401.7466960677,
+        "display": "$1,402",
+        "year": 2023,
+        "unit": "international $",
+        "rank": 77
+      },
+      "SLE": {
+        "name": "Sierra Leone",
+        "value": 158.90709007593,
+        "display": "$159",
+        "year": 2023,
+        "unit": "international $",
+        "rank": 161
+      },
+      "SGP": {
+        "name": "Singapore",
+        "value": 6551.26185012408,
+        "display": "$6,551",
+        "year": 2023,
+        "unit": "international $",
+        "rank": 18
+      },
+      "SVK": {
+        "name": "Slovak Republic",
+        "value": 3230.2453507094,
+        "display": "$3,230",
+        "year": 2023,
+        "unit": "international $",
+        "rank": 41
+      },
+      "SVN": {
+        "name": "Slovenia",
+        "value": 5424.8881250739,
+        "display": "$5,425",
+        "year": 2024,
+        "unit": "international $",
+        "rank": 23
+      },
+      "SLB": {
+        "name": "Solomon Islands",
+        "value": 153.393129852544,
+        "display": "$153",
+        "year": 2023,
+        "unit": "international $",
+        "rank": 164
+      },
+      "SOM": {
+        "name": "Somalia, Fed. Rep.",
+        "value": 52.0652148813017,
+        "display": "$52",
+        "year": 2023,
+        "unit": "international $",
+        "rank": 188
+      },
+      "ZAF": {
+        "name": "South Africa",
+        "value": 1353.75252511898,
+        "display": "$1,354",
+        "year": 2023,
+        "unit": "international $",
+        "rank": 80
+      },
+      "SSD": {
+        "name": "South Sudan",
+        "value": 158.057913857238,
+        "display": "$158",
+        "year": 2023,
+        "unit": "international $",
+        "rank": 162
+      },
+      "ESP": {
+        "name": "Spain",
+        "value": 4934.94772587453,
+        "display": "$4,935",
+        "year": 2023,
+        "unit": "international $",
+        "rank": 28
+      },
+      "LKA": {
+        "name": "Sri Lanka",
+        "value": 507.058585747743,
+        "display": "$507",
+        "year": 2023,
+        "unit": "international $",
+        "rank": 127
+      },
+      "KNA": {
+        "name": "St. Kitts and Nevis",
+        "value": 1935.96955077211,
+        "display": "$1,936",
+        "year": 2023,
+        "unit": "international $",
+        "rank": 62
+      },
+      "LCA": {
+        "name": "St. Lucia",
+        "value": 1228.46316887421,
+        "display": "$1,228",
+        "year": 2023,
+        "unit": "international $",
+        "rank": 86
+      },
+      "VCT": {
+        "name": "St. Vincent and the Grenadines",
+        "value": 907.566521994468,
+        "display": "$908",
+        "year": 2023,
+        "unit": "international $",
+        "rank": 103
+      },
+      "SDN": {
+        "name": "Sudan",
+        "value": 28.261876902732,
+        "display": "$28",
+        "year": 2023,
+        "unit": "international $",
+        "rank": 189
+      },
+      "SUR": {
+        "name": "Suriname",
+        "value": 1142.72707162134,
+        "display": "$1,143",
+        "year": 2023,
+        "unit": "international $",
+        "rank": 91
+      },
+      "SWE": {
+        "name": "Sweden",
+        "value": 7770.39673557948,
+        "display": "$7,770",
+        "year": 2024,
+        "unit": "international $",
+        "rank": 10
+      },
+      "CHE": {
+        "name": "Switzerland",
+        "value": 10601.9331816578,
+        "display": "$10,602",
+        "year": 2023,
+        "unit": "international $",
+        "rank": 2
+      },
+      "SYR": {
+        "name": "Syrian Arab Republic",
+        "value": 122.454913859261,
+        "display": "$122",
+        "year": 2023,
+        "unit": "international $",
+        "rank": 175
+      },
+      "TJK": {
+        "name": "Tajikistan",
+        "value": 364.084279440098,
+        "display": "$364",
+        "year": 2023,
+        "unit": "international $",
+        "rank": 134
+      },
+      "TZA": {
+        "name": "Tanzania",
+        "value": 119.031837292019,
+        "display": "$119",
+        "year": 2023,
+        "unit": "international $",
+        "rank": 176
+      },
+      "THA": {
+        "name": "Thailand",
+        "value": 1066.75429251627,
+        "display": "$1,067",
+        "year": 2023,
+        "unit": "international $",
+        "rank": 95
+      },
+      "TLS": {
+        "name": "Timor-Leste",
+        "value": 461.093550910468,
+        "display": "$461",
+        "year": 2023,
+        "unit": "international $",
+        "rank": 130
+      },
+      "TGO": {
+        "name": "Togo",
+        "value": 185.734057006991,
+        "display": "$186",
+        "year": 2023,
+        "unit": "international $",
+        "rank": 157
+      },
+      "TON": {
+        "name": "Tonga",
+        "value": 512.197999691458,
+        "display": "$512",
+        "year": 2023,
+        "unit": "international $",
+        "rank": 126
+      },
+      "TTO": {
+        "name": "Trinidad and Tobago",
+        "value": 2243.81253868002,
+        "display": "$2,244",
+        "year": 2023,
+        "unit": "international $",
+        "rank": 57
+      },
+      "TUN": {
+        "name": "Tunisia",
+        "value": 1112.51466317739,
+        "display": "$1,113",
+        "year": 2023,
+        "unit": "international $",
+        "rank": 92
+      },
+      "TUR": {
+        "name": "Turkiye",
+        "value": 1769.22721909599,
+        "display": "$1,769",
+        "year": 2023,
+        "unit": "international $",
+        "rank": 67
+      },
+      "TKM": {
+        "name": "Turkmenistan",
+        "value": 1263.87438508145,
+        "display": "$1,264",
+        "year": 2023,
+        "unit": "international $",
+        "rank": 83
+      },
+      "UGA": {
+        "name": "Uganda",
+        "value": 138.750719234788,
+        "display": "$139",
+        "year": 2023,
+        "unit": "international $",
+        "rank": 168
+      },
+      "UKR": {
+        "name": "Ukraine",
+        "value": 1382.23434989345,
+        "display": "$1,382",
+        "year": 2021,
+        "unit": "international $",
+        "rank": 78
+      },
+      "ARE": {
+        "name": "United Arab Emirates",
+        "value": 3727.12127967465,
+        "display": "$3,727",
+        "year": 2023,
+        "unit": "international $",
+        "rank": 36
+      },
+      "GBR": {
+        "name": "United Kingdom",
+        "value": 6605.75253933223,
+        "display": "$6,606",
+        "year": 2024,
+        "unit": "international $",
+        "rank": 17
+      },
+      "USA": {
+        "name": "United States",
+        "value": 13473.1932166645,
+        "display": "$13,473",
+        "year": 2023,
+        "unit": "international $",
+        "rank": 1
+      },
+      "URY": {
+        "name": "Uruguay",
+        "value": 3135.28225718818,
+        "display": "$3,135",
+        "year": 2023,
+        "unit": "international $",
+        "rank": 44
+      },
+      "UZB": {
+        "name": "Uzbekistan",
+        "value": 748.957358440758,
+        "display": "$749",
+        "year": 2023,
+        "unit": "international $",
+        "rank": 111
+      },
+      "VUT": {
+        "name": "Vanuatu",
+        "value": 141.221736073708,
+        "display": "$141",
+        "year": 2023,
+        "unit": "international $",
+        "rank": 167
+      },
+      "VEN": {
+        "name": "Venezuela, RB",
+        "value": 112.410193359547,
+        "display": "$112",
+        "year": 2023,
+        "unit": "international $",
+        "rank": 177
+      },
+      "VNM": {
+        "name": "Viet Nam",
+        "value": 689.554100300865,
+        "display": "$690",
+        "year": 2023,
+        "unit": "international $",
+        "rank": 113
+      },
+      "PSE": {
+        "name": "West Bank and Gaza",
+        "value": 604.437015973915,
+        "display": "$604",
+        "year": 2023,
+        "unit": "international $",
+        "rank": 121
+      },
+      "YEM": {
+        "name": "Yemen, Rep.",
+        "value": 168.809597480794,
+        "display": "$169",
+        "year": 2023,
+        "unit": "international $",
+        "rank": 159
+      },
+      "ZMB": {
+        "name": "Zambia",
+        "value": 243.739440602984,
+        "display": "$244",
+        "year": 2023,
+        "unit": "international $",
+        "rank": 150
+      },
+      "ZWE": {
+        "name": "Zimbabwe",
+        "value": 103.108567490014,
+        "display": "$103",
+        "year": 2023,
+        "unit": "international $",
+        "rank": 180
+      }
+    }
+  },
+  "review": {
+    "errors": [],
+    "claims": [
+      {
+        "surface": "beat_0",
+        "text": "Healthcare in the United States costs 13,473 per person. Sudan spends 28.",
+        "isos": [
+          "USA",
+          "SDN"
+        ],
+        "support": "USA value is 13473.19 (display $13,473), SDN value is 28.2618 (display $28).",
+        "evidence": {
+          "USA": {
+            "name": "United States",
+            "value": 13473.1932166645,
+            "display": "$13,473",
+            "year": 2023,
+            "unit": "international $",
+            "rank": 1
+          },
+          "SDN": {
+            "name": "Sudan",
+            "value": 28.261876902732,
+            "display": "$28",
+            "year": 2023,
+            "unit": "international $",
+            "rank": 189
+          }
+        }
+      },
+      {
+        "surface": "beat_2",
+        "text": "Is it Switzerland at 10,602, Germany at 8,826, or China?",
+        "isos": [
+          "CHE",
+          "DEU",
+          "CHN"
+        ],
+        "support": "CHE value is 10601.93 ($10,602), DEU value is 8825.61 ($8,826), CHN value is 1486.88 ($1,487).",
+        "evidence": {
+          "CHE": {
+            "name": "Switzerland",
+            "value": 10601.9331816578,
+            "display": "$10,602",
+            "year": 2023,
+            "unit": "international $",
+            "rank": 2
+          },
+          "DEU": {
+            "name": "Germany",
+            "value": 8825.61480783196,
+            "display": "$8,826",
+            "year": 2024,
+            "unit": "international $",
+            "rank": 5
+          },
+          "CHN": {
+            "name": "China",
+            "value": 1486.88389429767,
+            "display": "$1,487",
+            "year": 2023,
+            "unit": "international $",
+            "rank": 71
+          }
+        }
+      },
+      {
+        "surface": "beat_3",
+        "text": "China is the surprise, spending 1,487.",
+        "isos": [
+          "CHN"
+        ],
+        "support": "CHN value is 1486.88389429767, display $1,487.",
+        "evidence": {
+          "CHN": {
+            "name": "China",
+            "value": 1486.88389429767,
+            "display": "$1,487",
+            "year": 2023,
+            "unit": "international $",
+            "rank": 71
+          }
+        }
+      },
+      {
+        "surface": "beat_4",
+        "text": "The United States is the world's highest, at 13,473.",
+        "isos": [
+          "USA"
+        ],
+        "support": "USA rank is 1 with value 13473.1932166645, display $13,473.",
+        "evidence": {
+          "USA": {
+            "name": "United States",
+            "value": 13473.1932166645,
+            "display": "$13,473",
+            "year": 2023,
+            "unit": "international $",
+            "rank": 1
+          }
+        }
+      },
+      {
+        "surface": "beat_5",
+        "text": "Sudan is the lowest at 28. It counts current expenditures on health per person.",
+        "isos": [
+          "SDN"
+        ],
+        "support": "SDN rank is 189 (last) with value 28.261876902732, display $28. Definition matches current expenditures on health per capita.",
+        "evidence": {
+          "SDN": {
+            "name": "Sudan",
+            "value": 28.261876902732,
+            "display": "$28",
+            "year": 2023,
+            "unit": "international $",
+            "rank": 189
+          }
+        }
+      },
+      {
+        "surface": "title",
+        "text": "Which Country Spends the MOST on Healthcare?",
+        "isos": [],
+        "support": "Title is a framing question about the indicator maximum, which is supported by ranks.",
+        "method": "complete-surface-check",
+        "evidence": {}
+      },
+      {
+        "surface": "hook",
+        "text": "GLOBAL HEALTH DIVIDE",
+        "isos": [],
+        "support": "Stylistic intro framing.",
+        "method": "complete-surface-check",
+        "evidence": {}
+      },
+      {
+        "surface": "description",
+        "text": "A look at the massive global disparity in annual healthcare spending per person.",
+        "isos": [],
+        "support": "Accurately describes healthcare spending per person disparity.",
+        "method": "complete-surface-check",
+        "evidence": {}
+      },
+      {
+        "surface": "beat_0",
+        "text": "Healthcare in the United States costs 13,473 per person. Sudan spends 28.",
+        "isos": [
+          "USA",
+          "SDN"
+        ],
+        "support": "Exact numbers match USA and SDN data values.",
+        "method": "complete-surface-check",
+        "evidence": {
+          "USA": {
+            "name": "United States",
+            "value": 13473.1932166645,
+            "display": "$13,473",
+            "year": 2023,
+            "unit": "international $",
+            "rank": 1
+          },
+          "SDN": {
+            "name": "Sudan",
+            "value": 28.261876902732,
+            "display": "$28",
+            "year": 2023,
+            "unit": "international $",
+            "rank": 189
+          }
+        }
+      },
+      {
+        "surface": "beat_1",
+        "text": "One big country breaks this pattern. It is not the one you would guess.",
+        "isos": [
+          "CHN"
+        ],
+        "support": "Stylistic narration not contradicting any data.",
+        "method": "complete-surface-check",
+        "evidence": {
+          "CHN": {
+            "name": "China",
+            "value": 1486.88389429767,
+            "display": "$1,487",
+            "year": 2023,
+            "unit": "international $",
+            "rank": 71
+          }
+        }
+      },
+      {
+        "surface": "beat_2",
+        "text": "Is it Switzerland at 10,602, Germany at 8,826, or China?",
+        "isos": [
+          "CHE",
+          "DEU",
+          "CHN"
+        ],
+        "support": "Exact values match CHE, DEU, and CHN.",
+        "method": "complete-surface-check",
+        "evidence": {
+          "CHE": {
+            "name": "Switzerland",
+            "value": 10601.9331816578,
+            "display": "$10,602",
+            "year": 2023,
+            "unit": "international $",
+            "rank": 2
+          },
+          "DEU": {
+            "name": "Germany",
+            "value": 8825.61480783196,
+            "display": "$8,826",
+            "year": 2024,
+            "unit": "international $",
+            "rank": 5
+          },
+          "CHN": {
+            "name": "China",
+            "value": 1486.88389429767,
+            "display": "$1,487",
+            "year": 2023,
+            "unit": "international $",
+            "rank": 71
+          }
+        }
+      },
+      {
+        "surface": "beat_3",
+        "text": "China is the surprise, spending 1,487.",
+        "isos": [
+          "CHN"
+        ],
+        "support": "China's value matches display $1,487.",
+        "method": "complete-surface-check",
+        "evidence": {
+          "CHN": {
+            "name": "China",
+            "value": 1486.88389429767,
+            "display": "$1,487",
+            "year": 2023,
+            "unit": "international $",
+            "rank": 71
+          }
+        }
+      },
+      {
+        "surface": "beat_4",
+        "text": "The United States is the world's highest, at 13,473.",
+        "isos": [
+          "USA"
+        ],
+        "support": "USA rank 1 is highest in universe with 13,473.",
+        "method": "complete-surface-check",
+        "evidence": {
+          "USA": {
+            "name": "United States",
+            "value": 13473.1932166645,
+            "display": "$13,473",
+            "year": 2023,
+            "unit": "international $",
+            "rank": 1
+          }
+        }
+      },
+      {
+        "surface": "beat_5",
+        "text": "Sudan is the lowest at 28. It counts current expenditures on health per person.",
+        "isos": [
+          "SDN"
+        ],
+        "support": "Sudan rank is 189 (lowest) with 28; definition matches.",
+        "method": "complete-surface-check",
+        "evidence": {
+          "SDN": {
+            "name": "Sudan",
+            "value": 28.261876902732,
+            "display": "$28",
+            "year": 2023,
+            "unit": "international $",
+            "rank": 189
+          }
+        }
+      },
+      {
+        "surface": "beat_6",
+        "text": "What does your country spend on healthcare per person?",
+        "isos": [],
+        "support": "Ordinary closing engagement question.",
+        "method": "complete-surface-check",
+        "evidence": {}
+      },
+      {
+        "surface": "card_6",
+        "text": [
+          "Your health spend?",
+          "Health expenditure per capita"
+        ],
+        "isos": [],
+        "support": "Matches indicator definition.",
+        "method": "complete-surface-check",
+        "evidence": {}
+      }
+    ],
+    "surface_checks": {
+      "title": {
+        "supported": true,
+        "reason": "Title is a framing question about the indicator maximum, which is supported by ranks.",
+        "isos": []
+      },
+      "hook": {
+        "supported": true,
+        "reason": "Stylistic intro framing.",
+        "isos": []
+      },
+      "description": {
+        "supported": true,
+        "reason": "Accurately describes healthcare spending per person disparity.",
+        "isos": []
+      },
+      "beat_0": {
+        "supported": true,
+        "reason": "Exact numbers match USA and SDN data values.",
+        "isos": [
+          "USA",
+          "SDN"
+        ]
+      },
+      "beat_1": {
+        "supported": true,
+        "reason": "Stylistic narration not contradicting any data.",
+        "isos": [
+          "CHN"
+        ]
+      },
+      "beat_2": {
+        "supported": true,
+        "reason": "Exact values match CHE, DEU, and CHN.",
+        "isos": [
+          "CHE",
+          "DEU",
+          "CHN"
+        ]
+      },
+      "beat_3": {
+        "supported": true,
+        "reason": "China's value matches display $1,487.",
+        "isos": [
+          "CHN"
+        ]
+      },
+      "beat_4": {
+        "supported": true,
+        "reason": "USA rank 1 is highest in universe with 13,473.",
+        "isos": [
+          "USA"
+        ]
+      },
+      "beat_5": {
+        "supported": true,
+        "reason": "Sudan rank is 189 (lowest) with 28; definition matches.",
+        "isos": [
+          "SDN"
+        ]
+      },
+      "beat_6": {
+        "supported": true,
+        "reason": "Ordinary closing engagement question.",
+        "isos": []
+      },
+      "card_6": {
+        "supported": true,
+        "reason": "Matches indicator definition.",
+        "isos": []
+      }
+    },
+    "warnings": [
+      {
+        "surface": "beat_1",
+        "claim": "One big country breaks this pattern. It is not the one you would guess.",
+        "reason": "Unsourced causal or pattern framing not present in evidence definition.",
+        "severity": "style"
+      }
+    ]
+  },
+  "script_sha256": "4b77574ac4cb5e3cbe48bc45d9fad174bf3c9081fcddf463e47902b4d75a2af1",
+  "data_sha256": "d8e90173d4a58616d515adeef9bb0272b4ee62feada472a396b0145bf8104cc6",
+  "reviewer_model": "gemini-3.5-flash-lite"
+}

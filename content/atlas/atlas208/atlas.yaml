@@ -1,0 +1,76 @@
+id: atlas208
+title: Which Country Spends the MOST on Healthcare?
+format: odd_one_out
+hook_text: GLOBAL HEALTH DIVIDE
+description: A look at the massive global disparity in annual healthcare spending per person.
+hashtags:
+- '#health'
+- '#geography'
+- '#countries'
+tags:
+- health
+- annual health expenditure per capita
+- countries ranked by annual health expenditure per capita
+- United States
+- Sudan
+- world map
+- geography
+- atlas in numbers
+sources:
+- https://data.worldbank.org/indicator/SH.XPD.CHEX.PP.CD
+dataset:
+  kind: worldbank
+  indicator: SH.XPD.CHEX.PP.CD
+  label: Annual health expenditure per capita
+  unit: international $
+  source: World Bank
+  min_year: 2019
+scale:
+  edges:
+  - 250.0
+  - 1000.0
+  - 3000.0
+  - 7000.0
+  labels:
+  - Under $250
+  - $250-$1,000
+  - $1,000-$3,000
+  - $3,000-$7,000
+  - Above $7,000
+value_format: ${v:,.0f}
+beats:
+- text: Healthcare in the United States costs 13,473 per person. Sudan spends 28.
+  shot:
+    callouts:
+    - USA
+    - SDN
+- text: One big country breaks this pattern. It is not the one you would guess.
+  shot:
+    kind: country
+    iso: CHN
+- text: Is it Switzerland at 10,602, Germany at 8,826, or China?
+  shot:
+    kind: group
+    isos:
+    - CHE
+    - DEU
+    - CHN
+- text: China is the surprise, spending 1,487.
+  shot:
+    kind: country
+    iso: CHN
+- text: The United States is the world's highest, at 13,473.
+  shot:
+    kind: country
+    iso: USA
+- text: Sudan is the lowest at 28. It counts current expenditures on health per person.
+  shot:
+    kind: country
+    iso: SDN
+  basis: Current expenditures on health per capita expressed in international dollars at purchasing power parity.
+- text: What does your country spend on healthcare per person?
+  shot:
+    kind: card
+    lines:
+    - Your health spend?
+    - Health expenditure per capita
