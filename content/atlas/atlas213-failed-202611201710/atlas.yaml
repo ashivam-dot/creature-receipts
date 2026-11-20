@@ -1,0 +1,77 @@
+id: atlas213
+title: 'Measles Protection: India Versus Montenegro'
+format: versus
+hook_text: MEASLES PROTECTION GAP
+description: A comparison of measles vaccination rates between India and Montenegro using 2024 World Bank data.
+hashtags:
+- '#health'
+- '#geography'
+- '#countries'
+tags:
+- health
+- children aged 12-23 months vaccinated
+- countries ranked by children aged 12-23 months vaccinated
+- Uzbekistan
+- Montenegro
+- world map
+- geography
+- atlas in numbers
+sources:
+- https://data.worldbank.org/indicator/SH.IMM.MEAS
+dataset:
+  kind: worldbank
+  indicator: SH.IMM.MEAS
+  label: Children aged 12-23 months vaccinated
+  unit: '%'
+  source: World Bank
+  min_year: 2019
+scale:
+  edges:
+  - 50.0
+  - 75.0
+  - 90.0
+  - 95.0
+  labels:
+  - Below 50%
+  - 50-75%
+  - 75-90%
+  - 90-95%
+  - Above 95%
+value_format: '{v:.0f}%'
+beats:
+- text: India protects 97% of children against measles. Montenegro sits at just 23%.
+  shot:
+    callouts:
+    - IND
+    - MNE
+- text: A child is considered adequately immunized against measles after receiving one dose of vaccine.
+  shot:
+    kind: country
+    iso: IND
+  basis: Child immunization, measles, measures the percentage of children ages 12-23 months who received the measles
+    vaccination before 12 months or at any time before the survey. A child is considered adequately immunized against
+    measles after receiving one dose of vaccine.
+- text: India has 4.2 times Montenegro's protection.
+  shot:
+    kind: group
+    isos:
+    - IND
+    - MNE
+- text: Montenegro is the world's lowest at 23%.
+  shot:
+    kind: country
+    iso: MNE
+- text: The median country hits 90%. Germany has 96%, Japan 95%, Brazil 93%, and USA 92%.
+  shot:
+    kind: rank
+    isos:
+    - DEU
+    - JPN
+    - BRA
+    - USA
+- text: How high is measles protection in your country?
+  shot:
+    kind: card
+    lines:
+    - How high is measles protection in your country?
+    - 'Data: World Bank 2024'

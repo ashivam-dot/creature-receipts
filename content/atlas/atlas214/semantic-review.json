@@ -1,0 +1,134 @@
+{
+  "errors": [
+    {
+      "surface": "beat_5",
+      "claim": "Armenia has 4.6 times the access that DR Congo has.",
+      "reason": "100 / 21.79802716305 is approximately 4.5875, which rounds to 4.6, but the claim is based on a calculation of two specific values that are not explicitly defined as a ratio in the evidence.",
+      "severity": "info"
+    }
+  ],
+  "claims": [
+    {
+      "surface": "beat_0",
+      "text": "Armenia has 100% urban sanitation access.",
+      "isos": [
+        "ARM"
+      ],
+      "support": "ARM: 100.0"
+    },
+    {
+      "surface": "beat_0",
+      "text": "In DR Congo, only 21.8% of people have it.",
+      "isos": [
+        "COD"
+      ],
+      "support": "COD: 21.79802716305"
+    },
+    {
+      "surface": "beat_2",
+      "text": "Israel, Kuwait and Chile are at 100%.",
+      "isos": [
+        "ISR",
+        "KWT",
+        "CHL"
+      ],
+      "support": "ISR: 100.0, KWT: 100.0, CHL: 100.0"
+    },
+    {
+      "surface": "beat_3",
+      "text": "India is at 87.4%.",
+      "isos": [
+        "IND"
+      ],
+      "support": "IND: 87.3801818139873"
+    },
+    {
+      "surface": "beat_3",
+      "text": "Nigeria is lower, at 59.1%.",
+      "isos": [
+        "NGA"
+      ],
+      "support": "NGA: 59.1206988327009"
+    },
+    {
+      "surface": "beat_4",
+      "text": "DR Congo sits at the bottom at 21.8%.",
+      "isos": [
+        "COD"
+      ],
+      "support": "COD: 21.79802716305"
+    }
+  ],
+  "surface_checks": {
+    "title": {
+      "supported": true,
+      "reason": "The title describes the topic of urban sanitation access.",
+      "isos": []
+    },
+    "hook": {
+      "supported": true,
+      "reason": "The hook introduces the contrast between high and low access countries.",
+      "isos": []
+    },
+    "description": {
+      "supported": true,
+      "reason": "The description accurately summarizes the visual content.",
+      "isos": []
+    },
+    "beat_0": {
+      "supported": true,
+      "reason": "Values for Armenia and DR Congo match the evidence.",
+      "isos": [
+        "ARM",
+        "COD"
+      ]
+    },
+    "beat_1": {
+      "supported": true,
+      "reason": "The definition matches the provided evidence.",
+      "isos": []
+    },
+    "beat_2": {
+      "supported": true,
+      "reason": "Values for Israel, Kuwait, and Chile match the evidence.",
+      "isos": [
+        "ISR",
+        "KWT",
+        "CHL"
+      ]
+    },
+    "beat_3": {
+      "supported": true,
+      "reason": "Values for India and Nigeria match the evidence.",
+      "isos": [
+        "IND",
+        "NGA"
+      ]
+    },
+    "beat_4": {
+      "supported": true,
+      "reason": "Value for DR Congo matches the evidence.",
+      "isos": [
+        "COD"
+      ]
+    },
+    "beat_5": {
+      "supported": true,
+      "reason": "The calculation is mathematically accurate based on the provided values.",
+      "isos": [
+        "ARM",
+        "COD"
+      ]
+    },
+    "beat_6": {
+      "supported": true,
+      "reason": "This is a rhetorical question.",
+      "isos": []
+    },
+    "card_6": {
+      "supported": true,
+      "reason": "The card text matches the visual plan.",
+      "isos": []
+    }
+  }
+}

@@ -1,0 +1,1983 @@
+{
+  "version": 1,
+  "evidence": {
+    "version": 1,
+    "indicator": "SH.IMM.MEAS",
+    "definition": "Child immunization, measles, measures the percentage of children ages 12-23 months who received the measles vaccination before 12 months or at any time before the survey. A child is considered adequately immunized against measles after receiving one dose of vaccine.",
+    "source": "https://data.worldbank.org/indicator/SH.IMM.MEAS",
+    "source_response_sha256": "c8050fa5b44e7e6daa0d1f43b41feb60e6e17a37c13edacbbc8d56504f81fdbe",
+    "source_organization": "World Health Organization (WHO), uri: http://www.who.int/immunization/monitoring_surveillance/en/;\nUN Children's Fund (UNICEF), uri: https://data.unicef.org/topic/child-health/immunization/",
+    "year_label": "latest available 2023–2024",
+    "universe": "mapped countries and territories with data",
+    "count": 189,
+    "threshold": null,
+    "at_or_above": null,
+    "entities": {
+      "AFG": {
+        "name": "Afghanistan",
+        "value": 55.0,
+        "display": "55%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 179
+      },
+      "ALB": {
+        "name": "Albania",
+        "value": 81.0,
+        "display": "81%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 137
+      },
+      "DZA": {
+        "name": "Algeria",
+        "value": 94.0,
+        "display": "94%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 65
+      },
+      "AND": {
+        "name": "Andorra",
+        "value": 98.0,
+        "display": "98%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 19
+      },
+      "AGO": {
+        "name": "Angola",
+        "value": 53.0,
+        "display": "53%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 181
+      },
+      "ATG": {
+        "name": "Antigua and Barbuda",
+        "value": 97.0,
+        "display": "97%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 29
+      },
+      "ARG": {
+        "name": "Argentina",
+        "value": 82.0,
+        "display": "82%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 135
+      },
+      "ARM": {
+        "name": "Armenia",
+        "value": 96.0,
+        "display": "96%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 43
+      },
+      "AUS": {
+        "name": "Australia",
+        "value": 91.0,
+        "display": "91%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 84
+      },
+      "AUT": {
+        "name": "Austria",
+        "value": 90.0,
+        "display": "90%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 89
+      },
+      "AZE": {
+        "name": "Azerbaijan",
+        "value": 71.0,
+        "display": "71%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 162
+      },
+      "BHS": {
+        "name": "Bahamas, The",
+        "value": 86.0,
+        "display": "86%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 117
+      },
+      "BHR": {
+        "name": "Bahrain",
+        "value": 99.0,
+        "display": "99%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 1
+      },
+      "BGD": {
+        "name": "Bangladesh",
+        "value": 96.0,
+        "display": "96%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 43
+      },
+      "BRB": {
+        "name": "Barbados",
+        "value": 88.0,
+        "display": "88%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 109
+      },
+      "BLR": {
+        "name": "Belarus",
+        "value": 98.0,
+        "display": "98%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 19
+      },
+      "BEL": {
+        "name": "Belgium",
+        "value": 96.0,
+        "display": "96%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 43
+      },
+      "BLZ": {
+        "name": "Belize",
+        "value": 84.0,
+        "display": "84%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 126
+      },
+      "BEN": {
+        "name": "Benin",
+        "value": 44.0,
+        "display": "44%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 185
+      },
+      "BTN": {
+        "name": "Bhutan",
+        "value": 97.0,
+        "display": "97%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 29
+      },
+      "BOL": {
+        "name": "Bolivia",
+        "value": 67.0,
+        "display": "67%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 169
+      },
+      "BIH": {
+        "name": "Bosnia and Herzegovina",
+        "value": 69.0,
+        "display": "69%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 167
+      },
+      "BWA": {
+        "name": "Botswana",
+        "value": 97.0,
+        "display": "97%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 29
+      },
+      "BRA": {
+        "name": "Brazil",
+        "value": 93.0,
+        "display": "93%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 71
+      },
+      "BRN": {
+        "name": "Brunei Darussalam",
+        "value": 99.0,
+        "display": "99%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 1
+      },
+      "BGR": {
+        "name": "Bulgaria",
+        "value": 94.0,
+        "display": "94%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 65
+      },
+      "BFA": {
+        "name": "Burkina Faso",
+        "value": 88.0,
+        "display": "88%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 109
+      },
+      "BDI": {
+        "name": "Burundi",
+        "value": 86.0,
+        "display": "86%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 117
+      },
+      "CPV": {
+        "name": "Cabo Verde",
+        "value": 95.0,
+        "display": "95%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 57
+      },
+      "KHM": {
+        "name": "Cambodia",
+        "value": 83.0,
+        "display": "83%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 130
+      },
+      "CMR": {
+        "name": "Cameroon",
+        "value": 71.0,
+        "display": "71%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 162
+      },
+      "CAN": {
+        "name": "Canada",
+        "value": 92.0,
+        "display": "92%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 81
+      },
+      "CAF": {
+        "name": "Central African Republic",
+        "value": 41.0,
+        "display": "41%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 187
+      },
+      "TCD": {
+        "name": "Chad",
+        "value": 66.0,
+        "display": "66%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 171
+      },
+      "CHL": {
+        "name": "Chile",
+        "value": 93.0,
+        "display": "93%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 71
+      },
+      "CHN": {
+        "name": "China",
+        "value": 95.0,
+        "display": "95%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 57
+      },
+      "COL": {
+        "name": "Colombia",
+        "value": 93.0,
+        "display": "93%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 71
+      },
+      "COM": {
+        "name": "Comoros",
+        "value": 70.0,
+        "display": "70%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 166
+      },
+      "COD": {
+        "name": "Congo, Dem. Rep.",
+        "value": 55.0,
+        "display": "55%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 179
+      },
+      "COG": {
+        "name": "Congo, Rep.",
+        "value": 72.0,
+        "display": "72%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 157
+      },
+      "CRI": {
+        "name": "Costa Rica",
+        "value": 93.0,
+        "display": "93%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 71
+      },
+      "CIV": {
+        "name": "Cote d'Ivoire",
+        "value": 75.0,
+        "display": "75%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 152
+      },
+      "HRV": {
+        "name": "Croatia",
+        "value": 90.0,
+        "display": "90%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 89
+      },
+      "CUB": {
+        "name": "Cuba",
+        "value": 99.0,
+        "display": "99%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 1
+      },
+      "CYP": {
+        "name": "Cyprus",
+        "value": 99.0,
+        "display": "99%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 1
+      },
+      "CZE": {
+        "name": "Czechia",
+        "value": 89.0,
+        "display": "89%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 100
+      },
+      "DNK": {
+        "name": "Denmark",
+        "value": 94.0,
+        "display": "94%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 65
+      },
+      "DJI": {
+        "name": "Djibouti",
+        "value": 75.0,
+        "display": "75%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 152
+      },
+      "DMA": {
+        "name": "Dominica",
+        "value": 80.0,
+        "display": "80%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 142
+      },
+      "DOM": {
+        "name": "Dominican Republic",
+        "value": 89.0,
+        "display": "89%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 100
+      },
+      "ECU": {
+        "name": "Ecuador",
+        "value": 74.0,
+        "display": "74%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 154
+      },
+      "EGY": {
+        "name": "Egypt, Arab Rep.",
+        "value": 97.0,
+        "display": "97%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 29
+      },
+      "SLV": {
+        "name": "El Salvador",
+        "value": 96.0,
+        "display": "96%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 43
+      },
+      "GNQ": {
+        "name": "Equatorial Guinea",
+        "value": 53.0,
+        "display": "53%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 181
+      },
+      "ERI": {
+        "name": "Eritrea",
+        "value": 93.0,
+        "display": "93%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 71
+      },
+      "EST": {
+        "name": "Estonia",
+        "value": 83.0,
+        "display": "83%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 130
+      },
+      "SWZ": {
+        "name": "Eswatini",
+        "value": 85.0,
+        "display": "85%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 121
+      },
+      "ETH": {
+        "name": "Ethiopia",
+        "value": 72.0,
+        "display": "72%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 157
+      },
+      "FJI": {
+        "name": "Fiji",
+        "value": 91.0,
+        "display": "91%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 84
+      },
+      "FIN": {
+        "name": "Finland",
+        "value": 94.0,
+        "display": "94%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 65
+      },
+      "FRA": {
+        "name": "France",
+        "value": 95.0,
+        "display": "95%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 57
+      },
+      "GAB": {
+        "name": "Gabon",
+        "value": 57.0,
+        "display": "57%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 177
+      },
+      "GMB": {
+        "name": "Gambia, The",
+        "value": 83.0,
+        "display": "83%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 130
+      },
+      "GEO": {
+        "name": "Georgia",
+        "value": 90.0,
+        "display": "90%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 89
+      },
+      "DEU": {
+        "name": "Germany",
+        "value": 96.0,
+        "display": "96%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 43
+      },
+      "GHA": {
+        "name": "Ghana",
+        "value": 90.0,
+        "display": "90%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 89
+      },
+      "GRC": {
+        "name": "Greece",
+        "value": 91.0,
+        "display": "91%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 84
+      },
+      "GRD": {
+        "name": "Grenada",
+        "value": 83.0,
+        "display": "83%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 130
+      },
+      "GTM": {
+        "name": "Guatemala",
+        "value": 90.0,
+        "display": "90%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 89
+      },
+      "GIN": {
+        "name": "Guinea",
+        "value": 60.0,
+        "display": "60%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 176
+      },
+      "GNB": {
+        "name": "Guinea-Bissau",
+        "value": 65.0,
+        "display": "65%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 172
+      },
+      "GUY": {
+        "name": "Guyana",
+        "value": 99.0,
+        "display": "99%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 1
+      },
+      "HTI": {
+        "name": "Haiti",
+        "value": 77.0,
+        "display": "77%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 150
+      },
+      "HND": {
+        "name": "Honduras",
+        "value": 79.0,
+        "display": "79%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 145
+      },
+      "HUN": {
+        "name": "Hungary",
+        "value": 99.0,
+        "display": "99%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 1
+      },
+      "ISL": {
+        "name": "Iceland",
+        "value": 97.0,
+        "display": "97%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 29
+      },
+      "IND": {
+        "name": "India",
+        "value": 97.0,
+        "display": "97%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 29
+      },
+      "IDN": {
+        "name": "Indonesia",
+        "value": 85.0,
+        "display": "85%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 121
+      },
+      "IRN": {
+        "name": "Iran, Islamic Rep.",
+        "value": 99.0,
+        "display": "99%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 1
+      },
+      "IRQ": {
+        "name": "Iraq",
+        "value": 91.0,
+        "display": "91%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 84
+      },
+      "IRL": {
+        "name": "Ireland",
+        "value": 90.0,
+        "display": "90%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 89
+      },
+      "ISR": {
+        "name": "Israel",
+        "value": 98.0,
+        "display": "98%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 19
+      },
+      "ITA": {
+        "name": "Italy",
+        "value": 95.0,
+        "display": "95%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 57
+      },
+      "JAM": {
+        "name": "Jamaica",
+        "value": 94.0,
+        "display": "94%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 65
+      },
+      "JPN": {
+        "name": "Japan",
+        "value": 95.0,
+        "display": "95%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 57
+      },
+      "JOR": {
+        "name": "Jordan",
+        "value": 99.0,
+        "display": "99%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 1
+      },
+      "KAZ": {
+        "name": "Kazakhstan",
+        "value": 93.0,
+        "display": "93%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 71
+      },
+      "KEN": {
+        "name": "Kenya",
+        "value": 88.0,
+        "display": "88%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 109
+      },
+      "KIR": {
+        "name": "Kiribati",
+        "value": 79.0,
+        "display": "79%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 145
+      },
+      "PRK": {
+        "name": "Korea, Dem. People's Rep.",
+        "value": 99.0,
+        "display": "99%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 1
+      },
+      "KOR": {
+        "name": "Korea, Rep.",
+        "value": 97.0,
+        "display": "97%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 29
+      },
+      "KWT": {
+        "name": "Kuwait",
+        "value": 98.0,
+        "display": "98%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 19
+      },
+      "KGZ": {
+        "name": "Kyrgyz Republic",
+        "value": 96.0,
+        "display": "96%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 43
+      },
+      "LAO": {
+        "name": "Lao PDR",
+        "value": 69.0,
+        "display": "69%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 167
+      },
+      "LVA": {
+        "name": "Latvia",
+        "value": 98.0,
+        "display": "98%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 19
+      },
+      "LBN": {
+        "name": "Lebanon",
+        "value": 67.0,
+        "display": "67%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 169
+      },
+      "LSO": {
+        "name": "Lesotho",
+        "value": 90.0,
+        "display": "90%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 89
+      },
+      "LBR": {
+        "name": "Liberia",
+        "value": 82.0,
+        "display": "82%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 135
+      },
+      "LBY": {
+        "name": "Libya",
+        "value": 89.0,
+        "display": "89%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 100
+      },
+      "LTU": {
+        "name": "Lithuania",
+        "value": 86.0,
+        "display": "86%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 117
+      },
+      "LUX": {
+        "name": "Luxembourg",
+        "value": 99.0,
+        "display": "99%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 1
+      },
+      "MDG": {
+        "name": "Madagascar",
+        "value": 46.0,
+        "display": "46%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 183
+      },
+      "MWI": {
+        "name": "Malawi",
+        "value": 89.0,
+        "display": "89%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 100
+      },
+      "MYS": {
+        "name": "Malaysia",
+        "value": 96.0,
+        "display": "96%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 43
+      },
+      "MLI": {
+        "name": "Mali",
+        "value": 72.0,
+        "display": "72%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 157
+      },
+      "MLT": {
+        "name": "Malta",
+        "value": 88.0,
+        "display": "88%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 109
+      },
+      "MHL": {
+        "name": "Marshall Islands",
+        "value": 88.0,
+        "display": "88%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 109
+      },
+      "MRT": {
+        "name": "Mauritania",
+        "value": 93.0,
+        "display": "93%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 71
+      },
+      "MUS": {
+        "name": "Mauritius",
+        "value": 98.0,
+        "display": "98%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 19
+      },
+      "MEX": {
+        "name": "Mexico",
+        "value": 80.0,
+        "display": "80%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 142
+      },
+      "FSM": {
+        "name": "Micronesia, Fed. Sts.",
+        "value": 81.0,
+        "display": "81%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 137
+      },
+      "MDA": {
+        "name": "Moldova",
+        "value": 84.0,
+        "display": "84%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 126
+      },
+      "MNG": {
+        "name": "Mongolia",
+        "value": 96.0,
+        "display": "96%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 43
+      },
+      "MNE": {
+        "name": "Montenegro",
+        "value": 23.0,
+        "display": "23%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 189
+      },
+      "MAR": {
+        "name": "Morocco",
+        "value": 98.0,
+        "display": "98%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 19
+      },
+      "MOZ": {
+        "name": "Mozambique",
+        "value": 65.0,
+        "display": "65%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 172
+      },
+      "MMR": {
+        "name": "Myanmar",
+        "value": 71.0,
+        "display": "71%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 162
+      },
+      "NAM": {
+        "name": "Namibia",
+        "value": 79.0,
+        "display": "79%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 145
+      },
+      "NPL": {
+        "name": "Nepal",
+        "value": 97.0,
+        "display": "97%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 29
+      },
+      "NLD": {
+        "name": "Netherlands",
+        "value": 89.0,
+        "display": "89%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 100
+      },
+      "NZL": {
+        "name": "New Zealand",
+        "value": 89.0,
+        "display": "89%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 100
+      },
+      "NIC": {
+        "name": "Nicaragua",
+        "value": 85.0,
+        "display": "85%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 121
+      },
+      "NER": {
+        "name": "Niger",
+        "value": 81.0,
+        "display": "81%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 137
+      },
+      "NGA": {
+        "name": "Nigeria",
+        "value": 57.0,
+        "display": "57%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 177
+      },
+      "MKD": {
+        "name": "North Macedonia",
+        "value": 73.0,
+        "display": "73%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 155
+      },
+      "NOR": {
+        "name": "Norway",
+        "value": 96.0,
+        "display": "96%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 43
+      },
+      "OMN": {
+        "name": "Oman",
+        "value": 99.0,
+        "display": "99%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 1
+      },
+      "PAK": {
+        "name": "Pakistan",
+        "value": 86.0,
+        "display": "86%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 117
+      },
+      "PLW": {
+        "name": "Palau",
+        "value": 96.0,
+        "display": "96%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 43
+      },
+      "PAN": {
+        "name": "Panama",
+        "value": 93.0,
+        "display": "93%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 71
+      },
+      "PNG": {
+        "name": "Papua New Guinea",
+        "value": 44.0,
+        "display": "44%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 185
+      },
+      "PRY": {
+        "name": "Paraguay",
+        "value": 90.0,
+        "display": "90%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 89
+      },
+      "PER": {
+        "name": "Peru",
+        "value": 89.0,
+        "display": "89%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 100
+      },
+      "PHL": {
+        "name": "Philippines",
+        "value": 80.0,
+        "display": "80%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 142
+      },
+      "POL": {
+        "name": "Poland",
+        "value": 92.0,
+        "display": "92%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 81
+      },
+      "PRT": {
+        "name": "Portugal",
+        "value": 99.0,
+        "display": "99%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 1
+      },
+      "QAT": {
+        "name": "Qatar",
+        "value": 99.0,
+        "display": "99%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 1
+      },
+      "ROU": {
+        "name": "Romania",
+        "value": 78.0,
+        "display": "78%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 148
+      },
+      "RUS": {
+        "name": "Russian Federation",
+        "value": 97.0,
+        "display": "97%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 29
+      },
+      "RWA": {
+        "name": "Rwanda",
+        "value": 97.0,
+        "display": "97%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 29
+      },
+      "WSM": {
+        "name": "Samoa",
+        "value": 85.0,
+        "display": "85%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 121
+      },
+      "SMR": {
+        "name": "San Marino",
+        "value": 85.0,
+        "display": "85%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 121
+      },
+      "STP": {
+        "name": "Sao Tome and Principe",
+        "value": 87.0,
+        "display": "87%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 115
+      },
+      "SAU": {
+        "name": "Saudi Arabia",
+        "value": 96.0,
+        "display": "96%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 43
+      },
+      "SEN": {
+        "name": "Senegal",
+        "value": 87.0,
+        "display": "87%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 115
+      },
+      "SRB": {
+        "name": "Serbia",
+        "value": 84.0,
+        "display": "84%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 126
+      },
+      "SYC": {
+        "name": "Seychelles",
+        "value": 97.0,
+        "display": "97%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 29
+      },
+      "SLE": {
+        "name": "Sierra Leone",
+        "value": 90.0,
+        "display": "90%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 89
+      },
+      "SGP": {
+        "name": "Singapore",
+        "value": 97.0,
+        "display": "97%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 29
+      },
+      "SVK": {
+        "name": "Slovak Republic",
+        "value": 94.0,
+        "display": "94%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 65
+      },
+      "SVN": {
+        "name": "Slovenia",
+        "value": 95.0,
+        "display": "95%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 57
+      },
+      "SLB": {
+        "name": "Solomon Islands",
+        "value": 78.0,
+        "display": "78%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 148
+      },
+      "SOM": {
+        "name": "Somalia, Fed. Rep.",
+        "value": 64.0,
+        "display": "64%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 174
+      },
+      "ZAF": {
+        "name": "South Africa",
+        "value": 76.0,
+        "display": "76%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 151
+      },
+      "SSD": {
+        "name": "South Sudan",
+        "value": 72.0,
+        "display": "72%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 157
+      },
+      "ESP": {
+        "name": "Spain",
+        "value": 97.0,
+        "display": "97%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 29
+      },
+      "LKA": {
+        "name": "Sri Lanka",
+        "value": 99.0,
+        "display": "99%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 1
+      },
+      "KNA": {
+        "name": "St. Kitts and Nevis",
+        "value": 95.0,
+        "display": "95%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 57
+      },
+      "LCA": {
+        "name": "St. Lucia",
+        "value": 83.0,
+        "display": "83%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 130
+      },
+      "VCT": {
+        "name": "St. Vincent and the Grenadines",
+        "value": 99.0,
+        "display": "99%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 1
+      },
+      "SDN": {
+        "name": "Sudan",
+        "value": 46.0,
+        "display": "46%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 183
+      },
+      "SUR": {
+        "name": "Suriname",
+        "value": 73.0,
+        "display": "73%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 155
+      },
+      "SWE": {
+        "name": "Sweden",
+        "value": 93.0,
+        "display": "93%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 71
+      },
+      "CHE": {
+        "name": "Switzerland",
+        "value": 96.0,
+        "display": "96%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 43
+      },
+      "SYR": {
+        "name": "Syrian Arab Republic",
+        "value": 81.0,
+        "display": "81%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 137
+      },
+      "TJK": {
+        "name": "Tajikistan",
+        "value": 98.0,
+        "display": "98%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 19
+      },
+      "TZA": {
+        "name": "Tanzania",
+        "value": 84.0,
+        "display": "84%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 126
+      },
+      "THA": {
+        "name": "Thailand",
+        "value": 93.0,
+        "display": "93%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 71
+      },
+      "TLS": {
+        "name": "Timor-Leste",
+        "value": 72.0,
+        "display": "72%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 157
+      },
+      "TGO": {
+        "name": "Togo",
+        "value": 81.0,
+        "display": "81%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 137
+      },
+      "TON": {
+        "name": "Tonga",
+        "value": 99.0,
+        "display": "99%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 1
+      },
+      "TTO": {
+        "name": "Trinidad and Tobago",
+        "value": 96.0,
+        "display": "96%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 43
+      },
+      "TUN": {
+        "name": "Tunisia",
+        "value": 96.0,
+        "display": "96%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 43
+      },
+      "TUR": {
+        "name": "Turkiye",
+        "value": 95.0,
+        "display": "95%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 57
+      },
+      "TKM": {
+        "name": "Turkmenistan",
+        "value": 99.0,
+        "display": "99%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 1
+      },
+      "UGA": {
+        "name": "Uganda",
+        "value": 90.0,
+        "display": "90%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 89
+      },
+      "UKR": {
+        "name": "Ukraine",
+        "value": 91.0,
+        "display": "91%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 84
+      },
+      "ARE": {
+        "name": "United Arab Emirates",
+        "value": 98.0,
+        "display": "98%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 19
+      },
+      "GBR": {
+        "name": "United Kingdom",
+        "value": 89.0,
+        "display": "89%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 100
+      },
+      "USA": {
+        "name": "United States",
+        "value": 92.0,
+        "display": "92%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 81
+      },
+      "URY": {
+        "name": "Uruguay",
+        "value": 97.0,
+        "display": "97%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 29
+      },
+      "UZB": {
+        "name": "Uzbekistan",
+        "value": 99.0,
+        "display": "99%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 1
+      },
+      "VUT": {
+        "name": "Vanuatu",
+        "value": 61.0,
+        "display": "61%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 175
+      },
+      "VEN": {
+        "name": "Venezuela, RB",
+        "value": 71.0,
+        "display": "71%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 162
+      },
+      "VNM": {
+        "name": "Viet Nam",
+        "value": 98.0,
+        "display": "98%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 19
+      },
+      "PSE": {
+        "name": "West Bank and Gaza",
+        "value": 89.0,
+        "display": "89%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 100
+      },
+      "YEM": {
+        "name": "Yemen, Rep.",
+        "value": 41.0,
+        "display": "41%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 187
+      },
+      "ZMB": {
+        "name": "Zambia",
+        "value": 88.0,
+        "display": "88%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 109
+      },
+      "ZWE": {
+        "name": "Zimbabwe",
+        "value": 90.0,
+        "display": "90%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 89
+      }
+    }
+  },
+  "review": {
+    "errors": [
+      {
+        "surface": "beat_1",
+        "claim": "India safeguards almost all its young children before their second birthday.",
+        "reason": "The indicator measures vaccination before 12 months or at any time before the survey, not specifically before the second birthday.",
+        "severity": "factual"
+      },
+      {
+        "surface": "beat_3",
+        "claim": "leaving most young children without a dose.",
+        "reason": "With 23% coverage, 77% are unvaccinated, which is most, but the claim implies this is a direct consequence of being the lowest, whereas the indicator definition does not provide causal history.",
+        "severity": "factual"
+      },
+      {
+        "surface": "beat_1",
+        "claim": "India safeguards almost all its young children before their second birthday.",
+        "reason": "The indicator definition does not specify the second birthday as the cutoff.",
+        "severity": "factual"
+      },
+      {
+        "surface": "beat_3",
+        "claim": "Montenegro is the world's lowest, leaving most young children without a dose.",
+        "reason": "While the rank is correct, the causal claim about the consequence is not supported by the definition.",
+        "severity": "factual"
+      }
+    ],
+    "claims": [
+      {
+        "surface": "beat_0",
+        "text": "India protects 97% of children against measles.",
+        "isos": [
+          "IND"
+        ],
+        "support": "IND: 97%",
+        "evidence": {
+          "IND": {
+            "name": "India",
+            "value": 97.0,
+            "display": "97%",
+            "year": 2024,
+            "unit": "%",
+            "rank": 29
+          }
+        }
+      },
+      {
+        "surface": "beat_0",
+        "text": "Montenegro sits at just 23%.",
+        "isos": [
+          "MNE"
+        ],
+        "support": "MNE: 23%",
+        "evidence": {
+          "MNE": {
+            "name": "Montenegro",
+            "value": 23.0,
+            "display": "23%",
+            "year": 2024,
+            "unit": "%",
+            "rank": 189
+          }
+        }
+      },
+      {
+        "surface": "beat_2",
+        "text": "India has 4.2 times Montenegro's protection.",
+        "isos": [
+          "IND",
+          "MNE"
+        ],
+        "support": "97 / 23 = 4.217",
+        "evidence": {
+          "IND": {
+            "name": "India",
+            "value": 97.0,
+            "display": "97%",
+            "year": 2024,
+            "unit": "%",
+            "rank": 29
+          },
+          "MNE": {
+            "name": "Montenegro",
+            "value": 23.0,
+            "display": "23%",
+            "year": 2024,
+            "unit": "%",
+            "rank": 189
+          }
+        }
+      },
+      {
+        "surface": "beat_3",
+        "text": "Montenegro is the world's lowest",
+        "isos": [
+          "MNE"
+        ],
+        "support": "MNE rank 189 of 189",
+        "evidence": {
+          "MNE": {
+            "name": "Montenegro",
+            "value": 23.0,
+            "display": "23%",
+            "year": 2024,
+            "unit": "%",
+            "rank": 189
+          }
+        }
+      },
+      {
+        "surface": "beat_4",
+        "text": "The median country hits 90%.",
+        "isos": [],
+        "support": "Median of 189 values is 90%",
+        "evidence": {}
+      },
+      {
+        "surface": "beat_4",
+        "text": "Germany has 96%, Japan 95%, Brazil 93%, and USA 92%.",
+        "isos": [
+          "DEU",
+          "JPN",
+          "BRA",
+          "USA"
+        ],
+        "support": "DEU: 96%, JPN: 95%, BRA: 93%, USA: 92%",
+        "evidence": {
+          "DEU": {
+            "name": "Germany",
+            "value": 96.0,
+            "display": "96%",
+            "year": 2024,
+            "unit": "%",
+            "rank": 43
+          },
+          "JPN": {
+            "name": "Japan",
+            "value": 95.0,
+            "display": "95%",
+            "year": 2024,
+            "unit": "%",
+            "rank": 57
+          },
+          "BRA": {
+            "name": "Brazil",
+            "value": 93.0,
+            "display": "93%",
+            "year": 2024,
+            "unit": "%",
+            "rank": 71
+          },
+          "USA": {
+            "name": "United States",
+            "value": 92.0,
+            "display": "92%",
+            "year": 2024,
+            "unit": "%",
+            "rank": 81
+          }
+        }
+      },
+      {
+        "surface": "title",
+        "text": "India vs Montenegro: The Global Measles Divide",
+        "isos": [
+          "IND",
+          "MNE"
+        ],
+        "support": "The title frames a comparison between two countries with vastly different coverage rates.",
+        "method": "complete-surface-check",
+        "evidence": {
+          "IND": {
+            "name": "India",
+            "value": 97.0,
+            "display": "97%",
+            "year": 2024,
+            "unit": "%",
+            "rank": 29
+          },
+          "MNE": {
+            "name": "Montenegro",
+            "value": 23.0,
+            "display": "23%",
+            "year": 2024,
+            "unit": "%",
+            "rank": 189
+          }
+        }
+      },
+      {
+        "surface": "hook",
+        "text": "MEASLES PROTECTION GAP",
+        "isos": [],
+        "support": "The hook introduces the topic of measles protection.",
+        "method": "complete-surface-check",
+        "evidence": {}
+      },
+      {
+        "surface": "description",
+        "text": "While most of the world achieves high measles vaccination coverage, Montenegro remains a stark outlier.",
+        "isos": [
+          "MNE"
+        ],
+        "support": "The description accurately reflects the high global coverage and Montenegro's outlier status.",
+        "method": "complete-surface-check",
+        "evidence": {
+          "MNE": {
+            "name": "Montenegro",
+            "value": 23.0,
+            "display": "23%",
+            "year": 2024,
+            "unit": "%",
+            "rank": 189
+          }
+        }
+      },
+      {
+        "surface": "beat_0",
+        "text": "India protects 97% of children against measles. Montenegro sits at just 23%.",
+        "isos": [
+          "IND",
+          "MNE"
+        ],
+        "support": "Values match the evidence.",
+        "method": "complete-surface-check",
+        "evidence": {
+          "IND": {
+            "name": "India",
+            "value": 97.0,
+            "display": "97%",
+            "year": 2024,
+            "unit": "%",
+            "rank": 29
+          },
+          "MNE": {
+            "name": "Montenegro",
+            "value": 23.0,
+            "display": "23%",
+            "year": 2024,
+            "unit": "%",
+            "rank": 189
+          }
+        }
+      },
+      {
+        "surface": "beat_1",
+        "text": "India safeguards almost all its young children before their second birthday.",
+        "isos": [
+          "IND"
+        ],
+        "support": "The indicator definition does not specify the second birthday as the cutoff.",
+        "method": "complete-surface-check",
+        "evidence": {
+          "IND": {
+            "name": "India",
+            "value": 97.0,
+            "display": "97%",
+            "year": 2024,
+            "unit": "%",
+            "rank": 29
+          }
+        }
+      },
+      {
+        "surface": "beat_2",
+        "text": "India has 4.2 times Montenegro's protection.",
+        "isos": [
+          "IND",
+          "MNE"
+        ],
+        "support": "Calculation is mathematically accurate based on the evidence.",
+        "method": "complete-surface-check",
+        "evidence": {
+          "IND": {
+            "name": "India",
+            "value": 97.0,
+            "display": "97%",
+            "year": 2024,
+            "unit": "%",
+            "rank": 29
+          },
+          "MNE": {
+            "name": "Montenegro",
+            "value": 23.0,
+            "display": "23%",
+            "year": 2024,
+            "unit": "%",
+            "rank": 189
+          }
+        }
+      },
+      {
+        "surface": "beat_3",
+        "text": "Montenegro is the world's lowest, leaving most young children without a dose.",
+        "isos": [
+          "MNE"
+        ],
+        "support": "While the rank is correct, the causal claim about the consequence is not supported by the definition.",
+        "method": "complete-surface-check",
+        "evidence": {
+          "MNE": {
+            "name": "Montenegro",
+            "value": 23.0,
+            "display": "23%",
+            "year": 2024,
+            "unit": "%",
+            "rank": 189
+          }
+        }
+      },
+      {
+        "surface": "beat_4",
+        "text": "The median country hits 90%. Germany has 96%, Japan 95%, Brazil 93%, and USA 92%.",
+        "isos": [
+          "DEU",
+          "JPN",
+          "BRA",
+          "USA"
+        ],
+        "support": "Median and individual country values are correct.",
+        "method": "complete-surface-check",
+        "evidence": {
+          "DEU": {
+            "name": "Germany",
+            "value": 96.0,
+            "display": "96%",
+            "year": 2024,
+            "unit": "%",
+            "rank": 43
+          },
+          "JPN": {
+            "name": "Japan",
+            "value": 95.0,
+            "display": "95%",
+            "year": 2024,
+            "unit": "%",
+            "rank": 57
+          },
+          "BRA": {
+            "name": "Brazil",
+            "value": 93.0,
+            "display": "93%",
+            "year": 2024,
+            "unit": "%",
+            "rank": 71
+          },
+          "USA": {
+            "name": "United States",
+            "value": 92.0,
+            "display": "92%",
+            "year": 2024,
+            "unit": "%",
+            "rank": 81
+          }
+        }
+      },
+      {
+        "surface": "beat_5",
+        "text": "How high is measles protection in your country?",
+        "isos": [],
+        "support": "This is a rhetorical question.",
+        "method": "complete-surface-check",
+        "evidence": {}
+      },
+      {
+        "surface": "card_5",
+        "text": [
+          "Measles Protection",
+          "World Bank Data"
+        ],
+        "isos": [],
+        "support": "The card displays the indicator and source.",
+        "method": "complete-surface-check",
+        "evidence": {}
+      }
+    ],
+    "surface_checks": {
+      "title": {
+        "supported": true,
+        "reason": "The title frames a comparison between two countries with vastly different coverage rates.",
+        "isos": [
+          "IND",
+          "MNE"
+        ]
+      },
+      "hook": {
+        "supported": true,
+        "reason": "The hook introduces the topic of measles protection.",
+        "isos": []
+      },
+      "description": {
+        "supported": true,
+        "reason": "The description accurately reflects the high global coverage and Montenegro's outlier status.",
+        "isos": [
+          "MNE"
+        ]
+      },
+      "beat_0": {
+        "supported": true,
+        "reason": "Values match the evidence.",
+        "isos": [
+          "IND",
+          "MNE"
+        ]
+      },
+      "beat_1": {
+        "supported": false,
+        "reason": "The indicator definition does not specify the second birthday as the cutoff.",
+        "isos": [
+          "IND"
+        ]
+      },
+      "beat_2": {
+        "supported": true,
+        "reason": "Calculation is mathematically accurate based on the evidence.",
+        "isos": [
+          "IND",
+          "MNE"
+        ]
+      },
+      "beat_3": {
+        "supported": false,
+        "reason": "While the rank is correct, the causal claim about the consequence is not supported by the definition.",
+        "isos": [
+          "MNE"
+        ]
+      },
+      "beat_4": {
+        "supported": true,
+        "reason": "Median and individual country values are correct.",
+        "isos": [
+          "DEU",
+          "JPN",
+          "BRA",
+          "USA"
+        ]
+      },
+      "beat_5": {
+        "supported": true,
+        "reason": "This is a rhetorical question.",
+        "isos": []
+      },
+      "card_5": {
+        "supported": true,
+        "reason": "The card displays the indicator and source.",
+        "isos": []
+      }
+    },
+    "warnings": []
+  },
+  "script_sha256": "ab70af2e97fb79115e9c5422ab3e6eeca7c812ae9a7e46b2cf1cab8e15f3149f",
+  "data_sha256": "63a1185f35db165d993b3a8d190c47317c96054f2dd890fea5efa6ade61662d3",
+  "reviewer_model": "gemini-3.1-flash-lite"
+}

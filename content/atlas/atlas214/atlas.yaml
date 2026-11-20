@@ -1,0 +1,79 @@
+id: atlas214
+title: The Global Gap in Urban Sanitation
+format: odd_one_out
+hook_text: A STARK CONTRAST
+description: A visual contrast showing the gap between nations with universal urban sanitation and those with the
+  lowest access levels.
+hashtags:
+- '#health'
+- '#urbanization'
+- '#geography'
+tags:
+- health
+- urban population with basic sanitation
+- countries ranked by urban population with basic sanitation
+- New Zealand
+- Congo Dem. Rep.
+- world map
+- geography
+- atlas in numbers
+sources:
+- https://data.worldbank.org/indicator/SH.STA.BASS.UR.ZS
+dataset:
+  kind: worldbank
+  indicator: SH.STA.BASS.UR.ZS
+  label: Urban population with basic sanitation
+  unit: '%'
+  source: World Bank
+  min_year: 2019
+scale:
+  edges:
+  - 40.0
+  - 70.0
+  - 90.0
+  - 99.0
+  labels:
+  - Critically low
+  - Developing
+  - Improving
+  - High access
+  - Universal access
+value_format: '{v:.1f}%'
+beats:
+- text: Armenia has 100% urban sanitation access. In DR Congo, only 21.8% of people have it.
+  shot:
+    callouts:
+    - ARM
+    - COD
+- text: This counts people using improved sanitation facilities that are not shared with other households.
+  basis: The percentage of people using at least basic sanitation services, that is, improved sanitation facilities
+    that are not shared with other households.
+- text: Israel, Kuwait and Chile are at 100%. They have universal access for all urban residents.
+  shot:
+    kind: group
+    isos:
+    - ISR
+    - KWT
+    - CHL
+- text: India is at 87.4%. Nigeria is lower, at 59.1%.
+  shot:
+    kind: group
+    isos:
+    - IND
+    - NGA
+- text: DR Congo sits at the bottom at 21.8%.
+  shot:
+    kind: country
+    iso: COD
+- text: Armenia has 4.6 times the access that DR Congo has.
+  shot:
+    kind: group
+    isos:
+    - ARM
+    - COD
+- text: Does your neighborhood have access to a private, improved toilet?
+  shot:
+    kind: card
+    lines:
+    - Does your home have access?
+    - Urban population with basic sanitation

@@ -8181,7 +8181,7 @@
     "#health"
    ],
    "source_url": "https://data.worldbank.org/indicator/SH.XPD.CHEX.PP.CD",
-   "status": "ready:atlas208",
+   "status": "used:atlas208",
    "added_by": "refill"
   },
   {
@@ -8212,7 +8212,7 @@
     "#economy"
    ],
    "source_url": "https://data.worldbank.org/indicator/FX.OWN.TOTL.40.ZS",
-   "status": "ready:atlas209",
+   "status": "used:atlas209",
    "added_by": "refill"
   },
   {
@@ -8321,7 +8321,7 @@
     "#hunger"
    ],
    "source_url": "https://data.worldbank.org/indicator/SN.ITK.SVFI.ZS",
-   "status": "ready:atlas211",
+   "status": "used:atlas211",
    "added_by": "refill"
   },
   {
@@ -8367,7 +8367,7 @@
    "id": "t229",
    "topic": "The Global Reach of Measles Protection",
    "angle": "While most of the world achieves near-universal measles vaccination, Montenegro stands out as a stark outlier with only 23% coverage.",
-   "format": "map_reveal",
+   "format": "versus",
    "dataset": {
     "kind": "worldbank",
     "indicator": "SH.IMM.MEAS",
@@ -8399,14 +8399,14 @@
     "#health"
    ],
    "source_url": "https://data.worldbank.org/indicator/SH.IMM.MEAS",
-   "status": "open",
+   "status": "failed:ValueError",
    "added_by": "refill"
   },
   {
    "id": "t230",
    "topic": "The Global Gap in Urban Sanitation",
    "angle": "While half the world's nations have achieved near-universal urban sanitation, millions in the bottom tier still lack even basic private facilities.",
-   "format": "map_reveal",
+   "format": "odd_one_out",
    "dataset": {
     "kind": "worldbank",
     "indicator": "SH.STA.BASS.UR.ZS",
@@ -8438,7 +8438,7 @@
     "#urbanization"
    ],
    "source_url": "https://data.worldbank.org/indicator/SH.STA.BASS.UR.ZS",
-   "status": "open",
+   "status": "ready:atlas214",
    "added_by": "refill"
   },
   {
@@ -8506,7 +8506,7 @@
     "#education"
    ],
    "source_url": "https://data.worldbank.org/indicator/SE.PRM.ENRR",
-   "status": "ready:atlas212",
+   "status": "used:atlas212",
    "added_by": "refill"
   }
  ],

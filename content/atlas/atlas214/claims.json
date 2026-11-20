@@ -1,0 +1,1799 @@
+{
+  "version": 1,
+  "evidence": {
+    "version": 1,
+    "indicator": "SH.STA.BASS.UR.ZS",
+    "definition": "The percentage of people using at least basic sanitation services, that is, improved sanitation facilities that are not shared with other households.  This indicator encompasses both people using basic sanitation services as well as those using safely managed sanitation services.   Improved sanitation facilities include flush/pour flush to piped sewer systems, septic tanks or pit latrines; ventilated improved pit latrines, composting toilets or pit latrines with slabs.",
+    "source": "https://data.worldbank.org/indicator/SH.STA.BASS.UR.ZS",
+    "source_response_sha256": "f8df5f638ed9a50d300ebdfae504ebee43e58738bc209c46dd768c56758775c6",
+    "source_organization": "WHO/UNICEF Joint Monitoring Programme (JMP) for Water Supply, Sanitation and Hygiene, World Health Organization (WHO), uri: washdata.org, publisher: WHO/UNICEF Joint Monitoring Programme (JMP) for Water Supply, Sanitation and Hygiene (washdata.org), date accessed: 2025-09-30, date published: 2025-08-25;\nUN Children's Fund (UNICEF), uri: washdata.org, note: WHO/UNICEF Joint Monitoring Programme (JMP) for Water Supply, Sanitation and Hygiene",
+    "year_label": "latest available 2021–2024",
+    "universe": "mapped countries and territories with data",
+    "count": 172,
+    "threshold": null,
+    "at_or_above": null,
+    "entities": {
+      "AFG": {
+        "name": "Afghanistan",
+        "value": 72.9566926834905,
+        "display": "73%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 128
+      },
+      "ALB": {
+        "name": "Albania",
+        "value": 99.3094763796725,
+        "display": "99.3%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 32
+      },
+      "DZA": {
+        "name": "Algeria",
+        "value": 87.8992401659597,
+        "display": "87.9%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 103
+      },
+      "AND": {
+        "name": "Andorra",
+        "value": 100.0,
+        "display": "100%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 1
+      },
+      "AGO": {
+        "name": "Angola",
+        "value": 62.8365900231228,
+        "display": "62.8%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 132
+      },
+      "ATG": {
+        "name": "Antigua and Barbuda",
+        "value": 98.3799890682237,
+        "display": "98.4%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 55
+      },
+      "ARG": {
+        "name": "Argentina",
+        "value": 98.4695992601004,
+        "display": "98.5%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 53
+      },
+      "ARM": {
+        "name": "Armenia",
+        "value": 100.0,
+        "display": "100%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 1
+      },
+      "AUT": {
+        "name": "Austria",
+        "value": 99.9533680135601,
+        "display": "99.95%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 11
+      },
+      "AZE": {
+        "name": "Azerbaijan",
+        "value": 99.6597369585788,
+        "display": "99.7%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 23
+      },
+      "BGD": {
+        "name": "Bangladesh",
+        "value": 67.6154773736526,
+        "display": "67.6%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 130
+      },
+      "BLR": {
+        "name": "Belarus",
+        "value": 99.9770860713013,
+        "display": "99.98%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 10
+      },
+      "BEL": {
+        "name": "Belgium",
+        "value": 99.486125385406,
+        "display": "99.5%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 29
+      },
+      "BLZ": {
+        "name": "Belize",
+        "value": 93.3220001457918,
+        "display": "93.3%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 90
+      },
+      "BEN": {
+        "name": "Benin",
+        "value": 32.3900655821967,
+        "display": "32.4%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 167
+      },
+      "BMU": {
+        "name": "Bermuda",
+        "value": 99.9416526015971,
+        "display": "99.9%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 13
+      },
+      "BTN": {
+        "name": "Bhutan",
+        "value": 83.9000509116115,
+        "display": "83.9%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 110
+      },
+      "BOL": {
+        "name": "Bolivia",
+        "value": 78.8671234053775,
+        "display": "78.9%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 124
+      },
+      "BIH": {
+        "name": "Bosnia and Herzegovina",
+        "value": 98.8671783667694,
+        "display": "98.9%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 43
+      },
+      "BWA": {
+        "name": "Botswana",
+        "value": 77.2778275069525,
+        "display": "77.3%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 125
+      },
+      "BRA": {
+        "name": "Brazil",
+        "value": 95.8634009522858,
+        "display": "95.9%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 80
+      },
+      "BGR": {
+        "name": "Bulgaria",
+        "value": 86.7803837953092,
+        "display": "86.8%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 107
+      },
+      "BFA": {
+        "name": "Burkina Faso",
+        "value": 48.4490985216711,
+        "display": "48.4%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 149
+      },
+      "BDI": {
+        "name": "Burundi",
+        "value": 42.0111468685324,
+        "display": "42%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 156
+      },
+      "CPV": {
+        "name": "Cabo Verde",
+        "value": 86.138039599175,
+        "display": "86.1%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 109
+      },
+      "KHM": {
+        "name": "Cambodia",
+        "value": 93.1157799598997,
+        "display": "93.1%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 93
+      },
+      "CMR": {
+        "name": "Cameroon",
+        "value": 61.9305009156542,
+        "display": "61.9%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 133
+      },
+      "CAN": {
+        "name": "Canada",
+        "value": 98.550066117837,
+        "display": "98.6%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 52
+      },
+      "CYM": {
+        "name": "Cayman Islands",
+        "value": 83.2442168711656,
+        "display": "83.2%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 113
+      },
+      "CAF": {
+        "name": "Central African Republic",
+        "value": 24.5458877662278,
+        "display": "24.5%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 169
+      },
+      "TCD": {
+        "name": "Chad",
+        "value": 39.4591670420644,
+        "display": "39.5%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 159
+      },
+      "CHL": {
+        "name": "Chile",
+        "value": 100.0,
+        "display": "100%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 1
+      },
+      "CHN": {
+        "name": "China",
+        "value": 98.3583032490974,
+        "display": "98.4%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 56
+      },
+      "COL": {
+        "name": "Colombia",
+        "value": 98.5702352104264,
+        "display": "98.6%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 50
+      },
+      "COM": {
+        "name": "Comoros",
+        "value": 57.5097340671097,
+        "display": "57.5%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 138
+      },
+      "COD": {
+        "name": "Congo, Dem. Rep.",
+        "value": 21.79802716305,
+        "display": "21.8%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 172
+      },
+      "COG": {
+        "name": "Congo, Rep.",
+        "value": 27.1961185449539,
+        "display": "27.2%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 168
+      },
+      "CRI": {
+        "name": "Costa Rica",
+        "value": 98.9220219223664,
+        "display": "98.9%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 42
+      },
+      "CIV": {
+        "name": "Cote d'Ivoire",
+        "value": 54.3210726849005,
+        "display": "54.3%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 141
+      },
+      "HRV": {
+        "name": "Croatia",
+        "value": 97.5651054812895,
+        "display": "97.6%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 66
+      },
+      "CUB": {
+        "name": "Cuba",
+        "value": 95.0148519587763,
+        "display": "95%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 84
+      },
+      "CYP": {
+        "name": "Cyprus",
+        "value": 99.7535527081102,
+        "display": "99.8%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 20
+      },
+      "CZE": {
+        "name": "Czechia",
+        "value": 98.9674956989247,
+        "display": "99%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 40
+      },
+      "DNK": {
+        "name": "Denmark",
+        "value": 99.5971802618328,
+        "display": "99.6%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 25
+      },
+      "DJI": {
+        "name": "Djibouti",
+        "value": 79.3392221697226,
+        "display": "79.3%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 123
+      },
+      "DOM": {
+        "name": "Dominican Republic",
+        "value": 91.709785341808,
+        "display": "91.7%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 96
+      },
+      "ECU": {
+        "name": "Ecuador",
+        "value": 93.9711881364603,
+        "display": "94%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 86
+      },
+      "EGY": {
+        "name": "Egypt, Arab Rep.",
+        "value": 99.9456834684143,
+        "display": "99.9%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 12
+      },
+      "SLV": {
+        "name": "El Salvador",
+        "value": 91.490193874904,
+        "display": "91.5%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 98
+      },
+      "EST": {
+        "name": "Estonia",
+        "value": 98.9430501907453,
+        "display": "98.9%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 41
+      },
+      "SWZ": {
+        "name": "Eswatini",
+        "value": 47.5464875740683,
+        "display": "47.5%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 152
+      },
+      "ETH": {
+        "name": "Ethiopia",
+        "value": 24.0617676497997,
+        "display": "24.1%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 170
+      },
+      "FJI": {
+        "name": "Fiji",
+        "value": 92.7610974771031,
+        "display": "92.8%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 95
+      },
+      "FIN": {
+        "name": "Finland",
+        "value": 99.4470046082949,
+        "display": "99.4%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 30
+      },
+      "FRA": {
+        "name": "France",
+        "value": 98.5901309164149,
+        "display": "98.6%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 49
+      },
+      "GAB": {
+        "name": "Gabon",
+        "value": 60.5244126093321,
+        "display": "60.5%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 135
+      },
+      "GMB": {
+        "name": "Gambia, The",
+        "value": 61.1140989320078,
+        "display": "61.1%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 134
+      },
+      "GEO": {
+        "name": "Georgia",
+        "value": 97.6778921796354,
+        "display": "97.7%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 65
+      },
+      "DEU": {
+        "name": "Germany",
+        "value": 99.2936427850656,
+        "display": "99.3%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 33
+      },
+      "GHA": {
+        "name": "Ghana",
+        "value": 37.0420196998689,
+        "display": "37%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 162
+      },
+      "GRC": {
+        "name": "Greece",
+        "value": 99.2097984986171,
+        "display": "99.2%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 35
+      },
+      "GTM": {
+        "name": "Guatemala",
+        "value": 80.9465949241948,
+        "display": "80.9%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 119
+      },
+      "GIN": {
+        "name": "Guinea",
+        "value": 48.4161167164449,
+        "display": "48.4%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 150
+      },
+      "GNB": {
+        "name": "Guinea-Bissau",
+        "value": 42.8330823188195,
+        "display": "42.8%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 155
+      },
+      "GUY": {
+        "name": "Guyana",
+        "value": 93.218462705749,
+        "display": "93.2%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 92
+      },
+      "HTI": {
+        "name": "Haiti",
+        "value": 32.4092831794399,
+        "display": "32.4%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 166
+      },
+      "HND": {
+        "name": "Honduras",
+        "value": 90.9153933645441,
+        "display": "90.9%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 100
+      },
+      "HKG": {
+        "name": "Hong Kong SAR, China",
+        "value": 94.834373461349,
+        "display": "94.8%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 85
+      },
+      "HUN": {
+        "name": "Hungary",
+        "value": 97.7551020408163,
+        "display": "97.8%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 64
+      },
+      "ISL": {
+        "name": "Iceland",
+        "value": 98.7012987012987,
+        "display": "98.7%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 47
+      },
+      "IND": {
+        "name": "India",
+        "value": 87.3801818139873,
+        "display": "87.4%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 105
+      },
+      "IDN": {
+        "name": "Indonesia",
+        "value": 90.0774466827668,
+        "display": "90.1%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 101
+      },
+      "IRN": {
+        "name": "Iran, Islamic Rep.",
+        "value": 92.8,
+        "display": "92.8%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 94
+      },
+      "IRQ": {
+        "name": "Iraq",
+        "value": 98.8413604280945,
+        "display": "98.8%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 44
+      },
+      "IRL": {
+        "name": "Ireland",
+        "value": 87.8128506156305,
+        "display": "87.8%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 104
+      },
+      "ISR": {
+        "name": "Israel",
+        "value": 100.0,
+        "display": "100%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 1
+      },
+      "ITA": {
+        "name": "Italy",
+        "value": 99.8793152064451,
+        "display": "99.9%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 16
+      },
+      "JAM": {
+        "name": "Jamaica",
+        "value": 89.9836724174635,
+        "display": "90%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 102
+      },
+      "JOR": {
+        "name": "Jordan",
+        "value": 96.5625494153005,
+        "display": "96.6%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 74
+      },
+      "KAZ": {
+        "name": "Kazakhstan",
+        "value": 97.1169414238313,
+        "display": "97.1%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 70
+      },
+      "KEN": {
+        "name": "Kenya",
+        "value": 39.7003512406866,
+        "display": "39.7%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 158
+      },
+      "KIR": {
+        "name": "Kiribati",
+        "value": 49.3079564921965,
+        "display": "49.3%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 147
+      },
+      "PRK": {
+        "name": "Korea, Dem. People's Rep.",
+        "value": 91.6669720129506,
+        "display": "91.7%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 97
+      },
+      "KWT": {
+        "name": "Kuwait",
+        "value": 100.0,
+        "display": "100%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 1
+      },
+      "KGZ": {
+        "name": "Kyrgyz Republic",
+        "value": 96.6484861976449,
+        "display": "96.6%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 73
+      },
+      "LAO": {
+        "name": "Lao PDR",
+        "value": 98.5668958349244,
+        "display": "98.6%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 51
+      },
+      "LVA": {
+        "name": "Latvia",
+        "value": 95.9842218299362,
+        "display": "96%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 79
+      },
+      "LSO": {
+        "name": "Lesotho",
+        "value": 45.042157881109,
+        "display": "45%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 153
+      },
+      "LBR": {
+        "name": "Liberia",
+        "value": 34.6088842114741,
+        "display": "34.6%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 164
+      },
+      "LTU": {
+        "name": "Lithuania",
+        "value": 97.9015041169499,
+        "display": "97.9%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 63
+      },
+      "LUX": {
+        "name": "Luxembourg",
+        "value": 97.4952352752881,
+        "display": "97.5%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 69
+      },
+      "MDG": {
+        "name": "Madagascar",
+        "value": 22.2241789792749,
+        "display": "22.2%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 171
+      },
+      "MWI": {
+        "name": "Malawi",
+        "value": 48.0363192647653,
+        "display": "48%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 151
+      },
+      "MYS": {
+        "name": "Malaysia",
+        "value": 96.056622851365,
+        "display": "96.1%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 78
+      },
+      "MLI": {
+        "name": "Mali",
+        "value": 57.9573636989359,
+        "display": "58%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 137
+      },
+      "MLT": {
+        "name": "Malta",
+        "value": 100.0,
+        "display": "100%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 1
+      },
+      "MHL": {
+        "name": "Marshall Islands",
+        "value": 81.9637431709766,
+        "display": "82%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 116
+      },
+      "MRT": {
+        "name": "Mauritania",
+        "value": 81.4502564168303,
+        "display": "81.5%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 117
+      },
+      "MUS": {
+        "name": "Mauritius",
+        "value": 98.1515082405126,
+        "display": "98.2%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 59
+      },
+      "MEX": {
+        "name": "Mexico",
+        "value": 93.8222609029076,
+        "display": "93.8%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 88
+      },
+      "MDA": {
+        "name": "Moldova",
+        "value": 90.9295642975146,
+        "display": "90.9%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 99
+      },
+      "MNG": {
+        "name": "Mongolia",
+        "value": 83.7627831420951,
+        "display": "83.8%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 111
+      },
+      "MNE": {
+        "name": "Montenegro",
+        "value": 99.6319949975223,
+        "display": "99.6%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 24
+      },
+      "MAR": {
+        "name": "Morocco",
+        "value": 96.3645933046175,
+        "display": "96.4%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 77
+      },
+      "MOZ": {
+        "name": "Mozambique",
+        "value": 63.4053708173102,
+        "display": "63.4%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 131
+      },
+      "MMR": {
+        "name": "Myanmar",
+        "value": 79.3393282444116,
+        "display": "79.3%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 122
+      },
+      "NAM": {
+        "name": "Namibia",
+        "value": 50.1880967971027,
+        "display": "50.2%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 146
+      },
+      "NPL": {
+        "name": "Nepal",
+        "value": 82.742135530695,
+        "display": "82.7%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 115
+      },
+      "NLD": {
+        "name": "Netherlands",
+        "value": 97.5,
+        "display": "97.5%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 68
+      },
+      "NZL": {
+        "name": "New Zealand",
+        "value": 100.0,
+        "display": "100%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 1
+      },
+      "NER": {
+        "name": "Niger",
+        "value": 53.0552530322693,
+        "display": "53.1%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 143
+      },
+      "NGA": {
+        "name": "Nigeria",
+        "value": 59.1206988327009,
+        "display": "59.1%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 136
+      },
+      "MKD": {
+        "name": "North Macedonia",
+        "value": 99.8421484908734,
+        "display": "99.8%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 19
+      },
+      "NOR": {
+        "name": "Norway",
+        "value": 98.0,
+        "display": "98%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 60
+      },
+      "OMN": {
+        "name": "Oman",
+        "value": 99.3236975388366,
+        "display": "99.3%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 31
+      },
+      "PAK": {
+        "name": "Pakistan",
+        "value": 82.9837739229137,
+        "display": "83%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 114
+      },
+      "PLW": {
+        "name": "Palau",
+        "value": 99.1484383320715,
+        "display": "99.1%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 36
+      },
+      "PAN": {
+        "name": "Panama",
+        "value": 96.9339725439645,
+        "display": "96.9%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 71
+      },
+      "PNG": {
+        "name": "Papua New Guinea",
+        "value": 48.5440815387055,
+        "display": "48.5%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 148
+      },
+      "PRY": {
+        "name": "Paraguay",
+        "value": 95.7496277109764,
+        "display": "95.7%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 81
+      },
+      "PER": {
+        "name": "Peru",
+        "value": 83.4540870954899,
+        "display": "83.5%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 112
+      },
+      "PHL": {
+        "name": "Philippines",
+        "value": 86.8135468544432,
+        "display": "86.8%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 106
+      },
+      "POL": {
+        "name": "Poland",
+        "value": 98.7717502558854,
+        "display": "98.8%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 45
+      },
+      "PRT": {
+        "name": "Portugal",
+        "value": 99.5963673057518,
+        "display": "99.6%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 26
+      },
+      "ROU": {
+        "name": "Romania",
+        "value": 98.3131121282786,
+        "display": "98.3%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 57
+      },
+      "RUS": {
+        "name": "Russian Federation",
+        "value": 99.2674418604649,
+        "display": "99.3%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 34
+      },
+      "RWA": {
+        "name": "Rwanda",
+        "value": 56.4355687975904,
+        "display": "56.4%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 139
+      },
+      "WSM": {
+        "name": "Samoa",
+        "value": 97.5288051388036,
+        "display": "97.5%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 67
+      },
+      "STP": {
+        "name": "Sao Tome and Principe",
+        "value": 51.2975175398244,
+        "display": "51.3%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 144
+      },
+      "SAU": {
+        "name": "Saudi Arabia",
+        "value": 97.9490123626238,
+        "display": "97.9%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 62
+      },
+      "SEN": {
+        "name": "Senegal",
+        "value": 70.9945935999935,
+        "display": "71%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 129
+      },
+      "SRB": {
+        "name": "Serbia",
+        "value": 99.7493533895542,
+        "display": "99.7%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 21
+      },
+      "SLE": {
+        "name": "Sierra Leone",
+        "value": 36.7339897534179,
+        "display": "36.7%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 163
+      },
+      "SGP": {
+        "name": "Singapore",
+        "value": 100.0,
+        "display": "100%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 1
+      },
+      "SVK": {
+        "name": "Slovak Republic",
+        "value": 98.6924463625665,
+        "display": "98.7%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 48
+      },
+      "SLB": {
+        "name": "Solomon Islands",
+        "value": 74.8286668812993,
+        "display": "74.8%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 127
+      },
+      "SOM": {
+        "name": "Somalia, Fed. Rep.",
+        "value": 54.0285637369663,
+        "display": "54%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 142
+      },
+      "ZAF": {
+        "name": "South Africa",
+        "value": 76.5561579430314,
+        "display": "76.6%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 126
+      },
+      "SSD": {
+        "name": "South Sudan",
+        "value": 37.6610929844792,
+        "display": "37.7%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 161
+      },
+      "ESP": {
+        "name": "Spain",
+        "value": 99.8998998998999,
+        "display": "99.9%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 14
+      },
+      "LKA": {
+        "name": "Sri Lanka",
+        "value": 96.8555405765277,
+        "display": "96.9%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 72
+      },
+      "LCA": {
+        "name": "St. Lucia",
+        "value": 79.4394780245849,
+        "display": "79.4%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 121
+      },
+      "MAF": {
+        "name": "St. Martin (French part)",
+        "value": 100.0,
+        "display": "100%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 1
+      },
+      "SDN": {
+        "name": "Sudan",
+        "value": 81.1183961122647,
+        "display": "81.1%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 118
+      },
+      "SUR": {
+        "name": "Suriname",
+        "value": 93.838375571907,
+        "display": "93.8%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 87
+      },
+      "SWE": {
+        "name": "Sweden",
+        "value": 98.7202437378664,
+        "display": "98.7%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 46
+      },
+      "CHE": {
+        "name": "Switzerland",
+        "value": 99.8998998998999,
+        "display": "99.9%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 14
+      },
+      "SYR": {
+        "name": "Syrian Arab Republic",
+        "value": 96.4553907565153,
+        "display": "96.5%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 76
+      },
+      "TJK": {
+        "name": "Tajikistan",
+        "value": 93.4453121019605,
+        "display": "93.4%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 89
+      },
+      "TZA": {
+        "name": "Tanzania",
+        "value": 55.7862199650571,
+        "display": "55.8%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 140
+      },
+      "THA": {
+        "name": "Thailand",
+        "value": 99.7179685918685,
+        "display": "99.7%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 22
+      },
+      "TLS": {
+        "name": "Timor-Leste",
+        "value": 80.1234001284807,
+        "display": "80.1%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 120
+      },
+      "TGO": {
+        "name": "Togo",
+        "value": 38.4101608439072,
+        "display": "38.4%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 160
+      },
+      "TON": {
+        "name": "Tonga",
+        "value": 96.4681436818327,
+        "display": "96.5%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 75
+      },
+      "TTO": {
+        "name": "Trinidad and Tobago",
+        "value": 95.1243226711766,
+        "display": "95.1%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 83
+      },
+      "TUN": {
+        "name": "Tunisia",
+        "value": 98.1855117181526,
+        "display": "98.2%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 58
+      },
+      "TUR": {
+        "name": "Turkiye",
+        "value": 99.8583647109208,
+        "display": "99.9%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 17
+      },
+      "TKM": {
+        "name": "Turkmenistan",
+        "value": 99.572126491561,
+        "display": "99.6%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 28
+      },
+      "TCA": {
+        "name": "Turks and Caicos Islands",
+        "value": 93.24459929273,
+        "display": "93.2%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 91
+      },
+      "UGA": {
+        "name": "Uganda",
+        "value": 32.5544602012801,
+        "display": "32.6%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 165
+      },
+      "UKR": {
+        "name": "Ukraine",
+        "value": 97.9948532814959,
+        "display": "98%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 61
+      },
+      "ARE": {
+        "name": "United Arab Emirates",
+        "value": 98.972717889,
+        "display": "99%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 39
+      },
+      "GBR": {
+        "name": "United Kingdom",
+        "value": 99.0363966900702,
+        "display": "99%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 38
+      },
+      "USA": {
+        "name": "United States",
+        "value": 99.8582075339702,
+        "display": "99.9%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 18
+      },
+      "URY": {
+        "name": "Uruguay",
+        "value": 99.1307905468397,
+        "display": "99.1%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 37
+      },
+      "UZB": {
+        "name": "Uzbekistan",
+        "value": 95.2990891157787,
+        "display": "95.3%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 82
+      },
+      "VUT": {
+        "name": "Vanuatu",
+        "value": 50.7624219896683,
+        "display": "50.8%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 145
+      },
+      "VNM": {
+        "name": "Viet Nam",
+        "value": 98.4068017735999,
+        "display": "98.4%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 54
+      },
+      "PSE": {
+        "name": "West Bank and Gaza",
+        "value": 99.5804492546583,
+        "display": "99.6%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 27
+      },
+      "YEM": {
+        "name": "Yemen, Rep.",
+        "value": 86.2028438692929,
+        "display": "86.2%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 108
+      },
+      "ZMB": {
+        "name": "Zambia",
+        "value": 43.3021482587645,
+        "display": "43.3%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 154
+      },
+      "ZWE": {
+        "name": "Zimbabwe",
+        "value": 40.4295060198199,
+        "display": "40.4%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 157
+      }
+    }
+  },
+  "review": {
+    "errors": [],
+    "claims": [
+      {
+        "surface": "beat_0",
+        "text": "Armenia has 100% urban sanitation access.",
+        "isos": [
+          "ARM"
+        ],
+        "support": "ARM: 100.0",
+        "evidence": {
+          "ARM": {
+            "name": "Armenia",
+            "value": 100.0,
+            "display": "100%",
+            "year": 2024,
+            "unit": "%",
+            "rank": 1
+          }
+        }
+      },
+      {
+        "surface": "beat_0",
+        "text": "In DR Congo, only 21.8% of people have it.",
+        "isos": [
+          "COD"
+        ],
+        "support": "COD: 21.79802716305",
+        "evidence": {
+          "COD": {
+            "name": "Congo, Dem. Rep.",
+            "value": 21.79802716305,
+            "display": "21.8%",
+            "year": 2024,
+            "unit": "%",
+            "rank": 172
+          }
+        }
+      },
+      {
+        "surface": "beat_2",
+        "text": "Israel, Kuwait and Chile are at 100%.",
+        "isos": [
+          "ISR",
+          "KWT",
+          "CHL"
+        ],
+        "support": "ISR: 100.0, KWT: 100.0, CHL: 100.0",
+        "evidence": {
+          "ISR": {
+            "name": "Israel",
+            "value": 100.0,
+            "display": "100%",
+            "year": 2024,
+            "unit": "%",
+            "rank": 1
+          },
+          "KWT": {
+            "name": "Kuwait",
+            "value": 100.0,
+            "display": "100%",
+            "year": 2024,
+            "unit": "%",
+            "rank": 1
+          },
+          "CHL": {
+            "name": "Chile",
+            "value": 100.0,
+            "display": "100%",
+            "year": 2024,
+            "unit": "%",
+            "rank": 1
+          }
+        }
+      },
+      {
+        "surface": "beat_3",
+        "text": "India is at 87.4%.",
+        "isos": [
+          "IND"
+        ],
+        "support": "IND: 87.3801818139873",
+        "evidence": {
+          "IND": {
+            "name": "India",
+            "value": 87.3801818139873,
+            "display": "87.4%",
+            "year": 2024,
+            "unit": "%",
+            "rank": 105
+          }
+        }
+      },
+      {
+        "surface": "beat_3",
+        "text": "Nigeria is lower, at 59.1%.",
+        "isos": [
+          "NGA"
+        ],
+        "support": "NGA: 59.1206988327009",
+        "evidence": {
+          "NGA": {
+            "name": "Nigeria",
+            "value": 59.1206988327009,
+            "display": "59.1%",
+            "year": 2024,
+            "unit": "%",
+            "rank": 136
+          }
+        }
+      },
+      {
+        "surface": "beat_4",
+        "text": "DR Congo sits at the bottom at 21.8%.",
+        "isos": [
+          "COD"
+        ],
+        "support": "COD: 21.79802716305",
+        "evidence": {
+          "COD": {
+            "name": "Congo, Dem. Rep.",
+            "value": 21.79802716305,
+            "display": "21.8%",
+            "year": 2024,
+            "unit": "%",
+            "rank": 172
+          }
+        }
+      },
+      {
+        "surface": "title",
+        "text": "The Global Gap in Urban Sanitation",
+        "isos": [],
+        "support": "The title describes the topic of urban sanitation access.",
+        "method": "complete-surface-check",
+        "evidence": {}
+      },
+      {
+        "surface": "hook",
+        "text": "A STARK CONTRAST",
+        "isos": [],
+        "support": "The hook introduces the contrast between high and low access countries.",
+        "method": "complete-surface-check",
+        "evidence": {}
+      },
+      {
+        "surface": "description",
+        "text": "A visual contrast showing the gap between nations with universal urban sanitation and those with the lowest access levels.",
+        "isos": [],
+        "support": "The description accurately summarizes the visual content.",
+        "method": "complete-surface-check",
+        "evidence": {}
+      },
+      {
+        "surface": "beat_0",
+        "text": "Armenia has 100% urban sanitation access. In DR Congo, only 21.8% of people have it.",
+        "isos": [
+          "ARM",
+          "COD"
+        ],
+        "support": "Values for Armenia and DR Congo match the evidence.",
+        "method": "complete-surface-check",
+        "evidence": {
+          "ARM": {
+            "name": "Armenia",
+            "value": 100.0,
+            "display": "100%",
+            "year": 2024,
+            "unit": "%",
+            "rank": 1
+          },
+          "COD": {
+            "name": "Congo, Dem. Rep.",
+            "value": 21.79802716305,
+            "display": "21.8%",
+            "year": 2024,
+            "unit": "%",
+            "rank": 172
+          }
+        }
+      },
+      {
+        "surface": "beat_1",
+        "text": "This counts people using improved sanitation facilities that are not shared with other households.",
+        "isos": [],
+        "support": "The definition matches the provided evidence.",
+        "method": "complete-surface-check",
+        "evidence": {}
+      },
+      {
+        "surface": "beat_2",
+        "text": "Israel, Kuwait and Chile are at 100%. They have universal access for all urban residents.",
+        "isos": [
+          "ISR",
+          "KWT",
+          "CHL"
+        ],
+        "support": "Values for Israel, Kuwait, and Chile match the evidence.",
+        "method": "complete-surface-check",
+        "evidence": {
+          "ISR": {
+            "name": "Israel",
+            "value": 100.0,
+            "display": "100%",
+            "year": 2024,
+            "unit": "%",
+            "rank": 1
+          },
+          "KWT": {
+            "name": "Kuwait",
+            "value": 100.0,
+            "display": "100%",
+            "year": 2024,
+            "unit": "%",
+            "rank": 1
+          },
+          "CHL": {
+            "name": "Chile",
+            "value": 100.0,
+            "display": "100%",
+            "year": 2024,
+            "unit": "%",
+            "rank": 1
+          }
+        }
+      },
+      {
+        "surface": "beat_3",
+        "text": "India is at 87.4%. Nigeria is lower, at 59.1%.",
+        "isos": [
+          "IND",
+          "NGA"
+        ],
+        "support": "Values for India and Nigeria match the evidence.",
+        "method": "complete-surface-check",
+        "evidence": {
+          "IND": {
+            "name": "India",
+            "value": 87.3801818139873,
+            "display": "87.4%",
+            "year": 2024,
+            "unit": "%",
+            "rank": 105
+          },
+          "NGA": {
+            "name": "Nigeria",
+            "value": 59.1206988327009,
+            "display": "59.1%",
+            "year": 2024,
+            "unit": "%",
+            "rank": 136
+          }
+        }
+      },
+      {
+        "surface": "beat_4",
+        "text": "DR Congo sits at the bottom at 21.8%.",
+        "isos": [
+          "COD"
+        ],
+        "support": "Value for DR Congo matches the evidence.",
+        "method": "complete-surface-check",
+        "evidence": {
+          "COD": {
+            "name": "Congo, Dem. Rep.",
+            "value": 21.79802716305,
+            "display": "21.8%",
+            "year": 2024,
+            "unit": "%",
+            "rank": 172
+          }
+        }
+      },
+      {
+        "surface": "beat_5",
+        "text": "Armenia has 4.6 times the access that DR Congo has.",
+        "isos": [
+          "ARM",
+          "COD"
+        ],
+        "support": "The calculation is mathematically accurate based on the provided values.",
+        "method": "complete-surface-check",
+        "evidence": {
+          "ARM": {
+            "name": "Armenia",
+            "value": 100.0,
+            "display": "100%",
+            "year": 2024,
+            "unit": "%",
+            "rank": 1
+          },
+          "COD": {
+            "name": "Congo, Dem. Rep.",
+            "value": 21.79802716305,
+            "display": "21.8%",
+            "year": 2024,
+            "unit": "%",
+            "rank": 172
+          }
+        }
+      },
+      {
+        "surface": "beat_6",
+        "text": "Does your neighborhood have access to a private, improved toilet?",
+        "isos": [],
+        "support": "This is a rhetorical question.",
+        "method": "complete-surface-check",
+        "evidence": {}
+      },
+      {
+        "surface": "card_6",
+        "text": [
+          "Does your home have access?",
+          "Urban population with basic sanitation"
+        ],
+        "isos": [],
+        "support": "The card text matches the visual plan.",
+        "method": "complete-surface-check",
+        "evidence": {}
+      }
+    ],
+    "surface_checks": {
+      "title": {
+        "supported": true,
+        "reason": "The title describes the topic of urban sanitation access.",
+        "isos": []
+      },
+      "hook": {
+        "supported": true,
+        "reason": "The hook introduces the contrast between high and low access countries.",
+        "isos": []
+      },
+      "description": {
+        "supported": true,
+        "reason": "The description accurately summarizes the visual content.",
+        "isos": []
+      },
+      "beat_0": {
+        "supported": true,
+        "reason": "Values for Armenia and DR Congo match the evidence.",
+        "isos": [
+          "ARM",
+          "COD"
+        ]
+      },
+      "beat_1": {
+        "supported": true,
+        "reason": "The definition matches the provided evidence.",
+        "isos": []
+      },
+      "beat_2": {
+        "supported": true,
+        "reason": "Values for Israel, Kuwait, and Chile match the evidence.",
+        "isos": [
+          "ISR",
+          "KWT",
+          "CHL"
+        ]
+      },
+      "beat_3": {
+        "supported": true,
+        "reason": "Values for India and Nigeria match the evidence.",
+        "isos": [
+          "IND",
+          "NGA"
+        ]
+      },
+      "beat_4": {
+        "supported": true,
+        "reason": "Value for DR Congo matches the evidence.",
+        "isos": [
+          "COD"
+        ]
+      },
+      "beat_5": {
+        "supported": true,
+        "reason": "The calculation is mathematically accurate based on the provided values.",
+        "isos": [
+          "ARM",
+          "COD"
+        ]
+      },
+      "beat_6": {
+        "supported": true,
+        "reason": "This is a rhetorical question.",
+        "isos": []
+      },
+      "card_6": {
+        "supported": true,
+        "reason": "The card text matches the visual plan.",
+        "isos": []
+      }
+    },
+    "warnings": [
+      {
+        "surface": "beat_5",
+        "claim": "Armenia has 4.6 times the access that DR Congo has.",
+        "reason": "100 / 21.79802716305 is approximately 4.5875, which rounds to 4.6, but the claim is based on a calculation of two specific values that are not explicitly defined as a ratio in the evidence.",
+        "severity": "info"
+      }
+    ]
+  },
+  "script_sha256": "09d28910eb246601acda60893e1103d09baf8086fc717fc6ff3506f1eeb5573d",
+  "data_sha256": "d788374571bc0b65ffff2f9bef578fba3e362ccbe19c376a2ddb59f5c05c2ea5",
+  "reviewer_model": "gemini-3.1-flash-lite"
+}

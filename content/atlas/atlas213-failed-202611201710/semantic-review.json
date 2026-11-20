@@ -1,0 +1,140 @@
+{
+  "errors": [
+    {
+      "surface": "beat_1",
+      "claim": "India safeguards almost all its young children before their second birthday.",
+      "reason": "The indicator measures vaccination before 12 months or at any time before the survey, not specifically before the second birthday.",
+      "severity": "factual"
+    },
+    {
+      "surface": "beat_3",
+      "claim": "leaving most young children without a dose.",
+      "reason": "With 23% coverage, 77% are unvaccinated, which is most, but the claim implies this is a direct consequence of being the lowest, whereas the indicator definition does not provide causal history.",
+      "severity": "factual"
+    }
+  ],
+  "claims": [
+    {
+      "surface": "beat_0",
+      "text": "India protects 97% of children against measles.",
+      "isos": [
+        "IND"
+      ],
+      "support": "IND: 97%"
+    },
+    {
+      "surface": "beat_0",
+      "text": "Montenegro sits at just 23%.",
+      "isos": [
+        "MNE"
+      ],
+      "support": "MNE: 23%"
+    },
+    {
+      "surface": "beat_2",
+      "text": "India has 4.2 times Montenegro's protection.",
+      "isos": [
+        "IND",
+        "MNE"
+      ],
+      "support": "97 / 23 = 4.217"
+    },
+    {
+      "surface": "beat_3",
+      "text": "Montenegro is the world's lowest",
+      "isos": [
+        "MNE"
+      ],
+      "support": "MNE rank 189 of 189"
+    },
+    {
+      "surface": "beat_4",
+      "text": "The median country hits 90%.",
+      "isos": [],
+      "support": "Median of 189 values is 90%"
+    },
+    {
+      "surface": "beat_4",
+      "text": "Germany has 96%, Japan 95%, Brazil 93%, and USA 92%.",
+      "isos": [
+        "DEU",
+        "JPN",
+        "BRA",
+        "USA"
+      ],
+      "support": "DEU: 96%, JPN: 95%, BRA: 93%, USA: 92%"
+    }
+  ],
+  "surface_checks": {
+    "title": {
+      "supported": true,
+      "reason": "The title frames a comparison between two countries with vastly different coverage rates.",
+      "isos": [
+        "IND",
+        "MNE"
+      ]
+    },
+    "hook": {
+      "supported": true,
+      "reason": "The hook introduces the topic of measles protection.",
+      "isos": []
+    },
+    "description": {
+      "supported": true,
+      "reason": "The description accurately reflects the high global coverage and Montenegro's outlier status.",
+      "isos": [
+        "MNE"
+      ]
+    },
+    "beat_0": {
+      "supported": true,
+      "reason": "Values match the evidence.",
+      "isos": [
+        "IND",
+        "MNE"
+      ]
+    },
+    "beat_1": {
+      "supported": false,
+      "reason": "The indicator definition does not specify the second birthday as the cutoff.",
+      "isos": [
+        "IND"
+      ]
+    },
+    "beat_2": {
+      "supported": true,
+      "reason": "Calculation is mathematically accurate based on the evidence.",
+      "isos": [
+        "IND",
+        "MNE"
+      ]
+    },
+    "beat_3": {
+      "supported": false,
+      "reason": "While the rank is correct, the causal claim about the consequence is not supported by the definition.",
+      "isos": [
+        "MNE"
+      ]
+    },
+    "beat_4": {
+      "supported": true,
+      "reason": "Median and individual country values are correct.",
+      "isos": [
+        "DEU",
+        "JPN",
+        "BRA",
+        "USA"
+      ]
+    },
+    "beat_5": {
+      "supported": true,
+      "reason": "This is a rhetorical question.",
+      "isos": []
+    },
+    "card_5": {
+      "supported": true,
+      "reason": "The card displays the indicator and source.",
+      "isos": []
+    }
+  }
+}
