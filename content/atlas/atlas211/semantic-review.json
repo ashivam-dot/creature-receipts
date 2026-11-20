@@ -1,0 +1,166 @@
+{
+  "errors": [],
+  "claims": [
+    {
+      "surface": "title",
+      "text": "Places Ranked by Severe Hunger",
+      "isos": [],
+      "support": "The evidence provides ranked data for 151 mapped countries and territories under indicator SN.ITK.SVFI.ZS representing Severe Food Insecurity."
+    },
+    {
+      "surface": "hook",
+      "text": "THE HUNGER GAP",
+      "isos": [],
+      "support": "The indicator measures severe food insecurity rates across the mapped universe."
+    },
+    {
+      "surface": "description",
+      "text": "A documentary-style look at global food insecurity, comparing the zero-percent rates of Indonesia and Italy to the extreme hunger in South Sudan.",
+      "isos": [
+        "IDN",
+        "ITA",
+        "SSD"
+      ],
+      "support": "Indonesia (IDN) is 0.0% (rank 144), Italy (ITA) is 0.0% (rank 144), and South Sudan (SSD) is 62.9% (rank 1)."
+    },
+    {
+      "surface": "beat_0",
+      "text": "Indonesia reports 0% severe food insecurity. In South Sudan, it is 62.9%.",
+      "isos": [
+        "IDN",
+        "SSD"
+      ],
+      "support": "Indonesia value is 0% (IDN), South Sudan value is 62.9% (SSD)."
+    },
+    {
+      "surface": "beat_1",
+      "text": "This counts households forced to skip meals or go whole days without eating due to a lack of money.",
+      "isos": [],
+      "support": "Definition matches: 'A household is classified as severely food insecure when at least one adult in the household has reported to have been exposed... to have skipped meals... or having to go for a whole day without eating because of a lack of money or other resources.'"
+    },
+    {
+      "surface": "beat_2",
+      "text": "Brazil has just 0.6%, while the USA has 1.1%.",
+      "isos": [
+        "BRA",
+        "USA"
+      ],
+      "support": "Brazil value is 0.6% (BRA), United States value is 1.1% (USA)."
+    },
+    {
+      "surface": "beat_3",
+      "text": "Climbing higher: Kenya has 26.5%, Afghanistan has 30.2%, and Haiti has 45.4%.",
+      "isos": [
+        "KEN",
+        "AFG",
+        "HTI"
+      ],
+      "support": "Kenya value is 26.5% (KEN), Afghanistan value is 30.2% (AFG), Haiti value is 45.4% (HTI)."
+    },
+    {
+      "surface": "beat_4",
+      "text": "South Sudan has 16 times the severe food insecurity the UK has. The UK has 4%.",
+      "isos": [
+        "SSD",
+        "GBR"
+      ],
+      "support": "South Sudan is 62.9% and United Kingdom is 4.0% (62.9 / 4.0 = 15.725, which rounds to 16 times); UK value is 4%."
+    },
+    {
+      "surface": "beat_5",
+      "text": "At the very top, South Sudan. 62.9% of the population faces severe hunger.",
+      "isos": [
+        "SSD"
+      ],
+      "support": "South Sudan rank is 1 (top) and value is 62.9%."
+    },
+    {
+      "surface": "beat_6",
+      "text": "How would you help end severe hunger?",
+      "isos": [],
+      "support": "Closing question about severe food insecurity."
+    },
+    {
+      "surface": "card_6",
+      "text": "End severe hunger? Severe Food Insecurity (%)",
+      "isos": [],
+      "support": "Card reflects the indicator name and topic."
+    }
+  ],
+  "surface_checks": {
+    "title": {
+      "supported": true,
+      "reason": "Indicator provides ranks for places.",
+      "isos": []
+    },
+    "hook": {
+      "supported": true,
+      "reason": "The topic is severe food insecurity gaps.",
+      "isos": []
+    },
+    "description": {
+      "supported": true,
+      "reason": "Indonesia and Italy are 0%, South Sudan is 62.9%.",
+      "isos": [
+        "IDN",
+        "ITA",
+        "SSD"
+      ]
+    },
+    "beat_0": {
+      "supported": true,
+      "reason": "Indonesia is 0% and South Sudan is 62.9%.",
+      "isos": [
+        "IDN",
+        "SSD"
+      ]
+    },
+    "beat_1": {
+      "supported": true,
+      "reason": "Matches the official FIES definition in evidence.",
+      "isos": []
+    },
+    "beat_2": {
+      "supported": true,
+      "reason": "Brazil is 0.6% and USA is 1.1%.",
+      "isos": [
+        "BRA",
+        "USA"
+      ]
+    },
+    "beat_3": {
+      "supported": true,
+      "reason": "Kenya is 26.5%, Afghanistan is 30.2%, Haiti is 45.4%.",
+      "isos": [
+        "KEN",
+        "AFG",
+        "HTI"
+      ]
+    },
+    "beat_4": {
+      "supported": true,
+      "reason": "South Sudan (62.9%) is ~16x UK (4.0%); UK is 4%.",
+      "isos": [
+        "SSD",
+        "GBR"
+      ]
+    },
+    "beat_5": {
+      "supported": true,
+      "reason": "South Sudan is rank 1 with 62.9%.",
+      "isos": [
+        "SSD"
+      ]
+    },
+    "beat_6": {
+      "supported": true,
+      "reason": "Engagement question consistent with topic.",
+      "isos": []
+    },
+    "card_6": {
+      "supported": true,
+      "reason": "Matches indicator label and topic.",
+      "isos": []
+    }
+  }
+}

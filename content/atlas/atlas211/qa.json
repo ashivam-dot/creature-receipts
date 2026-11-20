@@ -1,0 +1,25 @@
+{
+  "version": 1,
+  "passed": true,
+  "checked_at": "2026-11-20T09:28:17.845937+00:00",
+  "quality_module_sha256": "db7be8ac57c839f39a10676f1a70580a83ea346f59c27f19868d09c272def14c",
+  "media_sha256": "ad2ab7a6dede75d5663597c9f6ed7c8ad3bf5db510065880148d4550248ecf50",
+  "script_sha256": "dde2eee5d0d12554d4ff1194a71b25b60a3455b9e01c90040c665f4c132f3e61",
+  "data_sha256": "0aaca84bce48f479e585266332e2a564f5bc85eff5b1603395566d6bd274d391",
+  "claims_sha256": "f136b60747c54be46f152ea03783d419f407a078d6f2d9cd5dc5b02e907b6f32",
+  "contact_sha256": "076b1b653ae90f4763f9f523cb893e78dcb7cd41e1a8913a64e8bef36c325e3a",
+  "duration": 45.17,
+  "integrated_lufs": -14.1,
+  "true_peak_dbfs": -1.5,
+  "speech": {
+    "heard": "Indonesia reports 0% severe food insecurity. In South Sudan, it is 62.9%. This counts households forced to skip meals, or go whole days without eating due to a lack of money. Brazil has just 0.6%, while the USA has 1.1%. Climbing higher, Kenya has 26.5%, Afghanistan has 30.2%, and Haiti has 45.4%. South Sudan has 16 times the severe food insecurity the U.K. has, the U.K. has 4%. At the very top, South Sudan, 62.9% of the population faces severe hunger. How would you help end severe hunger?",
+    "model": "small.en",
+    "media_sha256": "ad2ab7a6dede75d5663597c9f6ed7c8ad3bf5db510065880148d4550248ecf50",
+    "primary_differences": [],
+    "differences": []
+  },
+  "warnings": [
+    "duration 45.2s outside editorial 30–45s target"
+  ],
+  "speech_policy": "material-hard-entity-polarity-strict-minor-spelling-warning"
+}

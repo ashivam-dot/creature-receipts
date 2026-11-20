@@ -1,0 +1,25 @@
+{
+  "version": 1,
+  "passed": true,
+  "checked_at": "2026-11-20T09:45:26.185858+00:00",
+  "quality_module_sha256": "db7be8ac57c839f39a10676f1a70580a83ea346f59c27f19868d09c272def14c",
+  "media_sha256": "107de286eedc7ee31448cecfdd78cf26c66308457d6a52edb1fc2fe2c9142ea2",
+  "script_sha256": "f43417334a603871590412a021ab20fe7ca4e14e6a7884e31ca026c2983c66b0",
+  "data_sha256": "322fe6bfd74811d3f00d602e364901a67efa0dc423ec7f7b36870fc977328b0e",
+  "claims_sha256": "8b8d0fa2fdc8d93fd9a353ff9aef87557fec63647ca0d9c9d25c2c4d3454dc27",
+  "contact_sha256": "006c1a928aa68e8256fbaeeea91f0a7a1d9555fcd7c51c866d7f9e2016ccea4f",
+  "duration": 46.7,
+  "integrated_lufs": -14.5,
+  "true_peak_dbfs": -1.4,
+  "speech": {
+    "heard": "Sierra Leone has a gross enrollment ratio of 162%, the USA has 97%. In Sierra Leone, this ratio counts total enrollment, regardless of age, against the official school-age population. Sierra Leone is the world's highest with a gross enrollment ratio of 162%. Somalia is the world's lowest at 21%. India has a gross enrollment ratio of 111%, the USA has 97%. Rwanda has a gross enrollment ratio of 150%, Malawi has 139%, and Madagascar has 133%. China has 99.6%. What is the primary school enrollment rate in your country?",
+    "model": "small.en",
+    "media_sha256": "107de286eedc7ee31448cecfdd78cf26c66308457d6a52edb1fc2fe2c9142ea2",
+    "primary_differences": [],
+    "differences": []
+  },
+  "warnings": [
+    "duration 46.7s outside editorial 30–45s target"
+  ],
+  "speech_policy": "material-hard-entity-polarity-strict-minor-spelling-warning"
+}

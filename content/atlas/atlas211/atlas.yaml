@@ -1,0 +1,83 @@
+id: atlas211
+title: Places Ranked by Severe Hunger
+format: rank_ladder
+hook_text: THE HUNGER GAP
+description: A documentary-style look at global food insecurity, comparing the zero-percent rates of Indonesia and
+  Italy to the extreme hunger in South Sudan.
+hashtags:
+- '#health'
+- '#hunger'
+- '#geography'
+tags:
+- health
+- share of people facing severe hunger
+- countries ranked by share of people facing severe hunger
+- South Sudan
+- Armenia
+- world map
+- geography
+- atlas in numbers
+sources:
+- https://data.worldbank.org/indicator/SN.ITK.SVFI.ZS
+dataset:
+  kind: worldbank
+  indicator: SN.ITK.SVFI.ZS
+  label: Share of people facing severe hunger
+  unit: '%'
+  source: World Bank
+  min_year: 2019
+scale:
+  edges:
+  - 2.0
+  - 5.0
+  - 12.0
+  - 25.0
+  labels:
+  - Under 2%
+  - 2-5%
+  - 5-12%
+  - 12-25%
+  - Over 25%
+value_format: '{v:.1f}%'
+beats:
+- text: Indonesia reports 0% severe food insecurity. In South Sudan, it is 62.9%.
+  shot:
+    callouts:
+    - IDN
+    - SSD
+- text: This counts households forced to skip meals or go whole days without eating due to a lack of money.
+  shot:
+    kind: country
+    iso: SSD
+  basis: A household is classified as severely food insecure when at least one adult in the household has reported
+    to have been exposed, at times during the year, to several of the most severe experiences described in the FIES
+    questions, such as to have been forced to reduce the quantity of the food, to have skipped meals, having gone
+    hungry, or having to go for a whole day without eating because of a lack of money or other resources.
+- text: Brazil has just 0.6%, while the USA has 1.1%.
+  shot:
+    kind: group
+    isos:
+    - BRA
+    - USA
+- text: 'Climbing higher: Kenya has 26.5%, Afghanistan has 30.2%, and Haiti has 45.4%.'
+  shot:
+    kind: rank
+    isos:
+    - KEN
+    - AFG
+    - HTI
+- text: South Sudan has 16 times the severe food insecurity the UK has. The UK has 4%.
+  shot:
+    callouts:
+    - SSD
+    - GBR
+- text: At the very top, South Sudan. 62.9% of the population faces severe hunger.
+  shot:
+    kind: country
+    iso: SSD
+- text: How would you help end severe hunger?
+  shot:
+    kind: card
+    lines:
+    - End severe hunger?
+    - Severe Food Insecurity (%)

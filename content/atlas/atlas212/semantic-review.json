@@ -1,0 +1,175 @@
+{
+  "errors": [],
+  "claims": [
+    {
+      "surface": "title",
+      "text": "Primary School Enrollment: Where 100% Is Just the Start",
+      "isos": [],
+      "support": "Gross enrollment ratio is the ratio of total enrollment, regardless of age, to the population of the age group that officially corresponds to the level of education shown."
+    },
+    {
+      "surface": "hook",
+      "text": "SCHOOL ENROLLMENT GAP",
+      "isos": [],
+      "support": "Gross enrollment ratio is the ratio of total enrollment, regardless of age, to the population of the age group that officially corresponds to the level of education shown."
+    },
+    {
+      "surface": "description",
+      "text": "An exploration of global primary school enrollment ratios, explaining how some nations exceed 100% by counting students of all ages.",
+      "isos": [],
+      "support": "Gross enrollment ratio is the ratio of total enrollment, regardless of age, to the population of the age group that officially corresponds to the level of education shown."
+    },
+    {
+      "surface": "beat_0",
+      "text": "Sierra Leone has a gross enrollment ratio of 162%. The USA has 97%.",
+      "isos": [
+        "SLE",
+        "USA"
+      ],
+      "support": "SLE value 162.123997594776, display 162%; USA value 96.9717330932617, display 97%"
+    },
+    {
+      "surface": "beat_1",
+      "text": "In Sierra Leone, this ratio counts total enrollment, regardless of age, against the official school-age population.",
+      "isos": [
+        "SLE"
+      ],
+      "support": "Gross enrollment ratio is the ratio of total enrollment, regardless of age, to the population of the age group that officially corresponds to the level of education shown."
+    },
+    {
+      "surface": "beat_2",
+      "text": "Sierra Leone is the world's highest with a gross enrollment ratio of 162%.",
+      "isos": [
+        "SLE"
+      ],
+      "support": "SLE rank 1, value 162.123997594776, display 162%"
+    },
+    {
+      "surface": "beat_3",
+      "text": "Somalia is the world's lowest at 21%.",
+      "isos": [
+        "SOM"
+      ],
+      "support": "SOM rank 186, value 20.9155502319336, display 21%"
+    },
+    {
+      "surface": "beat_4",
+      "text": "India has a gross enrollment ratio of 111%. The USA has 97%.",
+      "isos": [
+        "IND",
+        "USA"
+      ],
+      "support": "IND value 111.033783181676, display 111%; USA value 96.9717330932617, display 97%"
+    },
+    {
+      "surface": "beat_5",
+      "text": "Rwanda has a gross enrollment ratio of 150%, Malawi has 139%, and Madagascar has 133%.",
+      "isos": [
+        "RWA",
+        "MWI",
+        "MDG"
+      ],
+      "support": "RWA value 149.572183149389, display 150%; MWI value 139.016258677384, display 139%; MDG value 132.73958355273, display 133%"
+    },
+    {
+      "surface": "beat_6",
+      "text": "China has 99.6%.",
+      "isos": [
+        "CHN"
+      ],
+      "support": "CHN value 99.644962886981, display 99.6%"
+    },
+    {
+      "surface": "beat_7",
+      "text": "What is the primary school enrollment rate in your country?",
+      "isos": [],
+      "support": "Gross enrollment ratio is the ratio of total enrollment, regardless of age, to the population of the age group that officially corresponds to the level of education shown."
+    },
+    {
+      "surface": "card_7",
+      "text": "Your country's rate? Gross Primary Enrollment",
+      "isos": [],
+      "support": "Gross enrollment ratio is the ratio of total enrollment, regardless of age, to the population of the age group that officially corresponds to the level of education shown."
+    }
+  ],
+  "surface_checks": {
+    "title": {
+      "supported": true,
+      "reason": "Title accurately reflects gross primary enrollment ratios exceeding 100%.",
+      "isos": []
+    },
+    "hook": {
+      "supported": true,
+      "reason": "Hook introduces school enrollment topic accurately.",
+      "isos": []
+    },
+    "description": {
+      "supported": true,
+      "reason": "Description correctly explains the definition of gross enrollment ratio from evidence.",
+      "isos": []
+    },
+    "beat_0": {
+      "supported": true,
+      "reason": "Sierra Leone (162%) and USA (97%) match the evidence values.",
+      "isos": [
+        "SLE",
+        "USA"
+      ]
+    },
+    "beat_1": {
+      "supported": true,
+      "reason": "Matches the exact definition provided in the evidence.",
+      "isos": [
+        "SLE"
+      ]
+    },
+    "beat_2": {
+      "supported": true,
+      "reason": "Sierra Leone is ranked 1st in the evidence with 162%.",
+      "isos": [
+        "SLE"
+      ]
+    },
+    "beat_3": {
+      "supported": true,
+      "reason": "Somalia is ranked 186th (lowest) with 21%.",
+      "isos": [
+        "SOM"
+      ]
+    },
+    "beat_4": {
+      "supported": true,
+      "reason": "India (111%) and USA (97%) match the evidence values.",
+      "isos": [
+        "IND",
+        "USA"
+      ]
+    },
+    "beat_5": {
+      "supported": true,
+      "reason": "Rwanda (150%), Malawi (139%), and Madagascar (133%) match the evidence values.",
+      "isos": [
+        "RWA",
+        "MWI",
+        "MDG"
+      ]
+    },
+    "beat_6": {
+      "supported": true,
+      "reason": "China value (99.6%) matches the evidence.",
+      "isos": [
+        "CHN"
+      ]
+    },
+    "beat_7": {
+      "supported": true,
+      "reason": "Outro question is stylistic and supported by context.",
+      "isos": []
+    },
+    "card_7": {
+      "supported": true,
+      "reason": "Card text matches indicator and topic.",
+      "isos": []
+    }
+  }
+}
