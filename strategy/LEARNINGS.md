@@ -141,17 +141,19 @@ Refreshed by every producer run (`atlas.stats`) from the channel's public feed o
 | atlas178 Is INDIA Near the Top for School Completion? | spotlight | 2026-11-14 00:00 UTC | 1 | – | 0.0 |
 | atlas179 Places With the Smallest Labor Gaps | versus | 2026-11-15 17:00 UTC | 1 | – | 0.0 |
 | atlas180 Places Ranked by Fossil Fuel Electricity Reliance | rank_ladder | 2026-11-16 17:00 UTC | 7 | – | 0.1 |
-| atlas181 Which Country Has the MOST Revenue From Sales Taxes? | odd_one_out | 2026-11-16 00:00 UTC | 2 | – | 0.0 |
+| atlas181 Which Country Has the MOST Revenue From Sales Taxes? | odd_one_out | 2026-11-16 00:00 UTC | 3 | – | 0.0 |
 | atlas182 The Places Most Dependent on Their Forests | map_reveal | 2026-11-15 21:00 UTC | 4 | – | 0.0 |
 | atlas183 Is INDIA the Highest for Underweight Babies? | spotlight | 2026-11-16 21:00 UTC | 1 | – | 0.0 |
 | atlas184 East Timor vs Qatar: Natural Gas Rents | versus | 2026-11-17 00:00 UTC | 6 | – | 0.1 |
 | atlas185 Where Women Are Most Likely to Hire Employees | map_reveal | 2026-11-17 21:00 UTC | 1 | – | 0.0 |
 | atlas186 Places Ranked by Rural Population Growth | rank_ladder | 2026-11-17 17:00 UTC | 6 | – | 0.1 |
 | atlas187 Which Country Has the MOST Stable Prices? | odd_one_out | 2026-11-18 00:00 UTC | 0 | – | 0.0 |
-| atlas188 Eswatini vs USA: Dependency on Trade Taxes | versus | 2026-11-19 00:00 UTC | 1 | – | 0.1 |
-| atlas190 The Top Places for Middle Class Income | rank_ladder | 2026-11-18 21:00 UTC | 1 | – | 0.0 |
-| atlas191 Who Pays for Healthcare in YOUR Country? | map_reveal | 2026-11-18 17:00 UTC | 2 | – | 0.1 |
+| atlas188 Eswatini vs USA: Dependency on Trade Taxes | versus | 2026-11-19 00:00 UTC | 1 | – | 0.0 |
+| atlas190 The Top Places for Middle Class Income | rank_ladder | 2026-11-18 21:00 UTC | 2 | – | 0.1 |
+| atlas191 Who Pays for Healthcare in YOUR Country? | map_reveal | 2026-11-18 17:00 UTC | 3 | – | 0.1 |
 | atlas193 Which Country Reinvests the MOST in Fixed Assets? | odd_one_out | 2026-11-19 17:00 UTC | 0 | – | 0.0 |
+| atlas194 USA vs Nigeria: The Doctoral Degree Gap | versus | 2026-11-19 21:00 UTC | 1 | – | 0.2 |
+| atlas196 Places Ranked by Global Trade Share of GDP | rank_ladder | 2026-11-20 00:00 UTC | 0 | – | 0.0 |
 
 ## Log
 

@@ -1,0 +1,115 @@
+{
+  "errors": [],
+  "claims": [
+    {
+      "surface": "beat_0",
+      "text": "In Finland, 100% of the poorest adults have an account. In Yemen, only 6.5% do.",
+      "isos": [
+        "FIN",
+        "YEM"
+      ],
+      "support": "Finland: 100.0%, Yemen: 6.50493974547528%"
+    },
+    {
+      "surface": "beat_1",
+      "text": "In the USA, 95.6% of the poorest citizens hold an account, well above the global median.",
+      "isos": [
+        "USA"
+      ],
+      "support": "United States: 95.5767682441686%"
+    },
+    {
+      "surface": "beat_2",
+      "text": "India has 86.3%, counting anyone who used a bank, shared account, or mobile money service.",
+      "isos": [
+        "IND"
+      ],
+      "support": "India: 86.3166812876253%"
+    },
+    {
+      "surface": "beat_3",
+      "text": "China has 82.7%, while Brazil has 78.1%.",
+      "isos": [
+        "CHN",
+        "BRA"
+      ],
+      "support": "China: 82.7432333438411%, Brazil: 78.0975446578644%"
+    },
+    {
+      "surface": "beat_4",
+      "text": "At the bottom, Madagascar has 14.1%, Pakistan has 13.6%, and Yemen has 6.5%.",
+      "isos": [
+        "MDG",
+        "PAK",
+        "YEM"
+      ],
+      "support": "Madagascar: 14.1117475374701%, Pakistan: 13.6062537929128%, Yemen: 6.50493974547528%"
+    }
+  ],
+  "surface_checks": {
+    "title": {
+      "supported": true,
+      "reason": "Title is a stylistic framing question.",
+      "isos": []
+    },
+    "hook": {
+      "supported": true,
+      "reason": "Matches indicator description.",
+      "isos": []
+    },
+    "description": {
+      "supported": true,
+      "reason": "Accurately describes indicator definition, universe count of 142, and poorest 40% demographic.",
+      "isos": []
+    },
+    "beat_0": {
+      "supported": true,
+      "reason": "Finland is 100%, Yemen is 6.5% in EVIDENCE.",
+      "isos": [
+        "FIN",
+        "YEM"
+      ]
+    },
+    "beat_1": {
+      "supported": true,
+      "reason": "USA value is 95.6% in EVIDENCE.",
+      "isos": [
+        "USA"
+      ]
+    },
+    "beat_2": {
+      "supported": true,
+      "reason": "India value is 86.3% and matches the definition terms.",
+      "isos": [
+        "IND"
+      ]
+    },
+    "beat_3": {
+      "supported": true,
+      "reason": "China is 82.7% and Brazil is 78.1% in EVIDENCE.",
+      "isos": [
+        "CHN",
+        "BRA"
+      ]
+    },
+    "beat_4": {
+      "supported": true,
+      "reason": "Madagascar, Pakistan, and Yemen values match EVIDENCE.",
+      "isos": [
+        "MDG",
+        "PAK",
+        "YEM"
+      ]
+    },
+    "beat_5": {
+      "supported": true,
+      "reason": "Stylistic closing question.",
+      "isos": []
+    },
+    "card_5": {
+      "supported": true,
+      "reason": "Matches indicator title and source timeframe.",
+      "isos": []
+    }
+  }
+}

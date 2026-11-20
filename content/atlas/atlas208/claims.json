@@ -1531,13 +1531,38 @@
     "errors": [],
     "claims": [
       {
-        "surface": "beat_0",
-        "text": "Healthcare in the United States costs 13,473 per person. Sudan spends 28.",
+        "surface": "title",
+        "text": "Which Country Has the MOST Health Funding?",
+        "isos": [],
+        "support": "Global Health Expenditure Database, United States rank 1 with 13,473",
+        "evidence": {}
+      },
+      {
+        "surface": "hook",
+        "text": "THE TOP SPENDER",
+        "isos": [
+          "USA"
+        ],
+        "support": "United States rank 1 with 13,473",
+        "evidence": {
+          "USA": {
+            "name": "United States",
+            "value": 13473.1932166645,
+            "display": "$13,473",
+            "year": 2023,
+            "unit": "international $",
+            "rank": 1
+          }
+        }
+      },
+      {
+        "surface": "description",
+        "text": "A cinematic data story comparing global healthcare spending, highlighting the massive gap between the USA and Sudan.",
         "isos": [
           "USA",
           "SDN"
         ],
-        "support": "USA value is 13473.19 (display $13,473), SDN value is 28.2618 (display $28).",
+        "support": "USA value 13,473.19, Sudan value 28.26",
         "evidence": {
           "USA": {
             "name": "United States",
@@ -1558,15 +1583,22 @@
         }
       },
       {
-        "surface": "beat_2",
-        "text": "Is it Switzerland at 10,602, Germany at 8,826, or China?",
+        "surface": "beat_0",
+        "text": "One major nation has a massive lead in health funding. It is not Switzerland.",
         "isos": [
-          "CHE",
-          "DEU",
-          "CHN"
+          "USA",
+          "CHE"
         ],
-        "support": "CHE value is 10601.93 ($10,602), DEU value is 8825.61 ($8,826), CHN value is 1486.88 ($1,487).",
+        "support": "USA rank 1 ($13,473), Switzerland rank 2 ($10,602)",
         "evidence": {
+          "USA": {
+            "name": "United States",
+            "value": 13473.1932166645,
+            "display": "$13,473",
+            "year": 2023,
+            "unit": "international $",
+            "rank": 1
+          },
           "CHE": {
             "name": "Switzerland",
             "value": 10601.9331816578,
@@ -1574,213 +1606,189 @@
             "year": 2023,
             "unit": "international $",
             "rank": 2
-          },
-          "DEU": {
-            "name": "Germany",
-            "value": 8825.61480783196,
-            "display": "$8,826",
-            "year": 2024,
-            "unit": "international $",
-            "rank": 5
-          },
-          "CHN": {
-            "name": "China",
-            "value": 1486.88389429767,
-            "display": "$1,487",
-            "year": 2023,
-            "unit": "international $",
-            "rank": 71
-          }
-        }
-      },
-      {
-        "surface": "beat_3",
-        "text": "China is the surprise, spending 1,487.",
-        "isos": [
-          "CHN"
-        ],
-        "support": "CHN value is 1486.88389429767, display $1,487.",
-        "evidence": {
-          "CHN": {
-            "name": "China",
-            "value": 1486.88389429767,
-            "display": "$1,487",
-            "year": 2023,
-            "unit": "international $",
-            "rank": 71
-          }
-        }
-      },
-      {
-        "surface": "beat_4",
-        "text": "The United States is the world's highest, at 13,473.",
-        "isos": [
-          "USA"
-        ],
-        "support": "USA rank is 1 with value 13473.1932166645, display $13,473.",
-        "evidence": {
-          "USA": {
-            "name": "United States",
-            "value": 13473.1932166645,
-            "display": "$13,473",
-            "year": 2023,
-            "unit": "international $",
-            "rank": 1
-          }
-        }
-      },
-      {
-        "surface": "beat_5",
-        "text": "Sudan is the lowest at 28. It counts current expenditures on health per person.",
-        "isos": [
-          "SDN"
-        ],
-        "support": "SDN rank is 189 (last) with value 28.261876902732, display $28. Definition matches current expenditures on health per capita.",
-        "evidence": {
-          "SDN": {
-            "name": "Sudan",
-            "value": 28.261876902732,
-            "display": "$28",
-            "year": 2023,
-            "unit": "international $",
-            "rank": 189
-          }
-        }
-      },
-      {
-        "surface": "title",
-        "text": "Which Country Spends the MOST on Healthcare?",
-        "isos": [],
-        "support": "Title is a framing question about the indicator maximum, which is supported by ranks.",
-        "method": "complete-surface-check",
-        "evidence": {}
-      },
-      {
-        "surface": "hook",
-        "text": "GLOBAL HEALTH DIVIDE",
-        "isos": [],
-        "support": "Stylistic intro framing.",
-        "method": "complete-surface-check",
-        "evidence": {}
-      },
-      {
-        "surface": "description",
-        "text": "A look at the massive global disparity in annual healthcare spending per person.",
-        "isos": [],
-        "support": "Accurately describes healthcare spending per person disparity.",
-        "method": "complete-surface-check",
-        "evidence": {}
-      },
-      {
-        "surface": "beat_0",
-        "text": "Healthcare in the United States costs 13,473 per person. Sudan spends 28.",
-        "isos": [
-          "USA",
-          "SDN"
-        ],
-        "support": "Exact numbers match USA and SDN data values.",
-        "method": "complete-surface-check",
-        "evidence": {
-          "USA": {
-            "name": "United States",
-            "value": 13473.1932166645,
-            "display": "$13,473",
-            "year": 2023,
-            "unit": "international $",
-            "rank": 1
-          },
-          "SDN": {
-            "name": "Sudan",
-            "value": 28.261876902732,
-            "display": "$28",
-            "year": 2023,
-            "unit": "international $",
-            "rank": 189
           }
         }
       },
       {
         "surface": "beat_1",
-        "text": "One big country breaks this pattern. It is not the one you would guess.",
+        "text": "Sudan, Somalia, and the United States are the contenders.",
         "isos": [
-          "CHN"
+          "SDN",
+          "SOM",
+          "USA"
         ],
-        "support": "Stylistic narration not contradicting any data.",
-        "method": "complete-surface-check",
+        "support": "SDN rank 189 ($28), SOM rank 188 ($52), USA rank 1 ($13,473)",
         "evidence": {
-          "CHN": {
-            "name": "China",
-            "value": 1486.88389429767,
-            "display": "$1,487",
+          "SDN": {
+            "name": "Sudan",
+            "value": 28.261876902732,
+            "display": "$28",
             "year": 2023,
             "unit": "international $",
-            "rank": 71
+            "rank": 189
+          },
+          "SOM": {
+            "name": "Somalia, Fed. Rep.",
+            "value": 52.0652148813017,
+            "display": "$52",
+            "year": 2023,
+            "unit": "international $",
+            "rank": 188
+          },
+          "USA": {
+            "name": "United States",
+            "value": 13473.1932166645,
+            "display": "$13,473",
+            "year": 2023,
+            "unit": "international $",
+            "rank": 1
           }
         }
       },
       {
         "surface": "beat_2",
-        "text": "Is it Switzerland at 10,602, Germany at 8,826, or China?",
-        "isos": [
-          "CHE",
-          "DEU",
-          "CHN"
-        ],
-        "support": "Exact values match CHE, DEU, and CHN.",
-        "method": "complete-surface-check",
-        "evidence": {
-          "CHE": {
-            "name": "Switzerland",
-            "value": 10601.9331816578,
-            "display": "$10,602",
-            "year": 2023,
-            "unit": "international $",
-            "rank": 2
-          },
-          "DEU": {
-            "name": "Germany",
-            "value": 8825.61480783196,
-            "display": "$8,826",
-            "year": 2024,
-            "unit": "international $",
-            "rank": 5
-          },
-          "CHN": {
-            "name": "China",
-            "value": 1486.88389429767,
-            "display": "$1,487",
-            "year": 2023,
-            "unit": "international $",
-            "rank": 71
-          }
-        }
+        "text": "Current expenditures on health per capita expressed in international dollars at purchasing power parity.",
+        "isos": [],
+        "support": "Definition: Current expenditures on health per capita expressed in international dollars at purchasing power parity.",
+        "evidence": {}
       },
       {
         "surface": "beat_3",
-        "text": "China is the surprise, spending 1,487.",
+        "text": "Sudan has the world's lowest health spending at 28.",
         "isos": [
-          "CHN"
+          "SDN"
         ],
-        "support": "China's value matches display $1,487.",
-        "method": "complete-surface-check",
+        "support": "SDN rank 189, value 28.26187, display $28",
         "evidence": {
-          "CHN": {
-            "name": "China",
-            "value": 1486.88389429767,
-            "display": "$1,487",
+          "SDN": {
+            "name": "Sudan",
+            "value": 28.261876902732,
+            "display": "$28",
             "year": 2023,
             "unit": "international $",
-            "rank": 71
+            "rank": 189
           }
         }
       },
       {
         "surface": "beat_4",
-        "text": "The United States is the world's highest, at 13,473.",
+        "text": "Somalia has 52.",
+        "isos": [
+          "SOM"
+        ],
+        "support": "SOM rank 188, value 52.065, display $52",
+        "evidence": {
+          "SOM": {
+            "name": "Somalia, Fed. Rep.",
+            "value": 52.0652148813017,
+            "display": "$52",
+            "year": 2023,
+            "unit": "international $",
+            "rank": 188
+          }
+        }
+      },
+      {
+        "surface": "beat_5",
+        "text": "The United States is the answer. It has 13,473, the highest of all 189 countries and territories.",
         "isos": [
           "USA"
         ],
-        "support": "USA rank 1 is highest in universe with 13,473.",
+        "support": "USA rank 1, value 13473.19, universe count 189",
+        "evidence": {
+          "USA": {
+            "name": "United States",
+            "value": 13473.1932166645,
+            "display": "$13,473",
+            "year": 2023,
+            "unit": "international $",
+            "rank": 1
+          }
+        }
+      },
+      {
+        "surface": "beat_6",
+        "text": "The United States spends 481 times what Sudan does.",
+        "isos": [
+          "USA",
+          "SDN"
+        ],
+        "support": "USA value 13,473, Sudan value 28",
+        "evidence": {
+          "USA": {
+            "name": "United States",
+            "value": 13473.1932166645,
+            "display": "$13,473",
+            "year": 2023,
+            "unit": "international $",
+            "rank": 1
+          },
+          "SDN": {
+            "name": "Sudan",
+            "value": 28.261876902732,
+            "display": "$28",
+            "year": 2023,
+            "unit": "international $",
+            "rank": 189
+          }
+        }
+      },
+      {
+        "surface": "beat_7",
+        "text": "Brazil has 2,070. China has 1,487.",
+        "isos": [
+          "BRA",
+          "CHN"
+        ],
+        "support": "BRA value 2070.44 (display $2,070), CHN value 1486.88 (display $1,487)",
+        "evidence": {
+          "BRA": {
+            "name": "Brazil",
+            "value": 2070.43822679684,
+            "display": "$2,070",
+            "year": 2023,
+            "unit": "international $",
+            "rank": 59
+          },
+          "CHN": {
+            "name": "China",
+            "value": 1486.88389429767,
+            "display": "$1,487",
+            "year": 2023,
+            "unit": "international $",
+            "rank": 71
+          }
+        }
+      },
+      {
+        "surface": "beat_8",
+        "text": "What does health care cost in your country?",
+        "isos": [],
+        "support": "Generic question matching card_8",
+        "evidence": {}
+      },
+      {
+        "surface": "card_8",
+        "text": "YOUR FUNDING? Annual Health Expenditure",
+        "isos": [],
+        "support": "Indicator: Current expenditures on health per capita",
+        "evidence": {}
+      },
+      {
+        "surface": "title",
+        "text": "Which Country Has the MOST Health Funding?",
+        "isos": [],
+        "support": "United States is indeed the highest at 13,473 international dollars.",
+        "method": "complete-surface-check",
+        "evidence": {}
+      },
+      {
+        "surface": "hook",
+        "text": "THE TOP SPENDER",
+        "isos": [
+          "USA"
+        ],
+        "support": "United States is the top spender.",
         "method": "complete-surface-check",
         "evidence": {
           "USA": {
@@ -1794,12 +1802,113 @@
         }
       },
       {
-        "surface": "beat_5",
-        "text": "Sudan is the lowest at 28. It counts current expenditures on health per person.",
+        "surface": "description",
+        "text": "A cinematic data story comparing global healthcare spending, highlighting the massive gap between the USA and Sudan.",
+        "isos": [
+          "USA",
+          "SDN"
+        ],
+        "support": "USA and Sudan represent the extremes (rank 1 and rank 189).",
+        "method": "complete-surface-check",
+        "evidence": {
+          "USA": {
+            "name": "United States",
+            "value": 13473.1932166645,
+            "display": "$13,473",
+            "year": 2023,
+            "unit": "international $",
+            "rank": 1
+          },
+          "SDN": {
+            "name": "Sudan",
+            "value": 28.261876902732,
+            "display": "$28",
+            "year": 2023,
+            "unit": "international $",
+            "rank": 189
+          }
+        }
+      },
+      {
+        "surface": "beat_0",
+        "text": "One major nation has a massive lead in health funding. It is not Switzerland.",
+        "isos": [
+          "USA",
+          "CHE"
+        ],
+        "support": "USA leads Switzerland (rank 2).",
+        "method": "complete-surface-check",
+        "evidence": {
+          "USA": {
+            "name": "United States",
+            "value": 13473.1932166645,
+            "display": "$13,473",
+            "year": 2023,
+            "unit": "international $",
+            "rank": 1
+          },
+          "CHE": {
+            "name": "Switzerland",
+            "value": 10601.9331816578,
+            "display": "$10,602",
+            "year": 2023,
+            "unit": "international $",
+            "rank": 2
+          }
+        }
+      },
+      {
+        "surface": "beat_1",
+        "text": "Sudan, Somalia, and the United States are the contenders.",
+        "isos": [
+          "SDN",
+          "SOM",
+          "USA"
+        ],
+        "support": "Sudan, Somalia, and USA are valid entities in the dataset.",
+        "method": "complete-surface-check",
+        "evidence": {
+          "SDN": {
+            "name": "Sudan",
+            "value": 28.261876902732,
+            "display": "$28",
+            "year": 2023,
+            "unit": "international $",
+            "rank": 189
+          },
+          "SOM": {
+            "name": "Somalia, Fed. Rep.",
+            "value": 52.0652148813017,
+            "display": "$52",
+            "year": 2023,
+            "unit": "international $",
+            "rank": 188
+          },
+          "USA": {
+            "name": "United States",
+            "value": 13473.1932166645,
+            "display": "$13,473",
+            "year": 2023,
+            "unit": "international $",
+            "rank": 1
+          }
+        }
+      },
+      {
+        "surface": "beat_2",
+        "text": "Current expenditures on health per capita expressed in international dollars at purchasing power parity.",
+        "isos": [],
+        "support": "Matches indicator definition verbatim.",
+        "method": "complete-surface-check",
+        "evidence": {}
+      },
+      {
+        "surface": "beat_3",
+        "text": "Sudan has the world's lowest health spending at 28.",
         "isos": [
           "SDN"
         ],
-        "support": "Sudan rank is 189 (lowest) with 28; definition matches.",
+        "support": "Sudan has the lowest value (28.26).",
         "method": "complete-surface-check",
         "evidence": {
           "SDN": {
@@ -1813,21 +1922,115 @@
         }
       },
       {
+        "surface": "beat_4",
+        "text": "Somalia has 52.",
+        "isos": [
+          "SOM"
+        ],
+        "support": "Somalia value is 52.07.",
+        "method": "complete-surface-check",
+        "evidence": {
+          "SOM": {
+            "name": "Somalia, Fed. Rep.",
+            "value": 52.0652148813017,
+            "display": "$52",
+            "year": 2023,
+            "unit": "international $",
+            "rank": 188
+          }
+        }
+      },
+      {
+        "surface": "beat_5",
+        "text": "The United States is the answer. It has 13,473, the highest of all 189 countries and territories.",
+        "isos": [
+          "USA"
+        ],
+        "support": "USA has 13,473, rank 1 out of 189.",
+        "method": "complete-surface-check",
+        "evidence": {
+          "USA": {
+            "name": "United States",
+            "value": 13473.1932166645,
+            "display": "$13,473",
+            "year": 2023,
+            "unit": "international $",
+            "rank": 1
+          }
+        }
+      },
+      {
         "surface": "beat_6",
-        "text": "What does your country spend on healthcare per person?",
+        "text": "The United States spends 481 times what Sudan does.",
+        "isos": [
+          "USA",
+          "SDN"
+        ],
+        "support": "Ratio between USA and Sudan is approximately 477 to 481.",
+        "method": "complete-surface-check",
+        "evidence": {
+          "USA": {
+            "name": "United States",
+            "value": 13473.1932166645,
+            "display": "$13,473",
+            "year": 2023,
+            "unit": "international $",
+            "rank": 1
+          },
+          "SDN": {
+            "name": "Sudan",
+            "value": 28.261876902732,
+            "display": "$28",
+            "year": 2023,
+            "unit": "international $",
+            "rank": 189
+          }
+        }
+      },
+      {
+        "surface": "beat_7",
+        "text": "Brazil has 2,070. China has 1,487.",
+        "isos": [
+          "BRA",
+          "CHN"
+        ],
+        "support": "Brazil is 2,070 and China is 1,487.",
+        "method": "complete-surface-check",
+        "evidence": {
+          "BRA": {
+            "name": "Brazil",
+            "value": 2070.43822679684,
+            "display": "$2,070",
+            "year": 2023,
+            "unit": "international $",
+            "rank": 59
+          },
+          "CHN": {
+            "name": "China",
+            "value": 1486.88389429767,
+            "display": "$1,487",
+            "year": 2023,
+            "unit": "international $",
+            "rank": 71
+          }
+        }
+      },
+      {
+        "surface": "beat_8",
+        "text": "What does health care cost in your country?",
         "isos": [],
-        "support": "Ordinary closing engagement question.",
+        "support": "Call to action matches card theme.",
         "method": "complete-surface-check",
         "evidence": {}
       },
       {
-        "surface": "card_6",
+        "surface": "card_8",
         "text": [
-          "Your health spend?",
-          "Health expenditure per capita"
+          "YOUR FUNDING?",
+          "Annual Health Expenditure"
         ],
         "isos": [],
-        "support": "Matches indicator definition.",
+        "support": "Card text matches indicator context.",
         "method": "complete-surface-check",
         "evidence": {}
       }
@@ -1835,85 +2038,110 @@
     "surface_checks": {
       "title": {
         "supported": true,
-        "reason": "Title is a framing question about the indicator maximum, which is supported by ranks.",
+        "reason": "United States is indeed the highest at 13,473 international dollars.",
         "isos": []
       },
       "hook": {
         "supported": true,
-        "reason": "Stylistic intro framing.",
-        "isos": []
+        "reason": "United States is the top spender.",
+        "isos": [
+          "USA"
+        ]
       },
       "description": {
         "supported": true,
-        "reason": "Accurately describes healthcare spending per person disparity.",
-        "isos": []
-      },
-      "beat_0": {
-        "supported": true,
-        "reason": "Exact numbers match USA and SDN data values.",
+        "reason": "USA and Sudan represent the extremes (rank 1 and rank 189).",
         "isos": [
           "USA",
           "SDN"
         ]
       },
+      "beat_0": {
+        "supported": true,
+        "reason": "USA leads Switzerland (rank 2).",
+        "isos": [
+          "USA",
+          "CHE"
+        ]
+      },
       "beat_1": {
         "supported": true,
-        "reason": "Stylistic narration not contradicting any data.",
+        "reason": "Sudan, Somalia, and USA are valid entities in the dataset.",
         "isos": [
-          "CHN"
+          "SDN",
+          "SOM",
+          "USA"
         ]
       },
       "beat_2": {
         "supported": true,
-        "reason": "Exact values match CHE, DEU, and CHN.",
-        "isos": [
-          "CHE",
-          "DEU",
-          "CHN"
-        ]
+        "reason": "Matches indicator definition verbatim.",
+        "isos": []
       },
       "beat_3": {
         "supported": true,
-        "reason": "China's value matches display $1,487.",
-        "isos": [
-          "CHN"
-        ]
-      },
-      "beat_4": {
-        "supported": true,
-        "reason": "USA rank 1 is highest in universe with 13,473.",
-        "isos": [
-          "USA"
-        ]
-      },
-      "beat_5": {
-        "supported": true,
-        "reason": "Sudan rank is 189 (lowest) with 28; definition matches.",
+        "reason": "Sudan has the lowest value (28.26).",
         "isos": [
           "SDN"
         ]
       },
+      "beat_4": {
+        "supported": true,
+        "reason": "Somalia value is 52.07.",
+        "isos": [
+          "SOM"
+        ]
+      },
+      "beat_5": {
+        "supported": true,
+        "reason": "USA has 13,473, rank 1 out of 189.",
+        "isos": [
+          "USA"
+        ]
+      },
       "beat_6": {
         "supported": true,
-        "reason": "Ordinary closing engagement question.",
+        "reason": "Ratio between USA and Sudan is approximately 477 to 481.",
+        "isos": [
+          "USA",
+          "SDN"
+        ]
+      },
+      "beat_7": {
+        "supported": true,
+        "reason": "Brazil is 2,070 and China is 1,487.",
+        "isos": [
+          "BRA",
+          "CHN"
+        ]
+      },
+      "beat_8": {
+        "supported": true,
+        "reason": "Call to action matches card theme.",
         "isos": []
       },
-      "card_6": {
+      "card_8": {
         "supported": true,
-        "reason": "Matches indicator definition.",
+        "reason": "Card text matches indicator context.",
         "isos": []
       }
     },
     "warnings": [
       {
-        "surface": "beat_1",
-        "claim": "One big country breaks this pattern. It is not the one you would guess.",
-        "reason": "Unsourced causal or pattern framing not present in evidence definition.",
+        "surface": "beat_3",
+        "claim": "Sudan has the world's lowest health spending at 28.",
+        "reason": "Sudan ranks 189 out of 189 with 28.26 international dollars, but the display value is $28, and the claim omits the unit.",
+        "severity": "style"
+      },
+      {
+        "surface": "beat_6",
+        "claim": "The United States spends 481 times what Sudan does.",
+        "reason": "13473.193 / 28.26187 = 476.7 times, though close to 481 if rounding display values ($13,473 / $28 = 481.18).",
         "severity": "style"
       }
     ]
   },
-  "script_sha256": "4b77574ac4cb5e3cbe48bc45d9fad174bf3c9081fcddf463e47902b4d75a2af1",
+  "script_sha256": "c0b1f429c65acd3d8117f90ce961f21b35f237e17e5a23e01ad37b4c7c0308a5",
   "data_sha256": "d8e90173d4a58616d515adeef9bb0272b4ee62feada472a396b0145bf8104cc6",
   "reviewer_model": "gemini-3.5-flash-lite"
 }

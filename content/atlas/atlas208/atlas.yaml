@@ -1,8 +1,9 @@
 id: atlas208
-title: Which Country Spends the MOST on Healthcare?
+title: Which Country Has the MOST Health Funding?
 format: odd_one_out
-hook_text: GLOBAL HEALTH DIVIDE
-description: A look at the massive global disparity in annual healthcare spending per person.
+hook_text: THE TOP SPENDER
+description: A cinematic data story comparing global healthcare spending, highlighting the massive gap between the
+  USA and Sudan.
 hashtags:
 - '#health'
 - '#geography'
@@ -39,38 +40,47 @@ scale:
   - Above $7,000
 value_format: ${v:,.0f}
 beats:
-- text: Healthcare in the United States costs 13,473 per person. Sudan spends 28.
+- text: One major nation has a massive lead in health funding. It is not Switzerland.
   shot:
     callouts:
     - USA
-    - SDN
-- text: One big country breaks this pattern. It is not the one you would guess.
-  shot:
-    kind: country
-    iso: CHN
-- text: Is it Switzerland at 10,602, Germany at 8,826, or China?
+    - CHE
+- text: Sudan, Somalia, and the United States are the contenders.
   shot:
     kind: group
     isos:
-    - CHE
-    - DEU
-    - CHN
-- text: China is the surprise, spending 1,487.
-  shot:
-    kind: country
-    iso: CHN
-- text: The United States is the world's highest, at 13,473.
-  shot:
-    kind: country
-    iso: USA
-- text: Sudan is the lowest at 28. It counts current expenditures on health per person.
+    - SDN
+    - SOM
+    - USA
+- text: Current expenditures on health per capita expressed in international dollars at purchasing power parity.
+  basis: Current expenditures on health per capita expressed in international dollars at purchasing power parity.
+- text: Sudan has the world's lowest health spending at 28.
   shot:
     kind: country
     iso: SDN
-  basis: Current expenditures on health per capita expressed in international dollars at purchasing power parity.
-- text: What does your country spend on healthcare per person?
+- text: Somalia has 52.
+  shot:
+    kind: country
+    iso: SOM
+- text: The United States is the answer. It has 13,473, the highest of all 189 countries and territories.
+  shot:
+    kind: country
+    iso: USA
+- text: The United States spends 481 times what Sudan does.
+  shot:
+    kind: group
+    isos:
+    - USA
+    - SDN
+- text: Brazil has 2,070. China has 1,487.
+  shot:
+    kind: group
+    isos:
+    - BRA
+    - CHN
+- text: What does health care cost in your country?
   shot:
     kind: card
     lines:
-    - Your health spend?
-    - Health expenditure per capita
+    - YOUR FUNDING?
+    - Annual Health Expenditure

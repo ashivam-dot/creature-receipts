@@ -1,0 +1,70 @@
+id: atlas209
+title: How Does the USA Compare on Poorest Bank Accounts?
+format: spotlight
+hook_text: POOREST BANK ACCOUNTS
+description: A global comparison of financial inclusion among the poorest 40% of citizens across 142 countries and
+  territories.
+hashtags:
+- '#economy'
+- '#geography'
+- '#countries'
+tags:
+- wealth
+- poorest 40% with an account
+- countries ranked by poorest 40% with an account
+- United Kingdom
+- Yemen Rep.
+- world map
+- geography
+- atlas in numbers
+sources:
+- https://data.worldbank.org/indicator/FX.OWN.TOTL.40.ZS
+dataset:
+  kind: worldbank
+  indicator: FX.OWN.TOTL.40.ZS
+  label: Poorest 40% with an account
+  unit: '%'
+  source: World Bank
+  min_year: 2019
+scale:
+  kind: threshold
+  at: 50.0
+  labels:
+  - 50% or more
+  - Less than 50%
+value_format: '{v:.1f}%'
+beats:
+- text: In Finland, 100% of the poorest adults have an account. In Yemen, only 6.5% do.
+  shot:
+    callouts:
+    - FIN
+    - YEM
+- text: In the USA, 95.6% of the poorest citizens hold an account, well above the global median.
+  shot:
+    kind: country
+    iso: USA
+- text: India has 86.3%, counting anyone who used a bank, shared account, or mobile money service.
+  shot:
+    kind: country
+    iso: IND
+  basis: report having an account (by themselves or together with someone else) at a bank or another type of financial
+    institution or report personally using a mobile money service in the past 12 months
+- text: China has 82.7%, while Brazil has 78.1%.
+  shot:
+    kind: group
+    isos:
+    - CHN
+    - BRA
+- text: At the bottom, Madagascar has 14.1%, Pakistan has 13.6%, and Yemen has 6.5%.
+  shot:
+    kind: rank
+    isos:
+    - MDG
+    - PAK
+    - YEM
+- text: Do the poorest adults in your country have bank accounts?
+  shot:
+    kind: card
+    lines:
+    - POOREST BANK ACCOUNTS
+    - World Bank, 2021-2024
