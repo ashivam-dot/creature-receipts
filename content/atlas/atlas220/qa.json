@@ -1,0 +1,45 @@
+{
+  "version": 1,
+  "passed": true,
+  "checked_at": "2026-11-21T17:24:40.368119+00:00",
+  "quality_module_sha256": "db7be8ac57c839f39a10676f1a70580a83ea346f59c27f19868d09c272def14c",
+  "media_sha256": "fc32a610ec2941a84589e6094b554e1c74a78be7dd47fd26b3753056e8901527",
+  "script_sha256": "24a85812e3e61414bf8bfef4d648a4fb78607359c6ace4ee1f3e3bec851a5540",
+  "data_sha256": "4f1b2288d97b79f42528db6856f991903879d28f4a5a26688433473e17bfe979",
+  "claims_sha256": "114fe8fa7d004e9b26840f41a4f0cd0f414c06b513044309522c1de9f7554c08",
+  "contact_sha256": "5fbcdcdca0741b87a32942f7a901b6d77f8cf2c1b4b1177c427f86c6e669ecb8",
+  "duration": 42.39,
+  "integrated_lufs": -14.1,
+  "true_peak_dbfs": -1.4,
+  "speech": {
+    "heard": "Netherlands has 83.3% active youth. Djibouti has 13.4%. Djibouti is the world's lowest. It counts everyone who supplies labor. USA has 50.8%, and China has 49.3%. Nigeria has 64.8%, 3.9 times the proportion in Libya. Climbing higher, Australia's 70.2%, Madagascar's 72.4% and Iceland 82.1%. Netherlands is the world's highest, 83.3% are active. What keeps youth active in the labor force where you live?",
+    "model": "small.en",
+    "media_sha256": "fc32a610ec2941a84589e6094b554e1c74a78be7dd47fd26b3753056e8901527",
+    "primary_differences": [
+      "'(nothing)' heard as 'is' after 'climbing higher australia'",
+      "'(nothing)' heard as 'is' after 'australia 70.2% madagascar'"
+    ],
+    "differences": [
+      "'(nothing)' heard as 'is' after 'climbing higher australia'",
+      "'(nothing)' heard as 'is' after 'australia 70.2% madagascar'",
+      "base.en: '(nothing)' heard as 'is' after 'climbing higher australia'",
+      "base.en: '(nothing)' heard as 'is' after 'australia 70.2% madagascar'"
+    ],
+    "corroboration": {
+      "model": "base.en",
+      "heard": "Netherlands has 83.3% active youth. Djibouti has 13.4%. Djibouti is the world's lowest. It counts everyone who supplies labor. USA has 50.8%, and China has 49.3%. Nigeria has 64.8%, 3.9 times the proportion in Libya. Climbing higher. Australia's 70.2%, Madagascar's 72.4%, and Iceland 82.1%. Netherlands is the world's highest. 83.3% are active. What keeps youth active in the labor force where you live?",
+      "differences": [
+        "'(nothing)' heard as 'is' after 'climbing higher australia'",
+        "'(nothing)' heard as 'is' after 'australia 70.2% madagascar'"
+      ],
+      "resolved": []
+    }
+  },
+  "warnings": [
+    "'(nothing)' heard as 'is' after 'climbing higher australia'",
+    "'(nothing)' heard as 'is' after 'australia 70.2% madagascar'",
+    "base.en: '(nothing)' heard as 'is' after 'climbing higher australia'",
+    "base.en: '(nothing)' heard as 'is' after 'australia 70.2% madagascar'"
+  ],
+  "speech_policy": "material-hard-entity-polarity-strict-minor-spelling-warning"
+}

@@ -1,0 +1,174 @@
+{
+  "errors": [
+    {
+      "surface": "beat_3",
+      "claim": "Nigeria has 64.8 percent, 3.9 times the proportion in Libya.",
+      "reason": "64.8 divided by 16.7 is approximately 3.88, but the claim of 3.9 times is a calculation based on the provided values; however, the comparison is mathematically accurate based on the provided data.",
+      "severity": "info"
+    }
+  ],
+  "claims": [
+    {
+      "surface": "beat_0",
+      "text": "Netherlands has 83.3 percent active youth.",
+      "isos": [
+        "NLD"
+      ],
+      "support": "83.298"
+    },
+    {
+      "surface": "beat_0",
+      "text": "Djibouti has 13.4 percent.",
+      "isos": [
+        "DJI"
+      ],
+      "support": "13.424"
+    },
+    {
+      "surface": "beat_1",
+      "text": "Djibouti is the world's lowest.",
+      "isos": [
+        "DJI"
+      ],
+      "support": "rank 184"
+    },
+    {
+      "surface": "beat_2",
+      "text": "USA has 50.8 percent",
+      "isos": [
+        "USA"
+      ],
+      "support": "50.83"
+    },
+    {
+      "surface": "beat_2",
+      "text": "China has 49.3 percent.",
+      "isos": [
+        "CHN"
+      ],
+      "support": "49.282"
+    },
+    {
+      "surface": "beat_3",
+      "text": "Nigeria has 64.8 percent",
+      "isos": [
+        "NGA"
+      ],
+      "support": "64.784"
+    },
+    {
+      "surface": "beat_3",
+      "text": "Libya has 16.7 percent.",
+      "isos": [
+        "LBY"
+      ],
+      "support": "16.732"
+    },
+    {
+      "surface": "beat_4",
+      "text": "Australia 70.2 percent",
+      "isos": [
+        "AUS"
+      ],
+      "support": "70.166"
+    },
+    {
+      "surface": "beat_4",
+      "text": "Madagascar 72.4 percent",
+      "isos": [
+        "MDG"
+      ],
+      "support": "72.407"
+    },
+    {
+      "surface": "beat_4",
+      "text": "Iceland 82.1 percent.",
+      "isos": [
+        "ISL"
+      ],
+      "support": "82.145"
+    },
+    {
+      "surface": "beat_5",
+      "text": "Netherlands is the world's highest: 83.3 percent are active.",
+      "isos": [
+        "NLD"
+      ],
+      "support": "rank 1, 83.298"
+    }
+  ],
+  "surface_checks": {
+    "title": {
+      "supported": true,
+      "reason": "The title accurately reflects the content regarding youth labor force participation.",
+      "isos": []
+    },
+    "hook": {
+      "supported": true,
+      "reason": "The hook is a stylistic summary of the topic.",
+      "isos": []
+    },
+    "description": {
+      "supported": true,
+      "reason": "The description matches the definition provided in the evidence.",
+      "isos": []
+    },
+    "beat_0": {
+      "supported": true,
+      "reason": "Values for Netherlands and Djibouti match the evidence.",
+      "isos": [
+        "NLD",
+        "DJI"
+      ]
+    },
+    "beat_1": {
+      "supported": true,
+      "reason": "Djibouti is ranked 184th (lowest) and the definition of labor force participation is correctly stated.",
+      "isos": [
+        "DJI"
+      ]
+    },
+    "beat_2": {
+      "supported": true,
+      "reason": "Values for USA and China match the evidence.",
+      "isos": [
+        "USA",
+        "CHN"
+      ]
+    },
+    "beat_3": {
+      "supported": true,
+      "reason": "Values for Nigeria and Libya match the evidence.",
+      "isos": [
+        "NGA",
+        "LBY"
+      ]
+    },
+    "beat_4": {
+      "supported": true,
+      "reason": "Values for Australia, Madagascar, and Iceland match the evidence.",
+      "isos": [
+        "AUS",
+        "MDG",
+        "ISL"
+      ]
+    },
+    "beat_5": {
+      "supported": true,
+      "reason": "Netherlands is ranked 1st with 83.3%.",
+      "isos": [
+        "NLD"
+      ]
+    },
+    "beat_6": {
+      "supported": true,
+      "reason": "This is a rhetorical question.",
+      "isos": []
+    },
+    "card_6": {
+      "supported": true,
+      "reason": "The card text matches the topic.",
+      "isos": []
+    }
+  }
+}

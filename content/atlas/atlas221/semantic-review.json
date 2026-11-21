@@ -1,0 +1,142 @@
+{
+  "errors": [
+    {
+      "surface": "beat_1",
+      "claim": "Sri Lanka is the world's highest, spending 32 times what Germany does.",
+      "reason": "79.9 divided by 2.5 is approximately 31.96, which rounds to 32, but the claim implies a precise ratio that is mathematically sensitive to rounding; however, the primary issue is that the comparison is stylistically misleading as a direct multiplier of the percentage values.",
+      "severity": "style"
+    }
+  ],
+  "claims": [
+    {
+      "surface": "beat_0",
+      "text": "Sri Lanka spends 79.9% of its revenue on debt interest.",
+      "isos": [
+        "LKA"
+      ],
+      "support": "79.8744543518094"
+    },
+    {
+      "surface": "beat_0",
+      "text": "Germany spends 2.5% of its revenue on debt interest.",
+      "isos": [
+        "DEU"
+      ],
+      "support": "2.47958940598133"
+    },
+    {
+      "surface": "beat_2",
+      "text": "India sits near the top, spending 34% of its revenue on interest.",
+      "isos": [
+        "IND"
+      ],
+      "support": "33.9761997637185"
+    },
+    {
+      "surface": "beat_4",
+      "text": "The USA spends 20.3% of its revenue, right next to Mexico at 20%.",
+      "isos": [
+        "USA",
+        "MEX"
+      ],
+      "support": "USA: 20.2909241993276, MEX: 20.0001112170522"
+    },
+    {
+      "surface": "beat_5",
+      "text": "China is at 3.4%, and Russia 2.4%.",
+      "isos": [
+        "CHN",
+        "RUS"
+      ],
+      "support": "CHN: 3.4419404251668, RUS: 2.36125648480462"
+    },
+    {
+      "surface": "beat_6",
+      "text": "At the bottom, Iraq spends just 0.01%, the world's lowest.",
+      "isos": [
+        "IRQ"
+      ],
+      "support": "0.00583314613158625"
+    }
+  ],
+  "surface_checks": {
+    "title": {
+      "supported": true,
+      "reason": "India is ranked 3rd out of 139, which is near the top.",
+      "isos": [
+        "IND"
+      ]
+    },
+    "hook": {
+      "supported": true,
+      "reason": "Matches indicator definition.",
+      "isos": []
+    },
+    "description": {
+      "supported": true,
+      "reason": "Matches indicator definition.",
+      "isos": []
+    },
+    "beat_0": {
+      "supported": true,
+      "reason": "Values match evidence.",
+      "isos": [
+        "LKA",
+        "DEU"
+      ]
+    },
+    "beat_1": {
+      "supported": true,
+      "reason": "Sri Lanka is rank 1.",
+      "isos": [
+        "LKA",
+        "DEU"
+      ]
+    },
+    "beat_2": {
+      "supported": true,
+      "reason": "India is rank 3.",
+      "isos": [
+        "IND"
+      ]
+    },
+    "beat_3": {
+      "supported": true,
+      "reason": "Matches indicator definition.",
+      "isos": []
+    },
+    "beat_4": {
+      "supported": true,
+      "reason": "Values match evidence.",
+      "isos": [
+        "USA",
+        "MEX"
+      ]
+    },
+    "beat_5": {
+      "supported": true,
+      "reason": "Values match evidence.",
+      "isos": [
+        "CHN",
+        "RUS"
+      ]
+    },
+    "beat_6": {
+      "supported": true,
+      "reason": "Iraq is rank 139.",
+      "isos": [
+        "IRQ"
+      ]
+    },
+    "beat_7": {
+      "supported": true,
+      "reason": "General question.",
+      "isos": []
+    },
+    "card_7": {
+      "supported": true,
+      "reason": "Matches indicator source.",
+      "isos": []
+    }
+  }
+}

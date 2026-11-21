@@ -1,0 +1,80 @@
+id: atlas220
+title: Places Ranked by Youth Labor Force Participation
+format: rank_ladder
+hook_text: ACTIVE YOUTH
+description: A look at the proportion of youth aged 15–24 who are economically active around the world.
+hashtags:
+- '#work'
+- '#labor'
+- '#geography'
+tags:
+- work
+- youth labor force participation rate
+- countries ranked by youth labor force participation rate
+- Netherlands
+- Djibouti
+- world map
+- geography
+- atlas in numbers
+sources:
+- https://data.worldbank.org/indicator/SL.TLF.ACTI.1524.ZS
+dataset:
+  kind: worldbank
+  indicator: SL.TLF.ACTI.1524.ZS
+  label: Youth labor force participation rate
+  unit: '%'
+  source: World Bank
+  min_year: 2019
+scale:
+  edges:
+  - 25.0
+  - 38.5
+  - 50.0
+  - 65.0
+  labels:
+  - Under 25%
+  - 25% to 38.5%
+  - 38.5% to 50%
+  - 50% to 65%
+  - Over 65%
+value_format: '{v:.1f}%'
+beats:
+- text: Netherlands has 83.3 percent active youth. Djibouti has 13.4 percent.
+  shot:
+    callouts:
+    - NLD
+    - DJI
+- text: Djibouti is the world's lowest. It counts everyone who supplies labor.
+  shot:
+    kind: country
+    iso: DJI
+  basis: all people who supply labor for the production of goods and services during a specified period.
+- text: USA has 50.8 percent and China has 49.3 percent.
+  shot:
+    kind: group
+    isos:
+    - USA
+    - CHN
+- text: Nigeria has 64.8 percent, 3.9 times the proportion in Libya.
+  shot:
+    kind: group
+    isos:
+    - NGA
+    - LBY
+- text: 'Climbing higher: Australia 70.2 percent, Madagascar 72.4 percent, and Iceland 82.1 percent.'
+  shot:
+    kind: rank
+    isos:
+    - AUS
+    - MDG
+    - ISL
+- text: 'Netherlands is the world''s highest: 83.3 percent are active.'
+  shot:
+    kind: country
+    iso: NLD
+- text: What keeps youth active in the labor force where you live?
+  shot:
+    kind: card
+    lines:
+    - Active youth?
+    - Youth Labor Force Participation
