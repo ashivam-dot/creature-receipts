@@ -1,0 +1,118 @@
+{
+  "errors": [
+    {
+      "surface": "beat_1",
+      "claim": "Oman has 23 times the share found in South Sudan.",
+      "reason": "39.4 divided by 1.7 is approximately 23.18, but stating '23 times' without proper rounding justification or exact support can be scrutinized, though mathematically 39.4 / 1.7 = 23.176. Wait, let's look closer: OMN is 39.4, SSD is 1.672 (display 1.7). 39.435 / 1.672 = 23.58. So 23 times is factually inaccurate based on exact values.",
+      "severity": "factual"
+    }
+  ],
+  "claims": [
+    {
+      "surface": "beat_0",
+      "text": "Oman has 39.4% in industry. In South Sudan, it's 1.7%.",
+      "isos": [
+        "OMN",
+        "SSD"
+      ],
+      "support": "OMN value 39.4354242133981, display 39.4%; SSD value 1.67202046929201, display 1.7%"
+    },
+    {
+      "surface": "beat_1",
+      "text": "Oman has 23 times the share found in South Sudan.",
+      "isos": [
+        "OMN",
+        "SSD"
+      ],
+      "support": "OMN: 39.4%, SSD: 1.7%"
+    },
+    {
+      "surface": "beat_2",
+      "text": "The industry sector consists of mining and quarrying, manufacturing, construction, and public utilities.",
+      "isos": [],
+      "support": "The industry sector consists of mining and quarrying, manufacturing, construction, and public utilities (electricity, gas, and water)"
+    },
+    {
+      "surface": "beat_3",
+      "text": "USA is 18.9% and China is 31.8%.",
+      "isos": [
+        "USA",
+        "CHN"
+      ],
+      "support": "USA display 18.9%, CHN display 31.8%"
+    },
+    {
+      "surface": "beat_4",
+      "text": "At the bottom, East Timor has 3.8% and Burundi has 3.1%.",
+      "isos": [
+        "TLS",
+        "BDI"
+      ],
+      "support": "TLS display 3.8%, BDI display 3.1%"
+    }
+  ],
+  "surface_checks": {
+    "title": {
+      "supported": true,
+      "reason": "The title frames an inquiry about the highest industrial employment share, supported by the data rankings where Oman is rank 1.",
+      "isos": []
+    },
+    "hook": {
+      "supported": true,
+      "reason": "Hook sets an appropriate stylistic tone about industrial extremes.",
+      "isos": []
+    },
+    "description": {
+      "supported": true,
+      "reason": "Accurately reflects the indicator, count of 184 countries and territories, and World Bank source.",
+      "isos": []
+    },
+    "beat_0": {
+      "supported": true,
+      "reason": "Oman (OMN) display value is 39.4% and South Sudan (SSD) display value is 1.7%.",
+      "isos": [
+        "OMN",
+        "SSD"
+      ]
+    },
+    "beat_1": {
+      "supported": false,
+      "reason": "The exact ratio of Oman's value to South Sudan's value is closer to 23.58, making 23 times factually imprecise.",
+      "isos": [
+        "OMN",
+        "SSD"
+      ]
+    },
+    "beat_2": {
+      "supported": true,
+      "reason": "Directly matches the definition provided in the EVIDENCE text.",
+      "isos": []
+    },
+    "beat_3": {
+      "supported": true,
+      "reason": "USA display is 18.9% and China display is 31.8%, matching the evidence.",
+      "isos": [
+        "USA",
+        "CHN"
+      ]
+    },
+    "beat_4": {
+      "supported": true,
+      "reason": "Timor-Leste (East Timor) display is 3.8% and Burundi display is 3.1%, matching the evidence.",
+      "isos": [
+        "TLS",
+        "BDI"
+      ]
+    },
+    "beat_5": {
+      "supported": true,
+      "reason": "A valid closing question consistent with the video topic.",
+      "isos": []
+    },
+    "card_5": {
+      "supported": true,
+      "reason": "Card text correctly reflects the indicator theme and subject.",
+      "isos": []
+    }
+  }
+}

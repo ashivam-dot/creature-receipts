@@ -1,0 +1,143 @@
+{
+  "errors": [
+    {
+      "surface": "title",
+      "claim": "Places Ranked by Livestock Output Growth",
+      "reason": "The indicator measures output levels/index relative to base period, not output growth rate.",
+      "severity": "factual"
+    },
+    {
+      "surface": "beat_1",
+      "claim": "Myanmar is the world's lowest, falling deep below base production levels.",
+      "reason": "Myanmar has rank 190 (lowest) with value 46.54, which is below the 2014-2016 base of 100, but title/framing uses growth.",
+      "severity": "info"
+    },
+    {
+      "surface": "beat_3",
+      "claim": "The index counts meat, milk, cheese, eggs and honey relative to 2016.",
+      "reason": "The base period is 2014-2016 (2014-2016 = 100), not just 2016.",
+      "severity": "factual"
+    }
+  ],
+  "claims": [
+    {
+      "surface": "beat_0",
+      "text": "Myanmar sits at a livestock index of 46.5. USA hits 109.",
+      "isos": [
+        "MMR",
+        "USA"
+      ],
+      "support": "MMR value: 46.54 (display 46.5), USA value: 109.14 (display 109)"
+    },
+    {
+      "surface": "beat_1",
+      "text": "Myanmar is the world's lowest, falling deep below base production levels.",
+      "isos": [
+        "MMR"
+      ],
+      "support": "MMR rank: 190, value: 46.54"
+    },
+    {
+      "surface": "beat_2",
+      "text": "Global giants stay near the baseline. USA is 109, and China sits at 116.",
+      "isos": [
+        "USA",
+        "CHN"
+      ],
+      "support": "USA value: 109.14 (display 109), CHN value: 115.55 (display 116)"
+    },
+    {
+      "surface": "beat_4",
+      "text": "Climbing the top ranks: Uganda is 162, Indonesia is 195, Malawi is 211, and Guyana is 225.",
+      "isos": [
+        "UGA",
+        "IDN",
+        "MWI",
+        "GUY"
+      ],
+      "support": "UGA value: 162.33 (display 162, rank 11), IDN value: 194.74 (display 195, rank 4), MWI value: 211.36 (display 211, rank 3), GUY value: 225.05 (display 225, rank 1)"
+    },
+    {
+      "surface": "beat_5",
+      "text": "Guyana is the world's highest, with 2.1 times the livestock output of the USA.",
+      "isos": [
+        "GUY",
+        "USA"
+      ],
+      "support": "GUY rank: 1, value: 225.05; USA value: 109.14; ratio is approximately 2.06 times"
+    }
+  ],
+  "surface_checks": {
+    "title": {
+      "supported": false,
+      "reason": "The indicator measures aggregate volume relative to the base period, not output growth.",
+      "isos": []
+    },
+    "hook": {
+      "supported": true,
+      "reason": "General title hook referencing livestock production.",
+      "isos": []
+    },
+    "description": {
+      "supported": true,
+      "reason": "Accurately references World Bank data and livestock production trends.",
+      "isos": []
+    },
+    "beat_0": {
+      "supported": true,
+      "reason": "Myanmar index is 46.54 and USA is 109.14, matching display values.",
+      "isos": [
+        "MMR",
+        "USA"
+      ]
+    },
+    "beat_1": {
+      "supported": true,
+      "reason": "Myanmar is ranked 190 (lowest in the universe) with 46.54, which is below 100.",
+      "isos": [
+        "MMR"
+      ]
+    },
+    "beat_2": {
+      "supported": true,
+      "reason": "USA is 109.14 and China is 115.55.",
+      "isos": [
+        "USA",
+        "CHN"
+      ]
+    },
+    "beat_3": {
+      "supported": false,
+      "reason": "Base period is 2014-2016, not just 2016.",
+      "isos": []
+    },
+    "beat_4": {
+      "supported": true,
+      "reason": "Uganda (162.33), Indonesia (194.74), Malawi (211.36), and Guyana (225.05) match values and ascending order.",
+      "isos": [
+        "UGA",
+        "IDN",
+        "MWI",
+        "GUY"
+      ]
+    },
+    "beat_5": {
+      "supported": true,
+      "reason": "Guyana is rank 1 (highest) with 225.05, and 225.05 / 109.14 is approximately 2.06, well approximated as 2.1 times.",
+      "isos": [
+        "GUY",
+        "USA"
+      ]
+    },
+    "beat_6": {
+      "supported": true,
+      "reason": "Standard country video closing question.",
+      "isos": []
+    },
+    "card_6": {
+      "supported": true,
+      "reason": "Accurately references World Bank Livestock Production Index.",
+      "isos": []
+    }
+  }
+}

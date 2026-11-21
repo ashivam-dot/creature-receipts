@@ -153,8 +153,10 @@ Refreshed by every producer run (`atlas.stats`) from the channel's public feed o
 | atlas191 Who Pays for Healthcare in YOUR Country? | map_reveal | 2026-11-18 17:00 UTC | 3 | – | 0.1 |
 | atlas193 Which Country Reinvests the MOST in Fixed Assets? | odd_one_out | 2026-11-19 17:00 UTC | 2 | – | 0.1 |
 | atlas194 USA vs Nigeria: The Doctoral Degree Gap | versus | 2026-11-19 21:00 UTC | 1 | – | 0.0 |
-| atlas196 Places Ranked by Global Trade Share of GDP | rank_ladder | 2026-11-20 00:00 UTC | 1 | – | 0.1 |
-| atlas197 Places Ranked by University Gender Parity | map_reveal | 2026-11-20 17:00 UTC | 2 | – | 12.0 |
+| atlas196 Places Ranked by Global Trade Share of GDP | rank_ladder | 2026-11-20 00:00 UTC | 1 | – | 0.0 |
+| atlas197 Places Ranked by University Gender Parity | map_reveal | 2026-11-20 17:00 UTC | 10 | – | 1.2 |
+| atlas203 How Does the USA Compare on Daily Poverty? | spotlight | 2026-11-20 21:00 UTC | 2 | – | 0.5 |
+| atlas205 Places Ranked by Middle School Starting Age | rank_ladder | 2026-11-21 00:00 UTC | 0 | – | 0.0 |
 
 ## Log
 

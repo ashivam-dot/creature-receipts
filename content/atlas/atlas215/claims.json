@@ -1,0 +1,1557 @@
+{
+  "version": 1,
+  "evidence": {
+    "version": 1,
+    "indicator": "SE.TER.CUAT.ST.ZS",
+    "definition": "The percentage of population ages 25 and over that attained or completed short-cycle tertiary education.",
+    "source": "https://data.worldbank.org/indicator/SE.TER.CUAT.ST.ZS",
+    "source_response_sha256": "79e3bc1b09c09ee07d8d6c91d8422fc31cce7d770a6bad66ce2f8d918d27f18c",
+    "source_organization": "Data API, UN Educational, Scientific and Cultural Organization (UNESCO), uri: https://databrowser.uis.unesco.org/resources, note: The data are obtained through the UIS API.  Detailed documentation is available at: https://api.uis.unesco.org/api/public/documentation/, publisher: UNESCO Institute for Statistics (UIS), type: Bulk file (csv), date accessed: 2026-03-19, date published: 2026-02",
+    "year_label": "latest available 2019–2025",
+    "universe": "mapped countries and territories with data",
+    "count": 143,
+    "threshold": 25.0,
+    "at_or_above": 56,
+    "entities": {
+      "AFG": {
+        "name": "Afghanistan",
+        "value": 3.06798005104065,
+        "display": "3.1%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 138
+      },
+      "ALB": {
+        "name": "Albania",
+        "value": 20.4441699981689,
+        "display": "20.4%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 73
+      },
+      "AND": {
+        "name": "Andorra",
+        "value": 37.6311798095703,
+        "display": "37.6%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 31
+      },
+      "ARG": {
+        "name": "Argentina",
+        "value": 19.6210193634033,
+        "display": "19.6%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 76
+      },
+      "ARM": {
+        "name": "Armenia",
+        "value": 46.4019508361816,
+        "display": "46.4%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 14
+      },
+      "AUS": {
+        "name": "Australia",
+        "value": 47.4696135620576,
+        "display": "47.5%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 12
+      },
+      "AUT": {
+        "name": "Austria",
+        "value": 21.3424698378783,
+        "display": "21.3%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 72
+      },
+      "AZE": {
+        "name": "Azerbaijan",
+        "value": 27.6583690643311,
+        "display": "27.7%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 48
+      },
+      "BHS": {
+        "name": "Bahamas, The",
+        "value": 27.9082427867091,
+        "display": "27.9%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 47
+      },
+      "BHR": {
+        "name": "Bahrain",
+        "value": 39.8261604309082,
+        "display": "39.8%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 23
+      },
+      "BGD": {
+        "name": "Bangladesh",
+        "value": 8.07693897617594,
+        "display": "8.1%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 121
+      },
+      "BLR": {
+        "name": "Belarus",
+        "value": 60.6895790100098,
+        "display": "60.7%",
+        "year": 2019,
+        "unit": "%",
+        "rank": 3
+      },
+      "BEL": {
+        "name": "Belgium",
+        "value": 37.9376161084135,
+        "display": "37.9%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 30
+      },
+      "BLZ": {
+        "name": "Belize",
+        "value": 17.0596904754639,
+        "display": "17.1%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 87
+      },
+      "BEN": {
+        "name": "Benin",
+        "value": 4.97073247960591,
+        "display": "5%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 133
+      },
+      "BTN": {
+        "name": "Bhutan",
+        "value": 11.7673823765718,
+        "display": "11.8%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 105
+      },
+      "BOL": {
+        "name": "Bolivia",
+        "value": 30.6995735980308,
+        "display": "30.7%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 41
+      },
+      "BIH": {
+        "name": "Bosnia and Herzegovina",
+        "value": 12.7694561708504,
+        "display": "12.8%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 100
+      },
+      "BWA": {
+        "name": "Botswana",
+        "value": 29.5961639110576,
+        "display": "29.6%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 45
+      },
+      "BRA": {
+        "name": "Brazil",
+        "value": 22.6748484401355,
+        "display": "22.7%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 62
+      },
+      "BRN": {
+        "name": "Brunei Darussalam",
+        "value": 23.3697316333066,
+        "display": "23.4%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 59
+      },
+      "BGR": {
+        "name": "Bulgaria",
+        "value": 26.3688540109966,
+        "display": "26.4%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 51
+      },
+      "BFA": {
+        "name": "Burkina Faso",
+        "value": 2.95264456809768,
+        "display": "3%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 139
+      },
+      "BDI": {
+        "name": "Burundi",
+        "value": 3.12869181623722,
+        "display": "3.1%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 137
+      },
+      "CPV": {
+        "name": "Cabo Verde",
+        "value": 11.2237300872803,
+        "display": "11.2%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 107
+      },
+      "KHM": {
+        "name": "Cambodia",
+        "value": 6.36587987229361,
+        "display": "6.4%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 127
+      },
+      "CAN": {
+        "name": "Canada",
+        "value": 49.2990112304688,
+        "display": "49.3%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 9
+      },
+      "CHL": {
+        "name": "Chile",
+        "value": 22.2672369170038,
+        "display": "22.3%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 66
+      },
+      "CHN": {
+        "name": "China",
+        "value": 16.1218109130859,
+        "display": "16.1%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 90
+      },
+      "COL": {
+        "name": "Colombia",
+        "value": 27.1546824879134,
+        "display": "27.2%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 50
+      },
+      "COM": {
+        "name": "Comoros",
+        "value": 12.6985812767079,
+        "display": "12.7%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 101
+      },
+      "COD": {
+        "name": "Congo, Dem. Rep.",
+        "value": 7.14558191082442,
+        "display": "7.1%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 124
+      },
+      "CRI": {
+        "name": "Costa Rica",
+        "value": 20.4235965804218,
+        "display": "20.4%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 74
+      },
+      "CIV": {
+        "name": "Cote d'Ivoire",
+        "value": 7.82509994506836,
+        "display": "7.8%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 123
+      },
+      "HRV": {
+        "name": "Croatia",
+        "value": 25.5602639891871,
+        "display": "25.6%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 52
+      },
+      "CYP": {
+        "name": "Cyprus",
+        "value": 43.8840364902164,
+        "display": "43.9%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 16
+      },
+      "CZE": {
+        "name": "Czechia",
+        "value": 22.0475927079592,
+        "display": "22%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 67
+      },
+      "DNK": {
+        "name": "Denmark",
+        "value": 38.2726956618589,
+        "display": "38.3%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 29
+      },
+      "ECU": {
+        "name": "Ecuador",
+        "value": 14.9744000549011,
+        "display": "15%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 96
+      },
+      "EGY": {
+        "name": "Egypt, Arab Rep.",
+        "value": 18.0522908453089,
+        "display": "18.1%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 81
+      },
+      "SLV": {
+        "name": "El Salvador",
+        "value": 8.49814987182617,
+        "display": "8.5%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 120
+      },
+      "EST": {
+        "name": "Estonia",
+        "value": 39.8767550806596,
+        "display": "39.9%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 22
+      },
+      "SWZ": {
+        "name": "Eswatini",
+        "value": 18.2794259503615,
+        "display": "18.3%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 80
+      },
+      "ETH": {
+        "name": "Ethiopia",
+        "value": 6.28919628564445,
+        "display": "6.3%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 128
+      },
+      "FIN": {
+        "name": "Finland",
+        "value": 38.8560087037551,
+        "display": "38.9%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 25
+      },
+      "FRA": {
+        "name": "France",
+        "value": 37.2115631431572,
+        "display": "37.2%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 32
+      },
+      "GMB": {
+        "name": "Gambia, The",
+        "value": 9.04933138656399,
+        "display": "9%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 118
+      },
+      "GEO": {
+        "name": "Georgia",
+        "value": 33.696159362793,
+        "display": "33.7%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 38
+      },
+      "DEU": {
+        "name": "Germany",
+        "value": 30.2490310190636,
+        "display": "30.2%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 43
+      },
+      "GHA": {
+        "name": "Ghana",
+        "value": 9.12111624193843,
+        "display": "9.1%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 116
+      },
+      "GRC": {
+        "name": "Greece",
+        "value": 29.6246579880532,
+        "display": "29.6%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 44
+      },
+      "GRD": {
+        "name": "Grenada",
+        "value": 18.4856956067658,
+        "display": "18.5%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 78
+      },
+      "GTM": {
+        "name": "Guatemala",
+        "value": 4.16229762058748,
+        "display": "4.2%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 135
+      },
+      "GNB": {
+        "name": "Guinea-Bissau",
+        "value": 5.86247857978476,
+        "display": "5.9%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 129
+      },
+      "HND": {
+        "name": "Honduras",
+        "value": 7.8963734073018,
+        "display": "7.9%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 122
+      },
+      "HKG": {
+        "name": "Hong Kong SAR, China",
+        "value": 25.2908835051679,
+        "display": "25.3%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 55
+      },
+      "HUN": {
+        "name": "Hungary",
+        "value": 27.4083320001262,
+        "display": "27.4%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 49
+      },
+      "ISL": {
+        "name": "Iceland",
+        "value": 40.1015824728699,
+        "display": "40.1%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 21
+      },
+      "IND": {
+        "name": "India",
+        "value": 12.3699246623116,
+        "display": "12.4%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 103
+      },
+      "IDN": {
+        "name": "Indonesia",
+        "value": 11.6762642292634,
+        "display": "11.7%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 106
+      },
+      "IRN": {
+        "name": "Iran, Islamic Rep.",
+        "value": 22.4732266148167,
+        "display": "22.5%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 65
+      },
+      "IRQ": {
+        "name": "Iraq",
+        "value": 16.5937873338467,
+        "display": "16.6%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 89
+      },
+      "IRL": {
+        "name": "Ireland",
+        "value": 51.2489253962772,
+        "display": "51.2%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 6
+      },
+      "ISR": {
+        "name": "Israel",
+        "value": 38.2999787289694,
+        "display": "38.3%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 28
+      },
+      "ITA": {
+        "name": "Italy",
+        "value": 17.6779142971432,
+        "display": "17.7%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 82
+      },
+      "JAM": {
+        "name": "Jamaica",
+        "value": 15.1773955842133,
+        "display": "15.2%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 93
+      },
+      "JOR": {
+        "name": "Jordan",
+        "value": 22.022439956665,
+        "display": "22%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 68
+      },
+      "KEN": {
+        "name": "Kenya",
+        "value": 5.53129287292324,
+        "display": "5.5%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 131
+      },
+      "KIR": {
+        "name": "Kiribati",
+        "value": 1.75561269202813,
+        "display": "1.8%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 142
+      },
+      "KOR": {
+        "name": "Korea, Rep.",
+        "value": 49.5557386831013,
+        "display": "49.6%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 8
+      },
+      "LAO": {
+        "name": "Lao PDR",
+        "value": 9.60343889436132,
+        "display": "9.6%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 111
+      },
+      "LVA": {
+        "name": "Latvia",
+        "value": 36.3576002292526,
+        "display": "36.4%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 34
+      },
+      "LTU": {
+        "name": "Lithuania",
+        "value": 41.3070548478587,
+        "display": "41.3%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 20
+      },
+      "LUX": {
+        "name": "Luxembourg",
+        "value": 46.4149276409813,
+        "display": "46.4%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 13
+      },
+      "MWI": {
+        "name": "Malawi",
+        "value": 2.01119212300535,
+        "display": "2%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 141
+      },
+      "MYS": {
+        "name": "Malaysia",
+        "value": 23.3401699066162,
+        "display": "23.3%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 60
+      },
+      "MLI": {
+        "name": "Mali",
+        "value": 3.89895331027847,
+        "display": "3.9%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 136
+      },
+      "MLT": {
+        "name": "Malta",
+        "value": 29.4801986010264,
+        "display": "29.5%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 46
+      },
+      "MHL": {
+        "name": "Marshall Islands",
+        "value": 17.3170741342596,
+        "display": "17.3%",
+        "year": 2019,
+        "unit": "%",
+        "rank": 85
+      },
+      "MUS": {
+        "name": "Mauritius",
+        "value": 12.4948302215615,
+        "display": "12.5%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 102
+      },
+      "MEX": {
+        "name": "Mexico",
+        "value": 19.7377434193622,
+        "display": "19.7%",
+        "year": 2025,
+        "unit": "%",
+        "rank": 75
+      },
+      "MDA": {
+        "name": "Moldova",
+        "value": 36.1526908874512,
+        "display": "36.2%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 35
+      },
+      "MNG": {
+        "name": "Mongolia",
+        "value": 31.15714018927,
+        "display": "31.2%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 40
+      },
+      "MNE": {
+        "name": "Montenegro",
+        "value": 23.6662154951619,
+        "display": "23.7%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 58
+      },
+      "MOZ": {
+        "name": "Mozambique",
+        "value": 2.68224724138113,
+        "display": "2.7%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 140
+      },
+      "MMR": {
+        "name": "Myanmar",
+        "value": 9.35006999969482,
+        "display": "9.4%",
+        "year": 2019,
+        "unit": "%",
+        "rank": 114
+      },
+      "NAM": {
+        "name": "Namibia",
+        "value": 11.9281902313232,
+        "display": "11.9%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 104
+      },
+      "NLD": {
+        "name": "Netherlands",
+        "value": 38.8793355154994,
+        "display": "38.9%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 24
+      },
+      "NZL": {
+        "name": "New Zealand",
+        "value": 36.6420288085938,
+        "display": "36.6%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 33
+      },
+      "NER": {
+        "name": "Niger",
+        "value": 1.25274302313289,
+        "display": "1.3%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 143
+      },
+      "NGA": {
+        "name": "Nigeria",
+        "value": 9.06483713814857,
+        "display": "9.1%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 117
+      },
+      "MKD": {
+        "name": "North Macedonia",
+        "value": 22.5063307620395,
+        "display": "22.5%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 64
+      },
+      "NOR": {
+        "name": "Norway",
+        "value": 43.2877065871803,
+        "display": "43.3%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 17
+      },
+      "PAK": {
+        "name": "Pakistan",
+        "value": 8.62528481047306,
+        "display": "8.6%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 119
+      },
+      "PLW": {
+        "name": "Palau",
+        "value": 30.6633906633906,
+        "display": "30.7%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 42
+      },
+      "PAN": {
+        "name": "Panama",
+        "value": 14.9976496679402,
+        "display": "15%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 95
+      },
+      "PNG": {
+        "name": "Papua New Guinea",
+        "value": 10.5328141561151,
+        "display": "10.5%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 108
+      },
+      "PRY": {
+        "name": "Paraguay",
+        "value": 15.9307298660278,
+        "display": "15.9%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 91
+      },
+      "PER": {
+        "name": "Peru",
+        "value": 14.8599917769213,
+        "display": "14.9%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 97
+      },
+      "PHL": {
+        "name": "Philippines",
+        "value": 24.8367235641757,
+        "display": "24.8%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 57
+      },
+      "POL": {
+        "name": "Poland",
+        "value": 33.321400037011,
+        "display": "33.3%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 39
+      },
+      "PRT": {
+        "name": "Portugal",
+        "value": 25.144047514785,
+        "display": "25.1%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 56
+      },
+      "PRI": {
+        "name": "Puerto Rico (US)",
+        "value": 38.5798367024225,
+        "display": "38.6%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 27
+      },
+      "ROU": {
+        "name": "Romania",
+        "value": 15.3039912343275,
+        "display": "15.3%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 92
+      },
+      "RUS": {
+        "name": "Russian Federation",
+        "value": 64.0885696411133,
+        "display": "64.1%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 1
+      },
+      "RWA": {
+        "name": "Rwanda",
+        "value": 6.50115156227043,
+        "display": "6.5%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 125
+      },
+      "WSM": {
+        "name": "Samoa",
+        "value": 21.4767878891778,
+        "display": "21.5%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 71
+      },
+      "SMR": {
+        "name": "San Marino",
+        "value": 18.3851299285889,
+        "display": "18.4%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 79
+      },
+      "SAU": {
+        "name": "Saudi Arabia",
+        "value": 43.0219993591309,
+        "display": "43%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 18
+      },
+      "SEN": {
+        "name": "Senegal",
+        "value": 5.21295364218172,
+        "display": "5.2%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 132
+      },
+      "SRB": {
+        "name": "Serbia",
+        "value": 25.4392003166186,
+        "display": "25.4%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 53
+      },
+      "SYC": {
+        "name": "Seychelles",
+        "value": 38.755088138812,
+        "display": "38.8%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 26
+      },
+      "SGP": {
+        "name": "Singapore",
+        "value": 53.1933910509211,
+        "display": "53.2%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 5
+      },
+      "SVK": {
+        "name": "Slovak Republic",
+        "value": 25.430922995554,
+        "display": "25.4%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 54
+      },
+      "SVN": {
+        "name": "Slovenia",
+        "value": 34.6595898759442,
+        "display": "34.7%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 37
+      },
+      "SOM": {
+        "name": "Somalia, Fed. Rep.",
+        "value": 9.59552807765718,
+        "display": "9.6%",
+        "year": 2019,
+        "unit": "%",
+        "rank": 112
+      },
+      "ZAF": {
+        "name": "South Africa",
+        "value": 17.2846202850342,
+        "display": "17.3%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 86
+      },
+      "ESP": {
+        "name": "Spain",
+        "value": 35.4111354624227,
+        "display": "35.4%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 36
+      },
+      "LKA": {
+        "name": "Sri Lanka",
+        "value": 5.53563022613525,
+        "display": "5.5%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 130
+      },
+      "LCA": {
+        "name": "St. Lucia",
+        "value": 9.25032043457031,
+        "display": "9.3%",
+        "year": 2019,
+        "unit": "%",
+        "rank": 115
+      },
+      "SDN": {
+        "name": "Sudan",
+        "value": 10.1474243610327,
+        "display": "10.1%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 109
+      },
+      "SWE": {
+        "name": "Sweden",
+        "value": 45.2151574712396,
+        "display": "45.2%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 15
+      },
+      "CHE": {
+        "name": "Switzerland",
+        "value": 41.6142824106006,
+        "display": "41.6%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 19
+      },
+      "THA": {
+        "name": "Thailand",
+        "value": 16.7217113253348,
+        "display": "16.7%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 88
+      },
+      "TLS": {
+        "name": "Timor-Leste",
+        "value": 22.6706199645996,
+        "display": "22.7%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 63
+      },
+      "TGO": {
+        "name": "Togo",
+        "value": 6.40779577131881,
+        "display": "6.4%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 126
+      },
+      "TON": {
+        "name": "Tonga",
+        "value": 21.6669594119604,
+        "display": "21.7%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 70
+      },
+      "TTO": {
+        "name": "Trinidad and Tobago",
+        "value": 19.1524861878453,
+        "display": "19.2%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 77
+      },
+      "TUN": {
+        "name": "Tunisia",
+        "value": 15.0153462211489,
+        "display": "15%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 94
+      },
+      "TUR": {
+        "name": "Turkiye",
+        "value": 21.8643391177776,
+        "display": "21.9%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 69
+      },
+      "TKM": {
+        "name": "Turkmenistan",
+        "value": 17.4109401702881,
+        "display": "17.4%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 84
+      },
+      "UGA": {
+        "name": "Uganda",
+        "value": 9.45376513301792,
+        "display": "9.5%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 113
+      },
+      "UKR": {
+        "name": "Ukraine",
+        "value": 47.7902248280419,
+        "display": "47.8%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 11
+      },
+      "ARE": {
+        "name": "United Arab Emirates",
+        "value": 55.6705284118652,
+        "display": "55.7%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 4
+      },
+      "GBR": {
+        "name": "United Kingdom",
+        "value": 48.6701393127441,
+        "display": "48.7%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 10
+      },
+      "USA": {
+        "name": "United States",
+        "value": 49.8328997138149,
+        "display": "49.8%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 7
+      },
+      "URY": {
+        "name": "Uruguay",
+        "value": 13.4786728359913,
+        "display": "13.5%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 99
+      },
+      "UZB": {
+        "name": "Uzbekistan",
+        "value": 61.5149002075195,
+        "display": "61.5%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 2
+      },
+      "VUT": {
+        "name": "Vanuatu",
+        "value": 4.63732258807675,
+        "display": "4.6%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 134
+      },
+      "VNM": {
+        "name": "Viet Nam",
+        "value": 14.847107507825,
+        "display": "14.8%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 98
+      },
+      "PSE": {
+        "name": "West Bank and Gaza",
+        "value": 22.7881549561137,
+        "display": "22.8%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 61
+      },
+      "ZMB": {
+        "name": "Zambia",
+        "value": 10.0558784064055,
+        "display": "10.1%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 110
+      },
+      "ZWE": {
+        "name": "Zimbabwe",
+        "value": 17.4166200049036,
+        "display": "17.4%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 83
+      }
+    }
+  },
+  "review": {
+    "errors": [],
+    "claims": [
+      {
+        "surface": "description",
+        "text": "Nearly two-thirds of Russian adults hold short-cycle tertiary qualifications",
+        "isos": [
+          "RUS"
+        ],
+        "support": "64.1%",
+        "evidence": {
+          "RUS": {
+            "name": "Russian Federation",
+            "value": 64.0885696411133,
+            "display": "64.1%",
+            "year": 2021,
+            "unit": "%",
+            "rank": 1
+          }
+        }
+      },
+      {
+        "surface": "description",
+        "text": "compared to just 12.4% in India",
+        "isos": [
+          "IND"
+        ],
+        "support": "12.4%",
+        "evidence": {
+          "IND": {
+            "name": "India",
+            "value": 12.3699246623116,
+            "display": "12.4%",
+            "year": 2021,
+            "unit": "%",
+            "rank": 103
+          }
+        }
+      },
+      {
+        "surface": "beat_0",
+        "text": "In Russia, 64.1% of adults hold short-cycle tertiary qualifications.",
+        "isos": [
+          "RUS"
+        ],
+        "support": "64.1%",
+        "evidence": {
+          "RUS": {
+            "name": "Russian Federation",
+            "value": 64.0885696411133,
+            "display": "64.1%",
+            "year": 2021,
+            "unit": "%",
+            "rank": 1
+          }
+        }
+      },
+      {
+        "surface": "beat_0",
+        "text": "In India, only 12.4%.",
+        "isos": [
+          "IND"
+        ],
+        "support": "12.4%",
+        "evidence": {
+          "IND": {
+            "name": "India",
+            "value": 12.3699246623116,
+            "display": "12.4%",
+            "year": 2021,
+            "unit": "%",
+            "rank": 103
+          }
+        }
+      },
+      {
+        "surface": "beat_1",
+        "text": "Russia is the world's highest, leading all 143 countries and territories on the globe.",
+        "isos": [
+          "RUS"
+        ],
+        "support": "rank 1",
+        "evidence": {
+          "RUS": {
+            "name": "Russian Federation",
+            "value": 64.0885696411133,
+            "display": "64.1%",
+            "year": 2021,
+            "unit": "%",
+            "rank": 1
+          }
+        }
+      },
+      {
+        "surface": "beat_5",
+        "text": "The rest of the world falls in between, with a median of 21.3%.",
+        "isos": [],
+        "support": "21.3%",
+        "evidence": {}
+      },
+      {
+        "surface": "title",
+        "text": "Russia vs India: Higher Education Divide",
+        "isos": [
+          "RUS",
+          "IND"
+        ],
+        "support": "The title frames a comparison between Russia and India regarding short-cycle tertiary education.",
+        "method": "complete-surface-check",
+        "evidence": {
+          "RUS": {
+            "name": "Russian Federation",
+            "value": 64.0885696411133,
+            "display": "64.1%",
+            "year": 2021,
+            "unit": "%",
+            "rank": 1
+          },
+          "IND": {
+            "name": "India",
+            "value": 12.3699246623116,
+            "display": "12.4%",
+            "year": 2021,
+            "unit": "%",
+            "rank": 103
+          }
+        }
+      },
+      {
+        "surface": "hook",
+        "text": "RUSSIA VS INDIA",
+        "isos": [
+          "RUS",
+          "IND"
+        ],
+        "support": "The hook introduces the comparison between Russia and India.",
+        "method": "complete-surface-check",
+        "evidence": {
+          "RUS": {
+            "name": "Russian Federation",
+            "value": 64.0885696411133,
+            "display": "64.1%",
+            "year": 2021,
+            "unit": "%",
+            "rank": 1
+          },
+          "IND": {
+            "name": "India",
+            "value": 12.3699246623116,
+            "display": "12.4%",
+            "year": 2021,
+            "unit": "%",
+            "rank": 103
+          }
+        }
+      },
+      {
+        "surface": "description",
+        "text": "Nearly two-thirds of Russian adults hold short-cycle tertiary qualifications, compared to just 12.4% in India. Here is how both nations compare.",
+        "isos": [
+          "RUS",
+          "IND"
+        ],
+        "support": "The values 64.1% for Russia and 12.4% for India are supported by the evidence.",
+        "method": "complete-surface-check",
+        "evidence": {
+          "RUS": {
+            "name": "Russian Federation",
+            "value": 64.0885696411133,
+            "display": "64.1%",
+            "year": 2021,
+            "unit": "%",
+            "rank": 1
+          },
+          "IND": {
+            "name": "India",
+            "value": 12.3699246623116,
+            "display": "12.4%",
+            "year": 2021,
+            "unit": "%",
+            "rank": 103
+          }
+        }
+      },
+      {
+        "surface": "beat_0",
+        "text": "In Russia, 64.1% of adults hold short-cycle tertiary qualifications. In India, only 12.4%.",
+        "isos": [
+          "RUS",
+          "IND"
+        ],
+        "support": "The values 64.1% and 12.4% are supported by the evidence.",
+        "method": "complete-surface-check",
+        "evidence": {
+          "RUS": {
+            "name": "Russian Federation",
+            "value": 64.0885696411133,
+            "display": "64.1%",
+            "year": 2021,
+            "unit": "%",
+            "rank": 1
+          },
+          "IND": {
+            "name": "India",
+            "value": 12.3699246623116,
+            "display": "12.4%",
+            "year": 2021,
+            "unit": "%",
+            "rank": 103
+          }
+        }
+      },
+      {
+        "surface": "beat_1",
+        "text": "Russia is the world's highest, leading all 143 countries and territories on the globe.",
+        "isos": [
+          "RUS"
+        ],
+        "support": "Russia is ranked 1st out of 143 entities.",
+        "method": "complete-surface-check",
+        "evidence": {
+          "RUS": {
+            "name": "Russian Federation",
+            "value": 64.0885696411133,
+            "display": "64.1%",
+            "year": 2021,
+            "unit": "%",
+            "rank": 1
+          }
+        }
+      },
+      {
+        "surface": "beat_2",
+        "text": "India falls far behind, where few adults finish this stage of education.",
+        "isos": [
+          "IND"
+        ],
+        "support": "India's value of 12.4% is significantly lower than the top-ranked countries.",
+        "method": "complete-surface-check",
+        "evidence": {
+          "IND": {
+            "name": "India",
+            "value": 12.3699246623116,
+            "display": "12.4%",
+            "year": 2021,
+            "unit": "%",
+            "rank": 103
+          }
+        }
+      },
+      {
+        "surface": "beat_3",
+        "text": "The benchmark counts the population ages 25 and over that completed short-cycle tertiary education.",
+        "isos": [],
+        "support": "The text accurately reflects the definition provided in the evidence.",
+        "method": "complete-surface-check",
+        "evidence": {}
+      },
+      {
+        "surface": "beat_4",
+        "text": "Side by side, the gap between both nations is massive.",
+        "isos": [
+          "RUS",
+          "IND"
+        ],
+        "support": "The gap between 64.1% and 12.4% is objectively large.",
+        "method": "complete-surface-check",
+        "evidence": {
+          "RUS": {
+            "name": "Russian Federation",
+            "value": 64.0885696411133,
+            "display": "64.1%",
+            "year": 2021,
+            "unit": "%",
+            "rank": 1
+          },
+          "IND": {
+            "name": "India",
+            "value": 12.3699246623116,
+            "display": "12.4%",
+            "year": 2021,
+            "unit": "%",
+            "rank": 103
+          }
+        }
+      },
+      {
+        "surface": "beat_5",
+        "text": "The rest of the world falls in between, with a median of 21.3%.",
+        "isos": [],
+        "support": "The median value of the dataset is 21.3%.",
+        "method": "complete-surface-check",
+        "evidence": {}
+      },
+      {
+        "surface": "beat_6",
+        "text": "How common is short-cycle tertiary education where you live?",
+        "isos": [],
+        "support": "This is a rhetorical question.",
+        "method": "complete-surface-check",
+        "evidence": {}
+      },
+      {
+        "surface": "card_6",
+        "text": [
+          "What about you?",
+          "Adults with short-cycle tertiary (%)"
+        ],
+        "isos": [],
+        "support": "The card text matches the indicator definition.",
+        "method": "complete-surface-check",
+        "evidence": {}
+      }
+    ],
+    "surface_checks": {
+      "title": {
+        "supported": true,
+        "reason": "The title frames a comparison between Russia and India regarding short-cycle tertiary education.",
+        "isos": [
+          "RUS",
+          "IND"
+        ]
+      },
+      "hook": {
+        "supported": true,
+        "reason": "The hook introduces the comparison between Russia and India.",
+        "isos": [
+          "RUS",
+          "IND"
+        ]
+      },
+      "description": {
+        "supported": true,
+        "reason": "The values 64.1% for Russia and 12.4% for India are supported by the evidence.",
+        "isos": [
+          "RUS",
+          "IND"
+        ]
+      },
+      "beat_0": {
+        "supported": true,
+        "reason": "The values 64.1% and 12.4% are supported by the evidence.",
+        "isos": [
+          "RUS",
+          "IND"
+        ]
+      },
+      "beat_1": {
+        "supported": true,
+        "reason": "Russia is ranked 1st out of 143 entities.",
+        "isos": [
+          "RUS"
+        ]
+      },
+      "beat_2": {
+        "supported": true,
+        "reason": "India's value of 12.4% is significantly lower than the top-ranked countries.",
+        "isos": [
+          "IND"
+        ]
+      },
+      "beat_3": {
+        "supported": true,
+        "reason": "The text accurately reflects the definition provided in the evidence.",
+        "isos": []
+      },
+      "beat_4": {
+        "supported": true,
+        "reason": "The gap between 64.1% and 12.4% is objectively large.",
+        "isos": [
+          "RUS",
+          "IND"
+        ]
+      },
+      "beat_5": {
+        "supported": true,
+        "reason": "The median value of the dataset is 21.3%.",
+        "isos": []
+      },
+      "beat_6": {
+        "supported": true,
+        "reason": "This is a rhetorical question.",
+        "isos": []
+      },
+      "card_6": {
+        "supported": true,
+        "reason": "The card text matches the indicator definition.",
+        "isos": []
+      }
+    },
+    "warnings": []
+  },
+  "script_sha256": "04896a12ca5af0fb4314272ea7874b17bca9d7d2e0cffb26cdf5f604569adcd9",
+  "data_sha256": "f85ba2415b6286c3287b77a0faf8f396d43056559590f7302f83734b5ec51284",
+  "reviewer_model": "gemini-3.1-flash-lite"
+}

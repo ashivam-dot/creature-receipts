@@ -1,0 +1,72 @@
+id: atlas218
+title: Which Country Has the MOST Industrial Employment?
+format: odd_one_out
+hook_text: INDUSTRIAL EXTREMES
+description: Industrial employment share across 184 countries and territories from the World Bank.
+hashtags:
+- '#work'
+- '#mapshandler'
+- '#geography'
+tags:
+- work
+- industrial employment share
+- countries ranked by industrial employment share
+- Oman
+- South Sudan
+- world map
+- geography
+- atlas in numbers
+sources:
+- https://data.worldbank.org/indicator/SL.IND.EMPL.ZS
+dataset:
+  kind: worldbank
+  indicator: SL.IND.EMPL.ZS
+  label: Industrial employment share
+  unit: '%'
+  source: World Bank
+  min_year: 2019
+scale:
+  edges:
+  - 10.0
+  - 18.0
+  - 25.0
+  - 32.0
+  labels:
+  - Under 10%
+  - 10% to 18%
+  - 18% to 25%
+  - 25% to 32%
+  - Over 32%
+value_format: '{v:.1f}%'
+beats:
+- text: Oman has 39.4% in industry. In South Sudan, it's 1.7%.
+  shot:
+    callouts:
+    - OMN
+    - SSD
+- text: Oman has 23 times the share found in South Sudan.
+  shot:
+    kind: country
+    iso: OMN
+- text: The industry sector consists of mining and quarrying, manufacturing, construction, and public utilities.
+  basis: The industry sector consists of mining and quarrying, manufacturing, construction, and public utilities
+    (electricity, gas, and water), in accordance with divisions 2-5 (ISIC 2) or categories C-F (ISIC 3) or categories
+    B-F (ISIC 4).
+- text: USA is 18.9% and China is 31.8%.
+  shot:
+    kind: group
+    isos:
+    - USA
+    - CHN
+- text: At the bottom, East Timor has 3.8% and Burundi has 3.1%.
+  shot:
+    kind: group
+    isos:
+    - TLS
+    - BDI
+- text: How large is the industrial workforce where you live?
+  shot:
+    kind: card
+    lines:
+    - What sector employs you?
+    - Industrial Employment Share

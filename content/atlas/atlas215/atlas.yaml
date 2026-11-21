@@ -1,0 +1,64 @@
+id: atlas215
+title: 'Russia vs India: Higher Education Divide'
+format: versus
+hook_text: RUSSIA VS INDIA
+description: Nearly two-thirds of Russian adults hold short-cycle tertiary qualifications, compared to just 12.4%
+  in India. Here is how both nations compare.
+hashtags:
+- '#education'
+- '#geography'
+- '#countries'
+tags:
+- education
+- adults with short-cycle tertiary
+- countries ranked by adults with short-cycle tertiary
+- Russian Federation
+- Niger
+- world map
+- geography
+- atlas in numbers
+sources:
+- https://data.worldbank.org/indicator/SE.TER.CUAT.ST.ZS
+dataset:
+  kind: worldbank
+  indicator: SE.TER.CUAT.ST.ZS
+  label: Adults with short-cycle tertiary
+  unit: '%'
+  source: World Bank
+  min_year: 2019
+scale:
+  kind: threshold
+  at: 25.0
+  labels:
+  - Above 25%
+  - Below 25%
+value_format: '{v:.1f}%'
+beats:
+- text: In Russia, 64.1% of adults hold short-cycle tertiary qualifications. In India, only 12.4%.
+  shot:
+    callouts:
+    - RUS
+    - IND
+- text: Russia is the world's highest, leading all 143 countries and territories on the globe.
+  shot:
+    kind: country
+    iso: RUS
+- text: India falls far behind, where few adults finish this stage of education.
+  shot:
+    kind: country
+    iso: IND
+- text: The benchmark counts the population ages 25 and over that completed short-cycle tertiary education.
+  basis: percentage of population ages 25 and over that attained or completed short-cycle tertiary education
+- text: Side by side, the gap between both nations is massive.
+  shot:
+    kind: group
+    isos:
+    - RUS
+    - IND
+- text: The rest of the world falls in between, with a median of 21.3%.
+- text: How common is short-cycle tertiary education where you live?
+  shot:
+    kind: card
+    lines:
+    - What about you?
+    - Adults with short-cycle tertiary (%)

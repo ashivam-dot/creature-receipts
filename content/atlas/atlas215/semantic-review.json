@@ -1,0 +1,127 @@
+{
+  "errors": [],
+  "claims": [
+    {
+      "surface": "description",
+      "text": "Nearly two-thirds of Russian adults hold short-cycle tertiary qualifications",
+      "isos": [
+        "RUS"
+      ],
+      "support": "64.1%"
+    },
+    {
+      "surface": "description",
+      "text": "compared to just 12.4% in India",
+      "isos": [
+        "IND"
+      ],
+      "support": "12.4%"
+    },
+    {
+      "surface": "beat_0",
+      "text": "In Russia, 64.1% of adults hold short-cycle tertiary qualifications.",
+      "isos": [
+        "RUS"
+      ],
+      "support": "64.1%"
+    },
+    {
+      "surface": "beat_0",
+      "text": "In India, only 12.4%.",
+      "isos": [
+        "IND"
+      ],
+      "support": "12.4%"
+    },
+    {
+      "surface": "beat_1",
+      "text": "Russia is the world's highest, leading all 143 countries and territories on the globe.",
+      "isos": [
+        "RUS"
+      ],
+      "support": "rank 1"
+    },
+    {
+      "surface": "beat_5",
+      "text": "The rest of the world falls in between, with a median of 21.3%.",
+      "isos": [],
+      "support": "21.3%"
+    }
+  ],
+  "surface_checks": {
+    "title": {
+      "supported": true,
+      "reason": "The title frames a comparison between Russia and India regarding short-cycle tertiary education.",
+      "isos": [
+        "RUS",
+        "IND"
+      ]
+    },
+    "hook": {
+      "supported": true,
+      "reason": "The hook introduces the comparison between Russia and India.",
+      "isos": [
+        "RUS",
+        "IND"
+      ]
+    },
+    "description": {
+      "supported": true,
+      "reason": "The values 64.1% for Russia and 12.4% for India are supported by the evidence.",
+      "isos": [
+        "RUS",
+        "IND"
+      ]
+    },
+    "beat_0": {
+      "supported": true,
+      "reason": "The values 64.1% and 12.4% are supported by the evidence.",
+      "isos": [
+        "RUS",
+        "IND"
+      ]
+    },
+    "beat_1": {
+      "supported": true,
+      "reason": "Russia is ranked 1st out of 143 entities.",
+      "isos": [
+        "RUS"
+      ]
+    },
+    "beat_2": {
+      "supported": true,
+      "reason": "India's value of 12.4% is significantly lower than the top-ranked countries.",
+      "isos": [
+        "IND"
+      ]
+    },
+    "beat_3": {
+      "supported": true,
+      "reason": "The text accurately reflects the definition provided in the evidence.",
+      "isos": []
+    },
+    "beat_4": {
+      "supported": true,
+      "reason": "The gap between 64.1% and 12.4% is objectively large.",
+      "isos": [
+        "RUS",
+        "IND"
+      ]
+    },
+    "beat_5": {
+      "supported": true,
+      "reason": "The median value of the dataset is 21.3%.",
+      "isos": []
+    },
+    "beat_6": {
+      "supported": true,
+      "reason": "This is a rhetorical question.",
+      "isos": []
+    },
+    "card_6": {
+      "supported": true,
+      "reason": "The card text matches the indicator definition.",
+      "isos": []
+    }
+  }
+}

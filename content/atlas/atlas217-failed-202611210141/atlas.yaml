@@ -1,0 +1,80 @@
+id: atlas217
+title: The Great Greenhouse Gas Divide
+hook_text: EMISSIONS DIVIDE
+description: Compare the change in greenhouse gas emissions since 1990, from the rising output in the median country
+  to the sharp falls in Europe.
+hashtags:
+- '#data'
+- '#emissions'
+- '#geography'
+tags:
+- change in ghg emissions since 1990
+- countries ranked by change in ghg emissions since 1990
+- Equatorial Guinea
+- Ukraine
+- world map
+- geography
+- atlas in numbers
+sources:
+- https://data.worldbank.org/indicator/EN.GHG.TOT.ZG.AR5
+dataset:
+  kind: worldbank
+  indicator: EN.GHG.TOT.ZG.AR5
+  label: Change in GHG emissions since 1990
+  unit: '%'
+  source: World Bank
+  min_year: 2019
+scale:
+  edges:
+  - 0.0
+  - 87.6
+  - 250.0
+  - 1000.0
+  labels:
+  - Decreased
+  - 0-88% increase
+  - 88-250% increase
+  - 250-1000% increase
+  - Over 1000% increase
+value_format: '{v:+.1f}%'
+beats:
+- text: The median country's emissions rose 87.6 percent. In the UK, they fell 50.3 percent.
+  shot:
+    callouts:
+    - GBR
+- text: Brazil's emissions rose 100 percent.
+  shot:
+    kind: country
+    iso: BRA
+- text: It counts energy and agriculture but excludes land use and forestry.
+  shot:
+    kind: country
+    iso: BRA
+  basis: This measure excludes GHG fluxes caused by Land Use Change Land Use and Forestry (LULUCF)
+- text: Ukraine is the world's lowest, falling 79.9 percent.
+  shot:
+    kind: country
+    iso: UKR
+- text: Estonia is down 69 percent, Moldova 68.8 percent, and Romania 57.7 percent.
+  shot:
+    kind: rank
+    isos:
+    - EST
+    - MDA
+    - ROU
+- text: The USA saw a smaller fall of 4.9 percent.
+  shot:
+    kind: country
+    iso: USA
+- text: Nigeria grew 34.4 percent. Brazil has 2.9 times that growth.
+  shot:
+    kind: group
+    isos:
+    - BRA
+    - NGA
+- text: Are we doing enough to cut greenhouse gases?
+  shot:
+    kind: card
+    lines:
+    - CUT EMISSIONS?
+    - GHG EMISSIONS SINCE 1990

@@ -6778,7 +6778,7 @@
    "id": "t187",
    "topic": "Global Livestock Production Trends",
    "angle": "Guyana has more than doubled its livestock output since 2016, reaching the highest growth index worldwide.",
-   "format": "map_reveal",
+   "format": "rank_ladder",
    "dataset": {
     "kind": "worldbank",
     "indicator": "AG.PRD.LVSK.XD",
@@ -6810,7 +6810,7 @@
     "#agriculture"
    ],
    "source_url": "https://data.worldbank.org/indicator/AG.PRD.LVSK.XD",
-   "status": "open",
+   "status": "failed:ValueError",
    "added_by": "refill"
   },
   {
@@ -6966,7 +6966,7 @@
     "#emissions"
    ],
    "source_url": "https://data.worldbank.org/indicator/EN.GHG.TOT.ZG.AR5",
-   "status": "open",
+   "status": "failed:RuntimeError",
    "added_by": "refill"
   },
   {
@@ -7013,7 +7013,7 @@
    "id": "t193",
    "topic": "Global Industrial Employment Rates",
    "angle": "Industrial jobs account for over a third of total employment in countries like Czechia and Viet Nam, but less than four percent in Timor-Leste and Burundi.",
-   "format": "map_reveal",
+   "format": "odd_one_out",
    "dataset": {
     "kind": "worldbank",
     "indicator": "SL.IND.EMPL.ZS",
@@ -7045,7 +7045,7 @@
     "#jobs"
    ],
    "source_url": "https://data.worldbank.org/indicator/SL.IND.EMPL.ZS",
-   "status": "open",
+   "status": "failed:RuntimeError",
    "added_by": "refill"
   },
   {
@@ -8219,7 +8219,7 @@
    "id": "t225",
    "topic": "Russia Leads Short-Cycle Tertiary",
    "angle": "Nearly two-thirds of Russian adults hold short-cycle tertiary qualifications, more than 50 times the rate in Niger.",
-   "format": "rank_ladder",
+   "format": "versus",
    "dataset": {
     "kind": "worldbank",
     "indicator": "SE.TER.CUAT.ST.ZS",
@@ -8243,7 +8243,7 @@
     "#education"
    ],
    "source_url": "https://data.worldbank.org/indicator/SE.TER.CUAT.ST.ZS",
-   "status": "open",
+   "status": "ready:atlas215",
    "added_by": "refill"
   },
   {

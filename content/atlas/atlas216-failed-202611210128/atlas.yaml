@@ -1,0 +1,80 @@
+id: atlas216
+title: Places Ranked by Livestock Output Growth
+format: rank_ladder
+hook_text: LIVESTOCK INDEX GAP
+description: A global look at livestock production index trends, comparing global baselines against top growers
+  like Guyana.
+hashtags:
+- '#data'
+- '#agriculture'
+- '#geography'
+tags:
+- livestock production index
+- countries ranked by livestock production index
+- Guyana
+- Myanmar
+- world map
+- geography
+- atlas in numbers
+sources:
+- https://data.worldbank.org/indicator/AG.PRD.LVSK.XD
+dataset:
+  kind: worldbank
+  indicator: AG.PRD.LVSK.XD
+  label: Livestock production index
+  unit: index
+  source: World Bank
+  min_year: 2019
+scale:
+  edges:
+  - 90.0
+  - 110.0
+  - 130.0
+  - 160.0
+  labels:
+  - Shrinking
+  - Stable
+  - Growing
+  - Fast growth
+  - Booming
+value_format: '{v:.1f}'
+beats:
+- text: Myanmar sits at a livestock index of 46.5. USA hits 109.
+  shot:
+    callouts:
+    - MMR
+    - USA
+- text: Myanmar is the world's lowest, falling deep below base production levels.
+  shot:
+    kind: country
+    iso: MMR
+- text: Global giants stay near the baseline. USA is 109, and China sits at 116.
+  shot:
+    kind: group
+    isos:
+    - USA
+    - CHN
+- text: For the USA, aggregate volume is tracked against a baseline of 100.
+  shot:
+    kind: country
+    iso: USA
+  basis: The livestock production index measures changes in the aggregate volume of livestock production relative
+    to the 2014–2016 base period (2014–2016 = 100).
+- text: 'Climbing the top ranks: Uganda is 162, Indonesia is 195, Malawi is 211, and Tajikistan is 216.'
+  shot:
+    kind: rank
+    isos:
+    - UGA
+    - IDN
+    - MWI
+    - TJK
+- text: Guyana is the world's highest at 225, more than doubling its baseline output.
+  shot:
+    kind: country
+    iso: GUY
+- text: Is livestock production rising in your country?
+  shot:
+    kind: card
+    lines:
+    - Is livestock rising?
+    - Livestock Production Index (World Bank)

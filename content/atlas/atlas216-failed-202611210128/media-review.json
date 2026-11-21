@@ -1,0 +1,22 @@
+{
+  "duration": 39.32,
+  "integrated_lufs": -14.1,
+  "true_peak_dbfs": -1.5,
+  "speech": {
+    "heard": "USA has 109 on the Livestock Index, India has 155, Myanmar has 46.5, the world's lowest score. Major producers split apart, China has 116, while Germany has 93.3. Climbing toward the top, Tanzania has 188, Indonesia 195, Malawi 211, and Tajikistan At number one, Guyana has 225, the world's highest index. How fast is livestock farming growing in your country?",
+    "model": "small.en",
+    "media_sha256": "d1ab14dde7588fc97858307e42f16af9b59ee31cacdb3de5c1bf13b630c0dc0c",
+    "primary_differences": [
+      "'216' heard as '(nothing)' after '211 and tajikistan'"
+    ],
+    "differences": [
+      "'216' heard as '(nothing)' after '211 and tajikistan'"
+    ],
+    "corroboration": {
+      "model": "base.en",
+      "heard": "USA has 109 on the livestock index, India has 155, Myanmar has 46.5, the world's lowest score. Major producers split apart, China has 116, while Germany has 93.3. Climbing toward the top, Tanzania has 188, Indonesia 195, Malawi 211, and Tajikistan 216. At number one, Guyana has 225, the world's highest index. How fast is livestock farming growing in your country?",
+      "differences": [],
+      "resolved": []
+    }
+  }
+}
