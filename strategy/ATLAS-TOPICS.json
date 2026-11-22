@@ -7200,7 +7200,7 @@
     "#labor"
    ],
    "source_url": "https://data.worldbank.org/indicator/SL.TLF.ACTI.1524.ZS",
-   "status": "ready:atlas220",
+   "status": "used:atlas220",
    "added_by": "refill",
    "source_retries": 1
   },
@@ -7237,7 +7237,7 @@
    "id": "t199",
    "topic": "Civil Servant Pay in Public Spending",
    "angle": "Public employee salaries account for over half of total government expenses in several developing nations, compared to under six percent in Germany and Belgium.",
-   "format": "map_reveal",
+   "format": "rank_ladder",
    "dataset": {
     "kind": "worldbank",
     "indicator": "GC.XPN.COMP.ZS",
@@ -7267,7 +7267,7 @@
     "#mapsSend me raw json string inside json block or directly? Prompt says "
    ],
    "source_url": "https://data.worldbank.org/indicator/GC.XPN.COMP.ZS",
-   "status": "open",
+   "status": "ready:atlas224",
    "added_by": "refill"
   },
   {
@@ -7649,7 +7649,7 @@
    "id": "t210",
    "topic": "The Global Clean Energy Divide",
    "angle": "While Iceland derives nearly 90% of its total energy from clean sources, the global median remains surprisingly low at just 6.4%.",
-   "format": "rank_ladder",
+   "format": "map_reveal",
    "dataset": {
     "kind": "worldbank",
     "indicator": "EG.USE.COMM.CL.ZS",
@@ -7681,7 +7681,7 @@
     "#energy"
    ],
    "source_url": "https://data.worldbank.org/indicator/EG.USE.COMM.CL.ZS",
-   "status": "open",
+   "status": "ready:atlas222",
    "added_by": "refill"
   },
   {
@@ -7767,7 +7767,7 @@
    "id": "t213",
    "topic": "Government Spending on Social Transfers",
    "angle": "In nations like Czechia and Germany, over 80% of government expenditure is dedicated to subsidies and social transfers.",
-   "format": "rank_ladder",
+   "format": "versus",
    "dataset": {
     "kind": "worldbank",
     "indicator": "GC.XPN.TRFT.ZS",
@@ -7799,7 +7799,7 @@
     "#government"
    ],
    "source_url": "https://data.worldbank.org/indicator/GC.XPN.TRFT.ZS",
-   "status": "open",
+   "status": "ready:atlas223",
    "added_by": "refill"
   },
   {
@@ -8105,7 +8105,7 @@
     "#economics"
    ],
    "source_url": "https://data.worldbank.org/indicator/GC.XPN.INTP.RV.ZS",
-   "status": "ready:atlas221",
+   "status": "used:atlas221",
    "added_by": "refill"
   },
   {
@@ -8245,7 +8245,7 @@
     "#education"
    ],
    "source_url": "https://data.worldbank.org/indicator/SE.TER.CUAT.ST.ZS",
-   "status": "ready:atlas215",
+   "status": "used:atlas215",
    "added_by": "refill"
   },
   {
@@ -8440,7 +8440,7 @@
     "#urbanization"
    ],
    "source_url": "https://data.worldbank.org/indicator/SH.STA.BASS.UR.ZS",
-   "status": "ready:atlas214",
+   "status": "used:atlas214",
    "added_by": "refill"
   },
   {

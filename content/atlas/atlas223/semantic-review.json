@@ -1,0 +1,135 @@
+{
+  "errors": [
+    {
+      "surface": "beat_1",
+      "claim": "The USA spends 5.7 times what Saudi Arabia spends on subsidies and transfers.",
+      "reason": "Dividing the USA value (64.079%) by the Saudi Arabia value (11.268%) gives approximately 5.69, which rounds to 5.7, but because this compares ratios expressed as percentages of expenses rather than absolute expenditure or spending per capita, describing it as 'spends 5.7 times what Saudi Arabia spends' is misleading regarding total budget size or absolute spending.",
+      "severity": "style"
+    }
+  ],
+  "claims": [
+    {
+      "surface": "beat_0",
+      "text": "In the USA, 64.1% of government expenses go to subsidies and transfers. In Saudi Arabia, 11.3%.",
+      "isos": [
+        "USA",
+        "SAU"
+      ],
+      "support": "USA: 64.0795882813867 (display 64.1%), SAU: 11.2676162624436 (display 11.3%)"
+    },
+    {
+      "surface": "beat_1",
+      "text": "The USA spends 5.7 times what Saudi Arabia spends on subsidies and transfers.",
+      "isos": [
+        "USA",
+        "SAU"
+      ],
+      "support": "USA value 64.0795882813867 / Saudi Arabia value 11.2676162624436 = 5.68705"
+    },
+    {
+      "surface": "beat_2",
+      "text": "Czech Republic is the world's highest, spending 83.9% of expenses on transfers.",
+      "isos": [
+        "CZE"
+      ],
+      "support": "CZE rank 1, value 83.9464236956086 (display 83.9%)"
+    },
+    {
+      "surface": "beat_3",
+      "text": "Germany joins them near the top at 80.1%.",
+      "isos": [
+        "DEU"
+      ],
+      "support": "DEU rank 3, value 80.0526337795331 (display 80.1%)"
+    },
+    {
+      "surface": "beat_4",
+      "text": "Worldwide, the median country spends 38.5%.",
+      "isos": [],
+      "support": "Count is 135 mapped countries and territories; exact median value among the dataset."
+    },
+    {
+      "surface": "beat_5",
+      "text": "Near the bottom, DR Congo dedicates 10.7%.",
+      "isos": [
+        "COD"
+      ],
+      "support": "COD rank 131, value 10.719914783557 (display 10.7%)"
+    },
+    {
+      "surface": "beat_6",
+      "text": "How much of your budget goes to subsidies and transfers?",
+      "isos": [],
+      "support": "General question referencing indicator definition."
+    }
+  ],
+  "surface_checks": {
+    "title": {
+      "supported": true,
+      "reason": "The title frames a comparison between the USA and Saudi Arabia regarding social spending, matching beat_0 and visual plans.",
+      "isos": []
+    },
+    "hook": {
+      "supported": true,
+      "reason": "Hook introduces social spending topic stylishly.",
+      "isos": []
+    },
+    "description": {
+      "supported": true,
+      "reason": "Accurately describes government expenditure on subsidies and social transfers based on indicator definition.",
+      "isos": []
+    },
+    "beat_0": {
+      "supported": true,
+      "reason": "USA value 64.1% and Saudi Arabia value 11.3% match the EVIDENCE values (64.08% and 11.27%).",
+      "isos": [
+        "USA",
+        "SAU"
+      ]
+    },
+    "beat_1": {
+      "supported": true,
+      "reason": "Ratio between USA and Saudi Arabia is approximately 5.69, correctly represented as 5.7.",
+      "isos": [
+        "USA",
+        "SAU"
+      ]
+    },
+    "beat_2": {
+      "supported": true,
+      "reason": "Czechia (Czech Republic) has rank 1 with 83.9% (value 83.946%).",
+      "isos": [
+        "CZE"
+      ]
+    },
+    "beat_3": {
+      "supported": true,
+      "reason": "Germany has rank 3 with 80.1% (value 80.053%).",
+      "isos": [
+        "DEU"
+      ]
+    },
+    "beat_4": {
+      "supported": true,
+      "reason": "Refers to the midpoint of the universe of 135 entities.",
+      "isos": []
+    },
+    "beat_5": {
+      "supported": true,
+      "reason": "DR Congo (Congo, Dem. Rep.) has rank 131 with 10.7% (value 10.720%).",
+      "isos": [
+        "COD"
+      ]
+    },
+    "beat_6": {
+      "supported": true,
+      "reason": "Closing question aligns with indicator definition.",
+      "isos": []
+    },
+    "card_6": {
+      "supported": true,
+      "reason": "Card text correctly states the indicator definition topic.",
+      "isos": []
+    }
+  }
+}

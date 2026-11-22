@@ -1,0 +1,151 @@
+{
+  "errors": [
+    {
+      "surface": "beat_2",
+      "claim": "Iceland has 6.3 times that share",
+      "reason": "Iceland's value is 88.9% and USA is 14.1%, 88.9 / 14.1 is approximately 6.305 times, but wait, let's check exact calculation: 88.9 / 14.1 = 6.3049, so this is supported.",
+      "severity": "info"
+    }
+  ],
+  "claims": [
+    {
+      "surface": "description",
+      "text": "Iceland leads the world with 88.9% clean energy, while countries and territories like Turkmenistan rely on 0%.",
+      "isos": [
+        "ISL",
+        "TKM"
+      ],
+      "support": "Iceland: 88.9%, Turkmenistan: 0%"
+    },
+    {
+      "surface": "beat_0",
+      "text": "Iceland gets 88.9% of its energy from clean sources. Nigeria gets just 1.3%.",
+      "isos": [
+        "ISL",
+        "NGA"
+      ],
+      "support": "Iceland: 88.9%, Nigeria: 1.3%"
+    },
+    {
+      "surface": "beat_1",
+      "text": "At the world's lowest end, Turkmenistan relies on 0% clean energy.",
+      "isos": [
+        "TKM"
+      ],
+      "support": "Turkmenistan: 0%"
+    },
+    {
+      "surface": "beat_2",
+      "text": "The USA gets 14.1% clean energy, but Iceland has 6.3 times that share.",
+      "isos": [
+        "USA",
+        "ISL"
+      ],
+      "support": "USA: 14.1%, Iceland: 88.9%"
+    },
+    {
+      "surface": "beat_3",
+      "text": "India gets just 4.5% clean energy.",
+      "isos": [
+        "IND"
+      ],
+      "support": "India: 4.5%"
+    },
+    {
+      "surface": "beat_4",
+      "text": "Sweden gets 51.7%, France 51.4%, Paraguay 49.9%, and Norway 48.9%.",
+      "isos": [
+        "SWE",
+        "FRA",
+        "PRY",
+        "NOR"
+      ],
+      "support": "Sweden: 51.7%, France: 51.4%, Paraguay: 49.9%, Norway: 48.9%"
+    },
+    {
+      "surface": "beat_5",
+      "text": "China sits at 10.7%, far behind the leaders.",
+      "isos": [
+        "CHN"
+      ],
+      "support": "China: 10.7%"
+    }
+  ],
+  "surface_checks": {
+    "title": {
+      "supported": true,
+      "reason": "Title is a stylistic question framing.",
+      "isos": []
+    },
+    "hook": {
+      "supported": true,
+      "reason": "Style preference framing.",
+      "isos": []
+    },
+    "description": {
+      "supported": true,
+      "reason": "Iceland is 88.9% (rank 1) and Turkmenistan is 0%.",
+      "isos": [
+        "ISL",
+        "TKM"
+      ]
+    },
+    "beat_0": {
+      "supported": true,
+      "reason": "Iceland is 88.9% and Nigeria is 1.3%.",
+      "isos": [
+        "ISL",
+        "NGA"
+      ]
+    },
+    "beat_1": {
+      "supported": true,
+      "reason": "Turkmenistan is 0% (tied for lowest rank 146).",
+      "isos": [
+        "TKM"
+      ]
+    },
+    "beat_2": {
+      "supported": true,
+      "reason": "USA is 14.1% and Iceland is 88.9%.",
+      "isos": [
+        "USA",
+        "ISL"
+      ]
+    },
+    "beat_3": {
+      "supported": true,
+      "reason": "India is 4.5%.",
+      "isos": [
+        "IND"
+      ]
+    },
+    "beat_4": {
+      "supported": true,
+      "reason": "Sweden is 51.7%, France is 51.4%, Paraguay is 49.9%, Norway is 48.9%.",
+      "isos": [
+        "SWE",
+        "FRA",
+        "PRY",
+        "NOR"
+      ]
+    },
+    "beat_5": {
+      "supported": true,
+      "reason": "China is 10.7%.",
+      "isos": [
+        "CHN"
+      ]
+    },
+    "beat_6": {
+      "supported": true,
+      "reason": "Ordinary question framing.",
+      "isos": []
+    },
+    "card_6": {
+      "supported": true,
+      "reason": "Card text matches indicator definitions and year 2024.",
+      "isos": []
+    }
+  }
+}

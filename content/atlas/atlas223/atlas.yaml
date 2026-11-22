@@ -1,0 +1,70 @@
+id: atlas223
+title: 'USA vs Saudi Arabia: Social Spending Compared'
+format: versus
+hook_text: SOCIAL SPENDING SPLIT
+description: Comparing government expenditure on subsidies and social transfers across different nations.
+hashtags:
+- '#data'
+- '#economy'
+- '#geography'
+tags:
+- subsidies and transfers % of expense
+- countries ranked by subsidies and transfers % of expense
+- Czechia
+- Congo Dem. Rep.
+- world map
+- geography
+- atlas in numbers
+sources:
+- https://data.worldbank.org/indicator/GC.XPN.TRFT.ZS
+dataset:
+  kind: worldbank
+  indicator: GC.XPN.TRFT.ZS
+  label: Subsidies and transfers (% of expense)
+  unit: '%'
+  source: World Bank
+  min_year: 2019
+scale:
+  edges:
+  - 20.0
+  - 40.0
+  - 60.0
+  - 80.0
+  labels:
+  - Under 20%
+  - 20-40%
+  - 40-60%
+  - 60-80%
+  - Over 80%
+value_format: '{v:.1f}%'
+beats:
+- text: In the USA, 64.1% of government expenses go to subsidies and transfers. In Saudi Arabia, 11.3%.
+  shot:
+    callouts:
+    - USA
+    - SAU
+- text: The USA spends 5.7 times what Saudi Arabia spends on subsidies and transfers.
+  shot:
+    kind: group
+    isos:
+    - USA
+    - SAU
+- text: Czech Republic is the world's highest, spending 83.9% of expenses on transfers.
+  shot:
+    kind: country
+    iso: CZE
+- text: Germany joins them near the top at 80.1%.
+  shot:
+    kind: country
+    iso: DEU
+- text: Worldwide, the median country spends 38.5%.
+- text: Near the bottom, DR Congo dedicates 10.7%.
+  shot:
+    kind: country
+    iso: COD
+- text: How much of your budget goes to subsidies and transfers?
+  shot:
+    kind: card
+    lines:
+    - SOCIAL SPENDING?
+    - Subsidies and transfers (% of expense)

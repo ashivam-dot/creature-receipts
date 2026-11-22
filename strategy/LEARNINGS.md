@@ -149,15 +149,17 @@ Refreshed by every producer run (`atlas.stats`) from the channel's public feed o
 | atlas186 Places Ranked by Rural Population Growth | rank_ladder | 2026-11-17 17:00 UTC | 8 | – | 0.1 |
 | atlas187 Which Country Has the MOST Stable Prices? | odd_one_out | 2026-11-18 00:00 UTC | 0 | – | 0.0 |
 | atlas188 Eswatini vs USA: Dependency on Trade Taxes | versus | 2026-11-19 00:00 UTC | 1 | – | 0.0 |
-| atlas190 The Top Places for Middle Class Income | rank_ladder | 2026-11-18 21:00 UTC | 3 | – | 0.0 |
+| atlas190 The Top Places for Middle Class Income | rank_ladder | 2026-11-18 21:00 UTC | 4 | – | 0.1 |
 | atlas191 Who Pays for Healthcare in YOUR Country? | map_reveal | 2026-11-18 17:00 UTC | 3 | – | 0.0 |
 | atlas193 Which Country Reinvests the MOST in Fixed Assets? | odd_one_out | 2026-11-19 17:00 UTC | 2 | – | 0.0 |
 | atlas194 USA vs Nigeria: The Doctoral Degree Gap | versus | 2026-11-19 21:00 UTC | 1 | – | 0.0 |
 | atlas196 Places Ranked by Global Trade Share of GDP | rank_ladder | 2026-11-20 00:00 UTC | 2 | – | 0.0 |
-| atlas197 Places Ranked by University Gender Parity | map_reveal | 2026-11-20 17:00 UTC | 12 | – | 0.5 |
-| atlas203 How Does the USA Compare on Daily Poverty? | spotlight | 2026-11-20 21:00 UTC | 5 | – | 0.2 |
+| atlas197 Places Ranked by University Gender Parity | map_reveal | 2026-11-20 17:00 UTC | 13 | – | 0.4 |
+| atlas203 How Does the USA Compare on Daily Poverty? | spotlight | 2026-11-20 21:00 UTC | 7 | – | 0.2 |
 | atlas205 Places Ranked by Middle School Starting Age | rank_ladder | 2026-11-21 00:00 UTC | 0 | – | 0.0 |
 | atlas206 India vs China: Real Interest Rates Worldwide | versus | 2026-11-21 17:00 UTC | 0 | – | 0.0 |
+| atlas207 Places Ranked by Women in the Labor Force | map_reveal | 2026-11-21 21:00 UTC | 3 | – | 0.7 |
+| atlas208 Which Country Has the MOST Health Funding? | odd_one_out | 2026-11-22 00:00 UTC | 0 | – | 0.0 |
 
 ## Log
 

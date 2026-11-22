@@ -1,0 +1,170 @@
+{
+  "errors": [],
+  "claims": [
+    {
+      "surface": "title",
+      "text": "Places Ranked by Government Salary Spending",
+      "isos": [],
+      "support": "World Bank indicator GC.XPN.COMP.ZS measures compensation of employees as a percentage of total expenses."
+    },
+    {
+      "surface": "hook",
+      "text": "PUBLIC SALARY SHARES",
+      "isos": [],
+      "support": "Public employee pay share of expenses (%)"
+    },
+    {
+      "surface": "description",
+      "text": "Discover how much public spending goes to civil servant pay around the world, from Germany to Mozambique.",
+      "isos": [
+        "DEU",
+        "MOZ"
+      ],
+      "support": "Germany is DEU (5.7%), Mozambique is MOZ (62%)."
+    },
+    {
+      "surface": "beat_0",
+      "text": "In Germany, public employee pay takes 5.7% of expenses. In Botswana, it's 54%.",
+      "isos": [
+        "DEU",
+        "BWA"
+      ],
+      "support": "Germany (DEU) value is 5.718% (display 5.7%), Botswana (BWA) value is 53.957% (display 54%)."
+    },
+    {
+      "surface": "beat_1",
+      "text": "Belgium and Spain sit near the bottom at 5.9%.",
+      "isos": [
+        "BEL",
+        "ESP"
+      ],
+      "support": "Belgium (BEL) is 5.873% (display 5.9%), Spain (ESP) is 5.935% (display 5.9%)."
+    },
+    {
+      "surface": "beat_2",
+      "text": "The USA spends 8.1% of its budget on civil servants.",
+      "isos": [
+        "USA"
+      ],
+      "support": "United States (USA) value is 8.109% (display 8.1%)."
+    },
+    {
+      "surface": "beat_3",
+      "text": "Climbing higher, Honduras spends 48.6%, Central African Republic 49.9%, Iraq 51.9%, and Botswana 54%.",
+      "isos": [
+        "HND",
+        "CAF",
+        "IRQ",
+        "BWA"
+      ],
+      "support": "Honduras (HND) is 48.6%, Central African Republic (CAF) is 49.9%, Iraq (IRQ) is 51.9%, Botswana (BWA) is 54%."
+    },
+    {
+      "surface": "beat_4",
+      "text": "Mozambique takes the top spot with 62%, the world's highest.",
+      "isos": [
+        "MOZ"
+      ],
+      "support": "Mozambique (MOZ) value is 62.017% (display 62%, rank 1)."
+    },
+    {
+      "surface": "beat_5",
+      "text": "Mozambique spends 7.7 times the share that the USA does.",
+      "isos": [
+        "MOZ",
+        "USA"
+      ],
+      "support": "Mozambique is 62.0169727, USA is 8.1089323. 62.0169727 / 8.1089323 = 7.648... which rounds to 7.7 times."
+    },
+    {
+      "surface": "beat_6",
+      "text": "How much of your government's budget goes to public pay?",
+      "isos": [],
+      "support": "Public employee pay share of expenses (%)"
+    },
+    {
+      "surface": "card_6",
+      "text": "Public employee pay share of expenses (%)",
+      "isos": [],
+      "support": "Compensation of employees as a percentage of total expenses."
+    }
+  ],
+  "surface_checks": {
+    "title": {
+      "supported": true,
+      "reason": "Title accurately reflects the World Bank indicator for compensation of employees.",
+      "isos": []
+    },
+    "hook": {
+      "supported": true,
+      "reason": "Hook uses appropriate summary phrasing for the indicator.",
+      "isos": []
+    },
+    "description": {
+      "supported": true,
+      "reason": "Description correctly refers to Germany and Mozambique and the general topic.",
+      "isos": [
+        "DEU",
+        "MOZ"
+      ]
+    },
+    "beat_0": {
+      "supported": true,
+      "reason": "Germany (5.7%) and Botswana (54%) match the dataset values.",
+      "isos": [
+        "DEU",
+        "BWA"
+      ]
+    },
+    "beat_1": {
+      "supported": true,
+      "reason": "Belgium (5.9%) and Spain (5.9%) match dataset values and are near the bottom (ranks 135 and 134 out of 137).",
+      "isos": [
+        "BEL",
+        "ESP"
+      ]
+    },
+    "beat_2": {
+      "supported": true,
+      "reason": "USA value of 8.1% matches the dataset.",
+      "isos": [
+        "USA"
+      ]
+    },
+    "beat_3": {
+      "supported": true,
+      "reason": "Honduras (48.6%), Central African Republic (49.9%), Iraq (51.9%), and Botswana (54%) match dataset values.",
+      "isos": [
+        "HND",
+        "CAF",
+        "IRQ",
+        "BWA"
+      ]
+    },
+    "beat_4": {
+      "supported": true,
+      "reason": "Mozambique is ranked 1st with 62%, correctly cited as the highest.",
+      "isos": [
+        "MOZ"
+      ]
+    },
+    "beat_5": {
+      "supported": true,
+      "reason": "The ratio of Mozambique (62.017%) to USA (8.109%) is approximately 7.65, accurately stated as 7.7 times.",
+      "isos": [
+        "MOZ",
+        "USA"
+      ]
+    },
+    "beat_6": {
+      "supported": true,
+      "reason": "Question is a standard stylistic framing.",
+      "isos": []
+    },
+    "card_6": {
+      "supported": true,
+      "reason": "Card text matches the official indicator description.",
+      "isos": []
+    }
+  }
+}
