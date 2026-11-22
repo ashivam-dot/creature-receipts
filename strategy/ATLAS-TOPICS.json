@@ -8510,7 +8510,221 @@
    "source_url": "https://data.worldbank.org/indicator/SE.PRM.ENRR",
    "status": "used:atlas212",
    "added_by": "refill"
+  },
+  {
+   "id": "t233",
+   "topic": "Urban Clean Cooking Fuel Access",
+   "angle": "While over half of the world's countries provide near-universal clean cooking access in cities, several sub-Saharan African nations still register under five percent urban coverage.",
+   "format": "odd_one_out",
+   "dataset": {
+    "kind": "worldbank",
+    "indicator": "EG.CFT.ACCS.UR.ZS",
+    "label": "Urban access to clean cooking fuels",
+    "unit": "%",
+    "source": "World Bank",
+    "min_year": 2019
+   },
+   "scale": {
+    "kind": "bins",
+    "edges": [
+     20,
+     70,
+     95,
+     99
+    ],
+    "labels": [
+     "Under 20%",
+     "20% to 69%",
+     "70% to 94%",
+     "95% to 99%",
+     "100%"
+    ]
+   },
+   "value_format": "{v:.0f}%",
+   "hashtags": [
+    "#maps me",
+    "#geography",
+    "#energy"
+   ],
+   "source_url": "https://data.worldbank.org/indicator/EG.CFT.ACCS.UR.ZS",
+   "status": "ready:atlas225",
+   "added_by": "refill"
+  },
+  {
+   "id": "t234",
+   "topic": "Global Reliance on Family Business Labor",
+   "angle": "In the Solomon Islands, over 56% of workers assist in family-operated enterprises, compared to less than 0.1% of workers in Canada and Australia.",
+   "format": "rank_ladder",
+   "dataset": {
+    "kind": "worldbank",
+    "indicator": "SL.FAM.WORK.ZS",
+    "label": "Share of contributing family workers",
+    "unit": "%",
+    "source": "World Bank",
+    "min_year": 2019
+   },
+   "scale": {
+    "kind": "bins",
+    "edges": [
+     1.0,
+     5.0,
+     15.0
+    ],
+    "labels": [
+     "Under 1%",
+     "1% to 5%",
+     "5% to 15%",
+     "Over 15%"
+    ]
+   },
+   "value_format": "{v:.1f}%",
+   "hashtags": [
+    "#maps me"
+   ],
+   "source_url": "https://data.worldbank.org/indicator/SL.FAM.WORK.ZS",
+   "status": "open",
+   "added_by": "refill"
+  },
+  {
+   "id": "t235",
+   "topic": "Urban Safely Managed Sanitation Coverage",
+   "angle": "Despite living in cities, more than half of the urban population in many nations lacks access to safely managed sanitation.",
+   "format": "map_reveal",
+   "dataset": {
+    "kind": "worldbank",
+    "indicator": "SH.STA.SMSS.UR.ZS",
+    "label": "Urban population with safe sanitation",
+    "unit": "%",
+    "source": "World Bank",
+    "min_year": 2019
+   },
+   "scale": {
+    "kind": "bins",
+    "edges": [
+     20,
+     40,
+     60,
+     80
+    ],
+    "labels": [
+     "Under 20%",
+     "20% to 40%",
+     "40% to 60%",
+     "60% to 80%",
+     "Over 80%"
+    ]
+   },
+   "value_format": "{v:.1f}%",
+   "hashtags": [
+    "#mapstransferred"
+   ],
+   "source_url": "https://data.worldbank.org/indicator/SH.STA.SMSS.UR.ZS",
+   "status": "open",
+   "added_by": "refill"
+  },
+  {
+   "id": "t236",
+   "topic": "Share of Young Women Worldwide",
+   "angle": "In several nations, young women aged 20 to 24 represent over 10 percent of the total female population, compared to less than 5 percent in parts of Europe and East Asia.",
+   "format": "map_reveal",
+   "dataset": {
+    "kind": "worldbank",
+    "indicator": "SP.POP.2024.FE.5Y",
+    "label": "Share of young women (ages 20-24)",
+    "unit": "%",
+    "source": "World Bank",
+    "min_year": 2019
+   },
+   "scale": {
+    "kind": "bins",
+    "edges": [
+     5.0,
+     7.0,
+     8.5,
+     10.0
+    ],
+    "labels": [
+     "Under 5.0%",
+     "5.0% - 7.0%",
+     "7.0% - 8.5%",
+     "8.5% - 10.0%",
+     "Over 10.0%"
+    ]
+   },
+   "value_format": "{v:.1f}%",
+   "hashtags": [
+    "#maps_atlas"
+   ],
+   "source_url": "https://data.worldbank.org/indicator/SP.POP.2024.FE.5Y",
+   "status": "open",
+   "added_by": "refill"
+  },
+  {
+   "id": "t237",
+   "topic": "Where Women Live Into Their 70s",
+   "angle": "In Eastern European nations like Serbia, women aged 70 to 74 account for over 7% of the entire female population, compared to under 1% across parts of Africa and the Gulf.",
+   "format": "rank_ladder",
+   "dataset": {
+    "kind": "worldbank",
+    "indicator": "SP.POP.7074.FE.5Y",
+    "label": "Female population aged 70 to 74",
+    "unit": "%",
+    "source": "World Bank",
+    "min_year": 2019
+   },
+   "scale": {
+    "kind": "bins",
+    "edges": [
+     1.0,
+     2.5,
+     5.0
+    ],
+    "labels": [
+     "Under 1.0%",
+     "1.0% to 2.5%",
+     "2.5% to 5.0%",
+     "Over 5.0%"
+    ]
+   },
+   "value_format": "{v:.1f}%",
+   "hashtags": [
+    "#maps المناطق geography demographics"
+   ],
+   "source_url": "https://data.worldbank.org/indicator/SP.POP.7074.FE.5Y",
+   "status": "open",
+   "added_by": "refill"
+  },
+  {
+   "id": "t238",
+   "topic": "Global Public Spending on Education",
+   "angle": "Small island nations dedicate up to 23% of their Gross National Income to education operating costs, far surpassing many large economies.",
+   "format": "map_reveal",
+   "dataset": {
+    "kind": "worldbank",
+    "indicator": "NY.ADJ.AEDU.GN.ZS",
+    "label": "Education expenditure (% of GNI)",
+    "unit": "%",
+    "source": "World Bank",
+    "min_year": 2019
+   },
+   "scale": {
+    "kind": "threshold",
+    "at": 3.9,
+    "labels": [
+     "Above global median (≥3.9%)",
+     "Below global median (<3.9%)"
+    ]
+   },
+   "value_format": "{v:.1f}%",
+   "hashtags": [
+    "#maps шарing",
+    "#geography",
+    "#education"
+   ],
+   "source_url": "https://data.worldbank.org/indicator/NY.ADJ.AEDU.GN.ZS",
+   "status": "open",
+   "added_by": "refill"
   }
  ],
- "refilled_at": "2026-11-21T09:10:16+00:00"
+ "refilled_at": "2026-11-22T09:10:14+00:00"
 }

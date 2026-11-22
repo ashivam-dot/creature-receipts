@@ -1,0 +1,146 @@
+{
+  "errors": [],
+  "claims": [
+    {
+      "surface": "title",
+      "text": "Which Major Country Lags in Urban Clean Cooking?",
+      "isos": [],
+      "support": "The title is an identity framing and question."
+    },
+    {
+      "surface": "hook",
+      "text": "CLEAN FUEL GAP",
+      "isos": [],
+      "support": "Hook text summarizing the indicator."
+    },
+    {
+      "surface": "description",
+      "text": "A global look at urban access to clean cooking fuels across 188 countries and territories using World Bank data.",
+      "isos": [],
+      "support": "Global look at 188 mapped countries and territories using World Bank data for indicator EG.CFT.ACCS.UR.ZS."
+    },
+    {
+      "surface": "beat_0",
+      "text": "Most major nations power city kitchens with clean fuel. One giant breaks this pattern.",
+      "isos": [],
+      "support": "General description supported by data values showing high urban clean cooking access in major countries."
+    },
+    {
+      "surface": "beat_1",
+      "text": "Under WHO guidelines, kerosene is excluded from clean cooking fuels.",
+      "isos": [],
+      "support": "Under WHO guidelines, kerosene is excluded from clean cooking fuels."
+    },
+    {
+      "surface": "beat_2",
+      "text": "Look at China, India, and Nigeria. Which giant falls behind?",
+      "isos": [],
+      "support": "China (CHN), India (IND), and Nigeria (NGA) are referenced."
+    },
+    {
+      "surface": "beat_3",
+      "text": "China and India both supply 96% of their urban populations with clean fuels.",
+      "isos": [
+        "CHN",
+        "IND"
+      ],
+      "support": "China: 96%, India: 96%"
+    },
+    {
+      "surface": "beat_4",
+      "text": "The odd one out is Nigeria, where urban access is 49%.",
+      "isos": [
+        "NGA"
+      ],
+      "support": "Nigeria: 49%"
+    },
+    {
+      "surface": "beat_5",
+      "text": "At the absolute bottom, South Sudan has 0%.",
+      "isos": [
+        "SSD"
+      ],
+      "support": "South Sudan: 0%, rank 187 (tied with Burundi)"
+    },
+    {
+      "surface": "beat_6",
+      "text": "What fuel powers the kitchens in your city?",
+      "isos": [],
+      "support": "Closing loop question."
+    },
+    {
+      "surface": "card_6",
+      "text": "CLEAN COOKING?, Urban clean cooking fuels (%), World Bank",
+      "isos": [],
+      "support": "Card displaying indicator title and source."
+    }
+  ],
+  "surface_checks": {
+    "title": {
+      "supported": true,
+      "reason": "Title is a stylistic question framing.",
+      "isos": []
+    },
+    "hook": {
+      "supported": true,
+      "reason": "Accurately labels the indicator topic.",
+      "isos": []
+    },
+    "description": {
+      "supported": true,
+      "reason": "Matches the 188 country count and World Bank indicator source.",
+      "isos": []
+    },
+    "beat_0": {
+      "supported": true,
+      "reason": "Consistent with high overall access values in the dataset.",
+      "isos": []
+    },
+    "beat_1": {
+      "supported": true,
+      "reason": "Directly matches the provided definition notes.",
+      "isos": []
+    },
+    "beat_2": {
+      "supported": true,
+      "reason": "Introduces the specified countries with valid visual plan entities.",
+      "isos": [
+        "CHN",
+        "IND",
+        "NGA"
+      ]
+    },
+    "beat_3": {
+      "supported": true,
+      "reason": "China value is 96%, India value is 96%.",
+      "isos": [
+        "CHN",
+        "IND"
+      ]
+    },
+    "beat_4": {
+      "supported": true,
+      "reason": "Nigeria urban access is 49%.",
+      "isos": [
+        "NGA"
+      ]
+    },
+    "beat_5": {
+      "supported": true,
+      "reason": "South Sudan value is 0% (at the bottom of the dataset).",
+      "isos": [
+        "SSD"
+      ]
+    },
+    "beat_6": {
+      "supported": true,
+      "reason": "Standard closing question.",
+      "isos": []
+    },
+    "card_6": {
+      "supported": true,
+      "reason": "Accurately represents the metric and source.",
+      "isos": []
+    }
+  }
+}
