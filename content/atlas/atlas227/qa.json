@@ -1,0 +1,25 @@
+{
+  "version": 1,
+  "passed": true,
+  "checked_at": "2026-11-23T01:38:09.318232+00:00",
+  "quality_module_sha256": "db7be8ac57c839f39a10676f1a70580a83ea346f59c27f19868d09c272def14c",
+  "media_sha256": "6bfff996caf4f80d17c3e56626e99fc23356deff38aea1e68a96d781f4c94511",
+  "script_sha256": "da925de1be775a357b9731902946487333d8abfa483ef02dd38c246b120a35fb",
+  "data_sha256": "032b57cf10b2c4fb85f953d525b27b6d38ab2504d70f7332654d8e5e9ca8b1a2",
+  "claims_sha256": "b632661e820df8143edc1f735c296f85aa13201701864a129c08f0d2a893ca0c",
+  "contact_sha256": "73a14c36676f24f054a85618ff21ea724612192c320a869131b62ade439652cc",
+  "duration": 46.47,
+  "integrated_lufs": -14.3,
+  "true_peak_dbfs": -1.4,
+  "speech": {
+    "heard": "Cuba puts 13% of its national income into education, Japan spends just 2.6%. In Africa, Botswana commits 9.5% of its income to schooling, and Namibia spends 8.9%. This indicator counts current operating expenditures in education like wages, excluding capital investments. The USA spends 4.4% of its national income on schools. Higher spenders include New Zealand at 7.4%, Saudi Arabia at 7.2%, Sweden at 7.1% and Costa Rica at 6.9%. Near the bottom, Nigeria dedicates 0.8% of its national income to classrooms. How much national income should your country spend on education?",
+    "model": "small.en",
+    "media_sha256": "6bfff996caf4f80d17c3e56626e99fc23356deff38aea1e68a96d781f4c94511",
+    "primary_differences": [],
+    "differences": []
+  },
+  "warnings": [
+    "duration 46.5s outside editorial 30–45s target"
+  ],
+  "speech_policy": "material-hard-entity-polarity-strict-minor-spelling-warning"
+}

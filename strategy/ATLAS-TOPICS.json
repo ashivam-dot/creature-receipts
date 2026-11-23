@@ -7267,7 +7267,7 @@
     "#mapsSend me raw json string inside json block or directly? Prompt says "
    ],
    "source_url": "https://data.worldbank.org/indicator/GC.XPN.COMP.ZS",
-   "status": "ready:atlas224",
+   "status": "used:atlas224",
    "added_by": "refill"
   },
   {
@@ -7681,7 +7681,7 @@
     "#energy"
    ],
    "source_url": "https://data.worldbank.org/indicator/EG.USE.COMM.CL.ZS",
-   "status": "ready:atlas222",
+   "status": "used:atlas222",
    "added_by": "refill"
   },
   {
@@ -7799,7 +7799,7 @@
     "#government"
    ],
    "source_url": "https://data.worldbank.org/indicator/GC.XPN.TRFT.ZS",
-   "status": "ready:atlas223",
+   "status": "used:atlas223",
    "added_by": "refill"
   },
   {
@@ -8547,7 +8547,7 @@
     "#energy"
    ],
    "source_url": "https://data.worldbank.org/indicator/EG.CFT.ACCS.UR.ZS",
-   "status": "ready:atlas225",
+   "status": "used:atlas225",
    "added_by": "refill"
   },
   {
@@ -8589,7 +8589,7 @@
    "id": "t235",
    "topic": "Urban Safely Managed Sanitation Coverage",
    "angle": "Despite living in cities, more than half of the urban population in many nations lacks access to safely managed sanitation.",
-   "format": "map_reveal",
+   "format": "spotlight",
    "dataset": {
     "kind": "worldbank",
     "indicator": "SH.STA.SMSS.UR.ZS",
@@ -8619,7 +8619,7 @@
     "#mapstransferred"
    ],
    "source_url": "https://data.worldbank.org/indicator/SH.STA.SMSS.UR.ZS",
-   "status": "open",
+   "status": "failed:ValueError",
    "added_by": "refill"
   },
   {
@@ -8663,7 +8663,7 @@
    "id": "t237",
    "topic": "Where Women Live Into Their 70s",
    "angle": "In Eastern European nations like Serbia, women aged 70 to 74 account for over 7% of the entire female population, compared to under 1% across parts of Africa and the Gulf.",
-   "format": "rank_ladder",
+   "format": "versus",
    "dataset": {
     "kind": "worldbank",
     "indicator": "SP.POP.7074.FE.5Y",
@@ -8691,7 +8691,7 @@
     "#maps المناطق geography demographics"
    ],
    "source_url": "https://data.worldbank.org/indicator/SP.POP.7074.FE.5Y",
-   "status": "open",
+   "status": "failed:ValueError",
    "added_by": "refill"
   },
   {
@@ -8722,7 +8722,7 @@
     "#education"
    ],
    "source_url": "https://data.worldbank.org/indicator/NY.ADJ.AEDU.GN.ZS",
-   "status": "open",
+   "status": "ready:atlas227",
    "added_by": "refill"
   }
  ],

@@ -1,0 +1,128 @@
+{
+  "errors": [],
+  "claims": [
+    {
+      "surface": "beat_0",
+      "text": "In the USA, 97.2% of city residents have safe sanitation. In Colombia, it's 7.2%.",
+      "isos": [
+        "USA",
+        "COL"
+      ],
+      "support": "USA: 97.2%, COL: 7.2%"
+    },
+    {
+      "surface": "beat_1",
+      "text": "American cities sit near the highest coverage, but vast differences exist elsewhere.",
+      "isos": [
+        "USA"
+      ],
+      "support": "USA rank 15 out of 120"
+    },
+    {
+      "surface": "beat_2",
+      "text": "India has 55.8% of urban residents covered, sitting right near the global median.",
+      "isos": [
+        "IND"
+      ],
+      "support": "IND: 55.8%, rank 58"
+    },
+    {
+      "surface": "beat_3",
+      "text": "Brazil hits 56.6%, while Nigeria drops down to 36.8% of city dwellers.",
+      "isos": [
+        "BRA",
+        "NGA"
+      ],
+      "support": "BRA: 56.6%, NGA: 36.8%"
+    },
+    {
+      "surface": "beat_4",
+      "text": "At the bottom, Madagascar has 16.7%, DR Congo has 15.2%, and Armenia is the world's lowest at 0%.",
+      "isos": [
+        "MDG",
+        "COD",
+        "ARM"
+      ],
+      "support": "MDG: 16.7%, COD: 15.2%, ARM: 0.0%, rank 120"
+    },
+    {
+      "surface": "beat_5",
+      "text": "It counts city residents using unshared facilities where waste is safely disposed of or treated offsite.",
+      "isos": [],
+      "support": "The percentage of people using improved sanitation facilities that are not shared with other households and where excreta are safely disposed of in situ or transported and treated offsite."
+    }
+  ],
+  "surface_checks": {
+    "title": {
+      "supported": true,
+      "reason": "Title is a stylistic question framing.",
+      "isos": [
+        "USA"
+      ]
+    },
+    "hook": {
+      "supported": true,
+      "reason": "Stylistic hook matching indicator topic.",
+      "isos": []
+    },
+    "description": {
+      "supported": true,
+      "reason": "Accurately describes the indicator and data source.",
+      "isos": []
+    },
+    "beat_0": {
+      "supported": true,
+      "reason": "Values for USA (97.2%) and Colombia (7.2%) match evidence.",
+      "isos": [
+        "USA",
+        "COL"
+      ]
+    },
+    "beat_1": {
+      "supported": true,
+      "reason": "USA is near the top of the dataset.",
+      "isos": [
+        "USA"
+      ]
+    },
+    "beat_2": {
+      "supported": true,
+      "reason": "India value is 55.8%, near the midpoint of ranks.",
+      "isos": [
+        "IND"
+      ]
+    },
+    "beat_3": {
+      "supported": true,
+      "reason": "Brazil is 56.6% and Nigeria is 36.8% in evidence.",
+      "isos": [
+        "BRA",
+        "NGA"
+      ]
+    },
+    "beat_4": {
+      "supported": true,
+      "reason": "Madagascar (16.7%), DR Congo (15.2%), and Armenia (0%) are correctly reported from the bottom ranks.",
+      "isos": [
+        "MDG",
+        "COD",
+        "ARM"
+      ]
+    },
+    "beat_5": {
+      "supported": true,
+      "reason": "Definition accurately reflected.",
+      "isos": []
+    },
+    "beat_6": {
+      "supported": true,
+      "reason": "Stylistic closing question.",
+      "isos": []
+    },
+    "card_6": {
+      "supported": true,
+      "reason": "Card text matches indicator name and theme.",
+      "isos": []
+    }
+  }
+}

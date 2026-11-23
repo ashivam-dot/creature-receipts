@@ -1,0 +1,73 @@
+id: atlas227
+title: Which Places Spend the Most on Education?
+hook_text: SCHOOL BUDGET SURPRISE
+description: A cinematic tour of global public spending on education operating costs, based on World Bank data.
+hashtags:
+- '#education'
+- '#geography'
+- '#countries'
+tags:
+- education
+- education expenditure % of gni
+- countries ranked by education expenditure % of gni
+- Cuba
+- New Caledonia
+- world map
+- geography
+- atlas in numbers
+sources:
+- https://data.worldbank.org/indicator/NY.ADJ.AEDU.GN.ZS
+dataset:
+  kind: worldbank
+  indicator: NY.ADJ.AEDU.GN.ZS
+  label: Education expenditure (% of GNI)
+  unit: '%'
+  source: World Bank
+  min_year: 2019
+scale:
+  kind: threshold
+  at: 3.9
+  labels:
+  - Above global median (≥3.9%)
+  - Below global median (<3.9%)
+value_format: '{v:.1f}%'
+beats:
+- text: Cuba puts 13% of its national income into education. Japan spends just 2.6%.
+  shot:
+    callouts:
+    - CUB
+    - JPN
+- text: In Africa, Botswana commits 9.5% of its income to schooling, and Namibia spends 8.9%.
+  shot:
+    kind: group
+    isos:
+    - BWA
+    - NAM
+- text: This indicator counts current operating expenditures in education like wages, excluding capital investments.
+  shot:
+    kind: country
+    iso: USA
+  basis: current operating expenditures in education, including wages and salaries and excluding capital investments
+    in buildings and equipment
+- text: The USA spends 4.4% of its national income on schools.
+  shot:
+    kind: country
+    iso: USA
+- text: Higher spenders include New Zealand at 7.4%, Saudi Arabia at 7.2%, Sweden at 7.1%, and Costa Rica at 6.9%.
+  shot:
+    kind: rank
+    isos:
+    - NZL
+    - SAU
+    - SWE
+    - CRI
+- text: Near the bottom, Nigeria dedicates 0.8% of its national income to classrooms.
+  shot:
+    kind: country
+    iso: NGA
+- text: How much national income should your country spend on education?
+  shot:
+    kind: card
+    lines:
+    - CLASSROOM FUNDING
+    - Education Expenditure (% of GNI)

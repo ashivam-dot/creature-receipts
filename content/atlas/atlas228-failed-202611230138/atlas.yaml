@@ -1,0 +1,76 @@
+id: atlas228
+title: Places Where Women LIVE Into Their 70S
+format: versus
+hook_text: THE WIDEST GAP
+description: In Eastern European nations like Serbia, women aged 70 to 74 account for over 7% of the entire female
+  population, compared to under 1% across parts of Africa and the Gulf.
+hashtags:
+- '#population'
+- '#geography'
+- '#countries'
+tags:
+- population
+- female population aged 70 to 74
+- countries ranked by female population aged 70 to 74
+- Serbia
+- United Arab Emirates
+- world map
+- geography
+- atlas in numbers
+sources:
+- https://data.worldbank.org/indicator/SP.POP.7074.FE.5Y
+dataset:
+  kind: worldbank
+  indicator: SP.POP.7074.FE.5Y
+  label: Female population aged 70 to 74
+  unit: '%'
+  source: World Bank
+  min_year: 2019
+scale:
+  edges:
+  - 1.0
+  - 2.5
+  - 5.0
+  labels:
+  - Under 1.0%
+  - 1.0% to 2.5%
+  - 2.5% to 5.0%
+  - Over 5.0%
+value_format: '{v:.1f}%'
+beats:
+- text: In Serbia, 7.4% of women are aged 70 to 74. In the UAE, just 0.6%.
+  shot:
+    callouts:
+    - SRB
+    - ARE
+- text: Serbia stands at the highest point globally for this age group.
+  shot:
+    kind: country
+    iso: SRB
+- text: That means Serbia has 12 times the share found in the UAE.
+  shot:
+    kind: group
+    isos:
+    - SRB
+    - ARE
+- text: Across Eastern Europe, Bosnia has 6.9%, Hungary has 6.8%, and Croatia has 6.7%.
+  shot:
+    kind: rank
+    isos:
+    - BIH
+    - HUN
+    - HRV
+- text: The USA sits at 5%.
+  shot:
+    kind: country
+    iso: USA
+- text: India has 2.3%, just below the world median of 2.5%.
+  shot:
+    kind: country
+    iso: IND
+- text: What share of women in your country are in their 70s?
+  shot:
+    kind: card
+    lines:
+    - What is your share?
+    - Female population aged 70 to 74

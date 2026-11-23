@@ -1,0 +1,79 @@
+id: atlas226
+title: How Does the USA Compare on City Sanitation?
+format: spotlight
+hook_text: URBAN SANITATION GAP
+description: Comparing urban safely managed sanitation coverage around the world using World Bank data.
+hashtags:
+- '#health'
+- '#mapstransferred'
+- '#geography'
+tags:
+- health
+- urban population with safe sanitation
+- countries ranked by urban population with safe sanitation
+- Kuwait
+- Armenia
+- world map
+- geography
+- atlas in numbers
+sources:
+- https://data.worldbank.org/indicator/SH.STA.SMSS.UR.ZS
+dataset:
+  kind: worldbank
+  indicator: SH.STA.SMSS.UR.ZS
+  label: Urban population with safe sanitation
+  unit: '%'
+  source: World Bank
+  min_year: 2019
+scale:
+  edges:
+  - 20.0
+  - 40.0
+  - 60.0
+  - 80.0
+  labels:
+  - Under 20%
+  - 20% to 40%
+  - 40% to 60%
+  - 60% to 80%
+  - Over 80%
+value_format: '{v:.1f}%'
+beats:
+- text: In the USA, 97.2% of city residents have safe sanitation. In Colombia, it's 7.2%.
+  shot:
+    callouts:
+    - USA
+    - COL
+- text: American cities sit near the highest coverage, but vast differences exist elsewhere.
+  shot:
+    kind: country
+    iso: USA
+- text: India has 55.8% of urban residents covered, sitting right near the global median.
+  shot:
+    kind: country
+    iso: IND
+- text: Brazil hits 56.6%, while Nigeria drops down to 36.8% of city dwellers.
+  shot:
+    kind: group
+    isos:
+    - BRA
+    - NGA
+- text: At the bottom, Madagascar has 16.7%, DR Congo has 15.2%, and Armenia is the world's lowest at 0%.
+  shot:
+    kind: rank
+    isos:
+    - MDG
+    - COD
+    - ARM
+- text: It counts city residents using unshared facilities where waste is safely disposed of or treated offsite.
+  shot:
+    kind: country
+    iso: USA
+  basis: The percentage of people using improved sanitation facilities that are not shared with other households
+    and where excreta are safely disposed of in situ or transported and treated offsite.
+- text: How safely managed is city sanitation in your country?
+  shot:
+    kind: card
+    lines:
+    - YOUR CITY'S SANITATION?
+    - Urban Safe Sanitation (%)

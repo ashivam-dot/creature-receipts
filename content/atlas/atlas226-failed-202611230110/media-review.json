@@ -1,0 +1,22 @@
+{
+  "duration": 44.78,
+  "integrated_lufs": -14.1,
+  "true_peak_dbfs": -1.4,
+  "speech": {
+    "heard": "In the USA, 97.2% of city residents have safe sanitation. In Colombia, it's 7.2%. American cities sit near the highest coverage, but vast differences exist elsewhere. India has 55.8% of urban residents covered, sitting right near the global median. Brazil hits 56.6%, while Nigeria drops down to 36.8% of city dwellers. At the bottom, Madagascar has 16.7%. Dr. Kongo has 15.2% and Armenia is the world's lowest at 0%. It counts city residents using unshared facilities, where waste is safely disposed of or treated off-site. How safely managed is city sanitation in your country?",
+    "model": "small.en",
+    "media_sha256": "89ab45b174ac531c0a5304dd16c4af2c3bb1675aa3a0e8d6ecb134f8a61b14d3",
+    "primary_differences": [
+      "'congo' heard as 'kongo' after 'has 16.7% doctor'"
+    ],
+    "differences": [
+      "'congo' heard as 'kongo' after 'has 16.7% doctor'"
+    ],
+    "corroboration": {
+      "model": "base.en",
+      "heard": "In the USA, 97.2% of city residents have safe sanitation. In Colombia, it's 7.2%. American cities sit near the highest coverage, but vast differences exist elsewhere. India has 55.8% of urban residents covered, sitting right near the global median. Brazil hits 56.6%, while Nigeria drops down to 36.8% of city dwellers. At the bottom, Madagascar has 16.7%. Dr Congo has 15.2% and Armenia is the world's lowest at 0%. It counts city residents using unshared facilities where waste is safely disposed of or treated offsite. How safely managed is city sanitation in your country.",
+      "differences": [],
+      "resolved": []
+    }
+  }
+}
