@@ -160,9 +160,10 @@ Refreshed by every producer run (`atlas.stats`) from the channel's public feed o
 | atlas206 India vs China: Real Interest Rates Worldwide | versus | 2026-11-21 17:00 UTC | 0 | – | 0.0 |
 | atlas207 Places Ranked by Women in the Labor Force | map_reveal | 2026-11-21 21:00 UTC | 9 | – | 0.2 |
 | atlas208 Which Country Has the MOST Health Funding? | odd_one_out | 2026-11-22 00:00 UTC | 1 | – | 0.0 |
-| atlas209 How Does the USA Compare on Poorest Bank Accounts? | spotlight | 2026-11-22 17:00 UTC | 1 | – | 0.1 |
-| atlas211 Places Ranked by Severe Hunger | rank_ladder | 2026-11-22 21:00 UTC | 1 | – | 0.1 |
+| atlas209 How Does the USA Compare on Poorest Bank Accounts? | spotlight | 2026-11-22 17:00 UTC | 1 | – | 0.0 |
+| atlas211 Places Ranked by Severe Hunger | rank_ladder | 2026-11-22 21:00 UTC | 4 | – | 0.2 |
 | atlas212 Primary School Enrollment: Where 100% Is Just the Start | map_reveal | 2026-11-23 00:00 UTC | 0 | – | 0.0 |
+| atlas214 The Global Gap in Urban Sanitation | odd_one_out | 2026-11-23 17:00 UTC | 0 | – | 0.0 |
 
 ## Log
 
