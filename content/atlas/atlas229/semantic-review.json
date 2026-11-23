@@ -1,0 +1,160 @@
+{
+  "errors": [],
+  "claims": [
+    {
+      "surface": "title",
+      "text": "Is INDIA Near the Top for Coal Rents?",
+      "isos": [
+        "IND"
+      ],
+      "support": "India value is 1.28%, rank 5 out of 191."
+    },
+    {
+      "surface": "hook",
+      "text": "NATIONAL COAL RENTS",
+      "isos": [],
+      "support": "Topic is coal rents."
+    },
+    {
+      "surface": "description",
+      "text": "Comparing national economic reliance on coal rents as a share of GDP across major global economies using World Bank data.",
+      "isos": [],
+      "support": "Indicator NY.GDP.COAL.RT.ZS from World Bank measures coal rents as a share of GDP."
+    },
+    {
+      "surface": "beat_0",
+      "text": "Coal rents make up 1.3% of GDP in India. In the USA, it is just 0.2%.",
+      "isos": [
+        "IND",
+        "USA"
+      ],
+      "support": "IND: 1.28% (display 1.3%), USA: 0.165% (display 0.2%)."
+    },
+    {
+      "surface": "beat_1",
+      "text": "That puts India near the top among major economies for coal earnings relative to its economy.",
+      "isos": [
+        "IND"
+      ],
+      "support": "India rank is 5 in the dataset."
+    },
+    {
+      "surface": "beat_2",
+      "text": "It counts the profit margin between world market prices for coal and total production costs.",
+      "isos": [],
+      "support": "Definition: Coal rents are the difference between the value of both hard and soft coal production at world prices and their total costs of production."
+    },
+    {
+      "surface": "beat_3",
+      "text": "Mongolia hits even higher, where coal rents generate 4.9% of GDP.",
+      "isos": [
+        "MNG"
+      ],
+      "support": "MNG value is 4.89% (display 4.9%)."
+    },
+    {
+      "surface": "beat_4",
+      "text": "Mozambique follows at 3.8%, South Africa at 2.4%, and India sits at 1.3%.",
+      "isos": [
+        "MOZ",
+        "ZAF",
+        "IND"
+      ],
+      "support": "MOZ: 3.78% (display 3.8%), ZAF: 2.44% (display 2.4%), IND: 1.28% (display 1.3%)."
+    },
+    {
+      "surface": "beat_5",
+      "text": "Meanwhile, Germany stands at 0.01%, and the UK drops to 0.001%.",
+      "isos": [
+        "DEU",
+        "GBR"
+      ],
+      "support": "DEU: 0.014% (display 0.01%), GBR: 0.001% (display 0.001%)."
+    },
+    {
+      "surface": "beat_6",
+      "text": "How much does coal power the economy in your country?",
+      "isos": [],
+      "support": "A standard prompt style question."
+    },
+    {
+      "surface": "card_6",
+      "text": "COAL RENTS",
+      "isos": [],
+      "support": "Card heading matches the indicator."
+    }
+  ],
+  "surface_checks": {
+    "title": {
+      "supported": true,
+      "reason": "India is ranked 5th, which is near the top of the mapped universe.",
+      "isos": [
+        "IND"
+      ]
+    },
+    "hook": {
+      "supported": true,
+      "reason": "Accurately names the topic.",
+      "isos": []
+    },
+    "description": {
+      "supported": true,
+      "reason": "Accurately describes the dataset and indicator.",
+      "isos": []
+    },
+    "beat_0": {
+      "supported": true,
+      "reason": "Values match India (1.3%) and USA (0.2%) displays.",
+      "isos": [
+        "IND",
+        "USA"
+      ]
+    },
+    "beat_1": {
+      "supported": true,
+      "reason": "India rank 5 is near the top.",
+      "isos": [
+        "IND"
+      ]
+    },
+    "beat_2": {
+      "supported": true,
+      "reason": "Matches indicator definition.",
+      "isos": []
+    },
+    "beat_3": {
+      "supported": true,
+      "reason": "Mongolia value matches 4.9%.",
+      "isos": [
+        "MNG"
+      ]
+    },
+    "beat_4": {
+      "supported": true,
+      "reason": "Mozambique (3.8%), South Africa (2.4%), and India (1.3%) match source values.",
+      "isos": [
+        "MOZ",
+        "ZAF",
+        "IND"
+      ]
+    },
+    "beat_5": {
+      "supported": true,
+      "reason": "Germany (0.01%) and UK (0.001%) match source values.",
+      "isos": [
+        "DEU",
+        "GBR"
+      ]
+    },
+    "beat_6": {
+      "supported": true,
+      "reason": "Standard call to action question.",
+      "isos": []
+    },
+    "card_6": {
+      "supported": true,
+      "reason": "Matches indicator name and unit.",
+      "isos": []
+    }
+  }
+}

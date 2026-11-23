@@ -1,0 +1,75 @@
+id: atlas231
+title: Where Young Women Make Up the Biggest Share of Females
+hook_text: SHARE OF YOUNG WOMEN
+description: Comparing the share of young women aged 20 to 24 as a percentage of total females across 208 countries
+  and territories.
+hashtags:
+- '#population'
+- '#geography'
+- '#countries'
+tags:
+- population
+- share of young women ages 20-24
+- countries ranked by share of young women ages 20-24
+- Syrian Arab Republic
+- Belarus
+- world map
+- geography
+- atlas in numbers
+sources:
+- https://data.worldbank.org/indicator/SP.POP.2024.FE.5Y
+dataset:
+  kind: worldbank
+  indicator: SP.POP.2024.FE.5Y
+  label: Share of young women (ages 20-24)
+  unit: '%'
+  source: World Bank
+  min_year: 2019
+scale:
+  edges:
+  - 5.0
+  - 7.0
+  - 8.5
+  - 10.0
+  labels:
+  - Under 5.0%
+  - 5.0% - 7.0%
+  - 7.0% - 8.5%
+  - 8.5% - 10.0%
+  - Over 10.0%
+value_format: '{v:.1f}%'
+beats:
+- text: In Syria, 11.4% of females are in their early twenties. In Belarus, 4.3%.
+  shot:
+    callouts:
+    - SYR
+    - BLR
+- text: East Timor follows right behind at 10.6% of females in that age group.
+  shot:
+    kind: country
+    iso: TLS
+- text: On the low end, China has 5.2%, and Japan sits at 4.7%.
+  shot:
+    kind: group
+    isos:
+    - CHN
+    - JPN
+- text: 'Eastern Europe drops lower: Latvia has 4.4%, Poland 4.4%, and Belarus 4.3%.'
+  shot:
+    kind: rank
+    isos:
+    - LVA
+    - POL
+    - BLR
+- text: India sits higher at 8.7%, with 2 times the share of Belarus.
+  shot:
+    kind: group
+    isos:
+    - IND
+    - BLR
+- text: What share of females in your country are in their early twenties?
+  shot:
+    kind: card
+    lines:
+    - YOUR COUNTRY'S SHARE?
+    - Share of Young Women (Ages 20-24), World Bank 2025

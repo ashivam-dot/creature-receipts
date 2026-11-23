@@ -8656,7 +8656,7 @@
     "#maps_atlas"
    ],
    "source_url": "https://data.worldbank.org/indicator/SP.POP.2024.FE.5Y",
-   "status": "open",
+   "status": "ready:atlas231",
    "added_by": "refill"
   },
   {
@@ -8724,7 +8724,139 @@
    "source_url": "https://data.worldbank.org/indicator/NY.ADJ.AEDU.GN.ZS",
    "status": "ready:atlas227",
    "added_by": "refill"
+  },
+  {
+   "id": "t239",
+   "topic": "Childhood DPT Immunization Coverage Worldwide",
+   "angle": "While the median global coverage for basic DPT immunization reaches 91%, several nations see rates fall below 50%.",
+   "format": "versus",
+   "dataset": {
+    "kind": "worldbank",
+    "indicator": "SH.IMM.IDPT",
+    "label": "DPT immunization rate among toddlers",
+    "unit": "%",
+    "source": "World Bank",
+    "min_year": 2019
+   },
+   "scale": {
+    "kind": "threshold",
+    "at": 90,
+    "labels": [
+     "90% or higher",
+     "Below 90%"
+    ]
+   },
+   "value_format": "{v:.0f}%",
+   "hashtags": [
+    "#maps me"
+   ],
+   "source_url": "https://data.worldbank.org/indicator/SH.IMM.IDPT",
+   "status": "ready:atlas230",
+   "added_by": "refill"
+  },
+  {
+   "id": "t240",
+   "topic": "Economic Reliance on National Coal Rents",
+   "angle": "While coal rents are zero in over 75% of countries, they contribute nearly 5% of GDP in Mongolia.",
+   "format": "spotlight",
+   "dataset": {
+    "kind": "worldbank",
+    "indicator": "NY.GDP.COAL.RT.ZS",
+    "label": "Coal rents as a share of GDP",
+    "unit": "%",
+    "source": "World Bank",
+    "min_year": 2019
+   },
+   "scale": {
+    "kind": "threshold",
+    "at": 0.1,
+    "labels": [
+     "Above 0.1% of GDP",
+     "0.1% of GDP or less"
+    ]
+   },
+   "value_format": "{v:.2f}%",
+   "hashtags": [
+    "#maps me"
+   ],
+   "source_url": "https://data.worldbank.org/indicator/NY.GDP.COAL.RT.ZS",
+   "status": "ready:atlas229",
+   "added_by": "refill"
+  },
+  {
+   "id": "t241",
+   "topic": "Girls Aged 5 to 9 Worldwide",
+   "angle": "In countries like Somalia and Niger, young girls aged 5 to 9 make up over 15% of all females, compared to just 3% in East Asia.",
+   "format": "map_reveal",
+   "dataset": {
+    "kind": "worldbank",
+    "indicator": "SP.POP.0509.FE.5Y",
+    "label": "Girls aged 5-9 share of females",
+    "unit": "%",
+    "source": "World Bank",
+    "min_year": 2019
+   },
+   "scale": {
+    "kind": "bins",
+    "edges": [
+     5,
+     8,
+     11,
+     13
+    ],
+    "labels": [
+     "Under 5%",
+     "5% to 8%",
+     "8% to 11%",
+     "11% to 13%",
+     "Over 13%"
+    ]
+   },
+   "value_format": "{v:.1f}%",
+   "hashtags": [
+    "#maps"
+   ],
+   "source_url": "https://data.worldbank.org/indicator/SP.POP.0509.FE.5Y",
+   "status": "open",
+   "added_by": "refill"
+  },
+  {
+   "id": "t242",
+   "topic": "Girls Aged 10 to 14 Worldwide",
+   "angle": "In several African nations, girls aged 10 to 14 make up over 13% of the female population, nearly four times the share seen in parts of East Asia and Europe.",
+   "format": "map_reveal",
+   "dataset": {
+    "kind": "worldbank",
+    "indicator": "SP.POP.1014.FE.5Y",
+    "label": "Girls aged 10–14 (% of female pop.)",
+    "unit": "%",
+    "source": "World Bank",
+    "min_year": 2019
+   },
+   "scale": {
+    "kind": "bins",
+    "edges": [
+     5,
+     8,
+     11
+    ],
+    "labels": [
+     "Under 5%",
+     "5% to 8%",
+     "8% to 11%",
+     "Over 11%"
+    ]
+   },
+   "value_format": "{v:.1f}%",
+   "hashtags": [
+    "#maps me",
+    "#geography",
+    "#demographics"
+   ],
+   "source_url": "https://data.worldbank.org/indicator/SP.POP.1014.FE.5Y",
+   "status": "open",
+   "added_by": "refill"
   }
  ],
- "refilled_at": "2026-11-22T09:10:14+00:00"
+ "refilled_at": "2026-11-23T09:10:25+00:00"
 }

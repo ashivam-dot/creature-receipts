@@ -1,0 +1,160 @@
+{
+  "errors": [],
+  "claims": [
+    {
+      "surface": "title",
+      "text": "China vs Sudan: The Childhood Vaccine Gap",
+      "isos": [
+        "CHN",
+        "SDN"
+      ],
+      "support": "China immunization rate is 97% (CHN), Sudan immunization rate is 39% (SDN)"
+    },
+    {
+      "surface": "hook",
+      "text": "THE VACCINE GAP",
+      "isos": [],
+      "support": "Child immunization, DPT, measures percentage of children 12-23 months receiving DPT vaccinations"
+    },
+    {
+      "surface": "description",
+      "text": "A global comparison of childhood DPT immunization rates between China and Sudan using World Bank data.",
+      "isos": [
+        "CHN",
+        "SDN"
+      ],
+      "support": "Indicator SH.IMM.IDPT from World Bank comparing CHN (97%) and SDN (39%)"
+    },
+    {
+      "surface": "beat_0",
+      "text": "In China, 97% of toddlers get basic DPT vaccines. In Sudan, it's 39%.",
+      "isos": [
+        "CHN",
+        "SDN"
+      ],
+      "support": "China value is 97.0%, Sudan value is 39.0%"
+    },
+    {
+      "surface": "beat_1",
+      "text": "China protects nearly all its young children against diphtheria, pertussis, and tetanus.",
+      "isos": [
+        "CHN"
+      ],
+      "support": "China DPT immunization rate is 97%"
+    },
+    {
+      "surface": "beat_2",
+      "text": "Sudan is the world's lowest, where most toddlers lack full protection.",
+      "isos": [
+        "SDN"
+      ],
+      "support": "Sudan rank is 189 out of 189 (lowest), value is 39% (below 50%)"
+    },
+    {
+      "surface": "beat_3",
+      "text": "Full protection requires 3 doses of vaccine during infancy.",
+      "isos": [],
+      "support": "Definition: A child is considered adequately immunized against diphtheria, pertussis (or whooping cough), and tetanus (DPT) after receiving three doses of vaccine."
+    },
+    {
+      "surface": "beat_4",
+      "text": "That gives China 2.5 times the immunization rate of Sudan.",
+      "isos": [
+        "CHN",
+        "SDN"
+      ],
+      "support": "China is 97% and Sudan is 39%; 97 / 39 = 2.487 (approximately 2.5 times)"
+    },
+    {
+      "surface": "beat_5",
+      "text": "Across all nations, the median country sits at 91%.",
+      "isos": [],
+      "support": "Many entities have 91% (e.g., BRA, BFA, FIN, KEN, MWI, NLD, NZL, SEN, SLE, ZMB, ZWE), representing the middle value of the distribution"
+    },
+    {
+      "surface": "beat_6",
+      "text": "How high is childhood DPT immunization in your country?",
+      "isos": [],
+      "support": "Question referencing the indicator universe of mapped countries and territories"
+    },
+    {
+      "surface": "card_6",
+      "text": "HOW PROTECTED ARE TODDLERS? DPT Immunization Rate, World Bank",
+      "isos": [],
+      "support": "Indicator title and theme matching World Bank SH.IMM.IDPT"
+    }
+  ],
+  "surface_checks": {
+    "title": {
+      "supported": true,
+      "reason": "China (97%) and Sudan (39%) values match the evidence.",
+      "isos": [
+        "CHN",
+        "SDN"
+      ]
+    },
+    "hook": {
+      "supported": true,
+      "reason": "The hook correctly frames the topic using indicator data.",
+      "isos": []
+    },
+    "description": {
+      "supported": true,
+      "reason": "Accurately describes the comparison between China and Sudan using World Bank data.",
+      "isos": [
+        "CHN",
+        "SDN"
+      ]
+    },
+    "beat_0": {
+      "supported": true,
+      "reason": "China value is 97% and Sudan value is 39% in the dataset.",
+      "isos": [
+        "CHN",
+        "SDN"
+      ]
+    },
+    "beat_1": {
+      "supported": true,
+      "reason": "China's 97% coverage supports 'nearly all'.",
+      "isos": [
+        "CHN"
+      ]
+    },
+    "beat_2": {
+      "supported": true,
+      "reason": "Sudan is ranked 189 out of 189 with 39%, making it the lowest, and 39% means most lack protection.",
+      "isos": [
+        "SDN"
+      ]
+    },
+    "beat_3": {
+      "supported": true,
+      "reason": "Directly matches the definition stating three doses of vaccine are required.",
+      "isos": []
+    },
+    "beat_4": {
+      "supported": true,
+      "reason": "97 divided by 39 is approximately 2.5.",
+      "isos": [
+        "CHN",
+        "SDN"
+      ]
+    },
+    "beat_5": {
+      "supported": true,
+      "reason": "91% is present across multiple countries representing the median.",
+      "isos": []
+    },
+    "beat_6": {
+      "supported": true,
+      "reason": "Standard country inquiry for the dataset.",
+      "isos": []
+    },
+    "card_6": {
+      "supported": true,
+      "reason": "Matches indicator source and title correctly.",
+      "isos": []
+    }
+  }
+}

@@ -1,0 +1,2000 @@
+{
+  "version": 1,
+  "evidence": {
+    "version": 1,
+    "indicator": "NY.GDP.COAL.RT.ZS",
+    "definition": "Coal rents are the difference between the value of both hard and soft coal production at world prices and their total costs of production.",
+    "source": "https://data.worldbank.org/indicator/NY.GDP.COAL.RT.ZS",
+    "source_response_sha256": "1e6dbc0e3911fef19ea55f4464ae9eab6d3c1f0a3d98bb1a3c462efe76c1b283",
+    "source_organization": "The Changing Wealth of Nations, World Bank (WB), uri: https://www.worldbank.org/en/publication/changing-wealth-of-nations/data, note: World Bank staff estimates based on sources and methods described in the World Bank's The Changing Wealth of Nations., publisher: World Bank (WB);\nStaff estimates, World Bank (WB), note: World Bank staff estimates based on sources and methods described in the World Bank's The Changing Wealth of Nations.",
+    "year_label": "latest available 2019–2021",
+    "universe": "mapped countries and territories with data",
+    "count": 191,
+    "threshold": 0.1,
+    "at_or_above": 28,
+    "entities": {
+      "AFG": {
+        "name": "Afghanistan",
+        "value": 0.0193977562950517,
+        "display": "0.02%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 43
+      },
+      "ALB": {
+        "name": "Albania",
+        "value": 0.0322572749578343,
+        "display": "0.03%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 38
+      },
+      "DZA": {
+        "name": "Algeria",
+        "value": 0.0,
+        "display": "0%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 67
+      },
+      "ASM": {
+        "name": "American Samoa",
+        "value": 0.0,
+        "display": "0%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 67
+      },
+      "AGO": {
+        "name": "Angola",
+        "value": 0.0,
+        "display": "0%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 67
+      },
+      "ATG": {
+        "name": "Antigua and Barbuda",
+        "value": 0.0,
+        "display": "0%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 67
+      },
+      "ARG": {
+        "name": "Argentina",
+        "value": 0.000157746419195732,
+        "display": "0.0002%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 64
+      },
+      "ARM": {
+        "name": "Armenia",
+        "value": 2.759777831075e-06,
+        "display": "0.000003%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 66
+      },
+      "ABW": {
+        "name": "Aruba",
+        "value": 0.0,
+        "display": "0%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 67
+      },
+      "AUS": {
+        "name": "Australia",
+        "value": 0.786459619916648,
+        "display": "0.8%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 8
+      },
+      "AUT": {
+        "name": "Austria",
+        "value": 0.0,
+        "display": "0%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 67
+      },
+      "AZE": {
+        "name": "Azerbaijan",
+        "value": 0.0,
+        "display": "0%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 67
+      },
+      "BHS": {
+        "name": "Bahamas, The",
+        "value": 0.0,
+        "display": "0%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 67
+      },
+      "BHR": {
+        "name": "Bahrain",
+        "value": 0.0,
+        "display": "0%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 67
+      },
+      "BGD": {
+        "name": "Bangladesh",
+        "value": 0.0132526717304666,
+        "display": "0.01%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 49
+      },
+      "BRB": {
+        "name": "Barbados",
+        "value": 0.0,
+        "display": "0%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 67
+      },
+      "BLR": {
+        "name": "Belarus",
+        "value": 0.0,
+        "display": "0%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 67
+      },
+      "BEL": {
+        "name": "Belgium",
+        "value": 0.0,
+        "display": "0%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 67
+      },
+      "BLZ": {
+        "name": "Belize",
+        "value": 0.0,
+        "display": "0%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 67
+      },
+      "BEN": {
+        "name": "Benin",
+        "value": 0.0,
+        "display": "0%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 67
+      },
+      "BMU": {
+        "name": "Bermuda",
+        "value": 0.0,
+        "display": "0%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 67
+      },
+      "BTN": {
+        "name": "Bhutan",
+        "value": 0.0,
+        "display": "0%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 67
+      },
+      "BOL": {
+        "name": "Bolivia",
+        "value": 0.0,
+        "display": "0%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 67
+      },
+      "BIH": {
+        "name": "Bosnia and Herzegovina",
+        "value": 0.301983937935592,
+        "display": "0.3%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 17
+      },
+      "BWA": {
+        "name": "Botswana",
+        "value": 0.500235146664399,
+        "display": "0.5%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 13
+      },
+      "BRA": {
+        "name": "Brazil",
+        "value": 0.0143152350634996,
+        "display": "0.01%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 48
+      },
+      "BRN": {
+        "name": "Brunei Darussalam",
+        "value": 0.0,
+        "display": "0%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 67
+      },
+      "BGR": {
+        "name": "Bulgaria",
+        "value": 0.126365577523338,
+        "display": "0.1%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 27
+      },
+      "BFA": {
+        "name": "Burkina Faso",
+        "value": 0.0,
+        "display": "0%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 67
+      },
+      "BDI": {
+        "name": "Burundi",
+        "value": 0.0,
+        "display": "0%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 67
+      },
+      "CPV": {
+        "name": "Cabo Verde",
+        "value": 17.1799974804718,
+        "display": "17.2%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 1
+      },
+      "KHM": {
+        "name": "Cambodia",
+        "value": 0.00480544500071724,
+        "display": "0.005%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 56
+      },
+      "CMR": {
+        "name": "Cameroon",
+        "value": 0.0,
+        "display": "0%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 67
+      },
+      "CAN": {
+        "name": "Canada",
+        "value": 0.0730211132400775,
+        "display": "0.1%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 31
+      },
+      "CYM": {
+        "name": "Cayman Islands",
+        "value": 0.0,
+        "display": "0%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 67
+      },
+      "CAF": {
+        "name": "Central African Republic",
+        "value": 0.0,
+        "display": "0%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 67
+      },
+      "TCD": {
+        "name": "Chad",
+        "value": 0.0,
+        "display": "0%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 67
+      },
+      "CHL": {
+        "name": "Chile",
+        "value": 0.0001519770108825,
+        "display": "0.0002%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 65
+      },
+      "CHN": {
+        "name": "China",
+        "value": 0.607568894164746,
+        "display": "0.6%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 12
+      },
+      "COL": {
+        "name": "Colombia",
+        "value": 0.725814104210245,
+        "display": "0.7%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 9
+      },
+      "COM": {
+        "name": "Comoros",
+        "value": 0.0,
+        "display": "0%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 67
+      },
+      "COD": {
+        "name": "Congo, Dem. Rep.",
+        "value": 0.0,
+        "display": "0%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 67
+      },
+      "COG": {
+        "name": "Congo, Rep.",
+        "value": 0.0,
+        "display": "0%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 67
+      },
+      "CRI": {
+        "name": "Costa Rica",
+        "value": 0.0,
+        "display": "0%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 67
+      },
+      "CIV": {
+        "name": "Cote d'Ivoire",
+        "value": 0.0,
+        "display": "0%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 67
+      },
+      "HRV": {
+        "name": "Croatia",
+        "value": 0.0,
+        "display": "0%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 67
+      },
+      "CUB": {
+        "name": "Cuba",
+        "value": 0.0,
+        "display": "0%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 67
+      },
+      "CUW": {
+        "name": "Curacao",
+        "value": 0.0,
+        "display": "0%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 67
+      },
+      "CYP": {
+        "name": "Cyprus",
+        "value": 0.0,
+        "display": "0%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 67
+      },
+      "CZE": {
+        "name": "Czechia",
+        "value": 0.0939363572598997,
+        "display": "0.1%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 30
+      },
+      "DNK": {
+        "name": "Denmark",
+        "value": 0.0,
+        "display": "0%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 67
+      },
+      "DJI": {
+        "name": "Djibouti",
+        "value": 0.0,
+        "display": "0%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 67
+      },
+      "DMA": {
+        "name": "Dominica",
+        "value": 0.0,
+        "display": "0%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 67
+      },
+      "DOM": {
+        "name": "Dominican Republic",
+        "value": 0.0,
+        "display": "0%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 67
+      },
+      "ECU": {
+        "name": "Ecuador",
+        "value": 0.0,
+        "display": "0%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 67
+      },
+      "EGY": {
+        "name": "Egypt, Arab Rep.",
+        "value": 0.0,
+        "display": "0%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 67
+      },
+      "SLV": {
+        "name": "El Salvador",
+        "value": 0.0,
+        "display": "0%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 67
+      },
+      "GNQ": {
+        "name": "Equatorial Guinea",
+        "value": 0.0,
+        "display": "0%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 67
+      },
+      "EST": {
+        "name": "Estonia",
+        "value": 0.0,
+        "display": "0%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 67
+      },
+      "SWZ": {
+        "name": "Eswatini",
+        "value": 0.13654443934385,
+        "display": "0.1%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 26
+      },
+      "ETH": {
+        "name": "Ethiopia",
+        "value": 0.000163832810177573,
+        "display": "0.0002%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 63
+      },
+      "FJI": {
+        "name": "Fiji",
+        "value": 0.0,
+        "display": "0%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 67
+      },
+      "FIN": {
+        "name": "Finland",
+        "value": 0.0,
+        "display": "0%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 67
+      },
+      "FRA": {
+        "name": "France",
+        "value": 0.0,
+        "display": "0%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 67
+      },
+      "PYF": {
+        "name": "French Polynesia",
+        "value": 0.0,
+        "display": "0%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 67
+      },
+      "GAB": {
+        "name": "Gabon",
+        "value": 0.0,
+        "display": "0%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 67
+      },
+      "GMB": {
+        "name": "Gambia, The",
+        "value": 0.0,
+        "display": "0%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 67
+      },
+      "GEO": {
+        "name": "Georgia",
+        "value": 0.00790127231235254,
+        "display": "0.01%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 53
+      },
+      "DEU": {
+        "name": "Germany",
+        "value": 0.014480866265137,
+        "display": "0.01%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 47
+      },
+      "GHA": {
+        "name": "Ghana",
+        "value": 0.0,
+        "display": "0%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 67
+      },
+      "GRC": {
+        "name": "Greece",
+        "value": 0.0146481346149569,
+        "display": "0.01%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 46
+      },
+      "GRL": {
+        "name": "Greenland",
+        "value": 0.0,
+        "display": "0%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 67
+      },
+      "GRD": {
+        "name": "Grenada",
+        "value": 0.0,
+        "display": "0%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 67
+      },
+      "GUM": {
+        "name": "Guam",
+        "value": 0.0,
+        "display": "0%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 67
+      },
+      "GTM": {
+        "name": "Guatemala",
+        "value": 0.0,
+        "display": "0%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 67
+      },
+      "GIN": {
+        "name": "Guinea",
+        "value": 0.0,
+        "display": "0%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 67
+      },
+      "GNB": {
+        "name": "Guinea-Bissau",
+        "value": 0.0,
+        "display": "0%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 67
+      },
+      "GUY": {
+        "name": "Guyana",
+        "value": 0.0,
+        "display": "0%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 67
+      },
+      "HTI": {
+        "name": "Haiti",
+        "value": 0.0,
+        "display": "0%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 67
+      },
+      "HND": {
+        "name": "Honduras",
+        "value": 0.0,
+        "display": "0%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 67
+      },
+      "HKG": {
+        "name": "Hong Kong SAR, China",
+        "value": 0.0,
+        "display": "0%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 67
+      },
+      "HUN": {
+        "name": "Hungary",
+        "value": 0.00936874396198461,
+        "display": "0.01%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 51
+      },
+      "ISL": {
+        "name": "Iceland",
+        "value": 0.0,
+        "display": "0%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 67
+      },
+      "IND": {
+        "name": "India",
+        "value": 1.28029169863481,
+        "display": "1.3%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 5
+      },
+      "IDN": {
+        "name": "Indonesia",
+        "value": 1.22270966877205,
+        "display": "1.2%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 6
+      },
+      "IRN": {
+        "name": "Iran, Islamic Rep.",
+        "value": 0.00939526245305688,
+        "display": "0.01%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 50
+      },
+      "IRQ": {
+        "name": "Iraq",
+        "value": 0.0,
+        "display": "0%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 67
+      },
+      "IRL": {
+        "name": "Ireland",
+        "value": 0.0,
+        "display": "0%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 67
+      },
+      "ISR": {
+        "name": "Israel",
+        "value": 0.0,
+        "display": "0%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 67
+      },
+      "ITA": {
+        "name": "Italy",
+        "value": 0.0,
+        "display": "0%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 67
+      },
+      "JAM": {
+        "name": "Jamaica",
+        "value": 0.0,
+        "display": "0%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 67
+      },
+      "JPN": {
+        "name": "Japan",
+        "value": 0.000357494585802386,
+        "display": "0.0004%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 62
+      },
+      "JOR": {
+        "name": "Jordan",
+        "value": 0.0,
+        "display": "0%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 67
+      },
+      "KAZ": {
+        "name": "Kazakhstan",
+        "value": 0.848889916850088,
+        "display": "0.8%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 7
+      },
+      "KEN": {
+        "name": "Kenya",
+        "value": 0.0,
+        "display": "0%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 67
+      },
+      "KIR": {
+        "name": "Kiribati",
+        "value": 0.0,
+        "display": "0%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 67
+      },
+      "KOR": {
+        "name": "Korea, Rep.",
+        "value": 0.00109890187258597,
+        "display": "0.001%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 58
+      },
+      "KWT": {
+        "name": "Kuwait",
+        "value": 0.0,
+        "display": "0%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 67
+      },
+      "KGZ": {
+        "name": "Kyrgyz Republic",
+        "value": 0.257836525140979,
+        "display": "0.3%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 19
+      },
+      "LVA": {
+        "name": "Latvia",
+        "value": 0.0,
+        "display": "0%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 67
+      },
+      "LBN": {
+        "name": "Lebanon",
+        "value": 0.0,
+        "display": "0%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 67
+      },
+      "LSO": {
+        "name": "Lesotho",
+        "value": 0.0,
+        "display": "0%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 67
+      },
+      "LBR": {
+        "name": "Liberia",
+        "value": 0.0,
+        "display": "0%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 67
+      },
+      "LBY": {
+        "name": "Libya",
+        "value": 0.0,
+        "display": "0%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 67
+      },
+      "LTU": {
+        "name": "Lithuania",
+        "value": 0.0,
+        "display": "0%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 67
+      },
+      "LUX": {
+        "name": "Luxembourg",
+        "value": 0.0,
+        "display": "0%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 67
+      },
+      "MDG": {
+        "name": "Madagascar",
+        "value": 0.0,
+        "display": "0%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 67
+      },
+      "MWI": {
+        "name": "Malawi",
+        "value": 0.0166282857564063,
+        "display": "0.02%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 44
+      },
+      "MYS": {
+        "name": "Malaysia",
+        "value": 0.0252334817053191,
+        "display": "0.03%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 41
+      },
+      "MLI": {
+        "name": "Mali",
+        "value": 0.0,
+        "display": "0%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 67
+      },
+      "MLT": {
+        "name": "Malta",
+        "value": 0.0,
+        "display": "0%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 67
+      },
+      "MRT": {
+        "name": "Mauritania",
+        "value": 0.670017115111406,
+        "display": "0.7%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 10
+      },
+      "MUS": {
+        "name": "Mauritius",
+        "value": 0.0,
+        "display": "0%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 67
+      },
+      "MEX": {
+        "name": "Mexico",
+        "value": 0.0161205544445626,
+        "display": "0.02%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 45
+      },
+      "MDA": {
+        "name": "Moldova",
+        "value": 0.0,
+        "display": "0%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 67
+      },
+      "MNG": {
+        "name": "Mongolia",
+        "value": 4.89275510557756,
+        "display": "4.9%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 2
+      },
+      "MNE": {
+        "name": "Montenegro",
+        "value": 0.14484831357974,
+        "display": "0.1%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 25
+      },
+      "MAR": {
+        "name": "Morocco",
+        "value": 0.0,
+        "display": "0%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 67
+      },
+      "MOZ": {
+        "name": "Mozambique",
+        "value": 3.78124905359831,
+        "display": "3.8%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 3
+      },
+      "MMR": {
+        "name": "Myanmar",
+        "value": 0.0464337290823448,
+        "display": "0.05%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 35
+      },
+      "NAM": {
+        "name": "Namibia",
+        "value": 0.0,
+        "display": "0%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 67
+      },
+      "NPL": {
+        "name": "Nepal",
+        "value": 0.00606226595390929,
+        "display": "0.01%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 54
+      },
+      "NLD": {
+        "name": "Netherlands",
+        "value": 0.0,
+        "display": "0%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 67
+      },
+      "NCL": {
+        "name": "New Caledonia",
+        "value": 0.0,
+        "display": "0%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 67
+      },
+      "NZL": {
+        "name": "New Zealand",
+        "value": 0.0306624632958425,
+        "display": "0.03%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 39
+      },
+      "NIC": {
+        "name": "Nicaragua",
+        "value": 0.0,
+        "display": "0%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 67
+      },
+      "NER": {
+        "name": "Niger",
+        "value": 0.0372529254036624,
+        "display": "0.04%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 36
+      },
+      "NGA": {
+        "name": "Nigeria",
+        "value": 0.000478431638825823,
+        "display": "0.0005%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 61
+      },
+      "MKD": {
+        "name": "North Macedonia",
+        "value": 0.00863232977360442,
+        "display": "0.01%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 52
+      },
+      "NOR": {
+        "name": "Norway",
+        "value": 0.000758175459027536,
+        "display": "0.001%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 60
+      },
+      "OMN": {
+        "name": "Oman",
+        "value": 0.0,
+        "display": "0%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 67
+      },
+      "PAK": {
+        "name": "Pakistan",
+        "value": 0.121668638591279,
+        "display": "0.1%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 28
+      },
+      "PAN": {
+        "name": "Panama",
+        "value": 0.0,
+        "display": "0%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 67
+      },
+      "PNG": {
+        "name": "Papua New Guinea",
+        "value": 0.0,
+        "display": "0%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 67
+      },
+      "PRY": {
+        "name": "Paraguay",
+        "value": 0.0,
+        "display": "0%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 67
+      },
+      "PER": {
+        "name": "Peru",
+        "value": 0.00249271827303621,
+        "display": "0.002%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 57
+      },
+      "PHL": {
+        "name": "Philippines",
+        "value": 0.0944068332804607,
+        "display": "0.1%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 29
+      },
+      "POL": {
+        "name": "Poland",
+        "value": 0.246377814021137,
+        "display": "0.2%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 20
+      },
+      "PRT": {
+        "name": "Portugal",
+        "value": 0.0,
+        "display": "0%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 67
+      },
+      "PRI": {
+        "name": "Puerto Rico (US)",
+        "value": 0.0,
+        "display": "0%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 67
+      },
+      "QAT": {
+        "name": "Qatar",
+        "value": 0.0,
+        "display": "0%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 67
+      },
+      "ROU": {
+        "name": "Romania",
+        "value": 0.0241444525656809,
+        "display": "0.02%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 42
+      },
+      "RUS": {
+        "name": "Russian Federation",
+        "value": 0.612542293942399,
+        "display": "0.6%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 11
+      },
+      "RWA": {
+        "name": "Rwanda",
+        "value": 0.0,
+        "display": "0%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 67
+      },
+      "WSM": {
+        "name": "Samoa",
+        "value": 0.0,
+        "display": "0%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 67
+      },
+      "STP": {
+        "name": "Sao Tome and Principe",
+        "value": 0.0,
+        "display": "0%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 67
+      },
+      "SAU": {
+        "name": "Saudi Arabia",
+        "value": 0.0,
+        "display": "0%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 67
+      },
+      "SEN": {
+        "name": "Senegal",
+        "value": 0.0,
+        "display": "0%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 67
+      },
+      "SRB": {
+        "name": "Serbia",
+        "value": 0.235195620780373,
+        "display": "0.2%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 21
+      },
+      "SYC": {
+        "name": "Seychelles",
+        "value": 0.0,
+        "display": "0%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 67
+      },
+      "SLE": {
+        "name": "Sierra Leone",
+        "value": 0.0,
+        "display": "0%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 67
+      },
+      "SGP": {
+        "name": "Singapore",
+        "value": 0.0,
+        "display": "0%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 67
+      },
+      "SVK": {
+        "name": "Slovak Republic",
+        "value": 0.00515044751380184,
+        "display": "0.01%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 55
+      },
+      "SVN": {
+        "name": "Slovenia",
+        "value": 0.0258661890048008,
+        "display": "0.03%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 40
+      },
+      "SLB": {
+        "name": "Solomon Islands",
+        "value": 0.0,
+        "display": "0%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 67
+      },
+      "SOM": {
+        "name": "Somalia, Fed. Rep.",
+        "value": 0.0,
+        "display": "0%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 67
+      },
+      "ZAF": {
+        "name": "South Africa",
+        "value": 2.44110582623372,
+        "display": "2.4%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 4
+      },
+      "ESP": {
+        "name": "Spain",
+        "value": 0.0,
+        "display": "0%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 67
+      },
+      "LKA": {
+        "name": "Sri Lanka",
+        "value": 0.0,
+        "display": "0%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 67
+      },
+      "KNA": {
+        "name": "St. Kitts and Nevis",
+        "value": 0.0,
+        "display": "0%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 67
+      },
+      "LCA": {
+        "name": "St. Lucia",
+        "value": 0.0,
+        "display": "0%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 67
+      },
+      "VCT": {
+        "name": "St. Vincent and the Grenadines",
+        "value": 0.0,
+        "display": "0%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 67
+      },
+      "SDN": {
+        "name": "Sudan",
+        "value": 0.0,
+        "display": "0%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 67
+      },
+      "SUR": {
+        "name": "Suriname",
+        "value": 0.0,
+        "display": "0%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 67
+      },
+      "SWE": {
+        "name": "Sweden",
+        "value": 0.0,
+        "display": "0%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 67
+      },
+      "CHE": {
+        "name": "Switzerland",
+        "value": 0.0,
+        "display": "0%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 67
+      },
+      "SYR": {
+        "name": "Syrian Arab Republic",
+        "value": 0.0,
+        "display": "0%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 67
+      },
+      "TJK": {
+        "name": "Tajikistan",
+        "value": 0.486026357740751,
+        "display": "0.5%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 14
+      },
+      "TZA": {
+        "name": "Tanzania",
+        "value": 0.0494009697131187,
+        "display": "0.05%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 33
+      },
+      "THA": {
+        "name": "Thailand",
+        "value": 0.0335556904365916,
+        "display": "0.03%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 37
+      },
+      "TLS": {
+        "name": "Timor-Leste",
+        "value": 0.0,
+        "display": "0%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 67
+      },
+      "TGO": {
+        "name": "Togo",
+        "value": 0.0,
+        "display": "0%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 67
+      },
+      "TON": {
+        "name": "Tonga",
+        "value": 0.0,
+        "display": "0%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 67
+      },
+      "TTO": {
+        "name": "Trinidad and Tobago",
+        "value": 0.0,
+        "display": "0%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 67
+      },
+      "TUN": {
+        "name": "Tunisia",
+        "value": 0.0,
+        "display": "0%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 67
+      },
+      "TUR": {
+        "name": "Turkiye",
+        "value": 0.0473618807971925,
+        "display": "0.05%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 34
+      },
+      "TKM": {
+        "name": "Turkmenistan",
+        "value": 0.0,
+        "display": "0%",
+        "year": 2019,
+        "unit": "%",
+        "rank": 67
+      },
+      "TCA": {
+        "name": "Turks and Caicos Islands",
+        "value": 0.0,
+        "display": "0%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 67
+      },
+      "UGA": {
+        "name": "Uganda",
+        "value": 0.0,
+        "display": "0%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 67
+      },
+      "UKR": {
+        "name": "Ukraine",
+        "value": 0.336999214543813,
+        "display": "0.3%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 16
+      },
+      "ARE": {
+        "name": "United Arab Emirates",
+        "value": 0.0,
+        "display": "0%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 67
+      },
+      "GBR": {
+        "name": "United Kingdom",
+        "value": 0.00102273685261212,
+        "display": "0.001%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 59
+      },
+      "USA": {
+        "name": "United States",
+        "value": 0.165541837941739,
+        "display": "0.2%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 24
+      },
+      "URY": {
+        "name": "Uruguay",
+        "value": 0.0,
+        "display": "0%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 67
+      },
+      "UZB": {
+        "name": "Uzbekistan",
+        "value": 0.0535648008565471,
+        "display": "0.1%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 32
+      },
+      "VUT": {
+        "name": "Vanuatu",
+        "value": 0.0,
+        "display": "0%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 67
+      },
+      "VNM": {
+        "name": "Viet Nam",
+        "value": 0.376818816953012,
+        "display": "0.4%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 15
+      },
+      "VIR": {
+        "name": "Virgin Islands (U.S.)",
+        "value": 0.205447216042101,
+        "display": "0.2%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 23
+      },
+      "PSE": {
+        "name": "West Bank and Gaza",
+        "value": 0.0,
+        "display": "0%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 67
+      },
+      "ZMB": {
+        "name": "Zambia",
+        "value": 0.231179863199288,
+        "display": "0.2%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 22
+      },
+      "ZWE": {
+        "name": "Zimbabwe",
+        "value": 0.290130858618712,
+        "display": "0.3%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 18
+      }
+    }
+  },
+  "review": {
+    "errors": [],
+    "claims": [
+      {
+        "surface": "title",
+        "text": "Is INDIA Near the Top for Coal Rents?",
+        "isos": [
+          "IND"
+        ],
+        "support": "India value is 1.28%, rank 5 out of 191.",
+        "evidence": {
+          "IND": {
+            "name": "India",
+            "value": 1.28029169863481,
+            "display": "1.3%",
+            "year": 2021,
+            "unit": "%",
+            "rank": 5
+          }
+        }
+      },
+      {
+        "surface": "hook",
+        "text": "NATIONAL COAL RENTS",
+        "isos": [],
+        "support": "Topic is coal rents.",
+        "evidence": {}
+      },
+      {
+        "surface": "description",
+        "text": "Comparing national economic reliance on coal rents as a share of GDP across major global economies using World Bank data.",
+        "isos": [],
+        "support": "Indicator NY.GDP.COAL.RT.ZS from World Bank measures coal rents as a share of GDP.",
+        "evidence": {}
+      },
+      {
+        "surface": "beat_0",
+        "text": "Coal rents make up 1.3% of GDP in India. In the USA, it is just 0.2%.",
+        "isos": [
+          "IND",
+          "USA"
+        ],
+        "support": "IND: 1.28% (display 1.3%), USA: 0.165% (display 0.2%).",
+        "evidence": {
+          "IND": {
+            "name": "India",
+            "value": 1.28029169863481,
+            "display": "1.3%",
+            "year": 2021,
+            "unit": "%",
+            "rank": 5
+          },
+          "USA": {
+            "name": "United States",
+            "value": 0.165541837941739,
+            "display": "0.2%",
+            "year": 2021,
+            "unit": "%",
+            "rank": 24
+          }
+        }
+      },
+      {
+        "surface": "beat_1",
+        "text": "That puts India near the top among major economies for coal earnings relative to its economy.",
+        "isos": [
+          "IND"
+        ],
+        "support": "India rank is 5 in the dataset.",
+        "evidence": {
+          "IND": {
+            "name": "India",
+            "value": 1.28029169863481,
+            "display": "1.3%",
+            "year": 2021,
+            "unit": "%",
+            "rank": 5
+          }
+        }
+      },
+      {
+        "surface": "beat_2",
+        "text": "It counts the profit margin between world market prices for coal and total production costs.",
+        "isos": [],
+        "support": "Definition: Coal rents are the difference between the value of both hard and soft coal production at world prices and their total costs of production.",
+        "evidence": {}
+      },
+      {
+        "surface": "beat_3",
+        "text": "Mongolia hits even higher, where coal rents generate 4.9% of GDP.",
+        "isos": [
+          "MNG"
+        ],
+        "support": "MNG value is 4.89% (display 4.9%).",
+        "evidence": {
+          "MNG": {
+            "name": "Mongolia",
+            "value": 4.89275510557756,
+            "display": "4.9%",
+            "year": 2021,
+            "unit": "%",
+            "rank": 2
+          }
+        }
+      },
+      {
+        "surface": "beat_4",
+        "text": "Mozambique follows at 3.8%, South Africa at 2.4%, and India sits at 1.3%.",
+        "isos": [
+          "MOZ",
+          "ZAF",
+          "IND"
+        ],
+        "support": "MOZ: 3.78% (display 3.8%), ZAF: 2.44% (display 2.4%), IND: 1.28% (display 1.3%).",
+        "evidence": {
+          "MOZ": {
+            "name": "Mozambique",
+            "value": 3.78124905359831,
+            "display": "3.8%",
+            "year": 2021,
+            "unit": "%",
+            "rank": 3
+          },
+          "ZAF": {
+            "name": "South Africa",
+            "value": 2.44110582623372,
+            "display": "2.4%",
+            "year": 2021,
+            "unit": "%",
+            "rank": 4
+          },
+          "IND": {
+            "name": "India",
+            "value": 1.28029169863481,
+            "display": "1.3%",
+            "year": 2021,
+            "unit": "%",
+            "rank": 5
+          }
+        }
+      },
+      {
+        "surface": "beat_5",
+        "text": "Meanwhile, Germany stands at 0.01%, and the UK drops to 0.001%.",
+        "isos": [
+          "DEU",
+          "GBR"
+        ],
+        "support": "DEU: 0.014% (display 0.01%), GBR: 0.001% (display 0.001%).",
+        "evidence": {
+          "DEU": {
+            "name": "Germany",
+            "value": 0.014480866265137,
+            "display": "0.01%",
+            "year": 2021,
+            "unit": "%",
+            "rank": 47
+          },
+          "GBR": {
+            "name": "United Kingdom",
+            "value": 0.00102273685261212,
+            "display": "0.001%",
+            "year": 2021,
+            "unit": "%",
+            "rank": 59
+          }
+        }
+      },
+      {
+        "surface": "beat_6",
+        "text": "How much does coal power the economy in your country?",
+        "isos": [],
+        "support": "A standard prompt style question.",
+        "evidence": {}
+      },
+      {
+        "surface": "card_6",
+        "text": "COAL RENTS",
+        "isos": [],
+        "support": "Card heading matches the indicator.",
+        "evidence": {}
+      },
+      {
+        "surface": "title",
+        "text": "Is INDIA Near the Top for Coal Rents?",
+        "isos": [
+          "IND"
+        ],
+        "support": "India is ranked 5th, which is near the top of the mapped universe.",
+        "method": "complete-surface-check",
+        "evidence": {
+          "IND": {
+            "name": "India",
+            "value": 1.28029169863481,
+            "display": "1.3%",
+            "year": 2021,
+            "unit": "%",
+            "rank": 5
+          }
+        }
+      },
+      {
+        "surface": "hook",
+        "text": "NATIONAL COAL RENTS",
+        "isos": [],
+        "support": "Accurately names the topic.",
+        "method": "complete-surface-check",
+        "evidence": {}
+      },
+      {
+        "surface": "description",
+        "text": "Comparing national economic reliance on coal rents as a share of GDP across major global economies using World Bank data.",
+        "isos": [],
+        "support": "Accurately describes the dataset and indicator.",
+        "method": "complete-surface-check",
+        "evidence": {}
+      },
+      {
+        "surface": "beat_0",
+        "text": "Coal rents make up 1.3% of GDP in India. In the USA, it is just 0.2%.",
+        "isos": [
+          "IND",
+          "USA"
+        ],
+        "support": "Values match India (1.3%) and USA (0.2%) displays.",
+        "method": "complete-surface-check",
+        "evidence": {
+          "IND": {
+            "name": "India",
+            "value": 1.28029169863481,
+            "display": "1.3%",
+            "year": 2021,
+            "unit": "%",
+            "rank": 5
+          },
+          "USA": {
+            "name": "United States",
+            "value": 0.165541837941739,
+            "display": "0.2%",
+            "year": 2021,
+            "unit": "%",
+            "rank": 24
+          }
+        }
+      },
+      {
+        "surface": "beat_1",
+        "text": "That puts India near the top among major economies for coal earnings relative to its economy.",
+        "isos": [
+          "IND"
+        ],
+        "support": "India rank 5 is near the top.",
+        "method": "complete-surface-check",
+        "evidence": {
+          "IND": {
+            "name": "India",
+            "value": 1.28029169863481,
+            "display": "1.3%",
+            "year": 2021,
+            "unit": "%",
+            "rank": 5
+          }
+        }
+      },
+      {
+        "surface": "beat_2",
+        "text": "It counts the profit margin between world market prices for coal and total production costs.",
+        "isos": [],
+        "support": "Matches indicator definition.",
+        "method": "complete-surface-check",
+        "evidence": {}
+      },
+      {
+        "surface": "beat_3",
+        "text": "Mongolia hits even higher, where coal rents generate 4.9% of GDP.",
+        "isos": [
+          "MNG"
+        ],
+        "support": "Mongolia value matches 4.9%.",
+        "method": "complete-surface-check",
+        "evidence": {
+          "MNG": {
+            "name": "Mongolia",
+            "value": 4.89275510557756,
+            "display": "4.9%",
+            "year": 2021,
+            "unit": "%",
+            "rank": 2
+          }
+        }
+      },
+      {
+        "surface": "beat_4",
+        "text": "Mozambique follows at 3.8%, South Africa at 2.4%, and India sits at 1.3%.",
+        "isos": [
+          "MOZ",
+          "ZAF",
+          "IND"
+        ],
+        "support": "Mozambique (3.8%), South Africa (2.4%), and India (1.3%) match source values.",
+        "method": "complete-surface-check",
+        "evidence": {
+          "MOZ": {
+            "name": "Mozambique",
+            "value": 3.78124905359831,
+            "display": "3.8%",
+            "year": 2021,
+            "unit": "%",
+            "rank": 3
+          },
+          "ZAF": {
+            "name": "South Africa",
+            "value": 2.44110582623372,
+            "display": "2.4%",
+            "year": 2021,
+            "unit": "%",
+            "rank": 4
+          },
+          "IND": {
+            "name": "India",
+            "value": 1.28029169863481,
+            "display": "1.3%",
+            "year": 2021,
+            "unit": "%",
+            "rank": 5
+          }
+        }
+      },
+      {
+        "surface": "beat_5",
+        "text": "Meanwhile, Germany stands at 0.01%, and the UK drops to 0.001%.",
+        "isos": [
+          "DEU",
+          "GBR"
+        ],
+        "support": "Germany (0.01%) and UK (0.001%) match source values.",
+        "method": "complete-surface-check",
+        "evidence": {
+          "DEU": {
+            "name": "Germany",
+            "value": 0.014480866265137,
+            "display": "0.01%",
+            "year": 2021,
+            "unit": "%",
+            "rank": 47
+          },
+          "GBR": {
+            "name": "United Kingdom",
+            "value": 0.00102273685261212,
+            "display": "0.001%",
+            "year": 2021,
+            "unit": "%",
+            "rank": 59
+          }
+        }
+      },
+      {
+        "surface": "beat_6",
+        "text": "How much does coal power the economy in your country?",
+        "isos": [],
+        "support": "Standard call to action question.",
+        "method": "complete-surface-check",
+        "evidence": {}
+      },
+      {
+        "surface": "card_6",
+        "text": [
+          "COAL RENTS",
+          "Coal rents as a share of GDP (%)"
+        ],
+        "isos": [],
+        "support": "Matches indicator name and unit.",
+        "method": "complete-surface-check",
+        "evidence": {}
+      }
+    ],
+    "surface_checks": {
+      "title": {
+        "supported": true,
+        "reason": "India is ranked 5th, which is near the top of the mapped universe.",
+        "isos": [
+          "IND"
+        ]
+      },
+      "hook": {
+        "supported": true,
+        "reason": "Accurately names the topic.",
+        "isos": []
+      },
+      "description": {
+        "supported": true,
+        "reason": "Accurately describes the dataset and indicator.",
+        "isos": []
+      },
+      "beat_0": {
+        "supported": true,
+        "reason": "Values match India (1.3%) and USA (0.2%) displays.",
+        "isos": [
+          "IND",
+          "USA"
+        ]
+      },
+      "beat_1": {
+        "supported": true,
+        "reason": "India rank 5 is near the top.",
+        "isos": [
+          "IND"
+        ]
+      },
+      "beat_2": {
+        "supported": true,
+        "reason": "Matches indicator definition.",
+        "isos": []
+      },
+      "beat_3": {
+        "supported": true,
+        "reason": "Mongolia value matches 4.9%.",
+        "isos": [
+          "MNG"
+        ]
+      },
+      "beat_4": {
+        "supported": true,
+        "reason": "Mozambique (3.8%), South Africa (2.4%), and India (1.3%) match source values.",
+        "isos": [
+          "MOZ",
+          "ZAF",
+          "IND"
+        ]
+      },
+      "beat_5": {
+        "supported": true,
+        "reason": "Germany (0.01%) and UK (0.001%) match source values.",
+        "isos": [
+          "DEU",
+          "GBR"
+        ]
+      },
+      "beat_6": {
+        "supported": true,
+        "reason": "Standard call to action question.",
+        "isos": []
+      },
+      "card_6": {
+        "supported": true,
+        "reason": "Matches indicator name and unit.",
+        "isos": []
+      }
+    },
+    "warnings": []
+  },
+  "script_sha256": "a0362f13a578cca74219caf889c03178e61df00eda45ea61feb12527f8519d1a",
+  "data_sha256": "7fbc1821f524a9356cffe6c8dfae653f98c891c5ebaa7861606fe3c0e5eb6746",
+  "reviewer_model": "gemini-3.5-flash-lite"
+}

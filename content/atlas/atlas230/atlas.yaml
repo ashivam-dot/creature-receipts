@@ -1,0 +1,75 @@
+id: atlas230
+title: 'China vs Sudan: The Childhood Vaccine Gap'
+format: versus
+hook_text: THE VACCINE GAP
+description: A global comparison of childhood DPT immunization rates between China and Sudan using World Bank data.
+hashtags:
+- '#health'
+- '#geography'
+- '#countries'
+tags:
+- health
+- dpt immunization rate among toddlers
+- countries ranked by dpt immunization rate among toddlers
+- Turkiye
+- Sudan
+- world map
+- geography
+- atlas in numbers
+sources:
+- https://data.worldbank.org/indicator/SH.IMM.IDPT
+dataset:
+  kind: worldbank
+  indicator: SH.IMM.IDPT
+  label: DPT immunization rate among toddlers
+  unit: '%'
+  source: World Bank
+  min_year: 2019
+scale:
+  kind: threshold
+  at: 90.0
+  labels:
+  - 90% or higher
+  - Below 90%
+value_format: '{v:.0f}%'
+beats:
+- text: In China, 97% of toddlers get basic DPT vaccines. In Sudan, it's 39%.
+  shot:
+    callouts:
+    - CHN
+    - SDN
+- text: China protects nearly all its young children against diphtheria, pertussis, and tetanus.
+  shot:
+    kind: country
+    iso: CHN
+- text: Sudan is the world's lowest, where most toddlers lack full protection.
+  shot:
+    kind: country
+    iso: SDN
+- text: Full protection requires 3 doses of vaccine during infancy.
+  shot:
+    kind: country
+    iso: CHN
+  basis: measures the percentage of children ages 12-23 months who received DPT vaccinations before 12 months or
+    at any time before the survey. A child is considered adequately immunized against diphtheria, pertussis (or
+    whooping cough), and tetanus (DPT) after receiving three doses of vaccine.
+- text: That gives China 2.5 times the immunization rate of Sudan.
+  shot:
+    kind: group
+    isos:
+    - CHN
+    - SDN
+- text: Across all nations, the median country sits at 91%.
+  shot:
+    kind: rank
+    isos:
+    - JPN
+    - BRA
+    - PAK
+    - NGA
+- text: How high is childhood DPT immunization in your country?
+  shot:
+    kind: card
+    lines:
+    - HOW PROTECTED ARE TODDLERS?
+    - DPT Immunization Rate, World Bank

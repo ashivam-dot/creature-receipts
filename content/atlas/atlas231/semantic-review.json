@@ -1,0 +1,147 @@
+{
+  "errors": [],
+  "claims": [
+    {
+      "surface": "title",
+      "text": "Where Young Women Make Up the Biggest Share of Females",
+      "isos": [],
+      "support": "Female population between the ages 20 to 24 as a percentage of the total female population."
+    },
+    {
+      "surface": "hook",
+      "text": "SHARE OF YOUNG WOMEN",
+      "isos": [],
+      "support": "Female population between the ages 20 to 24 as a percentage of the total female population."
+    },
+    {
+      "surface": "description",
+      "text": "Comparing the share of young women aged 20 to 24 as a percentage of total females across 208 countries and territories.",
+      "isos": [],
+      "support": "Female population between the ages 20 to 24 as a percentage of the total female population., count: 208"
+    },
+    {
+      "surface": "beat_0",
+      "text": "In Syria, 11.4% of females are in their early twenties. In Belarus, 4.3%.",
+      "isos": [
+        "SYR",
+        "BLR"
+      ],
+      "support": "SYR: 11.3829391046295 (display: 11.4%), BLR: 4.32478739900568 (display: 4.3%)"
+    },
+    {
+      "surface": "beat_1",
+      "text": "East Timor follows right behind at 10.6% of females in that age group.",
+      "isos": [
+        "TLS"
+      ],
+      "support": "TLS: 10.6100409158612 (display: 10.6%)"
+    },
+    {
+      "surface": "beat_2",
+      "text": "On the low end, China has 5.2%, and Japan sits at 4.7%.",
+      "isos": [
+        "CHN",
+        "JPN"
+      ],
+      "support": "CHN: 5.22139576512001 (display: 5.2%), JPN: 4.73771449286048 (display: 4.7%)"
+    },
+    {
+      "surface": "beat_3",
+      "text": "Eastern Europe drops lower: Latvia has 4.4%, Poland 4.4%, and Belarus 4.3%.",
+      "isos": [
+        "LVA",
+        "POL",
+        "BLR"
+      ],
+      "support": "LVA: 4.40037769581394 (display: 4.4%), POL: 4.35822651818036 (display: 4.4%), BLR: 4.32478739900568 (display: 4.3%)"
+    },
+    {
+      "surface": "beat_4",
+      "text": "India sits higher at 8.7%, with 2 times the share of Belarus.",
+      "isos": [
+        "IND",
+        "BLR"
+      ],
+      "support": "IND: 8.71051078474726 (display: 8.7%), BLR: 4.32478739900568 (display: 4.3%)"
+    },
+    {
+      "surface": "beat_5",
+      "text": "What share of females in your country are in their early twenties?",
+      "isos": [],
+      "support": "Female population between the ages 20 to 24 as a percentage of the total female population."
+    },
+    {
+      "surface": "card_5",
+      "text": "YOUR COUNTRY'S SHARE?, Share of Young Women (Ages 20-24), World Bank 2025",
+      "isos": [],
+      "support": "Female population between the ages 20 to 24 as a percentage of the total female population., year_label: 2025"
+    }
+  ],
+  "surface_checks": {
+    "title": {
+      "supported": true,
+      "reason": "The title matches the dataset definition of the indicator.",
+      "isos": []
+    },
+    "hook": {
+      "supported": true,
+      "reason": "The hook correctly names the metric.",
+      "isos": []
+    },
+    "description": {
+      "supported": true,
+      "reason": "The description accurately reflects the definition and universe count of 208.",
+      "isos": []
+    },
+    "beat_0": {
+      "supported": true,
+      "reason": "Syria value is 11.4% and Belarus value is 4.3%, exactly matching the source display values.",
+      "isos": [
+        "SYR",
+        "BLR"
+      ]
+    },
+    "beat_1": {
+      "supported": true,
+      "reason": "Timor-Leste (East Timor) value is 10.6%, matching the display value.",
+      "isos": [
+        "TLS"
+      ]
+    },
+    "beat_2": {
+      "supported": true,
+      "reason": "China has 5.2% and Japan has 4.7%, matching display values.",
+      "isos": [
+        "CHN",
+        "JPN"
+      ]
+    },
+    "beat_3": {
+      "supported": true,
+      "reason": "Latvia is 4.4%, Poland is 4.4%, and Belarus is 4.3%, matching display values.",
+      "isos": [
+        "LVA",
+        "POL",
+        "BLR"
+      ]
+    },
+    "beat_4": {
+      "supported": true,
+      "reason": "India is 8.7% which is approximately twice the share of Belarus (4.3%).",
+      "isos": [
+        "IND",
+        "BLR"
+      ]
+    },
+    "beat_5": {
+      "supported": true,
+      "reason": "General question supported by the context.",
+      "isos": []
+    },
+    "card_5": {
+      "supported": true,
+      "reason": "Card text matches indicator details and year 2025.",
+      "isos": []
+    }
+  }
+}
