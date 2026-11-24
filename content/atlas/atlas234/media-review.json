@@ -1,0 +1,25 @@
+{
+  "duration": 40.7,
+  "integrated_lufs": -14.1,
+  "true_peak_dbfs": -1.5,
+  "speech": {
+    "heard": "The United States spends 16.7% of its economy on health. LaROS spends 1.3%. That gives the United States the highest healthcare spending share on Earth. Compare that to India, which spends 3.3% of its economy on health. This counts healthcare goods and services consumed, excluding capital costs like buildings and machinery. Near the top, Afghanistan spends 15%, Germany spends 12.3%, and the UK spends 11.1%. At the very bottom sits Laos, spending just 1.3%. How much of your nation's economy goes to healthcare?",
+    "model": "small.en",
+    "media_sha256": "a160da956d4cc55c1b230fb8544644229425f407b4448132e4f8ce0d0c936413",
+    "primary_differences": [
+      "'laos' heard as 'laros' after 'economy on health'"
+    ],
+    "differences": [
+      "'laos' heard as 'laros' after 'economy on health'",
+      "base.en: 'laos' heard as 'lara' after 'economy on health'"
+    ],
+    "corroboration": {
+      "model": "base.en",
+      "heard": "The United States spends 16.7% of its economy on health. Lara spends 1.3% That gives the United States the highest health care spending share on earth. Compare that to India, which spends 3.3% of its economy on health. This counts health care goods and services consumed, excluding capital costs like buildings and machinery. Near the top, Afghanistan spends 15%, Germany spends 12.3%, and the UK spends 11.1%. At the very bottom sits Laos, spending just 1.3%. How much of your nation's economy goes to health care?",
+      "differences": [
+        "'laos' heard as 'lara' after 'economy on health'"
+      ],
+      "resolved": []
+    }
+  }
+}
