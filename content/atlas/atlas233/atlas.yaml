@@ -1,0 +1,88 @@
+id: atlas233
+title: Which Country Has the MOST Young Girls?
+format: odd_one_out
+hook_text: YOUTH GAP
+description: A look at the global share of girls aged 5 to 9, comparing the young populations of Africa with the
+  aging demographics of East Asia and the West.
+hashtags:
+- '#population'
+- '#geography'
+- '#countries'
+tags:
+- population
+- girls aged 5-9 share of females
+- countries ranked by girls aged 5-9 share of females
+- Somalia Fed. Rep.
+- Korea Rep.
+- world map
+- geography
+- atlas in numbers
+sources:
+- https://data.worldbank.org/indicator/SP.POP.0509.FE.5Y
+dataset:
+  kind: worldbank
+  indicator: SP.POP.0509.FE.5Y
+  label: Girls aged 5-9 share of females
+  unit: '%'
+  source: World Bank
+  min_year: 2019
+scale:
+  edges:
+  - 5.0
+  - 8.0
+  - 11.0
+  - 13.0
+  labels:
+  - Under 5%
+  - 5% to 8%
+  - 8% to 11%
+  - 11% to 13%
+  - Over 13%
+value_format: '{v:.1f}%'
+beats:
+- text: Somalia has 15.3% of young girls. South Korea has just 3.3%.
+  shot:
+    callouts:
+    - SOM
+    - KOR
+- text: One big country breaks this pattern. It's not the one you'd guess.
+  shot:
+    callouts:
+    - NGA
+- text: The USA, China, or Nigeria?
+  shot:
+    kind: group
+    isos:
+    - USA
+    - CHN
+    - NGA
+- text: 'Nigeria: 13.3%. That is 3.7 times the young girls Japan has.'
+  shot:
+    kind: group
+    isos:
+    - NGA
+    - JPN
+- text: The world's highest are Somalia, 15.3%, Niger, 15.2%, and Mali, 15.1%.
+  shot:
+    kind: rank
+    isos:
+    - SOM
+    - NER
+    - MLI
+- text: It counts the female population between the ages 5 to 9 as a percentage of the total female population.
+  shot:
+    kind: country
+    iso: SOM
+  basis: Female population between the ages 5 to 9 as a percentage of the total female population.
+- text: The USA has 5.6%. China has 5.4%.
+  shot:
+    kind: group
+    isos:
+    - USA
+    - CHN
+- text: What share of your country's female population are young girls?
+  shot:
+    kind: card
+    lines:
+    - Young girls share?
+    - World Bank 2025

@@ -8656,7 +8656,7 @@
     "#maps_atlas"
    ],
    "source_url": "https://data.worldbank.org/indicator/SP.POP.2024.FE.5Y",
-   "status": "ready:atlas231",
+   "status": "used:atlas231",
    "added_by": "refill"
   },
   {
@@ -8722,7 +8722,7 @@
     "#education"
    ],
    "source_url": "https://data.worldbank.org/indicator/NY.ADJ.AEDU.GN.ZS",
-   "status": "ready:atlas227",
+   "status": "used:atlas227",
    "added_by": "refill"
   },
   {
@@ -8751,7 +8751,7 @@
     "#maps me"
    ],
    "source_url": "https://data.worldbank.org/indicator/SH.IMM.IDPT",
-   "status": "ready:atlas230",
+   "status": "used:atlas230",
    "added_by": "refill"
   },
   {
@@ -8780,14 +8780,14 @@
     "#maps me"
    ],
    "source_url": "https://data.worldbank.org/indicator/NY.GDP.COAL.RT.ZS",
-   "status": "ready:atlas229",
+   "status": "used:atlas229",
    "added_by": "refill"
   },
   {
    "id": "t241",
    "topic": "Girls Aged 5 to 9 Worldwide",
    "angle": "In countries like Somalia and Niger, young girls aged 5 to 9 make up over 15% of all females, compared to just 3% in East Asia.",
-   "format": "map_reveal",
+   "format": "odd_one_out",
    "dataset": {
     "kind": "worldbank",
     "indicator": "SP.POP.0509.FE.5Y",
@@ -8817,7 +8817,7 @@
     "#maps"
    ],
    "source_url": "https://data.worldbank.org/indicator/SP.POP.0509.FE.5Y",
-   "status": "open",
+   "status": "ready:atlas233",
    "added_by": "refill"
   },
   {
@@ -8856,7 +8856,393 @@
    "source_url": "https://data.worldbank.org/indicator/SP.POP.1014.FE.5Y",
    "status": "open",
    "added_by": "refill"
+  },
+  {
+   "id": "t243",
+   "topic": "Financial inclusion for women globally",
+   "angle": "Over half of adult women globally lack access to a basic bank or mobile money account in the lowest ranked countries.",
+   "format": "rank_ladder",
+   "dataset": {
+    "kind": "worldbank",
+    "indicator": "FX.OWN.TOTL.FE.ZS",
+    "label": "Women with a bank or mobile account",
+    "unit": "%",
+    "source": "World Bank",
+    "min_year": 2019
+   },
+   "scale": {
+    "kind": "bins",
+    "edges": [
+     25.0,
+     50.0,
+     75.0,
+     90.0
+    ],
+    "labels": [
+     "Under 25%",
+     "25% to 50%",
+     "50% to 75%",
+     "75% to 90%",
+     "Over 90%"
+    ]
+   },
+   "value_format": "{v:.1f}%",
+   "hashtags": [
+    "#maps",
+    "#geography",
+    "#finance"
+   ],
+   "source_url": "https://data.worldbank.org/indicator/FX.OWN.TOTL.FE.ZS",
+   "status": "ready:atlas232",
+   "added_by": "refill"
+  },
+  {
+   "id": "t244",
+   "topic": "The Global Workforce in Agriculture",
+   "angle": "While agriculture remains the primary livelihood for over 85% of workers in some nations, it employs less than 1% of the workforce in major global hubs.",
+   "format": "map_reveal",
+   "dataset": {
+    "kind": "worldbank",
+    "indicator": "SL.AGR.EMPL.ZS",
+    "label": "Share of total employment",
+    "unit": "%",
+    "source": "World Bank",
+    "min_year": 2019
+   },
+   "scale": {
+    "kind": "bins",
+    "edges": [
+     5,
+     20,
+     40,
+     60
+    ],
+    "labels": [
+     "Under 5%",
+     "5-20%",
+     "20-40%",
+     "40-60%",
+     "Over 60%"
+    ]
+   },
+   "value_format": "{v:.1f}%",
+   "hashtags": [
+    "#maps",
+    "#geography",
+    "#economy"
+   ],
+   "source_url": "https://data.worldbank.org/indicator/SL.AGR.EMPL.ZS",
+   "status": "open",
+   "added_by": "refill"
+  },
+  {
+   "id": "t245",
+   "topic": "The Global Cost of Healthcare",
+   "angle": "While the United States spends nearly 17 percent of its GDP on health, some nations manage their entire systems on less than 2 percent.",
+   "format": "map_reveal",
+   "dataset": {
+    "kind": "worldbank",
+    "indicator": "SH.XPD.CHEX.GD.ZS",
+    "label": "Health expenditure as % of GDP",
+    "unit": "%",
+    "source": "World Bank",
+    "min_year": 2019
+   },
+   "scale": {
+    "kind": "bins",
+    "edges": [
+     3.0,
+     6.0,
+     9.0,
+     12.0
+    ],
+    "labels": [
+     "Under 3%",
+     "3-6%",
+     "6-9%",
+     "9-12%",
+     "Over 12%"
+    ]
+   },
+   "value_format": "{v:.1f}%",
+   "hashtags": [
+    "#maps",
+    "#geography",
+    "#healthcare"
+   ],
+   "source_url": "https://data.worldbank.org/indicator/SH.XPD.CHEX.GD.ZS",
+   "status": "open",
+   "added_by": "refill"
+  },
+  {
+   "id": "t246",
+   "topic": "Carbon Intensity Across Global Economies",
+   "angle": "Palau emits over 100,000 times more carbon per dollar of economic output than the US Virgin Islands.",
+   "format": "rank_ladder",
+   "dataset": {
+    "kind": "worldbank",
+    "indicator": "EN.GHG.CO2.RT.GDP.PP.KD",
+    "label": "CO2 emissions per 2021 PPP dollar",
+    "unit": "kg",
+    "source": "World Bank",
+    "min_year": 2019
+   },
+   "scale": {
+    "kind": "bins",
+    "edges": [
+     0.05,
+     0.1,
+     0.2,
+     0.5
+    ],
+    "labels": [
+     "Very Low",
+     "Low",
+     "Moderate",
+     "High",
+     "Extreme"
+    ]
+   },
+   "value_format": "{v:.3f} kg",
+   "hashtags": [
+    "#maps",
+    "#geography",
+    "#climate"
+   ],
+   "source_url": "https://data.worldbank.org/indicator/EN.GHG.CO2.RT.GDP.PP.KD",
+   "status": "open",
+   "added_by": "refill"
+  },
+  {
+   "id": "t247",
+   "topic": "Where Women Drive the Workforce",
+   "angle": "In some nations over 80 percent of adult women are employed, while in others fewer than 4 percent hold a job.",
+   "format": "map_reveal",
+   "dataset": {
+    "kind": "worldbank",
+    "indicator": "SL.EMP.TOTL.SP.FE.ZS",
+    "label": "Female employment-to-population ratio",
+    "unit": "%",
+    "source": "World Bank",
+    "min_year": 2019
+   },
+   "scale": {
+    "kind": "bins",
+    "edges": [
+     20.0,
+     40.0,
+     60.0,
+     80.0
+    ],
+    "labels": [
+     "Under 20%",
+     "20 to 40%",
+     "40 to 60%",
+     "60 to 80%",
+     "Over 80%"
+    ]
+   },
+   "value_format": "{v:.1f}%",
+   "hashtags": [
+    "#maps",
+    "#geography",
+    "#womeninwork"
+   ],
+   "source_url": "https://data.worldbank.org/indicator/SL.EMP.TOTL.SP.FE.ZS",
+   "status": "open",
+   "added_by": "refill"
+  },
+  {
+   "id": "t248",
+   "topic": "Anemia Affects Over Half of Women in Several Nations",
+   "angle": "Even in high-income regions, at least one in ten women of reproductive age experience anemia.",
+   "format": "map_reveal",
+   "dataset": {
+    "kind": "worldbank",
+    "indicator": "SH.ANM.ALLW.ZS",
+    "label": "Women of reproductive age with anemia",
+    "unit": "%",
+    "source": "World Bank",
+    "min_year": 2019
+   },
+   "scale": {
+    "kind": "bins",
+    "edges": [
+     20.0,
+     30.0,
+     40.0,
+     50.0
+    ],
+    "labels": [
+     "Under 20%",
+     "20% to 30%",
+     "30% to 40%",
+     "40% to 50%",
+     "Over 50%"
+    ]
+   },
+   "value_format": "{v:.1f}%",
+   "hashtags": [
+    "#maps",
+    "#geography",
+    "#health"
+   ],
+   "source_url": "https://data.worldbank.org/indicator/SH.ANM.ALLW.ZS",
+   "status": "open",
+   "added_by": "refill"
+  },
+  {
+   "id": "t249",
+   "topic": "Crop Production Change Since 2015",
+   "angle": "Arid nations like Oman doubled crop output while Caribbean islands halved theirs.",
+   "format": "rank_ladder",
+   "dataset": {
+    "kind": "worldbank",
+    "indicator": "AG.PRD.CROP.XD",
+    "label": "Crop production index (2014-2016=100)",
+    "unit": "index",
+    "source": "World Bank",
+    "min_year": 2019
+   },
+   "scale": {
+    "edges": [
+     80,
+     100,
+     140,
+     180
+    ],
+    "kind": "bins",
+    "labels": [
+     "Sharp Decline",
+     "Decline",
+     "Growth",
+     "High Growth",
+     "Doubling"
+    ]
+   },
+   "value_format": "{v:.0f}",
+   "hashtags": [
+    "#maps",
+    "#geography",
+    "#mapsdata"
+   ],
+   "source_url": "https://data.worldbank.org/indicator/AG.PRD.CROP.XD",
+   "status": "open",
+   "added_by": "refill"
+  },
+  {
+   "id": "t250",
+   "topic": "Where Men Are Locked Out of Banking",
+   "angle": "In Niger, only 1 in 6 men holds a financial account, while in Finland every man does.",
+   "format": "map_reveal",
+   "dataset": {
+    "kind": "worldbank",
+    "indicator": "FX.OWN.TOTL.MA.ZS",
+    "label": "Share of men with a bank account",
+    "unit": "%",
+    "source": "World Bank",
+    "min_year": 2019
+   },
+   "scale": {
+    "edges": [
+     40,
+     60,
+     80,
+     95
+    ],
+    "kind": "bins",
+    "labels": [
+     "Under 40%",
+     "40–60%",
+     "60–80%",
+     "80–95%",
+     "95%+"
+    ]
+   },
+   "value_format": "{v:.1f}%",
+   "hashtags": [
+    "#maps",
+    "#geography",
+    "#finance"
+   ],
+   "source_url": "https://data.worldbank.org/indicator/FX.OWN.TOTL.MA.ZS",
+   "status": "open",
+   "added_by": "refill"
+  },
+  {
+   "id": "t251",
+   "topic": "Megacity Populations Around the World",
+   "angle": "China leads the world with over 460 million people living in metropolitan areas of more than one million residents.",
+   "format": "map_reveal",
+   "dataset": {
+    "kind": "worldbank",
+    "indicator": "EN.URB.MCTY",
+    "label": "Urban population in 1M+ cities",
+    "unit": "people",
+    "source": "World Bank",
+    "min_year": 2019
+   },
+   "scale": {
+    "kind": "bins",
+    "edges": [
+     2000000,
+     10000000,
+     50000000,
+     200000000
+    ],
+    "labels": [
+     "Under 2M",
+     "2M to 10M",
+     "10M to 50M",
+     "50M to 200M",
+     "Over 200M"
+    ]
+   },
+   "value_format": "{v:,.0f}",
+   "hashtags": [
+    "#maps"
+   ],
+   "source_url": "https://data.worldbank.org/indicator/EN.URB.MCTY",
+   "status": "open",
+   "added_by": "refill"
+  },
+  {
+   "id": "t252",
+   "topic": "People Living Below National Poverty Lines",
+   "angle": "While national poverty rates exceed 60% in several countries, others report official rates below 5%.",
+   "format": "rank_ladder",
+   "dataset": {
+    "kind": "worldbank",
+    "indicator": "SI.POV.NAHC",
+    "label": "Population below national poverty line",
+    "unit": "%",
+    "source": "World Bank",
+    "min_year": 2019
+   },
+   "scale": {
+    "kind": "bins",
+    "edges": [
+     10,
+     20,
+     35,
+     50
+    ],
+    "labels": [
+     "Under 10%",
+     "10% to 20%",
+     "20% to 35%",
+     "35% to 50%",
+     "Over 50%"
+    ]
+   },
+   "value_format": "{v:.1f}%",
+   "hashtags": [
+    "#maps me"
+   ],
+   "source_url": "https://data.worldbank.org/indicator/SI.POV.NAHC",
+   "status": "open",
+   "added_by": "refill"
   }
  ],
- "refilled_at": "2026-11-23T09:10:25+00:00"
+ "refilled_at": "2026-11-24T09:10:39+00:00"
 }

@@ -1,0 +1,177 @@
+{
+  "errors": [],
+  "claims": [
+    {
+      "surface": "title",
+      "text": "Places Ranked by Women's FINANCIAL Inclusion",
+      "isos": [],
+      "support": "A global ranking of women's financial inclusion across 142 countries and territories."
+    },
+    {
+      "surface": "hook",
+      "text": "THE BANKING GAP",
+      "isos": [],
+      "support": "A global ranking of women's financial inclusion."
+    },
+    {
+      "surface": "description",
+      "text": "A global ranking of women's financial inclusion, measuring access to bank and mobile money accounts across 142 countries and territories.",
+      "isos": [],
+      "support": "Global Findex Database, 142 mapped countries and territories."
+    },
+    {
+      "surface": "beat_0",
+      "text": "France hits 99.8 percent for women with accounts. Yemen stops at 5.4 percent.",
+      "isos": [
+        "FRA",
+        "YEM"
+      ],
+      "support": "France value is 99.848494933374 (display 99.8%), Yemen value is 5.43631354617772 (display 5.4%)."
+    },
+    {
+      "surface": "beat_1",
+      "text": "Yemen is the lowest on Earth. Pakistan has 11.9 percent and Niger has 12.2 percent.",
+      "isos": [
+        "YEM",
+        "PAK",
+        "NER"
+      ],
+      "support": "Yemen rank is 142 (lowest), Pakistan value is 11.9121696598431 (display 11.9%), Niger value is 12.2030464030006 (display 12.2%)."
+    },
+    {
+      "surface": "beat_2",
+      "text": "This counts women who use a mobile money service or have a bank account.",
+      "isos": [],
+      "support": "Account definition: percentage of respondents who report having an account at a financial institution or report personally using a mobile money service (female, % age 15+)."
+    },
+    {
+      "surface": "beat_3",
+      "text": "Nigeria has 52.2 percent and Indonesia has 58 percent.",
+      "isos": [
+        "NGA",
+        "IDN"
+      ],
+      "support": "Nigeria value is 52.2155914465012 (display 52.2%), Indonesia value is 58.0308451514518 (display 58%)."
+    },
+    {
+      "surface": "beat_4",
+      "text": "India and China both have 89.2 percent.",
+      "isos": [
+        "IND",
+        "CHN"
+      ],
+      "support": "India value is 89.2482328079147 (display 89.2%), China value is 89.2021200745424 (display 89.2%)."
+    },
+    {
+      "surface": "beat_5",
+      "text": "USA has 97.1 percent. UK has 99.3 percent.",
+      "isos": [
+        "USA",
+        "GBR"
+      ],
+      "support": "United States value is 97.1092143262693 (display 97.1%), United Kingdom value is 99.2689870562959 (display 99.3%)."
+    },
+    {
+      "surface": "beat_6",
+      "text": "France is the world's highest at 99.8 percent. It has 18 times the value Yemen has.",
+      "isos": [
+        "FRA",
+        "YEM"
+      ],
+      "support": "France rank is 1, value 99.848%. Yemen value is 5.436%. 99.848 / 5.436 approx 18.36 times."
+    },
+    {
+      "surface": "beat_7",
+      "text": "What would change if every woman had a bank account?",
+      "isos": [],
+      "support": "Outro card exploring hypothetical financial inclusion."
+    },
+    {
+      "surface": "card_7",
+      "text": "Who is banked? Women with a bank or mobile account (%)",
+      "isos": [],
+      "support": "Indicator definition and title."
+    }
+  ],
+  "surface_checks": {
+    "title": {
+      "supported": true,
+      "reason": "The title accurately reflects a ranking of women's financial inclusion.",
+      "isos": []
+    },
+    "hook": {
+      "supported": true,
+      "reason": "The hook sets up the banking gap theme.",
+      "isos": []
+    },
+    "description": {
+      "supported": true,
+      "reason": "Description matches the dataset parameters (142 countries and territories, bank/mobile accounts).",
+      "isos": []
+    },
+    "beat_0": {
+      "supported": true,
+      "reason": "France and Yemen values match the evidence exactly.",
+      "isos": [
+        "FRA",
+        "YEM"
+      ]
+    },
+    "beat_1": {
+      "supported": true,
+      "reason": "Yemen is rank 142 (lowest), Pakistan and Niger values match their respective data.",
+      "isos": [
+        "YEM",
+        "PAK",
+        "NER"
+      ]
+    },
+    "beat_2": {
+      "supported": true,
+      "reason": "Directly references the official indicator definition.",
+      "isos": []
+    },
+    "beat_3": {
+      "supported": true,
+      "reason": "Nigeria and Indonesia values match display numbers.",
+      "isos": [
+        "NGA",
+        "IDN"
+      ]
+    },
+    "beat_4": {
+      "supported": true,
+      "reason": "Both India and China round to 89.2% according to dataset display values.",
+      "isos": [
+        "IND",
+        "CHN"
+      ]
+    },
+    "beat_5": {
+      "supported": true,
+      "reason": "USA and UK values match the evidence.",
+      "isos": [
+        "USA",
+        "GBR"
+      ]
+    },
+    "beat_6": {
+      "supported": true,
+      "reason": "France rank 1 with 99.8% and the 18x multiple calculation is mathematically accurate based on values.",
+      "isos": [
+        "FRA",
+        "YEM"
+      ]
+    },
+    "beat_7": {
+      "supported": true,
+      "reason": "Outro question is styled appropriately.",
+      "isos": []
+    },
+    "card_7": {
+      "supported": true,
+      "reason": "Card text correctly summarizes the metric.",
+      "isos": []
+    }
+  }
+}

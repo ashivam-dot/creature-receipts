@@ -1,0 +1,173 @@
+{
+  "errors": [],
+  "claims": [
+    {
+      "surface": "title",
+      "text": "Which Country Has the MOST Young Girls?",
+      "isos": [],
+      "support": "Somalia rank 1 with 15.3%"
+    },
+    {
+      "surface": "hook",
+      "text": "YOUTH GAP",
+      "isos": [],
+      "support": "Indicator SP.POP.0509.FE.5Y"
+    },
+    {
+      "surface": "description",
+      "text": "A look at the global share of girls aged 5 to 9, comparing the young populations of Africa with the aging demographics of East Asia and the West.",
+      "isos": [],
+      "support": "Indicator definition: Female population between the ages 5 to 9 as a percentage of the total female population."
+    },
+    {
+      "surface": "beat_0",
+      "text": "Somalia has 15.3% of young girls. South Korea has just 3.3%.",
+      "isos": [
+        "SOM",
+        "KOR"
+      ],
+      "support": "SOM value 15.3119307490072, display 15.3%; KOR value 3.29548438067376, display 3.3%"
+    },
+    {
+      "surface": "beat_1",
+      "text": "One big country breaks this pattern. It's not the one you'd guess.",
+      "isos": [],
+      "support": "NGA value 13.332173839388"
+    },
+    {
+      "surface": "beat_2",
+      "text": "The USA, China, or Nigeria?",
+      "isos": [
+        "USA",
+        "CHN",
+        "NGA"
+      ],
+      "support": "USA, CHN, NGA present in evidence"
+    },
+    {
+      "surface": "beat_3",
+      "text": "Nigeria: 13.3%. That is 3.7 times the young girls Japan has.",
+      "isos": [
+        "NGA",
+        "JPN"
+      ],
+      "support": "NGA display 13.3%; JPN value 3.59570854086556; ratio 13.332173839388 / 3.59570854086556 is approximately 3.7"
+    },
+    {
+      "surface": "beat_4",
+      "text": "The world's highest are Somalia, 15.3%, Niger, 15.2%, and Mali, 15.1%.",
+      "isos": [
+        "SOM",
+        "NER",
+        "MLI"
+      ],
+      "support": "SOM rank 1 (15.3%), NER rank 2 (15.2%), MLI rank 3 (15.1%)"
+    },
+    {
+      "surface": "beat_5",
+      "text": "It counts the female population between the ages 5 to 9 as a percentage of the total female population.",
+      "isos": [],
+      "support": "Female population between the ages 5 to 9 as a percentage of the total female population."
+    },
+    {
+      "surface": "beat_6",
+      "text": "The USA has 5.6%. China has 5.4%.",
+      "isos": [
+        "USA",
+        "CHN"
+      ],
+      "support": "USA display 5.6%, CHN display 5.4%"
+    },
+    {
+      "surface": "beat_7",
+      "text": "What share of your country's female population are young girls?",
+      "isos": [],
+      "support": "Indicator definition matching female population age 5 to 9 share"
+    },
+    {
+      "surface": "card_7",
+      "text": "Young girls share? World Bank 2025",
+      "isos": [],
+      "support": "World Bank 2025 indicator SP.POP.0509.FE.5Y"
+    }
+  ],
+  "surface_checks": {
+    "title": {
+      "supported": true,
+      "reason": "Somalia holds rank 1 in the dataset with 15.3%",
+      "isos": []
+    },
+    "hook": {
+      "supported": true,
+      "reason": "Refers generally to the demographic distribution of young cohorts",
+      "isos": []
+    },
+    "description": {
+      "supported": true,
+      "reason": "Accurately reflects indicator definition and regional differences",
+      "isos": []
+    },
+    "beat_0": {
+      "supported": true,
+      "reason": "Matches Somalia (15.3%) and South Korea (3.3%) values",
+      "isos": [
+        "SOM",
+        "KOR"
+      ]
+    },
+    "beat_1": {
+      "supported": true,
+      "reason": "Narrative framing supported by Nigeria's high relative value among large nations",
+      "isos": []
+    },
+    "beat_2": {
+      "supported": true,
+      "reason": "Lists countries present in the evidence",
+      "isos": [
+        "USA",
+        "CHN",
+        "NGA"
+      ]
+    },
+    "beat_3": {
+      "supported": true,
+      "reason": "Nigeria is 13.3% and Japan is 3.6%, 13.3/3.6 is about 3.7",
+      "isos": [
+        "NGA",
+        "JPN"
+      ]
+    },
+    "beat_4": {
+      "supported": true,
+      "reason": "Somalia (15.3%), Niger (15.2%), and Mali (15.1%) are the top three ranks",
+      "isos": [
+        "SOM",
+        "NER",
+        "MLI"
+      ]
+    },
+    "beat_5": {
+      "supported": true,
+      "reason": "Verbatim definition match from evidence",
+      "isos": []
+    },
+    "beat_6": {
+      "supported": true,
+      "reason": "USA is 5.6% and China is 5.4% in evidence",
+      "isos": [
+        "USA",
+        "CHN"
+      ]
+    },
+    "beat_7": {
+      "supported": true,
+      "reason": "Consistent with indicator definition",
+      "isos": []
+    },
+    "card_7": {
+      "supported": true,
+      "reason": "Matches source and year metadata",
+      "isos": []
+    }
+  }
+}

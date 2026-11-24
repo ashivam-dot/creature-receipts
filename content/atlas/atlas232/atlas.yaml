@@ -1,0 +1,88 @@
+id: atlas232
+title: Places Ranked by Women's FINANCIAL Inclusion
+format: rank_ladder
+hook_text: THE BANKING GAP
+description: A global ranking of women's financial inclusion, measuring access to bank and mobile money accounts
+  across 142 countries and territories.
+hashtags:
+- '#economy'
+- '#finance'
+- '#geography'
+tags:
+- wealth
+- women with a bank or mobile account
+- countries ranked by women with a bank or mobile account
+- France
+- Yemen Rep.
+- world map
+- geography
+- atlas in numbers
+sources:
+- https://data.worldbank.org/indicator/FX.OWN.TOTL.FE.ZS
+dataset:
+  kind: worldbank
+  indicator: FX.OWN.TOTL.FE.ZS
+  label: Women with a bank or mobile account
+  unit: '%'
+  source: World Bank
+  min_year: 2019
+scale:
+  edges:
+  - 25.0
+  - 50.0
+  - 75.0
+  - 90.0
+  labels:
+  - Under 25%
+  - 25% to 50%
+  - 50% to 75%
+  - 75% to 90%
+  - Over 90%
+value_format: '{v:.1f}%'
+beats:
+- text: France hits 99.8 percent for women with accounts. Yemen stops at 5.4 percent.
+  shot:
+    callouts:
+    - FRA
+    - YEM
+- text: Yemen is the lowest on Earth. Pakistan has 11.9 percent and Niger has 12.2 percent.
+  shot:
+    kind: rank
+    isos:
+    - YEM
+    - PAK
+    - NER
+- text: This counts women who use a mobile money service or have a bank account.
+  shot:
+    callouts:
+    - FRA
+    - YEM
+  basis: Account denotes the percentage of respondents who report having an account (by themselves or together with
+    someone else) at a bank or another type of financial institution or report personally using a mobile money service
+    in the past 12 months (female, % age 15+).
+- text: Nigeria has 52.2 percent and Indonesia has 58 percent.
+  shot:
+    kind: group
+    isos:
+    - NGA
+    - IDN
+- text: India and China both have 89.2 percent.
+  shot:
+    callouts:
+    - IND
+    - CHN
+- text: USA has 97.1 percent. UK has 99.3 percent.
+  shot:
+    callouts:
+    - USA
+    - GBR
+- text: France is the world's highest at 99.8 percent. It has 18 times the value Yemen has.
+  shot:
+    kind: country
+    iso: FRA
+- text: What would change if every woman had a bank account?
+  shot:
+    kind: card
+    lines:
+    - Who is banked?
+    - Women with a bank or mobile account (%)
