@@ -1532,11 +1532,11 @@
     "claims": [
       {
         "surface": "title",
-        "text": "How Does the USA Compare on HEALTHCARE?",
+        "text": "How Does the USA Compare on Health Spending?",
         "isos": [
           "USA"
         ],
-        "support": "USA has the highest current health expenditure share of GDP at 16.7% (rank 1).",
+        "support": "USA current health expenditure is 16.69414902% of GDP (rank 1)",
         "evidence": {
           "USA": {
             "name": "United States",
@@ -1550,26 +1550,26 @@
       },
       {
         "surface": "hook",
-        "text": "HEALTHCARE SPENDING GAP",
+        "text": "HEALTH SPENDING GAPS",
         "isos": [],
-        "support": "Refers to the range of health expenditure shares across countries in the World Bank indicator.",
+        "support": "Indicator measures current health expenditure as a percentage of GDP",
         "evidence": {}
       },
       {
         "surface": "description",
-        "text": "Comparing health expenditure as a percentage of GDP across nations using World Bank data.",
+        "text": "Comparing current health expenditure as a percentage of GDP across nations using World Bank data.",
         "isos": [],
-        "support": "Indicator SH.XPD.CHEX.GD.ZS measures current health expenditure as % of GDP across 189 countries and territories.",
+        "support": "Level of current health expenditure expressed as a percentage of GDP, source World Bank (Global Health Expenditure Database)",
         "evidence": {}
       },
       {
         "surface": "beat_0",
-        "text": "The United States spends 16.7% of its economy on health. Laos spends 1.3%.",
+        "text": "The United States spends 16.7% of its economy on health. Bangladesh spends just 2.2%.",
         "isos": [
           "USA",
-          "LAO"
+          "BGD"
         ],
-        "support": "USA health spending display is 16.7% (16.69%) and Laos display is 1.3% (1.33%).",
+        "support": "USA: 16.69414902% (display 16.7%), BGD: 2.17014575% (display 2.2%)",
         "evidence": {
           "USA": {
             "name": "United States",
@@ -1579,23 +1579,23 @@
             "unit": "%",
             "rank": 1
           },
-          "LAO": {
-            "name": "Lao PDR",
-            "value": 1.32651615,
-            "display": "1.3%",
+          "BGD": {
+            "name": "Bangladesh",
+            "value": 2.17014575,
+            "display": "2.2%",
             "year": 2023,
             "unit": "%",
-            "rank": 189
+            "rank": 188
           }
         }
       },
       {
         "surface": "beat_1",
-        "text": "That gives the United States the highest healthcare spending share on Earth.",
+        "text": "That puts the American system at the very top of global spending.",
         "isos": [
           "USA"
         ],
-        "support": "USA is ranked #1 out of 189 entities with 16.69% of GDP.",
+        "support": "USA rank 1 out of 189 mapped entities",
         "evidence": {
           "USA": {
             "name": "United States",
@@ -1609,12 +1609,21 @@
       },
       {
         "surface": "beat_2",
-        "text": "Compare that to India, which spends 3.3% of its economy on health.",
+        "text": "The United States spends 5.1 times as much as India, where health receives 3.3%.",
         "isos": [
+          "USA",
           "IND"
         ],
-        "support": "India (IND) current health expenditure display is 3.3% of GDP (value 3.34%, rank 168).",
+        "support": "USA value 16.69414902 / IND value 3.33944035 = 4.999 (approx 5 times), IND display 3.3%",
         "evidence": {
+          "USA": {
+            "name": "United States",
+            "value": 16.69414902,
+            "display": "16.7%",
+            "year": 2023,
+            "unit": "%",
+            "rank": 1
+          },
           "IND": {
             "name": "India",
             "value": 3.33944035,
@@ -1627,29 +1636,15 @@
       },
       {
         "surface": "beat_3",
-        "text": "This counts healthcare goods and services consumed, excluding capital costs like buildings and machinery.",
-        "isos": [],
-        "support": "Indicator definition states it includes healthcare goods and services consumed, excluding capital expenditures such as buildings and machinery.",
-        "evidence": {}
-      },
-      {
-        "surface": "beat_4",
-        "text": "Near the top, Afghanistan spends 15%, Germany spends 12.3%, and the UK spends 11.1%.",
+        "text": "Major European economies spend heavy too: Germany sits at 12.3%, Austria at 11.8%, France at 11.5%, and the UK at 11.1%.",
         "isos": [
-          "AFG",
           "DEU",
+          "AUT",
+          "FRA",
           "GBR"
         ],
-        "support": "Afghanistan (AFG) display is 15% (rank 2), Germany (DEU) display is 12.3% (rank 7), United Kingdom (GBR) display is 11.1% (rank 14).",
+        "support": "DEU: 12.3%, AUT: 11.8%, FRA: 11.5%, GBR: 11.1%",
         "evidence": {
-          "AFG": {
-            "name": "Afghanistan",
-            "value": 14.9857626,
-            "display": "15%",
-            "year": 2023,
-            "unit": "%",
-            "rank": 2
-          },
           "DEU": {
             "name": "Germany",
             "value": 12.26655293,
@@ -1657,6 +1652,22 @@
             "year": 2024,
             "unit": "%",
             "rank": 7
+          },
+          "AUT": {
+            "name": "Austria",
+            "value": 11.8325634,
+            "display": "11.8%",
+            "year": 2024,
+            "unit": "%",
+            "rank": 8
+          },
+          "FRA": {
+            "name": "France",
+            "value": 11.53530598,
+            "display": "11.5%",
+            "year": 2024,
+            "unit": "%",
+            "rank": 11
           },
           "GBR": {
             "name": "United Kingdom",
@@ -1669,44 +1680,51 @@
         }
       },
       {
-        "surface": "beat_5",
-        "text": "At the very bottom sits Laos, spending just 1.3%.",
+        "surface": "beat_4",
+        "text": "Yet in Nigeria, current health spending accounts for 4.2% of GDP.",
         "isos": [
-          "LAO"
+          "NGA"
         ],
-        "support": "Laos (LAO) is ranked #189 out of 189 with 1.3% of GDP.",
+        "support": "NGA value 4.19086456% (display 4.2%)",
         "evidence": {
-          "LAO": {
-            "name": "Lao PDR",
-            "value": 1.32651615,
-            "display": "1.3%",
+          "NGA": {
+            "name": "Nigeria",
+            "value": 4.19086456,
+            "display": "4.2%",
             "year": 2023,
             "unit": "%",
-            "rank": 189
+            "rank": 148
           }
         }
       },
       {
-        "surface": "beat_6",
-        "text": "How much of your nation's economy goes to healthcare?",
+        "surface": "beat_5",
+        "text": "This counts medical goods and services consumed, excluding capital costs like hospitals or emergency vaccine stocks.",
         "isos": [],
-        "support": "Closing prompt framing the World Bank indicator.",
+        "support": "Estimates of current health expenditures include healthcare goods and services consumed during each year. This indicator does not include capital health expenditures such as buildings, machinery, IT and stocks of vaccines for emergency or outbreaks.",
+        "evidence": {}
+      },
+      {
+        "surface": "beat_6",
+        "text": "How much of its wealth should a nation dedicate to health?",
+        "isos": [],
+        "support": "Indicator expresses health expenditure as a percentage of GDP",
         "evidence": {}
       },
       {
         "surface": "card_6",
-        "text": "How much does your country spend? World Bank Health Expenditure",
+        "text": "HEALTH SPENDING, Health Expenditure (% of GDP)",
         "isos": [],
-        "support": "Summary card matching indicator metadata.",
+        "support": "Indicator SH.XPD.CHEX.GD.ZS definition: Level of current health expenditure expressed as a percentage of GDP.",
         "evidence": {}
       },
       {
         "surface": "title",
-        "text": "How Does the USA Compare on HEALTHCARE?",
+        "text": "How Does the USA Compare on Health Spending?",
         "isos": [
           "USA"
         ],
-        "support": "Accurately frames the USA's performance in the health expenditure indicator.",
+        "support": "The title appropriately frames the comparison using USA data.",
         "method": "complete-surface-check",
         "evidence": {
           "USA": {
@@ -1721,28 +1739,28 @@
       },
       {
         "surface": "hook",
-        "text": "HEALTHCARE SPENDING GAP",
+        "text": "HEALTH SPENDING GAPS",
         "isos": [],
-        "support": "Accurately introduces the metric comparing national health expenditure gaps.",
+        "support": "Hook accurately names the topic based on the health expenditure indicator.",
         "method": "complete-surface-check",
         "evidence": {}
       },
       {
         "surface": "description",
-        "text": "Comparing health expenditure as a percentage of GDP across nations using World Bank data.",
+        "text": "Comparing current health expenditure as a percentage of GDP across nations using World Bank data.",
         "isos": [],
-        "support": "Matches the World Bank indicator definition SH.XPD.CHEX.GD.ZS.",
+        "support": "Accurately describes indicator SH.XPD.CHEX.GD.ZS and World Bank source.",
         "method": "complete-surface-check",
         "evidence": {}
       },
       {
         "surface": "beat_0",
-        "text": "The United States spends 16.7% of its economy on health. Laos spends 1.3%.",
+        "text": "The United States spends 16.7% of its economy on health. Bangladesh spends just 2.2%.",
         "isos": [
           "USA",
-          "LAO"
+          "BGD"
         ],
-        "support": "USA (16.7%, rank 1) and Laos (1.3%, rank 189) values match evidence.",
+        "support": "USA (16.7%) and Bangladesh (2.2%) match the dataset values.",
         "method": "complete-surface-check",
         "evidence": {
           "USA": {
@@ -1753,23 +1771,23 @@
             "unit": "%",
             "rank": 1
           },
-          "LAO": {
-            "name": "Lao PDR",
-            "value": 1.32651615,
-            "display": "1.3%",
+          "BGD": {
+            "name": "Bangladesh",
+            "value": 2.17014575,
+            "display": "2.2%",
             "year": 2023,
             "unit": "%",
-            "rank": 189
+            "rank": 188
           }
         }
       },
       {
         "surface": "beat_1",
-        "text": "That gives the United States the highest healthcare spending share on Earth.",
+        "text": "That puts the American system at the very top of global spending.",
         "isos": [
           "USA"
         ],
-        "support": "USA ranks 1st out of 189 entities in current health expenditure as % of GDP.",
+        "support": "USA has rank 1, placing it at the very top.",
         "method": "complete-surface-check",
         "evidence": {
           "USA": {
@@ -1784,13 +1802,22 @@
       },
       {
         "surface": "beat_2",
-        "text": "Compare that to India, which spends 3.3% of its economy on health.",
+        "text": "The United States spends 5.1 times as much as India, where health receives 3.3%.",
         "isos": [
+          "USA",
           "IND"
         ],
-        "support": "India's health expenditure is 3.3% (3.339%), matching the display value.",
+        "support": "India value is 3.3% and USA/India ratio is approximately 5 times.",
         "method": "complete-surface-check",
         "evidence": {
+          "USA": {
+            "name": "United States",
+            "value": 16.69414902,
+            "display": "16.7%",
+            "year": 2023,
+            "unit": "%",
+            "rank": 1
+          },
           "IND": {
             "name": "India",
             "value": 3.33944035,
@@ -1803,31 +1830,16 @@
       },
       {
         "surface": "beat_3",
-        "text": "This counts healthcare goods and services consumed, excluding capital costs like buildings and machinery.",
-        "isos": [],
-        "support": "Directly quotes/paraphrases the World Bank indicator definition.",
-        "method": "complete-surface-check",
-        "evidence": {}
-      },
-      {
-        "surface": "beat_4",
-        "text": "Near the top, Afghanistan spends 15%, Germany spends 12.3%, and the UK spends 11.1%.",
+        "text": "Major European economies spend heavy too: Germany sits at 12.3%, Austria at 11.8%, France at 11.5%, and the UK at 11.1%.",
         "isos": [
-          "AFG",
           "DEU",
+          "AUT",
+          "FRA",
           "GBR"
         ],
-        "support": "Afghanistan (15%, rank 2), Germany (12.3%, rank 7), and UK (11.1%, rank 14) are accurately reported and near the top.",
+        "support": "Germany (12.3%), Austria (11.8%), France (11.5%), and UK (11.1%) all match dataset values.",
         "method": "complete-surface-check",
         "evidence": {
-          "AFG": {
-            "name": "Afghanistan",
-            "value": 14.9857626,
-            "display": "15%",
-            "year": 2023,
-            "unit": "%",
-            "rank": 2
-          },
           "DEU": {
             "name": "Germany",
             "value": 12.26655293,
@@ -1835,6 +1847,22 @@
             "year": 2024,
             "unit": "%",
             "rank": 7
+          },
+          "AUT": {
+            "name": "Austria",
+            "value": 11.8325634,
+            "display": "11.8%",
+            "year": 2024,
+            "unit": "%",
+            "rank": 8
+          },
+          "FRA": {
+            "name": "France",
+            "value": 11.53530598,
+            "display": "11.5%",
+            "year": 2024,
+            "unit": "%",
+            "rank": 11
           },
           "GBR": {
             "name": "United Kingdom",
@@ -1847,40 +1875,48 @@
         }
       },
       {
-        "surface": "beat_5",
-        "text": "At the very bottom sits Laos, spending just 1.3%.",
+        "surface": "beat_4",
+        "text": "Yet in Nigeria, current health spending accounts for 4.2% of GDP.",
         "isos": [
-          "LAO"
+          "NGA"
         ],
-        "support": "Laos is rank 189 of 189 with 1.3% of GDP.",
+        "support": "Nigeria value is 4.2% in the dataset.",
         "method": "complete-surface-check",
         "evidence": {
-          "LAO": {
-            "name": "Lao PDR",
-            "value": 1.32651615,
-            "display": "1.3%",
+          "NGA": {
+            "name": "Nigeria",
+            "value": 4.19086456,
+            "display": "4.2%",
             "year": 2023,
             "unit": "%",
-            "rank": 189
+            "rank": 148
           }
         }
       },
       {
-        "surface": "beat_6",
-        "text": "How much of your nation's economy goes to healthcare?",
+        "surface": "beat_5",
+        "text": "This counts medical goods and services consumed, excluding capital costs like hospitals or emergency vaccine stocks.",
         "isos": [],
-        "support": "Valid closing call to action.",
+        "support": "Directly matches the definition regarding goods and services consumed and the exclusion of capital costs/vaccine stocks.",
+        "method": "complete-surface-check",
+        "evidence": {}
+      },
+      {
+        "surface": "beat_6",
+        "text": "How much of its wealth should a nation dedicate to health?",
+        "isos": [],
+        "support": "Rhetorical question well-aligned with the health expenditure indicator.",
         "method": "complete-surface-check",
         "evidence": {}
       },
       {
         "surface": "card_6",
         "text": [
-          "How much does your country spend?",
-          "World Bank Health Expenditure"
+          "HEALTH SPENDING",
+          "Health Expenditure (% of GDP)"
         ],
         "isos": [],
-        "support": "Card text accurately reflects the indicator topic and source.",
+        "support": "Card text correctly matches the indicator name and topic.",
         "method": "complete-surface-check",
         "evidence": {}
       }
@@ -1888,78 +1924,80 @@
     "surface_checks": {
       "title": {
         "supported": true,
-        "reason": "Accurately frames the USA's performance in the health expenditure indicator.",
+        "reason": "The title appropriately frames the comparison using USA data.",
         "isos": [
           "USA"
         ]
       },
       "hook": {
         "supported": true,
-        "reason": "Accurately introduces the metric comparing national health expenditure gaps.",
+        "reason": "Hook accurately names the topic based on the health expenditure indicator.",
         "isos": []
       },
       "description": {
         "supported": true,
-        "reason": "Matches the World Bank indicator definition SH.XPD.CHEX.GD.ZS.",
+        "reason": "Accurately describes indicator SH.XPD.CHEX.GD.ZS and World Bank source.",
         "isos": []
       },
       "beat_0": {
         "supported": true,
-        "reason": "USA (16.7%, rank 1) and Laos (1.3%, rank 189) values match evidence.",
+        "reason": "USA (16.7%) and Bangladesh (2.2%) match the dataset values.",
         "isos": [
           "USA",
-          "LAO"
+          "BGD"
         ]
       },
       "beat_1": {
         "supported": true,
-        "reason": "USA ranks 1st out of 189 entities in current health expenditure as % of GDP.",
+        "reason": "USA has rank 1, placing it at the very top.",
         "isos": [
           "USA"
         ]
       },
       "beat_2": {
         "supported": true,
-        "reason": "India's health expenditure is 3.3% (3.339%), matching the display value.",
+        "reason": "India value is 3.3% and USA/India ratio is approximately 5 times.",
         "isos": [
+          "USA",
           "IND"
         ]
       },
       "beat_3": {
         "supported": true,
-        "reason": "Directly quotes/paraphrases the World Bank indicator definition.",
-        "isos": []
+        "reason": "Germany (12.3%), Austria (11.8%), France (11.5%), and UK (11.1%) all match dataset values.",
+        "isos": [
+          "DEU",
+          "AUT",
+          "FRA",
+          "GBR"
+        ]
       },
       "beat_4": {
         "supported": true,
-        "reason": "Afghanistan (15%, rank 2), Germany (12.3%, rank 7), and UK (11.1%, rank 14) are accurately reported and near the top.",
+        "reason": "Nigeria value is 4.2% in the dataset.",
         "isos": [
-          "AFG",
-          "DEU",
-          "GBR"
+          "NGA"
         ]
       },
       "beat_5": {
         "supported": true,
-        "reason": "Laos is rank 189 of 189 with 1.3% of GDP.",
-        "isos": [
-          "LAO"
-        ]
+        "reason": "Directly matches the definition regarding goods and services consumed and the exclusion of capital costs/vaccine stocks.",
+        "isos": []
       },
       "beat_6": {
         "supported": true,
-        "reason": "Valid closing call to action.",
+        "reason": "Rhetorical question well-aligned with the health expenditure indicator.",
         "isos": []
       },
       "card_6": {
         "supported": true,
-        "reason": "Card text accurately reflects the indicator topic and source.",
+        "reason": "Card text correctly matches the indicator name and topic.",
         "isos": []
       }
     },
     "warnings": []
   },
-  "script_sha256": "1ac1c2c3075ef962591e0761ac99f11f6722b1fce2ab00373e1971a36d86cb8d",
+  "script_sha256": "923ceaa03c9120404677b6ac94976736dfd6a5abeba9d98e307bc27c52363d18",
   "data_sha256": "14c005c66153ceaa702a4d77db926a02f35d30ec1e5d37a61884e0649be137ee",
-  "reviewer_model": "gemini-3.6-flash"
+  "reviewer_model": "gemini-3.5-flash-lite"
 }

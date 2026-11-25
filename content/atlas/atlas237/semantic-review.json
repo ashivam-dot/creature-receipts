@@ -1,0 +1,129 @@
+{
+  "errors": [],
+  "claims": [
+    {
+      "surface": "beat_0",
+      "text": "In Madagascar, 80.2 percent of women work.",
+      "isos": [
+        "MDG"
+      ],
+      "support": "80.167"
+    },
+    {
+      "surface": "beat_0",
+      "text": "In Yemen, that number is just 3.2 percent.",
+      "isos": [
+        "YEM"
+      ],
+      "support": "3.249"
+    },
+    {
+      "surface": "beat_2",
+      "text": "In the United States, 54 percent of women are employed.",
+      "isos": [
+        "USA"
+      ],
+      "support": "53.989"
+    },
+    {
+      "surface": "beat_2",
+      "text": "In China, that is 56.8 percent.",
+      "isos": [
+        "CHN"
+      ],
+      "support": "56.779"
+    },
+    {
+      "surface": "beat_3",
+      "text": "The top countries for women in the workforce: Madagascar at 80.2, Burundi at 78.9, and Tanzania at 78.5.",
+      "isos": [
+        "MDG",
+        "BDI",
+        "TZA"
+      ],
+      "support": "MDG: 80.167, BDI: 78.853, TZA: 78.498"
+    },
+    {
+      "surface": "beat_4",
+      "text": "Madagascar has 25 times the female employment rate found in Yemen",
+      "isos": [
+        "MDG",
+        "YEM"
+      ],
+      "support": "80.167 / 3.249 = 24.67"
+    },
+    {
+      "surface": "beat_4",
+      "text": "Yemen, which is the world's lowest.",
+      "isos": [
+        "YEM"
+      ],
+      "support": "Rank 184"
+    }
+  ],
+  "surface_checks": {
+    "title": {
+      "supported": true,
+      "reason": "The title accurately reflects the content.",
+      "isos": []
+    },
+    "hook": {
+      "supported": true,
+      "reason": "The hook introduces the topic.",
+      "isos": []
+    },
+    "description": {
+      "supported": true,
+      "reason": "The description accurately defines the scope.",
+      "isos": []
+    },
+    "beat_0": {
+      "supported": true,
+      "reason": "Values match the evidence for MDG and YEM.",
+      "isos": [
+        "MDG",
+        "YEM"
+      ]
+    },
+    "beat_1": {
+      "supported": true,
+      "reason": "Definition matches the provided evidence.",
+      "isos": []
+    },
+    "beat_2": {
+      "supported": true,
+      "reason": "Values match the evidence for USA and CHN.",
+      "isos": [
+        "USA",
+        "CHN"
+      ]
+    },
+    "beat_3": {
+      "supported": true,
+      "reason": "Values match the evidence for the top three countries.",
+      "isos": [
+        "MDG",
+        "BDI",
+        "TZA"
+      ]
+    },
+    "beat_4": {
+      "supported": true,
+      "reason": "Calculation is approximately 25x and Yemen is the lowest ranked.",
+      "isos": [
+        "MDG",
+        "YEM"
+      ]
+    },
+    "beat_5": {
+      "supported": true,
+      "reason": "Stylistic question.",
+      "isos": []
+    },
+    "card_5": {
+      "supported": true,
+      "reason": "Standard card content.",
+      "isos": []
+    }
+  }
+}

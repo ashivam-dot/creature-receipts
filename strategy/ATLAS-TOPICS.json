@@ -8824,7 +8824,7 @@
    "id": "t242",
    "topic": "Girls Aged 10 to 14 Worldwide",
    "angle": "In several African nations, girls aged 10 to 14 make up over 13% of the female population, nearly four times the share seen in parts of East Asia and Europe.",
-   "format": "map_reveal",
+   "format": "versus",
    "dataset": {
     "kind": "worldbank",
     "indicator": "SP.POP.1014.FE.5Y",
@@ -8854,7 +8854,7 @@
     "#demographics"
    ],
    "source_url": "https://data.worldbank.org/indicator/SP.POP.1014.FE.5Y",
-   "status": "open",
+   "status": "failed:RuntimeError",
    "added_by": "refill"
   },
   {
@@ -8971,14 +8971,14 @@
     "#healthcare"
    ],
    "source_url": "https://data.worldbank.org/indicator/SH.XPD.CHEX.GD.ZS",
-   "status": "making:atlas234",
+   "status": "ready:atlas234",
    "added_by": "refill"
   },
   {
    "id": "t246",
    "topic": "Carbon Intensity Across Global Economies",
    "angle": "Palau emits over 100,000 times more carbon per dollar of economic output than the US Virgin Islands.",
-   "format": "rank_ladder",
+   "format": "map_reveal",
    "dataset": {
     "kind": "worldbank",
     "indicator": "EN.GHG.CO2.RT.GDP.PP.KD",
@@ -9010,14 +9010,14 @@
     "#climate"
    ],
    "source_url": "https://data.worldbank.org/indicator/EN.GHG.CO2.RT.GDP.PP.KD",
-   "status": "open",
+   "status": "failed:RuntimeError",
    "added_by": "refill"
   },
   {
    "id": "t247",
    "topic": "Where Women Drive the Workforce",
    "angle": "In some nations over 80 percent of adult women are employed, while in others fewer than 4 percent hold a job.",
-   "format": "map_reveal",
+   "format": "rank_ladder",
    "dataset": {
     "kind": "worldbank",
     "indicator": "SL.EMP.TOTL.SP.FE.ZS",
@@ -9049,7 +9049,7 @@
     "#womeninwork"
    ],
    "source_url": "https://data.worldbank.org/indicator/SL.EMP.TOTL.SP.FE.ZS",
-   "status": "open",
+   "status": "ready:atlas237",
    "added_by": "refill"
   },
   {

@@ -154,8 +154,8 @@ Refreshed by every producer run (`atlas.stats`) from the channel's public feed o
 | atlas193 Which Country Reinvests the MOST in Fixed Assets? | odd_one_out | 2026-11-19 17:00 UTC | 1 | – | 0.0 |
 | atlas194 USA vs Nigeria: The Doctoral Degree Gap | versus | 2026-11-19 21:00 UTC | 1 | – | 0.0 |
 | atlas196 Places Ranked by Global Trade Share of GDP | rank_ladder | 2026-11-20 00:00 UTC | 2 | – | 0.0 |
-| atlas197 Places Ranked by University Gender Parity | map_reveal | 2026-11-20 17:00 UTC | 15 | – | 0.2 |
-| atlas203 How Does the USA Compare on Daily Poverty? | spotlight | 2026-11-20 21:00 UTC | 11 | – | 0.1 |
+| atlas197 Places Ranked by University Gender Parity | map_reveal | 2026-11-20 17:00 UTC | 15 | – | 0.1 |
+| atlas203 How Does the USA Compare on Daily Poverty? | spotlight | 2026-11-20 21:00 UTC | 15 | – | 0.1 |
 | atlas205 Places Ranked by Middle School Starting Age | rank_ladder | 2026-11-21 00:00 UTC | 0 | – | 0.0 |
 | atlas206 India vs China: Real Interest Rates Worldwide | versus | 2026-11-21 17:00 UTC | 0 | – | 0.0 |
 | atlas207 Places Ranked by Women in the Labor Force | map_reveal | 2026-11-21 21:00 UTC | 10 | – | 0.1 |
@@ -166,7 +166,9 @@ Refreshed by every producer run (`atlas.stats`) from the channel's public feed o
 | atlas214 The Global Gap in Urban Sanitation | odd_one_out | 2026-11-23 17:00 UTC | 0 | – | 0.0 |
 | atlas215 Russia vs India: Higher Education Divide | versus | 2026-11-23 21:00 UTC | 2 | – | 0.1 |
 | atlas220 Places Ranked by Youth Labor Force Participation | rank_ladder | 2026-11-24 17:00 UTC | 0 | – | 0.0 |
-| atlas221 Is INDIA Near the Top for Debt Interest? | spotlight | 2026-11-24 00:00 UTC | 0 | – | 0.0 |
+| atlas221 Is INDIA Near the Top for Debt Interest? | spotlight | 2026-11-24 00:00 UTC | 1 | – | 0.0 |
+| atlas222 Which Places Run on Clean Energy? | map_reveal | 2026-11-25 00:00 UTC | 0 | – | 0.0 |
+| atlas225 Which Major Country Lags in Urban Clean Cooking? | odd_one_out | 2026-11-24 21:00 UTC | 0 | – | 0.0 |
 
 ## Log
 

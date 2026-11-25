@@ -1,0 +1,25 @@
+{
+  "warnings": [
+    {
+      "country": "Palau",
+      "why": "The value of 4.48 is an extreme outlier compared to global averages and likely reflects a data error or a significant unit mismatch in the GDP or emissions reporting."
+    },
+    {
+      "country": "Faroe Islands",
+      "why": "The value of 0.000533 is implausibly low for an economy with significant energy-intensive fishing and shipping sectors, suggesting a reporting error."
+    },
+    {
+      "country": "Micronesia, Fed. Sts.",
+      "why": "The value of 0.000452 is inconsistent with the country's heavy reliance on imported fossil fuels for electricity generation."
+    },
+    {
+      "country": "Marshall Islands",
+      "why": "The value of 0.000368 is extremely low and likely represents a data processing error or a failure to capture total emissions."
+    },
+    {
+      "country": "Virgin Islands (U.S.)",
+      "why": "The value of 4.08e-05 is statistically impossible for an industrialized territory with a major oil refinery history and high per-capita energy consumption."
+    }
+  ],
+  "policy": "model memory is advisory; unsupported suspicions cannot overrule official data"
+}
