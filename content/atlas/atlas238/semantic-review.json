@@ -1,0 +1,166 @@
+{
+  "claims": [
+    {
+      "isos": [],
+      "support": "Indicator FX.OWN.TOTL.MA.ZS definition covers account ownership at financial institutions or mobile money use.",
+      "surface": "title",
+      "text": "Places Where Men Use Formal Banking"
+    },
+    {
+      "isos": [],
+      "support": "Data shows disparity from 17.6% (Niger) to 100% (Finland).",
+      "surface": "hook",
+      "text": "FINANCIAL ACCESS GAP"
+    },
+    {
+      "isos": [
+        "FIN",
+        "NER"
+      ],
+      "support": "Finland Rank 1 (100%), Niger Rank 142 (17.6%) represent extremes in the 142-entity universe.",
+      "surface": "description",
+      "text": "A look at the global disparity in male access to financial institutions, comparing extremes like Finland and Niger."
+    },
+    {
+      "isos": [
+        "FIN",
+        "NER"
+      ],
+      "support": "FIN value 100.0% ('every man'), NER value 17.6% (display 17.6%).",
+      "surface": "beat_0",
+      "text": "In Finland, every man has a bank account. In Niger, only 17.6% do."
+    },
+    {
+      "isos": [
+        "FIN",
+        "NER"
+      ],
+      "support": "FIN Rank 1 (highest), NER Rank 142 (lowest) in mapped universe.",
+      "surface": "beat_1",
+      "text": "Finland is the world's highest, while Niger is the world's lowest."
+    },
+    {
+      "isos": [
+        "FIN",
+        "NER"
+      ],
+      "support": "100.0% / 17.6% ≈ 5.68, rounds to 5.7 times.",
+      "surface": "beat_2",
+      "text": "Finland has 5.7 times the share of men with accounts that Niger has."
+    },
+    {
+      "isos": [],
+      "support": "Matches evidence definition: 'percentage of respondents who report having an account ... at a bank ... or ... mobile money service'.",
+      "surface": "beat_3",
+      "text": "This counts men who report having an account at a bank or using mobile money."
+    },
+    {
+      "isos": [
+        "USA",
+        "IND",
+        "CHN"
+      ],
+      "support": "USA 96.9%, IND 88.8%, CHN 89.6% match evidence display values.",
+      "surface": "beat_4",
+      "text": "Major economies vary. The USA has 96.9%, India 88.8%, and China 89.6%."
+    },
+    {
+      "isos": [
+        "IDN",
+        "PAK"
+      ],
+      "support": "IDN 54.6%, PAK 42.3% match evidence display values.",
+      "surface": "beat_5",
+      "text": "Indonesia has 54.6%, while Pakistan has 42.3%."
+    },
+    {
+      "isos": [],
+      "support": "Engagement question based on the metric presented.",
+      "surface": "beat_6",
+      "text": "How many men in your country have a bank account?"
+    },
+    {
+      "isos": [],
+      "support": "Matches indicator definition and year_label 'latest available 2021–2024'.",
+      "surface": "card_6",
+      "text": "Do you use formal banking? Share of men with a bank account, 2021-2024"
+    }
+  ],
+  "errors": [],
+  "surface_checks": {
+    "beat_0": {
+      "isos": [
+        "FIN",
+        "NER"
+      ],
+      "reason": "FIN value 100.0% supports 'every man', NER value 17.6% matches text.",
+      "supported": true
+    },
+    "beat_1": {
+      "isos": [
+        "FIN",
+        "NER"
+      ],
+      "reason": "FIN Rank 1 and NER Rank 142 confirm highest/lowest in universe.",
+      "supported": true
+    },
+    "beat_2": {
+      "isos": [
+        "FIN",
+        "NER"
+      ],
+      "reason": "Ratio 100.0/17.6 ≈ 5.7 matches calculation.",
+      "supported": true
+    },
+    "beat_3": {
+      "isos": [],
+      "reason": "Text aligns with evidence definition of account ownership including mobile money.",
+      "supported": true
+    },
+    "beat_4": {
+      "isos": [
+        "USA",
+        "IND",
+        "CHN"
+      ],
+      "reason": "Values 96.9%, 88.8%, 89.6% match evidence display values.",
+      "supported": true
+    },
+    "beat_5": {
+      "isos": [
+        "IDN",
+        "PAK"
+      ],
+      "reason": "Values 54.6%, 42.3% match evidence display values.",
+      "supported": true
+    },
+    "beat_6": {
+      "isos": [],
+      "reason": "Question relates to the metric without making factual claims.",
+      "supported": true
+    },
+    "card_6": {
+      "isos": [],
+      "reason": "Metric name simplified but defined in beat_3; year range 2021-2024 matches evidence year_label.",
+      "supported": true
+    },
+    "description": {
+      "isos": [
+        "FIN",
+        "NER"
+      ],
+      "reason": "FIN and NER are the ranked extremes (1 and 142) in the dataset.",
+      "supported": true
+    },
+    "hook": {
+      "isos": [],
+      "reason": "Supported by the wide disparity in data values (17.6% to 100%).",
+      "supported": true
+    },
+    "title": {
+      "isos": [],
+      "reason": "Stylistic simplification of 'Financial Account' supported by definition in beat_3.",
+      "supported": true
+    }
+  }
+}

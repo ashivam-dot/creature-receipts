@@ -1,0 +1,157 @@
+{
+  "errors": [],
+  "claims": [
+    {
+      "surface": "title",
+      "text": "India vs Somalia: Protection Against Newborn Tetanus",
+      "isos": [
+        "IND",
+        "SOM"
+      ],
+      "support": "India is 93% and Somalia is 50%."
+    },
+    {
+      "surface": "hook",
+      "text": "93% VS 50%",
+      "isos": [
+        "IND",
+        "SOM"
+      ],
+      "support": "India is 93% and Somalia is 50%."
+    },
+    {
+      "surface": "description",
+      "text": "Comparing newborn tetanus protection between India at 93% and Somalia at 50%.",
+      "isos": [
+        "IND",
+        "SOM"
+      ],
+      "support": "India is 93% and Somalia is 50%."
+    },
+    {
+      "surface": "beat_0",
+      "text": "India sees 93% of births protected against tetanus. In Somalia, it's 50%.",
+      "isos": [
+        "IND",
+        "SOM"
+      ],
+      "support": "India is 93% and Somalia is 50%."
+    },
+    {
+      "surface": "beat_1",
+      "text": "It counts births by women of child-bearing age who are immunized against tetanus.",
+      "isos": [],
+      "support": "Newborns protected against tetanus are the percentage of births by women of child-bearing age who are immunized against tetanus."
+    },
+    {
+      "surface": "beat_2",
+      "text": "Somalia sits at the world's lowest rate at 50%.",
+      "isos": [
+        "SOM"
+      ],
+      "support": "Somalia rank is 105, which is the last rank in the universe of 105 countries."
+    },
+    {
+      "surface": "beat_3",
+      "text": "That gives India 1.9 times the protection Somalia has.",
+      "isos": [
+        "IND",
+        "SOM"
+      ],
+      "support": "93 / 50 = 1.86, which rounds to 1.9."
+    },
+    {
+      "surface": "beat_4",
+      "text": "Across other nations, Mexico has 98%, while Afghanistan drops to 62%.",
+      "isos": [
+        "MEX",
+        "AFG"
+      ],
+      "support": "Mexico is 98% and Afghanistan is 62%."
+    },
+    {
+      "surface": "beat_5",
+      "text": "How well are newborns protected against tetanus where you live?",
+      "isos": [],
+      "support": "N/A"
+    },
+    {
+      "surface": "card_5",
+      "text": "Newborns protected against tetanus (%), World Bank",
+      "isos": [],
+      "support": "Indicator SH.VAC.TTNS.ZS"
+    }
+  ],
+  "surface_checks": {
+    "title": {
+      "supported": true,
+      "reason": "Values match evidence.",
+      "isos": [
+        "IND",
+        "SOM"
+      ]
+    },
+    "hook": {
+      "supported": true,
+      "reason": "Values match evidence.",
+      "isos": [
+        "IND",
+        "SOM"
+      ]
+    },
+    "description": {
+      "supported": true,
+      "reason": "Values match evidence.",
+      "isos": [
+        "IND",
+        "SOM"
+      ]
+    },
+    "beat_0": {
+      "supported": true,
+      "reason": "Values match evidence.",
+      "isos": [
+        "IND",
+        "SOM"
+      ]
+    },
+    "beat_1": {
+      "supported": true,
+      "reason": "Matches definition.",
+      "isos": []
+    },
+    "beat_2": {
+      "supported": true,
+      "reason": "Somalia is rank 105 of 105.",
+      "isos": [
+        "SOM"
+      ]
+    },
+    "beat_3": {
+      "supported": true,
+      "reason": "Calculation 93/50 is 1.86.",
+      "isos": [
+        "IND",
+        "SOM"
+      ]
+    },
+    "beat_4": {
+      "supported": true,
+      "reason": "Values match evidence.",
+      "isos": [
+        "MEX",
+        "AFG"
+      ]
+    },
+    "beat_5": {
+      "supported": true,
+      "reason": "General question.",
+      "isos": []
+    },
+    "card_5": {
+      "supported": true,
+      "reason": "Matches indicator name and source.",
+      "isos": []
+    }
+  }
+}

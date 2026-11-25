@@ -168,6 +168,7 @@ Refreshed by every producer run (`atlas.stats`) from the channel's public feed o
 | atlas220 Places Ranked by Youth Labor Force Participation | rank_ladder | 2026-11-24 17:00 UTC | 0 | – | 0.0 |
 | atlas221 Is INDIA Near the Top for Debt Interest? | spotlight | 2026-11-24 00:00 UTC | 1 | – | 0.0 |
 | atlas222 Which Places Run on Clean Energy? | map_reveal | 2026-11-25 00:00 UTC | 0 | – | 0.0 |
+| atlas223 USA vs Saudi Arabia: Social Spending Compared | versus | 2026-11-25 17:00 UTC | 0 | – | 0.0 |
 | atlas225 Which Major Country Lags in Urban Clean Cooking? | odd_one_out | 2026-11-24 21:00 UTC | 0 | – | 0.0 |
 
 ## Log

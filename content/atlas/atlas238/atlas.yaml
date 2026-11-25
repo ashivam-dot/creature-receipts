@@ -1,0 +1,79 @@
+id: atlas238
+title: Places Where Men Use Formal Banking
+hook_text: FINANCIAL ACCESS GAP
+description: A look at the global disparity in male access to financial institutions, comparing extremes like Finland
+  and Niger.
+hashtags:
+- '#economy'
+- '#finance'
+- '#geography'
+tags:
+- wealth
+- share of men with a bank account
+- countries ranked by share of men with a bank account
+- Iceland
+- Niger
+- world map
+- geography
+- atlas in numbers
+sources:
+- https://data.worldbank.org/indicator/FX.OWN.TOTL.MA.ZS
+dataset:
+  kind: worldbank
+  indicator: FX.OWN.TOTL.MA.ZS
+  label: Share of men with a bank account
+  unit: '%'
+  source: World Bank
+  min_year: 2019
+scale:
+  edges:
+  - 40.0
+  - 60.0
+  - 80.0
+  - 95.0
+  labels:
+  - Under 40%
+  - 40–60%
+  - 60–80%
+  - 80–95%
+  - 95%+
+value_format: '{v:.1f}%'
+beats:
+- text: In Finland, every man has a bank account. In Niger, only 17.6% do.
+  shot:
+    callouts:
+    - FIN
+    - NER
+- text: Finland is the world's highest, while Niger is the world's lowest.
+  shot:
+    kind: country
+    iso: FIN
+- text: Finland has 5.7 times the share of men with accounts that Niger has.
+  shot:
+    kind: group
+    isos:
+    - FIN
+    - NER
+- text: This counts men who report having an account at a bank or using mobile money.
+  basis: Account denotes the percentage of respondents who report having an account (by themselves or together with
+    someone else) at a bank or another type of financial institution or report personally using a mobile money service
+    in the past 12 months (male, % age 15+).
+- text: Major economies vary. The USA has 96.9%, India 88.8%, and China 89.6%.
+  shot:
+    kind: group
+    isos:
+    - USA
+    - IND
+    - CHN
+- text: Indonesia has 54.6%, while Pakistan has 42.3%.
+  shot:
+    kind: group
+    isos:
+    - IDN
+    - PAK
+- text: How many men in your country have a bank account?
+  shot:
+    kind: card
+    lines:
+    - Do you use formal banking?
+    - Share of men with a bank account, 2021-2024
