@@ -9242,7 +9242,227 @@
    "source_url": "https://data.worldbank.org/indicator/SI.POV.NAHC",
    "status": "open",
    "added_by": "refill"
+  },
+  {
+   "id": "t253",
+   "topic": "Taxes on Goods and Services Worldwide",
+   "angle": "While general taxes on goods and services exceed 22% of value added in Croatia and Lesotho, they account for less than 0.5% in the United States.",
+   "format": "map_reveal",
+   "dataset": {
+    "kind": "worldbank",
+    "indicator": "GC.TAX.GSRV.VA.ZS",
+    "label": "Goods & services tax (% of value added)",
+    "unit": "%",
+    "source": "World Bank",
+    "min_year": 2019
+   },
+   "scale": {
+    "kind": "bins",
+    "edges": [
+     4,
+     8,
+     12,
+     16
+    ],
+    "labels": [
+     "Under 4%",
+     "4% – 8%",
+     "8% – 12%",
+     "12% – 16%",
+     "Over 16%"
+    ]
+   },
+   "value_format": "{v:.1f}%",
+   "hashtags": [
+    "#maps",
+    "#geography",
+    "#economics"
+   ],
+   "source_url": "https://data.worldbank.org/indicator/GC.TAX.GSRV.VA.ZS",
+   "status": "open",
+   "added_by": "refill"
+  },
+  {
+   "id": "t254",
+   "topic": "Female Tobacco Use Rates Worldwide",
+   "angle": "In countries like Serbia and Bulgaria, over one in three adult women currently use tobacco, whereas in several Asian and African nations the rate drops below one percent.",
+   "format": "map_reveal",
+   "dataset": {
+    "kind": "worldbank",
+    "indicator": "SH.PRV.SMOK.FE",
+    "label": "Female adults using tobacco products",
+    "unit": "%",
+    "source": "World Bank",
+    "min_year": 2019
+   },
+   "scale": {
+    "kind": "bins",
+    "edges": [
+     2,
+     6,
+     15,
+     25
+    ],
+    "labels": [
+     "Under 2%",
+     "2% to 6%",
+     "6% to 15%",
+     "15% to 25%",
+     "Over 25%"
+    ]
+   },
+   "value_format": "{v:.1f}%",
+   "hashtags": [
+    "#maps",
+    "#geography",
+    "#health"
+   ],
+   "source_url": "https://data.worldbank.org/indicator/SH.PRV.SMOK.FE",
+   "status": "open",
+   "added_by": "refill"
+  },
+  {
+   "id": "t255",
+   "topic": "Living on Less Than $8.30 Daily",
+   "angle": "In nations like Democratic Republic of the Congo and Burundi, over 97% of the population lives on less than $8.30 a day.",
+   "format": "rank_ladder",
+   "dataset": {
+    "kind": "worldbank",
+    "indicator": "SI.POV.UMIC",
+    "label": "Share living on under $8.30 a day",
+    "unit": "%",
+    "source": "World Bank",
+    "min_year": 2019
+   },
+   "scale": {
+    "kind": "threshold",
+    "at": 50,
+    "labels": [
+     "Majority below $8.30/day",
+     "Majority above $8.30/day"
+    ]
+   },
+   "value_format": "{v:.1f}%",
+   "hashtags": [
+    "#maps me",
+    "#geography",
+    "#poverty"
+   ],
+   "source_url": "https://data.worldbank.org/indicator/SI.POV.UMIC",
+   "status": "open",
+   "added_by": "refill"
+  },
+  {
+   "id": "t256",
+   "topic": "Bank Credit to the Private Sector",
+   "angle": "Bank credit to the private sector exceeds 150% of GDP in financial hubs like Hong Kong and Switzerland, but remains below 5% in several developing nations.",
+   "format": "map_reveal",
+   "dataset": {
+    "kind": "worldbank",
+    "indicator": "FD.AST.PRVT.GD.ZS",
+    "label": "Bank credit to private sector (% GDP)",
+    "unit": "%",
+    "source": "World Bank",
+    "min_year": 2019
+   },
+   "scale": {
+    "kind": "bins",
+    "edges": [
+     15,
+     40,
+     70,
+     120
+    ],
+    "labels": [
+     "Under 15%",
+     "15% to 40%",
+     "40% to 70%",
+     "70% to 120%",
+     "Over 120%"
+    ]
+   },
+   "value_format": "{v:.1f}%",
+   "hashtags": [
+    "#maps",
+    "#geography",
+    "#economy"
+   ],
+   "source_url": "https://data.worldbank.org/indicator/FD.AST.PRVT.GD.ZS",
+   "status": "open",
+   "added_by": "refill"
+  },
+  {
+   "id": "t257",
+   "topic": "Combustible Renewables in National Energy",
+   "angle": "Biomass and waste supply over 85% of total energy in several African nations, while major fossil fuel producers rely on virtually none.",
+   "format": "map_reveal",
+   "dataset": {
+    "kind": "worldbank",
+    "indicator": "EG.USE.CRNW.ZS",
+    "label": "Share of energy from biomass and waste",
+    "unit": "%",
+    "source": "World Bank",
+    "min_year": 2019
+   },
+   "scale": {
+    "kind": "bins",
+    "edges": [
+     5,
+     15,
+     45,
+     70
+    ],
+    "labels": [
+     "Under 5%",
+     "5% to 15%",
+     "15% to 45%",
+     "45% to 70%",
+     "Over 70%"
+    ]
+   },
+   "value_format": "{v:.1f}%",
+   "hashtags": [
+    "#maps me"
+   ],
+   "source_url": "https://data.worldbank.org/indicator/EG.USE.CRNW.ZS",
+   "status": "open",
+   "added_by": "refill"
+  },
+  {
+   "id": "t258",
+   "topic": "Global Protection Against Newborn Tetanus",
+   "angle": "While half of reporting countries achieve 90% coverage or higher against neonatal tetanus, protection falls to just 50% in Somalia.",
+   "format": "rank_ladder",
+   "dataset": {
+    "kind": "worldbank",
+    "indicator": "SH.VAC.TTNS.ZS",
+    "label": "Newborns protected against tetanus",
+    "unit": "%",
+    "source": "World Bank",
+    "min_year": 2019
+   },
+   "scale": {
+    "kind": "bins",
+    "edges": [
+     75,
+     85,
+     95
+    ],
+    "labels": [
+     "Under 75%",
+     "75% to 84%",
+     "85% to 94%",
+     "95% or higher"
+    ]
+   },
+   "value_format": "{v:.0f}%",
+   "hashtags": [
+    "#maps"
+   ],
+   "source_url": "https://data.worldbank.org/indicator/SH.VAC.TTNS.ZS",
+   "status": "open",
+   "added_by": "refill"
   }
  ],
- "refilled_at": "2026-11-24T09:10:39+00:00"
+ "refilled_at": "2026-11-25T09:10:41+00:00"
 }
