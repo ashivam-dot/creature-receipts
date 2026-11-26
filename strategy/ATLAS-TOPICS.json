@@ -7603,7 +7603,7 @@
     "#maps шар#geography шар#jobs"
    ],
    "source_url": "https://data.worldbank.org/indicator/SL.SRV.EMPL.ZS",
-   "status": "ready:atlas243",
+   "status": "used:atlas243",
    "added_by": "refill"
   },
   {
@@ -9166,7 +9166,7 @@
     "#finance"
    ],
    "source_url": "https://data.worldbank.org/indicator/FX.OWN.TOTL.MA.ZS",
-   "status": "ready:atlas238",
+   "status": "used:atlas238",
    "added_by": "refill"
   },
   {
@@ -9461,9 +9461,209 @@
     "#maps"
    ],
    "source_url": "https://data.worldbank.org/indicator/SH.VAC.TTNS.ZS",
-   "status": "ready:atlas239",
+   "status": "used:atlas239",
+   "added_by": "refill"
+  },
+  {
+   "id": "t259",
+   "topic": "Income Share of the Second Quintile",
+   "angle": "The lower-middle 20% of earners hold over 15% of national income in the Slovak Republic, but less than 7% in South Africa.",
+   "format": "map_reveal",
+   "dataset": {
+    "kind": "worldbank",
+    "indicator": "SI.DST.02ND.20",
+    "label": "Income share held by second 20%",
+    "unit": "%",
+    "source": "World Bank",
+    "min_year": 2019
+   },
+   "scale": {
+    "kind": "bins",
+    "edges": [
+     10.0,
+     12.0,
+     13.5
+    ],
+    "labels": [
+     "Under 10.0%",
+     "10.0% - 11.9%",
+     "12.0% - 13.4%",
+     "13.5% or higher"
+    ]
+   },
+   "value_format": "{v:.1f}%",
+   "hashtags": [
+    "#maps",
+    "#geography",
+    "#economy"
+   ],
+   "source_url": "https://data.worldbank.org/indicator/SI.DST.02ND.20",
+   "status": "ready:atlas245",
+   "added_by": "refill"
+  },
+  {
+   "id": "t260",
+   "topic": "Literacy Among Young Women Worldwide",
+   "angle": "In several countries, fewer than half of young women can read and write, even though the global median literacy rate for this group is over 98%.",
+   "format": "map_reveal",
+   "dataset": {
+    "kind": "worldbank",
+    "indicator": "SE.ADT.1524.LT.FE.ZS",
+    "label": "Female youth literacy rate",
+    "unit": "%",
+    "source": "World Bank",
+    "min_year": 2019
+   },
+   "scale": {
+    "kind": "bins",
+    "edges": [
+     50,
+     80,
+     95,
+     99
+    ],
+    "labels": [
+     "<50%",
+     "50-80%",
+     "80-95%",
+     "95-99%",
+     ">99%"
+    ]
+   },
+   "value_format": "{v:.1f}%",
+   "hashtags": [
+    "#maps",
+    "#geography",
+    "#education"
+   ],
+   "source_url": "https://data.worldbank.org/indicator/SE.ADT.1524.LT.FE.ZS",
+   "status": "open",
+   "added_by": "refill"
+  },
+  {
+   "id": "t261",
+   "topic": "Where Young Men Can Read",
+   "angle": "Over half of the countries with data have youth male literacy rates above 97 percent, yet the bottom countries still lag below 60 percent.",
+   "format": "rank_ladder",
+   "dataset": {
+    "kind": "worldbank",
+    "indicator": "SE.ADT.1524.LT.MA.ZS",
+    "label": "Youth male literacy rate",
+    "unit": "%",
+    "source": "World Bank",
+    "min_year": 2019
+   },
+   "scale": {
+    "kind": "threshold",
+    "at": 90,
+    "labels": [
+     "90% or more",
+     "Under 90%"
+    ]
+   },
+   "value_format": "{v:.1f}%",
+   "hashtags": [
+    "#maps",
+    "#geography",
+    "#education"
+   ],
+   "source_url": "https://data.worldbank.org/indicator/SE.ADT.1524.LT.MA.ZS",
+   "status": "open",
+   "added_by": "refill"
+  },
+  {
+   "id": "t262",
+   "topic": "Nine out of ten toddlers are protected from hepatitis B",
+   "angle": "Globally, the median immunization rate reaches an impressive ninety percent, yet a few nations still lag below forty percent.",
+   "format": "map_reveal",
+   "dataset": {
+    "kind": "worldbank",
+    "indicator": "SH.IMM.HEPB",
+    "label": "HepB3 immunization rate",
+    "unit": "%",
+    "source": "World Bank",
+    "min_year": 2019
+   },
+   "scale": {
+    "kind": "threshold",
+    "at": 80,
+    "labels": [
+     "At least 80 percent",
+     "Under 80 percent"
+    ]
+   },
+   "value_format": "{v:.0f}%",
+   "hashtags": [
+    "#maps",
+    "#geography",
+    "#health"
+   ],
+   "source_url": "https://data.worldbank.org/indicator/SH.IMM.HEPB",
+   "status": "open",
+   "added_by": "refill"
+  },
+  {
+   "id": "t263",
+   "topic": "Emissions Compared to 1990 Levels",
+   "angle": "While many nations have significantly reduced their carbon output since 1990, others have seen massive percentage growth due to rapid industrial development.",
+   "format": "map_reveal",
+   "dataset": {
+    "kind": "worldbank",
+    "indicator": "EN.GHG.CO2.ZG.AR5",
+    "label": "Change in CO2 emissions since 1990",
+    "unit": "%",
+    "source": "World Bank",
+    "min_year": 2019
+   },
+   "scale": {
+    "kind": "threshold",
+    "at": 0,
+    "labels": [
+     "Increase since 1990",
+     "Decrease since 1990"
+    ]
+   },
+   "value_format": "{v:,.0f}%",
+   "hashtags": [
+    "#maps",
+    "#geography",
+    "#climate"
+   ],
+   "source_url": "https://data.worldbank.org/indicator/EN.GHG.CO2.ZG.AR5",
+   "status": "open",
+   "added_by": "refill"
+  },
+  {
+   "id": "t264",
+   "topic": "Where Nearly One in Six Males is a Young Child",
+   "angle": "While in countries like South Korea young boys make up less than four percent of the male population, in parts of Africa they approach sixteen percent.",
+   "format": "spotlight",
+   "dataset": {
+    "kind": "worldbank",
+    "indicator": "SP.POP.0509.MA.5Y",
+    "label": "Share of male population aged 5-9",
+    "unit": "%",
+    "source": "World Bank",
+    "min_year": 2019
+   },
+   "scale": {
+    "kind": "threshold",
+    "at": 10.0,
+    "labels": [
+     "10% or more",
+     "Under 10%"
+    ]
+   },
+   "value_format": "{v:.1f}%",
+   "hashtags": [
+    "#maps",
+    "#geography",
+    "#population"
+   ],
+   "source_url": "https://data.worldbank.org/indicator/SP.POP.0509.MA.5Y",
+   "status": "ready:atlas244",
    "added_by": "refill"
   }
  ],
- "refilled_at": "2026-11-25T09:10:41+00:00"
+ "refilled_at": "2026-11-26T17:10:11+00:00"
 }

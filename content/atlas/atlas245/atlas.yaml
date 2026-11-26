@@ -1,0 +1,83 @@
+id: atlas245
+title: Who Gets the Second Slice of National Income?
+hook_text: THE SECOND SLICE
+description: A cinematic tour of income distribution, comparing how much the lower-middle 20% of earners hold across
+  124 countries and territories.
+hashtags:
+- '#economy'
+- '#geography'
+- '#countries'
+tags:
+- wealth
+- income share held by second 20%
+- countries ranked by income share held by second 20%
+- Slovak Republic
+- South Africa
+- world map
+- geography
+- atlas in numbers
+sources:
+- https://data.worldbank.org/indicator/SI.DST.02ND.20
+dataset:
+  kind: worldbank
+  indicator: SI.DST.02ND.20
+  label: Income share held by second 20%
+  unit: '%'
+  source: World Bank
+  min_year: 2019
+scale:
+  edges:
+  - 10.0
+  - 12.0
+  - 13.5
+  labels:
+  - Under 10.0%
+  - 10.0% - 11.9%
+  - 12.0% - 13.4%
+  - 13.5% or higher
+value_format: '{v:.1f}%'
+beats:
+- text: 'Slovakia''s lower-middle earners hold 15.3% of national income. South Africa: 6.9%.'
+  shot:
+    callouts:
+    - SVK
+    - ZAF
+- text: Slovakia is the world's highest. A larger portion of the national wealth goes to those just above the bottom.
+  shot:
+    kind: country
+    iso: SVK
+- text: South Africa is the world's lowest. Slovakia has 2.2 times the share South Africa provides.
+  shot:
+    callouts:
+    - SVK
+    - ZAF
+- text: It counts the share that goes to this subgroup of the population.
+  shot:
+    callouts:
+    - SVK
+    - ZAF
+  basis: Percentage share of income or consumption is the share that accrues to subgroups of population indicated
+    by deciles or quintiles.
+- text: India is a surprise near the top with 14.8%.
+  shot:
+    kind: country
+    iso: IND
+- text: The USA and Mexico sit further down the map, both at 10%.
+  shot:
+    kind: group
+    isos:
+    - USA
+    - MEX
+- text: Brazil has 8.1%. Zambia, 7.3%. Colombia, 7.1%.
+  shot:
+    kind: rank
+    isos:
+    - BRA
+    - ZMB
+    - COL
+- text: How much income goes to the lower-middle class where you live?
+  shot:
+    kind: card
+    lines:
+    - Who gets the income?
+    - Income share of the second 20%

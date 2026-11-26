@@ -1,0 +1,173 @@
+{
+  "errors": [],
+  "claims": [
+    {
+      "surface": "title",
+      "text": "Who Gets the Second Slice of National Income?",
+      "isos": [],
+      "support": "Percentage share of income or consumption is the share that accrues to subgroups of population indicated by deciles or quintiles."
+    },
+    {
+      "surface": "hook",
+      "text": "THE SECOND SLICE",
+      "isos": [],
+      "support": "SI.DST.02ND.20"
+    },
+    {
+      "surface": "description",
+      "text": "A cinematic tour of income distribution, comparing how much the lower-middle 20% of earners hold across 124 countries and territories.",
+      "isos": [],
+      "support": "count: 124"
+    },
+    {
+      "surface": "beat_0",
+      "text": "Slovakia's lower-middle earners hold 15.3% of national income. South Africa: 6.9%.",
+      "isos": [
+        "SVK",
+        "ZAF"
+      ],
+      "support": "Slovak Republic value 15.3, South Africa value 6.9"
+    },
+    {
+      "surface": "beat_1",
+      "text": "Slovakia is the world's highest. A larger portion of the national wealth goes to those just above the bottom.",
+      "isos": [
+        "SVK"
+      ],
+      "support": "Slovak Republic rank 1"
+    },
+    {
+      "surface": "beat_2",
+      "text": "South Africa is the world's lowest. Slovakia has 2.2 times the share South Africa provides.",
+      "isos": [
+        "ZAF",
+        "SVK"
+      ],
+      "support": "South Africa rank 124, Slovak Republic value 15.3 divided by South Africa value 6.9 is approximately 2.217"
+    },
+    {
+      "surface": "beat_3",
+      "text": "It counts the share that goes to this subgroup of the population.",
+      "isos": [],
+      "support": "Percentage share of income or consumption is the share that accrues to subgroups of population indicated by deciles or quintiles."
+    },
+    {
+      "surface": "beat_4",
+      "text": "India is a surprise near the top with 14.8%.",
+      "isos": [
+        "IND"
+      ],
+      "support": "India value 14.8, rank 2"
+    },
+    {
+      "surface": "beat_5",
+      "text": "The USA and Mexico sit further down the map, both at 10%.",
+      "isos": [
+        "USA",
+        "MEX"
+      ],
+      "support": "United States value 10.0, Mexico value 10.0"
+    },
+    {
+      "surface": "beat_6",
+      "text": "Brazil has 8.1%. Zambia, 7.3%. Colombia, 7.1%.",
+      "isos": [
+        "BRA",
+        "ZMB",
+        "COL"
+      ],
+      "support": "Brazil value 8.1, Zambia value 7.3, Colombia value 7.1"
+    },
+    {
+      "surface": "beat_7",
+      "text": "How much income goes to the lower-middle class where you live?",
+      "isos": [],
+      "support": "SI.DST.02ND.20"
+    },
+    {
+      "surface": "card_7",
+      "text": "Who gets the income?",
+      "isos": [],
+      "support": "SI.DST.02ND.20"
+    }
+  ],
+  "surface_checks": {
+    "title": {
+      "supported": true,
+      "reason": "Accurately frames the indicator for the second quintile of income.",
+      "isos": []
+    },
+    "hook": {
+      "supported": true,
+      "reason": "Stylistic intro matching the second 20% income share.",
+      "isos": []
+    },
+    "description": {
+      "supported": true,
+      "reason": "Accurately reflects indicator definition and count of 124 entities.",
+      "isos": []
+    },
+    "beat_0": {
+      "supported": true,
+      "reason": "Matches Slovakia (15.3%) and South Africa (6.9%) values exactly.",
+      "isos": [
+        "SVK",
+        "ZAF"
+      ]
+    },
+    "beat_1": {
+      "supported": true,
+      "reason": "Slovakia is rank 1 in the universe.",
+      "isos": [
+        "SVK"
+      ]
+    },
+    "beat_2": {
+      "supported": true,
+      "reason": "South Africa is rank 124 (lowest); 15.3 / 6.9 equals ~2.2x.",
+      "isos": [
+        "SVK",
+        "ZAF"
+      ]
+    },
+    "beat_3": {
+      "supported": true,
+      "reason": "Directly supported by the definition.",
+      "isos": []
+    },
+    "beat_4": {
+      "supported": true,
+      "reason": "India value is 14.8% and rank is 2.",
+      "isos": [
+        "IND"
+      ]
+    },
+    "beat_5": {
+      "supported": true,
+      "reason": "USA value is 10% and Mexico value is 10%.",
+      "isos": [
+        "USA",
+        "MEX"
+      ]
+    },
+    "beat_6": {
+      "supported": true,
+      "reason": "Brazil (8.1%), Zambia (7.3%), and Colombia (7.1%) match dataset values.",
+      "isos": [
+        "BRA",
+        "ZMB",
+        "COL"
+      ]
+    },
+    "beat_7": {
+      "supported": true,
+      "reason": "Valid framing question for the metric.",
+      "isos": []
+    },
+    "card_7": {
+      "supported": true,
+      "reason": "Matches dataset indicator theme.",
+      "isos": []
+    }
+  }
+}

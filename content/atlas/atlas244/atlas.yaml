@@ -1,0 +1,78 @@
+id: atlas244
+title: How Does the USA Compare on Young Boys?
+format: spotlight
+hook_text: STARK DIVIDE
+description: While in countries and territories like South Korea young boys make up 3.5 percent of the male population,
+  in parts of Africa they approach 16 percent.
+hashtags:
+- '#population'
+- '#geography'
+- '#countries'
+tags:
+- population
+- share of male population aged 5-9
+- countries ranked by share of male population aged 5-9
+- Central African Republic
+- Korea Rep.
+- world map
+- geography
+- atlas in numbers
+sources:
+- https://data.worldbank.org/indicator/SP.POP.0509.MA.5Y
+dataset:
+  kind: worldbank
+  indicator: SP.POP.0509.MA.5Y
+  label: Share of male population aged 5-9
+  unit: '%'
+  source: World Bank
+  min_year: 2019
+scale:
+  kind: threshold
+  at: 10.0
+  labels:
+  - 10% or more
+  - Under 10%
+value_format: '{v:.1f}%'
+beats:
+- text: Central African Republic has 16 percent young boys. In Japan, it is 4 percent.
+  shot:
+    callouts:
+    - CAF
+    - JPN
+- text: Central African Republic is the world's highest. Almost 1 in 6 males there is a child.
+  shot:
+    kind: country
+    iso: CAF
+- text: It has 2.8 times the share of the USA, which has 5.8 percent.
+  shot:
+    kind: group
+    isos:
+    - CAF
+    - USA
+- text: This counts the male population between the ages 5 to 9 as a percentage of all males.
+  shot:
+    callouts:
+    - USA
+  basis: Male population between the ages 5 to 9 as a percentage of the total male population.
+- text: India has 8.1 percent.
+  shot:
+    kind: country
+    iso: IND
+- text: The lowest shares on Earth? Japan and Italy at 4 percent, and South Korea at 3.5 percent.
+  shot:
+    kind: rank
+    isos:
+    - JPN
+    - ITA
+    - KOR
+- text: Somalia has 15.7 percent and DR Congo has 15.4 percent.
+  shot:
+    callouts:
+    - SOM
+    - COD
+- text: Do you see many young boys in your city?
+  shot:
+    kind: card
+    lines:
+    - Many young boys?
+    - Share of males aged 5-9

@@ -161,17 +161,18 @@ Refreshed by every producer run (`atlas.stats`) from the channel's public feed o
 | atlas207 Places Ranked by Women in the Labor Force | map_reveal | 2026-11-21 21:00 UTC | 10 | – | 0.1 |
 | atlas208 Which Country Has the MOST Health Funding? | odd_one_out | 2026-11-22 00:00 UTC | 1 | – | 0.0 |
 | atlas209 How Does the USA Compare on Poorest Bank Accounts? | spotlight | 2026-11-22 17:00 UTC | 1 | – | 0.0 |
-| atlas211 Places Ranked by Severe Hunger | rank_ladder | 2026-11-22 21:00 UTC | 3 | – | 0.0 |
-| atlas212 Primary School Enrollment: Where 100% Is Just the Start | map_reveal | 2026-11-23 00:00 UTC | 0 | – | 0.0 |
+| atlas211 Places Ranked by Severe Hunger | rank_ladder | 2026-11-22 21:00 UTC | 4 | – | 0.0 |
+| atlas212 Primary School Enrollment: Where 100% Is Just the Start | map_reveal | 2026-11-23 00:00 UTC | 1 | – | 0.0 |
 | atlas214 The Global Gap in Urban Sanitation | odd_one_out | 2026-11-23 17:00 UTC | 0 | – | 0.0 |
 | atlas215 Russia vs India: Higher Education Divide | versus | 2026-11-23 21:00 UTC | 4 | – | 0.1 |
 | atlas220 Places Ranked by Youth Labor Force Participation | rank_ladder | 2026-11-24 17:00 UTC | 0 | – | 0.0 |
 | atlas221 Is INDIA Near the Top for Debt Interest? | spotlight | 2026-11-24 00:00 UTC | 1 | – | 0.0 |
 | atlas222 Which Places Run on Clean Energy? | map_reveal | 2026-11-25 00:00 UTC | 0 | – | 0.0 |
-| atlas223 USA vs Saudi Arabia: Social Spending Compared | versus | 2026-11-25 17:00 UTC | 0 | – | 0.0 |
+| atlas223 USA vs Saudi Arabia: Social Spending Compared | versus | 2026-11-25 17:00 UTC | 1 | – | 0.0 |
 | atlas224 Places Ranked by Government Salary Spending | rank_ladder | 2026-11-25 21:00 UTC | 0 | – | 0.0 |
 | atlas225 Which Major Country Lags in Urban Clean Cooking? | odd_one_out | 2026-11-24 21:00 UTC | 0 | – | 0.0 |
-| atlas229 Is INDIA Near the Top for Coal Rents? | spotlight | 2026-11-26 00:00 UTC | 1 | – | 0.1 |
+| atlas229 Is INDIA Near the Top for Coal Rents? | spotlight | 2026-11-26 00:00 UTC | 2 | – | 0.1 |
+| atlas230 China vs Sudan: The Childhood Vaccine Gap | versus | 2026-11-26 17:00 UTC | 0 | – | 0.0 |
 
 ## Log
 
