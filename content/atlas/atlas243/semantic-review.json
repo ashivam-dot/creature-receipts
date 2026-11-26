@@ -1,0 +1,140 @@
+{
+  "errors": [],
+  "claims": [
+    {
+      "surface": "beat_1",
+      "text": "Djibouti: 92.2 percent. The world's highest share of employment in the service sector.",
+      "isos": [
+        "DJI"
+      ],
+      "support": "Djibouti value is 92.1662710237891, rank 1."
+    },
+    {
+      "surface": "beat_3",
+      "text": "India: 32.6 percent.",
+      "isos": [
+        "IND"
+      ],
+      "support": "India value is 32.5575625031109."
+    },
+    {
+      "surface": "beat_3",
+      "text": "Djibouti has 2.8 times the service employment India has.",
+      "isos": [
+        "DJI",
+        "IND"
+      ],
+      "support": "92.166 / 32.557 = 2.83."
+    },
+    {
+      "surface": "beat_4",
+      "text": "UK: 83.2. USA: 79.6. Brazil: 72.2.",
+      "isos": [
+        "GBR",
+        "USA",
+        "BRA"
+      ],
+      "support": "GBR: 83.234, USA: 79.562, BRA: 72.159."
+    },
+    {
+      "surface": "beat_5",
+      "text": "Burundi: 11.6 percent. The world's lowest share",
+      "isos": [
+        "BDI"
+      ],
+      "support": "Burundi value is 11.555679288196, rank 184."
+    },
+    {
+      "surface": "beat_6",
+      "text": "This counts working age people engaged in any activity to provide services for pay.",
+      "isos": [],
+      "support": "Definition: Employment is defined as persons of working age who were engaged in any activity to produce goods or provide services for pay or profit."
+    }
+  ],
+  "surface_checks": {
+    "title": {
+      "supported": true,
+      "reason": "The title asks a question about the highest share, which is answered in the content.",
+      "isos": []
+    },
+    "hook": {
+      "supported": true,
+      "reason": "Djibouti is the outlier with the highest share.",
+      "isos": [
+        "DJI"
+      ]
+    },
+    "description": {
+      "supported": true,
+      "reason": "Djibouti is the world-leading share, India and USA are mentioned.",
+      "isos": [
+        "DJI",
+        "IND",
+        "USA"
+      ]
+    },
+    "beat_0": {
+      "supported": true,
+      "reason": "India is a large country with a low service employment share compared to the USA.",
+      "isos": [
+        "IND",
+        "USA"
+      ]
+    },
+    "beat_1": {
+      "supported": true,
+      "reason": "Matches evidence.",
+      "isos": [
+        "DJI"
+      ]
+    },
+    "beat_2": {
+      "supported": true,
+      "reason": "These are three large countries.",
+      "isos": [
+        "USA",
+        "BRA",
+        "IND"
+      ]
+    },
+    "beat_3": {
+      "supported": true,
+      "reason": "Matches evidence.",
+      "isos": [
+        "IND",
+        "DJI"
+      ]
+    },
+    "beat_4": {
+      "supported": true,
+      "reason": "Matches evidence.",
+      "isos": [
+        "GBR",
+        "USA",
+        "BRA"
+      ]
+    },
+    "beat_5": {
+      "supported": true,
+      "reason": "Matches evidence.",
+      "isos": [
+        "BDI"
+      ]
+    },
+    "beat_6": {
+      "supported": true,
+      "reason": "Matches definition.",
+      "isos": []
+    },
+    "beat_7": {
+      "supported": true,
+      "reason": "Stylistic question.",
+      "isos": []
+    },
+    "card_7": {
+      "supported": true,
+      "reason": "Matches indicator definition.",
+      "isos": []
+    }
+  }
+}

@@ -1,0 +1,86 @@
+id: atlas243
+title: Which Country Has the MOST Service Employment?
+format: odd_one_out
+hook_text: THE SERVICE OUTLIER
+description: Discover the global divide in service sector employment, from Djibouti's world-leading share to the
+  surprising numbers in India and the USA.
+hashtags:
+- '#work'
+- '#jobs'
+- '#geography'
+tags:
+- work
+- share of employment in services
+- countries ranked by share of employment in services
+- Djibouti
+- Burundi
+- world map
+- geography
+- atlas in numbers
+sources:
+- https://data.worldbank.org/indicator/SL.SRV.EMPL.ZS
+dataset:
+  kind: worldbank
+  indicator: SL.SRV.EMPL.ZS
+  label: Share of employment in services
+  unit: '%'
+  source: World Bank
+  min_year: 2019
+scale:
+  edges:
+  - 35.0
+  - 50.0
+  - 65.0
+  - 80.0
+  labels:
+  - Under 35%
+  - 35% to 50%
+  - 50% to 65%
+  - 65% to 80%
+  - Over 80%
+value_format: '{v:.1f}%'
+beats:
+- text: One big country breaks this pattern. It is not the one you'd guess.
+  shot:
+    callouts:
+    - IND
+    - USA
+- text: 'Djibouti: 92.2 percent. The world''s highest share of employment in the service sector.'
+  shot:
+    kind: country
+    iso: DJI
+- text: 'Look at these 3 giants: the USA, Brazil, and India.'
+  shot:
+    kind: group
+    isos:
+    - USA
+    - BRA
+    - IND
+- text: 'India is the outlier. India: 32.6 percent. Djibouti has 2.8 times the service employment India has.'
+  shot:
+    kind: country
+    iso: IND
+- text: 'UK: 83.2. USA: 79.6. Brazil: 72.2.'
+  shot:
+    kind: rank
+    isos:
+    - GBR
+    - USA
+    - BRA
+- text: 'Burundi: 11.6 percent. The world''s lowest share, where few people work in transport or finance.'
+  shot:
+    kind: country
+    iso: BDI
+- text: This counts working age people engaged in any activity to provide services for pay.
+  shot:
+    callouts:
+    - DJI
+    - BDI
+  basis: persons of working age who were engaged in any activity to produce goods or provide services for pay or
+    profit
+- text: What kind of services keep your city running?
+  shot:
+    kind: card
+    lines:
+    - Your service sector?
+    - Share of employment in services (%)

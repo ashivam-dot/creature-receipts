@@ -171,7 +171,7 @@ Refreshed by every producer run (`atlas.stats`) from the channel's public feed o
 | atlas223 USA vs Saudi Arabia: Social Spending Compared | versus | 2026-11-25 17:00 UTC | 0 | – | 0.0 |
 | atlas224 Places Ranked by Government Salary Spending | rank_ladder | 2026-11-25 21:00 UTC | 0 | – | 0.0 |
 | atlas225 Which Major Country Lags in Urban Clean Cooking? | odd_one_out | 2026-11-24 21:00 UTC | 0 | – | 0.0 |
-| atlas229 Is INDIA Near the Top for Coal Rents? | spotlight | 2026-11-26 00:00 UTC | 0 | – | 0.0 |
+| atlas229 Is INDIA Near the Top for Coal Rents? | spotlight | 2026-11-26 00:00 UTC | 1 | – | 0.1 |
 
 ## Log
 
