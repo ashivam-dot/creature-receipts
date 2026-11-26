@@ -1,0 +1,81 @@
+id: atlas241
+title: Which Places Report the Highest Official Poverty Rates
+format: spotlight
+hook_text: POVERTY GAP
+description: A global look at the percentage of populations living below national poverty lines across 117 countries
+  and territories.
+hashtags:
+- '#economy'
+- '#geography'
+- '#countries'
+tags:
+- wealth
+- population below national poverty line
+- countries ranked by population below national poverty line
+- Madagascar
+- China
+- world map
+- geography
+- atlas in numbers
+sources:
+- https://data.worldbank.org/indicator/SI.POV.NAHC
+dataset:
+  kind: worldbank
+  indicator: SI.POV.NAHC
+  label: Population below national poverty line
+  unit: '%'
+  source: World Bank
+  min_year: 2019
+scale:
+  edges:
+  - 10.0
+  - 20.0
+  - 35.0
+  - 50.0
+  labels:
+  - Under 10%
+  - 10% to 20%
+  - 20% to 35%
+  - 35% to 50%
+  - Over 50%
+value_format: '{v:.1f}%'
+beats:
+- text: Madagascar has 75.2 percent of its population living below the national poverty line.
+  shot:
+    callouts:
+    - MDG
+- text: National estimates are based on population-weighted subgroup estimates from household surveys.
+  basis: National estimates are based on population-weighted subgroup estimates from household surveys.
+- text: China is the world's lowest, with an official rate of 0 percent.
+  shot:
+    kind: country
+    iso: CHN
+- text: Nigeria has 56.2 percent. That is 16 times the poverty of Belarus, at 3.5.
+  shot:
+    kind: group
+    isos:
+    - NGA
+    - BLR
+- text: Germany has 14.8 percent. Russia has 7.2.
+  shot:
+    kind: group
+    isos:
+    - DEU
+    - RUS
+- text: Low rates include Vietnam at 4.2, Malaysia at 5.1, and Thailand at 5.4.
+  shot:
+    kind: rank
+    isos:
+    - VNM
+    - MYS
+    - THA
+- text: Mexico has 29.6 percent.
+  shot:
+    kind: country
+    iso: MEX
+- text: What does poverty look like where you live?
+  shot:
+    kind: card
+    lines:
+    - What defines poverty where you live?
+    - 'Source: World Bank'

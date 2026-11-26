@@ -9173,7 +9173,7 @@
    "id": "t251",
    "topic": "Megacity Populations Around the World",
    "angle": "China leads the world with over 460 million people living in metropolitan areas of more than one million residents.",
-   "format": "map_reveal",
+   "format": "odd_one_out",
    "dataset": {
     "kind": "worldbank",
     "indicator": "EN.URB.MCTY",
@@ -9203,14 +9203,15 @@
     "#maps"
    ],
    "source_url": "https://data.worldbank.org/indicator/EN.URB.MCTY",
-   "status": "open",
-   "added_by": "refill"
+   "status": "failed:RuntimeError",
+   "added_by": "refill",
+   "source_retries": 1
   },
   {
    "id": "t252",
    "topic": "People Living Below National Poverty Lines",
    "angle": "While national poverty rates exceed 60% in several countries, others report official rates below 5%.",
-   "format": "rank_ladder",
+   "format": "spotlight",
    "dataset": {
     "kind": "worldbank",
     "indicator": "SI.POV.NAHC",
@@ -9240,7 +9241,7 @@
     "#maps me"
    ],
    "source_url": "https://data.worldbank.org/indicator/SI.POV.NAHC",
-   "status": "open",
+   "status": "failed:ValueError",
    "added_by": "refill"
   },
   {
@@ -9356,7 +9357,7 @@
    "id": "t256",
    "topic": "Bank Credit to the Private Sector",
    "angle": "Bank credit to the private sector exceeds 150% of GDP in financial hubs like Hong Kong and Switzerland, but remains below 5% in several developing nations.",
-   "format": "map_reveal",
+   "format": "rank_ladder",
    "dataset": {
     "kind": "worldbank",
     "indicator": "FD.AST.PRVT.GD.ZS",
@@ -9388,7 +9389,7 @@
     "#economy"
    ],
    "source_url": "https://data.worldbank.org/indicator/FD.AST.PRVT.GD.ZS",
-   "status": "open",
+   "status": "failed:RuntimeError",
    "added_by": "refill"
   },
   {
