@@ -1,0 +1,171 @@
+{
+  "errors": [
+    {
+      "surface": "beat_3",
+      "claim": "Serbia has 27 times the tobacco use of China.",
+      "reason": "Serbia is 40.2% and China is 1.5%. 40.2 / 1.5 is approximately 26.8, which rounds to 27, but mathematically exact is 26.8x. However, 27 times is supported by rounding (40.2 / 1.5 = 26.8). Wait, let's check if there are other errors. Let's look at beat_1: Bulgaria has 36.7%. Supported. beat_5: North Korea is 0% (rank 163). Supported.",
+      "severity": "info"
+    }
+  ],
+  "claims": [
+    {
+      "surface": "beat_0",
+      "text": "40.2% of women in Serbia use tobacco.",
+      "isos": [
+        "SRB"
+      ],
+      "support": "SRB: 40.2%"
+    },
+    {
+      "surface": "beat_0",
+      "text": "In China, it is 1.5%.",
+      "isos": [
+        "CHN"
+      ],
+      "support": "CHN: 1.5%"
+    },
+    {
+      "surface": "beat_1",
+      "text": "Bulgaria has 36.7%.",
+      "isos": [
+        "BGR"
+      ],
+      "support": "BGR: 36.7%"
+    },
+    {
+      "surface": "beat_2",
+      "text": "In China, only 1.5% of women use tobacco.",
+      "isos": [
+        "CHN"
+      ],
+      "support": "CHN: 1.5%"
+    },
+    {
+      "surface": "beat_3",
+      "text": "Serbia has 27 times the tobacco use of China.",
+      "isos": [
+        "SRB",
+        "CHN"
+      ],
+      "support": "SRB: 40.2%, CHN: 1.5%"
+    },
+    {
+      "surface": "beat_4",
+      "text": "The USA has 11.6%.",
+      "isos": [
+        "USA"
+      ],
+      "support": "USA: 11.6%"
+    },
+    {
+      "surface": "beat_4",
+      "text": "Germany is higher at 19.6%.",
+      "isos": [
+        "DEU"
+      ],
+      "support": "DEU: 19.6%"
+    },
+    {
+      "surface": "beat_5",
+      "text": "Nigeria has 0.4%, Egypt has 0.4%, and North Korea is the world's lowest at 0%.",
+      "isos": [
+        "NGA",
+        "EGY",
+        "PRK"
+      ],
+      "support": "NGA: 0.4%, EGY: 0.4%, PRK: 0.0%"
+    },
+    {
+      "surface": "beat_6",
+      "text": "The count includes waterpipes and smokeless tobacco, but excludes e-cigarettes.",
+      "isos": [],
+      "support": "Definition: Tobacco products include... waterpipes (hookah, shisha)... smokeless (oral and nasal) tobacco. Tobacco products exclude e-cigarettes"
+    }
+  ],
+  "surface_checks": {
+    "title": {
+      "supported": true,
+      "reason": "Style framing comparing Serbia and China on female tobacco.",
+      "isos": [
+        "SRB",
+        "CHN"
+      ]
+    },
+    "hook": {
+      "supported": true,
+      "reason": "Stylistic hook.",
+      "isos": []
+    },
+    "description": {
+      "supported": true,
+      "reason": "Highlights Serbia (40.2%), China (1.5%), Nigeria (0.4%) in 2024.",
+      "isos": [
+        "SRB",
+        "CHN",
+        "NGA"
+      ]
+    },
+    "beat_0": {
+      "supported": true,
+      "reason": "Serbia value is 40.2%, China value is 1.5%.",
+      "isos": [
+        "SRB",
+        "CHN"
+      ]
+    },
+    "beat_1": {
+      "supported": true,
+      "reason": "Bulgaria value is 36.7%.",
+      "isos": [
+        "BGR"
+      ]
+    },
+    "beat_2": {
+      "supported": true,
+      "reason": "China value is 1.5%.",
+      "isos": [
+        "CHN"
+      ]
+    },
+    "beat_3": {
+      "supported": true,
+      "reason": "40.2 / 1.5 = 26.8, roughly 27 times.",
+      "isos": [
+        "SRB",
+        "CHN"
+      ]
+    },
+    "beat_4": {
+      "supported": true,
+      "reason": "USA is 11.6%, Germany is 19.6%.",
+      "isos": [
+        "USA",
+        "DEU"
+      ]
+    },
+    "beat_5": {
+      "supported": true,
+      "reason": "Nigeria is 0.4%, Egypt is 0.4%, North Korea is 0% (rank 163).",
+      "isos": [
+        "NGA",
+        "EGY",
+        "PRK"
+      ]
+    },
+    "beat_6": {
+      "supported": true,
+      "reason": "Directly matches definition inclusions and exclusions.",
+      "isos": []
+    },
+    "beat_7": {
+      "supported": true,
+      "reason": "Ordinary question framing.",
+      "isos": []
+    },
+    "card_7": {
+      "supported": true,
+      "reason": "Matches indicator definition and year label 2024.",
+      "isos": []
+    }
+  }
+}

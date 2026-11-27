@@ -1,0 +1,38 @@
+{
+  "version": 1,
+  "passed": true,
+  "checked_at": "2026-11-27T09:31:39.294799+00:00",
+  "quality_module_sha256": "db7be8ac57c839f39a10676f1a70580a83ea346f59c27f19868d09c272def14c",
+  "media_sha256": "5f92e6028441d75eefa3a0b0412782c4defb45f5a88939dc28b51c04441ce0d4",
+  "script_sha256": "3bcd64c1b1c6a85a485ad40d7c9fa8e1bb1da7741f927bac9c91af29889a8467",
+  "data_sha256": "06baa7f4df10fff438a33f1771cebb742879b279b1232eeffdf3a389564ef499",
+  "claims_sha256": "a5765d1be0e44ff7a9a73c2e587062bc607f391f3afd1b867d0353fc6df1dd44",
+  "contact_sha256": "9a21600635b0aac535fc911f21df8dfca5ee9f7d466a8f07c5a0973b06c344f9",
+  "duration": 45.51,
+  "integrated_lufs": -14.0,
+  "true_peak_dbfs": -1.6,
+  "speech": {
+    "heard": "40.2% of women in Serbia use tobacco. In China, it is 1.5%. Bulgaria has 36.7%. Across the Balkans, the habit is widespread. In China, only 1.5% of women use tobacco. Serbia has 27 times the tobacco use of China. USA has 11.6%. Germany is higher at 19.6%. Nigeria has 0.4%, Egypt has 0.4%, and North Korea is the world's lowest at 0%. The count includes water pipes and smokeless tobacco, but excludes e-cigarettes. How common is tobacco use among women where you live?",
+    "model": "small.en",
+    "media_sha256": "5f92e6028441d75eefa3a0b0412782c4defb45f5a88939dc28b51c04441ce0d4",
+    "primary_differences": [
+      "'the' heard as '(nothing)' after 'use of china'"
+    ],
+    "differences": [
+      "'the' heard as '(nothing)' after 'use of china'"
+    ],
+    "corroboration": {
+      "model": "base.en",
+      "heard": "40.2% of women in Serbia use tobacco. In China, it is 1.5%. Bulgaria has 36.7%. Across the Balkans, the habit is widespread. In China, only 1.5% of women use tobacco. Serbia has 27 times the tobacco use of China. USA has 11.6%. Germany is higher at 19.6%. Nigeria has 0.4 percent, Egypt has 0.4 percent, and North Korea is the world's lowest at 0 percent. The count includes water pipes and smokeless tobacco, but excludes e-cigarettes. How common is tobacco use among women where you live?",
+      "differences": [
+        "'the' heard as '(nothing)' after 'use of china'"
+      ],
+      "resolved": []
+    }
+  },
+  "warnings": [
+    "'the' heard as '(nothing)' after 'use of china'",
+    "duration 45.5s outside editorial 30–45s target"
+  ],
+  "speech_policy": "material-hard-entity-polarity-strict-minor-spelling-warning"
+}
