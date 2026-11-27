@@ -1,0 +1,79 @@
+id: atlas249
+title: Places Ranked by Female Self-Employment
+hook_text: TWO WORLDS
+description: A cinematic look at the global female self-employment gap, from Chad to Qatar using World Bank data.
+hashtags:
+- '#work'
+- '#economy'
+- '#geography'
+tags:
+- work
+- self-employed women % of employment
+- countries ranked by self-employed women % of employment
+- Chad
+- Qatar
+- world map
+- geography
+- atlas in numbers
+sources:
+- https://data.worldbank.org/indicator/SL.EMP.SELF.FE.ZS
+dataset:
+  kind: worldbank
+  indicator: SL.EMP.SELF.FE.ZS
+  label: Self-employed women (% of employment)
+  unit: '%'
+  source: World Bank
+  min_year: 2019
+scale:
+  edges:
+  - 10.0
+  - 30.0
+  - 65.0
+  - 85.0
+  labels:
+  - Under 10%
+  - 10-30%
+  - 30-65%
+  - 65-85%
+  - Over 85%
+value_format: '{v:.1f}%'
+beats:
+- text: In Chad, 96.8% of working women are self-employed. In Qatar, it is 1.2%.
+  shot:
+    callouts:
+    - TCD
+    - QAT
+- text: Chad leads all nations, running entirely on its own account.
+  shot:
+    kind: country
+    iso: TCD
+- text: Qatar sits at the bottom, with 1.2%.
+  shot:
+    kind: country
+    iso: QAT
+- text: Chad hits 25 times the USA, which rests at 3.8%.
+  shot:
+    kind: group
+    isos:
+    - TCD
+    - USA
+- text: India hits 78.8% and China hits 35.4%.
+  shot:
+    kind: group
+    isos:
+    - IND
+    - CHN
+- text: The lowest include Denmark at 5.7%, Russia at 5.6%, UAE at 5.2%, and USA at 3.8%.
+  shot:
+    kind: rank
+    isos:
+    - DNK
+    - RUS
+    - ARE
+    - USA
+- text: What is the female self-employment rate where you live?
+  shot:
+    kind: card
+    lines:
+    - Where does your country stand?
+    - Self-employed women % of employment

@@ -1,0 +1,78 @@
+id: atlas248
+title: Which Country Has the MOST Young Men Who Can Read?
+format: odd_one_out
+hook_text: THE RARE EXCEPTION
+description: A cinematic look at youth male literacy rates globally, contrasting the highest performing nations
+  with those lagging behind.
+hashtags:
+- '#education'
+- '#geography'
+- '#countries'
+tags:
+- education
+- youth male literacy rate
+- countries ranked by youth male literacy rate
+- Uzbekistan
+- Chad
+- world map
+- geography
+- atlas in numbers
+sources:
+- https://data.worldbank.org/indicator/SE.ADT.1524.LT.MA.ZS
+dataset:
+  kind: worldbank
+  indicator: SE.ADT.1524.LT.MA.ZS
+  label: Youth male literacy rate
+  unit: '%'
+  source: World Bank
+  min_year: 2019
+scale:
+  kind: threshold
+  at: 90.0
+  labels:
+  - 90% or more
+  - Under 90%
+value_format: '{v:.1f}%'
+beats:
+- text: One big country breaks this pattern. It's not the one you'd guess.
+  shot:
+    callouts:
+    - IND
+    - TCD
+- text: India hits 98 percent.
+  shot:
+    kind: country
+    iso: IND
+- text: Chad stands at 56.3 percent.
+  shot:
+    kind: country
+    iso: TCD
+- text: It counts people ages 15 to 24 who can both read and write with understanding a short simple statement about
+    their everyday life.
+  shot:
+    callouts:
+    - TCD
+  basis: Youth literacy rate is the percentage of people ages 15-24 who can both read and write with understanding
+    a short simple statement about their everyday life.
+- text: Mali, Yemen and Burkina Faso follow closely behind at 57.2 percent, 61.8 percent and 65.5 percent.
+  shot:
+    kind: group
+    isos:
+    - MLI
+    - YEM
+    - BFA
+- text: Philippines hits 100 percent.
+  shot:
+    kind: country
+    iso: PHL
+- text: Philippines hits 1.8 times what Chad achieves.
+  shot:
+    callouts:
+    - PHL
+    - TCD
+- text: What is the youth literacy rate where you live?
+  shot:
+    kind: card
+    lines:
+    - Can young men read where you live?
+    - Youth male literacy rate

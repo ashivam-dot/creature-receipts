@@ -8066,7 +8066,7 @@
     "#economy"
    ],
    "source_url": "https://data.worldbank.org/indicator/SL.EMP.SELF.FE.ZS",
-   "status": "open",
+   "status": "ready:atlas249",
    "added_by": "refill"
   },
   {
@@ -9056,7 +9056,7 @@
    "id": "t248",
    "topic": "Anemia Affects Over Half of Women in Several Nations",
    "angle": "Even in high-income regions, at least one in ten women of reproductive age experience anemia.",
-   "format": "map_reveal",
+   "format": "rank_ladder",
    "dataset": {
     "kind": "worldbank",
     "indicator": "SH.ANM.ALLW.ZS",
@@ -9088,7 +9088,7 @@
     "#health"
    ],
    "source_url": "https://data.worldbank.org/indicator/SH.ANM.ALLW.ZS",
-   "status": "open",
+   "status": "ready:atlas246",
    "added_by": "refill"
   },
   {
@@ -9505,7 +9505,7 @@
    "id": "t260",
    "topic": "Literacy Among Young Women Worldwide",
    "angle": "In several countries, fewer than half of young women can read and write, even though the global median literacy rate for this group is over 98%.",
-   "format": "map_reveal",
+   "format": "versus",
    "dataset": {
     "kind": "worldbank",
     "indicator": "SE.ADT.1524.LT.FE.ZS",
@@ -9537,14 +9537,14 @@
     "#education"
    ],
    "source_url": "https://data.worldbank.org/indicator/SE.ADT.1524.LT.FE.ZS",
-   "status": "open",
+   "status": "failed:ValueError",
    "added_by": "refill"
   },
   {
    "id": "t261",
    "topic": "Where Young Men Can Read",
    "angle": "Over half of the countries with data have youth male literacy rates above 97 percent, yet the bottom countries still lag below 60 percent.",
-   "format": "rank_ladder",
+   "format": "odd_one_out",
    "dataset": {
     "kind": "worldbank",
     "indicator": "SE.ADT.1524.LT.MA.ZS",
@@ -9568,7 +9568,7 @@
     "#education"
    ],
    "source_url": "https://data.worldbank.org/indicator/SE.ADT.1524.LT.MA.ZS",
-   "status": "open",
+   "status": "failed:ValueError",
    "added_by": "refill"
   },
   {
@@ -9661,7 +9661,7 @@
     "#population"
    ],
    "source_url": "https://data.worldbank.org/indicator/SP.POP.0509.MA.5Y",
-   "status": "ready:atlas244",
+   "status": "used:atlas244",
    "added_by": "refill"
   }
  ],

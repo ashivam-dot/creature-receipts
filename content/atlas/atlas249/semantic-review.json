@@ -1,0 +1,170 @@
+{
+  "errors": [],
+  "claims": [
+    {
+      "surface": "title",
+      "text": "Places Ranked by Female Self-Employment",
+      "isos": [],
+      "support": "Global ranking of countries and territories by female self-employment."
+    },
+    {
+      "surface": "hook",
+      "text": "TWO WORLDS",
+      "isos": [],
+      "support": "Comparison of extreme ends of the indicator."
+    },
+    {
+      "surface": "description",
+      "text": "A cinematic look at the global female self-employment gap, from Chad to Qatar using World Bank data.",
+      "isos": [
+        "TCD",
+        "QAT"
+      ],
+      "support": "Data covers TCD (Chad, 96.8%) and QAT (Qatar, 1.2%) from World Bank source."
+    },
+    {
+      "surface": "beat_0",
+      "text": "In Chad, 96.8% of working women are self-employed. In Qatar, it is 1.2%.",
+      "isos": [
+        "TCD",
+        "QAT"
+      ],
+      "support": "Chad value is 96.7549887241295 (display 96.8%) and Qatar is 1.24348873315051 (display 1.2%)."
+    },
+    {
+      "surface": "beat_1",
+      "text": "Chad leads all nations, running entirely on its own account.",
+      "isos": [
+        "TCD"
+      ],
+      "support": "Chad rank is 1 (highest among mapped countries and territories)."
+    },
+    {
+      "surface": "beat_2",
+      "text": "Qatar sits at the bottom, with 1.2%.",
+      "isos": [
+        "QAT"
+      ],
+      "support": "Qatar rank is 184, display 1.2% (lowest in the universe)."
+    },
+    {
+      "surface": "beat_3",
+      "text": "Chad hits 25 times the USA, which rests at 3.8%.",
+      "isos": [
+        "TCD",
+        "USA"
+      ],
+      "support": "Chad is 96.8% and USA is 3.8%; 96.8 / 3.8 equals approximately 25.47 (25 times)."
+    },
+    {
+      "surface": "beat_4",
+      "text": "India hits 78.8% and China hits 35.4%.",
+      "isos": [
+        "IND",
+        "CHN"
+      ],
+      "support": "India value is 78.8466218472451 (display 78.8%) and China is 35.4013028134274 (display 35.4%)."
+    },
+    {
+      "surface": "beat_5",
+      "text": "The lowest include Denmark at 5.7%, Russia at 5.6%, UAE at 5.2%, and USA at 3.8%.",
+      "isos": [
+        "DNK",
+        "RUS",
+        "ARE",
+        "USA"
+      ],
+      "support": "Denmark is 5.7%, Russia is 5.6%, UAE is 5.2%, USA is 3.8%."
+    },
+    {
+      "surface": "beat_6",
+      "text": "What is the female self-employment rate where you live?",
+      "isos": [],
+      "support": "Viewer engagement question matching the theme."
+    },
+    {
+      "surface": "card_6",
+      "text": "Where does your country stand? Self-employed women % of employment",
+      "isos": [],
+      "support": "Matches the dataset indicator and topic."
+    }
+  ],
+  "surface_checks": {
+    "title": {
+      "supported": true,
+      "reason": "Accurately describes ranking of places by the indicator.",
+      "isos": []
+    },
+    "hook": {
+      "supported": true,
+      "reason": "Stylistic framing for contrasting extremes.",
+      "isos": []
+    },
+    "description": {
+      "supported": true,
+      "reason": "Correctly references Chad, Qatar, and World Bank data.",
+      "isos": [
+        "TCD",
+        "QAT"
+      ]
+    },
+    "beat_0": {
+      "supported": true,
+      "reason": "Chad is 96.8% and Qatar is 1.2% in the dataset.",
+      "isos": [
+        "TCD",
+        "QAT"
+      ]
+    },
+    "beat_1": {
+      "supported": true,
+      "reason": "Chad has rank 1, leading all entities.",
+      "isos": [
+        "TCD"
+      ]
+    },
+    "beat_2": {
+      "supported": true,
+      "reason": "Qatar is at rank 184 with 1.2%.",
+      "isos": [
+        "QAT"
+      ]
+    },
+    "beat_3": {
+      "supported": true,
+      "reason": "Chad's value divided by USA's value is approximately 25.",
+      "isos": [
+        "TCD",
+        "USA"
+      ]
+    },
+    "beat_4": {
+      "supported": true,
+      "reason": "India is 78.8% and China is 35.4%.",
+      "isos": [
+        "IND",
+        "CHN"
+      ]
+    },
+    "beat_5": {
+      "supported": true,
+      "reason": "Denmark (5.7%), Russia (5.6%), UAE (5.2%), and USA (3.8%) match their dataset values.",
+      "isos": [
+        "DNK",
+        "RUS",
+        "ARE",
+        "USA"
+      ]
+    },
+    "beat_6": {
+      "supported": true,
+      "reason": "Viewer engagement question aligns with indicator topic.",
+      "isos": []
+    },
+    "card_6": {
+      "supported": true,
+      "reason": "Matches indicator label and context.",
+      "isos": []
+    }
+  }
+}

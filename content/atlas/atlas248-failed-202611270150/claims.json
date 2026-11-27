@@ -1,0 +1,1325 @@
+{
+  "version": 1,
+  "evidence": {
+    "version": 1,
+    "indicator": "SE.ADT.1524.LT.MA.ZS",
+    "definition": "Youth literacy rate is the percentage of people ages 15-24 who can both read and write with understanding a short simple statement about their everyday life.",
+    "source": "https://data.worldbank.org/indicator/SE.ADT.1524.LT.MA.ZS",
+    "source_response_sha256": "16690e2506905371b8a15fe58ae0f9c7908f13ccc208abd135bc5914b0bdfeb4",
+    "source_organization": "Data API, UN Educational, Scientific and Cultural Organization (UNESCO), uri: https://databrowser.uis.unesco.org/resources, note: The data are obtained through the UIS API.  Detailed documentation is available at: https://api.uis.unesco.org/api/public/documentation/, publisher: UNESCO Institute for Statistics (UIS), type: Excel (bulk file), date accessed: 2026-03-19, date published: 2026-02",
+    "year_label": "latest available 2019–2024",
+    "universe": "mapped countries and territories with data",
+    "count": 112,
+    "threshold": 90.0,
+    "at_or_above": 81,
+    "entities": {
+      "AFG": {
+        "name": "Afghanistan",
+        "value": 83.4,
+        "display": "83.4%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 93
+      },
+      "ALB": {
+        "name": "Albania",
+        "value": 98.9199981689453,
+        "display": "98.9%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 37
+      },
+      "AGO": {
+        "name": "Angola",
+        "value": 87.7900009155273,
+        "display": "87.8%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 88
+      },
+      "ARG": {
+        "name": "Argentina",
+        "value": 99.4800033569336,
+        "display": "99.5%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 29
+      },
+      "ARM": {
+        "name": "Armenia",
+        "value": 99.9100036621094,
+        "display": "99.9%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 8
+      },
+      "AZE": {
+        "name": "Azerbaijan",
+        "value": 99.879997253418,
+        "display": "99.9%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 12
+      },
+      "BHR": {
+        "name": "Bahrain",
+        "value": 99.5100021362305,
+        "display": "99.5%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 28
+      },
+      "BGD": {
+        "name": "Bangladesh",
+        "value": 92.3899993896484,
+        "display": "92.4%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 76
+      },
+      "BLR": {
+        "name": "Belarus",
+        "value": 99.8499984741211,
+        "display": "99.8%",
+        "year": 2019,
+        "unit": "%",
+        "rank": 14
+      },
+      "BLZ": {
+        "name": "Belize",
+        "value": 95.6699981689453,
+        "display": "95.7%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 64
+      },
+      "BEN": {
+        "name": "Benin",
+        "value": 74.5999984741211,
+        "display": "74.6%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 104
+      },
+      "BTN": {
+        "name": "Bhutan",
+        "value": 98.2799987792969,
+        "display": "98.3%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 50
+      },
+      "BOL": {
+        "name": "Bolivia",
+        "value": 99.8499984741211,
+        "display": "99.8%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 14
+      },
+      "BRA": {
+        "name": "Brazil",
+        "value": 99.2399978637695,
+        "display": "99.2%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 33
+      },
+      "BFA": {
+        "name": "Burkina Faso",
+        "value": 65.4700012207031,
+        "display": "65.5%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 107
+      },
+      "BDI": {
+        "name": "Burundi",
+        "value": 88.2391532536713,
+        "display": "88.2%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 85
+      },
+      "CPV": {
+        "name": "Cabo Verde",
+        "value": 98.4599990844727,
+        "display": "98.5%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 47
+      },
+      "KHM": {
+        "name": "Cambodia",
+        "value": 95.8948999549947,
+        "display": "95.9%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 61
+      },
+      "CAF": {
+        "name": "Central African Republic",
+        "value": 64.9000015258789,
+        "display": "64.9%",
+        "year": 2019,
+        "unit": "%",
+        "rank": 108
+      },
+      "TCD": {
+        "name": "Chad",
+        "value": 56.2599983215332,
+        "display": "56.3%",
+        "year": 2019,
+        "unit": "%",
+        "rank": 112
+      },
+      "CHL": {
+        "name": "Chile",
+        "value": 99.1,
+        "display": "99.1%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 34
+      },
+      "CHN": {
+        "name": "China",
+        "value": 99.75,
+        "display": "99.8%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 18
+      },
+      "COL": {
+        "name": "Colombia",
+        "value": 98.4199981689453,
+        "display": "98.4%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 48
+      },
+      "COM": {
+        "name": "Comoros",
+        "value": 90.2746978006177,
+        "display": "90.3%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 81
+      },
+      "COD": {
+        "name": "Congo, Dem. Rep.",
+        "value": 87.8000030517578,
+        "display": "87.8%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 87
+      },
+      "CIV": {
+        "name": "Cote d'Ivoire",
+        "value": 82.1118012756757,
+        "display": "82.1%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 95
+      },
+      "CUB": {
+        "name": "Cuba",
+        "value": 99.5299987792969,
+        "display": "99.5%",
+        "year": 2019,
+        "unit": "%",
+        "rank": 27
+      },
+      "DOM": {
+        "name": "Dominican Republic",
+        "value": 97.6500015258789,
+        "display": "97.7%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 56
+      },
+      "ECU": {
+        "name": "Ecuador",
+        "value": 98.8000030517578,
+        "display": "98.8%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 40
+      },
+      "EGY": {
+        "name": "Egypt, Arab Rep.",
+        "value": 95.5054752963477,
+        "display": "95.5%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 65
+      },
+      "SLV": {
+        "name": "El Salvador",
+        "value": 97.870002746582,
+        "display": "97.9%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 55
+      },
+      "SWZ": {
+        "name": "Eswatini",
+        "value": 98.5500030517578,
+        "display": "98.6%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 44
+      },
+      "ETH": {
+        "name": "Ethiopia",
+        "value": 88.4199981689453,
+        "display": "88.4%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 84
+      },
+      "FJI": {
+        "name": "Fiji",
+        "value": 96.11,
+        "display": "96.1%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 60
+      },
+      "GAB": {
+        "name": "Gabon",
+        "value": 94.9599990844727,
+        "display": "95%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 67
+      },
+      "GMB": {
+        "name": "Gambia, The",
+        "value": 72.0199966430664,
+        "display": "72%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 105
+      },
+      "GEO": {
+        "name": "Georgia",
+        "value": 99.5599975585938,
+        "display": "99.6%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 26
+      },
+      "GHA": {
+        "name": "Ghana",
+        "value": 91.7399978637695,
+        "display": "91.7%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 78
+      },
+      "GTM": {
+        "name": "Guatemala",
+        "value": 95.6999969482422,
+        "display": "95.7%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 63
+      },
+      "GNB": {
+        "name": "Guinea-Bissau",
+        "value": 86.1999969482422,
+        "display": "86.2%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 91
+      },
+      "GUY": {
+        "name": "Guyana",
+        "value": 99.2699966430664,
+        "display": "99.3%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 31
+      },
+      "HND": {
+        "name": "Honduras",
+        "value": 94.8300018310547,
+        "display": "94.8%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 68
+      },
+      "IND": {
+        "name": "India",
+        "value": 97.9901116105317,
+        "display": "98%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 52
+      },
+      "IDN": {
+        "name": "Indonesia",
+        "value": 92.91,
+        "display": "92.9%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 73
+      },
+      "IRN": {
+        "name": "Iran, Islamic Rep.",
+        "value": 98.8516558046586,
+        "display": "98.9%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 38
+      },
+      "IRQ": {
+        "name": "Iraq",
+        "value": 93.7990031049837,
+        "display": "93.8%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 70
+      },
+      "ITA": {
+        "name": "Italy",
+        "value": 99.8300018310547,
+        "display": "99.8%",
+        "year": 2019,
+        "unit": "%",
+        "rank": 16
+      },
+      "JAM": {
+        "name": "Jamaica",
+        "value": 88.23,
+        "display": "88.2%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 86
+      },
+      "JOR": {
+        "name": "Jordan",
+        "value": 98.4800033569336,
+        "display": "98.5%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 46
+      },
+      "KWT": {
+        "name": "Kuwait",
+        "value": 99.0999984741211,
+        "display": "99.1%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 35
+      },
+      "LAO": {
+        "name": "Lao PDR",
+        "value": 92.1999969482422,
+        "display": "92.2%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 77
+      },
+      "LBN": {
+        "name": "Lebanon",
+        "value": 97.9218778569805,
+        "display": "97.9%",
+        "year": 2019,
+        "unit": "%",
+        "rank": 54
+      },
+      "LSO": {
+        "name": "Lesotho",
+        "value": 94.3099975585938,
+        "display": "94.3%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 69
+      },
+      "MDG": {
+        "name": "Madagascar",
+        "value": 82.5299987792969,
+        "display": "82.5%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 94
+      },
+      "MWI": {
+        "name": "Malawi",
+        "value": 81.3000030517578,
+        "display": "81.3%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 97
+      },
+      "MYS": {
+        "name": "Malaysia",
+        "value": 99.2600021362305,
+        "display": "99.3%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 32
+      },
+      "MLI": {
+        "name": "Mali",
+        "value": 57.2400016784668,
+        "display": "57.2%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 111
+      },
+      "MHL": {
+        "name": "Marshall Islands",
+        "value": 95.4913011516785,
+        "display": "95.5%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 66
+      },
+      "MRT": {
+        "name": "Mauritania",
+        "value": 75.2600021362305,
+        "display": "75.3%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 103
+      },
+      "MUS": {
+        "name": "Mauritius",
+        "value": 99.8158858424997,
+        "display": "99.8%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 17
+      },
+      "MEX": {
+        "name": "Mexico",
+        "value": 98.7900009155273,
+        "display": "98.8%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 41
+      },
+      "MNG": {
+        "name": "Mongolia",
+        "value": 99.6900024414062,
+        "display": "99.7%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 21
+      },
+      "MOZ": {
+        "name": "Mozambique",
+        "value": 78.3710415491477,
+        "display": "78.4%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 100
+      },
+      "MMR": {
+        "name": "Myanmar",
+        "value": 96.2819804522399,
+        "display": "96.3%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 59
+      },
+      "NAM": {
+        "name": "Namibia",
+        "value": 90.7900009155273,
+        "display": "90.8%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 79
+      },
+      "NPL": {
+        "name": "Nepal",
+        "value": 96.8099975585938,
+        "display": "96.8%",
+        "year": 2019,
+        "unit": "%",
+        "rank": 57
+      },
+      "NER": {
+        "name": "Niger",
+        "value": 63.9599990844727,
+        "display": "64%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 109
+      },
+      "NGA": {
+        "name": "Nigeria",
+        "value": 81.3099975585938,
+        "display": "81.3%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 96
+      },
+      "OMN": {
+        "name": "Oman",
+        "value": 99.6500015258789,
+        "display": "99.7%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 22
+      },
+      "PAK": {
+        "name": "Pakistan",
+        "value": 79.4599990844727,
+        "display": "79.5%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 98
+      },
+      "PLW": {
+        "name": "Palau",
+        "value": 100.0,
+        "display": "100%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 1
+      },
+      "PAN": {
+        "name": "Panama",
+        "value": 99.6201395123972,
+        "display": "99.6%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 25
+      },
+      "PNG": {
+        "name": "Papua New Guinea",
+        "value": 92.6929557868258,
+        "display": "92.7%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 74
+      },
+      "PRY": {
+        "name": "Paraguay",
+        "value": 98.6100006103516,
+        "display": "98.6%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 43
+      },
+      "PER": {
+        "name": "Peru",
+        "value": 99.4000015258789,
+        "display": "99.4%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 30
+      },
+      "PHL": {
+        "name": "Philippines",
+        "value": 100.0,
+        "display": "100%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 1
+      },
+      "ROU": {
+        "name": "Romania",
+        "value": 99.9400024414062,
+        "display": "99.9%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 7
+      },
+      "RUS": {
+        "name": "Russian Federation",
+        "value": 99.9100036621094,
+        "display": "99.9%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 8
+      },
+      "RWA": {
+        "name": "Rwanda",
+        "value": 87.5100021362305,
+        "display": "87.5%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 89
+      },
+      "WSM": {
+        "name": "Samoa",
+        "value": 98.5400009155273,
+        "display": "98.5%",
+        "year": 2019,
+        "unit": "%",
+        "rank": 45
+      },
+      "SMR": {
+        "name": "San Marino",
+        "value": 100.0,
+        "display": "100%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 1
+      },
+      "STP": {
+        "name": "Sao Tome and Principe",
+        "value": 95.8499984741211,
+        "display": "95.8%",
+        "year": 2019,
+        "unit": "%",
+        "rank": 62
+      },
+      "SAU": {
+        "name": "Saudi Arabia",
+        "value": 100.0,
+        "display": "100%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 1
+      },
+      "SEN": {
+        "name": "Senegal",
+        "value": 69.2699966430664,
+        "display": "69.3%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 106
+      },
+      "SRB": {
+        "name": "Serbia",
+        "value": 99.7200012207031,
+        "display": "99.7%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 19
+      },
+      "SLE": {
+        "name": "Sierra Leone",
+        "value": 78.1999969482422,
+        "display": "78.2%",
+        "year": 2019,
+        "unit": "%",
+        "rank": 101
+      },
+      "SGP": {
+        "name": "Singapore",
+        "value": 99.870002746582,
+        "display": "99.9%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 13
+      },
+      "SOM": {
+        "name": "Somalia, Fed. Rep.",
+        "value": 76.1900024414062,
+        "display": "76.2%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 102
+      },
+      "ZAF": {
+        "name": "South Africa",
+        "value": 96.3399963378906,
+        "display": "96.3%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 58
+      },
+      "ESP": {
+        "name": "Spain",
+        "value": 99.7099990844727,
+        "display": "99.7%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 20
+      },
+      "LKA": {
+        "name": "Sri Lanka",
+        "value": 98.6999969482422,
+        "display": "98.7%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 42
+      },
+      "SYR": {
+        "name": "Syrian Arab Republic",
+        "value": 98.3499984741211,
+        "display": "98.3%",
+        "year": 2021,
+        "unit": "%",
+        "rank": 49
+      },
+      "TZA": {
+        "name": "Tanzania",
+        "value": 88.8099975585938,
+        "display": "88.8%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 83
+      },
+      "THA": {
+        "name": "Thailand",
+        "value": 97.9400024414062,
+        "display": "97.9%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 53
+      },
+      "TLS": {
+        "name": "Timor-Leste",
+        "value": 86.3899993896484,
+        "display": "86.4%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 90
+      },
+      "TGO": {
+        "name": "Togo",
+        "value": 93.3300018310547,
+        "display": "93.3%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 72
+      },
+      "TON": {
+        "name": "Tonga",
+        "value": 99.6399993896484,
+        "display": "99.6%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 23
+      },
+      "TTO": {
+        "name": "Trinidad and Tobago",
+        "value": 89.05,
+        "display": "89%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 82
+      },
+      "TUN": {
+        "name": "Tunisia",
+        "value": 98.1900024414062,
+        "display": "98.2%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 51
+      },
+      "TUR": {
+        "name": "Turkiye",
+        "value": 92.57,
+        "display": "92.6%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 75
+      },
+      "TKM": {
+        "name": "Turkmenistan",
+        "value": 99.9000015258789,
+        "display": "99.9%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 10
+      },
+      "TCA": {
+        "name": "Turks and Caicos Islands",
+        "value": 99.88,
+        "display": "99.9%",
+        "year": 2020,
+        "unit": "%",
+        "rank": 11
+      },
+      "UGA": {
+        "name": "Uganda",
+        "value": 84.2699966430664,
+        "display": "84.3%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 92
+      },
+      "ARE": {
+        "name": "United Arab Emirates",
+        "value": 99.6399993896484,
+        "display": "99.6%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 23
+      },
+      "URY": {
+        "name": "Uruguay",
+        "value": 98.8499984741211,
+        "display": "98.8%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 39
+      },
+      "UZB": {
+        "name": "Uzbekistan",
+        "value": 100.0,
+        "display": "100%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 1
+      },
+      "VUT": {
+        "name": "Vanuatu",
+        "value": 93.3600006103516,
+        "display": "93.4%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 71
+      },
+      "VNM": {
+        "name": "Viet Nam",
+        "value": 98.9599990844727,
+        "display": "99%",
+        "year": 2022,
+        "unit": "%",
+        "rank": 36
+      },
+      "PSE": {
+        "name": "West Bank and Gaza",
+        "value": 99.9419155976289,
+        "display": "99.9%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 6
+      },
+      "YEM": {
+        "name": "Yemen, Rep.",
+        "value": 61.76,
+        "display": "61.8%",
+        "year": 2023,
+        "unit": "%",
+        "rank": 110
+      },
+      "ZMB": {
+        "name": "Zambia",
+        "value": 79.3099975585938,
+        "display": "79.3%",
+        "year": 2024,
+        "unit": "%",
+        "rank": 99
+      },
+      "ZWE": {
+        "name": "Zimbabwe",
+        "value": 90.7699966430664,
+        "display": "90.8%",
+        "year": 2019,
+        "unit": "%",
+        "rank": 80
+      }
+    }
+  },
+  "review": {
+    "errors": [],
+    "claims": [
+      {
+        "surface": "title",
+        "text": "Which Country Has the Highest Youth Male Literacy Rate?",
+        "isos": [],
+        "support": "Palau, Philippines, San Marino, Saudi Arabia, Uzbekistan are at 100%",
+        "evidence": {}
+      },
+      {
+        "surface": "hook",
+        "text": "YOUTH MALE LITERACY",
+        "isos": [],
+        "support": "Youth male literacy rate (%)",
+        "evidence": {}
+      },
+      {
+        "surface": "description",
+        "text": "A look at global youth male literacy rates, from 100 percent in the Philippines to 56.3 percent in Chad.",
+        "isos": [
+          "PHL",
+          "TCD"
+        ],
+        "support": "Philippines value is 100.0% (rank 1), Chad value is 56.2599983215332% (display 56.3%, rank 112)",
+        "evidence": {
+          "PHL": {
+            "name": "Philippines",
+            "value": 100.0,
+            "display": "100%",
+            "year": 2022,
+            "unit": "%",
+            "rank": 1
+          },
+          "TCD": {
+            "name": "Chad",
+            "value": 56.2599983215332,
+            "display": "56.3%",
+            "year": 2019,
+            "unit": "%",
+            "rank": 112
+          }
+        }
+      },
+      {
+        "surface": "beat_0",
+        "text": "One big country breaks this pattern. It is not the one you would guess.",
+        "isos": [],
+        "support": "World data universe",
+        "evidence": {}
+      },
+      {
+        "surface": "beat_1",
+        "text": "Consider Philippines, India, and Chad.",
+        "isos": [
+          "PHL",
+          "IND",
+          "TCD"
+        ],
+        "support": "PHL rank 1 (100%), IND rank 52 (98%), TCD rank 112 (56.3%)",
+        "evidence": {
+          "PHL": {
+            "name": "Philippines",
+            "value": 100.0,
+            "display": "100%",
+            "year": 2022,
+            "unit": "%",
+            "rank": 1
+          },
+          "IND": {
+            "name": "India",
+            "value": 97.9901116105317,
+            "display": "98%",
+            "year": 2024,
+            "unit": "%",
+            "rank": 52
+          },
+          "TCD": {
+            "name": "Chad",
+            "value": 56.2599983215332,
+            "display": "56.3%",
+            "year": 2019,
+            "unit": "%",
+            "rank": 112
+          }
+        }
+      },
+      {
+        "surface": "beat_2",
+        "text": "It counts young men ages 15 to 24 who can read and write a simple statement about everyday life.",
+        "isos": [],
+        "support": "Youth literacy rate is the percentage of people ages 15-24 who can both read and write with understanding a short simple statement about their everyday life.",
+        "evidence": {}
+      },
+      {
+        "surface": "beat_3",
+        "text": "Philippines is at 100 percent.",
+        "isos": [
+          "PHL"
+        ],
+        "support": "Philippines value 100.0, display 100%",
+        "evidence": {
+          "PHL": {
+            "name": "Philippines",
+            "value": 100.0,
+            "display": "100%",
+            "year": 2022,
+            "unit": "%",
+            "rank": 1
+          }
+        }
+      },
+      {
+        "surface": "beat_4",
+        "text": "India sits at 98 percent.",
+        "isos": [
+          "IND"
+        ],
+        "support": "India value 97.9901116105317, display 98%",
+        "evidence": {
+          "IND": {
+            "name": "India",
+            "value": 97.9901116105317,
+            "display": "98%",
+            "year": 2024,
+            "unit": "%",
+            "rank": 52
+          }
+        }
+      },
+      {
+        "surface": "beat_5",
+        "text": "Chad is 56.3 percent, the lowest of all 112.",
+        "isos": [
+          "TCD"
+        ],
+        "support": "Chad value 56.2599983215332, display 56.3%, rank 112 out of 112",
+        "evidence": {
+          "TCD": {
+            "name": "Chad",
+            "value": 56.2599983215332,
+            "display": "56.3%",
+            "year": 2019,
+            "unit": "%",
+            "rank": 112
+          }
+        }
+      },
+      {
+        "surface": "beat_6",
+        "text": "How many young men in your community can read a short simple statement?",
+        "isos": [],
+        "support": "Youth literacy rate definition: short simple statement",
+        "evidence": {}
+      },
+      {
+        "surface": "card_6",
+        "text": "Can your community read? Youth male literacy rate (%)",
+        "isos": [],
+        "support": "Youth male literacy rate (%)",
+        "evidence": {}
+      },
+      {
+        "surface": "title",
+        "text": "Which Country Has the Highest Youth Male Literacy Rate?",
+        "isos": [],
+        "support": "The title poses a question regarding the highest youth male literacy rate, which is a matter of style and framing.",
+        "method": "complete-surface-check",
+        "evidence": {}
+      },
+      {
+        "surface": "hook",
+        "text": "YOUTH MALE LITERACY",
+        "isos": [],
+        "support": "Accurately reflects the dataset indicator focus on youth male literacy.",
+        "method": "complete-surface-check",
+        "evidence": {}
+      },
+      {
+        "surface": "description",
+        "text": "A look at global youth male literacy rates, from 100 percent in the Philippines to 56.3 percent in Chad.",
+        "isos": [
+          "PHL",
+          "TCD"
+        ],
+        "support": "Accurately states the range from 100 percent in the Philippines to 56.3 percent in Chad.",
+        "method": "complete-surface-check",
+        "evidence": {
+          "PHL": {
+            "name": "Philippines",
+            "value": 100.0,
+            "display": "100%",
+            "year": 2022,
+            "unit": "%",
+            "rank": 1
+          },
+          "TCD": {
+            "name": "Chad",
+            "value": 56.2599983215332,
+            "display": "56.3%",
+            "year": 2019,
+            "unit": "%",
+            "rank": 112
+          }
+        }
+      },
+      {
+        "surface": "beat_0",
+        "text": "One big country breaks this pattern. It is not the one you would guess.",
+        "isos": [],
+        "support": "World introduction framing is stylistic.",
+        "method": "complete-surface-check",
+        "evidence": {}
+      },
+      {
+        "surface": "beat_1",
+        "text": "Consider Philippines, India, and Chad.",
+        "isos": [
+          "PHL",
+          "IND",
+          "TCD"
+        ],
+        "support": "Lists entities present in the dataset with correct values.",
+        "method": "complete-surface-check",
+        "evidence": {
+          "PHL": {
+            "name": "Philippines",
+            "value": 100.0,
+            "display": "100%",
+            "year": 2022,
+            "unit": "%",
+            "rank": 1
+          },
+          "IND": {
+            "name": "India",
+            "value": 97.9901116105317,
+            "display": "98%",
+            "year": 2024,
+            "unit": "%",
+            "rank": 52
+          },
+          "TCD": {
+            "name": "Chad",
+            "value": 56.2599983215332,
+            "display": "56.3%",
+            "year": 2019,
+            "unit": "%",
+            "rank": 112
+          }
+        }
+      },
+      {
+        "surface": "beat_2",
+        "text": "It counts young men ages 15 to 24 who can read and write a simple statement about everyday life.",
+        "isos": [],
+        "support": "Matches the definition provided in the EVIDENCE.",
+        "method": "complete-surface-check",
+        "evidence": {}
+      },
+      {
+        "surface": "beat_3",
+        "text": "Philippines is at 100 percent.",
+        "isos": [
+          "PHL"
+        ],
+        "support": "Philippines value is 100.0%.",
+        "method": "complete-surface-check",
+        "evidence": {
+          "PHL": {
+            "name": "Philippines",
+            "value": 100.0,
+            "display": "100%",
+            "year": 2022,
+            "unit": "%",
+            "rank": 1
+          }
+        }
+      },
+      {
+        "surface": "beat_4",
+        "text": "India sits at 98 percent.",
+        "isos": [
+          "IND"
+        ],
+        "support": "India value rounds to 98%.",
+        "method": "complete-surface-check",
+        "evidence": {
+          "IND": {
+            "name": "India",
+            "value": 97.9901116105317,
+            "display": "98%",
+            "year": 2024,
+            "unit": "%",
+            "rank": 52
+          }
+        }
+      },
+      {
+        "surface": "beat_5",
+        "text": "Chad is 56.3 percent, the lowest of all 112.",
+        "isos": [
+          "TCD"
+        ],
+        "support": "Chad value is 56.3% and it is ranked 112 out of 112.",
+        "method": "complete-surface-check",
+        "evidence": {
+          "TCD": {
+            "name": "Chad",
+            "value": 56.2599983215332,
+            "display": "56.3%",
+            "year": 2019,
+            "unit": "%",
+            "rank": 112
+          }
+        }
+      },
+      {
+        "surface": "beat_6",
+        "text": "How many young men in your community can read a short simple statement?",
+        "isos": [],
+        "support": "Stylistic closing question consistent with definition.",
+        "method": "complete-surface-check",
+        "evidence": {}
+      },
+      {
+        "surface": "card_6",
+        "text": [
+          "Can your community read?",
+          "Youth male literacy rate (%)"
+        ],
+        "isos": [],
+        "support": "Matches the indicator name and card text requirements.",
+        "method": "complete-surface-check",
+        "evidence": {}
+      }
+    ],
+    "surface_checks": {
+      "title": {
+        "supported": true,
+        "reason": "The title poses a question regarding the highest youth male literacy rate, which is a matter of style and framing.",
+        "isos": []
+      },
+      "hook": {
+        "supported": true,
+        "reason": "Accurately reflects the dataset indicator focus on youth male literacy.",
+        "isos": []
+      },
+      "description": {
+        "supported": true,
+        "reason": "Accurately states the range from 100 percent in the Philippines to 56.3 percent in Chad.",
+        "isos": [
+          "PHL",
+          "TCD"
+        ]
+      },
+      "beat_0": {
+        "supported": true,
+        "reason": "World introduction framing is stylistic.",
+        "isos": []
+      },
+      "beat_1": {
+        "supported": true,
+        "reason": "Lists entities present in the dataset with correct values.",
+        "isos": [
+          "PHL",
+          "IND",
+          "TCD"
+        ]
+      },
+      "beat_2": {
+        "supported": true,
+        "reason": "Matches the definition provided in the EVIDENCE.",
+        "isos": []
+      },
+      "beat_3": {
+        "supported": true,
+        "reason": "Philippines value is 100.0%.",
+        "isos": [
+          "PHL"
+        ]
+      },
+      "beat_4": {
+        "supported": true,
+        "reason": "India value rounds to 98%.",
+        "isos": [
+          "IND"
+        ]
+      },
+      "beat_5": {
+        "supported": true,
+        "reason": "Chad value is 56.3% and it is ranked 112 out of 112.",
+        "isos": [
+          "TCD"
+        ]
+      },
+      "beat_6": {
+        "supported": true,
+        "reason": "Stylistic closing question consistent with definition.",
+        "isos": []
+      },
+      "card_6": {
+        "supported": true,
+        "reason": "Matches the indicator name and card text requirements.",
+        "isos": []
+      }
+    },
+    "warnings": []
+  },
+  "script_sha256": "5617be8c2fec67b3173dc77c14224227182cbe40d7a83078b24a74dfc88bc0bc",
+  "data_sha256": "981e36b81af212de4e52a045c0844b4eee78636a5de266c3f987b6444fc7b33d",
+  "reviewer_model": "gemini-3.5-flash-lite"
+}

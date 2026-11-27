@@ -1,0 +1,154 @@
+{
+  "errors": [],
+  "claims": [
+    {
+      "surface": "title",
+      "text": "Which Country Has the Highest Youth Male Literacy Rate?",
+      "isos": [],
+      "support": "Palau, Philippines, San Marino, Saudi Arabia, Uzbekistan are at 100%"
+    },
+    {
+      "surface": "hook",
+      "text": "YOUTH MALE LITERACY",
+      "isos": [],
+      "support": "Youth male literacy rate (%)"
+    },
+    {
+      "surface": "description",
+      "text": "A look at global youth male literacy rates, from 100 percent in the Philippines to 56.3 percent in Chad.",
+      "isos": [
+        "PHL",
+        "TCD"
+      ],
+      "support": "Philippines value is 100.0% (rank 1), Chad value is 56.2599983215332% (display 56.3%, rank 112)"
+    },
+    {
+      "surface": "beat_0",
+      "text": "One big country breaks this pattern. It is not the one you would guess.",
+      "isos": [],
+      "support": "World data universe"
+    },
+    {
+      "surface": "beat_1",
+      "text": "Consider Philippines, India, and Chad.",
+      "isos": [
+        "PHL",
+        "IND",
+        "TCD"
+      ],
+      "support": "PHL rank 1 (100%), IND rank 52 (98%), TCD rank 112 (56.3%)"
+    },
+    {
+      "surface": "beat_2",
+      "text": "It counts young men ages 15 to 24 who can read and write a simple statement about everyday life.",
+      "isos": [],
+      "support": "Youth literacy rate is the percentage of people ages 15-24 who can both read and write with understanding a short simple statement about their everyday life."
+    },
+    {
+      "surface": "beat_3",
+      "text": "Philippines is at 100 percent.",
+      "isos": [
+        "PHL"
+      ],
+      "support": "Philippines value 100.0, display 100%"
+    },
+    {
+      "surface": "beat_4",
+      "text": "India sits at 98 percent.",
+      "isos": [
+        "IND"
+      ],
+      "support": "India value 97.9901116105317, display 98%"
+    },
+    {
+      "surface": "beat_5",
+      "text": "Chad is 56.3 percent, the lowest of all 112.",
+      "isos": [
+        "TCD"
+      ],
+      "support": "Chad value 56.2599983215332, display 56.3%, rank 112 out of 112"
+    },
+    {
+      "surface": "beat_6",
+      "text": "How many young men in your community can read a short simple statement?",
+      "isos": [],
+      "support": "Youth literacy rate definition: short simple statement"
+    },
+    {
+      "surface": "card_6",
+      "text": "Can your community read? Youth male literacy rate (%)",
+      "isos": [],
+      "support": "Youth male literacy rate (%)"
+    }
+  ],
+  "surface_checks": {
+    "title": {
+      "supported": true,
+      "reason": "The title poses a question regarding the highest youth male literacy rate, which is a matter of style and framing.",
+      "isos": []
+    },
+    "hook": {
+      "supported": true,
+      "reason": "Accurately reflects the dataset indicator focus on youth male literacy.",
+      "isos": []
+    },
+    "description": {
+      "supported": true,
+      "reason": "Accurately states the range from 100 percent in the Philippines to 56.3 percent in Chad.",
+      "isos": [
+        "PHL",
+        "TCD"
+      ]
+    },
+    "beat_0": {
+      "supported": true,
+      "reason": "World introduction framing is stylistic.",
+      "isos": []
+    },
+    "beat_1": {
+      "supported": true,
+      "reason": "Lists entities present in the dataset with correct values.",
+      "isos": [
+        "PHL",
+        "IND",
+        "TCD"
+      ]
+    },
+    "beat_2": {
+      "supported": true,
+      "reason": "Matches the definition provided in the EVIDENCE.",
+      "isos": []
+    },
+    "beat_3": {
+      "supported": true,
+      "reason": "Philippines value is 100.0%.",
+      "isos": [
+        "PHL"
+      ]
+    },
+    "beat_4": {
+      "supported": true,
+      "reason": "India value rounds to 98%.",
+      "isos": [
+        "IND"
+      ]
+    },
+    "beat_5": {
+      "supported": true,
+      "reason": "Chad value is 56.3% and it is ranked 112 out of 112.",
+      "isos": [
+        "TCD"
+      ]
+    },
+    "beat_6": {
+      "supported": true,
+      "reason": "Stylistic closing question consistent with definition.",
+      "isos": []
+    },
+    "card_6": {
+      "supported": true,
+      "reason": "Matches the indicator name and card text requirements.",
+      "isos": []
+    }
+  }
+}

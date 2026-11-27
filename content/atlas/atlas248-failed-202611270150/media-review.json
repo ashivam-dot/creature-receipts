@@ -1,0 +1,25 @@
+{
+  "duration": 30.11,
+  "integrated_lufs": -14.1,
+  "true_peak_dbfs": -1.5,
+  "speech": {
+    "heard": "One big country breaks this pattern. It is not the one you would guess. Consider Philippines, India, and Chad. It counts young men ages 15 to 24 who can read and write a simple statement about everyday life. Philippines is at 100 percent. India sits at 98 percent. Chad is 56.3 percent, the lowest of all 112. How many young men in your community can read a short, simple statement? You",
+    "model": "small.en",
+    "media_sha256": "604f68a840320a495be25be81b9d510b66faf6d43df44dfe02042fe83ca0779d",
+    "primary_differences": [
+      "'(nothing)' heard as 'you' after 'short simple statement'"
+    ],
+    "differences": [
+      "'(nothing)' heard as 'you' after 'short simple statement'",
+      "base.en: '(nothing)' heard as 'statement' after 'short simple statement'"
+    ],
+    "corroboration": {
+      "model": "base.en",
+      "heard": "One big country breaks this pattern. It is not the one you would guess. Consider Philippines, India, and Chad. It counts young men ages 15 to 24, who can read and write a simple statement about everyday life. Philippines is at 100%. India sits at 98%. Chad is 56.3%, the lowest of all 112. How many young men in your community can read a short simple statement statement.",
+      "differences": [
+        "'(nothing)' heard as 'statement' after 'short simple statement'"
+      ],
+      "resolved": []
+    }
+  }
+}

@@ -1,0 +1,75 @@
+id: atlas247
+title: 'Chad vs China: Youth Literacy Rates'
+format: versus
+hook_text: 33% VS 99%
+description: A cinematic comparison of youth literacy rates between Chad and China using latest World Bank data.
+hashtags:
+- '#education'
+- '#geography'
+- '#countries'
+tags:
+- education
+- female youth literacy rate
+- countries ranked by female youth literacy rate
+- Uzbekistan
+- Chad
+- world map
+- geography
+- atlas in numbers
+sources:
+- https://data.worldbank.org/indicator/SE.ADT.1524.LT.FE.ZS
+dataset:
+  kind: worldbank
+  indicator: SE.ADT.1524.LT.FE.ZS
+  label: Female youth literacy rate
+  unit: '%'
+  source: World Bank
+  min_year: 2019
+scale:
+  edges:
+  - 50.0
+  - 80.0
+  - 95.0
+  - 99.0
+  labels:
+  - <50%
+  - 50-80%
+  - 80-95%
+  - 95-99%
+  - '>99%'
+value_format: '{v:.1f}%'
+beats:
+- text: In Chad, just 33.3% of young women can read. In China, it is 99.8%.
+  shot:
+    callouts:
+    - TCD
+    - CHN
+- text: Chad is the lowest of all 115, where just one third of young women aged 15 to 24 can both read and write
+    with understanding a short simple statement about their everyday life.
+  shot:
+    kind: country
+    iso: TCD
+- text: China has 3 times the percentage found in Chad, reaching near universal literacy.
+  shot:
+    kind: country
+    iso: CHN
+  basis: Youth literacy rate is the percentage of people ages 15-24 who can both read and write with understanding
+    a short simple statement about their everyday life.
+- text: India is at 96.6%, while Pakistan sits at 66.5%.
+  shot:
+    kind: group
+    isos:
+    - IND
+    - PAK
+- text: Niger has 44.7% and Mali has 43.1%, close to the bottom of the world.
+  shot:
+    kind: group
+    isos:
+    - NER
+    - MLI
+- text: How does youth literacy shape your community?
+  shot:
+    kind: card
+    lines:
+    - How does youth literacy shape your community?
+    - Youth literacy rate (%), World Bank

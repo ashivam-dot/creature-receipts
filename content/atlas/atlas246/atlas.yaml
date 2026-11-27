@@ -1,0 +1,75 @@
+id: atlas246
+title: Places Ranked by Women Affected by Anemia
+format: rank_ladder
+hook_text: THE GLOBAL GAP
+description: Ranking countries and territories by the share of women of reproductive age affected by anemia, from
+  high-income nations to the world's highest rates.
+hashtags:
+- '#health'
+- '#geography'
+- '#countries'
+tags:
+- health
+- women of reproductive age with anemia
+- countries ranked by women of reproductive age with anemia
+- Gabon
+- Guatemala
+- world map
+- geography
+- atlas in numbers
+sources:
+- https://data.worldbank.org/indicator/SH.ANM.ALLW.ZS
+dataset:
+  kind: worldbank
+  indicator: SH.ANM.ALLW.ZS
+  label: Women of reproductive age with anemia
+  unit: '%'
+  source: World Bank
+  min_year: 2019
+scale:
+  edges:
+  - 20.0
+  - 30.0
+  - 40.0
+  - 50.0
+  labels:
+  - Under 20%
+  - 20% to 30%
+  - 30% to 40%
+  - 40% to 50%
+  - Over 50%
+value_format: '{v:.1f}%'
+beats:
+- text: Even in Australia, 11.1% of women have anemia. In India, it's 53.7%.
+  shot:
+    callouts:
+    - AUS
+    - IND
+- text: 'Wealthy nations aren''t immune: the UK has 13.6%, and the USA has 15%.'
+  shot:
+    kind: group
+    isos:
+    - GBR
+    - USA
+- text: Nigeria rises to 37.9%.
+  shot:
+    kind: country
+    iso: NGA
+- text: 'The climb steepens: Benin has 50%, Ivory Coast 51.4%, Mauritania 54.5%, and Mali 56.5%.'
+  shot:
+    kind: rank
+    isos:
+    - BEN
+    - CIV
+    - MRT
+    - MLI
+- text: At number 1, Gabon has 59.9%, the world's highest. That is 4 times what the USA has.
+  shot:
+    kind: country
+    iso: GAB
+- text: How common is anemia among women in your country?
+  shot:
+    kind: card
+    lines:
+    - How Common Is Anemia?
+    - Women with Anemia (%), World Bank, 2023

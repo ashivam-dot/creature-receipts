@@ -1,0 +1,149 @@
+{
+  "errors": [],
+  "claims": [
+    {
+      "surface": "title",
+      "text": "Places Ranked by Women Affected by Anemia",
+      "isos": [],
+      "support": "Global Health Observatory Data Repository/World Health Statistics, World Health Organization (WHO), 2023, 188 mapped countries and territories with data"
+    },
+    {
+      "surface": "hook",
+      "text": "THE GLOBAL GAP",
+      "isos": [],
+      "support": "Global Health Observatory Data Repository/World Health Statistics, World Health Organization (WHO), 2023"
+    },
+    {
+      "surface": "description",
+      "text": "Ranking countries and territories by the share of women of reproductive age affected by anemia, from high-income nations to the world's highest rates.",
+      "isos": [],
+      "support": "Prevalence of anemia among women of reproductive age refers to the combined prevalence of both non-pregnant with haemoglobin levels below 12 g/dL and pregnant women with haemoglobin levels below 11 g/dL."
+    },
+    {
+      "surface": "beat_0",
+      "text": "Even in Australia, 11.1% of women have anemia. In India, it's 53.7%.",
+      "isos": [
+        "AUS",
+        "IND"
+      ],
+      "support": "Australia: 11.1%, India: 53.7%"
+    },
+    {
+      "surface": "beat_1",
+      "text": "Wealthy nations aren't immune: the UK has 13.6%, and the USA has 15%.",
+      "isos": [
+        "GBR",
+        "USA"
+      ],
+      "support": "United Kingdom: 13.6%, United States: 15%"
+    },
+    {
+      "surface": "beat_2",
+      "text": "Nigeria rises to 37.9%.",
+      "isos": [
+        "NGA"
+      ],
+      "support": "Nigeria: 37.9%"
+    },
+    {
+      "surface": "beat_3",
+      "text": "The climb steepens: Benin has 50%, Ivory Coast 51.4%, Mauritania 54.5%, and Mali 56.5%.",
+      "isos": [
+        "BEN",
+        "CIV",
+        "MRT",
+        "MLI"
+      ],
+      "support": "Benin: 50%, Cote d'Ivoire: 51.4%, Mauritania: 54.5%, Mali: 56.5%"
+    },
+    {
+      "surface": "beat_4",
+      "text": "At number 1, Gabon has 59.9%, the world's highest. That is 4 times what the USA has.",
+      "isos": [
+        "GAB",
+        "USA"
+      ],
+      "support": "Gabon: 59.9% (rank 1), United States: 15.0% (59.9 is approximately 4 times 15.0)"
+    },
+    {
+      "surface": "beat_5",
+      "text": "How common is anemia among women in your country?",
+      "isos": [],
+      "support": "Indicator SH.ANM.ALLW.ZS measures the prevalence of anemia among women of reproductive age."
+    },
+    {
+      "surface": "card_5",
+      "text": "How Common Is Anemia?, Women with Anemia (%), World Bank, 2023",
+      "isos": [],
+      "support": "World Bank indicator SH.ANM.ALLW.ZS, 2023"
+    }
+  ],
+  "surface_checks": {
+    "title": {
+      "supported": true,
+      "reason": "The dataset ranks 188 mapped countries and territories by the prevalence of anemia among women of reproductive age.",
+      "isos": []
+    },
+    "hook": {
+      "supported": true,
+      "reason": "Stylistic hook introducing the rankings.",
+      "isos": []
+    },
+    "description": {
+      "supported": true,
+      "reason": "Accurately describes the indicator and scope.",
+      "isos": []
+    },
+    "beat_0": {
+      "supported": true,
+      "reason": "Australia value is 11.1% and India value is 53.7%, perfectly matching the evidence.",
+      "isos": [
+        "AUS",
+        "IND"
+      ]
+    },
+    "beat_1": {
+      "supported": true,
+      "reason": "United Kingdom value is 13.6% and United States value is 15%, matching the evidence display values.",
+      "isos": [
+        "GBR",
+        "USA"
+      ]
+    },
+    "beat_2": {
+      "supported": true,
+      "reason": "Nigeria value is 37.9%, matching the evidence.",
+      "isos": [
+        "NGA"
+      ]
+    },
+    "beat_3": {
+      "supported": true,
+      "reason": "Benin (50%), Cote d'Ivoire (51.4%), Mauritania (54.5%), and Mali (56.5%) match the evidence.",
+      "isos": [
+        "BEN",
+        "CIV",
+        "MRT",
+        "MLI"
+      ]
+    },
+    "beat_4": {
+      "supported": true,
+      "reason": "Gabon is rank 1 with 59.9%, which is indeed approximately 4 times the US value of 15%.",
+      "isos": [
+        "GAB",
+        "USA"
+      ]
+    },
+    "beat_5": {
+      "supported": true,
+      "reason": "Standard engagement question appropriate for the topic.",
+      "isos": []
+    },
+    "card_5": {
+      "supported": true,
+      "reason": "Correctly reflects indicator title, source, and year.",
+      "isos": []
+    }
+  }
+}
