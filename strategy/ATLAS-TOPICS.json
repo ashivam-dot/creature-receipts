@@ -8066,7 +8066,7 @@
     "#economy"
    ],
    "source_url": "https://data.worldbank.org/indicator/SL.EMP.SELF.FE.ZS",
-   "status": "ready:atlas249",
+   "status": "used:atlas249",
    "added_by": "refill"
   },
   {
@@ -8932,7 +8932,7 @@
     "#economy"
    ],
    "source_url": "https://data.worldbank.org/indicator/SL.AGR.EMPL.ZS",
-   "status": "open",
+   "status": "ready:atlas253",
    "added_by": "refill"
   },
   {
@@ -9088,14 +9088,14 @@
     "#health"
    ],
    "source_url": "https://data.worldbank.org/indicator/SH.ANM.ALLW.ZS",
-   "status": "ready:atlas246",
+   "status": "used:atlas246",
    "added_by": "refill"
   },
   {
    "id": "t249",
    "topic": "Crop Production Change Since 2015",
    "angle": "Arid nations like Oman doubled crop output while Caribbean islands halved theirs.",
-   "format": "rank_ladder",
+   "format": "odd_one_out",
    "dataset": {
     "kind": "worldbank",
     "indicator": "AG.PRD.CROP.XD",
@@ -9127,8 +9127,9 @@
     "#mapsdata"
    ],
    "source_url": "https://data.worldbank.org/indicator/AG.PRD.CROP.XD",
-   "status": "open",
-   "added_by": "refill"
+   "status": "ready:atlas251",
+   "added_by": "refill",
+   "source_retries": 1
   },
   {
    "id": "t250",
@@ -9498,7 +9499,7 @@
     "#economy"
    ],
    "source_url": "https://data.worldbank.org/indicator/SI.DST.02ND.20",
-   "status": "ready:atlas245",
+   "status": "used:atlas245",
    "added_by": "refill"
   },
   {
@@ -9575,7 +9576,7 @@
    "id": "t262",
    "topic": "Nine out of ten toddlers are protected from hepatitis B",
    "angle": "Globally, the median immunization rate reaches an impressive ninety percent, yet a few nations still lag below forty percent.",
-   "format": "map_reveal",
+   "format": "rank_ladder",
    "dataset": {
     "kind": "worldbank",
     "indicator": "SH.IMM.HEPB",
@@ -9599,7 +9600,7 @@
     "#health"
    ],
    "source_url": "https://data.worldbank.org/indicator/SH.IMM.HEPB",
-   "status": "open",
+   "status": "ready:atlas252",
    "added_by": "refill"
   },
   {

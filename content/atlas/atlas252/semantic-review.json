@@ -1,0 +1,146 @@
+{
+  "errors": [
+    {
+      "surface": "beat_1",
+      "claim": "leaving most toddlers without full coverage",
+      "reason": "Sudan's immunization rate is 39%, meaning 39% have coverage, but 'most' implies less than 50% have coverage, which is true for Sudan specifically, however 'most' in this context of a 39% rate technically means the majority lack coverage, but the threshold or wording should be verified; actually 39% means 61% lack full coverage so most lack it. Wait, let's check another error: Sudan is the lowest (rank 185 out of 185, so this is correct). Let's check beat_5: '2.5 times Sudan'. 99 divided by 39 is 2.538 times, which is supported by rounding.",
+      "severity": "info"
+    },
+    {
+      "surface": "beat_5",
+      "claim": "2.5 times Sudan",
+      "reason": "Costa Rica (99%) divided by Sudan (39%) is approximately 2.538, which supports '2.5 times'.",
+      "severity": "info"
+    }
+  ],
+  "claims": [
+    {
+      "surface": "beat_0",
+      "text": "China protects 96% of toddlers against hepatitis B. In Sudan, it's just 39%.",
+      "isos": [
+        "CHN",
+        "SDN"
+      ],
+      "support": "China value is 96%, Sudan value is 39%."
+    },
+    {
+      "surface": "beat_1",
+      "text": "Sudan is the world's lowest, leaving most toddlers without full coverage.",
+      "isos": [
+        "SDN"
+      ],
+      "support": "Sudan rank is 185, value is 39%."
+    },
+    {
+      "surface": "beat_2",
+      "text": "Full protection requires 3 doses of the vaccine before or during a child's second year.",
+      "isos": [],
+      "support": "Definition states: 'A child is considered adequately immunized after three doses' and ages 12-23 months."
+    },
+    {
+      "surface": "beat_3",
+      "text": "The USA hits 93%. India climbs to 94%.",
+      "isos": [
+        "USA",
+        "IND"
+      ],
+      "support": "USA value is 93%, India value is 94%."
+    },
+    {
+      "surface": "beat_4",
+      "text": "Climbing higher: Nigeria is at 67%, Germany has 85%, Brazil hits 90%, and Russia hits 97%.",
+      "isos": [
+        "NGA",
+        "DEU",
+        "BRA",
+        "RUS"
+      ],
+      "support": "Nigeria is 67%, Germany is 85%, Brazil is 90%, Russia is 97%."
+    },
+    {
+      "surface": "beat_5",
+      "text": "Near the top, Costa Rica protects 99% of its toddlers, 2.5 times Sudan.",
+      "isos": [
+        "CRI",
+        "SDN"
+      ],
+      "support": "Costa Rica value is 99% (rank 1), Sudan value is 39%."
+    }
+  ],
+  "surface_checks": {
+    "title": {
+      "supported": true,
+      "reason": "The title frames the ranking of Hepatitis B vaccination rates accurately according to the indicator.",
+      "isos": []
+    },
+    "hook": {
+      "supported": true,
+      "reason": "Global health gap framing is style.",
+      "isos": []
+    },
+    "description": {
+      "supported": true,
+      "reason": "Highlights disparities from Sudan to Costa Rica which are in the dataset.",
+      "isos": [
+        "SDN",
+        "CRI"
+      ]
+    },
+    "beat_0": {
+      "supported": true,
+      "reason": "China is 96% and Sudan is 39% in the evidence.",
+      "isos": [
+        "CHN",
+        "SDN"
+      ]
+    },
+    "beat_1": {
+      "supported": true,
+      "reason": "Sudan is rank 185, the lowest in the dataset with 39%.",
+      "isos": [
+        "SDN"
+      ]
+    },
+    "beat_2": {
+      "supported": true,
+      "reason": "Matches the definition regarding three doses and children ages 12-23 months.",
+      "isos": []
+    },
+    "beat_3": {
+      "supported": true,
+      "reason": "USA is 93% and India is 94% in the evidence.",
+      "isos": [
+        "USA",
+        "IND"
+      ]
+    },
+    "beat_4": {
+      "supported": true,
+      "reason": "Nigeria is 67%, Germany is 85%, Brazil is 90%, and Russia is 97% in the evidence.",
+      "isos": [
+        "NGA",
+        "DEU",
+        "BRA",
+        "RUS"
+      ]
+    },
+    "beat_5": {
+      "supported": true,
+      "reason": "Costa Rica is 99% and Sudan is 39%, 99/39 approx 2.5.",
+      "isos": [
+        "CRI",
+        "SDN"
+      ]
+    },
+    "beat_6": {
+      "supported": true,
+      "reason": "Ordinary question framing.",
+      "isos": []
+    },
+    "card_6": {
+      "supported": true,
+      "reason": "Card text matches indicator name and question style.",
+      "isos": []
+    }
+  }
+}

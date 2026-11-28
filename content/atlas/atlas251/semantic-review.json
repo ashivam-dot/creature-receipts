@@ -1,0 +1,172 @@
+{
+  "errors": [],
+  "claims": [
+    {
+      "surface": "title",
+      "text": "Which Country Has the MOST Crop Growth?",
+      "isos": [],
+      "support": "Oman ranks 1st in the world with an index of 204.95, which is the highest value in the evidence."
+    },
+    {
+      "surface": "hook",
+      "text": "DESERT VS ISLAND",
+      "isos": [
+        "OMN",
+        "CUB"
+      ],
+      "support": "Oman is a desert nation (rank 1, index 205) and Cuba is an island nation (rank 190, index 49)."
+    },
+    {
+      "surface": "description",
+      "text": "Oman reached a crop production index of 205 while Cuba fell to 49.",
+      "isos": [
+        "OMN",
+        "CUB"
+      ],
+      "support": "Oman value is 204.95 (display 205) and Cuba value is 49.0 (display 49)."
+    },
+    {
+      "surface": "beat_0",
+      "text": "One desert nation doubled its crop output, while Cuba dropped to 49.",
+      "isos": [
+        "OMN",
+        "CUB"
+      ],
+      "support": "Oman (desert nation) value is 204.95 (more than double the 100 baseline) and Cuba is 49."
+    },
+    {
+      "surface": "beat_1",
+      "text": "3 contenders show very different results: the USA, Brazil, and Oman.",
+      "isos": [
+        "USA",
+        "BRA",
+        "OMN"
+      ],
+      "support": "USA index is 100.02, Brazil is 127.47, and Oman is 204.95."
+    },
+    {
+      "surface": "beat_2",
+      "text": "The USA remained right on the baseline at 100.",
+      "isos": [
+        "USA"
+      ],
+      "support": "USA value is 100.02 (display 100), matching the 2014-2016 base period of 100."
+    },
+    {
+      "surface": "beat_3",
+      "text": "Brazil pushed its crop output up to 127.",
+      "isos": [
+        "BRA"
+      ],
+      "support": "Brazil value is 127.47, displayed as 127."
+    },
+    {
+      "surface": "beat_4",
+      "text": "The world's highest crop index belongs to Oman at 205.",
+      "isos": [
+        "OMN"
+      ],
+      "support": "Oman rank is 1 and value is 204.95, displayed as 205."
+    },
+    {
+      "surface": "beat_5",
+      "text": "That gives Oman 2 times the output of the USA.",
+      "isos": [
+        "OMN",
+        "USA"
+      ],
+      "support": "Oman index is 204.95 and USA index is 100.02, approximately twice the USA value."
+    },
+    {
+      "surface": "beat_6",
+      "text": "How is crop output changing in your country?",
+      "isos": [],
+      "support": "General question referencing the crop production index dataset."
+    },
+    {
+      "surface": "card_6",
+      "text": "HOW IS CROP OUTPUT CHANGING? Crop production index (2014-2016=100)",
+      "isos": [],
+      "support": "Indicator definition matches 'Crop production index (2014–2016 = 100)'."
+    }
+  ],
+  "surface_checks": {
+    "title": {
+      "supported": true,
+      "reason": "Oman has the highest crop index in the dataset.",
+      "isos": []
+    },
+    "hook": {
+      "supported": true,
+      "reason": "Oman and Cuba represent high and low extremes respectively.",
+      "isos": [
+        "OMN",
+        "CUB"
+      ]
+    },
+    "description": {
+      "supported": true,
+      "reason": "Oman is 205 and Cuba is 49 in the evidence data.",
+      "isos": [
+        "OMN",
+        "CUB"
+      ]
+    },
+    "beat_0": {
+      "supported": true,
+      "reason": "Oman's index of ~205 is double the 100 baseline, and Cuba is 49.",
+      "isos": [
+        "OMN",
+        "CUB"
+      ]
+    },
+    "beat_1": {
+      "supported": true,
+      "reason": "USA (100), Brazil (127), and Oman (205) values are accurately cited.",
+      "isos": [
+        "USA",
+        "BRA",
+        "OMN"
+      ]
+    },
+    "beat_2": {
+      "supported": true,
+      "reason": "USA index is 100.02.",
+      "isos": [
+        "USA"
+      ]
+    },
+    "beat_3": {
+      "supported": true,
+      "reason": "Brazil index is 127.47.",
+      "isos": [
+        "BRA"
+      ]
+    },
+    "beat_4": {
+      "supported": true,
+      "reason": "Oman is rank 1 with 204.95.",
+      "isos": [
+        "OMN"
+      ]
+    },
+    "beat_5": {
+      "supported": true,
+      "reason": "Oman (204.95) is roughly twice the USA (100.02).",
+      "isos": [
+        "OMN",
+        "USA"
+      ]
+    },
+    "beat_6": {
+      "supported": true,
+      "reason": "Standard concluding question matching indicator scope.",
+      "isos": []
+    },
+    "card_6": {
+      "supported": true,
+      "reason": "Matches the official indicator name and base period definition.",
+      "isos": []
+    }
+  }
+}

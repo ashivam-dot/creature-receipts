@@ -1,0 +1,21 @@
+{
+  "warnings": [
+    {
+      "country": "Luxembourg",
+      "why": "Agriculture share of total employment around 0.88 percent is extremely low, but Luxembourg has a very small agricultural sector. However, the extreme low values for advanced economies like Luxembourg, Malta, the UK, and Singapore reflect the percentage share of agricultural employment rather than total employment, or represent extreme outliers due to classification and reporting anomalies where total agricultural employment shares in microstates or highly urbanized economies are often near 1-2 percent, but values below 1 percent or down to 0.09 percent for Singapore suggest severe underreporting or data capture issues for tiny city-states."
+    },
+    {
+      "country": "Malta",
+      "why": "Agriculture share around 0.88 percent is extremely low due to a lack of arable land, though plausible for a microstate."
+    },
+    {
+      "country": "Singapore",
+      "why": "An agriculture share of 0.095 percent is virtually non-existent and points to a data collection artifact or near-zero urban farming data being captured."
+    },
+    {
+      "country": "Hong Kong SAR, China",
+      "why": "An agriculture share of 0.18 percent is similarly a data artifact reflecting negligible agricultural activity in a densely populated metropolis."
+    }
+  ],
+  "policy": "model memory is advisory; unsupported suspicions cannot overrule official data"
+}

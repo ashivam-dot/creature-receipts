@@ -172,10 +172,12 @@ Refreshed by every producer run (`atlas.stats`) from the channel's public feed o
 | atlas224 Places Ranked by Government Salary Spending | rank_ladder | 2026-11-25 21:00 UTC | 0 | – | 0.0 |
 | atlas225 Which Major Country Lags in Urban Clean Cooking? | odd_one_out | 2026-11-24 21:00 UTC | 0 | – | 0.0 |
 | atlas227 Which Places Spend the Most on Education? | map_reveal | 2026-11-27 00:00 UTC | 0 | – | 0.0 |
-| atlas229 Is INDIA Near the Top for Coal Rents? | spotlight | 2026-11-26 00:00 UTC | 6 | – | 0.1 |
+| atlas229 Is INDIA Near the Top for Coal Rents? | spotlight | 2026-11-26 00:00 UTC | 7 | – | 0.1 |
 | atlas230 China vs Sudan: The Childhood Vaccine Gap | versus | 2026-11-26 17:00 UTC | 1 | – | 0.0 |
-| atlas231 Where Young Women Make Up the Biggest Share of Females | map_reveal | 2026-11-26 21:00 UTC | 1 | – | 0.0 |
+| atlas231 Where Young Women Make Up the Biggest Share of Females | map_reveal | 2026-11-26 21:00 UTC | 4 | – | 0.1 |
 | atlas232 Places Ranked by Women's FINANCIAL Inclusion | rank_ladder | 2026-11-27 17:00 UTC | 0 | – | 0.0 |
+| atlas233 Which Country Has the MOST Young Girls? | odd_one_out | 2026-11-27 21:00 UTC | 1 | – | 0.2 |
+| atlas234 How Does the USA Compare on Health Spending? | spotlight | 2026-11-28 00:00 UTC | 0 | – | 0.0 |
 
 ## Log
 

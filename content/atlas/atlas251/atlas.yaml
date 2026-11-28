@@ -1,0 +1,76 @@
+id: atlas251
+title: Which Country Has the MOST Crop Growth?
+format: odd_one_out
+hook_text: DESERT VS ISLAND
+description: Oman reached a crop production index of 205 while Cuba fell to 49.
+hashtags:
+- '#data'
+- '#mapsdata'
+- '#geography'
+tags:
+- crop production index 2014-2016 100
+- countries ranked by crop production index 2014-2016 100
+- Oman
+- Cuba
+- world map
+- geography
+- atlas in numbers
+sources:
+- https://data.worldbank.org/indicator/AG.PRD.CROP.XD
+dataset:
+  kind: worldbank
+  indicator: AG.PRD.CROP.XD
+  label: Crop production index (2014-2016=100)
+  unit: index
+  source: World Bank
+  min_year: 2019
+scale:
+  edges:
+  - 80.0
+  - 100.0
+  - 140.0
+  - 180.0
+  labels:
+  - Sharp Decline
+  - Decline
+  - Growth
+  - High Growth
+  - Doubling
+value_format: '{v:.0f}'
+beats:
+- text: One desert nation doubled its crop output, while Cuba dropped to 49.
+  shot:
+    callouts:
+    - OMN
+    - CUB
+- text: '3 contenders show very different results: the USA, Brazil, and Oman.'
+  shot:
+    kind: group
+    isos:
+    - USA
+    - BRA
+    - OMN
+- text: The USA remained right on the baseline at 100.
+  shot:
+    kind: country
+    iso: USA
+- text: Brazil pushed its crop output up to 127.
+  shot:
+    kind: country
+    iso: BRA
+- text: The world's highest crop index belongs to Oman at 205.
+  shot:
+    kind: country
+    iso: OMN
+- text: That gives Oman 2 times the output of the USA.
+  shot:
+    kind: group
+    isos:
+    - OMN
+    - USA
+- text: How is crop output changing in your country?
+  shot:
+    kind: card
+    lines:
+    - HOW IS CROP OUTPUT CHANGING?
+    - Crop production index (2014-2016=100)

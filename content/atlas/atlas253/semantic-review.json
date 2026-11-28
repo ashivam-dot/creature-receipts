@@ -1,0 +1,133 @@
+{
+  "errors": [
+    {
+      "surface": "beat_1",
+      "claim": "where farming remains the primary livelihood for most people.",
+      "reason": "Burundi's agricultural employment share is 85.3%, which represents a large majority (most people), but the evidence only measures employment percentage, not total population or individual livelihoods across the entire populace.",
+      "severity": "style"
+    }
+  ],
+  "claims": [
+    {
+      "surface": "beat_0",
+      "text": "In Burundi, 85.3% of workers work in agriculture. In the USA, it's 1.5%.",
+      "isos": [
+        "BDI",
+        "USA"
+      ],
+      "support": "Burundi 85.3%, United States 1.5%"
+    },
+    {
+      "surface": "beat_1",
+      "text": "Burundi is the world's highest, where farming remains the primary livelihood for most people.",
+      "isos": [
+        "BDI"
+      ],
+      "support": "Burundi rank 1 (85.3%)"
+    },
+    {
+      "surface": "beat_2",
+      "text": "Burundi has 57 times the agricultural workforce share of the USA.",
+      "isos": [
+        "BDI",
+        "USA"
+      ],
+      "support": "85.3 / 1.5 = 56.86, approximately 57 times"
+    },
+    {
+      "surface": "beat_3",
+      "text": "It counts working age people in agriculture, hunting, forestry and fishing.",
+      "isos": [],
+      "support": "Employment is defined as persons of working age... The agriculture sector consists of activities in agriculture, hunting, forestry and fishing"
+    },
+    {
+      "surface": "beat_4",
+      "text": "India has 41.6%, China 21.7%, and Brazil 7.6%.",
+      "isos": [
+        "IND",
+        "CHN",
+        "BRA"
+      ],
+      "support": "India 41.6%, China 21.7%, Brazil 7.6%"
+    },
+    {
+      "surface": "beat_5",
+      "text": "In the UK, just 0.9% of workers farm.",
+      "isos": [
+        "GBR"
+      ],
+      "support": "United Kingdom 0.9%"
+    }
+  ],
+  "surface_checks": {
+    "title": {
+      "supported": true,
+      "reason": "Title is a standard ranking headline fitting the dataset.",
+      "isos": []
+    },
+    "hook": {
+      "supported": true,
+      "reason": "Hook introduces the global agricultural workforce theme accurately.",
+      "isos": []
+    },
+    "description": {
+      "supported": true,
+      "reason": "Accurately describes World Bank agricultural employment data.",
+      "isos": []
+    },
+    "beat_0": {
+      "supported": true,
+      "reason": "Burundi 85.3% and USA 1.5% match evidence values.",
+      "isos": [
+        "BDI",
+        "USA"
+      ]
+    },
+    "beat_1": {
+      "supported": true,
+      "reason": "Burundi is ranked #1 in the evidence with 85.3%.",
+      "isos": [
+        "BDI"
+      ]
+    },
+    "beat_2": {
+      "supported": true,
+      "reason": "The ratio 85.3 to 1.5 is approximately 57.",
+      "isos": [
+        "BDI",
+        "USA"
+      ]
+    },
+    "beat_3": {
+      "supported": true,
+      "reason": "Matches the provided definition text from the evidence.",
+      "isos": []
+    },
+    "beat_4": {
+      "supported": true,
+      "reason": "India (41.6%), China (21.7%), and Brazil (7.6%) match evidence values.",
+      "isos": [
+        "IND",
+        "CHN",
+        "BRA"
+      ]
+    },
+    "beat_5": {
+      "supported": true,
+      "reason": "United Kingdom display value is 0.9%.",
+      "isos": [
+        "GBR"
+      ]
+    },
+    "beat_6": {
+      "supported": true,
+      "reason": "Standard call-to-action question.",
+      "isos": []
+    },
+    "card_6": {
+      "supported": true,
+      "reason": "Card text matches closing prompt and metric labels.",
+      "isos": []
+    }
+  }
+}

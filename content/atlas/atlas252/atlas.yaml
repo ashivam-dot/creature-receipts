@@ -1,0 +1,72 @@
+id: atlas252
+title: Places Ranked by Hepatitis B Vaccination Rates
+format: rank_ladder
+hook_text: GLOBAL HEALTH GAP
+description: A global ranking of toddler hepatitis B immunization rates, highlighting disparities from Sudan to
+  Costa Rica.
+hashtags:
+- '#health'
+- '#geography'
+- '#countries'
+tags:
+- health
+- hepb3 immunization rate
+- countries ranked by hepb3 immunization rate
+- Turkmenistan
+- Sudan
+- world map
+- geography
+- atlas in numbers
+sources:
+- https://data.worldbank.org/indicator/SH.IMM.HEPB
+dataset:
+  kind: worldbank
+  indicator: SH.IMM.HEPB
+  label: HepB3 immunization rate
+  unit: '%'
+  source: World Bank
+  min_year: 2019
+scale:
+  kind: threshold
+  at: 80.0
+  labels:
+  - At least 80 percent
+  - Under 80 percent
+value_format: '{v:.0f}%'
+beats:
+- text: China protects 96% of toddlers against hepatitis B. In Sudan, it's just 39%.
+  shot:
+    callouts:
+    - CHN
+    - SDN
+- text: Sudan is the world's lowest, leaving most toddlers without full coverage.
+  shot:
+    kind: country
+    iso: SDN
+- text: Full protection requires 3 doses of the vaccine before or during a child's second year.
+  basis: received hepatitis B vaccinations before 12 months or at any time before the survey. A child is considered
+    adequately immunized after three doses.
+- text: The USA hits 93%. India climbs to 94%.
+  shot:
+    kind: group
+    isos:
+    - USA
+    - IND
+- text: 'Climbing higher: Nigeria is at 67%, Germany has 85%, Brazil hits 90%, and Russia hits 97%.'
+  shot:
+    kind: rank
+    isos:
+    - NGA
+    - DEU
+    - BRA
+    - RUS
+- text: Near the top, Costa Rica protects 99% of its toddlers, 2.5 times Sudan.
+  shot:
+    kind: country
+    iso: CRI
+- text: How well protected are toddlers in your country?
+  shot:
+    kind: card
+    lines:
+    - How well protected are toddlers?
+    - Hepatitis B Immunization Rate (%)

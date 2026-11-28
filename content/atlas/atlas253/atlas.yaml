@@ -1,0 +1,81 @@
+id: atlas253
+title: Places Ranked by Agricultural Workforce
+hook_text: GLOBAL AGRICULTURAL WORKFORCE DIVIDE
+description: Comparing the share of total employment in agriculture across countries and territories using World
+  Bank data.
+hashtags:
+- '#work'
+- '#economy'
+- '#geography'
+tags:
+- work
+- share of total employment
+- countries ranked by share of total employment
+- Burundi
+- Israel
+- world map
+- geography
+- atlas in numbers
+sources:
+- https://data.worldbank.org/indicator/SL.AGR.EMPL.ZS
+dataset:
+  kind: worldbank
+  indicator: SL.AGR.EMPL.ZS
+  label: Share of total employment
+  unit: '%'
+  source: World Bank
+  min_year: 2019
+scale:
+  edges:
+  - 5.0
+  - 20.0
+  - 40.0
+  - 60.0
+  labels:
+  - Under 5%
+  - 5-20%
+  - 20-40%
+  - 40-60%
+  - Over 60%
+value_format: '{v:.1f}%'
+beats:
+- text: In Burundi, 85.3% of workers work in agriculture. In the USA, it's 1.5%.
+  shot:
+    callouts:
+    - BDI
+    - USA
+- text: Burundi is the world's highest, where farming remains the primary livelihood for most people.
+  shot:
+    kind: country
+    iso: BDI
+- text: Burundi has 57 times the agricultural workforce share of the USA.
+  shot:
+    kind: group
+    isos:
+    - BDI
+    - USA
+- text: It counts working age people in agriculture, hunting, forestry and fishing.
+  shot:
+    kind: country
+    iso: BDI
+  basis: Employment is defined as persons of working age who were engaged in any activity to produce goods or provide
+    services for pay or profit, whether at work during the reference period or not at work due to temporary absence
+    from a job, or to working-time arrangement. The agriculture sector consists of activities in agriculture, hunting,
+    forestry and fishing
+- text: Emerging economies show huge differences. India has 41.6%, China 21.7%, and Brazil 7.6%.
+  shot:
+    kind: rank
+    isos:
+    - IND
+    - CHN
+    - BRA
+- text: In the UK, just 0.9% of workers farm.
+  shot:
+    kind: country
+    iso: GBR
+- text: What percentage of workers work in agriculture in your country?
+  shot:
+    kind: card
+    lines:
+    - Farming share in your country?
+    - Share of employment in agriculture (%)
